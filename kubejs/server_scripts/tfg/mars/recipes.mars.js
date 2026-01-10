@@ -14,7 +14,7 @@ function registerTFGMarsRecipes(event) {
 		.inputFluids(Fluid.of('tfg:mars_air', 10000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 3900), Fluid.of('gtceu:nitrogen', 1000), Fluid.of('gtceu:argon', 500))
 		.duration(1600)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// TODO: move neon and xenon somewhere else
 	event.recipes.gtceu.distillation_tower('tfg:distill_liquid_mars_air')
@@ -45,13 +45,37 @@ function registerTFGMarsRecipes(event) {
 		.outputFluids(Fluid.of('tfg:semiheavy_water', 500))
 		.itemOutputs('2x #forge:tiny_dusts/ammonium_chloride')
 		.duration(20*9)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VHA[GTValues.ULV])
+
+	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 500), '2x #forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/centrifuge_mars_semiheavy_water')
 
 	event.recipes.gtceu.distillery('mars_semiheavy_water')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
 		.outputFluids(Fluid.of('minecraft:water', 250))
 		.duration(20*5)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.vintageimprovements.vacuumizing(
+		[Fluid.of('minecraft:water', 250), Fluid.of('gtceu:ammonia', 250)],
+		Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
+		.secondaryFluidOutput(1)
+		.processingTime(300)
+		.heated()
+		.id('tfg:vacummizing/mars_water')
+
+	event.recipes.gtceu.fluid_heater('heat_mars_water_to_steam')
+		.inputFluids('tfg:semiheavy_ammoniacal_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.fluid_heater('heat_semiheavy_water_to_steam')
+		.inputFluids('tfg:semiheavy_water 6')
+		.outputFluids('gtceu:steam 960')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Mars plants
 
@@ -69,7 +93,7 @@ function registerTFGMarsRecipes(event) {
 		woodBuilder(event, wood.name, wood.lumber, wood.logs, wood.log, wood.stripped_log, wood.plank, wood.stair, wood.slab, wood.door, wood.trapdoor, wood.fence, wood.fence_gate, wood.support, wood.pressure_plate, wood.button)
 	})
 
-	event.shaped('16x ad_astra:aeronos_ladder', [
+	event.shaped('8x ad_astra:aeronos_ladder', [
 		'A A',
 		'ABA',
 		'A A'
@@ -78,7 +102,7 @@ function registerTFGMarsRecipes(event) {
 		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1)
 	}).id('tfg:shaped/aeronos_ladder')
 
-	event.shaped('16x ad_astra:strophar_ladder', [
+	event.shaped('8x ad_astra:strophar_ladder', [
 		'A A',
 		'ABA',
 		'A A'
@@ -197,5 +221,16 @@ function registerTFGMarsRecipes(event) {
 		B: '#tfc:lumber'
 	}).id('tfg:shaped/glacian_bed')
 
-	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')
+	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')	
+	
+	// Mars primitive stuff
+
+	event.recipes.vintageimprovements.vacuumizing(
+		[Fluid.of('tfg:latex', 100), Fluid.of('gtceu:ammonia', 100)],
+		[Fluid.of('tfg:warpane', 100), Fluid.of('tfg:crimsene', 100)])
+		.secondaryFluidInput(1)
+		.secondaryFluidOutput(1)
+		.processingTime(1000)
+		.heated()
+		.id('tfg:vacuumizing/mars_latex')
 }

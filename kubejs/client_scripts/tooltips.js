@@ -68,8 +68,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:ostrum_linear_accelerator'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
-		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
@@ -84,11 +84,27 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
 		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
-	event.addAdvanced(['gtceu:steam_bloomery'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:steam_bloomery'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.steam_bloomery_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_2'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
-		text.add(2, Text.translate('gtceu.tooltip.machine.steam_bloomery_4'));
+		text.add(3, Text.translate('gtceu.tooltip.machine.steam_bloomery_3'));
+		text.add(4, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_thermal_centrifuge'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.lv_thermal_centrifuge.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_fuser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_alloy_smelter.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_squasher'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_compressor.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
+	})
+	event.addAdvanced(['tfg:steam_presser'], (item, advanced, text) => {
+		text.add(1, Text.translate('gtceu.machine.hp_steam_forge_hammer.tooltip'));
+		text.add(2, Text.translate('gtceu.tooltip.machine.steam_parallel'));
 	})
 	event.addAdvanced(['gtceu:large_chemical_reactor'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.perfect_overclock'));
@@ -98,7 +114,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
-		text.add(3, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
 	})
 
 	// Hot or not containers
@@ -178,12 +194,6 @@ const registerTooltips = (event) => {
 		event.addAdvanced([`tfg:${stone}_support`], (item, advanced, text) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
-	})
-
-	// Vessels
-	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.vessels'))
-
 	})
 
 	// Solar Panel
@@ -269,7 +279,10 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "10,000"))
 	})
 	event.addAdvanced(['tfc:crucible'], (item, advanced, text) => {
-		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,032"))
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "4,608"))
+	})
+	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
+		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
@@ -277,10 +290,10 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:wooden_bucket', 'firmalife:mixing_bowl'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "1,000"))
 	})
-	event.addAdvanced(['waterflasks:leather_flask'], (item, advanced, text) => {
+	event.addAdvanced(['waterflasks:leather_flask','tfc:silica_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "500"))
 	})
-	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:silica_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
+	event.addAdvanced(['tfc:hematitic_glass_bottle', 'tfc:volcanic_glass_bottle', 'tfc:olivine_glass_bottle'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "400"))
 	})
 	event.addAdvanced(['#tfc:lamps'], (item, advanced, text) => {
@@ -376,11 +389,11 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" (00:30)")).blue());
+		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" (00:30)")).blue());
+		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_nettle_bucket'], (item, advanced, text) => {

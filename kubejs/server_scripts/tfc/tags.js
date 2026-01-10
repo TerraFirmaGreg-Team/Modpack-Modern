@@ -113,6 +113,21 @@ function registerTFCItemTags(event) {
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
     event.add("tfc:nonplaceable", "tfc_gurman:nalivka_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:coffee_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_mint_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_chamomile_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_rosehip_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_nettle_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:cocoa_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:compote_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:kvass_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:lemonade_bucket")
+    event.add("tfc:nonplaceable", "firmalife:bucket/mead")
+    event.add("tfc:nonplaceable", "firmalife:bucket/red_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/white_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/rose_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/sparkling_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/dessert_wine")
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
@@ -394,6 +409,31 @@ function registerTFCItemTags(event) {
     event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
+
+    //greens and browns
+    event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#minecraft:leaves')
+
+    // Powder dyes
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/blue', 'tfc:powder/graphite')
+    event.add('forge:dyes/black', 'tfc:powder/charcoal')
+    event.add('forge:dyes/black', 'tfc:powder/coke')
+    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
+    event.add('forge:dyes/orange', 'tfc:powder/copper')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
+    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
+    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
+    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
+    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
+    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
+    event.add('forge:dyes/green', 'tfc:powder/malachite')
+    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
+    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
 }
 
 /** @param {TagEvent.Block} event */
@@ -487,6 +527,8 @@ function registerTFCBlockTags(event) {
     ["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
         matches.forEach(id => event.add(tag, id));
     });
+
+    event.add("tfc:forge_insulation", 'create:depot');
 
     global.TFC_STONE_TYPES.forEach((stone) => {
         event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);

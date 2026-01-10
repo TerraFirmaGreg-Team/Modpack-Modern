@@ -8,30 +8,30 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "If you see Tualang or Fig trees in your travels, you'll be pleased to know that you'll be able to create $(l:firmaciv/watercraft)Boats$() with them just like any other kind of Wood"
+            "text": "Если во время своих путешествий вы встретите деревья Компассии или Инжира, вам будет приятно узнать, что из них можно создавать $(l:firmaciv/watercraft)Лодки$() так же, как и из любого другого вида древесины."
         },
         {
             "type": "patchouli:empty"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
-            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "title": "Мягкие породы древесины",
+            "text": "Мягкие породы имеют достаточно мягкую древесину и кору, благодаря чему они идеально подходят для создания $(l:firmaciv/canoe)Долблёных каноэ$()",
             "item": "afc:wood/stripped_log/tualang,afc:wood/stripped_log/fig,afc:wood/stripped_log/cypress"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Tualang$() $(li)Fig$() $(li)Cypress$()"
+            "text": "$(li)Компассия$() $(li)Инжир$() $(li)Кипарис$()"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hardwoods",
-            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "title": "Твёрдые породы древесины",
+            "text": "Известные своей исключительной прочностью, твёрдые породы древесины идеально подходят для создания более крупных и сложных водных судов, таких как $(l:firmaciv/rowboat)Гребные Лодки$() и $(l:firmaciv/sloop)Шлюпы$()",
             "item": "afc:wood/planks/baobab,afc:wood/planks/eucalyptus,afc:wood/planks/mahogany,afc:wood/planks/hevea,afc:wood/planks/teak,afc:wood/planks/ironwood,afc:wood/planks/ipe"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Baobab$() $(li)Eucalyptus$() $(li)Mahogany$() $(li)Hevea$() $(li)Teak$() $(li)Ironwood$() $(li)Ipe$()"
+            "text": "$(li)Баобаб$() $(li)Эвкалипт$() $(li)Махагония$() $(li)Гевея$() $(li)Тиковое Дерево$() $(li)Железное Дерево$() $(li)Ипе$()"
         }
     ]
 }

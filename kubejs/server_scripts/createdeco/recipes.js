@@ -131,7 +131,7 @@ const registerCreatedecoRecipes = (event) => {
 	// Loop through each lamp type and color to create the recipes
 	lampTypes.forEach(lampType => {
 		lampColors.forEach(lampColor => {
-			let output = `createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
+			let output = `2x createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
 			lampRecipe(output, lampType, lampColor); // Call the lampRecipe function for each combination
 		});
 	});
@@ -247,12 +247,15 @@ const registerCreatedecoRecipes = (event) => {
 			// Bars
 			event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars` })
 
-			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars`)
 
 			event.stonecutting(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`)
 
 			TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_bars`, quarterMap)
+
+			event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+				.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars_double`)
 
 			// Door
 			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
@@ -272,10 +275,13 @@ const registerCreatedecoRecipes = (event) => {
 		// Overlay bars
 		event.remove({ type: 'minecraft:stonecutting', output: `createdeco:${bar.metal}_bars_overlay` })
 
-		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars_overlay`)
+		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars_overlay`)	
 
 		event.stonecutting(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`)
+
+		event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars_overlay`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/createdeco_${bar.metal}_bars_overlay_double`)
 
 		TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_bars_overlay`, quarterMap)
 

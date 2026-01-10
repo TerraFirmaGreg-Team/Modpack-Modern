@@ -1,0 +1,11 @@
+
+[power]
+	#Energy consumed per round of ammo retrieved from an ammo box, default: 1000.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	AmmoBoxUsePowerPerAmmo = 1000.0
+
+[jei]
+	#Modify the recipe content displayed in JEI, Normally, there is no need to disable this
+	#When creating custom modpacks, disable this if fake recipes remain after deleting the default crafting recipes
+	JeiRecipeDisplayCorrection = true
+

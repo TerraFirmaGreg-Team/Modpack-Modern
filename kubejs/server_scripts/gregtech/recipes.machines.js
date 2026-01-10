@@ -781,6 +781,22 @@ function registerGTCEuMachineRecipes(event) {
 		B: '#forge:tools/hammers'
 	}).addMaterialInfo().id('gtceu:shaped/steel_hull')
 
+	event.recipes.gtceu.shaped('gtceu:bronze_machine_casing', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Bronze, 1),
+		B: '#forge:tools/hammers'
+	}).addMaterialInfo().id('gtceu:shaped/bronze_hull')
+
+	event.recipes.gtceu.assembler('bronze_machine_casing')
+		.itemInputs('4x #forge:ingots/bronze')
+		.itemOutputs('gtceu:bronze_machine_casing')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VHA[GTValues.LV])
+
 	removeMaceratorRecipe(event, 'macerate_steam_input_hatch')
 	event.recipes.gtceu.shaped('gtceu:steam_input_hatch', [
 		'ACA',
@@ -799,7 +815,7 @@ function registerGTCEuMachineRecipes(event) {
 		'ABA'
 	], {
 		A: 'gtceu:bronze_plate',
-		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
+		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Potin, 1),
 		C: 'gtceu:hp_steam_macerator'
 	}).addMaterialInfo().id('gtceu:shaped/steam_grinder')
 
@@ -810,7 +826,7 @@ function registerGTCEuMachineRecipes(event) {
 		'ABA'
 	], {
 		A: 'gtceu:bronze_plate',
-		B: 'gtceu:heatproof_machine_casing',
+		B: ChemicalHelper.get(TagPrefix.gear, GTMaterials.Invar, 1),
 		C: 'gtceu:hp_steam_furnace'
 	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
@@ -845,9 +861,9 @@ function registerGTCEuMachineRecipes(event) {
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.Ultimet, 1)
 		)
 		.itemOutputs('gtceu:palladium_substation')
-		.duration(20 * 2.5)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(20 * 2.5)
+		.EUt(GTValues.VHA[GTValues.LV])
 
 	
 	removeMaceratorRecipe(event, 'macerate_power_substation')
@@ -862,4 +878,71 @@ function registerGTCEuMachineRecipes(event) {
 		D: 'gtceu:palladium_substation'
 	}).addMaterialInfo().id('gtceu:shaped/power_substation')
 
+	event.recipes.gtceu.shaped('2x gtceu:industrial_steam_casing', [
+		'ABA',
+		'ACA',
+		'ADA'
+	], {
+		A: '#forge:plates/brass',
+		B: '#forge:tools/hammers',
+		C: '#forge:frames/steel',
+		D: '#forge:tools/wrenches'
+	}).addMaterialInfo().id('tfg:shaped/industrial_steam_casing')
+
+	event.recipes.gtceu.assembler('industrial_steam_casing')
+		.itemInputs('6x #forge:plates/brass', '#forge:frames/steel')
+		.itemOutputs('2x gtceu:industrial_steam_casing')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	// Steam generators
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_lv' })
+	removeMaceratorRecipe(event, 'macerate_lv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:lv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/lv',
+		B: '#forge:huge_fluid_pipes/steel',
+		C: '#forge:rotors/cobalt_brass',
+		D: 'gtceu:lv_machine_hull',
+		E: 'gtceu:lv_electric_motor',
+		F: '#forge:single_cables/tin'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_lv')
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_mv' })
+	removeMaceratorRecipe(event, 'macerate_mv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:mv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/mv',
+		B: '#forge:huge_fluid_pipes/aluminium',
+		C: '#forge:rotors/magnalium',
+		D: 'gtceu:mv_machine_hull',
+		E: 'gtceu:mv_electric_motor',
+		F: '#forge:single_cables/copper'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_mv')
+
+	event.remove({ id: 'gtceu:shaped/steam_turbine_hv' })
+	removeMaceratorRecipe(event, 'macerate_hv_steam_turbine')
+
+	event.recipes.gtceu.shaped('gtceu:hv_steam_turbine', [
+		'BAB',
+		'CDC',
+		'EFE'
+	], {
+		A: '#gtceu:circuits/hv',
+		B: '#forge:huge_fluid_pipes/stainless_steel',
+		C: '#forge:rotors/vanadium_steel',
+		D: 'gtceu:hv_machine_hull',
+		E: 'gtceu:hv_electric_motor',
+		F: '#forge:single_cables/gold'
+	}).addMaterialInfo().id('tfg:shaped/steam_turbine_hv')
 }

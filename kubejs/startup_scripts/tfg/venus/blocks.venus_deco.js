@@ -5,6 +5,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
+		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
 		.particles(a => a
@@ -17,6 +18,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
+		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
 		.particles(a => a
@@ -25,6 +27,30 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 			.particle('minecraft:campfire_cosy_smoke')
 			.count(2)
 			.forced(false));
+
+	event.create('tfg:smoker_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_gray')
+		.box(3, 0, 3, 13, 10, 13)
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 1, 0.3)
+		.particleVelocity(0, 0.05, 0)
+		.particle('minecraft:campfire_cosy_smoke')
+		.particleCount(1)
+		.particleForced(false)
+
+	event.create('tfg:lava_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 10, 13)
+		.resistance(6)
+		.hardness(1.5)
+		.particleOffset(0.3, 0.5, 0.3)
+		.particleVelocity(0, 0, 0)
+		.particle('lava')
+		.particleCount(1)
+		.particleForced(false)
 
 	//Geyserite
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
@@ -288,4 +314,20 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 16, 13)
 		.tagItem('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:shadow_plant', 'tfg:decorative_plant')
+		.soundType('crop')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 10, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:twisted_vine', 'tfg:tall_decorative_plant')
+		.height(3)
+		.soundType('crop')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
 }

@@ -2123,7 +2123,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Торій",
+      "name": "Торіаніт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -2138,7 +2138,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

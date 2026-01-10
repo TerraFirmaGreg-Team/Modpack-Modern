@@ -2,7 +2,7 @@
 	"ambient.upper_nether_lush.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:cave/cave_lush",
+				"name": "ambientsounds:cave/cave-lush",
 				"stream": true,
 				"volume": 1
 			},
@@ -203,38 +203,6 @@
 			{
 				"name": "minecraft:ambient/nether/nether_wastes/ground4",
 				"volume": 0.4
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-water1",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-water2",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-water3",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-water4",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-water5",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-large1",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-large2",
-				"stream": true
-			},
-			{
-				"name": "minecraft:ambientsounds:cave/cave-lush",
-				"stream": true
 			}
 		]
 	},

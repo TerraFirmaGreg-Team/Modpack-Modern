@@ -29,6 +29,7 @@ function registerDomumOrnamentumBlockTags(event) {
         "#tfc:colored_polished_alabaster",
         "#tfc:mud_bricks",
         "#forge:sandstone",
+        "#railways:locometal",
         //rnr shingles
         "rnr:wood/shingles/teak",
         "rnr:wood/shingles/cypress",
@@ -152,6 +153,13 @@ function registerDomumOrnamentumBlockTags(event) {
         "createdeco:corner_pearl_bricks",
         "createdeco:cracked_pearl_bricks",
         "createdeco:mossy_pearl_bricks",
+        //Ad Astra blocks
+        "#tfg:ad_astra_iron_block",
+        "#tfg:ad_astra_etrium_block",
+        "#tfg:ad_astra_steel_block",
+        "#tfg:ad_astra_desh_block",
+        "#tfg:ad_astra_ostrum_block",
+        "#tfg:ad_astra_calorite_block",
     ];
 
     materials.forEach((material) => {

@@ -1,8 +1,8 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"size": 15,
-		"rarity": 100,
+		"size": 20,
+		"rarity": 30,
 		"density": 0.2,
 		"min_y": 40,
 		"max_y": 65,
@@ -15,7 +15,7 @@
 				"with": [
 					{
 						"block": "gtceu:rhyolite_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -23,19 +23,11 @@
 					},
 					{
 						"block": "gtceu:rhyolite_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:rhyolite_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:rhyolite_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			},
@@ -47,7 +39,7 @@
 				"with": [
 					{
 						"block": "gtceu:basalt_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -55,19 +47,11 @@
 					},
 					{
 						"block": "gtceu:basalt_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:basalt_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:basalt_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			},
@@ -78,7 +62,7 @@
 				"with": [
 					{
 						"block": "gtceu:dripstone_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -86,19 +70,11 @@
 					},
 					{
 						"block": "gtceu:dripstone_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:dripstone_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:dripstone_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			},
@@ -109,7 +85,7 @@
 				"with": [
 					{
 						"block": "gtceu:venus_stone_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -117,19 +93,11 @@
 					},
 					{
 						"block": "gtceu:venus_stone_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:venus_stone_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:venus_stone_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			},
@@ -140,7 +108,7 @@
 				"with": [
 					{
 						"block": "gtceu:andesite_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -148,19 +116,11 @@
 					},
 					{
 						"block": "gtceu:andesite_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:andesite_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:andesite_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			},
@@ -171,7 +131,7 @@
 				"with": [
 					{
 						"block": "gtceu:dacite_sulfur_ore",
-						"weight": 50
+						"weight": 80
 					},
 					{
 						"block": "gtceu:raw_sulfur_block",
@@ -179,19 +139,11 @@
 					},
 					{
 						"block": "gtceu:dacite_pyrite_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:raw_pyrite_block",
-						"weight": 1
-					},
-					{
-						"block": "gtceu:dacite_sphalerite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:raw_sphalerite_block",
-						"weight": 1
+						"block": "gtceu:dacite_sphalerite_ore",
+						"weight": 5
 					}
 				]
 			}
@@ -200,19 +152,19 @@
 			"rarity": 20,
 			"depth": 30,
 			"underground_rarity": 40,
-			"underground_count": 150,
+			"underground_count": 180,
 			"blocks": [
 				{
 					"block": "gtceu:sulfur_indicator",
-					"weight": 50
+					"weight": 80
 				},
 				{
 					"block": "gtceu:pyrite_indicator",
-					"weight": 35
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_sphalerite",
-					"weight": 15
+					"weight": 5
 				}
 			]
 		}

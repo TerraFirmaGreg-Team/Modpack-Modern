@@ -49,6 +49,10 @@ function registerGTCEUItemTags(event) {
         event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
         event.add('tfg:gtceu_concrete_blocks', ids);
     });
+  
+    //greens
+    event.add('tfc:compost_greens', 'gtceu:bio_chaff');
+    event.add('tfc:compost_greens', 'gtceu:plant_ball');
 }
 
 /** @param {TagEvent.Block} event  */

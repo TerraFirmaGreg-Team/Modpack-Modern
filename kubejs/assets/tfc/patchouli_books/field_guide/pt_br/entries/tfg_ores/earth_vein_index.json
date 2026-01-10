@@ -1519,7 +1519,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Tório",
+      "name": "Torianita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1534,7 +1534,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {

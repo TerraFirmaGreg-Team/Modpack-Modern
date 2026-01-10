@@ -19,6 +19,9 @@ const registerTFGItemTags = (event) => {
 	registerTFGVenusItemTags(event)
 	registerTFGAquaponicsItemTags(event)
 
+	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
+	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
+
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
@@ -140,6 +143,7 @@ const registerTFGBlockTags = (event) => {
 const registerTFGFluidTags = (event) => {
 
 	registerTFGAquaponicsFluidTags(event)
+	registerTFGPrimitiveFluidTags(event)
 
 	event.add('tfg:clean_water', 'minecraft:water')
 	event.add('tfg:clean_water', 'tfc:river_water')
@@ -151,6 +155,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
+	
+	event.add('tfc:any_water', 'tfg:semiheavy_water')
+	event.add('tfc:hydrating', 'tfg:semiheavy_water')
+	event.add('tfc:drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:any_drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:ingredients', 'tfg:semiheavy_water')
+	event.add('minecraft:water', 'tfg:semiheavy_water')
 
 	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
 	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')

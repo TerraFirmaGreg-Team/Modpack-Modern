@@ -891,7 +891,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp_from_liquid`)
 			.itemInputs(unfinishedLampStack)
-			.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 576))
+			.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
 			.itemOutputs(finishedLampStack)
 			.duration(material.getMass() * 7)
 			.circuit(13)

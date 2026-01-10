@@ -64,6 +64,7 @@
 		{
 			id: "2151F8AA263F1D6E"
 			linked_quest: "6ECAD339C91EF194"
+			shape: "heart"
 			x: 4.0d
 			y: -5.5d
 		}
@@ -1778,6 +1779,7 @@
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.cracker.desc}"]
 			id: "36B9B5024356C53C"
+			shape: "octagon"
 			size: 1.5d
 			subtitle: "{quests.extreme_voltage.cracker.subtitle}"
 			tasks: [{
@@ -2138,7 +2140,7 @@
 			id: "4AD96212525517CD"
 			rewards: [{
 				id: "1F7C92A8EF2F84A0"
-				item: "gtceu:rad_away_pill"
+				item: "tfg:rad_away_pill"
 				type: "item"
 			}]
 			shape: "diamond"

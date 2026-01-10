@@ -1,0 +1,18 @@
+{
+  "name": "Каркасный рюкзак",
+  "category": "tfc:sacks_n_such",
+  "icon": "sns:frame_pack",
+  "pages": [
+	{
+	  "type": "patchouli:spotlight",
+	  "item": "sns:frame_pack",
+	  "text": "$(item)Каркасный рюкзак$() — это тип $(l:sns/item_containers)предметного контейнера$(), по сути являющийся TFC сундуком на вашей спине. Как и TFC сундук, он учитывает $(l:getting_started/size_and_weight)систему размеров$() TFC."
+	},
+	{
+	  "type": "patchouli:crafting",
+	  "recipe": "sns:crafting/frame_pack",
+	  "text": "По умолчанию они могут вмещать предметы максимум $(thing)большого$() размера."
+	}
+  ],
+  "read_by_default": true
+}

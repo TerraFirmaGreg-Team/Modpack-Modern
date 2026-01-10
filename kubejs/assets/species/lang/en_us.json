@@ -10,12 +10,17 @@
   "subtitles.item.species.wicked_swapper.throw": "Swapper Pearl flies",
   "subtitles.item.species.wicked_swapper.fail": "Swapper Pearl drops",
   "subtitles.item.species.wicked_swapper.teleport": "Swapper Pearl swaps",
-  "advancements.species.wicked_mask_wither.description": "Disguise yourself as a Wither using a Disguise Kit",
   "item.species.trooper_spawn_egg": "Sulfie Spawn Egg",
+  "item.species.wicked_treat.desc.snatched": "Super Speed II (0:45)",
+  "item.species.wicked_treat.desc.iron_will": "Knockback Resistance (0:45)",
   "entity.species.trooper": "Sulfie",
   "subtitles.entity.species.trooper.death": "Sulfie dies",
   "subtitles.entity.species.trooper.hurt": "Sulfie hurts",
   "subtitles.entity.species.trooper.step": "Sulfie trots",
   "subtitles.entity.species.trooper.uproot": "Sulfie uproots",
-  "subtitles.entity.species.trooper.plant": "Sulfie plants"
+  "subtitles.entity.species.trooper.plant": "Sulfie plants",
+  "effect.species.iron_will": "Knockback Resistance",
+  "effect.species.iron_will.description": "Prevents all knockback.",
+  "effect.species.snatched": "Super Speed",
+  "effect.species.snatched.description": "Grants faster Movement Speed scaling with levels. Makes affected entities taller and thinner."
 }

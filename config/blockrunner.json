@@ -1,0 +1,11 @@
+{
+  "schema_version": "2",
+  "minecraft:dirt_path": 1.35,
+  "#blockrunner:slow_blocks": 0.65,
+  "#blockrunner:very_slow_blocks": 0.45,
+  "#blockrunner:quick_blocks": 1.35,
+  "#blockrunner:very_quick_blocks": 1.55,
+  "#blockrunner:slightly_slow_blocks": 0.85,
+  "#blockrunner:slightly_quick_blocks": 1.15,
+  "#minecraft:stone_bricks": 1.15
+}
