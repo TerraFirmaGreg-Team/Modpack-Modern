@@ -409,14 +409,4 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('tfg:paracetamol_pill')
 		.duration(3 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
-
-	// Volcanic Glass Tube
-	event.recipes.gtceu.alloy_smelter('tfg:tube_from_volcanic_glass_batch')
-		.itemInputs('tfc:volcanic_glass_batch')
-		.notConsumable('gtceu:ball_casting_mold')
-		.itemOutputs('gtceu:glass_tube')
-		.duration(8 * 20)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.INGOT_MOLDING)
-		.addMaterialInfo();
 }

@@ -96,7 +96,7 @@ function registerTFCGurmanRecipes(event) {
 		itemInputs: ['2x #tfc:foods/fruits'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gurman:compote 1000'],
-		circuit: 2
+		circuit: 6
 	});
 
 	// Lemonade

@@ -276,6 +276,14 @@ function registerTFGFoodRecipes(event) {
 			.duration(300)
 			.EUt(GTValues.VA[GTValues.LV])
 
+		event.recipes.gtceu.mixer(`lactose_milk_vinegar_${item.id}`)
+			.circuit(1)
+			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('tfc:vinegar', 100))
+			.chancedOutput('gtceu:lactose_dust', 1000, 0)
+			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
+			.duration(300)
+			.EUt(GTValues.VA[GTValues.LV])
+
 		global.processorRecipe(event, `${item.id}_curd`, 1200, 16, {
 			itemOutputs: [item.curd],
 			fluidInputs: [Fluid.of(item.curdled_fluid, 1000)],
@@ -693,7 +701,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Pizza
 
-	global.processorRecipe(event, "pizza_no_extra", 600, 16, {
+	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],

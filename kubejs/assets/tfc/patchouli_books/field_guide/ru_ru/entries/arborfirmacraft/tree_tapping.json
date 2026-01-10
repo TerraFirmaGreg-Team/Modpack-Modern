@@ -1,15 +1,15 @@
 {
-	"name": "Tapping Trees",
+	"name": "Подсочка деревьев",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:tree_tap",
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "Some types of trees can be tapped for useful fluids. These trees can either produce sugary saps which can be concentrated into syrup and used as a sweetener, Latex which can be processed into rubber, or Pitch which can be processed into rosin, a wax substitute."
+            "text": "Из некоторых видов деревьев можно получать полезные жидкости. Эти деревья могут давать сок, который можно сконцентрировать в сироп и использовать в качестве подсластителя, латекс, который можно переработать в резину, или смолу, которую можно переработать в канифоль — заменитель воска."
         },
         {
             "type": "patchouli:image",
-            "title": "Tapping a Maple Tree",
+            "title": "Подсочка клена",
             "images": [
             	"afc:textures/gui/book/maple_tapping.png"
             ],
@@ -17,12 +17,12 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap."
+            "text": "Для того чтобы подкачать сок с дерева, необходимы три вещи: само дерево, краник для подсочки, которая должна быть выкована из медного слитка и установлен посередине ствола высотой не менее трех блоков, и бочка, которая должна быть размещена непосредственно под краном, направленная вверх. При благоприятных условиях бочка немедленно начнет наполняться соком."
         },
         {
             "type": "patchouli:image",
             "images": ["tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"],
-            "text": "A valid tapping configuration used to extract Latex from Kapok",
+            "text": "Допустимая конфигурация, используемая для извлечения латекса из сейбы.",
             "border": true
         }	
 	],

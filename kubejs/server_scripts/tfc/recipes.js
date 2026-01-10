@@ -39,11 +39,12 @@ const registerTFCRecipes = (event) => {
 		{ input: "#forge:dusts/sulfur", output: "4x tfc:powder/sulfur", name: "sulfur_powder" },
 		{ input: "#forge:dusts/saltpeter", output: "4x tfc:powder/saltpeter", name: "saltpeter_powder" },
 		{ input: "#forge:dusts/salt", output: "4x tfc:powder/salt", name: "salt_powder" },
+		{ input: "#forge:dusts/rock_salt", output: "4x tfc:powder/sylvite", name: "rock_salt" },
 		{ input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
 		{ input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
 		{ input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
-		{ input: "gtceu:charcoal_dust", output: "4x tfc:powder/charcoal", name: "charcoal" },
-		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
+		{ input: "#forge:dusts/charcoal", output: "4x tfc:powder/charcoal", name: "charcoal" },
+		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" },
 	]);
 
 	TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
