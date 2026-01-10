@@ -3,6 +3,7 @@
 const registerGTCEuMachines = (event) => {
 
 	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
+	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 
 
 	//#region Large Solar Panels
