@@ -412,6 +412,26 @@ function registerTFCItemTags(event) {
     event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
     event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
     event.add('tfc:compost_greens_low', '#minecraft:leaves')
+
+    // Powder dyes
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/blue', 'tfc:powder/graphite')
+    event.add('forge:dyes/black', 'tfc:powder/charcoal')
+    event.add('forge:dyes/black', 'tfc:powder/coke')
+    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
+    event.add('forge:dyes/orange', 'tfc:powder/copper')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
+    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
+    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
+    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
+    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
+    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
+    event.add('forge:dyes/green', 'tfc:powder/malachite')
+    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
+    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
 }
 
 /** @param {TagEvent.Block} event */
