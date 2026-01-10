@@ -148,14 +148,14 @@ function registerTFGWoodRecipes(event) {
 		.circuit(5)
 		.itemOutputs('tfc:stick_bunch')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.packer('tfg:stick_bundle')
 		.itemInputs('18x #forge:rods/wooden')
 		.circuit(8)
 		.itemOutputs('tfc:stick_bundle')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	
 	// Какие то рецепты дерева

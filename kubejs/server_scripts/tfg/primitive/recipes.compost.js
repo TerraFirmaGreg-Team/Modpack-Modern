@@ -31,7 +31,7 @@ function registerTFGCompostRecipes(event) {
 		.itemInputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
 		.itemOutputs('1x gtceu:fertilizer')
 		.duration(160)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.gas_pressurizer('tfg:pure_nitrogen')
 		.itemInputs('#forge:wax')

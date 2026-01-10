@@ -141,7 +141,7 @@ function registerTFGMarsRecipes(event) {
 		.itemInputs('beneath:wood/wood/crimson')
 		.itemOutputs('beneath:wood/stripped_wood/crimson')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/crimson', 'beneath:wood/wood/crimson')
 		.speedLimits(0)
@@ -157,7 +157,7 @@ function registerTFGMarsRecipes(event) {
 		.itemInputs('beneath:wood/wood/warped')
 		.itemOutputs('beneath:wood/stripped_wood/warped')
 		.duration(50)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/warped', 'beneath:wood/wood/warped')
 		.speedLimits(0)

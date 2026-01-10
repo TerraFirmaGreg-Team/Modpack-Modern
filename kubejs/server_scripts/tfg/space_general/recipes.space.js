@@ -68,7 +68,7 @@ function registerTFGSpaceRecipes(event) {
 	event.recipes.gtceu.aqueous_accumulator('sea_water')
 		.circuit(aaCircuit++)
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 		.adjacentFluids(["tfc:salt_water"])
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 		
@@ -76,7 +76,7 @@ function registerTFGSpaceRecipes(event) {
 		.circuit(aaCircuit++)
 		.dimension('ad_astra:mars')
 		.duration(20)
-		.EUt(GTValues.VHA[GTValues.LV])
+		.EUt(GTValues.VHA[GTValues.ULV])
 		.adjacentFluids(["tfg:semiheavy_ammoniacal_water"])
 		.outputFluids(Fluid.of("tfg:semiheavy_ammoniacal_water", 1000))
 

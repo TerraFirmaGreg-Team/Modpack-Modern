@@ -169,7 +169,7 @@ function registerTFGLeatherRecipes(event) {
 			.itemInputs(`2x tfc:small_${stage}_hide`)
 			.duration(60)
 			.circuit(7)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/small_to_large_${stage}_hide`)
 			.inputFluids(Fluid.of('gtceu:glue', 25))
@@ -177,7 +177,7 @@ function registerTFGLeatherRecipes(event) {
 			.itemInputs(`3x tfc:small_${stage}_hide`)
 			.duration(60)
 			.circuit(9)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		//Cutting
 		event.recipes.tfc.damage_inputs_shapeless_crafting(
@@ -199,14 +199,14 @@ function registerTFGLeatherRecipes(event) {
 			.itemInputs(`1x tfc:medium_${stage}_hide`)
 			.duration(60)
 			.circuit(4)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/large_to_small_${stage}_hide`)
 			.itemOutputs(`3x tfc:small_${stage}_hide`)
 			.itemInputs(`1x tfc:large_${stage}_hide`)
 			.duration(60)
 			.circuit(6)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 	});
 
 }

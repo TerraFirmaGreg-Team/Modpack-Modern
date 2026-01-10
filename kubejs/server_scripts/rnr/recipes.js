@@ -10,27 +10,27 @@ const registerRnrRecipes = (event) => {
 		.itemOutputs('2x rnr:base_course')
         .circuit(7)
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
     
     event.recipes.gtceu.assembler('rnr:assembler/crushed_base_course')
 		.itemInputs('1x #forge:gravel', '1x #rnr:loose_rock_items')
 		.itemOutputs('8x rnr:crushed_base_course')
         .circuit(7)
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 
     global.TFC_STONE_TYPES.forEach(stone => {
         event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${stone}`)
 		    .itemInputs(`tfc:brick/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
 		    .duration(20)
-		    .EUt(GTValues.VA[GTValues.LV])
+		    .EUt(GTValues.VA[GTValues.ULV])
 
         event.recipes.gtceu.cutter(`rnr:assembler/flagstone/mossy_${stone}`)
 		    .itemInputs(`tfc:rock/mossy_loose/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
 		    .duration(20)
-		    .EUt(GTValues.VA[GTValues.LV])
+		    .EUt(GTValues.VA[GTValues.ULV])
     });
 
     global.SAND_COLORS.forEach(sand => {
@@ -39,7 +39,7 @@ const registerRnrRecipes = (event) => {
 		    .itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
             .circuit(7)
 		    .duration(20)
-		    .EUt(GTValues.VA[GTValues.LV])
+		    .EUt(GTValues.VA[GTValues.ULV])
     });
 
 	event.smelting(
@@ -86,5 +86,5 @@ const registerRnrRecipes = (event) => {
 		.outputFluids('rnr:concrete 1000')
         .circuit(7)
 		.duration(200)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(GTValues.VA[GTValues.ULV])
 };

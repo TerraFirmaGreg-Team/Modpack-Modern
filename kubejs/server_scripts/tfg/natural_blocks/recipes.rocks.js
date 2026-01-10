@@ -88,14 +88,14 @@ function registerTFGRockRecipes(event) {
 			.itemOutputs(`4x ${x.loose}`)
 			.circuit(1)
 			.duration(20)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_${x.cobble}`.replace(/[: ]/g, '_'))
 			.itemInputs(`4x ${x.loose}`)
 			.itemOutputs(`1x ${x.cobble}`)
 			.circuit(1)
 			.duration(20)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 	})
 	// #endregion COBBLE_TO_LOOSE
 
@@ -347,7 +347,7 @@ function registerTFGRockRecipes(event) {
 			.itemOutputs(x.polished)
 			.notConsumable('tfc:lens')
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 	})
 
 	// #endregion RAW_TO_POLISHED
@@ -1226,7 +1226,7 @@ function registerTFGRockRecipes(event) {
 			.inputFluids(Fluid.of('minecraft:lava', 250))
 			.itemOutputs(`1x ${block.magma}`)
 			.duration(100)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.ULV])
 			
 		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${block.magma}`.replace(/:/g, "/"))
 			.itemInputs(`1x ${block.magma}`)
