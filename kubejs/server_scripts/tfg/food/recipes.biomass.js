@@ -142,12 +142,6 @@ function registerTFGBiomassRecipes(event) {
 		.duration(300)
 		.EUt(2)
 
-	event.recipes.gtceu.compressor('plant_ball_from_universal_compost')
-		.itemInputs('4x tfg:universal_compost_greens')
-		.itemOutputs('gtceu:plant_ball')
-		.duration(300)
-		.EUt(2)
-
 	//#endregion
 
 	// Sugar
