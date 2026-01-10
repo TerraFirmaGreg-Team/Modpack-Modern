@@ -140,6 +140,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -163,6 +164,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
