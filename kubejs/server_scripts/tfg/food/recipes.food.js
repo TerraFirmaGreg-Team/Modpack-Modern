@@ -388,7 +388,7 @@ function registerTFGFoodRecipes(event) {
 
 	for (const ctype of chocolateType) {	
 		for (const cshape of chocolateShape) {
-			processorRecipe(`${ctype}_${cshape}_casting`, 100, 16, {
+			global.processorRecipe(event, `${ctype}_${cshape}_casting`, 100, 16, {
 				fluidInputs: [cshape === "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
 				itemOutputs: [cshape === "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
 				itemOutputProvider: TFC.isp.of(cshape === "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
