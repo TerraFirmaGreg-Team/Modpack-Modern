@@ -701,7 +701,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Pizza
 
-	global.processorRecipe(event, "pizza_no_extra", 600, 16, {
+	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.MV], {
 		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
