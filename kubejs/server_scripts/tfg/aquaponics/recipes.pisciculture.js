@@ -1,83 +1,96 @@
+// priority: 0
 "use strict";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//#region Balancing Values
+
+/** 
+ * Base duration of recipes in ticks. 
+ * * Should match the Greenhouse base duration * aquaponics multiplier.
+*/
+const pisciculture_base_duration = Math.max(1, greenhouse_base_duration * greenhouse_duration_multiplier_aquaponics);
+
+/**
+ * Dimension setting index provides recipe modifications based on the dimension assigned.
+ *
+ * @typedef {Object} DimensionIndex
+ * @property {Internal.Dimension} id - Dimension ID.
+ * @property {Internal.FluidStackIngredient_} fluid - Fluid ID or tag.
+ * @property {number} fluid_chance - Chance for fluid consumption per tick out of 100.
+ * @property {Internal.FluidStackIngredient_} fluid_out - Output fluid ID.
+ * @property {GTValues.EUt} eut - EUt value for that dimension.
+ * @property {boolean|null} oxygenated - Whether the recipe requires an oxygenated environment.
+ */
+
+/** @type {DimensionIndex[]} - Dimension settings array */
+const pisciculture_dimension_index = [
+	// Overworld settings are also used as the default when no dimension is specified.
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	// The moon has no fish yet :(
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+];
+
+//#endregion
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //#region Utility Script
 
-		/**
-		 * Function for generating pisciculture recipes.
-		 *
-		 * @param {*} event
-		 * @param {string|null} dimension -Dimension ID.
-		 * @param {string|string[]} input -Input Item (roe, fish food, etc).
-		 * @param {string|string[]} output -Output Items.
-		 * @param {string} id -Recipe ID.
-		 */
-		function generatePiscicultureRecipe(event, dimension, input, output, id) {
+	/**
+	 * Function for generating pisciculture recipes.
+	 *
+	 * @param {*} event
+	 * @param {Internal.Dimension|null} dimension -Dimension ID.
+	 * @param {Internal.ItemStack|Internal.ItemStack[]} input -Input Item (roe, fish food, etc).
+	 * @param {Internal.ItemStack|Internal.ItemStack[]} output -Output Items.
+	 * @param {string} id -Recipe ID.
+	 */
+	function generatePiscicultureRecipe(event, dimension, input, output, id) {
 
-			/**
-			 * Dimension setting index provides recipe modifications based on the dimension assigned.
-			 *
-			 * @typedef {Object} DimensionIndex
-			 * @property {string} id - Dimension ID.
-			 * @property {string} fluid - Fluid ID or tag.
-			 * @property {number} fluid_chance - Chance for fluid consumption per tick out of 100.
-			 * @property {string} fluid_out - Output fluid ID.
-			 * @property {GTValues.EUt} eut - EUt value for that dimension.
-			 * @property {boolean|null} oxygenated - Whether the recipe requires an oxygenated environment.
-			 */
+		// Resolve dimension based modifier defaults by comparing to the `pisciculture_dimension_index` array.
+		const dimMods = dimension ? pisciculture_dimension_index.find(d => d.id === dimension) : null;
+		const resolvedFluid = dimMods?.fluid ?? '#tfg:clean_water';
+		const resolvedFluidOut = dimMods?.fluid_out ?? 'tfg:nitrate_rich_water';
+		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+		const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 5000;
+		const requiresOxygen = dimMods ? dimMods.oxygenated : true;
 
-			/** @type {DimensionIndex[]} - Dimension settings array */
-			const dimension_index = [
-				// Overworld settings are also used as the default when no dimension is specified.
-				{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-				{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-				// The moon has no fish yet :(
-				{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
-			];
+		// Collect errors.
+		const errors = [];
 
-			// Resolve dimension based modifier defaults by comparing to the `dimension_index` array.
-			const dimMods = dimension ? dimension_index.find(d => d.id === dimension) : null;
-			const resolvedFluid = dimMods?.fluid ?? '#tfg:clean_water';
-			const resolvedFluidOut = dimMods?.fluid_out ?? 'tfg:nitrate_rich_water';
-			const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
-			const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 5000;
-			const requiresOxygen = dimMods ? dimMods.oxygenated : true;
-
-			// Collect errors.
-			const errors = [];
-
-			if (input === undefined) {
-				errors.push("input is undefined");
-			};
-			if (output !== undefined && !Array.isArray(output)) {
-				output = [output];
-			}
-			if (output === undefined || output.length === 0 || output.length > 4) {
-				errors.push("output is undefined or has invalid length");
-			};
-
-			// If there are any errors, log them all and throw once.
-			if (errors.length > 0) {
-				throw new TypeError(`Pisciculture Fishery recipe errors for recipe ID ${`tfg:pisciculture_fishery/${id}`}\n - ${errors.join("\n - ")}`);
-			};
-
-		let a = event.recipes.gtceu.pisciculture_fishery(`tfg:${id}`)
-			.itemInputs(input)
-			.perTick(true)
-			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
-			.chancedFluidOutput(`${resolvedFluidOut} 1`, resolvedChance, 0)
-			.perTick(false)
-			.itemOutputs(output)
-			.duration(5 * 1 * 20)
-			.EUt(resolvedEUt);
-
-		if (dimension !== null) {
-			a.dimension(dimension)
+		if (input === undefined) {
+			errors.push("input is undefined");
+		};
+		if (output !== undefined && !Array.isArray(output)) {
+			output = [output];
+		}
+		if (output === undefined || output.length === 0 || output.length > 4) {
+			errors.push("output is undefined or has invalid length");
 		};
 
-		if (requiresOxygen !== null) {
-			TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
+		// If there are any errors, log them all and throw once.
+		if (errors.length > 0) {
+			throw new TypeError(`Pisciculture Fishery recipe errors for recipe ID ${`tfg:pisciculture_fishery/${id}`}\n - ${errors.join("\n - ")}`);
 		};
+
+	let a = event.recipes.gtceu.pisciculture_fishery(`tfg:${id}`)
+		.itemInputs(input)
+		.perTick(true)
+		.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
+		.chancedFluidOutput(`${resolvedFluidOut} 1`, resolvedChance, 0)
+		.perTick(false)
+		.itemOutputs(output)
+		.duration(pisciculture_base_duration)
+		.EUt(resolvedEUt);
+
+	if (dimension !== null) {
+		a.dimension(dimension)
 	};
+
+	if (requiresOxygen !== null) {
+		TFGRecipeSchemaBindings.isOxygenated(a, requiresOxygen)
+	};
+};
 
 //#endregion
 
@@ -199,5 +212,31 @@ const registerTFGPiscicultureRecipes = (event) => {
 		);	
 		
 	});
+
+	//#endregion
+	//#region Related Recipes
+
+	// Nitrate Rich Water Filtering
+	event.recipes.gtceu.electrolyzer('tfg:nitrate_rich_water_filtering')
+		.inputFluids(Fluid.of('tfg:nitrate_rich_water', 10000))
+		.outputFluids(
+			Fluid.of('minecraft:water', 8000),
+			Fluid.of('gtceu:ammonia', 1000)
+		)
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Saltpeter, 1))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.HV]);
+
+	// Nitrate Rich Semiheavy Ammoniacal Water Filtering
+	event.recipes.gtceu.electrolyzer('tfg:nitrate_rich_semiheavy_ammoniacal_water_filtering')
+		.inputFluids(Fluid.of('tfg:nitrate_rich_semiheavy_ammoniacal_water', 10000))
+		.outputFluids(
+			Fluid.of('tfg:semiheavy_ammoniacal_water', 8000),
+			Fluid.of('gtceu:ammonia', 1000)
+		)
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Saltpeter, 1))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.HV]);
+
 	//#endregion
 };
