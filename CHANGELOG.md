@@ -19,6 +19,7 @@
 - Cut and paste and Copy and paste building gadgets have been moved from IV to EV (#2660) @thederpysockdude123
 - The sandworm no longer spawns in the Superflat preset that's a big vanilla desert biome
 - You can now also use mars water in gregtech and create boilers @Pyritie
+- Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 ### Bug fixes
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
 - Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
