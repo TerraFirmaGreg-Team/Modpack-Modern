@@ -386,14 +386,10 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	/** @type {string[]} - Tier names of greenhouse casings. */
 	const greenhouse_tiers = ['treated_wood', 'copper', 'iron', 'stainless_steel'];
-
-	/** @type {Object.<string, string[]>} - Mapping of tier names to item IDs.*/
-	const greenhouse_tier_items = {};
 	
 	greenhouse_tiers.forEach(tier => {
 
 		const tier_tag = Ingredient.of(`#tfg:${tier}_greenhouse_casings`).itemIds.toArray().map(String);
-		greenhouse_tier_items[tier] = tier_tag;
 
         tier_tag.forEach(item => {
             event.stonecutting(item,
