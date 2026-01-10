@@ -49,7 +49,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Tório: $(l:tfg_ores/earth_vein_index#normal_beryllium)15%$(/l)$()$(li)Trona: $(l:tfg_ores/earth_vein_index#normal_lubricant)10%$(/l), $(l:tfg_ores/earth_vein_index#normal_tarkianite)10%$(/l)$()$(li)Tungstato: $(l:tfg_ores/earth_vein_index#deep_scheelite)35%$(/l)$()$(li)Uraninita: $(l:tfg_ores/earth_vein_index#deep_pitchblende)25%$(/l)$()$(li)Wulfenita: $(l:tfg_ores/earth_vein_index#deep_molybdenum)47%$(/l), $(l:tfg_ores/earth_vein_index#deep_pitchblende)12%$(/l)$()$(li)Zeólita: $(l:tfg_ores/earth_vein_index#surface_copper)16%$(/l)$()",
+      "text": "$(li)Torianita: $(l:tfg_ores/earth_vein_index#normal_beryllium)15%$(/l)$()$(li)Trona: $(l:tfg_ores/earth_vein_index#normal_lubricant)10%$(/l), $(l:tfg_ores/earth_vein_index#normal_tarkianite)10%$(/l)$()$(li)Tungstato: $(l:tfg_ores/earth_vein_index#deep_scheelite)35%$(/l)$()$(li)Uraninita: $(l:tfg_ores/earth_vein_index#deep_pitchblende)25%$(/l)$()$(li)Wulfenita: $(l:tfg_ores/earth_vein_index#deep_molybdenum)47%$(/l), $(l:tfg_ores/earth_vein_index#deep_pitchblende)12%$(/l)$()$(li)Zeólita: $(l:tfg_ores/earth_vein_index#surface_copper)16%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

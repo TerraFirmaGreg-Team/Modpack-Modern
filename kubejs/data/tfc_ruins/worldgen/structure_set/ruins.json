@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "tfc_ruins:ruin_small",
+      "weight": 4
+    },
+    {
+      "structure": "tfc_ruins:ruin_beach",
+      "weight": 3
+    },
+	{
+      "structure": "tfc_ruins:ruin_rich",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 9134739237,
+    "exclusion_zone": {
+      "other_set": "minecraft:strongholds",
+      "chunk_count": 6
+    },
+    "spacing": 35,
+    "separation": 10
+  }
+}

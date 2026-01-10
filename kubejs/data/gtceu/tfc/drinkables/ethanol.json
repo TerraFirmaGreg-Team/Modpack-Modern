@@ -1,0 +1,16 @@
+{
+	"ingredient": "gtceu:ethanol",
+	"thirst": 5,
+	"effects": [
+		{
+			"type": "minecraft:nausea",
+			"duration": 1200,
+			"amplifier": 0
+		},
+		{
+			"type": "minecraft:poison",
+			"duration": 600,
+			"amplifier": 1
+		}
+	]
+}

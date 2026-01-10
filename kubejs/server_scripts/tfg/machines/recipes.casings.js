@@ -97,16 +97,6 @@ function registerTFGCasingRecipes(event) {
 		.itemOutputs('1x tfg:reflector')
 		.circuit(6)
 		.duration(20 * (60))
-		.EUt(GTValues.VH[GTValues.HV])
-
-	event.recipes.gtceu.assembler('tfg:reflector_from_inr')
-		.itemInputs(
-			'1x gtceu:neutron_reflector',
-			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.BlackSteel, 1)
-		)
-		.itemOutputs('2x tfg:reflector')
-		.circuit(9)
-		.duration(20 * (20))
 		.EUt(GTValues.VH[GTValues.MV])
 
 	event.recipes.gtceu.assembler('tfg:reflector_from_certus')

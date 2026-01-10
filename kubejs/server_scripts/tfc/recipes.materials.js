@@ -654,6 +654,25 @@ function registerTFCMaterialsRecipes(event) {
 				}
 			}
 
+			// Large Gears
+			let largeGearItem = ChemicalHelper.get(TagPrefix.gear, material, 1)
+			if (!largeGearItem.isEmpty()) {
+				event.recipes.tfc.heating(largeGearItem, tfcProperty.getMeltTemp())
+					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144 * 4))
+					.id(`tfc:heating/large_${material.getName()}_gear`)
+
+				let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
+				if (!doublePlateItem.isEmpty()) {
+					event.recipes.tfc.welding(largeGearItem, doublePlateItem, doublePlateItem, tfcProperty.getTier())
+						.id(`tfc:welding/${material.getName()}_large_gear`)
+
+					event.recipes.greate.compacting(largeGearItem, [doublePlateItem, doublePlateItem, 'tfc:powder/flux'])
+						.heated()
+						.recipeTier(tfcProperty.getTier() < 4 ? 0 : 1)
+						.id(`greate:compacting/${material.getName()}_large gear`)
+				}
+			}
+
 			// Tools (From Ingot)
 			if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 

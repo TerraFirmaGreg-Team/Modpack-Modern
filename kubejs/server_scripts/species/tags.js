@@ -25,6 +25,10 @@ const registerSpeciesItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'species:springling_egg')
 	event.add('tfg:martian_eggs', 'species:petrified_egg')
 	
+	event.add('tfc:foods', 'species:birt_egg')
+	event.add('tfc:foods', 'species:birtday_cake')
+	event.add('tfc:foods', 'species:birtday_cake_slice')
+	
 	event.add('species:goober_breed_items', '#forge:mushrooms')
 	event.add('species:cruncher_eats', '#tfc:foods/meats')
 	

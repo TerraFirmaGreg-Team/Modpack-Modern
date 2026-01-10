@@ -3,10 +3,47 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "tfg:attached_decorative_plant",
+				"type": "lithostitched:select",
 				"config": {
-					"block": "betterend:tube_worm",
-					"heightRange": 5
+					"features": [
+						{
+							"feature": {
+								"feature": {
+									"type": "tfg:attached_decorative_plant",
+									"config": {
+										"block": "betterend:tube_worm",
+										"heightRange": 5
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							}
+						},
+						{
+							"feature": {
+								"feature": {
+									"type": "tfg:attached_decorative_plant",
+									"config": {
+										"block": {
+											"Name": "betterend:tube_worm",
+											"Properties": {
+												"fluid": "sulfur_fumes"
+											}
+										},
+										"heightRange": 5
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "tfg:fluid/sulfur_fumes"
+							}
+						}
+					]
 				}
 			},
 			"placement": []

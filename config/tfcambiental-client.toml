@@ -1,4 +1,3 @@
-#For all ARGB values, set to 00000000 to disable the feature in that season
 #How dark should the noise be at most? Set to 0 to disable noise entirely
 #Range: 0.0 ~ 0.5
 noiseDarkness = 0.18
@@ -25,3 +24,4 @@ useFahrenheit = false
 #Offset the GUI elements. Useful if you're using a resourcep ack that changes the health or hunger bars
 #Range: 0.0 ~ 3.4028234663852886E38
 guiOffset = 8.0
+

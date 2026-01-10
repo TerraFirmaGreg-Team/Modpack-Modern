@@ -1,7 +1,3 @@
-#.
-#Multiplier used for calculating how many ticks should initially be removed in fan processing recipes, based on how fast the fan is spinning.
-#Range: 0.0 ~ 3.4028234663852886E38
-fanSpeedMultiplier = 0.75
 
 #.
 #Parameters and abilities of Greate's kinetic mechanisms
@@ -242,91 +238,6 @@ fanSpeedMultiplier = 0.75
 					neutronium_millstone = 5.0
 					neutronium_mechanical_saw = 5.0
 					neutronium_mechanical_pump = 5.0
-
-			#.
-			#Fine tune settings related to tiers
-			[kinetics.stressValues.v2.maxCapacity]
-
-				#.
-				#.
-				#Settings related to andesite tier machines
-				[kinetics.stressValues.v2.maxCapacity.andesite]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					andesiteMaxCapacity = 32
-
-				#.
-				#Settings related to steel tier machines
-				[kinetics.stressValues.v2.maxCapacity.steel]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					steelMaxCapacity = 128
-
-				#.
-				#Settings related to aluminium tier machines
-				[kinetics.stressValues.v2.maxCapacity.aluminium]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					aluminiumMaxCapacity = 512
-
-				#.
-				#Settings related to stainless steel tier machines
-				[kinetics.stressValues.v2.maxCapacity.stainlessSteel]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					stainlessSteelMaxCapacity = 2048
-
-				#.
-				#Settings related to titanium tier machines
-				[kinetics.stressValues.v2.maxCapacity.titanium]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					titaniumMaxCapacity = 8192
-
-				#.
-				#Settings related to tungstensteel tier machines
-				[kinetics.stressValues.v2.maxCapacity.tungstensteel]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					tungstensteelMaxCapacity = 32768
-
-				#.
-				#Settings related to palladium tier machines
-				[kinetics.stressValues.v2.maxCapacity.palladium]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					palladiumMaxCapacity = 131072
-
-				#.
-				#Settings related to naquadah tier machines
-				[kinetics.stressValues.v2.maxCapacity.naquadah]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					naquadahMaxCapacity = 524288
-
-				#.
-				#Settings related to darmstadtium tier machines
-				[kinetics.stressValues.v2.maxCapacity.darmstadtium]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					darmstadtiumMaxCapacity = 2097152
-
-				#.
-				#Settings related to neutronium tier machines
-				[kinetics.stressValues.v2.maxCapacity.neutronium]
-					#.
-					#Configure the max stress a kinetic block of this tier can support.
-					#Range: > -2147483648
-					neutroniumMaxCapacity = 8388608
 
 	#.
 	#Fine tune settings related to pumps

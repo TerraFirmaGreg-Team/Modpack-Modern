@@ -1263,6 +1263,26 @@
 			x: 5.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["386C54268DA9F2BF"]
+			description: ["{quests.ae2.universal_circuits.desc}"]
+			id: "4F3B767032E0282F"
+			subtitle: "{quests.ae2.universal_circuits.subtitle}"
+			tasks: [{
+				id: "7427AEBF61BFC772"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ulv_universal_circuit)item(tfg:lv_universal_circuit)item(tfg:mv_universal_circuit)item(tfg:hv_universal_circuit)item(tfg:ev_universal_circuit)item(tfg:iv_universal_circuit)item(tfg:luv_universal_circuit)item(tfg:zpm_universal_circuit)item(tfg:uv_universal_circuit)item(tfg:uhv_universal_circuit))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.ae2.universal_circuits.title}"
+			x: -2.0d
+			y: -9.0d
+		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]
 	title: "{quests.ae2}"

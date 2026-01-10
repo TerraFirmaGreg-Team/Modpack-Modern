@@ -86,3 +86,23 @@ function registerTFGPrimitiveBlockTags(event) {
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
 }
+
+function registerTFGPrimitiveFluidTags(event) {
+	forEachMaterial(material => {
+		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+		if (tfcProperty === null || !material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED))
+			return;
+
+		if (!ChemicalHelper.get(TagPrefix.gearSmall, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_small_gear_mold', material.getFluid().getFluidType().toString())
+		}
+
+		if (!ChemicalHelper.get(TagPrefix.rod, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_rod_mold', material.getFluid().getFluidType().toString())
+		}
+
+		if (!ChemicalHelper.get(TagPrefix.nugget, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
+		}
+	})
+}

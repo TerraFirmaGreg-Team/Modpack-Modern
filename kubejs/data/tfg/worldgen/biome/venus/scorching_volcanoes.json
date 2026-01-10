@@ -1,0 +1,193 @@
+{
+	"carvers": {
+		"air": []
+	},
+	"downfall": 0,
+	"effects": {
+		"additions_sound": {
+			"sound": "tfg:ambient.venus_surface.additions",
+			"tick_chance": 0.0111
+		},
+		"sky_color": 5450003,
+		"fog_color": 5450003,
+		"water_color": 8241044,
+		"water_fog_color": 10866612,
+		"ambient_sound": "tfg:ambient.venus_surface.loop",
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "tfg:ambient.venus_surface.mood",
+			"tick_delay": 6000
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:ash"
+			},
+			"probability": 0.1
+		}
+	},
+	"features": [
+		[
+			"tfc:erosion"
+		],
+		[
+			"tfg:venus/terrain/lava_spring",
+			"tfg:venus/terrain/lava_delta",
+			"tfg:venus/terrain/lava_lake",
+			"tfg:venus/terrain/lava_fissure",
+			"tfg:venus/terrain/lava_rivulet",
+			"tfg:venus/terrain/magma_rivulet"
+		],
+		[
+			"tfg:venus/terrain/basalt_pillar"
+		],
+		[],
+		[
+			"tfg:venus/terrain/basalt_columns_small",
+			"tfg:venus/terrain/basalt_columns_large"
+		],
+		[],
+		"#tfg:venus_veins",
+		"#tfg:venus_underground_decoration",
+		[
+			"tfc:raw_boulder",
+			"tfc:cobble_boulder",
+			"tfc:raw_boulder_small_patch",
+			"tfc:cobble_boulder_small_patch",
+			"tfg:venus/terrain/thermal_vent_rare",
+			"tfg:venus/surface/smoker_source_patch",
+			"tfg:venus/surface/lava_source_patch",
+			"tfg:venus/surface/twisted_vine",
+			"tfg:venus/surface/shadow_plant_patch",
+			"tfg:venus/surface/pile_volcanic_ash",
+			"tfg:venus/surface/pile_black_sand"
+		],
+		[
+			"tfg:venus/terrain/lava_fill"
+		],
+		"#tfg:venus_top_layer_modification"
+	],
+	"has_precipitation": true,
+	"spawn_costs": {
+		"endermanoverhaul:desert_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:savanna_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"endermanoverhaul:nether_wastes_enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"minecraft:enderman": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:cliff_hanger": {
+			"energy_budget": 0.3,
+			"charge": 0.3
+		},
+		"ad_astra:sulfur_creeper": {
+			"energy_budget": 0.15,
+			"charge": 0.6
+		},
+		"primitive_creatures:golem_2": {
+			"energy_budget": 0.15,
+			"charge": 0.6
+		},
+		"minecraft:blaze": {
+			"energy_budget": 0.15,
+			"charge": 0.6
+		},
+		"minecraft:magma_cube": {
+			"energy_budget": 0.15,
+			"charge": 0.6
+		},
+		"arthropocolypse:millipede_head": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
+	},
+	"creature_spawn_probability": 0.2,
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "arthropocolypse:ice_crawler",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "arthropocolypse:stag_beetle_larva",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:stag_beetle",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "endermanoverhaul:nether_wastes_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "ad_astra:sulfur_creeper",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "arthropocolypse:millipede_head",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "primitive_creatures:golem_2",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:cliff_hanger",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 1.6
+}

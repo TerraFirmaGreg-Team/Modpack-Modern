@@ -1,14 +1,29 @@
 enabled: true
 
-debugMode: false
-
-coloredAtoms: true
-
-useMaterialColors: false
-
 onlyShowOnShift: true
 
-defaultColor: §e
+color:
+  colors: true
 
-scale: 20
+  useMaterialColors: false
+
+  defaultColor: §e
+
+  minimumBrightness: 0.1
+
+molecule:
+  showMolecules: true
+
+  moleculeScale: 20
+
+alloy:
+  showAlloys: true
+
+  pieChartRadius: 32
+
+  recursive: true
+
+  partsByMass: false
+
+debugMode: false
 

@@ -1,0 +1,39 @@
+{
+    "name": "Литьё с помощью каналов",
+    "category": "tfc:tfcchannelcasting",
+    "icon": "tfcchannelcasting:channel",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "Вы можете отливать металл из $(thing)тигля$() сразу в несколько форм, используя $(thing)литейные каналы$() и $(thing)столы для форм$(). Просто соедините $(thing)столы для форм$() с $(thing)тиглем$() при помощи $(thing)каналов$(), затем щёлкните правой кнопкой мыши по $(thing)каналу$(), расположенному рядом с $(thing)тиглем$(). Shift + ПКМ по $(thing)столу для форм$() с $(l:getting_started/pottery#mold)формой$(), чтобы установить или убрать её."
+      },
+      {
+        "type": "tfc:knapping_recipe",
+        "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_channel_4",
+        "text": "Лепка $(thing)необожжённых литейных каналов$()."
+      },
+      {
+        "type": "tfc:knapping_recipe",
+        "recipe": "tfcchannelcasting:fire_clay_knapping/unfired_mold_table",
+        "text": "Лепка $(thing)необожжённого стола для форм$()."
+      },
+      {
+        "type": "tfc:heat_recipe",
+        "recipe": "tfcchannelcasting:heating/channel",
+        "text": "После лепки литейных каналы и стола для форм их необходимо $(thing)обжечь$(), как и любую другую керамику."
+      },
+      {
+        "type": "patchouli:multiblock",
+        "multiblock_id": "tfcchannelcasting:example",
+        "name": "Пример литейной установки",
+        "text": "",
+        "enable_visualize": false
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)Использование мехов на $(thing)литейном столе$() ускоряет охлаждение металла.$()$(li)Активация $(thing)канала$() импульсом редстоуна запускает процесс заливки металла.$()$(li)$(thing)литейные столы$() выдают сигнал компаратора.",
+        "title": "Автоматизация"
+      }
+    ],
+    "read_by_default": true
+  }
