@@ -34,11 +34,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(1)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('minecraft:campfire_cosy_smoke')
+			.count(1)
+			.forced(false));
 
 	event.create('tfg:lava_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
@@ -46,11 +47,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 0.5, 0.3)
-		.particleVelocity(0, 0, 0)
-		.particle('lava')
-		.particleCount(1)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 0.5, 0.3)
+			.velocity(0, 0, 0)
+			.particle('lava')
+			.count(1)
+			.forced(false));
 
 	//Geyserite
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
