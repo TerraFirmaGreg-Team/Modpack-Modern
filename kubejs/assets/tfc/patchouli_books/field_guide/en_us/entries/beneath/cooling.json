@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath is hot! The temperature starts at 15C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$() and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
+			"text": "The Beneath is hot! The temperature starts at 15°C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$() and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -18,6 +18,12 @@
 			"title": "Ice",
 			"item": "minecraft:packed_ice",
 			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and $(thing)Packed$() and $(thing)Blue$() ice won't melt."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket",
+			"title": "Liquid Ice Slush",
+			"text": "Ahhhh, so refreshing! Cools you down by 4°C."
 		},
 		{
 			"type": "patchouli:spotlight",
