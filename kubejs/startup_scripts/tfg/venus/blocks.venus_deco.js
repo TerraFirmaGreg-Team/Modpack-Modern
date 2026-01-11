@@ -8,11 +8,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.1, 0)
-		.particle('minecraft:campfire_signal_smoke')
-		.particleCount(5)
-		.particleForced(true)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('minecraft:campfire_signal_smoke')
+			.count(5)
+			.forced(true));
 
 	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
@@ -20,11 +21,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(2)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('minecraft:campfire_cosy_smoke')
+			.count(2)
+			.forced(false));
 
 	event.create('tfg:smoker_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
@@ -32,11 +34,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(1)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('minecraft:campfire_cosy_smoke')
+			.count(1)
+			.forced(false));
 
 	event.create('tfg:lava_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
@@ -44,11 +47,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 0.5, 0.3)
-		.particleVelocity(0, 0, 0)
-		.particle('lava')
-		.particleCount(1)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 0.5, 0.3)
+			.velocity(0, 0, 0)
+			.particle('lava')
+			.count(1)
+			.forced(false));
 
 	//Geyserite
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
@@ -208,11 +212,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.fullBlock(false)
 		.box(1, 0, 1, 15, 16, 15)
 		.notSolid()
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.1, 0)
-		.particle('minecraft:large_smoke')
-		.particleCount(2)
-		.particleForced(true)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('minecraft:large_smoke')
+			.count(2)
+			.forced(false));
 
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
