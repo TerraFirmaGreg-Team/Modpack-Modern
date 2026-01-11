@@ -135,11 +135,15 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add("tfc:can_start_collapse", "#forge:ores");
 	event.add("tfc:can_trigger_collapse", "#forge:ores");
 	event.add("c:hidden_from_recipe_viewers", "#forge:ores");
+    event.add("tfc:monster_spawns_on", "#forge:ores");
+    event.add("tfc:prospectable", "#forge:ores");
 
 	event.add("tfc:can_collapse", "#forge:raw_ore_blocks");
 	event.add("tfc:can_start_collapse", "#forge:raw_ore_blocks");
 	event.add("tfc:can_trigger_collapse", "#forge:raw_ore_blocks");
 	event.add("c:hidden_from_recipe_viewers", "#forge:raw_ore_blocks");
+    event.add("tfc:monster_spawns_on", "#forge:raw_ore_blocks");
+    event.add("tfc:prospectable", "#forge:raw_ore_blocks");
 
 	// Let GT indicators be covered by snow
 	forEachMaterial((material) => {

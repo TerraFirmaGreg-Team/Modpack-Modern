@@ -452,14 +452,7 @@ function registerTFCBlockTags(event) {
     event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
     event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
 
-    // Возможность обрушения руды
-    event.add("tfc:can_collapse", "#forge:ores");
-    event.add("tfc:can_start_collapse", "#forge:ores");
-    event.add("tfc:can_trigger_collapse", "#forge:ores");
-
-    event.add("tfc:monster_spawns_on", "#forge:ores");
-    event.add("tfc:prospectable", "#forge:ores");
-
+    // Glassworking blocks
     event.add("tfc:glass_basin_blocks", "create:brass_block");
     event.add("tfc:glass_pouring_table", "create:brass_block");
 

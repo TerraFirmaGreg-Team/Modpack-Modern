@@ -130,4 +130,6 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('minecraft:cobblestone', 'minecraft:cobblestone')
 	event.recipes.tfc.landslide('minecraft:mossy_cobblestone', 'minecraft:mossy_cobblestone')
 	// #endregion
+
+	event.recipes.tfc.collapse("#forge:raw_ore_blocks");
 }

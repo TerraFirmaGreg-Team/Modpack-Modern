@@ -1,8 +1,7 @@
 // priority: 10
 "use strict";
 
-const registerTFGOreLoots = (event) => {	
-	// Have to define these here because normal loot table jsons don't support checking for hammers
+const registerTFGOreLoots = (event) => {
 
 	// Crush raw rock into cobble
 	global.TFC_STONE_TYPES.forEach(stoneType => {
@@ -60,28 +59,21 @@ const registerTFGOreLoots = (event) => {
 			let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
-				.addWeightedLoot([4, 6],
-					[
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
-					])
-				.addLoot(LootEntry.of(dustOre).when(c => c.randomChance(0.05)));
+				.addWeightedLoot([4, 6], [
+					richRawOre.withChance(0.2),
+					normalRawOre.withChance(0.6),
+					poorRawOre.withChance(0.2)
+				])
+				.addLoot(LootEntry.of(dustOre).when(c => c.randomChance(0.2)));
 
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
 
-				let stoneTypeMaterial = TFGHelpers.getMaterial(stoneType)
-
-				// Material doesn't work here because of reasons
+				let stoneTypeMaterial = global.GEOLOGY_MATERIALS[stoneType];
 				if (stoneTypeMaterial === null) {
-					if (stoneType === "pyroxenite")
-						stoneTypeMaterial = GTMaterials.Blackstone;
-					else if (stoneType === "deepslate")
-						stoneTypeMaterial = GTMaterials.Deepslate;
+					console.log(`unknown stone type: ${stoneType}`);
 				}
 
-				// TODO: change to appropriate stone dust
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 				let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
 
@@ -93,13 +85,13 @@ const registerTFGOreLoots = (event) => {
 						normalRawOre.withChance(0.6),
 						poorRawOre.withChance(0.2)
 					])
-					.addLoot(LootEntry.of(stoneTypeDust).when((c) => c.randomChance(0.25)))
+					.addLoot(LootEntry.of(stoneTypeDust).when((c) => c.randomChance(0.2)))
+					.addLoot(LootEntry.of(dustOre).when(c => c.randomChance(0.05)));
 
 				// break with hammer
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.matchMainHand('#forge:tools/hammers')
-					// TODO: is there a way to retrieve the cobble from the GT registry?
-					.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
+					.addLoot(GTBlocks.COBBLE_BLOCKS.get(TagPrefix.get(stoneType)).get().getBlock().id);
 			})
 		}
 	})

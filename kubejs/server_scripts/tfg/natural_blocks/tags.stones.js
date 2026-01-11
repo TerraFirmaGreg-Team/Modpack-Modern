@@ -35,44 +35,16 @@ function registerTFGStoneItemTags(event) {
 		});
 	});
 	
-	// Mars stone dust
-	event.add('forge:mars_stone_dusts', 'tfg:venus_stone_dust')
-	event.add('forge:mars_stone_dusts', 'gtceu:granite_red_dust')
-	event.add('forge:mars_stone_dusts', 'tfg:mars_stone_dust')
-
 	//#region Stone Dusts Tag
-	event.add('tfg:stone_dusts', 'tfg:gabbro_dust')
-	event.add('tfg:stone_dusts', 'tfg:shale_dust')
-	event.add('tfg:stone_dusts', 'tfg:claystone_dust')
-	event.add('tfg:stone_dusts', 'tfg:limestone_dust')
-	event.add('tfg:stone_dusts', 'tfg:conglomerate_dust')
-	event.add('tfg:stone_dusts', 'tfg:dolomite_dust')
-	event.add('tfg:stone_dusts', 'tfg:chert_dust')
-	event.add('tfg:stone_dusts', 'tfg:chalk_dust')
-	event.add('tfg:stone_dusts', 'tfg:rhyolite_dust')
-	event.add('tfg:stone_dusts', 'tfg:dacite_dust')
-	event.add('tfg:stone_dusts', 'gtceu:quartzite_dust')
-	event.add('tfg:stone_dusts', 'tfg:slate_dust')
-	event.add('tfg:stone_dusts', 'tfg:phyllite_dust')
-	event.add('tfg:stone_dusts', 'tfg:schist_dust')
-	event.add('tfg:stone_dusts', 'tfg:gneiss_dust')
-	event.add('tfg:stone_dusts', 'gtceu:marble_dust')
-	event.add('tfg:stone_dusts', 'gtceu:basalt_dust')
-	event.add('tfg:stone_dusts', 'gtceu:diorite_dust')
-	event.add('tfg:stone_dusts', 'gtceu:andesite_dust')
-	event.add('tfg:stone_dusts', 'gtceu:granite_dust')
-	event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
-	event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
-	event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
-	event.add('tfg:stone_dusts', 'tfg:moon_stone_dust')
-	event.add('tfg:stone_dusts', 'tfg:moon_deepslate_dust')
-	event.add('tfg:stone_dusts', 'tfg:mars_stone_dust')
-	event.add('tfg:stone_dusts', 'tfg:venus_stone_dust')
-	event.add('tfg:stone_dusts', 'tfg:mercury_stone_dust')
-	event.add('tfg:stone_dusts', 'tfg:glacio_stone_dust')
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
-	event.add('tfg:stone_dusts', 'gtceu:red_granite_dust')
-	event.add('tfg:stone_dusts', 'gtceu:netherrack_dust')
+	event.add('tfg:stone_dusts', 'tfg:sedimentary_clastic_dust')
+	event.add('tfg:stone_dusts', 'tfg:sedimentary_carbonate_dust')
+	event.add('tfg:stone_dusts', 'tfg:sedimentary_organic_dust')
+	event.add('tfg:stone_dusts', 'tfg:metamorphic_dust')
+	event.add('tfg:stone_dusts', 'tfg:igneous_ultramafic_dust')
+	event.add('tfg:stone_dusts', 'tfg:igneous_mafic_dust')
+	event.add('tfg:stone_dusts', 'tfg:igneous_intermediate_dust')
+	event.add('tfg:stone_dusts', 'tfg:igneous_felsic_dust')
 	//#endregion
 
 	const SHAPES =    ['stairs', 'slab', 'wall']

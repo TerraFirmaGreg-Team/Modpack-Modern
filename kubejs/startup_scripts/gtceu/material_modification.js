@@ -3,6 +3,7 @@
 
 const registerGTCEuMaterialModification = (event) => {
 
+
 	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
@@ -48,7 +49,9 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FOIL,
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
-		NO_ORE_SMELTING
+		NO_ORE_SMELTING,
+		DISABLE_DECOMPOSITION,
+		DISABLE_MATERIAL_RECIPES
 	} = $MATERIAL_FLAGS
 
 	const metalTooling = [
@@ -264,7 +267,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	
+		
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
 
@@ -355,8 +358,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.ALLOY_BLAST);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ALLOY_BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
@@ -392,6 +397,40 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+
+	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.PotassiumFeldspar, GTMaterials.Biotite, GTMaterials.Quartzite);
+	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Magnetite, GTMaterials.Biotite, GTMaterials.Magnesia);
+	GTMaterials.Bismuth.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Cassiterite, GTMaterials.Silver, GTMaterials.Lead, GTMaterials.Silver);
+	GTMaterials.Bismuth.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.Mercury);
+
+	// Remove properties from some things
+	GTMaterials.Sculk.getProperties().removeProperty(PropertyKey.DUST);
+	GTMaterials.EchoShard.getProperties().removeProperty(PropertyKey.DUST);
+	GTMaterials.EchoShard.getProperties().removeProperty(PropertyKey.GEM);
+	GTMaterials.EchoShard.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.EnderEye.getProperties().removeProperty(PropertyKey.GEM);
+	GTMaterials.EnderEye.getProperties().removeProperty(PropertyKey.DUST);
+	GTMaterials.EnderEye.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.DUST);
+	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.INGOT);
+
+	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE);
+	GTMaterials.Molybdenum.getProperties().removeProperty(PropertyKey.ORE);
+	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT);
+	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID);
+	GTMaterials.Sugar.getProperties().removeProperty(PropertyKey.GEM);
+	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM);
+
+	// Can't remove the dust property from these without GTM crashing
+	GTMaterials.Andesite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Granite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.GraniteRed.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Diorite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Marble.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Deepslate.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Blackstone.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Netherrack.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
+	GTMaterials.Tuff.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
@@ -438,12 +477,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 	GTMaterials.Thorium.setMaterialARGB(0xc898a0)
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xad6d9c)
-	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
-	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
 	GTMaterials.Rhenium.setMaterialARGB(0x8cb07f)
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
-	GTMaterials.Diamond.setMaterialARGB(0x4AEDD9)
+	GTMaterials.Diamond.setMaterialARGB(0x62F7E5)
 	GTMaterials.Diamond.setMaterialSecondaryARGB(0x1AAAA7)
 
 	
@@ -464,8 +501,6 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
-	GTMaterials.GraniteRed.setComponents([])
-	GTMaterials.GraniteRed.setFormula("?")
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
 }

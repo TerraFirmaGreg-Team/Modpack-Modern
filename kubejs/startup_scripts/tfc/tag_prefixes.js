@@ -17,7 +17,7 @@ const registerTFCTagPrefixes = (event) => {
 	TagPrefix.ORES.remove(TagPrefix.oreGranite)
 
 	const shouldGenerateOre = (material) => {
-		return material.hasProperty(PropertyKey.ORE) && material !== GTMaterials.Plutonium239;
+		return material.hasProperty(PropertyKey.ORE);
 	}
 
 	global.TFC_STONE_TYPES.forEach(stoneTypeName => {

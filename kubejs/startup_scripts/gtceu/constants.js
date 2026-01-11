@@ -178,26 +178,11 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:titanium_boots",
 
     // Sculk
-    "gtceu:tiny_echo_shard_dust",
-    "gtceu:small_echo_shard_dust",
-    "gtceu:echo_shard_dust",
-    "gtceu:chipped_echo_shard_gem",
-    "gtceu:flawed_echo_shard_gem",
-    "gtceu:flawless_echo_shard_gem",
-    "gtceu:exquisite_echo_shard_gem",
     "gtceu:echo_shard_plate",
     "gtceu:echo_shard_rod",
-    "gtceu:echo_shard_block",
-    "gtceu:tiny_sculk_dust",
-    "gtceu:small_sculk_dust",
-    "gtceu:sculk_dust",
 
     // Ender eye
     "gtceu:ender_eye_plate",
-    "gtceu:ender_eye_block",
-    "gtceu:ender_eye_dust",
-    "gtceu:small_ender_eye_dust",
-    "gtceu:tiny_ender_eye_dust",
 
     // Marble
     "gtceu:marble",
@@ -212,30 +197,42 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:hv_bedrock_ore_miner",
     "gtceu:ev_bedrock_ore_miner",
 
-    // Plutonium ores
-    "gtceu:raw_plutonium",
-    "gtceu:poor_raw_plutonium",
-    "gtceu:rich_raw_plutonium",
-    "gtceu:raw_plutonium_block",
-    "gtceu:refined_plutonium_ore",
-    "gtceu:purified_plutonium_ore",
-    "gtceu:crushed_plutonium_ore",
-    "gtceu:impure_plutonium_dust",
-    "gtceu:pure_plutonium_dust",
-    "gtceu:plutonium_surface_rock",
-
     // (Normal) thorium bits
-    "gtceu:thorium_nugget",
-    "gtceu:thorium_ingot",
-    "gtceu:thorium_block",
     "gtceu:thorium_plate",
-    "gtceu:double_thorium_plate",
     "gtceu:thorium_rod",
-    "gtceu:thorium_bucket",
 
     // Replaced with our own
     "gtceu:paracetamol_pill",
-    "gtceu:rad_away_pill"
+    "gtceu:rad_away_pill",
+
+    // GT gets upset if you try to remove the dust property from these
+    "gtceu:blackstone_dust",
+    "gtceu:small_blackstone_dust",
+    "gtceu:tiny_blackstone_dust",
+    "gtceu:basalt_dust",
+    "gtceu:small_basalt_dust",
+    "gtceu:tiny_basalt_dust",
+    "gtceu:granite_dust",
+    "gtceu:small_granite_dust",
+    "gtceu:tiny_granite_dust",
+    "gtceu:marble_dust",
+    "gtceu:small_marble_dust",
+    "gtceu:tiny_marble_dust",
+    "gtceu:diorite_dust",
+    "gtceu:small_diorite_dust",
+    "gtceu:tiny_diorite_dust",
+    "gtceu:netherrack_dust",
+    "gtceu:small_netherrack_dust",
+    "gtceu:tiny_netherrack_dust",
+    "gtceu:granite_red_dust",
+    "gtceu:small_granite_red_dust",
+    "gtceu:tiny_granite_red_dust",
+    "gtceu:deepslate_dust",
+    "gtceu:small_deepslate_dust",
+    "gtceu:tiny_deepslate_dust",
+    "gtceu:andesite_dust",
+    "gtceu:small_andesite_dust",
+    "gtceu:tiny_andesite_dust"
 ]);
 //#endregion
 

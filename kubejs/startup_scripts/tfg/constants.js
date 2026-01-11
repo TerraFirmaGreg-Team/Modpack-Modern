@@ -212,7 +212,6 @@ global.STONE_CHARACS = { // Sets of stone block properties used for block regist
 	dark_concrete:  { sound: 'stone',           type: null,                mapColor: 'color_gray'            }
 }
 
-
 /** @type {Hammering[]} */
 global.HAMMERING = [ // Crushing relationships for manual block hammering, create press hammering and gtceu forge hammer crushing.
 		// Beneath
