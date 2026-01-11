@@ -21,6 +21,12 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket",
+			"title": "Chilled Water",
+			"text": "So hot! Time for a refreshing drink! Cools you down by 4°C."
+		},
+		{
+			"type": "patchouli:spotlight",
 			"title": "Blue Steel Equipment",
 			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
 			"text": "Looking for something more permanent? The $(thing)Blue Steel Diving Set$() will keep your temperature capped at 28C, and lets you swim in lava too!$(br2)$(item)Lavaproof Hides$() can be obtained from the native $(thing)Red Elk$() or looted from Bastions."
