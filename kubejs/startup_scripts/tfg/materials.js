@@ -199,4 +199,25 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.GENERATE_PLATE)
 
 	// #endregion
+
+	// #region Solders
+	event.create('tfg:woods_metal')
+		.dust()
+		.liquid(GTFluidBuilder().temperature(343))
+		.ingot()
+		.color(0x65737C)
+		.components('4x bismuth', '2x lead', '1x tin', '1x cadmium')
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.POISON)
+
+	event.create('tfg:bi_pb_sn_cd_in_tl')
+		.dust()
+		.liquid(GTFluidBuilder().temperature(314))
+		.ingot()
+		.color(0x745252)
+		.components('8x bismuth', '4x lead', '2x tin', '3x indium', '2x cadmium', '1x thallium')
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+	
+	// #endregion
 }
