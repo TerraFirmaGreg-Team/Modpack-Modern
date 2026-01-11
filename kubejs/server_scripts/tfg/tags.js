@@ -179,6 +179,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
 
+	event.add('tfc:drinkables', 'gtceu:ice')
+	event.add('tfc:any_drinkables', 'gtceu:ice')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})

@@ -1,0 +1,11 @@
+{
+	"ingredient": "gtceu:ice",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "tfg:cooling",
+			"duration": 20,
+			"amplifier": 0
+		}
+	]
+}
