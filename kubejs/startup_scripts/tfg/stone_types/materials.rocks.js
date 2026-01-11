@@ -63,7 +63,8 @@ const registerTFGRockMaterials = (event) => {
 		glacio_stone: intermediate,
 		flavolite: felsic,
 		sandy_jadestone: ultramafic,
-		sulphuric_rock: felsic,
+		sulphuric_rock: mafic,
+		brimstone: organic,
 		scoria: mafic,
 		geyserite: organic
 	}
@@ -130,9 +131,9 @@ const registerTFGRockMaterials = (event) => {
 	phonolite	extrusive igneous	intermediate
 	permafrost	? not really a rock
 
-	leucitite	extrusive igneous	felsic...?
 	lamproite	extrusive igneous	ultramafic
 	ignimbrite	either IE or meta depending on who you ask - mostly made of tuff + pumice/scoria
+	sulphuric_rock	mafic
 	scoria		extrusive igneous	mafic
 	geyserite	sedimentary			chemical (mostly made of opal/silica)
 
