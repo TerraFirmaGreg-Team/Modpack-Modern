@@ -19,6 +19,8 @@
 - Cut and paste and Copy and paste building gadgets have been moved from IV to EV (#2660) @thederpysockdude123
 - The sandworm no longer spawns in the Superflat preset that's a big vanilla desert biome
 - You can now also use mars water in gregtech and create boilers @Pyritie
+- Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
+- Fixed the TFC blast furnace on mars but for real this time @Pyritie
 ### Bug fixes
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
 - Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
@@ -32,6 +34,7 @@
 - Fixed the new venus bugs spawning on earth @Pyritie
 - Fixed some inconsistent recipes with coal in coke ovens, and removed a duplicate recipe (#2688) @jurjen909
 - Fixed the rendering of two-block tall crops in the electric greenhouse @Pyritie
+- Fixed dry ice dropping nothing when broken (#2687) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071
