@@ -1,0 +1,45 @@
+
+#General settings
+[general]
+	#Blacklisted Sounds - add the name of the sounds to blacklist, separated with comma
+	forbiddenSounds = ["ui.", "music.", "ambient."]
+	#Allow the "ALL" sounds list to include the blacklisted sounds?
+	lawfulAllList = false
+	#Volume set when pressed the mute button by default
+	#Range: 0.0 ~ 0.9
+	defaultMuteVolume = 0.0
+	#Set to true to move the muffle and play buttons to the left side of the GUI
+	leftButtons = false
+	#Show tips in the Muffler screen?
+	showTip = true
+	#Whether or not use the dark theme
+	useDarkTheme = false
+
+#Inventory button settings
+[inventory_button]
+	#Disable the Muffle button in the player inventory?
+	disableInventoryButton = false
+	#Coordinates for the Muffler button in the player inventory.
+	# You can change this in game by holding the RMB over the button and draging it around
+	#Range: > -2147483648
+	invButtonX = 75
+	#Coordinates for the Muffler button in the player inventory. 
+	#You can change this in game by holding the RMB over the button and draging it around
+	#Range: > -2147483648
+	invButtonY = 7
+	#Disable the Muffle button in the creative player inventory?
+	disableCreativeInventoryButton = false
+	#Coordinates for the Muffler button in the creative player inventory.
+	# You can change this in game by holding the RMB over the button and draging it around
+	#Range: > -2147483648
+	creativeInvButtonX = 2
+	#Coordinates for the Muffler button in the creative player inventory. 
+	#You can change this in game by holding the RMB over the button and draging it around
+	#Range: > -2147483648
+	creativeInvButtonY = 2
+
+#Anchor settings
+[Anchors]
+	#Disable the Anchors?
+	disableAnchors = false
+

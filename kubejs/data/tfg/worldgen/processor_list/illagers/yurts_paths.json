@@ -1,0 +1,103 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:block_match"
+					},
+					"location_predicate": {
+						"block": "minecraft:water",
+						"predicate_type": "minecraft:block_match"
+					},
+					"output_state": {
+						"Name": "tfc:wood/planks/pine"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:block_match"
+					},
+					"location_predicate": {
+						"block": "tfc:river_water",
+						"predicate_type": "minecraft:block_match"
+					},
+					"output_state": {
+						"Name": "tfc:wood/planks/pine"
+					}
+				},
+
+
+
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "rnr:rock/gravel_road/slate"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "rnr:rock/gravel_road/phyllite"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.15
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "tfc:grass_path/silty_loam"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 0.1
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "tfc:grass/silty_loam"
+					}
+				},
+				{
+					"input_predicate": {
+						"block": "tfc:rock/bricks/andesite",
+						"predicate_type": "minecraft:random_block_match",
+						"probability": 1.0
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"output_state": {
+						"Name": "rnr:hoggin"
+					}
+				}
+			]
+		}
+	]
+}

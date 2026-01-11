@@ -1,0 +1,11 @@
+{
+	"ingredient": "firmalife:dessert_wine",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "species:iron_will",
+			"duration": 6400,
+			"amplifier": 0
+		}
+	]
+}

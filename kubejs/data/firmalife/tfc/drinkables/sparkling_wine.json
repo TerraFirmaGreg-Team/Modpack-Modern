@@ -1,0 +1,11 @@
+{
+	"ingredient": "firmalife:dessert_wine",
+	"thirst": 15,
+	"effects": [
+		{
+			"type": "minecraft:jump_boost",
+			"duration": 6400,
+			"amplifier": 1
+		}
+	]
+}

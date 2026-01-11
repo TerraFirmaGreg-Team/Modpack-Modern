@@ -869,6 +869,15 @@ const registerExtendedAE2Recipes = (event) => {
 		.EUt(GTValues.VA[GTValues.IV])
 		.dimension('ad_astra:moon')
 
+	event.shaped('expatternprovider:fishbig', [
+		'CCC',
+		'CFC',
+		'CCC'
+	], {
+		C: '#tfc:sewing_light_cloth',
+		F: '#minecraft:fishes'
+	}).id('tfg:shaped/fishbig')
+
 	//#endregion
 
 }

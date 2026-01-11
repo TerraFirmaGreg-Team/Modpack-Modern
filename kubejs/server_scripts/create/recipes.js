@@ -1234,7 +1234,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/clipboard')
 
 	// Лестница из железа
-	event.shaped('6x create:andesite_ladder', [
+	event.shaped('7x create:andesite_ladder', [
 		'A A',
 		'AAA',
 		'A A'
@@ -1242,8 +1242,10 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/tin_alloy'
 	}).id('tfg:create/shaped/andesite_ladder')
 
+	TFGHelpers.registerMaterialInfo('create:andesite_ladder', { 'tin_alloy': 0.5 })
+
 	// Лестница из латуни
-	event.shaped('6x create:brass_ladder', [
+	event.shaped('7x create:brass_ladder', [
 		'A A',
 		'AAA',
 		'A A'
@@ -1251,14 +1253,18 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/brass'
 	}).id('tfg:create/shaped/brass_ladder')
 
+	TFGHelpers.registerMaterialInfo('create:brass_ladder', { 'brass': 0.5 })
+
 	// Лестница из железа
-	event.shaped('6x create:copper_ladder', [
+	event.shaped('7x create:copper_ladder', [
 		'A A',
 		'AAA',
 		'A A'
 	], {
 		A: '#forge:rods/copper'
 	}).id('tfg:create/shaped/copper_ladder')
+
+	TFGHelpers.registerMaterialInfo('create:copper_ladder', { 'copper': 0.5 })
 
 	// Леса из железа
 	event.shaped('4x create:andesite_scaffolding', [
@@ -2078,7 +2084,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(17)
-		.addMaterialInfo(true)
+		
+	TFGHelpers.registerMaterialInfo('create:redstone_link', { 'wrought_iron': 3 });
 
 	event.shaped('create:display_link', [
 		'FED',
@@ -2288,7 +2295,6 @@ const registerCreateRecipes = (event) => {
 	event.stonecutting('2x create:andesite_table_cloth', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
-	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
 
 	// Industrial Iron stuff
 	
@@ -2370,25 +2376,28 @@ const registerCreateRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Bars
+	//Bars
 
-	event.recipes.gtceu.cutter('tfg:create_andesite_bars')
-		.itemInputs('#forge:plates/tin_alloy')
-		.itemOutputs('create:andesite_bars')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+	event.stonecutting('4x create:andesite_bars', '#forge:ingots/tin_alloy')
 
-	event.recipes.gtceu.cutter('tfg:create_copper_bars')
-		.itemInputs('#forge:plates/copper')
-		.itemOutputs('create:copper_bars')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+	const create_metals = [
+		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
+		{ metal: 'brass', material: 'brass', tier: 2 },
+		{ metal: 'copper', material: 'copper', tier: 1 },
+	];
 
-	event.recipes.gtceu.cutter('tfg:create_brass_bars')
-		.itemInputs('#forge:plates/brass')
-		.itemOutputs('create:brass_bars')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+	create_metals.forEach(bar => {
+		let quarterMap = {};
+		quarterMap[bar.material] = 0.25;
+
+		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
+
+		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, quarterMap)
+
+		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
+	})
 
 	// Doors
 

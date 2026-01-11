@@ -12,6 +12,7 @@ const registerGTCEuMaterialModification = (event) => {
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
+	const $TFGT_MEDICAL_CONDITIONS = Java.loadClass('su.terrafirmagreg.core.common.data.tfgt.TFGTMedicalConditions')
 
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
@@ -147,9 +148,9 @@ const registerGTCEuMaterialModification = (event) => {
 	let AlSi = GTMaterials.get('aluminium_silicate')
 	AlSi.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, 1))
 	GTMaterials.Kyanite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 95))
-	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 90))
-	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
-	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 85))
+	GTMaterials.Mica.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 40))
+	GTMaterials.Spodumene.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 30))
+	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 25))
 
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
@@ -188,13 +189,31 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
 
 	//#endregion
-
+	//
+	//		  /* Castable stuff */
+	GTMaterials.Copper.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.BismuthBronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.BlackBronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Bronze.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Tin.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Bismuth.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Zinc.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.SterlingSilver.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.RoseGold.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Silver.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Gold.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Nickel.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Brass.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.RedAlloy.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Lead.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Potin.addFlags(CAN_BE_UNMOLDED);
+	GTMaterials.Iron.addFlags(CAN_BE_UNMOLDED);
 	//
 	//        /* Имеют инструменты, броню TFC, двойные слитки */
-	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-	GTMaterials.BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+	GTMaterials.BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.WroughtIron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.Steel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.BlackSteel.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_ROTOR, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
@@ -219,11 +238,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR, CAN_BE_UNMOLDED);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
-	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, CAN_BE_UNMOLDED);
+	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, );
 	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
 	//
@@ -267,7 +286,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
-	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
 	GTMaterials.Magnalium.addFlags(GENERATE_GEAR);
@@ -275,6 +293,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
+	GTMaterials.CobaltBrass.addFlags(GENERATE_ROTOR)
+	GTMaterials.Magnalium.addFlags(GENERATE_ROTOR)
+	GTMaterials.VanadiumSteel.addFlags(GENERATE_ROTOR)
 	
 	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
 	
@@ -355,7 +376,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
-	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, GTMedicalConditions.CARCINOGEN, 1, true));
+	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, $TFGT_MEDICAL_CONDITIONS.RADIOACTIVE, 1, true));
 
 	// This contains hazardous elements so GT tags it as hazardous automatically
 	GTMaterials.get('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
@@ -426,6 +447,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
 	GTMaterials.Rhenium.setMaterialARGB(0x8cb07f)
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
+	GTMaterials.Diamond.setMaterialARGB(0x4AEDD9)
+	GTMaterials.Diamond.setMaterialSecondaryARGB(0x1AAAA7)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -444,6 +467,9 @@ const registerGTCEuMaterialModification = (event) => {
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
+	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
 	GTMaterials.GraniteRed.setComponents([])
 	GTMaterials.GraniteRed.setFormula("?")
+	GTMaterials.Thorium.setFormula('ThO2')
+	GTMaterials.Americium.setFormula('Am²⁴³')
 }

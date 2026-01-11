@@ -5,24 +5,54 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 	event.create('tfg:geyser_source', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
+		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.1, 0)
-		.particle('minecraft:campfire_signal_smoke')
-		.particleCount(5)
-		.particleForced(true)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('minecraft:campfire_signal_smoke')
+			.count(5)
+			.forced(true));
 
 	event.create('tfg:geyser_source_small', 'tfg:particle_emitter_decoration')
 		.soundType('dripstone_block')
 		.mapColor('color_white')
+		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('minecraft:campfire_cosy_smoke')
-		.particleCount(2)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('minecraft:campfire_cosy_smoke')
+			.count(2)
+			.forced(false));
+
+	event.create('tfg:smoker_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_gray')
+		.box(3, 0, 3, 13, 10, 13)
+		.resistance(6)
+		.hardness(1.5)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('minecraft:campfire_cosy_smoke')
+			.count(1)
+			.forced(false));
+
+	event.create('tfg:lava_source', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 10, 13)
+		.resistance(6)
+		.hardness(1.5)
+		.particles(a => a
+			.range(0.3, 0.5, 0.3)
+			.velocity(0, 0, 0)
+			.particle('lava')
+			.count(1)
+			.forced(false));
 
 	//Geyserite
 	event.create('tfg:rock/raw/geyserite', 'tfc:raw_rock')
@@ -49,15 +79,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 	// Halite
 	event.create('tfg:rock/halite')
 		.mapColor('quartz')
-		.soundType('deepslate')
-		.hardness(0.8)
-		.resistance(0.8)
-		.requiresTool(true)
-		.tagBlock('minecraft:mineable/pickaxe')
-		.fullBlock(true)
-		.opaque(true)
-	event.create('tfg:rock/halite2')
-		.mapColor('snow')
 		.soundType('deepslate')
 		.hardness(0.8)
 		.resistance(0.8)
@@ -191,11 +212,12 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.fullBlock(false)
 		.box(1, 0, 1, 15, 16, 15)
 		.notSolid()
-		.particleOffset(0.3, 1, 0.3)
-		.particleVelocity(0, 0.1, 0)
-		.particle('minecraft:large_smoke')
-		.particleCount(5)
-		.particleForced(true)
+		.particles(a => a
+			.range(0.3, 1, 0.3)
+			.velocity(0, 0.1, 0)
+			.particle('minecraft:large_smoke')
+			.count(2)
+			.forced(false));
 
 	event.create('betterend:tube_worm', 'tfg:attached_decorative_plant')
 		.soundType('nether_wart')
@@ -270,4 +292,44 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_light_gray')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+
+	// Plants
+
+	event.create('betterend:hydralux_sapling', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(2, 0, 2, 14, 13, 14)
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:hydralux_small', 'tfg:tall_decorative_plant')
+		.height(4)
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:hydralux_large', 'tfg:tall_decorative_plant')
+		.height(4)
+		.soundType('nether_wart')
+		.mapColor('green_terracotta')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:shadow_plant', 'tfg:decorative_plant')
+		.soundType('crop')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 10, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
+	event.create('betterend:twisted_vine', 'tfg:tall_decorative_plant')
+		.height(3)
+		.soundType('crop')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
 }

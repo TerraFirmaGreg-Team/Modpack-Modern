@@ -1,13 +1,189 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
+- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
+### Changes
+- Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
+- Added drinkable effects field guide entry (#2676) @FlightingFalcon
+- The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
+- Large gears can now be crafted in an anvil/mechanical press @Pyritie
+- Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
+- Added cast iron to the rod, gear, and nugget molds (#2677) @Mqrius
+- Added vinegar as an option for curdled milk in a gregtech mixer (#2675) @JeanRdSz
+- Fallen leaves, leaf blocks, bio chaff, and plant balls now all count as compost greens (#2653) @Inceitious
+- Added more pie charts to various ores and composite materials (#2640) @BlueBoat29
+- Unified crafting recipes for all the different metal bars (#2641)
+- Changed to a new UI mod that improves performance, let us know if it causes issues! (#2620) @trisjob
+- Cut and paste and Copy and paste building gadgets have been moved from IV to EV (#2660) @thederpysockdude123
+- The sandworm no longer spawns in the Superflat preset that's a big vanilla desert biome
+- You can now also use mars water in gregtech and create boilers @Pyritie
+- Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
+- Fixed the TFC blast furnace on mars but for real this time @Pyritie
+### Bug fixes
+- Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
+- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
+- Fixed tree chopping not working on trees that had no leaves @Mqrius
+- Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
+- Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
+- Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
+- Water wheels now spin the correct direction in rivers (#2450) @zehmaria
+- Water wheels now also work with flowing water from aqueducts, instead of requiring an adjacent source block @zehmaria
+- Added locometal to the domum ornamentum whitelist (#2651) @thederpysockdude123
+- Fixed the new venus bugs spawning on earth @Pyritie
+- Fixed some inconsistent recipes with coal in coke ovens, and removed a duplicate recipe (#2688) @jurjen909
+- Fixed the rendering of two-block tall crops in the electric greenhouse @Pyritie
+- Fixed dry ice dropping nothing when broken (#2687) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Petr211071
+- Japanese @sakura-gondra
+
+## [0.11.16] - 05-01-2026
+### Changes
+- Added new steam multiblocks for the alloy smelter, compressor, forge hammer, and thermal centrifuge @Pyritie
+- Reduced the Y level that ad astra considers "space" so rocket launches are faster @Pyritie
+- Reduced the amount of loot vases in the newer illages, and reduced how much loot you get from them @Pyritie
+- Illages and the smaller mud brick ruins are now a little rarer, and the stone brick ruins are a little more common @Pyritie
+- Magnesium Diboride now only requires an MV chem bath to cool, but the MV chem bath now also requires a little plastic to craft (#2575) @Pyritie
+- Added an implosion compressor recipe for glowstone dust to glowstone blocks (#2581) @Xaligal
+- Ad astra and Create Deco lamps are now half as expensive to craft (#2581) @Xaligal
+- Added alloy blast smelter recipes for black bronze and bismuth bronze (#2581) @Xaligal
+- The alloy blast smelter recipe for glowstone has been adjusted (#2581) @Xaligal
+- Renamed Thorium (the non-isotope one) to Thorianite to better indicate that it's only an ore @Pyritie
+- Added a way to get wax and latex in the steam age for those of you starting on mars @Pyritie
+- Changed the Rover's step height from 1 block to 1.2 blocks (about 4 extra 'pixels') @Pyritie
+- Fixed/improved behaviour of GregTech solar things on non-overworld dimensions, so rain in the overworld doesn't stop the solar array from working on the moon, and mars sandstorms affect solar things as well (#2140) @Pyritie
+- Added missing recipes for some Steam 'n' Rails items, and changed the smokestacks to use cast iron instead of black steel (#2610) @thederpysockdude123
+- Added missing recipes for new Hypertube redstone things (#2615) @Xtrial-01
+- Recolored diamond GregTech things to match the color of the vanilla diamond item @Pyritie
+- Buffed the HP of the Illager Beast @Pyritie
+- Added a thermochemically treated hardwood dust -> soaked unrefined paper recipe to the helve hammer (#2621) @Pyritie
+- Added Ad Astra's decorative blocks to Domum Ornamentum's whitelist (#2627) @thederpysockdude123
+#### Hazard changes
+- Added a new medical condition, Irradiated, caused by the Radioactive hazard which all radioactive things (including naquadria and neutronium) now have instead of Carcinogenic. It has the same symptoms/side effects as carcinogenic.
+- Paracetamol now cures carcinogenic, and Rad-Away cures both carcinogenic and irradiated. This is because you encounter carcinogenic hazards much sooner than radioactive ones, so the only cure for radioactive being way in HV didn't make much sense. In order to change the effects of these pills, we had to make new items, so any existing ones won't have these changes, sorry.
+- Weakly Poisonous is no longer permanent and heals over time like other conditions.
+### Bug fixes
+- Fixed missing crafting table recipes for greate gearboxes (#2577) @Pyritie
+- Fixed crashing when attaching shafts to a steam engine (#2578, #2579) @Electrolyte220
+- Fixed wrong small cogwheel rotation rendering @Electrolyte220
+- Fixed citric acid food processor recipe producing nothing (#2588) @Pyritie
+- Fixed not being able to use pickled eggs in sandwiches (#2551) @Pyritie
+- Fixed how much aluminium silicate you get from mica, pollucite, and spodumene to more accurately reflect how much aluminium they have @Pyritie
+- Fixed being able to put liquid metals into the new molds that didn't have a recipe @Pyritie
+- Added some grain nutrition to oatmeal (#2469) @Pyritie
+- Fixed hot-protection chestplates not fully protecting against GT hot ingots (#2598) @Pyritie
+- Fixed hermetic sandstone's appearance so it looks similar to TFC's raw sandstone @Pyritie
+- Fixed some issues with the food autostacking changes in a previous version (#2580) @Mqrius
+- Fixed a crash with meal ingredient stacking on servers @Mqrius
+- Fixed some translation inconsistencies in the field guide (#2606, #2607) @jmecn @Petr211071
+- Fixed incorrect fluid tooltips for the silica glass bottle and iron flask (#2608) @JeanRdSz @Pyritie
+- Removed some dough mixing bowl recipes that tried to output more than 5 ingredients because that's the mixing bowl's maximum (#2612) @Pyritie
+- Fixed missing heat definition for soybeans (#2603) @Pyritie
+- Fixed crafting bacon removing all the other food traits @Pyritie
+- Fixed lamps costing 4x as much glass when crafted in an assembler as opposed to elsewhere (#2613) @Inceitious 
+- Fixed some inconsistent ladder recipes (#2616) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Petr211071 @AlexUnder
+
+## [0.11.15] - 31-12-2025
+### Bug fixes
+- Fixed Greate stress levels (#2564) @Pyritie
+- Fixed crash when looking at steam engines while holding a shaft (#2565)
+
+## [0.11.14] - 31-12-2025
+### Changes
+- Change energy acceptor to use a machine hull instead of a converter. (#2553) @thederpysockdude123
+- Update ExtendedAE package name in InvTweaks exclusions. (#2556) @FakeDomi
+- Pickled eggs can now be used in sandwiches (#2551) @Pyritie
+- Changed small gear mold capacity from 288 to 144mb (#2544) @JeanRdSz
+- Create Depots now count as forge insulation, so a basin can output directly onto one @Pyritie
+### Mod updates
+- New [Greate changelog](https://github.com/GreateBeyondTheHorizon/Greate/releases/tag/0.0.59)
+- New [Firmalife changelog](https://github.com/eerussianguy/firmalife/releases/tag/v2.1.25)
+### Bug fixes
+- Fixed issue where the arc furnace was generating annealed copper nuggets out of nothing @BlueBoat29
+- Fixed recipe conflict between Rimmed Blunt Bullet and 45-70 Bullet (#2545) @BlueBoat29
+- Fixed cake recipes returning nothing in a food processor (#2558) @Pyritie
+- Fixed a crash when generating chunks sometimes @Satherov
+### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Russian @Petr211071
+
+## [0.11.13] - 28-12-2025
+### Breaking Changes
+- The LCR recipe for BTX fuel now requires circuit 24, to fix a recipe conflict (#2515) @TomPlop
+- Loose stones now compress into cobblestone (without any mortar) and vice versa. So if you're currently using gravel to store your loose stones, uncraft them before updating. (#809) @Pyritie
+### Changes
+- Added casting molds for small gears, nuggets, and rods (#2470) @glitchplaysgames714
+- Added some new illages to the hot and dry, and cold and dry climates of the world! @MVG31
+- Added some mossy cobblestone to the beneath @Pyritie
+- Hardened non-TFC rocks are now craftable (#2447) @glitchplaysgames714
+- Magma blocks are now hot to hold @Pyritie
+- Added a recipe to craft old gregtech facades into ones with a new texture @Pyritie
+- Fluid sources of alcohol and milks are no longer placeable, so you can't drink from them infinitely any more @bigtho80
+- Added TFC scraping knives (#2494) @glitchplaysgames714
+- Changed the ambient sounds in the Beneath, added some to the moon and mars @Pyritie
+- Tweaked the ambient sounds in the overworld @Pyritie
+- Apatite, Tricalcium phosphate, rock salt, potassium sulfate, and ammonium chloride dusts now count as crop fertiliser (#2501) @Xtrial-01
+- Added quern recipes for gems into dust @Pyritie
+- Added recipes for smoke bombs, pet treats, and disguise kits, and added swapper pearls to the loot tables of various endermen @Pyritie
+- Added a little saltpeter to cassiterite veins @Pyritie
+- Removed the cleanroom requirement for level emitters since they were also craftable in a crafting grid (#2529) @Jeuvke
+- Overhauled photographic film development @Pyritie
+- Lowered the temperature of gas fuels and their related gases/fluids @Pyritie
+- Added drink effects to wines, ethanol, and methanol @Pyritie
+### Bug fixes
+- Fix for food stacking everywhere! @Mqrius
+- Fixed the grappling hook crashing and sending you to the void if you use it while travelling between dimensions (#2514) @Mqrius
+- Fixed some curving press tool head recipes being cheaper than intended (#2478) @Pyritie
+- Fixed some bastion chests being empty @Pyritie
+- Fixed overlapping durability numbers on the curio HUD (#2484) @glitchplaysgames714
+- Fixed a potential crash involving the refrigerator @Redeix
+- Fixed the evaporation tower requiring an input hatch even for recipes that don't have a fluid input @glitchplaysgames714
+- Fixed loot tables for ore indicator buds @Pyritie
+- Fixed the new gas fuels being usable on other planets (#2515) @TomPlop
+- Fixed hot ingots melting packed ice into water sources @Mqrius
+- Fixed inconsistent recipes for metal bars, now they all use the anvil or stonecutter. Also added recycling for them all @Pyritie
+- Various quest fixes and improvements @thederpysockdude123
+- Added a missing dependency that fixes the rnr roads' crazy acceleration @Pyritie
+- Fixed not being able to use aged alcohols to make vinegar (#2519) @Pyritie
+- Fix some forge fuels not having the right tag to actually be used as forge fuels @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry
+- Spanish @NikoNeko17
+- Turkish @MVG31
+
+## [0.11.12] - 19-12-2025
+### Changes
+- Brick Wooden Form can now be used to make unfired clay and fire clay bricks at the same rate as knapping (#2461) @Pyritie
+### Bug fixes
+- Fixed missing blocks of coke @Pyritie
+- Fixed some missing boiler recipes like charcoal blocks (#2463) @applenper
+- Fixed vulcanized latex to raw rubber vacuumizer recipe being the wrong way around (#2464) @Mqrius
+- Fixed a crash when loading a chunk that had an old blaze burner with a straw @Pyritie
+- Fixed incorrect coil tooltips on the nuclear fuel factory and liquefaction tower @Pyritie
+- Fixed new rose quartz lens not being in the pink lens tag @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+
+## [0.11.11] - 18-12-2025
 ### Breaking Changes
 - Rose Quartz moved namespaces, so you'll have to convert all your old rose quartz items into the new ones. You'll need to explore new chunks to find new geodes with the correct ore blocks.
 - The previous silicone rubber styrene butadiene rubber belts have been changed to a different item, so please break and recycle them before updating if you're using any.
 - Cleaning meal bag foil packs is now done in the chem bath instead of the ore washer. @Pyritie
 - Turning honey into sugar is now done in the extractor instead of the centrifuge. @Pyritie
 - Syngas crafting in the Vacuum Chamber will now output into the chamber itself instead of the Basin, so it won't get mixed up with the creosote (#2378) @Pyritie
+- Cleaned up the EMI pages for small and large boilers so they aren't flooded with furniture and other things. If you were using something "non-standard" to fuel your boilers, check if they're still valid. (#2421, #2415) @thederpysockdude123 @applenper
+- Clay dust is no longer electrolyzable, but now you can get infinite clay blocks from a rock breaker @Pyritie
 ### Changes
+- Added BTX fuel, a new EV-tier gas fuel to replace nitrobenzene. (#2416) @TomPlop
+- Primitive illagers will no longer endlessly respawn. Instead, now they only spawn as "structures", so once you kill them they will never return. @Pyritie
 #### Hot or Not
 - Added "too cold to handle" and "too light to handle" for cold things and lighter-than-air things. Uses the same mechanic as tongs. Lighter-than-air things can also be negated with something Very Heavy in your inventory, and all effects (including "too hot to handle") are negated by super tanks/chests and cells, but *not* drums or buckets. Check the `#tfg:hot_protection_equipment`, `#tfg:cold_protection_equipment`, and `#tfg:floating_protection_equipment` tags for equipment that makes you immune to these effects. The equipment also protects against pipes! @Pyritie
 - GregTech hot ingots are also now properly included in the "too hot to handle" system so the same protection applies @Pyritie
@@ -19,27 +195,43 @@
 - The medicines have also been rebalanced, so some of the stronger ones come with a downside, while the weaker ones have a stronger cure effect.
 - The medical condition effect that previously instantly killed you (which did not spawn a corpse) now gives you Wither III instead. @Pyritie
 #### Other
-- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie
+- Added two more early game mechanical belts, and rubber+ belts are also now more expensive. @Pyritie @Epicificator
 - Doubled the durability of all space suits @Pyritie
 - Added a way to convert between vinegar and acetic acid (#2386) @Epicificator
 - Added a renderer to the electric greenhouse, so now you can visually see your crops grow! @RubenVerg
 - Added some distant horizons config options, for those who want to use it (#2406) @Mqrius
 - More animals now drop animal fat (#2367) @Pyritie
 - Nerfed how much biomass and plant balls are produced from certain vanilla plants (#2361) @Pyritie
+- Added some more ruined structures with a small bit of loot.
+- Added some resource packs for TFC, disabled by default
+- Lenses are now allowed on tool racks (#2434) @thederpysockdude123
+- The Active Transformer multiblock is now craftable at EV, with a new texture and casings. (#2424) @BlueBoat29
+- Renamed AE2 Sky Stone to Suevite @Pyritie
+- Removed the shapeless crafting recipe for colored concrete powder, added an instant barrel recipe to turn it into solid concrete @Pyritie
+- GregTech mining machines now replace mined ores with the correct type of cobble, instead of rhyolite or vanilla cobble @Pyritie
 ### Bug fixes
 - Fixed aged sake, vodka, and whiskey losing their buff effects, but for real this time @Pyritie
 - Fixed fries and cheese curds not being able to be put on burgers. @Redeix
 - Fixed sliced brinza missing the proper cheese tags. @Redeix
 - Fixed pyroxenite and keratophyre bricks crafting 1 instead of 4 (#2373) @Pyritie
-- Fixed some issues with quest items (#2384, #2386) @Mqrius
+- Fixed some issues with quest text and items (#2384, #2386, #2435) @Mqrius @thederpysockdude123
 - Fixed some tag issues with foods (#2405) @thederpysockdude123
 - Fixed treated wooden planks from being excluded in the Domum Ornamentum and Facade whitelists (#2404) @thederpysockdude123
 - Fixed a recipe conflict for boiled and fried eggs (#2407) @Mqrius
 - Fixed a recipe conflict blocking the crafting of silicone rubber (#2387) @Mqrius
 - Fixed the backpack and QuarkTech helmet auto-feeding from feeding you while you're downed @Mqrius
+- Fixed drills taking way more damage when mining than intended (#2419, #2428) @Mqrius
+- Fixed Ostrum Casing not having a recipe (#2363) @FlightingFalcon
+- Fixed warped trees not growing on normal mars dirt @Pyritie
+- Fixed missing block names for some of the variations of non-earth stones @Pyritie
+- Fixed being able to turn bismuth and black bronze drums into regular bronze drums (#2436) @Jeuvke
+- Fixed a recipe conflict with stone plates (#2433) @Pyritie
+- Fixed concrete pouring consuming your fluid container if you use anything other than a bucket to pour @Mqrius
+- Fixed large amounts of TPS lag when pouring huge areas of concrete at once @Therighthon
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Japanese @sakura-gondra
+- Russian @Petr211071
 
 ## [0.11.10] - 9-12-2025
 ### Breaking Changes

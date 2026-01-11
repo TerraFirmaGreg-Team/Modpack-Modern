@@ -1,0 +1,40 @@
+{
+	"name": "highland",
+	"biomes": [
+		"old_mountains",
+		"old_mountain_lake",
+		"oceanic_mountains",
+		"oceanic_mountain_lake",
+		"martian_mountains",
+		"rusticus_edge",
+		"amber_edge",
+		"sangnum_edge"
+	],
+	"sounds": [
+		{
+			"name": "heavy-wind",
+			"category": "wind",
+			"files": [
+				"ambientsounds:wind.heavy-wind"
+			],
+			"air": {
+				"min": 0.6
+			},
+			"volume": 0.5
+		},
+		{
+			"name": "wind-in-leaves",
+			"category": "wind",
+			"files": [
+				"ambientsounds:wind.wind-in-leaves"
+			],
+			"air": {
+				"min": 0.6
+			},
+			"features": [
+				"tree"
+			],
+			"volume": 0.5
+		}
+	]
+}

@@ -126,19 +126,7 @@ function registerGTCEURecyclingRecipes(event) {
 
 	// Iron Door
 
-	event.recipes.gtceu.macerator('gtceu:macerate_iron_door')
-		.itemInputs('minecraft:iron_door')
-		.itemOutputs('2x #forge:dusts/wrought_iron')
-		.duration(GTMaterials.WroughtIron.getMass() * 2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('gtceu:arc_iron_door')
-		.itemInputs('minecraft:iron_door')
-		.itemOutputs('2x #forge:ingots/wrought_iron')
-		.duration(GTMaterials.WroughtIron.getMass() * 2)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
+	TFGHelpers.registerMaterialInfo('minecraft:iron_door', { 'iron': 2 })
 
 	// #region Fix TFC hanging sign metal dupe for Macerator and Arc Furnace
 

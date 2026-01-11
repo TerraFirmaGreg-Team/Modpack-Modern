@@ -1,0 +1,48 @@
+{
+  "name": "Тележка для мощения",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:rnr_plow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Тележка для мощения$() — это специализированная тележка, используемая для быстрой и эффективной укладки дорожных покрытий. Ты можешь загрузить в неё дорожные материалы и $(thing)Дроблёное основание покрытия$(), чтобы создавать дороги. Тележка также может заполнять уже существующие блоки основания покрытия"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Тележка для мощения",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Ползунок регулировки ширины",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png" ],
+      "border": true,
+      "text": "Тележка позволяет регулировать ширину дороги в GUI."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Переменная ширина дороги",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png" ],
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Кнопка рандома",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png" ],
+      "border": true,
+      "text": "У тележки есть режим, который позволяет укладывать материалы в случайном порядке."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Дорожка из случайных материалов",
+      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png" ],
+      "border": true
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": 0
+  },
+  "sortnum": 20
+}

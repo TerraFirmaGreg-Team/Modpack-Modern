@@ -318,8 +318,7 @@
 			description: ["{quests.medium_voltage.mv_component.desc}"]
 			icon: "gtceu:mv_electric_motor"
 			id: "1BE0349B8F3890D3"
-			shape: "octagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_component_.subtitle}"
 			tasks: [
 				{
@@ -1033,6 +1032,9 @@
 				"{quests.medium_voltage.mv_fluid_rig.desc.3}"
 				"{@pagebreak}"
 				"{quests.medium_voltage.mv_fluid_rig.desc.4}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.mv_fluid_rig.desc.5}"
+				"{image:tfg:textures/quests/prospector_gui.png width:200 height:120 align:center}"
 			]
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "05ADBAE5B6F38956"
@@ -1113,7 +1115,6 @@
 			icon: "gtceu:natural_gas_bucket"
 			id: "227D89550BB9BD55"
 			optional: true
-			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_lpg.subtitle}"
 			tasks: [
@@ -1558,6 +1559,7 @@
 			description: ["{quests.medium_voltage.lsb.desc}"]
 			icon: "gtceu:steel_large_boiler"
 			id: "730D7C10DEED3117"
+			optional: true
 			shape: "heart"
 			size: 1.5d
 			subtitle: "{quests.medium_voltage.lsb.subtitle}"
@@ -1647,7 +1649,6 @@
 			description: ["{quests.medium_voltage.reformate_gas.desc}"]
 			id: "10292F9B1DD743EB"
 			optional: true
-			shape: "heart"
 			subtitle: "{quests.medium_voltage.reformate_gas.subtitle}"
 			tasks: [{
 				id: "717ABF30F29D12CD"
@@ -1667,7 +1668,6 @@
 			]
 			id: "54A255C1C6E33165"
 			optional: true
-			shape: "heart"
 			subtitle: "{quests.medium_voltage.coal_tower.subtitle}"
 			tasks: [{
 				id: "348CD63DC537BB9A"
@@ -1689,7 +1689,6 @@
 			icon: "gtceu:diesel_bucket"
 			id: "45769156F4253C86"
 			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_diesel.subtitle}"
 			tasks: [{

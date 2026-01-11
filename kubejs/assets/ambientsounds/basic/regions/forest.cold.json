@@ -1,0 +1,87 @@
+{
+    "name": "forest.cold",
+    "features": [
+        "tree"
+    ],
+    "bad-regions": [
+        "rain"
+    ],
+    "regions": [
+        "surface"
+    ],
+    "temperature": {
+        "max": 0.5
+    },
+    "sounds": [
+        {
+            "name": "bird-ambience",
+            "files": [
+                "ambientsounds:animals.bird-ambience1",
+                "ambientsounds:animals.bird-ambience2",
+                "ambientsounds:animals.bird-ambience3",
+                "ambientsounds:animals.bird-ambience4",
+                "ambientsounds:animals.bird-ambience5",
+                "ambientsounds:animals.bird-ambience6",
+                "ambientsounds:animals.bird-ambience7",
+                "ambientsounds:animals.bird-ambience8",
+                "ambientsounds:animals.bird-ambience9",
+                "ambientsounds:animals.bird-ambience10",
+                "ambientsounds:animals.bird-ambience11"
+            ],
+            "length": {
+                "min": 2000,
+                "max": 3000
+            },
+            "transition": 400,
+            "category": "bird_day"
+        },
+        {
+            "name": "crow",
+            "category": "bird",
+            "files": [
+                "ambientsounds:animals.crow"
+            ],
+            "pause": {
+                "min": 800,
+                "max": 4000
+            },
+            "day": 1,
+            "night": 0.2
+        },
+        {
+            "name": "owl",
+            "files": [
+                "ambientsounds:animals.owl"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 500
+            },
+            "category": "bird_night"
+        },
+        {
+            "name": "wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.wolf"
+            ],
+            "pause": {
+                "min": 100,
+                "max": 600
+            },
+            "day": 0
+        },
+        {
+            "name": "long-wolf",
+            "category": "animal",
+            "files": [
+                "ambientsounds:animals.long-wolf"
+            ],
+            "pause": {
+                "min": 12000,
+                "max": 72000
+            },
+            "day": 0
+        }
+    ]
+}

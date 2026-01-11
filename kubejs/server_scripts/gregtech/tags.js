@@ -28,7 +28,7 @@ function registerGTCEUItemTags(event) {
     event.remove("forge:gems", "gtceu:coke_gem");
 
     // Rose Quartz Lens
-    event.add("forge:lenses/pink", "gtceu:rose_quartz_lens");
+    event.add("forge:lenses/pink", "greate:rose_quartz_lens");
 
     event.add("tfc:saws", "#forge:tools/buzzsaws");
     event.add("tfc:saws", "#forge:tools/chainsaws");
@@ -44,6 +44,15 @@ function registerGTCEUItemTags(event) {
     // @ts-expect-error According to KJS docs adding tags to tags is supported.
     event.add("gtceu:molds", "#gtceu:casting_molds", "#gtceu:extruder_molds", "gtceu:empty_mold");
 
+    // Groups up concrete blocks into tags.
+    Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {
+        event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
+        event.add('tfg:gtceu_concrete_blocks', ids);
+    });
+  
+    //greens
+    event.add('tfc:compost_greens', 'gtceu:bio_chaff');
+    event.add('tfc:compost_greens', 'gtceu:plant_ball');
 }
 
 /** @param {TagEvent.Block} event  */
@@ -82,6 +91,12 @@ function registerGTCEUBlockTags(event) {
     event.add("gtceu:cleanroom_doors", "ad_astra:desh_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:ostrum_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:calorite_sliding_door");
+
+    // Groups up concrete blocks into tags.
+    Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {
+        event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
+        event.add('tfg:gtceu_concrete_blocks', ids);
+    });
 }
 
 /** @param {TagEvent.Fluid} event  */

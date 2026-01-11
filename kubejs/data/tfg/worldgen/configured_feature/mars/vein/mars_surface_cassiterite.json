@@ -359,16 +359,12 @@
     "indicator": {
       "rarity": 15,
       "depth": 40,
-      "underground_rarity": 1,
-      "underground_count": 1,
+      "underground_rarity": 40,
+      "underground_count": 200,
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 55
-        },
-        {
-          "block": "tfc:ore/small_cassiterite",
-          "weight": 35
+          "weight": 90
         },
         {
           "block": "gtceu:saltpeter_indicator",

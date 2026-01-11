@@ -82,7 +82,7 @@ const registerRnrRecipes = (event) => {
 
 
 	event.recipes.gtceu.mixer('rnr:mixer/wet_concrete_mix')
-		.inputFluids('gtceu:concrete 192', "#tfg:clean_water 808")
+		.inputFluids('gtceu:concrete 200', "#tfg:clean_water 800")
 		.outputFluids('rnr:concrete 1000')
         .circuit(7)
 		.duration(200)

@@ -60,7 +60,7 @@ function registerTFGMarsItemTags(event) {
 	event.add('forge:seeds', 'betterend:amber_root_seeds')
 	event.add('forge:seeds', 'betterend:blossom_berry_seeds')
 	event.add('forge:seeds', 'betterend:bolux_mushroom_seeds')
-	event.add('forge:seeds', 'betterend:cave_pumpkin_seeds')
+	event.add('forge:seeds', 'betterend:cave_pumpkin_plant_seeds')
 	event.add('forge:seeds', 'betterend:shadow_berry_seeds')
 
 	event.add('tfc:foods', 'betterend:amber_root_product')
@@ -99,6 +99,9 @@ function registerTFGMarsItemTags(event) {
 
 	event.add('forge:mushrooms', 'betterend:flammalix')
 	event.add('forge:mushrooms', 'betterend:small_amaranita_mushroom')
+
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
 }
 
 function registerTFGMarsBlockTags(event) {
@@ -212,6 +215,10 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:heightmap_ignore', 'betterend:glacian_hymenophore')
 	event.add('tfg:heightmap_ignore', 'species:alphacene_moss_block')
 	event.add('tfg:heightmap_ignore', 'minecraft:ice')
+	event.add('tfg:heightmap_ignore', 'tfg:crimson_wart_block')
+	event.add('tfg:heightmap_ignore', 'tfg:warped_wart_block')
+	event.add('tfg:heightmap_ignore', 'tfg:aeronos_cap')
+	event.add('tfg:heightmap_ignore', 'tfg:strophar_cap')
 
 	event.remove('minecraft:enderman_holdable', 'minecraft:crimson_fungus')
 	event.remove('minecraft:enderman_holdable', 'minecraft:warped_fungus')
@@ -266,6 +273,11 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_path')
 
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
+	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry')
+	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry_wild')
+
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_clay_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_farmland')
@@ -302,11 +314,11 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_moss_block')
-	event.add('tfg:decorative_plant_attachable', 'ad_astra:aeronos_cap')
-	event.add('tfg:decorative_plant_attachable', 'ad_astra:strophar_cap')
+	event.add('tfg:decorative_plant_attachable', 'tfg:aeronos_cap')
+	event.add('tfg:decorative_plant_attachable', 'tfg:strophar_cap')
 	event.add('tfg:decorative_plant_attachable', 'tfg:glacian_leaves')
-	event.add('tfg:decorative_plant_attachable', 'minecraft:nether_wart_block')
-	event.add('tfg:decorative_plant_attachable', 'minecraft:warped_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'tfg:crimson_wart_block')
+	event.add('tfg:decorative_plant_attachable', 'tfg:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
 	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
 
@@ -335,6 +347,7 @@ function registerTFGMarsBiomeTags(event) {
 
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_dunes')
 	event.add('sandworm_mod:can_spawn_sandworms', 'tfg:mars/martian_deep_desert')
+	event.remove('sandworm_mod:can_spawn_sandworms', 'minecraft:desert')
 
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_dunes')
 	event.add('tfg:has_dark_sand_particles', 'tfg:mars/martian_deep_desert')

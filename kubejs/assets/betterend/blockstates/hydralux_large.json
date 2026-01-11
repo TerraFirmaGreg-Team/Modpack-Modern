@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"height=0": { "model": "betterend:block/hydralux_vine_bottom" },
+		"height=1": { "model": "betterend:block/hydralux_vine" },
+		"height=2": [
+			{ "model": "betterend:block/hydralux_flower_big_1_bottom" },
+			{ "model": "betterend:block/hydralux_flower_big_2_bottom" },
+			{ "model": "betterend:block/hydralux_flower_big_3_bottom" }
+		],
+		"height=3": { "model": "betterend:block/hydralux_flower_big_top" },
+		"height=4": { "model": "" }
+	}
+}

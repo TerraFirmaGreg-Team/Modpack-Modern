@@ -31,7 +31,14 @@ function registerTFGQuartzRecipes(event) {
 		.duration(20)
 		.EUt(30)
 
-	global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS.forEach(element => {
+	const TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = /** @type {const} */ ([
+		{ input: "tfc:silica_glass_batch", output: "tfc:silica_glass_bottle", name: "silica_glass_bottle" },
+		{ input: "tfc:hematitic_glass_batch", output: "tfc:hematitic_glass_bottle", name: "hematitic_glass_bottle" },
+		{ input: "tfc:olivine_glass_batch", output: "tfc:olivine_glass_bottle", name: "olivine_glass_bottle" },
+		{ input: "tfc:volcanic_glass_batch", output: "tfc:volcanic_glass_bottle", name: "volcanic_glass_bottle" }
+	]);
+
+	TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS.forEach(element => {
 		event.recipes.gtceu.alloy_smelter(`tfg:tfc/${element.name}`)
 			.itemInputs(element.input)
 			.notConsumable('gtceu:bottle_casting_mold')
@@ -48,6 +55,7 @@ function registerTFGQuartzRecipes(event) {
 		.itemOutputs('tfc:lamp_glass')
 		.duration(100)
 		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass_from_dust`)
 		.itemInputs('#forge:dusts/glass')
@@ -55,6 +63,7 @@ function registerTFGQuartzRecipes(event) {
 		.itemOutputs('tfc:lamp_glass')
 		.duration(100)
 		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
@@ -127,6 +136,13 @@ function registerTFGQuartzRecipes(event) {
 	// Glass Tube
 	event.recipes.tfc.glassworking('gtceu:glass_tube', '#tfc:glass_batches_tier_3', ['blow', 'stretch', 'stretch'])
 		.id('tfg:gtceu/glassworking/glass_tube')
-
+		
+	event.recipes.gtceu.alloy_smelter('tfg:glass_tube_from_batch')
+		.itemInputs('#tfc:glass_batches')
+		.notConsumable('gtceu:ball_casting_mold')
+		.itemOutputs('gtceu:glass_tube')
+		.duration(8 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.INGOT_MOLDING);
 	//#endregion
 }

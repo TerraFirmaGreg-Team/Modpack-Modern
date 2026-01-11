@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "title": "外星作物",
-            "text": "事实证明，地球并不是唯一有生命的天体。在你的旅途中，你可能会遇到其他可以食用的生物。在地球上，它们都有你所熟悉的相同机制（有一些例外），可以根据你的需要在普通农田、$(thing)Firmalife$() $(l:firmalife/greenhouse)温室$()或$(thing)格雷科技$()电力温室中种植。"
+            "text": "事实证明，地球并不是唯一有生命的天体。在你的旅途中，你可能会遇到其他可以食用的植被。在地球上，它们都有你所熟悉的相同机制（有一些例外），可以根据你的需要在普通农田、$(thing)Firmalife$() $(l:firmalife/greenhouse)温室$()或$(thing)格雷科技$()电力温室中种植。"
         },
         {
             "type": "patchouli:text",
@@ -564,7 +564,7 @@
         "betterend:blossom_berry_product": 6,
         "betterend:bolux_mushroom_seeds": 8,
         "betterend:bolux_mushroom_product": 8,
-        "betterend:cave_pumpkin_seeds": 10,
+        "betterend:cave_pumpkin_plant_seeds": 10,
         "betterend:cave_pumpkin": 10,
         "betterend:chorus_mushroom_seeds": 12,
         "betterend:chorus_mushroom_product": 12,

@@ -31,6 +31,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGMarsMaterials(event);
 	registerTFGVenusMaterials(event);
 	registerTFGEuropaMaterials(event);
+	registerTFGAquaponicsMaterials(event);
 
 
 	// Refrigerants
@@ -106,6 +107,7 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0xfffef0)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
+		.liquid()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
 		.rotorStats(250, 90, 2 ,620)
 		.flags(
@@ -114,7 +116,8 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-			GTMaterialFlags.GENERATE_GEAR
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_FINE_WIRE
 		)
 		.fluidPipeProperties(4250, 1700, true, false, false, false)
 

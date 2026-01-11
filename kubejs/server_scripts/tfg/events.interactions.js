@@ -506,11 +506,11 @@ BlockEvents.rightClicked(event => {
 BlockEvents.broken(event => {
 	const { server, item, player, block } = event;
 
+	let toolUsed = player.mainHandItem;
+	
 	if (!block.hasTag('tfc:mineable_with_sharp_tool') || !toolUsed.hasTag('tfc:sharp_tools')) {
 		return;
 	}
-	
-	let toolUsed = player.mainHandItem;
 
 	if (!player.isCreative()) {
 		toolUsed.damageValue++;

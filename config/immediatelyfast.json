@@ -1,9 +1,9 @@
 {
   "REGULAR_INFO": "----- Regular config values below -----",
-  "font_atlas_resizing": true,
+  "font_atlas_resizing": false,
   "map_atlas_generation": true,
   "hud_batching": false,
-  "fast_text_lookup": true,
+  "fast_text_lookup": false,
   "fast_buffer_upload": true,
   "COSMETIC_INFO": "----- Cosmetic only config values below (Does not optimize anything) -----",
   "dont_add_info_into_debug_hud": false,

@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cross",
 	"textures": {
-		"texture": "betterend:block/hydralux_vine"
+		"cross": "betterend:block/hydralux_vine"
 	}
 }

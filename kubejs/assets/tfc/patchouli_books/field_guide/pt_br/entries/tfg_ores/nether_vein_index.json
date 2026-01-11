@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 230$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br)$(thing)Altura$(): 8$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/230$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br)$(thing)Altura$(): 8$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Ametista, Opala e Granada",
       "type": "patchouli:text",
       "anchor": "nether_garnet"
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 35$(br)$(thing)Densidade$(): 0.8$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Tamanho$(): 13$(br)$(thing)Altura$(): 4$(br2)$(thing)Tipos de Pedra$(): Migmatito",
+      "text": "$(thing)Raridade$(): 1/35$(br)$(thing)Densidade$(): 80%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Tamanho$(): 13$(br)$(thing)Altura$(): 4$(br2)$(thing)Tipos de Pedra$(): Migmatito",
       "title": "Antracito",
       "type": "patchouli:text",
       "anchor": "nether_anthracite"
@@ -148,7 +148,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Tamanho$(): 39$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Xisto",
+      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Tamanho$(): 39$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Xisto",
       "title": "Apatita e Pirocloro",
       "type": "patchouli:text",
       "anchor": "nether_apatite"
@@ -215,7 +215,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 160$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Tamanho$(): 48$(br)$(thing)Altura$(): 9$(br2)$(thing)Tipos de Pedra$(): Basalto, Granito",
+      "text": "$(thing)Raridade$(): 1/160$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Tamanho$(): 48$(br)$(thing)Altura$(): 9$(br2)$(thing)Tipos de Pedra$(): Basalto, Granito",
       "title": "Areias Minerais",
       "type": "patchouli:text",
       "anchor": "nether_basaltic_sands"
@@ -307,7 +307,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 245$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/245$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Bastnasita e Monazita",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -374,7 +374,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 31$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 31$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Bentonita e Olivina",
       "type": "patchouli:text",
       "anchor": "nether_olivine"
@@ -466,7 +466,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/170$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Cassiterita",
       "type": "patchouli:text",
       "anchor": "nether_cassiterite"
@@ -488,7 +488,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 60%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
+      "text": "$(thing)Porcentagem$(): 54%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -508,17 +508,32 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
+      "text": "$(thing)Porcentagem$(): 36%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Salitre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Fonte de$(): Potássio, Nitrogênio$(br)$(thing)Fórmula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 41$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 41$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Cianita, Mica e Bauxita",
       "type": "patchouli:text",
       "anchor": "nether_mica"
@@ -585,7 +600,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/170$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Cobre e Calcopirita",
       "type": "patchouli:text",
       "anchor": "nether_copper"
@@ -677,7 +692,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 35$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 35$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Cooperita e Bornita",
       "type": "patchouli:text",
       "anchor": "nether_sheldonite"
@@ -769,7 +784,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 205$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 39$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/205$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 39$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Cromita",
       "type": "patchouli:text",
       "anchor": "nether_magnetite"
@@ -876,7 +891,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 165$(br)$(thing)Densidade$(): 0.3$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 50$(br2)$(thing)Tipos de Pedra$(): Basalto, Diorito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/165$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 50$(br2)$(thing)Tipos de Pedra$(): Basalto, Diorito, Piroxenito, Xisto",
       "title": "Enxofre e Pirita",
       "type": "patchouli:text",
       "anchor": "nether_sulfur"
@@ -943,7 +958,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/170$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Esfalerita e Pirita",
       "type": "patchouli:text",
       "anchor": "nether_sphalerite"
@@ -1010,7 +1025,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Esmeralda e Berílio",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"
@@ -1077,7 +1092,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Tório",
+      "name": "Torianita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1092,7 +1107,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 0%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): Th",
+      "text": "$(thing)Porcentagem$(): 0%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1102,7 +1117,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 160$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 16 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Piroxenito",
+      "text": "$(thing)Raridade$(): 1/160$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 16 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Piroxenito",
       "title": "Garnierita e Cobaltita",
       "type": "patchouli:text",
       "anchor": "nether_garnierite"
@@ -1209,7 +1224,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 9$(br2)$(thing)Tipos de Pedra$(): Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/180$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 9$(br2)$(thing)Tipos de Pedra$(): Migmatito, Piroxenito, Travertino",
       "title": "Gipsita e Calcita",
       "type": "patchouli:text",
       "anchor": "nether_gypsum"
@@ -1301,7 +1316,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 240$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 37$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/240$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 37$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Goethita",
       "type": "patchouli:text",
       "anchor": "nether_goethite"
@@ -1393,7 +1408,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 120$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/120$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Grafite e Diamante",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
@@ -1460,7 +1475,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 270$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Migmatito, Piroxenito, Travertino, Xisto",
+      "text": "$(thing)Raridade$(): 1/270$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Migmatito, Piroxenito, Travertino, Xisto",
       "title": "Granada e Areia Cassiterita",
       "type": "patchouli:text",
       "anchor": "nether_garnet_tin"
@@ -1552,7 +1567,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 35$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 35$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Hematita e Limonita",
       "type": "patchouli:text",
       "anchor": "nether_hematite"
@@ -1659,7 +1674,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 220$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 40$(br2)$(thing)Tipos de Pedra$(): Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 40$(br2)$(thing)Tipos de Pedra$(): Migmatito, Piroxenito, Travertino",
       "title": "Lápis-lazúri, Lazurita e Sodalita",
       "type": "patchouli:text",
       "anchor": "nether_lapis"
@@ -1751,7 +1766,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 225$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/225$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Manganês e Tântalo",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -1843,7 +1858,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 200$(br)$(thing)Densidade$(): 0.7$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Tamanho$(): 32$(br2)$(thing)Tipos de Pedra$(): Basalto, Piroxenito",
+      "text": "$(thing)Raridade$(): 1/200$(br)$(thing)Densidade$(): 70%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Tamanho$(): 32$(br2)$(thing)Tipos de Pedra$(): Basalto, Piroxenito",
       "title": "Naquadah",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
@@ -1870,7 +1885,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 150$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Diorito, Gabro, Granito, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/150$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Basalto, Diorito, Gabro, Granito, Migmatito, Piroxenito, Travertino",
       "title": "Nether Quartzo",
       "type": "patchouli:text",
       "anchor": "nether_quartz"
@@ -1937,7 +1952,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 260$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 37$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/260$(br)$(thing)Densidade$(): 55.00000000000001%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 37$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Ouro e Hematita",
       "type": "patchouli:text",
       "anchor": "nether_gold"
@@ -2029,7 +2044,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.35$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 41$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 41$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Pedra-sabão, Talco e Trona",
       "type": "patchouli:text",
       "anchor": "nether_lubricant"
@@ -2136,7 +2151,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 160$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Granito, Piroxenito",
+      "text": "$(thing)Raridade$(): 1/160$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Granito, Piroxenito",
       "title": "Prata, Galena e Chumbo",
       "type": "patchouli:text",
       "anchor": "nether_silver"
@@ -2203,7 +2218,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 160$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Granito, Piroxenito",
+      "text": "$(thing)Raridade$(): 1/160$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Granito, Piroxenito",
       "title": "Redstone, Cinábrio e Rubi",
       "type": "patchouli:text",
       "anchor": "nether_redstone"
@@ -2270,7 +2285,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 33$(br)$(thing)Altura$(): 8$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/180$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 33$(br)$(thing)Altura$(): 8$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Safira e Almandina",
       "type": "patchouli:text",
       "anchor": "nether_sapphire"
@@ -2362,7 +2377,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 210$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 50$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/210$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 50$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Salitre e Eletrotina",
       "type": "patchouli:text",
       "anchor": "nether_saltpeter"
@@ -2454,7 +2469,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.45$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 25$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/180$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 25$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Sheelita e Tungstato",
       "type": "patchouli:text",
       "anchor": "nether_scheelite"
@@ -2521,7 +2536,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 75$(br)$(thing)Densidade$(): 0.6$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 64$(br)$(thing)Tamanho$(): 17$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Piroxenito",
+      "text": "$(thing)Raridade$(): 1/75$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 64$(br)$(thing)Tamanho$(): 17$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Piroxenito",
       "title": "Silvita",
       "type": "patchouli:text",
       "anchor": "nether_sylvite"
@@ -2548,7 +2563,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 170$(br)$(thing)Densidade$(): 0.5$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Migmatito, Piroxenito, Travertino, Xisto",
+      "text": "$(thing)Raridade$(): 1/170$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Tamanho$(): 45$(br2)$(thing)Tipos de Pedra$(): Gnaisse, Migmatito, Piroxenito, Travertino, Xisto",
       "title": "Tetraedrita",
       "type": "patchouli:text",
       "anchor": "nether_tetrahedrite"
@@ -2615,7 +2630,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 180$(br)$(thing)Densidade$(): 0.4$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 33$(br)$(thing)Altura$(): 7$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/180$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 33$(br)$(thing)Altura$(): 7$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Topázio e Calcosita",
       "type": "patchouli:text",
       "anchor": "nether_topaz"
@@ -2707,7 +2722,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 250$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 24$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 55.00000000000001%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 24$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Uraninita e Pechblenda",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2774,7 +2789,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 245$(br)$(thing)Densidade$(): 0.55$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 31$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
+      "text": "$(thing)Raridade$(): 1/245$(br)$(thing)Densidade$(): 55.00000000000001%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Tamanho$(): 31$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Gnaisse, Granito, Piroxenito, Xisto",
       "title": "Wulfenita e Molibdenita",
       "type": "patchouli:text",
       "anchor": "nether_molybdenum"

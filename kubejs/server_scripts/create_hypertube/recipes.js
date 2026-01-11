@@ -39,4 +39,32 @@ function registerCreateHypertubeRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(100)
+
+	event.recipes.gtceu.assembler('create_hypertube:redstone_detector_tube_attachment')
+		.itemInputs('#forge:plates/stainless_steel', 'gtceu:activity_detector_cover', 'ae2:charged_certus_quartz_crystal')
+		.itemOutputs('create_hypertube:redstone_detector_tube_attachment')
+		.inputFluids(Fluid.of('gtceu:silicone_rubber', 288))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(100)
+
+	event.recipes.gtceu.assembler('create_hypertube:redstone_detector_tube_attachment_sbr')
+		.itemInputs('#forge:plates/stainless_steel', 'gtceu:activity_detector_cover', 'ae2:charged_certus_quartz_crystal')
+		.itemOutputs('create_hypertube:redstone_detector_tube_attachment')
+		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(100)
+
+	event.recipes.gtceu.assembler('create_hypertube:tube_scanner_attachment')
+		.itemInputs('#forge:plates/stainless_steel', 'gtceu:activity_detector_cover', 'ae2:fluix_crystal')
+		.itemOutputs('create_hypertube:tube_scanner_attachment')
+		.inputFluids(Fluid.of('gtceu:silicone_rubber', 288))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(100)
+
+	event.recipes.gtceu.assembler('create_hypertube:tube_scanner_attachment_sbr')
+		.itemInputs('#forge:plates/stainless_steel', 'gtceu:activity_detector_cover', 'ae2:fluix_crystal')
+		.itemOutputs('create_hypertube:tube_scanner_attachment')
+		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(100)
 }

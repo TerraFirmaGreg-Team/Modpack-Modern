@@ -652,7 +652,7 @@ const registerAE2Recipes = (event) => {
 
 	// Energy Acceptor
 	event.recipes.gtceu.assembler('tfg:ae2/energy_acceptor')
-		.itemInputs('5x gtceu:silver_double_cable', 'gtceu:hv_1a_energy_converter', 'gtceu:annealed_copper_single_cable')
+		.itemInputs('5x gtceu:silver_double_cable', 'gtceu:hv_machine_hull', 'gtceu:annealed_copper_single_cable')
 		.itemOutputs('ae2:energy_acceptor')
 		.circuit(1)
 		.duration(520)
@@ -1153,7 +1153,6 @@ const registerAE2Recipes = (event) => {
 		.circuit(1)
 		.duration(20)
 		.EUt(480)
-		.cleanroom(CleanroomType.CLEANROOM)
 		.addMaterialInfo(true)
 
 	// Storage Bus

@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfg:tall_decorative_plant",
+				"config": {
+					"block": "betterend:hydralux_large",
+					"plantHeight": 4,
+					"minHeight": 5,
+					"maxHeight": 9,
+					"middle": 1
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": "tfg:fluid/sulfur_fumes"
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"offset": [ 0, -1, 0 ],
+								"tag": "ad_astra:venus_stone_replaceables"
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 4,
+		"xz_spread": 10,
+		"y_spread": 0
+	}
+}

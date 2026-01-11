@@ -1,0 +1,13 @@
+#Renders partial hearts when your health total is not evenly divisible into heart values.
+renderPartialHearts = true
+#Uses 5x5 hearts instead of the vanilla 9x9, with a value of 25 each instead of 100. Will show a more precise total health value when partial hearts are turned off.
+useSmallHearts = false
+#Uses empty droplets for the thirst bar instead of puddles.
+useEmptyDroplets = false
+#Display saturation on the hunger bar like the popular mod "Appleskin".
+displayAppleskinLikeSaturation = true
+#Use pictographic half-eaten food for food icons instead of just cutting the full food image in half.
+useHalfEatenFood = true
+#Use the space that is normally taken up by the experience bar to show the current temperature. Overrides the TFC experience bar config.
+showTemperatureInsteadOfExperience = true
+

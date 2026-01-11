@@ -1,0 +1,15 @@
+{
+	"name": "tfg:illagers/forest_roaming_start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:illager_generic/gatherers",
+				"processors": "minecraft:empty",
+				"projection": "terrain_matching",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

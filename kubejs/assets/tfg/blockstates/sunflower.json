@@ -1,15 +1,15 @@
 {
 	"variants": {
-		"age=0": {
+		"age=0,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_0"
 		},
-		"age=1": {
+		"age=1,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_1"
 		},
-		"age=2": {
+		"age=2,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_2"
 		},
-		"age=3": {
+		"age=3,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_3"
 		},
 		"age=4,part=bottom": {
@@ -21,8 +21,17 @@
 		"age=6,part=bottom": {
 			"model": "tfg:block/crop/sunflower_age_5_bottom"
 		},
-		"age=7,part=bottom": {
-			"model": "tfg:block/crop/sunflower_age_5_bottom"
+		"age=0,part=top": {
+			"model": "minecraft:block/air"
+		},
+		"age=1,part=top": {
+			"model": "minecraft:block/air"
+		},
+		"age=2,part=top": {
+			"model": "minecraft:block/air"
+		},
+		"age=3,part=top": {
+			"model": "minecraft:block/air"
 		},
 		"age=4,part=top": {
 			"model": "tfg:block/crop/sunflower_age_4_top"
@@ -31,9 +40,6 @@
 			"model": "tfg:block/crop/sunflower_age_5_top"
 		},
 		"age=6,part=top": {
-			"model": "tfg:block/crop/sunflower_age_5_top"
-		},
-		"age=7,part=top": {
 			"model": "tfg:block/crop/sunflower_age_5_top"
 		}
 	}

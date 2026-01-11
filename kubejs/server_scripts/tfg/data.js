@@ -11,6 +11,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGFLPlanters(event);
 	registerTFGFauna(event);
 	registerTFGEquipmentData(event);
+	registerTFGAquaponicsData(event);
 }
 
 //#region Heat Data
@@ -50,6 +51,10 @@ function registerTFGHeatData(event) {
 	event.itemHeat('tfg:food/brioche_bun', 1.0, null, null);
 	event.itemHeat('tfg:food/raw_burger_patty', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
+
+	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
 }
 
 //#endregion
@@ -312,6 +317,20 @@ function registerTFGItemSize(event) {
 	event.itemSize('#forge:tools/wrenches', 'very_large', 'very_heavy', 'wrenches')
 	event.itemSize('#forge:tools/mining_hammers', 'very_large', 'very_heavy', 'mining_hammers')
 	event.itemSize('#forge:tools/spades', 'very_large', 'very_heavy', 'spades')
+
+	event.itemSize(
+		orArray([
+			"tfg:unfired_rod_mold",
+			"tfg:unfired_small_gear_mold",
+			"tfg:unfired_nugget_mold",
+			"tfg:rod_mold",
+			"tfg:small_gear_mold",
+			"tfg:nugget_mold"
+		]),
+		"normal",
+		"medium",
+		"Molds"
+	)
 }
 
 //#endregion

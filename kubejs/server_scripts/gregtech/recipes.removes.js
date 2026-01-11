@@ -34,6 +34,10 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_diorite')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_slab')
 	removeMaceratorRecipe(event, 'macerate_andesite')
+	event.remove({ id: 'gtceu:shaped/stone_hammer' })
+	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine' })
 
 	//#endregion
 
@@ -51,6 +55,9 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_cobblestone')
 	removeMaceratorRecipe(event, 'gravel_to_flint')
 	removeMaceratorRecipe(event, 'macerate_furnace')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_water')
+	removeCutterRecipe(event, 'cut_stone_block_to_plate_distilled_water')
 
 	//#endregion
 
@@ -172,6 +179,39 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/smooth_quartz_stair_saw' })
 	event.remove({ id: 'gtceu:assembler/assemble_smooth_quartz_into_stair' })
 	event.remove({ id: 'gtceu:shaped/smooth_quartz_slab_saw' })
+
+	// #endregion
+
+	// #region Reconstituted Stone
+
+	event.remove({ id: 'gtceu:shaped/cobblestone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_cobblestone_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/mossy_stone_brick_wall_saw' })
+
+	// #endregion
+
+	// #region Cut Copper
+
+	event.remove({ id: 'gtceu:shaped/cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/exposed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/exposed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/weathered_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/weathered_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/oxidized_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/oxidized_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_exposed_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_exposed_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_weathered_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_weathered_cut_copper_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_oxidized_cut_copper_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/waxed_oxidized_cut_copper_slab_saw' })
 
 	// #endregion
 
@@ -498,6 +538,9 @@ function removeGTCEURecipes(event) {
 
 	//#endregion
 
+	// Iron nugget saw recipe
+	event.remove({ id: 'gtceu:shapeless/nugget_disassembling_iron'})
+
 	// Удаление рецептов связанных с Primitive Blast Furnace
 	event.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
 	removeMaceratorRecipe(event, 'macerate_primitive_blast_furnace')
@@ -658,6 +701,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 	event.remove({ id: 'gtceu:assembler/assemble_purpur_into_stair' })
 	event.remove({ id: 'gtceu:assembler/stonecutter' })
+	event.remove({ id: 'gtceu:assembler/cartography_table' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blaze' })
 
@@ -681,6 +725,9 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_red_granite')
 
 	removeMaceratorRecipe(event, 'macerate_wool')
+
+	removeMaceratorRecipe(event, 'macerate_enchanting_table')
+	event.remove({ id: 'gtceu:arc_furnace/arc_enchanting_table' })
 
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
@@ -726,6 +773,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:laser_engraver/engrave_small_red_granite_bricks' })
 	event.remove({ id: 'gtceu:laser_engraver/engrave_square_red_granite_bricks' })
 	event.remove({ id: 'gtceu:laser_engraver/engrave_chiseled_red_granite' })
+	event.remove({ id: 'gtceu:mixer/mossy_red_granite_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_moss_block' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_vine' })
 
 	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
 
@@ -750,9 +800,14 @@ function removeGTCEURecipes(event) {
 	// Replace by the Heat Exchanger recipe for Mars
 	event.remove({ id: 'gtceu:fluid_heater/formamide' })
 
-	// Remove lava bucket from boilers
+	// Remove from boilers
 	event.remove({ id: 'gtceu:steam_boiler/minecraft_lava_bucket' })
 	event.remove({ id: 'gtceu:large_boiler/minecraft_lava_bucket' })
+	event.remove({ id: 'gtceu:steam_boiler/create_blaze_cake' })
+	event.remove({ id: 'gtceu:large_boiler/create_blaze_cake' })
+	event.remove({ id: 'gtceu:steam_boiler/create_creative_blaze_cake' })
+	event.remove({ id: 'gtceu:large_boiler/create_creative_blaze_cake' })
+
 	
 	// Snow Stuffs
 
@@ -821,9 +876,14 @@ function removeGTCEURecipes(event) {
 	
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
 
-
 	event.remove({ id: 'gtceu:chemical_reactor/soda_ash_from_carbon_dioxide' })
 	event.remove({ id: 'gtceu:large_chemical_reactor/soda_ash_from_carbon_dioxide' })
+
+	event.remove({ id: 'gtceu:macerator/macerate_chiseled_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone_wall' })
+	event.remove({ id: 'gtceu:macerator/macerate_smooth_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_sandstone' })
+	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
 }
 
 function removeMaceratorRecipe(event, id) {

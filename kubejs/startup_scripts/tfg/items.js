@@ -18,6 +18,7 @@ const registerTFGItems = (event) => {
 	registerTFGBiotechItems(event);
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
+	registerTFGAquaponicsItems(event);
 	
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
@@ -68,4 +69,18 @@ const registerTFGItems = (event) => {
 	event.create('gtceu:refined_rose_quartz_ore').texture('tfg:item/deprecated')
 	event.create('gtceu:rose_quartz_lens').texture('tfg:item/deprecated')
 	event.create('gtceu:rose_quartz_plate').texture('tfg:item/deprecated')
+
+	// Add item for BTX Fuel
+
+	event.create('tfg:catalyser_pt_re_zsm')
+		.translationKey('item.tfg.catalyser_pt_re_zsm')
+		.texture('tfg:item/btx/catalyser_zsm')
+
+	event.create('tfg:used_catalyser')
+		.translationKey('item.tfg.used_catalyser')
+		.texture('tfg:item/btx/used_catalyser')
+
+	event.create('tfg:loaded_resin')
+		.translationKey('item.tfg.loaded_resin')
+		.texture('tfg:item/btx/loaded_resin')
 }

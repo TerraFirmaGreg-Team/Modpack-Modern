@@ -1,13 +1,15 @@
 {
 	"variants": {
-		"shape=top": { "model": "betterend:block/twisted_vine_top" },
-		"shape=middle": [
+		"height=0": { "model": "betterend:block/twisted_vine_top" },
+		"height=1": [
 			{ "model": "betterend:block/twisted_vine_middle_1" },
 			{ "model": "betterend:block/twisted_vine_middle_2" }
 		],
-		"shape=bottom": [
+		"height=2": [
 			{ "model": "betterend:block/twisted_vine_bottom_1" },
 			{ "model": "betterend:block/twisted_vine_bottom_2" }
-		]
+		],
+		"height=3": { "model": "" },
+		"height=4": { "model": "" }
 	}
 }

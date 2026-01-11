@@ -76,7 +76,6 @@ function registerTFGNuclearRecipes(event) {
 	//#region Processing Fuels
 
 	event.recipes.gtceu.centrifuge('thorium_isotope')
-		//.inputFluids(Fluid.of('minecraft:water', 50))
 		.itemInputs('9x #forge:dusts/thorium')
 		.chancedOutput('#forge:dusts/thorium_230', 9000, 0)
 		.itemOutputs('8x #forge:dusts/thorium_232')
@@ -141,7 +140,6 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:dioxygen_difluoride', 1000))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.IV])
-		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.large_chemical_reactor('plutonium_dust')
 		.itemInputs('#forge:dusts/refined_nuclear_residue')
@@ -432,7 +430,7 @@ function registerTFGNuclearRecipes(event) {
 	//#endregion
 	
 	//#region Cooling Tower
-	/*
+	
 	event.recipes.gtceu.assembler('tfg:ostrum_carbon_casing')
 		.itemInputs('2x #forge:plates/ostrum', '2x #forge:plates/titanium_carbide', '#forge:dense_plates/hsla_steel', '#forge:frames/black_steel')
 		.itemOutputs('2x tfg:casings/machine_casing_ostrum_carbon')
@@ -440,6 +438,7 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20 * (2.5))
 		.EUt(GTValues.VH[GTValues.LV])
 		.addMaterialInfo(true)
+	/*
 	
 	event.recipes.gtceu.mixer('tfg:thermally_conductive_fluid')
 		.itemInputs('7x #forge:dusts/gallium', '2x #forge:dusts/tin', '#forge:dusts/zinc')

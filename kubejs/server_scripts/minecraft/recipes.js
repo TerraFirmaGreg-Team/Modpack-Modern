@@ -8,7 +8,6 @@
 const registerMinecraftRecipes = (event) => {
 
 	removeMinecraftRecipes(event)
-	registerMinecraftDyeRecipes(event)
 
 	//#region Добавление, copper
 
@@ -534,7 +533,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:chests/wooden',
 		D: '#forge:tools/wrenches',
-		E: '#forge:tools/hammers',
+		E: '#forge:tools/hammers'
 	}).id('gtceu:shaped/hopper')
 
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
@@ -897,7 +896,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/charcoal',
+		D: '#forge:storage_blocks/charcoal'
 	}).id('tfg:campfire_charcoal')
 
 	event.shaped('minecraft:campfire', [
@@ -908,7 +907,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/coal',
+		D: '#forge:storage_blocks/coal'
 	}).id('tfg:campfire_coal')
 	//#endregion
 
@@ -946,27 +945,15 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
 		.id('tfg:shapeless/cut_brown_mushroom_block')
 
-	event.recipes.gtceu.compressor('tfg:red_mushroom')
-		.itemInputs('4x minecraft:red_mushroom')
-		.itemOutputs('minecraft:red_mushroom_block')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.compressor('tfg:brown_mushroom')
-		.itemInputs('4x minecraft:brown_mushroom')
-		.itemOutputs('minecraft:brown_mushroom_block')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
-		.itemInputs('minecraft:red_mushroom_block')
+		.itemInputs('4x minecraft:red_mushroom')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
-		.itemInputs('minecraft:brown_mushroom_block')
+		.itemInputs('4x minecraft:brown_mushroom')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
@@ -1001,28 +988,28 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glowstone', 512))
 		.itemOutputs('16x minecraft:glow_ink_sac')
 		.duration(20)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.LV])
 		
 	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
 		.itemInputs("#forge:dyes/black")
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 
 	//#region Gunpowder
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/charcoal'])
 		.id('tfg:shapeless/gunpowder_charcoal')
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/coal'])
 		.id('tfg:shapeless/gunpowder_coal')
 
-	event.shapeless('4x minecraft:gunpowder',
+	event.shapeless('6x minecraft:gunpowder',
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/carbon'])
 		.id('tfg:shapeless/gunpowder_carbon')
 
@@ -1063,22 +1050,6 @@ const registerMinecraftRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 	})
-
-	// #endregion
-
-	//#region Greenhouse
-
-	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
-		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
-		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
 
 	// #endregion
 

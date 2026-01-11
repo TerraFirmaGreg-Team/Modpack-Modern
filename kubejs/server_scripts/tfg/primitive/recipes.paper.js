@@ -156,9 +156,11 @@ function registerTFGPapermakingRecipes(event) {
 	//Beat thermochemically treated hardwood dust into soaked unrefined paper
 	event.recipes.tfc.anvil('tfg:soaked_unrefined_paper', 'gtceu:thermochemically_treated_hardwood_dust', ['hit_last', 'hit_second_last', 'hit_third_last'])
 		.id('tfg:anvil/soaked_unrefined_paper')
+
 	event.recipes.greate.pressing(Item.of('tfg:soaked_unrefined_paper'), 'gtceu:thermochemically_treated_hardwood_dust')
 		.recipeTier(0)
 		.id('greate:pressing/soaked_unrefined_paper')
+
 	event.custom({
 		type: "firmalife:stomping",
 		ingredient: {

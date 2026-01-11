@@ -48,21 +48,6 @@
 	whistleRebindRate = 10
 
 #.
-#Journeymap compat settings
-[journeymap]
-	#.
-	#.
-	#[in Ticks]
-	#Outside-of-render-distance train sync time
-	#Range: 10 ~ 600
-	farTrainSyncTicks = 200
-	#.
-	#[in Ticks]
-	#In-render-distance train sync time
-	#Range: 1 ~ 600
-	nearTrainSyncTicks = 5
-
-#.
 #Realism Settings
 [realism]
 	#.

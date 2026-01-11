@@ -25,6 +25,10 @@
 				{
 					"type": "minecraft:item",
 					"name": "endermanoverhaul:soul_pearl"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:wicked_swapper"
 				}
 			],
 			"rolls": 1.0

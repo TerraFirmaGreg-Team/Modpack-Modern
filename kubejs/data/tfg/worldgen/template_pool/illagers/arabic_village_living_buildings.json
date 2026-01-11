@@ -1,0 +1,127 @@
+{
+	"name": "tfg:illagers/arabic_village_living_buildings",
+	"fallback": "tfg:illagers/arabic_village_living_paths",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/house_garden",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/smithy",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/barracks",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house1",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house2",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house3",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:arabic/baseline/house4",
+				"processors": "tfg:illagers/arabic_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/stall_gray",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/stall_green",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:arabic/baseline/stall_yellow",
+					"processors": "tfg:illagers/arabic_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"type": "forge:remove_spawns",
+	"biomes": {
+		"type": "forge:any"
+	},
+	"entity_types": [
+		"arthropocolypse:scarab",
+		"arthropocolypse:prairie_grasshopper",
+		"arthropocolypse:field_cricket",
+		"arthropocolypse:ice_crawler",
+		"arthropocolypse:behemoth_desert_spider",
+		"arthropocolypse:behemoth_desert_scorpion",
+		"arthropocolypse:worker_ant",
+		"arthropocolypse:soldier_ant",
+		"arthropocolypse:stag_beetle",
+		"arthropocolypse:stag_beetle_larva",
+		"arthropocolypse:wharf_roach",
+		"arthropocolypse:platerodrilus",
+		"arthropocolypse:mealworm_beetle",
+		"arthropocolypse:mealworm",
+		"arthropocolypse:millipede_head",
+		"arthropocolypse:millipede_body",
+		"arthropocolypse:millipede_tail"
+	]
+}

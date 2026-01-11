@@ -54,6 +54,8 @@ function registerTFGVaseRecipes(event) {
 			'X   X',
 			'XXXXX'
 		]
-	).outsideSlotRequired(false)
+	)
+		.ingredient('5x minecraft:clay_ball')
+		.outsideSlotRequired(false)
 		.id('tfg:knapping/decorative_vase/unfired')
 }

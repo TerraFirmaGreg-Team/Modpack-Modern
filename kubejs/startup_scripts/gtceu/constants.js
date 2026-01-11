@@ -123,7 +123,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:damascus_steel_plate",
     "gtceu:double_damascus_steel_plate",
     "gtceu:damascus_steel_gear",
-    "gtceu:damascus_steel_buzzsaw_blade",
+    "gtceu:damascus_steel_buzz_saw_blade",
     "gtceu:damascus_steel_drill_head",
     "gtceu:damascus_steel_chainsaw_head",
     "gtceu:damascus_steel_bolt",
@@ -141,6 +141,24 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lv_damascus_steel_chainsaw",
     "gtceu:damascus_steel_buzzsaw",
     "gtceu:damascus_steel_bucket",
+    "gtceu:damascus_steel_wire_cutter_head",
+    "gtceu:lv_damascus_steel_wire_cutter",
+    "gtceu:hv_damascus_steel_wire_cutter",
+    "gtceu:iv_damascus_steel_wire_cutter",
+    "gtceu:damascus_steel_butchery_knife_head",
+    "gtceu:damascus_steel_sword_head",
+    "gtceu:damascus_steel_screwdriver_tip",
+    "gtceu:damascus_steel_file_head",
+    "gtceu:damascus_steel_spade_head",
+    "gtceu:damascus_steel_mining_hammer_head",
+    "gtceu:damascus_steel_hoe_head",
+    "gtceu:damascus_steel_hammer_head",
+    "gtceu:damascus_steel_knife_head",
+    "gtceu:damascus_steel_pickaxe_head",
+    "gtceu:damascus_steel_axe_head",
+    "gtceu:damascus_steel_saw_head",
+    "gtceu:damascus_steel_shovel_head",
+    "gtceu:damascus_steel_scythe_head",
 
     "gtceu:palladium_buzzsaw",
     "gtceu:molten_rhodium_plated_palladium_bucket",
@@ -217,7 +235,12 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:thorium_block",
     "gtceu:thorium_plate",
     "gtceu:double_thorium_plate",
-    "gtceu:thorium_rod"
+    "gtceu:thorium_rod",
+    "gtceu:thorium_bucket",
+
+    // Replaced with our own
+    "gtceu:paracetamol_pill",
+    "gtceu:rad_away_pill"
 ]);
 //#endregion
 
@@ -414,4 +437,70 @@ global.GTCEU_SUPERCONDUCTORS = /** @type {const} */ ([
     { name: "enriched_naquadah_trinium_europium_duranide", materialId: "EnrichedNaquadahTriniumEuropiumDuranide" },
     { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" }
 ]);
+//#endregion
+
+//#region Concrete Blocks
+/**
+ * Concrete block groups keyed by type [type, ids].
+ *
+ * @global
+ * @type {Record<string, (string[] & { name: string })>}
+ */
+global.GTCEU_CONCRETE_BLOCKS = (() => {
+    /**
+     * Attach a name to an array of concrete block item IDs.
+     * @param {string} name
+     * @param {string[]} items
+     * @returns {string[] & { name: string }}
+     */
+    function group(name, items) {
+        items.name = name;
+        return items;
+    }
+
+    return {
+        light_concrete: group('light_concrete', [
+            'gtceu:light_concrete',
+            'gtceu:light_concrete_cobblestone',
+            'gtceu:mossy_light_concrete_cobblestone',
+            'gtceu:polished_light_concrete',
+            'gtceu:light_concrete_bricks',
+            'gtceu:cracked_light_concrete_bricks',
+            'gtceu:mossy_light_concrete_bricks',
+            'gtceu:chiseled_light_concrete',
+            'gtceu:light_concrete_tile',
+            'gtceu:light_concrete_small_tile',
+            'gtceu:light_concrete_windmill_a',
+            'gtceu:light_concrete_windmill_b',
+            'gtceu:small_light_concrete_bricks',
+            'gtceu:square_light_concrete_bricks'
+        ]),
+        dark_concrete: group('dark_concrete', [
+            'gtceu:dark_concrete',
+            'gtceu:dark_concrete_cobblestone',
+            'gtceu:mossy_dark_concrete_cobblestone',
+            'gtceu:polished_dark_concrete',
+            'gtceu:dark_concrete_bricks',
+            'gtceu:cracked_dark_concrete_bricks',
+            'gtceu:mossy_dark_concrete_bricks',
+            'gtceu:chiseled_dark_concrete',
+            'gtceu:dark_concrete_tile',
+            'gtceu:dark_concrete_small_tile',
+            'gtceu:dark_concrete_windmill_a',
+            'gtceu:dark_concrete_windmill_b',
+            'gtceu:small_dark_concrete_bricks',
+            'gtceu:square_dark_concrete_bricks'
+
+        ]),
+        titanium_concrete: group('titanium_concrete', [
+            'tfg:titanium_concrete',
+            'tfg:polished_titanium_concrete',
+            'tfg:titanium_concrete_tile',
+            'tfg:titanium_concrete_tile_small',
+            'tfg:titanium_concrete_bricks',
+            'tfg:titanium_concrete_bricks_small',
+            'tfg:titanium_concrete_bricks_square'
+        ])
+    };
+})();
 //#endregion

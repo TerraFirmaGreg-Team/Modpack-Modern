@@ -96,6 +96,7 @@ function registerTFGMarsMaterials(event) {
 
 	event.create("ostrum_iodide")
 		.ingot()
+		.liquid()
 		.components('2x ostrum', 'iodine')
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
 		.iconSet(GTMaterialIconSet.BRIGHT)

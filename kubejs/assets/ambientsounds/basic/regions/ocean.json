@@ -1,0 +1,22 @@
+{
+	"name": "ocean",
+	"biomes": [
+		"ocean",
+		"ocean_reef"
+	],
+	"features": [
+		"water"
+	],
+	"sound-collections": [
+		"wind"
+	],
+	"sounds": [
+		{
+			"name": "ocean",
+			"files": [
+				"ambientsounds:water.ocean"
+			],
+			"volume": 0.1
+		}
+	]
+}

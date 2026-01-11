@@ -17,6 +17,10 @@ const registerTFGItemTags = (event) => {
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
+	registerTFGAquaponicsItemTags(event)
+
+	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
+	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
 
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
@@ -112,6 +116,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
+	registerTFGAquaponicsBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -123,6 +128,7 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
 	event.add('forge:mineable/wrench', 'tfg:reflector')
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
+	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
@@ -136,6 +142,9 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
+	registerTFGAquaponicsFluidTags(event)
+	registerTFGPrimitiveFluidTags(event)
+
 	event.add('tfg:clean_water', 'minecraft:water')
 	event.add('tfg:clean_water', 'tfc:river_water')
 	event.add('tfg:clean_water', 'tfc:spring_water')
@@ -146,6 +155,13 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
+	
+	event.add('tfc:any_water', 'tfg:semiheavy_water')
+	event.add('tfc:hydrating', 'tfg:semiheavy_water')
+	event.add('tfc:drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:any_drinkables', 'tfg:semiheavy_water')
+	event.add('tfc:ingredients', 'tfg:semiheavy_water')
+	event.add('minecraft:water', 'tfg:semiheavy_water')
 
 	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
 	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')
@@ -160,6 +176,11 @@ const registerTFGFluidTags = (event) => {
 	event.add('minecraft:water', 'tfg:light_stock')
 	event.add('tfc:drinkables', 'tfg:light_stock')
 	event.add('tfc:any_drinkables', 'tfg:light_stock')
+
+	event.add('tfc:drinkables', 'gtceu:ethanol')
+	event.add('tfc:any_drinkables', 'gtceu:ethanol')
+	event.add('tfc:drinkables', 'gtceu:methanol')
+	event.add('tfc:any_drinkables', 'gtceu:methanol')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
@@ -202,6 +223,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
 
+	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')

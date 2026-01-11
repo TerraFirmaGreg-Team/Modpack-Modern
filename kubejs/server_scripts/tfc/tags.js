@@ -1,6 +1,8 @@
 // priority: 0
 "use strict";
 
+const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+
 /** @param {TagEvent.Item} event */
 function registerTFCItemTags(event) {
     // Теги для соответствия инструментов TFC и GT
@@ -38,6 +40,8 @@ function registerTFCItemTags(event) {
         "#forge:tools/drills",
         "#forge:tools/fishing_nets",
         "#tfc:buckets",
+        "tfc:lens",
+        "#forge:lenses",
         "buildinggadgets2:gadget_building",
         "buildinggadgets2:gadget_exchanging",
         "buildinggadgets2:gadget_copy_paste",
@@ -83,6 +87,47 @@ function registerTFCItemTags(event) {
     usableOnToolRack.forEach((entry) => {
         event.add("tfc:usable_on_tool_rack", entry);
     });
+	
+    //liquid non placeable
+    event.add("tfc:nonplaceable", "minecraft:milk_bucket")
+    event.add("tfc:nonplaceable", "firmalife:bucket/yak_milk")
+    event.add("tfc:nonplaceable", "firmalife:bucket/goat_milk")
+    event.add("tfc:nonplaceable", "tfc_gurman:ox_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:sheep_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:alpaca_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc:bucket/beer")
+    event.add("tfc:nonplaceable", "tfc:bucket/cider")
+    event.add("tfc:nonplaceable", "tfc:bucket/rum")
+    event.add("tfc:nonplaceable", "tfc:bucket/sake")
+    event.add("tfc:nonplaceable", "tfc:bucket/vodka")
+    event.add("tfc:nonplaceable", "tfc:bucket/whiskey")
+    event.add("tfc:nonplaceable", "tfc:bucket/corn_whiskey")
+    event.add("tfc:nonplaceable", "tfc:bucket/rye_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_beer")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_cider")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rum")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_sake")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_vodka")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_corn_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
+    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
+    event.add("tfc:nonplaceable", "tfc_gurman:nalivka_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:coffee_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_mint_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_chamomile_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_rosehip_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:tea_nettle_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:cocoa_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:compote_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:kvass_bucket")
+    event.add("tfc:nonplaceable", "tfc_gurman:lemonade_bucket")
+    event.add("tfc:nonplaceable", "firmalife:bucket/mead")
+    event.add("tfc:nonplaceable", "firmalife:bucket/red_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/white_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/rose_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/sparkling_wine")
+    event.add("tfc:nonplaceable", "firmalife:bucket/dessert_wine")
 
     // Ингредиенты для закваски
     event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
@@ -126,13 +171,30 @@ function registerTFCItemTags(event) {
 
     // Тэги для возможности использования разных углей в кузне
     event.add("tfc:forge_fuel", "minecraft:coal");
-    event.add("tfc:forge_fuel", "beneath:cursecoal");
-    event.add("tfc:forge_fuel", "gtceu:coke_gem");
+    event.add("tfc:forge_fuel", "minecraft:coal_block");
+    event.add("tfc:forge_fuel", 'gtceu:flawless_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:exquisite_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:flawed_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:chipped_coal_gem');
+    event.add("tfc:forge_fuel", 'gtceu:crushed_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:purified_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:refined_coal_ore');
+    event.add("tfc:forge_fuel", 'gtceu:impure_coal_dust');
+
     event.add("tfc:forge_fuel", "gtceu:rich_raw_coal");
     event.add("tfc:forge_fuel", "gtceu:raw_coal");
     event.add("tfc:forge_fuel", "gtceu:poor_raw_coal");
     event.add("tfc:forge_fuel", "gtceu:coal_dust");
+    event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
+    event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
+
+    event.add("tfc:forge_fuel", "beneath:cursecoal");
+
+    event.add("tfc:forge_fuel", "gtceu:coke_gem");
+    event.add("tfc:forge_fuel", "gtceu:coke_dust");
+
     event.add("tfc:forge_fuel", "gtceu:charcoal_dust");
+    event.add("tfc:forge_fuel", "gtceu:charcoal_block");
 
     // Change blast furnace to use coke
     event.remove("tfc:blast_furnace_fuel", "minecraft:coal");
@@ -341,6 +403,37 @@ function registerTFCItemTags(event) {
     global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
         event.add("tfc:dry_mud_bricks", dryMudBrick);
     });
+
+    // Workaround for some of the ruin structures having tfc knives
+    event.add('tfc:knives', 'tfc:stone/knife/sedimentary')
+    event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
+    event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
+    event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
+
+    //greens and browns
+    event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#minecraft:leaves')
+
+    // Powder dyes
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/blue', 'tfc:powder/graphite')
+    event.add('forge:dyes/black', 'tfc:powder/charcoal')
+    event.add('forge:dyes/black', 'tfc:powder/coke')
+    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
+    event.add('forge:dyes/orange', 'tfc:powder/copper')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
+    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
+    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
+    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
+    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
+    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
+    event.add('forge:dyes/green', 'tfc:powder/malachite')
+    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
+    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
 }
 
 /** @param {TagEvent.Block} event */
@@ -420,11 +513,22 @@ function registerTFCBlockTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
-    //Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
-    //Add blacklisted words to the const with | between.
-    const brick_blacklist = "drying|slab|stairs|wall|additionalplacements";
-    event.add("tfc:bloomery_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
-    event.add("tfc:forge_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+    // Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
+    // Optimized to compute matching blocks once instead of regex scanning per tag like before.
+    // Blacklist removes blocks that are unwanted.
+    const blacklist = ["drying", "slab", "stairs", "wall", "additionalplacements", "fence", "roof", "bridge"];
+    const matches = [];
+    ForgeRegistries.BLOCKS.getValues().forEach(block => {
+        const id = String(ForgeRegistries.BLOCKS.getKey(block));
+        if (id.includes("brick") && !blacklist.some(no_no_word => id.includes(no_no_word))) {
+            matches.push(id);
+        };
+    });
+    ["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
+        matches.forEach(id => event.add(tag, id));
+    });
+
+    event.add("tfc:forge_insulation", 'create:depot');
 
     global.TFC_STONE_TYPES.forEach((stone) => {
         event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
@@ -433,13 +537,9 @@ function registerTFCBlockTags(event) {
 
     event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
 
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/granite')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/diorite')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/gabbro')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/rhyolite')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/basalt')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/andesite')
-    event.add('minecraft:infiniburn_overworld', 'tfc:rock/magma/dacite')
+    global.TFC_MAGMA_BLOCKS.forEach(magma => {
+        event.add('minecraft:infiniburn_overworld', magma)
+    })
 }
 
 /** @param {TagEvent.Fluid} event */
@@ -658,8 +758,8 @@ function registerTFCFluidTags(event) {
 	});
 
 	// Can use any liquid.
-	event.add('tfc:usable_in_pot', '#forge:liquid')
-	event.add('firmalife:usable_in_vat', '#forge:liquid')
+	event.add('tfc:usable_in_pot', '#forge:neutral_fluids')
+	event.add('firmalife:usable_in_vat', '#forge:neutral_fluids')
 
     // Can use only neutral fluids.
     event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');

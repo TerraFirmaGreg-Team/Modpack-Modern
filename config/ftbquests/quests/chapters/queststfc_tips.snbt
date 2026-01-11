@@ -1104,6 +1104,7 @@
 							"ftbfiltersystem:filter": "or(custom(HasPreservation/tfc:wood_grilled)custom(HasPreservation/firmaciv:oven_baked))"
 						}
 					}
+					optional_task: true
 					title: "{quests.tfg_tips.cook_meat.task.1}"
 					type: "item"
 				}
@@ -1116,8 +1117,14 @@
 							"ftbfiltersystem:filter": "or(item(tfc:wrought_iron_grill)item(firmalife:cured_oven_top))"
 						}
 					}
+					optional_task: true
 					title: "{quests.tfg_tips.cook_meat.task.2}"
 					type: "item"
+				}
+				{
+					id: "3277299EE8419365"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.tfg_tips.cook_meat.title}"

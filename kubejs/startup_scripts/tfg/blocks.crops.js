@@ -139,6 +139,8 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('minecraft:flowers')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -161,6 +163,8 @@ const registerTFGCrops = (event) => {
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:can_be_snow_piled')
+		.tagBlock('minecraft:flowers')
+		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagItem('c:hidden_from_recipe_viewers')
 
 
@@ -198,7 +202,7 @@ const registerTFGCrops = (event) => {
 		.type('spreading')
 		.soundType('crop')
 		.spreadingFruitBlock('betterend:cave_pumpkin')
-		.seeds('betterend:cave_pumpkin_seeds')
+		.seeds('betterend:cave_pumpkin_plant_seeds')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')

@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Extraterrestrial Crops",
-			"text": "It turns out Earth isn't the only celestial body with life. During your travels, you may come across other kinds of edible fauna. These all use the same mechanics you're used to on Earth (with some exceptions), and can be grown either in normal Farmland, in a Firmalife $(l:firmalife/greenhouse)Greenhouse$(), or in a GregTech Electric Greenhouse depending on your needs."
+			"text": "It turns out Earth isn't the only celestial body with life. During your travels, you may come across other kinds of edible flora. These all use the same mechanics you're used to on Earth (with some exceptions), and can be grown either in normal Farmland, in a Firmalife $(l:firmalife/greenhouse)Greenhouse$(), or in a GregTech Electric Greenhouse depending on your needs."
 		},
 		{
 			"type": "patchouli:text",
@@ -564,7 +564,7 @@
 		"betterend:blossom_berry_product": 6,
 		"betterend:bolux_mushroom_seeds": 8,
 		"betterend:bolux_mushroom_product": 8,
-		"betterend:cave_pumpkin_seeds": 10,
+		"betterend:cave_pumpkin_plant_seeds": 10,
 		"betterend:cave_pumpkin": 10,
 		"betterend:chorus_mushroom_seeds": 12,
 		"betterend:chorus_mushroom_product": 12,
