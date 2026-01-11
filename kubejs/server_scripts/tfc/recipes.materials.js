@@ -1,6 +1,12 @@
 ﻿// priority: 0
 "use strict";
 
+function getExtractorEUt(material) {
+		return (material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+				? GTValues.VA[GTValues.MV]
+				: GTValues.VA[GTValues.LV]);
+	}
+
 function registerTFCMaterialsRecipes(event) {
 
 	forEachMaterial(material => {
@@ -1272,7 +1278,7 @@ function registerTFCMaterialsRecipes(event) {
 				}
 				//#endregion
 
-				//Scraping Knife
+				//#region Scraping Knife
 				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 
 					// Anvil
@@ -1306,7 +1312,21 @@ function registerTFCMaterialsRecipes(event) {
 							])
 							.id(`tfg:tfc/filling/${material.getName()}_scraping_knife_blade_mold`)
 					}
+
+					//Recycling
+					let doubleMap = {};
+					doubleMap[material.getName()] = 2;
+					TFGHelpers.registerMaterialInfo(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, doubleMap)
+					
+					event.recipes.gtceu.extractor(`tfg:extract/scraping_knife_blade/${material.getName()}`)
+						.itemInputs(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`)
+						.outputFluids(Fluid.of(material.getFluid(), 288))
+						.duration(material.getMass() * 6)
+						.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+						.EUt(getExtractorEUt(material))
+
 				}
+				//#endregion
 			}
 		}
 
@@ -1424,6 +1444,18 @@ function registerTFCMaterialsRecipes(event) {
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
 				.useDurability(true)
 				.id(`tfchotornot:heating/tongs/${material.getName()}`)
+
+				//recycling
+				let Map = {};
+				Map[material.getName()] = 1;
+				TFGHelpers.registerMaterialInfo(`tfchotornot:tong_part/${material.getName()}`, Map)
+
+				event.recipes.gtceu.extractor(`tfg:extract/${tongPartStack}`)
+					.itemInputs(tongPartStack)
+					.outputFluids(Fluid.of(material.getFluid(), 144))
+					.duration(material.getMass() * 6)
+					.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+					.EUt(getExtractorEUt(material))		
 		}
 		//#endregion
 
