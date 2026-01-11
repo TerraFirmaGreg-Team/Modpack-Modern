@@ -30,6 +30,7 @@ const registerTFGMaterials = (event) => {
 	registerTFGMarsMaterials(event);
 	registerTFGVenusMaterials(event);
 	registerTFGEuropaMaterials(event);
+	registerTFGAquaponicsMaterials(event);
 
 
 	// Refrigerants
