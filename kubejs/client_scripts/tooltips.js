@@ -389,11 +389,11 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" (00:30)")).blue());
+		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" (00:30)")).blue());
+		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gurman:tea_nettle_bucket'], (item, advanced, text) => {

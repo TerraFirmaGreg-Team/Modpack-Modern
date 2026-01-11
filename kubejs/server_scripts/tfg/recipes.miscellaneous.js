@@ -169,4 +169,12 @@ function registerTFGMiscellaneousRecipes(event) {
 	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', { 'cobalt_brass': 9, 'invar': 4, 'steel': 2, 'wrought_iron': 3, 'treated_wood': 2 });
 
 	//#endregion
+
+	// Rotten Voiding Cover
+	event.recipes.gtceu.assembler('tfg:rotten_voiding_cover')
+		.itemInputs('gtceu:item_voiding_cover', '8x tfc:rotten_compost')
+		.itemOutputs('tfg:rotten_voiding_cover')
+		.duration(5*20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true);
 }

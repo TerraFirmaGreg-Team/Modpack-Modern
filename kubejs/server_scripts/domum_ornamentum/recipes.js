@@ -23,7 +23,7 @@ const registerDomumOrnamentumRecipes = (event) => {
 			'B B'
 		],
 		{
-			B: '#forge:cobblestone'
+			B: 'minecraft:cobblestone'
 		}).id('domum_ornamentum:cobblestone_extra');
 
 	event.shaped(Item.of('domum_ornamentum:blue_cobblestone_extra', 8),

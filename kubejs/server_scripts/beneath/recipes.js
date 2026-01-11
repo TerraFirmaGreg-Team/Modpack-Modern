@@ -63,15 +63,6 @@ const registerBeneathRecipes = (event) => {
 
 	event.recipes.tfc.landslide('beneath:soul_clay', 'beneath:soul_clay')
 
-
-	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
-		const itemId = element.id;
-		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
-
-		generateGreenHouseRecipe(event, element.withCount(4), '#tfc:any_fresh_water', 8000, element.withCount(24),
-			recipeId, 'minecraft:the_nether', 8, element.withCount(4), GTValues.VH[GTValues.LV]);
-	});
-
 	event.shaped('beneath:wood/sewing_table/crimson', [
 		' AB',
 		'CCC',
