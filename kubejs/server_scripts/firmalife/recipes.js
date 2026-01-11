@@ -56,7 +56,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Декрафт Jag Lid
 	event.recipes.tfc.heating('tfc:jar_lid', 230)
-		.resultFluid(Fluid.of('gtceu:tin', 9))
+		.resultFluid(Fluid.of('gtceu:tin', 6))
 		.id(`tfc:heating/jar_lid`)
 
 	// Pie Pan
