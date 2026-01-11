@@ -126,8 +126,8 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 			leaves.tagBlock('minecraft:replaceable')
 			leaves.noDynamicTinting()
 			leaves.models((modelType, generator) => {
-				if (modelType.layers != 8) {
-					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
+				if (modelType.layers !== 8) {
+					generator.parent(`tfc:block/groundcover/fallen_leaves_height${modelType.height}`);
 					generator.texture("all", "betterend:block/cave_bush_leaves_1");
 				} else {
 					generator.parent("betterend:block/cave_bush_01");
@@ -151,8 +151,8 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 			leaves.tagBlock('minecraft:replaceable')
 			leaves.noDynamicTinting()
 			leaves.models((modelType, generator) => {
-				if (modelType.layers != 8) {
-					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
+				if (modelType.layers !== 8) {
+					generator.parent(`tfc:block/groundcover/fallen_leaves_height${modelType.height}`);
 					generator.texture("all", "betterend:block/lucernia_leaves_1");
 				} else {
 					generator.parent("betterend:block/lucernia_leaves_1");
@@ -240,11 +240,12 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 		.resistance(6)
 		// makes it invisible on xaeros, so people can't use it to find the deposits :)
 		.mapColor('none')
-		.particleOffset(0.3, 1.5, 0.3)
-		.particleVelocity(0, 0.05, 0)
-		.particle('electric_spark')
-		.particleCount(2)
-		.particleForced(false)
+		.particles(a => a
+			.range(0.3, 1.5, 0.3)
+			.velocity(0, 0.05, 0)
+			.particle('electric_spark')
+			.count(2)
+			.forced(false))
 		.fullBlock(true)
 		.opaque(true)
 }

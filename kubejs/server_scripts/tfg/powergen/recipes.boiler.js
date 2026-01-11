@@ -60,10 +60,15 @@ function registerTFGBoilerRecipes(event) {
 		.duration(75)
 		.dimension('minecraft:overworld')
 
+	event.recipes.gtceu.steam_boiler('tfg:flora_pellets')
+		.itemInputs('tfg:flora_pellets')
+		.duration(1200)
+		.dimension('minecraft:overworld')
+
 	// Small nerf to charcoal
 
 	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/.*charcoal.*/ }, recipe => {
-        var newDuration = recipe.get("duration")
+        let newDuration = recipe.get("duration")
         recipe.set("duration", newDuration/4*3)
 	})
 

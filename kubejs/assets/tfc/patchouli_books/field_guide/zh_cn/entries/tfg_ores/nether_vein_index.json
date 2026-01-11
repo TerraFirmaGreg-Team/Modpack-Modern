@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 150$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/150$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "下界石英",
       "type": "patchouli:text",
       "anchor": "nether_quartz"
@@ -96,7 +96,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 35$(br)$(thing)密度$(): 0.8$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 48 — 127$(br)$(thing)尺寸$(): 13$(br)$(thing)高度$(): 4$(br2)$(thing)岩石类型$(): 混合岩",
+      "text": "$(thing)稀有度$(): 1/35$(br)$(thing)密度$(): 80%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 48 — 127$(br)$(thing)尺寸$(): 13$(br)$(thing)高度$(): 4$(br2)$(thing)岩石类型$(): 混合岩",
       "title": "无烟煤",
       "type": "patchouli:text",
       "anchor": "nether_anthracite"
@@ -123,7 +123,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 24$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 55.00000000000001%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 24$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "晶质铀矿, 沥青铀矿",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -190,7 +190,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 245$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/245$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "氟碳镧铈矿, 独居石",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -257,7 +257,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 25$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/180$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 25$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "白钨矿, 钨酸锂",
       "type": "patchouli:text",
       "anchor": "nether_scheelite"
@@ -324,7 +324,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 41$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 41$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "皂石, 滑石, 天然碱",
       "type": "patchouli:text",
       "anchor": "nether_lubricant"
@@ -431,7 +431,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 270$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/270$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "石榴石, 锡石矿砂",
       "type": "patchouli:text",
       "anchor": "nether_garnet_tin"
@@ -523,7 +523,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 9$(br2)$(thing)岩石类型$(): 混合岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/180$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 9$(br2)$(thing)岩石类型$(): 混合岩, 石灰华, 辉石岩",
       "title": "石膏, 方解石",
       "type": "patchouli:text",
       "anchor": "nether_gypsum"
@@ -615,7 +615,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 120$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/120$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "石墨, 钻石",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
@@ -682,7 +682,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 160$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 48 — 128$(br)$(thing)尺寸$(): 48$(br)$(thing)高度$(): 9$(br2)$(thing)岩石类型$(): 玄武岩, 花岗岩",
+      "text": "$(thing)稀有度$(): 1/160$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 48 — 128$(br)$(thing)尺寸$(): 48$(br)$(thing)高度$(): 9$(br2)$(thing)岩石类型$(): 玄武岩, 花岗岩",
       "title": "矿砂",
       "type": "patchouli:text",
       "anchor": "nether_basaltic_sands"
@@ -774,7 +774,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 200$(br)$(thing)密度$(): 0.7$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 38$(br)$(thing)尺寸$(): 32$(br2)$(thing)岩石类型$(): 玄武岩, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/200$(br)$(thing)密度$(): 70%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 38$(br)$(thing)尺寸$(): 32$(br2)$(thing)岩石类型$(): 玄武岩, 辉石岩",
       "title": "硅岩",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
@@ -801,7 +801,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 160$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 16 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/160$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 16 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 辉石岩, 辉长岩, 闪长岩",
       "title": "硅镁镍矿, 辉钴矿",
       "type": "patchouli:text",
       "anchor": "nether_garnierite"
@@ -908,7 +908,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 210$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 50$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/210$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 50$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "硝石, 蓝石",
       "type": "patchouli:text",
       "anchor": "nether_saltpeter"
@@ -1000,7 +1000,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 165$(br)$(thing)密度$(): 0.3$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 50$(br2)$(thing)岩石类型$(): 片岩, 玄武岩, 辉石岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/165$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 50$(br2)$(thing)岩石类型$(): 片岩, 玄武岩, 辉石岩, 闪长岩",
       "title": "硫, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "nether_sulfur"
@@ -1067,7 +1067,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 35$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 35$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "硫铂矿, 斑铜矿",
       "type": "patchouli:text",
       "anchor": "nether_sheldonite"
@@ -1159,7 +1159,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 48 — 128$(br)$(thing)尺寸$(): 39$(br2)$(thing)岩石类型$(): 片岩, 片麻岩",
+      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 48 — 128$(br)$(thing)尺寸$(): 39$(br2)$(thing)岩石类型$(): 片岩, 片麻岩",
       "title": "磷灰石, 烧绿石",
       "type": "patchouli:text",
       "anchor": "nether_apatite"
@@ -1226,7 +1226,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 230$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br)$(thing)高度$(): 8$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/230$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br)$(thing)高度$(): 8$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "紫水晶, 蛋白石, 石榴石",
       "type": "patchouli:text",
       "anchor": "nether_garnet"
@@ -1318,7 +1318,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 160$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 花岗岩, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/160$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 花岗岩, 辉石岩",
       "title": "红石, 朱砂, 红宝石",
       "type": "patchouli:text",
       "anchor": "nether_redstone"
@@ -1385,7 +1385,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "绿宝石, 铍矿",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"
@@ -1477,7 +1477,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 250$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 31$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 31$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "膨润土, 橄榄石",
       "type": "patchouli:text",
       "anchor": "nether_olivine"
@@ -1569,7 +1569,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 33$(br)$(thing)高度$(): 8$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/180$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 33$(br)$(thing)高度$(): 8$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "蓝宝石, 铁铝榴石",
       "type": "patchouli:text",
       "anchor": "nether_sapphire"
@@ -1661,7 +1661,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 41$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 41$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "蓝晶石, 云母, 铝土矿",
       "type": "patchouli:text",
       "anchor": "nether_mica"
@@ -1728,7 +1728,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 35$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 35$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "赤铁矿, 褐铁矿",
       "type": "patchouli:text",
       "anchor": "nether_hematite"
@@ -1835,7 +1835,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 260$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 37$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/260$(br)$(thing)密度$(): 55.00000000000001%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 37$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "金矿, 赤铁矿",
       "type": "patchouli:text",
       "anchor": "nether_gold"
@@ -1927,7 +1927,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 240$(br)$(thing)密度$(): 0.45$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 37$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/240$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 37$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "针铁矿",
       "type": "patchouli:text",
       "anchor": "nether_goethite"
@@ -2019,7 +2019,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 245$(br)$(thing)密度$(): 0.55$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 31$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/245$(br)$(thing)密度$(): 55.00000000000001%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 31$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "钼铅矿, 辉钼矿",
       "type": "patchouli:text",
       "anchor": "nether_molybdenum"
@@ -2111,7 +2111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 75$(br)$(thing)密度$(): 0.6$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 64$(br)$(thing)尺寸$(): 17$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 辉石岩",
+      "text": "$(thing)稀有度$(): 1/75$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 64$(br)$(thing)尺寸$(): 17$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 辉石岩",
       "title": "钾石盐",
       "type": "patchouli:text",
       "anchor": "nether_sylvite"
@@ -2138,7 +2138,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/170$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "铜矿, 黄铜矿",
       "type": "patchouli:text",
       "anchor": "nether_copper"
@@ -2230,7 +2230,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 205$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 39$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/205$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 39$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "铬铁矿",
       "type": "patchouli:text",
       "anchor": "nether_magnetite"
@@ -2337,7 +2337,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 160$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片麻岩, 花岗岩, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/160$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 24 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片麻岩, 花岗岩, 辉石岩",
       "title": "银矿, 方铅矿, 铅矿",
       "type": "patchouli:text",
       "anchor": "nether_silver"
@@ -2404,7 +2404,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/170$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 片岩, 片麻岩, 花岗岩, 辉石岩, 辉长岩, 闪长岩",
       "title": "锡石矿",
       "type": "patchouli:text",
       "anchor": "nether_cassiterite"
@@ -2471,7 +2471,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 225$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/225$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "锰矿, 钽矿",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -2563,7 +2563,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/170$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "闪锌矿, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "nether_sphalerite"
@@ -2630,7 +2630,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 220$(br)$(thing)密度$(): 0.35$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 40$(br2)$(thing)岩石类型$(): 混合岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 40$(br2)$(thing)岩石类型$(): 混合岩, 石灰华, 辉石岩",
       "title": "青金石, 蓝金石, 方钠石",
       "type": "patchouli:text",
       "anchor": "nether_lapis"
@@ -2722,7 +2722,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 180$(br)$(thing)密度$(): 0.4$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 33$(br)$(thing)高度$(): 7$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/180$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 33$(br)$(thing)高度$(): 7$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "黄玉, 辉铜矿",
       "type": "patchouli:text",
       "anchor": "nether_topaz"
@@ -2814,7 +2814,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 170$(br)$(thing)密度$(): 0.5$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 片岩, 片麻岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/170$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 混合岩, 片岩, 片麻岩, 石灰华, 辉石岩",
       "title": "黝铜矿",
       "type": "patchouli:text",
       "anchor": "nether_tetrahedrite"
