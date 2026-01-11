@@ -1507,7 +1507,7 @@
   "trim_material.tfc.pyrite_tfc": "Pyrite",
   "trim_material.tfc.redx_tfc": "RedX",
   "tfg.emi.ore_veins.rock_types": "Found in rock types:",
-  "tfg.emi.ore_veins.rarity": "Rarity: %d",
+  "tfg.emi.ore_veins.rarity": "Rarity: 1/%d chunks",
   "tfg.emi.ore_veins.density": "Density: %d",
   "tfg.emi.ore_veins.y_ranges": "Y Level: %d to %d",
   "tfg.emi.ore_veins.size": "Size: %d",

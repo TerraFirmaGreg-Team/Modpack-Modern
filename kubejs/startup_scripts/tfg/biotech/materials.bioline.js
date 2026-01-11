@@ -112,4 +112,11 @@ const registerTFGBiolineMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	//#endregion
+	//#region Green Stuff
+
+	event.create('tfg:chloroplasts')
+		.liquid(new GTFluidBuilder().customStill().temperature(310))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	//#endregion
 }
