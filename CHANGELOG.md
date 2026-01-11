@@ -37,7 +37,7 @@
 - Fixed dry ice dropping nothing when broken (#2687) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071
+- Russian @Petr211071 + @Nixieeunrare
 - Japanese @sakura-gondra
 
 ## [0.11.16] - 05-01-2026
