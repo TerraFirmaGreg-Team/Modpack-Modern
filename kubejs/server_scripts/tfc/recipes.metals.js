@@ -303,11 +303,6 @@ function registerTFCMetalsRecipes(event) {
 		.tier(3)
 		.id(`tfc:anvil/iron_door`)
 
-		// jar lid
-	event.recipes.tfc.anvil('16x tfc:jar_lid', '#forge:ingots/tin', ['hit_last', 'hit_second_last', 'punch_third_last'])
-		.tier(1)
-		.id(`tfc:anvil/jar_lid`)
-
 	// Bloom -> Wrought Iron Ingot
 	event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last'])
 		.tier(2)
