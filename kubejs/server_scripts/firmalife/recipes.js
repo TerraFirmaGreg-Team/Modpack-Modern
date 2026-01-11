@@ -84,7 +84,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Jar Lid
 	event.recipes.gtceu.fluid_solidifier(`tfg:firmalife/jar_lid`)
-		.inputFluids(Fluid.of('gtceu:tin', 9))
+		.inputFluids(Fluid.of('gtceu:tin', 6))
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('tfc:jar_lid')
 		.duration(50)
@@ -93,7 +93,7 @@ const registerFirmaLifeRecipes = (event) => {
 		event.recipes.gtceu.alloy_smelter('tfg:firmalife/jar_lid')
 		.itemInputs('1x #forge:ingots/tin')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('8x tfc:jar_lid')
+		.itemOutputs('24x tfc:jar_lid')
 		.duration(75)
 		.category(GTRecipeCategories.INGOT_MOLDING)
 		.EUt(4)
@@ -101,7 +101,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.recipes.gtceu.extractor('tfc:jar_lid_extraction')
 		.itemInputs('tfc:jar_lid')
-		.outputFluids(Fluid.of('gtceu:tin', 9))
+		.outputFluids(Fluid.of('gtceu:tin', 6))
 		.duration(50)
 		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 		.EUt(2)
@@ -116,7 +116,7 @@ const registerFirmaLifeRecipes = (event) => {
 		event.recipes.gtceu.alloy_smelter('tfg:firmalife/stainless_steel_jar_lid')
 		.itemInputs('1x #forge:ingots/stainless_steel')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('16x firmalife:stainless_steel_jar_lid')
+		.itemOutputs('48x firmalife:stainless_steel_jar_lid')
 		.duration(75)
 		.category(GTRecipeCategories.INGOT_MOLDING)
 		.EUt(4)
