@@ -11,6 +11,7 @@ function registerTFCDataForTFG(event) {
 	registerTFGFLPlanters(event);
 	registerTFGFauna(event);
 	registerTFGEquipmentData(event);
+	registerTFGAquaponicsData(event);
 }
 
 //#region Heat Data

@@ -51,12 +51,13 @@ function registerTFGNuclearBlocks(event) {
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
 		.mapColor('color_black')
 		.speedFactor(1.1)
-		.activeOffset(2, 2, 2)
-		.activeVelocity(0.0, 0.0, 0.0)
-		.activeParticle('tfg:cooling_steam')
-		.activeBase(0.0, 13.5, 0.0)
-		.activeCount(2)
-		.activeForced(false)
+		.activeParticles(a => a
+			.range(2, 2, 2)
+			.velocity(0.0, 0.0, 0.0)
+			.particle('tfg:cooling_steam')
+			.position(0.0, 13.5, 0.0)
+			.count(2)
+			.forced(false))
 		.hasTicker(true)
 		.emitDelay(4);
 

@@ -303,8 +303,7 @@ function registerTFGFoodRecipes(event) {
 			itemOutputProvider: TFC.isp.of(`4x ${item.unsalted_cheese}`).copyOldestFood()
 		})
 
-		if (item.salted_wheel === null || item.salted_cheese === null)
-			return;
+		if (item.salted_wheel === null || item.salted_cheese === null) return;
 
 		global.processorRecipe(event, `${item.id}_salted_cheese_wheel`, 1000, 16, {
 			circuit: 2,
@@ -381,8 +380,8 @@ function registerTFGFoodRecipes(event) {
 		for (const cshape of chocolateShape) {
 			global.processorRecipe(event, `${ctype}_${cshape}_melting`, 100, 16, {
 				circuit: 1,
-				itemInputs:[cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
-				fluidOutputs:[cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+				itemInputs:[cshape === "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				fluidOutputs:[cshape === "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)]
 			})
 		}
 	}
@@ -390,9 +389,9 @@ function registerTFGFoodRecipes(event) {
 	for (const ctype of chocolateType) {	
 		for (const cshape of chocolateShape) {
 			global.processorRecipe(event, `${ctype}_${cshape}_casting`, 100, 16, {
-				fluidInputs: [cshape == "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
-				itemOutputs: [cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
-				itemOutputProvider: TFC.isp.of(cshape == "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
+				fluidInputs: [cshape === "" ? Fluid.of(`tfcchannelcasting:${ctype}`, 144) : Fluid.of(`tfcchannelcasting:${ctype}`, 100)],
+				itemOutputs: [cshape === "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`],
+				itemOutputProvider: TFC.isp.of(cshape === "" ? `firmalife:food/${ctype}` : `tfcchannelcasting:food/${ctype}${cshape}`).resetFood(),
 				notConsumable: [chocolatemolds[chocolateShape.indexOf(cshape)]]
 			})
 		}

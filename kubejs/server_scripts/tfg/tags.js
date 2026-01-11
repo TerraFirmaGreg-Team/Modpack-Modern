@@ -17,6 +17,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
+	registerTFGAquaponicsItemTags(event)
 
 	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
 	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
@@ -115,6 +116,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
+	registerTFGAquaponicsBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -140,6 +142,7 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
+	registerTFGAquaponicsFluidTags(event)
 	registerTFGPrimitiveFluidTags(event)
 
 	event.add('tfg:clean_water', 'minecraft:water')
@@ -220,6 +223,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
 
+	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
