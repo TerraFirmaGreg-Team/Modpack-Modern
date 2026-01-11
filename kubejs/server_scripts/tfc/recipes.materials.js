@@ -1271,6 +1271,42 @@ function registerTFCMaterialsRecipes(event) {
 					}
 				}
 				//#endregion
+
+				//Scraping Knife
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+
+					// Anvil
+					event.remove({ output: `tfcscraping:metal/scraping_knife_blade/${material.getName()}`, type: 'tfc:anvil'});
+					event.recipes.tfc.anvil(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, `#forge:double_ingots/${material.getName()}`,['hit_last','draw_not_last', 'draw_second_last'])
+						.bonus(true)			
+
+					// Melting tool
+					event.remove({input: `tfcscraping:metal/scraping_knife/${material.getName()}`, type: 'tfc:heating'});
+					event.recipes.tfc.heating(`tfcscraping:metal/scraping_knife/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+						.useDurability(true)
+						.id(`tfg:heating/scraping_knife/${material.getName()}`)
+
+					// Melting tool head
+					event.remove({input: `tfcscraping:metal/scraping_knife_blade/${material.getName()}`, type: 'tfc:heating'});
+					event.recipes.tfc.heating(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+						.id(`tfg:heating/scraping_knife_blade/${material.getName()}`)
+
+					// Crafting tool
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+						event.remove({ input: 'tfcscraping:ceramic/scraping_knife_blade_mold'})
+						event.recipes.tfc.casting(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, 'tfcscraping:ceramic/scraping_knife_blade_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
+							.id(`tfc:casting/scraping_knife_blade/${material.getName()}`)
+
+						event.recipes.create.filling(
+							Item.of('tfcscraping:ceramic/scraping_knife_blade_mold', getFillingNBT(outputMaterial, 288)),[
+								Fluid.of(outputMaterial.getFluid(), 288),
+								Item.of('tfcscraping:ceramic/scraping_knife_blade_mold').strongNBT()
+							])
+							.id(`tfg:tfc/filling/${material.getName()}_scraping_knife_blade_mold`)
+					}
+				}
 			}
 		}
 
