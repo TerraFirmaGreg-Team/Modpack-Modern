@@ -20,6 +20,9 @@ global.SOLDER_TIERS = /** @type {const} */ {
     },
     "zpm": {
         "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+    },
+	"uv": {
+        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     }
 }
 
@@ -205,17 +208,60 @@ function registerTFGCircuitRecipes(event) {
 
     const ASSEMBLY_LINE_RECIPE_TIERS = {
         "gtceu:assembly_line/crystal_mainframe_uv": "luv",
-
+		"gtceu:assembly_line/lapotronic_energy_orb_cluster": "luv",
+		"gtceu:assembly_line/electric_motor_luv": "luv",
+		"gtceu:assembly_line/electric_pump_luv": "luv",
+		"gtceu:assembly_line/conveyor_module_luv": "luv",
+		"gtceu:assembly_line/electric_piston_luv": "luv",
+		"gtceu:assembly_line/robot_arm_luv": "luv",
+		"gtceu:assembly_line/field_generator_luv": "luv",
+		"gtceu:assembly_line/emitter_luv": "luv",
+		"gtceu:assembly_line/sensor_luv": "luv",
+		"gtceu:assembly_line/energy_hatch_luv": "luv",
+		"gtceu:assembly_line/dynamo_hatch_luv": "luv",
+		"gtceu:assembly_line/me_pattern_buffer": "luv",
+		"gtceu:assembly_line/advanced_data_access_hatch": "luv",
+		"gtceu:assembly_line/fusion_reactor_mk1": "luv",
+		
         "gtceu:assembly_line/wetware_super_computer_uv": "zpm",
-        "gtceu:assembly_line/wetware_mainframe_uhv": "zpm",
-        "gtceu:assembly_line/lapotronic_energy_orb_cluster": "zpm",
         "gtceu:assembly_line/energy_module": "zpm",
-        "gtceu:assembly_line/energy_cluster": "zpm",
-        "gtceu:assembly_line/ultimate_battery": "zpm"
+		"gtceu:assembly_line/electric_motor_zpm": "zpm",
+		"gtceu:assembly_line/electric_pump_zpm": "zpm",
+		"gtceu:assembly_line/conveyor_module_zpm": "zpm",
+		"gtceu:assembly_line/electric_piston_zpm": "zpm",
+		"gtceu:assembly_line/robot_arm_zpm": "zpm",
+		"gtceu:assembly_line/field_generator_zpm": "zpm",
+		"gtceu:assembly_line/emitter_zpm": "zpm",
+		"gtceu:assembly_line/sensor_zpm": "zpm",
+		"gtceu:assembly_line/energy_hatch_zpm": "zpm",
+		"gtceu:assembly_line/dynamo_hatch_zpm": "zpm",
+		"gtceu:assembly_line/object_holder": "zpm",
+		"gtceu:assembly_line/data_bank": "zpm",
+		"gtceu:assembly_line/high_performance_computing_array": "zpm",
+		"gtceu:assembly_line/network_switch": "zpm",
+		"gtceu:assembly_line/research_station": "zpm",
+		"gtceu:assembly_line/fusion_reactor_mk2": "zpm",
+
+		"gtceu:assembly_line/wetware_mainframe_uhv": "uv",
+		"gtceu:assembly_line/energy_cluster": "uv",
+        "gtceu:assembly_line/ultimate_battery": "uv",
+		"gtceu:assembly_line/electric_motor_uv": "uv",
+		"gtceu:assembly_line/electric_pump_uv": "uv",
+		"gtceu:assembly_line/conveyor_module_uv": "uv",
+		"gtceu:assembly_line/electric_piston_uv": "uv",
+		"gtceu:assembly_line/robot_arm_uv": "uv",
+		"gtceu:assembly_line/field_generator_uv": "uv",
+		"gtceu:assembly_line/emitter_uv": "uv",
+		"gtceu:assembly_line/sensor_uv": "uv",
+		"gtceu:assembly_line/energy_hatch_uv": "uv",
+		"gtceu:assembly_line/energy_hatch_uhv": "uv",
+		"gtceu:assembly_line/dynamo_hatch_uv": "uv",
+		"gtceu:assembly_line/dynamo_hatch_uhv": "uv",
+		"gtceu:assembly_line/fusion_reactor_mk3": "uv"
     }
 
-    Object.keys(ASSEMBLY_LINE_RECIPE_TIERS).forEach(recipe => {
-        event.replaceInput({ id: recipe }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]]["solder_replacement"]))
+	Object.keys(ASSEMBLY_LINE_RECIPE_TIERS).forEach(recipe => {
+		event.replaceInput({ id: recipe }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]]["solder_replacement"]))
     })
 
     // #endregion
