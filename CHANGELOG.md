@@ -4,6 +4,12 @@
 ### Breaking changes
 - The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
 - Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
+### Performance improvements
+- Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
+- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
+- Fixed tree chopping not working on trees that had no leaves @Mqrius
+- Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
+- Fixed a huge amount of lag from TFC Ambiental @Mqrius
 ### Changes
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
@@ -22,12 +28,7 @@
 - You can now also use mars water in gregtech and create boilers @Pyritie
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
-### Performance improvements
-- Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
-- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
-- Fixed tree chopping not working on trees that had no leaves @Mqrius
-- Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
-- Fixed a huge amount of lag from TFC Ambiental @Mqrius
+- Reduced the amount of ambient wolf sounds at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -43,6 +44,7 @@
 - Fixed fridge tooltip power usage (#2689) @Karo4a
 - Fixed invar crucible alloying using the wrong amounts of iron and nickel @Pyritie
 - Fixed inconsistent saturation values from cooked long pig filet (#2714) @Pyritie
+- Fixed soaked paper in a helve hammer having a blow count of less than 1 for some anvils (#2655) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
