@@ -25,7 +25,6 @@ function registerTFGCasingBlocks(event) {
 		.mapColor('color_light_gray')
 
 	event.create('tfg:casings/machine_casing_vacuum_engine_intake', 'gtceu:active')
-		.model('tfg:block/casings/machine_casing_vacuum_engine_intake')
         .translationKey('block.tfg.casings.machine_casing_vacuum_engine_intake')
         .soundType('metal')
         .resistance(6).hardness(5)
