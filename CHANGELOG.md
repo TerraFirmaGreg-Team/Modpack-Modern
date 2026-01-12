@@ -42,6 +42,7 @@
 - Fixed bismuth bronze and black bronze extractor recipes being tiered at MV (#2684) @Inceitious
 - Fixed fridge tooltip power usage (#2689) @Karo4a
 - Fixed invar crucible alloying using the wrong amounts of iron and nickel @Pyritie
+- Fixed inconsistent saturation values from cooked long pig filet (#2714) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
