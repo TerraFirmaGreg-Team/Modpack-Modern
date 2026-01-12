@@ -131,10 +131,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
@@ -181,6 +181,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	
+	event.add('tfc:drinkables', 'gtceu:ice')
+	event.add('tfc:any_drinkables', 'gtceu:ice')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)

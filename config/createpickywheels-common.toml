@@ -27,24 +27,24 @@
 		waterwheelsPorqueNoLosDos = true
 		#Boost for Waterwheels placed on optimal conditions.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		waterwheelOptimalRPMBoost = 1.0
+		waterwheelSourceRPMBoost = 1.0
 		#Penalty for Waterwheels placed under create's default conditions.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		waterwheelOptimalRPMPenalty = 1.0
+		waterwheelSourceRPMPenalty = 1.0
 		#Boost for Waterwheels placed on optimal conditions.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		waterwheelOptimalSTRESSBoost = 1.0
+		waterwheelSourceSTRESSBoost = 1.0
 		#Penalty for Waterwheels placed under create's default conditions.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		waterwheelOptimalSTRESSPenalty = 1.0
+		waterwheelSourceSTRESSPenalty = 1.0
 		#The minimum amount of fluid blocks the waterwheel needs to find before rotation begins.
 		#Range: > 1
-		waterwheelOptimalThreshold = 1
+		waterwheelSourceThreshold = 1
 		#The maximum distance a waterwheel can consider fluid blocks from.
 		#Range: > 1
-		waterwheelOptimalRange = 3
+		waterwheelSourceRange = 3
 		#When enabled boosted waterwheels require correct flow (like in TerraFirmaCraft's water river)
-		waterwheelsOptimalRequiresFlow = true
+		waterwheelsSourceRequiresFlow = true
 
 ##Windmill requirements
 [windmills]

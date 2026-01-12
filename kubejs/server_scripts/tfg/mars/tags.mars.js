@@ -2,8 +2,6 @@
 
 function registerTFGMarsItemTags(event) {
 
-	event.add('c:hidden_from_recipe_viewers', 'tfg:mars_ice')
-
 	event.add('tfc:compost_greens', 'ad_astra:aeronos_cap')
 	event.add('tfc:compost_greens', 'ad_astra:strophar_cap')
 

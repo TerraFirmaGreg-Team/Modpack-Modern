@@ -1,6 +1,12 @@
 ﻿// priority: 0
 "use strict";
 
+function getExtractorEUt(material) {
+		return (material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+				? GTValues.VA[GTValues.MV]
+				: GTValues.VA[GTValues.LV]);
+	}
+
 function registerTFCMaterialsRecipes(event) {
 
 	forEachMaterial(material => {
@@ -1271,6 +1277,56 @@ function registerTFCMaterialsRecipes(event) {
 					}
 				}
 				//#endregion
+
+				//#region Scraping Knife
+				if (!material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
+
+					// Anvil
+					event.remove({ output: `tfcscraping:metal/scraping_knife_blade/${material.getName()}`, type: 'tfc:anvil'});
+					event.recipes.tfc.anvil(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, `#forge:double_ingots/${material.getName()}`,['hit_last','draw_not_last', 'draw_second_last'])
+						.bonus(true)			
+
+					// Melting tool
+					event.remove({input: `tfcscraping:metal/scraping_knife/${material.getName()}`, type: 'tfc:heating'});
+					event.recipes.tfc.heating(`tfcscraping:metal/scraping_knife/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+						.useDurability(true)
+						.id(`tfg:heating/scraping_knife/${material.getName()}`)
+
+					// Melting tool head
+					event.remove({input: `tfcscraping:metal/scraping_knife_blade/${material.getName()}`, type: 'tfc:heating'});
+					event.recipes.tfc.heating(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, tfcProperty.getMeltTemp())
+						.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+						.id(`tfg:heating/scraping_knife_blade/${material.getName()}`)
+
+					// Crafting tool
+					if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+						event.remove({ input: 'tfcscraping:ceramic/scraping_knife_blade_mold'})
+						event.recipes.tfc.casting(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, 'tfcscraping:ceramic/scraping_knife_blade_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
+							.id(`tfc:casting/scraping_knife_blade/${material.getName()}`)
+
+						event.recipes.create.filling(
+							Item.of('tfcscraping:ceramic/scraping_knife_blade_mold', getFillingNBT(outputMaterial, 288)),[
+								Fluid.of(outputMaterial.getFluid(), 288),
+								Item.of('tfcscraping:ceramic/scraping_knife_blade_mold').strongNBT()
+							])
+							.id(`tfg:tfc/filling/${material.getName()}_scraping_knife_blade_mold`)
+					}
+
+					//Recycling
+					let doubleMap = {};
+					doubleMap[material.getName()] = 2;
+					TFGHelpers.registerMaterialInfo(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`, doubleMap)
+					
+					event.recipes.gtceu.extractor(`tfg:extract/scraping_knife_blade/${material.getName()}`)
+						.itemInputs(`tfcscraping:metal/scraping_knife_blade/${material.getName()}`)
+						.outputFluids(Fluid.of(material.getFluid(), 288))
+						.duration(material.getMass() * 6)
+						.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+						.EUt(getExtractorEUt(material))
+
+				}
+				//#endregion
 			}
 		}
 
@@ -1388,6 +1444,18 @@ function registerTFCMaterialsRecipes(event) {
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
 				.useDurability(true)
 				.id(`tfchotornot:heating/tongs/${material.getName()}`)
+
+				//recycling
+				let Map = {};
+				Map[material.getName()] = 1;
+				TFGHelpers.registerMaterialInfo(`tfchotornot:tong_part/${material.getName()}`, Map)
+
+				event.recipes.gtceu.extractor(`tfg:extract/${tongPartStack}`)
+					.itemInputs(tongPartStack)
+					.outputFluids(Fluid.of(material.getFluid(), 144))
+					.duration(material.getMass() * 6)
+					.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+					.EUt(getExtractorEUt(material))		
 		}
 		//#endregion
 
