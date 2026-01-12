@@ -428,10 +428,13 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
-		text.add(1, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
+		text.add(2, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
 	})
 	event.addAdvanced(['gtceu:methanol_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.blindness").append(Text.of(" (05:00)")).red());
-		text.add(1, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
+		text.add(2, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
+	})
+	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 }
