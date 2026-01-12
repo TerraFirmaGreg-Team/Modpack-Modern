@@ -131,10 +131,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
