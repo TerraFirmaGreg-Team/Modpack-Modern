@@ -30,8 +30,8 @@ function registerTFCMetalsRecipes(event) {
 	]).id('tfg:alloy/tin_alloy')
 
 	event.recipes.tfc.alloy('tfg:invar', [
-		TFC.alloyPart('tfc:nickel', 0.60, 0.70),
-		TFC.alloyPart('tfc:cast_iron', 0.30, 0.40)
+		TFC.alloyPart('tfc:nickel', 0.30, 0.40),
+		TFC.alloyPart('tfc:cast_iron', 0.60, 0.70)
 	]).id('tfg:alloy/invar')
 
 	event.recipes.tfc.alloy('tfg:potin', [

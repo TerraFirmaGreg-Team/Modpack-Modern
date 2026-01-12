@@ -7,6 +7,7 @@
 ### Changes
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
+- Ice slush is now drinkable, for a cooling effect (#2708) @Inceitious
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 - Large gears can now be crafted in an anvil/mechanical press @Pyritie
 - Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
@@ -20,12 +21,14 @@
 - The sandworm no longer spawns in the Superflat preset that's a big vanilla desert biome
 - You can now also use mars water in gregtech and create boilers @Pyritie
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
-- Fixed the TFC blast furnace on mars but for real this time @Pyritie
-### Bug fixes
+- Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
+### Performance improvements
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
 - Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
 - Fixed tree chopping not working on trees that had no leaves @Mqrius
 - Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
+- Fixed a huge amount of lag from TFC Ambiental @Mqrius
+### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
 - Water wheels now spin the correct direction in rivers (#2450) @zehmaria
@@ -35,9 +38,13 @@
 - Fixed some inconsistent recipes with coal in coke ovens, and removed a duplicate recipe (#2688) @jurjen909
 - Fixed the rendering of two-block tall crops in the electric greenhouse @Pyritie
 - Fixed dry ice dropping nothing when broken (#2687) @Pyritie
+- Fixed the TFC blast furnace on mars but for real this time @Pyritie
+- Fixed bismuth bronze and black bronze extractor recipes being tiered at MV (#2684) @Inceitious
+- Fixed fridge tooltip power usage (#2689) @Karo4a
+- Fixed invar crucible alloying using the wrong amounts of iron and nickel @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071
+- Russian @Petr211071 + @Nixieeunrare
 - Japanese @sakura-gondra
 
 ## [0.11.16] - 05-01-2026
