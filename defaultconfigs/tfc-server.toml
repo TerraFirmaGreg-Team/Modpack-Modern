@@ -514,7 +514,7 @@ familiarityDecayLimit = 0.3
 	[blocks.mud]
 		#
 		# If TFC dirt blocks are able to be created into mud blocks using a water-filled fluid container.
-		enableDirtToMudCreation = true
+		enableDirtToMudCreation = false
 
 	[blocks.quern]
 		#
