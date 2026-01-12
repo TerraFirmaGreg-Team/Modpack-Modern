@@ -456,13 +456,14 @@ const registerTFGGreenhouseRecipes = (event) => {
 	}).addMaterialInfo().id('tfg:shaped/egh_planter');
 	
 	// Horticulture Casings
+	// TODO: Venus; swap the frame to calorite.
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_egh')
-		.itemInputs('gtceu:plascrete', '#forge:frames/calorite')
+		.itemInputs('gtceu:plascrete', '#forge:frames/ostrum')
 		.inputFluids(Fluid.of('tfg:chloroplasts', 100))
 		.itemOutputs('2x tfg:casings/machine_casing_egh')
 		.duration(8*20)
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true);
 
     //#endregion
