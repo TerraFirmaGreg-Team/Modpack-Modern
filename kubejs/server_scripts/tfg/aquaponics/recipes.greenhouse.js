@@ -46,12 +46,6 @@ const greenhouse_dimension_index = [
 
 //#region Utility Script
 
-/** Correct recipe IDs to replace invalid characters */
-function linuxUnfucker(value) {
-	const str = (value === undefined || value === null) ? "" : value.toString();
-	return str.replace(/[/:\s]/g, "_");
-};
-
 /**
  * Function for generating greenhouse recipes.
  *
