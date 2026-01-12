@@ -21,6 +21,12 @@
         },
         {
             "type": "patchouli:spotlight",
+            "item": "gtceu:ice_bucket",
+            "title": "液态冰泥",
+            "text": "啊——真是清爽！能让你降温4°C。"
+        },
+        {
+            "type": "patchouli:spotlight",
             "title": "蓝钢装备",
             "item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
             "text": "想要更持久的方案吗？$(thing)蓝钢潜水套装$()可将体温稳定在28°C，还能让你在岩浆里游泳！$(br2)$(item)耐火皮革$()来自本地的$(thing)红麋鹿$()，或从堡垒遗迹战利品箱内获取。"
