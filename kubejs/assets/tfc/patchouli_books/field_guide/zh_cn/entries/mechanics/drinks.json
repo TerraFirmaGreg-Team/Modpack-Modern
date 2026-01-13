@@ -1,0 +1,82 @@
+{
+    "name": "饮品效果",
+    "icon": "firmalife:olivine_wine_bottle",
+    "category": "tfc:mechanics",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在群峦传说的世界里并不存在药水和魔法，但这里有许多其他饮品可以提供类似的效果！$(br2)本条目列出了所有不同的效果，并且作为额外的好处，它们都能让你保持水分。"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "饮用容器",
+            "text": "你可以使用$(l:getting_started/pottery#jug)陶罐$()、$(l:waterflasks/recipes)水壶$()或$(l:mechanics/glassworking_applications#glass_bottle)玻璃瓶$()来饮用。陶罐只能装一次饮用量且易碎。玻璃瓶可以装几次，但也有破损的风险。水壶能装更多，并且会缓慢消耗耐久，而$(item)红钢水袋$()可以容纳20次饮用量且永不损坏。",
+            "item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "陈酿酒",
+            "text": "$(thing)陈酿酒$()是通过陈化普通酒制成的，而普通酒本身是将各种水果、面粉或其他原料与水一起放在木桶中制成的。作为额外效果，它们会影响你在聊天中的发言！",
+            "item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)陈酿啤酒：伤害吸收 II (20:00)$(li)陈酿苹果酒：速度提升 (5:20)$(li)陈酿朗姆酒：速度提升 II (2:40)$(li)陈酿清酒：伤害抗性 (5:20)$(li)陈酿伏特加：伤害抗性 II (2:40)$(li)陈酿玉米威士忌：急迫 (5:20)$(li)陈酿黑麦威士忌：急迫 (5:20)$(li)陈酿威士忌：急迫 II (2:40)$(li)陈酿蜂蜜酒：生命恢复 (5:20)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "葡萄酒",
+            "text": "$(thing)葡萄酒$()是另一种酒精饮料，其酿造方式与其他酒类不同。这是一个复杂但回报丰厚的过程，无法用机器自动化完成。查看$(l:firmalife/wine)酿酒$()条目以了解如何制作。",
+            "item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)红葡萄酒：力量 (5:20)$(li)白葡萄酒：凋灵抗性 (5:20)$(li)桃红葡萄酒：游泳加速 (5:20)$(li)起泡酒：跳跃提升 II (5:20)$(li)甜点酒：击退抗性 (5:20)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "茶",
+            "text": "$(thing)茶$()可以用某些干燥的植物冲泡。$(br2)它们提供短暂但有用的增益，并使你的体温升高4°C。非常适合冬天！",
+            "item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)薄荷茶：生命恢复 II (0:30)$(li)洋甘菊茶：伤害抗性 II (0:30)$(li)玫瑰果茶：伤害吸收 (0:30)$(li)荨麻茶：缓降 (0:30)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "特调饮品",
+            "text": "这是一个包含更多口味独特、效果各异的杂项饮品的类别。尽情享用吧！",
+            "item": "tfc_gurman:cocoa_bucket,tfc_gurman:coffee_bucket,tfc_gurman:nalivka_bucket,tfc_gurman:kvass_bucket,tfc_gurman:compote_bucket,tfc_gurman:lemonade_bucket"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)热可可：急迫 (0:30)，体温升高4°C$(li)咖啡：速度提升 (0:30)，体温升高4°C$(li)柠檬水：急迫 (0:30)，体温降低2°C$(li)果子酒：力量 (2:40)，体温降低2°C$(li)格瓦斯：力量 (1:20)，体温降低2°C$(li)糖渍水果：跳跃提升 II (0:30)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "奶类",
+            "text": "$(thing)奶$()可以从大多数雌性家畜身上获取，只需在亲密度足够高时，用木桶或金属桶右键点击它们即可。（如果无法挤奶，请确保桶没有堆叠！）$(br)虽然它不提供任何增益，但如果在进食后饮用，可以提供乳制品营养，并且之后可以制成奶酪。",
+            "item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gurman:ox_milk_bucket,tfc_gurman:sheep_milk_bucket,tfc_gurman:alpaca_milk_bucket"
+        },
+        {
+            "title": "温泉",
+            "text": "饮用$(thing)温泉$()可使体温升高4°C，并产生微小的生命恢复效果。站在温泉里同样能使你感到温暖。",
+            "item": "tfc:bucket/spring_water",
+            "type": "patchouli:spotlight"
+        },
+        {
+            "title": "海水",
+            "text": "饮用$(thing)海水$()不能补充水分，反而会让你更加口渴。体温过高也会让你更容易口渴。在海上迷路了？下雨时抬头看天，可以轻松补充水分！",
+            "type": "patchouli:spotlight",
+            "item": "tfc:bucket/salt_water"
+        },
+        {
+            "title": "液态冰泥",
+            "text": "饮用$(thing)冰泥$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
+            "type": "patchouli:spotlight",
+            "item": "gtceu:ice_bucket"
+        }
+    ]
+}

@@ -38,6 +38,8 @@ function registerTFGRockRecipes(event) {
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
+		const id = linuxUnfucker(`${x.loose}_to_${x.block}`);
+
 		event.shaped(x.block, [
 			'ABA',
 			'BAB',
@@ -45,9 +47,9 @@ function registerTFGRockRecipes(event) {
 		], {
 			A: x.loose,
 			B: 'tfc:mortar'
-		})
+		}).id(`tfg:shaped/${id}`)
 
-		event.recipes.gtceu.assembler(`${x.loose}_to_${x.block}`.replace(/[: ]/g, '_'))
+		event.recipes.gtceu.assembler(`tfg:${id}`)
 			.itemInputs(`5x ${x.loose}`)
 			.inputFluids(Fluid.of('gtceu:concrete', 72))
 			.itemOutputs(x.block)
@@ -74,23 +76,27 @@ function registerTFGRockRecipes(event) {
 	]
 
 	COBBLE_TO_LOOSE.forEach(x => {
-		event.shapeless(`4x ${x.loose}`, [x.cobble]);
+		const cobbleId = linuxUnfucker(x.cobble);
+
+		event.shapeless(`4x ${x.loose}`, [x.cobble])
+			.id(`tfg:shapeless/unpacking_${cobbleId}`);
 
 		event.shaped(x.cobble, [
 			'AA',
 			'AA'
 		], {
 			A: x.loose
-		});
+		})
+		.id(`tfg:shaped/packing_${cobbleId}`);
 
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${x.cobble}`.replace(/[: ]/g, '_'))
+		event.recipes.gtceu.packer(`tfg:unpacking_${cobbleId}`)
 			.itemInputs(`1x ${x.cobble}`)
 			.itemOutputs(`4x ${x.loose}`)
 			.circuit(1)
 			.duration(20)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.recipes.gtceu.packer(`tfc:gtceu/packer/packing_${x.cobble}`.replace(/[: ]/g, '_'))
+		event.recipes.gtceu.packer(`tfg:packing_${cobbleId}`)
 			.itemInputs(`4x ${x.loose}`)
 			.itemOutputs(`1x ${x.cobble}`)
 			.circuit(1)
@@ -116,15 +122,18 @@ function registerTFGRockRecipes(event) {
 	]
 
 	LOOSE_TO_BRICKS.forEach(x => {
-		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+		const id = linuxUnfucker(`${x.loose}_to_${x.brick}`);
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.shapeless(
 			x.brick, [x.loose, '#tfc:chisels']
 		))
+		.id(`tfg:shapeless/${id}`);
 
-		event.recipes.gtceu.cutter(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
+		event.recipes.gtceu.cutter(`tfg:${id}`)
 			.itemInputs(x.loose)
 			.itemOutputs(x.brick)
 			.duration(10)
-			.EUt(2)
+			.EUt(2);
 	})
 	// #endregion LOOSE_TO_BRICKS
 
@@ -146,6 +155,8 @@ function registerTFGRockRecipes(event) {
 	]
 
 	AQUEDUCTS.forEach(x => {
+		const id = linuxUnfucker(`${x.brick}_to_${x.aqueduct}`);
+
 		event.shaped(x.aqueduct, [
 			'A A',
 			'BAB'
@@ -153,14 +164,15 @@ function registerTFGRockRecipes(event) {
 			A: x.brick,
 			B: 'tfc:mortar'
 		})
+		.id(`tfg:shaped/${id}`);
 
-		event.recipes.gtceu.assembler(`${x.brick}_to_${x.aqueduct}`.replace(/:/g, '_'))
+		event.recipes.gtceu.assembler(`tfg:${id}`)
 			.itemInputs(`3x ${x.brick}`)
 			.circuit(3)
 			.inputFluids(Fluid.of('gtceu:concrete', 16))
 			.itemOutputs(x.aqueduct)
 			.duration(50)
-			.EUt(2)
+			.EUt(2);
 	})	
 	// #endregion AQUEDUCT
 
@@ -186,7 +198,7 @@ function registerTFGRockRecipes(event) {
 
 	COBBLE_TO_MOSSY.forEach(x => {
 
-		event.recipes.gtceu.assembler(`${x.mossy}_cobble_rocks_to_mossy_cobble`.replace(/: /g, '_'))
+		event.recipes.gtceu.assembler(`tfg:${linuxUnfucker(x.mossy)}_cobble_rocks_to_mossy_cobble`)
 			.itemInputs(x.cobble, '#tfc:compost_greens_low')
 			.circuit(0)
 			.inputFluids("#tfg:clean_water 144")
@@ -336,18 +348,22 @@ function registerTFGRockRecipes(event) {
 	]
 	
 	RAW_TO_POLISHED.forEach(x => {
-		event.recipes.tfc.chisel(`${x.polished}`, `${x.raw}`, 'smooth')
+		const id = linuxUnfucker(`${x.raw}_to_${x.polished}`);
 
-		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+		event.recipes.tfc.chisel(`${x.polished}`, `${x.raw}`, 'smooth')
+			.id(`tfg:chisel/${id}`);
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.shapeless(
 			x.polished, [x.raw, '#tfc:chisels']
 		))
+		.id(`tfg:shapeless/${id}`);
 
-		event.recipes.gtceu.laser_engraver(`${x.raw}_to_${x.polished}`.replace(/:/g, '_'))
+		event.recipes.gtceu.laser_engraver(`tfg:${id}`)
 			.itemInputs(x.raw)
 			.itemOutputs(x.polished)
 			.notConsumable('tfc:lens')
 			.duration(30)
-			.EUt(GTValues.VA[GTValues.ULV])
+			.EUt(GTValues.VA[GTValues.ULV]);
 	})
 
 	// #endregion RAW_TO_POLISHED
@@ -366,38 +382,42 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:glacio_stone_bricks',    cracked: 'ad_astra:cracked_glacio_stone_bricks'    },
 		{ raw: 'ad_astra:permafrost_bricks',      cracked: 'ad_astra:cracked_permafrost_bricks'      },
 		{ raw: 'gtceu:red_granite_bricks',        cracked: 'gtceu:cracked_red_granite_bricks'        }
-		
 	]
 
 	CRACKING.forEach(x => {
-		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+		const id = linuxUnfucker(`${x.raw}_to_${x.cracked}`);
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.shapeless(
 			x.cracked, [x.raw, '#tfc:hammers']
 		))
+		.id(`tfg:shapeless/${id}`);
 
-		event.recipes.gtceu.forge_hammer(`${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
+		event.recipes.gtceu.forge_hammer(`tfg:${id}`)
 			.itemInputs(x.raw)
 			.itemOutputs(x.cracked)
 			.duration(12)
-			.EUt(8)
+			.EUt(8);
 
 		event.recipes.greate.pressing(x.cracked, x.raw)
 			.recipeTier(0)
-			.id(`greate:pressing/${x.raw}_to_${x.cracked}`.replace(/:/g, '_'))
+			.id(`tfg:pressing/${id}`);
 	})
 	// #endregion CRACKING
 
 	// #region HAMMERING
 	// Defined in kubejs/startup_scripts/tfg/constants.js
 	global.HAMMERING.forEach(x => {
-		event.recipes.gtceu.forge_hammer(`${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
+		const id = linuxUnfucker(`${x.raw}_to_${x.hammered}`);
+
+		event.recipes.gtceu.forge_hammer(`tfg:${id}`)
 			.itemInputs(x.raw)
 			.itemOutputs(x.hammered)
 			.duration(x.duration)
-			.EUt(x.eu)
+			.EUt(x.eu);
 
 		event.recipes.greate.pressing(x.hammered, x.raw)
 			.recipeTier(x.eu <= 8 ? 0 : 1)
-			.id(`greate:pressing/${x.raw}_to_${x.hammered}`.replace(/[: ]/g, '_'))
+			.id(`tfg:pressing/${id}`);
 	})
 	// #endregion HAMMERING
 
@@ -877,79 +897,87 @@ function registerTFGRockRecipes(event) {
 
 	CUT_GRIND.forEach(x => {
 		if (x.raw != null && x.dust != null) {
-			try{
-				event.recipes.gtceu.macerator(x.raw.replace(/.*:/g, 'macerate_'))
-					.itemInputs(x.raw)
-					.itemOutputs(x.dust)
-					.duration(150)
-					.EUt(2)
-					.category(GTRecipeCategories.MACERATOR_RECYCLING)
-			} catch(e){ }
+			event.recipes.gtceu.macerator(`tfg:macerate_${linuxUnfucker(x.raw)}`)
+				.itemInputs(x.raw)
+				.itemOutputs(x.dust)
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		}
 		if (x.stair != null) {
 			if (x.raw != null) {
+				const id = linuxUnfucker(`${x.raw}_to_${x.stair}`);
+
 				event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
+					.id(`tfg:chisel/${id}`);
 
 				if (x.stonecutting) {
-					event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
+					event.stonecutting(x.stair, x.raw)
+						.id(`tfg:stonecutter/${id}`);
 				}
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(x.stair.replace(/.*:/g, 'macerate_'))
+				event.recipes.gtceu.macerator(`tfg:macerate_${linuxUnfucker(x.stair)}`)
 					.itemInputs(x.stair)
 					.itemOutputs(x.dust)
 					.duration(150)
 					.EUt(2)
-					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING);
 			}
 
 			if (x.loose != null) {
-				event.shapeless(`3x ${x.loose}`, [x.stair])
+				event.shapeless(`3x ${x.loose}`, [x.stair]);
 			}
 		}
 		if (x.slab != null) {
 			if (x.raw != null) {
-				event.recipes.tfc.chisel(x.slab, x.raw, 'slab').extraDrop(x.slab)
+				const id = linuxUnfucker(`${x.raw}_to_${x.slab}`);
+
+				event.recipes.tfc.chisel(x.slab, x.raw, 'slab')
+					.extraDrop(x.slab)
+					.id(`tfg:chisel/${id}`);
 				
 				if (x.stonecutting) {
-					event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
+					event.stonecutting(`2x ${x.slab}`, x.raw)
+						.id(`tfg:stonecutting/${id}`);
 				}
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(x.slab.replace(/.*:/g, 'macerate_'))
+				event.recipes.gtceu.macerator(`tfg:macerate_${linuxUnfucker(x.slab)}`)
 					.itemInputs(`2x ${x.slab}`)
 					.itemOutputs(x.dust)
 					.duration(150)
 					.EUt(2)
-					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING);
 			}
 
 			if (x.loose != null) {
-				event.shapeless(`2x ${x.loose}`, [x.slab])
+				event.shapeless(`2x ${x.loose}`, [x.slab]);
 			}
 		}
 		if (x.wall != null) {
 			if (x.raw != null) {
 				if (x.stonecutting) {
-					event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+					event.stonecutting(x.wall, x.raw)
+						.id(`tfg:stonecutting/${linuxUnfucker(x.raw)}_to_${linuxUnfucker(x.wall)}`)
 				}
 			}
 			if (x.slab != null) {
-				event.recipes.tfc.chisel(x.wall, x.slab, 'smooth')
+				event.recipes.tfc.chisel(x.wall, x.slab, 'smooth');
 			}
 
 			if (x.dust != null) {
-				event.recipes.gtceu.macerator(x.wall.replace(/.*:/g, 'macerate_'))
+				event.recipes.gtceu.macerator(`tfg:macerate_${linuxUnfucker(x.wall)}`)
 					.itemInputs(`2x ${x.wall}`)
 					.itemOutputs(x.dust)
 					.duration(150)
 					.EUt(2)
-					.category(GTRecipeCategories.MACERATOR_RECYCLING)
+					.category(GTRecipeCategories.MACERATOR_RECYCLING);
 			}
 			if (x.loose != null) {
-				event.shapeless(`2x ${x.loose}`, [x.wall])
+				event.shapeless(`2x ${x.loose}`, [x.wall]);
 			}
 		}
 	})
@@ -995,12 +1023,12 @@ function registerTFGRockRecipes(event) {
 	]
 
 	MACERATOR.forEach(x => {
-		event.recipes.gtceu.macerator(x.block.replace(/.*:/g, 'macerate_'))
+		event.recipes.gtceu.macerator(`tfg:macerate_${linuxUnfucker(x.block)}`)
 			.itemInputs(x.block)
 			.itemOutputs(x.dust)
 			.duration(150)
 			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING);
 	})
 	//#endregion
 
@@ -1027,7 +1055,9 @@ function registerTFGRockRecipes(event) {
 	STONECUTTER.forEach(set => {
 		set.forEach(block1 => {
 			set.forEach(block2 => {
-				if( block1 != block2 ){ event.stonecutting(block1, block2) }
+				if (block1 !== block2) {
+					event.stonecutting(block1, block2);
+				}
 			})
 		})
 	})
@@ -1075,14 +1105,18 @@ function registerTFGRockRecipes(event) {
 	]
 
 	PILLARS.forEach(x => {
+		const id = linuxUnfucker(`${x.raw}_to_${x.pillar}`);
+
 		event.shaped(`2x ${x.pillar}`, [
 			'A',
 			'A'
 		], {
 			A: x.raw
 		})
+		.id(`tfg:shaped/${id}`);
 
-		event.stonecutting(x.pillar, x.raw).id(`${x.raw}_to_${x.pillar}`.replace(/:/g, '_'))
+		event.stonecutting(x.pillar, x.raw)
+			.id(`tfg:stonecutting/${id}`);
 	})
 
 	// horizontal shaped recipes
@@ -1171,15 +1205,17 @@ function registerTFGRockRecipes(event) {
 	]
 	
 	ROCK_DUPING.forEach(x => {
+		const id = linuxUnfucker(x.block);
+
 		if (x.dimension != null) {
-			event.recipes.gtceu.rock_breaker(x.block)
+			event.recipes.gtceu.rock_breaker(`tfg:${id}`)
 				.notConsumable(x.block)
 				.itemOutputs(x.block)
 				.duration(16)
 				.EUt(7)
 				.dimension(x.dimension)
 		} else {
-			event.recipes.gtceu.rock_breaker(x.block)
+			event.recipes.gtceu.rock_breaker(`tfg:${id}`)
 				.notConsumable(x.block)
 				.itemOutputs(x.block)
 				.duration(16)
@@ -1221,14 +1257,14 @@ function registerTFGRockRecipes(event) {
 	];
 
 	MAGMA_BLOCKS.forEach(block => {
-		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${block.magma}`.replace(/:/g, '/'))
+		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${linuxUnfucker(block.magma)}`)
 			.itemInputs(`1x ${block.rock}`)
 			.inputFluids(Fluid.of('minecraft:lava', 250))
 			.itemOutputs(`1x ${block.magma}`)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.ULV])
 			
-		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${block.magma}`.replace(/:/g, "/"))
+		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${linuxUnfucker(block.magma)}`)
 			.itemInputs(`1x ${block.magma}`)
 			.outputFluids(Fluid.of('minecraft:lava', 250))
 			.itemOutputs(`1x ${block.rock}`)
