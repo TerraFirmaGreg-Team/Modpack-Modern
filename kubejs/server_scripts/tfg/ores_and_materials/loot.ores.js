@@ -79,9 +79,9 @@ const registerTFGOreLoots = (event) => {
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
 
-				let stoneTypeMaterial = global.GEOLOGY_MATERIALS[stoneType];
+				let stoneTypeMaterial = global.GEOLOGY_MATERIALS[stoneType === "pyroxenite" ? "blackstone" : stoneType];
 				if (stoneTypeMaterial === null) {
-					console.log(`unknown stone type: ${stoneType}`);
+					console.log(`unknown stone type: ${stoneTypeMaterial}`);
 				}
 
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)

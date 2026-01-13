@@ -454,15 +454,9 @@ const registerGTCEuMaterialModification = (event) => {
 	lyeFluidProperty.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of('tfc:lye').fluid, null);
 	GTMaterials.SodiumHydroxide.setProperty(PropertyKey.FLUID, lyeFluidProperty);
 
-	//let bismuthFluidProperty = new $FLUID_PROPERTY();
-	//bismuthFluidProperty.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder());
-	//GTMaterials.Bismuth.setProperty(PropertyKey.FLUID, bismuthFluidProperty);
-
 	// Components and formulas
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
-	GTMaterials.GraniteRed.setComponents([])
-	GTMaterials.GraniteRed.setFormula("?")
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
 }

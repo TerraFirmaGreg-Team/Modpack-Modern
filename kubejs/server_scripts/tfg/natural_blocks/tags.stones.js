@@ -3,7 +3,7 @@
 function registerTFGStoneItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
-	
+
 
 	// Brick Index
 	const BRICK_KEYS = [
@@ -34,7 +34,7 @@ function registerTFGStoneItemTags(event) {
 			}
 		});
 	});
-	
+
 	//#region Stone Dusts Tag
 	event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 	event.add('tfg:stone_dusts', 'tfg:sedimentary_clastic_dust')
@@ -47,22 +47,33 @@ function registerTFGStoneItemTags(event) {
 	event.add('tfg:stone_dusts', 'tfg:igneous_felsic_dust')
 	//#endregion
 
-	const SHAPES =    ['stairs', 'slab', 'wall']
+	const SHAPES = ['stairs', 'slab', 'wall']
 	const SHAPES_AA = ['stairs', 'slab']
 
-	const STONE_TYPES = {
-		deepslate:      "metamorphic",
-		blackstone:     "igneous_intrusive",
-		dripstone:      "sedimentary",
-		crackrack:      "igneous_intrusive",
-		basalt:         "igneous_extrusive",
-		moon:           "igneous_intrusive",
-		moon_deepslate: "igneous_intrusive",
-		mars:           "sedimentary",
-		venus:          "igneous_extrusive",
-		mercury:        "igneous_intrusive",
-		glacio:         "igneous_extrusive",
-		red_granite:    "igneous_intrusive"
+	const STONE_TFC_TAGS = {
+		"deepslate": "tfc:metamorphic_items",
+		"pyroxenite": "tfc:igneous_intrusive_items",
+		"dripstone": "tfc:sedimentary_items",
+		"crackrack": "tfc:igneous_intrusive_items",
+		"basalt": "tfc:igneous_extrusive_items",
+		"calcite": "tfc:sedimentary_items",
+		"obsidian": "tfc:igneous_extrusive_items",
+
+		"moon_stone": "tfc:igneous_intrusive_items",
+		"moon_deepslate": "tfc:igneous_intrusive_items",
+		"glacio_stone": "tfc:igneous_extrusive_items",
+
+		"mars_stone": "tfc:sedimentary_items",
+		"venus_stone": "tfc:igneous_extrusive_items",
+		"red_granite": "tfc:igneous_intrusive_items",
+
+		"sandy_jadestone": "tfc:igneous_extrusive_items",
+		"flavolite": "tfc:igneous_extrusive_items",
+		"sulphuric_rock": "tfc:igneous_extrusive_items",
+		"scoria": "tfc:igneous_extrusive_items",
+		"geyserite": "tfc:sedimentary_items",
+
+		"mercury_stone": "tfc:igneous_intrusive_items",
 	}
 
 	function getStoneType(stone) {
@@ -73,7 +84,7 @@ function registerTFGStoneItemTags(event) {
 	const AA_REGULAR_STONES = ['moon', 'mars', 'venus', 'mercury', 'glacio']
 
 	// #region Nether blocks
-	 
+
 	// Deepslate (Migmatite) [Metamorphic]
 	const create_deepslate_blocks = Ingredient.of('#create:stone_types/deepslate').itemIds.toArray().map(String);
 	create_deepslate_blocks.forEach(block => {
@@ -90,7 +101,7 @@ function registerTFGStoneItemTags(event) {
 	})
 
 	event.add('forge:smooth_stone', 'minecraft:polished_deepslate')
-	event.add(`tfc:${STONE_TYPES.deepslate}_items`, 'minecraft:polished_deepslate')	
+	event.add(`tfc:${STONE_TYPES.deepslate}_items`, 'minecraft:polished_deepslate')
 	event.add('tfc:rock/smooth', 'minecraft:polished_deepslate')
 	event.add('create:stone_types/deepslate', 'minecraft:polished_deepslate')
 
@@ -173,7 +184,7 @@ function registerTFGStoneItemTags(event) {
 	event.add('tfc:rock/bricks', 'minecraft:chiseled_polished_blackstone')
 	event.add('tfc:rock/chiseled_bricks', 'minecraft:chiseled_polished_blackstone')
 
-	event.add(`tfc:${STONE_TYPES.blackstone}_items`, 'beneath:blackstone_aqueduct')	
+	event.add(`tfc:${STONE_TYPES.blackstone}_items`, 'beneath:blackstone_aqueduct')
 
 	// Dripstone (Travertine) [Sedimentary]
 	const create_dripstone_blocks = Ingredient.of('#create:stone_types/dripstone').itemIds.toArray().map(String);
@@ -219,11 +230,11 @@ function registerTFGStoneItemTags(event) {
 		event.add(`tfc:${STONE_TYPES.dripstone}_items`, `create:small_dripstone_brick_${shape}`)
 		event.add(`tfg:brick_${shape}`.replace(/ss/g, 's'), `create:small_dripstone_brick_${shape}`)
 	})
- 
+
 	// Crackrack / "Nether" (Keratophyre) [Igneous Intrusive]
 	event.add('forge:stone', 'beneath:crackrack')
 	event.add(`tfc:${STONE_TYPES.crackrack}_items`, 'beneath:crackrack')
-	
+
 	event.add('forge:stone_bricks', 'minecraft:nether_bricks')
 	event.add(`tfc:${STONE_TYPES.crackrack}_items`, 'minecraft:nether_bricks')
 	event.add('tfc:rock/bricks', 'minecraft:nether_bricks')
@@ -248,11 +259,11 @@ function registerTFGStoneItemTags(event) {
 	event.add(`tfc:${STONE_TYPES.basalt}_items`, 'minecraft:basalt')
 
 	event.add('forge:smooth_stone', 'minecraft:smooth_basalt')
-	event.add(`tfc:${STONE_TYPES.basalt}_items`, 'minecraft:smooth_basalt')	
+	event.add(`tfc:${STONE_TYPES.basalt}_items`, 'minecraft:smooth_basalt')
 	event.add('tfc:rock/smooth', 'minecraft:smooth_basalt')
 
 	event.add('forge:smooth_stone', 'minecraft:polished_basalt')
-	event.add(`tfc:${STONE_TYPES.basalt}_items`, 'minecraft:polished_basalt')	
+	event.add(`tfc:${STONE_TYPES.basalt}_items`, 'minecraft:polished_basalt')
 	event.add('tfc:rock/smooth', 'minecraft:polished_basalt')
 	// #endregion
 
@@ -267,7 +278,7 @@ function registerTFGStoneItemTags(event) {
 		})
 
 		event.add('forge:cobblestone', `ad_astra:${stone}_cobblestone`)
-		event.add('forge:cobblestone/normal',  `ad_astra:${stone}_cobblestone`)
+		event.add('forge:cobblestone/normal', `ad_astra:${stone}_cobblestone`)
 		event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:${stone}_cobblestone`)
 
 		SHAPES_AA.forEach(shape => {
@@ -287,7 +298,7 @@ function registerTFGStoneItemTags(event) {
 		event.add('forge:stone_bricks', `ad_astra:${stone}_stone_bricks`)
 		event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:${stone}_stone_bricks`)
 		event.add('tfc:rock/bricks', `ad_astra:${stone}_stone_bricks`)
-		
+
 		SHAPES.forEach(shape => {
 			event.add(`tfc:${getStoneType(stone)}_items`, `ad_astra:${stone}_stone_brick_${shape}`)
 			event.add(`tfg:brick_${shape}`.replace(/ss/g, 's'), `ad_astra:${stone}_stone_brick_${shape}`)
@@ -314,7 +325,7 @@ function registerTFGStoneItemTags(event) {
 	// Moon Deepslate (Norite) [Igneous Intrusive]
 	event.add('forge:stone', 'ad_astra:moon_deepslate')
 	event.add(`tfc:${STONE_TYPES.moon_deepslate}_items`, 'ad_astra:moon_deepslate')
-	
+
 	// Red Granite [Igneous Intrusive]
 	event.add('forge:stone', 'gtceu:red_granite')
 	event.add(`tfc:${STONE_TYPES.red_granite}_items`, 'gtceu:red_granite')
@@ -384,11 +395,11 @@ function registerTFGStoneItemTags(event) {
 	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_crackrack_slab')
 	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_moon_deepslate_slab')
 	event.add('forge:smooth_stone_slabs', 'tfg:rock/polished_red_granite_slab')
-	
+
 	// Permafrost (???) [NA]
 	event.remove('tfc:metamorphic_rock', 'tfg:loose/permafrost')
 	event.add('forge:stone', 'ad_astra:permafrost')
-	
+
 	event.add('forge:smooth_stone', 'ad_astra:polished_permafrost')
 	event.add('tfc:rock/smooth', 'ad_astra:polished_permafrost')
 

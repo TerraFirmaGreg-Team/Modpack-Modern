@@ -10,7 +10,6 @@ function registerTFCStoneRecipes(event) {
 	global.TFC_STONE_TYPES.forEach(stone => {
 
 		let stoneMaterial = TFGHelpers.getMaterial(stone);
-		let stoneDust = ChemicalHelper.get(TagPrefix.dust, stoneMaterial, 1)
 
 		// Brick (item)
 		event.recipes.gtceu.cutter(`tfg:tfc/${stone}_loose_to_brick`)
@@ -257,6 +256,8 @@ function registerTFCStoneRecipes(event) {
 		//
 		//
 		//#region Whole Blocks
+		
+		let stoneDust = ChemicalHelper.get(TagPrefix.dust, global.GEOLOGY_MATERIALS[stone], 1);
 
 		// Raw
 		event.recipes.gtceu.macerator(`raw_${stone}_to_dust`)

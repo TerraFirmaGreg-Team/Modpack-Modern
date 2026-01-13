@@ -2,6 +2,10 @@
 "use strict";
 
 const registerTFGRockMaterials = (event) => {
+
+	// Specialized icon sets for TFC's own
+	modifyTFGIconSets(event)
+
 	const registerStoneMaterial = (rockType, color, components) =>
 		event.create(`tfg:${rockType}`)
 			.color(color)
@@ -12,26 +16,32 @@ const registerTFGRockMaterials = (event) => {
 				GTMaterialFlags.MORTAR_GRINDABLE,
 				GTMaterialFlags.NO_SMASHING,
 				GTMaterialFlags.NO_SMELTING,
-				GTMaterialFlags.DISABLE_DECOMPOSITION
-			)
+				GTMaterialFlags.DISABLE_DECOMPOSITION);
 
-	/* Stone Types Materials */
-	const clastic = registerStoneMaterial('sedimentary_clastic', 0xAF9377, ['quartzite', 'potassium_feldspar'])
-	const carbonate = registerStoneMaterial('sedimentary_carbonate', 0xADA67A, ['quartzite', 'calcite'])
-	const organic = registerStoneMaterial('sedimentary_organic', 0xA8706B, ['flint', 'unknown'])
+	// event.create() returns a material builder, not the actual material
+	registerStoneMaterial('sedimentary_clastic', 0xAF9377, ['quartzite', 'potassium_feldspar']);
+	const clastic = GTMaterials.get('tfg:sedimentary_clastic');
+	registerStoneMaterial('sedimentary_carbonate', 0xADA67A, ['quartzite', 'calcite']);
+	const carbonate = GTMaterials.get('tfg:sedimentary_carbonate');
+	registerStoneMaterial('sedimentary_organic', 0xA8706B, ['flint', 'unknown']);
+	const organic = GTMaterials.get('tfg:sedimentary_organic');
 
-	const meta = registerStoneMaterial('metamorphic', 0x876981, ['marble', 'deepslate'])
+	registerStoneMaterial('metamorphic', 0x876981, ['marble', 'deepslate']);
+	const metamorphic = GTMaterials.get('tfg:metamorphic');
 
-	const ultramafic = registerStoneMaterial('igneous_ultramafic', 0x45474D, ['quartzite', 'blackstone'])
-	const mafic = registerStoneMaterial('igneous_mafic', 0x525D6B, ['quartzite', 'basalt'])
-	const intermediate = registerStoneMaterial('igneous_intermediate', 0x71818A, ['quartzite', 'andesite'])
-	const felsic = registerStoneMaterial('igneous_felsic', 0x97B2BF, ['quartzite', 'granite_red'])
+	registerStoneMaterial('igneous_ultramafic', 0x45474D, ['blackstone']);
+	const ultramafic = GTMaterials.get('tfg:igneous_ultramafic');
+	registerStoneMaterial('igneous_mafic', 0x525D6B, ['basalt']);
+	const mafic = GTMaterials.get('tfg:igneous_mafic');
+	registerStoneMaterial('igneous_intermediate', 0x71818A, ['andesite']);
+	const intermediate = GTMaterials.get('tfg:igneous_intermediate');
+	registerStoneMaterial('igneous_felsic', 0x97B2BF, ['granite_red']);
+	const felsic = GTMaterials.get('tfg:igneous_felsic');
 
 	global.GEOLOGY_MATERIALS = {
 		gabbro: mafic,
 		diorite: intermediate,
 		granite: felsic,
-		granite_red: felsic,
 		basalt: mafic,
 		andesite: intermediate,
 		dacite: intermediate,
@@ -43,37 +53,146 @@ const registerTFGRockMaterials = (event) => {
 		dolomite: carbonate,
 		chalk: carbonate,
 		chert: organic,
-		slate: meta,
-		phyllite: meta,
-		schist: meta,
-		gneiss: meta,
-		marble: meta,
-		quartzite: meta,
-		tuff: felsic,
+		slate: metamorphic,
+		phyllite: metamorphic,
+		schist: metamorphic,
+		gneiss: metamorphic,
+		marble: metamorphic,
+		quartzite: metamorphic,
+
+		deepslate: metamorphic,
 		dripstone: carbonate,
-		deepslate: meta,
-		pyroxenite: ultramafic,
+		blackstone: ultramafic,
 		crackrack: intermediate,
 		calcite: carbonate,
+
 		moon_stone: mafic,
 		moon_deepslate: mafic,
+		glacio_stone: intermediate,
+
 		mars_stone: clastic,
 		venus_stone: felsic,
-		mercury_stone: ultramafic,
-		glacio_stone: intermediate,
+		granite_red: felsic,
+
+		tuff: felsic,
 		flavolite: felsic,
 		sandy_jadestone: ultramafic,
 		sulphuric_rock: mafic,
 		brimstone: organic,
 		scoria: mafic,
-		geyserite: organic
+		geyserite: organic,
+
+		mercury_stone: ultramafic,
 	}
 
-	// Specialized icon sets for TFC's own
-	modifyTFGIconSets(event)
+	function generateForms(id, pattern, existingBlock = null, mossy = null, cracked = null) {
+		let replaced = pattern.replace('%s', id);
+		let obj = {
+			block: existingBlock ?? `${replaced}`,
+			stair: existingStair ?? `${replaced}_stairs`,
+			slab: existingSlab ?? `${replaced}_slab`,
+			wall: existingWall ?? `${replaced}_wall`
+		};
 
-	/*
-	ROCKS:
+		if (mossy !== null) {
+			obj.mossy = mossy;
+		}
+		if (cracked !== null) {
+			obj.cracked = cracked;
+		}
+
+		return obj;
+	}
+
+	function generateMissing(id, table) {
+		if (table.hardened === undefined)
+			table.hardened = `tfg:rock/hardened_${id}`;
+		if (table.gravel === undefined)
+			table.gravel = `tfg:rock/gravel_${id}`;
+		if (table.loose === undefined)
+			table.loose = `tfg:loose/${id}`;
+		if (table.brick === undefined)
+			table.brick = `tfg:brick/${id}`;
+		if (table.support === undefined)
+			table.support = `tfg:${id}_support`;
+		if (table.aqueduct === undefined)
+			table.aqueduct = `tfg:rock/aqueduct_${id}`;
+
+		return table;
+	}
+
+	global.BIG_ROCK_TABLE = {
+		"deepslate": generateMissing('deepslate', {
+			material: global.GEOLOGY_MATERIALS.deepslate,
+			composition: 'tfc:metamorphic_items',
+			chiseled: 'minecraft:chiseled_deepslate',
+			support: 'tfg:migmatite_support',
+			pillar: 'create:deepslate_pillar',
+			pillar2: 'create:layered_deepslate',
+			createTag: 'create:stone_types/deepslate',
+			raw: generateForms('deepslate', 'tfg:rock/%s', 'minecraft:deepslate'),
+			cobble: generateForms('deepslate', 'minecraft:cobbled_%s', null,
+				generateForms('deepslate', 'tfg:rock/mossy_cobble_%')),
+			bricks: generateForms('deepslate', 'minecraft:%s_brick', 'minecraft:deepslate_bricks',
+				generateForms('deepslate', 'tfg:rock/mossy_bricks_%s'),
+				generateForms('deepslate', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_deepslate_bricks')),
+			polished: generateForms('deepslate', 'minecraft:polished_%s'),
+			stonecutting: [
+				generateForms('deepslate', 'minecraft:%s_tile', 'minecraft:deepslate_tiles', null, 
+					generateForms('deepslate', 'tfg:rock/cracked_tiles_%s', 'minecraft:cracked_deepslate_tiles')),
+				generateForms('deepslate', 'create:cut_%s'),
+				generateForms('deepslate', 'create:polished_cut_%s'),
+				generateForms('deepslate', 'create:cut_%s_brick', 'create:cut_deepslate_bricks'),
+				generateForms('deepslate', 'create:small_%s_brick', 'create:small_deepslate_bricks')
+			]
+		}),
+		"dripstone": generateMissing('dripstone', {
+			material: global.GEOLOGY_MATERIALS.dripstone,
+			composition: 'tfc:sedimentary_items',
+			support: 'tfg:travertine_support',
+			pillar: 'create:dripstone_pillar',
+			pillar2: 'create:layered_dripstone',
+			createTag: 'create:stone_types/dripstone',
+			raw: generateForms('dripstone', 'tfg:rock/%s', 'minecraft:dripstone_block'),
+			cobble: generateForms('dripstone', 'tfg:rock/cobble_%s', null,
+				generateForms('dripstone', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('dripstone', 'create:cut_%s_brick', 'create:cut_dripstone_bricks',
+				generateForms('dripstone', 'tfg:rock/mossy_bricks_%s'),
+				generateForms('dripstone', 'tfg:rock/cracked_bricks_%s')),
+			polished: generateForms('dripstone', 'create:cut_%s'),
+			stonecutting: [
+				generateForms('dripstone', 'create:polished_cut_%s'),
+				generateForms('dripstone', 'create:small_%s_brick', 'create:small_dripstone_bricks')
+			]
+		}),
+		"blackstone": generateMissing('blackstone', {
+			material: global.GEOLOGY_MATERIALS.blackstone,
+			composition: 'tfc:igneous_intrusive_items',
+			support: 'tfg:pyroxenite_support',
+			pillar: 'beneath:ancient_altar',
+			loose: 'beneath:blackstone_pebble',
+			brick: 'beneath:blackstone_brick',
+			aqueduct: 'beneath:blackstone_aqueduct',
+			chiseled: 'minecraft:chiseled_polished_blackstone',
+			raw: generateForms('blackstone', 'minecraft:%s'),
+			cobble: generateForms('blackstone', 'tfg:rock/cobble_%s', null,
+				generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('blackstone', 'minecraft:polished_%s_brick', 'minecraft:polished_blackstone_bricks', 
+				generateForms('blackstone', 'tfg:rock/mossy_bricks_%s'),
+				generateForms('blackstone', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_polished_blackstone_bricks')),
+			polished: generateForms('blackstone', 'minecraft:polished_%s')
+		})
+	}
+
+	global.TFC_STONE_TYPES.forEach(tfcRock => {
+		global.BIG_ROCK_TABLE[tfcRock] = {
+			material: global.GEOLOGY_MATERIALS[tfcRock],
+			isTFC: true,
+			support: `tfg:${tfcRock}_support`
+		}
+	})
+
+	/* ROCKS:
 
 	igneous:
 	mafic = rich in magnesium and iron
