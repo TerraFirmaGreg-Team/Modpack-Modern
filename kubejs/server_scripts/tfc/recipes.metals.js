@@ -48,68 +48,6 @@ function registerTFCMetalsRecipes(event) {
 
 	//#endregion
 
-
-	//#region Фикс рецептов колоколов
-
-	//#region Из золота
-
-	event.recipes.tfc.casting(`minecraft:bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:gold', 144), 1)
-		.id(`tfc:casting/gold_bell`)
-
-	event.recipes.tfc.heating(`minecraft:bell`, 1060)
-		.resultFluid(Fluid.of('gtceu:gold', 144))
-		.id(`tfc:heating/gold_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Gold, 144)),
-		[
-			Fluid.of(GTMaterials.Gold.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Gold.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#region Из латуни
-
-	event.recipes.tfc.casting(`tfc:brass_bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:brass', 144), 1)
-		.id(`tfc:casting/brass_bell`)
-
-	event.recipes.tfc.heating(`tfc:brass_bell`, 930)
-		.resultFluid(Fluid.of('gtceu:brass', 144))
-		.id(`tfc:heating/brass_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Brass, 144)),
-		[
-			Fluid.of(GTMaterials.Brass.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Brass.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#region Из бронзы
-
-	event.recipes.tfc.casting(`tfc:bronze_bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:bronze', 144), 1)
-		.id(`tfc:casting/bronze_bell`)
-
-	event.recipes.tfc.heating(`tfc:bronze_bell`, 930)
-		.resultFluid(Fluid.of('gtceu:bronze', 144))
-		.id(`tfc:heating/bronze_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Bronze, 144)),
-		[
-			Fluid.of(GTMaterials.Bronze.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Bronze.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#endregion
-
 	//#region Рецепты ковки TFC слитков в GT машинах
 
 	// Сырая крица -> Укрепленная крица

@@ -8,9 +8,10 @@
 const registerTFCRecipes = (event) => {
 
 	removeTFCRecipes(event)
-	registerTFCMaterialsRecipes(event)
 	registerTFCMetalsRecipes(event)
 	registerTFCDyeRecipes(event)
+
+	event.remove({ mod: 'tfc', type: 'tfc:casting' });
 
 	// Добавление рецептов
 	const TFC_QUERN_POWDER_RECIPE_COMPONENTS = /** @type {const} */ ([
