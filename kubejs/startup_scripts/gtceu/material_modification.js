@@ -3,13 +3,13 @@
 
 const registerGTCEuMaterialModification = (event) => {
 
-
 	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
 	const $INGOT_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
 	const $DUST_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
 	const $BLAST_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
+	const $FLUID_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
@@ -18,6 +18,7 @@ const registerGTCEuMaterialModification = (event) => {
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+	const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
 
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
@@ -30,7 +31,6 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_BELL,
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
-		HAS_SMALL_NATIVE_TFC_ORE,
 		GENERATE_DUSTY_ORES,
 	} = TFGMaterialFlags
 
@@ -49,9 +49,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FOIL,
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
-		NO_ORE_SMELTING,
-		DISABLE_DECOMPOSITION,
-		DISABLE_MATERIAL_RECIPES
+		NO_ORE_SMELTING
 	} = $MATERIAL_FLAGS
 
 	const metalTooling = [
@@ -89,7 +87,6 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.CROWBAR,
 	]
 
-	/* TFC Проперти для материалов */
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
 	// OR			= (forging temp, welding temp, melt temp, tier)
@@ -119,7 +116,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Iron.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3));
 
 	GTMaterials.Hematite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.YellowLimonite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Limonite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
 	GTMaterials.Magnetite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
 	GTMaterials.Pyrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
 	GTMaterials.Goethite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
@@ -156,26 +153,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Pollucite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1540, 1540, 1540, AlSi, 1, 25))
 
 
-	GTMaterials.Gold.addFlags(GENERATE_BELL);
-	GTMaterials.Brass.addFlags(GENERATE_BELL);
-	GTMaterials.Bronze.addFlags(GENERATE_BELL);
-
-	//
-	//
-	//        /* Имеют двойные слитки */
-	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
-	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
-
-	//#region Generate Dusty Ores for Infinite Ores
-
+	// Generate Dusty Ores for Infinite Ores
 	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.CertusQuartz.addFlags(GENERATE_DUSTY_ORES);
@@ -191,9 +169,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
 
-	//#endregion
-	//
-	//		  /* Castable stuff */
+	// Castable stuff 
 	GTMaterials.Copper.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.BismuthBronze.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.BlackBronze.addFlags(CAN_BE_UNMOLDED);
@@ -211,8 +187,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Lead.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Potin.addFlags(CAN_BE_UNMOLDED);
 	GTMaterials.Iron.addFlags(CAN_BE_UNMOLDED);
-	//
-	//        /* Имеют инструменты, броню TFC, двойные слитки */
+
+	// TFC tool tiers
 	GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
@@ -222,25 +198,34 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlackSteel.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_ROTOR, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.RedSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	GTMaterials.BlueSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
-	//
-	//        /* Имеют маленькие куски руды TFC */
+
+	// TFC ores
 	GTMaterials.Bismuth.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Cassiterite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Garnierite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Hematite.addFlags(HAS_SMALL_TFC_ORE);
-	GTMaterials.YellowLimonite.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Limonite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Magnetite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Malachite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Tetrahedrite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Chromite.addFlags(HAS_SMALL_TFC_ORE);
-	//
-	//        /* Имеют маленькие чистые куски руды TFC */
-	GTMaterials.Copper.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
-	GTMaterials.Gold.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
-	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
-	//
-	//        /* Имеют двойные слитки */
+	GTMaterials.Copper.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Gold.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Silver.addFlags(HAS_SMALL_TFC_ORE);
+
+	// Other materials that are compatible with TFC
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
+	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
@@ -248,8 +233,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, );
 	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
-	//
-	//		  /* Superconductors */
+
+	// Superconductors
 	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
 	GTMaterials.MagnesiumDiboride.addFlags(GENERATE_FINE_WIRE);
 	GTMaterials.MercuryBariumCalciumCuprate.addFlags(GENERATE_FINE_WIRE);
@@ -259,17 +244,30 @@ const registerGTCEuMaterialModification = (event) => {
 	//GTMaterials.UraniumRhodiumDinaquadide.addFlags();
 	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
 	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
-	//
-	//        /* Другое (Other) */
 
-	// TODO: Exception needs to check the wizardry
+	// Ores
 	GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
-
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-		
+
+	let rose_quartz = $GreateMaterials.RoseQuartz;
+	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
+
+	// Change byproducts so you can't get certus from normal quartzite
+	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
+	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
+
+	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
+	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+	
+	// Other flags
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
+
+	GTMaterials.Gold.addFlags(GENERATE_BELL);
+	GTMaterials.Brass.addFlags(GENERATE_BELL);
+	GTMaterials.Bronze.addFlags(GENERATE_BELL);
 
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
@@ -307,7 +305,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
 	GTMaterials.SterlingSilver.addFlags(GENERATE_RING);
 
-	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
+	GTMaterials.Bismuth.addFlags(GENERATE_PLATE, GENERATE_ROD, GENERATE_BOLT_SCREW);
+	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE);
 
 	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE, GENERATE_SPRING);
@@ -318,7 +317,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
 	// Hide ore processing tab for plutonium
-	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
+	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
 
 	// Unhiding elements
@@ -326,7 +325,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
 	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, NO_ORE_SMELTING);
-
+	
 	// Tools
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
 		GTToolType.AXE,
@@ -358,10 +357,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
-	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.ALLOY_BLAST);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
-	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ALLOY_BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
@@ -390,48 +387,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
 	GTMaterials.BlueSteel.getProperty(PropertyKey.BLAST).setBlastTemperature(1000)
 
-	// Change byproducts so you can't get certus from normal quartzite
-	GTMaterials.Quartzite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.NetherQuartz, GTMaterials.Barite, GTMaterials.NetherQuartz);
-	GTMaterials.CertusQuartz.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.CertusQuartz, GTMaterials.Quartzite, GTMaterials.CertusQuartz);
-
-	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
-	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
-	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
-
-	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.PotassiumFeldspar, GTMaterials.Biotite, GTMaterials.Quartzite);
-	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Magnetite, GTMaterials.Biotite, GTMaterials.Magnesia);
-	GTMaterials.Bismuth.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Cassiterite, GTMaterials.Silver, GTMaterials.Lead, GTMaterials.Silver);
-	GTMaterials.Bismuth.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.Mercury);
-
-	// Remove properties from some things
-	GTMaterials.Sculk.getProperties().removeProperty(PropertyKey.DUST);
-	GTMaterials.EchoShard.getProperties().removeProperty(PropertyKey.DUST);
-	GTMaterials.EchoShard.getProperties().removeProperty(PropertyKey.GEM);
-	GTMaterials.EchoShard.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.EnderEye.getProperties().removeProperty(PropertyKey.GEM);
-	GTMaterials.EnderEye.getProperties().removeProperty(PropertyKey.DUST);
-	GTMaterials.EnderEye.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.DUST);
-	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.INGOT);
-
-	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE);
-	GTMaterials.Molybdenum.getProperties().removeProperty(PropertyKey.ORE);
-	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT);
-	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID);
-	GTMaterials.Sugar.getProperties().removeProperty(PropertyKey.GEM);
-	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM);
-
-	// Can't remove the dust property from these without GTM crashing
-	GTMaterials.Andesite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Granite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.GraniteRed.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Diorite.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Marble.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Deepslate.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Blackstone.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Netherrack.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-	GTMaterials.Tuff.addFlags(DISABLE_MATERIAL_RECIPES, DISABLE_MATERIAL_RECIPES);
-
+	// BLAST property
+	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
+	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
+	
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -443,7 +402,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.setMaterialSecondaryARGB(0xE12323)
 	GTMaterials.BlueSteel.setMaterialARGB(0xA0B6EC)
 	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x2B5CD8)
-	
 	GTMaterials.Bismuth.setMaterialARGB(0x66847E)
 	GTMaterials.Bismuth.setMaterialSecondaryARGB(0x25465B)
 	GTMaterials.Iron.setMaterialARGB(0x503d32)
@@ -477,30 +435,34 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 	GTMaterials.Thorium.setMaterialARGB(0xc898a0)
 	GTMaterials.Thorium.setMaterialSecondaryARGB(0xad6d9c)
+	GTMaterials.GraniteRed.setMaterialARGB(0x974B3C)
+	GTMaterials.GraniteRed.setMaterialSecondaryARGB(0x632117)
 	GTMaterials.RhodiumPlatedPalladium.setMaterialARGB(0xFFC2EC)
 	GTMaterials.Rhenium.setMaterialARGB(0x8cb07f)
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
-	GTMaterials.Diamond.setMaterialARGB(0x62F7E5)
+	GTMaterials.Diamond.setMaterialARGB(0x4AEDD9)
 	GTMaterials.Diamond.setMaterialSecondaryARGB(0x1AAAA7)
 
-	
+	// Fluids
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
 		let material = GTMaterials.get(`gtceu:${colorName}_dye`);
 		let property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
 
+	let lyeFluidProperty = new $FLUID_PROPERTY();
+	lyeFluidProperty.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of('tfc:lye').fluid, null);
+	GTMaterials.SodiumHydroxide.setProperty(PropertyKey.FLUID, lyeFluidProperty);
 
-	let rose_quartz = $GreateMaterials.RoseQuartz;
-	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
-	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+	//let bismuthFluidProperty = new $FLUID_PROPERTY();
+	//bismuthFluidProperty.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder());
+	//GTMaterials.Bismuth.setProperty(PropertyKey.FLUID, bismuthFluidProperty);
 
-	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
-	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
-	
+	// Components and formulas
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
+	GTMaterials.GraniteRed.setComponents([])
+	GTMaterials.GraniteRed.setFormula("?")
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
 }

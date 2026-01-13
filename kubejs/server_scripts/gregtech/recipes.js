@@ -7,7 +7,6 @@
  */
 const registerGTCEURecipes = (event) => {
 
-	registerGTCEUMetalRecipes(event)
 	registerGTCEURecyclingRecipes(event)
 	registerGTCEuMachineRecipes(event)
 

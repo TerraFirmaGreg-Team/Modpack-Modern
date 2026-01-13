@@ -778,6 +778,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_vine' })
 
 	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
+	event.remove({ id: 'gtceu:extractor/extract_sodium_hydroxide_dust' })
 
 	// who the hell is grinding metal ingots with their bare hands?
 	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
