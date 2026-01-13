@@ -643,5 +643,5 @@ function generateHammeringRecipeFromItem(event, input, output, blows, anvil) {
 	event.recipes.vintageimprovements.hammering(output, input)
 		.anvilBlock(`tfc:metal/anvil/${anvil}`)
 		.hammerBlows(Math.max(blows, 1))
-		.id(`tfg:vi/hammer/${input.replace(/[#:]/g, '_')}_on_${anvil}_anvil`)
+		.id(`tfg:vi/hammer/${linuxUnfucker(input)}_on_${anvil}_anvil`)
 }

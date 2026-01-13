@@ -331,7 +331,7 @@ function registerTFGBiochemRecipes(event) {
 	];
 
 	lab_casting.forEach(entry => {
-		event.recipes.gtceu.fluid_solidifier(`tfg:lab_casting/${entry.output.replace(':', '_')}`)
+		event.recipes.gtceu.fluid_solidifier(`tfg:lab_casting/${linuxUnfucker(entry.output)}`)
 			.inputFluids(Fluid.of('gtceu:borosilicate_glass', entry.fluid_qty))
 			.notConsumable(entry.mold)
 			.itemOutputs(entry.output)
@@ -429,7 +429,7 @@ function registerTFGBiochemRecipes(event) {
 	 * @param {number} organicAmount - Amount of the organic input.
 	 */
 	function deccellularizationRecipe(event, organicType, organicId, organicAmount) {
-		let recipe = event.recipes.gtceu.bioreactor(`tfg:decellularization/${organicId.replace(':', '_')}`)
+		let recipe = event.recipes.gtceu.bioreactor(`tfg:decellularization/${linuxUnfucker(organicId)}`)
 			.inputFluids(
 				Fluid.of('tfg:sodium_dodecyl_sulfate', 200),
 				Fluid.of('gtceu:acetone', 1000),
@@ -530,7 +530,7 @@ function registerTFGBiochemRecipes(event) {
 		'gtceu:acetone'
 	];
 	gramStainSolvents.forEach(solvent => {
-		event.recipes.gtceu.large_chemical_reactor(`tfg:gram_stain_solvent_${solvent.replace(':', '_')}`)
+		event.recipes.gtceu.large_chemical_reactor(`tfg:gram_stain_solvent_${linuxUnfucker(solvent)}`)
 			.inputFluids(
 				Fluid.of('tfg:crystal_violet', 1000),
 				Fluid.of('tfc:red_dye', 1000),

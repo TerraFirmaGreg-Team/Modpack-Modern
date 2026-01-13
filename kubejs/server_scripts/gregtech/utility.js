@@ -500,28 +500,28 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	}
 
 	// Create recipes.
-	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))

@@ -405,6 +405,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/leafy_kelp' }).id('tfg:shaped/drying_mat_leafy_kelp')
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/winged_kelp' }).id('tfg:shaped/drying_mat_winged_kelp')
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfg:charnia' }).id('tfg:shaped/drying_mat_charnia')
 
 	// #endregion
 

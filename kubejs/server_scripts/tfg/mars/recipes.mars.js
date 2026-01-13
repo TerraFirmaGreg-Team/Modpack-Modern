@@ -233,4 +233,10 @@ function registerTFGMarsRecipes(event) {
 		.processingTime(1000)
 		.heated()
 		.id('tfg:vacuumizing/mars_latex')
+
+	event.recipes.tfc.heating('#tfg:charnia', 200)
+		.resultItem('3x tfc:powder/soda_ash')
+		.id('tfg:heating/charnia_to_soda')
+
+	event.smelting('3x tfc:powder/soda_ash', '#tfg:charnia').id('tfg:smelting/charnia_to_soda')
 }

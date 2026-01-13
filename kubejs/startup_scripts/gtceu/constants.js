@@ -25,6 +25,14 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lp_steam_solar_boiler",
     "gtceu:charcoal_pile_igniter",
 
+    // Fishers
+    "gtceu:lv_fisher",
+    "gtceu:mv_fisher",
+    "gtceu:hv_fisher",
+    "gtceu:ev_fisher",
+    "gtceu:iv_fisher",
+    "gtceu:luv_fisher",
+
     // Примитивная помпа (Primitive Pump)
     "gtceu:infinite_water_cover",
     "gtceu:ender_item_link_cover",
