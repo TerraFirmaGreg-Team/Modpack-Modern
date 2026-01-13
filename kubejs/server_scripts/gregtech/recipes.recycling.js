@@ -128,50 +128,45 @@ function registerGTCEURecyclingRecipes(event) {
 
 	TFGHelpers.registerMaterialInfo('minecraft:iron_door', { 'iron': 2 })
 
-	// #region Fix TFC hanging sign metal dupe for Macerator and Arc Furnace
-
+	// #region Hanging Signs
 	const SIGN_METALS = [
-		GTMaterials.Copper,
-		GTMaterials.Bronze,
-		GTMaterials.BlackBronze,
-		GTMaterials.BismuthBronze,
-		GTMaterials.WroughtIron,
-		GTMaterials.Steel,
-		GTMaterials.BlackSteel,
-		GTMaterials.RedSteel,
-		GTMaterials.BlueSteel
-	];
+    	GTMaterials.Copper,
+    	GTMaterials.Bronze,
+    	GTMaterials.BlackBronze,
+    	GTMaterials.BismuthBronze,
+    	GTMaterials.WroughtIron,
+        GTMaterials.Steel,
+        GTMaterials.BlackSteel,
+        GTMaterials.RedSteel,
+        GTMaterials.BlueSteel
+    ];
 
-	SIGN_METALS.forEach(metal => {
-		// Arc furnace
-		global.TFC_WOOD_TYPES.forEach(wood => {
-			event.remove(`gtceu:arc_furnace/arc_wood/hanging_sign/${metal.getName()}/${wood}`)
-			event.recipes.gtceu.arc_furnace(`gtceu:arc_furnace/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`tfc:wood/hanging_sign/${metal.getName()}/${wood}`)
+    SIGN_METALS.forEach(metal => {
+		// Arc recycling
+		global.AFC_HARDWOOD_TYPES.concat(global.TFC_HARDWOOD_TYPES).forEach(wood => {
+			event.recipes.gtceu.arc_furnace(`tfg:arc_recycling/${metal.getName()}/${wood}`)
+				.itemInputs(`#tfg:hanging_sign/${metal.getName()}/hardwood`)
 				.itemOutputs('gtceu:tiny_ash_dust')
 				.chancedOutput(ChemicalHelper.get(TagPrefix.nugget, metal, 1), 3750, 0)
-				.inputFluids(Fluid.of('gtceu:oxygen', 12))
 				.duration(12)
 				.EUt(30)
 				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		})
 
-		global.AFC_WOOD_TYPES.forEach(wood => {
-			event.recipes.gtceu.arc_furnace(`gtceu:arc_furnace/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`afc:wood/hanging_sign/${metal.getName()}/${wood}`)
+		global.AFC_SOFTWOOD_TYPES.concat(global.TFC_SOFTWOOD_TYPES).forEach(wood => {
+			event.recipes.gtceu.arc_furnace(`tfg:arc_recycling/${metal.getName()}/${wood}`)
+				.itemInputs(`#tfg:hanging_sign/${metal.getName()}/softwood`)
 				.itemOutputs('gtceu:tiny_ash_dust')
 				.chancedOutput(ChemicalHelper.get(TagPrefix.nugget, metal, 1), 3750, 0)
-				.inputFluids(Fluid.of('gtceu:oxygen', 12))
 				.duration(12)
 				.EUt(30)
 				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		})
-
-		// Macerator
-		global.TFC_HARDWOOD_TYPES.forEach(wood => {
-			removeMaceratorRecipe(event, `macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`tfc:wood/hanging_sign/${metal.getName()}/${wood}`)
+		
+		// Macerating
+		global.AFC_HARDWOOD_TYPES.concat(global.TFC_HARDWOOD_TYPES).forEach(wood => {
+			event.recipes.gtceu.macerator(`tfg:macerating/hanging_sign/'${metal.getName()}/${wood}`)
+				.itemInputs(`#tfg:hanging_sign/${metal.getName()}/hardwood`)
 				.itemOutputs('gtceu:hardwood_dust')
 				.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, metal, 1), 3750, 0)
 				.duration(108)
@@ -179,30 +174,9 @@ function registerGTCEURecyclingRecipes(event) {
 				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		})
 
-		global.TFC_SOFTWOOD_TYPES.forEach(wood => {
-			removeMaceratorRecipe(event, `macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`tfc:wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemOutputs('gtceu:wood_dust')
-				.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, metal, 1), 3750, 0)
-				.duration(108)
-				.EUt(8)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		})
-
-		global.AFC_HARDWOOD_TYPES.forEach(wood => {
-			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`afc:wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemOutputs('gtceu:hardwood_dust')
-				.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, metal, 1), 3750, 0)
-				.duration(108)
-				.EUt(8)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		})
-
-		global.AFC_SOFTWOOD_TYPES.forEach(wood => {
-			event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal.getName()}/${wood}`)
-				.itemInputs(`afc:wood/hanging_sign/${metal.getName()}/${wood}`)
+		global.AFC_SOFTWOOD_TYPES.concat(global.TFC_SOFTWOOD_TYPES).forEach(wood => {
+			event.recipes.gtceu.macerator(`tfg:macerating/hanging_sign/'${metal.getName()}/${wood}`)
+				.itemInputs(`#tfg:hanging_sign/${metal.getName()}/softwood`)
 				.itemOutputs('gtceu:wood_dust')
 				.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, metal, 1), 3750, 0)
 				.duration(108)
@@ -212,7 +186,7 @@ function registerGTCEURecyclingRecipes(event) {
 	})
 	// #endregion
 
-	//#region support recycling
+	//#region Supports
 	event.recipes.gtceu.macerator(`hardwood_support_to_dust`)
 		.itemInputs('#tfg:hardwood_supports')
 		.itemOutputs('gtceu:hardwood_dust')
