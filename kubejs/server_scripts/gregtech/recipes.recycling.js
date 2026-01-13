@@ -125,23 +125,10 @@ function registerGTCEURecyclingRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Iron Door
-
 	TFGHelpers.registerMaterialInfo('minecraft:iron_door', { 'iron': 2 })
 
 	// #region Hanging Signs
-	const SIGN_METALS = [
-    	GTMaterials.Copper,
-    	GTMaterials.Bronze,
-    	GTMaterials.BlackBronze,
-    	GTMaterials.BismuthBronze,
-    	GTMaterials.WroughtIron,
-        GTMaterials.Steel,
-        GTMaterials.BlackSteel,
-        GTMaterials.RedSteel,
-        GTMaterials.BlueSteel
-    ];
-
-    SIGN_METALS.forEach(metal => {
+    global.TFC_EQUIPMENT_METALS.forEach(metal => {
 		// Arc recycling
 		global.AFC_HARDWOOD_TYPES.concat(global.TFC_HARDWOOD_TYPES).forEach(wood => {
 			event.recipes.gtceu.arc_furnace(`tfg:arc_recycling/${metal.getName()}/${wood}`)
