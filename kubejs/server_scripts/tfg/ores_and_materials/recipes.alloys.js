@@ -141,14 +141,16 @@ function registerTFGAlloyingRecipes(event) {
 
 	copper_types.forEach(copper_types_array => {
 		gold_types.forEach(gold_types_array => {
-			event.recipes.gtceu.alloy_smelter(`rose_gold_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${gold_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+			const id = linuxUnfucker(`${copper_types_array}_and_${gold_types_array}`.replace(/#/g, ""));
+			event.recipes.gtceu.alloy_smelter(`tfg:rose_gold_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
 				.duration(20*10)
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 		silver_types.forEach(silver_types_array => {
-			event.recipes.gtceu.alloy_smelter(`sterling_silver_from_${copper_types_array.replace(/:/g, "/").replace(/#/g, "")}_and_${silver_types_array.replace(/:/g, "/").replace(/#/g, "")}`)
+			const id = linuxUnfucker(`${copper_types_array}_and_${silver_types_array}`.replace(/#/g, ""));
+			event.recipes.gtceu.alloy_smelter(`tfg:sterling_silver_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
 				.duration(20*10)
