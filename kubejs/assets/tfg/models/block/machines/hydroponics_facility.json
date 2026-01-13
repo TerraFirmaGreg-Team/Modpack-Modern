@@ -30,7 +30,7 @@
             "model": {
                 "parent": "gtceu:block/machine/template/cube_all/sided",
                 "textures": {
-                    "all": "tfg:block/casings/machine_casing_egh_inactive",
+                    "all": "tfg:block/casings/machine_casing_egh_active",
                     "overlay_front": "tfg:block/machines/hydroponics_facility/overlay_front_active",
                     "overlay_front_emissive": "tfg:block/machines/hydroponics_facility/overlay_front_active_emissive"
                 }
@@ -40,7 +40,7 @@
             "model": {
                 "parent": "gtceu:block/machine/template/cube_all/sided",
                 "textures": {
-                    "all": "tfg:block/casings/machine_casing_egh_inactive",
+                    "all": "tfg:block/casings/machine_casing_egh_active",
                     "overlay_front": "tfg:block/machines/hydroponics_facility/overlay_front_active",
                     "overlay_front_emissive": "tfg:block/machines/hydroponics_facility/overlay_front_active_emissive"
                 }
@@ -70,7 +70,7 @@
             "model": {
                 "parent": "gtceu:block/machine/template/cube_all/sided",
                 "textures": {
-                    "all": "tfg:block/casings/machine_casing_egh_inactive",
+                    "all": "tfg:block/casings/machine_casing_egh_active",
                     "overlay_front": "tfg:block/machines/hydroponics_facility/overlay_front_active",
                     "overlay_front_emissive": "tfg:block/machines/hydroponics_facility/overlay_front_active_emissive"
                 }
@@ -80,7 +80,7 @@
             "model": {
                 "parent": "gtceu:block/machine/template/cube_all/sided",
                 "textures": {
-                    "all": "tfg:block/casings/machine_casing_egh_inactive",
+                    "all": "tfg:block/casings/machine_casing_egh_active",
                     "overlay_front": "tfg:block/machines/hydroponics_facility/overlay_front_active",
                     "overlay_front_emissive": "tfg:block/machines/hydroponics_facility/overlay_front_active_emissive"
                 }
