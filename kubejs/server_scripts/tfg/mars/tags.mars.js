@@ -100,6 +100,13 @@ function registerTFGMarsItemTags(event) {
 
 	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
 	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
+
+	event.add('tfg:charnia', 'betterend:charnia_orange')
+	event.add('tfg:charnia', 'betterend:charnia_cyan')
+	event.add('tfg:charnia', 'betterend:charnia_green')
+	event.add('tfg:charnia', 'betterend:charnia_light_blue')
+	event.add('tfg:charnia', 'betterend:charnia_purple')
+	event.add('tfg:charnia', 'betterend:charnia_red')
 }
 
 function registerTFGMarsBlockTags(event) {
