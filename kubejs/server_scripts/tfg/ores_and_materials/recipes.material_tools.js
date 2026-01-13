@@ -181,20 +181,20 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function modifyRecyclingAmounts(event, material) {
-	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2 * GTValues.M);
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2 * GTValues.M);
-	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1 * GTValues.M);
-	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2 * GTValues.M);
-	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2 * GTValues.M);
-	TFGTagPrefix.toolHeadButcheryKnife.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadMiningHammer.modifyMaterialAmount(material, 2 * GTValues.M);
-	TFGTagPrefix.toolHeadSpade.modifyMaterialAmount(material, 2 * GTValues.M);
-	TFGTagPrefix.toolHeadPickaxe.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadAxe.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadShovel.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadHoe.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadHammer.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadSaw.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadFile.modifyMaterialAmount(material, 1 * GTValues.M);
-	TFGTagPrefix.toolHeadKnife.modifyMaterialAmount(material, 1 * GTValues.M);
+	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
+	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
+	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
+	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
+	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);
+	TFGTagPrefix.toolHeadButcheryKnife.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadMiningHammer.modifyMaterialAmount(material, 2);
+	TFGTagPrefix.toolHeadSpade.modifyMaterialAmount(material, 2);
+	TFGTagPrefix.toolHeadPickaxe.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadAxe.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadShovel.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadHoe.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadHammer.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadSaw.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadFile.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadKnife.modifyMaterialAmount(material, 1);
 }

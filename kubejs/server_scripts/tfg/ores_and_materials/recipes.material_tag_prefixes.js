@@ -318,7 +318,6 @@ function processLamp(event, material) {
 		.itemInputs("tfc:lamp_glass", unfinishedLampItem)
 		.itemOutputs(finishedLampItem)
 		.duration(material.getMass() * 7)
-		.circuit(12)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.fluid_solidifier(`tfg:${materialName}_lamp_from_liquid`)
@@ -326,7 +325,6 @@ function processLamp(event, material) {
 		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
 		.itemOutputs(finishedLampItem)
 		.duration(material.getMass() * 7)
-		.circuit(13)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	let matMap = { 'glass': 1 };

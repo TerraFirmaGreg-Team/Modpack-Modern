@@ -157,7 +157,7 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 			.category(GTRecipeCategories.INGOT_MOLDING)
 
 		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
-			.inputFluids(Fluid.of(material.getFluid(), 2 * mbAmount))
+			.inputFluids(Fluid.of(material.getFluid(), mbAmount))
 			.notConsumable(gtMold)
 			.itemOutputs(outputItem)
 			.duration(material.getMass() * 2 * ingotAmount)
@@ -186,7 +186,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	if (tfcProperty !== null) {
 
 		event.recipes.tfc.welding(outputItem, inputItem1, inputItem2, tfcProperty.getTier() - 1)
-			.id(`tfg:welding/${id}`);
+			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;
 	}
@@ -200,7 +200,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	event.recipes.gtceu.forming_press(`tfg:${id}`)
 		.itemInputs(inputItem1, inputItem2, 'tfc:powder/flux')
 		.itemOutputs(outputItem)
-		.duration(material.getMass() * 4)
+		.duration(material.getMass())
 		.EUt(GTValues.VA[compactingTier]);
 }
 

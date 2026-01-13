@@ -3,57 +3,40 @@
 
 function removeTFCRecipes(event) {
 
-	// Удаление рецептов руд TFC
-	event.remove({ id: /tfc:heating\/ore\/poor_*/ })
-	event.remove({ id: /tfc:heating\/ore\/normal_*/ })
-	event.remove({ id: /tfc:heating\/ore\/rich_*/ })
+	event.remove({ mod: 'tfc', type: 'tfc:welding' })
+	event.remove({ mod: 'tfc', type: 'tfc:heating' })
 
 	// Удаление рецептов блоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block/ })
 
 	// Удаление рецептов ступеней
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_stairs/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block_stairs/ })
 
 	// Удалание рецептов полублоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
 
 	//#region Удаление рецептов для предметов из Cast Iron
 
 	// Блок
 	event.remove({ id: `tfc:crafting/metal/block/cast_iron` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block` })
 
 	// Ступень
 	event.remove({ id: `tfc:crafting/metal/block/cast_iron_stairs` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_stairs` })
 
 	// Полублок
 	event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_slab` })
 
 	// Слиток
 	event.remove({ id: `tfc:casting/cast_iron_ingot` })
 	event.remove({ id: `tfc:casting/cast_iron_fire_ingot` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_ingot` })
 	event.remove({ id: `tfc:welding/cast_iron_double_ingot` })
 	event.remove({ id: `tfc:anvil/cast_iron_rod` })
 
 	// Двойной слиток
-	event.remove({ id: `tfc:heating/metal/cast_iron_double_ingot` })
 	event.remove({ id: `tfc:anvil/cast_iron_sheet` })
 
 	// Пластина
-	event.remove({ id: `tfc:heating/metal/cast_iron_sheet` })
 	event.remove({ id: `tfc:welding/cast_iron_double_sheet` })
-
-	// Двойная пластина
-	event.remove({ id: `tfc:heating/metal/cast_iron_double_sheet` })
-
-	// Стержень
-	event.remove({ id: `tfc:heating/metal/cast_iron_rod` })
 
 	//#endregion
 
