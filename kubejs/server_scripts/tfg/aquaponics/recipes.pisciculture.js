@@ -205,7 +205,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				Item.of(`tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 				'2x #tfg:advanced_fish_food'
 			], [
-				`15x ${fish.item}`,
+				`24x ${fish.item}`,
 				Item.of(`5x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
 			`${fish.id.replace(/[/:\s]/g, "_")}/advanced_food/roe_to_roe`

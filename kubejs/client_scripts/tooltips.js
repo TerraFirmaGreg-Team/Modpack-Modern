@@ -28,6 +28,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.customize_greenhouse'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:growth_chamber'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.growth_chamber_1'));
@@ -118,11 +119,13 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.hydroponics_facility_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.hydroponics_facility_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.parallel'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:pisciculture_fishery'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.pisciculture_fishery_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.pisciculture_fishery_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.parallel'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:grow_light'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.grow_light_disapointment'));
