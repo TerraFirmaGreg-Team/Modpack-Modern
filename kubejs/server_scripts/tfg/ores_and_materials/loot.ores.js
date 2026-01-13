@@ -32,6 +32,16 @@ const registerTFGOreLoots = (event) => {
 			LootEntry.of('tfc:powder/native_gold')
 		)
 
+	event.addBlockLootModifier('beneath:ore/blackstone_sylvite')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([
+			Item.of('gtceu:rich_raw_rock_salt').withChance(0.2),
+			Item.of('gtceu:raw_rock_salt').withChance(0.6),
+			Item.of('gtceu:poor_raw_rock_salt').withChance(0.2)
+		])
+		.addLoot(LootEntry.of('tfg:igneous_ultramafic_dust').when((c) => c.randomChance(0.2)))
+		.addLoot(LootEntry.of('gtceu:tiny_rock_salt_dust').when(c => c.randomChance(0.05)));
+
 	// Go through all materials
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
