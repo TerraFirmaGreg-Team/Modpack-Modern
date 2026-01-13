@@ -3,8 +3,14 @@
 
 function removeTFCRecipes(event) {
 
+	global.TFC_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 	event.remove({ mod: 'tfc', type: 'tfc:welding' })
-	event.remove({ mod: 'tfc', type: 'tfc:heating' })
+	event.remove({ id: /tfc:heating\/metal\/*/ })
+	event.remove({ id: /tfc:heating\/ore\/*/ })
 
 	// Удаление рецептов блоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
@@ -56,6 +62,18 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:quern/graphite' })
 	event.remove({ id: 'tfc:quern/lapis_lazuli' })
 	event.remove({ id: 'tfc:quern/lapis_lazuli_cut' })
+	event.remove({ id: 'tfc:quern/small_bismuthinite' })
+	event.remove({ id: 'tfc:quern/small_cassiterite' })
+	event.remove({ id: 'tfc:quern/small_garnierite' })
+	event.remove({ id: 'tfc:quern/small_hematite' })
+	event.remove({ id: 'tfc:quern/small_limonite' })
+	event.remove({ id: 'tfc:quern/small_magnetite' })
+	event.remove({ id: 'tfc:quern/small_malachite' })
+	event.remove({ id: 'tfc:quern/small_native_copper' })
+	event.remove({ id: 'tfc:quern/small_native_gold' })
+	event.remove({ id: 'tfc:quern/small_native_silver' })
+	event.remove({ id: 'tfc:quern/small_sphalerite' })
+	event.remove({ id: 'tfc:quern/small_tetrahedrite' })
 	event.remove({ id: 'tfc:quern/normal_bismuthinite' })
 	event.remove({ id: 'tfc:quern/normal_cassiterite' })
 	event.remove({ id: 'tfc:quern/normal_garnierite' })
@@ -128,7 +146,7 @@ function removeTFCRecipes(event) {
 	event.remove({ id: `tfc:crafting/crankshaft` })
 	event.remove({ id: 'tfc:crafting/sandpaper' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/observer' })
-
+	event.remove({ id: 'tfc:crafting/vanilla/brick_stairs' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
 	event.remove({ id: 'tfc:crafting/cake' })

@@ -90,113 +90,98 @@ function processTFCTool(event, material) {
 
 	if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
 		// Tuyere
-		const tuyere = `tfc:metal/tuyere/${materialName}`;
+		let tuyere = `tfc:metal/tuyere/${materialName}`;
 		addTFCMelting(event, tuyere, material, 144 * 2, 'tuyere');
 		addExtruderRecipe(tuyere, doublePlateItem, 'gtceu:bottle_extruder_mold', 'tuyere');
 		addAnvilRecipe(event, tuyere, doublePlateItem, ['bend_last', 'bend_second_last'], true, material, 'tuyere');
 
 		// Shield
-		const shield = `tfc:metal/shield/${materialName}`;
+		let shield = `tfc:metal/shield/${materialName}`;
 		addTFCMelting(event, shield, material, 144 * 2, 'shield');
 		addExtruderRecipe(shield, doublePlateItem, 'gtceu:plate_extruder_mold', 'shield');
 		addAnvilRecipe(event, shield, doublePlateItem, ['upset_last', 'bend_second_last', 'bend_third_last'], true, material, 'shield');
 
 		// Horse armor
-		const horseArmor = `tfc:metal/horse_armor/${materialName}`;
+		let horseArmor = `tfc:metal/horse_armor/${materialName}`;
 		addTFCMelting(event, horseArmor, material, 144 * 6, 'horse_armor');
 
 		// Fish hook
-		const fishHook = `tfc:metal/fish_hook/${materialName}`;
+		let fishHook = `tfc:metal/fish_hook/${materialName}`;
 		addAnvilRecipe(event, fishHook, ingotItem, ['bend_any', 'hit_any', 'draw_not_last'], false, material, 'fish_hook');
 		addTFCMelting(event, `tfc:metal/fishing_rod/${materialName}`, material, 144, 'fishing_rod');
 
 		// Mace
-		const mace = `tfc:metal/mace/${materialName}`;
+		let mace = `tfc:metal/mace/${materialName}`;
 		addTFCMelting(event, mace, material, 144 * 2, 'mace');
 
 		// Mattock
-		const mattock = `rnr:metal/mattock/${materialName}`;
+		event.remove({ id: `rnr:heating/metal/${materialName}_mattock` })
+		event.remove({ id: `rnr:heating/metal/${materialName}_mattock_head` })
+		let mattock = `rnr:metal/mattock/${materialName}`;
 		addTFCMelting(event, mattock, material, 144, 'mattock');
 
 		// Shears
-		const shears = `tfc:metal/shears/${materialName}`;
+		let shears = `tfc:metal/shears/${materialName}`;
 		addMaterialWelding(event, shears, knifeHead, knifeHead, material, 4, 1);
 		addTFCMelting(event, shears, material, 144 * 2, 'shears');
 
 		event.recipes.gtceu.forge_hammer(`tfg:shears/${materialName}`)
-			.itemInputs(knifeHeadItem.withCount(2))
+			.itemInputs(knifeHead.withCount(2))
 			.itemOutputs(shears)
 			.duration(40)
 			.EUt(7);
 
 		// Prospector pick
-		const propick = `tfc:metal/propick/${materialName}`;
+		let propick = `tfc:metal/propick/${materialName}`;
 		addTFCMelting(event, propick, material, 144, 'propick');
 
 		// Chisel
-		const chisel = `tfc:metal/chisel/${materialName}`;
+		let chisel = `tfc:metal/chisel/${materialName}`;
 		addTFCMelting(event, chisel, material, 144, 'chisel');
 
 		// Javelin
-		const javelin = `tfc:metal/javelin/${materialName}`;
+		let javelin = `tfc:metal/javelin/${materialName}`;
 		addTFCMelting(event, javelin, material, 144, 'javelin');
 
 		// Scraping knife
-		const scrapingKnife = `tfcscraping:metal/scraping_knife/${materialName}`;
-		const scrapingKnifeBlade = `tfcscraping:metal/scraping_knife_blade/${materialName}`;
+		let scrapingKnife = `tfcscraping:metal/scraping_knife/${materialName}`;
+		let scrapingKnifeBlade = `tfcscraping:metal/scraping_knife_blade/${materialName}`;
 		addAnvilRecipe(event, scrapingKnifeBlade, doubleIngotItem, ['hit_last','draw_not_last', 'draw_second_last'], true, material, 'scraping_knife_blade');
 		addTFCMelting(event, scrapingKnife, material, 144 * 2, 'scraping_knife');
-		addTFCMelting(event, scrapingKnifeBlade, material, 144 * 2, 'scraping_knife_blade');
+		addMaterialRecyclingNoTagPrefix(event, scrapingKnifeBlade, material, 'scraping_knife_blade', 2);
 		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2);
 		
-		let matmap = {};
-		matmap[materialName] = 144 * 2;
-		TFGHelpers.registerMaterialInfo(scrapingKnifeBlade, matmap);
-
-		event.recipes.gtceu.extractor(scrapingKnifeBlade)
-			.itemInputs(scrapingKnifeBlade)
-			.outputFluids(Fluid.of(material.getFluid(), 288))
-			.duration(material.getMass() * 6)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(getFluidRecipeEUt(material))
-
 		// Tongs
-		const tongPart = `tfchotornot:tong_part/${materialName}`;
-		const tong = `tfchotornot:tongs/${materialName}`;
+		let tongPart = `tfchotornot:tong_part/${materialName}`;
+		let tong = `tfchotornot:tongs/${materialName}`;
 		addExtruderRecipe(tongPart, ChemicalHelper.get(TagPrefix.rodLong, material, 1), 'gtceu:rod_extruder_mold', 'tong_part');
-		addTFCMelting(event, tongPart, material, 144, 'tong_part');
+		addMaterialRecyclingNoTagPrefix(event, tongPart, material, 'tong_part', 1);
 		addTFCMelting(event, tong, material, 144 * 2, 'tong');
-		matmap[materialName] = 144;
-		TFGHelpers.registerMaterialInfo(tongPart, matmap);
-
-		event.recipes.gtceu.extractor(tongPart)
-			.itemInputs(tongPart)
-			.outputFluids(Fluid.of(material.getFluid(), 144))
-			.duration(material.getMass() * 6)
-			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-			.EUt(getFluidRecipeEUt(material))
 
 		event.recipes.tfc.advanced_shaped_crafting(
-			TFC.isp.of(tongsStack).copyForgingBonus(), [
+			TFC.isp.of(tong).copyForgingBonus(), [
 				'AA',
 				'BC'
 			], {
-				A: tongPartStack,
+				A: tongPart,
 				B: Ingredient.of('#forge:bolts').subtract('gtceu:wood_bolt'),
 				C: '#forge:tools/hammers'
-			}, 0, 0).id(`tfchotornot:crafting/tongs/${material.getName()}`)
+			}, 0, 0).id(`tfchotornot:crafting/tongs/${materialName}`)
 
 		event.recipes.gtceu.forge_hammer(tong)
 			.itemInputs(`2x ${tongPart}`)
 			.itemOutputs(tong)
 			.duration(material.getMass())
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.remove({ id: `tfchotornot:heating/tongs/${materialName}` })
+		event.remove({ id: `tfchotornot:heating/tong_part/${materialName}` })
 	}
 
 	// Sword
 	const swordBlade = ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material, 1);
 	event.remove({ id: `tfc:crafting/metal/sword/${materialName}` })
-	addAnvilRecipe(event, swordBlade, ingotItem.withCount(2), ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
+	addAnvilRecipe(event, swordBlade, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'], true, material, 'sword_blade');
 	
 	// Butchery Knife
 	const butcheryKnifeHead = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1);
@@ -274,20 +259,21 @@ function processTFCTool(event, material) {
  * @param {GTMaterial} material 
  */
 function processPlatedBlock(event, material) {
-	// firmaciv plated blocks don't have this property
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	const outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
-
-	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-
 	const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
-	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
-	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
-
 	if (platedBlock === null)
 		return;
 
-	let materialName = material.getName();
+	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
+	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
+
+	// firmalife plated blocks don't have this property
+	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+	
+	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
+
+	const materialName = material.getName();
+
+	console.log(`processPlatedBlock: ${materialName}`);
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${materialName}_plated_block`)

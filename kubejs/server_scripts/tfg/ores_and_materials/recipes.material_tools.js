@@ -94,7 +94,6 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 	if (tfcProperty !== null) {
 		const materialAmount = getMaterialAmount(headTagPrefix, material);
-		addTFCMelting(event, toolHeadItem, material, materialAmount * 144, tagPrefixName);
 		addTFCMelting(event, toolItem, material, materialAmount * 144, toolType.name);
 	}
 

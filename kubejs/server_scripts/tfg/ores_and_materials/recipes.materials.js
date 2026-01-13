@@ -17,7 +17,7 @@ function getFluidRecipeEUt(material) {
  * @param {TagPrefix} tagPrefix 
  */
 function getMaterialAmount(tagPrefix, material) {
-	return Math.floor(tagPrefix.getMaterialAmount(material) / GTValues.M);
+	return tagPrefix.getMaterialAmount(material) / GTValues.M;
 }
 
 /**
@@ -31,12 +31,15 @@ function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 
+	if (!outputMaterial.hasProperty(PropertyKey.FLUID))
+		return;
+
 	console.log(`addTFCMelting: ${material.getName()}, suffix: ${recipeIdSuffix}`)
 
 	event.recipes.tfc.heating(inputItem, tfcProperty.getMeltTemp())
 		.resultFluid(Fluid.of(outputMaterial.getFluid(), mbAmount))
 		.useDurability(true)
-		.id(`tfc:heating/metal/${material.getName()}_${recipeIdSuffix}`);
+		.id(`tfg:heating/metal/${material.getName()}_${recipeIdSuffix}`);
 }
 
 /**
@@ -65,27 +68,59 @@ function addAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, re
  * @param {TagPrefix} tagPrefix 
  */
 function addMaterialRecycling(event, inputItem, material, tagPrefixName, tagPrefix) {
-	console.log(`addMaterialRecycling: ${material.getName()}`)
+	const ingotAmount = getMaterialAmount(tagPrefix, material);
+
+	addMaterialRecyclingNoTagPrefix(event, inputItem, material, tagPrefixName, ingotAmount);
+}
+
+/**
+ * @param {Internal.RecipesEventJS} event 
+ * @param {Internal.ItemStack} inputItem 
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material
+ * @param {String} recipeSuffix
+ * @param {number} ingotAmount
+ */
+function addMaterialRecyclingNoTagPrefix(event, inputItem, material, recipeSuffix, ingotAmount) {
 	const materialName = material.getName();
-	const mbAmount = getMaterialAmount(tagPrefix, material);
-	const ingotAmount = mbAmount / 144;
+	const mbAmount = ingotAmount * 144;
 
 	if (material.hasProperty(PropertyKey.FLUID)) {
 		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
-			addTFCMelting(event, inputItem, material, tagPrefixName, tagPrefix);
+			addTFCMelting(event, inputItem, material, mbAmount, recipeSuffix);
 		}
 
 		// Add an extractor recipe
-		event.recipes.gtceu.extractor(`gtceu:extract_${materialName}_${tagPrefixName}`)
+		event.recipes.gtceu.extractor(`gtceu:extract_${materialName}_${recipeSuffix}`)
 			.itemInputs(inputItem)
 			.outputFluids(Fluid.of(material.getFluid(), mbAmount))
-			.duration(material.getMass() * 6 * ingotAmount)
 			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.duration(material.getMass() * ingotAmount)
 			.EUt(getFluidRecipeEUt(material));
 	}
 
 	// Remove existing macerator recipes because Greate
-	removeMaceratorRecipe(event, `macerate_${materialName}_${tagPrefixName}`);
+	removeMaceratorRecipe(event, `macerate_${materialName}_${recipeSuffix}`);
+
+	const maceratorOutput = ChemicalHelper.getDust(material, GTValues.M * ingotAmount);
+	if (!maceratorOutput.isEmpty()) {
+		event.recipes.gtceu.macerator(`tfg:macerate_${materialName}_${recipeSuffix}`)
+			.itemInputs(inputItem)
+			.itemOutputs(maceratorOutput)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.duration(material.getMass() * ingotAmount)
+			.EUt(2);
+	}
+
+	const arcOutput = ChemicalHelper.getIngot(material, GTValues.M * ingotAmount);
+	if (!arcOutput.isEmpty()) {
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${materialName}_${recipeSuffix}`)
+			.itemInputs(inputItem)
+			.itemOutputs(arcOutput)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.duration(material.getMass() * ingotAmount)
+			.EUt(30);
+	}
+
 	let matmap = {};
 	matmap[materialName] = ingotAmount;
 	TFGHelpers.registerMaterialInfo(inputItem, matmap);
@@ -134,7 +169,8 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 	{
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
-
+		
+		console.log(`addMaterialCasting: ${materialName}, mold: ${ceramicMold}`);
 		event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
 			.id(`tfg:casting/${id}`);
 
@@ -222,6 +258,7 @@ function registerTFGMaterialRecipes(event) {
 		console.log(`forEachMaterial: ${material.getName()}`);
 		if (material.hasProperty(PropertyKey.DUST)) {
 			processDust(event, material)
+			processPowder(event, material)
 		}
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
@@ -255,8 +292,7 @@ function registerTFGMaterialRecipes(event) {
 			processToolHead(event, TFGTagPrefix.toolHeadHook, "fish_hook", 'tfg:fish_hook_extruder_mold', null, circuit++, material)
 		}
 		
-		const ingotProperty = material.getProperty(PropertyKey.INGOT);
-		if (ingotProperty !== null) {
+		if (material.hasProperty(PropertyKey.INGOT)) {
 			processIngot(event, material)
 			processIngotDouble(event, material)
 			processPlate(event, material)
@@ -264,6 +300,7 @@ function registerTFGMaterialRecipes(event) {
 			processBlock(event, material)
 			processFoil(event, material)
 			processRod(event, material)
+			processBars(event, material)
 			processBolt(event, material)
 			processScrew(event, material)
 			processRing(event, material)
@@ -272,13 +309,28 @@ function registerTFGMaterialRecipes(event) {
 			processSmallGear(event, material)
 			processLargeGear(event, material)
 
+			processBuzzsawBlade(event, material)
+			processPlatedBlock(event, material)
+		}
+
+		if (material.hasProperty(PropertyKey.GEM)) {
+			processGems(event, material)
+			processPlate(event, material)
+			processBlock(event, material)
+			processRod(event, material)
+			processBolt(event, material)
+			processScrew(event, material)
+			processSmallGear(event, material)
+			processLargeGear(event, material)
+			processBuzzsawBlade(event, material)
+		}
+
+		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 			processAnvil(event, material)
 			processLamp(event, material)
 			processTrapdoor(event, material)
 			processChain(event, material)
 			processBell(event, material)
-			processBuzzsawBlade(event, material)
-			processPlatedBlock(event, material)
 		}
 
 		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) {
@@ -292,7 +344,6 @@ function registerTFGMaterialRecipes(event) {
 		const oreProperty = material.getProperty(PropertyKey.ORE);
 		if (oreProperty !== null) {
 			processSmallOre(event, material)
-			processSmallNativeOre(event, material)
 			processPoorRawOre(event, material)
 			processNormalRawOre(event, material)
 			processRichRawOre(event, material)
@@ -302,7 +353,6 @@ function registerTFGMaterialRecipes(event) {
 			processRefinedOre(event, material)
 			processImpureDust(event, material)
 			processPureDust(event, material)
-			processGems(event, material)
 
 			// Indicators
 			event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator` },

@@ -100,6 +100,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_black_steel', 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
 		.heated()
@@ -113,6 +115,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_blue_steel', 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
@@ -126,6 +130,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_red_steel', 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
@@ -308,33 +314,4 @@ function registerTFCMetalsRecipes(event) {
 
 	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
 		.id('tfg:revert_wrought_iron_ingot')
-
-
-	// Melting powders
-
-	const METAL_POWDERS = [
-		{ powder: 'tfc:powder/native_copper', material: GTMaterials.Copper },
-		{ powder: 'tfc:powder/native_gold', material: GTMaterials.Gold },
-		{ powder: 'tfc:powder/hematite', material: GTMaterials.Hematite },
-		{ powder: 'tfc:powder/native_silver', material: GTMaterials.Silver },
-		{ powder: 'tfc:powder/cassiterite', material: GTMaterials.Cassiterite },
-		{ powder: 'tfc:powder/bismuthinite', material: GTMaterials.Bismuth },
-		{ powder: 'tfc:powder/garnierite', material: GTMaterials.Garnierite },
-		{ powder: 'tfc:powder/malachite', material: GTMaterials.Malachite },
-		{ powder: 'tfc:powder/magnetite', material: GTMaterials.Magnetite },
-		{ powder: 'tfc:powder/limonite', material: GTMaterials.YellowLimonite },
-		{ powder: 'tfc:powder/sphalerite', material: GTMaterials.Sphalerite },
-		{ powder: 'tfc:powder/tetrahedrite', material: GTMaterials.Tetrahedrite },
-		{ powder: 'tfc:powder/pyrite', material: GTMaterials.Pyrite }
-	]
-
-	METAL_POWDERS.forEach(x => {
-		const tfcProperty = x.material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-
-		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? x.material : tfcProperty.getOutputMaterial()
-
-		event.recipes.tfc.heating(x.powder, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
-			.id(`tfg:heating/powder/${x.material.getName()}`)
-	})
 }

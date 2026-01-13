@@ -426,16 +426,18 @@ function registerTFGRockRecipes(event) {
 	// (spacing for region titles)
 	//
 	let CUT_GRIND = [
+		{ raw: 'minecraft:bricks',								stair: 'minecraft:brick_stairs',                        slab: 'minecraft:brick_slab',							wall: 'minecraft:brick_wall',
+		  dust: 'gtceu:brick_dust',								loose: null,											stonecutting: false },
 		// #region Nether
 		// Deepslate
-		{  raw:  'minecraft:deepslate',                         stair: 'tfg:rock/deepslate_stairs',                     slab: 'tfg:rock/deepslate_slab',                       wall: 'tfg:rock/deepslate_wall',
-		   dust: 'gtceu:deepslate_dust',                        loose: null,                                            stonecutting: false }, // Raw
+		{ raw:  'minecraft:deepslate',                          stair: 'tfg:rock/deepslate_stairs',                     slab: 'tfg:rock/deepslate_slab',                       wall: 'tfg:rock/deepslate_wall',
+		  dust: 'gtceu:deepslate_dust',                         loose: null,                                            stonecutting: false }, // Raw
 
-		{  raw:  'minecraft:cobbled_deepslate',                 stair: 'minecraft:cobbled_deepslate_stairs',            slab: 'minecraft:cobbled_deepslate_slab',              wall: 'minecraft:cobbled_deepslate_wall',
-		   dust: 'gtceu:deepslate_dust', 		                loose: 'tfg:loose/deepslate',                           stonecutting: false }, // Cobble
+		{ raw:  'minecraft:cobbled_deepslate',                  stair: 'minecraft:cobbled_deepslate_stairs',            slab: 'minecraft:cobbled_deepslate_slab',              wall: 'minecraft:cobbled_deepslate_wall',
+		  dust: 'gtceu:deepslate_dust', 		                loose: 'tfg:loose/deepslate',                           stonecutting: false }, // Cobble
 
-		{  raw:  'tfg:rock/mossy_cobble_deepslate',             stair: 'tfg:rock/mossy_cobble_deepslate_stairs',        slab: 'tfg:rock/mossy_cobble_deepslate_slab',          wall: 'tfg:rock/mossy_cobble_deepslate_wall',
-           dust: 'gtceu:deepslate_dust',                        loose: null,                                            stonecutting: true  }, // Cobble - Mossy
+		{ raw:  'tfg:rock/mossy_cobble_deepslate',              stair: 'tfg:rock/mossy_cobble_deepslate_stairs',        slab: 'tfg:rock/mossy_cobble_deepslate_slab',          wall: 'tfg:rock/mossy_cobble_deepslate_wall',
+          dust: 'gtceu:deepslate_dust',                         loose: null,                                            stonecutting: true  }, // Cobble - Mossy
 
 		{ raw:  'minecraft:polished_deepslate',                 stair: 'minecraft:polished_deepslate_stairs',           slab: 'minecraft:polished_deepslate_slab',             wall: 'minecraft:polished_deepslate_wall',
 		  dust: 'gtceu:deepslate_dust',                         loose: null,                                            stonecutting: false }, // Smooth
@@ -539,6 +541,8 @@ function registerTFGRockRecipes(event) {
 		{ raw:  'tfg:rock/mossy_bricks_nether',                 stair: 'tfg:rock/mossy_bricks_nether_stairs',           slab: 'tfg:rock/mossy_bricks_nether_slab',             wall: 'tfg:rock/mossy_bricks_nether_wall',
 		  dust: 'gtceu:netherrack_dust',                        loose: null,                                            stonecutting: true  }, // Bricks - Mossy
 
+		{ raw: 'minecraft:nether_brick_wall',					stair: null,											slab: null,												wall: 'minecraft:nether_brick_fence',
+		  dust: null,											loose: null,											stonecutting: true },
 		// #endregion Nether
 	]
 

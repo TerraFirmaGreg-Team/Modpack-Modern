@@ -22,39 +22,12 @@ function processSmallOre(event, material) {
 		.category(GTRecipeCategories.ORE_CRUSHING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	if (material === GTMaterials.Bismuth)
-		materialName = "bismuthinite";
-	else if (material === GTMaterials.YellowLimonite)
-		materialName = "limonite";
-
 	event.recipes.tfc.quern(smallDust, smallOre)
-		.id(`tfc:quern/small_${materialName}`)
+		.id(`tfg:quern/small_${materialName}`)
 
-	addTFCMelting(event, smallOre, material, 16, 'small_ore');
-}
-
-/**
- * @param {Internal.RecipesEventJS} event 
- * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
- */
-function processSmallNativeOre(event, material) {
-	if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE))
-		return;
-
-	const smallNativeOre = ChemicalHelper.get(TFGTagPrefix.oreSmallNative, material, 1);
-	const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
-
-	event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_small_native_ore`)
-		.itemInputs(smallNativeOre)
-		.itemOutputs(smallDust)
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ORE_CRUSHING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.tfc.quern(smallDust, smallNativeOre)
-		.id(`tfc:quern/small_native_${material.getName()}`)
-
-	addTFCMelting(event, smallNativeOre, material, 16, 'small_ore');
+	if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
+		addTFCMelting(event, smallOre, material, 16, 'small_ore');
+	}
 }
 
 /**
@@ -372,7 +345,7 @@ function processPurifiedOre(event, material) {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 		if (tfcProperty !== null) {
-			addTFCMelting(event, pureDustItem, material, global.calcAmountOfMetalProcessed(100, tfcProperty.getPercentOfMaterial()), 'pure_crushed');
+			addTFCMelting(event, pureOreItem, material, global.calcAmountOfMetalProcessed(100, tfcProperty.getPercentOfMaterial()), 'pure_crushed');
 		}
 	}
 }
@@ -510,22 +483,24 @@ function processGems(event, material) {
 		return;
 
 	const materialName = material.getName();
-	const chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
-	const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 	const budItem = ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1);
-	if (budItem !== null) {
+	if (!budItem.isEmpty()) {
 		event.recipes.tfc.damage_inputs_shapeless_crafting(
 			event.shapeless(budItem, [gemItem, '#tfc:chisels']))
 				.id(`shapeless/${materialName}_bud_indicator`)
 	}
 
-	event.shaped(smallDust, [
-		'A', 'B'
-	], {
-		A: chipped,
-		B: '#forge:tools/mortars'
-	}).id(`shapeless/mortar_chipped_${materialName}`)
+	const chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
+	const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+	if (!chipped.isEmpty()) {
+		event.shaped(smallDust, [
+			'A', 'B'
+		], {
+			A: chipped,
+			B: '#forge:tools/mortars'
+		}).id(`shapeless/mortar_chipped_${materialName}`)
+	}
 
 	const amount = getMaterialAmount(TagPrefix.block, material);
 	event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
@@ -538,6 +513,10 @@ function processGems(event, material) {
 	// Melting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	if (tfcProperty !== null) {
+		addTFCMelting(event, ChemicalHelper.get(TagPrefix.gemChipped, material, 1), material, global.calcAmountOfMetalProcessed(144 / 4, tfcProperty.getPercentOfMaterial()), 'gem_chipped');
+		addTFCMelting(event, ChemicalHelper.get(TagPrefix.gemFlawed, material, 1), material, global.calcAmountOfMetalProcessed(144 / 2, tfcProperty.getPercentOfMaterial()), 'gem_flawed');
 		addTFCMelting(event, gemItem, material, global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial()), 'gem');
+		addTFCMelting(event, ChemicalHelper.get(TagPrefix.gemFlawless, material, 1), material, global.calcAmountOfMetalProcessed(144 * 2, tfcProperty.getPercentOfMaterial()), 'gem_flawless');
+		addTFCMelting(event, ChemicalHelper.get(TagPrefix.gemExquisite, material, 1), material, global.calcAmountOfMetalProcessed(144 * 4, tfcProperty.getPercentOfMaterial()), 'gem_exquisite');
 	}
 }
