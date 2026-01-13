@@ -434,6 +434,35 @@ function registerTFCItemTags(event) {
     event.add('forge:dyes/green', 'tfc:powder/malachite')
     event.add('forge:dyes/brown', 'tfc:powder/garnierite')
     event.add('forge:dyes/yellow', 'tfc:powder/limonite')
+
+    //Hanging Signs Soft & Hard Wood
+    const SIGN_METALS = [
+        GTMaterials.Copper,
+        GTMaterials.Bronze,
+        GTMaterials.BlackBronze,
+        GTMaterials.BismuthBronze,
+        GTMaterials.WroughtIron,
+        GTMaterials.Steel,
+        GTMaterials.BlackSteel,
+        GTMaterials.RedSteel,
+        GTMaterials.BlueSteel
+    ];
+
+    SIGN_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal.getName()}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
+    })
+
+    SIGN_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
+    })
+
+    SIGN_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal.getName()}/${wood}`))
+    })
+
+    SIGN_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
+    })
 }
 
 /** @param {TagEvent.Block} event */
