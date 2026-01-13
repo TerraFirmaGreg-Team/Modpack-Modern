@@ -27,9 +27,8 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
-		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));
+		text.add(3, Text.translate('tfg.tooltip.machine.customize_greenhouse'));
 		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
-		text.add(5, Text.translate('tfg.tooltip.machine.customize_interior'));
 	})
 	event.addAdvanced(['tfg:growth_chamber'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.growth_chamber_1'));
@@ -115,6 +114,45 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
 		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+	})
+	event.addAdvanced(['tfg:hydroponics_facility'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.hydroponics_facility_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.hydroponics_facility_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.parallel'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:pisciculture_fishery'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.pisciculture_fishery_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.pisciculture_fishery_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.parallel'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
+	event.addAdvanced(['tfg:grow_light'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.grow_light_disapointment'));
+	})
+	event.addAdvanced(['tfg:rotten_voiding_cover'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.rotten_voiding_cover'));
+	})
+	event.addAdvanced(['firmalife:climate_station'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:large_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:quad_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:hydroponic_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:bonsai_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:hanging_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
+	})
+	event.addAdvanced(['firmalife:trellis_planter'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.firmalife_greenhouse.oxygen_required.block'));
 	})
 
 	// Hot or not containers
