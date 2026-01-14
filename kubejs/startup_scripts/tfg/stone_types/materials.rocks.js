@@ -85,25 +85,42 @@ const registerTFGRockMaterials = (event) => {
 		mercury_stone: ultramafic,
 	}
 
+	/**
+	 * Generates an object of block, stair, slab, and wall strings.
+	 * @param {String} id
+	 * The internal ID of a rock type. For example, migmatite is 'deepslate'.
+	 * @param {String} pattern 
+	 * A pattern to use to generate the other rock form strings. 
+	 * %s will be replaced with the id above.
+	 * "_stairs", "_slab", or "_wall" will be appended on the end.
+	 * @param {String?} [existingBlock=null]
+	 * If the block doesn't match the pattern (or if the block exists but in a different namespace for example), 
+	 * put it here to avoid auto generating it.
+	 * @param {{block: String, stair: String, slab: String, wall: String}?} [mossy=null]
+	 * If this rock block has a mossy subset, put it here.
+	 * @param {{block: String, stair: String, slab: String, wall: String}?} [cracked=null]
+	 * If this rock block has a cracked subset, put it here.
+	 * @returns {{block: String, stair: String, slab: String, wall: String, mossy: *?, cracked: *?}?}
+	 */
 	function generateForms(id, pattern, existingBlock = null, mossy = null, cracked = null) {
 		let replaced = pattern.replace('%s', id);
-		let obj = {
+		return {
 			block: existingBlock ?? `${replaced}`,
-			stair: existingStair ?? `${replaced}_stairs`,
-			slab: existingSlab ?? `${replaced}_slab`,
-			wall: existingWall ?? `${replaced}_wall`
+			stair: `${replaced}_stairs`,
+			slab: `${replaced}_slab`,
+			wall: `${replaced}_wall`,
+			mossy: mossy,
+			cracked: cracked
 		};
-
-		if (mossy !== null) {
-			obj.mossy = mossy;
-		}
-		if (cracked !== null) {
-			obj.cracked = cracked;
-		}
-
-		return obj;
 	}
 
+	/**
+	 * Generates some missing rock-type blocks that don't have stair/slab/wall blocks.
+	 * @param {String} id 
+	 * The internal ID of a rock type. For example, migmatite is 'deepslate'.
+	 * @param {*} table
+	 * A table of different rock blocks.
+	 */
 	function generateMissing(id, table) {
 		if (table.hardened === undefined)
 			table.hardened = `tfg:rock/hardened_${id}`;
@@ -118,13 +135,50 @@ const registerTFGRockMaterials = (event) => {
 		if (table.aqueduct === undefined)
 			table.aqueduct = `tfg:rock/aqueduct_${id}`;
 
+		table.isTFC = false;
 		return table;
 	}
 
+	// This can also be used for things that aren't really rock types, if you want to generate similar recipes.
 	global.BIG_ROCK_TABLE = {
+		"gabbro": {
+			material: mafic,
+			tfcTag: 'tfc:igneous_intrusive_items',
+			support: 'tfg:gabbro_support',
+			isTFC: true
+		},
+		"diorite": {
+			material: intermediate,
+			tfcTag: 'tfc:igneous_intrusive_items',
+			support: 'tfg:diorite_support',
+			isTFC: true,
+			pillar: 'create:diorite_pillar',
+			pillar2: 'create:layered_diorite',
+			createTag: 'create:stone_types/diorite',
+			stonecutting: [
+				generateForms('diorite', 'create:cut_%s'),
+				generateForms('diorite', 'create:polished_cut_%s'),
+				generateForms('diorite', 'create:cut_%s_brick', 'create:cut_diorite_bricks'),
+				generateForms('diorite', 'create:small_%s_brick', 'create:small_diorite_bricks')
+			]
+		},
+		"granite": {
+			material: felsic,
+			tfcTag: 'tfc:igneous_intrusive_items',
+			support: 'tfg:granite_support',
+			isTFC: true
+		},
+		"basalt": {
+			material: mafic,
+			tfcTag: 'tfc:igneous_extrusive_items',
+			support: 'tfg:basalt_support',
+			isTFC: true,
+			// TODO: create's basalt? vanilla basalt?
+		},
+		// Migmatite
 		"deepslate": generateMissing('deepslate', {
-			material: global.GEOLOGY_MATERIALS.deepslate,
-			composition: 'tfc:metamorphic_items',
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
 			chiseled: 'minecraft:chiseled_deepslate',
 			support: 'tfg:migmatite_support',
 			pillar: 'create:deepslate_pillar',
@@ -146,9 +200,10 @@ const registerTFGRockMaterials = (event) => {
 				generateForms('deepslate', 'create:small_%s_brick', 'create:small_deepslate_bricks')
 			]
 		}),
+		// Travertine
 		"dripstone": generateMissing('dripstone', {
-			material: global.GEOLOGY_MATERIALS.dripstone,
-			composition: 'tfc:sedimentary_items',
+			material: carbonate,
+			tfcTag: 'tfc:sedimentary_items',
 			support: 'tfg:travertine_support',
 			pillar: 'create:dripstone_pillar',
 			pillar2: 'create:layered_dripstone',
@@ -165,9 +220,10 @@ const registerTFGRockMaterials = (event) => {
 				generateForms('dripstone', 'create:small_%s_brick', 'create:small_dripstone_bricks')
 			]
 		}),
+		// Pyroxenite
 		"blackstone": generateMissing('blackstone', {
-			material: global.GEOLOGY_MATERIALS.blackstone,
-			composition: 'tfc:igneous_intrusive_items',
+			material: ultramafic,
+			tfcTag: 'tfc:igneous_intrusive_items',
 			support: 'tfg:pyroxenite_support',
 			pillar: 'beneath:ancient_altar',
 			loose: 'beneath:blackstone_pebble',
@@ -181,16 +237,12 @@ const registerTFGRockMaterials = (event) => {
 				generateForms('blackstone', 'tfg:rock/mossy_bricks_%s'),
 				generateForms('blackstone', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_polished_blackstone_bricks')),
 			polished: generateForms('blackstone', 'minecraft:polished_%s')
+		}),
+		// Keratophyre
+		"crackrack": generateMissing('crackrack', {
+			material: intermediate
 		})
 	}
-
-	global.TFC_STONE_TYPES.forEach(tfcRock => {
-		global.BIG_ROCK_TABLE[tfcRock] = {
-			material: global.GEOLOGY_MATERIALS[tfcRock],
-			isTFC: true,
-			support: `tfg:${tfcRock}_support`
-		}
-	})
 
 	/* ROCKS:
 

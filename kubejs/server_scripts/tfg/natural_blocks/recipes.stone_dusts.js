@@ -6,6 +6,7 @@
  */
 function registerTFGStoneDustRecipes(event) {
 
+	// Same outputs as base GT, but with small dusts instead
 	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
 		.itemInputs('gtceu:stone_dust')
 		.chancedOutput('#forge:small_dusts/quartzite', 2500, 0)
@@ -50,9 +51,17 @@ function registerTFGStoneDustRecipes(event) {
 	// Misc dust
 
 	event.recipes.gtceu.centrifuge('gtceu:quartz_sand_separation')
-		.EUt(30)
+		.EUt(GTValues.VA[GTValues.LV])
 		.duration(60)
 		.itemInputs('2x gtceu:quartz_sand_dust')
 		.itemOutputs('gtceu:quartzite_dust')
 		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
+
+	// TODO: make this line up with the quartzite dust
+	event.recipes.gtceu.autoclave('tfg:quartz_sand_autoclave')
+		.itemInputs('2x gtceu:quartz_sand_dust')
+		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.itemOutputs('gtceu:quartzite_gem')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.LV])
 }
