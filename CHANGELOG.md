@@ -6,7 +6,7 @@
 - Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
 ### Performance improvements
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
-- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
+- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to earth trees and newly generated Mars trees, old Mars trees will have the old behaviour) @Mqrius
 - Fixed tree chopping not working on trees that had no leaves @Mqrius
 - Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
 - Fixed a huge amount of lag from TFC Ambiental @Mqrius
@@ -45,6 +45,7 @@
 - Fixed invar crucible alloying using the wrong amounts of iron and nickel @Pyritie
 - Fixed inconsistent saturation values from cooked long pig filet (#2714) @Pyritie
 - Fixed soaked paper in a helve hammer having a blow count of less than 1 for some anvils (#2655) @Pyritie
+- Fixed casting of rods and gears for various metals @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
