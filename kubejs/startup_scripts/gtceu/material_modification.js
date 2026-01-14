@@ -276,8 +276,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
-	GTMaterials.BlackBronze.addFlags(GENERATE_SMALL_GEAR);
-	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.BlackBronze.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.Zinc.addFlags(GENERATE_LONG_ROD);
@@ -293,6 +293,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
+	GTMaterials.BlackBronze.addFlags(GENERATE_ROTOR)
+	GTMaterials.BismuthBronze.addFlags(GENERATE_ROTOR)
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
 	GTMaterials.CobaltBrass.addFlags(GENERATE_ROTOR)
 	GTMaterials.Magnalium.addFlags(GENERATE_ROTOR)

@@ -28,7 +28,7 @@
 - You can now also use mars water in gregtech and create boilers @Pyritie
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
-- Reduced the amount of ambient wolf sounds at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
+- Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -46,10 +46,12 @@
 - Fixed inconsistent saturation values from cooked long pig filet (#2714) @Pyritie
 - Fixed soaked paper in a helve hammer having a blow count of less than 1 for some anvils (#2655) @Pyritie
 - Fixed casting of rods and gears for various metals @Pyritie
+- Fixed a dupe with scraping knives (#2716) @Inceitious
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071 + @Nixieeunrare
+- Russian @Petr211071 + @Nixieeunrare + @Maxiffon
 - Japanese @sakura-gondra
+- Ukranian @MetEnBouldry
 
 ## [0.11.16] - 05-01-2026
 ### Changes
