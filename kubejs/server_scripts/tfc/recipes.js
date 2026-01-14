@@ -39,11 +39,12 @@ const registerTFCRecipes = (event) => {
 		{ input: "#forge:dusts/sulfur", output: "4x tfc:powder/sulfur", name: "sulfur_powder" },
 		{ input: "#forge:dusts/saltpeter", output: "4x tfc:powder/saltpeter", name: "saltpeter_powder" },
 		{ input: "#forge:dusts/salt", output: "4x tfc:powder/salt", name: "salt_powder" },
+		{ input: "#forge:dusts/rock_salt", output: "4x tfc:powder/sylvite", name: "rock_salt" },
 		{ input: "#forge:dusts/graphite", output: "4x tfc:powder/graphite", name: "graphite_powder" },
 		{ input: "#forge:dusts/borax", output: "4x tfc:powder/flux", name: "flux_powder" },
 		{ input: "#forge:dusts/soda_ash", output: "4x tfc:powder/soda_ash", name: "soda_ash" },
-		{ input: "gtceu:charcoal_dust", output: "4x tfc:powder/charcoal", name: "charcoal" },
-		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" }
+		{ input: "#forge:dusts/charcoal", output: "4x tfc:powder/charcoal", name: "charcoal" },
+		{ input: "tfc:ore/sylvite", output: "4x tfc:powder/sylvite", name: "sylvite" },
 	]);
 
 	TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
@@ -56,50 +57,6 @@ const registerTFCRecipes = (event) => {
 		event.recipes.tfc.quern(element.output, element.input)
 			.id(`tfg:quern/${element.name}`)
 	})
-
-	//#region Рецепты электрической теплицы
-
-	// Дерево
-	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, '#tfc:any_fresh_water', 16000, `64x tfc:wood/log/${wood}`,
-			`tfg:greenhouse/${wood}`, 'minecraft:overworld', 16, `32x tfc:wood/sapling/${wood}`, GTValues.VH[GTValues.LV])
-	})
-
-	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, '#tfc:any_fresh_water', 16000, `64x ${x.log}`,
-			`tfg:greenhouse/${x.sapling}`, 'minecraft:overworld', 16, `32x afc:wood/sapling/${x.sapling}`, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена фруктов
-	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, 'minecraft:overworld', 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена овощей
-	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Семена ягод
-	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, '#tfc:any_fresh_water', element.fluid_amount, element.output,
-			element.name, null, 8, element.input, GTValues.VH[GTValues.LV])
-	})
-
-	// Растения
-	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
-		const itemId = element.id;
-		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
-
-		generateGreenHouseRecipe(event, itemId, '#tfc:any_fresh_water', 8000, `8x ${itemId}`,
-			recipeId, null, 8, itemId, GTValues.VH[GTValues.LV]);
-	});
-
-	//#endregion
-
-
 	// Доменная печь
 	event.recipes.gtceu.shaped('tfc:blast_furnace', [
 		'AAA',

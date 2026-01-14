@@ -66,64 +66,6 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 
 //#endregion
 
-//#region Green House
-/**
- * Function for generating greenhouse recipes.
- *
- * @param {*} event 
- * @param {string} input -Item (Not consumed)
- * @param {string} fluid -Fluid ID or tag
- * @param {number} fluid_amount -Fluid amount, in mB
- * @param {string} output -Item (Chanced output uses input item)
- * @param {string} id -Recipe ID
- * @param {string} dimension -Dimension ID
- * @param {number} fertiliser_count
- * @param {string|null} output_seconday -Item (Optional, if there should be a third output)
- * @param {number} EUt
- */
-function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
-	if (EUt === undefined || output_secondary === undefined || fertiliser_count === undefined || dimension === undefined) {
-		throw new TypeError(`Call to generateGreenHouseRecipe for id ${id} is missing args`);
-	}
-	let r = event.recipes.gtceu.greenhouse(id)
-		.notConsumable(input)
-		.circuit(1)
-		.inputFluids(`${fluid} ${fluid_amount}`)
-		.itemOutputs(output)
-		.chancedOutput(input, 750, 0)
-		.chancedOutput(input, 500, 0)
-		.duration(36000) // 30 mins
-		.EUt(EUt)
-
-	if (dimension !== null) {
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null) {
-		r.chancedOutput(output_secondary, 750, 0)
-	}
-	
-
-	// С удобрением (With fertilizer)
-	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
-		.notConsumable(input)
-		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
-		.circuit(2)
-		.inputFluids(`${fluid} ${fluid_amount}`)
-		.itemOutputs(output)
-		.chancedOutput(input, 4000, 0)
-		.chancedOutput(input, 3000, 0)
-		.duration(12000) // 10 mins
-		.EUt(EUt)
-
-	if (dimension !== null) {
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null) {
-		r.chancedOutput(output_secondary, 4000, 0)
-	}
-}
-//#endregion
-
 //#region Filling NBT
 /**
  * Function to get fluid filling NBT.
@@ -558,28 +500,28 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	}
 
 	// Create recipes.
-	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))

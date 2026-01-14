@@ -493,14 +493,15 @@
 				"33374462FF07BC75"
 			]
 			dependency_requirement: "one_completed"
-			description: ["&6For each travel you will need Rocket Fuel&r, it seems complicated and it is quite a long process but you can make Rocket Fuel from &bChlorine&r, &bMethane&r, &bNitrogen&r, &bOxygen&r and &bWater&r. Nothing too bad, also if you already have your &5Large Chemical Reactor&r you could unlock some bypass.\\n\\n&7We advise you to use EMI Recipe Tree to have an easier time understanding each step. Simply click on the small icon with 4 squares on the right of the crafting recipe.&r"]
+			description: ["{quests.high_voltage.rocket_fuel.desc}"]
 			id: "0B80972F50E08B8D"
-			subtitle: "Easier than you think"
+			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
 			tasks: [{
 				id: "5FBF567FFC837BFA"
 				item: "gtceu:rocket_fuel_bucket"
 				type: "item"
 			}]
+			title: "{quests.high_voltage.rocket_fuel.title}"
 			x: -7.0d
 			y: -5.5d
 		}

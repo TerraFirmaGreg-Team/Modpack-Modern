@@ -3,7 +3,7 @@
 function registerTFGCoalRecipes(event) {
 
 	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
-		.itemInputs('2x gtceu:poor_raw_coal')
+		.itemInputs('gtceu:poor_raw_coal')
 		.itemOutputs('1x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 500))
 		.duration(900)
@@ -53,12 +53,6 @@ function registerTFGCoalRecipes(event) {
 		.duration(288)
 		.EUt(96)
 		.circuit(2)
-
-	event.recipes.gtceu.coke_oven("tfg:raw_coal_to_coke")
-		.itemInputs('gtceu:raw_coal')
-		.itemOutputs('2x gtceu:coke_gem')
-		.outputFluids(Fluid.of('gtceu:creosote', 2000))
-		.duration(1710)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_tar")
 		.itemInputs('6x gtceu:raw_coal')

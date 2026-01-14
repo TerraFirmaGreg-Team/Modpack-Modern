@@ -25,6 +25,14 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lp_steam_solar_boiler",
     "gtceu:charcoal_pile_igniter",
 
+    // Fishers
+    "gtceu:lv_fisher",
+    "gtceu:mv_fisher",
+    "gtceu:hv_fisher",
+    "gtceu:ev_fisher",
+    "gtceu:iv_fisher",
+    "gtceu:luv_fisher",
+
     // Примитивная помпа (Primitive Pump)
     "gtceu:infinite_water_cover",
     "gtceu:ender_item_link_cover",
@@ -432,4 +440,70 @@ global.GTCEU_SUPERCONDUCTORS = /** @type {const} */ ([
     { name: "enriched_naquadah_trinium_europium_duranide", materialId: "EnrichedNaquadahTriniumEuropiumDuranide" },
     { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" }
 ]);
+//#endregion
+
+//#region Concrete Blocks
+/**
+ * Concrete block groups keyed by type [type, ids].
+ *
+ * @global
+ * @type {Record<string, (string[] & { name: string })>}
+ */
+global.GTCEU_CONCRETE_BLOCKS = (() => {
+    /**
+     * Attach a name to an array of concrete block item IDs.
+     * @param {string} name
+     * @param {string[]} items
+     * @returns {string[] & { name: string }}
+     */
+    function group(name, items) {
+        items.name = name;
+        return items;
+    }
+
+    return {
+        light_concrete: group('light_concrete', [
+            'gtceu:light_concrete',
+            'gtceu:light_concrete_cobblestone',
+            'gtceu:mossy_light_concrete_cobblestone',
+            'gtceu:polished_light_concrete',
+            'gtceu:light_concrete_bricks',
+            'gtceu:cracked_light_concrete_bricks',
+            'gtceu:mossy_light_concrete_bricks',
+            'gtceu:chiseled_light_concrete',
+            'gtceu:light_concrete_tile',
+            'gtceu:light_concrete_small_tile',
+            'gtceu:light_concrete_windmill_a',
+            'gtceu:light_concrete_windmill_b',
+            'gtceu:small_light_concrete_bricks',
+            'gtceu:square_light_concrete_bricks'
+        ]),
+        dark_concrete: group('dark_concrete', [
+            'gtceu:dark_concrete',
+            'gtceu:dark_concrete_cobblestone',
+            'gtceu:mossy_dark_concrete_cobblestone',
+            'gtceu:polished_dark_concrete',
+            'gtceu:dark_concrete_bricks',
+            'gtceu:cracked_dark_concrete_bricks',
+            'gtceu:mossy_dark_concrete_bricks',
+            'gtceu:chiseled_dark_concrete',
+            'gtceu:dark_concrete_tile',
+            'gtceu:dark_concrete_small_tile',
+            'gtceu:dark_concrete_windmill_a',
+            'gtceu:dark_concrete_windmill_b',
+            'gtceu:small_dark_concrete_bricks',
+            'gtceu:square_dark_concrete_bricks'
+
+        ]),
+        titanium_concrete: group('titanium_concrete', [
+            'tfg:titanium_concrete',
+            'tfg:polished_titanium_concrete',
+            'tfg:titanium_concrete_tile',
+            'tfg:titanium_concrete_tile_small',
+            'tfg:titanium_concrete_bricks',
+            'tfg:titanium_concrete_bricks_small',
+            'tfg:titanium_concrete_bricks_square'
+        ])
+    };
+})();
 //#endregion

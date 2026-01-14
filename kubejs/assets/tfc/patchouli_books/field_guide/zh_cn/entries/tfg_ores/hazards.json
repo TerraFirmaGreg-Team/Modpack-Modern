@@ -67,24 +67,6 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "陈酿酒",
-            "text": "$(thing)陈酿酒$()会提供药水增益效果，其中部分可能对你大有裨益。$(br2)你可以使用$(l:getting_started/pottery#jug)陶壶$()或$(l:waterflasks/recipes)水壶$()饮用它们。",
-            "item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "陈酿啤酒：伤害吸收 II (20:00)$(br2)陈酿苹果酒：速度 (5:20)$(br2)陈酿朗姆酒：速度 II (2:40)$(br2)陈酿清酒：抗性提升 (5:20)$(br2)陈酿伏特加：抗性提升 II (2:40)$(br2)陈酿玉米威士忌：急迫 (5:20)$(br2)陈酿黑麦威士忌：急迫 (5:20)$(br2)陈酿威士忌：急迫 II (2:40)"
-        },
-        {
-            "type": "patchouli:spotlight",
-            "item": {
-                "tag": "tfc:foods"
-            },
-            "title": "营养均衡",
-            "text": "食用更高$(l:getting_started/food_and_water#nutrients)营养价值$()的优质食物可显著提升生命值上限。$(br2)$(l:mechanics/pot#soup)汤$()、$(l:mechanics/sandwiches)三明治$()与$(l:mechanics/salad)沙拉$()是绝佳选择。"
-        },
-        {
-            "type": "patchouli:spotlight",
             "title": "随身床铺",
             "item": {
                 "tag": "minecraft:beds"

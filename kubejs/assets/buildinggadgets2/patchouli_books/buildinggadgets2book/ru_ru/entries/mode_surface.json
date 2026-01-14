@@ -1,0 +1,37 @@
+{
+  "name": "Поверхность",
+  "sortnum": 1,
+  "category": "buildinggadgets2:modes",
+  "icon": "buildinggadgets2:textures/book/mode/surface.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Режим «Поверхность» расширяет участок блоков, на который вы смотрите. Пример — на картинках справа.$(br2)Опция «Нечёткий» позволяет гаджету либо выбирать любые блоки, либо только такие же, как тот, на который вы смотрите."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Поверхность: нечёткий",
+      "images": [
+        "buildinggadgets2:textures/book/images/surface5.png",
+        "buildinggadgets2:textures/book/images/surface1.png",
+        "buildinggadgets2:textures/book/images/surface2.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Этот режим доступен и для гаджета замены, а «нечёткий» работает так же. $(br2)Кроме того, «связанный» режим будет менять только те блоки, которые соединены с целевыми. Смотрите картинки справа — там пояснение."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Поверхность: связанный",
+      "images": [
+        "buildinggadgets2:textures/book/images/surface3.png",
+        "buildinggadgets2:textures/book/images/surface4.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    }
+  ]
+}

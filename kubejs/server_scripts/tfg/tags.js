@@ -17,6 +17,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
+	registerTFGAquaponicsItemTags(event)
 
 	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
 	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
@@ -115,6 +116,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
+	registerTFGAquaponicsBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -129,10 +131,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
@@ -140,6 +142,7 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
+	registerTFGAquaponicsFluidTags(event)
 	registerTFGPrimitiveFluidTags(event)
 
 	event.add('tfg:clean_water', 'minecraft:water')
@@ -178,6 +181,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	
+	event.add('tfc:drinkables', 'gtceu:ice')
+	event.add('tfc:any_drinkables', 'gtceu:ice')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
@@ -220,6 +226,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
 
+	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')

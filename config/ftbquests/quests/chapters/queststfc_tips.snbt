@@ -1214,7 +1214,11 @@
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
-			description: ["{quests.tfg_tips.greenhouse.desc}"]
+			description: [
+				"{quests.tfg_tips.greenhouse.desc}"
+				"\\n"
+				"{image:tfg:textures/quests/firmalife_greenhouse.png width:250 height:150 align:center}"
+			]
 			guide_page: "tfc:field_guide tfc:firmalife/greenhouse"
 			icon: "firmalife:large_planter"
 			id: "07FBA022050DA24A"
