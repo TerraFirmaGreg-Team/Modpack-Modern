@@ -69,8 +69,6 @@ function processIngot(event, material) {
 		|| material === GTMaterials.Stone) 
 		return;
 
-	const materialName = material.getName();
-
 	if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 		addTFCMelting(event, ingotItem, material, 144, 'ingot');
 		addMaterialCasting(event, ingotItem, 'tfc:ceramic/ingot_mold', false, null, material, 'ingot', 144);
@@ -198,19 +196,18 @@ function processPlateDouble(event, material) {
 
 	if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
 		addTFCMelting(event, doublePlateItem, material, 288, 'double_plate');
+
+		// If it's a TFC-era material, allow double plates in LV
+		event.remove({ id: `gtceu:bender/bend_${material.getName()}_plate_to_double_plate` })
+		event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_plate_to_double_plate_electric_only`)
+			.itemInputs(plateItem.withCount(2))
+			.itemOutputs(doublePlateItem)
+			.circuit(2)
+			.duration(material.getMass() * 2)
+			.EUt(24)
 	}
 
 	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, 2);
-
-	//if (material.getProperty(TFGPropertyKey.TFC_PROPERTY) === null) {
-	//	event.remove({ id: `gtceu:bender/bend_${material.getName()}_plate_to_double_plate` })
-	//	event.recipes.gtceu.bender(`bend_${material.getName()}_plate_to_double_plate_electric_only`)
-	//		.itemInputs(plateItem.withCount(2))
-	//		.itemOutputs(doublePlateItem)
-	//		.circuit(2)
-	//		.duration(20 * 5.8)
-	//		.EUt(24)
-	//}
 }
 
 /**
@@ -528,8 +525,6 @@ function processSpring(event, material) {
  */
 function processNugget(event, material) {
 	const nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 1);
-	const materialName = material.getName();
-
 	if (nuggetItem.isEmpty())
 		return;
 		

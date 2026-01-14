@@ -33,10 +33,15 @@ function processSmallOre(event, material) {
 /**
  * @param {Internal.RecipesEventJS} event 
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
- * @param {*} oreProperty 
- * @param {number} multiplier 
- * @param {Internal.ItemStack} oreItem 
+ * @param {*} oreProperty
+ * The material's ore property
+ * @param {number} multiplier
+ * How many ingots/gems/dusts each ore item should smelt into.
+ * Can be a non-integer, in which case it'll smelt into nuggets/small dusts etc.
+ * @param {Internal.ItemStack} oreItem
+ * The input item to be smelted
  * @param {string} type
+ * The type of ore being smelted, used for recipe IDs
  */
 function smeltOre(event, material, oreProperty, multiplier, oreItem, type) {
 	const smeltingMaterial = oreProperty.getDirectSmeltResult().isNull() ? material : oreProperty.getDirectSmeltResult();

@@ -34,8 +34,6 @@ function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
 	if (!outputMaterial.hasProperty(PropertyKey.FLUID))
 		return;
 
-	console.log(`addTFCMelting: ${material.getName()}, suffix: ${recipeIdSuffix}`)
-
 	event.recipes.tfc.heating(inputItem, tfcProperty.getMeltTemp())
 		.resultFluid(Fluid.of(outputMaterial.getFluid(), mbAmount))
 		.useDurability(true)
@@ -52,7 +50,6 @@ function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
  * @param {String} recipeIdSuffix
  */
 function addAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, recipeIdSuffix) {
-	console.log(`addAnvilRecipe: ${material.getName()}, suffix: ${recipeIdSuffix}`)
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	event.recipes.tfc.anvil(outputItem, inputItem, steps)
 		.tier(tfcProperty.getTier())
@@ -69,7 +66,6 @@ function addAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, re
  */
 function addMaterialRecycling(event, inputItem, material, tagPrefixName, tagPrefix) {
 	const ingotAmount = getMaterialAmount(tagPrefix, material);
-
 	addMaterialRecyclingNoTagPrefix(event, inputItem, material, tagPrefixName, ingotAmount);
 }
 
@@ -158,7 +154,6 @@ const getFillingNBT = (material, amount) => {
  */
 function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount) {
 	const materialName = material.getName();
-	console.log(`addMaterialCasting: ${materialName}, outputItem: ${outputItem}`);
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
@@ -170,7 +165,6 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
 		
-		console.log(`addMaterialCasting: ${materialName}, mold: ${ceramicMold}`);
 		event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
 			.id(`tfg:casting/${id}`);
 
@@ -213,8 +207,6 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
  */
 function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier) {
-	console.log(`addMaterialWelding: ${material.getName()}, output: ${outputItem}`);
-
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	const id = `${material.getName()}_${linuxUnfucker(outputItem)}`;
 	let compactingTier = nonTfcTier;
@@ -255,7 +247,6 @@ function registerTFGMaterialRecipes(event) {
 			|| material === GTMaterials.DamascusSteel)
 		{ return; }
 
-		console.log(`forEachMaterial: ${material.getName()}`);
 		if (material.hasProperty(PropertyKey.DUST)) {
 			processDust(event, material)
 			processPowder(event, material)
@@ -263,7 +254,7 @@ function registerTFGMaterialRecipes(event) {
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		if (toolProperty !== null) {
-			modifyRecyclingAmounts(event, material)
+			modifyRecyclingAmounts(material)
 			let circuit = 1;
 			processGTToolHead(event, GTToolType.SWORD, "sword_head", TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', 'tfc:ceramic/sword_blade_mold', circuit++, material)
 			processGTToolHead(event, GTToolType.PICKAXE, "pickaxe_head", TFGTagPrefix.toolHeadPickaxe, 'tfg:pickaxe_head_extruder_mold', 'tfc:ceramic/pickaxe_head_mold', circuit++, material)
@@ -355,8 +346,7 @@ function registerTFGMaterialRecipes(event) {
 			processPureDust(event, material)
 
 			// Indicators
-			event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator` },
-				'minecraft:gravel', '#tfc:rock/gravel')
+			event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator` }, 'minecraft:gravel', '#tfc:rock/gravel')
 		}
 	})
 }

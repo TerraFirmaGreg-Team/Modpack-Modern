@@ -41,11 +41,10 @@ function processToolMortar(event, toolType, material) {
  * @param {Internal.ItemStack} extruderMold 
  * @param {Internal.ItemStack} ceramicMold
  * @param {number} circuitMeta 
+ * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
- * @returns 
  */
 function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extruderMold, ceramicMold, circuitMeta, material) {
-	console.log(`processGTToolHead: ${material.getName()}, tool type: ${tagPrefixName}`)
 	const toolItem = ToolHelper.get(toolType, material);
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 
@@ -107,31 +106,25 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
  * @param {Internal.ItemStack} extruderMold 
  * @param {Internal.ItemStack} ceramicMold
  * @param {number} circuitMeta 
+ * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material) {
-	console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}`)
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 	if (toolHeadItem.isEmpty())
 		return;
 
-	console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, remove crafting recipe`)
 	event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
 
-	console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, get material amount`)
 	const materialName = material.getName();
 	const materialAmount = getMaterialAmount(headTagPrefix, material);
 
-	console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, material amount: ${materialAmount}`)
-
 	// Metal-based tools
 	if (material.hasProperty(PropertyKey.INGOT)) {
-		console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, get ingot`)
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 		if (ingotItem.hasTag('c:hidden_from_recipe_viewers'))
 			return
 
-		console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, extruder`)
 		event.recipes.gtceu.extruder(`tfg:extrude_${materialName}_ingot_to_${tagPrefixName}`)
 			.itemInputs(ingotItem.copyWithCount(materialAmount))
 			.notConsumable(extruderMold)
@@ -139,7 +132,6 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.duration(material.getMass() * 6)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, curving`)
 		let input_array = [];
 		for (let i = 0; i < materialAmount; i++) {
 			input_array.push(ingotItem);
@@ -149,18 +141,15 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.id(`tfg:vi/curving/${materialName}_ingot_to_${tagPrefixName}`)
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
-			console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, add casting`)
 			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144);
 		}
 	}
 	// Gem tools
 	else if (material.hasProperty(PropertyKey.GEM)) {
-		console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, get gem`)
 		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, materialAmount)
 		if (gemItem.isEmpty() || gemItem.hasTag('c:hidden_from_recipe_viewers'))
 			return
 
-		console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, laser engraver`)
 		event.recipes.gtceu.laser_engraver(`tfg:engrave_${materialName}_gem_to_${tagPrefixName}`)
 			.itemInputs(gemItem)
 			.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
@@ -170,16 +159,14 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.EUt(GTValues.VA[GTValues.LV])
 	}
 
-	console.log(`processToolHead: ${material.getName()}, tool type: ${tagPrefixName}, add recycling for head`)
 	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);
 }
 
 
 /**
- * @param {Internal.RecipesEventJS} event 
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function modifyRecyclingAmounts(event, material) {
+function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
