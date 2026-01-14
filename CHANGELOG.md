@@ -29,6 +29,7 @@
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
 - Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
+- You can now use any wrench to remove the extruder molds from the curving press instead of just the create wrench @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -47,6 +48,9 @@
 - Fixed soaked paper in a helve hammer having a blow count of less than 1 for some anvils (#2655) @Pyritie
 - Fixed casting of rods and gears for various metals @Pyritie
 - Fixed a dupe with scraping knives (#2716) @Inceitious
+- Fixed a rendering issue with the lunchboxes when held @Thomasx0
+- Fixed the cooling lunchbox not stacking empty cells correctly (#2475) @Thomasx0
+- Fixed the lunchboxes not removing the "cooling" trait when items were removed with the number keys @Thomasx0
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare + @Maxiffon
