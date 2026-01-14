@@ -1,0 +1,23 @@
+{
+  "name": "Горизонтальная стена",
+  "sortnum": 1,
+  "category": "buildinggadgets2:modes",
+  "icon": "buildinggadgets2:textures/book/mode/horizontal_wall.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "«Горизонтальная стена» работает по-разному. Если включено «Разместить сверху», гаджет построит область над блоком, на который вы смотрите, или вытянет её к вам, если вы смотрите на боковую грань. $(br2)Если «Разместить сверху» выключено, он будет строить вокруг целевого блока.$(br2)Смотрите картинки справа — там показаны варианты."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Горизонтальная стена",
+      "images": [
+        "buildinggadgets2:textures/book/images/horzwall1.png",
+        "buildinggadgets2:textures/book/images/horzwall3.png",
+        "buildinggadgets2:textures/book/images/horzwall2.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    }
+  ]
+}
