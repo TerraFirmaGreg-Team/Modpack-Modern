@@ -68,6 +68,7 @@ ServerEvents.tags('block', event => {
 	registerAFCBlockTags(event)
 	registerAsticorCartsBlockTags(event)
 	registerBeneathBlockTags(event)
+	registerBlockRunnerBlockTags(event)
 	registerComputerCraftBlockTags(event)
 	registerCreateBlockTags(event)
 	registerCreateAdditionsBlockTags(event)
@@ -197,6 +198,13 @@ GTCEuServerEvents.oreVeins(event => {
 GTCEuServerEvents.fluidVeins(event => {
 	registerGTCEUBedrockFluidVeins(event)
 })
+
+
+/** Correct recipe IDs to replace invalid characters */
+function linuxUnfucker(value) {
+	const str = (value === undefined || value === null) ? "" : value.toString();
+	return str.replace(/[/:\s]/g, "_");
+};
 
 /**
  * Событие регистрации рецептов.

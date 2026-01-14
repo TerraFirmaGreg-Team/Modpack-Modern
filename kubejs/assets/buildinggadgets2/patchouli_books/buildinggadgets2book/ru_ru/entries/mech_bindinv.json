@@ -1,0 +1,34 @@
+{
+  "name": "Привязка инвентаря",
+  "sortnum": 1,
+  "category": "buildinggadgets2:mechanics",
+  "icon": "buildinggadgets2:textures/book/icons/bind_inventory.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Привязка к инвентарю позволяет взаимодействовать с выбранным хранилищем: извлекать и вставлять предметы. Сначала включите режим 'привязать инвентарь' в меню параметров вашего гаджета. Затем Shift+ПКМ по сундуку или другому инвентарю. $(br2)Синяя рамка вокруг хранилища подтвердит успех. Shift+ПКМ по блоку без инвентаря (например, по траве), чтобы отвязаться."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Привязка инвентаря",
+      "images": [
+        "buildinggadgets2:textures/book/images/bindinv.png"
+      ],
+      "border": true,
+      "text": "Привязка к сундуку!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Можно привязаться и к системе Applied Energistics 2: подключитесь к её беспроводной точке доступа (Wireless Access Point). $(br2)У гаджета будет неограниченная дальность, так что за апгрейды радиуса можно не переживать!"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Привязка инвентаря",
+      "images": [
+        "buildinggadgets2:textures/book/images/bindinv_ae.png"
+      ],
+      "border": true,
+      "text": "Привязка к AE2!"
+    }
+  ]
+}

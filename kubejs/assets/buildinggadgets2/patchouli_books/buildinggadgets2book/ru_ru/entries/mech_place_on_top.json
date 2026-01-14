@@ -1,0 +1,22 @@
+{
+  "name": "Разместить сверху",
+  "sortnum": 1,
+  "category": "buildinggadgets2:mechanics",
+  "icon": "buildinggadgets2:textures/book/icons/place_on_top.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Опция «Разместить сверху» работает по-разному в каждом режиме, а в некоторых режимах не делает вообще ничего.$(br2)В целом вместо размещения вокруг блока гаджет будет ставить блоки поверх него. Попробуйте и посмотрите, как меняется рендер!$(br2)Для примера — картинки справа."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Разместить сверху",
+      "images": [
+        "buildinggadgets2:textures/book/images/placeontop1.png",
+        "buildinggadgets2:textures/book/images/placeontop2.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    }
+  ]
+}
