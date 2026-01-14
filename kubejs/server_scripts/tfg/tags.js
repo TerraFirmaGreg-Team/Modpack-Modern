@@ -82,13 +82,11 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
 	
 	// Steam Bloomery
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:charcoal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:rich_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:poor_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:coal_dust");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:charcoal_dust");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
 		
 	//#region holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')

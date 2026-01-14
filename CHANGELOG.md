@@ -30,6 +30,7 @@
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
 - Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
 - You can now use any wrench to remove the extruder molds from the curving press instead of just the create wrench @Pyritie
+- You can now use coal as bloomery fuel! Both the vanilla item as well as any of the raw coals
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
