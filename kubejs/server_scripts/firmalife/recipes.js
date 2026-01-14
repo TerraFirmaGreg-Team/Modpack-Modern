@@ -394,13 +394,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion
 
-	//#region Plated blocks
-
-	generatePlatedBlockRecipe(event, GTMaterials.Chromium);
-	generatePlatedBlockRecipe(event, GTMaterials.StainlessSteel);
-
-	// #endregion
-
 	// #region Drying mat alternatives
 
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/leafy_kelp' }).id('tfg:shaped/drying_mat_leafy_kelp')

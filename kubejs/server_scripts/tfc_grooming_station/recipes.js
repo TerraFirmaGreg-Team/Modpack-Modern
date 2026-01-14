@@ -3,15 +3,19 @@
 
 const registerTFCGroomingStationRecipes = (event) => {
 
-	global.TFC_EQUIPMENT_METALS.forEach(material => {
-		event.recipes.gtceu.shaped(`tfcgroomer:${material}_grooming_station`, [
+	global.TFC_EQUIPMENT_METALS.forEach(materialName => {
+		const trough = `tfcgroomer:${materialName}_grooming_station`;
+
+		event.recipes.gtceu.shaped(trough, [
 			'ABA',
 			'AAA',
 			'C C'
 		], {
-			A: `#forge:plates/${material}`,
+			A: `#forge:plates/${materialName}`,
 			B: '#forge:tools/hammers',
 			C: 'tfc:wattle'
-		}).addMaterialInfo().id(`tfcgroomer:${material}_grooming_station`)
+		}).addMaterialInfo().id(`tfcgroomer:${materialName}_grooming_station`)
+
+		addMaterialRecyclingNoTagPrefix(event, trough, GTMaterials.get(materialName), 'grooming_station', 5);
 	})
 }
