@@ -14,6 +14,7 @@
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
 - Ice slush is now drinkable, for a cooling effect (#2708) @Inceitious
+- You can now use coal as bloomery fuel! Both the vanilla item as well as any of the raw coals (#2731) @Pyritie
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 - Large gears can now be crafted in an anvil/mechanical press @Pyritie
 - Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
@@ -30,7 +31,7 @@
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
 - Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
 - You can now use any wrench to remove the extruder molds from the curving press instead of just the create wrench @Pyritie
-- You can now use coal as bloomery fuel! Both the vanilla item as well as any of the raw coals
+- Added wrapped locometal to gregtech facade blocks (#2726) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
