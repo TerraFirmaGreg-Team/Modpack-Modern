@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "Наприклад, щоб створити 1000 мБ $(thing)Бронзи$() (показано праворуч), вам знадобиться від 700 до 800 мБ $(thing)Міді$() та від 200 до 300 мБ $(thing)Оловa$().$(br2)Наступні три сторінки показують рецепти трьох видів бронзи. Кожен тип бронзи можна використовувати для виготовлення інструментів, $(l:mechanics/armor)Броні$() та інших металевих предметів. Вони трохи відрізняються, тому отримані інструменти матимуть різну міцність, ефективність та шкоду при атаці."
 		},
 		{
 			"type": "patchouli:spotlight",
