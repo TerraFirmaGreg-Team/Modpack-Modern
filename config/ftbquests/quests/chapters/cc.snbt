@@ -9,204 +9,313 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["26394C1290D70AB6"]
-			description: ["To continue the quest line, you need to craft any of the computers."]
-			icon: "computercraft:computer_advanced"
+			dependencies: ["6B5537B80EB05B30"]
+			description: ["{quests.computer.cc_guide.description}"]
+			icon: "gtceu:lv_assembler"
 			id: "591C5E26EE7466F3"
 			shape: "gear"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "6BC9F3064F29B986"
 				title: "CC: Tweaked"
 				type: "checkmark"
 			}]
+			title: "{quests.computer.cc_guide.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56DA2434C9B3182F"]
+			description: ["{quests.computer.disks.description}"]
+			id: "6977D001BC140B0A"
+			subtitle: "{quests.computer.disks.subtitle}"
+			tasks: [
+				{
+					id: "7C0CEE75FAF5F776"
+					item: "computercraft:disk_drive"
+					type: "item"
+				}
+				{
+					id: "15776F3130810C94"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:disks)"
+						}
+					}
+					title: "{quests.computer.disks.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.comouter.disks.title}"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"591C5E26EE7466F3"
+				"16B735F9C391D260"
+			]
+			description: ["{quests.computer.computers.description}"]
+			id: "56DA2434C9B3182F"
+			size: 1.0d
+			subtitle: "{quests.computer.computers.subtitle}"
+			tasks: [{
+				id: "4B7A63472E108E32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:computer)"
+					}
+				}
+				title: "{quests.computer.computers.task}"
+				type: "item"
+			}]
+			title: "{quests.computer.computers.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "0BFFB20573B2A9A5"
+			dependencies: ["502B24C71210D52E"]
+			description: ["{quests.computer.pocket_computer.description}"]
+			id: "349250C789434758"
 			tasks: [{
-				id: "4A52931C6E78FFC2"
-				item: "computercraft:computer_normal"
+				id: "53E9B55357C8A911"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:pocket_computers)"
+					}
+				}
+				title: "{quests.computer.pocket_computer.task}"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "249A6189A9334B14"
-			tasks: [{
-				id: "28B5BBAAA33CDEDA"
-				item: "computercraft:computer_advanced"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["249A6189A9334B14"]
-			id: "2A507BD15FBA08FC"
-			tasks: [{
-				id: "73DA9F99EF913F3D"
-				item: "computercraft:turtle_advanced"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["0BFFB20573B2A9A5"]
-			id: "4C3A1901BA40FB24"
-			tasks: [{
-				id: "64B16F8F192CEE23"
-				item: "computercraft:turtle_normal"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
-			]
-			dependency_requirement: "one_completed"
-			id: "5196983324E8F52A"
-			tasks: [{
-				id: "420333B377F27A78"
-				item: "computercraft:cable"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
-			]
-			dependency_requirement: "one_completed"
-			icon: "computercraft:monitor_advanced"
-			id: "7FFDA4C59514AA98"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "7D070BAFC0F4226A"
-				type: "checkmark"
-			}]
-			title: "It's time to craft trinkets"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "7B500E0A921321E9"
-			shape: "circle"
-			tasks: [{
-				id: "42590471EA46FCE8"
-				item: "computercraft:monitor_normal"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "4B88F658A752FA3F"
-			shape: "circle"
-			tasks: [{
-				id: "42CCFEF24A41C1FE"
-				item: "computercraft:monitor_advanced"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "48C4D2DB2E7F6F59"
-			shape: "circle"
-			tasks: [{
-				id: "72C0320D738C604E"
-				item: "computercraft:wireless_modem_normal"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "2A43647C3C5D9E83"
-			shape: "circle"
-			tasks: [{
-				id: "79AE74FA098E7DC3"
-				item: "computercraft:wireless_modem_advanced"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "38F42B6D14F8DED1"
-			shape: "circle"
-			tasks: [{
-				id: "702BB2F0572F5E48"
-				item: "computercraft:wired_modem"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "27577CB16820E75B"
-			shape: "circle"
-			tasks: [{
-				id: "267B8DB63952DF1A"
-				item: "computercraft:speaker"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3AE64484AB9F1048"
-			shape: "circle"
-			tasks: [{
-				id: "2B14E62B1C603EFD"
-				item: "computercraft:disk_drive"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "77439E3A3EC781F8"
-			shape: "circle"
-			tasks: [{
-				id: "66B7614C462CE161"
-				item: "computercraft:printer"
-				type: "item"
-			}]
-			x: 9.0d
+			title: "{quests.computer.pocket_computer.title}"
+			x: 4.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3DFB9A8A2BE3E85B"
-			shape: "circle"
+			dependencies: [
+				"56DA2434C9B3182F"
+				"502B24C71210D52E"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.computer.turtle.description}"]
+			id: "1E72A25FA2981BD1"
+			subtitle: "{quests.computer.turtle.subtitle}"
 			tasks: [{
-				id: "616A905A423A55B0"
-				item: "computercraft:disk_drive"
+				id: "36D17BE2A99CB925"
+				item: "computercraft:turtle_normal"
 				type: "item"
 			}]
-			x: 9.5d
+			title: "{quests.computer.turtle.title}"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["56DA2434C9B3182F"]
+			description: ["{quests.computer.wireless_modem.description}"]
+			id: "502B24C71210D52E"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "1CA26CA84C0BD329"
+				item: "computercraft:wireless_modem_normal"
+				type: "item"
+			}]
+			title: "{quests.computer.wireless_modem.title}"
+			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"56DA2434C9B3182F"
+				"502B24C71210D52E"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.computer.turtle_advancdd.description}"]
+			id: "61B4EDA4365E1B7A"
+			tasks: [{
+				id: "4032A8D2000CDBAA"
+				item: "computercraft:turtle_advanced"
+				type: "item"
+			}]
+			title: "{quests.computer.turtle_advanced.title}"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["591C5E26EE7466F3"]
+			description: ["{quests.computer.basic_red.description}"]
+			id: "033E44F77CA2B6BA"
+			size: 1.0d
+			subtitle: "{quests.computer.basic_red.subtitle}"
+			tasks: [
+				{
+					id: "5995C8E8C158856B"
+					item: "morered:diode"
+					type: "item"
+				}
+				{
+					id: "13ECF23EEBFE7447"
+					item: "morered:and_gate"
+					type: "item"
+				}
+				{
+					id: "25262490B11E23B5"
+					item: "morered:or_gate"
+					type: "item"
+				}
+				{
+					id: "4413AE93F2E3A0FF"
+					item: "morered:not_gate"
+					type: "item"
+				}
+				{
+					id: "2BC427CB80909A95"
+					item: "morered:pulse_gate"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.basic_red.title}"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["591C5E26EE7466F3"]
+			id: "51B336773A0A451A"
+			tasks: [
+				{
+					id: "749E467132D7E58C"
+					item: "morered:nor_gate"
+					type: "item"
+				}
+				{
+					id: "00F7304DF80447BD"
+					item: "morered:nand_gate"
+					type: "item"
+				}
+				{
+					id: "64B7EB0D3BD0BDC9"
+					item: "morered:xor_gate"
+					type: "item"
+				}
+				{
+					id: "0AA76E39A243D92C"
+					item: "morered:xnor_gate"
+					type: "item"
+				}
+				{
+					id: "20C73C6E2F8C93F5"
+					item: "morered:multiplexer"
+					type: "item"
+				}
+				{
+					id: "000F5AE24FD54B1C"
+					item: "morered:and_2_gate"
+					type: "item"
+				}
+				{
+					id: "3E62EE017CF4103E"
+					item: "morered:nand_2_gate"
+					type: "item"
+				}
+				{
+					id: "39CB3C7BAFA82E73"
+					item: "morered:latch"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.intermediate_red.title}"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["591C5E26EE7466F3"]
+			description: ["{quests.computer.advanced_red.description}"]
+			id: "67EB5BF482B01D12"
+			tasks: [
+				{
+					id: "17EB770DA76E8195"
+					item: "morered:bitwise_diode"
+					type: "item"
+				}
+				{
+					id: "4EF60FFCF8249055"
+					item: "morered:bitwise_not_gate"
+					type: "item"
+				}
+				{
+					id: "31F82E322E814FCE"
+					item: "morered:bitwise_or_gate"
+					type: "item"
+				}
+				{
+					id: "60D89CF4A910B3E1"
+					item: "morered:bitwise_and_gate"
+					type: "item"
+				}
+				{
+					id: "153D0DAC5FB2BE65"
+					item: "morered:bitwise_xor_gate"
+					type: "item"
+				}
+				{
+					id: "5C84BB871EC1CDBB"
+					item: "morered:bitwise_xnor_gate"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.advanced_red.title}"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56DA2434C9B3182F"]
+			description: ["{quests.computer.wired_modem.description}"]
+			id: "40D6AFCCC87A2DA1"
+			tasks: [
+				{
+					id: "181C7AAE714B32B7"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:wired_modem)"
+						}
+					}
+					title: "{quests.computer.wired_modem.task}"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B6829279B0BAF41"
+					item: { Count: 4, id: "computercraft:cable" }
+					type: "item"
+				}
+			]
+			title: "{quests.computer.wired_modem.title}"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["502B24C71210D52E"]
+			description: ["{quests.computer.ender_modem.description}"]
+			id: "310B91ECAA90B141"
+			subtitle: "{quests.computer.ender_modem.subtitle}"
+			tasks: [{
+				count: 2L
+				id: "24154FEAD66DD536"
+				item: "computercraft:wireless_modem_advanced"
+				type: "item"
+			}]
+			title: "{quests.computer.ender_modem.title}"
+			x: 4.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.computer.subtitle}"]
