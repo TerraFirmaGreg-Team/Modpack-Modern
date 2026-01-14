@@ -5531,7 +5531,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
+                    "file_name": "ExtremeSoundMuffler-3.50-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5539,20 +5539,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5IIKsxiL/versions/7daeCqUP/ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
-                    "id": "7daeCqUP",
+                    "url": "https://cdn.modrinth.com/data/5IIKsxiL/versions/ZPvfUsYs/ExtremeSoundMuffler-3.50-forge-1.20.1.jar",
+                    "id": "ZPvfUsYs",
                     "parent_id": "5IIKsxiL",
                     "hashes": {
-                        "sha512": "5fb4ef6bdcf344dae3af9f39a8ce510ebb3fe5d928ce17ba3067bb1e034e3eeb953c0fd905fa4462c1eb6b0d075d84f9fbf734dfc3b31423a75054b30281518a",
-                        "sha1": "3b73ae534ff7e4f9c65e78c1f868655a23ab90c7"
+                        "sha512": "1562d91374a88edda9604a8ca2e413a6b83084101282630153beb45b19cf6577c5039aa884b08a328a87eb6ab885259c6270bd29505cca1ffd0fdbdacf144ade",
+                        "sha1": "f10e7176a75760a316ee4a829efcfc487d2ff2f6"
                     },
                     "required_dependencies": [],
-                    "size": 267751,
-                    "date_published": "2025-12-23T21:58:19.811834Z"
+                    "size": 267750,
+                    "date_published": "2026-01-13T00:43:23.303899Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
+                    "file_name": "ExtremeSoundMuffler-3.50-forge-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5560,16 +5560,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7371/8/ExtremeSoundMuffler-3.49.2-forge-1.20.1.jar",
-                    "id": "7371008",
+                    "url": "https://edge.forgecdn.net/files/7452/801/ExtremeSoundMuffler-3.50-forge-1.20.1.jar",
+                    "id": "7452801",
                     "parent_id": "363363",
                     "hashes": {
-                        "sha1": "3b73ae534ff7e4f9c65e78c1f868655a23ab90c7",
-                        "md5": "d03d1852c5a1701657af88f690ac5bb2"
+                        "sha1": "f10e7176a75760a316ee4a829efcfc487d2ff2f6",
+                        "md5": "fe23d4e4d2938c006658188438e03f1e"
                     },
                     "required_dependencies": [],
-                    "size": 267751,
-                    "date_published": "2025-12-23T21:58:17.897Z"
+                    "size": 267750,
+                    "date_published": "2026-01-13T00:43:21.610Z"
                 }
             ]
         },
@@ -7004,7 +7004,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.61.jar",
+                    "file_name": "greate-0.0.62.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7013,23 +7013,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/bZDj2HqJ/greate-0.0.61.jar",
-                    "id": "bZDj2HqJ",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/FDjUACYa/greate-0.0.62.jar",
+                    "id": "FDjUACYa",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "bfee9bf3bbaaf4f0027100008030d6cd69fb09fd6a352b644a910523e2bf53837123cd6221fc5606d670637584901693d278e27b7d1485b592a4b4650a15944d",
-                        "sha1": "1ad889dbd2838045a2df194bfc757b9bae57d273"
+                        "sha512": "8458d070ec94b6a130944f80a67a72fbf89d099e8378ab0a76eb0130eaa60f5e9af3d61b43f968694c78653a4c6f453b63a9fb8947910c06ad9934bd3c7c120e",
+                        "sha1": "0e4ffe5e88f97df724172b3061a1691028f45582"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "LNytGWDc"
+                        "LNytGWDc",
+                        "7tG215v7"
                     ],
-                    "size": 1253065,
-                    "date_published": "2026-01-01T21:21:45.604190Z"
+                    "size": 1253198,
+                    "date_published": "2026-01-13T16:37:04.520883Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.61.jar",
+                    "file_name": "greate-0.0.62.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7038,19 +7038,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7405/523/greate-0.0.61.jar",
-                    "id": "7405523",
+                    "url": "https://edge.forgecdn.net/files/7455/72/greate-0.0.62.jar",
+                    "id": "7455072",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "1ad889dbd2838045a2df194bfc757b9bae57d273",
-                        "md5": "0446ffaa7cafa06d3148a1944a81b431"
+                        "sha1": "0e4ffe5e88f97df724172b3061a1691028f45582",
+                        "md5": "b4c8e38c9c69a88266d5eb64fcc21f18"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "328085"
+                        "328085",
+                        "890405"
                     ],
-                    "size": 1253065,
-                    "date_published": "2026-01-01T21:21:43.007Z"
+                    "size": 1253198,
+                    "date_published": "2026-01-13T16:35:06.893Z"
                 }
             ]
         },
@@ -9454,7 +9454,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.21-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.22-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9463,20 +9463,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/jToYHMM9/moonlight-1.20-2.16.21-forge.jar",
-                    "id": "jToYHMM9",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/HzfmyWBj/moonlight-1.20-2.16.22-forge.jar",
+                    "id": "HzfmyWBj",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "9dcda73161f86e752b079a5855c936977b15b8ded3ac1407b191ce605b8de5c2ed18c33ccef5f85b6bd7080b8b81ca3ea5f7dfafb51b8d237e2078e2b01904f9",
-                        "sha1": "81054a1ec290b7a5263c60d3ab8fa73005b79274"
+                        "sha512": "7e9709340795f1acb1bf828b90369b1274e830ed924fddbbd688592753ce8e50f90d9b95f5fbb61ea7b1e5cdce1b2f91a444225c075b2af3e2413a2242e87ea3",
+                        "sha1": "5291622341a2138bb420cd6f851d9cbf1cb72a73"
                     },
                     "required_dependencies": [],
-                    "size": 1389157,
-                    "date_published": "2026-01-08T00:26:57.943185Z"
+                    "size": 1389715,
+                    "date_published": "2026-01-14T00:45:22.835110Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.21-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.22-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9485,16 +9485,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7431/825/moonlight-1.20-2.16.21-forge.jar",
-                    "id": "7431825",
+                    "url": "https://edge.forgecdn.net/files/7456/599/moonlight-1.20-2.16.22-forge.jar",
+                    "id": "7456599",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "81054a1ec290b7a5263c60d3ab8fa73005b79274",
-                        "md5": "fb8baef04164b20185028d8d6f74e351"
+                        "sha1": "5291622341a2138bb420cd6f851d9cbf1cb72a73",
+                        "md5": "10dce0da9c4e9d29ce8c9705af4e62b5"
                     },
                     "required_dependencies": [],
-                    "size": 1389157,
-                    "date_published": "2026-01-08T00:26:49.470Z"
+                    "size": 1389715,
+                    "date_published": "2026-01-14T00:42:01.090Z"
                 }
             ]
         },
@@ -13016,32 +13016,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.26.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7018/662/tfclunchbox-1.20.1-1.0.0.26.jar",
-                    "id": "7018662",
-                    "parent_id": "1283445",
-                    "hashes": {
-                        "sha1": "e9ddf2c2ea8a3458c06ef31712543d201a1cb499",
-                        "md5": "574470b68082c6ca738468c372d7dbe0"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 148782,
-                    "date_published": "2025-09-21T11:20:27.443Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.24.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.26.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13050,18 +13026,42 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/GJoZTKwF/versions/FBCKL0ph/tfclunchbox-1.20.1-1.0.0.24.jar",
-                    "id": "FBCKL0ph",
+                    "url": "https://cdn.modrinth.com/data/GJoZTKwF/versions/oLBw4c0k/tfclunchbox-1.20.1-1.0.0.26.jar",
+                    "id": "oLBw4c0k",
                     "parent_id": "GJoZTKwF",
                     "hashes": {
-                        "sha512": "710c87bada49f42833f0a9885be50d2c26f0487066727c24b185c2246ee69856fe77a06ea3cb889e38168ad4513ec0d7e6f5846b2a9f1c4009ff55c7f78dd699",
-                        "sha1": "2b08da39c36d2590f0855e8ca5294f385b68f5ba"
+                        "sha512": "8a9bdd6c09965df91cd12ab2327888204149b5600af0a7c4c86c6f6a1e697a4417312f00bea9daf7fca53f4ae80ef74c85f32770bb7621b72053f33767a07841",
+                        "sha1": "e9ddf2c2ea8a3458c06ef31712543d201a1cb499"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 148531,
-                    "date_published": "2025-08-01T04:08:36.783768Z"
+                    "size": 148782,
+                    "date_published": "2025-10-16T11:04:01.581223Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.27.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7458/423/tfclunchbox-1.20.1-1.0.0.27.jar",
+                    "id": "7458423",
+                    "parent_id": "1283445",
+                    "hashes": {
+                        "sha1": "1226f74ab23c97398f23700a8f571e200fe311f0",
+                        "md5": "718421027553531294b611f80719da0c"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 129776,
+                    "date_published": "2026-01-14T13:05:43.293Z"
                 }
             ]
         },
