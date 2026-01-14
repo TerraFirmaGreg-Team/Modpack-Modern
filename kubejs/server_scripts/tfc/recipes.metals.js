@@ -273,7 +273,7 @@ function registerTFCMetalsRecipes(event) {
 		.id('tfc:anvil/blue_steel_ingot')
 
 	// Cast iron -> Raw Iron Bloom
-	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
+	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', '#tfg:bloomery_basic_fuels', Fluid.of('gtceu:iron', 144), 15000)
 		.id('tfc:bloomery/raw_iron_bloom')
 
 	// Cast Iron -> Pig Iron

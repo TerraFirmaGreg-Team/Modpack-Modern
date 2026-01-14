@@ -1,0 +1,21 @@
+{
+  "name": "Построить ко мне",
+  "sortnum": 1,
+  "category": "buildinggadgets2:modes",
+  "icon": "buildinggadgets2:textures/book/mode/build_to_me.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Режим «Построить ко мне» строит ряд блоков от грани блока, на которую вы смотрите, до игрока. Ряд может быть горизонтальным или вертикальным — зависит от выбранной грани.$(br2)Настройка радиуса в этом режиме игнорируется.$(br2)Если включить «Разместить сверху», ряд будет строиться до головы игрока, а не до ног."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Построить ко мне",
+      "images": [
+        "buildinggadgets2:textures/book/images/ghost_render.png"
+      ],
+      "border": true,
+      "text": "Строим до игрока"
+    }
+  ]
+}

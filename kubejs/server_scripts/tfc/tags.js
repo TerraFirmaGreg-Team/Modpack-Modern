@@ -434,6 +434,14 @@ function registerTFCItemTags(event) {
     event.add('forge:dyes/green', 'tfc:powder/malachite')
     event.add('forge:dyes/brown', 'tfc:powder/garnierite')
     event.add('forge:dyes/yellow', 'tfc:powder/limonite')
+
+    //Hanging Signs Soft & Hard Wood
+    global.TFC_EQUIPMENT_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+    })
 }
 
 /** @param {TagEvent.Block} event */
