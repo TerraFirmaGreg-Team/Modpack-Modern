@@ -10,9 +10,6 @@ function processTFCArmor(event, material) {
 
 	const materialName = material.getName();
 
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
-
 	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 	const doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1);
 
@@ -60,12 +57,7 @@ function processTFCArmor(event, material) {
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function processTFCTool(event, material) {
-	console.log(`processTFCTool: ${material.getName()}`)
-
 	const materialName = material.getName();
-
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 	
 	const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
@@ -265,15 +257,9 @@ function processPlatedBlock(event, material) {
 
 	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
 	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
-
-	// firmalife plated blocks don't have this property
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	
 	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
 	const materialName = material.getName();
-
-	console.log(`processPlatedBlock: ${materialName}`);
 
 	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
 		.id(`tfg:shapeless/${materialName}_plated_block`)
