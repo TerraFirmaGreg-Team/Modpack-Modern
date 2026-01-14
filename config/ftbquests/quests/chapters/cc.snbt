@@ -48,7 +48,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.comouter.disks.title}"
+			title: "{quests.computer.disks.title}"
 			x: 0.0d
 			y: 1.5d
 		}
@@ -137,7 +137,7 @@
 				"502B24C71210D52E"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{quests.computer.turtle_advancdd.description}"]
+			description: ["{quests.computer.turtle_advanced.description}"]
 			id: "61B4EDA4365E1B7A"
 			tasks: [{
 				id: "4032A8D2000CDBAA"
