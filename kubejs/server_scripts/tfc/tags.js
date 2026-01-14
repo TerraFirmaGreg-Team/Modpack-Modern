@@ -437,10 +437,8 @@ function registerTFCItemTags(event) {
 
     //Hanging Signs Soft & Hard Wood
     global.TFC_EQUIPMENT_METALS.forEach(metal => {
-        event.add(`tfg:hanging_sign/${metal.getName()}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal.getName()}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal.getName()}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal.getName()}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.concat(global.AFC_HARDWOOD_TYPES).map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.concat(global.AFC_SOFTWOOD_TYPES).map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
     })
 }
 
