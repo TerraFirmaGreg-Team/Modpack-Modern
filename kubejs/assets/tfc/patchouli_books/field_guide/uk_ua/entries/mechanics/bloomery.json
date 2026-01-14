@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Горно",
+  "name": "Горн",
   "category": "tfc:mechanics",
   "icon": "tfc:bloomery",
   "pages": [
@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/bloomery",
-      "text": "The bloomery is made from 8 $(thing)Bronze Double Plates$()."
+      "text": "Горн виготовляється з 8 $(thing)Подвійних бронзових пластин$()."
     },
     {
       "type": "patchouli:multiblock",
