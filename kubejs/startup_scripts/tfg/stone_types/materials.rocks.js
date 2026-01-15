@@ -170,6 +170,11 @@ const registerTFGRockMaterials = (event) => {
 
 	// This can also be used for things that aren't really rock types, if you want to generate similar recipes.
 	global.BIG_ROCK_TABLE = {
+
+		/////////////////////////////////////////////////////////////////////////////////////////////
+		// TFC ROCKS
+		/////////////////////////////////////////////////////////////////////////////////////////////
+
 		"gabbro": {
 			material: mafic,
 			tfcTag: 'tfc:igneous_intrusive_items',
@@ -339,6 +344,11 @@ const registerTFGRockMaterials = (event) => {
 			support: 'tfg:quartzite_support',
 			isTFC: true
 		},
+		
+		/////////////////////////////////////////////////////////////////////////////////////////////
+		// BENEATH ROCKS
+		/////////////////////////////////////////////////////////////////////////////////////////////
+
 		// Migmatite
 		"deepslate": generateMissing('deepslate', {
 			material: metamorphic,
@@ -449,6 +459,11 @@ const registerTFGRockMaterials = (event) => {
 				generateForms('tuff', 'create:small_%s_brick', 'create:small_tuff_bricks')
 			]
 		},
+		
+		/////////////////////////////////////////////////////////////////////////////////////////////
+		// MOON ROCKS
+		/////////////////////////////////////////////////////////////////////////////////////////////
+
 		// Anorthosite
 		"moon_stone": generateMissing('moon_stone', {
 			material: mafic,
@@ -504,8 +519,8 @@ const registerTFGRockMaterials = (event) => {
 				wall: 'tfg:rock/chiseled_bricks_glacio_wall'
 			}
 		}),
-		// Sky stone
-		"suevite": {
+		// Suevite
+		"sky_stone": {
 			material: null,
 			isTFC: false,
 			raw: generateForms('sky_stone', 'ae2:%s', 'ae2:sky_stone_block'),
