@@ -57,11 +57,10 @@ function registerTFGStoneDustRecipes(event) {
 		.itemOutputs('gtceu:quartzite_dust')
 		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
 
-	// TODO: make this line up with the quartzite dust
 	event.recipes.gtceu.autoclave('tfg:quartz_sand_autoclave')
-		.itemInputs('2x gtceu:quartz_sand_dust')
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs('gtceu:quartzite_gem')
-		.duration(30 * 20)
+		.itemInputs('gtceu:quartz_sand_dust')
+		.inputFluids(Fluid.of('minecraft:water', 250))
+		.chancedOutput('gtceu:quartzite_gem', 4500, 0)
+		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 }

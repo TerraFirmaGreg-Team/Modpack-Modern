@@ -114,6 +114,35 @@ const registerTFGRockMaterials = (event) => {
 		};
 	}
 
+
+	/**
+	 * Same as above but a special case for Ad Astra because they're allergic to walls.
+	 * @param {String} id
+	 * The internal ID of a rock type. For example, migmatite is 'deepslate'.
+	 * @param {String} pattern 
+	 * A pattern to use to generate the other rock form strings. 
+	 * %s will be replaced with the id above.
+	 * "_stairs", "_slab", or "_wall" will be appended on the end.
+	 * @param {String} wall
+	 * The TFG wall block.
+	 * @param {{block: String, stair: String, slab: String, wall: String}?} [mossy=null]
+	 * If this rock block has a mossy subset, put it here.
+	 * @param {{block: String, stair: String, slab: String, wall: String}?} [cracked=null]
+	 * If this rock block has a cracked subset, put it here.
+	 * @returns {{block: String, stair: String, slab: String, wall: String, mossy: *?, cracked: *?}?}
+	 */
+	function generateFormsAdAstra(id, pattern, wall, mossy = null, cracked = null) {
+		let replaced = pattern.replace('%s', id);
+		return {
+			block: existingBlock ?? `${replaced}`,
+			stair: `${replaced}_stairs`,
+			slab: `${replaced}_slab`,
+			wall: wall,
+			mossy: mossy,
+			cracked: cracked
+		};
+	}
+
 	/**
 	 * Generates some missing rock-type blocks that don't have stair/slab/wall blocks.
 	 * @param {String} id 
@@ -173,13 +202,147 @@ const registerTFGRockMaterials = (event) => {
 			tfcTag: 'tfc:igneous_extrusive_items',
 			support: 'tfg:basalt_support',
 			isTFC: true,
-			// TODO: create's basalt? vanilla basalt?
+			pillar: 'minecraft:polished_basalt',
+			pillar2: 'minecraft:smooth_basalt',
+		},
+		"andesite": {
+			material: intermediate,
+			tfcTag: 'tfc:igneous_extrusive_items',
+			support: 'tfg:andesite_support',
+			isTFC: true,
+			pillar: 'create:andesite_pillar',
+			pillar2: 'create:layered_andesite',
+			createTag: 'create:stone_types/andesite',
+			stonecutting: [
+				generateForms('andesite', 'create:cut_%s'),
+				generateForms('andesite', 'create:polished_cut_%s'),
+				generateForms('andesite', 'create:cut_%s_brick', 'create:cut_andesite_bricks'),
+				generateForms('andesite', 'create:small_%s_brick', 'create:small_andesite_bricks')
+			]
+		},
+		"dacite": {
+			material: intermediate,
+			tfcTag: 'tfc:igneous_extrusive_items',
+			support: 'tfg:dacite_support',
+			isTFC: true
+		},
+		"rhyolite": {
+			material: felsic,
+			tfcTag: 'tfc:igneous_extrusive_items',
+			support: 'tfg:rhyolite_support',
+			isTFC: true
+		},
+		"shale": {
+			material: clastic,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:shale_support',
+			isTFC: true
+		},
+		"claystone": {
+			material: clastic,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:claystone_support',
+			isTFC: true
+		},
+		"conglomerate": {
+			material: clastic,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:conglomerate_support',
+			isTFC: true
+		},
+		"limestone": {
+			material: carbonate,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:limestone_support',
+			isTFC: true,
+			pillar: 'create:limestone_pillar',
+			pillar2: 'create:layered_limestone',
+			createTag: 'create:stone_types/limestone',
+			stonecutting: [
+				generateForms('limestone', 'create:cut_%s'),
+				generateForms('limestone', 'create:polished_cut_%s'),
+				generateForms('limestone', 'create:cut_%s_brick', 'create:cut_limestone_bricks'),
+				generateForms('limestone', 'create:small_%s_brick', 'create:small_limestone_bricks'),
+				{ block: 'create:limestone' }
+			]
+		},
+		"dolomite": {
+			material: carbonate,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:dolomite_support',
+			isTFC: true
+		},
+		"chalk": {
+			material: carbonate,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:chalk_support',
+			isTFC: true
+		},
+		"chert": {
+			material: organic,
+			tfcTag: 'tfc:sedimentary_items',
+			support: 'tfg:chert_support',
+			isTFC: true,
+			pillar: 'create:granite_pillar',
+			pillar2: 'create:layered_granite',
+			createTag: 'create:stone_types/granite',
+			stonecutting: [
+				generateForms('granite', 'create:cut_%s'),
+				generateForms('granite', 'create:polished_cut_%s'),
+				generateForms('granite', 'create:cut_%s_brick', 'create:cut_granite_bricks'),
+				generateForms('granite', 'create:small_%s_brick', 'create:small_granite_bricks')
+			]
+		},
+		"slate": {
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:slate_support',
+			isTFC: true
+		},
+		"phyllite": {
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:phyllite_support',
+			isTFC: true
+		},
+		"schist": {
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:schist_support',
+			isTFC: true
+		},
+		"gneiss": {
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:gneiss_support',
+			isTFC: true
+		},
+		"marble": {
+			material: metamorphic,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:marble_support',
+			isTFC: true,
+			stonecutting: [
+				{ block: 'gtceu:polished_marble' },
+				{ block: 'gtceu:chiseled_marble' },
+				{ block: 'gtceu:marble_tile' },
+				{ block: 'gtceu:marble_small_tile' },
+				{ block: 'gtceu:marble_windmill_a' },
+				{ block: 'gtceu:marble_windmill_b' },
+				{ block: 'gtceu:small_marble_bricks' },
+				{ block: 'gtceu:square_marble_bricks' }
+			]
+		},
+		"quartzite": {
+			material: GTMaterials.Quartzite,
+			tfcTag: 'tfc:metamorphic_items',
+			support: 'tfg:quartzite_support',
+			isTFC: true
 		},
 		// Migmatite
 		"deepslate": generateMissing('deepslate', {
 			material: metamorphic,
 			tfcTag: 'tfc:metamorphic_items',
-			chiseled: 'minecraft:chiseled_deepslate',
 			support: 'tfg:migmatite_support',
 			pillar: 'create:deepslate_pillar',
 			pillar2: 'create:layered_deepslate',
@@ -191,6 +354,7 @@ const registerTFGRockMaterials = (event) => {
 				generateForms('deepslate', 'tfg:rock/mossy_bricks_%s'),
 				generateForms('deepslate', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_deepslate_bricks')),
 			polished: generateForms('deepslate', 'minecraft:polished_%s'),
+			chiseled: { block: 'minecraft:chiseled_deepslate' },
 			stonecutting: [
 				generateForms('deepslate', 'minecraft:%s_tile', 'minecraft:deepslate_tiles', null, 
 					generateForms('deepslate', 'tfg:rock/cracked_tiles_%s', 'minecraft:cracked_deepslate_tiles')),
@@ -229,19 +393,135 @@ const registerTFGRockMaterials = (event) => {
 			loose: 'beneath:blackstone_pebble',
 			brick: 'beneath:blackstone_brick',
 			aqueduct: 'beneath:blackstone_aqueduct',
-			chiseled: 'minecraft:chiseled_polished_blackstone',
 			raw: generateForms('blackstone', 'minecraft:%s'),
 			cobble: generateForms('blackstone', 'tfg:rock/cobble_%s', null,
 				generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),
-			bricks: generateForms('blackstone', 'minecraft:polished_%s_brick', 'minecraft:polished_blackstone_bricks', 
+			bricks: generateForms('blackstone', 'minecraft:polished_%s_brick', 'minecraft:polished_blackstone_bricks',
 				generateForms('blackstone', 'tfg:rock/mossy_bricks_%s'),
 				generateForms('blackstone', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_polished_blackstone_bricks')),
-			polished: generateForms('blackstone', 'minecraft:polished_%s')
+			polished: generateForms('blackstone', 'minecraft:polished_%s'),
+			chiseled: { block: 'minecraft:chiseled_polished_blackstone' },
 		}),
 		// Keratophyre
 		"crackrack": generateMissing('crackrack', {
-			material: intermediate
-		})
+			material: intermediate,
+			tfcTag: 'tfc:igneous_extrusive',
+			support: 'tfg:keratophyre_support',
+			brick: 'minecraft:nether_brick',
+			aqueduct: 'tfg:rock/aqueduct_nether',
+			raw: generateForms('crackrack', 'tfg:rock/%s', 'beneath:crackrack'),
+			cobble: generateForms('crackrack', 'tfg:rock/cobble_%s', null,
+				generateForms('crackrack', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('nether', 'minecraft:%s_brick', 'minecraft:nether_bricks',
+				generateForms('nether', 'tfg:rock/mossy_bricks_%s'),
+				generateForms('nether', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_nether_bricks')),
+			polished: generateForms('crackrack', 'tfg:rock/polished_%s'),
+			chiseled: { block: 'minecraft:chiseled_nether_bricks' },
+			stonecutting: [
+				{ block: 'minecraft:nether_brick_fence' }
+			]
+		}),
+		"calcite": {
+			material: carbonate,
+			tfcTag: 'tfc:sedimentary',
+			isTFC: false,
+			pillar: 'create:calcite_pillar',
+			pillar2: 'create:layered_calcite',
+			raw: { block: 'minecraft:calcite' },
+			stonecutting: [
+				generateForms('calcite', 'create:cut_%s'),
+				generateForms('calcite', 'create:polished_cut_%s'),
+				generateForms('calcite', 'create:cut_%s_brick', 'create:cut_calcite_bricks'),
+				generateForms('calcite', 'create:small_%s_brick', 'create:small_calcite_bricks')
+			]
+		},
+		"tuff": {
+			material: felsic,
+			tfcTag: 'tfc:igneous_extrusive',
+			isTFC: false,
+			pillar: 'create:tuff_pillar',
+			pillar2: 'create:layered_tuff',
+			raw: { block: 'minecraft:tuff' },
+			stonecutting: [
+				generateForms('tuff', 'create:cut_%s'),
+				generateForms('tuff', 'create:polished_cut_%s'),
+				generateForms('tuff', 'create:cut_%s_brick', 'create:cut_tuff_bricks'),
+				generateForms('tuff', 'create:small_%s_brick', 'create:small_tuff_bricks')
+			]
+		},
+		// Anorthosite
+		"moon_stone": generateMissing('moon_stone', {
+			material: mafic,
+			tfcTag: 'tfc:igneous_intrusive',
+			support: 'tfg:anorthosite_support',
+			pillar: 'ad_astra:moon_pillar',
+			raw: generateFormsAdAstra('moon_stone', 'ad_astra:%s', 'tfg:rock/moon_stone_wall'),
+			cobble: generateFormsAdAstra('moon', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_moon_wall',
+				generateForms('moon', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('moon_stone', 'ad_astra:%s_brick', 'ad_astra:moon_stone_bricks',
+				generateForms('moon', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_moon_stone_bricks'),
+				generateForms('moon', 'tfg:rock/mossy_bricks_%s')),
+			polished: generateFormsAdAstra('moon_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_moon_wall'),
+			chiseled: {
+				block: 'ad_astra:chiseled_moon_stone_bricks',
+				stair: 'ad_astra:chiseled_moon_stone_stairs',
+				slab: 'ad_astra:chiseled_moon_stone_slab',
+				wall: 'tfg:rock/chiseled_bricks_moon_wall'
+			}
+		}),
+		// Norite
+		"moon_deepslate": generateMissing('moon_deepslate', {
+			material: mafic,
+			tfcTag: 'tfc:igneous_intrusive',
+			support: 'tfg:norite_support',
+			pillar: 'tfg:rock/pillar_moon_deepslate',
+			raw: generateForms('moon_deepslate', 'tfg:rock/%s', 'ad_astra:moon_deepslate'),
+			cobble: generateForms('moon_deepslate', 'tfg:rock/cobble_%s', null,
+				generateForms('moon_deepslate', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('moon_deepslate', 'tfg:rock/bricks_%s', null,
+				generateForms('moon_deepslate', 'tfg:rock/mossy_bricks_%s'),
+				generateForms('moon_deepslate', 'tfg:rock/cracked_bricks_%s')),
+			polished: generateForms('moon_deepslate', 'tfg:rock/polished_%s'),
+			chiseled: generateForms('moon_deepslate', 'tfg:rock/chiseled_bricks_%s')
+		}),
+		// Phonolite
+		"glacio_stone": generateMissing('glacio_stone', {
+			material: intermediate,
+			tfcTag: 'tfc:igneous_extrusive',
+			support: 'tfg:phonolite_support',
+			pillar: 'ad_astra:glacio_pillar',
+			raw: generateFormsAdAstra('glacio_stone', 'ad_astra:%s', 'tfg:rock/glacio_stone_wall'),
+			cobble: generateFormsAdAstra('glacio', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_glacio_wall',
+				generateForms('glacio', 'tfg:rock/mossy_cobble_%s')),
+			bricks: generateForms('glacio_stone', 'ad_astra:%s_brick', 'ad_astra:glacio_stone_bricks',
+				generateForms('glacio', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_glacio_stone_bricks'),
+				generateForms('glacio', 'tfg:rock/mossy_bricks_%s')),
+			polished: generateFormsAdAstra('glacio_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_glacio_wall'),
+			chiseled: {
+				block: 'ad_astra:chiseled_glacio_stone_bricks',
+				stair: 'ad_astra:chiseled_glacio_stone_stairs',
+				slab: 'ad_astra:chiseled_glacio_stone_slab',
+				wall: 'tfg:rock/chiseled_bricks_glacio_wall'
+			}
+		}),
+		// Sky stone
+		"suevite": {
+			material: null,
+			raw: generateForms('sky_stone', 'ae2:%s', 'ae2:sky_stone_block'),
+			polished: generateForms('sky_stone', 'ae2:smooth_%s', 'ae2:smooth_sky_stone_block'),
+			bricks: generateForms('sky_stone', 'ae2:%s_brick'),
+			chiseled: generateForms('sky_stone', 'ae2:%s_small_brick')
+		},
+		"purpur": {
+			material: null,
+			brick: 'minecraft:popped_chorus_fruit',
+			bricks: { 
+				block: 'minecraft:purpur_block', 
+				stair: 'minecraft:purpur_stairs',
+				slab: 'minecraft:purpur_slab'
+			},
+			pillar: 'minecraft:purpur_pillar'
+		}
 	}
 
 	/* ROCKS:
@@ -262,7 +542,6 @@ const registerTFGRockMaterials = (event) => {
 	gabbro:		intrusive igneous	mafic
 	diorite:	intrusive igneous	intermediate
 	granite:	intrusive igneous	felsic
-	(red granite is same)
 
 	basalt:		extrusive igneous	mafic
 	andesite:	extrusive igneous	intermediate
@@ -293,20 +572,22 @@ const registerTFGRockMaterials = (event) => {
 	obsidian:	extrusive igneous	felsic
 	
 	suevite		? melted rock from meteor impacts
-
 	anorthosite	intrusive igneous	mafic
 	norite		intrusive igneous	mafic
+	phonolite	extrusive igneous	intermediate
+
 	argillite	sedimentary			clastic
 	trachyte	extrusive igneous	felsic
-	komatiite	intrusive igneous	ultramafic
-	phonolite	extrusive igneous	intermediate
-	permafrost	? not really a rock
+	red granite intrusive igneous	felsic
 
 	lamproite	extrusive igneous	ultramafic
 	ignimbrite	either IE or meta depending on who you ask - mostly made of tuff + pumice/scoria
 	sulphuric_rock	mafic
 	scoria		extrusive igneous	mafic
 	geyserite	sedimentary			chemical (mostly made of opal/silica)
+
+	komatiite	intrusive igneous	ultramafic
+	permafrost	? not really a rock
 
 	(unused)
 	syenite		intrusive igneous	felsic	(opposite of trachyte)
