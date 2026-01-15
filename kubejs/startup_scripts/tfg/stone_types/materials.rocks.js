@@ -507,6 +507,7 @@ const registerTFGRockMaterials = (event) => {
 		// Sky stone
 		"suevite": {
 			material: null,
+			isTFC: false,
 			raw: generateForms('sky_stone', 'ae2:%s', 'ae2:sky_stone_block'),
 			polished: generateForms('sky_stone', 'ae2:smooth_%s', 'ae2:smooth_sky_stone_block'),
 			bricks: generateForms('sky_stone', 'ae2:%s_brick'),
@@ -514,6 +515,7 @@ const registerTFGRockMaterials = (event) => {
 		},
 		"purpur": {
 			material: null,
+			isTFC: false,
 			brick: 'minecraft:popped_chorus_fruit',
 			bricks: { 
 				block: 'minecraft:purpur_block', 
