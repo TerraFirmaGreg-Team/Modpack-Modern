@@ -251,7 +251,7 @@ function registerGTCEuMachineRecipes(event) {
 	}).id('tfg:shaped/coke_oven_bricks')
 
 	event.recipes.gtceu.assembler('tfg:coke_oven_bricks')
-		.itemInputs('4x gtceu:coke_oven_bricks')
+		.itemInputs('4x gtceu:coke_oven_brick')
 		.inputFluids(Fluid.of('gtceu:concrete 90'))
 		.itemOutputs('gtceu:coke_oven_bricks')
 		.duration(50)
