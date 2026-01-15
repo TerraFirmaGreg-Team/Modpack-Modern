@@ -48,19 +48,4 @@ function registerTFGStoneDustRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Lithium, 1), 3500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Gold, 1), 3500, 0)
 
-	// Misc dust
-
-	event.recipes.gtceu.centrifuge('gtceu:quartz_sand_separation')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(60)
-		.itemInputs('2x gtceu:quartz_sand_dust')
-		.itemOutputs('gtceu:quartzite_dust')
-		.chancedOutput('#forge:dusts/nether_quartz', 2000, 0)
-
-	event.recipes.gtceu.autoclave('tfg:quartz_sand_autoclave')
-		.itemInputs('gtceu:quartz_sand_dust')
-		.inputFluids(Fluid.of('minecraft:water', 250))
-		.chancedOutput('gtceu:quartzite_gem', 4500, 0)
-		.duration(60 * 20)
-		.EUt(GTValues.VA[GTValues.LV])
 }
