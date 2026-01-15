@@ -238,6 +238,25 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#region CokeOven
 
+	event.remove({ id: 'gtceu:shaped/casing_coke_bricks' })
+	event.remove({ id: 'gtceu:compressor/coke_bricks' })
+
+	event.shaped('gtceu:coke_oven_bricks', [
+		'ABA',
+		'BAB',
+		'ABA'
+	], {
+		A: 'tfc:mortar',
+		B: 'gtceu:coke_oven_brick'
+	}).id('tfg:shaped/coke_oven_bricks')
+
+	event.recipes.gtceu.assembler('tfg:coke_oven_bricks')
+		.itemInputs('4x gtceu:coke_oven_brick')
+		.inputFluids(Fluid.of('gtceu:concrete 90'))
+		.itemOutputs('gtceu:coke_oven_bricks')
+		.duration(50)
+		.EUt(2);
+
 	// Coke Oven
 	removeMaceratorRecipe(event, 'macerate_coke_oven')
 	event.recipes.gtceu.shaped('gtceu:coke_oven', [
