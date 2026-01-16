@@ -48,68 +48,6 @@ function registerTFCMetalsRecipes(event) {
 
 	//#endregion
 
-
-	//#region Фикс рецептов колоколов
-
-	//#region Из золота
-
-	event.recipes.tfc.casting(`minecraft:bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:gold', 144), 1)
-		.id(`tfc:casting/gold_bell`)
-
-	event.recipes.tfc.heating(`minecraft:bell`, 1060)
-		.resultFluid(Fluid.of('gtceu:gold', 144))
-		.id(`tfc:heating/gold_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Gold, 144)),
-		[
-			Fluid.of(GTMaterials.Gold.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Gold.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#region Из латуни
-
-	event.recipes.tfc.casting(`tfc:brass_bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:brass', 144), 1)
-		.id(`tfc:casting/brass_bell`)
-
-	event.recipes.tfc.heating(`tfc:brass_bell`, 930)
-		.resultFluid(Fluid.of('gtceu:brass', 144))
-		.id(`tfc:heating/brass_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Brass, 144)),
-		[
-			Fluid.of(GTMaterials.Brass.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Brass.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#region Из бронзы
-
-	event.recipes.tfc.casting(`tfc:bronze_bell`, 'tfc:ceramic/bell_mold', Fluid.of('gtceu:bronze', 144), 1)
-		.id(`tfc:casting/bronze_bell`)
-
-	event.recipes.tfc.heating(`tfc:bronze_bell`, 930)
-		.resultFluid(Fluid.of('gtceu:bronze', 144))
-		.id(`tfc:heating/bronze_bell`)
-
-	event.recipes.create.filling(
-		Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Bronze, 144)),
-		[
-			Fluid.of(GTMaterials.Bronze.getFluid(), 144),
-			Item.of('tfc:ceramic/bell_mold').strongNBT()
-		]
-	).id(`tfg:tfc/filling/${GTMaterials.Bronze.getName()}_bell_mold`)
-
-	//#endregion
-
-	//#endregion
-
 	//#region Рецепты ковки TFC слитков в GT машинах
 
 	// Сырая крица -> Укрепленная крица
@@ -162,6 +100,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_black_steel', 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
 		.heated()
@@ -175,6 +115,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_blue_steel', 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
@@ -188,6 +130,8 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
+	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_red_steel', 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
+
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
 		.heated()
@@ -329,7 +273,7 @@ function registerTFCMetalsRecipes(event) {
 		.id('tfc:anvil/blue_steel_ingot')
 
 	// Cast iron -> Raw Iron Bloom
-	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
+	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', '#tfg:bloomery_basic_fuels', Fluid.of('gtceu:iron', 144), 15000)
 		.id('tfc:bloomery/raw_iron_bloom')
 
 	// Cast Iron -> Pig Iron
@@ -370,33 +314,4 @@ function registerTFCMetalsRecipes(event) {
 
 	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
 		.id('tfg:revert_wrought_iron_ingot')
-
-
-	// Melting powders
-
-	const METAL_POWDERS = [
-		{ powder: 'tfc:powder/native_copper', material: GTMaterials.Copper },
-		{ powder: 'tfc:powder/native_gold', material: GTMaterials.Gold },
-		{ powder: 'tfc:powder/hematite', material: GTMaterials.Hematite },
-		{ powder: 'tfc:powder/native_silver', material: GTMaterials.Silver },
-		{ powder: 'tfc:powder/cassiterite', material: GTMaterials.Cassiterite },
-		{ powder: 'tfc:powder/bismuthinite', material: GTMaterials.Bismuth },
-		{ powder: 'tfc:powder/garnierite', material: GTMaterials.Garnierite },
-		{ powder: 'tfc:powder/malachite', material: GTMaterials.Malachite },
-		{ powder: 'tfc:powder/magnetite', material: GTMaterials.Magnetite },
-		{ powder: 'tfc:powder/limonite', material: GTMaterials.YellowLimonite },
-		{ powder: 'tfc:powder/sphalerite', material: GTMaterials.Sphalerite },
-		{ powder: 'tfc:powder/tetrahedrite', material: GTMaterials.Tetrahedrite },
-		{ powder: 'tfc:powder/pyrite', material: GTMaterials.Pyrite }
-	]
-
-	METAL_POWDERS.forEach(x => {
-		const tfcProperty = x.material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-
-		let outputMaterial = (tfcProperty.getOutputMaterial() === null) ? x.material : tfcProperty.getOutputMaterial()
-
-		event.recipes.tfc.heating(x.powder, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
-			.id(`tfg:heating/powder/${x.material.getName()}`)
-	})
 }

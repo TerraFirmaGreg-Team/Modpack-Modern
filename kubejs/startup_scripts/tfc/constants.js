@@ -315,6 +315,7 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/borax",
     "tfc:ore/bituminous_coal",
     "tfc:ore/lignite",
+    "tfc:ore/sylvite",
 
     // Axles
     "tfc:wood/axle/acacia",

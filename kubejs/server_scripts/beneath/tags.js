@@ -25,6 +25,15 @@ const registerBeneathBlockTags = (event) => {
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
+
+	event.add('tfg:softwood', 'beneath:wood/log/crimson')
+	event.add('tfg:softwood', 'beneath:wood/wood/crimson')
+	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_log/crimson')
+	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_wood/crimson')
+	event.add('tfg:hardwood', 'beneath:wood/log/crimson')
+	event.add('tfg:hardwood', 'beneath:wood/wood/crimson')
+	event.add('tfg:strippedhardwood', 'beneath:wood/stripped_log/crimson')
+	event.add('tfg:strippedhardwood', 'beneath:wood/stripped_wood/crimson')
 }
 
 const registerBeneathItemTags = (event) => {

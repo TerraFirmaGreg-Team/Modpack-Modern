@@ -6,7 +6,7 @@
 - Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
 ### Performance improvements
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
-- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to newly generated mars trees, old trees will have the old behaviour) @Mqrius
+- Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to earth trees and newly generated Mars trees, old Mars trees will have the old behaviour) @Mqrius
 - Fixed tree chopping not working on trees that had no leaves @Mqrius
 - Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
 - Fixed a huge amount of lag from TFC Ambiental @Mqrius
@@ -14,6 +14,7 @@
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
 - Ice slush is now drinkable, for a cooling effect (#2708) @Inceitious
+- You can now use coal as bloomery fuel! Both the vanilla item as well as any of the raw coals (#2731) @Pyritie
 - The crucible now holds 4608mB (32 ingots) instead of 4032mB (28 ingots) (#2634) @Pyritie
 - Large gears can now be crafted in an anvil/mechanical press @Pyritie
 - Added recipe to make tubes from volcanic glass batches (#2667) @Redeix
@@ -28,7 +29,11 @@
 - You can now also use mars water in gregtech and create boilers @Pyritie
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
-- Reduced the amount of ambient wolf sounds at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
+- Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks. Rivers now have a louder water sound and lakes have a quieter one. (#2680) @Pyritie
+- You can now use any wrench to remove the extruder molds from the curving press instead of just the create wrench @Pyritie
+- Added wrapped locometal to gregtech facade blocks (#2726) @Pyritie
+- Peat can now be turned into creosote @Pyritie
+- Coke oven bricks now require mortar to craft @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -45,10 +50,16 @@
 - Fixed invar crucible alloying using the wrong amounts of iron and nickel @Pyritie
 - Fixed inconsistent saturation values from cooked long pig filet (#2714) @Pyritie
 - Fixed soaked paper in a helve hammer having a blow count of less than 1 for some anvils (#2655) @Pyritie
+- Fixed casting of rods and gears for various metals @Pyritie
+- Fixed a dupe with scraping knives (#2716) @Inceitious
+- Fixed a rendering issue with the lunchboxes when held @Thomasx0
+- Fixed the cooling lunchbox not stacking empty cells correctly (#2475) @Thomasx0
+- Fixed the lunchboxes not removing the "cooling" trait when items were removed with the number keys @Thomasx0
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071 + @Nixieeunrare
+- Russian @Petr211071 + @Nixieeunrare + @Maxiffon
 - Japanese @sakura-gondra
+- Ukranian @MetEnBouldry
 
 ## [0.11.16] - 05-01-2026
 ### Changes

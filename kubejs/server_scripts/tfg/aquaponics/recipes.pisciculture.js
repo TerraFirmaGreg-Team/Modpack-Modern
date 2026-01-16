@@ -25,10 +25,10 @@ const pisciculture_base_duration = Math.max(1, greenhouse_base_duration * greenh
 /** @type {DimensionIndex[]} - Dimension settings array */
 const pisciculture_dimension_index = [
 	// Overworld settings are also used as the default when no dimension is specified.
-	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
 	// The moon has no fish yet :(
-	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 50, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 15, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
 ];
 
 //#endregion
@@ -76,8 +76,8 @@ const pisciculture_dimension_index = [
 	let a = event.recipes.gtceu.pisciculture_fishery(`tfg:${id}`)
 		.itemInputs(input)
 		.perTick(true)
-		.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
-		.chancedFluidOutput(`${resolvedFluidOut} 1`, resolvedChance, 0)
+		.chancedFluidInput(`${resolvedFluid} 5`, resolvedChance, 0)
+		.chancedFluidOutput(`${resolvedFluidOut} 5`, resolvedChance, 0)
 		.perTick(false)
 		.itemOutputs(output)
 		.duration(pisciculture_base_duration)
@@ -205,7 +205,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				Item.of(`tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 				'2x #tfg:advanced_fish_food'
 			], [
-				`15x ${fish.item}`,
+				`24x ${fish.item}`,
 				Item.of(`5x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
 			`${linuxUnfucker(fish.id)}/advanced_food/roe_to_roe`
