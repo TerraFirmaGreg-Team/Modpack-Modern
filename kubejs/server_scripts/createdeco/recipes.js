@@ -139,22 +139,14 @@ const registerCreatedecoRecipes = (event) => {
 
 	//#region Brick Recipes
 	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
-	const powderTypes = ['lapis_lazuli', 'malachite', 'soda_ash', 'limonite', 'charcoal', 'hematite', 'cassiterite']
-
-	event.recipes.gtceu.assembler(`assembler_bricks`)
-			.itemInputs('5x minecraft:brick')
-			.inputFluids(Fluid.of('gtceu:concrete', 144))
-			.itemOutputs(`4x minecraft:bricks`)
-			.duration(50)
-			.circuit(2)
-			.EUt(7)
-
+	const dyeTypes = ['blue', 'green', 'white', 'yellow', 'black', 'red', 'brown']
+	
 	brickTypes.forEach(type => {
 		event.remove({ output: `createdeco:${type}_bricks` });
 	});
 
 	brickTypes.forEach((type, index) => {
-		const powder = `tfc:powder/${powderTypes[index]}`;
+		const dye = `#forge:dyes/${dyeTypes[index]}`;
 		event.shaped(Item.of(`createdeco:${type}_bricks`, 4),
 			[
 				'BDB',
@@ -163,12 +155,12 @@ const registerCreatedecoRecipes = (event) => {
 			],
 			{
 				B: `minecraft:brick`,
-				D: powder,
+				D: dye,
 				M: `tfc:mortar`
 			});
 
 		event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
-			.itemInputs('5x minecraft:brick', powder)
+			.itemInputs('5x minecraft:brick', dye)
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`4x createdeco:${type}_bricks`)
 			.circuit(3)
