@@ -28,7 +28,6 @@ const registerGTCEuMaterialModification = (event) => {
 		HAS_TFC_ARMOR, 
 		HAS_TFC_UTILITY,
 		CAN_BE_UNMOLDED,
-		GENERATE_BELL,
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
 		GENERATE_DUSTY_ORES,
@@ -264,10 +263,6 @@ const registerGTCEuMaterialModification = (event) => {
 	// Other flags
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
-
-	GTMaterials.Gold.addFlags(GENERATE_BELL);
-	GTMaterials.Brass.addFlags(GENERATE_BELL);
-	GTMaterials.Bronze.addFlags(GENERATE_BELL);
 
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);

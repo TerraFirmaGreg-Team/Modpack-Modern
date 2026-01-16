@@ -186,6 +186,34 @@
             ]
         },
         {
+            "pakku_id": "tIIGT85PQd5pJGf0",
+            "type": "MOD",
+            "slug": {
+                "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
+            },
+            "name": {
+                "github": "AE2-Midnight-and-Daybreak"
+            },
+            "id": {
+                "github": "1083466923"
+            },
+            "files": [
+                {
+                    "type": "github",
+                    "file_name": "midnight-ae2-355ee99.zip",
+                    "release_type": "release",
+                    "url": "https://github.com/Frontiers-PackForge/AE2-Midnight-and-Daybreak/releases/download/midnight-ae2-latest/midnight-ae2-355ee99.zip",
+                    "id": "340540365",
+                    "parent_id": "1083466923",
+                    "hashes": {
+                        "sha256": "c36974deb70ded2e0a1b75f0f3594b907cb573ac35e729c512e801e755ca1acd"
+                    },
+                    "size": 5653580,
+                    "date_published": "2026-01-14T18:07:27Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "f1zNCW1T31PKFnSo",
             "type": "MOD",
             "side": "BOTH",
@@ -7175,39 +7203,46 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "[ver_0.21]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
+                    "file_name": "[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
                     "mc_versions": [
-                        "1.20.1"
+                        "1.19.2",
+                        "1.20",
+                        "1.20.1",
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/dJTMr36Q/[ver_0.21]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "id": "dJTMr36Q",
+                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/peiL81bR/[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
+                    "id": "peiL81bR",
                     "parent_id": "fUawEtti",
                     "hashes": {
-                        "sha512": "bfba7726c5c08f8663299535270eec1bcdfad8e0c48367044e918760f01895f44c9763ededd422049474f10118af937dd84b5ad8affe963c905584ee89964b64",
-                        "sha1": "1cc628acd1cdc56d2ae38a4d7838031eb439eccc"
+                        "sha512": "8fbe2a520a2b3dcae3a677871517fb66c930865a318665f4d7a92278353724cf155a94a0a9703f515433d0697f6958ecc6066b84ab4daeea5e40cb61c11b50d0",
+                        "sha1": "56e46338a29a64c3218191e3418f21d731b5a17e"
                     },
                     "required_dependencies": [],
-                    "size": 8851849,
-                    "date_published": "2025-09-25T14:27:06.141084Z"
+                    "size": 8884123,
+                    "date_published": "2026-01-05T16:23:46.810793Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "[ver_0.21]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
+                    "file_name": "[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7032/236/[ver_0.21]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
-                    "id": "7032236",
+                    "url": "https://edge.forgecdn.net/files/7397/183/[ver_0.22]_GT_Revival 32x_1.19.2-1.20.1-1.21.zip",
+                    "id": "7397183",
                     "parent_id": "964322",
                     "hashes": {
-                        "sha1": "1cc628acd1cdc56d2ae38a4d7838031eb439eccc",
-                        "md5": "8725fb81b0f272dee125caed9023de2a"
+                        "sha1": "56e46338a29a64c3218191e3418f21d731b5a17e",
+                        "md5": "914085c283ce8b0fb10cdfaf063cb2c8"
                     },
                     "required_dependencies": [],
-                    "size": 8851849,
-                    "date_published": "2025-09-25T14:25:41.027Z"
+                    "size": 8884123,
+                    "date_published": "2025-12-30T17:57:31.660Z"
                 }
             ]
         },
@@ -7737,45 +7772,44 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5064/623/Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
-                    "id": "5064623",
-                    "parent_id": "891816",
-                    "hashes": {
-                        "sha1": "298baeaea7237a0c5361fd3186e4f5ad5bc0c266",
-                        "md5": "eee7211a342f9e59fe6d4c99f3988657"
-                    },
-                    "required_dependencies": [],
-                    "size": 1987955,
-                    "date_published": "2024-01-28T10:09:14.360Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
+                    "file_name": "[1.20.1_ver_0.05]_Improved_AE_2_32x.zip",
                     "mc_versions": [
+                        "1.20",
                         "1.20.1"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dOV2wnYX/versions/rZ9MKijP/Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
-                    "id": "rZ9MKijP",
+                    "url": "https://cdn.modrinth.com/data/dOV2wnYX/versions/Ww3GLvVA/[1.20.1_ver_0.05]_Improved_AE_2_32x.zip",
+                    "id": "Ww3GLvVA",
                     "parent_id": "dOV2wnYX",
                     "hashes": {
-                        "sha512": "c12562cdf7b411bf0d63d096a4690a7172e4986d0fd253c733182ff04668bbe19a8559504d5243e9fe0da8b9a8b34f8d7b1b8e0475e13e17a71fdc9bebc2c0bc",
-                        "sha1": "298baeaea7237a0c5361fd3186e4f5ad5bc0c266"
+                        "sha512": "1538ae239d35dcf57b83190b3a9f27a36299b0d5ab4a1c73884c7fa904b4f05c89806ca99af568367103280d123a218fa93607935698864ffd76ccc4578654e2",
+                        "sha1": "c34d762042a4c04d4e7293937b7ce8bb5c6c4e32"
                     },
                     "required_dependencies": [],
-                    "size": 1987955,
-                    "date_published": "2025-07-16T05:36:29.702562Z"
+                    "size": 2702030,
+                    "date_published": "2026-01-05T16:26:57.406085Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "[1.20.1_ver_0.05]_Improved_AE_2_32x.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7421/592/[1.20.1_ver_0.05]_Improved_AE_2_32x.zip",
+                    "id": "7421592",
+                    "parent_id": "891816",
+                    "hashes": {
+                        "sha1": "c34d762042a4c04d4e7293937b7ce8bb5c6c4e32",
+                        "md5": "8cad22a0fc22ed05d025e08394f17369"
+                    },
+                    "required_dependencies": [],
+                    "size": 2702030,
+                    "date_published": "2026-01-05T16:27:10.323Z"
                 }
             ]
         },

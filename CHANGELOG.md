@@ -29,9 +29,11 @@
 - You can now also use mars water in gregtech and create boilers @Pyritie
 - Changed the texture of out-of-season blood lilies so they're findable year-round @Pyritie
 - Added alloy smelter recipes for jar lids (#2705) @thederpysockdude123
-- Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks (#2680) @Pyritie
+- Reduced the amount of ambient awoos at night, and crickets/cicadas now require grass plants instead of grass blocks. Rivers now have a louder water sound and lakes have a quieter one. (#2680) @Pyritie
 - You can now use any wrench to remove the extruder molds from the curving press instead of just the create wrench @Pyritie
 - Added wrapped locometal to gregtech facade blocks (#2726) @Pyritie
+- Peat can now be turned into creosote @Pyritie
+- Coke oven bricks now require mortar to craft @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
