@@ -141,11 +141,30 @@ const registerCreatedecoRecipes = (event) => {
 	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
 	const dyeTypes = ['blue', 'green', 'white', 'yellow', 'black', 'red', 'brown']
 	
-	brickTypes.forEach(type => {
-		event.remove({ output: `createdeco:${type}_bricks` });
-	});
-
 	brickTypes.forEach((type, index) => {
+		event.remove({ output: `createdeco:${type}_bricks` });
+		event.remove({ output: `createdeco:${type}_brick_stairs` });
+		event.remove({ output: `createdeco:short_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:tiled_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:long_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:corner_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:cracked_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:mossy_${type}_brick_stairs` });
+		event.remove({ output: `createdeco:${type}_brick_slab` });
+		event.remove({ output: `createdeco:short_${type}_brick_slab` });
+		event.remove({ output: `createdeco:tiled_${type}_brick_slab` });
+		event.remove({ output: `createdeco:long_${type}_brick_slab` });
+		event.remove({ output: `createdeco:corner_${type}_brick_slab` });
+		event.remove({ output: `createdeco:cracked_${type}_brick_slab` });
+		event.remove({ output: `createdeco:mossy_${type}_brick_slab` });
+		event.remove({ output: `createdeco:${type}_brick_wall` });
+		event.remove({ output: `createdeco:short_${type}_brick_wall` });
+		event.remove({ output: `createdeco:tiled_${type}_brick_wall` });
+		event.remove({ output: `createdeco:long_${type}_brick_wall` });
+		event.remove({ output: `createdeco:corner_${type}_brick_wall` });
+		event.remove({ output: `createdeco:cracked_${type}_brick_wall` });
+		event.remove({ output: `createdeco:mossy_${type}_brick_wall` });
+
 		const dye = `#forge:dyes/${dyeTypes[index]}`;
 		event.shaped(Item.of(`createdeco:${type}_bricks`, 4),
 			[
