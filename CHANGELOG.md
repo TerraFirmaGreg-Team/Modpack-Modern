@@ -34,6 +34,8 @@
 - Added wrapped locometal to gregtech facade blocks (#2726) @Pyritie
 - Peat can now be turned into creosote @Pyritie
 - Coke oven bricks now require mortar to craft @Pyritie
+- Glowstone can now be quickly broken with a pickaxe/mining hammer @Pyritie
+- Added some more knapping recipes for chalk items, improved the durability of others (#2753) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius

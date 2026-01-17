@@ -133,6 +133,7 @@ ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
 	registerTFGBiomeTags(event)
+	registerWansAncientBeastsBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
