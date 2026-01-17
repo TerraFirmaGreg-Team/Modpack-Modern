@@ -1,0 +1,48 @@
+{
+	"name": "Марсіанський індекс грибів",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Це список усіх велетенських грибів на Марсі та кліматів, у яких вони ростуть.$(br2)Шукаєте певний тип грибного стовбура для декору вашої бази? Цей список допоможе його знайти. Сортування виконано за абеткою за типом стовбура.$(br2)Також перегляньте $(l:tfc:arborfirmacraft/earth_tree_index)Індекс земних дерев$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Аеронос",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)Гриб Аеронос$()$(br)$(thing)Температура$(): від -100°C і вище$(br)Зустрічається частіше на сході."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Альфацен",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)Гриб Альфацен$()$(br)$(thing)Температура$(): від -85°C і вище$(br)Зустрічається як на сході, так і на заході."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Багрянець",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)Багряний гриб$()$(br)$(thing)Температура$(): від -109 до -13°C$(br)Зустрічається частіше на сході."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Ґлаціан",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)Ґлаціанський гриб$()$(br)$(thing)Температура$(): -107°C і нижче$(br)Зустрічається як на сході, так і на заході."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Строфар",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)Гриб Строфар$()$(br)$(thing)Температура$(): від -100°C і вище$(br)Зустрічається частіше на заході."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Химера",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)Химерний гриб$()$(br)$(thing)Температура$(): від -109 до -13°C$(br)Зустрічається частіше на заході."
+		}
+	]
+}

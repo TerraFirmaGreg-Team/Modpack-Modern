@@ -66,8 +66,8 @@
                 "ambientsounds:animals.wolf"
             ],
             "pause": {
-                "min": 100,
-                "max": 600
+                "min": 12000,
+                "max": 72000
             },
             "day": 0
         },
@@ -78,7 +78,7 @@
                 "ambientsounds:animals.long-wolf"
             ],
             "pause": {
-                "min": 12000,
+                "min": 56000,
                 "max": 72000
             },
             "day": 0

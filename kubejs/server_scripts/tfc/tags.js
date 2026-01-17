@@ -1,6 +1,8 @@
 // priority: 0
 "use strict";
 
+const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+
 /** @param {TagEvent.Item} event */
 function registerTFCItemTags(event) {
     // Теги для соответствия инструментов TFC и GT
@@ -432,6 +434,14 @@ function registerTFCItemTags(event) {
     event.add('forge:dyes/green', 'tfc:powder/malachite')
     event.add('forge:dyes/brown', 'tfc:powder/garnierite')
     event.add('forge:dyes/yellow', 'tfc:powder/limonite')
+
+    //Hanging Signs Soft & Hard Wood
+    global.TFC_EQUIPMENT_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+    })
 }
 
 /** @param {TagEvent.Block} event */
@@ -511,11 +521,21 @@ function registerTFCBlockTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
-    //Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
-    //Add blacklisted words to the const with | between.
-    const brick_blacklist = "drying|slab|stairs|wall|additionalplacements";
-    event.add("tfc:bloomery_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
-    event.add("tfc:forge_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+    // Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
+    // Optimized to compute matching blocks once instead of regex scanning per tag like before.
+    // Blacklist removes blocks that are unwanted.
+    const blacklist = ["drying", "slab", "stairs", "wall", "additionalplacements", "fence", "roof", "bridge"];
+    const matches = [];
+    ForgeRegistries.BLOCKS.getValues().forEach(block => {
+        const id = String(ForgeRegistries.BLOCKS.getKey(block));
+        if (id.includes("brick") && !blacklist.some(no_no_word => id.includes(no_no_word))) {
+            matches.push(id);
+        };
+    });
+    ["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
+        matches.forEach(id => event.add(tag, id));
+    });
+
     event.add("tfc:forge_insulation", 'create:depot');
 
     global.TFC_STONE_TYPES.forEach((stone) => {

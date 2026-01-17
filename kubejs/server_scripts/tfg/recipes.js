@@ -6,6 +6,7 @@
  */
 const registerTFGRecipes = (event) => {
 	
+	registerTFGMaterialRecipes(event)
 	registerTFGMoldRecipes(event)
 	registerTFGMiscellaneousRecipes(event)
 	registerTFGTemporaryRecipes(event)
@@ -14,6 +15,9 @@ const registerTFGRecipes = (event) => {
 	registerTFGRefrigeratorRecipes(event)
 	registerTFGMealBagRecipes(event)
 	registerTFGBiomassRecipes(event)
+	// Greenhouse needs to register before pisciculture.
+	registerTFGGreenhouseRecipes(event)
+	registerTFGPiscicultureRecipes(event)
 
 	// TFC stone types
 	registerTFCStoneRecipes(event)

@@ -68,6 +68,7 @@ ServerEvents.tags('block', event => {
 	registerAFCBlockTags(event)
 	registerAsticorCartsBlockTags(event)
 	registerBeneathBlockTags(event)
+	registerBlockRunnerBlockTags(event)
 	registerComputerCraftBlockTags(event)
 	registerCreateBlockTags(event)
 	registerCreateAdditionsBlockTags(event)
@@ -198,6 +199,13 @@ GTCEuServerEvents.fluidVeins(event => {
 	registerGTCEUBedrockFluidVeins(event)
 })
 
+
+/** Correct recipe IDs to replace invalid characters */
+function linuxUnfucker(value) {
+	const str = (value === undefined || value === null) ? "" : value.toString();
+	return str.replace(/[/:\s]/g, "_");
+};
+
 /**
  * Событие регистрации рецептов.
  * Срабатывает после инициализации датапаков и тегов.
@@ -266,11 +274,11 @@ ServerEvents.recipes(event => {
 	registerTFCAmbientalRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
-	registerTFCScrapingRecipes(event)
 	registerTFCGroomingStationRecipes(event)
 	registerTFCGurmanRecipes(event)
 	registerTFGRecipes(event)
 	registerTFCTextileRecipes(event)
+	registerTFCScrapingKnivesRecipes(event)
 	registerToolBeltRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)

@@ -20,6 +20,11 @@ function registerTFGCoalRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:creosote', 2000))
 		.duration(900)
 
+	event.recipes.gtceu.coke_oven("tfg:peat")
+		.itemInputs('tfc:peat')
+		.outputFluids(Fluid.of('gtceu:creosote', 1000))
+		.duration(900)
+
 	event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
 		.itemInputs('3x gtceu:rich_raw_coal')
 		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)

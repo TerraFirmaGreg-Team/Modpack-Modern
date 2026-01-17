@@ -1,0 +1,22 @@
+{
+  "name": "Сетка",
+  "sortnum": 1,
+  "category": "buildinggadgets2:modes",
+  "icon": "buildinggadgets2:textures/book/mode/grid.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Режим «Сетка» ставит блоки по сетке! Удобно для факелов, светокамня и т. п. Чем больше радиус, тем дальше друг от друга стоят блоки — пока в какой-то момент область просто начинает расширяться. $(br2)Этот режим также доступен для гаджета замены: можно менять блоки «по сетке»."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Режим «Сетка»",
+      "images": [
+        "buildinggadgets2:textures/book/images/mode_grid.png",
+        "buildinggadgets2:textures/book/images/mode_grid2.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    }
+  ]
+}
