@@ -355,3 +355,25 @@ global.SPICES = [
 	{ plant: 'firmalife:plant/oregano', product: 'tfg:spice/oregano_leaves' },
 	{ plant: 'firmalife:plant/pimento', product: 'tfg:spice/allspice' }
 ];
+
+/**
+ * @typedef {Object} FishIndex
+ * @property {string} id - Fish mob ID.
+ * @property {string} item - Fish Item ID.
+ * @property {string} parent - Bucket of Fish Item ID.
+ * @property {string|null} dimension - Dimension ID (null for any).
+ */
+/** @type {FishIndex[]} - Index of fish mobs for pisciculture */
+global.FISH_INDEX = [
+	{ id: 'tfc:bluegill', item: 'tfc:food/bluegill', parent: 'tfc:bucket/bluegill', dimension: null },
+	{ id: 'tfc:crappie', item: 'tfc:food/crappie', parent: 'tfc:bucket/crappie', dimension: null },
+	{ id: 'tfc:lake_trout', item: 'tfc:food/lake_trout', parent: 'tfc:bucket/lake_trout', dimension: null },
+	{ id: 'tfc:largemouth_bass', item: 'tfc:food/largemouth_bass', parent: 'tfc:bucket/largemouth_bass', dimension: null },
+	{ id: 'tfc:rainbow_trout', item: 'tfc:food/rainbow_trout', parent: 'tfc:bucket/rainbow_trout', dimension: null },
+	{ id: 'tfc:salmon', item: 'tfc:food/salmon', parent: 'tfc:bucket/salmon', dimension: null },
+	{ id: 'tfc:smallmouth_bass', item: 'tfc:food/smallmouth_bass', parent: 'tfc:bucket/smallmouth_bass', dimension: null },
+	{ id: 'tfc:cod', item: 'tfc:food/cod', parent: 'tfc:bucket/cod', dimension: null },
+	{ id: 'tfc:tropical_fish', item: 'tfc:food/tropical_fish', parent: 'tfc:bucket/tropical_fish', dimension: null },
+	{ id: 'tfc:pufferfish', item: 'minecraft:pufferfish', parent: 'tfc:bucket/pufferfish', dimension: null },
+	{ id: 'wan_ancient_beasts:toxlacanth', item: 'wan_ancient_beasts:toxlacanth', parent: 'wan_ancient_beasts:toxlacanth_bucket', dimension: 'ad_astra:mars' }
+];

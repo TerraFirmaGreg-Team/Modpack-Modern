@@ -1,14 +1,14 @@
 {
-	member: {
-		name: "Player"
-		power: 1
+	novice: {
+		name: "Novice"
+		power: 0
 		condition: "always_active"
-		ftbranks.name_format: "&a{name}"
-		ftbchunks.max_claimed: 50
-		ftbchunks.max_force_loaded: 6
+		ftbranks.name_format: "&7{name}"
+		ftbchunks.max_claimed: 10
+		ftbchunks.max_force_loaded: 0
 		ftbchunks.chunk_load_offline: false
-        
-       	command.enderchest: false
+
+		command.enderchest: false
         command.ldlib: false
         command.compass_server: false
         command.chunky: false
@@ -41,6 +41,21 @@
 		command.tpx: false
         
 		command.trashcan: true
+	}
+
+	member: {
+		name: "Player"
+		power: 1
+		condition: {
+			type: "playtime"
+			time: 5
+			time_unit: "days"
+		}
+		ftbranks.name_format: "&a{name}"
+		ftbchunks.max_claimed: 50
+		ftbchunks.max_force_loaded: 6
+		ftbchunks.chunk_load_offline: false
+        
 
 	}
 	vip: {
@@ -57,6 +72,15 @@
 		ftbranks.name_format: "&b{name}"
 		ftbchunks.max_claimed: 200
 		ftbchunks.max_force_loaded: 8
+
+		command.ftbchunks.admin.bypass_protection: true
+		command.ban: true
+		command.ban-ip: true
+		command.pardon: true
+		command.pardon-ip: true
+		command.kick: true
+		command.clear: true
+		command.invsee: true
 	}
 	admin: {
 		name: "Admin"

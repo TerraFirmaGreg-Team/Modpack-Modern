@@ -2,8 +2,6 @@
 
 function registerTFGMarsItemTags(event) {
 
-	event.add('c:hidden_from_recipe_viewers', 'tfg:mars_ice')
-
 	event.add('tfc:compost_greens', 'ad_astra:aeronos_cap')
 	event.add('tfc:compost_greens', 'ad_astra:strophar_cap')
 
@@ -99,6 +97,16 @@ function registerTFGMarsItemTags(event) {
 
 	event.add('forge:mushrooms', 'betterend:flammalix')
 	event.add('forge:mushrooms', 'betterend:small_amaranita_mushroom')
+
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
+
+	event.add('tfg:charnia', 'betterend:charnia_orange')
+	event.add('tfg:charnia', 'betterend:charnia_cyan')
+	event.add('tfg:charnia', 'betterend:charnia_green')
+	event.add('tfg:charnia', 'betterend:charnia_light_blue')
+	event.add('tfg:charnia', 'betterend:charnia_purple')
+	event.add('tfg:charnia', 'betterend:charnia_red')
 }
 
 function registerTFGMarsBlockTags(event) {
@@ -269,6 +277,11 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_path')
+
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
+	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
+	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry')
+	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry_wild')
 
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_clay_dirt')

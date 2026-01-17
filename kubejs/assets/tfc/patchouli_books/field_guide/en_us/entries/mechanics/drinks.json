@@ -37,7 +37,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Teas",
-			"text": "$(thing)Teas$() can be brewed using dried versions of certain plants.$(br2)They provide short but useful buffs and warm your body temperature by 4 degrees. Perfect for winters!",
+			"text": "$(thing)Teas$() can be brewed using dried versions of certain plants.$(br2)They provide short but useful buffs and warm your body temperature by 4°C. Perfect for winters!",
 			"item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
 		},
 		{
@@ -52,7 +52,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Cocoa: Haste (0:30), warms you by 4 degrees$(li)Coffee: Speed (0:30), warms you by 4 degrees$(li)Lemonade: Haste (0:30), cools you by 2 degrees$(li)Nalivka: Strength (2:40), cools you by 2 degrees$(li)Kvass: Strength (1:20), cools you by 2 degrees$(li)Compote: Jump Boost II (0:30)"
+			"text": "$(li)Cocoa: Haste (0:30), warms you up by 4°C$(li)Coffee: Speed (0:30), warms you up by 4°C$(li)Lemonade: Haste (0:30), cools you down by 2°C$(li)Nalivka: Strength (2:40), cools you down by 2°C$(li)Kvass: Strength (1:20), cools you down by 2°C$(li)Compote: Jump Boost II (0:30)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -62,7 +62,7 @@
 		},
 		{
 			"title": "Spring Water",
-			"text": "Drinking $(thing)Spring Water$() warms you up by 4 degrees and applies a small regeneration effect while standing in it, as well as warming you.",
+			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight"
 		},
@@ -71,6 +71,12 @@
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water"
+		},
+		{
+			"title": "Liquid Ice Slush",
+			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket"
 		}
 	]
 }
