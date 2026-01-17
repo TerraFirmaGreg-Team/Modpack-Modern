@@ -59,7 +59,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: 'ae2:wireless_receiver',
 		B: 'ae2:calculation_processor',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 	}).addMaterialInfo().id('tfg:crafting/wireless_access_point')
 
 	// Wireless Receiver
@@ -68,7 +68,7 @@ const registerAE2Recipes = (event) => {
 		'CDC',
 		'AEA'
 	], {
-		A: '#ae2:glass_cable',
+		A: 'ae2:fluix_smart_cable',
 		B: 'ae2:fluix_pearl',
 		C: 'gtceu:ev_sensor',
 		D: '#forge:rods/titanium',
@@ -94,7 +94,7 @@ const registerAE2Recipes = (event) => {
 		' A '
 	], {
 		A: '#forge:plates/red_alloy',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: 'minecraft:lever'
 	}).addMaterialInfo().id('tfg:crafting/toggle_bus')
 
@@ -297,7 +297,7 @@ const registerAE2Recipes = (event) => {
 		' A '
 	], {
 		A: '#forge:plates/steel',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: 'minecraft:redstone_torch',
 		D: 'ae2:calculation_processor',
 	}).addMaterialInfo().id('tfg:crafting/level_emitter')
@@ -309,7 +309,7 @@ const registerAE2Recipes = (event) => {
 		' A '
 	], {
 		A: '#forge:plates/steel',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: 'minecraft:redstone_torch',
 		D: 'ae2:calculation_processor',
 		E: 'ae2:charged_certus_quartz_crystal'
@@ -346,7 +346,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: '#forge:plates/stainless_steel',
 		B: '#gtceu:circuits/mv',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 		D: 'gtceu:aluminium_crate',
 		E: 'ae2:terminal'
 	}).addMaterialInfo().id('tfg:crafting/me_chest')
@@ -359,7 +359,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: '#forge:plates/steel',
 		B: 'ae2:engineering_processor',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 		D: '#gtceu:circuits/mv',
 		E: '#forge:plates/titanium'
 	}).addMaterialInfo().id('tfg:crafting/drive')
@@ -371,7 +371,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: '#forge:plates/steel',
 		B: 'ae2:engineering_processor',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 		D: '#gtceu:circuits/mv',
 		E: 'minecraft:shulker_shell'
 	}).id('tfg:crafting/drive_shulker')
@@ -383,7 +383,7 @@ const registerAE2Recipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:plates/glass',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: '#forge:dusts/fluix',
 		D: '#forge:gems/fluix',
 	}).addMaterialInfo().id('tfg:crafting/spatial_pylon')
@@ -396,7 +396,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: '#forge:plates/glass',
 		B: 'ae2:drive',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 		D: '#forge:plates/titanium',
 		E: 'ae2:engineering_processor'
 	}).addMaterialInfo().id('tfg:crafting/io_port')
@@ -408,7 +408,7 @@ const registerAE2Recipes = (event) => {
 	], {
 		A: '#forge:plates/glass',
 		B: 'ae2:drive',
-		C: '#ae2:glass_cable',
+		C: 'ae2:fluix_smart_cable',
 		D: 'minecraft:shulker_shell',
 		E: 'ae2:engineering_processor'
 	}).id('tfg:crafting/io_port_shulker')
@@ -420,7 +420,7 @@ const registerAE2Recipes = (event) => {
 		'DED'
 	], {
 		A: '#forge:plates/glass',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: 'ae2:io_port',
 		D: '#forge:plates/titanium',
 		E: 'ae2:engineering_processor'
@@ -432,7 +432,7 @@ const registerAE2Recipes = (event) => {
 		'DED'
 	], {
 		A: '#forge:plates/glass',
-		B: '#ae2:glass_cable',
+		B: 'ae2:fluix_smart_cable',
 		C: 'ae2:io_port',
 		D: 'minecraft:shulker_shell',
 		E: 'ae2:engineering_processor'
@@ -737,6 +737,15 @@ const registerAE2Recipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 144))
 		.itemOutputs('4x ae2:fluix_smart_cable')
 		.circuit(2)
+		.duration(10)
+		.EUt(480)
+	
+	event.recipes.gtceu.assembler('fluix_smart_cable_from_covered')
+		.itemInputs(
+			'4x ae2:fluix_covered_cable',
+			'#forge:dusts/redstone')
+		.itemOutputs('4x ae2:fluix_smart_cable')
+		.circuit(1)
 		.duration(10)
 		.EUt(480)
 
@@ -1146,7 +1155,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('ae2:level_emitter')
 		.itemInputs(
 			'minecraft:redstone_torch',
-			'#ae2:glass_cable',
+			'ae2:fluix_smart_cable',
 			'#forge:plates/steel',
 			'ae2:calculation_processor')
 		.itemOutputs('ae2:level_emitter')
@@ -1160,7 +1169,7 @@ const registerAE2Recipes = (event) => {
 		.itemInputs(
 			'#ae2:interface',
 			'2x gtceu:mv_electric_piston',
-			'#ae2:glass_cable')
+			'ae2:fluix_smart_cable')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:storage_bus')
 		.circuit(1)
@@ -1174,7 +1183,7 @@ const registerAE2Recipes = (event) => {
 			'#forge:plates/wrought_iron',
 			'ae2:annihilation_core',
 			'2x gtceu:mv_robot_arm',
-			'#ae2:glass_cable')
+			'ae2:fluix_smart_cable')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:import_bus')
 		.circuit(2)
@@ -1188,7 +1197,7 @@ const registerAE2Recipes = (event) => {
 			'#forge:plates/wrought_iron',
 			'ae2:formation_core',
 			'2x gtceu:mv_robot_arm',
-			'#ae2:glass_cable')
+			'ae2:fluix_smart_cable')
 		.inputFluids(Fluid.of('tfg:fluix', 144))
 		.itemOutputs('ae2:export_bus')
 		.circuit(3)
