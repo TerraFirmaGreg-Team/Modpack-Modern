@@ -48,7 +48,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FOIL,
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
-		NO_ORE_SMELTING
+		NO_ORE_SMELTING,
+		DISABLE_DECOMPOSITION
 	} = $MATERIAL_FLAGS
 
 	const metalTooling = [
@@ -85,6 +86,9 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.WRENCH_IV,
 		GTToolType.CROWBAR,
 	]
+
+	GTMaterials.Clay.addFlags(DISABLE_DECOMPOSITION);
+	GTMaterials.Brick.addFlags(DISABLE_DECOMPOSITION);
 
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
