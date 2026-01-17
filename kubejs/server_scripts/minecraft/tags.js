@@ -57,4 +57,5 @@ const registerMinecraftBlockTags = (event) => {
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
     
+    event.add('minecraft:mineable/pickaxe', 'minecraft:glowstone')
 }
