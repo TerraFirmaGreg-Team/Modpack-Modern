@@ -180,6 +180,8 @@ function registerTFGMiscellaneousRecipes(event) {
 		.addMaterialInfo(true);
 
 	//#region artisan table
+	event.remove({input: 'gtceu:empty_mold', type: 'minecraft:crafting'})
+	
 	event.custom({
 		"result": {"item": "tfg:lamp_casting_mold"},
 		"pattern": [
@@ -233,6 +235,19 @@ function registerTFGMiscellaneousRecipes(event) {
 		"type": "tfg:smithing"	
 	})
 	event.custom({
+		"result": {"item": "gtceu:plate_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"X    X",
+			"X    X",
+			"X    X",
+			"X    X",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
 		"result": {"item": "gtceu:gear_casting_mold"},
 		"pattern": [
 			"XX  XX",
@@ -254,6 +269,19 @@ function registerTFGMiscellaneousRecipes(event) {
 			"X    X",
 			"X    X",
 			"X    X"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:ingot_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX",
+			"XXXXXX"
 		],
 		"smithingType": "tfg:casting_mold",
 		"type": "tfg:smithing"	
@@ -324,6 +352,19 @@ function registerTFGMiscellaneousRecipes(event) {
 		"type": "tfg:smithing"	
 	})
 	event.custom({
+		"result": {"item": "gtceu:name_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"X X X ",
+			" X X X",
+			"X X X ",
+			"XXXXXX",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
 		"result": {"item": "gtceu:small_gear_casting_mold"},
 		"pattern": [
 			"XXX XX",
@@ -336,6 +377,94 @@ function registerTFGMiscellaneousRecipes(event) {
 		"smithingType": "tfg:casting_mold",
 		"type": "tfg:smithing"	
 	})
+	event.custom({
+		"result": {"item": "gtceu:rotor_casting_mold"},
+		"pattern": [
+			" XXXX ",
+			"X XX X",
+			"XX  XX",
+			"XX  XX",
+			"X XX X",
+			" XXXX "
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:pill_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			"XX  XX",
+			"X   XX",
+			"X  XXX",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:huge_pipe_casting_mold"},
+		"pattern": [
+			"      ",
+			" XXXX ",
+			" XXXX ",
+			" XXXX ",
+			" XXXX ",
+			"      "
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
 	
+	const pipe_sizes = [
+		'huge',
+		'large',
+		'normal',
+		'small',
+		'tiny'
+	]
+	
+	var prev_size;
+	pipe_sizes.forEach((size) => {
+		if(size != 'huge'){
+			event.shaped(`gtceu:${size}_pipe_casting_mold`, [
+				'ABC'
+			], {
+				A: '#forge:tools/hammers',
+				B: `gtceu:${prev_size}_pipe_casting_mold`,
+				C: '#forge:tools/mallets',
+			}).id(`tfg:shaped/${prev_size}_${size}_casting_mold`)
+		}
+		prev_size = size;
+	});
+	
+	pipe_sizes.reverse().forEach((size) => {
+		if(size != 'tiny'){
+			event.shaped(`gtceu:${size}_pipe_casting_mold`, [
+				'ABC'
+			], {
+				A: '#forge:tools/mallets',
+				B: `gtceu:${prev_size}_pipe_casting_mold`,
+				C: '#forge:tools/hammers',
+			}).id(`tfg:shaped/${prev_size}_${size}_casting_mold`)
+		}
+		prev_size = size;
+	});
+	
+	
+	event.custom({
+		"result": {"item": "gtceu:resin_printed_circuit_board"},
+		"pattern": [
+			"X X XX",
+			" XXX  ",
+			"X  X X",
+			"X X  X",
+			"  X XX",
+			"XX  XX"
+		],
+		"smithingType": "tfg:resin_board",
+		"type": "tfg:smithing"	
+	})
 	
 }
