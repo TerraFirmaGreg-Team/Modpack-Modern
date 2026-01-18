@@ -12,4 +12,14 @@ function registerCreateMaterials(event) {
 		.color(0xB6995E)
 		.secondaryColor(0x865840)
 		.dust()
+
+	event.create('crimsite')
+		.color(0xA0504B)
+		.secondaryColor(0x7D2F3B)
+		.dust()
+
+	event.create('veridium')
+		.color(0x4F957C)
+		.secondaryColor(0x2A5C4A)
+		.dust()
 }
