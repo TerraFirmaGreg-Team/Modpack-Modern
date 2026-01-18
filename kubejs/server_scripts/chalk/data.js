@@ -9,5 +9,5 @@ const registerTFCDataForChalk = (evt) => {
         evt.itemHeat(`tfg:wet_${dyeName}_chalk`, 1, null, null, `tfg:heating/wet_${dyeName}_chalk`)
     })
 
-    evt.itemHead('tfg:unfired_chalk', 1, null, null, 'tfg:heating/unfired_chalk')
+    evt.itemHeat('tfg:unfired_chalk', 1, null, null, 'tfg:heating/unfired_chalk')
 }
