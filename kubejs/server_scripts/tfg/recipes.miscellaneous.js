@@ -170,6 +170,7 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	//#endregion
 
+
 	// Rotten Voiding Cover
 	event.recipes.gtceu.assembler('tfg:rotten_voiding_cover')
 		.itemInputs('gtceu:item_voiding_cover', '8x tfc:rotten_compost')
@@ -177,4 +178,164 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(5*20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true);
+
+	//#region artisan table
+	event.custom({
+		"result": {"item": "tfg:lamp_casting_mold"},
+		"pattern": [
+			"XX  XX",
+			"X    X",
+			"X XX X",
+			"X XX X",
+			"X XX X",
+			"X    X"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "tfg:trapdoor_casting_mold"},
+		"pattern": [
+			"      ",
+			" XXXX ",
+			"      ",
+			"      ",
+			" XXXX ",
+			"      "
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "tfg:chain_casting_mold"},
+		"pattern": [
+			"X    X",
+			"X XX X",
+			"X    X",
+			"XX  XX",
+			"X    X",
+			"X XX X"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "tfg:bell_casting_mold"},
+		"pattern": [
+			"XX  XX",
+			"X    X",
+			"X    X",
+			"X    X",
+			"      ",
+			"      "
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:gear_casting_mold"},
+		"pattern": [
+			"XX  XX",
+			"X    X",
+			"  XX  ",
+			"  XX  ",
+			"X    X",
+			"XX  XX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:bottle_casting_mold"},
+		"pattern": [
+			"X    X",
+			"XX  XX",
+			"XX  XX",
+			"X    X",
+			"X    X",
+			"X    X"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:ball_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"XX  XX",
+			"X    X",
+			"X    X",
+			"XX  XX",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:cylinder_casting_mold"},
+		"pattern": [
+			"XX  XX",
+			"X    X",
+			"      ",
+			"      ",
+			"X    X",
+			"XX  XX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:block_casting_mold"},
+		"pattern": [
+			"      ",
+			"      ",
+			"      ",
+			"      ",
+			"      ",
+			"      "
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:nugget_casting_mold"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			"XX XXX",
+			"XX XXX",
+			"XXXXXX",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:anvil_casting_mold"},
+		"pattern": [
+			"      ",
+			"      ",
+			"X    X",
+			"XX  XX",
+			"X    X",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	event.custom({
+		"result": {"item": "gtceu:small_gear_casting_mold"},
+		"pattern": [
+			"XXX XX",
+			"XX   X",
+			"X  X  ",
+			"XX   X",
+			"XXX XX",
+			"XXXXXX"
+		],
+		"smithingType": "tfg:casting_mold",
+		"type": "tfg:smithing"	
+	})
+	
+	
 }
