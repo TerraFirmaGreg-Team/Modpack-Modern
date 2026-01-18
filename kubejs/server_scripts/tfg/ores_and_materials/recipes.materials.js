@@ -97,29 +97,7 @@ function addMaterialRecyclingNoTagPrefix(event, inputItem, material, recipeSuffi
 	// Remove existing macerator recipes because Greate
 	removeMaceratorRecipe(event, `macerate_${materialName}_${recipeSuffix}`);
 
-	const maceratorOutput = ChemicalHelper.getDust(material, GTValues.M * ingotAmount);
-	if (!maceratorOutput.isEmpty()) {
-		event.recipes.gtceu.macerator(`tfg:macerate_${materialName}_${recipeSuffix}`)
-			.itemInputs(inputItem)
-			.itemOutputs(maceratorOutput)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-			.duration(material.getMass() * ingotAmount)
-			.EUt(2);
-	}
-
-	const arcOutput = ChemicalHelper.getIngot(material, GTValues.M * ingotAmount);
-	if (!arcOutput.isEmpty()) {
-		event.recipes.gtceu.arc_furnace(`tfg:arc_${materialName}_${recipeSuffix}`)
-			.itemInputs(inputItem)
-			.itemOutputs(arcOutput)
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.duration(material.getMass() * ingotAmount)
-			.EUt(30);
-	}
-
-	let matmap = {};
-	matmap[materialName] = ingotAmount;
-	TFGHelpers.registerMaterialInfo(inputItem, matmap);
+	TFGHelpers.registerMaterialInfo(inputItem, [material, ingotAmount]);
 }
 
 /**
