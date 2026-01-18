@@ -79,11 +79,8 @@ const registerTFGOreLoots = (event) => {
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
 
-				let stoneTypeMaterial = global.GEOLOGY_MATERIALS[stoneType === "pyroxenite" ? "blackstone" : stoneType];
-				if (stoneTypeMaterial === null) {
-					console.log(`unknown stone type: ${stoneTypeMaterial}`);
-				}
-
+				let stoneTypeMaterial = GTMaterials.get(global.BIG_ROCK_TABLE[stoneType === "pyroxenite" ? "blackstone" : stoneType].material);
+				
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 				let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
 

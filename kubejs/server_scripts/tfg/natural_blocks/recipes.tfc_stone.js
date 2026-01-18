@@ -257,7 +257,8 @@ function registerTFCStoneRecipes(event) {
 		//
 		//#region Whole Blocks
 		
-		let stoneDust = ChemicalHelper.get(TagPrefix.dust, global.GEOLOGY_MATERIALS[stone], 1);
+		const material = GTMaterials.get(global.BIG_ROCK_TABLE[stone].material);
+		let stoneDust = ChemicalHelper.get(TagPrefix.dust, material, 1);
 
 		// Raw
 		event.recipes.gtceu.macerator(`raw_${stone}_to_dust`)
