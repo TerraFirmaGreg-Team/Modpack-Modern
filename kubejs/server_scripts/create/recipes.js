@@ -288,7 +288,7 @@ const registerCreateRecipes = (event) => {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:hose_pulley', { 'copper': 3 });
+	TFGHelpers.registerMaterialInfo('create:hose_pulley', [GTMaterials.Copper, 3, GTMaterials.Rubber, 1/8]);
 
 	// Слив из предметов
 	event.shaped('create:item_drain', [
@@ -416,7 +416,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(22)
 
-	TFGHelpers.registerMaterialInfo('create:rope_pulley', { 'wood': 1, 'wrought_iron': 2 });
+	TFGHelpers.registerMaterialInfo('create:rope_pulley', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 2]);
 
 	// Шкиф подъемника
 	event.shaped('create:elevator_pulley', [
@@ -438,7 +438,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:elevator_pulley', { 'wood': 1, 'brass': 1, 'steel': 1 });
+	TFGHelpers.registerMaterialInfo('create:elevator_pulley', [GTMaterials.Wood, 1, GTMaterials.Brass, 1, GTMaterials.Steel, 1]);
 
 	// Сборщик вагонеток
 	event.shaped('create:cart_assembler', [
@@ -528,7 +528,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(19)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_drill', { 'wood': 1, 'steel': 4, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:mechanical_drill', [GTMaterials.Wood, 1, GTMaterials.Steel, 4, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:mechanical_roller', [
 		'GBG',
@@ -551,7 +551,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(20)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_roller', { 'wood': 1,'wrought_iron': 4 });
+	TFGHelpers.registerMaterialInfo('create:mechanical_roller', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 4]);
 
 	// Редстоуновый контакт
 	event.shaped('2x create:redstone_contact', [
@@ -595,7 +595,7 @@ const registerCreateRecipes = (event) => {
 		.duration(200)
 		.EUt(20)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_harvester', { 'wood': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:mechanical_harvester', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	// Механический плуг
 	event.shaped('create:mechanical_plough', [
@@ -618,7 +618,7 @@ const registerCreateRecipes = (event) => {
 		.duration(200)
 		.EUt(20)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_plough', { 'wood': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:mechanical_plough', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	// Create sail creation using custom sail items.
 
@@ -828,7 +828,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:andesite_funnel', { 'wrought_iron': 1 });
+	TFGHelpers.registerMaterialInfo('create:andesite_funnel', [GTMaterials.WroughtIron, 1]);
 
 	// Умный раздатчик/приемник из латуни
 	event.shaped('2x create:brass_funnel', [
@@ -869,7 +869,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:brass_funnel', { 'brass': 1 });
+	TFGHelpers.registerMaterialInfo('create:brass_funnel', [GTMaterials.Brass, 1]);
 
 	// Тунель из железа
 	event.shaped('create:andesite_tunnel', [
@@ -906,7 +906,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	TFGHelpers.registerMaterialInfo('create:andesite_tunnel', { 'wrought_iron': 1 });
+	TFGHelpers.registerMaterialInfo('create:andesite_tunnel', [GTMaterials.WroughtIron, 1]);
 
 	// Тунель из латуни
 	event.shaped('create:brass_tunnel', [
@@ -945,7 +945,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	TFGHelpers.registerMaterialInfo('create:brass_tunnel', { 'brass': 1 });
+	TFGHelpers.registerMaterialInfo('create:brass_tunnel', [GTMaterials.Brass, 1]);
 
 	// Дисплей столешница (чзх)
 	event.shaped('create:display_board', [
@@ -1015,7 +1015,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	TFGHelpers.registerMaterialInfo('create:deployer', { 'brass': 12/9, 'wrought_iron': 8 });
+	TFGHelpers.registerMaterialInfo('create:deployer', [GTMaterials.Brass, 12/9, GTMaterials.WroughtIron, 8]);
 
 	// Соединятор вагонеток
 	event.shapeless('create:minecart_coupling', [
@@ -1242,7 +1242,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/tin_alloy'
 	}).id('tfg:create/shaped/andesite_ladder')
 
-	TFGHelpers.registerMaterialInfo('create:andesite_ladder', { 'tin_alloy': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:andesite_ladder', [GTMaterials.TinAlloy, 0.5])
 
 	// Лестница из латуни
 	event.shaped('7x create:brass_ladder', [
@@ -1253,7 +1253,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/brass'
 	}).id('tfg:create/shaped/brass_ladder')
 
-	TFGHelpers.registerMaterialInfo('create:brass_ladder', { 'brass': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:brass_ladder', [GTMaterials.Brass, 0.5])
 
 	// Лестница из железа
 	event.shaped('7x create:copper_ladder', [
@@ -1264,7 +1264,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/copper'
 	}).id('tfg:create/shaped/copper_ladder')
 
-	TFGHelpers.registerMaterialInfo('create:copper_ladder', { 'copper': 0.5 })
+	TFGHelpers.registerMaterialInfo('create:copper_ladder', [GTMaterials.Copper, 0.5])
 
 	// Леса из железа
 	event.shaped('4x create:andesite_scaffolding', [
@@ -1563,7 +1563,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(1)
 
-	TFGHelpers.registerMaterialInfo('create:windmill_bearing', { 'wood': 1.5, 'brass': 1, 'wrought_iron': 1 });
+	TFGHelpers.registerMaterialInfo('create:windmill_bearing', [GTMaterials.Wood, 1.5, GTMaterials.Brass, 1, GTMaterials.WroughtIron, 1]);
 
 	// #endregion
 
@@ -2085,7 +2085,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(17)
 		
-	TFGHelpers.registerMaterialInfo('create:redstone_link', { 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:redstone_link', [GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:display_link', [
 		'FED',
@@ -2127,6 +2127,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	TFGHelpers.registerMaterialInfo('create:rotation_speed_controller', [GTMaterials.Wood, 1, GTMaterials.Brass, 3, GTMaterials.RedAlloy, 1]);
+
 	event.shaped('create:pulse_timer', [
 		'E E',
 		'ABC',
@@ -2167,7 +2169,7 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:sequenced_gearshift', { 'wood': 1, 'steel': 4, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:sequenced_gearshift', [GTMaterials.Wood, 1, GTMaterials.Steel, 4, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:mechanical_bearing', [
 		'CBE',
@@ -2189,7 +2191,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(15)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_bearing', { 'wood': 1, 'wrought_iron': 2 });
+	TFGHelpers.registerMaterialInfo('create:mechanical_bearing', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 2]);
 
 	event.shaped('create:gantry_carriage', [
 		'DCE',
@@ -2211,7 +2213,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(2)
 
-	TFGHelpers.registerMaterialInfo('create:gantry_carriage', { 'wood': 1.5, 'wrought_iron': 1 });
+	TFGHelpers.registerMaterialInfo('create:gantry_carriage', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1]);
 
 	event.shaped('create:weighted_ejector', [
 		' B ',
@@ -2233,7 +2235,7 @@ const registerCreateRecipes = (event) => {
 		.circuit(16)
 		.addMaterialInfo(true)
 		
-	TFGHelpers.registerMaterialInfo('create:gantry_carriage', { 'wood': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('create:gantry_carriage', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:turntable', [
 		'DA ',
@@ -2271,7 +2273,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
 
-	TFGHelpers.registerMaterialInfo('create:gearshift', { 'wood': 1, 'wrought_iron': 1, 'redstone': 1 });
+	TFGHelpers.registerMaterialInfo('create:gearshift', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Redstone, 1]);
 
 	event.shaped('create:clutch', [
 		' C ',
@@ -2387,13 +2389,10 @@ const registerCreateRecipes = (event) => {
 	];
 
 	create_metals.forEach(bar => {
-		let quarterMap = {};
-		quarterMap[bar.material] = 0.25;
-
 		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
 			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
 
-		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, quarterMap)
+		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, [GTMaterials.get(bar.material), 0.25])
 
 		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
 			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
