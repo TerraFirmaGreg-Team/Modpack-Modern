@@ -47,7 +47,17 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+	
 	//#endregion
+
+	event.add('tfg:smithing_table_input', 'gtceu:empty_mold')
+	event.add('tfg:smithing_table_input', 'gtceu:resin_circuit_board')
+	event.add('tfg:smithing_table_input', 'gtceu:copper_single_wire')
+	event.add('tfg:smithing_tools', '#forge:tools/hammers')
+	event.add('tfg:smithing_tools', '#forge:tools/mallets')
+	event.add('tfg:smithing_tools', '#forge:tools/files')
+	event.add('tfg:smithing_tools', '#forge:tools/wire_cutters')
+	event.add('tfg:smithing_tools', '#forge:tools/screwdrivers')
 
 	// Airplane Upgrades
 	global.AIRCRAFT_UPGRADES.forEach(value => {
