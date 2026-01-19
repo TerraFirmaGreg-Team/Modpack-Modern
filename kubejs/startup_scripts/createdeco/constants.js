@@ -1,4 +1,4 @@
-// priority: -100
+// priority: 0
 "use strict";
 
 /** @global */

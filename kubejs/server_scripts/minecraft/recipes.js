@@ -756,6 +756,22 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
+	event.recipes.gtceu.assembler(`assembler_bricks`)
+		.itemInputs('5x minecraft:brick')
+		.inputFluids(Fluid.of('gtceu:concrete', 144))
+		.itemOutputs(`4x minecraft:bricks`)
+		.duration(50)
+		.circuit(2)
+		.EUt(7)
+
+	event.recipes.gtceu.alloy_smelter('tfg:brick_dust_to_brick')
+		.itemInputs('#forge:dusts/brick')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.itemOutputs('minecraft:brick')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
+
 	//#endregion
 
 	//#region Выход: Элитра, elytra
@@ -963,22 +979,18 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Stonecutter
 
-	event.shaped('minecraft:stonecutter',
-		[
-			' E ',
-			'CAC',
-			'BDB'
-		],
-		{
-			A: '#forge:plates/wrought_iron',
-			B: '#tfc:lumber',
-			C: '#forge:plates/brass',
-			D: '#forge:small_gears',
-			E: '#forge:buzz_saw_heads'
-		}).id('tfg:shaped/stonecutter');
+	event.shaped('minecraft:stonecutter', [
+		' E ',
+		'CAC',
+		'BDB'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: '#tfc:lumber',
+		C: '#forge:plates/brass',
+		D: '#forge:small_gears/brass',
+		E: '#forge:buzz_saw_heads'
+	}).id('tfg:shaped/stonecutter');
 
-	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
-	event.stonecutting('create:cut_deepslate', 'minecraft:polished_deepslate')
 	//#endregion
 
 	//#region Glowing Ink Sacs
@@ -1059,12 +1071,12 @@ const registerMinecraftRecipes = (event) => {
 
 	// #endregion
 
-    // Minecart w/ Furnace
-    event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
+	// Minecart w/ Furnace
+	event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
 
-    event.recipes.gtceu.assembler('minecraft:furnace_minecart')
-        .itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
-        .itemOutputs('minecraft:furnace_minecart')
-        .duration(100)
-        .EUt(4)
+	event.recipes.gtceu.assembler('minecraft:furnace_minecart')
+		.itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
+		.itemOutputs('minecraft:furnace_minecart')
+		.duration(100)
+		.EUt(4)
 }

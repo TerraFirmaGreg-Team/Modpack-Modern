@@ -131,25 +131,25 @@ const registerChalkRecipes = (evt) => {
 
 	//Mix dusts for chalk sticks with clay to make an unfired chalk stick. Greggy or Create lets you use tiny dusts if needed
 	evt.recipes.firmalife.mixing_bowl()
-		.itemIngredients(["minecraft:clay_ball", "#chalk:dusts_for_chalks"])
+		.itemIngredients(["minecraft:clay_ball", "tfg:sedimentary_carbonate_dust"])
 		.outputItem("tfg:unfired_chalk")
 		.id(`chalk:mixing_bowl/unfired_chalk_stick_from_dust`)
-		
-		
+
+
 	evt.recipes.tfc.heating(`tfg:unfired_chalk`, 700)
 		.resultItem(`chalk:white_chalk`)
 		.id(`chalk:heating/undyed_chalk`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
 		evt.recipes.tfc.barrel_sealed(1000)
-			.inputItem('chalk:white_chalk')
+			.inputItem('#chalk:chalks')
 			.inputFluid(Fluid.of(`tfc:${dyeName}_dye`, 25))
 			.outputItem(`chalk:${dyeName}_chalk`)
 			.id(`chalk:barrel/dye/${dyeName}_chalk`)
 
 		//gt mixer works as is
 		evt.recipes.gtceu.chemical_bath(`chalk:gt_mixer/${dyeName}_chalk_from_dust`)
-			.itemInputs(["minecraft:clay_ball", `#chalk:dusts_for_chalks`])
+			.itemInputs(["minecraft:clay_ball", `tfg:sedimentary_carbonate_dust`])
 			.inputFluids([Fluid.of(`tfc:${dyeName}_dye`, 36)])
 			.itemOutputs([`chalk:${dyeName}_chalk`])
 			.duration(600)
@@ -157,7 +157,7 @@ const registerChalkRecipes = (evt) => {
 			.category(GTRecipeCategories.CHEM_DYES);
 
 		//create mixer creates the unfired colored stick, unless heated.
-		let createIngredients = ["minecraft:clay_ball", `#chalk:dusts_for_chalks`, Fluid.of(`tfc:${dyeName}_dye`, 36)]
+		let createIngredients = ["minecraft:clay_ball", `tfg:sedimentary_carbonate_dust`, Fluid.of(`tfc:${dyeName}_dye`, 36)]
 		evt.recipes.create.mixing(`tfg:wet_${dyeName}_chalk`, createIngredients)
 			.id(`chalk:create_mixer/wet_${dyeName}_chalk_from_dust`);
 
