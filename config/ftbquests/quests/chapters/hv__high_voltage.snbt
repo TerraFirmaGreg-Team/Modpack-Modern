@@ -1683,19 +1683,6 @@
 				"{quests.high_voltage.pisciculture.desc.2}"
 			]
 			icon: "tfc:bucket/tropical_fish"
-				Count: 1
-				ForgeCaps: {
-					"tfc:food": {
-						creationDate: -9223372036854775808L
-						traits: [ ]
-					}
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:food/tropical_fish"
-			}
 			id: "04ADA3B900F182A0"
 			optional: true
 			shape: "heart"
