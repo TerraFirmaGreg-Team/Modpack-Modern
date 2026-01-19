@@ -2,21 +2,22 @@
 "use strict";
 
 const registerTFGOreLoots = (event) => {
+	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+		if (rock.raw != null && rock.cobble != null) {
+			event.addBlockLootModifier(rock.raw.block)
+				.matchMainHand('#forge:tools/hammers')
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
+				.addLoot(rock.cobble.block)
+		}
 
-	// Crush raw rock into cobble
-	global.TFC_STONE_TYPES.forEach(stoneType => {
-		event.addBlockLootModifier(`tfc:rock/raw/${stoneType}`)
-			.matchMainHand('#forge:tools/hammers')
-			.removeLoot(ItemFilter.ALWAYS_TRUE)
-			.addLoot(`tfc:rock/cobble/${stoneType}`);
+		if (rock.cobble != null && rock.gravel != null) {
+			event.addBlockLootModifier(rock.cobble.block)
+				.matchMainHand('#forge:tools/hammers')
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
+				.addLoot(rock.gravel)
+		}
+	}
 
-		event.addBlockLootModifier(`tfc:rock/cobble/${stoneType}`)
-			.matchMainHand('#forge:tools/hammers')
-			.removeLoot(ItemFilter.ALWAYS_TRUE)
-			.addLoot(`tfc:rock/gravel/${stoneType}`);
-	})
-
-	// Defined in kubejs/startup_scripts/tfg/constants.js
 	global.HAMMERING.forEach(x => {
 		event.addBlockLootModifier(x.raw)
 			.matchMainHand('#forge:tools/hammers')

@@ -29,5 +29,4 @@ const registerTFGRockMaterials = (event) => {
 	registerStoneMaterial('igneous_mafic', 0x525D6B, ['basalt']);
 	registerStoneMaterial('igneous_intermediate', 0x71818A, ['andesite']);
 	registerStoneMaterial('igneous_felsic', 0x97B2BF, ['granite_red']);
-
 }

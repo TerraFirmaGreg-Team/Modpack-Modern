@@ -1,5 +1,52 @@
-// priority: 0
+// priority: -1
 "use strict";
+
+/**
+ * @typedef {Object} BlockForms
+ * @property {string} block
+ * @property {string?} stair
+ * @property {string?} slab
+ * @property {string?} wall
+ * @property {BlockForms?} mossy - If this block has a mossy variant
+ * @property {BlockForms?} cracked - If this block has a cracked variant
+ */
+
+/**
+ * @typedef {Object} RockType
+ * @property {String?} material
+ * Material ID if this rock type can be macerated
+ * @property {String?} tfcTag
+ * Item tag that everything in this rock type should be added to
+ * @property {boolean} isTFC
+ * If this is a built-in TFC rock type or not
+ * @property {String?} stonecutterTag
+ * Item tag for stonecutting
+ * @property {String?} gravelTag
+ * Item tag for what kind of sand this gravel should be turned into
+ * @property {String?} mapColor
+ * @property {String?} sound
+ * @property {String[]?} dimensions
+ * Used for generating rock breaker recipes.
+ * TFC rocks can be used on any dimension, null/empty array on other types will not have any recipes.
+ * @property {String?} hardened
+ * @property {String?} gravel
+ * @property {String?} loose
+ * @property {String?} mossyLoose
+ * @property {String?} brick
+ * ID of the brick item
+ * @property {String?} support
+ * @property {String?} aqueduct
+ * @property {String?} spike
+ * @property {String?} pillar
+ * @property {String?} pillar2
+ * @property {BlockForms?} raw
+ * @property {BlockForms?} cobble
+ * @property {BlockForms?} bricks
+ * @property {BlockForms?} polished
+ * @property {BlockForms?} chiseled
+ * @property {BlockForms[]?} stonecutting
+ * Extra blocks that you can use a stonecutter to get
+ */
 
 /**
  * Generates an object of block, stair, slab, and wall strings.
@@ -9,25 +56,57 @@
  * A pattern to use to generate the other rock form strings. 
  * %s will be replaced with the id above.
  * "_stairs", "_slab", or "_wall" will be appended on the end.
- * @param {String?} [existingBlock=null]
- * If the block doesn't match the pattern (or if the block exists but in a different namespace for example), 
- * put it here to avoid auto generating it.
- * @param {{block: String, stair: String, slab: String, wall: String}?} [mossy=null]
+ * @param {BlockForms?} [mossy=null]
  * If this rock block has a mossy subset, put it here.
- * @param {{block: String, stair: String, slab: String, wall: String}?} [cracked=null]
+ * @param {BlockForms?} [cracked=null]
  * If this rock block has a cracked subset, put it here.
- * @returns {{block: String, stair: String, slab: String, wall: String, mossy: *?, cracked: *?}?}
+ * @returns {BlockForms?}
  */
-function generateForms(id, pattern, existingBlock, mossy, cracked) {
+function generateForms(id, pattern, mossy, cracked) {
 	let replaced = pattern.replace('%s', id);
 	return {
-		block: existingBlock ?? `${replaced}`,
+		block: `${replaced}`,
 		stair: `${replaced}_stairs`,
 		slab: `${replaced}_slab`,
 		wall: `${replaced}_wall`,
 		mossy: mossy,
 		cracked: cracked
 	};
+}
+
+/**
+ * Generates an object of block, stair, slab, and wall strings.
+ * @param {String} id
+ * The internal ID of a rock type. For example, migmatite is 'deepslate'.
+ * @param {String} pattern 
+ * A pattern to use to generate the other rock form strings. 
+ * %s will be replaced with the id above.
+ * "_stairs", "_slab", or "_wall" will be appended on the end.
+ * @param {BlockForms} table
+ * Another table of forms to overwrite this one. Good if there's already an existing block.
+ * @param {BlockForms?} [mossy=null]
+ * If this rock block has a mossy subset, put it here.
+ * @param {BlockForms?} [cracked=null]
+ * If this rock block has a cracked subset, put it here.
+ * @returns {BlockForms}
+ */
+function generateFormsExisting(id, pattern, table, mossy, cracked) {
+	let generated = generateForms(id, pattern, mossy, cracked);
+	
+	if (table.block == null)
+		table.block = generated.block;
+	if (table.stair == null)
+		table.stair = generated.stair;
+	if (table.slab == null)
+		table.slab = generated.slab;
+	if (table.wall == null)
+		table.wall = generated.wall;
+	if (table.mossy == null)
+		table.mossy = generated.mossy;
+	if (table.cracked == null)
+		table.cracked = generated.cracked;
+
+	return table;
 }
 
 
@@ -41,11 +120,11 @@ function generateForms(id, pattern, existingBlock, mossy, cracked) {
  * "_stairs", "_slab", or "_wall" will be appended on the end.
  * @param {String} wall
  * The TFG wall block.
- * @param {{block: String, stair: String, slab: String, wall: String}?} [mossy=null]
+ * @param {BlockForms?} [mossy=null]
  * If this rock block has a mossy subset, put it here.
- * @param {{block: String, stair: String, slab: String, wall: String}?} [cracked=null]
+ * @param {BlockForms?} [cracked=null]
  * If this rock block has a cracked subset, put it here.
- * @returns {{block: String, stair: String, slab: String, wall: String, mossy: *?, cracked: *?}?}
+ * @returns {BlockForms}
  */
 function generateFormsExceptWall(id, pattern, wall, mossy, cracked) {
 	let replaced = pattern.replace('%s', id);
@@ -59,20 +138,29 @@ function generateFormsExceptWall(id, pattern, wall, mossy, cracked) {
 	};
 }
 
-
+/**
+ * Fills out a rock type for the TFC blocks, since they already exist and have known IDs.
+ * @param {String} id
+ * The internal ID of a rock type.
+ * @param {RockType} table 
+ * The table with all the other blocks.
+ * @returns {RockType}
+ */
 function generateTFC(id, table) {
+	table.stonecutterTag = `tfg:stone_types/${id}`;
 	table.hardened = `tfc:rock/hardened/${id}`;
 	table.gravel = `tfc:rock/gravel/${id}`;
 	table.loose = `tfc:rock/loose/${id}`;
-	table.brick = `tfc:rock/brick/${id}`;
+	table.mossyLoose = `tfc:rock/mossy_loose/${id}`;
+	table.brick = `tfc:brick/${id}`;
 	table.support = `tfg:${id}_support`;
 	table.aqueduct = `tfc:rock/aqueduct/${id}`;
 	table.spike = `tfc:rock/spike/${id}`;
 
 	table.raw = generateForms(id, 'tfc:rock/raw/%s'),
-	table.cobble = generateForms(id, 'tfc:rock/cobble/%s', null,
+	table.cobble = generateForms(id, 'tfc:rock/cobble/%s', 
 		generateForms(id, 'tfc:rock/mossy_cobble/%s'));
-	table.bricks = generateForms(id, 'tfc:rock/bricks/%s', null,
+	table.bricks = generateForms(id, 'tfc:rock/bricks/%s', 
 		generateForms(id, 'tfc:rock/mossy_bricks/%s'),
 		generateForms(id, 'tfc:rock/cracked_bricks/%s'));
 	table.polished = generateForms(id, 'tfc:rock/smooth/%s');
@@ -86,10 +174,12 @@ function generateTFC(id, table) {
  * Generates some missing rock-type blocks that don't have stair/slab/wall blocks.
  * @param {String} id 
  * The internal ID of a rock type. For example, migmatite is 'deepslate'.
- * @param {*} table
+ * @param {RockType} table
  * A table of different rock blocks.
+ * @returns {RockType}
  */
 function generateMissing(id, table) {
+	table.stonecutterTag = `tfg:stone_types/${id}`;
 	if (table.hardened === undefined)
 		table.hardened = `tfg:rock/hardened_${id}`;
 	if (table.gravel === undefined)
@@ -111,7 +201,7 @@ function generateMissing(id, table) {
 
 // This can also be used for things that aren't really rock types, if you want to generate similar recipes.
 /** @global */
-global.BIG_ROCK_TABLE = /** @type {const} */ {
+global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// TFC ROCKS
@@ -126,12 +216,12 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		tfcTag: 'tfc:igneous_intrusive_items',
 		pillar: 'create:diorite_pillar',
 		pillar2: 'create:layered_diorite',
-		createTag: 'create:stone_types/diorite',
+		stonecutterTag: 'create:stone_types/diorite',
 		stonecutting: [
 			generateForms('diorite', 'create:cut_%s'),
 			generateForms('diorite', 'create:polished_cut_%s'),
-			generateForms('diorite', 'create:cut_%s_brick', 'create:cut_diorite_bricks'),
-			generateForms('diorite', 'create:small_%s_brick', 'create:small_diorite_bricks')
+			generateFormsExisting('diorite', 'create:cut_%s_brick', { block: 'create:cut_diorite_bricks' }),
+			generateFormsExisting('diorite', 'create:small_%s_brick', { block: 'create:small_diorite_bricks' })
 		]
 	}),
 	"granite": generateTFC('granite', {
@@ -149,12 +239,12 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		tfcTag: 'tfc:igneous_extrusive_items',
 		pillar: 'create:andesite_pillar',
 		pillar2: 'create:layered_andesite',
-		createTag: 'create:stone_types/andesite',
+		stonecutterTag: 'create:stone_types/andesite',
 		stonecutting: [
 			generateForms('andesite', 'create:cut_%s'),
 			generateForms('andesite', 'create:polished_cut_%s'),
-			generateForms('andesite', 'create:cut_%s_brick', 'create:cut_andesite_bricks'),
-			generateForms('andesite', 'create:small_%s_brick', 'create:small_andesite_bricks')
+			generateFormsExisting('andesite', 'create:cut_%s_brick', { block: 'create:cut_andesite_bricks' }),
+			generateFormsExisting('andesite', 'create:small_%s_brick', { block: 'create:small_andesite_bricks' })
 		]
 	}),
 	"dacite": generateTFC('dacite', {
@@ -182,13 +272,13 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		tfcTag: 'tfc:sedimentary_items',
 		pillar: 'create:limestone_pillar',
 		pillar2: 'create:layered_limestone',
-		createTag: 'create:stone_types/limestone',
+		stonecutterTag: 'create:stone_types/limestone',
 		stonecutting: [
+			{ block: 'create:limestone' },
 			generateForms('limestone', 'create:cut_%s'),
 			generateForms('limestone', 'create:polished_cut_%s'),
-			generateForms('limestone', 'create:cut_%s_brick', 'create:cut_limestone_bricks'),
-			generateForms('limestone', 'create:small_%s_brick', 'create:small_limestone_bricks'),
-			{ block: 'create:limestone' }
+			generateFormsExisting('limestone', 'create:cut_%s_brick', { block: 'create:cut_limestone_bricks' }),
+			generateFormsExisting('limestone', 'create:small_%s_brick', { block: 'create:small_limestone_bricks' })
 		]
 	}),
 	"dolomite": generateTFC('dolomite', {
@@ -204,12 +294,12 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		tfcTag: 'tfc:sedimentary_items',
 		pillar: 'create:granite_pillar',
 		pillar2: 'create:layered_granite',
-		createTag: 'create:stone_types/granite',
+		stonecutterTag: 'create:stone_types/granite',
 		stonecutting: [
 			generateForms('granite', 'create:cut_%s'),
 			generateForms('granite', 'create:polished_cut_%s'),
-			generateForms('granite', 'create:cut_%s_brick', 'create:cut_granite_bricks'),
-			generateForms('granite', 'create:small_%s_brick', 'create:small_granite_bricks')
+			generateFormsExisting('granite', 'create:cut_%s_brick', { block: 'create:cut_granite_bricks' }),
+			generateFormsExisting('granite', 'create:small_%s_brick', { block: 'create:small_granite_bricks' })
 		]
 	}),
 	"slate": generateTFC('slate', {
@@ -260,9 +350,16 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 			block: 'minecraft:quartz_block',
 			stair: 'minecraft:quartz_stairs',
 			slab: 'minecraft:quartz_slab',
-			wall: 'tfg:rock/quartz_wall'
+			wall: 'tfg:rock/quartz_wall',
+			texture: 'minecraft:block/quartz_block_side'
 		},
-		polished: generateFormsExceptWall('quartz', 'minecraft:smooth_%s', 'tfg:rock/smooth_quartz_wall')
+		polished: {
+			block: 'minecraft:smooth_quartz',
+			stair: 'minecraft:smooth_quartz_stairs',
+			slab: 'minecraft:smooth_quartz_slab',
+			wall: 'tfg:rock/smooth_quartz_wall',
+			texture: 'minecraft:block/quartz_block_bottom'
+		}
 	},
 	// Migmatite
 	"deepslate": generateMissing('deepslate', {
@@ -275,22 +372,22 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		support: 'tfg:migmatite_support',
 		pillar: 'create:deepslate_pillar',
 		pillar2: 'create:layered_deepslate',
-		createTag: 'create:stone_types/deepslate',
-		raw: generateForms('deepslate', 'tfg:rock/%s', 'minecraft:deepslate'),
-		cobble: generateForms('deepslate', 'minecraft:cobbled_%s', null,
-			generateForms('deepslate', 'tfg:rock/mossy_cobble_%')),
-		bricks: generateForms('deepslate', 'minecraft:%s_brick', 'minecraft:deepslate_bricks',
+		stonecutterTag: 'create:stone_types/deepslate',
+		raw: generateFormsExisting('deepslate', 'tfg:rock/%s', { block: 'minecraft:deepslate' }),
+		cobble: generateForms('deepslate', 'minecraft:cobbled_%s',
+			generateForms('deepslate', 'tfg:rock/mossy_cobble_%s')),
+		bricks: generateFormsExisting('deepslate', 'minecraft:%s_brick', { block: 'minecraft:deepslate_bricks' },
 			generateForms('deepslate', 'tfg:rock/mossy_bricks_%s'),
-			generateForms('deepslate', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_deepslate_bricks')),
+			generateFormsExisting('deepslate', 'tfg:rock/cracked_bricks_%s', { block: 'minecraft:cracked_deepslate_bricks' })),
 		polished: generateForms('deepslate', 'minecraft:polished_%s'),
 		chiseled: { block: 'minecraft:chiseled_deepslate' },
 		stonecutting: [
-			generateForms('deepslate', 'minecraft:%s_tile', 'minecraft:deepslate_tiles', null,
-				generateForms('deepslate', 'tfg:rock/cracked_tiles_%s', 'minecraft:cracked_deepslate_tiles')),
+			generateFormsExisting('deepslate', 'minecraft:%s_tile', { block: 'minecraft:deepslate_tiles' }, null,
+				generateFormsExisting('deepslate', 'tfg:rock/cracked_tiles_%s', { block: 'minecraft:cracked_deepslate_tiles' })),
 			generateForms('deepslate', 'create:cut_%s'),
 			generateForms('deepslate', 'create:polished_cut_%s'),
-			generateForms('deepslate', 'create:cut_%s_brick', 'create:cut_deepslate_bricks'),
-			generateForms('deepslate', 'create:small_%s_brick', 'create:small_deepslate_bricks')
+			generateFormsExisting('deepslate', 'create:cut_%s_brick', { block: 'create:cut_deepslate_bricks' }),
+			generateFormsExisting('deepslate', 'create:small_%s_brick', { block: 'create:small_deepslate_bricks' })
 		]
 	}),
 	// Travertine
@@ -304,17 +401,20 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		support: 'tfg:travertine_support',
 		pillar: 'create:dripstone_pillar',
 		pillar2: 'create:layered_dripstone',
-		createTag: 'create:stone_types/dripstone',
-		raw: generateForms('dripstone', 'tfg:rock/%s', 'minecraft:dripstone_block'),
-		cobble: generateForms('dripstone', 'tfg:rock/cobble_%s', null,
+		stonecutterTag: 'create:stone_types/dripstone',
+		raw: generateFormsExisting('dripstone', 'tfg:rock/%s', { block: 'minecraft:dripstone_block' }),
+		cobble: generateForms('dripstone', 'tfg:rock/cobble_%s', 
 			generateForms('dripstone', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('dripstone', 'create:cut_%s_brick', 'create:cut_dripstone_bricks',
+		bricks: generateFormsExisting('dripstone', 'create:cut_%s_brick', {
+				block: 'create:cut_dripstone_bricks',
+				texture: 'create:block/palettes/stone_types/brick/dripstone_cut_brick'
+			},
 			generateForms('dripstone', 'tfg:rock/mossy_bricks_%s'),
 			generateForms('dripstone', 'tfg:rock/cracked_bricks_%s')),
 		polished: generateForms('dripstone', 'create:cut_%s'),
 		stonecutting: [
 			generateForms('dripstone', 'create:polished_cut_%s'),
-			generateForms('dripstone', 'create:small_%s_brick', 'create:small_dripstone_bricks')
+			generateFormsExisting('dripstone', 'create:small_%s_brick', { block: 'create:small_dripstone_bricks' })
 		]
 	}),
 	// Pyroxenite
@@ -331,11 +431,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		brick: 'beneath:blackstone_brick',
 		aqueduct: 'beneath:blackstone_aqueduct',
 		raw: generateForms('blackstone', 'minecraft:%s'),
-		cobble: generateForms('blackstone', 'tfg:rock/cobble_%s', null,
+		cobble: generateFormsExisting('blackstone', 'tfg:rock/cobble_%s', { texture: 'minecraft:block/blackstone_top' },
 			generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('blackstone', 'minecraft:polished_%s_brick', 'minecraft:polished_blackstone_bricks',
+		bricks: generateFormsExisting('blackstone', 'minecraft:polished_%s_brick', { block: 'minecraft:polished_blackstone_bricks' },
 			generateForms('blackstone', 'tfg:rock/mossy_bricks_%s'),
-			generateForms('blackstone', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_polished_blackstone_bricks')),
+			generateFormsExisting('blackstone', 'tfg:rock/cracked_bricks_%s', { block: 'minecraft:cracked_polished_blackstone_bricks' })),
 		polished: generateForms('blackstone', 'minecraft:polished_%s'),
 		chiseled: { block: 'minecraft:chiseled_polished_blackstone' },
 	}),
@@ -350,12 +450,12 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		support: 'tfg:keratophyre_support',
 		brick: 'minecraft:nether_brick',
 		aqueduct: 'tfg:rock/aqueduct_nether',
-		raw: generateForms('crackrack', 'tfg:rock/%s', 'beneath:crackrack'),
-		cobble: generateForms('crackrack', 'tfg:rock/cobble_%s', null,
+		raw: generateFormsExisting('crackrack', 'tfg:rock/%s', { block: 'beneath:crackrack' }),
+		cobble: generateForms('crackrack', 'tfg:rock/cobble_%s', 
 			generateForms('crackrack', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('nether', 'minecraft:%s_brick', 'minecraft:nether_bricks',
+		bricks: generateFormsExisting('nether', 'minecraft:%s_brick', { block: 'minecraft:nether_bricks' },
 			generateForms('nether', 'tfg:rock/mossy_bricks_%s'),
-			generateForms('nether', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_nether_bricks')),
+			generateFormsExisting('nether', 'tfg:rock/cracked_bricks_%s', { block: 'minecraft:cracked_nether_bricks' })),
 		polished: generateForms('crackrack', 'tfg:rock/polished_%s'),
 		chiseled: { block: 'minecraft:chiseled_nether_bricks' },
 		stonecutting: [
@@ -373,8 +473,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		stonecutting: [
 			generateForms('calcite', 'create:cut_%s'),
 			generateForms('calcite', 'create:polished_cut_%s'),
-			generateForms('calcite', 'create:cut_%s_brick', 'create:cut_calcite_bricks'),
-			generateForms('calcite', 'create:small_%s_brick', 'create:small_calcite_bricks')
+			generateFormsExisting('calcite', 'create:cut_%s_brick', { block: 'create:cut_calcite_bricks' }),
+			generateFormsExisting('calcite', 'create:small_%s_brick', { block: 'create:small_calcite_bricks' })
 		]
 	},
 	"tuff": {
@@ -390,8 +490,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		stonecutting: [
 			generateForms('tuff', 'create:cut_%s'),
 			generateForms('tuff', 'create:polished_cut_%s'),
-			generateForms('tuff', 'create:cut_%s_brick', 'create:cut_tuff_bricks'),
-			generateForms('tuff', 'create:small_%s_brick', 'create:small_tuff_bricks')
+			generateFormsExisting('tuff', 'create:cut_%s_brick', { block: 'create:cut_tuff_bricks' }),
+			generateFormsExisting('tuff', 'create:small_%s_brick', { block: 'create:small_tuff_bricks' })
 		]
 	},
 
@@ -413,8 +513,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: generateFormsExceptWall('moon_stone', 'ad_astra:%s', 'tfg:rock/moon_stone_wall'),
 		cobble: generateFormsExceptWall('moon', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_moon_wall',
 			generateForms('moon', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('moon_stone', 'ad_astra:%s_brick', 'ad_astra:moon_stone_bricks',
-			generateForms('moon', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_moon_stone_bricks'),
+		bricks: generateFormsExisting('moon_stone', 'ad_astra:%s_brick', { block: 'ad_astra:moon_stone_bricks' },
+			generateFormsExisting('moon', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_moon_stone_bricks' }),
 			generateForms('moon', 'tfg:rock/mossy_bricks_%s')),
 		polished: generateFormsExceptWall('moon_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_moon_wall'),
 		chiseled: {
@@ -434,10 +534,10 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		dimensions: ['ad_astra:moon', 'ad_astra:venus'],
 		support: 'tfg:norite_support',
 		pillar: 'tfg:rock/pillar_moon_deepslate',
-		raw: generateForms('moon_deepslate', 'tfg:rock/%s', 'ad_astra:moon_deepslate'),
-		cobble: generateForms('moon_deepslate', 'tfg:rock/cobble_%s', null,
+		raw: generateFormsExisting('moon_deepslate', 'tfg:rock/%s', { block: 'ad_astra:moon_deepslate' }),
+		cobble: generateForms('moon_deepslate', 'tfg:rock/cobble_%s',
 			generateForms('moon_deepslate', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('moon_deepslate', 'tfg:rock/bricks_%s', null,
+		bricks: generateForms('moon_deepslate', 'tfg:rock/bricks_%s',
 			generateForms('moon_deepslate', 'tfg:rock/mossy_bricks_%s'),
 			generateForms('moon_deepslate', 'tfg:rock/cracked_bricks_%s')),
 		polished: generateForms('moon_deepslate', 'tfg:rock/polished_%s'),
@@ -457,8 +557,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: generateFormsExceptWall('glacio_stone', 'ad_astra:%s', 'tfg:rock/glacio_stone_wall'),
 		cobble: generateFormsExceptWall('glacio', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_glacio_wall',
 			generateForms('glacio', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('glacio_stone', 'ad_astra:%s_brick', 'ad_astra:glacio_stone_bricks',
-			generateForms('glacio', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_glacio_stone_bricks'),
+		bricks: generateFormsExisting('glacio_stone', 'ad_astra:%s_brick', { block: 'ad_astra:glacio_stone_bricks' },
+			generateFormsExisting('glacio', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_glacio_stone_bricks' }),
 			generateForms('glacio', 'tfg:rock/mossy_bricks_%s')),
 		polished: generateFormsExceptWall('glacio_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_glacio_wall'),
 		chiseled: {
@@ -473,8 +573,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		material: 'stone',
 		isTFC: false,
 		dimensions: ['ad_astra:moon'],
-		raw: generateForms('sky_stone', 'ae2:%s', 'ae2:sky_stone_block'),
-		polished: generateForms('sky_stone', 'ae2:smooth_%s', 'ae2:smooth_sky_stone_block'),
+		raw: generateFormsExisting('sky_stone', 'ae2:%s', { block: 'ae2:sky_stone_block' }),
+		polished: generateFormsExisting('sky_stone', 'ae2:smooth_%s', { block: 'ae2:smooth_sky_stone_block' }),
 		bricks: generateForms('sky_stone', 'ae2:%s_brick'),
 		chiseled: generateForms('sky_stone', 'ae2:%s_small_brick')
 	},
@@ -508,8 +608,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: generateFormsExceptWall('mars_stone', 'ad_astra:%s', 'tfg:rock/mars_stone_wall'),
 		cobble: generateFormsExceptWall('mars', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_mars_wall',
 			generateForms('mars', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('mars_stone', 'ad_astra:%s_brick', 'ad_astra:mars_stone_bricks',
-			generateForms('mars', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_mars_stone_bricks'),
+		bricks: generateFormsExisting('mars_stone', 'ad_astra:%s_brick', { block: 'ad_astra:mars_stone_bricks' },
+			generateFormsExisting('mars', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mars_stone_bricks'}),
 			generateForms('mars', 'tfg:rock/mossy_bricks_%s')),
 		polished: generateFormsExceptWall('mars_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_mars_wall'),
 		chiseled: {
@@ -533,8 +633,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: generateFormsExceptWall('venus_stone', 'ad_astra:%s', 'tfg:rock/venus_stone_wall'),
 		cobble: generateFormsExceptWall('venus', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_venus_wall',
 			generateForms('venus', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('venus_stone', 'ad_astra:%s_brick', 'ad_astra:venus_stone_bricks',
-			generateForms('venus', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_venus_stone_bricks'),
+		bricks: generateFormsExisting('venus_stone', 'ad_astra:%s_brick', { block: 'ad_astra:venus_stone_bricks' },
+			generateFormsExisting('venus', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_venus_stone_bricks' }),
 			generateForms('venus', 'tfg:rock/mossy_bricks_%s')),
 		polished: generateFormsExceptWall('venus_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_venus_wall'),
 		chiseled: {
@@ -559,12 +659,30 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 			wall: 'tfg:rock/red_granite_wall',
 			texture: 'gtceu:block/stones/red_granite/stone'
 		},
-		cobble: generateForms('red_granite', 'tfg:rock/cobble_%s', 'gtceu:red_granite_cobblestone',
-			generateForms('red_granite', 'tfg:rock/mossy_cobble_%s', 'gtceu:mossy_red_granite_cobblestone')),
-		bricks: generateForms('red_granite', 'tfg:rock/bricks_%s', 'gtceu:red_granite_bricks',
-			generateForms('red_granite', 'tfg:rock/mossy_bricks_%s', 'gtceu:mossy_red_granite_bricks'),
-			generateForms('red_granite', 'tfg:rock/cracked_bricks_%s', 'gtceu:cracked_red_granite_bricks')),
-		polished: generateForms('red_granite', 'tfg:rock/polished_%s', 'gtceu:polished_red_granite'),
+		cobble: generateFormsExisting('red_granite', 'tfg:rock/cobble_%s', {
+			block: 'gtceu:red_granite_cobblestone',
+			texture: 'gtceu:block/stones/red_granite/cobble',
+			mossy: generateFormsExisting('red_granite', 'tfg:rock/mossy_cobble_%s', {
+				block: 'gtceu:mossy_red_granite_cobblestone',
+				texture: 'gtceu:block/stones/red_granite/cobble_mossy'
+			}),
+		}),
+		bricks: generateFormsExisting('red_granite', 'tfg:rock/bricks_%s', {
+			block: 'gtceu:red_granite_bricks',
+			texture: 'gtceu:block/stones/red_granite/bricks',
+			mossy: generateFormsExisting('red_granite', 'tfg:rock/mossy_bricks_%s', {
+				block: 'gtceu:mossy_red_granite_bricks',
+				texture: 'gtceu:block/stones/red_granite/bricks_mossy'
+			}),
+			cracked: generateFormsExisting('red_granite', 'tfg:rock/cracked_bricks_%s', {
+				block: 'gtceu:cracked_red_granite_bricks',
+				texture: 'gtceu:block/stones/red_granite/bricks_cracked'
+			})
+		}),
+		polished: generateFormsExisting('red_granite', 'tfg:rock/polished_%s', {
+				block: 'gtceu:polished_red_granite',
+				texture: 'gtceu:block/stones/red_granite/polished'
+			}),
 		chiseled: { block: 'gtceu:chiseled_red_granite' },
 		stonecutting: [
 			{ block: 'gtceu:red_granite_tile' },
@@ -597,11 +715,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		dimensions: ['ad_astra:venus'],
 		pillar: 'betterend:flavolite_pillar',
 		support: 'tfg:flavolite_support',
-		raw: generateForms('flavolite', 'tfg:rock/%s', 'betterend:flavolite'),
+		raw: generateFormsExisting('flavolite', 'tfg:rock/%s', { block: 'betterend:flavolite' }),
 		cobble: generateForms('flavolite', 'tfg:rock/cobble_%s'),
-		bricks: generateForms('flavolite', 'tfg:rock/bricks_%s', 'betterend:flavolite_bricks'),
-		polished: generateForms('flavolite', 'tfg:rock/polished_%s', 'betterend:flavolite_polished'),
-		chiseled: generateForms('flavolite', 'tfg:rock/chiseled_%s', 'betterend:flavolite_tiles')
+		bricks: generateFormsExisting('flavolite', 'tfg:rock/bricks_%s', { block: 'betterend:flavolite_bricks' }),
+		polished: generateFormsExisting('flavolite', 'tfg:rock/polished_%s', { block: 'betterend:flavolite_polished' }),
+		chiseled: generateFormsExisting('flavolite', 'tfg:rock/chiseled_%s', { block: 'betterend:flavolite_tiles' })
 	}),
 	// Lamproite
 	"sandy_jadestone": generateMissing('sandy_jadestone', {
@@ -613,11 +731,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		dimensions: ['ad_astra:venus'],
 		pillar: 'betterend:sandy_jadestone_pillar',
 		support: 'tfg:lamproite_support',
-		raw: generateForms('sandy_jadestone', 'tfg:rock/%s', 'betterend:sandy_jadestone'),
+		raw: generateFormsExisting('sandy_jadestone', 'tfg:rock/%s', { block: 'betterend:sandy_jadestone' }),
 		cobble: generateForms('sandy_jadestone', 'tfg:rock/cobble_%s'),
-		bricks: generateForms('sandy_jadestone', 'tfg:rock/bricks_%s', 'betterend:sandy_jadestone_bricks'),
-		polished: generateForms('sandy_jadestone', 'tfg:rock/polished_%s', 'betterend:sandy_jadestone_polished'),
-		chiseled: generateForms('sandy_jadestone', 'tfg:rock/chiseled_%s', 'betterend:sandy_jadestone_tiles')
+		bricks: generateFormsExisting('sandy_jadestone', 'tfg:rock/bricks_%s', { block: 'betterend:sandy_jadestone_bricks' }),
+		polished: generateFormsExisting('sandy_jadestone', 'tfg:rock/polished_%s', { block: 'betterend:sandy_jadestone_polished' }),
+		chiseled: generateFormsExisting('sandy_jadestone', 'tfg:rock/chiseled_%s', { block: 'betterend:sandy_jadestone_tiles' })
 	}),
 	// Thermal Vent Deposit
 	"sulphuric_rock": {
@@ -631,7 +749,7 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: { block: 'betterend:sulphuric_rock' },
 		bricks: { block: 'betterend:sulphuric_rock_bricks' },
 		polished: { block: 'betterend:sulphuric_rock_polished' },
-		chiseled: { block: 'betterend:sulphuric_rock_chiseled' }
+		chiseled: { block: 'betterend:sulphuric_rock_tiles' }
 	},
 	"scoria": generateMissing('scoria', {
 		material: 'tfg:igneous_mafic',
@@ -642,13 +760,16 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		dimensions: ['ad_astra:venus'],
 		pillar: 'create:scoria_pillar',
 		pillar2: 'create:layered_scoria',
-		raw: generateForms('scoria', 'tfg:rock/%s', 'create:scoria'),
+		raw: generateFormsExisting('scoria', 'tfg:rock/%s', { 
+			block: 'create:scoria',
+			texture: 'create:block/palettes/stone_types/scoria'
+		}),
 		cobble: generateForms('scoria', 'tfg:rock/cobble_%s'),
-		bricks: generateForms('scoria', 'create:cut_%s_brick', 'create:cut_scoria_bricks'),
+		bricks: generateFormsExisting('scoria', 'create:cut_%s_brick', { block: 'create:cut_scoria_bricks' }),
 		polished: generateForms('scoria', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('scoria', 'create:cut_%s'),
-			generateForms('scoria', 'create:small_%s_brick', 'create:small_scoria_bricks')
+			generateFormsExisting('scoria', 'create:small_%s_brick', { block: 'create:small_scoria_bricks' })
 		]
 	}),
 	"scorchia": generateMissing('scorchia', {
@@ -657,16 +778,19 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		gravelTag: 'tfc:brown_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_black',
-		dimensions: ['ad_astra:moon', 'ad_astra:venus'],
+		dimensions: ['ad_astra:moon', 'ad_astra:mars', 'ad_astra:venus'],
 		pillar: 'create:scorchia_pillar',
 		pillar2: 'create:layered_scorchia',
-		raw: generateForms('scorchia', 'tfg:rock/%s', 'create:scorchia'),
+		raw: generateFormsExisting('scorchia', 'tfg:rock/%s', {
+			block: 'create:scorchia',
+			texture: 'create:block/palettes/stone_types/scorchia'
+		}),
 		cobble: generateForms('scorchia', 'tfg:rock/cobble_%s'),
-		bricks: generateForms('scorchia', 'create:cut_%s_brick', 'create:cut_scorchia_bricks'),
+		bricks: generateFormsExisting('scorchia', 'create:cut_%s_brick', { block: 'create:cut_scorchia_bricks' }),
 		polished: generateForms('scorchia', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('scorchia', 'create:cut_%s'),
-			generateForms('scorchia', 'create:small_%s_brick', 'create:small_scorchia_bricks')
+			generateFormsExisting('scorchia', 'create:small_%s_brick', { block: 'create:small_scorchia_bricks' })
 		]
 	}),
 	// Mesa caprock
@@ -698,8 +822,8 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		raw: generateFormsExceptWall('mercury_stone', 'ad_astra:%s', 'tfg:rock/mercury_stone_wall'),
 		cobble: generateFormsExceptWall('mercury', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_mercury_wall',
 			generateForms('mercury', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('mercury_stone', 'ad_astra:%s_brick', 'ad_astra:mercury_stone_bricks',
-			generateForms('mercury', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_mercury_stone_bricks'),
+		bricks: generateFormsExisting('mercury_stone', 'ad_astra:%s_brick', { block: 'ad_astra:mercury_stone_bricks' },
+			generateFormsExisting('mercury', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mercury_stone_bricks' }),
 			generateForms('mercury', 'tfg:rock/mossy_bricks_%s')),
 		polished: generateFormsExceptWall('mercury_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_mercury_wall'),
 		chiseled: {
@@ -723,12 +847,12 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		dimensions: ['ad_astra:glacio'],
 		support: 'tfg:permafrost_support',
 		pillar: 'ad_astra:permafrost_pillar',
-		raw: generateForms('permafrost', 'tfg:rock/%s', 'ad_astra:permafrost'),
-		cobble: generateForms('permafrost', 'tfg:rock/cobble_%s', null,
+		raw: generateFormsExisting('permafrost', 'tfg:rock/%s', { block: 'ad_astra:permafrost' }),
+		cobble: generateFormsExisting('permafrost', 'tfg:rock/cobble_%s', { texture: 'ad_astra:block/permafrost_top' },
 			generateForms('permafrost', 'tfg:rock/mossy_cobble_%s')),
-		bricks: generateForms('permafrost', 'ad_astra:%_brick', 'ad_astra:permafrost_bricks',
+		bricks: generateFormsExisting('permafrost', 'ad_astra:%s_brick', { block: 'ad_astra:permafrost_bricks' },
 			generateForms('permafrost', 'tfg:rock/mossy_bricks_%s'),
-			generateForms('permafrost', 'tfg:rock/cracked_bricks_%s', 'ad_astra:cracked_permafrost_bricks')),
+			generateFormsExisting('permafrost', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_permafrost_bricks' })),
 		polished: generateFormsExceptWall('permafrost', 'ad_astra:polished_%s', 'tfg:rock/polished_permafrost_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_permafrost_bricks',
@@ -754,11 +878,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		brick: 'gtceu:stone_ingot',
 		aqueduct: 'tfg:rock/aqueduct_stone',
 		raw: generateFormsExceptWall('stone', 'minecraft:%s', 'tfg:rock/stone_wall'),
-		cobble: generateForms('cobblestone', 'minecraft:%s', null,
+		cobble: generateForms('cobblestone', 'minecraft:%s', 
 			generateForms('cobblestone', 'minecraft:mossy_%s')),
-		bricks: generateForms('stone', 'minecraft:%s_brick', 'minecraft:stone_bricks',
-			generateForms('stone', 'minecraft:mossy_%s_brick', 'minecraft:mossy_stone_bricks'),
-			generateForms('stone', 'tfg:rock/cracked_bricks_%s', 'minecraft:cracked_stone_bricks')),
+		bricks: generateFormsExisting('stone', 'minecraft:%s_brick', { block: 'minecraft:stone_bricks' },
+			generateFormsExisting('stone', 'minecraft:mossy_%s_brick', { block: 'minecraft:mossy_stone_bricks' }),
+			generateFormsExisting('stone', 'tfg:rock/cracked_bricks_%s', { block: 'minecraft:cracked_stone_bricks' })),
 		polished: {
 			block: 'minecraft:smooth_stone',
 			stair: 'tfg:rock/smooth_stone_stairs',
@@ -772,7 +896,10 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		sound: 'stone',
 		mapColor: 'color_light_gray',
 		support: 'tfg:light_concrete_support',
-		raw: { block: 'gtceu:light_concrete', texture: 'gtceu:block/stones/light_concrete/stone' },
+		raw: {
+			block: 'gtceu:light_concrete',
+			texture: 'gtceu:block/stones/light_concrete/stone'
+		},
 		cobble: {
 			block: 'gtceu:light_concrete_cobblestone',
 			mossy: { block: 'gtceu:mossy_light_concrete_cobblestone' }
@@ -798,7 +925,10 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		sound: 'stone',
 		mapColor: 'color_gray',
 		support: 'tfg:dark_concrete_support',
-		raw: { block: 'gtceu:dark_concrete', texture: 'gtceu:block/stones/dark_concrete/stone' },
+		raw: {
+			block: 'gtceu:dark_concrete',
+			texture: 'gtceu:block/stones/dark_concrete/stone' 
+		},
 		cobble: {
 			block: 'gtceu:dark_concrete_cobblestone',
 			mossy: { block: 'gtceu:mossy_dark_concrete_cobblestone' }
@@ -819,6 +949,21 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 			{ block: 'gtceu:square_dark_concrete_bricks' }
 		]
 	},
+	"brick": {
+		material: 'brick',
+		sound: 'stone',
+		bricks: generateFormsExisting('brick', 'minecraft:%s', { brick: 'minecraft:bricks' },
+			generateFormsExisting('red_brick', 'createdeco:mossy_%s', { brick: 'createdeco:mossy_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:cracked_%s', { brick: 'createdeco:cracked_red_bricks' })),
+		polished: generateFormsExisting('red_brick', 'createdeco:corner_%s', { brick: 'createdeco:corner_red_bricks' }),
+		stonecutting: [
+			generateFormsExisting('red_brick', 'createdeco:short_%s', { brick: 'createdeco:short_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:tiled_%s', { brick: 'createdeco:tiled_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:long_%s', { brick: 'createdeco:long_red_bricks' })
+		]
+	},
+
+	// TODO: vanilla clay bricks and create deco's colored ones
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// CREATE'S OTHER ROCKS
@@ -830,11 +975,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		pillar: 'create:asurine_pillar',
 		pillar2: 'create:layered_asurine',
 		raw: { block: 'create:asurine' },
-		bricks: generateForms('asurine', 'create:cut_%s_brick', 'create:cut_asurine_bricks'),
+		bricks: generateFormsExisting('asurine', 'create:cut_%s_brick', { block: 'create:cut_asurine_bricks' }),
 		polished: generateForms('asurine', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('asurine', 'create:cut_%s'),
-			generateForms('asurine', 'create:small_%s_brick', 'create:small_asurine_bricks')
+			generateFormsExisting('asurine', 'create:small_%s_brick', { block: 'create:small_asurine_bricks' })
 		]
 	},
 	"ochrum": {
@@ -843,11 +988,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		pillar: 'create:ochrum_pillar',
 		pillar2: 'create:layered_ochrum',
 		raw: { block: 'create:ochrum' },
-		bricks: generateForms('ochrum', 'create:cut_%s_brick', 'create:cut_ochrum_bricks'),
+		bricks: generateFormsExisting('ochrum', 'create:cut_%s_brick', { block: 'create:cut_ochrum_bricks' }),
 		polished: generateForms('ochrum', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('ochrum', 'create:cut_%s'),
-			generateForms('ochrum', 'create:small_%s_brick', 'create:small_ochrum_bricks')
+			generateFormsExisting('ochrum', 'create:small_%s_brick', { block: 'create:small_ochrum_bricks' })
 		]
 	},
 	"crimsite": {
@@ -856,11 +1001,11 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		pillar: 'create:crimsite_pillar',
 		pillar2: 'create:layered_crimsite',
 		raw: { block: 'create:crimsite' },
-		bricks: generateForms('crimsite', 'create:cut_%s_brick', 'create:cut_crimsite_bricks'),
+		bricks: generateFormsExisting('crimsite', 'create:cut_%s_brick', { block: 'create:cut_crimsite_bricks' }),
 		polished: generateForms('crimsite', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('crimsite', 'create:cut_%s'),
-			generateForms('crimsite', 'create:small_%s_brick', 'create:small_crimsite_bricks')
+			generateFormsExisting('crimsite', 'create:small_%s_brick', { block: 'create:small_crimsite_bricks' })
 		]
 	},
 	"veridium": {
@@ -869,14 +1014,30 @@ global.BIG_ROCK_TABLE = /** @type {const} */ {
 		pillar: 'create:veridium_pillar',
 		pillar2: 'create:layered_veridium',
 		raw: { block: 'create:veridium' },
-		bricks: generateForms('veridium', 'create:cut_%s_brick', 'create:cut_veridium_bricks'),
+		bricks: generateFormsExisting('veridium', 'create:cut_%s_brick', { block: 'create:cut_veridium_bricks' }),
 		polished: generateForms('veridium', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('veridium', 'create:cut_%s'),
-			generateForms('veridium', 'create:small_%s_brick', 'create:small_veridium_bricks')
+			generateFormsExisting('veridium', 'create:small_%s_brick', { block: 'create:small_veridium_bricks' })
 		]
 	}
-}
+})
+
+global.CREATE_DECO_BRICK_TYPES.forEach(color => {
+	global.BIG_ROCK_TABLE[`${color}_brick`] = {
+		material: 'brick',
+		sound: 'stone',
+		bricks: generateFormsExisting(color, 'createdeco:%s_brick', { brick: `createdeco:${color}_bricks` },
+			generateFormsExisting(color, 'createdeco:mossy_%s_brick', { brick: `createdeco:mossy_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:cracked_%s_brick', { brick: `createdeco:cracked_${color}_bricks` })),
+		polished: generateFormsExisting(color, 'createdeco:corner_%s_brick', { brick: `createdeco:corner_${color}_bricks` }),
+		stonecutting: [
+			generateFormsExisting(color, 'createdeco:short_%s_brick', { brick: `createdeco:short_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:tiled_%s_brick', { brick: `createdeco:tiled_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:long_%s_brick', { brick: `createdeco:long_${color}_bricks` })
+		]
+	}
+});
 
 /* ROCKS:
 

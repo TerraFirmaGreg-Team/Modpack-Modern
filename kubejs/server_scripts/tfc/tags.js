@@ -442,6 +442,8 @@ function registerTFCItemTags(event) {
         event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
         event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
     })
+
+	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 }
 
 /** @param {TagEvent.Block} event */

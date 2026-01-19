@@ -326,22 +326,6 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:decorative_plant_attachable', 'tfg:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
 	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
-
-	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/black_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/white_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/brown_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/red_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/yellow_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/pink_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/green_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/moon_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
 }
 
 function registerTFGMarsBiomeTags(event) {

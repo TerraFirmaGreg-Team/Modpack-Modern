@@ -44,9 +44,6 @@ function registerTFGRockBlocks(event) {
 
 
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
-		console.log(rockId);
-		console.log(rock);
-
 		// Do raw separately because of the tfc:raw_rock builder
 		let rawTexture = "";
 		if (rock.raw != null) {
@@ -85,20 +82,16 @@ function registerTFGRockBlocks(event) {
 			})
 		}
 
-		// TODO: tag blocks as can_landslide and forge:cobblestone and forge:cobblestone/normal
 		createMissingForms(rock, rock.cobble);
 		if (rock.cobble != null) {
-			createMissingForms(rock, rock.cobble.mossy); // TODO: forge:cobblestone/mossy
+			createMissingForms(rock, rock.cobble.mossy);
 		}
-		// TODO: tag as minecraft:stone_bricks and forge:stone_bricks and tfc:rock/bricks
-		createMissingForms(rock.bricks);
+		createMissingForms(rock, rock.bricks);
 		if (rock.bricks != null) {
-			createMissingForms(rock, rock.bricks.mossy); // TODO: tag as tfc:rock/mossy_bricks
-			createMissingForms(rock, rock.bricks.cracked); // TODO: tag as tfc:rock/cracked_bricks
+			createMissingForms(rock, rock.bricks.mossy);
+			createMissingForms(rock, rock.bricks.cracked);
 		}
-		// TODO: tag as tfc:rock/smooth
 		createMissingForms(rock, rock.polished);
-		// TODO: tag as tfc:rock/chiseled_bricks
 		createMissingForms(rock, rock.chiseled);
 
 		if (rock.stonecutting != null) {
@@ -112,14 +105,12 @@ function registerTFGRockBlocks(event) {
 		// Individual blocks
 
 		// Hardened
-		if (rock.hardened != null && rock.hardened.startsWith('tfg:rock/')) {
+		if (rock.raw != null && rock.hardened != null && rock.hardened.startsWith('tfg:rock/')) {
 			let hardened = event.create(rock.hardened)
+				.textureAll(rawTexture)
 				.soundType(rock.sound ?? 'stone')
 				.property(BlockProperties.AXIS)
 				.requiresTool(true)
-				.item(item => {
-					item.modelJson({ parent: 'minecraft:item/deepslate' })
-				})
 				.tagBlock('tfc:can_carve')
 				.tagBoth('forge:stone')
 				.tagBoth('tfc:rock/hardened')
@@ -195,7 +186,7 @@ function registerTFGRockBlocks(event) {
 		}
 
 		// Aqueducts
-		if (rock.aqueduct != null && rock.aqueduct.startsWith('tfg:rock/')) {
+		if (rock.bricks != null && rock.aqueduct != null && rock.aqueduct.startsWith('tfg:rock/')) {
 			let aqueduct = event.create(rock.aqueduct, 'tfc:aqueduct')
 				.soundType(rock.sound ?? 'stone')
 				.textureAll(rock.bricks.texture ?? rock.bricks.block.replace(/:/g, ":block/"))
@@ -229,6 +220,21 @@ function registerTFGRockBlocks(event) {
 
 			if (rock.tfcTag != null) {
 				support.tagBoth(rock.tfcTag);
+			}
+		}
+
+		// Pillar
+		if (rock.pillar != null && rock.pillar.startsWith('tfg:rock/')) {
+			let block = event.create(rock.pillar)
+				.textureAll(rock.pillar.replace(/:/g, ":block/"))
+				.soundType(rock.sound ?? 'stone')
+				.mapColor(rock.mapColor)
+				.tagBlock('minecraft:mineable/pickaxe')
+				.fullBlock(true)
+				.opaque(true)
+
+			if (rock.tfcTag != null) {
+				block.tagBoth(rock.tfcTag);
 			}
 		}
 	}
