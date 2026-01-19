@@ -410,6 +410,9 @@ const registerAdAstraRecipes = (event) => {
 			.EUt(2)
 
 		// Buttons
+		event.shapeless(`3x ad_astra:${x.type}_plating_button`, [`ad_astra:${x.type}_plating_pressure_plate`, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${x.type}_pressure_plate_to_button`)
+
 		generateCutterRecipe(event, `ad_astra:${x.type}_plating_pressure_plate`, `6x ad_astra:${x.type}_plating_button`, 50, 7, `ad_astra_${x.type}_button`)
 
 		// Doors

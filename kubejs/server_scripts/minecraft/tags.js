@@ -43,6 +43,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
+	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
+
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -57,4 +59,5 @@ const registerMinecraftBlockTags = (event) => {
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
     
+    event.add('minecraft:mineable/pickaxe', 'minecraft:glowstone')
 }

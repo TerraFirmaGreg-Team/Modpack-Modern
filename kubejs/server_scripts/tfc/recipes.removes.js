@@ -4,7 +4,6 @@
 function removeTFCRecipes(event) {
 
 	global.TFC_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
 		event.remove({ output: item })
 	})
 
@@ -12,40 +11,9 @@ function removeTFCRecipes(event) {
 	event.remove({ id: /tfc:heating\/metal\/*/ })
 	event.remove({ id: /tfc:heating\/ore\/*/ })
 
-	// Удаление рецептов блоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
-
-	// Удаление рецептов ступеней
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_stairs/ })
-
-	// Удалание рецептов полублоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
-
-	//#region Удаление рецептов для предметов из Cast Iron
-
-	// Блок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron` })
-
-	// Ступень
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_stairs` })
-
-	// Полублок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
-
-	// Слиток
-	event.remove({ id: `tfc:casting/cast_iron_ingot` })
-	event.remove({ id: `tfc:casting/cast_iron_fire_ingot` })
-	event.remove({ id: `tfc:welding/cast_iron_double_ingot` })
-	event.remove({ id: `tfc:anvil/cast_iron_rod` })
-
-	// Двойной слиток
-	event.remove({ id: `tfc:anvil/cast_iron_sheet` })
-
-	// Пластина
-	event.remove({ id: `tfc:welding/cast_iron_double_sheet` })
-
-	//#endregion
-
 
 	// #region Удаление рецептов
 	event.remove({ id: 'tfc:quern/amethyst' })
