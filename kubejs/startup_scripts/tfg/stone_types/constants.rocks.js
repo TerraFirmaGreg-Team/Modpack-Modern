@@ -952,14 +952,14 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"brick": {
 		material: 'brick',
 		sound: 'stone',
-		bricks: generateFormsExisting('brick', 'minecraft:%s', { brick: 'minecraft:bricks' },
-			generateFormsExisting('red_brick', 'createdeco:mossy_%s', { brick: 'createdeco:mossy_red_bricks' }),
-			generateFormsExisting('red_brick', 'createdeco:cracked_%s', { brick: 'createdeco:cracked_red_bricks' })),
-		polished: generateFormsExisting('red_brick', 'createdeco:corner_%s', { brick: 'createdeco:corner_red_bricks' }),
+		bricks: generateFormsExisting('brick', 'minecraft:%s', { block: 'minecraft:bricks' },
+			generateFormsExisting('red_brick', 'createdeco:mossy_%s', { block: 'createdeco:mossy_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:cracked_%s', { block: 'createdeco:cracked_red_bricks' })),
+		polished: generateFormsExisting('red_brick', 'createdeco:corner_%s', { block: 'createdeco:corner_red_bricks' }),
 		stonecutting: [
-			generateFormsExisting('red_brick', 'createdeco:short_%s', { brick: 'createdeco:short_red_bricks' }),
-			generateFormsExisting('red_brick', 'createdeco:tiled_%s', { brick: 'createdeco:tiled_red_bricks' }),
-			generateFormsExisting('red_brick', 'createdeco:long_%s', { brick: 'createdeco:long_red_bricks' })
+			generateFormsExisting('red_brick', 'createdeco:short_%s', { block: 'createdeco:short_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:tiled_%s', { block: 'createdeco:tiled_red_bricks' }),
+			generateFormsExisting('red_brick', 'createdeco:long_%s', { block: 'createdeco:long_red_bricks' })
 		]
 	},
 
@@ -1024,17 +1024,21 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 })
 
 global.CREATE_DECO_BRICK_TYPES.forEach(color => {
+	// handled above
+	if (color === "red")
+		return;
+
 	global.BIG_ROCK_TABLE[`${color}_brick`] = {
 		material: 'brick',
 		sound: 'stone',
-		bricks: generateFormsExisting(color, 'createdeco:%s_brick', { brick: `createdeco:${color}_bricks` },
-			generateFormsExisting(color, 'createdeco:mossy_%s_brick', { brick: `createdeco:mossy_${color}_bricks` }),
-			generateFormsExisting(color, 'createdeco:cracked_%s_brick', { brick: `createdeco:cracked_${color}_bricks` })),
-		polished: generateFormsExisting(color, 'createdeco:corner_%s_brick', { brick: `createdeco:corner_${color}_bricks` }),
+		bricks: generateFormsExisting(color, 'createdeco:%s_brick', { block: `createdeco:${color}_bricks` },
+			generateFormsExisting(color, 'createdeco:mossy_%s_brick', { block: `createdeco:mossy_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:cracked_%s_brick', { block: `createdeco:cracked_${color}_bricks` })),
+		polished: generateFormsExisting(color, 'createdeco:corner_%s_brick', { block: `createdeco:corner_${color}_bricks` }),
 		stonecutting: [
-			generateFormsExisting(color, 'createdeco:short_%s_brick', { brick: `createdeco:short_${color}_bricks` }),
-			generateFormsExisting(color, 'createdeco:tiled_%s_brick', { brick: `createdeco:tiled_${color}_bricks` }),
-			generateFormsExisting(color, 'createdeco:long_%s_brick', { brick: `createdeco:long_${color}_bricks` })
+			generateFormsExisting(color, 'createdeco:short_%s_brick', { block: `createdeco:short_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:tiled_%s_brick', { block: `createdeco:tiled_${color}_bricks` }),
+			generateFormsExisting(color, 'createdeco:long_%s_brick', { block: `createdeco:long_${color}_bricks` })
 		]
 	}
 });

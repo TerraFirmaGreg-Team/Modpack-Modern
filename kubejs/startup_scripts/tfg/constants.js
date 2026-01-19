@@ -161,10 +161,17 @@ global.FOOD_FRUIT = [
 
 /** @type {Hammering[]} */
 global.HAMMERING = [ // Crushing relationships for manual block hammering, create press hammering and gtceu forge hammer crushing.
-	{ raw: 'minecraft:basalt',                     hammered: 'tfc:rock/cobble/basalt',         duration: 10, eu: 7 },
-	{ raw: 'minecraft:red_sandstone',              hammered: '4x minecraft:red_sand',          duration: 10, eu: 16 },
-	{ raw: 'ad_astra:venus_sandstone',             hammered: '4x ad_astra:venus_sand',         duration: 70, eu: 16 },
-	{ raw: 'tfg:rock/gravel_permafrost',           hammered: '4x gtceu:ice_dust',              duration: 70, eu: 16 }
+	{ raw: 'minecraft:basalt',                      hammered: 'tfc:rock/cobble/basalt',          duration: 10, eu: 7 },
+	{ raw: 'tfg:rock/gravel_permafrost',            hammered: '4x gtceu:ice_dust',               duration: 70, eu: 16 },
+	// TODO: make a big sand/sandstone table like the rock table?
+	{ raw: 'minecraft:red_sandstone',               hammered: '4x minecraft:red_sand',           duration: 10, eu: 16 },
+	{ raw: 'ad_astra:venus_sandstone',              hammered: '4x ad_astra:venus_sand',          duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/blue',   hammered: '4x tfg:sand/fluorapatite/blue',   duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/green',  hammered: '4x tfg:sand/fluorapatite/green',  duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/brown',  hammered: '4x tfg:sand/fluorapatite/brown',  duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/orange', hammered: '4x tfg:sand/fluorapatite/orange', duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/white',  hammered: '4x tfg:sand/fluorapatite/white',  duration: 70, eu: 16 },
+	{ raw: 'tfg:sandstone/raw/fluorapatite/yellow', hammered: '4x tfg:sand/fluorapatite/yellow', duration: 70, eu: 16 },
 ]
 
 global.COOLING_FOODS = [

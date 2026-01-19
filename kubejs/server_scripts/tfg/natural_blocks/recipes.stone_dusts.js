@@ -11,7 +11,7 @@ function registerTFGStoneDustRecipes(event) {
 		.itemInputs('gtceu:stone_dust')
 		.chancedOutput('#forge:small_dusts/quartzite', 2500, 0)
 		.chancedOutput('#forge:small_dusts/potassium_feldspar', 2500, 0)
-		.chancedOutput('#forge:small_dusts/marble', 2222, 0)
+		.chancedOutput('#forge:small_dusts/calcite', 2222, 0)
 		.chancedOutput('#forge:small_dusts/biotite', 1111, 0)
 		.chancedOutput('#forge:small_dusts/metal_mixture', 825, 80)
 		.chancedOutput('#forge:small_dusts/sodalite', 550, 55)

@@ -63,7 +63,6 @@ function registerTFGRockRecipes(event) {
 	}
 
 	function changeForms(rockId, rock, blockEntry) {
-		console.log(`changeForms in ${rockId}: ${blockEntry.block}, ${blockEntry.stair}, ${blockEntry.slab}, ${blockEntry.wall}`)
 		if (blockEntry.stair != null) {
 			if (blockEntry.block != null) {
 				let id = linuxUnfucker(`${blockEntry.block}_to_${blockEntry.stair}`);
