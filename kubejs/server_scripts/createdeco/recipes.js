@@ -275,8 +275,6 @@ const registerCreatedecoRecipes = (event) => {
 				.duration(100)
 				.EUt(GTValues.VA[GTValues.LV])
 
-			let twoMap = {};
-			twoMap[bar.material] = 2;
 			TFGHelpers.registerMaterialInfo(`createdeco:${bar.metal}_door`, [GTMaterials.get(bar.material), 2])
 		}
 

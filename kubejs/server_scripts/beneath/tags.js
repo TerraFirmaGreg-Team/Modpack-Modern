@@ -30,10 +30,10 @@ const registerBeneathBlockTags = (event) => {
 	event.add('tfg:softwood', 'beneath:wood/wood/crimson')
 	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_log/crimson')
 	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_wood/crimson')
-	event.add('tfg:hardwood', 'beneath:wood/log/crimson')
-	event.add('tfg:hardwood', 'beneath:wood/wood/crimson')
-	event.add('tfg:strippedhardwood', 'beneath:wood/stripped_log/crimson')
-	event.add('tfg:strippedhardwood', 'beneath:wood/stripped_wood/crimson')
+	event.add('tfg:hardwood', 'beneath:wood/log/warped')
+	event.add('tfg:hardwood', 'beneath:wood/wood/warped')
+	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_log/warped')
+	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_wood/warped')
 }
 
 const registerBeneathItemTags = (event) => {

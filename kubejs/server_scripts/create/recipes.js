@@ -288,7 +288,7 @@ const registerCreateRecipes = (event) => {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	TFGHelpers.registerMaterialInfo('create:hose_pulley', [GTMaterials.Copper, 3, GTMaterials.Rubber, 1/8]);
+	TFGHelpers.registerMaterialInfo('create:hose_pulley', [GTMaterials.Copper, 3, GTMaterials.Rubber, 1/4]);
 
 	// Слив из предметов
 	event.shaped('create:item_drain', [
