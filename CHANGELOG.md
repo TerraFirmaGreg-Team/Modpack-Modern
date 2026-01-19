@@ -4,12 +4,13 @@
 ### Breaking changes
 - The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
 - Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
+- The Electric Greenhouse multiblock has completely changed. It's significantly shorter and slightly narrower too. You can still grow the same things in it, but it no longer has Perfect Overclocking. Instead, it's stronger in LV but starts getting weaker in HV+. There's a new IV variant (Hydroponics Facility) which supports parallel hatches and can do any recipe on any planet.
 ### Performance improvements
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
 - Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to earth trees and newly generated Mars trees, old Mars trees will have the old behaviour) @Mqrius
 - Fixed tree chopping not working on trees that had no leaves @Mqrius
 - Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
-- Fixed a huge amount of lag from TFC Ambiental @Mqrius
+- Fixed a huge amount of lag from TFC Ambiental checking for nearby hot/cold sources @Mqrius
 ### Changes
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
@@ -40,6 +41,8 @@
 - Vanilla ferns and large ferns now break into straw with a knife, so Beneath start is a bit less painful early on @Pyritie
 - Added shapeless pressure plate to button recipes (#2740) @Pyritie
 - Added some Beneath plants to the `#tfg:rubber_plants` tag (#2759) @Pyritie
+- Cleaned up hanging sign recipes so they don't spam as much (#2733, #2771) @Inceitious
+- Added recipes to change AE2 glass cables into covered/smart cables, and changed some recipes to require smart cables instead (#2756) @awfulworldkid
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -61,6 +64,7 @@
 - Fixed a rendering issue with the lunchboxes when held @Thomasx0
 - Fixed the cooling lunchbox not stacking empty cells correctly (#2475) @Thomasx0
 - Fixed the lunchboxes not removing the "cooling" trait when items were removed with the number keys @Thomasx0
+- Digger helmet crafting now correctly consumes the cloth hat (#2770) @Inceitious
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare + @Maxiffon
