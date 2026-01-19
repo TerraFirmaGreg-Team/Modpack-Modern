@@ -90,7 +90,7 @@ const registerDomumOrnamentumRecipes = (event) => {
 			A: '#forge:plates/wrought_iron',
 			B: '#tfc:lumber',
 			C: '#forge:plates/brass',
-			D: '#forge:small_gears',
+			D: '#forge:small_gears/brass',
 			E: '#forge:buzz_saw_heads'
 		}).id('domum_ornamentum:architectscutter');
 
@@ -145,126 +145,126 @@ const registerDomumOrnamentumRecipes = (event) => {
 	//Brown Bricks
 	event.shaped(Item.of('domum_ornamentum:brown_bricks', 4),
 		[
-			'BAB',
-			'CBC',
-			'BAB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/chert',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `minecraft:brick`,
+			D: '#forge:dyes/brown',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:brown_bricks');
 
 	event.shaped(Item.of('domum_ornamentum:brown_stone_bricks', 4),
 		[
-			'BCB',
-			'ABA',
-			'BCB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/chert',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `#tfg:stone_brick`,
+			D: '#forge:dyes/brown',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:brown_stone_bricks');
 
 	//Beige Bricks
 	event.shaped(Item.of('domum_ornamentum:beige_bricks', 4),
 		[
-			'BAB',
-			'CBC',
-			'BAB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/conglomerate',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `minecraft:brick`,
+			D: '#forge:dyes/light_gray',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:beige_bricks');
 
 	event.shaped(Item.of('domum_ornamentum:beige_stone_bricks', 4),
 		[
-			'BCB',
-			'ABA',
-			'BCB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/conglomerate',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `#tfg:stone_brick`,
+			D: '#forge:dyes/light_gray',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:beige_stone_bricks');
 
 	//Cream Bricks
 	event.shaped(Item.of('domum_ornamentum:cream_bricks', 4),
 		[
-			'BAB',
-			'CBC',
-			'BAB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/gneiss',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `minecraft:brick`,
+			D: '#forge:dyes/orange',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:cream_bricks');
 
 	event.shaped(Item.of('domum_ornamentum:cream_stone_bricks', 4),
 		[
-			'BCB',
-			'ABA',
-			'BCB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/gneiss',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `#tfg:stone_brick`,
+			D: '#forge:dyes/orange',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:cream_stone_bricks');
 
 	//Roan Bricks
 	event.shaped(Item.of('domum_ornamentum:roan_bricks', 4),
 		[
-			'BAB',
-			'CBC',
-			'BAB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/claystone',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `minecraft:brick`,
+			D: '#forge:dyes/red',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:roan_bricks');
 
 	event.shaped(Item.of('domum_ornamentum:roan_stone_bricks', 4),
 		[
-			'BCB',
-			'ABA',
-			'BCB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/claystone',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `#tfg:stone_brick`,
+			D: '#forge:dyes/red',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:roan_stone_bricks');
 
 	//Sand Bricks
 	event.shaped(Item.of('domum_ornamentum:sand_bricks', 4),
 		[
-			'BAB',
-			'CBC',
-			'BAB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/limestone',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `minecraft:brick`,
+			D: '#forge:dyes/yellow',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:sand_bricks');
 
 	event.shaped(Item.of('domum_ornamentum:sand_stone_bricks', 4),
 		[
-			'BCB',
-			'ABA',
-			'BCB'
+			'BMB',
+			'MBM',
+			'BDB'
 		],
 		{
-			A: 'tfc:brick/limestone',
-			B: 'tfc:mortar',
-			C: 'minecraft:brick',
+			B: `#tfg:stone_brick`,
+			D: '#forge:dyes/yellow',
+			M: `tfc:mortar`
 		}).id('domum_ornamentum:sand_stone_bricks');
 	//#endregion
 };

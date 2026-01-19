@@ -1677,10 +1677,25 @@
 			dependencies: ["6A451F43F3D7A671"]
 			description: [
 				"{quests.high_voltage.pisciculture.desc.1}"
+				""
+				"{image:tfg:textures/quests/pisciculture_fishery.png width:100 height:100 align:center}"
 				"{@pagebreak}"
 				"{quests.high_voltage.pisciculture.desc.2}"
 			]
-			icon: "minecraft:tropical_fish"
+			icon: "tfc:bucket/tropical_fish"
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -9223372036854775808L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:food/tropical_fish"
+			}
 			id: "04ADA3B900F182A0"
 			optional: true
 			shape: "heart"
