@@ -764,6 +764,14 @@ const registerMinecraftRecipes = (event) => {
 		.circuit(2)
 		.EUt(7)
 
+	event.recipes.gtceu.alloy_smelter('tfg:brick_dust_to_brick')
+		.itemInputs('#forge:dusts/brick')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.itemOutputs('minecraft:brick')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
+
 	//#endregion
 
 	//#region Выход: Элитра, elytra

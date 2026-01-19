@@ -157,6 +157,10 @@ function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeI
 	event.server.runCommandSilent(`execute in ${event.block.level.name.getString()} run setblock ${block.x} ${block.y} ${block.z} ${outputBlock}${state}`)
 };
 
+// ================================================
+// Looking to add a recipe to JEI? It's in TFG-Core
+// ================================================
+
 // Declare Events
 BlockEvents.rightClicked(event => {
 	//Brick index events
@@ -207,14 +211,6 @@ BlockEvents.rightClicked(event => {
 				transformBlockWithTool(event, rock.bricks.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
 				transformBlockWithTool(event, rock.bricks.mossy.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
 				transformBlockWithTool(event, rock.bricks.cracked.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				// only allow this on blocks that aren't natural stone, so you can't brick over caves
-				if (rock.hardened == null) {
-					// smooth -> brick
-					transformBlockWithTool(event, rock.polished.block, rock.bricks.cracked.block, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-					transformBlockWithItem(event, rock.polished.block, rock.bricks.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-					transformBlockWithItem(event, rock.polished.block, rock.bricks.mossy.block, 'gtceu:plant_ball', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-					transformBlockWithTool(event, rock.polished.block, rock.bricks.block, '#forge:tools/files', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
-				}
 			}
 		}
 		if (rock.cobble != null && rock.cobble.mossy) {
@@ -224,10 +220,10 @@ BlockEvents.rightClicked(event => {
 			transformBlockWithItem(event, rock.cobble.slab, rock.cobble.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
 			transformBlockWithItem(event, rock.cobble.wall, rock.cobble.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
 			//mossy -> cobble
-			transformBlockWithTool(event, rock.cobble.mossy.block, rock.cobble.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.block, rock.cobble.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithTool(event, rock.cobble.mossy.stair, rock.cobble.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.stair, rock.cobble.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			transformBlockWithTool(event, rock.cobble.mossy.block, rock.cobble.block, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			transformBlockWithItem(event, rock.cobble.mossy.block, rock.cobble.block, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			transformBlockWithTool(event, rock.cobble.mossy.stair, rock.cobble.stair, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			transformBlockWithItem(event, rock.cobble.mossy.stair, rock.cobble.stair, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 			transformBlockWithTool(event, rock.cobble.mossy.slab, rock.cobble.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 			transformBlockWithItem(event, rock.cobble.mossy.slab, rock.cobble.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 			transformBlockWithTool(event, rock.cobble.mossy.wall, rock.cobble.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);

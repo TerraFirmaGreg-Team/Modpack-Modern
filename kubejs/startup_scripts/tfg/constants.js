@@ -172,6 +172,10 @@ global.HAMMERING = [ // Crushing relationships for manual block hammering, creat
 	{ raw: 'tfg:sandstone/raw/fluorapatite/orange', hammered: '4x tfg:sand/fluorapatite/orange', duration: 70, eu: 16 },
 	{ raw: 'tfg:sandstone/raw/fluorapatite/white',  hammered: '4x tfg:sand/fluorapatite/white',  duration: 70, eu: 16 },
 	{ raw: 'tfg:sandstone/raw/fluorapatite/yellow', hammered: '4x tfg:sand/fluorapatite/yellow', duration: 70, eu: 16 },
+	{ raw: '#tfg:moon_gravel',                      hammered: 'ad_astra:moon_sand',              duration: 70, eu: 16 },
+	{ raw: '#tfg:mars_gravel',                      hammered: 'ad_astra:mars_sand',              duration: 70, eu: 16 },
+	{ raw: '#tfg:venus_gravel',                     hammered: 'ad_astra:venus_sand',             duration: 70, eu: 16 },
+	{ raw: '#tfg:hematitic_gravel',                 hammered: 'minecraft:red_sand',              duration: 70, eu: 16 },
 ]
 
 global.COOLING_FOODS = [

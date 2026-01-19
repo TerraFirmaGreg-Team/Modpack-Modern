@@ -2,9 +2,17 @@
 "use strict";
 
 const registerTFGOreLoots = (event) => {
+	// Rock to cobble, cobble to gravel
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 		if (rock.raw != null && rock.cobble != null) {
 			event.addBlockLootModifier(rock.raw.block)
+				.matchMainHand('#forge:tools/hammers')
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
+				.addLoot(rock.cobble.block)
+		}
+
+		if (rock.hardened != null && rock.cobble != null) {
+			event.addBlockLootModifier(rock.hardened)
 				.matchMainHand('#forge:tools/hammers')
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addLoot(rock.cobble.block)
@@ -15,16 +23,46 @@ const registerTFGOreLoots = (event) => {
 				.matchMainHand('#forge:tools/hammers')
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addLoot(rock.gravel)
+
+			if (rock.cobble.mossy != null) {
+				event.addBlockLootModifier(rock.cobble.mossy.block)
+					.matchMainHand('#forge:tools/hammers')
+					.removeLoot(ItemFilter.ALWAYS_TRUE)
+					.addLoot(rock.gravel)
+			}
 		}
 	}
 
-	global.HAMMERING.forEach(x => {
-		event.addBlockLootModifier(x.raw)
-			.matchMainHand('#forge:tools/hammers')
-			.removeLoot(ItemFilter.ALWAYS_TRUE)
-			.addLoot(x.hammered)
+	// Sand
+	global.SAND_COLORS.forEach(sandColor => {
+		let tag_array = Ingredient.of(`#tfc:${sandColor}_gravel`).itemIds.toArray().map(String);
+		tag_array.forEach(item => {
+			event.addBlockLootModifier(item)
+				.matchMainHand('#forge:tools/hammers')
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
+				.addLoot(`tfc:sand/${sandColor}`)
+		})
 	})
 
+	global.HAMMERING.forEach(x => {
+		if (x.raw.startsWith('#')) {
+			let tag_array = Ingredient.of(x.raw).itemIds.toArray().map(String);
+			tag_array.forEach(item => {
+				event.addBlockLootModifier(item)
+					.matchMainHand('#forge:tools/hammers')
+					.removeLoot(ItemFilter.ALWAYS_TRUE)
+					.addLoot(x.hammered)
+			})
+		}
+		else {
+			event.addBlockLootModifier(x.raw)
+				.matchMainHand('#forge:tools/hammers')
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
+				.addLoot(x.hammered)
+		}
+	})
+
+	// Other rocks
 	event.addBlockLootModifier('minecraft:gilded_blackstone')
 		.matchMainHand('#forge:tools/hammers')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
@@ -99,7 +137,7 @@ const registerTFGOreLoots = (event) => {
 				// break with hammer
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.matchMainHand('#forge:tools/hammers')
-					.addLoot(GTBlocks.COBBLE_BLOCKS.get(TagPrefix.get(stoneType)).get().getBlock().id);
+					.addLoot(LootEntry.of(GTBlocks.COBBLE_BLOCKS.get(TagPrefix.get(stoneType)).get().getBlock().id));
 			})
 		}
 	})

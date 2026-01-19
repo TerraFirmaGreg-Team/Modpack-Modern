@@ -392,6 +392,9 @@ const registerGTCEuMaterialModification = (event) => {
 	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
+	// Remove properties
+	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)
+
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)

@@ -186,11 +186,23 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:titanium_boots",
 
     // Sculk
+    "gtceu:echo_shard_block",
     "gtceu:echo_shard_plate",
     "gtceu:echo_shard_rod",
+    "gtceu:chipped_echo_shard_gem",
+    "gtceu:flawed_echo_shard_gem",
+    "gtceu:flawless_echo_shard_gem",
+    "gtceu:exquisite_echo_shard_gem",
+    "gtceu:tiny_echo_shard_dust",
+    "gtceu:small_echo_shard_dust",
+    "gtceu:echo_shard_dust",
 
     // Ender eye
+    "gtceu:ender_eye_block",
     "gtceu:ender_eye_plate",
+    "gtceu:tiny_ender_eye_dust",
+    "gtceu:small_ender_eye_dust",
+    "gtceu:ender_eye_dust",
 
     // Marble
     "gtceu:marble",

@@ -87,47 +87,6 @@ function registerTFGSupportRecipes(event) {
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Stone Supports
-	global.TFC_STONE_TYPES.forEach(stone => {
-		event.recipes.tfc.damage_inputs_shaped_crafting(
-			event.shaped(`8x tfg:${stone}_support`, [
-				'AB ',
-				'AC ',
-				'AC '
-			], {
-				A: `tfc:rock/loose/${stone}`,
-				B: '#tfc:chisels',
-				C: 'tfc:mortar'
-			}).id(`tfg:shaped/${stone}_support`))
-
-		event.recipes.tfc.damage_inputs_shaped_crafting(
-			event.shaped(`8x tfg:${stone}_support`, [
-				'AB ',
-				'AC ',
-				'AC '
-			], {
-				A: `tfc:rock/mossy_loose/${stone}`,
-				B: '#tfc:chisels',
-				C: 'tfc:mortar'
-			}).id(`tfg:shaped/mossy/${stone}_support`))
-
-		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${stone}_support`)
-			.circuit(11)
-			.inputFluids(Fluid.of('gtceu:concrete', 36))
-			.itemOutputs(`8x tfg:${stone}_support`)
-			.itemInputs(`3x tfc:rock/loose/${stone}`)
-			.duration(40)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/mossy/${stone}_support`)
-			.circuit(11)
-			.inputFluids(Fluid.of('gtceu:concrete', 36))
-			.itemOutputs(`8x tfg:${stone}_support`)
-			.itemInputs(`3x tfc:rock/mossy_loose/${stone}`)
-			.duration(40)
-			.EUt(GTValues.VA[GTValues.ULV])
-	})
-
 	// Stone supports are in recipes.rocks.js
 
 	// Metal Supports

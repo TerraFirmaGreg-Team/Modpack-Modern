@@ -30,7 +30,6 @@ function registerTFGRockBlocks(event) {
 					.textureAll(texture)
 					.soundType(rock.sound ?? 'stone')
 					.mapColor(rock.mapColor)
-					.tagBoth(`tfg:rock_${shape}s`)
 					.tagBlock('minecraft:mineable/pickaxe')
 					.fullBlock(true)
 					.opaque(true)

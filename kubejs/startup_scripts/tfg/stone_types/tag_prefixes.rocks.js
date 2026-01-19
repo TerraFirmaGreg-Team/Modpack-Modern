@@ -1,7 +1,7 @@
 // priority: 0
 "use strict";
 
-const registerTFCTagPrefixes = (event) => {
+const registerTFGRocksTagPrefixes = (event) => {
 
 	TagPrefix.ORES.remove(TagPrefix.oreTuff)
 	TagPrefix.ORES.remove(TagPrefix.oreSand)

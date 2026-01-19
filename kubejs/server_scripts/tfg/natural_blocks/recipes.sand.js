@@ -140,13 +140,6 @@ function registerTFGSandRecipes(event) {
 			.id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_wall`)
 	})
 
-	// TODO:
-	// #tfg:moon_sand
-	// #tfg:mars_sand
-	// #tfg:hematitic_sand
-	// #tfg:venus_sand
-
-
 	// Quartz sand
 	event.shaped('gtceu:quartz_sand_dust', [
 		'A',

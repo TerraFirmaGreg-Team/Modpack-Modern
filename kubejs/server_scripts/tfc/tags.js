@@ -263,6 +263,12 @@ function registerTFCItemTags(event) {
     event.add("tfc:green_gravel", "tfc:rock/gravel/schist");
     // Розовый
     event.add("tfc:pink_gravel", "tfc:rock/gravel/granite");
+    
+    // Glassworking sands
+    event.add('tfc:hematitic_sand', 'minecraft:red_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:mars_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:venus_sand');
+    event.add('tfc:olivine_sand', 'ad_astra:moon_sand');
 
     // Теги для объединения наковален
     event.add("tfc:red_or_blue_anvil", "tfc:metal/anvil/blue_steel");

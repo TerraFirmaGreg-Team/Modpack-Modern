@@ -138,10 +138,9 @@ const registerCreatedecoRecipes = (event) => {
 	//#endregion
 
 	//#region Brick Recipes
-	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
 	const dyeTypes = ['blue', 'green', 'white', 'yellow', 'black', 'red', 'brown']
 	
-	brickTypes.forEach((type, index) => {
+	global.CREATE_DECO_BRICK_TYPES.forEach((type, index) => {
 		event.remove({ output: `createdeco:${type}_bricks` });
 		event.remove({ output: `createdeco:${type}_brick_stairs` });
 		event.remove({ output: `createdeco:short_${type}_brick_stairs` });
@@ -165,26 +164,26 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ output: `createdeco:cracked_${type}_brick_wall` });
 		event.remove({ output: `createdeco:mossy_${type}_brick_wall` });
 
-		const dye = `#forge:dyes/${dyeTypes[index]}`;
-		event.shaped(Item.of(`createdeco:${type}_bricks`, 4),
-			[
+		if (type !== "red") {
+			const dye = `#forge:dyes/${dyeTypes[index]}`;
+			event.shaped(`4x createdeco:${type}_bricks`, [
 				'BDB',
 				'MBM',
 				'BMB'
-			],
-			{
+			], {
 				B: `minecraft:brick`,
 				D: dye,
 				M: `tfc:mortar`
 			});
 
-		event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
-			.itemInputs('5x minecraft:brick', dye)
-			.inputFluids(Fluid.of('gtceu:concrete', 144))
-			.itemOutputs(`4x createdeco:${type}_bricks`)
-			.circuit(3)
-			.duration(50)
-			.EUt(7)
+			event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
+				.itemInputs('5x minecraft:brick', dye)
+				.inputFluids(Fluid.of('gtceu:concrete', 144))
+				.itemOutputs(`4x createdeco:${type}_bricks`)
+				.circuit(3)
+				.duration(50)
+				.EUt(7)
+		}
 	});
 	//#endregion
 

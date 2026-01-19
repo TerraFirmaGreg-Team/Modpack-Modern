@@ -44,8 +44,8 @@ function registerTFGStoneDustRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(480)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('ochrum'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 4500, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Lithium, 1), 3500, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Quartzite, 1), 5000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Hematite, 1), 3500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Gold, 1), 3500, 0)
 
 }

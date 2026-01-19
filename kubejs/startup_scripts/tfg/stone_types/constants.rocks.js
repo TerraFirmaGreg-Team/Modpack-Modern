@@ -179,7 +179,7 @@ function generateTFC(id, table) {
  * @returns {RockType}
  */
 function generateMissing(id, table) {
-	table.stonecutterTag = `tfg:stone_types/${id}`;
+	table.stonecutterTag = `tfg:stonecutting/${id}`;
 	if (table.hardened === undefined)
 		table.hardened = `tfg:rock/hardened_${id}`;
 	if (table.gravel === undefined)
@@ -368,7 +368,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		gravelTag: 'tfc:black_gravel',
 		sound: 'deepslate',
 		mapColor: 'terracotta_grey',
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:venus'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:migmatite_support',
 		pillar: 'create:deepslate_pillar',
 		pillar2: 'create:layered_deepslate',
@@ -397,7 +397,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		gravelTag: 'tfc:brown_gravel',
 		sound: 'dripstone_block',
 		mapColor: 'terracotta_brown',
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:venus'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:travertine_support',
 		pillar: 'create:dripstone_pillar',
 		pillar2: 'create:layered_dripstone',
@@ -424,7 +424,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		gravelTag: 'tfc:black_gravel',
 		sound: 'stone',
 		mapColor: 'color_black',
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:mercury'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:mercury'],
 		support: 'tfg:pyroxenite_support',
 		pillar: 'beneath:ancient_altar',
 		loose: 'beneath:blackstone_pebble',
@@ -442,11 +442,11 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Keratophyre
 	"crackrack": generateMissing('crackrack', {
 		material: 'tfg:igneous_intermediate',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:pink_gravel',
 		sound: 'netherrack',
 		mapColor: 'crimson_stem',
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:venus'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:keratophyre_support',
 		brick: 'minecraft:nether_brick',
 		aqueduct: 'tfg:rock/aqueduct_nether',
@@ -463,10 +463,11 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		]
 	}),
 	"calcite": {
-		material: 'tfg:sedimentary_carbonate',
-		tfcTag: 'tfc:sedimentary',
+		material: 'calcite',
+		tfcTag: 'tfc:sedimentary_items',
+		stonecutterTag: 'create:stone_types/calcite',
 		isTFC: false,
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:venus'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		pillar: 'create:calcite_pillar',
 		pillar2: 'create:layered_calcite',
 		raw: { block: 'minecraft:calcite' },
@@ -479,11 +480,12 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"tuff": {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
+		stonecutterTag: 'create:stone_types/tuff',
 		isTFC: false,
 		sound: 'tuff',
 		mapColor: 'terracotta_gray',
-		dimensions: ['ad_astra:overworld', 'ad_astra:the_nether', 'ad_astra:venus'],
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		pillar: 'create:tuff_pillar',
 		pillar2: 'create:layered_tuff',
 		raw: { block: 'minecraft:tuff' },
@@ -502,7 +504,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Anorthosite
 	"moon_stone": generateMissing('moon_stone', {
 		material: 'tfg:igneous_mafic',
-		tfcTag: 'tfc:igneous_intrusive',
+		tfcTag: 'tfc:igneous_intrusive_items',
 		gravelTag: 'tfg:moon_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_cyan',
@@ -514,8 +516,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		cobble: generateFormsExceptWall('moon', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_moon_wall',
 			generateForms('moon', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateFormsExisting('moon_stone', 'ad_astra:%s_brick', { block: 'ad_astra:moon_stone_bricks' },
-			generateFormsExisting('moon', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_moon_stone_bricks' }),
-			generateForms('moon', 'tfg:rock/mossy_bricks_%s')),
+			generateForms('moon', 'tfg:rock/mossy_bricks_%s'),
+			generateFormsExisting('moon', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_moon_stone_bricks' })),
 		polished: generateFormsExceptWall('moon_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_moon_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_moon_stone_bricks',
@@ -527,7 +529,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Norite
 	"moon_deepslate": generateMissing('moon_deepslate', {
 		material: 'tfg:igneous_mafic',
-		tfcTag: 'tfc:igneous_intrusive',
+		tfcTag: 'tfc:igneous_intrusive_items',
 		gravelTag: 'tfg:moon_gravel',
 		sound: 'deepslate',
 		mapColor: 'terracotta_blue',
@@ -546,7 +548,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Phonolite
 	"glacio_stone": generateMissing('glacio_stone', {
 		material: 'tfg:igneous_intermediate',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:white_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_purple',
@@ -558,8 +560,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		cobble: generateFormsExceptWall('glacio', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_glacio_wall',
 			generateForms('glacio', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateFormsExisting('glacio_stone', 'ad_astra:%s_brick', { block: 'ad_astra:glacio_stone_bricks' },
-			generateFormsExisting('glacio', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_glacio_stone_bricks' }),
-			generateForms('glacio', 'tfg:rock/mossy_bricks_%s')),
+			generateForms('glacio', 'tfg:rock/mossy_bricks_%s'),
+			generateFormsExisting('glacio', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_glacio_stone_bricks' })),
 		polished: generateFormsExceptWall('glacio_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_glacio_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_glacio_stone_bricks',
@@ -570,16 +572,15 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	// Suevite
 	"sky_stone": {
-		material: 'stone',
 		isTFC: false,
 		dimensions: ['ad_astra:moon'],
+		stonecutterTag: 'tfg:stone_types/suevite',
 		raw: generateFormsExisting('sky_stone', 'ae2:%s', { block: 'ae2:sky_stone_block' }),
 		polished: generateFormsExisting('sky_stone', 'ae2:smooth_%s', { block: 'ae2:smooth_sky_stone_block' }),
 		bricks: generateForms('sky_stone', 'ae2:%s_brick'),
 		chiseled: generateForms('sky_stone', 'ae2:%s_small_brick')
 	},
 	"purpur": {
-		material: 'stone',
 		isTFC: false,
 		brick: 'minecraft:popped_chorus_fruit',
 		bricks: {
@@ -597,7 +598,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Argillite
 	"mars_stone": generateMissing('mars_stone', {
 		material: 'tfg:sedimentary_clastic',
-		tfcTag: 'tfc:sedimentary',
+		tfcTag: 'tfc:sedimentary_items',
 		gravelTag: 'tfg:mars_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_orange',
@@ -609,8 +610,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		cobble: generateFormsExceptWall('mars', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_mars_wall',
 			generateForms('mars', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateFormsExisting('mars_stone', 'ad_astra:%s_brick', { block: 'ad_astra:mars_stone_bricks' },
-			generateFormsExisting('mars', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mars_stone_bricks'}),
-			generateForms('mars', 'tfg:rock/mossy_bricks_%s')),
+			generateForms('mars', 'tfg:rock/mossy_bricks_%s'),
+			generateFormsExisting('mars', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mars_stone_bricks'})),
 		polished: generateFormsExceptWall('mars_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_mars_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_mars_stone_bricks',
@@ -622,7 +623,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Trachyte
 	"venus_stone": generateMissing('venus_stone', {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfg:venus_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_yellow',
@@ -634,8 +635,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		cobble: generateFormsExceptWall('venus', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_venus_wall',
 			generateForms('venus', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateFormsExisting('venus_stone', 'ad_astra:%s_brick', { block: 'ad_astra:venus_stone_bricks' },
-			generateFormsExisting('venus', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_venus_stone_bricks' }),
-			generateForms('venus', 'tfg:rock/mossy_bricks_%s')),
+			generateForms('venus', 'tfg:rock/mossy_bricks_%s'),
+			generateFormsExisting('venus', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_venus_stone_bricks' })),
 		polished: generateFormsExceptWall('venus_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_venus_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_venus_stone_bricks',
@@ -646,7 +647,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"red_granite": generateMissing('red_granite', {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_intrusive',
+		tfcTag: 'tfc:igneous_intrusive_items',
 		gravelTag: 'tfg:hematitic_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_red',
@@ -708,7 +709,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Ignimbrite
 	"flavolite": generateMissing('flavolite', {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		sound: 'deepslate',
 		mapColor: 'sand',
 		gravelTag: 'tfc:yellow_gravel',
@@ -724,7 +725,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Lamproite
 	"sandy_jadestone": generateMissing('sandy_jadestone', {
 		material: 'tfg:igneous_ultramafic',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:green_gravel',
 		sound: 'stone',
 		mapColor: 'grass',
@@ -743,7 +744,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		isTFC: false,
 		sound: 'dripstone_block',
 		mapColor: 'terracotta_light_gray',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
+		stonecutterTag: 'tfg:stone_types/thermal_vent_deposit',
 		dimensions: ['ad_astra:venus'],
 		pillar: 'betterend:sulphuric_rock_pillar',
 		raw: { block: 'betterend:sulphuric_rock' },
@@ -753,7 +755,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"scoria": generateMissing('scoria', {
 		material: 'tfg:igneous_mafic',
-		tfcTag: 'tfc:igneous_extrusive',
+		tfcTag: 'tfc:igneous_extrusive_items',
 		gravelTag: 'tfc:brown_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_brown',
@@ -765,7 +767,10 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			texture: 'create:block/palettes/stone_types/scoria'
 		}),
 		cobble: generateForms('scoria', 'tfg:rock/cobble_%s'),
-		bricks: generateFormsExisting('scoria', 'create:cut_%s_brick', { block: 'create:cut_scoria_bricks' }),
+		bricks: generateFormsExisting('scoria', 'create:cut_%s_brick', { 
+			block: 'create:cut_scoria_bricks',
+			texture: 'create:block/palettes/stone_types/brick/scoria_cut_brick'
+		}),
 		polished: generateForms('scoria', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('scoria', 'create:cut_%s'),
@@ -774,8 +779,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"scorchia": generateMissing('scorchia', {
 		material: 'tfg:igneous_mafic',
-		tfcTag: 'tfc:igneous_extrusive',
-		gravelTag: 'tfc:brown_gravel',
+		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:black_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_black',
 		dimensions: ['ad_astra:moon', 'ad_astra:mars', 'ad_astra:venus'],
@@ -786,7 +791,10 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			texture: 'create:block/palettes/stone_types/scorchia'
 		}),
 		cobble: generateForms('scorchia', 'tfg:rock/cobble_%s'),
-		bricks: generateFormsExisting('scorchia', 'create:cut_%s_brick', { block: 'create:cut_scorchia_bricks' }),
+		bricks: generateFormsExisting('scorchia', 'create:cut_%s_brick', {
+			block: 'create:cut_scorchia_bricks',
+			texture: 'create:block/palettes/stone_types/brick/scorchia_cut_brick'
+		}),
 		polished: generateForms('scorchia', 'create:polished_cut_%s'),
 		stonecutting: [
 			generateForms('scorchia', 'create:cut_%s'),
@@ -796,7 +804,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Mesa caprock
 	"caprock": {
 		material: 'tfg:sedimentary_clastic',
-		tfcTag: 'tfc:sedimentary',
+		tfcTag: 'tfc:sedimentary_items',
 		isTFC: false,
 		dimensions: ['ad_astra:venus'],
 		raw: { block: 'ad_astra:conglomerate' },
@@ -811,7 +819,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Komatiite
 	"mercury_stone": generateMissing('mercury_stone', {
 		material: 'tfg:igneous_ultramafic',
-		tfcTag: 'tfc:igneous_intrusive',
+		tfcTag: 'tfc:igneous_intrusive_items',
 		gravelTag: 'tfc:white_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_purple',
@@ -823,8 +831,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		cobble: generateFormsExceptWall('mercury', 'ad_astra:%s_cobblestone', 'tfg:rock/cobble_mercury_wall',
 			generateForms('mercury', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateFormsExisting('mercury_stone', 'ad_astra:%s_brick', { block: 'ad_astra:mercury_stone_bricks' },
-			generateFormsExisting('mercury', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mercury_stone_bricks' }),
-			generateForms('mercury', 'tfg:rock/mossy_bricks_%s')),
+			generateForms('mercury', 'tfg:rock/mossy_bricks_%s'),
+			generateFormsExisting('mercury', 'tfg:rock/cracked_bricks_%s', { block: 'ad_astra:cracked_mercury_stone_bricks' })),
 		polished: generateFormsExceptWall('mercury_stone', 'ad_astra:polished_%s', 'tfg:rock/polished_mercury_wall'),
 		chiseled: {
 			block: 'ad_astra:chiseled_mercury_stone_bricks',
@@ -877,6 +885,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		support: 'tfg:stone_support',
 		brick: 'gtceu:stone_ingot',
 		aqueduct: 'tfg:rock/aqueduct_stone',
+		stonecutterTag: 'tfg:stone_types/reconstituted_stone',
 		raw: generateFormsExceptWall('stone', 'minecraft:%s', 'tfg:rock/stone_wall'),
 		cobble: generateForms('cobblestone', 'minecraft:%s', 
 			generateForms('cobblestone', 'minecraft:mossy_%s')),
@@ -896,6 +905,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		sound: 'stone',
 		mapColor: 'color_light_gray',
 		support: 'tfg:light_concrete_support',
+		stonecutterTag: 'tfg:stone_types/light_concrete',
 		raw: {
 			block: 'gtceu:light_concrete',
 			texture: 'gtceu:block/stones/light_concrete/stone'
@@ -925,6 +935,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		sound: 'stone',
 		mapColor: 'color_gray',
 		support: 'tfg:dark_concrete_support',
+		stonecutterTag: 'tfg:stone_types/dark_concrete',
 		raw: {
 			block: 'gtceu:dark_concrete',
 			texture: 'gtceu:block/stones/dark_concrete/stone' 
@@ -949,9 +960,23 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			{ block: 'gtceu:square_dark_concrete_bricks' }
 		]
 	},
+	"titanium_concrete": {
+		sound: 'stone',
+		stonecutterTag: 'tfg:stone_types/titanium_concrete',
+		raw: { block: 'tfg:titanium_concrete' },
+		bricks: { block: 'tfg:titanium_concrete_bricks' },
+		chiseled: { block: 'tfg:titanium_concrete_tile' },
+		polished: { block: 'tfg:polished_titanium_concrete' },
+		stonecutting: [
+			{ block: 'tfg:titanium_concrete_tile_small' },
+			{ block: 'tfg:titanium_concrete_bricks_small' },
+			{ block: 'tfg:titanium_concrete_bricks_square' }
+		]
+	},
 	"brick": {
 		material: 'brick',
 		sound: 'stone',
+		stonecutterTag: 'tfg:stone_types/red_bricks',
 		bricks: generateFormsExisting('brick', 'minecraft:%s', { block: 'minecraft:bricks' },
 			generateFormsExisting('red_brick', 'createdeco:mossy_%s', { block: 'createdeco:mossy_red_bricks' }),
 			generateFormsExisting('red_brick', 'createdeco:cracked_%s', { block: 'createdeco:cracked_red_bricks' })),
@@ -974,6 +999,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:moon'],
 		pillar: 'create:asurine_pillar',
 		pillar2: 'create:layered_asurine',
+		stonecutterTag: 'create:stone_types/asurine',
 		raw: { block: 'create:asurine' },
 		bricks: generateFormsExisting('asurine', 'create:cut_%s_brick', { block: 'create:cut_asurine_bricks' }),
 		polished: generateForms('asurine', 'create:polished_cut_%s'),
@@ -987,6 +1013,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:mars'],
 		pillar: 'create:ochrum_pillar',
 		pillar2: 'create:layered_ochrum',
+		stonecutterTag: 'create:stone_types/ochrum',
 		raw: { block: 'create:ochrum' },
 		bricks: generateFormsExisting('ochrum', 'create:cut_%s_brick', { block: 'create:cut_ochrum_bricks' }),
 		polished: generateForms('ochrum', 'create:polished_cut_%s'),
@@ -1000,6 +1027,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:venus'],
 		pillar: 'create:crimsite_pillar',
 		pillar2: 'create:layered_crimsite',
+		stonecutterTag: 'create:stone_types/crimsite',
 		raw: { block: 'create:crimsite' },
 		bricks: generateFormsExisting('crimsite', 'create:cut_%s_brick', { block: 'create:cut_crimsite_bricks' }),
 		polished: generateForms('crimsite', 'create:polished_cut_%s'),
@@ -1013,6 +1041,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:glacio'],
 		pillar: 'create:veridium_pillar',
 		pillar2: 'create:layered_veridium',
+		stonecutterTag: 'create:stone_types/veridium',
 		raw: { block: 'create:veridium' },
 		bricks: generateFormsExisting('veridium', 'create:cut_%s_brick', { block: 'create:cut_veridium_bricks' }),
 		polished: generateForms('veridium', 'create:polished_cut_%s'),
@@ -1031,6 +1060,7 @@ global.CREATE_DECO_BRICK_TYPES.forEach(color => {
 	global.BIG_ROCK_TABLE[`${color}_brick`] = {
 		material: 'brick',
 		sound: 'stone',
+		stonecutterTag: `tfg:stone_types/${color}_brick`,
 		bricks: generateFormsExisting(color, 'createdeco:%s_brick', { block: `createdeco:${color}_bricks` },
 			generateFormsExisting(color, 'createdeco:mossy_%s_brick', { block: `createdeco:mossy_${color}_bricks` }),
 			generateFormsExisting(color, 'createdeco:cracked_%s_brick', { block: `createdeco:cracked_${color}_bricks` })),
