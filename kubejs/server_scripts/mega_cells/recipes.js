@@ -113,7 +113,7 @@ const registerMegaCellsRecipes = (event) => {
     ], {
         A: '#forge:plates/steel',
         B: 'ae2:engineering_processor',
-        C: '#ae2:glass_cable',
+        C: '#ae2:smart_cable',
         D: '#gtceu:circuits/lv',
     }).addMaterialInfo().id('tfg:crafting/megacells_cell_dock')
 
