@@ -332,4 +332,25 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.tagItem('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
+	event.create('tfg:tall_fused_pillar', 'tfg:tall_decorative_plant')
+		.height(2)
+		.soundType('dripstone_block')
+		.mapColor('yellow_terracotta')
+		.renderType('cutout')
+		.box(4, 0, 4, 12, 16, 12);
+
+	event.create('tfg:short_fused_pillar', 'tfg:decorative_plant')
+		.soundType('dripstone_block')
+		.mapColor('yellow_terracotta')
+		.renderType('cutout')
+		.box(4, 0, 4, 12, 16, 12);
+
+	event.create('tfg:ink_light', 'tfg:tall_decorative_plant')
+		.height(4)
+		.soundType('moss')
+		.mapColor('color_black')
+		.box(3, 0, 3, 13, 16, 13)
+		.tagItem('tfg:venus_plants')
+		.tagBlock('tfg:do_not_destroy_in_space')
+
 }
