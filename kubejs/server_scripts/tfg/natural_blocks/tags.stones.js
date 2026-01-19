@@ -228,11 +228,17 @@ function registerTFGStoneItemTags(event) {
 				event.add('tfc:rock/chiseled_bricks', blockForms.block);
 				addToTfcTag(blockForms.block);
 				addToMaterialTag(material, blockForms.block);
+				if (rock.stonecutterTag != null) {
+					event.add(rock.stonecutterTag, blockForms.block);
+				}
 
 				SHAPES.forEach(shape => {
 					if (blockForms[shape] != null) {
 						addToTfcTag(blockForms[shape]);
 						addToMaterialTag(material, blockForms[shape]);
+						if (rock.stonecutterTag != null) {
+							event.add(rock.stonecutterTag, blockForms[shape]);
+						}
 					}
 				})
 			})
