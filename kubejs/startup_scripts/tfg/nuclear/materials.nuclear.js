@@ -519,12 +519,14 @@ StartupEvents.registry("item", (event) => {
     }
   };
 
-  fuel("thorium_rod", 5000, 1, 0.7);		// Max Heat 139 - 1 Fuel
-  fuel("uranium_rod", 20000, 1, 2.2);		// Max Heat 435 - 1 Fuel
-  fuel("plutonium_rod", 30000, 1, 3);		// Max Heat 595 - 1 Fuel
-  fuel("tbu_232_rod", 10000, 1, 2);			// Max Heat 396 - 1 Fuel
+  fuel("thorium_rod", 5000, 1, 0.7);			// Max Heat 139 - 1 Fuel
+  fuel("uranium_rod", 20000, 1, 2.2);			// Max Heat 435 - 1 Fuel
+  fuel("plutonium_rod", 30000, 1, 3);			// Max Heat 595 - 1 Fuel
 
-  fuel("americium_241_rod", 1000000, 1, 0.5);
-  fuel("neptunium_237_rod", 50000, 1, 2);
-  fuel("californium_252_rod", 500000, 1, 4);
+  fuel("tbu_232_rod", 10000, 1, 2);				// Max Heat 396 - 1 Fuel
+
+  fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
+  fuel("neptunium_237_rod", 500000, 1, 2);		// Max Heat 396 - 1 Fuel
+  fuel("californium_252_rod", 1000000, 1, 4);	// Max Heat 792 - 1 Fuel
+
 });

@@ -89,7 +89,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_tricalcium_phosphate'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 5)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(0, 500))	
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
 			.EUt(GTValues.VA[GTValues.IV])

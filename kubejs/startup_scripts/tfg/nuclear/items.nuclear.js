@@ -14,6 +14,11 @@ function registerTFGNuclearItems(event) {
 		.texture('tfg:item/refrigerant_pellet')
 		.tag('tfg:fission_coolant')
 
+	event.create('tfg:terrafirmaguard_pa6')
+		.translationKey('item.tfg.terrafirmaguard_pa6')
+		.texture('tfg:item/terrafirmaguard_pa6')
+		.tag('tfg:fission_coolant')
+
 	// Moderator Line
 
 	event.create('tfg:graphite_compound')

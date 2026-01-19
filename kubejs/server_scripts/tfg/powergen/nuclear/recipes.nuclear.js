@@ -230,7 +230,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars');
     
     event.recipes.deafission.fission_reactor_coolant('tfg:thorium_coolant')
-		.notConsumable(Item.of('tfg:thorium_rod'))
+		.itemInputs(Item.of('tfg:thorium_rod'))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 2))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 480))
@@ -250,7 +250,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars');
     
     event.recipes.deafission.fission_reactor_coolant('tfg:uranium_coolant')
-		.notConsumable(Item.of('tfg:uranium_rod'))
+		.itemInputs(Item.of('tfg:uranium_rod'))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
 		.outputFluids(Fluid.of('gtceu:radioactive_steam', 1600))
@@ -270,7 +270,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars');
     
     event.recipes.deafission.fission_reactor_coolant('tfg:plutonium_coolant')
-		.notConsumable(Item.of('tfg:plutonium_rod'))
+		.itemInputs(Item.of('tfg:plutonium_rod'))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 25))
 		.outputFluids(Fluid.of('gtceu:irradiated_steam', 6400))
@@ -301,7 +301,7 @@ function registerTFGNuclearRecipes(event) {
             'tfg:tbu_232_rod']))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
-		.outputFluids(Fluid.of('gtceu:dense_steam', 20))
+		.outputFluids(Fluid.of('gtceu:dense_steam', 1200))
 		.perTick(false)
         .addData("coolant_heat_per_tick", 1)
 		.duration(1)
