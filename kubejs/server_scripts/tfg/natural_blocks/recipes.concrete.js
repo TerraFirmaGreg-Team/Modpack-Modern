@@ -5,7 +5,7 @@ function registerTFGConcreteRecipes(event) {
 	event.remove({ id: 'gtceu:mixer/concrete_from_marble' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_marble' })
 
-	const recipe = event.recipes.gtceu.mixer('tfg:concrete_from_marble')
+	event.recipes.gtceu.mixer('tfg:concrete_from_marble')
 		.itemInputs(
 			Ingredient.of('#tfg:stone_dusts').subtract('tfg:sedimentary_carbonate_dust').withCount(2), 
 			'#forge:dusts/sedimentary_carbonate',
