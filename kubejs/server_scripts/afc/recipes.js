@@ -71,6 +71,9 @@ const registerAFCRecipes = (event) => {
 		// ? -> Деревянная кнопка
 		event.remove({ id: `afc:crafting/wood/${wood}_button` })
 
+		event.shapeless(`3x afc:wood/planks/${wood}_button`, [`afc:wood/planks/${wood}_pressure_plate`, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${wood}_pressure_plate_to_button`)
+
 		generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
 
 		//Stomping Barrel

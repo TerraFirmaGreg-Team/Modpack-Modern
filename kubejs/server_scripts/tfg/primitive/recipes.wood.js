@@ -96,13 +96,24 @@ function registerTFGWoodRecipes(event) {
 		.duration(50)
 		.EUt(2)
 
+	event.shapeless(`3x gtceu:treated_wood_button`, [`gtceu:treated_wood_pressure_plate`, '#forge:tools/saws'])
+		.id(`tfg:shapeless/saw_treated_wood_pressure_plate_to_button`)
+
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 	event.replaceOutput({ id: 'gtceu:cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/cutter/treated_button' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/cutter/treated_button_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/cutter/treated_button_distilled_water' }, 'gtceu:treated_wood_button', '6x gtceu:treated_wood_button')
 
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
 	event.replaceOutput({ id: 'gtceu:cutter/bamboo_button_distilled_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/bamboo_button' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/bamboo_button_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
+	event.replaceOutput({ id: 'greate:cutting/integration/gtceu/bamboo_button_distilled_water' }, 'minecraft:bamboo_button', '6x minecraft:bamboo_button')
 
 	// Empty Wooden Form
 	event.shaped('gtceu:empty_wooden_form', [
@@ -201,6 +212,9 @@ function registerTFGWoodRecipes(event) {
 
 		// ? -> Деревянная кнопка
 		event.remove({ id: `tfc:crafting/wood/${wood}_button` })
+
+		event.shapeless(`3x tfc:wood/planks/${wood}_button`, [`tfc:wood/planks/${wood}_pressure_plate`, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${wood}_pressure_plate_to_button`)
 
 		generateCutterRecipe(event, `tfc:wood/planks/${wood}_pressure_plate`, `6x tfc:wood/planks/${wood}_button`, 50, 7, `${wood}_button`)
 		

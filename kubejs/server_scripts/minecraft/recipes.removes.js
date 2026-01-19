@@ -1157,7 +1157,8 @@ function removeMinecraftRecipes(event) {
 	//#endregion
 
 	//#region Выход: Кнопка из черного камня
-
+	
+	event.remove({ id: 'gtceu:shaped/stone_button' })
 	event.remove({ id: 'minecraft:polished_blackstone_button' })
 
 	//#endregion

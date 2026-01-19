@@ -41,6 +41,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
+	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
+
     event.add('tfg:stonecutting/crackrack', 'minecraft:nether_brick_fence')
 }
 
