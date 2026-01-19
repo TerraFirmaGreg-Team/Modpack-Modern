@@ -1051,6 +1051,12 @@ const registerMinecraftRecipes = (event) => {
 			.EUt(2)
 	})
 
+	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])
+		.id(`tfg:shapeless/saw_blackstone_pressure_plate_to_button`)
+			
+	event.shapeless('3x minecraft:bamboo_button', ['minecraft:bamboo_pressure_plate', '#forge:tools/saws'])
+		.id(`tfg:shapeless/saw_bamboo_pressure_plate_to_button`)
+
 	// #endregion
 
     // Minecart w/ Furnace

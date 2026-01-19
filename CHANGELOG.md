@@ -36,6 +36,10 @@
 - Coke oven bricks now require mortar to craft @Pyritie
 - Glowstone can now be quickly broken with a pickaxe/mining hammer @Pyritie
 - Added some more knapping recipes for chalk items, improved the durability of others (#2753) @Pyritie
+- Red elk now drop bladders rarely, and have increased meat drops when killed with a butchery knife (#2778) @Pyritie
+- Vanilla ferns and large ferns now break into straw with a knife, so Beneath start is a bit less painful early on @Pyritie
+- Added shapeless pressure plate to button recipes (#2740) @Pyritie
+- Added some Beneath plants to the `#tfg:rubber_plants` tag (#2759) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
