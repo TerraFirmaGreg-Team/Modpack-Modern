@@ -72,6 +72,18 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('forge:string', 'tfg:phantom_thread')
 	event.add('forge:string', 'tfg:polycaprolactam_string')
 	event.add('forge:string', 'firmalife:pineapple_yarn')
+
+	// Artisan Table
+	event.add('tfg:smithing_table_input', 'gtceu:empty_mold')
+	event.add('tfg:smithing_table_input', 'gtceu:resin_circuit_board')
+	event.add('tfg:smithing_table_input', 'gtceu:copper_single_wire')
+	event.add('tfg:smithing_table_input', 'gtceu:phenolic_circuit_board')
+	event.add('tfg:smithing_table_input', 'gtceu:silver_single_wire')
+	event.add('tfg:smithing_tools', '#forge:tools/hammers')
+	event.add('tfg:smithing_tools', '#forge:tools/mallets')
+	event.add('tfg:smithing_tools', '#forge:tools/files')
+	event.add('tfg:smithing_tools', '#forge:tools/wire_cutters')
+	event.add('tfg:smithing_tools', '#forge:tools/screwdrivers')
 }
 
 function registerTFGPrimitiveBlockTags(event) {
@@ -90,8 +102,7 @@ function registerTFGPrimitiveBlockTags(event) {
 function registerTFGPrimitiveFluidTags(event) {
 	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-		if (tfcProperty === null || !material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED))
-			return;
+		if (tfcProperty === null || !material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) return;
 
 		if (!ChemicalHelper.get(TagPrefix.gearSmall, material, 1).isEmpty()) {
 			event.add('tfg:usable_in_small_gear_mold', material.getFluid().getFluidType().toString())

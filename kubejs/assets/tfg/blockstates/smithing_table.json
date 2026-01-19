@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/smithing_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/smithing_table"
+    },
+    "facing=south": {
+      "model": "tfg:block/smithing_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tfg:block/smithing_table",
+      "y": 270
+    }
+  }
+}
