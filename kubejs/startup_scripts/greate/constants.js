@@ -115,6 +115,8 @@ global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
     "greate:neutronium_vertical_gearbox",
 
     // Adding these here because they're greate's fault
+    "create:andesite_alloy",
+    "create:andesite_alloy_block",
     "greate:andesite_alloy_bucket",
     "greate:andesite_alloy_ring",
     "greate:tiny_andesite_alloy_dust",

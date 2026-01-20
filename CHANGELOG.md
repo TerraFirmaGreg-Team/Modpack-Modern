@@ -1,12 +1,16 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.11.17] - 20-01-2026
 ### Important note
 - Due to a config file error, the automatic hourly backup has not been running since 0.11.15. So before you update make sure to make a copy of your world in case anything goes wrong! This is generally good advice but extra important right now.
 ### Breaking changes
-- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
-- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
-- A lot of backend code has been cleaned up and refactored, so there may be duplicate, missing, or incorrect recipes. If you find any, please report them in [our github](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues)!
+- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also also now only takes 20 seconds instead of 30. It also also also now actually outputs byproducts like it was supposed to. @Pyritie
+- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators. @TomPlop
+- A lot of backend code has been cleaned up and refactored, so there may be duplicate, missing, or incorrect recipes. If you find any, please report them in [our github](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues)! @Pyritie
 ### Electric Greenhouse
 - The Electric Greenhouse multiblock has completely changed. It's significantly shorter and slightly narrower too. You can still grow the same things in it, but it no longer has Perfect Overclocking. Instead, it's stronger in LV but starts getting weaker in HV+. @Redeix
 - There's a new IV variant (Hydroponics Facility) which supports parallel hatches and can do any recipe on any planet. @Redeix
@@ -55,6 +59,7 @@
 - Anthracite can now be used as boiler fuel with the same duration as Coke @Pyritie
 - Added more grain options for soup (#2785) @Pyritie
 - Added a mechanical mixer recipe for crafting sticky resin (#2693) @JeanRdSz
+- Framed blocks that have been made "glowing" by right-clicking them with glowstone dust, now only emit a little bit of light @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
