@@ -534,17 +534,6 @@ function registerVintageImprovementsRecipes(event) {
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/rubber')
 	
-	// Latex ingredients recipes
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:vulcanized_latex', 1000),[(Fluid.of('tfg:latex', 1000)), 'tfc:powder/sulfur'])
-		.heated()
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/vulcanized_latex')
-	
-	event.recipes.vintageimprovements.pressurizing('gtceu:sticky_resin', [Fluid.of('tfg:latex', 1000), 'tfc:powder/wood_ash'])
-		.heated()
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/pressurizing/sticky_resin')
-	
 	// Vaccuming rubber wood stuff for latex
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:latex_logs')
 		.processingTime(300 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
