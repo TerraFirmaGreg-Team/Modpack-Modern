@@ -52,6 +52,7 @@
 - Crop, tree tap, and beehive tooltips, and the climate tab, now show the accurate current temperature when in an oxygenated area @Mqrius
 - Anthracite can now be used as boiler fuel with the same duration as Coke @Pyritie
 - Added more grain options for soup (#2785) @Pyritie
+- Added a mechanical mixer recipe for crafting sticky resin (#2693) @JeanRdSz
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
