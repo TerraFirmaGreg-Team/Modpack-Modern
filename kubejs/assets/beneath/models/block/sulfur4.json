@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/groundcover/guano",
+	"textures": {
+		"0": "beneath:block/sulfur4",
+		"particle": "beneath:block/sulfur4"
+	}
+}

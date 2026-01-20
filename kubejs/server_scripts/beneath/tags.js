@@ -39,7 +39,7 @@ const registerBeneathItemTags = (event) => {
 
 	event.add("tfg:rubber_plants", "beneath:gleamflower")
 	event.add("tfg:rubber_plants", "beneath:burpflower")
-	event.add("tfg:rubber_plants", "beneath:fools_funnel")
+	event.add("tfg:rubber_plants", "beneath:food/fools_funnel")
 }
 
 const registerBeneathBlockTags = (event) => {

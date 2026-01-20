@@ -66,7 +66,7 @@ function registerTFGQuartzRecipes(event) {
 		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	// Empty Jar
-	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
+	event.recipes.gtceu.alloy_smelter('tfg:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
 		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('tfc:empty_jar')
@@ -74,26 +74,34 @@ function registerTFGQuartzRecipes(event) {
 		.EUt(2)
 		.category(GTRecipeCategories.INGOT_MOLDING)
 
-	event.recipes.gtceu.fluid_solidifier('tfc:jar_solidification')
+	event.recipes.gtceu.alloy_smelter('tfg:jar_alloying_dust')
+		.itemInputs('#forge:dusts/glass')
+		.notConsumable('gtceu:ball_casting_mold')
+		.itemOutputs('tfc:empty_jar')
+		.duration(100)
+		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
+
+	event.recipes.gtceu.fluid_solidifier('tfg:jar_solidification')
 		.inputFluids(Fluid.of('gtceu:glass', 144))
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
 
-	event.recipes.gtceu.extractor('tfc:jar_extraction')
+	event.recipes.gtceu.extractor('tfg:jar_extraction')
 		.itemInputs('#tfc:jars')
 		.outputFluids(Fluid.of('gtceu:glass', 144))
 		.duration(50)
 		.EUt(2)
 
-	event.recipes.gtceu.extractor('tfc:glass_batch_extraction')
+	event.recipes.gtceu.extractor('tfg:glass_batch_extraction')
 		.itemInputs('#tfc:glass_batches')
 		.outputFluids(Fluid.of('gtceu:glass', 144))
 		.duration(50)
 		.EUt(2)
 
-	event.recipes.gtceu.lathe('tfc:lens')
+	event.recipes.gtceu.lathe('tfg:tfc_lens')
 		.itemInputs('#forge:glass')
 		.itemOutputs('tfc:lens')
 		.duration(100)

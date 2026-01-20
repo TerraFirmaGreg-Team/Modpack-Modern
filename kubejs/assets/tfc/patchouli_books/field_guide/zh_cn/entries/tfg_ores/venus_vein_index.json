@@ -26,7 +26,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "盐",
+      "name": "岩盐",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"

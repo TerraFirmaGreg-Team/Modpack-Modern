@@ -37,7 +37,7 @@ function registerTFGMoonRegolithRecipes(event) {
 	//#region Regolith Vapor Processing
 
 	event.recipes.gtceu.mixer('tfg:regolith_slurry_suspension')
-		.itemInputs('ad_astra:moon_sand', 'tfg:dry_ice')
+		.itemInputs('#forge:dusts/asurine', 'tfg:dry_ice')
 		.itemOutputs('#forge:dusts/regolith_mush')
 		.dimension('ad_astra:moon')
 		.duration(20 * 60)
