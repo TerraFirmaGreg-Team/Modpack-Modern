@@ -16,8 +16,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X XX X",
 			"X    X"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"
 	}).id(`tfg:artisan_table/lamp_casting_mold`);
 
 	event.custom({
@@ -30,8 +30,8 @@ function registerTFGArtisanTableRecipes(event) {
 			" XXXX ",
 			"      "
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/trapdoor_casting_mold`);
 
 	event.custom({
@@ -44,8 +44,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"X XX X"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/chain_casting_mold`);
 
 	event.custom({
@@ -58,8 +58,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"      ",
 			"      "
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/bell_casting_mold`);
 
 	event.custom({
@@ -72,8 +72,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/plate_casting_mold`);
 
 	event.custom({
@@ -86,8 +86,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"XX  XX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/gear_casting_mold`);
 
 	event.custom({
@@ -100,8 +100,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"X    X"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/bottle_casting_mold`);
 
 	event.custom({
@@ -114,8 +114,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"XX  XX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/ingot_casting_mold`);
 
 	event.custom({
@@ -128,8 +128,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"XX  XX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/ball_casting_mold`);
 
 	event.custom({
@@ -142,8 +142,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"XX  XX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/cylinder_casting_mold`);
 
 	event.custom({
@@ -156,8 +156,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"      ",
 			"      "
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/block_casting_mold`);
 
 	event.custom({
@@ -170,8 +170,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"XXXXXX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/nugget_casting_mold`);
 
 	event.custom({
@@ -184,8 +184,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/anvil_casting_mold`);
 
 	event.custom({
@@ -198,8 +198,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"XXXXXX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/name_casting_mold`);
 
 	event.custom({
@@ -212,8 +212,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"XXX XX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/small_gear_casting_mold`);
 
 	event.custom({
@@ -226,8 +226,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X XX X",
 			" XXXX "
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/rotor_casting_mold`);
 
 	event.custom({
@@ -240,8 +240,8 @@ function registerTFGArtisanTableRecipes(event) {
 			"X  XXX",
 			"XXXXXX"
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/pill_casting_mold`);
 
 	event.custom({
@@ -254,8 +254,8 @@ function registerTFGArtisanTableRecipes(event) {
 			" XXXX ",
 			"      "
 		],
-		"smithingType": "tfg:casting_mold",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:casting_mold",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/huge_pipe_casting_mold`);
 	
 	//#endregion
@@ -312,23 +312,24 @@ function registerTFGArtisanTableRecipes(event) {
 			"  X XX",
 			"XX  XX"
 		],
-		"smithingType": "tfg:resin_board",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:resin_board",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/resin_printed_circuit_board`);
 	
 	event.custom({
 		"result": {"item": "gtceu:phenolic_printed_circuit_board"},
 		"pattern": [
-			"X X XX",
-			" XXX  ",
-			"X  X X",
-			"X X  X",
-			"  X XX",
-			"XX  XX"
+			"X  XX ",
+			" XXXX ",
+			"XX X  ",
+			"X  XXX",
+			"X  XX ",
+			"  XX  "
 		],
-		"smithingType": "tfg:phenolic_board",
-		"type": "tfg:smithing"	
+		"artisanType": "tfg:phenolic_board",
+		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/phenolic_printed_circuit_board`);
 	//#endregion
+	
 
 }
