@@ -56,13 +56,13 @@ function registerVintageImprovementsRecipes(event) {
 		'   A   '
 	], {
 		A: '#forge:plates/treated_wood',
-		B: '#forge:rods/long/steel',
+		B: '#forge:rods/black_steel',
 		C: 'create:andesite_casing',
 		D: '#forge:frames/treated_wood',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
 
-	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', { 'black_steel': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', [GTMaterials.WroughtIron, 3, GTMaterials.BlackSteel, 2]);
 
 	event.recipes.gtceu.shaped('vintageimprovements:curving_press', [
 		'DBD',
@@ -90,7 +90,7 @@ function registerVintageImprovementsRecipes(event) {
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer')
 
-	TFGHelpers.registerMaterialInfo('vintageimprovements:helve_hammer', { 'iron': 2 });
+	TFGHelpers.registerMaterialInfo('vintageimprovements:helve_hammer', [GTMaterials.Iron, 2]);
 
 	event.shaped('vintageimprovements:grinder_belt', [
 		'AAA',
@@ -646,13 +646,13 @@ function generateHammeringRecipe(event, material, blows, anvil) {
 		ChemicalHelper.get(TagPrefix.plate, material, 1),
 		ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1))
 		.anvilBlock(`tfc:metal/anvil/${anvil}`)
-		.hammerBlows(blows)
+		.hammerBlows(Math.max(blows, 1))
 		.id(`tfg:vi/hammer/${material.getName()}_plate_on_${anvil}_anvil`)
 }
 
 function generateHammeringRecipeFromItem(event, input, output, blows, anvil) {
 	event.recipes.vintageimprovements.hammering(output, input)
 		.anvilBlock(`tfc:metal/anvil/${anvil}`)
-		.hammerBlows(blows)
-		.id(`tfg:vi/hammer/${input.replace(/[#:]/g, '_')}_on_${anvil}_anvil`)
+		.hammerBlows(Math.max(blows, 1))
+		.id(`tfg:vi/hammer/${linuxUnfucker(input)}_on_${anvil}_anvil`)
 }

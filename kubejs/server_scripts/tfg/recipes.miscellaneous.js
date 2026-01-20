@@ -119,7 +119,7 @@ function registerTFGMiscellaneousRecipes(event) {
 			.duration(20 * 10)
 			.EUt(GTValues.VA[GTValues.LV])
 	});
-	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', { 'rubber': 1, 'cobalt_brass': 4 });
+	TFGHelpers.registerMaterialInfo('tfg:cobalt_brass_wheel', [GTMaterials.Rubber, 1, GTMaterials.CobaltBrass, 4]);
 
 	event.recipes.create.mechanical_crafting('tfg:cobalt_brass_wheel', [
 		'  D  ',
@@ -166,7 +166,15 @@ function registerTFGMiscellaneousRecipes(event) {
 			G: `#forge:mattock_heads/${type}_steel`
 		}).id(`tfg:mechanical_crafter/rnr_plow/${type}_steel`)
 	});
-	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', { 'cobalt_brass': 9, 'invar': 4, 'steel': 2, 'wrought_iron': 3, 'treated_wood': 2 });
+	TFGHelpers.registerMaterialInfo('tfg:rnr_plow', [GTMaterials.CobaltBrass, 9, GTMaterials.Invar, 4, GTMaterials.Steel, 2, GTMaterials.WroughtIron, 3, GTMaterials.TreatedWood, 2]);
 
 	//#endregion
+
+	// Rotten Voiding Cover
+	event.recipes.gtceu.assembler('tfg:rotten_voiding_cover')
+		.itemInputs('gtceu:item_voiding_cover', '8x tfc:rotten_compost')
+		.itemOutputs('tfg:rotten_voiding_cover')
+		.duration(5*20)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true);
 }

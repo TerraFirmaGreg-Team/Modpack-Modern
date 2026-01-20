@@ -87,7 +87,7 @@ function registerTFGNuclearRecipes(event) {
 	// Martian Sludge
 
 	event.recipes.gtceu.chemical_bath('dirty_hexafluorosilicic_acid')
-		.itemInputs('32x #forge:mars_stone_dusts')
+		.itemInputs('32x #forge:dusts/ochrum')
 		.inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
 		.outputFluids(Fluid.of('gtceu:dirty_hexafluorosilicic_acid', 1000))
 		.duration(20*8)

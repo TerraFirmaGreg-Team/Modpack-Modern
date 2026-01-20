@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Lepidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Rock Salt: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)Salt: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumene: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()",
+      "text": "$(li)Halite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lepidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumene: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Sylvite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

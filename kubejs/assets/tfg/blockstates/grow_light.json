@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "active=false,facing=north": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_inactive", "y": 180 }
+    ],
+    "active=false,facing=south": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_inactive" }
+    ],
+    "active=false,facing=west": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_inactive", "y": 90 }
+    ],
+    "active=false,facing=east": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_inactive", "y": 270 }
+    ],
+
+    "active=true,facing=north": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_active", "y": 180 }
+    ],
+    "active=true,facing=south": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_active" }
+    ],
+    "active=true,facing=west": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_active", "y": 90 }
+    ],
+    "active=true,facing=east": [
+      { "model": "tfg:block/machines/egh_planter/grow_light_active", "y": 270 }
+    ]
+  }
+}

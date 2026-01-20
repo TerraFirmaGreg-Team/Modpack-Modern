@@ -12,7 +12,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfg_tips/faqs#boats)Чому мій човен потонув?$()\n$(li)$(l:tfg_tips/faqs#dried_fruit)Як зробити закваску?$()\n$(li)$(l:tfg_tips/faqs#dried_fruit)Як зробити волокно з ананаса?$()$()\n$(li)$(l:tfg_tips/faqs#resin)Як зробити гуму?$()\n$(li)$(l:tfg_tips/faqs#chunks)Як примусово завантажити чанк або збільшити ліміт?$()"
+			"text": "$(li)$(l:tfg_tips/faqs#boats)Чому мій човен потонув?$() $(li)$(l:tfg_tips/faqs#dried_fruit)Як зробити закваску для дріжджів?$() $(li)$(l:tfg_tips/faqs#dried_fruit)Як виготовити волокно з ананаса?$() $(li)$(l:tfg_tips/faqs#resin)Як зробити гуму?$() $(li)$(l:tfg_tips/faqs#chunks)Як примусово завантажити чанк або збільшити ліміт?$()"
 		},
 		{
 			"type": "patchouli:text",

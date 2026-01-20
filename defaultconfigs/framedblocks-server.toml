@@ -12,5 +12,5 @@
 	consumeCamoItem = true
 	#The light level to emit when glowstone dust is applied to a framed block
 	#Range: 0 ~ 15
-	glowstoneLightLevel = 15
+	glowstoneLightLevel = 3
 

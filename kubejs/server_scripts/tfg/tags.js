@@ -4,7 +4,6 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
-	registerBlockInteractionItemTags(event)
 	registerTFGStoneItemTags(event)
 	registerTFGFoodItemTags(event);
 	registerTFGMedicineItemTags(event);
@@ -17,6 +16,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
+	registerTFGAquaponicsItemTags(event)
 
 	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
 	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
@@ -81,13 +81,11 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
 	
 	// Steam Bloomery
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:charcoal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:rich_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:poor_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:coal_dust");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:charcoal_dust");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
 		
 	//#region holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
@@ -110,11 +108,13 @@ const registerTFGBlockTags = (event) => {
 
 	registerTFGPrimitiveBlockTags(event)
 	registerTFGFoodBlockTags(event)
+	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
+	registerTFGAquaponicsBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
@@ -129,10 +129,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
+	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
@@ -140,6 +140,7 @@ const registerTFGBlockTags = (event) => {
 //#region Fluids
 const registerTFGFluidTags = (event) => {
 
+	registerTFGAquaponicsFluidTags(event)
 	registerTFGPrimitiveFluidTags(event)
 
 	event.add('tfg:clean_water', 'minecraft:water')
@@ -178,6 +179,9 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	
+	event.add('tfc:drinkables', 'gtceu:ice')
+	event.add('tfc:any_drinkables', 'gtceu:ice')
 
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
@@ -220,6 +224,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
 
+	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
