@@ -6764,7 +6764,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.5+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6773,22 +6773,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wnhd0CI1/fzzy_config-0.7.4+1.20.1+forge.jar",
-                    "id": "wnhd0CI1",
+                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Dt5erL4a/fzzy_config-0.7.5+1.20.1+forge.jar",
+                    "id": "Dt5erL4a",
                     "parent_id": "hYykXjDp",
                     "hashes": {
-                        "sha512": "108f00ce546fd87ae2be853233bfe8f4deeb6abad6a61769a4ddf2735db098fd42d9b0a6ab1f98974717235e9fdf122767bdff82c042cd972cdbc14add039ebf",
-                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451"
+                        "sha512": "a5e86b8ea8a63bf8b9102b351314393aad5ede26b2480ae8ecaf55eefc482824a27e63ffa088a6d4e30a1ab814502f5e19bc77ac5a09e5120902f191ded59439",
+                        "sha1": "7e890f8b527ccb4523fed54a2864549a53f65fed"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 2353402,
-                    "date_published": "2025-12-14T05:56:34.040088Z"
+                    "size": 2372465,
+                    "date_published": "2026-01-19T17:33:10.246513Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.5+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6797,18 +6797,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7331/237/fzzy_config-0.7.4+1.20.1+forge.jar",
-                    "id": "7331237",
+                    "url": "https://edge.forgecdn.net/files/7489/457/fzzy_config-0.7.5+1.20.1+forge.jar",
+                    "id": "7489457",
                     "parent_id": "1005914",
                     "hashes": {
-                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451",
-                        "md5": "b6bcf0a1abc530257fcaa054157a8a16"
+                        "sha1": "7e890f8b527ccb4523fed54a2864549a53f65fed",
+                        "md5": "0519be93c6e6b9183c9416031db4c715"
                     },
                     "required_dependencies": [
                         "351264"
                     ],
-                    "size": 2353402,
-                    "date_published": "2025-12-14T05:56:25.963Z"
+                    "size": 2372465,
+                    "date_published": "2026-01-19T17:33:01.213Z"
                 }
             ]
         },
@@ -13075,7 +13075,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tfclunchbox-1.20.1-1.0.0.27.jar",
+                    "file_name": "tfclunchbox-1.20.1-1.0.0.28.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13084,18 +13084,18 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7458/423/tfclunchbox-1.20.1-1.0.0.27.jar",
-                    "id": "7458423",
+                    "url": "https://edge.forgecdn.net/files/7492/687/tfclunchbox-1.20.1-1.0.0.28.jar",
+                    "id": "7492687",
                     "parent_id": "1283445",
                     "hashes": {
-                        "sha1": "1226f74ab23c97398f23700a8f571e200fe311f0",
-                        "md5": "718421027553531294b611f80719da0c"
+                        "sha1": "7894fbb87bc561b7c186ec9f3997118b953659d0",
+                        "md5": "4ff015e8a9a54a81dcbe8f29bbcf84b4"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 129776,
-                    "date_published": "2026-01-14T13:05:43.293Z"
+                    "size": 132712,
+                    "date_published": "2026-01-20T05:47:48.063Z"
                 }
             ]
         },
@@ -14045,7 +14045,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.14.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.16.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14054,23 +14054,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/m0KNpOTc/TerraFirmaGreg-Core-Modern-0.8.14.jar",
-                    "id": "m0KNpOTc",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/t6PH6FL4/TerraFirmaGreg-Core-Modern-0.8.16.jar",
+                    "id": "t6PH6FL4",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "e5a7b153a2efab340c8ae8ce21624ce1f20349422534dfec64d00112f50142710c16b1a6a31e7ac9387ab771a6b1a2273c8162f46becd22705895ccff6d7c47d",
-                        "sha1": "f1b9ac2623f3058a2bcee184a024fa4111181218"
+                        "sha512": "5e274236f4d28e53ae739302815da365c78f984122df2f7932c2223ee31b097b9d087731849d510e7a8e66dd49f04c1ffbb40565f84d3908c1d215b28c679d17",
+                        "sha1": "579985f43bb52665b669250e4073832cbe95027f"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 9376906,
-                    "date_published": "2026-01-05T06:28:10.973810Z"
+                    "size": 9461058,
+                    "date_published": "2026-01-20T11:05:54.521015Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.14.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.16.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14079,19 +14079,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7419/964/TerraFirmaGreg-Core-Modern-0.8.14.jar",
-                    "id": "7419964",
+                    "url": "https://edge.forgecdn.net/files/7493/717/TerraFirmaGreg-Core-Modern-0.8.16.jar",
+                    "id": "7493717",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "f1b9ac2623f3058a2bcee184a024fa4111181218",
-                        "md5": "b09df110b3939d76ae68167b71abb8ff"
+                        "sha1": "579985f43bb52665b669250e4073832cbe95027f",
+                        "md5": "e158c8a6551a688142edd006ae4a7aa8"
                     },
                     "required_dependencies": [
                         "302973",
                         "890405"
                     ],
-                    "size": 9376906,
-                    "date_published": "2026-01-05T06:28:07.297Z"
+                    "size": 9461058,
+                    "date_published": "2026-01-20T11:05:50.520Z"
                 }
             ]
         },
