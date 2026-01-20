@@ -22,6 +22,11 @@ function registerTFGMarsMaterials(event) {
 	event.create('residual_radioactive_concoction')
 		.liquid(new GTFluidBuilder().customStill().temperature(450))
 
+	// New OLA Materials
+
+	event.create('tfg:radioactive_effluent')
+		.liquid(new GTFluidBuilder().customStill().temperature(293))
+
 	// Atmosphere
 
 	event.create('tfg:mars_air')

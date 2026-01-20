@@ -199,4 +199,8 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.GENERATE_PLATE)
 
 	// #endregion
+
+	//#region Super Critical CO2
+
+	
 }

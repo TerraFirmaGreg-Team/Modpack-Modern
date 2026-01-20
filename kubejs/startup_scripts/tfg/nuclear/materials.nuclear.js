@@ -50,7 +50,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('1x water', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	// Coolant
+	//#region Coolant
 
 	event.create('tfg:heavy_water')
 		.liquid(new GTFluidBuilder().temperature(236))
@@ -75,6 +75,22 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xFF715B)
 		.secondaryColor(0xFF9D6E)
+
+	event.create('tfg:TiCl4_doped_supercritical_CO2')
+		.liquid(new GTFluidBuilder().temperature(500))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
+		.color(0xFF715B)
+		.secondaryColor(0xFF9D6E)
+
+	event.create('tfg:spent_TiCl4_doped_supercritical_CO2')
+		.liquid(new GTFluidBuilder().temperature(2000))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
+		.color(0xFF715B)
+		.secondaryColor(0xFF9D6E)
+
+	//#endregion
 
 	// Fision Waste
 
@@ -169,6 +185,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe')
 
+	// Material Fission Earth
+
 	event.create('boron_10')
 		.dust()
 		.element(GTElements.get("boron_10"))
@@ -176,6 +194,14 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 		.color(0xf8a8c0)
 		.secondaryColor(0xcd8dbc)
+
+	event.create('caesium_137')
+		.dust()
+		.element(GTElements.get("caesium_137"))
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xB6FF00)
+		.secondaryColor(0x9FAFB2)
 
 	event.create('tfg:boron_thrichloride')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).customStill().temperature(380))
