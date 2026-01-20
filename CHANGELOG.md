@@ -3,6 +3,8 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+### Translation updates
+- Spanish @NikoNeko17
 
 ## [0.11.17] - 20-01-2026
 ### Important note
