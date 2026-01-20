@@ -2442,14 +2442,12 @@ const registerCreateRecipes = (event) => {
 	event.smelting('#forge:ingots/lead', 'create:crushed_raw_lead')
 
 	//Rubber early automation
-
-	let latexIngredients = [Fluid.of('tfg:latex', 1000),'tfc:powder/sulfur']
-	event.recipes.create.mixing((Fluid.of('tfg:vulcanized_latex', 1000)), latexIngredients)
+	
+	event.recipes.create.mixing((Fluid.of('tfg:vulcanized_latex', 1000)), [Fluid.of('tfg:latex', 1000),'tfc:powder/sulfur'])
 		.heated()
 		.id('tfg:create/mixer/vulcanized_latex');
 	
-	let stickyIngredients = [Fluid.of('tfg:latex', 1000), 'tfc:powder/wood_ash']
-	event.recipes.create.mixing('gtceu:sticky_resin', stickyIngredients)
+	event.recipes.create.mixing('gtceu:sticky_resin', [Fluid.of('tfg:latex', 1000), 'tfc:powder/wood_ash'])
 		.heated()
 		.id('tfg:create/mixer/sticky_resin');
 }
