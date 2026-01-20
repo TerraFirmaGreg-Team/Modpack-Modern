@@ -46,7 +46,11 @@
 	   *path/ends/with.txt             Any files who's path ends with
 	   *path/contains*                 Any files who's path contains
 	*/
-	"additional_files": [],
+	"additional_files": [
+		"/cherishedworlds-favorites.dat",
+		"/emi.json",
+		"/options.txt"
+	],
 	// Display file size in backup message
 	"display_file_size": false,
 	// backup location
