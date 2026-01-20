@@ -50,6 +50,8 @@
 - Cleaned up hanging sign recipes so they don't spam as much (#2733, #2771) @Inceitious
 - Added recipes to change AE2 glass cables into covered/smart cables, and changed some recipes to require smart cables instead (#2756) @awfulworldkid
 - Crop, tree tap, and beehive tooltips, and the climate tab, now show the accurate current temperature when in an oxygenated area @Mqrius
+- Anthracite can now be used as boiler fuel with the same duration as Coke @Pyritie
+- Added more grain options for soup (#2785) @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
@@ -70,6 +72,7 @@
 - Fixed casting of rods and gears for various metals @Pyritie
 - Fixed a dupe with scraping knives (#2716) @Inceitious
 - Fixed a rendering issue with the lunchboxes when held @Thomasx0
+- Fixed the lunchbox eating particles so now they look like the food being eaten @Thomasx0
 - Fixed the cooling lunchbox not stacking empty cells correctly (#2475) @Thomasx0
 - Fixed the lunchboxes not removing the "cooling" trait when items were removed with the number keys @Thomasx0
 - Digger helmet crafting now correctly consumes the cloth hat (#2770) @Inceitious
