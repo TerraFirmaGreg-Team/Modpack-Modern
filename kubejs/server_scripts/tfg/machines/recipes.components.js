@@ -87,7 +87,7 @@ function registerTFGElectronicComponentsRecipes(event) {
 		'gtceu:ulv_voltage_coil',
 	], 'gtceu:magnetic_iron_rod', [
 		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
-	]).transitionalItem('gtceu:magnetic_iron_rod').loops(32).id('tfg:sequenced_assembly/ulv_voltage_coil')
+	]).transitionalItem('gtceu:magnetic_iron_rod').loops(16).id('tfg:sequenced_assembly/ulv_voltage_coil')
 
 	// LV basic circuit
 	event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
