@@ -532,8 +532,8 @@ function registerVintageImprovementsRecipes(event) {
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:rubber', 144), '#forge:dusts/rubber')
 		.heated()
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuum/rubber')
-
+		.id('tfg:vi/vacuumizing/rubber')
+	
 	// Vaccuming rubber wood stuff for latex
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:latex_logs')
 		.processingTime(300 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
