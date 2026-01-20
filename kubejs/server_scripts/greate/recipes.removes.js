@@ -41,6 +41,7 @@ function removeGreateRecipes(event) {
 		event.remove({ id: `gtceu:extractor/extract_${tier}` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_shaft` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_cogwheel` })
+		event.remove({ id: `gtceu:extractor/extract_large_${tier}_cogwheel` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_alloy` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_gearbox` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_vertical_gearbox` })

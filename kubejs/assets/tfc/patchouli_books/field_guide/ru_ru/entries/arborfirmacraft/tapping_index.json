@@ -1,0 +1,142 @@
+{
+	"name": "Каталог подсочки",
+	"category": "tfc:arborfirmacraft",
+	"icon": "afc:wood/sapling/weeping_maple",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Это список всех деревьев в мире, с которых можно собирать жидкость. $(br)$(thing)Климат$() покажет вам, при какой средней температуре и количестве осадков может расти дерево, а $(thing)Информация для подсочки$() предоставит вам подробную информацию о типе жидкости, скорости производства и о том, плодоносит ли дерево только весной."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Клён$()$(l:arborfirmacraft/tapping_index#birch)$(li)Берёза$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Гевея$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Каучуконосный фикус$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Сейба$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Осина$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Ель$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)Белый кедр$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Пихта$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "maple",
+			"title": "Клён",
+			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -8.4°C$(br)$(thing)Максимальная температура$(): 8°C$(br)$(thing)Минимальные годовые осадки$(): 240$(br)$(thing)Максимальные годовые осадки$(): 470$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -15°C$(br)$(thing)Макс. темп. для производства$(): 5°C$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 5mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/maple_tree.png" ],
+			"text": "$(thing)Производит$(): Кленовый сок$(br)$(thing)Перерабатывается в $(): Кленовый сахар",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "birch",
+			"title": "Берёза",
+			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -12.1°C$(br)$(thing)Максимальная температура$(): 6.1°C$(br)$(thing)Минимальные годовые осадки$(): 125$(br)$(thing)Максимальные годовые осадки$(): 310$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -15°C$(br)$(thing)Макс. темп. для производства$(): 5°C$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 5mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/birch_tree.png" ],
+			"text": "$(thing)Производит$(): Берёзовый сок$(br)$(thing)Перерабатывается в $(): Берёзовый сахар",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "hevea",
+			"title": "Гевея",
+			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): 17.1°C$(br)$(thing)Максимальная температура$(): 26.2°C$(br)$(thing)Минимальные годовые осадки$(): 390$(br)$(thing)Максимальные годовые осадки$(): 500$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): 8°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 3mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/hevea_tree.png" ],
+			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rubber_fig",
+			"title": "Каучуконосный фикус",
+			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): 9.8°C$(br)$(thing)Максимальная температура$(): 20.7°C$(br)$(thing)Минимальные годовые осадки$(): 290$(br)$(thing)Максимальные годовые осадки$(): 400$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): 4°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png" ],
+			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "kapok",
+			"title": "Сейба",
+			"item": "tfc:wood/log/kapok,tfc:wood/wood/kapok,tfc:wood/leaves/kapok,tfc:wood/sapling/kapok",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): 17.1°C$(br)$(thing)Максимальная температура$(): 38°C$(br)$(thing)Минимальные годовые осадки$(): 320$(br)$(thing)Максимальные годовые осадки$(): 500$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): 12°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 4mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/kapok_tree.png" ],
+			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "aspen",
+			"title": "Осина",
+			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -15.7°C$(br)$(thing)Максимальная температура$(): -1.1°C$(br)$(thing)Минимальные годовые осадки$(): 350$(br)$(thing)Максимальные годовые осадки$(): 500$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -10°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/aspen_tree.png" ],
+			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "spruce",
+			"title": "Ель",
+			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -17.5°C$(br)$(thing)Максимальная температура$(): -6.6°C$(br)$(thing)Минимальные годовые осадки$(): 220$(br)$(thing)Максимальные годовые осадки$(): 470$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -10°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 4mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/spruce_tree.png" ],
+			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "white_cedar",
+			"title": "Белый кедр",
+			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -15.7°C$(br)$(thing)Максимальная температура$(): 0.7°C$(br)$(thing)Минимальные годовые осадки$(): 100$(br)$(thing)Максимальные годовые осадки$(): 285$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -8°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 3mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png" ],
+			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
+			"border": true
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "douglas_fir",
+			"title": "Пихта",
+			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
+			"link_recipe": false,
+			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -15.7°C$(br)$(thing)Максимальная температура$(): 6.1°C$(br)$(thing)Минимальные годовые осадки$(): 305$(br)$(thing)Максимальные годовые осадки$(): 500$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -8°C$(br)$(thing)Макс. темп. для производства$(): N/A$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 2mb"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [ "tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png" ],
+			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
+			"border": true
+		}
+	]
+}

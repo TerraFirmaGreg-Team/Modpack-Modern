@@ -68,6 +68,7 @@ ServerEvents.tags('block', event => {
 	registerAFCBlockTags(event)
 	registerAsticorCartsBlockTags(event)
 	registerBeneathBlockTags(event)
+	registerBlockRunnerBlockTags(event)
 	registerComputerCraftBlockTags(event)
 	registerCreateBlockTags(event)
 	registerCreateAdditionsBlockTags(event)
@@ -132,6 +133,7 @@ ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
 	registerTFGBiomeTags(event)
+	registerWansAncientBeastsBiomeTags(event)
 })
 
 ServerEvents.tags('entity_type', event => {
@@ -177,6 +179,7 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
+	registerBeneathLoots(event)
 	registerTFGOreLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
@@ -197,6 +200,13 @@ GTCEuServerEvents.oreVeins(event => {
 GTCEuServerEvents.fluidVeins(event => {
 	registerGTCEUBedrockFluidVeins(event)
 })
+
+
+/** Correct recipe IDs to replace invalid characters */
+function linuxUnfucker(value) {
+	const str = (value === undefined || value === null) ? "" : value.toString();
+	return str.replace(/[/:\s]/g, "_");
+};
 
 /**
  * Событие регистрации рецептов.
@@ -266,11 +276,11 @@ ServerEvents.recipes(event => {
 	registerTFCAmbientalRecipes(event)
 	registerTFCBetterBFRecipes(event)
 	registerTFCLunchBoxRecipes(event)
-	registerTFCScrapingRecipes(event)
 	registerTFCGroomingStationRecipes(event)
 	registerTFCGurmanRecipes(event)
 	registerTFGRecipes(event)
 	registerTFCTextileRecipes(event)
+	registerTFCScrapingKnivesRecipes(event)
 	registerToolBeltRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)

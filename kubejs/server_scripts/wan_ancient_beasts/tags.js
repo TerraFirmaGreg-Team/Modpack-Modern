@@ -59,3 +59,22 @@ const registerWABEntityTypeTags = (event) => {
 	event.add('wan_ancient_beasts:eater_ignore', 'species:quake')
 
 }
+
+const registerWansAncientBeastsBiomeTags = (event) => {
+	event.removeAll('wan_ancient_beasts:toxlacanth_spawn');
+	event.removeAll('wan_ancient_beasts:has_structure/abandoned_village');
+	event.removeAll('wan_ancient_beasts:has_structure/ancient_nest');
+	event.removeAll('wan_ancient_beasts:has_structure/dead_coral');
+	event.removeAll('wan_ancient_beasts:has_structure/desert_ruins');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_badlands');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_desert');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_icespikes');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_jungle');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_oldgrowthtaiga');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_peaks');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_plains');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_savanna');
+	event.removeAll('wan_ancient_beasts:has_structure/digsite_taiga');
+	event.removeAll('wan_ancient_beasts:has_structure/ice_spike_castle');
+	event.removeAll('wan_ancient_beasts:has_structure/mesa_temple');
+}

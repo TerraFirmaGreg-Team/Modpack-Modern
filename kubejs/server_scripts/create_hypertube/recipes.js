@@ -6,6 +6,7 @@ function registerCreateHypertubeRecipes(event) {
 	event.recipes.gtceu.assembler('create_hypertube:hypertube')
 		.itemInputs('2x #forge:plates/stainless_steel', '4x ae2:quartz_glass')
 		.itemOutputs('8x create_hypertube:hypertube')
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(50)
 		.addMaterialInfo(true)

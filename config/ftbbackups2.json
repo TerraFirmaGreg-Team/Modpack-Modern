@@ -27,13 +27,15 @@
 	   More info here
 	   (http://www.cronmaker.com)
 	*/
-	"backup_cron": "0 15 10 * * ? *",
+	"backup_cron": "0 0 0/1 1/1 * ? *",
 	// Time between manual backups using the command
 	"manual_backups_time": 0,
 	// Only run a backup if a player has been online since the last backup
 	"only_if_players_been_online": true,
 	// Additional directories to include in backup
-	"additional_directories": [],
+	"additional_directories": [
+		"xaero/minimap/"
+	],
 	/* Additional files and directories to include in backup.
 	   Can specify a file name, path relative to server directory or wildcard file path
 	   Examples:                       (All file paths are relative to server root)
@@ -44,7 +46,11 @@
 	   *path/ends/with.txt             Any files who's path ends with
 	   *path/contains*                 Any files who's path contains
 	*/
-	"additional_files": [],
+	"additional_files": [
+		"/cherishedworlds-favorites.dat",
+		"/emi.json",
+		"/options.txt"
+	],
 	// Display file size in backup message
 	"display_file_size": false,
 	// backup location
@@ -52,9 +58,9 @@
 	// Specify the backup format. Valid options are ZIP and DIRECTORY
 	"backup_format": "ZIP",
 	// Minimum free disk space in MB. If a backup's creation would leave less than this amount of disk space remaining, the backup will be aborted.
-	"minimum_free_space": 51200,
+	"minimum_free_space": 0,
 	// If the previous backup failed due to lack of space, the oldest backup will be deleted to free space.
-	"free_space_if_needed": true,
+	"free_space_if_needed": false,
 	/* Specify files or folders to be excluded.
 	   Can specify a file name, path relative to server directory or wildcard file path
 	   Examples:                       (All file paths are relative to server root)

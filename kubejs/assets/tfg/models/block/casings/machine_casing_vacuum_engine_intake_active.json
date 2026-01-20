@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "tfg:block/casings/machine_casing_vacuum_engine_intake_active"
+	}
+}

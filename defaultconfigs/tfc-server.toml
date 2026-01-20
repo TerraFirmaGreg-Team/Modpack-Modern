@@ -167,7 +167,7 @@ familiarityDecayLimit = 0.3
 		#
 		# Tank capacity of a crucible (in mB).
 		#Range: 0 ~ 2147483645
-		crucibleCapacity = 4032
+		crucibleCapacity = 4608
 		#
 		# A modifier for how fast fluid containers empty into crucibles. Containers will empty 1 mB every (this) number of ticks.
 		#Range: > 1
@@ -514,7 +514,7 @@ familiarityDecayLimit = 0.3
 	[blocks.mud]
 		#
 		# If TFC dirt blocks are able to be created into mud blocks using a water-filled fluid container.
-		enableDirtToMudCreation = true
+		enableDirtToMudCreation = false
 
 	[blocks.quern]
 		#

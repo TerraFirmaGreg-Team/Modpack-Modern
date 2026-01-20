@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "item": "gtceu:compressed_fireclay",
+            "item": "tfc:ceramic/unfired_fire_brick",
             "text": "在将耐火黏土全部用于制作20块耐火砖前，请注意：进入蒸汽时代后，你就能以低得多的成本制作它。这能让你节省$(item)高岭土$()与$(item)石墨$()用于制作$(thing)铸造台$()。"
         },
         {

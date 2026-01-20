@@ -192,7 +192,7 @@ function registerTFGPrimitiveItems(event) {
 		.texture("fluid", "tfg:item/mold/fired/nugget_mold_overlay")
 		.tag('tfc:fired_molds')
 		.tag('tfc:molds')
-		.fluidTagAccept('tfc:usable_in_ingot_mold')
+		.fluidTagAccept('tfg:usable_in_nugget_mold')
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX",

@@ -327,21 +327,24 @@ jobs:
 
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
-          sed -i -e "s/DEV/${VERSION}/g" .github/docker/docker-compose.yml
           sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
           sed -i -e "s/DEV/${VERSION}/g" .pakku/server-overrides/server.properties
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
           
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/LOADER_VERSION/${LOADER_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
           sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/LOADER_TYPE/${LOADER_TYPE}/g" .pakku/docker-overrides/docker-compose.yml
 
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/multimc-overrides/mmc-pack.json
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/server-overrides/forge-auto-install.txt
+          sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
       - name: 📝 Cache Pakku
         uses: actions/cache@v5.0.1

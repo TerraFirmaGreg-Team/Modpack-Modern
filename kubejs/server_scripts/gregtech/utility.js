@@ -66,193 +66,6 @@ const generateCutterRecipe = (event, input, output, duration, EUt, id) => {
 
 //#endregion
 
-//#region Green House
-/**
- * Function for generating greenhouse recipes.
- *
- * @param {*} event 
- * @param {string} input -Item (Not consumed)
- * @param {string} fluid -Fluid ID or tag
- * @param {number} fluid_amount -Fluid amount, in mB
- * @param {string} output -Item (Chanced output uses input item)
- * @param {string} id -Recipe ID
- * @param {string} dimension -Dimension ID
- * @param {number} fertiliser_count
- * @param {string|null} output_seconday -Item (Optional, if there should be a third output)
- * @param {number} EUt
- */
-function generateGreenHouseRecipe(event, input, fluid, fluid_amount, output, id, dimension, fertiliser_count, output_secondary, EUt) {
-	if (EUt === undefined || output_secondary === undefined || fertiliser_count === undefined || dimension === undefined) {
-		throw new TypeError(`Call to generateGreenHouseRecipe for id ${id} is missing args`);
-	}
-	let r = event.recipes.gtceu.greenhouse(id)
-		.notConsumable(input)
-		.circuit(1)
-		.inputFluids(`${fluid} ${fluid_amount}`)
-		.itemOutputs(output)
-		.chancedOutput(input, 750, 0)
-		.chancedOutput(input, 500, 0)
-		.duration(36000) // 30 mins
-		.EUt(EUt)
-
-	if (dimension !== null) {
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null) {
-		r.chancedOutput(output_secondary, 750, 0)
-	}
-	
-
-	// С удобрением (With fertilizer)
-	r = event.recipes.gtceu.greenhouse(`${id}_fertilized`)
-		.notConsumable(input)
-		.itemInputs(Item.of('gtceu:fertilizer', fertiliser_count))
-		.circuit(2)
-		.inputFluids(`${fluid} ${fluid_amount}`)
-		.itemOutputs(output)
-		.chancedOutput(input, 4000, 0)
-		.chancedOutput(input, 3000, 0)
-		.duration(12000) // 10 mins
-		.EUt(EUt)
-
-	if (dimension !== null) {
-		r.dimension(dimension)
-	}
-	if (output_secondary !== null) {
-		r.chancedOutput(output_secondary, 4000, 0)
-	}
-}
-//#endregion
-
-//#region Filling NBT
-/**
- * Function to get fluid filling NBT.
- *
- * @param {string} material -Fluid
- * @param {number} amount -mB
- * @returns {{ tank: { FluidName: string; Amount: number; }; }} 
- */
-const getFillingNBT = (material, amount) => {
-	return {
-		tank: {
-			FluidName: Fluid.of(material.getFluid()).getId(),
-			Amount: amount
-		}
-	}
-}
-//#endregion
-
-//#region Plated Blocks
-/**
- * Function for generating plated block recipes.
- *
- * @param {*} event 
- * @param {GTMaterial} material 
- */
-function generatePlatedBlockRecipe(event, material) {
-	// firmaciv plated blocks don't have this property
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	const outputMaterial = (tfcProperty === null || tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial()
-
-	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-
-	const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
-	const platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
-	const platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
-
-	if (platedBlock === null) return;
-
-	let tfcMetalName = material.getName();
-	if (tfcMetalName === "iron") {
-		tfcMetalName = "cast_iron";
-	}
-
-	event.shapeless(platedBlock, ['#forge:stone_bricks', plateItem, '#forge:tools/hammers'])
-		.id(`tfg:shapeless/${material.getName()}_plated_block`)
-	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_block`)
-		.itemInputs('#forge:stone_bricks', plateItem)
-		.itemOutputs(platedBlock)
-		.circuit(10)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	if (tfcProperty !== null) {
-		event.recipes.tfc.heating(platedBlock, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-			.id(`tfc:heating/metal/${tfcMetalName}_block`)
-	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_block`)
-		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_block`)
-		.itemInputs(platedBlock)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-
-	event.shapeless(platedSlab.withCount(2), ['2x #tfg:brick_slabs', plateItem, '#forge:tools/hammers'])
-		.id(`tfg:item_application/${material.getName()}_plated_slab`)
-	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs('2x #tfg:brick_slabs', plateItem)
-		.itemOutputs(platedSlab.withCount(2))
-		.circuit(10)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	if (tfcProperty !== null) {
-		// Slabs are lossy because it's possible to plate a double slab block with one metal plate
-		event.recipes.tfc.heating(platedSlab, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
-			.id(`tfc:heating/metal/${tfcMetalName}_block_slab`)
-	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 2))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_slab`)
-		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.nugget, material, 4))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
-
-	event.shapeless(platedStair, ['#tfg:brick_stairs', plateItem, '#forge:tools/hammers'])
-		.id(`tfg:item_application/${material.getName()}_plated_stair`)
-	event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_stair`)
-		.itemInputs('#tfg:brick_stairs', plateItem)
-		.itemOutputs(platedStair)
-		.circuit(10)
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	if (tfcProperty !== null) {
-		event.recipes.tfc.heating(platedStair, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-			.id(`tfc:heating/metal/${tfcMetalName}_block_stairs`)
-	}
-	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_stair`)
-		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_stair`)
-		.itemInputs(platedStair)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
-		.duration(material.getMass())
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-}
-//#endregion
-
 //#region forEachMaterial
 /**
  * Function for iterating through registered materials
@@ -518,6 +331,9 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemOutputs(`6x ${button}`)
 			.duration(50)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.shapeless(`3x ${button}`, [pressure_plate, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${name}_pressure_plate_to_button`)
 	}
 }
 //#endregion
@@ -558,28 +374,28 @@ function sterilizeItem(event, input, output, multiplier, cleanroom) {
 	}
 
 	// Create recipes.
-	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const ethanol_recipe = event.recipes.gtceu.chemical_bath(`tfg:ethanol_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:ethanol', 500*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const hydrogen_peroxide_recipe = event.recipes.gtceu.chemical_bath(`tfg:hydrogen_peroxide_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const sodium_dodecyl_sulfate_recipe = event.recipes.gtceu.chemical_bath(`tfg:sodium_dodecyl_sulfate_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.inputFluids(Fluid.of('tfg:sodium_dodecyl_sulfate', 50*recipe_multiplier))
 		.itemOutputs(output)
 		.duration(10*20*recipe_multiplier)
 		.EUt(GTValues.VA[GTValues.MV]);
 
-	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${input.replace(':', '_')}_to_${output.replace(':', '_')}`)
+	const autoclave_recipe = event.recipes.gtceu.autoclave(`tfg:autoclave_cleaning/${linuxUnfucker(input)}_to_${linuxUnfucker(output)}`)
 		.itemInputs(input)
 		.perTick(true)
 		.inputFluids(Fluid.of('gtceu:steam', 100*recipe_multiplier))

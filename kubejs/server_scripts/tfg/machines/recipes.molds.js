@@ -281,21 +281,9 @@ function registerTFGMoldRecipes(event) {
 
 	global.TFG_EXTRUDER_MOLDS.forEach(mold => {
 
-		event.recipes.gtceu.arc_furnace(`arc_${mold}`.replace("tfg:", ""))
-			.itemInputs(mold)
-			.itemOutputs(steelIngots)
-			.duration(224)
-			.EUt(GTValues.VA[GTValues.LV])
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+		TFGHelpers.registerMaterialInfo(mold, [GTMaterials.Steel, 4])
 
-		event.recipes.gtceu.macerator(`macerate_${mold}`.replace("tfg:", ""))
-			.itemInputs(mold)
-			.itemOutputs(steelDusts)
-			.duration(224)
-			.EUt(GTValues.VA[GTValues.ULV])
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		event.recipes.gtceu.forming_press(`copy_shape_${mold}`.replace("tfg:", ""))
+		event.recipes.gtceu.forming_press(`copy_shape_${linuxUnfucker(mold)}`)
 			.itemInputs('gtceu:empty_mold')
 			.notConsumable(mold)
 			.itemOutputs(mold)
@@ -304,22 +292,10 @@ function registerTFGMoldRecipes(event) {
 	})
 
 	global.TFG_CASTING_MOLDS.forEach(mold => {
+		
+		TFGHelpers.registerMaterialInfo(mold, [GTMaterials.Steel, 4])
 
-		event.recipes.gtceu.arc_furnace(`arc_${mold}`.replace("tfg:", ""))
-			.itemInputs(mold)
-			.itemOutputs(steelIngots)
-			.duration(224)
-			.EUt(GTValues.VA[GTValues.LV])
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-		event.recipes.gtceu.macerator(`macerate_${mold}`.replace("tfg:", ""))
-			.itemInputs(mold)
-			.itemOutputs(steelDusts)
-			.duration(224)
-			.EUt(GTValues.VA[GTValues.ULV])
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-		event.recipes.gtceu.forming_press(`copy_shape_${mold}`.replace("tfg:", ""))
+		event.recipes.gtceu.forming_press(`copy_shape_${linuxUnfucker(mold)}`)
 			.itemInputs('gtceu:empty_mold')
 			.notConsumable(mold)
 			.itemOutputs(mold)

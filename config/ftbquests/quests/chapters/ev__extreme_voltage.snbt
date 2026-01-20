@@ -905,7 +905,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:mars_stone_dusts)"
+							"ftbfiltersystem:filter": "item_tag(forge:dusts/ochrum)"
 						}
 					}
 					type: "item"

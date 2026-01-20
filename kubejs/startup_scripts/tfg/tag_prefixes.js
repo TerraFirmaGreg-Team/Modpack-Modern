@@ -3,6 +3,8 @@
 
 function registerTFGTagPrefixes(event) {
 
+	registerTFGRocksTagPrefixes(event)
+
 	excludeAllGemsButNormal(GTMaterials.get('tfg:apt'));
 	TagPrefix.block.setIgnored(GTMaterials.get('tfg:apt'));
 	excludeAllGemsButNormal(GTMaterials.get('tfg:tetrafluoroethane'));

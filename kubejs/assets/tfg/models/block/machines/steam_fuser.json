@@ -41,8 +41,8 @@
 				"parent": "gtceu:block/machine/template/cube_all/sided",
 				"textures": {
 					"all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-					"overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_paused",
-					"overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_paused_emissive"
+					"overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+					"overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
 				}
 			}
 		},
@@ -81,8 +81,8 @@
 				"parent": "gtceu:block/machine/template/cube_all/sided",
 				"textures": {
 					"all": "gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-					"overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front_paused",
-					"overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_paused_emissive"
+					"overlay_front": "gtceu:block/machines/alloy_smelter/overlay_front",
+					"overlay_front_emissive": "gtceu:block/machines/alloy_smelter/overlay_front_emissive"
 				}
 			}
 		},

@@ -159,7 +159,7 @@ function registerTFGFoodData(event) {
 	});
 
 	event.foodItem("tfg:food/cooked_long_pig_filet", (food) => {
-		food.hunger(2);
+		food.hunger(4);
 		food.saturation(2);
 		food.protein(2);
 		food.decayModifier(2.25);

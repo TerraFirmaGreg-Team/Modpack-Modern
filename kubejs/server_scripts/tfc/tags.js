@@ -1,6 +1,8 @@
 // priority: 0
 "use strict";
 
+const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
+
 /** @param {TagEvent.Item} event */
 function registerTFCItemTags(event) {
     // Теги для соответствия инструментов TFC и GT
@@ -155,6 +157,14 @@ function registerTFCItemTags(event) {
     event.add("minecraft:fishes", "tfc:food/rainbow_trout");
     event.add("minecraft:fishes", "tfc:food/smallmouth_bass");
 
+    event.add("tfc:foods/grains", "tfc:food/cooked_rice");
+    event.add("tfc:foods/grains", "tfc:food/cattail_root");
+    event.add("tfc:foods/grains", "tfc:food/taro_root");
+    event.add("tfc:foods/grains", "firmalife:food/tortilla_chips");
+    event.add("tfc:foods/grains", "firmalife:food/cooked_rice_noodles");
+    event.add("tfc:foods/grains", "firmalife:food/cooked_pasta");
+    event.add("tfc:foods/grains", "firmalife:food/toast");
+
     // Чтобы жарились бревна из TFC в пиролиз. печке
     // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
     global.TFC_WOOD_TYPES.forEach((woodType) => {
@@ -261,6 +271,12 @@ function registerTFCItemTags(event) {
     event.add("tfc:green_gravel", "tfc:rock/gravel/schist");
     // Розовый
     event.add("tfc:pink_gravel", "tfc:rock/gravel/granite");
+    
+    // Glassworking sands
+    event.add('tfc:hematitic_sand', 'minecraft:red_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:mars_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:venus_sand');
+    event.add('tfc:olivine_sand', 'ad_astra:moon_sand');
 
     // Теги для объединения наковален
     event.add("tfc:red_or_blue_anvil", "tfc:metal/anvil/blue_steel");
@@ -407,6 +423,43 @@ function registerTFCItemTags(event) {
     event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
+
+    //greens and browns
+    event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
+    event.add('tfc:compost_greens_low', '#minecraft:leaves')
+
+    // Powder dyes
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/blue', 'tfc:powder/graphite')
+    event.add('forge:dyes/black', 'tfc:powder/charcoal')
+    event.add('forge:dyes/black', 'tfc:powder/coke')
+    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
+    event.add('forge:dyes/orange', 'tfc:powder/copper')
+    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
+    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
+    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
+    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
+    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
+    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
+    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
+    event.add('forge:dyes/green', 'tfc:powder/malachite')
+    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
+    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
+
+    //Hanging Signs Soft & Hard Wood
+    global.TFC_EQUIPMENT_METALS.forEach(metal => {
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`)
+        event.add(`tfg:hanging_sign/${metal}/softwood`, `beneath:wood/hanging_sign/${metal}/crimson`)
+    })
+
+	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 }
 
 /** @param {TagEvent.Block} event */
@@ -447,14 +500,7 @@ function registerTFCBlockTags(event) {
     event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
     event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
 
-    // Возможность обрушения руды
-    event.add("tfc:can_collapse", "#forge:ores");
-    event.add("tfc:can_start_collapse", "#forge:ores");
-    event.add("tfc:can_trigger_collapse", "#forge:ores");
-
-    event.add("tfc:monster_spawns_on", "#forge:ores");
-    event.add("tfc:prospectable", "#forge:ores");
-
+    // Glassworking blocks
     event.add("tfc:glass_basin_blocks", "create:brass_block");
     event.add("tfc:glass_pouring_table", "create:brass_block");
 
@@ -486,11 +532,21 @@ function registerTFCBlockTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
-    //Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
-    //Add blacklisted words to the const with | between.
-    const brick_blacklist = "drying|slab|stairs|wall|additionalplacements";
-    event.add("tfc:bloomery_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
-    event.add("tfc:forge_insulation", `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+    // Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
+    // Optimized to compute matching blocks once instead of regex scanning per tag like before.
+    // Blacklist removes blocks that are unwanted.
+    const blacklist = ["drying", "slab", "stairs", "wall", "additionalplacements", "fence", "roof", "bridge"];
+    const matches = [];
+    ForgeRegistries.BLOCKS.getValues().forEach(block => {
+        const id = String(ForgeRegistries.BLOCKS.getKey(block));
+        if (id.includes("brick") && !blacklist.some(no_no_word => id.includes(no_no_word))) {
+            matches.push(id);
+        };
+    });
+    ["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
+        matches.forEach(id => event.add(tag, id));
+    });
+
     event.add("tfc:forge_insulation", 'create:depot');
 
     global.TFC_STONE_TYPES.forEach((stone) => {

@@ -88,26 +88,21 @@ function registerTFGPrimitiveBlockTags(event) {
 }
 
 function registerTFGPrimitiveFluidTags(event) {
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:copper')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:tin')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:sterling_silver')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bismuth_bronze')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bronze')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:zinc')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:silver')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:potin')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:bismuth')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:lead')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:nickel')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:brass')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:gold')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:red_alloy')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:black_bronze')
-	event.add('tfg:usable_in_small_gear_mold', 'gtceu:rose_gold')
+	forEachMaterial(material => {
+		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+		if (tfcProperty === null || !material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED))
+			return;
 
-	event.add('tfg:usable_in_rod_mold', 'gtceu:red_alloy')
-	event.add('tfg:usable_in_rod_mold', 'gtceu:bronze')
-	event.add('tfg:usable_in_rod_mold', 'gtceu:bismuth_bronze')
-	event.add('tfg:usable_in_rod_mold', 'gtceu:black_bronze')
-	event.add('tfg:usable_in_rod_mold', 'gtceu:brass')
+		if (!ChemicalHelper.get(TagPrefix.gearSmall, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_small_gear_mold', material.getFluid().getFluidType().toString())
+		}
+
+		if (!ChemicalHelper.get(TagPrefix.rod, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_rod_mold', material.getFluid().getFluidType().toString())
+		}
+
+		if (!ChemicalHelper.get(TagPrefix.nugget, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
+		}
+	})
 }

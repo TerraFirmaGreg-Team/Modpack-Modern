@@ -48,7 +48,7 @@ const registerAdAstraItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
-	event.add('c:hidden_from_recipe_viewers', 'ad_astra:alphacene_mushroom')
+	event.add('c:hidden_from_recipe_viewers', 'ad_astra:aeronos_mushroom')
 	event.add('c:hidden_from_recipe_viewers', 'ad_astra:strophar_mushroom')
 	
 	// Deco blocks
@@ -117,11 +117,11 @@ const registerAdAstraBlockTags = (event) => {
 		event.add(`tfg:ad_astra_${block}_block`, `ad_astra:encased_${block}_block`)
 	})
 
-		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_factory_block')
-		event.add('tfg:ad_astra_etrium_block', 'ad_astra:encased_etrium_block')
-		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_plateblock')
-		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_panel')
-		event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_block')
+	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_factory_block')
+	event.add('tfg:ad_astra_etrium_block', 'ad_astra:encased_etrium_block')
+	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_plateblock')
+	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_panel')
+	event.add('tfg:ad_astra_etrium_block', 'ad_astra:etrium_block')
 }
 
 const registerAdAstraBiomeTags = (event) => {
