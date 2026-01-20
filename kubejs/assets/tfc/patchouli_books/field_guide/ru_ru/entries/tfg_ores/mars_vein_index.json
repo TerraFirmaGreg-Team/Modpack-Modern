@@ -1652,7 +1652,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Соль",
+      "name": "Галит",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"

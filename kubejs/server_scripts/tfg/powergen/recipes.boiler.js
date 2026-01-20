@@ -49,21 +49,31 @@ function registerTFGBoilerRecipes(event) {
 		.itemInputs('#minecraft:logs')
 		.duration(300)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:saplings')
 		.itemInputs('#minecraft:saplings')
 		.duration(100)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:planks')
 		.itemInputs('#minecraft:planks')
 		.duration(75)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.steam_boiler('tfg:anthracite')
+		.itemInputs('beneath:cursecoal')
+		.duration(160 * 20)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:flora_pellets')
 		.itemInputs('tfg:flora_pellets')
 		.duration(1200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	// Small nerf to charcoal
 
@@ -82,48 +92,57 @@ function registerTFGBoilerRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:oil', 200))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:heavy_oil')
 		.inputFluids(Fluid.of('gtceu:oil_heavy', 32))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:fish_oil')
 		.inputFluids(Fluid.of('gtceu:fish_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	// These aren't in base GT, but they have the same stats as oil
 	event.recipes.gtceu.steam_boiler('tfg:raw_oil')
 		.inputFluids(Fluid.of('gtceu:oil_medium', 200))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:light_oil')
 		.inputFluids(Fluid.of('gtceu:oil_light', 200))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	// Same stats as fish oil
 	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
 		.inputFluids(Fluid.of('tfc:olive_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:soybean_oil')
 		.inputFluids(Fluid.of('firmalife:soybean_oil', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:tallow')
 		.inputFluids(Fluid.of('tfc:tallow', 160))
 		.duration(200)
 		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
 
 	// fish oil extraction
 	event.recipes.gtceu.extractor(`tfg:fish_oil`)

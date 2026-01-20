@@ -723,7 +723,7 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_marble')
 	removeMaceratorRecipe(event, 'macerate_red_granite')
-
+	removeMaceratorRecipe(event, 'macerate_calcite')
 	removeMaceratorRecipe(event, 'macerate_wool')
 
 	removeMaceratorRecipe(event, 'macerate_enchanting_table')

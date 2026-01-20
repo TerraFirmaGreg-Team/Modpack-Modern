@@ -35,8 +35,6 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:bells', 'minecraft:bell')
 
-    event.add('tfc:hematitic_sand', 'minecraft:red_sand')
-
     event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
     event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
 	
@@ -45,6 +43,7 @@ const registerMinecraftItemTags = (event) => {
 
 	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
 
+    event.add('tfg:stonecutting/crackrack', 'minecraft:nether_brick_fence')
 }
 
 const registerMinecraftBlockTags = (event) => {

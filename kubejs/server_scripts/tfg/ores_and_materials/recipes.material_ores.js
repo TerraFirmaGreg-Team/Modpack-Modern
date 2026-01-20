@@ -404,6 +404,7 @@ function processImpureDust(event, material) {
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			impureDustItem)
 			.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.minimalRPM(32)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_impure`)
 
 		// Dropping in water
@@ -455,6 +456,7 @@ function processPureDust(event, material) {
 			[dustItem, Item.of(ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)).withChance(0.111)],
 			pureDustItem)
 			.processingTime(material.getMass() * 10 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.minimalRPM(32)
 			.id(`tfg:vi/centrifuge/${materialName}_dust_from_pure`)
 
 		// Dropping in water

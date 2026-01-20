@@ -675,6 +675,7 @@
 		{
 			dependencies: ["4047EE998BC4CD03"]
 			description: ["{quests.tfg_tips.get_milk.desc}"]
+			icon: "minecraft:milk_bucket"
 			id: "3C7F170E065B60E1"
 			subtitle: "{quests.tfg_tips.get_milk.subtitle}"
 			tasks: [
@@ -684,7 +685,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gurman:ox_milk_bucket)item(tfc_gurman:sheep_milk_bucket)item(tfc_gurman:alpaca_milk_bucket))"
 						}
 					}
 					optional_task: true
@@ -827,6 +828,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.brine_something.desc}"]
+			icon: "tfc:bucket/brine"
 			id: "71393B553550EA42"
 			subtitle: "{quests.tfg_tips.brine_something.subtitle}"
 			tasks: [
@@ -890,6 +892,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.pickle_something.desc}"]
+			icon: "tfc:bucket/vinegar"
 			id: "060C84862C9BB9CE"
 			subtitle: "{quests.tfg_tips.pickle_something.subtitle}"
 			tasks: [
@@ -950,6 +953,7 @@
 			dependencies: ["52D944ADA884EFEF"]
 			description: ["{quests.tfg_tips.dry_fruit.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/drying"
+			icon: "firmalife:drying_mat"
 			id: "4417A395801DC4E5"
 			subtitle: "{quests.tfg_tips.dry_fruit.subtitle}"
 			tasks: [
@@ -995,6 +999,7 @@
 		{
 			dependencies: ["52290DFBF39F0D07"]
 			description: ["{quests.tfg_tips.salt_meat.desc}"]
+			icon: "tfc:powder/salt"
 			id: "01CB939598271EC4"
 			subtitle: "{quests.tfg_tips.salt_meat.subtitle}"
 			tasks: [
@@ -1042,6 +1047,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.smoke_meat.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/smoking"
+			icon: "tfc:wool_yarn"
 			id: "1FC019B45383695E"
 			subtitle: "{quests.tfg_tips.smoke_meat.subtitle}"
 			tasks: [
@@ -1091,6 +1097,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cook_meat.desc}"]
+			icon: "firmalife:cured_oven_top"
 			id: "5335969963D0A6CC"
 			subtitle: "{quests.tfg_tips.cook_meat.subtitle}"
 			tasks: [
@@ -1174,6 +1181,16 @@
 		{
 			dependencies: ["0FCB88A64D3FBF0F"]
 			description: ["{quests.tfg_tips.smoke_cheese.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 53316000L
+						traits: [ ]
+					}
+				}
+				id: "ad_astra:cheese"
+			}
 			id: "6FF80B0E333D2F14"
 			subtitle: "{quests.tfg_tips.smoke_cheese.subtitle}"
 			tasks: [

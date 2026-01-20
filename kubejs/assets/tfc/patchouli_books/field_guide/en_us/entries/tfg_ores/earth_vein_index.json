@@ -2638,7 +2638,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartzite",
+      "name": "Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -2864,7 +2864,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -2884,7 +2884,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Salt",
+      "name": "Halite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -3443,7 +3443,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Salt",
+      "name": "Halite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -3463,7 +3463,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
