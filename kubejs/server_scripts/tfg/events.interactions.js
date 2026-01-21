@@ -209,8 +209,12 @@ BlockEvents.rightClicked(event => {
 			if (rock.polished != null) {
 				// brick -> smooth
 				transformBlockWithTool(event, rock.bricks.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.mossy.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.cracked.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+				if (rock.bricks.mossy != null) {
+					transformBlockWithTool(event, rock.bricks.mossy.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+				}
+				if (rock.bricks.cracked != null) {
+					transformBlockWithTool(event, rock.bricks.cracked.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+				}
 			}
 		}
 		if (rock.cobble != null && rock.cobble.mossy) {

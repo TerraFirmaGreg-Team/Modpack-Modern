@@ -170,7 +170,7 @@ function registerTFGSandRecipes(event) {
 
 	event.recipes.gtceu.autoclave('tfg:quartz_sand_autoclave')
 		.itemInputs('gtceu:quartz_sand_dust')
-		.inputFluids(Fluid.of('minecraft:water', 250))
+		.inputFluids(Fluid.of('gtceu:distilled_water', 250))
 		.chancedOutput('gtceu:quartzite_gem', 4500, 0)
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.LV])

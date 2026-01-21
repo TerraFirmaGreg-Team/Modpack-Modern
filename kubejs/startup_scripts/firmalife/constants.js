@@ -38,7 +38,13 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:bucket/chocolate',
     'firmalife:bucket/fruity_fluid',
     'firmalife:bucket/metal/chromium',
-    'firmalife:bucket/metal/stainless_steel'
+    'firmalife:bucket/metal/stainless_steel',
+
+    // Unimplemented
+    'firmalife:food/frothy_coconut',
+    'firmalife:cinnamon_bark',
+    'firmalife:spice/cinnamon',
+    'firmalife:spice/ground_cinnamon'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [

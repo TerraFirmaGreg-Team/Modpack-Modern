@@ -121,7 +121,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 	], {
 		A: 'gtceu:hv_machine_hull',
 		B: 'tfg:machine_casing_aluminium_plated_steel',
-		C: '#gtceu:circuits/hv',
+		C: '#gtceu:circuits/ev',
 		D: 'gtceu:stainless_steel_small_fluid_pipe',
 		E: 'gtceu:hv_electric_pump',
 		F: 'gtceu:fluid_filter'

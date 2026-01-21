@@ -33,7 +33,9 @@
 	// Only run a backup if a player has been online since the last backup
 	"only_if_players_been_online": true,
 	// Additional directories to include in backup
-	"additional_directories": [],
+	"additional_directories": [
+		"xaero/minimap/"
+	],
 	/* Additional files and directories to include in backup.
 	   Can specify a file name, path relative to server directory or wildcard file path
 	   Examples:                       (All file paths are relative to server root)
@@ -44,7 +46,11 @@
 	   *path/ends/with.txt             Any files who's path ends with
 	   *path/contains*                 Any files who's path contains
 	*/
-	"additional_files": [],
+	"additional_files": [
+		"/cherishedworlds-favorites.dat",
+		"/emi.json",
+		"/options.txt"
+	],
 	// Display file size in backup message
 	"display_file_size": false,
 	// backup location

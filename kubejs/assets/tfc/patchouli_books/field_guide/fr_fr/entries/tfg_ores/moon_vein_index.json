@@ -511,7 +511,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartzite",
+      "name": "Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -894,7 +894,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
