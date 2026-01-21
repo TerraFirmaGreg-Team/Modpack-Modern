@@ -1,8 +1,12 @@
 # Changelog
 
 ## Unreleased
+### Important note
+- OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
 ### Changes
+- Fixed balancing issues with the Aquaponics Loop. @Redeix
 ### Bug fixes
+- Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
 ### Translation updates
 - Spanish @NikoNeko17
 
