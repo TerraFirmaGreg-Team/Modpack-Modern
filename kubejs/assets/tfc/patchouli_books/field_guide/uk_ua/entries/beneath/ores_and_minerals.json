@@ -50,26 +50,6 @@
 			"name": "Антрацит",
 			"text": "Антрацит — це потужне $(l:beneath/hellforge)паливо$(). Його можна знайти в Мігматиті у верхній половині Безодні.",
 			"enable_visualize": false
-		},
-		{
-			"type": "patchouli:multiblock",
-			"anchor": "sylvite",
-			"multiblock": {
-				"pattern": [
-					[
-						"X"
-					],
-					[
-						"0"
-					]
-				],
-				"mapping": {
-					"X": "beneath:ore/blackstone_sylvite"
-				}
-			},
-			"name": "Сильвін",
-			"text": "Сильвін — це добриво, яке можна знайти в Піроксеніті у нижній половині Безодні.",
-			"enable_visualize": false
 		}
 	],
 	"read_by_default": true

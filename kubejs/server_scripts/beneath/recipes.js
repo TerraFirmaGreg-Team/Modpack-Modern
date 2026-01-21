@@ -36,6 +36,7 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/wood/warped_lumber_log' })
 	event.remove({ id: 'beneath:crafting/wood/warped_lumber_planks' })
 	event.remove({ id: 'beneath:crafting/wood/warped_slab_undo' })
+	event.remove({ id: 'beneath:crafting/ancient_altar' })
 	
 	event.shaped('beneath:unposter', [
 		'ABA',

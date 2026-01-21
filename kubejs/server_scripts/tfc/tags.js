@@ -406,7 +406,6 @@ function registerTFCItemTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
-    event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 

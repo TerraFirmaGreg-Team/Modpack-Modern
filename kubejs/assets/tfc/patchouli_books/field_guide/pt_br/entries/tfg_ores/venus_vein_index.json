@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/30$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino",
+      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino",
       "title": "Enxofre e Pirita",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -86,14 +86,14 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/30$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino$(br2)Only appears in the $(thing)Salt Flats$() biome.",
+      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito, Traquito, Travertino$(br2)Only appears in the $(thing)Salt Flats$() biome.",
       "title": "Salts & Spodumene",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sal",
+      "name": "Halita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -113,7 +113,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sal-gema",
+      "name": "Silvita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -128,7 +128,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Cloro$(br)$(thing)Fórmula$(): KCl",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Cloro, Fertilizante$(br)$(thing)Fórmula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
