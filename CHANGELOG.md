@@ -3,10 +3,18 @@
 ## Unreleased
 ### Important note
 - OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
+### Breaking changes we forgot to write last time
+- Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work.
+#### Stone dusts and other rock-related changes
+- Individual stone dusts for each rock type have been removed, instead being replaced with more general dusts based on rock composition. The centrifuging recipes have also been removed, though we plan on using these for something else later.
+- Marble/chalk dust has been replaced with Carbonate Sedimentary dust in concrete-related recipes
+- The Moon Sand in the Regolith Vapor recipe has been replaced with Asurine Dust (renewable via Rock Breaker)
+- The Mars rock dusts in the Hexafluorosilic Acid recipe has been replaced with Ochrum Dust (renewable via Rock Breaker)
+- Other recipe and tag unifications for consistency, like all cobbles should landslide, all slabs should be craftable the same way, etc
 ### Changes
 - Fixed balancing issues with the Aquaponics Loop. @Redeix
 ### Bug fixes
-- Fixed a config bug causing waves to deposit shells with 100% chance. @Mqrius
+- Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
 ### Translation updates
 - Spanish @NikoNeko17
