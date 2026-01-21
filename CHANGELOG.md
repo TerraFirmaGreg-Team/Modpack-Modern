@@ -4,7 +4,7 @@
 ### Important note
 - OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
 ### Breaking changes we forgot to write last time
-- Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work.
+- Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work. Other than that, they should have their same stress numbers as before.
 #### Stone dusts and other rock-related changes
 - Individual stone dusts for each rock type have been removed, instead being replaced with more general dusts based on rock composition. The centrifuging recipes have also been removed, though we plan on using these for something else later.
 - Marble/chalk dust has been replaced with Carbonate Sedimentary dust in concrete-related recipes
@@ -16,6 +16,9 @@
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
+- Fixed not being able to make glass tubes out of glass dust (#2795) @thederpysockdude123
+- Fixed roads losing their movement speed bonus (#2790) @Pyritie
+- Fixed water wheels misbehaving again (#2791) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
 

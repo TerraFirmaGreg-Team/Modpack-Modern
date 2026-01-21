@@ -22,7 +22,7 @@
 		waterwheelBiomeSTRESSPenalty = 1.0
 
 	#Body of water requirement impact (similar to infinite fluid extraction from pulley)
-	[waterwheels."optimal condition"]
+	[waterwheels."power source condition"]
 		#When enabled waterwheels also work when under create's default conditions but at a penalty
 		waterwheelsPorqueNoLosDos = true
 		#Boost for Waterwheels placed on optimal conditions.
@@ -65,7 +65,7 @@
 	#The minimum amount of points that must hit windmillRequiredRange.
 	#Range: > 1
 	windmillRequiredRangePoints = 1
-	#The maximum distance a windmills can consider air blocks from.
+	#The maximum distance a windmill can consider air blocks from.
 	#Range: > 1
 	windmillMaxRange = 32
 	#The percentage of Generated Speed only given if windmills are raised enough.
