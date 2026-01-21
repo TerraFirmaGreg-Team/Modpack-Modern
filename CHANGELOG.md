@@ -6,6 +6,7 @@
 ### Changes
 - Fixed balancing issues with the Aquaponics Loop. @Redeix
 ### Bug fixes
+- Fixed a config bug causing waves to deposit shells with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
 ### Translation updates
 - Spanish @NikoNeko17
