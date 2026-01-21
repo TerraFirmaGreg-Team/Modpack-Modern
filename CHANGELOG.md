@@ -13,12 +13,14 @@
 - Other recipe and tag unifications for consistency, like all cobbles should landslide, all slabs should be craftable the same way, etc
 ### Changes
 - Fixed balancing issues with the Aquaponics Loop. @Redeix
+- Mars log electric greenhouse recipes now output the same amount of logs as earth log recipes @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
 - Fixed not being able to make glass tubes out of glass dust (#2795) @thederpysockdude123
 - Fixed roads losing their movement speed bonus (#2790) @Pyritie
 - Fixed water wheels misbehaving again (#2791) @Pyritie
+- Fixed not being able to cast steel or higher tier materials into ceramic molds (#2789, #2794) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
 

@@ -107,6 +107,13 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfg:charnia', 'betterend:charnia_light_blue')
 	event.add('tfg:charnia', 'betterend:charnia_purple')
 	event.add('tfg:charnia', 'betterend:charnia_red')
+
+	event.add('tfg:mars_plants', 'minecraft:weeping_vines')
+
+	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/crimson')
+	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/warped')
+	event.add('tfc:compost_greens_low', 'tfg:glacian_leaves')
+	event.add('tfc:compost_greens_low', '#tfg:mars_plants')
 }
 
 function registerTFGMarsBlockTags(event) {

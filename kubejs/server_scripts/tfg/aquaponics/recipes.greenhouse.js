@@ -504,22 +504,22 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	// Mars Wood
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/strophar', [
-		'64x ad_astra:strophar_stem', '4x tfg:saplings/strophar', '16x ad_astra:strophar_cap', '16x ad_astra:strophar_cap'
+		'64x ad_astra:strophar_stem', '4x tfg:saplings/strophar', '32x ad_astra:strophar_stem', '16x ad_astra:strophar_cap'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/aeronos', [
-		'64x ad_astra:aeronos_stem', '4x tfg:saplings/aeronos', '16x ad_astra:aeronos_cap', '16x ad_astra:aeronos_cap'
+		'64x ad_astra:aeronos_stem', '4x tfg:saplings/aeronos', '32x ad_astra:aeronos_stem', '16x ad_astra:aeronos_cap'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/glacian', [
-		'64x ad_astra:glacian_log', '4x tfg:saplings/glacian', '16x species:alphacene_moss_block', '16x species:alphacene_moss_block'
+		'64x ad_astra:glacian_log', '4x tfg:saplings/glacian', '32x ad_astra:glacian_log', '16x species:alphacene_moss_block'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/alphacene', [
 		'64x species:alphacene_mushroom_block', '4x tfg:saplings/alphacene', '16x minecraft:mushroom_stem', '16x minecraft:mushroom_stem'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/warped', [
-		'64x beneath:wood/log/warped', '4x tfg:saplings/warped', '16x minecraft:warped_wart_block', '16x minecraft:warped_wart_block'
+		'64x beneath:wood/log/warped', '4x tfg:saplings/warped', '32x beneath:wood/log/warped', '16x minecraft:warped_wart_block'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/crimson', [
-		'64x beneath:wood/log/crimson', '4x tfg:saplings/crimson', '16x minecraft:nether_wart_block', '16x minecraft:nether_wart_block'
+		'64x beneath:wood/log/crimson', '4x tfg:saplings/crimson', '32x beneath:wood/log/crimson', '16x minecraft:nether_wart_block'
 	], 1);
 
 	// Mars Plants
