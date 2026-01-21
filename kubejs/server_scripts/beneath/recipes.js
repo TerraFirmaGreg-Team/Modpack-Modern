@@ -48,14 +48,14 @@ const registerBeneathRecipes = (event) => {
 	}).id('beneath:crafting/unposter')
 
 	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
+		'minecraft:nether_bricks',
 		'minecraft:magma_cream',
 		'tfc:powder/sulfur',
 		'tfc:soot'
 	]).id('tfg:shapeless/hellbricks_from_soot')
 
 	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
+		'minecraft:nether_bricks',
 		'minecraft:magma_cream',
 		'tfc:powder/sulfur',
 		'tfc:powder/wood_ash'
