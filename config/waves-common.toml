@@ -25,7 +25,7 @@ waveSpawnDistanceFromShoreMin = 4.0
 waveSpriteCount = 5
 #How great should the chance for waves to deposit blocks be? Lower value = higher chance.
 #Range: > 1
-waveBlockDepositChance = 1
+waveBlockDepositChance = 1000
 #How often the waves should make a sound. Higher value = rarer.
 #Range: > 0
 waveBreakingSoundChance = 50

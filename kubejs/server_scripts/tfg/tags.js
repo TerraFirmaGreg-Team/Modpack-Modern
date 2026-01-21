@@ -4,7 +4,6 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
-	registerBlockInteractionItemTags(event)
 	registerTFGStoneItemTags(event)
 	registerTFGFoodItemTags(event);
 	registerTFGMedicineItemTags(event);
@@ -110,6 +109,7 @@ const registerTFGBlockTags = (event) => {
 
 	registerTFGPrimitiveBlockTags(event)
 	registerTFGFoodBlockTags(event)
+	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)

@@ -1,5 +1,45 @@
 {
 	"type": "minecraft:block",
-	"pools": [],
-	"random_sequence": "minecraft:blocks/fern"
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:large_fern",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"tag": "forge:shears"
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfc:straw",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"tag": "tfc:sharp_tools"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
 }

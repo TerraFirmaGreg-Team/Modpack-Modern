@@ -1,15 +1,30 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+### Translation updates
+- Spanish @NikoNeko17
+
+## [0.11.17] - 20-01-2026
+### Important note
+- Due to a config file error, the automatic hourly backup has not been running since 0.11.15. So before you update make sure to make a copy of your world in case anything goes wrong! This is generally good advice but extra important right now.
 ### Breaking changes
-- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also now only takes 20 seconds instead of 30. It also now actually outputs byproducts like it was supposed to. @Pyritie
-- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators @TomPlop
+- The steam thermal centrifuge now requires a maintenance hatch. It also now requires 480mB steam per tick instead of 64mb, equivalent to how much 8 LV thermal centrifuges would use. It also also now only takes 20 seconds instead of 30. It also also also now actually outputs byproducts like it was supposed to. @Pyritie
+- Single block steam generators are now more expensive to craft, so there isn't such a huge gap between steam, gas, and combustion generators. @TomPlop
+- A lot of backend code has been cleaned up and refactored, so there may be duplicate, missing, or incorrect recipes. If you find any, please report them in [our github](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues)! @Pyritie
+### Electric Greenhouse
+- The Electric Greenhouse multiblock has completely changed. It's significantly shorter and slightly narrower too. You can still grow the same things in it, but it no longer has Perfect Overclocking. Instead, it's stronger in LV but starts getting weaker in HV+. @Redeix
+- There's a new IV variant (Hydroponics Facility) which supports parallel hatches and can do any recipe on any planet. @Redeix
+- Added a new Pisciculture Fishery to mid HV which, when properly looped, will improve the Electric Greenhouse further than just fertiliser. It also breeds fish! @Redeix
+- Removed the single-block fishing machines
 ### Performance improvements
 - Fixed the huge amount of lag from looking at lots of interconnected trees @Mqrius
 - Fixed tree chopping also stripping nearby trees of all their leaves (note that this will only also apply to earth trees and newly generated Mars trees, old Mars trees will have the old behaviour) @Mqrius
 - Fixed tree chopping not working on trees that had no leaves @Mqrius
 - Fixed tree chopping working on player-placed logs (yes, this means you can't place logs to chop down many trees at once any more) @Mqrius
-- Fixed a huge amount of lag from TFC Ambiental @Mqrius
+- Fixed a huge amount of lag from TFC Ambiental checking for nearby hot/cold sources @Mqrius
+- Improved food stacking performance @Mqrius
 ### Changes
 - Added tree index field guide entries for Earth and Mars (#2638) @Jeuvke
 - Added drinkable effects field guide entry (#2676) @FlightingFalcon
@@ -36,9 +51,21 @@
 - Coke oven bricks now require mortar to craft @Pyritie
 - Glowstone can now be quickly broken with a pickaxe/mining hammer @Pyritie
 - Added some more knapping recipes for chalk items, improved the durability of others (#2753) @Pyritie
+- Red elk now drop bladders rarely, and have increased meat drops when killed with a butchery knife (#2778) @Pyritie
+- Vanilla ferns and large ferns now break into straw with a knife, so Beneath start is a bit less painful early on @Pyritie
+- Added shapeless pressure plate to button recipes (#2740) @Pyritie
+- Added some Beneath plants to the `#tfg:rubber_plants` tag (#2759) @Pyritie
+- Cleaned up hanging sign recipes so they don't spam as much (#2733, #2771) @Inceitious
+- Added recipes to change AE2 glass cables into covered/smart cables, and changed some recipes to require smart cables instead (#2756) @awfulworldkid
+- Crop, tree tap, and beehive tooltips, and the climate tab, now show the accurate current temperature when in an oxygenated area @Mqrius
+- Anthracite can now be used as boiler fuel with the same duration as Coke @Pyritie
+- Added more grain options for soup (#2785) @Pyritie
+- Added a mechanical mixer recipe for crafting sticky resin (#2693) @JeanRdSz
+- Framed blocks that have been made "glowing" by right-clicking them with glowstone dust, now only emit a little bit of light @Pyritie
 ### Bug fixes
 - Fixed not being able to craft Paracetamol or Rad-Away @Pyritie
 - Fixed the missing dried fruit to yeast starter recipe (#2673) @Mqrius
+- Fixed crash when disassembling a train with computercraft @Mqrius
 - Water wheels now spin the correct direction in rivers (#2450) @zehmaria
 - Water wheels now also work with flowing water from aqueducts, instead of requiring an adjacent source block @zehmaria
 - Added locometal to the domum ornamentum whitelist (#2651) @thederpysockdude123
@@ -55,8 +82,12 @@
 - Fixed casting of rods and gears for various metals @Pyritie
 - Fixed a dupe with scraping knives (#2716) @Inceitious
 - Fixed a rendering issue with the lunchboxes when held @Thomasx0
+- Fixed the lunchbox eating particles so now they look like the food being eaten @Thomasx0
 - Fixed the cooling lunchbox not stacking empty cells correctly (#2475) @Thomasx0
 - Fixed the lunchboxes not removing the "cooling" trait when items were removed with the number keys @Thomasx0
+- Digger helmet crafting now correctly consumes the cloth hat (#2770) @Inceitious
+- Fixed an exploit with the schematicannon @Mqrius
+- Fixed backup frequency config @Mqrius
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare + @Maxiffon

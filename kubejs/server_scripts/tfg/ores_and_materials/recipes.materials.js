@@ -206,7 +206,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	event.recipes.gtceu.forming_press(`tfg:${id}`)
 		.itemInputs(inputItem1, inputItem2, 'tfc:powder/flux')
 		.itemOutputs(outputItem)
-		.duration(material.getMass())
+		.duration(material.getMass() * 2)
 		.EUt(GTValues.VA[compactingTier]);
 }
 

@@ -348,19 +348,6 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//#endregion
-	//#region Sticky Resin by Vat
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/latex_to_sticky_resin');
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/conifer_pitch_to_sticky_resin');
-
-	//#endregion
 
 	//#region Better Sugar Water
 	event.recipes.firmalife.vat()
