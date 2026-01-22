@@ -68,7 +68,7 @@ function registerTFGQuartzRecipes(event) {
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfg:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
-		.notConsumable('gtceu:ball_casting_mold')
+		.notConsumable('tfg:lamp_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
@@ -76,7 +76,7 @@ function registerTFGQuartzRecipes(event) {
 
 	event.recipes.gtceu.alloy_smelter('tfg:jar_alloying_dust')
 		.itemInputs('#forge:dusts/glass')
-		.notConsumable('gtceu:ball_casting_mold')
+		.notConsumable('tfg:lamp_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
