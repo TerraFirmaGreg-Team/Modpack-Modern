@@ -15,6 +15,7 @@
 - Fixed balancing issues with the Aquaponics Loop. @Redeix
 - Mars log electric greenhouse recipes now output the same amount of logs as earth log recipes @Pyritie
 - Geodes (in newly generated chunks) are now completely solid so they won't cause cave-ins any more @Pyritie
+- Recolored the different oils so you can actually tell them apart visually @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
