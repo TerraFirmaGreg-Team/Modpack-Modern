@@ -255,7 +255,10 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_andesite_dust",
     "gtceu:tuff_dust",
     "gtceu:small_tuff_dust",
-    "gtceu:tiny_tuff_dust"
+    "gtceu:tiny_tuff_dust",
+    "gtceu:endstone_dust",
+    "gtceu:small_endstone_dust",
+    "gtceu:tiny_endstone_dust"
 ]);
 //#endregion
 

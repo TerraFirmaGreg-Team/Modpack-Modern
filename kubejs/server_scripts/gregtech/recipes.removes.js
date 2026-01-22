@@ -835,6 +835,16 @@ function removeGTCEURecipes(event) {
 	// Remove Netherrack dust centrifuging
 
 	event.remove({ id: 'gtceu:centrifuge/netherrack_separation' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__granite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__diorite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__andesite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__deepslate' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blackstone' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__endstone' })
+
+	removeMaceratorRecipe(event, 'macerate_end_stone');
+	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
+	removeMaceratorRecipe(event, 'macerate_end_stone_brick_wall');
 
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
