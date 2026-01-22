@@ -832,6 +832,10 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
 
+	// Remove Netherrack dust centrifuging
+
+	event.remove({ id: 'gtceu:centrifuge/netherrack_separation' })
+
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
 		'bamboo',
