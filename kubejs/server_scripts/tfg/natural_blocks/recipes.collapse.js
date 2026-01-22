@@ -6,15 +6,32 @@
  */
 function registerTFGCollapseRecipes(event) {
 	
+	const SHAPES = ['stair', 'slab', 'wall'];
+
 	// Rocks
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 
 		if (rock.cobble != null) {
-			if (rock.raw != null) {
+			if (rock.raw != null && rock.collapsible) {
 				event.recipes.tfc.collapse(rock.cobble.block, rock.raw.block);
+
+				SHAPES.forEach(shape => {
+					if (rock.raw[shape] != null) {
+						event.recipes.tfc.collapse(rock.cobble[shape], rock.raw[shape]);
+					}
+				})
 			}
 			if (rock.hardened != null) {
 				event.recipes.tfc.collapse(rock.cobble.block, rock.hardened);
+			}
+			if (rock.polished != null && rock.collapsible) {
+				event.recipes.tfc.collapse(rock.cobble.block, rock.polished.block);
+
+				SHAPES.forEach(shape => {
+					if (rock.polished[shape] != null) {
+						event.recipes.tfc.collapse(rock.cobble[shape], rock.polished[shape]);
+					}
+				})
 			}
 
 			event.recipes.tfc.collapse(rock.cobble.block, `#forge:ores_in_ground/${rockId}`)
@@ -36,7 +53,7 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
 
 	// Nether
-	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')			
+	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')
 	event.recipes.tfc.landslide('tfg:ash_pile', 'tfg:ash_pile')
 
 	// Space
