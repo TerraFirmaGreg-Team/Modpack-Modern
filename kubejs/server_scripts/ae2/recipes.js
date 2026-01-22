@@ -1874,15 +1874,15 @@ const registerAE2Recipes = (event) => {
 
 	// Quartz Glass
 	event.recipes.gtceu.alloy_smelter('ae2:quartz_glass')
-		.itemInputs('5x #forge:dusts/certus_quartz', '4x #forge:glass')
-		.itemOutputs('4x ae2:quartz_glass')
+		.itemInputs('#forge:glass', '#forge:dusts/certus_quartz')
+		.itemOutputs('ae2:quartz_glass')
 		.duration(20)
 		.EUt(120)
 		.addMaterialInfo(true)
 
 	// Vibrant Quartz Glass
 	event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
-		.itemInputs('ae2:quartz_glass', '8x #forge:dusts/glowstone')
+		.itemInputs('ae2:quartz_glass', '#forge:dusts/glowstone')
 		.itemOutputs('ae2:quartz_vibrant_glass')
 		.duration(20)
 		.EUt(480)

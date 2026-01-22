@@ -186,7 +186,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
-		.itemInputs('minecraft:glass', 'tfc:powder/amethyst')
+		.itemInputs('#forge:glass', '4x tfc:powder/amethyst')
 		.itemOutputs('minecraft:tinted_glass')
 		.duration(260)
 		.EUt(16)

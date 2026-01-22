@@ -474,9 +474,10 @@ function removeGTCEURecipes(event) {
 
 	//#endregion
 
-		//#region Выход: Слиток камня
+	//#region Выход: Слиток камня
 
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot' })
+	event.remove({ id: 'gtceu:alloy_smelter/tinted_glass' })
 
 	//#endregion
 
