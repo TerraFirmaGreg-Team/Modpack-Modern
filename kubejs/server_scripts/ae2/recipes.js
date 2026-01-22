@@ -25,7 +25,7 @@ const registerAE2Recipes = (event) => {
 		'BA ',
 		'CCB',
 	], {
-		A: '#forge:rods',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/steel',
 		C: '#forge:exquisite_gems/certus_quartz',
 	}).id('tfg:crafting/certus_quartz_cutting_knife')
@@ -35,7 +35,7 @@ const registerAE2Recipes = (event) => {
 		'BA ',
 		'CCB',
 	], {
-		A: '#forge:rods',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/steel',
 		C: '#forge:exquisite_gems/nether_quartz',
 	}).id('tfg:crafting/nether_quartz_cutting_knife')
