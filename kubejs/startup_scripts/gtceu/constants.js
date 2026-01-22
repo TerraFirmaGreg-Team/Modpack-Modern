@@ -252,7 +252,10 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_deepslate_dust",
     "gtceu:andesite_dust",
     "gtceu:small_andesite_dust",
-    "gtceu:tiny_andesite_dust"
+    "gtceu:tiny_andesite_dust",
+    "gtceu:tuff_dust",
+    "gtceu:small_tuff_dust",
+    "gtceu:tiny_tuff_dust"
 ]);
 //#endregion
 
