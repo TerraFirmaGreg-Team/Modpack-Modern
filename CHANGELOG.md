@@ -16,6 +16,8 @@
 - Mars log electric greenhouse recipes now output the same amount of logs as earth log recipes @Pyritie
 - Geodes (in newly generated chunks) are now completely solid so they won't cause cave-ins any more @Pyritie
 - Recolored the different oils so you can actually tell them apart visually @Pyritie
+- The food meter's saturation level is now indicated by a gold outline instead of a red one, so it's less difficult to see (#2812) @TreyR9
+- Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
@@ -23,8 +25,14 @@
 - Fixed roads losing their movement speed bonus (#2790) @Pyritie
 - Fixed water wheels misbehaving again (#2791) @Pyritie
 - Fixed not being able to cast steel or higher tier materials into ceramic molds (#2789, #2794) @Pyritie
+- Fixed the Ad Astra airlock not counting as a cleanroom door (#2808) @thederpysockdude123
+- Removed some leftover rock dust centrifuge recipes (#2804) @thederpysockdude123
+- Fixed some mars plants self-destructing @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
+- Russian @Petr211071
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
 
 ## [0.11.17] - 20-01-2026
 ### Important note
