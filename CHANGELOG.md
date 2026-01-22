@@ -18,6 +18,7 @@
 - Recolored the different oils so you can actually tell them apart visually @Pyritie
 - The food meter's saturation level is now indicated by a gold outline instead of a red one, so it's less difficult to see (#2812) @TreyR9
 - Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
+- Buffed ore washing and ore maceration recipes so at least they aren't so awful compared to Greate's methods @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix

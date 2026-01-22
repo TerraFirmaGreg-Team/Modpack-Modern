@@ -1008,6 +1008,7 @@
 				"4AD686D18247315E"
 				"72BD27FEEB34C7B0"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_t1.desc}"]
 			icon_scale: 2.0d
 			id: "3FBDC8552F7D8008"
