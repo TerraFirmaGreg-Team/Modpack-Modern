@@ -1,8 +1,9 @@
 # Changelog
 
 ## Unreleased
-### Important note
+### Important notes
 - OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
+- The Saltpeter chemical reactor recipe is now on circuit 2, to avoid a conflict with Nitrous Oxide (#2826) @Pyritie
 ### Breaking changes we forgot to write last time
 - Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work. Other than that, they should have their same stress numbers as before.
 #### Stone dusts and other rock-related changes
@@ -19,6 +20,7 @@
 - The food meter's saturation level is now indicated by a gold outline instead of a red one, so it's less difficult to see (#2812) @TreyR9
 - Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
 - Buffed ore washing and ore maceration recipes so at least they aren't so awful compared to Greate's methods @Pyritie
+- Added TFG's crops to the field guide's Wild Crops entry @Petr211071
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
@@ -29,6 +31,8 @@
 - Fixed the Ad Astra airlock not counting as a cleanroom door (#2808) @thederpysockdude123
 - Removed some leftover rock dust centrifuge recipes (#2804) @thederpysockdude123
 - Fixed some mars plants self-destructing @Pyritie
+- Fixed mossy cobblestone not collapsing @Pyritie
+- Fixed welding not preserving forging bonuses (#2827) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
 - Russian @Petr211071

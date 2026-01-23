@@ -1,6 +1,8 @@
 {
 	"ingredient": "firmalife:dessert_wine",
-	"thirst": 15,
+	"thirst": 10,
+	"intoxication": 4000,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "species:iron_will",

@@ -772,7 +772,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	// Thermal Vent Deposit
 	"sulphuric_rock": {
-		material: 'tfg:igneous_mafic',
+		material: 'tfg:sedimentary_organic',
 		collapsible: false,
 		isTFC: false,
 		sound: 'dripstone_block',
