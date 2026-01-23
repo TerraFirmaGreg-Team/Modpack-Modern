@@ -308,9 +308,9 @@ function registerTFGArtisanTableRecipes(event) {
 			"X X XX",
 			" XXX  ",
 			"X  X X",
-			"X X  X",
-			"  X XX",
-			"XX  XX"
+			"X X XX",
+			" XX XX",
+			"XX XXX"
 		],
 		"artisanType": "tfg:resin_board",
 		"type": "tfg:artisan"	
