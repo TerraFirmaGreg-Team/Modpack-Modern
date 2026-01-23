@@ -135,10 +135,14 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	if (tfcProperty !== null 
+	// Check if the material is a "castable" material (i.e., pre-iron), OR if this is for the ingot mold,
+	// which is an exception that everything can cast into
+	const canBeCasted = material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) || tagPrefixName === 'ingot';
+	if (canBeCasted
+		&& tfcProperty !== null 
 		&& ceramicMold !== null
-		&& material !== GTMaterials.WroughtIron
-		&& material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED))
+		// Liquid wrought iron doesn't exist in the TFC era
+		&& material !== GTMaterials.WroughtIron)
 	{
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
@@ -191,7 +195,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 
 	if (tfcProperty !== null) {
 
-		event.recipes.tfc.welding(outputItem, inputItem1, inputItem2, tfcProperty.getTier() - 1)
+		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyForgingBonus().copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
 			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;

@@ -72,8 +72,8 @@
 	quest_links: [{
 		id: "6845144F7EA1081D"
 		linked_quest: "24158DEE63DAEB41"
-		x: 5.0d
-		y: -4.5d
+		x: 6.0d
+		y: -3.5d
 	}]
 	quests: [
 		{
@@ -362,6 +362,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.ae2.cables.title}"
 			x: 0.5d
 			y: -6.0d
 		}
@@ -400,7 +401,7 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -412,7 +413,7 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -6.5d
 		}
 		{
@@ -431,7 +432,8 @@
 				title: "{quests.ae2.crafting_storage.task}"
 				type: "item"
 			}]
-			x: -2.5d
+			title: "{quests.ae2.crafting_storage.title}"
+			x: -3.5d
 			y: -5.5d
 		}
 		{
@@ -452,6 +454,7 @@
 				title: "{quests.ae2.pattern_provider.task}"
 				type: "item"
 			}]
+			title: "{quests.ae2.pattern_provider.title}"
 			x: 0.5d
 			y: -9.0d
 		}
@@ -507,7 +510,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: -6.0d
 		}
 		{
@@ -526,7 +529,8 @@
 				title: "{quests.ae2.export_bus.task}"
 				type: "item"
 			}]
-			x: 3.5d
+			title: "{quests.ae2.export_bus.title}"
+			x: 5.0d
 			y: -7.0d
 		}
 		{
@@ -653,7 +657,7 @@
 				item: "ae2:import_bus"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -5.0d
 		}
 		{
@@ -680,7 +684,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -693,7 +697,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.ae2.interface_automation.title}"
-			x: 5.0d
+			x: 6.5d
 			y: -6.0d
 		}
 		{
@@ -1094,6 +1098,7 @@
 				{
 					id: "270F842BF5012A13"
 					item: "ae2:io_port"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1282,6 +1287,21 @@
 			title: "{quests.ae2.universal_circuits.title}"
 			x: -2.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["25007C5E43D28DB2"]
+			description: ["{quests.ae2.stock_bridge.desc}"]
+			id: "0E54B3BCBBA34A00"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "1F8D81C524CE694A"
+				item: "createstockbridge:ae_bridge"
+				type: "item"
+			}]
+			title: "{quests.ae2.stock_bridge.title}"
+			x: 5.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

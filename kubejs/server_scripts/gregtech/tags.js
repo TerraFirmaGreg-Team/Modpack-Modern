@@ -91,6 +91,7 @@ function registerGTCEUBlockTags(event) {
     event.add("gtceu:cleanroom_doors", "ad_astra:desh_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:ostrum_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:calorite_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:airlock");
 
     // Groups up concrete blocks into tags.
     Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {

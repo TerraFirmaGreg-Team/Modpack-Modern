@@ -330,19 +330,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Растение",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Температура (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Осадки (мм)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Ячмень"
         },
         {
           "text": " -8 - 26"
@@ -351,7 +351,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Овёс"
         },
         {
           "text": "  3 - 40"
@@ -360,7 +360,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Рожь"
         },
         {
           "text": "-11 - 30"
@@ -369,7 +369,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Кукуруза"
         },
         {
           "text": " 13 - 40"
@@ -378,7 +378,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Пщеница"
         },
         {
           "text": " -4 - 35"
@@ -387,7 +387,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Рис"
         },
         {
           "text": " 15 - 30"
@@ -396,7 +396,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Beet"
+          "text": "Свёкла"
         },
         {
           "text": " -5 - 20"
@@ -405,7 +405,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Капуста"
         },
         {
           "text": "-10 - 27"
@@ -414,7 +414,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Морковь"
         },
         {
           "text": "  3 - 30"
@@ -423,7 +423,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Чеснок"
         },
         {
           "text": "-20 - 18"
@@ -432,7 +432,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Горох"
         },
         {
           "text": "  2 - 35"
@@ -441,7 +441,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "Арбуз"
         },
         {
           "text": "  5 - 37"
@@ -469,19 +469,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Растение",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Температура (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Осадки (мм)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Картошка"
         },
         {
           "text": " -1 - 37"
@@ -490,7 +490,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Тыква"
         },
         {
           "text": "  0 - 30"
@@ -499,7 +499,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Лук"
         },
         {
           "text": "  0 - 30"
@@ -508,7 +508,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "Соевые бобы"
         },
         {
           "text": "  8 - 30"
@@ -517,7 +517,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "Кабачок"
         },
         {
           "text": "  5 - 33"
@@ -526,7 +526,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Сахарный тростник"
         },
         {
           "text": " 12 - 38"
@@ -535,7 +535,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Помидор"
         },
         {
           "text": "  0 - 36"
@@ -544,7 +544,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Jute"
+          "text": "Джут"
         },
         {
           "text": "  5 - 37"
@@ -553,7 +553,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Papyrus"
+          "text": "Папирус"
         },
         {
           "text": " 19 - 37"
@@ -562,7 +562,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "Красный перец"
         },
         {
           "text": " 16 - 30"
@@ -571,13 +571,71 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "Жёлтый перец"
         },
         {
           "text": " 16 - 30"
         },
         {
           "text": "190 - 400"
+        },
+        {
+          "text": "Подсолнух"
+        },
+        {
+          "text": "  5 - 40"
+        },
+        {
+          "text": "100 - 450"
+        }
+      ],
+      "text": "",
+      "title": "Требования к диким культурам",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+{
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Растение",
+          "bold": true
+        },
+        {
+          "text": "Температура (°C)",
+          "bold": true
+        },
+        {
+          "text": "Осадки (мм)",
+          "bold": true
+        },
+        {
+          "text": "Канола"
+        },
+        {
+          "text": " -5 - 25"
+        },
+        {
+          "text": " 50 - 350"
+        },
+        {
+          "text": "Лён"
+        },
+        {
+          "text": " -8 - 25"
+        },
+        {
+          "text": "175 - 475"
         }
       ],
       "text": "",

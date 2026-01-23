@@ -282,37 +282,52 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:rock/raw', rock.raw.block)
 			event.add('minecraft:mineable/pickaxe', rock.raw.block)
 			event.add('tfc:can_carve', rock.raw.block)
-			// Collapse tags also require a collapse recipe to work.
-			// Don't add the recipe if you don't want them to actually collapse!
-			event.add('tfc:can_collapse', rock.raw.block)
-			event.add('tfc:can_trigger_collapse', rock.raw.block)
-			event.add('tfc:can_start_collapse', rock.raw.block)
 			event.add('tfc:powderkeg_breaking_blocks', rock.raw.block)
 			event.add('tfc:bloomery_insulation', rock.raw.block)
 			event.add('firmalife:oven_insulation', rock.raw.block)
 			event.add('tfc:forge_insulation', rock.raw.block)
 
+			if (rock.collapsible && rock.cobble != null) {
+				// Collapse tags also require a collapse recipe to work.
+				// Don't add the recipe if you don't want them to actually collapse!
+				event.add('tfc:can_collapse', rock.raw.block)
+				event.add('tfc:can_trigger_collapse', rock.raw.block)
+				event.add('tfc:can_start_collapse', rock.raw.block)
+			}
+
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
 					event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
+					
+					if (rock.collapsible && rock.cobble != null) {
+						event.add('tfc:can_collapse', rock.raw[shape])
+						event.add('tfc:can_trigger_collapse', rock.raw[shape])
+						event.add('tfc:can_start_collapse', rock.raw[shape])
+					}
 				}
 			})
 		}
 
 		if (rock.hardened != null) {
 			event.add('minecraft:mineable/pickaxe', rock.hardened)
-			event.add('tfc:can_collapse', rock.hardened)
-			event.add('tfc:can_trigger_collapse', rock.hardened)
 			event.add('tfc:powderkeg_breaking_blocks', rock.hardened)
 			event.add('tfc:bloomery_insulation', rock.hardened)
 			event.add('firmalife:oven_insulation', rock.hardened)
 			event.add('tfc:forge_insulation', rock.hardened)
 			event.add('tfc:can_carve', rock.hardened)
+			// hardened stone always collapses, but never starts them
+			event.add('tfc:can_collapse', rock.hardened)
+			event.add('tfc:can_trigger_collapse', rock.hardened)
 		}
 
 		if (rock.cobble != null) {
 			event.add('tfc:can_landslide', rock.cobble.block)
 			event.add('forge:cobblestone', rock.cobble.block)
+
+			if (rock.cobble.mossy != null) {
+				event.add('tfc:can_landslide', rock.cobble.mossy.block)
+				event.add('forge:cobblestone', rock.cobble.mossy.block)
+			}
 		}
 		
 		if (rock.gravel != null) {
@@ -324,9 +339,21 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:forge_insulation', rock.polished.block);
 			event.add('firmalife:oven_insulation', rock.polished.block);
 
+			if (rock.collapsible && rock.cobble != null) {
+				event.add('tfc:can_collapse', rock.polished.block)
+				event.add('tfc:can_trigger_collapse', rock.polished.block)
+				event.add('tfc:can_start_collapse', rock.polished.block)
+			}
+
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {
 					event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
+
+					if (rock.collapsible && rock.cobble != null) {
+						event.add('tfc:can_collapse', rock.polished[shape])
+						event.add('tfc:can_trigger_collapse', rock.polished[shape])
+						event.add('tfc:can_start_collapse', rock.polished[shape])
+					}
 				}
 			})
 		}

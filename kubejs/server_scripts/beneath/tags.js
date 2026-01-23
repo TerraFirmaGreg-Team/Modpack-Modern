@@ -8,9 +8,7 @@ const registerBeneathItemTags = (event) => {
 	})
 
 	event.add("forge:raw_materials/cursecoal", "beneath:cursecoal")
-	event.add("forge:raw_materials/sylvite", "tfc:ores/sylvite")
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
-	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
 
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
@@ -30,10 +28,14 @@ const registerBeneathItemTags = (event) => {
 
 	event.add('tfg:softwood', 'beneath:wood/log/crimson')
 	event.add('tfg:softwood', 'beneath:wood/wood/crimson')
+	event.add('tfg:softwood', 'beneath:wood/stripped_log/crimson')
+	event.add('tfg:softwood', 'beneath:wood/stripped_wood/crimson')
 	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_log/crimson')
 	event.add('tfg:stripped_softwood', 'beneath:wood/stripped_wood/crimson')
 	event.add('tfg:hardwood', 'beneath:wood/log/warped')
 	event.add('tfg:hardwood', 'beneath:wood/wood/warped')
+	event.add('tfg:hardwood', 'beneath:wood/stripped_log/warped')
+	event.add('tfg:hardwood', 'beneath:wood/stripped_wood/warped')
 	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_log/warped')
 	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_wood/warped')
 
@@ -51,7 +53,6 @@ const registerBeneathBlockTags = (event) => {
 
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
-	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
 	event.add('beneath:mushrooms', 'minecraft:red_mushroom')
 	event.add('beneath:mushrooms', 'minecraft:brown_mushroom')
 	event.add('beneath:poisonous_mushrooms', 'minecraft:red_mushroom')

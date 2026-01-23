@@ -36,6 +36,7 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/wood/warped_lumber_log' })
 	event.remove({ id: 'beneath:crafting/wood/warped_lumber_planks' })
 	event.remove({ id: 'beneath:crafting/wood/warped_slab_undo' })
+	event.remove({ id: 'beneath:crafting/ancient_altar' })
 	
 	event.shaped('beneath:unposter', [
 		'ABA',
@@ -48,14 +49,14 @@ const registerBeneathRecipes = (event) => {
 	}).id('beneath:crafting/unposter')
 
 	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
+		'minecraft:nether_bricks',
 		'minecraft:magma_cream',
 		'tfc:powder/sulfur',
 		'tfc:soot'
 	]).id('tfg:shapeless/hellbricks_from_soot')
 
 	event.shapeless('beneath:hellbricks', [
-		'#forge:stone_bricks',
+		'minecraft:nether_bricks',
 		'minecraft:magma_cream',
 		'tfc:powder/sulfur',
 		'tfc:powder/wood_ash'

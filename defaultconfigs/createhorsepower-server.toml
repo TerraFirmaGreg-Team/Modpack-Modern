@@ -3,13 +3,13 @@
 creatureRPMRange = 16
 #How much stress small creatures can produce for the horse crank.
 #Range: > 1
-smallCreatureStressRange = 8
+smallCreatureStressRange = 16
 #How much stress medium creatures can produce for the horse crank.
 #Range: > 1
-mediumCreatureStressRange = 12
+mediumCreatureStressRange = 24
 #How much stress large creatures can produce for the horse crank.
 #Range: > 1
-largeCreatureStressRange = 16
+largeCreatureStressRange = 32
 #The multiplier for "Poor" paths
 #Range: 0.0 ~ 1.7976931348623157E308
 poorMultiplier = 0.5

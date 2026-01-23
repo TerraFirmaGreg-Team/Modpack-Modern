@@ -252,7 +252,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_deepslate_dust",
     "gtceu:andesite_dust",
     "gtceu:small_andesite_dust",
-    "gtceu:tiny_andesite_dust"
+    "gtceu:tiny_andesite_dust",
+    "gtceu:tuff_dust",
+    "gtceu:small_tuff_dust",
+    "gtceu:tiny_tuff_dust",
+    "gtceu:endstone_dust",
+    "gtceu:small_endstone_dust",
+    "gtceu:tiny_endstone_dust"
 ]);
 //#endregion
 
@@ -432,7 +438,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
 
     { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
-    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 }
+    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
+
+    { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 }
 ]);
 //#endregion
 
