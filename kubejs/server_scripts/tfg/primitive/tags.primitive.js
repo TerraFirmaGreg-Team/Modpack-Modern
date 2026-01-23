@@ -74,16 +74,16 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('forge:string', 'firmalife:pineapple_yarn')
 
 	// Artisan Table
-	event.add('tfg:smithing_table_input', 'gtceu:empty_mold')
-	event.add('tfg:smithing_table_input', 'gtceu:resin_circuit_board')
-	event.add('tfg:smithing_table_input', 'gtceu:copper_single_wire')
-	event.add('tfg:smithing_table_input', 'gtceu:phenolic_circuit_board')
-	event.add('tfg:smithing_table_input', 'gtceu:silver_single_wire')
-	event.add('tfg:smithing_tools', '#forge:tools/hammers')
-	event.add('tfg:smithing_tools', '#forge:tools/mallets')
-	event.add('tfg:smithing_tools', '#forge:tools/files')
-	event.add('tfg:smithing_tools', '#forge:tools/wire_cutters')
-	event.add('tfg:smithing_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_input', 'gtceu:empty_mold')
+	event.add('tfg:artisan_table_input', 'gtceu:resin_circuit_board')
+	event.add('tfg:artisan_table_input', 'gtceu:copper_single_wire')
+	event.add('tfg:artisan_table_input', 'gtceu:phenolic_circuit_board')
+	event.add('tfg:artisan_table_input', 'gtceu:silver_single_wire')
+	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
+	event.add('tfg:artisan_table_tools', '#forge:tools/files')
+	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
+	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
 }
 
 function registerTFGPrimitiveBlockTags(event) {
