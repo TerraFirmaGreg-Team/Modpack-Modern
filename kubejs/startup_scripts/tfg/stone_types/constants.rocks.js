@@ -449,6 +449,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"crackrack": generateMissing('crackrack', {
 		material: 'tfg:igneous_intermediate',
 		tfcTag: 'tfc:igneous_extrusive_items',
+		stonecutterTag: 'tfg:stone_types/keratophyre',
 		gravelTag: 'tfc:pink_gravel',
 		sound: 'netherrack',
 		mapColor: 'crimson_stem',
@@ -601,6 +602,25 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			slab: 'minecraft:purpur_slab'
 		},
 		pillar: 'minecraft:purpur_pillar'
+	},
+	"fluix": {
+		isTFC: false,
+		collapsible: false,
+		raw: generateFormsExisting('fluix', 'ae2:%s', { block: 'ae2:fluix_block' })
+	},
+	"certus": {
+		isTFC: false,
+		collapsible: false,
+		stonecutterTag: 'tfg:stone_types/certus',
+		raw: { block: 'gtceu:certus_quartz_block' },
+		polished: generateFormsExisting('quartz', 'ae2:%s', { block: 'ae2:quartz_block' }),
+		stonecutting: [
+			generateFormsExisting('quartz', 'ae2:cut_%s', { block: 'ae2:cut_quartz_block' }),
+			generateFormsExisting('quartz', 'ae2:smooth_%s', { block: 'ae2:smooth_quartz_block' }),
+			generateFormsExisting('quartz', 'ae2:%s_brick', { block: 'ae2:quartz_bricks' }),
+			generateForms('quartz', 'ae2:%s_pillar'),
+			generateFormsExisting('quartz', 'ae2:chiseled_%s', { block: 'ae2:chiseled_quartz_block' }),
+		]
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////

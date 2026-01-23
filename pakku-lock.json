@@ -3963,6 +3963,76 @@
             ]
         },
         {
+            "pakku_id": "Dzg6pHg5yCqd3AP6",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "create-stock-bridge",
+                "modrinth": "create-stock-bridge"
+            },
+            "name": {
+                "curseforge": "Create Stock Bridge",
+                "modrinth": "Create Stock Bridge"
+            },
+            "id": {
+                "curseforge": "1256341",
+                "modrinth": "V7mbOBO4"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createstockbridge-1.20-0.1.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6784/442/createstockbridge-1.20-0.1.5.jar",
+                    "id": "6784442",
+                    "parent_id": "1256341",
+                    "hashes": {
+                        "sha1": "0fa15f11788e3bc3a812fc597ade17af33888952",
+                        "md5": "1359e31326732aac28d21ded5371a9ef"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "328085"
+                    ],
+                    "size": 170122,
+                    "date_published": "2025-07-18T17:47:38.837Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "createstockbridge-1.20-0.1.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/V7mbOBO4/versions/rzBecedb/createstockbridge-1.20-0.1.5.jar",
+                    "id": "rzBecedb",
+                    "parent_id": "V7mbOBO4",
+                    "hashes": {
+                        "sha512": "ff39b4dd4a024dcb8018bde41d0f77a9321be9b9c6314eb7ea2d5070876d735fc72c0d46b1b27db75fa099062a8f95eb9d860396dd6e9dbc8aae7018a651cd51",
+                        "sha1": "0fa15f11788e3bc3a812fc597ade17af33888952"
+                    },
+                    "required_dependencies": [
+                        "XxWD5pD3",
+                        "LNytGWDc"
+                    ],
+                    "size": 170122,
+                    "date_published": "2025-07-18T17:47:40.706650Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Fu7EpxmtyqTkOiMR",
             "type": "MOD",
             "side": "BOTH",
