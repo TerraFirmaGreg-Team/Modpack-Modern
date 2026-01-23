@@ -186,7 +186,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
-		.itemInputs('minecraft:glass', 'tfc:powder/amethyst')
+		.itemInputs('#forge:glass', '4x tfc:powder/amethyst')
 		.itemOutputs('minecraft:tinted_glass')
 		.duration(260)
 		.EUt(16)
@@ -479,7 +479,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Ведро, buckets
 
-	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+	event.recipes.tfc.welding(TFC.isp.of('minecraft:bucket').copyForgingBonus(), 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
 
 	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 'tfc:powder/flux'])

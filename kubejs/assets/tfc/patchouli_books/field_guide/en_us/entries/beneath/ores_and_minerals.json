@@ -44,26 +44,6 @@
 			"name": "Anthracite",
 			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It can be found in Migmatite in the upper half of the Beneath.",
 			"enable_visualize": false
-		},
-		{
-			"type": "patchouli:multiblock",
-			"anchor": "sylvite",
-			"multiblock": {
-				"pattern": [
-					[
-						"X"
-					],
-					[
-						"0"
-					]
-				],
-				"mapping": {
-					"X": "beneath:ore/blackstone_sylvite"
-				}
-			},
-			"name": "Sylvite",
-			"text": "Sylvite is a fertiliser that can be found in Pyroxenite in the lower half of the Beneath.",
-			"enable_visualize": false
 		}
 	],
 	"read_by_default": true
