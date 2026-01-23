@@ -77,6 +77,8 @@ function registerTFGMarsOstrumRecipes(event) {
 			.dimension('ad_astra:mars')
 			.duration(20 * 5)
 			.EUt(GTValues.VA[GTValues.EV]);
+
+	//#region Light Ostrum Vapor
 	
 		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t1')
 			.perTick(true)
@@ -89,10 +91,10 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_tricalcium_phosphate'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 5)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(0, 500))	
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))	
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
-			.EUt(GTValues.VA[GTValues.IV])
+			.EUt(GTValues.VA[GTValues.EV])
 			.circuit(1);
 	
 		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t2')
@@ -109,10 +111,10 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 3)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 3)
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_pitchblende'), 1, 10)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(1, 1))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
-			.EUt(GTValues.VA[GTValues.IV])
+			.EUt(GTValues.VA[GTValues.EV])
 			.circuit(2);
 	
 		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lightweight_ostrum_vapor_t3')
@@ -130,12 +132,90 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 5)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 5)
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_pitchblende'), 10, 20)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 1000))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))
+			.dimension('ad_astra:mars')
+			.duration(20 * 120)
+			.EUt(GTValues.VA[GTValues.EV])
+			.circuit(3);
+
+	//#endregion
+
+	//#region Ostrum Vapor
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:polyalkylene_lubricant')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:ostrum_vapor', 1000))
+			.inputFluids(Fluid.of('gtceu:ethylene', 1000))
+			.inputFluids(Fluid.of('gtceu:lubricant', 1000))
+			.outputFluids(Fluid.of('tfg:polyalkylene_lubricant', 1000))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 1500))
+			.dimension('ad_astra:mars')
+			.duration(20 * 150)
+			.EUt(GTValues.VA[GTValues.IV])
+			//.circuit(3);
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:caesium_137')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:ostrum_vapor', 1000))
+			.inputFluids(Fluid.of('gtceu:radon', 1000))
+			.itemInputs(Item.of('gtceu:caesium_dust', 64))
+			.itemOutputs(Item.of('#forge:dusts/caesium_137'))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 1500))
+			.dimension('ad_astra:mars')
+			.duration(20 * 150)
+			.EUt(GTValues.VA[GTValues.IV])
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:terrafirmaguard_pa6')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:ostrum_vapor', 1000))
+			.itemInputs(Item.of('tfg:polycaprolactam_fabric', 64))
+			.itemInputs(Item.of('tfg:refrigerant_pellet', 8))
+			.itemInputs(Item.of('gtceu:iodine_dust', 1))
+			.itemOutputs(Item.of('tfg:terrafirmaguard_pa6', 8))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 100))
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
 			.EUt(GTValues.VA[GTValues.IV])
-			.circuit(3);
 	
 	//#endregion
+
+	//#region Dense Ostrum Vapor
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:radioactive_effluent')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000))
+			.itemInputs(Item.of('#forge:dusts/caesium_137', 1))
+			.itemInputs(Item.of('gtceu:cobalt_dust', 8))
+			.outputFluids(Fluid.of('minecraft:water', 512))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(500, 1600))
+			.dimension('ad_astra:mars')
+			.duration(20 * 240)
+			.EUt(GTValues.VA[GTValues.LuV])
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:tbu_232_rod_ola')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000))
+			.inputFluids(Fluid.of('gtceu:radioactive_waste', 128000))
+			.inputFluids(Fluid.of('gtceu:tritiated_water', 41472))
+			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
+			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
+			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
+			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
+			.itemInputs(Item.of('tfg:empty_rod', 1))
+			.itemOutputs(Item.of('tfg:tbu_232_rod', 1))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
+			.dimension('ad_astra:mars')
+			.duration(20 * 640)
+			.EUt(GTValues.VA[GTValues.IV])
 
 }

@@ -29,7 +29,7 @@ const registerTFGFluids = (event) => {
 
 	// Venus
 	event.create('tfg:supercritical_co2')
-		.thinTexture(0x08733f)
+		.thinTexture(0x3deb96)
 		.bucketColor(0x08733f)
 		.temperature(236)
 		.noBlock()

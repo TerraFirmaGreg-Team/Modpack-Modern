@@ -100,7 +100,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
 
-	event.create('nuclear_waste')
+	event.create('tfg:tbu_waste')
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
 		.components('1x thorium', '1x uranium', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -432,7 +432,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	// Isotopic Solvent
 	event.create('tfg:isotopic_solvent')
-		.liquid(new GTFluidBuilder().temperature(320))
+		.liquid(new GTFluidBuilder().customStill().temperature(320))
 		.components(
 			'33x carbon',
 			'57x hydrogen',
@@ -451,7 +451,7 @@ const registerTFGNuclearMaterials = (event) => {
 
 	// Degraded Solvent Stream
 	event.create('tfg:degraded_solvent_stream')
-		.liquid(new GTFluidBuilder().temperature(350))
+		.liquid(new GTFluidBuilder().customStill().temperature(350))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x8b4513)
 		.secondaryColor(0xd2b48c)
@@ -500,6 +500,20 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xff4500)
 		.secondaryColor(0xff6347)
+
+	// High Grade
+
+	event.create('tfg:high_grade_isotopic_solvent')
+		.liquid(new GTFluidBuilder().customStill().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfc7303)
+		.secondaryColor(0xfcf403)
+
+	event.create('tfg:degraded_high_grade_isotopic_solvent')
+		.liquid(new GTFluidBuilder().customStill().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfc7303)
+		.secondaryColor(0xfcf403)	
 
 
 };
@@ -551,8 +565,8 @@ StartupEvents.registry("item", (event) => {
 
   fuel("tbu_232_rod", 10000, 1, 2);				// Max Heat 396 - 1 Fuel
 
-  fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
-  fuel("neptunium_237_rod", 500000, 1, 2);		// Max Heat 396 - 1 Fuel
-  fuel("californium_252_rod", 1000000, 1, 4);	// Max Heat 792 - 1 Fuel
+  fuel("americium_241_rod", 1000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
+  fuel("neptunium_237_rod", 100000, 1, 2);		// Max Heat 396 - 1 Fuel
+  fuel("californium_252_rod", 500000, 1, 4);	// Max Heat 792 - 1 Fuel
 
 });

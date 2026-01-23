@@ -43,10 +43,24 @@ const registerTFGBlockTagsNuclear = (event) => {
     event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
 
 	//#endregion
+
 }
 //#endregion
 
 //#region Fluids
 const registerTFGFluidTagsNuclear = (event) => {
+	
+	// Fluid allowed for the SMR Hatch
+
+	let SMR_FLUIDS = 'tfg:smr_fluids';
+
+    event.add(SMR_FLUIDS, 'gtceu:lubricant');
+    event.add(SMR_FLUIDS, 'tfg:polyalkylene_lubricant');
+	event.add(SMR_FLUIDS, 'tfg:spent_TiCl4_doped_supercritical_CO2');
+    event.add(SMR_FLUIDS, 'tfg:ozone');
+	event.add(SMR_FLUIDS, 'tfg:cyclohex_diperoxide');
+	event.add(SMR_FLUIDS, 'tfg:booster_t3');
+
+	//#endregion
 	
 }
