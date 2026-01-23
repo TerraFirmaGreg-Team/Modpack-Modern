@@ -1,12 +1,11 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "name": "Дикие культуры",
+  "name": "Wild Crops",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Дикие культуры$() можно найти разбросанными по всему миру, растущими небольшими пятнами. Их можно собирать для получения пищи и семян, которые затем можно выращивать в не дикой форме.$(br2)Сбор диких культур можно осуществлять голыми руками, или с помощью $(thing)Ножа$() или другого острого инструмента. При сборе они будут давать $(thing)Семена$() и некоторые $(thing)Продукты$()."
+      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -23,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Дикая пшеница",
-      "text": "Пример дикой культуры, в данном случае $(l:mechanics/crops#wheat)Пшеница$().",
+      "name": "Wild Wheat",
+      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Каждая $(l:mechanics/crops)культура$(), которую можно выращивать, также может быть найдена в дикой природе. Дикие культуры будут выглядеть похоже на их культивируемые аналоги, но более скрыты среди травы. Дикие культуры созревают только с июня по октябрь. В остальное время они выглядят мертвыми до следующего лета."
+      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Все различные виды диких культур",
+      "text": "All different varieties of wild crop",
       "multiblocks": [
         {
           "pattern": [
@@ -319,30 +318,30 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Дикие культуры будут появляться в климатах, близких к тем, где сама культура может быть выращена, так что если вы ищете конкретную культуру, ищите в климате, где культура может быть выращена. Однако, в отличие от $(l:mechanics/crops)культур$(), посаженных игроком, дикие культуры не требуют $(l:mechanics/hydration)увлажнения$(). Вместо этого они растут в зависимости от средней $()температуры$() и $()осадков$().",
-      "title": "Нахождение диких культур"
+      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
+      "title": "Finding Wild Crops"
     },
     {
       "type": "patchouli:text",
-      "text": "На следующих страницах показана таблица сред, где можно найти дикие культуры."
+      "text": "The next pages show a table of the environments where wild crops can be found."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Crop",
           "bold": true
         },
         {
-          "text": "Температура (°C)",
+          "text": "Temperature (°C)",
           "bold": true
         },
         {
-          "text": "Осадки (мм)",
+          "text": "Rainfall (mm)",
           "bold": true
         },
         {
-          "text": "Ячмень"
+          "text": "Barley"
         },
         {
           "text": " -8 - 26"
@@ -351,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Овёс"
+          "text": "Oat"
         },
         {
           "text": "  3 - 40"
@@ -360,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Рожь"
+          "text": "Rye"
         },
         {
           "text": "-11 - 30"
@@ -369,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Кукуруза"
+          "text": "Maize"
         },
         {
           "text": " 13 - 40"
@@ -378,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Пщеница"
+          "text": "Wheat"
         },
         {
           "text": " -4 - 35"
@@ -387,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Рис"
+          "text": "Rice"
         },
         {
           "text": " 15 - 30"
@@ -396,7 +395,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Свёкла"
+          "text": "Beet"
         },
         {
           "text": " -5 - 20"
@@ -405,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Капуста"
+          "text": "Cabbage"
         },
         {
           "text": "-10 - 27"
@@ -414,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Морковь"
+          "text": "Carrot"
         },
         {
           "text": "  3 - 30"
@@ -423,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Чеснок"
+          "text": "Garlic"
         },
         {
           "text": "-20 - 18"
@@ -432,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Горох"
+          "text": "Green Bean"
         },
         {
           "text": "  2 - 35"
@@ -441,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Арбуз"
+          "text": "Melon"
         },
         {
           "text": "  5 - 37"
@@ -451,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Требования к диким культурам",
+      "title": "Wild Crop Requirements",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -469,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Crop",
           "bold": true
         },
         {
-          "text": "Температура (°C)",
+          "text": "Temperature (°C)",
           "bold": true
         },
         {
-          "text": "Осадки (мм)",
+          "text": "Rainfall (mm)",
           "bold": true
         },
         {
-          "text": "Картошка"
+          "text": "Potato"
         },
         {
           "text": " -1 - 37"
@@ -490,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Тыква"
+          "text": "Pumpkin"
         },
         {
           "text": "  0 - 30"
@@ -499,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Лук"
+          "text": "Onion"
         },
         {
           "text": "  0 - 30"
@@ -508,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Соевые бобы"
+          "text": "Soybean"
         },
         {
           "text": "  8 - 30"
@@ -517,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Кабачок"
+          "text": "Squash"
         },
         {
           "text": "  5 - 33"
@@ -526,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Сахарный тростник"
+          "text": "Sugarcane"
         },
         {
           "text": " 12 - 38"
@@ -535,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Помидор"
+          "text": "Tomato"
         },
         {
           "text": "  0 - 36"
@@ -544,7 +543,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Джут"
+          "text": "Jute"
         },
         {
           "text": "  5 - 37"
@@ -553,7 +552,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Папирус"
+          "text": "Papyrus"
         },
         {
           "text": " 19 - 37"
@@ -562,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Красный перец"
+          "text": "Red Bell Pepper"
         },
         {
           "text": " 16 - 30"
@@ -571,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Жёлтый перец"
+          "text": "Yellow Bell Pepper"
         },
         {
           "text": " 16 - 30"
@@ -580,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Подсолнух"
+          "text": "Sunflower"
         },
         {
           "text": "  5 - 40"
@@ -590,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Требования к диким культурам",
+      "title": "Wild Crop Requirements",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -608,19 +607,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Crop",
           "bold": true
         },
         {
-          "text": "Температура (°C)",
+          "text": "Temperature (°C)",
           "bold": true
         },
         {
-          "text": "Осадки (мм)",
+          "text": "Rainfall (mm)",
           "bold": true
         },
         {
-          "text": "Канола"
+          "text": "Canola"
         },
         {
           "text": " -5 - 25"
@@ -629,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Лён"
+          "text": "Flax"
         },
         {
           "text": " -8 - 25"
@@ -639,7 +638,7 @@
         }
       ],
       "text": "",
-      "title": "Требования к диким культурам",
+      "title": "Wild Crop Requirements",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
