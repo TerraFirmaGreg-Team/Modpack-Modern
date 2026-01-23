@@ -1,7 +1,13 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.18] - 23-01-2026
 ### Important notes
+If you missed it, 0.11.17 was a Beta version with other important breaking changes. Be sure to [read it](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.11.17) as well!
 - OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
 - The Saltpeter chemical reactor recipe is now on circuit 2, to avoid a conflict with Nitrous Oxide (#2826) @Pyritie
 ### Breaking changes we forgot to write last time
@@ -21,6 +27,7 @@
 - Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
 - Buffed ore washing and ore maceration recipes so at least they aren't so awful compared to Greate's methods @Pyritie
 - Added TFG's crops to the field guide's Wild Crops entry @Petr211071
+- You can now drink concrete @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix

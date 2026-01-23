@@ -4651,7 +4651,7 @@
             "pakku_links": [
                 "6k7DoFyO7bpHnhyk",
                 "znIzfNElWkwpdz2V",
-                "pB7ARGecP03UXpd6"
+                "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -4793,7 +4793,7 @@
             "pakku_links": [
                 "0DMPJ1AWW6qfYubI",
                 "64uacGcEw697jVGs",
-                "pB7ARGecP03UXpd6"
+                "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -5167,7 +5167,7 @@
                 "zQAe1eid9EE5PMwK",
                 "WlWexjDJnb3iikHc",
                 "V83DMpywbmyrQqvg",
-                "pB7ARGecP03UXpd6"
+                "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -6883,9 +6883,9 @@
             ]
         },
         {
-            "pakku_id": "pB7ARGecP03UXpd6",
+            "pakku_id": "ihA4iuyUc3fA0D4q",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -6899,6 +6899,27 @@
                 "modrinth": "8BmcQJ2H"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "geckolib-forge-1.20.1-4.8.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7025/129/geckolib-forge-1.20.1-4.8.2.jar",
+                    "id": "7025129",
+                    "parent_id": "388172",
+                    "hashes": {
+                        "sha1": "395a9f21a36dc8466d67c2af67a904e7013460d1",
+                        "md5": "d1ff73da16b6fc163d6c5ed3d9734dde"
+                    },
+                    "required_dependencies": [],
+                    "size": 1038979,
+                    "date_published": "2025-09-23T10:08:54.570Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "geckolib-forge-1.20.1-4.8.2.jar",
@@ -6919,28 +6940,6 @@
                     "required_dependencies": [],
                     "size": 1038979,
                     "date_published": "2025-09-23T10:09:01.034935Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "geckolib-forge-1.20.1-4.7.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6027/567/geckolib-forge-1.20.1-4.7.jar",
-                    "id": "6027567",
-                    "parent_id": "388172",
-                    "hashes": {
-                        "sha1": "698d4374fb062edf68b93e05f3bf3b5873cdd260",
-                        "md5": "96dddfb78d375bdd330ae1577ee28bfe"
-                    },
-                    "required_dependencies": [],
-                    "size": 1004042,
-                    "date_published": "2024-12-27T16:27:17.200Z"
                 }
             ]
         },
@@ -9436,7 +9435,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "modernfix-forge-5.25.2+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.26.1+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9444,20 +9443,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/scXW7F8Q/modernfix-forge-5.25.2+mc1.20.1.jar",
-                    "id": "scXW7F8Q",
+                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/zSQuM6f3/modernfix-forge-5.26.1+mc1.20.1.jar",
+                    "id": "zSQuM6f3",
                     "parent_id": "nmDcB62a",
                     "hashes": {
-                        "sha512": "016940bd76b36865f507c07fc7834ea7dc6f7a6c0016aebf6375ee05a9405f2730e07c555ab8ce920775fce3b5a29ff5b638b67f29c03458074650478d37242a",
-                        "sha1": "4069534174e618393f0c14d9dc61ac27a04bb992"
+                        "sha512": "af689fc986ea90026881cb928cef4d1cdb94030c77e111a4a4b560206c2754ad63b58a7df2990942c6808d692500a7b701a87ebb1665b0d2832d6119ad80c81c",
+                        "sha1": "fa0163b33e911b69af61fee8a3920820e7c617a0"
                     },
                     "required_dependencies": [],
-                    "size": 895444,
-                    "date_published": "2025-12-08T02:42:23.149141Z"
+                    "size": 826829,
+                    "date_published": "2026-01-23T00:51:21.409054Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.25.2+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.26.1+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9465,16 +9464,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7306/749/modernfix-forge-5.25.2+mc1.20.1.jar",
-                    "id": "7306749",
+                    "url": "https://edge.forgecdn.net/files/7509/729/modernfix-forge-5.26.1+mc1.20.1.jar",
+                    "id": "7509729",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "4069534174e618393f0c14d9dc61ac27a04bb992",
-                        "md5": "893b2aba13f35bd7ed3fdad2ca15a4d4"
+                        "sha1": "fa0163b33e911b69af61fee8a3920820e7c617a0",
+                        "md5": "63bb05ac16ae0ecc3e2b039148edab3e"
                     },
                     "required_dependencies": [],
-                    "size": 895444,
-                    "date_published": "2025-12-08T02:42:18.980Z"
+                    "size": 826829,
+                    "date_published": "2026-01-23T00:51:20.560Z"
                 }
             ]
         },
@@ -10964,7 +10963,7 @@
         {
             "pakku_id": "fyLOnDQ4LT0IYTlR",
             "pakku_links": [
-                "pB7ARGecP03UXpd6"
+                "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -14115,7 +14114,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.17.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.18.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14124,23 +14123,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ddL8gH3n/TerraFirmaGreg-Core-Modern-0.8.17.jar",
-                    "id": "ddL8gH3n",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/xA84bf76/TerraFirmaGreg-Core-Modern-0.8.18.jar",
+                    "id": "xA84bf76",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "e94af5ba14173453d2193f6c2d5d38e8718089a49cbbd0d179ac35426f66aa2994567b4a83e834fc214af92a1c2168f08915e7ed111bb89d0beb52b51e02b8d0",
-                        "sha1": "8a92b1d2a0a88eb0d7ffdfcdab93b0fb31e2e312"
+                        "sha512": "8a6e5bdd978ff3352df0e6a5723da09a6495f30850b68e5c191a976bf628f2ce537cd1be354ca214859a9e63f6398f2147d186156654946b38159d8a73ea860c",
+                        "sha1": "b4f98b976aa7096b6ec0a6bd291fb16415dfeb3a"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 9460832,
-                    "date_published": "2026-01-20T15:49:12.042661Z"
+                    "size": 9461778,
+                    "date_published": "2026-01-23T05:43:54.009706Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.17.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.18.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14149,19 +14148,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7494/761/TerraFirmaGreg-Core-Modern-0.8.17.jar",
-                    "id": "7494761",
+                    "url": "https://edge.forgecdn.net/files/7510/518/TerraFirmaGreg-Core-Modern-0.8.18.jar",
+                    "id": "7510518",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "8a92b1d2a0a88eb0d7ffdfcdab93b0fb31e2e312",
-                        "md5": "cd491082cfcd037400291a39c466b4c5"
+                        "sha1": "b4f98b976aa7096b6ec0a6bd291fb16415dfeb3a",
+                        "md5": "98d393ea8d2bedda684ba69b5546c438"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 9460832,
-                    "date_published": "2026-01-20T15:49:06.947Z"
+                    "size": 9461778,
+                    "date_published": "2026-01-23T05:43:16.570Z"
                 }
             ]
         },
@@ -14894,7 +14893,7 @@
         {
             "pakku_id": "qM5Yyq0zqqJc8XtT",
             "pakku_links": [
-                "pB7ARGecP03UXpd6"
+                "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
             "side": "BOTH",
