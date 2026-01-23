@@ -100,7 +100,7 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
-	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_black_steel', 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
+	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_black_steel').copyHeat(), 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
@@ -115,7 +115,7 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
-	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_blue_steel', 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
+	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_blue_steel').copyHeat(), 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
@@ -130,7 +130,7 @@ function registerTFCMetalsRecipes(event) {
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
-	event.recipes.tfc.welding('tfc:metal/ingot/high_carbon_red_steel', 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
+	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_red_steel').copyHeat(), 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
@@ -204,7 +204,7 @@ function registerTFCMetalsRecipes(event) {
 	//#region Фикс рецептов металлических предметов
 
 	// Рецепт Jacks
-	event.recipes.tfc.welding('tfc:jacks', '#forge:rods/brass', '#forge:plates/brass', 2)
+	event.recipes.tfc.welding(TFC.isp.of('tfc:jacks').copyHeat().copyForgingBonus(), '#forge:rods/brass', '#forge:plates/brass', 2)
 		.id(`tfc:welding/jacks`)
 
 	event.recipes.greate.compacting('tfc:jacks', ['#forge:rods/brass', '#forge:plates/brass', 'tfc:powder/flux'])

@@ -195,7 +195,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 
 	if (tfcProperty !== null) {
 
-		event.recipes.tfc.welding(outputItem, inputItem1, inputItem2, tfcProperty.getTier() - 1)
+		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyForgingBonus().copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
 			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;
