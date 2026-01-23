@@ -1,6 +1,7 @@
 {
 	"ingredient": "tfc_gurman:tea_mint",
-	"thirst": 15,
+	"thirst": 10,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "minecraft:regeneration",
