@@ -5,6 +5,8 @@
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 ### Changes
 ### Bug fixes
+- Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
+- Fixed red granite ores never dropping poor or rich raw ores @Pyritie
 ### Translation updates
 
 ## [0.11.18] - 23-01-2026
