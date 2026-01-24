@@ -24,6 +24,12 @@
 				"type": "minecraft:ash"
 			},
 			"probability": 0.1
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "tfg:music.venus"
 		}
 	},
 	"features": [

@@ -187,7 +187,8 @@
         },
         {
             "pakku_id": "tIIGT85PQd5pJGf0",
-            "type": "MOD",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
             "slug": {
                 "github": "Frontiers-PackForge/AE2-Midnight-and-Daybreak"
             },

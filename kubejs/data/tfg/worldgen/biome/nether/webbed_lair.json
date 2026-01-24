@@ -15,7 +15,7 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.dripstone_caves"
+			"sound": "tfg:music.nether"
 		},
 		"additions_sound": {
 			"sound": "tfg:ambient.upper_nether_cave.additions",
