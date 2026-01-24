@@ -160,7 +160,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_silver')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sphalerite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sulfur')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_tetrahedrite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
 

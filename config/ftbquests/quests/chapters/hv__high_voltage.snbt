@@ -911,7 +911,6 @@
 			dependencies: ["52AD30F04DD5A812"]
 			dependency_requirement: "all_started"
 			description: ["{quests.high_voltage.hv_mixer.desc}"]
-			icon: "gtceu:hv_mixer"
 			id: "05ABC370D7153350"
 			subtitle: "{quests.high_voltage.hv_mixer.subtitle}"
 			tasks: [{
@@ -923,6 +922,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:hv_mixer)item(greate:stainless_steel_mechanical_mixer))"
 					}
 				}
+				title: "{quests.tasktype.item.any}"
 				type: "item"
 			}]
 			title: "{quests.high_voltage.hv_mixer.title}"
@@ -1008,6 +1008,7 @@
 				"4AD686D18247315E"
 				"72BD27FEEB34C7B0"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_t1.desc}"]
 			icon_scale: 2.0d
 			id: "3FBDC8552F7D8008"

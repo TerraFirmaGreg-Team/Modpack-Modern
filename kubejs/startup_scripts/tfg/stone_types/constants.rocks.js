@@ -19,6 +19,8 @@
  * Item tag that everything in this rock type should be added to
  * @property {boolean} isTFC
  * If this is a built-in TFC rock type or not
+ * @property {boolean} collapsible
+ * If the raw and polished blocks should collapse. If this rock type has no cobble, they will also never collapse. Cobble and gravel always landslide.
  * @property {String?} stonecutterTag
  * Item tag for stonecutting
  * @property {String?} gravelTag
@@ -167,6 +169,7 @@ function generateTFC(id, table) {
 	table.chiseled = { block: `tfc:rock/chiseled/${id}` };
 
 	table.isTFC = true;
+	table.collapsible = true;
 	return table;
 }
 
@@ -194,6 +197,8 @@ function generateMissing(id, table) {
 		table.aqueduct = `tfg:rock/aqueduct_${id}`;
 	if (table.spike === undefined)
 		table.spike = `tfg:spike/${id}_spike`;
+	if (table.collapsible === undefined)
+		table.collapsible = true;
 
 	table.isTFC = false;
 	return table;
@@ -346,6 +351,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		// No material because GT already has recycling for these
 		sound: 'stone',
 		mapColor: 'quartz',
+		collapsible: false,
 		raw: {
 			block: 'minecraft:quartz_block',
 			stair: 'minecraft:quartz_stairs',
@@ -443,6 +449,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"crackrack": generateMissing('crackrack', {
 		material: 'tfg:igneous_intermediate',
 		tfcTag: 'tfc:igneous_extrusive_items',
+		stonecutterTag: 'tfg:stone_types/keratophyre',
 		gravelTag: 'tfc:pink_gravel',
 		sound: 'netherrack',
 		mapColor: 'crimson_stem',
@@ -467,6 +474,9 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:sedimentary_items',
 		stonecutterTag: 'create:stone_types/calcite',
 		isTFC: false,
+		collapsible: false,
+		sound: 'stone',
+		mapColor: 'quartz',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		pillar: 'create:calcite_pillar',
 		pillar2: 'create:layered_calcite',
@@ -483,6 +493,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		tfcTag: 'tfc:igneous_extrusive_items',
 		stonecutterTag: 'create:stone_types/tuff',
 		isTFC: false,
+		collapsible: false,
 		sound: 'tuff',
 		mapColor: 'terracotta_gray',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
@@ -573,6 +584,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	// Suevite
 	"sky_stone": {
 		isTFC: false,
+		collapsible: false,
 		dimensions: ['ad_astra:moon'],
 		stonecutterTag: 'tfg:stone_types/suevite',
 		raw: generateFormsExisting('sky_stone', 'ae2:%s', { block: 'ae2:sky_stone_block' }),
@@ -582,6 +594,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"purpur": {
 		isTFC: false,
+		collapsible: false,
 		brick: 'minecraft:popped_chorus_fruit',
 		bricks: {
 			block: 'minecraft:purpur_block',
@@ -589,6 +602,25 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			slab: 'minecraft:purpur_slab'
 		},
 		pillar: 'minecraft:purpur_pillar'
+	},
+	"fluix": {
+		isTFC: false,
+		collapsible: false,
+		raw: generateFormsExisting('fluix', 'ae2:%s', { block: 'ae2:fluix_block' })
+	},
+	"certus": {
+		isTFC: false,
+		collapsible: false,
+		stonecutterTag: 'tfg:stone_types/certus',
+		raw: { block: 'gtceu:certus_quartz_block' },
+		polished: generateFormsExisting('quartz', 'ae2:%s', { block: 'ae2:quartz_block' }),
+		stonecutting: [
+			generateFormsExisting('quartz', 'ae2:cut_%s', { block: 'ae2:cut_quartz_block' }),
+			generateFormsExisting('quartz', 'ae2:smooth_%s', { block: 'ae2:smooth_quartz_block' }),
+			generateFormsExisting('quartz', 'ae2:%s_brick', { block: 'ae2:quartz_bricks' }),
+			generateForms('quartz', 'ae2:%s_pillar'),
+			generateFormsExisting('quartz', 'ae2:chiseled_%s', { block: 'ae2:chiseled_quartz_block' }),
+		]
 	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -740,7 +772,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	// Thermal Vent Deposit
 	"sulphuric_rock": {
-		material: 'tfg:igneous_mafic',
+		material: 'tfg:sedimentary_organic',
+		collapsible: false,
 		isTFC: false,
 		sound: 'dripstone_block',
 		mapColor: 'terracotta_light_gray',
@@ -806,6 +839,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		material: 'tfg:sedimentary_clastic',
 		tfcTag: 'tfc:sedimentary_items',
 		isTFC: false,
+		collapsible: false,
 		dimensions: ['ad_astra:venus'],
 		raw: { block: 'ad_astra:conglomerate' },
 		gravel: 'tfc:rock/gravel/conglomerate',
@@ -880,6 +914,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 
 	"stone": {
 		material: 'stone',
+		collapsible: false,
 		sound: 'stone',
 		mapColor: 'stone',
 		support: 'tfg:stone_support',
@@ -902,6 +937,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"light_concrete": {
 		material: 'concrete',
+		collapsible: false,
 		sound: 'stone',
 		mapColor: 'color_light_gray',
 		support: 'tfg:light_concrete_support',
@@ -932,6 +968,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"dark_concrete": {
 		material: 'concrete',
+		collapsible: false,
 		sound: 'stone',
 		mapColor: 'color_gray',
 		support: 'tfg:dark_concrete_support',
@@ -961,6 +998,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		]
 	},
 	"titanium_concrete": {
+		collapsible: false,
 		sound: 'stone',
 		stonecutterTag: 'tfg:stone_types/titanium_concrete',
 		raw: { block: 'tfg:titanium_concrete' },
@@ -975,6 +1013,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"brick": {
 		material: 'brick',
+		collapsible: false,
 		sound: 'stone',
 		stonecutterTag: 'tfg:stone_types/red_bricks',
 		bricks: generateFormsExisting('brick', 'minecraft:%s', { block: 'minecraft:bricks' },
@@ -996,6 +1035,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 
 	"asurine": {
 		material: 'asurine',
+		collapsible: false,
 		dimensions: ['ad_astra:moon'],
 		pillar: 'create:asurine_pillar',
 		pillar2: 'create:layered_asurine',
@@ -1010,6 +1050,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"ochrum": {
 		material: 'ochrum',
+		collapsible: false,
 		dimensions: ['ad_astra:mars'],
 		pillar: 'create:ochrum_pillar',
 		pillar2: 'create:layered_ochrum',
@@ -1024,6 +1065,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"crimsite": {
 		material: 'crimsite',
+		collapsible: false,
 		dimensions: ['ad_astra:venus'],
 		pillar: 'create:crimsite_pillar',
 		pillar2: 'create:layered_crimsite',
@@ -1038,6 +1080,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	},
 	"veridium": {
 		material: 'veridium',
+		collapsible: false,
 		dimensions: ['ad_astra:glacio'],
 		pillar: 'create:veridium_pillar',
 		pillar2: 'create:layered_veridium',
@@ -1059,6 +1102,7 @@ global.CREATE_DECO_BRICK_TYPES.forEach(color => {
 
 	global.BIG_ROCK_TABLE[`${color}_brick`] = {
 		material: 'brick',
+		collapsible: false,
 		sound: 'stone',
 		stonecutterTag: `tfg:stone_types/${color}_brick`,
 		bricks: generateFormsExisting(color, 'createdeco:%s_brick', { block: `createdeco:${color}_bricks` },

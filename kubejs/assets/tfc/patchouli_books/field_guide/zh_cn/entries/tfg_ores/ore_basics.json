@@ -4,6 +4,7 @@
     "category": "tfc:tfg_ores",
     "priority": true,
     "sortnum": 0,
+    "read_by_default": true,
     "pages": [
         {
             "type": "patchouli:text",

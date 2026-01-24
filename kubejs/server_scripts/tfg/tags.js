@@ -179,6 +179,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	event.add('tfc:drinkables', 'gtceu:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
+	event.add('tfc:drinkables', 'rnr:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')

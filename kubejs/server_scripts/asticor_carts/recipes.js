@@ -27,4 +27,6 @@ const registerAsticorCartsRecipes = (event) => {
         .duration(100)
         .category(GTRecipeCategories.MACERATOR_RECYCLING)
         .EUt(GTValues.VA[GTValues.ULV])
+
+    event.replaceInput({ mod: 'tfcastikorcarts' }, '#forge:rods', '#mcw_tfc_aio:metal_rods')
 }

@@ -44,26 +44,6 @@
 			"name": "Антрацит",
 			"text": "Антрацит является мощным $(l:beneath/hellforge)топливом$(). Его можно найти в мигматите на внешних уровнях бездны.",
 			"enable_visualize": false
-		},
-		{
-			"type": "patchouli:multiblock",
-			"anchor": "sylvite",
-			"multiblock": {
-				"pattern": [
-					[
-						"X"
-					],
-					[
-						"0"
-					]
-				],
-				"mapping": {
-					"X": "beneath:ore/blackstone_sylvite"
-				}
-			},
-			"name": "Сильвит",
-			"text": "Сильвит является неплохим удобрением, которое можно найти в пироксените на нижних уровнях Бездны.",
-			"enable_visualize": false
 		}
 	],
 	"read_by_default": true
