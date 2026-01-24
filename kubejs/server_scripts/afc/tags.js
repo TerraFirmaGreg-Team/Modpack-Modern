@@ -69,7 +69,6 @@ const registerAFCItemTags = (event) => {
 	event.add("tfg:rosin_logs", "#tfc:white_cedar_logs")
 	event.add("tfg:rosin_logs", "#tfc:douglas_fir_logs")
 
-	// swapped tags around (Add saplings to the "rosin_saplings" tag, Add leaves to the "rosin_leaves" tag)
     event.add("tfg:rosin_saplings", 'tfc:wood/sapling/aspen')
     event.add("tfg:rosin_saplings", 'afc:wood/sapling/coast_spruce')
     event.add("tfg:rosin_saplings", 'tfc:wood/sapling/spruce')
