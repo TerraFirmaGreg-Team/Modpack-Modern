@@ -313,7 +313,7 @@ function registerTFGNuclearRecipes(event) {
         .itemOutputs('tfg:depleted_neptunium_237_rod')
         // Mandatory by GT; no real impact. Use this as a convention:
         // durability / const / heatValue
-        .duration(50000 / 0.4 / 2);
+        .duration(100000 / 0.4 / 2);
 
 	event.recipes.deafission.fission_reactor_coolant('tfg:neptunium_237_coolant')
         .itemInputs(
@@ -583,7 +583,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
 		.itemOutputs('tfg:casings/heat_pipe_casing')
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.IV] * 2)
+		.EUt(GTValues.VA[GTValues.IV])
 		.duration(20*4)
 
 	event.shaped('tfg:cooling_tower', [

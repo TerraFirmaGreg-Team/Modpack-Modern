@@ -120,11 +120,11 @@ function registerTFGMultiblockRecipes(event) {
 		'PTP'
 	], {
 		S: 'tfg:casings/machine_casing_vacuum_engine_intake',
-		Z: 'gtceu:iv_machine_hull',
-		W: '#gtceu:circuits/iv',
+		Z: 'gtceu:ev_machine_hull',
+		W: '#gtceu:circuits/ev',
 		U: '#forge:double_plates/stellite_100',
 		T: '#forge:single_cables/platinum',
-		P: 'gtceu:iv_electric_pump'
+		P: 'gtceu:ev_electric_pump'
 	}).addMaterialInfo().id('tfg:shaped/ostrum_linear_accelerator')
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
