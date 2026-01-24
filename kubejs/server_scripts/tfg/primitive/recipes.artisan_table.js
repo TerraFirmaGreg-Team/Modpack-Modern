@@ -305,16 +305,30 @@ function registerTFGArtisanTableRecipes(event) {
 	event.custom({
 		"result": {"item": "gtceu:resin_printed_circuit_board"},
 		"pattern": [
-			"X X XX",
-			" XXX  ",
+			"X XXXX",
+			"  XX X",
 			"X  X X",
-			"X X XX",
-			" XX XX",
-			"XX XXX"
+			"X XX X",
+			" XXX X",
+			"XXX  X"
 		],
 		"artisanType": "tfg:resin_board",
 		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/resin_printed_circuit_board`);
+
+	event.custom({
+		"result": {"item": "gtceu:resin_printed_circuit_board", "count": 4},
+		"pattern": [
+			"X XXXX",
+			"  XX X",
+			"X  X X",
+			"X XX X",
+			" XXX X",
+			"XXX  X"
+		],
+		"artisanType": "tfg:resin_board_4x",
+		"type": "tfg:artisan"	
+	}).id(`tfg:artisan_table/resin_printed_circuit_board_4x`);
 	
 	event.custom({
 		"result": {"item": "gtceu:phenolic_printed_circuit_board"},
@@ -322,13 +336,27 @@ function registerTFGArtisanTableRecipes(event) {
 			"X  XX ",
 			" XXXX ",
 			"XX X  ",
-			"X  XXX",
-			"X  XX ",
+			"XX XXX",
+			"XX XX ",
 			"  XX  "
 		],
 		"artisanType": "tfg:phenolic_board",
 		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/phenolic_printed_circuit_board`);
+	
+	event.custom({
+		"result": {"item": "gtceu:phenolic_printed_circuit_board", "count": 4},
+		"pattern": [
+			"X  XX ",
+			" XXXX ",
+			"XX X  ",
+			"XX XXX",
+			"XX XX ",
+			"  XX  "
+		],
+		"artisanType": "tfg:phenolic_board_4x",
+		"type": "tfg:artisan"	
+	}).id(`tfg:artisan_table/phenolic_printed_circuit_board_4x`);
 	//#endregion
 	
 
