@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 ### Changes
 ### Bug fixes
 ### Translation updates
