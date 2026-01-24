@@ -6885,7 +6885,7 @@
         {
             "pakku_id": "ihA4iuyUc3fA0D4q",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -7101,7 +7101,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.62.jar",
+                    "file_name": "greate-0.0.64.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7110,23 +7110,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/FDjUACYa/greate-0.0.62.jar",
-                    "id": "FDjUACYa",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/9flLlqpd/greate-0.0.64.jar",
+                    "id": "9flLlqpd",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "8458d070ec94b6a130944f80a67a72fbf89d099e8378ab0a76eb0130eaa60f5e9af3d61b43f968694c78653a4c6f453b63a9fb8947910c06ad9934bd3c7c120e",
-                        "sha1": "0e4ffe5e88f97df724172b3061a1691028f45582"
+                        "sha512": "9f7d4f37fa720eeca5177263c4cd00f6812cd77063214061f31ef416123d51bc0a553f46393c1e0e3a548ef6d15b2da2bd6f703d80379d3ad084ee749c12b2c0",
+                        "sha1": "7e779ac568c27ebb8cb9b16c6b8797b633ffdcdf"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "LNytGWDc"
                     ],
-                    "size": 1253198,
-                    "date_published": "2026-01-13T16:37:04.520883Z"
+                    "size": 1257336,
+                    "date_published": "2026-01-24T05:55:41.391475Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.62.jar",
+                    "file_name": "greate-0.0.64.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7135,19 +7135,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7455/72/greate-0.0.62.jar",
-                    "id": "7455072",
+                    "url": "https://edge.forgecdn.net/files/7516/28/greate-0.0.64.jar",
+                    "id": "7516028",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "0e4ffe5e88f97df724172b3061a1691028f45582",
-                        "md5": "b4c8e38c9c69a88266d5eb64fcc21f18"
+                        "sha1": "7e779ac568c27ebb8cb9b16c6b8797b633ffdcdf",
+                        "md5": "31e92230efe5fc01d683e25fbe6a561c"
                     },
                     "required_dependencies": [
-                        "328085",
-                        "890405"
+                        "890405",
+                        "328085"
                     ],
-                    "size": 1253198,
-                    "date_published": "2026-01-13T16:35:06.893Z"
+                    "size": 1257336,
+                    "date_published": "2026-01-24T05:55:39.687Z"
                 }
             ]
         },
@@ -9435,7 +9435,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "modernfix-forge-5.26.1+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.26.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9443,20 +9443,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/zSQuM6f3/modernfix-forge-5.26.1+mc1.20.1.jar",
-                    "id": "zSQuM6f3",
+                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/Uvlhuprw/modernfix-forge-5.26.2+mc1.20.1.jar",
+                    "id": "Uvlhuprw",
                     "parent_id": "nmDcB62a",
                     "hashes": {
-                        "sha512": "af689fc986ea90026881cb928cef4d1cdb94030c77e111a4a4b560206c2754ad63b58a7df2990942c6808d692500a7b701a87ebb1665b0d2832d6119ad80c81c",
-                        "sha1": "fa0163b33e911b69af61fee8a3920820e7c617a0"
+                        "sha512": "46e6fb85c3097d3dedca0409fda83d58b3724a0905a5f5417b8bfaa2cb8bce388e6d42c762ee615413a9bc2692fa4b302d7e2405fe6fd7ad82c9def6a5da9028",
+                        "sha1": "0adfc122e9f632d8847688c4c3ed20a1af182afa"
                     },
                     "required_dependencies": [],
                     "size": 826829,
-                    "date_published": "2026-01-23T00:51:21.409054Z"
+                    "date_published": "2026-01-24T01:51:58.806460Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.26.1+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.26.2+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9464,16 +9464,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7509/729/modernfix-forge-5.26.1+mc1.20.1.jar",
-                    "id": "7509729",
+                    "url": "https://edge.forgecdn.net/files/7515/215/modernfix-forge-5.26.2+mc1.20.1.jar",
+                    "id": "7515215",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "fa0163b33e911b69af61fee8a3920820e7c617a0",
-                        "md5": "63bb05ac16ae0ecc3e2b039148edab3e"
+                        "sha1": "0adfc122e9f632d8847688c4c3ed20a1af182afa",
+                        "md5": "61332114c9c317080faaf35f8183d67b"
                     },
                     "required_dependencies": [],
                     "size": 826829,
-                    "date_published": "2026-01-23T00:51:20.560Z"
+                    "date_published": "2026-01-24T01:51:57.657Z"
                 }
             ]
         },
@@ -13972,7 +13972,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tacz-tweaks-2.12.1-all.jar",
+                    "file_name": "tacz-tweaks-2.12.2-all.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -13981,24 +13981,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/H8peNuJG/versions/RMgTVnMg/tacz-tweaks-2.12.1-all.jar",
-                    "id": "RMgTVnMg",
+                    "url": "https://cdn.modrinth.com/data/H8peNuJG/versions/JnqIQ9EH/tacz-tweaks-2.12.2-all.jar",
+                    "id": "JnqIQ9EH",
                     "parent_id": "H8peNuJG",
                     "hashes": {
-                        "sha512": "1ba717c181bd2211dbb82f23646d5e152bb8308475a74559b65f0ed027c55e89184ef058512cb5bb1a707e13155c609c929085510710e40f6df9baec1fc0bbf4",
-                        "sha1": "92c9981e2e2f2edecab25ee48c5bade7a14298a8"
+                        "sha512": "6ff5680072a972f9a597928745525a89c194d9c7701cda33ba386d1bf8a0ff0fe010d5bf63f467c3ef7d746896ac6a7678e98a7285b0254b926075d4170ac353",
+                        "sha1": "f726c2d0ac2c77e3cc7f93fad7fd4338117c7a80"
                     },
                     "required_dependencies": [
+                        "1eAoo2KR",
                         "ordsPcFz",
-                        "SzzJttH8",
-                        "1eAoo2KR"
+                        "SzzJttH8"
                     ],
-                    "size": 1894147,
-                    "date_published": "2026-01-22T14:38:58.126712Z"
+                    "size": 1894239,
+                    "date_published": "2026-01-24T10:14:48.372979Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tacz-tweaks-2.12.1-all.jar",
+                    "file_name": "tacz-tweaks-2.12.2-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -14007,20 +14007,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7506/850/tacz-tweaks-2.12.1-all.jar",
-                    "id": "7506850",
+                    "url": "https://edge.forgecdn.net/files/7517/23/tacz-tweaks-2.12.2-all.jar",
+                    "id": "7517023",
                     "parent_id": "1193263",
                     "hashes": {
-                        "sha1": "92c9981e2e2f2edecab25ee48c5bade7a14298a8",
-                        "md5": "d616e17cf5713a027acda0c47f7c98c7"
+                        "sha1": "f726c2d0ac2c77e3cc7f93fad7fd4338117c7a80",
+                        "md5": "2b74092c813b98a27dad4b543808f61f"
                     },
                     "required_dependencies": [
+                        "1028108",
                         "667299",
-                        "351264",
-                        "1028108"
+                        "351264"
                     ],
-                    "size": 1894147,
-                    "date_published": "2026-01-22T14:38:49.923Z"
+                    "size": 1894239,
+                    "date_published": "2026-01-24T10:14:48.150Z"
                 }
             ]
         },

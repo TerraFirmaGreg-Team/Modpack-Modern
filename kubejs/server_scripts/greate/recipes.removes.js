@@ -82,4 +82,6 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb_block'})
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
+
+	evevt.remove({ id: 'greate:mixing/brass_ingot' })
 }

@@ -8,7 +8,7 @@
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
-- Fixed rosin leaves and saplings having tags the wrong way around (#2836) @Pyritie
+- Fixed rosin leaves and saplings having tags the wrong way around (#2840) @TanJeeSchuan
 ### Translation updates
 
 ## [0.11.18] - 23-01-2026
