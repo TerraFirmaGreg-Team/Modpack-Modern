@@ -4,6 +4,7 @@
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 ### Changes
+- Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
