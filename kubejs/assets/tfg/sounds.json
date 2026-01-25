@@ -916,7 +916,15 @@
 			}
 		]
 	},
-
+	"music.mercury": {
+		"sounds": [
+			{
+				"name": "minecraft:records/13",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
 	"music.europa": {
 		"sounds": [
 			{
