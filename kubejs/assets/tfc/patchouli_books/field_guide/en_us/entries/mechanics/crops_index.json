@@ -6,8 +6,7 @@
         {
             "type": "patchouli:text",
             "title": "Crop Index",
-            "text": "This is the $(thing)Crop Index$() for $(thing)TerraFirmaCraft$(). All crops are listed alphabetically. You can click on them to learn more information about growth requirements, yields and nutrients consumed for growth."
-        },
+      "text": "This is the $(thing)Crop Index$() for $(thing)TerraFirmaCraft$(). All crops are listed alphabetically.$(br2)$(italic)Click a crop to view its growth requirements, yields, and nutrient usage.$()"        },
         {
             "type": "patchouli:text",
             "text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()"
