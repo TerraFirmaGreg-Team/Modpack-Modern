@@ -1,0 +1,20 @@
+{
+    "name": "Crop Index",
+    "category": "tfc:mechanics",
+    "icon": "tfc:textures/item/food/rye.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Crop Index",
+            "text": "This is the $(thing)Crop Index$() for $(thing)TerraFirmaCraft$(). All crops are listed alphabetically. You can click on them to learn more information about growth requirements, yields and nutrients consumed for growth."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+        }
+    ]
+}
