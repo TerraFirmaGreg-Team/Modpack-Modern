@@ -3298,6 +3298,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Sunflower"
 		},
@@ -3456,6 +3457,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "canola",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Canola"
 		},
@@ -3615,6 +3617,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Flax"
 		},
