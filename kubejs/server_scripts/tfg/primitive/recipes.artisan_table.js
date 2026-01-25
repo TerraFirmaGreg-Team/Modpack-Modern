@@ -9,6 +9,19 @@ function registerTFGArtisanTableRecipes(event) {
 	event.remove({ id: 'gtceu:shaped/basic_circuit_board'});
 	event.remove({ id: 'gtceu:shaped/good_circuit_board'});
 
+	//Table Recipe
+	TFGHelpers.registerMaterialInfo('tfg:artisan_table', [GTMaterials.WroughtIron, 6, GTMaterials.Wood, 3, GTMaterials.Copper, 1/9])
+
+	event.shaped('tfg:artisan_table', [
+		'CBC',
+		'AAA',
+		'B B'
+	], {
+		A: ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.WroughtIron, 1),
+		B: 'firmalife:treated_wood',
+		C: '#forge:screws/any_bronze'
+	}).id('tfg:shaped/artisan_table');
+
 	//#region Molds
 
 	/** 
