@@ -1,6 +1,7 @@
 {
 	"ingredient": "tfc_gurman:tea_nettle",
-	"thirst": 15,
+	"thirst": 10,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "minecraft:slow_falling",

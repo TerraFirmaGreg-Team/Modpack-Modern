@@ -25,7 +25,7 @@ const registerAE2Recipes = (event) => {
 		'BA ',
 		'CCB',
 	], {
-		A: '#forge:rods',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/steel',
 		C: '#forge:exquisite_gems/certus_quartz',
 	}).id('tfg:crafting/certus_quartz_cutting_knife')
@@ -35,7 +35,7 @@ const registerAE2Recipes = (event) => {
 		'BA ',
 		'CCB',
 	], {
-		A: '#forge:rods',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/steel',
 		C: '#forge:exquisite_gems/nether_quartz',
 	}).id('tfg:crafting/nether_quartz_cutting_knife')
@@ -1874,15 +1874,15 @@ const registerAE2Recipes = (event) => {
 
 	// Quartz Glass
 	event.recipes.gtceu.alloy_smelter('ae2:quartz_glass')
-		.itemInputs('5x #forge:dusts/certus_quartz', '4x #forge:glass')
-		.itemOutputs('4x ae2:quartz_glass')
+		.itemInputs('#forge:glass', '#forge:dusts/certus_quartz')
+		.itemOutputs('ae2:quartz_glass')
 		.duration(20)
 		.EUt(120)
 		.addMaterialInfo(true)
 
 	// Vibrant Quartz Glass
 	event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
-		.itemInputs('ae2:quartz_glass', '8x #forge:dusts/glowstone')
+		.itemInputs('ae2:quartz_glass', '#forge:dusts/glowstone')
 		.itemOutputs('ae2:quartz_vibrant_glass')
 		.duration(20)
 		.EUt(480)
@@ -2314,46 +2314,6 @@ const registerAE2Recipes = (event) => {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	// Certus deco blocks
-
-	event.stonecutting('ae2:quartz_block', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:cut_quartz_block', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:smooth_quartz_block', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_bricks', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_pillar', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:chiseled_quartz_block', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:cut_quartz_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:smooth_quartz_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_brick_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:chiseled_quartz_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_pillar_stairs', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:cut_quartz_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:smooth_quartz_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_brick_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:chiseled_quartz_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('ae2:quartz_pillar_wall', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:quartz_slab', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:cut_quartz_slab', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:smooth_quartz_slab', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:quartz_brick_slab', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:chiseled_quartz_slab', '#tfg:certus_quartz_blocks')
-	event.stonecutting('2x ae2:quartz_pillar_slab', '#tfg:certus_quartz_blocks')
-
-	event.recipes.gtceu.macerator('tfg:macerate_certus_deco')
-		.itemInputs('#tfg:certus_quartz_blocks')
-		.itemOutputs('4x #forge:dusts/certus_quartz')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
-	event.recipes.gtceu.macerator('tfg:macerate_sky_stone')
-		.itemInputs('#tfg:sky_stone_blocks')
-		.itemOutputs('ae2:sky_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// other deco
 

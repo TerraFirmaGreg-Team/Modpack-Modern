@@ -1,10 +1,59 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 ### Changes
+- Added much more music to the different dimensions @Pyritie
+- Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
+- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 ### Bug fixes
+- Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
+- Fixed red granite ores never dropping poor or rich raw ores @Pyritie
+- Fixed rosin leaves and saplings having tags the wrong way around (#2840) @TanJeeSchuan
+- Fixed missing borax to flux recipe @Pyritie
+### Translation updates
+
+## [0.11.18] - 23-01-2026
+### Important notes
+If you missed it, 0.11.17 was a Beta version with other important breaking changes. Be sure to [read it](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.11.17) as well!
+- OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
+- The Saltpeter chemical reactor recipe is now on circuit 2, to avoid a conflict with Nitrous Oxide (#2826) @Pyritie
+### Breaking changes we forgot to write last time
+- Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work. Other than that, they should have their same stress numbers as before.
+#### Stone dusts and other rock-related changes
+- Individual stone dusts for each rock type have been removed, instead being replaced with more general dusts based on rock composition. The centrifuging recipes have also been removed, though we plan on using these for something else later.
+- Marble/chalk dust has been replaced with Carbonate Sedimentary dust in concrete-related recipes
+- The Moon Sand in the Regolith Vapor recipe has been replaced with Asurine Dust (renewable via Rock Breaker)
+- The Mars rock dusts in the Hexafluorosilic Acid recipe has been replaced with Ochrum Dust (renewable via Rock Breaker)
+- Other recipe and tag unifications for consistency, like all cobbles should landslide, all slabs should be craftable the same way, etc
+### Changes
+- Fixed balancing issues with the Aquaponics Loop. @Redeix
+- Mars log electric greenhouse recipes now output the same amount of logs as earth log recipes @Pyritie
+- Geodes (in newly generated chunks) are now completely solid so they won't cause cave-ins any more @Pyritie
+- Recolored the different oils so you can actually tell them apart visually @Pyritie
+- The food meter's saturation level is now indicated by a gold outline instead of a red one, so it's less difficult to see (#2812) @TreyR9
+- Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
+- Buffed ore washing and ore maceration recipes so at least they aren't so awful compared to Greate's methods @Pyritie
+- Added TFG's crops to the field guide's Wild Crops entry @Petr211071
+- You can now drink concrete @Pyritie
+### Bug fixes
+- Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
+- Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
+- Fixed not being able to make glass tubes out of glass dust (#2795) @thederpysockdude123
+- Fixed roads losing their movement speed bonus (#2790) @Pyritie
+- Fixed water wheels misbehaving again (#2791) @Pyritie
+- Fixed not being able to cast steel or higher tier materials into ceramic molds (#2789, #2794) @Pyritie
+- Fixed the Ad Astra airlock not counting as a cleanroom door (#2808) @thederpysockdude123
+- Removed some leftover rock dust centrifuge recipes (#2804) @thederpysockdude123
+- Fixed some mars plants self-destructing @Pyritie
+- Fixed mossy cobblestone not collapsing @Pyritie
+- Fixed welding not preserving forging bonuses (#2827) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
+- Russian @Petr211071
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
 
 ## [0.11.17] - 20-01-2026
 ### Important note
