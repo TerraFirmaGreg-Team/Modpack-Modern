@@ -105,6 +105,7 @@ const registerTFGMaterials = (event) => {
 		.dust()
 		.ingot()
 		.iconSet(GTMaterialIconSet.ROUGH)
+		.flags(GTMaterialFlags.NO_SMELTING)
 		.color(0xA69D96)
 
 	//#region Tungsten Line

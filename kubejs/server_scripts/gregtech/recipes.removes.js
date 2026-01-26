@@ -391,6 +391,8 @@ function removeGTCEURecipes(event) {
 	//#region Выход: Бумажная пыль
 
 	event.remove({ id: 'gtceu:shaped/paper_dust' })
+	event.remove({ id: 'gtceu:shaped_fluid_container/paper' })
+	event.remove({ id: 'gtceu:macerator/macerate_enchanting_table' })
 
 	//#endregion
 
@@ -844,6 +846,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blackstone' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__endstone' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__red_granite' })
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_tuff' })
 
 	removeMaceratorRecipe(event, 'macerate_end_stone');
 	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
@@ -905,6 +908,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
 
 	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
+
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_magnesia_refractory_brick_to_nugget' })
 }
 
 function removeMaceratorRecipe(event, id) {

@@ -190,6 +190,8 @@
   "block.gtceu.wire_coil.tooltip_cracking": "§8Cracking Unit, Moon and Ostrum Harvesters:§r",
   "tooltip.moldraw.shift_view_molecule": "§7§oHold (Shift) for Molecular Structure§r",
   "tooltip.moldraw.shift_view_alloy": "§7§oHold (Shift) for Alloy Composition§r",
+  "gtceu.medical_condition.antidote.description.effect_removed": "Removes %s%% of the above conditions' effects",
+  "gtceu.medical_condition.antidote.description.effect_removed.all": "Removes all of the above conditions' effects",
   "gtceu.greenhouse": "Electric Greenhouse",
   "gtceu.steam_bloomery": "Steam Bloomery",
   "gtceu.food_oven": "Food Oven",

@@ -16,11 +16,19 @@ function registerTFGBakeliteRecipes(event) {
 		.inputFluids('gtceu:creosote 1000')
 		.outputFluids('gtceu:lubricant 500')
 		.outputFluids('gtceu:phenol 50')
-		.outputFluids('gtceu:methane 450')
+		.outputFluids('gtceu:carbon_dioxide 200')
+		.outputFluids('gtceu:methane 250')
 		// this adds single-block distillery recipes too
 		.disableDistilleryRecipes(false)
-		.duration(5 * 20)
+		.duration(8 * 20)
 		.EUt(96)
+
+	event.recipes.gtceu.chemical_reactor('tfg:syngas_to_methane')
+		.inputFluids('tfg:syngas 1000')
+		.notConsumable('#forge:dusts/silver')
+		.outputFluids('gtceu:methane 100')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:phenolic_resin')
 		.inputFluids('gtceu:phenol 500', 'gtceu:formaldehyde 1000')
@@ -50,6 +58,13 @@ function registerTFGBakeliteRecipes(event) {
 		.itemOutputs('gtceu:phenolic_circuit_board')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.assembler('tfg:phenolic_board_pe')
+		.itemInputs('2x #forge:foils/polyethylene', 'gtceu:wood_plate')
+		.inputFluids('gtceu:phenol 50')
+		.itemOutputs('gtceu:phenolic_circuit_board')
+		.duration(7.5 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.replaceInput({ id: 'gtceu:shaped/mv_machine_hull' }, '#forge:plates/wrought_iron', '#forge:plates/bakelite')
 }
