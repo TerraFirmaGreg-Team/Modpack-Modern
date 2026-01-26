@@ -6,17 +6,17 @@ function registerTFGNuclearItems(event) {
 
 	event.create('tfg:empty_rod')
 		.translationKey('item.tfg.empty_rod')
-		.texture('tfg:item/fuel_rod_empty')
+		.texture('tfg:item/fission_rod/fuel_rod_empty')
 		.tag('tfg:fission_rods')
 
 	event.create('tfg:empty_rod_t2')
 		.translationKey('item.tfg.empty_rod_t2')
-		.texture('tfg:item/fuel_rod_empty_t2')
+		.texture('tfg:item/fission_rod/fuel_rod_empty_t2')
 		.tag('tfg:fission_rods')
 
 	event.create('tfg:empty_rod_t3')
 		.translationKey('item.tfg.empty_rod_t3')
-		.texture('tfg:item/fuel_rod_empty_t3')
+		.texture('tfg:item/fission_rod/fuel_rod_empty_t3')
 		.tag('tfg:fission_rods')
 
 	event.create('tfg:refrigerant_pellet')
