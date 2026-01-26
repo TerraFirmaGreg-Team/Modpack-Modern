@@ -348,19 +348,6 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//#endregion
-	//#region Sticky Resin by Vat
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/latex_to_sticky_resin');
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000))
-		.outputItem('gtceu:sticky_resin')
-		.id('tfg:vat/conifer_pitch_to_sticky_resin');
-
-	//#endregion
 
 	//#region Better Sugar Water
 	event.recipes.firmalife.vat()
@@ -398,7 +385,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/leafy_kelp' }).id('tfg:shaped/drying_mat_leafy_kelp')
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/winged_kelp' }).id('tfg:shaped/drying_mat_winged_kelp')
-	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfg:charnia' }).id('tfg:shaped/drying_mat_charnia')
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: '#tfg:charnia' }).id('tfg:shaped/drying_mat_charnia')
 
 	// #endregion
 

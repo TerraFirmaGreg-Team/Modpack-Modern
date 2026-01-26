@@ -50,26 +50,6 @@
             "name": "无烟煤",
             "text": "无烟煤是一种强大的 $(l:beneath/hellforge)燃料$()。可在幽冥之地上层区的混合岩中找到。",
             "enable_visualize": false
-        },
-        {
-            "type": "patchouli:multiblock",
-            "anchor": "sylvite",
-            "multiblock": {
-                "pattern": [
-                    [
-                        "X"
-                    ],
-                    [
-                        "0"
-                    ]
-                ],
-                "mapping": {
-                    "X": "beneath:ore/blackstone_sylvite"
-                }
-            },
-            "name": "钾石盐",
-            "text": "钾石盐是一种肥料，可在幽冥之地下层区的辉石岩中找到。",
-            "enable_visualize": false
         }
     ],
     "read_by_default": true

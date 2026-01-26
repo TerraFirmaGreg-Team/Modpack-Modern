@@ -352,9 +352,7 @@ function processLamp(event, material) {
 	const materialName = material.getName();
 
 	// Unfinished lamp
-	let matMap = { 'glass': 1 };
-	matMap[materialName] = 1;
-	TFGHelpers.registerMaterialInfo(finishedLampItem, matMap);
+	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 1]);
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
@@ -373,20 +371,6 @@ function processLamp(event, material) {
 		.itemOutputs(finishedLampItem)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-
-	event.recipes.gtceu.macerator(`tfg:macerate_${materialName}_lamp`)
-		.itemInputs(finishedLampItem)
-		.itemOutputs(`#forge:dusts/${materialName}`, `#forge:dusts/glass`)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.duration(material.getMass())
-		.EUt(2);
-
-	event.recipes.gtceu.arc_furnace(`tfg:arc_${materialName}_lamp`)
-		.itemInputs(finishedLampItem)
-		.itemOutputs(`#forge:ingots/${materialName}`)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.duration(material.getMass())
-		.EUt(30);
 }
 
 /**

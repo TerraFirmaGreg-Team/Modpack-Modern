@@ -7,7 +7,7 @@
 		"fog_color": 9533575,
 		"additions_sound": {
 			"sound": "tfg:ambient.upper_nether.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
 		"mood_sound": {
@@ -20,7 +20,9 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.nether.crimson_forest"
+			"sound": {
+				"sound_id": "tfg:music.nether"
+			}
 		},
 		"sky_color": 9533575,
 		"water_color": 7255466,

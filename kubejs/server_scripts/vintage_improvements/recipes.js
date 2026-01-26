@@ -56,13 +56,13 @@ function registerVintageImprovementsRecipes(event) {
 		'   A   '
 	], {
 		A: '#forge:plates/treated_wood',
-		B: '#forge:rods/long/steel',
+		B: '#forge:rods/black_steel',
 		C: 'create:andesite_casing',
 		D: '#forge:frames/treated_wood',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
 
-	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', { 'black_steel': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('vintageimprovements:centrifuge', [GTMaterials.WroughtIron, 3, GTMaterials.BlackSteel, 2]);
 
 	event.recipes.gtceu.shaped('vintageimprovements:curving_press', [
 		'DBD',
@@ -90,7 +90,7 @@ function registerVintageImprovementsRecipes(event) {
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer')
 
-	TFGHelpers.registerMaterialInfo('vintageimprovements:helve_hammer', { 'iron': 2 });
+	TFGHelpers.registerMaterialInfo('vintageimprovements:helve_hammer', [GTMaterials.Iron, 2]);
 
 	event.shaped('vintageimprovements:grinder_belt', [
 		'AAA',
@@ -529,34 +529,6 @@ function registerVintageImprovementsRecipes(event) {
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/pressurizing/glue_solidifying')
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:rubber', 144), '#forge:dusts/rubber')
-		.heated()
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuum/rubber')
-
-	// Vaccuming rubber wood stuff for latex
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:latex_logs')
-		.processingTime(300 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_logs')
-
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 25), '#tfg:rubber_saplings')
-		.processingTime(150 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
-
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 10), '#tfg:rubber_leaves')
-		.processingTime(75 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
-
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 50), ['#tfg:rubber_plants', 'tfc:powder/soda_ash', Fluid.of('tfc:salt_water', 50)])
-		.heated()
-		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
-
-	// Vulc. latex to raw rubber pulp
-	event.recipes.vintageimprovements.pressurizing('#forge:dusts/raw_rubber', Fluid.of('tfg:vulcanized_latex', 250))
-		.heated()
-		.processingTime(60 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
 
 	// Seed oils
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 350), 'tfg:sunflower_product')

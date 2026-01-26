@@ -240,4 +240,14 @@ const registerTFCRecipes = (event) => {
 		.inputs('#tfc:foods/fruits', TFC.fluidStackIngredient('#tfg:alcohols', 250))
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
+
+	// Borax to flux
+	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
+		.id(`tfg:quern/borax`)
+
+	event.recipes.gtceu.macerator('borax_to_flux')
+		.itemInputs("#forge:dusts/borax")
+		.itemOutputs("4x tfc:powder/flux")
+		.duration(50)
+		.EUt(2);
 }

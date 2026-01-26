@@ -19,17 +19,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц Нижнього Світу$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц Нижнього Світу$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Кіаніт, Слюда та Боксити$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лапіс, Лазурит та Содаліт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганець і Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Мідь та Халькопірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Мінеральні піски$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквадак$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Кіновар і Рубін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфір і Альмадін$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селітра та Електротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сірка та Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Смарагд і Берилій$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Срібло, Гален і Свинець$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Стеатит, Тальк і Трона$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Стеатит, Тальк і Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраедрит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хроміт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдоніт і Борніт$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит і Пірит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраедрит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз і Халькоцит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Ураніт & Пітчбленд$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хроміт$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеєліт та Вольфрам$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдоніт і Борніт$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/230$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br)$(thing)Висота$(): 8$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/230 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br)$(thing)Висота$(): 8$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Аметист, Опал і Гранат",
       "type": "patchouli:text",
       "anchor": "nether_garnet"
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/35$(br)$(thing)Щільність$(): 80%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Розмір$(): 13$(br)$(thing)Висота$(): 4$(br2)$(thing)Типи каменю$(): Мігматит",
+      "text": "$(thing)Рідкість$(): 1/35 чанків$(br)$(thing)Щільність$(): 80%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Розмір$(): 13$(br)$(thing)Висота$(): 4$(br2)$(thing)Типи каменю$(): Мігматит",
       "title": "Антрацит",
       "type": "patchouli:text",
       "anchor": "nether_anthracite"
@@ -148,7 +148,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/220$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Розмір$(): 39$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс",
+      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Розмір$(): 39$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс",
       "title": "Апатит і Пірохлор",
       "type": "patchouli:text",
       "anchor": "nether_apatite"
@@ -215,7 +215,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/245$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/245 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Бастнезит і Монацит",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -282,7 +282,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/250$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 31$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/250 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 31$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Бентоніт та Олівін",
       "type": "patchouli:text",
       "anchor": "nether_olivine"
@@ -374,7 +374,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/245$(br)$(thing)Щільність$(): 55.00000000000001%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 31$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/245 чанків$(br)$(thing)Щільність$(): 55%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 31$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Вульфеніт і Молібденіт",
       "type": "patchouli:text",
       "anchor": "nether_molybdenum"
@@ -466,7 +466,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/160$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 16 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Габро, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/160 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 16 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Габро, Діорит, Піроксеніти",
       "title": "Гарнієрит і Кобальтит",
       "type": "patchouli:text",
       "anchor": "nether_garnierite"
@@ -573,7 +573,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/220$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 35$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 35$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Гематит та Лімоніт",
       "type": "patchouli:text",
       "anchor": "nether_hematite"
@@ -680,7 +680,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/240$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 37$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/240 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 37$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Гетит",
       "type": "patchouli:text",
       "anchor": "nether_goethite"
@@ -772,7 +772,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/180$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br)$(thing)Висота$(): 9$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/180 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br)$(thing)Висота$(): 9$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
       "title": "Гіпс і Кальцит",
       "type": "patchouli:text",
       "anchor": "nether_gypsum"
@@ -864,7 +864,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/270$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/270 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Мігматит, Піроксеніти, Травертин",
       "title": "Гранат і Каситеритові піски",
       "type": "patchouli:text",
       "anchor": "nether_garnet_tin"
@@ -956,7 +956,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/120$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 12$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 12$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Графіт і Діамант",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
@@ -1023,7 +1023,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/260$(br)$(thing)Щільність$(): 55.00000000000001%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 37$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/260 чанків$(br)$(thing)Щільність$(): 55%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 37$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Золото та Гематит",
       "type": "patchouli:text",
       "anchor": "nether_gold"
@@ -1115,7 +1115,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/170$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/170 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Каситерит",
       "type": "patchouli:text",
       "anchor": "nether_cassiterite"
@@ -1182,7 +1182,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/150$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Габро, Граніт, Діорит, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/150 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Габро, Граніт, Діорит, Мігматит, Піроксеніти, Травертин",
       "title": "Кварц Нижнього Світу",
       "type": "patchouli:text",
       "anchor": "nether_quartz"
@@ -1249,7 +1249,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/220$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 41$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 41$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Кіаніт, Слюда та Боксити",
       "type": "patchouli:text",
       "anchor": "nether_mica"
@@ -1316,7 +1316,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/220$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 40$(br2)$(thing)Типи каменю$(): Мігматит, Піроксеніти, Травертин",
       "title": "Лапіс, Лазурит та Содаліт",
       "type": "patchouli:text",
       "anchor": "nether_lapis"
@@ -1408,7 +1408,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/225$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/225 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Марганець і Тантал",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -1500,7 +1500,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/170$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/170 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Мідь та Халькопірит",
       "type": "patchouli:text",
       "anchor": "nether_copper"
@@ -1592,7 +1592,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/160$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Розмір$(): 48$(br)$(thing)Висота$(): 9$(br2)$(thing)Типи каменю$(): Базальт, Граніт",
+      "text": "$(thing)Рідкість$(): 1/160 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Розмір$(): 48$(br)$(thing)Висота$(): 9$(br2)$(thing)Типи каменю$(): Базальт, Граніт",
       "title": "Мінеральні піски",
       "type": "patchouli:text",
       "anchor": "nether_basaltic_sands"
@@ -1684,7 +1684,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/200$(br)$(thing)Щільність$(): 70%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Розмір$(): 32$(br2)$(thing)Типи каменю$(): Базальт, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/200 чанків$(br)$(thing)Щільність$(): 70%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Розмір$(): 32$(br2)$(thing)Типи каменю$(): Базальт, Піроксеніти",
       "title": "Наквадак",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
@@ -1711,7 +1711,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/160$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Граніт, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/160 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Граніт, Піроксеніти",
       "title": "Редстоун, Кіновар і Рубін",
       "type": "patchouli:text",
       "anchor": "nether_redstone"
@@ -1778,7 +1778,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/180$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 33$(br)$(thing)Висота$(): 8$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/180 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 33$(br)$(thing)Висота$(): 8$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Сапфір і Альмадін",
       "type": "patchouli:text",
       "anchor": "nether_sapphire"
@@ -1870,7 +1870,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/210$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 50$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/210 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 50$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Селітра та Електротин",
       "type": "patchouli:text",
       "anchor": "nether_saltpeter"
@@ -1962,34 +1962,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/75$(br)$(thing)Щільність$(): 60%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 64$(br)$(thing)Розмір$(): 17$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Піроксеніти",
-      "title": "Сильвін",
-      "type": "patchouli:text",
-      "anchor": "nether_sylvite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сильвін",
-      "multiblock": {
-        "mapping": {
-          "0": "beneath:ore/blackstone_sylvite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Використовується для$(): Добрива$(br)$(thing)Формула$(): KCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/165$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 50$(br2)$(thing)Типи каменю$(): Аспідний сланець, Базальт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/165 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 50$(br2)$(thing)Типи каменю$(): Аспідний сланець, Базальт, Діорит, Піроксеніти",
       "title": "Сірка та Пірит",
       "type": "patchouli:text",
       "anchor": "nether_sulfur"
@@ -2056,7 +2029,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/250$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 12$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/250 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Висота$(): 60$(br)$(thing)Радіус$(): 12$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Смарагд і Берилій",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"
@@ -2103,7 +2076,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кам’яна сіль",
+      "name": "Сильвін",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -2118,7 +2091,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 18%$(br)$(thing)Джерело$(): Калію, Хлору$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Відсоток$(): 18%$(br)$(thing)Джерело$(): Калію, Хлору, Добрива$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -2138,7 +2111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂",
+      "text": "$(thing)Відсоток$(): 0%$(br)$(thing)Джерело$(): Торію$(br)$(thing)Формула$(): ThO₂$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Радіоактивний (будь-який контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2148,7 +2121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/160$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Гнейс, Граніт, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/160 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Гнейс, Граніт, Піроксеніти",
       "title": "Срібло, Гален і Свинець",
       "type": "patchouli:text",
       "anchor": "nether_silver"
@@ -2215,7 +2188,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/250$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 41$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/250 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 41$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Стеатит, Тальк і Трона",
       "type": "patchouli:text",
       "anchor": "nether_lubricant"
@@ -2322,7 +2295,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/170$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/170 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Сфалерит і Пірит",
       "type": "patchouli:text",
       "anchor": "nether_sphalerite"
@@ -2389,7 +2362,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/170$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/170 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Розмір$(): 45$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Мігматит, Піроксеніти, Травертин",
       "title": "Тетраедрит",
       "type": "patchouli:text",
       "anchor": "nether_tetrahedrite"
@@ -2456,7 +2429,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/180$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 33$(br)$(thing)Висота$(): 7$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/180 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 33$(br)$(thing)Висота$(): 7$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Топаз і Халькоцит",
       "type": "patchouli:text",
       "anchor": "nether_topaz"
@@ -2548,7 +2521,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/250$(br)$(thing)Щільність$(): 55.00000000000001%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 24$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/250 чанків$(br)$(thing)Щільність$(): 55%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 24$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Ураніт & Пітчбленд",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2570,7 +2543,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 62%$(br)$(thing)Джерело$(): Урану, Торію, Свинцю$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 62%$(br)$(thing)Джерело$(): Урану, Торію, Свинцю$(br)$(thing)Формула$(): (UO₂)₃ThPb$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Радіоактивний (будь-який контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2590,7 +2563,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Урану$(br)$(thing)Формула$(): UO₂$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Канцерогенне (будь-який контакт)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 25%$(br)$(thing)Джерело$(): Урану$(br)$(thing)Формула$(): UO₂$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібен повний захист)Радіоактивний (будь-який контакт)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2615,7 +2588,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/205$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 39$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/205 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 39$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Хроміт",
       "type": "patchouli:text",
       "anchor": "nether_magnetite"
@@ -2722,7 +2695,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/180$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 25$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
+      "text": "$(thing)Рідкість$(): 1/180 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 25$(br2)$(thing)Типи каменю$(): Аспідний сланець, Габро, Гнейс, Граніт, Діорит, Піроксеніти",
       "title": "Шеєліт та Вольфрам",
       "type": "patchouli:text",
       "anchor": "nether_scheelite"
@@ -2789,7 +2762,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/250$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 35$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
+      "text": "$(thing)Рідкість$(): 1/250 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Розмір$(): 35$(br2)$(thing)Типи каменю$(): Базальт, Мігматит, Піроксеніти, Травертин",
       "title": "Шелдоніт і Борніт",
       "type": "patchouli:text",
       "anchor": "nether_sheldonite"

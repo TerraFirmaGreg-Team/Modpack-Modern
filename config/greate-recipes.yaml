@@ -9,6 +9,10 @@ enableHardCreateRecipes: false
 # If false, GTCEu items will be used instead.
 useCreateItemsInRecipes: false
 
+# Should recipes from create that conflict with GTCEu recipes be enabled?
+# [WARNING]: This will not cover every single recipe conflict, only common conflicts (like components (plates/sheets)), or ore processing conflicts.
+disableConflictingRecipes: true
+
 # Recipe types that should not be copied to Greate machines. Ex. 'gtceu:macerator' for macerator recipes
 ignoredRecipeTypes:
   - gtceu:ore_washer

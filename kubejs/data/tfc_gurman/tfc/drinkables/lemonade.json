@@ -1,6 +1,7 @@
 {
 	"ingredient": "tfc_gurman:lemonade",
-	"thirst": 15,
+	"thirst": 10,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "minecraft:haste",

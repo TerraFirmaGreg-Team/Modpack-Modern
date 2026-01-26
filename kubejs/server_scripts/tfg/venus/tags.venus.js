@@ -1,23 +1,6 @@
 "use strict";
 
 function registerTFGVenusItemTags(event) {
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_bricks')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_pillar')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_polished')
-	event.add('tfg:leucitite_blocks', 'betterend:flavolite_tiles')
-
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_bricks')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_pillar')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_polished')
-	event.add('tfg:lamproite_blocks', 'betterend:sandy_jadestone_tiles')
-
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_bricks')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_pillar')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_polished')
-	event.add('tfg:ignimbrite_blocks', 'betterend:sulphuric_rock_tiles')
 }
 
 

@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/370$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 砾岩, 粗面岩, 红花岗岩, 英安岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/370 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 砾岩, 粗面岩, 红花岗岩, 英安岩, 闪长岩",
       "title": "斑铜矿, 硫铂矿",
       "type": "patchouli:text",
       "anchor": "deep_mars_sheldonite"
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/215$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 粗面岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/215 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 粗面岩, 辉长岩, 闪长岩",
       "title": "氟碳镧铈矿, 独居石",
       "type": "patchouli:text",
       "anchor": "mars_neodynium"
@@ -213,7 +213,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/370$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 粗面岩, 粘土岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/370 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 粗面岩, 粘土岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "沥青铀矿, 方钍石, 晶质铀矿",
       "type": "patchouli:text",
       "anchor": "deep_mars_pitchblende"
@@ -255,7 +255,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 26%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂",
+      "text": "$(thing)百分比$(): 26%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)放射性 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -280,7 +280,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 55.00000000000001%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 砾岩, 粗面岩, 红花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 55%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 砾岩, 粗面岩, 红花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "沥青铀矿, 方钍石, 赤铁矿",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
@@ -322,7 +322,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 29%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂",
+      "text": "$(thing)百分比$(): 29%$(br)$(thing)来源$(): 钍$(br)$(thing)化学式$(): ThO₂$(br)$(thing)危害$(): $(c)$(t:需要全身防护)放射性 (任何接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/215$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 55$(br)$(thing)指示器最大深度$(): 10$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 白垩岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/215 区块$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 55$(br)$(thing)指示器最大深度$(): 10$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 白垩岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩",
       "title": "煤炭, 赤铁矿",
       "type": "patchouli:text",
       "anchor": "mars_coal"
@@ -399,7 +399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/280$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 粘土岩, 红花岗岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/280 区块$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 粘土岩, 红花岗岩, 页岩",
       "title": "白钨矿, 钨酸锂",
       "type": "patchouli:text",
       "anchor": "mars_tungsten"
@@ -491,7 +491,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 闪长岩, 页岩",
       "title": "皂石, 滑石, 海绿石矿砂",
       "type": "patchouli:text",
       "anchor": "mars_lubricant"
@@ -623,7 +623,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/210$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 闪长岩",
       "title": "盐, 锂辉石",
       "type": "patchouli:text",
       "anchor": "mars_salt"
@@ -650,7 +650,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "盐",
+      "name": "石鹽",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -670,7 +670,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "岩盐",
+      "name": "钾石盐",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -685,7 +685,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 钾, 氯$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 钾, 氯, 肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -715,7 +715,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/210$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 页岩",
       "title": "石英岩, 石棉, 重晶石",
       "type": "patchouli:text",
       "anchor": "mars_quartzite"
@@ -807,7 +807,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 9$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 泥板岩, 粗面岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 0 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 9$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 泥板岩, 粗面岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
       "title": "石墨, 钻石",
       "type": "patchouli:text",
       "anchor": "mars_graphite"
@@ -899,7 +899,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/250$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 55$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白垩岩, 石灰岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/250 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 55$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白垩岩, 石灰岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 页岩",
       "title": "硅镁镍矿, 辉钴矿",
       "type": "patchouli:text",
       "anchor": "mars_nickel"
@@ -991,7 +991,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 玄武岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 英安岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 玄武岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 英安岩, 页岩",
       "title": "磷灰石, 烧绿石",
       "type": "patchouli:text",
       "anchor": "mars_apatite"
@@ -1083,7 +1083,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/370$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 石灰岩, 粘土岩, 英安岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/370 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -20 — 0$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 石灰岩, 粘土岩, 英安岩, 页岩",
       "title": "红石, 铬铁矿",
       "type": "patchouli:text",
       "anchor": "deep_mars_chromite"
@@ -1150,7 +1150,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/350$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): -20 — 50$(br)$(thing)高度$(): 40$(br)$(thing)半径$(): 8$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/350 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): -20 — 50$(br)$(thing)高度$(): 40$(br)$(thing)半径$(): 8$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "绿宝石, 铍矿",
       "type": "patchouli:text",
       "anchor": "mars_beryllium"
@@ -1217,7 +1217,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/210$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 石灰岩, 砾岩, 粘土岩, 红花岗岩, 英安岩",
       "title": "赤铁矿, 褐铁矿",
       "type": "patchouli:text",
       "anchor": "mars_hematite"
@@ -1309,7 +1309,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/140$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "赤铁矿, 褐铁矿",
       "type": "patchouli:text",
       "anchor": "mars_surface_hematite"
@@ -1401,7 +1401,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/140$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "辉铋矿",
       "type": "patchouli:text",
       "anchor": "mars_surface_bismuthinite"
@@ -1493,7 +1493,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/230$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 白垩岩, 粘土岩, 花岗岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/230 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 燧石, 白垩岩, 粘土岩, 花岗岩, 辉长岩, 闪长岩, 页岩",
       "title": "金矿, 蓝石, 铝土矿",
       "type": "patchouli:text",
       "anchor": "mars_gold"
@@ -1585,7 +1585,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/280$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 65$(br)$(thing)高度$(): 8$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白云岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/280 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 65$(br)$(thing)高度$(): 8$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白云岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 辉长岩, 闪长岩, 页岩",
       "title": "铁铝榴石, 蓝宝石",
       "type": "patchouli:text",
       "anchor": "mars_almandine"
@@ -1692,7 +1692,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 英安岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 玄武岩, 白云岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 英安岩, 页岩",
       "title": "铜矿, 黄铜矿",
       "type": "patchouli:text",
       "anchor": "mars_copper"
@@ -1784,7 +1784,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/215$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/215 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 页岩",
       "title": "银矿, 方铅矿, 铅矿",
       "type": "patchouli:text",
       "anchor": "mars_galena"
@@ -1876,7 +1876,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/135$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/135 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "锡石矿",
       "type": "patchouli:text",
       "anchor": "mars_surface_cassiterite"
@@ -1943,7 +1943,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/230$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 42$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 辉长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/230 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 42$(br)$(thing)指示器最大深度$(): 15$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 石灰岩, 粗面岩, 粘土岩, 红花岗岩, 辉长岩, 页岩",
       "title": "锰矿, 钽矿",
       "type": "patchouli:text",
       "anchor": "mars_tantalite"
@@ -2035,7 +2035,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/150$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/150 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "闪锌矿, 方铅矿",
       "type": "patchouli:text",
       "anchor": "mars_surface_nickel_galena"
@@ -2142,7 +2142,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/215$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 粗面岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/215 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白垩岩, 粗面岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
       "title": "闪锌矿, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "mars_sulfur"
@@ -2234,7 +2234,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/200$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白云岩, 白垩岩, 石灰岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/200 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 30$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 白云岩, 白垩岩, 石灰岩, 页岩",
       "title": "青金石, 蓝金石, 方钠石",
       "type": "patchouli:text",
       "anchor": "mars_lapis"
@@ -2326,7 +2326,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/140$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 80 — 180$(br)$(thing)尺寸$(): 45$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 石灰岩, 砾岩, 粗面岩, 粘土岩, 红花岗岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "黝铜矿 (地表)",
       "type": "patchouli:text",
       "anchor": "mars_surface_tetrahedrite"
@@ -2418,7 +2418,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/210$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 粗面岩, 红花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 40$(br2)$(thing)岩石类型$(): 泥板岩, 燧石, 玄武岩, 白云岩, 白垩岩, 粗面岩, 红花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
       "title": "黝铜矿 (普通)",
       "type": "patchouli:text",
       "anchor": "mars_stibnite"

@@ -41,6 +41,7 @@ function removeGreateRecipes(event) {
 		event.remove({ id: `gtceu:extractor/extract_${tier}` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_shaft` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_cogwheel` })
+		event.remove({ id: `gtceu:extractor/extract_large_${tier}_cogwheel` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_alloy` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_gearbox` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_vertical_gearbox` })
@@ -81,4 +82,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb_block'})
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
+
+	event.remove({ id: 'greate:mixing/brass_ingot' })
+	event.remove({ id: /^greate:.*\/integration\/createaddition/ })
 }

@@ -97,29 +97,7 @@ function addMaterialRecyclingNoTagPrefix(event, inputItem, material, recipeSuffi
 	// Remove existing macerator recipes because Greate
 	removeMaceratorRecipe(event, `macerate_${materialName}_${recipeSuffix}`);
 
-	const maceratorOutput = ChemicalHelper.getDust(material, GTValues.M * ingotAmount);
-	if (!maceratorOutput.isEmpty()) {
-		event.recipes.gtceu.macerator(`tfg:macerate_${materialName}_${recipeSuffix}`)
-			.itemInputs(inputItem)
-			.itemOutputs(maceratorOutput)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING)
-			.duration(material.getMass() * ingotAmount)
-			.EUt(2);
-	}
-
-	const arcOutput = ChemicalHelper.getIngot(material, GTValues.M * ingotAmount);
-	if (!arcOutput.isEmpty()) {
-		event.recipes.gtceu.arc_furnace(`tfg:arc_${materialName}_${recipeSuffix}`)
-			.itemInputs(inputItem)
-			.itemOutputs(arcOutput)
-			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-			.duration(material.getMass() * ingotAmount)
-			.EUt(30);
-	}
-
-	let matmap = {};
-	matmap[materialName] = ingotAmount;
-	TFGHelpers.registerMaterialInfo(inputItem, matmap);
+	TFGHelpers.registerMaterialInfo(inputItem, [material, ingotAmount]);
 }
 
 /**
@@ -157,10 +135,14 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	if (tfcProperty !== null 
+	// Check if the material is a "castable" material (i.e., pre-iron), OR if this is for the ingot mold,
+	// which is an exception that everything can cast into
+	const canBeCasted = material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) || tagPrefixName === 'ingot';
+	if (canBeCasted
+		&& tfcProperty !== null 
 		&& ceramicMold !== null
-		&& material !== GTMaterials.WroughtIron
-		&& material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED))
+		// Liquid wrought iron doesn't exist in the TFC era
+		&& material !== GTMaterials.WroughtIron)
 	{
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
@@ -213,7 +195,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 
 	if (tfcProperty !== null) {
 
-		event.recipes.tfc.welding(outputItem, inputItem1, inputItem2, tfcProperty.getTier() - 1)
+		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyForgingBonus().copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
 			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;
@@ -228,7 +210,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	event.recipes.gtceu.forming_press(`tfg:${id}`)
 		.itemInputs(inputItem1, inputItem2, 'tfc:powder/flux')
 		.itemOutputs(outputItem)
-		.duration(material.getMass())
+		.duration(material.getMass() * 2)
 		.EUt(GTValues.VA[compactingTier]);
 }
 

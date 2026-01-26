@@ -31,6 +31,7 @@
 			dependencies: ["2F7617C0C4B330DE"]
 			description: ["{quests.low_voltage.lv_fluid_regulator.desc}"]
 			id: "47D4545452F05E37"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_fluid_regulator.subtitle}"

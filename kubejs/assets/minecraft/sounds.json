@@ -1,0 +1,210 @@
+{
+	"music.game": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "tfc:music/m0-dreams_of_the_phae",
+				"stream": true,
+				"weight": 4
+			},
+			{
+				"name": "tfc:music/m1-firmavista",
+				"stream": true,
+				"weight": 4
+			},
+			{
+				"name": "tfc:music/m2-sycamore_heights",
+				"stream": true,
+				"weight": 4
+			},
+			{
+				"name": "tfc:music/m3-terrafirmacraft",
+				"stream": true,
+				"weight": 4
+			},
+			{
+				"name": "tfc:music/m4-through_the_willows",
+				"stream": true,
+				"weight": 4
+			},
+			{
+				"name": "minecraft:music/game/creative/creative2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/swamp/aerie",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/swamp/firebugs",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/swamp/labyrinthine",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/axolotl",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/dragon_fish",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/a_familiar_room",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/an_ordinary_day",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/bromeliad",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/comforting_memories",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/crescent_dunes",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/echo_in_the_wind",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/floating_dream",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/hal1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/hal4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/infinite_amethyst",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/left_to_bloom",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/one_more_day",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/stand_tall",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/wending",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/menu/menu1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/menu/menu4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:records/blocks",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:records/mall",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:records/strad",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.menu": {
+		"replace": true,
+		"sounds": [
+			{
+				"name": "tfc:music/m0-dreams_of_the_phae",
+				"stream": true
+			},
+			{
+				"name": "tfc:music/m1-firmavista",
+				"stream": true
+			},
+			{
+				"name": "tfc:music/m2-sycamore_heights",
+				"stream": true
+			},
+			{
+				"name": "tfc:music/m3-terrafirmacraft",
+				"stream": true
+			},
+			{
+				"name": "tfc:music/m4-through_the_willows",
+				"stream": true
+			}
+		]
+	}
+}

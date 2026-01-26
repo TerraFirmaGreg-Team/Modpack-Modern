@@ -6,7 +6,7 @@
 	"effects": {
 		"additions_sound": {
 			"sound": "tfg:ambient.lower_nether.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.lower_nether.loop",
 		"fog_color": 6840176,
@@ -20,7 +20,9 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.nether.basalt_deltas"
+			"sound": {
+				"sound_id": "tfg:music.nether"
+			}
 		},
 		"particle": {
 			"options": {

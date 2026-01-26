@@ -622,21 +622,25 @@
 				}
 				{
 					count: 3L
+					disable_toast: true
 					id: "019C4D427A06DF0E"
-					item: { Count: 3, id: "gtceu:bronze_firebox_casing" }
+					item: "gtceu:bronze_firebox_casing"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "402700D6CCD2BEF1"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7B99996072C53AD9"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6E4B41FDD286E184"
 					item: "gtceu:steam_output_bus"
 					type: "item"
@@ -691,14 +695,21 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.steam_age.circuit_boards.subtitle}"
-			tasks: [{
-				id: "2B8B038789480789"
-				item: "gtceu:resin_printed_circuit_board"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2B8B038789480789"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "171A20DD9F208437"
+					item: "tfg:artisan_table"
+					type: "item"
+				}
+			]
 			title: "{quests.steam_age.circuit_boards.title}"
-			x: -9.5d
-			y: 10.5d
+			x: -10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -992,28 +1003,33 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4EE63FDD07EC0467"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0C9D5C87DEC212D2"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "60828361A38F4E1E"
 					item: "gtceu:steam_output_bus"
 					type: "item"
 				}
 				{
 					count: 8L
+					disable_toast: true
 					id: "10EC49FF899232F6"
 					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
 					count: 8L
+					disable_toast: true
 					id: "27DDD13BE482E8A3"
 					item: "gtceu:bronze_firebox_casing"
 					type: "item"
@@ -1565,21 +1581,25 @@
 				}
 				{
 					count: 22L
+					disable_toast: true
 					id: "71D6716A2B985592"
-					item: { Count: 22, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "26D9013B4161E463"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7D354B529103D126"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "63B935735E346133"
 					item: "gtceu:steam_output_bus"
 					type: "item"
@@ -1809,36 +1829,42 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5CC7BDBF599B405A"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4998CA4B8DDF6E02"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "31A69C679FC6F99A"
 					item: "gtceu:steam_output_bus"
 					type: "item"
 				}
 				{
 					count: 12L
+					disable_toast: true
 					id: "709D4C32D2F43ABD"
 					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
 					count: 4L
+					disable_toast: true
 					id: "559F1DA9AF2EC5C3"
-					item: { Count: 4, id: "gtceu:steel_machine_casing" }
+					item: "gtceu:steel_machine_casing"
 					type: "item"
 				}
 				{
 					count: 8L
+					disable_toast: true
 					id: "769C82179FD4F75B"
-					item: { Count: 8, id: "create:metal_girder" }
+					item: "create:metal_girder"
 					type: "item"
 				}
 			]
@@ -1861,30 +1887,35 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5496E814C911D5C1"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "40181C28B6560C94"
 					item: "gtceu:steam_output_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "249376D261C69933"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
 					count: 8L
+					disable_toast: true
 					id: "790DDB716EAE9769"
-					item: { Count: 8, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
 					count: 8L
+					disable_toast: true
 					id: "266BA05C0A212C6C"
-					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					item: "gtceu:bronze_firebox_casing"
 					type: "item"
 				}
 			]
@@ -1907,36 +1938,42 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3BBEAD3334C1E3D0"
 					item: "gtceu:steam_input_hatch"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6D8C5AA895D6DC15"
 					item: "gtceu:steam_output_bus"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0D2DC79ED3C74B1F"
 					item: "gtceu:steam_input_bus"
 					type: "item"
 				}
 				{
 					count: 7L
+					disable_toast: true
 					id: "4BDAA78AC3C92713"
 					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
 					count: 3L
+					disable_toast: true
 					id: "4DFE7CD587BFFAB9"
-					item: { Count: 3, id: "gtceu:bronze_machine_casing" }
+					item: "gtceu:bronze_machine_casing"
 					type: "item"
 				}
 				{
 					count: 6L
+					disable_toast: true
 					id: "7C5983298F614109"
-					item: { Count: 6, id: "gtceu:steel_frame" }
+					item: "gtceu:steel_frame"
 					type: "item"
 				}
 			]

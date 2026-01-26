@@ -4,7 +4,6 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
-	registerBlockInteractionItemTags(event)
 	registerTFGStoneItemTags(event)
 	registerTFGFoodItemTags(event);
 	registerTFGMedicineItemTags(event);
@@ -47,6 +46,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+	
 	//#endregion
 
 	// Airplane Upgrades
@@ -109,6 +109,7 @@ const registerTFGBlockTags = (event) => {
 
 	registerTFGPrimitiveBlockTags(event)
 	registerTFGFoodBlockTags(event)
+	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)
@@ -179,6 +180,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	event.add('tfc:drinkables', 'gtceu:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
+	event.add('tfc:drinkables', 'rnr:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
