@@ -24,6 +24,14 @@
 				"type": "minecraft:white_ash"
 			},
 			"probability": 0.02
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.venus"
+			}
 		}
 	},
 	"features": [

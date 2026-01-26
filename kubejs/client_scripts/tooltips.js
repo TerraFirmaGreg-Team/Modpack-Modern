@@ -402,7 +402,7 @@ const registerTooltips = (event) => {
 	})
 
 	// Deprecated Items
-	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
+	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 

@@ -695,14 +695,21 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.steam_age.circuit_boards.subtitle}"
-			tasks: [{
-				id: "2B8B038789480789"
-				item: "gtceu:resin_printed_circuit_board"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2B8B038789480789"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "171A20DD9F208437"
+					item: "tfg:artisan_table"
+					type: "item"
+				}
+			]
 			title: "{quests.steam_age.circuit_boards.title}"
-			x: -9.5d
-			y: 10.5d
+			x: -10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
