@@ -138,7 +138,7 @@ const registerCreatedecoRecipes = (event) => {
 	//#endregion
 
 	//#region Brick Recipes
-	const dyeTypes = ['blue', 'green', 'white', 'yellow', 'black', 'red', 'brown']
+	const dyeTypes = ['black', 'red', 'gray', 'green', 'blue', 'white', 'brown']
 	
 	global.CREATE_DECO_BRICK_TYPES.forEach((type, index) => {
 		event.remove({ output: `createdeco:${type}_bricks` });
