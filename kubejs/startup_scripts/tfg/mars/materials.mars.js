@@ -99,7 +99,7 @@ function registerTFGMarsMaterials(event) {
 		.liquid()
 		.components('2x ostrum', 'iodine')
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.BRIGHT)
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.flags(GTMaterialFlags.GENERATE_GEAR)
 		.color(0xc696f2)
 		.secondaryColor(0x9b99ff)
