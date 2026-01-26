@@ -331,6 +331,9 @@ function woodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair,
 			.itemOutputs(`6x ${button}`)
 			.duration(50)
 			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.shapeless(`3x ${button}`, [pressure_plate, '#forge:tools/saws'])
+			.id(`tfg:shapeless/saw_${name}_pressure_plate_to_button`)
 	}
 }
 //#endregion

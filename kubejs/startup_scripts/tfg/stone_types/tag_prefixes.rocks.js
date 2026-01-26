@@ -1,10 +1,9 @@
 // priority: 0
 "use strict";
 
-const registerTFCTagPrefixes = (event) => {
-
-	// These ores break worldgen if removed somehow?
-	// TagPrefix.ORES.remove(TagPrefix.ore)
+const registerTFGRocksTagPrefixes = (event) => {
+	
+	TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
 	TagPrefix.ORES.remove(TagPrefix.oreTuff)
 	TagPrefix.ORES.remove(TagPrefix.oreSand)
 	TagPrefix.ORES.remove(TagPrefix.oreRedSand)
@@ -13,24 +12,22 @@ const registerTFCTagPrefixes = (event) => {
 	TagPrefix.ORES.remove(TagPrefix.oreEndstone)
 	TagPrefix.ORES.remove(TagPrefix.oreNetherrack)
 	TagPrefix.ORES.remove(TagPrefix.oreBlackstone)
-
 	TagPrefix.ORES.remove(TagPrefix.oreBasalt)
 	TagPrefix.ORES.remove(TagPrefix.oreAndesite)
 	TagPrefix.ORES.remove(TagPrefix.oreDiorite)
 	TagPrefix.ORES.remove(TagPrefix.oreGranite)
+	TagPrefix.ORES.remove(TagPrefix.oreRedGranite)
 
 	const shouldGenerateOre = (material) => {
-		return material.hasProperty(PropertyKey.ORE) && material !== GTMaterials.Plutonium239;
+		return material.hasProperty(PropertyKey.ORE);
 	}
 
 	global.TFC_STONE_TYPES.forEach(stoneTypeName => {
-		const material = GTCEuAPI.materialManager.getMaterial(stoneTypeName)
 
 		event.create(`${stoneTypeName}`, 'ore')
 			.stateSupplier(() => Block.getBlock('minecraft:stone').defaultBlockState())
 			.baseModelLocation(`tfc:block/rock/raw/${stoneTypeName}`)
 			.unificationEnabled(true)
-			.materialSupplier(() => material)
 			.materialIconType(GTMaterialIconType.ore)
 			.generationCondition(shouldGenerateOre)
 
@@ -48,9 +45,17 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
-		.materialSupplier(() => GTMaterials.Blackstone)
 		
 	TFGHelpers.registerCobbleBlock('pyroxenite', 'tfg:rock/cobble_blackstone');
+
+	event.create('deepslate', 'ore')
+		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
+		.baseModelLocation('minecraft:block/deepslate')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('deepslate', 'minecraft:cobbled_deepslate');
 
 	event.create('dripstone', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:dripstone_block').defaultBlockState())
@@ -58,7 +63,6 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(shouldGenerateOre)
-		.materialSupplier(() => GTCEuAPI.materialManager.getMaterial('dripstone'))
 		
 	TFGHelpers.registerCobbleBlock('dripstone', 'tfg:rock/cobble_dripstone');
 
@@ -115,4 +119,13 @@ const registerTFCTagPrefixes = (event) => {
 		.generationCondition(shouldGenerateOre)
 
 	TFGHelpers.registerCobbleBlock('glacio_stone', 'ad_astra:glacio_cobblestone');
+
+	event.create('red_granite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_red_granite').defaultBlockState())
+		.baseModelLocation('gtceu:block/red_granite')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('red_granite', 'gtceu:red_granite_cobblestone');
 }

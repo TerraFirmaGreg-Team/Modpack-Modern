@@ -55,6 +55,25 @@ function registerTFGRubberRecipes(event) {
 		.duration(750)
 		.EUt(20)
 
+	
+	// Vaccuming rubber wood stuff for latex
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), '#tfg:latex_logs')
+		.processingTime(300 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 25), '#tfg:rubber_saplings')
+		.processingTime(150 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 10), '#tfg:rubber_leaves')
+		.processingTime(75 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:latex', 100), ['#tfg:rubber_plants', 'tfc:powder/soda_ash', Fluid.of('tfc:salt_water', 50)])
+		.heated()
+		.processingTime(20 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/latex_from_rubber_plants')
+
 	// Sticky resin
 	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
@@ -64,21 +83,51 @@ function registerTFGRubberRecipes(event) {
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
+	event.recipes.firmalife.vat()
+		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000))
+		.outputItem('gtceu:sticky_resin')
+		.id('tfg:vat/latex_to_sticky_resin');
+
+	event.recipes.firmalife.vat()
+		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000))
+		.outputItem('gtceu:sticky_resin')
+		.id('tfg:vat/conifer_pitch_to_sticky_resin');
+	
+	event.recipes.greate.mixing('gtceu:sticky_resin', [Fluid.of('tfg:latex', 1000), 'tfc:powder/wood_ash'])
+		.recipeTier(1)
+		.heated()
+		.id('tfg:create/mixer/sticky_resin_from_latex');
+		
+	event.recipes.greate.mixing('gtceu:sticky_resin', [Fluid.of('tfg:conifer_pitch', 1000), 'tfc:powder/wood_ash'])
+		.recipeTier(1)
+		.heated()
+		.id('tfg:create/mixer/sticky_resin_from_pitch');
+
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(30)
+		.EUt(16)
 		.itemInputs('tfc:powder/wood_ash')
-		.itemOutputs('gtceu:sticky_resin')
+		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/pitch_to_sticky_resin')
 		.duration(12 * 20)
-		.EUt(30)
+		.EUt(16)
 		.itemInputs('tfc:powder/wood_ash')
-		.itemOutputs('gtceu:sticky_resin')
+		.itemOutputs('2x gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))
-
+		
+	// Rubber
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:rubber', 144), '#forge:dusts/rubber')
+		.heated()
+		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/rubber')
+	
 	// Rubber Processing Line
+	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
+		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
+		.id('tfg:pot/vulcanized_latex')
+
 	event.recipes.firmalife.vat()
 		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
 		.outputFluid(Fluid.of('tfg:vulcanized_latex', 1000))
@@ -86,16 +135,18 @@ function registerTFGRubberRecipes(event) {
 		.temperature(300)
 		.id('tfg:vat/vulcanized_latex')
 
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
-		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
-		.id('tfg:pot/vulcanized_latex')
-
 	event.recipes.gtceu.chemical_reactor('tfg:latex_to_vulcanized_latex')
 		.duration(100)
 		.EUt(20)
 		.itemInputs('tfc:powder/sulfur')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
 		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
+
+	// Raw rubber pulp
+	event.recipes.vintageimprovements.pressurizing('#forge:dusts/raw_rubber', Fluid.of('tfg:vulcanized_latex', 250))
+		.heated()
+		.processingTime(60 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/pressurizing/vulcanized_latex_to_raw_rubber')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:vulcanized_latex_to_raw_rubber_pulp')
 		.duration(100)
@@ -127,7 +178,7 @@ function registerTFGRubberRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex`)
-		.itemInputs('16x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
+		.itemInputs('10x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
 		.circuit(1)
 		.outputFluids(Fluid.of('tfg:latex', 1000))
 		.duration(200)

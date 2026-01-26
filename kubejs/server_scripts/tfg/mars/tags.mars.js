@@ -107,6 +107,18 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfg:charnia', 'betterend:charnia_light_blue')
 	event.add('tfg:charnia', 'betterend:charnia_purple')
 	event.add('tfg:charnia', 'betterend:charnia_red')
+
+	event.add('tfg:mars_plants', 'minecraft:weeping_vines')
+	event.add('tfg:mars_plants', 'minecraft:pitcher_plant')
+	event.add('tfg:mars_plants', 'minecraft:torchflower')
+	
+	event.add('tfc:makes_cyan_dye', 'minecraft:pitcher_plant')
+	event.add('tfc:makes_orange_dye', 'minecraft:torchflower')
+
+	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/crimson')
+	event.add('tfc:compost_greens_low', 'beneath:wood/leaves/warped')
+	event.add('tfc:compost_greens_low', 'tfg:glacian_leaves')
+	event.add('tfc:compost_greens_low', '#tfg:mars_plants')
 }
 
 function registerTFGMarsBlockTags(event) {
@@ -277,11 +289,13 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/sangnum_kaolin_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_farmland')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/mars_path')
-
-	event.remove('ad_astra:destroyed_in_space', 'minecraft:pitcher_plant')
-	event.remove('ad_astra:destroyed_in_space', 'minecraft:torchflower')
-	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry')
-	event.remove('ad_astra:destroyed_in_space', 'tfg:blossom_berry_wild')
+	event.add('tfg:do_not_destroy_in_space', 'minecraft:pitcher_plant')
+	event.add('tfg:do_not_destroy_in_space', 'minecraft:torchflower')
+	
+	event.remove('minecraft:tall_flowers', 'minecraft:pitcher_plant')
+	event.remove('minecraft:small_flowers', 'minecraft:torchflower')
+	event.remove('minecraft:flowers', 'minecraft:pitcher_plant')
+	event.remove('minecraft:flowers', 'minecraft:torchflower')
 
 	event.add('tfc:can_landslide', 'tfg:grass/mars_dirt')
 	event.add('tfc:can_landslide', 'tfg:grass/mars_clay_dirt')
@@ -326,22 +340,6 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:decorative_plant_attachable', 'tfg:warped_wart_block')
 	event.add('tfg:decorative_plant_attachable', 'betterend:cave_bush')
 	event.add('tfg:decorative_plant_attachable', 'betterend:lucernia_leaves')
-
-	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/black_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/white_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/brown_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/red_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/yellow_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/pink_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/green_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/moon_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
-	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
 }
 
 function registerTFGMarsBiomeTags(event) {

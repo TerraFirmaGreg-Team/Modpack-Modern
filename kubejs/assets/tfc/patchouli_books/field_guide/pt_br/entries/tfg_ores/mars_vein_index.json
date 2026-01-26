@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/280$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 65$(br)$(thing)Altura$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/280 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 65$(br)$(thing)Altura$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
       "title": "Almandine & Sapphire",
       "type": "patchouli:text",
       "anchor": "mars_almandine"
@@ -136,7 +136,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Folhelho, Giz, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Folhelho, Giz, Red Granite, Traquito",
       "title": "Apatita e Pirocloro",
       "type": "patchouli:text",
       "anchor": "mars_apatite"
@@ -228,7 +228,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/215$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Diorito, Dolomito, Gabro, Giz, Traquito",
+      "text": "$(thing)Raridade$(): 1/215 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Diorito, Dolomito, Gabro, Giz, Traquito",
       "title": "Bastnasita e Monazita",
       "type": "patchouli:text",
       "anchor": "mars_neodynium"
@@ -320,7 +320,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/140$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/140 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Bismuto",
       "type": "patchouli:text",
       "anchor": "mars_surface_bismuthinite"
@@ -412,7 +412,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/370$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Conglomerado, Dacito, Diorito, Giz, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/370 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Conglomerado, Dacito, Diorito, Giz, Red Granite, Traquito",
       "title": "Bornite & Cooperite",
       "type": "patchouli:text",
       "anchor": "deep_mars_sheldonite"
@@ -504,7 +504,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/135$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/135 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Cassiterita",
       "type": "patchouli:text",
       "anchor": "mars_surface_cassiterite"
@@ -571,7 +571,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/215$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 10$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Conglomerado, Dacito, Diorito, Dolomito, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/215 chunks$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 10$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Conglomerado, Dacito, Diorito, Dolomito, Giz, Granito, Red Granite, Traquito",
       "title": "Coal & Hematite",
       "type": "patchouli:text",
       "anchor": "mars_coal"
@@ -623,7 +623,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Folhelho, Traquito",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Folhelho, Traquito",
       "title": "Cobre e Calcopirita",
       "type": "patchouli:text",
       "anchor": "mars_copper"
@@ -715,7 +715,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/215$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Gabro, Giz, Granito, Traquito",
+      "text": "$(thing)Raridade$(): 1/215 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Gabro, Giz, Granito, Traquito",
       "title": "Esfalerita e Pirita",
       "type": "patchouli:text",
       "anchor": "mars_sulfur"
@@ -807,7 +807,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/350$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -20 — 50$(br)$(thing)Altura$(): 40$(br)$(thing)Raio$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/350 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -20 — 50$(br)$(thing)Altura$(): 40$(br)$(thing)Raio$(): 8$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Esmeralda e Berílio",
       "type": "patchouli:text",
       "anchor": "mars_beryllium"
@@ -874,7 +874,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/250$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Dacito, Folhelho, Giz, Granito, Red Granite",
+      "text": "$(thing)Raridade$(): 1/250 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Dacito, Folhelho, Giz, Granito, Red Granite",
       "title": "Garnierita e Cobaltita",
       "type": "patchouli:text",
       "anchor": "mars_nickel"
@@ -966,7 +966,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/230$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Cherte, Diorito, Folhelho, Gabro, Giz, Granito",
+      "text": "$(thing)Raridade$(): 1/230 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Cherte, Diorito, Folhelho, Gabro, Giz, Granito",
       "title": "Gold, Electrotine, & Bauxite",
       "type": "patchouli:text",
       "anchor": "mars_gold"
@@ -1058,7 +1058,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Argilita, Dacito, Diorito, Gabro, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 0 — 120$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 9$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Argilita, Dacito, Diorito, Gabro, Granito, Red Granite, Traquito",
       "title": "Grafite e Diamante",
       "type": "patchouli:text",
       "anchor": "mars_graphite"
@@ -1150,7 +1150,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/210$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Red Granite",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Conglomerado, Dacito, Dolomito, Red Granite",
       "title": "Hematita e Limonita",
       "type": "patchouli:text",
       "anchor": "mars_hematite"
@@ -1242,7 +1242,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/140$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/140 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Hematita e Limonita",
       "type": "patchouli:text",
       "anchor": "mars_surface_hematite"
@@ -1334,7 +1334,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/200$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Calcário, Cherte, Dolomito, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/200 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Calcário, Cherte, Dolomito, Folhelho, Giz",
       "title": "Lápis-lazúri, Lazurita e Sodalita",
       "type": "patchouli:text",
       "anchor": "mars_lapis"
@@ -1426,7 +1426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/230$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 42$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Folhelho, Gabro, Giz, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/230 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 42$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Folhelho, Gabro, Giz, Red Granite, Traquito",
       "title": "Manganês e Tântalo",
       "type": "patchouli:text",
       "anchor": "mars_tantalite"
@@ -1518,7 +1518,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 55.00000000000001%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 55%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Red Granite, Traquito",
       "title": "Pitchblende & Thorianite, & Hematite",
       "type": "patchouli:text",
       "anchor": "mars_pitchblende"
@@ -1540,7 +1540,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 41%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 41%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Radioativo (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1560,7 +1560,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
+      "text": "$(thing)Porcentagem$(): 29%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Radioativo (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1585,7 +1585,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/370$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Dacito, Diorito, Folhelho, Gabro, Traquito",
+      "text": "$(thing)Raridade$(): 1/370 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Dacito, Diorito, Folhelho, Gabro, Traquito",
       "title": "Pitchblende, Thorianite, & Uraninite",
       "type": "patchouli:text",
       "anchor": "deep_mars_pitchblende"
@@ -1607,7 +1607,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 52%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 52%$(br)$(thing)Fonte de$(): Urânio, Tório, Chumbo$(br)$(thing)Fórmula$(): (UO₂)₃ThPb$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Radioativo (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1627,7 +1627,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂",
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Fonte de$(): Tório$(br)$(thing)Fórmula$(): ThO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Radioativo (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1647,12 +1647,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Carcinogênico (Qualquer Contato)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 21%$(br)$(thing)Fonte de$(): Urânio$(br)$(thing)Fórmula$(): UO₂$(br)$(thing)Perigo$(): $(c)$(t:Requer Proteção Completa)Radioativo (Qualquer Contato)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/215$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Cherte, Dacito, Folhelho, Gabro, Giz, Granito, Red Granite",
+      "text": "$(thing)Raridade$(): 1/215 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Cherte, Dacito, Folhelho, Gabro, Giz, Granito, Red Granite",
       "title": "Prata, Galena e Chumbo",
       "type": "patchouli:text",
       "anchor": "mars_galena"
@@ -1744,14 +1744,14 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/210$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Folhelho, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Folhelho, Giz, Granito, Red Granite, Traquito",
       "title": "Quartzite, Asbestos, & Barite",
       "type": "patchouli:text",
       "anchor": "mars_quartzite"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartzito",
+      "name": "Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -1836,7 +1836,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/370$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Dacito, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/370 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -20 — 0$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Dacito, Folhelho, Giz",
       "title": "Redstone & Chromite",
       "type": "patchouli:text",
       "anchor": "deep_mars_chromite"
@@ -1903,7 +1903,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/210$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Cherte, Diorito, Giz, Granito, Red Granite, Traquito",
       "title": "Salts & Spodumene",
       "type": "patchouli:text",
       "anchor": "mars_salt"
@@ -1930,7 +1930,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sal",
+      "name": "Halita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -1950,7 +1950,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sal-gema",
+      "name": "Silvita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -1965,7 +1965,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Potássio, Cloro$(br)$(thing)Fórmula$(): KCl",
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Fonte de$(): Potássio, Cloro, Fertilizante$(br)$(thing)Fórmula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1995,7 +1995,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/280$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Dolomito, Folhelho, Giz, Red Granite",
+      "text": "$(thing)Raridade$(): 1/280 chunks$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilito, Basalto, Calcário, Cherte, Dolomito, Folhelho, Giz, Red Granite",
       "title": "Sheelita e Tungstato",
       "type": "patchouli:text",
       "anchor": "mars_tungsten"
@@ -2087,7 +2087,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/150$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/150 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Sphalerite & Galena",
       "type": "patchouli:text",
       "anchor": "mars_surface_nickel_galena"
@@ -2194,7 +2194,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/210$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Basalto, Cherte, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Red Granite, Traquito",
       "title": "Tetraedrita (Normal)",
       "type": "patchouli:text",
       "anchor": "mars_stibnite"
@@ -2286,7 +2286,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/140$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
+      "text": "$(thing)Raridade$(): 1/140 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Tamanho$(): 45$(br)$(thing)Profundidade Máxima do Indicador$(): 40$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Gabro, Giz, Granito, Red Granite, Traquito",
       "title": "Tetraedrita (Superfície)",
       "type": "patchouli:text",
       "anchor": "mars_surface_tetrahedrite"
@@ -2378,7 +2378,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Granito, Red Granite",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 40$(br)$(thing)Profundidade Máxima do Indicador$(): 15$(br2)$(thing)Tipos de Pedra$(): Argilita, Argilito, Calcário, Conglomerado, Dacito, Diorito, Dolomito, Folhelho, Granito, Red Granite",
       "title": "Trona, Talc, & Glauconite",
       "type": "patchouli:text",
       "anchor": "mars_lubricant"

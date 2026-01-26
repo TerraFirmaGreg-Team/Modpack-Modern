@@ -242,14 +242,13 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('gold')
 		.box(3, 0, 3, 13, 6, 13)
 
-	const flavolite = [ 'flavolite', 'flavolite_bricks', 'flavolite_polished', 'flavolite_tiles' ];
-	flavolite.forEach(f => {
-		event.create(`betterend:${f}`)
-			.soundType('deepslate')
-			.mapColor('sand')
-			.requiresTool(true)
-			.tagBlock('minecraft:mineable/pickaxe')
-	})
+
+	event.create(`betterend:flavolite`, 'tfc:raw_rock')
+		.soundType('deepslate')
+		.mapColor('sand')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.naturallySupported(false)
 
 	event.create(`betterend:flavolite_pillar`)
 		.property(BlockProperties.AXIS)
@@ -259,28 +258,36 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	const jadestone = [ 'sandy_jadestone', 'sandy_jadestone_bricks', 'sandy_jadestone_polished', 'sandy_jadestone_tiles' ];
-	jadestone.forEach(j => {
-		event.create(`betterend:${j}`)
-			.soundType('stone')
-			.mapColor('color_light_green')
+	const flavolite = [ 'flavolite_bricks', 'flavolite_polished', 'flavolite_tiles' ];
+	flavolite.forEach(f => {
+		event.create(`betterend:${f}`)
+			.soundType('deepslate')
+			.mapColor('sand')
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
+
+
+	event.create(`betterend:sandy_jadestone`, 'tfc:raw_rock')
+		.soundType('stone')
+		.mapColor('grass')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.naturallySupported(false)
 
 	event.create(`betterend:sandy_jadestone_pillar`)
 		.property(BlockProperties.AXIS)
 		.placementState((event) => event.set(BlockProperties.AXIS, event.clickedFace.axis))
 		.soundType('stone')
-		.mapColor('color_light_green')
+		.mapColor('grass')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 
-	const sulphuric_rock = [ 'sulphuric_rock', 'sulphuric_rock_bricks', 'sulphuric_rock_polished', 'sulphuric_rock_tiles' ];
-	sulphuric_rock.forEach(s => {
-		event.create(`betterend:${s}`)
-			.soundType('dripstone_block')
-			.mapColor('terracotta_light_gray')
+	const jadestone = [ 'sandy_jadestone_bricks', 'sandy_jadestone_polished', 'sandy_jadestone_tiles' ];
+	jadestone.forEach(j => {
+		event.create(`betterend:${j}`)
+			.soundType('stone')
+			.mapColor('grass')
 			.requiresTool(true)
 			.tagBlock('minecraft:mineable/pickaxe')
 	})
@@ -292,6 +299,15 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('terracotta_light_gray')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+
+	const sulphuric_rock = [ 'sulphuric_rock', 'sulphuric_rock_bricks', 'sulphuric_rock_polished', 'sulphuric_rock_tiles' ];
+	sulphuric_rock.forEach(s => {
+		event.create(`betterend:${s}`)
+			.soundType('dripstone_block')
+			.mapColor('terracotta_light_gray')
+			.requiresTool(true)
+			.tagBlock('minecraft:mineable/pickaxe')
+	})
 
 	// Plants
 

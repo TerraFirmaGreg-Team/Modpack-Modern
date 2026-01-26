@@ -14,6 +14,11 @@
 			"text": "Hellbricks are a building block that are also used for the Hellforge."
 		},
 		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ancient_altar",
+			"text": "The Pyroxenite Pedestal can be used to display items you want to show off!"
+		},
+		{
 			"type": "patchouli:crafting",
 			"recipe": "beneath:crafting/blackstone_brick",
 			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."

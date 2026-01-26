@@ -1,204 +1,204 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Каталог земных деревьев",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tree in the world, and what climates they grow in.$(br2)Looking for particular wood type to decorate your base? This should help you find it. The list is sorted alphabetically by wood type.$(br2)Also check out the $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
+			"text": "Это список всех деревьев в мире и климатических условий, в которых они растут.$(br2)Ищешь определенный вид древесины для украшения твоей базы? Это поможет тебе его найти. Список отсортирован по алфавиту по типу древесины.$(br2)Так же можешь посмотреть на $(l:tfc:tfg_tips/mars_tree_index)Каталог марсианских грибов$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "Акация",
 			"item": "tag:tfc:acacia_logs",
-			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
+			"text": "$(bold)Кручёная акация$()$(br)$(thing)Осадки$(): 90 — 275мм$(br)$(thing)Температура$(): 13.4 — 40°C$(br2)$(bold)Акация Коа$()$(br)$(thing)Осадки$(): 350 — 500мм$(br)$(thing)Температура$(): 15.3 — 24.4°C$(br2)$(bold)Сенегальская акация$()$(br)$(thing)Осадки$(): 90 — 275мм$(br)$(thing)Температура$(): 11.6 — 40°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ash",
+			"title": "Ясень",
 			"item": "tag:tfc:ash_logs",
-			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
+			"text": "$(bold)Ясень$()$(br)$(thing)Осадки$(): 60 — 240мм$(br)$(thing)Температура$(): -13.9 — 0.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aspen, Poplar",
+			"title": "Осина, тополь",
 			"item": "tag:tfc:aspen_logs",
-			"text": "$(bold)Quaking Aspen$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): -15.7 — -1.1°C$(br2)$(bold)Poplar$()$(br)$(thing)Rainfall$(): 170 — 310mm$(br)$(thing)Temperature$(): -15.7 — -6.6°C"
+			"text": "$(bold)Осина$()$(br)$(thing)Осадки$(): 350 — 500мм$(br)$(thing)Температура$(): -15.7 — -1.1°C$(br2)$(bold)Тополь$()$(br)$(thing)Осадки$(): 170 — 310мм$(br)$(thing)Температура$(): -15.7 — -6.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Baobab",
+			"title": "Баобаб",
 			"item": "tag:afc:baobab_logs",
-			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
+			"text": "$(bold)Баобаб$()$(br)$(thing)Осадки$(): 30 — 190мм$(br)$(thing)Температура$(): 15.3 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Birch",
+			"title": "Берёза",
 			"item": "tag:tfc:birch_logs",
-			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
+			"text": "$(bold)Берёза$()$(br)$(thing)Осадки$(): 125 — 310мм$(br)$(thing)Температура$(): -13.9 — 2.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Blackwood",
+			"title": "Гренадил",
 			"item": "tag:tfc:blackwood_logs",
-			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Rainfall$(): 85 — 285mm$(br)$(thing)Temperature$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Rainfall$(): 35 — 150mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Чернодревесный мпинго$()$(br)$(thing)Осадки$(): 85 — 285мм$(br)$(thing)Температура$(): 13.4 — 22.5°C$(br2)$(bold)Безжилковая акация$()$(br)$(thing)Осадки$(): 35 — 150мм$(br)$(thing)Температура$(): 9.8 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cedar",
+			"title": "Кедр",
 			"item": "tag:tfc:white_cedar_logs",
-			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
+			"text": "$(bold)Белый кедр$()$(br)$(thing)Осадки$(): 100 — 220мм$(br)$(thing)Температура$(): -13.9 — 4.3°C$(br2)$(bold)Атласский кедр$()$(br)$(thing)Осадки$(): 165 — 500мм$(br)$(thing)Температура$(): 8.0 — 13.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chestnut",
+			"title": "Каштан",
 			"item": "tag:tfc:chestnut_logs",
-			"text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
+			"text": "$(bold)Каштан$()$(br)$(thing)Осадки$(): 150 — 300мм$(br)$(thing)Температура$(): -6.6 — 11.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cypress, Redcedar",
+			"title": "Кипарис, красный кедр",
 			"item": "tag:afc:cypress_logs",
-			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
+			"text": "$(bold)Хиноки$()$(br)$(thing)Осадки$(): 100 — 260мм$(br)$(thing)Температура$(): 2.5 — 15.3°C$(br2)$(bold)Болотный кипарис$()$(br)$(thing)Осадки$(): 360 — 500мм$(br)$(thing)Температура$(): -1.1 — 15.3°C$(br2)$(bold)Плакучий кипарис$()$(br)$(thing)Осадки$(): 290 — 415мм$(br)$(thing)Температура$(): -8.4 — 4.3°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Redcedar$()$(br)$(thing)Rainfall$(): 410 — 500mm$(br)$(thing)Temperature$(): -4.8 — 9.8°C"
+			"text": "$(bold)красный кедр$()$(br)$(thing)Осадки$(): 410 — 500мм$(br)$(thing)Температура$(): -4.8 — 9.8°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "(Rainbow) Eucalyptus",
+			"title": "Эвкалипт",
 			"item": "tag:afc:eucalyptus_logs",
-			"text": "$(bold)Blue Gum$()$(br)$(thing)Rainfall$(): 170 — 325mm$(br)$(thing)Temperature$(): 8.0 — 18.9°C$(br2)$(bold)Mountain Ash$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 9.8 — 18.9°C$(br2)$(bold)Rainbow Eucalyptus$()$(br)$(thing)Rainfall$(): 300 — 450mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C"
+			"text": "$(bold)Голубой эвкалипт$()$(br)$(thing)Осадки$(): 170 — 325мм$(br)$(thing)Температура$(): 8.0 — 18.9°C$(br2)$(bold)Рябина$()$(br)$(thing)Осадки$(): 390 — 500мм$(br)$(thing)Температура$(): 9.8 — 18.9°C$(br2)$(bold)Радужный эвкалипт$()$(br)$(thing)Осадки$(): 300 — 450мм$(br)$(thing)Температура$(): 15.3 — 24.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fig, Rubber Fig",
+			"title": "Инжир, каучуконосный фикус",
 			"item": "tag:afc:fig_logs",
-			"text": "$(bold)Rusty Fig$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 18.9 — 26.2°C$(br2)$(bold)Rubber Fig$()$(br)$(thing)Rainfall$(): 290 — 400mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Фикус рубингоза$()$(br)$(thing)Осадки$(): 340 — 500мм$(br)$(thing)Температура$(): 18.9 — 26.2°C$(br2)$(bold)Каучуконосный фикус$()$(br)$(thing)Осадки$(): 290 — 400мм$(br)$(thing)Температура$(): 9.8 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fir",
+			"title": "Пихта",
 			"item": "tag:tfc:douglas_fir_logs",
-			"text": "$(bold)Douglas Fir$()$(br)$(thing)Rainfall$(): 305 — 500mm$(br)$(thing)Temperature$(): -10.3 — 6.1°C$(br2)$(bold)Mountain Fir$()$(br)$(thing)Rainfall$(): 220 — 345mm$(br)$(thing)Temperature$(): -1.1 — 11.6°C$(br2)$(bold)Balsam Fir$()$(br)$(thing)Rainfall$(): 210 — 500mm$(br)$(thing)Temperature$(): -13.9 — -1.1°C"
+			"text": "$(bold)Дугласовая пихта$()$(br)$(thing)Осадки$(): 305 — 500мм$(br)$(thing)Температура$(): -10.3 — 6.1°C$(br2)$(bold)Субальпийская пихта$()$(br)$(thing)Осадки$(): 220 — 345мм$(br)$(thing)Температура$(): -1.1 — 11.6°C$(br2)$(bold)Бальзамическая пихта$()$(br)$(thing)Осадки$(): 210 — 500мм$(br)$(thing)Температура$(): -13.9 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hevea",
+			"title": "Гевея",
 			"item": "tag:afc:hevea_logs",
-			"text": "$(bold)Hevea$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 17.1 — 26.2°C"
+			"text": "$(bold)Гевея$()$(br)$(thing)Осадки$(): 390 — 500мм$(br)$(thing)Температура$(): 17.1 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hickory",
+			"title": "Орех",
 			"item": "tag:tfc:hickory_logs",
-			"text": "$(bold)Bitternut Hickory$()$(br)$(thing)Rainfall$(): 210 — 400mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br2)$(bold)Scrub Hickory$()$(br)$(thing)Rainfall$(): 400 — 475mm$(br)$(thing)Temperature$(): 11.6 — 17.1°C"
+			"text": "$(bold)Горький орех$()$(br)$(thing)Осадки$(): 210 — 400мм$(br)$(thing)Температура$(): -6.6 — 11.6°C$(br2)$(bold)Кария флоридская$()$(br)$(thing)Осадки$(): 400 — 475мм$(br)$(thing)Температура$(): 11.6 — 17.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ipe",
+			"title": "Ипе",
 			"item": "tag:afc:ipe_logs",
-			"text": "$(bold)Yellow Ipe$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
+			"text": "$(bold)Жёлтый ипе$()$(br)$(thing)Осадки$(): 340 — 500мм$(br)$(thing)Температура$(): 11.6 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ironwood",
+			"title": "Железное дерево",
 			"item": "tag:afc:ironwood_logs",
-			"text": "$(bold)King Ironwood$()$(br)$(thing)Rainfall$(): 320 — 430mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Lebombo Ironwood$()$(br)$(thing)Rainfall$(): 150 — 230mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Horsetail Ironwood$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Верховное железное дерево$()$(br)$(thing)Осадки$(): 320 — 430мм$(br)$(thing)Температура$(): 20.7 — 40.0°C$(br2)$(bold)Лебомбо айронвуд$()$(br)$(thing)Осадки$(): 150 — 230мм$(br)$(thing)Температура$(): 20.7 — 40.0°C$(br2)$(bold)Хвощевидное железное дерево$()$(br)$(thing)Осадки$(): 340 — 500мм$(br)$(thing)Температура$(): 9.8 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Kapok",
+			"title": "Сейба",
 			"item": "tag:tfc:kapok_logs",
-			"text": "$(bold)Kapok$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 13.4 — 24.4°C$(br2)$(bold)Red Silk Cotton$()$(br)$(thing)Rainfall$(): 250 — 350mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C"
+			"text": "$(bold)Сейба$()$(br)$(thing)Осадки$(): 360 — 500мм$(br)$(thing)Температура$(): 13.4 — 24.4°C$(br2)$(bold)Хлопковое дерево$()$(br)$(thing)Осадки$(): 250 — 350мм$(br)$(thing)Температура$(): 20.7 — 40.0°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahogany",
+			"title": "Махогани",
 			"item": "tag:afc:mahogany_logs",
-			"text": "$(bold)Mahogany$()$(br)$(thing)Rainfall$(): 300 — 430mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C$(br2)$(bold)Small Leaf Mahogany$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 11.6 — 18.9°C$(br2)$(bold)Sapele Mahogany$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C"
+			"text": "$(bold)Махогани$()$(br)$(thing)Осадки$(): 300 — 430мм$(br)$(thing)Температура$(): 15.3 — 26.2°C$(br2)$(bold)Махогани свитения$()$(br)$(thing)Осадки$(): 320 — 500мм$(br)$(thing)Температура$(): 11.6 — 18.9°C$(br2)$(bold)Сапеле$()$(br)$(thing)Осадки$(): 330 — 500мм$(br)$(thing)Температура$(): 13.4 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mangrove",
+			"title": "Мангровое дерево",
 			"item": "tag:tfc:mangrove_logs",
-			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)Note: only spawns in Salt Marsh biomes"
+			"text": "$(bold)Мангровое дерево$()$(br)$(thing)Осадки$(): 220мм+$(br)$(thing)Температура$(): 18.0°C+$(br)Заметка: спавнится только в биоме пышной лощины"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Maple",
+			"title": "Клён",
 			"item": "tag:tfc:maple_logs",
-			"text": "$(bold)Sugar Maple$()$(br)$(thing)Rainfall$(): 260 — 360mm$(br)$(thing)Temperature$(): -8.4 — 8.0°C$(br2)$(bold)Bigleaf Maple$()$(br)$(thing)Rainfall$(): 405 — 500mm$(br)$(thing)Temperature$(): -4.8 — 11.6°C$(br2)$(bold)Weeping Maple$()$(br)$(thing)Rainfall$(): 240 — 320mm$(br)$(thing)Temperature$(): 0.7 — 4.3°C"
+			"text": "$(bold)Сахарный клён$()$(br)$(thing)Осадки$(): 260 — 360мм$(br)$(thing)Температура$(): -8.4 — 8.0°C$(br2)$(bold)Крупнолистный клён$()$(br)$(thing)Осадки$(): 405 — 500мм$(br)$(thing)Температура$(): -4.8 — 11.6°C$(br2)$(bold)Дланевидный клён$()$(br)$(thing)Осадки$(): 240 — 320мм$(br)$(thing)Температура$(): 0.7 — 4.3°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Oak, Black Oak",
+			"title": "Дуб, бархатистый дуб",
 			"item": "tag:tfc:oak_logs",
-			"text": "$(bold)Pin Oak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): -8.4 — 6.1°C$(br2)$(bold)Live Oak$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 0.7 — 13.4°C$(br2)$(bold)Black Oak$()$(br)$(thing)Rainfall$(): 150 — 330mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
+			"text": "$(bold)Болотный дуб$()$(br)$(thing)Осадки$(): 210 — 320мм$(br)$(thing)Температура$(): -8.4 — 6.1°C$(br2)$(bold)Каменный дуб$()$(br)$(thing)Осадки$(): 390 — 500мм$(br)$(thing)Температура$(): 0.7 — 13.4°C$(br2)$(bold)Бархатистый дуб$()$(br)$(thing)Осадки$(): 150 — 330мм$(br)$(thing)Температура$(): 11.6 — 20.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Palm",
+			"title": "Пальма",
 			"item": "tag:tfc:palm_logs",
-			"text": "$(bold)Palm$()$(br)$(thing)Rainfall$(): 0 — 250mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Jaggery Palm$()$(br)$(thing)Rainfall$(): 400 — 500mm$(br)$(thing)Temperature$(): 20.7 — 26.2°C"
+			"text": "$(bold)Пальма$()$(br)$(thing)Осадки$(): 0 — 250мм$(br)$(thing)Температура$(): 17.1 — 40.0°C$(br2)$(bold)Винная пальма$()$(br)$(thing)Осадки$(): 400 — 500мм$(br)$(thing)Температура$(): 20.7 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Pine",
+			"title": "Сосна",
 			"item": "tag:tfc:pine_logs",
-			"text": "$(bold)Boreal Pine$()$(br)$(thing)Rainfall$(): 60 — 270mm$(br)$(thing)Temperature$(): -19.4 — -3.0°C$(br2)$(bold)Stone Pine$()$(br)$(thing)Rainfall$(): 140 — 290mm$(br)$(thing)Temperature$(): 2.5 — 18.9°C$(br2)$(bold)Red Pine$()$(br)$(thing)Rainfall$(): 185 — 320mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
+			"text": "$(bold)Сосна()$(br)$(thing)Осадки$(): 60 — 270мм$(br)$(thing)Температура$(): -19.4 — -3.0°C$(br2)$(bold)Сосна пиния$()$(br)$(thing)Осадки$(): 140 — 290мм$(br)$(thing)Температура$(): 2.5 — 18.9°C$(br2)$(bold)Красная сосна$()$(br)$(thing)Осадки$(): 185 — 320мм$(br)$(thing)Температура$(): -8.4 — 4.3°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Tamarack$()$(br)$(thing)Rainfall$(): 150 — 500mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Американская лиственница$()$(br)$(thing)Осадки$(): 150 — 500мм$(br)$(thing)Температура$(): -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rosewood",
+			"title": "Палисандр",
 			"item": "tag:tfc:rosewood_logs",
-			"text": "$(bold)Shisham Rosewood$()$(br)$(thing)Rainfall$(): 245 — 360mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Giant Rosewood$()$(br)$(thing)Rainfall$(): 340 — 440mm$(br)$(thing)Temperature$(): 15.3 — 22.5°C"
+			"text": "$(bold)Индийский палисандр$()$(br)$(thing)Осадки$(): 245 — 360мм$(br)$(thing)Температура$(): 15.3 — 24.4°C$(br2)$(bold)Гигантский Палисандр$()$(br)$(thing)Осадки$(): 340 — 440мм$(br)$(thing)Температура$(): 15.3 — 22.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sequoia",
+			"title": "Секвойа",
 			"item": "tag:tfc:sequoia_logs",
-			"text": "$(bold)Sequoia$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 0.7 — 8.0°C$(br2)$(bold)Coast Redwood$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 4.3 — 9.8°C"
+			"text": "$(bold)Секвойа$()$(br)$(thing)Осадки$(): 320 — 500мм$(br)$(thing)Температура$(): 0.7 — 8.0°C$(br2)$(bold)Красная секвойа$()$(br)$(thing)Осадки$(): 320 — 500мм$(br)$(thing)Температура$(): 4.3 — 9.8°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Spruce",
+			"title": "Ель",
 			"item": "tag:tfc:spruce_logs",
-			"text": "$(bold)Blue Spruce$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -19.4 — 2.5°C$(br2)$(bold)Coast Spruce$()$(br)$(thing)Rainfall$(): 320 — 390mm$(br)$(thing)Temperature$(): -12.1 — 6.1°C$(br2)$(bold)Sitka Spruce$()$(br)$(thing)Rainfall$(): 370 — 500mm$(br)$(thing)Temperature$(): 2.5 — 8.0°C"
+			"text": "$(bold)Голубая ель$()$(br)$(thing)Осадки$(): 330 — 500мм$(br)$(thing)Температура$(): -19.4 — 2.5°C$(br2)$(bold)Побережная ель$()$(br)$(thing)Осадки$(): 320 — 390мм$(br)$(thing)Температура$(): -12.1 — 6.1°C$(br2)$(bold)Ситкинская ель$()$(br)$(thing)Осадки$(): 370 — 500мм$(br)$(thing)Температура$(): 2.5 — 8.0°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Black Spruce$()$(br)$(thing)Rainfall$(): 220 — 360mm$(br)$(thing)Temperature$(): -17.5 — -1.1°C"
+			"text": "$(bold)Чёрная ель$()$(br)$(thing)Осадки$(): 220 — 360мм$(br)$(thing)Температура$(): -17.5 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sycamore",
+			"title": "Платан",
 			"item": "tag:tfc:sycamore_logs",
-			"text": "$(bold)Sycamore$()$(br)$(thing)Rainfall$(): 330 — 480mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
+			"text": "$(bold)Платан$()$(br)$(thing)Осадки$(): 330 — 480мм$(br)$(thing)Температура$(): -6.6 — 11.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Teak",
+			"title": "Тик",
 			"item": "tag:afc:teak_logs",
-			"text": "$(bold)True Teak$()$(br)$(thing)Rainfall$(): 215 — 330mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C$(br2)$(bold)Iroko Teak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Flame of the Forest$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 13.4 — 24.4°C"
+			"text": "$(bold)Тектона великая$()$(br)$(thing)Осадки$(): 215 — 330мм$(br)$(thing)Температура$(): 13.4 — 26.2°C$(br2)$(bold)Тиковый ироко$()$(br)$(thing)Осадки$(): 210 — 320мм$(br)$(thing)Температура$(): 17.1 — 40.0°C$(br2)$(bold)Лесное пламя$()$(br)$(thing)Осадки$(): 340 — 500мм$(br)$(thing)Температура$(): 13.4 — 24.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Tualang",
+			"title": "Компассия",
 			"item": "tag:afc:tualang_logs",
-			"text": "$(bold)Tualang$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C"
+			"text": "$(bold)Компассия$()$(br)$(thing)Осадки$(): 360 — 500мм$(br)$(thing)Температура$(): 20.7 — 40.0°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Willow",
+			"title": "Ива",
 			"item": "tag:tfc:willow_logs",
-			"text": "$(bold)Corkscrew Willow$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -6.6 — 9.8°C$(br2)$(bold)Weeping Willow$()$(br)$(thing)Rainfall$(): 355 — 500mm$(br)$(thing)Temperature$(): 9.8 — 17.1°C"
+			"text": "$(bold)Ива$()$(br)$(thing)Осадки$(): 330 — 500мм$(br)$(thing)Температура$(): -6.6 — 9.8°C$(br2)$(bold)Плакучая ива$()$(br)$(thing)Осадки$(): 355 — 500мм$(br)$(thing)Температура$(): 9.8 — 17.1°C"
 		}
 	]
 

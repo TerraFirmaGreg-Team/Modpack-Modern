@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/30$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
+      "text": "$(thing)Рідкість$(): 1/30 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
       "title": "Сірка та Пірит",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -86,14 +86,14 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/30$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Висота$(): 6$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
+      "text": "$(thing)Рідкість$(): 1/30 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Розмір$(): 20$(br)$(thing)Висота$(): 6$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт, Травертин, Трахіт",
       "title": "Солі і Сподумен",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Сіль",
+      "name": "Галіт",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -113,7 +113,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кам’яна сіль",
+      "name": "Сильвін",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -128,7 +128,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Калію, Хлору$(br)$(thing)Формула$(): KCl",
+      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Джерело$(): Калію, Хлору, Добрива$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {

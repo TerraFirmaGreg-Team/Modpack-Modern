@@ -48,7 +48,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_FOIL,
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
-		NO_ORE_SMELTING
+		NO_ORE_SMELTING,
+		DISABLE_DECOMPOSITION
 	} = $MATERIAL_FLAGS
 
 	const metalTooling = [
@@ -86,6 +87,9 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.CROWBAR,
 	]
 
+	GTMaterials.Clay.addFlags(DISABLE_DECOMPOSITION);
+	GTMaterials.Brick.addFlags(DISABLE_DECOMPOSITION);
+
 
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
 	// OR			= (forging temp, welding temp, melt temp, tier)
@@ -119,8 +123,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Magnetite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
 	GTMaterials.Pyrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
 	GTMaterials.Goethite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.BasalticMineralSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.GraniticMineralSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.BasalticMineralSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 80));
+	GTMaterials.GraniticMineralSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 80));
+	GTMaterials.VanadiumMagnetite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 80));
 	
 	GTMaterials.Malachite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
 	GTMaterials.Tetrahedrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
@@ -129,7 +134,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Bornite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
 
 	GTMaterials.Cassiterite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 230, GTMaterials.Tin, 1, 100));
-	GTMaterials.CassiteriteSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, GTMaterials.Tin, 1, 85));
+	GTMaterials.CassiteriteSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, GTMaterials.Tin, 1, 80));
 	GTMaterials.Sphalerite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 420, GTMaterials.Zinc, 1, 90));
 	GTMaterials.Garnierite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1453, GTMaterials.Nickel, 1, 100));
 	GTMaterials.Pentlandite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1453, GTMaterials.Nickel, 1, 85));
@@ -388,6 +393,9 @@ const registerGTCEuMaterialModification = (event) => {
 	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, "high", GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5*20));
 	
+	// Remove properties
+	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)
+
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
 	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
@@ -451,15 +459,9 @@ const registerGTCEuMaterialModification = (event) => {
 	lyeFluidProperty.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of('tfc:lye').fluid, null);
 	GTMaterials.SodiumHydroxide.setProperty(PropertyKey.FLUID, lyeFluidProperty);
 
-	//let bismuthFluidProperty = new $FLUID_PROPERTY();
-	//bismuthFluidProperty.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder());
-	//GTMaterials.Bismuth.setProperty(PropertyKey.FLUID, bismuthFluidProperty);
-
 	// Components and formulas
 	GTMaterials.CertusQuartz.setComponents('1x unknown', '1x silicon', '2x oxygen')
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
-	GTMaterials.GraniteRed.setComponents([])
-	GTMaterials.GraniteRed.setFormula("?")
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
 }

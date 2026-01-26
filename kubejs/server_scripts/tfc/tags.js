@@ -157,6 +157,14 @@ function registerTFCItemTags(event) {
     event.add("minecraft:fishes", "tfc:food/rainbow_trout");
     event.add("minecraft:fishes", "tfc:food/smallmouth_bass");
 
+    event.add("tfc:foods/grains", "tfc:food/cooked_rice");
+    event.add("tfc:foods/grains", "tfc:food/cattail_root");
+    event.add("tfc:foods/grains", "tfc:food/taro_root");
+    event.add("tfc:foods/grains", "firmalife:food/tortilla_chips");
+    event.add("tfc:foods/grains", "firmalife:food/cooked_rice_noodles");
+    event.add("tfc:foods/grains", "firmalife:food/cooked_pasta");
+    event.add("tfc:foods/grains", "firmalife:food/toast");
+
     // Чтобы жарились бревна из TFC в пиролиз. печке
     // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
     global.TFC_WOOD_TYPES.forEach((woodType) => {
@@ -263,6 +271,12 @@ function registerTFCItemTags(event) {
     event.add("tfc:green_gravel", "tfc:rock/gravel/schist");
     // Розовый
     event.add("tfc:pink_gravel", "tfc:rock/gravel/granite");
+    
+    // Glassworking sands
+    event.add('tfc:hematitic_sand', 'minecraft:red_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:mars_sand');
+    event.add('tfc:hematitic_sand', 'ad_astra:venus_sand');
+    event.add('tfc:olivine_sand', 'ad_astra:moon_sand');
 
     // Теги для объединения наковален
     event.add("tfc:red_or_blue_anvil", "tfc:metal/anvil/blue_steel");
@@ -392,7 +406,6 @@ function registerTFCItemTags(event) {
     event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
 
     event.add("forge:mushrooms", "tfc:plant/artists_conk");
-    event.add("forge:raw_materials/sylvite", "tfc:ore/sylvite");
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
@@ -441,7 +454,11 @@ function registerTFCItemTags(event) {
         event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
         event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
         event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`)
+        event.add(`tfg:hanging_sign/${metal}/softwood`, `beneath:wood/hanging_sign/${metal}/crimson`)
     })
+
+	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 }
 
 /** @param {TagEvent.Block} event */
@@ -482,14 +499,7 @@ function registerTFCBlockTags(event) {
     event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
     event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
 
-    // Возможность обрушения руды
-    event.add("tfc:can_collapse", "#forge:ores");
-    event.add("tfc:can_start_collapse", "#forge:ores");
-    event.add("tfc:can_trigger_collapse", "#forge:ores");
-
-    event.add("tfc:monster_spawns_on", "#forge:ores");
-    event.add("tfc:prospectable", "#forge:ores");
-
+    // Glassworking blocks
     event.add("tfc:glass_basin_blocks", "create:brass_block");
     event.add("tfc:glass_pouring_table", "create:brass_block");
 
