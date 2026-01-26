@@ -38,6 +38,7 @@ function registerTFGIconSets(event) {
 	event.create('nether_quartz').parent('quartz')
 
     event.create('noodle').parent('metallic')
+    event.create('cereal_box').parent('bright')
 
     // Credits to Flare from the Cosmic Frontiers team
     event.create('chonky').parent('shiny')

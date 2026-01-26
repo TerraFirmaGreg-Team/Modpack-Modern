@@ -81,7 +81,7 @@ function registerTFGMarsMaterials(event) {
 		.components('2x pitchblende', '1x tricalcium_phosphate', '1x bauxite', '1x silver', '1x beryllium')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
-		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.ingot()
 		.liquid()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
