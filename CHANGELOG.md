@@ -7,6 +7,7 @@
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 - Added steam alloy smelter glass batch recipes (#2853) @Pyritie
+- Added the Artisan Table to "knap" GT molds and circuits. @BlueBoat29 @Redeix
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
