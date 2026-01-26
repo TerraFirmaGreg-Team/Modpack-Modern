@@ -46,6 +46,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+	
 	//#endregion
 
 	// Airplane Upgrades
