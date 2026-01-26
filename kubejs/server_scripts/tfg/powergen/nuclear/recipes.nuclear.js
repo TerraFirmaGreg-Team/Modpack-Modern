@@ -550,6 +550,7 @@ function registerTFGNuclearRecipes(event) {
 
 	event.recipes.gtceu.nuclear_turbine('dense_steam')
 		.inputFluids(Fluid.of('gtceu:dense_steam', 160))
+		.outputFluids(Fluid.of('tfg:warm_water', 40))
 		.EUt(-(32))
 		.duration(20*1.5)
 
@@ -598,22 +599,57 @@ function registerTFGNuclearRecipes(event) {
 		E: 'gtceu:iv_fluid_regulator'
 	}).id('tfg:shaped/cooling_tower')
 
+	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_1')
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:warm_water', 1000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 1000))
+		.perTick(false)
+		.EUt(1)
+		.duration(20*60)
+		.circuit(1)
+
+	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_2')
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:warm_water', 5000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 5000))
+		.perTick(false)
+		.EUt(1)
+		.duration(20*60)
+		.circuit(2)
+
+	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_3')
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:warm_water', 10000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 10000))
+		.perTick(false)
+		.EUt(1)
+		.duration(20*60)
+		.circuit(3)
+
+	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_4')
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:warm_water', 50000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 50000))
+		.perTick(false)
+		.EUt(1)
+		.duration(20*60)
+		.circuit(4)
+
 	//#endregion
 
 	//#region Heat Battery
 
     event.recipes.deafission.hb_import('tfg:boron_coolant')
-        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 1800))
-        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 1800))
+        .inputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 3600))
+        .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 3600))
         .blastFurnaceTemp(2000)
         .addData("hb_energy", 20)
-		.duration(1)
 
     event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
-        .inputFluids(Fluid.of('gtceu:distilled_water', 20))
-        .outputFluids(Fluid.of('gtceu:dense_steam', 20))
+        .inputFluids(Fluid.of('gtceu:distilled_water', 3600))
+        .outputFluids(Fluid.of('gtceu:dense_steam', 14400))
         .blastFurnaceTemp(1000)
-        .addData("hb_energy", 20)
+        .addData("hb_energy", 10)
 
     event.recipes.deafission.hb_import('tfg:dense_steam')
         .inputFluids(Fluid.of('gtceu:dense_steam', 20))

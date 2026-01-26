@@ -211,7 +211,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
 			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
 			.itemInputs(Item.of('gtceu:thorium_230_dust', 64))
-			.itemInputs(Item.of('tfg:empty_rod', 1))
+			.itemInputs(Item.of('tfg:empty_rod_t2', 1))
 			.itemOutputs(Item.of('tfg:tbu_232_rod', 1))
 			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
 			.dimension('ad_astra:mars')

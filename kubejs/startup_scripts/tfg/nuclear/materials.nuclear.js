@@ -52,6 +52,12 @@ const registerTFGNuclearMaterials = (event) => {
 
 	//#region Coolant
 
+	event.create('tfg:warm_water')
+		.liquid(new GTFluidBuilder().temperature(313))
+		.components('2x hydrogen', '1x oxygen')
+		.color(0x8de3fc)
+		.secondaryColor(0x81FFF9)
+
 	event.create('tfg:heavy_water')
 		.liquid(new GTFluidBuilder().temperature(236))
 		.components('2x deuterium', '1x oxygen')
@@ -130,7 +136,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0xfc5e03)
 
 	event.create('tritiated_water')
-		.fluid()
+		.liquid(new GTFluidBuilder().customStill())
 		.components('2x tritium', '1x oxygen')
 		.color(0xb2c3e7)
 
