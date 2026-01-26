@@ -311,6 +311,58 @@
 			"minecraft:ambient/nether/nether_wastes/mood5"
 		]
 	},
+	"music.nether": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/nether1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nether/nether_wastes/rubedo",
+				"stream": true,
+				"volume": 0.5
+			},
+			{
+				"name": "minecraft:music/game/water/axolotl",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
+				"stream": true,
+				"volume": 0.5
+			},
+			{
+				"name": "minecraft:music/game/ancestry",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.orbit": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/piano3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/calm1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/calm2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/calm3",
+				"stream": true
+			}
+		]
+	},
 	"ambient.moon.additions": {
 		"sounds": [
 			{
@@ -375,6 +427,31 @@
 			"minecraft:ambient/nether/warped_forest/mood6",
 			"minecraft:ambient/nether/warped_forest/mood7",
 			"minecraft:ambient/nether/warped_forest/mood8"
+		]
+	},
+	"music.moon": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/end/end",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/floating_dream",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/nuance1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/nuance2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative6",
+				"stream": true
+			}
 		]
 	},
 	"ambient.mars_desert.loop": {
@@ -583,6 +660,49 @@
 			"minecraft:ambient/nether/warped_forest/creak5"
 		]
 	},
+	"music.mars": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/creative/creative1",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative2",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative3",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative4",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative5",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/creative/creative6",
+				"stream": true
+			},
+			{
+				"name": "minecraft:music/game/crescent_dunes",
+				"stream": true,
+				"volume": 0.4,
+				"weight": 2
+			},
+			{
+				"name": "minecraft:records/far",
+				"stream": true
+			},
+			{
+				"name": "minecraft:records/otherside",
+				"stream": true,
+				"volume": 0.3
+			}
+		]
+	},
 	"ambient.venus_surface.loop": {
 		"sounds": [
 			{
@@ -753,6 +873,75 @@
 			"minecraft:ambient/nether/crimson_forest/shine1",
 			"minecraft:ambient/nether/crimson_forest/shine2",
 			"minecraft:ambient/nether/crimson_forest/shine3"
+		]
+	},
+	"music.venus": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/nether/nether1",
+				"stream": true,
+				"weight": 2
+			},
+			{
+				"name": "minecraft:music/game/nether/nether3",
+				"stream": true,
+				"weight": 2
+			},
+			{
+				"name": "minecraft:music/game/nether/nether4",
+				"stream": true,
+				"weight": 2
+			},
+			{
+				"name": "minecraft:music/game/nether/crimson_forest/chrysopoeia",
+				"stream": true,
+				"volume": 0.5,
+				"weight": 3
+			},
+			{
+				"name": "minecraft:music/game/nether/nether_wastes/rubedo",
+				"stream": true,
+				"volume": 0.5,
+				"weight": 3
+			},
+			{
+				"name": "minecraft:music/game/nether/soulsand_valley/so_below",
+				"stream": true,
+				"volume": 0.5,
+				"weight": 3
+			},
+			{
+				"name": "minecraft:music/game/piano3",
+				"stream": true
+			}
+		]
+	},
+	"music.mercury": {
+		"sounds": [
+			{
+				"name": "minecraft:records/13",
+				"stream": true,
+				"volume": 0.4
+			}
+		]
+	},
+	"music.europa": {
+		"sounds": [
+			{
+				"name": "minecraft:music/game/water/axolotl",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/dragon_fish",
+				"stream": true,
+				"volume": 0.4
+			},
+			{
+				"name": "minecraft:music/game/water/shuniji",
+				"stream": true,
+				"volume": 0.4
+			}
 		]
 	}
 }

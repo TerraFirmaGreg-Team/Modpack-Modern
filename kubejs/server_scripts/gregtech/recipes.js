@@ -413,4 +413,11 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('tfg:paracetamol_pill')
 		.duration(3 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Glass lens
+	event.recipes.gtceu.lathe('tfg:gt_glass_lens')
+		.itemInputs('#forge:plates/glass')
+		.itemOutputs('#forge:lenses/glass', '#forge:small_dusts/glass')
+		.duration(60 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
 }

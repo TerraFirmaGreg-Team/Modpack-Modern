@@ -103,15 +103,9 @@ function registerTFGSupportRecipes(event) {
 		.circuit(11)
 		.itemOutputs('8x tfg:rebar_support')
 		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 2), ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1))
+		.addMaterialInfo(true)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.macerator(`rebar_support_to_dust`)
-		.itemInputs(`tfg:rebar_support`)
-		.itemOutputs(`gtceu:tiny_steel_dust`)
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 	event.recipes.tfc.anvil(
 		'1x tfg:steel_support',
@@ -124,16 +118,10 @@ function registerTFGSupportRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/steel_support')
 		.circuit(11)
-		.itemOutputs('4x tfg:steel_support')
-		.itemInputs('2x #forge:double_ingots/steel')
+		.itemOutputs('2x tfg:steel_support')
+		.itemInputs('1x #forge:double_ingots/steel')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.addMaterialInfo(true)
 
-	event.recipes.gtceu.macerator("steel_support_to_dust")
-		.itemInputs('tfg:steel_support')
-		.itemOutputs('2x gtceu:steel_dust')
-		.duration(150)
-		.EUt(2)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	TFGHelpers.registerMaterialInfo('tfg:steel_support', [GTMaterials.Steel, 1])
 }
