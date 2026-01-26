@@ -73,14 +73,11 @@ const registerTFGItems = (event) => {
 	// Add item for BTX Fuel
 
 	event.create('tfg:catalyser_pt_re_zsm')
-		.translationKey('item.tfg.catalyser_pt_re_zsm')
 		.texture('tfg:item/btx/catalyser_zsm')
 
 	event.create('tfg:used_catalyser')
-		.translationKey('item.tfg.used_catalyser')
 		.texture('tfg:item/btx/used_catalyser')
 
 	event.create('tfg:loaded_resin')
-		.translationKey('item.tfg.loaded_resin')
 		.texture('tfg:item/btx/loaded_resin')
 }

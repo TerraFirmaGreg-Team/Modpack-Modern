@@ -250,4 +250,6 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs("4x tfc:powder/flux")
 		.duration(50)
 		.EUt(2);
+
+	event.shapeless('4x tfc:fire_clay', ['tfc:fire_clay_block'])
 }

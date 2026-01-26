@@ -187,14 +187,16 @@ function registerTFGClayRecipes(event) {
 		.duration(20)
 		.EUt(2)
 
-	TFGHelpers.registerMaterialInfo('tfc:blast_furnace', [GTMaterials.WroughtIron, 16, GTMaterials.get('tfg:refractory_clay_dust'), 5])
-	TFGHelpers.registerMaterialInfo('tfc:fire_bricks', [GTMaterials.get('tfg:refractory_clay_dust'), 5])
-	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_brick', [GTMaterials.get('tfg:refractory_clay_dust'), 1])
-	TFGHelpers.registerMaterialInfo('tfcchannelcasting:channel', [GTMaterials.get('tfg:refractory_clay_dust'), 5/4])
-	TFGHelpers.registerMaterialInfo('tfcchannelcasting:mold_table', [GTMaterials.get('tfg:refractory_clay_dust'), 5])
-	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_ingot_mold', [GTMaterials.get('tfg:refractory_clay_dust'), 5/2])
-	TFGHelpers.registerMaterialInfo('tfg:rod_mold', [GTMaterials.get('tfg:refractory_clay_dust'), 5])
-	TFGHelpers.registerMaterialInfo('tfg:small_gear_mold', [GTMaterials.get('tfg:refractory_clay_dust'), 5])
+	var refractoryClay = GTMaterials.get('tfg:refractory_clay');
+	TFGHelpers.registerMaterialInfo('tfc:blast_furnace', [GTMaterials.WroughtIron, 16, refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:fire_bricks', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:crucible', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_brick', [refractoryClay, 1])
+	TFGHelpers.registerMaterialInfo('tfcchannelcasting:channel', [refractoryClay, 5/4])
+	TFGHelpers.registerMaterialInfo('tfcchannelcasting:mold_table', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_ingot_mold', [refractoryClay, 5/2])
+	TFGHelpers.registerMaterialInfo('tfg:rod_mold', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfg:small_gear_mold', [refractoryClay, 5])
 
 	// Renewable clay
 	event.recipes.gtceu.rock_breaker("clay_duping")

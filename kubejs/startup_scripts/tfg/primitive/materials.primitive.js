@@ -96,31 +96,33 @@ function registerTFGPrimitiveMaterials(event) {
 		.formula("C6H3(OH)3")
 		.iconSet(GTMaterialIconSet.ROUGH)
 
-	// Weak colored steel
-
-
 	// Fire clay
-	event.create('tfg:refractory_clay_dust')
+	event.create('tfg:refractory_clay')
 		.dust()
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.color(0xB49AA2)
 		.secondaryColor(0x60545F)
 
+	// Weak colored steel
 	event.create('tfg:weak_blue_steel')
 		.dust()
 		.ingot()
 		.liquid()
 		.components('1x sterling_silver', '1x bismuth_bronze', '2x steel', '4x black_steel')
+		.blastTemp(1000, null, GTValues.VA[GTValues.MV], 25 * 20)
 		.color(0x697FBD)
 		.secondaryColor(0x384B82)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.iconSet(GTMaterialIconSet.METALLIC)
 
 	event.create('tfg:weak_red_steel')
 		.dust()
 		.ingot()
 		.liquid()
 		.components('1x brass', '1x rose_gold', '2x steel', '4x black_steel')
+		.blastTemp(1000, null, GTValues.VA[GTValues.MV], 25 * 20)
 		.color(0xB55C5C)
 		.secondaryColor(0x7D3232)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.iconSet(GTMaterialIconSet.METALLIC)
 }

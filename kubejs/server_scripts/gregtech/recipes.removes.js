@@ -838,9 +838,12 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__granite' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__diorite' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__andesite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__marble' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__redrock' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__deepslate' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blackstone' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__endstone' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__red_granite' })
 
 	removeMaceratorRecipe(event, 'macerate_end_stone');
 	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
@@ -900,6 +903,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:macerator/macerate_smooth_sandstone' })
 	event.remove({ id: 'gtceu:macerator/macerate_sandstone' })
 	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
+
+	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
 }
 
 function removeMaceratorRecipe(event, id) {

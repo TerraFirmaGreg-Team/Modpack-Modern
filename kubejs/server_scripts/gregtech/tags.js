@@ -112,5 +112,7 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
-
+    
+    event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_red_steel");
+    event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_blue_steel");
 }
