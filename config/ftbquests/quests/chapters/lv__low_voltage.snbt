@@ -10,19 +10,19 @@
 		{
 			id: "0EA7766FE6845121"
 			linked_quest: "0FFBB6177DEB0A23"
-			x: -8.0d
-			y: 11.5d
+			x: -10.0d
+			y: 13.5d
 		}
 		{
 			id: "46612C429BCA8A18"
 			linked_quest: "6BAC3BE1D4FE0F6B"
-			x: 7.5d
+			x: 17.0d
 			y: 4.0d
 		}
 		{
 			id: "5E5AD44B50E0B15B"
 			linked_quest: "31A6A236B6710B95"
-			x: 7.5d
+			x: 17.0d
 			y: 5.0d
 		}
 	]
@@ -165,8 +165,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.aluminium_ingot.title}"
-			x: -10.0d
-			y: 11.5d
+			x: -12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -391,8 +391,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_superconductor.title}"
-			x: -12.0d
-			y: 7.5d
+			x: -14.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -541,8 +541,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ebf.title}"
-			x: -10.0d
-			y: 7.5d
+			x: -12.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -559,7 +559,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.other_machines.title}"
-			x: 5.5d
+			x: 15.0d
 			y: 4.5d
 		}
 		{
@@ -586,7 +586,8 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_fluid_solidifier.desc}"]
 			id: "581CDF545E1EA1FD"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.low_voltage.lv_fluid_solidifier.subtitle}"
 			tasks: [{
 				id: "20B1CA4DB2750E84"
@@ -647,8 +648,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_coil.title}"
-			x: -8.0d
-			y: 7.5d
+			x: -10.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -748,7 +749,7 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_rotor.title}"
-			x: -9.5d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
@@ -1025,7 +1026,6 @@
 		}
 		{
 			dependencies: [
-				"0EAC071414AEC07E"
 				"330BDB559A7BAB35"
 				"63CD0236B337EAAD"
 			]
@@ -1094,8 +1094,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.aluminium_dust.title}"
-			x: -10.0d
-			y: 9.5d
+			x: -12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1166,8 +1166,8 @@
 				}
 			]
 			title: "{quests.low_voltage.multiblock_tech.title}"
-			x: -10.0d
-			y: 5.5d
+			x: -12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1235,18 +1235,8 @@
 			id: "5B891BA4897FD73C"
 			subtitle: "{quests.low_voltage.lv_mixer.subtitle}"
 			tasks: [{
-				id: "337A6B670842F80A"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						display: {
-							Name: "{\"text\":\"LV Mixer\"}"
-						}
-						"ftbfiltersystem:filter": "or(item(greate:steel_mechanical_mixer)item(gtceu:lv_mixer))"
-					}
-				}
-				title: "{quests.low_voltage.lv_mixer.task}"
+				id: "7595657F7017B1F6"
+				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_mixer.title}"
@@ -1342,7 +1332,7 @@
 				}
 			]
 			title: "{quests.low_voltage.mold_plate.title}"
-			x: -9.5d
+			x: -10.0d
 			y: 2.5d
 		}
 		{
@@ -1411,8 +1401,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.mv_hull.title}"
-			x: -10.0d
-			y: 15.0d
+			x: -12.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
@@ -1587,8 +1577,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.cupronickel_ingot.title}"
-			x: -8.0d
-			y: 9.5d
+			x: -10.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7567E885B7166603"]
@@ -1617,8 +1607,8 @@
 				}
 			]
 			title: "{quests.low_voltage.aluminium_greate.title}"
-			x: -12.0d
-			y: 11.5d
+			x: -14.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [

@@ -19,14 +19,14 @@
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -28.5d
+			x: -27.0d
 			y: 2.0d
 		}
 		{
 			id: "0CE64B9914191C56"
 			linked_quest: "6FFD4990FF07078A"
 			shape: "diamond"
-			x: -9.5d
+			x: -9.0d
 			y: 11.5d
 		}
 		{
@@ -34,7 +34,7 @@
 			linked_quest: "6903C72A254A7B08"
 			shape: "octagon"
 			size: 2.0d
-			x: -12.5d
+			x: -11.5d
 			y: 8.0d
 		}
 		{
@@ -42,28 +42,28 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
 			size: 2.0d
-			x: -28.5d
+			x: -27.0d
 			y: 0.0d
 		}
 		{
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
 			shape: "heart"
-			x: -12.0d
-			y: 16.0d
+			x: -10.5d
+			y: 16.5d
 		}
 		{
 			id: "65E0B13E245D2E5F"
 			linked_quest: "379F434116632A89"
-			x: -26.0d
+			x: -24.5d
 			y: 1.0d
 		}
 		{
 			id: "68F5E521F2DB0A86"
 			linked_quest: "0404FBCC34011053"
 			shape: "heart"
-			x: -13.0d
-			y: 16.0d
+			x: -12.5d
+			y: 16.5d
 		}
 		{
 			id: "38ECA3FEC2B6A6A6"
@@ -78,6 +78,13 @@
 			shape: "heart"
 			x: -22.5d
 			y: 4.0d
+		}
+		{
+			id: "6C8C3BBD2BA9853B"
+			linked_quest: "56CA2EB7812529C5"
+			shape: "diamond"
+			x: -12.5d
+			y: 14.0d
 		}
 	]
 	quests: [
@@ -96,7 +103,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
-			x: -20.5d
+			x: -19.0d
 			y: 0.0d
 		}
 		{
@@ -114,7 +121,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.horse_crank.title}"
-			x: -24.5d
+			x: -23.0d
 			y: -2.0d
 		}
 		{
@@ -133,7 +140,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.helve_hammer.title}"
-			x: -20.5d
+			x: -19.0d
 			y: -4.0d
 		}
 		{
@@ -161,7 +168,7 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -20.5d
+			x: -19.0d
 			y: -2.0d
 		}
 		{
@@ -175,7 +182,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.water_wheel.title}"
-			x: -14.5d
+			x: -13.0d
 			y: 0.0d
 		}
 		{
@@ -197,7 +204,7 @@
 				}
 			]
 			title: "{quests.steam_age.windmill.title}"
-			x: -14.5d
+			x: -13.0d
 			y: -4.0d
 		}
 		{
@@ -212,7 +219,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.metal_casing.title}"
-			x: -9.5d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
@@ -229,7 +236,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_encased_fan.title}"
-			x: -5.5d
+			x: -4.0d
 			y: 4.0d
 		}
 		{
@@ -249,7 +256,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_pump.title}"
-			x: -3.5d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -299,7 +306,7 @@
 				}
 			]
 			title: "{quests.steam_age.steam_engine.title}"
-			x: -5.5d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -318,7 +325,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mechanical_saw.title}"
-			x: -9.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -332,7 +339,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mechanical_harvester.title}"
-			x: -9.5d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -360,7 +367,7 @@
 				}
 			]
 			title: "{quests.steam_age.chute.title}"
-			x: -12.0d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -378,7 +385,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mold_table.title}"
-			x: -3.5d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -408,7 +415,7 @@
 				}
 			]
 			title: "{quests.steam_age.steel_greate.title}"
-			x: -5.5d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -426,7 +433,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_millstone.title}"
-			x: -7.5d
+			x: -6.0d
 			y: 2.0d
 		}
 		{
@@ -525,8 +532,8 @@
 				}
 			]
 			title: "{quests.steam_age.miner.title}"
-			x: -10.0d
-			y: 17.0d
+			x: -9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -683,7 +690,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.item_pipes.title}"
-			x: -12.0d
+			x: -10.5d
 			y: 2.0d
 		}
 		{
@@ -710,7 +717,7 @@
 				}
 			]
 			title: "{quests.steam_age.circuit_boards.title}"
-			x: -10.0d
+			x: -9.0d
 			y: 10.0d
 		}
 		{
@@ -779,8 +786,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vacuum_tubes.title}"
-			x: -8.0d
-			y: 14.0d
+			x: -7.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -830,7 +837,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.resistors.title}"
-			x: -5.0d
+			x: -4.0d
 			y: 11.5d
 		}
 		{
@@ -846,8 +853,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.coiling_machine.title}"
-			x: -5.0d
-			y: 16.0d
+			x: -4.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -862,8 +869,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_mixer.title}"
-			x: -5.0d
-			y: 14.5d
+			x: -4.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -877,8 +884,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.lathe.title}"
-			x: -6.0d
-			y: 17.0d
+			x: -5.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -915,8 +922,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vibrating_table.title}"
-			x: -8.0d
-			y: 17.0d
+			x: -7.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -935,8 +942,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rolling_mill.title}"
-			x: -5.0d
-			y: 13.0d
+			x: -4.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -950,8 +957,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_saw.title}"
-			x: -7.0d
-			y: 17.0d
+			x: -6.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -965,8 +972,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.curving_press.title}"
-			x: -9.0d
-			y: 17.0d
+			x: -8.0d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -1126,7 +1133,7 @@
 				}
 			]
 			title: "{quests.steam_age.fluid_pipes.title}"
-			x: -3.5d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -1152,7 +1159,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.fluid_drums.title}"
-			x: -1.5d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -1181,8 +1188,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.potin.title}"
-			x: -3.5d
-			y: 14.5d
+			x: -2.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -1209,7 +1216,7 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -22.5d
+			x: -21.0d
 			y: -4.0d
 		}
 		{
@@ -1242,7 +1249,10 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["6AA07588374B59AB"]
+			dependencies: [
+				"6AA07588374B59AB"
+				"56CA2EB7812529C5"
+			]
 			description: ["{quests.steam_age.vacuum_chamber.desc}"]
 			id: "5F3063C539C9CBBF"
 			subtitle: "{quests.steam_age.vacuum_chamber.subtitle}"
@@ -1252,7 +1262,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vacuum_chamber.title}"
-			x: -12.5d
+			x: -11.5d
 			y: 15.0d
 		}
 		{
@@ -1323,7 +1333,7 @@
 				}
 			]
 			title: "{quests.steam_age.poor_paths.title}"
-			x: -26.0d
+			x: -24.5d
 			y: -3.5d
 		}
 		{
@@ -1375,7 +1385,7 @@
 				}
 			]
 			title: "{quests.steam_age.normal_paths.title}"
-			x: -26.5d
+			x: -25.0d
 			y: -2.0d
 		}
 		{
@@ -1433,7 +1443,7 @@
 				}
 			]
 			title: "{quests.steam_age.good_paths.title}"
-			x: -26.0d
+			x: -24.5d
 			y: -0.5d
 		}
 		{
@@ -1455,7 +1465,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.lv_circuit.title}"
-			x: -8.0d
+			x: -7.0d
 			y: 8.0d
 		}
 		{
@@ -1470,7 +1480,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.paper.title}"
-			x: -3.5d
+			x: -2.5d
 			y: 11.5d
 		}
 		{
@@ -1493,7 +1503,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
-			x: -22.5d
+			x: -21.0d
 			y: -2.0d
 		}
 		{
@@ -1517,7 +1527,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.wrought_iron_goodies.title}"
-			x: -12.0d
+			x: -10.5d
 			y: -2.0d
 		}
 		{
@@ -1541,7 +1551,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.steel_goodies.title}"
-			x: -5.5d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -1623,7 +1633,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -7.5d
+			x: -6.0d
 			y: 0.0d
 		}
 		{
@@ -1640,7 +1650,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.resin_boards.title}"
-			x: -11.5d
+			x: -10.5d
 			y: 11.5d
 		}
 		{
@@ -1674,7 +1684,7 @@
 				}
 			]
 			title: "{quests.metal_age.coke_oven.title}"
-			x: -14.5d
+			x: -13.0d
 			y: -2.0d
 		}
 		{
@@ -1709,7 +1719,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.basic_mech_press.title}"
-			x: -18.5d
+			x: -17.0d
 			y: -2.0d
 		}
 		{
@@ -1732,7 +1742,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.steel_mech_press.title}"
-			x: -7.5d
+			x: -6.0d
 			y: 4.0d
 		}
 		{
@@ -1747,7 +1757,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.steam_age.fuel_sources.title}"
-			x: -7.5d
+			x: -6.0d
 			y: -2.0d
 		}
 		{
@@ -1761,7 +1771,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.large_water_wheel.title}"
-			x: -3.5d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -1783,8 +1793,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.supers.title}"
-			x: -10.5d
-			y: 13.5d
+			x: -6.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0D0D461AE3A3F7BF"]
@@ -1813,7 +1823,7 @@
 				}
 			]
 			title: "{quests.steam_age.multiblock_tank.title}"
-			x: -16.5d
+			x: -15.0d
 			y: -2.0d
 		}
 		{
