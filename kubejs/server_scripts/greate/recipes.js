@@ -757,7 +757,7 @@ function registerGreateRecipes(event) {
 		'FEG'
 	], {
 		A: '#gtceu:circuits/ulv',
-		B: 'greate:steel_shaft',
+		B: '#forge:small_gears/blue_steel',
 		C: 'gtceu:ulv_machine_hull',
 		D: '#forge:plates/black_steel',
 		E: 'gtceu:steel_whisk',
@@ -766,7 +766,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/steel_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_mixer')
-		.itemInputs('greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
+		.itemInputs('#forge:small_gears/blue_steel', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
 		.itemOutputs('greate:steel_mechanical_mixer')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
