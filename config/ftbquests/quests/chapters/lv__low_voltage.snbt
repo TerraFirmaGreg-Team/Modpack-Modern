@@ -16,8 +16,8 @@
 		{
 			id: "46612C429BCA8A18"
 			linked_quest: "6BAC3BE1D4FE0F6B"
-			x: 2.5d
-			y: 10.0d
+			x: 4.5d
+			y: 14.0d
 		}
 		{
 			id: "5E5AD44B50E0B15B"
@@ -76,7 +76,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_fluid_regulator.title}"
-			x: 6.0d
+			x: 7.0d
 			y: -8.5d
 		}
 		{
@@ -96,7 +96,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_robot_arm.title}"
-			x: 6.0d
+			x: 7.0d
 			y: -11.5d
 		}
 		{
@@ -112,7 +112,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_conveyor.title}"
-			x: 4.5d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -128,7 +128,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_pump.title}"
-			x: 4.5d
+			x: 5.0d
 			y: -8.5d
 		}
 		{
@@ -144,7 +144,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_piston.title}"
-			x: 4.5d
+			x: 5.0d
 			y: -11.5d
 		}
 		{
@@ -254,7 +254,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.cover_behaviour.title}"
-			x: 6.0d
+			x: 7.0d
 			y: -10.0d
 		}
 		{
@@ -957,8 +957,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_circuit_assembler.title}"
-			x: 0.0d
-			y: 19.5d
+			x: 4.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["1A77CA35F054F988"]
@@ -1087,8 +1087,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 16.0d
+			x: -4.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -1125,7 +1125,7 @@
 			}]
 			title: "{quests.low_voltage.1_mv_circuit.title}"
 			x: 0.0d
-			y: 16.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1490,8 +1490,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_greenhouse.title}"
-			x: 2.5d
-			y: 16.0d
+			x: 0.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["47B899144B865516"]
@@ -1577,7 +1577,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_seeds.title}"
-			x: -6.5d
+			x: -7.0d
 			y: -6.5d
 		}
 		{
@@ -1593,7 +1593,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_seed_oil.title}"
-			x: -5.5d
+			x: -6.0d
 			y: -6.5d
 		}
 		{
@@ -1609,7 +1609,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_biodiesel.title}"
-			x: -4.5d
+			x: -5.0d
 			y: -6.5d
 		}
 		{
@@ -1671,7 +1671,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.oil.title}"
-			x: -5.5d
+			x: -6.0d
 			y: -5.5d
 		}
 		{
@@ -1721,7 +1721,7 @@
 				}
 			]
 			title: "{quests.low_voltage.lv_naphtha_light.title}"
-			x: -4.5d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -1738,7 +1738,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
-			x: 4.5d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -1888,7 +1888,7 @@
 			}]
 			title: "{material.tfg.bakelite}"
 			x: -6.5d
-			y: 16.0d
+			y: 17.5d
 		}
 		{
 			description: ["{quests.low_voltage.lv_forming_press.desc}"]
@@ -1900,8 +1900,8 @@
 				item: "gtceu:lv_forming_press"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 18.0d
+			x: -4.5d
+			y: 15.5d
 		}
 		{
 			dependencies: [
