@@ -24,6 +24,7 @@
 - Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
 - High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
 - Glow ink now just requires a fluid solidifier and a ball mold, instead of whatever it was doing before @Pyritie
+- TFC "pure" fertilisers are now all craftable and provide 100 fertiliser instead of 15 (#2884) @Coox1e
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
@@ -31,9 +32,12 @@
 - Fixed missing borax to flux recipe @Pyritie
 - Fixed lavaproof blue steel boots not having armor resistances (#2872) @Paradalope
 - Fixed the dye colors used to make Create Deco's bricks (#2859) @silllil
+- Fixed the Electric Greenhouse outputting way less Chorus Fruit than before @Pyritie
+- Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
 ### Translation updates
 - Chinese (simplified) @jmecn
-- Russian @Petr211071
+- Russian @Petr211071 + @Nixieeunrare
+- Spanish @NikoNeko17
 
 ## [0.11.18] - 23-01-2026
 ### Important notes
