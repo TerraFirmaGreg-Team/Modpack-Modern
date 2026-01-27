@@ -16,7 +16,7 @@ function registerVintageImprovementsRecipes(event) {
 		B: 'greate:steel_cogwheel',
 		C: '#forge:rods/steel',
 		D: '#forge:double_ingots/black_steel',
-		E: '#forge:small_gears/steel',
+		E: '#forge:small_gears/blue_steel',
 		F: '#gtceu:circuits/ulv'
 	}).addMaterialInfo().id('tfg:vi/shaped/spring_coiling_machine')
 
@@ -27,8 +27,8 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: 'gtceu:ulv_machine_casing',
 		B: 'greate:steel_mechanical_pump',
-		C: 'create:mechanical_piston',
-		D: '#forge:springs/wrought_iron',
+		C: 'minecraft:piston',
+		D: '#forge:springs/blue_steel',
 		E: 'create:electron_tube',
 		F: '#forge:plates/black_steel',
 		G: 'create:precision_mechanism'

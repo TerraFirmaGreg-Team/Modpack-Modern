@@ -9,11 +9,11 @@ const registerCreateAdditionsRecipes = (event) => {
 	// Прокатный стан
 	event.recipes.gtceu.shaped('createaddition:rolling_mill', [
 		'ABA',
-		'CBC',
-		'DED'
+		'CEC',
+		'DBD'
 	], {
 		A: 'create:precision_mechanism',
-		B: 'greate:steel_shaft',
+		B: '#forge:rods/long/blue_steel',
 		C: '#forge:double_plates/black_steel',
 		D: '#gtceu:circuits/ulv',
 		E: 'gtceu:ulv_machine_hull'

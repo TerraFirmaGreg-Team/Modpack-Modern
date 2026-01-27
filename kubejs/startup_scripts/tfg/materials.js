@@ -16,6 +16,14 @@ const registerTFGMaterials = (event) => {
 	event.create('methoxy')
 		.components('1x oxygen', '1x carbon', '3x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('methylene')
+		.components('1x carbon', '2x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('hydroxide')
+		.components('1x oxygen', '1x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 	//#endregion	
 	
 	registerTFGPowerReworkMaterials(event);
@@ -65,6 +73,40 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0x67FFE6)
 		.formula("(Al2Si2O5(OH)4)(BeK4N5)")
 
+	// Bakelite
+	event.create('tfg:bakelite')
+		.polymer()
+		.fluid()
+		.color(0xF29104)
+		.secondaryColor(0xD96005)
+		.components('1x phenol', '1x formaldehyde')
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.NO_SMELTING,
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_FOIL
+		)
+
+	event.create('tfg:phenolic_resin')
+		.fluid()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x phenol', '1x formaldehyde')
+		.color(0xFCD7A3)
+
+	// Coils
+
+	event.create('tfg:magnesium_hydroxide')
+		.dust()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x magnesium', '2x hydroxide')
+		.color(0xC6E4FF)
+
+	event.create('tfg:magnesia_refractory_brick')
+		.dust()
+		.ingot()
+		.iconSet(GTMaterialIconSet.ROUGH)
+		.flags(GTMaterialFlags.NO_SMELTING)
+		.color(0xA69D96)
 
 	//#region Tungsten Line
 
