@@ -37,6 +37,9 @@ function registerTFGIconSets(event) {
 		
 	event.create('nether_quartz').parent('quartz')
 
+    event.create('noodle').parent('metallic')
+    event.create('cereal_box').parent('bright')
+
     // Credits to Flare from the Cosmic Frontiers team
     event.create('chonky').parent('shiny')
 }
@@ -151,6 +154,8 @@ function modifyTFGIconSets(event) {
     GTMaterials.RutheniumTriniumAmericiumNeutronate.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
 
     GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+
+    GTMaterials.Vanadium.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
 
     const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 	$GreateMaterials.RoseQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
