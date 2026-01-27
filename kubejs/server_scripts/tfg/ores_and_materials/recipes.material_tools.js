@@ -156,7 +156,7 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.circuit(circuitMeta)
 			.itemOutputs(toolHeadItem)
 			.duration(material.getMass() * 6)
-			.EUt(GTValues.VA[GTValues.LV])
+			.EUt(GTValues.VA[GTValues.MV])
 	}
 
 	addMaterialRecycling(event, toolHeadItem, material, tagPrefixName, headTagPrefix);

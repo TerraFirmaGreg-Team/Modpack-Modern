@@ -128,13 +128,6 @@ function registerTFGChipboardRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.chemical_bath('gtceu:bath_high_density_treated_fiberboard')
-		.itemInputs('1x gtceu:wood_plate')
-		.inputFluids(Fluid.of('gtceu:creosote', 50))
-		.itemOutputs('tfg:high_density_treated_fiberboard')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.chemical_bath('gtceu:bath_treated_wood_dust')
 		.itemInputs('#tfg:wood_dusts')
 		.inputFluids(Fluid.of('gtceu:creosote', 50))
@@ -142,17 +135,9 @@ function registerTFGChipboardRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.compressor('tfg:compressed_treated_chipboard_composite')
-		.itemInputs('tfg:treated_chipboard_composite')
-		.itemOutputs('tfg:high_density_treated_fiberboard')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.assembler('tfg:resin_circuit_assembler')
 		.itemInputs('gtceu:wood_plate', '2x gtceu:sticky_resin')
 		.itemOutputs('gtceu:resin_circuit_board')
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.replaceInput({ id: 'gtceu:assembler/phenolic_board' }, '#tfg:wood_dusts', 'tfg:high_density_treated_fiberboard')
 }
