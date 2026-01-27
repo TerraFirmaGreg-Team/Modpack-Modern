@@ -38,19 +38,19 @@ function registerTFGCompostRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:nitrogen', 8000))
 		.itemOutputs('4x tfc:pure_nitrogen')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:pure_potassium')
 		.itemInputs('#forge:wax', '8x gtceu:potassium_dust')
 		.itemOutputs('4x tfc:pure_potassium')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 	
 	event.recipes.gtceu.mixer('tfg:pure_phosphorus')
 		.itemInputs('#forge:wax', '8x gtceu:phosphorus_dust')
 		.itemOutputs('4x tfc:pure_phosphorus')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.LV])
 	//#endregion
 
 	// Humus and compost
