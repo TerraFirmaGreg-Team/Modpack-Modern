@@ -170,6 +170,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
+    "tfg:molten_weak_blue_steel_bucket",
+    "tfg:molten_weak_red_steel_bucket",
 
     //armor
     "gtceu:bronze_helmet",

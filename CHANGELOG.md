@@ -4,16 +4,18 @@
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 ### Changes
+- Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 - Added steam alloy smelter glass batch recipes (#2853) @Pyritie
-- Added the Artisan Table to "knap" GT molds and circuits. @BlueBoat29 @Redeix
+- Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
 - Fixed rosin leaves and saplings having tags the wrong way around (#2840) @TanJeeSchuan
 - Fixed missing borax to flux recipe @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
 
 ## [0.11.18] - 23-01-2026
 ### Important notes

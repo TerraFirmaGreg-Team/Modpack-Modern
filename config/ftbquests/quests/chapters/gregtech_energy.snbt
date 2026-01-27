@@ -118,10 +118,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"06B2E38F7DCF2678"
-				"22510C5F2386B453"
-			]
+			dependencies: ["06B2E38F7DCF2678"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.gregtech_energy.produce_energy.desc}"]
 			icon: "gtceu:lv_field_generator"
@@ -1083,12 +1080,15 @@
 				"4C620105AAC49381"
 				"0C718329245D9619"
 			]
+			description: ["{quests.low_voltage.lv_biodiesel.desc}"]
 			id: "139C7DF629329753"
+			subtitle: "{quests.low_voltage.lv_biodiesel.subtitle}"
 			tasks: [{
 				id: "7BA9FDD1F45B53F6"
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
+			title: "{quests.low_voltage.lv_biodiesel.title}"
 			x: -9.0d
 			y: -7.0d
 		}
