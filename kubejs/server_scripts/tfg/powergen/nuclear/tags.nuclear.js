@@ -8,6 +8,13 @@ const registerTFGItemTagsNuclear = (event) => {
 	event.add('deafission:fuels', 'tfg:plutonium_rod')
 	event.add('tfg:fission_rods', '#deafission:fuels')
 
+	let FISSION_ROD = 'tfg:fission_rods';
+
+	event.add(FISSION_ROD, 'tfg:tbu_232_rod');
+	event.add(FISSION_ROD, 'tfg:americium_241_rod');
+    event.add(FISSION_ROD, 'tfg:neptunium_237_rod');
+	event.add(FISSION_ROD, 'tfg:californium_252_rod');
+
 }
 
 const registerTFGBlockTagsNuclear = (event) => {
@@ -56,7 +63,7 @@ const registerTFGFluidTagsNuclear = (event) => {
 
     event.add(SMR_FLUIDS, 'gtceu:lubricant');
     event.add(SMR_FLUIDS, 'tfg:polyalkylene_lubricant');
-	event.add(SMR_FLUIDS, 'tfg:spent_TiCl4_doped_supercritical_CO2');
+	event.add(SMR_FLUIDS, 'tfg:spent_ticl4_doped_supercritical_co2');
     event.add(SMR_FLUIDS, 'tfg:ozone');
 	event.add(SMR_FLUIDS, 'tfg:cyclohex_diperoxide');
 	event.add(SMR_FLUIDS, 'tfg:booster_t3');

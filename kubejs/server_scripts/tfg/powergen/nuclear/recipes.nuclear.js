@@ -334,8 +334,8 @@ function registerTFGNuclearRecipes(event) {
 	event.recipes.deafission.fission_reactor_coolant_smr('tfg:americium_241_coolant')
         .itemInputs(Ingredient.of([
             'tfg:americium_241_rod']))
-        .inputFluids(Fluid.of('tfg:TiCl4_doped_supercritical_CO2', 80))
-        .outputFluids(Fluid.of('tfg:spent_TiCl4_doped_supercritical_CO2', 80))
+        .inputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 80))
+        .outputFluids(Fluid.of('tfg:spent_ticl4_doped_supercritical_co2', 80))
         .addData("coolant_heat_per_tick", 1)
         .duration(1);
 
@@ -344,67 +344,67 @@ function registerTFGNuclearRecipes(event) {
 	//#region Fission Rod Processing
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_thorium_rod')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.lt("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.lt("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:radioactive_waste', 2500))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
 		.addDataString("avgHeat1", "0")
-		.addDataString("avgHeat2", "9000")
+		.addDataString("avgHeat2", "5000")
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_thorium_rod_bad')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.gte("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.gte("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:radioactive_waste', 100))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
-		.addDataString("avgHeat1", "9000")
+		.addDataString("avgHeat1", "5000")
 		.addDataString("avgHeat2", "∞")
 
 	// Uranium
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_uranium_rod')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_uranium_rod'), NBTPredicates.lt("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_uranium_rod'), NBTPredicates.lt("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:uranium_waste', 50000))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
 		.addDataString("avgHeat1", "0")
-		.addDataString("avgHeat2", "9000")
+		.addDataString("avgHeat2", "5000")
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_uranium_rod_bad')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_uranium_rod'), NBTPredicates.gte("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_uranium_rod'), NBTPredicates.gte("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:uranium_waste', 500))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
-		.addDataString("avgHeat1", "9000")
+		.addDataString("avgHeat1", "5000")
 		.addDataString("avgHeat2", "∞")
 
 	// Plutonium
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.lt("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.lt("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:tritiated_water', 5184))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
 		.addDataString("avgHeat1", "0")
-		.addDataString("avgHeat2", "9000")
+		.addDataString("avgHeat2", "5000")
 
     event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod_bad')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.gte("avgHeat", 9000))
+        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.gte("avgHeat", 5000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:tritiated_water', 144))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
-		.addDataString("avgHeat1", "9000")
+		.addDataString("avgHeat1", "5000")
 		.addDataString("avgHeat2", "∞")
 
 	//#region Fission Recipes for cooling
@@ -555,8 +555,8 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*1.5)
 
 	event.recipes.gtceu.smr_generator('tfg:boron_smr')
-		.inputFluids(Fluid.of('tfg:spent_TiCl4_doped_supercritical_CO2', 50))
-		.outputFluids(Fluid.of('tfg:TiCl4_doped_supercritical_CO2', 50))
+		.inputFluids(Fluid.of('tfg:spent_ticl4_doped_supercritical_co2', 50))
+		.outputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 50))
 		.EUt(-(32))
 		.duration(20)
 

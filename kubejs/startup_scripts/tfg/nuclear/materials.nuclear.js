@@ -59,7 +59,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0x81FFF9)
 
 	event.create('tfg:heavy_water')
-		.liquid(new GTFluidBuilder().temperature(236))
+		.liquid(new GTFluidBuilder().customStill().temperature(236))
 		.components('2x deuterium', '1x oxygen')
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
@@ -71,30 +71,22 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0x81FFF9)
 
 	event.create('tfg:boron_enriched_coolant')
-		.liquid(new GTFluidBuilder().temperature(213))
+		.liquid(new GTFluidBuilder().customStill().temperature(213))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x43D6E4)
-		.secondaryColor(0x2C9AAF)
 
 	event.create('tfg:hot_boron_enriched_coolant')
-		.liquid(new GTFluidBuilder().temperature(2000))
+		.liquid(new GTFluidBuilder().customStill().temperature(2000))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0xFF715B)
-		.secondaryColor(0xFF9D6E)
 
-	event.create('tfg:TiCl4_doped_supercritical_CO2')
+	event.create('tfg:ticl4_doped_supercritical_co2')
 		.liquid(new GTFluidBuilder().temperature(500))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
-		.color(0xFF715B)
-		.secondaryColor(0xFF9D6E)
 
-	event.create('tfg:spent_TiCl4_doped_supercritical_CO2')
+	event.create('tfg:spent_ticl4_doped_supercritical_co2')
 		.liquid(new GTFluidBuilder().temperature(2000))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
-		.color(0xFF715B)
-		.secondaryColor(0xFF9D6E)
 
 	//#endregion
 
