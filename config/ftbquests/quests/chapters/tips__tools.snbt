@@ -790,7 +790,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: [
+				"02FDECC931B5E8EF"
+				"3E6DC423FE4A99F7"
+			]
 			description: [
 				"{quests.tfg_tips.gt_power_tools.desc.1}"
 				"{@pagebreak}"
@@ -823,20 +826,13 @@
 				}
 			}
 			id: "2D2CB8104E40E808"
+			optional: true
 			subtitle: "{quests.tfg_tips.gt_power_tools.subtitle}"
-			tasks: [
-				{
-					id: "5DA224C235E227E3"
-					title: "GT Tool"
-					type: "checkmark"
-				}
-				{
-					id: "5B0BF3A94CA0D8A9"
-					item: "gtceu:lv_charger_4x"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5DA224C235E227E3"
+				title: "GT Tool"
+				type: "checkmark"
+			}]
 			title: "{quests.tfg_tips.gt_power_tools.title}"
 			x: 10.5d
 			y: 11.5d

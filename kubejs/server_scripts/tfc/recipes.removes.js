@@ -130,4 +130,11 @@ function removeTFCRecipes(event) {
 	event.remove({ output: 'tfc:rustic_windmill_blade'})
 	event.remove({ output: 'tfc:lattice_windmill_blade'})
 	event.remove({ id: 'tfchotornot:heating/insulating_items'})
+
+	event.remove({ id: 'tfc:heating/metal/weak_blue_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_blue_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_blue_steel_fire_ingot' })
+	event.remove({ id: 'tfc:heating/metal/weak_red_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_red_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_red_steel_fire_ingot' })
 }

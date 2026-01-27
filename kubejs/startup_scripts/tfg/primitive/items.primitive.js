@@ -25,7 +25,6 @@ function registerTFGPrimitiveItems(event) {
 	// Chipboard
     event.create('tfg:chipboard_composite')
     event.create('tfg:treated_chipboard_composite')
-    event.create('tfg:high_density_treated_fiberboard')
 	
 	// Wax
 	event.create('tfg:paraffin_wax')
