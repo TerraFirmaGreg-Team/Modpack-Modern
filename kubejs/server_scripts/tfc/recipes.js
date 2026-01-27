@@ -21,7 +21,7 @@ const registerTFCRecipes = (event) => {
 	], {
 		A: '#forge:double_plates/wrought_iron',
 		B: 'tfc:crucible'
-	}).addMaterialInfo().id('tfc:crafting/blast_furnace')
+	}).id('tfc:crafting/blast_furnace')
 
 	// Тыква -> Кусочки тыквы
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -250,4 +250,6 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs("4x tfc:powder/flux")
 		.duration(50)
 		.EUt(2);
+
+	event.shapeless('4x tfc:fire_clay', ['tfc:fire_clay_block'])
 }

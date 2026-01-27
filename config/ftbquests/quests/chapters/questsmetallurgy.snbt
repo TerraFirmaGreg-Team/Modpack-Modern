@@ -415,6 +415,7 @@
 			description: ["{quests.metal_age.anvil_recycling.desc}"]
 			icon: "tfc:firepit"
 			id: "3B2550394C94CEC9"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "{quests.metal_age.anvil_recycling.subtitle}"
 			tasks: [{
@@ -646,6 +647,7 @@
 				}
 			}
 			id: "5792DDAA82895E67"
+			shape: "circle"
 			subtitle: "{quests.metal_age.red_blu.subtitle}"
 			tasks: [{
 				id: "63890641DCD6659F"
@@ -719,6 +721,7 @@
 			description: ["{quests.metal_age.wrought_iron_goodies.desc}"]
 			icon: "create:chute"
 			id: "20C2CE92459BE14A"
+			shape: "circle"
 			subtitle: "{quests.metal_age.wrought_iron_goodies.subtitle}"
 			tasks: [{
 				id: "60605AA92B6947D8"
@@ -734,6 +737,7 @@
 			description: ["{quests.metal_age.fire_clay_ingredients.desc}"]
 			icon: "minecraft:cartography_table"
 			id: "5A936E9BCF30AA3D"
+			shape: "circle"
 			subtitle: "{quests.metal_age.fire_clay_ingredients.subtitle}"
 			tasks: [{
 				id: "39CA01175999A291"
@@ -816,6 +820,7 @@
 			description: ["{quests.metal_age.steel_goodies.desc}"]
 			icon: "greate:steel_mechanical_pump"
 			id: "0C9B7745D812555A"
+			shape: "circle"
 			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
 			tasks: [{
 				id: "3EB7C3AE88950E4B"
