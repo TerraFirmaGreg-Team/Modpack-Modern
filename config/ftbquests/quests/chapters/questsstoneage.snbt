@@ -1674,6 +1674,7 @@
 				}
 			}
 			id: "1562419608EB333D"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.stone_age.hydration.subtitle}"
 			tasks: [{
@@ -1847,6 +1848,7 @@
 			description: ["{quests.stone_age.water_bucket.desc}"]
 			icon: "minecraft:water_bucket"
 			id: "1F9321F1743A0B79"
+			shape: "circle"
 			subtitle: "{quests.stone_age.water_bucket.subtitle}"
 			tasks: [{
 				id: "64BE95016DF461FD"
@@ -2295,6 +2297,8 @@
 				"{quests.stone_age.medical_conditions.desc.1}"
 				"{@pagebreak}"
 				"{quests.stone_age.medical_conditions.desc.2}"
+				"{@pagebreak}"
+				"{quests.stone_age.medical_conditions.desc.3}"
 			]
 			icon: "createdeco:decal_skull"
 			id: "00117AD40FACB89D"

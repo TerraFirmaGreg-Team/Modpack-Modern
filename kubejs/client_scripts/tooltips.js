@@ -24,6 +24,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:antipoison_tablet'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.antipoison_tablet'))
 	})
+	event.addAdvanced(['tfg:polycaprolactam_fabric'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.polycaprolactam'))
+	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
@@ -402,7 +405,7 @@ const registerTooltips = (event) => {
 	})
 
 	// Deprecated Items
-	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
+	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 

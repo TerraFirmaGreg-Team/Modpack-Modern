@@ -26,38 +26,6 @@ function registerTACZMiscRecipes(event) {
 		['tacz:target', 'minecraft:minecart']
 	).id('tfg_tacz:target_minecart');
 	
-	
-	//Molds
-	event.shaped('tfg:small_casing_extruder_mold',[
-		' A ',
-		'B  ',
-		'  C'
-	],{
-		A: '#forge:tools/wire_cutters',
-		B: 'gtceu:empty_mold',
-		C: '#forge:tools/files'
-	}).id('tfg:small_casing_extruder_mold');
-	
-	event.shaped('tfg:large_casing_extruder_mold',[
-		'   ',
-		'AB ',
-		'  C'
-	],{
-		A: '#forge:tools/wire_cutters',
-		B: 'gtceu:empty_mold',
-		C: '#forge:tools/files'
-	}).id('tfg:large_casing_extruder_mold');
-	
-	event.shaped('tfg:shell_casing_extruder_mold',[
-		'  C',
-		'AB ',
-		'   '
-	],{
-		A: '#forge:tools/wire_cutters',
-		B: 'gtceu:empty_mold',
-		C: '#forge:tools/files'
-	}).id('tfg:shell_casing_extruder_mold');
-	
 	//Mechanisms
 	event.shaped('tfg:flintlock_mechanism', [
 		'ABC',
