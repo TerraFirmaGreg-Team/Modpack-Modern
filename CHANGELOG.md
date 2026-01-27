@@ -22,6 +22,8 @@
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 - Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 - Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
+- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
+- Glow ink now just requires a fluid solidifier and a ball mold, instead of whatever it was doing before @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
