@@ -109,6 +109,10 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:tiny_ammonium_chloride_dust', 0.03, null, null)
 	event.fertilizer('gtceu:small_ammonium_chloride_dust', 0.075, null, null)
 	event.fertilizer('gtceu:ammonium_chloride_dust', 0.3, null, null)
+	
+	event.fertilizer('tfc:pure_nitrogen', 1, null, null)
+	event.fertilizer('tfc:pure_phosphorus', null, 1, null)
+	event.fertilizer('tfc:pure_potassium', null, null, 1)
 
 
 }
