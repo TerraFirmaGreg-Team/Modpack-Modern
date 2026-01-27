@@ -77,7 +77,7 @@
 			}]
 			title: "{quests.low_voltage.lv_fluid_regulator.title}"
 			x: 6.0d
-			y: -9.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["38993B4697B0E16C"]
@@ -97,7 +97,7 @@
 			}]
 			title: "{quests.low_voltage.lv_robot_arm.title}"
 			x: 6.0d
-			y: -12.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -113,7 +113,7 @@
 			}]
 			title: "{quests.low_voltage.lv_conveyor.title}"
 			x: 4.5d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -129,7 +129,7 @@
 			}]
 			title: "{quests.low_voltage.lv_pump.title}"
 			x: 4.5d
-			y: -9.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -145,7 +145,7 @@
 			}]
 			title: "{quests.low_voltage.lv_piston.title}"
 			x: 4.5d
-			y: -12.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["7FA1525D681C4B4A"]
@@ -255,7 +255,7 @@
 			}]
 			title: "{quests.low_voltage.cover_behaviour.title}"
 			x: 6.0d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47B899144B865516"]
@@ -616,7 +616,7 @@
 			}]
 			title: "{quests.low_voltage.lv_age_progression.title}"
 			x: 0.0d
-			y: -13.0d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -1276,7 +1276,7 @@
 			}]
 			title: "{quests.low_voltage.lv_machine_hull.title}"
 			x: 0.0d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["15928F50AE80A5CF"]
@@ -1325,7 +1325,7 @@
 			}]
 			title: "{quests.low_voltage.lv_motor.title}"
 			x: 3.0d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["581CDF545E1EA1FD"]
@@ -1779,7 +1779,7 @@
 			}]
 			title: "{quests.low_voltage.lost.title}"
 			x: -2.0d
-			y: -10.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
