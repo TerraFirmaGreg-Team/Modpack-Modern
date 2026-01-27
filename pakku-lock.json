@@ -4945,24 +4945,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.295-snapshot-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.295-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7421/161/domum_ornamentum-1.20.1-1.0.295-snapshot-universal.jar",
-                    "id": "7421161",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7530/695/domum_ornamentum-1.20.1-1.0.295-universal.jar",
+                    "id": "7530695",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "f5fc47a7006445e4f999611d1cc95bda55c70b1f",
-                        "md5": "e85e022d42829065eb6f3d804abeb9d0"
+                        "sha1": "29950245b98ec35184d806e3b9ace700e67ac585",
+                        "md5": "2f8435a8c43ebff6df70299ea212b336"
                     },
                     "required_dependencies": [],
-                    "size": 1141562,
-                    "date_published": "2026-01-05T14:36:53.033Z"
+                    "size": 1141554,
+                    "date_published": "2026-01-26T15:27:31.327Z"
                 }
             ]
         },
@@ -6276,7 +6276,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FastSuite-1.20.1-5.1.1.jar",
+                    "file_name": "FastSuite-1.20.1-5.1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6285,18 +6285,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7428/292/FastSuite-1.20.1-5.1.1.jar",
-                    "id": "7428292",
+                    "url": "https://edge.forgecdn.net/files/7527/943/FastSuite-1.20.1-5.1.2.jar",
+                    "id": "7527943",
                     "parent_id": "475117",
                     "hashes": {
-                        "sha1": "dfceb81524a9e1be19bf89d0281c05b6edf5326c",
-                        "md5": "806f80e876eff6f121c8b508825ce368"
+                        "sha1": "32ea4495b0e646f8f060e4e97d17044dd9fdefbd",
+                        "md5": "efca8ff65bbf93e3a0f776998ee181e9"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 26603,
-                    "date_published": "2026-01-07T04:03:31.723Z"
+                    "size": 26600,
+                    "date_published": "2026-01-26T00:38:18.357Z"
                 }
             ]
         },
@@ -7231,7 +7231,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gtmoldraw-3.0.0.jar",
+                    "file_name": "gtmoldraw-3.0.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7239,18 +7239,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7404/876/gtmoldraw-3.0.0.jar",
-                    "id": "7404876",
+                    "url": "https://edge.forgecdn.net/files/7529/672/gtmoldraw-3.0.1.jar",
+                    "id": "7529672",
                     "parent_id": "1348330",
                     "hashes": {
-                        "sha1": "9377694e2e3d8c62bdacd400e125acc732c54803",
-                        "md5": "e6d36dbc5383b0649bbfa76a829c6170"
+                        "sha1": "caaf28b88afe1b01ec4180a4458c2795184255bc",
+                        "md5": "aae6cd78a4f17cbcbd2b0dc984fe4a8b"
                     },
                     "required_dependencies": [
                         "890405"
                     ],
-                    "size": 907581,
-                    "date_published": "2026-01-01T18:19:59.917Z"
+                    "size": 908933,
+                    "date_published": "2026-01-26T10:36:48.937Z"
                 }
             ]
         },
@@ -10552,7 +10552,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "particle_core-0.3.1+1.20.1+forge.jar",
+                    "file_name": "particle_core-0.3.2+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10561,23 +10561,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/RSeLon5O/versions/dtIZJ1r3/particle_core-0.3.1+1.20.1+forge.jar",
-                    "id": "dtIZJ1r3",
+                    "url": "https://cdn.modrinth.com/data/RSeLon5O/versions/qSjxrRl9/particle_core-0.3.2+1.20.1+forge.jar",
+                    "id": "qSjxrRl9",
                     "parent_id": "RSeLon5O",
                     "hashes": {
-                        "sha512": "63a2c186e74851fef7ce7871c09126deb0a8090de417753873b74cfe3db3e2d61b699e2fd6033526f38356881c1817e759e34e5b536224c17247bd3b3a6d6be8",
-                        "sha1": "935a8c19cc7a72364fdfe494d9ddbd599f01588d"
+                        "sha512": "042a26c72ed13a5b7a961afd575561442fe979295e2adc5901127e2be578391f597ce24d17d92fdf6ad515a19033f1b7cde0a455e7e9e9b0a36a8089caddf459",
+                        "sha1": "57079d1607ce044533fb076d2db0e2a3d277a4fb"
                     },
                     "required_dependencies": [
-                        "hYykXjDp",
-                        "ordsPcFz"
+                        "ordsPcFz",
+                        "hYykXjDp"
                     ],
-                    "size": 770117,
-                    "date_published": "2026-01-22T01:13:37.946023Z"
+                    "size": 773147,
+                    "date_published": "2026-01-25T16:04:41.088385Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "particle_core-0.3.1+1.20.1+forge.jar",
+                    "file_name": "particle_core-0.3.2+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10586,19 +10586,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7504/78/particle_core-0.3.1+1.20.1+forge.jar",
-                    "id": "7504078",
+                    "url": "https://edge.forgecdn.net/files/7525/37/particle_core-0.3.2+1.20.1+forge.jar",
+                    "id": "7525037",
                     "parent_id": "985426",
                     "hashes": {
-                        "sha1": "935a8c19cc7a72364fdfe494d9ddbd599f01588d",
-                        "md5": "4386c25fd855cc4de76c3458b9a182a5"
+                        "sha1": "57079d1607ce044533fb076d2db0e2a3d277a4fb",
+                        "md5": "5ebd6c2396924c3e33ea96003ec10b0c"
                     },
                     "required_dependencies": [
-                        "351264",
-                        "1005914"
+                        "1005914",
+                        "351264"
                     ],
-                    "size": 770117,
-                    "date_published": "2026-01-22T01:13:31.647Z"
+                    "size": 773147,
+                    "date_published": "2026-01-25T16:04:36.363Z"
                 }
             ]
         },
@@ -15243,6 +15243,47 @@
                     "required_dependencies": [],
                     "size": 612137,
                     "date_published": "2024-06-04T11:34:01.710669Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "D8FJfLqFF1y0WOqV",
+            "pakku_links": [
+                "7N9O2rPIAVKoRYOH"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tacz-sbw-playerrevive-gun-mod-compitability"
+            },
+            "name": {
+                "curseforge": "[TaCZ/SBW] PlayerRevive gun mod compitability"
+            },
+            "id": {
+                "curseforge": "1440963"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "playerrevive_compat-1.0.1-1d0e244.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7528/776/playerrevive_compat-1.0.1-1d0e244.jar",
+                    "id": "7528776",
+                    "parent_id": "1440963",
+                    "hashes": {
+                        "sha1": "05d191e5bb7c4ada8b2cbb7c604b3ab7d5040563",
+                        "md5": "7be622f95b711409c493da13c5c08772"
+                    },
+                    "required_dependencies": [
+                        "266890"
+                    ],
+                    "size": 198416,
+                    "date_published": "2026-01-26T05:31:05.240Z"
                 }
             ]
         },
