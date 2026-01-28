@@ -1,0 +1,8 @@
+{
+    "from": "ad_astra:venus",
+    "to": "ad_astra:venus_orbit",
+    "from_y_min": 500,
+    "from_y_max": 600,
+    "to_y": -64,
+    "cloud_platform": false
+}
