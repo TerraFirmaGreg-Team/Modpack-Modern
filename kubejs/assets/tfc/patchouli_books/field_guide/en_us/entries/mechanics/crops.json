@@ -12,6 +12,15 @@
 			"type": "patchouli:text",
 			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
 		},
+        {
+            "type": "patchouli:text",
+			"title": "Contents",
+            "text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+        },
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
@@ -3298,6 +3307,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Sunflower"
 		},
@@ -3456,6 +3466,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "canola",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Canola"
 		},
@@ -3615,6 +3626,7 @@
 		},
 		{
 			"type": "patchouli:text",
+			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
 			"title": "Flax"
 		},

@@ -22,21 +22,33 @@ function registerTFGCompostRecipes(event) {
 		.EUt(30)
 
 	event.recipes.gtceu.centrifuge('tfg:gtceu/centrifuge/pure_fertilizers')
-		.itemInputs('1x gtceu:fertilizer')
+		.itemInputs('8x gtceu:fertilizer')
 		.itemOutputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus')
 		.duration(340)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.mixer('tfg:tfc/mixer/fertilizer')
-		.itemInputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
+		.itemInputs('8x tfc:pure_nitrogen', '8x tfc:pure_potassium', '8x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
 		.itemOutputs('1x gtceu:fertilizer')
 		.duration(160)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.gtceu.gas_pressurizer('tfg:pure_nitrogen')
+	event.recipes.gtceu.mixer('tfg:pure_nitrogen')
 		.itemInputs('#forge:wax')
-		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-		.itemOutputs('16x tfc:pure_nitrogen')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 8000))
+		.itemOutputs('4x tfc:pure_nitrogen')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.mixer('tfg:pure_potassium')
+		.itemInputs('#forge:wax', '8x gtceu:potassium_dust')
+		.itemOutputs('4x tfc:pure_potassium')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+	
+	event.recipes.gtceu.mixer('tfg:pure_phosphorus')
+		.itemInputs('#forge:wax', '8x gtceu:phosphorus_dust')
+		.itemOutputs('4x tfc:pure_phosphorus')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 	//#endregion
