@@ -202,14 +202,18 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0x9FAFB2)
 
 	event.create('tfg:boron_thrichloride')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).customStill().temperature(380))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(380))
 		.components('1x boron', '3x chlorine')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xb3fcb9)
+		//.secondaryColor(0x9FAFB2)
 
 	event.create('tfg:enriched_boron_thrichloride')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).customStill().temperature(480))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(480))
 		.components("boron_10", '3x chlorine')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x65db6f)
+		.secondaryColor(0x9FAFB2)
 
 	//#endregion
 

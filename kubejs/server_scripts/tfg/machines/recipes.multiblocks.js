@@ -123,9 +123,22 @@ function registerTFGMultiblockRecipes(event) {
 		Z: 'gtceu:ev_machine_hull',
 		W: '#gtceu:circuits/ev',
 		U: '#forge:double_plates/stellite_100',
-		T: '#forge:single_cables/platinum',
+		T: '#forge:single_cables/aluminium',
 		P: 'gtceu:ev_electric_pump'
 	}).addMaterialInfo().id('tfg:shaped/ostrum_linear_accelerator')
+
+	event.recipes.gtceu.shaped('tfg:heat_battery_mk1', [
+		'USU',
+		'WZW',
+		'PTP'
+	], {
+		S: 'tfg:casings/heat_pipe_casing',
+		Z: 'gtceu:ev_machine_hull',
+		W: '#gtceu:circuits/ev',
+		U: '#forge:dense_plates/silicon',
+		T: '#forge:single_cables/aluminium',
+		P: 'gtceu:hv_field_generator'
+	}).addMaterialInfo().id('tfg:shaped/heat_battery_mk1')
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(
@@ -174,6 +187,28 @@ function registerTFGMultiblockRecipes(event) {
 		U: 'gtceu:hv_field_generator',
 		Z: 'gtceu:ev_machine_hull'
 	}).addMaterialInfo().id('tfg:shaped/fission_reactor_mk1')
+
+	event.recipes.gtceu.shaped('deafission:fission_reactor_smr1', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: 'gtceu:atomic_casing',
+		W: '#gtceu:circuits/iv',
+		U: 'gtceu:ev_field_generator',
+		Z: 'gtceu:iv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/fission_reactor_smr1')
+
+	event.recipes.gtceu.shaped('tfg:smr_generator', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: 'tfg:casings/machine_casing_desh_ptfe',
+		W: '#gtceu:circuits/iv',
+		U: 'gtceu:ev_field_generator',
+		Z: 'gtceu:iv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/smr_generator')
 
 	event.recipes.gtceu.shaped('gtceu:nuclear_fuel_factory', [
 		'TUT',

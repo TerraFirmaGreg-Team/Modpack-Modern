@@ -131,19 +131,47 @@ function registerTFGCasingRecipes(event) {
 	// Ostrum Linear Acclerator
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_mars')
 		.itemInputs('gtceu:clean_machine_casing', '4x #forge:double_wires/kanthal')
-		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 288))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
 		.itemOutputs('tfg:casings/machine_casing_mars')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.assembler('gtceu:atomic_casing')
-		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
+		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:double_plates/beryllium','2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
 		.itemOutputs('2x gtceu:atomic_casing')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
+
+	// Heat Battery deafission:battery_heat_port_ev
+
+	event.recipes.gtceu.assembler('tfg:battery_heat_port_ev')
+		.itemInputs(Item.of('gtceu:iv_machine_hull', 1), Item.of('gtceu:rtm_alloy_coil_block'), Item.of('gtceu:silicon_plate', 6))
+		.inputFluids(Fluid.of('gtceu:mercury', 4000))
+		.itemOutputs('deafission:battery_heat_port_ev')
+		//.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	// Small Modular Turbine 
+
+	event.recipes.gtceu.assembler('tfg:machine_casing_desh_ptfe')
+		.itemInputs('4x #forge:dense_plates/desh', '2x #forge:dense_plates/lead', Item.of('gtceu:hsla_steel_frame'))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+		.itemOutputs('tfg:casings/machine_casing_desh_ptfe')
+		.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.assembler('tfg:uv_smr_fluid_import_hatch')
+		.itemInputs('4x #forge:dense_plates/desh', '2x #forge:dense_plates/lead', Item.of('gtceu:iv_input_hatch', 1))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
+		.itemOutputs('tfg:uv_smr_fluid_import_hatch')
+		//.circuit(6)
+		.duration(2.5 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
 
 	// Vacuum Intake
 	event.shaped('tfg:casings/machine_casing_vacuum_engine_intake', [
