@@ -79,12 +79,12 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:ticl4_doped_supercritical_co2')
-		.liquid(new GTFluidBuilder().temperature(500))
+		.liquid(new GTFluidBuilder().customStill().temperature(500))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
 
 	event.create('tfg:spent_ticl4_doped_supercritical_co2')
-		.liquid(new GTFluidBuilder().temperature(2000))
+		.liquid(new GTFluidBuilder().customStill().temperature(2000))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
 
@@ -292,7 +292,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.ingot()
 		.element(GTElements.get("thorium_230"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.flags(GTMaterialFlags.GENERATE_ROD)
+		.flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0xf8a8c0)
 		.secondaryColor(0xcd8dbc)
 		.radioactiveHazard(1000000)
@@ -301,7 +301,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.ingot()
 		.element(GTElements.get("thorium_232"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.flags(GTMaterialFlags.GENERATE_ROD)
+		.flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0x694c66)
 		.radioactiveHazard(1000)
 
@@ -310,8 +310,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.element(GTElements.get("americium_241"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
-		.color(0x0600ff)
-		.secondaryColor(0x1b1d36)
+		.color(0x10B193)
+		.secondaryColor(0x66ff00)
 		.radioactiveHazard(1000000)
 
 	event.create('neptunium_237')
@@ -320,7 +320,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0x00df98)
-		.secondaryColor(0xffffff)
+		.secondaryColor(0x66ff00)
 		.radioactiveHazard(5000000)
 
 	event.create('californium_252')
@@ -329,7 +329,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0xffba00)
-		.secondaryColor(0xdfffff)
+		.secondaryColor(0x66ff00)
 		.radioactiveHazard(10000000)
 
 	//#endregion

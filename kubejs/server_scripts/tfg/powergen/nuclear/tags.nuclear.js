@@ -8,12 +8,12 @@ const registerTFGItemTagsNuclear = (event) => {
 	event.add('deafission:fuels', 'tfg:plutonium_rod')
 	event.add('tfg:fission_rods', '#deafission:fuels')
 
-	let FISSION_ROD = 'tfg:fission_rods';
+	let FISSION_ROD_TAG = 'tfg:fission_rods';
 
-	event.add(FISSION_ROD, 'tfg:tbu_232_rod');
-	event.add(FISSION_ROD, 'tfg:americium_241_rod');
-    event.add(FISSION_ROD, 'tfg:neptunium_237_rod');
-	event.add(FISSION_ROD, 'tfg:californium_252_rod');
+	event.add(FISSION_ROD_TAG, 'tfg:tbu_232_rod');
+	event.add(FISSION_ROD_TAG, 'tfg:americium_241_rod');
+    event.add(FISSION_ROD_TAG, 'tfg:neptunium_237_rod');
+	event.add(FISSION_ROD_TAG, 'tfg:californium_252_rod');
 
 }
 
