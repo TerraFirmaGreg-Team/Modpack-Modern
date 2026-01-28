@@ -421,6 +421,38 @@ function registerTFGNuclearRecipes(event) {
 		.addDataString("avgHeat1", "5000")
 		.addDataString("avgHeat2", "∞")
 
+	// Americium - Neptunium - Californium
+
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_americium_241_rod')
+        //.inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.gte("avgHeat", 5000))
+		.itemInputs(Item.of('tfg:americium_241_rod'))
+		.itemOutputs(Item.of('tfg:empty_rod_t2'))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*16)
+		.dimension('ad_astra:mars')
+		//.addDataString("avgHeat1", "5000")
+		//.addDataString("avgHeat2", "∞")
+
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_neptunium_237_rod')
+        //.inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.gte("avgHeat", 5000))
+		.itemInputs(Item.of('tfg:neptunium_237_rod'))
+		.itemOutputs(Item.of('tfg:empty_rod_t2'))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*16)
+		.dimension('ad_astra:mars')
+		//.addDataString("avgHeat1", "5000")
+		//.addDataString("avgHeat2", "∞")
+
+	event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_californium_252_rod')
+        //.inputItemNbtPredicate(Item.of('tfg:depleted_thorium_rod'), NBTPredicates.gte("avgHeat", 5000))
+		.itemInputs(Item.of('tfg:californium_252_rod'))
+		.itemOutputs(Item.of('tfg:empty_rod_t3'))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*16)
+		.dimension('ad_astra:mars')
+		//.addDataString("avgHeat1", "5000")
+		//.addDataString("avgHeat2", "∞")		
+
 	//#region Fission Recipes for cooling
 
 	event.recipes.deafission.fission_reactor_processing('tfg:dry_ice')
@@ -573,12 +605,18 @@ function registerTFGNuclearRecipes(event) {
 		.outputFluids(Fluid.of('tfg:warm_water', 40))
 		.EUt(-(32))
 		.duration(20*1.5)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	event.recipes.gtceu.smr_generator('tfg:boron_smr')
 		.inputFluids(Fluid.of('tfg:spent_ticl4_doped_supercritical_co2', 50))
 		.outputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 50))
 		.EUt(-(32))
 		.duration(20)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	//#endregion
 	
@@ -627,6 +665,9 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(1)
 		.duration(20*60)
 		.circuit(1)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_2')
 		.perTick(true)
@@ -636,6 +677,9 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(1)
 		.duration(20*60)
 		.circuit(2)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_3')
 		.perTick(true)
@@ -645,6 +689,9 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(1)
 		.duration(20*60)
 		.circuit(3)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_4')
 		.perTick(true)
@@ -654,6 +701,21 @@ function registerTFGNuclearRecipes(event) {
 		.EUt(1)
 		.duration(20*60)
 		.circuit(4)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
+
+	event.recipes.gtceu.cooling_tower('tfg:warm_into_distilled_5')
+		.perTick(true)
+		.inputFluids(Fluid.of('tfg:warm_water', 100000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 100000))
+		.perTick(false)
+		.EUt(1)
+		.duration(20*60)
+		.circuit(5)
+		.dimension('minecraft:overworld')
+		.dimension('ad_astra:mars')
+		//.dimension('ad_astra:glacio')
 
 	//#endregion
 
