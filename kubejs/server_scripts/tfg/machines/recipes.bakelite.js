@@ -111,5 +111,5 @@ function registerTFGBakeliteRecipes(event) {
 	], {
 		A: '#forge:plates/steel',
 		B: '#forge:storage_blocks/bakelite'
-	}).tfg('tfg:shaped/lv_hermetic_casing_bakelite')
+	}).id('tfg:shaped/lv_hermetic_casing_bakelite')
 }
