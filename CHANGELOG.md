@@ -27,6 +27,7 @@
 - TFC "pure" fertilisers are now all craftable and provide 100 fertiliser instead of 15 (#2884) @Coox1e
 - Added shapeless recipes to convert any old stone dusts into their new equivalents (#2900) @Pyritie
 - Fixed the crucible capacity config on servers (#2899) @Pyritie
+- Added recipe to convert sedimentary carbonate stone dust into flux (#2862) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
