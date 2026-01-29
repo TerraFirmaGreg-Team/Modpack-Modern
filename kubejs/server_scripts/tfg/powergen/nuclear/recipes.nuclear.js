@@ -329,9 +329,9 @@ function registerTFGNuclearRecipes(event) {
         // durability / const / heatValue
         .duration(100000 / 0.4 / 2);
 
-	event.recipes.deafission.fission_reactor_coolant('tfg:neptunium_237_coolant')
+	event.recipes.deafission.fission_reactor_coolant('tfg:boron_enriched_coolant')
         .itemInputs(
-			Ingredient.of(['tfg:neptunium_237_rod', 'tfg:americium_241_rod']))
+			Ingredient.of(['tfg:neptunium_237_rod', 'tfg:americium_241_rod', 'tfg:californium_252_rod']))
         .inputFluids(Fluid.of('tfg:boron_enriched_coolant', 10*64))
         .outputFluids(Fluid.of('tfg:hot_boron_enriched_coolant', 10*64))
         .addData("coolant_heat_per_tick", 1)
@@ -350,6 +350,22 @@ function registerTFGNuclearRecipes(event) {
             'tfg:americium_241_rod']))
         .inputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 80))
         .outputFluids(Fluid.of('tfg:spent_ticl4_doped_supercritical_co2', 80))
+        .addData("coolant_heat_per_tick", 1)
+        .duration(1);
+
+		// Neptunium-237 Rod Fission
+    event.recipes.deafission.fission_reactor_fuel('tfg:californium_252_rod')
+        .itemInputs('tfg:californium_252_rod')
+        .itemOutputs('tfg:depleted_californium_252_rod')
+        // Mandatory by GT; no real impact. Use this as a convention:
+        // durability / const / heatValue
+        .duration(500000 / 0.4 / 4);
+
+	event.recipes.deafission.fission_reactor_coolant('tfg:flibe_coolant')
+        .itemInputs(
+			Ingredient.of(['tfg:californium_252_rod']))
+        .inputFluids(Fluid.of('tfg:flibe', 10*64))
+        .outputFluids(Fluid.of('tfg:hot_flibe', 10*64))
         .addData("coolant_heat_per_tick", 1)
         .duration(1);
 
