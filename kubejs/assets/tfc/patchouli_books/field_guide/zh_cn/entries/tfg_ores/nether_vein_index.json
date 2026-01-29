@@ -1385,7 +1385,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/250 区块$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
+      "text": "$(thing)稀有度$(): 1/300 区块$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 32 — 128$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "绿宝石, 铍矿",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"

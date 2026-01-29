@@ -28,6 +28,9 @@
 - Added shapeless recipes to convert any old stone dusts into their new equivalents (#2900) @Pyritie
 - Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Added recipe to convert sedimentary carbonate stone dust into flux (#2862) @Pyritie
+- Deserts now contain oil spouts for heavy, raw, light, and normal oils @Pyritie
+- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert @Pyritie
+- Some volcanoes should now have much bigger amounts of lava underneath them, for more lava needs, but also infinite obsidian via the rock breaker has been removed. (Use a fluid solidifier instead) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
