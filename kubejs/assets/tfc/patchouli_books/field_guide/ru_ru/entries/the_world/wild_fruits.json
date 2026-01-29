@@ -1941,127 +1941,43 @@
           "text": ""
         },
         {
-          "text": "Jan"
+          "text": "Янв"
         },
         {
-          "text": "Feb"
+          "text": "Фев"
         },
         {
-          "text": "Mar"
+          "text": "Мар"
         },
         {
-          "text": "Apr"
+          "text": "Апр"
         },
         {
-          "text": "May"
+          "text": "Май"
         },
         {
-          "text": "Jun"
+          "text": "Июн"
         },
         {
-          "text": "Jul"
+          "text": "Июл"
         },
         {
-          "text": "Aug"
+          "text": "Авг"
         },
         {
-          "text": "Sep"
+          "text": "Сен"
         },
         {
-          "text": "Oct"
+          "text": "Окт"
         },
         {
-          "text": "Nov"
+          "text": "Ноя"
         },
         {
-          "text": "Dec"
+          "text": "Дек"
         },
         {
-          "text": "Cherry"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Apple"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Lemon"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
+          "text": "Вишня"
         },
         {
           "fill": "0x6ab553"
@@ -2094,7 +2010,13 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Olive"
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Яблоня"
         },
         {
           "fill": "0xa8986a"
@@ -2133,7 +2055,85 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Orange"
+          "text": "Лимон"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Олива"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Апельсин"
         },
         {
           "fill": "0xa8986a"
@@ -2172,7 +2172,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Peach"
+          "text": "Персик"
         },
         {
           "fill": "0x6ab553"
@@ -2211,7 +2211,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Plum"
+          "text": "Слива"
         },
         {
           "fill": "0x6ab553"
@@ -2250,7 +2250,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Banana"
+          "text": "Банан"
         },
         {
           "fill": "0xa8986a"
@@ -2293,19 +2293,19 @@
       "title": "Фруктовые деревья",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "Спящее",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "Здоровое",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "Цветущее",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "Плодоносящее",
           "color": "0xa217ff"
         }
       ],
@@ -3117,12 +3117,12 @@
     {
       "type": "patchouli:text",
       "anchor": "wintergreen_berry",
-      "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -6 - 17 °C$(br)$(bold)$(l:mechanics/hydration)Увлажненность$(): 12 - 100 %$(br2)Кусты черники зимнего сорта растут с мая по сентябрь, начинают цветение в октябре и ноябре, и приносят плоды в декабре.$(br2)Их можно найти в лесах.",
-      "title": "Куст черники зимнего сорта"
+      "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -6 - 17 °C$(br)$(bold)$(l:mechanics/hydration)Увлажненность$(): 12 - 100 %$(br2)Кусты брусники растут с мая по сентябрь, начинают цветение в октябре и ноябре, и приносят плоды в декабре.$(br2)Их можно найти в лесах.",
+      "title": "Куст брусники"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Стадии куста черники зимнего сорта по месяцам.",
+      "text": "Стадии куста брусники по месяцам.",
       "multiblocks": [
         {
           "pattern": [
@@ -3249,124 +3249,43 @@
           "text": ""
         },
         {
-          "text": "Jan"
+          "text": "Янв"
         },
         {
-          "text": "Feb"
+          "text": "Фев"
         },
         {
-          "text": "Mar"
+          "text": "Мар"
         },
         {
-          "text": "Apr"
+          "text": "Апр"
         },
         {
-          "text": "May"
+          "text": "Май"
         },
         {
-          "text": "Jun"
+          "text": "Июн"
         },
         {
-          "text": "Jul"
+          "text": "Июл"
         },
         {
-          "text": "Aug"
+          "text": "Авг"
         },
         {
-          "text": "Sep"
+          "text": "Сен"
         },
         {
-          "text": "Oct"
+          "text": "Окт"
         },
         {
-          "text": "Nov"
+          "text": "Ноя"
         },
         {
-          "text": "Dec"
+          "text": "Дек"
         },
         {
-          "text": "Snowberry"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Bunchberry"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0x6ab553"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xcca0db"
-        },
-        {
-          "fill": "0xa217ff"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "fill": "0xa8986a"
-        },
-        {
-          "text": "Gooseberry"
-        },
-        {
-          "fill": "0xa8986a"
+          "text": "Снежноягодник"
         },
         {
           "fill": "0xa8986a"
@@ -3402,7 +3321,88 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Cloudberry"
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Кизил"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Крыжовник"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "text": "Морошка"
         },
         {
           "fill": "0xa8986a"
@@ -3441,7 +3441,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Strawberry"
+          "text": "Клубника"
         },
         {
           "fill": "0xcca0db"
@@ -3480,7 +3480,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Wintergreen"
+          "text": "Брусника"
         },
         {
           "fill": "0xa8986a"
@@ -3519,7 +3519,7 @@
           "fill": "0xa8986a"
         },
         {
-          "text": "Cranberry"
+          "text": "Клюква"
         },
         {
           "fill": "0xa8986a"
@@ -3562,21 +3562,22 @@
       "title": "Ягодные кусты",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "Спящий",
           "color": "0xa8986a"
         },
         {
-          "text": "Healthy",
+          "text": "Здоровый",
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "Цветущий",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "Плодоносящий",
           "color": "0xa217ff"
         }
+
       ],
       "columns": 12,
       "first_column_width": 45,

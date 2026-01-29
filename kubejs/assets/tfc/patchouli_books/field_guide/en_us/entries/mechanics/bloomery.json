@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If you don't want to do the math, we recommend $(item)25 metal ore dusts$() and $(item)22 fuel items$().$(br2)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery block, and wait 15 hours for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+			"text": "If you don't want to do the math, we recommend $(item)25 metal ore dusts$() and $(item)22 fuel items$().$(br2)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait 15 hours for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
 		},
 		{
 			"type": "patchouli:multiblock",

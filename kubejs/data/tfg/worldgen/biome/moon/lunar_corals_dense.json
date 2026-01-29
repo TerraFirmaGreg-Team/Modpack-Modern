@@ -20,7 +20,15 @@
 		},
 		"sky_color": 0,
 		"water_color": 4159204,
-		"water_fog_color": 329011
+		"water_fog_color": 329011,
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.moon"
+			}
+		}
 	},
 	"features": [
 		[],
@@ -54,7 +62,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"creature_spawn_probability": 0.0003,
+	"creature_spawn_probability": 0.01,
 	"spawn_costs": {
 		"species:limpet": {
 			"energy_budget": 0.15,

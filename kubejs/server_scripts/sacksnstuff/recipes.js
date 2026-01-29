@@ -247,10 +247,11 @@ const registerSNSRecipes = (event) => {
 		.circuit(4)
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
+
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
-		result: 'sns:metal/horseshoe/steel'
+		result: { item: 'sns:metal/horseshoe/steel' }
 	}).id(`tfg:rolling/steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_black_steel_electric_only')
@@ -262,7 +263,7 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlackSteel, 1),
-		result: 'sns:metal/horseshoe/black_steel'
+		result: { item: 'sns:metal/horseshoe/black_steel' }
 	}).id(`tfg:rolling/black_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_blue_steel_electric_only')
@@ -274,7 +275,7 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.BlueSteel, 1),
-		result: 'sns:metal/horseshoe/blue_steel'
+		result: { item: 'sns:metal/horseshoe/blue_steel' }
 	}).id(`tfg:rolling/blue_steel_horseshoe`)
 
 	event.recipes.gtceu.bender('sns:horseshoe_red_steel_electric_only')
@@ -286,6 +287,6 @@ const registerSNSRecipes = (event) => {
 	event.custom({
 		type: "createaddition:rolling",
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.RedSteel, 1),
-		result: 'sns:metal/horseshoe/red_steel'
+		result: { item: 'sns:metal/horseshoe/red_steel' }
 	}).id(`tfg:rolling/red_steel_horseshoe`)
 }

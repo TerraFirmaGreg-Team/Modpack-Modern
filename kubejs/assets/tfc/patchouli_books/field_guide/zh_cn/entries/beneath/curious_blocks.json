@@ -14,6 +14,11 @@
             "text": "地狱砖是一种建筑方块，也用于地狱熔炉建造。"
         },
         {
+            "type": "patchouli:spotlight",
+            "item": "beneath:ancient_altar",
+            "text": "辉石岩基座可用于展示你想炫耀的物品！"
+        },
+        {
             "type": "patchouli:crafting",
             "recipe": "beneath:crafting/blackstone_brick",
             "text": "混合岩和辉石岩砖块如普通砖块一样制作，也需要先制作石砖物品。"

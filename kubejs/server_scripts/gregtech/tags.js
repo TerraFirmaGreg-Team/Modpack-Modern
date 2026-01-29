@@ -91,6 +91,7 @@ function registerGTCEUBlockTags(event) {
     event.add("gtceu:cleanroom_doors", "ad_astra:desh_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:ostrum_sliding_door");
     event.add("gtceu:cleanroom_doors", "ad_astra:calorite_sliding_door");
+    event.add("gtceu:cleanroom_doors", "ad_astra:airlock");
 
     // Groups up concrete blocks into tags.
     Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {
@@ -111,5 +112,7 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
-
+    
+    event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_red_steel");
+    event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_blue_steel");
 }

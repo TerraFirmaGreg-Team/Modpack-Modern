@@ -67,6 +67,35 @@ function registerTFGAlloyingRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
 		.blastFurnaceTemp(1000)
+
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/red_steel' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/blue_steel' })
+
+	event.recipes.greate.mixing('#forge:dusts/weak_red_steel',
+		['4x #forge:dusts/black_steel', '2x #forge:dusts/steel', '#forge:dusts/brass', '#forge:dusts/rose_gold'])
+		.recipeTier(1)
+		.circuitNumber(2)
+		.heated()
+		.id('tfg:weak_red_steel_greate')
+
+	event.recipes.greate.mixing('#forge:dusts/weak_blue_steel',
+		['4x #forge:dusts/black_steel', '2x #forge:dusts/steel', '#forge:dusts/bismuth_bronze', '#forge:dusts/sterling_silver'])
+		.recipeTier(1)
+		.circuitNumber(2)
+		.heated()
+		.id('tfg:weak_blue_steel_greate')
+
+	event.recipes.greate.mixing('#forge:dusts/red_steel',
+		['4x #forge:dusts/black_steel', '2x #forge:dusts/steel', '#forge:dusts/brass', '#forge:dusts/rose_gold'])
+		.recipeTier(2)
+		.circuitNumber(1)
+		.id('tfg:red_steel_greate')
+
+	event.recipes.greate.mixing('#forge:dusts/blue_steel',
+		['4x #forge:dusts/black_steel', '2x #forge:dusts/steel', '#forge:dusts/bismuth_bronze', '#forge:dusts/sterling_silver'])
+		.recipeTier(2)
+		.circuitNumber(1)
+		.id('tfg:blue_steel_greate')
 		
 	//#endregion
 

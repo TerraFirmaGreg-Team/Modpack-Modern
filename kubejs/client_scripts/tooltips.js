@@ -24,6 +24,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:antipoison_tablet'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.antipoison_tablet'))
 	})
+	event.addAdvanced(['tfg:polycaprolactam_fabric'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.polycaprolactam'))
+	})
 	event.addAdvanced(['tfg:electric_greenhouse'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.electric_greenhouse_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.electric_greenhouse_2'));
@@ -402,7 +405,7 @@ const registerTooltips = (event) => {
 	})
 
 	// Deprecated Items
-	event.addAdvanced(['vintageimprovements:lathe'], (item, advanced, text) => {
+	event.addAdvanced(['vintageimprovements:lathe', 'ae2:fe_p2p_tunnel'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 
@@ -464,14 +467,18 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
 	})
-	event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
-		text.add(2, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
-	})
-	event.addAdvanced(['gtceu:methanol_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.blindness").append(Text.of(" (05:00)")).red());
-		text.add(2, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
-	})
+	//event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
+	//	text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
+	//	text.add(2, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
+	//})
+	//event.addAdvanced(['gtceu:methanol_bucket'], (item, advanced, text) => {
+	//	text.add(1, Text.translate("effect.minecraft.blindness").append(Text.of(" (05:00)")).red());
+	//	text.add(2, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
+	//})
+	//event.addAdvanced(['gtceu:concrete_bucket', 'rnr:bucket/concrete'], (item, advanced, text) => {
+	//	text.add(1, Text.translate("effect.minecraft.slowness").append(Text.of(" II (05:00)")).red());
+	//	text.add(2, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
+	//})
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})

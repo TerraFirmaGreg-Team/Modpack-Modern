@@ -170,6 +170,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
+    "tfg:molten_weak_blue_steel_bucket",
+    "tfg:molten_weak_red_steel_bucket",
 
     //armor
     "gtceu:bronze_helmet",
@@ -252,7 +254,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_deepslate_dust",
     "gtceu:andesite_dust",
     "gtceu:small_andesite_dust",
-    "gtceu:tiny_andesite_dust"
+    "gtceu:tiny_andesite_dust",
+    "gtceu:tuff_dust",
+    "gtceu:small_tuff_dust",
+    "gtceu:tiny_tuff_dust",
+    "gtceu:endstone_dust",
+    "gtceu:small_endstone_dust",
+    "gtceu:tiny_endstone_dust"
 ]);
 //#endregion
 
@@ -409,7 +417,8 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "mars_stone",
     "venus_stone",
     "mercury_stone",
-    "glacio_stone"
+    "glacio_stone",
+    "red_granite"
 ]);
 //#endregion
 
@@ -432,7 +441,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
 
     { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
-    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 }
+    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
+
+    { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 }
 ]);
 //#endregion
 

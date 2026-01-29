@@ -47,7 +47,7 @@ function registerTFCGurmanRecipes(event) {
 	global.cookingRecipe(event, 'oladyi', 'tfc_gurman:raw_oladyi', 'tfc_gurman:oladyi');
 
 	// Falafel - from soybean (no raw version)
-	global.cookingRecipe(event, 'falafel', 'tfc:food/soybean', 'tfc_gurman:falafel');
+	global.cookingRecipe(event, 'falafel', 'tfc_gurman:raw_falafel', 'tfc_gurman:falafel');
 
 	global.cookingRecipe(event, 'pelmeni', 'tfc_gurman:raw_pelmeni', 'tfc_gurman:pelmeni', '#tfg:clean_water 500');
 
@@ -58,8 +58,15 @@ function registerTFCGurmanRecipes(event) {
 	//#region Food Processor Recipes
 
 	// Borscht
+	global.processorRecipe(event, 'sliced_cabbage', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['tfc:food/cabbage'],
+		itemOutputs: ['2x tfc_gurman:sliced_cabbage'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of('2x tfc_gurman:sliced_cabbage').copyOldestFood()
+	});
+
 	global.processorRecipe(event, 'borscht', 300, GTValues.VA[GTValues.LV], {
-		itemInputs: ['tfc:food/beet', 'tfc:food/cabbage', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/tomato', '3x #tfc:bowls'],
+		itemInputs: ['tfc:food/beet', 'tfc_gurman:sliced_cabbage', 'tfc:food/carrot', 'tfc:food/onion', '#tfc:foods/cooked_meats', '3x #tfc:bowls'],
 		fluidInputs: ['minecraft:water 1000'],
 		itemOutputs: ['3x tfc_gurman:borscht'],
 		circuit: 20,
@@ -93,7 +100,7 @@ function registerTFCGurmanRecipes(event) {
 
 	// Compote
 	global.processorRecipe(event, 'compote', 1000, GTValues.VHA[GTValues.LV], {
-		itemInputs: ['2x #tfc:foods/fruits'],
+		itemInputs: ['2x #tfc_gurman:compote_fruits'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gurman:compote 1000'],
 		circuit: 6
@@ -101,7 +108,7 @@ function registerTFCGurmanRecipes(event) {
 
 	// Lemonade
 	global.processorRecipe(event, 'lemonade', 1500, GTValues.VHA[GTValues.LV], {
-		itemInputs: ['2x tfc:food/lemon', '#tfc:sweetener'],
+		itemInputs: ['2x tfc:food/lemon'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gurman:lemonade 1000'],
 		circuit: 2
@@ -338,11 +345,124 @@ function registerTFCGurmanRecipes(event) {
 
 	// Adjika
 	global.processorRecipe(event, 'adjika', 300, GTValues.VA[GTValues.LV], {
-		itemInputs: ['tfc:food/green_bell_pepper', 'tfc:food/red_bell_pepper', 'tfc:powder/salt', 'tfc:food/garlic', 'firmalife:plant/cilantro', '5x #tfc:bowls'],
+		itemInputs: ['#tfc:food/bell_peppers', '#tfc:food/bell_peppers', 'tfc:powder/salt', 'tfc:food/garlic', "tfg:spice/cilantro_leaves", '5x #tfc:bowls'],
 		fluidInputs: ['minecraft:water 500'],
 		itemOutputs: ['5x tfc_gurman:adjika'],
 		circuit: 8,
 		itemOutputProvider: TFC.isp.of('5x tfc_gurman:adjika').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Onion soup with bread
+	global.processorRecipe(event, 'onion_soup_with_bread', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/onion', '#firmalife:foods/flatbreads', '#firmalife:foods/cheeses', 'tfc:powder/salt', '#tfc:bowls'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:fresh_onion_soup_bread'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:fresh_onion_soup_bread').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Lentil soup
+	global.processorRecipe(event, 'lentil_soup', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/soybean', 'tfc:food/onion', 'tfc:food/garlic', 'tfc:powder/salt', '#tfc:bowls'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:lent_soup'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:lent_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Gazpacho
+	global.processorRecipe(event, 'gazpacho', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/tomato', '#tfc:food/bell_peppers', '#firmalife:foods/flatbreads', 'tfc:food/garlic', '#tfc:bowls'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:gazpacho'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:gazpacho').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Kharcho
+	global.processorRecipe(event, 'kharcho', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['tfc_gurman:plant_mix', 'tfc:food/garlic', 'tfc:food/onion', 'tfc:food/rice_grain', 'tfc:food/cooked_beef'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:kharcho'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:kharcho').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Kholodnik
+	global.processorRecipe(event, 'kholodnik', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['tfc:food/potato', '2x tfc:food/beet', '#forge:eggs', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:kholodnik'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:kholodnik').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Shurpa
+	global.processorRecipe(event, 'shurpa', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#tfc:food/bell_peppers', 'tfc:food/onion', 'tfc:food/potato', 'tfc:food/cooked_mutton', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:shurpa'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:shurpa').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+	global.processorRecipe(event, 'shurpa2', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#tfc:food/bell_peppers', 'tfc:food/onion', 'tfc:food/potato', 'tfc:food/cooked_beef', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:shurpa'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:shurpa').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Fish tomato soup
+	global.processorRecipe(event, 'fish_tomato_soup', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#firmalife:foods/raw_fish', 'tfc:food/tomato', 'tfc:food/onion', 'tfc:food/garlic', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:fish_soup_tomato'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:fish_soup_tomato').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Pea soup
+	global.processorRecipe(event, 'pea_soup', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/green_bean', 'tfc:food/onion', '#tfc:foods/cooked_meats', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:pea_soup'],
+		circuit: 16,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:pea_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Minestrone
+	global.processorRecipe(event, 'minestrone', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['tfc:food/rice_grain', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/garlic', '#tfc:foods/cooked_meats'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:minestrone'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:minestrone').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+	global.processorRecipe(event, 'minestrone2', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['firmalife:food/raw_egg_noodles', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/garlic', '#tfc:foods/cooked_meats'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:minestrone'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:minestrone').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// Fish soup
+	global.processorRecipe(event, 'fish_soup', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#firmalife:foods/raw_fish', 'tfc:food/onion', 'tfc:food/potato', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:fish_soup'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:fish_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// French onion soup with toast
+	global.processorRecipe(event, 'french_onion_soup', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/onion', '#firmalife:foods/slices', '#firmalife:foods/cheeses', 'tfc:powder/salt'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gurman:fresh_onion_soup'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gurman:fresh_onion_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
 	});
 
 	//#endregion
@@ -377,21 +497,17 @@ function registerTFCGurmanRecipes(event) {
 	});
 	// #endregion Drying
 
-	// #region Crafting table foods
-
-	// TODO: unfinished
-	global.processorRecipe(event, 'margarita_pizza', 300, GTValues.VA[GTValues.LV], {
-		itemInputs: ['firmalife:food/pizza_dough', 'firmalife:food/shredded_cheese', 'tfc:food/tomato', 'tfc:food/red_bell_pepper', 'tfc_gurman:plant_mix', 'firmalife:food/tomato_sauce'],
-		itemOutputs: ['tfc_gurman:raw_margarita_pizza'],
-		circuit: 4,
-		itemOutputProvider: TFC.isp.of('tfc_gurman:raw_margarita_pizza').simpleModifier('tfg:force_add_bowl').copyOldestFood()
-	});
-
-	// #endregion
-
 	// #region Replacements
 
 	event.replaceInput({ id: "tfc_gurman:crafting/tiramisu" }, "minecraft:sugar", "#tfg:sugars");
+
+	event.shapeless('2x tfc_gurman:plant_mix', [
+		"2x firmalife:spice/basil_leaves",
+		"tfg:spice/oregano_leaves",
+		"tfg:spice/cilantro_leaves",
+	]).id("tfc_gurman:crafting/plant_mix")
+
+	event.replaceInput({ id: "tfc_gurman:pot/adjika_bowl" }, "firmalife:plant/cilantro", "tfg:spice/cilantro_leaves");
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of('4x tfc_gurman:raw_takoyaki').copyOldestFood(), [
 		TFC.ingredient.notRotten('tfg:food/raw_crawlermari'),

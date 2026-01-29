@@ -177,4 +177,5 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(5*20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true);
+	
 }

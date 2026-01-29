@@ -186,7 +186,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
-		.itemInputs('minecraft:glass', 'tfc:powder/amethyst')
+		.itemInputs('#forge:glass', '4x tfc:powder/amethyst')
 		.itemOutputs('minecraft:tinted_glass')
 		.duration(260)
 		.EUt(16)
@@ -479,7 +479,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Ведро, buckets
 
-	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+	event.recipes.tfc.welding(TFC.isp.of('minecraft:bucket').copyForgingBonus(), 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
 
 	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 'tfc:powder/flux'])
@@ -994,21 +994,14 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
 	//#region Glowing Ink Sacs
-		
-	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
-		.itemInputs("gtceu:thorium_dust")
-		.inputFluids(Fluid.of('gtceu:glowstone', 512))
-		.itemOutputs('16x minecraft:glow_ink_sac')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
-		
-	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
-		.itemInputs("#forge:dyes/black")
-		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+
+	event.recipes.gtceu.fluid_solidifier('tfg:glow_ink_sac')
+		.inputFluids('gtceu:glowstone 36')
+		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
-
+		
 	//#endregion
 
 	//#region Gunpowder

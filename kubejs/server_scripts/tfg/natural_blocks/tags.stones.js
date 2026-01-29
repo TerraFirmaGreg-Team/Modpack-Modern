@@ -323,6 +323,11 @@ function registerTFGStoneBlockTags(event) {
 		if (rock.cobble != null) {
 			event.add('tfc:can_landslide', rock.cobble.block)
 			event.add('forge:cobblestone', rock.cobble.block)
+
+			if (rock.cobble.mossy != null) {
+				event.add('tfc:can_landslide', rock.cobble.mossy.block)
+				event.add('forge:cobblestone', rock.cobble.mossy.block)
+			}
 		}
 		
 		if (rock.gravel != null) {

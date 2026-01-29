@@ -98,7 +98,7 @@ function registerTFGMultiblockRecipes(event) {
 		'ACA',
 		'ABA'
 	], {
-		A: '#forge:plates/brass',
+		A: '#forge:plates/bronze',
 		B: 'gtceu:potin_large_fluid_pipe',
 		C: 'gtceu:hp_steam_compressor'
 	}).addMaterialInfo().id('gtceu:shaped/steam_squasher')
@@ -108,7 +108,7 @@ function registerTFGMultiblockRecipes(event) {
 		'ACA',
 		'ABA'
 	], {
-		A: '#forge:plates/brass',
+		A: '#forge:plates/bronze',
 		B: 'tfc:metal/anvil/steel',
 		C: 'gtceu:hp_steam_forge_hammer',
 		D: 'gtceu:potin_large_fluid_pipe'

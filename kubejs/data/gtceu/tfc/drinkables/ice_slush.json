@@ -1,6 +1,7 @@
 {
 	"ingredient": "gtceu:ice",
 	"thirst": 10,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "tfg:cooling",

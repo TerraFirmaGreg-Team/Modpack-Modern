@@ -2,7 +2,8 @@
 "use strict";
 
 const registerTFGRocksTagPrefixes = (event) => {
-
+	
+	TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
 	TagPrefix.ORES.remove(TagPrefix.oreTuff)
 	TagPrefix.ORES.remove(TagPrefix.oreSand)
 	TagPrefix.ORES.remove(TagPrefix.oreRedSand)
@@ -15,6 +16,7 @@ const registerTFGRocksTagPrefixes = (event) => {
 	TagPrefix.ORES.remove(TagPrefix.oreAndesite)
 	TagPrefix.ORES.remove(TagPrefix.oreDiorite)
 	TagPrefix.ORES.remove(TagPrefix.oreGranite)
+	TagPrefix.ORES.remove(TagPrefix.oreRedGranite)
 
 	const shouldGenerateOre = (material) => {
 		return material.hasProperty(PropertyKey.ORE);
@@ -45,6 +47,15 @@ const registerTFGRocksTagPrefixes = (event) => {
 		.generationCondition(shouldGenerateOre)
 		
 	TFGHelpers.registerCobbleBlock('pyroxenite', 'tfg:rock/cobble_blackstone');
+
+	event.create('deepslate', 'ore')
+		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
+		.baseModelLocation('minecraft:block/deepslate')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('deepslate', 'minecraft:cobbled_deepslate');
 
 	event.create('dripstone', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:dripstone_block').defaultBlockState())
@@ -108,4 +119,13 @@ const registerTFGRocksTagPrefixes = (event) => {
 		.generationCondition(shouldGenerateOre)
 
 	TFGHelpers.registerCobbleBlock('glacio_stone', 'ad_astra:glacio_cobblestone');
+
+	event.create('red_granite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_red_granite').defaultBlockState())
+		.baseModelLocation('gtceu:block/red_granite')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('red_granite', 'gtceu:red_granite_cobblestone');
 }

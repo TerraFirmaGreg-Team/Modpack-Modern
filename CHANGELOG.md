@@ -1,8 +1,49 @@
 # Changelog
 
 ## Unreleased
-### Important note
+### Breaking changes
+- The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
+#### ULV changes
+- The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
+- The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
+- Changed ULV hulls to needing lead plates instead of wood plates
+- Adjusted a few other machine recipes slightly
+#### LV changes
+- Completely rearranged the quest chapter! Now it should be much less intimidating for new players
+- Added Bakelite, a new early plastic used for Phenolic Boards and MV machine hulls (instead of wrought iron plates)
+- Removed the other fiberboard that was previously used for phenolic boards
+- Added some recipes to get Phenol and Methane in LV
+- Added new ceramics required to craft Cupronickel Coils, made out of your recycled TFC blast furnace, Magnesia, and some resin
+- Cupronickel coils now also need blue steel foil instead of bronze
+- Polyethylene now requires an MV chemical reactor
+### Changes
+- Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
+- Added much more music to the different dimensions @Pyritie
+- Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
+- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
+- Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
+- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
+- Glow ink now just requires a fluid solidifier and a ball mold, instead of whatever it was doing before @Pyritie
+- TFC "pure" fertilisers are now all craftable and provide 100 fertiliser instead of 15 (#2884) @Coox1e
+### Bug fixes
+- Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
+- Fixed red granite ores never dropping poor or rich raw ores @Pyritie
+- Fixed rosin leaves and saplings having tags the wrong way around (#2840) @TanJeeSchuan
+- Fixed missing borax to flux recipe @Pyritie
+- Fixed lavaproof blue steel boots not having armor resistances (#2872) @Paradalope
+- Fixed the dye colors used to make Create Deco's bricks (#2859) @silllil
+- Fixed the Electric Greenhouse outputting way less Chorus Fruit than before @Pyritie
+- Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
+### Translation updates
+- Chinese (simplified) @jmecn
+- Russian @Petr211071 + @Nixieeunrare
+- Spanish @NikoNeko17
+
+## [0.11.18] - 23-01-2026
+### Important notes
+If you missed it, 0.11.17 was a Beta version with other important breaking changes. Be sure to [read it](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.11.17) as well!
 - OC has been fixed on the Pisciculture Fishery and Hydroponics Facility. You will have to break and replace the machine for the fix to take effect.
+- The Saltpeter chemical reactor recipe is now on circuit 2, to avoid a conflict with Nitrous Oxide (#2826) @Pyritie
 ### Breaking changes we forgot to write last time
 - Water wheels now *require* flowing water to work correctly. So you can't just put them in a lake, but you can make little flows off the side of it or use aqueducts and those should work. Other than that, they should have their same stress numbers as before.
 #### Stone dusts and other rock-related changes
@@ -16,6 +57,11 @@
 - Mars log electric greenhouse recipes now output the same amount of logs as earth log recipes @Pyritie
 - Geodes (in newly generated chunks) are now completely solid so they won't cause cave-ins any more @Pyritie
 - Recolored the different oils so you can actually tell them apart visually @Pyritie
+- The food meter's saturation level is now indicated by a gold outline instead of a red one, so it's less difficult to see (#2812) @TreyR9
+- Changed some of the colors of Greate things to make the different tiers more visually distinct @Pyritie
+- Buffed ore washing and ore maceration recipes so at least they aren't so awful compared to Greate's methods @Pyritie
+- Added TFG's crops to the field guide's Wild Crops entry @Petr211071
+- You can now drink concrete @Pyritie
 ### Bug fixes
 - Fixed a config bug causing waves to deposit shells etc with 100% chance. @Mqrius
 - Fixed a bug preventing the Pisciculture Fishery and Hydroponics Facility from overclocking. @Redeix
@@ -23,8 +69,16 @@
 - Fixed roads losing their movement speed bonus (#2790) @Pyritie
 - Fixed water wheels misbehaving again (#2791) @Pyritie
 - Fixed not being able to cast steel or higher tier materials into ceramic molds (#2789, #2794) @Pyritie
+- Fixed the Ad Astra airlock not counting as a cleanroom door (#2808) @thederpysockdude123
+- Removed some leftover rock dust centrifuge recipes (#2804) @thederpysockdude123
+- Fixed some mars plants self-destructing @Pyritie
+- Fixed mossy cobblestone not collapsing @Pyritie
+- Fixed welding not preserving forging bonuses (#2827) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
+- Russian @Petr211071
+- Chinese (simplified) @jmecn
+- Japanese @sakura-gondra
 
 ## [0.11.17] - 20-01-2026
 ### Important note
