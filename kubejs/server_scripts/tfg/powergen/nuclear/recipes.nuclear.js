@@ -219,16 +219,16 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
 	// Heat Exchanger for Energy
-
+/*
 	event.recipes.gtceu.heat_exchanger('flibe_cooling')
-		.inputFluids(Fluid.of('gtceu:hot_flibe', 10))
+		.inputFluids(Fluid.of('tfg:hot_flibe', 10))
 		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
 		.chancedFluidInput(Fluid.of('gtceu:hastelloy_c_276', 10), 5000, 0)
-		.chancedFluidOutput(Fluid.of('gtceu:flibe', 10), 9500, 0)
+		.chancedFluidOutput(Fluid.of('tfg:flibe', 10), 9500, 0)
 		.outputFluids(Fluid.of('gtceu:dense_steam', 10))
 		.duration(20*10)
 		.EUt(1)
-
+*/
 	//#endregion
 
 	//#region Fission Reactor
@@ -936,48 +936,48 @@ function registerTFGNuclearRecipes(event) {
 		.addDataString("avgHeat2", "∞")
 
 	//#region FLiBe Line - SCRAP FROM MARS TO VENUS
-
+/*
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_earth')
 		.inputFluids(Fluid.of('tfc:spring_water', 20000))
-		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.outputFluids(Fluid.of('tfg:raw_rich_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.evaporation_tower('raw_rich_brine_mars')
 		.inputFluids(Fluid.of('tfg:heavy_ammoniacal_water', 20000))
-		.outputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.outputFluids(Fluid.of('tfg:raw_rich_brine', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('hydrogen_iodide_to_hot_iodine_brine')
 		.inputFluids(Fluid.of('gtceu:hydrogen_iodide', 1000))
-		.inputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.inputFluids(Fluid.of('tfg:raw_rich_brine', 1000))
 		.outputFluids(Fluid.of('gtceu:sodium_potassium', 1000))
-		.outputFluids(Fluid.of('gtceu:hot_iodine_brine', 1000))
+		.outputFluids(Fluid.of('tfg:hot_iodine_brine', 1000))
 		.duration(20*24)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.large_chemical_reactor('basic_bromine_exhaust_to_hot_iodine_brine')
-		.inputFluids(Fluid.of('gtceu:basic_bromine_exhaust', 1000))
-		.inputFluids(Fluid.of('gtceu:raw_rich_brine', 1000))
+		.inputFluids(Fluid.of('tfg:basic_bromine_exhaust', 1000))
+		.inputFluids(Fluid.of('tfg:raw_rich_brine', 1000))
 		.outputFluids(Fluid.of('gtceu:sodium_potassium', 1000))
-		.outputFluids(Fluid.of('gtceu:hot_iodine_brine', 1000))
+		.outputFluids(Fluid.of('tfg:hot_iodine_brine', 1000))
 		.outputFluids(Fluid.of('gtceu:steam', 1000))
 		.duration(20*30)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.evaporation_tower('brominated_iodine_vapor')
-		.inputFluids(Fluid.of('gtceu:hot_iodine_brine', 10000))
+		.inputFluids(Fluid.of('tfg:hot_iodine_brine', 10000))
 		.itemOutputs('#forge:dusts/magnesium_chloride')
-		.outputFluids(Fluid.of('gtceu:brominated_iodine_vapor', 1000))
+		.outputFluids(Fluid.of('tfg:brominated_iodine_vapor', 1000))
 		.duration(20*50)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('lithium_carbonate')
-		.inputFluids(Fluid.of('gtceu:brominated_iodine_vapor', 1000))
+		.inputFluids(Fluid.of('tfg:brominated_iodine_vapor', 1000))
 		.itemInputs('#forge:dusts/sodium_hydroxide')
 		.itemOutputs('#forge:dusts/lithium_carbonate')
-		.outputFluids(Fluid.of('gtceu:basic_bromine_exhaust', 1000))
+		.outputFluids(Fluid.of('tfg:basic_bromine_exhaust', 1000))
 		.duration(20*54)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -1004,20 +1004,20 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.itemInputs('#forge:gems/lithium_fluoride')
 		.itemInputs('#forge:gems/tetrafluoroberyllate')
-		.outputFluids(Fluid.of('gtceu:dirty_flibe', 1000))
+		.outputFluids(Fluid.of('tfg:dirty_flibe', 1000))
 		.blastFurnaceTemp(3600)
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
 
 	event.recipes.gtceu.electrolyzer('flibe')
-		.inputFluids(Fluid.of('gtceu:dirty_flibe', 1000))
-		.outputFluids(Fluid.of('gtceu:flibe', 1000))
+		.inputFluids(Fluid.of('tfg:dirty_flibe', 1000))
+		.outputFluids(Fluid.of('tfg:flibe', 1000))
 		.itemOutputs('#forge:dusts/chromium')
 		.itemOutputs('gtceu:nickel_dust')
 		.itemOutputs('gtceu:iron_dust')
 		.duration(20*36)
 		.EUt(GTValues.VA[GTValues.IV])
-
+*/
 	//#endregion
 
 	//#region Isotopic Solvent and degradated

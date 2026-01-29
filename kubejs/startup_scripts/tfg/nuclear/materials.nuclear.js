@@ -150,37 +150,37 @@ const registerTFGNuclearMaterials = (event) => {
 
 	// FLiBe Line
 
-	event.create('raw_rich_brine')
+	event.create('tfg:raw_rich_brine')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
 
-	event.create('hot_iodine_brine')
+	event.create('tfg:hot_iodine_brine')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
 		.components('1x hydrogen', '1x iodine', '1x magnesium', '1x chlorine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('brominated_iodine_vapor')
+	event.create('tfg:brominated_iodine_vapor')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(412))
 		.components('1x hydrogen', '1x iodine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('basic_bromine_exhaust')
+	event.create('tfg:basic_bromine_exhaust')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(406))
 		.components('1x bromine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	event.create('flibe')
+	event.create('tfg:flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x fluorine', '1x lithium', '1x beryllium')
 
-	event.create('dirty_flibe')
+	event.create('tfg:dirty_flibe')
 		.liquid(new GTFluidBuilder().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe', '1x unknown')
 		.color(0xdaffd6)
 		.secondaryColor(0xcd8dbc)
 
-	event.create('hot_flibe')
+	event.create('tfg:hot_flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(3293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe')
@@ -567,9 +567,9 @@ StartupEvents.registry("item", (event) => {
   fuel("uranium_rod", 20000, 1, 2.2);			// Max Heat 435 - 1 Fuel
   fuel("plutonium_rod", 30000, 1, 3);			// Max Heat 595 - 1 Fuel
 
-  fuel("tbu_232_rod", 10000, 1, 2);				// Max Heat 396 - 1 Fuel
+  fuel("tbu_232_rod", 5000, 1, 2);				// Max Heat 396 - 1 Fuel
 
-  fuel("americium_241_rod", 1000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
+  fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
   fuel("neptunium_237_rod", 100000, 1, 2);		// Max Heat 396 - 1 Fuel
   fuel("californium_252_rod", 500000, 1, 4);	// Max Heat 792 - 1 Fuel
 
