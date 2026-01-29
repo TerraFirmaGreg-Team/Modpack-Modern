@@ -194,7 +194,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000))
 			.itemInputs(Item.of('#forge:dusts/caesium_137', 1))
 			.itemInputs(Item.of('gtceu:cobalt_dust', 8))
-			.outputFluids(Fluid.of('minecraft:water', 512))
+			.outputFluids(Fluid.of('tfg:radioactive_effluent', 512))
 			.input($HeatRecipeCapability.CAP, new $HeatIngredient(500, 1600))
 			.dimension('ad_astra:mars')
 			.duration(20 * 240)
@@ -217,6 +217,17 @@ function registerTFGMarsOstrumRecipes(event) {
 			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 500))
 			.dimension('ad_astra:mars')
 			.duration(20 * 640)
+			.EUt(GTValues.VA[GTValues.IV])
+
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:dense_to_light')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000))
+			.outputFluids(Fluid.of('gtceu:light_ostrum_vapor', 1000))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(100, 100))
+			.dimension('ad_astra:mars')
+			.duration(20 * 240)
 			.EUt(GTValues.VA[GTValues.IV])
 
 }

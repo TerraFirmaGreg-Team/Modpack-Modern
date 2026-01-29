@@ -58,7 +58,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
 	event.recipes.gtceu.nuclear_fuel_factory('tfg:americium_pellet')
-		.itemInputs('32x #forge:rods/americium_241', 'tfg:empty_rod_t2')
+		.itemInputs('32x #forge:rods/americium_241', '32x #forge:rods/americium_241', 'tfg:empty_rod_t2')
 		.inputFluids(Fluid.of('gtceu:radon', 100))
 		.itemOutputs('tfg:americium_241_rod')
 		.duration(20*600)
