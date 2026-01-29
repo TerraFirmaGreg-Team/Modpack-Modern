@@ -103,4 +103,13 @@ function registerTFGBakeliteRecipes(event) {
 		.itemOutputs('gtceu:lv_machine_hull')
 		.duration(50)
 		.EUt(16)
+
+	event.shaped('gtceu:lv_hermetic_casing', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: '#forge:plates/steel',
+		B: '#forge:storage_blocks/bakelite'
+	}).id('tfg:shaped/lv_hermetic_casing_bakelite')
 }

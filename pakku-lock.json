@@ -7652,7 +7652,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
+                    "file_name": "ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1",
@@ -7664,20 +7664,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/a4stvpj6/ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
-                    "id": "a4stvpj6",
+                    "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/OomXW3xp/ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
+                    "id": "OomXW3xp",
                     "parent_id": "5ZwdcRci",
                     "hashes": {
-                        "sha512": "ef57ecc7aa7138c1b06fac6d6b49707d6ef324b6220cd604f567cfdbabd5b9ca0e76a2a4ed354d08029976c773f40c65b7692372a3f70637d7ae446be2b3ace0",
-                        "sha1": "d4695d013e9da7089e2906db3f56bc5398e478e2"
+                        "sha512": "b4a30951b41367cbf6567e38d7ddada4a381b430e2bd2d2b01e195d1a8c434e9811af61b28962c1152bf5c669f3ede2551694df4e1b500b35cdf78178aa9e9f0",
+                        "sha1": "e2e60485a0c3efa72f1948c952b095150e3ba4fc"
                     },
                     "required_dependencies": [],
-                    "size": 426980,
-                    "date_published": "2025-12-09T20:19:33.206344Z"
+                    "size": 538992,
+                    "date_published": "2026-01-27T21:06:43.866649Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
+                    "file_name": "ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.1",
@@ -7689,16 +7689,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7313/94/ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
-                    "id": "7313094",
+                    "url": "https://edge.forgecdn.net/files/7537/759/ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
+                    "id": "7537759",
                     "parent_id": "686911",
                     "hashes": {
-                        "sha1": "d4695d013e9da7089e2906db3f56bc5398e478e2",
-                        "md5": "1e5278b2585bab1db76d4b1ab61e82c1"
+                        "sha1": "e2e60485a0c3efa72f1948c952b095150e3ba4fc",
+                        "md5": "8fb21bb328cc322c6d9749eff087509f"
                     },
                     "required_dependencies": [],
-                    "size": 426980,
-                    "date_published": "2025-12-09T20:19:33.393Z"
+                    "size": 538992,
+                    "date_published": "2026-01-27T21:06:43.760Z"
                 }
             ]
         },
@@ -9558,7 +9558,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.23-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.27-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9567,20 +9567,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/XCFIOCRA/moonlight-1.20-2.16.23-forge.jar",
-                    "id": "XCFIOCRA",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/lrpPgviq/moonlight-1.20-2.16.27-forge.jar",
+                    "id": "lrpPgviq",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "2baeeafd86a7df76b81d41cf20f6dde2f1ecfed3bfda19f299d6acd59fd52eedda47829b56ac0f4da4647e9f7be50a8ec6f677c421f91c0bb5c8f5f8d0710b49",
-                        "sha1": "c63750ef54ac17d0dc1e58c246c6dac3d8d9ac87"
+                        "sha512": "30b9a16c4643bbbf643304e14d524f72f7aa2343317ba40e136b88a433d2110dc727b7747003126dc9a220e18b5da69585b24c8b3135844ddeef07e5d6006afa",
+                        "sha1": "0a1b384ec20d63e94c56123b53e264dc2afe5b17"
                     },
                     "required_dependencies": [],
-                    "size": 1390855,
-                    "date_published": "2026-01-16T18:52:42.739110Z"
+                    "size": 1392973,
+                    "date_published": "2026-01-28T16:55:17.211884Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.23-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.27-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9589,16 +9589,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7469/722/moonlight-1.20-2.16.23-forge.jar",
-                    "id": "7469722",
+                    "url": "https://edge.forgecdn.net/files/7541/536/moonlight-1.20-2.16.27-forge.jar",
+                    "id": "7541536",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "c63750ef54ac17d0dc1e58c246c6dac3d8d9ac87",
-                        "md5": "a6659ba4650f16630293ce633c3ae4e7"
+                        "sha1": "0a1b384ec20d63e94c56123b53e264dc2afe5b17",
+                        "md5": "7e819bab11a4cf9973d0e24fb52c367b"
                     },
                     "required_dependencies": [],
-                    "size": 1390855,
-                    "date_published": "2026-01-16T18:52:33.317Z"
+                    "size": 1392973,
+                    "date_published": "2026-01-28T16:55:09.907Z"
                 }
             ]
         },
@@ -12911,31 +12911,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tfc_gurman-1.3.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/NVqgySaW/tfc_gurman-1.3.0.jar",
-                    "id": "NVqgySaW",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "b82f4b893f85f152a305a9949df8a87337b2e1d75e80a1723c512de5ede3dfa056f17a2186511acf96556e4b5ce1b1c55927d6f97fabf109ac8fdf8ba20f197c",
-                        "sha1": "c55512789128af89d57fe0c9a2f3b4d59a491724"
-                    },
-                    "required_dependencies": [
-                        "JaCEZUhg",
-                        "5bKeBHw2"
-                    ],
-                    "size": 542077,
-                    "date_published": "2026-01-02T13:41:35.488377Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "tfc_gurman-1.3.0.jar",
+                    "file_name": "tfc_gurman-1.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12943,19 +12919,40 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7408/157/tfc_gurman-1.3.0.jar",
-                    "id": "7408157",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/zhoqj2Wr/tfc_gurman-1.4.1.jar",
+                    "id": "zhoqj2Wr",
+                    "parent_id": "ERme2o65",
+                    "hashes": {
+                        "sha512": "dbfa8e9423dc6bb4fa98a17b99478651b99081e4990f1b9f01bfc5ade6ec35955756f8c856d2bfd3f4865779aaff4a7c68b6bb3b7e93f397afbf407c83c992c3",
+                        "sha1": "0be72570ba157b7600c3b9f4ea694744a227112a"
+                    },
+                    "required_dependencies": [],
+                    "size": 520225,
+                    "date_published": "2026-01-28T01:09:39.160234Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_gurman-1.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7538/795/tfc_gurman-1.4.1.jar",
+                    "id": "7538795",
                     "parent_id": "1363944",
                     "hashes": {
-                        "sha1": "c55512789128af89d57fe0c9a2f3b4d59a491724",
-                        "md5": "fd8ba6a9ec34193beda55f5d34e359f1"
+                        "sha1": "0be72570ba157b7600c3b9f4ea694744a227112a",
+                        "md5": "d5734cf9b727fbb11b8025ceb26fe8aa"
                     },
                     "required_dependencies": [
                         "302973",
                         "453394"
                     ],
-                    "size": 542077,
-                    "date_published": "2026-01-02T13:43:05.680Z"
+                    "size": 520225,
+                    "date_published": "2026-01-28T01:08:21.107Z"
                 }
             ]
         },

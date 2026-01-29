@@ -584,4 +584,17 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('#forge:plates/stone')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Sedimentary carbonate into flux
+
+	event.recipes.gtceu.macerator('tfg:sedimentary_carbonate_to_flux')
+		.itemInputs('#forge:dusts/sedimentary_carbonate')
+		.itemOutputs('2x tfc:powder/flux')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.tfc.quern('2x tfc:powder/flux', '#forge:dusts/sedimentary_carbonate')
+		.id(`tfg:quern/sedimentary_carbonate_to_flux`)
+
+	event.shapeless('2x tfc:powder/flux', ['#forge:dusts/sedimentary_carbonate', '#forge:tools/hammers'])
 }

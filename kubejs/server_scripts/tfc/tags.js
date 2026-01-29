@@ -459,6 +459,10 @@ function registerTFCItemTags(event) {
     })
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
+
+    event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
+    event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
+    event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
 }
 
 /** @param {TagEvent.Block} event */
