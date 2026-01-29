@@ -40,6 +40,7 @@
 - Fixed the dye colors used to make Create Deco's bricks (#2859) @silllil
 - Fixed the Electric Greenhouse outputting way less Chorus Fruit than before @Pyritie
 - Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
+- Fixed pyrogallol and black and white film developer requiring too high of a heat on the pot recipe (#2909) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
