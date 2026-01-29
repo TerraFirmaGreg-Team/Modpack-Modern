@@ -174,9 +174,11 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('1x fluorine', '1x lithium', '1x beryllium')
 
 	event.create('dirty_flibe')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+		.liquid(new GTFluidBuilder().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe', '1x unknown')
+		.color(0xdaffd6)
+		.secondaryColor(0xcd8dbc)
 
 	event.create('hot_flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(3293))
