@@ -9,7 +9,7 @@ body:
   - type: checkboxes
     id: exists
     attributes:
-      label: "Was this bug reported before?"
+      label: "Was this crash reported before?"
       description: "Please search OPEN/CLOSED issues before submitting, as the issue may have already been reported/addressed."
       options:
         - label: "No, it was not."
