@@ -35,7 +35,7 @@ function registerTFGTemporaryRecipes(event) {
 	event.shapeless('tfg:metamorphic_dust', 'gtceu:marble_dust')
 	event.shapeless('tfg:metamorphic_dust', 'gtceu:deepslate_dust')
 	event.shapeless('tfg:igneous_ultramafic_dust', 'gtceu:blackstone_dust')
-	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:red_granite_dust')
+	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_red_dust')
 	event.shapeless('tfg:igneous_mafic_dust', 'gtceu:basalt_dust')
 
 	// TODO: remove nether/ender air in 0.12
