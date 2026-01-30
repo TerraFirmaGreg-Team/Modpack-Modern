@@ -17,13 +17,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        "If you are in need of quick response, [Discord](https://discord.gg/AEaCzCTUwQ) may be a better place."
+        If you are in need of quick response, [Discord](https://discord.gg/AEaCzCTUwQ) may be a better place.
         
-        "Most information is available in-game through Tooltips, EMI, Field Guide, or Quests."
-        "An online version of the [Field Guide](https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/) is also available."
+        Most information is available in-game through Tooltips, EMI, Field Guide, or Quests.
+        An online version of the [Field Guide](https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/) is also available.
         
-        "For installing a development environment, please refer to the [Contributing Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/.github/CONTRIBUTING.md)"
-        "For information about translating please read our [Localization Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/kubejs/README_IF_TRANSLATING.md)"
+        For installing a development environment, please refer to the [Contributing Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/.github/CONTRIBUTING.md)
+        For information about translating please read our [Localization Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/kubejs/README_IF_TRANSLATING.md)
 
   - type: textarea
     id: question
