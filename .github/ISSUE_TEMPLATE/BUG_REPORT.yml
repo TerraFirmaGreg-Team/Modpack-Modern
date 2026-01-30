@@ -32,7 +32,7 @@ body:
       label: "Have you tried redownloading the pack?"
       description: "For issues that you are experiencing singularly, redownloading the pack may fix the issue."
       options:
-        - label: "NA/ Yes, I have tried downloading a new instance."
+        - label: "Not Applicable / Yes, I have tried downloading a new instance."
           required: true
 
   - type: input
