@@ -32,16 +32,7 @@ body:
       label: "Did you install required dependencies?"
       description: "If you are using Prism or Modrinth you will be instructed to install required mods. Do so."
       options:
-        - label: "NA/ Yes, I have all required dependencies installed."
-          required: true
-
-  - type: checkboxes
-    id: linuxmoment
-    attributes:
-      label: "For Arch Linix users: Do you have the OpenAL audio library installed?"
-      description: "If you are on Arch Linux you need to have the OpenAL audio library installed."
-      options:
-        - label: "NA/ Yes, I have OpenAL."
+        - label: "Not Applicable / Yes, I have all required dependencies installed."
           required: true
 
   - type: checkboxes
@@ -50,7 +41,7 @@ body:
       label: "Have you tried redownloading the pack?"
       description: "For issues that you are experiencing singularly, redownloading the pack may fix the issue."
       options:
-        - label: "NA/ Yes, I have tried downloading a new instance."
+        - label: "Not Applicable / Yes, I have tried downloading a new instance."
           required: true
 
   - type: input
