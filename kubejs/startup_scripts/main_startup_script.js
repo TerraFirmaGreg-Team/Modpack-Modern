@@ -3,6 +3,7 @@
 
 StartupEvents.registry('item', event => {
     registerTFGItems(event)
+	registerStarcatcherItems(event)
 })
 
 StartupEvents.registry('block', event => {

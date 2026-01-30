@@ -41,6 +41,7 @@ ServerEvents.tags('item', event => {
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
 	registerMoreRedItemTags(event)
+	registerStarcatcherItemTags(event)
 	registerHotOrNotItemTags(event)
 	registerPrimitiveCreaturesItemTags(event)
 	registerRailWaysItemTags(event)
@@ -114,6 +115,7 @@ ServerEvents.tags('fluid', event => {
 	registerTFGFluidTags(event)
 	registerTFGFluidTagsNuclear(event)
 	registerVintageImprovementsFluidTags(event)
+	registerStarcatcherFluidTags(event)
 })
 
 ServerEvents.tags('worldgen/configured_feature', event => {
@@ -164,6 +166,7 @@ TFCEvents.data(event => {
 	registerTFCDataForImmersiveAircraft(event);
 	registerTFCDataForMinecraft(event)
 	registerTFCDataForSophisticatedBackpacks(event)
+	registerTFCDataForStarcatcher(event)
 	registerTFCDataForTACZ(event)
 	registerTFCDataForTFC(event)
 	registerTFCDataForTFCBetterBF(event)
@@ -274,6 +277,7 @@ ServerEvents.recipes(event => {
 	registerSimplylightRecipes(event)
 	registerSNSRecipes(event)
 	registerSpeciesRecipes(event)
+	registerStarcatcherRecipes(event)
 	registerTACZRecipes(event)
 	registerTFCRecipes(event)
 	registerTFCAmbientalRecipes(event)

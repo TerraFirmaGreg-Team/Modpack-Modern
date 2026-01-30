@@ -258,4 +258,17 @@ function registerTFGKnappingRecipes(event) {
 		.ingredient('5x minecraft:clay_ball')
 		.id('tfg:fire_clay_knapping/unfired_nugget_mold')
 
+	// Bone needle
+	event.remove({ id: `tfc:crafting/bone_needle` })
+	event.recipes.tfc.knapping(
+		'tfc:bone_needle',
+		'tfg:bone',
+		[
+			'   XX',
+			'   XX',
+			'  XX ',
+			' XX  ',
+			'X    '
+		]
+	).outsideSlotRequired(false).id('tfg:knapping/bone_needle');
 }

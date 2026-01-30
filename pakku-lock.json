@@ -12311,6 +12311,67 @@
             ]
         },
         {
+            "pakku_id": "04oCFA8vUM5YNTQR",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "starcatcher",
+                "modrinth": "starcatcher"
+            },
+            "name": {
+                "curseforge": "Starcatcher",
+                "modrinth": "Starcatcher"
+            },
+            "id": {
+                "curseforge": "1357603",
+                "modrinth": "h2jXvxNR"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "starcatcher-2.1.3-FORGE-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7449/539/starcatcher-2.1.3-FORGE-1.20.1.jar",
+                    "id": "7449539",
+                    "parent_id": "1357603",
+                    "hashes": {
+                        "sha1": "000ab3fe2d77fbbf002fa23bbbabe481d6889783",
+                        "md5": "64de8827906629a9f8c09db217e827f3"
+                    },
+                    "required_dependencies": [],
+                    "size": 3416459,
+                    "date_published": "2026-01-12T06:32:07.603Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "starcatcher-2.1.3-FORGE-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/h2jXvxNR/versions/Qu5IbToy/starcatcher-2.1.3-FORGE-1.20.1.jar",
+                    "id": "Qu5IbToy",
+                    "parent_id": "h2jXvxNR",
+                    "hashes": {
+                        "sha512": "a2472ebb24ed8f2961c8ebdabbca452d43316b449c996e9c6dd24cc6e42c7cb08697b725f0e16ebc962f8144df8246a3ae078d2bb3bd6ee971e00574829e851c",
+                        "sha1": "000ab3fe2d77fbbf002fa23bbbabe481d6889783"
+                    },
+                    "required_dependencies": [],
+                    "size": 3416459,
+                    "date_published": "2026-01-12T06:32:07.709251Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "H40iluU8Vao2XSgS",
             "type": "MOD",
             "side": "BOTH",

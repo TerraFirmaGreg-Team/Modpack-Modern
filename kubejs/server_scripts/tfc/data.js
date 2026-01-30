@@ -119,6 +119,7 @@ const registerTFCFertilizers = (event) => {
 
 
 const registerTFCKnappingTypes = (event) => {
-	event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
-	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', false, false, false, 'tfc:straw', 'tfg:straw')
-}
+	event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint');
+	event.knappingType('tfc:straw', 4, 4, 'tfc:item.knapping.leather', false, false, false, 'tfc:straw', 'tfg:straw');
+	event.knappingType('minecraft:bone', 1, 1, 'minecraft:block.bone_block.hit', true, false, true, 'minecraft:bone', 'tfg:bone');
+};
