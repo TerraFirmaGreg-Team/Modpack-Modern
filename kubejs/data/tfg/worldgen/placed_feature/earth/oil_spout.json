@@ -1,5 +1,27 @@
 {
-	"feature": "gtceu:raw_oil_sprout",
+	"feature": {
+		"type": "minecraft:simple_random_selector",
+		"config": {
+			"features": [
+				{
+					"feature": "tfg:earth/spouts/oil_spout",
+					"placement": []
+				},
+				{
+					"feature": "tfg:earth/spouts/light_oil_spout",
+					"placement": []
+				},
+				{
+					"feature": "tfg:earth/spouts/heavy_oil_spout",
+					"placement": []
+				},
+				{
+					"feature": "tfg:earth/spouts/raw_oil_spout",
+					"placement": []
+				}
+			]
+		}
+	},
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -9,7 +31,7 @@
 			"type": "tfc:climate",
 			"min_temperature": 0,
 			"min_rainfall": 0,
-			"max_rainfall": 100
+			"max_rainfall": 120
 		},
 		{
 			"type": "minecraft:in_square"

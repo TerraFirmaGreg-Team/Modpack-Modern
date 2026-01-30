@@ -1,0 +1,21 @@
+{
+	"type": "gtceu:fluid_sprout",
+	"config": {
+		"fluid": "minecraft:lava",
+		"size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 16,
+				"min_inclusive": 12
+			}
+		},
+		"sprout_chance": 1.0,
+		"surface_offset": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 2,
+				"min_inclusive": 0
+			}
+		}
+	}
+}
