@@ -14,6 +14,7 @@ function registerTFGPrimitiveItemTags(event) {
 
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
+	event.add('tfc:any_knapping', 'minecraft:bone')
 
 	// Tools
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
