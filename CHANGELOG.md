@@ -33,6 +33,7 @@
 - Some volcanoes should now have much bigger amounts of lava underneath them, for more lava needs, but also infinite obsidian via the rock breaker has been removed. (Use a fluid solidifier instead) @Pyritie
 - Added manual/automated sanding recipes for making smooth stone (#2876) @Pyritie
 - Added deployer recipes for all the in-world block modification recipes (#2876) @Pyritie
+- Added recipe to convert kaolin clay blocks back into kaolin clay (#2904) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
