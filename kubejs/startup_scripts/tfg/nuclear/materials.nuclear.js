@@ -151,22 +151,30 @@ const registerTFGNuclearMaterials = (event) => {
 	// FLiBe Line
 
 	event.create('tfg:raw_rich_brine')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+		.liquid(new GTFluidBuilder().temperature(293))
+		.color(0xf2b257)
+		.secondaryColor(0xcd8dbc)
 
 	event.create('tfg:hot_iodine_brine')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+		.liquid(new GTFluidBuilder().temperature(293))
 		.components('1x hydrogen', '1x iodine', '1x magnesium', '1x chlorine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf26c57)
+		.secondaryColor(0xcd8dbc)
 
 	event.create('tfg:brominated_iodine_vapor')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(412))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(412))
 		.components('1x hydrogen', '1x iodine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf5f1b5)
+		.secondaryColor(0xcd8dbc)
 
 	event.create('tfg:basic_bromine_exhaust')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(406))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(406))
 		.components('1x bromine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf5bbb5)
+		.secondaryColor(0xcd8dbc)
 
 	event.create('tfg:flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
