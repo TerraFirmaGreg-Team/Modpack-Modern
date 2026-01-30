@@ -15,14 +15,16 @@ body:
         - label: "No, it was not."
           required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: launcher
+    validations:
+      required: true
     attributes:
       label: "Are you using Prism or Curseforge?"
       description: "Prism and Curseforge are the only supported launchers for TFG. Some others may not work. TLAUNCHER DOES NOT WORK."
       options:
-        - label: "Yes, I am using Prism or Curseforge."
-          required: true
+        - "Yes, I am using Prism or Curseforge."
+        - "No, I am not using Prism or Curseforge."
 
   - type: checkboxes
     id: dependencies
