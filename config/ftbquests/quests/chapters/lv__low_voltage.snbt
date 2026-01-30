@@ -58,7 +58,7 @@
 			linked_quest: "2D2CB8104E40E808"
 			shape: "heart"
 			x: 7.0d
-			y: 6.0d
+			y: 5.5d
 		}
 	]
 	quests: [
@@ -663,7 +663,7 @@
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
 			x: 7.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1218,6 +1218,7 @@
 				"2E36E5755B2F551C"
 				"4B4F052F00435AFE"
 				"2D2CB8104E40E808"
+				"07EDEA9613D6F02D"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_turbo_charge.desc}"]
@@ -1367,7 +1368,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7FA1525D681C4B4A"]
@@ -1994,6 +1995,35 @@
 			}]
 			x: -10.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["3E6DC423FE4A99F7"]
+			description: ["{quests.tfg_tips.magnets.desc}"]
+			icon: {
+				Count: 1
+				id: "gtceu:lv_item_magnet"
+				tag: {
+					Charge: 100000L
+				}
+			}
+			id: "07EDEA9613D6F02D"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.magnets.subtitle}"
+			tasks: [{
+				id: "10DEC029D9788B72"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_item_magnet)item(gtceu:hv_item_magnet))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.magnets.title}"
+			x: 7.0d
+			y: 7.5d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

@@ -565,9 +565,12 @@ function processGems(event, material) {
 	}
 
 	const amount = getMaterialAmount(TagPrefix.block, material);
-	event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), ChemicalHelper.get(TagPrefix.block, material, 1))
-		.recipeTier(0)
-		.id(`greate:pressing/unpacking_${materialName}_block`)
+	const block = ChemicalHelper.get(TagPrefix.block, material, 1);
+	if (!block.isEmpty()) {
+		event.recipes.greate.pressing(ChemicalHelper.get(TagPrefix.gem, material, amount), block)
+			.recipeTier(0)
+			.id(`greate:pressing/unpacking_${materialName}_block`)
+	}
 
 	event.recipes.tfc.quern(ChemicalHelper.get(TagPrefix.dust, material, 1), gemItem)
 		.id(`tfg:quern/${materialName}_gem_to_dust`)

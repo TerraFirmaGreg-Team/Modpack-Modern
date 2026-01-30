@@ -846,6 +846,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blackstone' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__endstone' })
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__red_granite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__basalt' })
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_tuff' })
 
 	removeMaceratorRecipe(event, 'macerate_end_stone');
