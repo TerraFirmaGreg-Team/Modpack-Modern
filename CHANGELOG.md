@@ -28,6 +28,12 @@
 - Added shapeless recipes to convert any old stone dusts into their new equivalents (#2900) @Pyritie
 - Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Added recipe to convert sedimentary carbonate stone dust into flux (#2862) @Pyritie
+- Deserts now contain oil spouts for heavy, raw, light, and normal oils @Pyritie
+- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert @Pyritie
+- Some volcanoes should now have much bigger amounts of lava underneath them, for more lava needs, but also infinite obsidian via the rock breaker has been removed. (Use a fluid solidifier instead) @Pyritie
+- Added manual/automated sanding recipes for making smooth stone (#2876) @Pyritie
+- Added deployer recipes for all the in-world block modification recipes (#2876) @Pyritie
+- Added recipe to convert kaolin clay blocks back into kaolin clay (#2904) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
@@ -37,6 +43,8 @@
 - Fixed the dye colors used to make Create Deco's bricks (#2859) @silllil
 - Fixed the Electric Greenhouse outputting way less Chorus Fruit than before @Pyritie
 - Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
+- Fixed pyrogallol and black and white film developer requiring too high of a heat on the pot recipe (#2909) @Pyritie
+- Fixed not being able to fire scraping blade clay mold (#2905) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
