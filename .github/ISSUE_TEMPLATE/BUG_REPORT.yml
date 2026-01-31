@@ -58,12 +58,13 @@ body:
     validations:
       required: true
     attributes:
-      label: MC Environment
+      label: Minecraft Environment
       options:
         - "Singleplayer"
         - "LAN"
         - "Forge Server"
         - "Sponge Server"
+        - "Magma Server"
         - "Mohist Server"
         - "E4MC"
         - "Essential"
