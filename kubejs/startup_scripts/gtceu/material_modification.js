@@ -365,6 +365,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	// Rose Gold & Sterling Silver
+	GTMaterials.RoseGold.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.SterlingSilver.getProperties().removeProperty(PropertyKey.BLAST);
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
