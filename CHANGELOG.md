@@ -40,6 +40,7 @@
 - Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
 - Added quartzite as a mars stone type @Pyritie
 - Added assembler recipe for framed cubes (#2889) @Coox1e
+- Unhid and added a recipe for the kinetic bridge (#2881) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
