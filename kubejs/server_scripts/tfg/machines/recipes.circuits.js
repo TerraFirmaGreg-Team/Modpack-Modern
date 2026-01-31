@@ -2,20 +2,23 @@
 
 /** @global */
 global.SOLDER_TIERS = /** @type {const} */ {
+	"mv": {
+		"tin_replacement": "gtceu:soldering_alloy",
+        "solder_replacement": "tfg:woods_metal"
+	},
     "hv": {
         "tin_replacement": "gtceu:soldering_alloy",
         "solder_replacement": "tfg:woods_metal"
     },
     "ev": {
-        "tin_replacement": "gtceu:soldering_alloy",
-        "solder_replacement": "tfg:woods_metal"
+        "tin_replacement": "tfg:woods_metal",
+        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "iv": {
         "tin_replacement": "tfg:woods_metal",
         "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "luv": {
-        "tin_replacement": "tfg:woods_metal",
         "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "zpm": {
@@ -132,24 +135,15 @@ function registerTFGCircuitRecipes(event) {
 
 	// #endregion
 
-    // #region Solder tiers
-
-	event.recipes.gtceu.mixer('tfg:woods_metal')
-		.itemInputs('4x #forge:dusts/bismuth', '2x #forge:dusts/lead', '1x #forge:dusts/tin', '1x #forge:dusts/cadmium')
-		.itemOutputs('8x #forge:dusts/woods_metal')
-		.duration(20 * 10)
-		.circuit(3)
-		.EUt(GTValues.VA[GTValues.HV])
-    
-    event.recipes.gtceu.mixer('tfg:bi_pb_sn_cd_in_tl')
-		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
-		.itemOutputs('20x #forge:dusts/bi_pb_sn_cd_in_tl')
-		.duration(20 * 10)
-		.EUt(GTValues.VA[GTValues.IV])
+    // #region Replace solders
 
     // Circuit assembler recipes
 
     const CIRCUIT_ASSEMBLER_RECIPE_TIERS = {
+		"gtceu:circuit_assembler/integrated_circuit_lv": "mv",
+		"gtceu:circuit_assembler/integrated_circuit_mv": "mv",
+		"gtceu:circuit_assembler/integrated_circuit_hv": "mv",
+
         "gtceu:circuit_assembler/nand_chip_ulv_good_board": "hv",
         "gtceu:circuit_assembler/nand_chip_ulv_plastic_board": "hv",
         "gtceu:circuit_assembler/microprocessor_lv": "hv",
@@ -266,4 +260,83 @@ function registerTFGCircuitRecipes(event) {
 
     // #endregion
 
+	// #region Solder recipes
+
+	// Woods metal
+
+	event.remove({ id: 'gtceu:extractor/extract_woods_metal_dust' })
+	event.remove({ id: 'gtceu:extractor/extract_woods_metal_ingot' })
+	event.remove({ id: 'gtceu:extractor/extract_woods_metal_nugget' })
+	event.remove({ id: 'gtceu:extractor/extract_woods_metal_block' })
+
+	event.recipes.gtceu.mixer('tfg:woods_metal')
+		.itemInputs('4x #forge:dusts/bismuth', '2x #forge:dusts/lead', '1x #forge:dusts/tin', '1x #forge:dusts/cadmium')
+		.itemOutputs('8x #forge:dusts/woods_metal')
+		.duration(20 * 10)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.MV])
+	
+	event.recipes.gtceu.pyrolyse_oven('tfg:liquid_woods_metal')
+		.itemInputs('8x #forge:dusts/woods_metal')
+		.outputFluids(Fluid.of('tfg:woods_metal', 1152))
+		.duration(20 * 96)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+	
+	event.recipes.gtceu.pyrolyse_oven('tfg:liquid_woods_metal_boosted')
+		.itemInputs('8x #forge:dusts/woods_metal')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+		.outputFluids(Fluid.of('tfg:woods_metal', 1152))
+		.duration(20 * 48)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+    
+	// BiPbSnCdInTl
+	
+	event.recipes.gtceu.ostrum_linear_accelerator('tfg:lorandite_ola')
+		.inputFluids('gtceu:lightweight_ostrum_vapor 600')
+		.inputFluids('gtceu:ostrum_vapor 300')
+		.inputFluids('gtceu:dense_ostrum_vapor 100')
+		.inputFluids('gtceu:residual_radioactive_concoction 100')
+		.itemOutputs('4x #forge:dusts/lorandite')
+		.dimension('ad_astra:mars')
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:lorandite_to_thallium_sulfate')
+		.itemInputs('8x #forge:dusts/lorandite')
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000))
+		.itemOutputs('7x #forge:dusts/thallium_sulfate', '5x #forge:dusts/arsenic_trioxide', '4x #forge:dusts/sulfur')
+		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:hydrogen_sulfide', 1000))
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate')
+		.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
+		.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.large_chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate_lcr')
+		.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
+		.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
+		.duration(20 * 20)
+		.EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl')
+		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
+		.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
+		.duration(20 * 480)
+		.blastFurnaceTemp(3700)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl_boosted')
+		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
+		.inputFluids(Fluid.of('gtceu:helium', 2000))
+		.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
+		.duration(20 * 321.6)
+		.blastFurnaceTemp(3700)
+		.EUt(GTValues.VA[GTValues.EV])
+
+	// #endregion
 }

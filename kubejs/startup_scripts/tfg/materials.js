@@ -260,6 +260,25 @@ const registerTFGMaterials = (event) => {
 		.components('8x bismuth', '4x lead', '2x tin', '3x indium', '2x cadmium', '1x thallium')
 		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+
+	event.create('tfg:lorandite')
+		.dust()
+		.color(0xC97523)
+		.components('1x thallium', '1x arsenic', '2x sulfur')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+	
+	event.create('tfg:thallium_sulfate')
+		.dust()
+		.color(0x6691AD)
+		.components('2x thallium', '1x sulfur', '4x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+
+	event.create('tfg:zinc_sulfate')
+		.dust()
+		.color(0x92B39F)
+		.components('1x zinc', '1x sulfur', '4x oxygen')
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
 	
 	// #endregion
 }
