@@ -508,28 +508,44 @@ function registerTFGNuclearRecipes(event) {
 		TFGRecipeSchemaBindings.isOxygenated(b, true);
 
 	// Plutonium
+	let c;
 
-    let e = event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.lt("avgHeat", 5000))
+    c = event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod')
+        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.lt("avgHeat", 1000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:tritiated_water', 5184))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
 		.addDataString("avgHeat1", "0")
-		.addDataString("avgHeat2", "5000")
-		TFGRecipeSchemaBindings.isOxygenated(e, true);
+		.addDataString("avgHeat2", "999")
+		TFGRecipeSchemaBindings.isOxygenated(c, true);
 
-    let f = event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod_bad')
-        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.gte("avgHeat", 5000))
+	c = event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod_average')
+        .inputItemNbtPredicate('tfg:depleted_plutonium_rod', 
+            NBTPredicates.all([
+                NBTPredicates.gte("avgHeat", 1000),
+                NBTPredicates.lt("avgHeat", 3000)
+            ]))
+		.itemOutputs(Item.of('tfg:empty_rod'))
+        .outputFluids(Fluid.of('gtceu:tritiated_water', 576))
+		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20*16)
+		.dimension('ad_astra:mars')
+		.addDataString("avgHeat1", "1000")
+		.addDataString("avgHeat2", "2999")
+		TFGRecipeSchemaBindings.isOxygenated(c, true)
+
+    c = event.recipes.gtceu.nuclear_fuel_factory('tfg:depleted_plutonium_rod_bad')
+        .inputItemNbtPredicate(Item.of('tfg:depleted_plutonium_rod'), NBTPredicates.gte("avgHeat", 3000))
 		.itemOutputs(Item.of('tfg:empty_rod'))
         .outputFluids(Fluid.of('gtceu:tritiated_water', 144))
 		.EUt(GTValues.VA[GTValues.HV])
 		.duration(20*16)
 		.dimension('ad_astra:mars')
-		.addDataString("avgHeat1", "5000")
+		.addDataString("avgHeat1", "3000")
 		.addDataString("avgHeat2", "∞")
-		TFGRecipeSchemaBindings.isOxygenated(f, true);
+		TFGRecipeSchemaBindings.isOxygenated(c, true);
 
 	// Americium - Neptunium - Californium
 

@@ -29,12 +29,14 @@ function registerTFGPowerGenBalance(event) {
 		.EUt(-32)
         .dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
+*/
+    // Remove Light fuel ability as a fuel
 
 	event.remove({ id: 'gtceu:combustion_generator/sulfuric_light_fuel' })
     event.remove({ id: 'gtceu:combustion_generator/light_fuel' })
-*/
 
-    // Switch HOG to require IV Energy Hatch and Diesel available at LV
+
+    // Make Diesel available at ULV and balance power gen
 
 	event.remove({ id: 'gtceu:combustion_generator/diesel' })
 	event.recipes.gtceu.combustion_generator('tfg:diesel')
@@ -44,6 +46,45 @@ function registerTFGPowerGenBalance(event) {
         .dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
+    event.remove({ id: 'gtceu:mixer/diesel' })
+    event.recipes.gtceu.mixer('tfg:diesel')
+        .inputFluids(Fluid.of('gtceu:light_fuel', 5000), Fluid.of('gtceu:heavy_fuel', 1000))
+        .outputFluids(Fluid.of('gtceu:diesel', 6000))
+        .duration(20*1.6)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Oil to Light Fuel
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:light_fuel', 250), [Fluid.of('gtceu:oil', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_oil')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:light_fuel', 50), [Fluid.of('gtceu:oil_light', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_light_oil')
+
+    // Raw Oil to Naphtha
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:naphtha', 500), [Fluid.of('gtceu:oil_raw', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_raw_oil')
+
+    // Heavy oil to Heavy Fuel
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:heavy_fuel', 750), [Fluid.of('gtceu:oil_heavy', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/heavy_fuel_from_heavy_oil')
+
+    // Switch HOG to require IV Energy Hatch
+        
 	event.remove({ id: 'gtceu:large_chemical_reactor/high_octane_gasoline' })
 	event.recipes.gtceu.large_chemical_reactor('tfg:high_octane_gasoline')
 		.inputFluids(

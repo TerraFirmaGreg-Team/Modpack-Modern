@@ -242,7 +242,13 @@ const registerTFGMaterials = (event) => {
 
 	// #endregion
 
-	//#region Super Critical CO2
+	//#region Material for Coils
+
+	event.create('tfg:nichromium_iodomethylate')
+		.liquid(new GTFluidBuilder().temperature(1818))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('4x nickel', '1x chromium', '1x carbon', '3x hydrogen', '1x iodine')
+		.color(0xe7a2fc)
 
 	
 }
