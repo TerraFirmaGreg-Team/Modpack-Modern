@@ -170,6 +170,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
+    "gtceu:molten_rose_gold_bucket",
+    "gtceu:molten_sterling_silver_bucket",
+    "gtceu:molten_stainless_steel_bucket",
+    "gtceu:molten_manganese_phosphide_bucket",
+    "gtceu:molten_vanadium_steel_bucket",
+    "gtceu:molten_gallium_arsenide_bucket",
+    "gtceu:molten_hsla_steel_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
 
