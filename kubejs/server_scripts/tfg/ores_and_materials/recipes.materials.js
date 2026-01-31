@@ -6,9 +6,9 @@
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function getFluidRecipeEUt(material) {
-	// Special case for bis/black bronze because removing the blast property doesn't change the tier of
+	// Special case for bis bronze, black bronze, rose gold and sterling silver because removing the blast property doesn't change the tier of
 	// the extractor recipes retroactively
-	return material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+	return material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze && material !== GTMaterials.RoseGold && material !== GTMaterials.SterlingSilver
 		? GTValues.VA[GTValues.MV]
 		: GTValues.VA[GTValues.LV];
 }
