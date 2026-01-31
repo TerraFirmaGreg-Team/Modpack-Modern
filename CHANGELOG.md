@@ -45,6 +45,7 @@
 - Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
 - Fixed pyrogallol and black and white film developer requiring too high of a heat on the pot recipe (#2909) @Pyritie
 - Fixed not being able to fire scraping blade clay mold (#2905) @Pyritie
+- Fixed stair and slab versions of road blocks not having speed bonuses (#2912) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
