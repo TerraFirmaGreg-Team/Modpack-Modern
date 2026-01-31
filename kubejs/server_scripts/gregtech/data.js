@@ -45,6 +45,7 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.plateDouble, material, tfcProperty, 5.75)
 			makeItemHeatByTagPrefix(TagPrefix.springSmall, material, tfcProperty, 0.567)
 			makeItemHeatByTagPrefix(TagPrefix.spring, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.ring, material, tfcProperty, 0.567)
 
 			makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.ingotDouble, material, tfcProperty, 2.875)
@@ -59,7 +60,11 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TagPrefix.crushed, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty, 1.429)
-
+			
+			makeItemHeatByTagPrefix(TagPrefix.toolHeadWrench, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.toolHeadBuzzSaw, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TagPrefix.toolHeadScrewdriver, material, tfcProperty, 1.429)
+			makeItemHeatByTagPrefix(TagPrefix.toolHeadWireCutter, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
@@ -70,7 +75,7 @@ const registerGTCEUHeats = (event) => {
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadHammer, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadAxe, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadFile, material, tfcProperty, 1.429)
-			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
+			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 1.429)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
 			makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
 

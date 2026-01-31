@@ -53,6 +53,7 @@
 - Fixed stair and slab versions of road blocks not having speed bonuses (#2912) @Pyritie
 - Fixed RNR roofs not having mineable tags, and blocked the stair/slab frame from Additional Placements (#2870) @Pyritie
 - Fixed piglin brutes not dropping meat or bones @Pyritie
+- Fixed not being able to put rings, wrench tips, screwdriver tips, buzzsaw blades, or wire cutter tips in a crucible (#2913) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
