@@ -116,6 +116,7 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_vanadium_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_gallium_arsenide");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_hsla_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_rocket_alloy_t2");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
