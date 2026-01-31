@@ -34,10 +34,8 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfg:martian_animal_foods', 'betterend:shadow_berry_product')
 	event.add('tfg:martian_animal_foods', 'betterend:bolux_mushroom_product')
 	event.add('tfg:martian_animal_foods', 'betterend:cave_pumpkin_chunks')
-
-	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
-	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
-	event.add('tfg:wraptor_food', '#tfg:martian_animal_foods')
+	
+	event.add('tfg:martian_meat_foods', '#firmalife:foods/raw_fish')
 
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
 
@@ -407,6 +405,9 @@ function registerTFGMarsEntityTypeTags(event) {
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
 		'wan_ancient_beasts:surfer',
+		'wan_ancient_beasts:charger',
+		'wan_ancient_beasts:raider',
+		'wan_ancient_beasts:snatcher',
 		'tfg:surfer'
 	]
 
@@ -420,10 +421,13 @@ function registerTFGMarsEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:eater')
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:soarer')
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:glider')
+	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:raider')
+	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:snatcher')
 	event.add('tfc:deals_piercing_damage', 'ad_astra:martian_raptor')
 	event.add('tfc:deals_crushing_damage', 'species:quake')
 	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:walker')
 	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:crusher')
+	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:charger')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:crimson_forest_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:warped_forest_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:badlands_enderman')
@@ -434,11 +438,14 @@ function registerTFGMarsEntityTypeTags(event) {
 	// this huge guy also looks silly in low grav
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:eater')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:raider')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:charger')
 	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 	// swimming mobs
 	event.add('tfg:ignores_gravity', 'tfg:surfer')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:coral_enderman')
 }
