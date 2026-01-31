@@ -262,8 +262,8 @@ function registerTFGMultiblockRecipes(event) {
 	event.remove({output: 'gtceu:active_transformer'})
 
 	event.recipes.gtceu.assembler('tfg:active_power_transformer')
-		.itemInputs('1x gtceu:iv_transformer_1a', '1x #gtceu:circuits/iv', '8x gtceu:uranium_triplatinum_single_wire',
-					'2x gtceu:hpic_chip')
+		.itemInputs('1x gtceu:ev_transformer_1a', '1x #gtceu:circuits/ev', '8x gtceu:uranium_triplatinum_single_wire',
+					'2x gtceu:mpic_chip')
 		.inputFluids(Fluid.of('gtceu:ostrum_iodide', 288))
 		.itemOutputs('tfg:active_power_transformer')
 		.duration(300)

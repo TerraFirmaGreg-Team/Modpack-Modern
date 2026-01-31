@@ -190,11 +190,12 @@ function registerTFGEarlyGasRecipes(event) {
 	// Modify Recipe to balance new line
 
 	event.remove({ id: 'gtceu:extractor/charcoal_extraction' })
+	/*
 	event.recipes.gtceu.extractor('tfg:charcoal_extraction')
 		.itemInputs(Item.of('minecraft:charcoal'))
 		.outputFluids(Fluid.of('gtceu:wood_tar', 100))
 		.duration(20*6.4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.MV])*/
 
 	//#endregion
 
