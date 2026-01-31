@@ -42,7 +42,7 @@ body:
     attributes:
       label: Computer OS
       description: Write which OS your PC is running on.
-      placeholder: "Example: Windows 10"
+      placeholder: "Example: Windows 11"
 
   - type: input
     id: version
