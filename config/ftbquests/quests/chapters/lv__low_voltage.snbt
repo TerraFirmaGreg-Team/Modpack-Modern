@@ -245,7 +245,7 @@
 			]
 			icon: "gtceu:storage_cover"
 			id: "1C767009F505A813"
-			shape: "square"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.cover_behaviour.subtitle}"
 			tasks: [{
@@ -399,7 +399,7 @@
 			}]
 			title: "{quests.low_voltage.lbb.title}"
 			x: 0.0d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1711,7 +1711,7 @@
 				}
 				{
 					id: "34153032225B76BB"
-					item: "gtceu:light_fuel_bucket"
+					item: "gtceu:diesel_bucket"
 					optional_task: true
 					type: "item"
 				}
