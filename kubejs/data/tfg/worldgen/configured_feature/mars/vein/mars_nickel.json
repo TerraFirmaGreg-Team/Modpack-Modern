@@ -252,6 +252,33 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_garnierite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_nickel_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_cobaltite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

@@ -3,6 +3,7 @@
 ## Unreleased
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
+- The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
@@ -34,6 +35,10 @@
 - Added manual/automated sanding recipes for making smooth stone (#2876) @Pyritie
 - Added deployer recipes for all the in-world block modification recipes (#2876) @Pyritie
 - Added recipe to convert kaolin clay blocks back into kaolin clay (#2904) @Pyritie
+- Axolotls now have genders @Pyritie
+- Piglins can now spawn with crossbows @Pyritie
+- Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
+- Added quartzite as a mars stone type @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
@@ -47,6 +52,7 @@
 - Fixed not being able to fire scraping blade clay mold (#2905) @Pyritie
 - Fixed stair and slab versions of road blocks not having speed bonuses (#2912) @Pyritie
 - Fixed RNR roofs not having mineable tags, and blocked the stair/slab frame from Additional Placements (#2870) @Pyritie
+- Fixed piglin brutes not dropping meat or bones @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
