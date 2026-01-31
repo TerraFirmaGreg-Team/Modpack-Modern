@@ -17,8 +17,8 @@
 - Added new ceramics required to craft Cupronickel Coils, made out of your recycled TFC blast furnace, Magnesia, and some resin
 - Cupronickel coils now also need blue steel foil instead of bronze
 - Polyethylene now requires an MV chemical reactor
-### Changes
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
+### Changes
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 - Added steam alloy smelter glass batch recipes (#2853) @Pyritie
@@ -39,6 +39,7 @@
 - Piglins can now spawn with crossbows @Pyritie
 - Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
 - Added quartzite as a mars stone type @Pyritie
+- Added assembler recipe for framed cubes (#2889) @Coox1e
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
