@@ -263,9 +263,10 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:lorandite')
 		.dust()
+		.ore()
 		.color(0xC97523)
 		.components('1x thallium', '1x arsenic', '2x sulfur')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, TFGMaterialFlags.GENERATE_DUSTY_ORES)
 	
 	event.create('tfg:thallium_sulfate')
 		.dust()

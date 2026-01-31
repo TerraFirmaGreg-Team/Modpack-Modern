@@ -298,7 +298,7 @@ function registerTFGCircuitRecipes(event) {
 		.inputFluids('gtceu:ostrum_vapor 300')
 		.inputFluids('gtceu:dense_ostrum_vapor 100')
 		.inputFluids('gtceu:residual_radioactive_concoction 100')
-		.itemOutputs('4x #forge:dusts/lorandite')
+		.itemOutputs('4x tfg:dusty_raw_lorandite')
 		.dimension('ad_astra:mars')
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.IV])
