@@ -252,4 +252,8 @@ const registerTFCRecipes = (event) => {
 		.EUt(2);
 
 	event.shapeless('4x tfc:fire_clay', ['tfc:fire_clay_block'])
+	
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
 }

@@ -43,6 +43,7 @@ function registerTFGClayRecipes(event) {
 		{ input: "tfc:ceramic/unfired_spindle_head", output: "tfc:ceramic/spindle_head", name: "spindle_head" },
 		{ input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
 		{ input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
+		{ input: "tfcscraping:ceramic/unfired_scraping_knife_blade_mold", output: "tfcscraping:ceramic/scraping_knife_blade_mold", name: "scraping_knife" },
 		{ input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
 		{ input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
 		{ input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
