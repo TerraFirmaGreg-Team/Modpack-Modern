@@ -414,6 +414,33 @@
             "weight": 10
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_sphalerite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_nickel_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_galena_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_silver_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_cobaltite_ore",
+            "weight": 10
+          }
+        ]
       }
     ],
     "indicator": {
