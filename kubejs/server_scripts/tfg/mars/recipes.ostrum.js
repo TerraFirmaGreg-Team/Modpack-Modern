@@ -91,7 +91,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_tricalcium_phosphate'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 2)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 5)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))	
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 100))	
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
 			.EUt(GTValues.VA[GTValues.EV])
@@ -111,7 +111,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 3)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 3)
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_pitchblende'), 1, 10)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 100))
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
 			.EUt(GTValues.VA[GTValues.EV])
@@ -132,7 +132,7 @@ function registerTFGMarsOstrumRecipes(event) {
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/bauxite'), 1, 5)
 			.itemOutputsRanged(Item.of('#forge:dusty_raw_materials/lead'), 1, 5)
 			.itemOutputsRanged(Item.of('gtceu:dusty_raw_pitchblende'), 10, 20)
-			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 900))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(10, 100))
 			.dimension('ad_astra:mars')
 			.duration(20 * 120)
 			.EUt(GTValues.VA[GTValues.EV])
@@ -229,5 +229,6 @@ function registerTFGMarsOstrumRecipes(event) {
 			.dimension('ad_astra:mars')
 			.duration(20 * 240)
 			.EUt(GTValues.VA[GTValues.IV])
+			.circuit(4)
 
 }
