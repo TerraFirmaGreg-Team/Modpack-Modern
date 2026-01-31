@@ -1,0 +1,22 @@
+{
+  "name": "Лестницы",
+  "sortnum": 1,
+  "category": "buildinggadgets2:modes",
+  "icon": "buildinggadgets2:textures/book/mode/stairs.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Режим «Лестницы» строит ступеньки либо вверх и от вас, либо вверх и к вам — зависит от того, выше вы или ниже целевого блока.$(br2)Если честно, режим немного «дерповый» и местами сбивает с толку. Возможно, ему бы не помешал ремейк… но пока пользуемся тем, что есть!"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Лестницы",
+      "images": [
+        "buildinggadgets2:textures/book/images/stairs1.png",
+        "buildinggadgets2:textures/book/images/stairs2.png"
+      ],
+      "border": true,
+      "text": "Листайте картинки выше, чтобы увидеть варианты"
+    }
+  ]
+}

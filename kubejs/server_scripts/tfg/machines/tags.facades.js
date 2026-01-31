@@ -238,6 +238,10 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		event.add('tfg:whitelisted/facades', `gtceu:${  facade_material  }_studs`)
 		event.add('tfg:whitelisted/facades', `#railways:palettes/cycle_groups/${  facade_material  }`)
 	});
+
+	event.add('tfg:whitelisted/facades', '#railways:palettes/dye_groups/brass_wrapped_slashed')
+	event.add('tfg:whitelisted/facades', '#railways:palettes/dye_groups/copper_wrapped_slashed')
+	event.add('tfg:whitelisted/facades', '#railways:palettes/dye_groups/iron_wrapped_slashed')
 	
 	//create copper
 	create_copper_fm.forEach(facade_material => {

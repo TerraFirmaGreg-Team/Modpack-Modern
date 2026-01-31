@@ -10,10 +10,10 @@ waveSearchDistance = 14
 waveSpawnDistance = 0.0
 #Additional amount of waves to spawn.
 #Range: 0.0 ~ 1.7976931348623157E308
-waveSpawnAmount = 0.8
+waveSpawnAmount = 0.5
 #Time in ticks between each spawn sequence of waves. Set to 0 to disable waves.
 #Range: > 0
-waveSpawnFrequency = 30
+waveSpawnFrequency = 40
 #Maximum spawn distance from shore.
 #Range: 0.0 ~ 1.7976931348623157E308
 waveSpawnDistanceFromShoreMax = 48.0
@@ -25,10 +25,10 @@ waveSpawnDistanceFromShoreMin = 4.0
 waveSpriteCount = 5
 #How great should the chance for waves to deposit blocks be? Lower value = higher chance.
 #Range: > 1
-waveBlockDepositChance = 100
+waveBlockDepositChance = 1000
 #How often the waves should make a sound. Higher value = rarer.
 #Range: > 0
-waveBreakingSoundChance = 40
+waveBreakingSoundChance = 50
 #How fast the bioluminescence should change (octaves).
 #Range: > 1
 waveBioluminescenceChange = 16
@@ -43,10 +43,10 @@ waveSpawningFOVLimit = 140.0
 waveFindNearestShoreIterations = 3
 #Volume modifier for the waves. 1.0 = 100% volume.
 #Range: 0.0 ~ 10.0
-waveVolume = 1.0
+waveVolume = 0.8
 #The multiplier value for how strong the interaction force of the waves are. Higher value = stronger force.
 #Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-waveInteractionForceFactor = 1.0
+waveInteractionForceFactor = 2.0
 #How often the wave interaction should refresh/update. Higher values can yield better TPS at the cost of decreased interaction precision. Higher value => longer intervals between updates.
 #Range: > 1
 waveInteractionUpdateFrequency = 4

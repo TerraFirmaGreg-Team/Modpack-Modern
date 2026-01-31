@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(thing)锻铁炉$()是一种能将$(thing)铁矿$()烧炼成$(thing)生铁方坯$()的装置。生铁方坯可进一步锻造成$(thing)锻铁$()。$(l:the_world/ores_and_minerals#hematite)赤铁矿$()、$(l:the_world/ores_and_minerals#limonite)褐铁矿$()和$(l:the_world/ores_and_minerals#magnetite)磁铁矿$()均含铁。直接熔化这些矿石只会得到无用的$(thing)铸铁$()而非$(thing)锻铁$()。另外，所有含铁物品熔化时都只会变成铸铁。锻铁炉是把铸铁变为锻铁的唯一方法。锻铁炉接受任何含铁物品，包括铁矿石或铸铁锭。"
+            "text": "$(thing)锻铁炉$()是一种用于将$(thing)铁矿$()烧炼成$(thing)生铁方坯$()的装置，生铁方坯可被进一步加工成$(thing)锻铁$()。常见的铁矿包括$(l:tfg_ores/earth_vein_index#normal_hematite)赤铁矿$()、$(l:tfg_ores/earth_vein_index#normal_limonite)褐铁矿$()和$(l:tfg_ores/earth_vein_index#normal_magnetite)磁铁矿$()。这些矿石直接熔化只会得到$(thing)铸铁$()，而非$(thing)锻铁$()。实际上，所有含铁物品熔化后都只会变成铸铁。若要将它们转化为可用的锻铁，就需要使用锻铁炉。任何含铁物品都可用于锻铁炉，包括铁制工具和铸铁锭！"
         },
         {
             "type": "patchouli:crafting",
@@ -22,19 +22,19 @@
         },
         {
             "type": "patchouli:text",
-            "text": "锻铁炉最多可容纳 48 个 $(thing)输入项$()，每层烟囱最多放16件物品。可通过堆叠额外的石头来加高至多两层烟囱，每层额外的烟囱可以多容纳16件物品。$(br2)要向锻铁炉中加入物品，只需将物品从烟囱顶部投入烟囱中即可。如果烟囱中出现灰色物质就说明成功了。"
+            "text": "锻铁炉最多可容纳 48 个 $(thing)输入项$()，每层烟囱最多放16件物品。可通过堆叠额外的石头来加高至多两层烟囱，每层额外的烟囱可以多容纳16件物品。$(br2)向锻铁炉添加物品时，请攀至烟囱顶部并将物品投入其中。若观察到内部形成灰色的矿石堆，即表示投放成功。$(br2)你可以使用$(item)木炭$()或$(item)煤炭$()作为锻铁炉的燃料。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/bloomery_hole.png"
             ],
-            "text": "将物品添加到锻铁炉中。",
+            "text": "每生产一块$(thing)生铁方坯$()，锻铁炉需要消耗$(thing)1份燃料$()和$(thing)144mB铸铁$()。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "锻铁炉会将每$(thing)1份木炭$()和$(thing)144mB铸铁$()转化成一块$(thing)方坯$()。在投入所需的$(thing)木炭$()和$(thing)矿石$()后，点燃锻铁炉方块并等上 15 小时。锻铁炉熄灭后会留下许多方坯方块。用镐反复挖掘$(thing)方坯$()便能得到$(thing)生铁方坯$()。"
+            "text": "若你不想费心计算配比，我们推荐使用$(item)25份金属矿粉$()和$(item)22份燃料$()的组合。在投入所需的$(thing)燃料$()和$(thing)矿石$()后，点燃锻铁炉门并等上 15 小时。锻铁炉熄灭后会留下许多方坯方块。用镐反复挖掘$(thing)方坯$()便能得到$(thing)生铁方坯$()。"
         },
         {
             "type": "patchouli:multiblock",

@@ -7,7 +7,6 @@
  */
 const registerGTCEURecipes = (event) => {
 
-	registerGTCEUMetalRecipes(event)
 	registerGTCEURecyclingRecipes(event)
 	registerGTCEuMachineRecipes(event)
 
@@ -321,10 +320,15 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Ladder consistency
+	
+	const nonAdAstraLumber = Ingredient.of('#tfc:lumber').subtract('tfg:wood/lumber/aeronos').subtract('tfg:wood/lumber/strophar');
+
 	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
 
+	event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
+
 	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
-		.itemInputs('#tfc:lumber')
+		.itemInputs(nonAdAstraLumber.withCount(7))
 		.itemOutputs('8x minecraft:ladder')
 		.circuit(7)
 		.duration(40)
@@ -348,12 +352,10 @@ const registerGTCEURecipes = (event) => {
 		.duration(3 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Volcanic Glass Tube
-	event.recipes.gtceu.alloy_smelter('tfg:tube_from_volcanic_glass_batch')
-		.itemInputs('tfc:volcanic_glass_batch')
-		.notConsumable('gtceu:ball_casting_mold')
-		.itemOutputs('gtceu:glass_tube')
-		.duration(8 * 20)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.INGOT_MOLDING);
+	// Glass lens
+	event.recipes.gtceu.lathe('tfg:gt_glass_lens')
+		.itemInputs('#forge:plates/glass')
+		.itemOutputs('#forge:lenses/glass', '#forge:small_dusts/glass')
+		.duration(60 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
 }

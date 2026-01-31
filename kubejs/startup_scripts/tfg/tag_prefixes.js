@@ -3,6 +3,8 @@
 
 function registerTFGTagPrefixes(event) {
 
+	registerTFGRocksTagPrefixes(event)
+
 	excludeAllGemsButNormal(GTMaterials.get('tfg:apt'));
 	TagPrefix.block.setIgnored(GTMaterials.get('tfg:apt'));
 	excludeAllGemsButNormal(GTMaterials.get('tfg:tetrafluoroethane'));
@@ -18,6 +20,9 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.ingot.setIgnored(GTMaterials.RawRubber);
 	TagPrefix.plate.setIgnored(GTMaterials.RawRubber);
 	TagPrefix.plateDouble.setIgnored(GTMaterials.RawRubber);
+
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:magnesia_refractory_brick'))
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:magnesia_refractory_brick'))
 }
 
 function excludeAllGemsButNormal(material) {

@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Amethyst & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Bismuth (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Bismuth (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Cassiterite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Chalcopyrite & Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Chromite & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Emerald & Beryllium$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Amethyst & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Bismuth (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Bismuth (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Cassiterite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Chalcopyrite & Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Chromite & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#desert_oilsands)Desert Oilsands$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Gold (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold, Limonite, & Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gypsum & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematite, Goethite, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite & Vanadium$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganese & Tantalum$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Gold (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold, Limonite, & Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gypsum & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematite, Goethite, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite & Vanadium$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Oilsands$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opal & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzes$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salts & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Lepidolite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Oilsands$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opal & Garnet$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzes$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salts & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite & Sulfur$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetrahedrite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Lepidolite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite & Oilsands$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetrahedrite (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 230$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 8$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Gneiss, Limestone, Marble, Phyllite, Quartzite, Schist, Shale, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 26$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)Height$(): 8$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Gneiss, Limestone, Marble, Phyllite, Quartzite, Schist, Shale, Slate",
       "title": "Amethyst & Garnet",
       "type": "patchouli:text",
       "anchor": "deep_garnet_amethyst"
@@ -131,7 +131,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 34$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 20 — 120$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Apatite & Pyrochlore",
       "type": "patchouli:text",
       "anchor": "normal_apatite"
@@ -198,7 +198,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 205$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 50$(br)$(thing)Size$(): 35$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/205 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 50$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Bastnasite & Monazite",
       "type": "patchouli:text",
       "anchor": "normal_monazite"
@@ -265,7 +265,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -40 — 30$(br)$(thing)Size$(): 26$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -40 — 30$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 26$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
       "title": "Bentonite & Olivine",
       "type": "patchouli:text",
       "anchor": "normal_olivine"
@@ -357,7 +357,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Diorite, Dolomite, Gabbro, Granite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Diorite, Dolomite, Gabbro, Granite, Limestone, Shale",
       "title": "Bismuth (Normal)",
       "type": "patchouli:text",
       "anchor": "normal_bismuthinite"
@@ -379,7 +379,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 72%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "text": "$(thing)Percentage$(): 70%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
       "type": "patchouli:multiblock"
     },
     {
@@ -399,7 +399,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "text": "$(thing)Percentage$(): 11%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -419,7 +419,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -439,7 +439,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 8%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -449,7 +449,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 140$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 60 — 210$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Diorite, Dolomite, Gabbro, Granite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 60 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Diorite, Dolomite, Gabbro, Granite, Limestone, Shale",
       "title": "Bismuth (Surface)",
       "type": "patchouli:text",
       "anchor": "surface_bismuthinite"
@@ -471,7 +471,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 85%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "text": "$(thing)Percentage$(): 80%$(br)$(thing)Melts into$(): Bismuth$(br)$(thing)Formula$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Native Silver",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -492,26 +512,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 7%$(br)$(thing)Smelts into$(): Lead$(br)$(thing)Formula$(): Pb$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Native Silver",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/silver"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 5%$(br)$(thing)Melts into$(): Silver$(br)$(thing)Formula$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -541,7 +541,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Cassiterite (Normal)",
       "type": "patchouli:text",
       "anchor": "normal_cassiterite"
@@ -563,7 +563,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 60%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "text": "$(thing)Percentage$(): 55%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -583,17 +583,32 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Saltpeter",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 135$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 60 — 210$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/135 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 60 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Cassiterite (Surface)",
       "type": "patchouli:text",
       "anchor": "surface_cassiterite"
@@ -615,7 +630,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 60%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
+      "text": "$(thing)Percentage$(): 55%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -635,17 +650,32 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Saltpeter",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 200$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 20 — 217$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/200 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 20 — 217$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Chalcopyrite & Realgar",
       "type": "patchouli:text",
       "anchor": "surface_copper"
@@ -737,7 +767,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 225$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 20$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/225 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 30$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Marble, Shale",
       "title": "Chromite & Magnetite",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"
@@ -844,7 +874,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 215$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Size$(): 60$(br)$(thing)Indicator Max Depth$(): 50$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/215 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 55%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 60$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -871,7 +901,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 320$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 0$(br)$(thing)Size$(): 30$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/320 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 0$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Cooperite & Bornite",
       "type": "patchouli:text",
       "anchor": "deep_sheldonite"
@@ -938,7 +968,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 85$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 85$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Copper & Chalcopyrite",
       "type": "patchouli:text",
       "anchor": "normal_copper"
@@ -1030,7 +1060,34 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): -32 — 50$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/150 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 30 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 60$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale$(br2)Only appears in deserts to the $(thing)West$(), with a maximum rainfall of 120mm.",
+      "title": "Desert Oilsands",
+      "type": "patchouli:text",
+      "anchor": "desert_oilsands"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Oilsands",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Source of$(): Freedom \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 30$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Emerald & Beryllium",
       "type": "patchouli:text",
       "anchor": "normal_beryllium"
@@ -1077,7 +1134,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Thorium",
+      "name": "Thorianite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -1092,12 +1149,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): Th",
+      "text": "$(thing)Percentage$(): 15%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): ThO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 270$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -40 — 64$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/270 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -40 — 64$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate",
       "title": "Garnet & Cassiterite Sands",
       "type": "patchouli:text",
       "anchor": "normal_garnet_tin"
@@ -1189,7 +1246,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 70$(br2)$(thing)Stone Types$(): Diorite, Gabbro$(br2)Can't find it? Gabbro always spawns below $(thing)Basalt$(), and Gabbro dikes in oceans can be useful too!",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br2)$(thing)Stone Types$(): Diorite, Gabbro$(br2)Can't find it? Gabbro always spawns below $(thing)Basalt$(), and Gabbro dikes in oceans can be useful too!",
       "title": "Garnierite & Cobaltite",
       "type": "patchouli:text",
       "anchor": "normal_garnierite"
@@ -1296,7 +1353,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 32$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Limestone, Marble",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/240 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 30$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 32$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Limestone, Marble",
       "title": "Goethite & Malachite",
       "type": "patchouli:text",
       "anchor": "deep_limonite"
@@ -1388,7 +1445,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 260$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 32$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/260 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 30$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 32$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
       "title": "Gold (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_gold"
@@ -1480,7 +1537,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 12$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)Height$(): 12$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
       "title": "Gold, Limonite, & Hematite",
       "type": "patchouli:text",
       "anchor": "normal_gold"
@@ -1572,7 +1629,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 80$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — -16$(br)$(thing)Size$(): 16$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/80 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — -16$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 16$(br)$(thing)Height$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
       "anchor": "normal_graphite"
@@ -1639,7 +1696,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 9$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)Height$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
       "title": "Gypsum & Calcite",
       "type": "patchouli:text",
       "anchor": "normal_gypsum"
@@ -1731,7 +1788,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 210$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 50$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/210 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Hematite & Limonite",
       "type": "patchouli:text",
       "anchor": "normal_hematite"
@@ -1823,7 +1880,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 30$(br)$(thing)Size$(): 30$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 30$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Hematite, Goethite, & Ruby",
       "type": "patchouli:text",
       "anchor": "deep_hematite"
@@ -1930,7 +1987,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Size$(): 36$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/190 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 36$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Kyanite, Mica, & Bauxite",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2022,7 +2079,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -60 — 10$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -60 — 10$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Lapis, Lazurite, & Sodalite",
       "type": "patchouli:text",
       "anchor": "normal_lapis"
@@ -2114,7 +2171,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 50$(br2)$(thing)Stone Types$(): Limestone, Marble",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/190 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br2)$(thing)Stone Types$(): Limestone, Marble",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "normal_limonite"
@@ -2206,7 +2263,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 200$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 30$(br)$(thing)Indicator Max Depth$(): 50$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/200 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
       "title": "Magnetite & Vanadium",
       "type": "patchouli:text",
       "anchor": "normal_magnetite"
@@ -2298,7 +2355,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 195$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 30$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Dolomite, Limestone, Rhyolite, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/195 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Dolomite, Limestone, Rhyolite, Shale",
       "title": "Manganese & Tantalum",
       "type": "patchouli:text",
       "anchor": "normal_manganese"
@@ -2390,7 +2447,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 48$(br)$(thing)Height$(): 9$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Basalt, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 48$(br)$(thing)Height$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Basalt, Granite",
       "title": "Mineral Sands",
       "type": "patchouli:text",
       "anchor": "normal_basaltic_sands"
@@ -2482,7 +2539,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 185$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Size$(): 55$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 90$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Chalk, Chert, Claystone, Conglomerate, Dolomite, Limestone, Shale",
       "title": "Oilsands",
       "type": "patchouli:text",
       "anchor": "normal_oilsands"
@@ -2509,7 +2566,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 62$(br)$(thing)Size$(): 26$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 62$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 26$(br)$(thing)Height$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
       "title": "Opal & Garnet",
       "type": "patchouli:text",
       "anchor": "deep_garnet_opal"
@@ -2601,14 +2658,14 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 100$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Gneiss, Quartzite, Schist, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/190 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 100$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 40$(br2)$(thing)Stone Types$(): Gneiss, Quartzite, Schist, Shale",
       "title": "Quartzes",
       "type": "patchouli:text",
       "anchor": "normal_quartz"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartzite",
+      "name": "Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -2668,7 +2725,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 100$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Granite$(br2)Can't find it? Granite always spawns below $(thing)Rhyolite$(), and looking in oceans can be useful too!",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 100$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Granite$(br2)Can't find it? Granite always spawns below $(thing)Rhyolite$(), and looking in oceans can be useful too!",
       "title": "Redstone, Cinnabar, & Ruby",
       "type": "patchouli:text",
       "anchor": "normal_redstone"
@@ -2735,7 +2792,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 210$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/210 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Saltpeter & Electrotine",
       "type": "patchouli:text",
       "anchor": "normal_saltpeter"
@@ -2827,14 +2884,14 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 175$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 4$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Claystone, Limestone, Shale",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/175 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 30 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)Height$(): 4$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 40$(br2)$(thing)Stone Types$(): Claystone, Limestone, Shale",
       "title": "Salts & Borax",
       "type": "patchouli:text",
       "anchor": "normal_salt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -2849,12 +2906,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Salt",
+      "name": "Halite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -2919,7 +2976,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Size$(): 28$(br)$(thing)Height$(): 8$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 32$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 28$(br)$(thing)Height$(): 8$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Rhyolite",
       "title": "Sapphire & Almandine",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"
@@ -3011,7 +3068,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 0$(br)$(thing)Size$(): 20$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/240 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 0$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Scheelite & Tungstate",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
@@ -3078,7 +3135,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Granite",
       "title": "Silver, Galena, & Lead",
       "type": "patchouli:text",
       "anchor": "normal_silver"
@@ -3145,7 +3202,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 190$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -40 — 56$(br)$(thing)Size$(): 36$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/190 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -40 — 56$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 36$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Soapstone, Talc, & Trona",
       "type": "patchouli:text",
       "anchor": "normal_lubricant"
@@ -3252,7 +3309,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Gneiss, Marble, Phyllite, Quartzite, Rhyolite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Gneiss, Marble, Phyllite, Quartzite, Rhyolite, Schist, Slate",
       "title": "Sphalerite & Pyrite",
       "type": "patchouli:text",
       "anchor": "normal_sphalerite"
@@ -3319,7 +3376,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 145$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 60 — 210$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Gneiss, Marble, Phyllite, Quartzite, Rhyolite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/145 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 60 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Gneiss, Marble, Phyllite, Quartzite, Rhyolite, Schist, Slate",
       "title": "Sphalerite & Sulfur",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -3386,7 +3443,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.375$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 20 — 60$(br)$(thing)Size$(): 35$(br)$(thing)Height$(): 6$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 38%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 20 — 60$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br)$(thing)Height$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 40$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Spodumene & Lepidolite",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
@@ -3413,7 +3470,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Salt",
+      "name": "Halite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -3433,7 +3490,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -3448,7 +3505,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -3478,7 +3535,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 165$(br)$(thing)Density$(): 0.2$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Size$(): 45$(br)$(thing)Indicator Max Depth$(): 40$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/165 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 40$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Rhyolite",
       "title": "Sulfur & Pyrite",
       "type": "patchouli:text",
       "anchor": "normal_sulfur"
@@ -3545,7 +3602,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -32 — 75$(br)$(thing)Size$(): 40$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 20 — 120$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate$(br2)Only appears in deserts to the $(thing)South-West$(), with a minimum temperature of 7°C and a maximum rainfall of 100mm.",
+      "title": "Tarkianite & Oilsands",
+      "type": "patchouli:text",
+      "anchor": "normal_tarkianite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Tarkianite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/tarkianite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Rhenium, Molybdenum$(br)$(thing)Formula$(): CuFeRe₄Mo₄S₈",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Oilsands",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 35%$(br)$(thing)Source of$(): Freedom \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Borax",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/borax"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 20%$(br)$(thing)Source of$(): Sodium, Boron$(br)$(thing)Formula$(): Na₂B₄(H₂O)₁₀O₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Trona",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/trona"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Source of$(): Sodium$(br)$(thing)Formula$(): Na₃C₂H(H₂O)₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -32 — 75$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Tetrahedrite (Normal)",
       "type": "patchouli:text",
       "anchor": "normal_tetrahedrite"
@@ -3612,7 +3761,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 140$(br)$(thing)Density$(): 0.25$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 60 — 210$(br)$(thing)Size$(): 50$(br)$(thing)Indicator Max Depth$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 25%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 60 — 210$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Tetrahedrite (Surface)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -3679,7 +3828,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 260$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): -64 — 26$(br)$(thing)Size$(): 28$(br)$(thing)Height$(): 7$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/260 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 26$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 28$(br)$(thing)Height$(): 7$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Topaz & Chalcocite",
       "type": "patchouli:text",
       "anchor": "deep_topaz"
@@ -3771,7 +3920,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — -20$(br)$(thing)Size$(): 19$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/240 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — -20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 19$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Marble, Phyllite, Quartzite, Schist, Slate",
       "title": "Uraninite & Pitchblende",
       "type": "patchouli:text",
       "anchor": "deep_pitchblende"
@@ -3793,7 +3942,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 62%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 62%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -3813,7 +3962,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -3838,7 +3987,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 245$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): -64 — 10$(br)$(thing)Size$(): 26$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/245 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — 10$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 26$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br2)$(thing)Stone Types$(): Andesite, Basalt, Dacite, Diorite, Gabbro, Granite, Rhyolite",
       "title": "Wulfenite & Molybdenite",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"

@@ -1,11 +1,12 @@
 {
 	"ingredient": "tfc_gurman:tea_chamomile",
-	"thirst": 15,
+	"thirst": 10,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "minecraft:resistance",
 			"duration": 600,
-			"amplifier": 0
+			"amplifier": 1
 		},
 		{
 			"type": "tfg:warming",

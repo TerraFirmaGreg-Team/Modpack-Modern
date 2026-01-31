@@ -131,6 +131,8 @@
 			dependencies: [
 				"572A8983FA12152A"
 				"3AF956758FA289A8"
+				"07E7678095258EDB"
+				"383A14A5C65B3ADF"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
@@ -209,8 +211,9 @@
 		{
 			dependencies: [
 				"7C4807A247AF36A1"
-				"648BCF486E16CCB2"
+				"713C8D6A20BF3A0E"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.stock_link.desc}"]
 			id: "76490E046A44BCC3"
 			size: 2.0d
@@ -225,7 +228,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["76490E046A44BCC3"]
+			dependencies: [
+				"76490E046A44BCC3"
+				"50FE830DA6F403B2"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.create_logistics.stock_ticker.desc.1}"
 				"{@pagebreak}"
@@ -245,7 +252,11 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["76490E046A44BCC3"]
+			dependencies: [
+				"76490E046A44BCC3"
+				"50FE830DA6F403B2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.redstone_requester.desc}"]
 			id: "3F44CFF8A6018F3E"
 			subtitle: "{quests.create_logistics.redstone_requester.subtitle}"

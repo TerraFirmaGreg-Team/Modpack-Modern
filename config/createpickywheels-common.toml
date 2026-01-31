@@ -1,24 +1,50 @@
 
-##Waterwheel requirements
+#Waterwheel requirements
 [waterwheels]
 	#Enable waterwheels modifications?
 	waterwheelsEnabled = true
 	#Only enable pickyness onPlacement, if the water wheel was instead generated during worldgen, it works as default.
 	waterwheelsPickyOnPlacement = true
-	#Boost for Waterwheels placed on boosted biomes.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	waterwheelBaseBoost = 1.0
-	#Penalty for Waterwheels placed on whitelisted but not on preferential biomes [waterwheel_boosted biome tag].
-	#Range: 0.0 ~ 1.7976931348623157E308
-	waterwheelPenalty = 0.25
-	#The minimum amount of fluid blocks the waterwheel needs to find before rotation begins.
-	#Range: > 1
-	waterwheelThreshold = 1
-	#The maximum distance a waterwheel can consider fluid blocks from.
-	#Range: > 1
-	waterwheelRange = 2
-	#When enabled waterwheels require correct flow (like in TerraFirmaCraft's water river)
-	waterwheelsRequiresFlow = true
+
+	#Biome impact on waterwheel
+	[waterwheels."biome efficiency"]
+		#RPM Boost for Waterwheels placed on boosted biomes tag.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelBiomeRPMBoost = 1.0
+		#RPM Penalty for Waterwheels placed on whitelisted but not on preferential biomes [waterwheel_boosted biome tag].
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelBiomeRPMPenalty = 0.25
+		#STRESS Boost for Waterwheels placed on boosted Biomes.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelBiomeSTRESSBoost = 1.0
+		#STRESS Penalty for Waterwheels placed on whitelisted but not on preferential biomes [waterwheel_boosted biome tag].
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelBiomeSTRESSPenalty = 1.0
+
+	#Body of water requirement impact (similar to infinite fluid extraction from pulley)
+	[waterwheels."power source condition"]
+		#When enabled waterwheels also work when under create's default conditions but at a penalty
+		waterwheelsPorqueNoLosDos = true
+		#Boost for Waterwheels placed on optimal conditions.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelSourceRPMBoost = 1.0
+		#Penalty for Waterwheels placed under create's default conditions.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelSourceRPMPenalty = 1.0
+		#Boost for Waterwheels placed on optimal conditions.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelSourceSTRESSBoost = 1.0
+		#Penalty for Waterwheels placed under create's default conditions.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		waterwheelSourceSTRESSPenalty = 1.0
+		#The minimum amount of fluid blocks the waterwheel needs to find before rotation begins.
+		#Range: > 1
+		waterwheelSourceThreshold = 1
+		#The maximum distance a waterwheel can consider fluid blocks from.
+		#Range: > 1
+		waterwheelSourceRange = 3
+		#When enabled boosted waterwheels require correct flow (like in TerraFirmaCraft's water river)
+		waterwheelsSourceRequiresFlow = true
 
 ##Windmill requirements
 [windmills]
@@ -39,7 +65,7 @@
 	#The minimum amount of points that must hit windmillRequiredRange.
 	#Range: > 1
 	windmillRequiredRangePoints = 1
-	#The maximum distance a waterwheel can consider air blocks from.
+	#The maximum distance a windmill can consider air blocks from.
 	#Range: > 1
 	windmillMaxRange = 32
 	#The percentage of Generated Speed only given if windmills are raised enough.

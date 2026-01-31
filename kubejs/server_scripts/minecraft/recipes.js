@@ -186,7 +186,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тонированное стекло, tinted glass
 
 	event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
-		.itemInputs('minecraft:glass', 'tfc:powder/amethyst')
+		.itemInputs('#forge:glass', '4x tfc:powder/amethyst')
 		.itemOutputs('minecraft:tinted_glass')
 		.duration(260)
 		.EUt(16)
@@ -479,7 +479,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Ведро, buckets
 
-	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+	event.recipes.tfc.welding(TFC.isp.of('minecraft:bucket').copyForgingBonus(), 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
 
 	event.recipes.greate.compacting('minecraft:bucket', ['tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 'tfc:powder/flux'])
@@ -533,7 +533,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:chests/wooden',
 		D: '#forge:tools/wrenches',
-		E: '#forge:tools/hammers',
+		E: '#forge:tools/hammers'
 	}).id('gtceu:shaped/hopper')
 
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
@@ -756,6 +756,22 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
+	event.recipes.gtceu.assembler(`assembler_bricks`)
+		.itemInputs('5x minecraft:brick')
+		.inputFluids(Fluid.of('gtceu:concrete', 144))
+		.itemOutputs(`4x minecraft:bricks`)
+		.duration(50)
+		.circuit(2)
+		.EUt(7)
+
+	event.recipes.gtceu.alloy_smelter('tfg:brick_dust_to_brick')
+		.itemInputs('#forge:dusts/brick')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.itemOutputs('minecraft:brick')
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.INGOT_MOLDING)
+
 	//#endregion
 
 	//#region Выход: Элитра, elytra
@@ -896,7 +912,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/charcoal',
+		D: '#forge:storage_blocks/charcoal'
 	}).id('tfg:campfire_charcoal')
 
 	event.shaped('minecraft:campfire', [
@@ -907,7 +923,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:rods/black_steel',
 		B: 'minecraft:lava_bucket',
 		C: '#minecraft:logs',
-		D: '#forge:storage_blocks/coal',
+		D: '#forge:storage_blocks/coal'
 	}).id('tfg:campfire_coal')
 	//#endregion
 
@@ -963,40 +979,29 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Stonecutter
 
-	event.shaped('minecraft:stonecutter',
-		[
-			' E ',
-			'CAC',
-			'BDB'
-		],
-		{
-			A: '#forge:plates/wrought_iron',
-			B: '#tfc:lumber',
-			C: '#forge:plates/brass',
-			D: '#forge:small_gears',
-			E: '#forge:buzz_saw_heads'
-		}).id('tfg:shaped/stonecutter');
+	event.shaped('minecraft:stonecutter', [
+		' E ',
+		'CAC',
+		'BDB'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: '#tfc:lumber',
+		C: '#forge:plates/brass',
+		D: '#forge:small_gears/brass',
+		E: '#forge:buzz_saw_heads'
+	}).id('tfg:shaped/stonecutter');
 
-	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
-	event.stonecutting('create:cut_deepslate', 'minecraft:polished_deepslate')
 	//#endregion
 
 	//#region Glowing Ink Sacs
-		
-	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac4')
-		.itemInputs("gtceu:thorium_dust")
-		.inputFluids(Fluid.of('gtceu:glowstone', 512))
-		.itemOutputs('16x minecraft:glow_ink_sac')
-		.duration(20)
-		.EUt(GTValues.VA[GTValues.LV])
-		
-	event.recipes.gtceu.chemical_bath('minecraft:glow_inc_sac1')
-		.itemInputs("#forge:dyes/black")
-		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+
+	event.recipes.gtceu.fluid_solidifier('tfg:glow_ink_sac')
+		.inputFluids('gtceu:glowstone 36')
+		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
-
+		
 	//#endregion
 
 	//#region Gunpowder
@@ -1051,30 +1056,20 @@ const registerMinecraftRecipes = (event) => {
 			.EUt(2)
 	})
 
-	// #endregion
-
-	//#region Greenhouse
-
-	generateGreenHouseRecipe(event, '8x minecraft:bamboo', '#tfc:any_fresh_water', 4000,
-		'64x minecraft:bamboo', 'bamboo', 'minecraft:overworld', 8, 
-		'8x minecraft:bamboo', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:red_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:red_mushroom', 'red_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:red_mushroom', GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '4x minecraft:brown_mushroom', '#tfc:any_fresh_water', 4000,
-		'24x minecraft:brown_mushroom', 'brown_mushroom', 'minecraft:the_nether', 8, 
-		'4x minecraft:brown_mushroom', GTValues.VA[GTValues.LV])
+	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])
+		.id(`tfg:shapeless/saw_blackstone_pressure_plate_to_button`)
+			
+	event.shapeless('3x minecraft:bamboo_button', ['minecraft:bamboo_pressure_plate', '#forge:tools/saws'])
+		.id(`tfg:shapeless/saw_bamboo_pressure_plate_to_button`)
 
 	// #endregion
 
-    // Minecart w/ Furnace
-    event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
+	// Minecart w/ Furnace
+	event.shapeless('minecraft:furnace_minecart', ['minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart']);
 
-    event.recipes.gtceu.assembler('minecraft:furnace_minecart')
-        .itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
-        .itemOutputs('minecraft:furnace_minecart')
-        .duration(100)
-        .EUt(4)
+	event.recipes.gtceu.assembler('minecraft:furnace_minecart')
+		.itemInputs('minecraft:water_bucket', 'gtceu:hp_steam_solid_boiler', 'minecraft:minecart')
+		.itemOutputs('minecraft:furnace_minecart')
+		.duration(100)
+		.EUt(4)
 }

@@ -49,6 +49,7 @@ function registerTFGMarsRecipes(event) {
 
 	event.recipes.vintageimprovements.centrifugation([Fluid.of('tfg:semiheavy_water', 500), '2x #forge:tiny_dusts/ammonium_chloride'], Fluid.of('tfg:semiheavy_ammoniacal_water', 1000))
 		.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.minimalRPM(32)
 		.id('tfg:vi/centrifuge_mars_semiheavy_water')
 
 	event.recipes.gtceu.distillery('mars_semiheavy_water')
@@ -99,7 +100,7 @@ function registerTFGMarsRecipes(event) {
 		'A A'
 	], {
 		A: 'tfg:wood/lumber/aeronos',
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1)
 	}).id('tfg:shaped/aeronos_ladder')
 
 	event.shaped('8x ad_astra:strophar_ladder', [
@@ -108,28 +109,8 @@ function registerTFGMarsRecipes(event) {
 		'A A'
 	], {
 		A: 'tfg:wood/lumber/strophar',
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1),
+		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1)
 	}).id('tfg:shaped/strophar_ladder')
-
-
-	generateGreenHouseRecipe(event, '8x tfg:saplings/strophar', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x ad_astra:strophar_stem', 'tfg:green_house/strophar_mushroom', 'ad_astra:mars', 8,
-		'16x ad_astra:strophar_cap', GTValues.VA[GTValues.MV])
-	generateGreenHouseRecipe(event, '8x tfg:saplings/aeronos', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x ad_astra:aeronos_stem', 'tfg:green_house/aeronos_mushroom', 'ad_astra:mars', 8,
-		'16x ad_astra:aeronos_cap', GTValues.VA[GTValues.MV])
-	generateGreenHouseRecipe(event, '8x tfg:saplings/glacian', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x ad_astra:glacian_log', 'tfg:green_house/glacian_tree', 'ad_astra:mars', 8,
-		'8x species:alphacene_moss_block', GTValues.VA[GTValues.MV])
-
-	// Beneath woods
-
-	generateGreenHouseRecipe(event, '8x tfg:saplings/warped', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x beneath:wood/log/warped', 'tfg:green_house/warped_fungus', 'ad_astra:mars', 8,
-		'32x minecraft:warped_wart_block', GTValues.VA[GTValues.MV])
-	generateGreenHouseRecipe(event, '8x tfg:saplings/crimson', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x beneath:wood/log/crimson', 'tfg:green_house/crimson_fungus', 'ad_astra:mars', 8,
-		'32x minecraft:nether_wart_block', GTValues.VA[GTValues.MV])
 
 	// don't pass in the items like doors, trapdoors etc because beneath already has good recipes for those
 	woodBuilder(event, 'crimson', 'beneath:wood/lumber/crimson', '#tfc:crimson_logs', 'beneath:wood/log/crimson',
@@ -163,12 +144,6 @@ function registerTFGMarsRecipes(event) {
 		.speedLimits(0)
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/lathe/stripping_warped_wood`)
-
-	// Alphacene
-
-	generateGreenHouseRecipe(event, '8x tfg:saplings/alphacene', 'tfg:semiheavy_ammoniacal_water', 16000,
-		'64x species:alphacene_mushroom_block', 'tfg:green_house/alphacene_mushroom', 'ad_astra:mars', 8,
-		'8x minecraft:mushroom_stem', GTValues.VA[GTValues.MV])
 
 	//Large Nest
 	event.shaped('tfg:large_nest_box',
@@ -247,34 +222,6 @@ function registerTFGMarsRecipes(event) {
 		B: '#tfc:lumber'
 	}).id('tfg:shaped/glacian_bed')
 
-	// Plants
-
-	Ingredient.of('#tfg:mars_plants').stacks.forEach(element => {
-		const itemId = element.id;
-		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
-
-		generateGreenHouseRecipe(event, itemId, 'tfg:semiheavy_ammoniacal_water', 8000, `8x ${itemId}`,
-			recipeId, 'ad_astra:mars', 8, itemId, GTValues.VA[GTValues.LV]);
-	});
-
-	generateGreenHouseRecipe(event, '8x betterend:amber_root_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
-		'24x betterend:amber_root_product', 'amber_root', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '8x betterend:blossom_berry_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
-		'24x betterend:blossom_berry_product', 'blossom_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '8x betterend:bolux_mushroom_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
-		'24x betterend:bolux_mushroom_product', 'bolux_mushroom', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '8x betterend:cave_pumpkin_plant_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
-		'24x betterend:cave_pumpkin', 'cave_pumpkin', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '8x betterend:chorus_mushroom_seeds', 'tfg:semiheavy_ammoniacal_water', 8000,
-		'24x betterend:chorus_mushroom_product', 'chorus_mushroom', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
-	generateGreenHouseRecipe(event, '8x betterend:shadow_berry_seeds', 'tfg:semiheavy_ammoniacal_water', 8000, 
-		'24x betterend:shadow_berry_product', 'shadow_berry', 'ad_astra:mars', 8, null, GTValues.VA[GTValues.LV])
-
 	event.recipes.firmalife.oven('betterend:cave_pumpkin_pie_raw', 400, 60 * 20, 'betterend:cave_pumpkin_pie')	
 	
 	// Mars primitive stuff
@@ -287,4 +234,10 @@ function registerTFGMarsRecipes(event) {
 		.processingTime(1000)
 		.heated()
 		.id('tfg:vacuumizing/mars_latex')
+
+	event.recipes.tfc.heating('#tfg:charnia', 200)
+		.resultItem('3x tfc:powder/soda_ash')
+		.id('tfg:heating/charnia_to_soda')
+
+	event.smelting('3x tfc:powder/soda_ash', '#tfg:charnia').id('tfg:smelting/charnia_to_soda')
 }

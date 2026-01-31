@@ -37,6 +37,9 @@ function registerTFGIconSets(event) {
 		
 	event.create('nether_quartz').parent('quartz')
 
+    event.create('noodle').parent('metallic')
+    event.create('cereal_box').parent('bright')
+
     // Credits to Flare from the Cosmic Frontiers team
     event.create('chonky').parent('shiny')
 }
@@ -69,7 +72,7 @@ function modifyTFGIconSets(event) {
     GTMaterials.Garnierite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Nickel.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Hematite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
-    GTMaterials.YellowLimonite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_limonite'))
+    GTMaterials.Limonite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_limonite'))
     GTMaterials.Magnetite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_magnetite'))
     GTMaterials.Malachite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_malachite'))
     GTMaterials.Copper.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
@@ -151,4 +154,9 @@ function modifyTFGIconSets(event) {
     GTMaterials.RutheniumTriniumAmericiumNeutronate.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
 
     GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
+
+    GTMaterials.Vanadium.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+
+    const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
+	$GreateMaterials.RoseQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 }

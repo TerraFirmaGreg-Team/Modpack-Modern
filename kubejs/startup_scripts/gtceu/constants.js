@@ -25,6 +25,14 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lp_steam_solar_boiler",
     "gtceu:charcoal_pile_igniter",
 
+    // Fishers
+    "gtceu:lv_fisher",
+    "gtceu:mv_fisher",
+    "gtceu:hv_fisher",
+    "gtceu:ev_fisher",
+    "gtceu:iv_fisher",
+    "gtceu:luv_fisher",
+
     // Примитивная помпа (Primitive Pump)
     "gtceu:infinite_water_cover",
     "gtceu:ender_item_link_cover",
@@ -162,6 +170,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
+    "tfg:molten_weak_blue_steel_bucket",
+    "tfg:molten_weak_red_steel_bucket",
 
     //armor
     "gtceu:bronze_helmet",
@@ -178,26 +188,23 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:titanium_boots",
 
     // Sculk
-    "gtceu:tiny_echo_shard_dust",
-    "gtceu:small_echo_shard_dust",
-    "gtceu:echo_shard_dust",
+    "gtceu:echo_shard_block",
+    "gtceu:echo_shard_plate",
+    "gtceu:echo_shard_rod",
     "gtceu:chipped_echo_shard_gem",
     "gtceu:flawed_echo_shard_gem",
     "gtceu:flawless_echo_shard_gem",
     "gtceu:exquisite_echo_shard_gem",
-    "gtceu:echo_shard_plate",
-    "gtceu:echo_shard_rod",
-    "gtceu:echo_shard_block",
-    "gtceu:tiny_sculk_dust",
-    "gtceu:small_sculk_dust",
-    "gtceu:sculk_dust",
+    "gtceu:tiny_echo_shard_dust",
+    "gtceu:small_echo_shard_dust",
+    "gtceu:echo_shard_dust",
 
     // Ender eye
-    "gtceu:ender_eye_plate",
     "gtceu:ender_eye_block",
-    "gtceu:ender_eye_dust",
-    "gtceu:small_ender_eye_dust",
+    "gtceu:ender_eye_plate",
     "gtceu:tiny_ender_eye_dust",
+    "gtceu:small_ender_eye_dust",
+    "gtceu:ender_eye_dust",
 
     // Marble
     "gtceu:marble",
@@ -212,30 +219,48 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:hv_bedrock_ore_miner",
     "gtceu:ev_bedrock_ore_miner",
 
-    // Plutonium ores
-    "gtceu:raw_plutonium",
-    "gtceu:poor_raw_plutonium",
-    "gtceu:rich_raw_plutonium",
-    "gtceu:raw_plutonium_block",
-    "gtceu:refined_plutonium_ore",
-    "gtceu:purified_plutonium_ore",
-    "gtceu:crushed_plutonium_ore",
-    "gtceu:impure_plutonium_dust",
-    "gtceu:pure_plutonium_dust",
-    "gtceu:plutonium_surface_rock",
-
     // (Normal) thorium bits
-    "gtceu:thorium_nugget",
-    "gtceu:thorium_ingot",
-    "gtceu:thorium_block",
     "gtceu:thorium_plate",
-    "gtceu:double_thorium_plate",
     "gtceu:thorium_rod",
-    "gtceu:thorium_bucket",
 
     // Replaced with our own
     "gtceu:paracetamol_pill",
-    "gtceu:rad_away_pill"
+    "gtceu:rad_away_pill",
+
+    // GT gets upset if you try to remove the dust property from these
+    "gtceu:blackstone_dust",
+    "gtceu:small_blackstone_dust",
+    "gtceu:tiny_blackstone_dust",
+    "gtceu:basalt_dust",
+    "gtceu:small_basalt_dust",
+    "gtceu:tiny_basalt_dust",
+    "gtceu:granite_dust",
+    "gtceu:small_granite_dust",
+    "gtceu:tiny_granite_dust",
+    "gtceu:marble_dust",
+    "gtceu:small_marble_dust",
+    "gtceu:tiny_marble_dust",
+    "gtceu:diorite_dust",
+    "gtceu:small_diorite_dust",
+    "gtceu:tiny_diorite_dust",
+    "gtceu:netherrack_dust",
+    "gtceu:small_netherrack_dust",
+    "gtceu:tiny_netherrack_dust",
+    "gtceu:granite_red_dust",
+    "gtceu:small_granite_red_dust",
+    "gtceu:tiny_granite_red_dust",
+    "gtceu:deepslate_dust",
+    "gtceu:small_deepslate_dust",
+    "gtceu:tiny_deepslate_dust",
+    "gtceu:andesite_dust",
+    "gtceu:small_andesite_dust",
+    "gtceu:tiny_andesite_dust",
+    "gtceu:tuff_dust",
+    "gtceu:small_tuff_dust",
+    "gtceu:tiny_tuff_dust",
+    "gtceu:endstone_dust",
+    "gtceu:small_endstone_dust",
+    "gtceu:tiny_endstone_dust"
 ]);
 //#endregion
 
@@ -392,7 +417,8 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "mars_stone",
     "venus_stone",
     "mercury_stone",
-    "glacio_stone"
+    "glacio_stone",
+    "red_granite"
 ]);
 //#endregion
 
@@ -415,7 +441,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
 
     { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
-    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 }
+    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
+
+    { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 }
 ]);
 //#endregion
 
@@ -432,4 +461,70 @@ global.GTCEU_SUPERCONDUCTORS = /** @type {const} */ ([
     { name: "enriched_naquadah_trinium_europium_duranide", materialId: "EnrichedNaquadahTriniumEuropiumDuranide" },
     { name: "ruthenium_trinium_americium_neutronate", materialId: "RutheniumTriniumAmericiumNeutronate" }
 ]);
+//#endregion
+
+//#region Concrete Blocks
+/**
+ * Concrete block groups keyed by type [type, ids].
+ *
+ * @global
+ * @type {Record<string, (string[] & { name: string })>}
+ */
+global.GTCEU_CONCRETE_BLOCKS = (() => {
+    /**
+     * Attach a name to an array of concrete block item IDs.
+     * @param {string} name
+     * @param {string[]} items
+     * @returns {string[] & { name: string }}
+     */
+    function group(name, items) {
+        items.name = name;
+        return items;
+    }
+
+    return {
+        light_concrete: group('light_concrete', [
+            'gtceu:light_concrete',
+            'gtceu:light_concrete_cobblestone',
+            'gtceu:mossy_light_concrete_cobblestone',
+            'gtceu:polished_light_concrete',
+            'gtceu:light_concrete_bricks',
+            'gtceu:cracked_light_concrete_bricks',
+            'gtceu:mossy_light_concrete_bricks',
+            'gtceu:chiseled_light_concrete',
+            'gtceu:light_concrete_tile',
+            'gtceu:light_concrete_small_tile',
+            'gtceu:light_concrete_windmill_a',
+            'gtceu:light_concrete_windmill_b',
+            'gtceu:small_light_concrete_bricks',
+            'gtceu:square_light_concrete_bricks'
+        ]),
+        dark_concrete: group('dark_concrete', [
+            'gtceu:dark_concrete',
+            'gtceu:dark_concrete_cobblestone',
+            'gtceu:mossy_dark_concrete_cobblestone',
+            'gtceu:polished_dark_concrete',
+            'gtceu:dark_concrete_bricks',
+            'gtceu:cracked_dark_concrete_bricks',
+            'gtceu:mossy_dark_concrete_bricks',
+            'gtceu:chiseled_dark_concrete',
+            'gtceu:dark_concrete_tile',
+            'gtceu:dark_concrete_small_tile',
+            'gtceu:dark_concrete_windmill_a',
+            'gtceu:dark_concrete_windmill_b',
+            'gtceu:small_dark_concrete_bricks',
+            'gtceu:square_dark_concrete_bricks'
+
+        ]),
+        titanium_concrete: group('titanium_concrete', [
+            'tfg:titanium_concrete',
+            'tfg:polished_titanium_concrete',
+            'tfg:titanium_concrete_tile',
+            'tfg:titanium_concrete_tile_small',
+            'tfg:titanium_concrete_bricks',
+            'tfg:titanium_concrete_bricks_small',
+            'tfg:titanium_concrete_bricks_square'
+        ])
+    };
+})();
 //#endregion

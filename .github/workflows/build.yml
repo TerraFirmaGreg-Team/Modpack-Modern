@@ -34,7 +34,7 @@ jobs:
     
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0
         
@@ -229,7 +229,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0
 
@@ -313,7 +313,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: 🔄 Replace strings
         shell: bash
@@ -347,7 +347,7 @@ jobs:
           sed -i -e "s/MINECRAFT_VERSION/${MINECRAFT_VERSION}/g" .pakku/docker-overrides/docker-compose.yml
 
       - name: 📝 Cache Pakku
-        uses: actions/cache@v5.0.1
+        uses: actions/cache@v5.0.2
         id: cache
         with:
           path: build/.cache
@@ -460,7 +460,7 @@ jobs:
 
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: 📦 Download artifact
         uses: actions/download-artifact@v7.0.0

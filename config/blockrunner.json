@@ -1,11 +1,16 @@
 {
-  "schema_version": "2",
-  "minecraft:dirt_path": 1.35,
-  "#blockrunner:slow_blocks": 0.65,
-  "#blockrunner:very_slow_blocks": 0.45,
-  "#blockrunner:quick_blocks": 1.35,
-  "#blockrunner:very_quick_blocks": 1.55,
-  "#blockrunner:slightly_slow_blocks": 0.85,
-  "#blockrunner:slightly_quick_blocks": 1.15,
-  "#minecraft:stone_bricks": 1.15
+	"schema_version": "2",
+	"#tfc:paths": 1,
+	"rnr:hoggin": 1.1,
+	"rnr:hoggin_slab": 1.1,
+	"rnr:hoggin_stairs": 1.1,
+	"#rnr:gravel_road_blocks": 1.1,
+	"#rnr:overheight_gravel_blocks": 1.1,
+	"#rnr:macadam_road_blocks": 1.2,
+	"#rnr:sett_road_blocks": 1.2,
+	"#rnr:flagstones_blocks": 1.2,
+	"#rnr:cobbled_road_blocks": 1.2,
+	"#rnr:functional_concrete_roads": 1.3,
+	"#rnr:functional_concrete_road_stairs": 1.3,
+	"#rnr:functional_concrete_road_slabs": 1.3
 }

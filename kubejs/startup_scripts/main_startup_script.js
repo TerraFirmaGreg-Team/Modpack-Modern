@@ -22,6 +22,7 @@ ItemEvents.modification(event => {
 	registerGTCEuItemModifications(event)
 	registerMinecraftItemModifications(event)
     registerSNSItemModifications(event)
+	registerTFGItemModifications(event)
 })
 
 StartupEvents.registry('fluid', event => {
@@ -43,7 +44,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 	registerAE2TagPrefixes(event)
 	registerGTCEuTagPrefixes(event)
-	registerTFCTagPrefixes(event)
 	registerTFGTagPrefixes(event)
 })
 

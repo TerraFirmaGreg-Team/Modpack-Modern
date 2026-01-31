@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Кам’яна сіль: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)Лепідоліт: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Пірит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Сіль: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Сірка: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Сподумен: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Сфалерит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()",
+      "text": "$(li)Галіт: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Лепідоліт: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Пірит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Сильвін: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)Сірка: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Сподумен: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Сфалерит: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

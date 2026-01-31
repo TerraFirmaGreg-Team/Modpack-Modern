@@ -6,7 +6,7 @@
 	"effects": {
 		"additions_sound": {
 			"sound": "tfg:ambient.venus_surface.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
 		"fog_color": 9938052,
 		"sky_color": 10465603,
@@ -24,6 +24,14 @@
 				"type": "minecraft:ash"
 			},
 			"probability": 0.05
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.venus"
+			}
 		}
 	},
 	"features": [

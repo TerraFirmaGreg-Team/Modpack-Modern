@@ -13,19 +13,6 @@ const registerAE2ItemTags = (event) => {
 
     event.removeAll('ae2:p2p_attunements/fe_p2p_tunnel')
     
-    event.add('tfg:certus_quartz_blocks', 'gtceu:certus_quartz_block')
-    event.add('tfg:certus_quartz_blocks', 'ae2:quartz_block')
-    event.add('tfg:certus_quartz_blocks', 'ae2:cut_quartz_block')
-	event.add('tfg:certus_quartz_blocks', 'ae2:smooth_quartz_block')
-	event.add('tfg:certus_quartz_blocks', 'ae2:quartz_bricks')
-	event.add('tfg:certus_quartz_blocks', 'ae2:quartz_pillar')
-	event.add('tfg:certus_quartz_blocks', 'ae2:chiseled_quartz_block')
-
-    event.add('tfg:sky_stone_blocks', 'ae2:sky_stone_block')
-    event.add('tfg:sky_stone_blocks', 'ae2:smooth_sky_stone_block')
-    event.add('tfg:sky_stone_blocks', 'ae2:sky_stone_brick')
-    event.add('tfg:sky_stone_blocks', 'ae2:sky_stone_small_brick')
-    
     event.add('tfg:stone_dusts', 'ae2:sky_dust')
 
     event.add('tfg:reactant_fluix_ruby', 'gtceu:ruby_gem')

@@ -92,7 +92,6 @@
 		{
 			dependencies: [
 				"601088B7920140B2"
-				"3FBDC8552F7D8008"
 				"3B18DE7395776B41"
 			]
 			description: ["{quests.extreme_voltage.t2_rocket.desc}"]
@@ -905,7 +904,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:mars_stone_dusts)"
+							"ftbfiltersystem:filter": "item_tag(forge:dusts/ochrum)"
 						}
 					}
 					type: "item"

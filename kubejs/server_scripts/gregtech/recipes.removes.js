@@ -391,6 +391,8 @@ function removeGTCEURecipes(event) {
 	//#region Выход: Бумажная пыль
 
 	event.remove({ id: 'gtceu:shaped/paper_dust' })
+	event.remove({ id: 'gtceu:shaped_fluid_container/paper' })
+	event.remove({ id: 'gtceu:macerator/macerate_enchanting_table' })
 
 	//#endregion
 
@@ -474,9 +476,10 @@ function removeGTCEURecipes(event) {
 
 	//#endregion
 
-		//#region Выход: Слиток камня
+	//#region Выход: Слиток камня
 
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot' })
+	event.remove({ id: 'gtceu:alloy_smelter/tinted_glass' })
 
 	//#endregion
 
@@ -723,7 +726,7 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_marble')
 	removeMaceratorRecipe(event, 'macerate_red_granite')
-
+	removeMaceratorRecipe(event, 'macerate_calcite')
 	removeMaceratorRecipe(event, 'macerate_wool')
 
 	removeMaceratorRecipe(event, 'macerate_enchanting_table')
@@ -778,6 +781,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_red_granite_cobblestone_from_vine' })
 
 	event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
+	event.remove({ id: 'gtceu:extractor/extract_sodium_hydroxide_dust' })
 
 	// who the hell is grinding metal ingots with their bare hands?
 	event.remove({ id: 'gtceu:shaped/mortar_grind_antimony' })
@@ -829,6 +833,25 @@ function removeGTCEURecipes(event) {
 	// Remove old treated plank and wood plank recipe
 
 	event.remove({ id: 'gtceu:compressor/compress_plate_dust_wood' })
+
+	// Remove Netherrack dust centrifuging
+
+	event.remove({ id: 'gtceu:centrifuge/netherrack_separation' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__granite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__diorite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__andesite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__marble' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__redrock' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__deepslate' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blackstone' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__endstone' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__red_granite' })
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__basalt' })
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_tuff' })
+
+	removeMaceratorRecipe(event, 'macerate_end_stone');
+	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
+	removeMaceratorRecipe(event, 'macerate_end_stone_brick_wall');
 
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
@@ -884,6 +907,10 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:macerator/macerate_smooth_sandstone' })
 	event.remove({ id: 'gtceu:macerator/macerate_sandstone' })
 	event.remove({ id: 'gtceu:macerator/macerate_cut_sandstone' })
+
+	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
+
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_magnesia_refractory_brick_to_nugget' })
 }
 
 function removeMaceratorRecipe(event, id) {

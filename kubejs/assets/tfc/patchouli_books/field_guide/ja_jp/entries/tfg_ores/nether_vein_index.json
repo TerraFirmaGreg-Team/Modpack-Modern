@@ -24,12 +24,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 230$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 45$(br)$(thing)Height$(): 8$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br)$(thing)Height$(): 8$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Amethyst, Opal, & Garnet",
       "type": "patchouli:text",
       "anchor": "nether_garnet"
@@ -121,7 +121,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 35$(br)$(thing)Density$(): 0.8$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Size$(): 13$(br)$(thing)Height$(): 4$(br2)$(thing)Stone Types$(): Migmatite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/35 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 80%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 48 — 127$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 13$(br)$(thing)Height$(): 4$(br2)$(thing)Stone Types$(): Migmatite",
       "title": "Anthracite",
       "type": "patchouli:text",
       "anchor": "nether_anthracite"
@@ -148,7 +148,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Size$(): 39$(br2)$(thing)Stone Types$(): Gneiss, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 48 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 39$(br2)$(thing)Stone Types$(): Gneiss, Schist",
       "title": "Apatite & Pyrochlore",
       "type": "patchouli:text",
       "anchor": "nether_apatite"
@@ -215,7 +215,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 245$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/245 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 24 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Bastnasite & Monazite",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -282,7 +282,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 31$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 24 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 31$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Bentonite & Olivine",
       "type": "patchouli:text",
       "anchor": "nether_olivine"
@@ -374,7 +374,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Cassiterite",
       "type": "patchouli:text",
       "anchor": "nether_cassiterite"
@@ -396,7 +396,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 60%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
+      "text": "$(thing)Percentage$(): 54%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): Sn",
       "type": "patchouli:multiblock"
     },
     {
@@ -416,17 +416,32 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 40%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
+      "text": "$(thing)Percentage$(): 36%$(br)$(thing)Melts into$(): Tin$(br)$(thing)Formula$(): SnO₂",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Saltpeter",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 9%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)Formula$(): KNO₃",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 205$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 39$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/205 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 39$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Chromite",
       "type": "patchouli:text",
       "anchor": "nether_magnetite"
@@ -533,7 +548,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 35$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Cooperite & Bornite",
       "type": "patchouli:text",
       "anchor": "nether_sheldonite"
@@ -625,7 +640,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Copper & Chalcopyrite",
       "type": "patchouli:text",
       "anchor": "nether_copper"
@@ -717,7 +732,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/300 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Emerald & Beryllium",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"
@@ -764,7 +779,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Rock Salt",
+      "name": "Sylvite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -779,12 +794,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 18%$(br)$(thing)Source of$(): Potassium, Chlorine$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Percentage$(): 18%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Thorium",
+      "name": "Thorianite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/thorium"
@@ -799,7 +814,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 0%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): Th",
+      "text": "$(thing)Percentage$(): 0%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): ThO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -809,7 +824,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 270$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Pyroxenite, Schist, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/270 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 24 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Pyroxenite, Schist, Travertine",
       "title": "Garnet & Cassiterite Sands",
       "type": "patchouli:text",
       "anchor": "nether_garnet_tin"
@@ -901,7 +916,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 16 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Pyroxenite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 16 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Pyroxenite",
       "title": "Garnierite & Cobaltite",
       "type": "patchouli:text",
       "anchor": "nether_garnierite"
@@ -1008,7 +1023,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 240$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 37$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/240 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 37$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Goethite",
       "type": "patchouli:text",
       "anchor": "nether_goethite"
@@ -1100,7 +1115,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 260$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 37$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/260 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 55%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 37$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Gold & Hematite",
       "type": "patchouli:text",
       "anchor": "nether_gold"
@@ -1192,7 +1207,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 120$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Pipe Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
@@ -1259,7 +1274,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 40$(br)$(thing)Height$(): 9$(br2)$(thing)Stone Types$(): Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br)$(thing)Height$(): 9$(br2)$(thing)Stone Types$(): Migmatite, Pyroxenite, Travertine",
       "title": "Gypsum & Calcite",
       "type": "patchouli:text",
       "anchor": "nether_gypsum"
@@ -1351,7 +1366,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 35$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Hematite & Limonite",
       "type": "patchouli:text",
       "anchor": "nether_hematite"
@@ -1458,7 +1473,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 41$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 41$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Kyanite, Mica, & Bauxite",
       "type": "patchouli:text",
       "anchor": "nether_mica"
@@ -1525,7 +1540,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 220$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 40$(br2)$(thing)Stone Types$(): Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 40$(br2)$(thing)Stone Types$(): Migmatite, Pyroxenite, Travertine",
       "title": "Lapis, Lazurite, & Sodalite",
       "type": "patchouli:text",
       "anchor": "nether_lapis"
@@ -1617,7 +1632,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 225$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/225 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Manganese & Tantalum",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -1709,7 +1724,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 48 — 128$(br)$(thing)Size$(): 48$(br)$(thing)Height$(): 9$(br2)$(thing)Stone Types$(): Basalt, Granite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 48 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 48$(br)$(thing)Height$(): 9$(br2)$(thing)Stone Types$(): Basalt, Granite",
       "title": "Mineral Sands",
       "type": "patchouli:text",
       "anchor": "nether_basaltic_sands"
@@ -1801,7 +1816,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 200$(br)$(thing)Density$(): 0.7$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 38$(br)$(thing)Size$(): 32$(br2)$(thing)Stone Types$(): Basalt, Pyroxenite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/200 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 70%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 38$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 32$(br2)$(thing)Stone Types$(): Basalt, Pyroxenite",
       "title": "Naquadah",
       "type": "patchouli:text",
       "anchor": "nether_naquadah"
@@ -1828,7 +1843,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 150$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Diorite, Gabbro, Granite, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/150 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Basalt, Diorite, Gabbro, Granite, Migmatite, Pyroxenite, Travertine",
       "title": "Nether Quartz",
       "type": "patchouli:text",
       "anchor": "nether_quartz"
@@ -1855,7 +1870,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Quartzite",
+      "name": "Quartz",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/quartzite"
@@ -1895,7 +1910,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Granite, Pyroxenite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Granite, Pyroxenite",
       "title": "Redstone, Cinnabar, & Ruby",
       "type": "patchouli:text",
       "anchor": "nether_redstone"
@@ -1962,7 +1977,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 210$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 50$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/210 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Saltpeter & Electrotine",
       "type": "patchouli:text",
       "anchor": "nether_saltpeter"
@@ -2054,7 +2069,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 33$(br)$(thing)Height$(): 8$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 33$(br)$(thing)Height$(): 8$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Sapphire & Almandine",
       "type": "patchouli:text",
       "anchor": "nether_sapphire"
@@ -2146,7 +2161,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.45$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 25$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Scheelite & Tungstate",
       "type": "patchouli:text",
       "anchor": "nether_scheelite"
@@ -2213,7 +2228,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 160$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 24 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Gneiss, Granite, Pyroxenite",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/160 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 24 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Gneiss, Granite, Pyroxenite",
       "title": "Silver, Galena, & Lead",
       "type": "patchouli:text",
       "anchor": "nether_silver"
@@ -2280,7 +2295,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.35$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 41$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 41$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Soapstone, Talc, & Trona",
       "type": "patchouli:text",
       "anchor": "nether_lubricant"
@@ -2387,7 +2402,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Sphalerite & Pyrite",
       "type": "patchouli:text",
       "anchor": "nether_sphalerite"
@@ -2454,7 +2469,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 165$(br)$(thing)Density$(): 0.3$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 50$(br2)$(thing)Stone Types$(): Basalt, Diorite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/165 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 50$(br2)$(thing)Stone Types$(): Basalt, Diorite, Pyroxenite, Schist",
       "title": "Sulfur & Pyrite",
       "type": "patchouli:text",
       "anchor": "nether_sulfur"
@@ -2521,34 +2536,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 75$(br)$(thing)Density$(): 0.6$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 64$(br)$(thing)Size$(): 17$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Pyroxenite",
-      "title": "Sylvite",
-      "type": "patchouli:text",
-      "anchor": "nether_sylvite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Sylvite",
-      "multiblock": {
-        "mapping": {
-          "0": "beneath:ore/blackstone_sylvite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fertiliser$(br)$(thing)Formula$(): KCl",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 170$(br)$(thing)Density$(): 0.5$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Size$(): 45$(br2)$(thing)Stone Types$(): Gneiss, Migmatite, Pyroxenite, Schist, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/170 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 50%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 45$(br2)$(thing)Stone Types$(): Gneiss, Migmatite, Pyroxenite, Schist, Travertine",
       "title": "Tetrahedrite",
       "type": "patchouli:text",
       "anchor": "nether_tetrahedrite"
@@ -2615,7 +2603,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 180$(br)$(thing)Density$(): 0.4$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 33$(br)$(thing)Height$(): 7$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/180 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 33$(br)$(thing)Height$(): 7$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Topaz & Chalcocite",
       "type": "patchouli:text",
       "anchor": "nether_topaz"
@@ -2707,7 +2695,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 250$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 24$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 55%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 24$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Uraninite & Pitchblende",
       "type": "patchouli:text",
       "anchor": "nether_pitchblende"
@@ -2729,7 +2717,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 62%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 62%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2749,7 +2737,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)$()",
+      "text": "$(thing)Percentage$(): 25%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2774,7 +2762,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Rarity$(): 245$(br)$(thing)Density$(): 0.55$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 128$(br)$(thing)Size$(): 31$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/245 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 55%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 31$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
       "title": "Wulfenite & Molybdenite",
       "type": "patchouli:text",
       "anchor": "nether_molybdenum"

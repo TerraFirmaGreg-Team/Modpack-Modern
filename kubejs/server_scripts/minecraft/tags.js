@@ -35,14 +35,15 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:bells', 'minecraft:bell')
 
-    event.add('tfc:hematitic_sand', 'minecraft:red_sand')
-
     event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
     event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
 	
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
+	event.add("tfg:rubber_plants", "minecraft:spore_blossom")
+
+    event.add('tfg:stonecutting/crackrack', 'minecraft:nether_brick_fence')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -57,4 +58,5 @@ const registerMinecraftBlockTags = (event) => {
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
     
+    event.add('minecraft:mineable/pickaxe', 'minecraft:glowstone')
 }

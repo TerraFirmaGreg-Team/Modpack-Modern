@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)岩盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)锂云母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)锂辉石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)闪锌矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄铁矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()",
+      "text": "$(li)石鹽: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)钾石盐: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)锂云母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)锂辉石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)闪锌矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄铁矿: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

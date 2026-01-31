@@ -6,6 +6,7 @@
  */
 const registerTFGRecipes = (event) => {
 	
+	registerTFGMaterialRecipes(event)
 	registerTFGMoldRecipes(event)
 	registerTFGMiscellaneousRecipes(event)
 	registerTFGTemporaryRecipes(event)
@@ -14,6 +15,9 @@ const registerTFGRecipes = (event) => {
 	registerTFGRefrigeratorRecipes(event)
 	registerTFGMealBagRecipes(event)
 	registerTFGBiomassRecipes(event)
+	// Greenhouse needs to register before pisciculture.
+	registerTFGGreenhouseRecipes(event)
+	registerTFGPiscicultureRecipes(event)
 
 	// TFC stone types
 	registerTFCStoneRecipes(event)
@@ -45,6 +49,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGClayRecipes(event)
 	registerTFGEquipmentRecipes(event)
 	registerTFGDyeRecipes(event)
+	registerTFGArtisanTableRecipes(event)
 
 	registerTFGCasingRecipes(event)
 	registerTFGCircuitRecipes(event)
@@ -52,6 +57,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGMultiblockRecipes(event)
 	registerTFGSteamBloomeryRecipes(event)
 	registerTFGElectronicComponentsRecipes(event)
+	registerTFGBakeliteRecipes(event)
+	registerTFGCoilRecipes(event)
 
 	registerTFGEarlyGasRecipes(event)
 	registerTFGBoilerRecipes(event)

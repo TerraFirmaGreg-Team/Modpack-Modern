@@ -38,7 +38,13 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:bucket/chocolate',
     'firmalife:bucket/fruity_fluid',
     'firmalife:bucket/metal/chromium',
-    'firmalife:bucket/metal/stainless_steel'
+    'firmalife:bucket/metal/stainless_steel',
+
+    // Unimplemented
+    'firmalife:food/frothy_coconut',
+    'firmalife:cinnamon_bark',
+    'firmalife:spice/cinnamon',
+    'firmalife:spice/ground_cinnamon'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [
@@ -101,13 +107,12 @@ global.FIRMALIFE_JAMS = [
 ]
 
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
-    { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },
-    { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' }
-];
-
-global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
-    { input: 'firmalife:plant/pineapple_bush', fluid_amount: 6000, output: '3x firmalife:food/pineapple', name: 'pineapple' },
-    { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' }
+    { input: 'firmalife:plant/cocoa_sapling', output: 'firmalife:food/cocoa_beans'},
+    { input: 'firmalife:plant/fig_sapling', output: 'firmalife:food/fig'},
+    { input: 'firmalife:plant/pineapple_bush', output: 'firmalife:food/pineapple'},
+    { input: 'firmalife:plant/nightshade_bush', output: 'firmalife:food/nightshade_berry'},
+    { input: 'firmalife:seeds/red_grape', output: 'firmalife:food/red_grapes'},
+    { input: 'firmalife:seeds/white_grape', output: 'firmalife:food/white_grapes'}
 ];
 
 global.FIRMALIFE_COOKING_RECIPE_COMPONENTS = [

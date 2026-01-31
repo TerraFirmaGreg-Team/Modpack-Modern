@@ -3,60 +3,17 @@
 
 function removeTFCRecipes(event) {
 
-	// Удаление рецептов руд TFC
-	event.remove({ id: /tfc:heating\/ore\/poor_*/ })
-	event.remove({ id: /tfc:heating\/ore\/normal_*/ })
-	event.remove({ id: /tfc:heating\/ore\/rich_*/ })
+	global.TFC_DISABLED_ITEMS.forEach(item => {
+		event.remove({ output: item })
+	})
 
-	// Удаление рецептов блоков
+	event.remove({ mod: 'tfc', type: 'tfc:welding' })
+	event.remove({ id: /tfc:heating\/metal\/*/ })
+	event.remove({ id: /tfc:heating\/ore\/*/ })
+
 	event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block/ })
-
-	// Удаление рецептов ступеней
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_stairs/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block_stairs/ })
-
-	// Удалание рецептов полублоков
 	event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
-	event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
-
-	//#region Удаление рецептов для предметов из Cast Iron
-
-	// Блок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block` })
-
-	// Ступень
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_stairs` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_stairs` })
-
-	// Полублок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_slab` })
-
-	// Слиток
-	event.remove({ id: `tfc:casting/cast_iron_ingot` })
-	event.remove({ id: `tfc:casting/cast_iron_fire_ingot` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_ingot` })
-	event.remove({ id: `tfc:welding/cast_iron_double_ingot` })
-	event.remove({ id: `tfc:anvil/cast_iron_rod` })
-
-	// Двойной слиток
-	event.remove({ id: `tfc:heating/metal/cast_iron_double_ingot` })
-	event.remove({ id: `tfc:anvil/cast_iron_sheet` })
-
-	// Пластина
-	event.remove({ id: `tfc:heating/metal/cast_iron_sheet` })
-	event.remove({ id: `tfc:welding/cast_iron_double_sheet` })
-
-	// Двойная пластина
-	event.remove({ id: `tfc:heating/metal/cast_iron_double_sheet` })
-
-	// Стержень
-	event.remove({ id: `tfc:heating/metal/cast_iron_rod` })
-
-	//#endregion
-
 
 	// #region Удаление рецептов
 	event.remove({ id: 'tfc:quern/amethyst' })
@@ -73,6 +30,18 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:quern/graphite' })
 	event.remove({ id: 'tfc:quern/lapis_lazuli' })
 	event.remove({ id: 'tfc:quern/lapis_lazuli_cut' })
+	event.remove({ id: 'tfc:quern/small_bismuthinite' })
+	event.remove({ id: 'tfc:quern/small_cassiterite' })
+	event.remove({ id: 'tfc:quern/small_garnierite' })
+	event.remove({ id: 'tfc:quern/small_hematite' })
+	event.remove({ id: 'tfc:quern/small_limonite' })
+	event.remove({ id: 'tfc:quern/small_magnetite' })
+	event.remove({ id: 'tfc:quern/small_malachite' })
+	event.remove({ id: 'tfc:quern/small_native_copper' })
+	event.remove({ id: 'tfc:quern/small_native_gold' })
+	event.remove({ id: 'tfc:quern/small_native_silver' })
+	event.remove({ id: 'tfc:quern/small_sphalerite' })
+	event.remove({ id: 'tfc:quern/small_tetrahedrite' })
 	event.remove({ id: 'tfc:quern/normal_bismuthinite' })
 	event.remove({ id: 'tfc:quern/normal_cassiterite' })
 	event.remove({ id: 'tfc:quern/normal_garnierite' })
@@ -145,7 +114,7 @@ function removeTFCRecipes(event) {
 	event.remove({ id: `tfc:crafting/crankshaft` })
 	event.remove({ id: 'tfc:crafting/sandpaper' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/observer' })
-
+	event.remove({ id: 'tfc:crafting/vanilla/brick_stairs' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
 	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
 	event.remove({ id: 'tfc:crafting/cake' })
@@ -161,4 +130,11 @@ function removeTFCRecipes(event) {
 	event.remove({ output: 'tfc:rustic_windmill_blade'})
 	event.remove({ output: 'tfc:lattice_windmill_blade'})
 	event.remove({ id: 'tfchotornot:heating/insulating_items'})
+
+	event.remove({ id: 'tfc:heating/metal/weak_blue_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_blue_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_blue_steel_fire_ingot' })
+	event.remove({ id: 'tfc:heating/metal/weak_red_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_red_steel_ingot' })
+	event.remove({ id: 'tfc:casting/weak_red_steel_fire_ingot' })
 }

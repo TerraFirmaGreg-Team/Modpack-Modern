@@ -1,6 +1,7 @@
 {
 	"ingredient": "gtceu:methanol",
 	"thirst": 5,
+	"may_drink_when_full": true,
 	"effects": [
 		{
 			"type": "minecraft:blindness",

@@ -6,7 +6,7 @@
 	"effects": {
 		"additions_sound": {
 			"sound": "tfg:ambient.upper_nether.additions",
-			"tick_chance": 0.0111
+			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.upper_nether_lush.loop",
 		"fog_color": 7369031,
@@ -20,7 +20,9 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.swamp"
+			"sound": {
+				"sound_id": "tfg:music.nether"
+			}
 		},
 		"sky_color": 7369031,
 		"water_color": 6388580,

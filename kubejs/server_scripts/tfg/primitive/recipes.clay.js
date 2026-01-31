@@ -43,6 +43,7 @@ function registerTFGClayRecipes(event) {
 		{ input: "tfc:ceramic/unfired_spindle_head", output: "tfc:ceramic/spindle_head", name: "spindle_head" },
 		{ input: "tfc:ceramic/unfired_vessel", output: "tfc:ceramic/vessel", name: "vessel" },
 		{ input: "tfc:ceramic/unfired_large_vessel", output: "tfc:ceramic/large_vessel", name: "large_vessel" },
+		{ input: "tfcscraping:ceramic/unfired_scraping_knife_blade_mold", output: "tfcscraping:ceramic/scraping_knife_blade_mold", name: "scraping_knife" },
 		{ input: "tfcchannelcasting:unfired_channel", output: "tfcchannelcasting:channel", name: "channel" },
 		{ input: "tfcchannelcasting:unfired_mold_table", output: "tfcchannelcasting:mold_table", name: "mold_table" },
 		{ input: "firmalife:oven_top", output: "firmalife:cured_oven_top", name: "oven_top" },
@@ -187,24 +188,18 @@ function registerTFGClayRecipes(event) {
 		.duration(20)
 		.EUt(2)
 
-	event.recipes.gtceu.macerator('tfg:casting_channel')
-		.itemInputs('tfcchannelcasting:channel')
-		.itemOutputs('1x #forge:dusts/brick')
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.duration(20)
-		.EUt(2)
-
-	event.recipes.gtceu.macerator('tfg:mold_table')
-		.itemInputs('tfcchannelcasting:mold_table')
-		.itemOutputs('5x #forge:dusts/brick')
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.duration(20)
-		.EUt(2)
+	var refractoryClay = GTMaterials.get('tfg:refractory_clay');
+	TFGHelpers.registerMaterialInfo('tfc:blast_furnace', [GTMaterials.WroughtIron, 16, refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:fire_bricks', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:crucible', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_brick', [refractoryClay, 1])
+	TFGHelpers.registerMaterialInfo('tfcchannelcasting:channel', [refractoryClay, 5/4])
+	TFGHelpers.registerMaterialInfo('tfcchannelcasting:mold_table', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfc:ceramic/fire_ingot_mold', [refractoryClay, 5/2])
+	TFGHelpers.registerMaterialInfo('tfg:rod_mold', [refractoryClay, 5])
+	TFGHelpers.registerMaterialInfo('tfg:small_gear_mold', [refractoryClay, 5])
 
 	// Renewable clay
-	
-	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_clay' })
-
 	event.recipes.gtceu.rock_breaker("clay_duping")
 		.notConsumable('minecraft:clay')
 		.itemOutputs('minecraft:clay')

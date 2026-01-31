@@ -121,20 +121,20 @@ function registerGreateRecipes(event) {
 	})
 
 
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_gearbox', { 'wood': 1, 'wrought_iron': 1 });
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1]);
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_vertical_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1]);
 
-	TFGHelpers.registerMaterialInfo('greate:steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
-	TFGHelpers.registerMaterialInfo('greate:steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'steel': 4/9 });
+	TFGHelpers.registerMaterialInfo('greate:steel_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Steel, 4/9]);
+	TFGHelpers.registerMaterialInfo('greate:steel_vertical_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Steel, 4/9]);
 
-	TFGHelpers.registerMaterialInfo('greate:aluminium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
-	TFGHelpers.registerMaterialInfo('greate:aluminium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'aluminium': 4/9 });
+	TFGHelpers.registerMaterialInfo('greate:aluminium_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Aluminium, 4/9]);
+	TFGHelpers.registerMaterialInfo('greate:aluminium_vertical_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Aluminium, 4/9]);
 
-	TFGHelpers.registerMaterialInfo('greate:stainless_steel_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
-	TFGHelpers.registerMaterialInfo('greate:stainless_steel_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'stainless_steel': 4/9 });
+	TFGHelpers.registerMaterialInfo('greate:stainless_steel_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.StainlessSteel, 4/9]);
+	TFGHelpers.registerMaterialInfo('greate:stainless_steel_vertical_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.StainlessSteel, 4/9]);
 
-	TFGHelpers.registerMaterialInfo('greate:titanium_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });
-	TFGHelpers.registerMaterialInfo('greate:titanium_vertical_gearbox', { 'wood': 1, 'wrought_iron': 1, 'titanium': 4/9 });
+	TFGHelpers.registerMaterialInfo('greate:titanium_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Titanium, 4/9]);
+	TFGHelpers.registerMaterialInfo('greate:titanium_vertical_gearbox', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Titanium, 4/9]);
 
 	// #endregion
 
@@ -147,8 +147,8 @@ function registerGreateRecipes(event) {
 	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_cogwheel', '#forge:small_gears/wood'])
 		.id('tfg:shapeless/large_andesite_alloy_cogwheel_upgrade');
 
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_cogwheel', { 'wood': 1 });
-	TFGHelpers.registerMaterialInfo('greate:large_andesite_alloy_cogwheel', { 'wood': 2 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_cogwheel', [GTMaterials.Wood, 1]);
+	TFGHelpers.registerMaterialInfo('greate:large_andesite_alloy_cogwheel', [GTMaterials.Wood, 2]);
 
 	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron'])
 		.id('tfg:shapeless/steel_cogwheel')
@@ -157,8 +157,8 @@ function registerGreateRecipes(event) {
 	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_cogwheel', '#forge:small_gears/wrought_iron'])
 		.id('tfg:shapeless/large_steel_cogwheel_upgrade');
 
-	TFGHelpers.registerMaterialInfo('greate:steel_cogwheel', { 'wrought_iron': 1, 'steel': 1/9 });
-	TFGHelpers.registerMaterialInfo('greate:large_steel_cogwheel', { 'wrought_iron': 2, 'steel': 1/9 });
+	TFGHelpers.registerMaterialInfo('greate:steel_cogwheel', [GTMaterials.WroughtIron, 1, GTMaterials.Steel, 1/9]);
+	TFGHelpers.registerMaterialInfo('greate:large_steel_cogwheel', [GTMaterials.WroughtIron, 2, GTMaterials.Steel, 1/9]);
 
 	event.shapeless('greate:aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel'])
 		.id('tfg:shapeless/aluminium_cogwheel')
@@ -167,8 +167,8 @@ function registerGreateRecipes(event) {
 	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_cogwheel', '#forge:small_gears/steel'])
 		.id('tfg:shapeless/large_aluminium_cogwheel_upgrade');
 
-	TFGHelpers.registerMaterialInfo('greate:aluminium_cogwheel', { 'steel': 1, 'aluminium': 1/9 });
-	TFGHelpers.registerMaterialInfo('greate:large_aluminium_cogwheel', { 'steel': 2, 'aluminium': 1/9 });
+	TFGHelpers.registerMaterialInfo('greate:aluminium_cogwheel', [GTMaterials.Steel, 1, GTMaterials.Aluminium, 1/9]);
+	TFGHelpers.registerMaterialInfo('greate:large_aluminium_cogwheel', [GTMaterials.Steel, 2, GTMaterials.Aluminium, 1/9]);
 
 	event.shapeless('greate:stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium'])
 		.id('tfg:shapeless/stainless_steel_cogwheel')
@@ -177,8 +177,8 @@ function registerGreateRecipes(event) {
 	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_cogwheel', '#forge:small_gears/aluminium'])
 		.id('tfg:shapeless/large_stainless_steel_cogwheel_upgrade');
 
-	TFGHelpers.registerMaterialInfo('greate:stainless_steel_cogwheel', { 'aluminium': 1, 'stainless_steel': 1/9 });
-	TFGHelpers.registerMaterialInfo('greate:large_stainless_steel_cogwheel', { 'aluminium': 2, 'stainless_steel': 1/9 });
+	TFGHelpers.registerMaterialInfo('greate:stainless_steel_cogwheel', [GTMaterials.Aluminium, 1, GTMaterials.StainlessSteel, 1/9]);
+	TFGHelpers.registerMaterialInfo('greate:large_stainless_steel_cogwheel', [GTMaterials.Aluminium, 2, GTMaterials.StainlessSteel, 1/9]);
 
 	event.shapeless('greate:titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel'])
 		.id('tfg:shapeless/titanium_cogwheel')
@@ -187,8 +187,8 @@ function registerGreateRecipes(event) {
 	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_cogwheel', '#forge:small_gears/stainless_steel'])
 		.id('tfg:shapeless/large_titanium_cogwheel_upgrade');
 
-	TFGHelpers.registerMaterialInfo('greate:titanium_cogwheel', { 'stainless_steel': 1, 'titanium': 1/9 });
-	TFGHelpers.registerMaterialInfo('greate:large_titanium_cogwheel', { 'stainless_steel': 2, 'titanium': 1/9 });
+	TFGHelpers.registerMaterialInfo('greate:titanium_cogwheel', [GTMaterials.StainlessSteel, 1, GTMaterials.Titanium, 1/9]);
+	TFGHelpers.registerMaterialInfo('greate:large_titanium_cogwheel', [GTMaterials.StainlessSteel, 2, GTMaterials.Titanium, 1/9]);
 
 	// #endregion
 
@@ -230,7 +230,7 @@ function registerGreateRecipes(event) {
 		E: '#forge:tools/saws'
 	}).id('greate:shaped/andesite_alloy_millstone3')
 
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_millstone', { 'stone': 9 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_millstone', [GTMaterials.Stone, 9]);
 
 	event.shaped('greate:steel_millstone', [
 		'FBF',
@@ -327,7 +327,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:gems/diamond'
 	}).id('greate:steel_crushing_wheel')
 
-	TFGHelpers.registerMaterialInfo('greate:steel_crushing_wheel', { 'wrought_iron': 14, 'tin_alloy': 8, 'steel': 4, 'diamond': 4 });
+	TFGHelpers.registerMaterialInfo('greate:steel_crushing_wheel', [GTMaterials.WroughtIron, 14, GTMaterials.TinAlloy, 8, GTMaterials.Steel, 4, GTMaterials.Diamond, 4]);
 
 	event.recipes.createMechanicalCrafting('2x greate:aluminium_crushing_wheel', [
 		' AAA ',
@@ -342,7 +342,7 @@ function registerGreateRecipes(event) {
 		D: '#forge:gems/diamond'
 	}).id('greate:aluminium_crushing_wheel')
 
-	TFGHelpers.registerMaterialInfo('greate:aluminium_crushing_wheel', { 'steel': 14, 'vanadium_steel': 8, 'aluminium': 4, 'diamond': 4 });
+	TFGHelpers.registerMaterialInfo('greate:aluminium_crushing_wheel', [GTMaterials.Steel, 14, GTMaterials.VanadiumSteel, 8, GTMaterials.Aluminium, 4, GTMaterials.Diamond, 4]);
 
 	event.recipes.createMechanicalCrafting('2x greate:stainless_steel_crushing_wheel', [
 		' AAA ',
@@ -357,7 +357,7 @@ function registerGreateRecipes(event) {
 		D: 'gtceu:diamond_grinding_head'
 	}).id('greate:stainless_steel_crushing_wheel')
 	
-	TFGHelpers.registerMaterialInfo('greate:stainless_steel_crushing_wheel', { 'aluminium': 14, 'blue_alloy': 8, 'stainless_steel': 4, 'steel': 32, 'diamond': 20 });
+	TFGHelpers.registerMaterialInfo('greate:stainless_steel_crushing_wheel', [GTMaterials.Aluminium, 4, GTMaterials.BlueAlloy, 8, GTMaterials.StainlessSteel, 4, GTMaterials.Steel, 32, GTMaterials.Diamond, 20]);
 
 	event.recipes.createMechanicalCrafting('2x greate:titanium_crushing_wheel', [
 		' AAA ',
@@ -372,7 +372,7 @@ function registerGreateRecipes(event) {
 		D: 'gtceu:diamond_grinding_head'
 	}).id('greate:titanium_crushing_wheel')
 
-	TFGHelpers.registerMaterialInfo('greate:titanium_crushing_wheel', { 'stainless_steel': 14, 'ultimet': 8, 'titanium': 4, 'steel': 32, 'diamond': 20 });
+	TFGHelpers.registerMaterialInfo('greate:titanium_crushing_wheel', [GTMaterials.StainlessSteel, 14, GTMaterials.Ultimet, 8, GTMaterials.Titanium, 4, GTMaterials.Steel, 32, GTMaterials.Diamond, 20]);
 
 	// #endregion
 
@@ -481,7 +481,7 @@ function registerGreateRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_mechanical_saw', { 'wood': 1, 'wrought_iron': 3 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_mechanical_saw', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('greate:steel_mechanical_saw', [
 		'ABA',
@@ -651,7 +651,7 @@ function registerGreateRecipes(event) {
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy_belt_connector' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_belt_connector', { 'wood': 1 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_belt_connector', [GTMaterials.Wood, 1]);
 
 	// Leather
 	event.recipes.tfc.damage_inputs_shaped_crafting(
@@ -674,7 +674,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
 	event.remove({ id: 'greate:shaped/stone_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', { 'air': 1 });
+	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', [GTMaterials.Air, 1]);
 	
 	// Rubber
 	event.shaped('greate:rubber_belt_connector', [
@@ -698,7 +698,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_rubber_belt_connector' })
 	
-	TFGHelpers.registerMaterialInfo('greate:rubber_belt_connector', { 'rubber': 3 });
+	TFGHelpers.registerMaterialInfo('greate:rubber_belt_connector', [GTMaterials.Rubber, 3]);
 
 	// Silicone rubber
 	event.shaped('greate:silicone_rubber_belt_connector', [
@@ -722,7 +722,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_silicone_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_silicone_rubber_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:silicone_rubber_belt_connector', { 'silicone_rubber': 3 });
+	TFGHelpers.registerMaterialInfo('greate:silicone_rubber_belt_connector', [GTMaterials.SiliconeRubber, 3]);
 
 	// SBR rubber
 	event.shaped('greate:styrene_butadiene_rubber_belt_connector', [
@@ -746,7 +746,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_styrene_butadiene_rubber_belt_connector')
 	event.remove({ id: 'gtceu:extractor/extract_styrene_butadiene_rubber_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:styrene_butadiene_rubber_belt_connector', { 'styrene_butadiene_rubber': 3 });
+	TFGHelpers.registerMaterialInfo('greate:styrene_butadiene_rubber_belt_connector', [GTMaterials.StyreneButadieneRubber, 3]);
 	// #endregion
 
 	// #region Mixer
@@ -757,7 +757,7 @@ function registerGreateRecipes(event) {
 		'FEG'
 	], {
 		A: '#gtceu:circuits/ulv',
-		B: 'greate:steel_shaft',
+		B: '#forge:small_gears/blue_steel',
 		C: 'gtceu:ulv_machine_hull',
 		D: '#forge:plates/black_steel',
 		E: 'gtceu:steel_whisk',
@@ -766,7 +766,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/steel_mechanical_mixer')
 
 	event.recipes.gtceu.assembler('greate:steel_mechanical_mixer')
-		.itemInputs('greate:steel_shaft', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
+		.itemInputs('#forge:small_gears/blue_steel', '2x #gtceu:circuits/ulv', 'gtceu:ulv_machine_hull', 'gtceu:steel_whisk', '2x #forge:plates/black_steel')
 		.itemOutputs('greate:steel_mechanical_mixer')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -1035,7 +1035,7 @@ function registerGreateRecipes(event) {
 		F: 'greate:andesite_alloy_shaft'
 	}).id('greate:shaped/andesite_alloy_mechanical_press')
 	
-	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_mechanical_press', { 'iron': 2 });
+	TFGHelpers.registerMaterialInfo('greate:andesite_alloy_mechanical_press', [GTMaterials.Iron, 2]);
 
 	event.shaped('greate:steel_mechanical_press', [
 		' AD',
