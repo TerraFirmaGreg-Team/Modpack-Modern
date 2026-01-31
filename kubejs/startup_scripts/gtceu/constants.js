@@ -177,7 +177,8 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:molten_vanadium_steel_bucket",
     "gtceu:molten_gallium_arsenide_bucket",
     "gtceu:molten_hsla_steel_bucket",
-    "gtceu:molten_rcoket_alloy_t2_bucket",
+    "gtceu:molten_rocket_alloy_t2_bucket",
+    "gtceu:molten_desh_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
 
