@@ -74,8 +74,8 @@ const registerAdAstraItemTags = (event) => {
 		
 	event.add('ad_astra:held_over_head', 'tfg:tier_1_double_rocket')	
 	event.add('ad_astra:held_over_head', 'tfg:tier_2_double_rocket')
-	//event.add('ad_astra:held_over_head', 'tfg:tier_3_double_rocket')
-	//event.add('ad_astra:held_over_head', 'tfg:tier_4_double_rocket')
+	event.add('ad_astra:held_over_head', 'tfg:tier_3_double_rocket')
+	event.add('ad_astra:held_over_head', 'tfg:tier_4_double_rocket')
 	
 	
 	global.AD_ASTRA_WOOD.forEach(wood => {
