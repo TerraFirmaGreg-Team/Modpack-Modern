@@ -324,6 +324,7 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
+		text.add(2, Text.translate("tfg.tooltip.vessel_warning"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))

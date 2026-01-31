@@ -445,4 +445,9 @@ const registerGTCEURecipes = (event) => {
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	// Magnetic iron
+	event.shapeless('gtceu:magnetic_iron_ingot', ['#forge:ingots/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
+
 }

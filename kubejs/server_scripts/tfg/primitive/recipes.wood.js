@@ -131,7 +131,7 @@ function registerTFGWoodRecipes(event) {
 		' B '
 	], {
 		A: '#forge:tools/saws',
-		B: '#forge:rods/wooden',
+		B: '#tfc:lumber',
 		C: 'tfc:glue'
 	}).id('gtceu:shaped/small_gear_wood')
 
