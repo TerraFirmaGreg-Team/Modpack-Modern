@@ -64,9 +64,6 @@
 	cellarRadius = 15
 	#If true, the tumbler and the pumping station work magically with a redstone signal and no power required.
 	mechanicalPowerCheatMode = true
-	#Chance (1 / N) for a block during a crop affinity sweep to be affected by a bee.
-	#Range: > 1
-	cropAffinityChance = 40
 
 [foodTraits]
 	#The modifier for the 'Dried' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
