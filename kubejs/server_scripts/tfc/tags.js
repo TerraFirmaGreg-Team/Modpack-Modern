@@ -463,6 +463,13 @@ function registerTFCItemTags(event) {
     event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
     event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
     event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
+
+    // More offhand things for piglin brutes
+    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
+    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
+    event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
+    event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
+    event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
 }
 
 /** @param {TagEvent.Block} event */
