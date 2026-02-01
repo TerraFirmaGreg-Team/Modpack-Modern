@@ -241,6 +241,12 @@ const registerTFCRecipes = (event) => {
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
 
+	// Clay dust to balls
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('gtceu:clay_dust',TFC.fluidStackIngredient('minecraft:water', 250))
+		.outputItem('1x minecraft:clay_ball')
+		.id('tfc:barrel/clay_ball')
+
 	// Borax to flux
 	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
 		.id(`tfg:quern/borax`)
