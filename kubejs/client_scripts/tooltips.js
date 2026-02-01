@@ -70,8 +70,7 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:ostrum_linear_accelerator'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_2'));
-		text.add(3, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
-		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+		text.add(3, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
@@ -324,6 +323,7 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "3,024"))
+		text.add(2, Text.translate("tfg.tooltip.vessel_warning"))
 	})
 	event.addAdvanced(['waterflasks:iron_flask', 'waterflasks:red_steel_flask'], (item, advanced, text) => {
 		text.add(1, Text.translate("gtceu.universal.tooltip.fluid_storage_capacity", "2,000"))
@@ -379,6 +379,9 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("tfg.tooltip.component.dry_ice"))
 	})
 	event.addAdvanced(['tfg:refrigerant_pellet'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
+	})
+	event.addAdvanced(['tfg:terrafirmaguard_pa6'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
 	})
 

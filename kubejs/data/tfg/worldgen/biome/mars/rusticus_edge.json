@@ -132,13 +132,31 @@
 				"type": "wan_ancient_beasts:eater",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "species:goober",
 				"maxCount": 2,
 				"minCount": 2,
 				"weight": 40
+			},
+			{
+				"type": "wan_ancient_beasts:charger",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 30
+			},
+			{
+				"type": "wan_ancient_beasts:raider",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 30
+			},
+			{
+				"type": "wan_ancient_beasts:snatcher",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 50
 			}
 		],
 		"misc": [],

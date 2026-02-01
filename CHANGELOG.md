@@ -3,11 +3,18 @@
 ## Unreleased
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
+- The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
+- Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
 - Changed ULV hulls to needing lead plates instead of wood plates
 - Adjusted a few other machine recipes slightly
+- Deserts now contain oil spouts for heavy, raw, light, and normal oils
+- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert
+- Unhid and added a recipe for the kinetic bridge (#2881) @Pyritie
+- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
+- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 #### LV changes
 - Completely rearranged the quest chapter! Now it should be much less intimidating for new players
 - Added Bakelite, a new early plastic used for Phenolic Boards and MV machine hulls (instead of wrought iron plates)
@@ -16,24 +23,28 @@
 - Added new ceramics required to craft Cupronickel Coils, made out of your recycled TFC blast furnace, Magnesia, and some resin
 - Cupronickel coils now also need blue steel foil instead of bronze
 - Polyethylene now requires an MV chemical reactor
-### Changes
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
+### Changes
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
-- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 - Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
-- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
 - Glow ink now just requires a fluid solidifier and a ball mold, instead of whatever it was doing before @Pyritie
 - TFC "pure" fertilisers are now all craftable and provide 100 fertiliser instead of 15 (#2884) @Coox1e
 - Added shapeless recipes to convert any old stone dusts into their new equivalents (#2900) @Pyritie
-- Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Added recipe to convert sedimentary carbonate stone dust into flux (#2862) @Pyritie
-- Deserts now contain oil spouts for heavy, raw, light, and normal oils @Pyritie
-- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert @Pyritie
+- Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Some volcanoes should now have much bigger amounts of lava underneath them, for more lava needs, but also infinite obsidian via the rock breaker has been removed. (Use a fluid solidifier instead) @Pyritie
 - Added manual/automated sanding recipes for making smooth stone (#2876) @Pyritie
 - Added deployer recipes for all the in-world block modification recipes (#2876) @Pyritie
 - Added recipe to convert kaolin clay blocks back into kaolin clay (#2904) @Pyritie
+- Axolotls now have genders @Pyritie
+- Piglins can now spawn with crossbows @Pyritie
+- Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
+- Added quartzite as a mars stone type @Pyritie
+- Added assembler recipe for framed cubes (#2889) @Coox1e
+- Added a furnace recipe for dead grass to thatch (#2935) @Coox1e
+- Added support for Bluemap (#2922) @trisjob
+- Added mixer recipes for dye fluids (#2925) @OLOXpl
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
@@ -45,6 +56,10 @@
 - Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
 - Fixed pyrogallol and black and white film developer requiring too high of a heat on the pot recipe (#2909) @Pyritie
 - Fixed not being able to fire scraping blade clay mold (#2905) @Pyritie
+- Fixed stair and slab versions of road blocks not having speed bonuses (#2912) @Pyritie
+- Fixed RNR roofs not having mineable tags, and blocked the stair/slab frame from Additional Placements (#2870) @Pyritie
+- Fixed piglin brutes not dropping meat or bones @Pyritie
+- Fixed not being able to put rings, wrench tips, screwdriver tips, buzzsaw blades, or wire cutter tips in a crucible (#2913) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare

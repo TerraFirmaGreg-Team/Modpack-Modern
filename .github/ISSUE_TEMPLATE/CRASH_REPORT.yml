@@ -9,29 +9,74 @@ body:
   - type: checkboxes
     id: exists
     attributes:
-      label: "Was this crash report before?"
-      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      label: "Was this crash reported before?"
+      description: "Please search OPEN/CLOSED issues before submitting, as the issue may have already been reported/addressed."
       options:
         - label: "No, it was not."
           required: true
+
+  - type: dropdown
+    id: launcher
+    validations:
+      required: true
+    attributes:
+      label: "Are you using Prism or Curseforge?"
+      description: "Prism and Curseforge are the only supported launchers for TFG. Some others may not work. TLAUNCHER DOES NOT WORK."
+      options:
+        - "Yes, I am using Prism or Curseforge."
+        - "No, I am not using Prism or Curseforge."
+
+  - type: checkboxes
+    id: dependencies
+    attributes:
+      label: "Did you install required dependencies?"
+      description: "If you are using Prism or Modrinth you will be instructed to install required mods. Do so."
+      options:
+        - label: "Not Applicable / Yes, I have all required dependencies installed."
+          required: true
+
+  - type: checkboxes
+    id: redownload
+    attributes:
+      label: "Have you tried redownloading the pack?"
+      description: "For issues that you are experiencing singularly, redownloading the pack may fix the issue."
+      options:
+        - label: "Not Applicable / Yes, I have tried downloading a new instance."
+          required: true
+
+  - type: input
+    id: os
+    validations:
+      required: true
+    attributes:
+      label: Computer OS
+      description: Write which OS your PC is running on.
+      placeholder: "Example: Windows 10"
 
   - type: input
     id: version
     validations:
       required: true
     attributes:
-      label: Version modpack used
+      label: Modpack Version Used
       description: Write which version of the modpack you are using.
       placeholder: "Example: 0.1.1"
 
-  - type: input
+  - type: dropdown
     id: environment
     validations:
       required: true
     attributes:
-      label: Environment
-      description: "How you were playing on the world. Typical answers include: Singleplayer, Open to LAN, Forge Server, Sponge Server, or Mohist Server."
-      placeholder: "Example: Singleplayer"
+      label: Minecraft Environment
+      options:
+        - "Singleplayer"
+        - "LAN"
+        - "Forge Server"
+        - "Sponge Server"
+        - "Mohist Server"
+        - "E4MC"
+        - "Essential"
+        - "Other"
 
   - type: dropdown
     id: crash

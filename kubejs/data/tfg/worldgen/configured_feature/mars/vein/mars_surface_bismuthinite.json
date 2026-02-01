@@ -414,6 +414,33 @@
             "weight": 10
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_bismuth_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_bismuth_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_sulfur_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_gypsum_ore",
+            "weight": 10
+          }
+        ]
       }
     ],
     "indicator": {

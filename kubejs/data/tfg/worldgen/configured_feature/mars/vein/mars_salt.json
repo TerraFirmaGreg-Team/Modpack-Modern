@@ -252,6 +252,33 @@
             "weight": 35
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_rock_salt_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_spodumene_ore",
+            "weight": 35
+          }
+        ]
       }
     ],
     "indicator": {

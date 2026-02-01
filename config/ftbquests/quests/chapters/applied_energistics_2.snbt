@@ -1288,21 +1288,6 @@
 			x: -2.0d
 			y: -9.0d
 		}
-		{
-			dependencies: ["25007C5E43D28DB2"]
-			description: ["{quests.ae2.stock_bridge.desc}"]
-			id: "0E54B3BCBBA34A00"
-			optional: true
-			shape: "heart"
-			tasks: [{
-				id: "1F8D81C524CE694A"
-				item: "createstockbridge:ae_bridge"
-				type: "item"
-			}]
-			title: "{quests.ae2.stock_bridge.title}"
-			x: 5.0d
-			y: -8.0d
-		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]
 	title: "{quests.ae2}"

@@ -9,7 +9,7 @@ body:
     id: exists
     attributes:
       label: "Was this question asked before?"
-      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      description: "Please search OPEN/CLOSED issues before submitting, as the issue may have already been reported/addressed."
       options:
         - label: "No, it was not."
           required: true
@@ -17,9 +17,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        If you are in need of quick response, Discord may be a better place. You can find a link to join in our README.md for this project.
+        If you are in need of a quick response, [Discord](https://discord.gg/AEaCzCTUwQ) may be a better place.
         
-        If you are looking for a game wiki, we are currently developing it, however most information is available in-game info through tooltips, JEI/HEI and quest. You can also ask any question on Discord, and someone will most likely have a response.
+        Most information is available in-game through Tooltips, EMI, Field Guide, or Quests.
+        An online version of the [Field Guide](https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/) is also available.
+        
+        For installing a development environment, please refer to the [Contributing Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/.github/CONTRIBUTING.md)
+        For information about translating please read our [Localization Guide](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/dev/kubejs/README_IF_TRANSLATING.md)
 
   - type: textarea
     id: question

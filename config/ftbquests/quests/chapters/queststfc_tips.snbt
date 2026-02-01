@@ -2159,7 +2159,10 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["30DD0DDF86C96926", "1F41C35890E2C44F"]
+			dependencies: [
+				"30DD0DDF86C96926"
+				"1F41C35890E2C44F"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.food_automation.desc}"]
 			icon: "tfg:lv_food_oven"

@@ -74,4 +74,21 @@ function registerTFGCoilRecipes(event) {
 		.addMaterialInfo(true, true)
 
 	// #endregion
+
+	// #region RTM Coil
+
+	event.remove({ id : 'gtceu:assembler/coil_rtm_alloy' })
+	event.recipes.gtceu.assembler('tfg:coil_rtm_alloy')
+		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/vanadium_steel', '8x #forge:insulation_t2/sheet')
+		.inputFluids('tfg:nichromium_iodomethylate 244')
+		.itemOutputs('gtceu:rtm_alloy_coil_block')
+		.duration(20 * 25)
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
+
+	event.recipes.gtceu.mixer('tfg:nichromium_iodomethylate')
+		.inputFluids(Fluid.of('gtceu:nichrome', 144), Fluid.of('tfg:iodomethane', 100))
+		.outputFluids('tfg:nichromium_iodomethylate 244')
+		.duration(20 * 8)
+		.EUt(GTValues.VA[GTValues.HV])
 }

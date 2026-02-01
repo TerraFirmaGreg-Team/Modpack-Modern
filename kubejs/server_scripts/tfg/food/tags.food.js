@@ -66,6 +66,7 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_cruncher_ribs')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_surfer_steak')
 	event.add('tfg:raw_dinosaur_meat', 'wan_ancient_beasts:raw_ancient_meat')
+	// TODO add meat for charger, raider, snatcher
 
 	/**
 	 * List of items that can make light stock.
