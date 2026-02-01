@@ -15,6 +15,10 @@ function registerTFGBeneathItemTags(event) {
     event.add('tfc:plants', 'minecraft:spore_blossom')
     event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
+	event.add('tfg:plants/beneath', 'beneath:gleamflower')
+    event.add('tfg:plants/beneath', 'beneath:burpflower')
+    event.add('tfg:plants/beneath', '#beneath:mushrooms')
+
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:mushroom_stem')
@@ -27,6 +31,9 @@ function registerTFGBeneathItemTags(event) {
 function registerTFGBeneathBlockTags(event) {
 	event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
     event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
+
+	event.remove('tfc:plants', 'beneath:gleamflower')
+    event.remove('tfc:plants', 'beneath:burpflower')
     
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
