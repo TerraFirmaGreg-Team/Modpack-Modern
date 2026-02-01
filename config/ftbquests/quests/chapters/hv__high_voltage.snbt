@@ -1698,6 +1698,21 @@
 			x: -2.25d
 			y: -11.0d
 		}
+		{
+			dependencies: ["41D32C5178760F47"]
+			description: ["{quests.high_voltage.multi_structure_terminal.desc}"]
+			id: "3FC6D346B3EE4A92"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.multi_structure_terminal.subtitle}"
+			tasks: [{
+				id: "32C53F040A2F0AD8"
+				item: "gtceuterminal:multi_structure_manager"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
 	title: "{quests.high_voltage}"

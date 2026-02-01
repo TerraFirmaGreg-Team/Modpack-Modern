@@ -67,6 +67,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGNuclearComponentsRecipes(event)
 	registerTFGSolarRecipes(event)
 	registerTFGCoalRecipes(event)
+	registerTFGPowerGenBalance(event)
 
 	registerTFGZirconiumRecipes(event)
 	registerTFGBromineRecipes(event)

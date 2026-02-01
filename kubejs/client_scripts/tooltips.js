@@ -382,6 +382,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:refrigerant_pellet'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
 	})
+	event.addAdvanced(['tfg:terrafirmaguard_pa6'], (item, advanced, text) => {
+		text.add(1, Text.translate("tfg.tooltip.component.refrigerant_pellet"))
+	})
 
 	event.addAdvanced(['tfg:nuclear_turbine'], (item, advanced, text) => {
 		text.add(1, Text.translate("tfg.tooltip.component.nuclear_turbine_1"));

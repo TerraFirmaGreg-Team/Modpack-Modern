@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tfg:item/fuel_rod_empty"
+    "layer0": "tfg:item/fission_rod/fuel_rod_empty"
   }
 }

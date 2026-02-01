@@ -8,6 +8,13 @@ const registerTFGItemTagsNuclear = (event) => {
 	event.add('deafission:fuels', 'tfg:plutonium_rod')
 	event.add('tfg:fission_rods', '#deafission:fuels')
 
+	let FISSION_ROD_TAG = 'tfg:fission_rods';
+
+	event.add(FISSION_ROD_TAG, 'tfg:tbu_232_rod');
+	event.add(FISSION_ROD_TAG, 'tfg:americium_241_rod');
+    event.add(FISSION_ROD_TAG, 'tfg:neptunium_237_rod');
+	event.add(FISSION_ROD_TAG, 'tfg:californium_252_rod');
+
 }
 
 const registerTFGBlockTagsNuclear = (event) => {
@@ -39,14 +46,28 @@ const registerTFGBlockTagsNuclear = (event) => {
 
     event.add(COMPONENTS_HB, 'minecraft:sand');
     event.add(COMPONENTS_HB, 'tfg:impure_moderate_core_frame');
-
+	event.add(COMPONENTS_HB, 'tfg:moderate_core_frame');
     event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
 
 	//#endregion
+
 }
 //#endregion
 
 //#region Fluids
 const registerTFGFluidTagsNuclear = (event) => {
+	
+	// Fluid allowed for the SMR Hatch
+
+	let SMR_FLUIDS = 'tfg:smr_fluids';
+
+    event.add(SMR_FLUIDS, 'gtceu:lubricant');
+    event.add(SMR_FLUIDS, 'tfg:polyalkylene_lubricant');
+	event.add(SMR_FLUIDS, 'tfg:spent_ticl4_doped_supercritical_co2');
+    event.add(SMR_FLUIDS, 'tfg:ozone');
+	event.add(SMR_FLUIDS, 'tfg:cyclohex_diperoxide');
+	event.add(SMR_FLUIDS, 'tfg:booster_t3');
+
+	//#endregion
 	
 }

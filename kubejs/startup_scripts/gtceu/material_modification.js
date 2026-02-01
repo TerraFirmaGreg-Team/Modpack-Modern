@@ -316,9 +316,15 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE, GENERATE_SPRING);
 	GTMaterials.Lead.addFlags(GENERATE_DENSE);
 
+	GTMaterials.Beryllium.addFlags(GENERATE_DENSE);
+	GTMaterials.MaragingSteel300.addFlags(GENERATE_DENSE);
+
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
+
+	GTMaterials.Cadmium.addFlags(GENERATE_PLATE);
+    GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
@@ -328,7 +334,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zirconium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
-	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, NO_ORE_SMELTING);
+	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, GENERATE_DENSE, NO_ORE_SMELTING);
 	
 	// Tools
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [

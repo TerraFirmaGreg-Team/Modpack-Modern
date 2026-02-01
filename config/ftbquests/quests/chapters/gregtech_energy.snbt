@@ -232,7 +232,7 @@
 			dependencies: [
 				"60FF9249376DF9BD"
 				"05E2F203DA46A5E8"
-				"3EC8D58DB73CEFE5"
+				"2BE373381980C85F"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.gregtech_energy.transformer.desc}"]
@@ -1016,8 +1016,8 @@
 		}
 		{
 			dependencies: [
-				"0AF286AA540A82E6"
 				"0C718329245D9619"
+				"4C620105AAC49381"
 			]
 			description: [
 				"{quests.medium_voltage.mv_diesel.desc.1}"
@@ -1034,8 +1034,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_diesel.title}"
-			x: -9.0d
-			y: -5.0d
+			x: -8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7AF726555D721DFC"]
@@ -1089,7 +1089,7 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_biodiesel.title}"
-			x: -9.0d
+			x: -9.5d
 			y: -7.0d
 		}
 		{
@@ -1236,16 +1236,65 @@
 				"05E2F203DA46A5E8"
 				"0ABD326DC2551CBD"
 			]
-			description: ["{quests.gregtech_energy.smr.desc.1}"]
+			description: [
+				"{quests.gregtech_energy.smr.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.smr.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.smr.desc.3}"
+			]
+			icon: "tfg:smr_generator"
 			id: "4659447C85CDC058"
 			subtitle: "{quests.gregtech_energy.smr.subtitle}"
-			tasks: [{
-				id: "1D02468DD9869C72"
-				item: "deafission:fission_reactor_smr1"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1D02468DD9869C72"
+					item: "deafission:fission_reactor_smr1"
+					type: "item"
+				}
+				{
+					id: "4DA2451D673DABE3"
+					item: "tfg:smr_generator"
+					type: "item"
+				}
+				{
+					id: "7647ABCBC805E3B3"
+					item: "tfg:uv_smr_fluid_import_hatch"
+					type: "item"
+				}
+				{
+					id: "4BDA2F8B0D5B310D"
+					item: "gtceu:lubricant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C5003050BCE8601"
+					item: "tfg:polyalkylene_lubricant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "79126D47F1236F45"
+					item: "tfg:ozone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5075B6C62A7AB675"
+					item: "tfg:cyclohex_diperoxide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "28AAB372882C8996"
+					item: "tfg:ticl4_doped_supercritical_co2_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.gregtech_energy.smr.title}"
-			x: -7.5d
+			x: -7.0d
 			y: 1.0d
 		}
 		{
@@ -1266,21 +1315,64 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["4512E5DE7A84F809"]
-			description: ["{quests.gregtech_energy.fission_rod.desc.1}"]
+			dependencies: [
+				"4512E5DE7A84F809"
+				"4C29DDE89AE8D6EE"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.gregtech_energy.fission_rod.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_rod.desc.2}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.fission_rod.desc.3}"
+			]
+			icon: {
+				Count: 1
+				id: "tfg:tbu_232_rod"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0ABD326DC2551CBD"
 			subtitle: "{quests.gregtech_energy.fission_rod.subtitle}"
-			tasks: [{
-				id: "68E3EE04F4931EFE"
-				item: {
-					Count: 1
-					id: "tfg:tbu_232_rod"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "68E3EE04F4931EFE"
+					item: {
+						Count: 1
+						id: "tfg:tbu_232_rod"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "21383A5C0CF976DD"
+					item: {
+						Count: 1
+						id: "tfg:americium_241_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B22DEC6694CDCCB"
+					item: {
+						Count: 1
+						id: "tfg:neptunium_237_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.gregtech_energy.fission_rod.title}"
 			x: -7.5d
 			y: 0.0d
@@ -1319,6 +1411,41 @@
 			title: "{quests.gregtech_energy.gasoline.title}"
 			x: -9.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"05E2F203DA46A5E8"
+				"0ABD326DC2551CBD"
+			]
+			description: [
+				"{quests.gregtech_energy.cooling_tower.desc.1}"
+				"{@pagebreak}"
+				"{quests.gregtech_energy.cooling_tower.desc.2}"
+			]
+			icon: "tfg:cooling_tower"
+			id: "7F2F435C727C7AB3"
+			subtitle: "{quests.gregtech_energy.cooling_tower.subtitle}"
+			tasks: [
+				{
+					id: "0347D107FEC9761B"
+					item: "tfg:cooling_tower"
+					type: "item"
+				}
+				{
+					id: "7CD0D40C08CC42D2"
+					item: "tfg:boron_enriched_coolant_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23C1F8FEFBD23A5C"
+					item: "tfg:warm_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.gregtech_energy.subtitle}"]
