@@ -69,7 +69,7 @@ function registerTFGPowerGenBalance(event) {
 
     // Raw Oil to Naphtha
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:naphtha', 500), [Fluid.of('gtceu:oil_raw', 1000)])
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:naphtha', 500), [Fluid.of('gtceu:oil_medium', 1000)])
 		.secondaryFluidOutput(0)
 		.processingTime(500)
 		.heated()
