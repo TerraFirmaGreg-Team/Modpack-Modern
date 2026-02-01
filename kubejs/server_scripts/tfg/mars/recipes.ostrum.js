@@ -2,8 +2,8 @@
 
 function registerTFGMarsOstrumRecipes(event) {
 
-	var $HeatRecipeCapability = Java.loadClass("fi.dea.mc.deafission.common.data.recipe.HeatRecipeCapability");
-	var $HeatIngredient = Java.loadClass("fi.dea.mc.deafission.common.data.recipe.HeatIngredient");
+	const $HeatRecipeCapability = Java.loadClass("fi.dea.mc.deafission.common.data.recipe.HeatRecipeCapability");
+	const $HeatIngredient = Java.loadClass("fi.dea.mc.deafission.common.data.recipe.HeatIngredient");
 	const $ChanceLogic = Java.loadClass('com.gregtechceu.gtceu.api.recipe.chance.logic.ChanceLogic')
 
 	// Ostrum Harvester
