@@ -28,14 +28,14 @@ function registerTFGMarsItemTags(event) {
 	event.add('forge:eggs', '#tfg:martian_eggs')
 	event.add('firmalife:foods/raw_eggs', '#tfg:martian_eggs')
 
-	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
-	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
-	event.add('tfg:martian_animal_foods', 'betterend:chorus_mushroom_product')
-	event.add('tfg:martian_animal_foods', 'betterend:shadow_berry_product')
-	event.add('tfg:martian_animal_foods', 'betterend:bolux_mushroom_product')
-	event.add('tfg:martian_animal_foods', 'betterend:cave_pumpkin_chunks')
+	event.add('tfg:martian_herbivore_foods', 'betterend:amber_root_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:blossom_berry_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:chorus_mushroom_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:shadow_berry_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:bolux_mushroom_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:cave_pumpkin_chunks')
 	
-	event.add('tfg:martian_meat_foods', '#firmalife:foods/raw_fish')
+	event.add('tfg:martian_piscivore_foods', '#firmalife:foods/raw_fish')
 
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
 
