@@ -24,6 +24,10 @@
 - Cupronickel coils now also need blue steel foil instead of bronze
 - Polyethylene now requires an MV chemical reactor
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
+#### EV changes
+(tom's changelist goes here)
+#### IV changes
+- Multi-Layer Insulated Shielding is now required for HSS-G coils.
 ### Changes
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
@@ -44,7 +48,7 @@
 - Added assembler recipe for framed cubes (#2889) @Coox1e
 - Added a furnace recipe for dead grass to thatch (#2935) @Coox1e
 - Added support for Bluemap (#2922) @trisjob
-- Added mixer recipes for dye fluids (#2925) @OLOXpl
+- Added mixer and barrel recipes for dye fluids (#2925, #2938) @OLOXpl
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie

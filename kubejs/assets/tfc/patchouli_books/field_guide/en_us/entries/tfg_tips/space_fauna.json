@@ -108,7 +108,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Snatcher",
-			"text": "$(thing)Snatchers$() are passive animals that like to steal your stuff! Attack them to retrieve your items, or feed them $(item)Raw Fish$() to tame them.$(br2)Once tamed, you can carry them on your back and equip them with a wooden chest. Press $(k:key.wan_ancient_beasts.special_ability)$() to throw them, and they will steal the contents of the chest and bring it to you."
+			"text": "$(thing)Snatchers$() are passive animals that like to steal your stuff! Attack them to retrieve your items, or feed them $(item)Raw Fish$() to tame them.$(br2)Once tamed, you can carry them on your back and equip them with a wooden chest. Press $(k:key.wan_ancient_beasts.special_ability)$() to throw them, and they will steal the contents of a nearby chest and bring it to you."
 		},
 		{
 			"type": "patchouli:entity",

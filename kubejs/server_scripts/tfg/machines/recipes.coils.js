@@ -91,4 +91,19 @@ function registerTFGCoilRecipes(event) {
 		.outputFluids('tfg:nichromium_iodomethylate 244')
 		.duration(20 * 8)
 		.EUt(GTValues.VA[GTValues.HV])
+
+	// #endregion
+
+	// #region HSS-G
+
+	event.remove({ id : 'gtceu:assembler/coil_hssg' })
+	event.recipes.gtceu.assembler('tfg:coil_hssg')
+		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '2x #forge:insulation_t3/sheet')
+		.inputFluids('gtceu:tungsten 144')
+		.itemOutputs('gtceu:hssg_coil_block')
+		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.IV])
+		.addMaterialInfo(true, true)
+
+	// #endregion
 }
