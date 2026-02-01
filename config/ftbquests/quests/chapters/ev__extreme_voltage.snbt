@@ -19,7 +19,7 @@
 		{
 			id: "0D951ADFB3AF2E74"
 			linked_quest: "7B2EE67E37809269"
-			x: 8.5d
+			x: 5.0d
 			y: -1.0d
 		}
 		{
@@ -59,8 +59,8 @@
 		{
 			id: "7B380A243C2C39FA"
 			linked_quest: "13F2929C1C303A0B"
-			x: 4.25d
-			y: -3.5d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			id: "2151F8AA263F1D6E"
@@ -256,13 +256,22 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.epoxy.desc.3}"
 			]
+			icon: "gtceu:epoxy_bucket"
 			id: "55FB2776B724FB63"
 			subtitle: "{quests.extreme_voltage.epoxy.subtitle}"
-			tasks: [{
-				id: "096B6E1EA8DBC186"
-				item: "gtceu:epoxy_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "096B6E1EA8DBC186"
+					item: "gtceu:epoxy_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "33C7361EEFF2E4B5"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.epoxy.title}"
 			x: -7.0d
 			y: 4.5d
@@ -270,19 +279,28 @@
 		{
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.oil_distillation.desc}"]
+			icon: "gtceu:oil_bucket"
 			id: "2DEC7AF917AAE4EC"
-			tasks: [{
-				id: "559166D928E75B8F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:oil_bucket)item(gtceu:oil_light_bucket)item(gtceu:oil_medium_bucket)item(gtceu:oil_heavy_bucket))"
+			tasks: [
+				{
+					id: "559166D928E75B8F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:oil_bucket)item(gtceu:oil_light_bucket)item(gtceu:oil_medium_bucket)item(gtceu:oil_heavy_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{quests.extreme_voltage.oil_distillation.task}"
+					type: "item"
 				}
-				title: "{quests.extreme_voltage.oil_distillation.task}"
-				type: "item"
-			}]
+				{
+					id: "2B5D6C28550F3FD9"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.oil_distillation.title}"
 			x: -7.0d
 			y: -2.5d
@@ -296,19 +314,28 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.wood_distillation.desc.3}"
 			]
+			icon: "gtceu:wood_tar_bucket"
 			id: "43BBB9074608F9B1"
-			tasks: [{
-				id: "4D90CDAAA91AE033"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_tar_bucket)item(gtceu:wood_vinegar_bucket)item(gtceu:charcoal_byproducts_bucket))"
+			tasks: [
+				{
+					id: "4D90CDAAA91AE033"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:wood_tar_bucket)item(gtceu:wood_vinegar_bucket)item(gtceu:charcoal_byproducts_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{quests.extreme_voltage.wood_distillation.task}"
+					type: "item"
 				}
-				title: "{quests.extreme_voltage.wood_distillation.task}"
-				type: "item"
-			}]
+				{
+					id: "6EB7DA5D867B279C"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.wood_distillation.title}"
 			x: -5.5d
 			y: -2.5d
@@ -336,8 +363,6 @@
 			dependency_requirement: "all_started"
 			description: ["{quests.extreme_voltage.ev_mixer.desc}"]
 			id: "61D5055F344DDFAD"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.extreme_voltage.ev_mixer.subtitle}"
 			tasks: [{
 				id: "7A401E905A41C399"
@@ -345,7 +370,7 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.ev_mixer.title}"
-			x: 5.25d
+			x: 3.75d
 			y: 0.0d
 		}
 		{
@@ -384,6 +409,8 @@
 			]
 			description: ["{quests.extreme_voltage.rtm_coil.desc}"]
 			id: "7F4E529627AD9148"
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.extreme_voltage.rtm_coil.subtitle}"
 			tasks: [{
 				id: "00C380A4403239AA"
@@ -480,8 +507,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.ruthenium.title}"
-			x: 8.5d
-			y: 0.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["24ECDF70031B39C4"]
@@ -519,7 +546,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.tungsten_steel.title}"
-			x: 5.25d
+			x: 3.75d
 			y: -2.5d
 		}
 		{
@@ -908,7 +935,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4EA8888B12D75BF1"]
+			dependencies: ["2979AFD231E5B37B"]
 			description: ["{quests.extreme_voltage.hexafluorosilic_acid.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:dirty_hexafluorosilicic_acid_bucket"
@@ -922,14 +949,8 @@
 					type: "item"
 				}
 				{
-					id: "541418FD093548C2"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "item_tag(forge:dusts/ochrum)"
-						}
-					}
+					id: "1963DB3E483659FD"
+					item: "gtceu:ochrum_dust"
 					type: "item"
 				}
 			]
@@ -1217,6 +1238,7 @@
 		{
 			dependencies: ["55FB2776B724FB63"]
 			description: ["{quests.extreme_voltage.aes_insulation.desc}"]
+			icon: "tfg:aes_insulation_roll"
 			id: "3B18DE7395776B41"
 			subtitle: "{quests.extreme_voltage.aes_insulation.subtitle}"
 			tasks: [
@@ -1446,13 +1468,22 @@
 		{
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.liquid_mars_air.desc}"]
+			icon: "tfg:liquid_mars_air_bucket"
 			id: "3A46387D683ADC58"
 			subtitle: "{quests.extreme_voltage.liquid_mars_air.subtitle}"
-			tasks: [{
-				id: "60D5C9CC89134D1E"
-				item: "tfg:liquid_mars_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "60D5C9CC89134D1E"
+					item: "tfg:liquid_mars_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7679D78CE272C509"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.liquid_mars_air.title}"
 			x: -9.5d
 			y: 1.0d
@@ -1795,13 +1826,22 @@
 		{
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.liquid_air.desc}"]
+			icon: "gtceu:liquid_air_bucket"
 			id: "7EAA2149BD77A5E6"
 			subtitle: "{quests.extreme_voltage.liquid_air.subtitle}"
-			tasks: [{
-				id: "4B69CAB4467BBE1E"
-				item: "gtceu:liquid_air_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4B69CAB4467BBE1E"
+					item: "gtceu:liquid_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "001FF194BBEB98F1"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.liquid_air.title}"
 			x: -9.5d
 			y: 0.0d
@@ -1822,6 +1862,7 @@
 			dependencies: ["4EA8888B12D75BF1"]
 			description: ["{quests.extreme_voltage.nuclear_turbine.desc}"]
 			hide_dependency_lines: true
+			icon: "tfg:nuclear_turbine"
 			id: "1655573AE1C8484B"
 			shape: "octagon"
 			size: 1.5d
@@ -2074,12 +2115,21 @@
 			dependencies: ["3A2E442E4D84C891"]
 			description: ["{quests.extreme_voltage.epichlorohydrin.desc}"]
 			hide_dependency_lines: true
+			icon: "gtceu:epichlorohydrin_bucket"
 			id: "146E086823CEEF7A"
-			tasks: [{
-				id: "7E1FFA943BAECDB9"
-				item: "gtceu:epichlorohydrin_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7E1FFA943BAECDB9"
+					item: "gtceu:epichlorohydrin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5FE5EC623F1412C0"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.epichlorohydrin.title}"
 			x: -8.5d
 			y: 3.5d
@@ -2094,12 +2144,21 @@
 				"{quests.extreme_voltage.phenol.desc.3}"
 			]
 			hide_dependency_lines: true
+			icon: "gtceu:phenol_bucket"
 			id: "431063775DFA1519"
-			tasks: [{
-				id: "6452431C90671E6D"
-				item: "gtceu:phenol_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6452431C90671E6D"
+					item: "gtceu:phenol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "282831A0E103E0CE"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.phenol.title}"
 			x: -9.0d
 			y: 4.5d
@@ -2112,12 +2171,21 @@
 				"{quests.extreme_voltage.acetone.desc.2}"
 			]
 			hide_dependency_lines: true
+			icon: "gtceu:acetone_bucket"
 			id: "461ABF74A9406752"
-			tasks: [{
-				id: "4CE653FC4E438F02"
-				item: "gtceu:acetone_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4CE653FC4E438F02"
+					item: "gtceu:acetone_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BB3BED0A7927EDC"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.extreme_voltage.acetone.title}"
 			x: -8.5d
 			y: 5.5d
