@@ -273,7 +273,8 @@ function registerTFGFoodItemTags(event) {
 		'tfc_gurman:falafel',
 		'tfc_gurman:hummus',
 		'tfc_gurman:sauerkraut',
-		'tfc_gurman:bratwurst'
+		'tfc_gurman:bratwurst',
+		'tfg:fish_roe'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
