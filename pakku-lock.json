@@ -3982,7 +3982,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "create_connected-1.1.11-mc1.20.1-all.jar",
+                    "file_name": "create_connected-1.1.12-mc1.20.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3991,22 +3991,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Vg5TIO6d/versions/VjLFXhLl/create_connected-1.1.11-mc1.20.1-all.jar",
-                    "id": "VjLFXhLl",
+                    "url": "https://cdn.modrinth.com/data/Vg5TIO6d/versions/aN0bSww5/create_connected-1.1.12-mc1.20.1-all.jar",
+                    "id": "aN0bSww5",
                     "parent_id": "Vg5TIO6d",
                     "hashes": {
-                        "sha512": "d6f8b57e7944be2caf6df6effd87ec96566ec8d1594b11318b7a62e2cccda8b8b3a4fae7e8e5cb77db050e45697df5e5b3c33ac64077d2723b84f9eb5b92546b",
-                        "sha1": "a513a3fa9c7f3fb76d8f2ce4879e9755d1159477"
+                        "sha512": "197488682615350b777c9f803c58a870fab3f775f044a8c1aae44810b0f9a93a5ff05bc54b1d6a5d962d5b6db78dfb5c33c6cf0e2373f261b89834e0dc2cd67a",
+                        "sha1": "d984c4502c0ed9a997dafc707b3cee2a4a65167e"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 6566640,
-                    "date_published": "2026-01-30T13:44:08.705420Z"
+                    "size": 6566880,
+                    "date_published": "2026-02-01T02:48:57.370419Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "create_connected-1.1.11-mc1.20.1-all.jar",
+                    "file_name": "create_connected-1.1.12-mc1.20.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4015,18 +4015,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7550/633/create_connected-1.1.11-mc1.20.1-all.jar",
-                    "id": "7550633",
+                    "url": "https://edge.forgecdn.net/files/7558/612/create_connected-1.1.12-mc1.20.1-all.jar",
+                    "id": "7558612",
                     "parent_id": "947914",
                     "hashes": {
-                        "sha1": "ceffe02002c5f5b0938ac4d23f5a8b4c14c6b034",
-                        "md5": "07ca1d67374bcd6a8fffa13af1b1a472"
+                        "sha1": "6a27b27ad502429650fa621009daacc876bd3e28",
+                        "md5": "eccd418f036339b09ec505db7a3f82d4"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 6566640,
-                    "date_published": "2026-01-30T13:44:20.473Z"
+                    "size": 6566879,
+                    "date_published": "2026-02-01T02:49:13.020Z"
                 }
             ]
         },
@@ -6810,6 +6810,74 @@
                     ],
                     "size": 2372465,
                     "date_published": "2026-01-19T17:33:01.213Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ebnVeibHypJ7c4sE",
+            "pakku_links": [
+                "WN9DdLqsRKVeZIc9"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "gtceu-terminals",
+                "modrinth": "gtceu-terminals"
+            },
+            "name": {
+                "curseforge": "GTCEu Terminals",
+                "modrinth": "GTCEu Terminals"
+            },
+            "id": {
+                "curseforge": "1423461",
+                "modrinth": "jIBIhAO2"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gtceuterminal-2.4.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7521/437/gtceuterminal-2.4.5.jar",
+                    "id": "7521437",
+                    "parent_id": "1423461",
+                    "hashes": {
+                        "sha1": "d0e5cd6b8d6d5fe89f9e24434c35a61bc0294896",
+                        "md5": "973736c87b451d5eb8d601c27c5c1f65"
+                    },
+                    "required_dependencies": [
+                        "890405"
+                    ],
+                    "size": 335658,
+                    "date_published": "2026-01-25T00:45:57.250Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "gtceuterminal-2.4.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/jIBIhAO2/versions/o6tXhJNB/gtceuterminal-2.4.5.jar",
+                    "id": "o6tXhJNB",
+                    "parent_id": "jIBIhAO2",
+                    "hashes": {
+                        "sha512": "acd26244ab41d7e7ee939b3e88127053e0c31217a31274f165750a77862ccc57116cb2dbc0ff9e76139e77f060d25029e6abd2c08f5dc1e75887e05495acd101",
+                        "sha1": "d0e5cd6b8d6d5fe89f9e24434c35a61bc0294896"
+                    },
+                    "required_dependencies": [
+                        "7tG215v7"
+                    ],
+                    "size": 335658,
+                    "date_published": "2026-01-25T00:44:44.421732Z"
                 }
             ]
         },
@@ -14840,7 +14908,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "wab-1.20.1-1.3.2.jar",
+                    "file_name": "wab-1.20.1-1.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14849,40 +14917,42 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nWC3kyL3/versions/RY6tjr9r/wab-1.20.1-1.3.2.jar",
-                    "id": "RY6tjr9r",
+                    "url": "https://cdn.modrinth.com/data/nWC3kyL3/versions/OhVjiSa4/wab-1.20.1-1.4.1.jar",
+                    "id": "OhVjiSa4",
                     "parent_id": "nWC3kyL3",
                     "hashes": {
-                        "sha512": "5ac692f7eeaf6d0cdb4fd6131b2bbe30bbb873c28a34b999b37a83b7b0e726ad6fb82138a9fb93f34e40384431fcfa549b41d9fbff845f5554182ca427f4f441",
-                        "sha1": "7298a59e383d2327e2acc49d8f1b132cedb8860b"
+                        "sha512": "419bfbad4ca78e35f16b34ced2dafa2f6e7af51850875e21756523b5b2a04afb9cc5308d11e74c9cda5e48411c59d3d5b4d29df07a63fb2abc796552df3d31a9",
+                        "sha1": "6a9465b15671d7f1ea2f7b3ed44c881065b945f6"
                     },
                     "required_dependencies": [
                         "8BmcQJ2H"
                     ],
-                    "size": 9115799,
-                    "date_published": "2025-09-22T20:47:32.603138Z"
+                    "size": 10167907,
+                    "date_published": "2026-01-30T21:19:29.785723Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "wab-1.20.1-1.3.2.jar",
+                    "file_name": "wab-1.20.1-1.4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7023/583/wab-1.20.1-1.3.2.jar",
-                    "id": "7023583",
+                    "url": "https://edge.forgecdn.net/files/7552/366/wab-1.20.1-1.4.1.jar",
+                    "id": "7552366",
                     "parent_id": "1108604",
                     "hashes": {
-                        "sha1": "7298a59e383d2327e2acc49d8f1b132cedb8860b",
-                        "md5": "a3cf1ea1c616b546b586c7415143e5fe"
+                        "sha1": "6a9465b15671d7f1ea2f7b3ed44c881065b945f6",
+                        "md5": "b58604d770735d06b0e105c9105a527a"
                     },
-                    "required_dependencies": [],
-                    "size": 9115799,
-                    "date_published": "2025-09-22T20:37:11.317Z"
+                    "required_dependencies": [
+                        "388172"
+                    ],
+                    "size": 10167907,
+                    "date_published": "2026-01-30T21:16:13.643Z"
                 }
             ]
         },
