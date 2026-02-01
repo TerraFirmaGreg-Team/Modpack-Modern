@@ -110,18 +110,26 @@
 				"3B18DE7395776B41"
 			]
 			description: ["{quests.extreme_voltage.t2_rocket.desc}"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_2_rocket"
+				tag: { }
+			}
 			icon_scale: 2.0d
 			id: "52AB0BDC64293253"
 			shape: "none"
 			size: 2.0d
 			subtitle: "{quests.extreme_voltage.t2_rocket.subtitle}"
 			tasks: [{
-				id: "00802CE875F2FB24"
+				id: "13C10613129C3692"
 				item: {
 					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(ad_astra:tier_2_rocket)item(tfg:tier_2_double_rocket))"
+					}
 				}
+				title: "{quests.extreme_voltage.t2_rocket.task}"
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.t2_rocket.title}"

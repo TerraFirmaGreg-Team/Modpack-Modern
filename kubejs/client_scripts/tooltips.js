@@ -115,7 +115,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
-		text.add(4, Text.translate('tfg.tooltip.machine.one_energy_hatch'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatch'));
 	})
 	event.addAdvanced(['tfg:hydroponics_facility'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.hydroponics_facility_1'));
