@@ -1305,14 +1305,23 @@
 		{
 			dependencies: ["174DA15847665CF8"]
 			description: ["{quests.metal_age.toolbelt.desc}"]
+			icon: "toolbelt:belt"
 			id: "1DEC710C3570D5D0"
 			shape: "heart"
 			subtitle: "{quests.metal_age.toolbelt.subtitle}"
-			tasks: [{
-				id: "0233F2A323C9FF6F"
-				item: "toolbelt:belt"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0233F2A323C9FF6F"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "09A674FE4BA67280"
+					item: "toolbelt:pouch"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.metal_age.toolbelt.title}"
 			x: 9.5d
 			y: -34.0d
