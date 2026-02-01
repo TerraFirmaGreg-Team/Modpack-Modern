@@ -6,7 +6,7 @@
 	icon: "tfg:ev_universal_circuit"
 	id: "6B1AD2350778D945"
 	images: [{
-		alpha: 64
+		alpha: 32
 		height: 8.0d
 		image: "gtceu:textures/gui/overlay/atomic_overlay_2.png"
 		rotation: 0.0d
@@ -32,20 +32,21 @@
 			id: "66960076A74E9B79"
 			linked_quest: "0CA5B715B76E4A5B"
 			shape: "diamond"
-			x: 16.0d
-			y: 2.5d
+			x: 13.0d
+			y: 1.5d
 		}
 		{
 			id: "6058CD9466BE0852"
 			linked_quest: "00202200344F3456"
-			x: 13.0d
-			y: 4.0d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			id: "49FB3507B0FB3000"
 			linked_quest: "155F421FC2F39C3C"
+			shape: "diamond"
 			x: 11.5d
-			y: 4.0d
+			y: 1.5d
 		}
 		{
 			id: "7FDAA0AA0D463A49"
@@ -66,7 +67,7 @@
 			linked_quest: "6ECAD339C91EF194"
 			shape: "heart"
 			x: 17.5d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -78,8 +79,8 @@
 			}
 			id: "2DD8555DDAA44979"
 			linked_quest: "0ABD326DC2551CBD"
-			x: 24.5d
-			y: 9.0d
+			x: 23.5d
+			y: 10.5d
 		}
 	]
 	quests: [
@@ -327,8 +328,8 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.0d
+			x: 14.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -445,7 +446,7 @@
 			]
 			title: "{quests.extreme_voltage.gcym_alloys.title}"
 			x: 10.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7B2EE67E37809269"]
@@ -493,7 +494,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -581,7 +582,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.heavy_water.title}"
-			x: 10.0d
+			x: 8.5d
 			y: 5.5d
 		}
 		{
@@ -690,7 +691,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 7.0d
 		}
 		{
@@ -711,8 +712,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.uranium_line.title}"
-			x: 12.5d
-			y: 8.0d
+			x: 13.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -729,7 +730,7 @@
 				item: "gtceu:uraninite_dust"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.5d
 			y: 9.0d
 		}
 		{
@@ -792,7 +793,7 @@
 			}]
 			title: "{quests.extreme_voltage.heat_exchanger.title}"
 			x: 14.5d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -821,8 +822,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.ammonium_formate.title}"
-			x: 12.5d
-			y: 5.5d
+			x: 13.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["75725B3F6603F1D0"]
@@ -845,7 +846,7 @@
 			]
 			title: "{quests.extreme_voltage.formamide.title}"
 			x: 16.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -878,7 +879,7 @@
 			]
 			title: "{quests.extreme_voltage.nuclear_residue_dust.title}"
 			x: 17.5d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -904,7 +905,7 @@
 			]
 			title: "{quests.extreme_voltage.martian_sludge.title}"
 			x: 17.5d
-			y: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -933,8 +934,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.hexafluorosilic_acid.title}"
-			x: 19.0d
-			y: 3.5d
+			x: 16.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2B666F65B5F196E6"]
@@ -951,7 +952,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5523F60CE095BD0A"]
@@ -964,7 +965,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -990,7 +991,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5523F60CE095BD0A"]
@@ -1012,8 +1013,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.radioactive_concoction.title}"
-			x: 22.0d
-			y: 5.5d
+			x: 20.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4C0E5C517F0137B9"]
@@ -1035,7 +1036,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.tritiated_water.title}"
-			x: 12.5d
+			x: 19.0d
 			y: 10.5d
 		}
 		{
@@ -1181,7 +1182,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_harvester.title}"
 			x: 14.5d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
@@ -1278,7 +1279,7 @@
 			]
 			title: "{quests.extreme_voltage.ev_superconductor.title}"
 			x: 17.5d
-			y: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
@@ -1599,8 +1600,6 @@
 			description: ["{quests.extreme_voltage.plutonium.desc}"]
 			icon: "gtceu:plutonium_ingot"
 			id: "41D968B30C11934C"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.extreme_voltage.plutonium.subtitle}"
 			tasks: [
 				{
@@ -1617,7 +1616,7 @@
 			]
 			title: "{quests.extreme_voltage.plutonium.title}"
 			x: 19.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["26AA29016BA23396"]
@@ -1625,7 +1624,7 @@
 			icon: "tfg:ostrum_linear_accelerator"
 			id: "691A36800DC755C1"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.extreme_voltage.ostrum_linear.subtitle}"
 			tasks: [
 				{
@@ -1645,7 +1644,7 @@
 				}
 			]
 			x: 22.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["691A36800DC755C1"]
@@ -1668,7 +1667,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_vapor.title}"
 			x: 20.5d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1695,7 +1694,7 @@
 			]
 			title: "{quests.extreme_voltage.light_ostrum_vapor.title}"
 			x: 22.0d
-			y: 12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["691A36800DC755C1"]
@@ -1718,7 +1717,7 @@
 			]
 			title: "{quests.extreme_voltage.dense_ostrum_vapor.title}"
 			x: 23.5d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4F647D6A4949EDF7"]
@@ -1776,7 +1775,7 @@
 				}
 			]
 			x: 22.0d
-			y: 13.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3A2E442E4D84C891"]
@@ -1888,7 +1887,7 @@
 			]
 			title: "{quests.extreme_voltage.refrigerant_pellet.title}"
 			x: 20.5d
-			y: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["29E0829816B9DBA0"]
@@ -1960,7 +1959,7 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.large_miner.title}"
-			x: 10.0d
+			x: 9.5d
 			y: -4.5d
 		}
 		{
@@ -2024,7 +2023,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_dust.title}"
 			x: 14.5d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["04682CD04FE0A56E"]
@@ -2180,20 +2179,21 @@
 			]
 			disable_toast: true
 			id: "40CBACE41B71C011"
+			optional: true
 			shape: "octagon"
 			size: 1.5d
-			tasks: [
-				{
-					id: "229957FF419324F0"
-					item: "gtceu:large_combustion_engine"
-					type: "item"
+			tasks: [{
+				id: "656484D8CCA0018E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:large_combustion_engine)item(gtceu:gas_large_turbine))"
+					}
 				}
-				{
-					id: "49B66E0C0E22403A"
-					item: "gtceu:gas_large_turbine"
-					type: "item"
-				}
-			]
+				title: "{quests.extreme_voltage.large_generators.task}"
+				type: "item"
+			}]
 			title: "{quests.extreme_voltage.large_generators.title}"
 			x: 2.0d
 			y: 4.5d
@@ -2264,8 +2264,6 @@
 			dependencies: ["617CF3335584DC8D"]
 			description: ["{quests.extreme_voltage.heat_battery.desc}"]
 			id: "26AA29016BA23396"
-			shape: "octagon"
-			size: 1.5d
 			subtitle: "{quests.extreme_voltage.heat_battery.subtitle}"
 			tasks: [{
 				id: "5C9A37E905A4030F"
@@ -2273,10 +2271,13 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: 7.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["155F421FC2F39C3C"]
+			dependencies: [
+				"155F421FC2F39C3C"
+				"29E0829816B9DBA0"
+			]
 			description: ["{quests.extreme_voltage.nichromium_iode.desc}"]
 			icon: "tfg:nichromium_iodomethylate_bucket"
 			id: "5CF70AC24D269279"
