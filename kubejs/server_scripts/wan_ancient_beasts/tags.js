@@ -73,6 +73,7 @@ const registerWansAncientBeastsBiomeTags = (event) => {
 	event.removeAll('wan_ancient_beasts:has_structure/ancient_nest');
 	event.removeAll('wan_ancient_beasts:has_structure/dead_coral');
 	event.removeAll('wan_ancient_beasts:has_structure/desert_ruins');
+	event.removeAll('wan_ancient_beasts:has_structure/desert_ruins_small');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_badlands');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_desert');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_icespikes');
@@ -84,4 +85,7 @@ const registerWansAncientBeastsBiomeTags = (event) => {
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_taiga');
 	event.removeAll('wan_ancient_beasts:has_structure/ice_spike_castle');
 	event.removeAll('wan_ancient_beasts:has_structure/mesa_temple');
+	event.removeAll('wan_ancient_beasts:has_structure/primal_log');
+	event.removeAll('wan_ancient_beasts:has_structure/ruined_castle');
+	event.removeAll('wan_ancient_beasts:has_structure/training_outpost');
 }
