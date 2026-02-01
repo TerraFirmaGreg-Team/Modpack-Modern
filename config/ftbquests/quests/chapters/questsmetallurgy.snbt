@@ -51,7 +51,7 @@
 			id: "19CF6D922179DFF9"
 			linked_quest: "11C45DBB20ED7647"
 			shape: "heart"
-			x: 9.0d
+			x: 8.5d
 			y: -34.0d
 		}
 		{
@@ -1301,6 +1301,21 @@
 			title: "{quests.metal_age.temperature_protection.title}"
 			x: 18.5d
 			y: -24.0d
+		}
+		{
+			dependencies: ["174DA15847665CF8"]
+			description: ["{quests.metal_age.toolbelt.desc}"]
+			id: "1DEC710C3570D5D0"
+			shape: "heart"
+			subtitle: "{quests.metal_age.toolbelt.subtitle}"
+			tasks: [{
+				id: "0233F2A323C9FF6F"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			title: "{quests.metal_age.toolbelt.title}"
+			x: 9.5d
+			y: -34.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]
