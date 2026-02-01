@@ -138,7 +138,7 @@ function registerTFGCasingRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.assembler('gtceu:atomic_casing')
-		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:double_plates/beryllium','2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
+		.itemInputs('4x #forge:dense_plates/lead', '2x #forge:plates/rtm_alloy', '#forge:frames/titanium')
 		.inputFluids(Fluid.of('gtceu:polyvinyl_butyral', 288))
 		.itemOutputs('2x gtceu:atomic_casing')
 		.circuit(6)
