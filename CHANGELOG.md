@@ -4,6 +4,7 @@
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 - The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
+- Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
@@ -41,6 +42,9 @@
 - Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
 - Added quartzite as a mars stone type @Pyritie
 - Added assembler recipe for framed cubes (#2889) @Coox1e
+- Added a furnace recipe for dead grass to thatch (#2935) @Coox1e
+- Added support for Bluemap (#2922) @trisjob
+- Added mixer recipes for dye fluids (#2925) @OLOXpl
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie

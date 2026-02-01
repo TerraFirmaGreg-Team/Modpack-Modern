@@ -453,7 +453,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
 
     { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
-    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 }
+    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 },
+
+    { recipeId: "gtceu:chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
 ]);
 //#endregion
 
