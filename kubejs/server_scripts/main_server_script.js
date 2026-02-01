@@ -255,6 +255,7 @@ ServerEvents.recipes(event => {
 	registerGrapplingHookRecipes(event);
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
+	registerGTCEUTerminal(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)

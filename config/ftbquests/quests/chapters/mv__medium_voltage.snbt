@@ -1325,7 +1325,7 @@
 			}]
 			title: "{quests.medium_voltage.mv_jetpack_2.title}"
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1699,6 +1699,21 @@
 			title: "{quests.medium_voltage.mv_diesel.title}"
 			x: -5.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["75F38905DEA60F15"]
+			description: ["{quests.medium_voltage.terminal_dismantler.desc}"]
+			id: "0053E98892F910BF"
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.terminal_dismantler.subtitle}"
+			tasks: [{
+				id: "6AE4D07F675A23D0"
+				item: "gtceuterminal:dismantler"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.terminal_dismantler.title}"
+			x: 1.5d
+			y: 5.5d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

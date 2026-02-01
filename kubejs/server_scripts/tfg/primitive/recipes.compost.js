@@ -66,6 +66,11 @@ function registerTFGCompostRecipes(event) {
 		.duration(600)
 		.EUt(2)
 
+	event.smelting(
+		'1x tfc:groundcover/dead_grass',
+		'tfc:thatch'
+	).id('tfg:smelting/thatch_drying_furnace')
+
 	event.recipes.gtceu.fermenter('tfg:fertilizer_to_compost')
 		.itemInputs('4x gtceu:fertilizer')
 		.itemOutputs('tfc:compost')
