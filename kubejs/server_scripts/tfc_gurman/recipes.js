@@ -516,7 +516,7 @@ function registerTFCGurmanRecipes(event) {
 		'tfc:powder/salt'
 	]).id('tfg:shapeless/takoyaki_from_crawlermari');
 
-	event.replaceOutput({ id: "tfc_gurman:crafting/raw_pelmeni" }, "tfc_gurman:raw_pelmeni", "2x tfc_gurman:raw_pelmini");
+	event.replaceOutput({ id: "tfc_gurman:crafting/raw_pelmeni" }, "tfc_gurman:raw_pelmeni", "2x tfc_gurman:raw_pelmeni");
 	event.replaceOutput({ id: "tfc_gurman:crafting/raw_vareniki" }, "tfc_gurman:raw_vareniki", "tfc_gurman:raw_vareniki");
 	event.replaceOutput({ id: "tfc_gurman:crafting/raw_oladyi" }, "tfc_gurman:raw_oladyi", "2x tfc_gurman:raw_oladyi");
 	event.replaceOutput({ id: "tfc_gurman:crafting/raw_syrniki" }, "tfc_gurman:raw_syrniki", "2x tfc_gurman:raw_syrniki");
