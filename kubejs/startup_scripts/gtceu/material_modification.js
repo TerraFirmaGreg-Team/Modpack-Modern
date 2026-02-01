@@ -460,6 +460,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
 	GTMaterials.Diamond.setMaterialARGB(0x4AEDD9)
 	GTMaterials.Diamond.setMaterialSecondaryARGB(0x1AAAA7)
+	GTMaterials.Boron.setMaterialARGB(0x75BD8D)
+	GTMaterials.Boron.setMaterialSecondaryARGB(0x013A15)
+	GTMaterials.Americium.setMaterialARGB(0x284D7B)
 
 	// Fluids
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -477,4 +480,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
+	GTMaterials.Boron.setFormula('B¹¹')
+	GTMaterials.Caesium.setFormula('Cs¹³³')
 }

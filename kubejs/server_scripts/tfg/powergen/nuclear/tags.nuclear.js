@@ -30,7 +30,7 @@ const registerTFGBlockTagsNuclear = (event) => {
 	event.add(COMPONENTS_FR, 'tfg:impure_moderate_core_frame'); // Max Heat 5
 	//event.add(COMPONENTS, 'minecraft:blue_ice'); // Max Heat 0.5
 
-	event.add(COMPONENTS_FR, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
+	//event.add(COMPONENTS_FR, 'minecraft:bedrock'); // Max Heat 10000 CREATIVE BLOCK
 
 	// Increase Throttle
     //event.add(COMPONENTS_FR, 'minecraft:iron_block');
@@ -47,7 +47,7 @@ const registerTFGBlockTagsNuclear = (event) => {
     event.add(COMPONENTS_HB, 'minecraft:sand');
     event.add(COMPONENTS_HB, 'tfg:impure_moderate_core_frame');
 	event.add(COMPONENTS_HB, 'tfg:moderate_core_frame');
-    event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
+    //event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
 
 	//#endregion
 

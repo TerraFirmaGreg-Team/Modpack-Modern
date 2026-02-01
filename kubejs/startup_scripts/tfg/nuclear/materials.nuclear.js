@@ -200,16 +200,16 @@ const registerTFGNuclearMaterials = (event) => {
 		.element(GTElements.get("boron_10"))
 		.iconSet(GTMaterialIconSet.DULL)
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
-		.color(0xf8a8c0)
-		.secondaryColor(0xcd8dbc)
+		.color(0xbffdbf)
+		.secondaryColor(0x6d7058)
 
 	event.create('caesium_137')
 		.dust()
 		.element(GTElements.get("caesium_137"))
-		.iconSet(GTMaterialIconSet.METALLIC)
+		.iconSet(GTMaterialIconSet.SHINY)
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
-		.color(0xB6FF00)
-		.secondaryColor(0x9FAFB2)
+		.color(0xFCB65C)
+		.secondaryColor(0x55461B)
 
 	event.create('tfg:boron_thrichloride')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(380))
@@ -324,8 +324,8 @@ const registerTFGNuclearMaterials = (event) => {
 		.element(GTElements.get("americium_241"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
-		.color(0x10B193)
-		.secondaryColor(0x66ff00)
+		.color(0x648ABA)
+		.secondaryColor(0x999900)
 		.radioactiveHazard(1000000)
 
 	event.create('neptunium_237')
@@ -343,7 +343,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0xffba00)
-		.secondaryColor(0x66ff00)
+		.secondaryColor(0xA85A12)
 		.radioactiveHazard(10000000)
 
 	//#endregion
