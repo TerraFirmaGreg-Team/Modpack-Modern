@@ -25,7 +25,7 @@ const registerTFGOreLoots = (event) => {
 			let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
 			let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
 			let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
-			let dustOre = ChemicalHelper.get(TagPrefix.dustTiny, material, 1)
+			let tinyDustOre = ChemicalHelper.get(TagPrefix.dustTiny, material, 1)
 
 			let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
 			event.addBlockLootModifier(rawOreBlock)
@@ -35,7 +35,7 @@ const registerTFGOreLoots = (event) => {
 					normalRawOre.withChance(0.6),
 					poorRawOre.withChance(0.2)
 				])
-				.addLoot(LootEntry.of(dustOre).when(c => c.randomChance(0.2)));
+				.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.1)));
 
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
@@ -54,7 +54,7 @@ const registerTFGOreLoots = (event) => {
 						poorRawOre.withChance(0.2)
 					])
 					.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
-					.addLoot(LootEntry.of(dustOre).when(c => c.randomChance(0.05)));
+					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.02)));
 
 				// break with hammer
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
