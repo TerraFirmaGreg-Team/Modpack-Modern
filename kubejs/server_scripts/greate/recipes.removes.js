@@ -85,6 +85,7 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: 'greate:mixing/brass_ingot' })
 	event.remove({ id: /^greate:.*\/integration\/createaddition/ })
+	event.remove({ id: /^greate:.*\/integration\/vintageimprovements/ })
 
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })
