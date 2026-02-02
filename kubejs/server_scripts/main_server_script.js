@@ -53,7 +53,7 @@ ServerEvents.tags('item', event => {
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-	registerTFGItemTagsNuclear(event)
+	registerTFGNuclearItemTags(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
 	registerGrapplingHookRecipes(event);
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
-	registerGTCEUTerminal(event)
+	registerGTCEUTerminalRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)

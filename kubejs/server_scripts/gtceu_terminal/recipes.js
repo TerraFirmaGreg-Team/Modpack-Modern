@@ -1,4 +1,7 @@
-function registerGTCEUTerminal(event) {
+// priority: 0
+"use strict";
+
+function registerGTCEUTerminalRecipes(event) {
 
 
     // Gregtech CEu Terminals Integration

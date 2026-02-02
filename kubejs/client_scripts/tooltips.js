@@ -413,42 +413,42 @@ const registerTooltips = (event) => {
 	})
 
 	// Drink effects
-	event.addAdvanced(['tfc_gurman:compote_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:compote_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (00:30)")).blue());
 	})
-	event.addAdvanced(['tfc_gurman:kvass_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (01:20)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:lemonade_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:coffee_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:cocoa_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:tea_mint_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:tea_chamomile_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:tea_nettle_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.slow_falling").append(Text.of(" (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:tea_rosehip_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" (00:30)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['tfc_gurman:nalivka_bucket'], (item, advanced, text) => {
+	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (02:40)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})

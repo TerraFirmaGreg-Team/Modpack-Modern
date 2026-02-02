@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-const registerTFGItemTagsNuclear = (event) => {
+const registerTFGNuclearItemTags = (event) => {
 
 	//Fission Nucleat Fuel
 	event.add('deafission:fuels', 'tfg:thorium_rod')

@@ -484,6 +484,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
-	GTMaterials.Boron.setFormula('B¹¹')
 	GTMaterials.Caesium.setFormula('Cs¹³³')
 }

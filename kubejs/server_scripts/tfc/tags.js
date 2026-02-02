@@ -92,9 +92,9 @@ function registerTFCItemTags(event) {
     event.add("tfc:nonplaceable", "minecraft:milk_bucket")
     event.add("tfc:nonplaceable", "firmalife:bucket/yak_milk")
     event.add("tfc:nonplaceable", "firmalife:bucket/goat_milk")
-    event.add("tfc:nonplaceable", "tfc_gurman:ox_milk_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:sheep_milk_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:alpaca_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:ox_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:sheep_milk_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:alpaca_milk_bucket")
     event.add("tfc:nonplaceable", "tfc:bucket/beer")
     event.add("tfc:nonplaceable", "tfc:bucket/cider")
     event.add("tfc:nonplaceable", "tfc:bucket/rum")
@@ -112,16 +112,16 @@ function registerTFCItemTags(event) {
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_corn_whiskey")
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
     event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
-    event.add("tfc:nonplaceable", "tfc_gurman:nalivka_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:coffee_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:tea_mint_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:tea_chamomile_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:tea_rosehip_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:tea_nettle_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:cocoa_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:compote_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:kvass_bucket")
-    event.add("tfc:nonplaceable", "tfc_gurman:lemonade_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:nalivka_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:coffee_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:tea_mint_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:tea_chamomile_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:tea_rosehip_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:tea_nettle_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:cocoa_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:compote_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:kvass_bucket")
+    event.add("tfc:nonplaceable", "tfc_gourmet:lemonade_bucket")
     event.add("tfc:nonplaceable", "firmalife:bucket/mead")
     event.add("tfc:nonplaceable", "firmalife:bucket/red_wine")
     event.add("tfc:nonplaceable", "firmalife:bucket/white_wine")
@@ -832,7 +832,7 @@ function registerTFCFluidTags(event) {
     event.add("tfg:alcohols", "tfcagedalcohol:aged_corn_whiskey");
     event.add("tfg:alcohols", "tfcagedalcohol:aged_rye_whiskey");
     event.add("tfg:alcohols", "tfcagedalcohol:aged_mead");
-    event.add("tfg:alcohols", "tfc_gurman:nalivka");
+    event.add("tfg:alcohols", "tfc_gourmet:nalivka");
 
     // Добавляем тег для скрытия в EMI
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");
