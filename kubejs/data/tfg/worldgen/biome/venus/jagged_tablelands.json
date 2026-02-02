@@ -70,20 +70,20 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.15,
@@ -110,7 +110,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.2,
+	"creature_spawn_probability": 0.15,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -173,6 +173,12 @@
 				"weight": 100
 			},
 			{
+				"type": "endermanoverhaul:desert_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
@@ -189,6 +195,18 @@
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
+			},
+			{
+				"type": "minecraft:blaze",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
 			},
 			{
 				"type": "arthropocolypse:millipede_head",
