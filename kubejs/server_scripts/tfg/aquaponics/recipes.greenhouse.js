@@ -465,7 +465,7 @@ const registerTFGGreenhouseRecipes = (event) => {
 	//#region Recipes
 
 	// Mushrooms
-	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
+	Ingredient.of('#tfg:plants/beneath').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, 'minecraft:the_nether', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
 	});
 
@@ -501,6 +501,10 @@ const registerTFGGreenhouseRecipes = (event) => {
 	});
 
 	generateGreenHouseRecipe(event, null, '8x minecraft:bamboo', ['64x minecraft:bamboo', '8x minecraft:bamboo'], 1);
+	
+	generateGreenHouseRecipe(event, null, '8x tfc:food/fresh_seaweed', ['24x tfc:food/fresh_seaweed', '8x tfc:food/fresh_seaweed'], 1);
+
+	generateGreenHouseRecipe(event, 'minecraft:the_nether', '4x minecraft:glow_berries', ['20x minecraft:glow_berries', '4x minecraft:glow_berries'], 1);
 
 	// Mars Wood
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/strophar', [
