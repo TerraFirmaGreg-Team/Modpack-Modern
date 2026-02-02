@@ -472,6 +472,33 @@ function registerTFCGurmanRecipes(event) {
 		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:fresh_onion_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
 	});
 
+	// Raw Croissants
+	global.processorRecipe(event, 'raw_croissants', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#tfc:foods/flour', 'firmalife:food/butter', '#forge:eggs'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['2x tfc_gourmet:raw_croissants'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('2x tfc_gourmet:raw_croissants').copyOldestFood()
+	});
+
+	// Raw crepes
+	global.processorRecipe(event, 'raw_crepes', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['#tfc:foods/flour', 'firmalife:food/butter', '#forge:eggs'],
+		fluidInputs: ['#tfc:milks 500'],
+		itemOutputs: ['2x tfc_gourmet:raw_crepes'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('2x tfc_gourmet:raw_crepes').copyOldestFood()
+	});
+
+	// Oladyi
+	global.processorRecipe(event, 'raw_oladyi', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x #tfc:foods/dough'],
+		fluidInputs: ['#tfc:milks 500'],
+		itemOutputs: ['2x tfc_gourmet:raw_oladyi'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('2x tfc_gourmet:raw_oladyi').copyOldestFood()
+	});
+
 	//#endregion
 
 	// #region Drying
@@ -523,9 +550,48 @@ function registerTFCGurmanRecipes(event) {
 		'tfc:powder/salt'
 	]).id('tfg:shapeless/takoyaki_from_crawlermari');
 
-	event.replaceOutput({ id: "tfc_gourmet:crafting/raw_pelmeni" }, "tfc_gourmet:raw_pelmeni", "2x tfc_gourmet:raw_pelmeni");
-	event.replaceOutput({ id: "tfc_gourmet:crafting/raw_vareniki" }, "tfc_gourmet:raw_vareniki", "tfc_gourmet:raw_vareniki");
-	event.replaceOutput({ id: "tfc_gourmet:crafting/raw_oladyi" }, "tfc_gourmet:raw_oladyi", "2x tfc_gourmet:raw_oladyi");
-	event.replaceOutput({ id: "tfc_gourmet:crafting/raw_syrniki" }, "tfc_gourmet:raw_syrniki", "2x tfc_gourmet:raw_syrniki");
+	event.remove({ id: "tfc_gourmet:crafting/raw_pelmeni" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc_gourmet:raw_pelmeni`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfc:foods/dough`),
+		TFC.ingredient.notRotten(`#tfc:foods/raw_meats`),
+		TFC.ingredient.notRotten(`#tfc:foods/dough`)
+	]).id(`tfg:shapeless/raw_pelmeni`)
+
+	event.remove({ id: "tfc_gourmet:crafting/raw_vareniki" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`tfc_gourmet:raw_vareniki`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfc:foods/dough`),
+		TFC.ingredient.notRotten(`#tfc:foods/vegetables`)
+	]).id(`tfg:shapeless/raw_vareniki`)
+
+	event.remove({ id: "tfc_gourmet:crafting/raw_oladyi" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc_gourmet:raw_oladyi`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfc:foods/dough`),
+		TFC.ingredient.notRotten(`#tfc:foods/dough`),
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('#tfc:milks', 500))
+	]).id(`tfg:shapeless/raw_oladyi`)
+
+	event.remove({ id: "tfc_gourmet:crafting/raw_syrniki" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc_gourmet:raw_syrniki`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfg:foods/cheeses`),
+		TFC.ingredient.notRotten(`#forge:eggs`),
+		TFC.ingredient.notRotten(`#tfc:foods/flour`)
+	]).id(`tfg:shapeless/raw_syrniki`)
+
+	event.remove({ id: "tfc_gourmet:crafting/raw_croissants" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc_gourmet:raw_croissants`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		TFC.ingredient.notRotten(`firmalife:food/butter`),
+		TFC.ingredient.notRotten(`#forge:eggs`),
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 1000))
+	]).id(`tfg:shapeless/raw_croissants`)
+
+	event.remove({ id: "tfc_gourmet:crafting/raw_crepes" });
+	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of(`2x tfc_gourmet:raw_crepes`).copyFood(), [
+		TFC.ingredient.notRotten(`#tfc:foods/flour`),
+		TFC.ingredient.notRotten(`firmalife:food/butter`),
+		TFC.ingredient.notRotten(`#forge:eggs`),
+		TFC.ingredient.fluid(TFC.fluidStackIngredient('#tfc:milks', 500))
+	]).id(`tfg:shapeless/raw_crepes`)
+
 	// #endregion
 }
