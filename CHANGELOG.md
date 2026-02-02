@@ -6,6 +6,7 @@
 - The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
 - Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
 - TFC Gurman changed its name and recipe IDs to TFC Gourmet. There will be conversion items, but not fluids, so drink all your lemonade and kvass before updating.
+- The BTX line has been modified, with the Cracker now outputting the used Catalyser instead of the LCR
 #### Energy Update
 - Cetane Boosted Diesel's duration is buffed by 30%
 - Diesel's duration is nerfed by 25%, but can now be crafted at ULV
@@ -13,6 +14,7 @@
 - Light Fuel isn't a fuel anymore (make Diesel with it!)
 - High Octane Gasoline now requires an IV Energy Hatch
 - Add Small Fission Reactor, Small Turbine Generator, and the Cooling Tower. You can now make power from Fission on Earth!
+- BTX has been buffed by 10%, and also produces 12.5% more with each craft!
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
@@ -50,6 +52,7 @@
 - Base recipe duration has been reduced to 600/450/300 seconds. (#2950) @Redeix
 - More circuit options for recipes that priorities seeds/saplings and recipes that prioritize leaves have been added. (#2950) @Redeix
 - More plants have been added for production. @Redeix & @thederpysockdude123
+- The EGH and the Pisciculture recipes now require 50% less energy
 #### Other major changes
 - Added much more music to the different dimensions @Pyritie
 - Added new advanced GTCEu Terminals @TomPlop
