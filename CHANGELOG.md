@@ -78,6 +78,7 @@
 - Backpack void upgrades are now cheaper @Pyritie
 - All tools should now have TFC damage types (#2868) @Pyritie
 - Added recipes for advanced GTCEu Terminals @TomPlop
+- TFC magma blocks, lightblooms, and bulbkins now correctly have emissive textures @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
