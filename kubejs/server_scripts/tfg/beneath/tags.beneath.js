@@ -25,8 +25,7 @@ function registerTFGBeneathItemTags(event) {
         'minecraft:small_dripleaf',
         'minecraft:glow_lichen',
         'minecraft:hanging_roots',
-        'beneath:wood/leaves/crimson',
-        'beneath:wood/leaves/warped',
+		'minecraft:spore_blossom',
         '#beneath:mushrooms'
 	];
     beneath_plants.forEach(plant =>
