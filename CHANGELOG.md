@@ -61,6 +61,7 @@
 - Added recipes to make krummholz. (#2950) @Redeix
 - Added config file for Via Romana support. (#2950) @Redeix
 - Backpack void upgrades are now cheaper @Pyritie
+- All tools should now have TFC damage types (#2868) @Pyritie
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
