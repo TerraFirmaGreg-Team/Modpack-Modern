@@ -239,6 +239,7 @@ function registerTFGFoodItemTags(event) {
 	 */
 	const usable_in_meal_bag = [
 		'#tfc:foods/meats',
+		'#minecraft:fishes',
 		'#tfc:foods/grains',
 		'#tfc:foods/vegetables',
 		'#tfc:foods/fruits',
@@ -273,8 +274,7 @@ function registerTFGFoodItemTags(event) {
 		'tfc_gurman:falafel',
 		'tfc_gurman:hummus',
 		'tfc_gurman:sauerkraut',
-		'tfc_gurman:bratwurst',
-		'tfg:fish_roe'
+		'tfc_gurman:bratwurst'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
