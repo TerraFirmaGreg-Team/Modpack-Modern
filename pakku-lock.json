@@ -12908,6 +12908,27 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "tfc_gourmet-1.4.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/1ns5Lyk4/tfc_gourmet-1.4.3.jar",
+                    "id": "1ns5Lyk4",
+                    "parent_id": "ERme2o65",
+                    "hashes": {
+                        "sha512": "7fef1e460dfb20478d959efad82093de0c538aa16b8b6294dcd057f06da82dc6ad90c6e1c5adfa275f600de8c04868e952f46b856b36d61402383bdfacac61ec",
+                        "sha1": "103326499c4a574c87474a5af52f97d7a730071f"
+                    },
+                    "required_dependencies": [],
+                    "size": 398088,
+                    "date_published": "2026-02-02T19:04:40.071653Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "tfc_gourmet-1.4.2.jar",
                     "mc_versions": [
@@ -12930,27 +12951,6 @@
                     ],
                     "size": 521700,
                     "date_published": "2026-02-02T03:07:46.393Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "tfc_gurman-1.4.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/tMfASqPh/tfc_gurman-1.4.2.jar",
-                    "id": "tMfASqPh",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "ac46e98199659c20c11c036ced30b7aaff012e702be7ef8d7cad06ad91db386969edd0d686ec2862682b7dab322d0c23c1f6c8ff8a35799bfd492c1589515450",
-                        "sha1": "0f079c981e2610bf6462bad4bf171c831813cd5c"
-                    },
-                    "required_dependencies": [],
-                    "size": 519124,
-                    "date_published": "2026-02-02T02:29:35.480162Z"
                 }
             ]
         },
