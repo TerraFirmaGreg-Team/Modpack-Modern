@@ -5,6 +5,13 @@
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 - The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
 - Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
+#### Energy Update
+- Cetane Boosted Diesel duration is buffed by 30%
+- Diesel duration is nerfed by 25% but can now be craftable at ULV
+- Added distillation recipe to get fuel from oil with the Vacuum Chamber
+- Lightfuel isn't a fuel anymore (make Diesel with it)
+- High Octane Gasoline now requires IV Energy Hatch
+- Add Small Fission Reactor, Small Turbine Generator and the Cooling Tower. You can now make power from Fission on Earth
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
@@ -25,7 +32,15 @@
 - Polyethylene now requires an MV chemical reactor
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
 #### EV changes
-(tom's changelist goes here)
+- Add Radon to EV Superconductor so they are gated behind the Uranium Reactor
+- Active Energy Transformer and Normal Laser Pipe moved to EV behind the Uranium Reactor
+- Change to Refrigerant Pellet, you now need the Terrafirmaguard PA6 to run Plutonium Rod
+- Adding the Heat Battery a new multiblock storing heat from your fission coolant
+- Rework of the Ostrum Linear Accelerator: it can now be expanded in height, requires heat from a Heat Battery to run and used for many new resources
+- Every Fission Reactors now output a depleted rod that you have to process to get the product from fission
+- The depleted rod now has an average heat depending of the temperature of the fission reactor while it was in it. Everytime the reactor goes in cooldown it adds 10 000 heat to your rod
+- RTM Coils were modified to require resources from Mars (from the martian trees) and Rockwool
+- Nuclear Turbine will now stop without the structure breaking if there is blocks under it or inside the chimney
 #### IV changes
 - Multi-Layer Insulated Shielding is now required for HSS-G coils.
 #### Electric Greenhouse changes
@@ -61,6 +76,7 @@
 - Added recipes to make krummholz. (#2950) @Redeix
 - Added config file for Via Romana support. (#2950) @Redeix
 - Backpack void upgrades are now cheaper @Pyritie
+- Added recipes for GTceu Terminal
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
