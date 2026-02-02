@@ -5,6 +5,7 @@
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
 - The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
 - Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
+- TFC Gurman changed its name and recipe IDs to TFC Gourmet. There will be conversion items, but not fluids, so drink all your lemonade and kvass before updating.
 #### Energy Update
 - Cetane Boosted Diesel's duration is buffed by 30%
 - Diesel's duration is nerfed by 25%, but can now be crafted at ULV
