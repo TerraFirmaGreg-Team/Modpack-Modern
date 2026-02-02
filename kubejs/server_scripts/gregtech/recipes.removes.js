@@ -30,10 +30,18 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_sandstone_slab')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_stairs')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_slab')
-	removeMaceratorRecipe(event, 'macerate_granite')
-	removeMaceratorRecipe(event, 'macerate_diorite')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_slab')
-	removeMaceratorRecipe(event, 'macerate_andesite')
+
+	removeMaceratorRecipe(event, 'macerate_granite')
+	removeMaceratorRecipe(event, 'macerate_polished_granite');
+	removeMaceratorRecipe(event, 'macerate_granite_wall');
+	removeMaceratorRecipe(event, 'macerate_diorite');
+	removeMaceratorRecipe(event, 'macerate_polished_diorite');
+	removeMaceratorRecipe(event, 'macerate_diorite_wall');
+	removeMaceratorRecipe(event, 'macerate_andesite');
+	removeMaceratorRecipe(event, 'macerate_polished_andesite');
+	removeMaceratorRecipe(event, 'macerate_andesite_wall');
+
 	event.remove({ id: 'gtceu:shaped/stone_hammer' })
 	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
@@ -115,6 +123,16 @@ function removeGTCEURecipes(event) {
 
 	removeMaceratorRecipe(event, 'macerate_deepslate')
 	event.remove({ id: 'gtceu:rock_breaker/deepslate' })
+	removeMaceratorRecipe(event, 'macerate_deepslate_wall');
+	removeMaceratorRecipe(event, 'macerate_polished_deepslate');
+	removeMaceratorRecipe(event, 'macerate_cobbled_deepslate');
+	removeMaceratorRecipe(event, 'macerate_cobbled_deepslate_wall');
+	removeMaceratorRecipe(event, 'macerate_chiseled_deepslate');
+	removeMaceratorRecipe(event, 'macerate_polished_deepslate_wall');
+	removeMaceratorRecipe(event, 'macerate_deepslate_bricks');
+	removeMaceratorRecipe(event, 'macerate_deepslate_brick_wall');
+	removeMaceratorRecipe(event, 'macerate_deepslate_tiles');
+	removeMaceratorRecipe(event, 'macerate_deepslate_tile_wall');
 
 	// #endregion
 
@@ -159,6 +177,13 @@ function removeGTCEURecipes(event) {
 	removeCutterRecipe(event, 'cut_polished_blackstone_brick_into_slab_distilled_water')
 
 	event.remove({ id: 'gtceu:rock_breaker/blackstone' })
+	removeMaceratorRecipe(event, 'macerate_blackstone');
+	removeMaceratorRecipe(event, 'macerate_polished_blackstone');
+	removeMaceratorRecipe(event, 'macerate_polished_blackstone_bricks');
+	removeMaceratorRecipe(event, 'macerate_chiseled_polished_blackstone');
+	removeMaceratorRecipe(event, 'macerate_blackstone_wall');
+	removeMaceratorRecipe(event, 'macerate_polished_blackstone_wall');
+	removeMaceratorRecipe(event, 'macerate_blackstone_brick_wall');
 
 	// #endregion
 
@@ -473,6 +498,7 @@ function removeGTCEURecipes(event) {
 	//#region Выход: Пыль базальта
 
 	removeMaceratorRecipe(event, 'macerate_basalt')
+	removeMaceratorRecipe(event, 'macerate_polished_basalt');
 
 	//#endregion
 
@@ -852,6 +878,7 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_end_stone');
 	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
 	removeMaceratorRecipe(event, 'macerate_end_stone_brick_wall');
+
 
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
