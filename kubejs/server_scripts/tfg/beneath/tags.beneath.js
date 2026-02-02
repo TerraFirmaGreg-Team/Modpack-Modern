@@ -15,9 +15,23 @@ function registerTFGBeneathItemTags(event) {
     event.add('tfc:plants', 'minecraft:spore_blossom')
     event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
-	event.add('tfg:plants/beneath', 'beneath:gleamflower')
-    event.add('tfg:plants/beneath', 'beneath:burpflower')
-    event.add('tfg:plants/beneath', '#beneath:mushrooms')
+    /** 
+     * @property {string[]} beneath_plants - List of Beneath plants to be added to the `tfg:plants/beneath` tag.
+    */
+    const beneath_plants = [
+        'beneath:gleamflower',
+        'beneath:burpflower',
+        'minecraft:big_dripleaf',
+        'minecraft:small_dripleaf',
+        'minecraft:glow_lichen',
+        'minecraft:hanging_roots',
+        'beneath:wood/leaves/crimson',
+        'beneath:wood/leaves/warped',
+        '#beneath:mushrooms'
+	];
+    beneath_plants.forEach(plant =>
+	    event.add('tfg:plants/beneath', plant)
+    );
 
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')

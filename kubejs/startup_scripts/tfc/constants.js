@@ -788,15 +788,15 @@ global.TFC_JAMS = /** @type {const} */ ([
 ]);
 
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "tfc:plant/cherry_sapling", output: "tfc:food/cherry"},
-    { input: "tfc:plant/green_apple_sapling", output: "tfc:food/green_apple"},
-    { input: "tfc:plant/lemon_sapling", output: "tfc:food/lemon"},
-    { input: "tfc:plant/olive_sapling", output: "tfc:food/olive"},
-    { input: "tfc:plant/orange_sapling", output: "tfc:food/orange"},
-    { input: "tfc:plant/peach_sapling", output: "tfc:food/peach"},
-    { input: "tfc:plant/plum_sapling", output: "tfc:food/plum"},
-    { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple"},
-    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana"}
+    { input: "tfc:plant/cherry_sapling", output: "tfc:food/cherry", leaves: "tfc:plant/cherry_leaves" },
+    { input: "tfc:plant/green_apple_sapling", output: "tfc:food/green_apple", leaves: "tfc:plant/green_apple_leaves" },
+    { input: "tfc:plant/lemon_sapling", output: "tfc:food/lemon", leaves: "tfc:plant/lemon_leaves" },
+    { input: "tfc:plant/olive_sapling", output: "tfc:food/olive", leaves: "tfc:plant/olive_leaves" },
+    { input: "tfc:plant/orange_sapling", output: "tfc:food/orange", leaves: "tfc:plant/orange_leaves" },
+    { input: "tfc:plant/peach_sapling", output: "tfc:food/peach", leaves: "tfc:plant/peach_leaves" },
+    { input: "tfc:plant/plum_sapling", output: "tfc:food/plum", leaves: "tfc:plant/plum_leaves" },
+    { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple", leaves: "tfc:plant/red_apple_leaves" },
+    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" }
 ]);
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
