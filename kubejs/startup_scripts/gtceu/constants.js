@@ -427,7 +427,9 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "venus_stone",
     "mercury_stone",
     "glacio_stone",
-    "red_granite"
+    "red_granite",
+    "flavolite",
+    "sandy_jadestone"
 ]);
 //#endregion
 
