@@ -58,7 +58,7 @@ const pisciculture_dimension_index = [
 		const resolvedFluidOut = dimMods?.fluid_out ?? 'tfg:nitrate_rich_water';
 
 		/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV EUt. */
-		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VHA[GTValues.LV];
 
 		/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
 		const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;

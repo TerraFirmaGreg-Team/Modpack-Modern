@@ -727,6 +727,26 @@ function registerTFGNuclearRecipes(event) {
 
 	//#endregion
 
+	//#region Heat Battery Component
+
+	event.recipes.gtceu.mixer('tfg:copper_sandy')
+		.itemInputs('1x #forge:sand')
+		.inputFluids(Fluid.of('gtceu:copper', 15984))
+		//.inputFluids(Fluid.of('gtceu:silicon', 7992))
+		.itemOutputs(Item.of('tfg:copper_sandy', 1))
+		.EUt(GTValues.VA[GTValues.EV])
+		.duration(20*48)
+
+	event.recipes.gtceu.mixer('tfg:beryllium_sandy')
+		.itemInputs('1x #forge:sand')
+		.inputFluids(Fluid.of('gtceu:beryllium', 15984))
+		.inputFluids(Fluid.of('gtceu:silicon', 7992))
+		.itemOutputs(Item.of('tfg:beryllium_sandy', 1))
+		.EUt(GTValues.VA[GTValues.IV])
+		.duration(20*48)
+
+	//#endregion
+
 	//#region Power Gen
 
 	event.recipes.gtceu.nuclear_turbine('dense_steam')
@@ -771,7 +791,7 @@ function registerTFGNuclearRecipes(event) {
 		.inputFluids(Fluid.of('tfg:thermally_conductive_fluid', 1000))
 		.itemOutputs('tfg:casings/heat_pipe_casing')
 		.circuit(6)
-		.EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20*4)
 
 	event.shaped('tfg:cooling_tower', [
