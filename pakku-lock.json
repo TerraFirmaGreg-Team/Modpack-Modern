@@ -10049,7 +10049,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "notenoughanimations-forge-1.11.1-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.11.2-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10057,20 +10057,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/cfiRPrQF/notenoughanimations-forge-1.11.1-mc1.20.1.jar",
-                    "id": "cfiRPrQF",
+                    "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/5SeKXwLU/notenoughanimations-forge-1.11.2-mc1.20.1.jar",
+                    "id": "5SeKXwLU",
                     "parent_id": "MPCX6s5C",
                     "hashes": {
-                        "sha512": "9335ace46a9f6477df026f19cab08c656fc7c0a7f1069eedfdadbba01bfd2ad43f9e90a0bb5ef8e867d51608dddcf85fa9653eb178f4a0e6e6bcfb45d0959270",
-                        "sha1": "9aa8917d7c0a5311dc495da3c720434de49e0e24"
+                        "sha512": "594ce4db615446ee20e9938dcb1770c75f2073d82474ff515bebb08fcd1451eac1cd98add2f0a0ddf4b7e35e78525973ae6ed8538a705f5606ce5379173d0718",
+                        "sha1": "fe7898d27c15b76552a69b972abec0728be9ea8a"
                     },
                     "required_dependencies": [],
-                    "size": 1933839,
-                    "date_published": "2025-12-12T19:11:52.494096Z"
+                    "size": 1935532,
+                    "date_published": "2026-02-01T17:18:01.484134Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "notenoughanimations-forge-1.11.1-mc1.20.1.jar",
+                    "file_name": "notenoughanimations-forge-1.11.2-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10078,16 +10078,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7325/366/notenoughanimations-forge-1.11.1-mc1.20.1.jar",
-                    "id": "7325366",
+                    "url": "https://edge.forgecdn.net/files/7561/811/notenoughanimations-forge-1.11.2-mc1.20.1.jar",
+                    "id": "7561811",
                     "parent_id": "433760",
                     "hashes": {
-                        "sha1": "9aa8917d7c0a5311dc495da3c720434de49e0e24",
-                        "md5": "34fd79756da8b5278a5b0905d98ffeca"
+                        "sha1": "fe7898d27c15b76552a69b972abec0728be9ea8a",
+                        "md5": "81f5099779c0b4d223275e7bac616a4e"
                     },
                     "required_dependencies": [],
-                    "size": 1933839,
-                    "date_published": "2025-12-12T19:11:51.067Z"
+                    "size": 1935532,
+                    "date_published": "2026-02-01T17:17:59.670Z"
                 }
             ]
         },
@@ -12887,7 +12887,7 @@
             ]
         },
         {
-            "pakku_id": "zjKgkuN1c64ZMrfV",
+            "pakku_id": "5Hw8y3XluL4fjZ65",
             "pakku_links": [
                 "AqNG8HNM9pfy1ges",
                 "64uacGcEw697jVGs"
@@ -12895,12 +12895,12 @@
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "curseforge": "tfcgurman",
-                "modrinth": "tfc_gurman"
+                "curseforge": "tfc-gurman",
+                "modrinth": "tfc_gourmet"
             },
             "name": {
                 "curseforge": "TFC Gurman",
-                "modrinth": "TFC Gurman"
+                "modrinth": "TFC Gourmet"
             },
             "id": {
                 "curseforge": "1363944",
@@ -12908,29 +12908,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "tfc_gurman-1.4.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/zhoqj2Wr/tfc_gurman-1.4.1.jar",
-                    "id": "zhoqj2Wr",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "dbfa8e9423dc6bb4fa98a17b99478651b99081e4990f1b9f01bfc5ade6ec35955756f8c856d2bfd3f4865779aaff4a7c68b6bb3b7e93f397afbf407c83c992c3",
-                        "sha1": "0be72570ba157b7600c3b9f4ea694744a227112a"
-                    },
-                    "required_dependencies": [],
-                    "size": 520225,
-                    "date_published": "2026-01-28T01:09:39.160234Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "tfc_gurman-1.4.1.jar",
+                    "file_name": "tfc_gourmet-1.4.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12938,19 +12917,40 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7538/795/tfc_gurman-1.4.1.jar",
-                    "id": "7538795",
+                    "url": "https://edge.forgecdn.net/files/7564/444/tfc_gourmet-1.4.2.jar",
+                    "id": "7564444",
                     "parent_id": "1363944",
                     "hashes": {
-                        "sha1": "0be72570ba157b7600c3b9f4ea694744a227112a",
-                        "md5": "d5734cf9b727fbb11b8025ceb26fe8aa"
+                        "sha1": "d4c2f1eb89330129fdc1e4ee78f61f1130d83fe5",
+                        "md5": "5e39aeac6e9a02f282140ef87c156de4"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "453394"
+                        "453394",
+                        "302973"
                     ],
-                    "size": 520225,
-                    "date_published": "2026-01-28T01:08:21.107Z"
+                    "size": 521700,
+                    "date_published": "2026-02-02T03:07:46.393Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfc_gurman-1.4.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/tMfASqPh/tfc_gurman-1.4.2.jar",
+                    "id": "tMfASqPh",
+                    "parent_id": "ERme2o65",
+                    "hashes": {
+                        "sha512": "ac46e98199659c20c11c036ced30b7aaff012e702be7ef8d7cad06ad91db386969edd0d686ec2862682b7dab322d0c23c1f6c8ff8a35799bfd492c1589515450",
+                        "sha1": "0f079c981e2610bf6462bad4bf171c831813cd5c"
+                    },
+                    "required_dependencies": [],
+                    "size": 519124,
+                    "date_published": "2026-02-02T02:29:35.480162Z"
                 }
             ]
         },
@@ -15261,7 +15261,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "playerrevive_compat-1.0.1-1d0e244.jar",
+                    "file_name": "playerrevive_compat-1.0.2-12c699b.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15269,18 +15269,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7528/776/playerrevive_compat-1.0.1-1d0e244.jar",
-                    "id": "7528776",
+                    "url": "https://edge.forgecdn.net/files/7564/958/playerrevive_compat-1.0.2-12c699b.jar",
+                    "id": "7564958",
                     "parent_id": "1440963",
                     "hashes": {
-                        "sha1": "05d191e5bb7c4ada8b2cbb7c604b3ab7d5040563",
-                        "md5": "7be622f95b711409c493da13c5c08772"
+                        "sha1": "a0f05d85155560b743d6ffab61741e3da3803611",
+                        "md5": "c1cb2f857a6fd0e71458637b25a33cbd"
                     },
                     "required_dependencies": [
                         "266890"
                     ],
-                    "size": 198416,
-                    "date_published": "2026-01-26T05:31:05.240Z"
+                    "size": 198220,
+                    "date_published": "2026-02-02T06:43:37.990Z"
                 }
             ]
         },

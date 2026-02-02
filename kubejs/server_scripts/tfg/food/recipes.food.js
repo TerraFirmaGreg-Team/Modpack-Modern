@@ -1180,7 +1180,7 @@ function registerTFGFoodRecipes(event) {
 		.duration(60)
 		.EUt(16)
 
-	event.shaped('4x tfc:powder/salt', ['A', 'B'], {A: '#forge:dusts/salt', B: '#forge:tools/mortars'})
+	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
 		.id(`tfg:mortar/salt`)
 
 	//#endregion

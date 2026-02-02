@@ -49,4 +49,18 @@ function registerTFGEquipmentItemTags(event) {
 	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_leggings')
 	event.add('ad_astra:heat_resistant_armor', 'gtceu:quarktech_boots')
 
+	event.add('tfc:deals_crushing_damage', '#forge:tools/mining_hammers')
+	event.add('tfc:deals_crushing_damage', '#minecraft:shovels')
+	event.add('tfc:deals_crushing_damage', '#forge:tools/spades')
+	event.add('tfc:deals_crushing_damage', '#forge:tools/wrenches')
+	event.add('tfc:deals_slashing_damage', '#forge:tools/chainsaws')
+	event.add('tfc:deals_slashing_damage', '#forge:tools/saws')
+	event.add('tfc:deals_slashing_damage', '#forge:tools/butchery_knives')
+	event.add('tfc:deals_slashing_damage', '#forge:tools/files')
+	event.add('tfc:deals_piercing_damage', '#minecraft:pickaxes')
+	event.add('tfc:deals_piercing_damage', '#forge:tools/drills')
+	event.add('tfc:deals_piercing_damage', '#forge:tools/screwdrivers')
+	event.add('tfc:deals_piercing_damage', '#minecraft:hoes')
+	event.add('tfc:deals_piercing_damage', '#forge:tools/crowbars')
+	event.add('tfc:deals_piercing_damage', '#forge:tools/wire_cutters')
 }

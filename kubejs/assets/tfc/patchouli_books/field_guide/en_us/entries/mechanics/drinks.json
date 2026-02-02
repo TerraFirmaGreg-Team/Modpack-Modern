@@ -38,7 +38,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Teas",
 			"text": "$(thing)Teas$() can be brewed using dried versions of certain plants.$(br2)They provide short but useful buffs and warm your body temperature by 4°C. Perfect for winters!",
-			"item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
+			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
 		},
 		{
 			"type": "patchouli:text",
@@ -48,7 +48,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Treats",
 			"text": "This is a category for more misc drinks with delicious taste and special effects. Enjoy!",
-			"item": "tfc_gurman:cocoa_bucket,tfc_gurman:coffee_bucket,tfc_gurman:nalivka_bucket,tfc_gurman:kvass_bucket,tfc_gurman:compote_bucket,tfc_gurman:lemonade_bucket"
+			"item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
 		},
 		{
 			"type": "patchouli:text",
@@ -58,7 +58,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Milks",
 			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If the milking isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs, it provides dairy nutrition if drank after eating, and can later be made into cheese.",
-			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gurman:ox_milk_bucket,tfc_gurman:sheep_milk_bucket,tfc_gurman:alpaca_milk_bucket"
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
 		},
 		{
 			"title": "Spring Water",

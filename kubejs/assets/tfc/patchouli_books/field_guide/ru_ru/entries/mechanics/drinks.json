@@ -38,7 +38,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Чаи",
 			"text": "$(thing)Чаи$() можно заваривать, используя высушенные версии некоторых растений.$(br2)Они дают кратковременные, но эффективные эффекты и согревают на 4°C. Идеально подходят для зимы!",
-			"item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
+			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
 		},
 		{
 			"type": "patchouli:text",
@@ -48,7 +48,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Сладости",
 			"text": "Это категория для других разнообразных напитков с восхитительным вкусом и особыми эффектами. Приятного аппетита!",
-			"item": "tfc_gurman:cocoa_bucket,tfc_gurman:coffee_bucket,tfc_gurman:nalivka_bucket,tfc_gurman:kvass_bucket,tfc_gurman:compote_bucket,tfc_gurman:lemonade_bucket"
+			"item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
 		},
 		{
 			"type": "patchouli:text",
@@ -58,7 +58,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Молоко",
 			"text": "$(thing)Молоко$() можно получить от большинства самок молочных животных, просто щелкнув по ним правой кнопкой мыши с деревянным или металлическим ведром, когда уровень прирученности достигнет достаточно высокого уровня. (Если доение не работает, убедитесь, что ведра не состаканы!)$(br)Хотя этот напиток не дает никаких бонусов, он обеспечивает организм молочными продуктами, если его выпить после еды, и из него впоследствии можно приготовить сыр.",
-			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gurman:ox_milk_bucket,tfc_gurman:sheep_milk_bucket,tfc_gurman:alpaca_milk_bucket"
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
 		},
 		{
 			"title": "Родниковая вода",

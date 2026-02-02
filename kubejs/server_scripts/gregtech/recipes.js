@@ -134,6 +134,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
+		.addMaterialInfo(true, true)
 
 	// #endregion
 

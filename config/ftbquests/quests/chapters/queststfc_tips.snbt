@@ -685,7 +685,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gurman:ox_milk_bucket)item(tfc_gurman:sheep_milk_bucket)item(tfc_gurman:alpaca_milk_bucket))"
+							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gourmet:ox_milk_bucket)item(tfc_gourmet:sheep_milk_bucket)item(tfc_gourmet:alpaca_milk_bucket))"
 						}
 					}
 					optional_task: true
