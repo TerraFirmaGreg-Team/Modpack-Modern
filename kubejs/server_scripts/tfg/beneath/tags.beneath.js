@@ -12,7 +12,6 @@ function registerTFGBeneathItemTags(event) {
     event.add("minecraft:piglin_loved", "tfc:ore/rich_native_gold");
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
-    event.add('tfc:plants', 'minecraft:spore_blossom')
     event.remove('createaddition:plants', 'minecraft:moss_carpet')
 
     /** 
