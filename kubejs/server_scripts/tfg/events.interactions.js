@@ -248,6 +248,12 @@ BlockEvents.rightClicked(event => {
 	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:impure_moderate_core_frame', 'tfg:impure_graphite_moderator', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
 	transformBlockWithToolReturn(event, 'tfg:impure_moderate_core_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:impure_graphite_moderator', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:copper_sandy_frame', 'tfg:copper_sandy', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
+	transformBlockWithToolReturn(event, 'tfg:copper_sandy_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:copper_sandy', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+
+	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:beryllium_sandy_frame', 'tfg:beryllium_sandy', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
+	transformBlockWithToolReturn(event, 'tfg:beryllium_sandy_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:beryllium_sandy', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+
 });
 
 // Makes scythes, hoes, and knives take damage when cutting grass

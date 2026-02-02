@@ -44,9 +44,9 @@ const registerTFGBlockTagsNuclear = (event) => {
 
 	let COMPONENTS_HB = 'deafission:components_hb';
 
-    event.add(COMPONENTS_HB, 'minecraft:sand');
-    event.add(COMPONENTS_HB, 'tfg:impure_moderate_core_frame');
-	event.add(COMPONENTS_HB, 'tfg:moderate_core_frame');
+    //event.add(COMPONENTS_HB, 'minecraft:sand');
+    event.add(COMPONENTS_HB, 'tfg:copper_sandy_frame');
+	event.add(COMPONENTS_HB, 'tfg:beryllium_sandy_frame');
     //event.add(COMPONENTS_HB, 'minecraft:bedrock'); // For Creative usage only
 
 	//#endregion

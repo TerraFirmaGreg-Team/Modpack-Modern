@@ -76,7 +76,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 	const canFertilize = resolvedFertilizer !== null;
 
 	/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV */
-	const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+	const resolvedEUt = dimMods ? dimMods.eut : GTValues.VHA[GTValues.LV];
 
 	/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
 	const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;
