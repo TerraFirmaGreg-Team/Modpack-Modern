@@ -10,7 +10,7 @@ function registerTFGStoneItemTags(event) {
 
 	function addToMaterialTag(material, block) {
 		if (material != null) {
-			if (block.endsWith('_slab') || block.endsWith('_wall')) {
+			if (block.endsWith('_slab') || block.endsWith('_wall') || block.endsWith('_support')) {
 				event.add(`tfg:stone_composition/${material}_half`, block);
 			}
 			else {

@@ -76,6 +76,7 @@
 - Fixed RNR roofs not having mineable tags, and blocked the stair/slab frame from Additional Placements (#2870) @Pyritie
 - Fixed piglin brutes not dropping meat or bones @Pyritie
 - Fixed not being able to put rings, wrench tips, screwdriver tips, buzzsaw blades, or wire cutter tips in a crucible (#2913) @Pyritie
+- Fixed a concrete dupe (#2948) and some other stone-related recycling recipes @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
