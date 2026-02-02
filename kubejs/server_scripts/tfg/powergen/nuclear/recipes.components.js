@@ -36,8 +36,8 @@ function registerTFGNuclearComponentsRecipes(event) {
 	//component("HEAT", "minecraft:bedrock", 1000);
 
     //componentThermal('THERMAL', '#forge:sand', 1000, 1);
-    componentThermal('THERMAL', 'tfg:impure_moderate_core_frame', 2000, 10);
-	componentThermal('THERMAL', 'tfg:moderate_core_frame', 4000, 10);
+    componentThermal('THERMAL', 'tfg:copper_sandy_frame', 1000, 10);
+	componentThermal('THERMAL', 'tfg:beryllium_sandy_frame', 2000, 10);
     //componentThermal('THERMAL', 'minecraft:bedrock', 9001, 10);
 	
 }
