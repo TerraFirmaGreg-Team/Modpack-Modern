@@ -239,6 +239,7 @@ function registerTFGFoodItemTags(event) {
 	 */
 	const usable_in_meal_bag = [
 		'#tfc:foods/meats',
+		'#minecraft:fishes',
 		'#tfc:foods/grains',
 		'#tfc:foods/vegetables',
 		'#tfc:foods/fruits',
