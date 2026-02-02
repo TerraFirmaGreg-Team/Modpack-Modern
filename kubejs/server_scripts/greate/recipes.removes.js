@@ -9,6 +9,7 @@ function removeGreateRecipes(event) {
 	global.GREATE_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
+		TFGHelpers.clearMaterialInfo(item);
 	})
 
 	global.GREATE_DISABLED_FLUIDS.forEach(fluid => {
