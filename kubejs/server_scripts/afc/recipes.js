@@ -89,7 +89,37 @@ const registerAFCRecipes = (event) => {
 
 		}).id(`afc:crafting/wood/${wood}_stomping_barrel`)
 
-	})
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
+			.itemInputs(`afc:wood/log/${wood}`)
+			.itemOutputs(`afc:wood/stripped_log/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
+			.itemInputs(`afc:wood/wood/${wood}`)
+			.itemOutputs(`afc:wood/stripped_wood/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_log/${wood}`, `afc:wood/log/${wood}`)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/stripping_${wood}_log`)
+
+		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_wood/${wood}`, `afc:wood/wood/${wood}`)
+			.speedLimits(0)
+			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+			.id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	});
+
+	global.AFC_SAPLINGS.forEach(wood => {
+		event.shaped(`4x afc:wood/fallen_leaves/${wood.sapling}`,[
+			'AA',
+			'AA'
+		], {
+			A: `afc:wood/leaves/${wood.sapling}`
+		}).id(`tfg:shaped/afc/${wood.sapling}_leaves_to_fallen_leaves`);
+	});
 
 	// #endregion
 
@@ -236,33 +266,6 @@ const registerAFCRecipes = (event) => {
 		.inputFluid(Fluid.of('afc:birch_syrup', 100))
 		.outputItem('afc:birch_sugar')
 		.id('tfg:barrel/birch_syrup_to_sugar')
-
-
-	// Stripped logs
-
-	global.AFC_WOOD_TYPES.forEach(wood => {
-		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
-			.itemInputs(`afc:wood/log/${wood}`)
-			.itemOutputs(`afc:wood/stripped_log/${wood}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
-			.itemInputs(`afc:wood/wood/${wood}`)
-			.itemOutputs(`afc:wood/stripped_wood/${wood}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_log/${wood}`, `afc:wood/log/${wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${wood}_log`)
-
-		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_wood/${wood}`, `afc:wood/wood/${wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${wood}_wood`)
-	})
 
 	const MORE_STRIPPING = [
 		{ wood: 'black_oak', stripped: 'oak', stripped_mod: 'tfc' },
