@@ -6,12 +6,12 @@
 - The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
 - Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
 #### Energy Update
-- Cetane Boosted Diesel duration is buffed by 30%
-- Diesel duration is nerfed by 25% but can now be craftable at ULV
+- Cetane Boosted Diesel's duration is buffed by 30%
+- Diesel's duration is nerfed by 25%, but can now be crafted at ULV
 - Added distillation recipe to get fuel from oil with the Vacuum Chamber
-- Lightfuel isn't a fuel anymore (make Diesel with it)
-- High Octane Gasoline now requires IV Energy Hatch
-- Add Small Fission Reactor, Small Turbine Generator and the Cooling Tower. You can now make power from Fission on Earth
+- Light Fuel isn't a fuel anymore (make Diesel with it!)
+- High Octane Gasoline now requires an IV Energy Hatch
+- Add Small Fission Reactor, Small Turbine Generator, and the Cooling Tower. You can now make power from Fission on Earth!
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
@@ -32,15 +32,15 @@
 - Polyethylene now requires an MV chemical reactor
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
 #### EV changes
-- Add Radon to EV Superconductor so they are gated behind the Uranium Reactor
-- Active Energy Transformer and Normal Laser Pipe moved to EV behind the Uranium Reactor
-- Change to Refrigerant Pellet, you now need the Terrafirmaguard PA6 to run Plutonium Rod
-- Adding the Heat Battery a new multiblock storing heat from your fission coolant
-- Rework of the Ostrum Linear Accelerator: it can now be expanded in height, requires heat from a Heat Battery to run and used for many new resources
-- Every Fission Reactors now output a depleted rod that you have to process to get the product from fission
-- The depleted rod now has an average heat depending of the temperature of the fission reactor while it was in it. Everytime the reactor goes in cooldown it adds 10 000 heat to your rod
-- RTM Coils were modified to require resources from Mars (from the martian trees) and Rockwool
-- Nuclear Turbine will now stop without the structure breaking if there is blocks under it or inside the chimney
+- Added Radon to EV Superconductor so they are gated behind the Uranium Reactor
+- Active Energy Transformer and Normal Laser Pipe are moved to EV behind the Uranium Reactor
+- Change to Refrigerant Pellet, you now need the TerraFirmaGuard PA6 to run your first Plutonium Rods
+- Added the Heat Battery - a new multiblock that stores heat from your fission coolant
+- Rework of the Ostrum Linear Accelerator - it can now be expanded in height, requires heat from a Heat Battery to run and used for many new resources
+- Every Fission Reactor recipe now outputs a depleted rod that you have to process to get the product from fission
+- The depleted rod now has an average heat depending on the temperature of the fission reactor while it was in it. Every time the reactor goes on cooldown, it adds 10,000 heat to your rod
+- RTM Coils were modified to require resources from Mars (from the martian trees) and Rockwool, but now you don't need them as early in EV
+- Blocks (such as sand piles) in the Nuclear Turbine's chimney or turbine area will now just stop it from working instead of unforming the multiblock
 #### IV changes
 - Multi-Layer Insulated Shielding is now required for HSS-G coils.
 #### Electric Greenhouse changes
