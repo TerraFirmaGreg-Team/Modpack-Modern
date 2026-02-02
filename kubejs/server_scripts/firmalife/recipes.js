@@ -200,6 +200,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.category(GTRecipeCategories.INGOT_MOLDING)
 
 	event.replaceInput({ id: 'firmalife:crafting/bottle_label' }, 'firmalife:beeswax', '#forge:wax')
+	
+	event.shapeless('firmalife:fruit_leaf', ['#tfc:fruit_tree_leaves']).id('tfg:shapeless/firmalife/fruit_leaf_from_fruit_leaves');
 
 	//#endregion
 

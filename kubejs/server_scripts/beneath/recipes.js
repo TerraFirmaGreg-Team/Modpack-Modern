@@ -85,4 +85,18 @@ const registerBeneathRecipes = (event) => {
 		C: 'beneath:wood/planks/warped',
 		D: 'beneath:wood/log/warped'
 	}).id('tfg:shaped/warped_sewing_table')
+
+	event.shaped(`4x beneath:wood/fallen_leaves/crimson`,[
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/crimson`
+	}).id(`tfg:shaped/beneath/crimson_leaves_to_fallen_leaves`);
+
+	event.shaped(`4x beneath:wood/fallen_leaves/warped`,[
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/warped`
+	}).id(`tfg:shaped/beneath/warped_leaves_to_fallen_leaves`);
 }

@@ -30,4 +30,12 @@ function registerMacawsForTFCRecipes(event) {
     	'mcw_tfc_aio:roofs/gray_roofs/gray_roof_slab',
     	'mcw_tfc_aio:roofs/gray_roofs/gray_roof_slab'
 	]).id('minecraft:gray_terracotta')
-}
+
+	event.shaped(`4x mcw_tfc_aio:fences/other_fences/hedge`, [
+		'BAB',
+		'BAB'
+	], {
+		A: '#forge:rods/wooden',
+		B: '#minecraft:leaves'
+	}).id(`tfg:shaped/mcw_tfc/hedge_fence_from_leaves`);
+};

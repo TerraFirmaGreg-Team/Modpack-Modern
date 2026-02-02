@@ -137,6 +137,21 @@ function registerTFCItemTags(event) {
     //Plants
     event.add("tfc:plants", "#tfc:wild_fruits");
 
+    /**
+     * @property {string[]} krummholz_types - List of krummholz wood types.
+     */
+    const krummholz_types = [
+        'aspen',
+        'douglas_fir',
+        'pine',
+        'spruce',
+        'white_cedar'
+    ];
+    krummholz_types.forEach(type => {
+        event.add('tfc:plants', `tfc:plant/${type}_krummholz`);
+        event.add('tfc:krummholz', `tfc:plant/${type}_krummholz`);
+    });
+
     // Для складывания
     event.add("tfc:pileable_ingots", "#forge:ingots");
     event.add("tfc:pileable_sheets", "#forge:plates");

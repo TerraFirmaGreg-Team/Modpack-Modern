@@ -28,6 +28,12 @@
 (tom's changelist goes here)
 #### IV changes
 - Multi-Layer Insulated Shielding is now required for HSS-G coils.
+#### Electric Greenhouse changes
+- You can now use glass casings and trapdoors for the EGH floor. @Redeix
+- Aquaponic multiblocks now only need half an amp to run. (#2950) @Redeix
+- Base recipe duration has been reduced to 600/450/300 seconds. (#2950) @Redeix
+- More circuit options for recipes that priorities seeds/saplings and recipes that prioritize leaves have been added. (#2950) @Redeix
+- More plants have been added for production. @Redeix & @thederpysockdude123
 ### Changes
 - Added much more music to the different dimensions @Pyritie
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
@@ -49,6 +55,11 @@
 - Added a furnace recipe for dead grass to thatch (#2935) @Coox1e
 - Added support for Bluemap (#2922) @trisjob
 - Added mixer and barrel recipes for dye fluids (#2925, #2938) @OLOXpl
+- Added recipes to convert leaves into leaf piles. (#2950) @Redeix
+- Added a recipe to convert fruit leaf blocks into firmalife fruit leaf items. (#2950) @Redeix
+- Added a recipe to turn leaf blocks into hedges. (#2950) @Redeix
+- Added recipes to make krummholz. (#2950) @Redeix
+- Added config file for Via Romana support. (#2950) @Redeix
 ### Bug fixes
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
