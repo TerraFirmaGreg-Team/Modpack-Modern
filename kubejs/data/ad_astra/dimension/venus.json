@@ -64,6 +64,26 @@
 						"spike": "tfg:spike/dripstone_spike",
 						"loose": "tfg:loose/dripstone"
 					},
+					"flavolite": {
+						"raw": "betterend:flavolite",
+						"hardened": "tfg:rock/hardened_flavolite",
+						"gravel": "tfg:rock/gravel_flavolite",
+						"cobble": "tfg:rock/cobble_flavolite",
+						"sand": "tfc:sand/green",
+						"sandstone": "tfc:raw_sandstone/green",
+						"spike": "tfg:spike/flavolite_spike",
+						"loose": "tfg:loose/flavolite"
+					},
+					"sandy_jadestone": {
+						"raw": "betterend:sandy_jadestone",
+						"hardened": "tfg:rock/hardened_sandy_jadestone",
+						"gravel": "tfg:rock/gravel_sandy_jadestone",
+						"cobble": "tfg:rock/cobble_sandy_jadestone",
+						"sand": "tfc:sand/green",
+						"sandstone": "tfc:raw_sandstone/green",
+						"spike": "tfg:spike/sandy_jadestone_spike",
+						"loose": "tfg:loose/sandy_jadestone"
+					},
 					"granite": "tfc:granite",
 					"diorite": "tfc:diorite",
 					"gabbro": "tfc:gabbro",
@@ -95,7 +115,8 @@
 							"basalt": "bottom",
 							"schist": "bottom",
 							"gneiss": "bottom",
-							"quartzite": "bottom"
+							"quartzite": "bottom",
+							"flavolite": "bottom"
 						}
 					},
 					{
@@ -116,7 +137,9 @@
 							"rhyolite": "middle",
 							"basalt": "middle",
 							"andesite": "middle",
-							"dacite": "middle"
+							"dacite": "middle",
+							"flavolite": "middle",
+							"sandy_jadestone": "middle"
 						}
 					}
 				],

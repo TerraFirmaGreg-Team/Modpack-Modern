@@ -148,6 +148,52 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "betterend:flavolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:flavolite_salt_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:flavolite_rock_salt_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:flavolite_lepidolite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:flavolite_spodumene_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "betterend:sandy_jadestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:sandy_jadestone_salt_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:sandy_jadestone_rock_salt_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:sandy_jadestone_lepidolite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:sandy_jadestone_spodumene_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

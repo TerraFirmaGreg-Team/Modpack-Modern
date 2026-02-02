@@ -1,0 +1,23 @@
+{
+	"feature": "tfg:venus/surface/crimsite_spikes",
+	"placement": [
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 4
+		},
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "MOTION_BLOCKING"
+		}
+	]
+}

@@ -128,4 +128,22 @@ const registerTFGRocksTagPrefixes = (event) => {
 		.generationCondition(shouldGenerateOre)
 
 	TFGHelpers.registerCobbleBlock('red_granite', 'gtceu:red_granite_cobblestone');
+
+	event.create('flavolite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_flavolite').defaultBlockState())
+		.baseModelLocation('betterend:block/flavolite')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('flavolite', 'tfg:rock/cobble_flavolite');
+
+	event.create('sandy_jadestone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_sandy_jadestone').defaultBlockState())
+		.baseModelLocation('betterend:block/sandy_jadestone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(shouldGenerateOre)
+
+	TFGHelpers.registerCobbleBlock('sandy_jadestone', 'tfg:rock/cobble_sandy_jadestone');
 }
