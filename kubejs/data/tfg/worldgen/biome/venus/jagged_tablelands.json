@@ -8,8 +8,8 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 10465603,
-		"fog_color": 9938052,
+		"sky_color": 11239553,
+		"fog_color": 11239553,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
@@ -39,7 +39,10 @@
 			"tfc:erosion"
 		],
 		[],
-		[],
+		[
+			"tfg:venus/terrain/lava_spring_rare",
+			"tfc:random_empty_hot_spring"
+		],
 		[],
 		[],
 		[],
@@ -49,9 +52,19 @@
 			"tfc:raw_boulder",
 			"tfc:cobble_boulder",
 			"tfc:raw_boulder_small_patch",
-			"tfc:cobble_boulder_small_patch"
+			"tfc:cobble_boulder_small_patch",
+			"tfg:venus/surface/adakite_spikes",
+			"tfg:venus/surface/ochrum_spikes",
+			"tfg:venus/surface/crimsite_spikes"
 		],
-		[],
+		[
+			"tfg:venus/surface/smoker_source_patch",
+			"tfg:venus/surface/lava_source_patch",
+			"tfg:venus/surface/twisted_vine",
+			"tfg:venus/surface/shadow_plant_patch",
+			"tfg:venus/surface/pile_volcanic_ash",
+			"tfg:venus/surface/loose_scorchia"
+		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
@@ -97,7 +110,7 @@
 			"charge": 0.9
 		}
 	},
-	"creature_spawn_probability": 0.1,
+	"creature_spawn_probability": 0.2,
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -150,6 +163,12 @@
 			{
 				"type": "endermanoverhaul:savanna_enderman",
 				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:nether_wastes_enderman",
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},

@@ -394,6 +394,7 @@ function registerTFGMarsEntityTypeTags(event) {
 		'species:springling',
 		'species:quake',
 		'species:stackatick',
+		'minecraft:enderman',
 		'endermanoverhaul:crimson_forest_enderman',
 		'endermanoverhaul:warped_forest_enderman',
 		'endermanoverhaul:badlands_enderman',

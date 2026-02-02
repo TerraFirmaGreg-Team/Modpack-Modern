@@ -8,8 +8,8 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 5450003,
-		"fog_color": 5450003,
+		"sky_color": 7687245,
+		"fog_color": 7687245,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
@@ -68,7 +68,9 @@
 			"tfg:venus/surface/twisted_vine",
 			"tfg:venus/surface/shadow_plant_patch",
 			"tfg:venus/surface/pile_volcanic_ash",
-			"tfg:venus/surface/pile_black_sand"
+			"tfg:venus/surface/pile_black_sand",
+			"tfg:venus/surface/loose_scorchia",
+			"tfg:venus/surface/loose_crackrack"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -123,6 +125,12 @@
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
+			{
+				"type": "minecraft:strider",
+				"maxCount": 5,
+				"minCount": 3,
+				"weight": 100
+			},
 			{
 				"type": "arthropocolypse:ice_crawler",
 				"maxCount": 2,
