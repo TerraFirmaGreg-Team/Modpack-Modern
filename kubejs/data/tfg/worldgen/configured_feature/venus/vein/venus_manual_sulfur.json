@@ -123,6 +123,44 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "betterend:flavolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:flavolite_sulfur_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:flavolite_pyrite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:flavolite_sphalerite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "betterend:sandy_jadestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:sandy_jadestone_sulfur_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:sandy_jadestone_pyrite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:sandy_jadestone_sphalerite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {
@@ -130,7 +168,20 @@
       "depth": 30,
       "underground_rarity": 40,
       "underground_count": 200,
-      "blocks": []
+      "blocks": [
+        {
+          "block": "gtceu:sulfur_indicator",
+          "weight": 80
+        },
+        {
+          "block": "gtceu:pyrite_indicator",
+          "weight": 15
+        },
+        {
+          "block": "tfc:ore/small_sphalerite",
+          "weight": 5
+        }
+      ]
     }
   }
 }
