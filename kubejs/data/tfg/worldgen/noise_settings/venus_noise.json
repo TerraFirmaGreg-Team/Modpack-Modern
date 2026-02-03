@@ -402,10 +402,10 @@
 									"type": "minecraft:vertical_gradient",
 									"random_name": "salt_flats",
 									"true_at_and_below": {
-										"absolute": 63
+										"absolute": 60
 									},
 									"false_at_and_above": {
-										"absolute": 67
+										"absolute": 64
 									}
 								}
 							},
