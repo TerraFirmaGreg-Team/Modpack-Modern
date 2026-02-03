@@ -54,9 +54,10 @@
 - More plants have been added for production. @Redeix & @thederpysockdude123
 - The EGH and the Pisciculture recipes now require 50% less energy
 #### Other major changes
-- Added much more music to the different dimensions @Pyritie
-- Added new advanced GTCEu Terminals @TomPlop
+- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing
 - Added two-person rockets! @BlueBoat29
+- Added new advanced GTCEu Terminals @TomPlop
+- Added much more music to the different dimensions @Pyritie
 ### Changes
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
 - Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
