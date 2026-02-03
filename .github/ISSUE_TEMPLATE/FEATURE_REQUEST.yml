@@ -1,6 +1,6 @@
-name: "[🪶]: Feature request"
-description: "Request a new feature or a change to an existing one."
-title: "[🪶]: "
+name: "[💡]: Feature request"
+description: "Request a new feature or a new mod."
+title: "[💡]: "
 labels: [ "Status: Backlog" ]
 projects: ["TerraFirmaGreg-Team/10"]
 type: "Feature"
@@ -10,46 +10,44 @@ body:
     id: exists
     attributes:
       label: "Was this feature suggested before?"
-      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      description: "Please search OPEN/CLOSED issues before submitting, as the feature may have already been reported/addressed."
       options:
         - label: "No, it was not."
           required: true
 
-  - type: input
-    id: version
+  - type: checkboxes
+    id: blacklist
+    attributes:
+      label: "A list of popular features/mods the team has already considered and will not implement."
+      description: |
+        ### Mod Requests:
+        - Other large tech mods (Immersive Engineering, Mekanism, etc.) will not be added to the pack due to overlap with Gregtech.
+        - Magic mods (Thaumcraft, Botania, etc.) will not be added to the pack as we wish to be grounded in plausibility.
+        - Create: the factory must grow. And other large Create mods. They do not work with Greate and we do not wish to focus on Create too much.
+        - Create Clockworks & Valkyrian Skies. Both cool mods, but impossible to balance in TFG.
+        - Stargate. Overdone in GT packs. We will work on something unique as an endgame goal.
+        
+        ### Feature Requests:
+        - Dyson Spheres. Boring and overdone.
+        - More GT Voltage Tiers. We would prefer to have larger more rounded tiers than many small ones.
+      options:
+        - label: "I understand :("
+          required: true
+
+  - type: textarea
+    id: feature
     validations:
       required: true
     attributes:
-      label: "Version modpack used"
-      description: Write which version of the modpack you are using.
-      placeholder: "Example: 0.1.1"
+      label: What would you like to be added?
+      description: Feature requests should focus on new gameplay experiences or QoL additions.
 
   - type: textarea
-    id: problem
-    validations:
-      required: false
-    attributes:
-      label: "Related problem"
-      description: If the feature you wish to change is related to a problem, please desscribe it. Leave this field blank if it is not related to a problem.
-      placeholder: "Example: I'm always frustrated when..."
-
-  - type: textarea
-    id: solution
+    id: rationale
     validations:
       required: true
     attributes:
-      label: "Your solution"
-      description: Describe the solution you would like to have happen.
-      placeholder: "Example: If I could..."
-
-  - type: textarea
-    id: additional-info
-    validations:
-      required: false
-    attributes:
-      label: "Additional information"
-      description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
-      placeholder: "Example: This is likely achieveable by doing X because..."
+      label: Why is this needed?
 
   - type: markdown
     attributes:

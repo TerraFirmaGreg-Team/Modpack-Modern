@@ -1,0 +1,8 @@
+{
+    "from": "ad_astra:glacio",
+    "to": "ad_astra:glacio_orbit",
+    "from_y_min": 500,
+    "from_y_max": 600,
+    "to_y": -64,
+    "cloud_platform": false
+}

@@ -1025,7 +1025,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/250 chunks$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
+      "text": "$(thing)Raridade$(): 1/300 chunks$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): 32 — 128$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 12$(br2)$(thing)Tipos de Pedra$(): Basalto, Migmatito, Piroxenito, Travertino",
       "title": "Esmeralda e Berílio",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"

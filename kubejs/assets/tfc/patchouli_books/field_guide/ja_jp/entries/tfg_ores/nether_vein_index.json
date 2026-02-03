@@ -732,7 +732,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/250 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/300 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 32 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br2)$(thing)Stone Types$(): Basalt, Migmatite, Pyroxenite, Travertine",
       "title": "Emerald & Beryllium",
       "type": "patchouli:text",
       "anchor": "nether_beryllium"

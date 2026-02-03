@@ -22,6 +22,11 @@ function registerTFGMarsMaterials(event) {
 	event.create('residual_radioactive_concoction')
 		.liquid(new GTFluidBuilder().customStill().temperature(450))
 
+	// New OLA Materials
+
+	event.create('tfg:radioactive_effluent')
+		.liquid(new GTFluidBuilder().customStill().temperature(293))
+
 	// Atmosphere
 
 	event.create('tfg:mars_air')
@@ -81,7 +86,7 @@ function registerTFGMarsMaterials(event) {
 		.components('2x pitchblende', '1x tricalcium_phosphate', '1x bauxite', '1x silver', '1x beryllium')
 		.color(0xbd7980)
 		.secondaryColor(0xA66C8D)
-		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.ingot()
 		.liquid()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
@@ -99,8 +104,8 @@ function registerTFGMarsMaterials(event) {
 		.liquid()
 		.components('2x ostrum', 'iodine')
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.flags(GTMaterialFlags.GENERATE_GEAR)
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
+		.flags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FOIL)
 		.color(0xc696f2)
 		.secondaryColor(0x9b99ff)
 }

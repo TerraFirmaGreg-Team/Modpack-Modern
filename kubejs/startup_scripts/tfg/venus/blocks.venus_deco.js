@@ -335,7 +335,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 
 	event.create('betterend:shadow_plant', 'tfg:decorative_plant')
 		.soundType('crop')
-		.mapColor('color_black')
+		.mapColor('none')
 		.box(3, 0, 3, 13, 10, 13)
 		.tagItem('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
@@ -343,7 +343,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 	event.create('betterend:twisted_vine', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('crop')
-		.mapColor('color_black')
+		.mapColor('none')
 		.box(3, 0, 3, 13, 16, 13)
 		.tagItem('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')

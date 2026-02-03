@@ -19,7 +19,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 
 	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
-	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
+	event.remove('tfc:foods', 'tfc_gourmet:havai_pizza')
 
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
@@ -46,6 +46,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+	
 	//#endregion
 
 	// Airplane Upgrades

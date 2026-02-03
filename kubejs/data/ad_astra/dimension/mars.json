@@ -56,7 +56,8 @@
 					"chert": "tfc:chert",
 					"chalk": "tfc:chalk",
 					"basalt": "tfc:basalt",
-					"dacite": "tfc:dacite"
+					"dacite": "tfc:dacite",
+					"quartzite": "tfc:quartzite"
 				},
 				"layers": [
 					{
@@ -70,7 +71,8 @@
 							"basalt": "bottom",
 							"dacite": "bottom",
 							"venus": "bottom",
-							"shale": "bottom"
+							"shale": "bottom",
+							"quartzite": "bottom"
 						}
 					},
 					{
@@ -83,7 +85,8 @@
 							"limestone": "mix",
 							"claystone": "mix",
 							"conglomerate": "mix",
-							"chert": "mix"
+							"chert": "mix",
+							"quartzite": "mix"
 						}
 					}
 				],

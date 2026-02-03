@@ -354,6 +354,29 @@
             "weight": 10
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_cassiterite_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:raw_cassiterite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_tin_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_saltpeter_ore",
+            "weight": 10
+          }
+        ]
       }
     ],
     "indicator": {

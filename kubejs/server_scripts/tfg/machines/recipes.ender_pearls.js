@@ -6,6 +6,7 @@ function registerTFGEnderPearlRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
 		.itemOutputs('17x tfc:powder/kaolinite')
 		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
+		.circuit(3)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -14,6 +15,7 @@ function registerTFGEnderPearlRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:distilled_water', 6000), Fluid.of('gtceu:chlorine', 8000))
 		.itemOutputs('17x tfc:powder/kaolinite', '1x #forge:dusts/chromium')
 		.outputFluids(Fluid.of('gtceu:hydrochloric_acid', 8000))
+		.circuit(3)
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.HV])
 

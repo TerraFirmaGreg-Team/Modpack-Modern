@@ -50,10 +50,16 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('1x water', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-	// Coolant
+	//#region Coolant
+
+	event.create('tfg:warm_water')
+		.liquid(new GTFluidBuilder().temperature(313))
+		.components('2x hydrogen', '1x oxygen')
+		.color(0x8de3fc)
+		.secondaryColor(0x81FFF9)
 
 	event.create('tfg:heavy_water')
-		.liquid(new GTFluidBuilder().temperature(236))
+		.liquid(new GTFluidBuilder().customStill().temperature(236))
 		.components('2x deuterium', '1x oxygen')
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
@@ -65,16 +71,24 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0x81FFF9)
 
 	event.create('tfg:boron_enriched_coolant')
-		.liquid(new GTFluidBuilder().temperature(213))
+		.liquid(new GTFluidBuilder().customStill().temperature(213))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0x43D6E4)
-		.secondaryColor(0x2C9AAF)
 
 	event.create('tfg:hot_boron_enriched_coolant')
-		.liquid(new GTFluidBuilder().temperature(2000))
+		.liquid(new GTFluidBuilder().customStill().temperature(2000))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.color(0xFF715B)
-		.secondaryColor(0xFF9D6E)
+
+	event.create('tfg:ticl4_doped_supercritical_co2')
+		.liquid(new GTFluidBuilder().customStill().temperature(500))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
+
+	event.create('tfg:spent_ticl4_doped_supercritical_co2')
+		.liquid(new GTFluidBuilder().customStill().temperature(2000))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.components('1x titanium', '4x chlorine', '1x carbon', '2x oxygen')
+
+	//#endregion
 
 	// Fision Waste
 
@@ -84,7 +98,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0xB5B9FF)
 		.secondaryColor(0x81FFF9)
 
-	event.create('nuclear_waste')
+	event.create('tfg:tbu_waste')
 		.liquid(new GTFluidBuilder().customStill().temperature(3850))
 		.components('1x thorium', '1x uranium', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -114,7 +128,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.secondaryColor(0xfc5e03)
 
 	event.create('tritiated_water')
-		.fluid()
+		.liquid(new GTFluidBuilder().customStill())
 		.components('2x tritium', '1x oxygen')
 		.color(0xb2c3e7)
 
@@ -136,38 +150,80 @@ const registerTFGNuclearMaterials = (event) => {
 
 	// FLiBe Line
 
-	event.create('raw_rich_brine')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+	event.create('tfg:raw_rich_brine')
+		.liquid(new GTFluidBuilder().temperature(293))
+		.color(0xf2b257)
+		.secondaryColor(0xcd8dbc)
 
-	event.create('hot_iodine_brine')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+	event.create('tfg:hot_iodine_brine')
+		.liquid(new GTFluidBuilder().temperature(293))
 		.components('1x hydrogen', '1x iodine', '1x magnesium', '1x chlorine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf26c57)
+		.secondaryColor(0xcd8dbc)
 
-	event.create('brominated_iodine_vapor')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(412))
+	event.create('tfg:brominated_iodine_vapor')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(412))
 		.components('1x hydrogen', '1x iodine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf5f1b5)
+		.secondaryColor(0xcd8dbc)
 
-	event.create('basic_bromine_exhaust')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).customStill().temperature(406))
+	event.create('tfg:basic_bromine_exhaust')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(406))
 		.components('1x bromine', '1x unknown')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xf5bbb5)
+		.secondaryColor(0xcd8dbc)
 
-	event.create('flibe')
+	event.create('tfg:flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x fluorine', '1x lithium', '1x beryllium')
 
-	event.create('dirty_flibe')
-		.liquid(new GTFluidBuilder().customStill().temperature(293))
+	event.create('tfg:dirty_flibe')
+		.liquid(new GTFluidBuilder().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe', '1x unknown')
+		.color(0xdaffd6)
+		.secondaryColor(0xcd8dbc)
 
-	event.create('hot_flibe')
+	event.create('tfg:hot_flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(3293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('1x flibe')
+
+	// Material Fission Earth
+
+	event.create('boron_10')
+		.dust()
+		.element(GTElements.get("boron_10"))
+		.iconSet(GTMaterialIconSet.DULL)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xbffdbf)
+		.secondaryColor(0x6d7058)
+
+	event.create('caesium_137')
+		.dust()
+		.element(GTElements.get("caesium_137"))
+		.iconSet(GTMaterialIconSet.SHINY)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+		.color(0xFCB65C)
+		.secondaryColor(0x55461B)
+
+	event.create('tfg:boron_thrichloride')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(380))
+		.components('1x boron', '3x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xb3fcb9)
+		//.secondaryColor(0x9FAFB2)
+
+	event.create('tfg:enriched_boron_thrichloride')
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(480))
+		.components("boron_10", '3x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x65db6f)
+		.secondaryColor(0x9FAFB2)
 
 	//#endregion
 
@@ -198,6 +254,23 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0x82c383)
 		.secondaryColor('0xffffff')
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+
+	event.create('tfg:boron_10_hydroxide')
+		.dust()
+		.components('boron_10', '2x oxygen', '1x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x8ee8a6)
+		.secondaryColor('0xffffff')
+		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+
+	event.create('tfg:sodium_deuteroxide')
+		.dust()
+		.components('1x sodium', '2x deuterium', '1x oxygen')
+		.formula('NaOD')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfef8f6)
+		.secondaryColor('0xffffff')
+		.iconSet(GTMaterialIconSet.NETHERSTAR)
 
 	// FLiBe Dusts
 
@@ -233,7 +306,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.ingot()
 		.element(GTElements.get("thorium_230"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.flags(GTMaterialFlags.GENERATE_ROD)
+		.flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0xf8a8c0)
 		.secondaryColor(0xcd8dbc)
 		.radioactiveHazard(1000000)
@@ -242,35 +315,35 @@ const registerTFGNuclearMaterials = (event) => {
 		.ingot()
 		.element(GTElements.get("thorium_232"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.flags(GTMaterialFlags.GENERATE_ROD)
+		.flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0x694c66)
 		.radioactiveHazard(1000)
 
-	event.create('tfg:americium_241')
+	event.create('americium_241')
 		.ingot()
 		.element(GTElements.get("americium_241"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
-		.color(0x0600ff)
-		.secondaryColor(0x1b1d36)
+		.color(0x648ABA)
+		.secondaryColor(0x999900)
 		.radioactiveHazard(1000000)
 
-	event.create('tfg:neptunium_237')
+	event.create('neptunium_237')
 		.ingot()
 		.element(GTElements.get("neptunium_237"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0x00df98)
-		.secondaryColor(0xffffff)
+		.secondaryColor(0x66ff00)
 		.radioactiveHazard(5000000)
 
-	event.create('tfg:californium_252')
+	event.create('californium_252')
 		.ingot()
 		.element(GTElements.get("californium_252"))
 		.iconSet(GTMaterialIconSet.RADIOACTIVE)
 		.flags(GTMaterialFlags.GENERATE_ROD)
 		.color(0xffba00)
-		.secondaryColor(0xdfffff)
+		.secondaryColor(0xA85A12)
 		.radioactiveHazard(10000000)
 
 	//#endregion
@@ -324,73 +397,73 @@ const registerTFGNuclearMaterials = (event) => {
 
 	//#region Isotopic Solvent
 
-	// Organic Stabilizer
+		// Organic Stabilizer
 	event.create('tfg:organic_stabilizer')
-    	.dust()
-    	.components('49x carbon', '64x hydrogen', '6x oxygen', '1x nitrogen', '1x chlorine')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xd8c9b5)
-    	.secondaryColor(0xb8a896)
+		.dust()
+		.components('31x carbon', '46x hydrogen', '3x oxygen', '1x nitrogen', '1x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xd8c9b5)
+		.secondaryColor(0xb8a896)
 		.iconSet(GTMaterialIconSet.BRIGHT)
 
 	// Trace Catalyst Salt - E
 	event.create('tfg:trace_catalyst_salt_e')
-    	.dust()
-    	.components(
-        	'2x carbon',
-        	'9x hydrogen',
-        	'8x oxygen',
-        	'1x copper',
-        	'1x sodium',
-        	'1x chlorine',
-        	'1x magnesium',
-        	'1x fluorine',
-        	'1x sulfur')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xcad4cf)
-    	.secondaryColor(0x9eb1a9)
+		.dust()
+		.components(
+			'2x carbon',
+			'9x hydrogen',
+			'8x oxygen',
+			'1x copper',
+			'1x sodium',
+			'1x chlorine',
+			'1x magnesium',
+			'1x fluorine',
+			'1x sulfur')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xcad4cf)
+		.secondaryColor(0x9eb1a9)
 		.iconSet(GTMaterialIconSet.EMERALD)
 
 	// Sodium Fluoride
 	event.create('tfg:sodium_fluoride')
-    	.dust()
-    	.components('1x sodium', '1x fluorine')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xffffff)
-    	.secondaryColor(0xb7b9bd)
+		.dust()
+		.components('1x sodium', '1x fluorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xffffff)
+		.secondaryColor(0xb7b9bd)
 		.iconSet(GTMaterialIconSet.ROUGH)
 
 	// Copper Trace Catalyst Dust
-	event.create('tfg:copper_trace_catalyst_dust')
-    	.dust()
-    	.components('1x copper', '1x sodium', '1x chlorine', '1x magnesium', '1x fluorine', '1x sulfur', '6x oxygen', '1x hydrogen')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0x4a2e1a)
-    	.secondaryColor(0x7a5c47)
+	event.create('tfg:copper_trace_catalyst')
+		.dust()
+		.components('1x copper', '1x sodium', '1x chlorine', '1x magnesium', '1x fluorine', '1x sulfur', '6x oxygen', '1x hydrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0x4a2e1a)
+		.secondaryColor(0x7a5c47)
 		.iconSet(GTMaterialIconSet.FINE)
 
 	// Isotopic Solvent
 	event.create('tfg:isotopic_solvent')
-    	.liquid(new GTFluidBuilder().temperature(320))
-    	.components(
-        	'51x carbon',
-        	'75x hydrogen',
-        	'15x oxygen',
-        	'1x nitrogen',
-        	'2x chlorine',
-        	'2x sodium',
-        	'2x fluorine',
-        	'1x copper',
-        	'1x magnesium',
-        	'1x sulfur',
-        	'1x argon')
-    	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    	.color(0xd4b464)
-    	.secondaryColor(0xa88e55)
+		.liquid(new GTFluidBuilder().customStill().temperature(320))
+		.components(
+			'33x carbon',
+			'57x hydrogen',
+			'12x oxygen',
+			'1x nitrogen',
+			'2x chlorine',
+			'2x sodium',
+			'2x fluorine',
+			'1x copper',
+			'1x magnesium',
+			'1x sulfur',
+			'1x argon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xd4b464)
+		.secondaryColor(0xa88e55)
 
 	// Degraded Solvent Stream
 	event.create('tfg:degraded_solvent_stream')
-		.liquid(new GTFluidBuilder().temperature(350))
+		.liquid(new GTFluidBuilder().customStill().temperature(350))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0x8b4513)
 		.secondaryColor(0xd2b48c)
@@ -440,6 +513,19 @@ const registerTFGNuclearMaterials = (event) => {
 		.color(0xff4500)
 		.secondaryColor(0xff6347)
 
+	// High Grade
+
+	event.create('tfg:high_grade_isotopic_solvent')
+		.liquid(new GTFluidBuilder().customStill().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfc7303)
+		.secondaryColor(0xfcf403)
+
+	event.create('tfg:degraded_high_grade_isotopic_solvent')
+		.liquid(new GTFluidBuilder().customStill().temperature(300))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xfc7303)
+		.secondaryColor(0xfcf403)	
 
 
 };
@@ -485,12 +571,14 @@ StartupEvents.registry("item", (event) => {
     }
   };
 
-  fuel("thorium_rod", 5000, 1, 0.7, false);		// Max Heat 139 - 1 Fuel
-  fuel("uranium_rod", 20000, 1, 2.2, false);	// Max Heat 435 - 1 Fuel
-  fuel("plutonium_rod", 30000, 4, 3, false);	// Max Heat 595 - 1 Fuel
-  fuel("tbu_232_rod", 10000, 1, 2);				// Max Heat 396 - 1 Fuel
+  fuel("thorium_rod", 5000, 1, 0.7);			// Max Heat 139 - 1 Fuel
+  fuel("uranium_rod", 20000, 1, 2.2);			// Max Heat 435 - 1 Fuel
+  fuel("plutonium_rod", 30000, 1, 3);			// Max Heat 595 - 1 Fuel
 
-  fuel("americium_241_rod", 1000000, 1, 0.5);
-  fuel("neptunium_237_rod", 50000, 1, 2);
-  fuel("californium_252_rod", 500000, 1, 4);
+  fuel("tbu_232_rod", 5000, 1, 2);				// Max Heat 396 - 1 Fuel
+
+  fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
+  fuel("neptunium_237_rod", 100000, 1, 2);		// Max Heat 396 - 1 Fuel
+  fuel("californium_252_rod", 500000, 1, 4);	// Max Heat 792 - 1 Fuel
+
 });

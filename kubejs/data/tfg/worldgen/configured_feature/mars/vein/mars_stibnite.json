@@ -306,6 +306,33 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_tetrahedrite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_copper_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_stibnite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

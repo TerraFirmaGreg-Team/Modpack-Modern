@@ -21,7 +21,7 @@ const registerTFCRecipes = (event) => {
 	], {
 		A: '#forge:double_plates/wrought_iron',
 		B: 'tfc:crucible'
-	}).addMaterialInfo().id('tfc:crafting/blast_furnace')
+	}).id('tfc:crafting/blast_furnace')
 
 	// Тыква -> Кусочки тыквы
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -240,4 +240,48 @@ const registerTFCRecipes = (event) => {
 		.inputs('#tfc:foods/fruits', TFC.fluidStackIngredient('#tfg:alcohols', 250))
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
+
+	// Borax to flux
+	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
+		.id(`tfg:quern/borax`)
+
+	event.recipes.gtceu.macerator('borax_to_flux')
+		.itemInputs("#forge:dusts/borax")
+		.itemOutputs("4x tfc:powder/flux")
+		.duration(50)
+		.EUt(2);
+
+	event.shapeless('4x tfc:fire_clay', ['tfc:fire_clay_block'])
+	
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
+	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
+
+	global.TFC_WOOD_TYPES.forEach(element => {
+		event.shaped(`4x tfc:wood/fallen_leaves/${element}`,[
+			'AA',
+			'AA'
+		], {
+			A: `tfc:wood/leaves/${element}`
+		}).id(`tfg:shaped/tfc/${element}_leaves_to_fallen_leaves`);
+	});
+	
+	/**
+	 * @property {string[]} krummholz_types - List of krummholz wood types.
+	 */
+	const krummholz_types = [
+		'aspen',
+		'douglas_fir',
+		'pine',
+		'spruce',
+		'white_cedar'
+	];
+	krummholz_types.forEach(type => {
+		event.shaped(`1x tfc:plant/${type}_krummholz`,[
+			'A',
+			'A'
+		], {
+			A: `tfc:wood/sapling/${type}`
+		}).id(`tfg:shaped/tfc/${type}_krummholz`);
+	});
 }

@@ -24,6 +24,14 @@
 				"type": "minecraft:ash"
 			},
 			"probability": 0.07
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.venus"
+			}
 		}
 	},
 	"features": [
@@ -32,7 +40,8 @@
 		],
 		[],
 		[
-			"tfg:venus/terrain/hot_spring_delta"
+			"tfg:venus/terrain/hot_spring_delta",
+			"tfc:random_empty_hot_spring"
 		],
 		[],
 		[],
@@ -51,20 +60,20 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.15,

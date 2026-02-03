@@ -103,5 +103,6 @@
   "item.minecraft.milk_bucket": "Cow Milk Bucket",
   "material.tfg.dripstone": "Travertine",
   "death.attack.magic": "%1$s was killed by deadly poison",
-  "death.attack.magic.player": "%1$s was killed by deadly poison whilst trying to escape %2$s"
+  "death.attack.magic.player": "%1$s was killed by deadly poison whilst trying to escape %2$s",
+  "effect.minecraft.dolphins_grace": "Swim Speed"
 }

@@ -77,6 +77,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 
 	// Tarkianite
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/desert_oilsands')
 
 	// Add back the non-ore ones
     event.add("tfc:in_biome/veins", "tfc:vein/gravel");
@@ -103,4 +104,5 @@ function registerTFGOverworldPlacedFeatures(event) {
     event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
     event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
     event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
+    event.add("tfc:in_biome/underground_decoration", "tfg:earth/volcano_spout");
 }

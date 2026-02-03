@@ -685,7 +685,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gurman:ox_milk_bucket)item(tfc_gurman:sheep_milk_bucket)item(tfc_gurman:alpaca_milk_bucket))"
+							"ftbfiltersystem:filter": "or(item(minecraft:milk_bucket)item(firmalife:bucket/yak_milk)item(firmalife:bucket/goat_milk)item(tfc_gourmet:ox_milk_bucket)item(tfc_gourmet:sheep_milk_bucket)item(tfc_gourmet:alpaca_milk_bucket))"
 						}
 					}
 					optional_task: true
@@ -2157,6 +2157,45 @@
 			title: "{quests.tfg_tips.greenhouse_automation.title}"
 			x: 0.0d
 			y: -10.5d
+		}
+		{
+			dependencies: [
+				"30DD0DDF86C96926"
+				"1F41C35890E2C44F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.food_automation.desc}"]
+			icon: "tfg:lv_food_oven"
+			id: "46111F4D970EE3C5"
+			optional: true
+			subtitle: "{quests.tfg_tips.food_automation.subtitle}"
+			tasks: [
+				{
+					id: "770BC20A8062A6BD"
+					item: "tfg:lv_food_processor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3EB084CA435F8C19"
+					item: "tfg:lv_food_oven"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "150B81D83DFFB9A1"
+					item: "gtceu:lv_robot_arm"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2332EB45D64DB9FB"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.tfg_tips.food_automation.title}"
+			x: 0.0d
+			y: -12.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

@@ -461,7 +461,8 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:steel_trapdoor')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true, true)
+
+	TFGHelpers.registerMaterialInfo('ad_astra:steel_trapdoor', [GTMaterials.Steel, 1, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
 	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
 

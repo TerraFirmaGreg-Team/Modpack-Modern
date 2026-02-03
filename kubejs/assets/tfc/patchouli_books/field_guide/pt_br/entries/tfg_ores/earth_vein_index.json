@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Ametista e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Areias Minerais$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Bentonita e Olivina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Bismuto (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Bismuto (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Calcopirita e Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Carvão$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Cassiterita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Cianita, Mica e Bauxita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Cobre e Calcopirita$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)Ametista e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)Apatita e Pirocloro$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_basaltic_sands)Areias Minerais$()$()$(li)$(l:tfg_ores/earth_vein_index#desert_oilsands)Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_oilsands)Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_monazite)Bastnasita e Monazita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)Bentonita e Olivina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_bismuthinite)Bismuto (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuthinite)Bismuto (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_copper)Calcopirita e Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Carvão$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cassiterite)Cassiterita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Cianita, Mica e Bauxita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Enxofre e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita e Enxofre$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumena e Lepidolita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethita e Malaquita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematita e Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematita, Goethita e Rubi$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Cobre e Calcopirita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)Cooperita e Bornita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Cromita e Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)Enxofre e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita e Enxofre$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita e Pirita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)Esmeralda e Berílio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumena e Lepidolita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita e Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gypsum)Gipsita e Calcita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_limonite)Goethita e Malaquita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_graphite)Grafite e Diamante$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnet_tin)Granada e Areia Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_hematite)Hematita e Limonita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetita e Vanádio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opala e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Ouro (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro, Limonita e Hematita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzos$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sais e Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Salitre e Eletrotina$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_hematite)Hematita, Goethita e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lapis)Lápis-lazúri, Lazurita e Sodalita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetita e Vanádio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_manganese)Manganês e Tântalo$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)Opala e Granada$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_gold)Ouro (Profundo)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro, Limonita e Hematita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_lubricant)Pedra-sabão, Talco e Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_silver)Prata, Galena e Chumbo$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzos$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)Redstone, Cinábrio e Rubi$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Safira e Almandina$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sais e Bórax$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarcianita e Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)Salitre e Eletrotina$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sheelita e Tungstato$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarcianita e Areias Petrolíferas$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tetrahedrite)Tetraedrita (Normal)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Superfície)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio e Calcocita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_pitchblende)Uraninita e Pechblenda$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita e Molibdenita$()$()",
       "type": "patchouli:text"
     },
     {
@@ -290,7 +290,34 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/185 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 55$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/150 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 30 — 70$(br)$(thing)Tamanho$(): 60$(br)$(thing)Profundidade Máxima do Indicador$(): 50$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz",
+      "title": "Areias Petrolíferas",
+      "type": "patchouli:text",
+      "anchor": "desert_oilsands"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areias Petrolíferas",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/oilsands"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Liberdade \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 90$(br)$(thing)Tamanho$(): 30$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Giz",
       "title": "Areias Petrolíferas",
       "type": "patchouli:text",
       "anchor": "normal_oilsands"
@@ -1472,7 +1499,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/250 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -32 — 50$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/250 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -32 — 30$(br)$(thing)Altura$(): 60$(br)$(thing)Raio$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Esmeralda e Berílio",
       "type": "patchouli:text",
       "anchor": "normal_beryllium"
@@ -1922,7 +1949,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/80 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — -16$(br)$(thing)Tamanho$(): 16$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
+      "text": "$(thing)Raridade$(): 1/80 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — -16$(br)$(thing)Tamanho$(): 16$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Basalto, Dacito, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
       "title": "Grafite e Diamante",
       "type": "patchouli:text",
       "anchor": "normal_graphite"

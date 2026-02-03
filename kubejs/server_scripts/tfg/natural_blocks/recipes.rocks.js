@@ -198,13 +198,22 @@ function registerTFGRockRecipes(event) {
 
 		// Cobble to mossy cobble
 		if (rock.cobble != null && rock.cobble.mossy != null) {
-			event.recipes.gtceu.mixer(`tfg:${rockId}_cobble_rocks_to_mossy_cobble`)
+			event.recipes.gtceu.mixer(`tfg:${rockId}_cobble_to_mossy_cobble`)
 				.itemInputs(rock.cobble.block, '#tfc:compost_greens_low')
 				.circuit(1)
 				.inputFluids("#tfg:clean_water 144")
 				.itemOutputs(rock.cobble.mossy.block)
 				.duration(50)
 				.EUt(2)
+
+			event.recipes.create.deploying(rock.cobble.mossy.block, [ rock.cobble.block, '#tfc:compost_greens_low' ])
+				.id(`tfg:deploying/${rockId}_cobble_to_mossy_cobble`)
+
+			event.recipes.create.deploying(rock.cobble.block, [ rock.cobble.mossy.block, 'tfc:groundcover/pumice' ])
+				.id(`tfg:deploying/${rockId}_mossy_cobble_to_cobble_pumice`)
+
+			event.recipes.create.deploying(rock.cobble.block, [ rock.cobble.mossy.block, '#forge:tools/knives' ])
+				.id(`tfg:deploying/${rockId}_mossy_cobble_to_cobble_knife`)
 		}
 		
 		// Bricks to brick blocks
@@ -227,6 +236,20 @@ function registerTFGRockRecipes(event) {
 				.circuit(1)
 				.duration(50)
 				.EUt(2)
+
+			event.recipes.create.sequenced_assembly(`4x ${rock.bricks.block}`, rock.brick, [
+				event.recipes.create.deploying(rock.brick, [rock.brick, rock.brick]),
+				event.recipes.create.deploying(rock.brick, [rock.brick, 'tfc:mortar'])
+			])
+			.transitionalItem(rock.brick)
+			.loops(4)
+			.id(`tfg:deploying/${rockId}_brick_to_bricks`)
+		}
+
+		// Bricks to smooth
+		if (rock.bricks != null && rock.polished != null) {
+			event.recipes.create.sandpaper_polishing(rock.polished.block, rock.bricks.block)
+				.id(`tfg:polishing/${rockId}_brick_to_polished`)
 		}
 
 		// Bricks to mossy bricks
@@ -238,7 +261,23 @@ function registerTFGRockRecipes(event) {
 				.itemOutputs(rock.bricks.mossy.block)
 				.duration(50)
 				.EUt(2)
+
+			event.recipes.create.deploying(rock.bricks.mossy.block, [ rock.bricks.block, '#tfc:compost_greens_low' ])
+				.id(`tfg:deploying/${rockId}_bricks_to_mossy_bricks`)
+
+			event.recipes.create.deploying(rock.bricks.block, [ rock.bricks.mossy.block, 'tfc:groundcover/pumice' ])
+				.id(`tfg:deploying/${rockId}_mossy_bricks_to_bricks_pumice`)
+
+			event.recipes.create.deploying(rock.bricks.block, [ rock.bricks.mossy.block, '#forge:tools/knives' ])
+				.id(`tfg:deploying/${rockId}_mossy_bricks_to_bricks_knife`)
+
+			// Mossy bricks to smooth
+			if (rock.bricks.mossy != null && rock.polished != null) {
+				event.recipes.create.sandpaper_polishing(rock.polished.block, rock.bricks.mossy.block)
+					.id(`tfg:polishing/${rockId}_mossy_brick_to_polished`)
+			}
 		}
+
 
 		// Bricks to cracked bricks
 		if (rock.bricks != null && rock.bricks.cracked != null) {
@@ -258,7 +297,17 @@ function registerTFGRockRecipes(event) {
 			event.recipes.greate.pressing(rock.bricks.cracked.block, rock.bricks.block)
 				.recipeTier(0)
 				.id(`tfg:pressing/${rockId}_bricks_to_cracked`);
+				
+			event.recipes.create.deploying(rock.bricks.block, [ rock.bricks.cracked.block, 'tfc:mortar' ])
+				.id(`tfg:deploying/${rockId}_cracked_bricks_to_bricks`)
+
+			// Cracked bricks to smooth
+			if (rock.bricks.cracked != null && rock.polished != null) {
+				event.recipes.create.sandpaper_polishing(rock.polished.block, rock.bricks.cracked.block)
+					.id(`tfg:polishing/${rockId}_cracked_brick_to_polished`)
+			}
 		}
+
 
 		// Raw to polished
 		if (rock.raw != null && rock.polished != null) {
@@ -271,6 +320,9 @@ function registerTFGRockRecipes(event) {
 				.itemOutputs(`8x ${rock.polished.block}`)
 				.duration(250)
 				.EUt(8)
+
+			event.recipes.create.sandpaper_polishing(rock.polished.block, rock.raw.block)
+				.id(`tfg:polishing/${rockId}_raw_to_polished`)
 		}
 
 		if (rock.hardened != null && rock.polished != null) {
@@ -510,7 +562,7 @@ function registerTFGRockRecipes(event) {
 		let half = Ingredient.of(`#tfg:stone_composition/${compositionId}_half`).itemIds.toArray();
 		if (half.length > 0) {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}_half`)
-				.itemInputs(half)
+				.itemInputs(`#tfg:stone_composition/${compositionId}_half`)
 				.itemOutputs(ChemicalHelper.getDust(material, GTValues.M / 2))
 				.duration(150)
 				.EUt(2)
@@ -584,4 +636,17 @@ function registerTFGRockRecipes(event) {
 		.itemOutputs('#forge:plates/stone')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Sedimentary carbonate into flux
+
+	event.recipes.gtceu.macerator('tfg:sedimentary_carbonate_to_flux')
+		.itemInputs('#forge:dusts/sedimentary_carbonate')
+		.itemOutputs('2x tfc:powder/flux')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.tfc.quern('2x tfc:powder/flux', '#forge:dusts/sedimentary_carbonate')
+		.id(`tfg:quern/sedimentary_carbonate_to_flux`)
+
+	event.shapeless('2x tfc:powder/flux', ['#forge:dusts/sedimentary_carbonate', '#forge:tools/hammers'])
 }

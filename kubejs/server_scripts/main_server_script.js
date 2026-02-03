@@ -53,7 +53,7 @@ ServerEvents.tags('item', event => {
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-	registerTFGItemTagsNuclear(event)
+	registerTFGNuclearItemTags(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
@@ -87,6 +87,7 @@ ServerEvents.tags('block', event => {
 	registerMoreRedBlockTags(event)
 	registerHotOrNotBlockTags(event)
 	registerRailWaysBlockTags(event)
+	registerRnrBlockTags(event)
 	registerSophisticatedBackpacksBlockTags(event)
 	registerSpeciesBlockTags(event)
 	registerTACZBlockTags(event)
@@ -180,6 +181,7 @@ TFCEvents.data(event => {
 LootJS.modifiers((event) => {
 	registerAdAstraLoots(event)
 	registerBeneathLoots(event)
+	registerTFGRockLoots(event)
 	registerTFGOreLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
@@ -237,7 +239,7 @@ ServerEvents.recipes(event => {
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
-	registerCreateStockBridgeRecipes(event)
+	//registerCreateStockBridgeRecipes(event)
 	registerDeaFissionRecipes(event)
 	registerDiggerHelmetRecipes(event)
 	registerDomumOrnamentumRecipes(event)
@@ -253,6 +255,7 @@ ServerEvents.recipes(event => {
 	registerGrapplingHookRecipes(event);
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
+	registerGTCEUTerminalRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)

@@ -215,6 +215,29 @@
             "weight": 25
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_pitchblende_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_pitchblende_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_thorium_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 25
+          }
+        ]
       }
     ],
     "indicator": {

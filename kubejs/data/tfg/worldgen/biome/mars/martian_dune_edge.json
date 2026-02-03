@@ -22,7 +22,9 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.desert"
+			"sound": {
+				"sound_id": "tfg:music.mars"
+			}
 		},
 		"sky_color": 15117444,
 		"water_color": 4159204,
@@ -111,6 +113,18 @@
 			},
 			{
 				"type": "wan_ancient_beasts:glider",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:charger",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:snatcher",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
