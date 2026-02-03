@@ -200,7 +200,7 @@ function registerTFGCasingRecipes(event) {
 		.itemInputs('gtceu:ostrum_frame', '4x #forge:plates/titanium_tungsten_carbide', '16x #forge:fine_wires/copper',
 					'16x #forge:fine_wires/tungsten_bismuth_oxide_composite')
 		.inputFluids(Fluid.of('gtceu:reinforced_epoxy_resin', 288))
-		.itemOutputs('2x tfg:machine_casing_power_casing')
+		.itemOutputs('4x tfg:machine_casing_power_casing')
 		.circuit(6)
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
