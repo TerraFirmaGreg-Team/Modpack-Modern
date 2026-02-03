@@ -106,7 +106,8 @@
 - Fixed a concrete dupe (#2948) and some other stone-related recycling recipes @Pyritie
 - Fixed the rendering of adjacent large martian nests @Mqrius
 - Fixed the interdimensional wireless card so it should actually work again (the crafting requests aren't fixed yet though) @Mqrius
-- Fixed the position of the dimension indicator on recipes that are valid on multiple dimensions
+- Fixed the position of the dimension indicator on recipes that are valid on multiple dimensions @BlueBoat29
+- Fixed rocket bugging out if you were carrying a creature @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
