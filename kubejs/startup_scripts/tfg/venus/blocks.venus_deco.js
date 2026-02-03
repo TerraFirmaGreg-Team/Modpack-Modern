@@ -230,6 +230,8 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('podzol')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfc:rock/raw')
+		.tagBoth('forge:stone')
 
 	event.create('betterend:lucernia_bark')
 		.soundType('netherrack')
