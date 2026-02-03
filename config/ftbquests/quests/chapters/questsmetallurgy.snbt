@@ -60,6 +60,12 @@
 			x: 18.5d
 			y: -28.0d
 		}
+		{
+			id: "5B4E347985A66970"
+			linked_quest: "21C58B2541BFA2EE"
+			x: -1.5d
+			y: -32.0d
+		}
 	]
 	quests: [
 		{
@@ -1307,6 +1313,7 @@
 			description: ["{quests.metal_age.toolbelt.desc}"]
 			icon: "toolbelt:belt"
 			id: "1DEC710C3570D5D0"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.metal_age.toolbelt.subtitle}"
 			tasks: [
