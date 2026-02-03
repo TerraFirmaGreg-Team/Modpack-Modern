@@ -24,13 +24,6 @@ function registerMacawsForTFCRecipes(event) {
 		}).id(`tfg:shaped/${wood}_wired_fence`)
 	})
 
-	event.remove({input: ['mcw_tfc_aio:roofs/gray_roofs/gray_roof_slab','#tfc:saws']})
-
-  	event.shapeless('minecraft:gray_terracotta', [
-    	'mcw_tfc_aio:roofs/gray_roofs/gray_roof_slab',
-    	'mcw_tfc_aio:roofs/gray_roofs/gray_roof_slab'
-	]).id('minecraft:gray_terracotta')
-
 	event.shaped(`4x mcw_tfc_aio:fences/other_fences/hedge`, [
 		'BAB',
 		'BAB'

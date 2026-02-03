@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed all the missing crafting table saw recipes (#2967)
 ### Translation updates
 
 ## [0.11.19] - 03-02-2026
