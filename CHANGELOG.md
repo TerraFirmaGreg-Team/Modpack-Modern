@@ -54,7 +54,7 @@
 - More plants have been added for production. @Redeix & @thederpysockdude123
 - The EGH and the Pisciculture recipes now require 50% less energy
 #### Other major changes
-- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing
+- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing, @asere
 - Added two-person rockets! @BlueBoat29
 - Added new advanced GTCEu Terminals @TomPlop
 - Added much more music to the different dimensions @Pyritie
@@ -108,6 +108,7 @@
 - Fixed the rendering of adjacent large martian nests @Mqrius
 - Fixed the interdimensional wireless card so it should actually work again (the crafting requests aren't fixed yet though) @Mqrius
 - Fixed the position of the dimension indicator on recipes that are valid on multiple dimensions @BlueBoat29
+- Fixed rockets breaking when you were carrying something @BlueBoat29
 - Fixed a rare crash with beneath to overworld teleporting @Lolens
 - Added Sacks 'n' Such's containers to the Toolbelt blacklist, preventing a dupe (#2926) @Pyritie
 - Fixed a dupe with steam miner and steam rock crusher recycling @Pyritie
