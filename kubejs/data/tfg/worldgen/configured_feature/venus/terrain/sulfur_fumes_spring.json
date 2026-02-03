@@ -1,9 +1,8 @@
 {
 	"type": "tfc:hot_spring",
 	"config": {
-		"wall_state": "beneath:crackrack",
-		"fluid_state": "minecraft:lava",
-		"radius": 16,
+		"fluid_state": "tfg:fluid/sulfur_fumes",
+		"radius": 8,
 		"decoration": {
 			"blocks": [
 				{
@@ -80,8 +79,8 @@
 					]
 				}
 			],
-			"radius": 12,
-			"count": 48,
+			"radius": 8,
+			"count": 24,
 			"rarity": 1
 		}
 	}

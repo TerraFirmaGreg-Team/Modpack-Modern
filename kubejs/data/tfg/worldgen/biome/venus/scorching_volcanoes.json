@@ -36,19 +36,18 @@
 	},
 	"features": [
 		[
-			"tfc:erosion"
-		],
-		[
 			"tfg:venus/terrain/lava_spring",
 			"tfg:venus/terrain/lava_delta",
 			"tfg:venus/terrain/lava_lake",
 			"tfg:venus/terrain/lava_fissure",
 			"tfg:venus/terrain/lava_rivulet",
-			"tfg:venus/terrain/magma_rivulet"
-		],
-		[
+			"tfg:venus/terrain/magma_rivulet",
 			"tfg:venus/terrain/basalt_pillar"
 		],
+		[
+			"tfc:erosion"
+		],
+		[],
 		[],
 		[
 			"tfg:venus/terrain/basalt_columns_small",
