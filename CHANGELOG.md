@@ -87,6 +87,7 @@
 - All tools should now have TFC damage types (#2868) @Pyritie
 - TFC magma blocks, lightblooms, and bulbkins now correctly have emissive textures @Pyritie
 - Quivers can now also go in the belt curios slot (#2927) @Pyritie
+- Various quest fixes and improvements @ashleney @Tinchik @TomPlop @Pyritie
 ### Bug fixes
 - Fixed being able to right-click crops with a scythe to harvest them (#1724) @Ujhik
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
@@ -108,6 +109,8 @@
 - Fixed the interdimensional wireless card so it should actually work again (the crafting requests aren't fixed yet though) @Mqrius
 - Fixed the position of the dimension indicator on recipes that are valid on multiple dimensions @BlueBoat29
 - Fixed a rare crash with beneath to overworld teleporting @Lolens
+- Added Sacks 'n' Such's containers to the Toolbelt blacklist, preventing a dupe (#2926) @Pyritie
+- Fixed a dupe with steam miner and steam rock crusher recycling @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare
