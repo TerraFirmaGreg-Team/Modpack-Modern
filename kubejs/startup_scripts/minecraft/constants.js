@@ -525,6 +525,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_fungus_on_a_stick', 
     'minecraft:carrot_on_a_stick',
     'minecraft:carrot',
+    'minecraft:melon',
     'minecraft:pumpkin',
     'minecraft:suspicious_stew',
     'minecraft:mycelium', 
