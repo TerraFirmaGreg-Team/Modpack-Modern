@@ -54,7 +54,7 @@
 - More plants have been added for production. @Redeix & @thederpysockdude123
 - The EGH and the Pisciculture recipes now require 50% less energy
 #### Other major changes
-- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing
+- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing, @asere
 - Added two-person rockets! @BlueBoat29
 - Added new advanced GTCEu Terminals @TomPlop
 - Added much more music to the different dimensions @Pyritie
