@@ -43,7 +43,9 @@
 			"tfg:venus/terrain/lava_spring_rare",
 			"tfc:random_empty_hot_spring"
 		],
-		[],
+		[
+			"tfg:venus/terrain/adakite_column"
+		],
 		[],
 		[],
 		"#tfg:venus_veins",
@@ -102,8 +104,8 @@
 			"charge": 0.7
 		},
 		"minecraft:magma_cube": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.03,
+			"charge": 0.10
 		},
 		"arthropocolypse:millipede_head": {
 			"energy_budget": 0.05,
