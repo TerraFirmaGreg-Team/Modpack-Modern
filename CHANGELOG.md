@@ -3,6 +3,8 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
+- Fixed cobble breaking into two cobble blocks (#2980) @Pyritie
 ### Translation updates
 
 ## [0.11.20] - 04-02-2026
@@ -15,6 +17,7 @@
 - Fixed all the missing crafting table saw recipes (#2967) @Pyritie
 - Fixed not being able to send crafting requests to your AE2 network with the interdimensional wireless card @Mqrius
 - Fixed the hydroponics facility, pisciculture fishery, and growth chamber's missing overclocks @TomPlop
+- Fixed matches, matchboxes, and lighters so they actually work with TFC things now (#1486) @Pyritie
 ### Translation updates
 - Spanish @NikoNeko17
 
