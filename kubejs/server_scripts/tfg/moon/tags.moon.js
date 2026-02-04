@@ -2,9 +2,6 @@
 
 function registerTFGMoonItemTags(event) {
 
-	event.add('tfg:moon_plants', 'tfg:lunar_roots')
-	event.add('tfg:moon_plants', 'tfg:lunar_sprouts')
-
 	event.add('tfc:compost_greens_high', 'minecraft:pearlescent_froglight')
 	event.add('tfc:compost_greens_high', 'minecraft:verdant_froglight')
 	event.add('tfc:compost_greens_high', 'minecraft:ochre_froglight')

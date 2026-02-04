@@ -561,7 +561,6 @@
 			dependencies: [
 				"0E2E93BE3364722D"
 				"4AD96212525517CD"
-				"37B7342CD1B3B76D"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.extreme_voltage.nuclear_fuel_factory.desc}"]
@@ -2339,13 +2338,28 @@
 		{
 			dependencies: ["617CF3335584DC8D"]
 			description: ["{quests.extreme_voltage.heat_battery.desc}"]
+			icon: "tfg:heat_battery_mk1"
 			id: "26AA29016BA23396"
 			subtitle: "{quests.extreme_voltage.heat_battery.subtitle}"
-			tasks: [{
-				id: "5C9A37E905A4030F"
-				item: "tfg:heat_battery_mk1"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5C9A37E905A4030F"
+					item: "tfg:heat_battery_mk1"
+					type: "item"
+				}
+				{
+					id: "7B355A4ECACCBE5C"
+					item: "tfg:copper_sandy_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36B68338FCD5F7F5"
+					item: "tfg:beryllium_sandy_frame"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 22.0d
 			y: 4.5d
 		}

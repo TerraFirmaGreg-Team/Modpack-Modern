@@ -238,9 +238,6 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:heightmap_ignore', 'tfg:aeronos_cap')
 	event.add('tfg:heightmap_ignore', 'tfg:strophar_cap')
 
-	event.remove('minecraft:enderman_holdable', 'minecraft:crimson_fungus')
-	event.remove('minecraft:enderman_holdable', 'minecraft:warped_fungus')
-
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
 

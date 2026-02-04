@@ -86,6 +86,7 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
 	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')

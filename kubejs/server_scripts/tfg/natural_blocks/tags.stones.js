@@ -28,8 +28,10 @@ function registerTFGStoneItemTags(event) {
 			material = rock.material.replace(/tfg:/g, '');
 
 		if (rock.raw != null) {
-			event.add('tfc:rock/raw', rock.raw.block);
-			event.add('forge:stone', rock.raw.block);
+			if (rock.collapsible) {
+				event.add('tfc:rock/raw', rock.raw.block);
+				event.add('forge:stone', rock.raw.block);
+			}
 			addToTfcTag(rock.raw.block);
 			addToMaterialTag(material, rock.raw.block);
 

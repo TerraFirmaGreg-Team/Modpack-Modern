@@ -5,6 +5,19 @@
 ### Bug fixes
 ### Translation updates
 
+## [0.11.20] - 04-02-2026
+### Changes
+- Added EV laser hatches! @TomPlop
+- Removed the logs to wood dust quern recipes as originally intended @Pyritie
+- Added a sealed barrel recipe to convert clay dust into clay balls (#2943) @OLOXpl
+- Added more fluid hatches to the Heat Exchanger to handle the increased flowrate (#2971) @TomPlop
+### Bug fixes
+- Fixed all the missing crafting table saw recipes (#2967) @Pyritie
+- Fixed not being able to send crafting requests to your AE2 network with the interdimensional wireless card @Mqrius
+- Fixed the hydroponics facility, pisciculture fishery, and growth chamber's missing overclocks @TomPlop
+### Translation updates
+- Spanish @NikoNeko17
+
 ## [0.11.19] - 03-02-2026
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie

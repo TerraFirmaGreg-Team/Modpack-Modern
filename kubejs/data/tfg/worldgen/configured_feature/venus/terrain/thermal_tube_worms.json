@@ -12,7 +12,7 @@
 									"type": "tfg:attached_decorative_plant",
 									"config": {
 										"block": "betterend:tube_worm",
-										"heightRange": 5
+										"heightRange": 1
 									}
 								},
 								"placement": []
@@ -33,7 +33,7 @@
 												"fluid": "sulfur_fumes"
 											}
 										},
-										"heightRange": 5
+										"heightRange": 1
 									}
 								},
 								"placement": []
@@ -48,8 +48,8 @@
 			},
 			"placement": []
 		},
-		"tries": 36,
+		"tries": 48,
 		"xz_spread": 4,
-		"y_spread": 0
+		"y_spread": 5
 	}
 }
