@@ -1872,7 +1872,7 @@
 		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.juicer.desc}"]
-			guide_page: "tfc:field_guide tfc:beneath:water"
+			guide_page: "tfc:field_guide tfc:beneath/water"
 			id: "3D845616A2F7083F"
 			subtitle: "{quests.tfg_tips.juicer.subtitle}"
 			tasks: [{
