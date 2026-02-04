@@ -412,7 +412,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID)
-	GTMaterials.Plutonium.getProperties().removeProperty(PropertyKey.ORE)
+	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE)
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
