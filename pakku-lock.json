@@ -13968,7 +13968,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tacz-tweaks-2.12.2-all.jar",
+                    "file_name": "tacz-tweaks-2.13.0-all.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -13977,24 +13977,24 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/H8peNuJG/versions/JnqIQ9EH/tacz-tweaks-2.12.2-all.jar",
-                    "id": "JnqIQ9EH",
+                    "url": "https://cdn.modrinth.com/data/H8peNuJG/versions/2ElSdr6d/tacz-tweaks-2.13.0-all.jar",
+                    "id": "2ElSdr6d",
                     "parent_id": "H8peNuJG",
                     "hashes": {
-                        "sha512": "6ff5680072a972f9a597928745525a89c194d9c7701cda33ba386d1bf8a0ff0fe010d5bf63f467c3ef7d746896ac6a7678e98a7285b0254b926075d4170ac353",
-                        "sha1": "f726c2d0ac2c77e3cc7f93fad7fd4338117c7a80"
+                        "sha512": "135248ead8c07f16d28253ae7ff9a7c1574f768921c9fbfa26bc05c4adb2ce1990be7a0e09897209dc758ef5eb2c302368a983fbe07af8168340971741c2d88a",
+                        "sha1": "1b2d7873fd3e2150f339d0d36e588196a50061d1"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
                         "ordsPcFz",
-                        "SzzJttH8"
+                        "SzzJttH8",
+                        "1eAoo2KR"
                     ],
-                    "size": 1894239,
-                    "date_published": "2026-01-24T10:14:48.372979Z"
+                    "size": 1921024,
+                    "date_published": "2026-02-03T11:33:11.132699Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tacz-tweaks-2.12.2-all.jar",
+                    "file_name": "tacz-tweaks-2.13.0-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -14003,20 +14003,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7517/23/tacz-tweaks-2.12.2-all.jar",
-                    "id": "7517023",
+                    "url": "https://edge.forgecdn.net/files/7570/412/tacz-tweaks-2.13.0-all.jar",
+                    "id": "7570412",
                     "parent_id": "1193263",
                     "hashes": {
-                        "sha1": "f726c2d0ac2c77e3cc7f93fad7fd4338117c7a80",
-                        "md5": "2b74092c813b98a27dad4b543808f61f"
+                        "sha1": "1b2d7873fd3e2150f339d0d36e588196a50061d1",
+                        "md5": "5a59c4f690866c9ff50eecd8015d4a73"
                     },
                     "required_dependencies": [
                         "1028108",
-                        "667299",
-                        "351264"
+                        "351264",
+                        "667299"
                     ],
-                    "size": 1894239,
-                    "date_published": "2026-01-24T10:14:48.150Z"
+                    "size": 1921024,
+                    "date_published": "2026-02-03T11:33:11.103Z"
                 }
             ]
         },
@@ -14110,7 +14110,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.19.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.20.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14119,23 +14119,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/LusgkBmJ/TerraFirmaGreg-Core-Modern-0.8.19.jar",
-                    "id": "LusgkBmJ",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/lFy65M5b/TerraFirmaGreg-Core-Modern-0.8.20.jar",
+                    "id": "lFy65M5b",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "b65de612b24528baead242f0d9564e799db5221b36fd12ccbb191a45f9186082ca4d21599343a909ef65541d230eff2353cfaa0c78f200fd4ff259c33cda11ec",
-                        "sha1": "ff9b919b7afa7a8f921c50d29718d4a3f8115648"
+                        "sha512": "d6f9c3331589e46cbb30cec39d2ff3c83bc6b25f168a03cf80d6e13d144ae17d3dc6bbbcdc65963c81c289f07e2b00e52cc53b48f61dc1d836e1f6542d04b9ef",
+                        "sha1": "4a31376e9527ba6c70bf9666c308c47b5371e18a"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "JaCEZUhg"
                     ],
-                    "size": 9564353,
-                    "date_published": "2026-02-03T11:14:10.819830Z"
+                    "size": 9566314,
+                    "date_published": "2026-02-03T23:29:11.849110Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.19.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.20.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14144,19 +14144,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7570/367/TerraFirmaGreg-Core-Modern-0.8.19.jar",
-                    "id": "7570367",
+                    "url": "https://edge.forgecdn.net/files/7572/993/TerraFirmaGreg-Core-Modern-0.8.20.jar",
+                    "id": "7572993",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "ff9b919b7afa7a8f921c50d29718d4a3f8115648",
-                        "md5": "81f3dfb6d3e503c2e10263ec3563c49a"
+                        "sha1": "4a31376e9527ba6c70bf9666c308c47b5371e18a",
+                        "md5": "173c0b79425140a01365b3707fb17dc4"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 9564353,
-                    "date_published": "2026-02-03T11:14:05.233Z"
+                    "size": 9566314,
+                    "date_published": "2026-02-03T23:29:07.213Z"
                 }
             ]
         },
