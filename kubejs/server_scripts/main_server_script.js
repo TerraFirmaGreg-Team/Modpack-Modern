@@ -159,6 +159,7 @@ TFCEvents.data(event => {
 	registerTFCDataForAdAstra(event);
 	registerTFCDataForArborFirmaCraft(event)
 	registerTFCDataForChalk(event);
+	registerTFCDataForChimes(event);
 	registerTFCDataForCreateAddition(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
@@ -229,6 +230,7 @@ ServerEvents.recipes(event => {
 	registerBeneathRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
+	registerChimesRecipes(event);
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
 	//registerCccBridgeRecipes(event)
