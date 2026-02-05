@@ -7163,7 +7163,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.64.jar",
+                    "file_name": "greate-0.0.65.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7172,23 +7172,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/9flLlqpd/greate-0.0.64.jar",
-                    "id": "9flLlqpd",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/xIktGJzE/greate-0.0.65.jar",
+                    "id": "xIktGJzE",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "9f7d4f37fa720eeca5177263c4cd00f6812cd77063214061f31ef416123d51bc0a553f46393c1e0e3a548ef6d15b2da2bd6f703d80379d3ad084ee749c12b2c0",
-                        "sha1": "7e779ac568c27ebb8cb9b16c6b8797b633ffdcdf"
+                        "sha512": "f274e349c91ac5d5bdadc84bda829c5f2939c97f9e88e291b287ea54d8d8ce5866d353b0f0f5f6f49c11e6adaf2cfb09a42a32fa7808db8ec715adf2885973bc",
+                        "sha1": "768da98b570ccc37542d4306ad350f022de63ec6"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "LNytGWDc"
                     ],
-                    "size": 1257336,
-                    "date_published": "2026-01-24T05:55:41.391475Z"
+                    "size": 1302531,
+                    "date_published": "2026-02-04T01:49:41.993351Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.64.jar",
+                    "file_name": "greate-0.0.65.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7197,19 +7197,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7516/28/greate-0.0.64.jar",
-                    "id": "7516028",
+                    "url": "https://edge.forgecdn.net/files/7573/411/greate-0.0.65.jar",
+                    "id": "7573411",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "7e779ac568c27ebb8cb9b16c6b8797b633ffdcdf",
-                        "md5": "31e92230efe5fc01d683e25fbe6a561c"
+                        "sha1": "768da98b570ccc37542d4306ad350f022de63ec6",
+                        "md5": "ed2b76c6a6cec99cef495faca15f40ea"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "328085"
+                        "328085",
+                        "890405"
                     ],
-                    "size": 1257336,
-                    "date_published": "2026-01-24T05:55:39.687Z"
+                    "size": 1302531,
+                    "date_published": "2026-02-04T01:49:39.550Z"
                 }
             ]
         },
@@ -10548,7 +10548,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "particle_core-0.3.2+1.20.1+forge.jar",
+                    "file_name": "particle_core-0.3.3+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10557,23 +10557,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/RSeLon5O/versions/qSjxrRl9/particle_core-0.3.2+1.20.1+forge.jar",
-                    "id": "qSjxrRl9",
+                    "url": "https://cdn.modrinth.com/data/RSeLon5O/versions/cFafZfyr/particle_core-0.3.3+1.20.1+forge.jar",
+                    "id": "cFafZfyr",
                     "parent_id": "RSeLon5O",
                     "hashes": {
-                        "sha512": "042a26c72ed13a5b7a961afd575561442fe979295e2adc5901127e2be578391f597ce24d17d92fdf6ad515a19033f1b7cde0a455e7e9e9b0a36a8089caddf459",
-                        "sha1": "57079d1607ce044533fb076d2db0e2a3d277a4fb"
+                        "sha512": "46694c2525b1e14b20ec6043ce9f7e7b92b9fe3a7d55c995951ec54d7acecf1c1a8a674d829efb42e6d1d9c7b0a29fd0edc834a876fb5a85ad90f35b932748ff",
+                        "sha1": "1da5744853d17979033d5ee3cd4251b8340ea7be"
                     },
                     "required_dependencies": [
-                        "ordsPcFz",
-                        "hYykXjDp"
+                        "hYykXjDp",
+                        "ordsPcFz"
                     ],
-                    "size": 773147,
-                    "date_published": "2026-01-25T16:04:41.088385Z"
+                    "size": 773448,
+                    "date_published": "2026-02-05T19:47:58.826248Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "particle_core-0.3.2+1.20.1+forge.jar",
+                    "file_name": "particle_core-0.3.3+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10582,19 +10582,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7525/37/particle_core-0.3.2+1.20.1+forge.jar",
-                    "id": "7525037",
+                    "url": "https://edge.forgecdn.net/files/7581/36/particle_core-0.3.3+1.20.1+forge.jar",
+                    "id": "7581036",
                     "parent_id": "985426",
                     "hashes": {
-                        "sha1": "57079d1607ce044533fb076d2db0e2a3d277a4fb",
-                        "md5": "5ebd6c2396924c3e33ea96003ec10b0c"
+                        "sha1": "1da5744853d17979033d5ee3cd4251b8340ea7be",
+                        "md5": "eb8ce770b3ddc793df437bfcec169a6d"
                     },
                     "required_dependencies": [
-                        "1005914",
-                        "351264"
+                        "351264",
+                        "1005914"
                     ],
-                    "size": 773147,
-                    "date_published": "2026-01-25T16:04:36.363Z"
+                    "size": 773448,
+                    "date_published": "2026-02-05T19:47:53.227Z"
                 }
             ]
         },
