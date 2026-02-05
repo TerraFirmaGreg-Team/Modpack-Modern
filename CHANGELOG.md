@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Added artisan table recipes for all pipe mold sizes (#2983) @Redeix
 ### Bug fixes
 - Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
 - Fixed cobble breaking into two cobble blocks (#2980) @Pyritie
