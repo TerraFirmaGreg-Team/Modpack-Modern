@@ -28,8 +28,8 @@ function registerTFGCompostRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.mixer('tfg:tfc/mixer/fertilizer')
-		.itemInputs('8x tfc:pure_nitrogen', '8x tfc:pure_potassium', '8x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
-		.itemOutputs('1x gtceu:fertilizer')
+		.itemInputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
+		.itemOutputs('8x gtceu:fertilizer')
 		.duration(160)
 		.EUt(GTValues.VA[GTValues.ULV])
 
