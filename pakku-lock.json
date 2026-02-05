@@ -5603,6 +5603,69 @@
             ]
         },
         {
+            "pakku_id": "3RRKO5wzFNa95Vkb",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "fps-reducer",
+                "modrinth": "fps-reducer"
+            },
+            "name": {
+                "curseforge": "FPS Reducer",
+                "modrinth": "FPS Reducer"
+            },
+            "id": {
+                "curseforge": "280294",
+                "modrinth": "iZ10HXDj"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "FpsReducer2-forge-1.20.1-2.5.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6791/399/FpsReducer2-forge-1.20.1-2.5.1.jar",
+                    "id": "6791399",
+                    "parent_id": "280294",
+                    "hashes": {
+                        "sha1": "4920a2e1d17090007179a568181624847fba0993",
+                        "md5": "d17bad88d746c21dcd37f16257a1e84d"
+                    },
+                    "required_dependencies": [],
+                    "size": 125660,
+                    "date_published": "2025-07-20T14:53:34.933Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "FpsReducer2-forge-1.20.1-2.5.1.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/iZ10HXDj/versions/UfMtCXs7/FpsReducer2-forge-1.20.1-2.5.1.jar",
+                    "id": "UfMtCXs7",
+                    "parent_id": "iZ10HXDj",
+                    "hashes": {
+                        "sha512": "b6123d73602e8909f71d71ff5fe78e3cd8dc1628645c82e4d0ca5bdc93c9a2cb3135a9bada7ffa6f5dbcb34142bf05f9546f44896df7be6f5f3f1fb804d735cd",
+                        "sha1": "4920a2e1d17090007179a568181624847fba0993"
+                    },
+                    "required_dependencies": [],
+                    "size": 125660,
+                    "date_published": "2025-07-22T00:03:21.002137Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "DNPr6iL9YKiQI0Wu",
             "pakku_links": [
                 "wAKaeujhSawlrQQk",
@@ -9351,71 +9414,6 @@
             ]
         },
         {
-            "pakku_id": "DBqtXgbdT2kqVKUh",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "modern-ui",
-                "modrinth": "modern-ui"
-            },
-            "name": {
-                "curseforge": "Modern UI",
-                "modrinth": "Modern UI"
-            },
-            "id": {
-                "curseforge": "352491",
-                "modrinth": "3sjzyvGR"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6956/345/ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
-                    "id": "6956345",
-                    "parent_id": "352491",
-                    "hashes": {
-                        "sha1": "fcebe51e3c2ca34793f9b132fa05b5494ffc76a4",
-                        "md5": "5b863668f0de88993289ba098c77dcff"
-                    },
-                    "required_dependencies": [],
-                    "size": 25104473,
-                    "date_published": "2025-09-02T16:33:54.937Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/3sjzyvGR/versions/6ksT8CWg/ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
-                    "id": "6ksT8CWg",
-                    "parent_id": "3sjzyvGR",
-                    "hashes": {
-                        "sha512": "cf9a1bfa25f956a9277639da833a86d59a6a55bc690b6c03d4292bb240cb775c32ecf7ae253db7779757e2c74c5adf2c272c4ecdb35b907027de3ec7534bbd27",
-                        "sha1": "fcebe51e3c2ca34793f9b132fa05b5494ffc76a4"
-                    },
-                    "required_dependencies": [],
-                    "size": 25104473,
-                    "date_published": "2025-09-02T16:36:27.248973Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "vLkSeib1zFzTMcPF",
             "type": "MOD",
             "side": "BOTH",
@@ -11164,6 +11162,67 @@
                     "required_dependencies": [],
                     "size": 713454,
                     "date_published": "2024-09-09T08:07:43.540Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RCLoXroN4KKClb7X",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "reblured",
+                "modrinth": "reblured"
+            },
+            "name": {
+                "curseforge": "ReBlured",
+                "modrinth": "ReBlured"
+            },
+            "id": {
+                "curseforge": "637729",
+                "modrinth": "s4G3ZCcv"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Reblured-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4695/744/Reblured-1.20.1-1.3.0.jar",
+                    "id": "4695744",
+                    "parent_id": "637729",
+                    "hashes": {
+                        "sha1": "9acd6f7702418fc77280bcc3c82b8589032d9f34",
+                        "md5": "0844d81a8fb2e544245bbf4faa1e4482"
+                    },
+                    "required_dependencies": [],
+                    "size": 366687,
+                    "date_published": "2023-08-11T12:01:45.827Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Reblured-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/s4G3ZCcv/versions/V8bX1gty/Reblured-1.20.1-1.3.0.jar",
+                    "id": "V8bX1gty",
+                    "parent_id": "s4G3ZCcv",
+                    "hashes": {
+                        "sha512": "3ba7e80d0a71e25d734532933206c3472ba292575fee70f65845f4816ea7a321e45391c57909638ee989c8413dd309eded8f24eb27edb82776788dc19ae426cd",
+                        "sha1": "9acd6f7702418fc77280bcc3c82b8589032d9f34"
+                    },
+                    "required_dependencies": [],
+                    "size": 366687,
+                    "date_published": "2023-08-11T12:01:49.996223Z"
                 }
             ]
         },
