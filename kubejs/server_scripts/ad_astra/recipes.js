@@ -453,7 +453,7 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:steel_door')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true, true)
+	TFGHelpers.registerMaterialInfo('ad_astra:steel_door', [GTMaterials.Steel, 2, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
 	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_trapdoor`)
 		.itemInputs('tfc:metal/trapdoor/steel', '#forge:glass_panes')
@@ -461,7 +461,6 @@ const registerAdAstraRecipes = (event) => {
 		.itemOutputs('ad_astra:steel_trapdoor')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-
 	TFGHelpers.registerMaterialInfo('ad_astra:steel_trapdoor', [GTMaterials.Steel, 1, GTMaterials.Glass, 3/4, GTMaterials.Polyethylene, 1/4])
 
 	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block

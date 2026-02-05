@@ -2,31 +2,23 @@
 "use strict";
 
 const registerAsticorCartsRecipes = (event) => {
-    event.remove({ id: 'astikorcarts:animal_cart' })
-    event.remove({ id: 'astikorcarts:supply_cart' })
-    event.remove({ id: 'astikorcarts:plow' })
-    event.remove({ id: 'astikorcarts:wheel' })
+    event.remove({ id: 'astikorcarts:animal_cart' });
+    event.remove({ id: 'astikorcarts:supply_cart' });
+    event.remove({ id: 'astikorcarts:plow' });
+    event.remove({ id: 'astikorcarts:wheel' });
 
-    event.recipes.gtceu.macerator(`tfg:recycle_astikor_animal_cart`)
-        .itemInputs('#tfcastikorcarts:animal_cart')
-        .itemOutputs('#forge:dusts/brass')
-        .duration(100)
-        .category(GTRecipeCategories.MACERATOR_RECYCLING)
-        .EUt(GTValues.VA[GTValues.ULV])
+    global.TFC_HARDWOOD_TYPES.forEach(type => {
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:wheel/${type}`, [GTMaterials.get('hardwood'), 2]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:supply_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 8, GTMaterials.Wood, 12]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:plow/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 8]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:animal_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 14]);
+    });
+    global.TFC_SOFTWOOD_TYPES.forEach(type => {
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:wheel/${type}`, [GTMaterials.Wood, 2]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:supply_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.Wood, 20]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:plow/${type}`, [GTMaterials.Brass, 1, GTMaterials.Wood, 8]);
+        TFGHelpers.registerMaterialInfo(`tfcastikorcarts:animal_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.Wood, 14]);
+    });
 
-    event.recipes.gtceu.macerator(`tfg:recycle_astikor_supply_cart`)
-        .itemInputs('#tfcastikorcarts:supply_cart')
-        .itemOutputs('#forge:dusts/brass')
-        .duration(100)
-        .category(GTRecipeCategories.MACERATOR_RECYCLING)
-        .EUt(GTValues.VA[GTValues.ULV])
-
-    event.recipes.gtceu.macerator(`tfg:recycle_astikor_plow`)
-        .itemInputs('#tfcastikorcarts:plow')
-        .itemOutputs('#forge:dusts/brass')
-        .duration(100)
-        .category(GTRecipeCategories.MACERATOR_RECYCLING)
-        .EUt(GTValues.VA[GTValues.ULV])
-
-    event.replaceInput({ mod: 'tfcastikorcarts' }, '#forge:rods', '#mcw_tfc_aio:metal_rods')
-}
+    event.replaceInput({ mod: 'tfcastikorcarts' }, '#forge:rods', '#mcw_tfc_aio:metal_rods');
+};
