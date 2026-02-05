@@ -894,6 +894,22 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
 	})
 
+	global.processorRecipe(event, 'soy_mixture_sea_water', 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/soybean'],
+		fluidInputs: ['tfc:salt_water 50'],
+		itemOutputs: ['firmalife:food/soy_mixture'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
+	})
+
+	global.processorRecipe(event, 'soy_mixture_salt_water', 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/soybean'],
+		fluidInputs: ['gtceu:salt_water 25'],
+		itemOutputs: ['firmalife:food/soy_mixture'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
+	})
+
 	global.processorRecipe(event, "brown_mushroom", 100, 8, {
 		circuit: 30,
 		itemInputs: ["minecraft:brown_mushroom_block"],
