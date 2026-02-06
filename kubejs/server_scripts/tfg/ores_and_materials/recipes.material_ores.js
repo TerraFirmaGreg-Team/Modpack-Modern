@@ -331,6 +331,7 @@ function processCrushedOre(event, material) {
 			[crushedOreItem, Fluid.of('minecraft:water', 100)]
 		)
 		.recipeTier(1)
+		.circuitNumber(1)
 		.id(`tfg:splashing/${materialName}_purified_ore_water`)
 
 		event.recipes.greate.splashing(
@@ -338,6 +339,7 @@ function processCrushedOre(event, material) {
 			[crushedOreItem, Fluid.of('gtceu:distilled_water', 10)]
 		)
 		.recipeTier(1)
+		.circuitNumber(2)
 		.id(`tfg:splashing/${materialName}_purified_ore_distilled`)
 
 		// Dropping in water
@@ -458,7 +460,8 @@ function processImpureDust(event, material) {
 			[dustItem],
 			[impureDustItem, Fluid.of('minecraft:water', 100)]
 		)
-		.recipeTier(1)
+		.recipeTier(1)		
+		.circuitNumber(1)
 		.id(`tfg:splashing/${materialName}_dust_from_impure_water`)
 
 		event.recipes.greate.splashing(
@@ -466,6 +469,7 @@ function processImpureDust(event, material) {
 			[impureDustItem, Fluid.of('gtceu:distilled_water', 10)]
 		)
 		.recipeTier(1)
+		.circuitNumber(2)
 		.id(`tfg:splashing/${materialName}_dust_from_impure_distilled`)
 
 		event.recipes.tfc.barrel_instant()
@@ -522,6 +526,7 @@ function processPureDust(event, material) {
 			[pureDustItem, Fluid.of('minecraft:water', 100)]
 		)
 		.recipeTier(1)
+		.circuitNumber(1)
 		.id(`tfg:splashing/${materialName}_dust_from_pure_water`)
 
 		event.recipes.greate.splashing(
@@ -529,6 +534,7 @@ function processPureDust(event, material) {
 			[pureDustItem, Fluid.of('gtceu:distilled_water', 10)]
 		)
 		.recipeTier(1)
+		.circuitNumber(2)
 		.id(`tfg:splashing/${materialName}_dust_from_pure_distilled`)
 
 		event.recipes.tfc.barrel_instant()

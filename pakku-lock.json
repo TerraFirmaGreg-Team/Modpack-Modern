@@ -4875,7 +4875,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "domum_ornamentum-1.20.1-1.0.295-universal.jar",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.296-universal.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4883,16 +4883,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7530/695/domum_ornamentum-1.20.1-1.0.295-universal.jar",
-                    "id": "7530695",
+                    "url": "https://edge.forgecdn.net/files/7585/567/domum_ornamentum-1.20.1-1.0.296-universal.jar",
+                    "id": "7585567",
                     "parent_id": "527361",
                     "hashes": {
-                        "sha1": "29950245b98ec35184d806e3b9ace700e67ac585",
-                        "md5": "2f8435a8c43ebff6df70299ea212b336"
+                        "sha1": "f0052adb170e5f73f0f5b625c411bc5b99183c00",
+                        "md5": "2a29092b7f67ac477f253c44d3d0463c"
                     },
                     "required_dependencies": [],
-                    "size": 1141554,
-                    "date_published": "2026-01-26T15:27:31.327Z"
+                    "size": 1141555,
+                    "date_published": "2026-02-06T18:57:22.807Z"
                 }
             ]
         },
@@ -7163,7 +7163,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.65.jar",
+                    "file_name": "greate-0.0.66.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7172,23 +7172,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/xIktGJzE/greate-0.0.65.jar",
-                    "id": "xIktGJzE",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/PKMB9cOR/greate-0.0.66.jar",
+                    "id": "PKMB9cOR",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "f274e349c91ac5d5bdadc84bda829c5f2939c97f9e88e291b287ea54d8d8ce5866d353b0f0f5f6f49c11e6adaf2cfb09a42a32fa7808db8ec715adf2885973bc",
-                        "sha1": "768da98b570ccc37542d4306ad350f022de63ec6"
+                        "sha512": "664e7ef0bd1a75739159dd2da6e8acb1085071c50f057eb8e8edd9b6e3c71c738364c328f98cfa00841a55411fa27980c53befea3a9867d1245bc7818f326560",
+                        "sha1": "34cc291020c237e39e0f04939cc78ccf2a9ab862"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "LNytGWDc"
                     ],
-                    "size": 1302531,
-                    "date_published": "2026-02-04T01:49:41.993351Z"
+                    "size": 1302534,
+                    "date_published": "2026-02-06T02:33:01.791850Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.65.jar",
+                    "file_name": "greate-0.0.66.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7197,19 +7197,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7573/411/greate-0.0.65.jar",
-                    "id": "7573411",
+                    "url": "https://edge.forgecdn.net/files/7582/520/greate-0.0.66.jar",
+                    "id": "7582520",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "768da98b570ccc37542d4306ad350f022de63ec6",
-                        "md5": "ed2b76c6a6cec99cef495faca15f40ea"
+                        "sha1": "34cc291020c237e39e0f04939cc78ccf2a9ab862",
+                        "md5": "5a4ed301d6d3ab28f32be01489390cc7"
                     },
                     "required_dependencies": [
                         "328085",
                         "890405"
                     ],
-                    "size": 1302531,
-                    "date_published": "2026-02-04T01:49:39.550Z"
+                    "size": 1302534,
+                    "date_published": "2026-02-06T02:32:59.240Z"
                 }
             ]
         },
