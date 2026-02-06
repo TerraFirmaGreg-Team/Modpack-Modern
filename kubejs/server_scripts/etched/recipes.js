@@ -72,4 +72,6 @@ const registerEtchedRecipes = (event) => {
     event.shapeless('create_connected:music_disc_elevator', ['etched:blank_music_disc', 'create:elevator_pulley'])
     //dear god why
     event.shapeless('gtceu:sus_record', ['etched:blank_music_disc', '#tfc:knives', 'tfc:food/green_bean']).id('tfg:sus_record');
+    
+    TFGHelpers.registerMaterialInfo('etched:jukebox_minecart', [GTMaterials.WroughtIron, 5, GTMaterials.Wood, 16, GTMaterials.Diamond, 1]);
 }
