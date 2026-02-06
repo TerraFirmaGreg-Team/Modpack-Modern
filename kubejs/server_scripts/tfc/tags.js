@@ -6,7 +6,7 @@ const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegis
 //#region item
 ServerEvents.tags('item', event => {
 
-    // Tool rack tags - dynamically add GT tools and various other tools
+    // Tool rack tags - dynamically add tool types
     forEachMaterial((material) => {
         if (material.hasProperty(PropertyKey.TOOL)) {
             for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
@@ -288,7 +288,7 @@ ServerEvents.tags('item', event => {
         });
     });
 
-    // Add hanging sign tags for all metals and wood types
+    // Add hanging sign tags for all metal/wood types
     global.TFC_EQUIPMENT_METALS.forEach(metal => {
         event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`));
         event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`));
@@ -322,7 +322,7 @@ ServerEvents.tags('item', event => {
         event.add('c:hidden_from_recipe_viewers', item);
     });
 
-    // Remove ore tags
+    // Remove all tfc ore tags
     event.removeAllTagsFrom('/tfc:ore/[^*]+/[^*]+/');
 
     // helpers
