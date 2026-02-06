@@ -19,10 +19,14 @@ ServerEvents.tags('item', event => {
         }
     });
 
-	/*
-	*   How to use:
+		/*
+	*	How to use:
 	*	'target_tag':  //this is the tag you're adding items/blocks/fluids to
 	*		['item_1', 'item_2', 'item_3'] //the items you're adding to the tag go here
+	*
+	*    ммм ну типа вот как это всё работает:
+	*    'target_tag':  //прикинь, это тег, в него добавляют предметы жижи или другой мусор
+	*        ['item_1', 'item_2', 'item_3'] //твой мусор
 	*/
     const itemTagAdditions = {
         'tfc:usable_on_tool_rack':
