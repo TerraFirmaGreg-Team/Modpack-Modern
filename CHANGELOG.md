@@ -1,13 +1,54 @@
 # Changelog
 
 ## Unreleased
+### Changes
+- Added artisan table recipes for all pipe mold sizes (#2983) @Redeix
+- Added optional chimes compat. (#2973) @TreyR9
+
+### Bug fixes
+- Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
+- Fixed cobble breaking into two cobble blocks (#2980) @Pyritie
+### Translation updates
+
+## [0.11.20] - 04-02-2026
+### Changes
+- Added EV laser hatches! @TomPlop
+- Removed the logs to wood dust quern recipes as originally intended @Pyritie
+- Added a sealed barrel recipe to convert clay dust into clay balls (#2943) @OLOXpl
+- Added more fluid hatches to the Heat Exchanger to handle the increased flowrate (#2971) @TomPlop
+### Bug fixes
+- Fixed all the missing crafting table saw recipes (#2967) @Pyritie
+- Fixed not being able to send crafting requests to your AE2 network with the interdimensional wireless card @Mqrius
+- Fixed the hydroponics facility, pisciculture fishery, and growth chamber's missing overclocks @TomPlop
+- Fixed matches, matchboxes, and lighters so they actually work with TFC things now (#1486) @Pyritie
+### Translation updates
+- Spanish @NikoNeko17
+
+## [0.11.19] - 03-02-2026
 ### Breaking changes
 - The chemical reactor recipe for making Kaolinite Powder now uses circuit 3 @Pyritie
+- The two chemical reactor recipes for Tetramethoxysilane now have circuits (1 and 2) (#2898) @Pyritie
+- Toluene + Benzene = Biphenyl + Methane now uses circuit 1 (#2928) @Pyritie
+- TFC Gurman changed its name and recipe IDs to TFC Gourmet. There will be conversion items, but not fluids, so drink all your lemonade and kvass before updating.
+- The BTX line has been modified, with the Cracker now outputting the used Catalyser instead of the LCR
+#### Energy Update
+- Cetane Boosted Diesel's duration is buffed by 30%
+- Diesel's duration is nerfed by 25%, but can now be crafted at ULV
+- Added distillation recipe to get fuel from oil with the Vacuum Chamber
+- Light Fuel isn't a fuel anymore (make Diesel with it!)
+- High Octane Gasoline now requires an IV Energy Hatch
+- Add Small Fission Reactor, Small Turbine Generator, and the Cooling Tower. You can now make power from Fission on Earth!
+- BTX has been buffed by 10%, and also produces 12.5% more with each craft!
 #### ULV changes
 - The vacuum chamber requires a blue steel spring now, so the colored steel anvil can't be skipped
 - The steel mechanical mixer can now only make weak red/blue steel dust, not regular (it can still make black steel dust though). The LV mixer can make normal red/blue steel dust
 - Changed ULV hulls to needing lead plates instead of wood plates
 - Adjusted a few other machine recipes slightly
+- Deserts now contain oil spouts for heavy, raw, light, and normal oils
+- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert
+- Unhid and added a recipe for the kinetic bridge (#2881) @Pyritie
+- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
+- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 #### LV changes
 - Completely rearranged the quest chapter! Now it should be much less intimidating for new players
 - Added Bakelite, a new early plastic used for Phenolic Boards and MV machine hulls (instead of wrought iron plates)
@@ -16,25 +57,63 @@
 - Added new ceramics required to craft Cupronickel Coils, made out of your recycled TFC blast furnace, Magnesia, and some resin
 - Cupronickel coils now also need blue steel foil instead of bronze
 - Polyethylene now requires an MV chemical reactor
-### Changes
 - Added the Artisan Table to "knap" circuit boards and GT extruder and casting molds, replacing their crafting table recipes. @BlueBoat29 @Redeix
+#### EV changes
+- Added Radon to EV Superconductor so they are gated behind the Uranium Reactor
+- Active Energy Transformer and Normal Laser Pipe are moved to EV behind the Uranium Reactor
+- Change to Refrigerant Pellet, you now need the TerraFirmaGuard PA6 to run your first Plutonium Rods
+- Added the Heat Battery - a new multiblock that stores heat from your fission coolant
+- Rework of the Ostrum Linear Accelerator - it can now be expanded in height, requires heat from a Heat Battery to run and used for many new resources
+- Every Fission Reactor recipe now outputs a depleted rod that you have to process to get the product from fission
+- The depleted rod now has an average heat depending on the temperature of the fission reactor while it was in it. Every time the reactor goes on cooldown, it adds 10,000 heat to your rod
+- RTM Coils were modified to require resources from Mars (from the martian trees) and Rockwool, but now you don't need them as early in EV
+- Blocks (such as sand piles) in the Nuclear Turbine's chimney or turbine area will now just stop it from working instead of unforming the multiblock
+#### IV changes
+- Multi-Layer Insulated Shielding is now required for HSS-G coils.
+#### Electric Greenhouse changes
+- You can now use glass casings and trapdoors for the EGH floor. @Redeix
+- Aquaponic multiblocks now only need half an amp to run. (#2950) @Redeix
+- Base recipe duration has been reduced to 600/450/300 seconds. (#2950) @Redeix
+- More circuit options for recipes that priorities seeds/saplings and recipes that prioritize leaves have been added. (#2950) @Redeix
+- More plants have been added for production. @Redeix & @thederpysockdude123
+- The EGH and the Pisciculture recipes now require 50% less energy
+#### Other major changes
+- The railgun should actually work on servers now! (#2820, #2702, #2030, #2031, #2057, #2010) @gustovafing, @asere
+- Added two-person rockets! @BlueBoat29
+- Added new advanced GTCEu Terminals @TomPlop
 - Added much more music to the different dimensions @Pyritie
+### Changes
 - Vanadium magnetite is now usable as an iron ore for TFC purposes (#2834) @Pyritie
-- Added steam alloy smelter glass batch recipes (#2853) @Pyritie
 - Paracetamol now cures a small amount of the Radioactive condition, and RadAway now cures everything completely @Pyritie
-- High speed on a Belt Grinder now only requires 64 RPM instead of 128 RPM
 - Glow ink now just requires a fluid solidifier and a ball mold, instead of whatever it was doing before @Pyritie
 - TFC "pure" fertilisers are now all craftable and provide 100 fertiliser instead of 15 (#2884) @Coox1e
 - Added shapeless recipes to convert any old stone dusts into their new equivalents (#2900) @Pyritie
-- Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Added recipe to convert sedimentary carbonate stone dust into flux (#2862) @Pyritie
-- Deserts now contain oil spouts for heavy, raw, light, and normal oils @Pyritie
-- Oilsands veins are now smaller across most of the world, except the huge ones have been moved to the desert @Pyritie
+- Fixed the crucible capacity config on servers (#2899) @Pyritie
 - Some volcanoes should now have much bigger amounts of lava underneath them, for more lava needs, but also infinite obsidian via the rock breaker has been removed. (Use a fluid solidifier instead) @Pyritie
 - Added manual/automated sanding recipes for making smooth stone (#2876) @Pyritie
 - Added deployer recipes for all the in-world block modification recipes (#2876) @Pyritie
 - Added recipe to convert kaolin clay blocks back into kaolin clay (#2904) @Pyritie
+- Axolotls now have genders @Pyritie
+- Piglins can now spawn with crossbows @Pyritie
+- Piglin brutes now always spawn with full armor and harder-hitting weapons @Pyritie
+- Added quartzite as a mars stone type @Pyritie
+- Added assembler recipe for framed cubes (#2889) @Coox1e
+- Added a furnace recipe for dead grass to thatch (#2935) @Coox1e
+- Added support for Bluemap (#2922) @trisjob
+- Added mixer and barrel recipes for dye fluids (#2925, #2938) @OLOXpl
+- Added recipes to convert leaves into leaf piles. (#2950) @Redeix
+- Added a recipe to convert fruit leaf blocks into firmalife fruit leaf items. (#2950) @Redeix
+- Added a recipe to turn leaf blocks into hedges. (#2950) @Redeix
+- Added recipes to make krummholz. (#2950) @Redeix
+- Added config file for Via Romana support. (#2950) @Redeix
+- Backpack void upgrades are now cheaper @Pyritie
+- All tools should now have TFC damage types (#2868) @Pyritie
+- TFC magma blocks, lightblooms, and bulbkins now correctly have emissive textures @Pyritie
+- Quivers can now also go in the belt curios slot (#2927) @Pyritie
+- Various quest fixes and improvements @ashleney @Tinchik @TomPlop @Pyritie
 ### Bug fixes
+- Fixed being able to right-click crops with a scythe to harvest them (#1724) @Ujhik
 - Fixed large miners not outputting crushed ore when mining Migmatite @Pyritie
 - Fixed red granite ores never dropping poor or rich raw ores @Pyritie
 - Fixed rosin leaves and saplings having tags the wrong way around (#2840) @TanJeeSchuan
@@ -45,6 +124,18 @@
 - Fixed the hot ingot icons for Ostrum and Vanadium ingots looking inconsistent with the regular ingots (#2875) @RubenVerg
 - Fixed pyrogallol and black and white film developer requiring too high of a heat on the pot recipe (#2909) @Pyritie
 - Fixed not being able to fire scraping blade clay mold (#2905) @Pyritie
+- Fixed stair and slab versions of road blocks not having speed bonuses (#2912) @Pyritie
+- Fixed RNR roofs not having mineable tags, and blocked the stair/slab frame from Additional Placements (#2870) @Pyritie
+- Fixed piglin brutes not dropping meat or bones @Pyritie
+- Fixed not being able to put rings, wrench tips, screwdriver tips, buzzsaw blades, or wire cutter tips in a crucible (#2913) @Pyritie
+- Fixed a concrete dupe (#2948) and some other stone-related recycling recipes @Pyritie
+- Fixed the rendering of adjacent large martian nests @Mqrius
+- Fixed the interdimensional wireless card so it should actually work again (the crafting requests aren't fixed yet though) @Mqrius
+- Fixed the position of the dimension indicator on recipes that are valid on multiple dimensions @BlueBoat29
+- Fixed rockets breaking when you were carrying something @BlueBoat29
+- Fixed a rare crash with beneath to overworld teleporting @Lolens
+- Added Sacks 'n' Such's containers to the Toolbelt blacklist, preventing a dupe (#2926) @Pyritie
+- Fixed a dupe with steam miner and steam rock crusher recycling @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Russian @Petr211071 + @Nixieeunrare

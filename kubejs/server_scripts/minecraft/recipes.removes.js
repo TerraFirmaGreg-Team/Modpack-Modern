@@ -6,6 +6,7 @@ function removeMinecraftRecipes(event) {
 	global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
+		TFGHelpers.clearMaterialInfo(item);
 	})
 	
 	//#region Выход: Камень

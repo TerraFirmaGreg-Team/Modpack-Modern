@@ -170,6 +170,15 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     "gtceu:molten_black_bronze_bucket",
     "gtceu:molten_bismuth_bronze_bucket",
+    "gtceu:molten_rose_gold_bucket",
+    "gtceu:molten_sterling_silver_bucket",
+    "gtceu:molten_stainless_steel_bucket",
+    "gtceu:molten_manganese_phosphide_bucket",
+    "gtceu:molten_vanadium_steel_bucket",
+    "gtceu:molten_gallium_arsenide_bucket",
+    "gtceu:molten_hsla_steel_bucket",
+    "gtceu:molten_rocket_alloy_t2_bucket",
+    "gtceu:molten_desh_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
 
@@ -418,7 +427,9 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "venus_stone",
     "mercury_stone",
     "glacio_stone",
-    "red_granite"
+    "red_granite",
+    "flavolite",
+    "sandy_jadestone"
 ]);
 //#endregion
 
@@ -444,7 +455,10 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
 
     { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
-    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 }
+    { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 },
+
+    { recipeId: "gtceu:chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
+    { recipeId: "gtceu:large_chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
 ]);
 //#endregion
 

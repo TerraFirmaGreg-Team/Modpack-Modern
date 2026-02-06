@@ -79,7 +79,9 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 
-	// #region Move MV superconductor to mid-late MV instead of post-vac freezer
+	// #region Superconductor
+	
+	// Move MV superconductor to mid-late MV instead of post-vac freezer
 
 	event.remove({ id: 'gtceu:shaped/mv_chemical_bath' })
 	event.shaped('gtceu:mv_chemical_bath', [
@@ -110,6 +112,32 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:magnesium_diboride_ingot')
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Move EV to after Uranium Reactor
+
+	event.remove({ id: 'gtceu:mixer/uranium_triplatinum' })
+	event.recipes.gtceu.mixer('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.itemOutputs(Item.of('gtceu:uranium_triplatinum_dust', 4))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(4)
+
+	// Move Superconductor to EV and make them cheap
+
+	event.remove({ id: 'gtceu:assembler/laser_cable' })
+	event.recipes.gtceu.assembler('tfg:laser_cable')
+		.itemInputs(Item.of('gtceu:laminated_glass', 1), Item.of('2x #forge:foils/ostrum_iodide', 2))
+		.itemOutputs(Item.of('gtceu:normal_laser_pipe', 16))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	TFGHelpers.registerMaterialInfo('gtceu:normal_laser_pipe', [GTMaterials.Air, 1])
+	event.remove({ id: 'gtceu:arc_furnace/arc_normal_laser_pipe' })
+	removeMaceratorRecipe(event, 'macerate_normal_laser_pipe')
 
 	// #endregion
 
@@ -420,4 +448,10 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('#forge:lenses/glass', '#forge:small_dusts/glass')
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Magnetic iron
+	event.shapeless('gtceu:magnetic_iron_ingot', ['#forge:ingots/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
+
 }

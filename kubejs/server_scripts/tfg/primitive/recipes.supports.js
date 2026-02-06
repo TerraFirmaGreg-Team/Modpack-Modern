@@ -8,14 +8,14 @@ function registerTFGSupportRecipes(event) {
 
 	// Concrete Supports
 	event.recipes.gtceu.fluid_solidifier('tfg:gtceu/fluid_solidifier/reinforced_light_concrete_support')
-		.inputFluids(Fluid.of('gtceu:concrete', 96))
+		.inputFluids(Fluid.of('gtceu:concrete', 144 / 2))
 		.itemOutputs('1x tfg:reinforced_light_concrete_support')
 		.itemInputs('1x tfg:rebar_support')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/reinforced_light_concrete_support')
-		.inputFluids(Fluid.of('gtceu:concrete', 96))
+		.inputFluids(Fluid.of('gtceu:concrete', 144 / 2))
 		.itemOutputs('1x tfg:reinforced_light_concrete_support')
 		.itemInputs('1x tfg:rebar_support')
 		.duration(120)
@@ -23,7 +23,7 @@ function registerTFGSupportRecipes(event) {
 
 	event.recipes.gtceu.macerator(`reinforced_light_concrete_support_to_dust`)
 		.itemInputs('tfg:reinforced_light_concrete_support')
-		.itemOutputs('gtceu:tiny_steel_dust')
+		.itemOutputs('2x gtceu:small_concrete_dust', 'gtceu:tiny_steel_dust')
 		.duration(150)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
@@ -44,13 +44,13 @@ function registerTFGSupportRecipes(event) {
 
 	event.recipes.gtceu.macerator(`reinforced_dark_concrete_support_to_dust`)
 		.itemInputs('tfg:reinforced_dark_concrete_support')
-		.itemOutputs('gtceu:tiny_steel_dust')
+		.itemOutputs('2x gtceu:small_concrete_dust', 'gtceu:tiny_steel_dust')
 		.duration(150)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
 	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('8x tfg:light_concrete_support', [
+		event.shaped('6x tfg:light_concrete_support', [
 			'AB ',
 			'AC ',
 			'AC '
@@ -63,13 +63,13 @@ function registerTFGSupportRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/light_concrete_support')
 		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
-		.itemOutputs('8x tfg:light_concrete_support')
+		.itemOutputs('6x tfg:light_concrete_support')
 		.itemInputs('3x gtceu:light_concrete')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('8x tfg:dark_concrete_support', [
+		event.shaped('6x tfg:dark_concrete_support', [
 			'AB ',
 			'AC ',
 			'AC '
@@ -82,10 +82,28 @@ function registerTFGSupportRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/dark_concrete_support')
 		.circuit(11)
 		.inputFluids(Fluid.of('gtceu:concrete', 36))
-		.itemOutputs('8x tfg:dark_concrete_support')
+		.itemOutputs('6x tfg:dark_concrete_support')
 		.itemInputs('3x gtceu:dark_concrete')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputFluid(Fluid.of('gtceu:concrete', 96))
+		.inputItem('tfg:rebar_support')
+		.outputItem('tfg:reinforced_light_concrete_support')
+		.id('tfg:barrel/reinforced_light_concrete_support')
+		
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:dark_concrete_support')
+		.id('tfg:barrel/dark_concrete_support')
+
+	event.recipes.tfc.barrel_sealed(500)
+		.inputItem('tfg:reinforced_light_concrete_support')
+		.inputFluid(Fluid.of('tfc:black_dye', 10))
+		.outputItem('tfg:reinforced_dark_concrete_support')
+		.id('tfg:barrel/reinforced_dark_concrete_support')
 
 	// Stone supports are in recipes.rocks.js
 

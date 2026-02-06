@@ -419,7 +419,8 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:drill_heads',
 		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),
 		E: ChemicalHelper.get(TagPrefix.screw, GTMaterials.WroughtIron, 1)
-	}).addMaterialInfo().id('gtceu:shaped/steam_rock_breaker_steel')
+	}).id('gtceu:shaped/steam_rock_breaker_steel')
+	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_rock_crusher', [GTMaterials.WroughtIron, 6.5, GTMaterials.TinAlloy, 2])
 
 	removeMaceratorRecipe(event, 'macerate_hp_steam_miner')
 	event.recipes.gtceu.shaped('gtceu:hp_steam_miner', [
@@ -433,7 +434,8 @@ function registerGTCEuMachineRecipes(event) {
 		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
 		E: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
 		F: '#gtceu:circuits/ulv'
-	}).addMaterialInfo().id('gtceu:shaped/steam_miner_steel')
+	}).id('gtceu:shaped/steam_miner_steel')
+	TFGHelpers.registerMaterialInfo('gtceu:hp_steam_miner', [GTMaterials.WroughtIron, 7, GTMaterials.Steel, 1, GTMaterials.TinAlloy, 2])
 
 	//#endregion
 

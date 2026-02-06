@@ -28,16 +28,14 @@ function registerTFGMarsItemTags(event) {
 	event.add('forge:eggs', '#tfg:martian_eggs')
 	event.add('firmalife:foods/raw_eggs', '#tfg:martian_eggs')
 
-	event.add('tfg:martian_animal_foods', 'betterend:amber_root_product')
-	event.add('tfg:martian_animal_foods', 'betterend:blossom_berry_product')
-	event.add('tfg:martian_animal_foods', 'betterend:chorus_mushroom_product')
-	event.add('tfg:martian_animal_foods', 'betterend:shadow_berry_product')
-	event.add('tfg:martian_animal_foods', 'betterend:bolux_mushroom_product')
-	event.add('tfg:martian_animal_foods', 'betterend:cave_pumpkin_chunks')
-
-	event.add('tfg:glacian_ram_food', '#tfg:martian_animal_foods')
-	event.add('tfg:sniffer_food', '#tfg:martian_animal_foods')
-	event.add('tfg:wraptor_food', '#tfg:martian_animal_foods')
+	event.add('tfg:martian_herbivore_foods', 'betterend:amber_root_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:blossom_berry_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:chorus_mushroom_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:shadow_berry_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:bolux_mushroom_product')
+	event.add('tfg:martian_herbivore_foods', 'betterend:cave_pumpkin_chunks')
+	
+	event.add('tfg:martian_piscivore_foods', '#firmalife:foods/raw_fish')
 
 	event.remove('minecraft:wool', 'ad_astra:glacian_fur')
 
@@ -162,6 +160,9 @@ function registerTFGMarsBlockTags(event) {
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/shale')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/shale')
 	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/gravel/shale')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/raw/quartzite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/hardened/quartzite')
+	event.add('ad_astra:mars_stone_replaceables', 'tfc:rock/gravel/quartzite')
 	event.add('ad_astra:mars_stone_replaceables', 'ad_astra:mars_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/hardened_mars_stone')
 	event.add('ad_astra:mars_stone_replaceables', 'tfg:rock/gravel_mars')
@@ -236,9 +237,6 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:heightmap_ignore', 'tfg:warped_wart_block')
 	event.add('tfg:heightmap_ignore', 'tfg:aeronos_cap')
 	event.add('tfg:heightmap_ignore', 'tfg:strophar_cap')
-
-	event.remove('minecraft:enderman_holdable', 'minecraft:crimson_fungus')
-	event.remove('minecraft:enderman_holdable', 'minecraft:warped_fungus')
 
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
@@ -393,6 +391,7 @@ function registerTFGMarsEntityTypeTags(event) {
 		'species:springling',
 		'species:quake',
 		'species:stackatick',
+		'minecraft:enderman',
 		'endermanoverhaul:crimson_forest_enderman',
 		'endermanoverhaul:warped_forest_enderman',
 		'endermanoverhaul:badlands_enderman',
@@ -404,6 +403,9 @@ function registerTFGMarsEntityTypeTags(event) {
 		'wan_ancient_beasts:glider',
 		'wan_ancient_beasts:toxlacanth',
 		'wan_ancient_beasts:surfer',
+		'wan_ancient_beasts:charger',
+		'wan_ancient_beasts:raider',
+		'wan_ancient_beasts:snatcher',
 		'tfg:surfer'
 	]
 
@@ -417,10 +419,13 @@ function registerTFGMarsEntityTypeTags(event) {
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:eater')
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:soarer')
 	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:glider')
+	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:raider')
+	event.add('tfc:deals_piercing_damage', 'wan_ancient_beasts:snatcher')
 	event.add('tfc:deals_piercing_damage', 'ad_astra:martian_raptor')
 	event.add('tfc:deals_crushing_damage', 'species:quake')
 	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:walker')
 	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:crusher')
+	event.add('tfc:deals_crushing_damage', 'wan_ancient_beasts:charger')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:crimson_forest_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:warped_forest_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:badlands_enderman')
@@ -431,11 +436,14 @@ function registerTFGMarsEntityTypeTags(event) {
 	// this huge guy also looks silly in low grav
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:walker')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:eater')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:raider')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:charger')
 	// flying mobs
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:soarer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:glider')
 	// swimming mobs
 	event.add('tfg:ignores_gravity', 'tfg:surfer')
+	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:surfer')
 	event.add('tfg:ignores_gravity', 'wan_ancient_beasts:toxlacanth')
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:coral_enderman')
 }

@@ -2573,7 +2573,11 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["509C064AA92FD78F"]
+			dependencies: [
+				"509C064AA92FD78F"
+				"234B68E86F72C29E"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/ore_sack"
 			id: "21C58B2541BFA2EE"
@@ -2609,7 +2613,6 @@
 						}
 						id: "sns:ore_sack"
 					}
-					optional_task: true
 					type: "item"
 				}
 			]

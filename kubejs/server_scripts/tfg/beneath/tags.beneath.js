@@ -1,5 +1,19 @@
 "use strict";
 
+/** 
+    * @property {string[]} beneath_plants - List of Beneath plants to be added to the `tfg:plants/beneath` tag.
+*/
+const beneath_plants = [
+    'beneath:gleamflower',
+    'beneath:burpflower',
+    'minecraft:big_dripleaf',
+    'minecraft:small_dripleaf',
+    'minecraft:glow_lichen',
+    'minecraft:hanging_roots',
+	'minecraft:spore_blossom',
+    '#beneath:mushrooms'
+];
+
 function registerTFGBeneathItemTags(event) {
     
     event.add("minecraft:piglin_loved", "gtceu:tiny_pyrite_dust");
@@ -12,8 +26,11 @@ function registerTFGBeneathItemTags(event) {
     event.add("minecraft:piglin_loved", "tfc:ore/rich_native_gold");
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
-    event.add('tfc:plants', 'minecraft:spore_blossom')
     event.remove('createaddition:plants', 'minecraft:moss_carpet')
+
+    beneath_plants.forEach(plant =>
+	    event.add('tfg:plants/beneath', plant)
+    );
 
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
@@ -27,6 +44,13 @@ function registerTFGBeneathItemTags(event) {
 function registerTFGBeneathBlockTags(event) {
 	event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
     event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
+
+	event.remove('tfc:plants', 'beneath:gleamflower')
+    event.remove('tfc:plants', 'beneath:burpflower')
+
+    beneath_plants.forEach(plant =>
+	    event.add('tfg:plants/beneath', plant)
+    );
     
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')

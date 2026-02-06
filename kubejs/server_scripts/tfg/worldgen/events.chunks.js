@@ -58,10 +58,13 @@ let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.map(i => 1.1 * Math.abs(i))
 	.clamped(0, 1)
 
+let cellularNoise = TFC.misc.cellular3D(678965856);
+
 //TFC.misc.register2DNoiseForInspection('temp', tempLayer)
 //TFC.misc.register2DNoiseForInspection('rain', rainLayer)
 //TFC.misc.register2DNoiseForInspection('forestType', forestDensityNoise)
 //TFC.misc.register2DNoiseForInspection('forestWeirdness', forestWeirdnessNoise)
+TFC.misc.register3DNoiseForInspection('cellular', cellularNoise);
 
 // Forest layer
 let forestLayerNoise = TFC.misc.newOpenSimplex2D(3210378120)
@@ -126,41 +129,17 @@ TFCEvents.createChunkDataProvider('mars', event => {
 	});
 
 	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+		let skew = y / 8;
+		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew), (surfaceY - y) / ROCK_LAYER_HEIGHT);
 	});
 })
 
 TFCEvents.createChunkDataProvider('venus', event => {
+	const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
+
 	event.partial((data, chunk) => {
-		let x = chunk.pos.minBlockX;
-		let z = chunk.pos.minBlockZ;
-
-		const avgTemp1 = calcAverage(z, global.VENUS_PLANET_SIZE, 0, 100)
-		const avgTemp2 = calcAverage(z + 15, global.VENUS_PLANET_SIZE, 0, 100)
-		const avgRain1 = calcAverage(x, global.VENUS_PLANET_SIZE, 0, 100)
-		const avgRain2 = calcAverage(x + 15, global.VENUS_PLANET_SIZE, 0, 100)
-
-		let rain = TFC.misc.lerpFloatLayer(
-			avgRain1 + rainLayer.noise(x, z),
-			avgRain1 + rainLayer.noise(x, z + 15),
-			avgRain2 + rainLayer.noise(x + 15, z),
-			avgRain2 + rainLayer.noise(x + 15, z + 15)
-		);
-		let temp = TFC.misc.lerpFloatLayer(
-			avgTemp1 + tempLayer.noise(x, z),
-			avgTemp1 + tempLayer.noise(x, z + 15),
-			avgTemp2 + tempLayer.noise(x + 15, z),
-			avgTemp2 + tempLayer.noise(x + 15, z + 15)
-		);
-
-		data.generatePartial(
-			rain,
-			temp,
-			floatToForestType(forestLayerNoise.noise(x, z)),
-			forestWeirdnessNoise.noise(x, z), // forest weirdness
-			forestDensityNoise.noise(x, z) // forest density
-		);
-	});
+		data.generatePartial(emptyLayer, emptyLayer, 0, 0, 0)
+	})
 
 	event.full((data, chunk) => {
 		let heights = [];
@@ -173,7 +152,8 @@ TFCEvents.createChunkDataProvider('venus', event => {
 	});
 
 	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+		let skew = y / 6;
+		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew), (surfaceY - y) / ROCK_LAYER_HEIGHT);
 	});
 })
 
@@ -220,7 +200,8 @@ TFCEvents.createChunkDataProvider('glacio', event => {
 	});
 
 	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
-		return rockSettings.sampleAtLayer(rockLayer.getAt(x, z), (surfaceY - y) / ROCK_LAYER_HEIGHT);
+		let skew = y / 8;
+		return rockSettings.sampleAtLayer(rockLayer.getAt(x + skew, z + skew), (surfaceY - y) / ROCK_LAYER_HEIGHT);
 	});
 })
 

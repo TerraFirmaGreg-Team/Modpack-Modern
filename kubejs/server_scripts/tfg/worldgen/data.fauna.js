@@ -19,6 +19,7 @@ function registerTFGFauna(event) {
 		climate => {
 			climate.minTemp(-102)
 			climate.maxTemp(-30)
+			climate.maxForest('normal')
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -49,6 +50,7 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(-109)
+			climate.maxForest('normal')
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -59,6 +61,7 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(-97)
+			climate.maxForest('edge')
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -69,6 +72,7 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(-109)
+			climate.maxForest('normal')
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -88,7 +92,30 @@ function registerTFGFauna(event) {
 
 	event.fauna(
 		climate => {
+			climate.minTemp(-109)
+			climate.maxForest('normal')
+			climate.fuzzy(true)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"wan_ancient_beasts:raider")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(-107)
+			climate.maxForest('normal')
+			climate.fuzzy(true)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"wan_ancient_beasts:charger")
+
+	event.fauna(
+		climate => {
 			climate.minTemp(-105)
+			climate.minForest('edge')
 			climate.fuzzy(true)
 		},
 		faunaData => {
@@ -99,10 +126,22 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(-106)
+			climate.minForest('edge')
 			climate.fuzzy(true)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
 		},
 		"wan_ancient_beasts:glider")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(-105)
+			climate.minForest('edge')
+			climate.fuzzy(true)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"wan_ancient_beasts:snatcher")
 }

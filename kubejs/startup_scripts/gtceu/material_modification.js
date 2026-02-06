@@ -266,6 +266,10 @@ const registerGTCEuMaterialModification = (event) => {
 	// Change Beryllium to add Chemical Bath recipe and Thorium byproduct
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
+
+	// Remove old stone dusts
+	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
+	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	
 	// Other flags
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
@@ -316,9 +320,15 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RTMAlloy.addFlags(GENERATE_DENSE, GENERATE_SPRING);
 	GTMaterials.Lead.addFlags(GENERATE_DENSE);
 
+	GTMaterials.Beryllium.addFlags(GENERATE_DENSE);
+	GTMaterials.MaragingSteel300.addFlags(GENERATE_DENSE);
+
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
+
+	GTMaterials.Cadmium.addFlags(GENERATE_PLATE);
+    GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
@@ -328,7 +338,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zirconium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
-	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, NO_ORE_SMELTING);
+	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, GENERATE_DENSE, NO_ORE_SMELTING);
 	
 	// Tools
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
@@ -365,6 +375,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	// Rose Gold & Sterling Silver
+	GTMaterials.RoseGold.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.SterlingSilver.getProperties().removeProperty(PropertyKey.BLAST);
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
 	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
@@ -399,6 +412,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID)
+	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE)
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
@@ -451,6 +465,9 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Rhenium.setMaterialSecondaryARGB(0x9ccbd6)
 	GTMaterials.Diamond.setMaterialARGB(0x4AEDD9)
 	GTMaterials.Diamond.setMaterialSecondaryARGB(0x1AAAA7)
+	GTMaterials.Boron.setMaterialARGB(0x75BD8D)
+	GTMaterials.Boron.setMaterialSecondaryARGB(0x013A15)
+	GTMaterials.Americium.setMaterialARGB(0x284D7B)
 
 	// Fluids
 	global.MINECRAFT_DYE_NAMES.forEach(colorName => {
@@ -468,4 +485,5 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Glowstone.setComponents('1x gold', '1x redstone')
 	GTMaterials.Thorium.setFormula('ThO2')
 	GTMaterials.Americium.setFormula('Am²⁴³')
+	GTMaterials.Caesium.setFormula('Cs¹³³')
 }

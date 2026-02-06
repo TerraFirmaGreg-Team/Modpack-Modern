@@ -107,8 +107,8 @@ global.FIRMALIFE_JAMS = [
 ]
 
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
-    { input: 'firmalife:plant/cocoa_sapling', output: 'firmalife:food/cocoa_beans'},
-    { input: 'firmalife:plant/fig_sapling', output: 'firmalife:food/fig'},
+    { input: 'firmalife:plant/cocoa_sapling', output: 'firmalife:food/cocoa_beans', leaves: 'firmalife:plant/cocoa_leaves' },
+    { input: 'firmalife:plant/fig_sapling', output: 'firmalife:food/fig', leaves: 'firmalife:plant/fig_leaves' },
     { input: 'firmalife:plant/pineapple_bush', output: 'firmalife:food/pineapple'},
     { input: 'firmalife:plant/nightshade_bush', output: 'firmalife:food/nightshade_berry'},
     { input: 'firmalife:seeds/red_grape', output: 'firmalife:food/red_grapes'},

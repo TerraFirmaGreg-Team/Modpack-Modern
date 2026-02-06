@@ -7,6 +7,7 @@ const registerTFGCrops = (event) => {
 
 	event.create('tfg:sunflower', 'tfc:double_crop')
 		.translationKey('block.tfg.sunflower')
+		.mapColor('plant')
 		.soundType('crop')
 		.nutrient('nitrogen')
 		.stages(4)
@@ -40,6 +41,7 @@ const registerTFGCrops = (event) => {
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	event.create('tfg:rapeseed', 'tfc:double_crop')
+		.mapColor('plant')
 		.translationKey('block.tfg.rapeseed')
 		.soundType('crop')
 		.nutrient('phosphorous')
@@ -67,6 +69,7 @@ const registerTFGCrops = (event) => {
 		.tagItem('c:hidden_from_recipe_viewers')
 
 	event.create('tfg:flax', 'tfc:double_crop')
+		.mapColor('plant')
 		.translationKey('block.tfg.flax')
 		.soundType('crop')
 		.nutrient('nitrogen')
@@ -103,6 +106,7 @@ const registerTFGCrops = (event) => {
 	// Mars Crops
 
 	event.create('betterend:amber_root', 'tfc:crop')
+		.mapColor('color_orange')
 		.soundType('crop')
 		.nutrient('phosphorous')
 		.stages(3)
@@ -134,6 +138,7 @@ const registerTFGCrops = (event) => {
 
 
 	event.create('betterend:blossom_berry', 'tfc:crop')
+		.mapColor('color_pink')
 		.soundType('crop')
 		.nutrient('potassium')
 		.stages(3)
@@ -165,6 +170,7 @@ const registerTFGCrops = (event) => {
 
 
 	event.create('betterend:cave_pumpkin')
+		.mapColor('color_red')
 		.soundType('cherry_wood')
 		.tagBlock('minecraft:mineable/axe')
 		.tagBlock('minecraft:mineable/hoe')
@@ -176,6 +182,7 @@ const registerTFGCrops = (event) => {
 		.notSolid()
 
 	event.create('betterend:cave_pumpkin_plant', 'tfc:spreading_crop')
+		.mapColor('plant')
 		.soundType('crop')
 		.nutrient('nitrogen')
 		.stages(3)
@@ -207,6 +214,7 @@ const registerTFGCrops = (event) => {
 
 
 	event.create('betterend:chorus_mushroom', 'tfc:crop')
+		.mapColor('color_purple')
 		.translationKey('block.betterend.chorus_mushroom')
 		.soundType('nether_wart')
 		.nutrient('phosphorous')
@@ -244,6 +252,7 @@ const registerTFGCrops = (event) => {
 
 
 	event.create('betterend:shadow_berry', 'tfc:crop')
+		.mapColor('color_blue')
 		.soundType('crop')
 		.box(2, 0, 2, 14, 3, 14)
 		.nutrient('potassium')
@@ -278,6 +287,7 @@ const registerTFGCrops = (event) => {
 
 
 	event.create('betterend:bolux_mushroom', 'tfc:crop')
+		.mapColor('color_orange')
 		.soundType('nether_wart')
 		.box(2, 0, 2, 14, 5, 14)
 		.nutrient('phosphorous')

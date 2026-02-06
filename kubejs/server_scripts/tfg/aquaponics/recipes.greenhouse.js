@@ -5,11 +5,11 @@
 //#region Balancing Values
 
 /** Base duration of recipes in ticks. */
-const greenhouse_base_duration = 16 * 60 * 20;
+const greenhouse_base_duration = 10 * 60 * 20;
 /** Duration multiplier for fertilized recipes. */
-const greenhouse_duration_multiplier_fertilized = 0.5;
+const greenhouse_duration_multiplier_fertilized = 0.75;
 /** Duration multiplier for aquaponic recipes. */
-const greenhouse_duration_multiplier_aquaponics = 0.4;
+const greenhouse_duration_multiplier_aquaponics = 0.5;
 
 /** Hydroponic facility chance multiplier. */
 const hydroponics_facility_chance_multiplier = 1.25;
@@ -35,10 +35,10 @@ const greenhouse_chanced_output_aquaponics = 80;
 /** @param {...DimensionIndex[]} - Dimension settings array */
 const greenhouse_dimension_index = [
 	// Overworld settings are also used as the default when no dimension is specified.
-	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-	{id: 'ad_astra:moon', fluid: 'gtceu:helium_3', fluid_tier2: null, fluid_chance: 2, fertilizer: null, eut: GTValues.VA[GTValues.MV], oxygenated: null},
-	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_tier2: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_tier2: 'tfg:nitrate_rich_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
+	{id: 'ad_astra:moon', fluid: 'gtceu:helium_3', fluid_tier2: null, fluid_chance: 2, fertilizer: null, eut: GTValues.VHA[GTValues.MV], oxygenated: null},
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_tier2: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', fluid_chance: 10, fertilizer: 'gtceu:fertilizer', eut: GTValues.VHA[GTValues.HV], oxygenated: null}
 ];
 
 //#endregion
@@ -54,8 +54,9 @@ const greenhouse_dimension_index = [
  * @param {Internal.ItemStack} input -Input Item (seeds, saplings, etc.)
  * @param {Internal.ItemStack|Internal.ItemStack[]} output -Output Items. If array, first item is guaranteed while rest use chanced output. Last item in array is used for the rest of the chance outputs.
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
+ * @param {number|null} circuit - Circuit number. 1-32. Or null.
  */
-function generateGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
+function generateGreenHouseRecipe(event, dimension, input, output, chance_multiplier, circuit) {
 
 	// Resolve dimension based modifier defaults by comparing to the `greenhouse_dimension_index` array.
 
@@ -75,7 +76,7 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 	const canFertilize = resolvedFertilizer !== null;
 
 	/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV */
-	const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+	const resolvedEUt = dimMods ? dimMods.eut : GTValues.VHA[GTValues.LV];
 
 	/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
 	const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;
@@ -83,25 +84,37 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 	/** @type {boolean|null} - Whether the recipe requires an oxygenated environment. Defaults to true. */
 	const requiresOxygen = dimMods ? dimMods.oxygenated : true;
 
+	/** @type {string} - Circuit number for the recipe id. Defaults to an empty string if not provided. */
+	const idCircuit = (circuit === null || circuit === undefined) ? "" : `/${circuit}`;
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	/** Collect errors. */
 
 	const errors = [];
 
-	if (input === undefined || Array.isArray(input)) {
-		errors.push("input is undefined or is an array");
+	if (input === undefined || input === null || Array.isArray(input) || (typeof input === 'string' && input.trim() === '')) {
+		errors.push(`input is invalid: ${JSON.stringify(input)}`);
 	};
+
 	if (output !== undefined && !Array.isArray(output)) {
 		output = [output];
-	}
-	if (output === undefined || output.length === 0 || output.length > 4) {
-		errors.push("output is undefined or has invalid length");
+	};
+
+	if (output === undefined || output === null || output.length === 0 || output.length > 4) {
+		errors.push(`output is invalid: ${JSON.stringify(output)}`);
+	} else {
+		output.forEach((o, idx) => {
+			if (o === undefined || o === null) {
+				errors.push(`output[${idx}] is null or undefined`);
+			};
+		});
 	};
 
 	// If there are any errors, log them all and throw once.
 	if (errors.length > 0) {
-		throw new TypeError(`Greenhouse recipe errors for recipe ID ${`tfg:greenhouse/${linuxUnfucker(input)}`}\n - ${errors.join("\n - ")}`);
+		console.error(`Greenhouse recipe error details:\n  input: ${JSON.stringify(input)}\n  output: ${JSON.stringify(output)}\n  dimension: ${JSON.stringify(dimension)}\n  circuit: ${JSON.stringify(circuit)}\n  chance_multiplier: ${JSON.stringify(chance_multiplier)}`);
+		throw new TypeError(`Greenhouse recipe errors for recipe ID ${`tfg:greenhouse/${linuxUnfucker(input)}${idCircuit}`}\n - ${errors.join("\n - ")}`);
 	};
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -163,9 +176,8 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 		//======================== Greenhouse Recipes ========================
 
 		// Base recipe.
-		let a = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}`)
+		let a = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
-			.circuit(1)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -183,11 +195,13 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			a.chancedOutput(outputs_array[2], base_chance, 0)
 			a.chancedOutput(outputs_array[3], base_chance, 0)
 		};
+		if (circuit !== null) {
+			a.circuit(circuit)
+		};
 
 		// Fertilized Recipe.
-		let b = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}_fertilized`)
+		let b = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
-			.circuit(2)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -206,11 +220,13 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			b.chancedOutput(outputs_array[3], fertilizer_chance, 0)
 			b.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
+		if (circuit !== null) {
+			b.circuit(circuit + 1)
+		};
 
 		// Aquaponics Recipe.
-		let c = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}_aquaponic`)
+		let c = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
-			.circuit(3)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
@@ -228,14 +244,16 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			c.chancedOutput(outputs_array[2], aquaponic_chance, 0)
 			c.chancedOutput(outputs_array[3], aquaponic_chance, 0)
 		};
+		if (circuit !== null) {
+			c.circuit(circuit + 2)
+		};
 		c.itemOutputs('tfg:flora_pellets');
 
 		//======================== Hydroponic Facility Recipes ========================
 
 		// Base recipe.
-		let d = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}`)
+		let d = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
-			.circuit(1)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -250,11 +268,13 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			d.chancedOutput(outputs_array[2], hydroponics_base_chance, 0)
 			d.chancedOutput(outputs_array[3], hydroponics_base_chance, 0)
 		};
+		if (circuit !== null) {
+			d.circuit(circuit)
+		};
 
 		// Fertilized Recipe.
-		let e = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}_fertilized`)
+		let e = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}_fertilized${idCircuit}`)
 			.notConsumable(input)
-			.circuit(2)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -270,11 +290,13 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			e.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
 			e.itemInputs(Item.of(resolvedFertilizer, 8))
 		};
+		if (circuit !== null) {
+			e.circuit(circuit + 1)
+		};
 
 		// Aquaponics Recipe.
-		let f = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}_aquaponic`)
+		let f = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}_aquaponic${idCircuit}`)
 			.notConsumable(input)
-			.circuit(3)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluidTier2} 1`, resolvedChance, 0)
@@ -289,6 +311,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			f.chancedOutput(outputs_array[2], hydroponics_aquaponic_chance, 0)
 			f.chancedOutput(outputs_array[3], hydroponics_aquaponic_chance, 0)
 		};
+		if (circuit !== null) {
+			f.circuit(circuit + 2)
+		};
 		f.itemOutputs('tfg:flora_pellets');
 
 	} else {
@@ -296,9 +321,8 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 
 		//======================== Greenhouse Recipes ========================
 
-		let a = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}`)
+		let a = event.recipes.gtceu.greenhouse(`tfg:${linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
-			.circuit(1)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -316,12 +340,14 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			a.chancedOutput(outputs_array[2], fertilizer_chance, 0)
 			a.chancedOutput(outputs_array[3], fertilizer_chance, 0)
 		};
+		if (circuit !== null) {
+			a.circuit(circuit)
+		};
 		
 		//======================== Hydroponics Facility Recipes ========================
 
-		let b = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}`)
+		let b = event.recipes.gtceu.hydroponics_facility(`tfg:${linuxUnfucker(input)}${idCircuit}`)
 			.notConsumable(input)
-			.circuit(1)
 			.itemOutputs(outputs_array[0])
 			.perTick(true)
 			.chancedFluidInput(`${resolvedFluid} 1`, resolvedChance, 0)
@@ -335,6 +361,9 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
 			b.chancedOutput(outputs_array[1], hydroponics_fertilizer_chance, 0)
 			b.chancedOutput(outputs_array[2], hydroponics_fertilizer_chance, 0)
 			b.chancedOutput(outputs_array[3], hydroponics_fertilizer_chance, 0)
+		};
+		if (circuit !== null) {
+			b.circuit(circuit)
 		};
 	};
 };
@@ -351,10 +380,15 @@ function generateGreenHouseRecipe(event, dimension, input, output, chance_multip
  * @param {Internal.Dimension|null} dimension -Dimension ID
  * @param {Internal.Ingredient} input -Input Item. (seed, bush, etc.)
  * @param {Internal.ItemStack} output -Output Item. (vegetable, fruit, etc.)
+ * @param {Internal.ItemStack|null} leaves - Leaf block. Generates extra recipes with leaf outputs if provided.
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
  */
-function generateCropGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
-	generateGreenHouseRecipe(event, dimension, `4x ${input}`, [Item.of(output, 20), Item.of(input, 1), Item.of(output, 4)], chance_multiplier);
+function generateCropGreenHouseRecipe(event, dimension, input, output, leaves, chance_multiplier) {
+	generateGreenHouseRecipe(event, dimension, `4x ${input}`, [Item.of(output, 20), Item.of(input, 1), Item.of(output, 4)], chance_multiplier, 1);
+	generateGreenHouseRecipe(event, dimension, `4x ${input}`, [Item.of(output, 20), Item.of(input, 8), Item.of(input, 4)], chance_multiplier, 5);
+	if (leaves !== null && leaves !== undefined) {
+		generateGreenHouseRecipe(event, dimension, `4x ${input}`, [Item.of(output, 20), Item.of(leaves, 16), Item.of(leaves, 8)], chance_multiplier, 10);
+	};
 };
 
 /**
@@ -369,10 +403,15 @@ function generateCropGreenHouseRecipe(event, dimension, input, output, chance_mu
  * @param {Internal.Dimension|null} dimension -Dimension ID
  * @param {Internal.Ingredient} input -Input Item. (sapling)
  * @param {Internal.ItemStack} output -Output Item. (wood)
+ * @param {Internal.ItemStack|null} leaves - Leaf block. Generates extra recipes with leaf outputs if provided.
  * @param {number|null} chance_multiplier -Multiplies output chances by this value. Defaults to 1.
  */
-function generateTreeGreenHouseRecipe(event, dimension, input, output, chance_multiplier) {
-	generateGreenHouseRecipe(event, dimension, `8x ${input}`, [Item.of(output, 64), Item.of(input, 4), Item.of(output, 16)], chance_multiplier);
+function generateTreeGreenHouseRecipe(event, dimension, input, output, leaves, chance_multiplier) {
+	generateGreenHouseRecipe(event, dimension, `8x ${input}`, [Item.of(output, 64), Item.of(input, 4), Item.of(output, 16)], chance_multiplier, 1);
+	generateGreenHouseRecipe(event, dimension, `8x ${input}`, [Item.of(output, 64), Item.of(input, 16), Item.of(input, 8)], chance_multiplier, 5);
+	if (leaves !== null && leaves !== undefined) {
+		generateGreenHouseRecipe(event, dimension, `8x ${input}`, [Item.of(output, 64), Item.of(leaves, 32), Item.of(leaves, 16)], chance_multiplier, 10);
+	};
 };
 
 //#endregion
@@ -465,85 +504,90 @@ const registerTFGGreenhouseRecipes = (event) => {
 	//#region Recipes
 
 	// Mushrooms
-	Ingredient.of('#beneath:mushrooms').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, 'minecraft:the_nether', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
+	Ingredient.of('#tfg:plants/beneath').stacks.forEach(element => {
+		generateGreenHouseRecipe(event, 'minecraft:the_nether', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:red_mushroom', ['24x minecraft:red_mushroom', '8x minecraft:red_mushroom'], 1);
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:brown_mushroom', ['24x minecraft:brown_mushroom', '8x minecraft:brown_mushroom'], 1);
+	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:red_mushroom', ['24x minecraft:red_mushroom', '8x minecraft:red_mushroom'], 1, 1);
+	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:brown_mushroom', ['24x minecraft:brown_mushroom', '8x minecraft:brown_mushroom'], 1, 1);
 
 	// Crops
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateCropGreenHouseRecipe(event, null, element.input, element.output, 1);
+		generateCropGreenHouseRecipe(event, null, element.input, element.output, element.leaves, 1);
 	});
 
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateCropGreenHouseRecipe(event, null, element.input, element.output, 1);
+		generateCropGreenHouseRecipe(event, null, element.input, element.output, element.leaves, 1);
 	});
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateCropGreenHouseRecipe(event, null, element.input, element.output, 1);
+		generateCropGreenHouseRecipe(event, null, element.input, element.output, null, 1);
 	});
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateCropGreenHouseRecipe(event, null, element.input, element.output, 1);
+		generateCropGreenHouseRecipe(event, null, element.input, element.output, null, 1);
 	});
 
 	// Wood
 	global.TFC_WOOD_TYPES.forEach(element => {
-		generateTreeGreenHouseRecipe(event, null, `tfc:wood/sapling/${element}`, `tfc:wood/log/${element}`, 1);
+		generateTreeGreenHouseRecipe(event, null, `tfc:wood/sapling/${element}`, `tfc:wood/log/${element}`, `tfc:wood/leaves/${element}`, 1);
 	});
 	global.AFC_SAPLINGS.forEach(element => {
-		generateTreeGreenHouseRecipe(event, null, `afc:wood/sapling/${element.sapling}`, element.log, 1);
+		generateTreeGreenHouseRecipe(event, null, `afc:wood/sapling/${element.sapling}`, element.log, `afc:wood/leaves/${element.sapling}`, 1);
 	});
 
 	// Plants
 	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
+		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
+	});
+	Ingredient.of('#forge:corals').stacks.forEach(element => {
+		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
+	});
+	Ingredient.of('#forge:coral_blocks').stacks.forEach(element => {
+		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(12), element.withCount(4)], 1, 1);
 	});
 
-	generateGreenHouseRecipe(event, null, '8x minecraft:bamboo', ['64x minecraft:bamboo', '8x minecraft:bamboo'], 1);
+	generateGreenHouseRecipe(event, null, '8x minecraft:bamboo', ['64x minecraft:bamboo', '8x minecraft:bamboo'], 1, 1);
+
+	generateGreenHouseRecipe(event, null, '8x tfc:tree_roots', ['64x tfc:tree_roots', '8x tfc:tree_roots'], 1, 1);
+	
+	generateGreenHouseRecipe(event, null, '8x tfc:food/fresh_seaweed', ['24x tfc:food/fresh_seaweed', '8x tfc:food/fresh_seaweed'], 1, 1);
+
+	generateGreenHouseRecipe(event, 'minecraft:the_nether', '4x minecraft:glow_berries', ['20x minecraft:glow_berries', '4x minecraft:glow_berries'], 1, 1);
 
 	// Mars Wood
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/strophar', [
-		'64x ad_astra:strophar_stem', '4x tfg:saplings/strophar', '32x ad_astra:strophar_stem', '16x ad_astra:strophar_cap'
-	], 1);
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/aeronos', [
-		'64x ad_astra:aeronos_stem', '4x tfg:saplings/aeronos', '32x ad_astra:aeronos_stem', '16x ad_astra:aeronos_cap'
-	], 1);
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/glacian', [
-		'64x ad_astra:glacian_log', '4x tfg:saplings/glacian', '32x ad_astra:glacian_log', '16x species:alphacene_moss_block'
-	], 1);
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/alphacene', [
-		'64x species:alphacene_mushroom_block', '4x tfg:saplings/alphacene', '16x minecraft:mushroom_stem', '16x minecraft:mushroom_stem'
-	], 1);
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/warped', [
-		'64x beneath:wood/log/warped', '4x tfg:saplings/warped', '32x beneath:wood/log/warped', '16x minecraft:warped_wart_block'
-	], 1);
-	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/crimson', [
-		'64x beneath:wood/log/crimson', '4x tfg:saplings/crimson', '32x beneath:wood/log/crimson', '16x minecraft:nether_wart_block'
-	], 1);
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/strophar`, `ad_astra:strophar_stem`, `ad_astra:strophar_cap`, 1);
+
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/aeronos`, `ad_astra:aeronos_stem`, `ad_astra:aeronos_cap`, 1);
+
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/glacian`, `ad_astra:glacian_log`, `species:alphacene_moss_block`, 1);
+
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/alphacene`, `species:alphacene_mushroom_block`, `minecraft:mushroom_stem`, 1);
+
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/warped`, `beneath:wood/log/warped`, `minecraft:warped_wart_block`, 1);
+
+	generateTreeGreenHouseRecipe(event, 'ad_astra:mars', `tfg:saplings/crimson`, `beneath:wood/log/crimson`, `minecraft:nether_wart_block`, 1);
 
 	// Mars Plants
 	Ingredient.of('#tfg:mars_plants').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, 'ad_astra:mars', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
+		generateGreenHouseRecipe(event, 'ad_astra:mars', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:amber_root_seeds', 'betterend:amber_root_product', 1);
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:blossom_berry_seeds', 'betterend:blossom_berry_product', 1);
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:bolux_mushroom_seeds', 'betterend:bolux_mushroom_product', 1);
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:cave_pumpkin_plant_seeds', 'betterend:cave_pumpkin', 1);
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:chorus_mushroom_seeds', 'betterend:chorus_mushroom_product', 1);
-	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:shadow_berry_seeds', 'betterend:shadow_berry_product', 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:amber_root_seeds', 'betterend:amber_root_product', null, 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:blossom_berry_seeds', 'betterend:blossom_berry_product', null, 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:bolux_mushroom_seeds', 'betterend:bolux_mushroom_product', null, 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:cave_pumpkin_plant_seeds', 'betterend:cave_pumpkin', null, 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:chorus_mushroom_seeds', 'betterend:chorus_mushroom_product', null, 1);
+	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:shadow_berry_seeds', 'betterend:shadow_berry_product', null, 1);
 
 	// Moon Plants
-	generateGreenHouseRecipe(event, 'ad_astra:moon', '8x tfg:lunar_chorus_flower', [
-		'64x minecraft:chorus_fruit', '8x minecraft:chorus_fruit', '8x tfg:lunar_chorus_flower', '8x tfg:lunar_chorus_flower'
-	], 1);
+	generateGreenHouseRecipe(event, 'ad_astra:moon', '16x tfg:lunar_chorus_flower', [
+		'64x minecraft:chorus_fruit', '8x minecraft:chorus_fruit', '4x tfg:lunar_chorus_flower', '4x tfg:lunar_chorus_flower'
+	], 1, 1);
 	generateGreenHouseRecipe(event, 'ad_astra:moon', '8x minecraft:twisting_vines', [
 		'16x minecraft:twisting_vines', '8x minecraft:pearlescent_froglight', '8x minecraft:verdant_froglight', '8x minecraft:ochre_froglight'
-	], 1);
+	], 1, 1);
 
 	Ingredient.of('#tfg:moon_plants').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1);
+		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
 	//#endregion

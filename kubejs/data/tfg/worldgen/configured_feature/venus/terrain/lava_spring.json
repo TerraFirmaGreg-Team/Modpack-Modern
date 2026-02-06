@@ -1,7 +1,6 @@
 {
 	"type": "tfc:hot_spring",
 	"config": {
-		"wall_state": "beneath:crackrack",
 		"fluid_state": "minecraft:lava",
 		"radius": 16,
 		"decoration": {
@@ -80,8 +79,8 @@
 					]
 				}
 			],
-			"radius": 8,
-			"count": 32,
+			"radius": 12,
+			"count": 48,
 			"rarity": 1
 		}
 	}

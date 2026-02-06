@@ -61,6 +61,12 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/raw/quartzite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/hardened/quartzite')
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:rock/gravel/quartzite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_flavolite')
+	event.add('ad_astra:venus_stone_replaceables', 'betterend:sandy_jadestone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/hardened_sandy_jadestone')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/gravel_sandy_jadestone')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/blue')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sandstone/raw/fluorapatite/blue')
 	event.add('ad_astra:venus_stone_replaceables', 'tfg:sand/fluorapatite/green')
@@ -79,6 +85,8 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'tfc:raw_sandstone/black')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scoria')
 	event.add('ad_astra:venus_stone_replaceables', 'create:scorchia')
+	event.add('ad_astra:venus_stone_replaceables', 'ad_astra:conglomerate')
+	event.add('ad_astra:venus_stone_replaceables', 'tfg:rock/halite')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:tuff')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:basalt')
 	event.add('ad_astra:venus_stone_replaceables', 'minecraft:smooth_basalt')
@@ -91,16 +99,22 @@ function registerTFGVenusBlockTags(event) {
 	event.add('ad_astra:venus_stone_replaceables', 'betterend:lucernia_bark')
 
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
+	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
 
-    event.add("tfc:monster_spawns_on", "create:scorchia");
-    event.add("tfc:monster_spawns_on", "minecraft:basalt");
-    event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
+	event.add("tfc:monster_spawns_on", "create:scorchia");
+	event.add("tfc:monster_spawns_on", "create:scoria");
+	event.add("tfc:monster_spawns_on", "minecraft:basalt");
+	event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
 
 	event.add("minecraft:strider_warm_blocks", "create:scorchia");
+	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
 	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");
 	event.add("minecraft:strider_warm_blocks", "minecraft:smooth_basalt");
 	event.add("minecraft:strider_warm_blocks", 'tfc:rock/raw/basalt');
 	event.add("minecraft:strider_warm_blocks", 'tfc:rock/magma/basalt');
+	event.add("minecraft:strider_warm_blocks", 'tfc:rock/hardened/basalt');
+	event.add("minecraft:strider_warm_blocks", 'beneath:crackrack');
+	event.add("minecraft:strider_warm_blocks", '#minecraft:infiniburn_nether');
 
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/blue')
 	event.add('tfc:can_landslide', 'tfg:sand/fluorapatite/green')
