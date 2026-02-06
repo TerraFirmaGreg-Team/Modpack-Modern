@@ -37,6 +37,7 @@ ServerEvents.tags('item', event => {
 	registerGreateItemTags(event)
 	registerGTCEUItemTags(event)
 	registerImmersiveAircraftItemTags(event)
+	registerMacawsForTFCItemTags(event)
 	registerMegaCellsItemTags(event)
 	registerMinecraftItemTags(event)
 	registerModernMarkingsItemTags(event)
@@ -54,7 +55,7 @@ ServerEvents.tags('item', event => {
 	registerTFCItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
-	registerTFGItemTagsNuclear(event)
+	registerTFGNuclearItemTags(event)
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
@@ -160,6 +161,7 @@ TFCEvents.data(event => {
 	registerTFCDataForAdAstra(event);
 	registerTFCDataForArborFirmaCraft(event)
 	registerTFCDataForChalk(event);
+	registerTFCDataForChimes(event);
 	registerTFCDataForCreateAddition(event);
 	registerTFCDataForFirmalife(event)
 	registerTFCDataForGTCEU(event)
@@ -231,6 +233,7 @@ ServerEvents.recipes(event => {
 	registerBeneathRecipes(event)
 	registerBuildingGadgetsRecipes(event)
 	registerChalkRecipes(event);
+	registerChimesRecipes(event);
 	registerComfortsRecipes(event);
 	registerComputerCraftRecipes(event)
 	//registerCccBridgeRecipes(event)
@@ -258,6 +261,7 @@ ServerEvents.recipes(event => {
 	registerGrapplingHookRecipes(event);
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
+	registerGTCEUTerminalRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)

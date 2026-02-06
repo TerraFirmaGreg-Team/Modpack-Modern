@@ -674,7 +674,7 @@ function registerGreateRecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_stone_belt_connector')
 	event.remove({ id: 'greate:shaped/stone_belt_connector' })
 
-	TFGHelpers.registerMaterialInfo('greate:stone_belt_connector', [GTMaterials.Air, 1]);
+	TFGHelpers.clearMaterialInfo('greate:stone_belt_connector');
 	
 	// Rubber
 	event.shaped('greate:rubber_belt_connector', [

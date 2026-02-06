@@ -241,6 +241,12 @@ const registerTFCRecipes = (event) => {
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
 
+	// Clay dust to balls
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('gtceu:clay_dust',TFC.fluidStackIngredient('minecraft:water', 250))
+		.outputItem('1x minecraft:clay_ball')
+		.id('tfc:barrel/clay_ball')
+
 	// Borax to flux
 	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
 		.id(`tfg:quern/borax`)
@@ -256,4 +262,73 @@ const registerTFCRecipes = (event) => {
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
+
+	global.TFC_WOOD_TYPES.forEach(element => {
+		event.shaped(`4x tfc:wood/fallen_leaves/${element}`,[
+			'AA',
+			'AA'
+		], {
+			A: `tfc:wood/leaves/${element}`
+		}).id(`tfg:shaped/tfc/${element}_leaves_to_fallen_leaves`);
+	});
+	
+	/**
+	 * @property {string[]} krummholz_types - List of krummholz wood types.
+	 */
+	const krummholz_types = [
+		'aspen',
+		'douglas_fir',
+		'pine',
+		'spruce',
+		'white_cedar'
+	];
+	krummholz_types.forEach(type => {
+		event.shaped(`1x tfc:plant/${type}_krummholz`,[
+			'A',
+			'A'
+		], {
+			A: `tfc:wood/sapling/${type}`
+		}).id(`tfg:shaped/tfc/${type}_krummholz`);
+	});
+
+	/**
+	 * @property {Array} tfcWoodRecyclingIndex - Wood recycling material index.
+	 */
+	const tfcWoodRecyclingIndex = [
+		['tfc:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
+		['tfc:wood/planks/{type}', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_door', ['{wood}', 6]],
+		['tfc:wood/planks/{type}_trapdoor', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_fence', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_log_fence', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_fence_gate', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_slab', ['{wood}', 2]],
+		['tfc:wood/planks/{type}_stairs', ['{wood}', 3]],
+		['tfc:wood/planks/{type}_pressure_plate', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_button', ['{wood}', 1]],
+		['tfc:wood/chest/{type}', ['{wood}', 16]],
+		['tfc:wood/trapped_chest/{type}', ['{wood}', 16, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]]
+	];
+	/**
+	 * @param {Array} materials
+	 * @param {string} woodMaterial
+	 * @return {Array}
+	 */
+	function resolveArgs(materials, woodMaterial) {
+		return materials.map(materials => materials === '{wood}' ? woodMaterial : materials);
+	};
+	global.TFC_HARDWOOD_TYPES.forEach(type => {
+		tfcWoodRecyclingIndex.forEach(([template, args]) => {
+			const item = template.replace('{type}', type);
+			const resolvedArgs = resolveArgs(args, GTMaterials.get('hardwood'));
+			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
+		});
+	});
+	global.TFC_SOFTWOOD_TYPES.forEach(type => {
+		tfcWoodRecyclingIndex.forEach(([template, args]) => {
+			const item = template.replace('{type}', type);
+			const resolvedArgs = resolveArgs(args, GTMaterials.Wood);
+			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
+		});
+	});
 }

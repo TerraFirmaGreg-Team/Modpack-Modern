@@ -562,7 +562,7 @@ function registerTFGRockRecipes(event) {
 		let half = Ingredient.of(`#tfg:stone_composition/${compositionId}_half`).itemIds.toArray();
 		if (half.length > 0) {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}_half`)
-				.itemInputs(half)
+				.itemInputs(`#tfg:stone_composition/${compositionId}_half`)
 				.itemOutputs(ChemicalHelper.getDust(material, GTValues.M / 2))
 				.duration(150)
 				.EUt(2)

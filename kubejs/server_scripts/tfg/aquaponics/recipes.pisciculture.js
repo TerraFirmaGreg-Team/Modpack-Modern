@@ -25,10 +25,10 @@ const pisciculture_base_duration = Math.max(1, greenhouse_base_duration * greenh
 /** @type {DimensionIndex[]} - Dimension settings array */
 const pisciculture_dimension_index = [
 	// Overworld settings are also used as the default when no dimension is specified.
-	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
-	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:overworld', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
+	{id: 'minecraft:the_nether', fluid: '#tfg:clean_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_water', eut: GTValues.VHA[GTValues.LV], oxygenated: true},
 	// The moon has no fish yet :(
-	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VA[GTValues.HV], oxygenated: null}
+	{id: 'ad_astra:mars', fluid: 'tfg:semiheavy_ammoniacal_water', fluid_chance: 10, fluid_out: 'tfg:nitrate_rich_semiheavy_ammoniacal_water', eut: GTValues.VHA[GTValues.HV], oxygenated: null}
 ];
 
 //#endregion
@@ -58,7 +58,7 @@ const pisciculture_dimension_index = [
 		const resolvedFluidOut = dimMods?.fluid_out ?? 'tfg:nitrate_rich_water';
 
 		/** @type {GTValues.EUt} - Resolved EUt value. Defaults to LV EUt. */
-		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VA[GTValues.LV];
+		const resolvedEUt = dimMods ? dimMods.eut : GTValues.VHA[GTValues.LV];
 
 		/** @type {number} - Resolved fluid chance multiplied by 100. Defaults to 1000. */
 		const resolvedChance = dimMods ? (dimMods.fluid_chance * 100) : 1000;

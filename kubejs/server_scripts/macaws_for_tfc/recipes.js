@@ -23,4 +23,12 @@ function registerMacawsForTFCRecipes(event) {
 			C: `tfc:wood/log/${wood}`
 		}).id(`tfg:shaped/${wood}_wired_fence`)
 	})
-}
+
+	event.shaped(`4x mcw_tfc_aio:fences/other_fences/hedge`, [
+		'BAB',
+		'BAB'
+	], {
+		A: '#forge:rods/wooden',
+		B: '#minecraft:leaves'
+	}).id(`tfg:shaped/mcw_tfc/hedge_fence_from_leaves`);
+};

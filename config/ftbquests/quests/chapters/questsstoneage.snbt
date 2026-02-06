@@ -1508,32 +1508,6 @@
 			subtitle: "{quests.stone_age.meals.subtitle}"
 			tasks: [
 				{
-					id: "7D77C6BFE159FDC9"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: -2L
-								foodData: {
-									dairy: 0.0f
-									decay: 0.0f
-									food: 0
-									fruit: 0.0f
-									grain: 0.0f
-									meat: 0.0f
-									sat: 0.0f
-									veg: 0.0f
-									water: 0.0f
-								}
-								ingredients: [ ]
-								traits: [ ]
-							}
-						}
-						id: "firmalife:food/cooked_pizza"
-					}
-					type: "item"
-				}
-				{
 					id: "597808680916715E"
 					item: {
 						Count: 1

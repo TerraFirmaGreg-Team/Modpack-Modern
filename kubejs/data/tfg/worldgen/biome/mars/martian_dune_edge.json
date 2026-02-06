@@ -116,6 +116,18 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:charger",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:snatcher",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],

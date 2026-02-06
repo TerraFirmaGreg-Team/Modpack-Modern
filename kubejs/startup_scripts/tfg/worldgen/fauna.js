@@ -10,6 +10,9 @@ TFCEvents.registerFaunas(event => {
 	event.replace("wan_ancient_beasts:walker", "on_ground", "ocean_floor");
 	event.replace("wan_ancient_beasts:eater", "on_ground", "ocean_floor");
 	event.replace("wan_ancient_beasts:crusher", "on_ground", "ocean_floor");
+	event.replace("wan_ancient_beasts:snatcher", "on_ground", "ocean_floor");
+	event.replace("wan_ancient_beasts:charger", "on_ground", "ocean_floor");
+	event.replace("wan_ancient_beasts:raider", "on_ground", "ocean_floor");
 
 	event.replace("wan_ancient_beasts:soarer", "no_restrictions", "world_surface");
 	event.replace("wan_ancient_beasts:glider", "no_restrictions", "world_surface");

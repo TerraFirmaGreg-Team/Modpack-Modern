@@ -10,7 +10,7 @@ function registerTFGStoneItemTags(event) {
 
 	function addToMaterialTag(material, block) {
 		if (material != null) {
-			if (block.endsWith('_slab') || block.endsWith('_wall')) {
+			if (block.endsWith('_slab') || block.endsWith('_wall') || block.endsWith('_support')) {
 				event.add(`tfg:stone_composition/${material}_half`, block);
 			}
 			else {
@@ -28,8 +28,10 @@ function registerTFGStoneItemTags(event) {
 			material = rock.material.replace(/tfg:/g, '');
 
 		if (rock.raw != null) {
-			event.add('tfc:rock/raw', rock.raw.block);
-			event.add('forge:stone', rock.raw.block);
+			if (rock.collapsible) {
+				event.add('tfc:rock/raw', rock.raw.block);
+				event.add('forge:stone', rock.raw.block);
+			}
 			addToTfcTag(rock.raw.block);
 			addToMaterialTag(material, rock.raw.block);
 
@@ -278,8 +280,6 @@ function registerTFGStoneBlockTags(event) {
 
 		if (rock.raw != null) {
 			event.add('forge:stone', rock.raw.block)
-			event.add('tfc:breaks_when_isolated', rock.raw.block)
-			event.add('tfc:rock/raw', rock.raw.block)
 			event.add('minecraft:mineable/pickaxe', rock.raw.block)
 			event.add('tfc:can_carve', rock.raw.block)
 			event.add('tfc:powderkeg_breaking_blocks', rock.raw.block)
@@ -288,11 +288,13 @@ function registerTFGStoneBlockTags(event) {
 			event.add('tfc:forge_insulation', rock.raw.block)
 
 			if (rock.collapsible && rock.cobble != null) {
+				event.add('tfc:rock/raw', rock.raw.block)
 				// Collapse tags also require a collapse recipe to work.
 				// Don't add the recipe if you don't want them to actually collapse!
 				event.add('tfc:can_collapse', rock.raw.block)
 				event.add('tfc:can_trigger_collapse', rock.raw.block)
 				event.add('tfc:can_start_collapse', rock.raw.block)
+				event.add('tfc:breaks_when_isolated', rock.raw.block)
 			}
 
 			SHAPES.forEach(shape => {

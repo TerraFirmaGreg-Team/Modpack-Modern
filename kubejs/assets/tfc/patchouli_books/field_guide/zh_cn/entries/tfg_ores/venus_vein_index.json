@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)高度$(): 6$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 天然煌斑岩, 天然熔灰岩, 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "盐, 锂辉石",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -111,7 +111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 40 — 65$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 30$(br2)$(thing)岩石类型$(): 天然煌斑岩, 天然熔灰岩, 安山岩, 流纹岩, 玄武岩, 石灰华, 粗面岩, 英安岩",
       "title": "硫, 黄铁矿",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"

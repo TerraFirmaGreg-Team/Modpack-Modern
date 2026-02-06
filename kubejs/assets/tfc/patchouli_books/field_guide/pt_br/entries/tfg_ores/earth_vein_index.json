@@ -1949,7 +1949,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/80 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — -16$(br)$(thing)Tamanho$(): 16$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
+      "text": "$(thing)Raridade$(): 1/80 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -64 — -16$(br)$(thing)Tamanho$(): 16$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Basalto, Dacito, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Riolito, Xisto",
       "title": "Grafite e Diamante",
       "type": "patchouli:text",
       "anchor": "normal_graphite"

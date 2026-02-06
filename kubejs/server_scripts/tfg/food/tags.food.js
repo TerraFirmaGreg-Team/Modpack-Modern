@@ -66,6 +66,7 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_cruncher_ribs')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_surfer_steak')
 	event.add('tfg:raw_dinosaur_meat', 'wan_ancient_beasts:raw_ancient_meat')
+	// TODO add meat for charger, raider, snatcher
 
 	/**
 	 * List of items that can make light stock.
@@ -148,9 +149,9 @@ function registerTFGFoodItemTags(event) {
 		'firmalife:food/yak_curd',
 		'firmalife:food/goat_curd',
 		'firmalife:food/milk_curd',
-		'tfc_gurman:ox_curd',
-		'tfc_gurman:sheep_curd',
-		'tfc_gurman:alpaca_curd'
+		'tfc_gourmet:ox_curd',
+		'tfc_gourmet:sheep_curd',
+		'tfc_gourmet:alpaca_curd'
 	];
 	cheeseCurds.forEach(item => {
 		event.add('tfg:foods/cheese_curds', item);
@@ -176,7 +177,7 @@ function registerTFGFoodItemTags(event) {
 		'#firmalife:foods/cheeses',
 		'tfg:food/slice_of_cheese',
 		'firmalife:food/shredded_cheese',
-		'#tfc_gurman:foods/brinza'
+		'#tfc_gourmet:foods/brinza'
 	];
 	cheeses.forEach(item => {
 		event.add('tfg:foods/cheeses', item);
@@ -238,6 +239,7 @@ function registerTFGFoodItemTags(event) {
 	 */
 	const usable_in_meal_bag = [
 		'#tfc:foods/meats',
+		'#minecraft:fishes',
 		'#tfc:foods/grains',
 		'#tfc:foods/vegetables',
 		'#tfc:foods/fruits',
@@ -267,12 +269,12 @@ function registerTFGFoodItemTags(event) {
 		'firmalife:food/toast_with_butter',
 		'firmalife:food/toast_with_jam',
 		'firmalife:food/butter',
-		'tfc_gurman:adjika',
-		'tfc_gurman:tzatziki',
-		'tfc_gurman:falafel',
-		'tfc_gurman:hummus',
-		'tfc_gurman:sauerkraut',
-		'tfc_gurman:bratwurst'
+		'tfc_gourmet:adjika',
+		'tfc_gourmet:tzatziki',
+		'tfc_gourmet:falafel',
+		'tfc_gourmet:hummus',
+		'tfc_gourmet:sauerkraut',
+		'tfc_gourmet:bratwurst'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);

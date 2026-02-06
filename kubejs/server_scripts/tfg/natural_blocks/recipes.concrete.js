@@ -87,29 +87,11 @@ function registerTFGConcreteRecipes(event) {
 		.outputItem('gtceu:light_concrete')
 		.id('tfg:barrel/light_concrete')
 
-	event.recipes.tfc.barrel_sealed(1000)
-		.inputFluid(Fluid.of('gtceu:concrete', 96))
-		.inputItem('tfg:rebar_support')
-		.outputItem('tfg:reinforced_light_concrete_support')
-		.id('tfg:barrel/reinforced_light_concrete_support')
-
 	event.recipes.tfc.barrel_sealed(500)
 		.inputItem('gtceu:light_concrete')
 		.inputFluid(Fluid.of('tfc:black_dye', 18))
 		.outputItem('gtceu:dark_concrete')
 		.id('tfg:barrel/dark_concrete')
-		
-	event.recipes.tfc.barrel_sealed(500)
-		.inputItem('tfg:light_concrete_support')
-		.inputFluid(Fluid.of('tfc:black_dye', 10))
-		.outputItem('tfg:dark_concrete_support')
-		.id('tfg:barrel/dark_concrete_support')
-
-	event.recipes.tfc.barrel_sealed(500)
-		.inputItem('tfg:reinforced_light_concrete_support')
-		.inputFluid(Fluid.of('tfc:black_dye', 10))
-		.outputItem('tfg:reinforced_dark_concrete_support')
-		.id('tfg:barrel/reinforced_dark_concrete_support')
 
 	// Titanium concrete
 	event.recipes.gtceu.assembler('tfg:titanium_concrete')
