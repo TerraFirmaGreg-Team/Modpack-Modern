@@ -3,12 +3,11 @@
 
 const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
 
-/** @param {TagEvent.Item} event */
-function registerTFCItemTags(event) {
-    // Теги для соответствия инструментов TFC и GT
+//#region item
+ServerEvents.tags('item', event => {
 
+    // Tool rack tags - dynamically add GT tools and various other tools
     forEachMaterial((material) => {
-        // Tool rack tags
         if (material.hasProperty(PropertyKey.TOOL)) {
             for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
                 let tool = ToolHelper.get(value, material);
@@ -20,847 +19,572 @@ function registerTFCItemTags(event) {
         }
     });
 
-    /**
-     * @type {string[]} - Item IDs and tags usable on tfc tool racks.
-     */
-    const usableOnToolRack = [
-        "#forge:tools/mining_hammers",
-        "#forge:tools/spades",
-        "#forge:tools/wrenches",
-        "#forge:tools/files",
-        "#forge:tools/crowbars",
-        "#forge:tools/screwdrivers",
-        "#forge:tools/wire_cutters",
-        "#forge:tools/butchery_knives",
-        "#forge:tools/plungers",
-        "#forge:tools/mortars",
-        "#forge:tools/mallets",
-        "#forge:tools/chainsaws",
-        "#forge:tools/buzzsaws",
-        "#forge:tools/drills",
-        "#forge:tools/fishing_nets",
-        "#tfc:buckets",
-        "tfc:lens",
-        "#forge:lenses",
-        "buildinggadgets2:gadget_building",
-        "buildinggadgets2:gadget_exchanging",
-        "buildinggadgets2:gadget_copy_paste",
-        "buildinggadgets2:gadget_cut_paste",
-        "buildinggadgets2:gadget_destruction",
-        "create:super_glue",
-        "exposure:camera",
-        "measurements:tape_measure",
-        "#chalk:chalks",
-        "chalk:chalk_box",
-        "computercraft:pocket_computer_normal",
-        "computercraft:pocket_computer_advanced",
-        "grapplemod:grapplinghook",
-        "grapplemod:launcheritem",
-        "ae2:color_applicator",
-        "ae2:matter_cannon",
-        "ae2:network_tool",
-        "ae2:wireless_terminal",
-        "ae2:wireless_crafting_terminal",
-        "waterflasks:leather_flask",
-        "waterflasks:iron_flask",
-        "waterflasks:red_steel_flask",
-        "tfc:wool_cloth",
-        "firmalife:mixing_bowl",
-        "#gtceu:molds",
-        "#gtceu:molds",
-        "create:wrench",
-        "framedblocks:framed_screwdriver",
-        "framedblocks:framed_wrench",
-        "framedblocks:framed_hammer",
-        "framedblocks:framed_key",
-        "mcw_tfc_aio:roofing_hammer",
-        "mcw_tfc_aio:pliers",
-        "tfclunchbox:lunchbox",
-        "tfclunchbox:cooling_lunchbox",
-        "tfclunchbox:electric_lunchbox",
-        "primitive_creatures:yhgi",
-        "primitive_creatures:reh",
-        "species:harpoon",
-        "species:crankbow",
-        "tfg:trowel"
-    ];
-    usableOnToolRack.forEach((entry) => {
-        event.add("tfc:usable_on_tool_rack", entry);
-    });
-	
-    //liquid non placeable
-    event.add("tfc:nonplaceable", "minecraft:milk_bucket")
-    event.add("tfc:nonplaceable", "firmalife:bucket/yak_milk")
-    event.add("tfc:nonplaceable", "firmalife:bucket/goat_milk")
-    event.add("tfc:nonplaceable", "tfc_gourmet:ox_milk_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:sheep_milk_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:alpaca_milk_bucket")
-    event.add("tfc:nonplaceable", "tfc:bucket/beer")
-    event.add("tfc:nonplaceable", "tfc:bucket/cider")
-    event.add("tfc:nonplaceable", "tfc:bucket/rum")
-    event.add("tfc:nonplaceable", "tfc:bucket/sake")
-    event.add("tfc:nonplaceable", "tfc:bucket/vodka")
-    event.add("tfc:nonplaceable", "tfc:bucket/whiskey")
-    event.add("tfc:nonplaceable", "tfc:bucket/corn_whiskey")
-    event.add("tfc:nonplaceable", "tfc:bucket/rye_whiskey")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_beer")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_cider")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rum")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_sake")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_vodka")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_whiskey")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_corn_whiskey")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_rye_whiskey")
-    event.add("tfc:nonplaceable", "tfcagedalcohol:bucket/aged_mead")
-    event.add("tfc:nonplaceable", "tfc_gourmet:nalivka_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:coffee_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:tea_mint_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:tea_chamomile_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:tea_rosehip_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:tea_nettle_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:cocoa_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:compote_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:kvass_bucket")
-    event.add("tfc:nonplaceable", "tfc_gourmet:lemonade_bucket")
-    event.add("tfc:nonplaceable", "firmalife:bucket/mead")
-    event.add("tfc:nonplaceable", "firmalife:bucket/red_wine")
-    event.add("tfc:nonplaceable", "firmalife:bucket/white_wine")
-    event.add("tfc:nonplaceable", "firmalife:bucket/rose_wine")
-    event.add("tfc:nonplaceable", "firmalife:bucket/sparkling_wine")
-    event.add("tfc:nonplaceable", "firmalife:bucket/dessert_wine")
+	/*
+	*   How to use:
+	*	'target_tag':  //this is the tag you're adding items/blocks/fluids to
+	*		['item_1', 'item_2', 'item_3'] //the items you're adding to the tag go here
+	*/
+    const itemTagAdditions = {
+        'tfc:usable_on_tool_rack':
+            ['#forge:tools/mining_hammers', '#forge:tools/spades', '#forge:tools/wrenches',
+            '#forge:tools/files', '#forge:tools/crowbars', '#forge:tools/screwdrivers',
+            '#forge:tools/wire_cutters', '#forge:tools/butchery_knives', '#forge:tools/plungers',
+            '#forge:tools/mortars', '#forge:tools/mallets', '#forge:tools/chainsaws',
+            '#forge:tools/buzzsaws', '#forge:tools/drills', '#forge:tools/fishing_nets',
+            '#tfc:buckets', 'tfc:lens', '#forge:lenses', 'buildinggadgets2:gadget_building',
+            'buildinggadgets2:gadget_exchanging', 'buildinggadgets2:gadget_copy_paste',
+            'buildinggadgets2:gadget_cut_paste', 'buildinggadgets2:gadget_destruction',
+            'create:super_glue', 'exposure:camera', 'measurements:tape_measure',
+            '#chalk:chalks', 'chalk:chalk_box', 'computercraft:pocket_computer_normal',
+            'computercraft:pocket_computer_advanced', 'grapplemod:grapplinghook',
+            'grapplemod:launcheritem', 'ae2:color_applicator', 'ae2:matter_cannon',
+            'ae2:network_tool', 'ae2:wireless_terminal', 'ae2:wireless_crafting_terminal',
+            'waterflasks:leather_flask', 'waterflasks:iron_flask', 'waterflasks:red_steel_flask',
+            'tfc:wool_cloth', 'firmalife:mixing_bowl', '#gtceu:molds', 'create:wrench',
+            'framedblocks:framed_screwdriver', 'framedblocks:framed_wrench', 'framedblocks:framed_hammer',
+            'framedblocks:framed_key', 'mcw_tfc_aio:roofing_hammer', 'mcw_tfc_aio:pliers',
+            'tfclunchbox:lunchbox', 'tfclunchbox:cooling_lunchbox', 'tfclunchbox:electric_lunchbox',
+            'primitive_creatures:yhgi', 'primitive_creatures:reh', 'species:harpoon',
+            'species:crankbow', 'tfg:trowel'],
 
-    // Ингредиенты для закваски
-    event.add("tfg:ferments_to_rennet", "tfc:food/soybean");
-    event.add("tfg:ferments_to_rennet", "firmalife:food/fig");
-    event.add("tfg:ferments_to_rennet", "tfc:plant/ivy");
+        'tfc:nonplaceable':
+            ['minecraft:milk_bucket', 'firmalife:bucket/yak_milk', 'firmalife:bucket/goat_milk',
+            'tfc_gourmet:ox_milk_bucket', 'tfc_gourmet:sheep_milk_bucket', 'tfc_gourmet:alpaca_milk_bucket',
+            'tfc:bucket/beer', 'tfc:bucket/cider', 'tfc:bucket/rum', 'tfc:bucket/sake',
+            'tfc:bucket/vodka', 'tfc:bucket/whiskey', 'tfc:bucket/corn_whiskey', 'tfc:bucket/rye_whiskey',
+            'tfcagedalcohol:bucket/aged_beer', 'tfcagedalcohol:bucket/aged_cider', 'tfcagedalcohol:bucket/aged_rum',
+            'tfcagedalcohol:bucket/aged_sake', 'tfcagedalcohol:bucket/aged_vodka', 'tfcagedalcohol:bucket/aged_whiskey',
+            'tfcagedalcohol:bucket/aged_corn_whiskey', 'tfcagedalcohol:bucket/aged_rye_whiskey',
+            'tfcagedalcohol:bucket/aged_mead', 'tfc_gourmet:nalivka_bucket', 'tfc_gourmet:coffee_bucket',
+            'tfc_gourmet:tea_mint_bucket', 'tfc_gourmet:tea_chamomile_bucket', 'tfc_gourmet:tea_rosehip_bucket',
+            'tfc_gourmet:tea_nettle_bucket', 'tfc_gourmet:cocoa_bucket', 'tfc_gourmet:compote_bucket',
+            'tfc_gourmet:kvass_bucket', 'tfc_gourmet:lemonade_bucket', 'firmalife:bucket/mead',
+            'firmalife:bucket/red_wine', 'firmalife:bucket/white_wine', 'firmalife:bucket/rose_wine',
+            'firmalife:bucket/sparkling_wine', 'firmalife:bucket/dessert_wine'],
 
-    //Plants
-    event.add("tfc:plants", "#tfc:wild_fruits");
+        'tfg:ferments_to_rennet':
+            ['tfc:food/soybean', 'firmalife:food/fig', 'tfc:plant/ivy'],
 
-    /**
-     * @property {string[]} krummholz_types - List of krummholz wood types.
-     */
-    const krummholz_types = [
-        'aspen',
-        'douglas_fir',
-        'pine',
-        'spruce',
-        'white_cedar'
-    ];
+        'tfc:plants':
+            ['#tfc:wild_fruits'],
+
+        'tfc:pileable_ingots':
+            ['#forge:ingots'],
+
+        'tfc:pileable_sheets':
+            ['#forge:plates'],
+
+        'tfc:pileable_double_ingots':
+            ['gtceu:tin_alloy_double_ingot', 'gtceu:red_alloy_double_ingot', 'gtceu:lead_double_ingot',
+            'gtceu:invar_double_ingot', 'gtceu:potin_double_ingot', 'gtceu:cobalt_double_ingot',
+            'gtceu:cobalt_brass_double_ingot'],
+
+        'minecraft:fishes':
+            ['tfc:food/calamari', 'tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout',
+            'tfc:food/largemouth_bass', 'tfc:food/rainbow_trout', 'tfc:food/smallmouth_bass'],
+
+        'tfc:foods/grains':
+            ['tfc:food/cooked_rice', 'tfc:food/cattail_root', 'tfc:food/taro_root',
+            'firmalife:food/tortilla_chips', 'firmalife:food/cooked_rice_noodles',
+            'firmalife:food/cooked_pasta', 'firmalife:food/toast'],
+
+        'minecraft:logs_that_burn':
+            ['tfc:stick_bundle'],
+
+        'tfc:forge_fuel':
+            ['minecraft:coal', 'minecraft:coal_block', 'gtceu:flawless_coal_gem', 'gtceu:exquisite_coal_gem',
+            'gtceu:flawed_coal_gem', 'gtceu:chipped_coal_gem', 'gtceu:crushed_coal_ore',
+            'gtceu:purified_coal_ore', 'gtceu:refined_coal_ore', 'gtceu:impure_coal_dust',
+            'gtceu:rich_raw_coal', 'gtceu:raw_coal', 'gtceu:poor_raw_coal', 'gtceu:coal_dust',
+            'gtceu:small_coal_dust', 'gtceu:tiny_coal_dust', 'beneath:cursecoal', 'gtceu:coke_gem',
+            'gtceu:coke_dust', 'gtceu:charcoal_dust', 'gtceu:charcoal_block'],
+
+        'tfc:blast_furnace_fuel':
+            ['gtceu:coke_gem', 'beneath:cursecoal'],
+
+        'tfc:red_or_blue_anvil':
+            ['tfc:metal/anvil/blue_steel', 'tfc:metal/anvil/red_steel'],
+
+        'tfg:metal_bars':
+            ['tfc:metal/bars/bismuth_bronze', 'tfc:metal/bars/black_bronze', 'tfc:metal/bars/bronze',
+            'tfc:metal/bars/copper', 'tfc:metal/bars/wrought_iron', 'tfc:metal/bars/steel',
+            'tfc:metal/bars/black_steel', 'tfc:metal/bars/blue_steel', 'tfc:metal/bars/red_steel'],
+
+        'tfg:metal_chains':
+            ['tfc:metal/chain/bismuth_bronze', 'tfc:metal/chain/black_bronze', 'tfc:metal/chain/bronze',
+            'tfc:metal/chain/copper', 'tfc:metal/chain/wrought_iron', 'tfc:metal/chain/steel',
+            'tfc:metal/chain/black_steel', 'tfc:metal/chain/blue_steel', 'tfc:metal/chain/red_steel'],
+
+        'tfg:unfinished_lamps':
+            ['tfc:metal/unfinished_lamp/bismuth_bronze', 'tfc:metal/unfinished_lamp/black_bronze',
+            'tfc:metal/unfinished_lamp/bronze', 'tfc:metal/unfinished_lamp/copper',
+            'tfc:metal/unfinished_lamp/wrought_iron', 'tfc:metal/unfinished_lamp/steel',
+            'tfc:metal/unfinished_lamp/black_steel', 'tfc:metal/unfinished_lamp/blue_steel',
+            'tfc:metal/unfinished_lamp/red_steel'],
+
+        'tfc:corals':
+            ['tfc:coral/tube_coral_fan', 'tfc:coral/brain_coral_fan', 'tfc:coral/bubble_coral_fan',
+            'tfc:coral/fire_coral_fan', 'tfc:coral/horn_coral_fan', 'tfc:coral/tube_coral',
+            'tfc:coral/brain_coral', 'tfc:coral/bubble_coral', 'tfc:coral/fire_coral',
+            'tfc:coral/horn_coral', 'tfc:coral/tube_dead_coral_fan', 'tfc:coral/brain_dead_coral_fan',
+            'tfc:coral/bubble_dead_coral_fan', 'tfc:coral/bubble_dead_coral', 'tfc:coral/fire_dead_coral_fan',
+            'tfc:coral/horn_dead_coral_fan', 'tfc:coral/tube_dead_coral', 'tfc:coral/brain_dead_coral',
+            'tfc:coral/fire_dead_coral', 'tfc:coral/horn_dead_coral'],
+
+        'forge:corals':
+            ['#tfc:corals'],
+
+        'tfc:stone_javelins':
+            ['tfc:stone/javelin/igneous_extrusive', 'tfc:stone/javelin/igneous_intrusive',
+            'tfc:stone/javelin/metamorphic', 'tfc:stone/javelin/sedimentary'],
+
+        'tfc:moss':
+            ['tfc:plant/moss', 'tfc:plant/spanish_moss', 'tfc:plant/reindeer_lichen', 'tfc:plant/cobblestone_lichen'],
+
+        'forge:cloth':
+            ['tfc:burlap_cloth', 'tfc:wool_cloth', 'tfc:silk_cloth'],
+
+        'tfc:bells':
+            ['tfc:bronze_bell', 'tfc:brass_bell'],
+
+        'tfc:forge_invisible_whitelist':
+            ['create:basin', 'tfcchannelcasting:channel', 'tfcchannelcasting:mold_table',
+            'greate:steel_mechanical_pump', 'greate:aluminum_mechanical_pump',
+            'greate:stainless_steel_mechanical_pump', 'greate:titanium_mechanical_pump'],
+
+        'forge:mushrooms':
+            ['tfc:plant/artists_conk'],
+
+        'tfc:any_knapping':
+            ['#tfc:pit_kiln_straw'],
+
+        'tfg:burlap_fiber':
+            ['tfc:jute_fiber'],
+
+        'tfc:knives':
+            ['tfc:stone/knife/sedimentary', 'tfc:stone/knife/metamorphic',
+            'tfc:stone/knife/igneous_intrusive', 'tfc:stone/knife/igneous_extrusive'],
+
+        'tfc:compost_greens_low':
+            ['#tfc:fallen_leaves', '#minecraft:leaves'],
+
+        'tfc:hematitic_sand':
+            ['minecraft:red_sand', 'ad_astra:mars_sand', 'ad_astra:venus_sand'],
+
+        'tfc:olivine_sand':
+            ['ad_astra:moon_sand'],
+
+        'tfc:fluxstone':
+            ['tfg:loose/dripstone'],
+
+        'tfc:food/bell_peppers':
+            ['tfc:food/green_bell_pepper', 'tfc:food/yellow_bell_pepper', 'tfc:food/red_bell_pepper'],
+
+        'tfc:mob_offhand_weapons':
+            ['tfchotornot:tongs/gold', 'tfchotornot:tongs/rose_gold', 'gtceu:black_bronze_knife',
+            'tfc:metal/javelin/black_bronze', 'tfc:metal/mace/black_bronze'],
+
+        'tfc:starts_fires_with_items':
+            ['gtceu:matches'],
+
+        'tfc:starts_fires_with_durability':
+            ['gtceu:matchbox', 'gtceu:invar_lighter', 'gtceu:platinum_lighter']
+    };
+
+    const itemTagRemovals = {
+        'forge:dusts/sulfur':
+            ['tfc:powder/sulfur'],
+
+        'tfc:blast_furnace_fuel':
+            ['minecraft:coal', 'minecraft:charcoal'],
+
+        'tfc:compost_browns_low':
+            ['#tfc:fallen_leaves']
+    };
+
+    // Powder dyes mapping
+    const powderDyes = {
+        'blue': ['tfc:powder/lapis_lazuli', 'tfc:powder/graphite'],
+        'black': ['tfc:powder/charcoal', 'tfc:powder/coke'],
+        'pink': ['tfc:powder/kaolinite'],
+        'orange': ['tfc:powder/sylvite', 'tfc:powder/copper'],
+        'light_gray': ['tfc:powder/silver'],
+        'gray': ['tfc:powder/cassiterite', 'tfc:powder/magnetite', 'tfc:powder/sphalerite', 'tfc:powder/tetrahedrite'],
+        'green': ['tfc:powder/bismuthinite', 'tfc:powder/malachite'],
+        'brown': ['tfc:powder/garnierite'],
+        'yellow': ['tfc:powder/limonite']
+    };
+
+    // Gravel color mapping
+    const gravelColors = {
+        'brown': ['tfc:rock/gravel/claystone'],
+        'white': ['tfc:rock/gravel/chalk', 'tfc:rock/gravel/diorite', 'tfc:rock/gravel/quartzite', 'tfc:rock/gravel/marble'],
+        'black': ['tfc:rock/gravel/basalt', 'tfc:rock/gravel/phyllite', 'tfc:rock/gravel/andesite', 
+                  'tfc:rock/gravel/dacite', 'tfc:rock/gravel/gabbro', 'tfc:rock/gravel/dolomite', 'tfc:rock/gravel/shale'],
+        'red': ['tfc:rock/gravel/chert', 'tfc:rock/gravel/rhyolite'],
+        'yellow': ['tfc:rock/gravel/limestone', 'tfc:rock/gravel/slate'],
+        'green': ['tfc:rock/gravel/gneiss', 'tfc:rock/gravel/conglomerate', 'tfc:rock/gravel/schist'],
+        'pink': ['tfc:rock/gravel/granite']
+    };
+
+    // Add krummholz plants
+    const krummholz_types = ['aspen', 'douglas_fir', 'pine', 'spruce', 'white_cedar'];
     krummholz_types.forEach(type => {
         event.add('tfc:plants', `tfc:plant/${type}_krummholz`);
         event.add('tfc:krummholz', `tfc:plant/${type}_krummholz`);
     });
 
-    // Для складывания
-    event.add("tfc:pileable_ingots", "#forge:ingots");
-    event.add("tfc:pileable_sheets", "#forge:plates");
-    event.add("tfc:pileable_double_ingots", "gtceu:tin_alloy_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:red_alloy_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:lead_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:invar_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:potin_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:cobalt_double_ingot");
-    event.add("tfc:pileable_double_ingots", "gtceu:cobalt_brass_double_ingot");
-
-    // Рыба
-    event.add("minecraft:fishes", "tfc:food/calamari");
-    event.add("minecraft:fishes", "tfc:food/bluegill");
-    event.add("minecraft:fishes", "tfc:food/crappie");
-    event.add("minecraft:fishes", "tfc:food/lake_trout");
-    event.add("minecraft:fishes", "tfc:food/largemouth_bass");
-    event.add("minecraft:fishes", "tfc:food/rainbow_trout");
-    event.add("minecraft:fishes", "tfc:food/smallmouth_bass");
-
-    event.add("tfc:foods/grains", "tfc:food/cooked_rice");
-    event.add("tfc:foods/grains", "tfc:food/cattail_root");
-    event.add("tfc:foods/grains", "tfc:food/taro_root");
-    event.add("tfc:foods/grains", "firmalife:food/tortilla_chips");
-    event.add("tfc:foods/grains", "firmalife:food/cooked_rice_noodles");
-    event.add("tfc:foods/grains", "firmalife:food/cooked_pasta");
-    event.add("tfc:foods/grains", "firmalife:food/toast");
-
-    // Чтобы жарились бревна из TFC в пиролиз. печке
-    // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
-    global.TFC_WOOD_TYPES.forEach((woodType) => {
-        event.add("minecraft:logs_that_burn", `#tfc:${woodType}_logs`);
+    // Add TFC wood types to logs_that_burn
+    global.TFC_WOOD_TYPES.forEach(woodType => {
+        event.add('minecraft:logs_that_burn', `#tfc:${woodType}_logs`);
     });
 
-    // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
-    event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
-
-    // Remove sulfur dust overlap
-    event.remove("forge:dusts/sulfur", "tfc:powder/sulfur");
-
-    // Тэги для возможности использования разных углей в кузне
-    event.add("tfc:forge_fuel", "minecraft:coal");
-    event.add("tfc:forge_fuel", "minecraft:coal_block");
-    event.add("tfc:forge_fuel", 'gtceu:flawless_coal_gem');
-    event.add("tfc:forge_fuel", 'gtceu:exquisite_coal_gem');
-    event.add("tfc:forge_fuel", 'gtceu:flawed_coal_gem');
-    event.add("tfc:forge_fuel", 'gtceu:chipped_coal_gem');
-    event.add("tfc:forge_fuel", 'gtceu:crushed_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:purified_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:refined_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:impure_coal_dust');
-
-    event.add("tfc:forge_fuel", "gtceu:rich_raw_coal");
-    event.add("tfc:forge_fuel", "gtceu:raw_coal");
-    event.add("tfc:forge_fuel", "gtceu:poor_raw_coal");
-    event.add("tfc:forge_fuel", "gtceu:coal_dust");
-    event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
-    event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
-
-    event.add("tfc:forge_fuel", "beneath:cursecoal");
-
-    event.add("tfc:forge_fuel", "gtceu:coke_gem");
-    event.add("tfc:forge_fuel", "gtceu:coke_dust");
-
-    event.add("tfc:forge_fuel", "gtceu:charcoal_dust");
-    event.add("tfc:forge_fuel", "gtceu:charcoal_block");
-
-    // Change blast furnace to use coke
-    event.remove("tfc:blast_furnace_fuel", "minecraft:coal");
-    event.remove("tfc:blast_furnace_fuel", "minecraft:charcoal");
-    event.add("tfc:blast_furnace_fuel", "gtceu:coke_gem");
-    event.add("tfc:blast_furnace_fuel", "beneath:cursecoal");
-
-    // Тэги для сундуков, чтобы отличать их виды
-    global.TFC_WOOD_TYPES.forEach((woodType) => {
-        event.add("tfg:default_chests", `tfc:wood/chest/${woodType}`);
-        event.add("tfg:trapped_chests", `tfc:wood/trapped_chest/${woodType}`);
-
-        event.add("tfg:bladed_axles", `tfc:wood/bladed_axle/${woodType}`);
+    // Add chest and support tags for TFC wood types
+    global.TFC_WOOD_TYPES.forEach(woodType => {
+        event.add('tfg:default_chests', `tfc:wood/chest/${woodType}`);
+        event.add('tfg:trapped_chests', `tfc:wood/trapped_chest/${woodType}`);
+        event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`);
     });
 
-    //Hardwood Tags
-    global.TFC_HARDWOOD_TYPES.forEach((woodType) => {
-        event.add("tfg:hardwood", `#tfc:${woodType}_logs`);
-        event.add("tfg:stripped_hardwood", `tfc:wood/stripped_log/${woodType}`);
-        event.add("tfg:stripped_hardwood", `tfc:wood/stripped_wood/${woodType}`);
-        event.add("tfg:hardwood_supports", `tfc:wood/support/${woodType}`);
+    // Add hardwood tags
+    global.TFC_HARDWOOD_TYPES.forEach(woodType => {
+        event.add('tfg:hardwood', `#tfc:${woodType}_logs`);
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_log/${woodType}`);
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_wood/${woodType}`);
+        event.add('tfg:hardwood_supports', `tfc:wood/support/${woodType}`);
     });
 
-    //Softwood Tags
-    global.TFC_SOFTWOOD_TYPES.forEach((woodType) => {
-        event.add("tfg:softwood", `#tfc:${woodType}_logs`);
-        event.add("tfg:stripped_softwood", `tfc:wood/stripped_log/${woodType}`);
-        event.add("tfg:stripped_softwood", `tfc:wood/stripped_wood/${woodType}`);
-        event.add("tfg:softwood_supports", `tfc:wood/support/${woodType}`);
+    // Add softwood tags
+    global.TFC_SOFTWOOD_TYPES.forEach(woodType => {
+        event.add('tfg:softwood', `#tfc:${woodType}_logs`);
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_log/${woodType}`);
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_wood/${woodType}`);
+        event.add('tfg:softwood_supports', `tfc:wood/support/${woodType}`);
     });
 
-    // Теги для сосудов по цветам
-    global.MINECRAFT_DYE_NAMES.forEach((dye) => {
-        event.add("tfg:colorized_unfired_vessels", `tfc:ceramic/${dye}_unfired_vessel`);
-        event.add("tfg:colorized_fired_vessels", `tfc:ceramic/${dye}_glazed_vessel`);
-
-        event.add("tfg:colorized_unfired_large_vessels", `tfc:ceramic/unfired_large_vessel/${dye}`);
-        event.add("tfg:colorized_fired_large_vessels", `tfc:ceramic/large_vessel/${dye}`);
+    // Add vessel color tags
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.add('tfg:colorized_unfired_vessels', `tfc:ceramic/${dye}_unfired_vessel`);
+        event.add('tfg:colorized_fired_vessels', `tfc:ceramic/${dye}_glazed_vessel`);
+        event.add('tfg:colorized_unfired_large_vessels', `tfc:ceramic/unfired_large_vessel/${dye}`);
+        event.add('tfg:colorized_fired_large_vessels', `tfc:ceramic/large_vessel/${dye}`);
     });
 
-    // Цвета гравия
-    // Коричневый
-    event.add("tfc:brown_gravel", "tfc:rock/gravel/claystone");
-    // Белый
-    event.add("tfc:white_gravel", "tfc:rock/gravel/chalk");
-    event.add("tfc:white_gravel", "tfc:rock/gravel/diorite");
-    event.add("tfc:white_gravel", "tfc:rock/gravel/quartzite");
-    event.add("tfc:white_gravel", "tfc:rock/gravel/marble");
-    // Черный
-    event.add("tfc:black_gravel", "tfc:rock/gravel/basalt");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/phyllite");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/andesite");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/dacite");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/gabbro");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/dolomite");
-    event.add("tfc:black_gravel", "tfc:rock/gravel/shale");
-    // Красный
-    event.add("tfc:red_gravel", "tfc:rock/gravel/chert");
-    event.add("tfc:red_gravel", "tfc:rock/gravel/rhyolite");
-    // Желтый
-    event.add("tfc:yellow_gravel", "tfc:rock/gravel/limestone");
-    event.add("tfc:yellow_gravel", "tfc:rock/gravel/slate");
-    // Зеленый
-    event.add("tfc:green_gravel", "tfc:rock/gravel/gneiss");
-    event.add("tfc:green_gravel", "tfc:rock/gravel/conglomerate");
-    event.add("tfc:green_gravel", "tfc:rock/gravel/schist");
-    // Розовый
-    event.add("tfc:pink_gravel", "tfc:rock/gravel/granite");
-    
-    // Glassworking sands
-    event.add('tfc:hematitic_sand', 'minecraft:red_sand');
-    event.add('tfc:hematitic_sand', 'ad_astra:mars_sand');
-    event.add('tfc:hematitic_sand', 'ad_astra:venus_sand');
-    event.add('tfc:olivine_sand', 'ad_astra:moon_sand');
+    // Add stone type tags (buttons, slabs, stairs, walls)
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        event.add('minecraft:stone_buttons', `tfc:rock/button/${stoneTypeName}`);
+        event.add('minecraft:buttons', `tfc:rock/button/${stoneTypeName}`);
 
-    // Теги для объединения наковален
-    event.add("tfc:red_or_blue_anvil", "tfc:metal/anvil/blue_steel");
-    event.add("tfc:red_or_blue_anvil", "tfc:metal/anvil/red_steel");
-
-    // Теги для решеток
-    event.add("tfg:metal_bars", "tfc:metal/bars/bismuth_bronze");
-    event.add("tfg:metal_bars", "tfc:metal/bars/black_bronze");
-    event.add("tfg:metal_bars", "tfc:metal/bars/bronze");
-    event.add("tfg:metal_bars", "tfc:metal/bars/copper");
-    event.add("tfg:metal_bars", "tfc:metal/bars/wrought_iron");
-    event.add("tfg:metal_bars", "tfc:metal/bars/steel");
-    event.add("tfg:metal_bars", "tfc:metal/bars/black_steel");
-    event.add("tfg:metal_bars", "tfc:metal/bars/blue_steel");
-    event.add("tfg:metal_bars", "tfc:metal/bars/red_steel");
-
-    // Тэги для цепей
-    event.add("tfg:metal_chains", "tfc:metal/chain/bismuth_bronze");
-    event.add("tfg:metal_chains", "tfc:metal/chain/black_bronze");
-    event.add("tfg:metal_chains", "tfc:metal/chain/bronze");
-    event.add("tfg:metal_chains", "tfc:metal/chain/copper");
-    event.add("tfg:metal_chains", "tfc:metal/chain/wrought_iron");
-    event.add("tfg:metal_chains", "tfc:metal/chain/steel");
-    event.add("tfg:metal_chains", "tfc:metal/chain/black_steel");
-    event.add("tfg:metal_chains", "tfc:metal/chain/blue_steel");
-    event.add("tfg:metal_chains", "tfc:metal/chain/red_steel");
-
-    // Теги для незаконченных ламп
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/bismuth_bronze");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/black_bronze");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/bronze");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/copper");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/wrought_iron");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/steel");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/black_steel");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/blue_steel");
-    event.add("tfg:unfinished_lamps", "tfc:metal/unfinished_lamp/red_steel");
-
-    // Теги для кораллов
-    event.add("tfc:corals", "tfc:coral/tube_coral_fan");
-    event.add("tfc:corals", "tfc:coral/brain_coral_fan");
-    event.add("tfc:corals", "tfc:coral/bubble_coral_fan");
-    event.add("tfc:corals", "tfc:coral/fire_coral_fan");
-    event.add("tfc:corals", "tfc:coral/horn_coral_fan");
-    event.add("tfc:corals", "tfc:coral/tube_coral");
-    event.add("tfc:corals", "tfc:coral/brain_coral");
-    event.add("tfc:corals", "tfc:coral/bubble_coral");
-    event.add("tfc:corals", "tfc:coral/fire_coral");
-    event.add("tfc:corals", "tfc:coral/horn_coral");
-    event.add("tfc:corals", "tfc:coral/tube_dead_coral_fan");
-    event.add("tfc:corals", "tfc:coral/brain_dead_coral_fan");
-    event.add("tfc:corals", "tfc:coral/bubble_dead_coral_fan");
-    event.add("tfc:corals", "tfc:coral/bubble_dead_coral");
-    event.add("tfc:corals", "tfc:coral/fire_dead_coral_fan");
-    event.add("tfc:corals", "tfc:coral/horn_dead_coral_fan");
-    event.add("tfc:corals", "tfc:coral/tube_dead_coral");
-    event.add("tfc:corals", "tfc:coral/brain_dead_coral");
-    event.add("tfc:corals", "tfc:coral/fire_dead_coral");
-    event.add("tfc:corals", "tfc:coral/horn_dead_coral");
-    event.add("forge:corals", "#tfc:corals");
-
-    // Теги для каменных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
-        
-        //Add to buttons
-        event.add("minecraft:stone_buttons", `tfc:rock/button/${stoneTypeName}`);
-        event.add("minecraft:buttons", `tfc:rock/button/${stoneTypeName}`);
-
-        //Add to rock slabs
-        global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach((slabType) => {
-            event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
-            event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
-            event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
+        global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add('tfg:rock_slabs', `tfc:rock/${slabType}/${stoneTypeName}_slab`);
+            event.add('tfg:rock_stairs', `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
+            event.add('tfg:rock_walls', `tfc:rock/${slabType}/${stoneTypeName}_wall`);
         });
-        
-        //Add to brick slabs
-        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach((slabType) => {
-            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
-            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
-            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
+
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add('tfg:brick_slabs', `tfc:rock/${slabType}/${stoneTypeName}_slab`);
+            event.add('tfg:brick_stairs', `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
+            event.add('tfg:brick_walls', `tfc:rock/${slabType}/${stoneTypeName}_wall`);
         });
     });
 
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-
-    global.TFC_HIDDEN_ITEMS.forEach((item) => {
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
-
-    //Stone javelins
-    event.add("tfc:stone_javelins", "tfc:stone/javelin/igneous_extrusive");
-    event.add("tfc:stone_javelins", "tfc:stone/javelin/igneous_intrusive");
-    event.add("tfc:stone_javelins", "tfc:stone/javelin/metamorphic");
-    event.add("tfc:stone_javelins", "tfc:stone/javelin/sedimentary");
-
-    //Moss
-    event.add("tfc:moss", "tfc:plant/moss");
-    event.add("tfc:moss", "tfc:plant/spanish_moss");
-    event.add("tfc:moss", "tfc:plant/reindeer_lichen");
-    event.add("tfc:moss", "tfc:plant/cobblestone_lichen");
-
-    //Cloth
-    event.add("forge:cloth", "tfc:burlap_cloth");
-    event.add("forge:cloth", "tfc:wool_cloth");
-    event.add("forge:cloth", "tfc:silk_cloth");
-
-    // Bells
-    event.add("tfc:bells", "tfc:bronze_bell");
-    event.add("tfc:bells", "tfc:brass_bell");
-
-    // Lets the basin be put on top of a charcoal forge
-    event.add("tfc:forge_invisible_whitelist", "create:basin");
-
-    // Allows automation with the 3x3 Hellforge
-    event.add("tfc:forge_invisible_whitelist", "tfcchannelcasting:channel");
-    event.add("tfc:forge_invisible_whitelist", "tfcchannelcasting:mold_table");
-    event.add("tfc:forge_invisible_whitelist", "greate:steel_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:aluminum_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
-
-    event.add("forge:mushrooms", "tfc:plant/artists_conk");
-    event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
-    event.add("tfg:burlap_fiber", "tfc:jute_fiber");
-
-    global.TFC_WET_MUD_BRICKS.forEach((wetMudBrick) => {
-        event.add("tfc:wet_mud_bricks", wetMudBrick);
-    });
-
-    global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
-        event.add("tfc:dry_mud_bricks", dryMudBrick);
-    });
-
-    // Workaround for some of the ruin structures having tfc knives
-    event.add('tfc:knives', 'tfc:stone/knife/sedimentary')
-    event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
-    event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
-    event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
-
-    //greens and browns
-    event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')
-    event.add('tfc:compost_greens_low', '#tfc:fallen_leaves')
-    event.add('tfc:compost_greens_low', '#minecraft:leaves')
-
-    // Powder dyes
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/blue', 'tfc:powder/graphite')
-    event.add('forge:dyes/black', 'tfc:powder/charcoal')
-    event.add('forge:dyes/black', 'tfc:powder/coke')
-    event.add('forge:dyes/pink', 'tfc:powder/kaolinite')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/orange', 'tfc:powder/sylvite')
-    event.add('forge:dyes/orange', 'tfc:powder/copper')
-    event.add('forge:dyes/blue', 'tfc:powder/lapis_lazuli')
-    event.add('forge:dyes/light_gray', 'tfc:powder/silver')
-    event.add('forge:dyes/gray', 'tfc:powder/cassiterite')
-    event.add('forge:dyes/gray', 'tfc:powder/magnetite')
-    event.add('forge:dyes/gray', 'tfc:powder/sphalerite')
-    event.add('forge:dyes/gray', 'tfc:powder/tetrahedrite')
-    event.add('forge:dyes/green', 'tfc:powder/bismuthinite')
-    event.add('forge:dyes/green', 'tfc:powder/malachite')
-    event.add('forge:dyes/brown', 'tfc:powder/garnierite')
-    event.add('forge:dyes/yellow', 'tfc:powder/limonite')
-
-    //Hanging Signs Soft & Hard Wood
+    // Add hanging sign tags for all metals and wood types
     global.TFC_EQUIPMENT_METALS.forEach(metal => {
-        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`))
-        event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`)
-        event.add(`tfg:hanging_sign/${metal}/softwood`, `beneath:wood/hanging_sign/${metal}/crimson`)
-    })
-
-	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
-
-    event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
-    event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
-    event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
-
-    // More offhand things for piglin brutes
-    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
-    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
-    event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
-    event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
-    event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
-
-    event.add('tfc:starts_fires_with_items', 'gtceu:matches');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
-    event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
-}
-
-/** @param {TagEvent.Block} event */
-function registerTFCBlockTags(event) {
-    // Теги для каменных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
-        global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach((slabType) => {
-            event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
-            event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
-            event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
-        });
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.TFC_HARDWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`));
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.TFC_SOFTWOOD_TYPES.map(wood => `tfc:wood/hanging_sign/${metal}/${wood}`));
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, global.AFC_HARDWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`));
+        event.add(`tfg:hanging_sign/${metal}/softwood`, global.AFC_SOFTWOOD_TYPES.map(wood => `afc:wood/hanging_sign/${metal}/${wood}`));
+        event.add(`tfg:hanging_sign/${metal}/hardwood`, `beneath:wood/hanging_sign/${metal}/warped`);
+        event.add(`tfg:hanging_sign/${metal}/softwood`, `beneath:wood/hanging_sign/${metal}/crimson`);
     });
 
-    // Теги для кирпичных ступенек тфк
-    global.TFC_STONE_TYPES.forEach((stoneTypeName) => {
-        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach((slabType) => {
-            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`);
-            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
-            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`);
-        });
+    // Add powder dyes
+    Object.entries(powderDyes).forEach(([color, powders]) => {
+        powders.forEach(powder => event.add(`forge:dyes/${color}`, powder));
     });
 
-    // Возможность обрушения полу-блоков
-    event.add("tfc:can_collapse", "#tfg:rock_slabs");
-    event.add("tfc:can_start_collapse", "#tfg:rock_slabs");
-    event.add("tfc:can_trigger_collapse", "#tfg:rock_slabs");
+    // Add gravel colors
+    Object.entries(gravelColors).forEach(([color, gravels]) => {
+        gravels.forEach(gravel => event.add(`tfc:${color}_gravel`, gravel));
+    });
 
-    // Возможность обрушения ступеней
-    event.add("tfc:can_collapse", "#tfg:rock_stairs");
-    event.add("tfc:can_start_collapse", "#tfg:rock_stairs");
-    event.add("tfc:can_trigger_collapse", "#tfg:rock_stairs");
+    // Add wet and dry mud bricks
+    global.TFC_WET_MUD_BRICKS.forEach(wetMudBrick => event.add('tfc:wet_mud_bricks', wetMudBrick));
+    global.TFC_DRY_MUD_BRICKS.forEach(dryMudBrick => event.add('tfc:dry_mud_bricks', dryMudBrick));
 
-    // Возможность обрушения стен
-    event.add("tfc:can_collapse", "#tfg:rock_walls");
-    event.add("tfc:can_start_collapse", "#tfg:rock_walls");
-    event.add("tfc:can_trigger_collapse", "#tfg:rock_walls");
-
-    event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
-    event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
-
-    // Glassworking blocks
-    event.add("tfc:glass_basin_blocks", "create:brass_block");
-    event.add("tfc:glass_pouring_table", "create:brass_block");
-
-    event.add("tfc:glass_basin_blocks", "tfc:red_kaolin_clay");
-    event.add("tfc:glass_pouring_table", "tfc:red_kaolin_clay");
-
-    event.add("tfc:glass_basin_blocks", "tfc:pink_kaolin_clay");
-    event.add("tfc:glass_pouring_table", "tfc:pink_kaolin_clay");
-
-    event.add("tfc:glass_basin_blocks", "tfc:white_kaolin_clay");
-    event.add("tfc:glass_pouring_table", "tfc:white_kaolin_clay");
-
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach((item) => {
+    // Add disabled and hidden items
+    global.TFC_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item);
+        event.add('c:hidden_from_recipe_viewers', item);
     });
 
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
+    global.TFC_HIDDEN_ITEMS.forEach(item => {
+        event.add('c:hidden_from_recipe_viewers', item);
+    });
 
-    // Lets the basin be put on top of a charcoal forge
-    event.add("tfc:forge_invisible_whitelist", "create:basin");
+    // Remove ore tags
+    event.removeAllTagsFrom('/tfc:ore/[^*]+/[^*]+/');
 
-    // Allows automation with the 3x3 Hellforge
-    event.add("tfc:forge_invisible_whitelist", "tfcchannelcasting:channel");
-    event.add("tfc:forge_invisible_whitelist", "tfcchannelcasting:mold_table");
-    event.add("tfc:forge_invisible_whitelist", "greate:steel_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:aluminum_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:stainless_steel_mechanical_pump");
-    event.add("tfc:forge_invisible_whitelist", "greate:titanium_mechanical_pump");
+    // helpers
+    Object.entries(itemTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
 
-    // Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
-    // Optimized to compute matching blocks once instead of regex scanning per tag like before.
-    // Blacklist removes blocks that are unwanted.
-    const blacklist = ["drying", "slab", "stairs", "wall", "additionalplacements", "fence", "roof", "bridge"];
+    Object.entries(itemTagRemovals).forEach(([tag, items]) => {
+        items.forEach(item => event.remove(tag, item));
+    });
+
+})
+//#endregion
+
+//#region blocks
+ServerEvents.tags('block', event => {
+
+    const blockTagAdditions = {
+        'tfc:glass_basin_blocks':
+            ['create:brass_block', 'tfc:red_kaolin_clay', 'tfc:pink_kaolin_clay', 'tfc:white_kaolin_clay'],
+
+        'tfc:glass_pouring_table':
+            ['create:brass_block', 'tfc:red_kaolin_clay', 'tfc:pink_kaolin_clay', 'tfc:white_kaolin_clay'],
+
+        'tfc:forge_invisible_whitelist':
+            ['create:basin', 'tfcchannelcasting:channel', 'tfcchannelcasting:mold_table',
+            'greate:steel_mechanical_pump', 'greate:aluminum_mechanical_pump',
+            'greate:stainless_steel_mechanical_pump', 'greate:titanium_mechanical_pump'],
+
+        'tfc:forge_insulation':
+            ['create:depot'],
+
+        'tfc:can_be_snow_piled':
+            ['tfc:groundcover/feather']
+    };
+
+    // Add stone block tags (slabs, stairs, walls)
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        event.add('minecraft:stone_buttons', `tfc:rock/button/${stoneTypeName}`);
+        event.add('minecraft:buttons', `tfc:rock/button/${stoneTypeName}`);
+
+        global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add('tfg:rock_slabs', `tfc:rock/${slabType}/${stoneTypeName}_slab`);
+            event.add('tfg:rock_stairs', `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
+            event.add('tfg:rock_walls', `tfc:rock/${slabType}/${stoneTypeName}_wall`);
+        });
+
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add('tfg:brick_slabs', `tfc:rock/${slabType}/${stoneTypeName}_slab`);
+            event.add('tfg:brick_stairs', `tfc:rock/${slabType}/${stoneTypeName}_stairs`);
+            event.add('tfg:brick_walls', `tfc:rock/${slabType}/${stoneTypeName}_wall`);
+        });
+    });
+
+    // Add collapse tags for slabs, stairs, and walls
+    ['#tfg:rock_slabs', '#tfg:rock_stairs', '#tfg:rock_walls'].forEach(tag => {
+        event.add('tfc:can_collapse', tag);
+        event.add('tfc:can_start_collapse', tag);
+        event.add('tfc:can_trigger_collapse', tag);
+    });
+
+    event.add('tfc:can_start_collapse', '#tfc:rock/smooth');
+    event.add('tfc:can_trigger_collapse', '#tfc:rock/smooth');
+
+    // Add magma blocks to infiniburn
+    global.TFC_MAGMA_BLOCKS.forEach(magma => event.add('minecraft:infiniburn_overworld', magma));
+
+    // Remove disabled blocks
+    global.TFC_DISABLED_ITEMS.forEach(item => event.removeAllTagsFrom(item));
+
+    // Remove ore tags
+    event.removeAllTagsFrom('/tfc:ore/[^*]+/[^*]+/');
+
+    // Add blocks with "brick" in ID to bloomery and forge insulation
+    const blacklist = ['drying', 'slab', 'stairs', 'wall', 'additionalplacements', 'fence', 'roof', 'bridge'];
     const matches = [];
     ForgeRegistries.BLOCKS.getValues().forEach(block => {
         const id = String(ForgeRegistries.BLOCKS.getKey(block));
-        if (id.includes("brick") && !blacklist.some(no_no_word => id.includes(no_no_word))) {
+        if (id.includes('brick') && !blacklist.some(no_no_word => id.includes(no_no_word))) {
             matches.push(id);
-        };
+        }
     });
-    ["tfc:bloomery_insulation", "tfc:forge_insulation"].forEach(tag => {
+    ['tfc:bloomery_insulation', 'tfc:forge_insulation'].forEach(tag => {
         matches.forEach(id => event.add(tag, id));
     });
 
-    event.add("tfc:forge_insulation", 'create:depot');
-
-    global.TFC_STONE_TYPES.forEach((stone) => {
-        event.add("minecraft:stone_buttons", `tfc:rock/button/${stone}`);
-        event.add("minecraft:buttons", `tfc:rock/button/${stone}`);
+    // helpers
+    Object.entries(blockTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
     });
 
-    event.add('tfc:can_be_snow_piled', 'tfc:groundcover/feather');
+})
+//#endregion
 
-    global.TFC_MAGMA_BLOCKS.forEach(magma => {
-        event.add('minecraft:infiniburn_overworld', magma)
-    })
-}
+//#region fluids
+ServerEvents.tags('fluid', event => {
 
-/** @param {TagEvent.Fluid} event */
-function registerTFCFluidTags(event) {
-    // Удаление TFC металлов из возможных в форме слитка
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/bismuth");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/bismuth_bronze");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/bronze");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/black_bronze");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/brass");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/copper");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/gold");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/nickel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/rose_gold");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/silver");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/tin");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/zinc");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/sterling_silver");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/wrought_iron");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/black_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/red_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/blue_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/cast_iron");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/high_carbon_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/high_carbon_black_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/high_carbon_red_steel");
-    event.remove("tfc:usable_in_ingot_mold", "tfc:metal/high_carbon_blue_steel");
+    const $FluidState = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidState');
+    const $FluidAttribute = Java.loadClass('com.gregtechceu.gtceu.api.fluids.attribute.FluidAttributes');
+    const FluidStack = Java.loadClass('net.minecraftforge.fluids.FluidStack');
 
-    // Добавление GTCEu металлов в форму слитков
-    event.add("tfc:usable_in_ingot_mold", "gtceu:bismuth");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:bismuth_bronze");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:black_bronze");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:bronze");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:brass");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:copper");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:gold");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:nickel");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:rose_gold");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:silver");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:tin");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:zinc");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:sterling_silver");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:wrought_iron");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:iron");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:steel");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:black_steel");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:blue_steel");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:red_steel");
+    // TFC metal fluids to replace
+	// gets added to 'tfc:usable_in_ingot_mold', `tfc:metal/${metal}` and 'c:hidden_from_recipe_viewers', `tfc:metal/${metal}`
+    const tfcMetalFluids = [
+        'bismuth', 'bismuth_bronze', 'bronze', 'black_bronze', 'brass', 'copper', 'gold',
+        'nickel', 'rose_gold', 'silver', 'tin', 'zinc', 'sterling_silver', 'wrought_iron',
+        'steel', 'black_steel', 'red_steel', 'blue_steel', 'cast_iron', 'high_carbon_steel',
+        'high_carbon_black_steel', 'high_carbon_red_steel', 'high_carbon_blue_steel'
+    ];
 
-    event.add("tfc:usable_in_ingot_mold", "gtceu:red_alloy");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:tin_alloy");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:lead");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:invar");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:potin");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:cobalt_brass");
-    event.add("tfc:usable_in_ingot_mold", "gtceu:aluminium_silicate");
+    // GTCEu metal fluids for ingot mold
+	// gets added to 'tfc:usable_in_ingot_mold', `gtceu:${metal}`
+    const gtceuIngotMoldFluids = [
+        'bismuth', 'bismuth_bronze', 'black_bronze', 'bronze', 'brass', 'copper', 'gold',
+        'nickel', 'rose_gold', 'silver', 'tin', 'zinc', 'sterling_silver', 'wrought_iron',
+        'iron', 'steel', 'black_steel', 'blue_steel', 'red_steel', 'red_alloy', 'tin_alloy',
+        'lead', 'invar', 'potin', 'cobalt', 'cobalt_brass', 'aluminium_silicate'
+    ];
 
-    event.add("tfc:usable_in_bell_mold", "gtceu:bronze");
-    event.add("tfc:usable_in_bell_mold", "gtceu:gold");
-    event.add("tfc:usable_in_bell_mold", "gtceu:brass");
+    const fluidTagAdditions = {
+        'tfc:usable_in_bell_mold':
+            ['gtceu:bronze', 'gtceu:gold', 'gtceu:brass'],
 
-    event.add("tfc:usable_in_tool_head_mold", "gtceu:copper");
-    event.add("tfc:usable_in_tool_head_mold", "gtceu:bismuth_bronze");
-    event.add("tfc:usable_in_tool_head_mold", "gtceu:black_bronze");
-    event.add("tfc:usable_in_tool_head_mold", "gtceu:bronze");
+        'tfc:usable_in_tool_head_mold':
+            ['gtceu:copper', 'gtceu:bismuth_bronze', 'gtceu:black_bronze', 'gtceu:bronze'],
 
-    /**********************************************************************************************************
-	* 
-	* Utility functions to classify fluids into tags based on temperature and properties.
-	* * * Seperates fluids into hot, cold, neutral, and acidic fluid tags.
-    * * * Uses these tags to determine usability in different containers.
-	*
-	***********************************************************************************************************/
+        'tfc:ingredients':
+            ['tfc:spring_water'],
 
-    const $FluidState = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidState")
-    const $FluidAttribute = Java.loadClass("com.gregtechceu.gtceu.api.fluids.attribute.FluidAttributes")
-	const ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries');
-	const FluidStack = Java.loadClass('net.minecraftforge.fluids.FluidStack');
+        'tfc:drinkables':
+            ['tfc:spring_water'],
 
+        'tfg:alcohols':
+            ['#tfc:alcohols', 'tfcagedalcohol:aged_beer', 'tfcagedalcohol:aged_cider',
+            'tfcagedalcohol:aged_rum', 'tfcagedalcohol:aged_sake', 'tfcagedalcohol:aged_vodka',
+            'tfcagedalcohol:aged_whiskey', 'tfcagedalcohol:aged_corn_whiskey',
+            'tfcagedalcohol:aged_rye_whiskey', 'tfcagedalcohol:aged_mead', 'tfc_gourmet:nalivka'],
+
+        'tfg:not_solid':
+            ['#forge:liquid', '#forge:gaseous', '#forge:plasmatic'],
+
+        'tfc:usable_in_pot':
+            ['#forge:neutral_fluids'],
+
+        'firmalife:usable_in_vat':
+            ['#forge:neutral_fluids'],
+
+        'tfc:usable_in_barrel':
+            ['#forge:neutral_fluids'],
+
+        'tfc:usable_in_wooden_bucket':
+            ['#forge:neutral_fluids'],
+
+        'tfc:usable_in_jug':
+            ['#forge:neutral_fluids'],
+
+        'firmalife:usable_in_mixing_bowl':
+            ['#forge:neutral_fluids']
+    };
+
+    // Remove TFC metal fluids from ingot mold
+    tfcMetalFluids.forEach(metal => {
+        event.remove('tfc:usable_in_ingot_mold', `tfc:metal/${metal}`);
+        event.add('c:hidden_from_recipe_viewers', `tfc:metal/${metal}`);
+    });
+
+    // Add GTCEu metal fluids to ingot mold
+    gtceuIngotMoldFluids.forEach(metal => {
+        event.add('tfc:usable_in_ingot_mold', `gtceu:${metal}`);
+    });
+
+    // Tag acidic fluids
     forEachMaterial(material => {
         if (material.hasProperty(PropertyKey.FLUID)) {
             let fluid = material.getFluid();
             let fluidType = fluid.getFluidType();
             let fluidName = fluidType.toString();
-            
-            // Tags acidic fluids.
+
             try {
                 if (fluid.getAttributes().contains($FluidAttribute.ACID)) {
-                    event.add("forge:acidic", fluidName);
-                };
-            }
-            catch (exception) { /* empty */ }
+                    event.add('forge:acidic', fluidName);
+                }
+            } catch (exception) { /* empty */ }
         }
-    })
+    });
 
-	ForgeRegistries.FLUIDS.getValues().forEach(fluid => {
+    // Temperature and state-based fluid tagging
+    ForgeRegistries.FLUIDS.getValues().forEach(fluid => {
+        const id = ForgeRegistries.FLUIDS.getKey(fluid);
+        if (!id) return;
 
-		// Determine if fluid is hot or not. (pun intended)
-		const hotFluids = (fluid) => {
+        const idString = id.toString();
 
-			let temp = -1;
-			try {
-				temp = fluid.getFluidType().getTemperature();
-			} catch (e1) {
-				try {
-					temp = fluid.getFluidType().getTemperature(new FluidStack(fluid, 1000));
-				} catch (e2) {
-					temp = -1;
-				}
-			}
+        // Check if fluid is hidden
+        let hiddenWrapper;
+        try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
 
-			const id = ForgeRegistries.FLUIDS.getKey(fluid);
-            
-            if (!id) return;
-
-            // Return if fluid is hidden from recipe viewers.
-            const idString = id.toString();
-
-            let hiddenWrapper;
-            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
-
-            const wrapperHas = (wrapper) => {
-                if (!wrapper) return false;
-                try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
-            };
-
-            if (wrapperHas(hiddenWrapper)) return;
-            
-			const idStr = id.toString();
-
-            // Temp testing.
-            // Not extreme temps.
-            if (temp <= 340 && temp >= 120) {
-                event.add("tfg:moderate_temperature_fluids", idStr);
-            }
-            // Red steel: can't do heat, can do cryo.
-            if (temp <= 370) {
-                event.add("tfc:usable_in_red_steel_bucket", idStr);
-            }
-            // Burns ya.
-            if (temp >= 1300) {
-                event.add("tfchotornot:hot_whitelist", idStr);
-            }
-            // Frostburns ya. (The zero check is to stop 'invalid' fluids from counting as too cold)
-            if (temp < 223 && temp > 0) {
-                event.add("tfchotornot:cold_whitelist", idStr);
-            }
-            // Blue steel: can do heat, can't do cryo.
-            if (temp >= 120) {
-                event.add("tfc:usable_in_blue_steel_bucket", idStr);
-            }
-		};
-
-		// Determine if fluid is a gas or a plasma, and tag accordingly.
-		const liquidTag = (fluid) => {
-			const id = ForgeRegistries.FLUIDS.getKey(fluid);
-			if (!id) return;
-			const idString = id.toString();
-
-			// Check against tag wrappers for gas and plasma fluids.
-			let gaseousWrapper, plasmaticWrapper, hiddenWrapper;
-			try { gaseousWrapper = event.get('forge:gaseous'); } catch (e) { /* ignore */ }
-			try { plasmaticWrapper = event.get('forge:plasmatic'); } catch (e) { /* ignore */ }
-            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
-
-			const wrapperHas = (wrapper) => {
-				if (!wrapper) return false;
-				try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
-			};
-
-			const isGaseous = wrapperHas(gaseousWrapper);
-			const isPlasmatic = wrapperHas(plasmaticWrapper);
-            const isHidden = wrapperHas(hiddenWrapper);
-
-            if (isGaseous || isPlasmatic || isHidden)
-                return;
-
-			event.add('forge:liquid', idString);
-		};
-
-        // Determine if fluid is neutral (not gas, plasma, acidic, or extreme temp), and tag accordingly.
-        const neutralTag = (fluid) => {
-            const id = ForgeRegistries.FLUIDS.getKey(fluid);
-            if (!id) return;
-            const idString = id.toString();
-
-            // Check against tag wrappers for gas, plasma, acidic, and normal temp fluids.
-            let acidicWrapper, moderateTemperatureWrapper, gaseousWrapper, plasmaticWrapper, hiddenWrapper;
-            try { acidicWrapper = event.get('forge:acidic'); } catch (e) { /* ignore */ }
-            try { moderateTemperatureWrapper = event.get('tfg:moderate_temperature_fluids'); } catch (e) { /* ignore */ }
-            try { gaseousWrapper = event.get('forge:gaseous'); } catch (e) { /* ignore */ }
-            try { plasmaticWrapper = event.get('forge:plasmatic'); } catch (e) { /* ignore */ }
-            try { hiddenWrapper = event.get('c:hidden_from_recipe_viewers'); } catch (e) { /* ignore */ }
-            
-            const wrapperHas = (wrapper) => {
-                if (!wrapper) return false;
-                try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
-            };
-
-            const isAcidic = wrapperHas(acidicWrapper);
-            const isExtreme = !wrapperHas(moderateTemperatureWrapper);
-            const isGaseous = wrapperHas(gaseousWrapper);
-            const isPlasmatic = wrapperHas(plasmaticWrapper);
-            const isHidden = wrapperHas(hiddenWrapper);
-
-            if (isGaseous || isPlasmatic || isAcidic || isExtreme || isHidden) return;
-            event.add('forge:neutral_fluids', idString);
+        const wrapperHas = (wrapper) => {
+            if (!wrapper) return false;
+            try { return wrapper.getObjectIds().toArray().some(wid => String(wid) === idString); } catch (e) { return false; }
         };
 
-		// Execute tagging functions.
-		hotFluids(fluid);
-		liquidTag(fluid);
-		neutralTag(fluid);
-	});
+        if (wrapperHas(hiddenWrapper)) return;
 
-	// Can use any liquid.
-	event.add('tfc:usable_in_pot', '#forge:neutral_fluids')
-	event.add('firmalife:usable_in_vat', '#forge:neutral_fluids')
+        // This fetches the temperature
+        let temp = -1;
+        try {
+            temp = fluid.getFluidType().getTemperature();
+        } catch (e1) {
+            try {
+                temp = fluid.getFluidType().getTemperature(new FluidStack(fluid, 1000));
+            } catch (e2) {
+                temp = -1;
+            }
+        }
 
-    // Can use only neutral fluids.
-    event.add('tfc:usable_in_barrel', '#forge:neutral_fluids');
-    event.add('tfc:usable_in_wooden_bucket', '#forge:neutral_fluids');
-    // Ceramic jugs and glass bottles
-    event.add('tfc:usable_in_jug', '#forge:neutral_fluids');
-    event.add('firmalife:usable_in_mixing_bowl', '#forge:neutral_fluids');
+        // Tag based on temp
+        if (temp <= 340 && temp >= 120) {
+            event.add('tfg:moderate_temperature_fluids', idString);
+        }
+        if (temp <= 370) {
+            event.add('tfc:usable_in_red_steel_bucket', idString);
+        }
+        if (temp >= 1300) {
+            event.add('tfchotornot:hot_whitelist', idString);
+        }
+        if (temp < 223 && temp > 0) {
+            event.add('tfchotornot:cold_whitelist', idString);
+        }
+        if (temp >= 120) {
+            event.add('tfc:usable_in_blue_steel_bucket', idString);
+        }
 
-	// All fluids are given the '#tfg:not_solid' tag incase we have a use for them regardless of state.
-	event.add('tfg:not_solid', '#forge:liquid')
-	event.add('tfg:not_solid', '#forge:gaseous')
-	event.add('tfg:not_solid', '#forge:plasmatic')
+        // Tag liquids (non-gas, non-plasma)
+        let gaseousWrapper, plasmaticWrapper;
+        try { gaseousWrapper = event.get('forge:gaseous'); } catch (e) { /* ignore */ }
+        try { plasmaticWrapper = event.get('forge:plasmatic'); } catch (e) { /* ignore */ }
 
-	/***********************************************************************************************************/
+        const isGaseous = wrapperHas(gaseousWrapper);
+        const isPlasmatic = wrapperHas(plasmaticWrapper);
 
-    event.add("tfc:ingredients", "tfc:spring_water");
-	event.add('tfc:drinkables', 'tfc:spring_water')
+        if (!isGaseous && !isPlasmatic) {
+            event.add('forge:liquid', idString);
+        }
 
-    event.add('tfg:alcohols', '#tfc:alcohols')
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_beer");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_cider");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_rum");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_sake");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_vodka");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_corn_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_rye_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_mead");
-    event.add("tfg:alcohols", "tfc_gourmet:nalivka");
+        // Tag neutral fluids (liquid, non-acidic, moderate temp)
+        let acidicWrapper, moderateTemperatureWrapper;
+        try { acidicWrapper = event.get('forge:acidic'); } catch (e) { /* ignore */ }
+        try { moderateTemperatureWrapper = event.get('tfg:moderate_temperature_fluids'); } catch (e) { /* ignore */ }
 
-    // Добавляем тег для скрытия в EMI
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth_bronze");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/bronze");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/black_bronze");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/brass");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/copper");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/gold");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/nickel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/rose_gold");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/silver");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/tin");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/zinc");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/sterling_silver");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/wrought_iron");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/black_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/red_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/blue_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/cast_iron");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/high_carbon_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/high_carbon_black_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/high_carbon_red_steel");
-    event.add("c:hidden_from_recipe_viewers", "tfc:metal/high_carbon_blue_steel");
-}
+        const isAcidic = wrapperHas(acidicWrapper);
+        const isExtreme = !wrapperHas(moderateTemperatureWrapper);
+
+        if (!isGaseous && !isPlasmatic && !isAcidic && !isExtreme) {
+            event.add('forge:neutral_fluids', idString);
+        }
+    });
+
+    // helpers
+    Object.entries(fluidTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+	//#endregion
+	
+})
