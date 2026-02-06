@@ -74,4 +74,6 @@ function registerTACZMiscRecipes(event) {
 		.itemOutputs('tfg:certus_mechanism')
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(80)
+
+	TFGHelpers.registerMaterialInfo('tacz:target_minecart', [GTMaterials.WroughtIron, 5, GTMaterials.Steel, 1, GTMaterials.Wood, 1]);
 }
