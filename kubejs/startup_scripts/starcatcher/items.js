@@ -23,7 +23,7 @@ function registerStarcatcherItems(event) {
 		Object.keys(global.STARCATCHER_FISH).forEach(fish => {
 			if ( global.STARCATCHER_FISH[fish]?.dimension !== null && global.STARCATCHER_FISH[fish]?.dimension !== undefined ) {
 
-				event.create(`tfg:food/cooked_${fish}`)
+				event.create(`tfg:food/cooked_fish/cooked_${fish}`)
 					.translationKey(`item.tfg.food.cooked_${fish}`)
 					.food(food => food.hunger(4).saturation(2));
 			};

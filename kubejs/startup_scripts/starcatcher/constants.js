@@ -29,7 +29,11 @@ if (Platform.isLoaded("starcatcher")){
         'starcatcher:dried_seaweed',
         'starcatcher:conch',
         'starcatcher:clam',
-        'starcatcher:lava_crab_claw'
+        'starcatcher:lava_crab_claw',
+        'starcatcher:cooked_starcaught_fish',
+        'starcatcher:display',
+        'starcatcher:telescope'
+
     ]);
 
     /**

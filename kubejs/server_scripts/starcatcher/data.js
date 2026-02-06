@@ -25,7 +25,7 @@ function registerStarcatcherHeatData(event) {
 
 	Object.keys(global.STARCATCHER_FISH).forEach(fish => {
 		event.itemHeat(`starcatcher:${fish}`, 1.0, null, null)
-		event.itemHeat(`tfg:food/cooked_${fish}`, 1.0, null, null)
+		event.itemHeat(`tfg:food/cooked_fish/cooked_${fish}`, 1.0, null, null)
 	});
 };
 
@@ -93,7 +93,7 @@ function registerStarcatcherFoodData(event) {
 				food.decayModifier(3);
 			});
 
-			event.foodItem(`tfg:food/cooked_${fish}`, (food) => {
+			event.foodItem(`tfg:food/cooked_fish/cooked_${fish}`, (food) => {
 				food.hunger(4);
 				food.saturation(1);
 				food.protein(2);
@@ -109,7 +109,7 @@ function registerStarcatcherFoodData(event) {
 				food.decayModifier(1.5);
 			});
 
-			event.foodItem(`tfg:food/cooked_${fish}`, (food) => {
+			event.foodItem(`tfg:food/cooked_fish/cooked_${fish}`, (food) => {
 				food.hunger(4);
 				food.saturation(4);
 				food.protein(6);
