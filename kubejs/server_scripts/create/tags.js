@@ -1,201 +1,177 @@
 // priority: 0
 "use strict";
 
-const registerCreateItemTags = (event) => {
+//#region items
+ServerEvents.tags('item', event => {
+	/*
+	*	How to use:
+	*	'target_tag':  //this is the tag you're adding items/blocks/fluids to
+	*		['item_1', 'item_2', 'item_3'] //the items you're adding to the tag go here
+	*
+	*    ммм ну типа вот как это всё работает:
+	*    'target_tag':  //прикинь, это тег, в него добавляют предметы жижи или другой мусор
+	*        ['item_1', 'item_2', 'item_3'] //твой мусор
+	*/
+    const itemTagAdditions = {
+        'curios:face':
+            ['create:goggles'],
 
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
+        'tfg:metal_bars':
+            ['create:andesite_bars', 'create:brass_bars', 'create:copper_bars'],
 
-	// Face curio slot for goggles
-	event.remove("curios:head", "create:goggles")
-	event.add("curios:face", "create:goggles")
+        'create:blaze_burner_fuel/regular':
+            ['gtceu:poor_raw_coal', 'gtceu:coal_dust', 'gtceu:charcoal_dust', 'gtceu:raw_coal',
+            'gtceu:rich_raw_coal', 'gtceu:flawed_coal_gem', 'gtceu:chipped_coal_gem', 'gtceu:pure_coal_dust'],
 
-	// This is greate's fault
-	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
-	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')
-	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_gold')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_copper')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_zinc')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_tin')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_silver')
-	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_lead')
-	event.remove('c:hidden_from_recipe_viewers', 'create:powdered_obsidian')
+        'create:blaze_burner_fuel/special':
+            ['gtceu:flawless_coal_gem', 'gtceu:exquisite_coal_gem', 'gtceu:coke_gem', 'beneath:cursecoal'],
 
-	// Create metal bars weren't metal bars :(
-	event.add('tfg:metal_bars', 'create:andesite_bars')
-	event.add('tfg:metal_bars', 'create:brass_bars')
-	event.add('tfg:metal_bars', 'create:copper_bars')
+        'create:non_movable':
+            ['gtceu:wood_crate', '#create:toolboxes', 'tfg:spice', 'tfg:geyser_source',
+            'tfg:geyser_source_small', '#tfc:can_landslide'],
 
-	// Тэги для ручек и сидушек
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
+        'forge:smooth_stone_slab':
+            ['create:polished_cut_granite_slab', 'create:polished_cut_diorite_slab', 'create:polished_cut_andesite_slab',
+            'create:polished_cut_calcite_slab', 'create:polished_cut_dripstone_slab', 'create:polished_cut_deepslate_slab',
+            'create:polished_cut_tuff_slab', 'create:polished_cut_limestone_slab', 'create:polished_cut_asurine_slab',
+            'create:polished_cut_crimsite_slab', 'create:polished_cut_ochrum_slab', 'create:polished_cut_scoria_slab',
+            'create:polished_cut_scorchia_slab', 'create:polished_cut_veridium_slab']
+    };
 
-		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
-	})
+    const itemTagRemovals = {
+        'curios:head':
+            ['create:goggles'],
 
-	event.removeAll('create:crushed_raw_materials')
+        'c:hidden_from_recipe_viewers':
+            ['create:copper_sheet', 'create:brass_sheet', 'create:golden_sheet', 'create:crushed_raw_gold',
+            'create:crushed_raw_copper', 'create:crushed_raw_zinc', 'create:crushed_raw_tin',
+            'create:crushed_raw_silver', 'create:crushed_raw_lead', 'create:powdered_obsidian'],
 
-	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:charcoal_dust")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:raw_coal")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:rich_raw_coal")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:flawed_coal_gem")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:chipped_coal_gem")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:pure_coal_dust")
+        'create:stone_types/deepslate':
+            ['minecraft:deepslate'],
 
-	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
-	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
-	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
-	event.add('create:blaze_burner_fuel/special', "beneath:cursecoal")
+        'create:stone_types/dripstone':
+            ['minecraft:dripstone_block'],
 
-	event.add('create:non_movable', 'gtceu:wood_crate')
-	event.add('create:non_movable', 'gtceu:bronze_crate')
-	event.add('create:non_movable', 'gtceu:black_bronze_crate')
-	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
-	event.add('create:non_movable', 'gtceu:steel_crate')
-	event.add('create:non_movable', 'gtceu:aluminium_crate')
-	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
-	event.add('create:non_movable', 'gtceu:titanium_crate')
-	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
-	event.add('create:non_movable', '#create:toolboxes')
-	event.add('create:non_movable', 'gtceu:ulv_super_chest')
-	event.add('create:non_movable', 'gtceu:lv_super_chest')
-	event.add('create:non_movable', 'gtceu:mv_super_chest')
-	event.add('create:non_movable', 'gtceu:hv_super_chest')
-	event.add('create:non_movable', 'gtceu:ev_super_chest')
-	event.add('create:non_movable', 'gtceu:iv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:luv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:zpm_quantum_chest')
-	event.add('create:non_movable', 'gtceu:uv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:uhv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:ulv_super_tank')
-	event.add('create:non_movable', 'gtceu:lv_super_tank')
-	event.add('create:non_movable', 'gtceu:mv_super_tank')
-	event.add('create:non_movable', 'gtceu:hv_super_tank')
-	event.add('create:non_movable', 'gtceu:ev_super_tank')
-	event.add('create:non_movable', 'gtceu:iv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:luv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:zpm_quantum_tank')
-	event.add('create:non_movable', 'gtceu:uv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:uhv_quantum_tank')
-	event.add('create:non_movable', 'tfg:spice')
-	event.add('create:non_movable', 'tfg:geyser_source')
-	event.add('create:non_movable', 'tfg:geyser_source_small')
-	event.add('create:non_movable', '#tfc:can_landslide')
+        'create:stone_types/blackstone':
+            ['minecraft:blackstone']
+    };
 
-	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
-	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
-	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
+    // Remove all crushed raw materials
+    event.removeAll('create:crushed_raw_materials');
 
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_granite_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_diorite_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_andesite_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_calcite_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_dripstone_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_deepslate_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_tuff_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_limestone_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_asurine_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_crimsite_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_ochrum_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_scoria_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_scorchia_slab')
-	event.add('forge:smooth_stone_slab', 'create:polished_cut_veridium_slab')
-}
+    // Add disabled items to hidden from recipe viewers
+    global.CREATE_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item);
+        event.add('c:hidden_from_recipe_viewers', item);
+    });
 
-const registerCreateBlockTags = (event) => {
+    // Add colored valve handles and seats
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`);
+        if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`);
+    });
 
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
+    // Add storage crates, chests, and tanks to non_movable using regex
+    event.add('create:non_movable', /gtceu:.*_crate/);
+    event.add('create:non_movable', /gtceu:.*_chest/);
+    event.add('create:non_movable', /gtceu:.*_tank/);
 
-	// Тэги для ручек и сидушек
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`)
+    // helpers
+    Object.entries(itemTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
 
-		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
-	})
+    Object.entries(itemTagRemovals).forEach(([tag, items]) => {
+        items.forEach(item => event.remove(tag, item));
+    });
 
-	// Disable bulk blasting
-	event.removeAll('create:fan_processing_catalysts/blasting')
-	event.removeAll('create:fan_processing_catalysts/haunting')
+})
+//#endregion
 
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
+//#region blocks
+ServerEvents.tags('block', event => {
 
-	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
-	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
+    const blockTagAdditions = {
+        'create:fan_processing_catalysts/splashing':
+            ['tfc:fluid/river_water', 'tfc:fluid/salt_water', 'tfc:fluid/spring_water', 'tfg:semiheavy_ammoniacal_water'],
 
-	event.removeAll('create:passive_boiler_heaters')
+        'create:chest_mounted_storage':
+            ['#forge:chests/wooden', 'framedblocks:framed_chest'],
 
-	event.remove('create:windmill_sails', 'create:sail_frame')
-	
-	event.add('create:non_movable', 'gtceu:wood_crate')
-	event.add('create:non_movable', 'gtceu:bronze_crate')
-	event.add('create:non_movable', 'gtceu:black_bronze_crate')
-	event.add('create:non_movable', 'gtceu:bismuth_bronze_crate')
-	event.add('create:non_movable', 'gtceu:steel_crate')
-	event.add('create:non_movable', 'gtceu:aluminium_crate')
-	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
-	event.add('create:non_movable', 'gtceu:titanium_crate')
-	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
-	event.add('create:non_movable', '#create:toolboxes')
-	event.add('create:non_movable', 'gtceu:ulv_super_chest')
-	event.add('create:non_movable', 'gtceu:lv_super_chest')
-	event.add('create:non_movable', 'gtceu:mv_super_chest')
-	event.add('create:non_movable', 'gtceu:hv_super_chest')
-	event.add('create:non_movable', 'gtceu:ev_super_chest')
-	event.add('create:non_movable', 'gtceu:iv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:luv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:zpm_quantum_chest')
-	event.add('create:non_movable', 'gtceu:uv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:uhv_quantum_chest')
-	event.add('create:non_movable', 'gtceu:ulv_super_tank')
-	event.add('create:non_movable', 'gtceu:lv_super_tank')
-	event.add('create:non_movable', 'gtceu:mv_super_tank')
-	event.add('create:non_movable', 'gtceu:hv_super_tank')
-	event.add('create:non_movable', 'gtceu:ev_super_tank')
-	event.add('create:non_movable', 'gtceu:iv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:luv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:zpm_quantum_tank')
-	event.add('create:non_movable', 'gtceu:uv_quantum_tank')
-	event.add('create:non_movable', 'gtceu:uhv_quantum_tank')
-	event.add('create:non_movable', 'tfg:spice')
-	event.add('create:non_movable', 'tfg:geyser_source')
-	event.add('create:non_movable', 'tfg:geyser_source_small')
-}
+        'create:non_movable':
+            ['gtceu:wood_crate', '#create:toolboxes', 'tfg:spice', 'tfg:geyser_source', 'tfg:geyser_source_small']
+    };
 
+    const blockTagRemovals = {
+        'create:windmill_sails':
+            ['create:sail_frame']
+    };
 
-const registerCreateFluidTags = (event) => {
+    // Remove all passive boiler heaters, blasting, and haunting catalysts
+    event.removeAll('create:passive_boiler_heaters');
+    event.removeAll('create:fan_processing_catalysts/blasting');
+    event.removeAll('create:fan_processing_catalysts/haunting');
 
-	//Hose Pulley Infinites
-	event.add('create:bottomless/allow', 'tfc:fresh_water')
-	event.add('create:bottomless/allow', 'tfc:salt_water')
-	event.add('create:bottomless/allow', 'tfg:semiheavy_ammoniacal_water')
-	event.remove('create:bottomless/allow', 'minecraft:lava')
+    // Remove disabled blocks
+    global.CREATE_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item);
+    });
 
-	// Добавляем тег для скрытия в EMI
-	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
-	event.add('c:hidden_from_recipe_viewers', 'create:honey')
-	event.add('c:hidden_from_recipe_viewers', 'create:builders_tea')
-	event.add('c:hidden_from_recipe_viewers', 'create:potion')
+    // Add colored valve handles and seats
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.add('tfg:colored_valve_handles', `create:${dye}_valve_handle`);
+        if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`);
+    });
 
-	// Disable bulk blasting
-	event.removeAll('create:fan_processing_catalysts/blasting')
-	event.removeAll('create:fan_processing_catalysts/haunting')
-	
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
-}
+    // Add storage crates, chests, and tanks to non_movable using regex
+    event.add('create:non_movable', /gtceu:.*_crate/);
+    event.add('create:non_movable', /gtceu:.*_chest/);
+    event.add('create:non_movable', /gtceu:.*_tank/);
+
+    // helpers
+    Object.entries(blockTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+
+    Object.entries(blockTagRemovals).forEach(([tag, items]) => {
+        items.forEach(item => event.remove(tag, item));
+    });
+
+})
+//#endregion
+
+//#region fluids
+ServerEvents.tags('fluid', event => {
+
+    const fluidTagAdditions = {
+        'create:bottomless/allow':
+            ['tfc:fresh_water', 'tfc:salt_water', 'tfg:semiheavy_ammoniacal_water'],
+
+        'c:hidden_from_recipe_viewers':
+            ['create:chocolate', 'create:honey', 'create:builders_tea', 'create:potion'],
+
+        'create:fan_processing_catalysts/splashing':
+            ['tfc:river_water', 'tfc:salt_water', 'tfc:spring_water', 'tfg:semiheavy_ammoniacal_water']
+    };
+
+    const fluidTagRemovals = {
+        'create:bottomless/allow':
+            ['minecraft:lava']
+    };
+
+    // Remove all blasting and haunting catalysts
+    event.removeAll('create:fan_processing_catalysts/blasting');
+    event.removeAll('create:fan_processing_catalysts/haunting');
+
+    // helpers
+    Object.entries(fluidTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+
+    Object.entries(fluidTagRemovals).forEach(([tag, items]) => {
+        items.forEach(item => event.remove(tag, item));
+    });
+
+})
+//#endregion
