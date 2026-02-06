@@ -13,6 +13,10 @@ function registerGTCEUItemTags(event) {
         event.add("c:hidden_from_recipe_viewers", item);
     });
 
+    // Face curio slot for mask
+	event.remove("curios:head", "gtceu:face_mask")
+    event.add("curios:face", "gtceu:face_mask")
+
     // Добавление тега EMI для скрытия всех руд
     event.add("c:hidden_from_recipe_viewers", "#forge:ores");
 
