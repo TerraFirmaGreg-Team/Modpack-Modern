@@ -1,237 +1,250 @@
-﻿"use strict";
+"use strict";
 
-const registerTFGItemTags = (event) => {
+//#region items
+ServerEvents.tags('item', event => {
 
-	registerTFGTrimItemTags(event)
-	registerTFGFacadeWhitelistItemTags(event)
-	registerTFGStoneItemTags(event)
-	registerTFGFoodItemTags(event);
-	registerTFGMedicineItemTags(event);
-	registerTFGPrimitiveItemTags(event)
-	registerTFGEquipmentItemTags(event);
-	registerTFGRailgunItemTags(event)
-	registerTFGRocketItemTags(event)
-	registerTFGGeneralWorldgenItemTags(event);
-	registerTFGBeneathItemTags(event)
-	registerTFGMoonItemTags(event)
-	registerTFGMarsItemTags(event)
-	registerTFGVenusItemTags(event)
-	registerTFGAquaponicsItemTags(event)
+    registerTFGTrimItemTags(event);
+    registerTFGFacadeWhitelistItemTags(event);
+    registerTFGStoneItemTags(event);
+    registerTFGFoodItemTags(event);
+    registerTFGMedicineItemTags(event);
+    registerTFGPrimitiveItemTags(event);
+    registerTFGEquipmentItemTags(event);
+    registerTFGRailgunItemTags(event);
+    registerTFGRocketItemTags(event);
+    registerTFGGeneralWorldgenItemTags(event);
+    registerTFGBeneathItemTags(event);
+    registerTFGMoonItemTags(event);
+    registerTFGMarsItemTags(event);
+    registerTFGVenusItemTags(event);
+    registerTFGAquaponicsItemTags(event);
 
-	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
-	event.remove('tfc:foods', 'tfc_gourmet:havai_pizza')
+	/*
+	*   How to use:
+	*	'target_tag':  //this is the tag you're adding items/blocks/fluids to
+	*		['item_1', 'item_2', 'item_3'] //the items you're adding to the tag go here
+	*/
+    const itemTagAdditions = {
+        'tfg:components/uv_leds':
+            ['tfg:uv_led', 'tfg:smd_uv_led'],
 
-	//Circuit Stuff
-	event.add('tfg:components/uv_leds', 'tfg:uv_led')
-	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
+        'tfg:platinum_ore_group':
+            ['gtceu:purified_pentlandite_ore', 'gtceu:purified_chalcopyrite_ore', 
+            'gtceu:purified_tetrahedrite_ore', 'gtceu:purified_bornite_ore',
+            'gtceu:purified_cooperite_ore', 'gtceu:purified_chalcocite_ore'],
 
-	// Platline
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
+        'tfg:any_bronze_crate':
+            ['gtceu:bronze_crate', 'gtceu:black_bronze_crate', 'gtceu:bismuth_bronze_crate'],
 
-	//Bronze Crates & Drums
-	event.add('tfg:any_bronze_crate', 'gtceu:bronze_crate')
-	event.add('tfg:any_bronze_crate', 'gtceu:black_bronze_crate')
-	event.add('tfg:any_bronze_crate', 'gtceu:bismuth_bronze_crate')
-	event.add('tfg:any_bronze_drum', 'gtceu:bronze_drum')
-	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
-	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
+        'tfg:any_bronze_drum':
+            ['gtceu:bronze_drum', 'gtceu:black_bronze_drum', 'gtceu:bismuth_bronze_drum'],
 
-	//#region Tools
-	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
-	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
+        'tfg:empty_dna_syringes':
+            ['tfg:empty_dna_syringe', 'tfg:clean_dna_syringe'],
 
-	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
-	
-	//#endregion
+        'tfc:sewing_needles':
+            ['tfg:stainless_steel_needle'],
 
-	// Airplane Upgrades
-	global.AIRCRAFT_UPGRADES.forEach(value => {
-		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
-	})
+        'tfg:aluminium_oxide':
+            ['#forge:dusts/bauxite', '#forge:dusts/sapphire', '#forge:dusts/green_sapphire'],
 
-	// Universal Circuits
-	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
-		event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
-	})
+        'tfg:any_iron_double_ingot':
+            ['#forge:double_ingots/iron', '#forge:double_ingots/wrought_iron'],
 
-	// Crafting components
-	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
-	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
-	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
+        'tfg:any_bronze_frame':
+            ['#forge:frames/bronze', '#forge:frames/bismuth_bronze', '#forge:frames/black_bronze'],
 
-	// Use either cast or wrought iron
-	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
-	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/wrought_iron')
+        'forge:rods/any_bronze':
+            ['#forge:rods/bronze', '#forge:rods/bismuth_bronze', '#forge:rods/black_bronze'],
 
-	// Allow any bronze type
-	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
-	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
-	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
-	
-	event.add('forge:rods/any_bronze', '#forge:rods/bronze')
-	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
-	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
+        'forge:screws/any_bronze':
+            ['#forge:screws/bronze', '#forge:screws/bismuth_bronze', '#forge:screws/black_bronze'],
 
-	event.add('forge:screws/any_bronze', '#forge:screws/bronze')
-	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
-	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
-	
-	// Steam Bloomery
-    event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
-    event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
-		
-	//#region holder materials
-	event.remove('forge:dusts', 'tfg:nitrocellulose')
-	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
-	
-	event.remove('forge:dusts', 'tfg:cellulose_matrix')
-	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
-	
-	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
-	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
-	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
-	
-	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
-	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
-	//#endregion
-}
+        'tfg:bloomery_basic_fuels':
+            ['minecraft:coal', 'minecraft:charcoal', 'gtceu:rich_raw_coal', 
+            'gtceu:raw_coal', 'gtceu:poor_raw_coal']
+    };
 
-//#region Blocks
-const registerTFGBlockTags = (event) => {
+    const itemTagRemovals = {
+        'tfc:foods':
+            ['tfc_gourmet:havai_pizza'],
 
-	registerTFGPrimitiveBlockTags(event)
-	registerTFGFoodBlockTags(event)
-	registerTFGStoneBlockTags(event)
-	registerTFGGeneralWorldgenBlockTags(event)
-	registerTFGBeneathBlockTags(event)
-	registerTFGMoonBlockTags(event)
-	registerTFGMarsBlockTags(event)
-	registerTFGVenusBlockTags(event)
-	registerTFGAquaponicsBlockTags(event)
+        'forge:dusts':
+            ['tfg:nitrocellulose', 'tfg:cellulose_matrix'],
 
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
-	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
-	event.add('minecraft:mineable/pickaxe', 'tfg:reflector')
-	event.add('minecraft:mineable/pickaxe', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
-	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
-	event.add('forge:mineable/wrench', 'tfg:reflector')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
+        'forge:dusts/nitrocellulose':
+            ['tfg:nitrocellulose'],
 
-	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('minecraft:ice', 'tfg:mars_ice')
-	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-	event.add('minecraft:ice', 'tfg:dry_ice')
-}
+        'forge:dusts/cellulose_matrix':
+            ['tfg:cellulose_matrix'],
+
+        'tfc:pileable_ingots':
+            ['tfg:polycaprolactam_fabric'],
+
+        'forge:ingots':
+            ['tfg:polycaprolactam_fabric'],
+
+        'forge:ingots/tfg_polycaprolactam':
+            ['tfg:polycaprolactam_fabric'],
+
+        'forge:nuggets':
+            ['tfg:polycaprolactam_string'],
+
+        'forge:nuggets/tfg_polycaprolactam':
+            ['tfg:polycaprolactam_string']
+    };
+
+    // Add aircraft upgrades dynamically
+    global.AIRCRAFT_UPGRADES.forEach(value => {
+        event.add('immersive_aircraft:upgrades', `tfg:${value}`);
+    });
+
+    // Add universal circuits dynamically
+    global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+        event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+    });
+
+    // helpers
+    Object.entries(itemTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+
+    Object.entries(itemTagRemovals).forEach(([tag, items]) => {
+        items.forEach(item => event.remove(tag, item));
+    });
+
+})
 //#endregion
 
-//#region Fluids
-const registerTFGFluidTags = (event) => {
+//#region blocks
+ServerEvents.tags('block', event => {
 
-	registerTFGAquaponicsFluidTags(event)
-	registerTFGPrimitiveFluidTags(event)
+    registerTFGPrimitiveBlockTags(event);
+    registerTFGFoodBlockTags(event);
+    registerTFGStoneBlockTags(event);
+    registerTFGGeneralWorldgenBlockTags(event);
+    registerTFGBeneathBlockTags(event);
+    registerTFGMoonBlockTags(event);
+    registerTFGMarsBlockTags(event);
+    registerTFGVenusBlockTags(event);
+    registerTFGAquaponicsBlockTags(event);
 
-	event.add('tfg:clean_water', 'minecraft:water')
-	event.add('tfg:clean_water', 'tfc:river_water')
-	event.add('tfg:clean_water', 'tfc:spring_water')
+    const blockTagAdditions = {
+        'minecraft:mineable/pickaxe':
+            ['tfg:superconductor_coil_large', 'tfg:superconductor_coil_small', 
+            'tfg:electromagnetic_accelerator', 'tfg:reflector',
+            'tfg:machine_casing_aluminium_plated_steel', 'tfg:mars_ice', 'tfg:dry_ice'],
 
-	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:drinkables', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
-	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
-	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
-	
-	event.add('tfc:any_water', 'tfg:semiheavy_water')
-	event.add('tfc:hydrating', 'tfg:semiheavy_water')
-	event.add('tfc:drinkables', 'tfg:semiheavy_water')
-	event.add('tfc:any_drinkables', 'tfg:semiheavy_water')
-	event.add('tfc:ingredients', 'tfg:semiheavy_water')
-	event.add('minecraft:water', 'tfg:semiheavy_water')
+        'forge:mineable/wrench':
+            ['tfg:superconductor_coil_large', 'tfg:superconductor_coil_small',
+            'tfg:electromagnetic_accelerator', 'tfg:reflector',
+            'tfg:machine_casing_aluminium_plated_steel', 'tfg:machine_casing_power_casing'],
 
-	event.add('tfc:drinkables', 'tfg:proto_growth_medium')
-	event.add('tfc:any_drinkables', 'tfg:proto_growth_medium')
+        'tfcambiental:cold_stuff':
+            ['tfg:mars_ice', 'tfg:dry_ice'],
 
-	event.add('tfc:drinkables', 'tfg:brown_gravy')
-	event.add('tfc:any_drinkables', 'tfg:brown_gravy')
+        'minecraft:ice':
+            ['tfg:mars_ice', 'tfg:dry_ice']
+    };
 
-	event.add('minecraft:water', 'tfg:rich_stock')
-	event.add('tfc:drinkables', 'tfg:rich_stock')
-	event.add('tfc:any_drinkables', 'tfg:rich_stock')
-	
-	event.add('minecraft:water', 'tfg:light_stock')
-	event.add('tfc:drinkables', 'tfg:light_stock')
-	event.add('tfc:any_drinkables', 'tfg:light_stock')
+    // helpers
+    Object.entries(blockTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
 
-	event.add('tfc:drinkables', 'gtceu:ethanol')
-	event.add('tfc:any_drinkables', 'gtceu:ethanol')
-	event.add('tfc:drinkables', 'gtceu:methanol')
-	event.add('tfc:any_drinkables', 'gtceu:methanol')
-	event.add('tfc:drinkables', 'gtceu:concrete')
-	event.add('tfc:any_drinkables', 'gtceu:concrete')
-	event.add('tfc:drinkables', 'rnr:concrete')
-	event.add('tfc:any_drinkables', 'gtceu:concrete')
-	
-	event.add('tfc:drinkables', 'gtceu:ice')
-	event.add('tfc:any_drinkables', 'gtceu:ice')
-
-	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
-		event.add('tfg:breathable_compressed_air', x)
-	})
-	
-	// Platline tags
-	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
-	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')
-}
+})
 //#endregion
 
+//#region fluids
+ServerEvents.tags('fluid', event => {
 
-const registerTFGBiomeTags = (event) => {
-	registerTFGOverworldBiomeTags(event)
-	registerTFGBeneathBiomeTags(event)
-	registerTFGMoonBiomeTags(event)
-	registerTFGMarsBiomeTags(event)
-	registerTFGVenusBiomeTags(event)
-}
+    registerTFGAquaponicsFluidTags(event);
+    registerTFGPrimitiveFluidTags(event);
 
-function registerTFGConfiguredFeatures(event) {
-	registerTFGForestConfiguredFeatures(event)
-}
+    const fluidTagAdditions = {
+        'tfg:clean_water':
+            ['minecraft:water', 'tfc:river_water', 'tfc:spring_water'],
 
-const registerTFGPlacedFeatures = (event) => {
-	registerTFGOreVeinFeatures(event);
+        'tfc:any_water':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water'],
 
-	registerTFGOverworldPlacedFeatures(event);
-	registerTFGBeneathPlacedFeatures(event);
-	registerTFGMoonPlacedFeatures(event);
-	registerTFGMarsPlacedFeatures(event);
-	registerTFGVenusPlacedFeatures(event);
-	registerTFGEuropaPlacedFeatures(event);
-}
+        'tfc:hydrating':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water'],
 
-const registerTFGEntityTypeTags = (event) => {
+        'tfc:drinkables':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water', 'tfg:proto_growth_medium',
+            'tfg:brown_gravy', 'tfg:rich_stock', 'tfg:light_stock', 'gtceu:ethanol',
+            'gtceu:methanol', 'gtceu:concrete', 'rnr:concrete', 'gtceu:ice'],
 
-	registerTFGMoonEntityTypeTags(event)
-	registerTFGMarsEntityTypeTags(event)
-	registerTFGVenusEntityTypeTags(event)
-	registerTFGEuropaEntityTypeTags(event)
+        'tfc:any_drinkables':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water', 'tfg:proto_growth_medium',
+            'tfg:brown_gravy', 'tfg:rich_stock', 'tfg:light_stock', 'gtceu:ethanol',
+            'gtceu:methanol', 'gtceu:concrete', 'gtceu:ice'],
 
-	event.add('tfg:ignores_gravity', 'firmalife:bee')
-	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
-	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
-	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
-	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
-}
+        'tfc:ingredients':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water'],
+
+        'minecraft:water':
+            ['tfg:semiheavy_ammoniacal_water', 'tfg:semiheavy_water', 'tfg:rich_stock', 'tfg:light_stock'],
+
+        'tfg:sulfuric_metal_solution':
+            ['gtceu:sulfuric_copper_solution', 'gtceu:sulfuric_nickel_solution']
+    };
+
+    // Add breathable compressed airs dynamically
+    global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
+        event.add('tfg:breathable_compressed_air', x);
+    });
+
+    // helpers
+    Object.entries(fluidTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+
+})
+//#endregion
+
+ServerEvents.tags('worldgen/biome', event => {
+    registerTFGOverworldBiomeTags(event);
+    registerTFGBeneathBiomeTags(event);
+    registerTFGMoonBiomeTags(event);
+    registerTFGMarsBiomeTags(event);
+    registerTFGVenusBiomeTags(event);
+})
+
+ServerEvents.tags('worldgen/configured_feature', event => {
+    registerTFGForestConfiguredFeatures(event);
+})
+
+ServerEvents.tags('worldgen/placed_feature', event => {
+    registerTFGOreVeinFeatures(event);
+    registerTFGOverworldPlacedFeatures(event);
+    registerTFGBeneathPlacedFeatures(event);
+    registerTFGMoonPlacedFeatures(event);
+    registerTFGMarsPlacedFeatures(event);
+    registerTFGVenusPlacedFeatures(event);
+    registerTFGEuropaPlacedFeatures(event);
+})
+
+ServerEvents.tags('entity_type', event => {
+
+    registerTFGMoonEntityTypeTags(event);
+    registerTFGMarsEntityTypeTags(event);
+    registerTFGVenusEntityTypeTags(event);
+    registerTFGEuropaEntityTypeTags(event);
+
+    const entityTagAdditions = {
+        'tfg:ignores_gravity':
+            ['firmalife:bee'],
+
+        'ad_astra:can_survive_in_space':
+            ['railways:conductor', 'endermanoverhaul:pet_enderman', 
+            'endermanoverhaul:axolotl_pet_enderman', 'endermanoverhaul:hammerhead_pet_enderman']
+    };
+
+    // helpers
+    Object.entries(entityTagAdditions).forEach(([tag, items]) => {
+        items.forEach(item => event.add(tag, item));
+    });
+
+})
