@@ -17,7 +17,7 @@ function registerTFGWoodRecipes(event) {
 
 	event.recipes.greate.splashing(
 		[Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)],
-		['tfc:torch', JsonIO.of({ amount: 100, value: { tag: 'tfg:clean_water' }})]
+		['tfc:torch', Fluid.of('minecraft:water', 100)]
 	)
 	.recipeTier(0)
 	.id('tfg:splashing/wash_torch')
