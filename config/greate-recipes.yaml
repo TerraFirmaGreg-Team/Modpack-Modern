@@ -13,6 +13,15 @@ useCreateItemsInRecipes: false
 # [WARNING]: This will not cover every single recipe conflict, only common conflicts (like components (plates/sheets)), or ore processing conflicts.
 disableConflictingRecipes: true
 
+# Should tiered encased fans process item entities?
+processItemEntitiesWithFan: false
+
+# Should recipes that cannot be removed be logged?
+logUnremovableRecipes: true
+
+# "Multiplier used for calculating how many ticks should initially be removed in fan processing recipes, based on how fast the fan is spinning."
+fanSpeedMultiplier: 0.5
+
 # Recipe types that should not be copied to Greate machines. Ex. 'gtceu:macerator' for macerator recipes
 ignoredRecipeTypes:
   - gtceu:ore_washer
