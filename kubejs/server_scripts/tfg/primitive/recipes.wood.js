@@ -15,9 +15,13 @@ function registerTFGWoodRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
-		.id('tfg:splashing/wash_torch')
-		
+	event.recipes.greate.splashing(
+		[Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)],
+		['tfc:torch', Fluid.of('minecraft:water', 100)]
+	)
+	.recipeTier(0)
+	.id('tfg:splashing/wash_torch')
+
 	// Just a dummy recipe to tell people they can get wood ash by throwing torches in water via TFC
 	event.custom({
 		type: "ae2:transform",
