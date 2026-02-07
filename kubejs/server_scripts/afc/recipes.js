@@ -24,105 +24,6 @@ const registerAFCRecipes = (event) => {
 
 	// #endregion
 
-	// #region Wood crafts
-
-	global.AFC_WOOD_TYPES.forEach(wood => {
-		event.remove({ id: `afc:crafting/wood/${wood}_axle` })
-		event.remove({ id: `afc:crafting/wood/${wood}_bladed_axle` })
-		event.remove({ id: `afc:crafting/wood/${wood}_encased_axle` })
-		event.remove({ id: `afc:crafting/wood/${wood}_clutch` })
-		event.remove({ id: `afc:crafting/wood/${wood}_gear_box` })
-		event.remove({ id: `afc:crafting/wood/${wood}_water_wheel` })
-
-		// Бревна -> Пиломатериалы
-		generateCutterRecipe(event, `#afc:${wood}_logs`, `16x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_log`)
-
-		// Доски -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}`, `4x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_planks`)
-
-		// Ступень -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_stairs`, `3x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_stairs`)
-
-
-		// Плита -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_slab`, `2x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_slab`)
-
-
-
-		// ? -> Деревянная нажимная пластина
-		event.shaped(`afc:wood/planks/${wood}_pressure_plate`, [
-			' B ',
-			'CDC',
-			' E '
-		], {
-			B: '#tfc:hammers',
-			C: `afc:wood/planks/${wood}_slab`,
-			D: '#forge:small_springs',
-			E: '#forge:tools/screwdrivers'
-		}).id(`afc:crafting/wood/${wood}_pressure_plate`)
-
-		event.recipes.gtceu.assembler(`${wood}_pressure_plate`)
-			.itemInputs('#forge:small_springs', `2x afc:wood/planks/${wood}_slab`)
-			.circuit(3)
-			.itemOutputs(`2x afc:wood/planks/${wood}_pressure_plate`)
-			.duration(50)
-			.EUt(2)
-
-		// ? -> Деревянная кнопка
-		event.remove({ id: `afc:crafting/wood/${wood}_button` })
-
-		event.shapeless(`3x afc:wood/planks/${wood}_button`, [`afc:wood/planks/${wood}_pressure_plate`, '#forge:tools/saws'])
-			.id(`tfg:shapeless/saw_${wood}_pressure_plate_to_button`)
-
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
-
-		//Stomping Barrel
-		event.remove({ id: `afc:crafting/wood/${wood}_stomping_barrel` })
-
-		event.shaped(`afc:wood/stomping_barrel/${wood}`, [
-			'ABA',
-			'AAA',
-			'BBB'
-		], {
-			A: `afc:wood/lumber/${wood}`,
-			B: 'tfc:glue'
-
-		}).id(`afc:crafting/wood/${wood}_stomping_barrel`)
-
-		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
-			.itemInputs(`afc:wood/log/${wood}`)
-			.itemOutputs(`afc:wood/stripped_log/${wood}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
-			.itemInputs(`afc:wood/wood/${wood}`)
-			.itemOutputs(`afc:wood/stripped_wood/${wood}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_log/${wood}`, `afc:wood/log/${wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${wood}_log`)
-
-		event.recipes.vintageimprovements.polishing(`afc:wood/stripped_wood/${wood}`, `afc:wood/wood/${wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${wood}_wood`)
-	});
-
-	global.AFC_SAPLINGS.forEach(wood => {
-		event.shaped(`4x afc:wood/fallen_leaves/${wood.sapling}`,[
-			'AA',
-			'AA'
-		], {
-			A: `afc:wood/leaves/${wood.sapling}`
-		}).id(`tfg:shaped/afc/${wood.sapling}_leaves_to_fallen_leaves`);
-	});
-
-	// #endregion
-
 	event.recipes.tfc.anvil('afc:tree_tap', '#forge:ingots/copper', ["hit_last", "upset_second_last", "upset_third_last"])
 		.tier(1)
 		.bonus(false)
@@ -239,7 +140,6 @@ const registerAFCRecipes = (event) => {
 		.duration(20 * 35)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-
 	event.recipes.gtceu.fluid_solidifier('maple_syrup')
 		.inputFluids(Fluid.of('afc:maple_syrup', 100))
 		.itemOutputs('afc:maple_sugar')
@@ -267,77 +167,12 @@ const registerAFCRecipes = (event) => {
 		.outputItem('afc:birch_sugar')
 		.id('tfg:barrel/birch_syrup_to_sugar')
 
-	const MORE_STRIPPING = [
-		{ wood: 'black_oak', stripped: 'oak', stripped_mod: 'tfc' },
-		{ wood: 'rainbow_eucalyptus', stripped: 'eucalyptus', stripped_mod: 'afc' },
-		{ wood: 'gum_arabic', stripped: 'acacia', stripped_mod: 'tfc' },
-		{ wood: 'redcedar', stripped: 'cypress', stripped_mod: 'afc' },
-		{ wood: 'rubber_fig', stripped: 'fig', stripped_mod: 'afc' },
-		{ wood: 'poplar', stripped: 'aspen', stripped_mod: 'tfc' }
-	];
-
-	MORE_STRIPPING.forEach(x => {
-		event.recipes.gtceu.lathe(`tfg:stripping_${x.wood}_log`)
-			.itemInputs(`afc:wood/log/${x.wood}`)
-			.itemOutputs(`${x.stripped_mod}:wood/stripped_log/${x.stripped}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.gtceu.lathe(`tfg:stripping_${x.wood}_wood`)
-			.itemInputs(`afc:wood/wood/${x.wood}`)
-			.itemOutputs(`${x.stripped_mod}:wood/stripped_wood/${x.stripped}`)
-			.duration(50)
-			.EUt(2)
-
-		event.recipes.vintageimprovements.polishing(`${x.stripped_mod}:wood/stripped_log/${x.stripped}`, `afc:wood/log/${x.wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${x.wood}_log`)
-
-		event.recipes.vintageimprovements.polishing(`${x.stripped_mod}:wood/stripped_wood/${x.stripped}`, `afc:wood/wood/${x.wood}`)
-			.speedLimits(0)
-			.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/lathe/stripping_${x.wood}_wood`)
-	})
-
-	/**
-	 * @property {Array} afcWoodRecyclingIndex - Wood recycling material index.
-	 */
-	const afcWoodRecyclingIndex = [
-		['afc:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
-		['afc:wood/planks/{type}', ['{wood}', 8]],
-		['afc:wood/planks/{type}_door', ['{wood}', 6]],
-		['afc:wood/planks/{type}_trapdoor', ['{wood}', 4]],
-		['afc:wood/planks/{type}_fence', ['{wood}', 4]],
-		['afc:wood/planks/{type}_log_fence', ['{wood}', 8]],
-		['afc:wood/planks/{type}_fence_gate', ['{wood}', 8]],
-		['afc:wood/planks/{type}_slab', ['{wood}', 2]],
-		['afc:wood/planks/{type}_stairs', ['{wood}', 3]],
-		['afc:wood/planks/{type}_pressure_plate', ['{wood}', 4]],
-		['afc:wood/planks/{type}_button', ['{wood}', 1]],
-		['afc:wood/chest/{type}', ['{wood}', 16]],
-		['afc:wood/trapped_chest/{type}', ['{wood}', 16, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]]
-	];
-	/**
-	 * @param {Array} materials
-	 * @param {string} woodMaterial
-	 * @return {Array}
-	 */
-	function resolveArgs(materials, woodMaterial) {
-		return materials.map(materials => materials === '{wood}' ? woodMaterial : materials);
-	};
-	global.AFC_HARDWOOD_TYPES.forEach(type => {
-		afcWoodRecyclingIndex.forEach(([template, args]) => {
-			const item = template.replace('{type}', type);
-			const resolvedArgs = resolveArgs(args, GTMaterials.get('hardwood'));
-			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
-		});
-	});
-	global.AFC_SOFTWOOD_TYPES.forEach(type => {
-		afcWoodRecyclingIndex.forEach(([template, args]) => {
-			const item = template.replace('{type}', type);
-			const resolvedArgs = resolveArgs(args, GTMaterials.Wood);
-			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
-		});
-	});
+	global.AFC_SAPLINGS.forEach(wood => {
+		event.shaped(`4x afc:wood/fallen_leaves/${wood.sapling}`,[
+			'AA',
+			'AA'
+		], {
+			A: `afc:wood/leaves/${wood.sapling}`
+		}).id(`tfg:shaped/afc/${wood.sapling}_leaves_to_fallen_leaves`);
+	});		
 }
