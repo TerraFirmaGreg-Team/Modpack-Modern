@@ -52,7 +52,7 @@ const registerTFGEtchingMaterials = (event) => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('tfg:p_toluenesulfonic_acid')
-        .liquid(new GTFluidBuilder().temperature(293))
+        .liquid(new GTFluidBuilder().temperature(293).attribute(GTFluidAttributes.ACID))
         .components('7x carbon', '8x hydrogen', '3x oxygen', '1x sulfur')
         .color(0x872B0B)
         .secondaryColor(0x501A06)
@@ -65,5 +65,5 @@ const registerTFGEtchingMaterials = (event) => {
         .color(0xCBF7FF)
         .secondaryColor(0xB7CFFF)    
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        //#endregion
+    //#endregion
 }
