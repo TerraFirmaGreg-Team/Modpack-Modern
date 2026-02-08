@@ -6,7 +6,7 @@
         {
             "type": "patchouli:text",
             "title": "外星动物",
-            "text": "太空是许多其他动物的家园，你不会在地球上找到它们。少数动物是敌对的，会攻击玩家，但大多数是友好的。它们只有一小部分可以像地球上的牲畜一样$(l:mechanics/animal_husbandry)驯化$()。$(br)你在其他星球上发现的动物可以分为两类：$(item)热栖$()和$(item)冷栖$()。动物只能在气候与其母行星相似的行星上生存，或者在像地球这样的$(thing)温和$()的行星上生存。"
+            "text": "太空是许多其他动物的家园，你不会在地球上找到它们。少数动物是敌对的，会攻击玩家，但大多数是友好的。它们只有一小部分可以$(l:mechanics/animal_husbandry)驯化$()。$(br)你在其他星球上发现的动物可以分为两类：$(item)热栖$()和$(item)冷栖$()。动物只能在气候与其母行星相似的行星上生存，或者在像地球这样的$(thing)温和$()的行星上生存。"
         },
         {
             "type": "patchouli:text",
@@ -108,12 +108,44 @@
             "text": "一只霜原公羊/母羊"
         },
         {
+            "type": "patchouli:text",
+            "title": "窃取兽",
+            "text": "$(thing)窃取兽$()是友好动物，喜欢偷你的东西！攻击它们可以取回物品，或喂食$(item)生鱼$()来驯服它们。$(br2)一旦驯服，你可以将它们背在背上，并为它们装备一个木箱子。按下$(k:key.wan_ancient_beasts.special_ability)$()将其扔出，它们会偷取附近箱子的内容物并带给你。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:snatcher",
+            "scale": 0.35,
+            "name": " ",
+            "text": "一只夺掠兽。"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "驰击兽",
+            "text": "$(thing)冲撞兽$()是半被动型动物。你可以用$(item)任意火星作物$()驯服它们，将其用作战斗型陆地坐骑。$(br2)按下$(k:key.wan_ancient_beasts.special_ability)$()进行头槌攻击，或长按$(item)空格键$()发动冲刺攻击。$(br2)它们也可以装备$(item)可染色的盔甲$()。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:charger",
+            "scale": 0.45,
+            "name": " ",
+            "text": "驰击兽与$(thing)袭击兽$()天生敌对。它们一见面就会互相攻击。"
+        },
+        {
             "type": "patchouli:entity",
             "entity": "wan_ancient_beasts:surfer",
-            "scale": 0.35,
+            "scale": 0.4,
             "offset": 0.2,
             "name": "破浪兽",
             "text": "$(thing)破浪兽$()是半水生友好动物。你可以用$(item)生鱼$()驯服它们来在水下骑乘。它们也可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:soarer",
+            "scale": 0.4,
+            "offset": 1.0,
+            "name": "翱翔鸟",
+            "text": "$(thing)翱翔鸟$()是在-106°C以上发现的友好动物。你可以用$(item)生鱼$()驯服它们作为飞行坐骑。它们也可以食用。"
         },
         {
             "type": "patchouli:entity",
@@ -128,14 +160,6 @@
             "scale": 0.7,
             "name": "贪咀兽",
             "text": "$(thing)贪咀兽$()是有领地范围的$(item)小boss$()捕食者。喂它们肉来阻止它们的回血。它们也可以食用。"
-        },
-        {
-            "type": "patchouli:entity",
-            "entity": "wan_ancient_beasts:soarer",
-            "scale": 0.4,
-            "offset": 1.0,
-            "name": "翱翔鸟",
-            "text": "$(thing)翱翔鸟$()是在-106°C以上发现的友好动物。你可以用$(item)生鱼$()驯服它们作为飞行坐骑。它们也可以食用。"
         },
         {
             "type": "patchouli:entity",
@@ -174,6 +198,13 @@
             "offset": 2.2,
             "name": "巨行兽",
             "text": "巨大的$(thing)巨行兽$()栖息在-97°C以上的区域。它们是友好的，可以食用。"
+        },
+        {
+            "type": "patchouli:entity",
+            "entity": "wan_ancient_beasts:raider",
+            "scale": 0.5,
+            "name": "袭击兽",
+            "text": "$(thing)袭击兽$()是在高于-109°C环境中出现的敌对动物。它们与$(thing)驰击兽$()天生敌对。你可以通过喂食$(item)生肉$()使它们转为中立。"
         },
         {
             "type": "patchouli:entity",

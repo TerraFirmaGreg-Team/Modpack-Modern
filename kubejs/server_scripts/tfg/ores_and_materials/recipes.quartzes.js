@@ -178,5 +178,13 @@ function registerTFGQuartzRecipes(event) {
 		.duration(16 * 20)
 		.EUt(16)
 		.category(GTRecipeCategories.INGOT_MOLDING);
+
+	// Glass vials
+	event.recipes.gtceu.extruder('tfg:glass_vial_from_batch')
+		.itemInputs('#tfc:glass_batches_tier_3')
+		.notConsumable('gtceu:cell_extruder_mold')
+		.itemOutputs("4x gtceu:glass_vial")
+		.duration(6.4 * 20)
+		.EUt(30)
 	//#endregion
 }

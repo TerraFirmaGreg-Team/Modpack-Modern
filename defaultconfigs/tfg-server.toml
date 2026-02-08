@@ -26,7 +26,7 @@
 	can_glide_on_mars = false
 	#
 	#If true, gliders will function in the Ad Astra dimension Venus
-	can_glide_on_venus = false
+	can_glide_on_venus = true
 	#
 	#If true, gliders will function in the Ad Astra dimension Mercury
 	can_glide_on_mercury = false
