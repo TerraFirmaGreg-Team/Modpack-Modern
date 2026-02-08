@@ -1,0 +1,13 @@
+{
+  "ingredient": "tfcagedalcohol:aged_whiskey",
+  "thirst": 15,
+  "intoxication": 2000,
+  "may_drink_when_full": true,
+  "effects": [
+    {
+      "type": "minecraft:haste",
+      "duration": 3200,
+      "amplifier": 1
+    }
+  ]
+}
