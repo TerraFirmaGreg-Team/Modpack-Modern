@@ -260,6 +260,7 @@
   "gtceu.tooltip.machine.ostrum_harvester_3": "§7Для работы требуется буровой раствор.§r",
   "gtceu.tooltip.machine.ostrum_linear_accelerator_1": "§7Бозон Хиггса в сделку не входил.§r",
   "gtceu.tooltip.machine.ostrum_linear_accelerator_2": "§7Разлагает пыль Острума на составляющие. Требует различных жидкостей из ядерной линии.§r",
+  "gtceu.tooltip.machine.ostrum_linear_accelerator_3": "§7Не поддерживает ускорение, используйте §eТепло§r§7 и §eТемпературу§r§7 из соседних §bТепловых батарей§r§7 для работы.§r",
   "gtceu.tooltip.machine.heat_exchanger_1": "§7Нагревание жидкостей с другими горячими жидкостями§r",
   "gtceu.tooltip.machine.heat_exchanger_2": "§7Передает тепло от одной жидкости к другой.§r",
   "gtceu.tooltip.machine.nuclear_fuel_factory_1": "§7Производство особо опасных стержней§r",
