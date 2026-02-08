@@ -22,6 +22,8 @@ If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Moder
 - Fixed pandas not dropping meat @Pyritie
 - Fixed plutonium ores existing @Pyritie
 - Fixed names of non-TFC materials in ingot piles @Ujhik
+- Fixed cricket sounds on mars @Pyritie
+- Added recipe for wooden bracket (#3007) @Pyritie
 ### Translation updates
 - Ukranian @MetEnBouldry
 - German @Enderderschander
