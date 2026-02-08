@@ -1,7 +1,7 @@
 {
     "name": "forest.cold",
     "features": [
-        "tree"
+        "tree_cold"
     ],
     "bad-regions": [
         "rain"
