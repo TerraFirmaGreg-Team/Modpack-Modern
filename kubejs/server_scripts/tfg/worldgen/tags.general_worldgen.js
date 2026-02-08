@@ -96,4 +96,5 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:mineable/pickaxe', 'tfg:halite')
 }

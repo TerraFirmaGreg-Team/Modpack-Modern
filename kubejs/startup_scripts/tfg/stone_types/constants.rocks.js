@@ -499,7 +499,12 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		pillar: 'create:tuff_pillar',
 		pillar2: 'create:layered_tuff',
-		raw: { block: 'minecraft:tuff' },
+		raw: { 
+			block: 'minecraft:tuff',
+			slab: 'tfg:tuff_slab',
+			stair: 'tfg:tuff_stairs',
+			wall: 'tfg:tuff_wall'
+		},
 		stonecutting: [
 			generateForms('tuff', 'create:cut_%s'),
 			generateForms('tuff', 'create:polished_cut_%s'),
