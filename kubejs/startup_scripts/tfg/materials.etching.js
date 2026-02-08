@@ -65,5 +65,5 @@ const registerTFGEtchingMaterials = (event) => {
         .color(0xCBF7FF)
         .secondaryColor(0xB7CFFF)    
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        //#endregion
 }
-

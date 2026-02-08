@@ -3,6 +3,7 @@
 
 function registerTFGEtchingRecipes(event) {
 
+    //#region Redstone Etching Fluids
     event.recipes.gtceu.chemical_bath('tfg:redstone_nitrate')
         .itemInputs(Item.of('minecraft:redstone', 1))
         .inputFluids(Fluid.of('gtceu:nitric_acid', 3000))
@@ -60,5 +61,5 @@ function registerTFGEtchingRecipes(event) {
         .duration(30)
 		.EUt(GTValues.VA[GTValues.HV])
         
-
+    //#endregion
 }
