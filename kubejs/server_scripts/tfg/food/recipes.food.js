@@ -700,7 +700,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Pizza
 
-	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -710,7 +710,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 1,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -720,7 +720,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 2,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],

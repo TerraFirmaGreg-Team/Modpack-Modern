@@ -246,6 +246,7 @@ ServerEvents.recipes(event => {
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
+	registerCreateSoundOfSteamRecipes(event)
 	//registerCreateStockBridgeRecipes(event)
 	registerDeaFissionRecipes(event)
 	registerDiggerHelmetRecipes(event)
