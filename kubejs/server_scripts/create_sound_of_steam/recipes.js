@@ -174,22 +174,6 @@ function registerCreateSoundOfSteamRecipes(event) {
 			.tier(3)
 			.id('tfc:anvil/copper_boot')
 
-
-		//Stop Master
-		event.shaped('pipeorgans:stop_master', [
-			'ABC',
-			'DED',
-			'FGF'
-		], {
-			A: '#forge:tools/wrenches',
-			B: '#forge:tools/screwdrivers',
-			C: '#forge:tools/hammers',
-			D: 'create:transmitter',
-			E: 'minecraft:redstone',
-			F: 'gtceu:wrought_iron_ingot',
-			G: 'create:brass_casing'
-		}).id('pipeorgans:stop_master')
-
 		//Keyboard Relay
 		event.shaped('pipeorgans:keyboard_relay', [
 			'ABC',

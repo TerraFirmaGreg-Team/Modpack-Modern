@@ -534,9 +534,9 @@
 	"ambient.mars_land.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:animals/cicadas/cicadas-mushroom-fields",
+				"name": "ambientsounds:animals/special/special-mushroom-fields",
 				"stream": true,
-				"volume": 0.50
+				"volume": 0.15
 			}
 		]
 	},
@@ -636,11 +636,6 @@
 				"name": "minecraft:ambient/nether/crimson_forest/addition1",
 				"volume": 0.4,
 				"weight": 5
-			},
-			{
-				"name": "ambientsounds:animals/special/special-mushroom-fields",
-				"volume": 0.4,
-				"weight": 20
 			}
 		]
 	},
