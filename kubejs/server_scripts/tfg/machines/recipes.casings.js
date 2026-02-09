@@ -155,7 +155,7 @@ function registerTFGCasingRecipes(event) {
 		.duration(2.5 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.assembler('tfg:battery_heat_port_ev')
+	event.recipes.gtceu.assembler('tfg:heat_input_hatch_ev')
 		.itemInputs(Item.of('gtceu:iv_machine_hull', 1), Item.of('gtceu:rtm_alloy_coil_block'), Item.of('gtceu:beryllium_plate', 6))
 		.inputFluids(Fluid.of('gtceu:mercury', 4000))
 		.itemOutputs(Item.of('deafission:heat_input_hatch_ev', 1))
