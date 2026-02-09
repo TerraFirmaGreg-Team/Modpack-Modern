@@ -35,7 +35,6 @@ function registerGTCEUTerminalRecipes(event) {
 	}).id(`tfg:shaped/multi_structure_manager`)
 
 	event.remove({ id : 'gtceuterminal:schematic_interface' })
-	/* Broken for now as it can duplicate resources in the I/O Ports
 	event.shaped('1x gtceuterminal:schematic_interface', [
 		'ABA',
 		'CDC',
@@ -48,6 +47,5 @@ function registerGTCEUTerminalRecipes(event) {
 		E: '#gtceu:batteries/iv',
 		F: '#forge:plates/tungsten_steel'
 	}).id(`tfg:shaped/schematic_interface`)
-	*/
-
+	
     }	

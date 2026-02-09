@@ -53,6 +53,12 @@
 			x: 0.0d
 			y: -13.0d
 		}
+		{
+			id: "3274381865E7D011"
+			linked_quest: "0585527D1854628B"
+			x: 14.0d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -1384,7 +1390,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.high_voltage.space_survival.title}"
-			x: 13.0d
+			x: 12.0d
 			y: 1.5d
 		}
 		{

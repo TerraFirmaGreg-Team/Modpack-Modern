@@ -11,5 +11,7 @@ global.EXTENDED_AE2_DISABLED_ITEMS = [
     'expatternprovider:ex_charger',
     'expatternprovider:caner',
     'expatternprovider:circuit_cutter',
-    'expatternprovider:silicon_block'
+    'expatternprovider:silicon_block',
+    'expatternprovider:ex_crafting_terminal', // Allow to use an anvil so we remove it as it's pretty useless
+    'expatternprovider:wireless_hub' // I will add this one back one day (maybe IV or LuV)
 ]
