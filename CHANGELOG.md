@@ -15,6 +15,7 @@ If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Moder
 - Added soybean + sea water to soy mixture recipe (#2984) @Redeix
 - Added optional [Chimes](https://www.curseforge.com/minecraft/mc-mods/chimes) compat. (#2973) @TreyR9
 - Added optional [Create: Sound of Steam](https://www.curseforge.com/minecraft/mc-mods/create-sound-of-steam) compat (#2324) @samtsa
+- Added Universal Bags of Composts (#3016) @Nebby1999
 ### Bug fixes
 - Fix the Empty Rod T1 that was uncraftable (#3008) @TomPlop
 - Fixed fission fuel rods looking for the wrong items to recycle @TomPlop
