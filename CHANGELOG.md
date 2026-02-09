@@ -13,7 +13,7 @@ If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Moder
 - Added soybean + sea water to soy mixture recipe (#2984) @Redeix
 - Added optional [Chimes](https://www.curseforge.com/minecraft/mc-mods/chimes) compat. (#2973) @TreyR9
 - Added optional [Create: Sound of Steam](https://www.curseforge.com/minecraft/mc-mods/create-sound-of-steam) compat (#2324) @samtsa
-- Added Universal Bags of Composts (#xyz) @Nebby1999
+- Added Universal Bags of Composts (#3016) @Nebby1999
 ### Bug fixes
 - Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
 - Fixed cobble breaking into two cobble blocks (#2980) @Pyritie
