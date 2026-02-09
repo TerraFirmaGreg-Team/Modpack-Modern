@@ -5514,7 +5514,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.20-1.4.10-forge.jar",
+                    "file_name": "ExtendedAE-1.20-1.4.11-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5523,20 +5523,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7472/662/ExtendedAE-1.20-1.4.10-forge.jar",
-                    "id": "7472662",
+                    "url": "https://edge.forgecdn.net/files/7594/207/ExtendedAE-1.20-1.4.11-forge.jar",
+                    "id": "7594207",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "267400e92be8b51479158b95a6ce414654c78562",
-                        "md5": "5fc29cfc55d980deea333931a7605bdb"
+                        "sha1": "d37b8af49def8516123e0b03206a2a23ae0fdb0e",
+                        "md5": "2e82205530234759a37116df822d4651"
                     },
                     "required_dependencies": [
-                        "223794",
+                        "1173950",
                         "957920",
-                        "1173950"
+                        "223794"
                     ],
-                    "size": 2675008,
-                    "date_published": "2026-01-17T09:48:13.923Z"
+                    "size": 2810056,
+                    "date_published": "2026-02-08T13:28:12.420Z"
                 }
             ]
         },
