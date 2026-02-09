@@ -561,7 +561,7 @@ const registerExtendedAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('expatternprovider:ex_pattern_access_part')
 		.itemInputs(
 			'ae2:pattern_access_terminal',
-			'4x ae2:logic_processor',
+			Item.of('ae2:engineering_processor', 4),
 			'2x megacells:accumulation_processor')
 		.itemOutputs('expatternprovider:ex_pattern_access_part')
 		.duration(100)
@@ -569,7 +569,7 @@ const registerExtendedAE2Recipes = (event) => {
 
 	event.recipes.gtceu.assembler('expatternprovider:pattern_terminal_upgrade')
 		.itemInputs(
-			'4x ae2:logic_processor',
+			'4x ae2:calculation_processor',
 			'2x megacells:accumulation_processor')
 		.itemOutputs('expatternprovider:pattern_terminal_upgrade')
 		.duration(100)
