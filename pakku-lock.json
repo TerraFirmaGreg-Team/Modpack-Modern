@@ -3982,7 +3982,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "create_connected-1.1.12-mc1.20.1-all.jar",
+                    "file_name": "create_connected-1.1.13-mc1.20.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3991,22 +3991,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Vg5TIO6d/versions/aN0bSww5/create_connected-1.1.12-mc1.20.1-all.jar",
-                    "id": "aN0bSww5",
+                    "url": "https://cdn.modrinth.com/data/Vg5TIO6d/versions/cd0NZDvE/create_connected-1.1.13-mc1.20.1-all.jar",
+                    "id": "cd0NZDvE",
                     "parent_id": "Vg5TIO6d",
                     "hashes": {
-                        "sha512": "197488682615350b777c9f803c58a870fab3f775f044a8c1aae44810b0f9a93a5ff05bc54b1d6a5d962d5b6db78dfb5c33c6cf0e2373f261b89834e0dc2cd67a",
-                        "sha1": "d984c4502c0ed9a997dafc707b3cee2a4a65167e"
+                        "sha512": "942b9f05b5033ef5f920dad95a8871c04907084388f11dbe48f2d853ec237d47f1b037252b33e4d3f9efc680b680651c65cd48d4a2ca79c7b6328ae27ba3317f",
+                        "sha1": "14ecb2facb6eaa99635f03a46346d91a331b7768"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 6566880,
-                    "date_published": "2026-02-01T02:48:57.370419Z"
+                    "size": 6566935,
+                    "date_published": "2026-02-08T11:57:40.268747Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "create_connected-1.1.12-mc1.20.1-all.jar",
+                    "file_name": "create_connected-1.1.13-mc1.20.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4015,18 +4015,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7558/612/create_connected-1.1.12-mc1.20.1-all.jar",
-                    "id": "7558612",
+                    "url": "https://edge.forgecdn.net/files/7593/867/create_connected-1.1.13-mc1.20.1-all.jar",
+                    "id": "7593867",
                     "parent_id": "947914",
                     "hashes": {
-                        "sha1": "6a27b27ad502429650fa621009daacc876bd3e28",
-                        "md5": "eccd418f036339b09ec505db7a3f82d4"
+                        "sha1": "0e1ffa4e6d3f7b379c7d30e8e59d424fd527acb4",
+                        "md5": "3eb16b4c0c2d81db6a8392e41fd97ff4"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 6566879,
-                    "date_published": "2026-02-01T02:49:13.020Z"
+                    "size": 6566936,
+                    "date_published": "2026-02-08T11:58:20.660Z"
                 }
             ]
         },
@@ -4052,7 +4052,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "create_hypertube-0.3.0-FORGE.jar",
+                    "file_name": "create_hypertube-0.4.0-FORGE.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20.2",
@@ -4066,22 +4066,22 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/pX1oNdBc/create_hypertube-0.3.0-FORGE.jar",
-                    "id": "pX1oNdBc",
+                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/ngA99IQz/create_hypertube-0.4.0-FORGE.jar",
+                    "id": "ngA99IQz",
                     "parent_id": "ATDdrG1y",
                     "hashes": {
-                        "sha512": "4ffaff34cdd31c6ff11364809992cb4f15e1e00fd3d87a5be6a9006e95ad9c4636ffbe6845ee2d59b55d20e9896bedb1e5ada699202e9b71a90195833161a140",
-                        "sha1": "476ae93802024b766badb15e538e0cf65a2e3fbd"
+                        "sha512": "67e200c36bd0f8571089c99f489af6987e40e6b6c912c7b4b7830f605943cd25b6d727f707c7dbcd91faea30ee67385b635e3a61dd6f813460e68f5b49c0ff40",
+                        "sha1": "49712554e365e4412fa6362f0394e919fe7eb261"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 390634,
-                    "date_published": "2025-11-21T17:40:28.963108Z"
+                    "size": 421417,
+                    "date_published": "2026-02-09T13:59:01.301871Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "create_hypertube-0.3.0-FORGE.jar",
+                    "file_name": "create_hypertube-0.4.0-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4090,18 +4090,18 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7246/344/create_hypertube-0.3.0-FORGE.jar",
-                    "id": "7246344",
+                    "url": "https://edge.forgecdn.net/files/7599/486/create_hypertube-0.4.0-FORGE.jar",
+                    "id": "7599486",
                     "parent_id": "1281336",
                     "hashes": {
-                        "sha1": "476ae93802024b766badb15e538e0cf65a2e3fbd",
-                        "md5": "7cab909e9c8de12b8c97518ca0042c1b"
+                        "sha1": "49712554e365e4412fa6362f0394e919fe7eb261",
+                        "md5": "7faf6ee6833eae1994c4c051454e2bac"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 390634,
-                    "date_published": "2025-11-21T17:32:38.960Z"
+                    "size": 421417,
+                    "date_published": "2026-02-09T13:56:36.967Z"
                 }
             ]
         },
@@ -5382,7 +5382,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.16-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.17-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5390,22 +5390,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/PzLUDEeR/everycomp-1.20-2.9.16-forge.jar",
-                    "id": "PzLUDEeR",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/VfyRmElC/everycomp-1.20-2.9.17-forge.jar",
+                    "id": "VfyRmElC",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "a5cedf32c29573af7d65323a58ba9d302f8a4623a5086909feddfde24d1d514a63aed9cb69d05963a9d54ef0f22aae7f550e2e458029434688d9d803c0b0f212",
-                        "sha1": "6f68b7f54c895d38001d4ae5dc20e7f47929e981"
+                        "sha512": "b56c5258a8a34178205574fc262a35c7a5d31299954f3a90d3fb876433cc000b2a89ff9ffecfdb5bd5eb68524ae582a7c4807ca9297b6438fc4861a6b11f036a",
+                        "sha1": "f916b0f9871722d56adea057111b70e4c0529866"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2834510,
-                    "date_published": "2026-02-08T09:44:23.096170Z"
+                    "size": 2834698,
+                    "date_published": "2026-02-09T04:43:50.932298Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.16-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.17-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5413,18 +5413,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7593/349/everycomp-1.20-2.9.16-forge.jar",
-                    "id": "7593349",
+                    "url": "https://edge.forgecdn.net/files/7597/912/everycomp-1.20-2.9.17-forge.jar",
+                    "id": "7597912",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "6f68b7f54c895d38001d4ae5dc20e7f47929e981",
-                        "md5": "9262a59d15f024e3022a1d5249fe9361"
+                        "sha1": "f916b0f9871722d56adea057111b70e4c0529866",
+                        "md5": "750f6bd2c84400cf860212bdc1185850"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2834510,
-                    "date_published": "2026-02-08T09:44:01.477Z"
+                    "size": 2834698,
+                    "date_published": "2026-02-09T04:43:30.063Z"
                 }
             ]
         },
