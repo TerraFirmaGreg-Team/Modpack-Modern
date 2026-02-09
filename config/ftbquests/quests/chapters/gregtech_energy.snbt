@@ -798,7 +798,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["4D0ADC66D2CF09B1"]
+			dependencies: ["0AF286AA540A82E6"]
 			description: ["{quests.gregtech_energy.solar_panel.desc}"]
 			id: "109C57B63EE95E35"
 			subtitle: "{quests.gregtech_energy.solar_panel.subtitle}"
@@ -809,12 +809,14 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"109C57B63EE95E35"
 				"5826EC76931359B8"
+				"00A2566109144D7F"
+				"4D0ADC66D2CF09B1"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -832,7 +834,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4D0ADC66D2CF09B1"]
@@ -1147,8 +1149,10 @@
 		{
 			dependencies: [
 				"0585527D1854628B"
-				"05E2F203DA46A5E8"
+				"7AF726555D721DFC"
+				"5FA09DA68D309548"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.gregtech_energy.large_solar_t2.desc.1}"
 				"{@pagebreak}"
@@ -1162,12 +1166,12 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"3AEAB1930F4CC034"
-				"1DB543EFEEB67238"
+				"05E2F203DA46A5E8"
 			]
 			description: ["{quests.gregtech_energy.large_solar_t3.desc}"]
 			id: "7CA3A5EFE3D5B688"
@@ -1178,7 +1182,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [

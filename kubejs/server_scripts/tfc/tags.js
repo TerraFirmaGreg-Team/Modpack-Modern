@@ -485,6 +485,11 @@ function registerTFCItemTags(event) {
     event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
     event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
     event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
+
+    event.add('tfc:starts_fires_with_items', 'gtceu:matches');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
 }
 
 /** @param {TagEvent.Block} event */

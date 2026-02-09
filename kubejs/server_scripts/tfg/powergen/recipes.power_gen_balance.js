@@ -47,6 +47,7 @@ function registerTFGPowerGenBalance(event) {
 		.dimension('minecraft:the_nether')
 
     event.remove({ id: 'gtceu:mixer/diesel' })
+    event.remove({ id: 'greate:mixing/integration/gtceu/mixer/diesel' })
     event.recipes.gtceu.mixer('tfg:diesel')
         .inputFluids(Fluid.of('gtceu:light_fuel', 5000), Fluid.of('gtceu:heavy_fuel', 1000))
         .outputFluids(Fluid.of('gtceu:diesel', 6000))

@@ -13,6 +13,15 @@ function registerTFCLoots(event) {
 		.addWeightedLoot([4, 6], ['tfc:food/bear'])
 
 
+	event.addEntityLootModifier('tfc:panda')
+		.addWeightedLoot([8, 12], ['tfc:food/bear'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfc:panda')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 6], ['tfc:food/bear'])
+
+
 	event.addEntityLootModifier('tfc:grizzly_bear')
 		.addWeightedLoot([10, 16], ['tfc:food/bear'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])

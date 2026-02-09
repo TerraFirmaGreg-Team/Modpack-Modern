@@ -1132,4 +1132,24 @@ function registerGreateRecipes(event) {
 		C: 'gtceu:iv_electric_pump',
 		D: 'create:spout'
 	}).addMaterialInfo().id('tfg:shaped/toms_favourite_block')
+
+	event.shaped(`2x greate:treated_wood_window`, [
+		'BAB',
+		' B '
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:treated_wood_planks'
+	}).id(`tfg:greate/shaped/treated_wood_window`)
+
+	event.shapeless(`2x greate:treated_wood_window_pane`,
+	[
+		`greate:treated_wood_window`,
+		'#forge:tools/saws'
+	]).id('tfg:greate/shapeless/treated_wood_window_pane')
+
+	event.recipes.gtceu.cutter(`tfg:greate/greate:treated_wood_window_pane`)
+		.itemInputs(`3x greate:treated_wood_window`)
+		.itemOutputs(`8x greate:treated_wood_window_pane`)
+		.duration(40)
+		.EUt(7)
 }

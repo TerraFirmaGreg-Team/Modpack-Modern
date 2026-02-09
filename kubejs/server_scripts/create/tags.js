@@ -9,6 +9,10 @@ const registerCreateItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	// Face curio slot for goggles
+	event.remove("curios:head", "create:goggles")
+	event.add("curios:face", "create:goggles")
+
 	// This is greate's fault
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')

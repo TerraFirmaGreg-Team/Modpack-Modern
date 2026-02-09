@@ -325,9 +325,22 @@ function processCrushedOre(event, material) {
 			.EUt(2)
 
 		// Bulk washing
+		
+		event.recipes.greate.splashing(
+			[pureOreItem, Item.of(byproductItem).withChance(0.14), 'gtceu:stone_dust'],
+			[crushedOreItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_purified_ore_water`)
 
-		event.recipes.greate.splashing([pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
-			.id(`tfg:splashing/${materialName}_purified_ore`)
+		event.recipes.greate.splashing(
+			[pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'],
+			[crushedOreItem, Fluid.of('gtceu:distilled_water', 10)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_purified_ore_distilled`)
 
 		// Dropping in water
 		event.custom({
@@ -443,8 +456,21 @@ function processImpureDust(event, material) {
 		const materialName = material.getName();
 
 		// Bulk washing
-		event.recipes.greate.splashing(dustItem, impureDustItem)
-			.id(`tfg:splashing/${materialName}_dust_from_impure`)
+		event.recipes.greate.splashing(
+			[dustItem],
+			[impureDustItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)		
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_dust_from_impure_water`)
+
+		event.recipes.greate.splashing(
+			[dustItem],
+			[impureDustItem, Fluid.of('gtceu:distilled_water', 10)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_dust_from_impure_distilled`)
 
 		event.recipes.tfc.barrel_instant()
 			.inputItem(impureDustItem)
@@ -495,8 +521,21 @@ function processPureDust(event, material) {
 		const materialName = material.getName();
 
 		// Bulk washing
-		event.recipes.greate.splashing(dustItem, pureDustItem)
-			.id(`tfg:splashing/${materialName}_dust_from_pure`)
+		event.recipes.greate.splashing(
+			[dustItem],
+			[pureDustItem, Fluid.of('minecraft:water', 100)]
+		)
+		.recipeTier(1)
+		.circuitNumber(1)
+		.id(`tfg:splashing/${materialName}_dust_from_pure_water`)
+
+		event.recipes.greate.splashing(
+			[dustItem],
+			[pureDustItem, Fluid.of('gtceu:distilled_water', 10)]
+		)
+		.recipeTier(1)
+		.circuitNumber(2)
+		.id(`tfg:splashing/${materialName}_dust_from_pure_distilled`)
 
 		event.recipes.tfc.barrel_instant()
 			.inputItem(pureDustItem)

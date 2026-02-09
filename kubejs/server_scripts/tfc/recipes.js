@@ -107,6 +107,11 @@ const registerTFCRecipes = (event) => {
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/fresh_seaweed').id('tfg:smelting/fresh_seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:groundcover/seaweed').id('tfg:smelting/seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/winged_kelp').id('tfg:smelting/winged_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/leafy_kelp').id('tfg:smelting/leafy_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/giant_kelp_flower').id('tfg:smelting/giant_kelp_to_soda')
 
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
@@ -289,5 +294,46 @@ const registerTFCRecipes = (event) => {
 		], {
 			A: `tfc:wood/sapling/${type}`
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
+	});
+
+	/**
+	 * @property {Array} tfcWoodRecyclingIndex - Wood recycling material index.
+	 */
+	const tfcWoodRecyclingIndex = [
+		['tfc:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
+		['tfc:wood/planks/{type}', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_door', ['{wood}', 6]],
+		['tfc:wood/planks/{type}_trapdoor', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_fence', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_log_fence', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_fence_gate', ['{wood}', 8]],
+		['tfc:wood/planks/{type}_slab', ['{wood}', 2]],
+		['tfc:wood/planks/{type}_stairs', ['{wood}', 3]],
+		['tfc:wood/planks/{type}_pressure_plate', ['{wood}', 4]],
+		['tfc:wood/planks/{type}_button', ['{wood}', 1]],
+		['tfc:wood/chest/{type}', ['{wood}', 16]],
+		['tfc:wood/trapped_chest/{type}', ['{wood}', 16, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]]
+	];
+	/**
+	 * @param {Array} materials
+	 * @param {string} woodMaterial
+	 * @return {Array}
+	 */
+	function resolveArgs(materials, woodMaterial) {
+		return materials.map(materials => materials === '{wood}' ? woodMaterial : materials);
+	};
+	global.TFC_HARDWOOD_TYPES.forEach(type => {
+		tfcWoodRecyclingIndex.forEach(([template, args]) => {
+			const item = template.replace('{type}', type);
+			const resolvedArgs = resolveArgs(args, GTMaterials.get('hardwood'));
+			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
+		});
+	});
+	global.TFC_SOFTWOOD_TYPES.forEach(type => {
+		tfcWoodRecyclingIndex.forEach(([template, args]) => {
+			const item = template.replace('{type}', type);
+			const resolvedArgs = resolveArgs(args, GTMaterials.Wood);
+			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
+		});
 	});
 }

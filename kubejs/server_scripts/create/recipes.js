@@ -208,6 +208,14 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:plates/wrought_iron'
 	}).addMaterialInfo().id('tfg:create/shaped/metal_bracket')
 
+	event.recipes.gtceu.shaped('4x create:wooden_bracket', [
+		'AAA',
+		'BBB'
+	], {
+		A: '#forge:bolts/wrought_iron',
+		B: '#tfc:lumber'
+	}).addMaterialInfo().id('tfg:create/shaped/wooden_bracket')
+
 	// Жидкостная труба
 	event.shaped('create:fluid_pipe', [
 		'BAB'

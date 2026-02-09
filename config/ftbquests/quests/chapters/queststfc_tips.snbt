@@ -1872,7 +1872,7 @@
 		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.juicer.desc}"]
-			guide_page: "tfc:field_guide tfc:beneath:water"
+			guide_page: "tfc:field_guide tfc:beneath/water"
 			id: "3D845616A2F7083F"
 			subtitle: "{quests.tfg_tips.juicer.subtitle}"
 			tasks: [{
@@ -2196,6 +2196,57 @@
 			title: "{quests.tfg_tips.food_automation.title}"
 			x: 0.0d
 			y: -12.0d
+		}
+		{
+			dependencies: ["2EFB241490502DB3"]
+			description: ["{quests.tfg_tips.composter.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/composter"
+			id: "264D138DFFE13BD0"
+			subtitle: "{quests.tfg_tips.composter.subtitle}"
+			tasks: [{
+				id: "2EE61FD71FE330D3"
+				item: "tfc:composter"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.composter.title}"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["264D138DFFE13BD0"]
+			description: ["{quests.tfg_tips.universal_compost.desc}"]
+			id: "13E4AE4F46A1A1A0"
+			subtitle: "{quests.tfg_tips.universal_compost.subtitle}"
+			tasks: [
+				{
+					id: "6F3BD81EAD7CC109"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:universal_compost_browns)item(tfg:universal_compost_greens))"
+						}
+					}
+					title: "{quests.tfg_tips.universal_compost.task.1}"
+					type: "item"
+				}
+				{
+					id: "787E7A402B3162B5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:universal_compost_browns_bag)item(tfg:universal_compost_greens_bag))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.universal_compost.task.2}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.universal_compost.title}"
+			x: 4.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
