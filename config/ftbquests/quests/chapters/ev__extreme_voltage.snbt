@@ -2405,9 +2405,11 @@
 		}
 		{
 			dependencies: ["7AC97F7850E31D95"]
+			description: ["{quests.extreme_voltage.schematic_terminal.desc}"]
 			id: "4B600E20614EB886"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.schematic_terminal.subtitle}"
 			tasks: [{
 				id: "30C659B8B4BDEF8A"
 				item: "gtceuterminal:schematic_interface"
