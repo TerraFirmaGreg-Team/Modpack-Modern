@@ -32,3 +32,9 @@ const registerStarcatcherItemTags = (event) => {
 const registerStarcatcherFluidTags = (event) => {
 	if (!Platform.isLoaded("starcatcher")) return;
 };
+
+const registerStarcatcherBiomeTags = (event) => {
+	if (!Platform.isLoaded("starcatcher")) return;
+
+	event.add('starcatcher:is_ocean', 'tfc:salt_marsh')
+};

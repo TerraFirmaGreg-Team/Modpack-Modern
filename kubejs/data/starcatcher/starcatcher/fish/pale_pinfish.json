@@ -1,0 +1,93 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
+  },
+  "base_chance": 15,
+  "catch_info": {
+    "always_spawn_entity": false,
+    "entity": "starcatcher:fish",
+    "fish_bucket": "starcatcher:starcaught_bucket",
+    "item": "starcatcher:pale_pinfish",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "midnight",
+  "difficulty": {
+    "decay": 0.0,
+    "missPenalty": 20,
+    "modifiers": [],
+    "speed": 9,
+    "sweetspots": [
+      {
+        "color_as_int": 3701122,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 8,
+        "sweet_spot_type": "starcatcher:aqua",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/aqua.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 3701122,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 8,
+        "sweet_spot_type": "starcatcher:aqua",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/aqua.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 15,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 20,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/thin.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "rare",
+  "size_and_weight": {
+    "average_size_cm": 15.0,
+    "average_weight_grams": 150.0,
+    "deviation_size_cm": 5.0,
+    "deviation_weight_grams": 100.0
+  },
+  "skips_minigame": false,
+  "star": {
+    "connections": [],
+    "debug_color": -9606670,
+    "name": "zeta_tauri",
+    "x": 2772,
+    "y": 1586
+  },
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": 50,
+    "below_y": 2147483647,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [],
+    "biomes_tags": [
+      "starcatcher:is_dark_forest"
+    ],
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "dimensions_blacklist": [],
+    "fluids": [
+      "minecraft:water"
+    ],
+    "seasons": [
+      "early_spring",
+      "late_autumn",
+      "winter"
+    ]
+  }
+}

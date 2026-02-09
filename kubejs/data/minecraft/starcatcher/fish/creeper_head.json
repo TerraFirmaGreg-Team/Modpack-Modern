@@ -1,0 +1,73 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 100,
+    "correct_baits": [
+      "starcatcher:gunpowder_bait"
+    ]
+  },
+  "base_chance": 0,
+  "catch_info": {
+    "always_spawn_entity": true,
+    "entity": "minecraft:creeper",
+    "fish_bucket": "starcatcher:missingno",
+    "item": "minecraft:creeper_head",
+    "override_minigame_item": "starcatcher:unknown_fish",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "all",
+  "difficulty": {
+    "decay": 1.0,
+    "missPenalty": 20,
+    "modifiers": [
+      "starcatcher:spawn_tnt_sweet_spots"
+    ],
+    "speed": 10,
+    "sweetspots": [
+      {
+        "color_as_int": 5329747,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/creeper.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 5329747,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/creeper.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": false,
+  "rarity": "epic",
+  "size_and_weight": {
+    "average_size_cm": 41.0,
+    "average_weight_grams": 2001.0,
+    "deviation_size_cm": 21.0,
+    "deviation_weight_grams": 701.0
+  },
+  "skips_minigame": false,
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": -2147483648,
+    "below_y": 2147483647,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [],
+    "biomes_tags": [],
+    "dimensions": [],
+    "dimensions_blacklist": [],
+    "fluids": [],
+    "seasons": [
+      "all"
+    ]
+  }
+}

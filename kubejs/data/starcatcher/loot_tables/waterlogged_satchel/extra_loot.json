@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:fish_radar"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "starcatcher:extra_loot"
+}

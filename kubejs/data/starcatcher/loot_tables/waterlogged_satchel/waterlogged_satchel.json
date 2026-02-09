@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "starcatcher:waterlogged_satchel/cosmetics",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "starcatcher:waterlogged_satchel/extra_loot",
+          "weight": 6
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "starcatcher:waterlogged_satchel"
+}

@@ -1,0 +1,68 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
+  },
+  "base_chance": 0,
+  "catch_info": {
+    "always_spawn_entity": false,
+    "entity": "minecraft:salmon",
+    "fish_bucket": "minecraft:salmon_bucket",
+    "item": "minecraft:salmon",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "all",
+  "difficulty": {
+    "decay": 1.0,
+    "missPenalty": 5,
+    "modifiers": [],
+    "speed": 9,
+    "sweetspots": [
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": false,
+  "rarity": "common",
+  "size_and_weight": {
+    "average_size_cm": 80.0,
+    "average_weight_grams": 10000.0,
+    "deviation_size_cm": 40.0,
+    "deviation_weight_grams": 8000.0
+  },
+  "skips_minigame": false,
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": 50,
+    "below_y": 100,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [],
+    "biomes_tags": [],
+    "dimensions": [],
+    "dimensions_blacklist": [],
+    "fluids": [],
+    "seasons": [
+      "all"
+    ]
+  }
+}

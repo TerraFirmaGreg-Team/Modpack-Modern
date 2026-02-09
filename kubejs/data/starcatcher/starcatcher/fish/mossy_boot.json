@@ -1,0 +1,76 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 15,
+    "correct_baits": [
+      "starcatcher:murkwater_bait"
+    ]
+  },
+  "base_chance": 1,
+  "catch_info": {
+    "always_spawn_entity": false,
+    "entity": "starcatcher:fish",
+    "fish_bucket": "starcatcher:missingno",
+    "item": "starcatcher:mossy_boot",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "all",
+  "difficulty": {
+    "decay": 0.0,
+    "missPenalty": 0,
+    "modifiers": [],
+    "speed": 10,
+    "sweetspots": [
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 30,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 30,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": false,
+  "rarity": "common",
+  "size_and_weight": {
+    "average_size_cm": 41.0,
+    "average_weight_grams": 2001.0,
+    "deviation_size_cm": 21.0,
+    "deviation_weight_grams": 701.0
+  },
+  "skips_minigame": false,
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": 50,
+    "below_y": 2147483647,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [],
+    "biomes_tags": [
+      "starcatcher:is_swamp"
+    ],
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "dimensions_blacklist": [],
+    "fluids": [
+      "minecraft:water"
+    ],
+    "seasons": [
+      "all"
+    ]
+  }
+}

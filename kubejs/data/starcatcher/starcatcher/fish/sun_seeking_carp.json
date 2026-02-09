@@ -1,0 +1,87 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
+  },
+  "base_chance": 15,
+  "catch_info": {
+    "always_spawn_entity": false,
+    "entity": "starcatcher:fish",
+    "fish_bucket": "starcatcher:starcaught_bucket",
+    "item": "starcatcher:sun_seeking_carp",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "noon",
+  "difficulty": {
+    "decay": 1.0,
+    "missPenalty": 5,
+    "modifiers": [],
+    "speed": 9,
+    "sweetspots": [
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "rare",
+  "size_and_weight": {
+    "average_size_cm": 60.0,
+    "average_weight_grams": 6000.0,
+    "deviation_size_cm": 20.0,
+    "deviation_weight_grams": 4000.0
+  },
+  "skips_minigame": false,
+  "star": {
+    "connections": [
+      "tau_tari"
+    ],
+    "debug_color": -9606670,
+    "name": "elnath",
+    "x": 2796,
+    "y": 1512
+  },
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": 100,
+    "below_y": 2147483647,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [
+      "starcatcher:is_ocean",
+      "starcatcher:is_river",
+      "starcatcher:is_mushroom_fields"
+    ],
+    "biomes_tags": [],
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "dimensions_blacklist": [],
+    "fluids": [
+      "minecraft:water"
+    ],
+    "seasons": [
+      "late_spring",
+      "summer",
+      "early_autumn"
+    ]
+  }
+}

@@ -120,3 +120,23 @@ function registerTFGPrimitiveFluidTags(event) {
 		}
 	})
 }
+
+
+function registerTFGPrimitiveEntityTags(event) {
+
+	/**
+	 * @type {string[]} - List of entities that can be scooped by fishing nets.
+	 */
+	const entities = [
+		'#tfc:small_fish',
+		'tfc:jellyfish',
+		'tfc:lobster',
+		'tfc:isopod',
+		'tfc:crayfish',
+		'starcatcher:fish'
+
+	];
+	entities.forEach(entity => {
+		event.add('tfg:fishing_net_scoopable', entity);
+	});
+}

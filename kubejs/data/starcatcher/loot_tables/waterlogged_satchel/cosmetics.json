@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:pearl_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:kimbe_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:colorful_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:clear_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:frog_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:slimed_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:sharktooth_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:alpha_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "starcatcher:good_old_rod"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "starcatcher:templates"
+}

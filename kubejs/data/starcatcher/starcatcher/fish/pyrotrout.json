@@ -1,0 +1,72 @@
+{
+  "bait_restrictions": {
+    "consumes_bait": true,
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
+  },
+  "base_chance": 5,
+  "catch_info": {
+    "always_spawn_entity": false,
+    "entity": "starcatcher:fish",
+    "fish_bucket": "starcatcher:starcaught_bucket",
+    "item": "starcatcher:pyrotrout",
+    "treasure": "starcatcher:waterlogged_satchel"
+  },
+  "daytime": "all",
+  "difficulty": {
+    "decay": 1.0,
+    "missPenalty": 20,
+    "modifiers": [],
+    "speed": 10,
+    "sweetspots": [
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 22,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 15,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/normal.png",
+        "vanishing_rate": 0.0
+      },
+      {
+        "color_as_int": 65280,
+        "hitbox_size_in_pixels": 15,
+        "is_flip": false,
+        "moving_rate": 0.0,
+        "reward": 20,
+        "sweet_spot_type": "starcatcher:normal",
+        "texture_path": "starcatcher:textures/gui/minigame/spots/thin.png",
+        "vanishing_rate": 0.0
+      }
+    ]
+  },
+  "has_guide_entry": true,
+  "rarity": "uncommon",
+  "size_and_weight": {
+    "average_size_cm": 40.0,
+    "average_weight_grams": 1200.0,
+    "deviation_size_cm": 20.0,
+    "deviation_weight_grams": 700.0
+  },
+  "skips_minigame": false,
+  "weather": "all",
+  "world_restrictions": {
+    "above_y": 50,
+    "below_y": 2147483647,
+    "biomes": [],
+    "biomes_blacklist": [],
+    "biomes_blacklist_tags": [],
+    "biomes_tags": [],
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "dimensions_blacklist": [],
+    "fluids": [
+      "minecraft:lava"
+    ],
+    "seasons": [
+      "all"
+    ]
+  }
+}

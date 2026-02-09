@@ -228,6 +228,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
+	registerTFGPrimitiveEntityTags(event)
 
 	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')
