@@ -32,7 +32,7 @@ const registerTFGEtchingMaterials = (event) => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('tfg:redstone_tri_p_toluenesulfonate')
-        .liquid(new GTFluidBuilder().temperature(293))
+        .liquid(new GTFluidBuilder().customStill().temperature(293))
         .components('1x silicon', '5x pyrite', '1x ruby', '3x tfg:mercury_tri_p_toluenesulfonate')
         .color(0xA6080D)
         .secondaryColor(0x73060A)
