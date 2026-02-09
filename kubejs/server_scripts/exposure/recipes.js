@@ -48,7 +48,7 @@ const registerExposureRecipes = (event) => {
 		A: '#forge:rings',
 		B: '#tfc:lumber',
 		C: '#forge:smooth_stone_slab'
-	}).id('tfg:shaped/camera_stand')
+	}).id('exposure:camera_stand')
 
 	// Film
 	event.shaped('exposure:black_and_white_film', [
