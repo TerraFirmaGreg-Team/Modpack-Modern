@@ -15,14 +15,14 @@
         "snow"
     ],
     "biomes": [
-        "lake",
-        "plains",
-        "highlands",
-        "hills",
-        "old_mountains",
-        "rolling_hills",
-        "plateau",
-        "plateau_lake"
+        "tfc:lake",
+        "tfc:plains",
+        "tfc:highlands",
+        "tfc:hills",
+        "tfc:old_mountains",
+        "tfc:rolling_hills",
+        "tfc:plateau",
+        "tfc:plateau_lake"
     ],
     "bad-biomes": [
         "sangnum_edge",
