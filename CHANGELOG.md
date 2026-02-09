@@ -6,7 +6,7 @@ If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Moder
 - Greate Encased Fans now work differently. Water (or distilled water) needs to be pumped into the encased fan itself, instead of having a source block in front. Items also must be on a Depot or Belt in order to be washed, instead of the floor. Processing time decreases with fan RPM. Regular water produces fewer byproducts than distilled water.
 - Some recipe changes to AE2 mainly to ExtandedAE to avoid conflicts, check your patterns
 ### Changes
-- Large Solar Array Mk2 (LSA) is now craftable after reaching Mars rather that at the end of the Fission Line
+- Large Solar Array Mk2 (LSA) is now craftable after reaching Mars rather than at the end of the Fission Line
 - Added artisan table recipes for all pipe mold sizes (#2983) @Redeix
 - You can now pick up foxes @Pyritie
 - Added glass batch to glass vial extruder recipe (#2999) @Inceitious
@@ -17,7 +17,7 @@ If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Moder
 - Added optional [Create: Sound of Steam](https://www.curseforge.com/minecraft/mc-mods/create-sound-of-steam) compat (#2324) @samtsa
 ### Bug fixes
 - Fix the Empty Rod T1 that was uncraftable (#3008) @TomPlop
-- Fix the Energy Fission rods that couldn't be recycle @TomPlop
+- Fixed fission fuel rods looking for the wrong items to recycle @TomPlop
 - Add a missing recipe for the Heat Input Hatch that was making progressing on the Fission line after Uranium impossible @TomPlop
 - Add a missing recipe for the Titanium Exhaust Vent that was making building the Cooling Tower impossible @TomPlop
 - Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
