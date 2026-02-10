@@ -521,4 +521,16 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
+
+	// Saw can silk harvest ice
+	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
+	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
+	event.addAdvanced(['#tfg:silk_harvest_ice'], (item, advanced, text) => {
+		const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
+		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
+		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
+
+		text.remove(keyToRemove);
+		text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+	})
 }

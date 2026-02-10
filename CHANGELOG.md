@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- High Tier saws can Silk Harvest Ice (#3019) @Nebby1999
 ### Bug fixes
 ### Translation updates
 
