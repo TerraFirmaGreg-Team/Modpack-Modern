@@ -11,9 +11,11 @@ function removeTFCRecipes(event) {
 	event.remove({ id: /tfc:heating\/metal\/*/ })
 	event.remove({ id: /tfc:heating\/ore\/*/ })
 
-	event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
-	event.remove({ id: /tfc:crafting\/metal\/block\/*_stairs/ })
-	event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
+	global.TFC_METALS.forEach(metal => {
+		event.remove({ id: `tfc:crafting/metal/block/${metal}` })
+		event.remove({ id: `tfc:crafting/metal/block/${metal}_stairs` })
+		event.remove({ id: `tfc:crafting/metal/block/${metal}_slab` })
+	})
 
 	// #region Удаление рецептов
 	event.remove({ id: 'tfc:quern/amethyst' })
@@ -121,7 +123,11 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:crafting/pumpkin_chunks' })
 	event.remove({ id: 'tfc:crafting/alabaster_brick' })
 
-	event.remove({ id: /^tfc:crafting\/dough\/.*/ })
+	global.TFC_DOUGHS.forEach(dough => {
+		for (let i = 1; i <= 8; i++) {
+			event.remove({ id: `tfc:crafting/dough/${dough}_dough_${i}` })
+		}
+	})
 	event.remove({ id: 'tfc:heating/destroy_bread' })
 
 	event.remove({ id: 'tfc:crafting/gunpowder_graphite' })

@@ -88,29 +88,7 @@ function registerGreateRecipes(event) {
 	// #region Gearboxes
 
 	global.AVAILABLE_GREATE_MATERIAL_TIERS.forEach(tier => {
-
-		event.shaped(`greate:${tier}_gearbox`, [
-			' A ',
-			'ABA',
-			'CA '
-		], {
-			A: `greate:${tier}_shaft`,
-			B: 'create:andesite_casing',
-			C: '#forge:tools/wrenches'
-		}).id(`tfg:shaped/${tier}_gearbox`)
-
-		event.shaped(`greate:${tier}_vertical_gearbox`, [
-			'A A',
-			' B ',
-			'ACA'
-		], {
-			A: `greate:${tier}_shaft`,
-			B: 'create:andesite_casing',
-			C: '#forge:tools/wrenches'
-		}).id(`tfg:shaped/${tier}_vertical_gearbox`)
-
 		event.shapeless(`greate:${tier}_gearbox`, [`greate:${tier}_vertical_gearbox`])
-		event.shapeless(`greate:${tier}_vertical_gearbox`, [`greate:${tier}_gearbox`])
 
 		event.recipes.gtceu.assembler(`greate:${tier}_gearbox`)
 			.itemInputs('create:andesite_casing', `4x greate:${tier}_shaft`)
@@ -1121,31 +1099,6 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
-
-	event.recipes.gtceu.shaped('greate:wire_coating_factory', [
-		'ABA',
-		'CDC',
-		'ABA'
-	], {
-		A: 'gtceu:watertight_casing',
-		B: '#gtceu:circuits/iv',
-		C: 'gtceu:iv_electric_pump',
-		D: 'create:spout'
-	}).addMaterialInfo().id('tfg:shaped/toms_favourite_block')
-
-	event.shaped(`2x greate:treated_wood_window`, [
-		'BAB',
-		' B '
-	], {
-		A: '#forge:glass',
-		B: 'gtceu:treated_wood_planks'
-	}).id(`tfg:greate/shaped/treated_wood_window`)
-
-	event.shapeless(`2x greate:treated_wood_window_pane`,
-	[
-		`greate:treated_wood_window`,
-		'#forge:tools/saws'
-	]).id('tfg:greate/shapeless/treated_wood_window_pane')
 
 	event.recipes.gtceu.cutter(`tfg:greate/greate:treated_wood_window_pane`)
 		.itemInputs(`3x greate:treated_wood_window`)

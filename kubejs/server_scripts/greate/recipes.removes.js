@@ -55,17 +55,11 @@ function removeGreateRecipes(event) {
 	
 	event.remove({ id: 'gtceu:shaped/andesite_alloy_shaft' })
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
-		
-	event.remove({ id: /^greate:mixing\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:sawing\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:splashing\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:crushing\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:milling\/integration\/create\/.*/ })
-	event.remove({ id: /^greate:compacting\/integration\/.*/ })
-	event.remove({ id: /^greate:pressing\/integration\/.*/ })
-	event.remove({ id: /^greate:shaped\/.*/ })
-	event.remove({ id: /^greate:shapeless\/.*/ })
 
+	event.remove({ id: /^greate:(mixing|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements)\/.*/ })
+	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
+
+	event.remove({ mod: 'greate', type: 'minecraft:crafting_shapeless' })
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
@@ -85,8 +79,6 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
 
 	event.remove({ id: 'greate:mixing/brass_ingot' })
-	event.remove({ id: /^greate:.*\/integration\/createaddition/ })
-	event.remove({ id: /^greate:.*\/integration\/vintageimprovements/ })
 
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })
