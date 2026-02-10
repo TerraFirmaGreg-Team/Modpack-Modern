@@ -101,9 +101,20 @@ function registerTFGPrimitiveItems(event) {
 	// Universal compost items
 	event.create('tfg:universal_compost_browns')
 		.tag('tfc:compost_browns_low')
+		.translationKey('item.tfg.universal_compost_browns')
 
 	event.create('tfg:universal_compost_greens')
 		.tag('tfc:compost_greens_low')
+		.translationKey('item.tfg.universal_compost_greens')
+
+	// Universal compost bag items
+	event.create('tfg:universal_compost_browns_bag')
+		.tag('tfc:compost_browns_high')
+		.translationKey('item.tfg.universal_compost_browns_bag')
+
+	event.create('tfg:universal_compost_greens_bag')
+		.tag('tfc:compost_greens_high')
+		.translationKey('item.tfg.universal_compost_greens_bag')
 
 	// Etched Diamond Etching Tip
 	event.create('tfg:etching_diamond_tip')
