@@ -1510,7 +1510,7 @@
             ]
         },
         {
-            "pakku_id": "SO7aqiaUhKMExaPk",
+            "pakku_id": "vcmbP1ZpBZtFq3zT",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -2547,7 +2547,7 @@
         {
             "pakku_id": "Zx4piwuLwghFhuAX",
             "pakku_links": [
-                "SO7aqiaUhKMExaPk"
+                "vcmbP1ZpBZtFq3zT"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -3379,9 +3379,6 @@
         },
         {
             "pakku_id": "iVxwBkSQPuiTe33a",
-            "pakku_links": [
-                "SO7aqiaUhKMExaPk"
-            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -4510,9 +4507,6 @@
         },
         {
             "pakku_id": "EZsypKHb95KeyzBH",
-            "pakku_links": [
-                "SO7aqiaUhKMExaPk"
-            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -11576,7 +11570,7 @@
             ]
         },
         {
-            "pakku_id": "UpEaVE3mg5AhC7jF",
+            "pakku_id": "zOlM6hm7KZ1BAq5R",
             "pakku_links": [
                 "64uacGcEw697jVGs"
             ],
@@ -12237,9 +12231,9 @@
             ]
         },
         {
-            "pakku_id": "mLAPxOFbEvrViUwr",
+            "pakku_id": "mUY7a1f4DIhjgXtQ",
             "pakku_links": [
-                "cbx8emJRuJJO4g0l"
+                "Foe7A2QXIKlyEHbt"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -12307,7 +12301,7 @@
             ]
         },
         {
-            "pakku_id": "cbx8emJRuJJO4g0l",
+            "pakku_id": "Foe7A2QXIKlyEHbt",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12406,7 +12400,7 @@
             ]
         },
         {
-            "pakku_id": "aX6m0L6BUdr6wRaN",
+            "pakku_id": "ztIkqvZk37z4FIED",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -12467,7 +12461,7 @@
             ]
         },
         {
-            "pakku_id": "SiK0JwpQyZ5aSB0v",
+            "pakku_id": "dI6jxGUklcstU9uh",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12482,7 +12476,6 @@
                 "curseforge": "857737",
                 "modrinth": "s5d4P01r"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
