@@ -1510,7 +1510,7 @@
             ]
         },
         {
-            "pakku_id": "vcmbP1ZpBZtFq3zT",
+            "pakku_id": "SO7aqiaUhKMExaPk",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -1526,28 +1526,6 @@
                 "modrinth": "MBAkmtvl"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "balm-forge-1.20.1-7.3.38-all.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar",
-                    "id": "8rz04Kha",
-                    "parent_id": "MBAkmtvl",
-                    "hashes": {
-                        "sha512": "7b7e100a9de75750e402ecc1e2d1c88bf2f16fa1cf095656d87918d37a0472f163b0c6242c68b38285410513ff6a66b31c5620139c2901e7b235657027c71f50",
-                        "sha1": "c689f4cbe1a5250177aced15b66ca251d9476d35"
-                    },
-                    "required_dependencies": [],
-                    "size": 591398,
-                    "date_published": "2026-01-05T11:43:40.856151Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "balm-forge-1.20.1-7.3.38-all.jar",
@@ -1569,6 +1547,28 @@
                     "required_dependencies": [],
                     "size": 591397,
                     "date_published": "2026-01-05T11:43:31.017Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "balm-forge-1.20.1-7.3.38-all.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar",
+                    "id": "8rz04Kha",
+                    "parent_id": "MBAkmtvl",
+                    "hashes": {
+                        "sha512": "7b7e100a9de75750e402ecc1e2d1c88bf2f16fa1cf095656d87918d37a0472f163b0c6242c68b38285410513ff6a66b31c5620139c2901e7b235657027c71f50",
+                        "sha1": "c689f4cbe1a5250177aced15b66ca251d9476d35"
+                    },
+                    "required_dependencies": [],
+                    "size": 591398,
+                    "date_published": "2026-01-05T11:43:40.856151Z"
                 }
             ]
         },
@@ -2547,7 +2547,7 @@
         {
             "pakku_id": "Zx4piwuLwghFhuAX",
             "pakku_links": [
-                "vcmbP1ZpBZtFq3zT"
+                "SO7aqiaUhKMExaPk"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -3379,6 +3379,9 @@
         },
         {
             "pakku_id": "iVxwBkSQPuiTe33a",
+            "pakku_links": [
+                "SO7aqiaUhKMExaPk"
+            ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -4507,6 +4510,9 @@
         },
         {
             "pakku_id": "EZsypKHb95KeyzBH",
+            "pakku_links": [
+                "SO7aqiaUhKMExaPk"
+            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -5670,7 +5676,7 @@
                 "e7thBe1Z6fvyxUtU"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "ftb-backups-2"
             },
@@ -10812,7 +10818,7 @@
                 "3Hn4sTVbBvKyQJJS"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -11570,7 +11576,7 @@
             ]
         },
         {
-            "pakku_id": "zOlM6hm7KZ1BAq5R",
+            "pakku_id": "UpEaVE3mg5AhC7jF",
             "pakku_links": [
                 "64uacGcEw697jVGs"
             ],
@@ -11589,6 +11595,30 @@
                 "modrinth": "PhnM3Lkv"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6965/231/Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "id": "6965231",
+                    "parent_id": "695822",
+                    "hashes": {
+                        "sha1": "9819909ff38f14408e313998d225e986333d52b7",
+                        "md5": "80004a900325176c2ff9427198dedb42"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 1239847,
+                    "date_published": "2025-09-05T08:32:46.673Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
@@ -11613,30 +11643,6 @@
                     ],
                     "size": 1239847,
                     "date_published": "2025-09-05T08:32:48.466815Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6965/231/Sacks 'N Such-1.20.1-1.2.4.jar",
-                    "id": "6965231",
-                    "parent_id": "695822",
-                    "hashes": {
-                        "sha1": "9819909ff38f14408e313998d225e986333d52b7",
-                        "md5": "80004a900325176c2ff9427198dedb42"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 1239847,
-                    "date_published": "2025-09-05T08:32:46.673Z"
                 }
             ]
         },
@@ -12231,9 +12237,9 @@
             ]
         },
         {
-            "pakku_id": "mUY7a1f4DIhjgXtQ",
+            "pakku_id": "mLAPxOFbEvrViUwr",
             "pakku_links": [
-                "Foe7A2QXIKlyEHbt"
+                "cbx8emJRuJJO4g0l"
             ],
             "type": "MOD",
             "side": "BOTH",
@@ -12251,32 +12257,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.22.1522.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/fzw9IP9b/sophisticatedbackpacks-1.20.1-3.24.22.1522.jar",
-                    "id": "fzw9IP9b",
-                    "parent_id": "TyCTlI4b",
-                    "hashes": {
-                        "sha512": "baa91b6cf81a5116ef86a74e26262f49bc09b959b4fa855073b2389b32defc657d696337ddf1c878ecfb51d7316e352bd93ac242991135ffc2cbf80e89f09369",
-                        "sha1": "8f45fd2067d70cd2a442e34daf454c98cd550bc2"
-                    },
-                    "required_dependencies": [
-                        "nmoqTijg"
-                    ],
-                    "size": 983238,
-                    "date_published": "2026-02-09T21:35:24.030456Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.22.1522.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.23.1529.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12285,23 +12267,47 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7601/319/sophisticatedbackpacks-1.20.1-3.24.22.1522.jar",
-                    "id": "7601319",
+                    "url": "https://edge.forgecdn.net/files/7608/120/sophisticatedbackpacks-1.20.1-3.24.23.1529.jar",
+                    "id": "7608120",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "b6d9921865881151e2fba5522759b65958e20a16",
-                        "md5": "389fc4fc01dc4c12bb1b623aa9653a29"
+                        "sha1": "8d0f0be50453ec3ced2f1429cee4ccfcc5b38af7",
+                        "md5": "6b0e1d5af13159ca9c306e10b4abc416"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 983238,
-                    "date_published": "2026-02-09T21:34:41.257Z"
+                    "size": 983560,
+                    "date_published": "2026-02-11T08:20:34.637Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.23.1529.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/iVVqwvp2/sophisticatedbackpacks-1.20.1-3.24.23.1529.jar",
+                    "id": "iVVqwvp2",
+                    "parent_id": "TyCTlI4b",
+                    "hashes": {
+                        "sha512": "359bd078e4e23ef9a1ab781bc09d1e340df072878e27c6394f1388678aa18fcbdd4edf0a78759fe5cdd1cfd2a4ec3b09954b3c2e12e22918a5c55e4d8a3aa0f1",
+                        "sha1": "d6fa8d95ee29aeab6e582fdeff0c31e64a6be111"
+                    },
+                    "required_dependencies": [
+                        "nmoqTijg"
+                    ],
+                    "size": 983559,
+                    "date_published": "2026-02-11T08:21:15.204132Z"
                 }
             ]
         },
         {
-            "pakku_id": "Foe7A2QXIKlyEHbt",
+            "pakku_id": "cbx8emJRuJJO4g0l",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12318,30 +12324,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.3.1475.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/KVp0iD0P/sophisticatedcore-1.20.1-1.3.3.1475.jar",
-                    "id": "KVp0iD0P",
-                    "parent_id": "nmoqTijg",
-                    "hashes": {
-                        "sha512": "f63d91169d9bb4d9a51cb932e5cfc30f73586298f906f48fd40427f62cbeb8094b9365c90e7a96a9ecf261bb22b67235f5860a3867a9a0feef8672a7276ec1ed",
-                        "sha1": "6af0914cb934305756ee32f061825bde9e6c78b5"
-                    },
-                    "required_dependencies": [],
-                    "size": 1418928,
-                    "date_published": "2026-02-09T21:30:50.605695Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.3.1475.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.3.1482.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12350,16 +12334,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7601/298/sophisticatedcore-1.20.1-1.3.3.1475.jar",
-                    "id": "7601298",
+                    "url": "https://edge.forgecdn.net/files/7606/268/sophisticatedcore-1.20.1-1.3.3.1482.jar",
+                    "id": "7606268",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "a642147cbbd1f63e5bc0dfc94bc43d571cc1067f",
-                        "md5": "4e4594226e1cbc4699078ea7b1cdab9d"
+                        "sha1": "c907a909351a870d75b3105cd4ec6c8f77b0f259",
+                        "md5": "530785fca963155074190a5e62bd5eba"
                     },
                     "required_dependencies": [],
-                    "size": 1418928,
-                    "date_published": "2026-02-09T21:30:14.277Z"
+                    "size": 1418354,
+                    "date_published": "2026-02-10T22:49:26.660Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.3.1482.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/cVOCSbHK/sophisticatedcore-1.20.1-1.3.3.1482.jar",
+                    "id": "cVOCSbHK",
+                    "parent_id": "nmoqTijg",
+                    "hashes": {
+                        "sha512": "7262d8acb2441c9654fccf6594e085ff4ae8e605c9fb2db087c55ad2a1debb00cc5b9c5b1f80053f6024c7da3dfabed16c5228423b7d730d83c018c904204aa8",
+                        "sha1": "fc741821d5f18c61d6d54363d59e42e89942496d"
+                    },
+                    "required_dependencies": [],
+                    "size": 1418354,
+                    "date_published": "2026-02-10T22:50:14.650218Z"
                 }
             ]
         },
@@ -12400,7 +12406,7 @@
             ]
         },
         {
-            "pakku_id": "ztIkqvZk37z4FIED",
+            "pakku_id": "aX6m0L6BUdr6wRaN",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -12416,27 +12422,6 @@
                 "modrinth": "qyVF9oeo"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/x0sJ9PeR/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
-                    "id": "x0sJ9PeR",
-                    "parent_id": "qyVF9oeo",
-                    "hashes": {
-                        "sha512": "5509a7b51ec1d57aae2af0a0200bda474539fcfe28303f3ff0158ba95b8e7a88ae023d8a9bd97d4626a6a8ce809506e19cdcb05b76e8be5bf8a0450c5d6a46b1",
-                        "sha1": "944b4673bcab118f411d050b2cd6b693262bb664"
-                    },
-                    "required_dependencies": [],
-                    "size": 206984,
-                    "date_published": "2025-09-25T14:25:25.304739Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
@@ -12457,11 +12442,32 @@
                     "required_dependencies": [],
                     "size": 206984,
                     "date_published": "2025-09-25T14:25:13.323Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/x0sJ9PeR/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+                    "id": "x0sJ9PeR",
+                    "parent_id": "qyVF9oeo",
+                    "hashes": {
+                        "sha512": "5509a7b51ec1d57aae2af0a0200bda474539fcfe28303f3ff0158ba95b8e7a88ae023d8a9bd97d4626a6a8ce809506e19cdcb05b76e8be5bf8a0450c5d6a46b1",
+                        "sha1": "944b4673bcab118f411d050b2cd6b693262bb664"
+                    },
+                    "required_dependencies": [],
+                    "size": 206984,
+                    "date_published": "2025-09-25T14:25:25.304739Z"
                 }
             ]
         },
         {
-            "pakku_id": "dI6jxGUklcstU9uh",
+            "pakku_id": "SiK0JwpQyZ5aSB0v",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12476,29 +12482,8 @@
                 "curseforge": "857737",
                 "modrinth": "s5d4P01r"
             },
+            "redistributable": false,
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "species-3.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/s5d4P01r/versions/KwPDNMjG/species-3.5.jar",
-                    "id": "KwPDNMjG",
-                    "parent_id": "s5d4P01r",
-                    "hashes": {
-                        "sha512": "9ff8a488d3eed6950fe8eb09e3ab55e7fe65ee3340c212067e46bf98054330658e6406ad72388054f9ce00921b8d8fdeb5f28e09058c800bdf46e2e47a754a64",
-                        "sha1": "b4d924f4faf6eb201db04205b61fa1524a8b0178"
-                    },
-                    "required_dependencies": [],
-                    "size": 42114388,
-                    "date_published": "2025-08-14T16:26:28.693413Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "species-3.5.jar",
@@ -12520,6 +12505,28 @@
                     "required_dependencies": [],
                     "size": 42114388,
                     "date_published": "2025-08-14T16:26:07.777Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "species-3.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/s5d4P01r/versions/KwPDNMjG/species-3.5.jar",
+                    "id": "KwPDNMjG",
+                    "parent_id": "s5d4P01r",
+                    "hashes": {
+                        "sha512": "9ff8a488d3eed6950fe8eb09e3ab55e7fe65ee3340c212067e46bf98054330658e6406ad72388054f9ce00921b8d8fdeb5f28e09058c800bdf46e2e47a754a64",
+                        "sha1": "b4d924f4faf6eb201db04205b61fa1524a8b0178"
+                    },
+                    "required_dependencies": [],
+                    "size": 42114388,
+                    "date_published": "2025-08-14T16:26:28.693413Z"
                 }
             ]
         },
