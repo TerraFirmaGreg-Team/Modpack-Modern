@@ -140,30 +140,6 @@ const registerTFGMaterials = (event) => {
 
 	// #endregion
 
-	//#region New Alloy for Turbines
-
-	event.create('tfg:tungsten_bismuth_oxide_composite')
-		.components('1x tungsten', '2x bismuth', '3x oxygen')
-		.color(0xf7cb48)
-		.secondaryColor(0xfffef0)
-		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-		.ingot()
-		.liquid()
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.rotorStats(250, 90, 2 ,620)
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-			GTMaterialFlags.GENERATE_FOIL,
-			GTMaterialFlags.GENERATE_FINE_WIRE
-		)
-		.fluidPipeProperties(4250, 1700, true, false, false, false)
-
-	// #endregion
-
 	// #region conductor
 	event.create('tfg:thermally_conductive_fluid')
 		.liquid()
@@ -232,14 +208,6 @@ const registerTFGMaterials = (event) => {
 		.components('1x zirconium', '2x boron')
 		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
 
-	event.create('tfg:boron_carbide')
-		.ingot()
-		.iconSet('dull')
-		.color(0x42705D)
-		.components('4x boron', '1x carbon')
-		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
-		.flags(GTMaterialFlags.GENERATE_PLATE)
-
 	// #endregion
 
 	//#region Material for Coils
@@ -249,6 +217,53 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.components('4x nickel', '1x chromium', '1x carbon', '3x hydrogen', '1x iodine')
 		.color(0xe7a2fc)
+
+	//#region Materials with Stats
+
+    // EV New Material
+
+	event.create('tfg:tungsten_bismuth_oxide_composite')
+		.components('1x tungsten', '2x bismuth', '3x oxygen')
+		.color(0xf7cb48)
+		.secondaryColor(0xfffef0)
+		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+		.ingot()
+		.liquid()
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.rotorStats(250, 90, 2 ,620)
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW,
+			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_FINE_WIRE
+		)
+
+    // Mandatory Material to progress into Fission Line from Mars
+
+	event.create("ostrum_iodide")
+		.ingot()
+		.liquid()
+		.components('2x ostrum', 'iodine')
+		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
+		.flags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD)
+		.color(0xc696f2)
+		.secondaryColor(0x9b99ff)
+
+    // Material at HV used for Zirconium at IV
+
+	event.create('tfg:boron_carbide')
+		.ingot()
+		.iconSet('dull')
+		.color(0x42705D)
+		.components('4x boron', '1x carbon')
+		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
+		.flags(
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD)
 
 	
 }

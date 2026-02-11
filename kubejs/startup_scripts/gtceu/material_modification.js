@@ -235,10 +235,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Lead.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
+	GTMaterials.Invar.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Potin.addFlags(GENERATE_DOUBLE_INGOTS, );
 	GTMaterials.Cobalt.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_GT_TOOL);
+	GTMaterials.CobaltBrass.addFlags(GENERATE_DOUBLE_INGOTS);
 
 	// Superconductors
 	GTMaterials.ManganesePhosphide.addFlags(GENERATE_FINE_WIRE);
@@ -340,25 +340,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
 	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, GENERATE_DENSE, NO_ORE_SMELTING);
 	
-	// Tools
-	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
-		GTToolType.AXE,
-		GTToolType.HARD_HAMMER,
-		GTToolType.HOE,
-		GTToolType.KNIFE,
-		GTToolType.SHOVEL
-	]).build());
-
-	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2, metalTooling).build());
-	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, metalTooling.concat(GTToolType.MORTAR)).build());
-	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, metalTooling.concat(GTToolType.MORTAR)).build());
-	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
-	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
-	// so I'm just giving them terrible terrible stats
-	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
-	// Hide netherite too
-	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
-
+/* What is that? It doesn't seem to work so I commented it out for now
 	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		let toolProperty = material.getProperty(PropertyKey.TOOL);
 		if (toolProperty === null)
@@ -366,6 +348,7 @@ const registerGTCEuMaterialModification = (event) => {
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
+*/
 
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
