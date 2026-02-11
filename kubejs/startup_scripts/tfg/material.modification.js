@@ -118,7 +118,6 @@ const registerTFGMaterialModification = (event) => {
 		GTToolType.BUZZSAW,
 		GTToolType.SCYTHE,
 		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
 		GTToolType.DRILL_MV,
 		GTToolType.SCREWDRIVER_LV,
 		GTToolType.CHAINSAW_LV,
@@ -127,7 +126,8 @@ const registerTFGMaterialModification = (event) => {
         //Hiden
         GTToolType.WRENCH,
         GTToolType.SCREWDRIVER,
-        GTToolType.WIRE_CUTTER
+        GTToolType.WIRE_CUTTER,
+        GTToolType.DRILL_LV,
 	]
 
 	const HVTools = [
@@ -294,7 +294,7 @@ const registerTFGMaterialModification = (event) => {
     let boron_carbide = TFGHelpers.getMaterial('boron_carbide');
     boron_carbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 9, 3678, 3, HVTools).build());
 
-    // Remove all the tools we don't want anymore
+    // Remove all the tools we want to rebalance
     const rebalanceStats = [
         GTMaterials.DamascusSteel,
         GTMaterials.Bronze,
