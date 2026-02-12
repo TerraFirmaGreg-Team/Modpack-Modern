@@ -11,6 +11,7 @@ const registerTFGMaterialModification = (event) => {
 	const $FLUID_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
 	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
 	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
+	const $ROTOR_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.RotorProperty')
 	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
 	const $TFGT_MEDICAL_CONDITIONS = Java.loadClass('su.terrafirmagreg.core.common.data.tfgt.TFGTMedicalConditions')
 
@@ -289,10 +290,8 @@ const registerTFGMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4.5, 3.5, 612, 3, ULVTools.concat(GTToolType.MORTAR)).build());
-    let ostrum_iodide = TFGHelpers.getMaterial('ostrum_iodide');
-    ostrum_iodide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(18, 8, 3096, 4, EVTools).build());
-    let boron_carbide = TFGHelpers.getMaterial('boron_carbide');
-    boron_carbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 9, 3678, 3, HVTools).build());
+    TFGHelpers.getMaterial('ostrum_iodide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(18, 8, 3096, 4, EVTools).build());
+    TFGHelpers.getMaterial('boron_carbide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 9, 3678, 3, HVTools).build());
 
     // Remove all the tools we want to rebalance
     const rebalanceStats = [
@@ -331,7 +330,73 @@ const registerTFGMaterialModification = (event) => {
 
     //#endregion
 
+	//#region Turbine
 
+    // Remove all the Turbine Rotors we don't want anymore
+    const noRotorMaterials = [
+        GTMaterials.Bronze,
+		GTMaterials.CobaltBrass,
+		GTMaterials.Manganese,
+		GTMaterials.Molybdenum,
+		GTMaterials.RoseGold,
+		GTMaterials.Iron,
+		GTMaterials.BismuthBronze,
+		GTMaterials.Brass,
+		GTMaterials.Chromium,
+		GTMaterials.Invar,
+		GTMaterials.Steel,
+		GTMaterials.Magnalium,
+		GTMaterials.WroughtIron,
+		GTMaterials.Aluminium,
+		GTMaterials.Neodymium,
+		GTMaterials.VanadiumSteel,
+		GTMaterials.StainlessSteel,
+		GTMaterials.Titanium,
+		GTMaterials.Tungsten,
+		GTMaterials.TungstenSteel,
+		GTMaterials.HSSG,
+		GTMaterials.Iridium,
+		GTMaterials.RhodiumPlatedPalladium,
+		GTMaterials.Naquadah,
+		GTMaterials.Osmium,
+    ];
+    for (let mat of noRotorMaterials) {
+     if (mat.hasProperty(PropertyKey.ROTOR)) {
+          mat.removeProperty(PropertyKey.ROTOR);
+      }
+	};
 
+	// Balance Turbine Rotors Stats
 
+    const BalanceRotorMaterials = [
+        GTMaterials.SterlingSilver,
+		GTMaterials.Ultimet,
+		GTMaterials.HSSS,
+		GTMaterials.Osmiridium,
+		GTMaterials.NaquadahAlloy,
+		GTMaterials.Tritanium
+    ];
+    for (let mat of BalanceRotorMaterials) {
+     if (mat.hasProperty(PropertyKey.ROTOR)) {
+          mat.removeProperty(PropertyKey.ROTOR);
+      }
+	};
+
+	GTMaterials.SterlingSilver.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(100, 180, 1, 196));
+	GTMaterials.Ultimet.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(140, 140, 4, 1048));
+	GTMaterials.HSSS.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(280, 200, 7, 2648));
+	GTMaterials.Osmiridium.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(320, 200, 12, 3152));
+	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(370, 180, 13, 5120));
+	GTMaterials.Tritanium.setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(380, 240, 15, 10240));
+
+	// New Materials - Require MaterialFlags (Plates, Bolt/Screwdriver)
+
+	//TFGHelpers.getMaterial('sic_sic').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 80, 2 ,318));
+	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1620));
+	//TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(130, 180, 4 , 2048));
+	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7 ,620));
+	GTMaterials.get('rocket_alloy_t2').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(210, 150, 5 , 3312));
+	//TFGHelpers.getMaterial('Mo_Si_B').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(235, 180, 6, 1480));
+	//GTMaterials.getMaterial('rocket_alloy_t3').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(300, 160, 8, 5120));
+	//TFGHelpers.getMaterial('ysz').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 220, 10, 7080));
 }

@@ -230,7 +230,6 @@ const registerTFGMaterials = (event) => {
 		.ingot()
 		.liquid()
 		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.rotorStats(250, 90, 2 ,620)
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,
