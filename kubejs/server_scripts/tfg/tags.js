@@ -116,6 +116,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
+	registerTFGEnvironmentBlockTags(event)
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
 	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')

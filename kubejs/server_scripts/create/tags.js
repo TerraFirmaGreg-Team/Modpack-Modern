@@ -168,6 +168,11 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
+
+    // Create metal bars weren't metal bars as blocks either :(
+    event.add('tfg:metal_bars', 'create:andesite_bars')
+    event.add('tfg:metal_bars', 'create:brass_bars')
+    event.add('tfg:metal_bars', 'create:copper_bars')
 }
 
 

@@ -66,5 +66,9 @@ function registerCreateDecoBlockTags(event) {
         // The bars are missing mineable tags for some reason
         event.add("minecraft:mineable/pickaxe", `createdeco:${metalBars}_bars`);
         event.add("minecraft:mineable/pickaxe", `createdeco:${metalBars}_bars_overlay`);
+
+        // Need these for the atmosphere_passable tag
+        event.add("tfg:metal_bars", `createdeco:${metalBars}_bars`);
+        event.add("tfg:metal_bars", `createdeco:${metalBars}_bars_overlay`);
     });
 }
