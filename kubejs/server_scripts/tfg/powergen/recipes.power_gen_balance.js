@@ -13,7 +13,7 @@ function registerTFGPowerGenBalance(event) {
     //#endregion
 
     //#region Nerf/Removed
-/* COMMENT OUT UNTIL WE WANT TO ENABLE THE NERF
+
 	event.remove({ id: 'gtceu:gas_turbine/benzene' })
 	event.recipes.gtceu.gas_turbine('tfg:benzene')
 		.inputFluids(Fluid.of('gtceu:benzene', 1))
@@ -29,7 +29,15 @@ function registerTFGPowerGenBalance(event) {
 		.EUt(-32)
         .dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
-*/
+
+	event.remove({ id: 'gtceu:combustion_generator/naphtha' })
+	event.recipes.gtceu.combustion_generator('tfg:naphtha')
+		.inputFluids(Fluid.of('gtceu:naphtha', 1))
+		.duration(20*0.1)
+		.EUt(-32)
+        .dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
     // Remove Light fuel ability as a fuel
 
 	event.remove({ id: 'gtceu:combustion_generator/sulfuric_light_fuel' })

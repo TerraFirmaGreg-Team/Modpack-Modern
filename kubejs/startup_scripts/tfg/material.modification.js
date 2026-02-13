@@ -393,7 +393,7 @@ const registerTFGMaterialModification = (event) => {
 
 	//TFGHelpers.getMaterial('sic_sic').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 80, 2 ,318));
 	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1620));
-	//TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(130, 180, 4 , 2048));
+	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(130, 180, 4 , 2048));
 	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7 ,620));
 	GTMaterials.get('rocket_alloy_t2').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(210, 150, 5 , 3312));
 	//TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(235, 180, 6, 1480));

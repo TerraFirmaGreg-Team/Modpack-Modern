@@ -264,5 +264,86 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD)
 
+	// Material at HV used for Exotic Rotor
+
+	event.create('tfg:inconel_718')
+		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
+		.color(0xfff870)
+		.secondaryColor(0xc8cdf7)
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.ingot()
+		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW
+			)
+
+	event.create('tfg:weak_inconel_718')
+		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
+		.color(0x8f8c57)
+		.secondaryColor(0xc8cdf7)
+		.iconSet(GTMaterialIconSet.ROUGH)
+		.ingot()
+		.blastTemp(1210, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION
+			)
+
+	event.create('tfg:homogenized_inconel_718')
+		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
+		.color(0xdbd560)
+		.secondaryColor(0xc8cdf7)
+		.iconSet(GTMaterialIconSet.DULL)
+		.ingot()
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+			)
+
+	// Material for Inconel Line at HV
+
+	event.create('tfg:inert_furnace_atmosphere')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(3730))
+		.components(
+		'2x nitrogen',
+		'1x argon',
+		'1x hydrogen'
+		)
+		.color(0xB8B6AD)
+		.secondaryColor(0x9A8C62)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:metal_desorption_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(1200))
+		.components(
+			'2x hydrogen',
+			'1x oxygen',
+			'1x carbon_monoxide'
+		)
+		.color(0x7A7262)
+		.secondaryColor(0x5E4B32)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:reducing_process_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(1800))
+		.components(
+			'3x hydrogen',
+			'1x nitrogen',
+			'1x carbon_monoxide'
+		)
+		.color(0x9AA0A6)
+		.secondaryColor(0x6B7075)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+
+
 	
 }
