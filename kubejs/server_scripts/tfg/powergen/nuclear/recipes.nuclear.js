@@ -1405,4 +1405,20 @@ function registerTFGNuclearRecipes(event) {
 		.duration(20*14)
 		.EUt(GTValues.VA[GTValues.EV])
 
+	//#region TiCl4 Small Reactor Coolant
+
+	event.recipes.gtceu.gas_pressurizer('tfg:super_critical_co2')
+		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('tfg:supercritical_co2', 10))
+		.circuit(1)
+		.duration(20*58)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:ticl_doped')
+		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000), Fluid.of('tfg:supercritical_co2', 1000))
+		.outputFluids(Fluid.of('tfg:ticl4_doped_supercritical_co2', 1000))
+		.circuit(1)
+		.duration(20*4)
+		.EUt(GTValues.VA[GTValues.IV])
+
 }
