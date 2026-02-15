@@ -7,6 +7,8 @@ const registerFramedBlocksRecipes = (event) => {
 	event.remove({ id: 'framedblocks:framing_saw/framed_torch' })
 	event.remove({ id: 'framedblocks:framed_soul_torch' })
 	event.remove({ id: 'framedblocks:framing_saw/framed_soul_torch' })
+	event.remove({ id: 'framedblocks:framed_obsidian_pressure_plate' })
+	event.remove({ id: 'framedblocks:framing_saw/framed_obsidian_pressure_plate' })
 
 	//#region Framed Iron Door
 	event.shaped('framedblocks:framed_iron_door', [
