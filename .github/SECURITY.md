@@ -39,4 +39,4 @@ Please submit a report to us before engaging in conduct that may be inconsistent
 - Submit one vulnerability per report
 - Social engineering (such as phishing, vishing, smishing) is prohibited
 
-[contact]: mailto:admin@terrafirmagreg.su
+[contact]: mailto:admin@terrafirmagreg.team
