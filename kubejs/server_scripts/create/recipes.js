@@ -691,11 +691,11 @@ const registerCreateRecipes = (event) => {
 		.addMaterialInfo(true)
 
     // Shadow steel casing
-    event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/black_steel'])
+    event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/lead'])
     		.id('tfg:create/item_application/shadow_steel_casing')
 
     event.recipes.gtceu.assembler('tfg:create/shadow_steel_casing')
-        .itemInputs('#forge:stripped_logs', '#forge:plates/black_steel')
+        .itemInputs('#forge:stripped_logs', '#forge:plates/lead')
         .circuit(11)
         .itemOutputs('create:shadow_steel_casing')
         .duration(50)
