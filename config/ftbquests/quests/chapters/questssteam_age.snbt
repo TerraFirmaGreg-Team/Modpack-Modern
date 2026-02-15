@@ -475,11 +475,13 @@
 				{
 					id: "72112F5EC062766C"
 					item: "gtceu:treated_wood_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0D95727196D033B5"
 					item: "gtceu:treated_wood_plate"
+					optional_task: true
 					type: "item"
 				}
 				{

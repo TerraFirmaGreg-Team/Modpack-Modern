@@ -1159,6 +1159,7 @@
 				"{quests.gregtech_energy.large_solar_t2.desc.2}"
 			]
 			id: "3AEAB1930F4CC034"
+			optional: true
 			subtitle: "{quests.gregtech_energy.large_solar_t2.subtitle}"
 			tasks: [{
 				id: "149BF93064D121D3"
@@ -1175,6 +1176,7 @@
 			]
 			description: ["{quests.gregtech_energy.large_solar_t3.desc}"]
 			id: "7CA3A5EFE3D5B688"
+			optional: true
 			subtitle: "{quests.gregtech_energy.large_solar_t3.subtitle}"
 			tasks: [{
 				id: "612817A7FA759E03"

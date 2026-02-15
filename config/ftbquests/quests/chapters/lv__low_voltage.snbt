@@ -2025,6 +2025,28 @@
 			x: 7.0d
 			y: 7.5d
 		}
+		{
+			dependencies: ["292938760AB9A12B"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
+			id: "62737DC459F6F5F5"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.mv_jetpack.subtitle}"
+			tasks: [{
+				id: "78D9D6C90B1C751E"
+				item: {
+					Count: 1
+					id: "gtceu:liquid_fuel_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.mv_jetpack.title}"
+			x: 1.0d
+			y: 9.5d
+		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]
 	title: "{quests.low_voltage}"
