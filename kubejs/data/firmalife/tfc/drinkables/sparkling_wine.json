@@ -8,6 +8,11 @@
 			"type": "minecraft:jump_boost",
 			"duration": 6400,
 			"amplifier": 1
+		},
+		{
+			"type": "minecraft:strength",
+			"duration": 6400,
+			"amplifier": 0
 		}
 	]
 }

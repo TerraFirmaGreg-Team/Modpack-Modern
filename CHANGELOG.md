@@ -3,8 +3,29 @@
 ## Unreleased
 ### Changes
 - High Tier saws can Silk Harvest Ice (#3019) @Nebby1999
+- Colored small vessels now have new textures backported from 1.21 TFC
+- The alloy smelter kaolin clay to powder recipe now uses a mold instead of a circuit (since steam machines don't have circuits) @Pyritie
+- Added more of Create's decorative stone blocks to the Domum whitelist
+- Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
+- Drinkable alcohols can now be drank even when your hydration is full @Ujhik
+- The Strength effect is now exclusive to wines, but all wines also now have an additional effect! @Pyritie
 ### Bug fixes
+- Fixed the blur effect after being downed not going away
+- Fixed arrow duplication (#2089) @Ujhik
+- Fixed the blaze burner liquid fuel list not properly working on servers @Mqrius
+- Fixed dimension indicator icons duplicating when increasing the energy tier display @BlueBoat29
+- Fixed the face mask new curio slot not actually preventing hazards @Bumperdo09
+- Fixed mars crop seeds not going in the seed pouch (#3058) @Pyritie
+- Fixed not being able to make aluminium double plates with LV machines (#3030) @Pyritie
+- Fixed not being able to recycle unfired firmalife oven parts @Pyritie
+- Fixed not being able to fire scraping knife molds (#3038) @Pyritie
+- Fixed some tree types not contributing to ambient bird noises
+- Fixed a bunch of quests @Pyritie @Eilandor
 ### Translation updates
+- Russian @Nixieeunrare
+- German @Enderderschander
+- Ukranian @MetEnBouldry
+- Chinese (simplified) @jmecn
 
 ## [0.11.21] - 09-02-2026
 ### Breaking changes
