@@ -16,7 +16,7 @@
         "with": [
           {
             "block": "gtceu:shale_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -24,11 +24,11 @@
           },
           {
             "block": "gtceu:shale_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:shale_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:shale_chromite_ore",
@@ -43,7 +43,7 @@
         "with": [
           {
             "block": "gtceu:claystone_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -51,11 +51,11 @@
           },
           {
             "block": "gtceu:claystone_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:claystone_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:claystone_chromite_ore",
@@ -70,7 +70,7 @@
         "with": [
           {
             "block": "gtceu:limestone_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -78,11 +78,11 @@
           },
           {
             "block": "gtceu:limestone_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:limestone_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:limestone_chromite_ore",
@@ -97,7 +97,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -105,11 +105,11 @@
           },
           {
             "block": "gtceu:conglomerate_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:conglomerate_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:conglomerate_chromite_ore",
@@ -124,7 +124,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -132,11 +132,11 @@
           },
           {
             "block": "gtceu:dolomite_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:dolomite_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:dolomite_chromite_ore",
@@ -151,7 +151,7 @@
         "with": [
           {
             "block": "gtceu:chert_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -159,11 +159,11 @@
           },
           {
             "block": "gtceu:chert_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:chert_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:chert_chromite_ore",
@@ -178,7 +178,7 @@
         "with": [
           {
             "block": "gtceu:chalk_magnetite_ore",
-            "weight": 70
+            "weight": 60
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -186,11 +186,11 @@
           },
           {
             "block": "gtceu:chalk_vanadium_magnetite_ore",
-            "weight": 25
+            "weight": 30
           },
           {
             "block": "gtceu:chalk_gold_ore",
-            "weight": 10
+            "weight": 5
           },
           {
             "block": "gtceu:chalk_chromite_ore",
@@ -207,15 +207,15 @@
       "blocks": [
         {
           "block": "tfc:ore/small_magnetite",
-          "weight": 70
+          "weight": 60
         },
         {
           "block": "gtceu:vanadium_magnetite_indicator",
-          "weight": 25
+          "weight": 30
         },
         {
           "block": "tfc:ore/small_native_gold",
-          "weight": 10
+          "weight": 5
         },
         {
           "block": "firmalife:ore/small_chromite",
