@@ -8,6 +8,11 @@
 			"type": "species:iron_will",
 			"duration": 6400,
 			"amplifier": 0
+		},
+		{
+			"type": "minecraft:strength",
+			"duration": 6400,
+			"amplifier": 0
 		}
 	]
 }

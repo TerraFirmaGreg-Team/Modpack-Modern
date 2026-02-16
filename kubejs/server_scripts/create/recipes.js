@@ -313,6 +313,7 @@ const registerCreateRecipes = (event) => {
 	// Жидкостный наполнитель
 	event.shaped('create:spout', [
 		'CBD',
+		' A ',
 		' A '
 	], {
 		A: '#forge:foils/rubber',
@@ -322,7 +323,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/spout')
 
 	event.recipes.gtceu.assembler('create:spout')
-		.itemInputs('create:fluid_tank', '#forge:foils/rubber')
+		.itemInputs('create:fluid_tank', '2x #forge:foils/rubber')
 		.itemOutputs('create:spout')
 		.duration(50)
 		.circuit(2)
@@ -1013,7 +1014,7 @@ const registerCreateRecipes = (event) => {
 		' CE'
 	], {
 		A: '#forge:cogwheels',
-		B: 'gtceu:ulv_machine_casing',
+		B: 'create:shadow_steel_casing',
 		C: 'create:brass_hand',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
@@ -1021,12 +1022,12 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/deployer')
 
 	event.recipes.gtceu.assembler('create:deployer')
-		.itemInputs('#forge:cogwheels', 'gtceu:ulv_machine_casing', 'create:brass_hand', 'create:electron_tube')
+		.itemInputs('#forge:cogwheels', 'create:shadow_steel_casing', 'create:brass_hand', 'create:electron_tube')
 		.itemOutputs('create:deployer')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		
-	TFGHelpers.registerMaterialInfo('create:deployer', [GTMaterials.Brass, 12/9, GTMaterials.WroughtIron, 8]);
+	TFGHelpers.registerMaterialInfo('create:deployer', [GTMaterials.Brass, 12/9, GTMaterials.BlackSteel, 1, GTMaterials.Wood, 1]);
 
 	// Соединятор вагонеток
 	event.shapeless('create:minecart_coupling', [

@@ -207,7 +207,12 @@ function processPlateDouble(event, material) {
 			.EUt(24)
 	}
 
-	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, 2);
+	let tier = 2;
+	// Allow double aluminium plates with LV machines
+	if (material === GTMaterials.Aluminium)
+		tier = 1;
+
+	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier);
 }
 
 /**

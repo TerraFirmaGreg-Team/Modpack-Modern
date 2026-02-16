@@ -27,12 +27,12 @@
 		{
 			"type": "patchouli:text",
 			"title": "Wine",
-			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.",
+			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Red Wine: Strength (5:20)$(li)White Wine: Wither Resistance (5:20)$(li)Rose Wine: Swim Speed (5:20)$(li)Sparkling Wine: Jump Boost II (5:20)$(li)Dessert Wine: Knockback Resistance (5:20)"
+			"text": "$(li)Red Wine: Haste (5:20)$(li)White Wine: Wither Resistance (5:20)$(li)Rose Wine: Swim Speed (5:20)$(li)Sparkling Wine: Jump Boost II (5:20)$(li)Dessert Wine: Knockback Resistance (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -52,7 +52,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Cocoa: Haste (0:30), warms you up by 4°C$(li)Coffee: Speed (0:30), warms you up by 4°C$(li)Lemonade: Haste (0:30), cools you down by 2°C$(li)Nalivka: Strength (2:40), cools you down by 2°C$(li)Kvass: Strength (1:20), cools you down by 2°C$(li)Compote: Jump Boost II (0:30)"
+			"text": "$(li)Cocoa: Haste (0:30), warms you up by 4°C$(li)Coffee: Speed (0:30), warms you up by 4°C$(li)Lemonade: Haste (0:30), cools you down by 2°C$(li)Nalivka: Haste (2:40), cools you down by 2°C$(li)Kvass: Haste (1:20), cools you down by 2°C$(li)Compote: Jump Boost II (0:30)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,6 +1,7 @@
 "use strict";
 
 function registerTFGMoonMaterials(event) {
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
 	// Solar Panel Chemicals
 
@@ -85,7 +86,7 @@ function registerTFGMoonMaterials(event) {
 		.addOreByproducts('olivine', 'rutile', 'rutile')
 		.ingot()
 		.liquid()
-		.blastTemp(2800, 'mid', GTValues.VA[GTValues.HV])
+		.blastTemp(2800, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE, 

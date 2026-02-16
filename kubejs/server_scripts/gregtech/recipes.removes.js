@@ -768,6 +768,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_granite_red' })
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_echo_shard' })
 
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down' })
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down_distilled_water' })
