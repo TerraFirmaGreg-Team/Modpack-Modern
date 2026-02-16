@@ -316,14 +316,14 @@ const registerCreateRecipes = (event) => {
 		' A ',
 		' A '
 	], {
-		A: '#forge:plates/rubber',
+		A: '#forge:foils/rubber',
 		B: 'create:fluid_tank',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/spout')
 
 	event.recipes.gtceu.assembler('create:spout')
-		.itemInputs('create:fluid_tank', '2x #forge:plates/rubber')
+		.itemInputs('create:fluid_tank', '2x #forge:foils/rubber')
 		.itemOutputs('create:spout')
 		.duration(50)
 		.circuit(2)
