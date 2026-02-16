@@ -313,16 +313,17 @@ const registerCreateRecipes = (event) => {
 	// Жидкостный наполнитель
 	event.shaped('create:spout', [
 		'CBD',
+		' A ',
 		' A '
 	], {
-		A: '#forge:foils/rubber',
+		A: '#forge:plates/rubber',
 		B: 'create:fluid_tank',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/spout')
 
 	event.recipes.gtceu.assembler('create:spout')
-		.itemInputs('create:fluid_tank', '#forge:foils/rubber')
+		.itemInputs('create:fluid_tank', '2x #forge:plates/rubber')
 		.itemOutputs('create:spout')
 		.duration(50)
 		.circuit(2)
