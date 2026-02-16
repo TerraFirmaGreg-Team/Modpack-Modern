@@ -598,26 +598,26 @@ function registerTFGWoodenRecipes(event) {
         global.TFC_WOOD_TYPES.forEach(wood => {
 
             // Removed unused assets
-            event.remove({ id: `tfc:crafting/wood/${wood}_axle` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_clutch` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_axle` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_clutch` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` });
 
             // Removed recipe changes
-            event.remove({ id: `tfc:crafting/wood/${wood}_lumber_log` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_button` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_slab` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_slab_undo` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_lumber_planks` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_stairs` });
-            event.remove({ id: `tfc:crafting/wood/${wood}_stairs_undo` });
-            event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
-            event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
-            event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
-            event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
-            event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_lumber_log` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_button` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_slab` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_slab_undo` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_lumber_planks` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_stairs` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_stairs_undo` });
+                event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
+                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
+                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
+                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
+                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
             
             TFGWoodBuilder(
                 event, 
@@ -643,21 +643,20 @@ function registerTFGWoodenRecipes(event) {
             );
         });   
 
+        TFGMosaicWoodBuilder(
+            event,
+            'palm',
+            'tfc:wood/lumber/palm',
+            'tfc:wood/planks/palm',
+            'tfc:wood/planks/palm_mosaic',
+            'tfc:wood/planks/palm_stairs',
+            'tfc:wood/planks/palm_mosaic_stairs',
+            'tfc:wood/planks/palm_slab',
+            'tfc:wood/planks/palm_mosaic_slab'
+        );
+
         registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
         registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
-
-        // Outlier
-            TFGMosaicWoodBuilder(
-                event,
-                'palm',
-                'tfc:wood/lumber/palm',
-                'tfc:wood/planks/palm',
-                'tfc:wood/planks/palm_mosaic',
-                'tfc:wood/planks/palm_stairs',
-                'tfc:wood/planks/palm_mosaic_stairs',
-                'tfc:wood/planks/palm_slab',
-                'tfc:wood/planks/palm_mosaic_slab'
-            );
 
     // #endregion
 
@@ -708,6 +707,18 @@ function registerTFGWoodenRecipes(event) {
                 null
             );
 
+            TFGMosaicWoodBuilder(
+                event,
+                'bamboo',
+                'tfg:wood/lumber/bamboo',
+                'minecraft:bamboo_planks',
+                'minecraft:bamboo_mosaic',
+                'minecraft:bamboo_stairs',
+                'minecraft:bamboo_mosaic_stairs',
+                'minecraft:bamboo_slab',
+                'minecraft:bamboo_mosaic_slab'
+            );
+
             // Lumber from log
                 event.shapeless('8x tfg:wood/lumber/bamboo', 
                     ['minecraft:bamboo_block', '#forge:tools/saws']
@@ -718,19 +729,6 @@ function registerTFGWoodenRecipes(event) {
                     ['minecraft:stripped_bamboo_block', '#forge:tools/saws']
                 )
                 .id(`tfg:shapeless/bamboo_lumber_from_stripped_log`);
-
-            // Outlier
-                TFGMosaicWoodBuilder(
-                    event,
-                    'bamboo',
-                    'tfg:wood/lumber/bamboo',
-                    'minecraft:bamboo_planks',
-                    'minecraft:bamboo_mosaic',
-                    'minecraft:bamboo_stairs',
-                    'minecraft:bamboo_mosaic_stairs',
-                    'minecraft:bamboo_slab',
-                    'minecraft:bamboo_mosaic_slab'
-                );
 
     // #endregion
 
