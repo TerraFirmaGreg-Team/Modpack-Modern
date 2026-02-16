@@ -26,5 +26,4 @@ function registerTFGWoodItems(event) {
 	event.create('tfg:wood/lumber/bamboo')
 	.tag('tfc:lumber')
 	.texture('tfg:item/wood/lumber/bamboo')
-	.displayName('Bamboo Lumber')
 }
