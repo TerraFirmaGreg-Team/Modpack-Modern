@@ -80,6 +80,9 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: 'greate:mixing/brass_ingot' })
 
+	event.remove({ id: 'greate:shaped/copper_diving_helmet' })
+	event.remove({ id: 'greate:shaped/copper_backtank' })
+
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_distilled_water' })
