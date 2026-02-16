@@ -2369,6 +2369,12 @@ const registerCreateRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.cutter('tfg:weathered_iron_window_pane')
+		.itemInputs('3x create:weathered_iron_window')
+		.itemOutputs('8x create:weathered_iron_window_pane')
+		.duration(40)
+		.EUt(7)
+
 	// Rose quartz
 	
 	event.shaped('create:rose_quartz_lamp', [
