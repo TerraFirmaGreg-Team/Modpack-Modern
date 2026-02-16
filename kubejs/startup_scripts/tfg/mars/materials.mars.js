@@ -1,6 +1,7 @@
 "use strict";
 
 function registerTFGMarsMaterials(event) {
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
 	event.create('liquid_carbon_dioxide')
 		.liquid(100) //Not realistic but I want it to be cryogenic
@@ -89,7 +90,7 @@ function registerTFGMarsMaterials(event) {
 		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.ingot()
 		.liquid()
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.EV])
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV])
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
@@ -103,7 +104,7 @@ function registerTFGMarsMaterials(event) {
 		.ingot()
 		.liquid()
 		.components('2x ostrum', 'iodine')
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20*120))
 		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
 		.flags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FOIL)
 		.color(0xc696f2)
