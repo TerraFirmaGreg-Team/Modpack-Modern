@@ -9,6 +9,7 @@
 - Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
 - Drinkable alcohols can now be drank even when your hydration is full @Ujhik
 - The Strength effect is now exclusive to wines, but all wines also now have an additional effect! @Pyritie
+- Made deployers cheaper @Pyritie
 ### Bug fixes
 - Fixed the blur effect after being downed not going away
 - Fixed arrow duplication (#2089) @Ujhik
@@ -19,7 +20,8 @@
 - Fixed not being able to make aluminium double plates with LV machines (#3030) @Pyritie
 - Fixed not being able to recycle unfired firmalife oven parts @Pyritie
 - Fixed not being able to fire scraping knife molds (#3038) @Pyritie
-- Fixed some tree types not contributing to ambient bird noises
+- Fixed some tree types not contributing to ambient bird noises @Pyritie
+- Fixed startup issues when the system language is set to Turkish @Pyritie
 - Fixed a bunch of quests @Pyritie @Eilandor
 ### Translation updates
 - Russian @Nixieeunrare
