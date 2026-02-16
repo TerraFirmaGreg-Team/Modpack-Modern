@@ -1488,7 +1488,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "baguettelib-1.20.1-Forge-1.1.5.jar",
+                    "file_name": "baguettelib-1.20.1-Forge-1.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1496,16 +1496,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/lFRf3UUH/baguettelib-1.20.1-Forge-1.1.5.jar",
-                    "id": "lFRf3UUH",
+                    "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/vLbvKK04/baguettelib-1.20.1-Forge-1.1.6.jar",
+                    "id": "vLbvKK04",
                     "parent_id": "OfKzpbRU",
                     "hashes": {
-                        "sha512": "e5de5fea569e3ef00230b7f1638885424c00d7f3b9ac471682ceb667ee0f22776c05bce0b25c592a350e787861077e67ebcc067d4104f4b993d886aa4f31a6ed",
-                        "sha1": "7aaab6216e7fc72e1606b1e35f1f56a18f01153f"
+                        "sha512": "ef0b00bfee28289e709ddc8f13eae5be0e67d95908b55e4ba2445e7282d1eb97a88ee36a3a92e3c3f15787424ae8f53bf0fab371282157195679f6349f73da31",
+                        "sha1": "8d3c9551bbed4c2f2e8cb2b9a10d31bad4edb52d"
                     },
                     "required_dependencies": [],
-                    "size": 31868,
-                    "date_published": "2025-12-19T20:09:42.978615Z"
+                    "size": 31898,
+                    "date_published": "2026-02-12T14:03:37.429532Z"
                 }
             ]
         },
@@ -14155,7 +14155,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.21.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14164,23 +14164,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7601/125/TerraFirmaGreg-Core-Modern-0.8.21.jar",
-                    "id": "7601125",
+                    "url": "https://edge.forgecdn.net/files/7634/760/TerraFirmaGreg-Core-Modern-0.8.22.jar",
+                    "id": "7634760",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "aa5ce192eee7a877264b036c5ffd2da71bce2807",
-                        "md5": "4ef9491380e2916b6c2008876aba2192"
+                        "sha1": "64c1b73e7b957476a86a2e157f5ce0864ecb451d",
+                        "md5": "c11e3d99365dc676cea56f395035a48b"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 9631809,
-                    "date_published": "2026-02-09T20:45:16.347Z"
+                    "size": 9645381,
+                    "date_published": "2026-02-16T17:49:27.007Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.21.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14189,19 +14189,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/IoQCnHY3/TerraFirmaGreg-Core-Modern-0.8.21.jar",
-                    "id": "IoQCnHY3",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/hU4wEdlf/TerraFirmaGreg-Core-Modern-0.8.22.jar",
+                    "id": "hU4wEdlf",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "43af8080268115c1ee3bc36967d1f08cd1babc0f23f4d5bff1bfa3e9635169bf336da999ef185fc609fdd5a05b9e8a1d119699234780be6a4c64923f845b8db9",
-                        "sha1": "aa5ce192eee7a877264b036c5ffd2da71bce2807"
+                        "sha512": "f0f9f1523bce17e61c27d14803b8bbd75637d1c8752eeb22cd8b39ab111a3b36776df4691bcc684ebac3409f0b4c07432e790f04de1d900d2c9b90018129a969",
+                        "sha1": "64c1b73e7b957476a86a2e157f5ce0864ecb451d"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "7tG215v7"
                     ],
-                    "size": 9631809,
-                    "date_published": "2026-02-09T20:45:23.561477Z"
+                    "size": 9645381,
+                    "date_published": "2026-02-16T17:49:32.292058Z"
                 }
             ]
         },

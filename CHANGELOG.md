@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.22] - 16-02-2026
+### Changes
 - GregTech updated to 7.5.2, see [its changelog](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.5.0-1.20.1) for more details
 - Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
 - High Tier saws can Silk Harvest Ice (#3019) @Nebby1999
