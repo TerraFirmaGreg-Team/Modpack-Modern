@@ -2,11 +2,12 @@
 
 ## Unreleased
 ### Changes
+- GregTech updated to 7.5.2, see [its changelog](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.5.0-1.20.1) for more details
+- Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
 - High Tier saws can Silk Harvest Ice (#3019) @Nebby1999
 - Colored small vessels now have new textures backported from 1.21 TFC
 - The alloy smelter kaolin clay to powder recipe now uses a mold instead of a circuit (since steam machines don't have circuits) @Pyritie
 - Added more of Create's decorative stone blocks to the Domum whitelist
-- Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
 - Drinkable alcohols can now be drank even when your hydration is full @Ujhik
 - The Strength effect is now exclusive to wines, but all wines also now have an additional effect! @Pyritie
 - Made deployers cheaper @Pyritie
