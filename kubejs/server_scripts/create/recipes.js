@@ -691,11 +691,11 @@ const registerCreateRecipes = (event) => {
 		.addMaterialInfo(true)
 
     // Shadow steel casing
-    event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/lead'])
+    event.recipes.createItemApplication(['create:shadow_steel_casing'], ['#forge:stripped_logs', '#forge:plates/black_steel'])
     		.id('tfg:create/item_application/shadow_steel_casing')
 
     event.recipes.gtceu.assembler('tfg:create/shadow_steel_casing')
-        .itemInputs('#forge:stripped_logs', '#forge:plates/lead')
+        .itemInputs('#forge:stripped_logs', '#forge:plates/black_steel')
         .circuit(11)
         .itemOutputs('create:shadow_steel_casing')
         .duration(50)
@@ -1013,7 +1013,7 @@ const registerCreateRecipes = (event) => {
 		' CE'
 	], {
 		A: '#forge:cogwheels',
-		B: 'gtceu:ulv_machine_casing',
+		B: 'create:shadow_steel_casing',
 		C: 'create:brass_hand',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
@@ -1021,7 +1021,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/deployer')
 
 	event.recipes.gtceu.assembler('create:deployer')
-		.itemInputs('#forge:cogwheels', 'gtceu:ulv_machine_casing', 'create:brass_hand', 'create:electron_tube')
+		.itemInputs('#forge:cogwheels', 'create:shadow_steel_casing', 'create:brass_hand', 'create:electron_tube')
 		.itemOutputs('create:deployer')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
