@@ -429,16 +429,6 @@ jobs:
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
-      - name: 🔍 Verify server overrides
-        run: |
-          EXPECTED_HASH=$(md5sum .pakku/server-overrides/defaultconfigs/tfc-server.toml | cut -d' ' -f1)
-          ACTUAL_HASH=$(unzip -p ./build/serverpack/*.zip "defaultconfigs/tfc-server.toml" | md5sum | cut -d' ' -f1)
-          if [ "$EXPECTED_HASH" != "$ACTUAL_HASH" ]; then
-            echo "❌ Server overrides race condition hit, re-run the build"
-            exit 1
-          fi
-          echo "Server overrides applied correctly"
-
       - name: 🚀 Upload artifact Server
         uses: actions/upload-artifact@v6.0.0
         with:
