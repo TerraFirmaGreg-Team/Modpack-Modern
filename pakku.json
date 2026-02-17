@@ -10,13 +10,19 @@
         "kubejs",
         "tacz",
         "!kubejs/probe/**",
-        "!kubejs/assets/**"
+        "!kubejs/assets/**",
+        "!defaultconfigs/tfc-server.toml",
+        "!config/ftbbackups2.json",
+        "!defaultconfigs/ftbranks/ranks.snbt"
     ],
     "server_overrides": [
     ],
     "client_overrides": [
         "resourcepacks",
-        "kubejs/assets/**"
+        "kubejs/assets/**",
+        "defaultconfigs/tfc-server.toml",
+        "config/ftbbackups2.json",
+        "defaultconfigs/ftbranks/ranks.snbt"
     ],
     "projects": {
         "ambient-environment": {
