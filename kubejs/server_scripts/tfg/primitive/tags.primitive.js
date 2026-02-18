@@ -128,11 +128,21 @@ function registerTFGPrimitiveEntityTags(event) {
 	 * @type {string[]} - List of entities that can be scooped by fishing nets.
 	 */
 	const entities = [
-		'#tfc:small_fish',
+		'tfc:salmon',
+		'tfc:rainbow_trout',
+		'tfc:lake_trout',
+		'tfc:bluegill',
+		'tfc:largemouth_bass',
+		'tfc:smallmouth_bass',
+		'tfc:tropical_fish',
+		'tfc:crappie',
+		'tfc:cod',
+		'tfc:pufferfish',
 		'tfc:jellyfish',
 		'tfc:lobster',
 		'tfc:isopod',
 		'tfc:crayfish',
+		'wan_ancient_beasts:toxlacanth',
 		'starcatcher:fish'
 
 	];
