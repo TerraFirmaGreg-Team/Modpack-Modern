@@ -2737,6 +2737,7 @@
 				}
 			}
 			id: "379F434116632A89"
+			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.tools_tips.mattocks.subtitle}"

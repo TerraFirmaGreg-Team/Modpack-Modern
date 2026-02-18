@@ -55,6 +55,7 @@
 		{
 			id: "65E0B13E245D2E5F"
 			linked_quest: "379F434116632A89"
+			shape: "heart"
 			x: -24.5d
 			y: 1.0d
 		}
@@ -76,8 +77,8 @@
 			id: "61DCD50394B7FF0E"
 			linked_quest: "33263404ED38C6D2"
 			shape: "heart"
-			x: -22.5d
-			y: 4.0d
+			x: -16.5d
+			y: 4.5d
 		}
 		{
 			id: "6C8C3BBD2BA9853B"
@@ -119,6 +120,7 @@
 				"{quests.steam_age.horse_crank.desc.2}"
 			]
 			id: "1059288C22CB56BB"
+			optional: true
 			subtitle: "{quests.steam_age.horse_crank.subtitle}"
 			tasks: [{
 				id: "1F3EE2CB3B8875EC"
@@ -180,6 +182,7 @@
 			dependencies: ["0D0D461AE3A3F7BF"]
 			description: ["{quests.steam_age.water_wheel.desc}"]
 			id: "61DDB00751D1E7CB"
+			optional: true
 			subtitle: "{quests.steam_age.water_wheel.subtitle}"
 			tasks: [{
 				id: "1D82D22878EE6D21"
@@ -194,6 +197,7 @@
 			dependencies: ["0D0D461AE3A3F7BF"]
 			description: ["{quests.steam_age.windmill.desc}"]
 			id: "617E0AFB7BA3D7A8"
+			optional: true
 			subtitle: "{quests.steam_age.windmill.subtitle}"
 			tasks: [
 				{
@@ -234,6 +238,8 @@
 			]
 			description: ["{quests.steam_age.steel_encased_fan.desc}"]
 			id: "616E28977F3216D9"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.steel_encased_fan.subtitle}"
 			tasks: [{
 				id: "32279C21D7553637"
@@ -295,7 +301,8 @@
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.steam_engine.desc}"]
 			id: "183D47F04CAEBFA7"
-			size: 1.5d
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.steam_engine.subtitle}"
 			tasks: [
 				{
@@ -318,11 +325,13 @@
 			dependencies: ["7F14D2A34F480ACA"]
 			description: ["{quests.steam_age.mechanical_saw.desc}"]
 			id: "069825FBCFB0FB9C"
+			optional: true
 			rewards: [{
 				id: "64CA1397D201AF37"
 				item: "create:filter"
 				type: "item"
 			}]
+			shape: "heart"
 			subtitle: "{quests.steam_age.mechanical_saw.subtitle}"
 			tasks: [{
 				id: "5005121E0361DBD2"
@@ -337,6 +346,8 @@
 			dependencies: ["7F14D2A34F480ACA"]
 			description: ["{quests.steam_age.mechanical_harvester.desc}"]
 			id: "76871B4CEEEC70B8"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.mechanical_harvester.subtitle}"
 			tasks: [{
 				id: "34092F5FBDFB9761"
@@ -431,6 +442,7 @@
 			description: ["{quests.steam_age.steel_millstone.desc}"]
 			hide_dependent_lines: true
 			id: "5E4FC017E09ACF44"
+			optional: true
 			subtitle: "{quests.steam_age.steel_millstone.subtitle}"
 			tasks: [{
 				id: "3E3D4CD3283461DE"
@@ -664,7 +676,7 @@
 			]
 			title: "{quests.steam_age.steam_bloomery.title}"
 			x: -16.5d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["05CC8C5E63CD1DB8"]
@@ -809,23 +821,6 @@
 			title: "{quests.steam_age.wood_plank.title}"
 			x: -16.5d
 			y: 11.5d
-		}
-		{
-			dependencies: ["46FA9DD4755A5548"]
-			description: ["{quests.steam_age.extractor.desc}"]
-			id: "1DF4DBE41BB0B6FD"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.steam_age.extractor.subtitle}"
-			tasks: [{
-				id: "5C84856667925F76"
-				item: "gtceu:hp_steam_extractor"
-				type: "item"
-			}]
-			title: "{quests.steam_age.extractor.title}"
-			x: -16.5d
-			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1117,6 +1112,7 @@
 			]
 			icon: "gtceu:bronze_normal_fluid_pipe"
 			id: "0109231F33296868"
+			optional: true
 			size: 1.0d
 			subtitle: "{quests.steam_age.fluid_pipes.subtitle}"
 			tasks: [
@@ -1163,6 +1159,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum))"
 					}
 				}
+				title: "{quests.tasktype.item.any}"
 				type: "item"
 			}]
 			title: "{quests.steam_age.fluid_drums.title}"
@@ -1632,7 +1629,6 @@
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
 			id: "414835BADD34513F"
-			optional: true
 			subtitle: "{quests.steam_age.rotation_speed_controller.subtitle}"
 			tasks: [{
 				id: "74770DF964D26059"
@@ -1757,6 +1753,7 @@
 			description: ["{quests.steam_age.fuel_sources.desc}"]
 			icon: "createdeco:decal_fire"
 			id: "753A53733C6DFA04"
+			optional: true
 			shape: "circle"
 			subtitle: "{quests.steam_age.fuel_sources.subtitle}"
 			tasks: [{
@@ -1771,6 +1768,8 @@
 			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.large_water_wheel.desc}"]
 			id: "56A068A5488CB273"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.steam_age.large_water_wheel.subtitle}"
 			tasks: [{
 				id: "5772AD3BB700FD84"
