@@ -16,6 +16,9 @@ function registerGTCEURecyclingRecipes(event) {
 	// Iron Door
 	TFGHelpers.registerMaterialInfo('minecraft:iron_door', [GTMaterials.Iron, 2])
 
+	removeMaceratorRecipe(event, 'macerate_maintenance_hatch')
+	TFGHelpers.registerMaterialInfo('gtceu:maintenance_hatch', [GTMaterials.Steel, 8, GTMaterials.Rubber, 2, GTMaterials.Tin, 1])
+
 	// #region Hanging Signs
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
 		// Recycling Hardwood

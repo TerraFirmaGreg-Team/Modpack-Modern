@@ -8,7 +8,7 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_rainfall": 100
+			"min_rainfall": 125
 		},
 		{
 			"type": "minecraft:in_square"

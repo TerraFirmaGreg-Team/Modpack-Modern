@@ -954,6 +954,38 @@ global.TFC_EQUIPMENT_METALS = /** @type {const} */ ([
     "blue_steel"
 ]);
 
+global.TFC_METALS = /** @type {const} */ ([
+    "copper",
+    "bismuth_bronze",
+    "bronze",
+    "black_bronze",
+    "wrought_iron",
+    "steel",
+    "black_steel",
+    "red_steel",
+    "blue_steel",
+
+    "bismuth",
+    "brass",
+    "gold",
+    "rose_gold",
+    "silver",
+    "sterling_silver",
+    "nickel",
+    "zinc",
+    "tin",
+    "cast_iron"
+]);
+
+global.TFC_DOUGHS = /** @type {const} */ ([
+    "barley",
+    "maize",
+    "oat",
+    "rye",
+    "rice",
+    "wheat"
+]);
+
  global.TFC_BIOMES = /** @type {const} */ ([
      'tfc:badlands',
      'tfc:canyons',

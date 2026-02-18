@@ -26,7 +26,7 @@
 			id: "0E76B952D3BA3BDA"
 			linked_quest: "017019EB38F7A18C"
 			x: -0.75d
-			y: 9.0d
+			y: 8.5d
 		}
 		{
 			id: "66960076A74E9B79"
@@ -81,6 +81,14 @@
 			linked_quest: "0ABD326DC2551CBD"
 			x: 23.5d
 			y: 10.5d
+		}
+		{
+			id: "6CE2E1928A907A30"
+			linked_quest: "3AEAB1930F4CC034"
+			shape: "octagon"
+			size: 1.25d
+			x: 16.0d
+			y: 3.0d
 		}
 	]
 	quests: [
@@ -1991,8 +1999,8 @@
 					type: "item"
 				}
 			]
-			x: 3.75d
-			y: 12.75d
+			x: 3.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["5EC5566546591DEE"]
@@ -2394,6 +2402,21 @@
 			title: "{quests.extreme_voltage.nichromium_iode.title}"
 			x: 11.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7AC97F7850E31D95"]
+			description: ["{quests.extreme_voltage.schematic_terminal.desc}"]
+			id: "4B600E20614EB886"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.extreme_voltage.schematic_terminal.subtitle}"
+			tasks: [{
+				id: "30C659B8B4BDEF8A"
+				item: "gtceuterminal:schematic_interface"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.5d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]

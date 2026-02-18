@@ -183,4 +183,34 @@ function modifyRecyclingAmounts(material) {
 	TFGTagPrefix.toolHeadSaw.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadFile.modifyMaterialAmount(material, 1);
 	TFGTagPrefix.toolHeadKnife.modifyMaterialAmount(material, 1);
+	TFGTagPrefix.toolHeadScythe.modifyMaterialAmount(material, 1);
+
+	// TODO: uncomment out if this are ever modifiable
+	//GTToolType.SWORD.modifyMaterialAmount(material, 2);
+	//GTToolType.PICKAXE.modifyMaterialAmount(material, 1);
+	//GTToolType.AXE.modifyMaterialAmount(material, 1);
+	//GTToolType.SHOVEL.modifyMaterialAmount(material, 1);
+	//GTToolType.HOE.modifyMaterialAmount(material, 1);
+	//GTToolType.KNIFE.modifyMaterialAmount(material, 1);
+	//GTToolType.FILE.modifyMaterialAmount(material, 1);
+	//GTToolType.SAW.modifyMaterialAmount(material, 1);
+	//GTToolType.SPADE.modifyMaterialAmount(material, 2);
+	//GTToolType.MINING_HAMMER.modifyMaterialAmount(material, 2);
+	//GTToolType.SCYTHE.modifyMaterialAmount(material, 1);
+	//GTToolType.HARD_HAMMER.modifyMaterialAmount(material, 1);
+	//GTToolType.BUTCHERY_KNIFE.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_LV.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_HV.modifyMaterialAmount(material, 1);
+	//GTToolType.SCREWDRIVER_IV.modifyMaterialAmount(material, 1);
+	//GTToolType.WRENCH.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_LV.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_HV.modifyMaterialAmount(material, 2);
+	//GTToolType.WRENCH_IV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER_LV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTER_HV.modifyMaterialAmount(material, 2);
+	//GTToolType.WIRE_CUTTERIV.modifyMaterialAmount(material, 2);
+	//GTToolType.MORTAR.modifyMaterialAmount(material, 1);
+	//GTToolType.BUZZSAW.modifyMaterialAmount(material, 2);
 }

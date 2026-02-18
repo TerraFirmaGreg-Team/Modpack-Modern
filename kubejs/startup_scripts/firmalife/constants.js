@@ -127,7 +127,6 @@ global.FIRMALIFE_COOKING_RECIPE_COMPONENTS = [
     { input: 'firmalife:food/filled_pie', output: 'firmalife:food/cooked_pie', name: 'cooked_pie' },
     { input: 'firmalife:food/cocoa_beans', output: 'firmalife:food/roasted_cocoa_beans', name: 'roasted_cocoa_beans' },
     { input: 'firmalife:food/raw_pumpkin_pie', output: 'minecraft:pumpkin_pie', name: 'pumpkin_pie' },
-    { input: 'tfc:food/soybean', output: 'firmalife:food/dehydrated_soybeans', name: 'dehydrated_soybeans' },
     { input: 'firmalife:food/raw_lasagna', output: 'firmalife:food/cooked_lasagna', name: 'cooked_lasagna' },
     { input: 'firmalife:food/bacon', output: 'firmalife:food/cooked_bacon', name: 'cooked_bacon' },
     { input: '#firmalife:foods/slices', output: 'firmalife:food/toast', name: 'toast' }

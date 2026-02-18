@@ -44,7 +44,9 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_slab' })
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_stairs' })
 
-	event.remove({ id: /^firmalife:crafting\/.*_dough/ })
+	global.TFC_DOUGHS.forEach(dough => {
+		event.remove({ id: `firmalife:crafting/${dough}_dough` })
+	})
 
 	event.remove({ id: 'firmalife:pot/chocolate' })
 

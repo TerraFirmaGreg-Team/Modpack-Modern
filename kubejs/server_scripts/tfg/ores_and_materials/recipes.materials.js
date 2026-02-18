@@ -184,9 +184,9 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * @param {Internal.ItemStack} inputItem2
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  * @param {number} tierThreshold
- * Should be 4 for everything except double ingots, which should be 5
+ * TFC Anvil tier. Should be 4 for everything except double ingots, which should be 5
  * @param {number} nonTfcTier
- * What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
+ * GregTech voltage tier. What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
  */
 function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);

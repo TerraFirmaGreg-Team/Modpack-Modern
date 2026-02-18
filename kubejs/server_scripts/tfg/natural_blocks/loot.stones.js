@@ -27,6 +27,7 @@ function registerTFGRockLoots(event) {
 
 		if (rock.cobble != null) {
 			event.addBlockLootModifier(rock.cobble.block)
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addLoot(rock.cobble.block)
 		}
 

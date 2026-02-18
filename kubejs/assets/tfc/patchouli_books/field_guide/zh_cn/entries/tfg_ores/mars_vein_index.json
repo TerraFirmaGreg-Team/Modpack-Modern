@@ -650,7 +650,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石鹽",
+      "name": "岩盐",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
