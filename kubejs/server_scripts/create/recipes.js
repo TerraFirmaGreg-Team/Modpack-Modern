@@ -1851,9 +1851,9 @@ const registerCreateRecipes = (event) => {
 		.EUt(30)
 
 	event.shaped('create:stock_link', [
-		'FD ',
+		' D ',
 		'BAE',
-		'GC '
+		'GCF'
 	], {
 		A: 'gtceu:ulv_machine_casing',
 		B: '#forge:small_gears/red_alloy',
@@ -2112,6 +2112,17 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.addMaterialInfo(true)
+
+	event.shaped('create:linked_controller', [
+		'CAC',
+		'CBC',
+		'CDC'
+	], {
+		A: 'gtceu:lv_sensor',
+		B: 'create:andesite_casing',
+		C: '#minecraft:buttons',
+		D: '#forge:small_springs/red_alloy'
+	}).id('tfg:create/shaped/linked_controller')
 
 	event.shaped('create:rotation_speed_controller', [
 		'ECE',
