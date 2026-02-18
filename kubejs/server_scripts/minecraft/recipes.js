@@ -1053,6 +1053,8 @@ const registerMinecraftRecipes = (event) => {
 			.circuit(3)
 			.duration(50)
 			.EUt(2)
+
+		TFGHelpers.registerMaterialInfo(`minecraft:${x.type}_pressure_plate`, [GTMaterials.Air, 1])
 	})
 
 	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])
