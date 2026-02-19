@@ -43,13 +43,13 @@ function registerCreateFactoryLogisticsRecipes(event) {
 	event.shapeless('create_factory_logistics:factory_fluid_gauge', ['create_factory_logistics:factory_fluid_gauge'])
 		.id('create_factory_logistics:shapeless/factory_fluid_gauge_clear')
 
-	event.shaped('2x create_factory_logistics:factory_fluid_gauge', [
+	event.shaped('create_factory_logistics:factory_fluid_gauge', [
 		'CFC',
 		'DAE',
 		'FGF'
 	], {
 		A: 'create_factory_logistics:fluid_mechanism',
-		C: '#forge:screws/aluminium',
+		C: 'gtceu:diode',
 		D: '#forge:small_gears/red_alloy',
 		E: '#gtceu:circuits/lv',
 		F: '#forge:plates/rose_quartz',
@@ -58,7 +58,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 
 	event.recipes.gtceu.assembler('create_factory_logistics:factory_fluid_gauge')
 		.itemInputs('create_factory_logistics:fluid_mechanism', '2x #forge:screws/aluminium', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
-		.itemOutputs('2x create_factory_logistics:factory_fluid_gauge')
+		.itemOutputs('create_factory_logistics:factory_fluid_gauge')
 		.duration(150)
 		.EUt(16)
 		.addMaterialInfo(true)
