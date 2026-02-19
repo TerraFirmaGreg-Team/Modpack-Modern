@@ -1894,7 +1894,7 @@ const registerCreateRecipes = (event) => {
 		D: 'vintageimprovements:redstone_module'
 	}).id('tfg:create/shaped/redstone_requester')
 
-	event.shaped('2x create:factory_gauge', [
+	event.shaped('create:factory_gauge', [
 		'CFC',
 		'DAE',
 		'FGF'
@@ -1909,7 +1909,7 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('create:factory_gauge')
 		.itemInputs('create:precision_mechanism', '2x #forge:screws/aluminium', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
-		.itemOutputs('2x create:factory_gauge')
+		.itemOutputs('create:factory_gauge')
 		.duration(150)
 		.EUt(16)
 		.addMaterialInfo(true)
