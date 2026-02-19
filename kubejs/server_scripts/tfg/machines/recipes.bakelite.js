@@ -74,14 +74,14 @@ function registerTFGBakeliteRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:phenolic_board_mv')
-		.itemInputs('2x #forge:foils/bakelite', 'gtceu:wood_plate')
+		.itemInputs('2x #forge:foils/bakelite', 'gtceu:resin_circuit_board')
 		.inputFluids('gtceu:phenol 50')
 		.itemOutputs('gtceu:phenolic_circuit_board')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('tfg:phenolic_board_mv_pe')
-		.itemInputs('2x #forge:foils/polyethylene', 'gtceu:wood_plate')
+		.itemInputs('2x #forge:foils/polyethylene', 'gtceu:resin_circuit_board')
 		.inputFluids('gtceu:phenol 50')
 		.itemOutputs('gtceu:phenolic_circuit_board')
 		.duration(7.5 * 20)
