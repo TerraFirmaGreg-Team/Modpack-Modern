@@ -1001,6 +1001,12 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shapeless("minecraft:glow_ink_sac", [
+      "minecraft:glowstone_dust",
+      "minecraft:glowstone_dust",
+      "#forge:dyes"])
+    .id("tfg:shapeless/glow_ink_sac");
 		
 	//#endregion
 
