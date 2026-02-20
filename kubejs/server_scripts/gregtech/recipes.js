@@ -124,6 +124,26 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(4)
 
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
+		.duration(20*150)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
+		.duration(20*100.5)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(12)
+
 	// Move Superconductor to EV and make them cheap
 
 	event.remove({ id: 'gtceu:assembler/laser_cable' })
