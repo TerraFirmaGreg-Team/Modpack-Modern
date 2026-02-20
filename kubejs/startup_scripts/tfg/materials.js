@@ -343,6 +343,116 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0x6B7075)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	// Material for Mo-Si-B
+
+	event.create('tfg:argon_enriched_atmosphere')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(87))
+		.color(0x7F9CBF)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:furnace_exhaust_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(1200))
+		.color(0xAAAAAA)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:mo_si_b_off_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(1500))
+		.color(0xC0B283)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:medium_temperature_off_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(800))
+		.color(0xE0C080)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:hydroxide_decomposition_off_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(600))
+		.color(0xA0C0FF)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:linac_activated_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(300))
+		.color(0xFF4444)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:highly_active_off_gas')
+		.gas(new GTFluidBuilder()
+		.state(GTFluidState.GAS)
+		.temperature(1300))
+		.color(0xFFAA00)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:dirty_mo_si_b')
+		.color(0x77FF77)
+		.secondaryColor(0x77AAFF)
+		.iconSet(GTMaterialIconSet.ROUGH)
+		.dust()
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+			)
+
+	event.create('tfg:weak_mo_si_b')
+		.color(0xAAAAAA)
+		.secondaryColor(0x77AAFF)
+		.iconSet(GTMaterialIconSet.ROUGH)
+		.ingot()
+		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:worked_mo_si_b')
+		.color(0x77AAFF)
+		.secondaryColor(0x77FF77)
+		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.iconSet(GTMaterialIconSet.OPAL)
+		.ingot()
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+			)
+
+	event.create('tfg:homogenized_mo_si_b')
+		.color(0x88CCFF)
+		.secondaryColor(0x99FF88)
+		.iconSet(GTMaterialIconSet.FINE)
+		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.ingot()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:activated_mo_si_b')
+		.color(0xFF4444)
+		.secondaryColor(0x88CCFF)
+		.iconSet(GTMaterialIconSet.RADIOACTIVE)
+		.ingot()
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('tfg:mo_si_b')
+		.color(0x77AAFF)
+		.secondaryColor(0xCCCCCC)
+		.iconSet(GTMaterialIconSet.METALLIC)
+		.ingot()
+		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW
+			)
+
+
+
 
 
 	
