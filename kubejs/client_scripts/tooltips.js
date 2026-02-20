@@ -453,7 +453,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (00:30)")).blue());
 	})
 	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (01:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (01:20)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
@@ -485,7 +485,7 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (02:40)")).blue());
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (02:40)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
@@ -493,18 +493,23 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.haste").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
 	})
 	//event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
 	//	text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());

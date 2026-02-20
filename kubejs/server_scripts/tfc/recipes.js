@@ -296,44 +296,4 @@ const registerTFCRecipes = (event) => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
-	/**
-	 * @property {Array} tfcWoodRecyclingIndex - Wood recycling material index.
-	 */
-	const tfcWoodRecyclingIndex = [
-		['tfc:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
-		['tfc:wood/planks/{type}', ['{wood}', 8]],
-		['tfc:wood/planks/{type}_door', ['{wood}', 6]],
-		['tfc:wood/planks/{type}_trapdoor', ['{wood}', 4]],
-		['tfc:wood/planks/{type}_fence', ['{wood}', 4]],
-		['tfc:wood/planks/{type}_log_fence', ['{wood}', 8]],
-		['tfc:wood/planks/{type}_fence_gate', ['{wood}', 8]],
-		['tfc:wood/planks/{type}_slab', ['{wood}', 2]],
-		['tfc:wood/planks/{type}_stairs', ['{wood}', 3]],
-		['tfc:wood/planks/{type}_pressure_plate', ['{wood}', 4]],
-		['tfc:wood/planks/{type}_button', ['{wood}', 1]],
-		['tfc:wood/chest/{type}', ['{wood}', 16]],
-		['tfc:wood/trapped_chest/{type}', ['{wood}', 16, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]]
-	];
-	/**
-	 * @param {Array} materials
-	 * @param {string} woodMaterial
-	 * @return {Array}
-	 */
-	function resolveArgs(materials, woodMaterial) {
-		return materials.map(materials => materials === '{wood}' ? woodMaterial : materials);
-	};
-	global.TFC_HARDWOOD_TYPES.forEach(type => {
-		tfcWoodRecyclingIndex.forEach(([template, args]) => {
-			const item = template.replace('{type}', type);
-			const resolvedArgs = resolveArgs(args, GTMaterials.get('hardwood'));
-			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
-		});
-	});
-	global.TFC_SOFTWOOD_TYPES.forEach(type => {
-		tfcWoodRecyclingIndex.forEach(([template, args]) => {
-			const item = template.replace('{type}', type);
-			const resolvedArgs = resolveArgs(args, GTMaterials.Wood);
-			TFGHelpers.registerMaterialInfo(item, resolvedArgs);
-		});
-	});
 }
