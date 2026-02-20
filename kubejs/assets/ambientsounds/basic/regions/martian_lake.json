@@ -1,0 +1,18 @@
+{
+	"name": "martian_lake",
+	"biomes": [
+		"martian_river"
+	],
+	"features": [
+		"water"
+	],
+	"sounds": [
+		{
+			"name": "ocean",
+			"files": [
+				"ambientsounds:water.ocean"
+			],
+			"volume": 0.1
+		}
+	]
+}

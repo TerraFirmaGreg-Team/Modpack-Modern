@@ -66,6 +66,8 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.duration(50)
 		.EUt(7)
 
+	TFGHelpers.registerMaterialInfo('create:electron_tube', [GTMaterials.Air, 1])
+
 	// Vacuum Tubes
 	event.remove({ id: 'gtceu:shaped/vacuum_tube' })
 	event.replaceInput({ id: 'gtceu:assembler/vacuum_tube_plain' }, 'gtceu:steel_bolt', 'gtceu:resin_circuit_board')
@@ -88,6 +90,9 @@ function registerTFGElectronicComponentsRecipes(event) {
 	], 'gtceu:magnetic_iron_rod', [
 		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
 	]).transitionalItem('gtceu:magnetic_iron_rod').loops(16).id('tfg:sequenced_assembly/ulv_voltage_coil')
+
+	// Basic circuit board
+	event.replaceInput({ id: 'gtceu:assembler/basic_circuit_board' }, 'gtceu:wood_plate', 'gtceu:resin_circuit_board')
 
 	// LV basic circuit
 	event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })

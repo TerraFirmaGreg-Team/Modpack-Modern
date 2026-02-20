@@ -687,7 +687,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/200 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 217$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/250 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 20 — 217$(br)$(thing)Tamanho$(): 50$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Calcopirita e Realgar",
       "type": "patchouli:text",
       "anchor": "surface_copper"
@@ -729,7 +729,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 16%$(br)$(thing)Fonte de$(): Alumínio, Oxigênio$(br)$(thing)Fórmula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "text": "$(thing)Porcentagem$(): 22%$(br)$(thing)Fonte de$(): Alumínio, Oxigênio$(br)$(thing)Fórmula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -751,31 +751,6 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 16%$(br)$(thing)Fonte de$(): Arsênico$(br)$(thing)Fórmula$(): As₄S₄$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Arsenicose (Inalação)$(/t)$()",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Cassiterita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cassiterite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Estanho$(br)$(thing)Fórmula$(): SnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -940,7 +915,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/190 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 210$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/230 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -32 — 140$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Ardósia, Diorito, Filito, Gabro, Gnaisse, Granito, Mármore, Quartzito, Xisto",
       "title": "Cianita, Mica e Bauxita",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2513,7 +2488,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 63%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₃O₄",
+      "text": "$(thing)Porcentagem$(): 60%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -2533,7 +2508,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 22%$(br)$(thing)Fonte de$(): Ferro, Vanádio$(br)$(thing)Fórmula$(): (Fe₃O₄)V",
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Fonte de$(): Ferro, Vanádio$(br)$(thing)Fórmula$(): (Fe₃O₄)V",
       "type": "patchouli:multiblock"
     },
     {
@@ -2553,7 +2528,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 9%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Ouro$(br)$(thing)Fórmula$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -2573,7 +2548,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 4%$(br)$(thing)Fonte de$(): Cromo$(br)$(thing)Fórmula$(): FeCr₂O₄$(br)$(thing)Perigo$(): $(c)$(t:Requer Luvas de Borracha)Irritante (Contato com a Pele)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Cromo$(br)$(thing)Fórmula$(): FeCr₂O₄$(br)$(thing)Perigo$(): $(c)$(t:Requer Luvas de Borracha)Irritante (Contato com a Pele)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2859,7 +2834,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/170 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 12$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Gabro, Granito, Riolito",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -32 — 60$(br)$(thing)Tamanho$(): 40$(br)$(thing)Altura$(): 12$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Gabro, Granito, Riolito",
       "title": "Ouro, Limonita e Hematita",
       "type": "patchouli:text",
       "anchor": "normal_gold"

@@ -5,7 +5,7 @@
 	"may_drink_when_full": true,
 	"effects": [
 		{
-			"type": "minecraft:strength",
+			"type": "minecraft:haste",
 			"duration": 3200,
 			"amplifier": 0
 		},

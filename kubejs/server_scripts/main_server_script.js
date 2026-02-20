@@ -22,6 +22,7 @@ ServerEvents.tags('item', event => {
 	registerCreateConnectedItemTags(event)
 	registerCreateDecoItemTags(event)
 	registerCreateFactoryLogisticsItemTags(event)
+	registerCreateHypertubeItemTags(event)
 	registerDeaFissionItemTags(event)
 	registerDomumOrnamentumItemTags(event)
 	registerDiggerHelmetItemTags(event)
@@ -242,6 +243,7 @@ ServerEvents.recipes(event => {
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
+	registerCreateSoundOfSteamRecipes(event)
 	//registerCreateStockBridgeRecipes(event)
 	registerDeaFissionRecipes(event)
 	registerDiggerHelmetRecipes(event)
@@ -287,11 +289,11 @@ ServerEvents.recipes(event => {
 	registerTFCGurmanRecipes(event)
 	registerTFGRecipes(event)
 	registerTFCTextileRecipes(event)
-	registerTFCScrapingKnivesRecipes(event)
 	registerToolBeltRecipes(event)
 	registerVintageImprovementsRecipes(event)
 	registerWaterFlasksRecipes(event)
 	registerWABRecipes(event)
+	registerTFCScrapingKnivesRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {

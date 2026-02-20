@@ -1330,12 +1330,12 @@
 			id: "12C0BC3514FCEF96"
 			subtitle: "{quests.ore_proc.gem_slurry.subtitle}"
 			tasks: [{
-				id: "57587D74BD9DA754"
+				id: "730EA57B64DE54C0"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:crushed_ruby_ore)item(gtceu:crushed_sapphire_ore)item(gtceu:crushed_green_sapphire_ore))"
+						"ftbfiltersystem:filter": "or(item(gtceu:crushed_ruby_ore)item(gtceu:crushed_sapphire_ore)item(gtceu:crushed_green_sapphire_ore)item(gtceu:purified_ruby_ore)item(gtceu:purified_sapphire_ore)item(gtceu:purified_green_sapphire_ore))"
 					}
 				}
 				title: "{quests.ore_proc.gem_slurry.task}"

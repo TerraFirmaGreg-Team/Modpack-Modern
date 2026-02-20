@@ -2,13 +2,78 @@
 
 ## Unreleased
 ### Changes
-- Added artisan table recipes for all pipe mold sizes (#2983) @Redeix
-- Added optional chimes compat. (#2973) @TreyR9
-
 ### Bug fixes
+### Translation updates
+
+## [0.11.22] - 16-02-2026
+### Changes
+- GregTech updated to 7.5.2, see [its changelog](https://github.com/GregTechCEu/GregTech-Modern/releases/tag/v7.5.0-1.20.1) for more details
+- Blaze burners no longer work outside of Earth @Mqrius @thederpysockdude123
+- High Tier saws can Silk Harvest Ice (#3019) @Nebby1999
+- Colored small vessels now have new textures backported from 1.21 TFC
+- The alloy smelter kaolin clay to powder recipe now uses a mold instead of a circuit (since steam machines don't have circuits) @Pyritie
+- Added more of Create's decorative stone blocks to the Domum whitelist
+- Drinkable alcohols can now be drank even when your hydration is full @Ujhik
+- The Strength effect is now exclusive to wines, but all wines also now have an additional effect! @Pyritie
+- Made deployers cheaper @Pyritie
+### Bug fixes
+- Fixed the blur effect after being downed not going away
+- Fixed arrow duplication (#2089) @Ujhik
+- Fixed the blaze burner liquid fuel list not properly working on servers @Mqrius
+- Fixed dimension indicator icons duplicating when increasing the energy tier display @BlueBoat29
+- Fixed the face mask new curio slot not actually preventing hazards @Bumperdo09
+- Fixed mars crop seeds not going in the seed pouch (#3058) @Pyritie
+- Fixed not being able to make aluminium double plates with LV machines (#3030) @Pyritie
+- Fixed not being able to recycle unfired firmalife oven parts @Pyritie
+- Fixed not being able to fire scraping knife molds (#3038) @Pyritie
+- Fixed some tree types not contributing to ambient bird noises @Pyritie
+- Fixed startup issues when the system language is set to Turkish @Pyritie
+- Fixed a bunch of quests @Pyritie @Eilandor
+### Translation updates
+- Russian @Nixieeunrare
+- German @Enderderschander
+- Ukranian @MetEnBouldry
+- Chinese (simplified) @jmecn
+
+## [0.11.21] - 09-02-2026
+### Breaking changes
+If you missed it, [0.11.19](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.11.19) and [0.11.20](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/releases/tag/0.11.20) were Alpha versions with many important breaking changes. Be sure to read their changelogs as well!
+- And because we didn't make it a big enough deal yet, **the railgun now works on servers**!
+- Greate Encased Fans now work differently. Water (or distilled water) needs to be pumped into the encased fan itself, instead of having a source block in front. Items also must be on a Depot or Belt in order to be washed, instead of the floor. Processing time decreases with fan RPM. Regular water produces fewer byproducts than distilled water.
+- Some recipe changes to AE2 mainly to ExtandedAE to avoid conflicts, check your patterns
+### Changes
+- Large Solar Array MK2 is now craftable after reaching Mars rather than at the end of the Fission Line
+- Added artisan table recipes for all pipe mold sizes (#2983) @Redeix
+- You can now pick up foxes @Pyritie
+- Added glass batch to glass vial extruder recipe (#2999) @Inceitious
+- Added a new Face curios slot for Create's Goggles and the Face Mask (#2992) @Bumperdo09
+- Added more recycling recipes for wood related items (#2986) @Redeix
+- Added soybean + sea water to soy mixture recipe (#2984) @Redeix
+- Added optional [Chimes](https://www.curseforge.com/minecraft/mc-mods/chimes) compat. (#2973) @TreyR9
+- Added optional [Create: Sound of Steam](https://www.curseforge.com/minecraft/mc-mods/create-sound-of-steam) compat (#2324) @samtsa
+- Added Universal Bags of Composts (#3016) @Nebby1999
+### Bug fixes
+- Fixed the T1 empty fuel rod being uncraftable (#3008) @TomPlop
+- Fixed fission fuel rods looking for the wrong items to recycle @TomPlop
+- Added a missing recipe for the Heat Input Hatch that was making progressing on the Fission line after Uranium impossible @TomPlop
+- Added a missing recipe for the Titanium Exhaust Vent that was making building the Cooling Tower impossible @TomPlop
 - Fixed incorrect mechanical mixer recipes for weak and regular colored steel dust (#2977) @Pyritie
 - Fixed cobble breaking into two cobble blocks (#2980) @Pyritie
+- Fixed a recycling dupe with maintenance hatches (#3003) @Pyritie
+- Fixed warped and crimson lamella giving the wrong saplings (#2990) @Pyritie
+- Fixed recipe conflict with soybeans (#2988) @Pyritie
+- Fixed TFC pure fertilisers to GT fertiliser recipe amounts being reversed (#2985) @Coox1e
+- Fixed pandas not dropping meat @Pyritie
+- Fixed plutonium ores existing @Pyritie
+- Fixed names of non-TFC materials in ingot piles @Ujhik
+- Fixed cricket sounds on mars @Pyritie
+- Added recipe for wooden bracket (#3007) @Pyritie
 ### Translation updates
+- Ukranian @MetEnBouldry
+- German @Enderderschander
+- Russian @Nixieeunrare + @Petr211071
+- Chinese (simplified) @jmecn
+- Spanish @NikoNeko17
 
 ## [0.11.20] - 04-02-2026
 ### Changes

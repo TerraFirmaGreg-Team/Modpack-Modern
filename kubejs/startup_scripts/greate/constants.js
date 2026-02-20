@@ -34,6 +34,9 @@ global.GREATE_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:darmstadtium_alloy",
     "gtceu:neutronium_alloy",
 
+    "greate:rubber_window",
+    "greate:rubber_window_pane",
+
     "gtceu:neutronium_whisk",
     "greate:polyethylene_belt_connector",
     "greate:polytetrafluoroethylene_belt_connector",

@@ -262,6 +262,7 @@
 			guide_page: "tfc:field_guide tfc:firmalife/beekeeping"
 			icon: "firmalife:beeswax"
 			id: "1071B804483BB882"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.beekeeping.subtitle}"
 			tasks: [{
 				id: "07A6195AEE51DAB7"
@@ -627,6 +628,7 @@
 			guide_page: "tfc:field_guide tfc:mechanics/decay"
 			icon: "minecraft:clock"
 			id: "4047EE998BC4CD03"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.preservation.subtitle}"
 			tasks: [{
 				id: "29CDDE027CC8B84A"
@@ -1239,6 +1241,7 @@
 			guide_page: "tfc:field_guide tfc:firmalife/greenhouse"
 			icon: "firmalife:large_planter"
 			id: "07FBA022050DA24A"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.greenhouse.subtitle}"
 			tasks: [{
 				id: "63D7E5FDBE2B66D5"
@@ -1588,6 +1591,7 @@
 				}
 			}
 			id: "28333A7852497C4D"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.status_effects.subtitle}"
 			tasks: [{
 				id: "1F96808948B568A2"
@@ -1757,7 +1761,9 @@
 		{
 			dependencies: ["4AA0EBFBA5D8788C"]
 			description: ["{quests.tfg_tips.beneath_prep.desc}"]
+			icon: "create:clipboard"
 			id: "4A8910950F638BB5"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.beneath_prep.subtitle}"
 			tasks: [{
 				id: "2E029DE0398319F2"
@@ -1859,6 +1865,7 @@
 				}
 			}
 			id: "098739E441CF565D"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.beneath_clothes.subtitle}"
 			tasks: [{
 				id: "70EF47E8FD504806"
@@ -1887,7 +1894,9 @@
 		{
 			dependencies: ["70DA01DFDAE54224"]
 			description: ["{quests.tfg_tips.fuck_go_back.desc}"]
+			icon: "minecraft:ladder"
 			id: "4FD6D93811DADCE4"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.fuck_go_back.subtitle}"
 			tasks: [{
 				id: "6D482B9189A97E0F"
@@ -2196,6 +2205,57 @@
 			title: "{quests.tfg_tips.food_automation.title}"
 			x: 0.0d
 			y: -12.0d
+		}
+		{
+			dependencies: ["2EFB241490502DB3"]
+			description: ["{quests.tfg_tips.composter.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/composter"
+			id: "264D138DFFE13BD0"
+			subtitle: "{quests.tfg_tips.composter.subtitle}"
+			tasks: [{
+				id: "2EE61FD71FE330D3"
+				item: "tfc:composter"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.composter.title}"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["264D138DFFE13BD0"]
+			description: ["{quests.tfg_tips.universal_compost.desc}"]
+			id: "13E4AE4F46A1A1A0"
+			subtitle: "{quests.tfg_tips.universal_compost.subtitle}"
+			tasks: [
+				{
+					id: "6F3BD81EAD7CC109"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:universal_compost_browns)item(tfg:universal_compost_greens))"
+						}
+					}
+					title: "{quests.tfg_tips.universal_compost.task.1}"
+					type: "item"
+				}
+				{
+					id: "787E7A402B3162B5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfg:universal_compost_browns_bag)item(tfg:universal_compost_greens_bag))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.universal_compost.task.2}"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.universal_compost.title}"
+			x: 4.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

@@ -338,6 +338,10 @@ function registerTFGItemSize(event) {
 		"medium",
 		"Molds"
 	)
+
+	//Universal Compost Bags
+	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
+	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
 }
 
 //#endregion

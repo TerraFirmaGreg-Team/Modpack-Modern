@@ -1,5 +1,9 @@
 "use strict";
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 function registerTFGCompostRecipes(event) {
 	//#region Fertiliser
 	event.recipes.gtceu.mixer('tfg:fertilizer')
@@ -208,4 +212,26 @@ function registerTFGCompostRecipes(event) {
 		.itemOutputs(Item.of('tfg:universal_compost_browns', 4))
 		.duration(20)
 		.EUt(8)
+
+	//Universal Brown Compost Bag
+	event.shapeless(Item.of('tfg:universal_compost_browns_bag', 1),
+	[
+		"4x tfg:universal_compost_browns"
+	]).id('tfg:shapeless/universal_compost_browns_bag')
+
+	event.shapeless(Item.of('tfg:universal_compost_browns', 4),
+	[
+		"tfg:universal_compost_browns_bag"	
+	]).id("tfg:shapeless/universal_compost_browns_from_bag")
+
+	//Universal Green Compost Bag
+	event.shapeless(Item.of('tfg:universal_compost_greens_bag', 1),
+	[
+		"4x tfg:universal_compost_greens"
+	]).id('tfg:shapeless/universal_compost_greens_bag')
+
+	event.shapeless(Item.of('tfg:universal_compost_greens', 4),
+	[
+		"tfg:universal_compost_greens_bag"	
+	]).id("tfg:shapeless/universal_compost_greens_from_bag")
 }
