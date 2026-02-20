@@ -1,14 +1,5 @@
 function registerTFGMVMaterialRecipes(event) {
 
-    /*
-    event.recipes.gtceu.chemical_reactor(`seed_oil_alcohol_biodiesel`)
-		.inputFluids("#tfg:alcohols 1000", Fluid.of('gtceu:seed_oil', 6000))
-		.itemInputs('#forge:tiny_dusts/sodium_hydroxide')
-		.outputFluids(Fluid.of('gtceu:bio_diesel', 6000))
-		.duration(20 * 10)
-		.EUt(GTValues.VHA[GTValues.ULV])
-    */
-
     event.recipes.gtceu.mixer('tfg:weak_inconel_718')
 		.inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 12000))
 		.itemInputs(
