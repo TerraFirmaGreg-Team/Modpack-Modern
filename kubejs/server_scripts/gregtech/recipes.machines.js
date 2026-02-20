@@ -326,20 +326,6 @@ function registerGTCEuMachineRecipes(event) {
 
 	// #region Other steam machines
 
-	removeMaceratorRecipe(event, 'macerate_hp_steam_extractor')
-	event.recipes.gtceu.shaped('gtceu:hp_steam_extractor', [
-		'BEB',
-		'CAC',
-		'DFD'
-	], {
-		A: 'gtceu:steel_brick_casing',
-		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
-		C: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Steel, 1),
-		D: ChemicalHelper.get(TagPrefix.plate, GTMaterials.WroughtIron, 1),
-		E: '#forge:glass_panes',
-		F: ChemicalHelper.get(TagPrefix.ring, GTMaterials.BlackSteel, 1)
-	}).addMaterialInfo().id('gtceu:shaped/steam_extractor_steel')
-
 	removeMaceratorRecipe(event, 'macerate_hp_steam_macerator')
 	event.recipes.gtceu.shaped('gtceu:hp_steam_macerator', [
 		'BFB',

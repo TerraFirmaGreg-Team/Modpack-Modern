@@ -160,6 +160,26 @@ function registerDomumOrnamentumBlockTags(event) {
         "#tfg:ad_astra_desh_block",
         "#tfg:ad_astra_ostrum_block",
         "#tfg:ad_astra_calorite_block",
+        // Create blocks
+        "#create:stone_types/diorite",
+        "#create:stone_types/andesite",
+        "#create:stone_types/limestone",
+        "#create:stone_types/granite",
+        "#create:stone_types/deepslate",
+        "#create:stone_types/dripstone",
+        "#tfg:stone_types/keratophyre",
+        "#create:stone_types/calcite",
+        "#create:stone_types/tuff",
+        "#tfg:stone_types/suevite",
+        "#tfg:stone_types/certus",
+        "#tfg:stone_types/thermal_vent_deposit",
+        "#tfg:stone_types/reconstituted_stone",
+        "#create:stone_types/asurine",
+        "#create:stone_types/ochrum",
+        "#create:stone_types/crimsite",
+        "#create:stone_types/veridium",
+        "#create:stone_types/scoria",
+        "#create:stone_types/scorchia",
     ];
 
     materials.forEach((material) => {

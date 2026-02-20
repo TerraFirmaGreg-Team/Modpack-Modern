@@ -797,6 +797,7 @@
 			description: ["{quests.low_voltage.soldering_alloy.desc}"]
 			icon: "gtceu:soldering_alloy_bucket"
 			id: "713C8D6A20BF3A0E"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.soldering_alloy.subtitle}"
@@ -1966,14 +1967,12 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"713C8D6A20BF3A0E"
-				"7C4807A247AF36A1"
-			]
+			dependencies: ["7C4807A247AF36A1"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.stock_link.desc}"]
 			disable_toast: true
 			id: "50FE830DA6F403B2"
+			optional: true
 			subtitle: "{quests.create_logistics.stock_link.subtitle}"
 			tasks: [{
 				id: "7B71B5DBEFD84C1F"
@@ -1987,6 +1986,7 @@
 		{
 			description: ["{quests.low_voltage.lv_laser_engraver.desc}"]
 			id: "383A14A5C65B3ADF"
+			optional: true
 			subtitle: "{quests.low_voltage.lv_laser_engraver.subtitle}"
 			tasks: [{
 				id: "4CB619C294C16642"
@@ -2024,6 +2024,28 @@
 			title: "{quests.tfg_tips.magnets.title}"
 			x: 7.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["292938760AB9A12B"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
+			id: "62737DC459F6F5F5"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.medium_voltage.mv_jetpack.subtitle}"
+			tasks: [{
+				id: "78D9D6C90B1C751E"
+				item: {
+					Count: 1
+					id: "gtceu:liquid_fuel_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.mv_jetpack.title}"
+			x: 1.0d
+			y: 9.5d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

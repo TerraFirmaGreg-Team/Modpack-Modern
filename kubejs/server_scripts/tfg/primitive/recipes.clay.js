@@ -126,7 +126,7 @@ function registerTFGClayRecipes(event) {
 	// Kaolinite Clay - regular smelting recipes can't have multiple inputs
 	event.recipes.gtceu.alloy_smelter('tfg:kaolinite')
 		.itemInputs('tfc:kaolin_clay')
-		.circuit(1)
+		.notConsumable('gtceu:ball_casting_mold')
 		.chancedOutput('tfc:powder/kaolinite', 2000, 0)
 		.duration(100)
 		.EUt(16)

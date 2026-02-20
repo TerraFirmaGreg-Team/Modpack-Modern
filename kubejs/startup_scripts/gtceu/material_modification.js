@@ -79,7 +79,11 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.DRILL_IV,
 		GTToolType.SCREWDRIVER,
 		GTToolType.SCREWDRIVER_LV,
+		GTToolType.SCREWDRIVER_HV,
+		GTToolType.SCREWDRIVER_IV,
 		GTToolType.CHAINSAW_LV,
+		GTToolType.CHAINSAW_HV,
+		GTToolType.CHAINSAW_IV,
 		GTToolType.WRENCH,
 		GTToolType.WRENCH_LV,
 		GTToolType.WRENCH_HV,
@@ -355,9 +359,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
+	GTMaterials.Iron.getProperties().removeProperty(PropertyKey.TOOL);
 	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 	// Hide netherite too
-	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
+	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.TOOL);
 
 	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		let toolProperty = material.getProperty(PropertyKey.TOOL);

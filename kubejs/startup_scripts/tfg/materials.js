@@ -3,6 +3,8 @@
 
 const registerTFGMaterials = (event) => {
 
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
+
 	//#region placeholder materials
 	event.create('unknown')
 		.color('0xFFFFFF')
@@ -149,7 +151,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.liquid()
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20*120))
 		.rotorStats(250, 90, 2 ,620)
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
@@ -237,7 +239,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet('dull')
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
-		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
+		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(GTMaterialFlags.GENERATE_PLATE)
 
 	// #endregion

@@ -27,6 +27,8 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('tfc:fruit_tree_leaves', 'firmalife:plant/fig_leaves')
     event.add('minecraft:leaves', 'firmalife:plant/cocoa_leaves')
     event.add('minecraft:leaves', 'firmalife:plant/fig_leaves')
+
+    event.add('tfc:clay_recycle_5', '#firmalife:clay_recycle_5')
 }
 
 const registerFirmaLifeBlockTags = (event) => {

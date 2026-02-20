@@ -27,40 +27,38 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.addMaterialInfo(true)
 
 
-	event.recipes.gtceu.shaped('2x create_factory_logistics:jar_packager', [
-		'AAA',
+	event.recipes.gtceu.shaped('create_factory_logistics:jar_packager', [
+		' A ',
 		'BCD',
-		'EFE'
+		' E '
 	], {
-		A: '#forge:rods/copper',
-		B: '#forge:springs/copper',
-		C: 'gtceu:ulv_machine_casing',
-		D: 'create:fluid_tank',
-		E: 'create:electron_tube',
-		F: '#tfg:metal_bars'
+		A: '#forge:small_gears/red_alloy',
+		B: '#forge:springs/wrought_iron',
+		C: 'create:copper_casing',
+		D: 'tfc:empty_jar',
+		E: 'create:electron_tube'
 	}).addMaterialInfo().id('create_factory_logistics:shaped/jar_packager')
 
 		
 	event.shapeless('create_factory_logistics:factory_fluid_gauge', ['create_factory_logistics:factory_fluid_gauge'])
 		.id('create_factory_logistics:shapeless/factory_fluid_gauge_clear')
 
-	event.shaped('2x create_factory_logistics:factory_fluid_gauge', [
-		'ABA',
-		'CDE',
+	event.shaped('create_factory_logistics:factory_fluid_gauge', [
+		'CFC',
+		'DAE',
 		'FGF'
 	], {
-		A: '#forge:screws/aluminium',
-		B: 'create_factory_logistics:fluid_mechanism',
-		C: '#gtceu:diodes',
-		D: 'create:stock_link',
+		A: 'create_factory_logistics:fluid_mechanism',
+		C: 'gtceu:diode',
+		D: '#forge:small_gears/red_alloy',
 		E: '#gtceu:circuits/lv',
 		F: '#forge:plates/rose_quartz',
 		G: '#forge:tools/wrenches'
 	}).id('create_factory_logistics:shaped/factory_fluid_gauge')
 
 	event.recipes.gtceu.assembler('create_factory_logistics:factory_fluid_gauge')
-		.itemInputs('create_factory_logistics:fluid_mechanism', '2x #forge:screws/aluminium', '#gtceu:diodes', 'create:stock_link', '#gtceu:circuits/lv', '2x #forge:plates/rose_quartz')
-		.itemOutputs('2x create_factory_logistics:factory_fluid_gauge')
+		.itemInputs('create_factory_logistics:fluid_mechanism', '2x #forge:screws/aluminium', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
+		.itemOutputs('create_factory_logistics:factory_fluid_gauge')
 		.duration(150)
 		.EUt(16)
 		.addMaterialInfo(true)
@@ -70,31 +68,24 @@ function registerCreateFactoryLogisticsRecipes(event) {
 		.id('create_factory_logistics:shapeless/network_link_clear')
 
 	event.shaped('create_factory_logistics:network_link', [
-		'ABC',
-		'DEB',
+		'AD ',
+		'CEB',
 		'FG '
 	], {
 		A: '#forge:tools/wrenches',
-		B: '#forge:screws/steel',
-		C: 'gtceu:fluid_detector_cover',
+		B: '#forge:small_gears/red_alloy',
+		C: '#forge:plates/rose_quartz',
 		D: 'create:transmitter',
-		E: 'create:brass_casing',
+		E: 'gtceu:ulv_machine_casing',
 		F: '#forge:tools/screwdrivers',
-		G: '#gtceu:circuits/lv'
+		G: '#gtceu:circuits/ulv'
 	}).id('create_factory_logistics:shaped/network_link')
 
 	event.recipes.gtceu.assembler('create_factory_logistics:network_link')
-		.itemInputs('create:brass_casing', 'gtceu:fluid_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+		.itemInputs('gtceu:ulv_machine_casing', '#gtceu:circuits/ulv', 'create:transmitter', '#forge:small_gears/red_alloy', '#forge:plates/rose_quartz')
 		.itemOutputs('create_factory_logistics:network_link')
 		.duration(150)
 		.EUt(16)
+		.circuit(2)
 		.addMaterialInfo(true)
-
-	event.recipes.gtceu.assembler('create_factory_logistics:network_link_tin')
-		.itemInputs('create:brass_casing', 'gtceu:fluid_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')
-		.inputFluids(Fluid.of('gtceu:tin', 144))
-		.itemOutputs('create_factory_logistics:network_link')
-		.duration(150)
-		.EUt(16)
 }
