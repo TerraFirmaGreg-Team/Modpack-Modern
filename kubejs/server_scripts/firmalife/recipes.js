@@ -313,7 +313,7 @@ const registerFirmaLifeRecipes = (event) => {
 	], {
 		A: '#forge:saw_heads/steel',
 		B: '#forge:rods/steel',
-		C: 'vintageimprovements:redstone_module',
+		C: '#forge:small_gears/red_alloy',
 		D: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('firmalife:crafting/sweeper')
 
@@ -323,7 +323,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'EE '
 	], {
 		A: '#forge:plates/steel',
-		B: 'vintageimprovements:redstone_module',
+		B: '#forge:small_gears/red_alloy',
 		C: '#forge:rods/steel',
 		D: '#forge:tools/wrenches',
 		E: '#forge:hoe_heads/steel'

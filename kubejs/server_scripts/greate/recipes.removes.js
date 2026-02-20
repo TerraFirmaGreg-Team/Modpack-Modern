@@ -59,6 +59,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: /^greate:(mixing|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements)\/.*/ })
 	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
 
+	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shapeless' })
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
@@ -79,6 +80,9 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
 
 	event.remove({ id: 'greate:mixing/brass_ingot' })
+
+	event.remove({ id: 'greate:shaped/copper_diving_helmet' })
+	event.remove({ id: 'greate:shaped/copper_backtank' })
 
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })

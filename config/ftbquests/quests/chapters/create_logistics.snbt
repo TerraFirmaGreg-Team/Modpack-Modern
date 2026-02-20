@@ -43,6 +43,7 @@
 				"{quests.create_logistics.packager.desc.2}"
 			]
 			id: "09D5BD00E3308E76"
+			optional: true
 			size: 2.0d
 			subtitle: "{quests.create_logistics.packager.subtitle}"
 			tasks: [{
@@ -58,6 +59,7 @@
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.package_filter.desc}"]
 			id: "0076B09B874EF126"
+			optional: true
 			subtitle: "{quests.create_logistics.package_filter.subtitle}"
 			tasks: [{
 				id: "56A7B04680CCC397"
@@ -77,6 +79,7 @@
 			]
 			id: "43B4236DB93BC425"
 			min_required_dependencies: 1
+			optional: true
 			subtitle: "{quests.create_logistics.frogport.subtitle}"
 			tasks: [{
 				id: "795EBF0807564441"
@@ -95,6 +98,7 @@
 				"{quests.create_logistics.postbox.desc.2}"
 			]
 			id: "175CE4FE780E9994"
+			optional: true
 			subtitle: "{quests.create_logistics.postbox.subtitle}"
 			tasks: [{
 				id: "63CFD63E38058034"
@@ -138,6 +142,7 @@
 			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
 			icon: "greate:rose_quartz_lens"
 			id: "7C4807A247AF36A1"
+			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.create_logistics.rose_quartz_lens.subtitle}"
@@ -162,6 +167,7 @@
 			description: ["{quests.create_logistics.rose_quartz.desc}"]
 			icon: "gtceu:overworld_marker"
 			id: "3137824EEA1E4D9B"
+			optional: true
 			subtitle: "{quests.create_logistics.rose_quartz.subtitle}"
 			tasks: [{
 				id: "2764C09EC03449D6"
@@ -216,6 +222,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.stock_link.desc}"]
 			id: "76490E046A44BCC3"
+			optional: true
 			size: 2.0d
 			subtitle: "{quests.create_logistics.stock_link.subtitle}"
 			tasks: [{
@@ -241,6 +248,9 @@
 				"{quests.create_logistics.stock_ticker.desc.3}"
 			]
 			id: "341E2F290344BEEE"
+			optional: true
+			shape: "gear"
+			size: 3.0d
 			subtitle: "{quests.create_logistics.stock_ticker.subtitle}"
 			tasks: [{
 				id: "6D34CC70CB8465EF"
@@ -248,8 +258,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.stock_ticker.title}"
-			x: 8.5d
-			y: -2.5d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -259,6 +269,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.redstone_requester.desc}"]
 			id: "3F44CFF8A6018F3E"
+			optional: true
 			subtitle: "{quests.create_logistics.redstone_requester.subtitle}"
 			tasks: [{
 				id: "3A3E75B8A2755E29"
@@ -266,8 +277,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.redstone_requester.title}"
-			x: 8.5d
-			y: 0.5d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -285,6 +296,7 @@
 				"{quests.create_logistics.factory_gauge.desc.4}"
 			]
 			id: "2262F1FD4EAB777F"
+			optional: true
 			shape: "gear"
 			size: 3.0d
 			subtitle: "{quests.create_logistics.factory_gauge.subtitle}"
@@ -313,6 +325,7 @@
 				"{quests.create_logistics.tablecloths.desc.2}"
 			]
 			id: "546FC3BD93E54913"
+			optional: true
 			subtitle: "{quests.create_logistics.tablecloths.subtitle}"
 			tasks: [{
 				id: "75930EC6F9139FD5"
@@ -320,13 +333,14 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.tablecloths.title}"
-			x: 8.5d
-			y: -1.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.bottler.desc}"]
 			id: "487D05818B3E9D19"
+			optional: true
 			subtitle: "{quests.create_logistics.bottler.subtitle}"
 			tasks: [{
 				id: "3D6CCC6C3853CD9C"
