@@ -13,7 +13,7 @@ function registerTFGNuclearRecipes(event) {
 		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:material_holder')
-		.itemInputs('gtceu:ev_input_bus', '4x gtceu:uranium_triplatinum_single_wire', '2x gtceu:ev_conveyor_module', '#gtceu:circuits/ev')
+		.itemInputs('gtceu:ev_input_bus', '4x gtceu:aluminium_single_cable', '2x gtceu:ev_conveyor_module', '#gtceu:circuits/ev')
 		.itemOutputs('deafission:material_holder')
 		.duration(20*30)
 		.circuit(1)

@@ -5,6 +5,11 @@
 	"may_drink_when_full": true,
 	"effects": [
 		{
+			"type": "minecraft:dolphins_grace",
+			"duration": 6400,
+			"amplifier": 0
+		},
+		{
 			"type": "minecraft:strength",
 			"duration": 6400,
 			"amplifier": 0

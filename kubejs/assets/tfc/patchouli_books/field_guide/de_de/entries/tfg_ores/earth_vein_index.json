@@ -541,7 +541,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/200 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 20 — 217$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 50$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/250 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 20 — 217$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 50$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
       "title": "Chalkopyrit & Realgar",
       "type": "patchouli:text",
       "anchor": "surface_copper"
@@ -583,7 +583,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 16%$(br)$(thing)Quelle von$(): Aluminium, Sauerstoff$(br)$(thing)Formel$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "text": "$(thing)Prozentsatz$(): 22%$(br)$(thing)Quelle von$(): Aluminium, Sauerstoff$(br)$(thing)Formel$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -605,31 +605,6 @@
       "enable_visualize": false,
       "text": "$(thing)Prozentsatz$(): 16%$(br)$(thing)Quelle von$(): Arsen$(br)$(thing)Formel$(): As₄S₄$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Atemschutzmaske)Arsenikose (Einatmung)$(/t)$()",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Kassiterit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cassiterite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Quelle von$(): Zinn$(br)$(thing)Formel$(): SnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1190,7 +1165,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/170 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Breit und flach)Scheibenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 40$(br)$(thing)Höhe$(): 12$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Gabbro, Granit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/210 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Breit und flach)Scheibenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -32 — 60$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 40$(br)$(thing)Höhe$(): 12$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Gabbro, Granit, Rhyolith",
       "title": "Gold, Limonit, & Hematit",
       "type": "patchouli:text",
       "anchor": "normal_gold"
@@ -1893,7 +1868,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/190 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 210$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 36$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/230 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -32 — 140$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 36$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Kyanit, Glimmer, & Bauxit",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2191,7 +2166,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 63%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): Fe₃O₄",
+      "text": "$(thing)Prozentsatz$(): 60%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -2211,7 +2186,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 22%$(br)$(thing)Quelle von$(): Eisen, Vanadium$(br)$(thing)Formel$(): (Fe₃O₄)V",
+      "text": "$(thing)Prozentsatz$(): 30%$(br)$(thing)Quelle von$(): Eisen, Vanadium$(br)$(thing)Formel$(): (Fe₃O₄)V",
       "type": "patchouli:multiblock"
     },
     {
@@ -2231,7 +2206,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 9%$(br)$(thing)Schmelzt in$(): Gold$(br)$(thing)Formel$(): Au",
+      "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Schmelzt in$(): Gold$(br)$(thing)Formel$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -2251,7 +2226,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 4%$(br)$(thing)Quelle von$(): Chrom$(br)$(thing)Formel$(): FeCr₂O₄$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Gummihandschuhe)Reizend (Hautkontakt)$(/t)$()",
+      "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Quelle von$(): Chrom$(br)$(thing)Formel$(): FeCr₂O₄$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Gummihandschuhe)Reizend (Hautkontakt)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
