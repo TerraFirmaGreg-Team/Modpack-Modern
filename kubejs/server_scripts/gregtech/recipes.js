@@ -126,10 +126,11 @@ const registerGTCEURecipes = (event) => {
 
 	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
 	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
+
 	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:radon', 10))
-		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
 		.duration(20*150)
 		.blastFurnaceTemp(4400)
 		.EUt(GTValues.VA[GTValues.EV])
@@ -138,7 +139,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
-		.outputFluids(Fluid.of('gtceu:uranium_triplatinum', 576))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
 		.duration(20*100.5)
 		.blastFurnaceTemp(4400)
 		.EUt(GTValues.VA[GTValues.EV])
