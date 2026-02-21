@@ -74,8 +74,6 @@ function registerTFGMVMaterialRecipes(event) {
 		.duration(20 * 100)
 		.EUt(GTValues.VA[GTValues.MV])
 
-    //#region Rework MV Hulls
 
-    event.recipes({ id: 'gtceu:assembler/hull_mv_annealed' })
 
 }
