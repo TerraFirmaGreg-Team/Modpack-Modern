@@ -480,4 +480,15 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:revert_wrought_iron_ingot')
 	event.smelting('minecraft:copper_ingot', '#forge:ingots/annealed_copper')
 		.id('tfg:revert_annealed_copper_ingot')
+
+	// Heavy Oil at LV
+
+	event.remove({ id: 'gtceu:distillery/distill_heavy_oil_to_sulfuric_heavy_fuel' })
+
+	event.recipes.gtceu.distillery('tfg:sulfuric_heavy_fuel')
+		.inputFluids(Fluid.of('gtceu:oil_heavy', 50))
+		.outputFluids(Fluid.of('gtceu:sulfuric_heavy_fuel', 125))
+		.duration(20*2)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
 }
