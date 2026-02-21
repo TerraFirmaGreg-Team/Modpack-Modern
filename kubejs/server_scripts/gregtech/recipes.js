@@ -475,4 +475,9 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
 	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
 
+	// Reverting
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
+	event.smelting('minecraft:copper_ingot', '#forge:ingots/annealed_copper')
+		.id('tfg:revert_annealed_copper_ingot')
 }
