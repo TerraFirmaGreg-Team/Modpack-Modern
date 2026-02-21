@@ -57,7 +57,7 @@ function registerCreateFactoryLogisticsRecipes(event) {
 	}).id('create_factory_logistics:shaped/factory_fluid_gauge')
 
 	event.recipes.gtceu.assembler('create_factory_logistics:factory_fluid_gauge')
-		.itemInputs('create_factory_logistics:fluid_mechanism', '2x #forge:screws/aluminium', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
+		.itemInputs('create_factory_logistics:fluid_mechanism', '2x gtceu:diode', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
 		.itemOutputs('create_factory_logistics:factory_fluid_gauge')
 		.duration(150)
 		.EUt(16)

@@ -349,7 +349,7 @@ function registerTFGNuclearRecipes(event) {
 		.dimension('ad_astra:mars')
 
 	// TBU Fission
-    event.recipes.deafission.fission_reactor_fuel('kubejs:fuelcell_custom_x1')
+    event.recipes.deafission.fission_reactor_fuel('tfg:tbu_232')
         .itemInputs('tfg:tbu_232_rod')
         .itemOutputs('tfg:depleted_tbu_232_rod')
         // Mandatory by GT; no real impact. Use this as a convention:

@@ -2,8 +2,29 @@
 
 ## Unreleased
 ### Changes
+- Changed recipes of almost all items for Create's Logistics @Pyritie
+- The rolling mill is no longer mandatory for progression, only merely very recommended @TomPlop
+- Increased the amount of Plant Balls when centrifuging Conifer Rosin @TomPlop
+- Added recipe for Glowing Dye early (#3095) @SakuraKitsurugi
+- Added missing recipe for the Linked Controller @Pyritie
+- Removed the Steam Extractor because it was basically useless and just confused people @Pyritie
+- Fixed the Material Holder being uncraftable due to a requirement dependency loop @Pyritie
+- Reduced the number of Refractory Bricks that Cupronickel Coils require @Pyritie
+- Fixed confusing behaviour with the Helve Hammer where it sometimes wouldn't process "intermediate" items like Refined Iron Blooms and High Carbon Ingots (#2584) @Ujhik
+- Supply carts now don't apply debuffs to the player if a cart is overburdened, instead applying those debuffs to the animal. This avoids some weird behaviour and also buffs the "weight" of items that can be carried in a supply cart by 3x (#2997) @Ujhik
+- Improved performance of blocks checking if they're oxygenated @Mqrius
+- Added Bamboo Lumber and unified wood-related recipes in the backend (please let us know if anything's wrong!) (#3002) @Inceitious
+- Added a recipe to convert iodine and methane back into iodomethane (#3129) @Pyritie
+- MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakelite in an Assembler @TomPlop
+- MV Hatches and Buses now can be crafted with Bakelite @TomPlop
 ### Bug fixes
+- Uraninium Triplatinium Alloy Blast Smelter recipe now requires Radon too
 ### Translation updates
+- Chinese (simplified) @jmecn
+- German @Enderderschander
+- Ukranian @MetEnBouldry
+- Japanese @sakura-gondra
+- Russian @Nixieeunrare
 
 ## [0.11.22] - 16-02-2026
 ### Changes
