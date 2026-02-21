@@ -875,11 +875,9 @@ function removeGTCEURecipes(event) {
 
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
-		'bamboo',
 		'polished_blackstone',
 		'light_weighted',
 		'heavy_weighted',
-		'treated'
 	]
 	MC_PRESSURE_PLATES.forEach(material => {	
 		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })

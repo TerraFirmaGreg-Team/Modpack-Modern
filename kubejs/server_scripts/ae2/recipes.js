@@ -124,7 +124,7 @@ const registerAE2Recipes = (event) => {
 		'BC'
 	], {
 		A: 'ae2:basic_card',
-		B: 'minecraft:redstone_torch',
+		B: '#forge:plates/redstone',
 		C: 'ae2:calculation_processor'
 	}).addMaterialInfo().id('tfg:crafting/redstone_card')
 
