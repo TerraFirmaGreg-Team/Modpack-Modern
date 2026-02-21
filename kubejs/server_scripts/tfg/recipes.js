@@ -92,4 +92,6 @@ const registerTFGRecipes = (event) => {
 
 	registerTFGVenusRecipes(event)
 	registerTFGBiochemRecipes(event)
+
+	registerTFGMVMaterialRecipes(event)
 }
