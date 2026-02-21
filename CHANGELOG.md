@@ -6,6 +6,8 @@
 ### Translation updates
 
 ## [0.11.23] - 21-02-2026
+### Notice
+- The next major version will include many changes to MV progression (and minor changes to HV)
 ### Changes
 - Changed recipes of almost all items for Create's Logistics @Pyritie
 - The rolling mill is no longer mandatory for progression, only merely very recommended @TomPlop
