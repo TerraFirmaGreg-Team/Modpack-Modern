@@ -314,9 +314,9 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:spout', [
 		'CBD',
 		' A ',
-		' A '
+		'   '
 	], {
-		A: '#forge:foils/rubber',
+		A: '#forge:plates/rubber',
 		B: 'create:fluid_tank',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/screwdrivers'
