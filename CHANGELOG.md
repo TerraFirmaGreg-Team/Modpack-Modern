@@ -20,6 +20,7 @@
 - Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
 - Fixed an issue with server overrides sometimes not applying to server pack exports (#3088) @Mqrius
 - Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
+- Fixed a crash when using a schematicannon to place a chain conveyor (#3092) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
