@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.23] - 21-02-2026
+### Changes
 - Changed recipes of almost all items for Create's Logistics @Pyritie
 - The rolling mill is no longer mandatory for progression, only merely very recommended @TomPlop
 - Increased the amount of Plant Balls when centrifuging Conifer Rosin @TomPlop
@@ -17,6 +22,8 @@
 - Added a recipe to convert iodine and methane back into iodomethane (#3129) @Pyritie
 - MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakelite in an Assembler @TomPlop
 - MV Hatches and Buses now can be crafted with Bakelite @TomPlop
+- Quadrupled the amount of railgun ammo you get per craft @TomPlop
+- Distilling heavy oil into sulfuric heavy oil residue is now LV instead of MV @TomPlop
 ### Bug fixes
 - Fixed all the default Greate-related recipes @Pyritie
 - Fixed several crashes relating to the encased fan and the mechanical mixer @Electrolyte220
@@ -26,6 +33,7 @@
 - Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
 - Fixed a crash when using a schematicannon to place a chain conveyor (#3092) @Pyritie
 - Fixed not being able to recycle fire bricks (#3135) @Pyritie
+- Fixed the T2 rocket not being able to go to Mars @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
