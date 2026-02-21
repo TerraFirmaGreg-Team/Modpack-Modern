@@ -15,12 +15,10 @@
 - Improved performance of blocks checking if they're oxygenated @Mqrius
 - Added Bamboo Lumber and unified wood-related recipes in the backend (please let us know if anything's wrong!) (#3002) @Inceitious
 - Added a recipe to convert iodine and methane back into iodomethane (#3129) @Pyritie
+- MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakelite in an Assembler @TomPlop
+- MV Hatches and Buses now can be crafted with Bakelite @TomPlop
 ### Bug fixes
-- Fixed Uranium Triplatinum not requiring Radon in the Alloy Blast Smelter @TomPlop
-- Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
-- Fixed an issue with server overrides sometimes not applying to server pack exports (#3088) @Mqrius
-- Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
-- Fixed a crash when using a schematicannon to place a chain conveyor (#3092) @Pyritie
+- Uraninium Triplatinium Alloy Blast Smelter recipe now requires Radon too
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
