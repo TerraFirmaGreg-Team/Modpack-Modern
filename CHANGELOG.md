@@ -18,6 +18,8 @@
 - MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakelite in an Assembler @TomPlop
 - MV Hatches and Buses now can be crafted with Bakelite @TomPlop
 ### Bug fixes
+- Fixed all the default Greate-related recipes @Pyritie
+- Fixed several crashes relating to the encased fan and the mechanical mixer @Electrolyte220
 - Fixed Uranium Triplatinum not requiring Radon in the Alloy Blast Smelter @TomPlop
 - Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
 - Fixed an issue with server overrides sometimes not applying to server pack exports (#3088) @Mqrius
