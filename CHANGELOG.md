@@ -33,7 +33,7 @@
 - Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
 - Fixed a crash when using a schematicannon to place a chain conveyor (#3092) @Pyritie
 - Fixed not being able to recycle fire bricks (#3135) @Pyritie
-- Fixed the T2 rocket not being able to go to Mars @BlueBoat29
+- Fixed the T2 double rocket not being able to go to Mars @BlueBoat29
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
