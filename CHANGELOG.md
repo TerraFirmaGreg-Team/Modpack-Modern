@@ -18,7 +18,12 @@
 - MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakelite in an Assembler @TomPlop
 - MV Hatches and Buses now can be crafted with Bakelite @TomPlop
 ### Bug fixes
-- Uraninium Triplatinium Alloy Blast Smelter recipe now requires Radon too
+- Fixed Uranium Triplatinum not requiring Radon in the Alloy Blast Smelter @TomPlop
+- Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
+- Fixed an issue with server overrides sometimes not applying to server pack exports (#3088) @Mqrius
+- Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
+- Fixed a crash when using a schematicannon to place a chain conveyor (#3092) @Pyritie
+- Fixed not being able to recycle fire bricks (#3135) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
