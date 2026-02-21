@@ -825,7 +825,21 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:hp_steam_furnace'
 	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
-	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
+	event.recipes.gtceu.shaped('gtceu:hv_cutter', [
+		'ABC',
+		'DEF',
+		'BAG'
+	], {
+		A: '#forge:single_cables/gold',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:tempered_glass',
+		D: 'gtceu:hv_conveyor_module',
+		E: 'gtceu:hv_machine_hull',
+		F: '#forge:buzz_saw_heads/ultimet',
+		G: 'gtceu:hv_electric_motor'
+	}).id('gtceu:shaped/hv_cutter')
+
+	TFGHelpers.registerMaterialInfo('gtceu:hv_cutter', [GTMaterials.Rubber, 17, GTMaterials.Electrum, 12, GTMaterials.StainlessSteel, 11, GTMaterials.Silver, 6, GTMaterials.Ultimet, 4, GTMaterials.Gold, 2.5])
 
 	removeMaceratorRecipe(event, 'macerate_steam_input_bus')
 	event.recipes.gtceu.shaped('gtceu:steam_input_bus', ['A', 'B'], {
