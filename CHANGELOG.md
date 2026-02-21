@@ -18,6 +18,7 @@
 - Fixed Uranium Triplatinum not requiring Radon in the Alloy Blast Smelter @TomPlop
 - Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
 - Fixed an issue with server overrides sometimes not applying to server pack exports (#3088) @Mqrius
+- Fixed more startup issues when the system language is set to Turkish (#3099) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - German @Enderderschander
