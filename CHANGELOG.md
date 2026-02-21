@@ -2,7 +2,13 @@
 
 ## Unreleased
 ### Changes
+- MV Machine Hulls shaped recipe needs 4 Bakelite Plates and 2 Aluminum Plates but can be crafted with Bakanite in an Assembler
+- MV Hatches and Buses now can be crafted with Bakalite
+- Centrifuging Connifer Resin now gives way more plantballs
+- Create Spout don't require foil but plates so the Rolling Mill isn't mandatory anymore
+  
 ### Bug fixes
+- Uraninium Triplatinium Alloy Blast Smelter recipe now requires Radon too
 ### Translation updates
 
 ## [0.11.22] - 16-02-2026
