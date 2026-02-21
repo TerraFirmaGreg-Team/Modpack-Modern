@@ -428,7 +428,6 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('tfg:sodium_fluoride')
 		.dust()
 		.components('1x sodium', '1x fluorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xffffff)
 		.secondaryColor(0xb7b9bd)
 		.iconSet(GTMaterialIconSet.ROUGH)

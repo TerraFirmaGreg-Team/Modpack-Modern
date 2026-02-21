@@ -124,6 +124,27 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(4)
 
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*150)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*100.5)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(12)
+
 	// Move Superconductor to EV and make them cheap
 
 	event.remove({ id: 'gtceu:assembler/laser_cable' })
@@ -454,4 +475,9 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
 	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
 
+	// Reverting
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
+	event.smelting('minecraft:copper_ingot', '#forge:ingots/annealed_copper')
+		.id('tfg:revert_annealed_copper_ingot')
 }
