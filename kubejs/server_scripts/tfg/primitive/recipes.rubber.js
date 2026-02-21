@@ -165,7 +165,8 @@ function registerTFGRubberRecipes(event) {
 		.itemInputs('tfg:conifer_rosin')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('2x #forge:dusts/carbon')
-		.chancedOutput('gtceu:plant_ball', 7500, 0)
+		.itemOutputs('4x gtceu:plant_ball')
+		.chancedOutput('8x gtceu:plant_ball', 7500, 0)
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
