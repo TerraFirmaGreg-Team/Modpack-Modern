@@ -44,4 +44,38 @@ function registerTFGMVMaterialRecipes(event) {
         .outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 1000))
         .duration(20 * 9.15)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // SiC
+
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_sic' })
+    event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_sic_gas' })
+
+    event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
+		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
+        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 1))
+        .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+        .blastFurnaceTemp(1760)
+		.duration(20 * 180)
+		.EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.electric_blast_furnace('tfg:flawless_rough_sic_gem')
+		.itemInputs(Item.of('gtceu:flawless_quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
+        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 5))
+        .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+        .blastFurnaceTemp(1760)
+		.duration(20 * 140)
+		.EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem')
+		.itemInputs(Item.of('gtceu:exquisite_quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
+        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 9))
+        .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
+        .blastFurnaceTemp(1760)
+		.duration(20 * 100)
+		.EUt(GTValues.VA[GTValues.MV])
+
+    //#region Rework MV Hulls
+
+    event.recipes({ id: 'gtceu:assembler/hull_mv_annealed' })
+
 }
