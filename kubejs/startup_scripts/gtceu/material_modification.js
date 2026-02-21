@@ -341,7 +341,7 @@ const registerGTCEuMaterialModification = (event) => {
 	// Unhiding elements
 	GTMaterials.Zirconium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
-	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
+	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
 	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, GENERATE_DENSE, NO_ORE_SMELTING);
 	
 /* What is that? It doesn't seem to work so I commented it out for now
