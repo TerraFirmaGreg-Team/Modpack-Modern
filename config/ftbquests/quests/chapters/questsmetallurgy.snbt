@@ -63,8 +63,23 @@
 		{
 			id: "5B4E347985A66970"
 			linked_quest: "21C58B2541BFA2EE"
-			x: -1.5d
+			shape: "heart"
+			x: -2.0d
 			y: -32.0d
+		}
+		{
+			id: "70D405A6CF1B048B"
+			linked_quest: "7178843BCD50A012"
+			shape: "heart"
+			x: 0.5d
+			y: -34.5d
+		}
+		{
+			id: "588868A203BF7599"
+			linked_quest: "4CD3F04793CE47A2"
+			shape: "diamond"
+			x: -2.0d
+			y: -34.5d
 		}
 	]
 	quests: [
@@ -452,7 +467,7 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.mining.title}"
-			x: 0.0d
+			x: -0.5d
 			y: -32.0d
 		}
 		{
@@ -720,7 +735,7 @@
 			}]
 			title: "{quests.metal_age.bronze_goodies.title}"
 			x: 2.0d
-			y: -34.0d
+			y: -34.5d
 		}
 		{
 			dependencies: ["174DA15847665CF8"]
@@ -1258,8 +1273,8 @@
 				}
 			]
 			title: "{quests.metal_age.copper_diving.title}"
-			x: 0.0d
-			y: -34.0d
+			x: -0.5d
+			y: -33.5d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
