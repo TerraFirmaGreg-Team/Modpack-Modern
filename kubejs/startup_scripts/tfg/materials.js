@@ -467,7 +467,7 @@ const registerTFGMaterials = (event) => {
 
 	// MV New Material
 
-	event.create('tfg:rough_sic')
+	event.create('tfg:rough_silicon_carbide')
 		.color(0x95999e)
 		.secondaryColor(0x95999a)
 		.iconSet(GTMaterialIconSet.ROUGH)
@@ -477,7 +477,7 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.DISABLE_DECOMPOSITION
 			)
 
-	event.create('tfg:sic')
+	event.create('tfg:silicon_carbide')
 		.color(0xdfe5ed)
 		.secondaryColor(0xdfe5aa)
 		.iconSet(GTMaterialIconSet.ROUGH)

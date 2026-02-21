@@ -52,7 +52,7 @@ function registerTFGMVMaterialRecipes(event) {
 
     event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
 		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
-        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 1))
+        .itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 1))
         .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
         .blastFurnaceTemp(1760)
 		.duration(20 * 180)
@@ -60,7 +60,7 @@ function registerTFGMVMaterialRecipes(event) {
 
     event.recipes.gtceu.electric_blast_furnace('tfg:flawless_rough_sic_gem')
 		.itemInputs(Item.of('gtceu:flawless_quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
-        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 5))
+        .itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 5))
         .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
         .blastFurnaceTemp(1760)
 		.duration(20 * 140)
@@ -68,7 +68,7 @@ function registerTFGMVMaterialRecipes(event) {
 
     event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem')
 		.itemInputs(Item.of('gtceu:exquisite_quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
-        .itemOutputs(Item.of('tfg:hot_rough_sic_ingot', 9))
+        .itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 9))
         .outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
         .blastFurnaceTemp(1760)
 		.duration(20 * 100)
