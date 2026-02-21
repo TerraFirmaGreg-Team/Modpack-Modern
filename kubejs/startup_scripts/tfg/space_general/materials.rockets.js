@@ -10,7 +10,7 @@ function registerTFGRocketMaterials(event) {
 		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
 		.color(0x333e47)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
 		.blastTemp(1760, $BlastProperty.GasTier.MID, 256, 900)
 
 	event.create('rocket_alloy_t2')
@@ -18,7 +18,7 @@ function registerTFGRocketMaterials(event) {
 		.components('19x titanium', '4x vanadium', '3x aluminium', '3x chromium', '3x tin')
 		.color(0x3c253d)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DISABLE_ALLOY_BLAST)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DISABLE_ALLOY_BLAST)
 		.blastTemp(3200, $BlastProperty.GasTier.MID, 1024, 1100)
 		.liquid()
 
@@ -30,7 +30,7 @@ function registerTFGRocketMaterials(event) {
 			.liquid()
 			.removeHazard()
 			.iconSet('metallic')
-			.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR)
+			.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
 			.blastTemp(4200, $BlastProperty.GasTier.MID, 4096, 1300)
 		*/
 
