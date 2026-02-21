@@ -825,7 +825,7 @@ function registerGTCEuMachineRecipes(event) {
 		C: 'gtceu:hp_steam_furnace'
 	}).addMaterialInfo().id('gtceu:shaped/steam_oven')
 
-	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
+	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:ultimet_buzz_saw_blade')
 
 	removeMaceratorRecipe(event, 'macerate_steam_input_bus')
 	event.recipes.gtceu.shaped('gtceu:steam_input_bus', ['A', 'B'], {
