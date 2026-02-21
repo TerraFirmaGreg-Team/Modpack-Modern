@@ -14,6 +14,7 @@
 - Supply carts now don't apply debuffs to the player if a cart is overburdened, instead applying those debuffs to the animal. This avoids some weird behaviour and also buffs the "weight" of items that can be carried in a supply cart by 3x (#2997) @Ujhik
 - Improved performance of blocks checking if they're oxygenated @Mqrius
 - Added Bamboo Lumber and unified wood-related recipes in the backend (please let us know if anything's wrong!) (#3002) @Inceitious
+- Added a recipe to convert iodine and methane back into iodomethane (#3129) @Pyritie
 ### Bug fixes
 - Fixed Uranium Triplatinum not requiring Radon in the Alloy Blast Smelter @TomPlop
 - Added a workaround for oil spouts sometimes giving a fluid that couldn't be used in non-GregTech machines @Pyritie
@@ -24,6 +25,7 @@
 - German @Enderderschander
 - Ukranian @MetEnBouldry
 - Japanese @sakura-gondra
+- Russian @Nixieeunrare
 
 ## [0.11.22] - 16-02-2026
 ### Changes
