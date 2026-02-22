@@ -3,16 +3,34 @@
 
 const registerHotOrNotRecipes = (event) => {
 
-    event.shaped('tfchotornot:tongs/wood', [
-		'AB ',
-		'B  ',
-		'   '
-	], {
-		A: '#forge:tools/knives',
-		B: '#forge:rods/wooden'
-	}).id('tfchotornot:crafting/tongs/wood')
+	// Wooden tongs
+		event.shaped('tfchotornot:tongs/wood', [
+			'AB ',
+			'B  ',
+			'   '
+		], {
+			A: '#forge:tools/knives',
+			B: '#forge:rods/wooden'
+		})
+		.id('tfchotornot:crafting/tongs/wood')
 
-	event.remove({ id: 'tfchotornot:anvil/tong_part/cast_iron' })
-	event.remove({ id: 'tfchotornot:crafting/tongs/cast_iron' })
-	event.remove({ id: 'tfchotornot:heating/tongs/cast_iron' })
+	// Remove recipes
+		const HOT_OR_NOT_DISABLED_METALS = [
+			'bismuth',
+			'brass',
+			'cast_iron',
+			'gold',
+			'nickel',
+			'rose_gold',
+			'silver',
+			'tin',
+			'zinc',
+			'sterling_silver'
+		];
+
+		HOT_OR_NOT_DISABLED_METALS.forEach(metal=>{
+			event.remove({ id: `tfchotornot:anvil/tong_part/${metal}` })
+			event.remove({ id: `tfchotornot:crafting/tongs/${metal}` })
+			event.remove({ id: `tfchotornot:heating/tongs/${metal}` })
+		});
 }
