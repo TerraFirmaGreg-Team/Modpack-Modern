@@ -2,7 +2,7 @@
 "use strict";
 
 const registerCreateExtraGaugesRecipes = (event) => {
-
+if (Platform.isLoaded("extra_gauges")) {
 	event.remove({ mod: 'extra_gauges' });
 
 	event.shaped(
@@ -174,4 +174,5 @@ const registerCreateExtraGaugesRecipes = (event) => {
 		Item.of('create:display_link'),
 		['extra_gauges:display_collector']
 	)
+}
 }
