@@ -1,6 +1,15 @@
 // priority: 0
 "use strict";
 
+function isDisabledGTTool(toolType, material) {
+    const DISABLED_MATERIALS = [
+        'hsse', 'duranium', 'naquadah_alloy', 'tungsten_carbide', 'ultimet', 'ostrum_iodide', 'vanadium_steel', 'boron_carbide', 'neutronium'
+    ];
+    const DISABLED_TOOLS = [
+        'wrench', 'wire_cutter', 'screwdriver'
+    ];
+    return DISABLED_MATERIALS.includes(material.getName()) && DISABLED_TOOLS.includes(toolType.name);
+}
 
 /**
  * @param {Internal.RecipesEventJS} event 
@@ -55,47 +64,50 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
 	if (material === GTMaterials.Iron)
 		return;
 
-	const materialName = material.getName();
+	if (!isDisabledGTTool(toolType, material)) {
+		const materialName = material.getName();
 
-	if (toolType === GTToolType.WRENCH) {
-		event.recipes.tfc.advanced_shaped_crafting(
-			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(), [
-			'ABC',
-			'DB '
-		], {
-			A: toolHeadItem,
-			B: `#forge:rods/${materialName}`,
-			C: '#forge:tools/screwdrivers',
-			D: `#forge:bolts/${materialName}`
-		}, 0, 0)
-		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
-	} else if (toolType === GTToolType.WIRE_CUTTER) {
-		event.recipes.tfc.advanced_shaped_crafting(
-			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(), [
-			' AD',
-			'CBC'
-		], {
-			A: toolHeadItem,
-			B: `#forge:small_springs`,
-			C: `#forge:rods/${materialName}`,
-			D: '#forge:tools/screwdrivers'
-		}, 0, 1)
-		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
-	} else {
-		event.recipes.tfc.advanced_shapeless_crafting(
-			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
-			[toolHeadItem, '#forge:rods/wooden'],
-			toolHeadItem
-		)
-		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
+		if (toolType === GTToolType.WRENCH) {
+			event.recipes.tfc.advanced_shaped_crafting(
+				TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(), [
+				'ABC',
+				'DB '
+			], {
+				A: toolHeadItem,
+				B: `#forge:rods/${materialName}`,
+				C: '#forge:tools/screwdrivers',
+				D: `#forge:bolts/${materialName}`
+			}, 0, 0)
+			.id(`gtceu:shaped/${toolType.name}_${materialName}`);
+		} else if (toolType === GTToolType.WIRE_CUTTER) {
+			event.recipes.tfc.advanced_shaped_crafting(
+				TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(), [
+				' AD',
+				'CBC'
+			], {
+				A: toolHeadItem,
+				B: `#forge:small_springs`,
+				C: `#forge:rods/${materialName}`,
+				D: '#forge:tools/screwdrivers'
+			}, 0, 1)
+			.id(`gtceu:shaped/${toolType.name}_${materialName}`);
+		} else {
+			event.recipes.tfc.advanced_shapeless_crafting(
+				TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
+				[toolHeadItem, '#forge:rods/wooden'],
+				toolHeadItem
+			)
+			.id(`gtceu:shaped/${toolType.name}_${materialName}`);
+		}
+
+		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+		if (tfcProperty !== null) {
+			const materialAmount = getMaterialAmount(headTagPrefix, material);
+			addTFCMelting(event, toolItem, material, materialAmount * 144, toolType.name);
+		}
 	}
 
-	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
-	if (tfcProperty !== null) {
-		const materialAmount = getMaterialAmount(headTagPrefix, material);
-		addTFCMelting(event, toolItem, material, materialAmount * 144, toolType.name);
-	}
-
+	// Toujours appeler processToolHead, qu'on soit désactivé ou non
 	processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material);
 }
 

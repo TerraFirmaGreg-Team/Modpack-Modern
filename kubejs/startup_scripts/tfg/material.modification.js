@@ -22,6 +22,8 @@ const registerTFGMaterialModification = (event) => {
 
 	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 
+	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
+
 	const allTools = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
@@ -116,19 +118,24 @@ const registerTFGMaterialModification = (event) => {
 		GTToolType.FILE,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
+		$GTToolType.getTypes().get("mv_buzzsaw"),
 		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_MV,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.WRENCH_LV,
+		$GTToolType.getTypes().get("mv_wirecutter"),
+		GTToolType.DRILL_EV,
+		$GTToolType.getTypes().get("mv_screwdriver"),
+		$GTToolType.getTypes().get("mv_chainsaw"),
+		$GTToolType.getTypes().get("mv_wrench"),
 		GTToolType.CROWBAR,
         //Hiden
         GTToolType.WRENCH,
+		GTToolType.WRENCH_LV,
         GTToolType.SCREWDRIVER,
+		GTToolType.SCREWDRIVER_LV,
         GTToolType.WIRE_CUTTER,
+        GTToolType.WIRE_CUTTER_LV,
         GTToolType.DRILL_LV,
+		GTToolType.CHAINSAW_LV,
+		GTToolType.BUZZSAW
 	]
 
 	const HVTools = [
@@ -138,21 +145,24 @@ const registerTFGMaterialModification = (event) => {
 		GTToolType.FILE,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
+		$GTToolType.getTypes().get("hv_buzzsaw"),
 		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER_HV,
+		$GTToolType.getTypes().get("hv_wirecutter"),
 		GTToolType.DRILL_HV,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.WRENCH_HV,
+		$GTToolType.getTypes().get("hv_screwdriver"),
+		$GTToolType.getTypes().get("hv_chainsaw"),
+		$GTToolType.getTypes().get("hv_wrench"),
 		GTToolType.CROWBAR,
         //Hiden
         GTToolType.WRENCH,
 		GTToolType.WRENCH_LV,
         GTToolType.SCREWDRIVER,
+		GTToolType.SCREWDRIVER_LV,
         GTToolType.WIRE_CUTTER,
         GTToolType.WIRE_CUTTER_LV,
-        GTToolType.DRILL_LV
+        GTToolType.DRILL_LV,
+		GTToolType.CHAINSAW_LV,
+		GTToolType.BUZZSAW
 	]
 
 	const EVTools = [
@@ -162,21 +172,24 @@ const registerTFGMaterialModification = (event) => {
 		GTToolType.FILE,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
+		$GTToolType.getTypes().get("ev_buzzsaw"),
 		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER_HV,
+		$GTToolType.getTypes().get("ev_wirecutter"),
 		GTToolType.DRILL_EV,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.WRENCH_HV,
+		$GTToolType.getTypes().get("ev_screwdriver"),
+		$GTToolType.getTypes().get("ev_chainsaw"),
+		$GTToolType.getTypes().get("ev_wrench"),
 		GTToolType.CROWBAR,
         // Hidden
         GTToolType.WRENCH,
 		GTToolType.WRENCH_LV,
         GTToolType.SCREWDRIVER,
+		GTToolType.SCREWDRIVER_LV,
         GTToolType.WIRE_CUTTER,
         GTToolType.WIRE_CUTTER_LV,
-        GTToolType.DRILL_LV
+        GTToolType.DRILL_LV,
+		GTToolType.CHAINSAW_LV,
+		GTToolType.BUZZSAW
 	]
 
 	const IVTools = [
@@ -186,28 +199,54 @@ const registerTFGMaterialModification = (event) => {
 		GTToolType.FILE,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
+		$GTToolType.getTypes().get("iv_buzzsaw"),
 		GTToolType.SCYTHE,
 		GTToolType.WIRE_CUTTER_IV,
 		GTToolType.DRILL_IV,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
+		GTToolType.SCREWDRIVER_IV,
+		GTToolType.CHAINSAW_IV,
 		GTToolType.WRENCH_IV,
 		GTToolType.CROWBAR,
         // Hidden
         GTToolType.WRENCH,
 		GTToolType.WRENCH_LV,
         GTToolType.SCREWDRIVER,
+		GTToolType.SCREWDRIVER_LV,
         GTToolType.WIRE_CUTTER,
         GTToolType.WIRE_CUTTER_LV,
-        GTToolType.DRILL_LV
+        GTToolType.DRILL_LV,
+		GTToolType.CHAINSAW_LV,
+		GTToolType.BUZZSAW
+	]
+
+		const ZPMTools = [
+		GTToolType.HARD_HAMMER,
+		GTToolType.BUTCHERY_KNIFE,
+		GTToolType.SWORD,
+		GTToolType.FILE,
+		GTToolType.HOE,
+		GTToolType.KNIFE,
+		$GTToolType.getTypes().get("zpm_buzzsaw"),
+		GTToolType.SCYTHE,
+		$GTToolType.getTypes().get("zpm_wirecutter"),
+		$GTToolType.getTypes().get("zpm_drill"),
+		$GTToolType.getTypes().get("zpm_screwdriver"),
+		$GTToolType.getTypes().get("zpm_chainsaw"),
+		$GTToolType.getTypes().get("zpm_wrench"),
+		GTToolType.CROWBAR,
+        // Hidden
+        GTToolType.WRENCH,
+		GTToolType.WRENCH_LV,
+        GTToolType.SCREWDRIVER,
+		GTToolType.SCREWDRIVER_LV,
+        GTToolType.WIRE_CUTTER,
+        GTToolType.WIRE_CUTTER_LV,
+        GTToolType.DRILL_LV,
+		GTToolType.CHAINSAW_LV,
+		GTToolType.BUZZSAW
 	]
 
     //#region Tools
-
-	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
-	// so I'm just giving them terrible terrible stats
-	//GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 
     // Remove all the tools we don't want anymore
     const noToolMaterials = [
@@ -216,55 +255,30 @@ const registerTFGMaterialModification = (event) => {
         GTMaterials.RoseGold,
         GTMaterials.SterlingSilver,
         GTMaterials.Aluminium,
-        GTMaterials.Polyethylene,
-        GTMaterials.Polybenzimidazole,
-        GTMaterials.Polytetrafluoroethylene,
+        //GTMaterials.Polyethylene,
+        //GTMaterials.Polybenzimidazole,
+        //GTMaterials.Polytetrafluoroethylene,
         GTMaterials.Titanium,
         GTMaterials.TungstenSteel,
         GTMaterials.Netherite,
-        GTMaterials.StainlessSteel
+        GTMaterials.StainlessSteel,
+		GTMaterials.Darmstadtium,
+		GTMaterials.RhodiumPlatedPalladium
     ];
 
     for (let mat of noToolMaterials) {
-        if (mat.hasProperty(PropertyKey.TOOL)) {
-            let toolProp = mat.getProperty(PropertyKey.TOOL);
-            toolProp.removeTypes(allTools);
-        }
+     if (mat.hasProperty(PropertyKey.TOOL)) {
+          mat.removeProperty(PropertyKey.TOOL);
+      }
     }
+
     // Cobalt has its own until we can find a way to generate only the buzzsaw without the tool
-    GTMaterials.CobaltBrass.getProperty(PropertyKey.TOOL).removeTypes([
-		GTToolType.AXE,
-		GTToolType.PICKAXE,
-		GTToolType.HARD_HAMMER,
-		GTToolType.BUTCHERY_KNIFE,
-		GTToolType.SWORD,
-		GTToolType.FILE,
-		GTToolType.SAW,
-		GTToolType.SHOVEL,
-		GTToolType.SHOVEL,
-		GTToolType.SPADE,
-		GTToolType.MINING_HAMMER,
-		GTToolType.HOE,
-		GTToolType.KNIFE,
-		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.WIRE_CUTTER_HV,
-		GTToolType.WIRE_CUTTER_IV,
-		GTToolType.DRILL_LV,
-		GTToolType.DRILL_MV,
-		GTToolType.DRILL_HV,
-		GTToolType.DRILL_EV,
-		GTToolType.DRILL_IV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.WRENCH_HV,
-		GTToolType.WRENCH_IV,
-		GTToolType.CROWBAR,
-	]);
+    GTMaterials.CobaltBrass.removeProperty(PropertyKey.TOOL);
+	GTMaterials.CobaltBrass.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1, 1, 1, 1, [GTToolType.BUZZSAW]).build());
+	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
+	// so I'm just giving them terrible terrible stats
+	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
+	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 
     // Balance Tools
 
@@ -306,7 +320,8 @@ const registerTFGMaterialModification = (event) => {
         GTMaterials.TungstenCarbide,
         GTMaterials.HSSE,
         GTMaterials.Duranium,
-        GTMaterials.NaquadahAlloy
+        GTMaterials.NaquadahAlloy,
+		GTMaterials.Neutronium
     ];
 
     for (let mat of rebalanceStats) {
@@ -327,6 +342,7 @@ const registerTFGMaterialModification = (event) => {
     GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(42, 11, 4012, 3, IVTools).build());
     GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(52, 12, 6192, 5, IVTools).build());
     GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(62, 13, 8192, 5, IVTools).build());
+	GTMaterials.Neutronium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(180.0, 100.0, 65535, 6, ZPMTools).build());
 
     //#endregion
 
