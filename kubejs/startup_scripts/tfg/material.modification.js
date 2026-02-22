@@ -25,9 +25,6 @@ const registerTFGMaterialModification = (event) => {
 	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
 	const $toolTypes = $GTToolType.getTypes()
 
-	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
-	const $toolTypes = $GTToolType.getTypes()
-
 	const allTools = [
 		GTToolType.AXE,
 		GTToolType.PICKAXE,
