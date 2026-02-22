@@ -47,8 +47,8 @@ function registerTFGMVMaterialRecipes(event) {
 
 	// SiC
 
-	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_sic' })
-	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_sic_gas' })
+	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide' })
+	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide_gas' })
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
 		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
