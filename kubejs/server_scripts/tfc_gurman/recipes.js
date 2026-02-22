@@ -506,28 +506,32 @@ function registerTFCGurmanRecipes(event) {
 		itemInputs: ["tfc:plant/foxglove"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_mint_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_mint_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_chamomile', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/lilac"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_chamomile_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_chamomile_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_rosehip', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/rose"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_rosehip_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_rosehip_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_nettle', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/trillium"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_nettle_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_nettle_leaves')
 	});
 	// #endregion Drying
 
