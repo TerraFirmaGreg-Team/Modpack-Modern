@@ -216,7 +216,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('1x boron', '3x chlorine')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xb3fcb9)
-		//.secondaryColor(0x9FAFB2)
+	//.secondaryColor(0x9FAFB2)
 
 	event.create('tfg:enriched_boron_thrichloride')
 		.gas(new GTFluidBuilder().state(GTFluidState.GAS).attribute(GTFluidAttributes.ACID).temperature(480))
@@ -347,7 +347,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.radioactiveHazard(10000000)
 
 	//#endregion
-	
+
 	//#region Epoxidized Isosorbide Linolenate
 	event.create('tfg:glucose')
 		.dust()
@@ -392,12 +392,12 @@ const registerTFGNuclearMaterials = (event) => {
 		.components('42x carbon', '66x hydrogen', '12x oxygen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xAB2748)
-	
+
 	//#endregion
 
 	//#region Isotopic Solvent
 
-		// Organic Stabilizer
+	// Organic Stabilizer
 	event.create('tfg:organic_stabilizer')
 		.dust()
 		.components('31x carbon', '46x hydrogen', '3x oxygen', '1x nitrogen', '1x chlorine')
@@ -524,24 +524,29 @@ const registerTFGNuclearMaterials = (event) => {
 		.liquid(new GTFluidBuilder().customStill().temperature(300))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xfc7303)
-		.secondaryColor(0xfcf403)	
+		.secondaryColor(0xfcf403)
 
-
+	// Conductor
+	event.create('tfg:thermally_conductive_fluid')
+		.liquid()
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+		.components('7x gallium', '2x tin', '1x zinc')
+		.color('0x34cfeb')
 };
 
-	//#region Fuel Pellet
+//#region Fuel Pellet
 
-	/*
-	Adding the Fuel Rod, the textures are applied through a model.json
-	Durability
-	Number of rod unused for now
-	%Heat
-	In ReactorCurve getHeating returns fuelHeat * 200.0d * throttle and getCooling returns _state.Heat() * (coolantConversion + 0.01).
-	Where coolantConversion is 1.00 if enough coolant is present. Solving that equation for a steady-state: heating + cooling = 0.
-	When throttle=coolantConversion=1:heat = fuelHeat * 200.0d / 1.01
-	So one 100% cell is 198.0198 heat it should reach. Simulation accuracy might of course throw that off by a small margin.
-	So purely passively it reaches 20000.0 heat.
-	*/
+/*
+Adding the Fuel Rod, the textures are applied through a model.json
+Durability
+Number of rod unused for now
+%Heat
+In ReactorCurve getHeating returns fuelHeat * 200.0d * throttle and getCooling returns _state.Heat() * (coolantConversion + 0.01).
+Where coolantConversion is 1.00 if enough coolant is present. Solving that equation for a steady-state: heating + cooling = 0.
+When throttle=coolantConversion=1:heat = fuelHeat * 200.0d / 1.01
+So one 100% cell is 198.0198 heat it should reach. Simulation accuracy might of course throw that off by a small margin.
+So purely passively it reaches 20000.0 heat.
+*/
 
 const $FuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.FuelCellItem");
 const $DepletedFuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.items.DepletedFuelCellItem");
@@ -551,33 +556,33 @@ const $DepletedFuelCellItem = Java.loadClass("fi.dea.mc.deafission.common.data.i
 //$ReactorBaseStats.Smr1 = new $ComponentTotals(200, 0, 0);
 
 StartupEvents.registry("item", (event) => {
-  const fuel = function(id, durability, rods, heat, createDepleted) {
+	const fuel = function (id, durability, rods, heat, createDepleted) {
 
-    if (createDepleted === undefined) createDepleted = true;
+		if (createDepleted === undefined) createDepleted = true;
 
-    event.createCustom("tfg:" + id, () => {
-      return new $FuelCellItem(
-        durability,
-        rods,
-        heat
-      );
-    });
+		event.createCustom("tfg:" + id, () => {
+			return new $FuelCellItem(
+				durability,
+				rods,
+				heat
+			);
+		});
 
-    if (createDepleted) {
-      event.createCustom("tfg:depleted_" + id, () => {
-        return new $DepletedFuelCellItem();
-      });
-    }
-  };
+		if (createDepleted) {
+			event.createCustom("tfg:depleted_" + id, () => {
+				return new $DepletedFuelCellItem();
+			});
+		}
+	};
 
-  fuel("thorium_rod", 5000, 1, 0.7);			// Max Heat 139 - 1 Fuel
-  fuel("uranium_rod", 20000, 1, 2.2);			// Max Heat 435 - 1 Fuel
-  fuel("plutonium_rod", 30000, 1, 3);			// Max Heat 595 - 1 Fuel
+	fuel("thorium_rod", 5000, 1, 0.7);			// Max Heat 139 - 1 Fuel
+	fuel("uranium_rod", 20000, 1, 2.2);			// Max Heat 435 - 1 Fuel
+	fuel("plutonium_rod", 30000, 1, 3);			// Max Heat 595 - 1 Fuel
 
-  fuel("tbu_232_rod", 5000, 1, 2);				// Max Heat 396 - 1 Fuel
+	fuel("tbu_232_rod", 5000, 1, 2);				// Max Heat 396 - 1 Fuel
 
-  fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
-  fuel("neptunium_237_rod", 100000, 1, 2);		// Max Heat 396 - 1 Fuel
-  fuel("californium_252_rod", 500000, 1, 4);	// Max Heat 792 - 1 Fuel
+	fuel("americium_241_rod", 5000000, 1, 0.5);	// Max Heat 99  - 1 Fuel
+	fuel("neptunium_237_rod", 100000, 1, 2);		// Max Heat 396 - 1 Fuel
+	fuel("californium_252_rod", 500000, 1, 4);	// Max Heat 792 - 1 Fuel
 
 });
