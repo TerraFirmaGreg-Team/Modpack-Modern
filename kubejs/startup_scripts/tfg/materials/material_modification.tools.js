@@ -4,43 +4,17 @@
 function registerTFGToolMaterialModification(event) {
 	const $ROTOR_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.RotorProperty')
 
+	const {
+		GENERATE_BUZZSAW_BLADE,
+		GENERATE_SCREWDRIVER_HEAD,
+		GENERATE_DRILL_HEAD,
+		GENERATE_CHAINSAW_HEAD,
+		GENERATE_WRENCH_HEAD,
+		GENERATE_WIRE_CUTTER_HEAD
+	} = TFGMaterialFlags;
+
 	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
 	const $toolTypes = $GTToolType.getTypes()
-
-	const allTools = [
-		GTToolType.AXE,
-		GTToolType.PICKAXE,
-		GTToolType.HARD_HAMMER,
-		GTToolType.BUTCHERY_KNIFE,
-		GTToolType.SWORD,
-		GTToolType.FILE,
-		GTToolType.SAW,
-		GTToolType.SHOVEL,
-		GTToolType.SHOVEL,
-		GTToolType.SPADE,
-		GTToolType.MINING_HAMMER,
-		GTToolType.HOE,
-		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
-		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.WIRE_CUTTER_HV,
-		GTToolType.WIRE_CUTTER_IV,
-		GTToolType.DRILL_LV,
-		GTToolType.DRILL_MV,
-		GTToolType.DRILL_HV,
-		GTToolType.DRILL_EV,
-		GTToolType.DRILL_IV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.WRENCH_HV,
-		GTToolType.WRENCH_IV,
-		GTToolType.CROWBAR,
-	]
 
 	const ULVTools = [
 		GTToolType.AXE,
@@ -56,16 +30,11 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.MINING_HAMMER,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
 		GTToolType.SCYTHE,
 		GTToolType.WIRE_CUTTER,
 		GTToolType.SCREWDRIVER,
 		GTToolType.WRENCH,
-		GTToolType.CROWBAR,
-		//Hidden
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WRENCH_LV
+		GTToolType.CROWBAR
 	]
 
 	const LVTools = [
@@ -104,21 +73,11 @@ function registerTFGToolMaterialModification(event) {
 		$toolTypes.get("mv_buzzsaw"),
 		GTToolType.SCYTHE,
 		$toolTypes.get("mv_wirecutter"),
-		GTToolType.DRILL_EV,
+		GTToolType.DRILL_MV,
 		$toolTypes.get("mv_screwdriver"),
 		$toolTypes.get("mv_chainsaw"),
 		$toolTypes.get("mv_wrench"),
-		GTToolType.CROWBAR,
-		//Hiden
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.BUZZSAW
+		GTToolType.CROWBAR
 	]
 
 	const HVTools = [
@@ -130,22 +89,12 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.KNIFE,
 		$toolTypes.get("hv_buzzsaw"),
 		GTToolType.SCYTHE,
-		$toolTypes.get("hv_wirecutter"),
+		GTToolType.WIRE_CUTTER_HV,
 		GTToolType.DRILL_HV,
-		$toolTypes.get("hv_screwdriver"),
-		$toolTypes.get("hv_chainsaw"),
-		$toolTypes.get("hv_wrench"),
-		GTToolType.CROWBAR,
-		//Hiden
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.BUZZSAW
+		GTToolType.SCREWDRIVER_HV,
+		GTToolType.CHAINSAW_HV,
+		GTToolType.WRENCH_HV,
+		GTToolType.CROWBAR
 	]
 
 	const EVTools = [
@@ -162,17 +111,7 @@ function registerTFGToolMaterialModification(event) {
 		$toolTypes.get("ev_screwdriver"),
 		$toolTypes.get("ev_chainsaw"),
 		$toolTypes.get("ev_wrench"),
-		GTToolType.CROWBAR,
-		// Hidden
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.BUZZSAW
+		GTToolType.CROWBAR
 	]
 
 	const IVTools = [
@@ -189,17 +128,7 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.SCREWDRIVER_IV,
 		GTToolType.CHAINSAW_IV,
 		GTToolType.WRENCH_IV,
-		GTToolType.CROWBAR,
-		// Hidden
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.BUZZSAW
+		GTToolType.CROWBAR
 	]
 
 	const ZPMTools = [
@@ -217,23 +146,15 @@ function registerTFGToolMaterialModification(event) {
 		$toolTypes.get("zpm_chainsaw"),
 		$toolTypes.get("zpm_wrench"),
 		GTToolType.CROWBAR,
-		// Hidden
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.DRILL_LV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.BUZZSAW,
+		//Hidden
 		GTToolType.PICKAXE
 	]
 
 	//#region Tools
 
-	// Remove all the tools we don't want anymore
-	const noToolMaterials = [
+	const toRemove = [
+		// Remove all the tools we don't want anymore
+		GTMaterials.CobaltBrass,
 		GTMaterials.Diamond,
 		GTMaterials.Invar,
 		GTMaterials.RoseGold,
@@ -247,18 +168,34 @@ function registerTFGToolMaterialModification(event) {
 		GTMaterials.Netherite,
 		GTMaterials.StainlessSteel,
 		GTMaterials.Darmstadtium,
-		GTMaterials.RhodiumPlatedPalladium
+		GTMaterials.RhodiumPlatedPalladium,
+		// Remove all the tools we want to rebalance
+		GTMaterials.DamascusSteel,
+		GTMaterials.Bronze,
+		GTMaterials.WroughtIron,
+		GTMaterials.Steel,
+		GTMaterials.BlueSteel,
+		GTMaterials.RedSteel,
+		GTMaterials.VanadiumSteel,
+		GTMaterials.Ultimet,
+		GTMaterials.TungstenCarbide,
+		GTMaterials.HSSE,
+		GTMaterials.Duranium,
+		GTMaterials.NaquadahAlloy,
+		GTMaterials.Neutronium
 	];
 
-	for (let mat of noToolMaterials) {
+	for (let mat of toRemove) {
 		if (mat.hasProperty(PropertyKey.TOOL)) {
 			mat.removeProperty(PropertyKey.TOOL);
 		}
 	}
 
-	// Cobalt has its own until we can find a way to generate only the buzzsaw without the tool
-	GTMaterials.CobaltBrass.removeProperty(PropertyKey.TOOL);
-	GTMaterials.CobaltBrass.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1, 1, 1, 1, [GTToolType.BUZZSAW]).build());
+	// Add buzzsaw blades
+	GTMaterials.CobaltBrass.addFlags(GENERATE_BUZZSAW_BLADE);
+	GTMaterials.WroughtIron.addFlags(GENERATE_BUZZSAW_BLADE);
+	GTMaterials.Steel.addFlags(GENERATE_BUZZSAW_BLADE);
+
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
 	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
@@ -276,56 +213,55 @@ function registerTFGToolMaterialModification(event) {
 
 	GTMaterials.Flint.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.8, 2, 54, 1, [
 		GTToolType.AXE,
-		GTToolType.HARD_HAMMER,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		GTToolType.SHOVEL,
 		GTToolType.PICKAXE,
 		GTToolType.SWORD
 	]).build());
-
+	
+	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2, ULVTools).build());
+	GTMaterials.BismuthBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 2.0, 188, 2, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.BlackBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 2.0, 194, 2, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.Bronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.Bronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2, 212, 2, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.WroughtIron.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.WroughtIron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 2, 384, 2, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.Steel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.Steel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 3, 512, 3, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.DamascusSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 4, 1024, 3, ULVTools.concat(GTToolType.MORTAR)).build());
+	GTMaterials.BlackSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4.5, 3.5, 612, 3, ULVTools.concat(GTToolType.MORTAR)).build());
-	TFGHelpers.getMaterial('ostrum_iodide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(18, 8, 3096, 4, EVTools).build());
+	
+	GTMaterials.BlueSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.BlueSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(7, 3, 804, 3, LVTools).build());
+	GTMaterials.RedSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.RedSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 5.5, 1560, 3, LVTools).build());
+
+	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 6, 2048, 3, MVTools).build());
+
+	GTMaterials.Ultimet.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.Ultimet.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(14, 7, 1678, 4, HVTools).build());
+	TFGHelpers.getMaterial('boron_carbide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	TFGHelpers.getMaterial('boron_carbide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 9, 3678, 3, HVTools).build());
 
-	// Remove all the tools we want to rebalance
-	const rebalanceStats = [
-		GTMaterials.DamascusSteel,
-		GTMaterials.Bronze,
-		GTMaterials.WroughtIron,
-		GTMaterials.Steel,
-		GTMaterials.BlueSteel,
-		GTMaterials.RedSteel,
-		GTMaterials.VanadiumSteel,
-		GTMaterials.Ultimet,
-		GTMaterials.TungstenCarbide,
-		GTMaterials.HSSE,
-		GTMaterials.Duranium,
-		GTMaterials.NaquadahAlloy,
-		GTMaterials.Neutronium
-	];
-
-	for (let mat of rebalanceStats) {
-		if (mat.hasProperty(PropertyKey.TOOL)) {
-			mat.removeProperty(PropertyKey.TOOL);
-		}
-	}
-
-	GTMaterials.DamascusSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 4, 1024, 3, ULVTools.concat(GTToolType.MORTAR)).build());
-	GTMaterials.Bronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2, 212, 2, ULVTools.concat(GTToolType.MORTAR)).build());
-	GTMaterials.WroughtIron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 2, 384, 2, ULVTools.concat(GTToolType.MORTAR)).build());
-	GTMaterials.Steel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 3, 512, 3, ULVTools.concat(GTToolType.MORTAR)).build());
-	GTMaterials.BlueSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(7, 3, 804, 3, LVTools).build());
-	GTMaterials.RedSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 5.5, 1560, 3, LVTools).build());
-	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 6, 2048, 3, MVTools).build());
-	GTMaterials.Ultimet.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(14, 7, 1678, 4, HVTools).build());
+	GTMaterials.TungstenCarbide.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.TungstenCarbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(32, 10, 1024, 4, EVTools).build());
+	TFGHelpers.getMaterial('ostrum_iodide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	TFGHelpers.getMaterial('ostrum_iodide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(18, 8, 3096, 4, EVTools).build());
+
+	GTMaterials.HSSE.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(42, 11, 4012, 3, IVTools).build());
+	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(52, 12, 6192, 5, IVTools).build());
+	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(62, 13, 8192, 5, IVTools).build());
+
+	GTMaterials.Neutronium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.Neutronium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(180.0, 100.0, 65535, 6, ZPMTools).build());
 
 	//#endregion
