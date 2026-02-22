@@ -34,45 +34,6 @@ function registerTFGFlagsMaterialModification(event) {
 		DISABLE_DECOMPOSITION
 	} = $MATERIAL_FLAGS
 
-	const metalTooling = [
-		GTToolType.AXE,
-		GTToolType.PICKAXE,
-		GTToolType.HARD_HAMMER,
-		GTToolType.BUTCHERY_KNIFE,
-		GTToolType.SWORD,
-		GTToolType.FILE,
-		GTToolType.SAW,
-		GTToolType.SHOVEL,
-		GTToolType.SHOVEL,
-		GTToolType.SPADE,
-		GTToolType.MINING_HAMMER,
-		GTToolType.HOE,
-		GTToolType.KNIFE,
-		GTToolType.BUZZSAW,
-		GTToolType.SCYTHE,
-		GTToolType.WIRE_CUTTER,
-		GTToolType.WIRE_CUTTER_LV,
-		GTToolType.WIRE_CUTTER_HV,
-		GTToolType.WIRE_CUTTER_IV,
-		GTToolType.DRILL_LV,
-		GTToolType.DRILL_MV,
-		GTToolType.DRILL_HV,
-		GTToolType.DRILL_EV,
-		GTToolType.DRILL_IV,
-		GTToolType.SCREWDRIVER,
-		GTToolType.SCREWDRIVER_LV,
-		GTToolType.SCREWDRIVER_HV,
-		GTToolType.SCREWDRIVER_IV,
-		GTToolType.CHAINSAW_LV,
-		GTToolType.CHAINSAW_HV,
-		GTToolType.CHAINSAW_IV,
-		GTToolType.WRENCH,
-		GTToolType.WRENCH_LV,
-		GTToolType.WRENCH_HV,
-		GTToolType.WRENCH_IV,
-		GTToolType.CROWBAR,
-	]
-
 	GTMaterials.Clay.addFlags(DISABLE_DECOMPOSITION);
 	GTMaterials.Brick.addFlags(DISABLE_DECOMPOSITION);
 
