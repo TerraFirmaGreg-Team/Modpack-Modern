@@ -1,24 +1,50 @@
 project_id_env: '${{ vars.CROWDIN_ID }}'
 api_token_env: '${{ secrets.CROWDIN_TOKEN }}'
 base_url: 'https://api.crowdin.com'
-preserve_hierarchy: 1
-pull_request_title: New Crowdin updates
+base_path: "./kubejs/assets"
+pull_request_title: "New Crowdin updates"
 pull_request_labels:
-  - 'Pull request: Translation'
-commit_message: '[translation] New translations {fileName} ({languageName})'
+  - "Pull request: Translation"
+commit_message: "[translation] New translations {fileName} ({languageName})"
+preserve_hierarchy: true
 files:
-  - source: /kubejs/assets/*/lang/en_us.json
+  - source: /*/lang/en_us.json
     translation: /%original_path%/%locale_with_underscore%.json
     update_option: update_without_changes
     languages_mapping:
       locale_with_underscore:
         en-US: en_us
         en-GB: en_gb
-        ru: ru_ru
-        uk: uk_ua
-        ja: ja_jp
         zh-CN: zh_cn
         zh-TW: zh_tw
         es-ES: es_es
+        pt-BR: pt_br
+        pt-PT: pt_pt
+        sv-SE: sv_se
+        en: en_us
+        ru: ru_ru
+        uk: uk_ua
+        ja: ja_jp
         de: de_de
         fr: fr_fr
+        it: it_it
+        ar: ar_sa
+        hu: hu_hu
+        fi: fi_fi
+        ro: ro_ro
+        ca: ca_es
+        da: da_dk
+        el: el_gr
+        cs: cs_cz
+        he: he_il
+        ko: ko_kr
+        nl: nl_nl
+        pl: pl_pl
+        sr: sr_sp
+        tr: tr_tr
+        vi: vi_vn
+        
+
+
+
+
