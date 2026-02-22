@@ -44,6 +44,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGWaxRecipes(event)
 	registerTFGRubberRecipes(event)
 	registerTFGWoodRecipes(event)
+	registerTFGWoodenRecipes(event)
 	registerTFGKnappingRecipes(event)
 	registerTFGLeatherRecipes(event)
 	registerTFGClayRecipes(event)
@@ -93,4 +94,5 @@ const registerTFGRecipes = (event) => {
 	registerTFGBiochemRecipes(event)
 
 	registerTFGEtchingRecipes(event)
+	registerTFGMVMaterialRecipes(event)
 }

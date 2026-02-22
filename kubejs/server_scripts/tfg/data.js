@@ -100,7 +100,7 @@ function registerTFGItemSize(event) {
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
 
-	event.itemSize("tfg:railgun_ammo_shell", "large", "medium", "railgun_ammo_shell");
+	event.itemSize("tfg:railgun_ammo_shell", "large", "light", "railgun_ammo_shell");
 
 	event.itemSize("tfg:harvest_basket", "large", "medium", "harvest_basket");
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
@@ -338,6 +338,10 @@ function registerTFGItemSize(event) {
 		"medium",
 		"Molds"
 	)
+
+	//Universal Compost Bags
+	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
+	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
 }
 
 //#endregion

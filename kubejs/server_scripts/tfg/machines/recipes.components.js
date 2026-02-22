@@ -66,6 +66,8 @@ function registerTFGElectronicComponentsRecipes(event) {
 		.duration(50)
 		.EUt(7)
 
+	TFGHelpers.registerMaterialInfo('create:electron_tube', [GTMaterials.Air, 1])
+
 	// Vacuum Tubes
 	event.remove({ id: 'gtceu:shaped/vacuum_tube' })
 	event.replaceInput({ id: 'gtceu:assembler/vacuum_tube_plain' }, 'gtceu:steel_bolt', 'gtceu:resin_circuit_board')

@@ -286,7 +286,7 @@ element {
 
 element {
   button_element_executable_block_identifier = dbfd850d-f49c-44f9-975c-52b0b07335f1-1710837053353
-  [executable_action_instance:dc0290c6-6dcd-41ab-b222-a76c27eaec6e-1710837053356][action_type:joinserver] = modern.terrafirmagreg.su
+  [executable_action_instance:dc0290c6-6dcd-41ab-b222-a76c27eaec6e-1710837053356][action_type:joinserver] = modern.terrafirmagreg.team
   [executable_block:dbfd850d-f49c-44f9-975c-52b0b07335f1-1710837053353][type:generic] = [executables:dc0290c6-6dcd-41ab-b222-a76c27eaec6e-1710837053356;]
   backgroundnormal = [source:local]kubejs/assets/tfg/textures/gui/button_98x20.png
   backgroundhovered = [source:location]tfg:textures/gui/button_hover_98x20.gif

@@ -453,7 +453,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (00:30)")).blue());
 	})
 	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (01:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (01:20)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
@@ -485,7 +485,7 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (02:40)")).blue());
+		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (02:40)")).blue());
 		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
@@ -493,18 +493,23 @@ const registerTooltips = (event) => {
 	})
 	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
 		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.haste").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
 	})
 	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
+		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
+		text.add(2, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
 	})
 	//event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
 	//	text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
@@ -520,5 +525,17 @@ const registerTooltips = (event) => {
 	//})
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
+	})
+
+	// Saw can silk harvest ice
+	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
+	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
+	event.addAdvanced(['#tfg:silk_harvest_ice'], (item, advanced, text) => {
+		const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
+		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
+		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
+
+		text.remove(keyToRemove);
+		text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 	})
 }

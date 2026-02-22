@@ -74,21 +74,76 @@ function registerTFGBakeliteRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler('tfg:phenolic_board_mv')
-		.itemInputs('2x #forge:foils/bakelite', 'gtceu:wood_plate')
+		.itemInputs('2x #forge:foils/bakelite', 'gtceu:resin_circuit_board')
 		.inputFluids('gtceu:phenol 50')
 		.itemOutputs('gtceu:phenolic_circuit_board')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('tfg:phenolic_board_mv_pe')
-		.itemInputs('2x #forge:foils/polyethylene', 'gtceu:wood_plate')
+		.itemInputs('2x #forge:foils/polyethylene', 'gtceu:resin_circuit_board')
 		.inputFluids('gtceu:phenol 50')
 		.itemOutputs('gtceu:phenolic_circuit_board')
 		.duration(7.5 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// machine hull changes/additions
-	event.replaceInput({ id: 'gtceu:shaped/mv_machine_hull' }, '#forge:plates/wrought_iron', '#forge:plates/bakelite')
+
+	// To Move to MV Rework after
+	event.remove({ id: 'gtceu:shaped/mv_machine_hull'})
+	event.shaped('gtceu:mv_machine_hull', [
+		'ABA',
+		'DCD',
+		'ABA'
+	], {
+		A: '#forge:plates/bakelite',
+		B: '#forge:plates/aluminum',
+		C: 'gtceu:mv_machine_casing',
+		D: 'gtceu:copper_single_cable'
+	}).id('tfg:shaped/mv_machine_hull')
+
+	event.remove({ id: 'gtceu:assembler/hull_mv_annealed'})
+	event.recipes.gtceu.assembler('tfg:mv_machine_hull')
+		.itemInputs('gtceu:mv_machine_casing', '2x gtceu:copper_single_cable')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_machine_hull')
+		.duration(20*2.5)
+		.EUt(GTValues.VH[GTValues.LV])
+
+	// MV Buses
+	event.recipes.gtceu.assembler('tfg:mv_input_bus')
+		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_crate')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_input_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:mv_output_bus')
+		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_crate')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_output_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(2)
+
+	// MV Hatches
+	event.recipes.gtceu.assembler('tfg:mv_input_hatch')
+		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_drum')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_input_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:mv_output_hatch')
+		.itemInputs('gtceu:mv_machine_hull', '#tfg:any_bronze_drum')
+		.inputFluids('tfg:bakelite 576')
+		.itemOutputs('gtceu:mv_output_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.circuit(2)
+	// End of MV Changes
 
 	event.recipes.gtceu.assembler('tfg:ulv_hull_bakelite')
 		.itemInputs('gtceu:ulv_machine_casing', '2x #forge:single_cables/red_alloy')
