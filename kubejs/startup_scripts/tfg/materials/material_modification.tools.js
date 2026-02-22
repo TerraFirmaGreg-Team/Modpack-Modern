@@ -3,6 +3,7 @@
 
 function registerTFGToolMaterialModification(event) {
 	const $ROTOR_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.RotorProperty')
+	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties');
 
 	const {
 		GENERATE_BUZZSAW_BLADE,
@@ -335,4 +336,19 @@ function registerTFGToolMaterialModification(event) {
 	//TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(255, 180, 6, 1110));
 	//GTMaterials.getMaterial('rocket_alloy_t3').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(300, 160, 8, 3840));
 	//TFGHelpers.getMaterial('ysz').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 220, 10, 5310));
+
+	//#endregion
+
+	//#region Fluid Pipes
+
+	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
+	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
+	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
+	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
+	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
+	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
+
+	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+
+	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 }

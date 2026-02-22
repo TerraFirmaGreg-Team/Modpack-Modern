@@ -22,19 +22,11 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.getProperties().removeProperty(PropertyKey.BLAST);
-	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.BlackBronze.getProperties().removeProperty(PropertyKey.ITEM_PIPE);
-	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Rose Gold & Sterling Silver
 	GTMaterials.RoseGold.getProperties().removeProperty(PropertyKey.BLAST);
 	GTMaterials.SterlingSilver.getProperties().removeProperty(PropertyKey.BLAST);
-	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
-	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
-	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
-	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
-	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
-	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
 
 	// int is how fast the condition progresses (default 1.0)
 	// bool is whether or not the condition applies to anything made with the material, other than dusts (default false) 
