@@ -57,7 +57,7 @@ export default defineConfig([
       "@stylistic/arrow-spacing": [1, { "before": true, "after": true }],
       "@stylistic/keyword-spacing": [1, { "before": true, "after": true }],
       "@stylistic/dot-location": [1, "property"],
-      "@stylistic/comma-dangle": [1, "never"]
+      "@stylistic/comma-dangle": [1, "allow"]
     }
   },
 ]);
