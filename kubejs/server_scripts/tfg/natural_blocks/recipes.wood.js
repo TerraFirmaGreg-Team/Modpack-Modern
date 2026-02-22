@@ -113,6 +113,16 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shaped/${name}_slab_from_lumber`)
                 };
 
+            // Slab from plank
+                if (slab && plank && name) {
+                    event.shaped(`6x ${slab}`, [
+                        'AAA'
+                    ], {
+                        A: plank
+                    })
+                    .id(`tfg:shaped/${name}_slab_from_plank`)
+                }
+
             // Lumber from stair
                 if (stair && lumber && name) {
                     event.shapeless(`3x ${lumber}`,
@@ -121,6 +131,17 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shapeless/${name}_lumber_from_stair`)
 
                     generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `${name}_lumber_from_stair`)
+                };
+
+            // Stair from lumber
+                if (stair && lumber && name) {
+                    event.shaped(stair, [
+                        'A ',
+                        'AA'
+                    ], {
+                        A: lumber
+                    })
+                    .id(`tfg:shaped/${name}_stair_from_lumber`)
                 };
 
             // Stair from plank
