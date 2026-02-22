@@ -334,8 +334,7 @@ function registerTFGWoodenRecipes(event) {
          * @return {Array}
          */
         function resolveArgs(materials, woodMaterial) {
-            return materials
-            .map(materials => materials === '{wood}' ? woodMaterial : materials);
+            return materials.map(mats => mats === '{wood}' ? woodMaterial : mats);
         };
 
         function registerTFGWoodRecycling(mod, woodname, woodMaterial) {
@@ -624,11 +623,6 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `tfc:crafting/wood/${wood}_lumber_planks` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_stairs` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_stairs_undo` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
             
             TFGWoodBuilder(
                 event, 
@@ -650,7 +644,18 @@ function registerTFGWoodenRecipes(event) {
                 `tfc:wood/wood/${wood}`, 
                 `tfc:wood/stripped_wood/${wood}`
             );
-        });   
+        });
+
+        registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
+        registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
+
+        // Special handling for the palm mosaics
+
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
 
         TFGMosaicWoodBuilder(
             event,
@@ -663,9 +668,6 @@ function registerTFGWoodenRecipes(event) {
             'tfc:wood/planks/palm_slab',
             'tfc:wood/planks/palm_mosaic_slab'
         );
-
-        registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
-        registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
 
     // #endregion
 
