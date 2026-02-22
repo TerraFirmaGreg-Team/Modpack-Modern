@@ -12,12 +12,19 @@ function registerTFGZirconiumRecipes(event) {
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.chemical_reactor('tfg:silicon_tetrachloride_decomp')
+	event.recipes.gtceu.chemical_reactor('tfg:silicon_tetrachloride_water')
 		.inputFluids('tfg:silicon_tetrachloride 1000', 'minecraft:water 2000')
-		.itemOutputs('#forge:dusts/silicon')
-		.outputFluids('gtceu:hydrochloric_acid 4000', 'gtceu:oxygen 2000')
+		.itemOutputs('#forge:dusts/silicon_dioxide')
+		.outputFluids('gtceu:hydrochloric_acid 4000')
 		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:silicon_tetrachloride_hydrogen')
+		.inputFluids('tfg:silicon_tetrachloride 1000', 'gtceu:hydrogen 2000')
+		.itemOutputs('#forge:dusts/polysilicon')
+		.outputFluids('gtceu:hydrochloric_acid 4000')
+		.duration(5 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:zirconium_tetrachloride')
 		.itemInputs('4x #forge:dusts/carbon', '6x #forge:dusts/zircon')

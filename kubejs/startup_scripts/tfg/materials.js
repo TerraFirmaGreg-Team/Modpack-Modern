@@ -44,28 +44,15 @@ const registerTFGMaterials = (event) => {
 
 	registerTFGEtchingMaterials(event);
 
+	registerTFGBakeliteMaterials(event);
+	registerTFGRefrigerantMaterials(event);
+	registerTFGCoilMaterials(event);
+	registerTFGBouleMaterials(event);
+	registerTFGRotorMaterials(event);
 
-	// Refrigerants
+	registerTFGTungstenMaterials(event);
+	registerTFGZirconiumMaterials(event);
 
-	event.create('tfg:chlorodifluoromethane')
-		.gas()
-		.components('1x carbon', '1x hydrogen', '1x chlorine', '2x fluorine')
-		.color(0x66ffa3)
-
-	event.create('tfg:acetylene')
-		.gas()
-		.components('2x carbon', '2x hydrogen')
-		.color(0x1a1212)
-
-	event.create('tfg:isobutane')
-		.gas()
-		.components('4x carbon', '10x hydrogen')
-		.color(0x7d0f00)
-
-	event.create('tfg:1_1_1_2_tetrafluoroethane')
-		.gas()
-		.components('2x carbon', '2x hydrogen', '4x fluorine')
-		.color(0x46702e)
 
 	// Crafting components
 
@@ -76,81 +63,6 @@ const registerTFGMaterials = (event) => {
 		.color(0xFFFFFF)
 		.secondaryColor(0x67FFE6)
 		.formula("(Al2Si2O5(OH)4)(BeK4N5)")
-
-	// Bakelite
-	event.create('tfg:bakelite')
-		.polymer()
-		.fluid()
-		.color(0xF29104)
-		.secondaryColor(0xD96005)
-		.components('1x phenol', '1x formaldehyde')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.NO_SMELTING,
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_FOIL
-		)
-
-	event.create('tfg:phenolic_resin')
-		.fluid()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('1x phenol', '1x formaldehyde')
-		.color(0xFCD7A3)
-
-	// Coils
-
-	event.create('tfg:magnesium_hydroxide')
-		.dust()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('1x magnesium', '2x hydroxide')
-		.color(0xC6E4FF)
-
-	event.create('tfg:magnesia_refractory_brick')
-		.dust()
-		.ingot()
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.flags(GTMaterialFlags.NO_SMELTING)
-		.color(0xA69D96)
-
-	//#region Tungsten Line
-
-	event.create('tfg:sodium_tungstate')
-		.dust()
-		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.components('2x sodium','1x tungsten', '4x oxygen')
-		.color('0xdcf6f7')
-
-    event.create('tfg:ammonium_tungstate')
-        .dust()
-        .flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .iconSet(GTMaterialIconSet.DULL)
-        .components('10x ammonia', '2x hydrogen', '12x tungsten', '42x oxygen')
-        .color('0xfafafa')
-
-	event.create('tfg:apt')
-		.gem()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.iconSet(GTMaterialIconSet.FLINT)
-		.components('10x ammonia', '4x water', '2x hydrogen', '12x tungsten', '42x oxygen')
-		.color('0xaabdf0')
-
-	event.create('tfg:tungsten_oxide')
-		.dust()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.iconSet(GTMaterialIconSet.FLINT)
-		.components('1x tungsten', '3x oxygen')
-		.color('0xf0c851')
-
-	// #endregion
-
-	// #region conductor
-	event.create('tfg:thermally_conductive_fluid')
-		.liquid()
-		.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-		.components('7x gallium', '2x tin', '1x zinc')
-		.color('0x34cfeb')
-	// #endregion
 	
 	// #region holder materials
 	//     These allow us to give material components to non-material items
@@ -172,57 +84,6 @@ const registerTFGMaterials = (event) => {
 		.color(0x000000)
 	// #endregion
 
-	// #region Zirconium
-	event.create('tfg:zircon')
-		.gem()
-		.color(0xF1B6B0)
-		.secondaryColor(0x4BABC6)
-		.iconSet('gem_horizontal')
-		.components('1x zirconium', '1x silicon', '4x oxygen')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:zirconium_tetrachloride')
-		.dust()
-		.color(0xF1B6B0)
-		.secondaryColor(0x146946)
-		.iconSet('rough')
-		.components('1x zirconium', '4x chlorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:silicon_tetrachloride')
-		.liquid()
-		.color(0x707078)
-		.secondaryColor(0x146946)
-		.components('1x silicon', '4x chlorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:zirconium_bromide')
-		.dust()
-		.color(0xBA776F)
-		.secondaryColor(0x146985)
-		.iconSet('shiny')
-		.components('1x zirconium', '4x bromine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:zirconium_diboride')
-		.ingot()
-		.color(0xFADED2)
-		.secondaryColor(0x4FA883)
-		.iconSet('chonky')
-		.components('1x zirconium', '2x boron')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-
-	// #endregion
-
-	//#region Material for Coils
-
-	event.create('tfg:nichromium_iodomethylate')
-		.liquid(new GTFluidBuilder().temperature(1818))
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('4x nickel', '1x chromium', '1x carbon', '3x hydrogen', '1x iodine')
-		.color(0xe7a2fc)
-
-	//#region Materials with Stats
 
     // EV New Material
 
@@ -233,7 +94,7 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ingot()
 		.liquid()
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
+		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20*120))
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,
@@ -244,21 +105,6 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_FINE_WIRE
 		)
 
-    // Mandatory Material to progress into Fission Line from Mars
-
-	event.create("ostrum_iodide")
-		.ingot()
-		.liquid()
-		.components('2x ostrum', 'iodine')
-		.blastTemp(3700, 'mid', GTValues.VA[GTValues.IV], (20*120))
-		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
-		.flags(
-			GTMaterialFlags.GENERATE_GEAR,
-			GTMaterialFlags.GENERATE_FOIL,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_LONG_ROD)
-		.color(0xc696f2)
-		.secondaryColor(0x9b99ff)
 
     // Material at HV used for Zirconium at IV
 
@@ -267,237 +113,11 @@ const registerTFGMaterials = (event) => {
 		.iconSet('dull')
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
-		.blastTemp(3041, "mid", GTValues.VA[GTValues.HV], 1500)
+		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.GENERATE_RING,
 			GTMaterialFlags.GENERATE_LONG_ROD)
-
-	// Material at HV used for Exotic Rotor
-
-	event.create('tfg:inconel_718')
-		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
-		.color(0xfff870)
-		.secondaryColor(0xc8cdf7)
-		.iconSet(GTMaterialIconSet.METALLIC)
-		.ingot()
-		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW
-			)
-
-	event.create('tfg:weak_inconel_718')
-		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
-		.color(0x8f8c57)
-		.secondaryColor(0xc8cdf7)
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.ingot()
-		.blastTemp(1210, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION
-			)
-
-	event.create('tfg:homogenized_inconel_718')
-		.components('5x invar', '2x chromium', '2x molybdenum', '1x niobium', '1x aluminium', '1x titanium')
-		.color(0xdbd560)
-		.secondaryColor(0xc8cdf7)
-		.iconSet(GTMaterialIconSet.DULL)
-		.ingot()
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
-			)
-
-	// Material for Inconel Line at HV
-
-	event.create('tfg:inert_furnace_atmosphere')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(3730))
-		.components(
-		'2x nitrogen',
-		'1x argon',
-		'1x hydrogen'
-		)
-		.color(0xB8B6AD)
-		.secondaryColor(0x9A8C62)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:metal_desorption_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(1200))
-		.components(
-			'2x hydrogen',
-			'1x oxygen',
-			'1x carbon_monoxide'
-		)
-		.color(0x7A7262)
-		.secondaryColor(0x5E4B32)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:reducing_process_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(1800))
-		.components(
-			'3x hydrogen',
-			'1x nitrogen',
-			'1x carbon_monoxide'
-		)
-		.color(0x9AA0A6)
-		.secondaryColor(0x6B7075)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	// Material for Mo-Si-B
-
-	event.create('tfg:argon_enriched_atmosphere')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(87))
-		.color(0x7F9CBF)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:furnace_exhaust_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(1200))
-		.color(0xAAAAAA)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:mo_si_b_off_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(1500))
-		.color(0xC0B283)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:medium_temperature_off_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(800))
-		.color(0xE0C080)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:hydroxide_decomposition_off_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(600))
-		.color(0xA0C0FF)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:linac_activated_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(300))
-		.color(0xFF4444)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:highly_active_off_gas')
-		.gas(new GTFluidBuilder()
-		.state(GTFluidState.GAS)
-		.temperature(1300))
-		.color(0xFFAA00)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:dirty_mo_si_b')
-		.color(0x77FF77)
-		.secondaryColor(0x77AAFF)
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.dust()
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
-			)
-
-	event.create('tfg:weak_mo_si_b')
-		.color(0xAAAAAA)
-		.secondaryColor(0x77AAFF)
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.ingot()
-		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:worked_mo_si_b')
-		.color(0x77AAFF)
-		.secondaryColor(0x77FF77)
-		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.iconSet(GTMaterialIconSet.OPAL)
-		.ingot()
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
-			)
-
-	event.create('tfg:homogenized_mo_si_b')
-		.color(0x88CCFF)
-		.secondaryColor(0x99FF88)
-		.iconSet(GTMaterialIconSet.FINE)
-		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.ingot()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:activated_mo_si_b')
-		.color(0xFF4444)
-		.secondaryColor(0x88CCFF)
-		.iconSet(GTMaterialIconSet.RADIOACTIVE)
-		.ingot()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:mo_si_b')
-		.color(0x77AAFF)
-		.secondaryColor(0xCCCCCC)
-		.iconSet(GTMaterialIconSet.METALLIC)
-		.ingot()
-		.blastTemp(2710, 'mid', GTValues.VA[GTValues.EV], (20*120))
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW
-			)
-
-	event.create('tfg:mo_50_re')
-		.color(0x5a8c78)
-		.secondaryColor(0x94eb9f)
-		.iconSet(GTMaterialIconSet.getByName('chonky'))
-		.ingot()
-		.blastTemp(2341, 'low', GTValues.VA[GTValues.HV], (20*95))
-		.flags( 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW
-			)
-
-	// MV New Material
-
-	event.create('tfg:rough_silicon_carbide')
-		.color(0x95999e)
-		.secondaryColor(0x95999a)
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.ingot()
-		.blastTemp(2341, 'low', GTValues.VA[GTValues.HV], (20*95))
-		.flags( 
-			GTMaterialFlags.DISABLE_DECOMPOSITION
-			)
-
-	event.create('tfg:silicon_carbide')
-		.color(0xdfe5ed)
-		.secondaryColor(0xdfe5aa)
-		.iconSet(GTMaterialIconSet.ROUGH)
-		.ingot()
-		.flags( 
-			GTMaterialFlags.DISABLE_DECOMPOSITION
-			)
-
-
-
-
-
-	
 }
