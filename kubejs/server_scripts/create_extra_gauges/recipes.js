@@ -97,15 +97,7 @@ if (Platform.isLoaded("extra_gauges")) {
 		}
 	)
 	
-	//event.recipes.gtceu.shaped('extra_gauges:passive_gauge', 
-	//	[
-	//		'CZ'
-	//	],
-	//	{
-	//		C: 'create:factory_gauge',
-	//		Z: '#forge:tools/hammers'
-	//	}
-	//)
+
 	event.shapeless(
 		Item.of('extra_gauges:passive_gauge'),
 		['create:factory_gauge','#forge:tools/hammers']
@@ -116,16 +108,7 @@ if (Platform.isLoaded("extra_gauges")) {
 		.itemOutputs('extra_gauges:passive_gauge')
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.ULV])
-	
-	//event.recipes.gtceu.shaped('create:factory_gauge', 
-	//	[
-	//		'WY'
-	//	],
-	//	{
-	//		W: 'extra_gauges:passive_gauge',
-	//		Y: '#forge:tools/screwdrivers'
-	//	}
-	//)
+
 	event.shapeless(
 		Item.of('create:factory_gauge'),
 		['extra_gauges:passive_gauge','#forge:tools/screwdrivers']
