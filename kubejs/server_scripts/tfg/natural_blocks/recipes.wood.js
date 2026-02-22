@@ -305,11 +305,13 @@ function registerTFGWoodenRecipes(event) {
     // #region TFG Wood Recycling
 
         /**
-         * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index.
+         * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index. 2 Lumber -> 1 Wood dust
          */
         const TFGWoodRecyclingIndex = [
             ['{mod}:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
             ['{mod}:wood/planks/{type}', ['{wood}', 2]],
+            ['{mod}:wood/planks/{type}_workbench', ['{wood}', 8]],
+            ['{mod}:wood/planks/{type}_loom', ['{wood}', 7/2]],
             ['{mod}:wood/planks/{type}_door', ['{wood}', 3/2]],
             ['{mod}:wood/planks/{type}_trapdoor', ['{wood}', 1]],
             ['{mod}:wood/planks/{type}_fence', ['{wood}', 4]],
@@ -321,6 +323,9 @@ function registerTFGWoodenRecipes(event) {
             ['{mod}:wood/planks/{type}_button', ['{wood}', 1/4]],
             ['{mod}:wood/chest/{type}', ['{wood}', 4]],
             ['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]],
+            ['{mod}:wood/sluice/{type}', ['{wood}', 3/2]],
+            ['{mod}:wood/barrel/{type}', ['{wood}', 7/2]],
+            ['{mod}:wood/sign/{type}', ['{wood}', 1]]
         ];
 
         /**
@@ -448,6 +453,7 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `afc:crafting/wood/${wood}_water_wheel` });
 
             // Removed recipe changes
+                event.remove({ id: `afc:crafting/wood/${wood}_planks` });
                 event.remove({ id: `afc:crafting/wood/${wood}_pressure_plate` });
                 event.remove({ id: `afc:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `afc:crafting/wood/${wood}_stairs` });
@@ -609,6 +615,7 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` });
 
             // Removed recipe changes
+                event.remove({ id: `tfc:crafting/wood/${wood}_planks` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_pressure_plate` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_button` });
