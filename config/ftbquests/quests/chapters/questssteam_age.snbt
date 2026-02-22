@@ -635,7 +635,11 @@
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
-			description: ["{quests.steam_age.steam_bloomery.desc}"]
+			description:[
+							"{quests.steam_age.steam_bloomery.desc.1}"
+							"{@pagebreak}"
+							"{quests.steam_age.steam_bloomery.desc.2}"
+						]
 			icon: "tfg:steam_bloomery"
 			id: "0805CCABC8E7F6CF"
 			optional: true
