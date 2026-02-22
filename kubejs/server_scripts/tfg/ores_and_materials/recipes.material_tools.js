@@ -36,15 +36,10 @@ function processToolMortar(event, toolType, material) {
 /**
  * @param {Internal.RecipesEventJS} event 
  * @param {GTToolType} toolType 
- * @param {String} tagPrefixName
  * @param {TagPrefix} headTagPrefix 
- * @param {Internal.ItemStack} extruderMold 
- * @param {Internal.ItemStack} ceramicMold
- * @param {number} circuitMeta 
- * Used for the laser engraver recipes for gem tools.
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
-function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extruderMold, ceramicMold, circuitMeta, material) {
+function processGTToolHead(event, toolType, headTagPrefix, material) {
 	const toolItem = ToolHelper.get(toolType, material);
 	const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1);
 
@@ -95,8 +90,6 @@ function processGTToolHead(event, toolType, tagPrefixName, headTagPrefix, extrud
 		const materialAmount = getMaterialAmount(headTagPrefix, material);
 		addTFCMelting(event, toolItem, material, materialAmount * 144, toolType.name);
 	}
-
-	processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, ceramicMold, circuitMeta, material);
 }
 
 /** 
@@ -132,13 +125,15 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 			.duration(material.getMass() * 6)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		let input_array = [];
-		for (let i = 0; i < materialAmount; i++) {
-			input_array.push(ingotItem);
+		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
+			let input_array = [];
+			for (let i = 0; i < materialAmount; i++) {
+				input_array.push(ingotItem);
+			}
+			event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
+				.head(extruderMold)
+				.id(`tfg:vi/curving/${materialName}_ingot_to_${tagPrefixName}`)
 		}
-		event.recipes.vintageimprovements.curving(toolHeadItem, input_array)
-			.head(extruderMold)
-			.id(`tfg:vi/curving/${materialName}_ingot_to_${tagPrefixName}`)
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
 			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144);

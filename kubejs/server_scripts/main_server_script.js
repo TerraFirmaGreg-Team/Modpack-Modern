@@ -59,7 +59,6 @@ ServerEvents.tags('item', event => {
     registerTFCLunchboxItemTags(event)
 	registerVintageImprovementsItemTags(event)
 	registerWABItemTags(event)
-	registerDisabledTools(event)
 })
 
 /**
