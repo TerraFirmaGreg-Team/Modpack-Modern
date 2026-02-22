@@ -736,15 +736,14 @@ function registerTFGWoodenRecipes(event) {
     // #region Gregtech
 
         // Removed recipe changes
-            event.remove({ id: 'gtceu:shaped/treated_fence' });
-            event.remove({ id: 'gtceu:shaped/treated_fence_gate' });
-            event.remove({ id: 'gtceu:shaped/treated_fence_gate_screws' });
-            event.remove({ id: 'gtceu:shaped/treated_stairs' });
-            event.remove({ id: 'gtceu:assembler/treated_stairs' });
-            event.remove({ id: 'gtceu:assembler/treated_fence' });
-            event.remove({ id: 'gtceu:assembler/treated_fence_gate' });
+            event.remove({ output: 'gtceu:treated_wood_door' });
+            event.remove({ output: 'gtceu:treated_wood_trapdoor' });
+            event.remove({ output: 'gtceu:treated_wood_stairs' });
+            event.remove({ output: 'gtceu:treated_wood_fence' });
+            event.remove({ output: 'gtceu:treated_wood_fence_gate' });
             event.remove({ output: 'gtceu:treated_wood_button' });
-
+            event.remove({ output: 'gtceu:treated_wood_pressure_plate' });
+            
         // Treated wood
             TFGWoodBuilder(
                 event, 
