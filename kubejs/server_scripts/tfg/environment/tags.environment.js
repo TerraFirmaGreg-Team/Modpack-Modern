@@ -78,6 +78,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#minecraft:fence_gates',
         '#forge:fences',
         '#forge:fence_gates',
+        '#createdeco:catwalks',
 
         // Pipes
         '#forge:tiny_fluid_pipes',
@@ -85,20 +86,25 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#forge:normal_fluid_pipes',
         '#forge:large_fluid_pipes',
         '#forge:huge_fluid_pipes',
+
         '#forge:quadruple_fluid_pipes',
         '#forge:nonuple_fluid_pipes',
+
         '#forge:small_item_pipes',
         '#forge:normal_item_pipes',
         '#forge:large_item_pipes',
         '#forge:huge_item_pipes',
+
         '#forge:small_restrictive_pipes',
         '#forge:normal_restrictive_pipes',
         '#forge:large_restrictive_pipes',
         '#forge:huge_restrictive_pipes',
+
         'gtceu:small_duct_pipe',
         'gtceu:normal_duct_pipe',
         'gtceu:large_duct_pipe',
         'gtceu:huge_duct_pipe',
+
         'gtceu:normal_optical_pipe',
         'gtceu:normal_laser_pipe',
 
@@ -108,6 +114,7 @@ const registerTFGEnvironmentBlockTags = (event) => {
         '#forge:quadruple_wires',
         '#forge:octal_wires',
         '#forge:hex_wires',
+
         '#forge:single_cables',
         '#forge:double_cables',
         '#forge:quadruple_cables',
@@ -155,5 +162,49 @@ const registerTFGEnvironmentBlockTags = (event) => {
         'create:cart_assembler',
 
         '#mcw_tfc_aio:log_bridges',
+    ]);
+
+    // --------- GT facade covers can seal individual faces ---------
+    addAll(event, 'tfg:atmosphere_check_facades', [
+        // Pipes
+        '#forge:tiny_fluid_pipes',
+        '#forge:small_fluid_pipes',
+        '#forge:normal_fluid_pipes',
+        '#forge:large_fluid_pipes',
+        '#forge:huge_fluid_pipes',
+
+        '#forge:quadruple_fluid_pipes',
+        '#forge:nonuple_fluid_pipes',
+
+        '#forge:small_item_pipes',
+        '#forge:normal_item_pipes',
+        '#forge:large_item_pipes',
+        '#forge:huge_item_pipes',
+
+        '#forge:small_restrictive_pipes',
+        '#forge:normal_restrictive_pipes',
+        '#forge:large_restrictive_pipes',
+        '#forge:huge_restrictive_pipes',
+
+        'gtceu:small_duct_pipe',
+        'gtceu:normal_duct_pipe',
+        'gtceu:large_duct_pipe',
+        'gtceu:huge_duct_pipe',
+
+        'gtceu:normal_optical_pipe',
+        'gtceu:normal_laser_pipe',
+
+        // Wires and cables
+        '#forge:single_wires',
+        '#forge:double_wires',
+        '#forge:quadruple_wires',
+        '#forge:octal_wires',
+        '#forge:hex_wires',
+
+        '#forge:single_cables',
+        '#forge:double_cables',
+        '#forge:quadruple_cables',
+        '#forge:octal_cables',
+        '#forge:hex_cables',
     ]);
 };
