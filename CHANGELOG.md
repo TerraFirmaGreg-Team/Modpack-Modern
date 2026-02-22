@@ -4,6 +4,7 @@
 ### Changes
 ### Bug fixes
 - Fixed some tongs melting into unusable TFC metal fluids @Pyritie
+- Fixed drying tea ingredients in a food processor outputting nothing (#3147) @Pyritie
 ### Translation updates
 
 ## [0.11.23] - 21-02-2026
