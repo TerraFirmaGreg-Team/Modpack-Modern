@@ -424,7 +424,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"3C173357029AB649"
+				"4CD3F04793CE47A2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.backpack_materials.desc}"]
 			id: "7178843BCD50A012"
 			size: 1.0d
@@ -2509,7 +2514,6 @@
 			description: ["{quests.tfg_tips.first_sacks.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/leather_sack"
 			id: "509C064AA92FD78F"
-			optional: true
 			subtitle: "{quests.tfg_tips.first_sacks.subtitle}"
 			tasks: [
 				{
@@ -2580,12 +2584,12 @@
 			dependencies: [
 				"509C064AA92FD78F"
 				"234B68E86F72C29E"
+				"4CD3F04793CE47A2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/ore_sack"
 			id: "21C58B2541BFA2EE"
-			optional: true
 			shape: "heart"
 			subtitle: "{quests.tfg_tips.special_sacks.subtitle}"
 			tasks: [
@@ -2655,7 +2659,6 @@
 			description: ["{quests.tfg_tips.straw_basket.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/straw_basket"
 			id: "67F40A90844EC0FC"
-			optional: true
 			subtitle: "{quests.tfg_tips.straw_basket.subtitle}"
 			tasks: [{
 				id: "542549225517097C"

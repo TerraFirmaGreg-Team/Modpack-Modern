@@ -43,7 +43,6 @@
 				"{quests.create_logistics.packager.desc.2}"
 			]
 			id: "09D5BD00E3308E76"
-			optional: true
 			size: 2.0d
 			subtitle: "{quests.create_logistics.packager.subtitle}"
 			tasks: [{
@@ -79,7 +78,6 @@
 			]
 			id: "43B4236DB93BC425"
 			min_required_dependencies: 1
-			optional: true
 			subtitle: "{quests.create_logistics.frogport.subtitle}"
 			tasks: [{
 				id: "795EBF0807564441"
@@ -142,7 +140,6 @@
 			description: ["{quests.create_logistics.rose_quartz_lens.desc}"]
 			icon: "greate:rose_quartz_lens"
 			id: "7C4807A247AF36A1"
-			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.create_logistics.rose_quartz_lens.subtitle}"
@@ -167,7 +164,6 @@
 			description: ["{quests.create_logistics.rose_quartz.desc}"]
 			icon: "gtceu:overworld_marker"
 			id: "3137824EEA1E4D9B"
-			optional: true
 			subtitle: "{quests.create_logistics.rose_quartz.subtitle}"
 			tasks: [{
 				id: "2764C09EC03449D6"
@@ -222,7 +218,6 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.stock_link.desc}"]
 			id: "76490E046A44BCC3"
-			optional: true
 			size: 2.0d
 			subtitle: "{quests.create_logistics.stock_link.subtitle}"
 			tasks: [{
@@ -248,7 +243,6 @@
 				"{quests.create_logistics.stock_ticker.desc.3}"
 			]
 			id: "341E2F290344BEEE"
-			optional: true
 			shape: "gear"
 			size: 3.0d
 			subtitle: "{quests.create_logistics.stock_ticker.subtitle}"
@@ -296,7 +290,6 @@
 				"{quests.create_logistics.factory_gauge.desc.4}"
 			]
 			id: "2262F1FD4EAB777F"
-			optional: true
 			shape: "gear"
 			size: 3.0d
 			subtitle: "{quests.create_logistics.factory_gauge.subtitle}"

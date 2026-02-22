@@ -635,7 +635,11 @@
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
-			description: ["{quests.steam_age.steam_bloomery.desc}"]
+			description: [
+				"{quests.steam_age.steam_bloomery.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.steam_bloomery.desc.2}"
+			]
 			icon: "tfg:steam_bloomery"
 			id: "0805CCABC8E7F6CF"
 			optional: true
@@ -1998,6 +2002,32 @@
 			title: "{quests.steam_age.steam_squasher.title}"
 			x: -14.5d
 			y: 8.5d
+		}
+		{
+			description: [
+				"{quests.steam_age.cobalt_brass.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.cobalt_brass.desc.2}"
+			]
+			id: "4DF2E10B96454D8E"
+			subtitle: "{quests.steam_age.cobalt_brass.subtitle}"
+			tasks: [{
+				id: "644B4BBA4F85648E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:cobalt_brass_ingot"
+				}
+				type: "item"
+			}]
+			title: "{quests.steam_age.cobalt_brass.title}"
+			x: -15.5d
+			y: 13.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

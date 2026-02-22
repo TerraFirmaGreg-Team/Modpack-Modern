@@ -51,15 +51,8 @@
 			id: "78C8274E7CA78B12"
 			linked_quest: "509C064AA92FD78F"
 			shape: "heart"
-			x: 1.0d
-			y: 16.0d
-		}
-		{
-			id: "5E38676D9AD5336C"
-			linked_quest: "21C58B2541BFA2EE"
-			shape: "heart"
-			x: -1.5d
-			y: 16.0d
+			x: 0.0d
+			y: 12.5d
 		}
 	]
 	quests: [

@@ -91,9 +91,6 @@ function registerTFGElectronicComponentsRecipes(event) {
 		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
 	]).transitionalItem('gtceu:magnetic_iron_rod').loops(16).id('tfg:sequenced_assembly/ulv_voltage_coil')
 
-	// Basic circuit board
-	event.replaceInput({ id: 'gtceu:assembler/basic_circuit_board' }, 'gtceu:wood_plate', 'gtceu:resin_circuit_board')
-
 	// LV basic circuit
 	event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
 
