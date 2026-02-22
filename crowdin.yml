@@ -1,12 +1,12 @@
 project_id_env: '${{ vars.CROWDIN_ID }}'
 api_token_env: '${{ secrets.CROWDIN_TOKEN }}'
 base_url: 'https://api.crowdin.com'
-base_path: "./kubejs/assets"
-pull_request_title: "New Crowdin updates"
+base_path: ./kubejs/assets
+pull_request_title: New Crowdin updates
 pull_request_labels:
-  - "Pull request: Translation"
-commit_message: "[translation] New translations {fileName} ({languageName})"
-preserve_hierarchy: true
+  - 'Pull request: Translation'
+commit_message: '[translation] New translations {fileName} ({languageName})'
+preserve_hierarchy: 1
 files:
   - source: /*/lang/en_us.json
     translation: /%original_path%/%locale_with_underscore%.json
@@ -43,8 +43,3 @@ files:
         sr: sr_sp
         tr: tr_tr
         vi: vi_vn
-        
-
-
-
-
