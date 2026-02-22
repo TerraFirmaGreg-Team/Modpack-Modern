@@ -5,6 +5,24 @@
 ### Bug fixes
 ### Translation updates
 
+## [0.11.24] - 22-02-2026
+### Notice
+- The next major version will include many changes to MV progression (and minor changes to HV)
+### Changes
+- Improved color formatting in some quests @Eilandor
+- Quarktech chestplate is now breathable in space (we'll update it properly later) (#3150) @Mqrius
+- Moved the humus from leaves recipe from the extractor to compressor @Pyritie
+- Blaze burners now provide zero passive heat (#2671) @Ujhik
+- Scythes now replant sticks when needed (like for tomatoes and green beans), taking sticks from the drops or player inventory as necessary @Ujhik
+- Improved performance for TFC Ambiental @Mqrius
+### Bug fixes
+- Fixed several missing wood-related recipes like the climate station and mallet (#3155) @Inceitious
+- Fixed some tongs melting into unusable TFC metal fluids @Pyritie
+- Fixed drying tea ingredients in a food processor outputting nothing (#3147) @Pyritie
+- Fixed the overworld to beneath teleportation cooldown being reduced based on how many players are online @Mqrius
+### Translation updates
+- Chinese (simplified) @jmecn
+
 ## [0.11.23] - 21-02-2026
 ### Notice
 - The next major version will include many changes to MV progression (and minor changes to HV)
