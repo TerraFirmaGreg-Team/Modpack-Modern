@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     });
 
     MATERIALS_PLASTIC.forEach(material => {
-        ['mallet'].forEach(tool => {
+        ['mallet', 'plunger'].forEach(tool => {
             event.remove({ output: `gtceu:${material}_${tool}` });
         });
     });

@@ -60,7 +60,7 @@ function registerDisabledTools(event) {
     // For Soft Hammer
     const MATERIALS_PLASTIC = ['polyethylene', 'polybenzimidazole', 'polytetrafluoroethylene'];
     MATERIALS_PLASTIC.forEach(material => {
-        ['mallet'].forEach(tool => {
+        ['mallet', 'plunger'].forEach(tool => {
             addDisabledTool(event, `gtceu:${material}_${tool}`);
         });
     });
