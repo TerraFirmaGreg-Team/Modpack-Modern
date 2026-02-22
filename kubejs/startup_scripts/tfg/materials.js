@@ -120,4 +120,22 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.GENERATE_RING,
 			GTMaterialFlags.GENERATE_LONG_ROD)
+
+	// Material for MV
+
+		event.create('tfg:rene_41')
+		.ingot()
+		.iconSet(GTMaterialIconSet.SHINY)
+		.color(0x6A6D73)
+		.secondaryColor(0x5A5148)
+		.components('5x nickel', '3x chromium', '2x cobalt', '1x molybdenum', '1x aluminium', '1x boron', '1x carbon')
+		.blastTemp(2312, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*75))
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW,
+			GTMaterialFlags.GENERATE_RING,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 }
