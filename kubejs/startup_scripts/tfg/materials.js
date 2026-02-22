@@ -42,6 +42,8 @@ const registerTFGMaterials = (event) => {
 	registerTFGEuropaMaterials(event);
 	registerTFGAquaponicsMaterials(event);
 
+	registerTFGEtchingMaterials(event);
+
 
 	// Refrigerants
 
