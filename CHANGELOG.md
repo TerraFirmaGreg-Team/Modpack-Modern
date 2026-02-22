@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed some tongs melting into unusable TFC metal fluids @Pyritie
 ### Translation updates
 
 ## [0.11.23] - 21-02-2026
