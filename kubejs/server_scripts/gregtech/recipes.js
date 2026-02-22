@@ -430,21 +430,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Ladder consistency
-	
-	const nonAdAstraLumber = Ingredient.of('#tfc:lumber').subtract('tfg:wood/lumber/aeronos').subtract('tfg:wood/lumber/strophar');
-
-	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
-
-	event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
-
-	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
-		.itemInputs(nonAdAstraLumber.withCount(7))
-		.itemOutputs('8x minecraft:ladder')
-		.circuit(7)
-		.duration(40)
-		.EUt(4)
-
 	// Pills
 	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
 	event.remove({ id: 'gtceu:canner/pack_rad_away' })
