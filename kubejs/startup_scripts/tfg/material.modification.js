@@ -263,8 +263,8 @@ const registerTFGMaterialModification = (event) => {
         GTMaterials.TungstenSteel,
         GTMaterials.Netherite,
         GTMaterials.StainlessSteel,
-		GTMaterials.Darmstadtium,
-		GTMaterials.RhodiumPlatedPalladium
+		//GTMaterials.Darmstadtium,
+		//GTMaterials.RhodiumPlatedPalladium
     ];
 
     for (let mat of noToolMaterials) {
@@ -278,8 +278,8 @@ const registerTFGMaterialModification = (event) => {
 	GTMaterials.CobaltBrass.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1, 1, 1, 1, [GTToolType.BUZZSAW]).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
-	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
-	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
+	//GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
+	//GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 
     // Balance Tools
 
@@ -322,7 +322,7 @@ const registerTFGMaterialModification = (event) => {
         GTMaterials.HSSE,
         GTMaterials.Duranium,
         GTMaterials.NaquadahAlloy,
-		GTMaterials.Neutronium
+		//GTMaterials.Neutronium
     ];
 
     for (let mat of rebalanceStats) {
@@ -343,7 +343,7 @@ const registerTFGMaterialModification = (event) => {
     GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(42, 11, 4012, 3, IVTools).build());
     GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(52, 12, 6192, 5, IVTools).build());
     GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(62, 13, 8192, 5, IVTools).build());
-	GTMaterials.Neutronium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(180.0, 100.0, 65535, 6, ZPMTools).build());
+	//GTMaterials.Neutronium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(180.0, 100.0, 65535, 6, ZPMTools).build());
 
     //#endregion
 
@@ -416,4 +416,5 @@ const registerTFGMaterialModification = (event) => {
 	//TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(255, 180, 6, 1110));
 	//GTMaterials.getMaterial('rocket_alloy_t3').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(300, 160, 8, 3840));
 	//TFGHelpers.getMaterial('ysz').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 220, 10, 5310));
-}
+
+	}
