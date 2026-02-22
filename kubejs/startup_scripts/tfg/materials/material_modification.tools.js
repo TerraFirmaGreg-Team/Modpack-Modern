@@ -263,8 +263,8 @@ function registerTFGToolMaterialModification(event) {
 	GTMaterials.CobaltBrass.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1, 1, 1, 1, [GTToolType.BUZZSAW]).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
-	//GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
-	//GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
+	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
+	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 
 	// Balance Tools
 
