@@ -58,13 +58,13 @@ function registerTFGCompostRecipes(event) {
 	//#endregion
 
 	// Humus and compost
-	event.recipes.gtceu.extractor('tfg:humus_from_leaves')
+	event.recipes.gtceu.compressor('tfg:humus_from_leaves')
 		.itemInputs('#minecraft:leaves')
 		.itemOutputs('tfc:groundcover/humus')
 		.duration(600)
 		.EUt(2)
 
-	event.recipes.gtceu.extractor('tfg:humus_from_fallen_leaves')
+	event.recipes.gtceu.compressor('tfg:humus_from_fallen_leaves')
 		.itemInputs('#tfc:fallen_leaves')
 		.itemOutputs('tfc:groundcover/humus')
 		.duration(600)

@@ -138,6 +138,12 @@ function registerTFGClayRecipes(event) {
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay2')
+		.itemInputs('tfc:powder/graphite', '4x tfc:kaolin_clay')
+		.itemOutputs('2x tfc:fire_clay')
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	event.recipes.gtceu.alloy_smelter('tfg:oops_i_smelted_all_my_kaolin')
 		.itemInputs('minecraft:clay_ball', 'tfc:powder/kaolinite')
 		.itemOutputs('tfc:kaolin_clay')
