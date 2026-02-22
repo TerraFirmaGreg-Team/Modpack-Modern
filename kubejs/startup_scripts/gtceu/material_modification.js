@@ -225,16 +225,16 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_TFC_ORE);
 
 	// Other materials that are compatible with TFC
-	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
-	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW, HAS_TFC_UTILITY);
+	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
 
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
@@ -291,6 +291,7 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.Zinc.addFlags(GENERATE_LONG_ROD);
+	GTMaterials.Bismuth.addFlags(GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_SPRING, GENERATE_SMALL_GEAR, GENERATE_FOIL);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);

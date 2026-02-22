@@ -42,6 +42,8 @@ const registerTFGMaterials = (event) => {
 	registerTFGEuropaMaterials(event);
 	registerTFGAquaponicsMaterials(event);
 
+	registerTFGEtchingMaterials(event);
+
 
 	// Refrigerants
 
@@ -250,7 +252,11 @@ const registerTFGMaterials = (event) => {
 		.components('2x ostrum', 'iodine')
 		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20*120))
 		.iconSet(GTMaterialIconSet.getByName('cereal_box'))
-		.flags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD)
+		.flags(
+			GTMaterialFlags.GENERATE_GEAR,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 		.color(0xc696f2)
 		.secondaryColor(0x9b99ff)
 
@@ -264,7 +270,10 @@ const registerTFGMaterials = (event) => {
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD)
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW,
+			GTMaterialFlags.GENERATE_RING,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 
 	// Material at HV used for Exotic Rotor
 
