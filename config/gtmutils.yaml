@@ -1,0 +1,64 @@
+features:
+  # Whether the Sterile Cleaning Maintenance Hatch is enabled.
+  sterileHatchEnabled: true
+
+  # Whether the 64A energy converters are enabled.
+  converters64aEnabled: false
+
+  # Whether the Omni-breaker is enabled.
+  omnibreakerEnabled: true
+
+  # What tier the Omni-breaker is, if enabled. (ULV = 0, LV = 1, MV = 2, ...)
+  # (Unless the default recipe is overridden, can only support LV to IV!)
+  omnibreakerTier: 6
+
+  # The energy capacity of the Omni-breaker.
+  omnibreakerEnergyCapacity: 40960000
+
+  # Whether the Wireless Active Transformer is enabled.
+  pterbEnabled: true
+
+  # Base amount of WAT coolant to drain every second.
+  # (Setting both this amount and the IO multiplier to 0 disables the coolant mechanic.)
+  pterbCoolantBaseDrain: 10
+
+  # Multiplier over IO amount for additional coolant drain.
+  # (Setting both this and the base drain amount to 0 disables the coolant mechanic.)
+  pterbCoolantIOMultiplier: 0.0
+
+  # Whether the coins/credits are enabled.
+  coinsEnabled: false
+
+  # Whether the custom MV tools are enabled.
+  customMVToolsEnabled: true
+
+  # Whether the custom HV tools are enabled.
+  customHVToolsEnabled: true
+
+  # Whether the custom EV tools are enabled.
+  customEVToolsEnabled: true
+
+  # Whether the custom IV tools are enabled.
+  customIVToolsEnabled: true
+
+  # Whether the custom LuV tools are enabled.
+  customLuVToolsEnabled: true
+
+  # Whether the custom ZPM tools are enabled.
+  customZPMToolsEnabled: true
+
+  # Whether the Auto Turbo Chargers are enabled.
+  autoChargersEnabled: true
+
+  # Whether the Expanded Pattern Buffer and Expanded Pattern Buffer Proxy are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+  expandedBuffersEnabled: true
+
+  # Whether the Enlarged Stocking Bus/Hatch are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+  enlargedStockingEnabled: true
+
+  # How many rows the Enlarged Stocking Input Bus/Hatch should have, max is 64 rows for 512 slots. (each row is 8 slots in size)
+  enlargedStockingSizeRows: 8
+
+  # Whether the Tag Stocking Input Bus/Hatch are enabled. If AE2 is not loaded, this config will not load the machines regardless.
+  tagStockingEnabled: true
+
