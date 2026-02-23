@@ -38,7 +38,7 @@
             "type": "patchouli:spotlight",
             "title": "茶",
             "text": "$(thing)茶$()可以用某些干燥的植物冲泡。$(br2)它们提供短暂但有用的增益，并使你的体温升高4°C。非常适合冬天！",
-            "item": "tfc_gurman:tea_mint_bucket,tfc_gurman:tea_chamomile_bucket,tfc_gurman:tea_rosehip_bucket,tfc_gurman:tea_nettle_bucket"
+            "item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
         },
         {
             "type": "patchouli:text",
@@ -48,7 +48,7 @@
             "type": "patchouli:spotlight",
             "title": "特调饮品",
             "text": "这是一个包含更多口味独特、效果各异的杂项饮品的类别。尽情享用吧！",
-            "item": "tfc_gurman:cocoa_bucket,tfc_gurman:coffee_bucket,tfc_gurman:nalivka_bucket,tfc_gurman:kvass_bucket,tfc_gurman:compote_bucket,tfc_gurman:lemonade_bucket"
+            "item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
         },
         {
             "type": "patchouli:text",
@@ -58,7 +58,7 @@
             "type": "patchouli:spotlight",
             "title": "奶类",
             "text": "$(thing)奶$()可以从大多数雌性家畜身上获取，只需在亲密度足够高时，用木桶或金属桶右键点击它们即可。（如果无法挤奶，请确保桶没有堆叠！）$(br)虽然它不提供任何增益，但如果在进食后饮用，可以提供乳制品营养，并且之后可以制成奶酪。",
-            "item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gurman:ox_milk_bucket,tfc_gurman:sheep_milk_bucket,tfc_gurman:alpaca_milk_bucket"
+            "item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
         },
         {
             "title": "温泉",

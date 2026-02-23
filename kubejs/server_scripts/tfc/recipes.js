@@ -107,6 +107,11 @@ const registerTFCRecipes = (event) => {
 	// Soda Ash
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
 	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:food/fresh_seaweed').id('tfg:smelting/fresh_seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:groundcover/seaweed').id('tfg:smelting/seaweed_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/winged_kelp').id('tfg:smelting/winged_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/leafy_kelp').id('tfg:smelting/leafy_kelp_to_soda')
+	event.smelting('3x tfc:powder/soda_ash', 'tfc:plant/giant_kelp_flower').id('tfg:smelting/giant_kelp_to_soda')
 
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
@@ -241,6 +246,12 @@ const registerTFCRecipes = (event) => {
 		.outputFluid(Fluid.of('tfc:vinegar', 250))
 		.id('tfc:barrel/vinegar')
 
+	// Clay dust to balls
+	event.recipes.tfc.barrel_sealed(8000)
+		.inputs('gtceu:clay_dust',TFC.fluidStackIngredient('minecraft:water', 250))
+		.outputItem('1x minecraft:clay_ball')
+		.id('tfc:barrel/clay_ball')
+
 	// Borax to flux
 	event.recipes.tfc.quern('4x tfc:powder/flux', 'gtceu:borax_dust')
 		.id(`tfg:quern/borax`)
@@ -256,4 +267,33 @@ const registerTFCRecipes = (event) => {
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:white_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:pink_kaolin_clay'])
 	event.shapeless('4x tfc:kaolin_clay', ['tfc:red_kaolin_clay'])
+
+	global.TFC_WOOD_TYPES.forEach(element => {
+		event.shaped(`4x tfc:wood/fallen_leaves/${element}`,[
+			'AA',
+			'AA'
+		], {
+			A: `tfc:wood/leaves/${element}`
+		}).id(`tfg:shaped/tfc/${element}_leaves_to_fallen_leaves`);
+	});
+	
+	/**
+	 * @property {string[]} krummholz_types - List of krummholz wood types.
+	 */
+	const krummholz_types = [
+		'aspen',
+		'douglas_fir',
+		'pine',
+		'spruce',
+		'white_cedar'
+	];
+	krummholz_types.forEach(type => {
+		event.shaped(`1x tfc:plant/${type}_krummholz`,[
+			'A',
+			'A'
+		], {
+			A: `tfc:wood/sapling/${type}`
+		}).id(`tfg:shaped/tfc/${type}_krummholz`);
+	});
+
 }

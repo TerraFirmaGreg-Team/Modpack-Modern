@@ -22,6 +22,13 @@ const registerFirmaLifeItemTags = (event) => {
         .map(fruit => fruit.id)
         .filter(fruit => fruit !== 'betterend:shadow_berry_cooked' && fruit !== 'minecraft:popped_chorus_fruit')
         .forEach(fruit => event.add('tfg:dried_fruit', fruit))
+
+    event.add('tfc:fruit_tree_leaves', 'firmalife:plant/cocoa_leaves')
+    event.add('tfc:fruit_tree_leaves', 'firmalife:plant/fig_leaves')
+    event.add('minecraft:leaves', 'firmalife:plant/cocoa_leaves')
+    event.add('minecraft:leaves', 'firmalife:plant/fig_leaves')
+
+    event.add('tfc:clay_recycle_5', '#firmalife:clay_recycle_5')
 }
 
 const registerFirmaLifeBlockTags = (event) => {

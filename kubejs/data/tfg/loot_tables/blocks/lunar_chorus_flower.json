@@ -37,13 +37,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfg:lunar_chorus_flower",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.2
-						}
-					]
+					"name": "tfg:lunar_chorus_flower"
 				}
 			],
 			"conditions": [

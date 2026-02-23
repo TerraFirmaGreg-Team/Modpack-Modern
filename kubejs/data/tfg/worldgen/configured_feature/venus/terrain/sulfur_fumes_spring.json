@@ -1,0 +1,87 @@
+{
+	"type": "tfc:hot_spring",
+	"config": {
+		"fluid_state": "tfg:fluid/sulfur_fumes",
+		"radius": 8,
+		"decoration": {
+			"blocks": [
+				{
+					"replace": [
+						"tfc:rock/raw/rhyolite"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/rhyolite"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/basalt",
+						"ad_astra:moon_deepslate"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/basalt"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/andesite"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/andesite"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/dacite"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/dacite"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/granite",
+						"gtceu:red_granite"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/granite"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/diorite"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/diorite"
+						}
+					]
+				},
+				{
+					"replace": [
+						"tfc:rock/raw/gabbro",
+						"minecraft:deepslate"
+					],
+					"with": [
+						{
+							"block": "tfc:rock/magma/gabbro"
+						}
+					]
+				}
+			],
+			"radius": 8,
+			"count": 24,
+			"rarity": 1
+		}
+	}
+}

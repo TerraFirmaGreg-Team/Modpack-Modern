@@ -22,20 +22,6 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/hellbricks' })
 	event.remove({ id: 'beneath:crafting/nether_brick' })
 	event.remove({ id: 'beneath:quern/slime' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_planks' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_slab' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_button' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_pressure_plate' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_log' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_lumber_planks' })
-	event.remove({ id: 'beneath:crafting/wood/crimson_slab_undo' })
-	event.remove({ id: 'beneath:crafting/wood/warped_planks' })
-	event.remove({ id: 'beneath:crafting/wood/warped_slab' })
-	event.remove({ id: 'beneath:crafting/wood/warped_button' })
-	event.remove({ id: 'beneath:crafting/wood/warped_pressure_plate' })
-	event.remove({ id: 'beneath:crafting/wood/warped_lumber_log' })
-	event.remove({ id: 'beneath:crafting/wood/warped_lumber_planks' })
-	event.remove({ id: 'beneath:crafting/wood/warped_slab_undo' })
 	event.remove({ id: 'beneath:crafting/ancient_altar' })
 	
 	event.shaped('beneath:unposter', [
@@ -85,4 +71,18 @@ const registerBeneathRecipes = (event) => {
 		C: 'beneath:wood/planks/warped',
 		D: 'beneath:wood/log/warped'
 	}).id('tfg:shaped/warped_sewing_table')
+
+	event.shaped(`4x beneath:wood/fallen_leaves/crimson`,[
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/crimson`
+	}).id(`tfg:shaped/beneath/crimson_leaves_to_fallen_leaves`);
+
+	event.shaped(`4x beneath:wood/fallen_leaves/warped`,[
+		'AA',
+		'AA'
+	], {
+		A: `beneath:wood/leaves/warped`
+	}).id(`tfg:shaped/beneath/warped_leaves_to_fallen_leaves`);
 }

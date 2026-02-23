@@ -14,13 +14,13 @@
 			[startup.types.additionalplacements.slab]
 				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
 				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
-				enabled = ["+*"]
+				enabled = ["+*", "-rnr:roof_frame_slab"]
 
 			#Stairs
 			[startup.types.additionalplacements.stairs]
 				#Blocklist for controlling which blocks (that are valid for this type) will generate variants of this type
 				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
-				enabled = ["+*"]
+				enabled = ["+*", "-rnr:roof_frame_stairs"]
 				#Blocklist to control which blocks will allow for vertical stair connections.
 				#Keep in mind vertical is RELATIVE to the placement of the stair - "vertical" for a vertically placed stair will be one of the two horizontal directions.
 				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format

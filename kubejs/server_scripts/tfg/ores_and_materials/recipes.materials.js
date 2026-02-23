@@ -6,9 +6,9 @@
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function getFluidRecipeEUt(material) {
-	// Special case for bis/black bronze because removing the blast property doesn't change the tier of
+	// Special case for bis bronze, black bronze, rose gold and sterling silver because removing the blast property doesn't change the tier of
 	// the extractor recipes retroactively
-	return material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze
+	return material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze && material !== GTMaterials.RoseGold && material !== GTMaterials.SterlingSilver
 		? GTValues.VA[GTValues.MV]
 		: GTValues.VA[GTValues.LV];
 }
@@ -184,9 +184,9 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * @param {Internal.ItemStack} inputItem2
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  * @param {number} tierThreshold
- * Should be 4 for everything except double ingots, which should be 5
+ * TFC Anvil tier. Should be 4 for everything except double ingots, which should be 5
  * @param {number} nonTfcTier
- * What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
+ * GregTech voltage tier. What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
  */
 function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
@@ -195,7 +195,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 
 	if (tfcProperty !== null) {
 
-		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyForgingBonus().copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
+		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
 			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;
@@ -312,6 +312,10 @@ function registerTFGMaterialRecipes(event) {
 
 		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 			processTFCTool(event, material)
+		}
+
+		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_UTILITY)) {
+			processTongs(event, material)
 		}
 		
 		const oreProperty = material.getProperty(PropertyKey.ORE);

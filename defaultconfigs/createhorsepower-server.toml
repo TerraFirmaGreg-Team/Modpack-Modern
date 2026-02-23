@@ -30,5 +30,5 @@ smallCreatures = ["tfc:wolf", "tfc:dog", "tfc:pig", "tfc:sheep", "tfc:goat", "tf
 #Valid "Medium" creatures
 mediumCreatures = ["tfc:cow", "tfc:donkey", "tfc:dolphin", "wan_ancient_beasts:glider", "wan_ancient_beasts:soarer"]
 #Valid "Large" creatures
-largeCreatures = ["tfc:horse", "tfc:mule", "tfc:musk_ox", "tfc:yak", "tfg:sniffer", "wan_ancient_beasts:walker", "species:cruncher"]
+largeCreatures = ["tfc:horse", "tfc:mule", "tfc:musk_ox", "tfc:yak", "tfg:sniffer", "wan_ancient_beasts:walker", "species:cruncher", "wan_ancient_beasts:charger"]
 

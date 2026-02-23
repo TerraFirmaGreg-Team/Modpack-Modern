@@ -795,6 +795,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:venus'],
 		pillar: 'create:scoria_pillar',
 		pillar2: 'create:layered_scoria',
+		stonecutterTag: 'create:stone_types/scoria',
 		raw: generateFormsExisting('scoria', 'tfg:rock/%s', { 
 			block: 'create:scoria',
 			texture: 'create:block/palettes/stone_types/scoria'
@@ -819,6 +820,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:moon', 'ad_astra:mars', 'ad_astra:venus'],
 		pillar: 'create:scorchia_pillar',
 		pillar2: 'create:layered_scorchia',
+		stonecutterTag: 'create:stone_types/scorchia',
 		raw: generateFormsExisting('scorchia', 'tfg:rock/%s', {
 			block: 'create:scorchia',
 			texture: 'create:block/palettes/stone_types/scorchia'
@@ -1051,7 +1053,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"ochrum": {
 		material: 'ochrum',
 		collapsible: false,
-		dimensions: ['ad_astra:mars'],
+		dimensions: ['ad_astra:mars', 'ad_astra:venus'],
 		pillar: 'create:ochrum_pillar',
 		pillar2: 'create:layered_ochrum',
 		stonecutterTag: 'create:stone_types/ochrum',
@@ -1066,7 +1068,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"crimsite": {
 		material: 'crimsite',
 		collapsible: false,
-		dimensions: ['ad_astra:venus'],
+		dimensions: ['ad_astra:venus', 'ad_astra:mercury'],
 		pillar: 'create:crimsite_pillar',
 		pillar2: 'create:layered_crimsite',
 		stonecutterTag: 'create:stone_types/crimsite',

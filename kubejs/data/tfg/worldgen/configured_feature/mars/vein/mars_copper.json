@@ -252,6 +252,33 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_chalcopyrite_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:raw_chalcopyrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_copper_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_pyrite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

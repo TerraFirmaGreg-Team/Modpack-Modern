@@ -105,5 +105,5 @@ function registerTFGRailgunItemTags(event) {
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:zpm_quantum_tank')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uv_quantum_tank')
 	event.add('tfg:cannot_launch_in_railgun', 'gtceu:uhv_quantum_tank')
-
+	event.add('tfg:cannot_launch_in_railgun', 'toolbelt:belt')
 }

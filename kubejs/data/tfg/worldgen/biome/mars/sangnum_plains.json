@@ -147,7 +147,25 @@
 				"type": "wan_ancient_beasts:eater",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 15
+				"weight": 20
+			},
+			{
+				"type": "wan_ancient_beasts:charger",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 50
+			},
+			{
+				"type": "wan_ancient_beasts:raider",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 50
+			},
+			{
+				"type": "wan_ancient_beasts:snatcher",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
 			}
 		],
 		"misc": [],

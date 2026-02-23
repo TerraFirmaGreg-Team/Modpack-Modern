@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/rock/magma/magma",
+	"textures": {
+		"0": "tfc:block/rock/magma/diorite",
+		"particle": "tfc:block/rock/magma/diorite"
+	}
+}

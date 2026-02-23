@@ -1,0 +1,62 @@
+{
+  "infrastructure_check_radius": 1,
+  "path_quality_threshold": 0.6,
+  "node_distance_minimum": 10,
+  "node_distance_maximum": 20,
+  "path_block_ids": [
+  ],
+  "path_block_tags": [
+    "tfc:paths",
+    "forge:gravel",
+    "rnr:gravel_road_blocks",
+    "rnr:gravel_road_slabs",
+    "rnr:gravel_road_stairs",
+    "forge:cobblestone",
+    "minecraft:stairs",
+    "minecraft:slabs",
+    "rnr:cobbled_road_blocks",
+    "rnr:cobbled_road_stairs",
+    "rnr:cobbled_road_slabs",
+    "minecraft:mineable/pickaxe",
+    "minecraft:mineable/axe"
+  ],
+  "path_block_strings": [
+  ],
+  "block_string_blacklist": [
+  ],
+  "invalid_dimensions": [],
+  "no_gui_charting": false,
+  "invalid_entities": [],
+  "warp_block_ids": [
+    "via_romana:warp_block"
+  ],
+  "warp_block_tags": [
+    "minecraft:all_signs"
+  ],
+  "travel_fatigue_cooldown": 6,
+  "fast_movement_speed": 0.0,
+  "direct_warp": false,
+  "fog_of_war_distance": 10,
+  "spline_animation_time": 2.0,
+  "maximum_map_dimension": 512,
+  "map_refresh_interval": 10,
+  "map_refresh_threshold": 10,
+  "map_save_interval": 5,
+  "biome_color_pairs": [],
+  "use_biome_fallback_for_lowres": false,
+  "enable_remote_map_access": true,
+  "enable_surveyor_landmark": false,
+  "enable_surveyor_landmark_coloring": false,
+  "invalid_block_overlay_opacity": 0.4,
+  "biome_map_opacity": 0.3,
+  "node_vignette_opacity": 1.0,
+  "line_colors": [
+    "#ffffff",
+    "#cccccc"
+  ],
+  "line_opacity": 1.0,
+  "enable_teleport_particles": true,
+  "enable_sign_particles": true,
+  "enable_custom_cursor": true,
+  "logging_enum": "NONE"
+}

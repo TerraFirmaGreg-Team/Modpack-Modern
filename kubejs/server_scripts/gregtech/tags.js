@@ -13,6 +13,10 @@ function registerGTCEUItemTags(event) {
         event.add("c:hidden_from_recipe_viewers", item);
     });
 
+    // Face curio slot for mask
+	event.remove("curios:head", "gtceu:face_mask")
+    event.add("curios:face", "gtceu:face_mask")
+
     // Добавление тега EMI для скрытия всех руд
     event.add("c:hidden_from_recipe_viewers", "#forge:ores");
 
@@ -32,6 +36,18 @@ function registerGTCEUItemTags(event) {
 
     event.add("tfc:saws", "#forge:tools/buzzsaws");
     event.add("tfc:saws", "#forge:tools/chainsaws");
+
+    const saws = event.get('forge:tools/saws').getObjectIds().concat(event.get('forge:tools/chainsaws').getObjectIds());
+    saws.forEach(sawId =>
+    {
+        const id = sawId.getNamespace() + ":" + sawId.getPath();
+        if(global.ICE_SAW_BLACKLIST.includes(id) || Item.of(sawId).hasTag('forge:tools/buzzsaws'))
+        {
+            return;
+        }
+
+        event.add("tfg:silk_harvest_ice", id);
+    });
 
     global.GTCEU_CASTING_MOLDS.concat(global.TFG_CASTING_MOLDS).forEach((mold) => {
         event.add("gtceu:casting_molds", mold);
@@ -109,6 +125,14 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_blue_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_black_bronze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_bismuth_bronze");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_rose_gold");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_sterling_silver");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_stainless_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_manganese_phosphide");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_vanadium_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_gallium_arsenide");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_hsla_steel");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_rocket_alloy_t2");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");

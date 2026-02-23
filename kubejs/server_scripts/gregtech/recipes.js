@@ -49,6 +49,53 @@ const registerGTCEURecipes = (event) => {
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	// Move EV to after Uranium Reactor
+
+	event.remove({ id: 'gtceu:mixer/uranium_triplatinum' })
+	event.recipes.gtceu.mixer('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.itemOutputs(Item.of('gtceu:uranium_triplatinum_dust', 4))
+		.duration(20*10)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(4)
+
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*150)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*100.5)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(12)
+
+	// Move Superconductor to EV and make them cheap
+
+	event.remove({ id: 'gtceu:assembler/laser_cable' })
+	event.recipes.gtceu.assembler('tfg:laser_cable')
+		.itemInputs(Item.of('gtceu:laminated_glass', 1), Item.of('2x #forge:foils/ostrum_iodide', 2))
+		.itemOutputs(Item.of('gtceu:normal_laser_pipe', 16))
+		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 144))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.EV])
+		.cleanroom(CleanroomType.CLEANROOM)
+
+	TFGHelpers.registerMaterialInfo('gtceu:normal_laser_pipe', [GTMaterials.Air, 1])
+	event.remove({ id: 'gtceu:arc_furnace/arc_normal_laser_pipe' })
+	removeMaceratorRecipe(event, 'macerate_normal_laser_pipe')
+
 	// #endregion
 
 	//#region Voiding covers
@@ -319,21 +366,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Ladder consistency
-	
-	const nonAdAstraLumber = Ingredient.of('#tfc:lumber').subtract('tfg:wood/lumber/aeronos').subtract('tfg:wood/lumber/strophar');
-
-	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
-
-	event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
-
-	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
-		.itemInputs(nonAdAstraLumber.withCount(7))
-		.itemOutputs('8x minecraft:ladder')
-		.circuit(7)
-		.duration(40)
-		.EUt(4)
-
 	// Pills
 	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
 	event.remove({ id: 'gtceu:canner/pack_rad_away' })
@@ -358,4 +390,26 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('#forge:lenses/glass', '#forge:small_dusts/glass')
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Magnetic iron
+	event.shapeless('gtceu:magnetic_iron_ingot', ['#forge:ingots/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
+	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
+
+	// Reverting
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
+	event.smelting('minecraft:copper_ingot', '#forge:ingots/annealed_copper')
+		.id('tfg:revert_annealed_copper_ingot')
+
+	// Heavy Oil at LV
+
+	event.remove({ id: 'gtceu:distillery/distill_heavy_oil_to_sulfuric_heavy_fuel' })
+
+	event.recipes.gtceu.distillery('tfg:sulfuric_heavy_fuel')
+		.inputFluids(Fluid.of('gtceu:oil_heavy', 50))
+		.outputFluids(Fluid.of('gtceu:sulfuric_heavy_fuel', 125))
+		.duration(20*2)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
 }

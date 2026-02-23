@@ -177,7 +177,38 @@ function registerTFGArtisanTableRecipes(event) {
 			" XXXX ",
 			"      "
 		]},
-		
+		{ name: 'gtceu:large_pipe', genCast: true, genExtrude: true, pattern: [
+			"X     ",
+			"X XXX ",
+			"X XXX ",
+			"X XXX ",
+			"X     ",
+			"XXXXXX"
+		]},
+		{ name: 'gtceu:normal_pipe', genCast: true, genExtrude: true, pattern: [
+			"XXXXXX",
+			"X    X",
+			"X XX X",
+			"X XX X",
+			"X    X",
+			"XXXXXX"
+		]},
+		{ name: 'gtceu:small_pipe', genCast: true, genExtrude: true, pattern: [
+			"XXXXXX",
+			"XX   X",
+			"XX X X",
+			"XX   X",
+			"XXXXXX",
+			"XXXXXX"
+		]},
+		{ name: 'gtceu:tiny_pipe', genCast: true, genExtrude: true, pattern: [
+			"XXXXXX",
+			"XXX XX",
+			"XX X X",
+			"XXX XX",
+			"XXXXXX",
+			"XXXXXX"
+		]},
 		{ name: 'gtceu:rod', genCast: false, genExtrude: true, pattern: [
 			"XXXXXX",
 			"XXXXXX",

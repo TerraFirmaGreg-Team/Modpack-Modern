@@ -88,63 +88,6 @@ function registerTFGMarsRecipes(event) {
 		.EUt(GTValues.VA[GTValues.EV])
 		.dimension('ad_astra:mars')
 
-	// Ad astra woods
-
-	global.AD_ASTRA_WOOD.forEach(wood => {
-		woodBuilder(event, wood.name, wood.lumber, wood.logs, wood.log, wood.stripped_log, wood.plank, wood.stair, wood.slab, wood.door, wood.trapdoor, wood.fence, wood.fence_gate, wood.support, wood.pressure_plate, wood.button)
-	})
-
-	event.shaped('8x ad_astra:aeronos_ladder', [
-		'A A',
-		'ABA',
-		'A A'
-	], {
-		A: 'tfg:wood/lumber/aeronos',
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1)
-	}).id('tfg:shaped/aeronos_ladder')
-
-	event.shaped('8x ad_astra:strophar_ladder', [
-		'A A',
-		'ABA',
-		'A A'
-	], {
-		A: 'tfg:wood/lumber/strophar',
-		B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Wood, 1)
-	}).id('tfg:shaped/strophar_ladder')
-
-	// don't pass in the items like doors, trapdoors etc because beneath already has good recipes for those
-	woodBuilder(event, 'crimson', 'beneath:wood/lumber/crimson', '#tfc:crimson_logs', 'beneath:wood/log/crimson',
-		'beneath:wood/stripped_log/crimson', 'beneath:wood/planks/crimson', null,
-		'beneath:wood/planks/crimson_slab', null, null, null, null, null, 'beneath:wood/planks/crimson_pressure_plate',
-		'beneath:wood/planks/crimson_button')
-
-	event.recipes.gtceu.lathe(`tfg:cutter/crimson_stripped_wood_from_wood`)
-		.itemInputs('beneath:wood/wood/crimson')
-		.itemOutputs('beneath:wood/stripped_wood/crimson')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/crimson', 'beneath:wood/wood/crimson')
-		.speedLimits(0)
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/stripping_crimson_wood`)
-
-	woodBuilder(event, 'warped', 'beneath:wood/lumber/warped', '#tfc:warped_logs', 'beneath:wood/log/warped',
-		'beneath:wood/stripped_log/warped', 'beneath:wood/planks/warped', null,
-		'beneath:wood/planks/warped_slab', null, null, null, null, null, 'beneath:wood/planks/warped_pressure_plate',
-		'beneath:wood/planks/warped_button')
-
-	event.recipes.gtceu.lathe(`tfg:cutter/warped_stripped_wood_from_wood`)
-		.itemInputs('beneath:wood/wood/warped')
-		.itemOutputs('beneath:wood/stripped_wood/warped')
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.vintageimprovements.polishing('beneath:wood/stripped_wood/warped', 'beneath:wood/wood/warped')
-		.speedLimits(0)
-		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/stripping_warped_wood`)
-
 	//Large Nest
 	event.shaped('tfg:large_nest_box',
 		[

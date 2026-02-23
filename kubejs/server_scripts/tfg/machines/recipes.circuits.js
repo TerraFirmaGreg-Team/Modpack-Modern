@@ -79,7 +79,6 @@ function registerTFGCircuitRecipes(event) {
 	//
 	// Frustratingly event.replaceInput doesn't allow for
 	// changing item counts, only types.
-
 	event.remove(/gtceu:circuit_assembler\/quantum_mainframe_zpm.*/)
 	event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm')
 		.itemInputs(
@@ -89,7 +88,7 @@ function registerTFGCircuitRecipes(event) {
 			'24x gtceu:smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["tin_replacement"], 576))
+		.inputFluids(Fluid.of('gtceu:tin', 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -102,7 +101,7 @@ function registerTFGCircuitRecipes(event) {
 			'24x gtceu:smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["solder_replacement"], 288))
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -115,7 +114,7 @@ function registerTFGCircuitRecipes(event) {
 			'6x gtceu:advanced_smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["tin_replacement"], 576))
+		.inputFluids(Fluid.of('gtceu:tin', 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
@@ -128,12 +127,12 @@ function registerTFGCircuitRecipes(event) {
 			'6x gtceu:advanced_smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"]["solder_replacement"], 288))
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
 
-	// #endregion
+	//#endregion
 
     // #region Replace solders
 

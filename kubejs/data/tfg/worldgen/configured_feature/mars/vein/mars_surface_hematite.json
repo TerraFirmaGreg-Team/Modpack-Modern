@@ -414,6 +414,33 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:raw_hematite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_yellow_limonite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_gold_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:quartzite_calcite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

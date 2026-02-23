@@ -1,13 +1,44 @@
 {
-	"type": "minecraft:basalt_columns",
+	"type": "minecraft:random_patch",
 	"config": {
-		"height": {
-			"type": "minecraft:uniform",
-			"value": {
-				"max_inclusive": 4,
-				"min_inclusive": 1
-			}
+		"feature": {
+			"feature": {
+				"type": "minecraft:block_column",
+				"config": {
+					"allowed_placement": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					"direction": "up",
+					"layers": [
+						{
+							"height": {
+								"type": "minecraft:uniform",
+								"value": {
+									"max_inclusive": 4,
+									"min_inclusive": 1
+								}
+							},
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "minecraft:basalt"
+								}
+							}
+						}
+					],
+					"prioritize_tip": false
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR"
+				}
+			]
 		},
-		"reach": 1
+		"tries": 6,
+		"xz_spread": 3,
+		"y_spread": 1
 	}
 }

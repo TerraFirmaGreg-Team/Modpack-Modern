@@ -230,6 +230,8 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('podzol')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBoth('tfc:rock/raw')
+		.tagBoth('forge:stone')
 
 	event.create('betterend:lucernia_bark')
 		.soundType('netherrack')
@@ -322,7 +324,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:hydralux_large', 'tfg:tall_decorative_plant')
@@ -330,22 +332,18 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.soundType('nether_wart')
 		.mapColor('green_terracotta')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
-	event.create('betterend:shadow_plant', 'tfg:decorative_plant')
-		.soundType('crop')
-		.mapColor('color_black')
+	createPlant(event, "shadow_plant", "venus")
 		.box(3, 0, 3, 13, 10, 13)
-		.tagItem('tfg:venus_plants')
-		.tagBlock('tfg:do_not_destroy_in_space')
 
 	event.create('betterend:twisted_vine', 'tfg:tall_decorative_plant')
 		.height(3)
 		.soundType('crop')
-		.mapColor('color_black')
+		.mapColor('none')
 		.box(3, 0, 3, 13, 16, 13)
-		.tagItem('tfg:venus_plants')
+		.tagBoth('tfg:venus_plants')
 		.tagBlock('tfg:do_not_destroy_in_space')
 
 }

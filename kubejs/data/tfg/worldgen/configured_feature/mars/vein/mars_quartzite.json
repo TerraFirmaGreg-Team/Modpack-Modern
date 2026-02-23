@@ -251,6 +251,33 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_quartzite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_quartzite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_barite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_asbestos_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

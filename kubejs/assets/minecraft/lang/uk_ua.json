@@ -100,7 +100,9 @@
   "item.minecraft.glow_ink_sac": "Світний барвник",
   "item.minecraft.nether_brick": "Кератофірова цегла",
   "item.minecraft.furnace_minecart": "Вагонетка з котлом",
+  "item.minecraft.milk_bucket": "Відро коров’ячого молока",
   "material.tfg.dripstone": "Травертин",
   "death.attack.magic": "%1$s був убитий смертельною отрутою",
-  "death.attack.magic.player": "%1$s був убитий смертельною отрутою, намагаючись утекти від %2$s"
+  "death.attack.magic.player": "%1$s був убитий смертельною отрутою, намагаючись утекти від %2$s",
+  "effect.minecraft.dolphins_grace": "Швидкість плавання"
 }

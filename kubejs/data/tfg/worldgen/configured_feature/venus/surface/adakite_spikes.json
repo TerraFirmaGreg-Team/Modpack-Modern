@@ -1,0 +1,62 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:block_column",
+				"config": {
+					"allowed_placement": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					"direction": "up",
+					"layers": [
+						{
+							"height": {
+								"type": "minecraft:weighted_list",
+								"distribution": [
+									{
+										"data": {
+											"type": "minecraft:uniform",
+											"value": {
+												"max_inclusive": 8,
+												"min_inclusive": 4
+											}
+										},
+										"weight": 5
+									},
+									{
+										"data": {
+											"type": "minecraft:uniform",
+											"value": {
+												"max_inclusive": 16,
+												"min_inclusive": 8
+											}
+										},
+										"weight": 1
+									}
+								]
+							},
+							"provider": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "betterend:lacugrove_bark"
+								}
+							}
+						}
+					],
+					"prioritize_tip": true
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR"
+				}
+			]
+		},
+		"tries": 12,
+		"xz_spread": 16,
+		"y_spread": 1
+	}
+}

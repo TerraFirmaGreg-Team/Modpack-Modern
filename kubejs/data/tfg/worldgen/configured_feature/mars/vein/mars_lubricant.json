@@ -318,6 +318,37 @@
             "weight": 5
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_soapstone_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_talc_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_glauconite_sand_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:quartzite_trona_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_pentlandite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:quartzite_hematite_ore",
+            "weight": 5
+          }
+        ]
       }
     ],
     "indicator": {

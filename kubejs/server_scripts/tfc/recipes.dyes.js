@@ -156,4 +156,62 @@ function registerTFCDyeRecipes(event) {
 	})
 
 	//#endregion
+
+	//#region Dye mixing
+    const dyeMixes = [
+        // input 1
+        [
+            'black', 'white', 'white',
+            'white', 'blue', 'blue',
+            'purple', 'white', 'red',
+            'orange', 'yellow'
+        ],
+        // input 2
+        [
+            'white', 'gray', 'green',
+            'blue', 'green', 'red',
+            'pink', 'red', 'yellow',
+            'black', 'blue'
+        ],
+        // output
+        [
+            'gray', 'light_gray', 'light_green',
+            'light_blue', 'cyan', 'purple',
+            'magenta', 'pink', 'orange',
+            'brown', 'green'
+        ]
+    ]
+
+    for (let i = 0; i < dyeMixes[2].length; i++) {
+        if (!Fluid.exists(`tfc:${dyeMixes[0][i]}_dye`) ||
+            !Fluid.exists(`tfc:${dyeMixes[1][i]}_dye`) ||
+            !Fluid.exists(`tfc:${dyeMixes[2][i]}_dye`)
+        ) continue
+
+		// GT mixer recipe
+        event.recipes.gtceu.mixer(`mixer_dye_${dyeMixes[2][i]}`)
+            .inputFluids(
+                Fluid.of(`tfc:${dyeMixes[0][i]}_dye`, 144),
+                Fluid.of(`tfc:${dyeMixes[1][i]}_dye`, 144)
+            )
+            .outputFluids(
+                Fluid.of(`tfc:${dyeMixes[2][i]}_dye`, 288)
+            )
+            .duration(20)
+            .EUt(8)
+		
+		// TFC barrel recipes (2x because 2! = 2)
+		event.recipes.tfc.barrel_instant_fluid(
+			Fluid.of(`tfc:${dyeMixes[2][i]}_dye`, 2),
+			TFC.fluidStackIngredient(Fluid.of(`tfc:${dyeMixes[0][i]}_dye`, 1)),
+			TFC.fluidStackIngredient(Fluid.of(`tfc:${dyeMixes[1][i]}_dye`, 1)),
+		)
+		event.recipes.tfc.barrel_instant_fluid(
+			Fluid.of(`tfc:${dyeMixes[2][i]}_dye`, 2),
+			TFC.fluidStackIngredient(Fluid.of(`tfc:${dyeMixes[1][i]}_dye`, 1)),
+			TFC.fluidStackIngredient(Fluid.of(`tfc:${dyeMixes[0][i]}_dye`, 1)),
+		)
+    }
+
+    //#endregion
 }

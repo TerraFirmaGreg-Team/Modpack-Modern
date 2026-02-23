@@ -788,15 +788,15 @@ global.TFC_JAMS = /** @type {const} */ ([
 ]);
 
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
-    { input: "tfc:plant/cherry_sapling", output: "tfc:food/cherry"},
-    { input: "tfc:plant/green_apple_sapling", output: "tfc:food/green_apple"},
-    { input: "tfc:plant/lemon_sapling", output: "tfc:food/lemon"},
-    { input: "tfc:plant/olive_sapling", output: "tfc:food/olive"},
-    { input: "tfc:plant/orange_sapling", output: "tfc:food/orange"},
-    { input: "tfc:plant/peach_sapling", output: "tfc:food/peach"},
-    { input: "tfc:plant/plum_sapling", output: "tfc:food/plum"},
-    { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple"},
-    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana"}
+    { input: "tfc:plant/cherry_sapling", output: "tfc:food/cherry", leaves: "tfc:plant/cherry_leaves" },
+    { input: "tfc:plant/green_apple_sapling", output: "tfc:food/green_apple", leaves: "tfc:plant/green_apple_leaves" },
+    { input: "tfc:plant/lemon_sapling", output: "tfc:food/lemon", leaves: "tfc:plant/lemon_leaves" },
+    { input: "tfc:plant/olive_sapling", output: "tfc:food/olive", leaves: "tfc:plant/olive_leaves" },
+    { input: "tfc:plant/orange_sapling", output: "tfc:food/orange", leaves: "tfc:plant/orange_leaves" },
+    { input: "tfc:plant/peach_sapling", output: "tfc:food/peach", leaves: "tfc:plant/peach_leaves" },
+    { input: "tfc:plant/plum_sapling", output: "tfc:food/plum", leaves: "tfc:plant/plum_leaves" },
+    { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple", leaves: "tfc:plant/red_apple_leaves" },
+    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" }
 ]);
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -867,18 +867,18 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
         salted_cheese: "firmalife:food/chevre", salted_wheel: "firmalife:chevre_wheel"
     },
     {
-        id: "ox", milk: "tfc_gurman:ox_milk", curdled_fluid: "tfc_gurman:curdled_ox_milk", curd: "tfc_gurman:ox_curd",
-        unsalted_cheese: "tfc_gurman:ox_brinza_slice", unsalted_wheel: "tfc_gurman:ox_brinza_wheel",
+        id: "ox", milk: "tfc_gourmet:ox_milk", curdled_fluid: "tfc_gourmet:curdled_ox_milk", curd: "tfc_gourmet:ox_curd",
+        unsalted_cheese: "tfc_gourmet:ox_brinza_slice", unsalted_wheel: "tfc_gourmet:ox_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     },
     {
-        id: "sheep", milk: "tfc_gurman:sheep_milk", curdled_fluid: "tfc_gurman:curdled_sheep_milk", curd: "tfc_gurman:sheep_curd",
-        unsalted_cheese: "tfc_gurman:sheep_brinza_slice", unsalted_wheel: "tfc_gurman:sheep_brinza_wheel",
+        id: "sheep", milk: "tfc_gourmet:sheep_milk", curdled_fluid: "tfc_gourmet:curdled_sheep_milk", curd: "tfc_gourmet:sheep_curd",
+        unsalted_cheese: "tfc_gourmet:sheep_brinza_slice", unsalted_wheel: "tfc_gourmet:sheep_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     },
     {
-        id: "alpaca", milk: "tfc_gurman:alpaca_milk", curdled_fluid: "tfc_gurman:curdled_alpaca_milk", curd: "tfc_gurman:alpaca_curd",
-        unsalted_cheese: "tfc_gurman:alpaca_brinza_slice", unsalted_wheel: "tfc_gurman:alpaca_brinza_wheel",
+        id: "alpaca", milk: "tfc_gourmet:alpaca_milk", curdled_fluid: "tfc_gourmet:curdled_alpaca_milk", curd: "tfc_gourmet:alpaca_curd",
+        unsalted_cheese: "tfc_gourmet:alpaca_brinza_slice", unsalted_wheel: "tfc_gourmet:alpaca_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     }
 ]);
@@ -952,6 +952,38 @@ global.TFC_EQUIPMENT_METALS = /** @type {const} */ ([
     "black_steel",
     "red_steel",
     "blue_steel"
+]);
+
+global.TFC_METALS = /** @type {const} */ ([
+    "copper",
+    "bismuth_bronze",
+    "bronze",
+    "black_bronze",
+    "wrought_iron",
+    "steel",
+    "black_steel",
+    "red_steel",
+    "blue_steel",
+
+    "bismuth",
+    "brass",
+    "gold",
+    "rose_gold",
+    "silver",
+    "sterling_silver",
+    "nickel",
+    "zinc",
+    "tin",
+    "cast_iron"
+]);
+
+global.TFC_DOUGHS = /** @type {const} */ ([
+    "barley",
+    "maize",
+    "oat",
+    "rye",
+    "rice",
+    "wheat"
 ]);
 
  global.TFC_BIOMES = /** @type {const} */ ([

@@ -169,13 +169,13 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 4000))
 		.outputFluids(Fluid.of('tfg:reformate_gas', 8000))
 		.outputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
-		.duration(20*30)
+		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:reformate_gas')
 		.inputFluids(Fluid.of('tfg:reformed_aromatic_feedstock', 2000), Fluid.of('gtceu:steam', 1000))
 		.outputFluids(Fluid.of('tfg:reformate_gas', 3000))
-		.duration(20*30)
+		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	// Recycling
@@ -190,11 +190,12 @@ function registerTFGEarlyGasRecipes(event) {
 	// Modify Recipe to balance new line
 
 	event.remove({ id: 'gtceu:extractor/charcoal_extraction' })
+	/*
 	event.recipes.gtceu.extractor('tfg:charcoal_extraction')
 		.itemInputs(Item.of('minecraft:charcoal'))
 		.outputFluids(Fluid.of('gtceu:wood_tar', 100))
 		.duration(20*6.4)
-		.EUt(GTValues.VA[GTValues.MV])
+		.EUt(GTValues.VA[GTValues.MV])*/
 
 	//#endregion
 
@@ -235,7 +236,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.gas_turbine('tfg:btx_fuel') // Gas Turbine
 		.inputFluids(Fluid.of('tfg:btx_fuel', 1))
 		.EUt(-(32))
-		.duration(20*2.6)
+		.duration(20*2.86)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
@@ -246,7 +247,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.chemical_reactor('tfg:electrolyze_syngas')
 		.notConsumable(Item.of('gtceu:copper_dust', 1))
 		.inputFluids(Fluid.of('tfg:syngas', 1000))
-		.outputFluids(Fluid.of('gtceu:methanol', 4000), Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('gtceu:methanol', 3000), Fluid.of('minecraft:water', 2000))
 		.duration(20*12)
 		.EUt(GTValues.VA[GTValues.MV])
 
@@ -273,7 +274,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:ammonia', 1000), Fluid.of('gtceu:ethanol', 1000))
 		.outputFluids(Fluid.of('tfg:tpaoh', 1000))
 		.duration(20*8)
-		.EUt(GTValues.VA[GTValues.EV])
+		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:zsm_5_gel')
 		.itemInputs(Item.of('#forge:dusts/sodium_aluminium'))
@@ -303,6 +304,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('tfg:catalyser_pt_re_zsm'))
 		.inputFluids(Fluid.of('tfg:reformate_gas', 8000))
 		.inputFluids(Fluid.of('gtceu:propene', 2000))
+		.itemOutputs(Item.of('tfg:used_catalyser', 1))
 		.outputFluids(Fluid.of('tfg:crude_mixed_gas', 10000))
 		.duration(20*240)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -312,8 +314,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:benzene', 20000))
 		.inputFluids(Fluid.of('gtceu:toluene', 6000))
 		.inputFluids(Fluid.of('gtceu:dimethylbenzene', 12000))
-		.itemOutputs(Item.of('tfg:used_catalyser', 1))
-		.outputFluids(Fluid.of('tfg:btx_fuel', 48000))
+		.outputFluids(Fluid.of('tfg:btx_fuel', 54000))
 		.duration(20*6)
 		.EUt(GTValues.VA[GTValues.IV])
 		.circuit(24)
@@ -328,7 +329,7 @@ function registerTFGEarlyGasRecipes(event) {
 
 	event.recipes.gtceu.chemical_reactor('tfg:clean_powder')
 		.itemInputs(Item.of('tfg:catalyser_powder_dust', 1))
-		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 2000))
+		.inputFluids(Fluid.of('gtceu:hydrogen_peroxide', 200))
 		.itemOutputs(Item.of('tfg:clean_powder_dust', 1), Item.of('gtceu:sodium_dust', 1))
 		.duration(20*14)
 		.EUt(GTValues.VA[GTValues.MV])

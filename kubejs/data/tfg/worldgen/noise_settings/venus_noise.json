@@ -323,7 +323,7 @@
 									"then_run": {
 										"type": "minecraft:block",
 										"result_state": {
-											"Name": "betterend:flavolite"
+											"Name": "minecraft:tuff"
 										}
 									}
 								}
@@ -349,13 +349,16 @@
 								"raw_rock_weight": 20,
 								"palette": [
 									{ "Name": "create:ochrum" },
-									{ "Name": "betterend:sandy_jadestone" },
-									{ "Name": "betterend:sandy_jadestone" },
+									{ "Name": "create:ochrum" },
+									{ "Name": "tfg:rock/hardened_scoria" },
+									{ "Name": "tfg:rock/hardened_scorchia" },
 									{ "Name": "betterend:sandy_jadestone" },
 									{ "Name": "betterend:sandy_jadestone" },
 									{ "Name": "betterend:flavolite" },
 									{ "Name": "betterend:flavolite" },
-									{ "Name": "betterend:flavolite" }
+									{ "Name": "minecraft:tuff" },
+									{ "Name": "tfc:rock/raw/basalt" },
+									{ "Name": "ad_astra:venus_stone" }
 								],
 								"fallback": {
 									"Name": "ad_astra:venus_stone"
@@ -379,7 +382,7 @@
 							"if_true": {
 								"type": "minecraft:y_above",
 								"anchor": {
-									"absolute": 65
+									"absolute": 68
 								},
 								"surface_depth_multiplier": 0,
 								"add_stone_depth": false
@@ -544,7 +547,7 @@
 								"then_run": {
 									"type": "minecraft:block",
 									"result_state": {
-										"Name": "create:scorchia"
+										"Name": "tfg:rock/hardened_scorchia"
 									}
 								}
 							}

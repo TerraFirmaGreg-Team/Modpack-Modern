@@ -10,6 +10,9 @@ const NEW_MOB_MAX_HP = {
 	"endermanoverhaul:end_islands_enderman": 120,
 	"endermanoverhaul:windswept_hills_enderman": 70,
 	"endermanoverhaul:soulsand_valley_enderman": 80,
+	"minecraft:stray": 40,
+	"species:limpet": 20,
+	"species:birt": 20,
 
 	// mars mobs -- wan's ancient beasts has its own config for this (also includes sniffer)
 	"endermanoverhaul:crimson_enderman": 60,

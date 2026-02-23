@@ -36,9 +36,11 @@
 	},
 	"features": [
 		[
+			"tfg:venus/terrain/sulfur_fumes_spring" 
+		],
+		[
 			"tfc:erosion"
 		],
-		[],
 		[],
 		[],
 		[],
@@ -55,27 +57,28 @@
 		],
 		[
 			"tfg:venus/surface/sulfur_patch",
-			"tfg:venus/surface/hydralux_rare"
+			"tfg:venus/surface/hydralux_rare",
+			"tfg:venus/surface/loose_scoria"
 		],
 		"#tfg:venus_top_layer_modification"
 	],
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.15,

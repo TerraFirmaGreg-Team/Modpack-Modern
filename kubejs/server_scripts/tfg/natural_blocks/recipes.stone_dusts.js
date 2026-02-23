@@ -38,7 +38,7 @@ function registerTFGStoneDustRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 5000, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 4500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
-		.outputFluids(Fluid.of('gtceu:helium_3', 200))
+		.outputFluids(Fluid.of('gtceu:helium_3', 500))
 
 	event.recipes.gtceu.centrifuge('ochrum_dust_separation')
 		.EUt(GTValues.VA[GTValues.MV])

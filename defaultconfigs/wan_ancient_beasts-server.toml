@@ -74,3 +74,30 @@
 	#Range: 1.0 ~ 1024.0
 	health = 80.0
 
+#Raider Attributes
+[charger]
+	#Raider health [default: 60]
+	#Range: 1.0 ~ 1024.0
+	health = 200.0
+	#Raider armor [default: 4]
+	#Range: 0.0 ~ 30.0
+	armor = 6.0
+	#Raider attack damage [default: 15]
+	#Range: 0.0 ~ 1024.0
+	armorToughness = 4.0
+
+[raider]
+	#Raider health [default: 60]
+	#Range: 1.0 ~ 1024.0
+	health = 200.0
+	#Raider armor [default: 4]
+	#Range: 0.0 ~ 30.0
+	armor = 6.0
+	#Raider attack damage [default: 15]
+	#Range: 0.0 ~ 1024.0
+	armorToughness = 4.0
+
+[snatcher]
+	#Raider health [default: 60]
+	#Range: 1.0 ~ 1024.0
+	health = 50.0

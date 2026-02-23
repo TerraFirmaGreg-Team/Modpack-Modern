@@ -32,14 +32,29 @@
 		}
 	]
 	order_index: 0
-	quest_links: [{
-		id: "409385C6F6640BEA"
-		linked_quest: "427814F6E9386772"
-		shape: "gear"
-		size: 4.0d
-		x: 4.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "409385C6F6640BEA"
+			linked_quest: "427814F6E9386772"
+			shape: "gear"
+			size: 4.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "66FB69B8381F5A01"
+			linked_quest: "67F40A90844EC0FC"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			id: "78C8274E7CA78B12"
+			linked_quest: "509C064AA92FD78F"
+			shape: "heart"
+			x: 0.0d
+			y: 12.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]
@@ -1507,32 +1522,6 @@
 			shape: "heart"
 			subtitle: "{quests.stone_age.meals.subtitle}"
 			tasks: [
-				{
-					id: "7D77C6BFE159FDC9"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: -2L
-								foodData: {
-									dairy: 0.0f
-									decay: 0.0f
-									food: 0
-									fruit: 0.0f
-									grain: 0.0f
-									meat: 0.0f
-									sat: 0.0f
-									veg: 0.0f
-									water: 0.0f
-								}
-								ingredients: [ ]
-								traits: [ ]
-							}
-						}
-						id: "firmalife:food/cooked_pizza"
-					}
-					type: "item"
-				}
 				{
 					id: "597808680916715E"
 					item: {

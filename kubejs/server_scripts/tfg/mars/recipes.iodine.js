@@ -105,6 +105,15 @@ function registerTFGMarsIodineRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	event.recipes.gtceu.chemical_reactor('tfg:iodomethane_synthesis')
+		.itemInputs('#forge:dusts/iodine')
+		.inputFluids(Fluid.of('gtceu:methane', 1000))
+		.outputFluids(
+			Fluid.of('tfg:iodomethane', 1000),
+			Fluid.of('gtceu:hydrogen', 1000))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	event.recipes.gtceu.chemical_reactor('tfg:trideuteroiodomethane_separation')
 		.inputFluids(
 			Fluid.of('tfg:trideuteroiodomethane', 1000),

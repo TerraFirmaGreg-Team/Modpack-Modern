@@ -700,7 +700,7 @@ function registerTFGFoodRecipes(event) {
 
 	//#region Pizza
 
-	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 3,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -710,7 +710,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 1,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -720,7 +720,7 @@ function registerTFGFoodRecipes(event) {
 		)
 	})
 
-	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.MV], {
+	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.LV], {
 		circuit: 2,
 		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
 		itemOutputs: ["firmalife:food/raw_pizza"],
@@ -891,6 +891,22 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ["tfc:food/soybean", 'tfc:powder/salt'],
 		fluidInputs: ['#tfg:clean_water 50'],
 		itemOutputs: ["firmalife:food/soy_mixture"],
+		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
+	})
+
+	global.processorRecipe(event, 'soy_mixture_sea_water', 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/soybean'],
+		fluidInputs: ['tfc:salt_water 50'],
+		itemOutputs: ['firmalife:food/soy_mixture'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
+	})
+
+	global.processorRecipe(event, 'soy_mixture_salt_water', 300, 8, {
+		circuit: 1,
+		itemInputs: ['tfc:food/soybean'],
+		fluidInputs: ['gtceu:salt_water 25'],
+		itemOutputs: ['firmalife:food/soy_mixture'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/soy_mixture').copyFood()
 	})
 
@@ -1180,7 +1196,7 @@ function registerTFGFoodRecipes(event) {
 		.duration(60)
 		.EUt(16)
 
-	event.shaped('4x tfc:powder/salt', ['A', 'B'], {A: '#forge:dusts/salt', B: '#forge:tools/mortars'})
+	event.shapeless('4x tfc:powder/salt', ['#forge:dusts/salt', '#forge:tools/mortars'])
 		.id(`tfg:mortar/salt`)
 
 	//#endregion

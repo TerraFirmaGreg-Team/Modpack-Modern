@@ -19,7 +19,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 
 	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
-	event.remove('tfc:foods', 'tfc_gurman:havai_pizza')
+	event.remove('tfc:foods', 'tfc_gourmet:havai_pizza')
 
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')

@@ -88,6 +88,22 @@ function registerTFGRocketRecipes(event) {
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true, true)
+		
+	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_double_rocket')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 12),
+			'4x ad_astra:rocket_fin',
+			'1x ad_astra:steel_engine',
+			'1x ad_astra:rocket_nose_cone',
+			'24x #forge:insulation_t1',
+			'6x #gtceu:circuits/hv'
+		)
+		.inputFluids(Fluid.of('gtceu:silicon', 144 * 24))
+		.itemOutputs('tfg:tier_1_double_rocket')
+		.duration(1800)
+		.circuit(3)
+		.EUt(GTValues.VA[GTValues.HV])
+		.addMaterialInfo(true, true)
 
 	//#endregion
 
@@ -185,6 +201,22 @@ function registerTFGRocketRecipes(event) {
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true, true)
+		
+	event.recipes.gtceu.assembler('ad_astra:tier_2_double_rocket')
+		.itemInputs(
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 18),
+			'4x tfg:rocket_fin_t2',
+			'1x ad_astra:desh_engine',
+			'1x tfg:rocket_cone_t2',
+			'18x #forge:insulation_t2/roll',
+			'6x #gtceu:circuits/ev'
+		)
+		.inputFluids(Fluid.of('gtceu:titanium', 144 * 24))
+		.itemOutputs('tfg:tier_2_double_rocket')
+		.duration(2166)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.EV])
+		.addMaterialInfo(true, true)
 
 	//#endregion
 
@@ -275,6 +307,22 @@ function registerTFGRocketRecipes(event) {
 		.itemOutputs('ad_astra:tier_3_rocket')
 		.duration(1700)
 		.circuit(4)
+		.EUt(GTValues.VA[GTValues.IV])
+		.addMaterialInfo(true, true)
+	
+	event.recipes.gtceu.assembler('ad_astra:tier_3_double_rocket')
+		.itemInputs(
+			'24x #forge:dense_plates/rocket_alloy_t3',
+			'4x tfg:rocket_fin_t3',
+			'1x ad_astra:ostrum_engine',
+			'2x ad_astra:ostrum_tank',
+			'1x tfg:rocket_cone_t3',
+			'12x #forge:insulation_t3/sheet'
+		)
+		.inputFluids(Fluid.of('gtceu:bromine', 1000 * 24))
+		.itemOutputs('tfg:tier_3_double_rocket')
+		.duration(2550)
+		.circuit(5)
 		.EUt(GTValues.VA[GTValues.IV])
 		.addMaterialInfo(true, true)
 	

@@ -8,8 +8,8 @@
 			"sound": "tfg:ambient.venus_surface.additions",
 			"tick_chance": 0.0015
 		},
-		"sky_color": 5450003,
-		"fog_color": 5450003,
+		"sky_color": 7687245,
+		"fog_color": 7687245,
 		"water_color": 8241044,
 		"water_fog_color": 10866612,
 		"ambient_sound": "tfg:ambient.venus_surface.loop",
@@ -36,19 +36,18 @@
 	},
 	"features": [
 		[
-			"tfc:erosion"
-		],
-		[
 			"tfg:venus/terrain/lava_spring",
 			"tfg:venus/terrain/lava_delta",
 			"tfg:venus/terrain/lava_lake",
 			"tfg:venus/terrain/lava_fissure",
 			"tfg:venus/terrain/lava_rivulet",
-			"tfg:venus/terrain/magma_rivulet"
-		],
-		[
+			"tfg:venus/terrain/magma_rivulet",
 			"tfg:venus/terrain/basalt_pillar"
 		],
+		[
+			"tfc:erosion"
+		],
+		[],
 		[],
 		[
 			"tfg:venus/terrain/basalt_columns_small",
@@ -68,7 +67,9 @@
 			"tfg:venus/surface/twisted_vine",
 			"tfg:venus/surface/shadow_plant_patch",
 			"tfg:venus/surface/pile_volcanic_ash",
-			"tfg:venus/surface/pile_black_sand"
+			"tfg:venus/surface/pile_black_sand",
+			"tfg:venus/surface/loose_scorchia",
+			"tfg:venus/surface/loose_crackrack"
 		],
 		[
 			"tfg:venus/terrain/lava_fill"
@@ -78,20 +79,20 @@
 	"has_precipitation": true,
 	"spawn_costs": {
 		"endermanoverhaul:desert_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:savanna_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"endermanoverhaul:nether_wastes_enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"minecraft:enderman": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"species:cliff_hanger": {
 			"energy_budget": 0.3,
@@ -123,6 +124,12 @@
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
+			{
+				"type": "minecraft:strider",
+				"maxCount": 5,
+				"minCount": 3,
+				"weight": 100
+			},
 			{
 				"type": "arthropocolypse:ice_crawler",
 				"maxCount": 2,

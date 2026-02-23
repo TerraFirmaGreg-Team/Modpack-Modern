@@ -53,6 +53,12 @@
 			x: 0.0d
 			y: -13.0d
 		}
+		{
+			id: "3274381865E7D011"
+			linked_quest: "0585527D1854628B"
+			x: 14.0d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -1010,18 +1016,26 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_t1.desc}"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
 			icon_scale: 2.0d
 			id: "3FBDC8552F7D8008"
 			shape: "none"
 			size: 2.0d
 			subtitle: "{quests.high_voltage.rocket_t1.subtitle}"
 			tasks: [{
-				id: "76D1CE96C52F9963"
+				id: "6F40128FAA409B16"
 				item: {
 					Count: 1
-					id: "ad_astra:tier_1_rocket"
-					tag: { }
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(ad_astra:tier_1_rocket)item(tfg:tier_1_double_rocket))"
+					}
 				}
+				title: "{quests.high_voltage.rocket_t1.task}"
 				type: "item"
 			}]
 			title: "{quests.high_voltage.rocket_t1.title}"
@@ -1376,7 +1390,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.high_voltage.space_survival.title}"
-			x: 13.0d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
@@ -1697,6 +1711,21 @@
 			title: "{quests.high_voltage.pisciculture.title}"
 			x: -2.25d
 			y: -11.0d
+		}
+		{
+			dependencies: ["41D32C5178760F47"]
+			description: ["{quests.high_voltage.multi_structure_terminal.desc}"]
+			id: "3FC6D346B3EE4A92"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.multi_structure_terminal.subtitle}"
+			tasks: [{
+				id: "32C53F040A2F0AD8"
+				item: "gtceuterminal:multi_structure_manager"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

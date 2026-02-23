@@ -1,0 +1,1087 @@
+{
+  //afc leaves
+    "afc:wood/leaves/boabab[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/boabab[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/hevea[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/hevea[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/tualang[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/tualang[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/leaves/cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/leaves/fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/ipe[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/ipe[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/horsetail_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/horsetail_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/gum_arabic[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/gum_arabic[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/acacia_koa[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/acacia_koa[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/poplar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/poplar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/mpingo_blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/mpingo_blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/mountain_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/mountain_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/balsam_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/balsam_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/scrub_hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/scrub_hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/red_silk_cotton[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/red_silk_cotton[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/bigleaf_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/bigleaf_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/weeping_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/weeping_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/black_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/black_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/live_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/live_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/jaggery_palmjaggery_palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/jaggery_palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/stone_pinestone_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/stone_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/leaves/red_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/red_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+"afc:wood/leaves/tamarack[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/tamarack[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/giant_rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/giant_rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/coast_redwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/coast_redwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/coast_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/coast_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/sitka_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/sitka_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/black_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/black_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/atlas_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/atlas_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/weeping_willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/weeping_willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/rainbow_eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/rainbow_eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/mountain_ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/mountain_ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/rubber_fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/rubber_fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/redcedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/redcedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/weeping_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/weeping_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/bald_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/bald_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/sapele_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/sapele_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/small_leaf_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/small_leaf_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/iroko_teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/iroko_teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/flame_of_the_forest[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/flame_of_the_forest[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/lebombo_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/leaves/lebombo_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+
+//afc fallen_leaves
+    "afc:wood/fallen_leaves/boabab[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/boabab[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/hevea[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/hevea[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/tualang[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/tualang[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/fallen_leaves/cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/fallen_leaves/fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/ipe[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/ipe[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/horsetail_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/horsetail_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/gum_arabic[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/gum_arabic[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/acacia_koa[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/acacia_koa[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/poplar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/poplar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/mpingo_blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/mpingo_blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/mountain_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/mountain_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/balsam_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/balsam_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/scrub_hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/scrub_hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/red_silk_cotton[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/red_silk_cotton[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/bigleaf_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/bigleaf_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/weeping_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/weeping_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/black_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/black_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/live_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/live_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/jaggery_palmjaggery_palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/jaggery_palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/stone_pinestone_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/stone_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/fallen_leaves/red_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/red_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+"afc:wood/fallen_leaves/tamarack[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/tamarack[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/giant_rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/giant_rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/coast_redwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/coast_redwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/coast_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/coast_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/sitka_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/sitka_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/black_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/black_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/atlas_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/atlas_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/weeping_willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/weeping_willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/rainbow_eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/rainbow_eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/mountain_ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/mountain_ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/rubber_fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/rubber_fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/redcedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/redcedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/weeping_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/weeping_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/bald_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/bald_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/sapele_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/sapele_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/small_leaf_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/small_leaf_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/iroko_teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/iroko_teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/flame_of_the_forest[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/flame_of_the_forest[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/lebombo_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/fallen_leaves/lebombo_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  
+//afc twig
+    "afc:wood/twig/boabab[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/boabab[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/hevea[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/hevea[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/tualang[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/tualang[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/twig/cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },  
+    "afc:wood/twig/fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/ipe[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/ipe[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/horsetail_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/horsetail_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/gum_arabic[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/gum_arabic[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/acacia_koa[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/acacia_koa[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/poplar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/poplar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/mpingo_blackwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/mpingo_blackwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/mountain_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/mountain_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/balsam_fir[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/balsam_fir[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/scrub_hickory[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/scrub_hickory[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/red_silk_cotton[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/red_silk_cotton[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/bigleaf_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/bigleaf_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/weeping_maple[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/weeping_maple[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/black_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/black_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/live_oak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/live_oak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/jaggery_palmjaggery_palm[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/jaggery_palm[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/stone_pinestone_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/stone_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+    "afc:wood/twig/red_pine[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/red_pine[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+"afc:wood/twig/tamarack[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/tamarack[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/giant_rosewood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/giant_rosewood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/coast_redwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/coast_redwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/coast_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/coast_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/sitka_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/sitka_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/black_spruce[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/black_spruce[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/atlas_cedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/atlas_cedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/weeping_willow[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/weeping_willow[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/rainbow_eucalyptus[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/rainbow_eucalyptus[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/mountain_ash[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/mountain_ash[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/rubber_fig[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/rubber_fig[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/redcedar[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/redcedar[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/weeping_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/weeping_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/bald_cypress[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/bald_cypress[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/sapele_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/sapele_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/small_leaf_mahogany[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/small_leaf_mahogany[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/iroko_teak[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/iroko_teak[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/flame_of_the_forest[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/flame_of_the_forest[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/lebombo_ironwood[fluid=water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+  "afc:wood/twig/lebombo_ironwood[fluid=salt_water]": {
+    "alwaysWaterlogged": true,
+    "occluding": false
+  },
+}

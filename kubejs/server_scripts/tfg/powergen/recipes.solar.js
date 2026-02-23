@@ -22,12 +22,12 @@ function registerTFGSolarRecipes(event) {
 		{
 			S: 'ad_astra:photovoltaic_etrium_cell',
 			Z: 'gtceu:large_solar_panel',
-			W: '#gtceu:circuits/iv',
-			U: '#forge:gears/rocket_alloy_t1',
-			T: '#forge:gears/desh'
+			W: '#gtceu:circuits/ev',
+			U: '#forge:gears/rocket_alloy_t2',
+			T: '#forge:gears/ostrum_iodide'
 		}
 	).id('gtceu:shaped/large_solar_panel_tier2')
-
+	// Remember to change the Mk3 when Venus is out
 	event.shaped(
 		'gtceu:large_solar_panel_tier3',
 		['WSW', 'TZT', 'WUW'],
@@ -35,8 +35,8 @@ function registerTFGSolarRecipes(event) {
 			S: 'ad_astra:photovoltaic_vesnium_cell',
 			Z: 'gtceu:large_solar_panel_tier2',
 			W: '#gtceu:circuits/luv',
-			U: '#forge:gears/rocket_alloy_t1',
-			T: '#forge:gears/desh'
+			U: '#forge:gears/rocket_alloy_t2',
+			T: '#forge:gears/ostrum_iodide'
 		}
 	).id('gtceu:shaped/large_solar_panel_tier3')
 

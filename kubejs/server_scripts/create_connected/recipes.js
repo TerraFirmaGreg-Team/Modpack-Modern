@@ -71,4 +71,16 @@ const registerCreateConnectedRecipes = (event) => {
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
 
 	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
+
+	event.shaped('create_connected:kinetic_bridge', [
+		'BCB',
+		'AEA',
+		'DCD'
+	], {
+		A: 'create:brass_casing',
+		B: '#forge:plates/magnetic_iron',
+		C: '#forge:rods/magnetic_iron',
+		D: '#forge:small_gears/red_alloy',
+		E: '#forge:shafts'
+	}).id('create_connected:crafting/kinetics/kinetic_bridge')
 }

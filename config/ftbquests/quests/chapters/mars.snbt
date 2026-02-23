@@ -153,7 +153,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.heavy_ammoniacal_water.title}"
-			x: 15.0d
+			x: 15.5d
 			y: -4.0d
 		}
 		{
@@ -174,7 +174,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.soarer.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 20"
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 21"
 			icon: "wan_ancient_beasts:soarer_egg"
 			id: "2F711C064635EF2D"
 			optional: true
@@ -289,7 +289,7 @@
 			}]
 			title: "{quests.space_survival.mars_crops.title}"
 			x: 13.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0967CE7F5DFF5CF6"]
@@ -460,7 +460,7 @@
 			]
 			title: "{quests.space_survival.bulbkin_pie.title}"
 			x: 13.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["155F421FC2F39C3C"]
@@ -479,7 +479,7 @@
 		{
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.surfer.desc}"]
-			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 20"
 			id: "43EBECA48E341C47"
 			optional: true
 			shape: "heart"
@@ -577,6 +577,65 @@
 			title: "{quests.space_survival.mars_shields.title}"
 			x: 12.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			description: ["{quests.space_survival.charger.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 19"
+			icon: "wan_ancient_beasts:charger_egg"
+			id: "148C2DA8FB1D6DB1"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.charger.subtitle}"
+			tasks: [
+				{
+					icon: "wan_ancient_beasts:charger_egg"
+					id: "78EBECCA1C40A3BD"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.space_survival.charger.task}"
+					to_observe: "wan_ancient_beasts:charger"
+					type: "observation"
+				}
+				{
+					id: "33ADD26F6AA89CA7"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(wan_ancient_beasts:charger_armors)"
+						}
+					}
+					optional_task: true
+					title: "Any #wan_ancient_beasts:charger_armors"
+					type: "item"
+				}
+			]
+			title: "{quests.space_survival.charger.title}"
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5AC5AAB9B3758E30"]
+			description: ["{quests.space_survival.snatcher.desc}"]
+			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
+			icon: "wan_ancient_beasts:snatcher_egg"
+			id: "02A7FD58F462320F"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.space_survival.snatcher.subtitle}"
+			tasks: [{
+				icon: "wan_ancient_beasts:snatcher_egg"
+				id: "4AC531B94CBA93CE"
+				observe_type: 5
+				timer: 0L
+				title: "{quests.space_survival.snatchertask}"
+				to_observe: "wan_ancient_beasts:snatcher"
+				type: "observation"
+			}]
+			title: "{quests.space_survival.snatcher.title}"
+			x: 9.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["{quests.mars.subtitle}"]

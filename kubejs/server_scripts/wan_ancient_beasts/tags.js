@@ -22,7 +22,7 @@ const registerWABItemTags = (event) => {
 	event.removeAll('wan_ancient_beasts:paleontologist_common')
 	event.removeAll('wan_ancient_beasts:paleontologist_rare')
 	event.removeAll('wan_ancient_beasts:paleontologist_items')
-	event.removeAll('wan_ancient_beasts:eater_food')
+	event.removeAll('wan_ancient_beasts:meat_food')
 	
 	event.add('tfc:foods/raw_meats', 'wan_ancient_beasts:toxlacanth')
 	event.add('firmalife:foods/raw_fish', 'wan_ancient_beasts:toxlacanth')
@@ -38,8 +38,7 @@ const registerWABItemTags = (event) => {
 	event.add('tfc:foods/cooked_meats', 'wan_ancient_beasts:cooked_ancient_meat')
 	event.add('tfc:foods/meats', 'wan_ancient_beasts:cooked_ancient_meat')
 
-	event.add('wan_ancient_beasts:surfer_food', '#firmalife:foods/raw_fish')
-	event.add('wan_ancient_beasts:eater_food', '#tfg:martian_animal_foods')
+	event.add('wan_antcient_beasts:meat_food', '#tfc:foods/raw_meats')
 
 	// Eggs
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:eater_egg')
@@ -48,6 +47,9 @@ const registerWABItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:glider_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:soarer_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:surfer_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:snatcher_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:raider_egg')
+	event.add('tfg:martian_eggs', 'wan_ancient_beasts:charger_egg')
 }
 
 const registerWABEntityTypeTags = (event) => {
@@ -58,6 +60,11 @@ const registerWABEntityTypeTags = (event) => {
 	event.add('wan_ancient_beasts:eater_ignore', 'species:springling')
 	event.add('wan_ancient_beasts:eater_ignore', 'species:quake')
 
+	event.add('wan_ancient_beasts:raider_ignore', 'tfg:sniffer')
+	event.add('wan_ancient_beasts:raider_ignore', 'tfg:wraptor')
+	event.add('wan_ancient_beasts:raider_ignore', 'species:springling')
+	event.add('wan_ancient_beasts:raider_ignore', 'species:quake')
+
 }
 
 const registerWansAncientBeastsBiomeTags = (event) => {
@@ -66,6 +73,7 @@ const registerWansAncientBeastsBiomeTags = (event) => {
 	event.removeAll('wan_ancient_beasts:has_structure/ancient_nest');
 	event.removeAll('wan_ancient_beasts:has_structure/dead_coral');
 	event.removeAll('wan_ancient_beasts:has_structure/desert_ruins');
+	event.removeAll('wan_ancient_beasts:has_structure/desert_ruins_small');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_badlands');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_desert');
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_icespikes');
@@ -77,4 +85,7 @@ const registerWansAncientBeastsBiomeTags = (event) => {
 	event.removeAll('wan_ancient_beasts:has_structure/digsite_taiga');
 	event.removeAll('wan_ancient_beasts:has_structure/ice_spike_castle');
 	event.removeAll('wan_ancient_beasts:has_structure/mesa_temple');
+	event.removeAll('wan_ancient_beasts:has_structure/primal_log');
+	event.removeAll('wan_ancient_beasts:has_structure/ruined_castle');
+	event.removeAll('wan_ancient_beasts:has_structure/training_outpost');
 }

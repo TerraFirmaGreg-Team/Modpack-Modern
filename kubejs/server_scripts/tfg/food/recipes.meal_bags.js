@@ -53,7 +53,7 @@ function registerTFGMealBagRecipes(event) {
 		.itemInputs('1x tfg:used_foil_pack')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
 		.itemOutputs('1x tfg:clean_foil_pack')
-		.duration(200)
+		.duration(50)
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -68,7 +68,8 @@ function registerTFGMealBagRecipes(event) {
 		result: { item: 'tfg:clean_foil_pack' }
 	}).id('tfg:ae_transform/clean_foil_pack')
 
-	event.recipes.greate.splashing(['tfg:clean_foil_pack'], 'tfg:used_foil_pack')
+	event.recipes.greate.splashing(['tfg:clean_foil_pack'], ['tfg:used_foil_pack', Fluid.of('minecraft:water', 100)])
+		.recipeTier(0)
 		.id('tfg:splashing/clean_foil_pack')
 
 	event.shapeless('1x tfg:used_foil_pack', [

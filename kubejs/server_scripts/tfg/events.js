@@ -1,14 +1,15 @@
 "use strict";
 
-// TODO
 TFGServerEvents.dimensionalPowerConsumption(event => {
-	event["add(java.lang.String,double)"]("minecraft:overworld", 10000);
-	event["add(java.lang.String,double)"]("minecraft:the_nether", 20000);
-	event["add(java.lang.String,double)"]("ad_astra:earth_orbit", 20000);
-	event["add(java.lang.String,double)"]("ad_astra:moon", 50000);
-	event["add(java.lang.String,double)"]("ad_astra:moon_orbit", 50000);
-	event["add(java.lang.String,double)"]("ad_astra:mars", 100000);
-	event["add(java.lang.String,double)"]("ad_astra:mars_orbit", 100000);
+    event.add("minecraft:overworld",   10000);
+    event.add("minecraft:the_nether",  20000);
+    event.add("ad_astra:earth_orbit",  20000);
+    event.add("ad_astra:moon",         50000);
+    event.add("ad_astra:moon_orbit",   50000);
+    event.add("ad_astra:mars",        100000);
+    event.add("ad_astra:mars_orbit",  100000);
+    event.add("ad_astra:venus",       200000);
+    event.add("ad_astra:venus_orbit", 200000);
 });
 
 // Vase Sounds

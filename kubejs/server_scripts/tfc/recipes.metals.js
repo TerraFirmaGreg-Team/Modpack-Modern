@@ -308,10 +308,14 @@ function registerTFCMetalsRecipes(event) {
 				.itemOutputs(`1x tfc:ore/normal_${ore}`)
 				.duration(20)
 				.EUt(GTValues.VHA[GTValues.LV])
+
+			event.recipes.greate.splashing(
+				[`tfc:ore/normal_${ore}`],
+				[`1x tfc:deposit/${ore}/${stone}`, Fluid.of('minecraft:water', 100)]
+			)
+			.recipeTier(1)
+			.id(`tfg:splashing/${ore}/${stone}_deposit`)
 		})
 	})
 	//#endregion
-
-	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
-		.id('tfg:revert_wrought_iron_ingot')
 }

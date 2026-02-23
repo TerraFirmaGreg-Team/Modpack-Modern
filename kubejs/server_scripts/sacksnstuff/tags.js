@@ -45,4 +45,6 @@ function registerSNSItemTags(event) {
 
 	// Remove this tag to avoid confusion with the other lunchbox
 	event.removeAll('sns:lunchbox_food')
+
+	event.add('curios:belt', 'sns:quiver');
 }

@@ -126,7 +126,7 @@ function registerTFGClayRecipes(event) {
 	// Kaolinite Clay - regular smelting recipes can't have multiple inputs
 	event.recipes.gtceu.alloy_smelter('tfg:kaolinite')
 		.itemInputs('tfc:kaolin_clay')
-		.circuit(1)
+		.notConsumable('gtceu:ball_casting_mold')
 		.chancedOutput('tfc:powder/kaolinite', 2000, 0)
 		.duration(100)
 		.EUt(16)
@@ -134,6 +134,12 @@ function registerTFGClayRecipes(event) {
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
+		.itemOutputs('2x tfc:fire_clay')
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay2')
+		.itemInputs('tfc:powder/graphite', '4x tfc:kaolin_clay')
 		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])

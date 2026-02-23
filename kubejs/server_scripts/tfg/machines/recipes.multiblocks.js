@@ -120,12 +120,25 @@ function registerTFGMultiblockRecipes(event) {
 		'PTP'
 	], {
 		S: 'tfg:casings/machine_casing_vacuum_engine_intake',
-		Z: 'gtceu:iv_machine_hull',
-		W: '#gtceu:circuits/iv',
+		Z: 'gtceu:ev_machine_hull',
+		W: '#gtceu:circuits/ev',
 		U: '#forge:double_plates/stellite_100',
-		T: '#forge:single_cables/platinum',
-		P: 'gtceu:iv_electric_pump'
+		T: '#forge:single_cables/aluminium',
+		P: 'gtceu:ev_electric_pump'
 	}).addMaterialInfo().id('tfg:shaped/ostrum_linear_accelerator')
+
+	event.recipes.gtceu.shaped('tfg:heat_battery_mk1', [
+		'USU',
+		'WZW',
+		'PTP'
+	], {
+		S: 'tfg:casings/heat_pipe_casing',
+		Z: 'gtceu:ev_machine_hull',
+		W: '#gtceu:circuits/ev',
+		U: '#forge:dense_plates/silicon',
+		T: '#forge:single_cables/aluminium',
+		P: 'gtceu:hv_field_generator'
+	}).addMaterialInfo().id('tfg:shaped/heat_battery_mk1')
 
 	event.recipes.gtceu.assembler('tfg:ostrum_harvester')
 		.itemInputs(
@@ -174,6 +187,28 @@ function registerTFGMultiblockRecipes(event) {
 		U: 'gtceu:hv_field_generator',
 		Z: 'gtceu:ev_machine_hull'
 	}).addMaterialInfo().id('tfg:shaped/fission_reactor_mk1')
+
+	event.recipes.gtceu.shaped('deafission:fission_reactor_smr1', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: 'gtceu:atomic_casing',
+		W: '#gtceu:circuits/iv',
+		U: 'gtceu:ev_field_generator',
+		Z: 'gtceu:iv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/fission_reactor_smr1')
+
+	event.recipes.gtceu.shaped('tfg:smr_generator', [
+		'TUT',
+		'WZW',
+		'TUT'
+	], {
+		T: 'tfg:casings/machine_casing_desh_ptfe',
+		W: '#gtceu:circuits/iv',
+		U: 'gtceu:ev_field_generator',
+		Z: 'gtceu:iv_machine_hull'
+	}).addMaterialInfo().id('tfg:shaped/smr_generator')
 
 	event.recipes.gtceu.shaped('gtceu:nuclear_fuel_factory', [
 		'TUT',
@@ -227,8 +262,8 @@ function registerTFGMultiblockRecipes(event) {
 	event.remove({output: 'gtceu:active_transformer'})
 
 	event.recipes.gtceu.assembler('tfg:active_power_transformer')
-		.itemInputs('1x gtceu:iv_transformer_1a', '1x #gtceu:circuits/iv', '8x gtceu:uranium_triplatinum_single_wire',
-					'2x gtceu:hpic_chip')
+		.itemInputs('1x gtceu:ev_transformer_1a', '1x #gtceu:circuits/ev', '8x gtceu:uranium_triplatinum_single_wire',
+					'2x gtceu:mpic_chip')
 		.inputFluids(Fluid.of('gtceu:ostrum_iodide', 288))
 		.itemOutputs('tfg:active_power_transformer')
 		.duration(300)

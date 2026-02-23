@@ -12,6 +12,7 @@ function removeGTCEURecipes(event) {
 	global.GTCEU_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
+		TFGHelpers.clearMaterialInfo(item);
 	})
 
 	//#region Выход: Крошечная кучка камня
@@ -30,10 +31,8 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_sandstone_slab')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_stairs')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_slab')
-	removeMaceratorRecipe(event, 'macerate_granite')
-	removeMaceratorRecipe(event, 'macerate_diorite')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_slab')
-	removeMaceratorRecipe(event, 'macerate_andesite')
+
 	event.remove({ id: 'gtceu:shaped/stone_hammer' })
 	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
@@ -113,8 +112,18 @@ function removeGTCEURecipes(event) {
 	removeCutterRecipe(event, 'cut_deepslate_tile_into_slab_water')
 	removeCutterRecipe(event, 'cut_deepslate_tile_into_slab_distilled_water')
 
-	removeMaceratorRecipe(event, 'macerate_deepslate')
 	event.remove({ id: 'gtceu:rock_breaker/deepslate' })
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate')
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_deepslate');
+	TFGHelpers.clearMaterialInfo('minecraft:cobbled_deepslate');
+	TFGHelpers.clearMaterialInfo('minecraft:cobbled_deepslate_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:chiseled_deepslate');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_deepslate_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate_bricks');
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate_brick_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate_tiles');
+	TFGHelpers.clearMaterialInfo('minecraft:deepslate_tile_wall');
 
 	// #endregion
 
@@ -159,6 +168,14 @@ function removeGTCEURecipes(event) {
 	removeCutterRecipe(event, 'cut_polished_blackstone_brick_into_slab_distilled_water')
 
 	event.remove({ id: 'gtceu:rock_breaker/blackstone' })
+	TFGHelpers.clearMaterialInfo('minecraft:blackstone');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_bricks');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_brick_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:chiseled_polished_blackstone');
+	TFGHelpers.clearMaterialInfo('minecraft:blackstone_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_wall');
+	TFGHelpers.clearMaterialInfo('minecraft:blackstone_brick_wall');
 
 	// #endregion
 
@@ -472,7 +489,8 @@ function removeGTCEURecipes(event) {
 
 	//#region Выход: Пыль базальта
 
-	removeMaceratorRecipe(event, 'macerate_basalt')
+	TFGHelpers.clearMaterialInfo('minecraft:basalt')
+	TFGHelpers.clearMaterialInfo('minecraft:polished_basalt');
 
 	//#endregion
 
@@ -688,9 +706,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/bell' })
 	event.remove({ id: 'gtceu:assembler/armor_stand' })
 	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })
-	event.remove({ id: 'gtceu:assembler/treated_trapdoor_iron' })
-	event.remove({ id: 'gtceu:assembler/treated_trapdoor_steel' })
-	event.remove({ id: 'gtceu:assembler/treated_door' })
 	event.remove({ id: 'gtceu:assembler/barrel' })
 	event.remove({ id: 'gtceu:assembler/book_from_leather' })
 	event.remove({ id: 'gtceu:assembler/name_tag' })
@@ -750,6 +765,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_granite_red' })
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_echo_shard' })
 
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down' })
 	event.remove({ id: 'gtceu:chemical_bath/black_steel_cool_down_distilled_water' })
@@ -853,13 +869,12 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
 	removeMaceratorRecipe(event, 'macerate_end_stone_brick_wall');
 
+
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
-		'bamboo',
 		'polished_blackstone',
 		'light_weighted',
 		'heavy_weighted',
-		'treated'
 	]
 	MC_PRESSURE_PLATES.forEach(material => {	
 		event.remove({ id: `gtceu:shaped/${material}_pressure_plate` })
@@ -911,6 +926,11 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
 
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_magnesia_refractory_brick_to_nugget' })
+
+	event.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_calcite' })
+	event.remove({ id: 'gtceu:mixer/concrete_from_clay' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_clay' })
 }
 
 function removeMaceratorRecipe(event, id) {

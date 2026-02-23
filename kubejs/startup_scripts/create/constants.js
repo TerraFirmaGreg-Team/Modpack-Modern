@@ -68,7 +68,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:creative_fluid_tank',
     'create:unprocessed_obsidian_sheet',
     'create:creative_motor',
-    'create:wooden_bracket', 
     'create:red_sand_paper',
     'create:empty_blaze_burner',
     'create:minecart_contraption',

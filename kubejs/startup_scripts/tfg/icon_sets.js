@@ -37,7 +37,9 @@ function registerTFGIconSets(event) {
 		
 	event.create('nether_quartz').parent('quartz')
 
+    // Looks like VI vanadium
     event.create('noodle').parent('metallic')
+    // Looks like ad astra ostrum
     event.create('cereal_box').parent('bright')
 
     // Credits to Flare from the Cosmic Frontiers team
@@ -94,7 +96,6 @@ function modifyTFGIconSets(event) {
     GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Potin.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.Cupronickel.setMaterialIconSet(GTMaterialIconSet.SHINY)
-    GTMaterials.ManganesePhosphide.setMaterialIconSet(GTMaterialIconSet.DULL)
     GTMaterials.Osmium.setMaterialIconSet(GTMaterialIconSet.DULL)
     GTMaterials.Invar.setMaterialIconSet(GTMaterialIconSet.DULL)
     
@@ -144,18 +145,28 @@ function modifyTFGIconSets(event) {
     GTMaterials.Electrotine.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Bauxite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
 
+    // Superconductors get noodle
+    GTMaterials.ManganesePhosphide.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.MagnesiumDiboride.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.MercuryBariumCalciumCuprate.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.UraniumTriplatinum.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.SamariumIronArsenicOxide.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.IndiumTinBariumTitaniumCuprate.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.UraniumRhodiumDinaquadide.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    GTMaterials.RutheniumTriniumAmericiumNeutronate.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+    // Not a superconductor but it's where the icon comes from in the first place
+    GTMaterials.Vanadium.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
+
+    // All naquadah/neutronium/zirconium materials get chonky
     GTMaterials.Naquadah.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
     GTMaterials.NaquadahEnriched.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
     GTMaterials.Naquadria.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
     GTMaterials.UraniumRhodiumDinaquadide.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
-    GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
     GTMaterials.NaquadahAlloy.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
     GTMaterials.Neutronium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
-    GTMaterials.RutheniumTriniumAmericiumNeutronate.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
 
     GTMaterials.Zirconium.setMaterialIconSet(GTMaterialIconSet.getByName('chonky'))
-
-    GTMaterials.Vanadium.setMaterialIconSet(GTMaterialIconSet.getByName('noodle'))
 
     const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
 	$GreateMaterials.RoseQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))

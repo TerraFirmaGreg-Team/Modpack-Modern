@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
-
+/**
+ * 
+ * @param {Internal.LootModificationEventJS} event 
+ */
 function registerTFCLoots(event) {
 	// Hostile animals
 
@@ -9,6 +12,15 @@ function registerTFCLoots(event) {
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:black_bear')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 6], ['tfc:food/bear'])
+
+
+	event.addEntityLootModifier('tfc:panda')
+		.addWeightedLoot([8, 12], ['tfc:food/bear'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfc:panda')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 6], ['tfc:food/bear'])
 
@@ -343,7 +355,14 @@ function registerTFCLoots(event) {
 
 	event.addBlockLootModifier('minecraft:ice')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
+	
+	event.addBlockLootModifier('minecraft:ice')
+		.not(n => n.matchMainHand("#tfg:silk_harvest_ice"))
 		.addLoot('firmalife:ice_shavings')
+
+	event.addBlockLootModifier('minecraft:ice')
+		.matchMainHand("#tfg:silk_harvest_ice")
+		.addLoot('minecraft:ice');
 
 	event.addBlockLootModifier('minecraft:packed_ice')
 		.not(n => n.matchMainHand("#forge:tools/saws"))
