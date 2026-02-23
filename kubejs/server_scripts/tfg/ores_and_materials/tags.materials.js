@@ -25,4 +25,11 @@ function registerTFGMaterialItemTags(event) {
 	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/ruby')
 	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/red_garnet')
 	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/yellow_garnet')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/lapis')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/sodalite')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/lazurite')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/blue_topaz')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/topaz')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/emerald')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/olivine')
 }

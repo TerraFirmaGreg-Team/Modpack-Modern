@@ -7,7 +7,7 @@ function registerTFGBouleMaterials(event) {
 		.color(0x8383AE)
 		.secondaryColor(0x707078)
 		.gas()
-		.components('1x silicon', '4x hydrogen')
+		.components('4x hydrogen', '1x silicon')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:chlorosilane')
@@ -34,7 +34,7 @@ function registerTFGBouleMaterials(event) {
 	event.create('tfg:polysilicon')
 		.color(0x8C8C94)
 		.secondaryColor(0x10293b)
-		.iconSet(GTMaterialIconSet.METALLIC)
+		.iconSet(GTMaterialIconSet.BRIGHT)
 		.liquid(new GTFluidBuilder().temperature(2273))
 		.dust()
 		.components('1x silicon')
