@@ -12897,6 +12897,74 @@
             ]
         },
         {
+            "pakku_id": "DER7HmNR9pm9t8hu",
+            "pakku_links": [
+                "64uacGcEw697jVGs",
+                "AqNG8HNM9pfy1ges"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tfc-gourmet",
+                "modrinth": "tfc_gourmet"
+            },
+            "name": {
+                "curseforge": "TFC Gourmet",
+                "modrinth": "TFC Gourmet"
+            },
+            "id": {
+                "curseforge": "1363944",
+                "modrinth": "ERme2o65"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_gourmet-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7664/544/tfc_gourmet-1.5.2.jar",
+                    "id": "7664544",
+                    "parent_id": "1363944",
+                    "hashes": {
+                        "sha1": "9f0d7e9a664a28cafc2fbd4425c81657df3af54b",
+                        "md5": "03ed7ba1b04271ea97899c7151d56ca8"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "453394"
+                    ],
+                    "size": 424762,
+                    "date_published": "2026-02-22T18:16:05.003Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfc_gourmet-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/zHyjWzSk/tfc_gourmet-1.5.2.jar",
+                    "id": "zHyjWzSk",
+                    "parent_id": "ERme2o65",
+                    "hashes": {
+                        "sha512": "21274e9606ec2ba0b487769ff0f18a0ea80f1cf78611287c4c688ce3e8bac6f24412fea2f8c58294dd9468667048b999d1efd2609de3d39763ffe9c6e8b570b1",
+                        "sha1": "9f0d7e9a664a28cafc2fbd4425c81657df3af54b"
+                    },
+                    "required_dependencies": [],
+                    "size": 424762,
+                    "date_published": "2026-02-22T18:16:34.270273Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LflWIJPuCczYgYtt",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -12959,74 +13027,6 @@
                     "required_dependencies": [],
                     "size": 153640,
                     "date_published": "2025-09-29T10:29:24.391640Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "5Hw8y3XluL4fjZ65",
-            "pakku_links": [
-                "AqNG8HNM9pfy1ges",
-                "64uacGcEw697jVGs"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "tfc-gurman",
-                "modrinth": "tfc_gourmet"
-            },
-            "name": {
-                "curseforge": "TFC Gurman",
-                "modrinth": "TFC Gourmet"
-            },
-            "id": {
-                "curseforge": "1363944",
-                "modrinth": "ERme2o65"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tfc_gourmet-1.4.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7564/444/tfc_gourmet-1.4.2.jar",
-                    "id": "7564444",
-                    "parent_id": "1363944",
-                    "hashes": {
-                        "sha1": "d4c2f1eb89330129fdc1e4ee78f61f1130d83fe5",
-                        "md5": "5e39aeac6e9a02f282140ef87c156de4"
-                    },
-                    "required_dependencies": [
-                        "453394",
-                        "302973"
-                    ],
-                    "size": 521700,
-                    "date_published": "2026-02-02T03:07:46.393Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "tfc_gourmet-1.4.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/1ns5Lyk4/tfc_gourmet-1.4.3.jar",
-                    "id": "1ns5Lyk4",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "7fef1e460dfb20478d959efad82093de0c538aa16b8b6294dcd057f06da82dc6ad90c6e1c5adfa275f600de8c04868e952f46b856b36d61402383bdfacac61ec",
-                        "sha1": "103326499c4a574c87474a5af52f97d7a730071f"
-                    },
-                    "required_dependencies": [],
-                    "size": 398088,
-                    "date_published": "2026-02-02T19:04:40.071653Z"
                 }
             ]
         },
