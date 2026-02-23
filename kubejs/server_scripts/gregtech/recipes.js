@@ -124,6 +124,27 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(4)
 
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum' })
+	event.remove({ id: 'gtceu:alloy_blast_smelter/uranium_triplatinum_gas' })
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*150)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(2)
+
+	event.recipes.gtceu.alloy_blast_smelter('tfg:uranium_triplatinum_gas')
+		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
+		.inputFluids(Fluid.of('gtceu:helium', 400), Fluid.of('gtceu:radon', 10))
+		.outputFluids(Fluid.of('gtceu:molten_uranium_triplatinum', 576))
+		.duration(20*100.5)
+		.blastFurnaceTemp(4400)
+		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(12)
+
 	// Move Superconductor to EV and make them cheap
 
 	event.remove({ id: 'gtceu:assembler/laser_cable' })
@@ -409,21 +430,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(30 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Ladder consistency
-	
-	const nonAdAstraLumber = Ingredient.of('#tfc:lumber').subtract('tfg:wood/lumber/aeronos').subtract('tfg:wood/lumber/strophar');
-
-	event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
-
-	event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
-
-	event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
-		.itemInputs(nonAdAstraLumber.withCount(7))
-		.itemOutputs('8x minecraft:ladder')
-		.circuit(7)
-		.duration(40)
-		.EUt(4)
-
 	// Pills
 	event.remove({ id: 'gtceu:canner/pack_paracetamol' })
 	event.remove({ id: 'gtceu:canner/pack_rad_away' })
@@ -454,4 +460,20 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless('gtceu:magnetic_iron_plate', ['#forge:plates/iron', '8x minecraft:redstone'])
 	event.shapeless('gtceu:magnetic_iron_bolt', ['#forge:bolts/iron', '2x minecraft:redstone'])
 
+	// Reverting
+	event.smelting('minecraft:iron_ingot', '#forge:ingots/wrought_iron')
+		.id('tfg:revert_wrought_iron_ingot')
+	event.smelting('minecraft:copper_ingot', '#forge:ingots/annealed_copper')
+		.id('tfg:revert_annealed_copper_ingot')
+
+	// Heavy Oil at LV
+
+	event.remove({ id: 'gtceu:distillery/distill_heavy_oil_to_sulfuric_heavy_fuel' })
+
+	event.recipes.gtceu.distillery('tfg:sulfuric_heavy_fuel')
+		.inputFluids(Fluid.of('gtceu:oil_heavy', 50))
+		.outputFluids(Fluid.of('gtceu:sulfuric_heavy_fuel', 125))
+		.duration(20*2)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
 }

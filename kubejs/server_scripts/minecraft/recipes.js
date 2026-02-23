@@ -1001,6 +1001,12 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:glow_ink_sac')
 		.duration(40)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shapeless("minecraft:glow_ink_sac", [
+      "minecraft:glowstone_dust",
+      "minecraft:glowstone_dust",
+      "#forge:dyes"])
+    .id("tfg:shapeless/glow_ink_sac");
 		
 	//#endregion
 
@@ -1053,6 +1059,8 @@ const registerMinecraftRecipes = (event) => {
 			.circuit(3)
 			.duration(50)
 			.EUt(2)
+
+		TFGHelpers.registerMaterialInfo(`minecraft:${x.type}_pressure_plate`, [GTMaterials.Air, 1])
 	})
 
 	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])

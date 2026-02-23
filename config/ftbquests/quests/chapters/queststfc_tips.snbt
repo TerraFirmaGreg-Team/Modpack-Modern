@@ -1437,7 +1437,11 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["1766C916084261AA"]
+			dependencies: [
+				"1766C916084261AA"
+				"4C444814F1C7B600"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.unrefined_paper.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/papermaking"
 			id: "4CD3F04793CE47A2"

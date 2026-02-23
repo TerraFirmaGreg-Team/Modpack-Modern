@@ -10,7 +10,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:tiny_wheat_dust",
     "gtceu:dough",
 
-    // Bronze Machines
+    // Early Machines
     "gtceu:bronze_brick_casing",
     "gtceu:lp_steam_miner",
     "gtceu:lp_steam_extractor",
@@ -24,6 +24,7 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:lp_steam_liquid_boiler",
     "gtceu:lp_steam_solar_boiler",
     "gtceu:charcoal_pile_igniter",
+    "gtceu:hp_steam_extractor",
 
     // Fishers
     "gtceu:lv_fisher",

@@ -58,6 +58,7 @@
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.package_filter.desc}"]
 			id: "0076B09B874EF126"
+			optional: true
 			subtitle: "{quests.create_logistics.package_filter.subtitle}"
 			tasks: [{
 				id: "56A7B04680CCC397"
@@ -95,6 +96,7 @@
 				"{quests.create_logistics.postbox.desc.2}"
 			]
 			id: "175CE4FE780E9994"
+			optional: true
 			subtitle: "{quests.create_logistics.postbox.subtitle}"
 			tasks: [{
 				id: "63CFD63E38058034"
@@ -241,6 +243,8 @@
 				"{quests.create_logistics.stock_ticker.desc.3}"
 			]
 			id: "341E2F290344BEEE"
+			shape: "gear"
+			size: 3.0d
 			subtitle: "{quests.create_logistics.stock_ticker.subtitle}"
 			tasks: [{
 				id: "6D34CC70CB8465EF"
@@ -248,8 +252,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.stock_ticker.title}"
-			x: 8.5d
-			y: -2.5d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -259,6 +263,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.create_logistics.redstone_requester.desc}"]
 			id: "3F44CFF8A6018F3E"
+			optional: true
 			subtitle: "{quests.create_logistics.redstone_requester.subtitle}"
 			tasks: [{
 				id: "3A3E75B8A2755E29"
@@ -266,8 +271,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.redstone_requester.title}"
-			x: 8.5d
-			y: 0.5d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -313,6 +318,7 @@
 				"{quests.create_logistics.tablecloths.desc.2}"
 			]
 			id: "546FC3BD93E54913"
+			optional: true
 			subtitle: "{quests.create_logistics.tablecloths.subtitle}"
 			tasks: [{
 				id: "75930EC6F9139FD5"
@@ -320,13 +326,14 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.tablecloths.title}"
-			x: 8.5d
-			y: -1.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.bottler.desc}"]
 			id: "487D05818B3E9D19"
+			optional: true
 			subtitle: "{quests.create_logistics.bottler.subtitle}"
 			tasks: [{
 				id: "3D6CCC6C3853CD9C"
