@@ -3071,6 +3071,69 @@
             ]
         },
         {
+            "pakku_id": "NONadCSyrDp2oF0G",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "configuration",
+                "modrinth": "configuration"
+            },
+            "name": {
+                "curseforge": "Configuration",
+                "modrinth": "Configuration"
+            },
+            "id": {
+                "curseforge": "444699",
+                "modrinth": "3WjjSM5O"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "configuration-forge-1.20.1-3.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5840/405/configuration-forge-1.20.1-3.1.0.jar",
+                    "id": "5840405",
+                    "parent_id": "444699",
+                    "hashes": {
+                        "sha1": "8757a9f1d47f48463765d1d202cdadc41c84f6b0",
+                        "md5": "3d40159d0862913693a698a17e21161f"
+                    },
+                    "required_dependencies": [],
+                    "size": 439661,
+                    "date_published": "2024-10-24T00:06:37.763Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "configuration-forge-1.20.1-3.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/3WjjSM5O/versions/h7CBg2Oe/configuration-forge-1.20.1-3.1.0.jar",
+                    "id": "h7CBg2Oe",
+                    "parent_id": "3WjjSM5O",
+                    "hashes": {
+                        "sha512": "444f4e502fec76208a4d1606bf2aedab3999e13171033720ea7fe56a6e2f28c3c817badc5592da17a4925a63e3502155c37ed0a4de2d2789106c72541ca99edf",
+                        "sha1": "8757a9f1d47f48463765d1d202cdadc41c84f6b0"
+                    },
+                    "required_dependencies": [],
+                    "size": 439661,
+                    "date_published": "2024-10-24T00:08:06.877314Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "oB3af5YYb5fCmYxM",
             "type": "MOD",
             "side": "BOTH",
@@ -7256,6 +7319,74 @@
                     "required_dependencies": [],
                     "size": 18204198,
                     "date_published": "2026-02-14T20:16:50.733016Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "OtgfNTzqVoq1a5Vi",
+            "pakku_links": [
+                "NONadCSyrDp2oF0G",
+                "WN9DdLqsRKVeZIc9"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "gregtech-modern-utilities",
+                "modrinth": "gregtech-modern-utilities"
+            },
+            "name": {
+                "curseforge": "GregTech Modern Utilities",
+                "modrinth": "GregTech Modern Utilities"
+            },
+            "id": {
+                "curseforge": "1235020",
+                "modrinth": "KMnOsM3N"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gtmutils-2.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7612/516/gtmutils-2.8.0.jar",
+                    "id": "7612516",
+                    "parent_id": "1235020",
+                    "hashes": {
+                        "sha1": "84bcf3b9bfd475494d8964e0497490e19f46436b",
+                        "md5": "fb63574e5af630b8e3ba18cd941fe0b4"
+                    },
+                    "required_dependencies": [
+                        "444699",
+                        "890405"
+                    ],
+                    "size": 569204,
+                    "date_published": "2026-02-12T02:42:38.163Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "gtmutils-2.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/KMnOsM3N/versions/4UlKFJVD/gtmutils-2.8.0.jar",
+                    "id": "4UlKFJVD",
+                    "parent_id": "KMnOsM3N",
+                    "hashes": {
+                        "sha512": "96fe91a0b0fcc8e6d94c6300a7b5a000742b7aa9d73d567ecbebb5b5b006c15660574cafee21b3ba152a5a58ebbdd738084cbe6e3c2c8d3cfda2aa4e1bbca54d",
+                        "sha1": "84bcf3b9bfd475494d8964e0497490e19f46436b"
+                    },
+                    "required_dependencies": [],
+                    "size": 569204,
+                    "date_published": "2026-02-12T02:42:39.880894Z"
                 }
             ]
         },

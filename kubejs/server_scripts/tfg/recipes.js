@@ -60,6 +60,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGElectronicComponentsRecipes(event)
 	registerTFGBakeliteRecipes(event)
 	registerTFGCoilRecipes(event)
+	registerTFGBouleRecipes(event)
 
 	registerTFGEarlyGasRecipes(event)
 	registerTFGBoilerRecipes(event)
@@ -93,4 +94,7 @@ const registerTFGRecipes = (event) => {
 
 	registerTFGVenusRecipes(event)
 	registerTFGBiochemRecipes(event)
+
+	registerTFGEtchingRecipes(event)
+	registerTFGMVMaterialRecipes(event)
 }

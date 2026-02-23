@@ -33,6 +33,7 @@ const registerTFGItems = (event) => {
 	event.create('tfg:cryo_fluix_pearl')
 	event.create('tfg:uv_led')
 	event.create('tfg:smd_uv_led')
+	event.create('tfg:silicon_seed_crystal')
 
 	// Molds
 	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
@@ -59,4 +60,15 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:loaded_resin')
 		.texture('tfg:item/btx/loaded_resin')
+
+	// Add New Ceramic Circuit Board
+/*
+	event.create('tfg:ceramic_circuit_board')
+		.texture('tfg:item/ceramic_circuit_board')
+
+	event.create('tfg:ceramic_printed_circuit_board')
+		.texture('tfg:item/ceramic_printed_circuit_board')
+*/
+	event.create('tfg:mo_activated_sic_substrate')
+		.texture('tfg:item/mo_activated_sic_substrate')
 }

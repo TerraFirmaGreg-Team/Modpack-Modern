@@ -1,0 +1,35 @@
+// priority: 0
+"use strict";
+
+function registerTFGMaterialItemTags(event) {
+	
+	// Platline
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
+	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
+	
+	// Crafting components
+	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
+	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
+	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
+
+	// Gem rods for boules
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/amethyst')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/opal')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/diamond')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/sapphire')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/green_sapphire')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/ruby')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/red_garnet')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/yellow_garnet')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/lapis')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/sodalite')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/lazurite')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/blue_topaz')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/topaz')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/emerald')
+	event.add('tfg:silicon_seed_crystal_holder_rods', '#forge:rods/olivine')
+}

@@ -450,31 +450,31 @@ const registerTooltips = (event) => {
 
 	// Drink effects
 	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
@@ -502,7 +502,7 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
-
+/*
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
 	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
@@ -514,4 +514,5 @@ const registerTooltips = (event) => {
 		text.remove(keyToRemove);
 		text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 	})
+*/
 }
