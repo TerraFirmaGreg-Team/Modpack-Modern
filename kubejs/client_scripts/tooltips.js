@@ -450,31 +450,31 @@ const registerTooltips = (event) => {
 
 	// Drink effects
 	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
