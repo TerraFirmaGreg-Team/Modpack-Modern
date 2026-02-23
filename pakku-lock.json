@@ -9763,7 +9763,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.16.27-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.28-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9772,20 +9772,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7541/536/moonlight-1.20-2.16.27-forge.jar",
-                    "id": "7541536",
+                    "url": "https://edge.forgecdn.net/files/7664/875/moonlight-1.20-2.16.28-forge.jar",
+                    "id": "7664875",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "0a1b384ec20d63e94c56123b53e264dc2afe5b17",
-                        "md5": "7e819bab11a4cf9973d0e24fb52c367b"
+                        "sha1": "c2def460fc3b99804331228b9ca0e48063578c57",
+                        "md5": "16b9f89e07b2c567c610881f784cf6d1"
                     },
                     "required_dependencies": [],
-                    "size": 1392973,
-                    "date_published": "2026-01-28T16:55:09.907Z"
+                    "size": 1393921,
+                    "date_published": "2026-02-22T19:33:14.230Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "moonlight-1.20-2.16.27-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.28-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9794,16 +9794,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/lrpPgviq/moonlight-1.20-2.16.27-forge.jar",
-                    "id": "lrpPgviq",
+                    "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/4f5Vm2TE/moonlight-1.20-2.16.28-forge.jar",
+                    "id": "4f5Vm2TE",
                     "parent_id": "twkfQtEc",
                     "hashes": {
-                        "sha512": "30b9a16c4643bbbf643304e14d524f72f7aa2343317ba40e136b88a433d2110dc727b7747003126dc9a220e18b5da69585b24c8b3135844ddeef07e5d6006afa",
-                        "sha1": "0a1b384ec20d63e94c56123b53e264dc2afe5b17"
+                        "sha512": "479983751117a01e3db3825a0960030e330b690aaa680301f2a40d43452f29c13c49fcf5f08e8d2cc7b6ba0953863605ec3e620ca70995afa4be024ea9b9be70",
+                        "sha1": "c2def460fc3b99804331228b9ca0e48063578c57"
                     },
                     "required_dependencies": [],
-                    "size": 1392973,
-                    "date_published": "2026-01-28T16:55:17.211884Z"
+                    "size": 1393921,
+                    "date_published": "2026-02-22T19:35:57.100230Z"
                 }
             ]
         },
@@ -13028,6 +13028,74 @@
             ]
         },
         {
+            "pakku_id": "DER7HmNR9pm9t8hu",
+            "pakku_links": [
+                "64uacGcEw697jVGs",
+                "AqNG8HNM9pfy1ges"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tfc-gourmet",
+                "modrinth": "tfc_gourmet"
+            },
+            "name": {
+                "curseforge": "TFC Gourmet",
+                "modrinth": "TFC Gourmet"
+            },
+            "id": {
+                "curseforge": "1363944",
+                "modrinth": "ERme2o65"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_gourmet-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7664/544/tfc_gourmet-1.5.2.jar",
+                    "id": "7664544",
+                    "parent_id": "1363944",
+                    "hashes": {
+                        "sha1": "9f0d7e9a664a28cafc2fbd4425c81657df3af54b",
+                        "md5": "03ed7ba1b04271ea97899c7151d56ca8"
+                    },
+                    "required_dependencies": [
+                        "302973",
+                        "453394"
+                    ],
+                    "size": 424762,
+                    "date_published": "2026-02-22T18:16:05.003Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfc_gourmet-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/zHyjWzSk/tfc_gourmet-1.5.2.jar",
+                    "id": "zHyjWzSk",
+                    "parent_id": "ERme2o65",
+                    "hashes": {
+                        "sha512": "21274e9606ec2ba0b487769ff0f18a0ea80f1cf78611287c4c688ce3e8bac6f24412fea2f8c58294dd9468667048b999d1efd2609de3d39763ffe9c6e8b570b1",
+                        "sha1": "9f0d7e9a664a28cafc2fbd4425c81657df3af54b"
+                    },
+                    "required_dependencies": [],
+                    "size": 424762,
+                    "date_published": "2026-02-22T18:16:34.270273Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LflWIJPuCczYgYtt",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -13090,74 +13158,6 @@
                     "required_dependencies": [],
                     "size": 153640,
                     "date_published": "2025-09-29T10:29:24.391640Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "5Hw8y3XluL4fjZ65",
-            "pakku_links": [
-                "AqNG8HNM9pfy1ges",
-                "64uacGcEw697jVGs"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "tfc-gurman",
-                "modrinth": "tfc_gourmet"
-            },
-            "name": {
-                "curseforge": "TFC Gurman",
-                "modrinth": "TFC Gourmet"
-            },
-            "id": {
-                "curseforge": "1363944",
-                "modrinth": "ERme2o65"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tfc_gourmet-1.4.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7564/444/tfc_gourmet-1.4.2.jar",
-                    "id": "7564444",
-                    "parent_id": "1363944",
-                    "hashes": {
-                        "sha1": "d4c2f1eb89330129fdc1e4ee78f61f1130d83fe5",
-                        "md5": "5e39aeac6e9a02f282140ef87c156de4"
-                    },
-                    "required_dependencies": [
-                        "453394",
-                        "302973"
-                    ],
-                    "size": 521700,
-                    "date_published": "2026-02-02T03:07:46.393Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "tfc_gourmet-1.4.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/1ns5Lyk4/tfc_gourmet-1.4.3.jar",
-                    "id": "1ns5Lyk4",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "7fef1e460dfb20478d959efad82093de0c538aa16b8b6294dcd057f06da82dc6ad90c6e1c5adfa275f600de8c04868e952f46b856b36d61402383bdfacac61ec",
-                        "sha1": "103326499c4a574c87474a5af52f97d7a730071f"
-                    },
-                    "required_dependencies": [],
-                    "size": 398088,
-                    "date_published": "2026-02-02T19:04:40.071653Z"
                 }
             ]
         },
@@ -14286,7 +14286,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.23.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.24.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14295,23 +14295,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7659/148/TerraFirmaGreg-Core-Modern-0.8.23.jar",
-                    "id": "7659148",
+                    "url": "https://edge.forgecdn.net/files/7665/282/TerraFirmaGreg-Core-Modern-0.8.24.jar",
+                    "id": "7665282",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "756b4a903a9ab41e467244dd06fc5bce60678f45",
-                        "md5": "e35e6b8c9c02c43bd77d84d0ba7347d8"
+                        "sha1": "230479208543fa37aabdf3072fb5f788496e61b2",
+                        "md5": "073b9343ed834bd694bca06c361b0e89"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 9652681,
-                    "date_published": "2026-02-21T17:24:31.547Z"
+                    "size": 9654002,
+                    "date_published": "2026-02-22T21:24:01.647Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.23.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.24.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14320,19 +14320,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/TGD5fKZ9/TerraFirmaGreg-Core-Modern-0.8.23.jar",
-                    "id": "TGD5fKZ9",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/d763CqNc/TerraFirmaGreg-Core-Modern-0.8.24.jar",
+                    "id": "d763CqNc",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "dbcffcba1f16084898a10fda94cd8ff8ef1c429cc8e8bbbcbef71e7e0c9b34e8fc608e0e2c83bd0abaa94e06697359eae1063793806d516654f815c9af4d0d62",
-                        "sha1": "756b4a903a9ab41e467244dd06fc5bce60678f45"
+                        "sha512": "8cd4986fb55dc09014e6eb3271026fadc4204034717942710057bcc07ed1e7505c0343f94cf926e26865215943de6c82678c42b683fa242c06dc8e1b476bfb67",
+                        "sha1": "230479208543fa37aabdf3072fb5f788496e61b2"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 9652681,
-                    "date_published": "2026-02-21T17:24:37.396592Z"
+                    "size": 9654002,
+                    "date_published": "2026-02-22T21:24:06.627024Z"
                 }
             ]
         },

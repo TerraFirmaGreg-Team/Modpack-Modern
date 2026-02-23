@@ -3,12 +3,6 @@
 
 function registerTFCGurmanRecipes(event) {
 
-	let deprecated = Ingredient.of('#tfc_gourmet:deprecated_foods').itemIds.toArray();
-	deprecated.forEach(oldID => {
-		let newID = `${oldID}`.replace(/tfc_gurman:/g, 'tfc_gourmet:');
-		event.shapeless(newID, oldID);
-	})
-
 	//#region Food Oven Recipes
 
 	global.cookingRecipe(event, 'margarita_pizza', 'tfc_gourmet:raw_margarita_pizza', 'tfc_gourmet:margarita_pizza');
@@ -123,7 +117,7 @@ function registerTFCGurmanRecipes(event) {
 
 	// Kvass
 	global.processorRecipe(event, 'kvass', 2400, GTValues.VHA[GTValues.LV], {
-		itemInputs: ['2x #tfc:foods/grains'],
+		itemInputs: ['2x #tfc_gourmet:foods/kvass_grains'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gourmet:kvass 1000'],
 		circuit: 2
@@ -470,6 +464,15 @@ function registerTFCGurmanRecipes(event) {
 		itemOutputs: ['3x tfc_gourmet:fresh_onion_soup'],
 		circuit: 20,
 		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:fresh_onion_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
+	// French onion soup with toast
+	global.processorRecipe(event, 'potato_stew', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/potato', '#tfc:foods/raw_meats', 'tfc:food/onion'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gourmet:potato_stew'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:potato_stew').simpleModifier('tfg:force_add_bowl').copyOldestFood()
 	});
 
 	// Raw Croissants
