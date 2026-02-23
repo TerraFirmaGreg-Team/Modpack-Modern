@@ -34,7 +34,8 @@ function registerTFGCoilMaterials(event) {
 		.secondaryColor(0xdfe5aa)
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.ingot()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_PLATE)
 
 	// RTM
 
