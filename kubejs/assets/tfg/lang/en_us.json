@@ -5220,5 +5220,26 @@
   "quests.tfg_tips.tools_tips.brick_roads.desc": "These materials—when applied to base course—form roads which give a &b&l20%%&r&r boost to walking speed.",
   "quests.tfg_tips.tools_tips.concrete_roads.title": "Concrete Roads",
   "quests.tfg_tips.tools_tips.concrete_roads.subtitle": "Almost worth all the effort.",
-  "quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions."
+  "quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions.",
+
+  "block.tfg.oxygen_distributor": "Oxygen Distributor",
+  "tfg.machine.oxygen_distributor.idle": "Idle",
+  "tfg.machine.oxygen_distributor.size": "Size: %s blocks",
+  "tfg.machine.oxygen_distributor.consumption": "Consuming %s mB/t",
+  "tfg.machine.oxygen_distributor.find_leak": "Trace leak",
+  "tfg.machine.oxygen_distributor.fill_suit": "Refill suit oxygen",
+  "tfg.machine.oxygen_distributor.status": "Status: ",
+  "tfg.machine.oxygen_distributor.status.sealed": "Sealed",
+  "tfg.machine.oxygen_distributor.status.breached": "Breached",
+  "tfg.machine.oxygen_distributor.status.volume_limit": "Volume limit exceeded (%s)",
+  "tfg.machine.oxygen_distributor.status.too_wide": "Room too wide",
+  "tfg.machine.oxygen_distributor.status.chunk_unloaded": "Chunk unloaded",
+  "tfg.machine.oxygen_distributor.status.scanning": "Scanning...",
+  "tfg.machine.oxygen_distributor.status.restoring": "Restoring...",
+
+  "block.tfg.space_heater": "Space Heater",
+  "tfg.machine.space_heater.idle": "Idle",
+  "tfg.machine.space_heater.active": "Active",
+  "tfg.machine.space_heater.radius_label": "Radius:",
+  "tfg.machine.space_heater.max_radius": "Max radius: %s"
 }
