@@ -53,6 +53,8 @@ const registerTFGMaterials = (event) => {
 	registerTFGTungstenMaterials(event);
 	registerTFGZirconiumMaterials(event);
 
+	registerTFGGemSlurries(event);
+
 
 	// Crafting components
 

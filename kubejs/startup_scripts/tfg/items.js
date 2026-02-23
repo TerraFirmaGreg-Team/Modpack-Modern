@@ -71,6 +71,20 @@ const registerTFGItems = (event) => {
 */
 	event.create('tfg:mo_activated_sic_substrate')
 		.texture('tfg:item/mo_activated_sic_substrate')
+	
+	event.create('tfg:copper_bonded_al2o3_pcb')
+		.texture('tfg:item/copper_bonded_al2o3_pcb')
+
+	event.create('tfg:chromium_bonded_beo_pcb')
+		.texture('tfg:item/chromium_bonded_beo_pcb')
+
+	// Add New Lenses Support
+
+	event.create('tfg:optical_borosilicate_blank')
+		.texture('tfg:item/optical_borosilicate_blank')
+
+	event.create('tfg:worked_optical_borosilicate_blank')
+		.texture('tfg:item/worked_optical_borosilicate_blank')
 
 	// Temporary
 	event.create('gtceu:rose_quartz_dust').texture('tfg:item/deprecated')
