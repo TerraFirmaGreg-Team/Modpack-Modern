@@ -1,5 +1,5 @@
 base_url: "https://api.crowdin.com"
-base_path: "./kubejs/assets"
+base_path: "."
 
 # For interacting with Crowdin locally (via CLI), set these environment variables to their proper values
 project_id_env: "CROWDIN_ID"
@@ -15,7 +15,7 @@ commit_message: "[translation] New translations"
 preserve_hierarchy: true
 
 files:
-  - source: "/*/lang/en_us.json"
+  - source: "/kubejs/assets/*/lang/en_us.json"
     # Unfortunately, Crowdin doesn't have a placeholder which matches Minecraft's expected naming scheme: underscores
     # with lowercase letters (since resource location are required to be fully lowercase).
     #
@@ -26,7 +26,7 @@ files:
     # ** MAKE SURE YOU ADD THE APPROPRIATE CUSTOM LANGUAGE MAPPING FOR THE PLACEHOLDER. **
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
     update_option: "update_without_changes"
-    #dest: "/messages.%file_extension%"
+    dest: "/messages.%file_extension%"
     
     languages_mapping:
       locale_with_underscore:

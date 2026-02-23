@@ -159,7 +159,7 @@
   "tooltip.ad_astra.max_generation": "Макс.: %s FE/т",
   "tooltip.ad_astra.max_fluid_in": "Макс. вхід: %s mB/т",
   "tooltip.ad_astra.max_fluid_out": "Макс. вихід: %s mB/т",
-  "tooltip.ad_astra.fluid": "%s мВ / %s мВ %s",
+  "tooltip.ad_astra.fluid": "%s mB / %s mB %s",
   "tooltip.ad_astra.fluid_generation_per_iteration": "Генерує %s mB за ітерацію",
   "tooltip.ad_astra.fluid_in": "Вхід: %s mB/т",
   "tooltip.ad_astra.fluid_out": "Вихід: %s mB/т",
