@@ -61,6 +61,17 @@ const registerTFGItems = (event) => {
 	event.create('tfg:loaded_resin')
 		.texture('tfg:item/btx/loaded_resin')
 
+	// Add New Ceramic Circuit Board
+/*
+	event.create('tfg:ceramic_circuit_board')
+		.texture('tfg:item/ceramic_circuit_board')
+
+	event.create('tfg:ceramic_printed_circuit_board')
+		.texture('tfg:item/ceramic_printed_circuit_board')
+*/
+	event.create('tfg:mo_activated_sic_substrate')
+		.texture('tfg:item/mo_activated_sic_substrate')
+
 	// Temporary
 	event.create('gtceu:rose_quartz_dust').texture('tfg:item/deprecated')
 	event.create('gtceu:tiny_rose_quartz_dust').texture('tfg:item/deprecated')
