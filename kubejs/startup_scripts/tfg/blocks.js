@@ -23,7 +23,7 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.soundType('stone')
 		.mapColor('metal')
-		.strength(3)
+		.hardness(3)
 		.fullBlock(false)
 		.box(1, 0, 1, 15, 16, 15)
 
