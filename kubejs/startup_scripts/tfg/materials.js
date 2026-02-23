@@ -116,6 +116,11 @@ const registerTFGMaterials = (event) => {
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
+		.flags(GTMaterialFlags.GENERATE_PLATE)
+
+	// #endregion
+
+	// #region Material for Coils
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
@@ -125,7 +130,7 @@ const registerTFGMaterials = (event) => {
 
 	// Material for MV
 
-		event.create('tfg:rene_41')
+	event.create('tfg:rene_41')
 		.ingot()
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x6A6D73)
@@ -140,4 +145,47 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.GENERATE_RING,
 			GTMaterialFlags.GENERATE_LONG_ROD)
+
+	// #endregion
+
+	// #region Solders
+	event.create('tfg:woods_metal')
+		.dust()
+		.liquid(GTFluidBuilder().temperature(343))
+		.ingot()
+		.color(0x65737C)
+		.components('4x bismuth', '2x lead', '1x tin', '1x cadmium')
+		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.POISON)
+
+	// event.create('tfg:bi_pb_sn_cd_in_tl')
+	// 	.dust()
+	// 	.liquid(GTFluidBuilder().temperature(314))
+	// 	.ingot()
+	// 	.color(0x745252)
+	// 	.components('8x bismuth', '4x lead', '2x tin', '3x indium', '2x cadmium', '1x thallium')
+	// 	.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+	// 	.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+
+	// event.create('tfg:lorandite')
+	// 	.dust()
+	// 	.ore()
+	// 	.color(0xC97523)
+	// 	.components('1x thallium', '1x arsenic', '2x sulfur')
+	// 	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, TFGMaterialFlags.GENERATE_DUSTY_ORES)
+	
+	// event.create('tfg:thallium_sulfate')
+	// 	.dust()
+	// 	.color(0x6691AD)
+	// 	.components('2x thallium', '1x sulfur', '4x oxygen')
+	// 	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+	// 	.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
+
+	// event.create('tfg:zinc_sulfate')
+	// 	.dust()
+	// 	.color(0x92B39F)
+	// 	.components('1x zinc', '1x sulfur', '4x oxygen')
+	// 	.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+	
+	// #endregion
 }

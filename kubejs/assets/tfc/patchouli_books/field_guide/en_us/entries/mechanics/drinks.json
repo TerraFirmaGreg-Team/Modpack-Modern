@@ -52,7 +52,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Cocoa: Haste (0:30), warms you up by 4°C$(li)Coffee: Speed (0:30), warms you up by 4°C$(li)Lemonade: Haste (0:30), cools you down by 2°C$(li)Nalivka: Haste (2:40), cools you down by 2°C$(li)Kvass: Haste (1:20), cools you down by 2°C$(li)Compote: Jump Boost II (0:30)"
+			"text": "$(li)Cocoa: Haste (0:30), warms you up by 4°C$(li)Coffee: Speed (0:30), warms you up by 4°C$(li)Lemonade: Haste (0:30), cools you down by 2°C$(li)Nalivka: Haste (4:00), cools you down by 2°C$(li)Kvass: Haste (2:00), cools you down by 2°C$(li)Compote: Jump Boost II (0:30)"
 		},
 		{
 			"type": "patchouli:spotlight",

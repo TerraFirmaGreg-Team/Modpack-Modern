@@ -17,21 +17,11 @@ const registerTFGItemTags = (event) => {
 	registerTFGMarsItemTags(event)
 	registerTFGVenusItemTags(event)
 	registerTFGAquaponicsItemTags(event)
-
-	// TEMPORARY, REMOVE WHEN GURMAN FIXES THIS
-	event.remove('tfc:foods', 'tfc_gourmet:havai_pizza')
+	registerTFGMaterialItemTags(event)
 
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')
-
-	// Platline
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_pentlandite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcopyrite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_tetrahedrite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_bornite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_cooperite_ore')
-	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
 
 	//Bronze Crates & Drums
 	event.add('tfg:any_bronze_crate', 'gtceu:bronze_crate')
@@ -46,7 +36,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
-	
 	//#endregion
 
 	// Airplane Upgrades
@@ -58,11 +47,6 @@ const registerTFGItemTags = (event) => {
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
 		event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
 	})
-
-	// Crafting components
-	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
-	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
-	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
 
 	// Use either cast or wrought iron
 	event.add('tfg:any_iron_double_ingot', '#forge:double_ingots/iron')
