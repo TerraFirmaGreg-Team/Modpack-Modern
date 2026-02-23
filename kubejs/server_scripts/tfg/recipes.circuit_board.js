@@ -32,6 +32,20 @@ event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board')
     .duration(20*25)
 	.EUt(GTValues.VA[GTValues.LV])
 
+event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t2')
+    .itemInputs(Item.of('tfg:copper_bonded_al2o3_pcb'), Item.of('gtceu:nickel_dust', 1))
+    .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
+    .itemOutputs(Item.of('gtceu:plastic_circuit_board', 8))
+    .duration(20*25)
+	.EUt(GTValues.VA[GTValues.LV])
+
+event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t3')
+    .itemInputs(Item.of('tfg:chromium_bonded_beo_pcb'), Item.of('gtceu:nickel_dust', 1))
+    .inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
+    .itemOutputs(Item.of('gtceu:plastic_circuit_board', 12))
+    .duration(20*25)
+	.EUt(GTValues.VA[GTValues.LV])
+
 event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_sodium_persulfate')
     .itemInputs(Item.of('gtceu:plastic_circuit_board'), Item.of('gtceu:annealed_copper_foil', 6))
     .inputFluids(Fluid.of('gtceu:sodium_persulfate', 500))
@@ -45,4 +59,34 @@ event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_iron_iii
     .itemOutputs(Item.of('gtceu:plastic_printed_circuit_board'))
     .duration(20*30)
 	.EUt(GTValues.VA[GTValues.LV])
+
+//#region Lenses
+
+event.recipes.gtceu.alloy_smelter('tfg:optical_borosilicate_blank')
+	.itemInputs(Item.of('gtceu:borosilicate_glass_dust', 1))
+    .notConsumable(Item.of('gtceu:cylinder_casting_mold'))
+	.itemOutputs(Item.of('tfg:optical_borosilicate_blank', 1))
+	.duration(20*5)
+	.EUt(GTValues.VA[GTValues.MV])
+
+function lensPolishing(event, fluid, colour) {
+    event.recipes.gtceu.ostrum_linear_accelerator(`tfg:lens_${fluid}_${colour}`)
+        .itemInputs(Item.of('tfg:worked_optical_borosilicate_blank', 1))
+        .inputFluids(Fluid.of(`tfg:dirty_${fluid}_slurry`, 1000))
+        .itemOutputs(Item.of(`#forge:lenses/${colour}`, 1))
+        .duration(20 * 5)
+        .EUt(GTValues.VA[GTValues.MV]);
+}
+
+const LENS_POLISHING = [
+    ['emerald',     'green'      ],
+    ['sapphire',    'blue'       ],
+    ['ruby',        'red'        ],
+    ['diamond',     'light_blue' ],
+    ['apatite',     'cyan'       ],
+    ['spessartine', 'orange'     ],
+];
+
+LENS_POLISHING.forEach(([fluid, colour]) => event.remove({ output: `#forge:lenses/${colour}` }));
+LENS_POLISHING.forEach(([fluid, colour]) => lensPolishing(event, fluid, colour));
 }

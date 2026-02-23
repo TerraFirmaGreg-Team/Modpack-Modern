@@ -62,13 +62,22 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/btx/loaded_resin')
 
 	// Add New Ceramic Circuit Board
-/*
-	event.create('tfg:ceramic_circuit_board')
-		.texture('tfg:item/ceramic_circuit_board')
 
-	event.create('tfg:ceramic_printed_circuit_board')
-		.texture('tfg:item/ceramic_printed_circuit_board')
-*/
 	event.create('tfg:mo_activated_sic_substrate')
 		.texture('tfg:item/mo_activated_sic_substrate')
+	
+	event.create('tfg:copper_bonded_al2o3_pcb')
+		.texture('tfg:item/copper_bonded_al2o3_pcb')
+
+	event.create('tfg:chromium_bonded_beo_pcb')
+		.texture('tfg:item/chromium_bonded_beo_pcb')
+
+	// Add New Lenses Support
+
+	event.create('tfg:optical_borosilicate_blank')
+		.texture('tfg:item/optical_borosilicate_blank')
+
+	event.create('tfg:worked_optical_borosilicate_blank')
+		.texture('tfg:item/worked_optical_borosilicate_blank')
+
 }
