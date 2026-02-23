@@ -1,5 +1,8 @@
 "use strict";
 
+const TIN_REPLACEMENT = "tin_replacement"
+const SOLDER_REPLACEMENT = "solder_replacement"
+
 /** @global */
 global.SOLDER_TIERS = /** @type {const} */ {
 	"mv": {
@@ -10,61 +13,64 @@ global.SOLDER_TIERS = /** @type {const} */ {
         "tin_replacement": "gtceu:soldering_alloy",
         "solder_replacement": "tfg:woods_metal"
     },
-    "ev": {
+	"ev": {
         "tin_replacement": "tfg:woods_metal",
-        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+		"solder_replacement": undefined
     },
     "iv": {
         "tin_replacement": "tfg:woods_metal",
-        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+		"solder_replacement": undefined
     },
     "luv": {
-        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": undefined
     },
     "zpm": {
-        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": undefined
     },
 	"uv": {
-        "solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": undefined
     }
 }
 
 function registerTFGCircuitRecipes(event) {
 
-    //#region Microprocessor mainframe requires nano chips
+    // #region Microprocessor mainframe requires nano chips
 
 	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd_soldering_alloy'})
 	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv'})
 	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_soldering_alloy'})
 	event.remove({ id: 'gtceu:circuit_assembler/mainframe_iv_asmd'})
 
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv')
+	event.recipes.gtceu.circuit_assembler('tfg:mainframe_iv')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["tin_replacement"], 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"][TIN_REPLACEMENT], 576))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 40)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_soldering_alloy')
+	event.recipes.gtceu.circuit_assembler('tfg:mainframe_iv_soldering_alloy')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '8x #gtceu:inductors', '16x #gtceu:capacitors', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["solder_replacement"], 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"][SOLDER_REPLACEMENT], 288))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 40)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd')
+	event.recipes.gtceu.circuit_assembler('tfg:mainframe_iv_asmd')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["tin_replacement"], 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"][TIN_REPLACEMENT], 576))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
 
-	event.recipes.gtceu.circuit_assembler('tfg:circuit_assembler/mainframe_iv_asmd_soldering_alloy')
+	event.recipes.gtceu.circuit_assembler('tfg:mainframe_iv_asmd_soldering_alloy')
 		.itemInputs('2x gtceu:aluminium_frame', '2x gtceu:micro_processor_computer', '2x gtceu:advanced_smd_inductor', '4x gtceu:advanced_smd_capacitor', 'gtceu:nano_cpu_chip', '16x gtceu:annealed_copper_single_wire')
-		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"]["solder_replacement"], 288))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["hv"][SOLDER_REPLACEMENT], 288))
 		.itemOutputs('gtceu:micro_processor_mainframe')
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -88,23 +94,25 @@ function registerTFGCircuitRecipes(event) {
 			'24x gtceu:smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"][TIN_REPLACEMENT], 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
 
-	event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
-		.itemInputs(
-			'2x gtceu:hssg_frame',
-			'2x gtceu:quantum_processor_computer',
-			'48x gtceu:smd_capacitor',
-			'24x gtceu:smd_inductor',
-			'24x gtceu:ram_chip',
-			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
-		.itemOutputs('gtceu:quantum_processor_mainframe')
-		.duration(800)
-		.EUt(7680)
+	// Temporarily removing soldering alloy alternative until higher tiers are implemented
+
+	// event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
+	// 	.itemInputs(
+	// 		'2x gtceu:hssg_frame',
+	// 		'2x gtceu:quantum_processor_computer',
+	// 		'48x gtceu:smd_capacitor',
+	// 		'24x gtceu:smd_inductor',
+	// 		'24x gtceu:ram_chip',
+	// 		'24x gtceu:annealed_copper_double_wire')
+	// 	.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"][SOLDER_REPLACEMENT], 288))
+	// 	.itemOutputs('gtceu:quantum_processor_mainframe')
+	// 	.duration(800)
+	// 	.EUt(7680)
 
 	event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd')
 		.itemInputs(
@@ -114,23 +122,25 @@ function registerTFGCircuitRecipes(event) {
 			'6x gtceu:advanced_smd_inductor',
 			'24x gtceu:ram_chip',
 			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:tin', 576))
+		.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"][TIN_REPLACEMENT], 576))
 		.itemOutputs('gtceu:quantum_processor_mainframe')
 		.duration(800)
 		.EUt(7680)
 
-	event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
-		.itemInputs(
-			'2x gtceu:hssg_frame',
-			'2x gtceu:quantum_processor_computer',
-			'12x gtceu:advanced_smd_capacitor',
-			'6x gtceu:advanced_smd_inductor',
-			'24x gtceu:ram_chip',
-			'24x gtceu:annealed_copper_double_wire')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
-		.itemOutputs('gtceu:quantum_processor_mainframe')
-		.duration(800)
-		.EUt(7680)
+	// Temporarily removing soldering alloy alternative until higher tiers are implemented
+
+	// event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
+	// 	.itemInputs(
+	// 		'2x gtceu:hssg_frame',
+	// 		'2x gtceu:quantum_processor_computer',
+	// 		'12x gtceu:advanced_smd_capacitor',
+	// 		'6x gtceu:advanced_smd_inductor',
+	// 		'24x gtceu:ram_chip',
+	// 		'24x gtceu:annealed_copper_double_wire')
+	// 	.inputFluids(Fluid.of(global.SOLDER_TIERS["iv"][SOLDER_REPLACEMENT], 288))
+	// 	.itemOutputs('gtceu:quantum_processor_mainframe')
+	// 	.duration(800)
+	// 	.EUt(7680)
 
 	//#endregion
 
@@ -188,12 +198,16 @@ function registerTFGCircuitRecipes(event) {
     }
 
     Object.keys(CIRCUIT_ASSEMBLER_RECIPE_TIERS).forEach(recipe => {
-        event.replaceInput({ id: `${recipe}_soldering_alloy` }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["solder_replacement"]))
-
-		if (global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["tin_replacement"]) {
-			event.replaceInput({ id: recipe }, Fluid.of("gtceu:tin"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]]["tin_replacement"]))
+		if (global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]][TIN_REPLACEMENT]) {
+			event.replaceInput({ id: recipe }, Fluid.of("gtceu:tin"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]][TIN_REPLACEMENT]))
 		} else {
 			event.remove({ id: recipe })
+		}
+
+		if (global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]][SOLDER_REPLACEMENT]) {
+			event.replaceInput({ id: `${recipe}_soldering_alloy` }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[CIRCUIT_ASSEMBLER_RECIPE_TIERS[recipe]][SOLDER_REPLACEMENT]))
+		} else {
+			event.remove({ id: `${recipe}_soldering_alloy` })
 		}
     })
 
@@ -254,7 +268,14 @@ function registerTFGCircuitRecipes(event) {
     }
 
 	Object.keys(ASSEMBLY_LINE_RECIPE_TIERS).forEach(recipe => {
-		event.replaceInput({ id: recipe }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]]["solder_replacement"]))
+		if (global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]][SOLDER_REPLACEMENT]) {
+			event.replaceInput({ id: recipe }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]][SOLDER_REPLACEMENT]))
+		} else if (global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]][TIN_REPLACEMENT]) {
+			// Use tin replacement instead if the solder replacement is undefined
+			event.replaceInput({ id: recipe }, Fluid.of("gtceu:soldering_alloy"), Fluid.of(global.SOLDER_TIERS[ASSEMBLY_LINE_RECIPE_TIERS[recipe]][TIN_REPLACEMENT]))
+		} else {
+			event.remove({ id: recipe })
+		}
     })
 
     // #endregion
@@ -292,50 +313,50 @@ function registerTFGCircuitRecipes(event) {
     
 	// BiPbSnCdInTl
 	
-	event.recipes.gtceu.ostrum_linear_accelerator('tfg:lorandite_ola')
-		.inputFluids('gtceu:lightweight_ostrum_vapor 600')
-		.inputFluids('gtceu:ostrum_vapor 300')
-		.inputFluids('gtceu:dense_ostrum_vapor 100')
-		.inputFluids('gtceu:residual_radioactive_concoction 100')
-		.itemOutputs('4x tfg:dusty_raw_lorandite')
-		.dimension('ad_astra:mars')
-		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.IV])
+	// event.recipes.gtceu.ostrum_linear_accelerator('tfg:lorandite_ola')
+	// 	.inputFluids('gtceu:lightweight_ostrum_vapor 600')
+	// 	.inputFluids('gtceu:ostrum_vapor 300')
+	// 	.inputFluids('gtceu:dense_ostrum_vapor 100')
+	// 	.inputFluids('gtceu:residual_radioactive_concoction 100')
+	// 	.itemOutputs('4x tfg:dusty_raw_lorandite')
+	// 	.dimension('ad_astra:mars')
+	// 	.duration(20 * 5)
+	// 	.EUt(GTValues.VA[GTValues.IV])
 
-	event.recipes.gtceu.large_chemical_reactor('tfg:lorandite_to_thallium_sulfate')
-		.itemInputs('8x #forge:dusts/lorandite')
-		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000))
-		.itemOutputs('7x #forge:dusts/thallium_sulfate', '5x #forge:dusts/arsenic_trioxide', '4x #forge:dusts/sulfur')
-		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:hydrogen_sulfide', 1000))
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.EV])
+	// event.recipes.gtceu.large_chemical_reactor('tfg:lorandite_to_thallium_sulfate')
+	// 	.itemInputs('8x #forge:dusts/lorandite')
+	// 	.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000))
+	// 	.itemOutputs('7x #forge:dusts/thallium_sulfate', '5x #forge:dusts/arsenic_trioxide', '4x #forge:dusts/sulfur')
+	// 	.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:hydrogen_sulfide', 1000))
+	// 	.duration(20 * 20)
+	// 	.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate')
-		.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
-		.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.EV])
+	// event.recipes.gtceu.chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate')
+	// 	.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
+	// 	.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
+	// 	.duration(20 * 20)
+	// 	.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.large_chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate_lcr')
-		.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
-		.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.EV])
+	// event.recipes.gtceu.large_chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate_lcr')
+	// 	.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
+	// 	.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
+	// 	.duration(20 * 20)
+	// 	.EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl')
-		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
-		.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
-		.duration(20 * 480)
-		.blastFurnaceTemp(3700)
-		.EUt(GTValues.VA[GTValues.EV])
+    // event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl')
+	// 	.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
+	// 	.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
+	// 	.duration(20 * 480)
+	// 	.blastFurnaceTemp(3700)
+	// 	.EUt(GTValues.VA[GTValues.EV])
 
-	event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl_boosted')
-		.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
-		.inputFluids(Fluid.of('gtceu:helium', 2000))
-		.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
-		.duration(20 * 321.6)
-		.blastFurnaceTemp(3700)
-		.EUt(GTValues.VA[GTValues.EV])
+	// event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl_boosted')
+	// 	.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
+	// 	.inputFluids(Fluid.of('gtceu:helium', 2000))
+	// 	.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
+	// 	.duration(20 * 321.6)
+	// 	.blastFurnaceTemp(3700)
+	// 	.EUt(GTValues.VA[GTValues.EV])
 
 	// #endregion
 }
