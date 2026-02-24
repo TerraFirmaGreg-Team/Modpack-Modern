@@ -3,8 +3,7 @@
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:chest",
 	"read_by_default": true,
-	"pages":
-	[
+	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "Хранение предметов",
@@ -35,7 +34,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/bronze_drum",
-			"text": "Бочки можно очистить в окне крафта." 
+			"text": "Бочки можно очистить в окне крафта."
 		},
 		{
 			"type": "patchouli:spotlight",
