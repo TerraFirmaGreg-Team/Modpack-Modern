@@ -101,6 +101,7 @@ jobs:
           download_translations: true
           config: crowdin.yml
           download_language: ${{ matrix.language }}
+          localization_branch_name: translations
           create_pull_request: false
           skip_untranslated_files: true
           commit_message: "[translation] New translations (${{ matrix.language }})"
@@ -144,7 +145,7 @@ jobs:
             ${{ runner.os }}-crowdin-cache-${{ github.ref_name }}-
         
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: crowdin/github-action@v2.15.0
         with:
           upload_sources: true
           upload_translations: false
