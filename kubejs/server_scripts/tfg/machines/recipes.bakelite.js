@@ -144,6 +144,74 @@ function registerTFGBakeliteRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(2)
 	// End of MV Changes
+	
+	// LV Buses
+	event.recipes.gtceu.assembler('tfg:lv_input_bus_bakelite')
+		.itemInputs('gtceu:lv_machine_hull', 'gtceu:wood_crate')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:lv_input_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:lv_output_bus_bakelite')
+		.itemInputs('gtceu:lv_machine_hull', 'gtceu:wood_crate')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:lv_output_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+	// LV Hatches
+	event.recipes.gtceu.assembler('tfg:lv_input_hatch_bakelite')
+		.itemInputs('gtceu:lv_machine_hull', '#forge:glass')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:lv_input_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:lv_output_hatch_bakelite')
+		.itemInputs('gtceu:lv_machine_hull', '#forge:glass')
+		.inputFluids('tfg:bakelite 432')
+		.itemOutputs('gtceu:lv_output_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+	// ULV Buses
+	event.recipes.gtceu.assembler('tfg:ulv_input_bus_bakelite')
+		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests/wooden')
+		.inputFluids('tfg:bakelite 216')
+		.itemOutputs('gtceu:ulv_input_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:ulv_output_bus_bakelite')
+		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests/wooden')
+		.inputFluids('tfg:bakelite 216')
+		.itemOutputs('gtceu:ulv_output_bus')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(2)
+	// ULV Hatches
+	event.recipes.gtceu.assembler('tfg:ulv_input_hatch_bakelite')
+		.itemInputs('gtceu:ulv_machine_hull', '#forge:glass')
+		.inputFluids('tfg:bakelite 216')
+		.itemOutputs('gtceu:ulv_input_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(1)
+
+	event.recipes.gtceu.assembler('tfg:ulv_output_hatch_bakelite')
+		.itemInputs('gtceu:ulv_machine_hull', '#forge:glass')
+		.inputFluids('tfg:bakelite 216')
+		.itemOutputs('gtceu:ulv_output_hatch')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(2)
+
+
+	// LV/ULV Hulls
 
 	event.recipes.gtceu.assembler('tfg:ulv_hull_bakelite')
 		.itemInputs('gtceu:ulv_machine_casing', '2x #forge:single_cables/red_alloy')
