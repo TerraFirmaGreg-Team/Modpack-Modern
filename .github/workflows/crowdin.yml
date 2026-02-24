@@ -105,7 +105,7 @@ jobs:
         with:
           upload_sources: true
           upload_translations: false
-          upload_sources_args: "--cache ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
+          upload_sources_args: "--cache --auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
           config: crowdin.yml
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
