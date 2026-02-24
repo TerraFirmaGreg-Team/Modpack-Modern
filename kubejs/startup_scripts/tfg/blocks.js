@@ -16,7 +16,6 @@ const registerTFGBlocks = (event) => {
 	registerTFGWorldGenVenusDecoBlocks(event)
 	registerTFGWorldGenEuropaDecoBlocks(event)
 
-	registerTFGCasingBlocks(event)
 	registerTFGNuclearBlocks(event)
 
 	event.create('tfg:quartz_crucible')
