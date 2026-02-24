@@ -98,6 +98,7 @@ jobs:
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
       - name: Download Translations from Crowdin
         if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
@@ -138,6 +139,7 @@ jobs:
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
   # Status check job
   status:
@@ -164,6 +166,7 @@ jobs:
           config: crowdin.yml
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
       - name: Generate Status Report
         run: |
