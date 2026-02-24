@@ -146,33 +146,8 @@ jobs:
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
   download:
-    if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
-    needs: [upload]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        
-      - name: Download Languages
-        uses: crowdin/github-action@v2.15.0
-        with:
-          upload_sources: false
-          download_translations: true
-          config: crowdin.yml
-          localization_branch_name: translations
-          create_pull_request: false
-          skip_untranslated_files: true
-          commit_message: "[translation] New translations"
-          export_only_approved: ${{ github.event.inputs.export_approved_only }}
-          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
-          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
-
-  create-pr:
     if: github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule')
-    needs: [download, upload]
+    needs: [upload]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -205,11 +180,16 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2.15.0
         with:
-          config: crowdin.yml
           upload_sources: false
-          download_translations: false
-          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
+          upload_translations: false
+          download_translations: true
+          config: crowdin.yml
           localization_branch_name: translations
+          skip_untranslated_files: true
+          download_language: ${{ github.event.inputs.download_language }}
+          export_only_approved: ${{ github.event.inputs.export_approved_only }}
+          commit_message: "[translation] New translations"
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
           create_pull_request: ${{ github.event.inputs.skip_pr != 'true' }}
           pull_request_base_branch_name: 'dev'
           pull_request_team_reviewers: 'modern-team'
