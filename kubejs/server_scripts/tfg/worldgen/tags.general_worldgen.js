@@ -20,7 +20,6 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
 	event.add('minecraft:wart_blocks', 'ad_astra:aeronos_cap')
 	event.add('minecraft:wart_blocks', 'ad_astra:strophar_cap')

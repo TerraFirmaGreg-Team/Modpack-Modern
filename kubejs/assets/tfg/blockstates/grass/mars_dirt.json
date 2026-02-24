@@ -1,0 +1,21 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "tfg:block/grass/mars_dirt"
+			},
+			{
+				"model": "tfg:block/grass/mars_dirt",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/grass/mars_dirt",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/grass/mars_dirt",
+				"y": 270
+			}
+		]
+	}
+}

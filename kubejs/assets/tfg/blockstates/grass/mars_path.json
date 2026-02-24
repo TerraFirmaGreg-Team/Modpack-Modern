@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"": [
+			{ "model": "tfg:block/grass/mars_path" },
+			{ "model": "tfg:block/grass/mars_path", "y": 90 },
+			{ "model": "tfg:block/grass/mars_path", "y": 180 },
+			{ "model": "tfg:block/grass/mars_path", "y": 270 }
+		]
+	}
+}
