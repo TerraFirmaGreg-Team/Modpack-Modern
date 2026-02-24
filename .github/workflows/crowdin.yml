@@ -125,8 +125,29 @@ jobs:
   #         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
   #         CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
+  upload:
+    if: github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Upload Sources
+        uses: crowdin/github-action@v2.15.0
+        with:
+          upload_sources: true
+          upload_translations: false
+          upload_sources_args: "--auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
+          config: crowdin.yml
+          dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
   download:
     if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
+    needs: [upload]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -151,7 +172,7 @@ jobs:
 
   create-pr:
     if: github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule')
-    needs: [download]
+    needs: [download, upload]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -184,9 +205,6 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2.15.0
         with:
-          upload_sources: true
-          upload_translations: false
-          upload_sources_args: "--cache --auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
           config: crowdin.yml
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
           localization_branch_name: translations
