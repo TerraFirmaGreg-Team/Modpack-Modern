@@ -119,7 +119,7 @@ jobs:
   #         skip_untranslated_files: true
   #         commit_message: "[translation] New translations (${{ matrix.language }})"
   #         export_only_approved: ${{ github.event.inputs.export_approved_only }}
-  #         dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+  #         dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
   #       env:
   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   #         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
@@ -139,7 +139,7 @@ jobs:
           upload_translations: false
           upload_sources_args: "--auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
           config: crowdin.yml
-          dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
@@ -164,7 +164,7 @@ jobs:
           skip_untranslated_files: true
           commit_message: "[translation] New translations"
           export_only_approved: ${{ github.event.inputs.export_approved_only }}
-          dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
@@ -206,7 +206,9 @@ jobs:
         uses: crowdin/github-action@v2.15.0
         with:
           config: crowdin.yml
-          dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+          upload_sources: false
+          download_translations: false
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
           localization_branch_name: translations
           create_pull_request: ${{ github.event.inputs.skip_pr != 'true' }}
           pull_request_base_branch_name: 'dev'
