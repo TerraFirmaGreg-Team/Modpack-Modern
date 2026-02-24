@@ -1,5 +1,5 @@
-name: Project Server News
-run-name: "Project Server News #${{ github.run_number }}"
+name: "Project Server News"
+run-name: "📨 Project Server News #${{ github.run_number }}"
 on:
   workflow_dispatch:
     inputs:

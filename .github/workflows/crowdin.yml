@@ -1,4 +1,4 @@
-name: "🌐 Crowdin Translations"
+name: "Crowdin Translations"
 run-name: "🌐 Crowdin Translations #${{ github.run_number }}"
 
 on:
