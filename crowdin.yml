@@ -5,7 +5,7 @@ base_path: "./kubejs/assets"
 project_id_env: "CROWDIN_ID"
 api_token_env: "CROWDIN_TOKEN"
 
-pull_request_title: "New Crowdin updates"
+pull_request_title: "[🌐]: New Crowdin updates"
 
 # Automatically label PRs made by Crowdin
 pull_request_labels: [ "Pull request: Translation" ]
