@@ -148,12 +148,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get Crowdin Project Status
-        if: github.event.inputs.download_language != ''
+      - name: Get Project Info
+        id: project-info
+        run: |
+          # Get project name from Crowdin API
+          PROJECT_INFO=$(curl -s -H "Authorization: Bearer ${{ secrets.CROWDIN_TOKEN }}" "https://api.crowdin.com/api/v2/projects/${{ vars.CROWDIN_ID }}")
+          PROJECT_NAME=$(echo "$PROJECT_INFO" | jq -r '.data.name')
+          echo "project-name=$PROJECT_NAME" >> $GITHUB_OUTPUT
+          echo "Project name: $PROJECT_NAME"
+
+      - name: Crowdin Translations Progress
         uses: crowdin/github-action@v2.15.0
         with:
           command: 'status translation'
-          command_args: "-l ${{ github.event.inputs.download_language }}"
           config: crowdin.yml
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
@@ -163,11 +170,12 @@ jobs:
           echo "## 🌐 Crowdin Translation Status Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Project ID**: ${{ vars.CROWDIN_ID }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Project Name**: ${{ steps.project-info.outputs.project-name }}" >> $GITHUB_STEP_SUMMARY
           echo "**Language Filter**: ${{ github.event.inputs.download_language || 'All languages' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Generated**: $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          # Get detailed language statistics
+          # Get detailed language statistics using Crowdin CLI
           echo "### 📊 Language Statistics" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
@@ -203,11 +211,11 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📋 Quick Actions" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- 🔗 [Crowdin Dashboard](https://crowdin.com/project/${{ vars.CROWDIN_ID }})" >> $GITHUB_STEP_SUMMARY
-          echo "- 📊 [Translation Management](https://crowdin.com/project/${{ vars.CROWDIN_ID }}/reports)" >> $GITHUB_STEP_SUMMARY
-          echo "- 🌐 [Language Settings](https://crowdin.com/project/${{ vars.CROWDIN_ID }}/settings#languages)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔗 [Crowdin Dashboard](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }})" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 [Translation Management](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }}/reports)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 [Language Settings](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }}/settings#languages)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📊 Use the detailed statistics above to review translation progress." >> $GITHUB_STEP_SUMMARY
+          echo "📊 Use detailed statistics above to review translation progress." >> $GITHUB_STEP_SUMMARY
 
   # Quality validation job (runs after successful sync)
   validate-translations:
