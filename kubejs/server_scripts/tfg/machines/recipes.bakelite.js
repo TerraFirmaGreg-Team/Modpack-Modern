@@ -163,7 +163,7 @@ function registerTFGBakeliteRecipes(event) {
 		.circuit(2)
 	// LV Hatches
 	event.recipes.gtceu.assembler('tfg:lv_input_hatch_bakelite')
-		.itemInputs('gtceu:mv_machine_hull', '#forge:glass')
+		.itemInputs('gtceu:lv_machine_hull', '#forge:glass')
 		.inputFluids('tfg:bakelite 432')
 		.itemOutputs('gtceu:lv_input_hatch')
 		.duration(20*15)
