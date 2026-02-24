@@ -166,7 +166,48 @@ jobs:
           echo "**Language Filter**: ${{ github.event.inputs.download_language || 'All languages' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Generated**: $(date -u)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo " Use the output above to review translation progress." >> $GITHUB_STEP_SUMMARY
+          
+          # Get detailed language statistics
+          echo "### 📊 Language Statistics" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -n "${{ github.event.inputs.download_language }}" ]; then
+            echo "🔍 **Selected Language**: ${{ github.event.inputs.download_language }}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            # Get status for specific language
+            LANG_STATUS=$(crowdin status translation --language ${{ github.event.inputs.download_language }} --format json 2>/dev/null | jq -r '.languages[] | select(.code == "${{ github.event.inputs.download_language }}") | "\(.code): \(.progress.translated)% translated, \(.progress.approved)% approved"')
+            if [ -n "$LANG_STATUS" ]; then
+              echo "- **Progress**: $LANG_STATUS" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- **Status**: Language not found in project" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "🌍 **All Languages Overview**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            # Get overall project statistics
+            crowdin status translation --format json 2>/dev/null | jq -r '.languages[] | "\(.code): \(.progress.translated)% translated, \(.progress.approved)% approved"' | while read line; do
+              echo "$line" >> $GITHUB_STEP_SUMMARY
+            done
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📈 Overall Project Progress" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Get overall statistics
+          OVERALL_STATS=$(crowdin status translation --format json 2>/dev/null | jq -r '"Overall: \(.progress.translated)% translated, \(.progress.approved)% approved, \(.progress.words.total) total words"')
+          if [ -n "$OVERALL_STATS" ]; then
+            echo "$OVERALL_STATS" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📋 Quick Actions" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔗 [Crowdin Dashboard](https://crowdin.com/project/${{ vars.CROWDIN_ID }})" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 [Translation Management](https://crowdin.com/project/${{ vars.CROWDIN_ID }}/reports)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 [Language Settings](https://crowdin.com/project/${{ vars.CROWDIN_ID }}/settings#languages)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Use the detailed statistics above to review translation progress." >> $GITHUB_STEP_SUMMARY
 
   # Quality validation job (runs after successful sync)
   validate-translations:
