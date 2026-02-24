@@ -110,6 +110,7 @@ jobs:
           localization_branch_name: translations
           create_pull_request: ${{ github.event.inputs.skip_pr != 'true' }}
           pull_request_base_branch_name: 'dev'
+          pull_request_team_reviewers: 'Modern-Team'
           pull_request_body: |
             ##  New translations from Crowdin
             
@@ -150,7 +151,7 @@ jobs:
       - name: Get Crowdin Project Status
         uses: crowdin/github-action@v2.15.0
         with:
-          command: 'status'
+          command: 'status translation'
           command_args: "--language ${{ github.event.inputs.download_language || '' }}"
           configuration: crowdin.yml
         env:
