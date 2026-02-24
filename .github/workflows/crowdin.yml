@@ -147,7 +147,7 @@ jobs:
         uses: crowdin/github-action@v2.15.0
         with:
           command: 'status'
-          command_args: '--language ${{ github.event.inputs.download_language || '' }} --format json'
+          command_args: "--language ${{ github.event.inputs.download_language || '' }}"
           configuration: crowdin.yml
         env:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
