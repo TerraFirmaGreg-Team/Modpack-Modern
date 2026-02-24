@@ -180,10 +180,10 @@ jobs:
             
             ---
             *Automated by [Crowdin GitHub Action](https://github.com/crowdin/github-action)*
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
-            CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
   # Status check job
   status:
