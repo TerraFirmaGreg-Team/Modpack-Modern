@@ -27,7 +27,7 @@ files:
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
     update_option: "update_without_changes"
     #dest: "/messages.%file_extension%"
-    
+
     languages_mapping:
       locale_with_underscore:
         en-US: "en_us"
@@ -60,3 +60,8 @@ files:
         sr: "sr_sp"
         tr: "tr_tr"
         vi: "vi_vn"
+    
+  - source: "/tfc/patchouli_books/field_guide/en_us/**/*.json"
+    translation: "/tfc/patchouli_books/field_guide/%locale_with_underscore%/**/%original_file_name%"
+    update_option: "update_without_changes"
+    
