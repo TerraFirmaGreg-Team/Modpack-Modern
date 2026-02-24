@@ -77,8 +77,8 @@ jobs:
         id: extract-languages
         run: |
           # Извлекаем языковые коды из crowdin.yml
-          LANGUAGES=$(yq eval '.files[0].languages_mapping.locale_with_underscore | keys | map(select(. != "en-US" and . != "en-GB" and . != "en")) | .[]' crowdin.yml | tr -d '"' | tr '\n' ' ')
-          echo "languages=$LANGUAGES" >> $GITHUB_OUTPUT
+          LANGUAGES=$(yq eval '.files[0].languages_mapping.locale_with_underscore | keys | map(select(. != "en-US" and . != "en-GB" and . != "en"))' crowdin.yml | jq -r '. | map(select(. != null)) | join(" ")')
+          echo "languages=[$(echo "$LANGUAGES" | sed 's/[^ ]\+/"&"/g' | sed 's/ /, /g')]" >> $GITHUB_OUTPUT
           echo "Found languages: $LANGUAGES"
 
 
