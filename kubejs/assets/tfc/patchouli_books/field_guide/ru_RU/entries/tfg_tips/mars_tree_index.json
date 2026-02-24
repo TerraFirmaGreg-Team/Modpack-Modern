@@ -1,0 +1,48 @@
+{
+	"name": "Каталог марсианских грибов",
+	"category": "tfc:tfg_tips",
+	"icon": "tfg:saplings/aeronos",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Это список каждого большого марсианского гриба, и в каком климате они растут.$(br2)Ищете конкретный вид гриба для украшения базы? Этот список должен помочь тебе найти их. Список отсортирован по алфавиту.$(br2)Так же можешь посмотреть на $(l:tfc:arborfirmacraft/earth_tree_index)Каталог земных деревьев$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Конусообразный",
+			"item": "ad_astra:aeronos_stem",
+			"text": "$(bold)Конусообразный гриб$()$(br)$(thing)Температура$(): -100°C и выше$(br)Чаще встречается на востоке."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Альфанценовый",
+			"item": "species:alphacene_mushroom_block",
+			"text": "$(bold)Альфанценовый гриб$()$(br)$(thing)Температура$(): -85°C и выше$(br)Встречается на востоке и западе."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Багряный",
+			"item": "beneath:wood/log/crimson",
+			"text": "$(bold)Багряное дерево$()$(br)$(thing)Температура$(): -109 — -13°C$(br)Чаще встречается на востоке."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Гласивник",
+			"item": "ad_astra:glacian_log",
+			"text": "$(bold)Гласивник$()$(br)$(thing)Температура$(): -107°C и ниже$(br)Встречается на востоке и западе."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Строфаровый",
+			"item": "ad_astra:strophar_stem",
+			"text": "$(bold)Строфаровый гриб$()$(br)$(thing)Температура$(): -100°C и выше$(br)Чаще встречается на западе."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Искажённый",
+			"item": "beneath:wood/log/warped",
+			"text": "$(bold)Искажёное дерево$()$(br)$(thing)Температура$(): -109 — -13°C$(br)Чаще встречается на западе."
+		}
+	]
+}

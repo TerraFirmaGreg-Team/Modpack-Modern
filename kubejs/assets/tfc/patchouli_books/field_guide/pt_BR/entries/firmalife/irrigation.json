@@ -1,0 +1,28 @@
+{
+	"name": "Irrigação",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:sprinkler",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "O $(thing)Aspersor$() é um dispositivo que borrifa água em uma área de 5x6x5 centralizada no bloco abaixo dele. Você sabe que ele está funcionando quando ele goteja partículas de água. Aspersores colocados virados para cima irrigam a mesma área de 5x6x5 só que voltada para cima."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "firmalife:anvil/sprinkler",
+			"text": "O aspersor é feito com uma $(thing)Placa de Cobre$()."
+		},
+		{
+			"title": "Tubulação",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Aspersores precisam ser conectados a um sistema de tubulações que os alimentam com água para funcionar. Isso é feito conectando uma série de $(thing)Tubos de Fluido$() a eles. Você pode bombear água para eles com uma $(thing)Bomba Mecânica$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Você pode clicar com o botão direito em um cano com uma Moldura do GregTech (como uma $(thing)Moldura de Cobre$()) para deixá-los embutidos com a parede, ou usar uma Conexão de Estufa. Depois, basta acoplar seu aspersor diretamente ao cano! Use uma chave inglesa em canos de fluido para alterar sua direção e clique enquanto agacha com a $(thing)segunda mão vazia$() para torná-los unidirecionais."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 8
+}

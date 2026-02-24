@@ -1,0 +1,75 @@
+{
+	"name": "Биомы",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "В Бездне есть полный набор новых биомов для исследования! Большинство из них делятся на две категории: $(thing)верхние$() и $(thing)нижние$(). Верхние биомы встречаются на верхних уровнях Бездны, в то время как нижние расположены в ближе к лаве."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пышная лощина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Влажно и полно зелени! Самая гостеприимная зона для подземной базы."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Гниющие пещеры",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Природные переработчики усердно трудятся в этом влажном регионе, полном гниения."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Паучье логово",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Ни за что не угадаете, кто тут обитает! А, и в этом месте можно найти огромные $(thing)Травертиновые$() сталагнаты или колонны."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пепельный лес",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "То, что осталось от Пышной Лощины после частых пожаров, вызванных жарой и магмой."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Магмовые пустоши",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Богатая рудами область $(thing)пироксенита$(), пересеченная реками лавы и покрытая пластами магмы."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Базальтовые дельты",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Любимый всеми адский биом возвращается и по-прежнему так же опасен для исследования."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Глубокие пещеры",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/deep_caves.png"
+			],
+			"border": true,
+			"text": "Между другими биомами находятся более простые области из габбро, сланца, гранита, диорита и гнейса.$(br)"
+		}
+	],
+	"read_by_default": true
+}

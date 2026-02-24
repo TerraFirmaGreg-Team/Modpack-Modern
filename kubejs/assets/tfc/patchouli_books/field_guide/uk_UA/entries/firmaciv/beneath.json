@@ -1,0 +1,37 @@
+{
+    "name": "Марсіанські човни",
+    "category": "tfc:firmaciv",
+    "icon": "beneath:wood/sapling/crimson",
+    "flag": "mod:beneath",
+    "read_by_default": true,
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Далеко на віддалених просторах Марса можна знайти як багряне, так і химерне дерево, щоб створити доволі яскраві $(l:firmaciv/watercraft)Човни$()."
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Хвойні породи деревини",
+            "text": "Хвойні породи деревини мають достатньо м’яку деревину та кору, тож вони ідеально підходять для створення $(l:firmaciv/canoe)Довбаних каное$()",
+            "item": "beneath:wood/stripped_log/crimson"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Багряне$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Тверді породи деревини",
+            "text": "Відомі своєю винятковою міцністю, тверді породи деревини ідеально підходять для створення більших і витончених водних суден, таких як $(l:firmaciv/rowboat)Веслові човни$() та $(l:firmaciv/sloop)Шлюпи$()",
+            "item": "beneath:wood/planks/warped"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)Химерне$()"
+        }
+    ]
+}

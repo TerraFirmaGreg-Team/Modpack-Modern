@@ -1,0 +1,92 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Геологорозвідка",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/propick/wrought_iron",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ти ж пам’ятаєш, де знайшов ті $(l:getting_started/finding_ores)дрібні металеві самородки$(), так? Щоб знайти більше руд, може знадобитися тривала розвідка та копання. Варто добре ознайомитися з $(l:tfg_ores/earth_ore_index)рудами та мінералами$(). Якщо тобі потрібен конкретний ресурс, слід знайти тип породи, в якій він з’являється — або прямо під ногами, або десь у світі."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Коли збирати дрібні самородки вже не приносить задоволення, настав час почати розвідку для пошуку рудних жил:$(br)$(li)Дрібні самородки, поверхневі бруньки та камінці з’являються, коли під ними знаходиться рудна жила. Якщо знайти центр скупчення самородків, імовірно, що жила — прямо під вами.$(li)Відкриті руди можуть траплятися на скелях і у водоймах, і їх видно здалеку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "propick",
+      "item": "tfc:metal/propick/copper",
+      "title": "Геологічний молоток",
+      "link_recipes": false,
+      "text": "Якщо ви шукаєте рудні жили, але не можете знайти їх навмання, настав час дістати $(item)геологічний молоток$(). Якщо ви знайомі з базовими геологічними молотками в $(thing)TFC$(), вас може здивувати, що в $(thing)TerraFirmaGreg$() вони працюють зовсім інакше"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Клацання правою кнопкою миші з геологічними молотком у $(thing)TFG$() запускає променевий пошук у напрямку вашого погляду. Ширина та глибина променя залежать від рівня молотка, зазначеного в його підказках. Залежно від рівня геологічного молотка ви також можете отримати кількість руди та навіть побачити індикатор $(thing)рентгену$() рудної жили."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Геологічний молоток може показувати таку інформацію при використанні:$(br)$(li)У чаті молотка може показати $(thing)загальну кількість$() руди в жилі, $(thing)вміст$() рудної жили та $(thing)кількість по типу руди$().$(li)Геологічні молотки з $(thing)кольорової сталі$() також можуть показувати або велику рентгенівську частинку в $(thing)центрі$() рудної жили, або $(thing)частинки на кожен блок руди$()"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Геологічний огляд",
+      "images": [
+      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+      ],
+      "border": true,
+      "text": "Використання геологічного молотка виглядає ось так. Велика частинка з позначкою $(bold)\"!\"$() — це стиль рентгену для всієї жили. А менші частинки — це стиль рентгену для кожного блока."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:clay_knapping/propick_head_mold",
+      "text": "Щоб зробити геологічний молоток, можна $(l:getting_started/pottery)виколотити$() необпалений шаблон із глини, як показано вище."
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/propick_head_mold",
+      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон головки геологічного молотка.$()$(br2)Щоб створити оголів'я інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/copper_propick_head",
+      "text": "Оголів'я геологічного молотка також можна $(l:mechanics/anvils#working)викувати$() зі $(item)зливка$() будь-якого інструментального металу на $(l:mechanics/anvils)ковадлі$().$(br2)Геологічний молоток створюється шляхом крафту головки інструмента зі палицею."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Більшість характеристик і параметрів геологічних молотків можна налаштувати у конфігураційному файлі сервера."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "prospector",
+      "item": "gtceu:prospector.lv",
+      "title": "Цифровий сканер руд",
+      "link_recipes": false,
+      "text": "Технології — це сьогодення! А разом із ними з’являються нові способи знаходити рудні жили!$(br)$(item)Сканер руд$() — це рішення $(thing)GregTech$() для пошуку рудних жил і покладів рідин у вашому світі. Розмір і можливості рудошукачів залежать від $(#ff1100)рівня напруги$()."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Сканер руд",
+      "images": [
+      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+      ],
+      "border": true,
+      "text": "Приклад того, що ви можете побачити, використовуючи $(#e373ff)LuV сканер руд$()."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:metal/propick/bismuth_bronze": 2,
+    "tfc:metal/propick/black_bronze": 2,
+    "tfc:metal/propick/bronze": 2,
+    "tfc:metal/propick/copper": 2,
+    "tfc:metal/propick/wrought_iron": 2,
+    "tfc:metal/propick/steel": 2,
+    "tfc:metal/propick/black_steel": 2,
+    "tfc:metal/propick/blue_steel": 2,
+    "tfc:metal/propick/red_steel": 2,
+    "gtceu:prospector.lv": 10,
+    "gtceu:prospector.hv": 10,
+    "gtceu:prospector.luv": 10
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Грибница",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Грибница$() используется для выращивания грибов. В него можно поместить грибы и урожай из Нижнего мира. Когда он находится рядом с грибом, он потребляет содержащиеся внутри предметы, чтобы размножить этот гриб в окружающей области, один раз в день."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		}
+	],
+	"read_by_default": true
+}

@@ -1,0 +1,75 @@
+{
+	"name": "Біоми",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "У Безодні є повний набір нових біомів для дослідження! Більшість із них поділяється на дві категорії: $(thing)верхні$() та $(thing)нижні$(). Верхні біоми зустрічаються лише на вищих рівнях, а нижні розташовані ближче до лави."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пишна западина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Вологий і повний зелені! Найгостинніший регіон для облаштування підземної бази."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Гнилісні печери",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Природні утилізатори активно працюють у цьому вологому регіоні, наповненому гнилизною."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Павуче лігво",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "Тут легко здогадатися, хто мешкає! Місце також прикрашене величезними $(thing)травертиновими$() стовпами."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Попелястий ліс",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "Залишки Пишної западини після частих пожеж, викликаних спекою."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Лавові потоки",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "Регіон, багатий на руду $(thing)Піроксеніт$(), переплетений річками лави."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Базальтові дельти",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Улюблений біом Нижнього світу повертається і залишається таким же небезпечним для подорожей, як і завжди."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Глибокі печери",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/deep_caves.png"
+			],
+			"border": true,
+			"text": "Між іншими біомами розташовані більш рівнинні області, Шиферний сланець, сланцю, граніту, діориту і гнейсу.$(br)"
+		}
+	],
+	"read_by_default": true
+}
