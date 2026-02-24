@@ -93,7 +93,7 @@ jobs:
         with:
           upload_sources: true
           upload_translations: false
-          configuration: crowdin.yml
+          config: crowdin.yml
           upload_sources_args: ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
@@ -107,7 +107,7 @@ jobs:
           upload_sources: false
           upload_translations: false
           download_translations: true
-          configuration: crowdin.yml
+          config: crowdin.yml
           localization_branch_name: translations
           create_pull_request: ${{ github.event.inputs.skip_pr != 'true' }}
           pull_request_base_branch_name: 'dev'
