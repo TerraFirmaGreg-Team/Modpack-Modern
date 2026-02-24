@@ -51,6 +51,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -139,10 +143,10 @@ jobs:
           export_only_approved: ${{ github.event.inputs.export_approved_only }}
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
+  
   # Status check job
   status:
     runs-on: ubuntu-latest
