@@ -56,68 +56,92 @@ permissions:
   pull-requests: write
 
 jobs:
-  get-languages:
-    runs-on: ubuntu-latest
-    outputs:
-      languages: ${{ steps.extract-languages.outputs.languages }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+  # get-languages:
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     languages: ${{ steps.extract-languages.outputs.languages }}
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
 
-      - name: Validate configuration
-        run: |
-          echo " Validating Crowdin configuration..."
-          if [ ! -f "crowdin.yml" ]; then
-            echo " crowdin.yml not found"
-            exit 1
-          fi
-          echo " Configuration file found"
+  #     - name: Validate configuration
+  #       run: |
+  #         echo " Validating Crowdin configuration..."
+  #         if [ ! -f "crowdin.yml" ]; then
+  #           echo " crowdin.yml not found"
+  #           exit 1
+  #         fi
+  #         echo " Configuration file found"
         
-      - name: Extract language codes
-        id: extract-languages
-        run: |
-          LANGUAGES=$(yq eval '.files[0].languages_mapping.locale_with_underscore | keys | map(select(. != "en-US" and . != "en-GB" and . != "en"))' crowdin.yml -o json | jq -r '. | map(select(. != null)) | join(" ")')
-          echo "languages=[$(echo "$LANGUAGES" | sed 's/[^ ]\+/"&"/g' | sed 's/ /, /g')]" >> $GITHUB_OUTPUT
-          echo "Found languages: $LANGUAGES"
+  #     - name: Extract language codes
+  #       id: extract-languages
+  #       run: |
+  #         LANGUAGES=$(yq eval '.files[0].languages_mapping.locale_with_underscore | keys | map(select(. != "en-US" and . != "en-GB" and . != "en"))' crowdin.yml -o json | jq -r '. | map(select(. != null)) | join(" ")')
+  #         echo "languages=[$(echo "$LANGUAGES" | sed 's/[^ ]\+/"&"/g' | sed 's/ /, /g')]" >> $GITHUB_OUTPUT
+  #         echo "Found languages: $LANGUAGES"
 
 
-  download-languages:
-    if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
-    needs: get-languages
-    strategy:
-      matrix:
-        language: ${{ fromJson(needs.get-languages.outputs.languages) }}
-      fail-fast: false
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+  # download-single:
+  #   if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
+  #   needs: get-languages
+  #   strategy:
+  #     matrix:
+  #       language: ${{ fromJson(needs.get-languages.outputs.languages) }}
+  #     fail-fast: false
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
         
-      - name: Check if language exists
-        id: check-language
-        run: |
-          echo "Checking if language ${{ matrix.language }} exists in project..."
-          LANG_EXISTS=$(curl -s -H "Authorization: Bearer ${{ secrets.CROWDIN_TOKEN }}" "https://api.crowdin.com/api/v2/projects/${{ vars.CROWDIN_ID }}/languages" | jq -r '.data[] | select(.data.code == "${{ matrix.language }}") | .data.code')
-          if [ -n "$LANG_EXISTS" ]; then
-            echo "language_exists=true" >> $GITHUB_OUTPUT
-            echo "Language ${{ matrix.language }} found"
-          else
-            echo "language_exists=false" >> $GITHUB_OUTPUT
-            echo "Language ${{ matrix.language }} not found, skipping download"
-          fi
+  #     - name: Check if language exists
+  #       id: check-language
+  #       run: |
+  #         echo "Checking if language ${{ matrix.language }} exists in project..."
+  #         LANG_EXISTS=$(curl -s -H "Authorization: Bearer ${{ secrets.CROWDIN_TOKEN }}" "https://api.crowdin.com/api/v2/projects/${{ vars.CROWDIN_ID }}/languages" | jq -r '.data[] | select(.data.code == "${{ matrix.language }}") | .data.code')
+  #         if [ -n "$LANG_EXISTS" ]; then
+  #           echo "language_exists=true" >> $GITHUB_OUTPUT
+  #           echo "Language ${{ matrix.language }} found"
+  #         else
+  #           echo "language_exists=false" >> $GITHUB_OUTPUT
+  #           echo "Language ${{ matrix.language }} not found, skipping download"
+  #         fi
           
-      - name: Download Single Language
-        if: steps.check-language.outputs.language_exists == 'true'
+  #     - name: Download Single Language
+  #       if: steps.check-language.outputs.language_exists == 'true'
+  #       uses: crowdin/github-action@v2.15.0
+  #       with:
+  #         upload_sources: false
+  #         download_translations: true
+  #         config: crowdin.yml
+  #         download_language: ${{ matrix.language }}
+  #         localization_branch_name: translations
+  #         create_pull_request: false
+  #         skip_untranslated_files: true
+  #         commit_message: "[translation] New translations (${{ matrix.language }})"
+  #         export_only_approved: ${{ github.event.inputs.export_approved_only }}
+  #         dry_run: ${{ github.event.inputs.dry_run == 'true' }}
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+  #         CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
+  download:
+    if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Download Languages
         uses: crowdin/github-action@v2.15.0
         with:
           upload_sources: false
           download_translations: true
           config: crowdin.yml
-          download_language: ${{ matrix.language }}
           localization_branch_name: translations
           create_pull_request: false
           skip_untranslated_files: true
-          commit_message: "[translation] New translations (${{ matrix.language }})"
+          commit_message: "[translation] New translations"
           export_only_approved: ${{ github.event.inputs.export_approved_only }}
           dry_run: ${{ github.event.inputs.dry_run == 'true' }}
         env:
@@ -127,7 +151,7 @@ jobs:
 
   create-pr:
     if: github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule')
-    needs: [download-languages, get-languages]
+    needs: [download]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
