@@ -48,7 +48,7 @@ const materials = [
     {materialName: 'yellow_garnet_tfc', nameColor: '#bbc207', itemName: 'gtceu:exquisite_yellow_garnet_gem', indexNumber: 0.178},
     {materialName: 'monazite_tfc', nameColor: '#9eb576', itemName: 'gtceu:exquisite_monazite_gem', indexNumber: 0.179},
     {materialName: 'rose_quartz_tfc', nameColor: '#ba3458', itemName: 'greate:exquisite_rose_quartz_gem', indexNumber: 0.161},
-    {materialName: 'fluix_tfc', nameColor: '#53458d', itemName: 'ae2:fluix_crystal', indexNumber: 0.162},
+    {materialName: 'fluix_tfc', nameColor: '#53458d', itemName: 'tfg:exquisite_fluix_gem', indexNumber: 0.162},
     //Metals
     {materialName: 'silver_tfc', nameColor: '#d8d8f4', itemName: 'vintageimprovements:silver_sheet', indexNumber: 0.162},
     {materialName: 'sterling_silver_tfc', nameColor: '#eae5d3', itemName: 'gtceu:sterling_silver_plate', indexNumber: 0.163},
