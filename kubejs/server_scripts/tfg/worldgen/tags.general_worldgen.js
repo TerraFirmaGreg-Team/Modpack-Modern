@@ -95,6 +95,7 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:mineable/shovel', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', 'tfg:ash_pile')
 	event.add('minecraft:replaceable', 'tfg:pile/black_sand')
@@ -111,6 +112,7 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:replaceable', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:replaceable', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:replaceable', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', '#tfc:loose_rocks')
 }
