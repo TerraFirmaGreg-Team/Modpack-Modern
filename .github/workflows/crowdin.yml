@@ -84,7 +84,7 @@ jobs:
 
   download-languages:
     if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
-    needs: sync
+    needs: get-languages
     strategy:
       matrix:
         language: ${{ fromJson(needs.get-languages.outputs.languages) }}
