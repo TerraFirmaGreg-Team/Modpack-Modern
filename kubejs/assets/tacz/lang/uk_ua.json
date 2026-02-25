@@ -59,6 +59,8 @@
   "config.tacz.client.render.disable_movement_fov.desc": "Вимикає ефект швидкості, коли зброя в руках.",
   "config.tacz.client.render.enable_tooltip_id": "Показати TACZ ID",
   "config.tacz.client.render.enable_tooltip_id.desc": "Показувати ID зброї/набоїв/модулів у підказці предмета, коли ввімкнено розширені підказки (F3+H)",
+  "config.tacz.client.render.enable_translucent": "Enable Block Entity Translucent",
+  "config.tacz.client.render.enable_translucent.desc": "Should enable translucent while rendering block entity like gunsmith table or statue. Enable this option will result in ADDITIONAL PERFORMANCE OVERHEAD.",
   "config.tacz.client.render.first_person_bullet_tracer_enable": "Увімкнути трасування куль від першої особи",
   "config.tacz.client.render.first_person_bullet_tracer_enable.desc": "Промальовувати чи ні слід від кулі від першої особи",
   "config.tacz.client.render.gun_hud_enable": "Увімкнути інтерфейс зброї",
