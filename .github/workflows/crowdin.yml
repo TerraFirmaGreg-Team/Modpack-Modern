@@ -84,6 +84,7 @@ jobs:
           upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' }}
           upload_translations: false
           import_eq_suggestions: true
+          skip_untranslated_files: true
           download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' }}
           config: crowdin.yml
           localization_branch_name: translations
