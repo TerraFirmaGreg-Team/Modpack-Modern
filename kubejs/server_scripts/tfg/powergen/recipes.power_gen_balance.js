@@ -13,7 +13,7 @@ function registerTFGPowerGenBalance(event) {
     //#endregion
 
     //#region Nerf/Removed
-/* COMMENT OUT UNTIL WE WANT TO ENABLE THE NERF
+
 	event.remove({ id: 'gtceu:gas_turbine/benzene' })
 	event.recipes.gtceu.gas_turbine('tfg:benzene')
 		.inputFluids(Fluid.of('gtceu:benzene', 1))
@@ -29,7 +29,15 @@ function registerTFGPowerGenBalance(event) {
 		.EUt(-32)
         .dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
-*/
+
+	event.remove({ id: 'gtceu:combustion_generator/naphtha' })
+	event.recipes.gtceu.combustion_generator('tfg:naphtha')
+		.inputFluids(Fluid.of('gtceu:naphtha', 1))
+		.duration(20*0.1)
+		.EUt(-32)
+        .dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
     // Remove Light fuel ability as a fuel
 
 	event.remove({ id: 'gtceu:combustion_generator/sulfuric_light_fuel' })
@@ -62,11 +70,23 @@ function registerTFGPowerGenBalance(event) {
 		.heated()
 		.id('tfg:vi/vacuumizing/light_fuel_from_oil')
 
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:light_fuel', 250), [Fluid.of('gtceu:flowing_oil', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_flowing_oil')
+
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:light_fuel', 50), [Fluid.of('gtceu:oil_light', 1000)])
 		.secondaryFluidOutput(0)
 		.processingTime(500)
 		.heated()
 		.id('tfg:vi/vacuumizing/light_fuel_from_light_oil')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:light_fuel', 50), [Fluid.of('gtceu:flowing_oil_light', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_flowing_light_oil')
 
     // Raw Oil to Naphtha
 
@@ -76,6 +96,12 @@ function registerTFGPowerGenBalance(event) {
 		.heated()
 		.id('tfg:vi/vacuumizing/light_fuel_from_raw_oil')
 
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:naphtha', 500), [Fluid.of('gtceu:flowing_oil_medium', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/light_fuel_from_flowing_raw_oil')
+
     // Heavy oil to Heavy Fuel
 
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:heavy_fuel', 750), [Fluid.of('gtceu:oil_heavy', 1000)])
@@ -83,6 +109,12 @@ function registerTFGPowerGenBalance(event) {
 		.processingTime(500)
 		.heated()
 		.id('tfg:vi/vacuumizing/heavy_fuel_from_heavy_oil')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:heavy_fuel', 750), [Fluid.of('gtceu:flowing_oil_heavy', 1000)])
+		.secondaryFluidOutput(0)
+		.processingTime(500)
+		.heated()
+		.id('tfg:vi/vacuumizing/heavy_fuel_from_flowing_heavy_oil')
 
     // Switch HOG to require IV Energy Hatch
         

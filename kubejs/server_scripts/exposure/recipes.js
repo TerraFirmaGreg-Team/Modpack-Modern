@@ -39,6 +39,17 @@ const registerExposureRecipes = (event) => {
 		'minecraft:writable_book', 'minecraft:paper', 'minecraft:paper'
 	]).id('exposure:album')
 
+	// Camera stand
+	event.shaped('exposure:camera_stand', [
+		' A ',
+		'BBB',
+		'C C'
+	], {
+		A: '#forge:rings',
+		B: '#tfc:lumber',
+		C: '#forge:smooth_stone_slab'
+	}).id('exposure:camera_stand')
+
 	// Film
 	event.shaped('exposure:black_and_white_film', [
 		'ABB',
@@ -52,6 +63,19 @@ const registerExposureRecipes = (event) => {
 		E: 'tfc:food/dried_kelp',
 	}).id('exposure:black_and_white_film')
 
+	event.shaped('exposure:high_sensitivity_black_and_white_film', [
+		'ABB',
+		'CDD',
+		'FEE'
+	], {
+		A: '#forge:rings/wrought_iron',
+		B: '#forge:dyes/white',
+		C: '#forge:foils/wrought_iron',
+		D: '#forge:dusts/gunpowder',
+		E: 'tfc:food/dried_kelp',
+		F: '#forge:dusts/glowstone'
+	}).id('exposure:high_sensitivity_black_and_white_film')
+
 	event.shaped('exposure:color_film', [
 		'ABB',
 		'CDD',
@@ -63,6 +87,19 @@ const registerExposureRecipes = (event) => {
 		D: '#forge:foils/gold',
 		E: 'tfc:food/dried_kelp',
 	}).id('exposure:color_film')
+
+	event.shaped('exposure:high_sensitivity_color_film', [
+		'ABB',
+		'CDD',
+		'FEE'
+	], {
+		A: '#forge:rings/wrought_iron',
+		B: '#forge:dyes/blue',
+		C: '#forge:foils/wrought_iron',
+		D: '#forge:foils/gold',
+		E: 'tfc:food/dried_kelp',
+		F: '#forge:dusts/glowstone'
+	}).id('exposure:high_sensitivity_color_film')
 
 	// Creating the developer
 
@@ -128,6 +165,11 @@ const registerExposureRecipes = (event) => {
 		.outputItem(TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass())
 		.id('tfg:barrel/develop_black_and_white_film')
 
+	event.recipes.tfc.barrel_sealed(4000)
+		.inputs('exposure:high_sensitivity_black_and_white_film', Fluid.of('tfg:bw_photographic_developer', 250))
+		.outputItem(TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass())
+		.id('tfg:barrel/develop_high_sensitivity_black_and_white_film')
+
 	event.recipes.gtceu.food_processor('black_and_white_film')
 		.itemInputs('exposure:black_and_white_film')
 		.inputFluids(Fluid.of('tfg:bw_photographic_developer', 250))
@@ -140,11 +182,28 @@ const registerExposureRecipes = (event) => {
 		TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
 		[])
 
+	event.recipes.gtceu.food_processor('high_sensitivity_black_and_white_film')
+		.itemInputs('exposure:high_sensitivity_black_and_white_film')
+		.inputFluids(Fluid.of('tfg:bw_photographic_developer', 250))
+		.itemOutputs('exposure:developed_black_and_white_film')
+		.duration(60 * 20)
+		.EUt(2)
+
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/high_sensitivity_black_and_white_film',
+		[Ingredient.of('exposure:high_sensitivity_black_and_white_film')],
+		TFC.isp.of('exposure:developed_black_and_white_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
+		[])
+
 	// Developing color film
 	event.recipes.tfc.barrel_sealed(4000)
 		.inputs('exposure:color_film', Fluid.of('tfg:color_photographic_developer', 250))
 		.outputItem(TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt'))
 		.id('tfg:barrel/develop_color_film')
+
+	event.recipes.tfc.barrel_sealed(4000)
+		.inputs('exposure:high_sensitivity_color_film', Fluid.of('tfg:color_photographic_developer', 250))
+		.outputItem(TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt'))
+		.id('tfg:barrel/develop_high_sensitivity_color_film')
 
 	event.recipes.gtceu.food_processor('color_film')
 		.itemInputs('exposure:color_film')
@@ -155,6 +214,18 @@ const registerExposureRecipes = (event) => {
 
 	$ISPRecipeLogic.RegisterRecipeData('food_processor/color_film',
 		[Ingredient.of('exposure:color_film')],
+		TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
+		[])
+
+	event.recipes.gtceu.food_processor('high_sensitivity_color_film')
+		.itemInputs('exposure:high_sensitivity_color_film')
+		.inputFluids(Fluid.of('tfg:color_photographic_developer', 250))
+		.itemOutputs('exposure:developed_color_film')
+		.duration(60 * 20)
+		.EUt(2)
+
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/high_sensitivity_color_film',
+		[Ingredient.of('exposure:high_sensitivity_color_film')],
 		TFC.isp.of('exposure:developed_color_film').simpleModifier('tfg:copy_nbt').asCanonClass(),
 		[])
 }

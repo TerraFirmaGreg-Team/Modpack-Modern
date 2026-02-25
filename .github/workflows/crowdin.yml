@@ -1,0 +1,302 @@
+name: "Crowdin Translations"
+run-name: "[🌐]: Crowdin Translations #${{ github.run_number }}"
+
+on:
+  push:
+    branches: [dev]
+    paths:
+      - 'kubejs/assets/**/lang/en_us.json'
+      - 'kubejs/assets/**/patchouli_books/**/en_us/**/*.json'
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'Operation type'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - upload
+          - download
+          - both
+          - status
+      force_upload:
+        description: 'Force upload all sources'
+        required: false
+        default: false
+        type: boolean
+      skip_pr:
+        description: 'Skip pull request creation'
+        required: false
+        default: false
+        type: boolean
+      download_language:
+        description: 'Download specific language only (optional, e.g., ru, zh_cn)'
+        required: false
+        type: string
+      export_approved_only:
+        description: 'Export only approved translations'
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: 'Dry run mode (no actual changes)'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # get-languages:
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     languages: ${{ steps.extract-languages.outputs.languages }}
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
+
+  #     - name: Validate configuration
+  #       run: |
+  #         echo " Validating Crowdin configuration..."
+  #         if [ ! -f "crowdin.yml" ]; then
+  #           echo " crowdin.yml not found"
+  #           exit 1
+  #         fi
+  #         echo " Configuration file found"
+        
+  #     - name: Extract language codes
+  #       id: extract-languages
+  #       run: |
+  #         LANGUAGES=$(yq eval '.files[0].languages_mapping.locale_with_underscore | keys | map(select(. != "en-US" and . != "en-GB" and . != "en"))' crowdin.yml -o json | jq -r '. | map(select(. != null)) | join(" ")')
+  #         echo "languages=[$(echo "$LANGUAGES" | sed 's/[^ ]\+/"&"/g' | sed 's/ /, /g')]" >> $GITHUB_OUTPUT
+  #         echo "Found languages: $LANGUAGES"
+
+
+  # download-single:
+  #   if: github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule'
+  #   needs: get-languages
+  #   strategy:
+  #     matrix:
+  #       language: ${{ fromJson(needs.get-languages.outputs.languages) }}
+  #     fail-fast: false
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
+        
+  #     - name: Check if language exists
+  #       id: check-language
+  #       run: |
+  #         echo "Checking if language ${{ matrix.language }} exists in project..."
+  #         LANG_EXISTS=$(curl -s -H "Authorization: Bearer ${{ secrets.CROWDIN_TOKEN }}" "https://api.crowdin.com/api/v2/projects/${{ vars.CROWDIN_ID }}/languages" | jq -r '.data[] | select(.data.code == "${{ matrix.language }}") | .data.code')
+  #         if [ -n "$LANG_EXISTS" ]; then
+  #           echo "language_exists=true" >> $GITHUB_OUTPUT
+  #           echo "Language ${{ matrix.language }} found"
+  #         else
+  #           echo "language_exists=false" >> $GITHUB_OUTPUT
+  #           echo "Language ${{ matrix.language }} not found, skipping download"
+  #         fi
+          
+  #     - name: Download Single Language
+  #       if: steps.check-language.outputs.language_exists == 'true'
+  #       uses: crowdin/github-action@v2.15.0
+  #       with:
+  #         upload_sources: false
+  #         download_translations: true
+  #         config: crowdin.yml
+  #         download_language: ${{ matrix.language }}
+  #         localization_branch_name: translations
+  #         create_pull_request: false
+  #         skip_untranslated_files: true
+  #         commit_message: "[translation] New translations (${{ matrix.language }})"
+  #         export_only_approved: ${{ github.event.inputs.export_approved_only }}
+  #         dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+  #         CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
+  upload:
+    if: github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Upload Sources
+        uses: crowdin/github-action@v2.15.0
+        with:
+          upload_sources: true
+          upload_translations: false
+          upload_sources_args: "--auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
+          config: crowdin.yml
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
+  download:
+    if: github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule')
+    needs: [upload]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate source files
+        run: |
+          echo " Validating source language files..."
+          
+          # Check for required English source files
+          find kubejs/assets -name "en_us.json" -type f | while read file; do
+            echo " Found source file: $file"
+            # Basic JSON validation
+            if ! jq empty "$file" 2>/dev/null; then
+              echo " Invalid JSON in $file"
+              exit 1
+            fi
+          done
+          
+          echo " All source files are valid JSON"
+
+      - name: Cache Crowdin source files
+        uses: actions/cache@v4
+        with:
+          path: ~/.crowdin/cache.json
+          key: ${{ runner.os }}-crowdin-cache-${{ github.ref_name }}-${{ hashFiles('**/crowdin.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-crowdin-cache-${{ github.ref_name }}-
+        
+      - name: Create Pull Request
+        uses: crowdin/github-action@v2.15.0
+        with:
+          upload_sources: false
+          upload_translations: false
+          download_translations: true
+          config: crowdin.yml
+          localization_branch_name: translations
+          skip_untranslated_files: true
+          download_language: ${{ github.event.inputs.download_language }}
+          export_only_approved: ${{ github.event.inputs.export_approved_only }}
+          commit_message: "[translation] New translations"
+          dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
+          create_pull_request: ${{ github.event.inputs.skip_pr != 'true' }}
+          pull_request_base_branch_name: 'dev'
+          pull_request_team_reviewers: 'modern-team'
+          pull_request_title: "[🌐]: New Crowdin translations"
+          pull_request_labels: "Pull request: Translation"
+          pull_request_body: |
+            ## 🌐 New translations from Crowdin
+            
+            ### 📋 Summary
+            - **Trigger**: ${{ github.event_name }}
+            - **Operation**: ${{ github.event.inputs.operation || 'auto-sync' }}
+            - **Languages**: ${{ needs.get-languages.outputs.languages }}
+            - **Approved only**: ${{ github.event.inputs.export_approved_only || 'false' }}
+            
+            ### 🔄 Changes
+            - Updated JSON translation files for all languages
+            - Patchouli book translations
+            - Language-specific improvements
+            
+            ### 🧪 Testing
+            Please test the translations in-game:
+            1. Switch to different languages
+            2. Check mod descriptions and tooltips
+            3. Verify Patchouli guide content
+            
+            ---
+            *Automated by [Crowdin GitHub Action](https://github.com/crowdin/github-action)*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
+  # Status check job
+  status:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.operation == 'status'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get Project Info
+        id: project-info
+        run: |
+          # Get project name from Crowdin API
+          PROJECT_INFO=$(curl -s -H "Authorization: Bearer ${{ secrets.CROWDIN_TOKEN }}" "https://api.crowdin.com/api/v2/projects/${{ vars.CROWDIN_ID }}")
+          PROJECT_NAME=$(echo "$PROJECT_INFO" | jq -r '.data.name')
+          echo "project-name=$PROJECT_NAME" >> $GITHUB_OUTPUT
+          echo "Project name: $PROJECT_NAME"
+
+      - name: Crowdin Translations Progress
+        uses: crowdin/github-action@v2.15.0
+        with:
+          command: 'status translation'
+          config: crowdin.yml
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_ID: ${{ vars.CROWDIN_ID }}
+
+      - name: Generate Status Report
+        run: |
+          echo "## 🌐 Crowdin Translation Status Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Project ID**: ${{ vars.CROWDIN_ID }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Project Name**: ${{ steps.project-info.outputs.project-name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Language Filter**: ${{ github.event.inputs.download_language || 'All languages' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Generated**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Get detailed language statistics using Crowdin CLI
+          echo "### 📊 Language Statistics" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -n "${{ github.event.inputs.download_language }}" ]; then
+            echo "🔍 **Selected Language**: ${{ github.event.inputs.download_language }}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            # Get status for specific language
+            LANG_STATUS=$(crowdin status translation --language ${{ github.event.inputs.download_language }} --format json 2>/dev/null | jq -r '.languages[] | select(.code == "${{ github.event.inputs.download_language }}") | "\(.code): \(.progress.translated)% translated, \(.progress.approved)% approved"')
+            if [ -n "$LANG_STATUS" ]; then
+              echo "- **Progress**: $LANG_STATUS" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- **Status**: Language not found in project" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "🌍 **All Languages Overview**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            # Get overall project statistics
+            crowdin status translation --format json 2>/dev/null | jq -r '.languages[] | "\(.code): \(.progress.translated)% translated, \(.progress.approved)% approved"' | while read line; do
+              echo "$line" >> $GITHUB_STEP_SUMMARY
+            done
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📈 Overall Project Progress" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Get overall statistics
+          OVERALL_STATS=$(crowdin status translation --format json 2>/dev/null | jq -r '"Overall: \(.progress.translated)% translated, \(.progress.approved)% approved, \(.progress.words.total) total words"')
+          if [ -n "$OVERALL_STATS" ]; then
+            echo "$OVERALL_STATS" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📋 Quick Actions" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 🔗 [Crowdin Dashboard](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }})" >> $GITHUB_STEP_SUMMARY
+          echo "- 📊 [Translation Management](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }}/reports)" >> $GITHUB_STEP_SUMMARY
+          echo "- 🌐 [Language Settings](https://crowdin.com/project/${{ steps.project-info.outputs.project-name }}/settings#languages)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Use detailed statistics above to review translation progress." >> $GITHUB_STEP_SUMMARY

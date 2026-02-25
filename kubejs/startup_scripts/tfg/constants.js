@@ -93,22 +93,6 @@ global.VENUS_BIOMES = [
 ]
 
 /**
- * @type {string[]} - Block Names
- */
-global.TFG_MACHINE_CASINGS = [
-	'machine_casing_clean_stainless_steel_desh',
-	'machine_casing_desh_ptfe',
-	'machine_casing_iron_desh',
-	'machine_casing_ptfe_desh',
-	'machine_casing_stainless_steel_desh',
-	'machine_casing_blue_solar_panel',
-	'machine_casing_green_solar_panel',
-	'machine_casing_red_solar_panel',
-	'machine_casing_mars',
-	'machine_casing_ostrum_carbon'
-];
-
-/**
  * @type {string[]} - Circuit Tiers
  */
 global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
@@ -252,3 +236,19 @@ global.FISH_INDEX = [
 	{ id: 'tfc:pufferfish', item: 'minecraft:pufferfish', parent: 'tfc:bucket/pufferfish', dimension: null },
 	{ id: 'wan_ancient_beasts:toxlacanth', item: 'wan_ancient_beasts:toxlacanth', parent: 'wan_ancient_beasts:toxlacanth_bucket', dimension: 'ad_astra:mars' }
 ];
+
+/**
+ * @type {string[]} - Saws unable to silk harvest ice
+ */
+global.ICE_SAW_BLACKLIST = [
+	"gtceu:damascus_steel_saw",
+	"gtceu:steel_saw",
+	"gtceu:bronze_saw",
+	"gtceu:bismuth_bronze_saw",
+	"gtceu:copper_saw",
+	"gtceu:cobalt_brass_saw",
+	"gtceu:black_steel_saw",
+	"gtceu:black_bronze_saw",
+	"gtceu:wrought_iron_saw",
+	"gtceu:invar_saw"
+]

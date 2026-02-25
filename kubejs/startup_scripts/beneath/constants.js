@@ -51,3 +51,8 @@ global.BENEATH_DISABLED_ITEMS = [
 	"beneath:wood/sapling/crimson",
 	"beneath:wood/sapling/warped"
 ];
+
+global.BENEATH_WOOD_TYPES = /** @type {const} */ ([
+    "crimson", 
+	"warped"
+]);

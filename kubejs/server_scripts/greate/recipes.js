@@ -88,7 +88,6 @@ function registerGreateRecipes(event) {
 	// #region Gearboxes
 
 	global.AVAILABLE_GREATE_MATERIAL_TIERS.forEach(tier => {
-
 		event.shaped(`greate:${tier}_gearbox`, [
 			' A ',
 			'ABA',
@@ -1121,8 +1120,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo().addMaterialInfo(true)
 
 	// #endregion
-
-	event.recipes.gtceu.shaped('greate:wire_coating_factory', [
+		event.recipes.gtceu.shaped('greate:wire_coating_factory', [
 		'ABA',
 		'CDC',
 		'ABA'

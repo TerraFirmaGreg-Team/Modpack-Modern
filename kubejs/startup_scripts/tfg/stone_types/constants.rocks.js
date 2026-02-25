@@ -795,6 +795,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:venus'],
 		pillar: 'create:scoria_pillar',
 		pillar2: 'create:layered_scoria',
+		stonecutterTag: 'create:stone_types/scoria',
 		raw: generateFormsExisting('scoria', 'tfg:rock/%s', { 
 			block: 'create:scoria',
 			texture: 'create:block/palettes/stone_types/scoria'
@@ -819,6 +820,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		dimensions: ['ad_astra:moon', 'ad_astra:mars', 'ad_astra:venus'],
 		pillar: 'create:scorchia_pillar',
 		pillar2: 'create:layered_scorchia',
+		stonecutterTag: 'create:stone_types/scorchia',
 		raw: generateFormsExisting('scorchia', 'tfg:rock/%s', {
 			block: 'create:scorchia',
 			texture: 'create:block/palettes/stone_types/scorchia'

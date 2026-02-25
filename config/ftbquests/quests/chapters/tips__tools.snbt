@@ -424,7 +424,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"3C173357029AB649"
+				"4CD3F04793CE47A2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.backpack_materials.desc}"]
 			id: "7178843BCD50A012"
 			size: 1.0d
@@ -2502,7 +2507,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"560B17BFBE8D477D"
+			]
 			description: ["{quests.tfg_tips.first_sacks.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/leather_sack"
 			id: "509C064AA92FD78F"
@@ -2576,6 +2584,7 @@
 			dependencies: [
 				"509C064AA92FD78F"
 				"234B68E86F72C29E"
+				"4CD3F04793CE47A2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
@@ -2643,7 +2652,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["7FA5B6354A49C396"]
+			dependencies: [
+				"7FA5B6354A49C396"
+				"015E7A116CCD3191"
+			]
 			description: ["{quests.tfg_tips.straw_basket.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/straw_basket"
 			id: "67F40A90844EC0FC"
@@ -2728,6 +2740,7 @@
 				}
 			}
 			id: "379F434116632A89"
+			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.tools_tips.mattocks.subtitle}"

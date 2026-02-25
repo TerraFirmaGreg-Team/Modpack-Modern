@@ -547,7 +547,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石鹽",
+      "name": "岩盐",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -1377,7 +1377,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 63%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₃O₄",
+      "text": "$(thing)百分比$(): 60%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -1397,7 +1397,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 22%$(br)$(thing)来源$(): 铁, 钒$(br)$(thing)化学式$(): (Fe₃O₄)V",
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)来源$(): 铁, 钒$(br)$(thing)化学式$(): (Fe₃O₄)V",
       "type": "patchouli:multiblock"
     },
     {
@@ -1417,7 +1417,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 9%$(br)$(thing)熔化$(): 金$(br)$(thing)化学式$(): Au",
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 金$(br)$(thing)化学式$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -1437,7 +1437,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 4%$(br)$(thing)来源$(): 铬$(br)$(thing)化学式$(): FeCr₂O₄$(br)$(thing)危害$(): $(c)$(t:需要橡胶手套)刺激性 (皮肤接触)$(/t)$()",
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 铬$(br)$(thing)化学式$(): FeCr₂O₄$(br)$(thing)危害$(): $(c)$(t:需要橡胶手套)刺激性 (皮肤接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1924,7 +1924,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/190 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 210$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/230 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -32 — 140$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩, 花岗岩, 辉长岩, 闪长岩",
       "title": "蓝晶石, 云母, 铝土矿",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2675,7 +2675,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/170 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -32 — 60$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 12$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -32 — 60$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 12$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
       "title": "金矿, 褐铁矿, 赤铁矿",
       "type": "patchouli:text",
       "anchor": "normal_gold"
@@ -3219,7 +3219,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石鹽",
+      "name": "岩盐",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -3828,7 +3828,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/200 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 217$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/250 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 20 — 217$(br)$(thing)尺寸$(): 50$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "黄铜矿, 雄黄",
       "type": "patchouli:text",
       "anchor": "surface_copper"
@@ -3870,7 +3870,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "text": "$(thing)百分比$(): 22%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -3892,31 +3892,6 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 砷$(br)$(thing)化学式$(): As₄S₄$(br)$(thing)危害$(): $(c)$(t:需要面罩)砷中毒 (吸入)$(/t)$()",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "锡石矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cassiterite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 锡$(br)$(thing)化学式$(): SnO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

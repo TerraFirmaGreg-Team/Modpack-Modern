@@ -3,12 +3,6 @@
 
 function registerTFCGurmanRecipes(event) {
 
-	let deprecated = Ingredient.of('#tfc_gourmet:deprecated_foods').itemIds.toArray();
-	deprecated.forEach(oldID => {
-		let newID = `${oldID}`.replace(/tfc_gurman:/g, 'tfc_gourmet:');
-		event.shapeless(newID, oldID);
-	})
-
 	//#region Food Oven Recipes
 
 	global.cookingRecipe(event, 'margarita_pizza', 'tfc_gourmet:raw_margarita_pizza', 'tfc_gourmet:margarita_pizza');
@@ -123,7 +117,7 @@ function registerTFCGurmanRecipes(event) {
 
 	// Kvass
 	global.processorRecipe(event, 'kvass', 2400, GTValues.VHA[GTValues.LV], {
-		itemInputs: ['2x #tfc:foods/grains'],
+		itemInputs: ['2x #tfc_gourmet:foods/kvass_grains'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gourmet:kvass 1000'],
 		circuit: 2
@@ -472,6 +466,15 @@ function registerTFCGurmanRecipes(event) {
 		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:fresh_onion_soup').simpleModifier('tfg:force_add_bowl').copyOldestFood()
 	});
 
+	// French onion soup with toast
+	global.processorRecipe(event, 'potato_stew', 300, GTValues.VA[GTValues.LV], {
+		itemInputs: ['2x tfc:food/potato', '#tfc:foods/raw_meats', 'tfc:food/onion'],
+		fluidInputs: ['minecraft:water 1000'],
+		itemOutputs: ['3x tfc_gourmet:potato_stew'],
+		circuit: 20,
+		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:potato_stew').simpleModifier('tfg:force_add_bowl').copyOldestFood()
+	});
+
 	// Raw Croissants
 	global.processorRecipe(event, 'raw_croissants', 300, GTValues.VA[GTValues.LV], {
 		itemInputs: ['#tfc:foods/flour', 'firmalife:food/butter', '#forge:eggs'],
@@ -506,28 +509,32 @@ function registerTFCGurmanRecipes(event) {
 		itemInputs: ["tfc:plant/foxglove"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_mint_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_mint_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_chamomile', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/lilac"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_chamomile_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_chamomile_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_rosehip', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/rose"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_rosehip_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_rosehip_leaves')
 	});
 
 	global.processorRecipeText(event, 'dried_nettle', 200, GTValues.VA[GTValues.LV], "tfg.food_recipe.drying", {
 		itemInputs: ["tfc:plant/trillium"],
 		fluidInputs: ['gtceu:nitrogen 100'],
 		itemOutputs: ["tfc_gourmet:dried_nettle_leaves"],
-		circuit: 6
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:dried_nettle_leaves')
 	});
 	// #endregion Drying
 

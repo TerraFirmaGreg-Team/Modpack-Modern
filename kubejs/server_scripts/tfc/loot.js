@@ -1,6 +1,9 @@
 // priority: 0
 "use strict";
-
+/**
+ * 
+ * @param {Internal.LootModificationEventJS} event 
+ */
 function registerTFCLoots(event) {
 	// Hostile animals
 
@@ -352,7 +355,14 @@ function registerTFCLoots(event) {
 
 	event.addBlockLootModifier('minecraft:ice')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
+	
+	event.addBlockLootModifier('minecraft:ice')
+		.not(n => n.matchMainHand("#tfg:silk_harvest_ice"))
 		.addLoot('firmalife:ice_shavings')
+
+	event.addBlockLootModifier('minecraft:ice')
+		.matchMainHand("#tfg:silk_harvest_ice")
+		.addLoot('minecraft:ice');
 
 	event.addBlockLootModifier('minecraft:packed_ice')
 		.not(n => n.matchMainHand("#forge:tools/saws"))

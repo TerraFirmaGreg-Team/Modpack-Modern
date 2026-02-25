@@ -22,7 +22,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/maple_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
+			],
 			"text": "$(thing)Производит$(): Кленовый сок$(br)$(thing)Перерабатывается в $(): Кленовый сахар",
 			"border": true
 		},
@@ -36,7 +38,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/birch_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
+			],
 			"text": "$(thing)Производит$(): Берёзовый сок$(br)$(thing)Перерабатывается в $(): Берёзовый сахар",
 			"border": true
 		},
@@ -50,7 +54,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/hevea_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
+			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
 		},
@@ -64,7 +70,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
+			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
 		},
@@ -78,7 +86,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/kapok_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
+			],
 			"text": "$(thing)Производит$(): Латекс$(br)$(thing)Перерабатывается в $(): Липкая смола & Резина",
 			"border": true
 		},
@@ -92,7 +102,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/aspen_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
+			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
 		},
@@ -106,7 +118,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/spruce_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
+			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
 		},
@@ -120,7 +134,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
+			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
 		},
@@ -134,7 +150,9 @@
 		},
 		{
 			"type": "patchouli:image",
-			"images": [ "tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png" ],
+			"images": [
+			"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
+			],
 			"text": "$(thing)Производит$(): Хвойная смола$(br)$(thing)Перерабатывается в $(): Липкая смола & Хвойная канифоль",
 			"border": true
 		}

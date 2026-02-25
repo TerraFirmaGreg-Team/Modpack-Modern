@@ -1,0 +1,6 @@
+{
+  "fluid": "gtceu:flowing_oil_heavy",
+  "burnTime": 50,
+  "superHeat": false,
+  "amountConsumedPerTick" : 5
+}

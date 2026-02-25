@@ -3,7 +3,7 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 50,
-    "rarity": 200,
+    "rarity": 250,
     "density": 0.25,
     "min_y": 20,
     "max_y": 217,
@@ -20,11 +20,7 @@
           },
           {
             "block": "gtceu:rhyolite_zeolite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:rhyolite_cassiterite_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:rhyolite_realgar_ore",
@@ -44,11 +40,7 @@
           },
           {
             "block": "gtceu:basalt_zeolite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:basalt_cassiterite_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:basalt_realgar_ore",
@@ -67,11 +59,7 @@
           },
           {
             "block": "gtceu:andesite_zeolite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:andesite_cassiterite_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:andesite_realgar_ore",
@@ -90,11 +78,7 @@
           },
           {
             "block": "gtceu:dacite_zeolite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:dacite_cassiterite_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:dacite_realgar_ore",
@@ -115,11 +99,7 @@
         },
         {
           "block": "gtceu:zeolite_indicator",
-          "weight": 15
-        },
-        {
-          "block": "tfc:ore/small_cassiterite",
-          "weight": 5
+          "weight": 20
         },
         {
           "block": "gtceu:realgar_bud_indicator",

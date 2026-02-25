@@ -79,7 +79,11 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.DRILL_IV,
 		GTToolType.SCREWDRIVER,
 		GTToolType.SCREWDRIVER_LV,
+		GTToolType.SCREWDRIVER_HV,
+		GTToolType.SCREWDRIVER_IV,
 		GTToolType.CHAINSAW_LV,
+		GTToolType.CHAINSAW_HV,
+		GTToolType.CHAINSAW_IV,
 		GTToolType.WRENCH,
 		GTToolType.WRENCH_LV,
 		GTToolType.WRENCH_HV,
@@ -221,16 +225,16 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_TFC_ORE);
 
 	// Other materials that are compatible with TFC
-	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW);
-	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
+	GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_BOLT_SCREW, HAS_TFC_UTILITY);
+	GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_UTILITY);
 
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
@@ -287,6 +291,7 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.Zinc.addFlags(GENERATE_LONG_ROD);
+	GTMaterials.Bismuth.addFlags(GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_SPRING, GENERATE_SMALL_GEAR, GENERATE_FOIL);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);
@@ -337,7 +342,7 @@ const registerGTCEuMaterialModification = (event) => {
 	// Unhiding elements
 	GTMaterials.Zirconium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
 	GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
-	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, 'mid', GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
+	GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4200, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.EV], 1300, GTValues.VA[GTValues.HV], 14.7*20));
 	GTMaterials.Zirconium.addFlags(GENERATE_FINE_WIRE, GENERATE_PLATE, GENERATE_DENSE, NO_ORE_SMELTING);
 	
 	// Tools
@@ -355,9 +360,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
+	GTMaterials.Iron.getProperties().removeProperty(PropertyKey.TOOL);
 	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 1.0, 20, 2, [GTToolType.PICKAXE]).build());
 	// Hide netherite too
-	GTMaterials.Netherite.getProperty(PropertyKey.TOOL).removeTypes(metalTooling);
+	GTMaterials.Netherite.getProperties().removeProperty(PropertyKey.TOOL);
 
 	for (let material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		let toolProperty = material.getProperty(PropertyKey.TOOL);

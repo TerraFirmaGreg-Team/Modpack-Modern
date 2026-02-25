@@ -3,6 +3,8 @@
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFLPlanters(event) {
+	const $FarmlandBlockEntity = Java.loadClass("net.dries007.tfc.common.blockentities.FarmlandBlockEntity")
+
 	event.firmalifePlantable(
 		"tfg:sunflower_seeds",
 		"large",
@@ -11,7 +13,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"tfg:sunflower_seeds",
 		"tfg:sunflower_product",
-		"nitrogen",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
 		[
 			"tfg:block/crop/sunflower_greenhouse_0",
 			"tfg:block/crop/sunflower_greenhouse_1",
@@ -29,7 +31,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"tfg:rapeseed_seeds",
 		"tfg:rapeseed_product",
-		"phosphorous",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
 		[
 			"tfg:block/crop/rapeseed_greenhouse_0",
 			"tfg:block/crop/rapeseed_greenhouse_1",
@@ -47,7 +49,7 @@ function registerTFGFLPlanters(event) {
 		0.2,
 		"tfg:flax_seeds",
 		"tfg:flax_product",
-		"nitrogen",
+		$FarmlandBlockEntity.NutrientType.NITROGEN,
 		[
 			"tfg:block/crop/flax_age_0",
 			"tfg:block/crop/flax_age_1",
@@ -65,7 +67,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:amber_root_seeds",
 		"betterend:amber_root_product",
-		"phosphorous",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
 		[
 			"betterend:block/amber_root_0",
 			"betterend:block/amber_root_1",
@@ -83,7 +85,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:blossom_berry_seeds",
 		"betterend:blossom_berry_product",
-		"potassium",
+		$FarmlandBlockEntity.NutrientType.POTASSIUM,
 		[
 			"betterend:block/blossom_berry_seed_0",
 			"betterend:block/blossom_berry_seed_1",
@@ -101,7 +103,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:bolux_mushroom_seeds",
 		"betterend:bolux_mushroom_product",
-		"phosphorous",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
 		[
 			"betterend:block/bolux_mushroom_greenhouse_0",
 			"betterend:block/bolux_mushroom_greenhouse_1",
@@ -119,7 +121,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:chorus_mushroom_seeds",
 		"betterend:chorus_mushroom_product",
-		"phosphorous",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
 		[
 			"betterend:block/chorus_mushroom_0",
 			"betterend:block/chorus_mushroom_1",
@@ -137,7 +139,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:cave_pumpkin_plant_seeds",
 		"betterend:cave_pumpkin",
-		"phosphorous",
+		$FarmlandBlockEntity.NutrientType.PHOSPHOROUS,
 		[
 			"betterend:block/cave_pumpkin_greenhouse_0",
 			"betterend:block/cave_pumpkin_greenhouse_1",
@@ -155,7 +157,7 @@ function registerTFGFLPlanters(event) {
 		0.15,
 		"betterend:shadow_berry_seeds",
 		"betterend:shadow_berry_product",
-		"potassium",
+		$FarmlandBlockEntity.NutrientType.POTASSIUM,
 		[
 			"betterend:block/shadow_berry_greenhouse_0",
 			"betterend:block/shadow_berry_greenhouse_1",

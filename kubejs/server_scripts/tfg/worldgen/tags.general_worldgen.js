@@ -20,7 +20,6 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/venus_sand_covering')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/hematitic_sand_covering')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/mars_snow_covering')
 
 	event.add('minecraft:wart_blocks', 'ad_astra:aeronos_cap')
 	event.add('minecraft:wart_blocks', 'ad_astra:strophar_cap')
@@ -96,4 +95,24 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:mineable/shovel', 'tfg:pile/mars_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/venus_sand_covering')
 	event.add('minecraft:mineable/shovel', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:mineable/shovel', 'tfg:pile/volcanic_ash')
+
+	event.add('minecraft:replaceable', 'tfg:ash_pile')
+	event.add('minecraft:replaceable', 'tfg:pile/black_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/white_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/brown_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/red_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/yellow_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/pink_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/green_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/moon_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/mars_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/venus_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/hematitic_sand')
+	event.add('minecraft:replaceable', 'tfg:pile/mars_sand_covering')
+	event.add('minecraft:replaceable', 'tfg:pile/venus_sand_covering')
+	event.add('minecraft:replaceable', 'tfg:pile/hematitic_sand_covering')
+	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
+
+	event.add('minecraft:replaceable', '#tfc:loose_rocks')
 }

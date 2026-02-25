@@ -141,15 +141,22 @@
 					type: "item"
 				}
 				{
-					id: "31CD18493D0D65BC"
-					item: "gtceu:hv_sifter"
+					id: "52F9B7116D01F7F8"
+					item: "gtceu:hv_autoclave"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "52F9B7116D01F7F8"
-					item: "gtceu:hv_autoclave"
+					id: "394F7CEA050D785B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(vintageimprovements:vibrating_table)item(gtceu:lv_sifter)item(gtceu:mv_sifter)item(gtceu:hv_sifter)item(gtceu:ev_sifter)item(gtceu:iv_sifter)item(gtceu:luv_sifter)item(gtceu:zpm_sifter)item(gtceu:uv_sifter))"
+						}
+					}
 					optional_task: true
+					title: "{quests.ore_proc.sifter.task}"
 					type: "item"
 				}
 			]
@@ -224,10 +231,9 @@
 			y: -0.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["0C0B09D66D0CFFBA"]
 			description: ["{quests.ae2.ae_guide.desc}"]
-			icon: "ae2:guide"
+			icon: "ae2:singularity"
 			id: "6CF08AFB924905F0"
 			rewards: [{
 				id: "34825A998EA88DB4"
@@ -541,8 +547,16 @@
 			id: "0F1104DEEB22EF86"
 			size: 1.0d
 			tasks: [{
-				id: "6D9B9EAFE680B768"
-				type: "checkmark"
+				id: "6CBA077E634222BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/iv)"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
+				type: "item"
 			}]
 			title: "{quests.ae2.iv.title}"
 			x: 3.0d
@@ -641,8 +655,16 @@
 			id: "1F3621FABA32DC6B"
 			size: 1.0d
 			tasks: [{
-				id: "4CE3EF0D1FAC1B6C"
-				type: "checkmark"
+				id: "7D229D57EB72CF9E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:circuits/luv)"
+					}
+				}
+				title: "Any #gtceu:circuits/luv"
+				type: "item"
 			}]
 			title: "{quests.ae2.luv.title}"
 			x: 0.5d
@@ -703,14 +725,11 @@
 		{
 			dependencies: ["6CF08AFB924905F0"]
 			description: ["{quests.ae2.hv.desc}"]
+			disable_toast: true
 			icon: "tfg:hv_universal_circuit"
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
-			tasks: [{
-				id: "1D4A01B75676146B"
-				type: "checkmark"
-			}]
 			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
@@ -1287,6 +1306,27 @@
 			title: "{quests.ae2.universal_circuits.title}"
 			x: -2.0d
 			y: -9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6CF08AFB924905F0"]
+			description: ["{quests.ae2.books_again.desc}"]
+			icon: "ae2:guide"
+			id: "21ED71AAA4EE4890"
+			optional: true
+			rewards: [{
+				id: "0507786BBEF1A6C9"
+				item: "ae2:guide"
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "26C00F0A52235B5D"
+				type: "checkmark"
+			}]
+			title: "{quests.ae2.books_again.title}"
+			x: -0.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]

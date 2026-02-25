@@ -4,8 +4,7 @@
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
 	"priority": true,
-	"pages":
-	[
+	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "ЧАВО",

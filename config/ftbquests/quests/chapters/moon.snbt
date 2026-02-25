@@ -326,29 +326,14 @@
 			subtitle: "{quests.space_survival.stone_dust_centrifuging.subtitle}"
 			tasks: [
 				{
-					id: "72B3F8FE3EA395BE"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfg:moon_stone_dust)item(tfg:glacio_stone_dust)item(tfg:moon_deepslate_dust))"
-						}
-					}
-					title: "{quests.space_survival.stone_dust_centrifuging.task}"
+					id: "63474F1F74F04C68"
+					item: "gtceu:helium_3_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
-					disable_toast: true
-					id: "3B3532D745548B3D"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:lv_centrifuge)item(gtceu:mv_centrifuge)item(gtceu:hv_centrifuge)item(gtceu:ev_centrifuge)item(gtceu:iv_centrifuge)item(gtceu:luv_centrifuge)item(gtceu:zpm_centrifuge)item(gtceu:uv_centrifuge))"
-						}
-					}
-					title: "{quests.ore_proc.centrifuge_sifter.task}"
-					type: "item"
+					id: "4905C812B8FB0185"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.space_survival.stone_dust_centrifuging.title}"
@@ -377,6 +362,8 @@
 			dependencies: ["493D733A5438DD7E"]
 			description: ["{quests.space_survival.zip_gun.desc}"]
 			id: "3F68A259FA38D342"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.space_survival.zip_gun.subtitle}"
 			tasks: [{
 				id: "56DD17ED9D60A1BD"
@@ -618,6 +605,7 @@
 			description: ["{quests.space_survival.redstone_railgun.desc}"]
 			icon: "minecraft:redstone_torch"
 			id: "0538DCD4D4811574"
+			shape: "circle"
 			subtitle: "{quests.space_survival.redstone_railgun.subtitle}"
 			tasks: [{
 				id: "63FFA0CBDDD635B9"
@@ -633,6 +621,7 @@
 			description: ["{quests.space_survival.robot_arm_railgun.desc}"]
 			icon: "gtceu:hv_robot_arm"
 			id: "7118634C06AE1141"
+			shape: "circle"
 			subtitle: "{quests.space_survival.robot_arm_railgun.subtitle}"
 			tasks: [{
 				id: "6C995E2B46963E1E"
@@ -678,6 +667,7 @@
 			description: ["{quests.space_survival.delay_railgun.desc}"]
 			icon: "create:cuckoo_clock"
 			id: "183AC1085D558086"
+			shape: "circle"
 			subtitle: "{quests.space_survival.delay_railgun.subtitle}"
 			tasks: [{
 				id: "119FD14202435E03"
