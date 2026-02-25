@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed multiple exceptions being thrown during tooltip creation (#3188) @Nebby1999
 ### Translation updates
 
 ## [0.11.24] - 22-02-2026
