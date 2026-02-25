@@ -188,6 +188,11 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
 
+	event.add('tfg:oils', 'gtceu:oil')
+	event.add('tfg:oils', 'gtceu:oil_light')
+	event.add('tfg:oils', 'gtceu:oil_medium')
+	event.add('tfg:oils', 'gtceu:oil_heavy')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
