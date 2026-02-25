@@ -126,7 +126,7 @@ jobs:
   #         CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
   upload:
-    if: github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'push'
+    if: github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'push' || github.event_name == 'schedule'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
