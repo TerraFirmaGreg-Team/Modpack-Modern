@@ -137,7 +137,7 @@ jobs:
         with:
           upload_sources: true
           upload_translations: false
-          upload_sources_args: "--auto-update ${{ github.event.inputs.force_upload == 'true' && '--auto-update --preserve-hierarchy' || '--preserve-hierarchy' }}"
+          import_eq_suggestions: true
           config: crowdin.yml
           dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
         env:
