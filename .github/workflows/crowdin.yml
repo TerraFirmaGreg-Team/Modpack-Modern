@@ -27,7 +27,7 @@ on:
       export_approved_only:
         description: 'Export only approved translations'
         required: false
-        default: false
+        default: true
         type: boolean
       dry_run:
         description: 'Dry run mode (no actual changes)'
