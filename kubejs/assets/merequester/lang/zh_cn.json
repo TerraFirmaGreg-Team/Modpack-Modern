@@ -4,7 +4,7 @@
   "gui.merequester.no_requesters": "没有找到 ME 请求器",
   "gui.merequester.requester_terminal": "ME 请求终端",
   "item.merequester.requester_terminal": "ME 请求终端",
-  "itemGroup.merequester.tab": "ME 请求器",
+  "itemGroup.merequester": "ME 请求器",
   "tooltip.merequester.amount": "库存容量",
   "tooltip.merequester.batch": "并行大小",
   "tooltip.merequester.enter_to_submit": "按下 %s 来提交更改",
