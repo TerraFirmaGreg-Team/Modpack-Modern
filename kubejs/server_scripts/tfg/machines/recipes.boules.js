@@ -68,7 +68,7 @@ function registerTFGBouleRecipes(event) {
 
 	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:silicon_boule')
 		.chancedInput('tfg:quartz_crucible', 500, 0) // 5% chance
-		.itemInputs('tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:boule_holder_rods')
+		.itemInputs('1x tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:boule_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 32 * 144))
 		.itemOutputs('gtceu:silicon_boule')
 		.circuit(1)
@@ -78,7 +78,7 @@ function registerTFGBouleRecipes(event) {
 
 	event.recipes.gtceu.high_temperature_precision_fabricator('tfg:silicon_boule_cleanroom')
 		.chancedInput('tfg:quartz_crucible', 500, 0) // 5% chance
-		.itemInputs('2x tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:boule_holder_rods')
+		.itemInputs('1x tfg:silicon_seed_crystal', '#forge:small_dusts/gallium_arsenide', '#tfg:boule_holder_rods')
 		.inputFluids(Fluid.of('tfg:polysilicon', 32 * 144))
 		.itemOutputs('gtceu:silicon_boule')
 		.circuit(2)

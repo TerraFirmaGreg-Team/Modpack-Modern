@@ -50,7 +50,7 @@ function slurryCentrifuging(event, name, itemOutputs, fluidOutputs, chancedOutpu
 }
 
 const GEM_CENTRIFUGE = [
-    ['emerald',     [['gtceu:beryllium_dust', 3], ['gtceu:aluminium_dust', 2], ['gtceu:silicon_dust', 6]], [['gtceu:oxygen', 18000]], [['gtceu:titanium_dust', 10, 0]]],
+    ['emerald',     [['gtceu:beryllium_dust', 3], ['gtceu:aluminium_dust', 2], ['gtceu:silicon_dust', 6]], [['gtceu:oxygen', 18000]], [['gtceu:ilmenite_dust', 10, 0]]],
     ['sapphire',    [['gtceu:aluminium_dust', 2*6]], [['gtceu:oxygen', 3000*6]], [['gtceu:ilmenite_dust', 200, 0], ['gtceu:iron_dust', 200, 0], ['gtceu:vanadium_dust', 200, 0]]],
     ['ruby',        [['gtceu:chromium_dust', 1*6], ['gtceu:aluminium_dust', 2*6]], [['gtceu:oxygen', 3000*6]], [['gtceu:ilmenite_dust', 200, 0], ['gtceu:iron_dust', 200, 0], ['gtceu:vanadium_dust', 200, 0]]],
     ['diamond',     [['gtceu:carbon_dust', 64], ['gtceu:graphite_dust', 1]], [], []],
