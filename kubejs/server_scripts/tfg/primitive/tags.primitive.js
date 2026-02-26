@@ -97,6 +97,9 @@ function registerTFGPrimitiveBlockTags(event) {
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_strings')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_trellis_posts_plant')
+	event.add('tfg:harvester_harvestable', 'firmalife:trellis_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:bonsai_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:hanging_planter')
 	//added for QOL but doesnt harvest anything
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
