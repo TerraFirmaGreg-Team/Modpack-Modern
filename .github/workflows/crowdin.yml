@@ -81,15 +81,15 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2.15.0
         with:
-          upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' }}
+          upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
           upload_translations: false
           import_eq_suggestions: true
           skip_untranslated_files: true
-          download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' }}
+          download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
           config: crowdin.yml
           localization_branch_name: translations
-          create_pull_request: ${{ github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both') }}
-          export_only_approved: ${{ github.event.inputs.export_approved_only }}
+          create_pull_request: ${{ github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both') || github.event_name == 'schedule' }}
+          export_only_approved: ${{ github.event.inputs.export_approved_only || github.event_name == 'schedule' }}
           commit_message: "[translation] New translations"
           dryrun_action: ${{ github.event.inputs.dry_run == 'true' }}
           pull_request_base_branch_name: 'dev'
@@ -102,8 +102,8 @@ jobs:
             ### 📋 Summary
             - **Trigger**: ${{ github.event_name }}
             - **Operation**: ${{ github.event.inputs.operation || 'auto-sync' }}
-            - **Languages**: ${{ needs.get-languages.outputs.languages }}
-            - **Approved only**: ${{ github.event.inputs.export_approved_only || 'false' }}
+            - **Languages**: All languages
+            - **Approved only**: ${{ github.event.inputs.export_approved_only || 'true' }}
             
             ### 🔄 Changes
             - Updated JSON translation files for all languages
