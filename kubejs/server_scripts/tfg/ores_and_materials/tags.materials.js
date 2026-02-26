@@ -15,21 +15,4 @@ function registerTFGMaterialItemTags(event) {
 	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
-
-	// Gem rods for boules
-	event.add('tfg:boule_holder_rods', '#forge:rods/amethyst')
-	event.add('tfg:boule_holder_rods', '#forge:rods/opal')
-	event.add('tfg:boule_holder_rods', '#forge:rods/diamond')
-	event.add('tfg:boule_holder_rods', '#forge:rods/sapphire')
-	event.add('tfg:boule_holder_rods', '#forge:rods/green_sapphire')
-	event.add('tfg:boule_holder_rods', '#forge:rods/ruby')
-	event.add('tfg:boule_holder_rods', '#forge:rods/red_garnet')
-	event.add('tfg:boule_holder_rods', '#forge:rods/yellow_garnet')
-	event.add('tfg:boule_holder_rods', '#forge:rods/lapis')
-	event.add('tfg:boule_holder_rods', '#forge:rods/sodalite')
-	event.add('tfg:boule_holder_rods', '#forge:rods/lazurite')
-	event.add('tfg:boule_holder_rods', '#forge:rods/blue_topaz')
-	event.add('tfg:boule_holder_rods', '#forge:rods/topaz')
-	event.add('tfg:boule_holder_rods', '#forge:rods/emerald')
-	event.add('tfg:boule_holder_rods', '#forge:rods/olivine')
 }

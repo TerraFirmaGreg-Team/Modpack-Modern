@@ -31,12 +31,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
 	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
 
-	//#region Tools
+	// Tools
 	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
-	//#endregion
 
 	// Airplane Upgrades
 	global.AIRCRAFT_UPGRADES.forEach(value => {
@@ -72,7 +71,7 @@ const registerTFGItemTags = (event) => {
     event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
     event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
 		
-	//#region holder materials
+	// Holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
 	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
 	
@@ -85,7 +84,24 @@ const registerTFGItemTags = (event) => {
 	
 	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
 	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
-	//#endregion
+	
+	// Tags for the precision fabricator renderer
+	event.add('tfg:precision_fabricator_dipped_items', 'tfg:silicon_seed_crystal')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/amethyst')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/opal')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/diamond')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/sapphire')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/green_sapphire')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/ruby')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/red_garnet')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/yellow_garnet')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/lapis')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/sodalite')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/lazurite')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/blue_topaz')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
+	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
 }
 
 //#region Blocks
