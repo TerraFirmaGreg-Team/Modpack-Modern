@@ -183,7 +183,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.electrolyzer('tfg:cracker_off_gas_recycling')
 		.inputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 500), Fluid.of('gtceu:hydrogen', 500))
-		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 500, 0) // 5% chance
+		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance SWITCH TO 5% when new platline is out
 		.duration(20*4.5)
 		.EUt(GTValues.VA[GTValues.HV])
 
