@@ -138,6 +138,14 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.machine.smt_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.smt_3'));
 	})
+	event.addAdvanced(['tfg:high_temp_precision_fabricator'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.high_temp_precision_fabricator_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.high_temp_precision_fabricator_2'));
+		text.add(3, Text.translate('gtceu.machine.electric_blast_furnace.tooltip.0'));
+		text.add(4, Text.translate('gtceu.machine.electric_blast_furnace.tooltip.1'));
+		text.add(5, Text.translate('gtceu.machine.electric_blast_furnace.tooltip.2'));
+		text.add(6, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
+	})
 	event.addAdvanced(['deafission:fission_reactor_mk1'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.fission_reactor_mk1_1'));
 		text.add(2, Text.translate('tfg.tooltip.machine.fission_reactor_mk1_2'));

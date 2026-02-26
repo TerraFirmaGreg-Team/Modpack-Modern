@@ -18,14 +18,6 @@ const registerTFGBlocks = (event) => {
 
 	registerTFGNuclearBlocks(event)
 
-	event.create('tfg:quartz_crucible')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.soundType('stone')
-		.mapColor('metal')
-		.hardness(3)
-		.fullBlock(false)
-		.box(1, 0, 1, 15, 16, 15)
-
 	// Temporary, remove in 0.12
 	event.create('gtceu:ostrum_linear_accelerator')
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
