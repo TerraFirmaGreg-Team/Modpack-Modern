@@ -78,5 +78,6 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:worked_optical_borosilicate_blank')
 		.texture('tfg:item/worked_optical_borosilicate_blank')
+		.tag('tfg:precision_fabricator_dipped_items')
 
 }
