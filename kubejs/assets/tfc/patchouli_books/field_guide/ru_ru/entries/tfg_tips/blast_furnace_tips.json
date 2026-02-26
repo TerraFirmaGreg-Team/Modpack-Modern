@@ -3,8 +3,7 @@
 	"icon": "tfc:blast_furnace",
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
-	"pages":
-	[
+	"pages": [
 		{
 			"type": "patchouli:text",
 			"title": "Советы для TerraFirmaCraft доменной печи",

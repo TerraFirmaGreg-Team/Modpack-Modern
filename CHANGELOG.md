@@ -2,7 +2,11 @@
 
 ## Unreleased
 ### Changes
+- Increased basic harvest basket durability to 256 @Redeix
+- Remove durability from trowels @Redeix
+- Harvest baskets can now harvest from firmalife greenhouse trellis, bonsai, and hanging planters. @Redeix
 ### Bug fixes
+- Fixed multiple exceptions being thrown during tooltip creation (#3188) @Nebby1999
 ### Translation updates
 
 ## [0.11.24] - 22-02-2026

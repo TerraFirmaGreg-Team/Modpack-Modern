@@ -519,8 +519,11 @@ const registerTooltips = (event) => {
 		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
 		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
 
-		text.remove(keyToRemove);
-		text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+		if(indexOf != -1)
+		{
+			text.remove(keyToRemove);
+			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+		}
 	})
 */
 }
