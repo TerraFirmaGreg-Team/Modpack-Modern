@@ -183,7 +183,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.electrolyzer('tfg:cracker_off_gas_recycling')
 		.inputFluids(Fluid.of('tfg:cracker_off_gas', 1000))
 		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 500), Fluid.of('gtceu:hydrogen', 500))
-		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 1000, 0) // 10% chance
+		.chancedOutput(Item.of('gtceu:tiny_rhenium_dust'), 500, 0) // 5% chance
 		.duration(20*4.5)
 		.EUt(GTValues.VA[GTValues.HV])
 
@@ -285,7 +285,7 @@ function registerTFGEarlyGasRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:catalyser_zsm')
-		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('10x #forge:dusts/rhenium'))
+		.itemInputs(Item.of('#forge:dusts/platinum'), Item.of('60x #forge:dusts/rhenium'))
 		.inputFluids(Fluid.of('gtceu:hydrogen', 1000))
 		.inputFluids(Fluid.of('tfg:zsm5_gel', 1000))
 		.itemOutputs(Item.of('tfg:catalyser_pt_re_zsm', 1))
@@ -359,7 +359,7 @@ function registerTFGEarlyGasRecipes(event) {
 	event.recipes.gtceu.distillery('tfg:rhenium_dust')
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 100))
 		.itemInputs(Item.of('tfg:loaded_resin', 1))
-		.itemOutputs(Item.of('gtceu:rhenium_dust', 1))
+		.itemOutputs(Item.of('gtceu:rhenium_dust', 6))
 		.duration(20*8)
 		.EUt(GTValues.VA[GTValues.MV])
 

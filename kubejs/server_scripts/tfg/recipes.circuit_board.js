@@ -69,24 +69,25 @@ event.recipes.gtceu.alloy_smelter('tfg:optical_borosilicate_blank')
 	.duration(20*5)
 	.EUt(GTValues.VA[GTValues.MV])
 
-function lensPolishing(event, fluid, colour) {
-    event.recipes.gtceu.ostrum_linear_accelerator(`tfg:lens_${fluid}_${colour}`)
+function lensPolishing(event, fluid, colour, temp) {
+    event.recipes.gtceu.high_temperature_precision_fabricator(`tfg:lens_${fluid}_${colour}`)
         .itemInputs(Item.of('tfg:worked_optical_borosilicate_blank', 1))
         .inputFluids(Fluid.of(`tfg:dirty_${fluid}_slurry`, 1000))
         .itemOutputs(Item.of(`#forge:lenses/${colour}`, 1))
-        .duration(20 * 5)
+        .addData("ebf_temp", temp)
+        .duration(20 * 120)
         .EUt(GTValues.VA[GTValues.MV]);
 }
 
 const LENS_POLISHING = [
-    ['emerald',     'green'      ],
-    ['sapphire',    'blue'       ],
-    ['ruby',        'red'        ],
-    ['diamond',     'light_blue' ],
-    ['apatite',     'cyan'       ],
-    ['spessartine', 'orange'     ],
+    ['emerald',     'green',        1530],
+    ['sapphire',    'blue',         1530],
+    ['ruby',        'red',          1530],
+    ['diamond',     'light_blue',   1530],
+    ['apatite',     'cyan',         1810],
+    ['spessartine', 'orange',       1810],
 ];
 
 LENS_POLISHING.forEach(([fluid, colour]) => event.remove({ output: `#forge:lenses/${colour}` }));
-LENS_POLISHING.forEach(([fluid, colour]) => lensPolishing(event, fluid, colour));
+LENS_POLISHING.forEach(([fluid, colour, temp]) => lensPolishing(event, fluid, colour, temp));
 }
