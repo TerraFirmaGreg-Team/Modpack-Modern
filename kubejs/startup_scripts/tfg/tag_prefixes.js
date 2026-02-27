@@ -23,6 +23,12 @@ function registerTFGTagPrefixes(event) {
 
 	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:magnesia_refractory_brick'))
 	TagPrefix.block.setIgnored(GTMaterials.get('tfg:magnesia_refractory_brick'))
+	
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:rough_silicon_carbide'))
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:rough_silicon_carbide'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
+	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
 }
 
 function excludeAllGemsButNormal(material) {
