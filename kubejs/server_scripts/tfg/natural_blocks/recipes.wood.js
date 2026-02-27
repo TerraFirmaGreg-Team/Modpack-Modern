@@ -433,6 +433,7 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `beneath:crafting/wood/${wood}_lumber_planks` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_slab_undo` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_trapdoor` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_door` });
 
             TFGWoodBuilder(
                 event, 
