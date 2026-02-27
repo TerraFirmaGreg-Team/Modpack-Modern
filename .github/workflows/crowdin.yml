@@ -101,7 +101,7 @@ jobs:
             echo "branch_name=translations" >> $GITHUB_OUTPUT
           else
             lang=$(echo "${{ github.event.inputs.download_language }}" | tr '[:upper:]' '[:lower:]' | tr '-' '_')
-            echo "branch_name=translations/$lang" >> $GITHUB_OUTPUT
+            echo "branch_name=translation/$lang" >> $GITHUB_OUTPUT
           fi
 
       - name: Create Pull Request
