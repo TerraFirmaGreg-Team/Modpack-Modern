@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "玻璃工艺",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
@@ -29,7 +28,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "进行玻璃加工前，还需要准备多种工具：$(br)$(li)一支用来$(thing)吹气$()和$(thing)拉伸$()的$(l:mechanics/glassworking#blowpipe)吹风管$()；$(li)一支用来$(thing)平整$()的$(l:mechanics/glassworking#paddle)玻璃压板$()；$(li)一对用来$(thing)挤压$()的$(l:mechanics/glassworking#jacks)夹钳$()；$(li)和一把用来$(thing)锯割$()的$(l:mechanics/glassworking#saw)宝石锯$()。",
+      "text": "进行玻璃加工前，还需要准备多种工具：$(br)$(li)一支用来$(thing)吹气$()和$(thing)拉伸$()的$(l:mechanics/glassworking#blowpipe)吹风管$()；$(li)一支用来$(thing)平整$()的$(l:mechanics/glassworking#paddle)玻璃压板$()；$(li)一对用来$(thing)挤压$()的$(l:mechanics/glassworking#jacks)夹钳$()；$(li)和一把用来$(thing)锯割$()的$(l:mechanics/glassworking#saw)宝石锯$()",
       "title": "加工工具"
     },
     {
