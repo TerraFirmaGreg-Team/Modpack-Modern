@@ -97,6 +97,7 @@ function registerTFGMarsMaterials(event) {
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 
