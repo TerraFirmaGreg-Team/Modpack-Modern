@@ -345,7 +345,13 @@ function registerTFGWoodenRecipes(event) {
             ['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]],
             ['{mod}:wood/sluice/{type}', ['{wood}', 3/2]],
             ['{mod}:wood/barrel/{type}', ['{wood}', 7/2]],
-            ['{mod}:wood/sign/{type}', ['{wood}', 1]]
+            ['{mod}:wood/sign/{type}', ['{wood}', 1]],
+            ['{mod}:wood/lectern/{type}', ['{wood}', 5]],
+            ['{mod}:wood/planks/{type}_bookshelf', ['{wood}', 3]],
+            ['{mod}:wood/planks/{type}_tool_rack', ['{wood}', 3]],
+            ['{mod}:wood/jar_shelf/{type}', ['{wood}', 7/2]],
+            ['{mod}:wood/scribing_table/{type}', ['{wood}', 7]],
+            ['{mod}:wood/sewing_table/{type}', ['{wood}', 14]]
         ];
 
         /**
