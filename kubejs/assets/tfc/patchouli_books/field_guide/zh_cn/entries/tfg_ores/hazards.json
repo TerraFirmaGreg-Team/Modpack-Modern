@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "口罩",
+			"title": "面罩",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。"
 		},
@@ -56,7 +56,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "容器隔离",
-			"text": "危险材料仅当存放在$(thing)物品栏$()时才会造成伤害，其他容器则不受此影响！$(br)当危险材料存放在$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()等容器中时不会造成伤害。手持大缸时$(thing)右键点击$()可直接与容器进行物品转移。",
+			"text": "危险材料仅当存放在$(thing)物品栏$()时才会造成伤害，其他容器则不受此影响！$(br)当危险材料存放在$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()等容器中时不会造成伤害。手持大缸时$(thing)右键点击$()可直接与容器进行物品转移",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{

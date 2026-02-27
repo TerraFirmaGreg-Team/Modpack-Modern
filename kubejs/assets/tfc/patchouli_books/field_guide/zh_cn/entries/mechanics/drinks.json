@@ -27,7 +27,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "葡萄酒",
-			"text": "$(thing)葡萄酒$()是另一种酒精饮料，其酿造方式与其他酒类不同。这是一个复杂但回报丰厚的过程，无法用机器自动化完成。查看$(l:firmalife/wine)酿酒$()条目以了解如何制作。",
+			"text": "$(thing)葡萄酒$()是另一种酒精饮料，其酿造方式与其他酒类不同。这是一个复杂但回报丰厚的过程，无法用机器自动化完成。查看$(l:firmalife/wine)酿酒$()条目以了解如何制作。$(br2)所有种类的葡萄酒都提供额外的$(item)力量 (5:20)$()效果！",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
 		},
 		{
@@ -52,7 +52,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)热可可：急迫 (0:30)，体温升高4°C$(li)咖啡：速度提升 (0:30)，体温升高4°C$(li)柠檬水：急迫 (0:30)，体温降低2°C$(li)果子酒：力量 (2:40)，体温降低2°C$(li)格瓦斯：力量 (1:20)，体温降低2°C$(li)糖渍水果：跳跃提升 II (0:30)"
+			"text": "$(li)热可可：急迫 (0:30)，体温升高4°C$(li)咖啡：速度提升 (0:30)，体温升高4°C$(li)柠檬水：急迫 (0:30)，体温降低2°C$(li)果子酒：急迫 (4:00)，体温降低2°C$(li)格瓦斯：急迫 (2:00)，体温降低2°C$(li)糖渍水果：跳跃提升 II (0:30)"
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "勘探",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
@@ -18,7 +17,7 @@
       "item": "tfc:metal/propick/copper",
       "title": "勘矿镐",
       "link_recipes": false,
-      "text": "若你正在寻找矿脉，且无法通过推测定位时，便是取出$(item)勘矿镐$()的时候了。若你熟悉原版$(thing)群峦传说$()中的基础勘矿镐，可能会惊讶地发现它们在$(thing)TFG$()整合包中的运作机制已彻底重构。"
+      "text": "若你正在寻找矿脉，且无法通过推测定位时，便是取出$(item)勘矿镐$()的时候了。若你熟悉原版$(thing)群峦传说$()中的基础勘矿镐，可能会惊讶地发现它们在$(thing)TFG$()整合包中的运作机制已彻底重构"
     },
     {
       "type": "patchouli:text",
@@ -45,12 +44,12 @@
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "模具$(l:getting_started/pottery)捏制$()完之后还需要$(l:mechanics/heating)烧制$()。$(br2)将液态金属倒入到烧制好的模具中就能$(l:getting_started/finding_ores#casting)铸造$()出勘矿镐了。"
+      "text": "黏土$(l:getting_started/pottery)捏制$()完之后还需要$(l:mechanics/heating)烧制$()才能做成$(item)勘矿镐头模具$()。$(br2)将液态金属倒入到烧制好的模具中就能$(l:getting_started/finding_ores#casting)铸造$()出勘矿镐了。"
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "勘矿镐头也可以在$(l:mechanics/anvils)砧$()上使用任何可以制造工具的金属$(thing)锭$()$(l:mechanics/anvils#working)锻造$()而成。$(br2)最后用木棍和工具头在合成栏合成就能做出勘矿镐了。"
+      "text": "勘矿镐头也可以在$(l:mechanics/anvils)砧$()上使用任何可以制造工具的金属$(item)锭$()$(l:mechanics/anvils#working)锻造$()而成。$(br2)最后用木棍和工具头在合成栏合成就能做出勘矿镐了。"
     },
     {
       "type": "patchouli:text",
