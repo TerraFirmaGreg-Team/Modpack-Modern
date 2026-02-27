@@ -8,6 +8,9 @@
   "gui.diggerhelmet.slot_info.right_slot_disabled": "右侧槽位:衬里(需要TFC Ambiental模组)",
   "gui.diggerhelmet.slot_info.title": "槽位信息",
   "item.diggerhelmet.auto_drink_modifier": "自动饮水模块",
+  "item.diggerhelmet.broken_digger_helmet": "损坏的矿工头盔",
+  "item.diggerhelmet.broken_helmet.repair_info": "使用修理配方来恢复它",
+  "item.diggerhelmet.broken_helmet.tooltip": "这顶头盔已损坏，无法工作",
   "item.diggerhelmet.candleslime_spawn_egg": "蜡烛史莱姆刷怪蛋",
   "item.diggerhelmet.digger_helmet": "矿工头盔",
   "item.diggerhelmet.digger_helmet.main": "别碰蜡烛!",
@@ -19,11 +22,10 @@
   "item.diggerhelmet.silk_lining": "丝绸衬里",
   "item.diggerhelmet.wool_lining": "羊毛衬里",
   "itemGroup.diggerhelmet": "矿工头盔",
-  "tfcambiental.tooltip.cooling_attribute": "降温值",
-  "tfcambiental.tooltip.insulation_attribute": "隔热值",
+  "jei.diggerhelmet.category.helmet_repair": "修理矿工头盔",
+  "message.diggerhelmet.helmet_broken": "哎呀，看起来矿工头盔已经损坏了！",
   "tfcambiental.tooltip.thermal_insulation": "隔热层",
   "tfcambiental.tooltip.thermoregulation": "体温调节",
-  "tfcambiental.tooltip.warmth_attribute": "保暖值",
   "tooltip.diggerhelmet.cooldown": "安装在矿工头盔时自动从物品栏补充水分",
   "tooltip.diggerhelmet.digger_helmet.hold_shift": "按住§eSHIFT§7查看详情",
   "tooltip.diggerhelmet.digger_helmet.lining_needed": "§e请安装衬里以获得温度调节属性",
@@ -35,7 +37,7 @@
   "tooltip.diggerhelmet.eternal_candle.more_info": "你可能需要击杀更多僵尸,因为它们手中永恒蜡烛的掉落率并非100%.祝你好运!",
   "tooltip.diggerhelmet.eternal_candle.shift_info": "由蜡烛史莱姆或手持蜡烛的僵尸掉落",
   "tooltip.diggerhelmet.silk_lining.main": "提供清凉与轻盈效果",
-  "tooltip.diggerhelmet.silk_lining.usage": "安装在挖掘者头盔中可获得降温属性",
+  "tooltip.diggerhelmet.silk_lining.usage": "安装在矿工头盔中可获得降温属性",
   "tooltip.diggerhelmet.wool_lining.main": "提供保暖与舒适效果",
-  "tooltip.diggerhelmet.wool_lining.usage": "安装在挖掘者头盔中可获得温度调节属性"
+  "tooltip.diggerhelmet.wool_lining.usage": "安装在矿工头盔中可获得温度调节属性"
 }
