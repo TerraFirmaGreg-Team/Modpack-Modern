@@ -240,6 +240,7 @@ ServerEvents.recipes(event => {
 	registerCreateAdditionsRecipes(event)
 	registerCreateConnectedRecipes(event)
 	registerCreatedecoRecipes(event)
+	registerCreateExtraGaugesRecipes(event)
 	registerCreateFactoryLogisticsRecipes(event)
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
