@@ -63,7 +63,6 @@ function registerTFGWoodenRecipes(event) {
                         .id(`tfg:vi/lathe/${name}_stripped_wood_from_log_wood`)
                 };
 
-            // TODO: remove condition of logs
             // Lumber from log
                 if (logs && lumber && name) {
                     event.shapeless(`8x ${lumber}`,
@@ -434,6 +433,7 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `beneath:crafting/wood/${wood}_slab_undo` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_trapdoor` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_door` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_stairs` });
 
             TFGWoodBuilder(
                 event, 
@@ -443,7 +443,7 @@ function registerTFGWoodenRecipes(event) {
                 `beneath:wood/log/${wood}`,
                 `beneath:wood/stripped_log/${wood}`, 
                 `beneath:wood/planks/${wood}`, 
-                null,
+                `beneath:wood/planks/${wood}_stairs`,
                 `beneath:wood/planks/${wood}_slab`, 
                 `beneath:wood/planks/${wood}_door`, 
                 `beneath:wood/planks/${wood}_trapdoor`, 
@@ -717,7 +717,7 @@ function registerTFGWoodenRecipes(event) {
                 event,
                 'bamboo',
                 'tfg:wood/lumber/bamboo',
-                null,
+                '#minecraft:bamboo_blocks',
                 'minecraft:bamboo_block',
                 'minecraft:stripped_bamboo_block',
                 'minecraft:bamboo_planks',
@@ -745,17 +745,6 @@ function registerTFGWoodenRecipes(event) {
                 'minecraft:bamboo_slab',
                 'minecraft:bamboo_mosaic_slab'
             );
-
-            // Lumber from log
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_log`);
-
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:stripped_bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_stripped_log`);
 
     // #endregion
 
