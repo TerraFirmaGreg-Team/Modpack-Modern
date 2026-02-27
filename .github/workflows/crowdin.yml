@@ -35,21 +35,21 @@ on:
         default: false
         type: boolean
       download_language:
-        description: 'Download translations for a specific language (leave empty for all languages)'
+        description: 'Download language (leave empty for all)'
         required: false
         default: ''
         type: choice
         options:
           - ''
-          - 'de_de'
-          - 'es_es'
-          - 'fr_fr'
-          - 'jp_jp'
-          - 'pt_br'
-          - 'ru_ru'
-          - 'uk_uk'
-          - 'zh_cn'
-          - 'zh_tw'
+          - 'de-DE'
+          - 'es-ES'
+          - 'fr-FR'
+          - 'jp-JP'
+          - 'pt-BR'
+          - 'ru-RU'
+          - 'uk-UA'
+          - 'zh-CN'
+          - 'zh-TW'
   schedule:
     # Run daily at 3 AM UTC
     - cron: '0 3 * * *'
