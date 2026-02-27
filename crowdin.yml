@@ -64,6 +64,9 @@ files:
   - source: "/tfc/patchouli_books/field_guide/en_us/**/*.json"
     translation: "/tfc/patchouli_books/field_guide/%locale_with_underscore%/**/%original_file_name%"
     update_option: "update_without_changes"
+    ignore: [
+      "/**/tfg_ores/*_index.json"
+    ]
 
     languages_mapping:
       locale_with_underscore:
