@@ -699,25 +699,19 @@ function registerTFGWoodenRecipes(event) {
         // Bamboo
 
             // Removed recipe changes
-                const Bamboo_Items = [
-                    'minecraft:stripped_bamboo_block',
-                    'minecraft:bamboo_planks',
-                    'minecraft:bamboo_slab',
-                    'minecraft:bamboo_stairs',
-                    'minecraft:bamboo_fence',
-                    'minecraft:bamboo_fence_gate',
-                    'minecraft:bamboo_door',
-                    'minecraft:bamboo_trapdoor',
-                    'minecraft:bamboo_button',
-                    'minecraft:bamboo_mosaic',
-                    'minecraft:bamboo_mosaic_slab',
-                    'minecraft:bamboo_mosaic_stairs',
-                    'minecraft:bamboo_pressure_plate'
-                ];
-
-                Bamboo_Items.forEach(item => {
-                    event.remove({ output: item });
-                });
+                event.remove({ output: 'minecraft:stripped_bamboo_block' });
+                event.remove({ output: 'minecraft:bamboo_planks' });
+                event.remove({ output: 'minecraft:bamboo_slab' });
+                event.remove({ output: 'minecraft:bamboo_stairs' });
+                event.remove({ output: 'minecraft:bamboo_fence' });
+                event.remove({ output: 'minecraft:bamboo_fence_gate' });
+                event.remove({ output: 'minecraft:bamboo_door' });
+                event.remove({ output: 'minecraft:bamboo_trapdoor' });
+                event.remove({ output: 'minecraft:bamboo_button' });
+                event.remove({ output: 'minecraft:bamboo_mosaic' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_slab' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_stairs' });
+                event.remove({ output: 'minecraft:bamboo_pressure_plate' });
 
             TFGWoodBuilder(
                 event,
