@@ -34,6 +34,22 @@ on:
         required: false
         default: false
         type: boolean
+      download_language:
+        description: 'Download translations for a specific language (leave empty for all languages)'
+        required: false
+        default: ''
+        type: choice
+        options:
+          - ''
+          - 'de_de'
+          - 'es_es'
+          - 'fr_fr'
+          - 'jp_jp'
+          - 'pt_br'
+          - 'ru_ru'
+          - 'uk_uk'
+          - 'zh_cn'
+          - 'zh_tw'
   schedule:
     # Run daily at 3 AM UTC
     - cron: '0 3 * * *'
@@ -77,7 +93,17 @@ jobs:
           key: ${{ runner.os }}-crowdin-cache-${{ github.ref_name }}-${{ hashFiles('**/crowdin.yml') }}
           restore-keys: |
             ${{ runner.os }}-crowdin-cache-${{ github.ref_name }}-
-        
+
+      - name: Set localization branch name
+        id: set_branch
+        run: |
+          if [ -z "${{ github.event.inputs.download_language }}" ]; then
+            echo "branch_name=translations" >> $GITHUB_OUTPUT
+          else
+            lang=$(echo "${{ github.event.inputs.download_language }}" | tr '[:upper:]' '[:lower:]' | tr '-' '_')
+            echo "branch_name=translations/$lang" >> $GITHUB_OUTPUT
+          fi
+
       - name: Create Pull Request
         uses: crowdin/github-action@v2.15.0
         with:
@@ -86,8 +112,9 @@ jobs:
           import_eq_suggestions: true
           skip_untranslated_files: true
           download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
+          download_language: ${{ github.event.inputs.download_language }}
           config: crowdin.yml
-          localization_branch_name: translations
+          localization_branch_name: ${{ steps.set_branch.outputs.branch_name }}
           create_pull_request: ${{ github.event.inputs.skip_pr != 'true' && (github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both') || github.event_name == 'schedule' }}
           export_only_approved: ${{ github.event.inputs.export_approved_only || github.event_name == 'schedule' }}
           commit_message: "[translation] New translations"
@@ -102,11 +129,11 @@ jobs:
             ### 📋 Summary
             - **Trigger**: ${{ github.event_name }}
             - **Operation**: ${{ github.event.inputs.operation || 'auto-sync' }}
-            - **Languages**: All languages
+            - **Language**: ${{ github.event.inputs.download_language || 'All languages' }}
             - **Approved only**: ${{ github.event.inputs.export_approved_only || 'true' }}
             
             ### 🔄 Changes
-            - Updated JSON translation files for all languages
+            - Updated JSON translation files for ${{ github.event.inputs.download_language || 'all languages' }}
             - Patchouli book translations
             - Language-specific improvements
             
