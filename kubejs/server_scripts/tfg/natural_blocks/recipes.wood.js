@@ -278,6 +278,15 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_plank`);
 
+                event.recipes.gtceu.assembler(`tfg:${wood}_mosaic`)
+                    .itemInputs(`${plank}`)
+                    .itemOutputs(`${mosaic_plank}`)
+                    .circuit(4)
+                    .duration(50)
+                    .EUt(GTValues.VA[GTValues.ULV])
+
+                event.recipes.tfc.chisel(`${mosaic_plank}`, `${plank}`, 'smooth');
+
             // Lumber from mosaic plank
                 event.shapeless(`4x ${lumber}`,
                     [`${mosaic_plank}`, '#forge:tools/saws']
@@ -294,6 +303,15 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_stair`);
 
+                event.recipes.gtceu.assembler(`tfg:${wood}_mosaic_stair`)
+                    .itemInputs(`${stair}`)
+                    .itemOutputs(`${mosaic_stair}`)
+                    .circuit(4)
+                    .duration(50)
+                    .EUt(GTValues.VA[GTValues.ULV]);
+
+                event.recipes.tfc.chisel(`${mosaic_stair}`, `${mosaic_plank}`, 'stair');
+
             // Lumber from mosaic stairs
                 event.shapeless(`3x ${lumber}`,
                     [`${mosaic_stair}`, '#forge:tools/saws']
@@ -309,6 +327,15 @@ function registerTFGWoodenRecipes(event) {
                     )
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_slab`);
+
+                event.recipes.gtceu.assembler(`tfg:${wood}_mosaic_slab`)
+                    .itemInputs(`${slab}`)
+                    .itemOutputs(`${mosaic_slab}`)
+                    .circuit(4)
+                    .duration(50)
+                    .EUt(GTValues.VA[GTValues.ULV]);
+
+                event.recipes.tfc.chisel(`${mosaic_slab}`, `${mosaic_plank}`, 'slab');
 
             // Lumber from mosaic slab
                 event.shapeless(`2x ${lumber}`,
