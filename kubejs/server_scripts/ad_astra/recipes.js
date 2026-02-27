@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * @param {Internal.RecipesEventJS_} event 
+ * @param {Internal.RecipesEventJS_} event
  */
 const registerAdAstraRecipes = (event) => {
 
@@ -155,7 +155,6 @@ const registerAdAstraRecipes = (event) => {
 
 	//#endregion
 
-
 	//#region Колесо
 
 	event.shaped('ad_astra:white_flag', [
@@ -186,6 +185,93 @@ const registerAdAstraRecipes = (event) => {
 				.category(GTRecipeCategories.CHEM_DYES)
 		}
 	})
+
+	//#endregion
+
+	//#region Глобусы(Globes)
+
+	event.shaped('ad_astra:earth_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: ['tfc:peat_grass', 'tfc:grass/silt', 'tfc:grass/loam', 'tfc:grass/silty_loam', 'tfc:grass/sandy_loam'],
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:earth_globe');
+
+	event.shaped('ad_astra:moon_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: ['ad_astra:moon_deepslate', 'ad_astra:moon_stone'],
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:moon_globe');
+
+	event.shaped('ad_astra:mars_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: ['ad_astra:mars_stone', 'tfc:rock/raw/claystone'],
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:mars_globe');
+
+	event.shaped('ad_astra:mercury_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: 'ad_astra:mercury_stone',
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:mercury_globe');
+
+	event.shaped('ad_astra:venus_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: ['tfg:sand/fluorapatite/green', 'tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/blue',
+				'tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/brown', 'tfg:sand/fluorapatite/orange',
+				'betterend:flavolite', 'tfg:sandstone/raw/fluorapatite/blue', 'tfg:sandstone/raw/fluorapatite/green',
+				'tfg:sandstone/raw/fluorapatite/brown', 'tfg:sandstone/raw/fluorapatite/orange', 'tfg:sandstone/raw/fluorapatite/white',
+				'tfg:sandstone/raw/fluorapatite/yellow'
+				],
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:ad_astra:venus_globe');
+
+	event.shaped('ad_astra:glacio_globe', [
+			'ABC',
+			'BD ',
+			'EF '
+		], {
+			A: 'gtceu:gold_ring',
+			B: 'gtceu:long_gold_rod',
+			C: 'gtceu:gold_bolt',
+			D: 'ad_astra:permafrost',
+			E: 'gtceu:small_brass_gear',
+			F: 'tfc:metal/block/gold_slab'
+		}).id('ad_astra:glacio_globe');
 
 	//#endregion
 
