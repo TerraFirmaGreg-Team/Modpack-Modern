@@ -4,7 +4,7 @@
   "gui.merequester.no_requesters": "Keine ME Anforderer gefunden!",
   "gui.merequester.requester_terminal": "ME Anforderungsk.",
   "item.merequester.requester_terminal": "ME Anforderungskonsole",
-  "itemGroup.merequester": "ME Anforderer",
+  "itemGroup.merequester.tab": "ME Anforderer",
   "tooltip.merequester.amount": "Anzahl des Vorrats",
   "tooltip.merequester.batch": "Chargengröße",
   "tooltip.merequester.enter_to_submit": "%s zum Bestätigen",
