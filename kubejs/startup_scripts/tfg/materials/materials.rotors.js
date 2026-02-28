@@ -143,6 +143,7 @@ function registerTFGRotorMaterials(event) {
 		.color(0x77AAFF)
 		.secondaryColor(0xCCCCCC)
 		.iconSet(GTMaterialIconSet.METALLIC)
+		.components('1x molybdenum', '1x silicon', '1x boron')
 		.ingot()
 		.blastTemp(2710, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV], (20*120))
 		.flags(
@@ -154,10 +155,11 @@ function registerTFGRotorMaterials(event) {
 	event.create('tfg:silicon_carbide_silicon_carbide')
 		.color(0x615c4f)
 		.secondaryColor(0x40403f)
+		.components('1x silicon', '1x carbon')
 		.iconSet(GTMaterialIconSet.NETHERSTAR)
 		.ingot()
-		.blastTemp(2710, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV], (20*120))
 		.flags(
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES,
 			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,

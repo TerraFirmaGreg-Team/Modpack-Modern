@@ -132,6 +132,7 @@ const registerTFGMaterials = (event) => {
 
 	event.create('tfg:rene_41')
 		.ingot()
+		.fluid()
 		.iconSet(GTMaterialIconSet.SHINY)
 		.color(0x6A6D73)
 		.secondaryColor(0x5A5148)
@@ -147,6 +148,22 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_LONG_ROD)
 
 	// #endregion
+
+	// Material for HV
+
+	event.create('tfg:mo_50_re')
+		.ingot()
+		.fluid()
+		.color(0x5a8c78)
+		.secondaryColor(0x94eb9f)
+		.components('1x molybdenum', '1x rhenium')
+		.iconSet(GTMaterialIconSet.getByName('chonky'))
+		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
+		.flags( 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW,
+			GTMaterialFlags.GENERATE_FRAME)
 
 	// #region Solders
 	event.create('tfg:woods_metal')
