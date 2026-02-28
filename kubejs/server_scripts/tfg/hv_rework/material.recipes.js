@@ -19,7 +19,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemInputs(
 			Item.of('tfg:mo_50_re_frame', 1),
 			Item.of('gtceu:polyethylene_plate', 6),
-			Item.of('gtceu:steel_plate', 4))
+			Item.of('gtceu:steel_plate', 2))
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
 		.itemOutputs(Item.of('gtceu:plascrete', 2))
 		.duration(20 * 10)
@@ -29,7 +29,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemInputs(
 			Item.of('tfg:mo_50_re_frame', 1),
 			Item.of('gtceu:polyethylene_plate', 6),
-			Item.of('gtceu:steel_plate', 4))
+			Item.of('gtceu:steel_plate', 2))
 		.inputFluids(Fluid.of('gtceu:glass', 144))
 		.itemOutputs(Item.of('gtceu:cleanroom_glass', 2))
 		.duration(20 * 10)
