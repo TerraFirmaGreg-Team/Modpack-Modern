@@ -114,7 +114,7 @@ jobs:
           import_eq_suggestions: true
           skip_untranslated_files: true
           download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
-          download_language: ${{ github.event.inputs.download_language == 'all' && '' || github.event.inputs.download_language }}
+          download_language: ${{ (github.event.inputs.download_language == 'all' || github.event.inputs.download_language == '') && '' || github.event.inputs.download_language }}
           config: crowdin.yml
           localization_branch_name: ${{ steps.set_branch.outputs.branch_name }}
           create_pull_request: ${{ (github.event.inputs.skip_pr != 'true' || github.event.inputs.skip_pr == '') && ((github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both') || github.event_name == 'schedule') }}
