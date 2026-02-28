@@ -21,6 +21,11 @@ function registerTFGOresMaterialModification(event) {
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, GTMaterials.Thorium, GTMaterials.Thorium);
 	GTMaterials.Beryllium.getProperty(PropertyKey.ORE).setWashedIn(GTMaterials.SodiumPersulfate);
 
+	// Change any Ores that have Rutile
+	GTMaterials.Ilmenite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Iron, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag, GTMaterials.IlmeniteSlag);
+	GTMaterials.Aluminium.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Bauxite, GTMaterials.Bauxite, GTMaterials.Ilmenite, GTMaterials.IlmeniteSlag);
+	GTMaterials.Bauxite.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.Grossular, GTMaterials.IlmeniteSlag, GTMaterials.Gallium, GTMaterials.Gallium);
+
 	// Remove old stone dusts
 	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);

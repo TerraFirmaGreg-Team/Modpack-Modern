@@ -53,6 +53,25 @@ function registerTFGHVMaterialRecipes(event) {
 		.duration(20*21)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	// Rutile changes
+
+	event.remove({ id: 'gtceu:chemical_reactor/titanium_tetrachloride'})
+	event.remove({ id: 'gtceu:large_chemical_reactor/titanium_tetrachloride'})
+	event.recipes.gtceu.chemical_reactor('tfg:titanium_tetrachloride')
+		.itemInputs(Item.of('gtceu:carbon_dust', 2), Item.of('gtceu:rutile_dust', 3))
+		.inputFluids(Fluid.of('gtceu:chlorine', 4000))
+		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 2000), Fluid.of('gtceu:titanium_tetrachloride', 1000))
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis'})
+	event.recipes.gtceu.electrolyzer('tfg:bauxite_electrolysis')
+		.itemInputs(Item.of('gtceu:bauxite_dust', 15))
+		.itemOutputs(Item.of('gtceu:aluminium_dust', 6))
+		.outputFluids(Fluid.of('gtceu:oxygen', 9000))
+		.duration(20*13.5)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// Perlite
 
 
