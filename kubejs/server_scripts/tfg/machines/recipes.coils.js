@@ -75,11 +75,24 @@ function registerTFGCoilRecipes(event) {
 
 	// #endregion
 
+	// #region Kanthal Coil
+
+	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
+	event.recipes.gtceu.assembler('tfg:coil_kanthal')
+		.itemInputs('8x #forge:double_wires/kanthal', '8x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
+		.inputFluids('gtceu:cobalt 144')
+		.itemOutputs('gtceu:kanthal_coil_block')
+		.duration(20 * 15)
+		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true, true)
+
+	// #endregion
+
 	// #region RTM Coil
 
 	event.remove({ id : 'gtceu:assembler/coil_rtm_alloy' })
 	event.recipes.gtceu.assembler('tfg:coil_rtm_alloy')
-		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/vanadium_steel', '4x #forge:insulation_t2/sheet')
+		.itemInputs('8x #forge:double_wires/rtm_alloy', '8x #forge:foils/ostrum', '4x #forge:insulation_t2/sheet')
 		.inputFluids('tfg:nichromium_iodomethylate 244')
 		.itemOutputs('gtceu:rtm_alloy_coil_block')
 		.duration(20 * 25)
@@ -98,7 +111,7 @@ function registerTFGCoilRecipes(event) {
 
 	event.remove({ id : 'gtceu:assembler/coil_hssg' })
 	event.recipes.gtceu.assembler('tfg:coil_hssg')
-		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '2x #forge:insulation_t3/sheet')
+		.itemInputs('8x #forge:double_wires/hssg', '8x #forge:foils/tungsten_carbide', '#forge:insulation_t3/sheet')
 		.inputFluids('gtceu:tungsten 144')
 		.itemOutputs('gtceu:hssg_coil_block')
 		.duration(20 * 30)
@@ -106,15 +119,4 @@ function registerTFGCoilRecipes(event) {
 		.addMaterialInfo(true, true)
 
 	// #endregion
-
-	//#region Kanthal Coil
-
-	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
-	event.recipes.gtceu.assembler('tfg:coil_kanthal')
-		.itemInputs('8x #forge:double_wires/kanthal', '8x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
-		.inputFluids('gtceu:cobalt 144')
-		.itemOutputs('gtceu:kanthal_coil_block')
-		.duration(20 * 15)
-		.EUt(GTValues.VA[GTValues.MV])
-		.addMaterialInfo(true, true)
 }

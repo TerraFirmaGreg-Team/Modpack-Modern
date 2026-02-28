@@ -603,32 +603,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["5BACED5AE350EAB1"]
-			description: ["{quests.high_voltage.nitrobenzene.desc}"]
-			icon: "gtceu:nitrobenzene_bucket"
-			id: "56E7A3A0CC690C8A"
-			optional: true
-			shape: "square"
-			size: 1.0d
-			subtitle: "{quests.high_voltage.nitrobenzene.subtitle}"
-			tasks: [
-				{
-					id: "33CF24B0A19D2F25"
-					item: "gtceu:nitrobenzene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "70D29F223E0CC5CB"
-					title: "{quests.tasktype.checkmark}"
-					type: "checkmark"
-				}
-			]
-			title: "{quests.high_voltage.nitrobenzene.title}"
-			x: -3.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["7CC79617A4965F25"]
 			description: [
 				"{quests.high_voltage.lcr.desc.1}"
@@ -812,7 +786,7 @@
 			]
 			title: "{quests.high_voltage.cetane_diesel.title}"
 			x: -3.5d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -1261,29 +1235,6 @@
 			}]
 			x: 10.0d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"56E7A3A0CC690C8A"
-				"04F6E968CEEC3D49"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{quests.high_voltage.linked_quest_energy.desc}"
-				""
-				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CDB9778C7A30044\" } }"
-			]
-			icon: "gtceu:ev_vanadium_battery"
-			id: "595C5A01358B9550"
-			subtitle: "{quests.high_voltage.linked_quest_energy.subtitle}"
-			tasks: [{
-				id: "4E59108C7FC5421C"
-				title: "{quests.high_voltage.linked_quest_energy.task}"
-				type: "checkmark"
-			}]
-			title: "{quests.high_voltage.linked_quest_energy.title}"
-			x: -5.0d
-			y: 7.0d
 		}
 		{
 			description: ["{quests.high_voltage.kaolinite_powder.desc}"]
