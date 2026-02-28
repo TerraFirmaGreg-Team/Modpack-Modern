@@ -61,6 +61,7 @@ function registerTFGRocketRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:rocket_steel_engine')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.StainlessSteel, 8),
+			Item.of('tfg:double_mo_50_re_plate', 4),
 			'2x #gtceu:circuits/hv',
 			'4x gtceu:hv_fluid_regulator',
 			'2x gtceu:power_thruster',
