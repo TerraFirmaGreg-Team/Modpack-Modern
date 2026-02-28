@@ -125,7 +125,7 @@ function registerTFGRubberRecipes(event) {
 
 	// matches the sulfur dust + raw rubber recipe, just an alternative using powder
 	event.recipes.gtceu.alloy_smelter('tfg:rubber_ingot_powder')
-		.itemInputs('4x tfg:powder/sulfur', '3x #forge:dusts/raw_rubber')
+		.itemInputs('4x tfc:powder/sulfur', '3x #forge:dusts/raw_rubber')
 		.itemOutputs('#forge:ingots/rubber')
 		.duration(5 * 20)
 		.EUt(7)
