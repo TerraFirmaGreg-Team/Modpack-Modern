@@ -7,7 +7,7 @@ function registerTFGFlagsMaterialModification(event) {
 	const {
 		HAS_TFC_TOOL, // used to generate new TFC items like javelins
 		HAS_GT_TOOL, // does not generate items, just TFC recipes for GT tools
-		HAS_TFC_ARMOR, 
+		HAS_TFC_ARMOR,
 		HAS_TFC_UTILITY,
 		CAN_BE_UNMOLDED,
 		GENERATE_DOUBLE_INGOTS,
@@ -37,7 +37,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Clay.addFlags(DISABLE_DECOMPOSITION);
 	GTMaterials.Brick.addFlags(DISABLE_DECOMPOSITION);
 
-	
+
 	// Generate Dusty Ores for Infinite Ores
 	GTMaterials.Goethite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Diamond.addFlags(GENERATE_DUSTY_ORES);
@@ -130,10 +130,10 @@ function registerTFGFlagsMaterialModification(event) {
 	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
 	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
 
-	
+
 	// Other flags
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
-	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);	
+	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
 
 	GTMaterials.Copper.addFlags(GENERATE_FRAME);
 	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
@@ -144,7 +144,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
 	GTMaterials.BlackBronze.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
-	
+
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.Zinc.addFlags(GENERATE_LONG_ROD);
 	GTMaterials.Bismuth.addFlags(GENERATE_LONG_ROD);
@@ -152,7 +152,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_SPRING, GENERATE_SMALL_GEAR, GENERATE_FOIL);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_FOIL);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
-	
+
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
@@ -160,15 +160,17 @@ function registerTFGFlagsMaterialModification(event) {
 
 	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
 
+	GTMaterials.BlueAlloy.addFlags(GENERATE_FOIL);
+
 	GTMaterials.BlackBronze.addFlags(GENERATE_ROTOR)
 	GTMaterials.BismuthBronze.addFlags(GENERATE_ROTOR)
 	GTMaterials.Ultimet.addFlags(GENERATE_ROTOR)
 	GTMaterials.CobaltBrass.addFlags(GENERATE_ROTOR)
 	GTMaterials.Magnalium.addFlags(GENERATE_ROTOR)
 	GTMaterials.VanadiumSteel.addFlags(GENERATE_ROTOR)
-	
+
 	GTMaterials.HSLASteel.addFlags(GENERATE_BOLT_SCREW, GENERATE_DENSE)
-	
+
 	GTMaterials.Invar.addFlags(GENERATE_RING);
 	GTMaterials.Magnalium.addFlags(GENERATE_RING);
 	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
@@ -186,7 +188,7 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.MaragingSteel300.addFlags(GENERATE_DENSE);
 
 	GTMaterials.Quartzite.addFlags(GENERATE_ROD);
-	
+
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
 	GTMaterials.Cadmium.addFlags(GENERATE_PLATE);

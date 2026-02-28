@@ -94,6 +94,7 @@ function registerTFGMoonMaterials(event) {
 			GTMaterialFlags.GENERATE_DENSE,
 			GTMaterialFlags.GENERATE_GEAR,
 			GTMaterialFlags.GENERATE_FRAME,
+			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
 }

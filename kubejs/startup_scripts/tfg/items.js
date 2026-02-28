@@ -33,6 +33,9 @@ const registerTFGItems = (event) => {
 	event.create('tfg:cryo_fluix_pearl')
 	event.create('tfg:uv_led')
 	event.create('tfg:smd_uv_led')
+	event.create('tfg:blue_alloy_desh_foil')
+	event.create('tfg:chorus_ceramic_insulation')
+	event.create('tfg:fired_chorus_ceramic_insulation')
 
 	// Molds
 	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
