@@ -70,7 +70,7 @@ function registerTFGMoonMaterials(event) {
 
 	event.create('armalcolite')
 		.gem(2)
-		.components('1x magnesium', '1x iron', '1x ilmenite')
+		.components('1x magnesium', '1x ilmenite', '2x oxygen')
 		.color(0x443333)
 		.secondaryColor(0x5e2c21)
 		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
@@ -83,10 +83,10 @@ function registerTFGMoonMaterials(event) {
 		.secondaryColor(0xF35A6C)
 		.iconSet(GTMaterialIconSet.getByName('tfc_hematite'))
 		.ore()
-		.addOreByproducts('olivine', 'ilmenite', 'ilmenite')
+		.addOreByproducts('olivine', 'ilmenite', 'rhenium')
 		.ingot()
 		.liquid()
-		.blastTemp(2800, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV])
+		.blastTemp(2212, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
 			GTMaterialFlags.GENERATE_PLATE,
