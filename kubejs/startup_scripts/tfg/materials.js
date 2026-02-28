@@ -158,7 +158,7 @@ const registerTFGMaterials = (event) => {
 		.secondaryColor(0x94eb9f)
 		.components('1x molybdenum', '1x rhenium')
 		.iconSet(GTMaterialIconSet.getByName('chonky'))
-		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
+		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
 		.flags( 
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,

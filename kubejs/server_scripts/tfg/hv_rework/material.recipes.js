@@ -20,7 +20,7 @@ function registerTFGHVMaterialRecipes(event) {
 			Item.of('tfg:mo_50_re_frame', 1),
 			Item.of('gtceu:polyethylene_plate', 6),
 			Item.of('gtceu:steel_plate', 4))
-		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
+		.inputFluids(Fluid.of('gtceu:concrete', 144))
 		.itemOutputs(Item.of('gtceu:plascrete', 2))
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
