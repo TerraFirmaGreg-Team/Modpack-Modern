@@ -38,18 +38,6 @@ function registerTFGCoilMaterials(event) {
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.GENERATE_PLATE,
 		)
-		
-	// Nichrome
-
-	event.create('tfg:desh_tempered')
-		.ingot()
-		.color(0xf5d4ab)
-		.secondaryColor(0x94eb9f)
-		.components('1x desh', '1x nitrogen')
-		.iconSet(GTMaterialIconSet.METALLIC)
-		.flags( 
-			GTMaterialFlags.DISABLE_MATERIAL_RECIPES,
-			GTMaterialFlags.GENERATE_FOIL)
 
 	// RTM
 

@@ -9,7 +9,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(1)
 
-	//#region Modify Electronic Component to require Silicon Rubber
+	// Modify Electronic Component to require Silicon Rubber
 
 	event.replaceInput({ id: 'gtceu:shaped/filter_casing' }, Item.of('gtceu:steel_frame'), Item.of('tfg:mo_50_re_frame'))
 	event.remove({ id: 'gtceu:assembler/plascrete'})
@@ -24,6 +24,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemOutputs(Item.of('gtceu:plascrete', 2))
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true, true)
 
 	event.recipes.gtceu.assembler('tfg:cleanroom_glass')
 		.itemInputs(
@@ -34,6 +35,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemOutputs(Item.of('gtceu:cleanroom_glass', 2))
 		.duration(20 * 10)
 		.EUt(GTValues.VA[GTValues.MV])
+		.addMaterialInfo(true, true)
 
 	// Allow HV Cutter at HV (Ultimet)
 
@@ -51,5 +53,17 @@ function registerTFGHVMaterialRecipes(event) {
 		.duration(20*21)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	// Perlite
 
+
+	// TODO: mafic / ultramafic igneous to perlite
+
+
+	// Perlite is also a water purifier irl!
+	event.recipes.gtceu.distillery('tfg:distilled_water_perlite')
+		.itemInputs('#forge:dusts/perlite')
+		.inputFluids(Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 2000))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.LV])
 }
