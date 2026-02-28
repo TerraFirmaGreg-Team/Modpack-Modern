@@ -48,7 +48,7 @@ function registerTFGRocketRecipes(event) {
 
 	event.recipes.gtceu.assembler(`tfg:rocket_fin_t1`)
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plate, TFGHelpers.getMaterial('rocket_alloy_t1'), 1),
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 1),
 			ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.StainlessSteel, 1)
 		)
 		.itemOutputs('ad_astra:rocket_fin')
@@ -60,13 +60,13 @@ function registerTFGRocketRecipes(event) {
 
 	event.recipes.gtceu.assembler('tfg:rocket_steel_engine')
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.StainlessSteel, 2),
+			ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.StainlessSteel, 8),
 			'2x #gtceu:circuits/hv',
-			'gtceu:hv_electric_pump',
+			'4x gtceu:hv_fluid_regulator',
 			'2x gtceu:power_thruster',
 			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.StainlessSteel, 1)
 		)
-		.inputFluids(Fluid.of('gtceu:blue_steel', 144 * 8))
+		.inputFluids(Fluid.of('gtceu:blue_steel', 144 * 16))
 		.itemOutputs('ad_astra:steel_engine')
 		.duration(600)
 		.circuit(2)
@@ -75,7 +75,7 @@ function registerTFGRocketRecipes(event) {
 
 	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_rocket')
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 8),
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 16),
 			'4x ad_astra:rocket_fin',
 			'1x ad_astra:steel_engine',
 			'1x ad_astra:rocket_nose_cone',
@@ -91,7 +91,7 @@ function registerTFGRocketRecipes(event) {
 		
 	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_double_rocket')
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 12),
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t1'), 24),
 			'4x ad_astra:rocket_fin',
 			'1x ad_astra:steel_engine',
 			'1x ad_astra:rocket_nose_cone',
@@ -175,7 +175,7 @@ function registerTFGRocketRecipes(event) {
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.plateDouble, GTMaterials.Titanium, 4),
 			'2x #gtceu:circuits/ev',
-			'gtceu:ev_electric_pump',
+			'4x gtceu:ev_fluid_regulator',
 			'3x gtceu:advanced_power_thruster',
 			ChemicalHelper.get(TagPrefix.rod, GTMaterials.NeodymiumMagnetic, 4),
 			ChemicalHelper.get(TagPrefix.rotor, GTMaterials.Titanium, 1))
@@ -188,7 +188,7 @@ function registerTFGRocketRecipes(event) {
 
 	event.recipes.gtceu.assembler('ad_astra:tier_2_rocket')
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 12),
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 24),
 			'4x tfg:rocket_fin_t2',
 			'1x ad_astra:desh_engine',
 			'1x tfg:rocket_cone_t2',
@@ -204,7 +204,7 @@ function registerTFGRocketRecipes(event) {
 		
 	event.recipes.gtceu.assembler('ad_astra:tier_2_double_rocket')
 		.itemInputs(
-			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 18),
+			ChemicalHelper.get(TagPrefix.plateDense, TFGHelpers.getMaterial('rocket_alloy_t2'), 32),
 			'4x tfg:rocket_fin_t2',
 			'1x ad_astra:desh_engine',
 			'1x tfg:rocket_cone_t2',
@@ -269,7 +269,7 @@ function registerTFGRocketRecipes(event) {
 		.itemInputs(
 			'6x #forge:double_plates/tungsten_steel',
 			'4x #gtceu:circuits/iv',
-			'gtceu:iv_electric_pump',
+			'4x gtceu:iv_fluid_regulator',
 			'3x tfg:elite_power_thruster',
 			'4x #forge:insulation_t3/cryo',
 			'6x #forge:rods/magnetic_neodymium',
@@ -284,7 +284,7 @@ function registerTFGRocketRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:rocket_ostrum_tank')
 		.itemInputs(
 			'4x #forge:double_plates/rocket_alloy_t3',
-			'gtceu:iv_electric_pump',
+			'4x gtceu:iv_fluid_regulator',
 			'tfg:elite_power_thruster',
 			'2x #forge:insulation_t3/cryo')
 		.inputFluids(Fluid.of('gtceu:ostrum', 144 * 4))

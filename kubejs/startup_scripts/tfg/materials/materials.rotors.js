@@ -151,14 +151,17 @@ function registerTFGRotorMaterials(event) {
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW)
 
-	event.create('tfg:mo_50_re')
-		.color(0x5a8c78)
-		.secondaryColor(0x94eb9f)
-		.iconSet(GTMaterialIconSet.getByName('chonky'))
+	event.create('tfg:silicon_carbide_silicon_carbide')
+		.color(0x615c4f)
+		.secondaryColor(0x40403f)
+		.iconSet(GTMaterialIconSet.NETHERSTAR)
 		.ingot()
-		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
-		.flags( 
+		.blastTemp(2710, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.EV], (20*120))
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION, 
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_BOLT_SCREW)
+
+
 }

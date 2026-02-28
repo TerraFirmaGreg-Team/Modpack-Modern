@@ -21,6 +21,17 @@ function registerTFGCoilMaterials(event) {
 
 	// Kanthal
 
+	event.create('tfg:mo_50_re')
+		.color(0x5a8c78)
+		.secondaryColor(0x94eb9f)
+		.iconSet(GTMaterialIconSet.getByName('chonky'))
+		.ingot()
+		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
+		.flags( 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_BOLT_SCREW)
+
 	event.create('tfg:rough_silicon_carbide')
 		.color(0x95999e)
 		.secondaryColor(0x95999a)
@@ -34,8 +45,10 @@ function registerTFGCoilMaterials(event) {
 		.secondaryColor(0xdfe5aa)
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.ingot()
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.GENERATE_PLATE)
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_PLATE,
+		)
 
 	// RTM
 
