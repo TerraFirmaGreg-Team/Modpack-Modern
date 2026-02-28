@@ -3,6 +3,8 @@
 const registerGTCEuMachines = (event) => {
 
 	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
+	const $OxygenDistributorMultiblock = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.multiblock.electric.OxygenDistributorMultiblock");
+	const $OxygenDistributorSingleblock = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.electric.OxygenDistributorSingleblock");
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 
 
@@ -397,5 +399,39 @@ const registerGTCEuMachines = (event) => {
 		.workableCasingModel(
 			'gtceu:block/casings/solid/machine_casing_solid_steel',
 			'gtceu:block/multiblock/distillation_tower')
+
+	//#endregion
+
+	//#region Environment Machines
+
+	event.create('oxygen_distributor_50', 'simple')
+		.machine((holder, tier, tankScalingFunction) => new $OxygenDistributorSingleblock(holder, tier, tankScalingFunction, 50000))
+		.definition((tier, def) => def.tier(tier).recipeType('oxygen_distribution'))
+		.tiers(GTValues.HV)
+
+	event.create('oxygen_distributor_1000', 'multiblock')
+		.machine((holder) => new $OxygenDistributorMultiblock(holder, 1000000))
+		.recipeType('oxygen_distribution')
+		.appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle('CCCCC', 'CCCCC', 'CCCCC', 'CCCCC', 'CCCCC')
+			.aisle('CCCCC', 'CCCCC', 'CCCCC', 'CCCCC', 'CCCCC')
+			.aisle('CCCCC', 'CCCCC', 'CCCCC', 'CCCCC', 'CCCCC')
+			.aisle('CCCCC', 'CCCCC', 'CCCCC', 'CCCCC', 'CCCCC')
+			.aisle('CCXCC', 'CCCCC', 'CCCCC', 'CCCCC', 'CCCCC')
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('gtceu:solid_machine_casing').setMinGlobalLimited(100)
+				.or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+				.or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(2))
+				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+			)
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.workableCasingModel(
+			'gtceu:block/casings/solid/machine_casing_solid_steel',
+			'gtceu:block/multiblock/distillation_tower')
+
+	//#endregion
 
 }
