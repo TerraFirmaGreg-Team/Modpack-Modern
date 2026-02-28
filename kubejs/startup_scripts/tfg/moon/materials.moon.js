@@ -70,26 +70,27 @@ function registerTFGMoonMaterials(event) {
 
 	event.create('armalcolite')
 		.gem(2)
-		.components('1x magnesium', '1x rutile', '1x ilmenite')
+		.components('1x magnesium', '1x ilmenite', '2x oxygen')
 		.color(0x443333)
 		.secondaryColor(0x5e2c21)
 		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
 		.ore()
-		.addOreByproducts('rutile', 'rutile', 'ilmenite')
+		.addOreByproducts('ilmenite', 'magnesium', 'ilmenite')
 
 	event.create('desh')
-		.components('2x olivine', '1x rutile', '4x nitrogen')
+		.components('2x olivine', '1x ilmenite', '4x nitrogen')
 		.color(0xF39A4C)
 		.secondaryColor(0xF35A6C)
 		.iconSet(GTMaterialIconSet.getByName('tfc_hematite'))
 		.ore()
-		.addOreByproducts('olivine', 'rutile', 'rutile')
+		.addOreByproducts('olivine', 'ilmenite', 'rhenium')
 		.ingot()
 		.liquid()
-		.blastTemp(2800, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV])
+		.blastTemp(2212, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV])
 		.flags(
 			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
-			GTMaterialFlags.GENERATE_PLATE, 
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.GENERATE_ROD,
 			GTMaterialFlags.GENERATE_DENSE,
 			GTMaterialFlags.GENERATE_GEAR,

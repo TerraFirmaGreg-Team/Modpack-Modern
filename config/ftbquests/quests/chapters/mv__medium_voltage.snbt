@@ -425,7 +425,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_steel_alloy.title}"
-			x: 8.0d
+			x: 10.0d
 			y: 1.0d
 		}
 		{
@@ -434,7 +434,7 @@
 			icon: "gtceu:mv_cutter"
 			id: "5CBBBFD1FBBE95CE"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{quests.medium_voltage.mv_cutter.subtitle}"
 			tasks: [{
 				id: "01D8E995ED40F6CF"
@@ -449,13 +449,14 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_cutter.title}"
-			x: 8.0d
-			y: 4.0d
+			x: 10.0d
+			y: 3.75d
 		}
 		{
 			dependencies: [
-				"5CBBBFD1FBBE95CE"
 				"71412502C81F21C1"
+				"738E8E10951E17C6"
+				"71F82DEEBDBBD4AC"
 			]
 			description: ["{quests.medium_voltage.mv_laser_engraver.desc}"]
 			icon: "gtceu:mv_laser_engraver"
@@ -521,8 +522,8 @@
 			hide_dependency_lines: false
 			icon: "gtceu:kanthal_coil_block"
 			id: "1C55AE6AD5BDE304"
-			shape: "square"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.medium_voltage.mv_kanthal_coil.subtitle}"
 			tasks: [{
 				count: 16L
@@ -624,10 +625,7 @@
 			y: 15.0d
 		}
 		{
-			dependencies: [
-				"1E9BE8D3F8A602DC"
-				"3DB03EA806B2D8A1"
-			]
+			dependencies: ["738E8E10951E17C6"]
 			description: ["{quests.medium_voltage.mv_silicon_boule.desc}"]
 			icon: "gtceu:silicon_boule"
 			id: "71412502C81F21C1"
@@ -1501,7 +1499,7 @@
 			]
 			title: "{quests.medium_voltage.mv_kanthal_ingot.title}"
 			x: 4.5d
-			y: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
@@ -1531,8 +1529,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_silicon.title}"
-			x: 11.5d
-			y: 10.0d
+			x: 12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1719,16 +1717,18 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["79E8DC4D9B5F6B97"]
+			hide_dependency_lines: true
 			id: "561385A0B977CFAD"
 			tasks: [{
 				id: "48DB830F406C4AB0"
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: 11.5d
 		}
 		{
@@ -1744,6 +1744,50 @@
 			}]
 			x: 6.0d
 			y: 10.0d
+		}
+		{
+			dependencies: [
+				"3DB03EA806B2D8A1"
+				"5CBBBFD1FBBE95CE"
+			]
+			id: "738E8E10951E17C6"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "15531745870DB404"
+				item: "tfg:high_temp_precision_fabricator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["738E8E10951E17C6"]
+			id: "71F82DEEBDBBD4AC"
+			tasks: [
+				{
+					id: "76613B2F87AA3C63"
+					item: "gtceu:ruby_lens"
+					type: "item"
+				}
+				{
+					id: "7B8AB218BFF3D3BC"
+					item: "gtceu:sapphire_lens"
+					type: "item"
+				}
+				{
+					id: "23A321B34394DBB3"
+					item: "gtceu:emerald_lens"
+					type: "item"
+				}
+				{
+					id: "60020347A3A4132B"
+					item: "gtceu:diamond_lens"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 7.5d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

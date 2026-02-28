@@ -328,7 +328,7 @@ function registerTFGToolMaterialModification(event) {
 
 	// New Materials - Require MaterialFlags (Plates, Bolt/Screwdriver)
 
-	//TFGHelpers.getMaterial('sic_sic').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 80, 2, 238));
+	TFGHelpers.getMaterial('silicon_carbide_silicon_carbide').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 40, 2, 238));
 	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1215));
 	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(130, 180, 4, 1536));
 	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7, 465));
