@@ -37,10 +37,10 @@ on:
       download_language:
         description: 'Download language (leave empty for all)'
         required: false
-        default: 'all'
+        default: ''
         type: choice
         options:
-          - 'all'
+          - ''
           - 'de-DE'
           - 'es-ES'
           - 'fr-FR'
@@ -97,7 +97,7 @@ jobs:
       - name: Set localization branch name
         id: set_branch
         run: |
-          if [ -z "${{ github.event.inputs.download_language || 'all' }}" ]; then
+          if [ -z "${{ github.event.inputs.download_language }}" ]; then
             echo "branch_name=translations/all" >> $GITHUB_OUTPUT
             echo "pr_title_suffix=for ALL languages" >> $GITHUB_OUTPUT
           else
@@ -114,7 +114,7 @@ jobs:
           import_eq_suggestions: true
           skip_untranslated_files: true
           download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
-          download_language: ${{ github.event.inputs.download_language || 'all' }}
+          download_language: ${{ github.event.inputs.download_language }}
           config: crowdin.yml
           localization_branch_name: ${{ steps.set_branch.outputs.branch_name }}
           create_pull_request: ${{ (github.event.inputs.skip_pr != 'true' || github.event.inputs.skip_pr == '') && ((github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both') || github.event_name == 'schedule') }}
@@ -193,7 +193,7 @@ jobs:
           echo "### 📊 Language Statistics" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          if [ -n "${{ github.event.inputs.download_language || 'all' }}" ]; then
+          if [ -n "${{ github.event.inputs.download_language }}" ]; then
             echo "🔍 **Selected Language**: ${{ github.event.inputs.download_language }}" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             # Get status for specific language
