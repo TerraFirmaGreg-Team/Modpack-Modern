@@ -1,4 +1,5 @@
 {
+  "__COMMENT__": "此文件是由LanguageMerger自动生成的，请阅读\"minecraft/kubejs\"中发现的文件\".README IF TRANSLATING\"以获取更多信息。",
   "advancedperipherals.name": "高级外设",
   "advancements.advancedperipherals.base_toolkit": "绅士的工具!",
   "advancements.advancedperipherals.base_toolkit.description": "获得红石接口、库存管理器及能源检测器。没有这些你怎么能玩下去呢?",
@@ -80,12 +81,12 @@
   "turtle.advancedperipherals.chunky_turtle": "区块加载",
   "turtle.advancedperipherals.compass_turtle": "指南",
   "turtle.advancedperipherals.end_automata": "末地牌自动化",
-  "turtle.advancedperipherals.environment_turtle": "环境",
+  "turtle.advancedperipherals.environment_turtle": "环境监测",
   "turtle.advancedperipherals.geoscanner_turtle": "地理",
   "turtle.advancedperipherals.husbandry_automata": "自动化畜牧",
   "turtle.advancedperipherals.overpowered_end_automata": "过载的末地自动化",
   "turtle.advancedperipherals.overpowered_husbandry_automata": "过载的自动畜牧",
   "turtle.advancedperipherals.overpowered_weak_automata": "过载的弱自动化",
-  "turtle.advancedperipherals.player_turtle": "玩家侦测",
+  "turtle.advancedperipherals.player_turtle": "玩家侦测器",
   "turtle.advancedperipherals.weak_automata": "弱自动化"
 }

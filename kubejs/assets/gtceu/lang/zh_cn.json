@@ -1,4 +1,5 @@
 {
+  "__COMMENT__": "此文件是由LanguageMerger自动生成的，请阅读\"minecraft/kubejs\"中发现的文件\".README IF TRANSLATING\"以获取更多信息。",
   "behavior.data_item.data": "- §a%s",
   "behavior.data_item.title": "§n%s结构数据：",
   "behavior.item_magnet.disabled": "§c磁场已禁用",
@@ -3371,7 +3372,7 @@
   "gtceu.multiblock.computation.non_bridging.detailed": "算力数据仓与一台无法桥接的机器连接",
   "gtceu.multiblock.computation.not_enough_computation": "机器需要更多算力！",
   "gtceu.multiblock.computation.usage": "使用：%s",
-  "gtceu.multiblock.cracker.description": "裂化机是一种用于将轻燃油和重燃油裂化为相应裂化物的多方块结构。",
+  "gtceu.multiblock.cracker.description": "裂化机是一种用于将轻渣油和重渣油裂化为相应裂化物的多方块结构。",
   "gtceu.multiblock.cracking_unit.energy": "耗能：%s%%",
   "gtceu.multiblock.data_bank.description": "数据库是一个用于在多个装配线间分享研究数据的多方块结构。此外，它也能让装配线读取数据模块里更复杂的研究数据。",
   "gtceu.multiblock.data_bank.providing": "提供数据。",
