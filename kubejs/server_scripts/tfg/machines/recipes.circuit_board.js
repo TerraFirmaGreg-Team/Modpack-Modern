@@ -46,16 +46,16 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.duration(20 * 25)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_redstone')
+	event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_iron_iii_chloride')
 		.itemInputs(Item.of('gtceu:plastic_circuit_board'), Item.of('gtceu:annealed_copper_foil', 6))
-		.inputFluids(Fluid.of('tfg:redstone_tri_p_toluenesulfonate', 250))
+		.inputFluids(Fluid.of('gtceu:iron_iii_chloride', 500))
 		.itemOutputs(Item.of('gtceu:plastic_printed_circuit_board'))
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_iron_iii_chloride')
+	event.recipes.gtceu.chemical_reactor('tfg:ceramic_printed_circuit_board_redstone_tri_p_toluenesulfonate')
 		.itemInputs(Item.of('gtceu:plastic_circuit_board'), Item.of('gtceu:annealed_copper_foil', 6))
-		.inputFluids(Fluid.of('gtceu:iron_iii_chloride', 500))
+		.inputFluids(Fluid.of('tfg:redstone_tri_p_toluenesulfonate', 250))
 		.itemOutputs(Item.of('gtceu:plastic_printed_circuit_board'))
 		.duration(20 * 30)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -90,4 +90,68 @@ function registerTFGCircuitBoardsRecipes(event) {
 
 	LENS_POLISHING.forEach(([fluid, colour]) => event.remove({ output: `#forge:lenses/${colour}` }));
 	LENS_POLISHING.forEach(([fluid, colour, temp]) => lensPolishing(event, fluid, colour, temp));
+
+	// Printed Circuit boards
+
+	const FLUID_REPLACEMENTS = {
+		// Best T4 - EV
+		"advanced_circuit_board_iron3": {
+			input: "gtceu:iron_iii_chloride",
+			replacement: "tfg:redstone_tri_p_toluenesulfonate"
+		},
+		// Minimal T4 - EV
+		"advanced_circuit_board_persulfate": {
+			input: "gtceu:sodium_persulfate",
+			replacement: "gtceu:iron_iii_chloride"
+		},
+		// Best T5 - IV
+		"extreme_circuit_board_iron3": {
+			input: "gtceu:iron_iii_chloride",
+			replacement: "minecraft:water"
+		},
+		// Minimal T5 - IV
+		"extreme_circuit_board_persulfate": {
+			input: "gtceu:sodium_persulfate",
+			replacement: "tfg:redstone_tri_p_toluenesulfonate"
+		},
+		// Best T6 - LuV
+		"elite_circuit_board_iron3": {
+			input: "gtceu:iron_iii_chloride",
+			replacement: "minecraft:water" // New when Venus is Out
+		},
+		// Minimal T6 - LuV
+		"elite_circuit_board_persulfate": {
+			input: "gtceu:sodium_persulfate",
+			replacement: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
+		},
+		// Best T7 - ZPM
+		"wetware_circuit_board_iron3": {
+			input: "gtceu:iron_iii_chloride",
+			replacement: "minecraft:water" // New when ZPM Planet is Out
+		},
+		// Minimal T7 - ZPM
+		"wetware_circuit_board_persulfate": {
+			input: "gtceu:sodium_persulfate",
+			replacement: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
+		},
+	}
+
+	const REACTOR_PREFIXES = [
+		"gtceu:chemical_reactor",
+		"gtceu:large_chemical_reactor"
+	]
+
+	Object.keys(FLUID_REPLACEMENTS).forEach(recipeName => {
+		const { input, replacement } = FLUID_REPLACEMENTS[recipeName]
+
+		REACTOR_PREFIXES.forEach(prefix => {
+			const recipeId = `${prefix}/${recipeName}`
+
+			if (replacement) {
+				event.replaceInput({ id: recipeId }, Fluid.of(input), Fluid.of(replacement))
+			} else {
+				event.remove({ id: recipeId })
+			}
+		})
+	})
 }

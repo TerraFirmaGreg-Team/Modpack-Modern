@@ -200,6 +200,17 @@ function registerTFGMarsOstrumRecipes(event) {
 			.duration(20 * 240)
 			.EUt(GTValues.VA[GTValues.LuV])
 
+		event.recipes.gtceu.ostrum_linear_accelerator('tfg:lorandite_ola')
+			.perTick(true)
+			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))
+			.perTick(false)
+			.inputFluids(Fluid.of('gtceu:dense_ostrum_vapor', 1000), Fluid.of('gtceu:martian_sludge', 16000))
+			.itemOutputs(Item.of('tfg:dusty_raw_lorandite', 16))
+			.input($HeatRecipeCapability.CAP, new $HeatIngredient(500, 500))
+			.dimension('ad_astra:mars')
+			.duration(20 * 300)
+			.EUt(GTValues.VA[GTValues.IV])
+
 		event.recipes.gtceu.ostrum_linear_accelerator('tfg:tbu_232_rod_ola')
 			.perTick(true)
 			.inputFluids(Fluid.of('gtceu:residual_radioactive_concoction', 1))

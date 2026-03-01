@@ -18,8 +18,8 @@ function registerTFGPropertyMaterialModification(event) {
 
 	GTMaterials.Cadmium.setProperty(PropertyKey.INGOT, new $INGOT_PROPERTY());
 
-	// GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
-	// GTMaterials.Thallium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS, 1, false));
+	GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DUST_PROPERTY());
+	GTMaterials.Thallium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS, 1, false));
 
 	// Bismuth item pipe - 1/4 as good as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
