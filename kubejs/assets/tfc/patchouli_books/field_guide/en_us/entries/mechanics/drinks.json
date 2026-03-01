@@ -22,7 +22,17 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Aged Beer: Absorption II (20:00)$(li)Aged Cider: Speed (5:20)$(li)Aged Rum: Speed II (2:40)$(li)Aged Sake: Resistance (5:20)$(li)Aged Vodka: Resistance II (2:40)$(li)Aged Corn Whiskey: Haste (5:20)$(li)Aged Rye Whiskey: Haste (5:20)$(li)Aged Whiskey: Haste II (2:40)$(li)Aged Mead: Regeneration (5:20)"
+			"text": "$(li)Aged Beer: Absorption II (5:20)$(li)Aged Cider: Speed (5:20)$(li)Aged Rum: Speed II (2:40)$(li)Aged Sake: Resistance (5:20)$(li)Aged Vodka: Resistance II (2:40)$(li)Aged Corn Whiskey: Haste (5:20)$(li)Aged Rye Whiskey: Haste (5:20)$(li)Aged Whiskey: Haste II (2:40)$(li)Aged Mead: Regeneration (5:20)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Vintage Alcohol",
+			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels. These alcohols provide a stronger effect and a longer duration.",
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Vintage Beer: Absorption III (8:00)$(li)Vintage Cider: Speed II (8:00)$(li)Vintage Rum: Speed III (4:00)$(li)Vintage Sake: Resistance II (8:00)$(li)Vintage Vodka: Resistance III (4:00)$(li)Vintage Corn Whiskey: Haste II (8:00)$(li)Vintage Rye Whiskey: Haste II (8:00)$(li)Vintage Whiskey: Haste III (4:00)$(li)Vintage Mead: Regeneration II (8:00)"
 		},
 		{
 			"type": "patchouli:text",
