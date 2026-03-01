@@ -262,12 +262,6 @@ function registerTFGCircuitRecipes(event) {
 	 	.duration(20 * 20)
 	 	.EUt(GTValues.VA[GTValues.EV])
 
-	 event.recipes.gtceu.large_chemical_reactor('tfg:thallium_sulfate_to_zinc_sulfate_lcr')
-	 	.itemInputs('7x #forge:dusts/thallium_sulfate', '1x #forge:dusts/zinc')
-	 	.itemOutputs('2x #forge:dusts/thallium', '6x #forge:dusts/zinc_sulfate')
-	 	.duration(20 * 20)
-	 	.EUt(GTValues.VA[GTValues.EV])
-
      event.recipes.gtceu.alloy_blast_smelter('tfg:bi_pb_sn_cd_in_tl')
 	 	.itemInputs('8x #forge:dusts/bismuth', '4x #forge:dusts/lead', '2x #forge:dusts/tin', '3x #forge:dusts/indium', '2x #forge:dusts/cadmium', '1x #forge:dusts/thallium')
 	 	.outputFluids(Fluid.of('tfg:bi_pb_sn_cd_in_tl', 2880))
