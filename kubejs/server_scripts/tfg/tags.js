@@ -19,6 +19,10 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 
+	// Disable auto generation for Vintage Recipes
+
+	event.add('tfg:no_vintage_gen', 'tfg:basalt_fiber_plate')
+	
 	//Circuit Stuff
 	event.add('tfg:components/uv_leds', 'tfg:uv_led')
 	event.add('tfg:components/uv_leds', 'tfg:smd_uv_led')

@@ -223,8 +223,8 @@ function processFoil(event, material) {
 	const foilItem = ChemicalHelper.get(TagPrefix.foil, material, 4)
 	const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
-	if (plateItem.isEmpty() || foilItem.isEmpty() || plateItem.hasTag('c:hidden_from_recipe_viewers'))
-		return;
+	if (plateItem.isEmpty() || foilItem.isEmpty() || plateItem.hasTag('c:hidden_from_recipe_viewers') || Ingredient.of('#tfg:no_vintage_gen').test(plateItem))
+    	return;
 
 	event.custom({
 		type: "createaddition:rolling",

@@ -67,6 +67,14 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
 	TagPrefix.block.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
 	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:silicon_carbide'))
+
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.dust.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+	TagPrefix.ingot.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
 }
 
 function excludeAllGemsButNormal(material) {

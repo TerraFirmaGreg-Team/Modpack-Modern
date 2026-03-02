@@ -72,6 +72,8 @@ function registerTFGHVMaterialRecipes(event) {
 		.duration(20*13.5)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	//#region Stone dust stuffs
+
 	// Perlite
 
 	event.remove({ id: 'gtceu:extractor/extract_igneous_felsic_dust'})
@@ -152,7 +154,9 @@ function registerTFGHVMaterialRecipes(event) {
 		.blastFurnaceTemp(2750)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	// Inconel Line
+	//#endregion
+
+	//#region Inconel Line
 
 	event.recipes.gtceu.mixer('tfg:weak_inconel_718')
 		.inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 12000))
