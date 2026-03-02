@@ -7,5 +7,10 @@ const registerCreateConnectedItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
+	global.CREATE_CONNECTED_HIDDEN_ITEMS.forEach(item => {
+		event.removeAllTagsFrom(item)
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
+
 	event.remove('minecraft:creeper_drop_music_discs', ['create_connected:music_disc_elevator', 'create_connected:music_disc_interlude'])
 }
