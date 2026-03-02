@@ -287,7 +287,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_stainless.title}"
-			x: 1.0d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -553,7 +553,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_first_hv.title}"
-			x: 3.0d
+			x: 1.5d
 			y: 18.0d
 		}
 		{
@@ -691,8 +691,9 @@
 			description: ["{quests.medium_voltage.mv_best_lv.desc}"]
 			icon: "gtceu:microchip_processor"
 			id: "5E76D4C24026157D"
-			shape: "octagon"
-			size: 1.25d
+			optional: true
+			shape: "heart"
+			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_best_lv.subtitle}"
 			tasks: [{
 				id: "4E076080D7B23372"
@@ -700,8 +701,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_best_lv.title}"
-			x: -3.0d
-			y: 13.5d
+			x: 0.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -724,7 +725,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["38DE506FF5B32031"]
+			dependencies: [
+				"38DE506FF5B32031"
+				"3DFFA8F91452C62A"
+			]
 			description: ["{quests.medium_voltage.mv_second_hv.desc}"]
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
@@ -754,8 +758,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_inductor.title}"
-			x: -10.5d
-			y: 16.5d
+			x: -5.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6BB98D128822730E"]
@@ -765,18 +769,26 @@
 			shape: "gear"
 			size: 3.0d
 			subtitle: "{quests.medium_voltage.mv_polyethylene.subtitle}"
-			tasks: [{
-				id: "1605293EDC9EAFCB"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:polyethylene\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:polyethylene\"}})item(gtceu:polyethylene_bucket))"
+			tasks: [
+				{
+					id: "1605293EDC9EAFCB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:polyethylene\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:polyethylene\"}})item(gtceu:polyethylene_bucket))"
+						}
 					}
+					optional_task: true
+					title: "{material.gtceu.polyethylene}"
+					type: "item"
 				}
-				title: "{material.gtceu.polyethylene}"
-				type: "item"
-			}]
+				{
+					id: "0BED85C5B7E4B5AF"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.medium_voltage.mv_polyethylene.title}"
 			x: -10.0d
 			y: 10.0d
@@ -802,8 +814,8 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_pvc.title}"
-			x: -9.5d
-			y: 16.5d
+			x: -10.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -829,8 +841,8 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_boards.title}"
-			x: -7.0d
-			y: 15.0d
+			x: -3.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -854,7 +866,7 @@
 			tasks: [
 				{
 					id: "118468CD578081CF"
-					item: "gtceu:sodium_persulfate_bucket"
+					item: "tfg:redstone_tri_p_toluenesulfonate_bucket"
 					optional_task: true
 					type: "item"
 				}
@@ -871,8 +883,8 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_sodium_iron.title}"
-			x: -7.0d
-			y: 16.5d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1333,7 +1345,7 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_electronic_components.title}"
-			x: 0.0d
+			x: 1.5d
 			y: 10.0d
 		}
 		{
@@ -1624,7 +1636,7 @@
 			]
 			title: "{quests.medium_voltage.stainless_greate.title}"
 			x: 0.0d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["54A255C1C6E33165"]
@@ -1728,8 +1740,8 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 11.5d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
@@ -1788,6 +1800,45 @@
 			]
 			x: 8.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["682C26579EDDCA76"]
+			icon: {
+				Count: 1
+				id: "gtceu:mv_vanadium_steel_wrench"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 3
+						MaxDamage: 2047
+						ToolSpeed: 19.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "4F639F0169C56641"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "2089A49DEBDB9A7C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

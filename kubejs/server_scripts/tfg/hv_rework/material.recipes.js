@@ -5,8 +5,8 @@ function registerTFGHVMaterialRecipes(event) {
 			Item.of('gtceu:rhenium_dust', 1),
 			Item.of('gtceu:molybdenum_dust', 1))
 		.itemOutputs(Item.of('tfg:mo_50_re_dust', 2))
-		.duration(20 * 8)
-		.EUt(GTValues.VA[GTValues.HV])
+		.duration(20 * 10)
+		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(1)
 
 	// Modify Electronic Component to require Silicon Rubber
@@ -74,9 +74,52 @@ function registerTFGHVMaterialRecipes(event) {
 
 	// Perlite
 
+    event.recipes.gtceu.coal_liquefaction_tower('tfg:molten_felsic_silicate')
+        .itemInputs(Item.of('tfg:igneous_felsic_dust', 16))
+        .perTick(true)
+	    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+	    .perTick(false)
+		.outputFluids(Fluid.of('tfg:molten_felsic_silicate', 144*16))
+        .duration(20 * 50)
+        .EUt(GTValues.VA[GTValues.LV]);
 
-	// TODO: mafic / ultramafic igneous to perlite
+    event.recipes.gtceu.mixer('tfg:obsidian_dust')
+        .inputFluids(Fluid.of('tfg:molten_felsic_silicate', 144), Fluid.of('gtceu:ice', 1000))
+		.itemOutputs(Item.of('gtceu:obsidian_dust', 1))
+        .duration(20 * 28)
+        .EUt(GTValues.VA[GTValues.LV]);
 
+    event.recipes.gtceu.gas_pressurizer('tfg:obsidian_dust')
+		.itemInputs(Item.of('gtceu:obsidian_dust', 1))
+        .inputFluids(Fluid.of('gtceu:steam', 1000))
+		.itemOutputs(Item.of('gtceu:perlite_dust', 1))
+        .duration(20 * 16)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+	// Alumina
+
+	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
+		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1), Item.of('gtceu:silicon_dioxide_dust'))
+		.outputFluids(Fluid.of('water', 1000))
+		.duration(20 * 84)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+
+	event.recipes.gtceu.chemical_bath('tfg:aluminium_hydroxide_dust')
+		.itemInputs(Item.of('tfg:aluminium_sulfate_dust', 1))
+		.inputFluids(Fluid.of('tfc:lye', 2000))
+		.itemOutputs(Item.of('tfg:aluminium_hydroxide_dust', 2), Item.of('tfg:sodium_sulfate_dust', 1))
+		.duration(20 * 16)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.arc_furnace('tfg:alumina_dust')
+		.itemInputs(Item.of('tfg:aluminium_hydroxide_dust', 2))
+		.inputFluids(Fluid.of('gtceu:oxygen', 100))
+		.itemOutputs(Item.of('tfg:alumina_dust', 1))
+		.duration(20 * 8)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	// Perlite is also a water purifier irl!
 	event.recipes.gtceu.distillery('tfg:distilled_water_perlite')
@@ -85,4 +128,26 @@ function registerTFGHVMaterialRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:distilled_water', 2000))
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Change Titanium to require Nichrome Coils
+
+	event.remove({ id: 'gtceu:electric_blast_furnace/titanium_from_tetrachloride'})
+	event.recipes.gtceu.electric_blast_furnace('tfg:titanium_from_tetrachloride')
+		.itemInputs(Item.of('gtceu:magnesium_dust', 2))
+		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000))
+		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1), Item.of('gtceu:magnesium_chloride_dust', 6))
+		.duration(20 * 30)
+		.blastFurnaceTemp(2750)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	// Let's also do NaqLine here
+	event.remove({ id: 'gtceu:electric_blast_furnace/titanium_trifluoride_separation'})
+	event.recipes.gtceu.electric_blast_furnace('tfg:titanium_trifluoride_separation')
+		.itemInputs(Item.of('gtceu:titanium_trifluoride_dust', 4))
+		.inputFluids(Fluid.of('gtceu:hydrogen', 3000))
+		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1))
+		.outputFluids(Fluid.of('gtceu:hydrofluoric_acid', 3000))
+		.duration(20 * 30)
+		.blastFurnaceTemp(2750)
+		.EUt(GTValues.VA[GTValues.HV])
 }

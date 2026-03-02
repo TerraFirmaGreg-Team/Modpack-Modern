@@ -272,6 +272,7 @@ function registerTFGToolMaterialModification(event) {
 	// Remove all the Turbine Rotors we don't want anymore
 	const noRotorMaterials = [
 		GTMaterials.Bronze,
+		GTMaterials.BlackBronze,
 		GTMaterials.CobaltBrass,
 		GTMaterials.Manganese,
 		GTMaterials.Molybdenum,
@@ -291,7 +292,9 @@ function registerTFGToolMaterialModification(event) {
 		GTMaterials.Titanium,
 		GTMaterials.Tungsten,
 		GTMaterials.TungstenSteel,
+		GTMaterials.TungstenCarbide,
 		GTMaterials.HSSG,
+		GTMaterials.HSSE,
 		GTMaterials.Iridium,
 		GTMaterials.RhodiumPlatedPalladium,
 		GTMaterials.Naquadah,
