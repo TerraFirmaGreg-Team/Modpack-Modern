@@ -1037,9 +1037,9 @@ const registerMinecraftRecipes = (event) => {
 	//#region Pressure Plates
 
 	const PRESSURE_PLATES = [
-		{type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab'},
-		{type: 'light_weighted', material: '#forge:plates/gold'},
-		{type: 'heavy_weighted', material: '#forge:plates/iron'}
+		{type: 'polished_blackstone', material: 'minecraft:polished_blackstone_slab', recycle: GTMaterials.get('tfg:igneous_ultramafic'), yield: 0.5 },
+		{type: 'light_weighted', material: '#forge:plates/gold', recycle: GTMaterials.Gold, yield: 2 },
+		{type: 'heavy_weighted', material: '#forge:plates/iron', recycle: GTMaterials.Iron, yield: 2 }
 	]
 	PRESSURE_PLATES.forEach(x => {
 		event.shaped(`minecraft:${x.type}_pressure_plate`, [
@@ -1060,7 +1060,7 @@ const registerMinecraftRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 
-		TFGHelpers.registerMaterialInfo(`minecraft:${x.type}_pressure_plate`, [GTMaterials.Air, 1])
+		TFGHelpers.registerMaterialInfo(`minecraft:${x.type}_pressure_plate`, [x.recycle, x.yield])
 	})
 
 	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])
