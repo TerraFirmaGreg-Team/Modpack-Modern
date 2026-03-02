@@ -13,7 +13,7 @@ function registerTFGMoSiBRecipes(event) {
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_weak_mo_si_b' })
     event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_homogenized_mo_si_b_to_nugget' })
     event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_activated_mo_si_b_to_nugget' })
-    
+    event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_weak_mo_si_b_ingot' })
 
 	event.recipes.gtceu.mixer('tfg:dirty_mo_si_b_dust')
 		.itemInputs(Item.of('gtceu:silicon_dust', 1), Item.of('gtceu:molybdenum_dust', 1), Item.of('tfg:boron_10_hydroxide_dust', 1))
