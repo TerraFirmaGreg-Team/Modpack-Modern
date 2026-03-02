@@ -54,11 +54,31 @@
 			y: 2.0d
 		}
 		{
+			icon: {
+				Count: 1
+				id: "gtceu:lv_blue_steel_wrench"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 3
+						MaxDamage: 803
+						ToolSpeed: 18.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
 			id: "343F16805E04BFBE"
 			linked_quest: "2D2CB8104E40E808"
 			shape: "heart"
 			x: 7.0d
-			y: 5.5d
+			y: 4.5d
 		}
 	]
 	quests: [
@@ -1369,7 +1389,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7FA1525D681C4B4A"]

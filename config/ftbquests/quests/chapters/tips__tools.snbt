@@ -812,25 +812,25 @@
 			]
 			icon: {
 				Count: 1
-				id: "gtceu:iv_copper_drill"
+				id: "gtceu:lv_blue_steel_drill"
 				tag: {
 					Charge: 2147483647L
 					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
-						AoEColumn: 4
-						AoELayer: 8
-						AoERow: 4
-						MaxAoEColumn: 4
-						MaxAoELayer: 8
-						MaxAoERow: 4
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
 						TorchPlacing: 1b
 					}
 					GT.Tool: {
 						DefaultEnchantments: [ ]
-						HarvestLevel: 2
-						MaxDamage: 5543
-						ToolSpeed: 6.0f
+						HarvestLevel: 3
+						MaxDamage: 2411
+						ToolSpeed: 11.0f
 					}
 					HideFlags: 2
 					MaxCharge: 2147483647L
