@@ -83,4 +83,8 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
 
+	// Transition SiC SiC item
+
+	event.create('tfg:incomplete_sic_sic_turbine_rotor', 'create:sequenced_assembly')
+
 }

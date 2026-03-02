@@ -75,6 +75,19 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.dust.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
 	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
 	TagPrefix.ingot.setIgnored(GTMaterials.get('tfg:basalt_fiber'))
+
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.dust.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.plate.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.bolt.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.screw.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.rod.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	//TagPrefix.turbineBlade.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+	TagPrefix.ingot.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
 }
 
 function excludeAllGemsButNormal(material) {
