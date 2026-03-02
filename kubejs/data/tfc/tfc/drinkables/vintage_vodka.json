@@ -1,0 +1,13 @@
+{
+  "ingredient": "tfg:vintage_vodka",
+  "thirst": 5,
+  "intoxication": 4000,
+  "may_drink_when_full": true,
+  "effects": [
+    {
+      "type": "minecraft:resistance",
+      "duration": 4800,
+      "amplifier": 2
+    }
+  ]
+}

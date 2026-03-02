@@ -41,7 +41,7 @@
 			"type": "patchouli:spotlight",
 			"title": "松脂",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "黏性树脂也可以从特定的$(thing)针叶松树$()中获取，不过这些树无法用来做橡胶。"
+			"text": "黏性树脂也可以从特定的$(thing)针叶松树$()中获取$(thing)松脂$()来制作，不过这些树无法用来做橡胶。"
 		}
 	],
 	"read_by_default": true,

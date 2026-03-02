@@ -63,7 +63,6 @@ function registerTFGWoodenRecipes(event) {
                         .id(`tfg:vi/lathe/${name}_stripped_wood_from_log_wood`)
                 };
 
-            // TODO: remove condition of logs
             // Lumber from log
                 if (logs && lumber && name) {
                     event.shapeless(`8x ${lumber}`,
@@ -279,6 +278,11 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_plank`);
 
+                event.stonecutting(`${plank}`,`${mosaic_plank}`);
+                event.stonecutting(`${mosaic_plank}`,`${plank}`);
+
+                event.recipes.tfc.chisel(`${mosaic_plank}`, `${plank}`, 'smooth');
+
             // Lumber from mosaic plank
                 event.shapeless(`4x ${lumber}`,
                     [`${mosaic_plank}`, '#forge:tools/saws']
@@ -295,6 +299,11 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_stair`);
 
+                event.stonecutting(`${stair}`,`${mosaic_stair}`);
+                event.stonecutting(`${mosaic_stair}`,`${stair}`);
+
+                event.recipes.tfc.chisel(`${mosaic_stair}`, `${mosaic_plank}`, 'stair');
+
             // Lumber from mosaic stairs
                 event.shapeless(`3x ${lumber}`,
                     [`${mosaic_stair}`, '#forge:tools/saws']
@@ -310,6 +319,11 @@ function registerTFGWoodenRecipes(event) {
                     )
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_slab`);
+
+                event.stonecutting(`${slab}`,`${mosaic_slab}`);
+                event.stonecutting(`${mosaic_slab}`,`${slab}`);
+
+                event.recipes.tfc.chisel(`${mosaic_slab}`, `${mosaic_plank}`, 'slab');
 
             // Lumber from mosaic slab
                 event.shapeless(`2x ${lumber}`,
@@ -346,7 +360,13 @@ function registerTFGWoodenRecipes(event) {
             ['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]],
             ['{mod}:wood/sluice/{type}', ['{wood}', 3/2]],
             ['{mod}:wood/barrel/{type}', ['{wood}', 7/2]],
-            ['{mod}:wood/sign/{type}', ['{wood}', 1]]
+            ['{mod}:wood/sign/{type}', ['{wood}', 1]],
+            ['{mod}:wood/lectern/{type}', ['{wood}', 5]],
+            ['{mod}:wood/planks/{type}_bookshelf', ['{wood}', 3]],
+            ['{mod}:wood/planks/{type}_tool_rack', ['{wood}', 3]],
+            ['{mod}:wood/jar_shelf/{type}', ['{wood}', 7/2]],
+            ['{mod}:wood/scribing_table/{type}', ['{wood}', 7]],
+            ['{mod}:wood/sewing_table/{type}', ['{wood}', 14]]
         ];
 
         /**
@@ -432,6 +452,9 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `beneath:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_lumber_planks` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_slab_undo` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_trapdoor` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_door` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_stairs` });
 
             TFGWoodBuilder(
                 event, 
@@ -441,7 +464,7 @@ function registerTFGWoodenRecipes(event) {
                 `beneath:wood/log/${wood}`,
                 `beneath:wood/stripped_log/${wood}`, 
                 `beneath:wood/planks/${wood}`, 
-                null,
+                `beneath:wood/planks/${wood}_stairs`,
                 `beneath:wood/planks/${wood}_slab`, 
                 `beneath:wood/planks/${wood}_door`, 
                 `beneath:wood/planks/${wood}_trapdoor`, 
@@ -697,31 +720,25 @@ function registerTFGWoodenRecipes(event) {
         // Bamboo
 
             // Removed recipe changes
-                const Bamboo_Items = [
-                    'minecraft:stripped_bamboo_block',
-                    'minecraft:bamboo_planks',
-                    'minecraft:bamboo_slab',
-                    'minecraft:bamboo_stairs',
-                    'minecraft:bamboo_fence',
-                    'minecraft:bamboo_fence_gate',
-                    'minecraft:bamboo_door',
-                    'minecraft:bamboo_trapdoor',
-                    'minecraft:bamboo_button',
-                    'minecraft:bamboo_mosaic',
-                    'minecraft:bamboo_mosaic_slab',
-                    'minecraft:bamboo_mosaic_stairs',
-                    'minecraft:bamboo_pressure_plate'
-                ];
-
-                Bamboo_Items.forEach(item => {
-                    event.remove({ output: item });
-                });
+                event.remove({ output: 'minecraft:stripped_bamboo_block' });
+                event.remove({ output: 'minecraft:bamboo_planks' });
+                event.remove({ output: 'minecraft:bamboo_slab' });
+                event.remove({ output: 'minecraft:bamboo_stairs' });
+                event.remove({ output: 'minecraft:bamboo_fence' });
+                event.remove({ output: 'minecraft:bamboo_fence_gate' });
+                event.remove({ output: 'minecraft:bamboo_door' });
+                event.remove({ output: 'minecraft:bamboo_trapdoor' });
+                event.remove({ output: 'minecraft:bamboo_button' });
+                event.remove({ output: 'minecraft:bamboo_mosaic' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_slab' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_stairs' });
+                event.remove({ output: 'minecraft:bamboo_pressure_plate' });
 
             TFGWoodBuilder(
                 event,
                 'bamboo',
                 'tfg:wood/lumber/bamboo',
-                null,
+                '#minecraft:bamboo_blocks',
                 'minecraft:bamboo_block',
                 'minecraft:stripped_bamboo_block',
                 'minecraft:bamboo_planks',
@@ -749,17 +766,6 @@ function registerTFGWoodenRecipes(event) {
                 'minecraft:bamboo_slab',
                 'minecraft:bamboo_mosaic_slab'
             );
-
-            // Lumber from log
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_log`);
-
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:stripped_bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_stripped_log`);
 
     // #endregion
 

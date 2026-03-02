@@ -4017,6 +4017,76 @@
             ]
         },
         {
+            "pakku_id": "NJIUJpYFj0cVIhjt",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "copycats",
+                "modrinth": "copycats"
+            },
+            "name": {
+                "curseforge": "Create: Copycats+",
+                "modrinth": "Create: Copycats+"
+            },
+            "id": {
+                "curseforge": "968398",
+                "modrinth": "UT2M39wf"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7634/682/copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "id": "7634682",
+                    "parent_id": "968398",
+                    "hashes": {
+                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad",
+                        "md5": "47e13c8058d400e4a6316d00f451b29c"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 1996097,
+                    "date_published": "2026-02-16T17:37:39.993Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/UT2M39wf/versions/z7s54cjL/copycats-3.0.7+mc.1.20.1-forge.jar",
+                    "id": "z7s54cjL",
+                    "parent_id": "UT2M39wf",
+                    "hashes": {
+                        "sha512": "163499b08adb6198630019b74c32465c569145ad36e956c5b4d1e6537c0eb52fd9217ebd90b7f05f5efaf084d71533481e46738295609f31e50bec6b7941c91b",
+                        "sha1": "5d0f497695fc2ee4ef89f1898458882b9d2d3aad"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 1996097,
+                    "date_published": "2026-02-16T17:37:41.323792Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "WR8Eaw7xnPnm4UOD",
             "pakku_links": [
                 "Nw8xTCQngHA15ilh"

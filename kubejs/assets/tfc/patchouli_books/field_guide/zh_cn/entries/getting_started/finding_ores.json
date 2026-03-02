@@ -60,12 +60,12 @@
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "在群峦传说中，每个矿石包含的实际金属的$(thing)单位$()（$(thing)mB（也就是毫桶）$()）是不同的。像这样在地表发现的小矿粒质量最低，只能提供 $(thing)10 mB$() 的金属。为了提取这种金属，需要将其熔化，并使用称为$(thing)铸造$()的工艺制成工具。",
+      "text": "在群峦传说中，每个矿石包含的实际金属的$(thing)单位$()（$(thing)mB（也就是毫桶）$()）是不同的。像这样在地表发现的小矿粒质量最低，只能提供 $(thing)16 mB$() 的金属。为了提取这种金属，需要将其$(thing)熔化$()，并使用称为$(thing)铸造$()的工艺制成工具。",
       "title": "铸造"
     },
     {
       "type": "patchouli:text",
-      "text": "开始之前，你需要准备：$(br)$(li)一只$(l:getting_started/pottery#vessel)小缸$()$(li)足够搭建一个$(l:getting_started/pit_kiln)坑窑$()的材料。$(li)若干个用来浇铸金属的$(l:getting_started/pottery#mold)模具$()。$(li)最后，也是最重要的，至少价值 100 mB 的可以用来铸造的金属矿石。早期的话就只有$(thing)铜$()了（三种铜矿石中的任意一种，或者混搭都行）。$(br2)$(italic)备注：如果材料足够，也可以直接铸造某些$(l:getting_started/primitive_alloys)合金$()。"
+      "text": "开始之前，你需要准备：$(br)$(li)一只$(l:getting_started/pottery#vessel)小缸$()$(li)足够搭建一个$(l:getting_started/pit_kiln)坑窑$()的材料。$(li)若干个用来浇铸金属的$(l:getting_started/pottery#mold)模具$()。$(li)最后，也是最重要的，至少价值 144 mB 的可以用来铸造的金属矿石。早期的话就只有$(thing)铜$()了（三种铜矿石中的任意一种，或者混搭都行）。$(br2)$(br)$(italic)备注：如果材料足够，也可以直接铸造某些$(l:getting_started/primitive_alloys)合金$()"
     },
     {
       "type": "patchouli:text",

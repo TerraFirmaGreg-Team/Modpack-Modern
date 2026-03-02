@@ -8,8 +8,7 @@ const registerCreateConnectedRecipes = (event) => {
 		event.remove({ output: item })
 	})
 
-	event.stonecutting('create_connected:copycat_box', '#forge:ingots/zinc')
-	event.stonecutting('2x create_connected:copycat_catwalk', '#forge:ingots/zinc')
+	event.remove({ input: "create_connected:copycat_vertical_step", output: "create:copycat_step" });
 
 	// Remove Fluid Vessel Crafting
 	event.remove({ id: 'create_connected:crafting/kinetics/fluid_vessel' })
