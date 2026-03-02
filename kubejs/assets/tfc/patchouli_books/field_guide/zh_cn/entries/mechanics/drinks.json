@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "饮用容器",
-			"text": "你可以使用$(l:getting_started/pottery#jug)陶罐$()、$(l:waterflasks/recipes)水壶$()或$(l:mechanics/glassworking_applications#glass_bottle)玻璃瓶$()来饮用。陶罐只能装一次饮用量且易碎。玻璃瓶可以装几次，但也有破损的风险。水壶能装更多，并且会缓慢消耗耐久，而$(item)红钢水袋$()可以容纳20次饮用量且永不损坏。",
+			"text": "你可以使用$(l:getting_started/pottery#jug)陶罐$()、$(l:waterflasks/recipes)水壶$()或$(l:mechanics/glassworking_applications#glass_bottle)玻璃瓶$()来饮用。陶罐只能装一次饮用量且易碎。玻璃瓶可以装几次，但也有破损的风险。水壶能装更多，并且会缓慢消耗耐久，而$(item)红钢水壶$()可以容纳20次饮用量且永不损坏。",
 			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
 		},
 		{
@@ -22,7 +22,17 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)陈酿啤酒：伤害吸收 II (20:00)$(li)陈酿苹果酒：速度提升 (5:20)$(li)陈酿朗姆酒：速度提升 II (2:40)$(li)陈酿清酒：伤害抗性 (5:20)$(li)陈酿伏特加：伤害抗性 II (2:40)$(li)陈酿玉米威士忌：急迫 (5:20)$(li)陈酿黑麦威士忌：急迫 (5:20)$(li)陈酿威士忌：急迫 II (2:40)$(li)陈酿蜂蜜酒：生命恢复 (5:20)"
+			"text": "$(li)陈酿啤酒：伤害吸收 II (5:20)$(li)陈酿苹果酒：速度提升 (5:20)$(li)陈酿朗姆酒：速度提升 II (2:40)$(li)陈酿清酒：伤害抗性 (5:20)$(li)陈酿伏特加：伤害抗性 II (2:40)$(li)陈酿玉米威士忌：急迫 (5:20)$(li)陈酿黑麦威士忌：急迫 (5:20)$(li)陈酿威士忌：急迫 II (2:40)$(li)陈酿蜂蜜酒：生命恢复 (5:20)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "陈年酒",
+			"text": "$(thing)陈年酒$()是通过将陈酿酒在密封的木桶中进一步陈化制成的。这些酒提供更强的效果和更长的持续时间。",
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)陈年啤酒：伤害吸收 III (8:00)$(li)陈年苹果酒：速度提升 II (8:00)$(li)陈年朗姆酒：速度提升 III (4:00)$(li)陈年清酒：伤害抗性 II (8:00)$(li)陈年伏特加：伤害抗性 III (4:00)$(li)陈年玉米威士忌：急迫 II (8:00)$(li)陈年黑麦威士忌：急迫 II (8:00)$(li)陈年威士忌：急迫 III (4:00)$(li)陈年蜂蜜酒：生命恢复 II (8:00)"
 		},
 		{
 			"type": "patchouli:text",
@@ -32,7 +42,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)红葡萄酒：力量 (5:20)$(li)白葡萄酒：凋灵抗性 (5:20)$(li)桃红葡萄酒：游泳加速 (5:20)$(li)起泡酒：跳跃提升 II (5:20)$(li)甜点酒：击退抗性 (5:20)"
+			"text": "$(li)红葡萄酒：急迫 (5:20)$(li)白葡萄酒：凋灵抗性 (5:20)$(li)桃红葡萄酒：游泳加速 (5:20)$(li)起泡酒：跳跃提升 II (5:20)$(li)甜点酒：击退抗性 (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -73,8 +83,8 @@
 			"item": "tfc:bucket/salt_water"
 		},
 		{
-			"title": "液态冰泥",
-			"text": "饮用$(thing)冰泥$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
+			"title": "液态冰沙",
+			"text": "饮用$(thing)冰沙$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket"
 		}
