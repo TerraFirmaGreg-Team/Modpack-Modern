@@ -25,7 +25,7 @@
 			"text": "$(li)陈酿啤酒：伤害吸收 II (20:00)$(li)陈酿苹果酒：速度提升 (5:20)$(li)陈酿朗姆酒：速度提升 II (2:40)$(li)陈酿清酒：伤害抗性 (5:20)$(li)陈酿伏特加：伤害抗性 II (2:40)$(li)陈酿玉米威士忌：急迫 (5:20)$(li)陈酿黑麦威士忌：急迫 (5:20)$(li)陈酿威士忌：急迫 II (2:40)$(li)陈酿蜂蜜酒：生命恢复 (5:20)"
 		},
 		{
-			"type": "patchouli:text",
+			"type": "patchouli:spotlight",
 			"title": "葡萄酒",
 			"text": "$(thing)葡萄酒$()是另一种酒精饮料，其酿造方式与其他酒类不同。这是一个复杂但回报丰厚的过程，无法用机器自动化完成。查看$(l:firmalife/wine)酿酒$()条目以了解如何制作。$(br2)所有种类的葡萄酒都提供额外的$(item)力量 (5:20)$()效果！",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
@@ -35,8 +35,8 @@
 			"text": "$(li)红葡萄酒：力量 (5:20)$(li)白葡萄酒：凋灵抗性 (5:20)$(li)桃红葡萄酒：游泳加速 (5:20)$(li)起泡酒：跳跃提升 II (5:20)$(li)甜点酒：击退抗性 (5:20)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"title": "茶",
+			"type": "patchouli:text",
+			"title": "葡萄酒",
 			"text": "$(thing)茶$()可以用某些干燥的植物冲泡。$(br2)它们提供短暂但有用的增益，并使你的体温升高4°C。非常适合冬天！",
 			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
 		},
@@ -61,9 +61,19 @@
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
 		},
 		{
-			"title": "温泉",
-			"text": "饮用$(thing)温泉$()可使体温升高4°C，并产生微小的生命恢复效果。站在温泉里同样能使你感到温暖。",
-			"item": "tfc:bucket/spring_water",
+			"type": "patchouli:text",
+			"text": "饮用$(thing)温泉$()可使体温升高4°C，并产生微小的生命恢复效果。站在温泉里同样能使你感到温暖。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "奶类",
+			"text": "饮用$(thing)海水$()不能补充水分，反而会让你更加口渴。体温过高也会让你更容易口渴。在海上迷路了？下雨时抬头看天，可以轻松补充水分！",
+			"item": "tfc:bucket/salt_water"
+		},
+		{
+			"title": "液态冰沙",
+			"text": "饮用$(thing)冰沙$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
+			"item": "gtceu:ice_bucket",
 			"type": "patchouli:spotlight"
 		},
 		{
@@ -73,8 +83,8 @@
 			"item": "tfc:bucket/salt_water"
 		},
 		{
-			"title": "液态冰泥",
-			"text": "饮用$(thing)冰泥$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
+			"title": "液态冰沙",
+			"text": "饮用$(thing)冰沙$()可使体温降低4°C，非常适合夏天！对于穿越幽冥之地来说也很方便。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket"
 		}

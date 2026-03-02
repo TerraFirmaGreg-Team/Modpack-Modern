@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "温泉疗愈",
-			"item": "tfc:bucket/spring_water",
+			"item": "gtceu:ice_bucket",
 			"text": "站立于$(thing)温泉$()中可获得缓慢的$(thing)生命恢复$()效果。"
 		},
 		{
