@@ -40,7 +40,7 @@ function registerTFGPrimitiveItems(event) {
 
 	event.create('tfg:harvest_basket')
 		.parentModel('tfg:item/harvest_basket')
-		.maxDamage(128)
+		.maxDamage(256)
 
 	event.create('tfg:aluminium_harvest_basket')
 		.parentModel('tfg:item/aluminium_harvest_basket')

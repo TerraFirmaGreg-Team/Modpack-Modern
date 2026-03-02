@@ -63,7 +63,6 @@ function registerTFGWoodenRecipes(event) {
                         .id(`tfg:vi/lathe/${name}_stripped_wood_from_log_wood`)
                 };
 
-            // TODO: remove condition of logs
             // Lumber from log
                 if (logs && lumber && name) {
                     event.shapeless(`8x ${lumber}`,
@@ -113,7 +112,17 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shaped/${name}_slab_from_lumber`)
                 };
 
-            // Lumber from slab
+            // Slab from plank
+                if (slab && plank && name) {
+                    event.shaped(`6x ${slab}`, [
+                        'AAA'
+                    ], {
+                        A: plank
+                    })
+                    .id(`tfg:shaped/${name}_slab_from_plank`)
+                }
+
+            // Lumber from stair
                 if (stair && lumber && name) {
                     event.shapeless(`3x ${lumber}`,
                         [stair, '#forge:tools/saws']
@@ -123,8 +132,19 @@ function registerTFGWoodenRecipes(event) {
                     generateCutterRecipe(event, stair, `3x ${lumber}`, 50, 7, `${name}_lumber_from_stair`)
                 };
 
-            // Stair from plank
+            // Stair from lumber
                 if (stair && lumber && name) {
+                    event.shaped(stair, [
+                        'A ',
+                        'AA'
+                    ], {
+                        A: lumber
+                    })
+                    .id(`tfg:shaped/${name}_stair_from_lumber`)
+                };
+
+            // Stair from plank
+                if (stair && plank && name) {
                     event.shaped(`8x ${stair}`, [
                         'A  ',
                         'AA ',
@@ -258,6 +278,11 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_plank`);
 
+                event.stonecutting(`${plank}`,`${mosaic_plank}`);
+                event.stonecutting(`${mosaic_plank}`,`${plank}`);
+
+                event.recipes.tfc.chisel(`${mosaic_plank}`, `${plank}`, 'smooth');
+
             // Lumber from mosaic plank
                 event.shapeless(`4x ${lumber}`,
                     [`${mosaic_plank}`, '#forge:tools/saws']
@@ -273,6 +298,11 @@ function registerTFGWoodenRecipes(event) {
                     )
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_stair`);
+
+                event.stonecutting(`${stair}`,`${mosaic_stair}`);
+                event.stonecutting(`${mosaic_stair}`,`${stair}`);
+
+                event.recipes.tfc.chisel(`${mosaic_stair}`, `${mosaic_plank}`, 'stair');
 
             // Lumber from mosaic stairs
                 event.shapeless(`3x ${lumber}`,
@@ -290,6 +320,11 @@ function registerTFGWoodenRecipes(event) {
                 )
                 .id(`tfg:shapeless/${wood}_mosaic_slab`);
 
+                event.stonecutting(`${slab}`,`${mosaic_slab}`);
+                event.stonecutting(`${mosaic_slab}`,`${slab}`);
+
+                event.recipes.tfc.chisel(`${mosaic_slab}`, `${mosaic_plank}`, 'slab');
+
             // Lumber from mosaic slab
                 event.shapeless(`2x ${lumber}`,
                     [`${mosaic_slab}`, '#forge:tools/saws']
@@ -305,11 +340,13 @@ function registerTFGWoodenRecipes(event) {
     // #region TFG Wood Recycling
 
         /**
-         * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index.
+         * @property {Array} TFGWoodRecyclingIndex - TFG Wood recycling material index. 2 Lumber -> 1 Wood dust
          */
         const TFGWoodRecyclingIndex = [
             ['{mod}:wood/chest_minecart/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 5]],
             ['{mod}:wood/planks/{type}', ['{wood}', 2]],
+            ['{mod}:wood/planks/{type}_workbench', ['{wood}', 8]],
+            ['{mod}:wood/planks/{type}_loom', ['{wood}', 7/2]],
             ['{mod}:wood/planks/{type}_door', ['{wood}', 3/2]],
             ['{mod}:wood/planks/{type}_trapdoor', ['{wood}', 1]],
             ['{mod}:wood/planks/{type}_fence', ['{wood}', 4]],
@@ -320,7 +357,16 @@ function registerTFGWoodenRecipes(event) {
             ['{mod}:wood/planks/{type}_pressure_plate', ['{wood}', 2]],
             ['{mod}:wood/planks/{type}_button', ['{wood}', 1/4]],
             ['{mod}:wood/chest/{type}', ['{wood}', 4]],
-            ['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]]
+            ['{mod}:wood/trapped_chest/{type}', ['{wood}', 4, GTMaterials.WroughtIron, 4/9, GTMaterials.Wood, 1]],
+            ['{mod}:wood/sluice/{type}', ['{wood}', 3/2]],
+            ['{mod}:wood/barrel/{type}', ['{wood}', 7/2]],
+            ['{mod}:wood/sign/{type}', ['{wood}', 1]],
+            ['{mod}:wood/lectern/{type}', ['{wood}', 5]],
+            ['{mod}:wood/planks/{type}_bookshelf', ['{wood}', 3]],
+            ['{mod}:wood/planks/{type}_tool_rack', ['{wood}', 3]],
+            ['{mod}:wood/jar_shelf/{type}', ['{wood}', 7/2]],
+            ['{mod}:wood/scribing_table/{type}', ['{wood}', 7]],
+            ['{mod}:wood/sewing_table/{type}', ['{wood}', 14]]
         ];
 
         /**
@@ -329,8 +375,7 @@ function registerTFGWoodenRecipes(event) {
          * @return {Array}
          */
         function resolveArgs(materials, woodMaterial) {
-            return materials
-            .map(materials => materials === '{wood}' ? woodMaterial : materials);
+            return materials.map(mats => mats === '{wood}' ? woodMaterial : mats);
         };
 
         function registerTFGWoodRecycling(mod, woodname, woodMaterial) {
@@ -407,6 +452,9 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `beneath:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_lumber_planks` });
                 event.remove({ id: `beneath:crafting/wood/${wood}_slab_undo` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_trapdoor` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_door` });
+                event.remove({ id: `beneath:crafting/wood/${wood}_stairs` });
 
             TFGWoodBuilder(
                 event, 
@@ -416,7 +464,7 @@ function registerTFGWoodenRecipes(event) {
                 `beneath:wood/log/${wood}`,
                 `beneath:wood/stripped_log/${wood}`, 
                 `beneath:wood/planks/${wood}`, 
-                null,
+                `beneath:wood/planks/${wood}_stairs`,
                 `beneath:wood/planks/${wood}_slab`, 
                 `beneath:wood/planks/${wood}_door`, 
                 `beneath:wood/planks/${wood}_trapdoor`, 
@@ -425,8 +473,6 @@ function registerTFGWoodenRecipes(event) {
                 null, 
                 `beneath:wood/planks/${wood}_pressure_plate`,
                 `beneath:wood/planks/${wood}_button`, 
-                `beneath:wood/wood/${wood}`, 
-                `beneath:wood/stripped_wood/${wood}`, 
                 `beneath:wood/wood/${wood}`, 
                 `beneath:wood/stripped_wood/${wood}`
             );
@@ -450,6 +496,8 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `afc:crafting/wood/${wood}_water_wheel` });
 
             // Removed recipe changes
+                event.remove({ id: `afc:crafting/wood/${wood}_planks` });
+                event.remove({ id: `afc:crafting/wood/${wood}_pressure_plate` });
                 event.remove({ id: `afc:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `afc:crafting/wood/${wood}_stairs` });
                 event.remove({ id: `afc:crafting/wood/${wood}_stairs_undo` });
@@ -480,9 +528,6 @@ function registerTFGWoodenRecipes(event) {
                 `afc:wood/stripped_wood/${wood}`
             );
 
-            registerTFGWoodRecycling('afc', global.AFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
-            registerTFGWoodRecycling('afc', global.AFC_SOFTWOOD_TYPES, GTMaterials.Wood);
-
             // Stomping Barrel
                 event.shaped(`afc:wood/stomping_barrel/${wood}`, [
                     'ABA',
@@ -495,6 +540,9 @@ function registerTFGWoodenRecipes(event) {
                 })
                 .id(`afc:crafting/wood/${wood}_stomping_barrel`);
         });
+
+        registerTFGWoodRecycling('afc', global.AFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
+        registerTFGWoodRecycling('afc', global.AFC_SOFTWOOD_TYPES, GTMaterials.Wood);
 
         // Outliers
             const AFC_MORE_STRIPPING = [
@@ -548,14 +596,18 @@ function registerTFGWoodenRecipes(event) {
             })
             .id('gtceu:shaped/ladder');
 
-            event.shaped('8x minecraft:ladder', [
-                'A A',
-                'AAA',
-                'A A'
-            ], {
-                A: '#tfc:lumber'
-            })
-            .id('tfg:crafting/vanilla/ladder');
+            const nonAdAstraLumber = Ingredient.of('#tfc:lumber').subtract('tfg:wood/lumber/aeronos').subtract('tfg:wood/lumber/strophar');
+
+            event.replaceOutput({ id: 'gtceu:assembler/ladder' }, 'minecraft:ladder', '8x minecraft:ladder')
+
+            event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
+
+            event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
+                .itemInputs(nonAdAstraLumber.withCount(7))
+                .itemOutputs('8x minecraft:ladder')
+                .circuit(7)
+                .duration(40)
+                .EUt(4)
 
         // Sticks
             event.remove('gtceu:shaped/stick_normal');
@@ -606,6 +658,8 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` });
 
             // Removed recipe changes
+                event.remove({ id: `tfc:crafting/wood/${wood}_planks` });
+                event.remove({ id: `tfc:crafting/wood/${wood}_pressure_plate` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_lumber_log` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_button` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_slab` });
@@ -613,11 +667,6 @@ function registerTFGWoodenRecipes(event) {
                 event.remove({ id: `tfc:crafting/wood/${wood}_lumber_planks` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_stairs` });
                 event.remove({ id: `tfc:crafting/wood/${wood}_stairs_undo` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
-                event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
             
             TFGWoodBuilder(
                 event, 
@@ -637,11 +686,20 @@ function registerTFGWoodenRecipes(event) {
                 `tfc:wood/planks/${wood}_pressure_plate`,
                 `tfc:wood/planks/${wood}_button`, 
                 `tfc:wood/wood/${wood}`, 
-                `tfc:wood/stripped_wood/${wood}`, 
-                `tfc:wood/wood/${wood}`, 
                 `tfc:wood/stripped_wood/${wood}`
             );
-        });   
+        });
+
+        registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
+        registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
+
+        // Special handling for the palm mosaics
+
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_slab_undo` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs` });
+        event.remove({ id: `tfc:crafting/wood/palm_mosaic_stairs_undo` });
 
         TFGMosaicWoodBuilder(
             event,
@@ -655,9 +713,6 @@ function registerTFGWoodenRecipes(event) {
             'tfc:wood/planks/palm_mosaic_slab'
         );
 
-        registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
-        registerTFGWoodRecycling('tfc', global.TFC_SOFTWOOD_TYPES, GTMaterials.Wood);
-
     // #endregion
 
     // #region Minecraft
@@ -665,32 +720,25 @@ function registerTFGWoodenRecipes(event) {
         // Bamboo
 
             // Removed recipe changes
-                const Bamboo_Items = [
-                    'minecraft:stripped_bamboo_block',
-                    'minecraft:bamboo_planks',
-                    'minecraft:bamboo_slab',
-                    'minecraft:bamboo_stairs',
-                    'minecraft:bamboo_fence',
-                    'minecraft:bamboo_fence_gate',
-                    'minecraft:bamboo_door',
-                    'minecraft:bamboo_trapdoor',
-                    'minecraft:bamboo_button',
-                    'minecraft:bamboo_mosaic',
-                    'minecraft:bamboo_mosaic_slab',
-                    'minecraft:bamboo_mosaic_stairs',
-                    'minecraft:bamboo_pressure_plate'
-                ];
-
-                Bamboo_Items.forEach(item => {
-                    event.remove({ input: item })
-                    event.remove({ output: item })
-                });
+                event.remove({ output: 'minecraft:stripped_bamboo_block' });
+                event.remove({ output: 'minecraft:bamboo_planks' });
+                event.remove({ output: 'minecraft:bamboo_slab' });
+                event.remove({ output: 'minecraft:bamboo_stairs' });
+                event.remove({ output: 'minecraft:bamboo_fence' });
+                event.remove({ output: 'minecraft:bamboo_fence_gate' });
+                event.remove({ output: 'minecraft:bamboo_door' });
+                event.remove({ output: 'minecraft:bamboo_trapdoor' });
+                event.remove({ output: 'minecraft:bamboo_button' });
+                event.remove({ output: 'minecraft:bamboo_mosaic' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_slab' });
+                event.remove({ output: 'minecraft:bamboo_mosaic_stairs' });
+                event.remove({ output: 'minecraft:bamboo_pressure_plate' });
 
             TFGWoodBuilder(
                 event,
                 'bamboo',
                 'tfg:wood/lumber/bamboo',
-                null,
+                '#minecraft:bamboo_blocks',
                 'minecraft:bamboo_block',
                 'minecraft:stripped_bamboo_block',
                 'minecraft:bamboo_planks',
@@ -719,31 +767,19 @@ function registerTFGWoodenRecipes(event) {
                 'minecraft:bamboo_mosaic_slab'
             );
 
-            // Lumber from log
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_log`);
-
-                event.shapeless('8x tfg:wood/lumber/bamboo', 
-                    ['minecraft:stripped_bamboo_block', '#forge:tools/saws']
-                )
-                .id(`tfg:shapeless/bamboo_lumber_from_stripped_log`);
-
     // #endregion
 
     // #region Gregtech
 
         // Removed recipe changes
-            event.remove({ id: 'gtceu:shaped/treated_fence' });
-            event.remove({ id: 'gtceu:shaped/treated_fence_gate' });
-            event.remove({ id: 'gtceu:shaped/treated_fence_gate_screws' });
-            event.remove({ id: 'gtceu:shaped/treated_stairs' });
-            event.remove({ id: 'gtceu:assembler/treated_stairs' });
-            event.remove({ id: 'gtceu:assembler/treated_fence' });
-            event.remove({ id: 'gtceu:assembler/treated_fence_gate' });
+            event.remove({ output: 'gtceu:treated_wood_door' });
+            event.remove({ output: 'gtceu:treated_wood_trapdoor' });
+            event.remove({ output: 'gtceu:treated_wood_stairs' });
+            event.remove({ output: 'gtceu:treated_wood_fence' });
+            event.remove({ output: 'gtceu:treated_wood_fence_gate' });
             event.remove({ output: 'gtceu:treated_wood_button' });
-
+            event.remove({ output: 'gtceu:treated_wood_pressure_plate' });
+            
         // Treated wood
             TFGWoodBuilder(
                 event, 

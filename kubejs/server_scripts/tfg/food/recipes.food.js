@@ -983,6 +983,51 @@ function registerTFGFoodRecipes(event) {
 		})
 	})
 
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_beer', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_beer', 750))
+    	.id('tfg:barrel/aged_to_vintage_beer')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_cider', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_cider', 750))
+    	.id('tfg:barrel/aged_to_vintage_cider')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_rum', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_rum', 750))
+    	.id('tfg:barrel/aged_to_vintage_rum')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_sake', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_sake', 750))
+    	.id('tfg:barrel/aged_to_vintage_sake')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_vodka', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_vodka', 750))
+    	.id('tfg:barrel/aged_to_vintage_vodka')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_whiskey', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_whiskey', 750))
+    	.id('tfg:barrel/aged_to_vintage_whiskey')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_corn_whiskey', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_corn_whiskey', 750))
+    	.id('tfg:barrel/aged_to_vintage_corn_whiskey')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_rye_whiskey', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_rye_whiskey', 750))
+    	.id('tfg:barrel/aged_to_vintage_rye_whiskey')
+
+	event.recipes.tfc.barrel_sealed(576000)
+    	.inputFluid(Fluid.of('tfcagedalcohol:aged_mead', 1000))
+    	.outputFluid(Fluid.of('tfg:vintage_mead', 750))
+    	.id('tfg:barrel/aged_to_vintage_mead')
+
 	//#endregion
 	//#region Cakes
 

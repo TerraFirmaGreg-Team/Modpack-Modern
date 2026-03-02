@@ -313,6 +313,10 @@ function registerTFGMaterialRecipes(event) {
 		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL) || material.hasFlag(TFGMaterialFlags.HAS_GT_TOOL)) {
 			processTFCTool(event, material)
 		}
+
+		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_UTILITY)) {
+			processTongs(event, material)
+		}
 		
 		const oreProperty = material.getProperty(PropertyKey.ORE);
 		if (oreProperty !== null) {

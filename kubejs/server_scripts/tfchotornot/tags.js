@@ -81,6 +81,9 @@ const registerHotOrNotFluidTags = (event) => {
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:hydrogen')
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:coal_gas')
     event.add("tfchotornot:gaseous_whitelist", 'gtceu:methane')
+
+    event.add("tfchotornot:fluid_whitelist", '#firmalife:oils')
+    event.add("tfchotornot:fluid_whitelist", '#tfg:oil_fluids')
 }
 
 const registerHotOrNotBlockTags = (event) => {

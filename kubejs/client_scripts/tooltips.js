@@ -119,7 +119,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.coal_liquefaction_tower_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.coil_speed_discount'));
-		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatch'));
+		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
 	event.addAdvanced(['tfg:hydroponics_facility'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.machine.hydroponics_facility_1'));
@@ -449,44 +449,32 @@ const registerTooltips = (event) => {
 	})
 
 	// Drink effects
-	event.addAdvanced(['tfc_gourmet:compote_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (00:30)")).blue());
-	})
 	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (01:20)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.slow_falling").append(Text.of(" (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" (00:30)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.warming_foods'));
+		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
 	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" (02:40)")).blue());
-		text.add(2, Text.translate('tfg.tooltip.cooling_foods'));
+		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
@@ -511,21 +499,36 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
 		text.add(2, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
 	})
-	//event.addAdvanced(['gtceu:ethanol_bucket'], (item, advanced, text) => {
-	//	text.add(1, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
-	//	text.add(2, Text.translate("effect.minecraft.poison").append(Text.of(" II (00:30)")).red());
-	//})
-	//event.addAdvanced(['gtceu:methanol_bucket'], (item, advanced, text) => {
-	//	text.add(1, Text.translate("effect.minecraft.blindness").append(Text.of(" (05:00)")).red());
-	//	text.add(2, Text.translate("effect.minecraft.wither").append(Text.of(" II (01:00)")).red());
-	//})
-	//event.addAdvanced(['gtceu:concrete_bucket', 'rnr:bucket/concrete'], (item, advanced, text) => {
-	//	text.add(1, Text.translate("effect.minecraft.slowness").append(Text.of(" II (05:00)")).red());
-	//	text.add(2, Text.translate("effect.minecraft.nausea").append(Text.of(" (01:00)")).red());
-	//})
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
+    event.addAdvanced(['tfg:vintage_beer_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" III (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_cider_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_rum_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" III (04:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_mead_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_sake_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (08:00)")).blue());
+    })
+     event.addAdvanced(['tfg:vintage_vodka_bucket'], (item, advanced, text) => {
+     	text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" III (04:00)")).blue());
+     })
+    event.addAdvanced(['tfg:vintage_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" III (04:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_corn_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_rye_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
+    })
 
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
@@ -535,7 +538,10 @@ const registerTooltips = (event) => {
 		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
 		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
 
-		text.remove(keyToRemove);
-		text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+		if(indexOf != -1)
+		{
+			text.remove(keyToRemove);
+			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+		}
 	})
 }
