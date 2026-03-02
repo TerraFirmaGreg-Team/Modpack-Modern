@@ -16,7 +16,7 @@ function registerTFGMoSiBRecipes(event) {
     event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_weak_mo_si_b_ingot' })
 
 	event.recipes.gtceu.mixer('tfg:dirty_mo_si_b_dust')
-		.itemInputs(Item.of('gtceu:silicon_dust', 1), Item.of('gtceu:molybdenum_dust', 1), Item.of('tfg:boron_10_hydroxide_dust', 1))
+		.itemInputs(Item.of('gtceu:silicon_dust', 1), Item.of('gtceu:molybdenum_dust', 1), Item.of('gtceu:boron_dust', 1))
         .inputFluids(Fluid.of('tfg:argon_enriched_atmosphere', 300))
 		.itemOutputs(Item.of('tfg:dirty_mo_si_b_dust', 3))
 		.outputFluids(Fluid.of('tfg:hydroxide_decomposition_off_gas', 300))
