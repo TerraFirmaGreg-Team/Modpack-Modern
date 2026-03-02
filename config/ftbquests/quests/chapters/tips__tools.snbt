@@ -598,12 +598,18 @@
 				{
 					id: "34DEDF3B7F0DB3BC"
 					item: "gtceu:item_tag_filter"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "35CAF01644B8D9A2"
 					item: "gtceu:fluid_tag_filter"
+					optional_task: true
 					type: "item"
+				}
+				{
+					id: "45C7E66106E323A2"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.high_voltage.250_iq.title}"

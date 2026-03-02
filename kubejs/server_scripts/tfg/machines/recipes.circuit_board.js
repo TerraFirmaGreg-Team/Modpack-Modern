@@ -32,13 +32,6 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.duration(20 * 25)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t2')
-		.itemInputs(Item.of('tfg:copper_bonded_al2o3_pcb'), Item.of('gtceu:nickel_dust', 1))
-		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
-		.itemOutputs(Item.of('gtceu:plastic_circuit_board', 8))
-		.duration(20 * 25)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t3')
 		.itemInputs(Item.of('tfg:chromium_bonded_beo_pcb'), Item.of('gtceu:nickel_dust', 1))
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
@@ -58,6 +51,22 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.inputFluids(Fluid.of('tfg:redstone_tri_p_toluenesulfonate', 250))
 		.itemOutputs(Item.of('gtceu:plastic_printed_circuit_board'))
 		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Alumina Copper Bonded Circuit Boards
+
+	event.recipes.gtceu.arc_furnace('tfg:copper_bonded_al2o3_pcb')
+		.itemInputs(Item.of('tfg:alumina_plate'), Item.of('gtceu:cupronickel_foil', 4))
+		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
+		.itemOutputs(Item.of('tfg:copper_bonded_al2o3_pcb'))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.chemical_bath('tfg:ceramic_circuit_board_t2')
+		.itemInputs(Item.of('tfg:copper_bonded_al2o3_pcb'), Item.of('gtceu:nickel_dust', 1))
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 250))
+		.itemOutputs(Item.of('gtceu:plastic_circuit_board', 8))
+		.duration(20 * 25)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Lenses
@@ -107,7 +116,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		// Best T5 - IV
 		"extreme_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: "minecraft:water"
+			replacement: undefined
 		},
 		// Minimal T5 - IV
 		"extreme_circuit_board_persulfate": {
@@ -117,7 +126,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		// Best T6 - LuV
 		"elite_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: "minecraft:water" // New when Venus is Out
+			replacement: undefined // New when Venus is Out
 		},
 		// Minimal T6 - LuV
 		"elite_circuit_board_persulfate": {
@@ -127,7 +136,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		// Best T7 - ZPM
 		"wetware_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: "minecraft:water" // New when ZPM Planet is Out
+			replacement: undefined // New when ZPM Planet is Out
 		},
 		// Minimal T7 - ZPM
 		"wetware_circuit_board_persulfate": {

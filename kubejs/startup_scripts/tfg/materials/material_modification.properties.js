@@ -54,6 +54,9 @@ function registerTFGPropertyMaterialModification(event) {
 	let zirconium_diboride = TFGHelpers.getMaterial('zirconium_diboride');
 	zirconium_diboride.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(4500, $BLAST_PROPERTY.GasTier.HIGH, GTValues.VA[GTValues.EV], 2700, GTValues.VA[GTValues.HV], 12.5 * 20));
 
+	GTMaterials.Titanium.getProperties().removeProperty(PropertyKey.BLAST);
+	GTMaterials.Titanium.setProperty(PropertyKey.BLAST, new $BLAST_PROPERTY(2750, $BLAST_PROPERTY.GasTier.MID, GTValues.VA[GTValues.HV], 20 * 60, GTValues.VA[GTValues.HV], 7.2 * 20));
+
 	// Remove properties
 	GTMaterials.Glass.getProperties().removeProperty(PropertyKey.GEM)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
