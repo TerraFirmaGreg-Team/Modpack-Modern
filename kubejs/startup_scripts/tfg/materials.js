@@ -165,14 +165,6 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.GENERATE_FRAME)
 
-	event.create('tfg:molten_felsic_silicate')
-		.liquid(GTFluidBuilder().temperature(1346))
-		.color(0xfaf9c3)
-		.secondaryColor(0xfaf2f9)
-		.components('1x igneous_felsic')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
-
 	event.create('tfg:aluminium_sulfate')
 		.dust()
 		.color(0xfaf9c3)
