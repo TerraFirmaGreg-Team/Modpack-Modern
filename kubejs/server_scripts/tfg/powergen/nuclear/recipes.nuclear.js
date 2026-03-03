@@ -367,7 +367,7 @@ function registerTFGNuclearRecipes(event) {
 
     event.recipes.deafission.fission_reactor_coolant('tfg:tbu_coolant')
         .itemInputs(Ingredient.of([
-            'tfg:tbu_232_rod', 'tfg:neptunium_237_rod', 'tfg:americium_241_rod', 'tfg:californium_252_rod']))
+            'tfg:tbu_232_rod'/*, 'tfg:neptunium_237_rod', 'tfg:americium_241_rod', 'tfg:californium_252_rod'*/]))
 		.perTick(true)
 		.inputFluids(Fluid.of('tfg:heavy_water', 20))
 		.outputFluids(Fluid.of('gtceu:dense_steam', 1200))

@@ -391,10 +391,10 @@ function registerTFGToolMaterialModification(event) {
 		GTMaterials.StainlessSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(2428, 	150,	true, true, true, false));
 		GTMaterials.Aluminium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(1166, 	200,	true, false, false, false));
 		GTMaterials.Polytetrafluoroethylene.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(600, 	800, 	true, true, false, false));
-		GTMaterials.Titanium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(2426, 	1200,	true, false, false, false));
-		GTMaterials.TungstenSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(3587, 	1800,	true, false, false, false));
+		GTMaterials.Titanium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3426, 	1200,	true, false, true, false));
+		GTMaterials.TungstenSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(5137, 	1800,	true, false, true, false));
 		GTMaterials.Polybenzimidazole.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(1000, 	2800,	true, false, false, false));
-		GTMaterials.NiobiumTitanium.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(5900, 	1400,	true, false, false, false));
+		GTMaterials.NiobiumTitanium.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(7300, 	1400,	true, true, false, false));
 		GTMaterials.Naquadah.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3776, 	1600,	true, false, true, true));
 		GTMaterials.Iridium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3398, 	2000,	true, false, true, false));
 		GTMaterials.Duranium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(9625, 	4000,	true, true, true, true));

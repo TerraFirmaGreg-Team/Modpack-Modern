@@ -22,7 +22,7 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideFluidPipes('tungsten_bismuth_oxide_composite');
     hideFluidPipes('europium');
 
-    const removeItemPipes = (material) => {
+    const hideItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
         const types = ['item_pipes', 'restrictive_pipes'];
         sizes.forEach(size => {
@@ -32,16 +32,17 @@ function registerTFGMaterialHiddenPipesTags(event) {
         });
     };
 
-    removeItemPipes('nickel');
-    removeItemPipes('platinum');
-    removeItemPipes('bismuth');
-    removeItemPipes('rose_gold');
-    removeItemPipes('sterling_silver');
-    removeItemPipes('cobalt_brass');
-    removeItemPipes('cupronickel');
-    removeItemPipes('magnalium');
-    removeItemPipes('osmium');
-    removeItemPipes('osmiridium');
+    hideItemPipes('nickel');
+    hideItemPipes('platinum');
+    hideItemPipes('bismuth');
+    hideItemPipes('rose_gold');
+    hideItemPipes('sterling_silver');
+    hideItemPipes('cobalt_brass');
+    hideItemPipes('cupronickel');
+    hideItemPipes('magnalium');
+    hideItemPipes('osmium');
+    hideItemPipes('osmiridium');
+    hideItemPipes('americium');
 
 }
 
@@ -89,4 +90,5 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeItemPipes('magnalium');
     removeItemPipes('osmium');
     removeItemPipes('osmiridium');
+    removeItemPipes('americium');
 }

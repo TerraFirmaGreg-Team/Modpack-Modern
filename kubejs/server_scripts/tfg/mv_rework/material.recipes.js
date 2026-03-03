@@ -4,6 +4,7 @@ function registerTFGMVMaterialRecipes(event) {
 
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide_gas' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_silicon_carbide_to_nugget' })
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
 		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
@@ -91,24 +92,15 @@ function registerTFGMVMaterialRecipes(event) {
 	const transitional = 'tfg:incomplete_sic_sic_turbine_rotor'
 	event.recipes.create.sequenced_assembly([
 		Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"tfg:silicon_carbide_silicon_carbide"}}'),
-	], '#forge:plates/red_alloy', [
-		event.recipes.create.deploying(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:small_gears/brass']),
-		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
-		event.recipes.create.cutting(transitional, 'tfg:incomplete_sic_sic_turbine_rotor'),
-		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
-		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
-		event.recipes.create.filling(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', Fluid.of('gtceu:redstone', 144)]),
-		event.recipes.vintageimprovements.vacuumizing(transitional, [transitional, 'minecraft:snow_block']).processingTime(500),
-		event.recipes.vintageimprovements.coiling(transitional, transitional),
-		event.recipes.vintageimprovements.centrifugation(transitional, transitional),
-		event.recipes.vintageimprovements.curving(transitional, transitional).head('gtceu:wire_extruder_mold'),
-		event.recipes.vintageimprovementsHammering(transitional, transitional).hammerBlows(5).anvilBlock('tfc:metal/anvil/blue_steel'),
-		event.recipes.vintageimprovements.polishing(transitional, transitional).speedLimits(1).fragile(),
-		event.recipes.vintageimprovements.turning(transitional, transitional),
-		event.recipes.vintageimprovements.vacuumizing(transitional, transitional).processingTime(500).superheated(),
-		event.recipes.vintageimprovements.vibrating(transitional, transitional),
+	], 'tfg:silicon_carbide_ingot', [
+		event.recipes.create.deploying(transitional, [transitional, 'tfg:silicon_carbide_plate']),
+		event.recipes.greate.pressing(transitional, transitional),
+		event.recipes.create.cutting(transitional, transitional),
+		event.recipes.create.filling(transitional, [Fluid.of('tfg:silicon_carbide', 144), transitional]),
+		event.recipes.vintageimprovements.vacuumizing(transitional, [transitional, Item.of('tfg:silicon_carbide_dust', 1)]).processingTime(50),
+		event.recipes.create.deploying(transitional, [transitional, '#forge:tools/wire_cutters']).keepHeldItem(),
 	])
-		.transitionalItem('tfg:incomplete_sic_sic_turbine_rotor')
+		.transitionalItem(transitional)
 		.loops(10)
 		.id('tfg:equenced_assembly/sic_sic_turbine_rotor')
 
