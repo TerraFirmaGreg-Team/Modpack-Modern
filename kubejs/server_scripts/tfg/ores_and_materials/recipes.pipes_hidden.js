@@ -50,9 +50,12 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideItemPipes('americium');
 
     const materialPlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
+    const toolsPlastic = ['mallet', 'plunger'];
         materialPlastic.forEach(material => {
-            event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_mallet`);
+            toolsPlastic.forEach(tool => {
+                event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
             });
+        });
 
     //#endregion
     
@@ -110,9 +113,13 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeItemPipes('americium');
 
     const materialRemovePlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
-        materialRemovePlastic.forEach(material => {
-            event.remove({ output: `gtceu:${material}_mallet` });
-            });
+    const toolsRemovePlastic = ['mallet', 'plunger'];
+
+    materialRemovePlastic.forEach(material => {
+        toolsRemovePlastic.forEach(tool => {
+            event.remove({ output: `gtceu:${material}_${tool}` });
+        });
+    });
 
     //#endregion
 }
