@@ -1,5 +1,8 @@
+//#region Hide Items
+
 function registerTFGMaterialHiddenPipesTags(event) {
 
+    // Hide Fluid Pipes from EMI
 
     const hideFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
@@ -22,7 +25,9 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideFluidPipes('tungsten_bismuth_oxide_composite');
     hideFluidPipes('europium');
 
-    const removeItemPipes = (material) => {
+    // Hide Item Pipes from EMI
+
+    const hideItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
         const types = ['item_pipes', 'restrictive_pipes'];
         sizes.forEach(size => {
@@ -32,21 +37,35 @@ function registerTFGMaterialHiddenPipesTags(event) {
         });
     };
 
-    removeItemPipes('nickel');
-    removeItemPipes('platinum');
-    removeItemPipes('bismuth');
-    removeItemPipes('rose_gold');
-    removeItemPipes('sterling_silver');
-    removeItemPipes('cobalt_brass');
-    removeItemPipes('cupronickel');
-    removeItemPipes('magnalium');
-    removeItemPipes('osmium');
-    removeItemPipes('osmiridium');
+    hideItemPipes('nickel');
+    hideItemPipes('platinum');
+    hideItemPipes('bismuth');
+    hideItemPipes('rose_gold');
+    hideItemPipes('sterling_silver');
+    hideItemPipes('cobalt_brass');
+    hideItemPipes('cupronickel');
+    hideItemPipes('magnalium');
+    hideItemPipes('osmium');
+    hideItemPipes('osmiridium');
+    hideItemPipes('americium');
 
+    const materialPlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
+    const toolsPlastic = ['mallet', 'plunger'];
+        materialPlastic.forEach(material => {
+            toolsPlastic.forEach(tool => {
+                event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
+            });
+        });
+
+    //#endregion
+    
 }
+
+    //#region Remove Recipes
 
 function registerTFGMaterialRemovePipesRecipes(event) {
 
+    // Remove Fluid Pipes recipes
 
     const removeFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
@@ -69,6 +88,8 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeFluidPipes('tungsten_bismuth_oxide_composite');
     removeFluidPipes('europium');
 
+    // Remove Item Pipes recipes
+
     const removeItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
         const types = ['item_pipes', 'restrictive_pipes'];
@@ -89,4 +110,16 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeItemPipes('magnalium');
     removeItemPipes('osmium');
     removeItemPipes('osmiridium');
+    removeItemPipes('americium');
+
+    const materialRemovePlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
+    const toolsRemovePlastic = ['mallet', 'plunger'];
+
+    materialRemovePlastic.forEach(material => {
+        toolsRemovePlastic.forEach(tool => {
+            event.remove({ output: `gtceu:${material}_${tool}` });
+        });
+    });
+
+    //#endregion
 }
