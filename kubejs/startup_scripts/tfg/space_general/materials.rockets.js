@@ -160,4 +160,44 @@ function registerTFGRocketMaterials(event) {
 		.gas()
 		.components('5x nitrogen', '3x oxygen', '2x helium_3')
 		.color(0xa3ed95)
+
+	//#region Basalt Insulation Pannel
+
+	event.create('tfg:basalt_fiber')
+		.ingot()
+		.components('1x basalt')
+		.flags(
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_FOIL,
+			GTMaterialFlags.GENERATE_FINE_WIRE,
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+		)
+		.color(0x525D6B)
+
+	event.create('tfg:dichloropropane')
+		.liquid()
+		.components('3x carbon', '6x hydrogen', '2x chlorine')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xC2C6CC)
+
+	event.create('tfg:3_chloropropylamine')
+		.liquid()
+		.components('3x carbon', '8x hydrogen', '1x chlorine', '1x nitrogen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xFFF8C6)
+
+	event.create('tfg:aminopropyl_chlorosilane')
+		.liquid()
+		.components('3x carbon', '8x hydrogen', '3x chlorine', '1x nitrogen', '1x silicon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xC6E2FF)
+
+	event.create('tfg:3_aminopropyltriethoxysilane')
+		.liquid()
+		.components('9x carbon', '23x hydrogen', '1x nitrogen', '3x oxygen', '1x silicon')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+		.color(0xFFE8C2)
+
+
 }

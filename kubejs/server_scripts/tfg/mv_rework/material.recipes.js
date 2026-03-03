@@ -86,5 +86,33 @@ function registerTFGMVMaterialRecipes(event) {
 	event.replaceInput({ id: 'gtceu:assembler/transistor' }, Fluid.of('gtceu:polyethylene'), Fluid.of('gtceu:silicone_rubber'))
 	event.replaceInput({ id: 'gtceu:assembler/capacitor' }, Item.of('gtceu:polyethylene_foil'), Item.of('gtceu:silicone_rubber_foil'))
 
+	// SiC SiC rotor
+
+	const transitional = 'tfg:incomplete_sic_sic_turbine_rotor'
+	event.recipes.create.sequenced_assembly([
+		Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"tfg:silicon_carbide_silicon_carbide"}}'),
+	], '#forge:plates/red_alloy', [
+		event.recipes.create.deploying(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:small_gears/brass']),
+		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
+		//event.recipes.create.sandpaper_polishing(transitional, 'tfg:incomplete_sic_sic_turbine_rotor'),
+		//event.recipes.create.mixing([Item.of(transitional).withChance(0.7), Item.of('minecraft:diamond').withChance(0.3)], transitional),
+		event.recipes.create.cutting(transitional, 'tfg:incomplete_sic_sic_turbine_rotor'),
+		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
+		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
+		event.recipes.create.filling(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', Fluid.of('gtceu:redstone', 144)]),
+		event.recipes.vintageimprovements.vacuumizing(transitional, [transitional, 'minecraft:snow_block']).processingTime(500),
+		event.recipes.vintageimprovements.coiling(transitional, transitional),
+		event.recipes.vintageimprovements.centrifugation(transitional, transitional),
+		event.recipes.vintageimprovements.curving(transitional, transitional).head('gtceu:wire_extruder_mold'),
+		event.recipes.vintageimprovementsHammering(transitional, transitional).hammerBlows(5).anvilBlock('tfc:metal/anvil/blue_steel'),
+		event.recipes.vintageimprovements.polishing(transitional, transitional).speedLimits(1).fragile(),
+		event.recipes.vintageimprovements.turning(transitional, transitional),
+		event.recipes.vintageimprovements.vacuumizing(transitional, transitional).processingTime(500).superheated(),
+		event.recipes.vintageimprovements.vibrating(transitional, transitional),
+	])
+		.transitionalItem('tfg:incomplete_sic_sic_turbine_rotor')
+		.loops(10)
+		.id('tfg:equenced_assembly/sic_sic_turbine_rotor')
+
 
 }
