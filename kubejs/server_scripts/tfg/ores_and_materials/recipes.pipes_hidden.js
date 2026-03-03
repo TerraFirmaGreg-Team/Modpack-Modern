@@ -22,7 +22,7 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideFluidPipes('tungsten_bismuth_oxide_composite');
     hideFluidPipes('europium');
 
-    const hideItemPipes = (material) => {
+    const removeItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
         const types = ['item_pipes', 'restrictive_pipes'];
         sizes.forEach(size => {
@@ -32,10 +32,16 @@ function registerTFGMaterialHiddenPipesTags(event) {
         });
     };
 
-    hideItemPipes('nickel');
-    hideItemPipes('rose_gold');
-    hideItemPipes('platinum');
-    hideItemPipes('sterling_silver');
+    removeItemPipes('nickel');
+    removeItemPipes('platinum');
+    removeItemPipes('bismuth');
+    removeItemPipes('rose_gold');
+    removeItemPipes('sterling_silver');
+    removeItemPipes('cobalt_brass');
+    removeItemPipes('cupronickel');
+    removeItemPipes('magnalium');
+    removeItemPipes('osmium');
+    removeItemPipes('osmiridium');
 
 }
 
@@ -68,13 +74,19 @@ function registerTFGMaterialRemovePipesRecipes(event) {
         const types = ['item_pipes', 'restrictive_pipes'];
         sizes.forEach(size => {
             types.forEach(type => {
-                event.add('c:hidden_from_recipe_viewers', `#forge:${size}_${type}/${material}`);
+                event.remove({ output: `#forge:${size}_${type}/${material}` });
             });
         });
     };
 
     removeItemPipes('nickel');
-    removeItemPipes('rose_gold');
     removeItemPipes('platinum');
+    removeItemPipes('bismuth');
+    removeItemPipes('rose_gold');
     removeItemPipes('sterling_silver');
+    removeItemPipes('cobalt_brass');
+    removeItemPipes('cupronickel');
+    removeItemPipes('magnalium');
+    removeItemPipes('osmium');
+    removeItemPipes('osmiridium');
 }
