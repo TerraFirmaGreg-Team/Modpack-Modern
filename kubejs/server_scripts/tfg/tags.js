@@ -249,7 +249,4 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
 
-	// Tag for Sic Line to Wire cutter
-
-	event.add('vintageimprovements:curving_heads', '#forge:tools/wire_cutters')
 }
