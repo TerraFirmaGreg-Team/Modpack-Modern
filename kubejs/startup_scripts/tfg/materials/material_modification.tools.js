@@ -344,14 +344,59 @@ function registerTFGToolMaterialModification(event) {
 
 	//#region Fluid Pipes
 
-	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
+	// Old Pipe we keep so we don't break worlds
 	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
-	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
 	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
-	// Ostrum fluid pipe - same flow rate as titanium, higher temp range
 	GTMaterials.get('ostrum').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3700, 150, true, false, true, false));
-
 	GTMaterials.BlackBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
-
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4250, 1700, true, false, false, false));
+
+	// Balance Fluid Pipe Stats
+
+	const BalanceFluidPipeMaterials = [
+		GTMaterials.Wood,
+		GTMaterials.Copper,
+		GTMaterials.Bronze,
+		GTMaterials.TinAlloy,
+		GTMaterials.Gold,
+		GTMaterials.Potin,
+		GTMaterials.Steel,
+		GTMaterials.Polyethylene,
+		GTMaterials.StainlessSteel,
+		GTMaterials.Aluminium,
+		GTMaterials.Polytetrafluoroethylene,
+		GTMaterials.Titanium,
+		GTMaterials.TungstenSteel,
+		GTMaterials.Polybenzimidazole,
+		GTMaterials.NiobiumTitanium,
+		GTMaterials.Naquadah,
+		GTMaterials.Iridium,
+		GTMaterials.Duranium
+	];
+	for (let mat of BalanceFluidPipeMaterials) {
+		if (mat.hasProperty(PropertyKey.FLUID_PIPE)) {
+			mat.removeProperty(PropertyKey.FLUID_PIPE);
+		}
+	};
+
+		GTMaterials.Wood.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(340, 	10, 	false, false, false, false));
+		GTMaterials.Copper.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1696, 	12, 	true, false, false, false));
+		GTMaterials.Bronze.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1696, 	40, 	true, false, false, false));
+		GTMaterials.TinAlloy.setProperty(PropertyKey.FLUID_PIPE,				new $FLUID_PIPE_PROPERTY(1572, 	40, 	true, false, false, false));
+		GTMaterials.Gold.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1671, 	50, 	true, true, false, false));
+		GTMaterials.Potin.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1546, 	80, 	true, false, false, false));
+		GTMaterials.Steel.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1855, 	100,	true, false, false, false));
+		GTMaterials.Polyethylene.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(370, 	120, 	true, false, false, false));
+		GTMaterials.StainlessSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(2428, 	150,	true, true, true, false));
+		GTMaterials.Aluminium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(1166, 	200,	true, false, false, false));
+		GTMaterials.Polytetrafluoroethylene.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(600, 	800, 	true, true, false, false));
+		GTMaterials.Titanium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(2426, 	1200,	true, false, false, false));
+		GTMaterials.TungstenSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(3587, 	1800,	true, false, false, false));
+		GTMaterials.Polybenzimidazole.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(1000, 	2800,	true, false, false, false));
+		GTMaterials.NiobiumTitanium.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(5900, 	1400,	true, false, false, false));
+		GTMaterials.Naquadah.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3776, 	1600,	true, false, true, true));
+		GTMaterials.Iridium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3398, 	2000,	true, false, true, false));
+		GTMaterials.Duranium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(9625, 	4000,	true, true, true, true));
+
 }
