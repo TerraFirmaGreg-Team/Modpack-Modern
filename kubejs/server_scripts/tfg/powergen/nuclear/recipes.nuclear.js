@@ -806,7 +806,7 @@ function registerTFGNuclearRecipes(event) {
 		'CDC',
 		'EBE'
 	], {
-		A: 'gtceu:ostrum_normal_fluid_pipe',
+		A: 'gtceu:tungsten_steel_normal_fluid_pipe',
 		B: 'gtceu:platinum_single_cable',
 		C: '#gtceu:circuits/iv',
 		D: 'gtceu:iv_machine_hull',

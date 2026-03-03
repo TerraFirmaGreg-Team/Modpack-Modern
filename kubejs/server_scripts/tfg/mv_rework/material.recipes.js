@@ -94,8 +94,6 @@ function registerTFGMVMaterialRecipes(event) {
 	], '#forge:plates/red_alloy', [
 		event.recipes.create.deploying(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:small_gears/brass']),
 		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
-		//event.recipes.create.sandpaper_polishing(transitional, 'tfg:incomplete_sic_sic_turbine_rotor'),
-		//event.recipes.create.mixing([Item.of(transitional).withChance(0.7), Item.of('minecraft:diamond').withChance(0.3)], transitional),
 		event.recipes.create.cutting(transitional, 'tfg:incomplete_sic_sic_turbine_rotor'),
 		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),
 		event.recipes.create.pressing(transitional, ['tfg:incomplete_sic_sic_turbine_rotor', '#forge:bolts/red_alloy']),

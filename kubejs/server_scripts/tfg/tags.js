@@ -18,6 +18,11 @@ const registerTFGItemTags = (event) => {
 	registerTFGVenusItemTags(event)
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
+	registerTFGMaterialHiddenPipesTags(event)
+
+	// Disable auto generation for Vintage Recipes
+
+	event.add('tfg:no_vintage_gen', 'tfg:basalt_fiber_plate')
 
 	// Disable auto generation for Vintage Recipes
 
