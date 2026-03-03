@@ -98,7 +98,7 @@ function registerTFGMVMaterialRecipes(event) {
 		event.recipes.create.cutting(transitional, transitional),
 		event.recipes.create.filling(transitional, [Fluid.of('tfg:silicon_carbide', 144), transitional]),
 		event.recipes.vintageimprovements.vacuumizing(transitional, [transitional, Item.of('tfg:silicon_carbide_dust', 1)]).processingTime(50),
-		event.recipes.create.deploying(transitional, [transitional, '#forge:tools/wire_cutters']).keepHeldItem(),
+		event.recipes.create.deploying(transitional, [transitional, '#forge:tools/wire_cutters']),
 	])
 		.transitionalItem(transitional)
 		.loops(10)
