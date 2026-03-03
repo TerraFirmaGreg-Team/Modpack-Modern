@@ -89,7 +89,7 @@ function registerTFGMVMaterialRecipes(event) {
 
 	// SiC SiC rotor
 
-	const transitional = 'tfg:incomplete_sic_sic_turbine_rotor'
+	const transitional = 'tfg:silicon_carbide_silicon_carbide_turbine_blade'
 	event.recipes.create.sequenced_assembly([
 		Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"tfg:silicon_carbide_silicon_carbide"}}'),
 	], 'tfg:silicon_carbide_ingot', [
