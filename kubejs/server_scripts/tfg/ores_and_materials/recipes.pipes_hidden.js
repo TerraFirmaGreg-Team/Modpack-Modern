@@ -1,48 +1,80 @@
 function registerTFGMaterialHiddenPipesTags(event) {
 
 
-    const hidePipes = (material) => {
+    const hideFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
         sizes.forEach(size => {
             event.add('c:hidden_from_recipe_viewers', `#forge:${size}_fluid_pipes/${material}`);
         });
     };
 
-    hidePipes('treated_wood');
-    hidePipes('bismuth_bronze');
-    hidePipes('black_bronze');
-    hidePipes('lead');
-    hidePipes('chromium');
-    hidePipes('blue_steel');
-    hidePipes('red_steel');
-    hidePipes('vanadium_steel');
-    hidePipes('tungsten');
-    hidePipes('ostrum');
-    hidePipes('tungsten_carbide');
-    hidePipes('tungsten_bismuth_oxide_composite');
-    hidePipes('europium');
+    hideFluidPipes('treated_wood');
+    hideFluidPipes('bismuth_bronze');
+    hideFluidPipes('black_bronze');
+    hideFluidPipes('lead');
+    hideFluidPipes('chromium');
+    hideFluidPipes('blue_steel');
+    hideFluidPipes('red_steel');
+    hideFluidPipes('vanadium_steel');
+    hideFluidPipes('tungsten');
+    hideFluidPipes('ostrum');
+    hideFluidPipes('tungsten_carbide');
+    hideFluidPipes('tungsten_bismuth_oxide_composite');
+    hideFluidPipes('europium');
+
+    const hideItemPipes = (material) => {
+        const sizes = ['small', 'normal', 'large', 'huge'];
+        const types = ['item_pipes', 'restrictive_pipes'];
+        sizes.forEach(size => {
+            types.forEach(type => {
+                event.add('c:hidden_from_recipe_viewers', `#forge:${size}_${type}/${material}`);
+            });
+        });
+    };
+
+    hideItemPipes('nickel');
+    hideItemPipes('rose_gold');
+    hideItemPipes('platinum');
+    hideItemPipes('sterling_silver');
 
 }
 
 function registerTFGMaterialRemovePipesRecipes(event) {
-    const removePipes = (material) => {
+
+
+    const removeFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
         sizes.forEach(size => {
             event.remove({ output: `#forge:${size}_fluid_pipes/${material}` });
         });
     };
 
-    removePipes('treated_wood');
-    removePipes('bismuth_bronze');
-    removePipes('black_bronze');
-    removePipes('lead');
-    removePipes('chromium');
-    removePipes('blue_steel');
-    removePipes('red_steel');
-    removePipes('vanadium_steel');
-    removePipes('tungsten');
-    removePipes('ostrum');
-    removePipes('tungsten_carbide');
-    removePipes('tungsten_bismuth_oxide_composite');
-    removePipes('europium');
+    removeFluidPipes('treated_wood');
+    removeFluidPipes('bismuth_bronze');
+    removeFluidPipes('black_bronze');
+    removeFluidPipes('lead');
+    removeFluidPipes('chromium');
+    removeFluidPipes('blue_steel');
+    removeFluidPipes('red_steel');
+    removeFluidPipes('vanadium_steel');
+    removeFluidPipes('tungsten');
+    removeFluidPipes('ostrum');
+    removeFluidPipes('tungsten_carbide');
+    removeFluidPipes('tungsten_bismuth_oxide_composite');
+    removeFluidPipes('europium');
+
+    const removeItemPipes = (material) => {
+        const sizes = ['small', 'normal', 'large', 'huge'];
+        const types = ['item_pipes', 'restrictive_pipes'];
+        sizes.forEach(size => {
+            types.forEach(type => {
+                event.add('c:hidden_from_recipe_viewers', `#forge:${size}_${type}/${material}`);
+            });
+        });
+    };
+
+    removeItemPipes('nickel');
+    removeItemPipes('rose_gold');
+    removeItemPipes('platinum');
+    removeItemPipes('sterling_silver');
 }
