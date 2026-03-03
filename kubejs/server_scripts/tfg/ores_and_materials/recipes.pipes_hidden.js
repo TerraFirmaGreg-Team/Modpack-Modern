@@ -1,5 +1,8 @@
+//#region Hide Items
+
 function registerTFGMaterialHiddenPipesTags(event) {
 
+    // Hide Fluid Pipes from EMI
 
     const hideFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
@@ -21,6 +24,8 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideFluidPipes('tungsten_carbide');
     hideFluidPipes('tungsten_bismuth_oxide_composite');
     hideFluidPipes('europium');
+
+    // Hide Item Pipes from EMI
 
     const hideItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
@@ -44,10 +49,20 @@ function registerTFGMaterialHiddenPipesTags(event) {
     hideItemPipes('osmiridium');
     hideItemPipes('americium');
 
+    const materialPlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
+        materialPlastic.forEach(material => {
+            event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_mallet`);
+            });
+
+    //#endregion
+    
 }
+
+    //#region Remove Recipes
 
 function registerTFGMaterialRemovePipesRecipes(event) {
 
+    // Remove Fluid Pipes recipes
 
     const removeFluidPipes = (material) => {
         const sizes = ['tiny', 'small', 'normal', 'large', 'huge', 'quadruple', 'nonuple'];
@@ -70,6 +85,8 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeFluidPipes('tungsten_bismuth_oxide_composite');
     removeFluidPipes('europium');
 
+    // Remove Item Pipes recipes
+
     const removeItemPipes = (material) => {
         const sizes = ['small', 'normal', 'large', 'huge'];
         const types = ['item_pipes', 'restrictive_pipes'];
@@ -91,4 +108,11 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeItemPipes('osmium');
     removeItemPipes('osmiridium');
     removeItemPipes('americium');
+
+    const materialRemovePlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
+        materialRemovePlastic.forEach(material => {
+            event.remove({ output: `gtceu:${material}_mallet` });
+            });
+
+    //#endregion
 }
