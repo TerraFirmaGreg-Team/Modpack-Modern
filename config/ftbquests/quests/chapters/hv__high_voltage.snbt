@@ -309,11 +309,19 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.high_voltage.rutile_loop.subtitle}"
-			tasks: [{
-				id: "5593109F3592A432"
-				item: "gtceu:rutile_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5593109F3592A432"
+					item: "gtceu:rutile_dust"
+					type: "item"
+				}
+				{
+					id: "11062B6B87452CE0"
+					item: "gtceu:bauxite_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.high_voltage.rutile_loop.title}"
 			x: 2.0d
 			y: 7.0d
@@ -428,23 +436,6 @@
 			title: "{quests.high_voltage.vacuum_freezer.title}"
 			x: 21.0d
 			y: -8.5d
-		}
-		{
-			dependencies: ["124B32A0583A636A"]
-			description: ["{quests.high_voltage.mv_superconductors.desc}"]
-			icon: "gtceu:magnesium_diboride_double_wire"
-			id: "72F0DFAF5CC6D0FE"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			tasks: [{
-				id: "4CCBDA5AC16CBB48"
-				item: "gtceu:magnesium_diboride_single_wire"
-				type: "item"
-			}]
-			title: "{quests.high_voltage.mv_superconductors.title}"
-			x: -4.0d
-			y: 0.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
@@ -897,7 +888,7 @@
 			}]
 			title: "{quests.high_voltage.hv_macerator.title}"
 			x: 2.0d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
@@ -1734,8 +1725,10 @@
 		}
 		{
 			dependencies: ["05ABC370D7153350"]
+			description: ["{quest.high_voltage.ultimet.desc}"]
 			icon: "gtceu:ultimet_ingot"
 			id: "4C25552DC291F49A"
+			subtitle: "{quest.high_voltage.ultimet.subtitle}"
 			tasks: [
 				{
 					id: "5C9F46F926EC071B"
@@ -1752,6 +1745,7 @@
 						}
 					}
 					optional_task: true
+					title: "{quest.high_voltage.ultimet.task}"
 					type: "item"
 				}
 				{
@@ -1769,11 +1763,13 @@
 					type: "item"
 				}
 			]
+			title: "{quest.high_voltage.ultimet.title}"
 			x: 3.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6958029B5514D4EC"]
+			description: ["{quests.high_voltage.boron_tools.desc}"]
 			icon: {
 				Count: 1
 				id: "tfg:hv_boron_carbide_screwdriver"
@@ -1791,6 +1787,7 @@
 			id: "09DEA21F91BE054E"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.high_voltage.boron_tools.subtitle}"
 			tasks: [
 				{
 					id: "2018B029C5FDC092"
@@ -1807,17 +1804,21 @@
 						}
 					}
 					optional_task: true
+					title: "{quests.high_voltage.boron_tools.task}"
 					type: "item"
 				}
 			]
+			title: "{quests.high_voltage.boron_tools.title}"
 			x: 21.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["56D337E264A4154F"]
+			description: ["{quest.high_voltage.r_alumino_rotor.desc}"]
 			id: "27EDE5F476EA628D"
 			optional: true
 			shape: "heart"
+			subtitle: "{quest.high_voltage.r_alumino_rotor.subtitle}"
 			tasks: [{
 				id: "78E2E00B6BBBCB6D"
 				item: {
@@ -1839,7 +1840,9 @@
 				"00A2566109144D7F"
 				"670FC89E34D70E3C"
 			]
+			description: ["{quest.high_voltage.desh_blue_foils.desc}"]
 			id: "09C63B0E303AD8FD"
+			subtitle: "{quest.high_voltage.desh_blue_foils.subtitle}"
 			tasks: [{
 				id: "0940FA8EC1C38BC3"
 				item: "tfg:blue_alloy_desh_foil"
@@ -1850,12 +1853,23 @@
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
+			description: ["{quest.high_voltage.chorus_insulation.desc}"]
+			icon: "tfg:fired_chorus_ceramic_insulation"
 			id: "2F77122B74877BED"
-			tasks: [{
-				id: "5AF6BCBF6039F43F"
-				item: "tfg:chorus_ceramic_insulation"
-				type: "item"
-			}]
+			subtitle: "{quest.high_voltage.chorus_insulation.subtitle}"
+			tasks: [
+				{
+					id: "5AF6BCBF6039F43F"
+					item: "tfg:chorus_ceramic_insulation"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1279C5E1F2563A60"
+					item: "tfg:fired_chorus_ceramic_insulation"
+					type: "item"
+				}
+			]
 			x: 18.0d
 			y: -2.0d
 		}
@@ -1864,8 +1878,10 @@
 				"00A2566109144D7F"
 				"6958029B5514D4EC"
 			]
+			description: ["{quest.high_voltage.desh_ingot.desc}"]
 			icon: "ad_astra:desh_ingot"
 			id: "670FC89E34D70E3C"
+			subtitle: "{quest.high_voltage.desh_ingot.subtitle}"
 			tasks: [
 				{
 					id: "1AF2669CD2F3DCAA"
@@ -1881,17 +1897,22 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_desh)item(ad_astra:raw_desh)item(gtceu:rich_raw_desh))"
 						}
 					}
+					optional_task: true
+					title: "{quest.high_voltage.desh_ingot.task}"
 					type: "item"
 				}
 			]
+			title: "{quest.high_voltage.desh_ingot.title}"
 			x: 18.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6B08799BCFD01D3D"]
+			description: ["{quest.high_voltage.inconel_rotor.desc}"]
 			id: "661D2E50F56EA5AD"
 			optional: true
 			shape: "heart"
+			subtitle: "{quest.high_voltage.inconel_rotor.subtitle}"
 			tasks: [{
 				id: "05CAAD3F517F551D"
 				item: {

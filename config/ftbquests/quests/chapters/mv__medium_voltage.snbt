@@ -821,6 +821,7 @@
 			dependencies: [
 				"4353AB0E20601AEC"
 				"10FB27DD3C7BEC2F"
+				"3B34F995B31D4C5B"
 			]
 			description: ["{quests.medium_voltage.mv_boards.desc}"]
 			icon: "gtceu:plastic_printed_circuit_board"
@@ -830,8 +831,15 @@
 			subtitle: "{quests.medium_voltage.mv_boards.subtitle}"
 			tasks: [
 				{
+					id: "076F358571035951"
+					item: "tfg:mo_activated_sic_substrate"
+					optional_task: true
+					type: "item"
+				}
+				{
 					id: "68B5E2667EDAE895"
 					item: "gtceu:plastic_circuit_board"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1261,7 +1269,7 @@
 				}
 			]
 			title: "{quests.medium_voltage.mv_ic.title}"
-			x: 6.0d
+			x: 6.5d
 			y: 13.5d
 		}
 		{
@@ -1503,11 +1511,6 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "1C6FECE08B6DC1B8"
-					item: "gtceu:mv_chemical_bath"
-					type: "item"
-				}
 			]
 			title: "{quests.medium_voltage.mv_kanthal_ingot.title}"
 			x: 4.5d
@@ -1711,7 +1714,9 @@
 		}
 		{
 			dependencies: ["28111275F2315FF7"]
+			description: ["{quests.medium_voltage.rene_41.desc}"]
 			id: "02D2A2FFAB2AB0F1"
+			subtitle: "{quests.medium_voltage.rene_41.subtitle}"
 			tasks: [{
 				id: "4DDAAC598858DDAE"
 				item: "tfg:rene_41_ingot"
@@ -1722,7 +1727,13 @@
 		}
 		{
 			dependencies: ["28111275F2315FF7"]
+			description: [
+				"{quests.medium_voltage.silicon_carbide.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.silicon_carbide.desc.2}"
+			]
 			id: "3B34F995B31D4C5B"
+			subtitle: "{quests.medium_voltage.silicon_carbide.subtitle}"
 			tasks: [{
 				id: "30ED727F2636666F"
 				item: "tfg:silicon_carbide_ingot"
@@ -1733,22 +1744,36 @@
 		}
 		{
 			dependencies: ["79E8DC4D9B5F6B97"]
+			description: ["{quests.medium_voltage.silicon_rubber.desc}"]
 			hide_dependency_lines: true
+			icon: "gtceu:silicone_rubber_plate"
 			id: "561385A0B977CFAD"
-			tasks: [{
-				id: "48DB830F406C4AB0"
-				item: "gtceu:silicone_rubber_bucket"
-				type: "item"
-			}]
+			subtitle: "{quests.medium_voltage.silicon_rubber.subtitle}"
+			tasks: [
+				{
+					id: "47BDB7C5480316A3"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					id: "48DB830F406C4AB0"
+					item: "gtceu:silicone_rubber_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.medium_voltage.silicon_rubber.title}"
 			x: 0.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["22E462070F8B027A"]
+			description: ["{quests.medium_voltage.chemical_bath.desc}"]
 			hide_dependency_lines: true
 			id: "28111275F2315FF7"
 			shape: "octagon"
 			size: 1.25d
+			subtitle: "{quests.medium_voltage.chemical_bath.subtitle}"
 			tasks: [{
 				id: "088325FB8E770571"
 				item: "gtceu:mv_chemical_bath"
@@ -1762,9 +1787,15 @@
 				"3DB03EA806B2D8A1"
 				"5CBBBFD1FBBE95CE"
 			]
+			description: [
+				"{quests.medium_voltage.htpf.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.htpf.desc.2}"
+			]
 			id: "738E8E10951E17C6"
 			shape: "octagon"
 			size: 2.0d
+			subtitle: "{quests.medium_voltage.htpf.subtitle}"
 			tasks: [{
 				id: "15531745870DB404"
 				item: "tfg:high_temp_precision_fabricator"
@@ -1775,7 +1806,13 @@
 		}
 		{
 			dependencies: ["738E8E10951E17C6"]
+			description: [
+				"{quests.medium_voltage.gem_lens.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.gem_lens.desc.2}"
+			]
 			id: "71F82DEEBDBBD4AC"
+			subtitle: "{quests.medium_voltage.gem_lens.subtitle}"
 			tasks: [
 				{
 					id: "76613B2F87AA3C63"
@@ -1797,12 +1834,20 @@
 					item: "gtceu:diamond_lens"
 					type: "item"
 				}
+				{
+					id: "64A48763F18FD4EE"
+					item: "tfg:worked_optical_borosilicate_blank"
+					optional_task: true
+					type: "item"
+				}
 			]
+			title: "{quests.medium_voltage.gem_lens.title}"
 			x: 8.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["682C26579EDDCA76"]
+			description: ["{quests.medium_voltage.vanadium_tools.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:mv_vanadium_steel_wrench"
@@ -1826,6 +1871,7 @@
 			id: "4F639F0169C56641"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.medium_voltage.vanadium_tools.subtitle}"
 			tasks: [{
 				id: "2089A49DEBDB9A7C"
 				item: {
@@ -1835,10 +1881,94 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:mv_vanadium_steel_drill)item(gtceu:mv_vanadium_steel_wrench)item(gtceu:mv_vanadium_steel_screwdriver)item(gtceu:mv_vanadium_steel_buzzsaw)item(gtceu:mv_vanadium_steel_wire_cutter)item(gtceu:mv_vanadium_steel_chainsaw)item(gtceu:vanadium_steel_knife)item(gtceu:vanadium_steel_hoe)item(gtceu:vanadium_steel_scythe)item(gtceu:vanadium_steel_hammer)item(gtceu:vanadium_steel_file)item(gtceu:vanadium_steel_sword)item(gtceu:vanadium_steel_butchery_knife)item(gtceu:vanadium_steel_crowbar))"
 					}
 				}
+				title: "{quests.medium_voltage.vanadium_tools.task}"
 				type: "item"
 			}]
+			title: "{quests.medium_voltage.vanadium_tools.title}"
 			x: 10.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["3B34F995B31D4C5B"]
+			description: ["{quests.medium_voltage.sic_sic_rotor.desc}"]
+			id: "044089A612080F9B"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.sic_sic_rotor.subtitle}"
+			tasks: [{
+				id: "07B75D91B06F1941"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "tfg:silicon_carbide_silicon_carbide"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["71F82DEEBDBBD4AC"]
+			description: ["{quests.medium_voltage.gem_slurry.desc}"]
+			icon: "gtceu:exquisite_ruby_gem"
+			id: "7343272F65129211"
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.gem_slurry.subtitle}"
+			tasks: [
+				{
+					id: "0FA476E1DEC280C5"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					id: "118FA3A7CBE11B2B"
+					item: "tfg:dirty_ruby_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "377A9A3E156D5421"
+					item: "tfg:dirty_diamond_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2C05EBE2496806AF"
+					item: "tfg:dirty_sapphire_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CADBE570823AC5F"
+					item: "tfg:dirty_emerald_slurry_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.medium_voltage.gem_slurry.title}"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["28111275F2315FF7"]
+			description: ["{quests.high_voltage.mv_superconductors.desc}"]
+			icon: "gtceu:magnesium_diboride_double_wire"
+			id: "7A184101B8426F52"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			tasks: [{
+				id: "37A969C42A1B74FD"
+				item: "gtceu:magnesium_diboride_single_wire"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.mv_superconductors.title}"
+			x: 6.0d
+			y: 11.5d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
