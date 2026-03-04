@@ -46,7 +46,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
-	
+
 	//#endregion
 
 	// Airplane Upgrades
@@ -72,7 +72,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
-	
+
 	event.add('forge:rods/any_bronze', '#forge:rods/bronze')
 	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
 	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
@@ -80,26 +80,26 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
-	
+
 	// Steam Bloomery
-    event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
-    event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
-    event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
-		
+	event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
+	event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
+	event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
+	event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
+	event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
+
 	//#region holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
 	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
-	
+
 	event.remove('forge:dusts', 'tfg:cellulose_matrix')
 	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
-	
+
 	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
-	
-	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
+
+	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')
 	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
 	//#endregion
 }
@@ -154,7 +154,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
-	
+
 	event.add('tfc:any_water', 'tfg:semiheavy_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_water')
@@ -171,7 +171,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('minecraft:water', 'tfg:rich_stock')
 	event.add('tfc:drinkables', 'tfg:rich_stock')
 	event.add('tfc:any_drinkables', 'tfg:rich_stock')
-	
+
 	event.add('minecraft:water', 'tfg:light_stock')
 	event.add('tfc:drinkables', 'tfg:light_stock')
 	event.add('tfc:any_drinkables', 'tfg:light_stock')
@@ -184,7 +184,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
-	
+
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
 
@@ -196,7 +196,7 @@ const registerTFGFluidTags = (event) => {
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
-	
+
 	// Platline tags
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')

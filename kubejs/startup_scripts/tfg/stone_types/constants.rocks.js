@@ -488,30 +488,38 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			generateFormsExisting('calcite', 'create:small_%s_brick', { block: 'create:small_calcite_bricks' })
 		]
 	},
-	"tuff": {
+	"tuff": generateMissing('tuff', {
 		material: 'tfg:igneous_felsic',
 		tfcTag: 'tfc:igneous_extrusive_items',
 		stonecutterTag: 'create:stone_types/tuff',
-		isTFC: false,
-		collapsible: false,
 		sound: 'tuff',
 		mapColor: 'terracotta_gray',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
+		support: 'tfg:tuff_support',
+		hardened: 'tfg:hardened_tuff',
 		pillar: 'create:tuff_pillar',
 		pillar2: 'create:layered_tuff',
-		raw: { 
+		gravel: 'tfg:tuff_gravel',
+		raw: {
 			block: 'minecraft:tuff',
 			slab: 'tfg:tuff_slab',
 			stair: 'tfg:tuff_stairs',
 			wall: 'tfg:tuff_wall'
 		},
+		cobble: generateFormsExisting('tuff', 'tfg:rock/%s_cobble', { block: 'tfg:tuff_cobble' },
+			generateForms('tuff', 'tfg:rock/mossy_cobble_%s')),
+		bricks: generateForms('tuff', 'tfg:rock/bricks_%s',
+			generateForms('tuff', 'tfg:rock/mossy_bricks_%s'),
+			generateForms('tuff', 'tfg:rock/cracked_bricks_%s')),
+		polished: generateForms('tuff', 'create:polished_cut_%s'),
+		chiseled: { block: 'tfg:rock/chiseled_tuff' },
 		stonecutting: [
 			generateForms('tuff', 'create:cut_%s'),
-			generateForms('tuff', 'create:polished_cut_%s'),
 			generateFormsExisting('tuff', 'create:cut_%s_brick', { block: 'create:cut_tuff_bricks' }),
-			generateFormsExisting('tuff', 'create:small_%s_brick', { block: 'create:small_tuff_bricks' })
+			generateFormsExisting('tuff', 'create:small_%s_brick', { block: 'create:small_tuff_bricks' }),
+			{ block: 'tfg:rock/chiseled_tuff_bricks' }
 		]
-	},
+	}),
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// MOON ROCKS
