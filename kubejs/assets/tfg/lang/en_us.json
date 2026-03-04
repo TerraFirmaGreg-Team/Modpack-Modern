@@ -2857,7 +2857,7 @@
   "quests.high_voltage.superconductors.desc": "By this point, normal Cables have such insignificant loss that superconductors aren't a requirement. That being said, they're still useful for being able to split and combine cables on the fly, and these ones are half oxygen so they're cheap too!\n\nSuperconductors are still required to craft &aField Generators&r.",
   "quests.high_voltage.nichrome_coils.title": "Nichrome Coils",
   "quests.high_voltage.nichrome_coils.subtitle": "A long way to go before we beat the Sun",
-  "quests.high_voltage.nichrome_coils.desc.1": "&3Nichrome Heating Coils&r increase the temperature of your &3Blast Furnace&r to &d3,600K&r.\n\nDespite not being required &oyet&r, it still is a good idea to upgrade your primary &3EBF&r for those sweet, sweet &6Coil bonuses&r.",
+  "quests.high_voltage.nichrome_coils.desc.1": "&3Nichrome Heating Coils&r increase the temperature of your &3Blast Furnace&r to &d3,600K&r.\n\nThese will be required to upgrade your primary &3EBF&r so you can make &6Titanium&r.",
   "quests.high_voltage.nichrome_coils.desc.2": "&l&3Lore:&r&o In the original GregTech 5, there were only three types of coils. This was the last tier.",
   "quests.high_voltage.titanium.title": "Titanium",
   "quests.high_voltage.titanium.desc": "&aTitanium&r has the highest corrosion resistance and strength-to-density ratio of any metallic element, so it's only natural that we'll be using it as the main material in our &5EV&r machinery.\n\nConfirm that your closed loop for &aRutile&r is up to standard, and prepare to run a dedicated &3EBF&r for hours.\n\nA quick aside - now we're at &5EV&r, single block generators are about to fall out of style! You'll need to run several &3HV Generators&r to keep up - later, upgrades to Multiblock Generators will be required.\n\nWhile Multiblock generators are much more expensive, you'll find them to be much more energy efficient! Have a look at the &dEnergy Chapter&r for more infos!",
@@ -2967,7 +2967,7 @@
   "quests.high_voltage.space_alloy.title": "R-Aluminosteel",
   "quests.high_voltage.space_alloy.subtitle": "We made this one up",
   "quests.high_voltage.space_alloy.desc.1": "To make your first &6Rocket Alloy&r, you will need to put &7Aluminium&r, &7Stainless Steel&r and &cLiquid Red Steel&r into your new &6HV&r Mixer.\n\nThe recipe takes some time, so expect to have your mixer fully dedicated to this step.\n\nAfter that, your dust will need to be smelted in your EBF at &bMV&r. If you already have &6Nichrome Coils&r and your EBF is running at &6HV&r, you will be able to &aPerfect Overclock&r the recipe! (check the GregTech Energy chapter if you don't understand)",
-  "quests.high_voltage.space_alloy.desc.2": "You can cool the ingots down with a &9Chemical Bath&r or, if you already have one, a &9Vacuum Freezer&r for a shorter processing time.\n\n&7144mb equals 1 ingot&r, so make sure not to extract too much &cRed Steel&r.\n\nYou will need &685 Rocket Alloy&r ingots total, which means:\n- &760 Aluminium&r\n- &720 Stainless Steel&r\n- &710 Red Steel&r\n\n&aNothing too bad!&r",
+  "quests.high_voltage.space_alloy.desc.2": "You can cool the ingots down with a &9Chemical Bath&r or, if you already have one, a &9Vacuum Freezer&r for a shorter processing time.\n\n&7144mb equals 1 ingot&r, so make sure not to extract too much &cRed Steel&r.\n\nYou will need &6189 Rocket Alloy&r ingots total, which means:\n- &7126 Aluminium&r\n- &756 Stainless Steel&r\n- &721 Red Steel&r\n\n&aNothing too bad!&r",
   "quests.high_voltage.steel_engine.subtitle": "Blue Steel is back, baby",
   "quests.high_voltage.steel_engine.desc": "The &6Steel Engine&r is required so your rocket can &atravel to the Moon&r.\n\nThe recipe isn't too bad — we assume you're ready to tackle each part.\n\nTo get &91152mb of Liquid Blue Steel&r, you will need &78 ingots&r.",
   "quests.high_voltage.rocket_fins.subtitle": "So you reach the right destination",
@@ -5316,5 +5316,32 @@
   "quests.medium_voltage.vanadium_tools.title": "Vanadium Steel Tools",
   "quests.medium_voltage.vanadium_tools.subtitle": "A whole new set of stool",
   "quests.medium_voltage.vanadium_tools.desc": "Each new tier unlocks additional materials used to craft an entirely new set of &eTools&r; while you may not want to replace your full set every time, it is still worth reviewing their stats, as some provide higher mining speed while others offer greater durability, and there is no absolute best choice. It ultimately depends on your priorities.\n\n&bVanadium Tools&r provide higher durability than &cRed Steel&r with only a slight increase in speed; if raw speed is your main goal, you may want to consider &dDiamond-Tipped Tools&r instead.",
-  "quests.medium_voltage.vanadium_tools.task": "All the Vanadium Tools"
+  "quests.medium_voltage.vanadium_tools.task": "All the Vanadium Tools",
+
+  "quest.high_voltage.desh_ingot.title": "Desh",
+  "quest.high_voltage.desh_ingot.subtitle": "Lunar Ore",
+  "quest.high_voltage.desh_ingot.desc": "The &7Moon&r features a wide variety of veins and new ores, but &6Desh&r should be your main priority during your first visit. First, it allows you to craft the &eLarge Solar Array Mk1&r, which is far cheaper than you might expect and can sustain a solid amount of power without having to spam &eAd Astra Solar Panels&r.\n\nThe second point, just as important—if not more—for your progression is the ability to craft &bBlue Alloy Desh Foils&r, which are required for &6Nichrome Coils&r and therefore necessary to reach the &5EV&r chapter.\n\nAlso keep in mind that processing &6Desh Ores&r with &dSodium Persulfate&r can yield &aRhenium Dust&r, which becomes extremely important to build or expand your &bCleanroom&r.",
+  "quest.high_voltage.desh_ingot.task": "Any Desh Ore",
+
+  "quests.high_voltage.boron_tools.title": "Boron Carbide Tools",
+  "quests.high_voltage.boron_tools.subtitle": "Durability to its peak",
+  "quests.high_voltage.boron_tools.desc": "&Boron Carbide Tools&r provide higher durability than &cever&r with a terrible speed; if raw speed is your main goal, you may want to consider &dUltimet Tools&r instead. But these ones can be quite good a screwdriver for example.",
+  "quests.high_voltage.boron_tools.task": "All the Boron Carbide Tools",
+
+  "quest.high_voltage.desh_blue_foils.subtitle": "It's not a sandwich",
+  "quest.high_voltage.desh_blue_foils.desc": "The &bBlue Alloy Desh Foils&r should bring back memories of the good old days when you had no machines and had to use &eFluix&r to craft your anvils; be prepared for nostalgia, because you will need a large quantity of them.\n\nEach set of 16 &6Coils&r requires 64 &6Desh&r and &bBlue Alloy&r Ingots, but as you can probably assume by now, you will likely want to batch-craft much more than that.\n\nAt this stage, it is highly recommended to establish a base on the &7Moon&r and take the opportunity to set up your &dAE2 Factory&r—though of course, no one is forcing you to do so.",
+
+  "quest.high_voltage.chorus_insulation.subtitle": "Pop it not with a microwave but wiw TNT",
+  "{quest.high_voltage.chorus_insulation.desc}": "You will find &dChorus Fruits&r on the &7Moon&r in their own distinct biomes; they are hard to miss, especially with shaders, as they appear quite majestic. You can also grow them on the &7Moon&r within an &aElectric Greenhouse&r if you prefer not to spend time searching for them.\n\nThe rest is fairly straightforward: &bAsurine&r can be found in large blue meteorites and can be mass-produced using the &eRock-Crusher&r, while &7Perlite&r can be obtained either from &fFelsic Rocks&r or from any leftover &8Obsidian&r you may have.",
+
+  "quest.high_voltage.inconel_rotor.subtitle": "Best rewards should be harder to get",
+  "quest.high_voltage.inconel_rotor.desc": "The &bInconel-718&r is an extremely powerful &eTurbine Rotor&r, but it will be quite challenging to obtain. We will not provide further details, as this is entirely optional and meant as a personal challenge—you only pursue it if you want, and it is not required at any point to progress in the modpack.\n\nYou will encounter better rotors than this one as you advance into the &5EV&r chapter, so if you prefer, you can safely skip this challenge.",
+
+  "quest.high_voltage.r_alumino_rotor.subtitle": "Rocket Rotor",
+  "quest.high_voltage.r_alumino_rotor.desc": "This &eRotor&r offers excellent &cPower&r and &aDurability&r, but falls slightly short in &bEfficiency&r. It is up to you to decide whether you prefer this model compared to the &dUltimet&r; it may also be more difficult to produce, so the choice is yours to make.",
+
+  "quest.high_voltage.ultimet.title": "Ultimet",
+  "quest.high_voltage.ultimet.subtitle": "Ultimet was the ultimate best",
+  "quest.high_voltage.ultimet.desc": "The &dUltimet&r is a high-performance material, providing excellent &eSpeed&r for your &bDrill&r or &bWrench&r and making a &eTurbine Rotor&r with very good &bEfficiency&r, especially if you are not producing large amounts of fuel or want to build additional &eSteam Turbines&r.\n\nThis alloy is also mandatory for progressing toward your new &aCircuits&r, so even if you do not intend to craft the tools, you will still need to produce it. Keep in mind that &dUltimet&r ingots can be cooled using a &dChemical Bath&r.",
+  "quest.high_voltage.ultimet.task": "Ultimate tools set"
 }
