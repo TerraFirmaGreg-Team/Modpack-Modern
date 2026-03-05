@@ -22,16 +22,16 @@ global.SOLDER_TIERS = /** @type {const} */ {
 		"solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "luv": {
-        "tin_replacement": "tfg:bi_pb_sn_cd_in_tl",
-		"solder_replacement": undefined
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
     "zpm": {
-        "tin_replacement": "tfg:bi_pb_sn_cd_in_tl",
-		"solder_replacement": undefined
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     },
 	"uv": {
-        "tin_replacement": "tfg:bi_pb_sn_cd_in_tl",
-		"solder_replacement": undefined
+        "tin_replacement": "tfg:woods_metal",
+		"solder_replacement": "tfg:bi_pb_sn_cd_in_tl"
     }
 }
 
