@@ -37,6 +37,7 @@ ServerEvents.tags('item', event => {
 	registerFTBQuestsItemTags(event)
 	registerGrapplemodItemTags(event)
 	registerGreateItemTags(event)
+	registerGTModernUtilitiesItemTags(event)
 	registerGTCEUItemTags(event)
 	registerImmersiveAircraftItemTags(event)
 	registerMacawsForTFCItemTags(event)
@@ -85,6 +86,7 @@ ServerEvents.tags('block', event => {
 	registerFTBQuestsBlockTags(event)
 	registerGreateBlockTags(event)
 	registerGTCEUBlockTags(event)
+	registerGTModernUtilitiesBlockTags(event)
 	registerMegaCellsBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerMoreRedBlockTags(event)
@@ -264,6 +266,7 @@ ServerEvents.recipes(event => {
 	registerGreateRecipes(event)
 	registerGTCEURecipes(event);
 	registerGTCEUTerminalRecipes(event)
+	registerGTModernUtilitiesRecipes(event)
 	registerHandGliderRecipes(event)
 	registerHotOrNotRecipes(event)
 	registerImmersiveAircraftRecipes(event)
@@ -297,6 +300,7 @@ ServerEvents.recipes(event => {
 	registerWaterFlasksRecipes(event)
 	registerWABRecipes(event)
 	registerTFCScrapingKnivesRecipes(event)
+	registerTFGCircuitBoardsRecipes(event)
 })
 
 TaCZServerEvents.gunIndexLoad((event) => {

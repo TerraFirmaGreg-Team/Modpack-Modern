@@ -598,6 +598,22 @@ function registerTFGArtisanTableRecipes(event) {
 		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/phenolic_printed_circuit_board_4x`);
 	//#endregion
+
+	//#region Glass Lens
+
+	event.custom({
+		"result": {"item": "tfg:worked_optical_borosilicate_blank", "count": 1},
+		"pattern": [
+			"  XX  ",
+			" XXXX ",
+			"XXXXXX",
+			"XXXXXX",
+			" XXXX ",
+			"  XX  "
+		],
+		"artisanType": "tfg:optical_borosilicate",
+		"type": "tfg:artisan"	
+	}).id(`tfg:artisan_table/worked_optical_borosilicate_blank`);
 	
 
 }

@@ -94,13 +94,13 @@ function registerTACZAttachRecipes(event){
 
 	//Muzzles
 	event.recipes.gtceu.assembler('tfg_tacz:ca_large_tank')
-		.itemInputs('2x gtceu:red_steel_tiny_fluid_pipe', '2x gtceu:steel_fluid_cell', '8x #forge:rings/silicone_rubber', 
+		.itemInputs('2x gtceu:potin_tiny_fluid_pipe', '2x gtceu:steel_fluid_cell', '8x #forge:rings/silicone_rubber', 
 					'4x #forge:rings/stainless_steel', '#forge:plates/stainless_steel', '8x #forge:screws/stainless_steel')
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_bigger_cylinder"}'))
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:ca_lava_tube')
-		.itemInputs('4x gtceu:blue_steel_tiny_fluid_pipe', 'gtceu:steel_fluid_cell', '4x gtceu:tempered_glass',
+		.itemInputs('4x gtceu:steel_tiny_fluid_pipe', 'gtceu:steel_fluid_cell', '4x gtceu:tempered_glass',
 					'4x #forge:rings/stainless_steel', '#forge:plates/rose_gold', '8x #forge:screws/stainless_steel')
 		.inputFluids(Fluid.of('minecraft:lava', 2000))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"create_armorer:muzzle_refit_lava_perfusion_bottle"}'))
@@ -108,26 +108,26 @@ function registerTACZAttachRecipes(event){
 		.duration(20)
 	
 	event.recipes.gtceu.assembler('tfg_tacz:aa_compensator')
-		.itemInputs('gtceu:tungsten_small_fluid_pipe')
+		.itemInputs('gtceu:tungsten_steel_small_fluid_pipe')
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_bs_mod4"}'))
 		.circuit(1)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:aa_commander')
-		.itemInputs('gtceu:tungsten_small_fluid_pipe')
+		.itemInputs('gtceu:tungsten_steel_small_fluid_pipe')
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_commander"}'))
 		.circuit(2)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:aa_silencer')
-		.itemInputs('gtceu:tungsten_small_fluid_pipe')
+		.itemInputs('gtceu:tungsten_steel_small_fluid_pipe')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 288))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_ns_1"}'))
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(20)
 	event.recipes.gtceu.assembler('tfg_tacz:aa_thick_silencer')
-		.itemInputs('gtceu:tungsten_small_fluid_pipe')
+		.itemInputs('gtceu:tungsten_steel_small_fluid_pipe')
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 576))
 		.itemOutputs(Item.of('tacz:attachment', '{AttachmentId:"applied_armorer:muzzle_classic"}'))
 		.circuit(4)

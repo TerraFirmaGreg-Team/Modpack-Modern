@@ -33,20 +33,20 @@
 			linked_quest: "0CA5B715B76E4A5B"
 			shape: "diamond"
 			x: 13.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			id: "6058CD9466BE0852"
 			linked_quest: "00202200344F3456"
-			x: 12.5d
-			y: 3.0d
+			x: 13.0d
+			y: 2.0d
 		}
 		{
 			id: "49FB3507B0FB3000"
 			linked_quest: "155F421FC2F39C3C"
 			shape: "diamond"
-			x: 11.5d
-			y: 1.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			id: "7FDAA0AA0D463A49"
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4EA8888B12D75BF1"]
@@ -433,7 +433,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.5d
 			y: 3.0d
 		}
 		{
@@ -488,8 +488,8 @@
 				}
 			]
 			title: "{quests.extreme_voltage.gcym_alloys.title}"
-			x: 10.0d
-			y: 0.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7B2EE67E37809269"]
@@ -537,7 +537,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1218,7 +1218,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_harvester.title}"
 			x: 14.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
@@ -2015,8 +2015,8 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.large_miner.title}"
-			x: 9.5d
-			y: -4.5d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2979AFD231E5B37B"]
@@ -2250,8 +2250,8 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.advanced_fluid_rig.title}"
-			x: 7.0d
-			y: -6.0d
+			x: 9.75d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5CF58F7CBE255585"]
@@ -2278,7 +2278,7 @@
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.large_generators.title}"
-			x: 2.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
@@ -2400,7 +2400,7 @@
 				}
 			]
 			title: "{quests.extreme_voltage.nichromium_iode.title}"
-			x: 11.5d
+			x: 10.0d
 			y: 3.0d
 		}
 		{
@@ -2417,6 +2417,185 @@
 			}]
 			x: 1.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["5EC5566546591DEE"]
+			icon: {
+				Count: 1
+				id: "gtceu:ev_tungsten_carbide_drill"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 3
+						AoELayer: 6
+						AoERow: 3
+						MaxAoEColumn: 3
+						MaxAoELayer: 6
+						MaxAoERow: 3
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 4
+						MaxDamage: 6143
+						ToolSpeed: 36.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "77126BE617215A17"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "639039222D6F4B30"
+					item: "gtceu:tungsten_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "3B578E54D11D2CA5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_tungsten_carbide_drill)item(gtceu:ev_tungsten_carbide_screwdriver)item(gtceu:ev_tungsten_carbide_wrench)item(gtceu:ev_tungsten_carbide_chainsaw)item(gtceu:ev_tungsten_carbide_buzzsaw)item(gtceu:ev_tungsten_carbide_wire_cutter))"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7F4E529627AD9148"]
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "tfg:tungsten_bismuth_oxide_composite"
+					}
+				}
+			}
+			id: "4C5311FA9B46D115"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "4D980D7F2A4B5731"
+					item: "tfg:tungsten_bismuth_oxide_composite_ingot"
+					type: "item"
+				}
+				{
+					id: "23C3B067A4087DA2"
+					item: {
+						Count: 1
+						id: "gtceu:turbine_rotor"
+						tag: {
+							GT.PartStats: {
+								Material: "tfg:tungsten_bismuth_oxide_composite"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FA09DA68D309548"]
+			icon: {
+				Count: 1
+				id: "gtceu:ev_ostrum_iodide_wrench"
+				tag: {
+					Charge: 2147483647L
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 4
+						MaxDamage: 3095
+						ToolSpeed: 94.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "21A1AB93A5B6F729"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "5E09DBF8B5973CA6"
+					item: "gtceu:ostrum_iodide_ingot"
+					type: "item"
+				}
+				{
+					id: "318864D5687CE68B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter))"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52AB0BDC64293253"]
+			id: "2DA61F29B0CB6141"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "62FB9023A96410C3"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:rocket_alloy_t2"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["691A36800DC755C1"]
+			id: "65B835976B0AA1E9"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "3080CD336ACCEE9E"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "tfg:mo_si_b"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 23.5d
+			y: 4.5d
 		}
 	]
 	subtitle: ["{quests.extreme_voltage.subtitle}"]

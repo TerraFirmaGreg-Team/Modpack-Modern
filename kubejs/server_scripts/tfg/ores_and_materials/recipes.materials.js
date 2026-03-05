@@ -139,14 +139,13 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 	// which is an exception that everything can cast into
 	const canBeCasted = material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) || tagPrefixName === 'ingot';
 	if (canBeCasted
-		&& tfcProperty !== null 
+		&& tfcProperty !== null
 		&& ceramicMold !== null
 		// Liquid wrought iron doesn't exist in the TFC era
-		&& material !== GTMaterials.WroughtIron)
-	{
+		&& material !== GTMaterials.WroughtIron) {
 		const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 		const id = `${materialName}_${tagPrefixName}_${isFireMold ? 'fire' : 'ceramic'}`;
-		
+
 		event.recipes.tfc.casting(outputItem, ceramicMold, Fluid.of(outputMaterial.getFluid(), mbAmount), isFireMold ? 0.01 : 0.1)
 			.id(`tfg:casting/${id}`);
 
@@ -218,7 +217,9 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGMaterialRecipes(event) {
-	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials")
+	const $GreateMaterials = Java.loadClass("electrolyte.greate.registry.GreateMaterials");
+	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType');
+	const $toolTypes = $GTToolType.getTypes();
 
 	forEachMaterial(material => {
 		// greate moment
@@ -226,8 +227,7 @@ function registerTFGMaterialRecipes(event) {
 			|| material === $GreateMaterials.RefinedRadiance
 			|| material === $GreateMaterials.ShadowSteel
 			|| material === $GreateMaterials.ChromaticCompound
-			|| material === GTMaterials.DamascusSteel)
-		{ return; }
+			|| material === GTMaterials.DamascusSteel) { return; }
 
 		if (material.hasProperty(PropertyKey.DUST)) {
 			processDust(event, material)
@@ -236,26 +236,53 @@ function registerTFGMaterialRecipes(event) {
 
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		if (toolProperty !== null) {
-			modifyRecyclingAmounts(material)
-			let circuit = 1;
-			processGTToolHead(event, GTToolType.SWORD, "sword_head", TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', 'tfc:ceramic/sword_blade_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.PICKAXE, "pickaxe_head", TFGTagPrefix.toolHeadPickaxe, 'tfg:pickaxe_head_extruder_mold', 'tfc:ceramic/pickaxe_head_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.AXE, "axe_head", TFGTagPrefix.toolHeadAxe, 'tfg:axe_head_extruder_mold', 'tfc:ceramic/axe_head_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.SHOVEL, "shovel_head", TFGTagPrefix.toolHeadShovel, 'tfg:shovel_head_extruder_mold', 'tfc:ceramic/shovel_head_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.HOE, "hoe_head", TFGTagPrefix.toolHeadHoe, 'tfg:hoe_head_extruder_mold', 'tfc:ceramic/hoe_head_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.KNIFE, "knife_head", TFGTagPrefix.toolHeadKnife, 'tfg:knife_head_extruder_mold', 'tfc:ceramic/knife_blade_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.FILE, "file_head", TFGTagPrefix.toolHeadFile, 'tfg:file_head_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.SAW, "saw_head", TFGTagPrefix.toolHeadSaw, 'tfg:saw_head_extruder_mold', 'tfc:ceramic/saw_blade_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.SPADE, "spade_head", TFGTagPrefix.toolHeadSpade, 'tfg:spade_head_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.MINING_HAMMER, "mining_hammer_head", TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.SCYTHE, "scythe_head", TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', 'tfc:ceramic/scythe_blade_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.HARD_HAMMER, "hammer_head", TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', 'tfc:ceramic/hammer_head_mold', circuit++, material)
-			processGTToolHead(event, GTToolType.BUTCHERY_KNIFE, "butchery_knife_head", TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.SCREWDRIVER, "screwdriver_tip", TagPrefix.toolHeadScrewdriver, 'tfg:screwdriver_tip_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.WRENCH, "wrench_tip", TagPrefix.toolHeadWrench, 'tfg:wrench_tip_extruder_mold', null, circuit++, material)
-			processGTToolHead(event, GTToolType.WIRE_CUTTER, "wire_cutter_head", TagPrefix.toolHeadWireCutter, 'tfg:wire_cutter_head_extruder_mold', null, circuit++, material)
 
-			processToolMortar(event, GTToolType.MORTAR, material)
+			modifyRecyclingAmounts(material)
+
+			let circuit = 1;
+			processGTToolHead(event, GTToolType.SWORD, TFGTagPrefix.toolHeadSword, material)
+			processToolHead(event, TFGTagPrefix.toolHeadSword, "sword_head", 'tfg:sword_head_extruder_mold', 'tfc:ceramic/sword_blade_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe, material)
+			processToolHead(event, TFGTagPrefix.toolHeadPickaxe, "pickaxe_head", 'tfg:pickaxe_head_extruder_mold', 'tfc:ceramic/pickaxe_head_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.AXE, TFGTagPrefix.toolHeadAxe, material)
+			processToolHead(event, TFGTagPrefix.toolHeadAxe, "axe_head", 'tfg:axe_head_extruder_mold', 'tfc:ceramic/axe_head_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, material)
+			processToolHead(event, TFGTagPrefix.toolHeadShovel, "shovel_head", 'tfg:shovel_head_extruder_mold', 'tfc:ceramic/shovel_head_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.HOE, TFGTagPrefix.toolHeadHoe, material)
+			processToolHead(event, TFGTagPrefix.toolHeadHoe, "hoe_head", 'tfg:hoe_head_extruder_mold', 'tfc:ceramic/hoe_head_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, material)
+			processToolHead(event, TFGTagPrefix.toolHeadKnife, "knife_head", 'tfg:knife_head_extruder_mold', 'tfc:ceramic/knife_blade_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.FILE, TFGTagPrefix.toolHeadFile, material)
+			processToolHead(event, TFGTagPrefix.toolHeadFile, "file_head", 'tfg:file_head_extruder_mold', null, circuit++, material)
+
+			processGTToolHead(event, GTToolType.SAW, TFGTagPrefix.toolHeadSaw, material)
+			processToolHead(event, TFGTagPrefix.toolHeadSaw, "saw_head", 'tfg:saw_head_extruder_mold', 'tfc:ceramic/saw_blade_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, material)
+			processToolHead(event, TFGTagPrefix.toolHeadSpade, "spade_head", 'tfg:spade_head_extruder_mold', null, circuit++, material)
+			processGTToolHead(event, GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, material)
+			processToolHead(event, TFGTagPrefix.toolHeadMiningHammer, "mining_hammer_head", 'tfg:mining_hammer_head_extruder_mold', null, circuit++, material)
+			processGTToolHead(event, GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, material)
+			processToolHead(event, TFGTagPrefix.toolHeadScythe, "scythe_head", 'tfg:scythe_head_extruder_mold', 'tfc:ceramic/scythe_blade_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, material)
+			processToolHead(event, TFGTagPrefix.toolHeadHammer, "hammer_head", 'tfg:hammer_head_extruder_mold', 'tfc:ceramic/hammer_head_mold', circuit++, material)
+			processGTToolHead(event, GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, material)
+			processToolHead(event, TFGTagPrefix.toolHeadButcheryKnife, "butchery_knife_head", 'tfg:butchery_knife_head_extruder_mold', null, circuit++, material)
+
+			// Tiered tools -- LV is skipped because all LV tools also have non-electric versions which
+			// the non-electric ToolType handles
+			processGTToolHead(event, GTToolType.SCREWDRIVER, TagPrefix.toolHeadScrewdriver, material)
+			processToolHead(event, TagPrefix.toolHeadScrewdriver, "screwdriver_tip", 'tfg:screwdriver_tip_extruder_mold', null, circuit++, material)
+
+			processGTToolHead(event, GTToolType.WRENCH, TagPrefix.toolHeadWrench, material)
+			processToolHead(event, TagPrefix.toolHeadWrench, "wrench_tip", 'tfg:wrench_tip_extruder_mold', null, circuit++, material)
+
+			processGTToolHead(event, GTToolType.WIRE_CUTTER, TagPrefix.toolHeadWireCutter, material)
+			processToolHead(event, TagPrefix.toolHeadWireCutter, "wire_cutter_head", 'tfg:wire_cutter_head_extruder_mold', null, circuit++, material)
+
+			// chainsaw, drill, buzzsaw
+			// chainsaw and drill heads
+
+			processToolMortar(event, GTToolType.MORTAR, material);
 
 			processToolHead(event, TFGTagPrefix.toolHeadPropick, "propick_head", 'tfg:propick_head_extruder_mold', 'tfc:ceramic/propick_head_mold', circuit++, material)
 			processToolHead(event, TFGTagPrefix.toolHeadJavelin, "javelin_head", 'tfg:javelin_head_extruder_mold', 'tfc:ceramic/javelin_head_mold', circuit++, material)
@@ -264,7 +291,7 @@ function registerTFGMaterialRecipes(event) {
 			processToolHead(event, TFGTagPrefix.toolHeadMattock, "mattock_head", 'tfg:mattock_head_extruder_mold', null, circuit++, material)
 			processToolHead(event, TFGTagPrefix.toolHeadHook, "fish_hook", 'tfg:fish_hook_extruder_mold', null, circuit++, material)
 		}
-		
+
 		if (material.hasProperty(PropertyKey.INGOT)) {
 			processIngot(event, material)
 			processIngotDouble(event, material)
@@ -317,7 +344,7 @@ function registerTFGMaterialRecipes(event) {
 		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_UTILITY)) {
 			processTongs(event, material)
 		}
-		
+
 		const oreProperty = material.getProperty(PropertyKey.ORE);
 		if (oreProperty !== null) {
 			processSmallOre(event, material)
