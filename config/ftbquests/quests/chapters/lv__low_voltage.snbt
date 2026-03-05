@@ -1606,15 +1606,23 @@
 		{
 			dependencies: ["55213ACBF5F5D398"]
 			description: ["{quests.low_voltage.lv_seed_oil.desc}"]
+			icon: "gtceu:seed_oil_bucket"
 			id: "1D979CB5862BD480"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_seed_oil.subtitle}"
-			tasks: [{
-				id: "357702717137F483"
-				item: "gtceu:seed_oil_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "357702717137F483"
+					item: "gtceu:seed_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "674CEEB9EAFE84A0"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_seed_oil.title}"
 			x: -6.0d
 			y: -6.5d
@@ -1622,15 +1630,23 @@
 		{
 			dependencies: ["1D979CB5862BD480"]
 			description: ["{quests.low_voltage.lv_biodiesel.desc}"]
+			icon: "gtceu:bio_diesel_bucket"
 			id: "522E08B1592136D5"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_biodiesel.subtitle}"
-			tasks: [{
-				id: "10503AD87AB3886A"
-				item: "gtceu:bio_diesel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10503AD87AB3886A"
+					item: "gtceu:bio_diesel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5705903FEC888E64"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_biodiesel.title}"
 			x: -5.0d
 			y: -6.5d
@@ -1751,15 +1767,23 @@
 			dependencies: ["5F3063C539C9CBBF"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_gas_syngas.desc}"]
+			icon: "tfg:syngas_bucket"
 			id: "0404FBCC34011053"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_gas_syngas.subtitle}"
-			tasks: [{
-				id: "2733E2B8129C0806"
-				item: "tfg:syngas_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2733E2B8129C0806"
+					item: "tfg:syngas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "545CFFA74C4D6798"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
 			x: 5.0d
 			y: -6.0d
