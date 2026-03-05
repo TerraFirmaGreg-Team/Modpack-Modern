@@ -158,8 +158,15 @@ function registerTFGHVMaterialRecipes(event) {
 
 	//#region Inconel Line
 
+	event.recipes.gtceu.vacuum_freezer('tfg:inert_furnace_atmosphere_dumb')
+		.itemInputs(Item.of('tfc:pure_nitrogen', 64))
+		.inputFluids(Fluid.of('gtceu:argon', 32000), Fluid.of('gtceu:hydrogen', 64000))
+		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 600))
+		.duration(20 * 200)
+		.EUt(GTValues.VA[GTValues.EV])
+
 	event.recipes.gtceu.mixer('tfg:weak_inconel_718')
-		.inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 12000))
+		.inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 1200))
 		.itemInputs(
 			Item.of('gtceu:nickel_dust', 5),
 			Item.of('gtceu:chromium_dust', 2),
@@ -199,7 +206,7 @@ function registerTFGHVMaterialRecipes(event) {
 	event.recipes.gtceu.vacuum_freezer('tfg:cool_hot_inconel_718_ingot')
 		.itemInputs('tfg:hot_inconel_718_ingot')
 		.itemOutputs('tfg:inconel_718_ingot')
-		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 1000))
+		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 100))
 		.duration(20 * 9.15)
 		.EUt(GTValues.VA[GTValues.MV])
 }
