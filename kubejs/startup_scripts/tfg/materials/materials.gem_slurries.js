@@ -1,4 +1,7 @@
-const registerTFGGemSlurries = (event) => {
+// priority: 0
+"use strict";
+
+const registerTFGGemSlurryMaterials = (event) => {
 
     function createDirtySlurry(event, name, color, secondaryColor) {
         event.create(`tfg:dirty_${name}_slurry`)

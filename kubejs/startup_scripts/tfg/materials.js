@@ -43,17 +43,17 @@ const registerTFGMaterials = (event) => {
 	registerTFGAquaponicsMaterials(event);
 
 	registerTFGEtchingMaterials(event);
-
 	registerTFGBakeliteMaterials(event);
 	registerTFGRefrigerantMaterials(event);
 	registerTFGCoilMaterials(event);
 	registerTFGBouleMaterials(event);
 	registerTFGRotorMaterials(event);
-
+	registerTFGSolderMaterials(event)
 	registerTFGTungstenMaterials(event);
 	registerTFGZirconiumMaterials(event);
-
-	registerTFGGemSlurries(event);
+	registerTFGAluminaMaterials(event)
+	registerTFGGemSlurryMaterials(event);
+	registerTFGMiscAlloyMaterials(event)
 
 
 	// Crafting components
@@ -85,175 +85,4 @@ const registerTFGMaterials = (event) => {
 		.macerateInto('gtceu:polycaprolactam')
 		.color(0x000000)
 	// #endregion
-
-
-    // EV New Material
-
-	event.create('tfg:tungsten_bismuth_oxide_composite')
-		.components('1x tungsten', '2x bismuth', '3x oxygen')
-		.color(0xf7cb48)
-		.secondaryColor(0xfffef0)
-		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-		.ingot()
-		.liquid()
-		.blastTemp(3700, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.IV], (20*120))
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION, 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES,
-			GTMaterialFlags.GENERATE_FOIL,
-			GTMaterialFlags.GENERATE_FINE_WIRE
-		)
-
-
-    // Material at HV used for Zirconium at IV
-
-	event.create('tfg:boron_carbide')
-		.ingot()
-		.iconSet('dull')
-		.color(0x42705D)
-		.components('4x boron', '1x carbon')
-		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
-		.flags(GTMaterialFlags.GENERATE_PLATE)
-
-	// #endregion
-
-	// #region Material for Coils
-		.flags(
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.GENERATE_RING,
-			GTMaterialFlags.GENERATE_LONG_ROD)
-
-	// Material for MV
-
-	event.create('tfg:rene_41')
-		.ingot()
-		.fluid()
-		.iconSet(GTMaterialIconSet.SHINY)
-		.color(0x6A6D73)
-		.secondaryColor(0x5A5148)
-		.components('5x nickel', '3x chromium', '2x cobalt', '1x molybdenum', '1x aluminium', '1x boron', '1x carbon')
-		.blastTemp(1780, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*75))
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_FOIL,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.GENERATE_RING,
-			GTMaterialFlags.GENERATE_LONG_ROD)
-
-	// #endregion
-
-	// Material for HV
-
-	event.create('tfg:mo_50_re')
-		.ingot()
-		.fluid()
-		.color(0x5a8c78)
-		.secondaryColor(0x94eb9f)
-		.components('1x molybdenum', '1x rhenium')
-		.iconSet(GTMaterialIconSet.getByName('chonky'))
-		.blastTemp(1231, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*95))
-		.flags( 
-			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD,
-			GTMaterialFlags.GENERATE_BOLT_SCREW,
-			GTMaterialFlags.GENERATE_FRAME)
-
-	event.create('tfg:diamond_tipped_mo_50_re')
-       	.ingot()
-       	.components('1x tfg:mo_50_re', '1x carbon')
-        .color(0x5eab9b)
-        .secondaryColor(0x83decc)
-        .iconSet('chonky')
-        .flags(
-   	        GTMaterialFlags.GENERATE_PLATE,
-            GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:aluminium_sulfate')
-		.dust()
-		.color(0xfaf9c3)
-		.secondaryColor(0xfaf2f9)
-		.iconSet(GTMaterialIconSet.FINE)
-		.components('2x aluminium', '3x sulfate')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:aluminium_hydroxide')
-		.dust()
-		.color(0xd3f3f5)
-		.secondaryColor(0xedf9fa)
-		.iconSet(GTMaterialIconSet.FINE)
-		.components('1x aluminium', '3x oxygen', '3x hydrogen')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:sodium_sulfate')
-		.dust()
-		.color(0xfafaf7)
-		.secondaryColor(0xf7f7f2)
-		.iconSet(GTMaterialIconSet.BRIGHT)
-		.components('2x sodium', '1x sulfur', '4x oxygen')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create('tfg:alumina')
-		.dust()
-		.color(0xf7f7f2)
-		.secondaryColor(0xe8eafa)
-		.iconSet(GTMaterialIconSet.OPAL)
-		.components('2x aluminium', '3x oxygen')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.GENERATE_PLATE)
-
-	// #region Solders
-	event.create('tfg:woods_metal')
-		.dust()
-		.liquid(GTFluidBuilder().temperature(343).customStill())
-		.ingot()
-		.color(0x65737C)
-		.components('4x bismuth', '2x lead', '1x tin', '1x cadmium')
-		.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-		.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.POISON)
-
-	event.create('tfg:bi_pb_sn_cd_in_tl')
-	 	.dust()
-	 	.liquid(GTFluidBuilder().temperature(314).customStill())
-	 	.ingot()
-	 	.color(0x745252)
-	 	.components('8x bismuth', '4x lead', '2x tin', '3x indium', '2x cadmium', '1x thallium')
-	 	.flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-	 	.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
-
-	event.create('tfg:lorandite')
-	 	.dust()
-	 	.ore()
-	 	.color(0xC97523)
-		.secondaryColor(0xcf151b)
-	 	.components('1x thallium', '1x arsenic', '2x sulfur')
-		.addOreByproducts('pyrite', 'sulfur', 'stibnite', 'arsenic_trioxide')
-		.washedIn(GTMaterials.SodiumPersulfate)
-	 	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, TFGMaterialFlags.GENERATE_DUSTY_ORES)
-	
-	event.create('tfg:thallium_sulfate')
-	 	.dust()
-	 	.color(0x6691AD)
-	 	.components('2x thallium', '1x sulfur', '4x oxygen')
-	 	.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-	 	.hazard(HazardProperty.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CHEMICAL_BURNS)
-
-	event.create('tfg:zinc_sulfate')
-	 	.dust()
-	 	.color(0x92B39F)
-	 	.components('1x zinc', '1x sulfur', '4x oxygen')
-	 	.flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-	
-	//#endregion
 }

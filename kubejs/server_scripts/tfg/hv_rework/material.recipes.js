@@ -209,4 +209,6 @@ function registerTFGHVMaterialRecipes(event) {
 		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 100))
 		.duration(20 * 9.15)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// #endregion
 }
