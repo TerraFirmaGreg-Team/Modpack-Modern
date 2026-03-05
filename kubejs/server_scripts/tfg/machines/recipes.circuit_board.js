@@ -103,45 +103,46 @@ function registerTFGCircuitBoardsRecipes(event) {
 	// Printed Circuit boards
 
 	const FLUID_REPLACEMENTS = {
-		// Best T4 - EV
-		"advanced_circuit_board_iron3": {
-			input: "gtceu:iron_iii_chloride",
-			replacement: "tfg:redstone_tri_p_toluenesulfonate"
-		},
+		
 		// Minimal T4 - EV
 		"advanced_circuit_board_persulfate": {
 			input: "gtceu:sodium_persulfate",
 			replacement: "gtceu:iron_iii_chloride"
 		},
-		// Best T5 - IV
-		"extreme_circuit_board_iron3": {
+		// Best T4 - EV
+		"advanced_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: undefined
+			replacement: "tfg:redstone_tri_p_toluenesulfonate"
 		},
 		// Minimal T5 - IV
 		"extreme_circuit_board_persulfate": {
 			input: "gtceu:sodium_persulfate",
 			replacement: "tfg:redstone_tri_p_toluenesulfonate"
 		},
-		// Best T6 - LuV
-		"elite_circuit_board_iron3": {
+		// Best T5 - IV
+		"extreme_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: undefined // New when Venus is Out
+			replacement: undefined
 		},
 		// Minimal T6 - LuV
 		"elite_circuit_board_persulfate": {
 			input: "gtceu:sodium_persulfate",
 			replacement: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
 		},
-		// Best T7 - ZPM
-		"wetware_circuit_board_iron3": {
+		// Best T6 - LuV
+		"elite_circuit_board_iron3": {
 			input: "gtceu:iron_iii_chloride",
-			replacement: undefined // New when ZPM Planet is Out
+			replacement: undefined // New when Venus is Out
 		},
 		// Minimal T7 - ZPM
 		"wetware_circuit_board_persulfate": {
 			input: "gtceu:sodium_persulfate",
 			replacement: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
+		},
+		// Best T7 - ZPM
+		"wetware_circuit_board_iron3": {
+			input: "gtceu:iron_iii_chloride",
+			replacement: undefined // New when ZPM Planet is Out
 		},
 	}
 
