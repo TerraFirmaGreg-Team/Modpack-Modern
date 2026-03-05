@@ -17,7 +17,7 @@ function registerTFGMoSiBRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:dirty_mo_si_b_dust')
 		.itemInputs(Item.of('gtceu:silicon_dust', 1), Item.of('gtceu:molybdenum_dust', 1), Item.of('gtceu:boron_dust', 1))
-        .inputFluids(Fluid.of('tfg:argon_enriched_atmosphere', 300))
+        .inputFluids(Fluid.of('tfg:argon_enriched_atmosphere', 6000))
 		.itemOutputs(Item.of('tfg:dirty_mo_si_b_dust', 3))
 		.outputFluids(Fluid.of('tfg:hydroxide_decomposition_off_gas', 300))
 		.duration(12 * 20)
@@ -68,7 +68,7 @@ function registerTFGMoSiBRecipes(event) {
 	event.recipes.gtceu.vacuum_freezer('tfg:dirty_mo_si_b_dust')
 		.itemInputs(Item.of('tfg:hot_homogenized_mo_si_b_ingot', 1))
 		.itemOutputs(Item.of('tfg:homogenized_mo_si_b_ingot', 1))
-		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 50))
+		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 5000))
 		.duration(18 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 
@@ -97,13 +97,13 @@ function registerTFGMoSiBRecipes(event) {
 		.itemInputs(Item.of('tfg:hot_mo_si_b_ingot', 1))
         .inputFluids(Fluid.of('gtceu:liquid_helium', 100))
 		.itemOutputs(Item.of('tfg:mo_si_b_ingot', 1))
-		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 50))
+		.outputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 5000))
 		.duration(18 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:argon_enriched_atmosphere')
-        .inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 100), Fluid.of('gtceu:argon', 100))
-		.outputFluids(Fluid.of('tfg:argon_enriched_atmosphere', 100))
+        .inputFluids(Fluid.of('tfg:inert_furnace_atmosphere', 10000), Fluid.of('gtceu:argon', 1000))
+		.outputFluids(Fluid.of('tfg:argon_enriched_atmosphere', 2000))
 		.duration(60 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 
