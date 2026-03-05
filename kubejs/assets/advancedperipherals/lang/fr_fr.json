@@ -73,7 +73,7 @@
   "pocket.advancedperipherals.colony_pocket": "Colony",
   "pocket.advancedperipherals.environment_pocket": "Environnement",
   "pocket.advancedperipherals.geoscanner_pocket": "Geoscanning",
-  "pocket.advancedperipherals.player_pocket": "joueur",
+  "pocket.advancedperipherals.player_pocket": "Détecteur de joueurs",
   "text.advancedperipherals.added_player": "Vous avez été ajouter à la carte mémoire",
   "text.advancedperipherals.automata_core_feed_by_player": "Vous essayez de nourrir l'entité de l'âme, mais votre propre corps refuse de le faire. Peut-être que quelque chose de plus mécanique peut le faire ?",
   "text.advancedperipherals.removed_player": "Carte mémoire effacée",
@@ -87,6 +87,6 @@
   "turtle.advancedperipherals.overpowered_end_automata": "Automate de l'End surpuissant",
   "turtle.advancedperipherals.overpowered_husbandry_automata": "Automate d'élevage surpuissant",
   "turtle.advancedperipherals.overpowered_weak_automata": "Automate faible surpuissant",
-  "turtle.advancedperipherals.player_turtle": "Player",
+  "turtle.advancedperipherals.player_turtle": "Détecteur de joueurs",
   "turtle.advancedperipherals.weak_automata": "Automate faible"
 }

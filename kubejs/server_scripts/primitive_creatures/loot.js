@@ -208,8 +208,7 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('sns:burlap_sack'),
 			Item.of('sns:seed_pouch'),
 			Item.of('sns:ore_sack'),
-			Item.of('sns:frame_pack'),
-			Item.of('sophisticatedbackpacks:backpack')])
+			Item.of('sns:frame_pack')])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addLoot(Item.of('tfc:goat_horn'))
 	event.addEntityLootModifier('primitive_creatures:nahida')

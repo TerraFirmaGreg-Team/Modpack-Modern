@@ -10,11 +10,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "在进行浇筑之前，可以先对玻璃进行$(thing)染色$()。玻璃的颜色是由所用玻璃原料的类型，以及加工时加入的添加剂粉末决定的。$(br2)每种类型的$(thing)玻璃原料$()都拥有自己的自然颜色，且只能染成某些特定的颜色。$(thing)二氧化硅$()和$(thing)赤铁矿$()玻璃可以被染成许多颜色，而$(thing)橄榄岩$()和$(thing)火山岩$()玻璃则只能被染成较少的几种颜色。"
+      "text": "在进行浇筑之前，可以先对玻璃进行$(thing)染色$()。玻璃的颜色是由所用玻璃原料的类型，以及加工时加入的添加剂粉末决定的。$(br2)每种类型的$(thing)玻璃原料$()都拥有自己的自然颜色，且只能染成某些特定的颜色。$(thing)二氧化硅$()玻璃原料可以被染成许多颜色，而$(thing)橄榄岩$()和$(thing)火山岩$()玻璃原料则只能被染成较少的几种颜色。"
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)玻璃板$()是用$(thing)台式浇筑$()法制成的。将最多16块$(thing)镀黄铜块$()放置在统一平面以形成一块浇筑平台后：$(br) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、$()对准浇筑平台$(item)$(k:key.use)$()点击$(thing)吹风管$()；$(br) 4、手持$(l:mechanics/glassworking#paddle)玻璃压板$()$(item)$(k:key.use)$()点击平台上的玻璃原料以将玻璃平铺在整个平台表面。",
+      "text": "$(thing)玻璃板$()是用$(thing)台式浇筑$()法制成的。将最多16个$(thing)高岭土方块$()或$(thing)镀黄铜块$()放置在统一平面以形成一块浇筑平台后：$(br2) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、$()对准浇筑平台$(item)$(k:key.use)$()点击$(thing)吹风管$()；$(br) 4、手持$(l:mechanics/glassworking#paddle)玻璃压板$()$(item)$(k:key.use)$()点击平台上的玻璃原料以将玻璃平铺在整个平台表面。",
       "title": "台式浇筑"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)玻璃块$()则需要用$(thing)盆式浇筑$()法制作。用5块$(thing)镀黄铜块$()将一块空气围起来后：$(br) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、对准盆内部$(item)$(k:key.use)$()点击$(thing)吹风管$()。",
+      "text": "$(thing)玻璃块$()则需要用$(thing)盆式浇筑$()法制作。用5个$(thing)高岭土方块$()或$(thing)镀黄铜块$()将一块空气围起来后：$(br2) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、对准盆内部$(item)$(k:key.use)$()点击$(thing)吹风管$()。",
       "title": "盆式浇筑"
     },
     {
@@ -73,7 +73,7 @@
     {
       "type": "patchouli:text",
       "anchor": "coloring",
-      "text": "根据所选$(l:mechanics/glassworking)玻璃原料$()性质，玻璃会拥有一种自然的颜色。要将玻璃染成其他颜色，需要准备一只$(l:mechanics/bowls)碗$()。$(br2)将$(l:mechanics/bowls)碗$()放在地上，加入所需的$(thing)粉末$()，随后用装在$(thing)吹风管$()上的玻璃原料蘸取一些粉末。",
+      "text": "根据所选$(l:mechanics/glassworking)玻璃原料$()性质，玻璃会拥有一种自然的颜色。要将玻璃染成其他颜色，需要准备一只$(l:mechanics/bowls)碗$()。$(br2)将$(l:mechanics/bowls)碗$()放在地上，$(item)$(k:key.use)$()加入所需的$(thing)粉末$()，随后用装在$(thing)吹风管$()上的玻璃原料蘸取一些粉末。",
       "title": "玻璃染色"
     },
     {

@@ -510,7 +510,34 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
-/*
+    event.addAdvanced(['tfg:vintage_beer_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" III (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_cider_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_rum_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" III (04:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_mead_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_sake_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_vodka_bucket'], (item, advanced, text) => {
+		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" III (04:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" III (04:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_corn_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
+    })
+    event.addAdvanced(['tfg:vintage_rye_whiskey_bucket'], (item, advanced, text) => {
+    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
+    })
+
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
 	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
@@ -525,5 +552,4 @@ const registerTooltips = (event) => {
 			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 		}
 	})
-*/
 }

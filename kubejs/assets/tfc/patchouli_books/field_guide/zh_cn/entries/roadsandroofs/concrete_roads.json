@@ -1,15 +1,15 @@
 {
-  "name": "混凝土道路",
+  "name": "混凝土路",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "混凝土道路是可建造的速度最快的道路类型，正确建造时可提供30%移动速度加成。但施工时需确保混凝土在凝固前不被踩踏或开裂，否则将失去速度增益。"
+      "text": "混凝土路是可建造的速度最快的道路类型，正确建造时可提供30%移动速度加成。但施工时需确保混凝土在凝固前不被踩踏或开裂，否则将失去速度增益。"
     },
     {
       "type": "patchouli:image",
-      "title": "混凝土道路",
+      "title": "混凝土路",
       "images": [
       "rnr:textures/gui/book/concrete_road.png"
       ],
@@ -31,11 +31,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "一旦获得$(thing)湿混凝土$()，即可用桶舀取并倾倒在基层方块上，它会自动向相邻方块蔓延。混凝土需一天时间硬化，在此期间需防止生物踩踏未凝固的混凝土，否则会形成不平整表面导致速度加成失效。可用鹤嘴锄抹平脚印痕迹。"
+      "text": "一旦获得$(thing)湿混凝土$()，即可用桶舀取并倾倒在$(thing)基层方块$()上，它会自动向相邻方块蔓延。混凝土需一天时间硬化，在此期间需防止生物踩踏未凝固的混凝土，否则会形成不平整表面导致速度加成失效。可用$(thing)鹤嘴锄$()抹平脚印痕迹。"
     },
     {
       "type": "patchouli:image",
-      "title": "浇筑混凝土道路",
+      "title": "浇筑混凝土路",
       "images": [
       "rnr:textures/gui/book/wet_concrete.png"
       ],

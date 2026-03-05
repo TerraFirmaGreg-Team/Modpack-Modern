@@ -68,6 +68,8 @@ const registerCreateRecipes = (event) => {
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'create:polished_rose_quartz' })
 	event.remove({ type: 'minecraft:stonecutting', input: 'minecraft:iron_ingot' })
+	event.remove({ type: "minecraft:stonecutting", output: "create:copycat_step" })
+    event.remove({ type: "minecraft:stonecutting", output: "create:copycat_panel" })
 	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
 	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
 	event.remove({ type: 'create:draining', id: 'create:potions' })
@@ -1302,23 +1304,6 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/copper'
 	}).id('tfg:create/shaped/copper_scaffolding')
 
-	// Цинковая ступень
-	event.shaped('4x create:copycat_step', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:plates/zinc',
-		B: '#forge:tools/files'
-	}).id('tfg:create/shapeless/copycat_step')
-
-	// Цинковая панель
-	event.shaped('4x create:copycat_panel', [
-		'A B',
-	], {
-		A: '#forge:plates/zinc',
-		B: '#forge:tools/files'
-	}).id('tfg:create/shapeless/copycat_panel')
-
 	// Деталь рельса
 	event.shaped('3x create:metal_girder', [
 		'AAA',
@@ -2404,6 +2389,11 @@ const registerCreateRecipes = (event) => {
 	//Bars
 
 	event.stonecutting('4x create:andesite_bars', '#forge:ingots/tin_alloy')
+
+	//Copycats
+	
+	event.stonecutting("16x create:copycat_step", "#forge:ingots/zinc")
+    event.stonecutting("16x create:copycat_panel", "#forge:ingots/zinc")
 
 	const create_metals = [
 		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
