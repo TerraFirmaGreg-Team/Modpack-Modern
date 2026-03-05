@@ -82,6 +82,49 @@ function registerTFGMVMaterialRecipes(event) {
 		.duration(20*14)
 		.EUt(GTValues.VA[GTValues.MV])
 
+	//#region Diamond Tipped Tools custom recipes
+
+	    event.recipes.gtceu.high_temperature_precision_fabricator('tfg:diamond_tipped_mo_50_re')
+    		.itemInputs('1x tfg:mo_50_re_ingot', 'gtceu:diamond_dust')
+    		.perTick(true)
+            .inputFluids(Fluid.of('gtceu:methane', 2.5), Fluid.of('gtceu:hydrogen', 10))
+            .perTick(false)
+    		.itemOutputs('tfg:diamond_tipped_mo_50_re_ingot')
+    		.circuit(1)
+    		.duration(5 * 20)
+    		.addData("ebf_temp", 1784)
+    		.EUt(GTValues.VA[GTValues.MV])
+
+		const diamondTippedToolHeads = [
+			{id: "wrench_tip", amount:2},
+			{id: "knife_head", amount:1},
+			{id: "screwdriver_tip", amount:1},
+			{id: "buzz_saw_blade", amount:2},
+			{id: "hoe_head", amount:1},
+			{id: "scythe_head", amount:1},
+			{id: "hammer_head", amount:1},
+			{id: "wire_cutter_head", amount:2},
+			{id: "file_head", amount:1},
+			{id: "sword_head", amount:2},
+			{id: "butchery_knife_head", amount:1}
+		]
+
+		diamondTippedToolHeads.forEach((element, index) => {
+			event.recipes.gtceu.laser_engraver(`tfg:diamond_tipped_mo_50_re_${element.id}_laser_engraving`)
+				.itemInputs(`${element.amount}x #forge:ingots/diamond_tipped_mo_50_re`)
+				.itemOutputs(`tfg:diamond_tipped_mo_50_re_${element.id}`)
+				.notConsumable('gtceu:glass_lens')
+				.duration(15 * 20 * element.amount)
+				.circuit(index)
+				.EUt(GTValues.VA[GTValues.MV])
+		});
+
+		event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_diamond_tipped_mo_50_re_to_nugget'})
+
+
+
+	//#endregion
+
 	//#region Modify Electronic Component to require Silicon Rubber
 
 	event.replaceInput({ id: 'gtceu:assembler/transistor' }, Fluid.of('gtceu:polyethylene'), Fluid.of('gtceu:silicone_rubber'))

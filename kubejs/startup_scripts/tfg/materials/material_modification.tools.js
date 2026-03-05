@@ -260,6 +260,8 @@ function registerTFGToolMaterialModification(event) {
 
 	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
 	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 8, 2048, 3, MVTools).build());
+	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD)
+	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(11, 6, 1024, 3, MVTools).build());
 
 	// HV
 
