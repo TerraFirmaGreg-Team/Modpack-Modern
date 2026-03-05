@@ -88,6 +88,15 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.rod.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
 	//TagPrefix.turbineBlade.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
 	TagPrefix.ingot.setIgnored(GTMaterials.get('tfg:silicon_carbide_silicon_carbide'))
+
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.plateDouble.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.dust.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.bolt.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	TagPrefix.screw.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
 }
 
 function excludeAllGemsButNormal(material) {

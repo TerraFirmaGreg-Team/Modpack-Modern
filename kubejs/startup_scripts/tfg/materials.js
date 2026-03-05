@@ -165,6 +165,17 @@ const registerTFGMaterials = (event) => {
 			GTMaterialFlags.GENERATE_BOLT_SCREW,
 			GTMaterialFlags.GENERATE_FRAME)
 
+	event.create('tfg:diamond_tipped_mo_50_re')
+       	.ingot()
+       	.components('1x tfg:mo_50_re', '1x carbon')
+        .color(0x5eab9b)
+        .secondaryColor(0x83decc)
+        .iconSet('chonky')
+        .flags(
+   	        GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 	event.create('tfg:aluminium_sulfate')
 		.dust()
 		.color(0xfaf9c3)
