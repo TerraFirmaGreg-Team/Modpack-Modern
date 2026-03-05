@@ -5,6 +5,8 @@
 // Only use it if there's truly nowhere else your material can go and there's only like one or two materials.
 // Otherwise, make a dedicated file for it.
 function registerTFGMiscAlloyMaterials(event) {
+	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
+
 	// EV New Material
 
 	event.create('tfg:tungsten_bismuth_oxide_composite')
