@@ -37,4 +37,6 @@ const registerStarcatcherBiomeTags = (event) => {
 	if (!Platform.isLoaded("starcatcher")) return;
 
 	event.add('starcatcher:is_ocean', 'tfc:salt_marsh')
+	event.add('starcatcher:is_ocean', 'tfc:shore')
+	event.add('starcatcher:is_ocean', 'tfc:tidal_flats')
 };
