@@ -172,20 +172,73 @@ EmiPlusPlusEvents.registerGroups(event => {
 
     // Blocks (Wires/Cables)
 
-    // GROUP BY TIER
-    // single_wires
-    // double_wires
-    // quadruple_wires
-    // octal_wires
-    // hex_wires
-    // single_cables
-    // double_cables
-    // quadruple_cables
-    // octal_cables
-    // hex_cables
+    const WIRE_TYPES = [
+        '#forge:single_wires/',
+        '#forge:double_wires/',
+        '#forge:quadruple_wires/',
+        '#forge:octal_wires/',
+        '#forge:hex_wires/',
+        '#forge:single_cables/',
+        '#forge:double_cables/',
+        '#forge:quadruple_cables/',
+        '#forge:octal_cables/',
+        '#forge:hex_cables/'
+    ]
+
+    function makeWireArray(materials) {
+        const output = []
+
+        WIRE_TYPES.forEach(type => {
+            materials.forEach(mat => {
+                output.push(type + mat)
+            })
+        })
+
+        return output
+    }
+ 
+    event.register('tfg:ulv_wires', makeWireArray([
+        'lead', 'red_alloy'
+    ]))
+
+    event.register('tfg:lv_wires', makeWireArray([
+        'manganese_phosphide', 'nickel', 'cobalt', 'tin'
+    ]))
+
+    event.register('tfg:mv_wires', makeWireArray([
+        'copper', 'magnesium_diboride', 'cupronickel', 'annealed_copper', 'iron'
+    ]))
+
+    event.register('tfg:hv_wires', makeWireArray([
+        'blue_alloy', 'kanthal', 'gold', 'mercury_barium_calcium_cuprate', 'electrum', 'silver'
+    ]))
+
+    event.register('tfg:ev_wires', makeWireArray([
+        'black_steel', 'nichrome', 'aluminium', 'rtm_alloy', 'steel', 'uranium_triplatinum'
+    ]))
+
+    event.register('tfg:iv_wires', makeWireArray([
+        'tungsten', 'tungsten_steel', 'samarium_iron_arsenic_oxide', 'platinum', 'graphene'
+    ]))
+
+    event.register('tfg:luv_wires', makeWireArray([
+        'hssg', 'osmium', 'niobium_titanium', 'niobium_nitride', 'indium_tin_barium_titanium_cuprate'
+    ]))
+
+    event.register('tfg:zpm_wires', makeWireArray([
+        'naquadah', 'vanadium_gallium', 'uranium_rhodium_dinaquadide', 'trinium'
+    ]))
+
+    event.register('tfg:uv_wires', makeWireArray([
+        'naquadah_alloy', 'yttrium_barium_cuprate', 'enriched_naquadah_trinium_europium_duranide', 'tritanium'
+    ]))
+
+    event.register('tfg:uhv_wires', makeWireArray([
+        'ruthenium_trinium_americium_neutronate', 'europium'
+    ]))
 
     // Blocks (Pipes)
-    event.register('tfg:pipes', [
+    event.register('tfg:fluid_pipes', [
         '#forge:tiny_fluid_pipes', 
         '#forge:small_fluid_pipes', 
         '#forge:normal_fluid_pipes',
@@ -193,6 +246,20 @@ EmiPlusPlusEvents.registerGroups(event => {
         '#forge:huge_fluid_pipes',
         '#forge:quadruple_fluid_pipes',
         '#forge:nonuple_fluid_pipes'
+    ])
+
+    event.register('tfg:item_pipes', [
+        '#forge:small_item_pipes',
+        '#forge:normal_item_pipes',
+        '#forge:large_item_pipes',
+        '#forge:huge_item_pipes'
+    ])
+
+    event.register('tfg:restrictive_pipes', [
+        '#forge:small_restrictive_pipes',
+        '#forge:normal_restrictive_pipes',
+        '#forge:large_restrictive_pipes',
+        '#forge:huge_restrictive_pipes'
     ])
 
     // Blocks (TFC)
