@@ -144,6 +144,7 @@ ServerEvents.tags('worldgen/biome', event => {
 })
 
 ServerEvents.tags('entity_type', event => {
+	registerStarcatcherEntityTypeTags(event)
 	registerTFGEntityTypeTags(event)
 	registerWABEntityTypeTags(event)
 })

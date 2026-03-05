@@ -1,6 +1,6 @@
 {
   "bait_restrictions": {
-    "consumes_bait": true,
+    "consumes_bait": false,
     "correct_bait_chance_added": 0,
     "correct_baits": []
   },
@@ -71,7 +71,8 @@
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "minecraft:water",
+      "tfc:salt_water"
     ],
     "seasons": [
       "all"

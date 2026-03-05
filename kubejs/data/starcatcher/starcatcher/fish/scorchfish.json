@@ -6,7 +6,7 @@
   },
   "base_chance": 5,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:scorchfish",
@@ -65,14 +65,15 @@
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [
-      "starcatcher:is_warm_lake"
+      "tfc:is_volcanic"
     ],
     "dimensions": [
       "minecraft:overworld"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "minecraft:water",
+      "tfc:salt_water"
     ],
     "seasons": [
       "spring",

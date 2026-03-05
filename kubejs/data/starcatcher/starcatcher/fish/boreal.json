@@ -6,7 +6,7 @@
       "starcatcher:legendary_bait"
     ]
   },
-  "base_chance": 3,
+  "base_chance": 0,
   "catch_info": {
     "always_spawn_entity": false,
     "entity": "starcatcher:fish",
@@ -43,7 +43,7 @@
       }
     ]
   },
-  "has_guide_entry": true,
+  "has_guide_entry": false,
   "rarity": "legendary",
   "size_and_weight": {
     "average_size_cm": 30.0,

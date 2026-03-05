@@ -9,13 +9,24 @@ function registerStarcatcherItems(event) {
 		const filetTypes = new Set(Object.values(global.STARCATCHER_FISH).map(f => f.filet).filter(Boolean));
 		filetTypes.forEach(filet => {
 
-			event.create(`tfg:food/raw_${filet}_fish_filet`)
-				.translationKey(`item.tfg.food.raw_${filet}_fish_filet`)
-				.food(food => food.hunger(2).saturation(1));
+			event.create(`tfg:food/raw_${filet}_cut`)
+				.translationKey(`item.tfg.food.raw_${filet}_cut`)
+				.food(food => food.hunger(2).saturation(1))
+				.tag('tfc:foods')
+				.tag('tfc:foods/meats')
+				.tag('tfc:foods/cooked_meats')
+				.tag('firmalife:foods/cooked_fish')
+				.tag('minecraft:fishes')
+				.tag('starcatcher:baits');
 
-			event.create(`tfg:food/cooked_${filet}_fish_filet`)
-				.translationKey(`item.tfg.food.cooked_${filet}_fish_filet`)
-				.food(food => food.hunger(4).saturation(2));
+			event.create(`tfg:food/cooked_${filet}_cut`)
+				.translationKey(`item.tfg.food.cooked_${filet}_cut`)
+				.food(food => food.hunger(4).saturation(2))
+				.tag('tfc:foods')
+				.tag('tfc:foods/meats')
+				.tag('tfc:foods/raw_meats')
+				.tag('firmalife:foods/raw_fish')
+				.tag('minecraft:fishes');
 
 		});
 
@@ -24,8 +35,13 @@ function registerStarcatcherItems(event) {
 			if ( global.STARCATCHER_FISH[fish]?.dimension !== null && global.STARCATCHER_FISH[fish]?.dimension !== undefined ) {
 
 				event.create(`tfg:food/cooked_fish/cooked_${fish}`)
-					.translationKey(`item.tfg.food.cooked_${fish}`)
-					.food(food => food.hunger(4).saturation(2));
+					.translationKey(`item.tfg.food.cooked_fish.cooked_${fish}`)
+					.food(food => food.hunger(4).saturation(2))
+					.tag('tfc:foods')
+					.tag('tfc:foods/meats')
+					.tag('tfc:foods/cooked_meats')
+					.tag('firmalife:foods/cooked_fish')
+					.tag('minecraft:fishes');
 			};
 		});
 };

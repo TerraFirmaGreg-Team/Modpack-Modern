@@ -1,7 +1,7 @@
 {
   "bait_restrictions": {
     "consumes_bait": true,
-    "correct_bait_chance_added": 100,
+    "correct_bait_chance_added": 0,
     "correct_baits": [
       "starcatcher:gunpowder_bait"
     ]

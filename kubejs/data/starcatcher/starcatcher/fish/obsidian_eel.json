@@ -8,7 +8,7 @@
   },
   "base_chance": 8,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:obsidian_eel",
@@ -52,16 +52,16 @@
     "deviation_weight_grams": 13000.0
   },
   "skips_minigame": false,
-  "weather": "rain",
+  "weather": "all",
   "world_restrictions": {
-    "above_y": 50,
+    "above_y": 0,
     "below_y": 2147483647,
     "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [],
     "dimensions": [
-      "minecraft:overworld"
+      "minecraft:the_nether"
     ],
     "dimensions_blacklist": [],
     "fluids": [

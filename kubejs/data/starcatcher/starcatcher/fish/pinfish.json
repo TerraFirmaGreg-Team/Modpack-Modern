@@ -6,7 +6,7 @@
   },
   "base_chance": 8,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:pinfish",
@@ -67,14 +67,14 @@
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [
-      "starcatcher:is_dark_forest"
+      "starcatcher:is_ocean"
     ],
     "dimensions": [
       "minecraft:overworld"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "tfc:salt_water"
     ],
     "seasons": [
       "all"

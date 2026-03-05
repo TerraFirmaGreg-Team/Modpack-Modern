@@ -6,7 +6,7 @@
   },
   "base_chance": 5,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:willish",
@@ -54,18 +54,16 @@
   "world_restrictions": {
     "above_y": -2147483648,
     "below_y": 2147483647,
-    "biomes": [
-      "minecraft:basalt_deltas"
-    ],
+    "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [],
     "dimensions": [
-      "minecraft:the_nether"
+      "ad_astra:mars"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:lava"
+      "tfg:semiheavy_ammoniacal_water"
     ],
     "seasons": [
       "all"

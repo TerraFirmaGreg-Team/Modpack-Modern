@@ -1,14 +1,12 @@
 {
   "bait_restrictions": {
     "consumes_bait": true,
-    "correct_bait_chance_added": 15,
-    "correct_baits": [
-      "starcatcher:dripstone_bait"
-    ]
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
   },
   "base_chance": 5,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:fossilized_angelfish",
@@ -55,15 +53,13 @@
   "weather": "all",
   "world_restrictions": {
     "above_y": 0,
-    "below_y": 50,
-    "biomes": [
-      "minecraft:dripstone_caves"
-    ],
+    "below_y": 100,
+    "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [],
     "dimensions": [
-      "minecraft:overworld"
+      "minecraft:the_nether"
     ],
     "dimensions_blacklist": [],
     "fluids": [

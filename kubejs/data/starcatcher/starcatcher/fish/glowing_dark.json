@@ -1,10 +1,8 @@
 {
   "bait_restrictions": {
     "consumes_bait": true,
-    "correct_bait_chance_added": 15,
-    "correct_baits": [
-      "starcatcher:sculk_bait"
-    ]
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
   },
   "base_chance": 5,
   "catch_info": {
@@ -33,7 +31,7 @@
       }
     ]
   },
-  "has_guide_entry": true,
+  "has_guide_entry": false,
   "rarity": "uncommon",
   "size_and_weight": {
     "average_size_cm": 100.0,

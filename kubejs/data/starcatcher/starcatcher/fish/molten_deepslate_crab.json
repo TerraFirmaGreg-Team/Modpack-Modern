@@ -6,7 +6,7 @@
   },
   "base_chance": 5,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:molten_deepslate_crab",
@@ -113,13 +113,13 @@
   "weather": "all",
   "world_restrictions": {
     "above_y": -2147483648,
-    "below_y": 0,
+    "below_y": 100,
     "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [],
     "dimensions": [
-      "minecraft:overworld"
+      "minecraft:the_nether"
     ],
     "dimensions_blacklist": [],
     "fluids": [

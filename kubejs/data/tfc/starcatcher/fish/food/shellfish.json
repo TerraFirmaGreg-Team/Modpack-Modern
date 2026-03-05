@@ -63,15 +63,14 @@
     "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
-    "biomes_tags": [
-      "starcatcher:is_river"
-    ],
+    "biomes_tags": [],
     "dimensions": [
       "minecraft:overworld"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "minecraft:water",
+      "tfc:salt_water"
     ],
     "seasons": [
       "all"

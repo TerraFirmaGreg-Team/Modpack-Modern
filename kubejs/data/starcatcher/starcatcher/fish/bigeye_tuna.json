@@ -6,7 +6,7 @@
   },
   "base_chance": 8,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:bigeye_tuna",
@@ -42,7 +42,7 @@
     ]
   },
   "has_guide_entry": true,
-  "rarity": "uncommon",
+  "rarity": "rare",
   "size_and_weight": {
     "average_size_cm": 150.0,
     "average_weight_grams": 120000.0,
@@ -58,14 +58,14 @@
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
     "biomes_tags": [
-      "starcatcher:is_deep_ocean"
+      "starcatcher:is_ocean"
     ],
     "dimensions": [
       "minecraft:overworld"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "tfc:salt_water"
     ],
     "seasons": [
       "spring",

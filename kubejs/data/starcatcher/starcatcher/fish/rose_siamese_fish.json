@@ -1,14 +1,12 @@
 {
   "bait_restrictions": {
     "consumes_bait": true,
-    "correct_bait_chance_added": 15,
-    "correct_baits": [
-      "starcatcher:cherry_bait"
-    ]
+    "correct_bait_chance_added": 0,
+    "correct_baits": []
   },
   "base_chance": 8,
   "catch_info": {
-    "always_spawn_entity": false,
+    "always_spawn_entity": true,
     "entity": "starcatcher:fish",
     "fish_bucket": "starcatcher:starcaught_bucket",
     "item": "starcatcher:rose_siamese_fish",
@@ -52,22 +50,20 @@
     "deviation_weight_grams": 500.0
   },
   "skips_minigame": false,
-  "weather": "rain",
+  "weather": "all",
   "world_restrictions": {
     "above_y": 50,
     "below_y": 2147483647,
     "biomes": [],
     "biomes_blacklist": [],
     "biomes_blacklist_tags": [],
-    "biomes_tags": [
-      "starcatcher:is_cherry_grove"
-    ],
+    "biomes_tags": [],
     "dimensions": [
-      "minecraft:overworld"
+      "ad_astra:mars"
     ],
     "dimensions_blacklist": [],
     "fluids": [
-      "minecraft:water"
+      "tfg:semiheavy_ammoniacal_water"
     ],
     "seasons": [
       "spring",

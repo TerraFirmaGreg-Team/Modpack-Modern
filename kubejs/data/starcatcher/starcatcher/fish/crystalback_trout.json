@@ -4,7 +4,7 @@
     "correct_bait_chance_added": 0,
     "correct_baits": []
   },
-  "base_chance": 5,
+  "base_chance": 0,
   "catch_info": {
     "always_spawn_entity": false,
     "entity": "starcatcher:fish",
@@ -41,7 +41,7 @@
       }
     ]
   },
-  "has_guide_entry": true,
+  "has_guide_entry": false,
   "rarity": "common",
   "size_and_weight": {
     "average_size_cm": 35.0,
