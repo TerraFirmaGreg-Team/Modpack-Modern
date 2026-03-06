@@ -184,14 +184,14 @@ const registerTFGNuclearMaterials = (event) => {
 	event.create('tfg:dirty_flibe')
 		.liquid(new GTFluidBuilder().temperature(293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('1x flibe', '1x unknown')
+		.components('1x tfg:flibe', '1x unknown')
 		.color(0xdaffd6)
 		.secondaryColor(0xcd8dbc)
 
 	event.create('tfg:hot_flibe')
 		.liquid(new GTFluidBuilder().customStill().temperature(3293))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('1x flibe')
+		.components('1x tfg:flibe')
 
 	// Material Fission Earth
 
