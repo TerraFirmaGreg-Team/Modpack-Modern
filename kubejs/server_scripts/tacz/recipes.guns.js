@@ -219,7 +219,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2160))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"applied_armorer:niklas_smg_freedom",HasBulletInBarrel:1b}'))
-		.circuit(7)
+		.circuit(28)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(160)
 		
