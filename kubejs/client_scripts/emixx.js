@@ -131,7 +131,11 @@ const registerSingleGroups = (event) => {
 
         // Items (GTCEU)
         '#gtceu:extruder_molds', 
-        '#gtceu:casting_molds', 
+        '#gtceu:casting_molds',
+
+        // Items (TFC)
+        '#tfc:unfired_molds', 
+        '#tfc:fired_molds',
 
         // Items (Astikor Carts)
         '#tfcastikorcarts:cart_wheel',
@@ -169,7 +173,7 @@ const registerSingleGroups = (event) => {
         '#tfc:anvils',
         '#tfc:ore_deposits',
 
-        // Stones
+        // Stone-related
         '#tfg:stone_brick',
         '#tfc:rock/hardened',
         '#tfc:rock/raw',
@@ -181,7 +185,7 @@ const registerSingleGroups = (event) => {
         '#tfc:rock/cracked_bricks',
         '#tfc:rock/chiseled_bricks',
         '#tfc:rock/bricks', //WAY TOO GENERAL
-        '#tfc:rock/gravel', // forge:gravel
+        '#tfc:rock/gravel',
 
         // Blocks (Firmalife)
         '#firmalife:food_shelves',
@@ -196,24 +200,24 @@ const registerSingleGroups = (event) => {
         '#alekiroofs:roofing',
 
         // RNR
-        '#rnr:cobbled_roads', // CURRENTLY USES REGEX
-        '#rnr:sett_roads', // CURRENTLY USES REGEX
-        '#rnr:flagstone_roads', // CURRENTLY USES REGEX
-        '#rnr:gravel_roads', // CURRENTLY USES REGEX
-        '#rnr:macadam_roads', // CURRENTLY USES REGEX
-        '#rnr:concrete_roads', // CURRENTLY USES REGEX
+        '#rnr:cobbled_roads',
+        '#rnr:sett_roads',
+        '#rnr:flagstone_roads',
+        '#rnr:gravel_roads',
+        '#rnr:macadam_roads',
+        '#rnr:concrete_roads',
         '#rnr:gravel_road_items',
         '#rnr:flagstone_road_items',
-        '#rnr:tamped_road', // CURRENTLY USES REGEX
-        '#rnr:shingles', // CURRENTLY USES REGEX
-        '#rnr:roofs', // CURRENTLY USES REGEX
+        '#rnr:shingles',
+        '#rnr:roof_blocks',
 
-        // Blocks (Macaw's)
-        '#mcw_tfc_aio:bridges', // CURRENTLY USES REGEX
-        '#mcw_tfc_aio:roofs', // CURRENTLY USES REGEX
-        '#mcw_tfc_aio:gutters', // CURRENTLY USES REGEX
-        '#mcw_tfc_aio:awnings', // CURRENTLY USES REGEX
-        '#mcw_tfc_aio:furniture' // CURRENTLY USES REGEX
+        // Macaw's
+        '#mcw_tfc_aio:bridges',
+        '#mcw_tfc_aio:roofs',
+        '#mcw_tfc_aio:gutters',
+        '#mcw_tfc_aio:awnings',
+        '#mcw_tfc_aio:furniture',
+        '#mcw_tfc_aio:stripped_furniture'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {
