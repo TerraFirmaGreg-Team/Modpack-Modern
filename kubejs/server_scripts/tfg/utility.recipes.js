@@ -7,7 +7,7 @@
         eut: GTValues.VA[GTValues.EV]
     })
     
-    // Replace a fluid if needed
+    // Replace a fluid if needed - ALWAYS USE A TAG BECAUSE GREGTECH REGISTERS THEIR RECIPE IN JSON WITH TAG
     global.modifyRecipe(event, "gtceu:assembler/transistor", {
         newId: "tfg:assembler/transistor",
         fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" }
@@ -32,6 +32,16 @@
         itemInputs: { "gtceu:copper_plate": 2 },
         fluidInputs: { "forge:soldering_alloy": 144 }
     })
+
+    // An exemple regarding the Transistor with the itemInputs not existing - It just skips it
+        global.modifyRecipe(event, "gtceu:assembler/transistor", {
+        newId: "tfg:assembler/transistor",
+        duration: 20 * 50,
+        eut: GTValues.VA[GTValues.HV],
+        fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" },
+        itemInputs: { "gtceu:silicon_plate": 2 },
+        fluidInputs: { "gtceu:silicone_rubber": 1000 }
+    })
     */
 
 global.modifyRecipe = function(event, recipeId, options) {
@@ -44,7 +54,8 @@ global.modifyRecipe = function(event, recipeId, options) {
         var recipeJson = JSON.parse(javaRecipe.json.toString())
 
         var machineName = javaRecipe.getId().toString().split(":")[1].split("/")[0]
-        var newId = options.newId || ("tfg:" + recipeId.split("/").slice(1).join("/"))
+        var recipeName = recipeId.split("/").slice(1).join("/")
+        var newId = options.newId || ("tfg:" + machineName + "/" + recipeName)
 
         // Duration and EUt
 
@@ -122,7 +133,7 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         javaRecipe.remove()
 
-        var newRecipe = event.recipes.gtceu[machineName]("tfg:" + newId.split("/").slice(1).join("/"))
+        var newRecipe = event.recipes.gtceu[machineName](newId)
             .duration(recipeJson.duration)
             .EUt(recipeJson.tickInputs.eu[0].content)
 

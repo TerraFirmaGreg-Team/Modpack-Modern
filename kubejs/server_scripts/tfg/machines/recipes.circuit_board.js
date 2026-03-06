@@ -107,60 +107,67 @@ function registerTFGCircuitBoardsRecipes(event) {
 		// Minimal T4 - EV
 		{
 			recipe: "advanced_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "gtceu:iron_iii_chloride"
 		},
 		// Best T4 - EV
 		{
 			recipe: "advanced_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: "tfg:redstone_tri_p_toluenesulfonate"
 		},
 		// Minimal T5 - IV
 		{
 			recipe: "extreme_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate"
 		},
 		// Best T5 - IV
 		{
 			recipe: "extreme_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined
 		},
 		// Minimal T6 - LuV
 		{
 			recipe: "elite_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
 		},
 		// Best T6 - LuV
 		{ 
 			recipe: "elite_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined // New when Venus is Out
 		},
 		// Minimal T7 - ZPM
 		{
 			recipe: "wetware_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
 		},
 		// Best T7 - ZPM
 		{ 
 			recipe: "wetware_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined // New when ZPM Planet is Out
 		},
 	]
 
-	FLUID_REPLACEMENTS.forEach(replacement => {
-		if (replacement.new !== undefined) {
-			event.replaceInput({ id: `gtceu:chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
-			event.replaceInput({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
-		} else {
-			event.remove({ id: `gtceu:chemical_reactor/${replacement.recipe}` })
-			event.remove({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` })
-		}
-	})
+    var REACTOR_PREFIXES = ["gtceu:chemical_reactor", "gtceu:large_chemical_reactor"]
+
+    FLUID_REPLACEMENTS.forEach(function(replacement) {
+        REACTOR_PREFIXES.forEach(function(prefix) {
+            var recipeId = prefix + "/" + replacement.recipe
+            if (replacement.new !== undefined) {
+                var fluidReplacements = {}
+                fluidReplacements[replacement.old] = replacement.new
+                global.modifyRecipe(event, recipeId, {
+                    fluidReplacements: fluidReplacements
+                })
+            } else {
+                event.remove({ id: recipeId })
+            }
+        })
+    })
 }
