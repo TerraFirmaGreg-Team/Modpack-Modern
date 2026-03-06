@@ -174,16 +174,10 @@ const registerSingleGroups = (event) => {
         '#tfc:ore_deposits',
 
         // Stone-related
-        '#tfg:stone_brick',
         '#tfc:rock/hardened',
         '#tfc:rock/raw',
-        '#forge:cobblestone/normal',
-        '#forge:cobblestone/mossy',
+        '#forge:cobblestone',
         '#tfc:rock/smooth',
-        '#tfc:rock/mossy_bricks',
-        '#tfc:rock/cracked_bricks',
-        '#tfc:rock/chiseled_bricks',
-        '#tfc:rock/bricks', //WAY TOO GENERAL
         '#tfc:rock/gravel',
 
         // Blocks (Firmalife)
@@ -233,6 +227,22 @@ const registerMultiGroups = (event) => {
             '#tfc:sedimentary_rock',
             '#tfc:igneous_extrusive_rock',
             '#tfc:metamorphic_rock'
+        ]},
+        { group_name: 'bricks', tags: [
+            '#tfg:stone_brick',
+            '#tfc:wet_mud_bricks',
+            '#tfc:dry_mud_bricks',
+            'tfc:alabaster_brick',
+            'tfc:ceramic/unfired_brick',
+            'tfc:ceramic/unfired_fire_brick',
+            'tfc:ceramic/fire_brick',
+            'gtceu:coke_oven_brick'
+        ]},
+        { group_name: 'brick_blocks', tags: [
+            '#tfc:rock/bricks',
+            '#tfc:rock/mossy_bricks',
+            '#tfc:rock/cracked_bricks',
+            '#tfc:rock/chiseled_bricks'
         ]},
         { group_name: 'aqueducts', tags: [
             '#tfc:rock/aqueducts',
