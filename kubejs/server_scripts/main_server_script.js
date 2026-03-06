@@ -54,6 +54,7 @@ ServerEvents.tags('item', event => {
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
 	registerTFCItemTags(event)
+	registerTFCScrapingKnivesItemTags(event)
 	registerTFCTextileItemTags(event)
 	registerTFGItemTags(event)
 	registerTFGNuclearItemTags(event)

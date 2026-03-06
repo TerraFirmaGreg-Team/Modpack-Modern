@@ -86,8 +86,8 @@ const registerSingleGroups = (event) => {
         '#forge:chisel_heads',
         '#forge:propick_heads',
         '#forge:mattock_heads',
-        '#tfchotornot:tong_parts', // DOES NOT HAVE AN ITEM TAG
-        '#tfcscraping:scraping_knife_head', // DOES NOT HAVE AN ITEM TAG
+        '#tfchotornot:tong_parts',
+        '#tfcscraping:scraping_knife_blades',
 
         // Tools (Minecraft)
         '#tfc:pickaxes',
@@ -177,7 +177,6 @@ const registerSingleGroups = (event) => {
         '#tfg:stone_brick',
         '#tfc:rock/hardened',
         '#tfc:rock/raw',
-        // '#tfc:rock/spike' NEEDS TO BE HIDDEN
         '#forge:cobblestone/normal',
         '#forge:cobblestone/mossy',
         '#tfc:rock/smooth',
