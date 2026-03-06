@@ -5341,14 +5341,37 @@
 	"quest.high_voltage.r_alumino_rotor.subtitle": "Rocket Rotor",
 	"quest.high_voltage.r_alumino_rotor.desc": "This &eRotor&r offers excellent &cPower&r and &aDurability&r, but falls slightly short in &bEfficiency&r. It is up to you to decide whether you prefer this model compared to the &dUltimet&r; it may also be more difficult to produce, so the choice is yours to make.",
 
-	"quest.high_voltage.ultimet.title": "Ultimet",
-	"quest.high_voltage.ultimet.subtitle": "Ultimet was the ultimate best",
-	"quest.high_voltage.ultimet.desc": "The &dUltimet&r is a high-performance material, providing excellent &eSpeed&r for your &bDrill&r or &bWrench&r and making a &eTurbine Rotor&r with very good &bEfficiency&r, especially if you are not producing large amounts of fuel or want to build additional &eSteam Turbines&r.\n\nThis alloy is also mandatory for progressing toward your new &aCircuits&r, so even if you do not intend to craft the tools, you will still need to produce it. Keep in mind that &dUltimet&r ingots can be cooled using a &dChemical Bath&r.",
-	"quest.high_voltage.ultimet.task": "Ultimate tools set",
-	"item.tfg.mo_activated_sic_substrate": "Molybdenum-Activated Silicon Carbide Substrate",
+  "quest.high_voltage.ultimet.title": "Ultimet",
+  "quest.high_voltage.ultimet.subtitle": "Ultimet was the ultimate best",
+  "quest.high_voltage.ultimet.desc": "The &dUltimet&r is a high-performance material, providing excellent &eSpeed&r for your &bDrill&r or &bWrench&r and making a &eTurbine Rotor&r with very good &bEfficiency&r, especially if you are not producing large amounts of fuel or want to build additional &eSteam Turbines&r.\n\nThis alloy is also mandatory for progressing toward your new &aCircuits&r, so even if you do not intend to craft the tools, you will still need to produce it. Keep in mind that &dUltimet&r ingots can be cooled using a &dChemical Bath&r.",
+  "quest.high_voltage.ultimet.task": "Ultimate tools set",
+
+  "item.tfg.mo_activated_sic_substrate": "Molybdenum-Activated Silicon Carbide Substrate",
 	"item.tfg.copper_bonded_al2o3_pcb": "Copper-Bonded Alumina Printed Circuit Board",
 	"item.tfg.chromium_bonded_beo_pcb": "Chromium-Bonded Beryllia Printed Circuit Board",
 	"item.tfg.optical_borosilicate_blank": "Optical Borosilicate Blank",
 	"item.tfg.worked_optical_borosilicate_blank": "Worked Optical Borosilicate Blank",
-	"fluid.tfg.mafic_igneous": "Molten Mafic Igneous Rock"
+	"fluid.tfg.mafic_igneous": "Molten Mafic Igneous Rock",
+
+  "quests.extreme_voltage.ostrum_tools.title": "Ostrum Iodide Tools",
+  "quests.extreme_voltage.ostrum_tools.task": "All the Ostrum Iodide Tools",
+  "quests.extreme_voltage.ostrum_tools.subtitle": "The most magical TFG has to offer",
+  "quests.extreme_voltage.ostrum_tools.desc": "The &bOstrum Iodide&r tool set is what you would call a jack of all trades; while it is slower than &eTungsten Carbide&r, it offers very balanced stats, combining good &aDurability&r and good &eSpeed&r, making it a solid choice for your arsenal and suitable for most of your tools.\n\nIf producing &bIodide&r feels somewhat bothersome right now, keep in mind that once you reach &6Venus&r, you will be able to mass-produce it much more easily.",
+
+  "quests.extreme_voltage.tungsten_carbide_tools.title": "Tungsten Carbide Tools",
+  "quests.extreme_voltage.tungsten_carbide_tools.task": "All the Tungsten Carbide Tools",
+  "quests.extreme_voltage.tungsten_carbide_tools.subtitle": "As fast as you can expect",
+  "quests.extreme_voltage.tungsten_carbide_tools.desc": "&bTungsten Carbide Tools&r clearly belong to the extreme &eSpeed&r category, but they come with relatively low &aDurability&r and the fact that &6Tungsten&r may still be somewhat tedious to produce at this stage. They may even be too fast to comfortably use as a &bWrench&r, but they can feel excellent when crafted as a &bDrill&r or &bWire Cutter&r.",
+
+  "quests.extreme_voltage.tungsten_rotor.subtitle": "I'm not just a name",
+  "quests.extreme_voltage.tungsten_rotor.desc": "The &bTungsten-Bismuth Oxide Composite Rotor&r is not only known for its long name but also for being an incredibly powerful &eTurbine Rotor&r. It does come with several drawbacks: it is slow to craft, has very poor &aDurability&r, and even worse &bEfficiency&r. However, for a relatively straightforward crafting process, it may still be worth considering.\n\nWe recommend using it as your first &eTurbine Rotor&r on &4Mars&r inside your &eNuclear Turbines&r.",
+
+  "quests.extreme_voltage.mo_si_b.subtitle": "Is that harder than the NaqLine?",
+  "quests.extreme_voltage.mo_si_b.desc": "This is your third &eExotic Turbine Rotor&r and definitely the hardest one to obtain. As usual, we will not explain the process, and you will have to rely on EMI to navigate this complex production chain. Keep in mind that looping materials is particularly important for this one.\n\nIn terms of stats, you will not find anything better until much later in the &1IV&r chapter, making it a potentially valuable investment, although it remains entirely optional.",
+
+  "quests.extreme_voltage.rocket_t2_rotor.subtitle": "Natural upgrade",
+  "quests.extreme_voltage.rocket_t2_rotor.desc": "The &bASM 4914 Titanium Rocket Alloy Turbine Rotor&r is the natural upgrade if you did not craft the &bInconel&r one. It offers solid average stats and should perform well in your &eTurbines&r, making it a reliable option.\n\nDo not overlook it if you want to avoid the low &bEfficiency&r of the &bTungsten-Bismuth&r rotor.",
+
+  "quests.high_voltage.alumina_board.subtitle": "May be easier, or not",
+  "quests.high_voltage.alumina_board.desc": "The &bCopper Bonded Alumina Circuit Boards&r are a direct upgrade over the old &7Silicon Carbide&r ones. With them, you can craft twice as many &eCeramic Circuit Boards&r while skipping the more complex process of producing &7Silicon Carbide&r.\n\nThis option is entirely optional, and it is up to you to decide whether you want to invest the resources into this upgrade.\n\nTake note that the next tier, &aChromium Bonded BeO&r, is not yet available in the game."
 }
