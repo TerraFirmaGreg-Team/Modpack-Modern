@@ -47,7 +47,13 @@
 - Fixed not being able to break Incoloy MA-956 frames with the tools available in EV (#3194) @Pyritie
 - Fixed not being able to craft wooden tongs with the TFC stone knife you can rarely find in ruins (#3222) @Pyritie
 - Fixed TFC "pure" fertilisers having inconsistent fertiliser values (#3165) @Pyritie
+- Fixed recipe collision with buckets and Freedom gun (#3279) @Tipy4
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Ukranian @MetEnBouldry @furrydenis
+- Russian @Nixieeunrare
+- Polish @Xtrial-01
 
 ## [0.11.24] - 22-02-2026
 ### Notice
