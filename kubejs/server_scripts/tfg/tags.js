@@ -207,6 +207,14 @@ const registerTFGFluidTags = (event) => {
 	// Platline tags
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')
+
+	// GT fluid input recipe modification bug workaround
+	// GT adds these tags by itself already but not in time for our recipe modification to apply properly.
+	event.add('forge:polyethylene',      'gtceu:polyethylene')
+	event.add('forge:sodium_persulfate', 'gtceu:sodium_persulfate')
+	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
+	event.add('forge:tin',               'gtceu:tin')
+	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
 }
 //#endregion
 
