@@ -102,65 +102,163 @@ function registerTFGCircuitBoardsRecipes(event) {
 
 	// Printed Circuit boards
 
-	const FLUID_REPLACEMENTS = [
-		
-		// Minimal T4 - EV
-		{
-			recipe: "advanced_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
-			new: "gtceu:iron_iii_chloride"
-		},
-		// Best T4 - EV
-		{
-			recipe: "advanced_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
-			new: "tfg:redstone_tri_p_toluenesulfonate"
-		},
-		// Minimal T5 - IV
-		{
-			recipe: "extreme_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
-			new: "tfg:redstone_tri_p_toluenesulfonate"
-		},
-		// Best T5 - IV
-		{
-			recipe: "extreme_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
-			new: undefined
-		},
-		// Minimal T6 - LuV
-		{
-			recipe: "elite_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
-			new: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
-		},
-		// Best T6 - LuV
-		{ 
-			recipe: "elite_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
-			new: undefined // New when Venus is Out
-		},
-		// Minimal T7 - ZPM
-		{
-			recipe: "wetware_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
-			new: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
-		},
-		// Best T7 - ZPM
-		{ 
-			recipe: "wetware_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
-			new: undefined // New when ZPM Planet is Out
-		},
-	]
 
-	FLUID_REPLACEMENTS.forEach(replacement => {
-		if (replacement.new !== undefined) {
-			event.replaceInput({ id: `gtceu:chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
-			event.replaceInput({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
-		} else {
-			event.remove({ id: `gtceu:chemical_reactor/${replacement.recipe}` })
-			event.remove({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` })
+	var matches = event.findRecipes({ id: "gtceu:circuit_assembler/quantum_processor_ev_soldering_alloy" })
+
+		for (var i = 0; i < matches.length; i++) {
+			matches[i].serialize()
+			console.log(JSON.stringify(JSON.parse(matches[i].json.toString()), null, 2))
 		}
-	})
+
+    const FLUID_REPLACEMENTS = {
+        
+    // Minimal T4 - EV
+    "advanced_circuit_board_persulfate": {
+        inputTag: "forge:sodium_persulfate",
+        replacement: "gtceu:iron_iii_chloride"
+    },
+    // Best T4 - EV
+    "advanced_circuit_board_iron3": {
+        inputTag: "forge:iron_iii_chloride",
+        replacement: "tfg:redstone_tri_p_toluenesulfonate"
+    },
+    // Minimal T5 - IV
+    "extreme_circuit_board_persulfate": {
+        inputTag: "forge:sodium_persulfate",
+        replacement: "tfg:redstone_tri_p_toluenesulfonate"
+    },
+    // Best T5 - IV
+    "extreme_circuit_board_iron3": {
+        inputTag: "forge:iron_iii_chloride",
+        replacement: undefined
+    },
+    // Minimal T6 - LuV
+    "elite_circuit_board_persulfate": {
+        inputTag: "forge:sodium_persulfate",
+        replacement: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
+    },
+    // Best T6 - LuV
+    "elite_circuit_board_iron3": {
+        inputTag: "forge:iron_iii_chloride",
+        replacement: undefined // New when Venus is Out
+    },
+    // Minimal T7 - ZPM
+    "wetware_circuit_board_persulfate": {
+        inputTag: "forge:sodium_persulfate",
+        replacement: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
+    },
+    // Best T7 - ZPM
+    "wetware_circuit_board_iron3": {
+        inputTag: "forge:iron_iii_chloride",
+        replacement: undefined // New when ZPM Planet is Out
+    },
+}
+
+const REACTOR_PREFIXES = [
+    "gtceu:chemical_reactor",
+    "gtceu:large_chemical_reactor"
+]
+
+Object.keys(FLUID_REPLACEMENTS).forEach(function(recipeName) {
+    var inputTag = FLUID_REPLACEMENTS[recipeName].inputTag
+    var replacement = FLUID_REPLACEMENTS[recipeName].replacement
+
+    REACTOR_PREFIXES.forEach(function(prefix) {
+        var recipeId = prefix + "/" + recipeName
+
+
+		// If there is no replacement just remove
+
+        if (!replacement) {
+            event.remove({ id: recipeId })
+            return
+        }
+
+        var matches = event.findRecipes({ id: recipeId })
+
+        if (!matches || matches.length === 0) return
+
+        for (var i = 0; i < matches.length; i++) {
+            var javaRecipe = matches[i]
+            javaRecipe.serialize()
+            var recipeJson = JSON.parse(javaRecipe.json.toString())
+
+            if (!recipeJson.inputs || !recipeJson.inputs.fluid) continue
+
+            var replaced = false
+            for (var fi = 0; fi < recipeJson.inputs.fluid.length; fi++) {
+                var fluidInput = recipeJson.inputs.fluid[fi]
+                for (var vi = 0; vi < fluidInput.content.value.length; vi++) {
+                    var val = fluidInput.content.value[vi]
+                    if (val.tag === inputTag) {
+                        delete val.tag
+                        val.fluid = replacement
+                        replaced = true
+                    }
+                }
+            }
+
+            if (!replaced) continue
+
+			// start recreating the recipe
+
+            var machineName = prefix.split(":")[1]
+            var newRecipeId = "tfg:" + machineName + "/" + recipeName
+
+            javaRecipe.remove()
+
+            var newRecipe = event.recipes.gtceu[machineName](newRecipeId)
+                .duration(recipeJson.duration)
+                .EUt(recipeJson.tickInputs.eu[0].content)
+
+			// Grab the Item Input
+
+            if (recipeJson.inputs.item) {
+                for (var ii = 0; ii < recipeJson.inputs.item.length; ii++) {
+                    var item = recipeJson.inputs.item[ii]
+                    var ing = item.content.ingredient
+                    var count = item.content.count || 1
+                    if ("tag" in ing) {
+                        newRecipe.itemInputs(count + "x #" + ing.tag)
+                    } else if ("item" in ing) {
+                        newRecipe.itemInputs(Item.of(ing.item, count))
+                    }
+                }
+            }
+
+			// Just grab the amount as we add our own
+
+            for (var fi2 = 0; fi2 < recipeJson.inputs.fluid.length; fi2++) {
+                var fluidIn = recipeJson.inputs.fluid[fi2]
+                var fluidVal = fluidIn.content.value[0]
+                var amount = fluidIn.content.amount
+                if (fluidVal && fluidVal.fluid) {
+                    newRecipe.inputFluids(Fluid.of(fluidVal.fluid, amount))
+                }
+            }
+
+            if (recipeJson.outputs && recipeJson.outputs.item) {
+                for (var oi = 0; oi < recipeJson.outputs.item.length; oi++) {
+                    var outItem = recipeJson.outputs.item[oi]
+                    var outIng = outItem.content.ingredient || outItem.content
+                    var outCount = outItem.content.count || 1
+                    if ("item" in outIng) {
+                        newRecipe.itemOutputs(Item.of(outIng.item, outCount))
+                    }
+                }
+            }
+
+			// Add back the cleanrrom
+			if (recipeJson.recipeConditions) {
+				for (var ci = 0; ci < recipeJson.recipeConditions.length; ci++) {
+					var cond = recipeJson.recipeConditions[ci]
+					if (cond.type === "cleanroom") {
+						newRecipe.cleanroom(CleanroomType[cond.cleanroom.toUpperCase()])
+					}
+				}
+			}
+
+        }
+    })
+})
 }
