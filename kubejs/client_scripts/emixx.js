@@ -115,7 +115,6 @@ const registerSingleGroups = (event) => {
         '#forge:tools/mortars',
         '#forge:tools/fishing_nets',
         '#forge:fish_hooks',
-        // Shear... heads?
 
         // Tools (Other)
         '#tfc:javelins',
@@ -131,7 +130,8 @@ const registerSingleGroups = (event) => {
         '#forge:dyes',
 
         // Items (GTCEU)
-        '#gtceu:molds', 
+        '#gtceu:extruder_molds', 
+        '#gtceu:casting_molds', 
 
         // Items (Astikor Carts)
         '#tfcastikorcarts:cart_wheel',
