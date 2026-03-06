@@ -1905,18 +1905,11 @@
 			id: "707596E5E9F01B8A"
 			optional: true
 			subtitle: "{quests.high_voltage.alumina_board.subtitle}"
-			tasks: [
-				{
-					id: "3C7B8FD59C034269"
-					item: "tfg:chromium_bonded_beo_pcb"
-					type: "item"
-				}
-				{
-					id: "32FDC591ACE9B2CF"
-					item: "tfg:copper_bonded_al2o3_pcb"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "32FDC591ACE9B2CF"
+				item: "tfg:copper_bonded_al2o3_pcb"
+				type: "item"
+			}]
 			x: -2.5d
 			y: 3.0d
 		}

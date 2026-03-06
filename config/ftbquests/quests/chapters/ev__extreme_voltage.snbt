@@ -2567,9 +2567,11 @@
 		}
 		{
 			dependencies: ["52AB0BDC64293253"]
+			description: ["{quests.extreme_voltage.rocket_t2_rotor.desc}"]
 			id: "2DA61F29B0CB6141"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.rocket_t2_rotor.subtitle}"
 			tasks: [{
 				id: "62FB9023A96410C3"
 				item: {
