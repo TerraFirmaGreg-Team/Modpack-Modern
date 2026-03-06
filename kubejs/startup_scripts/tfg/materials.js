@@ -26,6 +26,10 @@ const registerTFGMaterials = (event) => {
 	event.create('hydroxide')
 		.components('1x oxygen', '1x hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+	event.create('sulfate')
+		.components('1x sulfur', '4x oxygen')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 	//#endregion	
 	
 	registerTFGPowerReworkMaterials(event);

@@ -12,6 +12,7 @@ function registerTFGMaterialItemTags(event) {
 	event.add('tfg:platinum_ore_group', 'gtceu:purified_chalcocite_ore')
 	
 	// Crafting components
+	event.add('tfg:aluminium_oxide', '#forge:dusts/alumina')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
