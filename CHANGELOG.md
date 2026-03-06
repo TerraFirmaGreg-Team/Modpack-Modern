@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [0.11.25] - 06-03-2026
 ### MV Changes
 - Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving
 - Silicon rubber is also now mandatory
