@@ -2420,6 +2420,7 @@
 		}
 		{
 			dependencies: ["5EC5566546591DEE"]
+			description: ["{quests.extreme_voltage.tungsten_carbide_tools.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:ev_tungsten_carbide_drill"
@@ -2449,6 +2450,7 @@
 			id: "77126BE617215A17"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.tungsten_carbide_tools.subtitle}"
 			tasks: [
 				{
 					id: "639039222D6F4B30"
@@ -2465,14 +2467,17 @@
 						}
 					}
 					optional_task: true
+					title: "{quests.extreme_voltage.tungsten_carbide_tools.task}"
 					type: "item"
 				}
 			]
+			title: "{quests.extreme_voltage.tungsten_carbide_tools.title}"
 			x: 5.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["7F4E529627AD9148"]
+			description: ["{quests.extreme_voltage.tungsten_rotor.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:turbine_rotor"
@@ -2485,6 +2490,7 @@
 			id: "4C5311FA9B46D115"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.tungsten_rotor.subtitle}"
 			tasks: [
 				{
 					id: "4D980D7F2A4B5731"
@@ -2511,6 +2517,7 @@
 		}
 		{
 			dependencies: ["5FA09DA68D309548"]
+			description: ["{quests.extreme_voltage.ostrum_tools.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:ev_ostrum_iodide_wrench"
@@ -2534,6 +2541,7 @@
 			id: "21A1AB93A5B6F729"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.ostrum_tools.subtitle}"
 			tasks: [
 				{
 					id: "5E09DBF8B5973CA6"
@@ -2549,9 +2557,11 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:ev_ostrum_iodide_drill)item(gtceu:ev_ostrum_iodide_screwdriver)item(gtceu:ev_ostrum_iodide_wrench)item(gtceu:ev_ostrum_iodide_chainsaw)item(gtceu:ev_ostrum_iodide_buzzsaw)item(gtceu:ev_ostrum_iodide_wire_cutter))"
 						}
 					}
+					title: "{quests.extreme_voltage.ostrum_tools.task}"
 					type: "item"
 				}
 			]
+			title: "{quests.extreme_voltage.ostrum_tools.title}"
 			x: 13.0d
 			y: 3.0d
 		}
@@ -2578,9 +2588,11 @@
 		}
 		{
 			dependencies: ["691A36800DC755C1"]
+			description: ["{quests.extreme_voltage.mo_si_b.desc}"]
 			id: "65B835976B0AA1E9"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.mo_si_b.subtitle}"
 			tasks: [{
 				id: "3080CD336ACCEE9E"
 				item: {

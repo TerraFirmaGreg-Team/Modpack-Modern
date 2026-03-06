@@ -896,7 +896,11 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["57FE828BAA8F6276"]
+			dependencies: [
+				"57FE828BAA8F6276"
+				"40408FFD02134148"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.hazmat.desc}"]
 			id: "784A0743B257EAEB"
 			tasks: [

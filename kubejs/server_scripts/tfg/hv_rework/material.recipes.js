@@ -76,18 +76,18 @@ function registerTFGHVMaterialRecipes(event) {
 
 	// Perlite
 
-	event.remove({ id: 'gtceu:extractor/extract_igneous_felsic_dust'})
-    event.recipes.gtceu.coal_liquefaction_tower('tfg:molten_felsic_silicate')
-        .itemInputs(Item.of('tfg:igneous_felsic_dust', 16))
+	event.remove({ id: 'gtceu:extractor/extract_igneous_mafic_dust'})
+    event.recipes.gtceu.coal_liquefaction_tower('tfg:molten_mafic_silicate')
+        .itemInputs(Item.of('tfg:igneous_mafic_dust', 16))
         .perTick(true)
 	    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 	    .perTick(false)
-		.outputFluids(Fluid.of('tfg:igneous_felsic', 144*16))
+		.outputFluids(Fluid.of('tfg:igneous_mafic', 144*16))
         .duration(20 * 50)
         .EUt(GTValues.VA[GTValues.LV]);
 
     event.recipes.gtceu.mixer('tfg:obsidian_dust')
-        .inputFluids(Fluid.of('tfg:igneous_felsic', 144), Fluid.of('gtceu:ice', 1000))
+        .inputFluids(Fluid.of('tfg:igneous_mafic', 144), Fluid.of('gtceu:ice', 1000))
 		.itemOutputs(Item.of('gtceu:obsidian_dust', 1))
         .duration(20 * 28)
         .EUt(GTValues.VA[GTValues.LV]);
