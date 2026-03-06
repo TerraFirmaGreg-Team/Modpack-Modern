@@ -1,8 +1,16 @@
+    
+    // How to call this function anywhere in KubeJS
     /*
     // Modify only duration et EUt
     global.modifyRecipe(event, "gtceu:electric_blast_furnace/some_recipe", {
         duration: 20 * 100,
         eut: GTValues.VA[GTValues.EV]
+    })
+    
+    // Replace a fluid if needed
+    global.modifyRecipe(event, "gtceu:assembler/transistor", {
+        newId: "tfg:assembler/transistor",
+        fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" }
     })
 
     // Modify item input quantity
@@ -20,6 +28,7 @@
         newId: "tfg:circuit_assembler/my_modified_recipe",
         duration: 20 * 50,
         eut: GTValues.VA[GTValues.HV],
+        fluidReplacements: { "forge:soldering_alloy": "tfg:woods_metal" },
         itemInputs: { "gtceu:copper_plate": 2 },
         fluidInputs: { "forge:soldering_alloy": 144 }
     })
@@ -37,10 +46,26 @@ global.modifyRecipe = function(event, recipeId, options) {
         var machineName = javaRecipe.getId().toString().split(":")[1].split("/")[0]
         var newId = options.newId || ("tfg:" + recipeId.split("/").slice(1).join("/"))
 
-        // Duration et ETt
+        // Duration and EUt
 
         if (options.duration) recipeJson.duration = options.duration
         if (options.eut) recipeJson.tickInputs.eu[0].content = options.eut
+
+        // Replace a fluid
+
+        if (options.fluidReplacements) {
+            for (var fr = 0; fr < recipeJson.inputs.fluid.length; fr++) {
+                var frValues = recipeJson.inputs.fluid[fr].content.value
+                for (var frv = 0; frv < frValues.length; frv++) {
+                    var frVal = frValues[frv]
+                    var frKey = frVal.tag || frVal.fluid
+                    if (frKey && options.fluidReplacements[frKey]) {
+                        delete frVal.tag
+                        frVal.fluid = options.fluidReplacements[frKey]
+                    }
+                }
+            }
+        }
 
         // Modify amount of item input
 
