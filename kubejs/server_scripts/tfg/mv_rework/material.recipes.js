@@ -34,6 +34,7 @@ function registerTFGMVMaterialRecipes(event) {
 		.itemInputs(Item.of('tfg:rough_silicon_carbide_dust',1))
 		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
 		.itemOutputs(Item.of('tfg:silicon_carbide_ingot', 1))
+		.outputFluids(Fluid.of('gtceu:diluted_hydrochloric_acid', 1000))
 		.duration(20*16)
 		.EUt(GTValues.VA[GTValues.MV])
 
