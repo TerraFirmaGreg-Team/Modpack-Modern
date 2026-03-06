@@ -199,7 +199,7 @@ Object.keys(FLUID_REPLACEMENTS).forEach(function(recipeName) {
 
             javaRecipe.remove()
 
-            var newRecipe = event.recipes.gtceu[machineName](newRecipeId)
+            var newRecipe = event.recipes.gtceu[machineName]("tfg:" + recipeName)
                 .duration(recipeJson.duration)
                 .EUt(recipeJson.tickInputs.eu[0].content)
 

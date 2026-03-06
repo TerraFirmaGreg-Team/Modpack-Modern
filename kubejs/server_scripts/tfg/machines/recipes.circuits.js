@@ -115,7 +115,7 @@
 
     javaRecipe.remove()
 
-    var newRecipe = event.recipes.gtceu[machineName](newId) // it doubles the name in the final ID but else it doesn't get the machine
+    var newRecipe = event.recipes.gtceu[machineName]("tfg:" + newId.split("/").slice(1).join("/"))
         .duration(recipeJson.duration)
         .EUt(recipeJson.tickInputs.eu[0].content)
 
@@ -182,7 +182,7 @@
 		if (!matches || matches.length === 0) return
 
 		for (var i = 0; i < matches.length; i++) {
-			var newId = newIdPrefix + recipeId.split("/")[1]
+			var newId = newIdPrefix + recipeId.split("/").slice(1).join("/")
 			rebuildRecipe(event, matches[i], newId, fluidTag, replacement)
 		}
 	}
