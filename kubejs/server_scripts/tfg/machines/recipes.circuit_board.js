@@ -102,14 +102,6 @@ function registerTFGCircuitBoardsRecipes(event) {
 
 	// Printed Circuit boards
 
-
-	var matches = event.findRecipes({ id: "gtceu:circuit_assembler/quantum_processor_ev_soldering_alloy" })
-
-		for (var i = 0; i < matches.length; i++) {
-			matches[i].serialize()
-			console.log(JSON.stringify(JSON.parse(matches[i].json.toString()), null, 2))
-		}
-
     const FLUID_REPLACEMENTS = {
         
     // Minimal T4 - EV

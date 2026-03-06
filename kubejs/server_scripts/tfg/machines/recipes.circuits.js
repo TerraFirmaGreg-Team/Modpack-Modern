@@ -75,6 +75,13 @@
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.HV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+    // Modify Transistor Fluid
+
+    var matches = event.findRecipes({ id: "gtceu:assembler/transistor" })
+        for (var i = 0; i < matches.length; i++) {
+            rebuildRecipe(event, matches[i], "tfg:assembler/transistor", "forge:polyethylene", "gtceu:silicone_rubber")
+        }
     
     //#endregion
 
