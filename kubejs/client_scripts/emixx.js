@@ -77,10 +77,7 @@ const registerSingleGroups = (event) => {
         '#forge:saw_heads',
         '#forge:wrench_tips',
         '#forge:scythe_heads',
-        '#forge:fishing_rods',
-        '#forge:shears',
         '#forge:buzz_saw_heads',
-
         '#forge:javelin_heads',
         '#forge:mace_heads',
         '#forge:chisel_heads',
@@ -88,6 +85,7 @@ const registerSingleGroups = (event) => {
         '#forge:mattock_heads',
         '#tfchotornot:tong_parts',
         '#tfcscraping:scraping_knife_blades',
+        '#forge:fish_hooks',
 
         // Tools (Minecraft)
         '#tfc:pickaxes',
@@ -109,12 +107,13 @@ const registerSingleGroups = (event) => {
         '#forge:tools/saws',
         '#forge:tools/wrenches',
         '#forge:tools/scythes',
+        '#forge:fishing_rods',
+        '#forge:shears',
         '#forge:tools/crowbars',
         '#forge:tools/plungers',
         '#forge:tools/mallets',
         '#forge:tools/mortars',
         '#forge:tools/fishing_nets',
-        '#forge:fish_hooks',
 
         // Tools (Other)
         '#tfc:javelins',
