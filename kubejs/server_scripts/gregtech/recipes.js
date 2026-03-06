@@ -52,6 +52,7 @@ const registerGTCEURecipes = (event) => {
 	// Move EV to after Uranium Reactor
 
 	event.remove({ id: 'gtceu:mixer/uranium_triplatinum' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/uranium_triplatinum' })
 	event.recipes.gtceu.mixer('tfg:uranium_triplatinum')
 		.itemInputs(Item.of('gtceu:uranium_dust', 1), Item.of('gtceu:platinum_dust', 3))
 		.inputFluids(Fluid.of('gtceu:radon', 10))

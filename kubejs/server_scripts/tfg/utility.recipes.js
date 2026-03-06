@@ -1,31 +1,37 @@
     
     // How to call this function anywhere in KubeJS
+
+    // Always add an ID, whatever you want without adding the machine name if you don't want to see namespace:machine/machine/my_recipe
+
     /*
     // Modify only duration et EUt
     global.modifyRecipe(event, "gtceu:electric_blast_furnace/some_recipe", {
+        newId: "tfg:some_recipe",
         duration: 20 * 100,
         eut: GTValues.VA[GTValues.EV]
     })
     
     // Replace a fluid if needed - ALWAYS USE A TAG BECAUSE GREGTECH REGISTERS THEIR RECIPE IN JSON WITH TAG
     global.modifyRecipe(event, "gtceu:assembler/transistor", {
-        newId: "tfg:assembler/transistor",
+        newId: "tfg:transistor",
         fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" }
     })
 
     // Modify item input quantity
     global.modifyRecipe(event, "gtceu:assembler/some_recipe", {
+        newId: "tfg:some_recipe",
         itemInputs: { "gtceu:copper_plate": 4 }
     })
 
     // Modify fluid input quantity
     global.modifyRecipe(event, "gtceu:chemical_reactor/some_recipe", {
-        fluidInputs: { "gtceu:sulfuric_acid": 500 }
+        newId: "tfg:some_recipe",
+        fluidInputs: { "forge:sulfuric_acid": 500 }
     })
 
     // An exemple of all together
     global.modifyRecipe(event, "gtceu:circuit_assembler/some_recipe", {
-        newId: "tfg:circuit_assembler/my_modified_recipe",
+        newId: "tfg:my_modified_recipe",
         duration: 20 * 50,
         eut: GTValues.VA[GTValues.HV],
         fluidReplacements: { "forge:soldering_alloy": "tfg:woods_metal" },
@@ -35,7 +41,7 @@
 
     // An exemple regarding the Transistor with the itemInputs not existing - It just skips it
         global.modifyRecipe(event, "gtceu:assembler/transistor", {
-        newId: "tfg:assembler/transistor",
+        newId: "tfg:transistor",
         duration: 20 * 50,
         eut: GTValues.VA[GTValues.HV],
         fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" },
@@ -142,9 +148,9 @@ global.modifyRecipe = function(event, recipeId, options) {
             for (var ii2 = 0; ii2 < recipeJson.inputs.item.length; ii2++) {
                 var ing2 = recipeJson.inputs.item[ii2].content.ingredient
                 var count = recipeJson.inputs.item[ii2].content.count || 1
-                if ("tag" in ing2) {
+                if (ing2 && typeof ing2 === "object" && "tag" in ing2) {
                     newRecipe.itemInputs(count + "x #" + ing2.tag)
-                } else if ("item" in ing2) {
+                } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
                 }
             }
@@ -168,7 +174,7 @@ global.modifyRecipe = function(event, recipeId, options) {
             for (var oi = 0; oi < recipeJson.outputs.item.length; oi++) {
                 var outIng = recipeJson.outputs.item[oi].content.ingredient || recipeJson.outputs.item[oi].content
                 var outCount = recipeJson.outputs.item[oi].content.count || 1
-                if ("item" in outIng) {
+                if (outIng && typeof outIng === "object" && "item" in outIng) {
                     newRecipe.itemOutputs(Item.of(outIng.item, outCount))
                 }
             }
