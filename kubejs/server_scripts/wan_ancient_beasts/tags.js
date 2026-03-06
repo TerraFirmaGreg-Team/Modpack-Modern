@@ -38,7 +38,7 @@ const registerWABItemTags = (event) => {
 	event.add('tfc:foods/cooked_meats', 'wan_ancient_beasts:cooked_ancient_meat')
 	event.add('tfc:foods/meats', 'wan_ancient_beasts:cooked_ancient_meat')
 
-	event.add('wan_antcient_beasts:meat_food', '#tfc:foods/raw_meats')
+	event.add('wan_ancient_beasts:meat_food', '#tfc:foods/raw_meats')
 
 	// Eggs
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:eater_egg')
