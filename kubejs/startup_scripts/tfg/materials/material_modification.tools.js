@@ -220,6 +220,18 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.PICKAXE,
 		GTToolType.SWORD
 	]).build());
+
+	TFGHelpers.getMaterial('arsenic_bronze').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5.5, 4, 212, 2, [
+		GTToolType.HOE,
+		GTToolType.KNIFE,
+		GTToolType.SHOVEL,
+		GTToolType.BUTCHERY_KNIFE,
+		GTToolType.SPADE,
+		GTToolType.SCYTHE,
+		GTToolType.MINING_HAMMER,
+		GTToolType.SWORD,
+		GTToolType.AXE
+	]).build());
 	
 	// ULV
 
