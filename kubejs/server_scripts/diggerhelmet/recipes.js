@@ -2,21 +2,6 @@
 "use strict";
 
 function registerDiggerHelmetRecipes(event) {
-	event.remove({ mod: 'diggerhelmet' })
-
-	event.shaped('diggerhelmet:digger_helmet', [
-		' F ',
-		'EAB',
-		'DCD'
-	], {
-		A: '#minecraft:candles',
-		B: '#forge:rings',
-		C: 'minecraft:leather_helmet',
-		D: '#forge:rods/tin',
-		E: '#forge:tools/hammers',
-		F: 'minecraft:glowstone_dust'
-	})
-	.id('tfg:shaped/digger_helmet')
 
 	event.recipes.gtceu.assembler('tfg:mining_speed_modifier')
 		.itemInputs('#forge:plates/blue_steel', '#gtceu:circuits/lv', '2x tfg:haste_pill')
@@ -46,19 +31,100 @@ function registerDiggerHelmetRecipes(event) {
 		C: '#forge:foils/rubber'
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
 
-	event.shapeless('diggerhelmet:silk_lining', [
-		'tfcambiental:silk_cowl', 
-		'#forge:string', 
-		'#tfc:sewing_needles'
-	])
-	.damageIngredient('#tfc:sewing_needles', 1)
-	.id('tfg:shapeless/diggerhelmet/silk_lining');
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('diggerhelmet:silk_lining', ['tfcambiental:silk_cowl', '#forge:string', '#tfc:sewing_needles'])
+	).id('tfg:shapeless/diggerhelmet/silk_lining')
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('diggerhelmet:wool_lining', ['tfcambiental:wool_hat', '#forge:string', '#tfc:sewing_needles'])
+	).id('tfg:shapeless/diggerhelmet/wool_lining')
+
+
+	// ========================================
+	// Кастомные рецепты ремонта шлемов
+	// ========================================
 	
-	event.shapeless('diggerhelmet:wool_lining', [
-		'tfcambiental:wool_hat', 
-		'#forge:string', 
-		'#tfc:sewing_needles'
-	])
-	.damageIngredient('#tfc:sewing_needles', 1)
-	.id('tfg:shapeless/diggerhelmet/wool_lining');
+
+	// Рецепт ремонта базового (кожаного) шлема
+	event.custom({
+		type: 'diggerhelmet:helmet_repair',
+		pattern: [
+			' C ',
+			'RHT',
+			'BAB'
+		],
+		key: {
+			'H': { item: 'diggerhelmet:digger_helmet' },
+			'R': { tag: 'forge:leather' },
+			'T': { tag: 'tfc:shears' },
+			'C': { tag: 'tfc:candles' },
+			'A': { tag: 'forge:tools/screwdrivers'},
+			'B': { tag: 'forge:screws/wrought_iron'}
+		},
+		repairPercentage: 0.75,
+		toolDamagePercentage: 0.01
+	}).id('tfg:diggerhelmet/repair_base_helmet')
+
+	// Рецепт ремонта сломанного базового (кожаного) шлема
+	event.custom({
+		type: 'diggerhelmet:helmet_repair',
+		pattern: [
+			' C ',
+			'RHT',
+			'BAB'
+		],
+		key: {
+			'H': { item: 'diggerhelmet:broken_digger_helmet' },
+			'R': { tag: 'forge:leather' },
+			'T': { tag: 'tfc:shears' },
+			'C': { tag: 'tfc:candles' },
+			'A': { tag: 'forge:tools/screwdrivers'},
+			'B': { tag: 'forge:screws/wrought_iron'}
+		},
+		repairPercentage: 0.75,
+		toolDamagePercentageBroken: 0.02
+	}).id('tfg:diggerhelmet/repair_broken_base_helmet')
+
+	// Генерируем рецепты ремонта для каждого металла с НОВЫМ ПАТТЕРНОМ 3x3
+	global.TFC_EQUIPMENT_METALS.forEach(metal => {
+		// Ремонт поврежденного металлического шлема (используем пластины и паттерн)
+		event.custom({
+			type: 'diggerhelmet:helmet_repair',
+			pattern: [
+				' C ',
+				'RHT',
+				'BAB'
+			],
+			key: {
+				'H': { item: `diggerhelmet:${metal}_digger_helmet` },
+				'R': { tag: `forge:plates/${metal}` },
+				'T': { tag: 'tfc:hammers' },
+				'C': { tag: 'tfc:candles' },
+				'A': { tag: 'forge:tools/screwdrivers'},
+				'B': { tag: 'forge:screws/wrought_iron'}
+			},
+			repairPercentage: 0.75,
+			toolDamagePercentage: 0.01
+		}).id(`tfg:diggerhelmet/repair_${metal}_helmet`)
+
+		// Ремонт сломанного металлического шлема (используем пластины и паттерн)
+		event.custom({
+			type: 'diggerhelmet:helmet_repair',
+			pattern: [
+				' C ',
+				'RHT',
+				'BAB'
+			],
+			key: {
+				'H': { item: `diggerhelmet:broken_${metal}_digger_helmet` },
+				'R': { tag: `forge:plates/${metal}` },
+				'T': { tag: 'tfc:hammers' },
+				'C': { tag: 'tfc:candles' },
+				'A': { tag: 'forge:tools/screwdrivers'},
+				'B': { tag: 'forge:screws/wrought_iron'}
+			},
+			repairPercentage: 0.75,
+			toolDamagePercentageBroken: 0.02
+		}).id(`tfg:diggerhelmet/repair_broken_${metal}_helmet`)
+	})
 }
