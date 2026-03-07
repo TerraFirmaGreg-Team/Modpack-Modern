@@ -452,14 +452,17 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
 
-    { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
-    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
+    { recipeId: "gtceu:chemical_reactor/butyraldehyde", circuitNumber: 5 },
+    { recipeId: "gtceu:large_chemical_reactor/butyraldehyde", circuitNumber: 5 },
 
     { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
     { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 },
 
     { recipeId: "gtceu:chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
     { recipeId: "gtceu:large_chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
+
+    { recipeId: "gtceu:chemical_reactor/polydimethylsiloxane_from_silicon", circuitNumber: 3 },
+    { recipeId: "gtceu:large_chemical_reactor/polydimethylsiloxane_from_silicon", circuitNumber: 3 }
 ]);
 //#endregion
 

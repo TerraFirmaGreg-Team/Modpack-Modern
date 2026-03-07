@@ -71,37 +71,37 @@
 	traitDriedModifier = 0.5
 	#The modifier for the 'Fresh' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitFreshModifier = 1.100000023841858
+	traitFreshModifier = 1.1
 	#The modifier for the 'Aged' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitAgedModifier = 0.8999999761581421
+	traitAgedModifier = 0.9
 	#The modifier for the 'Vintage' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitVintageModifier = 0.6000000238418579
+	traitVintageModifier = 0.6
 	#The modifier for the 'Oven_baked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitOven_bakedModifier = 0.8999999761581421
+	traitOven_bakedModifier = 0.9
 	#The modifier for the 'Smoked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitSmokedModifier = 0.699999988079071
+	traitSmokedModifier = 0.7
 	#The modifier for the 'Rancid_smoked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitRancid_smokedModifier = 2.0
 	#The modifier for the 'Shelved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelvedModifier = 0.4000000059604645
+	traitShelvedModifier = 0.4
 	#The modifier for the 'Shelved_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitShelved_2Modifier = 0.3499999940395355
+	traitShelved_2Modifier = 0.35
 	#The modifier for the 'Shelved_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitShelved_3Modifier = 0.25
 	#The modifier for the 'Hung' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHungModifier = 0.3499999940395355
+	traitHungModifier = 0.35
 	#The modifier for the 'Hung_2' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitHung_2Modifier = 0.30000001192092896
+	traitHung_2Modifier = 0.3
 	#The modifier for the 'Hung_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitHung_3Modifier = 0.25
@@ -110,14 +110,14 @@
 	traitFermentedModifier = 0.25
 	#The modifier for the 'Bee_pollinated' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitBee_pollinatedModifier = 0.800000011920929
+	traitBee_pollinatedModifier = 0.8
 	#The modifier for the 'Dirt_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitDirt_grownModifier = 0.8999999761581421
+	traitDirt_grownModifier = 0.9
 	#The modifier for the 'Gravel_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitGravel_grownModifier = 0.800000011920929
+	traitGravel_grownModifier = 0.8
 	#The modifier for the 'Slope_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	traitSlope_grownModifier = 0.800000011920929
+	traitSlope_grownModifier = 0.8
 

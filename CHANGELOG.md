@@ -1,9 +1,59 @@
 # Changelog
 
-## Unreleased
+## [0.11.25] - 06-03-2026
+### MV Changes
+- Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving
+- Silicon rubber is also now mandatory
+- The recipe for Kanthal coils has changed
+- Plastic circuit boards have been replaced with ceramic circuit boards
+- Added a new line for gem slurries, different than the existing one that comes with GregTech
+### HV Changes
+- The moon is now mandatory
+- The cleanroom recipe has changed and now requires Rhenium which can be found either in the overworld deserts or as an ore processing byproduct from Desh
+- The recipe for Nichrome coils has changed
+- Nichrome coils are now required for Titanium
+- Added earth-based infinites for iron, magnesium, and potassium (we are forcing you to learn more geology for this one)
+- Rutile is harder to get and the titanium loop now requires two rutile dust per input instead of one, to obey conservation of mass (reminder that the moon has huge Ilmenite, Armalcolite, and Desh veins, and that Bauxite has a special ore processing line that may interest you!)
+- HV also unlocks more ways to craft the ceramic circuit boards for cheaper
+### Other Breaking Changes
+- Tools higher than colored steel have been reworked and most of them have been removed or had their IDs changed, so your tools may disappear. Tool stats have also been changed across the board -- sorry, your colored steel tools are actually balanced now.
+- Turbine rotors have been completely changed - most of the old ones no longer exist. Be sure to charge up your batteries and recycle your old rotors before updating.
+- Soldering alloys now have tiers, so if you were relying on liquid tin, that's no longer an option past a certain point, and higher tiers need different solders
+- "Etching fluids", like sodium persulfate and iron III chloride now also have tiers
+- Various fluid and item pipes have been *hidden* but not removed, to clean up the sheer quantity of them. Fluid pipes' stats have been buffed everywhere. Eventually we'd like to completely remove these extra pipes but only if it's possible to do so without affecting all the setups you have
+### New mods
+- Added Create: Copycats+ compat. (#3232) @SakuraKitsurugi
+- Added optional compatibility for Create: Extra Gauges (#3159) @TreyR9
 ### Changes
+- Increased basic harvest basket durability to 256 @Redeix
+- Remove durability from trowels @Redeix
+- Harvest baskets can now harvest from firmalife greenhouse trellis, bonsai, and hanging planters. @Redeix
+- Added back Accumulators, which are basically batteries that can go on contraptions (like trains!) and use a Portable Energy Interface. Now, you can pull energy out of them using a GregTech energy converter! (#2460) @DrEthan77
+- Scythes can now harvest and replant crops in Firmalife greenhouse planters @Ujhik
+- Added "vintage" alcohols made from letting your Aged Alcohols age even further, providing even stronger buffs (#3233) @lysteryale
+- Huntmaster illagers no longer drop backpacks @Pyritie
+- Added bamboo lumber and added consistency for all wood-related recipes, please let us know if there's any issues (#3211) @Inceitious
+- Added bakelite recipes for crafting ULV/LV hatches and buses
+- (Plain) stone dust now centrifuges into other stone dusts @Pyritie
 ### Bug fixes
+- Fixed multiple exceptions being thrown during tooltip creation (#3188) @Nebby1999
+- Fixed lag when holding certain items in your off-hand (#324) @Mqrius
+- Fixed rails on maps on MacOS @Mqrius
+- Fixed stacks of drums not applying their hot/cold/floating effects (#2814) @Mqrius
+- Fixed a desync with ingot mold temperatures between server and client (#2593) @Ujhik
+- Fixed GregTech drums not draining from wood barrels when there's fluid in the drum (#2835) @Mqrius
+- Fixed desync issue when "drinking" from an Ad Astra Gas Tank in your off-hand (#3059) @Mqrius
+- Fixed recycling dupe with metal pressure plates (#3230) @SakuraKitsurugi
+- Fixed not being able to break Incoloy MA-956 frames with the tools available in EV (#3194) @Pyritie
+- Fixed not being able to craft wooden tongs with the TFC stone knife you can rarely find in ruins (#3222) @Pyritie
+- Fixed TFC "pure" fertilisers having inconsistent fertiliser values (#3165) @Pyritie
+- Fixed recipe collision with buckets and Freedom gun (#3279) @Tipy4
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Ukranian @MetEnBouldry @furrydenis
+- Russian @Nixieeunrare
+- Polish @Xtrial-01
 
 ## [0.11.24] - 22-02-2026
 ### Notice

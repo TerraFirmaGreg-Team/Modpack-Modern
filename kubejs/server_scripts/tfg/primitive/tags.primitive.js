@@ -81,11 +81,16 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_inputs', 'gtceu:phenolic_circuit_board')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_single_wire')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_quadruple_wire')
+	event.add('tfg:artisan_table_inputs', 'tfg:optical_borosilicate_blank')
+	event.add('tfg:artisan_table_inputs', 'tfc:powder/flux')
 	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
 	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
 	event.add('tfg:artisan_table_tools', '#forge:tools/files')
 	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
 	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/buzzsaws')
+	event.add('tfg:artisan_table_tools', 'tfc:gem_saw')
+	event.add('tfg:artisan_table_tools', '#create:sandpaper')
 }
 
 function registerTFGPrimitiveBlockTags(event) {
@@ -96,6 +101,9 @@ function registerTFGPrimitiveBlockTags(event) {
 	event.add('tfg:harvester_harvestable', '#tfc:any_spreading_bush')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_strings')
 	event.add('tfg:harvester_harvestable', '#firmalife:grape_trellis_posts_plant')
+	event.add('tfg:harvester_harvestable', 'firmalife:trellis_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:bonsai_planter')
+	event.add('tfg:harvester_harvestable', 'firmalife:hanging_planter')
 	//added for QOL but doesnt harvest anything
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')

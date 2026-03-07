@@ -267,6 +267,13 @@ function registerTFGAlloyingRecipes(event) {
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_powderbarrel')
+        .itemInputs('5x #forge:dusts/glowstone', '8x gtceu:powderbarrel')
+        .itemOutputs('1x minecraft:glowstone')
+        .chancedOutput('#forge:dusts/ash', 2500, 0)
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.LV])
+
     event.recipes.gtceu.implosion_compressor('tfg:glowstone_block_tnt')
         .itemInputs('5x #forge:dusts/glowstone', '4x minecraft:tnt')
         .itemOutputs('1x minecraft:glowstone')

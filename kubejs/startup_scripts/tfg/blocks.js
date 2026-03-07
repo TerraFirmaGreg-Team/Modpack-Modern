@@ -16,9 +16,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGWorldGenVenusDecoBlocks(event)
 	registerTFGWorldGenEuropaDecoBlocks(event)
 
-	registerTFGCasingBlocks(event)
 	registerTFGNuclearBlocks(event)
-
 
 	// Temporary, remove in 0.12
 	event.create('gtceu:ostrum_linear_accelerator')

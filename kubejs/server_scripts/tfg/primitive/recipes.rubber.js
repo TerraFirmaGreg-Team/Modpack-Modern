@@ -122,6 +122,13 @@ function registerTFGRubberRecipes(event) {
 		.heated()
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/rubber')
+
+	// matches the sulfur dust + raw rubber recipe, just an alternative using powder
+	event.recipes.gtceu.alloy_smelter('tfg:rubber_ingot_powder')
+		.itemInputs('4x tfc:powder/sulfur', '3x #forge:dusts/raw_rubber')
+		.itemOutputs('#forge:ingots/rubber')
+		.duration(5 * 20)
+		.EUt(7)
 	
 	// Rubber Processing Line
 	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)

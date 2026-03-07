@@ -10,7 +10,9 @@
     {
       "type": "patchouli:image",
       "title": "Бетонные дороги",
-      "images": [ "rnr:textures/gui/book/concrete_road.png" ],
+      "images": [
+      "rnr:textures/gui/book/concrete_road.png"
+      ],
       "border": true
     },
     {
@@ -34,7 +36,9 @@
     {
       "type": "patchouli:image",
       "title": "Заливка бетонной дороги",
-      "images": [ "rnr:textures/gui/book/wet_concrete.png" ],
+      "images": [
+      "rnr:textures/gui/book/wet_concrete.png"
+      ],
       "border": true
     },
     {
@@ -44,7 +48,9 @@
     {
       "type": "patchouli:image",
       "title": "Control Joints",
-      "images": [ "rnr:textures/gui/book/control_joints.png" ],
+      "images": [
+      "rnr:textures/gui/book/control_joints.png"
+      ],
       "border": true
     },
     {
@@ -54,7 +60,9 @@
     {
       "type": "patchouli:image",
       "title": "Фокс Сетт Роуд",
-      "images": [ "rnr:textures/gui/book/faux_sett.png" ],
+      "images": [
+      "rnr:textures/gui/book/faux_sett.png"
+      ],
       "border": true
     }
   ],
