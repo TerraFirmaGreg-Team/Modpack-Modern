@@ -3,6 +3,10 @@
 
 function registerDiggerHelmetRecipes(event) {
 
+	event.remove({ id: 'diggerhelmet:wool_lining' })
+	event.remove({ id: 'diggerhelmet:silk_lining' })
+	event.remove({ id: 'diggerhelmet:auto_drink_modifier' })
+
 	event.recipes.gtceu.assembler('tfg:mining_speed_modifier')
 		.itemInputs('#forge:plates/blue_steel', '#gtceu:circuits/lv', '2x tfg:haste_pill')
 		.inputFluids(Fluid.of('tfcagedalcohol:aged_whiskey', 1000))
@@ -15,7 +19,7 @@ function registerDiggerHelmetRecipes(event) {
 		'BCB',
 		'DCD'
 	], {
-		A: 'waterflasks:leather_flask',
+		A: '#tfc:glass_bottles',
 		B: '#forge:string',
 		C: 'minecraft:bamboo',
 		D: 'tfc:glue'
@@ -26,7 +30,7 @@ function registerDiggerHelmetRecipes(event) {
 		'BCB',
 		' C '
 	], {
-		A: 'waterflasks:leather_flask',
+		A: '#tfc:glass_bottles',
 		B: '#forge:screws/wrought_iron',
 		C: '#forge:foils/rubber'
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
@@ -59,7 +63,7 @@ function registerDiggerHelmetRecipes(event) {
 			'T': { tag: 'tfc:shears' },
 			'C': { tag: 'tfc:candles' },
 			'A': { tag: 'forge:tools/screwdrivers'},
-			'B': { tag: 'forge:screws/wrought_iron'}
+			'B': { tag: 'forge:screws/tin' }
 		},
 		repairPercentage: 0.75,
 		toolDamagePercentage: 0.01
@@ -79,7 +83,7 @@ function registerDiggerHelmetRecipes(event) {
 			'T': { tag: 'tfc:shears' },
 			'C': { tag: 'tfc:candles' },
 			'A': { tag: 'forge:tools/screwdrivers'},
-			'B': { tag: 'forge:screws/wrought_iron'}
+			'B': { tag: 'forge:screws/tin' }
 		},
 		repairPercentage: 0.75,
 		toolDamagePercentageBroken: 0.02
@@ -101,7 +105,7 @@ function registerDiggerHelmetRecipes(event) {
 				'T': { tag: 'tfc:hammers' },
 				'C': { tag: 'tfc:candles' },
 				'A': { tag: 'forge:tools/screwdrivers'},
-				'B': { tag: 'forge:screws/wrought_iron'}
+				'B': { tag: `forge:screws/${metal}`}
 			},
 			repairPercentage: 0.75,
 			toolDamagePercentage: 0.01
@@ -121,7 +125,7 @@ function registerDiggerHelmetRecipes(event) {
 				'T': { tag: 'tfc:hammers' },
 				'C': { tag: 'tfc:candles' },
 				'A': { tag: 'forge:tools/screwdrivers'},
-				'B': { tag: 'forge:screws/wrought_iron'}
+				'B': { tag: `forge:screws/${metal}`}
 			},
 			repairPercentage: 0.75,
 			toolDamagePercentageBroken: 0.02
