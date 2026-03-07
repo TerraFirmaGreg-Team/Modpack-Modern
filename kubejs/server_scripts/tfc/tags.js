@@ -437,10 +437,6 @@ function registerTFCItemTags(event) {
     event.add('tfc:knives', 'tfc:stone/knife/metamorphic')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_intrusive')
     event.add('tfc:knives', 'tfc:stone/knife/igneous_extrusive')
-    event.add('forge:tools/knives', 'tfc:stone/knife/sedimentary')
-    event.add('forge:tools/knives', 'tfc:stone/knife/metamorphic')
-    event.add('forge:tools/knives', 'tfc:stone/knife/igneous_intrusive')
-    event.add('forge:tools/knives', 'tfc:stone/knife/igneous_extrusive')
 
     //greens and browns
     event.remove('tfc:compost_browns_low', '#tfc:fallen_leaves')

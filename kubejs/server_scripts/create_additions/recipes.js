@@ -92,19 +92,19 @@ const registerCreateAdditionsRecipes = (event) => {
 		E: 'create:brass_casing'
 	}).addMaterialInfo().id('tfg:create_additions/shaped/portable_energy_interface')
 
-	event.recipes.gtceu.assembler('create_additions/battery')
+	event.recipes.gtceu.assembler('create_additions/battery_hv')
 		.itemInputs('2x gtceu:industrial_steam_casing', '#gtceu:batteries/hv')
 		.itemOutputs('2x createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)
 
-	event.recipes.gtceu.assembler('create_additions/battery')
+	event.recipes.gtceu.assembler('create_additions/battery_mv')
 		.itemInputs('gtceu:industrial_steam_casing', '2x #gtceu:batteries/mv')
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
 		.EUt(30)
 
-	event.recipes.gtceu.assembler('create_additions/battery')
+	event.recipes.gtceu.assembler('create_additions/battery_lv')
 		.itemInputs('gtceu:industrial_steam_casing', '8x #gtceu:batteries/lv')
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)

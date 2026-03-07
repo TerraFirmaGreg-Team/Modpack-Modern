@@ -3520,7 +3520,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.30.jar",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.11.0.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -3530,20 +3530,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7612/924/CrashAssistant-forge-1.19-1.20.1-1.10.30.jar",
-                    "id": "7612924",
+                    "url": "https://edge.forgecdn.net/files/7717/580/CrashAssistant-forge-1.19-1.20.1-1.11.0.jar",
+                    "id": "7717580",
                     "parent_id": "1154099",
                     "hashes": {
-                        "sha1": "4bb4c15ab7df481a2fd95554d06a575580b650ef",
-                        "md5": "884ffcd331f0f41d056769efb5190138"
+                        "sha1": "9b9e8f2e0a8b12e3944c06426244e3b9df87f007",
+                        "md5": "52adbe56a82dee81c1f15d7a9b9cd5b4"
                     },
                     "required_dependencies": [],
-                    "size": 1283687,
-                    "date_published": "2026-02-12T05:19:50.857Z"
+                    "size": 3022834,
+                    "date_published": "2026-03-06T03:52:37.523Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.10.30.jar",
+                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.11.0.jar",
                     "mc_versions": [
                         "1.19",
                         "1.19.1",
@@ -3558,16 +3558,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/tlTmxSBW/CrashAssistant-forge-1.19-1.20.1-1.10.30.jar",
-                    "id": "tlTmxSBW",
+                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/J1blVdk1/CrashAssistant-forge-1.19-1.20.1-1.11.0.jar",
+                    "id": "J1blVdk1",
                     "parent_id": "ix1qq8Ux",
                     "hashes": {
-                        "sha512": "36db77aa4c993143a4c5bdfb0f3570fa4206e9b07ff025b24122f8ae7db5f5f60478a37e53ac4c9a55bffed409b74ffde6de93599792a48752e0d5ab0c69345a",
-                        "sha1": "4bb4c15ab7df481a2fd95554d06a575580b650ef"
+                        "sha512": "a3e9824a4d204efeece8fa7b234b242a7438e3089527c10b6bc19d7573f47a40b5770acc9f3e66d67da0a09eb7b1803799dd79c703c2d19770423b3acb846feb",
+                        "sha1": "9b9e8f2e0a8b12e3944c06426244e3b9df87f007"
                     },
                     "required_dependencies": [],
-                    "size": 1283687,
-                    "date_published": "2026-02-12T05:20:06.047805Z"
+                    "size": 3022834,
+                    "date_published": "2026-03-06T03:52:42.266182Z"
                 }
             ]
         },
@@ -4865,7 +4865,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "diggerhelmet-1.20.1-1.0.0.26.jar",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.27.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4874,20 +4874,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7290/228/diggerhelmet-1.20.1-1.0.0.26.jar",
-                    "id": "7290228",
+                    "url": "https://edge.forgecdn.net/files/7723/416/diggerhelmet-1.20.1-1.0.0.27.jar",
+                    "id": "7723416",
                     "parent_id": "1243596",
                     "hashes": {
-                        "sha1": "3fe3d9911069db3c0d816bdbbed01193ba880087",
-                        "md5": "cd1ea215f760b776c3bf48e93188de04"
+                        "sha1": "54f718519e6811ad4318e5aeed0d8378066e655b",
+                        "md5": "cf6724eaeb058ba984c051b9fc26bd45"
                     },
                     "required_dependencies": [
                         "309927",
-                        "388172",
-                        "302973"
+                        "302973",
+                        "388172"
                     ],
-                    "size": 233928,
-                    "date_published": "2025-12-03T15:49:31.887Z"
+                    "size": 352743,
+                    "date_published": "2026-03-07T09:18:03.147Z"
                 },
                 {
                     "type": "modrinth",
@@ -4909,8 +4909,8 @@
                     },
                     "required_dependencies": [
                         "vvuO3ImH",
-                        "8BmcQJ2H",
-                        "JaCEZUhg"
+                        "JaCEZUhg",
+                        "8BmcQJ2H"
                     ],
                     "size": 233928,
                     "date_published": "2025-12-06T11:48:53.965962Z"
@@ -7284,7 +7284,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.70.jar",
+                    "file_name": "greate-0.0.71.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7293,23 +7293,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7649/469/greate-0.0.70.jar",
-                    "id": "7649469",
+                    "url": "https://edge.forgecdn.net/files/7721/70/greate-0.0.71.jar",
+                    "id": "7721070",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "d95d537406a536773d03dbac8816c95e35851cb0",
-                        "md5": "fb21332a6a59179d89345ae25c708a4b"
+                        "sha1": "b0b9c7b9850299928b8bee11a82eb431766a071c",
+                        "md5": "e880f0a606aecce30412db6797ae7c3c"
                     },
                     "required_dependencies": [
                         "890405",
                         "328085"
                     ],
-                    "size": 1314959,
-                    "date_published": "2026-02-19T16:19:00.780Z"
+                    "size": 1316390,
+                    "date_published": "2026-03-06T21:17:55.010Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.70.jar",
+                    "file_name": "greate-0.0.71.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7318,19 +7318,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/Pd8BQLsK/greate-0.0.70.jar",
-                    "id": "Pd8BQLsK",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/ip9Pmwzj/greate-0.0.71.jar",
+                    "id": "ip9Pmwzj",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "df02d54ea7658f133b13d40c7192e7ed549fedd527703e163984b428667f273ef8be0f4299168def74d39ed8e706ad020d1230ab724c094463ae07b779fef438",
-                        "sha1": "d95d537406a536773d03dbac8816c95e35851cb0"
+                        "sha512": "91c4644a77b9e5c5c037df77dc95152dce22d2cb4ee037c2ba7b0c5c9b77e09aaad0caed4861370b9db3372f6064e80ccc076d337d836d76e92e2b20d64e8363",
+                        "sha1": "b0b9c7b9850299928b8bee11a82eb431766a071c"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "LNytGWDc"
                     ],
-                    "size": 1314959,
-                    "date_published": "2026-02-19T16:19:03.195083Z"
+                    "size": 1316390,
+                    "date_published": "2026-03-06T21:17:57.457243Z"
                 }
             ]
         },
@@ -11727,27 +11727,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Sacks 'N Such-1.20.1-1.2.4.jar",
+                    "file_name": "Sacks 'N Such-1.20.1-1.2.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6965/231/Sacks 'N Such-1.20.1-1.2.4.jar",
-                    "id": "6965231",
+                    "url": "https://edge.forgecdn.net/files/7721/827/Sacks 'N Such-1.20.1-1.2.5.jar",
+                    "id": "7721827",
                     "parent_id": "695822",
                     "hashes": {
-                        "sha1": "9819909ff38f14408e313998d225e986333d52b7",
-                        "md5": "80004a900325176c2ff9427198dedb42"
+                        "sha1": "e1596f0699fdd51a7cb5bca69b96a6664f7a77d0",
+                        "md5": "6cf29bc5f8a68921bec8556bc2ece8cd"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 1239847,
-                    "date_published": "2025-09-05T08:32:46.673Z"
+                    "size": 1279802,
+                    "date_published": "2026-03-07T00:03:49.787Z"
                 },
                 {
                     "type": "modrinth",
@@ -11917,7 +11917,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.0.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -11926,20 +11926,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7692/898/ShoulderSurfing-Forge-1.20.1-4.22.0.jar",
-                    "id": "7692898",
+                    "url": "https://edge.forgecdn.net/files/7720/579/ShoulderSurfing-Forge-1.20.1-4.22.1.jar",
+                    "id": "7720579",
                     "parent_id": "243190",
                     "hashes": {
-                        "sha1": "912cecbe5c3b49aafa1e887937c0bee8cfca2709",
-                        "md5": "c3a3fe63dbc40b10f0938aa118c15271"
+                        "sha1": "9fdd51554eef1f06fe9181f2d6566530c5c63625",
+                        "md5": "afbb59de6570ee4d56f6be9ef69f0909"
                     },
                     "required_dependencies": [],
-                    "size": 267326,
-                    "date_published": "2026-02-28T22:08:51.643Z"
+                    "size": 266626,
+                    "date_published": "2026-03-06T19:09:22.753Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.0.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.1.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -11948,16 +11948,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/Uf8EZ65N/ShoulderSurfing-Forge-1.20.1-4.22.0.jar",
-                    "id": "Uf8EZ65N",
+                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/pwsCdsoj/ShoulderSurfing-Forge-1.20.1-4.22.1.jar",
+                    "id": "pwsCdsoj",
                     "parent_id": "kepjj2sy",
                     "hashes": {
-                        "sha512": "dff72f168b20057a26d84c1999dae94fa8a86fda08ccbd7493112dcd354263c3ba5eac089362e9eb9ea08b527c935ac6ff52374ab30a7c84f7f173395d8ba7f4",
-                        "sha1": "912cecbe5c3b49aafa1e887937c0bee8cfca2709"
+                        "sha512": "a8113f738c8930b99397d7e98609364379460e7864ca85f664eb760551f9d7006e68257a76d56c7436c4cef9db4f434c97edc3330d967c214f49804c4b2fe2ef",
+                        "sha1": "9fdd51554eef1f06fe9181f2d6566530c5c63625"
                     },
                     "required_dependencies": [],
-                    "size": 267326,
-                    "date_published": "2026-02-28T22:08:47.285625Z"
+                    "size": 266626,
+                    "date_published": "2026-03-06T19:09:33.732287Z"
                 }
             ]
         },

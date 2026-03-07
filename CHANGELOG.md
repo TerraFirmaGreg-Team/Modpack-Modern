@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+### Changes
+### Bug fixes
+- Fixed crafting table recipes involving a knife being removed @Pyritie
+### Mod updates
+#### Sacks 'n' Such
+- Fixed sacks' voiding not properly working @Traister101
+- Fixed issue with hiking boots' slowdown prevention sometimes not working @Traister101
+- Fixed crossbows not pulling ammo from the Quiver @Traister101
+#### Greate
+- Fixed encased fans voiding input items when there's not enough fluid in the fan to process the entire stack
+- Fixed encased fans not processing faster at different RPMs
+#### Digger Helmet
+- Added higher tiers of helmets
+### Translation updates
+
 ## [0.11.25] - 06-03-2026
 ### MV Changes
 - Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving
