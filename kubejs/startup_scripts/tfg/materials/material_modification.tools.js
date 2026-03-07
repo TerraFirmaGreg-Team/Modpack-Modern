@@ -223,6 +223,7 @@ function registerTFGToolMaterialModification(event) {
 	
 	// ULV
 
+	// Havest speed, attack damage, durability, harvest level, tool types
 	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4.0, 3.5, 132, 2, ULVTools).build());
 
