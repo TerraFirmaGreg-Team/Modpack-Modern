@@ -101,10 +101,19 @@ function registerTFGHVMaterialRecipes(event) {
 
 	// Alumina
 
-	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
+	event.recipes.gtceu.large_chemical_reactor('tfg:aluminium_sulfate_lcr')
 		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
 		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1), Item.of('gtceu:silicon_dioxide_dust'))
+		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:diluted_sulfuric_acid', 1000))
+		.duration(20 * 84)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+
+	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
+		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1))
 		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:diluted_sulfuric_acid', 1000))
 		.duration(20 * 84)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -123,6 +132,13 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemOutputs(Item.of('tfg:alumina_dust', 1))
 		.duration(20 * 8)
 		.EUt(GTValues.VA[GTValues.HV])
+	
+	event.recipes.gtceu.electrolyzer('tfg:sodium_sulfate_recycling')
+		.itemInputs(Item.of('tfg:sodium_sulfate_dust', 7))
+		.itemOutputs(Item.of('gtceu:sodium_dust', 2), Item.of('gtceu:sulfur_dust', 1))
+		.outputFluids(Fluid.of('gtceu:oxygen', 4000))
+		.duration(20 * 4.2)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// Perlite is also a water purifier irl!
 	event.recipes.gtceu.distillery('tfg:distilled_water_perlite')
