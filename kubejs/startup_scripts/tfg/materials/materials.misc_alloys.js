@@ -42,7 +42,9 @@ function registerTFGMiscAlloyMaterials(event) {
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
-		.flags(GTMaterialFlags.GENERATE_PLATE)
+		.flags(
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD)
 
 
 	// Material for MV
