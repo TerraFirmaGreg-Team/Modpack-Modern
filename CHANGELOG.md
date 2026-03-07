@@ -3,7 +3,12 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
-- Fixed crafting table recipes involving a knife being removed @Pyritie
+- Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
+- Fixed flint tools being uncraftable @Pyritie
+- Fixed some recipe conflicts with the Hexidecrubrometer and AES insulation roll (#3288) @Tipy4
+- Fixed not being able to feed some carnivorous dinosaurs (#3288) @Tipy4
+- Fixed the chemical reactor Butyraldehyde recipe not being moved to the correct circuit (5) (#3288) @Tipy4
+- Fixed foxes crashing the game when fed meal bags and other foods that are supposed to return an item to the player (#3277) @Mqrius
 ### Mod updates
 #### Sacks 'n' Such
 - Fixed sacks' voiding not properly working @Traister101
