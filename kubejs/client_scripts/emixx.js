@@ -178,6 +178,7 @@ const registerSingleGroups = (event) => {
         '#forge:cobblestone',
         '#tfc:rock/smooth',
         '#tfc:rock/gravel',
+        '#tfc:rock/aqueducts',
 
         // Blocks (Firmalife)
         '#firmalife:food_shelves',
@@ -241,11 +242,10 @@ const registerMultiGroups = (event) => {
             '#tfc:rock/bricks',
             '#tfc:rock/mossy_bricks',
             '#tfc:rock/cracked_bricks',
-            '#tfc:rock/chiseled_bricks'
-        ]},
-        { group_name: 'aqueducts', tags: [
-            '#tfc:rock/aqueducts',
-            '#tfg:rock/aqueducts'
+            '#tfc:rock/chiseled_bricks',
+            'tfc:fire_bricks',
+            'tfcbetterbf:insulated_fire_bricks',
+            'gtceu:coke_oven_bricks'
         ]},
         { group_name: 'concretes', tags: [
             '#forge:concretes',

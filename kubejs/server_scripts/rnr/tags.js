@@ -39,7 +39,6 @@ const registerRnrItemTags = (event) => {
 	event.add('rnr:roof_blocks', `rnr:ceramic_roof_stairs`)
 	event.add('rnr:roof_blocks', `rnr:ceramic_roof_slab`)
 
-    //    '#rnr:concrete_roads', // CURRENTLY USES REGEX
 	global.TFC_STONE_TYPES.forEach(stone => {
 		event.add('rnr:cobbled_roads', `rnr:rock/cobbled_road/${stone}`)
 		event.add('rnr:cobbled_roads', `rnr:rock/cobbled_road/${stone}_stairs`)
