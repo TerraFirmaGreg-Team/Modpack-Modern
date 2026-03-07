@@ -192,11 +192,6 @@ function registerTFGToolMaterialModification(event) {
 		}
 	}
 
-	// Add buzzsaw blades
-	GTMaterials.CobaltBrass.addFlags(GENERATE_BUZZSAW_BLADE);
-	GTMaterials.WroughtIron.addFlags(GENERATE_BUZZSAW_BLADE);
-	GTMaterials.Steel.addFlags(GENERATE_BUZZSAW_BLADE);
-
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
 	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
