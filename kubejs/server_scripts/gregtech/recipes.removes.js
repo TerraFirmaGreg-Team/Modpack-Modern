@@ -926,11 +926,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
 
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_magnesia_refractory_brick_to_nugget' })
-
-	event.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
-	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_calcite' })
-	event.remove({ id: 'gtceu:mixer/concrete_from_clay' })
-	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_clay' })
 }
 
 function removeMaceratorRecipe(event, id) {

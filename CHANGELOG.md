@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
 ### Bug fixes
 - Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
 - Fixed flint tools being uncraftable @Pyritie
