@@ -13,6 +13,7 @@ function registerTFGFlagsMaterialModification(event) {
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
 		GENERATE_DUSTY_ORES,
+		GENERATE_BUZZSAW_BLADE,
 	} = TFGMaterialFlags
 
 	const {
