@@ -53,6 +53,7 @@ function registerTFGMaterialHiddenPipesTags(event) {
     const toolsPlastic = ['mallet', 'plunger'];
         materialPlastic.forEach(material => {
             toolsPlastic.forEach(tool => {
+                event.removeAllTagsFrom(`gtceu:${material}_${tool}`);
                 event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
             });
         });
@@ -64,6 +65,7 @@ function registerTFGMaterialHiddenPipesTags(event) {
 
     materialTagTools.forEach(material => {
         toolsTagTools.forEach(tool => {
+            event.removeAllTagsFrom(`gtceu:${material}_${tool}`);
             event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
         });
     });
