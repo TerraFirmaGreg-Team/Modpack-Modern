@@ -25,7 +25,7 @@ files:
     # If you are adding a new language to the Crowdin project,
     # ** MAKE SURE YOU ADD THE APPROPRIATE CUSTOM LANGUAGE MAPPING FOR THE PLACEHOLDER. **
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
-    update_option: "update_without_changes"
+    update_option: "update_as_unapproved"
     #dest: "/messages.%file_extension%"
 
     languages_mapping:
@@ -63,7 +63,7 @@ files:
     
   - source: "/tfc/patchouli_books/field_guide/en_us/**/*.json"
     translation: "/tfc/patchouli_books/field_guide/%locale_with_underscore%/**/%original_file_name%"
-    update_option: "update_without_changes"
+    update_option: "update_as_unapproved"
     ignore: [
       "/**/tfg_ores/*_index.json"
     ]

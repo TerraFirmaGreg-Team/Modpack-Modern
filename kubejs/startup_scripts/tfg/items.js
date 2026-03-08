@@ -33,6 +33,9 @@ const registerTFGItems = (event) => {
 	event.create('tfg:cryo_fluix_pearl')
 	event.create('tfg:uv_led')
 	event.create('tfg:smd_uv_led')
+	event.create('tfg:blue_alloy_desh_foil')
+	event.create('tfg:chorus_ceramic_insulation')
+	event.create('tfg:fired_chorus_ceramic_insulation')
 
 	// Molds
 	global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
@@ -59,4 +62,25 @@ const registerTFGItems = (event) => {
 
 	event.create('tfg:loaded_resin')
 		.texture('tfg:item/btx/loaded_resin')
+
+	// Add New Ceramic Circuit Board
+
+	event.create('tfg:mo_activated_sic_substrate')
+		.texture('tfg:item/mo_activated_sic_substrate')
+	
+	event.create('tfg:copper_bonded_al2o3_pcb')
+		.texture('tfg:item/copper_bonded_al2o3_pcb')
+
+	event.create('tfg:chromium_bonded_beo_pcb')
+		.texture('tfg:item/chromium_bonded_beo_pcb')
+
+	// Add New Lenses Support
+
+	event.create('tfg:optical_borosilicate_blank')
+		.texture('tfg:item/optical_borosilicate_blank')
+
+	event.create('tfg:worked_optical_borosilicate_blank')
+		.texture('tfg:item/worked_optical_borosilicate_blank')
+		.tag('tfg:precision_fabricator_dipped_items')
+
 }
