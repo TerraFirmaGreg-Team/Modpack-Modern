@@ -132,6 +132,13 @@ function registerTFGHVMaterialRecipes(event) {
 		.duration(20*5)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.recipes.gtceu.distillery('tfg:distilled_water_zeolite')
+		.itemInputs('#forge:dusts/zeolite')
+		.inputFluids(Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 2000))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	// Change Titanium to require Nichrome Coils
 
 	event.remove({ id: 'gtceu:electric_blast_furnace/titanium_from_tetrachloride'})
