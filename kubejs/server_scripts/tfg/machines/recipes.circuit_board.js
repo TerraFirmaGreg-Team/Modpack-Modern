@@ -55,6 +55,10 @@ function registerTFGCircuitBoardsRecipes(event) {
 
 	// Alumina Copper Bonded Circuit Boards
 
+	event.remove({ id: 'gtceu:arc_furnace/arc_cupronickel_foil'})
+	event.remove({ id: 'gtceu:arc_furnace/arc_silicon_carbide_plate'})
+	event.remove({ id: 'gtceu:arc_furnace/arc_molybdenum_foil'})
+
 	event.recipes.gtceu.arc_furnace('tfg:copper_bonded_al2o3_pcb')
 		.itemInputs(Item.of('tfg:alumina_plate'), Item.of('gtceu:cupronickel_foil', 4))
 		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
@@ -154,7 +158,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 		},
 	]
 
-    var REACTOR_PREFIXES = ["gtceu:chemical_reactor", "gtceu:large_chemical_reactor"]
+    var REACTOR_PREFIXES = ["gtceu:chemical_reactor"]
 
     FLUID_REPLACEMENTS.forEach(function(replacement) {
         REACTOR_PREFIXES.forEach(function(prefix) {
