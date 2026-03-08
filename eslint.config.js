@@ -18,7 +18,7 @@ export default defineConfig([
       "no-undef": "off",
       "no-unused-vars": "off",
       "no-unexpected-multiline": "off",
-      "no-var": "warn",
+      "no-var": "off",
       "prefer-template": "warn",
       "no-unreachable-loop": "warn",
       "no-self-compare": "warn",
@@ -57,7 +57,7 @@ export default defineConfig([
       "@stylistic/arrow-spacing": [1, { "before": true, "after": true }],
       "@stylistic/keyword-spacing": [1, { "before": true, "after": true }],
       "@stylistic/dot-location": [1, "property"],
-      "@stylistic/comma-dangle": [1, "allow"]
+      "@stylistic/comma-dangle": [0, "allow"]
     }
   },
 ]);
