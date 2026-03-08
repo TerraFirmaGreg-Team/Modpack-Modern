@@ -158,20 +158,20 @@ function registerTFGCircuitBoardsRecipes(event) {
 		},
 	]
 
-    var REACTOR_PREFIXES = ["gtceu:chemical_reactor"]
+	FLUID_REPLACEMENTS.forEach(function(replacement) {
+		var recipeId = "gtceu:chemical_reactor/" + replacement.recipe
+		var largeRecipeId = "gtceu:large_chemical_reactor/" + replacement.recipe
 
-    FLUID_REPLACEMENTS.forEach(function(replacement) {
-        REACTOR_PREFIXES.forEach(function(prefix) {
-            var recipeId = replacement.recipe
-            if (replacement.new !== undefined) {
-                var fluidReplacements = {}
-                fluidReplacements[replacement.old] = replacement.new
-                global.modifyRecipe(event, recipeId, {
-                    fluidReplacements: fluidReplacements
-                })
-            } else {
-                event.remove({ id: recipeId })
-            }
-        })
-    })
+		if (replacement.new !== undefined) {
+			var fluidReplacements = {}
+			fluidReplacements[replacement.old] = replacement.new
+			global.modifyRecipe(event, recipeId, {
+				fluidReplacements: fluidReplacements
+			})
+			event.remove({ id: largeRecipeId })
+		} else {
+			event.remove({ id: recipeId })
+			event.remove({ id: largeRecipeId })
+		}
+	})
 }
