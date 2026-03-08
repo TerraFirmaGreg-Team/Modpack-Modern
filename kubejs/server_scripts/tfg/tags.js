@@ -92,6 +92,8 @@ const registerTFGItemTags = (event) => {
 	
 	// Tags for the precision fabricator renderer
 	event.add('tfg:precision_fabricator_dipped_items', 'tfg:silicon_seed_crystal')
+	event.add('tfg:precision_fabricator_dipped_items', 'tfg:worked_optical_borosilicate_blank')
+	event.add('tfg:precision_fabricator_dipped_items', 'tfg:mo_50_re_ingot')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/amethyst')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/opal')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/diamond')

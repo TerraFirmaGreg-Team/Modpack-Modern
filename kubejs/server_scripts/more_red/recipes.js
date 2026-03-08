@@ -72,7 +72,7 @@ const registerMoreRedRecipes = (event) => {
 	// Red Wire Post Relay Plate
 	event.recipes.gtceu.assembler('tfg/morered/hexidecrubrometer')
 		.itemInputs('8x gtceu:stone_plate', '9x minecraft:redstone', '4x minecraft:quartz')
-		.circuit(5)
+		.circuit(28)
 		.itemOutputs('morered:hexidecrubrometer')
 		.duration(100)
 		.EUt(16)

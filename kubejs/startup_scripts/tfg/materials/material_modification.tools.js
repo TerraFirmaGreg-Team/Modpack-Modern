@@ -192,11 +192,6 @@ function registerTFGToolMaterialModification(event) {
 		}
 	}
 
-	// Add buzzsaw blades
-	GTMaterials.CobaltBrass.addFlags(GENERATE_BUZZSAW_BLADE);
-	GTMaterials.WroughtIron.addFlags(GENERATE_BUZZSAW_BLADE);
-	GTMaterials.Steel.addFlags(GENERATE_BUZZSAW_BLADE);
-
 	// Cast iron tools don't make sense but gregtech shits itself if they're missing,
 	// so I'm just giving them terrible terrible stats
 	GTMaterials.Iron.removeProperty(PropertyKey.TOOL);
@@ -220,9 +215,22 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.PICKAXE,
 		GTToolType.SWORD
 	]).build());
+
+	TFGHelpers.getMaterial('arsenic_bronze').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5.5, 4, 212, 2, [
+		GTToolType.HOE,
+		GTToolType.KNIFE,
+		GTToolType.SHOVEL,
+		GTToolType.BUTCHERY_KNIFE,
+		GTToolType.SPADE,
+		GTToolType.SCYTHE,
+		GTToolType.MINING_HAMMER,
+		GTToolType.SWORD,
+		GTToolType.AXE
+	]).build());
 	
 	// ULV
 
+	// Havest speed, attack damage, durability, harvest level, tool types
 	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4.0, 3.5, 132, 2, ULVTools).build());
 

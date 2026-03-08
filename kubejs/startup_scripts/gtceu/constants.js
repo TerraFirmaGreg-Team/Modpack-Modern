@@ -44,7 +44,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     // Другое (Other)
     "gtceu:flint_mortar",
-    "gtceu:flint_knife",
     "gtceu:firebrick",
     "gtceu:firebricks",
     "gtceu:fireclay_dust",
@@ -452,8 +451,8 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
     { recipeId: "gtceu:large_chemical_reactor/acetic_acid_from_methanol", circuitNumber: 1 },
 
-    { recipeId: "gtceu:chemical_reactor/butraldehyde", circuitNumber: 5 },
-    { recipeId: "gtceu:large_chemical_reactor/butraldehyde", circuitNumber: 5 },
+    { recipeId: "gtceu:chemical_reactor/butyraldehyde", circuitNumber: 5 },
+    { recipeId: "gtceu:large_chemical_reactor/butyraldehyde", circuitNumber: 5 },
 
     { recipeId: "gtceu:chemical_reactor/saltpeter", circuitNumber: 2 },
     { recipeId: "gtceu:large_chemical_reactor/saltpeter", circuitNumber: 2 },

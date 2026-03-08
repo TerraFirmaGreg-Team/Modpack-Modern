@@ -1,5 +1,27 @@
 # Changelog
 
+## Unreleased
+### Changes
+- Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
+### Bug fixes
+- Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
+- Fixed flint tools being uncraftable @Pyritie
+- Fixed some recipe conflicts with the Hexidecrubrometer and AES insulation roll (#3288) @Tipy4
+- Fixed not being able to feed some carnivorous dinosaurs (#3288) @Tipy4
+- Fixed the chemical reactor Butyraldehyde recipe not being moved to the correct circuit (5) (#3288) @Tipy4
+- Fixed foxes crashing the game when fed meal bags and other foods that are supposed to return an item to the player (#3277) @Mqrius
+### Mod updates
+#### Sacks 'n' Such
+- Fixed sacks' voiding not properly working @Traister101
+- Fixed issue with hiking boots' slowdown prevention sometimes not working @Traister101
+- Fixed crossbows not pulling ammo from the Quiver @Traister101
+#### Greate
+- Fixed encased fans voiding input items when there's not enough fluid in the fan to process the entire stack
+- Fixed encased fans not processing faster at different RPMs
+#### Digger Helmet
+- Added higher tiers of helmets
+### Translation updates
+
 ## [0.11.25] - 06-03-2026
 ### MV Changes
 - Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving
@@ -47,7 +69,13 @@
 - Fixed not being able to break Incoloy MA-956 frames with the tools available in EV (#3194) @Pyritie
 - Fixed not being able to craft wooden tongs with the TFC stone knife you can rarely find in ruins (#3222) @Pyritie
 - Fixed TFC "pure" fertilisers having inconsistent fertiliser values (#3165) @Pyritie
+- Fixed recipe collision with buckets and Freedom gun (#3279) @Tipy4
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Chinese (traditional) @CrazyO9
+- Ukranian @MetEnBouldry @furrydenis
+- Russian @Nixieeunrare
+- Polish @Xtrial-01
 
 ## [0.11.24] - 22-02-2026
 ### Notice
