@@ -289,4 +289,37 @@ const registerSNSRecipes = (event) => {
 		input: ChemicalHelper.get(TagPrefix.rod, GTMaterials.RedSteel, 1),
 		result: { item: 'sns:metal/horseshoe/red_steel' }
 	}).id(`tfg:rolling/red_steel_horseshoe`)
+
+	const BOOT_TIERS = [
+		{ id: 'hiking_boots', resource: 'sns:bound_leather_strip' },
+		{ id: 'steel_toe_hiking_boots', resource: '#forge:plates/steel' },
+		{ id: 'black_steel_toe_hiking_boots', resource: '#forge:plates/black_steel' },
+		{ id: 'blue_steel_toe_hiking_boots', resource: '#forge:plates/blue_steel' },
+		{ id: 'red_steel_toe_hiking_boots', resource: '#forge:plates/red_steel' }
+	]
+
+	BOOT_TIERS.slice(0, 3).forEach((baseTier, i) => {
+        BOOT_TIERS.slice(i + 1).forEach(upgradedTier => {
+
+            event.shaped(`sns:${upgradedTier.id}`, [
+				' C ',
+				'BAB',
+				'   '
+			], {
+				A: `sns:${baseTier.id}`,
+				B: `${upgradedTier.resource}`,
+				C: '#forge:tools/hammers'
+			}).id(`sns:shaped/${baseTier.id}_to_${upgradedTier.id}`)
+		})
+	})
+
+	BOOT_TIERS.forEach(tier => {
+		 event.shapeless(`sns:${tier.id}`, [
+			`sns:${tier.id}`,
+			`${tier.resource}`,
+			'#tfc:sewing_needles'
+		])
+		.damageIngredient('#tfc:sewing_needles', 1)
+		.id(`sns:shapeless/${tier.id}_repair`)
+	})
 }
