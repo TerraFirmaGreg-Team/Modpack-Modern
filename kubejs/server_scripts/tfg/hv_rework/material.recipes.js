@@ -110,15 +110,6 @@ function registerTFGHVMaterialRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(2)
 
-	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
-		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
-		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
-		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1))
-		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:diluted_sulfuric_acid', 1000))
-		.duration(20 * 84)
-		.EUt(GTValues.VA[GTValues.LV])
-		.circuit(2)
-
 	event.recipes.gtceu.chemical_bath('tfg:aluminium_hydroxide_dust')
 		.itemInputs(Item.of('tfg:aluminium_sulfate_dust', 1))
 		.inputFluids(Fluid.of('tfc:lye', 2000))
