@@ -158,7 +158,7 @@ function registerTFGCircuitBoardsRecipes(event) {
 
     FLUID_REPLACEMENTS.forEach(function(replacement) {
         REACTOR_PREFIXES.forEach(function(prefix) {
-            var recipeId = prefix + "/" + replacement.recipe
+            var recipeId = replacement.recipe
             if (replacement.new !== undefined) {
                 var fluidReplacements = {}
                 fluidReplacements[replacement.old] = replacement.new
