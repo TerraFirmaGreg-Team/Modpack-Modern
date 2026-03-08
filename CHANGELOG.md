@@ -3,13 +3,20 @@
 ## Unreleased
 ### Changes
 - Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
+- Primitive Illagers now drop new unique Arsenic Bronze tools instead of cobalt brass @Pyritie
+- Added upgrade and repair recipes for hiking boots (#3296) @SakuraKitsurugi
 ### Bug fixes
 - Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
+- Fixed tools having 1/6 of their intended durability (#3329) @TomPlop
 - Fixed flint tools being uncraftable @Pyritie
 - Fixed some recipe conflicts with the Hexidecrubrometer and AES insulation roll (#3288) @Tipy4
 - Fixed not being able to feed some carnivorous dinosaurs (#3288) @Tipy4
 - Fixed the chemical reactor Butyraldehyde recipe not being moved to the correct circuit (5) (#3288) @Tipy4
 - Fixed foxes crashing the game when fed meal bags and other foods that are supposed to return an item to the player (#3277) @Mqrius
+- Fixed recipe conflict for copper-bonded alumina circuit board (#3314) @TomPlop
+- Fixed duplicate recipes for ceramic/epoxy circuit boards (#3306) @TomPlop
+- Fixed maintenance hatch tooltips showing an error message (#3329) @TomPlop
+- Fixed some quests (#3304) and new material names (#3315) @Pyritie
 ### Mod updates
 #### Sacks 'n' Such
 - Fixed sacks' voiding not properly working @Traister101

@@ -23,6 +23,14 @@ const registerAFCItemTags = (event) => {
         event.add('firmalife:stomping_barrels', `afc:wood/stomping_barrel/${woodType}`)
         event.add('firmalife:barrel_presses', `afc:wood/barrel_press/${woodType}`)
 		event.add('tfc:sewing_tables', `afc:wood/sewing_table/${woodType}`)
+		event.add('tfc:scribing_tables', `afc:wood/scribing_table/${woodType}`)
+		event.add('tfc:jar_shelves', `afc:wood/jar_shelf/${woodType}`)
+		event.add('tfc:minecarts', `afc:wood/chest_minecart/${woodType}`)
+		event.add('minecraft:signs', `afc:wood/sign/${woodType}`)
+
+		global.TFC_EQUIPMENT_METALS.forEach(metalType => {
+			event.add('minecraft:hanging_signs', `afc:wood/hanging_sign/${metalType}/${woodType}`)
+		})
     })
 
 	//Hardwood Tags
