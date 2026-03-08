@@ -122,6 +122,14 @@ function registerGTCEUBlockTags(event) {
         event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
         event.add('tfg:gtceu_concrete_blocks', ids);
     });
+
+    // lamp tag for EMI++
+    global.MINECRAFT_DYE_NAMES.forEach(color => {
+        event.add('gtceu:lamps', `gtceu:${color}_lamp`)
+	    event.add('gtceu:lamps', `gtceu:${color}_borderless_lamp`)
+    })
+
+    event.add('gtceu:mineable/pickaxe_or_wrench', '#gtceu:lamps')
 }
 
 /** @param {TagEvent.Fluid} event  */
