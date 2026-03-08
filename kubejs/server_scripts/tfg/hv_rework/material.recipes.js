@@ -101,7 +101,7 @@ function registerTFGHVMaterialRecipes(event) {
 
 	// Alumina
 
-	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
+	event.recipes.gtceu.large_chemical_reactor('tfg:aluminium_sulfate_lcr')
 		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
 		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
 		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1), Item.of('gtceu:silicon_dioxide_dust'))
