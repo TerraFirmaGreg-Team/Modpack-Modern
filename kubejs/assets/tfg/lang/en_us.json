@@ -5391,5 +5391,7 @@
   "quests.extreme_voltage.rocket_t2_rotor.desc": "The &bASM 4914 Titanium Rocket Alloy Turbine Rotor&r is the natural upgrade if you did not craft the &bInconel&r one. It offers solid average stats and should perform well in your &eTurbines&r, making it a reliable option.\n\nDo not overlook it if you want to avoid the low &bEfficiency&r of the &bTungsten-Bismuth&r rotor.",
 
   "quests.high_voltage.alumina_board.subtitle": "May be easier, or not",
-  "quests.high_voltage.alumina_board.desc": "The &bCopper Bonded Alumina Circuit Boards&r are a direct upgrade over the old &7Silicon Carbide&r ones. With them, you can craft twice as many &eCeramic Circuit Boards&r while skipping the more complex process of producing &7Silicon Carbide&r.\n\nThis option is entirely optional, and it is up to you to decide whether you want to invest the resources into this upgrade.\n\nTake note that the next tier, &aChromium Bonded BeO&r, is not yet available in the game."
+  "quests.high_voltage.alumina_board.desc": "The &bCopper Bonded Alumina Circuit Boards&r are a direct upgrade over the old &7Silicon Carbide&r ones. With them, you can craft twice as many &eCeramic Circuit Boards&r while skipping the more complex process of producing &7Silicon Carbide&r.\n\nThis option is entirely optional, and it is up to you to decide whether you want to invest the resources into this upgrade.\n\nTake note that the next tier, &aChromium Bonded BeO&r, is not yet available in the game.",
+
+  "tfg.multiblock.large_boiler.fuel_efficiency": "Fuel Efficiency: %s"
 }
