@@ -5151,6 +5151,77 @@
             ]
         },
         {
+            "pakku_id": "ttidH4UwJlOaVBBL",
+            "pakku_links": [
+                "UYwzsHbcjulcx9ZL",
+                "oC0unMVGatUQIsDP"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "emi-backport",
+                "modrinth": "emi-plus-backport"
+            },
+            "name": {
+                "curseforge": "EMI++ Backport",
+                "modrinth": "EMI++ Backport"
+            },
+            "id": {
+                "curseforge": "1411826",
+                "modrinth": "N9WucjHL"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emixx-forge-1.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7690/52/emixx-forge-1.3.1.jar",
+                    "id": "7690052",
+                    "parent_id": "1411826",
+                    "hashes": {
+                        "sha1": "49faa38afd2bbb5e53ddac1145240b4296b208f7",
+                        "md5": "9fcc471b84868c07de5f96e9dea61dbb"
+                    },
+                    "required_dependencies": [
+                        "580555",
+                        "351264"
+                    ],
+                    "size": 394019,
+                    "date_published": "2026-02-28T10:14:33.850Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "emixx-forge-1.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/N9WucjHL/versions/3HccURBF/emixx-forge-1.3.1.jar",
+                    "id": "3HccURBF",
+                    "parent_id": "N9WucjHL",
+                    "hashes": {
+                        "sha512": "0c19d3602284226ffc674eb54a6a73c873752c2421cf0fd07a2591bfff222d94725af64d4306050106c7d9415d1748b78ccef2b98cd571135808c3362ed427b8",
+                        "sha1": "49faa38afd2bbb5e53ddac1145240b4296b208f7"
+                    },
+                    "required_dependencies": [
+                        "fRiHVvU7",
+                        "ordsPcFz"
+                    ],
+                    "size": 394019,
+                    "date_published": "2026-02-28T10:14:33.628542Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "PDnn8hOodQ10vlXc",
             "type": "MOD",
             "side": "CLIENT",
