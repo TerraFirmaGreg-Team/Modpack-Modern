@@ -109,6 +109,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
+	
+	event.add('tfcambiental:cold_stuff', 'minecraft:packed_ice')
+	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 }
 
 //#region Blocks
@@ -137,11 +142,8 @@ const registerTFGBlockTags = (event) => {
 	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
 
