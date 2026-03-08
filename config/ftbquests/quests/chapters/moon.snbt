@@ -137,20 +137,20 @@
 		{
 			id: "25F53D39F1EEAC02"
 			linked_quest: "0585527D1854628B"
-			x: -1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			id: "6032382FF4E3A440"
 			linked_quest: "3AEAB1930F4CC034"
-			x: -1.0d
-			y: 2.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "1E65B1AC5F11948C"
 			linked_quest: "7CA3A5EFE3D5B688"
-			x: -1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -178,20 +178,45 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.space_survival.compressed_gases.desc}"]
+			icon: "tfg:compressed_nitrox_bucket"
 			id: "493D733A5438DD7E"
 			subtitle: "{quests.space_survival.compressed_gases.subtitle}"
-			tasks: [{
-				id: "7168697817CE63A8"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:compressed_nitrox_bucket)item(tfg:compressed_heliox_bucket)item(tfg:compressed_heliox_3_bucket)item(tfg:compressed_trimix_bucket)item(tfg:compressed_trimix_3_bucket))"
-					}
+			tasks: [
+				{
+					id: "55F0573EEA998233"
+					item: "tfg:compressed_nitrox_bucket"
+					optional_task: true
+					type: "item"
 				}
-				title: "{quests.space_survival.compressed_gases.task}"
-				type: "item"
-			}]
+				{
+					id: "5B7D162682A98E85"
+					item: "tfg:compressed_heliox_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5512A96D7239D692"
+					item: "tfg:compressed_heliox_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "60EC41B65127C9F3"
+					item: "tfg:compressed_trimix_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3272ED31CC445797"
+					item: "tfg:compressed_trimix_3_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "09EE10B34E5AC1A2"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.space_survival.compressed_gases.title}"
 			x: -1.0d
 			y: -5.5d
@@ -355,7 +380,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.rover.title}"
-			x: -4.0d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
@@ -404,7 +429,7 @@
 				}
 			]
 			title: "{quests.space_survival.oxygen_info.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -431,7 +456,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["5826EC76931359B8"]
+			dependencies: ["00A2566109144D7F"]
 			description: [
 				"{quests.space_survival.railgun.desc.1}"
 				"{@pagebreak}"
@@ -448,7 +473,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.space_survival.railgun.title}"
-			x: 2.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -481,13 +506,21 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.high_voltage.rocket_fuel.desc}"]
+			icon: "gtceu:rocket_fuel_bucket"
 			id: "0B80972F50E08B8D"
 			subtitle: "{quests.high_voltage.rocket_fuel.subtitle}"
-			tasks: [{
-				id: "5FBF567FFC837BFA"
-				item: "gtceu:rocket_fuel_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5FBF567FFC837BFA"
+					item: "gtceu:rocket_fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2BE785A6593B9B57"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.high_voltage.rocket_fuel.title}"
 			x: -7.0d
 			y: -5.5d
@@ -507,8 +540,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.interplanetary_railgun.title}"
-			x: 4.5d
-			y: -2.5d
+			x: -7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
@@ -525,8 +558,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.monitor_railgun.title}"
-			x: 4.5d
-			y: 0.0d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1A9A5F55F1F0AC58"]
@@ -543,7 +576,7 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.receiver_railgun.title}"
-			x: 4.5d
+			x: -1.0d
 			y: 2.5d
 		}
 		{
@@ -571,8 +604,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.input_bus_railgun.title}"
-			x: 6.5d
-			y: -2.5d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["783BB3FC5702DA8C"]
@@ -597,8 +630,8 @@
 				}
 			]
 			title: "{quests.space_survival.ammo_railgun.title}"
-			x: 6.5d
-			y: -3.5d
+			x: -8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -613,8 +646,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.space_survival.redstone_railgun.title}"
-			x: 6.5d
-			y: -1.0d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -629,8 +662,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.space_survival.robot_arm_railgun.title}"
-			x: 6.5d
-			y: 0.0d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -659,8 +692,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.output_bus_railgun.title}"
-			x: 6.5d
-			y: 2.5d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["498E559B9C37D2CA"]
@@ -675,8 +708,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.space_survival.delay_railgun.title}"
-			x: 6.5d
-			y: 1.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3F785579F13B0F46"]
@@ -698,8 +731,8 @@
 				type: "item"
 			}]
 			title: "{quests.space_survival.soulbound.title}"
-			x: 3.0d
-			y: -4.0d
+			x: 5.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.moon.subtitle}"]
