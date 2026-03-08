@@ -20,6 +20,7 @@
 			y: -8.5d
 		}
 		{
+			icon: "tfg:compressed_nitrox_bucket"
 			id: "33D3C2A9337335D2"
 			linked_quest: "493D733A5438DD7E"
 			x: 11.0d
@@ -57,7 +58,15 @@
 		{
 			id: "3274381865E7D011"
 			linked_quest: "0585527D1854628B"
-			x: 19.5d
+			x: 19.0d
+			y: -2.0d
+		}
+		{
+			id: "0518FD802310830C"
+			linked_quest: "1A9A5F55F1F0AC58"
+			shape: "octagon"
+			size: 2.0d
+			x: 17.0d
 			y: -6.0d
 		}
 	]
@@ -193,6 +202,7 @@
 		{
 			dependencies: ["52AD30F04DD5A812"]
 			description: ["{quests.high_voltage.assembler.desc}"]
+			hide_dependency_lines: true
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
 			tasks: [{
@@ -375,7 +385,6 @@
 		{
 			dependencies: [
 				"7E755297E9685374"
-				"578ECB10B30A77C7"
 				"2F77122B74877BED"
 				"09C63B0E303AD8FD"
 			]
@@ -1392,8 +1401,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.regolith_vapor.title}"
-			x: 18.0d
-			y: -1.0d
+			x: 17.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A21CCAEB1FDF38E"]
@@ -1447,7 +1456,7 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.dusty_ores.title}"
-			x: 18.0d
+			x: 17.5d
 			y: 3.0d
 		}
 		{
@@ -1527,7 +1536,7 @@
 				}
 			]
 			title: "{quests.high_voltage.final_dust.title}"
-			x: 18.0d
+			x: 17.5d
 			y: 5.0d
 		}
 		{
@@ -1549,8 +1558,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.wand.title}"
-			x: 16.0d
-			y: -6.0d
+			x: 15.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
@@ -1572,8 +1581,8 @@
 				}
 			]
 			title: "{quests.high_voltage.hypertubes.title}"
-			x: 12.0d
-			y: -6.0d
+			x: 13.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["16B735F9C391D260"]
@@ -1807,8 +1816,8 @@
 		}
 		{
 			dependencies: [
-				"00A2566109144D7F"
 				"670FC89E34D70E3C"
+				"578ECB10B30A77C7"
 			]
 			description: ["{quest.high_voltage.desh_blue_foils.desc}"]
 			id: "09C63B0E303AD8FD"
@@ -1818,11 +1827,14 @@
 				item: "tfg:blue_alloy_desh_foil"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -3.0d
+			x: 19.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["00A2566109144D7F"]
+			dependencies: [
+				"00A2566109144D7F"
+				"5A48DC8AB48E26F2"
+			]
 			description: ["{quest.high_voltage.chorus_insulation.desc}"]
 			icon: "tfg:fired_chorus_ceramic_insulation"
 			id: "2F77122B74877BED"
@@ -1840,8 +1852,8 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: -2.0d
+			x: 19.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
@@ -1870,8 +1882,8 @@
 				}
 			]
 			title: "{quest.high_voltage.desh_ingot.title}"
-			x: 18.0d
-			y: -6.0d
+			x: 17.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6B08799BCFD01D3D"]
@@ -1912,6 +1924,19 @@
 			}]
 			x: -2.5d
 			y: 3.0d
+		}
+		{
+			description: ["{quests.high_voltage.perlite.desc}"]
+			id: "5A48DC8AB48E26F2"
+			subtitle: "{quests.high_voltage.perlite.subtitle}"
+			tasks: [{
+				id: "7C0B6665EA30A451"
+				item: "gtceu:perlite_dust"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.perlite.title}"
+			x: 17.5d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
