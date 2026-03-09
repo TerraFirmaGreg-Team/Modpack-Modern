@@ -506,7 +506,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			stair: 'tfg:tuff_stairs',
 			wall: 'tfg:tuff_wall'
 		},
-		cobble: generateFormsExisting('tuff', 'tfg:rock/%s_cobble', { block: 'tfg:tuff_cobble' },
+		cobble: generateFormsExisting('tuff', 'tfg:rock/cobble_%s', { block: 'tfg:tuff_cobble' },
 			generateForms('tuff', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateForms('tuff', 'tfg:rock/bricks_%s',
 			generateForms('tuff', 'tfg:rock/mossy_bricks_%s'),
