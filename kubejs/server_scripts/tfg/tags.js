@@ -92,6 +92,8 @@ const registerTFGItemTags = (event) => {
 	
 	// Tags for the precision fabricator renderer
 	event.add('tfg:precision_fabricator_dipped_items', 'tfg:silicon_seed_crystal')
+	event.add('tfg:precision_fabricator_dipped_items', 'tfg:worked_optical_borosilicate_blank')
+	event.add('tfg:precision_fabricator_dipped_items', 'tfg:mo_50_re_ingot')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/amethyst')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/opal')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/diamond')
@@ -107,6 +109,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
+	
+	event.add('tfcambiental:cold_stuff', 'minecraft:packed_ice')
+	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
+	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
 }
 
 //#region Blocks
@@ -122,24 +129,16 @@ const registerTFGBlockTags = (event) => {
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
 
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_large')
-	event.add('minecraft:mineable/pickaxe', 'tfg:superconductor_coil_small')
-	event.add('minecraft:mineable/pickaxe', 'tfg:electromagnetic_accelerator')
-	event.add('minecraft:mineable/pickaxe', 'tfg:reflector')
-	event.add('minecraft:mineable/pickaxe', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_large')
-	event.add('forge:mineable/wrench', 'tfg:superconductor_coil_small')
-	event.add('forge:mineable/wrench', 'tfg:electromagnetic_accelerator')
-	event.add('forge:mineable/wrench', 'tfg:reflector')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_aluminium_plated_steel')
-	event.add('forge:mineable/wrench', 'tfg:machine_casing_power_casing')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_large')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_small')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:electromagnetic_accelerator')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:reflector')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_aluminium_plated_steel')
+	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_power_casing')
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-	event.add('minecraft:ice', 'tfg:dry_ice')
 }
 //#endregion
 
@@ -255,4 +254,8 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
 
+	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
 }

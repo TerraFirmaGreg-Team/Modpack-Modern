@@ -1,5 +1,46 @@
 # Changelog
 
+## Unreleased
+### Changes
+- Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
+- Primitive Illagers now drop new unique Arsenic Bronze tools instead of cobalt brass @Pyritie
+- Added upgrade and repair recipes for hiking boots (#3296) @SakuraKitsurugi
+- Improved performance of Supports and TFC animals @Mqrius
+- Added ways to convert mars water into normal water (#3298) @Pyritie
+- Added missing electrolyzer recipe for Sodium Sulfate (#3302) @sqcode06
+### Bug fixes
+- Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
+- Fixed tools having 1/6 of their intended durability (#3329) @TomPlop
+- Fixed flint tools being uncraftable @Pyritie
+- Fixed some recipe conflicts with the Hexidecrubrometer and AES insulation roll (#3288) @Tipy4
+- Fixed not being able to feed some carnivorous dinosaurs (#3288) @Tipy4
+- Fixed the chemical reactor Butyraldehyde recipe not being moved to the correct circuit (5) (#3288) @Tipy4
+- Fixed foxes crashing the game when fed meal bags and other foods that are supposed to return an item to the player (#3277) @Mqrius
+- Fixed recipe conflict for copper-bonded alumina circuit board (#3314) @TomPlop
+- Fixed duplicate recipes for ceramic/epoxy circuit boards (#3306) @TomPlop
+- Fixed maintenance hatch tooltips showing an error message (#3329) @TomPlop
+- Fixed some quests (#3304) and new material names (#3315) @Pyritie
+- Potentially fixed rockets sometimes killing the second passenger (#3317) @BlueBoat29
+- Fixed uncraftable RTM alloy coil (#3333) @TomPlop
+- Fixed not being able to craft crimsene and warpane crystals in a vat (#3318) @Pyritie
+- Fixed the aluminium sulfide recipe not working (#3302) @sqcode06
+- Fixed the block texture of the solar panel casings (#3328) @Pyritie
+### Mod updates
+#### EMI++
+- Added (#3285) @SakuraKitsurugi
+#### Sacks 'n' Such
+- Fixed sacks' voiding not properly working @Traister101
+- Fixed issue with hiking boots' slowdown prevention sometimes not working @Traister101
+- Fixed crossbows not pulling ammo from the Quiver @Traister101
+#### Greate
+- Fixed encased fans voiding input items when there's not enough fluid in the fan to process the entire stack
+- Fixed encased fans not processing faster at different RPMs
+#### Digger Helmet
+- Added higher tiers of helmets
+### Translation updates
+- Ukranian @MetEnBouldry @furrydenis
+- Chinese (simplified) @jmecn
+
 ## [0.11.25] - 06-03-2026
 ### MV Changes
 - Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving

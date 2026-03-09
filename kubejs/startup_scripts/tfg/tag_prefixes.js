@@ -97,6 +97,25 @@ function registerTFGTagPrefixes(event) {
 	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
 	TagPrefix.bolt.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
 	TagPrefix.screw.setIgnored(GTMaterials.get('tfg:diamond_tipped_mo_50_re'))
+	
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TagPrefix.ingot.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TagPrefix.dust.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadSword.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadButcheryKnife.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadMiningHammer.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadSpade.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadPickaxe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadAxe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadShovel.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadHoe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadHammer.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadSaw.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadScythe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+	TFGTagPrefix.toolHeadKnife.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
 }
 
 function excludeAllGemsButNormal(material) {

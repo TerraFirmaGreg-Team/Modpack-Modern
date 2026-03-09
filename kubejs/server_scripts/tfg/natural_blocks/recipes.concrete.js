@@ -4,6 +4,10 @@ function registerTFGConcreteRecipes(event) {
 	
 	event.remove({ id: 'gtceu:mixer/concrete_from_marble' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_marble' })
+	event.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_calcite' })
+	event.remove({ id: 'gtceu:mixer/concrete_from_clay' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/concrete_from_clay' })
 
 	event.recipes.gtceu.mixer('tfg:concrete_from_marble')
 		.itemInputs(
@@ -12,6 +16,7 @@ function registerTFGConcreteRecipes(event) {
 			'gtceu:gypsum_dust')
 		.inputFluids("#tfg:clean_water 1000")
 		.outputFluids('gtceu:concrete 1152')
+		.circuit(1)
 		.duration(40)
 		.EUt(16)
 
@@ -23,6 +28,7 @@ function registerTFGConcreteRecipes(event) {
 		.inputFluids("#tfg:clean_water 500")
 		.outputFluids('gtceu:concrete 576')
 		.duration(40)
+		.circuit(2)
 		.EUt(16)
 
 	event.recipes.gtceu.mixer('tfg:concrete_from_calcite')
@@ -33,6 +39,7 @@ function registerTFGConcreteRecipes(event) {
 		.inputFluids("#tfg:clean_water 1000")
 		.outputFluids('gtceu:concrete 1152')
 		.duration(40)
+		.circuit(3)
 		.EUt(16)
 
 
