@@ -182,7 +182,8 @@ function generateTFC(id, table) {
  * @returns {RockType}
  */
 function generateMissing(id, table) {
-	table.stonecutterTag = `tfg:stonecutting/${id}`;
+	if (table.stonecutterTag === undefined)
+		table.stonecutterTag = `tfg:stonecutting/${id}`;
 	if (table.hardened === undefined)
 		table.hardened = `tfg:rock/hardened_${id}`;
 	if (table.gravel === undefined)
@@ -436,6 +437,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		loose: 'beneath:blackstone_pebble',
 		brick: 'beneath:blackstone_brick',
 		aqueduct: 'beneath:blackstone_aqueduct',
+		gravel: 'tfg:tuff_gravel',
 		raw: generateForms('blackstone', 'minecraft:%s'),
 		cobble: generateFormsExisting('blackstone', 'tfg:rock/cobble_%s', { texture: 'minecraft:block/blackstone_top' },
 			generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),
@@ -500,13 +502,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		pillar: 'create:tuff_pillar',
 		pillar2: 'create:layered_tuff',
 		gravel: 'tfg:tuff_gravel',
-		raw: {
-			block: 'minecraft:tuff',
-			slab: 'tfg:tuff_slab',
-			stair: 'tfg:tuff_stairs',
-			wall: 'tfg:tuff_wall'
-		},
-		cobble: generateFormsExisting('tuff', 'tfg:rock/cobble_%s', { block: 'tfg:tuff_cobble' },
+		raw: generateFormsExisting('tuff', 'tfg:rock/%s', { block: 'minecraft:tuff' }),
+		cobble: generateFormsExisting('tuff', 'tfg:rock/cobble_%s',
 			generateForms('tuff', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateForms('tuff', 'tfg:rock/bricks_%s',
 			generateForms('tuff', 'tfg:rock/mossy_bricks_%s'),
