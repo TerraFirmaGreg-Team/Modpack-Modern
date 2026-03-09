@@ -502,7 +502,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		pillar2: 'create:layered_tuff',
 		gravel: 'tfg:tuff_gravel',
 		raw: generateFormsExisting('tuff', 'tfg:rock/%s', { block: 'minecraft:tuff' }),
-		cobble: generateFormsExisting('tuff', 'tfg:rock/cobble_%s',
+		cobble: generateForms('tuff', 'tfg:rock/cobble_%s',
 			generateForms('tuff', 'tfg:rock/mossy_cobble_%s')),
 		bricks: generateForms('tuff', 'tfg:rock/bricks_%s',
 			generateForms('tuff', 'tfg:rock/mossy_bricks_%s'),
