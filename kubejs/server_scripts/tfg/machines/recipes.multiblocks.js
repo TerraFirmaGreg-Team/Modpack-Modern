@@ -259,6 +259,19 @@ function registerTFGMultiblockRecipes(event) {
 		F: 'gtceu:mv_electric_piston'
 	}).addMaterialInfo().id('gtceu:shaped/coal_liquefaction_tower')
 
+	event.recipes.gtceu.shaped('tfg:high_temp_precision_fabricator', [
+		'BEB',
+		'CAC',
+		'DFD'
+	], {
+		A: 'gtceu:mv_machine_hull',
+		B: 'gtceu:mv_robot_arm',
+		C: '#gtceu:circuits/mv',
+		D: '#forge:double_wires/cupronickel',
+		E: '#forge:single_cables/copper',
+		F: 'tfg:casings/sterling_silver_casing'
+	}).addMaterialInfo().id('tfg:shaped/high_temp_precision_fabricator')
+
 	event.remove({output: 'gtceu:active_transformer'})
 
 	event.recipes.gtceu.assembler('tfg:active_power_transformer')

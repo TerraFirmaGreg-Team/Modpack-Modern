@@ -497,11 +497,6 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:stone/knife_head/metamorphic",
     "tfc:stone/knife_head/sedimentary",
 
-    "tfc:stone/knife/igneous_extrusive",
-    "tfc:stone/knife/igneous_intrusive",
-    "tfc:stone/knife/metamorphic",
-    "tfc:stone/knife/sedimentary",
-
     "tfc:stone/axe_head/igneous_extrusive",
     "tfc:stone/axe_head/igneous_intrusive",
     "tfc:stone/axe_head/metamorphic",

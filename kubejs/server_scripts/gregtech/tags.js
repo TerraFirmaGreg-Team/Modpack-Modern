@@ -69,6 +69,12 @@ function registerGTCEUItemTags(event) {
     //greens
     event.add('tfc:compost_greens', 'gtceu:bio_chaff');
     event.add('tfc:compost_greens', 'gtceu:plant_ball');
+
+    // lamp tag for EMI++
+    global.MINECRAFT_DYE_NAMES.forEach(color => {
+        event.add('gtceu:lamps', `gtceu:${color}_lamp`)
+	    event.add('gtceu:lamps', `gtceu:${color}_borderless_lamp`)
+    })
 }
 
 /** @param {TagEvent.Block} event  */
@@ -116,6 +122,14 @@ function registerGTCEUBlockTags(event) {
         event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
         event.add('tfg:gtceu_concrete_blocks', ids);
     });
+
+    // lamp tag for EMI++
+    global.MINECRAFT_DYE_NAMES.forEach(color => {
+        event.add('gtceu:lamps', `gtceu:${color}_lamp`)
+	    event.add('gtceu:lamps', `gtceu:${color}_borderless_lamp`)
+    })
+
+    event.add('gtceu:mineable/pickaxe_or_wrench', '#gtceu:lamps')
 }
 
 /** @param {TagEvent.Fluid} event  */

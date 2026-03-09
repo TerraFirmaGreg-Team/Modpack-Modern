@@ -229,7 +229,7 @@ function registerTFGBiochemRecipes(event) {
 	event.recipes.gtceu.assembler('tfg:casings/machine_casing_sterilizing_pipes')
 		.itemInputs(
 			ChemicalHelper.get(TagPrefix.frameGt, GTMaterials.get('ostrum'), 1),
-			ChemicalHelper.get(TagPrefix.pipeQuadrupleFluid, GTMaterials.get('ostrum'), 1),
+			ChemicalHelper.get(TagPrefix.pipeQuadrupleFluid, GTMaterials.TungstenSteel, 1),
 			Ingredient.of('#tfg:components/uv_leds').withCount(16)
 		)
 		.inputFluids(Fluid.of('gtceu:borosilicate_glass', 144))

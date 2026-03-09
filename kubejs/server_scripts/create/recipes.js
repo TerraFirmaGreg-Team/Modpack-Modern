@@ -1893,7 +1893,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/factory_gauge')
 
 	event.recipes.gtceu.assembler('create:factory_gauge')
-		.itemInputs('create:precision_mechanism', '2x gtceu:diode', '#forge:small_gears/red_alloy', '#gtceu:circuits/lv', '3x #forge:plates/rose_quartz')
+		.itemInputs('create:precision_mechanism', '2x #forge:screws/aluminium', 'gtceu:diode', '3x #forge:plates/rose_quartz', '#gtceu:circuits/lv')
 		.itemOutputs('create:factory_gauge')
 		.duration(150)
 		.EUt(16)

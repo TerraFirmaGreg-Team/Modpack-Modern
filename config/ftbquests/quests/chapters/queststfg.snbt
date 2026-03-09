@@ -5,14 +5,25 @@
 	group: "19428C6E7A36D463"
 	icon: "tfg:terra_firma_greg"
 	id: "5DD2C08324B24805"
-	images: [{
-		height: 2.0d
-		image: "tfg:textures/gui/tfg_logo_title_4181x688_with_shadow.png"
-		rotation: 0.0d
-		width: 12.15406976744186d
-		x: 0.0d
-		y: -3.0d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "tfg:textures/gui/tfg_logo_title_4181x688_with_shadow.png"
+			rotation: 0.0d
+			width: 12.15406976744186d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			click: "https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Suggested-additional-mods"
+			height: 1.0d
+			image: "tfg:textures/gui/github_logo.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: 0.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -177,6 +188,20 @@
 			title: "{quests.tfg.chunk_limit.title}"
 			x: -2.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["427814F6E9386772"]
+			description: ["{quests.tfg.optional_mods.desc}"]
+			icon: "create:clipboard"
+			id: "41424D4906E05582"
+			subtitle: "{quests.tfg.optional_mods.subtitle}"
+			tasks: [{
+				id: "74B93241E94ED02A"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg.optional_mods.title}"
+			x: -3.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.tfg.subtitle}"]

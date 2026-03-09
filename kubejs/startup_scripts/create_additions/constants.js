@@ -35,7 +35,5 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:festive_spool', 
     'createaddition:small_light_connector',
     'createaddition:electrum_block',
-    'createaddition:portable_energy_interface',
-    'createaddition:straw',
-    'createaddition:modular_accumulator'
+    'createaddition:straw'
 ];

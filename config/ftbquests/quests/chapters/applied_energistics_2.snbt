@@ -730,6 +730,13 @@
 			icon_scale: 2.0d
 			id: "3C3C21482E31267B"
 			size: 1.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "7632E64D3F85FAB3"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
+			}]
 			title: "{quests.ae2.hv.title}"
 			x: 0.5d
 			y: -2.5d
