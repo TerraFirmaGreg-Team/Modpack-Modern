@@ -51,26 +51,54 @@ const registerRailWaysRecipes = (event) => {
 		.addMaterialInfo(true)
 
 	//#region Couplers and Buffers
-	event.recipes.gtceu.assembler(`tfg:railways/screwlink_coupler`)
-		.itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
+
+	const SNR_BASE_COUPLERS = [
+		'link_and_pin',
+		'link_and_pin_linkless',
+		'knuckle_coupler',
+		'split_knuckle_coupler',
+		'screwlink_coupler'
+	]
+
+	event.stonecutting(`railways:wooden_headstock`, '#minecraft:wooden_slabs');
+	event.stonecutting(`4x railways:copycat_headstock`, '#forge:ingots/zinc');
+
+	SNR_BASE_COUPLERS.forEach((coupler, i) => {
+		event.recipes.gtceu.assembler(`tfg:railways/${coupler}`)
+			.itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
+			.circuit(i + 1)
+			.itemOutputs(`railways:${coupler}`)
+			.duration(200)
+			.EUt(28)
+			.addMaterialInfo(true)
+
+		event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_${coupler}`)
+			.itemInputs(`railways:${coupler}`, `railways:wooden_headstock`)
+			.itemOutputs(`railways:wooden_headstock_${coupler}`)
+			.duration(200)
+			.EUt(28)
+			.addMaterialInfo(true)
+
+		event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_${coupler}`)
+			.itemInputs(`railways:${coupler}`, `railways:copycat_headstock`)
+			.itemOutputs(`railways:copycat_headstock_${coupler}`)
+			.duration(200)
+			.EUt(28)
+			.addMaterialInfo(true)
+	})
+
+	event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
+		.itemInputs(`#railways:deco_couplers`, `#forge:ingots/steel`)
 		.circuit(1)
-		.itemOutputs(`railways:screwlink_coupler`)
+		.itemOutputs(`railways:small_buffer`)
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_screwlink_coupler`)
-		.itemInputs(`railways:screwlink_coupler`, `create:copycat_panel`)
+	event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
+		.itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
 		.circuit(1)
-		.itemOutputs(`railways:copycat_headstock_screwlink_coupler`)
-		.duration(200)
-		.EUt(28)
-		.addMaterialInfo(true)
-
-	event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_screwlink_coupler`)
-		.itemInputs(`railways:screwlink_coupler`, `#minecraft:wooden_slabs`)
-		.circuit(1)
-		.itemOutputs(`railways:wooden_headstock_screwlink_coupler`)
+		.itemOutputs(`railways:big_buffer`)
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
@@ -83,18 +111,16 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
-		.itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
-		.circuit(1)
-		.itemOutputs(`railways:small_buffer`)
+	event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_buffer`)
+		.itemInputs(`railways:small_buffer`, `railways:wooden_headstock`)
+		.itemOutputs(`railways:wooden_headstock_buffer`)
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
 
-	event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
-		.itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
-		.circuit(1)
-		.itemOutputs(`railways:big_buffer`)
+	event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_buffer`)
+		.itemInputs(`railways:small_buffer`, `railways:copycat_headstock`)
+		.itemOutputs(`railways:copycat_headstock_buffer`)
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
@@ -255,7 +281,10 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(28)
 
-	// Дымогенератор 1
+	
+
+	//#region Smokestacks
+
 	event.shaped('railways:smokestack_caboosestyle', [
 		'BCB',
 		'DA '
@@ -273,95 +302,6 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(28)
 
-	// Дымогенератор 2
-	event.shaped('railways:smokestack_long', [
-		'C  ',
-		'BAB'
-	], {
-		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:bolts/iron',
-		C: '#forge:tools/hammers'
-	}).id('tfg:railways/shaped/smokestack_long')
-
-	event.recipes.gtceu.assembler('tfg:railways/smokestack_long')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:bolts/iron')
-		.circuit(5)
-		.itemOutputs('railways:smokestack_long')
-		.duration(200)
-		.EUt(28)
-
-	// Дымогенератор 3
-	event.shaped('railways:smokestack_coalburner', [
-		'B B',
-		'BCB',
-		'BAB'
-	], {
-		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/iron',
-		C: '#forge:tools/hammers'
-	}).id('tfg:railways/shaped/smokestack_coalburner')
-
-	event.recipes.gtceu.assembler('tfg:railways/smokestack_coalburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '6x #forge:plates/iron')
-		.circuit(6)
-		.itemOutputs('railways:smokestack_coalburner')
-		.duration(200)
-		.EUt(28)
-
-	// Дымогенератор 4
-	event.shaped('railways:smokestack_oilburner', [
-		'BCB',
-		'BAB'
-	], {
-		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/iron',
-		C: '#forge:tools/hammers'
-	}).id('tfg:railways/shaped/smokestack_oilburner')
-
-	event.recipes.gtceu.assembler('tfg:railways/smokestack_oilburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '4x #forge:plates/iron')
-		.circuit(7)
-		.itemOutputs('railways:smokestack_oilburner')
-		.duration(200)
-		.EUt(28)
-
-	// Дымогенератор 5
-	event.shaped('railways:smokestack_streamlined', [
-		'C  ',
-		'BAB'
-	], {
-		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/iron',
-		C: '#forge:tools/hammers'
-	}).id('tfg:railways/shaped/smokestack_streamlined')
-
-	event.recipes.gtceu.assembler('tfg:railways/smokestack_streamlined')
-		.itemInputs('#forge:storage_blocks/charcoal', '2x #forge:plates/iron')
-		.circuit(8)
-		.itemOutputs('railways:smokestack_streamlined')
-		.duration(200)
-		.EUt(28)
-
-	// Дымогенератор 6
-	event.shaped('railways:smokestack_woodburner', [
-		' D ',
-		'CBC',
-		'BAB'
-	], {
-		A: '#forge:storage_blocks/charcoal',
-		B: '#forge:plates/iron',
-		C: '#forge:bolts/iron',
-		D: '#forge:tools/hammers'
-	}).id('tfg:railways/shaped/smokestack_woodburner')
-
-	event.recipes.gtceu.assembler('tfg:railways/smokestack_woodburner')
-		.itemInputs('#forge:storage_blocks/charcoal', '3x #forge:plates/iron', '2x #forge:bolts/iron')
-		.circuit(9)
-		.itemOutputs('railways:smokestack_woodburner')
-		.duration(200)
-		.EUt(28)
-
-	// Вентилятор радиатора
 	event.shaped('2x railways:smokestack_diesel', [
 		'ABA',
 		'BCB',
@@ -371,6 +311,135 @@ const registerRailWaysRecipes = (event) => {
 		B: '#forge:rods/wrought_iron',
 		C: '#forge:rotors/iron',
 	}).id('tfg:railways/shaped/smokestack_diesel')
+
+	const SNR_SMOKESTACK_TYPES = [
+		'woodburner',
+		'long',
+		'coalburner',
+		'oilburner',
+		'streamlined'
+	]
+
+	const SNR_SMOKESTACK_MATERIALS = [
+		{ craft_mat: 'iron', base_mat: '', capped_mat: '_steel' },
+		{ craft_mat: 'brass', base_mat: '_brass', capped_mat: '_brass' },
+		{ craft_mat: 'copper', base_mat: '_copper', capped_mat: '_copper' }
+	]
+
+	SNR_SMOKESTACK_MATERIALS.forEach(mat => {
+		event.shaped(`railways:smokestack_long${mat.base_mat}`, [
+			'C  ',
+			'BAB'
+		], {
+			A: '#forge:storage_blocks/charcoal',
+			B: `#forge:bolts/${mat.craft_mat}`,
+			C: '#forge:tools/hammers'
+		}).id(`tfg:railways/shaped/smokestack_long${mat.base_mat}`)
+
+		event.recipes.gtceu.assembler(`tfg:railways/smokestack_long${mat.base_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:bolts/${mat.craft_mat}`)
+			.circuit(5)
+			.itemOutputs(`railways:smokestack_long${mat.base_mat}`)
+			.duration(200)
+			.EUt(28)
+			
+		event.shaped(`railways:smokestack_coalburner${mat.base_mat}`, [
+			'B B',
+			'BCB',
+			'BAB'
+		], {
+			A: '#forge:storage_blocks/charcoal',
+			B: `#forge:plates/${mat.craft_mat}`,
+			C: '#forge:tools/hammers'
+		}).id(`tfg:railways/shaped/smokestack_coalburner${mat.base_mat}`)
+
+		event.recipes.gtceu.assembler(`tfg:railways/smokestack_coalburner${mat.base_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `6x #forge:plates/${mat.craft_mat}`)
+			.circuit(6)
+			.itemOutputs(`railways:smokestack_coalburner${mat.base_mat}`)
+			.duration(200)
+			.EUt(28)
+
+		event.shaped(`railways:smokestack_oilburner${mat.base_mat}`, [
+			'BCB',
+			'BAB'
+		], {
+			A: '#forge:storage_blocks/charcoal',
+			B: `#forge:plates/${mat.craft_mat}`,
+			C: '#forge:tools/hammers'
+		}).id(`tfg:railways/shaped/smokestack_oilburner${mat.base_mat}`)
+
+		event.recipes.gtceu.assembler(`tfg:railways/smokestack_oilburner${mat.base_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `4x #forge:plates/${mat.craft_mat}`)
+			.circuit(7)
+			.itemOutputs(`railways:smokestack_oilburner${mat.base_mat}`)
+			.duration(200)
+			.EUt(28)
+
+		event.shaped(`railways:smokestack_streamlined${mat.base_mat}`, [
+			'C  ',
+			'BAB'
+		], {
+			A: '#forge:storage_blocks/charcoal',
+			B: `#forge:plates/${mat.craft_mat}`,
+			C: '#forge:tools/hammers'
+		}).id(`tfg:railways/shaped/smokestack_streamlined${mat.base_mat}`)
+
+		event.recipes.gtceu.assembler(`tfg:railways/smokestack_streamlined${mat.base_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `2x #forge:plates/${mat.craft_mat}`)
+			.circuit(8)
+			.itemOutputs(`railways:smokestack_streamlined${mat.base_mat}`)
+			.duration(200)
+			.EUt(28)
+
+		event.shaped(`railways:smokestack_woodburner${mat.base_mat}`, [
+			' D ',
+			'CBC',
+			'BAB'
+		], {
+			A: '#forge:storage_blocks/charcoal',
+			B: `#forge:plates/${mat.craft_mat}`,
+			C: `#forge:bolts/${mat.craft_mat}`,
+			D: '#forge:tools/hammers'
+		}).id(`tfg:railways/shaped/smokestack_woodburner${mat.base_mat}`)
+
+		event.recipes.gtceu.assembler(`tfg:railways/smokestack_woodburner${mat.base_mat}`)
+			.itemInputs('#forge:storage_blocks/charcoal', `3x #forge:plates/${mat.craft_mat}`, `2x #forge:bolts/${mat.craft_mat}`)
+			.circuit(9)
+			.itemOutputs(`railways:smokestack_woodburner${mat.base_mat}`)
+			.duration(200)
+			.EUt(28)
+				
+		SNR_SMOKESTACK_TYPES.forEach(type => {
+			if(mat.craft_mat != 'brass') {
+				event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_brass_cap${mat.capped_mat}`)
+					.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
+					.inputFluids('gtceu:brass 18')
+					.itemOutputs(`railways:smokestack_${type}_brass_cap${mat.capped_mat}`)
+					.duration(20)
+					.EUt(24)
+					.category(GTRecipeCategories.CHEM_DYES)
+			}
+			if(mat.craft_mat != 'copper') {
+				event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_copper_cap${mat.capped_mat}`)
+					.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
+					.inputFluids('gtceu:copper 18')
+					.itemOutputs(`railways:smokestack_${type}_copper_cap${mat.capped_mat}`)
+					.duration(20)
+					.EUt(24)
+					.category(GTRecipeCategories.CHEM_DYES)
+			}
+			event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_iron_cap${mat.capped_mat}`)
+				.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
+				.inputFluids('gtceu:wrought_iron 18')
+				.itemOutputs(`railways:smokestack_${type}_iron_cap${mat.capped_mat}`)
+				.duration(20)
+				.EUt(24)
+				.category(GTRecipeCategories.CHEM_DYES)
+		})
+	})
+
+	//#endregion
 
 	// Монорельс
 	event.recipes.createSequencedAssembly([
