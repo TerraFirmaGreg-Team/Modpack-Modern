@@ -4314,7 +4314,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
+                    "file_name": "Steam_Rails-1.7.1+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4322,23 +4322,23 @@
                         "forge",
                         "neoforge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7443/695/Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
-                    "id": "7443695",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7700/119/Steam_Rails-1.7.1+forge-mc1.20.1.jar",
+                    "id": "7700119",
                     "parent_id": "688231",
                     "hashes": {
-                        "sha1": "924c3efb2187138b85a0d5285dbb65b371c4f7e9",
-                        "md5": "2edf8425e95d439d0c66c6a62bf4085c"
+                        "sha1": "93c32e96f463f5d4758e939916c7a8de79bd6212",
+                        "md5": "452f34740e45908c7da25ac73f2892ee"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 10000104,
-                    "date_published": "2026-01-10T22:37:20.943Z"
+                    "size": 16748161,
+                    "date_published": "2026-03-02T08:59:18.920Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
+                    "file_name": "Steam_Rails-1.7.1+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4346,19 +4346,19 @@
                         "forge",
                         "neoforge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ZzjhlDgM/versions/syDuEEZD/Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
-                    "id": "syDuEEZD",
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ZzjhlDgM/versions/TYMKdZTh/Steam_Rails-1.7.1+forge-mc1.20.1.jar",
+                    "id": "TYMKdZTh",
                     "parent_id": "ZzjhlDgM",
                     "hashes": {
-                        "sha512": "8c9986c0422b73627446e67c2d19fc521d067cee3fb55707a1fedeead4b1ec93e62ce5889a7af314f6cfb528f07365993f6864f8eed07aa38538c2f4e4e8a405",
-                        "sha1": "924c3efb2187138b85a0d5285dbb65b371c4f7e9"
+                        "sha512": "973fdf500ffb9e170a7123d99b6333c8bb2962d169be3c1711f0139e5bac34231fb9a1588fa28514e5041127aa974ce8891922cd74123c7800e8f84e804c177d",
+                        "sha1": "93c32e96f463f5d4758e939916c7a8de79bd6212"
                     },
                     "required_dependencies": [
                         "LNytGWDc"
                     ],
-                    "size": 10000104,
-                    "date_published": "2026-01-10T22:37:24.545119Z"
+                    "size": 16748161,
+                    "date_published": "2026-03-02T08:59:20.518186Z"
                 }
             ]
         },
