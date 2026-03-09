@@ -257,4 +257,5 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
 }
