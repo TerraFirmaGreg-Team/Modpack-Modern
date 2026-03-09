@@ -254,4 +254,7 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
 
+	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 }
