@@ -1,0 +1,154 @@
+{
+    "__comment__": "This file was automatically created by mcresources",
+    "dimensions": {
+        "minecraft:overworld": {
+            "generator": {
+                "settings": "minecraft:overworld",
+                "biome_source": {"type": "tfc:overworld"},
+                "type": "tfc:overworld",
+                "tfc_settings": {
+                    "spawn_distance": 4000,
+                    "rock_layer_settings": {
+                        "rocks": {
+                            "shale": "tfc:shale",
+                            "quartzite": "tfc:quartzite",
+                            "chert": "tfc:chert",
+                            "conglomerate": "tfc:conglomerate",
+                            "gneiss": "tfc:gneiss",
+                            "rhyolite": "tfc:rhyolite",
+                            "marble": "tfc:marble",
+                            "basalt": "tfc:basalt",
+                            "claystone": "tfc:claystone",
+                            "phyllite": "tfc:phyllite",
+                            "schist": "tfc:schist",
+                            "limestone": "tfc:limestone",
+                            "granite": "tfc:granite",
+                            "tuff": {
+                                "raw": "minecraft:tuff",
+                                "cobble": "tfg:rock/cobble_tuff",
+                                "hardened": "tfg:rock/hardened_tuff",
+                                "gravel": "tfg:tuff_gravel",
+                                "loose": "tfg:loose/tuff",
+                                "sand": "tfc:sand/green",
+                                "sandstone": "tfc:raw_sandstone/green",
+                                "spike": "tfg:spike/tuff_spike"
+                            },
+                            "dolomite": "tfc:dolomite",
+                            "chalk": "tfc:chalk",
+                            "andesite": "tfc:andesite",
+                            "dacite": "tfc:dacite",
+                            "slate": "tfc:slate",
+                            "diorite": "tfc:diorite",
+                            "gabbro": "tfc:gabbro"
+                        },
+                        "uplift": [
+                            "sedimentary",
+                            "uplift"
+                        ],
+                        "bottom": [
+                            "gneiss",
+                            "schist",
+                            "diorite",
+                            "granite",
+                            "gabbro"
+                        ],
+                        "ocean_floor": ["igneous_extrusive"],
+                        "layers": [
+                            {
+                                "layers": {"granite": "bottom"},
+                                "id": "felsic"
+                            },
+                            {
+                                "layers": {"diorite": "bottom"},
+                                "id": "intermediate"
+                            },
+                            {
+                                "layers": {"gabbro": "bottom"},
+                                "id": "mafic"
+                            },
+                            {
+                                "layers": {
+                                    "basalt": "mafic",
+                                    "andesite": "intermediate",
+                                    "rhyolite": "felsic",
+                                    "dacite": "intermediate"
+                                },
+                                "id": "igneous_extrusive"
+                            },
+                            {
+                                "layers": {
+                                    "basalt": "igneous_extrusive",
+                                    "andesite": "igneous_extrusive",
+                                    "rhyolite": "igneous_extrusive",
+                                    "dacite": "igneous_extrusive"
+                                },
+                                "id": "igneous_extrusive_x2"
+                            },
+                            {
+                                "layers": {
+                                    "schist": "bottom",
+                                    "gneiss": "bottom"
+                                },
+                                "id": "high_grade"
+                            },
+                            {
+                                "layers": {
+                                    "phyllite": "high_grade",
+                                    "slate": "high_grade"
+                                },
+                                "id": "low_grade"
+                            },
+                            {
+                                "layers": {"marble": "bottom"},
+                                "id": "marble"
+                            },
+                            {
+                                "layers": {"quartzite": "bottom"},
+                                "id": "quartzite"
+                            },
+                            {
+                                "layers": {
+                                    "shale": "low_grade",
+                                    "chert": "quartzite",
+                                    "claystone": "low_grade",
+                                    "limestone": "marble",
+                                    "chalk": "marble",
+                                    "dolomite": "marble",
+                                    "conglomerate": "low_grade"
+                                },
+                                "id": "sedimentary"
+                            },
+                            {
+                                "layers": {
+                                    "quartzite": "bottom",
+                                    "marble": "bottom",
+                                    "phyllite": "high_grade",
+                                    "granite": "low_grade",
+                                    "slate": "high_grade",
+                                    "diorite": "low_grade",
+                                    "gabbro": "low_grade"
+                                },
+                                "id": "uplift"
+                            }
+                        ],
+                        "land": [
+                            "igneous_extrusive",
+                            "sedimentary"
+                        ],
+                        "volcanic": [
+                            "igneous_extrusive",
+                            "igneous_extrusive_x2"
+                        ]
+                    },
+                    "rainfall_scale": 20000,
+                    "temperature_scale": 20000,
+                    "spawn_center_x": 0,
+                    "flat_bedrock": false,
+                    "spawn_center_z": 0,
+                    "continentalness": 0.5
+                }
+            },
+            "type": "minecraft:overworld"
+        }
+    }
+}

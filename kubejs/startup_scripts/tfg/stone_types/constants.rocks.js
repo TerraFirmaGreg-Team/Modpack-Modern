@@ -498,7 +498,6 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		mapColor: 'terracotta_gray',
 		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
 		support: 'tfg:tuff_support',
-		hardened: 'tfg:hardened_tuff',
 		pillar: 'create:tuff_pillar',
 		pillar2: 'create:layered_tuff',
 		gravel: 'tfg:tuff_gravel',
