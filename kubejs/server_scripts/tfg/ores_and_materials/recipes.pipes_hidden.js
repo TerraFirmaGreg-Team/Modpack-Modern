@@ -53,9 +53,22 @@ function registerTFGMaterialHiddenPipesTags(event) {
     const toolsPlastic = ['mallet', 'plunger'];
         materialPlastic.forEach(material => {
             toolsPlastic.forEach(tool => {
+                event.removeAllTagsFrom(`gtceu:${material}_${tool}`);
                 event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
             });
         });
+
+    // Add Gregtech Tools Tag
+
+    const materialTagTools = ['neutronium'];
+    const toolsTagTools = ['pickaxe', 'wrench', 'screwdriver', 'wire_cutter', 'hard_hammer'];
+
+    materialTagTools.forEach(material => {
+        toolsTagTools.forEach(tool => {
+            event.removeAllTagsFrom(`gtceu:${material}_${tool}`);
+            event.add('c:hidden_from_recipe_viewers', `gtceu:${material}_${tool}` );
+        });
+    });
 
     //#endregion
     
@@ -112,11 +125,24 @@ function registerTFGMaterialRemovePipesRecipes(event) {
     removeItemPipes('osmiridium');
     removeItemPipes('americium');
 
+    // Remove Plastic Tools recipes
+
     const materialRemovePlastic = ['polybenzimidazole', 'polytetrafluoroethylene', 'polyethylene'];
     const toolsRemovePlastic = ['mallet', 'plunger'];
 
     materialRemovePlastic.forEach(material => {
         toolsRemovePlastic.forEach(tool => {
+            event.remove({ output: `gtceu:${material}_${tool}` });
+        });
+    });
+
+    // Remove Gregtech Tools recipes
+
+    const materialRemoveTools = ['neutronium'];
+    const toolsRemoveTools = ['pickaxe', 'wrench', 'screwdriver', 'wire_cutter', 'hard_hammer'];
+
+    materialRemoveTools.forEach(material => {
+        toolsRemoveTools.forEach(tool => {
             event.remove({ output: `gtceu:${material}_${tool}` });
         });
     });

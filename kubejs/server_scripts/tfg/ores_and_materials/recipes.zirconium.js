@@ -20,8 +20,8 @@ function registerTFGZirconiumRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:silicon_tetrachloride_hydrogen')
-		.inputFluids('tfg:silicon_tetrachloride 1000', 'gtceu:hydrogen 2000')
-		.itemOutputs('#forge:dusts/polysilicon')
+		.inputFluids('tfg:silicon_tetrachloride 1000', 'gtceu:hydrogen 4000')
+		.itemOutputs('#forge:dusts/silicon')
 		.outputFluids('gtceu:hydrochloric_acid 4000')
 		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.HV])

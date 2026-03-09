@@ -37,7 +37,7 @@ function registerTFGStoneDustRecipes(event) {
 		.duration(10 * 20)
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
 		.chancedOutput('ae2:sky_dust', 6000, 0)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 5000, 0)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.get('tfg:igneous_intermediate'), 1), 5000, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 4500, 0)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Zinc, 1), 3500, 0)
 		.outputFluids(Fluid.of('gtceu:helium_3', 500))

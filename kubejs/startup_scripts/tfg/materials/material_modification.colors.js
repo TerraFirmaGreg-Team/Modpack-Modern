@@ -59,5 +59,6 @@ function registerTFGColorsMaterialModification(event) {
 	GTMaterials.SterlingSilver.setMaterialSecondaryARGB(0xFFDECB)
 	GTMaterials.RoseGold.setMaterialARGB(0xF7D4BD)
 	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xE7945C)
-	
+	GTMaterials.Flint.setMaterialARGB(0x3C3B3B)
+	GTMaterials.Flint.setMaterialSecondaryARGB(0x222020)
 }

@@ -101,11 +101,11 @@ function registerTFGHVMaterialRecipes(event) {
 
 	// Alumina
 
-	event.recipes.gtceu.chemical_reactor('tfg:aluminium_sulfate')
+	event.recipes.gtceu.large_chemical_reactor('tfg:aluminium_sulfate_lcr')
 		.itemInputs(Item.of('tfg:igneous_felsic_dust', 1))
-		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+		.inputFluids(Fluid.of('gtceu:sulfuric_acid', 2000))
 		.itemOutputs(Item.of('tfg:aluminium_sulfate_dust', 1), Item.of('gtceu:potassium_sulfate_dust', 1), Item.of('gtceu:silicon_dioxide_dust'))
-		.outputFluids(Fluid.of('minecraft:water', 1000), Fluid.of('gtceu:diluted_sulfuric_acid', 1000))
+		.outputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(20 * 84)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(2)
@@ -127,6 +127,13 @@ function registerTFGHVMaterialRecipes(event) {
 	// Perlite is also a water purifier irl!
 	event.recipes.gtceu.distillery('tfg:distilled_water_perlite')
 		.itemInputs('#forge:dusts/perlite')
+		.inputFluids(Fluid.of('minecraft:water', 2000))
+		.outputFluids(Fluid.of('gtceu:distilled_water', 2000))
+		.duration(20*5)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.distillery('tfg:distilled_water_zeolite')
+		.itemInputs('#forge:dusts/zeolite')
 		.inputFluids(Fluid.of('minecraft:water', 2000))
 		.outputFluids(Fluid.of('gtceu:distilled_water', 2000))
 		.duration(20*5)

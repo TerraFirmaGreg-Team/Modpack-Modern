@@ -7,6 +7,12 @@
 function registerTFGMiscAlloyMaterials(event) {
 	const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 
+	// Material used for Illager tools only
+	event.create('tfg:arsenic_bronze')
+		.components('1x arsenic', '1x tin', '8x copper')
+		.color(0xE76848)
+		.iconSet('metallic')
+
 	// EV New Material
 
 	event.create('tfg:tungsten_bismuth_oxide_composite')
@@ -36,7 +42,9 @@ function registerTFGMiscAlloyMaterials(event) {
 		.color(0x42705D)
 		.components('4x boron', '1x carbon')
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
-		.flags(GTMaterialFlags.GENERATE_PLATE)
+		.flags(
+			GTMaterialFlags.GENERATE_PLATE,
+			GTMaterialFlags.GENERATE_ROD)
 
 
 	// Material for MV

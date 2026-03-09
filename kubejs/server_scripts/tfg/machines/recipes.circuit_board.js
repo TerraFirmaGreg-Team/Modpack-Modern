@@ -55,6 +55,10 @@ function registerTFGCircuitBoardsRecipes(event) {
 
 	// Alumina Copper Bonded Circuit Boards
 
+	event.remove({ id: 'gtceu:arc_furnace/arc_cupronickel_foil'})
+	event.remove({ id: 'gtceu:arc_furnace/arc_silicon_carbide_plate'})
+	event.remove({ id: 'gtceu:arc_furnace/arc_molybdenum_foil'})
+
 	event.recipes.gtceu.arc_furnace('tfg:copper_bonded_al2o3_pcb')
 		.itemInputs(Item.of('tfg:alumina_plate'), Item.of('gtceu:cupronickel_foil', 4))
 		.inputFluids(Fluid.of('gtceu:oxygen', 1000))
@@ -107,60 +111,67 @@ function registerTFGCircuitBoardsRecipes(event) {
 		// Minimal T4 - EV
 		{
 			recipe: "advanced_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "gtceu:iron_iii_chloride"
 		},
 		// Best T4 - EV
 		{
 			recipe: "advanced_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: "tfg:redstone_tri_p_toluenesulfonate"
 		},
 		// Minimal T5 - IV
 		{
 			recipe: "extreme_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate"
 		},
 		// Best T5 - IV
 		{
 			recipe: "extreme_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined
 		},
 		// Minimal T6 - LuV
 		{
 			recipe: "elite_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate" // Redstone Etching
 		},
 		// Best T6 - LuV
 		{ 
 			recipe: "elite_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined // New when Venus is Out
 		},
 		// Minimal T7 - ZPM
 		{
 			recipe: "wetware_circuit_board_persulfate",
-			old: "gtceu:sodium_persulfate",
+			old: "forge:sodium_persulfate",
 			new: "tfg:redstone_tri_p_toluenesulfonate" // New when Venus is Out
 		},
 		// Best T7 - ZPM
 		{ 
 			recipe: "wetware_circuit_board_iron3",
-			old: "gtceu:iron_iii_chloride",
+			old: "forge:iron_iii_chloride",
 			new: undefined // New when ZPM Planet is Out
 		},
 	]
 
-	FLUID_REPLACEMENTS.forEach(replacement => {
+	FLUID_REPLACEMENTS.forEach(function(replacement) {
+		var recipeId = "gtceu:chemical_reactor/" + replacement.recipe
+		var largeRecipeId = "gtceu:large_chemical_reactor/" + replacement.recipe
+
 		if (replacement.new !== undefined) {
-			event.replaceInput({ id: `gtceu:chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
-			event.replaceInput({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` }, Fluid.of(replacement.old), Fluid.of(replacement.new))
+			var fluidReplacements = {}
+			fluidReplacements[replacement.old] = replacement.new
+			global.modifyRecipe(event, recipeId, {
+				fluidReplacements: fluidReplacements
+			})
+			event.remove({ id: largeRecipeId })
 		} else {
-			event.remove({ id: `gtceu:chemical_reactor/${replacement.recipe}` })
-			event.remove({ id: `gtceu:large_chemical_reactor/${replacement.recipe}` })
+			event.remove({ id: recipeId })
+			event.remove({ id: largeRecipeId })
 		}
 	})
 }

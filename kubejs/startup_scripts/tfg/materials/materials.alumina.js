@@ -26,8 +26,6 @@ function registerTFGAluminaMaterials(event) {
 		.secondaryColor(0xf7f7f2)
 		.iconSet(GTMaterialIconSet.BRIGHT)
 		.components('2x sodium', '1x sulfur', '4x oxygen')
-		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:alumina')
 		.dust()
