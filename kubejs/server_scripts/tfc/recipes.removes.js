@@ -143,4 +143,6 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:heating/metal/weak_red_steel_ingot' })
 	event.remove({ id: 'tfc:casting/weak_red_steel_ingot' })
 	event.remove({ id: 'tfc:casting/weak_red_steel_fire_ingot' })
+	
+	event.remove({ id: 'tfc:crafting/wool_yarn' })
 }

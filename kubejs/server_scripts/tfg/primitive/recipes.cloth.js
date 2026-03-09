@@ -51,10 +51,12 @@ function registerTFGClothRecipes(event) {
 		'tfg:block/polycaprolactam_fabric_block'
 	)
 
+	
+
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('16x tfg:phantom_thread', [
 			'minecraft:phantom_membrane',
-			'tfc:spindle'
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/phantom_thread'))
 
 		// Wool Yarn
@@ -210,7 +212,7 @@ function registerTFGClothRecipes(event) {
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:linen_thread', [
 			'tfg:flax_line',
-			'tfc:spindle'
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/linen_thread')
 	)
 
@@ -254,4 +256,5 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(4)
 	//#endregion
+	
 }
