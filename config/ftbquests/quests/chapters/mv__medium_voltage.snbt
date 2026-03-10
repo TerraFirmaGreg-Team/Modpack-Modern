@@ -627,7 +627,10 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["738E8E10951E17C6"]
+			dependencies: [
+				"738E8E10951E17C6"
+				"4B595C417629F1FE"
+			]
 			description: ["{quests.medium_voltage.mv_silicon_boule.desc}"]
 			icon: "gtceu:silicon_boule"
 			id: "71412502C81F21C1"
@@ -1672,7 +1675,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["54A255C1C6E33165"]
+			dependencies: [
+				"54A255C1C6E33165"
+				"47DDBCD42985A993"
+			]
 			description: ["{quests.medium_voltage.reformate_gas.desc}"]
 			icon: "tfg:reformate_gas_bucket"
 			id: "10292F9B1DD743EB"
@@ -2015,6 +2021,65 @@
 			title: "{quests.high_voltage.mv_superconductors.title}"
 			x: -3.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["3DB03EA806B2D8A1"]
+			description: [
+				"{quests.medium_voltage.polysilicon.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.polysilicon.desc.2}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.polysilicon.desc.3}"
+			]
+			icon: "tfg:polysilicon_dust"
+			id: "4B595C417629F1FE"
+			subtitle: "{quests.medium_voltage.polysilicon.subtitle}"
+			tasks: [{
+				id: "14244FFC0F0F9A84"
+				item: "tfg:polysilicon_dust"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.polysilicon.title}"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			description: ["{quests.medium_voltage.rhenium.desc}"]
+			id: "47DDBCD42985A993"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.rhenium.subtitle}"
+			tasks: [{
+				id: "0868EEA37FAFB82B"
+				item: "gtceu:rhenium_dust"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.rhenium.title}"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["47DDBCD42985A993"]
+			description: ["{quests.medium_voltage.diamond_tools.desc}"]
+			id: "2AE0402A0CA698DC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.diamond_tools.subtitle}"
+			tasks: [{
+				id: "00AEE2931E32863E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:mv_diamond_tipped_mo_50_re_drill)item(tfg:mv_diamond_tipped_mo_50_re_wrench)item(tfg:diamond_tipped_mo_50_re_knife)item(tfg:mv_diamond_tipped_mo_50_re_screwdriver)item(tfg:mv_diamond_tipped_mo_50_re_buzzsaw)item(tfg:diamond_tipped_mo_50_re_hoe)item(tfg:diamond_tipped_mo_50_re_scythe)item(tfg:diamond_tipped_mo_50_re_hammer)item(tfg:mv_diamond_tipped_mo_50_re_wire_cutter)item(tfg:diamond_tipped_mo_50_re_file)item(tfg:mv_diamond_tipped_mo_50_re_chainsaw)item(tfg:diamond_tipped_mo_50_re_sword)item(tfg:diamond_tipped_mo_50_re_butchery_knife)item(tfg:diamond_tipped_mo_50_re_crowbar))"
+					}
+				}
+				title: "{quests.medium_voltage.diamond_tools.task}"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.diamond_tools.title}"
+			x: -5.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

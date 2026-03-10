@@ -1,5 +1,71 @@
 # Changelog
 
+## Unreleased
+### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.26] - 10-03-2026
+### Changes
+- Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
+- Primitive Illagers now drop new unique Arsenic Bronze tools instead of cobalt brass @Pyritie
+- Added upgrade and repair recipes for hiking boots (#3296) @SakuraKitsurugi
+- Improved performance of Supports and TFC animals @Mqrius
+- Added ways to convert mars water into normal water (#3298) @Pyritie
+- Added missing electrolyzer recipe for Sodium Sulfate (#3302) @sqcode06
+- Obsidian can now be picked up with any tier of tool @Pyritie
+- Quest updates @Pyritie @TomPlop
+### Bug fixes
+- Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
+- Fixed tools having 1/6 of their intended durability (#3329) @TomPlop
+- Fixed flint tools being uncraftable @Pyritie
+- Fixed some recipe conflicts with the Hexidecrubrometer and AES insulation roll (#3288) @Tipy4
+- Fixed not being able to feed some carnivorous dinosaurs (#3288) @Tipy4
+- Fixed the chemical reactor Butyraldehyde recipe not being moved to the correct circuit (5) (#3288) @Tipy4
+- Fixed foxes crashing the game when fed meal bags and other foods that are supposed to return an item to the player (#3277) @Mqrius
+- Fixed recipe conflict for copper-bonded alumina circuit board (#3314) @TomPlop
+- Fixed duplicate recipes for ceramic/epoxy circuit boards (#3306) @TomPlop
+- Fixed maintenance hatch tooltips showing an error message (#3329) @TomPlop
+- Fixed some quests (#3304) and new material names (#3315) @Pyritie
+- Potentially fixed rockets sometimes killing the second passenger (#3317) @BlueBoat29
+- Fixed uncraftable RTM alloy coil (#3333) @TomPlop
+- Fixed not being able to craft crimsene and warpane crystals in a vat (#3318) @Pyritie
+- Fixed the aluminium sulfide recipe not working (#3302) @sqcode06
+- Fixed the block texture of the solar panel casings (#3328) @Pyritie
+- Fixed holding Ctrl over seeds would open the wrong page of the field guide (#3348) @lysteryale
+- Fixed rotten voiding cover not able to be placed on machines (#3343) @gustovafing
+- Fixed not being able to use a wrench to pick up GT lamps (#3243) @Pyritie
+- Fixed bioreactor glass connected textures @Pyritie
+- Fixed factory gauges to use the diode tag instead of just the diode item (#3353) @Bumperdo09
+- Fixed the igneous felsic dust recipes so they aren't an infinite source of sulfur @Pyritie
+### Mod updates
+#### EMI++
+- Added (#3285) @SakuraKitsurugi
+#### Sacks 'n' Such
+- Fixed sacks' voiding not properly working @Traister101
+- Fixed issue with hiking boots' slowdown prevention sometimes not working @Traister101
+- Fixed crossbows not pulling ammo from the Quiver @Traister101
+#### Greate
+- Fixed encased fans voiding input items when there's not enough fluid in the fan to process the entire stack
+- Fixed encased fans not processing faster at different RPMs
+#### Digger Helmet
+- Added higher tiers of helmets
+#### Steam 'n' Rails
+- Moss carpets and snow can now "encase" rails
+- Many many new locometal blocks (with TFG recipes (#3340) @SakuraKitsurugi)
+- And [lots of bugfixes](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails/files/7698358)
+#### AE2
+- Pressing a hotkey over an entry in a terminal will in-world highlight the locations where item stacks are stored @ko-lja
+- The crafting confirmation and status screens can now have their height changed @ko-lja
+#### TerraFirmaCraft
+- Fixed some issues with double crops
+- Fixed cat genetics
+- Fixed to animals running around constantly @Mqrius
+- Fixed krummholz not spawning @Pyritie
+### Translation updates
+- Ukranian @MetEnBouldry @furrydenis
+- Chinese (simplified) @jmecn
+
 ## [0.11.25] - 06-03-2026
 ### MV Changes
 - Greatly expanded the second half of MV, mostly around crafting silicon boules and lenses for wafer engraving

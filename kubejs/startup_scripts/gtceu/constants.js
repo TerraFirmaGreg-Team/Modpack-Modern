@@ -44,7 +44,6 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
 
     // Другое (Other)
     "gtceu:flint_mortar",
-    "gtceu:flint_knife",
     "gtceu:firebrick",
     "gtceu:firebricks",
     "gtceu:fireclay_dust",

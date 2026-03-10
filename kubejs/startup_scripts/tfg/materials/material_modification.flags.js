@@ -13,6 +13,7 @@ function registerTFGFlagsMaterialModification(event) {
 		GENERATE_DOUBLE_INGOTS,
 		HAS_SMALL_TFC_ORE,
 		GENERATE_DUSTY_ORES,
+		GENERATE_BUZZSAW_BLADE,
 	} = TFGMaterialFlags
 
 	const {
@@ -192,6 +193,10 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
 	GTMaterials.Cadmium.addFlags(GENERATE_PLATE);
+	
+	// These are used for cutters/mech saws, not for tools
+	GTMaterials.CobaltBrass.addFlags(GENERATE_BUZZSAW_BLADE);
+	GTMaterials.WroughtIron.addFlags(GENERATE_BUZZSAW_BLADE);
 
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)

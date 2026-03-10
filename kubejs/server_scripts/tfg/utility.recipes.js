@@ -1,4 +1,4 @@
-    
+// priority: 10
     // How to call this function anywhere in KubeJS
 
     // Always add an ID, whatever you want without adding the machine name if you don't want to see namespace:machine/machine/my_recipe
@@ -70,7 +70,7 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         // Replace a fluid
 
-        if (options.fluidReplacements) {
+        if (options.fluidReplacements && recipeJson.inputs && recipeJson.inputs.fluid) {
             for (var fr = 0; fr < recipeJson.inputs.fluid.length; fr++) {
                 var frValues = recipeJson.inputs.fluid[fr].content.value
                 for (var frv = 0; frv < frValues.length; frv++) {
@@ -86,7 +86,7 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         // Modify amount of item input
 
-        if (options.itemInputs) {
+        if (options.itemInputs && recipeJson.inputs && recipeJson.inputs.item) {
             for (var key in options.itemInputs) {
                 for (var ii = 0; ii < recipeJson.inputs.item.length; ii++) {
                     var ing = recipeJson.inputs.item[ii].content.ingredient
@@ -98,7 +98,7 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Modify amount of fluid input
-        if (options.fluidInputs) {
+        if (options.fluidInputs && recipeJson.inputs && recipeJson.inputs.fluid) {
             for (var fkey in options.fluidInputs) {
                 for (var fi = 0; fi < recipeJson.inputs.fluid.length; fi++) {
                     var val = recipeJson.inputs.fluid[fi].content.value[0]
@@ -109,29 +109,25 @@ global.modifyRecipe = function(event, recipeId, options) {
             }
         }
 
-        // MModify amount of item output
-        if (options.itemOutputs) {
+        // Modify amount of item output
+        if (options.itemOutputs && recipeJson.outputs && recipeJson.outputs.item) {
             for (var okey in options.itemOutputs) {
-                if (recipeJson.outputs && recipeJson.outputs.item) {
-                    for (var oi2 = 0; oi2 < recipeJson.outputs.item.length; oi2++) {
-                        var outIng2 = recipeJson.outputs.item[oi2].content.ingredient || recipeJson.outputs.item[oi2].content
-                        if (outIng2.item && outIng2.item === okey) {
-                            recipeJson.outputs.item[oi2].content.count = options.itemOutputs[okey]
-                        }
+                for (var oi2 = 0; oi2 < recipeJson.outputs.item.length; oi2++) {
+                    var outIng2 = recipeJson.outputs.item[oi2].content.ingredient || recipeJson.outputs.item[oi2].content
+                    if (outIng2.item && outIng2.item === okey) {
+                        recipeJson.outputs.item[oi2].content.count = options.itemOutputs[okey]
                     }
                 }
             }
         }
 
         // Modify amount of fluid output
-        if (options.fluidOutputs) {
+        if (options.fluidOutputs && recipeJson.outputs && recipeJson.outputs.fluid) {
             for (var fokey in options.fluidOutputs) {
-                if (recipeJson.outputs && recipeJson.outputs.fluid) {
-                    for (var fo = 0; fo < recipeJson.outputs.fluid.length; fo++) {
-                        var outVal = recipeJson.outputs.fluid[fo].content.value[0]
-                        if (outVal && outVal.fluid && outVal.fluid === fokey) {
-                            recipeJson.outputs.fluid[fo].content.amount = options.fluidOutputs[fokey]
-                        }
+                for (var fo = 0; fo < recipeJson.outputs.fluid.length; fo++) {
+                    var outVal = recipeJson.outputs.fluid[fo].content.value[0]
+                    if (outVal && outVal.fluid && outVal.fluid === fokey) {
+                        recipeJson.outputs.fluid[fo].content.amount = options.fluidOutputs[fokey]
                     }
                 }
             }
