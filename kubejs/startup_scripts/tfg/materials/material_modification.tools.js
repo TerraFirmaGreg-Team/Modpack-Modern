@@ -11,7 +11,8 @@ function registerTFGToolMaterialModification(event) {
 		GENERATE_DRILL_HEAD,
 		GENERATE_CHAINSAW_HEAD,
 		GENERATE_WRENCH_HEAD,
-		GENERATE_WIRE_CUTTER_HEAD
+		GENERATE_WIRE_CUTTER_HEAD,
+		GENERATE_REPAIR_KIT
 	} = TFGMaterialFlags;
 
 	const $GTToolType = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.GTToolType')
@@ -203,7 +204,7 @@ function registerTFGToolMaterialModification(event) {
 
 	// Balance Tools
 
-	const DURABILITY_MULTIPLIER = 6;
+	const DURABILITY_MULTIPLIER = 5;
 
 	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8 * DURABILITY_MULTIPLIER, 1, [
 		GTToolType.AXE,
@@ -237,74 +238,74 @@ function registerTFGToolMaterialModification(event) {
 	// ULV
 
 	// Havest speed, attack damage, durability, harvest level, tool types
-	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.Copper.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 3.5, 132 * DURABILITY_MULTIPLIER, 2, ULVTools).build());
 
-	GTMaterials.BismuthBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.7, 4.0, 195 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.BlackBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.BlackBronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.1, 5.0, 188 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.Bronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.Bronze.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.Bronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3, 4, 212 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.WroughtIron.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.WroughtIron.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.WroughtIron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(4, 4, 384 * DURABILITY_MULTIPLIER, 2, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.Steel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.Steel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.Steel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 5, 512 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
 	GTMaterials.DamascusSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 6, 1024 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
-	GTMaterials.BlackSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD);
+	GTMaterials.BlackSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 5.5, 612 * DURABILITY_MULTIPLIER, 3, ULVTools.concat(GTToolType.MORTAR)).build());
 
 	// LV
 
-	GTMaterials.BlueSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.BlueSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.BlueSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(9, 5, 804 * DURABILITY_MULTIPLIER, 3, LVTools).build());
 
-	GTMaterials.RedSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.RedSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.RedSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6, 7.5, 1560 * DURABILITY_MULTIPLIER, 3, LVTools).build());
 
 	// MV
 
 	// Diamond Tipped Tools - 11 - 6 - 1024 - 3
 
-	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.VanadiumSteel.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.VanadiumSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 8, 2048 * DURABILITY_MULTIPLIER, 3, MVTools).build());
 
-	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD)
+	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT)
 	TFGHelpers.getMaterial('diamond_tipped_mo_50_re').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(11, 6, 1024 * DURABILITY_MULTIPLIER, 3, MVTools).build());
 
 	// HV
 
-	GTMaterials.Ultimet.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.Ultimet.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.Ultimet.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(16, 9, 1678 * DURABILITY_MULTIPLIER, 4, HVTools).build());
 
-	TFGHelpers.getMaterial('boron_carbide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	TFGHelpers.getMaterial('boron_carbide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	TFGHelpers.getMaterial('boron_carbide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(5, 11, 3678 * DURABILITY_MULTIPLIER, 3, HVTools).build());
 
 	// EV
 
-	GTMaterials.TungstenCarbide.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.TungstenCarbide.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.TungstenCarbide.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(34, 12, 1024 * DURABILITY_MULTIPLIER, 4, EVTools).build());
 
-	TFGHelpers.getMaterial('ostrum_iodide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	TFGHelpers.getMaterial('ostrum_iodide').addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	TFGHelpers.getMaterial('ostrum_iodide').setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(20, 10, 3096 * DURABILITY_MULTIPLIER, 4, EVTools).build());
 
 	// IV
 
-	GTMaterials.HSSE.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.HSSE.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.HSSE.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(44, 13, 4012 * DURABILITY_MULTIPLIER, 3, IVTools).build());
 
 	// LuV
 
-	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.Duranium.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.Duranium.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(54, 14, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
 
-	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD);
+	GTMaterials.NaquadahAlloy.addFlags(GENERATE_SCREWDRIVER_HEAD, GENERATE_WRENCH_HEAD, GENERATE_WIRE_CUTTER_HEAD, GENERATE_BUZZSAW_BLADE, GENERATE_DRILL_HEAD, GENERATE_CHAINSAW_HEAD, GENERATE_REPAIR_KIT);
 	GTMaterials.NaquadahAlloy.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(64, 15, 8192 * DURABILITY_MULTIPLIER, 5, IVTools).build());
 
 	// UV
@@ -380,7 +381,7 @@ function registerTFGToolMaterialModification(event) {
 
 	TFGHelpers.getMaterial('silicon_carbide_silicon_carbide').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(200, 50, 2, 238));
 	GTMaterials.get('rocket_alloy_t1').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(170, 105, 3, 1215));
-	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(130, 180, 4, 1536));
+	TFGHelpers.getMaterial('inconel_718').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(220, 180, 4, 1536));
 	TFGHelpers.getMaterial('tungsten_bismuth_oxide_composite').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 80, 7, 465));
 	GTMaterials.get('rocket_alloy_t2').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(210, 150, 5, 2484));
 	TFGHelpers.getMaterial('mo_si_b').setProperty(PropertyKey.ROTOR, new $ROTOR_PROPERTY(270, 180, 6, 1610));
@@ -427,23 +428,23 @@ function registerTFGToolMaterialModification(event) {
 		}
 	};
 
-	GTMaterials.Wood.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(340, 10, false, false, false, false));
-	GTMaterials.Copper.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 12, true, false, false, false));
-	GTMaterials.Bronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 40, true, false, false, false));
-	GTMaterials.TinAlloy.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1572, 40, true, false, false, false));
-	GTMaterials.Gold.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1671, 50, true, true, false, false));
-	GTMaterials.Potin.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1546, 80, true, false, false, false));
-	GTMaterials.Steel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1855, 100, true, false, false, false));
-	GTMaterials.Polyethylene.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 120, true, false, false, false));
-	GTMaterials.StainlessSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(2428, 150, true, true, true, false));
-	GTMaterials.Aluminium.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1166, 200, true, false, false, false));
-	GTMaterials.Polytetrafluoroethylene.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(600, 800, true, true, false, false));
-	GTMaterials.Titanium.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3426, 1200, true, false, true, false));
-	GTMaterials.TungstenSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(5137, 1800, true, false, true, false));
-	GTMaterials.Polybenzimidazole.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1000, 2800, true, false, false, false));
-	GTMaterials.NiobiumTitanium.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(7300, 1400, true, true, false, false));
-	GTMaterials.Naquadah.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3776, 1600, true, false, true, true));
-	GTMaterials.Iridium.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(3398, 2000, true, false, true, false));
-	GTMaterials.Duranium.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(9625, 4000, true, true, true, true));
+		GTMaterials.Wood.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(340, 	10, 	false, false, false, false));
+		GTMaterials.Copper.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1696, 	12, 	true, false, false, false));
+		GTMaterials.Bronze.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1696, 	40, 	true, false, false, false));
+		GTMaterials.TinAlloy.setProperty(PropertyKey.FLUID_PIPE,				new $FLUID_PIPE_PROPERTY(1572, 	40, 	true, false, false, false));
+		GTMaterials.Gold.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1671, 	50, 	true, true, false, false));
+		GTMaterials.Potin.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1546, 	80, 	true, false, false, false));
+		GTMaterials.Steel.setProperty(PropertyKey.FLUID_PIPE, 					new $FLUID_PIPE_PROPERTY(1855, 	100,	true, false, false, false));
+		GTMaterials.Polyethylene.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(370, 	120, 	true, false, false, false));
+		GTMaterials.StainlessSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(2428, 	150,	true, true, true, false));
+		GTMaterials.Aluminium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(1166, 	200,	true, false, false, false));
+		GTMaterials.Polytetrafluoroethylene.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(600, 	800, 	true, true, false, false));
+		GTMaterials.Titanium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3426, 	1200,	true, false, true, false));
+		GTMaterials.TungstenSteel.setProperty(PropertyKey.FLUID_PIPE, 			new $FLUID_PIPE_PROPERTY(5137, 	1800,	true, false, true, false));
+		GTMaterials.Polybenzimidazole.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(1000, 	2800,	true, false, false, false));
+		GTMaterials.NiobiumTitanium.setProperty(PropertyKey.FLUID_PIPE, 		new $FLUID_PIPE_PROPERTY(7300, 	1400,	true, true, false, false));
+		GTMaterials.Naquadah.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3776, 	1600,	true, false, true, true));
+		GTMaterials.Iridium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(3398, 	2000,	true, false, true, false));
+		GTMaterials.Duranium.setProperty(PropertyKey.FLUID_PIPE, 				new $FLUID_PIPE_PROPERTY(9625, 	4000,	true, true, true, true));
 
 }

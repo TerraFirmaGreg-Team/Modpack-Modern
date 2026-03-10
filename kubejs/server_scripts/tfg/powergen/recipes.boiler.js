@@ -108,6 +108,9 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
 	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
+
+	event.remove({ id: "gtceu:large_boiler/gtceu_creosote" })
+
 	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
 	event.recipes.gtceu.steam_boiler('tfg:oil')
 		.inputFluids(Fluid.of('gtceu:oil', 200))
@@ -162,6 +165,14 @@ function registerTFGBoilerRecipes(event) {
 	event.recipes.gtceu.steam_boiler('tfg:tallow')
 		.inputFluids(Fluid.of('tfc:tallow', 160))
 		.duration(200)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	// Super Fuel Boiler
+
+	event.recipes.gtceu.super_boiler('tfg:syngas_fuel')
+		.inputFluids(Fluid.of('tfg:syngas', 100))
+		.duration(20*60)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 

@@ -10,7 +10,7 @@ function registerTFGOresMaterialModification(event) {
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 
 	let rose_quartz = $GreateMaterials.RoseQuartz;
-	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY(6, 1, true));
 	rose_quartz.getProperty(PropertyKey.ORE).setOreByProducts(rose_quartz, GTMaterials.Redstone, rose_quartz);
 
 	// Change byproducts so you can't get certus from normal quartzite

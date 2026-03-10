@@ -5596,5 +5596,14 @@
 	"quests.tfg_tips.tools_tips.brick_roads.desc": "These materials—when applied to base course—form roads which give a &b&l20%%&r&r boost to walking speed.",
 	"quests.tfg_tips.tools_tips.concrete_roads.title": "Concrete Roads",
 	"quests.tfg_tips.tools_tips.concrete_roads.subtitle": "Almost worth all the effort.",
-	"quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions."
+	"quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions.",
+	"tfg.multiblock.large_boiler.booster_active": "Booster: %s (%sK)",
+	"tfg.multiblock.large_boiler.booster_none": "Booster: None",
+	"tfg.multiblock.large_boiler.water_boosted": "Water: %s (%s Steam)",
+	"tfg.multiblock.large_boiler.water_normal": "Water: Standard",
+	"fluid.tag.tfg.water_boiler_t2": "Distilled Water",
+	"tfg.multiblock.large_boiler.mode": "Boiler Mode: ",
+	"tfg.recipe_type.large_boiler": "Standard",
+  	"tfg.recipe_type.super_boiler": "Advanced"
+
 }
