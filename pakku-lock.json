@@ -578,7 +578,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.6.0.jar",
+                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -587,22 +587,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7703/288/adaptive_performance_tweaks_items_1.20.1-11.6.0.jar",
-                    "id": "7703288",
+                    "url": "https://edge.forgecdn.net/files/7736/364/adaptive_performance_tweaks_items_1.20.1-11.6.1.jar",
+                    "id": "7736364",
                     "parent_id": "561439",
                     "hashes": {
-                        "sha1": "2c1ad8c6b1ac6e94c4b8cc9cb63a6ae8b9548aa0",
-                        "md5": "0b275108ac931fef9807173dc421fb71"
+                        "sha1": "52b58d36ca830d684119a4ae0a2c16d310b62ba3",
+                        "md5": "d84638457b322f656fad1d98d2d17887"
                     },
                     "required_dependencies": [
                         "561087"
                     ],
-                    "size": 73505,
-                    "date_published": "2026-03-02T23:42:07.463Z"
+                    "size": 73583,
+                    "date_published": "2026-03-10T01:23:28.813Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.6.0.jar",
+                    "file_name": "adaptive_performance_tweaks_items_1.20.1-11.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -611,18 +611,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/z3TjJLQ0/versions/lRYlxwXV/adaptive_performance_tweaks_items_1.20.1-11.6.0.jar",
-                    "id": "lRYlxwXV",
+                    "url": "https://cdn.modrinth.com/data/z3TjJLQ0/versions/i25Vc8Bg/adaptive_performance_tweaks_items_1.20.1-11.6.1.jar",
+                    "id": "i25Vc8Bg",
                     "parent_id": "z3TjJLQ0",
                     "hashes": {
-                        "sha512": "a0ffe95b3dcb296f0218639f286c88905448a0e2babec11ae8607f921843543b54f9d80c8a5f50e0ab6e5382caf3f68e49c53cf85ae3b3ccb798309b210cdb2b",
-                        "sha1": "8bf79c42c00037bf14b31a4009d0067152e70f5a"
+                        "sha512": "047081604ea5116f0f82a2641b4d56b32c96a4c946a30d47bcf115ee6380a03d6a85988e193e2d2551c3e7e7f74efaed2f91fc874b688218b071b4416dee9ffe",
+                        "sha1": "927589e07f9357e9c79b3da82ac0d7dfde0908fb"
                     },
                     "required_dependencies": [
                         "L5xaBiBb"
                     ],
-                    "size": 73505,
-                    "date_published": "2026-03-02T23:42:00.692655Z"
+                    "size": 73583,
+                    "date_published": "2026-03-10T01:23:21.110350Z"
                 }
             ]
         },
