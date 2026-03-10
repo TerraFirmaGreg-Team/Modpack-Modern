@@ -296,4 +296,9 @@ const registerTFCRecipes = (event) => {
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
 
+	event.replaceInput(
+		{ type: 'tfc:pot_jam' },
+		'#tfg:sugars',
+		'#tfc:sweetener'
+	)
 }
