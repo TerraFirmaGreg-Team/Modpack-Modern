@@ -128,4 +128,5 @@ function registerTFGPrimitiveFluidTags(event) {
 			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
 		}
 	})
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }

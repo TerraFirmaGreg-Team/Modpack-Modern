@@ -182,7 +182,7 @@ function registerTFGPrimitiveItems(event) {
 
 
 	event.create('tfg:spindle_head_mold', 'tfc:mold')
-        .capacity(144)
+        .capacity(72)
 		.texture("base", "tfg:item/mold/fired/spindle_head_empty")
 		.texture("fluid", "tfg:item/mold/fired/spindle_head_overlay")
 		.tag('tfc:fired_molds')

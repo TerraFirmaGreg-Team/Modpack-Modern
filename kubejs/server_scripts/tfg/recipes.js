@@ -11,7 +11,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGMiscellaneousRecipes(event)
 	registerTFGTemporaryRecipes(event)
 
-	registerTFGSpindleRecipies(event)
 	registerTFGFoodRecipes(event)
 	registerTFGRefrigeratorRecipes(event)
 	registerTFGMealBagRecipes(event)
