@@ -123,6 +123,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGFoodBlockTags(event)
 	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
+	registerTFGOverworldBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)

@@ -1,5 +1,27 @@
 "use strict";
 
+function registerTFGOverworldBlockTags(event) {
+	event.add('tfg:dry_plant_plantable_on', '#minecraft:sand');
+	event.add('tfg:dry_plant_plantable_on', '#forge:gravel');
+	event.add('tfg:dry_plant_plantable_on', '#tfc:bush_plantable_on');
+	event.add('tfg:dry_plant_plantable_on', '#forge:sandstone');
+
+	event.add('tfg:epiphyte_plantable_on', '#minecraft:logs');
+	event.add('tfg:epiphyte_plantable_on', '#forge:stone');
+	event.add('tfg:epiphyte_plantable_on', '#forge:sandstone');
+
+	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/basalt');
+	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/limestone');
+	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/marble');
+	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/rhyolite');
+
+	event.add('tfg:anemone_plantable_on', '#forge:stone');
+	event.add('tfg:anemone_plantable_on', '#forge:cobblestone');
+	event.add('tfg:anemone_plantable_on', '#forge:gravel');
+	event.add('tfg:anemone_plantable_on', '#minecraft:sand');
+	event.add('tfg:anemone_plantable_on', '#forge:sandstone');
+}
+
 function registerTFGOverworldBiomeTags(event) {
 
 	// Structures
@@ -199,6 +221,9 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
 	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
 	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
+	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_lake')
+	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_ocean')
+	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_river')
 
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shore')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
@@ -315,6 +340,7 @@ function registerTFGOverworldBiomeTags(event) {
 function registerTFGOverworldPlacedFeatures(event) {
 
 	// Rose quartz
+	// Old worldgen
 	event.add('tfc:in_biome/surface_decoration/ocean', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfc:in_biome/surface_decoration/ocean_reef', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfc:in_biome/surface_decoration/deep_ocean', 'tfg:earth/rose_quartz/rose_quartz')
@@ -325,19 +351,17 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add('tfc:in_biome/surface_decoration/salt_marsh', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfc:in_biome/surface_decoration/plains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfc:in_biome/surface_decoration/lake', 'tfg:earth/rose_quartz/rose_quartz')
-	// TODO: I want to remove these from the lowland biomes and move them into ice sheets,
-	// but that'll make rose quartz impossible for anyone still using the old worldgen.
-	// We can change these tags over whenever we move everyone over to the new worldgen.
-	event.add('tfc:in_biome/surface_decoration/ice_sheet', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_oceanic', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_shore', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/ice_sheet_tuyas', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/glaciated_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/glacited_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
-	event.add('tfc:in_biome/surface_decoration/glacited_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
+	// Mew worldgen
+	event.add('tfg:in_biome/surface_decoration/ice_sheet', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_mountains', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_oceanic', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_shore', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/ice_sheet_tuyas', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/glaciated_mountains', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/glacited_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/glacited_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
 
 	// Tarkianite
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
@@ -365,8 +389,14 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:feature/crops", "tfg:earth/flax_patch");
 
 	// Other decoration
+	// Old worldgen
 	event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/volcano_spout");
+	// New worldgen
+	event.add("tfg:in_biome/underground_decoration", "tfg:glow_lichen");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/oil_spout");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/volcano_spout");
 }
