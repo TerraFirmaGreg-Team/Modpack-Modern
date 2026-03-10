@@ -39,6 +39,8 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:tools/ore_prospectors/black_steel', 'tfc:metal/propick/black_steel')
 	event.add('tfg:tools/ore_prospectors/blue_steel', 'tfc:metal/propick/blue_steel')
 	event.add('tfg:tools/ore_prospectors/red_steel', 'tfc:metal/propick/red_steel')
+	
+	event.add('tfg:tools/spindles', 'tfc:spindle')
 
 	// Paper from wood
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
@@ -126,4 +128,5 @@ function registerTFGPrimitiveFluidTags(event) {
 			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
 		}
 	})
+	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }
