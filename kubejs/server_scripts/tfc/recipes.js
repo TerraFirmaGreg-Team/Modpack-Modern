@@ -171,6 +171,11 @@ const registerTFCRecipes = (event) => {
 
 	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 
+	event.replaceInput(
+		{ type: 'tfc:pot_jam' },
+		'#tfg:sugars',
+		'#tfc:sweetener'
+	)
 
 	// jute net -> burlap net
 	event.replaceInput({ id: 'tfc:crafting/jute_net' }, 'tfc:jute_fiber', '#tfg:burlap_fiber')
@@ -295,10 +300,4 @@ const registerTFCRecipes = (event) => {
 			A: `tfc:wood/sapling/${type}`
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
-
-	event.replaceInput(
-		{ type: 'tfc:pot_jam' },
-		'#tfg:sugars',
-		'#tfc:sweetener'
-	)
 }
