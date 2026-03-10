@@ -1,0 +1,10 @@
+{
+  "type": "emixx:group",
+  "contents": [
+    {
+      "type": "item",
+      "id": "minecraft:splash_potion"
+    }
+  ],
+  "enabled": false
+}

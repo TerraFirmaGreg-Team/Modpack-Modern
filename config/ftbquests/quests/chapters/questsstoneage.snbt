@@ -820,44 +820,27 @@
 			subtitle: "{quests.stone_age.first_stone_tools.subtitle}"
 			tasks: [
 				{
-					id: "3D3D5F09154EC219"
+					id: "0A402FE870B1E880"
 					item: {
 						Count: 1
-						id: "gtceu:stone_knife"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								AttackDamage: 1.0f
-								AttackSpeed: 3.0f
-								MaxDamage: 47
-							}
-							HideFlags: 2
+							"ftbfiltersystem:filter": "or(item(gtceu:stone_axe)item(gtceu:flint_axe))"
 						}
 					}
+					title: "{quests.stone_age.first_stone_tools.task.1}"
 					type: "item"
 				}
 				{
-					id: "62B0EA7926874079"
+					id: "46C4A978101E25E5"
 					item: {
 						Count: 1
-						id: "gtceu:stone_axe"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: {
-								DisableShields: 1b
-								TreeFelling: 1b
-							}
-							GT.Tool: {
-								HarvestLevel: 1
-								MaxDamage: 47
-								ToolSpeed: 3.2f
-							}
-							HideFlags: 2
+							"ftbfiltersystem:filter": "or(item(gtceu:stone_knife)item(gtceu:flint_knife))"
 						}
 					}
+					title: "{quests.stone_age.first_stone_tools.task.2}"
 					type: "item"
 				}
 			]
@@ -873,13 +856,27 @@
 			subtitle: "{quests.stone_age.rock_knapping.subtitle}"
 			tasks: [
 				{
-					id: "7F838F64A76D8DE9"
-					item: "gtceu:stone_axe_head"
+					id: "250DF47BB97E6583"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:stone_axe_head)item(gtceu:flint_axe_head))"
+						}
+					}
+					title: "{quests.stone_age.rock_knapping.task.1}"
 					type: "item"
 				}
 				{
-					id: "688B76AB2E2E898B"
-					item: "gtceu:stone_knife_head"
+					id: "4562967E5C199597"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:stone_knife_head)item(gtceu:flint_knife_head))"
+						}
+					}
+					title: "{quests.stone_age.rock_knapping.task.2}"
 					type: "item"
 				}
 			]

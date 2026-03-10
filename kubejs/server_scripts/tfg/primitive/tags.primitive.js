@@ -82,11 +82,16 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_inputs', 'gtceu:phenolic_circuit_board')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_single_wire')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_quadruple_wire')
+	event.add('tfg:artisan_table_inputs', 'tfg:optical_borosilicate_blank')
+	event.add('tfg:artisan_table_inputs', 'tfc:powder/flux')
 	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
 	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
 	event.add('tfg:artisan_table_tools', '#forge:tools/files')
 	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
 	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/buzzsaws')
+	event.add('tfg:artisan_table_tools', 'tfc:gem_saw')
+	event.add('tfg:artisan_table_tools', '#create:sandpaper')
 }
 
 function registerTFGPrimitiveBlockTags(event) {

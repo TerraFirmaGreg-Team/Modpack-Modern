@@ -88,6 +88,7 @@ function registerTFGPrimitiveMaterials(event) {
 		.color(0xEEB9AD)
 		.secondaryColor(0xF6A797)
 		.formula("Al2Si2O5(OH)4")
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// Film developing
 	event.create('tfg:pyrogallol')

@@ -2329,4 +2329,9 @@ const registerAE2Recipes = (event) => {
 		E: 'ae2:silicon_press'
 	}).id('tfg:shaped/not_so_mysterious_cube')
 
+	event.recipes.gtceu.macerator('sky_stone')
+		.itemInputs('#tfg:stone_types/suevite')
+		.itemOutputs('ae2:sky_dust')
+		.EUt(2)
+		.duration(100)
 }

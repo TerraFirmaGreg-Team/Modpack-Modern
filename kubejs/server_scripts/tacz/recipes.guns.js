@@ -10,7 +10,7 @@ function registerTACZGunRecipes(event){
 	], {
 		A: '#forge:tools/files',
 		B: 'tfg:flintlock_mechanism',
-		C: 'gtceu:lead_small_fluid_pipe',
+		C: 'gtceu:tin_alloy_small_fluid_pipe',
 		D: '#firmaciv:hard_wood',
 		E: '#forge:tools/saws',
 		F: '#forge:ingots/brass',
@@ -219,7 +219,7 @@ function registerTACZGunRecipes(event){
 		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 2160))
 		.itemOutputs(Item.of('tacz:modern_kinetic_gun', 
 			'{GunCurrentAmmoCount:0,GunFireMode:"AUTO",GunId:"applied_armorer:niklas_smg_freedom",HasBulletInBarrel:1b}'))
-		.circuit(7)
+		.circuit(28)
 		.EUt(GTValues.VA[GTValues.EV])
 		.duration(160)
 		
@@ -235,7 +235,7 @@ function registerTACZGunRecipes(event){
 		.duration(240)
 	
 	event.recipes.gtceu.assembler('tfg_tacz:ca_cannon')
-		.itemInputs('2x gtceu:tungsten_large_fluid_pipe', '2x gtceu:tungsten_normal_fluid_pipe', '10x #forge:ingots/titanium',
+		.itemInputs('2x gtceu:tungsten_steel_large_fluid_pipe', '2x gtceu:tungsten_steel_normal_fluid_pipe', '10x #forge:ingots/titanium',
 					'4x #forge:ingots/tungsten', '10x #forge:plates/brass', 'create:gantry_shaft',
 					'4x gtceu:treated_wood_planks', '30x #forge:screws/tungsten', '3x tfg:advanced_clockwork_mechanism')
 		.inputFluids(Fluid.of('gtceu:soldering_alloy', 3024))

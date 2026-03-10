@@ -28,6 +28,17 @@ function registerTFGKnappingRecipes(event) {
 		.outsideSlotRequired(false)
 		.id('tfg:rock_knapping/stone_axe_head')
 
+	event.recipes.tfc.knapping('gtceu:flint_axe_head', 'tfg:flint', [
+			" X   ",
+		"XXXX ",
+		"XXXXX",
+		"XXXX ",
+		" X   "
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_axe_head')
+
 	//#endregion
 
 	//#region Молот
@@ -107,6 +118,36 @@ function registerTFGKnappingRecipes(event) {
 		.outsideSlotRequired(false)
 		.id('tfg:rock_knapping/stone_hoe_head_2')
 
+	event.recipes.tfc.knapping('gtceu:flint_hoe_head', 'tfg:flint', [
+		"XXXXX",
+		"   XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_hoe_head')
+
+	event.recipes.tfc.knapping('2x gtceu:flint_hoe_head', 'tfg:flint', [
+		"XXXXX",
+		"XX   ",
+		"     ",
+		"XXXXX",
+		"XX   "
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_hoe_head_1')
+
+	event.recipes.tfc.knapping('2x gtceu:flint_hoe_head', 'tfg:flint', [
+		"XXXXX",
+		"XX   ",
+		"     ",
+		"XXXXX",
+		"   XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_hoe_head_2')
+
 	//#endregion
 
 	//#region Нож
@@ -179,6 +220,50 @@ function registerTFGKnappingRecipes(event) {
 		.outsideSlotRequired(false)
 		.id('tfg:rock_knapping/stone_knife_head_3')
 
+	event.recipes.tfc.knapping('gtceu:flint_knife_head', 'tfg:flint', [
+		"X ",
+		"XX",
+		"XX",
+		"XX",
+		"XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_knife_head')
+
+	event.recipes.tfc.knapping('2x gtceu:flint_knife_head', 'tfg:flint', [
+		"X  X ",
+		"XX XX",
+		"XX XX",
+		"XX XX",
+		"XX XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_knife_head_1')
+
+	event.recipes.tfc.knapping('2x gtceu:flint_knife_head', 'tfg:flint', [
+		"X   X",
+		"XX XX",
+		"XX XX",
+		"XX XX",
+		"XX XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_knife_head_2')
+
+	event.recipes.tfc.knapping('2x gtceu:flint_knife_head', 'tfg:flint', [
+		" X X ",
+		"XX XX",
+		"XX XX",
+		"XX XX",
+		"XX XX"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_knife_head_3')
+
 	//#endregion
 
 	//#region Лопата
@@ -206,7 +291,37 @@ function registerTFGKnappingRecipes(event) {
 		.outsideSlotRequired(false)
 		.id('tfg:rock_knapping/stone_shovel_head')
 
+	event.recipes.tfc.knapping('gtceu:flint_shovel_head', 'tfg:flint', [
+		"XXX",
+		"XXX",
+		"XXX",
+		"XXX",
+		" X "
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_shovel_head')
+
 	//#endregion
+
+	event.recipes.tfc.knapping('gtceu:flint_pickaxe_head', 'tfg:flint', [
+		" XXX ",
+		"X   X"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_pickaxe_head')
+
+	event.recipes.tfc.knapping('gtceu:flint_sword_head', 'tfg:flint', [
+		"XX   ",
+		"XXX  ",
+		" XXX ",
+		"  XX ",
+		"    X"
+	])
+		.ingredient('minecraft:flint')
+		.outsideSlotRequired(false)
+		.id('tfg:rock_knapping/flint_sword_head')
 	
 	event.recipes.tfc.knapping('tfc:thatch', 'tfg:straw', [
 		"XXX",

@@ -438,26 +438,6 @@ function registerVintageImprovementsRecipes(event) {
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/lathe/rose_quartz_lens`)
 
-	event.recipes.vintageimprovements.polishing(['#forge:lenses/diamond', '2x #forge:dusts/diamond'], '#forge:exquisite_gems/diamond')
-		.speedLimits(1)
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/diamond_lens`)
-
-	event.recipes.vintageimprovements.polishing(['#forge:lenses/emerald', '2x #forge:dusts/emerald'], '#forge:exquisite_gems/emerald')
-		.speedLimits(1)
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/emerald_lens`)
-
-	event.recipes.vintageimprovements.polishing(['#forge:lenses/ruby', '2x #forge:dusts/ruby'], '#forge:exquisite_gems/ruby')
-		.speedLimits(1)
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/ruby_lens`)
-
-	event.recipes.vintageimprovements.polishing(['#forge:lenses/sapphire', '2x #forge:dusts/sapphire'], '#forge:exquisite_gems/sapphire')
-		.speedLimits(1)
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-		.id(`tfg:vi/lathe/sapphire_lens`)
-
 	event.recipes.vintageimprovements.polishing(['#forge:lenses/amethyst', '2x #forge:dusts/amethyst'], '#forge:exquisite_gems/amethyst')
 		.speedLimits(1)
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)

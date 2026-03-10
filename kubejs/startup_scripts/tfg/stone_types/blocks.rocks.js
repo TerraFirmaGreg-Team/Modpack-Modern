@@ -190,7 +190,7 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.textureAll(rock.bricks.texture ?? rock.bricks.block.replace(/:/g, ":block/"))
 				.mapColor(rock.mapColor)
-				.tagBoth('tfg:rock/aqueducts')
+				.tagBoth('tfc:rock/aqueducts')
 
 			if (rock.tfcTag != null) {
 				aqueduct.tagBoth(rock.tfcTag);
