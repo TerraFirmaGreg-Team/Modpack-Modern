@@ -170,9 +170,59 @@ function registerTFGBoilerRecipes(event) {
 
 	// Super Fuel Boiler
 
+	event.recipes.gtceu.super_boiler('tfg:syngas_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('tfg:syngas', 20000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
 	event.recipes.gtceu.super_boiler('tfg:syngas_fuel')
-		.inputFluids(Fluid.of('tfg:syngas', 100))
-		.duration(20*60)
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('tfg:syngas', 20000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:light_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:light_fuel', 40000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:light_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:light_fuel', 40000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:heavy_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:heavy_fuel', 40000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:heavy_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:heavy_fuel', 40000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:naphtha_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:naphtha', 40000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:naphtha_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:naphtha', 40000*4))
+		.duration(20*150)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 

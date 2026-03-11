@@ -413,4 +413,9 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
+
+	// Increase casing costs
+
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
 }
