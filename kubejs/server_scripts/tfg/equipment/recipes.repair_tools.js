@@ -1,4 +1,10 @@
-ServerEvents.recipes(event => {
+// Because it's impossible to delete a GTTools in a shapeless recipe without losing its NBT or even modifying the NBT of the tool by a certain amount we are using a different method.
+// This function is used to create recipes for every TFG/GT Tools with their repair kit and the percentage of reperation each kits can do.
+// Everytime you craft this recipe the event TFGRepairHelper in TFG Core is trigger and recreate the tool with all its NBT.
+// The Bonus is that you can choose the amount of reparation for each type of tools. Also we need 4 functions because GT name for their tools is stupid.
+
+function registerTFGRepairKitRecipes(event) {
+
     const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver'];
     const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar'];
     const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer'];
@@ -78,6 +84,8 @@ ServerEvents.recipes(event => {
         });
     }
 
+    // 'namespace':'tier if electric'_material' Amount repaired in percentage
+
     repairColoredSteel('gtceu', 'red_steel', 0.25);
     repairColoredSteel('gtceu', 'blue_steel', 0.25);
 
@@ -123,4 +131,4 @@ ServerEvents.recipes(event => {
     repairManualTools('gtceu', 'bronze', 0.25);
     repairManualTools('gtceu', 'copper', 0.25);
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
-});
+};
