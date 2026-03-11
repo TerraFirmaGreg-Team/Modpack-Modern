@@ -1,7 +1,8 @@
-/*
 ServerEvents.recipes(event => {
     const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver'];
     const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar'];
+    const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer'];
+    const ONLY_COLORED_TOOLS = ['buzzsaw'];
 
     function repairElectricTools(namespace, tierMaterial, repairKitMaterial, repairPercent) {
         ELECTRIC_TOOLS.forEach(tool => {
@@ -39,12 +40,53 @@ ServerEvents.recipes(event => {
         });
     }
 
+    function repairOnlyManualTools(namespace, material, repairPercent) {
+        ONLY_MANUAL_TOOLS.forEach(tool => {
+            let toolId = `${namespace}:${material}_${tool}`;
+            let repairKitId = `${namespace}:repair_kit_${material}`;
+            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+                event.recipes.tfc.no_remainder_shapeless_crafting(
+                    event.shapeless(
+                        toolId,
+                        [
+                            toolId,
+                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+                        ]
+                    )
+                );
+            }
+        });
+    }
+
+
+
+    function repairColoredSteel(namespace, material, repairPercent) {
+        ONLY_COLORED_TOOLS.forEach(tool => {
+            let toolId = `${namespace}:${material}_${tool}`;
+            let repairKitId = `${namespace}:repair_kit_${material}`;
+            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+                event.recipes.tfc.no_remainder_shapeless_crafting(
+                    event.shapeless(
+                        toolId,
+                        [
+                            toolId,
+                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+                        ]
+                    )
+                );
+            }
+        });
+    }
+
+    repairColoredSteel('gtceu', 'red_steel', 0.25);
+    repairColoredSteel('gtceu', 'blue_steel', 0.25);
+
     repairElectricTools('tfg', 'hv', 'boron_carbide', 0.25);
     repairElectricTools('tfg', 'mv', 'diamond_tipped_mo_50_re', 0.25);
     repairElectricTools('gtceu', 'iv', 'hsse', 0.25);
     repairElectricTools('gtceu', 'iv', 'naquadah_alloy', 0.25);
     repairElectricTools('gtceu', 'iv', 'duranium', 0.25);
-    repairElectricTools('tfg', 'ev', 'ostrum_iodide', 0.25);
+    repairElectricTools('gtceu', 'ev', 'ostrum_iodide', 0.25);
     repairElectricTools('gtceu', 'ev', 'tungsten_carbide', 0.25);
     repairElectricTools('gtceu', 'hv', 'ultimet', 0.25);
     repairElectricTools('gtceu', 'lv', 'blue_steel', 0.25);
@@ -62,12 +104,23 @@ ServerEvents.recipes(event => {
     repairManualTools('gtceu', 'blue_steel', 0.25);
     repairManualTools('gtceu', 'red_steel', 0.25);
     repairManualTools('gtceu', 'vanadium_steel', 0.25);
+
+    repairOnlyManualTools('gtceu', 'black_bronze', 0.25);
+    repairOnlyManualTools('gtceu', 'black_steel', 0.25);
+    repairOnlyManualTools('gtceu', 'steel', 0.25);
+    repairOnlyManualTools('gtceu', 'wrought_iron', 0.25);
+    repairOnlyManualTools('gtceu', 'bronze', 0.25);
+    repairOnlyManualTools('gtceu', 'copper', 0.25);
+    repairOnlyManualTools('gtceu', 'bismuth_bronze', 0.25);
+
+    repairOnlyManualTools('gtceu', 'blue_steel', 0.25);
+    repairOnlyManualTools('gtceu', 'red_steel', 0.25);
+
     repairManualTools('gtceu', 'black_bronze', 0.25);
-    //repairManualTools('gtceu', 'damascus_steel', 0.25);
     repairManualTools('gtceu', 'black_steel', 0.25);
+    repairManualTools('gtceu', 'steel', 0.25);
     repairManualTools('gtceu', 'wrought_iron', 0.25);
     repairManualTools('gtceu', 'bronze', 0.25);
     repairManualTools('gtceu', 'copper', 0.25);
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
 });
-*/

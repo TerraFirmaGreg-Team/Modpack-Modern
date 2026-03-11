@@ -206,7 +206,7 @@ function registerTFGToolMaterialModification(event) {
 
 	const DURABILITY_MULTIPLIER = 5;
 
-	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8 * DURABILITY_MULTIPLIER, 1, [
+	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8 * 6, 1, [
 		GTToolType.AXE,
 		GTToolType.HARD_HAMMER,
 		GTToolType.HOE,
