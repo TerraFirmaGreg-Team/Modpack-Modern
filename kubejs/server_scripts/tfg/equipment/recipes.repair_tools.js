@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes(event => {
     const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver'];
     const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar'];
@@ -69,3 +70,4 @@ ServerEvents.recipes(event => {
     repairManualTools('gtceu', 'copper', 0.25);
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
 });
+*/
