@@ -44,7 +44,8 @@ function registerTFGMiscAlloyMaterials(event) {
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD)
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 
 
 	// Material for MV
@@ -91,5 +92,6 @@ function registerTFGMiscAlloyMaterials(event) {
         .flags(
    	        GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
-            GTMaterialFlags.DISABLE_DECOMPOSITION)
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 }

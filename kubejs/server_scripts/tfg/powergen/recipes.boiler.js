@@ -172,14 +172,14 @@ function registerTFGBoilerRecipes(event) {
 
 	event.recipes.gtceu.super_boiler('tfg:syngas_fuel_binder')
 		.itemInputs(Item.of('gtceu:bio_chaff', 1))
-		.inputFluids(Fluid.of('tfg:syngas', 40000))
+		.inputFluids(Fluid.of('tfg:syngas', 20000))
 		.duration(20*150)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.super_boiler('tfg:syngas_fuel')
 		.itemInputs(Item.of('minecraft:charcoal', 1))
-		.inputFluids(Fluid.of('tfg:syngas', 40000*4))
+		.inputFluids(Fluid.of('tfg:syngas', 20000*4))
 		.duration(20*150)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
