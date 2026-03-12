@@ -106,7 +106,7 @@ function registerTFGRepairKitRecipes(event) {
     repairManualTools('gtceu', 'hsse', 0.25);
     repairManualTools('gtceu', 'naquadah_alloy', 0.25);
     repairManualTools('gtceu', 'duranium', 0.25);
-    repairManualTools('tfg', 'ostrum_iodide', 0.25);
+    repairManualTools('gtceu', 'ostrum_iodide', 0.25);
     repairManualTools('gtceu', 'tungsten_carbide', 0.25);
     repairManualTools('gtceu', 'ultimet', 0.25);
     repairManualTools('gtceu', 'blue_steel', 0.25);
@@ -131,4 +131,46 @@ function registerTFGRepairKitRecipes(event) {
     repairManualTools('gtceu', 'bronze', 0.25);
     repairManualTools('gtceu', 'copper', 0.25);
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
+
+    //#region Generate recipe for Repair Kit
+
+    function materialPrimalKit(namespace, repairKitMaterial) {
+        event.recipes.tfc.anvil(
+            `16x ${namespace}:repair_kit_${repairKitMaterial}`,
+            `#forge:ingots/${repairKitMaterial}`,
+            ['hit_last', 'hit_second_last', 'hit_third_last']
+        )
+        .id(`tfg:anvil/repair_kit_${repairKitMaterial}`);
+        }
+
+    materialPrimalKit('gtceu', 'black_bronze');
+    materialPrimalKit('gtceu', 'black_steel');
+    materialPrimalKit('gtceu', 'steel');
+    materialPrimalKit('gtceu', 'wrought_iron');
+    materialPrimalKit('gtceu', 'bronze');
+    materialPrimalKit('gtceu', 'copper');
+    materialPrimalKit('gtceu', 'bismuth_bronze');
+    materialPrimalKit('gtceu', 'blue_steel');
+    materialPrimalKit('gtceu', 'red_steel');
+
+    function materialElectricKit(namespace, repairKitMaterial) {
+        event.recipes.gtceu.laser_engraver(`tfg:repair_kit_${repairKitMaterial}`)
+            .itemInputs(`#forge:ingots/${repairKitMaterial}`)
+            .itemOutputs(Item.of(`${namespace}:repair_kit_${repairKitMaterial}`, 16))
+            .duration(20*10)
+            .EUt(GTValues.VHA[GTValues.ULV])
+            .circuit(1)
+    }
+
+    materialElectricKit('tfg', 'boron_carbide');
+    materialElectricKit('tfg', 'diamond_tipped_mo_50_re');
+    materialElectricKit('gtceu', 'hsse');
+    materialElectricKit('gtceu', 'naquadah_alloy');
+    materialElectricKit('gtceu', 'duranium');
+    materialElectricKit('gtceu', 'ostrum_iodide');
+    materialElectricKit('gtceu', 'tungsten_carbide');
+    materialElectricKit('gtceu', 'ultimet');
+    materialElectricKit('gtceu', 'blue_steel');
+    materialElectricKit('gtceu', 'red_steel');
+    materialElectricKit('gtceu', 'vanadium_steel');
 };
