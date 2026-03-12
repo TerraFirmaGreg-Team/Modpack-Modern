@@ -5,29 +5,28 @@
 		condition: "always_active"
 		ftbranks.name_format: "&7{name}"
 		ftbchunks.max_claimed: 10
-		ftbchunks.max_force_loaded: 0
+		ftbchunks.max_force_loaded: 2
 		ftbchunks.chunk_load_offline: false
-
 		command.enderchest: false
-        command.ldlib: false
-        command.compass_server: false
-        command.chunky: false
-        command.catnip: false
-        command.bookshelf: false
-        command.aptweaks: false
-        command.afc: false
-        command.advancement: false
-        command.bossbar: false
-        command.clone: false
-        command.cucumber: false
-        command.gamemode: false
-        command.give: false
-        command.guideme: false 
-        command.kubejs: false
-        command.kubejs_tfc: false
-        command.letmedespawn: false
-        command.locate: false
-        command.lode: false
+		command.ldlib: false
+		command.compass_server: false
+		command.chunky: false
+		command.catnip: false
+		command.bookshelf: false
+		command.aptweaks: false
+		command.afc: false
+		command.advancement: false
+		command.bossbar: false
+		command.clone: false
+		command.cucumber: false
+		command.gamemode: false
+		command.give: false
+		command.guideme: false
+		command.kubejs: false
+		command.kubejs_tfc: false
+		command.letmedespawn: false
+		command.locate: false
+		command.lode: false
 		command.octolib: false
 		command.worldborder: false
 		command.whitelist: false
@@ -38,32 +37,28 @@
 		command.tpaccept: false
 		command.tpahere: false
 		command.tpdeny: false
-		command.tpx: false
-        
+		command.grieflogger: false
 		command.trashcan: true
 	}
-
 	member: {
 		name: "Player"
 		power: 1
 		condition: {
 			type: "playtime"
-			time: 5
+			time: 1
 			time_unit: "days"
 		}
 		ftbranks.name_format: "&a{name}"
 		ftbchunks.max_claimed: 50
-		ftbchunks.max_force_loaded: 6
+		ftbchunks.max_force_loaded: 8
 		ftbchunks.chunk_load_offline: false
-        
-
 	}
 	vip: {
 		name: "VIP"
 		power: 50
 		ftbranks.name_format: "&e{name}"
 		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 8
+		ftbchunks.max_force_loaded: 12
 		ftbchunks.chunk_load_offline: true
 	}
 	moderator: {
@@ -71,9 +66,16 @@
 		power: 51
 		ftbranks.name_format: "&b{name}"
 		ftbchunks.max_claimed: 200
-		ftbchunks.max_force_loaded: 8
-
+		ftbchunks.max_force_loaded: 12
+		ftbchunks.admin.bypass_protection: true
 		command.ftbchunks.admin.bypass_protection: true
+		command.ftbchunks.admin: true
+		command.ftbchunks.admin.view_loaded_chunks: false
+		command.ftbchunks.admin.unclaim_everything: false
+		command.ftbchunks.admin.unload_everything: false
+		command.ftbchunks.admin.unclaim_as: false
+		command.ftbchunks.admin.extra_force_load_chunks: false
+		command.ftbchunks.admin.extra_claim_chunks: false
 		command.ban: true
 		command.ban-ip: true
 		command.pardon: true
@@ -81,10 +83,15 @@
 		command.kick: true
 		command.clear: true
 		command.invsee: true
+		command.grieflogger: true
 	}
 	admin: {
 		name: "Admin"
 		power: 1000
+		condition: "op"
+		command: true
+		command.grieflogger: true
+		command.gamemode: true
 		xaero.pac_admin_mode: true
 		xaero.pac_server_claims: true
 		ftbranks.name_format: "&c{name}&c"
