@@ -1,5 +1,10 @@
 "use strict";
 
+function registerTFGOverworldItemTags(event) {
+	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/flame_vine_plant')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/cycad_plant')
+}
+
 function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:dry_plant_plantable_on', '#minecraft:sand');
 	event.add('tfg:dry_plant_plantable_on', '#forge:gravel');

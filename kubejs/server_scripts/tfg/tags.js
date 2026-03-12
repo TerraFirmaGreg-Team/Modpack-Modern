@@ -12,6 +12,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGRailgunItemTags(event)
 	registerTFGRocketItemTags(event)
 	registerTFGGeneralWorldgenItemTags(event);
+	registerTFGOverworldItemTags(event);
 	registerTFGBeneathItemTags(event)
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
