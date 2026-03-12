@@ -110,6 +110,7 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
 
 	event.remove({ id: "gtceu:large_boiler/gtceu_creosote" })
+	event.remove({ id: "gtceu:large_boiler/wood_gas" })
 
 	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
 	event.recipes.gtceu.steam_boiler('tfg:oil')
