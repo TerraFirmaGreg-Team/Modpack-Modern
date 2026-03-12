@@ -169,6 +169,7 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:the_nether')
 
 	// Super Fuel Boiler
+	// Weird test
 
 	event.recipes.gtceu.super_boiler('tfg:syngas_fuel_binder')
 		.itemInputs(Item.of('gtceu:bio_chaff', 1))
