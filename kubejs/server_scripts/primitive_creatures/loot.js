@@ -35,7 +35,7 @@ function registerPrimitiveCreaturesLoots(event) {
 			Item.of('tfc:food/strawberry', 4),
 			Item.of('tfc:food/wintergreen_berry', 5)])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_hoe').damage([0.2, 0.5]).when(c => c.randomChance(0.1)),
+			LootEntry.of('tfg:arsenic_bronze_hoe').damage([0.2, 0.5]).when(c => c.randomChance(0.1)),
 			LootEntry.of('sns:straw_basket').when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
@@ -54,7 +54,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([3, 4], ['gtceu:tricalcium_phosphate_dust'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
+			LootEntry.of('tfg:arsenic_bronze_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('firmalife:beeswax'))
@@ -73,7 +73,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([0, 2], ['minecraft:flint'])
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_shovel').damage([0.2, 0.5]).when(c => c.randomChance(0.5)),
+			LootEntry.of('tfg:arsenic_bronze_shovel').damage([0.2, 0.5]).when(c => c.randomChance(0.5)),
 			LootEntry.of('minecraft:skeleton_skull').when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:grh')) // battered wool
 	event.addEntityLootModifier('primitive_creatures:iloger_3')
@@ -129,7 +129,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([1, 2], ['primitive_creatures:f_1']) // primitive explosives
 		.addWeightedLoot([2, 4], ['minecraft:gunpowder'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_hoe').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
+			LootEntry.of('tfg:arsenic_bronze_hoe').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:grh')) // battered wool
@@ -147,7 +147,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([0, 2], ['primitive_creatures:grh']) // battered wool
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_butchery_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
+			LootEntry.of('tfg:arsenic_bronze_butchery_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('minecraft:lead'))
@@ -181,7 +181,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([2, 4], ['minecraft:emerald'])
 		.addAlternativesLoot(
-			LootEntry.of('gtceu:arsenic_bronze_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
+			LootEntry.of('tfg:arsenic_bronze_knife').damage([0.2, 0.5]).when(c => c.randomChance(0.3)),
 			LootEntry.of('primitive_creatures:totem_2').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:grh'))  // battered wool)
@@ -198,10 +198,10 @@ function registerPrimitiveCreaturesLoots(event) {
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
-			Item.of('gtceu:arsenic_bronze_spade', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
-			Item.of('gtceu:arsenic_bronze_scythe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:6.5f},HideFlags:2}'),
-			Item.of('gtceu:arsenic_bronze_mining_hammer', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1,TorchPlacing:1b},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
-			Item.of('gtceu:arsenic_bronze_sword')])
+			Item.of('tfg:arsenic_bronze_spade', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_scythe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:6.5f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_mining_hammer', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1,TorchPlacing:1b},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_sword')])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addWeightedLoot([
 			Item.of('sns:leather_sack'),
@@ -224,8 +224,8 @@ function registerPrimitiveCreaturesLoots(event) {
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
-			Item.of('gtceu:arsenic_bronze_sword'),
-			Item.of('gtceu:arsenic_bronze_axe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:6143,ToolSpeed:4.5f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_sword'),
+			Item.of('tfg:arsenic_bronze_axe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:6143,ToolSpeed:4.5f},HideFlags:2}'),
 			LootEntry.of('sns:burlap_sack'),
 			LootEntry.of('sns:seed_pouch'),
 			LootEntry.of('sns:ore_sack')])
