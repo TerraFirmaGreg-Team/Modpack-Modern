@@ -33,24 +33,24 @@ function registerTFGDirtRecipes(event) {
 		.duration(200)
 		.EUt(16)
 
-	// Dirt + Sticks -> Rooted Dirt
-	global.TFC_MUD_TYPES.forEach(mud => {
-		event.recipes.gtceu.mixer(`${mud}_to_rooted`)
-			.itemInputs(`tfc:dirt/${mud}`, "#tfc:can_be_lit_on_torch")
-			.itemOutputs(`tfc:rooted_dirt/${mud}`)
+	global.TFC_MUD_TYPES.forEach(dirtType => {
+		// Dirt + Sticks -> Rooted Dirt
+		event.recipes.gtceu.mixer(`${dirtType}_to_rooted`)
+			.itemInputs(`tfc:dirt/${dirtType}`, "#forge:rods/wooden")
+			.itemOutputs(`tfc:rooted_dirt/${dirtType}`)
 			.duration(200)
 			.EUt(16)
 	
-		event.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
-			.id(`tfg:smelting/${mud}_mud_to_grass`)
+		event.smelting(`tfc:dirt/${dirtType}`, `tfc:mud/${dirtType}`)
+			.id(`tfg:smelting/${dirtType}_mud_to_grass`)
 	
 
 		// Dirt -> Mud
-		event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)
-			.itemInputs(`tfc:dirt/${mud}`)
+		event.recipes.gtceu.mixer(`${dirtType}_grass_to_mud`)
+			.itemInputs(`tfc:dirt/${dirtType}`)
 			.inputFluids("#tfc:any_water 100")
 			.circuit(2)
-			.itemOutputs(`tfc:mud/${mud}`)
+			.itemOutputs(`tfc:mud/${dirtType}`)
 			.duration(200)
 			.EUt(16)
 
@@ -62,89 +62,99 @@ function registerTFGDirtRecipes(event) {
 				tag: "tfc:water"
 			},
 			ingredients: [
-				{item: `tfc:dirt/${mud}`}],
-			result: {item: `tfc:mud/${mud}`}
-		}).id(`tfg:ae_transform/${mud}_to_mud`)
+				{item: `tfc:dirt/${dirtType}`}],
+			result: {item: `tfc:mud/${dirtType}`}
+		}).id(`tfg:ae_transform/${dirtType}_to_mud`)
 
 		// Mud bricks
-		event.recipes.gtceu.extruder(`tfc:mud_bricks/${mud}`)
-			.itemInputs(`tfc:mud/${mud}`)
+		event.recipes.gtceu.extruder(`tfc:mud_bricks/${dirtType}`)
+			.itemInputs(`tfc:mud/${dirtType}`)
 			.notConsumable('gtceu:ingot_extruder_mold')
-			.itemOutputs(`4x tfc:drying_bricks/${mud}`)
+			.itemOutputs(`4x tfc:drying_bricks/${dirtType}`)
 			.duration(100)
 			.EUt(2)
 
-		event.recipes.vintageimprovements.curving(`4x tfc:drying_bricks/${mud}`, `tfc:mud/${mud}`)
+		event.recipes.vintageimprovements.curving(`4x tfc:drying_bricks/${dirtType}`, `tfc:mud/${dirtType}`)
 			.head('gtceu:ingot_extruder_mold')
-			.id(`tfg:vi/curving/${mud}_bricks`)
+			.id(`tfg:vi/curving/${dirtType}_bricks`)
 
-		// Влажный кирпич -> Кирпич
-		event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
-			.id(`tfg:smelting/${mud}_drying_brick_to_brick`)
+		// Wet bricks to dry
+		event.smelting(`tfc:mud_brick/${dirtType}`, `tfc:drying_bricks/${dirtType}`)
+			.id(`tfg:smelting/${dirtType}_drying_brick_to_brick`)
 
 		event.custom({
 			type: "firmalife:drying",
 			ingredient: {
-				item: `tfc:drying_bricks/${mud}`
+				item: `tfc:drying_bricks/${dirtType}`
 			},
 			result: {
-				item: `tfc:mud_brick/${mud}`
+				item: `tfc:mud_brick/${dirtType}`
 			}
-		}).id(`tfg:drying/${mud}_drying_brick_to_brick`)
+		}).id(`tfg:drying/${dirtType}_drying_brick_to_brick`)
 
-		// Кирпич -> Блок кирпичей
-		event.shaped(`tfc:mud_bricks/${mud}`, [
+		// Mud brick blocks
+		event.shaped(`tfc:mud_bricks/${dirtType}`, [
 			'AA',
 			'AA'
 		], {
-			A: `tfc:mud_brick/${mud}`
-		}).id(`tfc:crafting/soil/${mud}_mud_bricks`)
+			A: `tfc:mud_brick/${dirtType}`
+		}).id(`tfc:crafting/soil/${dirtType}_mud_bricks`)
 
-		event.shaped(`tfc:mud_bricks/${mud}_stairs`, [
+		event.shaped(`tfc:mud_bricks/${dirtType}_stairs`, [
 			'A ',
 			'AA'
 		], {
-			A: `tfc:mud_brick/${mud}`
-		}).id(`tfc:crafting/soil/${mud}_mud_bricks_stairs`)
+			A: `tfc:mud_brick/${dirtType}`
+		}).id(`tfc:crafting/soil/${dirtType}_mud_bricks_stairs`)
 
-		event.shaped(`tfc:mud_bricks/${mud}_slab`, [
+		event.shaped(`tfc:mud_bricks/${dirtType}_slab`, [
 			'AA'
 		], {
-			A: `tfc:mud_brick/${mud}`
-		}).id(`tfc:crafting/soil/${mud}_mud_bricks_slab`)
+			A: `tfc:mud_brick/${dirtType}`
+		}).id(`tfc:crafting/soil/${dirtType}_mud_bricks_slab`)
 
-		event.shaped(`tfc:mud_bricks/${mud}_wall`, [
+		event.shaped(`tfc:mud_bricks/${dirtType}_wall`, [
 			'A',
 			'A'
 		], {
-			A: `tfc:mud_brick/${mud}`
-		}).id(`tfc:crafting/soil/${mud}_mud_bricks_wall`)
+			A: `tfc:mud_brick/${dirtType}`
+		}).id(`tfc:crafting/soil/${dirtType}_mud_bricks_wall`)
 
 		// Блок кирпичей -> Ступени
-		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_stairs` })
+		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_stairs` })
 
-		event.stonecutting(`tfc:mud_bricks/${mud}_stairs`, `tfc:mud_bricks/${mud}`)
-			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_stairs`)
+		event.stonecutting(`tfc:mud_bricks/${dirtType}_stairs`, `tfc:mud_bricks/${dirtType}`)
+			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_stairs`)
 
 		// Блок кирпичей -> Плиты
-		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_slab` })
+		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_slab` })
 
-		event.stonecutting(`2x tfc:mud_bricks/${mud}_slab`, `tfc:mud_bricks/${mud}`)
-			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_slab`)
+		event.stonecutting(`2x tfc:mud_bricks/${dirtType}_slab`, `tfc:mud_bricks/${dirtType}`)
+			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_slab`)
 
 		// Блок кирпичей -> Стена
-		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_wall` })
+		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_wall` })
 
-		event.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
-			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
+		event.stonecutting(`tfc:mud_bricks/${dirtType}_wall`, `tfc:mud_bricks/${dirtType}`)
+			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_wall`)
 
 		// Grass blocks
+		event.shapeless(`tfc:grass/${dirtType}`, [`tfc:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_bonemeal`)
 
-		event.shapeless(`tfc:grass/${mud}`, [`tfc:dirt/${mud}`, 'minecraft:bone_meal', '#forge:seeds'])
-			.id(`tfg:shapeless/${mud}_grass_bonemeal`)
+		event.shapeless(`tfc:grass/${dirtType}`, [`tfc:dirt/${dirtType}`, 'gtceu:fertilizer', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_fertilizer`)
 
-		event.shapeless(`tfc:grass/${mud}`, [`tfc:dirt/${mud}`, 'gtceu:fertilizer', '#forge:seeds'])
-			.id(`tfg:shapeless/${mud}_grass_fertilizer`)
+		// Coarse dirt
+		event.shapeless(`2x tfg:coarse_${dirtType}_dirt`, [`tfc:dirt/${dirtType}`, '#forge:gravel'])
+			.id(`tfg:shapeless/create_coarse_${dirtType}_dirt`)
+
+		event.shapeless(`tfc:dirt/${dirtType}`, [`tfg:coarse_${dirtType}_dirt`, '#minecraft:hoes'])
+			.id(`tfg:shapeless/sift_coarse_${dirtType}_dirt`)
+
+		// Duff
+		event.shapeless(`tfg:${dirtType}_duff`, [`tfc:dirt/${dirtType}`, 'tfc:groundcover/humus'])
+			.id(`tfg:shapeless/create_${dirtType}_duff`)
 	})
 
 

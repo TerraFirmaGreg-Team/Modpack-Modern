@@ -88,6 +88,11 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:coarse_silty_loam_dirt', 'tfg:coarse_silty_loam_dirt')
 	event.recipes.tfc.landslide('tfg:coarse_silt_dirt', 'tfg:coarse_silt_dirt')
 	event.recipes.tfc.landslide('tfg:coarse_loam_dirt', 'tfg:coarse_loam_dirt')
+	
+	event.recipes.tfc.landslide('tfg:sandy_loam_duff', 'tfc:dirt/sandy_loam')
+	event.recipes.tfc.landslide('tfg:silty_loam_duff', 'tfc:dirt/silty_loam')
+	event.recipes.tfc.landslide('tfg:silt_duff', 'tfc:dirt/silt')
+	event.recipes.tfc.landslide('tfg:loam_duff', 'tfc:dirt/loam')
 
 	// Other
 	event.recipes.tfc.collapse("#forge:raw_ore_blocks");

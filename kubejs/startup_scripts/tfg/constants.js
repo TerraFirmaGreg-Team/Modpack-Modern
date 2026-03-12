@@ -251,4 +251,49 @@ global.ICE_SAW_BLACKLIST = [
 	"gtceu:black_bronze_saw",
 	"gtceu:wrought_iron_saw",
 	"gtceu:invar_saw"
+];
+
+/**
+ * @type {string[]}
+ */
+global.NEW_OVERWORLD_AQUATICS = [
+	"tfg:plant/anemone_green",
+	"tfg:plant/anemone_purple",
+	"tfg:plant/anemone_large_orange",
+	"tfg:plant/anemone_large_purple",
+	"tfg:plant/barnacles",
+	"tfg:plant/mussels",
+	"tfg:plant/starfish"
+];
+
+/**
+ * @type {string[]}
+ */
+global.NEW_OVERWORLD_PLANTS = [
+	"tfg:plant/red_oat_grass",
+	"tfg:plant/azalea",
+	"tfg:plant/bear_grass",
+	"tfg:plant/bird_nest_fern",
+	"tfg:plant/buttercup",
+	"tfg:plant/cornflower",
+	"tfg:plant/dry_grass",
+	"tfg:plant/edelweiss",
+	"tfg:plant/elegant_sunburst_lichen",
+	"tfg:plant/fan_palm",
+	"tfg:plant/kinnikinnick",
+	"tfg:plant/mountain_hullwort",
+	"tfg:plant/moss_campion",
+	"tfg:plant/palash",
+	"tfg:plant/penwortel",
+	"tfg:plant/prickly_pear",
+	"tfg:plant/prickly_pear_purple",
+	"tfg:plant/qantu",
+	"tfg:plant/ramirezella",
+	"tfg:plant/ramunda",
+	"tfg:plant/silken_pincushion_cactus",
+	"tfg:plant/silver_bromeliad",
+	"tfg:plant/tank_bromeliad",
+	"tfg:plant/yellow_saxifrage",
+	"tfg:plant/flame_vine",
+	"tfg:plant/cycad"
 ]

@@ -3,6 +3,19 @@
 function registerTFGOverworldItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/flame_vine_plant')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/cycad_plant')
+
+	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
+		event.add('tfc:plants', plant);
+		event.add('tfc:compost_greens_low', plant);
+	});
+	
+	event.add('tfc:fluxstone', 'tfg:plant/mussels');
+	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
+
+	event.add('tfg:anemones', "tfg:plant/anemone_green");
+	event.add('tfg:anemones', "tfg:plant/anemone_purple");
+	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
+	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
 }
 
 function registerTFGOverworldBlockTags(event) {
@@ -325,14 +338,10 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_hills");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_highlands");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_plateau");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/buttes");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/mesas");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/stair_step_canyons");
+	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/active_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/dormant_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/extinct_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/ancient_shield_volcano");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/badlands");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/canyons");
 
 	global.TFC_BIOMES.forEach(biome => {
 		event.add('tfg:overworld_biomes', biome);
