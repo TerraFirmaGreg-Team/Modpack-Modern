@@ -418,4 +418,16 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
 	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
+
+	// Modify HV Dynamo Hatch to be craftable before Cleanroom
+
+	event.replaceInput({ id: 'gtceu:assembler/dynamo_hatch_hv' }, 'gtceu:lpic_chip', 'gtceu:ulpic_chip')
+
+	global.modifyRecipe(event, "gtceu:assembler/dynamo_hatch_hv", {
+        newId: "gtceu:assembler/dynamo_hatch_hv",
+        duration: 20 * 10,
+        eut: GTValues.VA[GTValues.MV]
+    })
+
+	event.replaceInput({ id: 'gtceu:assembler/assembler/dynamo_hatch_hv' }, 'gtceu:lpic_chip', 'gtceu:ulpic_chip')
 }
