@@ -282,5 +282,30 @@ function registerTFGMultiblockRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.circuit(2)
+
+	// Large Bronze Boiler
+
+	event.recipes.gtceu.shaped('tfg:large_bronze_boiler', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:quadruple_wires/tin',
+		B: '#gtceu:circuits/ulv',
+		C: Item.of('gtceu:bronze_firebox_casing')
+	}).addMaterialInfo().id('tfg:shaped/large_bronze_boiler')
+
+	// Large Steel Boiler
+
+	event.recipes.gtceu.shaped('tfg:large_steel_boiler', [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: '#forge:single_cables/copper',
+		B: '#gtceu:circuits/hv',
+		C: Item.of('gtceu:steel_firebox_casing'),
+		D: Item.of('gtceu:capacitor')
+	}).addMaterialInfo().id('tfg:shaped/large_steel_boiler')
 	
 }
