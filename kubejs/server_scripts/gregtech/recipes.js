@@ -423,6 +423,7 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
 		.itemInputs('#forge:rods/magnetic_steel', '#forge:fine_wires/black_steel')
+		.itemOutputs('gtceu:hv_voltage_coil')
 		.circuit(1)
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
@@ -430,6 +431,7 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.gtceu.assembler('gtceu:dynamo_hatch_hv')
 		.itemInputs('gtceu:hv_machine_hull', '2x #forge:springs/gold', '2x gtceu:ulpic_chip', 'gtceu:hv_voltage_coil')
 		.inputFluids('gtceu:sodium_potassium 1000')
+		.itemOutputs('gtceu:hv_energy_output_hatch')
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
 }

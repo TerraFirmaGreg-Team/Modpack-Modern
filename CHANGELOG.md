@@ -3,14 +3,14 @@
 ## Unreleased
 ### Changes
 - Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
+- Added a new Large Steam Turbine that has a base production of 2048 EU/t but can't accept higher Rotors than EV @TomPlop
 - Removed vanilla advancements @Mqrius
 - Added copper spindle, with much more durability than the clay one (#3345) @DrEthan77
 - Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
 - New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
 - TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
-- Recipe of Steel Pipe Casing and Magnalium Turbine Casing changed @TomPlop
-- Added the new Large Steam Turbine that has a base production of 2048 Eu/t but can't accept higher Rotors that EV @TomPlop
-- Added the Repair Kit so you can finally repair your Gregtech Tools @TomPlop
+- Changed the recipe of Steel Pipe Casing and Magnalium Turbine Casing @TomPlop
+- Added a Repair Kit item so you can finally repair your GregTech Tools! Recipes for armor and other things coming soon. @TomPlop @Redeix
 - Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
 - Added a 16A HV Dynamo Hatch @TomPlop
 ### Bug fixes
