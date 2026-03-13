@@ -183,7 +183,7 @@ dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas conso
     materialUnfiredRepairKit('gtceu', 'copper');
     materialUnfiredRepairKit('gtceu', 'bismuth_bronze');
 
-    event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_${namespace}_${material}`)
+    event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_tfg_unfired_repair_kit_diamond_tipped_mo_50_re}`)
             .notConsumable('gtceu:brick_wooden_form')
             .itemInputs(
                 '#tfg:stone_dusts',
