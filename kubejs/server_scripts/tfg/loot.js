@@ -172,6 +172,7 @@ function registerTFGLoots(event) {
 
 	// TFC 1.21 plants
 	global.NEW_OVERWORLD_AQUATICS.forEach(aquatic => {
+		console.log(`loot: ${aquatic}`)
 		event.addBlockLootModifier(aquatic)
 			.removeLoot(Ingredient.all)
 			.matchMainHand(Ingredient.of(['#forge:shears', '#tfc:sharp_tools']))
@@ -179,6 +180,7 @@ function registerTFGLoots(event) {
 	})
 
 	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
+		console.log(`loot: ${plant}`)
 		if (plant === "tfg:plant/red_oat_grass") {
 			event.addBlockLootModifier(plant)
 				.removeLoot(Ingredient.all)
