@@ -29,6 +29,7 @@
 - Fixed a ton of log spam relating to the new steam n rails update (#3361) @SakuraKitsurugi 
 - Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
 - Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
+- Maybe fixed being able to use shipping containers on trains (#3402) @Pyritie
 ### Translation updates
 - Chinese (simplified) @jmecn
 - Ukranian @MetEnBouldry @furrydenis
