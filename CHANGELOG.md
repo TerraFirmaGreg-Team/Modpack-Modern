@@ -18,6 +18,7 @@
 - Added a Repair Kit item so you can finally repair your GregTech Tools! Recipes for armor and other things coming soon. @TomPlop @Redeix
 - Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
 - Added a 16A HV Dynamo Hatch @TomPlop
+- Adjusted how fast the player heats up and cools down @Pyritie
 ### Bug fixes
 - Fixed crashes with the Greate encased fan @Electrolyte220
 - Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
