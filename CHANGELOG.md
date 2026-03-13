@@ -2,7 +2,14 @@
 
 ## Unreleased
 ### Changes
+- Added the new Large Boilers at ULV and MV - Boost their production with fluids and use new recipes only the Large Steam Boiler @TomPlop
+- Recipe of Steel Pipe Casing and Magnalium Turbine Casing changed @TomPlop
+- Added the new Large Steam Turbine that has a base production of 2048 Eu/t but can't accept higher Rotors that EV @TomPlop
+- Added the Repair Kit so you can finally repair your Gregtech Tools @TomPlop
+- Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
+- Added a 16A HV Dynamo Hatch @TomPlop
 ### Bug fixes
+- Fix some tools being uncraftable and the Diamond Tipped Tool Head @TomPlop
 ### Translation updates
 
 ## [0.11.26] - 10-03-2026
