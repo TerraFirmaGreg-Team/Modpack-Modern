@@ -405,6 +405,7 @@
 	"block.gtceu.hv_electromagnetic_separator": "§6Advanced Electromagnetic Separator II§r",
 	"block.gtceu.hv_energy_input_hatch": "§6HV Energy Hatch",
 	"block.gtceu.hv_energy_output_hatch": "§6HV Dynamo Hatch",
+	"block.gtceu.hv_energy_output_hatch_16a": "§6HV 16A Dynamo Hatch§r",
 	"block.gtceu.hv_energy_output_hatch_4a": "§6HV 4A Dynamo Hatch§r",
 	"block.gtceu.hv_extractor": "§6Advanced Extractor II§r",
 	"block.gtceu.hv_extruder": "§6Advanced Extruder II§r",
@@ -6157,6 +6158,5 @@
 	"tile.gtceu.reinforced_stone.name": "Reinforced Stone",
 	"tile.gtceu.seal.name": "Sealed Block",
 	"tooltip.moldraw.shift_view_alloy": "§7§oHold (Shift) for Alloy Composition§r",
-	"tooltip.moldraw.shift_view_molecule": "§7§oHold (Shift) for Molecular Structure§r",
-	"tagprefix.repair_kit": "%s Repair Kit"
+	"tooltip.moldraw.shift_view_molecule": "§7§oHold (Shift) for Molecular Structure§r"
 }
