@@ -151,10 +151,21 @@ dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas conso
                 `#forge:dusts/${material}`
             ]
             )
+
+        event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_${namespace}_${material}`)
+            .notConsumable('gtceu:brick_wooden_form')
+            .itemInputs(
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:dusts/${material}`)
+            .itemOutputs(Item.of(`${namespace}:unfired_repair_kit_${material}`, 16))
+            .duration(20 * 5)
+            .EUt(GTValues.VHA[GTValues.LV])
+            .circuit(7)
     }
 
     materialUnfiredRepairKit('tfg', 'boron_carbide');
-    materialUnfiredRepairKit('tfg', 'diamond_tipped_mo_50_re');
+    //materialUnfiredRepairKit('tfg', 'diamond_tipped_mo_50_re');
     materialUnfiredRepairKit('gtceu', 'hsse');
     materialUnfiredRepairKit('gtceu', 'naquadah_alloy');
     materialUnfiredRepairKit('gtceu', 'duranium');
@@ -171,6 +182,27 @@ dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas conso
     materialUnfiredRepairKit('gtceu', 'bronze');
     materialUnfiredRepairKit('gtceu', 'copper');
     materialUnfiredRepairKit('gtceu', 'bismuth_bronze');
+
+    event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_${namespace}_${material}`)
+            .notConsumable('gtceu:brick_wooden_form')
+            .itemInputs(
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:ingots/diamond_tipped_mo_50_re`)
+            .itemOutputs(Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16))
+            .duration(20 * 5)
+            .EUt(GTValues.VHA[GTValues.LV])
+            .circuit(7)
+
+    event.shapeless(
+            Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16), // arg 1: output
+            [
+                'gtceu:brick_wooden_form',
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:ingots/diamond_tipped_mo_50_re`
+            ]
+            )
 
 
     function materialPrimalKit(namespace, repairKitMaterial) {
