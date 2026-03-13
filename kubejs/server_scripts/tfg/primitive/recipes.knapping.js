@@ -372,5 +372,16 @@ function registerTFGKnappingRecipes(event) {
 	])
 		.ingredient('5x minecraft:clay_ball')
 		.id('tfg:fire_clay_knapping/unfired_nugget_mold')
+		
+	event.recipes.tfc.knapping('tfg:unfired_spindle_head_mold', 'tfc:clay', [
+		"XXXXX",
+		"XX XX",
+		"     ",
+		"XX XX",
+		"XXXXX"
+	])
+		.ingredient('5x minecraft:clay_ball')
+		.id('tfg:clay_knapping/unfired_spindle_head_mold')
+
 
 }

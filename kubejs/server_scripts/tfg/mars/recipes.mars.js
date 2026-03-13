@@ -146,9 +146,9 @@ function registerTFGMarsRecipes(event) {
 		.EUt(4)
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('8x tfc:wool_yarn', [
-			'tfc:spindle',
-			'tfg:glacian_wool'
+		event.shapeless('8x tfc:wool_yarn', [			
+			'tfg:glacian_wool',
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/glacian_wool_to_yarn'))
 
 	event.recipes.gtceu.wiremill('tfg:glacian_wool_yarn')

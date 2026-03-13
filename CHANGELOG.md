@@ -2,7 +2,22 @@
 
 ## Unreleased
 ### Changes
+- Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
+- Removed vanilla advancements @Mqrius
+- Added copper spindle, with much more durability than the clay one (#3345) @DrEthan77
+- Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
+- New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
+- TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
 ### Bug fixes
+- Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
+- Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
+- Fixed livestock breeding failing often @Mqrius
+- Fixed a crash with the rotten voiding cover @Mqrius
+- Fixed the EMI recipes for the Artisan Table @Mqrius
+- Fixed arsenic bronze drops from primitive illagers (#3386) @Mqrius
+- Fixed a ton of log spam relating to the new steam n rails update (#3361) @SakuraKitsurugi 
+- Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
+- Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
 ### Translation updates
 
 ## [0.11.26] - 10-03-2026
