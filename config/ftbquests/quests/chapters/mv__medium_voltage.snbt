@@ -2081,6 +2081,26 @@
 			x: -5.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["5DD01CBADFFF3571"]
+			description: [
+				"{quests.medium_voltage.large_steel_boiler.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.large_steel_boiler.desc.2}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.large_steel_boiler.desc.3}"
+			]
+			id: "6DCF1E5EFFE24901"
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.large_steel_boiler.subtitle}"
+			tasks: [{
+				id: "1041BC3BF3B54F2E"
+				item: "tfg:large_steel_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
 	title: "{quests.medium_voltage}"

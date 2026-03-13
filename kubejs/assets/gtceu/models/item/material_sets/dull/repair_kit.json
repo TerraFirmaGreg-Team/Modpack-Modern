@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gtceu:item/material_sets/dull/repair_kit_1",
+        "layer1": "gtceu:item/transparent",
+        "layer2": "gtceu:item/material_sets/dull/repair_kit_0"
+    }
+}
