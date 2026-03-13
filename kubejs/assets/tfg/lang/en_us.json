@@ -4403,6 +4403,7 @@
 	"quests.high_voltage.alumina_board.subtitle": "Higher education for rocks",
 	"quests.high_voltage.alumina_board.desc": "The &bCopper Bonded Alumina Circuit Boards&r are a direct upgrade over the old &7Silicon Carbide&r ones. With them, you can craft twice as many &eCeramic Circuit Boards&r while skipping the more complex process of producing &7Silicon Carbide&r.\n\nThis option is entirely optional, and it is up to you to decide whether you want to invest the resources into this upgrade. If you need a huge amount of &5Potassium&r for whatever reason, this method can also generate huge amounts of it.\n\nTake note that the next tier, &aChromium Bonded Beryllia Boards&r, are not yet available in the modpack.",
 	"quests.high_voltage.large_steam_turbine.subtitle": "Expensive but so good",
+	"quests.high_voltage.large_steam_turbine.task": "Any Dynamo Hatch though we recommand at least 4A",
 	"quests.high_voltage.large_steam_turbine.desc": "The &eLarge Steam Turbine&r is a very powerful &bMultiblock&r for generating power at &6HV&r. Since there is no single-block generator alternative for &bSteam&r at this tier, you will need to invest in this multiblock if you plan to keep using steam power.\n\nTo understand how it works, refer to the &bGregTech Energy&r chapter and read the entry related to turbines there.",
 	"quests.create_logistics": "Create Logistics",
 	"quests.create_logistics.subtitle": "Warehouse management for dummies",
