@@ -1300,6 +1300,9 @@ function registerTFGFoodRecipes(event) {
 	
 	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_bison_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_bison_meat').copyFood())
 	
 	event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())

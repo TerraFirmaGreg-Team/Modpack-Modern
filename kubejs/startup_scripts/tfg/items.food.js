@@ -170,6 +170,20 @@ function registerTFGFoodItems(event) {
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
+	//Bison
+	event.create('tfg:food/raw_bison_meat')
+        .food(food => food.hunger(2).saturation(1)
+            .effect('minecraft:hunger', 100, 0, 1))
+        .tag('tfc:foods')
+        .tag('tfc:foods/meats')
+        .tag('tfc:foods/raw_meats')
+
+    event.create('tfg:food/cooked_bison_meat')
+        .food(food => food.hunger(5).saturation(4))
+        .tag('tfc:foods')
+        .tag('tfc:foods/meats')
+        .tag('tfc:foods/cooked_meats')
+
 	//Springling
 	event.create('tfg:food/raw_springling_collar')
 		.translationKey('item.tfg.food.raw_springling_chops')

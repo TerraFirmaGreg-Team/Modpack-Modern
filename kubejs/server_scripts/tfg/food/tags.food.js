@@ -95,6 +95,8 @@ function registerTFGFoodItemTags(event) {
 		'tfg:food/cooked_moon_rabbit',
 		'tfg:food/raw_wraptor',
 		'tfg:food/cooked_wraptor',
+		'tfg:food/raw_bison_meat',
+		'tfg:food/cooked_bison_meat',
 		'tfg:food/raw_glider_wings',
 		'tfg:food/cooked_glider_wings',
 		'tfg:food/raw_whole_soarer',
