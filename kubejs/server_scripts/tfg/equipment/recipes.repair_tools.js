@@ -133,14 +133,7 @@ function registerTFGRepairKitRecipes(event) {
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
 
     //#region Generate recipe for Repair Kit
-/*
-    Okay maintenant j'ai besoin de faire la recette pour fabriquer les unfired repair kit
-Je voudrais les faire à partir de
-#tfg:stone_dusts
-'minecraft:clay_ball'
-'#forge:dusts/${material}'
-dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas consommer
-*/
+
     function materialUnfiredRepairKit(namespace, material) {
         event.shapeless(
             Item.of(`${namespace}:unfired_repair_kit_${material}`, 16), // arg 1: output
@@ -151,10 +144,20 @@ dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas conso
                 `#forge:dusts/${material}`
             ]
             )
+
+        event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_${namespace}_${material}`)
+            .notConsumable('gtceu:brick_wooden_form')
+            .itemInputs(
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:dusts/${material}`)
+            .itemOutputs(Item.of(`${namespace}:unfired_repair_kit_${material}`, 16))
+            .duration(20 * 5)
+            .EUt(GTValues.VHA[GTValues.LV])
+            .circuit(7)
     }
 
     materialUnfiredRepairKit('tfg', 'boron_carbide');
-    materialUnfiredRepairKit('tfg', 'diamond_tipped_mo_50_re');
     materialUnfiredRepairKit('gtceu', 'hsse');
     materialUnfiredRepairKit('gtceu', 'naquadah_alloy');
     materialUnfiredRepairKit('gtceu', 'duranium');
@@ -172,22 +175,34 @@ dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas conso
     materialUnfiredRepairKit('gtceu', 'copper');
     materialUnfiredRepairKit('gtceu', 'bismuth_bronze');
 
+    event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_tfg_unfired_repair_kit_diamond_tipped_mo_50_re}`)
+            .notConsumable('gtceu:brick_wooden_form')
+            .itemInputs(
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:ingots/diamond_tipped_mo_50_re`)
+            .itemOutputs(Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16))
+            .duration(20 * 5)
+            .EUt(GTValues.VHA[GTValues.LV])
+            .circuit(7)
+
+    event.shapeless(
+            Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16), // arg 1: output
+            [
+                'gtceu:brick_wooden_form',
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:ingots/diamond_tipped_mo_50_re`
+            ]
+            )
+
 
     function materialPrimalKit(namespace, repairKitMaterial) {
     event.recipes.tfc.heating(`${namespace}:unfired_repair_kit_${repairKitMaterial}`, 1399)
 		.resultItem(`${namespace}:repair_kit_${repairKitMaterial}`)
         .id(`tfg:heating/repair_kit_${namespace}_${repairKitMaterial}`)
     }
-/*
-    function materialPrimalKit(namespace, repairKitMaterial) {
-        event.recipes.tfc.anvil(
-            `16x ${namespace}:repair_kit_${repairKitMaterial}`,
-            `#forge:ingots/${repairKitMaterial}`,
-            ['hit_last', 'hit_second_last', 'hit_third_last']
-        )
-        .id(`tfg:anvil/repair_kit_${repairKitMaterial}`);
-        }
-*/
+
     materialPrimalKit('gtceu', 'black_bronze');
     materialPrimalKit('gtceu', 'black_steel');
     materialPrimalKit('gtceu', 'steel');
