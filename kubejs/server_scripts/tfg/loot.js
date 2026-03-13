@@ -169,4 +169,31 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:wraptor')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
+
+	// TFC 1.21 plants
+	global.NEW_OVERWORLD_AQUATICS.forEach(aquatic => {
+		event.addBlockLootModifier(aquatic)
+			.removeLoot(Ingredient.all)
+			.matchMainHand(Ingredient.of(['#forge:shears', '#tfc:sharp_tools']))
+			.addLoot(aquatic)
+	})
+
+	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
+		if (plant === "tfg:plant/red_oat_grass") {
+			event.addBlockLootModifier(plant)
+				.removeLoot(Ingredient.all)
+				.matchMainHand('#forge:shears')
+				.addLoot(plant)
+
+			event.addBlockLootModifier(plant)
+				.matchMainHand('#tfc:sharp_tools')
+				.addLoot('tfc:straw')
+		}
+		else {
+			event.addBlockLootModifier(plant)
+				.removeLoot(Ingredient.all)
+				.matchMainHand(Ingredient.of(['#forge:shears', '#tfc:sharp_tools']))
+				.addLoot(plant)
+		}
+	})
 };

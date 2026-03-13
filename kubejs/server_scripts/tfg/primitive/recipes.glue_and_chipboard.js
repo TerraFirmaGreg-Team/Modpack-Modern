@@ -28,13 +28,13 @@ function registerTFGChipboardRecipes(event) {
 		.duration(100)
 		.EUt(5)
 
-	event.recipes.gtceu.compressor('tfg:glue_from_bone_meal')
+	event.recipes.gtceu.compressor('tfg:glue_from_anemones')
 		.itemInputs('#tfg:anemones')
 		.itemOutputs('tfc:glue')
 		.duration(100)
 		.EUt(5)
 
-	event.recipes.gtceu.compressor('tfg:glue_from_bone_meal')
+	event.recipes.gtceu.compressor('tfg:glue_from_starfish')
 		.itemInputs("tfg:plant/starfish")
 		.itemOutputs('tfc:glue')
 		.duration(100)
