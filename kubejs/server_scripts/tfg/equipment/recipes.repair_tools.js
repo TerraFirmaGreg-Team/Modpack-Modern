@@ -133,7 +133,52 @@ function registerTFGRepairKitRecipes(event) {
     repairManualTools('gtceu', 'bismuth_bronze', 0.25);
 
     //#region Generate recipe for Repair Kit
+/*
+    Okay maintenant j'ai besoin de faire la recette pour fabriquer les unfired repair kit
+Je voudrais les faire à partir de
+#tfg:stone_dusts
+'minecraft:clay_ball'
+'#forge:dusts/${material}'
+dans une shapeless recipe avec 'gtceu:brick_wooden_form' qui ne serait pas consommer
+*/
+    function materialUnfiredRepairKit(namespace, material) {
+        event.shapeless(
+            Item.of(`${namespace}:unfired_repair_kit_${material}`, 16), // arg 1: output
+            [
+                'gtceu:brick_wooden_form',
+                '#tfg:stone_dusts',
+                'minecraft:clay_ball',
+                `#forge:dusts/${material}`
+            ]
+            )
+    }
 
+    materialUnfiredRepairKit('tfg', 'boron_carbide');
+    materialUnfiredRepairKit('tfg', 'diamond_tipped_mo_50_re');
+    materialUnfiredRepairKit('gtceu', 'hsse');
+    materialUnfiredRepairKit('gtceu', 'naquadah_alloy');
+    materialUnfiredRepairKit('gtceu', 'duranium');
+    materialUnfiredRepairKit('gtceu', 'ostrum_iodide');
+    materialUnfiredRepairKit('gtceu', 'tungsten_carbide');
+    materialUnfiredRepairKit('gtceu', 'ultimet');
+    materialUnfiredRepairKit('gtceu', 'blue_steel');
+    materialUnfiredRepairKit('gtceu', 'red_steel');
+    materialUnfiredRepairKit('gtceu', 'vanadium_steel');
+    materialUnfiredRepairKit('gtceu', 'black_bronze');
+    materialUnfiredRepairKit('gtceu', 'black_steel');
+    materialUnfiredRepairKit('gtceu', 'steel');
+    materialUnfiredRepairKit('gtceu', 'wrought_iron');
+    materialUnfiredRepairKit('gtceu', 'bronze');
+    materialUnfiredRepairKit('gtceu', 'copper');
+    materialUnfiredRepairKit('gtceu', 'bismuth_bronze');
+
+
+    function materialPrimalKit(namespace, repairKitMaterial) {
+    event.recipes.tfc.heating(`${namespace}:unfired_repair_kit_${repairKitMaterial}`, 1399)
+		.resultItem(`${namespace}:repair_kit_${repairKitMaterial}`)
+        .id(`tfg:heating/repair_kit_${namespace}_${repairKitMaterial}`)
+    }
+/*
     function materialPrimalKit(namespace, repairKitMaterial) {
         event.recipes.tfc.anvil(
             `16x ${namespace}:repair_kit_${repairKitMaterial}`,
@@ -142,7 +187,7 @@ function registerTFGRepairKitRecipes(event) {
         )
         .id(`tfg:anvil/repair_kit_${repairKitMaterial}`);
         }
-
+*/
     materialPrimalKit('gtceu', 'black_bronze');
     materialPrimalKit('gtceu', 'black_steel');
     materialPrimalKit('gtceu', 'steel');
@@ -154,12 +199,11 @@ function registerTFGRepairKitRecipes(event) {
     materialPrimalKit('gtceu', 'red_steel');
 
     function materialElectricKit(namespace, repairKitMaterial) {
-        event.recipes.gtceu.laser_engraver(`tfg:repair_kit_${repairKitMaterial}`)
-            .itemInputs(`#forge:ingots/${repairKitMaterial}`)
-            .itemOutputs(Item.of(`${namespace}:repair_kit_${repairKitMaterial}`, 16))
-            .duration(20*10)
-            .EUt(GTValues.VHA[GTValues.ULV])
-            .circuit(1)
+    event.smelting(
+        Item.of(`${namespace}:repair_kit_${repairKitMaterial}`),
+        `${namespace}:unfired_repair_kit_${repairKitMaterial}`
+    )
+    .id(`tfg:smelting/repair_kit_${namespace}_${repairKitMaterial}`)
     }
 
     materialElectricKit('tfg', 'boron_carbide');
@@ -173,4 +217,11 @@ function registerTFGRepairKitRecipes(event) {
     materialElectricKit('gtceu', 'blue_steel');
     materialElectricKit('gtceu', 'red_steel');
     materialElectricKit('gtceu', 'vanadium_steel');
+    materialElectricKit('gtceu', 'black_bronze');
+    materialElectricKit('gtceu', 'black_steel');
+    materialElectricKit('gtceu', 'steel');
+    materialElectricKit('gtceu', 'wrought_iron');
+    materialElectricKit('gtceu', 'bronze');
+    materialElectricKit('gtceu', 'copper');
+    materialElectricKit('gtceu', 'bismuth_bronze');
 };

@@ -305,7 +305,7 @@ function registerTFGMultiblockRecipes(event) {
 		A: '#forge:single_cables/copper',
 		B: '#gtceu:circuits/mv',
 		C: Item.of('gtceu:steel_firebox_casing'),
-		D: Item.of('gtceu:capacitor')
+		D: '#gtceu:capacitors'
 	}).addMaterialInfo().id('tfg:shaped/large_steel_boiler')
 
 	// Large Steam Turbine
