@@ -8,6 +8,11 @@
 - Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
 - New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
 - TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
+- Recipe of Steel Pipe Casing and Magnalium Turbine Casing changed @TomPlop
+- Added the new Large Steam Turbine that has a base production of 2048 Eu/t but can't accept higher Rotors that EV @TomPlop
+- Added the Repair Kit so you can finally repair your Gregtech Tools @TomPlop
+- Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
+- Added a 16A HV Dynamo Hatch @TomPlop
 ### Bug fixes
 - Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
 - Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
