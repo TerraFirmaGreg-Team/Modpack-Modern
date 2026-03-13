@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.27] - 13-03-2026
+### Changes
 - Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
 - Added a new Large Steam Turbine that has a base production of 2048 EU/t but can't accept higher Rotors than EV @TomPlop
 - Removed vanilla advancements @Mqrius
@@ -14,6 +19,7 @@
 - Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
 - Added a 16A HV Dynamo Hatch @TomPlop
 ### Bug fixes
+- Fixed crashes with the Greate encased fan @Electrolyte220
 - Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
 - Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
 - Fixed livestock breeding failing often @Mqrius
@@ -24,6 +30,8 @@
 - Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
 - Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis
 
 ## [0.11.26] - 10-03-2026
 ### Changes
