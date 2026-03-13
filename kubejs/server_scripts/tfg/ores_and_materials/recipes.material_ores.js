@@ -189,6 +189,7 @@ function processNormalRawOre(event, material) {
 	}
 
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
+	event.remove({ id: `greate:crushing/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
 
 	// Macerator
 	event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
