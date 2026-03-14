@@ -507,7 +507,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.6.0.jar",
+                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -516,22 +516,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7703/286/adaptive_performance_tweaks_gamerules_1.20.1-11.6.0.jar",
-                    "id": "7703286",
+                    "url": "https://edge.forgecdn.net/files/7736/356/adaptive_performance_tweaks_gamerules_1.20.1-11.6.1.jar",
+                    "id": "7736356",
                     "parent_id": "561137",
                     "hashes": {
-                        "sha1": "335560e59ff130b77e774817d3e342eb81c77f61",
-                        "md5": "4b5a55ec0c085c5959d1ffb61cbf27d6"
+                        "sha1": "da518957f38005acf1774d38013f5ca9f59e4805",
+                        "md5": "624ea0e9ae916c58c84ea7a7a5e7fe8f"
                     },
                     "required_dependencies": [
                         "561087"
                     ],
-                    "size": 64939,
-                    "date_published": "2026-03-02T23:41:49.567Z"
+                    "size": 64870,
+                    "date_published": "2026-03-10T01:21:26.520Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.6.0.jar",
+                    "file_name": "adaptive_performance_tweaks_gamerules_1.20.1-11.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -540,18 +540,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Rd89yO7d/versions/J9X4tmwm/adaptive_performance_tweaks_gamerules_1.20.1-11.6.0.jar",
-                    "id": "J9X4tmwm",
+                    "url": "https://cdn.modrinth.com/data/Rd89yO7d/versions/LEZTKCzX/adaptive_performance_tweaks_gamerules_1.20.1-11.6.1.jar",
+                    "id": "LEZTKCzX",
                     "parent_id": "Rd89yO7d",
                     "hashes": {
-                        "sha512": "8cb1725af957a4e68490b8014d4b52cf10e90ae663f638cee62f47c4ce5912ce1afd7bf7ecfb287c0b1b218eaf8fefe469fa88af63c94a9cae6193916252188a",
-                        "sha1": "155cf0d348fd895d7cff049e5f6a2ae59346caab"
+                        "sha512": "cfe47e0fdd6f63bd9809e58bac35779e3bc54cd4c4953565f8335349b1ee699e744a873a3dc2e63c1652d01712d5d3615afe7a0d9eddde4e2b3f6269847eaf49",
+                        "sha1": "c203f8ed8270832a84818ec96263990110b94a9e"
                     },
                     "required_dependencies": [
                         "L5xaBiBb"
                     ],
-                    "size": 64939,
-                    "date_published": "2026-03-02T23:41:43.261714Z"
+                    "size": 64870,
+                    "date_published": "2026-03-10T01:21:15.015572Z"
                 }
             ]
         },
@@ -649,7 +649,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "adaptive_performance_tweaks_player_1.20.1-11.6.0.jar",
+                    "file_name": "adaptive_performance_tweaks_player_1.20.1-11.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -658,18 +658,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7703/290/adaptive_performance_tweaks_player_1.20.1-11.6.0.jar",
-                    "id": "7703290",
+                    "url": "https://edge.forgecdn.net/files/7736/365/adaptive_performance_tweaks_player_1.20.1-11.6.1.jar",
+                    "id": "7736365",
                     "parent_id": "563963",
                     "hashes": {
-                        "sha1": "1a58971b7f965fa16cd0e7d6428b0571e6d35086",
-                        "md5": "0f065d30d68c63fa5014a08271fcfd75"
+                        "sha1": "632208b88322cb4985a45cf1448d5dce7b12a7cb",
+                        "md5": "52b1e57c405262037cda9a64c6996b43"
                     },
                     "required_dependencies": [
                         "561087"
                     ],
-                    "size": 66273,
-                    "date_published": "2026-03-02T23:42:28.527Z"
+                    "size": 66267,
+                    "date_published": "2026-03-10T01:24:05.877Z"
                 },
                 {
                     "type": "modrinth",
@@ -7355,7 +7355,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "greate-0.0.71.jar",
+                    "file_name": "greate-0.0.72.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7364,23 +7364,23 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7721/70/greate-0.0.71.jar",
-                    "id": "7721070",
+                    "url": "https://edge.forgecdn.net/files/7747/263/greate-0.0.72.jar",
+                    "id": "7747263",
                     "parent_id": "901996",
                     "hashes": {
-                        "sha1": "b0b9c7b9850299928b8bee11a82eb431766a071c",
-                        "md5": "e880f0a606aecce30412db6797ae7c3c"
+                        "sha1": "1896826ab811fc18d3e4954b4390943e7702647d",
+                        "md5": "e00e9f88a615f66f5245a59df5646369"
                     },
                     "required_dependencies": [
                         "890405",
                         "328085"
                     ],
-                    "size": 1316390,
-                    "date_published": "2026-03-06T21:17:55.010Z"
+                    "size": 1316422,
+                    "date_published": "2026-03-12T15:28:08.133Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.71.jar",
+                    "file_name": "greate-0.0.72.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7389,19 +7389,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/ip9Pmwzj/greate-0.0.71.jar",
-                    "id": "ip9Pmwzj",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/aEBMNbQw/greate-0.0.72.jar",
+                    "id": "aEBMNbQw",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "91c4644a77b9e5c5c037df77dc95152dce22d2cb4ee037c2ba7b0c5c9b77e09aaad0caed4861370b9db3372f6064e80ccc076d337d836d76e92e2b20d64e8363",
-                        "sha1": "b0b9c7b9850299928b8bee11a82eb431766a071c"
+                        "sha512": "4873e2b9c3292c82aea6132cfd0259c21b10f55764683dfc509c59072439b6914f916c2b4b7f91c66ec89c73ee904efc2a4bb91c4f210527c1e59fd87aec18bb",
+                        "sha1": "1896826ab811fc18d3e4954b4390943e7702647d"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "LNytGWDc"
+                        "LNytGWDc",
+                        "7tG215v7"
                     ],
-                    "size": 1316390,
-                    "date_published": "2026-03-06T21:17:57.457243Z"
+                    "size": 1316422,
+                    "date_published": "2026-03-12T15:28:10.842916Z"
                 }
             ]
         },
@@ -7552,7 +7552,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gtmoldraw-3.0.1.jar",
+                    "file_name": "gtmoldraw-3.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7560,18 +7560,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7529/672/gtmoldraw-3.0.1.jar",
-                    "id": "7529672",
+                    "url": "https://edge.forgecdn.net/files/7745/110/gtmoldraw-3.1.1.jar",
+                    "id": "7745110",
                     "parent_id": "1348330",
                     "hashes": {
-                        "sha1": "caaf28b88afe1b01ec4180a4458c2795184255bc",
-                        "md5": "aae6cd78a4f17cbcbd2b0dc984fe4a8b"
+                        "sha1": "9ac65b503eb64014b67f4c674508df1d115b0b4f",
+                        "md5": "0c2870b0af7515d7d695e15dcc825142"
                     },
                     "required_dependencies": [
                         "890405"
                     ],
-                    "size": 908933,
-                    "date_published": "2026-01-26T10:36:48.937Z"
+                    "size": 912390,
+                    "date_published": "2026-03-12T00:09:12.557Z"
                 }
             ]
         },
@@ -14426,7 +14426,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.28.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.29.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14435,23 +14435,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7738/141/TerraFirmaGreg-Core-Modern-0.8.28.jar",
-                    "id": "7738141",
+                    "url": "https://edge.forgecdn.net/files/7752/863/TerraFirmaGreg-Core-Modern-0.8.29.jar",
+                    "id": "7752863",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "c068f0d0865524113803429732c3f675e266a4ef",
-                        "md5": "699883e74e3e58004f1168795bb83736"
+                        "sha1": "6ebdd163a3547a787afd6f88e7c5643e2649b053",
+                        "md5": "6448a68a412487a93646470c14a5c6ae"
                     },
                     "required_dependencies": [
-                        "890405",
-                        "302973"
+                        "302973",
+                        "890405"
                     ],
-                    "size": 10091524,
-                    "date_published": "2026-03-10T11:59:33.087Z"
+                    "size": 10122743,
+                    "date_published": "2026-03-13T20:22:11.817Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.28.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.29.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14460,19 +14460,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WMIR02zU/TerraFirmaGreg-Core-Modern-0.8.28.jar",
-                    "id": "WMIR02zU",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/SQm4MgZl/TerraFirmaGreg-Core-Modern-0.8.29.jar",
+                    "id": "SQm4MgZl",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "7f28846e70d90a1217ffba270ee6afb4b95554cbd57639f69e0aaff223065ee7aefaad71ce4a2895c25fe1a2383a15aeab3866c05fc597851077a3865bb03928",
-                        "sha1": "c068f0d0865524113803429732c3f675e266a4ef"
+                        "sha512": "4c1c2921f87cc7382a2ce6f195c25bf413da919c9e0bc5b6cafb7d9ebd19b2021354d58ec2d9656fe9aa991552e4a559152e15573e10a3a29b04adb2aab6d499",
+                        "sha1": "6ebdd163a3547a787afd6f88e7c5643e2649b053"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 10091524,
-                    "date_published": "2026-03-10T11:59:38.331657Z"
+                    "size": 10122743,
+                    "date_published": "2026-03-13T20:22:16.622064Z"
                 }
             ]
         },
@@ -15614,7 +15614,7 @@
                 "modrinth": "timeless-and-classics-zero"
             },
             "name": {
-                "curseforge": "[TaCZ] Timeless and Classics Zero",
+                "curseforge": "[TaCZ] Timeless and Classics Zero Guns",
                 "modrinth": "[TaCZ] Timeless and Classics Zero"
             },
             "id": {
@@ -15624,7 +15624,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "tacz-1.20.1-1.1.7-hotfix.jar",
+                    "file_name": "tacz-1.20.1-1.1.7-hotfix2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15632,38 +15632,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7401/617/tacz-1.20.1-1.1.7-hotfix.jar",
-                    "id": "7401617",
+                    "url": "https://edge.forgecdn.net/files/7745/481/tacz-1.20.1-1.1.7-hotfix2.jar",
+                    "id": "7745481",
                     "parent_id": "1028108",
                     "hashes": {
-                        "sha1": "7d4f578a42c9b880744ea6058a495847aac9e4c3",
-                        "md5": "e91391b09e25ec5994c28593117f5908"
+                        "sha1": "cb84817b83025fa93d380e87de655e57a607ced8",
+                        "md5": "0038fa8d38a045d711d8405eb6c382e6"
                     },
                     "required_dependencies": [],
-                    "size": 52425650,
-                    "date_published": "2025-12-31T19:00:25.193Z"
+                    "size": 52426062,
+                    "date_published": "2026-03-12T03:01:48.243Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "tacz-1.20.1-1.1.7-hotfix.jar",
+                    "file_name": "tacz-1.20.1-1.1.7-hotfix2.jar",
                     "mc_versions": [
-                        "1.20",
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/CkNQpQcx/tacz-1.20.1-1.1.7-hotfix.jar",
-                    "id": "CkNQpQcx",
+                    "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/3NpuJ7TJ/tacz-1.20.1-1.1.7-hotfix2.jar",
+                    "id": "3NpuJ7TJ",
                     "parent_id": "SzzJttH8",
                     "hashes": {
-                        "sha512": "17d17133243de268cc2d071261e69e747a01b3ab64ab1cf0eec17054e4f19bf8cf30ef1c7ed3e1600523cd9061b38728810b92aefa4246f615001f835a25dc37",
-                        "sha1": "7d4f578a42c9b880744ea6058a495847aac9e4c3"
+                        "sha512": "1e174634668f031b591885275b0a8b7007ec6747faf4156fc8e3044a4ab7c21930eb19542cc647eedcf4d089e92938e243cf802380d4deb5010235bfd7389f0d",
+                        "sha1": "cb84817b83025fa93d380e87de655e57a607ced8"
                     },
                     "required_dependencies": [],
-                    "size": 52425650,
-                    "date_published": "2026-01-01T09:15:14.812661Z"
+                    "size": 52426062,
+                    "date_published": "2026-03-12T03:03:27.767212Z"
                 }
             ]
         },

@@ -882,6 +882,8 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('tfg:boron_enriched_coolant', 3600))
         .blastFurnaceTemp(2000)
         .addData("hb_energy", 30)
+		.duration(5*20)
+		.hideDuration(true);
 /*
     event.recipes.deafission.hb_export('tfg:boron_coolant_to_dense_steam')
         .inputFluids(Fluid.of('gtceu:distilled_water', 7200))
@@ -895,13 +897,16 @@ function registerTFGNuclearRecipes(event) {
         .outputFluids(Fluid.of('gtceu:dense_steam', 115200))
         .blastFurnaceTemp(1000)
         .addData("hb_energy", 40)
-		//.circuit(2)
+		.duration(5*20)
+		.hideDuration(true);
 
     event.recipes.deafission.hb_import('tfg:dense_steam')
         .inputFluids(Fluid.of('gtceu:dense_steam', 20))
         .outputFluids(Fluid.of('minecraft:water', 20))
         .blastFurnaceTemp(1000)
         .addData("hb_energy", 20)
+		.duration(5*20)
+		.hideDuration(true);
 	
 	//#endregion
 

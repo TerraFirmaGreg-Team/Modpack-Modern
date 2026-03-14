@@ -45,15 +45,8 @@ function registerTFGFoodItemTags(event) {
 
 	global.WARMING_FOODS.forEach(food => { event.add('tfg:warming_foods', food) })
 
-	//jam sandwhich stuff
-	const usable_in_jam_sandwich = Ingredient.of('#tfc:foods/usable_in_jam_sandwich').itemIds.toArray().map(String);
-	const preserves = Ingredient.of('#tfc:foods/preserves').itemIds.toArray().map(String);
-
-	const usable_in_jam_sandwich_2 = usable_in_jam_sandwich.filter(item => !preserves.includes(item));
-
-	usable_in_jam_sandwich_2.forEach(item => {
-		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
-	});
+	// Alias of tfc:foods/preserves, used to give the 2-jam sandwich recipe a distinct tree key in GT's RecipeDB.
+	event.add('tfc:foods/preserves_2', '#tfc:foods/preserves')
 
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_sniffer_beef')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_wraptor')
@@ -332,7 +325,6 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/dairy', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
-	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 
 	// Auto-eat blacklist for backpack feeding upgrade and quarktech helmet

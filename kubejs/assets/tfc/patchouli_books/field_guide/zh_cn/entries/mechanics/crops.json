@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "目录",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)绿豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()$(li)$(l:tfc:mechanics/crops#oat)燕麦$()$(li)$(l:tfc:mechanics/crops#onion)洋葱$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()$(li)$(l:tfc:mechanics/crops#oat)燕麦$()$(li)$(l:tfc:mechanics/crops#onion)洋葱$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -1345,8 +1345,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "green_bean",
-			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：38 - 100 %$(br)$(bold)营养物质$()：氮$(br2)青豆是一种攀爬作物。如果耕地上插有木棍，青豆能长到两格高。种植青豆会产出$(thing)青豆$()和$(thing)青豆种子$()。",
-			"title": "青豆"
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：38 - 100 %$(br)$(bold)营养物质$()：氮$(br2)四季豆是一种攀爬作物。如果耕地上插有木棍，四季豆能长到两格高。种植四季豆会产出$(thing)四季豆$()和$(thing)四季豆种子$()。",
+			"title": "四季豆"
 		},
 		{
 			"type": "tfc:multimultiblock",

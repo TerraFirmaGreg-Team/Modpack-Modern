@@ -35,13 +35,21 @@ function registerDiggerHelmetRecipes(event) {
 		C: '#forge:foils/rubber'
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
 
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('diggerhelmet:silk_lining', ['tfcambiental:silk_cowl', '#forge:string', '#tfc:sewing_needles'])
-	).id('tfg:shapeless/diggerhelmet/silk_lining')
-
-	event.recipes.tfc.damage_inputs_shapeless_crafting(
-		event.shapeless('diggerhelmet:wool_lining', ['tfcambiental:wool_hat', '#forge:string', '#tfc:sewing_needles'])
-	).id('tfg:shapeless/diggerhelmet/wool_lining')
+	event.shapeless('diggerhelmet:silk_lining', [
+		'tfcambiental:silk_cowl', 
+		'#forge:string', 
+		'#tfc:sewing_needles'
+	])
+	.damageIngredient('#tfc:sewing_needles', 1)
+	.id('tfg:shapeless/diggerhelmet/silk_lining');
+	
+	event.shapeless('diggerhelmet:wool_lining', [
+		'tfcambiental:wool_hat', 
+		'#forge:string', 
+		'#tfc:sewing_needles'
+	])
+	.damageIngredient('#tfc:sewing_needles', 1)
+	.id('tfg:shapeless/diggerhelmet/wool_lining');
 
 
 	// ========================================
@@ -96,18 +104,15 @@ function registerDiggerHelmetRecipes(event) {
 			type: 'diggerhelmet:helmet_repair',
 			pattern: [
 				' C ',
-				'RHT',
-				'BAB'
+				'RHT'
 			],
 			key: {
 				'H': { item: `diggerhelmet:${metal}_digger_helmet` },
-				'R': { tag: `forge:plates/${metal}` },
+				'R': ChemicalHelper.get(TFGTagPrefix.repairKit, TFGHelpers.getMaterial(metal), 1),
 				'T': { tag: 'tfc:hammers' },
-				'C': { tag: 'tfc:candles' },
-				'A': { tag: 'forge:tools/screwdrivers'},
-				'B': { tag: `forge:screws/${metal}`}
+				'C': { tag: 'tfc:candles' }
 			},
-			repairPercentage: 0.75,
+			repairPercentage: 0.25,
 			toolDamagePercentage: 0.01
 		}).id(`tfg:diggerhelmet/repair_${metal}_helmet`)
 
@@ -116,18 +121,15 @@ function registerDiggerHelmetRecipes(event) {
 			type: 'diggerhelmet:helmet_repair',
 			pattern: [
 				' C ',
-				'RHT',
-				'BAB'
+				'RHT'
 			],
 			key: {
 				'H': { item: `diggerhelmet:broken_${metal}_digger_helmet` },
-				'R': { tag: `forge:plates/${metal}` },
+				'R': ChemicalHelper.get(TFGTagPrefix.repairKit, TFGHelpers.getMaterial(metal), 1),
 				'T': { tag: 'tfc:hammers' },
-				'C': { tag: 'tfc:candles' },
-				'A': { tag: 'forge:tools/screwdrivers'},
-				'B': { tag: `forge:screws/${metal}`}
+				'C': { tag: 'tfc:candles' }
 			},
-			repairPercentage: 0.75,
+			repairPercentage: 0.25,
 			toolDamagePercentageBroken: 0.02
 		}).id(`tfg:diggerhelmet/repair_broken_${metal}_helmet`)
 	})

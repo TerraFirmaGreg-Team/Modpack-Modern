@@ -2029,6 +2029,27 @@
 			x: -15.5d
 			y: 13.5d
 		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			description: [
+				"{quests.steam_age.large_bronze_boiler.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.large_bronze_boiler.desc.2}"
+				"{@pagebreak}"
+				"{quests.steam_age.large_bronze_boiler.desc.3}"
+			]
+			id: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.steam_age.large_bronze_boiler.subtitle}"
+			tasks: [{
+				id: "6D8BDDF41B0A5384"
+				item: "tfg:large_bronze_boiler"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 16.0d
+		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
 	title: "{quests.steam_age}"

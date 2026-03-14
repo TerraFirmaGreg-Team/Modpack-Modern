@@ -109,6 +109,13 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 
 	event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
 
+	const EXCLUDED_MATERIALS = [
+        'diamond_tipped_mo_50_re',
+    ];
+
+    if (EXCLUDED_MATERIALS.includes(material.getName()))
+		return;
+
 	const materialName = material.getName();
 	const materialAmount = getMaterialAmount(headTagPrefix, material);
 
