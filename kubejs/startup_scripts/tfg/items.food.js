@@ -501,7 +501,6 @@ function registerTFGFoodItems(event) {
 			})
 		)
 		.tag('tfc:foods/usable_in_jam_sandwich')
-		.tag('tfc:foods/usable_in_jam_sandwich_2')
 		.tag('tfc:foods/usable_in_sandwich')
 		.tag('tfg:foods/usable_in_meal_bag')
 		.tag('tfc:foods/dairy')

@@ -52,9 +52,22 @@ function registerTFGClothRecipes(event) {
 	)
 
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('8x firmalife:pineapple_yarn', [
+			'firmalife:pineapple_fiber',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/pineapple_yarn')
+	)
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('8x tfc:wool_yarn', [
+			'tfc:wool',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/wool_yarn')
+	)
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('16x tfg:phantom_thread', [
 			'minecraft:phantom_membrane',
-			'tfc:spindle'
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/phantom_thread'))
 
 		// Wool Yarn
@@ -109,6 +122,39 @@ function registerTFGClothRecipes(event) {
 	// Jute Fiber
 	generateMixerRecipe(event, 'tfc:jute', "#tfg:clean_water 200",
 		'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+
+
+	//#region Spindle Recipes
+	
+	event.shaped('tfg:copper_spindle', [
+		'A',
+		'B'
+	], {
+		A: 'tfg:copper_spindle_head',
+		B: '#forge:rods/wooden'
+	}).id('tfg:shaped/copper_spindle')
+	
+	event.recipes.tfc.casting(
+        'tfg:copper_spindle_head',
+        'tfg:spindle_head_mold',
+        TFC.fluidStackIngredient('gtceu:copper', 72),
+        .1
+    ).id('tfg:casting/copper_spindle_head')
+	
+	event.recipes.tfc.anvil(
+		'tfg:copper_spindle_head',
+        'gtceu:copper_rod',
+        [
+            'shrink_last',
+            'upset_second_last',
+			'shrink_third_last'
+        ]
+    ).bonus(true)
+	 .tier(1)
+	 .id('tfg:anvil/copper_spindle_head')
+
+	//#endregion
+
 
 	//#region flax stuff
 
@@ -210,7 +256,7 @@ function registerTFGClothRecipes(event) {
 	event.recipes.tfc.damage_inputs_shapeless_crafting(
 		event.shapeless('4x tfg:linen_thread', [
 			'tfg:flax_line',
-			'tfc:spindle'
+			'#tfg:tools/spindles'
 		]).id('tfg:shapeless/linen_thread')
 	)
 
@@ -254,4 +300,5 @@ function registerTFGClothRecipes(event) {
 		.duration(100)
 		.EUt(4)
 	//#endregion
+	
 }

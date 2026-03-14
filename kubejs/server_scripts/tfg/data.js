@@ -53,6 +53,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
 
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
 
@@ -329,9 +330,11 @@ function registerTFGItemSize(event) {
 	event.itemSize(
 		orArray([
 			"tfg:unfired_rod_mold",
+			"tfg:unfired_spindle_head_mold",
 			"tfg:unfired_small_gear_mold",
 			"tfg:unfired_nugget_mold",
 			"tfg:rod_mold",
+			"tfg:spindle_head_mold",
 			"tfg:small_gear_mold",
 			"tfg:nugget_mold"
 		]),
