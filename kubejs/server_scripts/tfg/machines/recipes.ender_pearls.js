@@ -20,7 +20,7 @@ function registerTFGEnderPearlRecipes(event) {
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.pyrolyse_oven('vitrified_ender_dust')
-		.itemInputs('minecraft:ender_pearl', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
+		.itemInputs('#forge:ender_pearls', '2x tfc:powder/kaolinite', '4x #forge:insulation_t1')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
 		.itemOutputs('tfg:vitrified_pearl')
 		.chancedOutput('gtceu:ash_dust', 2500, 0)
