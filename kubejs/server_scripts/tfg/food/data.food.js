@@ -109,6 +109,20 @@ function registerTFGFoodData(event) {
 		food.decayModifier(2.25);
 	});
 
+	// Bison Meat
+    event.foodItem("tfg:food/raw_bison_meat", (food) => {
+        food.hunger(2);
+        food.protein(1.5);
+        food.decayModifier(3);
+    });
+
+    event.foodItem("tfg:food/cooked_bison_meat", (food) => {
+        food.hunger(4);
+        food.saturation(2);
+        food.protein(3);
+        food.decayModifier(2.25);
+    });
+
 	// Springling Collar
 	event.foodItem("tfg:food/raw_springling_collar", (food) => {
 		food.hunger(2);
