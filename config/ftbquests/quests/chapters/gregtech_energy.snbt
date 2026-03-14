@@ -397,7 +397,7 @@
 			subtitle: "{quests.gregtech_energy.lst.subtitle}"
 			tasks: [{
 				id: "2151B2C87E5AC2FD"
-				item: "gtceu:steam_large_turbine"
+				item: "tfg:large_steam_turbine"
 				type: "item"
 			}]
 			title: "{quests.gregtech_energy.lst.title}"
@@ -842,12 +842,12 @@
 			id: "1A0672F4FA88DF74"
 			subtitle: "{quests.gregtech_energy.hv_single_generator.subtitle}"
 			tasks: [{
-				id: "76DE486034E2F61D"
+				id: "0C7F36036C137495"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:hv_steam_turbine)item(gtceu:hv_gas_turbine)item(gtceu:hv_combustion))"
+						"ftbfiltersystem:filter": "or(item(gtceu:hv_combustion)item(gtceu:hv_gas_turbine))"
 					}
 				}
 				title: "{quests.gregtech_energy.hv_single_generator.task}"

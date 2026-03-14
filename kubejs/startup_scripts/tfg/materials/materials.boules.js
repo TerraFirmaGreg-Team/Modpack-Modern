@@ -35,7 +35,7 @@ function registerTFGBouleMaterials(event) {
 		.color(0x8C8C94)
 		.secondaryColor(0x10293b)
 		.iconSet(GTMaterialIconSet.BRIGHT)
-		.liquid(new GTFluidBuilder().temperature(2273))
+		.liquid(new GTFluidBuilder().temperature(1800))
 		.dust()
 		.components('1x silicon')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)

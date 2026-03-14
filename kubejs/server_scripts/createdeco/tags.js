@@ -67,6 +67,8 @@ function registerCreateDecoBlockTags(event) {
 		event.add("minecraft:mineable/pickaxe", `createdeco:${metalBars}_bars`);
 		event.add("minecraft:mineable/pickaxe", `createdeco:${metalBars}_bars_overlay`);
 	});
+	
+	event.add('create:chest_mounted_storage', '#createdeco:shipping_containers')
 
 	const lampColors = ['blue', 'green', 'red', 'yellow'];
 	const lampTypes = ['zinc', 'brass', 'iron', 'industrial_iron', 'copper', 'andesite'];
