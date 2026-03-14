@@ -95,8 +95,6 @@ function registerTFGFoodItemTags(event) {
 		'tfg:food/cooked_moon_rabbit',
 		'tfg:food/raw_wraptor',
 		'tfg:food/cooked_wraptor',
-		'tfg:food/raw_bison_meat',
-		'tfg:food/cooked_bison_meat',
 		'tfg:food/raw_glider_wings',
 		'tfg:food/cooked_glider_wings',
 		'tfg:food/raw_whole_soarer',
@@ -137,6 +135,8 @@ function registerTFGFoodItemTags(event) {
 		'tfg:food/cooked_walker_steak',
 		'tfg:food/raw_crusher_meat',
 		'tfg:food/cooked_crusher_meat',
+		'tfg:food/raw_bison_meat',
+		'tfg:food/cooked_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat',
 		'wan_ancient_beasts:cooked_ancient_meat'
 	];
@@ -194,6 +194,7 @@ function registerTFGFoodItemTags(event) {
 		'tfc:food/venison',
 		'tfg:food/raw_sniffer_beef',
 		'tfg:food/raw_crusher_meat',
+		'tfg:food/raw_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat'
 	];
 	burgerMeats.forEach(item => {
