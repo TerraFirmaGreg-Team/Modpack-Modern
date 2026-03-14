@@ -1,4 +1,4 @@
-{
+F{
   "general": {
     "doEffectsInCreative": false,
     "waterSubstractFactor": 10,
@@ -366,23 +366,23 @@
     },
     "rain": {
       "enabled": true,
-      "opacity": 1.0,
+      "opacity": 0.5,
       "duration": {
         "min": 100,
         "max": 100
       },
       "drop": {
         "disabled": false,
-        "opacity": 1.0,
+        "opacity": 0.5,
         "animationSpeed": 0,
         "scale": {
           "min": 0.1,
-          "max": 0.5
+          "max": 0.3
         },
-        "red": 41,
-        "green": 76,
-        "blue": 149,
-        "alpha": 255
+        "red": 127,
+        "green": 127,
+        "blue": 127,
+        "alpha": 127
       },
       "delay": {
         "min": 0,
