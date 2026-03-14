@@ -12,6 +12,8 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'#tfc:rock/chiseled',
 		'#tfc:rock/raw',
 		'#tfc:metal_plated_blocks',
+		'#tfc:dirt',
+		'#tfc:grass',
 		
 		'#tfc:colored_raw_alabaster',
 		'#tfc:colored_bricks_alabaster',
@@ -149,13 +151,23 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'everycomp:c/domum_ornamentum/cactus_extra_window',
 		'ae2:quartz_glass',
 		
-		//create deco
+		//create + deco
 		'createdeco:andesite_sheet_metal',
 		'createdeco:brass_sheet_metal',
 		'createdeco:iron_sheet_metal',
 		'createdeco:copper_sheet_metal',
 		'createdeco:industrial_iron_sheet_metal',
-		'createdeco:zinc_sheet_metal'
+		'createdeco:zinc_sheet_metal',
+		'create:industrial_iron_block',
+		'create:weathered_iron_block',
+		'create:rose_quartz_block',
+		'create:rose_quartz_tiles',
+		'create:small_rose_quartz_tiles',
+
+		// better end
+		'betterend:brimstone',
+		'betterend:lacugrove_bark',
+		'betterend:lucernia_bark',
 	];
 	
 	const createdeco_bricks_fm = 
@@ -194,14 +206,14 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'calcite',
 		'dripstone',
 		'deepslate',
-		'limestone'
-		//'ochrum',
-		//'scoria',
-		//'scorchia',
-		//'veridium'
-		//'tuff',
-		//'asurine',
-		//'crimsite',
+		'limestone',
+		'ochrum',
+		'scoria',
+		'scorchia',
+		'veridium',
+		'tuff',
+		'asurine',
+		'crimsite',
 	]
 	
 	//misc blocks
