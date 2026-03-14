@@ -19,6 +19,7 @@
 - Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
 - Added a 16A HV Dynamo Hatch @TomPlop
 - Adjusted how fast the player heats up and cools down @Pyritie
+- Lowered the fluid temperatures of polysilicon, bakelite, and phenolic resin @Pyritie
 ### Bug fixes
 - Fixed crashes with the Greate encased fan @Electrolyte220
 - Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
