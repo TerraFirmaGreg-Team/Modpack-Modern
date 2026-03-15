@@ -5,6 +5,8 @@
 function registerTFGFLPlanters(event) {
 	const $FarmlandBlockEntity = Java.loadClass("net.dries007.tfc.common.blockentities.FarmlandBlockEntity")
 
+	//#region Earth
+
 	event.firmalifePlantable(
 		"tfg:sunflower_seeds",
 		"large",
@@ -58,6 +60,12 @@ function registerTFGFLPlanters(event) {
 		],
 		null
 	);
+
+	//#endregion
+	//#region Beneath
+	
+	//#endregion
+	//#region Mars
 
 	event.firmalifePlantable(
 		"betterend:amber_root_seeds",
@@ -166,4 +174,6 @@ function registerTFGFLPlanters(event) {
 		],
 		null
 	);
+
+	//#endregion
 }

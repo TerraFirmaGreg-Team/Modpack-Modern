@@ -4,8 +4,9 @@
 const registerTFGCrops = (event) => {
 	const $FarmlandBlockEntity = Java.loadClass("net.dries007.tfc.common.blockentities.FarmlandBlockEntity")
 
-	// Earth Crops
+	//#region Earth Crops
 
+	// Sunflower
 	event.create('tfg:sunflower', 'tfc:double_crop')
 		.translationKey('block.tfg.sunflower')
 		.mapColor('plant')
@@ -28,7 +29,6 @@ const registerTFGCrops = (event) => {
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
 		})
-
 	event.create('tfg:sunflower_wild', 'tfc:wild_crop')
 		.type('double')
 		.soundType('crop')
@@ -41,6 +41,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
+	// Rapeseed/ Canola
 	event.create('tfg:rapeseed', 'tfc:double_crop')
 		.mapColor('plant')
 		.translationKey('block.tfg.rapeseed')
@@ -56,7 +57,6 @@ const registerTFGCrops = (event) => {
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
 		})
-
 	event.create('tfg:rapeseed_wild', 'tfc:wild_crop')
 		.type('double')
 		.soundType('crop')
@@ -69,6 +69,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
+	// Flax
 	event.create('tfg:flax', 'tfc:double_crop')
 		.mapColor('plant')
 		.translationKey('block.tfg.flax')
@@ -92,7 +93,6 @@ const registerTFGCrops = (event) => {
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
 		})
-
 	event.create('tfg:flax_wild', 'tfc:wild_crop')
 		.type('double')
 		.soundType('crop')
@@ -104,8 +104,229 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-	// Mars Crops
+	// Lentils
+	event.create('tfg:lentil', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.PHOSPHOROUS)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:lentil_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:lentil_seeds')
+		.food('tfg:lentil_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
 
+	// Radish
+	event.create('tfg:radish', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:radish_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:radish_seeds')
+		.food('tfg:radish_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Cucumber
+	event.create('tfg:cucumber', 'tfc:double_crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
+		.stages(3)
+		.doubleStages(2)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+        .requiresStick(true)
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+        .deadBlock(dead => {
+            dead.models((variant, m) => {
+                if (variant.stick()) {
+                    m.parent('tfc:block/crop/stick');
+                }
+            })
+        })
+	event.create('tfg:cucumber_wild', 'tfc:wild_crop')
+		.type('double')
+		.soundType('crop')
+		.seeds('tfg:cucumber_seeds')
+		.food('tfg:cucumber_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	//#endregion
+	//#region Beneath Crops
+
+	// Peanut
+	event.create('tfg:peanut', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:peanut_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:peanut_seeds')
+		.food('tfg:peanut_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Cassava
+	event.create('tfg:cassava', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:cassava_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:cassava_seeds')
+		.food('tfg:cassava_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Beans
+	event.create('tfg:beans', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.POTASSIUM)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.productItem(product => {
+			product.food(food => {
+				food.hunger(4)
+				food.saturation(1)
+			})
+		})
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:beans_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:beans_seeds')
+		.food('tfg:beans_product')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	// Ghost Pepper
+	event.create('tfg:ghost_pepper', 'tfc:crop')
+		.mapColor('plant')
+		.soundType('crop')
+		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
+		.stages(5)
+		.hardness(0.4)
+		.tagBlock('minecraft:mineable/hoe')
+		.existingProductItem('beneath:ghost_pepper')
+		.deadBlock(dead => {
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
+			dead.box(2, 0, 2, 14, 6, 14)
+		})
+	event.create('tfg:ghost_pepper_wild', 'tfc:wild_crop')
+		.type('default')
+		.soundType('crop')
+		.seeds('tfg:ghost_pepper_seeds')
+		.food('beneath:ghost_pepper')
+		.hardness(0.2)
+		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:can_be_snow_piled')
+		.tagItem('c:hidden_from_recipe_viewers')
+
+	//#endregion
+	//#region Mars Crops
+
+	// Amber Root
 	event.create('betterend:amber_root', 'tfc:crop')
 		.mapColor('color_orange')
 		.soundType('crop')
@@ -125,7 +346,6 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
-
 	event.create('betterend:amber_root_wild', 'tfc:wild_crop')
 		.type('default')
 		.soundType('crop')
@@ -137,7 +357,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-
+	// Blossom Berry
 	event.create('betterend:blossom_berry', 'tfc:crop')
 		.mapColor('color_pink')
 		.soundType('crop')
@@ -157,7 +377,6 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 			dead.box(2, 0, 2, 14, 9, 14)
 		})
-
 	event.create('betterend:blossom_berry_wild', 'tfc:wild_crop')
 		.type('default')
 		.soundType('crop')
@@ -169,7 +388,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-
+	// Cave Pumpkin
 	event.create('betterend:cave_pumpkin')
 		.mapColor('color_red')
 		.soundType('cherry_wood')
@@ -201,7 +420,6 @@ const registerTFGCrops = (event) => {
 		.textureAt(2, "betterend:block/cave_pumpkin_stem_2")
 		.textureAt(3, "betterend:block/cave_pumpkin_stem_3")
 		.texture("side", "betterend:block/cave_pumpkin_stem_3_side")
-
 	event.create('betterend:cave_pumpkin_wild', 'tfc:wild_crop')
 		.type('spreading')
 		.soundType('crop')
@@ -213,7 +431,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-
+	// Chorus Mushroom
 	event.create('betterend:chorus_mushroom', 'tfc:crop')
 		.mapColor('color_purple')
 		.translationKey('block.betterend.chorus_mushroom')
@@ -237,7 +455,6 @@ const registerTFGCrops = (event) => {
 			dead.soundType('nether_wart')
 			dead.tagBlock('minecraft:mineable/hoe')
 		})
-
     event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
         .type('default')
 		.box(2, 0, 2, 14, 4, 14)
@@ -251,7 +468,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-
+	// Shadow Berry
 	event.create('betterend:shadow_berry', 'tfc:crop')
 		.mapColor('color_blue')
 		.soundType('crop')
@@ -273,7 +490,6 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 			dead.box(2, 0, 2, 14, 3, 14)
 		})
-
     event.create('betterend:shadow_berry_wild', 'tfc:wild_crop')
         .type('default')
 		.box(2, 0, 2, 14, 3, 14)
@@ -286,7 +502,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 
-
+	// Bolux Mushroom
 	event.create('betterend:bolux_mushroom', 'tfc:crop')
 		.mapColor('color_orange')
 		.soundType('nether_wart')
@@ -309,7 +525,6 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 			dead.box(2, 0, 2, 14, 5, 14)
 		})
-
     event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')
 		.box(2, 0, 2, 14, 5, 14)
 		.type('default')
@@ -321,4 +536,6 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
+
+	//#endregion
 }

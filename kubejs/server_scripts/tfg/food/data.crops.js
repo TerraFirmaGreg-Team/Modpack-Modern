@@ -3,7 +3,8 @@
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGCropRanges(event) {
-	// Earth
+	//#region Earth
+
 	event.climateRange((climate) => {
 		climate.minHydration(20);
 		climate.maxHydration(80);
@@ -31,7 +32,75 @@ function registerTFGCropRanges(event) {
 		climate.temperatureWiggle(3);
 	}, "tfg:flax");
 
-	// Mars
+	event.climateRange((climate) => {
+		climate.minHydration(15);
+		climate.maxHydration(65);
+		climate.minTemperature(-20);
+		climate.maxTemperature(20);
+		climate.hydrationWiggle(7);
+		climate.temperatureWiggle(2);
+	}, "tfg:radish");
+
+	event.climateRange((climate) => {
+		climate.minHydration(50);
+		climate.maxHydration(100);
+		climate.minTemperature(-20);
+		climate.maxTemperature(18);
+		climate.hydrationWiggle(7);
+		climate.temperatureWiggle(3);
+	}, "tfg:lentil");
+
+	event.climateRange((climate) => {
+		climate.minHydration(70);
+		climate.maxHydration(100);
+		climate.minTemperature(5);
+		climate.maxTemperature(40);
+		climate.hydrationWiggle(6.5);
+		climate.temperatureWiggle(2);
+	}, "tfg:cucumber");
+
+	//#endregion
+	//#region Beneath
+
+	event.climateRange((climate) => {
+		climate.minHydration(20);
+		climate.maxHydration(80);
+		climate.minTemperature(10);
+		climate.maxTemperature(80);
+		climate.hydrationWiggle(7.5);
+		climate.temperatureWiggle(5.5);
+	}, "tfg:peanut");
+
+	event.climateRange((climate) => {
+		climate.minHydration(50);
+		climate.maxHydration(100);
+		climate.minTemperature(10);
+		climate.maxTemperature(80);
+		climate.hydrationWiggle(7.5);
+		climate.temperatureWiggle(5.5);
+	}, "tfg:cassava");
+
+	event.climateRange((climate) => {
+		climate.minHydration(20);
+		climate.maxHydration(80);
+		climate.minTemperature(10);
+		climate.maxTemperature(80);
+		climate.hydrationWiggle(7.5);
+		climate.temperatureWiggle(5.5);
+	}, "tfg:beans");
+
+	event.climateRange((climate) => {
+		climate.minHydration(20);
+		climate.maxHydration(80);
+		climate.minTemperature(10);
+		climate.maxTemperature(80);
+		climate.hydrationWiggle(7.5);
+		climate.temperatureWiggle(5.5);
+	}, "tfg:ghost_pepper");
+
+	//#endregion
+	//#region Mars
+	
 	event.climateRange((climate) => {
 		climate.minHydration(0);
 		climate.maxHydration(40);
@@ -85,4 +154,6 @@ function registerTFGCropRanges(event) {
 		climate.hydrationWiggle(7.5);
 		climate.temperatureWiggle(5.5);
 	}, "betterend:shadow_berry");
+
+	//#endregion
 }
