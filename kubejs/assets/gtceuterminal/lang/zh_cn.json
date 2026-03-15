@@ -1,0 +1,17 @@
+{
+  "itemGroup.gtceuterminal": "格雷科技社区版终端",
+
+  "item.gtceuterminal.multi_structure_manager": "多方块结构管理器",
+  "item.gtceuterminal.schematic_interface": "结构蓝图接口",
+  "item.gtceuterminal.dismantler": "结构拆卸器",
+
+  "item.gtceuterminal.terminal.success": "多方块结构建造成功",
+  "item.gtceuterminal.terminal.failed": "多方块结构建造失败",
+  "item.gtceuterminal.terminal.cooldown": "终端冷却中",
+  "item.gtceuterminal.terminal.not_controller": "不是多方块控制器",
+  "item.gtceuterminal.terminal.already_formed": "多方块结构已成型",
+
+  "item.gtceuterminal.multi_structure_manager.tooltip": "管理与升级附近的多方块结构",
+  "item.gtceuterminal.schematic_interface.tooltip": "复制与粘贴多方块结构蓝图",
+  "item.gtceuterminal.dismantler.tooltip": "拆卸多方块结构并返还组件"
+}

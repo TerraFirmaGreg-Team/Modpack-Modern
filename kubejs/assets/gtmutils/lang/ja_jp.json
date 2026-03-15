@@ -1,0 +1,24 @@
+{
+  "block.gtmutils.ev_64a_energy_converter": "§5EV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.hv_64a_energy_converter": "§6HV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.iv_64a_energy_converter": "§9IV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.luv_64a_energy_converter": "§dLuV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.lv_64a_energy_converter": "§7LV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.max_64a_energy_converter": "§c§lMAX§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.mv_64a_energy_converter": "§bMV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.opv_64a_energy_converter": "§9§lOpV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.sterile_cleaning_maintenance_hatch": "滅菌洗浄メンテナンスハッチ",
+  "block.gtmutils.uev_64a_energy_converter": "§aUEV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.uhv_64a_energy_converter": "§4UHV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.uiv_64a_energy_converter": "§2UIV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.ulv_64a_energy_converter": "§8ULV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.uv_64a_energy_converter": "§3UV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.uxv_64a_energy_converter": "§eUXV§r 64§eA§rエネルギー変換器",
+  "block.gtmutils.zpm_64a_energy_converter": "§cZPM§r 64§eA§rエネルギー変換器",
+  "item.gtmutils.omnibreaker": "オムニブレイカー",
+  "itemGroup.gtmutils.creative_tab": "GregTech Modern Utilities",
+  "tooltip.omnibreaker.can_break_anything": "オムニブレイカーは何でも即座に採掘可能!",
+  "tooltip.omnibreaker.charge_status": "エネルギー: %s EU / %s EU",
+  "tooltip.omnibreaker.right_click_function": "右クリックで個々のブロックを破壊可能。"
+}
+

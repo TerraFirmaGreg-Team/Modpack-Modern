@@ -1,0 +1,25 @@
+{
+  "block.create_factory_logistics.factory_fluid_gauge": "工厂流体仪表",
+  "block.create_factory_logistics.jar_packager": "装罐机",
+  "block.create_factory_logistics.network_link": "网络链接站",
+  "entity.create_factory_logistics.jar": "流体罐",
+  "item.create_factory_logistics.fluid_mechanism": "流体构件",
+  "item.create_factory_logistics.incomplete_fluid_mechanism": "流体构件（半成品）",
+  "item.create_factory_logistics.jar": "铜罐",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "机械动力：流体物流",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "按住 Alt 以添加物品内含的流体",
+  "itemGroup.create_factory_logistics.base": "机械动力：流体物流",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "检测类型：",
+  "create_factory_logistics.gui.ingredient_type.fluid": "流体",
+  "create_factory_logistics.gui.ingredient_type.item": "物品",
+  "create_factory_logistics.gui.network_link.mode": "信号来源",
+  "create_factory_logistics.gui.network_link.mode.stored": "在仓库中",
+  "create_factory_logistics.gui.network_link.mode.promised": "拥有承诺",
+  "create_factory_logistics.gui.network_link.mode.all": "在仓库中或拥有承诺",
+  "create_factory_logistics.ponder.mixer_upkeep.header": "使用网络链接站控制燃料的补充",
+  "create_factory_logistics.ponder.mixer_upkeep.text_1": "网络链接站需要被放置在一个可以读取容器内存量的方块上，例如存量转信器",
+  "create_factory_logistics.ponder.mixer_upkeep.text_2": "这样，烈焰人燃烧室只有在需要的时候才会被补充燃料",
+  "create_factory_logistics.ponder.mixer_upkeep.text_3": "当订单被下达，网络链接站将读取新的状态并做出反应",
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "放置要监测的流体"
+}
+
