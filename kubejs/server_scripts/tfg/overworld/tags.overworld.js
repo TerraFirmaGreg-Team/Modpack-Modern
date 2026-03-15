@@ -38,6 +38,11 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:anemone_plantable_on', '#forge:gravel');
 	event.add('tfg:anemone_plantable_on', '#minecraft:sand');
 	event.add('tfg:anemone_plantable_on', '#forge:sandstone');
+
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_green');
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_purple');
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_orange');
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');
 }
 
 function registerTFGOverworldBiomeTags(event) {
