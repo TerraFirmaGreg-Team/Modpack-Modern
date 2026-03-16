@@ -34,6 +34,9 @@ function registerTFGStoneItemTags(event) {
 			}
 			addToTfcTag(rock.raw.block);
 			addToMaterialTag(material, rock.raw.block);
+			if (rock.brick == null && rock.stonecutterTag != null) {
+				event.add(rock.stonecutterTag, rock.raw.block);
+			}
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
@@ -86,6 +89,9 @@ function registerTFGStoneItemTags(event) {
 			event.add('tfc:rock/bricks', rock.bricks.block);
 			addToTfcTag(rock.bricks.block);
 			addToMaterialTag(material, rock.bricks.block);
+			if (rock.stonecutterTag != null) {
+				event.add(rock.stonecutterTag, rock.bricks.block);
+			}
 
 			SHAPES.forEach(shape => {
 				if (rock.bricks[shape] != null) {
@@ -169,7 +175,6 @@ function registerTFGStoneItemTags(event) {
 			addToMaterialTag(material, rock.chiseled.block);
 			if (rock.stonecutterTag != null) {
 				event.add(rock.stonecutterTag, rock.chiseled.block);
-				addToMaterialTag(material, rock.chiseled.block);
 			}
 		}
 
