@@ -26,6 +26,7 @@ files:
     # ** MAKE SURE YOU ADD THE APPROPRIATE CUSTOM LANGUAGE MAPPING FOR THE PLACEHOLDER. **
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
     update_option: "update_as_unapproved"
+    type: "json"
     #dest: "/messages.%file_extension%"
 
     languages_mapping:

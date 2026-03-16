@@ -27,6 +27,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:polycaprolactam_fabric'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.polycaprolactam'))
 	})
+	event.addAdvanced(['#forge:repair_kit_materials'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.repair_kits'))
+	})
 
 	//#region Multiblock Controler Tooltip
 

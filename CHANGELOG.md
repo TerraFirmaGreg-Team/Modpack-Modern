@@ -2,18 +2,26 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+### Translation updates
+
+## [0.11.27] - 13-03-2026
+### Changes
 - Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
+- Added a new Large Steam Turbine that has a base production of 2048 EU/t but can't accept higher Rotors than EV @TomPlop
 - Removed vanilla advancements @Mqrius
 - Added copper spindle, with much more durability than the clay one (#3345) @DrEthan77
 - Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
 - New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
 - TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
-- Recipe of Steel Pipe Casing and Magnalium Turbine Casing changed @TomPlop
-- Added the new Large Steam Turbine that has a base production of 2048 Eu/t but can't accept higher Rotors that EV @TomPlop
-- Added the Repair Kit so you can finally repair your Gregtech Tools @TomPlop
+- Changed the recipe of Steel Pipe Casing and Magnalium Turbine Casing @TomPlop
+- Added a Repair Kit item so you can finally repair your GregTech Tools! Recipes for armor and other things coming soon. @TomPlop @Redeix
 - Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
 - Added a 16A HV Dynamo Hatch @TomPlop
+- Adjusted how fast the player heats up and cools down @Pyritie
+- Lowered the fluid temperatures of polysilicon, bakelite, and phenolic resin @Pyritie
 ### Bug fixes
+- Fixed crashes with the Greate encased fan @Electrolyte220
 - Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
 - Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
 - Fixed livestock breeding failing often @Mqrius
@@ -23,7 +31,10 @@
 - Fixed a ton of log spam relating to the new steam n rails update (#3361) @SakuraKitsurugi 
 - Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
 - Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
+- Maybe fixed being able to use shipping containers on trains (#3402) @Pyritie
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis
 
 ## [0.11.26] - 10-03-2026
 ### Changes

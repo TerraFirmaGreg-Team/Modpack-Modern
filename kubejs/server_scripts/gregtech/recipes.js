@@ -421,13 +421,17 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify HV Dynamo Hatch to be craftable before Cleanroom
 
-	event.replaceInput({ id: 'gtceu:assembler/dynamo_hatch_hv' }, 'gtceu:lpic_chip', 'gtceu:ulpic_chip')
+	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
+		.itemInputs('#forge:rods/magnetic_steel', '#forge:fine_wires/black_steel')
+		.itemOutputs('gtceu:hv_voltage_coil')
+		.circuit(1)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
 
-	global.modifyRecipe(event, "gtceu:assembler/dynamo_hatch_hv", {
-        newId: "gtceu:assembler/dynamo_hatch_hv",
-        duration: 20 * 10,
-        eut: GTValues.VA[GTValues.MV]
-    })
-
-	event.replaceInput({ id: 'gtceu:assembler/assembler/dynamo_hatch_hv' }, 'gtceu:lpic_chip', 'gtceu:ulpic_chip')
+	event.recipes.gtceu.assembler('gtceu:dynamo_hatch_hv')
+		.itemInputs('gtceu:hv_machine_hull', '2x #forge:springs/gold', '2x gtceu:ulpic_chip', 'gtceu:hv_voltage_coil')
+		.inputFluids('gtceu:sodium_potassium 1000')
+		.itemOutputs('gtceu:hv_energy_output_hatch')
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
 }

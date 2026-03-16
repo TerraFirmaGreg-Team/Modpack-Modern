@@ -5,238 +5,172 @@
 
 function registerTFGRepairKitRecipes(event) {
 
-    const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver'];
-    const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar'];
-    const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer'];
-    const ONLY_COLORED_TOOLS = ['buzzsaw'];
+	const ELECTRIC_TOOLS = ['drill', 'buzzsaw', 'wrench', 'chainsaw', 'wire_cutter', 'screwdriver'];
+	const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar'];
+	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer'];
+	const ONLY_COLORED_TOOLS = ['buzzsaw'];
 
-    function repairElectricTools(namespace, tierMaterial, repairKitMaterial, repairPercent) {
-        ELECTRIC_TOOLS.forEach(tool => {
-            let toolId = `${namespace}:${tierMaterial}_${repairKitMaterial}_${tool}`;
-            let repairKitId = `${namespace}:repair_kit_${repairKitMaterial}`;
-            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
-                event.recipes.tfc.no_remainder_shapeless_crafting(
-                    event.shapeless(
-                        toolId,
-                        [
-                            toolId,
-                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
-                        ]
-                    )
-                );
-            }
-        });
-    }
+	function repairElectricTools(namespace, tierMaterial, repairKitMaterial, repairPercent) {
+		ELECTRIC_TOOLS.forEach(tool => {
+			let toolId = `${namespace}:${tierMaterial}_${repairKitMaterial}_${tool}`;
+			let repairKitId = `${namespace}:repair_kit_${repairKitMaterial}`;
+			if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+				event.recipes.tfc.no_remainder_shapeless_crafting(
+					event.shapeless(
+						toolId,
+						[
+							toolId,
+							Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+						]
+					)
+				);
+			}
+		});
+	}
 
-    function repairManualTools(namespace, material, repairPercent) {
-        MANUAL_TOOLS.forEach(tool => {
-            let toolId = `${namespace}:${material}_${tool}`;
-            let repairKitId = `${namespace}:repair_kit_${material}`;
-            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
-                event.recipes.tfc.no_remainder_shapeless_crafting(
-                    event.shapeless(
-                        toolId,
-                        [
-                            toolId,
-                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
-                        ]
-                    )
-                );
-            }
-        });
-    }
+	function repairManualTools(namespace, material, repairPercent) {
+		MANUAL_TOOLS.forEach(tool => {
+			let toolId = `${namespace}:${material}_${tool}`;
+			let repairKitId = `${namespace}:repair_kit_${material}`;
+			if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+				event.recipes.tfc.no_remainder_shapeless_crafting(
+					event.shapeless(
+						toolId,
+						[
+							toolId,
+							Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+						]
+					)
+				);
+			}
+		});
+	}
 
-    function repairOnlyManualTools(namespace, material, repairPercent) {
-        ONLY_MANUAL_TOOLS.forEach(tool => {
-            let toolId = `${namespace}:${material}_${tool}`;
-            let repairKitId = `${namespace}:repair_kit_${material}`;
-            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
-                event.recipes.tfc.no_remainder_shapeless_crafting(
-                    event.shapeless(
-                        toolId,
-                        [
-                            toolId,
-                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
-                        ]
-                    )
-                );
-            }
-        });
-    }
-
-
-
-    function repairColoredSteel(namespace, material, repairPercent) {
-        ONLY_COLORED_TOOLS.forEach(tool => {
-            let toolId = `${namespace}:${material}_${tool}`;
-            let repairKitId = `${namespace}:repair_kit_${material}`;
-            if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
-                event.recipes.tfc.no_remainder_shapeless_crafting(
-                    event.shapeless(
-                        toolId,
-                        [
-                            toolId,
-                            Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
-                        ]
-                    )
-                );
-            }
-        });
-    }
-
-    // 'namespace':'tier if electric'_material' Amount repaired in percentage
-
-    repairColoredSteel('gtceu', 'red_steel', 0.25);
-    repairColoredSteel('gtceu', 'blue_steel', 0.25);
-
-    repairElectricTools('tfg', 'hv', 'boron_carbide', 0.25);
-    repairElectricTools('tfg', 'mv', 'diamond_tipped_mo_50_re', 0.25);
-    repairElectricTools('gtceu', 'iv', 'hsse', 0.25);
-    repairElectricTools('gtceu', 'iv', 'naquadah_alloy', 0.25);
-    repairElectricTools('gtceu', 'iv', 'duranium', 0.25);
-    repairElectricTools('gtceu', 'ev', 'ostrum_iodide', 0.25);
-    repairElectricTools('gtceu', 'ev', 'tungsten_carbide', 0.25);
-    repairElectricTools('gtceu', 'hv', 'ultimet', 0.25);
-    repairElectricTools('gtceu', 'lv', 'blue_steel', 0.25);
-    repairElectricTools('gtceu', 'lv', 'red_steel', 0.25);
-    repairElectricTools('gtceu', 'mv', 'vanadium_steel', 0.25);
-
-    repairManualTools('tfg', 'boron_carbide', 0.25);
-    repairManualTools('tfg', 'diamond_tipped_mo_50_re', 0.25);
-    repairManualTools('gtceu', 'hsse', 0.25);
-    repairManualTools('gtceu', 'naquadah_alloy', 0.25);
-    repairManualTools('gtceu', 'duranium', 0.25);
-    repairManualTools('gtceu', 'ostrum_iodide', 0.25);
-    repairManualTools('gtceu', 'tungsten_carbide', 0.25);
-    repairManualTools('gtceu', 'ultimet', 0.25);
-    repairManualTools('gtceu', 'blue_steel', 0.25);
-    repairManualTools('gtceu', 'red_steel', 0.25);
-    repairManualTools('gtceu', 'vanadium_steel', 0.25);
-
-    repairOnlyManualTools('gtceu', 'black_bronze', 0.25);
-    repairOnlyManualTools('gtceu', 'black_steel', 0.25);
-    repairOnlyManualTools('gtceu', 'steel', 0.25);
-    repairOnlyManualTools('gtceu', 'wrought_iron', 0.25);
-    repairOnlyManualTools('gtceu', 'bronze', 0.25);
-    repairOnlyManualTools('gtceu', 'copper', 0.25);
-    repairOnlyManualTools('gtceu', 'bismuth_bronze', 0.25);
-
-    repairOnlyManualTools('gtceu', 'blue_steel', 0.25);
-    repairOnlyManualTools('gtceu', 'red_steel', 0.25);
-
-    repairManualTools('gtceu', 'black_bronze', 0.25);
-    repairManualTools('gtceu', 'black_steel', 0.25);
-    repairManualTools('gtceu', 'steel', 0.25);
-    repairManualTools('gtceu', 'wrought_iron', 0.25);
-    repairManualTools('gtceu', 'bronze', 0.25);
-    repairManualTools('gtceu', 'copper', 0.25);
-    repairManualTools('gtceu', 'bismuth_bronze', 0.25);
-
-    //#region Generate recipe for Repair Kit
-
-    function materialUnfiredRepairKit(namespace, material) {
-        event.shapeless(
-            Item.of(`${namespace}:unfired_repair_kit_${material}`, 16), // arg 1: output
-            [
-                'gtceu:brick_wooden_form',
-                '#tfg:stone_dusts',
-                'minecraft:clay_ball',
-                `#forge:dusts/${material}`
-            ]
-            )
-
-        event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_${namespace}_${material}`)
-            .notConsumable('gtceu:brick_wooden_form')
-            .itemInputs(
-                '#tfg:stone_dusts',
-                'minecraft:clay_ball',
-                `#forge:dusts/${material}`)
-            .itemOutputs(Item.of(`${namespace}:unfired_repair_kit_${material}`, 16))
-            .duration(20 * 5)
-            .EUt(GTValues.VHA[GTValues.LV])
-            .circuit(7)
-    }
-
-    materialUnfiredRepairKit('tfg', 'boron_carbide');
-    materialUnfiredRepairKit('gtceu', 'hsse');
-    materialUnfiredRepairKit('gtceu', 'naquadah_alloy');
-    materialUnfiredRepairKit('gtceu', 'duranium');
-    materialUnfiredRepairKit('gtceu', 'ostrum_iodide');
-    materialUnfiredRepairKit('gtceu', 'tungsten_carbide');
-    materialUnfiredRepairKit('gtceu', 'ultimet');
-    materialUnfiredRepairKit('gtceu', 'blue_steel');
-    materialUnfiredRepairKit('gtceu', 'red_steel');
-    materialUnfiredRepairKit('gtceu', 'vanadium_steel');
-    materialUnfiredRepairKit('gtceu', 'black_bronze');
-    materialUnfiredRepairKit('gtceu', 'black_steel');
-    materialUnfiredRepairKit('gtceu', 'steel');
-    materialUnfiredRepairKit('gtceu', 'wrought_iron');
-    materialUnfiredRepairKit('gtceu', 'bronze');
-    materialUnfiredRepairKit('gtceu', 'copper');
-    materialUnfiredRepairKit('gtceu', 'bismuth_bronze');
-
-    event.recipes.gtceu.assembler(`tfg:unfired_repair_kit_tfg_unfired_repair_kit_diamond_tipped_mo_50_re}`)
-            .notConsumable('gtceu:brick_wooden_form')
-            .itemInputs(
-                '#tfg:stone_dusts',
-                'minecraft:clay_ball',
-                `#forge:ingots/diamond_tipped_mo_50_re`)
-            .itemOutputs(Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16))
-            .duration(20 * 5)
-            .EUt(GTValues.VHA[GTValues.LV])
-            .circuit(7)
-
-    event.shapeless(
-            Item.of(`tfg:unfired_repair_kit_diamond_tipped_mo_50_re`, 16), // arg 1: output
-            [
-                'gtceu:brick_wooden_form',
-                '#tfg:stone_dusts',
-                'minecraft:clay_ball',
-                `#forge:ingots/diamond_tipped_mo_50_re`
-            ]
-            )
+	function repairOnlyManualTools(namespace, material, repairPercent) {
+		ONLY_MANUAL_TOOLS.forEach(tool => {
+			let toolId = `${namespace}:${material}_${tool}`;
+			let repairKitId = `${namespace}:repair_kit_${material}`;
+			if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+				event.recipes.tfc.no_remainder_shapeless_crafting(
+					event.shapeless(
+						toolId,
+						[
+							toolId,
+							Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+						]
+					)
+				);
+			}
+		});
+	}
 
 
-    function materialPrimalKit(namespace, repairKitMaterial) {
-    event.recipes.tfc.heating(`${namespace}:unfired_repair_kit_${repairKitMaterial}`, 1399)
-		.resultItem(`${namespace}:repair_kit_${repairKitMaterial}`)
-        .id(`tfg:heating/repair_kit_${namespace}_${repairKitMaterial}`)
-    }
 
-    materialPrimalKit('gtceu', 'black_bronze');
-    materialPrimalKit('gtceu', 'black_steel');
-    materialPrimalKit('gtceu', 'steel');
-    materialPrimalKit('gtceu', 'wrought_iron');
-    materialPrimalKit('gtceu', 'bronze');
-    materialPrimalKit('gtceu', 'copper');
-    materialPrimalKit('gtceu', 'bismuth_bronze');
-    materialPrimalKit('gtceu', 'blue_steel');
-    materialPrimalKit('gtceu', 'red_steel');
+	function repairColoredSteel(namespace, material, repairPercent) {
+		ONLY_COLORED_TOOLS.forEach(tool => {
+			let toolId = `${namespace}:${material}_${tool}`;
+			let repairKitId = `${namespace}:repair_kit_${material}`;
+			if (!Item.of(toolId).isEmpty() && !Item.of(repairKitId).isEmpty()) {
+				event.recipes.tfc.no_remainder_shapeless_crafting(
+					event.shapeless(
+						toolId,
+						[
+							toolId,
+							Item.of(repairKitId, `{RepairPercent:${repairPercent}f}`)
+						]
+					)
+				);
+			}
+		});
+	}
 
-    function materialElectricKit(namespace, repairKitMaterial) {
-    event.smelting(
-        Item.of(`${namespace}:repair_kit_${repairKitMaterial}`),
-        `${namespace}:unfired_repair_kit_${repairKitMaterial}`
-    )
-    .id(`tfg:smelting/repair_kit_${namespace}_${repairKitMaterial}`)
-    }
+	// 'namespace':'tier if electric'_material' Amount repaired in percentage
 
-    materialElectricKit('tfg', 'boron_carbide');
-    materialElectricKit('tfg', 'diamond_tipped_mo_50_re');
-    materialElectricKit('gtceu', 'hsse');
-    materialElectricKit('gtceu', 'naquadah_alloy');
-    materialElectricKit('gtceu', 'duranium');
-    materialElectricKit('gtceu', 'ostrum_iodide');
-    materialElectricKit('gtceu', 'tungsten_carbide');
-    materialElectricKit('gtceu', 'ultimet');
-    materialElectricKit('gtceu', 'blue_steel');
-    materialElectricKit('gtceu', 'red_steel');
-    materialElectricKit('gtceu', 'vanadium_steel');
-    materialElectricKit('gtceu', 'black_bronze');
-    materialElectricKit('gtceu', 'black_steel');
-    materialElectricKit('gtceu', 'steel');
-    materialElectricKit('gtceu', 'wrought_iron');
-    materialElectricKit('gtceu', 'bronze');
-    materialElectricKit('gtceu', 'copper');
-    materialElectricKit('gtceu', 'bismuth_bronze');
+	repairColoredSteel('gtceu', 'red_steel', 0.25);
+	repairColoredSteel('gtceu', 'blue_steel', 0.25);
+
+	repairElectricTools('tfg', 'hv', 'boron_carbide', 0.25);
+	repairElectricTools('tfg', 'mv', 'diamond_tipped_mo_50_re', 0.25);
+	repairElectricTools('gtceu', 'iv', 'hsse', 0.25);
+	repairElectricTools('gtceu', 'iv', 'naquadah_alloy', 0.25);
+	repairElectricTools('gtceu', 'iv', 'duranium', 0.25);
+	repairElectricTools('gtceu', 'ev', 'ostrum_iodide', 0.25);
+	repairElectricTools('gtceu', 'ev', 'tungsten_carbide', 0.25);
+	repairElectricTools('gtceu', 'hv', 'ultimet', 0.25);
+	repairElectricTools('gtceu', 'lv', 'blue_steel', 0.25);
+	repairElectricTools('gtceu', 'lv', 'red_steel', 0.25);
+	repairElectricTools('gtceu', 'mv', 'vanadium_steel', 0.25);
+
+	repairManualTools('tfg', 'boron_carbide', 0.25);
+	repairManualTools('tfg', 'diamond_tipped_mo_50_re', 0.25);
+	repairManualTools('gtceu', 'hsse', 0.25);
+	repairManualTools('gtceu', 'naquadah_alloy', 0.25);
+	repairManualTools('gtceu', 'duranium', 0.25);
+	repairManualTools('gtceu', 'ostrum_iodide', 0.25);
+	repairManualTools('gtceu', 'tungsten_carbide', 0.25);
+	repairManualTools('gtceu', 'ultimet', 0.25);
+	repairManualTools('gtceu', 'blue_steel', 0.25);
+	repairManualTools('gtceu', 'red_steel', 0.25);
+	repairManualTools('gtceu', 'vanadium_steel', 0.25);
+
+	repairOnlyManualTools('gtceu', 'black_bronze', 0.25);
+	repairOnlyManualTools('gtceu', 'black_steel', 0.25);
+	repairOnlyManualTools('gtceu', 'steel', 0.25);
+	repairOnlyManualTools('gtceu', 'wrought_iron', 0.25);
+	repairOnlyManualTools('gtceu', 'bronze', 0.25);
+	repairOnlyManualTools('gtceu', 'copper', 0.25);
+	repairOnlyManualTools('gtceu', 'bismuth_bronze', 0.25);
+
+	repairOnlyManualTools('gtceu', 'blue_steel', 0.25);
+	repairOnlyManualTools('gtceu', 'red_steel', 0.25);
+
+	repairManualTools('gtceu', 'black_bronze', 0.25);
+	repairManualTools('gtceu', 'black_steel', 0.25);
+	repairManualTools('gtceu', 'steel', 0.25);
+	repairManualTools('gtceu', 'wrought_iron', 0.25);
+	repairManualTools('gtceu', 'bronze', 0.25);
+	repairManualTools('gtceu', 'copper', 0.25);
+	repairManualTools('gtceu', 'bismuth_bronze', 0.25);
+
+	// Generate recipe for Repair Kit
+
+	forEachMaterial(material => {
+		if (!material.hasProperty(PropertyKey.TOOL))
+			return;
+
+		var unfiredKit = ChemicalHelper.get(TFGTagPrefix.unfiredRepairKit, material, 1);
+		var firedKit = ChemicalHelper.get(TFGTagPrefix.repairKit, material, 1);
+
+		if (unfiredKit.isEmpty() || firedKit.isEmpty())
+			return;
+
+		let materialInput = ChemicalHelper.get(material == GTMaterials.get('tfg:diamond_tipped_mo_50_re')
+			? TagPrefix.ingot : TagPrefix.dust, material, 1);
+		
+		event.shapeless(unfiredKit.withCount(16), [
+			'gtceu:brick_wooden_form',
+			'#tfg:stone_dusts',
+			'tfc:ceramic/unfired_brick',
+			materialInput
+		]).id(`tfg:shapeless/unfired_repair_kit_${material.getName()}`)
+
+		event.recipes.gtceu.forming_press(`tfg:unfired_repair_kit_${material.getName()}`)
+			.notConsumable('gtceu:ingot_casting_mold')
+			.itemInputs(
+				'#tfg:stone_dusts',
+				['minecraft:clay_ball', 'tfc:ceramic/unfired_brick'],
+				materialInput)
+			.itemOutputs(unfiredKit.withCount(16))
+			.duration(20 * 5)
+			.EUt(GTValues.VHA[GTValues.LV])
+
+		event.smelting(firedKit, unfiredKit)
+			.id(`tfg:smelting/repair_kit_${material.getName()}`)
+
+		if (material.hasProperty(TFGPropertyKey.TFC_PROPERTY)) {
+			event.recipes.tfc.heating(unfiredKit, 1399)
+				.resultItem(firedKit)
+				.id(`tfg:heating/repair_kit_${material.getName()}`)
+		}
+	})
 };
