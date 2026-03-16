@@ -11,7 +11,7 @@
   "itemGroup.create_factory_logistics.base": "机械动力：流体物流",
   "create_factory_logistics.gui.ingredient_type_qualified_item": "检测类型：",
   "create_factory_logistics.gui.ingredient_type.fluid": "流体",
-  "create_factory_logistics.gui.ingredient_type.item": "物品",
+  "create_factory_abstractions.gui.ingredient_type.item": "物品",
   "create_factory_logistics.gui.network_link.mode": "信号来源",
   "create_factory_logistics.gui.network_link.mode.stored": "在仓库中",
   "create_factory_logistics.gui.network_link.mode.promised": "拥有承诺",
@@ -20,6 +20,11 @@
   "create_factory_logistics.ponder.mixer_upkeep.text_1": "网络链接站需要被放置在一个可以读取容器内存量的方块上，例如存量转信器",
   "create_factory_logistics.ponder.mixer_upkeep.text_2": "这样，烈焰人燃烧室只有在需要的时候才会被补充燃料",
   "create_factory_logistics.ponder.mixer_upkeep.text_3": "当订单被下达，网络链接站将读取新的状态并做出反应",
-  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "放置要监测的流体"
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "放置要监测的流体",
+  "entity.create_factory_logistics.composite_package": "组合包裹",
+  "create.item_attributes.is_fluid": "是%1$s",
+  "create.item_attributes.is_fluid.inverted": "不是%1$s",
+  "create.item_attributes.is_fluid_no_nbt": "是%1$s（无NBT）",
+  "create.item_attributes.is_fluid_no_nbt.inverted": "不是%1$s（无NBT）"
 }
 
