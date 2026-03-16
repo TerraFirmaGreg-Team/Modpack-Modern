@@ -1,5 +1,5 @@
 {
-	"biome.tfg.earth/badlands": "恶地",
+	"biome.tfg.earth/badlands": "恶地\n",
 	"biome.tfg.earth/canyons": "峡谷",
 	"biome.tfg.earth/low_canyons": "低地峡谷",
 	"biome.tfg.earth/plains": "平原",
@@ -4647,7 +4647,7 @@
 	"quests.steam_age.large_bronze_boiler.subtitle": "大规模生产蒸汽",
 	"quests.steam_age.large_bronze_boiler.desc.1": "&e大型青铜锅炉&r是用于生产&b蒸汽&r的强大&b多方块结构&r。起初，它足以驱动&e蒸汽热力离心机&r等机器，但你还可以添加名为&a助燃剂&r的流体来提高锅炉的最高温度。\n\n它是如何工作的？提高&c温度&r会增加蒸汽产量，但会降低&6效率&r。这意味着配方持续时间变短，从而有效增加&8燃料&r消耗。\n\n温度升高时，你的&9水&r消耗也会增加。大多数时候这不是问题，但如果你使用&b蒸馏水&r而非普通水（这会提高蒸汽产量），较高的消耗量可能会成为问题。建议保留一份普通&9水&r作为备用以确保安全。\n\n务必确保锅炉内有水，否则它会&c爆炸&r。",
 	"quests.steam_age.large_bronze_boiler.desc.2": "以下是所有可用&a助燃剂&r及其消耗列表：\n\n- 杂酚油 => 温度提升：&c200&r — 消耗：&b32 mB/s&r — 可用等级：&8ULV&r\n\n- 松脂和枫/桦树汁 => 温度提升：&c200&r — 消耗：&b32 mB/s&r — 可用等级：&8ULV&r\n\n- 橄榄油 => 温度提升：&c400&r — 消耗：&b8 mB/s&r — 可用等级：&8ULV&r\n\n- 木煤气 => 温度提升：&c400&r — 消耗：&b52 mB/s&r — 可用等级：&7LV&r",
-	"quests.steam_age.large_bronze_boiler.desc.3": "&l&3背景知识&r：&r&o在格雷科技现代版中，大型锅炉通常相当简单直接，只是燃烧燃料，没有任何模块化设计。显然，在群峦格雷中我们想增加一点变化，使其更复杂但也更具模块化。&r",
+	"quests.steam_age.large_bronze_boiler.desc.3": "&l&3背景知识&r：&r&o在格雷科技现代版中，大型锅炉通常相当简单直接，只是燃烧燃料，没有任何模块化设计。显然，在群峦格雷中我们想增加一点变化，使其更复杂但也更加模块化。&r",
 	"quests.stone_age": "石器时代",
 	"quests.stone_age.subtitle": "简陋开端",
 	"quests.stone_age.foods.title": "饿了？",
