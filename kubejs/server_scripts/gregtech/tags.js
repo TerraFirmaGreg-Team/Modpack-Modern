@@ -75,6 +75,9 @@ function registerGTCEUItemTags(event) {
         event.add('gtceu:lamps', `gtceu:${color}_lamp`)
 	    event.add('gtceu:lamps', `gtceu:${color}_borderless_lamp`)
     })
+
+    // any rubber plate
+    event.add('tfg:rubber_plates', '#forge:plates/rubber', '#forge:plates/silicone_rubber', '#forge:plates/styrene_butadiene_rubber')
 }
 
 /** @param {TagEvent.Block} event  */

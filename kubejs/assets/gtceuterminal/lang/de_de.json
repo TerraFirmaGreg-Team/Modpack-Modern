@@ -1,0 +1,17 @@
+{
+  "itemGroup.gtceuterminal": "GregTechCEu Terminal",
+
+  "item.gtceuterminal.multi_structure_manager": "Multistruktur-Manager",
+  "item.gtceuterminal.schematic_interface": "Schematik-Interface",
+  "item.gtceuterminal.dismantler": "Demontierer",
+
+  "item.gtceuterminal.terminal.success": "Multiblock erfolgreich aufgebaut",
+  "item.gtceuterminal.terminal.failed": "Multiblock-Aufbau fehlgeschlagen",
+  "item.gtceuterminal.terminal.cooldown": "Terminal hat noch Abklingzeit",
+  "item.gtceuterminal.terminal.not_controller": "Dies ist kein Multiblock-Controller",
+  "item.gtceuterminal.terminal.already_formed": "Multiblock ist bereits vervollständigt",
+
+  "item.gtceuterminal.multi_structure_manager.tooltip": "Verwalte und verbessere nahegelegene Multiblocks",
+  "item.gtceuterminal.schematic_interface.tooltip": "Kopiere und füge Multiblock-Schematiken ein",
+  "item.gtceuterminal.dismantler.tooltip": "Zerlege Multiblocks und erhalte die Komponenten zurück"
+}
