@@ -4,6 +4,9 @@
  * @param {Internal.ItemTooltipEventJS} event 
  */
 const registerTooltips = (event) => {
+
+	registerCropTooltips(event);
+
 	//Your IDE may say that "item" and "advanced" are never used, but they are required! So dont remove them <3
 
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
@@ -546,11 +549,10 @@ const registerTooltips = (event) => {
 	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
 	event.addAdvanced(['#tfg:silk_harvest_ice'], (item, advanced, text) => {
 		const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
-		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
-		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
+		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) !== -1);
+		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) !== -1);
 
-		if(indexOf != -1)
-		{
+		if (indexOf !== -1) {
 			text.remove(keyToRemove);
 			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 		}

@@ -821,7 +821,14 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:seeds/yellow_bell_pepper", output: "tfc:food/yellow_bell_pepper"},
     { input: "tfg:sunflower_seeds", output: "tfg:sunflower_product"},
     { input: "tfg:rapeseed_seeds", output: "tfg:rapeseed_product"},
-    { input: "tfg:flax_seeds", output: "tfg:flax_product"}
+    { input: "tfg:flax_seeds", output: "tfg:flax_product"},
+    { input: "tfg:beans_seeds", output: "tfg:beans_product"},
+    { input: "tfg:radish_seeds", output: "tfg:radish_product"},
+    { input: "tfg:lentil_seeds", output: "tfg:lentil_product"},
+    { input: "tfg:peanut_seeds", output: "tfg:peanut_product"},
+    { input: "tfg:cucumber_seeds", output: "tfg:cucumber_product"},
+    { input: "tfg:cassava_seeds", output: "tfg:cassava_product"},
+    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"}
 ]);
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([

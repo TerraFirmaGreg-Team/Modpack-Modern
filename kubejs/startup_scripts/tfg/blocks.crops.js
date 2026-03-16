@@ -1,5 +1,16 @@
 // Priority: 0
 "use strict";
+/*
+ * Some Crops Are Originally from [TerraFirmaCraft] (https://github.com/TerraFirmaCraft/TerraFirmaCraft)
+ * Licensed under the EUPL, Version 1.2.
+ * You may obtain a copy of the Licence at:
+ * https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
+ * 
+ * Some Crops Are Originally from [Beneath] (https://github.com/eerussianguy/Beneath)
+ * Licensed under the MIT License.
+ * Copyright (c) 2022 eerussianguy
+ * https://github.com/eerussianguy/Beneath/blob/1.21.x/LICENSE
+ */
 
 const registerTFGCrops = (event) => {
 	const $FarmlandBlockEntity = Java.loadClass("net.dries007.tfc.common.blockentities.FarmlandBlockEntity")
@@ -117,6 +128,13 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+			product.tag('tfc:foods/legumes')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -148,6 +166,12 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -171,8 +195,8 @@ const registerTFGCrops = (event) => {
 		.mapColor('plant')
 		.soundType('crop')
 		.nutrient($FarmlandBlockEntity.NutrientType.NITROGEN)
-		.stages(3)
-		.doubleStages(2)
+		.stages(1)
+		.doubleStages(4)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
         .requiresStick(true)
@@ -181,13 +205,17 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
         .deadBlock(dead => {
-            dead.models((variant, m) => {
-                if (variant.stick()) {
-                    m.parent('tfc:block/crop/stick');
-                }
-            })
+			dead.hardness(0.2)
+			dead.soundType('crop')
+			dead.tagBlock('minecraft:mineable/hoe')
         })
 	event.create('tfg:cucumber_wild', 'tfc:wild_crop')
 		.type('double')
@@ -217,6 +245,13 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+			product.tag('tfc:foods/legumes')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -248,6 +283,12 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -279,6 +320,13 @@ const registerTFGCrops = (event) => {
 				food.hunger(4)
 				food.saturation(1)
 			})
+			product.tag('tfc:foods')
+			product.tag('tfc:foods/vegetables')
+			product.tag('tfc:foods/legumes')
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -306,6 +354,10 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.existingProductItem('beneath:ghost_pepper')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
+		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
