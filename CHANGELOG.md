@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- Circuit change for Tier 1 Rocket Fin / ASM Alloy Mixer / Rocket Fin Tier 2 / Rocket Cone Tier 2
 ### Changes
 ### Bug fixes
 ### Translation updates
