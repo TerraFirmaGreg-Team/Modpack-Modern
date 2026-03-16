@@ -409,13 +409,9 @@ function registerTFGRockRecipes(event) {
 		if (rock.stonecutting != null) {
 			rock.stonecutting.forEach(stonecuttingEntry => {
 				changeForms(rockId, rock, stonecuttingEntry);
-				if (rock.isTFC) {
-					// Add a recipe for this stonecutter entry that uses the regular brick
-					let tfcBrick = `tfc:rock/bricks/${rockId}`;
-					let id = linuxUnfucker(`${tfcBrick}_to_${stonecuttingEntry.block}`);
-					event.stonecutting(`${stonecuttingEntry.block}`, tfcBrick)
-						.id(`tfg:stonecutting/${id}`);
-				}
+				let id = linuxUnfucker(`${rock.bricks.block}_to_${stonecuttingEntry.block}`);
+				event.stonecutting(`${stonecuttingEntry.block}`, rock.bricks.block)
+					.id(`tfg:stonecutting/${id}`);
 			})
 		}
 
