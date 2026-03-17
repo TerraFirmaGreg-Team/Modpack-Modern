@@ -12,6 +12,7 @@
 - Fixed the field guide not working @Mqrius
 - Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77
 - Fixed not being able to macerate Raw Suevite @Pyritie
+- Fixed René-41 so it makes twice as much dust in the mixer, but halved the duration of the EBF/cooling recipes and doubled the cost of the foils per coil, so the end result is the same (#3446) @Pyritie
 - Fixed being able to stonecut slabs back into full blocks (#3156) @Pyritie
 - Fixed being able to dupe chorus fruit by repeatedly breaking and placing a chorus flower (#3433) @Pyritie
 - Fixed Keratophyre missing a texture when knapping (#3418) @Pyritie

@@ -66,7 +66,7 @@ function registerTFGMVMaterialRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
 		.itemOutputs(Item.of('tfg:rene_41_dust', 7))
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
-		.duration(20 * 46)
+		.duration(20 * 92)
 		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(4)
 
@@ -74,14 +74,14 @@ function registerTFGMVMaterialRecipes(event) {
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 23)
+		.duration(20 * 11.5)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_bath('tfg:rene_41_cool_down_distilled_water')
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 14)
+		.duration(20 * 7)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	//#region Diamond Tipped Tools custom recipes

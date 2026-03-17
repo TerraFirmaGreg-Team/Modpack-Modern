@@ -79,7 +79,7 @@ function registerTFGCoilRecipes(event) {
 
 	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
 	event.recipes.gtceu.assembler('tfg:coil_kanthal')
-		.itemInputs('8x #forge:double_wires/kanthal', '8x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
+		.itemInputs('8x #forge:double_wires/kanthal', '16x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
 		.inputFluids('gtceu:cobalt 144')
 		.itemOutputs('gtceu:kanthal_coil_block')
 		.duration(20 * 15)
