@@ -155,6 +155,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:clean_water', 'tfc:spring_water')
 
 	event.add('tfg:water_boiler', 'minecraft:water')
+	event.add('tfg:water_boiler_t2', 'gtceu:distilled_water')
 
 	event.add('tfc:any_water', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_ammoniacal_water')

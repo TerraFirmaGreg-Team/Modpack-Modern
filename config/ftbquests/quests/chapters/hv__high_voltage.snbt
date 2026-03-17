@@ -116,8 +116,8 @@
 				type: "item"
 			}]
 			title: "{quests.high_voltage.chem_bath.title}"
-			x: -2.5d
-			y: 0.5d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["52AD30F04DD5A812"]
@@ -202,7 +202,6 @@
 		{
 			dependencies: ["52AD30F04DD5A812"]
 			description: ["{quests.high_voltage.assembler.desc}"]
-			hide_dependency_lines: true
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
 			tasks: [{
@@ -1922,7 +1921,7 @@
 				item: "tfg:copper_bonded_al2o3_pcb"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -1937,6 +1936,44 @@
 			title: "{quests.high_voltage.perlite.title}"
 			x: 17.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["52AD30F04DD5A812"]
+			description: [
+				"{quests.high_voltage.large_steam_turbine.desc}"
+				""
+				"{ \"text\": \"▶▶▶▶▶▶▶\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"20DA81038C507C90\" } }"
+			]
+			icon: "tfg:large_steam_turbine"
+			id: "0278967C0472ECE6"
+			optional: true
+			subtitle: "{quests.high_voltage.large_steam_turbine.subtitle}"
+			tasks: [
+				{
+					id: "2B287AB098A64944"
+					item: "tfg:large_steam_turbine"
+					type: "item"
+				}
+				{
+					id: "0AA564036AD4CC59"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:hv_energy_output_hatch)item(gtceu:hv_energy_output_hatch_4a)item(gtceu:hv_energy_output_hatch_16a))"
+						}
+					}
+					title: "{quests.high_voltage.large_steam_turbine.task}"
+					type: "item"
+				}
+				{
+					id: "6B7F5C0C7C47E362"
+					item: "gtceu:hv_rotor_holder"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]

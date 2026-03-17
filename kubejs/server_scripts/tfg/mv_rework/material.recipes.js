@@ -5,6 +5,7 @@ function registerTFGMVMaterialRecipes(event) {
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rough_silicon_carbide_gas' })
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_silicon_carbide_to_nugget' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_weak_inconel_718_to_nugget' })
 
 	event.recipes.gtceu.electric_blast_furnace('tfg:rough_sic_gem')
 		.itemInputs(Item.of('gtceu:quartzite_gem', 9), Item.of('gtceu:graphite_dust', 27))
@@ -63,9 +64,9 @@ function registerTFGMVMaterialRecipes(event) {
 			Item.of('gtceu:aluminium_dust', 1),
 			Item.of('gtceu:boron_dust', 1))
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
-		.itemOutputs(Item.of('tfg:rene_41_dust', 7))
+		.itemOutputs(Item.of('tfg:rene_41_dust', 14))
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
-		.duration(20 * 46)
+		.duration(20 * 92)
 		.EUt(GTValues.VA[GTValues.MV])
 		.circuit(4)
 
@@ -73,14 +74,14 @@ function registerTFGMVMaterialRecipes(event) {
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 23)
+		.duration(20 * 11.5)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_bath('tfg:rene_41_cool_down_distilled_water')
 		.itemInputs(Item.of('#forge:hot_ingots/rene_41', 1))
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs(Item.of('#forge:ingots/rene_41', 1))
-		.duration(20 * 14)
+		.duration(20 * 7)
 		.EUt(GTValues.VA[GTValues.MV])
 
 	//#region Diamond Tipped Tools custom recipes

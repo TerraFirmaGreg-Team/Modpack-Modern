@@ -14,6 +14,9 @@ const registerAE2ItemTags = (event) => {
     event.removeAll('ae2:p2p_attunements/fe_p2p_tunnel')
     
     event.add('tfg:stone_dusts', 'ae2:sky_dust')
+    event.add('tfg:stone_types/suevite', 'ae2:sky_stone_block')
+    event.add('tfg:stone_types/suevite', 'ae2:sky_stone_stairs')
+    event.add('tfg:stone_types/suevite', 'ae2:sky_stone_wall')
 
     event.add('tfg:reactant_fluix_ruby', 'gtceu:ruby_gem')
     event.add('tfg:reactant_fluix_ruby', 'gtceu:armalcolite_gem')

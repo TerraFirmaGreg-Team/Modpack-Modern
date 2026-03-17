@@ -862,7 +862,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"mercury_stone": generateMissing('mercury_stone', {
 		material: 'tfg:igneous_ultramafic',
 		tfcTag: 'tfc:igneous_intrusive_items',
-		gravelTag: 'tfc:white_gravel',
+		gravelTag: 'tfc:red_gravel',
 		sound: 'stone',
 		mapColor: 'terracotta_purple',
 		dimensions: ['ad_astra:mercury'],
