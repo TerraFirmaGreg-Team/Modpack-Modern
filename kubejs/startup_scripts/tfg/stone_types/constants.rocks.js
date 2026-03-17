@@ -592,7 +592,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"purpur": {
 		isTFC: false,
 		collapsible: false,
-		brick: 'minecraft:popped_chorus_fruit',
+		brick: 'tfg:granulated_chorus_ingot',
 		bricks: {
 			block: 'minecraft:purpur_block',
 			stair: 'minecraft:purpur_stairs',

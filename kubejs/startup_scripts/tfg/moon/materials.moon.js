@@ -99,4 +99,14 @@ function registerTFGMoonMaterials(event) {
 			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.DISABLE_ALLOY_BLAST
 		)
+
+	// Chorus Dust/Bricks
+	
+	event.create('tfg:granulated_chorus')
+		.dust()
+		.ingot()
+		.color(0xb082af)
+		.secondaryColor(0xae83ae)
+		.iconSet(GTMaterialIconSet.WOOD)
+		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
 }

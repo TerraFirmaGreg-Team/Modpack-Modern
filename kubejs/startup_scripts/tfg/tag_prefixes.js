@@ -116,6 +116,11 @@ function registerTFGTagPrefixes(event) {
 	TFGTagPrefix.toolHeadSaw.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
 	TFGTagPrefix.toolHeadScythe.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
 	TFGTagPrefix.toolHeadKnife.setIgnored(GTMaterials.get('tfg:arsenic_bronze'))
+
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('tfg:granulated_chorus'))
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('tfg:granulated_chorus'))
+	TagPrefix.nugget.setIgnored(GTMaterials.get('tfg:granulated_chorus'))
+	TagPrefix.block.setIgnored(GTMaterials.get('tfg:granulated_chorus'))
 }
 
 function excludeAllGemsButNormal(material) {

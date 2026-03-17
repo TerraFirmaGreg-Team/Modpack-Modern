@@ -24,4 +24,23 @@ function registerTFGMoonRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.EV])
 		.cleanroom(CleanroomType.CLEANROOM)
+
+	// Granulated Chorus
+	event.recipes.gtceu.alloy_smelter('tfg:granulated_chorus_ingot')
+		.itemInputs('#forge:dusts/granulated_chorus')
+		.notConsumable('gtceu:ingot_casting_mold')
+		.itemOutputs('#forge:ingots/granulated_chorus')
+		.duration(80)
+		.EUt(2)
+		.category(GTRecipeCategories.INGOT_MOLDING)
+	event.recipes.gtceu.macerator('tfg:granulated_chorus_dust_from_fruit')
+		.itemInputs('minecraft:popped_chorus_fruit')
+		.itemOutputs('#forge:dusts/granulated_chorus')
+		.duration(40)
+		.EUt(7)
+	event.recipes.gtceu.macerator('tfg:granulated_chorus_dust_from_flower')
+		.itemInputs('tfg:lunar_chorus_flower')
+		.itemOutputs('1x #forge:dusts/granulated_chorus')
+		.duration(40)
+		.EUt(7)
 }
