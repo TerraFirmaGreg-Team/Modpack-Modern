@@ -4,6 +4,61 @@
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFauna(event) {
 
+	// EARTH FAUNA
+	event.fauna(
+		climate => {
+			climate.minRain(160)
+			climate.maxRain(420)
+			climate.minTemp(-10)
+			climate.maxTemp(15)
+			climate.maxForest('edge')
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:bison")
+
+	event.fauna(
+		climate => {
+			climate.maxTemp(-9)
+			climate.minRain(105)
+		},
+		faunaData => {
+			faunaData.solidGround(false)
+		},
+		"tfg:leopard_seal")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(-12)
+			climate.maxTemp(-3)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:lemming")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(-3)
+			climate.maxRain(160)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:jerboa")
+
+	event.fauna(
+		climate => {
+			climate.minTemp(12)
+			climate.minRain(160)
+		},
+		faunaData => {
+			faunaData.solidGround(true)
+		},
+		"tfg:mongoose")
+
+	// MARS FAUNA
 	// -108 is the average at z=-4k to z=-6k, which feels like a big enough band
 	event.fauna(
 		climate => {

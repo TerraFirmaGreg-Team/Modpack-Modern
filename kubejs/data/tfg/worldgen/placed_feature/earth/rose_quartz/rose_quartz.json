@@ -7,8 +7,7 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": -25,
-			"max_temperature": -10
+			"max_temperature": -7
 		},
 		{
 			"type": "tfc:biome"
