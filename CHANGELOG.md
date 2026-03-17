@@ -8,6 +8,7 @@
 - Cleaned up some of the stonecutter recipes so there should be fewer duplicates @Pyritie
 - Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
 - Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
+- Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
 ### Bug fixes
 - Fixed the field guide not working @Mqrius
 - Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77

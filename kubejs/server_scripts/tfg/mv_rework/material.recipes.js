@@ -64,7 +64,7 @@ function registerTFGMVMaterialRecipes(event) {
 			Item.of('gtceu:aluminium_dust', 1),
 			Item.of('gtceu:boron_dust', 1))
 		.inputFluids(Fluid.of('gtceu:carbon_monoxide', 1000))
-		.itemOutputs(Item.of('tfg:rene_41_dust', 7))
+		.itemOutputs(Item.of('tfg:rene_41_dust', 14))
 		.outputFluids(Fluid.of('gtceu:oxygen', 1000))
 		.duration(20 * 92)
 		.EUt(GTValues.VA[GTValues.MV])
