@@ -84,15 +84,26 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/white')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/yellow')
 	
-	event.recipes.tfc.landslide('tfg:coarse_sandy_loam_dirt', 'tfg:coarse_sandy_loam_dirt')
-	event.recipes.tfc.landslide('tfg:coarse_silty_loam_dirt', 'tfg:coarse_silty_loam_dirt')
-	event.recipes.tfc.landslide('tfg:coarse_silt_dirt', 'tfg:coarse_silt_dirt')
-	event.recipes.tfc.landslide('tfg:coarse_loam_dirt', 'tfg:coarse_loam_dirt')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/sandy_loam', 'tfg:coarse_dirt/sandy_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silty_loam', 'tfg:coarse_dirt/silty_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silt', 'tfg:coarse_dirt/silt')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/loam', 'tfg:coarse_dirt/loam')
 	
-	event.recipes.tfc.landslide('tfg:sandy_loam_duff', 'tfc:dirt/sandy_loam')
-	event.recipes.tfc.landslide('tfg:silty_loam_duff', 'tfc:dirt/silty_loam')
-	event.recipes.tfc.landslide('tfg:silt_duff', 'tfc:dirt/silt')
-	event.recipes.tfc.landslide('tfg:loam_duff', 'tfc:dirt/loam')
+	event.recipes.tfc.landslide('tfg:dirt/sandy_loam', 'tfc:duff/sandy_loam')
+	event.recipes.tfc.landslide('tfg:dirt/silty_loam', 'tfc:duff/silty_loam')
+	event.recipes.tfc.landslide('tfg:dirt/silt', 'tfc:duff/silt')
+	event.recipes.tfc.landslide('tfg:dirt/loam', 'tfc:duff/loam')
+
+	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:duff/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:mud/${dirt}`, `tfg:mud/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:farmland/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass_path/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay_grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:coarse_dirt/${dirt}`, `tfg:coarse_dirt/${dirt}`)
+	})
 
 	// Other
 	event.recipes.tfc.collapse("#forge:raw_ore_blocks");

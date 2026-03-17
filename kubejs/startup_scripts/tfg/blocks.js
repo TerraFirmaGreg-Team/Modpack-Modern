@@ -5,7 +5,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGDimensionMarkerBlocks(event)
 	registerTFGCrops(event)
 	registerTFGVaseBlocks(event)
-
+	registerTFGMudBrickBlocks(event)
 	registerTFGRockBlocks(event)
 	registerTFGSupportBlocks(event)
 

@@ -674,6 +674,7 @@ global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
 ]);
 
 global.TFC_MUD_TYPES = /** @type {const} */ (["silt", "loam", "sandy_loam", "silty_loam"]);
+global.TFG_MUD_TYPES = /** @type {const} */ (["alfisol", "mollisol", "oxisol", "podzol"]);
 
 /**
  * Хранит названия типов полублоков из камня в TFC. (Не кирпичей)
@@ -876,20 +877,6 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
         unsalted_cheese: "tfc_gourmet:alpaca_brinza_slice", unsalted_wheel: "tfc_gourmet:alpaca_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     }
-]);
-
-global.TFC_DRY_MUD_BRICKS = /** @type {const} */ ([
-    "tfc:mud_brick/loam",
-    "tfc:mud_brick/sandy_loam",
-    "tfc:mud_brick/silt",
-    "tfc:mud_brick/silty_loam"
-]);
-
-global.TFC_WET_MUD_BRICKS = /** @type {const} */ ([
-    "tfc:drying_bricks/loam",
-    "tfc:drying_bricks/sandy_loam",
-    "tfc:drying_bricks/silt",
-    "tfc:drying_bricks/silty_loam"
 ]);
 
 global.TFC_ALCOHOL = /** @type {const} */ ([
