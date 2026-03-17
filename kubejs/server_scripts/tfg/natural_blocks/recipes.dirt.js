@@ -202,10 +202,14 @@ function registerTFGDirtRecipes(event) {
 		buildDirtRecipes('tfg', dirtType);
 		
 		event.shapeless(`4x tfg:drying_bricks/${dirtType}`, [`tfg:mud/${dirtType}`, 'tfc:straw'])
-			.id(`tfg:shapeless/drying_bricks_${dirtType}`)
+			.id(`tfg:shapeless/drying_bricks_${dirtType}`);
+
+		event.recipes.firmalife.drying(`tfg:dirt/${dirtType}`, `tfg:mud/${dirtType}`)
+			.id(`tfg:drying/mud_${dirtType}`);
+
+		event.shapeless(`tfg:muddy_roots/${dirtType}`, [`tfg:mud/${dirtType}`, 'tfc:tree_roots'])
+			.id(`tfg:shapeless/muddy_roots_${dirtType}`);
 	});
-
-
 
 
 	// #region Wattle and daub
