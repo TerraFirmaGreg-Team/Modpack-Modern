@@ -1339,6 +1339,15 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.heating('tfg:food/raw_burger_patty', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_burger_patty').copyFood());
+
+	event.recipes.tfc.heating('tfg:lentil_product', 200)
+	 	.resultItem(TFC.isp.of('tfg:food/cooked_lentil').copyFood())
+
+	event.recipes.tfc.heating('tfg:cassava_product', 200)
+	 	.resultItem(TFC.isp.of('tfg:food/cooked_cassava').copyFood())
+
+	event.recipes.tfc.heating('tfg:beans_product', 200)
+	 	.resultItem(TFC.isp.of('tfg:food/cooked_beans').copyFood())
 		
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),

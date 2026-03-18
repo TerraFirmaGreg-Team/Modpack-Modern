@@ -752,7 +752,10 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_long_pig_filet", output: "tfg:food/cooked_long_pig_filet", name: "cooked_long_pig_filet" },
     { input: "tfg:food/raw_cruncher_ribs", output: "tfg:food/cooked_cruncher_ribs", name: "cooked_cruncher_ribs" },
     { input: "tfg:food/raw_stickastackatick", output: "tfg:food/cooked_stickastackatick", name: "cooked_stickastackatick" },
-    { input: "tfg:food/raw_burger_patty", output: "tfg:food/cooked_burger_patty", name: "cooked_burger_patty" }
+    { input: "tfg:food/raw_burger_patty", output: "tfg:food/cooked_burger_patty", name: "cooked_burger_patty" },
+    { input: "tfg:lentil_product", output: "tfg:food/cooked_lentil", name: "cooked_lentil" },
+    { input: "tfg:cassava_product", output: "tfg:food/cooked_cassava", name: "cooked_cassava" },
+    { input: "tfg:beans_product", output: "tfg:food/cooked_beans", name: "cooked_beans" }
 
 ]);
 
