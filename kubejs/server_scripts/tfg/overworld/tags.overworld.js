@@ -29,6 +29,8 @@ function registerTFGOverworldItemTags(event) {
 		event.add('tfc:dirt', `tfg:clay/${dirt}`)
 		event.add('tfc:dirt', `tfg:duff/${dirt}`)
 		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
+		event.add('tfc:grass', `tfg:grass/${dirt}`)
+		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
 	})
 }
 
@@ -65,6 +67,8 @@ function registerTFGOverworldBlockTags(event) {
 
 	global.TFG_MUD_TYPES.forEach(dirt => {
 		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
+		event.add('tfc:grass', `tfg:grass/${dirt}`)
+		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
 	})
 }
 
