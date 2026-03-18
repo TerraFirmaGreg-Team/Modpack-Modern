@@ -1,36 +1,19 @@
 "use strict";
-// NEW ITEMS:
-// Wrapped Smokebox wrapped_locometal_smokebox
 
-const locometalDyeGroups = {
-	riveted_locometal: '#railways:palettes/dye_groups/riveted',
-	slashed_locometal: '#railways:palettes/dye_groups/slashed',
-	locometal_vent: '#railways:palettes/dye_groups/vent',
-	flat_riveted_locometal: '#railways:palettes/dye_groups/flat_riveted',
-	flat_slashed_locometal: '#railways:palettes/dye_groups/flat_slashed',
-	plated_locometal: '#railways:palettes/dye_groups/plated',
-	locometal_pillar: '#railways:palettes/dye_groups/pillar',
-	locometal_smokebox: '#railways:palettes/dye_groups/smokebox',
-	hazard_stripes_diagonal_on_black: '#railways:palettes/dye_groups/hazard_stripes_diagonal_black',
-	hazard_stripes_chevron_on_black: '#railways:palettes/dye_groups/hazard_stripes_chevron_black',
-	hazard_stripes_diagonal_on_white: '#railways:palettes/dye_groups/hazard_stripes_diagonal_white',
-	hazard_stripes_chevron_on_white: '#railways:palettes/dye_groups/hazard_stripes_chevron_white'
-}
-
-const locometalBase = {
-	slashed_locometal: 'slashed_locometal',
-	riveted_locometal: 'riveted_locometal',
-	locometal_vent: 'locometal_vent',
-	flat_slashed_locometal: 'flat_slashed_locometal',
-	flat_riveted_locometal: 'flat_riveted_locometal',
-	plated_locometal: 'plated_locometal',
-	locometal_pillar: 'locometal_pillar',
-	locometal_smokebox: 'locometal_smokebox',
-	hazard_stripes_diagonal_on_black: 'hazard_stripes_diagonal_on_black',
-	hazard_stripes_chevron_on_black: 'hazard_stripes_chevron_on_black',
-	hazard_stripes_diagonal_on_white: 'hazard_stripes_diagonal_on_white',
-	hazard_stripes_chevron_on_white: 'hazard_stripes_chevron_on_white'
-}
+const LOCOMETAL_BASE = [
+	{ id: 'slashed_locometal', dye_group: '#railways:palettes/dye_groups/slashed' },
+	{ id: 'riveted_locometal', dye_group: '#railways:palettes/dye_groups/riveted' },
+	{ id: 'locometal_vent', dye_group: '#railways:palettes/dye_groups/vent' },
+	{ id: 'flat_slashed_locometal', dye_group: '#railways:palettes/dye_groups/flat_riveted' },
+	{ id: 'flat_riveted_locometal', dye_group: '#railways:palettes/dye_groups/flat_slashed' },
+	{ id: 'plated_locometal', dye_group: '#railways:palettes/dye_groups/plated' },
+	{ id: 'locometal_pillar', dye_group: '#railways:palettes/dye_groups/pillar' },
+	{ id: 'locometal_smokebox', dye_group: '#railways:palettes/dye_groups/smokebox' },
+	{ id: 'hazard_stripes_diagonal_on_black', dye_group: '#railways:palettes/dye_groups/hazard_stripes_diagonal_black' },
+	{ id: 'hazard_stripes_chevron_on_black', dye_group: '#railways:palettes/dye_groups/hazard_stripes_chevron_black' },
+	{ id: 'hazard_stripes_diagonal_on_white', dye_group: '#railways:palettes/dye_groups/hazard_stripes_diagonal_white' },
+	{ id: 'hazard_stripes_chevron_on_white', dye_group: '#railways:palettes/dye_groups/hazard_stripes_chevron_white' }
+]
 
 const LOCOMETAL_SPECIAL = [
 	{ id: 'locometal_flywheel', dye_group: '#railways:palettes/dye_groups/flywheel', multiplier: 5 },
@@ -44,25 +27,6 @@ const LOCOMETAL_SPECIAL = [
 	{ id: 'single_pane_locometal_window', dye_group: '#railways:palettes/dye_groups/single_pane_window', multiplier: 1 },
 	{ id: 'two_pane_locometal_window', dye_group: '#railways:palettes/dye_groups/two_pane_window', multiplier: 1 },
 	{ id: 'four_pane_locometal_window', dye_group: '#railways:palettes/dye_groups/four_pane_window', multiplier: 1 }
-]
-
-const LOCOMETAL_COLORS = [
-	{ dye: 'tfc:brown_dye', colors: [ 'brown', 'maroon' ] },
-	{ dye: 'tfc:red_dye', colors: [ 'red', 'vermilion' ] },
-	{ dye: 'tfc:orange_dye', colors: [ 'orange', 'granite' ] },
-	{ dye: 'tfc:yellow_dye', colors: [ 'yellow', 'ochrum', 'dripstone' ] },
-	{ dye: 'tfc:lime_dye', colors: [ 'lime', 'olive_green', 'chartreuse' ] },
-	{ dye: 'tfc:green_dye', colors: [ 'green', 'pine_green' ] },
-	{ dye: 'tfc:cyan_dye', colors: [ 'cyan', 'sea_green' ] },
-	{ dye: 'tfc:light_blue_dye', colors: [ 'light_blue', 'turquoise' ] },
-	{ dye: 'tfc:blue_dye', colors: [ 'blue', 'royal_blue' ] },
-	{ dye: 'tfc:purple_dye', colors: [ 'purple' ] },
-	{ dye: 'tfc:magenta_dye', colors: [ 'magenta' ] },
-	{ dye: 'tfc:pink_dye', colors: [ 'pink' ] },
-	{ dye: 'tfc:white_dye', colors: [ 'white', 'diorite' ] },
-	{ dye: 'tfc:light_gray_dye', colors: [ 'light_gray', 'limestone' ] },
-	{ dye: 'tfc:gray_dye', colors: [ 'gray', 'tuff' ] },
-	{ dye: 'tfc:black_dye', colors: [ 'black', 'scorchia' ] }
 ]
 
 const registerRailwaysLocometalRecipes = (event) => {
@@ -139,19 +103,19 @@ const registerRailwaysLocometalRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES);
 
 	// Base Locometal Regular & Undying Recipes
-	for (let locometal in locometalBase) {
-		event.stonecutting(`8x railways:${locometal}`, '#forge:storage_blocks/iron');
-		event.stonecutting(`16x railways:${locometal}`, '#forge:storage_blocks/wrought_iron');
-		event.stonecutting(`32x railways:${locometal}`, '#forge:storage_blocks/steel');
-		event.stonecutting(`railways:${locometal}`, `#railways:palettes/cycle_groups/netherite/base`);
-		event.recipes.gtceu.chemical_bath(`tfg:undying/locometal/${locometal}`)
-			.itemInputs(Item.of(locometalDyeGroups[`${locometal}`], 1))
+	LOCOMETAL_BASE.forEach(locometal => {
+		event.stonecutting(`8x railways:${locometal.id}`, '#forge:storage_blocks/iron');
+		event.stonecutting(`16x railways:${locometal.id}`, '#forge:storage_blocks/wrought_iron');
+		event.stonecutting(`32x railways:${locometal.id}`, '#forge:storage_blocks/steel');
+		event.stonecutting(`railways:${locometal.id}`, `#railways:palettes/cycle_groups/netherite/base`);
+		event.recipes.gtceu.chemical_bath(`tfg:undying/locometal/${locometal.id}`)
+			.itemInputs(`${locometal.dye_group}`)
 			.inputFluids(Fluid.of(`gtceu:chlorine`, 18))
-			.itemOutputs(Item.of(`railways:${locometal}`))
+			.itemOutputs(Item.of(`railways:${locometal.id}`))
 			.duration(20)
 			.EUt(24)
 			.category(GTRecipeCategories.CHEM_DYES)
-	}
+	})
 
 	// Base Functional Decorative Block Recipes
 	event.stonecutting(`16x railways:locometal_end_ladder`, '#forge:storage_blocks/iron');
@@ -279,19 +243,20 @@ const registerRailwaysLocometalRecipes = (event) => {
 			.category(GTRecipeCategories.CHEM_DYES)
 	})
 
-	LOCOMETAL_COLORS.forEach(x => {
+	global.LOCOMETAL_COLORS.forEach(x => {
 		x.colors.forEach((color, i) => {
 			// Base Colored Recipes
-			for (let locometal in locometalBase) {
-				event.recipes.gtceu.chemical_bath(`tfg:chemical_dying_locometal/${locometal}/${color}`)
-					.itemInputs(Item.of(locometalDyeGroups[`${locometal}`], 1))
+			LOCOMETAL_BASE.forEach(locometal => {
+				event.stonecutting(`railways:${color}_${locometal.id}`, `#railways:palettes/cycle_groups/${color}/base`);
+				event.recipes.gtceu.chemical_bath(`tfg:chemical_dying_locometal/${locometal.id}/${color}`)
+					.itemInputs(`${locometal.dye_group}`)
 					.inputFluids(Fluid.of(`${x.dye}`, 18))
-					.itemOutputs(Item.of(`railways:${color}_${locometal}`))
+					.itemOutputs(Item.of(`railways:${color}_${locometal.id}`))
 					.circuit(i + 1)
 					.duration(20)
 					.EUt(24)
 					.category(GTRecipeCategories.CHEM_DYES)
-				}
+			})
 				
 			// Wrapped Locometal Colored Recipes
 			event.recipes.gtceu.chemical_bath(`tfg:brass_locometal_bathing/${color}`)
