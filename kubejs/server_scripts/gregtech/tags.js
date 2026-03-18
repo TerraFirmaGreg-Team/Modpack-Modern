@@ -120,6 +120,11 @@ function registerGTCEUBlockTags(event) {
 
     event.remove("forge:needs_netherite_tool", "gtceu:incoloy_ma_956_frame");
 
+    event.add("c:hidden_from_recipe_viewers", "gtceu:bronze_large_boiler")
+    event.add("c:hidden_from_recipe_viewers", "gtceu:steel_large_boiler")
+    event.add("c:hidden_from_recipe_viewers", "gtceu:titanium_large_boiler")
+    event.add("c:hidden_from_recipe_viewers", "gtceu:tungstensteel_large_boiler")
+
     // Groups up concrete blocks into tags.
     Object.entries(global.GTCEU_CONCRETE_BLOCKS).forEach(([type, ids]) => {
         event.add(`tfg:gtceu_concrete_blocks/${type}`, ids);
