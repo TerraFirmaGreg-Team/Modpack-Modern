@@ -70,6 +70,7 @@ function registerTFGDirtRecipes(event) {
 		.itemInputs('#tfc:dirt')
 		.inputFluids(Fluid.of('tfg:semiheavy_ammoniacal_water', 100))
 		.circuit(3)
+		.itemOutputs('tfg:grass/mars_dirt')
 		.duration(200)
 		.EUt(16)
 
