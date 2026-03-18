@@ -114,6 +114,11 @@ const registerTFGItemTags = (event) => {
 	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
+
+	// Tag for new lenses
+
+	event.add('forge:lenses/orange', 'gtceu:spessartine_lens')
+	event.add('forge:lenses/cyan', 'gtceu:apatite_lens')
 }
 
 //#region Blocks

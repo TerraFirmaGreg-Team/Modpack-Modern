@@ -413,6 +413,14 @@ function removeGTCEURecipes(event) {
 
 	//#endregion
 
+	// Remove slurries from GT
+
+	event.remove({ id: 'gtceu:mixer/ruby_slurry_from_crushed_ruby' })
+	event.remove({ id: 'gtceu:mixer/ruby_slurry_from_washed_ruby' })
+	event.remove({ id: 'gtceu:mixer/sapphire_slurry_from_washed_sapphire' })
+	event.remove({ id: 'gtceu:mixer/sapphire_slurry_from_crushed_sapphire' })
+	event.remove({ id: 'gtceu:mixer/green_sapphire_slurry_from_crushed_green_sapphire' })
+	event.remove({ id: 'gtceu:mixer/green_sapphire_slurry_from_washed_green_sapphire' })
 
 	//#region Выход: Маленькая кучка мяса
 
