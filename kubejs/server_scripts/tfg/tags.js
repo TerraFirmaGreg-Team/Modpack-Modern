@@ -220,6 +220,16 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
+
+	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_beer')
+	event.add('tfg:alcohols', 'tfg:vintage_cider')
+	event.add('tfg:alcohols', 'tfg:vintage_rum')
+	event.add('tfg:alcohols', 'tfg:vintage_sake')
+	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_mead')
+	event.add('tfg:alcohols', 'tfg:vintage_vodka')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
