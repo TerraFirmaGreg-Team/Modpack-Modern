@@ -356,29 +356,27 @@ function registerTFGRockRecipes(event) {
 		}
 
 		// Pillars
-		if (rock.bricks != null && rock.pillar != null) {
-			event.shaped(`2x ${rock.pillar}`, [
-				'A',
-				'A'
-			], {
-				A: rock.bricks.block
-			})
-			.id(`tfg:shaped/${rockId}_pillar`);
-
-			event.stonecutting(rock.pillar, rock.bricks.block)
-				.id(`tfg:stonecutting/${rockId}_pillar`);
+		if (rock.pillar != null) {
+			if (rock.bricks != null) {
+				event.shaped(`2x ${rock.pillar}`, [
+					'A',
+					'A'
+				], {
+					A: rock.bricks.block
+				})
+				.id(`tfg:shaped/${rockId}_pillar`);
+			}
 		}
 
-		if (rock.bricks != null && rock.pillar2 != null) {
-			event.shaped(`2x ${rock.pillar2}`, [
-				'AA'
-			], {
-				A: rock.bricks.block
-			})
-			.id(`tfg:shaped/${rockId}_pillar2`);
-
-			event.stonecutting(rock.pillar2, rock.bricks.block)
-				.id(`tfg:stonecutting/${rockId}_pillar2`);
+		if (rock.pillar2 != null) {
+			if (rock.bricks != null) {
+				event.shaped(`2x ${rock.pillar2}`, [
+					'AA'
+				], {
+					A: rock.bricks.block
+				})
+				.id(`tfg:shaped/${rockId}_pillar2`);
+			}
 		}
 
 		// Chiseling
@@ -409,25 +407,29 @@ function registerTFGRockRecipes(event) {
 		if (rock.stonecutting != null) {
 			rock.stonecutting.forEach(stonecuttingEntry => {
 				changeForms(rockId, rock, stonecuttingEntry);
+				let id = linuxUnfucker(`${rock.bricks.block}_to_${stonecuttingEntry.block}`);
+				event.stonecutting(`${stonecuttingEntry.block}`, rock.bricks.block)
+					.id(`tfg:stonecutting/${id}`);
 			})
 		}
 
 		// Stonecutting
 		if (rock.stonecutterTag != null) {
-			// The create tags are already filled out, so just add the polished/chiseled blocks to it
-			if (rock.stonecutterTag.startsWith('create')) {
-				if (rock.polished != null)
-					event.stonecutting(rock.polished.block, `#${rock.stonecutterTag}`);
-				if (rock.chiseled != null)
-					event.stonecutting(rock.chiseled.block, `#${rock.stonecutterTag}`);
-			}
-			else {
-				let tag_array = Ingredient.of(`#${rock.stonecutterTag}`).itemIds.toArray().map(String);
-				tag_array.forEach(item => {
-					event.stonecutting(item, Ingredient.of(`#${rock.stonecutterTag}`).subtract(item))
-						.id(`tfg:stonecutter/${linuxUnfucker(item)}`)
-				})
-			}
+			// Pull everything out of the tag
+			let tag_array = Ingredient.of(`#${rock.stonecutterTag}`).itemIds.toArray().map(String);
+			let tag_array_half = Ingredient.of(`#${rock.stonecutterTag}_half`).itemIds.toArray().map(String);
+			// Remove any duplicates
+			tag_array = tag_array.filter((item, index) => tag_array.indexOf(item) === index);
+			tag_array.forEach(item => {
+				event.stonecutting(item, Ingredient.of(`#${rock.stonecutterTag}`).subtract(item))
+					.id(`tfg:stonecutter/${linuxUnfucker(item)}`)
+			})
+			tag_array_half.forEach(item => {
+				event.stonecutting(`2x ${item}`, Ingredient.of(`#${rock.stonecutterTag}`).subtract(item))
+					.id(`tfg:stonecutter/${linuxUnfucker(item)}_half`)
+				event.stonecutting(item, Ingredient.of(`#${rock.stonecutterTag}_half`).subtract(item))
+					.id(`tfg:stonecutter/${linuxUnfucker(item)}_slab_to_slab`)
+			})
 		}
 
 		// Supports

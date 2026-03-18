@@ -30,4 +30,7 @@ function registerTFGOresMaterialModification(event) {
 	GTMaterials.GraniticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_felsic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	GTMaterials.BasalticMineralSand.getProperty(PropertyKey.ORE).setOreByProducts(GTMaterials.get('tfg:igneous_mafic'), GTMaterials.Magnetite, GTMaterials.Magnetite);
 	
+	// Change ore multipliers
+	GTMaterials.Cassiterite.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.CassiteriteSand.getProperty(PropertyKey.ORE).setOreMultiplier(1);
 }
