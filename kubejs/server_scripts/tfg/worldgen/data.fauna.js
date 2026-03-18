@@ -32,6 +32,8 @@ function registerTFGFauna(event) {
 		climate => {
 			climate.minTemp(-12)
 			climate.maxTemp(-3)
+			climate.minRain(160)
+			climate.maxRain(500)
 		},
 		faunaData => {
 			faunaData.solidGround(true)
@@ -41,6 +43,8 @@ function registerTFGFauna(event) {
 	event.fauna(
 		climate => {
 			climate.minTemp(-3)
+			climate.maxTemp(25)
+			climate.minRain(0)
 			climate.maxRain(160)
 		},
 		faunaData => {
@@ -52,6 +56,7 @@ function registerTFGFauna(event) {
 		climate => {
 			climate.minTemp(12)
 			climate.minRain(160)
+			climate.maxRain(500)
 		},
 		faunaData => {
 			faunaData.solidGround(true)

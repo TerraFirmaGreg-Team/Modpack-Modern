@@ -256,9 +256,16 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
-
+	
+	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
+	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
+	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
+	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
+	event.add('tfc:hunted_by_cats', 'tfg:lemming')
+	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
 }

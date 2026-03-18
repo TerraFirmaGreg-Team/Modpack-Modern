@@ -97,6 +97,7 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfc:dirt/loam', 'tfg:duff/loam')
 
 	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:dirt/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:duff/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:mud/${dirt}`, `tfg:mud/${dirt}`)
