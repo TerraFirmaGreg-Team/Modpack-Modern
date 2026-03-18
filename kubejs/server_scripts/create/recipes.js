@@ -50,7 +50,7 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/stock_ticker_clear'},
 			{ id: 'create:crafting/logistics/factory_gauge_clear'},
 			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
-			{ type: 'minecraft:stonecutting' }
+			//{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
 	})
 	// Make Bound Cardboard craftable with all string
