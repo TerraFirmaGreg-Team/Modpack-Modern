@@ -44,9 +44,9 @@
           "L": "tfc:ore/small_tetrahedrite"
         }
       },
-      "name": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+      "name": "",
       "text": "Усі малі шматки руди",
-      "enable_visualize": "§8Утримуйте Shift, щоб показати інформацію з ремонтування"
+      "enable_visualize": false
     },
     {
       "type": "patchouli:text",
@@ -82,7 +82,7 @@
         "tfc:textures/gui/book/gui/casting.png"
       ],
       "text": "Тримайте посудину та натисніть $(item)$(k:key.use)$(), щоб відкрити інтерфейс $(thing)лиття$().",
-      "border": "§8Утримуйте Shift, щоб показати інформацію з ремонтування"
+      "border": false
     },
     {
       "type": "patchouli:text",

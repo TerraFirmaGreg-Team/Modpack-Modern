@@ -38,7 +38,7 @@
 			},
 			"name": "Приклад",
 			"text": "Розсип звичайних паличок і каменів.",
-			"enable_visualize": "§8Утримуйте Shift, щоб показати інформацію з ремонтування"
+			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
@@ -50,7 +50,7 @@
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
 			"text": "Інтерфейс оббивання.",
-			"border": "§8Утримуйте Shift, щоб показати інформацію з ремонтування"
+			"border": false
 		},
 		{
 			"type": "patchouli:text",
