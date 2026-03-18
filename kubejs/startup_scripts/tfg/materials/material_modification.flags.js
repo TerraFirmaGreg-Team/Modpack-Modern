@@ -60,6 +60,10 @@ function registerTFGFlagsMaterialModification(event) {
 
 	GTMaterials.Apatite.addFlags(GENERATE_LENS)
 	GTMaterials.Spessartine.addFlags(GENERATE_LENS)
+	GTMaterials.GarnetYellow.addFlags(GENERATE_LENS)
+	GTMaterials.Olivine.addFlags(GENERATE_LENS)
+	GTMaterials.Grossular.addFlags(GENERATE_LENS)
+	GTMaterials.Coal.addFlags(GENERATE_LENS)
 
 	// Castable stuff 
 	GTMaterials.Copper.addFlags(CAN_BE_UNMOLDED);

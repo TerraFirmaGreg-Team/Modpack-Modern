@@ -18,12 +18,18 @@ function registerTFGGemSlurriesProcessing(event) {
     }
 
     const gemMaterials = [
-        [GTMaterials.Emerald,    'emerald',     { gem: 300, flawless: 700, exquisite: 1500 }],
-        [GTMaterials.Sapphire,   'sapphire',    { gem: 300, flawless: 700, exquisite: 1500 }],
-        [GTMaterials.Ruby,       'ruby',        { gem: 300, flawless: 700, exquisite: 1500 }],
-        [GTMaterials.Diamond,    'diamond',     { gem: 300, flawless: 700, exquisite: 1500 }],
-        [GTMaterials.Apatite,    'apatite',     { gem: 300, flawless: 700, exquisite: 1500 }],
-        [GTMaterials.Spessartine,'spessartine', { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Emerald,                          'emerald',      { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Sapphire,                         'sapphire',     { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Ruby,                             'ruby',         { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Diamond,                          'diamond',      { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Apatite,                          'apatite',      { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Spessartine,                      'spessartine',  { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.GarnetYellow,                     'yellow_garnet',{ gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Olivine,                          'olivine',      { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Amethyst,                         'amethyst',     { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Grossular,                        'grossular',    { gem: 300, flawless: 700, exquisite: 1500 }],
+        [TFGHelpers.getMaterial('gtceu:armalcolite'),  'armalcolite',  { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Coal,                             'coal',         { gem: 300, flawless: 700, exquisite: 1500 }],
     ];
 
     gemMaterials.forEach(([material, output, amounts]) => {
