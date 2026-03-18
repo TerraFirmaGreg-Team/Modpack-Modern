@@ -16,6 +16,20 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfg:anemones', "tfg:plant/anemone_purple");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
+	
+	global.TFC_MUD_TYPES.forEach(dirt => {
+		event.add('tfc:dirt', `tfg:duff/${dirt}`)
+		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
+	})
+
+	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
+		event.add('tfc:farmland', `tfg:farmland/${dirt}`)
+		event.add('tfc:dirt', `tfg:dirt/${dirt}`)
+		event.add('tfc:dirt', `tfg:clay/${dirt}`)
+		event.add('tfc:dirt', `tfg:duff/${dirt}`)
+		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
+	})
 }
 
 function registerTFGOverworldBlockTags(event) {
@@ -42,7 +56,16 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_green');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_purple');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_orange');
-	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');	
+	
+	event.add('tfc:dirt', 'tfg:coarse_dirt/sandy_loam')
+	event.add('tfc:dirt', 'tfg:coarse_dirt/silty_loam')
+	event.add('tfc:dirt', 'tfg:coarse_dirt/silt')
+	event.add('tfc:dirt', 'tfg:coarse_dirt/loam')
+
+	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
+	})
 }
 
 function registerTFGOverworldBiomeTags(event) {

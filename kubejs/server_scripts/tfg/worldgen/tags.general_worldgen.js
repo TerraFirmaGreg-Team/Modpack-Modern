@@ -26,19 +26,6 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
 	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
 	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
-
-	global.TFC_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-	})
-
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-		event.add('tfc:farmland', `tfg:farmland/${dirt}`)
-		event.add('tfc:dirt', `tfg:clay/${dirt}`)
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-	})
 }
 
 function registerTFGGeneralWorldgenBlockTags(event) {
@@ -85,15 +72,6 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 			}
 		}
 	});
-	
-	event.add('tfc:dirt', 'tfg:coarse_dirt/sandy_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silty_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silt')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/loam')
-
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-	})
 
 	event.add('tfc:can_landslide', '#forge:sand')
 

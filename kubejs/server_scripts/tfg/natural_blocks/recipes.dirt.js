@@ -35,7 +35,7 @@ function registerTFGDirtRecipes(event) {
 
 	// Alkaline dirt
 	event.recipes.gtceu.mixer('tfg:alfisol')
-		.itemInputs('tfc:dirt/loam', ['#forge:tiny_dusts/calcium', '#forge:tiny_dusts/sodium', '#forge:tiny_dusts/magnesium'])
+		.itemInputs('tfc:dirt/loam', ['gtceu:tiny_calcium_dust', 'gtceu:tiny_sodium_dust', 'gtceu:tiny_magnesium_dust'])
 		.circuit(3)
 		.itemOutputs('tfg:dirt/alfisol')
 		.duration(200)
