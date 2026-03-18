@@ -2395,6 +2395,20 @@ const registerCreateRecipes = (event) => {
 	event.stonecutting("16x create:copycat_step", "#forge:ingots/zinc")
     event.stonecutting("16x create:copycat_panel", "#forge:ingots/zinc")
 
+	event.recipes.gtceu.extractor('tfg:create/copycat_step_recyle')
+    	.itemInputs('create:copycat_step')
+    	.outputFluids(Fluid.of('gtceu:zinc', 9))
+    	.duration(20)
+    	.EUt(GTValues.VA[GTValues.LV])
+    	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+	event.recipes.gtceu.extractor('tfg:create/copycat_panel_recyle')
+    	.itemInputs('create:copycat_panel')
+    	.outputFluids(Fluid.of('gtceu:zinc', 9))
+    	.duration(20)
+    	.EUt(GTValues.VA[GTValues.LV])
+    	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
 	const create_metals = [
 		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
 		{ metal: 'brass', material: 'brass', tier: 2 },
