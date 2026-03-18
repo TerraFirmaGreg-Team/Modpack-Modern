@@ -14,7 +14,8 @@ function registerTFGGemSlurriesProcessing(event) {
 		    .perTick(false)
             .outputFluids(Fluid.of(`tfg:dirty_${output}_slurry`, amount))
             .duration(20 * 50)
-            .EUt(GTValues.VA[GTValues.LV]);
+            .EUt(GTValues.VA[GTValues.LV])
+            .circuit(4);
     }
 
     const gemMaterials = [
