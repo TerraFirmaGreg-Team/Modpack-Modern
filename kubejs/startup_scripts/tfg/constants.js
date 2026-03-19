@@ -246,7 +246,7 @@ global.ICE_SAW_BLACKLIST = [
 	"gtceu:bronze_saw",
 	"gtceu:bismuth_bronze_saw",
 	"gtceu:copper_saw",
-	"gtceu:cobalt_brass_saw",
+	"gtceu:arsenic_bronze_saw",
 	"gtceu:black_steel_saw",
 	"gtceu:black_bronze_saw",
 	"gtceu:wrought_iron_saw",
