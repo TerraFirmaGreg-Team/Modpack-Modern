@@ -9,6 +9,7 @@
 - Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
 - Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
 - Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
+- The highest tier airplanes now actually require stainless steel as their quest says @Pyritie
 ### Bug fixes
 - Fixed the field guide not working @Mqrius
 - Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77

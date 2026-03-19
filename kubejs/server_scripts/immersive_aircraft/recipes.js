@@ -936,12 +936,12 @@ function registerImmersiveAircraftRecipes(event) {
 	], {
 		A: 'immersive_aircraft:sail',
 		B: 'gtceu:blue_steel_plate',
-		C: '#tfg:metal_bars',
+		C: 'tfg:black_steel_plated_airplane_propeller',
 		D: 'gtceu:long_treated_wood_rod',
 		E: '#create:seats',
 		F: 'gtceu:black_steel_rotor',
 		G: 'greate:rubber_belt_connector',
-		H: 'create:steam_engine'
+		H: 'immersive_aircraft:steel_boiler'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/economy_plane');
 
 	event.recipes.create.mechanical_crafting('immersive_aircraft:biplane', [
@@ -956,7 +956,7 @@ function registerImmersiveAircraftRecipes(event) {
 	], {
 		A: 'immersive_aircraft:enhanced_propeller',
 		B: 'immersive_aircraft:hull',
-		C: 'immersive_aircraft:steel_boiler',
+		C: 'tfg:lv_aircraft_engine',
 		D: 'man_of_many_planes:economy_plane',
 		E: '#minecraft:logs'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/biplane')
@@ -971,7 +971,7 @@ function registerImmersiveAircraftRecipes(event) {
 		'   CHC   ',
 		'    C    '
 	], {
-		A: 'immersive_aircraft:enhanced_propeller',
+		A: 'tfg:stainless_steel_plated_airplane_propeller',
 		B: 'immersive_aircraft:nether_engine',
 		C: 'immersive_aircraft:hull',
 		D: 'gtceu:red_steel_plate',
@@ -990,9 +990,9 @@ function registerImmersiveAircraftRecipes(event) {
 		' BBBGBBB ',
 		'  B   B  '
 	], {
-		A: 'immersive_aircraft:enhanced_propeller',
+		A: 'tfg:stainless_steel_plated_airplane_propeller',
 		B: 'immersive_aircraft:hull',
-		C: 'immersive_aircraft:steel_boiler',
+		C: 'immersive_aircraft:nether_engine',
 		D: 'gtceu:long_aluminium_rod',
 		E: '#create:seats',
 		F: 'immersive_aircraft:biplane',
