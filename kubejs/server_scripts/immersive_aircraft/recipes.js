@@ -579,20 +579,19 @@ function registerImmersiveAircraftRecipes(event) {
 	)
 
 	event.shaped('tfg:redblu_steel_hull_reinforcement', [
-		'ABF',
+		'AB ',
 		'ECE',
-		'FBD'
+		' BD'
 	], {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:red_steel_plate',
 		C: 'immersive_aircraft:hull',
 		D: '#forge:tools/wrenches',
-		E: 'gtceu:blue_steel_plate',
-		F: 'gtceu:red_alloy_dust'
+		E: 'gtceu:blue_steel_plate'
 	}).id('tfg:shaped/redblu_steel_hull_reinforcement');
 
 	event.recipes.gtceu.assembler('tfg:assembler/redblu_steel_hull_reinforcement')
-		.itemInputs('immersive_aircraft:hull', '2x gtceu:red_steel_plate', '2x gtceu:blue_steel_plate', '2x gtceu:red_alloy_dust')
+		.itemInputs('immersive_aircraft:hull', '2x gtceu:red_steel_plate', '2x gtceu:blue_steel_plate')
 		.itemOutputs('tfg:redblu_steel_hull_reinforcement')
 		.duration(5 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -896,8 +895,8 @@ function registerImmersiveAircraftRecipes(event) {
 		' EEEF',
 		' DDD '
 	], {
-		A: 'immersive_aircraft:enhanced_propeller',
-		B: 'immersive_aircraft:steel_boiler',
+		A: 'tfg:redblu_steel_plated_airplane_propeller',
+		B: 'tfg:lv_aircraft_engine',
 		C: 'tfg:airship_balloon',
 		D: 'gtceu:wrought_iron_plate',
 		E: 'immersive_aircraft:hull',
@@ -915,8 +914,8 @@ function registerImmersiveAircraftRecipes(event) {
 		'   B   ',
 		'   G   ',
 	], {
-		A: 'immersive_aircraft:enhanced_propeller',
-		B: 'gtceu:long_wood_rod',
+		A: 'tfg:redblu_steel_plated_airplane_propeller',
+		B: 'gtceu:long_treated_wood_rod',
 		C: 'immersive_aircraft:sail',
 		D: 'immersive_aircraft:hull',
 		E: '#create:seats',
@@ -946,8 +945,8 @@ function registerImmersiveAircraftRecipes(event) {
 
 	event.recipes.create.mechanical_crafting('immersive_aircraft:biplane', [
 		'   A   ',
-		'BBBCBBB',
-		'  BDB  ',
+		'BFBCBFB',
+		'  FDF  ',
 		'  BBB  ',
 		'   B   ',
 		'   E   ',
@@ -958,7 +957,8 @@ function registerImmersiveAircraftRecipes(event) {
 		B: 'immersive_aircraft:hull',
 		C: 'tfg:lv_aircraft_engine',
 		D: 'man_of_many_planes:economy_plane',
-		E: '#minecraft:logs'
+		E: 'gtceu:treated_wood_plate',
+		F: 'gtceu:treated_wood_frame'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/biplane')
 
 	event.recipes.create.mechanical_crafting('man_of_many_planes:scarlet_biplane', [
@@ -976,18 +976,18 @@ function registerImmersiveAircraftRecipes(event) {
 		C: 'immersive_aircraft:hull',
 		D: 'gtceu:red_steel_plate',
 		E: 'immersive_aircraft:biplane',
-		F: 'gtceu:black_steel_rod',
+		F: 'gtceu:black_steel_frame',
 		G: '#create:seats',
 		H: 'tfc:metal/ingot/red_steel'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
 
 	event.recipes.create.mechanical_crafting('immersive_aircraft:bamboo_hopper', [
 		'  A   A  ',
-		'BBCBBBCBB',
+		'BBCHBHCBB',
 		'  DEFED  ',
 		'  DGGGD  ',
 		'  D   D  ',
-		' BBBGBBB ',
+		' BHBGBHB ',
 		'  B   B  '
 	], {
 		A: 'tfg:stainless_steel_plated_airplane_propeller',
@@ -996,7 +996,8 @@ function registerImmersiveAircraftRecipes(event) {
 		D: 'gtceu:long_aluminium_rod',
 		E: '#create:seats',
 		F: 'immersive_aircraft:biplane',
-		G: 'gtceu:double_aluminium_plate'
+		G: 'gtceu:double_aluminium_plate',
+		H: 'gtceu:aluminium_frame'
 	}).id('tfg:immersive_aircraft/mechanical_crafter/bamboo_hopper')
 
 	//#endregion
