@@ -4,12 +4,16 @@
 ### Breaking changes
 - Circuit change for Tier 1 Rocket Fin / ASM Alloy Mixer / Rocket Fin Tier 2 / Rocket Cone Tier 2 to avoid recipe conflicts @TomPlop
 - Chorus-Infused Ceramic Insulation now requires a fluix crystal instead of dust, to avoid a recipe conflict (#3411) @Pyritie
+- All other laser engraver lens recipes now require gem lenses instead of glass ones (#3460) @TomPlop
 ### Changes
 - Cleaned up some of the stonecutter recipes so there should be fewer duplicates @Pyritie @SpicyNoodle5
 - Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
 - Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
 - Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
 - The highest tier airplanes now actually require stainless steel as their quest says @Pyritie
+- Added more gem slurries for ore processing and lens crafting (#3460) @TomPlop
+- Sped up the crafting times of basalt fiber insulation and silicon carbide (#3460) @TomPlop
+- More balance changes to the new large boilers, and added EMI tabs for the information (#3460) @TomPlop
 ### Bug fixes
 - Fixed the field guide not working @Mqrius
 - Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77
