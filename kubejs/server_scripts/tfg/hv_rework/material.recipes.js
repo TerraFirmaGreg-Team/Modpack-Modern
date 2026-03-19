@@ -96,8 +96,8 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemInputs(Item.of('gtceu:obsidian_dust', 1))
         .inputFluids(Fluid.of('gtceu:steam', 1000))
 		.itemOutputs(Item.of('gtceu:perlite_dust', 1))
-        .duration(20 * 16)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .duration(20 * 8)
+        .EUt(GTValues.VHA[GTValues.HV]);
 
 	// Alumina
 

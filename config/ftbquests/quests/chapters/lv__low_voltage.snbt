@@ -80,6 +80,13 @@
 			x: 7.0d
 			y: 4.5d
 		}
+		{
+			id: "258922881D3BAB94"
+			linked_quest: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			x: 0.0d
+			y: -6.0d
+		}
 	]
 	quests: [
 		{
@@ -393,34 +400,6 @@
 			title: "{quests.low_voltage.lv_polariser.title}"
 			x: 3.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6E186F9C57155BFA"
-				"46FA9DD4755A5548"
-				"3D8174C64DDC268B"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{quests.low_voltage.lbb.desc.1}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.2}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.3}"
-			]
-			id: "33263404ED38C6D2"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.low_voltage.lbb.subtitle}"
-			tasks: [{
-				id: "560D4D0D6BECE006"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
-			title: "{quests.low_voltage.lbb.title}"
-			x: 0.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
