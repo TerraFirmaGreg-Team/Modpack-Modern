@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * @param {Internal.RecipesEventJS} event 
+ * @param {Internal.RecipesEventJS} event
  */
 function registerGTCEURecyclingRecipes(event) {
 
@@ -15,6 +15,30 @@ function registerGTCEURecyclingRecipes(event) {
 	TFGHelpers.registerMaterialInfo('gtceu:empty_tier_iii_battery', [GTMaterials.Neutronium, 6])
 	// Iron Door
 	TFGHelpers.registerMaterialInfo('minecraft:iron_door', [GTMaterials.Iron, 2])
+	// GregTech Input Bus
+	TFGHelpers.registerMaterialInfo('gtceu:lv_input_bus', [GTMaterials.Steel, 8, GTMaterials.Tin, 1, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:mv_input_bus', [GTMaterials.Aluminium, 8, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hv_input_bus', [GTMaterials.StainlessSteel, 8, GTMaterials.Gold, 1, GTMaterials.Steel, 8, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:ev_input_bus', [GTMaterials.Titanium, 8, GTMaterials.Aluminium, 9, GTMaterials.Rubber, 2, GTMaterials.PolyvinylChloride, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:iv_input_bus', [GTMaterials.TungstenSteel, 8, GTMaterials.StainlessSteel, 8, GTMaterials.Polytetrafluoroethylene, 2, GTMaterials.PolyvinylChloride, 2, GTMaterials.Platinum, 1])
+	// GregTech Output Bus
+	TFGHelpers.registerMaterialInfo('gtceu:lv_output_bus', [GTMaterials.Steel, 8, GTMaterials.Tin, 1, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:mv_output_bus', [GTMaterials.Aluminium, 8, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hv_output_bus', [GTMaterials.StainlessSteel, 8, GTMaterials.Gold, 1, GTMaterials.Steel, 8, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:ev_output_bus', [GTMaterials.Titanium, 8, GTMaterials.Aluminium, 9, GTMaterials.Rubber, 2, GTMaterials.PolyvinylChloride, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:iv_output_bus', [GTMaterials.TungstenSteel, 8, GTMaterials.StainlessSteel, 8, GTMaterials.Polytetrafluoroethylene, 2, GTMaterials.PolyvinylChloride, 2, GTMaterials.Platinum, 1])
+	// GregTech Input Hatch
+	TFGHelpers.registerMaterialInfo('gtceu:lv_input_hatch', [GTMaterials.Steel, 8, GTMaterials.Tin, 1, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:mv_input_hatch', [GTMaterials.Aluminium, 8, GTMaterials.Bronze, 6, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hv_input_hatch', [GTMaterials.StainlessSteel, 8, GTMaterials.Gold, 1, GTMaterials.Steel, 6, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:ev_input_hatch', [GTMaterials.Titanium, 8, GTMaterials.Aluminium, 7, GTMaterials.Rubber, 2, GTMaterials.PolyvinylChloride, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:iv_input_hatch', [GTMaterials.TungstenSteel, 8, GTMaterials.StainlessSteel, 6, GTMaterials.Polytetrafluoroethylene, 2, GTMaterials.PolyvinylChloride, 2, GTMaterials.Platinum, 1])
+	// GregTech Output Hatch
+	TFGHelpers.registerMaterialInfo('gtceu:lv_output_hatch', [GTMaterials.Steel, 8, GTMaterials.Tin, 1, GTMaterials.WroughtIron, 1, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:mv_output_hatch', [GTMaterials.Aluminium, 8,GTMaterials.Bronze, 6, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:hv_output_hatch', [GTMaterials.StainlessSteel, 8, GTMaterials.Gold, 1, GTMaterials.Steel, 6, GTMaterials.Rubber, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:ev_output_hatch', [GTMaterials.Titanium, 8, GTMaterials.Aluminium, 7, GTMaterials.Rubber, 2, GTMaterials.PolyvinylChloride, 2])
+	TFGHelpers.registerMaterialInfo('gtceu:iv_output_hatch', [GTMaterials.TungstenSteel, 8, GTMaterials.StainlessSteel, 6, GTMaterials.Polytetrafluoroethylene, 2, GTMaterials.PolyvinylChloride, 2, GTMaterials.Platinum, 1])
 
 	removeMaceratorRecipe(event, 'macerate_maintenance_hatch')
 	TFGHelpers.registerMaterialInfo('gtceu:maintenance_hatch', [GTMaterials.Steel, 8, GTMaterials.Rubber, 2, GTMaterials.Tin, 1])
