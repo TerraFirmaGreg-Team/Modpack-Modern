@@ -407,9 +407,6 @@ function registerTFGRockRecipes(event) {
 		if (rock.stonecutting != null) {
 			rock.stonecutting.forEach(stonecuttingEntry => {
 				changeForms(rockId, rock, stonecuttingEntry);
-				let id = linuxUnfucker(`${rock.bricks.block}_to_${stonecuttingEntry.block}`);
-				event.stonecutting(`${stonecuttingEntry.block}`, rock.bricks.block)
-					.id(`tfg:stonecutting/${id}`);
 			})
 		}
 

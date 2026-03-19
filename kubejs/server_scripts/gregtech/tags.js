@@ -78,6 +78,10 @@ function registerGTCEUItemTags(event) {
 
     // any rubber plate
     event.add('tfg:rubber_plates', '#forge:plates/rubber', '#forge:plates/silicone_rubber', '#forge:plates/styrene_butadiene_rubber')
+
+    // Remove slurry bucket
+
+    event.add('c:hidden_from_recipe_viewers', 'gtceu:ruby_slurry_bucket', 'gtceu:green_sapphire_slurry_bucket', 'gtceu:sapphire_slurry_bucket')
 }
 
 /** @param {TagEvent.Block} event  */
@@ -163,4 +167,8 @@ function registerGTCEUFluidTags(event) {
     
     event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_red_steel");
     event.add("c:hidden_from_recipe_viewers", "tfg:molten_weak_blue_steel");
+
+    event.add("c:hidden_from_recipe_viewers", "gtceu:ruby_slurry");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:green_sapphire_slurry");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:sapphire_slurry");
 }
