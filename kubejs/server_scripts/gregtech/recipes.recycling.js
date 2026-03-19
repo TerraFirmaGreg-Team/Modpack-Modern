@@ -40,6 +40,7 @@ function registerGTCEURecyclingRecipes(event) {
 	TFGHelpers.registerMaterialInfo('gtceu:ev_output_hatch', [GTMaterials.Titanium, 8, GTMaterials.Aluminium, 7, GTMaterials.Rubber, 2, GTMaterials.PolyvinylChloride, 2])
 	TFGHelpers.registerMaterialInfo('gtceu:iv_output_hatch', [GTMaterials.TungstenSteel, 8, GTMaterials.StainlessSteel, 6, GTMaterials.Polytetrafluoroethylene, 2, GTMaterials.PolyvinylChloride, 2, GTMaterials.Platinum, 1])
 
+	
 	removeMaceratorRecipe(event, 'macerate_maintenance_hatch')
 	TFGHelpers.registerMaterialInfo('gtceu:maintenance_hatch', [GTMaterials.Steel, 8, GTMaterials.Rubber, 2, GTMaterials.Tin, 1])
 
