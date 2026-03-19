@@ -433,6 +433,16 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:feature/crops", "tfg:earth/sunflower_patch");
 	event.add("tfc:feature/crops", "tfg:earth/rapeseed_patch");
 	event.add("tfc:feature/crops", "tfg:earth/flax_patch");
+	// Herbs and spices
+	event.add("tfc:feature/crops", "tfg:earth/basil_patch");
+	event.add("tfc:feature/crops", "tfg:earth/bay_laurel_patch");
+	event.add("tfc:feature/crops", "tfg:earth/cardamom_patch");
+	event.add("tfc:feature/crops", "tfg:earth/cilantro_patch");
+	event.add("tfc:feature/crops", "tfg:earth/cumin_patch");
+	event.add("tfc:feature/crops", "tfg:earth/oregano_patch");
+	event.add("tfc:feature/crops", "tfg:earth/pimento_patch");
+	event.add("tfc:feature/crops", "tfg:earth/vanilla_patch");
+	// TODO: add mustard
 
 	// Other decoration
 	// Old worldgen

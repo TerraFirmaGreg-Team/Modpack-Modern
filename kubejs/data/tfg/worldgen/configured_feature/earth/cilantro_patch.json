@@ -3,9 +3,14 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "tfc:tall_wild_crop",
+				"type": "minecraft:simple_block",
 				"config": {
-					"block": "tfg:flax_wild"
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "firmalife:plant/cilantro"
+						}
+					}
 				}
 			},
 			"placement": [
@@ -24,17 +29,14 @@
 					"predicate": {
 						"type": "would_survive",
 						"state": {
-							"Name": "tfg:flax_wild",
-							"Properties": {
-								"part": "bottom"
-							}
+							"Name": "firmalife:plant/cilantro"
 						}
 					}
 				}
 			]
 		},
-		"tries": 8,
-		"xz_spread": 10,
+		"tries": 12,
+		"xz_spread": 8,
 		"y_spread": 1
 	}
 }
