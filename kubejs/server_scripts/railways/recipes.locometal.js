@@ -1,6 +1,4 @@
 "use strict";
-// NEW ITEMS:
-// Wrapped Smokebox wrapped_locometal_smokebox
 
 const locometalDyeGroups = {
 	riveted_locometal: '#railways:palettes/dye_groups/riveted',
@@ -67,6 +65,19 @@ const LOCOMETAL_COLORS = [
 
 const registerRailwaysLocometalRecipes = (event) => {
 	// Base & Wrapped Locometal Boiler
+	event.shapeless('railways:locometal_boiler', [
+		'#railways:palettes/cycle_groups/netherite/base',
+		'create:fluid_tank',
+		'#forge:tools/screwdrivers'
+	]).id('tfg:shapeless/locometal_boiler')
+
+	event.recipes.createItemApplication(['railways:brass_wrapped_locometal_boiler'], ['railways:locometal_boiler', '#forge:plates/brass'])
+		.id('tfg:railways/item_application/brass_wrapped_locometal_boiler')
+	event.recipes.createItemApplication(['railways:copper_wrapped_locometal_boiler'], ['railways:locometal_boiler', '#forge:plates/copper'])
+		.id('tfg:railways/item_application/copper_wrapped_locometal_boiler')
+	event.recipes.createItemApplication(['railways:iron_wrapped_locometal_boiler'], ['railways:locometal_boiler', '#forge:plates/wrought_iron'])
+		.id('tfg:railways/item_application/iron_wrapped_locometal_boiler')
+
 	event.recipes.gtceu.assembler(`tfg:railways/locometal_boiler`)
 		.itemInputs('#railways:palettes/cycle_groups/netherite/base', `create:fluid_tank`)
 		.circuit(1)
@@ -93,6 +104,13 @@ const registerRailwaysLocometalRecipes = (event) => {
 		.EUt(28)
 	
 	// Wrapped Locometal Recipes
+	event.recipes.createItemApplication(['railways:brass_wrapped_locometal'], ['railways:slashed_locometal', '#forge:bolts/brass'])
+		.id('tfg:railways/item_application/brass_wrapped_locometal')
+	event.recipes.createItemApplication(['railways:copper_wrapped_locometal'], ['railways:slashed_locometal', '#forge:bolts/copper'])
+		.id('tfg:railways/item_application/copper_wrapped_locometal')
+	event.recipes.createItemApplication(['railways:iron_wrapped_locometal'], ['railways:slashed_locometal', '#forge:bolts/wrought_iron'])
+		.id('tfg:railways/item_application/iron_wrapped_locometal')
+
 	event.recipes.gtceu.chemical_bath(`railways:brass_wrapped_locometal`)
 		.itemInputs(`railways:slashed_locometal`)
 		.inputFluids('gtceu:brass 18')
@@ -116,6 +134,13 @@ const registerRailwaysLocometalRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES);
 
 	// Wrapped Smokebox Recipes
+	event.recipes.createItemApplication(['railways:wrapped_locometal_smokebox'], ['railways:locometal_smokebox', '#forge:bolts/brass'])
+		.id('tfg:railways/item_application/wrapped_locometal_smokebox')
+	event.recipes.createItemApplication(['railways:copper_wrapped_locometal_smokebox'], ['railways:locometal_smokebox', '#forge:bolts/copper'])
+		.id('tfg:railways/item_application/copper_wrapped_locometal_smokebox')
+	event.recipes.createItemApplication(['railways:iron_wrapped_locometal_smokebox'], ['railways:locometal_smokebox', '#forge:bolts/wrought_iron'])
+		.id('tfg:railways/item_application/iron_wrapped_locometal_smokebox')
+
 	event.recipes.gtceu.chemical_bath(`railways:brass_wrapped_locometal_smokebox`)
 		.itemInputs(`railways:locometal_smokebox`)
 		.inputFluids('gtceu:brass 18')
@@ -180,10 +205,12 @@ const registerRailwaysLocometalRecipes = (event) => {
 
 	// Base RNR Flywheel Recipes
 	event.shapeless('railways:locometal_flywheel', [
-		'create:flywheel'
+		'create:flywheel',
+		'#forge:tools/screwdrivers'
 	]).id('tfg:shapeless/create_flywheel_to_snr_flywheel')
 	event.shapeless('create:flywheel', [
-		'railways:locometal_flywheel'
+		'railways:locometal_flywheel',
+		'#forge:tools/screwdrivers'
 	]).id('tfg:shapeless/snr_flywheel_to_create_flywheel')
 
 	// Locometal Glass Block Recipes
@@ -294,6 +321,13 @@ const registerRailwaysLocometalRecipes = (event) => {
 				}
 				
 			// Wrapped Locometal Colored Recipes
+			event.recipes.createItemApplication([`railways:${color}_brass_wrapped_locometal`], [`railways:${color}_slashed_locometal`, '#forge:bolts/brass'])
+				.id(`tfg:railways/item_application/${color}_brass_wrapped_locometal`)
+			event.recipes.createItemApplication([`railways:${color}_copper_wrapped_locometal`], [`railways:${color}_slashed_locometal`, '#forge:bolts/copper'])
+				.id(`tfg:railways/item_application/${color}_copper_wrapped_locometal`)
+			event.recipes.createItemApplication([`railways:${color}_iron_wrapped_locometal`], [`railways:${color}_slashed_locometal`, '#forge:bolts/wrought_iron'])
+				.id(`tfg:railways/item_application/${color}_iron_wrapped_locometal`)
+
 			event.recipes.gtceu.chemical_bath(`tfg:brass_locometal_bathing/${color}`)
 				.itemInputs('#railways:palettes/dye_groups/brass_wrapped_slashed')
 				.inputFluids(Fluid.of(`${x.dye}`, 18))
@@ -320,6 +354,26 @@ const registerRailwaysLocometalRecipes = (event) => {
 				.category(GTRecipeCategories.CHEM_DYES)
 
 			// Base & Wrapped Boiler Colored Recipes
+			event.shapeless(`railways:${color}_locometal_boiler`, [
+				`#railways:palettes/cycle_groups/${color}/base`,
+				`create:fluid_tank`,
+				`#forge:tools/screwdrivers`
+			]).id(`tfg:shapeless/${color}_locometal_boiler`)
+
+			event.recipes.createItemApplication([`railways:${color}_brass_wrapped_locometal_boiler`], [`railways:${color}_locometal_boiler`, '#forge:plates/brass'])
+				.id(`tfg:railways/item_application/${color}_brass_wrapped_locometal_boiler`)
+			event.recipes.createItemApplication([`railways:${color}_copper_wrapped_locometal_boiler`], [`railways:${color}_locometal_boiler`, '#forge:plates/copper'])
+				.id(`tfg:railways/item_application/${color}_copper_wrapped_locometal_boiler`)
+			event.recipes.createItemApplication([`railways:${color}_iron_wrapped_locometal_boiler`], [`railways:${color}_locometal_boiler`, '#forge:plates/wrought_iron'])
+				.id(`tfg:railways/item_application/${color}_iron_wrapped_locometal_boiler`)
+
+			event.recipes.gtceu.assembler(`tfg:railways/${color}_locometal_boiler`)
+				.itemInputs(`#railways:palettes/cycle_groups/${color}/base`, `create:fluid_tank`)
+				.circuit(1)
+				.itemOutputs(`railways:${color}_locometal_boiler`)
+				.duration(200)
+				.EUt(28)
+
 			event.recipes.gtceu.chemical_bath(`tfg:railways/locometal_boiler/color/${color}`)
 				.itemInputs('#railways:palettes/dye_groups/boiler')
 				.inputFluids(Fluid.of(`${x.dye}`, 72))
@@ -354,6 +408,13 @@ const registerRailwaysLocometalRecipes = (event) => {
 				.category(GTRecipeCategories.CHEM_DYES)
 
 			// Wrapped Smokebox Colored Recipes
+			event.recipes.createItemApplication([`railways:${color}_wrapped_locometal_smokebox`], [`railways:${color}_locometal_smokebox`, '#forge:bolts/brass'])
+				.id(`tfg:railways/item_application/${color}_wrapped_locometal_smokebox`)
+			event.recipes.createItemApplication([`railways:${color}_copper_wrapped_locometal_smokebox`], [`railways:${color}_locometal_smokebox`, '#forge:bolts/copper'])
+				.id(`tfg:railways/item_application/${color}_copper_wrapped_locometal_smokebox`)
+			event.recipes.createItemApplication([`railways:${color}_iron_wrapped_locometal_smokebox`], [`railways:${color}_locometal_smokebox`, '#forge:bolts/wrought_iron'])
+				.id(`tfg:railways/item_application/${color}_iron_wrapped_locometal_smokebox`)
+
 			event.recipes.gtceu.chemical_bath(`tfg:brass_locometal_smokebox_bathing/${color}`)
 				.itemInputs('#railways:palettes/dye_groups/brass_wrapped_smokebox')
 				.inputFluids(Fluid.of(`${x.dye}`, 18))
