@@ -115,6 +115,35 @@ const registerTFGItemTags = (event) => {
 	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
 	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
+
+	// Tag for new lenses
+
+	event.add('forge:lenses/orange', 'gtceu:spessartine_lens')
+	event.remove('forge:lenses/orange', 'gtceu:orange_glass_lens')
+	event.add('forge:lenses/cyan', 'gtceu:apatite_lens')
+	event.remove('forge:lenses/cyan', 'gtceu:cyan_glass_lens')
+
+	const LENS_TAGS = [
+    ['emerald',      'green',      'gtceu:emerald_lens',      'gtceu:green_glass_lens'],
+    ['sapphire',     'blue',       'gtceu:sapphire_lens',     'gtceu:blue_glass_lens'],
+    ['ruby',         'red',        'gtceu:ruby_lens',         'gtceu:red_glass_lens'],
+    ['diamond',      'light_blue', 'gtceu:diamond_lens',      'gtceu:light_blue_glass_lens'],
+    ['apatite',      'cyan',       'gtceu:apatite_lens',      'gtceu:cyan_glass_lens'],
+    ['spessartine',  'orange',     'gtceu:spessartine_lens',  'gtceu:orange_glass_lens'],
+    ['yellow_garnet','yellow',     'gtceu:yellow_garnet_lens','gtceu:yellow_glass_lens'],
+    ['olivine',      'lime',       'gtceu:olivine_lens',      'gtceu:lime_glass_lens'],
+    ['amethyst',     'purple',     'gtceu:amethyst_lens',     'gtceu:purple_glass_lens'],
+    ['grossular',    'brown',      'gtceu:grossular_lens',    'gtceu:brown_glass_lens'],
+    ['armalcolite',  'gray',       'gtceu:armalcolite_lens',  'gtceu:gray_glass_lens'],
+    ['coal',         'black',      'gtceu:coal_lens',         'gtceu:black_glass_lens'],
+	];
+
+	LENS_TAGS.forEach(([material, colour, gemLens, glassLens]) => {
+		event.add(`forge:lenses/${colour}`, gemLens);
+		event.remove(`forge:lenses/${colour}`, glassLens);
+		event.removeAllTagsFrom(glassLens);
+		event.add("c:hidden_from_recipe_viewers", glassLens);
+	});
 }
 
 //#region Blocks
@@ -194,6 +223,16 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
+	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_beer')
+	event.add('tfg:alcohols', 'tfg:vintage_cider')
+	event.add('tfg:alcohols', 'tfg:vintage_rum')
+	event.add('tfg:alcohols', 'tfg:vintage_sake')
+	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
+	event.add('tfg:alcohols', 'tfg:vintage_mead')
+	event.add('tfg:alcohols', 'tfg:vintage_vodka')
+	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
 

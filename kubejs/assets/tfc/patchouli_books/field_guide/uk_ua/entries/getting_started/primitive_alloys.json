@@ -20,21 +20,21 @@
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
 			"title": "Бронза",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Олова$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
 			"title": "Бісмутова бронза",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 30 % : $(thing)Цинку$()$(li)50 - 65 % : $(thing)Міді$()$(li)10 - 20 % : $(thing)Бісмуту$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
 			"title": "Чорна бронза",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)50 - 70 % : $(thing)Міді$()$(li)10 - 25 % : $(thing)Срібла$()$(li)10 - 25 % : $(thing)Золота$()$(br2)"
 		},
 		{
@@ -47,21 +47,21 @@
 			"anchor": "brass",
 			"item": "create:brass_ingot",
 			"title": "Латунь",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Цинку$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "Рожеве золото",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)15 - 30 % : $(thing)Міді$()$(li)70 - 85 % : $(thing)Золота$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
 			"title": "Стерлінгове срібло",
-			"link_recipes": "§8Утримуйте Shift, щоб показати інформацію з ремонтування",
+			"link_recipes": false,
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 40 % : $(thing)Міді$()$(li)60 - 80 % : $(thing)Срібла$()$(br2)"
 		}
 	],

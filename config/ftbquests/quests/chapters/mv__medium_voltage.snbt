@@ -672,7 +672,11 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["26394C1290D70AB6"]
+			dependencies: [
+				"26394C1290D70AB6"
+				"5063FDFFBE3E4855"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.medium_voltage.mv_multi_smelter.desc}"]
 			icon: "gtceu:multi_smelter"
 			id: "6DDDE2268B691F74"
@@ -685,7 +689,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_multi_smelter.title}"
-			x: 4.5d
+			x: -0.5d
 			y: 19.5d
 		}
 		{
@@ -1573,28 +1577,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"26394C1290D70AB6"
-				"5063FDFFBE3E4855"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.medium_voltage.lsb.desc}"]
-			icon: "gtceu:steel_large_boiler"
-			id: "730D7C10DEED3117"
-			optional: true
-			shape: "heart"
-			size: 1.5d
-			subtitle: "{quests.medium_voltage.lsb.subtitle}"
-			tasks: [{
-				id: "67728209D0BE18B1"
-				item: "gtceu:steel_large_boiler"
-				type: "item"
-			}]
-			title: "{quests.medium_voltage.lsb.title}"
-			x: -0.5d
-			y: 19.5d
-		}
-		{
 			dependencies: ["315169840E06110F"]
 			description: ["{quests.medium_voltage.mv_cpu.desc}"]
 			icon: "gtceu:cpu_chip"
@@ -2092,6 +2074,7 @@
 			]
 			id: "6DCF1E5EFFE24901"
 			shape: "heart"
+			size: 1.25d
 			subtitle: "{quests.medium_voltage.large_steel_boiler.subtitle}"
 			tasks: [{
 				id: "1041BC3BF3B54F2E"
