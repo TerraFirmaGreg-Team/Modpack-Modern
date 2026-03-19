@@ -43,6 +43,27 @@ BlockEvents.rightClicked(event => {
 	}
 })
 
+// Dry ice drop
+BlockEvents.broken('tfc:dry_ice', event => {
+    const player = event.player
+    if (!player) return
+
+    const tool = player.mainHandItem
+    if (!tool || tool.isEmpty()) return
+    if (!tool.nbt) return
+
+    const nbt = `${tool.nbt}`
+
+    const hasHarvestIce = nbt.includes('HarvestIce:1b')
+    const hasRequiredLevel =
+        nbt.includes('HarvestLevel:3')
+
+    if (hasHarvestIce && hasRequiredLevel) {
+        event.block.popItem(event.block.id)
+    }
+})
+//#endregion
+
 /**
  *
  * @param {Internal.Player} player
@@ -54,4 +75,3 @@ function getTFGPersistentDataRoot(player) {
 	}
 	return player.persistentData.getCompound("tfg:custom_data")
 }
-
