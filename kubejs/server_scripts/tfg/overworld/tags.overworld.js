@@ -17,6 +17,30 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
 	
+	event.add('tfc:makes_red_dye', 'tfg:plant/kinnikinnick')
+	event.add('tfc:makes_red_dye', 'tfg:plant/tank_bromeliad')
+	event.add('tfc:makes_brown_dye', 'tfg:plant/shawiash')
+	event.add('tfc:makes_pink_dye', 'tfg:plant/ramunda')
+	event.add('tfc:makes_pink_dye', 'tfg:plant/moss_campion')
+	event.add('tfc:makes_magenta_dye', 'tfg:plant/azalea')
+	event.add('tfc:makes_yellow_dye', 'tfg:plant/buttercup')
+	event.add('tfc:makes_yellow_dye', 'tfg:plant/yellow_saxifrage')
+	event.add('tfc:makes_yellow_dye', 'tfg:plant/cycad')
+	event.add('tfc:makes_orange_dye', 'tfg:plant/elegant_sunburst_lichen')
+	event.add('tfc:makes_orange_dye', 'tfg:plant/palash')
+	event.add('tfc:makes_orange_dye', 'tfg:plant/qantu')
+	event.add('tfc:makes_orange_dye', 'tfg:plant/flame_vine')
+	event.add('tfc:makes_green_dye', 'tfg:plant/prickly_pear')
+	event.add('tfc:makes_green_dye', 'tfg:plant/prickly_pear_purple')
+	event.add('tfc:makes_green_dye', 'tfg:plant/silken_pincushion_cactus')
+	event.add('tfc:makes_blue_dye', 'tfg:plant/cornflower')
+	event.add('tfc:makes_light_blue_dye', 'tfg:plant/mountain_hullwort')
+	event.add('tfc:makes_light_blue_dye', 'tfg:plant/penwortel')
+	event.add('tfc:makes_purple_dye', 'tfg:plant/ramirezella')
+	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
+	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
+	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
+	
 	global.TFC_MUD_TYPES.forEach(dirt => {
 		event.add('tfc:dirt', `tfg:duff/${dirt}`)
 		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
@@ -58,7 +82,9 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_green');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_purple');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_orange');
-	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');	
+	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');
+
+	event.add('tfc:can_be_snow_piled', '#firmalife:butterfly_grass_mutants');
 	
 	event.add('tfc:dirt', 'tfg:coarse_dirt/sandy_loam')
 	event.add('tfc:dirt', 'tfg:coarse_dirt/silty_loam')

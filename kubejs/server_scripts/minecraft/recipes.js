@@ -946,13 +946,6 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
 
-	//#region Slime
-	event.smelting('tfc:glue', 'minecraft:slime_ball')
-		.id('tfg:smelting/slime_to_glue')
-	event.smelting('tfc:glue', 'minecraft:magma_cream')
-		.id('tfg:smelting/magma_cream_to_glue')
-
-
 	//#region Mushrooms
 
 	event.shapeless('4x minecraft:red_mushroom', ['minecraft:red_mushroom_block', '#forge:tools/knives'])
