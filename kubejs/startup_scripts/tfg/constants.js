@@ -250,7 +250,6 @@ global.ICE_SAW_BLACKLIST = [
 	"gtceu:black_steel_saw",
 	"gtceu:arsenic_bronze_saw",
 	"gtceu:damascus_steel_saw"
-	"gtceu:invar_saw"
 ];
 
 /**
