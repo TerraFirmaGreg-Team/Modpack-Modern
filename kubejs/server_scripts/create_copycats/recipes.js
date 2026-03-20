@@ -73,40 +73,72 @@ const registerCreateCopycatsRecipes = (event) => {
 		B: '#forge:plates/zinc'
 	}).id('tfg:copycats/shaped/copycat_fluid_pipe')
 
-  // Stonecutting
-  event.stonecutting("4x copycats:copycat_block", "#forge:ingots/zinc")
-  event.stonecutting("8x copycats:copycat_slab", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_stairs", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_vertical_stairs", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_fence", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_wall", "#forge:ingots/zinc")
-  event.stonecutting("16x copycats:copycat_vertical_step", "#forge:ingots/zinc")
-  event.stonecutting("16x copycats:copycat_beam", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_slice", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_vertical_slice", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_corner_slice", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_ghost_block", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_layer", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_half_panel", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_pane", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_flat_pane", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_byte", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_byte_panel", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_board", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_half_layer", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_vertical_half_layer", "#forge:ingots/zinc")
-  event.stonecutting("64x copycats:copycat_stacked_half_layer", "#forge:ingots/zinc")
-  event.stonecutting("8x copycats:copycat_slope", "#forge:ingots/zinc")
-  event.stonecutting("8x copycats:copycat_vertical_slope", "#forge:ingots/zinc")
-  event.stonecutting("32x copycats:copycat_slope_layer", "#forge:ingots/zinc")
-  event.stonecutting("copycats:copycat_door", "#forge:ingots/zinc")
-  event.stonecutting("copycats:copycat_sliding_door", "#forge:ingots/zinc")
-  event.stonecutting("copycats:copycat_folding_door", "#forge:ingots/zinc")
-  event.stonecutting("copycats:copycat_trapdoor", "#forge:ingots/zinc")
-  event.stonecutting("4x copycats:copycat_fence_gate", "#forge:ingots/zinc")
-  event.stonecutting("24x copycats:copycat_ladder", "#forge:ingots/zinc")
+  event.shaped('copycats:copycat_wooden_pressure_plate', [
+    ' A ',
+    'ABA',
+    ' A '
+  ], {
+    A: 'copycats:copycat_block',
+    B: '#minecraft:wooden_pressure_plates'
+  }).id('tfg:copycats/shaped/copycat_wooden_pressure_plate')
 
-  // GT Assembler
+  event.shaped('copycats:copycat_stone_pressure_plate', [
+    ' A ',
+    'ABA',
+    ' A '
+  ], {
+    A: 'copycats:copycat_block',
+    B: '#minecraft:stone_pressure_plates'
+  }).id('tfg:copycats/shaped/copycat_stone_pressure_plate')
+
+  const COPYCAT_DATA = [
+    { id: 'copycat_block', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_slab', multiplier: '8', extract_count: '1' },
+    { id: 'copycat_stairs', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_vertical_stairs', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_fence', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_wall', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_vertical_step', multiplier: '16', extract_count: '1' },
+    { id: 'copycat_beam', multiplier: '16', extract_count: '1' },
+    { id: 'copycat_slice', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_vertical_slice', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_corner_slice', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_ghost_block', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_layer', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_half_panel', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_pane', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_flat_pane', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_byte', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_byte_panel', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_board', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_half_layer', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_vertical_half_layer', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_stacked_half_layer', multiplier: '64', extract_count: '4' },
+    { id: 'copycat_slope', multiplier: '8', extract_count: '1' },
+    { id: 'copycat_vertical_slope', multiplier: '8', extract_count: '1' },
+    { id: 'copycat_slope_layer', multiplier: '32', extract_count: '2' },
+    { id: 'copycat_door', multiplier: '1', extract_count: '1' },
+    { id: 'copycat_sliding_door', multiplier: '1', extract_count: '1' },
+    { id: 'copycat_folding_door', multiplier: '1', extract_count: '1' },
+    { id: 'copycat_trapdoor', multiplier: '1', extract_count: '1' },
+    { id: 'copycat_fence_gate', multiplier: '4', extract_count: '1' },
+    { id: 'copycat_ladder', multiplier: '24', extract_count: '1' }
+  ]
+  
+  COPYCAT_DATA.forEach(copycat => {
+    // Stonecutter Recipes
+    event.stonecutting(`${copycat.multiplier}x copycats:${copycat.id}`, "#forge:ingots/zinc")
+
+    // Recycling Recipes
+    event.recipes.gtceu.extractor(`tfg:copycats/${copycat.id}_recyle`)
+      .itemInputs(`${copycat.extract_count}x copycats:${copycat.id}`)
+      .outputFluids(Fluid.of('gtceu:zinc', 144 / copycat.multiplier * copycat.extract_count))
+      .duration(20)
+      .EUt(GTValues.VA[GTValues.LV])
+      .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+  })
+
+  // Copycat Fluid Pipe Assembler
   event.recipes.gtceu.assembler('tfg:copycats/copycat_fluid_pipe')
 		.itemInputs('2x #forge:plates/zinc')
 		.circuit(3)
@@ -114,4 +146,40 @@ const registerCreateCopycatsRecipes = (event) => {
 		.duration(200)
 		.EUt(20)
 		.addMaterialInfo(true)
+
+  // Other Recycling Recipes
+  event.recipes.gtceu.extractor('tfg:copycats/copycat_catwalk_recyle')
+    .itemInputs('2x copycats:copycat_catwalk')
+    .outputFluids(Fluid.of('gtceu:zinc', 27))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
+    .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+  event.recipes.gtceu.extractor('tfg:copycats/copycat_box_recyle')
+    .itemInputs('copycats:copycat_box')
+    .outputFluids(Fluid.of('gtceu:zinc', 27))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
+    .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+  event.recipes.gtceu.extractor('tfg:copycats/copycat_fluid_pipe_recyle')
+    .itemInputs('copycats:copycat_fluid_pipe')
+    .outputFluids(Fluid.of('gtceu:zinc', 288))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
+    .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+  event.recipes.gtceu.extractor('tfg:copycats/copycat_wooden_pressure_plate_recyle')
+    .itemInputs('copycats:copycat_wooden_pressure_plate')
+    .outputFluids(Fluid.of('gtceu:zinc', 144))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
+    .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+  event.recipes.gtceu.extractor('tfg:copycats/copycat_stone_pressure_plate_recyle')
+    .itemInputs('copycats:copycat_stone_pressure_plate')
+    .outputFluids(Fluid.of('gtceu:zinc', 144))
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.LV])
+    .category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 }

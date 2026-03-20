@@ -26,7 +26,7 @@ function registerTFGCoilMaterials(event) {
 		.secondaryColor(0x95999a)
 		.iconSet(GTMaterialIconSet.ROUGH)
 		.ingot()
-		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*95))
+		.blastTemp(2341, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.HV], (20*45))
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:silicon_carbide')

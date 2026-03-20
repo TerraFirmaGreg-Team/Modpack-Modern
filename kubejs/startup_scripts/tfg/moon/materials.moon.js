@@ -76,6 +76,7 @@ function registerTFGMoonMaterials(event) {
 		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
 		.ore()
 		.addOreByproducts('ilmenite', 'magnesium', 'ilmenite')
+		.flags(GTMaterialFlags.GENERATE_LENS)
 
 	event.create('desh')
 		.components('2x olivine', '1x ilmenite', '4x nitrogen')
