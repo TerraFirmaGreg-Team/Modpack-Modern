@@ -19,7 +19,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+            "text": "$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()"
         },
 		{
 			"type": "tfc:rock_knapping_recipe",
