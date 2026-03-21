@@ -7915,25 +7915,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
+                    "file_name": "[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7026/33/[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
-                    "id": "7026033",
+                    "url": "https://edge.forgecdn.net/files/7781/942/[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
+                    "id": "7781942",
                     "parent_id": "952112",
                     "hashes": {
-                        "sha1": "72c7941c05b5c16fef512f8adcd2abed70c96951",
-                        "md5": "b60646246aad6a5f070439448a846b4e"
+                        "sha1": "b497874174ddc6bfc2feede786c65562accf7d6b",
+                        "md5": "53c81dea4fd11ac297e9eadc2440cef4"
                     },
                     "required_dependencies": [],
-                    "size": 39418388,
-                    "date_published": "2025-09-23T16:12:46.653Z"
+                    "size": 40748266,
+                    "date_published": "2026-03-19T20:23:23.087Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
+                    "file_name": "[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -7942,16 +7942,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vqrI97xw/versions/mT0iqDLb/[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
-                    "id": "mT0iqDLb",
+                    "url": "https://cdn.modrinth.com/data/vqrI97xw/versions/eKwyAiEx/[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
+                    "id": "eKwyAiEx",
                     "parent_id": "vqrI97xw",
                     "hashes": {
-                        "sha512": "524e41c1bab4add3d721f009add98ae9694bce03d54786e8b6380e466413e897061325a6880f2745001764b51d673f76d32ff23f9a6f0953d8201b40d8974573",
-                        "sha1": "72c7941c05b5c16fef512f8adcd2abed70c96951"
+                        "sha512": "98e0a8250a282aedaa8842f7e1558b21a1111226409c4cf21e6a335f0ddb602556f518d2e8fa8ed7ab75a47eeaeea0de7c35577e7f6b1d89ff2bb48838e7b756",
+                        "sha1": "b497874174ddc6bfc2feede786c65562accf7d6b"
                     },
                     "required_dependencies": [],
-                    "size": 39418388,
-                    "date_published": "2025-09-23T16:12:15.884510Z"
+                    "size": 40748266,
+                    "date_published": "2026-03-19T20:23:22.053218Z"
                 }
             ]
         },
@@ -15034,7 +15034,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "vintageimprovements-1.20.1-0.3.7.2.jar",
+                    "file_name": "vintageimprovements-1.20.1-0.3.7.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15042,18 +15042,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7783/979/vintageimprovements-1.20.1-0.3.7.2.jar",
-                    "id": "7783979",
+                    "url": "https://edge.forgecdn.net/files/7692/119/vintageimprovements-1.20.1-0.3.7.1.jar",
+                    "id": "7692119",
                     "parent_id": "1255448",
                     "hashes": {
-                        "sha1": "b70b0ba5f6ce45732f756c794c8994fb78b2843e",
-                        "md5": "ae1f179742ab75d3f925e662705e2951"
+                        "sha1": "a997014e6e53ce6fde544ab6ef1a520573b74f3a",
+                        "md5": "2c4561bd8d534d0146db918ee0927dfe"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 1391246,
-                    "date_published": "2026-03-20T08:15:38.197Z"
+                    "size": 1389876,
+                    "date_published": "2026-02-28T18:57:44.463Z"
                 }
             ]
         },
