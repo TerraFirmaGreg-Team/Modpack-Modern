@@ -413,4 +413,25 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
+
+	// Increase casing costs
+
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
+
+	// Modify HV Dynamo Hatch to be craftable before Cleanroom
+
+	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
+		.itemInputs('#forge:rods/magnetic_steel', '16x #forge:fine_wires/black_steel')
+		.itemOutputs('gtceu:hv_voltage_coil')
+		.circuit(1)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('gtceu:dynamo_hatch_hv')
+		.itemInputs('gtceu:hv_machine_hull', '2x #forge:springs/gold', '2x gtceu:ulpic_chip', 'gtceu:hv_voltage_coil')
+		.inputFluids('gtceu:sodium_potassium 1000')
+		.itemOutputs('gtceu:hv_energy_output_hatch')
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
 }

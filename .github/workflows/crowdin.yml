@@ -107,7 +107,7 @@ jobs:
           fi
 
       - name: Create Pull Request
-        uses: crowdin/github-action@v2.15.0
+        uses: crowdin/github-action@v2.15.2
         with:
           upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
           upload_translations: false
@@ -171,7 +171,7 @@ jobs:
           echo "Project name: $PROJECT_NAME"
 
       - name: Crowdin Translations Progress
-        uses: crowdin/github-action@v2.15.0
+        uses: crowdin/github-action@v2.15.2
         with:
           command: 'status translation'
           config: crowdin.yml

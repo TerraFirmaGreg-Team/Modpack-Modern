@@ -1,9 +1,8 @@
 {
-  "__COMMENT__": "此文件是由LanguageMerger自动生成的，请阅读\"minecraft/kubejs\"中发现的文件\".README IF TRANSLATING\"以获取更多信息。",
-  "block.sandworm_mod.thumper": "震击器",
-  "death.attack.worm": "%1$s葬身虫腹",
-  "entity.sandworm_mod.worm_chain": "沙虫",
-  "entity.sandworm_mod.worm_head_segment": "沙虫头部",
-  "entity.sandworm_mod.worm_segment": "沙虫躯体",
-  "item.sandworm_mod.sandworm_tooth": "沙虫牙齿"
+	"block.sandworm_mod.thumper": "震击器",
+	"death.attack.worm": "%1$s葬身虫腹",
+	"entity.sandworm_mod.worm_chain": "沙虫",
+	"entity.sandworm_mod.worm_head_segment": "沙虫头部",
+	"entity.sandworm_mod.worm_segment": "沙虫躯体",
+	"item.sandworm_mod.sandworm_tooth": "沙虫牙齿"
 }

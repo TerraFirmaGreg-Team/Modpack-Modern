@@ -137,6 +137,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('8x firmalife:pineapple_yarn')
 		.duration(50)
 		.EUt(7)
+		
+	event.remove({ id: 'firmalife:crafting/pineapple_yarn' })
 
 	// Pineapple Leather
 	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_leather`)

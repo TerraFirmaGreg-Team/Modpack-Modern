@@ -1,0 +1,17 @@
+{
+  "itemGroup.gtceuterminal": "GregTechCEu Terminal",
+
+  "item.gtceuterminal.multi_structure_manager": "Менеджер мультиблоков",
+  "item.gtceuterminal.schematic_interface": "Интерфейс схематик",
+  "item.gtceuterminal.dismantler": "Разборщик",
+
+  "item.gtceuterminal.terminal.success": "Мультиблок построен успешно",
+  "item.gtceuterminal.terminal.failed": "Не удалось построить Мультиблок",
+  "item.gtceuterminal.terminal.cooldown": "Терминал в кулдауне",
+  "item.gtceuterminal.terminal.not_controller": "Не является контроллером мультиблока",
+  "item.gtceuterminal.terminal.already_formed": "Мультиблок уже сформирован",
+
+  "item.gtceuterminal.multi_structure_manager.tooltip": "Управление и улучшение близких многоблоков",
+  "item.gtceuterminal.schematic_interface.tooltip": "Копирование и вставка многоблоков",
+  "item.gtceuterminal.dismantler.tooltip": "Разберите мультиблоки и верните компоненты"
+}

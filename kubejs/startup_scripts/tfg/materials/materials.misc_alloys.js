@@ -44,7 +44,8 @@ function registerTFGMiscAlloyMaterials(event) {
 		.blastTemp(3041, $BlastProperty.GasTier.MID, GTValues.VA[GTValues.HV], 1500)
 		.flags(
 			GTMaterialFlags.GENERATE_PLATE,
-			GTMaterialFlags.GENERATE_ROD)
+			GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_LONG_ROD)
 
 
 	// Material for MV
@@ -56,9 +57,8 @@ function registerTFGMiscAlloyMaterials(event) {
 		.color(0x6A6D73)
 		.secondaryColor(0x5A5148)
 		.components('5x nickel', '3x chromium', '2x cobalt', '1x molybdenum', '1x aluminium', '1x boron', '1x carbon')
-		.blastTemp(1780, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*75))
+		.blastTemp(1780, $BlastProperty.GasTier.LOW, GTValues.VA[GTValues.MV], (20*37))
 		.flags(
-			GTMaterialFlags.DISABLE_DECOMPOSITION,
 			GTMaterialFlags.GENERATE_PLATE,
 			GTMaterialFlags.GENERATE_FOIL,
 			GTMaterialFlags.GENERATE_ROD,
@@ -91,5 +91,6 @@ function registerTFGMiscAlloyMaterials(event) {
         .flags(
    	        GTMaterialFlags.GENERATE_PLATE,
             GTMaterialFlags.GENERATE_ROD,
+			GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.DISABLE_DECOMPOSITION)
 }

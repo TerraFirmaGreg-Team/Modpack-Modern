@@ -199,11 +199,11 @@ function registerTFGFoodRecipes(event) {
 				])
 			})
 
-			//Note: Jam needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwhich ingredients.
-			//1 Jam
+			//Note: preserves needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwich ingredients.
+			// 1 jam + 2 cheese
 			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
 				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich_2'],
+				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
 				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
@@ -212,10 +212,10 @@ function registerTFGFoodRecipes(event) {
 				])
 			})
 
-			//2 Jam
+			// 2 jam + 1 cheese. Uses preserves_2 alias so GT's RecipeDB gives this a distinct tree key from recipe 1.
 			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
 				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves', '1x #tfc:foods/usable_in_jam_sandwich_2'],
+				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves_2', '1x #tfc:foods/usable_in_jam_sandwich'],
 				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '2x tfc:empty_jar'],
 				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
@@ -224,7 +224,7 @@ function registerTFGFoodRecipes(event) {
 				])
 			})
 
-			//3 Jam
+			// 3 jam
 			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '3x #tfc:foods/preserves'],
@@ -1300,6 +1300,9 @@ function registerTFGFoodRecipes(event) {
 	
 	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
+
+	event.recipes.tfc.heating('tfg:food/raw_bison_meat', 200)
+		.resultItem(TFC.isp.of('tfg:food/cooked_bison_meat').copyFood())
 	
 	event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
 		.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())

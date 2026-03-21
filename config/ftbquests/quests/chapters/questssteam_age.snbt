@@ -74,13 +74,6 @@
 			y: 12.5d
 		}
 		{
-			id: "61DCD50394B7FF0E"
-			linked_quest: "33263404ED38C6D2"
-			shape: "heart"
-			x: -16.5d
-			y: 4.5d
-		}
-		{
 			id: "6C8C3BBD2BA9853B"
 			linked_quest: "56CA2EB7812529C5"
 			shape: "gear"
@@ -2028,6 +2021,31 @@
 			title: "{quests.steam_age.cobalt_brass.title}"
 			x: -15.5d
 			y: 13.5d
+		}
+		{
+			dependencies: [
+				"2C35D4E01AEC02AA"
+				"6E186F9C57155BFA"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.steam_age.large_bronze_boiler.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.large_bronze_boiler.desc.2}"
+				"{@pagebreak}"
+				"{quests.steam_age.large_bronze_boiler.desc.3}"
+			]
+			id: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.steam_age.large_bronze_boiler.subtitle}"
+			tasks: [{
+				id: "6D8BDDF41B0A5384"
+				item: "tfg:large_bronze_boiler"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 16.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

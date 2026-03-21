@@ -1,6 +1,62 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- Circuit change for Tier 1 Rocket Fin / ASM Alloy Mixer / Rocket Fin Tier 2 / Rocket Cone Tier 2 to avoid recipe conflicts @TomPlop
+- Chorus-Infused Ceramic Insulation now requires a fluix crystal instead of dust, to avoid a recipe conflict (#3411) @Pyritie
+- All other laser engraver lens recipes now require gem lenses instead of glass ones (#3460) @TomPlop
+### Changes
+- Cleaned up some of the stonecutter recipes so there should be fewer duplicates @Pyritie @SpicyNoodle5
+- Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
+- Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
+- Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
+- The highest tier airplanes now actually require stainless steel as their quest says @Pyritie
+- Added more gem slurries for ore processing and lens crafting (#3460) @TomPlop
+- Sped up the crafting times of basalt fiber insulation and silicon carbide (#3460) @TomPlop
+- More balance changes to the new large boilers, and added EMI tabs for the information (#3460) @TomPlop
+### Bug fixes
+- Fixed the field guide not working @Mqrius
+- Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77
+- Fixed not being able to macerate Raw Suevite @Pyritie
+- Fixed René-41 so it makes twice as much dust in the mixer, but halved the duration of the EBF/cooling recipes and doubled the cost of the foils per coil, so the end result is the same (#3446) @Pyritie
+- Fixed being able to stonecut slabs back into full blocks (#3156) @Pyritie 
+- Fixed being able to dupe chorus fruit by repeatedly breaking and placing a chorus flower (#3433) @Pyritie
+- Fixed Keratophyre missing a texture when knapping (#3418) @Pyritie
+- Fixed High Voltage Coils only requiring 1 black steel fine wire instead of 16 like the others @Pyritie
+### Translation updates
+
+## [0.11.27] - 13-03-2026
+### Changes
+- Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
+- Added a new Large Steam Turbine that has a base production of 2048 EU/t but can't accept higher Rotors than EV @TomPlop
+- Removed vanilla advancements @Mqrius
+- Added copper spindle, with much more durability than the clay one (#3345) @DrEthan77
+- Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
+- New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
+- TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
+- Changed the recipe of Steel Pipe Casing and Magnalium Turbine Casing @TomPlop
+- Added a Repair Kit item so you can finally repair your GregTech Tools! Recipes for armor and other things coming soon. @TomPlop @Redeix
+- Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
+- Added a 16A HV Dynamo Hatch @TomPlop
+- Adjusted how fast the player heats up and cools down @Pyritie
+- Lowered the fluid temperatures of polysilicon, bakelite, and phenolic resin @Pyritie
+### Bug fixes
+- Fixed crashes with the Greate encased fan @Electrolyte220
+- Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
+- Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
+- Fixed livestock breeding failing often @Mqrius
+- Fixed a crash with the rotten voiding cover @Mqrius
+- Fixed the EMI recipes for the Artisan Table @Mqrius
+- Fixed arsenic bronze drops from primitive illagers (#3386) @Mqrius
+- Fixed a ton of log spam relating to the new steam n rails update (#3361) @SakuraKitsurugi 
+- Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
+- Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
+- Maybe fixed being able to use shipping containers on trains (#3402) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis
+
+## [0.11.26] - 10-03-2026
 ### Changes
 - Liquid concrete mixer recipes now have circuits, to fix some conflicts (#3264) @Pyritie
 - Primitive Illagers now drop new unique Arsenic Bronze tools instead of cobalt brass @Pyritie
@@ -8,6 +64,8 @@
 - Improved performance of Supports and TFC animals @Mqrius
 - Added ways to convert mars water into normal water (#3298) @Pyritie
 - Added missing electrolyzer recipe for Sodium Sulfate (#3302) @sqcode06
+- Obsidian can now be picked up with any tier of tool @Pyritie
+- Quest updates @Pyritie @TomPlop
 ### Bug fixes
 - Fixed crafting table recipes involving a knife being removed (#3291) @Pyritie
 - Fixed tools having 1/6 of their intended durability (#3329) @TomPlop
@@ -25,6 +83,12 @@
 - Fixed not being able to craft crimsene and warpane crystals in a vat (#3318) @Pyritie
 - Fixed the aluminium sulfide recipe not working (#3302) @sqcode06
 - Fixed the block texture of the solar panel casings (#3328) @Pyritie
+- Fixed holding Ctrl over seeds would open the wrong page of the field guide (#3348) @lysteryale
+- Fixed rotten voiding cover not able to be placed on machines (#3343) @gustovafing
+- Fixed not being able to use a wrench to pick up GT lamps (#3243) @Pyritie
+- Fixed bioreactor glass connected textures @Pyritie
+- Fixed factory gauges to use the diode tag instead of just the diode item (#3353) @Bumperdo09
+- Fixed the igneous felsic dust recipes so they aren't an infinite source of sulfur @Pyritie
 ### Mod updates
 #### EMI++
 - Added (#3285) @SakuraKitsurugi
@@ -37,6 +101,18 @@
 - Fixed encased fans not processing faster at different RPMs
 #### Digger Helmet
 - Added higher tiers of helmets
+#### Steam 'n' Rails
+- Moss carpets and snow can now "encase" rails
+- Many many new locometal blocks (with TFG recipes (#3340) @SakuraKitsurugi)
+- And [lots of bugfixes](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails/files/7698358)
+#### AE2
+- Pressing a hotkey over an entry in a terminal will in-world highlight the locations where item stacks are stored @ko-lja
+- The crafting confirmation and status screens can now have their height changed @ko-lja
+#### TerraFirmaCraft
+- Fixed some issues with double crops
+- Fixed cat genetics
+- Fixed to animals running around constantly @Mqrius
+- Fixed krummholz not spawning @Pyritie
 ### Translation updates
 - Ukranian @MetEnBouldry @furrydenis
 - Chinese (simplified) @jmecn
