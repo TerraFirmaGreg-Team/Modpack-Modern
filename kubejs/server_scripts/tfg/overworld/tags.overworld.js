@@ -3,6 +3,8 @@
 function registerTFGOverworldItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/flame_vine_plant')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/cycad_plant')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:volcanic_ash')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/volcanic_ash')
 
 	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
 		event.add('tfc:plants', plant);
@@ -16,6 +18,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfg:anemones', "tfg:plant/anemone_purple");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
+	event.add('tfc:compost_browns', '#tfg:anemones');
 	
 	event.add('tfc:makes_red_dye', 'tfg:plant/kinnikinnick')
 	event.add('tfc:makes_red_dye', 'tfg:plant/tank_bromeliad')
@@ -40,22 +43,6 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
-	
-	global.TFC_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-	})
-
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-		event.add('tfc:farmland', `tfg:farmland/${dirt}`)
-		event.add('tfc:dirt', `tfg:dirt/${dirt}`)
-		event.add('tfc:dirt', `tfg:clay/${dirt}`)
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-		event.add('tfc:grass', `tfg:grass/${dirt}`)
-		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
-	})
 }
 
 function registerTFGOverworldBlockTags(event) {
@@ -84,18 +71,30 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_orange');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');
 
-	event.add('tfc:can_be_snow_piled', '#firmalife:butterfly_grass_mutants');
-	
-	event.add('tfc:dirt', 'tfg:coarse_dirt/sandy_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silty_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silt')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/loam')
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/basil');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/bay_laurel');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cardamom');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cilantro');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cumin');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/oregano');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/pimento');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/vanilla');
 
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-		event.add('tfc:grass', `tfg:grass/${dirt}`)
-		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
-	})
+	event.removeAll('firmalife:butterfly_grass_mutants');
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bluegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bromegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fountain_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/orchard_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/pampas_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/raddia_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/ryegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/scutch_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/switchgrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fall_fescue_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/timothy_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
+
+	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -107,12 +106,6 @@ function registerTFGOverworldBiomeTags(event) {
 
 	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/burren_plains')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/burren_plateau')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/cenote_highlands')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/cenote_plains')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/cenote_plateau')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/doline_highlands')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/doline_plains')
-	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/doline_plateau')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/drumlins')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/extinct_shield_volcano')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfg:earth/grassy_dunes')
@@ -176,17 +169,9 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illages', 'tfc:plateau')
 	event.add('tfg:has_structure/illages', 'tfc:old_mountains')
 
-	event.add('tfg:has_structure/illages', 'tfg:earth/ancient_shield_volcano')
 	event.add('tfg:has_structure/illages', 'tfg:earth/burren_plains')
 	event.add('tfg:has_structure/illages', 'tfg:earth/burren_plateau')
-	event.add('tfg:has_structure/illages', 'tfg:earth/cenote_highlands')
-	event.add('tfg:has_structure/illages', 'tfg:earth/cenote_plains')
-	event.add('tfg:has_structure/illages', 'tfg:earth/cenote_plateau')
-	event.add('tfg:has_structure/illages', 'tfg:earth/doline_plains')
-	event.add('tfg:has_structure/illages', 'tfg:earth/doline_plateau')
 	event.add('tfg:has_structure/illages', 'tfg:earth/drumlins')
-	event.add('tfg:has_structure/illages', 'tfg:earth/dormant_shield_volcano')
-	event.add('tfg:has_structure/illages', 'tfg:earth/extinct_shield_volcano')
 	event.add('tfg:has_structure/illages', 'tfg:earth/hills')
 	event.add('tfg:has_structure/illages', 'tfg:earth/hoodoos')
 	event.add('tfg:has_structure/illages', 'tfg:earth/inverted_patterned_ground')
@@ -353,6 +338,8 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/patterned_ground')
 	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/inverted_patterned_ground')
 	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/knob_and_kettle')
+	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/mud_flats')
+	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/salt_flats')
 	
 	event.add('tfc:ruined_world:has_structure/small_structure', '#tfc:ruined_world:has_structure/large_structure')
 	event.add('tfc:ruined_world:has_structure/small_structure', 'tfg:earth/old_mountains')
@@ -475,10 +462,14 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
-	event.add("tfc:in_biome/underground_decoration", "tfg:earth/volcano_spout");
 	// New worldgen
 	event.add("tfg:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/oil_spout");
-	event.add("tfg:in_biome/underground_decoration", "tfg:earth/volcano_spout");
+
+	// Volcanoes
+	event.add("tfg:feature/volcanoes", "tfg:earth/volcano/random_cinder_cone");
+
+	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
+	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 }

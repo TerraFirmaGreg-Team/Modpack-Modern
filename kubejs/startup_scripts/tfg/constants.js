@@ -255,19 +255,6 @@ global.ICE_SAW_BLACKLIST = [
 /**
  * @type {string[]}
  */
-global.NEW_OVERWORLD_AQUATICS = [
-	"tfg:plant/anemone_green",
-	"tfg:plant/anemone_purple",
-	"tfg:plant/anemone_large_orange",
-	"tfg:plant/anemone_large_purple",
-	"tfg:plant/barnacles",
-	"tfg:plant/mussels",
-	"tfg:plant/starfish"
-];
-
-/**
- * @type {string[]}
- */
 global.NEW_OVERWORLD_PLANTS = [
 	"tfg:plant/red_oat_grass",
 	"tfg:plant/azalea",

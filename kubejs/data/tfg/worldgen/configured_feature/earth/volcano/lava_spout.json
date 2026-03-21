@@ -1,5 +1,5 @@
 {
-	"type": "gtceu:fluid_sprout",
+	"type": "tfg:encased_spout",
 	"config": {
 		"fluid": "minecraft:lava",
 		"size": {
@@ -14,7 +14,7 @@
 			"type": "minecraft:uniform",
 			"value": {
 				"max_inclusive": 2,
-				"min_inclusive": 0
+				"min_inclusive": 1
 			}
 		}
 	}

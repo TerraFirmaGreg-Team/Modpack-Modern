@@ -1,0 +1,30 @@
+{
+    "pools": [{
+        "entries": [{
+            "children": [
+                {
+                    "name": "tfg:plant/red_oat_grass",
+                    "type": "minecraft:item",
+                    "conditions": [{
+                        "predicate": {"items": "#c:tools/shear"},
+                        "condition": "minecraft:match_tool"
+                    }]
+                },
+                {
+                    "name": "tfc:straw",
+                    "type": "minecraft:item",
+                    "conditions": [{
+                        "predicate": {"items": "#tfc:tools/sharp"},
+                        "condition": "minecraft:match_tool"
+                    }]
+                }
+            ],
+            "type": "minecraft:alternatives"
+        }],
+        "name": "loot_pool",
+        "rolls": 1,
+        "conditions": [{"condition": "minecraft:survives_explosion"}]
+    }],
+    "__comment__": "This file was automatically created by mcresources",
+    "type": "minecraft:block"
+}

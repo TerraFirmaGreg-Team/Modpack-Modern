@@ -203,33 +203,4 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:mongoose')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addWeightedLoot([1], ['tfc:small_raw_hide'])
-
-	// TFC 1.21 plants
-	global.NEW_OVERWORLD_AQUATICS.forEach(aquatic => {
-		console.log(`loot: ${aquatic}`)
-		event.addBlockLootModifier(aquatic)
-			.removeLoot(Ingredient.all)
-			.matchMainHand(Ingredient.of(['#forge:shears', '#tfc:sharp_tools']))
-			.addLoot(aquatic)
-	})
-
-	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
-		console.log(`loot: ${plant}`)
-		if (plant === "tfg:plant/red_oat_grass") {
-			event.addBlockLootModifier(plant)
-				.removeLoot(Ingredient.all)
-				.matchMainHand('#forge:shears')
-				.addLoot(plant)
-
-			event.addBlockLootModifier(plant)
-				.matchMainHand('#tfc:sharp_tools')
-				.addLoot('tfc:straw')
-		}
-		else {
-			event.addBlockLootModifier(plant)
-				.removeLoot(Ingredient.all)
-				.matchMainHand(Ingredient.of(['#forge:shears', '#tfc:sharp_tools']))
-				.addLoot(plant)
-		}
-	})
 };

@@ -1,0 +1,16 @@
+{
+	"feature": "tfg:earth/volcano/obsidian_rivulet",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfg:cinder_cone",
+			"distance": 0.7
+		}
+	]
+}

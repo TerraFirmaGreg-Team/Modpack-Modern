@@ -1,0 +1,16 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:earth/volcano/basalt_replace_all_center",
+			"tfg:earth/volcano/basalt_replace_all_edges",
+			"tfg:earth/volcano/magma_rivulet",
+			"tfg:earth/volcano/volcano_caldera",
+			"tfg:earth/volcano/random_volcano_fissure",
+			"tfg:earth/volcano/lava_spout",
+			"tfg:earth/lava_surface_spring",
+			"tfg:earth/volcano/sulfur_patch",
+			"tfg:earth/volcano/volcanic_ash_pile"
+		]
+	}
+}
