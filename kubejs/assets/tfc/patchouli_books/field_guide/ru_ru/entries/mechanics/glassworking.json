@@ -10,25 +10,27 @@
     },
     {
       "type": "patchouli:crafting",
+      "title": "Смесь для силикатного стекла",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "Партии стекла затем можно изготовить, используя один из вышеупомянутых цветов песка, плюс $(l:mechanics/glassworking#lime)Известь$() и тип $(l:mechanics/glassworking#potash)Поташа$()."
     },
     {
-      "type": "tfc:heat_recipe",
+      "type": "patchouli:smelting",
       "anchor": "lime",
       "recipe": "tfc:heating/lime",
       "text": "$(thing)Известь$() - один из ингредиентов, необходимых для изготовления партий стекла. Это порошок, получаемый $(l:mechanics/heating)нагреванием$() $(l:mechanics/flux)флюса$()."
     },
     {
-      "type": "tfc:heat_recipe",
+      "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfc:heating/soda_ash_from_seaweed",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda",
       "text": "Также требуется тип $(thing)Поташа$() или эквивалент для партий стекла. Можно использовать $(thing)Соду$(), которая является порошком, полученным путём нагревания $(thing)Высушенных водорослей$() или $(thing)Ламинарии$(). Также можно использовать $(l:the_world/ores_and_minerals#saltpeter)селитру$()."
     },
     {
       "type": "patchouli:text",
       "text": "Стеклоделие выполняется, начиная с партии стекла, а затем завершая ряд этапов. Эти этапы могут требовать специфических инструментов: $(br)$(li)$(l:mechanics/glassworking#blowpipe)Духовая трубка$(), для $(thing)Дутья$() и $(thing)Растягивания$()$(li)$(l:mechanics/glassworking#paddle)Лопатка$(), для $(thing)Выравнивания$()$(li)$(l:mechanics/glassworking#jacks)Щипцы$(), для $(thing)Защемления$()$(li)$(l:mechanics/glassworking#saw)Пила для драгоценных камней$(), для $(thing)Пиления$()",
-      "title": "Инструменты торговли"
+      "title": "Инструменты для стеклоделия"
     },
     {
       "type": "tfc:knapping_recipe",

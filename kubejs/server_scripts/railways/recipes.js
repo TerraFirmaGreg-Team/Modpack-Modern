@@ -60,10 +60,19 @@ const registerRailWaysRecipes = (event) => {
 		'screwlink_coupler'
 	]
 
+	event.shapeless('railways:link_and_pin', [
+		'minecraft:tripwire_hook',
+		'#forge:plates/steel',
+		'#forge:screws/steel',
+		'#forge:tools/hammers'
+	]).id('railways:shapeless/link_and_pin')
+
 	event.stonecutting(`railways:wooden_headstock`, '#minecraft:wooden_slabs');
 	event.stonecutting(`4x railways:copycat_headstock`, '#forge:ingots/zinc');
 
 	SNR_BASE_COUPLERS.forEach((coupler, i) => {
+		event.stonecutting(`#railways:deco_couplers`, `railways:${coupler}`);
+		
 		event.recipes.gtceu.assembler(`tfg:railways/${coupler}`)
 			.itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
 			.circuit(i + 1)
@@ -72,12 +81,22 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(28)
 			.addMaterialInfo(true)
 
+		event.shapeless(`railways:wooden_headstock_${coupler}`, [
+			`railways:${coupler}`,
+			`railways:wooden_headstock`
+		]).id(`railways:shapeless/wooden_headstock_${coupler}`)
+
 		event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_${coupler}`)
 			.itemInputs(`railways:${coupler}`, `railways:wooden_headstock`)
 			.itemOutputs(`railways:wooden_headstock_${coupler}`)
 			.duration(200)
 			.EUt(28)
 			.addMaterialInfo(true)
+
+		event.shapeless(`railways:copycat_headstock_${coupler}`, [
+			`railways:${coupler}`,
+			`railways:copycat_headstock`
+		]).id(`railways:shapeless/copycat_headstock_${coupler}`)
 
 		event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_${coupler}`)
 			.itemInputs(`railways:${coupler}`, `railways:copycat_headstock`)
@@ -87,6 +106,12 @@ const registerRailWaysRecipes = (event) => {
 			.addMaterialInfo(true)
 	})
 
+	event.shapeless(`railways:small_buffer`, [
+		`#railways:deco_couplers`,
+		`#forge:ingots/steel`,
+		`#forge:tools/hammers`
+	]).id(`railways:shapeless/small_buffer`)
+
 	event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
 		.itemInputs(`#railways:deco_couplers`, `#forge:ingots/steel`)
 		.circuit(1)
@@ -94,6 +119,12 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
+
+	event.shapeless(`railways:big_buffer`, [
+		`railways:small_buffer`,
+		`#forge:ingots/steel`,
+		`#forge:tools/hammers`
+	]).id(`railways:shapeless/big_buffer`)
 
 	event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
 		.itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
@@ -103,6 +134,16 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
+	event.shaped('railways:buffer', [
+		'BAB',
+		'AAA',
+		'ACA'
+		], {
+		A: '#forge:rods/long/steel',
+		B: 'railways:small_buffer',
+		C: '#forge:tools/hammers'
+	}).id('railways:shaped/buffer')
+
 	event.recipes.gtceu.assembler(`tfg:railways/buffer`)
 		.itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
 		.circuit(1)
@@ -111,12 +152,22 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(28)
 		.addMaterialInfo(true)
 
+	event.shapeless(`railways:wooden_headstock_buffer`, [
+		`railways:small_buffer`,
+		`railways:wooden_headstock`
+	]).id(`railways:shapeless/wooden_headstock_buffer`)
+
 	event.recipes.gtceu.assembler(`tfg:railways/wooden_headstock_buffer`)
 		.itemInputs(`railways:small_buffer`, `railways:wooden_headstock`)
 		.itemOutputs(`railways:wooden_headstock_buffer`)
 		.duration(200)
 		.EUt(28)
 		.addMaterialInfo(true)
+
+	event.shapeless(`railways:copycat_headstock_buffer`, [
+		`railways:small_buffer`,
+		`railways:copycat_headstock`
+	]).id(`railways:shapeless/copycat_headstock_buffer`)
 
 	event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_buffer`)
 		.itemInputs(`railways:small_buffer`, `railways:copycat_headstock`)
@@ -411,7 +462,11 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(28)
 				
 		SNR_SMOKESTACK_TYPES.forEach(type => {
+	
 			if(mat.craft_mat != 'brass') {
+				event.recipes.createItemApplication([`railways:smokestack_${type}_brass_cap${mat.capped_mat}`], [`railways:smokestack_${type}${mat.base_mat}`, '#forge:bolts/brass'])
+					.id(`tfg:railways/item_application/smokestack_${type}_brass_cap${mat.capped_mat}`)
+
 				event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_brass_cap${mat.capped_mat}`)
 					.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
 					.inputFluids('gtceu:brass 18')
@@ -421,6 +476,9 @@ const registerRailWaysRecipes = (event) => {
 					.category(GTRecipeCategories.CHEM_DYES)
 			}
 			if(mat.craft_mat != 'copper') {
+				event.recipes.createItemApplication([`railways:smokestack_${type}_copper_cap${mat.capped_mat}`], [`railways:smokestack_${type}${mat.base_mat}`, '#forge:bolts/copper'])
+					.id(`tfg:railways/item_application/smokestack_${type}_copper_cap${mat.capped_mat}`)
+
 				event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_copper_cap${mat.capped_mat}`)
 					.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
 					.inputFluids('gtceu:copper 18')
@@ -429,6 +487,9 @@ const registerRailWaysRecipes = (event) => {
 					.EUt(24)
 					.category(GTRecipeCategories.CHEM_DYES)
 			}
+			event.recipes.createItemApplication([`railways:smokestack_${type}_iron_cap${mat.capped_mat}`], [`railways:smokestack_${type}${mat.base_mat}`, '#forge:bolts/wrought_iron'])
+				.id(`tfg:railways/item_application/smokestack_${type}_iron_cap${mat.capped_mat}`)
+
 			event.recipes.gtceu.chemical_bath(`railways:smokestack_${type}_iron_cap${mat.capped_mat}`)
 				.itemInputs(`railways:smokestack_${type}${mat.base_mat}`)
 				.inputFluids('gtceu:wrought_iron 18')
