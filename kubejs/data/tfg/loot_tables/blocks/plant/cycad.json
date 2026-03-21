@@ -4,7 +4,7 @@
             "name": "tfg:plant/cycad",
             "type": "minecraft:item",
             "conditions": [{
-                "predicate": {"items": "#tfc:tools/sharp"},
+                "predicate": {"items": "#tfc:sharp_tools"},
                 "condition": "minecraft:match_tool"
             }]
         }],

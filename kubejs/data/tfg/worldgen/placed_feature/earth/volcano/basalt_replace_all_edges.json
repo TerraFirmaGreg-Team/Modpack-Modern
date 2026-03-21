@@ -2,10 +2,6 @@
 	"feature": "tfg:earth/volcano/basalt_replace_all",
 	"placement": [
 		{
-			"type": "tfg:cinder_cone",
-			"distance": 0.1
-		},
-		{
 			"count": 20,
 			"type": "minecraft:count"
 		},
@@ -14,8 +10,8 @@
 			"xz_spread": {
 				"type": "minecraft:uniform",
 				"value": {
-					"min_inclusive": -6,
-					"max_inclusive": 6
+					"min_inclusive": -16,
+					"max_inclusive": 16
 				}
 			},
 			"y_spread": -2
@@ -25,4 +21,4 @@
 			"type": "minecraft:heightmap"
 		}
 	]
-}
+}r
