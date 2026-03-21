@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Жернов",
+  "name": "Нижняя часть жёрнова",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Жернов$() - это устройство для измельчения предметов. Он может производить порошки, $(l:mechanics/dye)красители$(), и некоторые другие предметы. Он собирается из $(thing)Основания$() и $(thing)Ручного камня$().$(br2)Жернов также может быть подключен к сети $(l:mechanics/mechanical_power#quern)Механической энергии$()."
+      "text": "$(thing)Жернов$() - это устройство для измельчения предметов. Он может производить порошки, $(l:mechanics/dye)красители$(), и некоторые другие предметы. Он собирается из $(thing)Основания жёрнова$() и $(thing) Верхней части жёрнова$().$(br2)Жернов также может быть подключен к сети $(l:mechanics/mechanical_power#quern)Механической энергии$()."
     },
     {
       "type": "patchouli:crafting",
@@ -52,28 +52,28 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/sulfur",
+      "title": "Дроблённая Руда",
+      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
       "text": "Жернов используется для изготовления различных $(thing)порошков$() из руд, например, $(thing)серы$()."
     },
     {
       "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/red_dye",
+      "title": "Порошки",
+      "recipe": "tfg:quern/sulfur_powder",
       "text": "$(l:mechanics/dye)Краситель$() можно получить из различных цветов."
     },
     {
       "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/emerald",
+      "title": "Красители",
+      "recipe": "tfc:quern/red_dye",
       "text": "$(thing)Драгоценные камни$() также могут быть измельчены в порошок."
     },
     {
-      "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/barley_grain",
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "tfc:foods/flour"
+      },
       "text": "$(thing)Мука$() также доступна из жернова."
-    },
-    {
-      "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/fluxstone",
-      "text": "$(l:mechanics/flux)флюс$() также можно получить из жернова."
     }
   ],
   "read_by_default": true
