@@ -1,5 +1,4 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
   "name": "Дикие культуры",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
@@ -23,7 +22,7 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Дикая пшеница",
+      "name": "Дикорастущая пшеница",
       "text": "Пример дикой культуры, в данном случае $(l:mechanics/crops#wheat)Пшеница$().",
       "enable_visualize": false
     },
@@ -330,7 +329,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Культура",
           "bold": true
         },
         {
@@ -378,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Пщеница"
+          "text": "Пшеница"
         },
         {
           "text": " -4 - 35"
@@ -469,7 +468,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Культура",
           "bold": true
         },
         {
@@ -535,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Помидор"
+          "text": "Томат"
         },
         {
           "text": "  0 - 36"
@@ -562,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Красный перец"
+          "text": "Красный болгарский перец"
         },
         {
           "text": " 16 - 30"
@@ -571,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Жёлтый перец"
+          "text": "Жёлтый болгарский перец"
         },
         {
           "text": " 16 - 30"
@@ -604,11 +603,11 @@
       "type": "patchouli:empty",
       "draw_filler": false
     },
-{
+    {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Растение",
+          "text": "Культура",
           "bold": true
         },
         {
