@@ -29,8 +29,4 @@ const registerTFGBlocks = (event) => {
 		.requiresTool(false)
 		.textureAll('tfg:item/deprecated')
 
-	event.create('gtceu:heat_exchanger')
-		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
 }
