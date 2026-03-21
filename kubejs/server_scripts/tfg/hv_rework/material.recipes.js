@@ -147,7 +147,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:titanium_tetrachloride', 1000))
 		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1), Item.of('gtceu:magnesium_chloride_dust', 6))
 		.duration(20 * 30)
-		.blastFurnaceTemp(2850)
+		.blastFurnaceTemp(2950)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	// Let's also do NaqLine here
@@ -158,7 +158,7 @@ function registerTFGHVMaterialRecipes(event) {
 		.itemOutputs(Item.of('gtceu:hot_titanium_ingot', 1))
 		.outputFluids(Fluid.of('gtceu:hydrofluoric_acid', 3000))
 		.duration(20 * 30)
-		.blastFurnaceTemp(2850)
+		.blastFurnaceTemp(2950)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
