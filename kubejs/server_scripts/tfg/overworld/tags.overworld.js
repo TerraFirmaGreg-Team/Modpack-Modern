@@ -40,22 +40,6 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
-	
-	global.TFC_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-	})
-
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-		event.add('tfc:farmland', `tfg:farmland/${dirt}`)
-		event.add('tfc:dirt', `tfg:dirt/${dirt}`)
-		event.add('tfc:dirt', `tfg:clay/${dirt}`)
-		event.add('tfc:dirt', `tfg:duff/${dirt}`)
-		event.add('tfc:dirt', `tfg:coarse_dirt/${dirt}`)
-		event.add('tfc:grass', `tfg:grass/${dirt}`)
-		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
-	})
 }
 
 function registerTFGOverworldBlockTags(event) {
@@ -84,18 +68,31 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_orange');
 	event.add('tfg:is_anemone', 'tfg:plant/anemone_large_purple');
 
-	event.add('tfc:can_be_snow_piled', '#firmalife:butterfly_grass_mutants');
-	
-	event.add('tfc:dirt', 'tfg:coarse_dirt/sandy_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silty_loam')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/silt')
-	event.add('tfc:dirt', 'tfg:coarse_dirt/loam')
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/basil');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/bay_laurel');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cardamom');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cilantro');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/cumin');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/oregano');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/pimento');
+	event.add('tfc:can_be_snow_piled', 'firmalife:plant/vanilla');
 
-	global.TFG_MUD_TYPES.forEach(dirt => {
-		event.add('tfc:mud_bricks', `tfg:mud_bricks/${dirt}`)
-		event.add('tfc:grass', `tfg:grass/${dirt}`)
-		event.add('tfc:grass', `tfg:clay_grass/${dirt}`)
-	})
+	event.removeAll('firmalife:butterfly_grass_mutants');
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/beachgrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bluegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bromegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fountain_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/orchard_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/pampas_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/raddia_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/ryegrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/scutch_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/switchgrass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/fall_fescue_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/timothy_grass')
+	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
+
+	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -480,5 +477,8 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/oil_spout");
-	event.add("tfg:in_biome/underground_decoration", "tfg:earth/volcano_spout");
+	//event.add("tfg:in_biome/underground_decoration", "tfg:earth/volcano_spout");
+
+	// Volcanoes
+	event.add("tfg:feature/volcanoes", "");
 }
