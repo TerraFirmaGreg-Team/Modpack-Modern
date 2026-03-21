@@ -5,17 +5,17 @@ function registerTFGEtchingRecipes(event) {
 
 	//#region Redstone Etching Fluids
 	event.recipes.gtceu.chemical_bath('tfg:redstone_nitrate')
-		.itemInputs(Item.of('minecraft:redstone', 1))
+		.itemInputs(Item.of('minecraft:redstone', 10))
 		.inputFluids(Fluid.of('gtceu:nitric_acid', 3000))
 		.outputFluids(Fluid.of('gtceu:hydrogen', 3000))
-		.itemOutputs(Item.of('tfg:redstone_nitrate_dust', 1))
+		.itemOutputs(Item.of('tfg:redstone_nitrate_dust', 10))
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:redstone_chloride')
-		.itemInputs(Item.of('tfg:redstone_nitrate_dust', 1))
-		.itemInputs(Item.of('gtceu:salt_dust', 3))
-		.itemOutputs(Item.of('tfg:sodium_nitrate_dust', 3))
+		.itemInputs(Item.of('tfg:redstone_nitrate_dust', 10))
+		.itemInputs(Item.of('gtceu:salt_dust', 6))
+		.itemOutputs(Item.of('tfg:sodium_nitrate_dust', 15))
 		.outputFluids(Fluid.of('tfg:redstone_chloride', 1000))
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -54,10 +54,10 @@ function registerTFGEtchingRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_nitrate_to_nitric_acid')
-		.itemInputs(Item.of('tfg:sodium_nitrate_dust', 1))
+		.itemInputs(Item.of('tfg:sodium_nitrate_dust', 5))
 		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
 		.outputFluids(Fluid.of('gtceu:nitric_acid', 1000))
-		.itemOutputs(Item.of('gtceu:salt_dust', 1))
+		.itemOutputs(Item.of('gtceu:salt_dust', 2))
 		.duration(30)
 		.EUt(GTValues.VA[GTValues.HV])
 

@@ -222,7 +222,7 @@ function registerTFGMultiblockRecipes(event) {
 		B: 'gtceu:ev_robot_arm'
 	}).addMaterialInfo().id('tfg:shaped/nuclear_fuel_factory')
 
-	event.recipes.gtceu.shaped('gtceu:heat_exchanger', [
+	event.recipes.gtceu.shaped('tfg:heat_exchanger', [
 		'TUT',
 		'WZW',
 		'GBG'
