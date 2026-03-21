@@ -1,12 +1,12 @@
 {
-	"name": "Лукошки",
+	"name": "Лукошко",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Лукошки",
+			"title": "Лукошко",
 			"item": {
 				"tag": "tfg:harvester"
 			},
