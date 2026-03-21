@@ -1,0 +1,9 @@
+{
+	"feature": "tfg:earth/volcano/random_cinder_cone",
+	"placement": [
+		{
+			"center": true,
+			"type": "tfg:cinder_cone"
+		}
+	]
+}

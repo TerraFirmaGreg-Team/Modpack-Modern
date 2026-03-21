@@ -1,0 +1,13 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:earth/volcano/basalt_replace_stone_center",
+			"tfg:earth/volcano/basalt_replace_stone_edges",
+			"tfg:earth/volcano/obsidian_rivulet",
+			"tfg:earth/volcano/water_caldera",
+			"tfc:random_active_hot_spring",
+			"tfg:earth/volcano/spring_water_surface_spring"
+		]
+	}
+}

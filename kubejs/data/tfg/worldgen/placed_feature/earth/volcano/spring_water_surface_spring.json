@@ -1,0 +1,18 @@
+{
+    "feature": "tfg:earth/volcano/spring_water_surface_spring",
+    "placement": [
+        {
+            "count": 70,
+            "type": "minecraft:count"
+        },
+        {"type": "minecraft:in_square"},
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "min_inclusive": {"absolute": 64},
+                "max_inclusive": {"absolute": 220},
+                "type": "uniform"
+            }
+        }
+    ]
+}
