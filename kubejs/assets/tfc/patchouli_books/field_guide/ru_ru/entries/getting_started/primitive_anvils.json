@@ -23,18 +23,18 @@
       "text": "Превращение центрального блока сырой породы в наковальню.",
       "multiblocks": [
         {
-          "pattern": [
-            [
-              " 0 "
-            ],
-            [
-              "RRR"
-            ]
-          ],
-          "mapping": {
-            "0": "AIR",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        " 0 "
+    ],
+    [
+        "RRR"
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         "tfc:rock_anvil"
       ]
@@ -50,167 +50,177 @@
       "text": "Добыча всех шести сторон куска сырого камня - после завершения центральный блок выпадет в виде предмета.",
       "multiblocks": [
         {
-          "pattern": [
-            [
-              "   ",
-              " R ",
-              "   "
-            ],
-            [
-              " R ",
-              "RRR",
-              " R "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              " R ",
-              "RRR",
-              " R "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              "   ",
-              "RRR",
-              " R "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              "   ",
-              " RR",
-              " R "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              "   ",
-              " RR",
-              "   "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              "   ",
-              " R ",
-              "   "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "tfc:rock/raw/gabbro",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
         },
         {
-          "pattern": [
-            [
-              "   ",
-              "   ",
-              "   "
-            ],
-            [
-              "   ",
-              " R ",
-              "   "
-            ],
-            [
-              "   ",
-              " 0 ",
-              "   "
-            ]
-          ],
-          "mapping": {
-            "0": "AIR",
-            "R": "tfc:rock/raw/gabbro"
-          }
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
         }
       ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Сварка - это процесс, при котором два предмета свариваются вместе, создавая новый предмет. Сварка работает одинаково как на $(l:getting_started/primitive_anvils)каменной наковальне$(), так и на металлической наковальне$().$(br2)Сначала вы должны поместить два предмета, которые хотите сварить, на наковальню. Это можно сделать либо, используя предметы на наковальне, либо открыв интерфейс наковальни и вставив их в два крайних левых слота.",
+      "title": "Сваривание на наковальне"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Вам также понадобится как минимум один $(l:mechanics/flux)флюс$() на наковальне для сварки. Затем, когда оба предмета $(l:mechanics/heating)достаточно нагреты$() для сварки - в подсказке будет сказано \"Можно сварить\" - вам нужно будет использовать любой $(thing)Молоток$() на наковальне. Вы услышите звук молотка, и предметы будут сварены вместе."
     }
   ],
   "read_by_default": true,
