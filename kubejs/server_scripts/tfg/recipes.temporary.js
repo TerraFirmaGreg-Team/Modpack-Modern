@@ -11,8 +11,8 @@ function registerTFGTemporaryRecipes(event) {
 	event.shapeless('tfg:ostrum_linear_accelerator', 'gtceu:ostrum_linear_accelerator')
 	event.shapeless('tfg:steam_bloomery', 'gtceu:steam_bloomery')
 	event.shapeless('tfg:heat_exchanger', 'gtceu:heat_exchanger')
-	event.shapeless('tfg:large_bronze_boiler', 'gtceu:large_bronze_boiler')
-	event.shapeless('tfg:large_steel_boiler', 'gtceu:large_steel_boiler')
+	event.shapeless('tfg:large_bronze_boiler', 'gtceu:bronze_large_boiler')
+	event.shapeless('tfg:large_steel_boiler', 'gtceu:steel_large_boiler')
 
 	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_dust')
 	event.shapeless('tfg:igneous_intermediate_dust', 'gtceu:diorite_dust')
