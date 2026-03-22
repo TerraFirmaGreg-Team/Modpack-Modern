@@ -19,10 +19,9 @@ No, this isn't the worldgen update. That's version 0.12.
 - Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
 - Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
 - The highest tier airplanes now actually require stainless steel as their quest says, and tweaked some of the other aircraft recipes @Pyritie
-- Added more gem slurries for ore processing and lens crafting (#3460) @TomPlop
+- Added more gem slurries for ore processing and lens crafting, although the Clean slurries won't be craftable until Venus (#3460) @TomPlop @SakuraKitsurugi
 - Sped up the crafting times of basalt fiber insulation and silicon carbide (#3460) @TomPlop
 - More balance changes to the new large boilers, and added EMI tabs for the information (#3460) @TomPlop
-- Added slurries for all the other gem ores, although the Clean slurries won't be craftable until Venus @TomPlop @SakuraKitsurugi
 - Added fuels for trains! Like with solid fuel, liquid fuels make your train go faster, except fluids have to be in a separate Fuel Tank. Most combustible liquid fuels work. (#3273) @SakuraKitsurugi
 - Increased the speed and acceleration of fuelled trains to double their unfuelled stats @Pyritie
 - Added recycling recipes for Input/Output Hatches/Buses (#3470) @Nixieeunrare
