@@ -2,7 +2,7 @@
 	"feature": "tfg:earth/volcano/basalt_replace_all",
 	"placement": [
 		{
-			"count": 20,
+			"count": 30,
 			"type": "minecraft:count"
 		},
 		{
@@ -10,15 +10,15 @@
 			"xz_spread": {
 				"type": "minecraft:uniform",
 				"value": {
-					"min_inclusive": -16,
-					"max_inclusive": 16
+					"min_inclusive": -12,
+					"max_inclusive": 12
 				}
 			},
-			"y_spread": -2
+			"y_spread": -4
 		},
 		{
 			"heightmap": "WORLD_SURFACE_WG",
 			"type": "minecraft:heightmap"
 		}
 	]
-}r
+}
