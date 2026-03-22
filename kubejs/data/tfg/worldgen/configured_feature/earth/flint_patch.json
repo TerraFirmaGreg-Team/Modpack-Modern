@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfc:groundcover/flint"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:heightmap",
+					"heightmap": "OCEAN_FLOOR_WG"
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "block_predicate_filter",
+								"predicate": {
+									"type": "tfc:replaceable"
+								}
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"offset": [ 0, -1, 0 ],
+								"tag": "forge:gravel"
+							}
+						]
+					}
+				}
+			]
+		},
+		"tries": 5,
+		"xz_spread": 5,
+		"y_spread": 1
+	}
+}
