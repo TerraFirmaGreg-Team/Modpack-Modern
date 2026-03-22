@@ -10,7 +10,7 @@
 							"conditions": [
 								{
 									"predicate": {
-										"items": "#forge:tools/shears"
+										"tag": "forge:shears"
 									},
 									"condition": "minecraft:match_tool"
 								}
@@ -22,7 +22,7 @@
 							"conditions": [
 								{
 									"predicate": {
-										"items": "#tfc:sharp_tools"
+										"tag": "tfc:sharp_tools"
 									},
 									"condition": "minecraft:match_tool"
 								}
