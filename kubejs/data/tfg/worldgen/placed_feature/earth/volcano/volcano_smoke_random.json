@@ -1,0 +1,16 @@
+{
+    "feature": "tfg:earth/volcano/volcano_smoke",
+    "placement": [
+        {
+            "type": "minecraft:rarity_filter",
+            "chance": 40
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        }
+    ]
+}
