@@ -40,6 +40,7 @@ function registerTFGPrimitiveItems(event) {
 
 	event.create('tfg:copper_spindle')
 		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
 		.maxDamage(120)
 		.texture('tfg:item/copper_spindle')
 	event.create('tfg:copper_spindle_head')

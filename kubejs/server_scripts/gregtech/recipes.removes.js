@@ -413,6 +413,22 @@ function removeGTCEURecipes(event) {
 
 	//#endregion
 
+	// Remove slurries from GT
+
+	event.remove({ id: 'gtceu:mixer/ruby_slurry_from_crushed_ruby' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/ruby_slurry_from_crushed_ruby' })
+	event.remove({ id: 'gtceu:mixer/ruby_slurry_from_washed_ruby' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/ruby_slurry_from_washed_ruby' })
+
+	event.remove({ id: 'gtceu:mixer/sapphire_slurry_from_washed_sapphire' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/sapphire_slurry_from_washed_sapphire' })
+	event.remove({ id: 'gtceu:mixer/sapphire_slurry_from_crushed_sapphire' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/sapphire_slurry_from_crushed_sapphire' })
+
+	event.remove({ id: 'gtceu:mixer/green_sapphire_slurry_from_crushed_green_sapphire' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/green_sapphire_slurry_from_crushed_green_sapphire' })
+	event.remove({ id: 'gtceu:mixer/green_sapphire_slurry_from_washed_green_sapphire' })
+	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/green_sapphire_slurry_from_washed_green_sapphire' })
 
 	//#region Выход: Маленькая кучка мяса
 
@@ -828,6 +844,11 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:steam_boiler/create_creative_blaze_cake' })
 	event.remove({ id: 'gtceu:large_boiler/create_creative_blaze_cake' })
 
+	event.remove({ id : 'gtceu:shaped/large_bronze_boiler' })
+	event.remove({ id : 'gtceu:shaped/large_steel_boiler' })
+	event.remove({ id : 'gtceu:shaped/titanium_large_boiler' })
+	event.remove({ id : 'gtceu:shaped/tungstensteel_large_boiler' })
+
 	
 	// Snow Stuffs
 
@@ -931,6 +952,7 @@ function removeGTCEURecipes(event) {
 function removeMaceratorRecipe(event, id) {
 	event.remove({ id: `gtceu:macerator/${id}` })
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/${id}` })
+	event.remove({ id: `greate:crushing/integration/gtceu/macerator/${id}` })
 }
 
 function removeCutterRecipe(event, id) {

@@ -34,7 +34,9 @@ function registerTFGCollapseRecipes(event) {
 				})
 			}
 
-			event.recipes.tfc.collapse(rock.cobble.block, `#forge:ores_in_ground/${rockId}`)
+			if (Ingredient.of(`#forge:ores_in_ground/${rockId}`).itemIds.toArray().length > 0) {
+				event.recipes.tfc.collapse(rock.cobble.block, `#forge:ores_in_ground/${rockId}`)
+			}
 
 			event.recipes.tfc.landslide(rock.cobble.block, rock.cobble.block);
 

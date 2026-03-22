@@ -422,7 +422,7 @@ const registerGTCEURecipes = (event) => {
 	// Modify HV Dynamo Hatch to be craftable before Cleanroom
 
 	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
-		.itemInputs('#forge:rods/magnetic_steel', '#forge:fine_wires/black_steel')
+		.itemInputs('#forge:rods/magnetic_steel', '16x #forge:fine_wires/black_steel')
 		.itemOutputs('gtceu:hv_voltage_coil')
 		.circuit(1)
 		.duration(20*20)

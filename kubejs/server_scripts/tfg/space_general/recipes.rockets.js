@@ -53,7 +53,7 @@ function registerTFGRocketRecipes(event) {
 		)
 		.itemOutputs('ad_astra:rocket_fin')
 		.duration(150)
-		.circuit(2)
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.HV])
 		.addMaterialInfo(true)
 
@@ -142,8 +142,8 @@ function registerTFGRocketRecipes(event) {
 		.itemInputs(Item.of('tfc:brick/basalt'))
 		.notConsumable(Item.of('gtceu:wire_extruder_mold'))
 		.itemOutputs(Item.of('#forge:fine_wires/basalt_fiber', 8))
-		.duration(20 * 17)
-		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20 * 8)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.chemical_bath(`tfg:foils_basalt_fiber`)
 		.itemInputs(Item.of('#forge:fine_wires/basalt_fiber', 64))
@@ -195,7 +195,7 @@ function registerTFGRocketRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:vanadium', 144 * 4))
 		.itemOutputs('32x #forge:dusts/rocket_alloy_t2')
 		.duration(15 * 20)
-		.circuit(5)
+		.circuit(4)
 		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/cool_rocket_alloy_t2')
@@ -210,7 +210,7 @@ function registerTFGRocketRecipes(event) {
 			'#forge:double_plates/titanium')
 		.itemOutputs('tfg:rocket_fin_t2')
 		.duration(180)
-		.circuit(3)
+		.circuit(1)
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true)
 
@@ -219,7 +219,7 @@ function registerTFGRocketRecipes(event) {
 			'#forge:double_plates/desh')
 		.itemOutputs('tfg:rocket_cone_t2')
 		.duration(1440)
-		.circuit(3)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.EV])
 		.addMaterialInfo(true)
 

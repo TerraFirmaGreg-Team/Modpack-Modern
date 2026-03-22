@@ -79,7 +79,7 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('gtceu.tooltip.machine.ostrum_linear_accelerator_3'));
 		text.add(4, Text.translate('tfg.tooltip.machine.two_energy_hatches'));
 	})
-	event.addAdvanced(['gtceu:heat_exchanger'], (item, advanced, text) => {
+	event.addAdvanced(['tfg:heat_exchanger'], (item, advanced, text) => {
 		text.add(1, Text.translate('gtceu.tooltip.machine.heat_exchanger_1'));
 		text.add(2, Text.translate('gtceu.tooltip.machine.heat_exchanger_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.perfect_overclock'));

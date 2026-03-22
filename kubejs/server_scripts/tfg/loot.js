@@ -169,4 +169,38 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:wraptor')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
+
+	// Leopard seal normal loot table
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addWeightedLoot([1], ['tfc:medium_raw_hide'])
+	
+	// Leopard seal extra with butchery knife
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 3], ['tfc:blubber'])
+
+	// Bison normal loot table
+	event.addEntityLootModifier('tfg:bison')
+		.addWeightedLoot([12, 20], ['tfg:food/raw_bison_meat'])
+		.addWeightedLoot([7, 10], ['minecraft:bone'])
+		.addWeightedLoot([1], ['tfc:large_raw_hide'])
+	
+	// Bison drop extra with butchery knife
+	event.addEntityLootModifier('tfg:bison')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 6], ['tfg:food/raw_bison_meat'])
+
+	event.addEntityLootModifier('tfg:lemming')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:jerboa')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:mongoose')
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addWeightedLoot([1], ['tfc:small_raw_hide'])
 };

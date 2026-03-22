@@ -5,14 +5,14 @@ import stylistic from '@stylistic/eslint-plugin'
 
 
 export default defineConfig([
-  { 
-    files: ["kubejs/startup_scripts/**/*.js", "kubejs/server_scripts/**/*.js", "kubejs/client_scripts/**/*.js"],
-    plugins: { 
-      "js": js, 
+  {
+    files: ["**/*.js"],
+    plugins: {
+      "js": js,
       "@stylistic": stylistic
-    }, 
+    },
 
-    extends: ["js/recommended"], 
+    extends: ["js/recommended"],
     languageOptions: { globals: globals.node, ecmaVersion: 2020 },
     rules: {
       "no-undef": "off",
@@ -24,7 +24,7 @@ export default defineConfig([
       "no-self-compare": "warn",
       "no-template-curly-in-string": "error",
       "no-unmodified-loop-condition": "warn",
-      "eqeqeq": "warn",
+      "eqeqeq": "off",
       "no-constant-condition": "warn",
       "no-duplicate-case": "error",
       "no-empty": "warn",
@@ -38,7 +38,7 @@ export default defineConfig([
       "no-useless-escape": "warn",
       "use-isnan": "error",
       "valid-typeof": "error",
-      "curly": ["warn", "multi-line"],
+      "curly": ["off", "multi-line"],
       "default-case-last": "warn",
       "no-else-return": "warn",
       "no-eval": "error",
@@ -50,14 +50,14 @@ export default defineConfig([
       "prefer-arrow-callback": "warn",
       "no-useless-concat": "warn",
       "yoda": ["warn", "never"],
-      
+
       "@stylistic/comma-style": [1, "last"],
       "@stylistic/function-call-spacing": [1, "never"],
       "@stylistic/no-floating-decimal": "error",
       "@stylistic/arrow-spacing": [1, { "before": true, "after": true }],
       "@stylistic/keyword-spacing": [1, { "before": true, "after": true }],
       "@stylistic/dot-location": [1, "property"],
-      "@stylistic/comma-dangle": [0, "allow"]
+      "@stylistic/comma-dangle": [0, "allow"]   
     }
   },
 ]);

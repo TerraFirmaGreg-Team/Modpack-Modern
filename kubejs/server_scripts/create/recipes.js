@@ -50,7 +50,7 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/stock_ticker_clear'},
 			{ id: 'create:crafting/logistics/factory_gauge_clear'},
 			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
-			{ type: 'minecraft:stonecutting' }
+			//{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
 	})
 	// Make Bound Cardboard craftable with all string
@@ -2394,6 +2394,20 @@ const registerCreateRecipes = (event) => {
 	
 	event.stonecutting("16x create:copycat_step", "#forge:ingots/zinc")
     event.stonecutting("16x create:copycat_panel", "#forge:ingots/zinc")
+
+	event.recipes.gtceu.extractor('tfg:create/copycat_step_recyle')
+    	.itemInputs('create:copycat_step')
+    	.outputFluids(Fluid.of('gtceu:zinc', 9))
+    	.duration(20)
+    	.EUt(GTValues.VA[GTValues.LV])
+    	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+	event.recipes.gtceu.extractor('tfg:create/copycat_panel_recyle')
+    	.itemInputs('create:copycat_panel')
+    	.outputFluids(Fluid.of('gtceu:zinc', 9))
+    	.duration(20)
+    	.EUt(GTValues.VA[GTValues.LV])
+    	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 
 	const create_metals = [
 		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
