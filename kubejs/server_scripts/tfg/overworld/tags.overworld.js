@@ -79,6 +79,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/oregano');
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/pimento');
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/vanilla');
+	event.add('tfc:can_be_snow_piled', 'beneath:sulfur');
 
 	event.removeAll('firmalife:butterfly_grass_mutants');
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bluegrass')
