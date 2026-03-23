@@ -467,6 +467,10 @@ function registerTFGOverworldPlacedFeatures(event) {
 	// Volcanoes
 	event.add("tfg:feature/volcanoes", "tfg:earth/volcano/random_cinder_cone");
 
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_smoke");
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_sulfur_patch");
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_ash_pile");
+
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
