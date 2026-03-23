@@ -86,7 +86,7 @@ function registerTFGWorldGenTrees(event) {
 			leaves.noDynamicTinting()
 			leaves.models((modelType, generator) => {
 				if (modelType.layers != 8) {
-					generator.parent("tfc:block/groundcover/fallen_leaves_height" + modelType.height);
+					generator.parent(`tfc:block/groundcover/fallen_leaves_height${modelType.height}`);
 					generator.texture("all", "ad_astra:block/glacian_leaves");
 				} else {
 					generator.parent("ad_astra:block/glacian_leaves");

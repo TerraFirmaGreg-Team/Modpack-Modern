@@ -138,7 +138,7 @@ function registerTFGClothRecipes(event) {
         'tfg:copper_spindle_head',
         'tfg:spindle_head_mold',
         TFC.fluidStackIngredient('gtceu:copper', 72),
-        .1
+        0.1
     ).id('tfg:casting/copper_spindle_head')
 	
 	event.recipes.tfc.anvil(

@@ -40,8 +40,8 @@ function registerGTCEUItemTags(event) {
     const saws = event.get('forge:tools/saws').getObjectIds().concat(event.get('forge:tools/chainsaws').getObjectIds());
     saws.forEach(sawId =>
     {
-        const id = sawId.getNamespace() + ":" + sawId.getPath();
-        if(global.ICE_SAW_BLACKLIST.includes(id) || Item.of(sawId).hasTag('forge:tools/buzzsaws'))
+        const id = `${sawId.getNamespace()}:${sawId.getPath()}`;
+        if (global.ICE_SAW_BLACKLIST.includes(id) || Item.of(sawId).hasTag('forge:tools/buzzsaws'))
         {
             return;
         }
