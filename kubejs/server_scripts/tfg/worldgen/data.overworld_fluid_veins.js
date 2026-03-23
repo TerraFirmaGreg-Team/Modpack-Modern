@@ -1,11 +1,29 @@
 "use strict";
 
-function registerTFGOverworldBedrockFluidVeins(event) {
-    const Registries = Java.loadClass("net.minecraft.core.registries.Registries");
-    const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
-    const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
+    /*
+        GLOBALS
+    */
 
-    const biomeKeys = {};
+    const biomeKeys = {}
+
+    const BIOME_GROUPS = {
+        seaWater: [],
+        freshWater: [],
+        oil: [],
+        gas: [],
+        volcanic: [],
+    }
+
+function registerTFGOverworldBedrockFluidVeins(event) {
+
+    const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+    const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
+    const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
+
+
+    /*
+        BIOME LIST
+    */
 
     const biomeNames = [
         "ocean",
@@ -119,13 +137,57 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         "stone_circles"
     ];
 
+    /*
+        CREATE BIOME KEYS
+    */
+
     for (let name of biomeNames) {
+
         biomeKeys[name] = ResourceKey.create(
             Registries.BIOME,
             new ResourceLocation("tfg", `earth/${name}`)
-        );
+        )
+
     }
 
+    /*
+        RESET GROUPS (for reload)
+    */
+
+    Object.values(BIOME_GROUPS).forEach(arr => arr.length = 0)
+
+    /*
+        DEFINE GROUPS
+    */
+
+    BIOME_GROUPS.seaWater.push(
+        [200, biomeKeys.ocean],
+        [200, biomeKeys.deep_ocean],
+        [200, biomeKeys.salt_marsh],
+    )
+
+    BIOME_GROUPS.freshWater.push(
+        [200, biomeKeys.river],
+        [200, biomeKeys.lake],
+    )
+
+    BIOME_GROUPS.volcanic.push(
+        [300, biomeKeys.volcanic_mountains],
+        [100, biomeKeys.mountains],
+    )
+
+    BIOME_GROUPS.oil.push(
+        [200, biomeKeys.mountains],
+        [200, biomeKeys.volcanic_mountains],
+    )
+
+    BIOME_GROUPS.gas.push(
+        [200, biomeKeys.mountains],
+    )
+
+    /*
+        REMOVE DEFAULT VEINS
+    */
 
     event.remove('gtceu:heavy_oil_deposit')
     event.remove('gtceu:light_oil_deposit')
@@ -133,6 +195,10 @@ function registerTFGOverworldBedrockFluidVeins(event) {
     event.remove('gtceu:oil_deposit')
     event.remove('gtceu:raw_oil_deposit')
     event.remove('gtceu:salt_water_deposit')
+
+    /*
+        STANDARD VEIN
+    */
 
 	event.add('tfg:heavy_oil', vein => {
 		vein.dimensions('minecraft:overworld')
@@ -200,41 +266,95 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.depletedYield(10)
 	})
 
-	//#region Ocean and Salt Water
+	/*
+        SEA WATER
+    */
 
-	const seaWaterBiomes = [
+    event.add('tfg:sea_water', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('tfc:salt_water').fluid)
+        BIOME_GROUPS.seaWater.forEach(([weight, biome]) => {
+            if (biome) vein.biomes(weight, biome)
+        })
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(650)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(30)
+    })
 
-	[200, biomeKeys.ocean],
-	[200, biomeKeys.ocean_reef],
-	[200, biomeKeys.deep_ocean],
-	[200, biomeKeys.deep_ocean_trench],
-	[200, biomeKeys.sunken_shield_volcano],
+    /*
+        WATER
+    */
 
-	[200, biomeKeys.oceanic_mountain_lake],
-	[200, biomeKeys.volcanic_oceanic_mountain_lake],
-	[200, biomeKeys.salt_marsh],
-	[200, biomeKeys.tower_karst_bay],
-	[200, biomeKeys.ice_sheet_oceanic_mountains],
-	[200, biomeKeys.ice_sheet_oceanic_mountains_edge],
-	[200, biomeKeys.ice_sheet_oceanic],
-	[200, biomeKeys.glaciated_oceanic_mountains],
-	]
+    event.add('tfg:water', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('minecraft:water').fluid)
+        BIOME_GROUPS.freshWater.forEach(([weight, biome]) => {
+            if (biome) vein.biomes(weight, biome)
+        })
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(650)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(30)
+    })
 
-	event.add('tfg:sea_water', vein => {
-		vein.dimensions('minecraft:overworld')
-		vein.fluid(() => Fluid.of('tfc:salt_water').fluid)
-		seaWaterBiomes.forEach(([weight, biome]) => {
-			if (biome) {
-				vein.biomes(weight, biome)
-			}
-		})
-		vein.weight(0)
-		vein.minimumYield(100)
-		vein.maximumYield(650)
-		vein.depletionAmount(1)
-		vein.depletionChance(20)
-		vein.depletedYield(30)
 
-	})
+    /*
+        OIL
+    */
 
+    event.add('tfg:oil', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('gtceu:oil').fluid)
+        BIOME_GROUPS.oil.forEach(([weight, biome]) => {
+            if (biome) vein.biomes(weight, biome)
+        })
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(650)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(30)
+    })
+
+
+    /*
+        NATURAL GAS
+    */
+
+    event.add('tfg:natural_gas', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('gtceu:natural_gas').fluid)
+        BIOME_GROUPS.gas.forEach(([weight, biome]) => {
+            if (biome) vein.biomes(weight, biome)
+        })
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(650)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(30)
+    })
+
+    /*
+        VOLCANIC OIL (example reuse)
+    */
+
+    event.add('tfg:volcanic_oil', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('gtceu:oil_heavy').fluid)
+        BIOME_GROUPS.volcanic.forEach(([weight, biome]) => {
+            if (biome) vein.biomes(weight, biome)
+        })
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(650)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(30)
+    })
 }

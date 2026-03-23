@@ -1,27 +1,27 @@
 {
     "entries": [
         {
-            "vein_ids": ["tfg:heavy_oil"],
+            "vein_ids": ["tfg:heavy_oil_spout"],
             "feature": "tfg:earth/spouts/heavy_oil_spout",
             "type": "spout"
         },
         {
-            "vein_ids": ["tfg:raw_oil"],
+            "vein_ids": ["tfg:raw_oil_spout"],
             "feature": "tfg:earth/spouts/raw_oil_spout",
             "type": "spout"
         },
         {
-            "vein_ids": ["tfg:light_oil"],
+            "vein_ids": ["tfg:light_oil_spout"],
             "feature": "tfg:earth/spouts/light_oil_spout",
             "type": "spout"
         },
         {
-            "vein_ids": ["tfg:oil"],
+            "vein_ids": ["tfg:oil_spout"],
             "feature": "tfg:earth/spouts/oil_spout",
             "type": "spout"
         },
         {
-            "vein_ids": ["tfg:natural_gas"],
+            "vein_ids": ["tfg:natural_gas_indicator"],
             "feature": "tfg:earth/spouts/gas_vent",
             "type": "structure"
         }
