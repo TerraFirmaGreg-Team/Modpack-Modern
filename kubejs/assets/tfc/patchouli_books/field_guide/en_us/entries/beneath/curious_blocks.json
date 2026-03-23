@@ -5,6 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
 			"recipe": "beneath:crafting/blackstone_aqueduct",
 			"text": "The Pyroxenite Aqueduct allows lava to be conducted at any distance."
 		},
