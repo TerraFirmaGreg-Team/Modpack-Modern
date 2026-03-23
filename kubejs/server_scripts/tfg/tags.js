@@ -38,7 +38,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
 
 	//Explosive Tag for the Gas Well
-	event.add('tfg:explosives', 'gtceu:powderbarrel', 'minecraft:tnt')
+	event.add('tfg:explosives', 'gtceu:powderbarrel', 'minecraft:tnt', 'gtceu:industrial_tnt', 'gtceu:dynamite')
 
 	// Tools
 	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
