@@ -9,7 +9,7 @@
 				"min_inclusive": 9
 			}
 		},
-		"sprout_chance": 1.0,
+		"sprout_chance": 0.01,
 		"surface_offset": {
 			"type": "minecraft:uniform",
 			"value": {

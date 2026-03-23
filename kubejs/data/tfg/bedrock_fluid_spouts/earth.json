@@ -1,0 +1,29 @@
+{
+    "entries": [
+        {
+            "vein_ids": ["tfg:heavy_oil"],
+            "feature": "tfg:earth/spouts/heavy_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:raw_oil"],
+            "feature": "tfg:earth/spouts/raw_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:light_oil"],
+            "feature": "tfg:earth/spouts/light_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:oil"],
+            "feature": "tfg:earth/spouts/oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:natural_gas"],
+            "feature": "tfg:earth/spouts/gas_vent",
+            "type": "structure"
+        }
+    ]
+}
