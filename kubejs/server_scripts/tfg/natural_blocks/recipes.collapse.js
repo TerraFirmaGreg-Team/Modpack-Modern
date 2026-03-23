@@ -85,6 +85,28 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/orange', 'tfg:sand/fluorapatite/orange')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/white')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/yellow')
+	
+	event.recipes.tfc.landslide('tfg:coarse_dirt/sandy_loam', 'tfg:coarse_dirt/sandy_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silty_loam', 'tfg:coarse_dirt/silty_loam')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/silt', 'tfg:coarse_dirt/silt')
+	event.recipes.tfc.landslide('tfg:coarse_dirt/loam', 'tfg:coarse_dirt/loam')
+	
+	event.recipes.tfc.landslide('tfc:dirt/sandy_loam', 'tfg:duff/sandy_loam')
+	event.recipes.tfc.landslide('tfc:dirt/silty_loam', 'tfg:duff/silty_loam')
+	event.recipes.tfc.landslide('tfc:dirt/silt', 'tfg:duff/silt')
+	event.recipes.tfc.landslide('tfc:dirt/loam', 'tfg:duff/loam')
+
+	global.TFG_MUD_TYPES.forEach(dirt => {
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:duff/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:mud/${dirt}`, `tfg:mud/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:farmland/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:dirt/${dirt}`, `tfg:grass_path/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay_grass/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:coarse_dirt/${dirt}`, `tfg:coarse_dirt/${dirt}`)
+	})
 
 	// Other
 	event.recipes.tfc.collapse("#forge:raw_ore_blocks");

@@ -1,0 +1,20 @@
+{
+	"feature": "tfg:earth/volcano/magma_rivulet",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -12,
+					"max_inclusive": 12
+				}
+			},
+			"y_spread": 0
+		}
+	]
+}

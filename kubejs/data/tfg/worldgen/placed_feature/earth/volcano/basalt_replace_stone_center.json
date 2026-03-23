@@ -1,0 +1,18 @@
+{
+	"feature": "tfg:earth/volcano/basalt_replace_stone",
+	"placement": [
+		{
+			"center": true,
+			"type": "tfg:cinder_cone"
+		},
+		{
+			"heightmap": "WORLD_SURFACE_WG",
+			"type": "minecraft:heightmap"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": -2
+		}
+	]
+}

@@ -58,13 +58,13 @@ let forestWeirdnessNoise = TFC.misc.newOpenSimplex2D(3210378120)
 	.map(i => 1.1 * Math.abs(i))
 	.clamped(0, 1)
 
-let cellularNoise = TFC.misc.cellular3D(678965856);
+//let cellularNoise = TFC.misc.cellular3D(678965856);
 
 //TFC.misc.register2DNoiseForInspection('temp', tempLayer)
 //TFC.misc.register2DNoiseForInspection('rain', rainLayer)
 //TFC.misc.register2DNoiseForInspection('forestType', forestDensityNoise)
 //TFC.misc.register2DNoiseForInspection('forestWeirdness', forestWeirdnessNoise)
-TFC.misc.register3DNoiseForInspection('cellular', cellularNoise);
+//TFC.misc.register3DNoiseForInspection('cellular', cellularNoise);
 
 // Forest layer
 let forestLayerNoise = TFC.misc.newOpenSimplex2D(3210378120)
