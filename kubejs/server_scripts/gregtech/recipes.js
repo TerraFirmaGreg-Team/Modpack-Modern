@@ -161,7 +161,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -170,7 +170,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');
@@ -179,7 +179,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover_recycle');
