@@ -3,14 +3,56 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "lithostitched:select",
 				"config": {
-					"to_place": {
-						"type": "minecraft:simple_state_provider",
-						"state": {
-							"Name": "tfc:groundcover/flint"
+					"features": [
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "tfc:groundcover/flint"
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							}
+						},
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "tfc:groundcover/flint",
+												"Properties": {
+													"fluid": "water"
+												}
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"minecraft:water",
+									"tfc:fluid/salt_water"
+								]
+							}
 						}
-					}
+					]
 				}
 			},
 			"placement": [
