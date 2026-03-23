@@ -903,7 +903,7 @@ function registerTFGNuclearRecipes(event) {
     event.recipes.deafission.hb_import('tfg:dense_steam')
         .inputFluids(Fluid.of('gtceu:dense_steam', 20))
         .outputFluids(Fluid.of('minecraft:water', 20))
-        .blastFurnaceTemp(1000)
+        .blastFurnaceTemp(910)
         .addData("hb_energy", 20)
 		.duration(5*20)
 		.hideDuration(true);

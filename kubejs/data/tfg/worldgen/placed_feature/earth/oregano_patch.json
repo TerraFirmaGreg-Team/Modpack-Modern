@@ -1,0 +1,20 @@
+{
+	"feature": "tfg:earth/oregano_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 80
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfc:climate",
+			"min_temperature": 5,
+			"max_temperature": 13,
+			"min_rainfall": 50,
+			"max_rainfall": 150,
+			"max_forest": "sparse"
+		}
+	]
+}

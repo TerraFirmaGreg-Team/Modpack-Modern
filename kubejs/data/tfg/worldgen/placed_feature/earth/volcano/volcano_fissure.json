@@ -1,0 +1,14 @@
+{
+    "feature": "tfg:earth/volcano/volcano_fissure",
+    "placement": [
+        {
+            "center": true,
+            "type": "tfg:cinder_cone"
+        },
+        {
+            "heightmap": "WORLD_SURFACE_WG",
+            "type": "minecraft:heightmap"
+        }
+    ],
+    "__comment__": "This file was automatically created by mcresources"
+}

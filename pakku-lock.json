@@ -26,7 +26,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "aaa-particles-forge-1.20.1-1.4.12.jar",
+                    "file_name": "aaa-particles-forge-1.20.1-2.0.0-beta.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -34,17 +34,17 @@
                         "forge",
                         "neoforge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7681/701/aaa-particles-forge-1.20.1-1.4.12.jar",
-                    "id": "7681701",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7788/263/aaa-particles-forge-1.20.1-2.0.0-beta.1.jar",
+                    "id": "7788263",
                     "parent_id": "979809",
                     "hashes": {
-                        "sha1": "aad849002f14cab33284523fe771671220d0ce51",
-                        "md5": "0119d8810eacc437c3950d05fd3877bb"
+                        "sha1": "8456c318385e9efcb1d71edcb418ae2fcb46bf35",
+                        "md5": "375a7481ac74633628ce37a2b4d709f3"
                     },
                     "required_dependencies": [],
-                    "size": 5256673,
-                    "date_published": "2026-02-26T15:10:26.933Z"
+                    "size": 5261626,
+                    "date_published": "2026-03-21T05:39:12.263Z"
                 },
                 {
                     "type": "modrinth",
@@ -7090,49 +7090,50 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "gtceuterminal-3.4.9.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/jIBIhAO2/versions/TZ9CvKqQ/gtceuterminal-3.4.9.jar",
-                    "id": "TZ9CvKqQ",
-                    "parent_id": "jIBIhAO2",
-                    "hashes": {
-                        "sha512": "bb6291cab091583a27cfafc0cce3c0017bb3f5e23d9de0027873f3f79fbdd226ab3cebabdbb19aa8de3f3185310d8a575f0bc27b4083f724493ea5d86d054dc4",
-                        "sha1": "8f0621826098dc4a3e9674d43d4166cc1892c219"
-                    },
-                    "required_dependencies": [],
-                    "size": 537956,
-                    "date_published": "2026-02-28T18:41:38.167296Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "gtceuterminal-3.4.9.jar",
+                    "file_name": "gtceuterminal-3.5.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7692/3/gtceuterminal-3.4.9.jar",
-                    "id": "7692003",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7787/678/gtceuterminal-3.5.10.jar",
+                    "id": "7787678",
                     "parent_id": "1423461",
                     "hashes": {
-                        "sha1": "8f0621826098dc4a3e9674d43d4166cc1892c219",
-                        "md5": "6bb9a4ceef473e000c762cd8c198579f"
+                        "sha1": "1095246a70f7d3427dcec33b59eefa648612f2a4",
+                        "md5": "ffa695a14b25ca6a19d1e3a15b783325"
                     },
                     "required_dependencies": [
-                        "223794",
                         "890405"
                     ],
-                    "size": 537956,
-                    "date_published": "2026-02-28T18:32:03.023Z"
+                    "size": 678307,
+                    "date_published": "2026-03-21T02:04:19.967Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "gtceuterminal-3.5.10.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/jIBIhAO2/versions/uNXTibdU/gtceuterminal-3.5.10.jar",
+                    "id": "uNXTibdU",
+                    "parent_id": "jIBIhAO2",
+                    "hashes": {
+                        "sha512": "a9ae344160e4409cf0f07adec247e23b63b39b682ab883c7d84b174655977411873656b5fb49ba102d566be7bfb4b8fe88ec77894fd09a871673a8efe6ea814d",
+                        "sha1": "1095246a70f7d3427dcec33b59eefa648612f2a4"
+                    },
+                    "required_dependencies": [
+                        "7tG215v7"
+                    ],
+                    "size": 678307,
+                    "date_published": "2026-03-21T02:04:40.424869Z"
                 }
             ]
         },
@@ -7914,25 +7915,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
+                    "file_name": "[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7026/33/[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
-                    "id": "7026033",
+                    "url": "https://edge.forgecdn.net/files/7781/942/[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
+                    "id": "7781942",
                     "parent_id": "952112",
                     "hashes": {
-                        "sha1": "72c7941c05b5c16fef512f8adcd2abed70c96951",
-                        "md5": "b60646246aad6a5f070439448a846b4e"
+                        "sha1": "b497874174ddc6bfc2feede786c65562accf7d6b",
+                        "md5": "53c81dea4fd11ac297e9eadc2440cef4"
                     },
                     "required_dependencies": [],
-                    "size": 39418388,
-                    "date_published": "2025-09-23T16:12:46.653Z"
+                    "size": 40748266,
+                    "date_published": "2026-03-19T20:23:23.087Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
+                    "file_name": "[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -7941,16 +7942,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vqrI97xw/versions/mT0iqDLb/[1.20.1_ver_0.19]_ILAORE's_TFC_32x.zip",
-                    "id": "mT0iqDLb",
+                    "url": "https://cdn.modrinth.com/data/vqrI97xw/versions/eKwyAiEx/[1.20.1_ver_0.22]_ILAORE's_TFC_32x.zip",
+                    "id": "eKwyAiEx",
                     "parent_id": "vqrI97xw",
                     "hashes": {
-                        "sha512": "524e41c1bab4add3d721f009add98ae9694bce03d54786e8b6380e466413e897061325a6880f2745001764b51d673f76d32ff23f9a6f0953d8201b40d8974573",
-                        "sha1": "72c7941c05b5c16fef512f8adcd2abed70c96951"
+                        "sha512": "98e0a8250a282aedaa8842f7e1558b21a1111226409c4cf21e6a335f0ddb602556f518d2e8fa8ed7ab75a47eeaeea0de7c35577e7f6b1d89ff2bb48838e7b756",
+                        "sha1": "b497874174ddc6bfc2feede786c65562accf7d6b"
                     },
                     "required_dependencies": [],
-                    "size": 39418388,
-                    "date_published": "2025-09-23T16:12:15.884510Z"
+                    "size": 40748266,
+                    "date_published": "2026-03-19T20:23:22.053218Z"
                 }
             ]
         },
@@ -14487,7 +14488,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.29.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.30.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14496,23 +14497,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7752/863/TerraFirmaGreg-Core-Modern-0.8.29.jar",
-                    "id": "7752863",
+                    "url": "https://edge.forgecdn.net/files/7791/918/TerraFirmaGreg-Core-Modern-0.8.30.jar",
+                    "id": "7791918",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "6ebdd163a3547a787afd6f88e7c5643e2649b053",
-                        "md5": "6448a68a412487a93646470c14a5c6ae"
+                        "sha1": "7c016f977434140cbb6cd9b738c4a20a33dd06de",
+                        "md5": "a21e3b0a83c8b122c5c705e8bcbfd93b"
                     },
                     "required_dependencies": [
-                        "302973",
-                        "890405"
+                        "890405",
+                        "302973"
                     ],
-                    "size": 10122743,
-                    "date_published": "2026-03-13T20:22:11.817Z"
+                    "size": 10194877,
+                    "date_published": "2026-03-21T22:39:16.453Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.29.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.30.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14521,19 +14522,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/SQm4MgZl/TerraFirmaGreg-Core-Modern-0.8.29.jar",
-                    "id": "SQm4MgZl",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/V6SPXlVC/TerraFirmaGreg-Core-Modern-0.8.30.jar",
+                    "id": "V6SPXlVC",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "4c1c2921f87cc7382a2ce6f195c25bf413da919c9e0bc5b6cafb7d9ebd19b2021354d58ec2d9656fe9aa991552e4a559152e15573e10a3a29b04adb2aab6d499",
-                        "sha1": "6ebdd163a3547a787afd6f88e7c5643e2649b053"
+                        "sha512": "783e341292d3778edae3c87134f9265aa5631b37a2f18e3b29f51b6d141d18fc84051aa76238a4376f29d6296ae1832531f8efd1b809c2b40cf23694e2fe157e",
+                        "sha1": "7c016f977434140cbb6cd9b738c4a20a33dd06de"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "JaCEZUhg"
                     ],
-                    "size": 10122743,
-                    "date_published": "2026-03-13T20:22:16.622064Z"
+                    "size": 10194877,
+                    "date_published": "2026-03-21T22:39:19.319061Z"
                 }
             ]
         },
@@ -14798,7 +14799,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "toomanyrecipeviewers-0.7.1+mc.20.1.jar",
+                    "file_name": "toomanyrecipeviewers-0.7.2+mc.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14806,22 +14807,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7410/427/toomanyrecipeviewers-0.7.1+mc.20.1.jar",
-                    "id": "7410427",
+                    "url": "https://edge.forgecdn.net/files/7785/751/toomanyrecipeviewers-0.7.2+mc.20.1.jar",
+                    "id": "7785751",
                     "parent_id": "1194921",
                     "hashes": {
-                        "sha1": "29bec57f882d3a4bab4a2dc4c46e19cadcd32c67",
-                        "md5": "1419bf0ba0f79042abe7af61f567d7ea"
+                        "sha1": "00b6170bdd74258c9b06432d05ca3dd63567c012",
+                        "md5": "35e5cd16eb2188832a166d561007e0f3"
                     },
                     "required_dependencies": [
                         "580555"
                     ],
-                    "size": 1667055,
-                    "date_published": "2026-01-03T00:51:42.943Z"
+                    "size": 1669748,
+                    "date_published": "2026-03-20T17:25:40.950Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "toomanyrecipeviewers-0.7.1+mc.20.1.jar",
+                    "file_name": "toomanyrecipeviewers-0.7.2+mc.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -14829,18 +14830,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/OtMd1Eg9/toomanyrecipeviewers-0.7.1+mc.20.1.jar",
-                    "id": "OtMd1Eg9",
+                    "url": "https://cdn.modrinth.com/data/yFypjcfd/versions/ePjH84wA/toomanyrecipeviewers-0.7.2+mc.20.1.jar",
+                    "id": "ePjH84wA",
                     "parent_id": "yFypjcfd",
                     "hashes": {
-                        "sha512": "a4e7f351f25e5dddc0e61b5afa91222ebd2f878e0a8803bf20cf5373cca3be20136a40d001cfa7fcc076b10555cd0c9aba8e8ad32d11a5be06e9b331db28b7dc",
-                        "sha1": "29bec57f882d3a4bab4a2dc4c46e19cadcd32c67"
+                        "sha512": "3f1642e88dc512edcce16af00feefca3687184edcc61dd888f2fb612617843cb9abdd7db743c3853febac12e0810e654425da081f7029fcadb3e50c5f352623b",
+                        "sha1": "00b6170bdd74258c9b06432d05ca3dd63567c012"
                     },
                     "required_dependencies": [
                         "fRiHVvU7"
                     ],
-                    "size": 1667055,
-                    "date_published": "2026-01-03T00:51:46.557524Z"
+                    "size": 1669748,
+                    "date_published": "2026-03-20T17:25:44.767621Z"
                 }
             ]
         },

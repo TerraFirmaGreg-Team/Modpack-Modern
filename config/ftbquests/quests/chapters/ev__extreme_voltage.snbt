@@ -830,7 +830,7 @@
 			subtitle: "{quests.extreme_voltage.heat_exchanger.subtitle}"
 			tasks: [{
 				id: "67CB661D4F20EC3A"
-				item: "gtceu:heat_exchanger"
+				item: "tfg:heat_exchanger"
 				type: "item"
 			}]
 			title: "{quests.extreme_voltage.heat_exchanger.title}"

@@ -339,3 +339,35 @@ global.CROP_CLIMATE_DATA = [
 	}
 
 ];
+
+/**
+ * @type {string[]}
+ */
+global.NEW_OVERWORLD_PLANTS = [
+	"tfg:plant/red_oat_grass",
+	"tfg:plant/azalea",
+	"tfg:plant/bear_grass",
+	"tfg:plant/bird_nest_fern",
+	"tfg:plant/buttercup",
+	"tfg:plant/cornflower",
+	"tfg:plant/dry_grass",
+	"tfg:plant/edelweiss",
+	"tfg:plant/elegant_sunburst_lichen",
+	"tfg:plant/fan_palm",
+	"tfg:plant/kinnikinnick",
+	"tfg:plant/mountain_hullwort",
+	"tfg:plant/moss_campion",
+	"tfg:plant/palash",
+	"tfg:plant/penwortel",
+	"tfg:plant/prickly_pear",
+	"tfg:plant/prickly_pear_purple",
+	"tfg:plant/qantu",
+	"tfg:plant/ramirezella",
+	"tfg:plant/ramunda",
+	"tfg:plant/silken_pincushion_cactus",
+	"tfg:plant/silver_bromeliad",
+	"tfg:plant/tank_bromeliad",
+	"tfg:plant/yellow_saxifrage",
+	"tfg:plant/flame_vine",
+	"tfg:plant/cycad"
+]
