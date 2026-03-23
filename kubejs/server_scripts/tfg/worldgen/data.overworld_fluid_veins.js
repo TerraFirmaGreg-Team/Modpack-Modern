@@ -5,7 +5,6 @@ function registerTFGOverworldBedrockFluidVeins(event) {
     const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
     const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation");
 
-    // Définition de l'objet biomeKeys
     const biomeKeys = {};
 
     const biomeNames = [
@@ -120,7 +119,6 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         "stone_circles"
     ];
 
-    // Création des clés de biomes
     for (let name of biomeNames) {
         biomeKeys[name] = ResourceKey.create(
             Registries.BIOME,
@@ -128,7 +126,6 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         );
     }
 
-    // Maintenant biomeKeys est prêt à être utilisé plus bas dans ton code
 
     event.remove('gtceu:heavy_oil_deposit')
     event.remove('gtceu:light_oil_deposit')
