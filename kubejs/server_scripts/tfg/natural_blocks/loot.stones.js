@@ -102,4 +102,11 @@ function registerTFGRockLoots(event) {
 		.addLoot(LootEntry.of('tfg:igneous_ultramafic_dust').when(c => c.randomChance(0.2)))
 		.addLoot(LootEntry.of('gtceu:tiny_rock_salt_dust').when(c => c.randomChance(0.05)));
 
+	event.addBlockLootModifier('tfg:halite')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([
+			Item.of('gtceu:rich_raw_salt').withChance(0.2),
+			Item.of('gtceu:raw_salt').withChance(0.6),
+			Item.of('gtceu:poor_raw_salt').withChance(0.2)
+		])
 }

@@ -1,0 +1,70 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "half_height": 4,
+        "radius": 8,
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "tfc:rock/hardened/basalt"
+                }
+            },
+            "rules": [
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "tfc:rock/hardened"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfc:rock/hardened/basalt"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "tfc:rock/raw"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfc:rock/raw/basalt"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "forge:sand"
+
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfc:sand/black"
+                        }
+                    }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "tfc:can_landslide"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfc:rock/raw/basalt"
+                        }
+                    }
+                }
+            ]
+        },
+        "target": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "tfc:can_carve"
+        }
+    }
+}

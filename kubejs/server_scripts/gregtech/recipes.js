@@ -161,7 +161,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -170,7 +170,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');
@@ -179,7 +179,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover_recycle');
@@ -422,7 +422,7 @@ const registerGTCEURecipes = (event) => {
 	// Modify HV Dynamo Hatch to be craftable before Cleanroom
 
 	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
-		.itemInputs('#forge:rods/magnetic_steel', '#forge:fine_wires/black_steel')
+		.itemInputs('#forge:rods/magnetic_steel', '16x #forge:fine_wires/black_steel')
 		.itemOutputs('gtceu:hv_voltage_coil')
 		.circuit(1)
 		.duration(20*20)

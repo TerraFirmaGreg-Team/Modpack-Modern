@@ -424,13 +424,14 @@ function registerTFCItemTags(event) {
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
-    global.TFC_WET_MUD_BRICKS.forEach((wetMudBrick) => {
-        event.add("tfc:wet_mud_bricks", wetMudBrick);
-    });
-
-    global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
-        event.add("tfc:dry_mud_bricks", dryMudBrick);
-    });
+    global.TFC_MUD_TYPES.forEach(mud => {
+        event.add("tfc:wet_mud_bricks", `tfc:mud_brick/${mud}`);
+        event.add("tfc:dry_mud_bricks", `tfc:drying_bricks/${mud}`);
+    })
+    global.TFG_MUD_TYPES.forEach(mud => {
+        event.add("tfc:wet_mud_bricks", `tfg:mud_brick/${mud}`);
+        event.add("tfc:dry_mud_bricks", `tfg:drying_bricks/${mud}`);
+    })
 
     // Workaround for some of the ruin structures having tfc knives
     event.add('tfc:knives', 'tfc:stone/knife/sedimentary')

@@ -63,6 +63,13 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
+	
+	event.itemHeat("tfg:lentil_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_lentil", 1, null, null);
+	event.itemHeat("tfg:cassava_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_cassava", 1, null, null);
+	event.itemHeat("tfg:beans_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_beans", 1, null, null);
 }
 
 //#endregion

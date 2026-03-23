@@ -538,6 +538,33 @@ function registerTFGFoodItems(event) {
 		)
 	    .tag('tfc:foods');
 
+	// Cooked Lentils
+	event.create('tfg:food/cooked_lentil')
+		.translationKey('item.tfg.food.cooked_lentil')
+		.texture('tfg:item/food/cooked_lentil')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/vegetables')
+		.tag('tfg:foods/legumes');
+
+	// Cooked Cassava
+	event.create('tfg:food/cooked_cassava')
+		.translationKey('item.tfg.food.cooked_cassava')
+		.texture('tfg:item/food/cooked_cassava')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/usable_in_salad')
+		.tag('tfc:foods/usable_in_soup');
+
+	// Cooked Beans
+	event.create('tfg:food/cooked_beans')
+		.translationKey('item.tfg.food.cooked_beans')
+		.texture('tfg:item/food/cooked_beans')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/vegetables')
+		.tag('tfg:foods/legumes');
+
 	//#region Spices
 
 	// Bay
