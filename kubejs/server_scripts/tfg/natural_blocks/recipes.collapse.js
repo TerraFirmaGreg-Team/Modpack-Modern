@@ -54,6 +54,10 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.collapse('#tfg:rock_stairs').id('tfg:collapse/rock_stairs')
 	event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
 
+	event.recipes.tfc.collapse('tfg:carbonate_hornfels').id('tfg:collapse/carbonate_hornfels')
+	event.recipes.tfc.collapse('tfg:mafic_hornfels').id('tfg:collapse/mafic_hornfels')
+	event.recipes.tfc.collapse('tfg:pelitic_hornfels').id('tfg:collapse/pelitic_hornfels')
+
 	// Nether
 	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')
 	event.recipes.tfc.landslide('tfg:ash_pile', 'tfg:ash_pile')
