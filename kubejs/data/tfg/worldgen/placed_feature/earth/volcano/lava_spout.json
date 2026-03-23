@@ -2,6 +2,10 @@
 	"feature": "tfg:earth/volcano/lava_spout",
 	"placement": [
 		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
 			"type": "tfg:cinder_cone",
 			"center": true
 		},

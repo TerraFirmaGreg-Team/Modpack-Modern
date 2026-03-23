@@ -402,7 +402,7 @@ function registerGTCEuMachineRecipes(event) {
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: ChemicalHelper.get(TagPrefix.pipeSmallFluid, GTMaterials.TinAlloy, 1),
-		C: '#forge:drill_heads',
+		C: '#forge:mining_hammer_heads/steel',
 		D: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),
 		E: ChemicalHelper.get(TagPrefix.screw, GTMaterials.WroughtIron, 1)
 	}).id('gtceu:shaped/steam_rock_breaker_steel')

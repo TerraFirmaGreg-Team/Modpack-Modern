@@ -47,6 +47,18 @@
                             "Name": "tfc:sand/black"
                         }
                     }
+                },
+                {
+                    "if_true": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "tfc:can_landslide"
+                    },
+                    "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                            "Name": "tfc:rock/raw/basalt"
+                        }
+                    }
                 }
             ]
         },

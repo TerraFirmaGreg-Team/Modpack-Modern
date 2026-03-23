@@ -165,9 +165,9 @@ function registerTFGCircuitBoardsRecipes(event) {
 		},
 	]
 
-	FLUID_REPLACEMENTS.forEach(function(replacement) {
-		var recipeId = "gtceu:chemical_reactor/" + replacement.recipe
-		var largeRecipeId = "gtceu:large_chemical_reactor/" + replacement.recipe
+	FLUID_REPLACEMENTS.forEach((replacement) => {
+		var recipeId = `gtceu:chemical_reactor/${replacement.recipe}`
+		var largeRecipeId = `gtceu:large_chemical_reactor/${replacement.recipe}`
 
 		if (replacement.new !== undefined) {
 			var fluidReplacements = {}

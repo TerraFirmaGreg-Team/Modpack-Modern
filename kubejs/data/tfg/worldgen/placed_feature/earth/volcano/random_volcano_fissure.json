@@ -1,5 +1,16 @@
 {
     "feature": "tfg:earth/volcano/random_volcano_fissure",
-    "placement": [],
-    "__comment__": "This file was automatically created by mcresources"
+    "placement": [
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+                "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": -4,
+                    "max_inclusive": 4
+                }
+            },
+            "y_spread": 0
+        }
+    ]
 }

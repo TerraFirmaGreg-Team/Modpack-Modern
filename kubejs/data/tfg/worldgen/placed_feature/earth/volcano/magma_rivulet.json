@@ -3,14 +3,18 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 2
+			"count": 3
 		},
 		{
-			"type": "minecraft:in_square"
-		},
-		{
-			"type": "tfg:cinder_cone",
-			"distance": 0.7
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -12,
+					"max_inclusive": 12
+				}
+			},
+			"y_spread": 0
 		}
 	]
 }

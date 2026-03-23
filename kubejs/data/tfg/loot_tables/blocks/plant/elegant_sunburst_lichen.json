@@ -7,11 +7,11 @@
                 "condition": "minecraft:any_of",
                 "terms": [
                     {
-                        "predicate": {"items": "#tfc:tools/sharp"},
+                        "predicate": {"tag": "tfc:sharp_tools"},
                         "condition": "minecraft:match_tool"
                     },
                     {
-                        "predicate": {"items": "#c:tools/shear"},
+                        "predicate": {"tag": "forge:shears"},
                         "condition": "minecraft:match_tool"
                     }
                 ]

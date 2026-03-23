@@ -128,11 +128,26 @@ EntityEvents.spawned((event) => {
 	if (type === "minecraft:enderman") {
 		switch (dimension) {
 			// use default for beneath
-			case "ad_astra:moon": newHP = 45;
-			case "ad_astra:mars": newHP = 65;
-			case "ad_astra:venus": newHP = 75;
-			case "ad_astra:mercury": newHP = 75;
-			case "ad_astra:glacio": newHP = 85;
+			case "ad_astra:moon": {
+				newHP = 45;
+				break;
+			}
+			case "ad_astra:mars": {
+				newHP = 65;
+				break;
+			}
+			case "ad_astra:venus": {
+				newHP = 75;
+				break;
+			}
+			case "ad_astra:mercury": {
+				newHP = 75;
+				break;
+			}
+			case "ad_astra:glacio": {
+				newHP = 85;
+				break;
+			}
 		}
 	}
 	else if (type === "endermanoverhaul:nether_wastes_enderman") {

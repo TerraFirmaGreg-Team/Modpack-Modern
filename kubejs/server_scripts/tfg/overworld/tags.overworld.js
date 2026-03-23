@@ -79,6 +79,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/oregano');
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/pimento');
 	event.add('tfc:can_be_snow_piled', 'firmalife:plant/vanilla');
+	event.add('tfc:can_be_snow_piled', 'beneath:sulfur');
 
 	event.removeAll('firmalife:butterfly_grass_mutants');
 	event.add('firmalife:butterfly_grass_mutants', 'tfc:plant/bluegrass')
@@ -286,12 +287,14 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_ocean')
 	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_river')
 
-	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shore')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/embayments')
-	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/sea_stacks')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/rocky_shores')
+	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/sea_stacks')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shield_volcano_shore')
+	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shore')
+	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/terrace_lower')
+	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/tidal_flats')
 	
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/highlands')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/glacially_carved_mountains')
@@ -303,14 +306,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/burren_badlands')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/burren_plains')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/burren_plateau')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/cenote_hills')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/cenote_plains')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/cenote_plateau')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/cenote_rolling_hills')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/doline_hills')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/doline_plains')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/doline_plateau')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/doline_rolling_hills')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/drumlins')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/hills')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/hoodoos')
@@ -324,9 +319,9 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/plateau')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/plateau_wide')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rocky_plateau')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rocky_shores')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rolling_hills')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/setback_cliffs')
+	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/stone_circles')
 	
 	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/hills')
 	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/plateau')
@@ -394,6 +389,8 @@ function registerTFGOverworldBiomeTags(event) {
 	global.NEW_TFC_BIOMES.forEach(biome => {
 		event.add('tfg:overworld_biomes', biome);
 	})
+
+	event.add('waves:has_waves', '#tfg:earth/is_ocean');
 }
 
 function registerTFGOverworldPlacedFeatures(event) {
@@ -462,14 +459,18 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
+	event.add("tfc:in_biome/underground_decoration", "tfg:earth/flint_patch");
 	// New worldgen
 	event.add("tfg:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/oil_spout");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/flint_patch");
 
 	// Volcanoes
 	event.add("tfg:feature/volcanoes", "tfg:earth/volcano/random_cinder_cone");
 
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
+	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
+	
 }
