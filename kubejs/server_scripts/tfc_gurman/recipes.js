@@ -6,21 +6,21 @@ function registerTFCGurmanRecipes(event) {
 	//#region Food Oven Recipes
 
 	global.cookingRecipe(event, 'margarita_pizza', 'tfc_gourmet:raw_margarita_pizza', 'tfc_gourmet:margarita_pizza');
-		
+
 	global.cookingRecipe(event, 'pepperoni_pizza', 'tfc_gourmet:raw_pepperoni_pizza', 'tfc_gourmet:pepperoni_pizza');
-		
+
 	global.cookingRecipe(event, 'hawaiian_pizza', 'tfc_gourmet:raw_hawaiian_pizza', 'tfc_gourmet:hawaiian_pizza');
-		
+
 	global.cookingRecipe(event, 'four_cheeses_pizza', 'tfc_gourmet:raw_four_cheeses_pizza', 'tfc_gourmet:four_cheeses_pizza');
-		
+
 	global.cookingRecipe(event, 'four_meats_pizza', 'tfc_gourmet:raw_four_meats_pizza', 'tfc_gourmet:four_meats_pizza');
-		
+
 	global.cookingRecipe(event, 'neapolitano_pizza', 'tfc_gourmet:raw_neapolitano_pizza', 'tfc_gourmet:neapolitano_pizza');
-		
+
 	global.cookingRecipe(event, 'croissants', 'tfc_gourmet:raw_croissants', 'tfc_gourmet:croissants');
-		
+
 	global.cookingRecipe(event, 'kiev_cutlets', 'tfc_gourmet:raw_kiev_cutlets', 'tfc_gourmet:kiev_cutlets');
-		
+
 	global.cookingRecipe(event, 'quiche', 'tfc_gourmet:raw_quiche', 'tfc_gourmet:quiche');
 
 	global.cookingRecipe(event, 'tandoori_chicken', 'tfc_gourmet:raw_tandoori_chicken', 'tfc_gourmet:tandoori_chicken');
@@ -34,9 +34,9 @@ function registerTFCGurmanRecipes(event) {
 	global.cookingRecipe(event, 'bulgogi', 'tfc_gourmet:raw_bulgogi', 'tfc_gourmet:bulgogi');
 
 	global.cookingRecipe(event, 'bratwurst', 'tfc_gourmet:raw_bratwurst', 'tfc_gourmet:bratwurst');
-		
+
 	global.cookingRecipe(event, 'crepes', 'tfc_gourmet:raw_crepes', 'tfc_gourmet:crepes');
-		
+
 	global.cookingRecipe(event, 'chebureki', 'tfc_gourmet:raw_chebureki', 'tfc_gourmet:chebureki');
 
 	global.cookingRecipe(event, 'khachapuri', 'tfc_gourmet:raw_khachapuri', 'tfc_gourmet:khachapuri');
@@ -44,7 +44,7 @@ function registerTFCGurmanRecipes(event) {
 	global.cookingRecipe(event, 'lavash_wrap', 'tfc_gourmet:raw_lavash_wrap', 'tfc_gourmet:lavash_wrap');
 
 	global.cookingRecipe(event, 'syrniki', 'tfc_gourmet:raw_syrniki', 'tfc_gourmet:syrniki');
-				
+
 	global.cookingRecipe(event, 'oladyi', 'tfc_gourmet:raw_oladyi', 'tfc_gourmet:oladyi');
 
 	// Falafel - from soybean (no raw version)
@@ -82,7 +82,7 @@ function registerTFCGurmanRecipes(event) {
 		circuit: 20,
 		itemOutputProvider: TFC.isp.of('3x tfc_gourmet:schi').simpleModifier('tfg:force_add_bowl').copyOldestFood()
 	});
-	
+
 	// Coffee
 	global.processorRecipe(event, 'coffee', 1000, GTValues.VHA[GTValues.LV], {
 		itemInputs: ['2x firmalife:food/roasted_cocoa_beans'],
@@ -502,6 +502,89 @@ function registerTFCGurmanRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x tfc_gourmet:raw_oladyi').copyOldestFood()
 	});
 
+	// Pizza
+
+	global.processorRecipe(event, 'margarita_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/pizza_dough',
+			'firmalife:food/shredded_cheese',
+			'tfc:food/tomato',
+			'tfc:food/red_bell_pepper',
+			'tfc_gourmet:plant_mix',
+			'firmalife:food/tomato_sauce'
+		],
+		itemOutputs: ['tfc_gourmet:raw_margarita_pizza'],
+		circuit: 4,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_margarita_pizza').copyOldestFood()
+	})
+
+	global.processorRecipe(event, 'pepperoni_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/bacon',
+			'firmalife:food/pizza_dough',
+			'firmalife:food/shredded_cheese',
+			'firmalife:food/tomato_sauce',
+		],
+		itemOutputs: ['tfc_gourmet:raw_pepperoni_pizza'],
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_pepperoni_pizza').copyOldestFood()
+	})
+
+	global.processorRecipe(event, 'hawaiian_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/bacon',
+			'firmalife:food/pizza_dough',
+			'firmalife:food/shredded_cheese',
+			'firmalife:food/tomato_sauce',
+			'firmalife:food/pineapple'
+		],
+		itemOutputs: ['tfc_gourmet:raw_hawaiian_pizza'],
+		circuit: 6,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_hawaiian_pizza').copyOldestFood()
+	})
+
+	global.processorRecipe(event, 'four_cheeses_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/gouda',
+			'firmalife:food/feta',
+			'firmalife:food/chevre',
+			'firmalife:food/cheddar',
+			'firmalife:food/butter',
+			'firmalife:food/pizza_dough'
+		],
+		itemOutputs: ['tfc_gourmet:raw_four_cheeses_pizza'],
+		circuit: 7,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_four_cheeses_pizza').copyOldestFood()
+	})
+
+	global.processorRecipe(event, 'four_meats_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/pizza_dough',
+			'tfc:food/beef',
+			'tfc:food/pork',
+			'tfc:food/chicken',
+			'tfc:food/mutton',
+			'firmalife:food/tomato_sauce'
+		],
+		itemOutputs: ['tfc_gourmet:raw_four_meats_pizza'],
+		circuit: 8,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_four_meats_pizza').copyOldestFood()
+	})
+
+	global.processorRecipe(event, 'neapolitano_pizza', 600, 15, {
+		itemInputs: [
+			'firmalife:food/pizza_dough',
+			'tfc:food/beef',
+			'firmalife:food/tomato_sauce',
+			'tfc:food/tomato',
+			'firmalife:food/shredded_cheese',
+			'tfc_gourmet:plant_mix'
+		],
+		itemOutputs: ['tfc_gourmet:raw_neapolitano_pizza'],
+		circuit: 9,
+		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_neapolitano_pizza').copyOldestFood()
+	})
+
 	//#endregion
 
 	// #region Drying
@@ -552,7 +635,7 @@ function registerTFCGurmanRecipes(event) {
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of('4x tfc_gourmet:raw_takoyaki').copyOldestFood(), [
 		TFC.ingredient.notRotten('tfg:food/raw_crawlermari'),
-		TFC.ingredient.notRotten('#tfc:foods/flour'), 
+		TFC.ingredient.notRotten('#tfc:foods/flour'),
 		TFC.ingredient.notRotten('#forge:eggs'),
 		'tfc:powder/salt'
 	]).id('tfg:shapeless/takoyaki_from_crawlermari');
