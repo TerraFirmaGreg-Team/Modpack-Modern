@@ -389,6 +389,8 @@ function registerTFGOverworldBiomeTags(event) {
 	global.NEW_TFC_BIOMES.forEach(biome => {
 		event.add('tfg:overworld_biomes', biome);
 	})
+
+	event.add('waves:has_waves', '#tfg:earth/is_ocean');
 }
 
 function registerTFGOverworldPlacedFeatures(event) {

@@ -2,10 +2,6 @@
 	"feature": "tfg:earth/flint_patch",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 3
-		},
-		{
 			"type": "minecraft:in_square"
 		},
 		{
