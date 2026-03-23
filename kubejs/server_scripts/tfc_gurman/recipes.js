@@ -514,7 +514,7 @@ function registerTFCGurmanRecipes(event) {
 			'firmalife:food/tomato_sauce'
 		],
 		itemOutputs: ['tfc_gourmet:raw_margarita_pizza'],
-		circuit: 4,
+		circuit: 22,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_margarita_pizza').copyOldestFood()
 	})
 
@@ -526,7 +526,7 @@ function registerTFCGurmanRecipes(event) {
 			'firmalife:food/tomato_sauce',
 		],
 		itemOutputs: ['tfc_gourmet:raw_pepperoni_pizza'],
-		circuit: 5,
+		circuit: 23,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_pepperoni_pizza').copyOldestFood()
 	})
 
@@ -539,7 +539,7 @@ function registerTFCGurmanRecipes(event) {
 			'firmalife:food/pineapple'
 		],
 		itemOutputs: ['tfc_gourmet:raw_hawaiian_pizza'],
-		circuit: 6,
+		circuit: 24,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_hawaiian_pizza').copyOldestFood()
 	})
 
@@ -553,7 +553,7 @@ function registerTFCGurmanRecipes(event) {
 			'firmalife:food/pizza_dough'
 		],
 		itemOutputs: ['tfc_gourmet:raw_four_cheeses_pizza'],
-		circuit: 7,
+		circuit: 25,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_four_cheeses_pizza').copyOldestFood()
 	})
 
@@ -567,7 +567,7 @@ function registerTFCGurmanRecipes(event) {
 			'firmalife:food/tomato_sauce'
 		],
 		itemOutputs: ['tfc_gourmet:raw_four_meats_pizza'],
-		circuit: 8,
+		circuit: 26,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_four_meats_pizza').copyOldestFood()
 	})
 
@@ -581,7 +581,7 @@ function registerTFCGurmanRecipes(event) {
 			'tfc_gourmet:plant_mix'
 		],
 		itemOutputs: ['tfc_gourmet:raw_neapolitano_pizza'],
-		circuit: 9,
+		circuit: 27,
 		itemOutputProvider: TFC.isp.of('tfc_gourmet:raw_neapolitano_pizza').copyOldestFood()
 	})
 
