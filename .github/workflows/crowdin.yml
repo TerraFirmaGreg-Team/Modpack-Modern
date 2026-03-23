@@ -109,7 +109,7 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2.15.2
         with:
-          upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
+          upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' || github.event_name == 'push' }}
           upload_translations: false
           import_eq_suggestions: true
           skip_untranslated_files: true
