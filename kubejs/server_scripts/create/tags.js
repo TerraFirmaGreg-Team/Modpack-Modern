@@ -87,6 +87,12 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
 	event.add('create:non_movable', '#tfc:can_landslide')
+	event.add('create:non_movable', 'tfg:smoker_source')
+	event.add('create:non_movable', 'tfg:lava_source')
+	event.add('create:non_movable', 'tfg:big_volcano_smoke_emitter')
+	event.add('create:non_movable', 'tfg:carbonate_hornfels')
+	event.add('create:non_movable', 'tfg:pelitic_hornfels')
+	event.add('create:non_movable', 'tfg:mafic_hornfels')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
@@ -172,6 +178,12 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
+	event.add('create:non_movable', 'tfg:smoker_source')
+	event.add('create:non_movable', 'tfg:lava_source')
+	event.add('create:non_movable', 'tfg:big_volcano_smoke_emitter')
+	event.add('create:non_movable', 'tfg:carbonate_hornfels')
+	event.add('create:non_movable', 'tfg:pelitic_hornfels')
+	event.add('create:non_movable', 'tfg:mafic_hornfels')
 }
 
 
