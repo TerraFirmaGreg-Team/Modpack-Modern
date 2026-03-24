@@ -23,7 +23,7 @@ const registerTFGBlocks = (event) => {
 		.soundType('stone')
 		.noDrops()
 		.particles(p => p
-			.position(0.5, 1, 0.5)
+			.position(0.5, 2, 0.5)
 			.range(4, 1, 4)
 			.velocity(0, 1, 0)
 			.particle('tfg:volcano_smoke'))

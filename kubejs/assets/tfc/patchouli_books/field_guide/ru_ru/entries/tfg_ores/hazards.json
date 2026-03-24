@@ -7,63 +7,63 @@
 	"read_by_default": true,
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "patchouli:spotlight",
 			"title": "Опасные материалы",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Некоторые руды ядовиты! Их перенос в инвентаре будет наносить вам урон.$(br2)Существует $(thing)костюм хим. защиты (Hazmat)$(), но он становится доступен в $(thing)MV$(). Так что же нам делать?$(br2)Вот несколько советов по противодействию этому в TFG на данный момент:"
 		},
 		{
-			"type": "patchouli:text",
+			"type": "patchouli:crafting",
 			"title": "Медицинская маска",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "С помощью сосудов, руду можно переносить безопасно, а с помощью же $(thing)ПКМ$() самим сосудом по руде (или с рудой внутри), можно либо поместить руду внутрь сундука или машины, либо выложить её без повторного помещения её непосредственно в инвентарь. $(br2)Либо же можно отключить яды в настройках мода."
+			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Камни",
+			"title": "Резиновые перчатки",
 			"link_recipes": true,
-			"text": "Чтобы избежать ядовитых камней, проще всего их вовсе не поднимать.$(br)Забив инвентарь, например, $(thing)Камнями$(), можно <<забронировать>> место в инвентаре, а потом за один заход поднять все ядовитые предметы и быстренько их сложить в $(thing)Сосуд$() или $(thing)Рюкзак$()."
+			"text": "Резиновые перчатки можно изготовить либо из $(l:mechanics/leather_making)Кожи$() и $(l:arborfirmacraft/making_rubber)Латекса$(), либо из резиновых листов. Они обеспечивают защиту от любых $(item)контактных$() угроз, например, от бериллиоза."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "Как уже говорилось ранее, урон от отравления наносится если предметы лежат непосредственно в $(thing)инвентаре$() игрока, нахождение их в любом другом контейнере полностью нейтрализует все отрицательные эффекты."
+			"text": "Сначала обработайте кожу методом отщепа, чтобы сделать рукавицы."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "Чем лучше броня, тем меньше урона вы будете получать даже от ядовитых руд."
+			"text": "После этого, перчатки замачивают в $(thing)Уксусе$(), смеси фруктов и алкоголя."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "tfc:bucket/spring_water",
-			"text": "Нахождение в $(thing)Родниковой воде$() усиливает естественную $(thing)Регенерацию$()."
+			"item": "tfg:latex_soaked_gloves",
+			"text": "Подготовленные кожаные перчатки затем нагреваются в $(thing)чане$() вместе с $(thing)Вулканизированным латексом$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
-			"text": "$(thing)Выдержанные (Aged)$() версии алкоголя дают эффекты ванильных зелий.$(br2)Переносить же его можно в $(l:getting_started/pottery#jug)Кувшине$() или $(l:waterflasks/recipes)Фляге$()."
+			"item": "gtceu:rubber_gloves",
+			"text": "Наконец, пропитанные латексом перчатки нагреваются в $(l:firmalife/oven)Печи$()."
 		},
 		{
-			"type": "patchouli:text",
+			"type": "patchouli:spotlight",
 			"title": "Горные породы ",
 			"item": {
 				"tag": "tfc:rock_knapping"
 			},
-			"text": "Выдержанное пиво: Поглощение II (20:00)$(br2)Выдержанный сидр: Скорость (5:20)$(br2)Выдержанный ром: Скорость II (2:40)$(br2)Выдержанное сакэ: Сопротивление (5:20)$(br2)Выдержанная водка: Сопротивление II (2:40)$(br2)Выдержанный кукурузный виски: Спешка (5:20)$(br2)Выдержанный ржаной виски: Спещка (5:20)$(br2)Выдержанный виски: Спешка II (2:40)"
+			"text": "Самый простой способ предотвратить попадание опасных предметов в ваш инвентарь — вообще их не подбирать.$(br)Например, если заполнить инвентарь $(thing)камнями$(), вы сможете выбирать, какие предметы поднимать, а с опасными разобраться позже."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Рацион питания",
-			"text": "Поддержание хорошего $(l:getting_started/food_and_water#nutrients)рациона$() значительно увеличивает максимальный уровень здоровья.$(br2)$(l:mechanics/pot#soup)Супы$(), $(l:mechanics/sandwiches)Бутерброды$() и $(l:mechanics/salad)Салаты$() - вот здоровая еда.",
+			"title": "Контейнеры.",
+			"text": "Опасные материалы наносят урон, только пока находятся в вашем $(thing)инвентаре$(), но это не относится к другим контейнерам!$(br)Опасные материалы не будут наносить урон, пока находятся в другом контейнере, например, в $(l:tfg_tips/inventory_management)рюкзаке$() или $(l:getting_started/pottery#vessel)сосуде$(). $(thing)Нажатие правой кнопкой мыши$() с сосудом в руке позволяет напрямую перемещать его содержимое в контейнеры и обратно",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Кровать",
+			"title": "Родниковая вода",
 			"item": "tfc:bucket/spring_water",
-			"text": "Крайняя мера - умер, возродился.$(br2)Если $(thing)Шерсти$() или $(thing)Ниток$() нет, то можно сделать $(l:getting_started/a_place_to_sleep)кровать из сена$()."
+			"text": "Нахождение в $(thing)Родниковой воде$() даст тебе слабую $(thing)Регенерацию$()."
 		},
 		{
 			"type": "patchouli:spotlight",

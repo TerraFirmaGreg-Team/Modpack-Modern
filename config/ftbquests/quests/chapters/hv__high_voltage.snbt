@@ -216,13 +216,13 @@
 		{
 			dependencies: ["3568BC9742092FC5"]
 			description: ["{quests.high_voltage.lenses.desc}"]
-			icon: "gtceu:cyan_glass_lens"
+			icon: "gtceu:apatite_lens"
 			id: "6975F16F5B50F17F"
 			size: 1.0d
 			tasks: [
 				{
 					id: "73A16ED7BA7D64E8"
-					item: "gtceu:cyan_glass_lens"
+					item: "gtceu:apatite_lens"
 					optional_task: true
 					type: "item"
 				}
@@ -233,7 +233,7 @@
 				}
 				{
 					id: "0A73E24102F7294F"
-					item: "gtceu:orange_glass_lens"
+					item: "gtceu:grossular_lens"
 					type: "item"
 				}
 				{
