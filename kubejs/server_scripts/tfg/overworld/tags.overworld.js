@@ -373,13 +373,15 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/cenote_rolling_hills");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/cenote_highlands");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/cenote_plateau");
-	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_hills");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_highlands");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/shilin_plateau");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/active_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/dormant_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/extinct_shield_volcano");
 	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/ancient_shield_volcano");
+	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/ice_sheet_shield_volcano");
+	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/glaciated_shield_volcano");
+	event.add("tfc:kaolin_clay_spawns_in", "tfg:earth/sunken_shield_volcano");
 
 	global.TFC_BIOMES.forEach(biome => {
 		event.add('tfg:overworld_biomes', biome);
