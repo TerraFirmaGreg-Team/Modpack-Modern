@@ -63,4 +63,4 @@ temperatureAndRainfall("oil_spout",        20, 50,  0, 50, 400)
 // rainfall("muddy_water", 300, 500, 50)
 
 // Spring Water
-climateAndBiome("spring_water", 20, 50, 0, 100, ["tfg:earth/extinct_shield_volcano", "tfg:earth/ancient_shield_volcano"], 4000)
+climateAndBiome("spring_water", -20, 50, 0, 400, ["tfg:earth/extinct_shield_volcano", "tfg:earth/ancient_shield_volcano"], 4000)
