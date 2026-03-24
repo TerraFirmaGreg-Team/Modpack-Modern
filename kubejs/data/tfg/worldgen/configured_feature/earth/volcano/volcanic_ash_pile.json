@@ -32,16 +32,8 @@
 				{
 					"type": "minecraft:block_predicate_filter",
 					"predicate": {
-						"type": "tfc:replaceable"
-					}
-				},
-				{
-					"type": "minecraft:block_predicate_filter",
-					"predicate": {
-						"type": "would_survive",
-						"state": {
-							"Name": "beneath:sulfur"
-						}
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
 					}
 				}
 			]
