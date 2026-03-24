@@ -263,8 +263,7 @@ function registerTFGPrimitiveItems(event) {
 		.fluidTagAccept('tfg:usable_in_lamp_mold')
 		.tfcccAllowedInMoldTable([
 			"XXXXXXXXXXXXXX",
-			"XXXXXXX XXXXXX",
-			"XXXXXX XXXXXXX",
+			"XXXXXXXXXXXXXX",
 			"XXXXXX XXXXXXX",
 			"XXXXX    XXXXX",
 			"XXXXX    XXXXX",
@@ -275,6 +274,7 @@ function registerTFGPrimitiveItems(event) {
 			"XXXX XXXX XXXX",
 			"XXXX XXXX XXXX",
 			"XXXX      XXXX",
+			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX"
 		])
 	
