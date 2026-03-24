@@ -1305,13 +1305,20 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_scaffolding')
 
 	// Деталь рельса
-	event.shaped('3x create:metal_girder', [
-		'AAA',
-		'BBB'
-	], {
-		A: '#forge:plates/wrought_iron',
-		B: '#forge:bolts/wrought_iron'
-	}).id('tfg:create/shaped/metal_girder')
+	const GIRDERS = [
+		{ metal: 'wrought_iron', amount: 3 },
+		{ metal: 'steel', amount: 12 }
+	]
+
+	GIRDERS.forEach(material => {
+		event.shaped(`${material.amount}x create:metal_girder`, [
+			'AAA',
+			'BBB'
+		], {
+			A: `#forge:plates/${material.metal}`,
+			B: `#forge:bolts/${material.metal}`
+		}).id(`tfg:create/shaped/metal_girder_using_${material.metal}`)
+	})
 
 	// Стеклянная дверь
 	event.shapeless('create:framed_glass_door', [
