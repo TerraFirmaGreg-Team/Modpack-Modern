@@ -241,7 +241,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/inverted_patterned_ground')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/knob_and_kettle')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/low_canyons')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mesas')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mud_flats')
@@ -255,7 +254,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/rocky_plateau')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/rolling_hills')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/salt_flats')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/salt_marsh')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/setback_cliffs')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shield_volcano_shore')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shilin_canyons')
@@ -468,6 +466,10 @@ function registerTFGOverworldPlacedFeatures(event) {
 
 	// Volcanoes
 	event.add("tfg:feature/volcanoes", "tfg:earth/volcano/random_cinder_cone");
+
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_smoke");
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_sulfur_patch");
+	event.add("tfg:feature/tuyas", "tfg:earth/volcano/tuya_ash_pile");
 
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
