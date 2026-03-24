@@ -21,7 +21,7 @@
             "type": "spout"
         },
         {
-            "vein_ids": ["tfg:natural_gas_indicator"],
+            "vein_ids": ["tfg:natural_gas_cold_region_indicator"],
             "feature": "tfg:earth/spouts/gas_vent",
             "type": "structure"
         }

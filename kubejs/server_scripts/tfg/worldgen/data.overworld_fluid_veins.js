@@ -124,6 +124,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         "ice_sheet_oceanic_mountains_edge",
         "ice_sheet_tuyas",
         "ice_sheet_tuyas_edge",
+        "ice_sheet_shield_volcano",
         "glaciated_mountains",
         "glaciated_oceanic_mountains",
         "glaciated_shield_volcano",
@@ -171,13 +172,28 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         [200, biomeKeys.lake],
     )
 
-    BIOME_GROUPS.volcanic.push(
+    BIOME_GROUPS.oil.push(
         [300, biomeKeys.volcanic_mountains],
         [100, biomeKeys.mountains],
     )
 
-    BIOME_GROUPS.oil.push(
-        [200, biomeKeys.mountains],
+    BIOME_GROUPS.volcanic.push(
+        [200, biomeKeys.canyons],
+        [200, biomeKeys.volcanic_mountains],
+        [200, biomeKeys.volcanic_oceanic_mountains],
+        [200, biomeKeys.active_shield_volcano],
+        [200, biomeKeys.dormant_shield_volcano],
+        [200, biomeKeys.extinct_shield_volcano],
+        [200, biomeKeys.ancient_shield_volcano],
+        [200, biomeKeys.sunken_shield_volcano],
+        [200, biomeKeys.shield_volcano_shore],
+        [200, biomeKeys.old_shield_volcano_shore],
+        [200, biomeKeys.ice_sheet_shield_volcano],
+        [200, biomeKeys.ice_sheet_tuyas],
+        [200, biomeKeys.ice_sheet_tuyas_edge],
+        [200, biomeKeys.glaciated_shield_volcano],
+        [200, biomeKeys.tuyas],
+        [200, biomeKeys.volcanic_mountains],
         [200, biomeKeys.volcanic_mountains],
     )
 
@@ -204,11 +220,11 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.dimensions('minecraft:overworld')
 		vein.fluid(() => Fluid.of('gtceu:oil_heavy').fluid)
 		vein.weight(5)
-		vein.minimumYield(200)
-		vein.maximumYield(400)
+		vein.minimumYield(10)
+		vein.maximumYield(20)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(200)
+		vein.depletedYield(0)
 	})
 
 	event.add('tfg:light_oil', vein => {
@@ -216,10 +232,10 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.fluid(() => Fluid.of('gtceu:oil_light').fluid)
 		vein.weight(5)
 		vein.minimumYield(20)
-		vein.maximumYield(50)
+		vein.maximumYield(40)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(20)
+		vein.depletedYield(0)
 	})
 
 	event.add('tfg:oil', vein => {
@@ -230,7 +246,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(10)
+		vein.depletedYield(0)
 	})
 
 	event.add('tfg:raw_oil', vein => {
@@ -241,7 +257,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(10)
+		vein.depletedYield(0)
 	})
 
 	event.add('tfg:natural_gas', vein => {
@@ -252,7 +268,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
 		vein.depletionChance(1)
-		vein.depletedYield(10)
+		vein.depletedYield(0)
 	})
 
 	event.add('tfg:water', vein => {
@@ -280,7 +296,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         vein.minimumYield(100)
         vein.maximumYield(650)
         vein.depletionAmount(1)
-        vein.depletionChance(20)
+        vein.depletionChance(100)
         vein.depletedYield(30)
     })
 
@@ -288,7 +304,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         WATER
     */
 
-    event.add('tfg:water', vein => {
+    event.add('tfg:water_biome', vein => {
         vein.dimensions('minecraft:overworld')
         vein.fluid(() => Fluid.of('minecraft:water').fluid)
         BIOME_GROUPS.freshWater.forEach(([weight, biome]) => {
@@ -298,7 +314,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         vein.minimumYield(100)
         vein.maximumYield(650)
         vein.depletionAmount(1)
-        vein.depletionChance(20)
+        vein.depletionChance(100)
         vein.depletedYield(30)
     })
 
@@ -307,46 +323,73 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         OIL
     */
 
-    event.add('tfg:oil', vein => {
-        vein.dimensions('minecraft:overworld')
-        vein.fluid(() => Fluid.of('gtceu:oil').fluid)
-        BIOME_GROUPS.oil.forEach(([weight, biome]) => {
-            if (biome) vein.biomes(weight, biome)
-        })
-        vein.weight(0)
-        vein.minimumYield(100)
-        vein.maximumYield(650)
-        vein.depletionAmount(1)
-        vein.depletionChance(20)
-        vein.depletedYield(30)
-    })
+	event.add('tfg:heavy_oil_spout', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('gtceu:oil_heavy').fluid)
+		vein.weight(0)
+		vein.minimumYield(60)
+		vein.maximumYield(175)
+		vein.depletionAmount(1)
+		vein.depletionChance(1)
+		vein.depletedYield(20)
+	})
+
+	event.add('tfg:raw_oil_spout', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('gtceu:oil_light').fluid)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(300)
+		vein.depletionAmount(1)
+		vein.depletionChance(100)
+		vein.depletedYield(20)
+	})
+
+	event.add('tfg:light_oil_spout', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('gtceu:oil').fluid)
+		vein.weight(0)
+		vein.minimumYield(125)
+		vein.maximumYield(350)
+		vein.depletionAmount(1)
+		vein.depletionChance(100)
+		vein.depletedYield(20)
+	})
+
+	event.add('tfg:oil_spout', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('gtceu:oil_medium').fluid)
+		vein.weight(0)
+		vein.minimumYield(125)
+		vein.maximumYield(300)
+		vein.depletionAmount(1)
+		vein.depletionChance(100)
+		vein.depletedYield(20)
+	})
 
 
     /*
         NATURAL GAS
     */
 
-    event.add('tfg:natural_gas', vein => {
-        vein.dimensions('minecraft:overworld')
-        vein.fluid(() => Fluid.of('gtceu:natural_gas').fluid)
-        BIOME_GROUPS.gas.forEach(([weight, biome]) => {
-            if (biome) vein.biomes(weight, biome)
-        })
-        vein.weight(0)
-        vein.minimumYield(100)
-        vein.maximumYield(650)
-        vein.depletionAmount(1)
-        vein.depletionChance(20)
-        vein.depletedYield(30)
-    })
+    event.add('tfg:natural_gas_cold_region_indicator', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('gtceu:natural_gas').fluid)
+		vein.weight(0)
+		vein.minimumYield(100)
+		vein.maximumYield(275)
+		vein.depletionAmount(1)
+		vein.depletionChance(100)
+		vein.depletedYield(20)
+	})
 
     /*
-        VOLCANIC OIL (example reuse)
+        VOLCANIC LAVA
     */
 
-    event.add('tfg:volcanic_oil', vein => {
+    event.add('tfg:volcanic_lava', vein => {
         vein.dimensions('minecraft:overworld')
-        vein.fluid(() => Fluid.of('gtceu:oil_heavy').fluid)
+        vein.fluid(() => Fluid.of('minecraft:lava').fluid)
         BIOME_GROUPS.volcanic.forEach(([weight, biome]) => {
             if (biome) vein.biomes(weight, biome)
         })
@@ -354,7 +397,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         vein.minimumYield(100)
         vein.maximumYield(650)
         vein.depletionAmount(1)
-        vein.depletionChance(20)
-        vein.depletedYield(30)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
     })
 }
