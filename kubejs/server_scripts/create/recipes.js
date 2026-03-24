@@ -1306,8 +1306,9 @@ const registerCreateRecipes = (event) => {
 
 	// Деталь рельса
 	const GIRDERS = [
-		{ metal: 'wrought_iron', amount: 3 },
-		{ metal: 'steel', amount: 12 }
+		{ metal: 'iron', amount: 4 },
+		{ metal: 'wrought_iron', amount: 8 },
+		{ metal: 'steel', amount: 16 }
 	]
 
 	GIRDERS.forEach(material => {
@@ -1317,7 +1318,13 @@ const registerCreateRecipes = (event) => {
 		], {
 			A: `#forge:plates/${material.metal}`,
 			B: `#forge:bolts/${material.metal}`
-		}).id(`tfg:create/shaped/metal_girder_using_${material.metal}`)
+		}).id(`tfg:create/shaped/metal_girder_from_${material.metal}`)
+
+		event.recipes.gtceu.assembler(`tfg:create/metal_girder_from_${material.metal}`)
+		.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
+		.itemOutputs(`${material.amount}x create:metal_girder`)
+		.duration(100)
+		.EUt(4)
 	})
 
 	// Стеклянная дверь
