@@ -312,6 +312,10 @@ global.CROP_CLIMATE_DATA = [
 		id: 'tfg:ghost_pepper', seed: 'tfg:ghost_pepper_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
 		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
 	},
+	{ 
+		id: 'tfg:fruit_tree/lavacado',
+		minHydration: 20, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 5.5, tempWiggle: 4, genData: true, genTooltip: false
+	},
 	// ============== Mars =================
 	{ 
 		id: 'betterend:amber_root', seed: 'betterend:amber_root_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
