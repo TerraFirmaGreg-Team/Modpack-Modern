@@ -301,6 +301,11 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
 	event.add('tfc:vanilla_monsters', 'minecraft:husk')
 	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
+	event.add('tfc:vanilla_monsters', 'minecraft:slime')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
+	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
+	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
 	
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')

@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:earth/pimento_patch",
+	"feature": "tfg:earth/cucumber_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -11,9 +11,9 @@
 		{
 			"type": "tfc:climate",
 			"min_temperature": 15,
-			"max_temperature": 30,
-			"min_rainfall": 200,
-			"max_rainfall": 450,
+			"max_temperature": 40,
+			"min_rainfall": 350,
+			"max_rainfall": 500,
 			"min_forest": "sparse",
 			"max_forest": "normal"
 		}

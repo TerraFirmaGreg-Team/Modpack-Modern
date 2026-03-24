@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:earth/pimento_patch",
+	"feature": "tfg:earth/radish_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -10,11 +10,10 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": 15,
-			"max_temperature": 30,
-			"min_rainfall": 200,
-			"max_rainfall": 450,
-			"min_forest": "sparse",
+			"min_temperature": -16,
+			"max_temperature": 4,
+			"min_rainfall": 75,
+			"max_rainfall": 325,
 			"max_forest": "normal"
 		}
 	]
