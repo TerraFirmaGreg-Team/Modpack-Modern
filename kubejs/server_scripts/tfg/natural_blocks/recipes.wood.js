@@ -643,6 +643,10 @@ function registerTFGWoodenRecipes(event) {
                 .duration(50)
                 .EUt(GTValues.VA[GTValues.ULV])
 
+            event.recipes.greate.pressing('tfc:stick_bundle', '18x #forge:rods/wooden')
+                .recipeTier(0)
+                .id('tfg:pressing/stick_bundle')
+
     // #endregion
 
     // #region TFC
