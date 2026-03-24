@@ -1324,7 +1324,8 @@ const registerCreateRecipes = (event) => {
 		.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
 		.itemOutputs(`${material.amount}x create:metal_girder`)
 		.duration(100)
-		.EUt(4)
+		.EUt(20)
+		.circuit(6)
 	})
 
 	// Стеклянная дверь
