@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#papyrus)纸莎草$()$(li)$(l:tfc:mechanics/crops#potato)马铃薯$()$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)红甜椒$()$(li)$(l:tfc:mechanics/crops#rice)大米$()$(li)$(l:tfc:mechanics/crops#rye)黑麦$()$(li)$(l:tfc:mechanics/crops#soybean)大豆$()$(li)$(l:tfc:mechanics/crops#squash)西葫芦$()$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()$(li)$(l:tfc:mechanics/crops#tomatoes)西红柿$()$(li)$(l:tfc:mechanics/crops#wheat)小麦$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#papyrus)纸莎草$()$(li)$(l:tfc:mechanics/crops#potato)马铃薯$()$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)红甜椒$()$(li)$(l:tfc:mechanics/crops#rice)大米$()$(li)$(l:tfc:mechanics/crops#rye)黑麦$()$(li)$(l:tfc:mechanics/crops#soybean)大豆$()$(li)$(l:tfc:mechanics/crops#squash)西葫芦$()$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()$(li)$(l:tfc:mechanics/crops#tomatoes)西红柿$()$(li)$(l:tfc:mechanics/crops#wheat)小麦$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()$(li)$(l:tfc:mechanics/crops#radish)萝卜$()$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -3782,6 +3782,375 @@
 				}
 			],
 			"text": "$(thing)野生亚麻$()生长于-5°C至23°C的温度区间及175至475毫米的降雨环境。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "黄瓜",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 70 - 100 %$(br)$(bold)营养物质$(): 氮$(br2)黄瓜是一种两格高作物。黄瓜种子可以种植在耕地上，能生长到两格高，产出可作为$(thing)蔬菜$()食用$(item)的黄瓜$()。$(br)$(bold)种植黄瓜需要插根木棍才能完全成熟。$()",
+			"title": "黄瓜"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=2,part=top]",
+						"Y": "tfg:cucumber[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=3,part=top]",
+						"Y": "tfg:cucumber[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=4,part=top]",
+						"Y": "tfg:cucumber[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=5,part=top]",
+						"Y": "tfg:cucumber[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生黄瓜$()生长于【占位符】",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "萝卜",
+			"title": "萝卜",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 15 - 65 %$(br)$(bold)营养物质$(): 钾$(br2)萝卜可以作为$(thing)蔬菜$()食用。如果你需要一种能在较低温度下存活的作物，萝卜是个不错的选择。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生萝卜$()生长于【占位符】。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "扁豆",
+			"title": "扁豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 50 - 100 %$(br)$(bold)营养物质$(): 磷$(br2)扁豆可以作为$(thing)蔬菜$()食用，但建议先煮熟。在较寒冷的气候条件下，扁豆是另一种不错的种植选择。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生扁豆$()生长于【占位符】。",
+			"enable_visualize": false
 		}
 	],
 	"read_by_default": true,
@@ -3833,6 +4202,12 @@
 		"tfg:rapeseed_seeds": 56,
 		"tfg:rapeseed_product": 56,
 		"tfg:flax_seeds": 58,
-		"tfg:flax_product": 58
+		"tfg:flax_product": 58,
+		"tfg:cucumber_seeds": 60,
+		"tfg:cucumber_product": 60,
+		"tfg:radish_seeds": 62,
+		"tfg:radish_product": 62,
+		"tfg:lentil_seeds": 64,
+		"tfg:lentil_product": 64
 	}
 }
