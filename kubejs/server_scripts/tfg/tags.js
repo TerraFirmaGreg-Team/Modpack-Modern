@@ -295,6 +295,12 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
+
+	// Tag used by TFC to control monsters spawning on the surface
+	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:husk')
+	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
 	
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
