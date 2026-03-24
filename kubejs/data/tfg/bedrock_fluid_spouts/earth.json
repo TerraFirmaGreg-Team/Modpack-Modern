@@ -24,6 +24,11 @@
             "vein_ids": ["tfg:natural_gas_cold_region_indicator"],
             "feature": "tfg:earth/spouts/gas_vent",
             "type": "structure"
+        },
+        {
+            "vein_ids": ["tfg:spring_water"],
+            "feature": "tfg:earth/spouts/spring_water",
+            "type": "pool"
         }
     ]
 }

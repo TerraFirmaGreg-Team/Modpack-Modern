@@ -400,4 +400,19 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         vein.depletionChance(100)
         vein.depletedYield(0)
     })
+
+    /*
+        SPRING WATER - TEST
+    */
+
+	event.add('tfg:spring_water', vein => {
+		vein.dimensions('minecraft:overworld')
+		vein.fluid(() => Fluid.of('tfc:spring_water').fluid)
+		vein.weight(0)
+		vein.minimumYield(60)
+		vein.maximumYield(175)
+		vein.depletionAmount(1)
+		vein.depletionChance(1)
+		vein.depletedYield(20)
+	})
 }
