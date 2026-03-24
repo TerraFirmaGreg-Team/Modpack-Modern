@@ -45,12 +45,12 @@
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон головки геологічного молотка.$()$(br2)Щоб створити оголів'я інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
+      "text": "Після того як шаблон було $(l:getting_started/pottery)виколото$(), його потрібно $(l:mechanics/heating)обпалити$(), щоб отримати $(item)шаблон головки геологічного молотка.$()$(br2)Щоб створити головку інструмента, потрібно $(l:getting_started/finding_ores#casting)залити$() рідкий метал у шаблон."
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "Оголів'я геологічного молотка також можна $(l:mechanics/anvils#working)викувати$() зі $(item)зливка$() будь-якого інструментального металу на $(l:mechanics/anvils)ковадлі$().$(br2)Геологічний молоток створюється шляхом крафту головки інструмента зі палицею."
+      "text": "Головку геологічного молотка також можна $(l:mechanics/anvils#working)викувати$() зі $(item)злитка$() будь-якого інструментального металу на $(l:mechanics/anvils)ковадлі$().$(br2)Геологічний молоток створюється шляхом створення головки інструмента зі палицею."
     },
     {
       "type": "patchouli:text",

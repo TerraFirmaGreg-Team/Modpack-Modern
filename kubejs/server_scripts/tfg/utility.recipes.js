@@ -61,7 +61,7 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         var machineName = javaRecipe.getId().toString().split(":")[1].split("/")[0]
         var recipeName = recipeId.split("/").slice(1).join("/")
-        var newId = options.newId || ("tfg:" + machineName + "/" + recipeName)
+        var newId = options.newId || (`tfg:${machineName  }/${recipeName}`)
 
         // Duration and EUt
 
@@ -145,7 +145,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 var ing2 = recipeJson.inputs.item[ii2].content.ingredient
                 var count = recipeJson.inputs.item[ii2].content.count || 1
                 if (ing2 && typeof ing2 === "object" && "tag" in ing2) {
-                    newRecipe.itemInputs(count + "x #" + ing2.tag)
+                    newRecipe.itemInputs(`${count}x #${ing2.tag}`)
                 } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
                 }
@@ -160,7 +160,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 if (fluidVal && fluidVal.fluid) {
                     newRecipe.inputFluids(Fluid.of(fluidVal.fluid, amount))
                 } else if (fluidVal && fluidVal.tag) {
-                    newRecipe.inputFluids(Fluid.of("gtceu:" + fluidVal.tag.split(":")[1], amount))
+                    newRecipe.inputFluids(Fluid.of(`gtceu:${fluidVal.tag.split(":")[1]}`, amount))
                 }
             }
         }
@@ -184,7 +184,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 if (fluidOutVal && fluidOutVal.fluid) {
                     newRecipe.outputFluids(Fluid.of(fluidOutVal.fluid, outAmount))
                 } else if (fluidOutVal && fluidOutVal.tag) {
-                    newRecipe.outputFluids(Fluid.of("gtceu:" + fluidOutVal.tag.split(":")[1], outAmount))
+                    newRecipe.outputFluids(Fluid.of(`gtceu:${fluidOutVal.tag.split(":")[1]}`, outAmount))
                 }
             }
         }

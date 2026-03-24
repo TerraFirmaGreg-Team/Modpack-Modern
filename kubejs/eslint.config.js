@@ -40,7 +40,7 @@ export default defineConfig([
       "valid-typeof": "error",
       "curly": ["off", "multi-line"],
       "default-case-last": "warn",
-      "no-else-return": "warn",
+      "no-else-return": "off",
       "no-eval": "error",
       "no-implied-eval": "error",
       "no-lone-blocks": "warn",

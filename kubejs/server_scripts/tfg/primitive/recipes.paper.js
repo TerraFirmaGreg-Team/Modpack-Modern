@@ -97,7 +97,7 @@ function registerTFGPapermakingRecipes(event) {
 				r.replaceOutput('gtceu:wood_dust', 'gtceu:hardwood_dust')
 				r.replaceOutput('gtceu:small_wood_dust', 'gtceu:small_hardwood_dust')
 				r.replaceOutput('gtceu:tiny_wood_dust', 'gtceu_tiny_hardwood_dust')
-				return;
+			
 			}
 		})
 	})
