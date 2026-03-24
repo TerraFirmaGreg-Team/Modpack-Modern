@@ -88,7 +88,7 @@
 			description: ["{quests.gregtech_energy.moving.desc}"]
 			icon: "gtceu:luv_field_generator"
 			id: "60FF9249376DF9BD"
-			shape: "octagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.gregtech_energy.moving.subtitle}"
 			tasks: [{
@@ -105,7 +105,7 @@
 			description: ["{quests.gregtech_energy.storage.desc}"]
 			icon: "gtceu:uv_field_generator"
 			id: "08C160A0E7BBF39D"
-			shape: "octagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.gregtech_energy.storage.subtitle}"
 			tasks: [{
@@ -123,7 +123,7 @@
 			description: ["{quests.gregtech_energy.produce_energy.desc}"]
 			icon: "gtceu:lv_field_generator"
 			id: "2CDB9778C7A30044"
-			shape: "octagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.gregtech_energy.produce_energy.subtitle}"
 			tasks: [{
@@ -148,7 +148,7 @@
 			]
 			icon: "gtceu:hv_field_generator"
 			id: "2E57B2B963717893"
-			shape: "octagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "{quests.gregtech_energy.spending_energy.subtitle}"
 			tasks: [{
@@ -165,6 +165,7 @@
 			description: ["{quests.gregtech_energy.moving_wire.desc}"]
 			icon: "gtceu:tin_single_cable"
 			id: "2544BE51A1794811"
+			shape: "circle"
 			subtitle: "{quests.gregtech_energy.moving_wire.subtitle}"
 			tasks: [
 				{
@@ -204,6 +205,7 @@
 			]
 			icon: "gtceu:tin_octal_cable"
 			id: "2F9973EC65735849"
+			shape: "circle"
 			subtitle: "{quests.gregtech_energy.moving_amp.subtitle}"
 			tasks: [
 				{
@@ -469,6 +471,7 @@
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "270ED38B1B8D99C2"
+			shape: "circle"
 			subtitle: "{quests.gregtech_energy.blast_oc.subtitle}"
 			tasks: [
 				{
@@ -513,6 +516,7 @@
 			]
 			icon: "gtceu:large_assembler"
 			id: "6F46479365672DDD"
+			shape: "circle"
 			subtitle: "{quests.gregtech_energy.overclock.subtitle}"
 			tasks: [{
 				id: "18A095DEF3B37900"
@@ -676,12 +680,12 @@
 					type: "item"
 				}
 				{
-					id: "42A4CEE8AF825901"
+					id: "1442676C7EC3F995"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:bronze_large_boiler)item(gtceu:steel_large_boiler)item(gtceu:titanium_large_boiler)item(gtceu:tungstensteel_large_boiler))"
+							"ftbfiltersystem:filter": "or(item(tfg:large_bronze_boiler)item(tfg:large_steel_boiler))"
 						}
 					}
 					title: "{quests.gregtech_energy.lst_fuel.task.1}"

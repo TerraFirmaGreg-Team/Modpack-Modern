@@ -1178,9 +1178,9 @@
 					type: "item"
 				}
 				{
-					count: 14L
+					count: 10L
 					id: "2E6781820FF96078"
-					item: { Count: 14, id: "gtceu:heatproof_machine_casing" }
+					item: "gtceu:heatproof_machine_casing"
 					type: "item"
 				}
 				{
