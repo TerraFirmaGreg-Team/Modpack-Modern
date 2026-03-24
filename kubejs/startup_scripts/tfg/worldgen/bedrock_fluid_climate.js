@@ -15,21 +15,25 @@ function rl(id) {
     return ResourceLocation.fromNamespaceAndPath("tfg", id)
 }
 
+// Add a fluid vein dependent of average temperature
 function temperature(veinId, min, max, weight) {
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         new ClimateWeightModifier(ClimateMode.TEMPERATURE, min, max, weight))
 }
 
+// Add a fluid vein dependent of rainfall
 function rainfall(veinId, min, max, weight) {
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         new ClimateWeightModifier(ClimateMode.RAINFALL, min, max, weight))
 }
 
+// Add a fluid vein dependent of average temperature AND rainfall (both need to be true)
 function temperatureAndRainfall(veinId, tempMin, tempMax, rainMin, rainMax, weight) {
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         ClimateWeightModifier.combined(tempMin, tempMax, rainMin, rainMax, weight))
 }
 
+// Add a fluid vein dependent of average temperature AND rainfall AND biome (all of them need to be true)
 function climateAndBiome(veinId, tempMin, tempMax, rainMin, rainMax, biomeIds, weight) {
     const HashSet = Java.loadClass("java.util.HashSet")
     const biomeSet = new HashSet()
