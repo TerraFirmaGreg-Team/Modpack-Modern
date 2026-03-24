@@ -2,8 +2,6 @@
 	"type": "tfc:multiple",
 	"config": {
 		"features": [
-			"tfg:earth/volcano/basalt_replace_all_center",
-			"tfg:earth/volcano/basalt_replace_all_edges",
 			"tfg:earth/volcano/magma_rivulet",
 			"tfg:earth/volcano/volcano_caldera",
 			"tfg:earth/volcano/random_volcano_fissure",
