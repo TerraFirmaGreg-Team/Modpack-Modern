@@ -644,6 +644,7 @@ function registerTFGWoodenRecipes(event) {
                 .EUt(GTValues.VA[GTValues.ULV])
 
             event.recipes.greate.pressing('tfc:stick_bundle', '18x #forge:rods/wooden')
+                .circuitNumber(8)
                 .recipeTier(0)
                 .id('tfg:pressing/stick_bundle')
 

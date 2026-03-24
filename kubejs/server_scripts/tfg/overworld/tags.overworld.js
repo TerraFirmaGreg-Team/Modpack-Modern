@@ -458,11 +458,13 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/oil_spout");
 	event.add("tfc:in_biome/underground_decoration", "tfg:earth/flint_patch");
+	event.add("tfc:in_biome/underground_decoration", "tfg:earth/sand");
 	// New worldgen
 	event.add("tfg:in_biome/underground_decoration", "tfg:glow_lichen");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sulfur_patch");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/oil_spout");
 	event.add("tfg:in_biome/underground_decoration", "tfg:earth/flint_patch");
+	event.add("tfg:in_biome/underground_decoration", "tfg:earth/sand");
 
 	// Volcanoes
 	event.add("tfg:feature/volcanoes", "tfg:earth/volcano/random_cinder_cone");
@@ -474,5 +476,4 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
-	
 }
