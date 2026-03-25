@@ -131,7 +131,6 @@
 		}
 		{
 			dependencies: [
-				"572A8983FA12152A"
 				"3AF956758FA289A8"
 				"07E7678095258EDB"
 				"383A14A5C65B3ADF"
@@ -162,7 +161,7 @@
 		{
 			dependencies: ["09D5BD00E3308E76"]
 			description: ["{quests.create_logistics.rose_quartz.desc}"]
-			icon: "gtceu:overworld_marker"
+			icon: "create:transmitter"
 			id: "3137824EEA1E4D9B"
 			subtitle: "{quests.create_logistics.rose_quartz.subtitle}"
 			tasks: [{
@@ -192,23 +191,7 @@
 			}]
 			title: "{quests.create_logistics.cold_rose_quartz.title}"
 			x: 2.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["3137824EEA1E4D9B"]
-			dependency_requirement: "one_started"
-			description: ["{quests.create_logistics.fabricate_rose_quartz.desc}"]
-			id: "572A8983FA12152A"
-			optional: true
-			subtitle: "{quests.create_logistics.fabricate_rose_quartz.subtitle}"
-			tasks: [{
-				id: "57B107DB57726992"
-				item: "greate:rose_quartz_plate"
-				type: "item"
-			}]
-			title: "{quests.create_logistics.fabricate_rose_quartz.title}"
-			x: 2.5d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [

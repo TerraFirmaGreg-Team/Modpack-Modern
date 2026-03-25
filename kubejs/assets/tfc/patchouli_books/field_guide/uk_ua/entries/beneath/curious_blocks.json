@@ -5,6 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
 			"recipe": "beneath:crafting/blackstone_aqueduct",
 			"text": "Акведук з перексоніту дозволяє проводити лаву на будь-яку відстань."
 		},
