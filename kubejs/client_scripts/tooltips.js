@@ -493,56 +493,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
 	})
-	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.haste").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
-	})
 	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
 	})
-    event.addAdvanced(['tfg:vintage_beer_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" III (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_cider_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_rum_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_mead_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_sake_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_vodka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_corn_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_rye_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
-    })
 
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.

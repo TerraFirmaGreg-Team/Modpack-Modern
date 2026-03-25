@@ -37,6 +37,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
 	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
 
+	//Explosive Tag for the Gas Well
+	event.add('tfg:explosives', 'gtceu:powderbarrel', 'minecraft:tnt', 'gtceu:industrial_tnt', 'gtceu:dynamite')
+
 	// Tools
 	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
@@ -223,14 +226,23 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
+	event.add('tfc:drinkables', 'tfg:vintage_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_beer')
 	event.add('tfg:alcohols', 'tfg:vintage_beer')
+	event.add('tfc:drinkables', 'tfg:vintage_cider')
 	event.add('tfg:alcohols', 'tfg:vintage_cider')
+	event.add('tfc:drinkables', 'tfg:vintage_rum')
 	event.add('tfg:alcohols', 'tfg:vintage_rum')
+	event.add('tfc:drinkables', 'tfg:vintage_sake')
 	event.add('tfg:alcohols', 'tfg:vintage_sake')
+	event.add('tfc:drinkables', 'tfg:vintage_corn_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_rye_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_mead')
 	event.add('tfg:alcohols', 'tfg:vintage_mead')
+	event.add('tfc:drinkables', 'tfg:vintage_vodka')
 	event.add('tfg:alcohols', 'tfg:vintage_vodka')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
