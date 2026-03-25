@@ -14,6 +14,10 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:fluxstone', 'tfg:plant/mussels');
 	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
 
+	event.add('tfg:stone_composition/igneous_mafic', 'tfg:mafic_hornfels')
+	event.add('tfg:stone_composition/metamorphic', 'tfg:pelitic_hornfels')
+	event.add('tfg:stone_composition/sedimentary_carbonate', 'tfg:carbonate_hornfels')
+
 	event.add('tfg:anemones', "tfg:plant/anemone_green");
 	event.add('tfg:anemones', "tfg:plant/anemone_purple");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
@@ -321,22 +325,22 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/setback_cliffs')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/stone_circles')
 	
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/hills')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/plateau')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/plateau_wide')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/plains')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/drumlins')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/mesas')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/hoodoos')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/patterned_ground')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/knob_and_kettle')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/mud_flats')
-	event.add('tfc:ruined_world:has_structure/large_structure', 'tfg:earth/salt_flats')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/hills')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau_wide')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plains')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/drumlins')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/mesas')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/hoodoos')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/patterned_ground')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/inverted_patterned_ground')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/knob_and_kettle')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/mud_flats')
+	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/salt_flats')
 	
-	event.add('tfc:ruined_world:has_structure/small_structure', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc:ruined_world:has_structure/small_structure', 'tfg:earth/old_mountains')
-	event.add('tfc:ruined_world:has_structure/small_structure', 'tfg:earth/glacially_carved_mountains')
+	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc:ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/small_structure', 'tfg:earth/old_mountains')
+	event.add('tfc_ruined_world:has_structure/small_structure', 'tfg:earth/glacially_carved_mountains')
 
 	event.add('tfc_ruined_world:has_structure/ancient_monument_1', '#tfc:ruined_world:has_structure/large_structure')
 	event.add('tfc_ruined_world:has_structure/ancient_monument_2', '#tfc:ruined_world:has_structure/large_structure')
@@ -443,6 +447,9 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:feature/crops", "tfg:earth/sunflower_patch");
 	event.add("tfc:feature/crops", "tfg:earth/rapeseed_patch");
 	event.add("tfc:feature/crops", "tfg:earth/flax_patch");
+	event.add("tfc:feature/crops", "tfg:earth/radish_patch");
+	event.add("tfc:feature/crops", "tfg:earth/lentil_patch");
+	event.add("tfc:feature/crops", "tfg:earth/cucumber_patch");
 	// Herbs and spices
 	event.add("tfc:feature/crops", "tfg:earth/basil_patch");
 	event.add("tfc:feature/crops", "tfg:earth/bay_laurel_patch");

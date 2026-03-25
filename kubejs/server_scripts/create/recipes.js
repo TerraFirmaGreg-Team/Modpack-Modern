@@ -1305,13 +1305,28 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_scaffolding')
 
 	// Деталь рельса
-	event.shaped('3x create:metal_girder', [
-		'AAA',
-		'BBB'
-	], {
-		A: '#forge:plates/wrought_iron',
-		B: '#forge:bolts/wrought_iron'
-	}).id('tfg:create/shaped/metal_girder')
+	const GIRDERS = [
+		{ metal: 'iron', amount: 4 },
+		{ metal: 'wrought_iron', amount: 8 },
+		{ metal: 'steel', amount: 16 }
+	]
+
+	GIRDERS.forEach(material => {
+		event.shaped(`${material.amount}x create:metal_girder`, [
+			'AAA',
+			'BBB'
+		], {
+			A: `#forge:plates/${material.metal}`,
+			B: `#forge:bolts/${material.metal}`
+		}).id(`tfg:create/shaped/metal_girder_from_${material.metal}`)
+
+		event.recipes.gtceu.assembler(`tfg:create/metal_girder_from_${material.metal}`)
+		.itemInputs(`3x #forge:plates/${material.metal}`, `3x #forge:bolts/${material.metal}`)
+		.itemOutputs(`${material.amount}x create:metal_girder`)
+		.duration(100)
+		.EUt(20)
+		.circuit(6)
+	})
 
 	// Стеклянная дверь
 	event.shapeless('create:framed_glass_door', [
