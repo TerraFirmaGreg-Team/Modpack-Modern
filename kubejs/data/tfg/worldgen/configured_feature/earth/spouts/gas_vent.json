@@ -1,0 +1,8 @@
+{
+    "type": "tfg:fluid_gas_vent",
+    "config": {
+        "base_radius": 4,
+        "spawn_chance": 0.05,
+        "geyserite_chance": 0.7
+    }
+}
