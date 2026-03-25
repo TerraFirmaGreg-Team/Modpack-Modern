@@ -2366,6 +2366,8 @@
 	"tfg.grapplemod.upgrades.angle": "Increases the §lHorizontal Angle§r for throwing your §lDouble Hooks§r by 5°, up to 90°.\nOnly accessible with a §lDouble Hook§r installed.",
 	"tfg.grapplemod.downgrades.angle": "Decreases the §lHorizontal Angle§r for throwing your §lDouble Hooks§r by 5°, down to 5°°.\nOnly accessible with a §lDouble Hook§r installed.",
 	"tag.item.tfg.dried_fruit": "Dried Fruit",
+	"tfg.tooltip.tier_locked_block": "Requires Steel+ Tools to Break",
+	"tfg.tooltip.tier_locked_block_explosives": "Weak to Explosives",
 	"tfg.tooltip.food_trait.refrigerating": "§bRefrigerating",
 	"tfg.tooltip.foodtrait.freeze_dried": "Cryodesiccated",
 	"tfg.tooltip.extraterrestrial_farming": "§4Temperature:§r An oxygenated environment provides 15°C",
