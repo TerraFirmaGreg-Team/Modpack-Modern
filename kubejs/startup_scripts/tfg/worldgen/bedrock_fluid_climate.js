@@ -20,22 +20,22 @@ const biomeSet = ids => {
 
 // ── API ───────────────────────────────────────────────────────
 
-/** Spawn uniquement dans une plage de température moyenne */
+// Add a fluid vein dependent of average temperature
 const temperature = (veinId, min, max, weight) =>
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         new ClimateWeightModifier(ClimateMode.TEMPERATURE, min, max, weight))
 
-/** Spawn uniquement dans une plage de précipitations */
+// Add a fluid vein dependent of rainfall
 const rainfall = (veinId, min, max, weight) =>
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         new ClimateWeightModifier(ClimateMode.RAINFALL, min, max, weight))
 
-/** Spawn uniquement si température ET précipitations matchent */
+// Add a fluid vein dependent of average temperature AND rainfall (both need to be true)
 const temperatureAndRainfall = (veinId, tempMin, tempMax, rainMin, rainMax, weight) =>
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         ClimateWeightModifier.combined(tempMin, tempMax, rainMin, rainMax, weight))
 
-/** Spawn uniquement si température ET précipitations ET biome matchent */
+// Add a fluid vein dependent of average temperature AND rainfall AND biome (all of them need to be true)
 const climateAndBiome = (veinId, tempMin, tempMax, rainMin, rainMax, biomeIds, weight) =>
     TFGBedrockFluidRegistry.addClimate(rl(veinId),
         ClimateWeightModifier.combinedWithBiome(
@@ -50,36 +50,50 @@ const TRUE_OCEAN_BIOMES = [
     "tfg:earth/deep_ocean_trench",
     "tfg:earth/sunken_shield_volcano",
 ]
+// =========================================================
+// NATURAL GAS
+// =========================================================
 
-// ── NATURAL GAS ───────────────────────────────────────────────
 // Surface Indicator - Wet/Cold Climate
 temperatureAndRainfall("natural_gas_surface_indicator", -20, 0, 300, 500, 50)
 
 // Ocean Biomes - Cold/Wet Climate
 climateAndBiome("natural_gas_ocean", -20, 10, 200, 500, TRUE_OCEAN_BIOMES, 50)
 
-// ── LIGHT OIL ─────────────────────────────────────────────────
+// =========================================================
+// LIGHT OIL
+// =========================================================
+
 // Spout - Hot/Dry Climate
 temperatureAndRainfall("light_oil_spout_hot", 20, 30, 0, 50, 50)
 
 // Spout - Ocean Biomes
 climateAndBiome("light_oil_spout_ocean", 15, 30, 0, 100, TRUE_OCEAN_BIOMES, 100)
 
-// ── OIL ───────────────────────────────────────────────────────
+// =========================================================
+// OIL
+// =========================================================
+
 // Spout - Hot/Dry Climate
 temperatureAndRainfall("oil_spout_hot", 20, 30, 0, 50, 30)
 
 // Spout - Ocean Biomes
 climateAndBiome("oil_spout_ocean", 15, 30, 0, 100, TRUE_OCEAN_BIOMES, 30)
 
-// ── HEAVY OIL ─────────────────────────────────────────────────
+// =========================================================
+// HEAVY OIL
+// =========================================================
+
 // Spout - Hot/Dry Climate
 temperatureAndRainfall("heavy_oil_spout_hot", 20, 30, 0, 50, 20)
 
 // Spout - Ocean Biomes
 climateAndBiome("heavy_oil_spout_ocean", 15, 30, 0, 100, TRUE_OCEAN_BIOMES, 20)
 
-// ── RAW OIL ───────────────────────────────────────────────────
+// =========================================================
+// RAW OIL
+// =========================================================
+
 // Spout - Hot/Dry Climate
 temperatureAndRainfall("raw_oil_spout_hot", 20, 30, 0, 50, 30)
 
