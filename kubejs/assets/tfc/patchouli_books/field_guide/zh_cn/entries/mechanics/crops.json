@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "目录",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()$(li)$(l:tfc:mechanics/crops#oat)燕麦$()$(li)$(l:tfc:mechanics/crops#onion)洋葱$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)甜菜$()$(li)$(l:tfc:mechanics/crops#cabbage)卷心菜$()$(li)$(l:tfc:mechanics/crops#canola)油菜$()$(li)$(l:tfc:mechanics/crops#carrot)胡萝卜$()$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()$(li)$(l:tfc:mechanics/crops#flax)亚麻$()$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()$(li)$(l:tfc:mechanics/crops#jute)黄麻$()$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()$(li)$(l:tfc:mechanics/crops#maize)玉米$()$(li)$(l:tfc:mechanics/crops#melon)西瓜$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#papyrus)纸莎草$()$(li)$(l:tfc:mechanics/crops#potato)马铃薯$()$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)红甜椒$()$(li)$(l:tfc:mechanics/crops#rice)大米$()$(li)$(l:tfc:mechanics/crops#rye)黑麦$()$(li)$(l:tfc:mechanics/crops#soybean)大豆$()$(li)$(l:tfc:mechanics/crops#squash)西葫芦$()$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()$(li)$(l:tfc:mechanics/crops#tomatoes)西红柿$()$(li)$(l:tfc:mechanics/crops#wheat)小麦$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()$(li)$(l:tfc:mechanics/crops#radish)萝卜$()$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)燕麦$()$(li)$(l:tfc:mechanics/crops#onion)洋葱$()$(li)$(l:tfc:mechanics/crops#papyrus)纸莎草$()$(li)$(l:tfc:mechanics/crops#potato)马铃薯$()$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()$(li)$(l:tfc:mechanics/crops#radish)萝卜$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)红甜椒$()$(li)$(l:tfc:mechanics/crops#rice)大米$()$(li)$(l:tfc:mechanics/crops#rye)黑麦$()$(li)$(l:tfc:mechanics/crops#soybean)大豆$()$(li)$(l:tfc:mechanics/crops#squash)西葫芦$()$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()$(li)$(l:tfc:mechanics/crops#tomatoes)西红柿$()$(li)$(l:tfc:mechanics/crops#wheat)小麦$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -3919,7 +3919,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生黄瓜$()生长于【占位符】",
+			"text": "$(thing)野生黄瓜$()生长于15 至 40°C、降雨量0-150mm的区域。",
 			"enable_visualize": false
 		},
 		{
@@ -4034,7 +4034,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生萝卜$()生长于【占位符】。",
+			"text": "$(thing)野生萝卜$()生长于-16 至 4°C、降雨量75-325mm的区域。",
 			"enable_visualize": false
 		},
 		{
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生扁豆$()生长于【占位符】。",
+			"text": "$(thing)野生扁豆$()生长于-18 至 2°C、降雨量250-425mm的区域。",
 			"enable_visualize": false
 		}
 	],
