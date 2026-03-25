@@ -361,7 +361,7 @@ function processLamp(event, material) {
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
-	addMaterialCasting(event, unfinishedLampItem, null, false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144);
+	addMaterialCasting(event, unfinishedLampItem, 'tfg:lamp_mold', false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144);
 
 	// Finished lamp
 	event.recipes.gtceu.packer(`tfg:${materialName}_lamp`)
