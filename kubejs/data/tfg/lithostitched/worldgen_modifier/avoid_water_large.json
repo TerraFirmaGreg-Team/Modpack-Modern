@@ -9,8 +9,19 @@
 	"spawn_condition": {
 		"type": "lithostitched:grid",
 		"condition": {
-			"type": "lithostitched:in_biome",
-			"biomes": "#tfg:never_has_structure/illages"
+			"type": "lithostitched:all_of",
+			"conditions": [
+				{
+					"type": "lithostitched:in_biome",
+					"biomes": "#tfg:never_has_structure/illages"
+				},
+				{
+					"type": "lithostitched:height_filter",
+					"range_type": "absolute",
+					"heightmap": "WORLD_SURFACE_WG",
+					"permitted_range": [65, 120]
+				}
+			]
 		},
 		"radius": 105,
 		"distance_between_points": 15,

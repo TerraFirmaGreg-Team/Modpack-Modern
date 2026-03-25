@@ -11,6 +11,7 @@
 		{
 			"type": "tfc:climate",
 			"min_temperature": 18,
+			"max_temperature": 30,
 			"min_rainfall": 200,
 			"min_forest": "normal",
 			"max_forest": "old_growth"

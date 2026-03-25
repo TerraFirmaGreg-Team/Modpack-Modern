@@ -56,6 +56,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_lamp_mold', 1.0, null, null);
 
 	event.itemHeat('betterend:charnia_orange', 0.25, null, null)
 	event.itemHeat('betterend:charnia_cyan', 0.25, null, null)
@@ -340,10 +341,12 @@ function registerTFGItemSize(event) {
 			"tfg:unfired_spindle_head_mold",
 			"tfg:unfired_small_gear_mold",
 			"tfg:unfired_nugget_mold",
+			"tfg:unfired_lamp_mold",
 			"tfg:rod_mold",
 			"tfg:spindle_head_mold",
 			"tfg:small_gear_mold",
-			"tfg:nugget_mold"
+			"tfg:nugget_mold",
+			"tfg:lamp_mold"
 		]),
 		"normal",
 		"medium",

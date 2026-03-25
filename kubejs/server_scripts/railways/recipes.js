@@ -504,7 +504,7 @@ const registerRailWaysRecipes = (event) => {
 
 	// Монорельс
 	event.recipes.createSequencedAssembly([
-		'8x railways:track_monorail',
+		'6x railways:track_monorail',
 	], 'create:metal_girder', [
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:plates/wrought_iron']),
 		event.recipes.greate.pressing('railways:track_incomplete_monorail', 'railways:track_incomplete_monorail'),
@@ -514,7 +514,7 @@ const registerRailWaysRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('railways/monorail')
 		.itemInputs('create:metal_girder', '2x #forge:plates/wrought_iron')
-		.itemOutputs('8x railways:track_monorail')
+		.itemOutputs('6x railways:track_monorail')
 		.duration(250)
 		.EUt(32)
 

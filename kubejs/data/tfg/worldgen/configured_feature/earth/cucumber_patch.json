@@ -3,14 +3,9 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "tfc:tall_wild_crop",
 				"config": {
-					"to_place": {
-						"type": "minecraft:simple_state_provider",
-						"state": {
-							"Name": "beneath:sulfur"
-						}
-					}
+					"block": "tfg:cucumber_wild"
 				}
 			},
 			"placement": [
@@ -19,7 +14,7 @@
 					"heightmap": "WORLD_SURFACE_WG"
 				},
 				{
-					"type": "minecraft:block_predicate_filter",
+					"type": "block_predicate_filter",
 					"predicate": {
 						"type": "tfc:replaceable"
 					}
@@ -29,14 +24,14 @@
 					"predicate": {
 						"type": "would_survive",
 						"state": {
-							"Name": "beneath:sulfur"
+							"Name": "tfg:cucumber_wild"
 						}
 					}
 				}
 			]
 		},
-		"tries": 4,
+		"tries": 8,
 		"xz_spread": 8,
-		"y_spread": 2
+		"y_spread": 1
 	}
 }

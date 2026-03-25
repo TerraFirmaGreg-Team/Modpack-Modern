@@ -39,11 +39,13 @@ function registerTFGMarsItemTags(event) {
 	event.add('forge:seeds', 'betterend:amber_root_seeds')
 	event.add('forge:seeds', 'betterend:blossom_berry_seeds')
 	event.add('forge:seeds', 'betterend:bolux_mushroom_seeds')
+	event.add('forge:seeds', 'betterend:chorus_mushroom_seeds')
 	event.add('forge:seeds', 'betterend:cave_pumpkin_plant_seeds')
 	event.add('forge:seeds', 'betterend:shadow_berry_seeds')
 	event.add('tfc:seeds', 'betterend:amber_root_seeds')
 	event.add('tfc:seeds', 'betterend:blossom_berry_seeds')
 	event.add('tfc:seeds', 'betterend:bolux_mushroom_seeds')
+	event.add('tfc:seeds', 'betterend:chorus_mushroom_seeds')
 	event.add('tfc:seeds', 'betterend:cave_pumpkin_plant_seeds')
 	event.add('tfc:seeds', 'betterend:shadow_berry_seeds')
 
