@@ -430,6 +430,7 @@ function registerTFCItemTags(event) {
     })
     global.TFG_MUD_TYPES.forEach(mud => {
         event.add("tfc:wet_mud_bricks", `tfg:mud_brick/${mud}`);
+        event.add("tfc:mud_bricks", `tfg:mud_bricks/${mud}`);
         event.add("tfc:dry_mud_bricks", `tfg:drying_bricks/${mud}`);
     })
 

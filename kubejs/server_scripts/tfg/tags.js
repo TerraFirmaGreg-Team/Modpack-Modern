@@ -226,14 +226,23 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
+	event.add('tfc:drinkables', 'tfg:vintage_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_beer')
 	event.add('tfg:alcohols', 'tfg:vintage_beer')
+	event.add('tfc:drinkables', 'tfg:vintage_cider')
 	event.add('tfg:alcohols', 'tfg:vintage_cider')
+	event.add('tfc:drinkables', 'tfg:vintage_rum')
 	event.add('tfg:alcohols', 'tfg:vintage_rum')
+	event.add('tfc:drinkables', 'tfg:vintage_sake')
 	event.add('tfg:alcohols', 'tfg:vintage_sake')
+	event.add('tfc:drinkables', 'tfg:vintage_corn_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_rye_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_mead')
 	event.add('tfg:alcohols', 'tfg:vintage_mead')
+	event.add('tfc:drinkables', 'tfg:vintage_vodka')
 	event.add('tfg:alcohols', 'tfg:vintage_vodka')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
@@ -298,6 +307,17 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
+
+	// Tag used by TFC to control monsters spawning on the surface
+	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:husk')
+	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
+	event.add('tfc:vanilla_monsters', 'minecraft:slime')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
+	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
+	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
 	
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')

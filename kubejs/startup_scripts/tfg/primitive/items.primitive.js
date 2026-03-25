@@ -253,6 +253,30 @@ function registerTFGPrimitiveItems(event) {
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX"
 		])
+
+	event.create('tfg:lamp_mold', 'tfc:mold')
+        .capacity(144)
+		.texture("base", "tfg:item/mold/fired/lamp_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/lamp_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_lamp_mold')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXX XXXXXXX",
+			"XXXXX    XXXXX",
+			"XXXXX    XXXXX",
+			"XXXX      XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX      XXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
 	
 	// Unfired Molds
 	event.create('tfg:unfired_rod_mold')
@@ -278,6 +302,13 @@ function registerTFGPrimitiveItems(event) {
 	
 	event.create('tfg:unfired_nugget_mold')
 		.texture("tfg:item/mold/unfired/unfired_nugget_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
+
+	event.create('tfg:unfired_lamp_mold')
+		.texture("tfg:item/mold/unfired/unfired_lamp_mold")
 		.tag('tfc:unfired_molds')
 		.tag('tfc:clay_recycle_5')
 		.tag('tfc:molds')
