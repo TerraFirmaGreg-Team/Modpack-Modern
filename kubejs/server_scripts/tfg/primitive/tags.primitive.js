@@ -127,6 +127,11 @@ function registerTFGPrimitiveFluidTags(event) {
 		if (!ChemicalHelper.get(TagPrefix.nugget, material, 1).isEmpty()) {
 			event.add('tfg:usable_in_nugget_mold', material.getFluid().getFluidType().toString())
 		}
+
+		if (!ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1).isEmpty()) {
+			event.add('tfg:usable_in_lamp_mold', material.getFluid().getFluidType().toString())
+		}
 	})
+	
 	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }
