@@ -86,4 +86,73 @@ const registerRnrRecipes = (event) => {
 		.circuit(7)
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Tamped blocks for new world gen soils
+	const DIRT_VARIATIONS = [
+		"dirt",
+		"grass",
+		"rooted_dirt",
+		"clay",
+		"clay_grass",
+		"coarse_dirt",
+		"duff"
+	]
+
+	const MUD_VARIATIONS = [
+		"mud",
+		"muddy_roots"
+	]
+
+	global.TFG_MUD_TYPES.forEach(soil => {
+		DIRT_VARIATIONS.forEach(type => {
+			event.custom({
+				type: `rnr:mattock`,
+				ingredient: `tfg:${type}/${soil}`,
+				result: `tfg:tamped/dirt/${soil}`,
+				mode: `smooth`
+			})
+		})
+
+		MUD_VARIATIONS.forEach(type => {
+			event.custom({
+				type: `rnr:mattock`,
+				ingredient: `tfg:${type}/${soil}`,
+				result: `tfg:tamped/mud/${soil}`,
+				mode: `smooth`
+			})
+		})
+
+		event.custom({
+			type: `rnr:block_mod`,
+			input_item: {
+				item: `rnr:crushed_base_course`
+			},
+			input_block: `tfg:tamped/mud/${soil}`,
+			output_block: `tfg:tamped/soil/${soil}`
+		})
+
+		event.custom({
+			type: `rnr:block_mod`,
+			input_item: {
+				item: `rnr:crushed_base_course`
+			},
+			input_block: `tfg:tamped/dirt/${soil}`,
+			output_block: `rnr:base_course`
+		})
+	})
+
+	global.TFC_MUD_TYPES.forEach(soil => {
+		event.custom({
+			type: `rnr:mattock`,
+			ingredient: `tfg:coarse_dirt/${soil}`,
+			result: `rnr:tamped_${soil}`,
+			mode: `smooth`
+		})
+		event.custom({
+			type: `rnr:mattock`,
+			ingredient: `tfg:duff_${soil}`,
+			result: `rnr:tamped_${soil}`,
+			mode: `smooth`
+		})
+	})
 };

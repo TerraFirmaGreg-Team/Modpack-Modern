@@ -110,6 +110,8 @@ function registerTFGCollapseRecipes(event) {
 		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay_grass/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:coarse_dirt/${dirt}`, `tfg:coarse_dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/dirt/${dirt}`, `tfg:tamped/dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/mud/${dirt}`, `tfg:tamped/mud/${dirt}`)
 	})
 
 	// Other
