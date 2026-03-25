@@ -88,7 +88,7 @@ function registerTFCGurmanRecipes(event) {
 		itemInputs: ['2x firmalife:food/roasted_cocoa_beans'],
 		fluidInputs: ['minecraft:water 1000'],
 		fluidOutputs: ['tfc_gourmet:coffee 1000'],
-		circuit: 2
+		circuit: 3
 	});
 
 	// Cocoa
