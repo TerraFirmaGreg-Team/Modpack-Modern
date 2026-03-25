@@ -20,6 +20,18 @@ function registerTFGOverworldBedrockFluidVeins(event) {
     const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
     const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
 
+    event.add('tfg:test_biomes_string', vein => {
+        vein.dimensions('minecraft:overworld')
+        vein.fluid(() => Fluid.of('gtceu:lubricant').fluid)
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(200)
+        vein.depletionAmount(1)
+        vein.depletionChance(1)
+        vein.depletedYield(0)
+        vein.biomes(99999, 'tfg:earth/lake')
+    })
+
 
     /*
         BIOME LIST
@@ -223,7 +235,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(10)
 		vein.maximumYield(20)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(0)
 	})
 
@@ -234,7 +246,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(20)
 		vein.maximumYield(40)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(0)
 	})
 
@@ -245,7 +257,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(10)
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(0)
 	})
 
@@ -256,7 +268,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(10)
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(0)
 	})
 
@@ -267,7 +279,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(10)
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(0)
 	})
 
@@ -278,7 +290,7 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 		vein.minimumYield(10)
 		vein.maximumYield(30)
 		vein.depletionAmount(1)
-		vein.depletionChance(1)
+		vein.depletionChance(10)
 		vein.depletedYield(10)
 	})
 
