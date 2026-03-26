@@ -1,9 +1,9 @@
 // startup_scripts/bedrock_fluid_climate.js
 "use strict";
 
-const TFGBedrockFluidRegistry = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.worldgen.TFGBedrockFluidRegistry")
-const ClimateWeightModifier = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.worldgen.ClimateWeightModifier")
-const ClimateMode = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.worldgen.ClimateWeightModifier$Mode")
+const TFGBedrockFluidRegistry = Java.loadClass("su.terrafirmagreg.core.common.tfgt.worldgen.TFGBedrockFluidRegistry")
+const ClimateWeightModifier = Java.loadClass("su.terrafirmagreg.core.common.tfgt.worldgen.ClimateWeightModifier")
+const ClimateMode = Java.loadClass("su.terrafirmagreg.core.common.tfgt.worldgen.ClimateWeightModifier$Mode")
 const ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
 const ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey")
 const Registries = Java.loadClass("net.minecraft.core.registries.Registries")
