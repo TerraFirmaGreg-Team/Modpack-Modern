@@ -1,0 +1,39 @@
+{
+    "type": "block",
+    "target": {
+        "type": "gun",
+        "values": [
+            "ulv_guns:flintlock",
+            "create_armorer:pistol_revolver_torgue",
+            "create_armorer:pistol_auto_stress",
+            "applied_armorer:niklas_pistol_semi_pride",
+            "applied_armorer:niklas_pistol_double_win_win",
+            "create_armorer:rifle_assult_crane",
+            "tacz:db_short",
+            "tacz:db_long",
+            "create_armorer:shotgun_pump_bearing",
+            "create_armorer:smg_auto_crank"
+        ]
+    },
+
+    "blocks": [
+        "#tfg:iron_greenhouse_casings",
+        "#firmalife:all_iron_greenhouse",
+        "#tfg:stainless_steel_greenhouse_casings",
+        "#firmalife:stainless_steel_greenhouse",
+        "create:ornate_iron_window",
+        "create:ornate_iron_window_pane",
+        "create:industrial_iron_window",
+        "create:industrial_iron_window_pane",
+        "create:weathered_iron_window",
+        "create:weathered_iron_window_pane",
+        "createdeco:industrial_iron_window",
+        "createdeco:industrial_iron_window_pane"
+    ],
+
+    "block_break": {
+        "type": "never"
+    },
+
+    "priority": 2
+}
