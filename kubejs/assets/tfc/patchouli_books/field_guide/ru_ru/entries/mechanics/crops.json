@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "Содержит",
-			"text": "Чтобы начать, $(thing)Каменную мотыгу$() можно $(thing)выколотить$(), как показано выше."
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмень$()$(li)\n$(l:tfc:mechanics/crops#beet)Свёкла$()$(li)\n$(l:tfc:mechanics/crops#cabbage)Капуста$()$(li)\n$(l:tfc:mechanics/crops#canola)Канола$()$(li)\n$(l:tfc:mechanics/crops#carrot)Морковь$()$(li)\n$(l:tfc:mechanics/crops#cucumber)Огурец$()$(li)\n$(l:tfc:mechanics/crops#flax)Лён$()$(li)\n$(l:tfc:mechanics/crops#garlic)Чеснок$()$(li)\n$(l:tfc:mechanics/crops#green_bean)Горох$()$(li)\n$(l:tfc:mechanics/crops#jute)Джут$()$(li)\n$(l:tfc:mechanics/crops#lentil)Чечевица$()$(li)\n$(l:tfc:mechanics/crops#maize)Кукуруза$()$(li)\n$(l:tfc:mechanics/crops#melon)Арбуз$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#papyrus)Папирус$()$(li)$(l:tfc:mechanics/crops#potato)Картофель$()$(li)$(l:tfc:mechanics/crops#pumpkin)Тыква$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Красный сладкий перец$()$(li)$(l:tfc:mechanics/crops#rice)Рис$()$(li)$(l:tfc:mechanics/crops#rye)Рожь$()$(li)$(l:tfc:mechanics/crops#soybean)Соя$()$(li)$(l:tfc:mechanics/crops#squash)Кабачок$()$(li)$(l:tfc:mechanics/crops#sugarcane)Сахарный тростник$()$(li)$(l:tfc:mechanics/crops#sunflower)Подсолнечник$()$(li)$(l:tfc:mechanics/crops#tomatoes)Помидор$()$(li)$(l:tfc:mechanics/crops#wheat)Пшеница$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Жёлтый сладкий перец$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Овёс$()$(li)\n$(l:tfc:mechanics/crops#onion)Лук$()$(li)\n$(l:tfc:mechanics/crops#papyrus)Папирус$()$(li)\n$(l:tfc:mechanics/crops#potato)Картофель$()$(li)\n$(l:tfc:mechanics/crops#pumpkin)Тыква$()$(li)\n$(l:tfc:mechanics/crops#radish)Редиска$()$(li)\n$(l:tfc:mechanics/crops#red_bell_pepper)Красный сладкий перец$()$(li)\n$(l:tfc:mechanics/crops#rice)Рис$()$(li)\n$(l:tfc:mechanics/crops#rye)Рожь$()$(li)\n$(l:tfc:mechanics/crops#soybean)Соевые бобы$()$(li)\n$(l:tfc:mechanics/crops#squash)Кабачок$()$(li)\n$(l:tfc:mechanics/crops#sugarcane)Сахарный тростник$()$(li)\n$(l:tfc:mechanics/crops#sunflower)Подсолнух$()$(li)\n$(l:tfc:mechanics/crops#tomatoes)Помидор$()$(li)\n$(l:tfc:mechanics/crops#wheat)Пшеница$()$(li)\n$(l:tfc:mechanics/crops#yellow_bell_pepper)Жёлтый сладкий перец$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -3782,6 +3782,375 @@
 				}
 			],
 			"text": "$(thing)Дикий Лён$() растёт в промежутке между -5 и 23С, и от 175 до 475 мм годовых осадков."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cucumber",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Огурцы — двухблочная культура. Семена огурцов можно сажать на пашню, они вырастают в два блока и дают $(item)огурцы$(), которые обеспечивают $(thing)овощную$() питательность.$(br)$(bold)Для полного созревания огурцам требуется подпорка.$()",
+			"title": "Огурец"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=2,part=top]",
+						"Y": "tfg:cucumber[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=3,part=top]",
+						"Y": "tfg:cucumber[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=4,part=top]",
+						"Y": "tfg:cucumber[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=5,part=top]",
+						"Y": "tfg:cucumber[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Дикий огурец$() растёт в при температуре от 15 до 40 °C и осадках 350—500 мм.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radish",
+			"title": "Редиска",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 15 - 65 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Редьку можно есть для получения $(thing)овощной$() питательности. Если вам нужно растение, способное выживать в более холодных температурах, редька — хороший выбор."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Дикая редька$() растёт при температуре от -16 до 4 °C и осадках 75—325 мм.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lentil",
+			"title": "Чечевица",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 50 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Чечевицу можно есть для получения $(thing)овощной$() питательности, хотя перед употреблением её рекомендуется приготовить. Чечевица — ещё один хороший выбор для выращивания в более холодном климате."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Дикая чечевица$() растёт при температуре от -18 до 2 °C и осадках 250—425 мм.",
+			"enable_visualize": false
 		}
 	],
 	"read_by_default": true,
@@ -3833,6 +4202,12 @@
 		"tfg:rapeseed_seeds": 56,
 		"tfg:rapeseed_product": 56,
 		"tfg:flax_seeds": 58,
-		"tfg:flax_product": 58
+		"tfg:flax_product": 58,
+		"tfg:cucumber_seeds": 60,
+		"tfg:cucumber_product": 60,
+		"tfg:radish_seeds": 62,
+		"tfg:radish_product": 62,
+		"tfg:lentil_seeds": 64,
+		"tfg:lentil_product": 64
 	}
 }
