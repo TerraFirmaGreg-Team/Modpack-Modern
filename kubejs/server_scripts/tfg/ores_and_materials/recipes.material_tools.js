@@ -79,7 +79,7 @@ function processGTToolHead(event, toolType, headTagPrefix, material) {
 	} else {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
-			[toolHeadItem, '#forge:rods/wooden'],
+			[toolHeadItem, '#forge:rods'],
 			toolHeadItem
 		)
 		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
