@@ -96,7 +96,7 @@ function registerTFCGurmanRecipes(event) {
 		itemInputs: ['2x firmalife:food/cocoa_powder'],
 		fluidInputs: ['#tfc:milks 1000'],
 		fluidOutputs: ['tfc_gourmet:cocoa 1000'],
-		circuit: 1
+		circuit: 4
 	});
 
 	// Compote
