@@ -78,4 +78,18 @@ function registerTFGWoodRecipes(event) {
 		B: '#minecraft:planks',
 		C: 'tfc:glue'
 	}).id('gtceu:shaped/gear_wood')
+
+	event.recipes.gtceu.assembler("tfg:small_wood_gear_using_glue")
+		.itemInputs('4x #tfc:lumber')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('gtceu:small_wood_gear')
+		.duration(20)
+		.circuit(6)
+
+	event.recipes.gtceu.assembler("tfg:wood_gear_using_glue")
+		.itemInputs('4x #minecraft:planks')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('gtceu:wood_gear')
+		.duration(20)
+		.circuit(6)
 }
