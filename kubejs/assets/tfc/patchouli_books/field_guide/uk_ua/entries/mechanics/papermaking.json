@@ -125,7 +125,7 @@
         "text": "Перш ніж целюлозу можна буде обробити далі для виготовлення паперу, її потрібно додатково розкласти шляхом $(thing)кип’ятіння з лугом$() у $(l:firmalife/oven_appliances#vat)чані$() або $(l:mechanics/pot)горщику$()."
       },
       {
-        "type": "patchouli:multiblock"
+        "type": "patchouli:empty"
       },
       {
         "type": "patchouli:spotlight",

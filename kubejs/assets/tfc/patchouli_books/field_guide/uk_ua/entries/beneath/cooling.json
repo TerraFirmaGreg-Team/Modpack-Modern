@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"item": "gtceu:ice_bucket",
 			"title": "Обладунки зі Синьої Сталі",
 			"text": "Ах, так освіжає! Охолоджує на 4°C."
 		},
@@ -33,17 +33,17 @@
 		},
 		{
 			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
 			"recipe": "tfg:create/shaped/netherite_backtank",
 			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:minecraft/shaped/netherite_leggings",
-			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
-		},
-		{
-			"type": "patchouli:crafting",
-			"recipe": "tfg:create/shaped/netherite_diving_boots"
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
 		},
 		{
 			"type": "patchouli:crafting",
