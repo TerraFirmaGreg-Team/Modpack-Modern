@@ -85,6 +85,7 @@ function registerTFGWoodRecipes(event) {
 		.itemOutputs('gtceu:small_wood_gear')
 		.duration(20)
 		.circuit(6)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.assembler("tfg:wood_gear")
 		.itemInputs('4x #minecraft:planks')
@@ -92,4 +93,5 @@ function registerTFGWoodRecipes(event) {
 		.itemOutputs('gtceu:wood_gear')
 		.duration(20)
 		.circuit(6)
+		.EUt(GTValues.VA[GTValues.LV])
 }
