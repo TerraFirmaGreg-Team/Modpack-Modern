@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * @param {Internal.RecipesEventJS} event 
+ * @param {Internal.RecipesEventJS} event
  */
 function registerTFGAlloyingRecipes(event) {
 
@@ -72,9 +72,9 @@ function registerTFGAlloyingRecipes(event) {
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/blue_steel' })
 
 	event.recipes.greate.mixing('8x #forge:dusts/weak_red_steel', [
-		'#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', 
-		'#forge:dusts/steel', '#forge:dusts/steel', 
-		'#forge:dusts/brass', 
+		'#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel',
+		'#forge:dusts/steel', '#forge:dusts/steel',
+		'#forge:dusts/brass',
 		'#forge:dusts/rose_gold'])
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -83,15 +83,15 @@ function registerTFGAlloyingRecipes(event) {
 	event.recipes.greate.mixing('8x #forge:dusts/weak_blue_steel', [
 		'#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel',
 		'#forge:dusts/steel', '#forge:dusts/steel',
-		'#forge:dusts/bismuth_bronze', 
+		'#forge:dusts/bismuth_bronze',
 		'#forge:dusts/sterling_silver'])
 		.recipeTier(1)
 		.circuitNumber(2)
 		.id('tfg:weak_blue_steel_greate')
 
 	event.recipes.greate.mixing('8x #forge:dusts/red_steel', [
-		'#forge:dusts/black_steel','#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', 
-		'#forge:dusts/steel', '#forge:dusts/steel', 
+		'#forge:dusts/black_steel','#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel',
+		'#forge:dusts/steel', '#forge:dusts/steel',
 		'#forge:dusts/brass',
 		'#forge:dusts/rose_gold'])
 		.recipeTier(2)
@@ -99,14 +99,14 @@ function registerTFGAlloyingRecipes(event) {
 		.id('tfg:red_steel_greate')
 
 	event.recipes.greate.mixing('8x #forge:dusts/blue_steel', [
-		'#forge:dusts/black_steel','#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel', 
-		'#forge:dusts/steel', '#forge:dusts/steel', 
+		'#forge:dusts/black_steel','#forge:dusts/black_steel', '#forge:dusts/black_steel', '#forge:dusts/black_steel',
+		'#forge:dusts/steel', '#forge:dusts/steel',
 		'#forge:dusts/bismuth_bronze',
 		'#forge:dusts/sterling_silver'])
 		.recipeTier(2)
 		.circuitNumber(1)
 		.id('tfg:blue_steel_greate')
-		
+
 	//#endregion
 
 	//#region add regular furnace recipes for other tfc alloys
@@ -145,7 +145,7 @@ function registerTFGAlloyingRecipes(event) {
 		.blastFurnaceTemp(1357)
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
-	
+
 	event.recipes.gtceu.mixer('tfg:bismuth_bronze_from_raw')
 		.itemInputs('1x gtceu:bismuth_dust', '3x gtceu:copper_dust', '1x gtceu:zinc_dust')
 		.itemOutputs('5x gtceu:bismuth_bronze_dust')
@@ -184,7 +184,7 @@ function registerTFGAlloyingRecipes(event) {
 			event.recipes.gtceu.alloy_smelter(`tfg:rose_gold_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(gold_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RoseGold, 5))
-				.duration(20*10)
+				.duration(250)
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 		silver_types.forEach(silver_types_array => {
@@ -192,7 +192,7 @@ function registerTFGAlloyingRecipes(event) {
 			event.recipes.gtceu.alloy_smelter(`tfg:sterling_silver_from_${id}`)
 				.itemInputs(Ingredient.of(copper_types_array).withCount(1), Ingredient.of(silver_types_array).withCount(4))
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.SterlingSilver, 5))
-				.duration(20*10)
+				.duration(250)
 				.EUt(GTValues.VA[GTValues.LV])
 		});
 	});
@@ -289,10 +289,10 @@ function registerTFGAlloyingRecipes(event) {
         .EUt(GTValues.VA[GTValues.LV])
 
 	// Cobalt brass dust from aluminium silicate
-	
+
 	event.recipes.greate.mixing('9x #forge:dusts/cobalt_brass', [
 		'#forge:dusts/brass','#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass',
-		'#forge:dusts/aluminium_silicate', 
+		'#forge:dusts/aluminium_silicate',
 		'#forge:dusts/cobalt'])
 		.recipeTier(0)
 		.circuitNumber(1)
@@ -314,3 +314,51 @@ function registerTFGAlloyingRecipes(event) {
 		.duration(20 * 12)
 		.EUt(GTValues.VA[GTValues.EV])
 }
+
+	//#region Bronze alloy_smelter recipes
+	const electrum_types = [
+		"#forge:dusts/electrum",
+		"#forge:ingots/electrum"
+	];
+
+	const bismuth_types = [
+		"#forge:dusts/bismuth",
+		"#forge:ingots/bismuth"
+	];
+
+	const brass_types = [
+		"#forge:dusts/brass",
+		"#forge:ingots/brass"
+	];
+
+	copper_types.forEach(copper_type => {
+		electrum_types.forEach(electrum_type => {
+			const id = linuxUnfucker(`${copper_type}_and_${electrum_type}`.replace(/#/g, ""));
+
+			event.recipes.gtceu.alloy_smelter(`tfg:black_bronze_from_electrum_${id}`)
+				.itemInputs(
+					Ingredient.of(copper_type).withCount(3),
+					Ingredient.of(electrum_type).withCount(2)
+				)
+				.itemOutputs('5x gtceu:black_bronze_ingot')
+				.duration(250)
+				.EUt(GTValues.VA[GTValues.LV]);
+		});
+	});
+
+	bismuth_types.forEach(bismuth_type => {
+		brass_types.forEach(brass_type => {
+			const id = linuxUnfucker(`${bismuth_type}_and_${brass_type}`.replace(/#/g, ""));
+
+			event.recipes.gtceu.alloy_smelter(`tfg:bismuth_bronze_from_brass_${id}`)
+				.itemInputs(
+					Ingredient.of(bismuth_type).withCount(1),
+					Ingredient.of(brass_type).withCount(4)
+				)
+				.itemOutputs('5x gtceu:bismuth_bronze_ingot')
+				.duration(250)
+				.EUt(GTValues.VA[GTValues.LV]);
+		});
+	});
+
+	//#endregion
