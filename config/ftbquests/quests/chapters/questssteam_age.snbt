@@ -1171,14 +1171,15 @@
 					type: "item"
 				}
 				{
-					id: "7721793B4C0AFD2C"
+					id: "2792584EC8F6BCF0"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:copper_wrench)item(gtceu:bronze_wrench)item(gtceu:black_bronze_wrench)item(gtceu:bismuth_bronze_wrench)item(gtceu:wrought_iron_wrench)item(gtceu:steel_wrench)item(gtceu:cobalt_brass_wrench))"
+							"ftbfiltersystem:filter": "item_tag(forge:tools/wrenches)"
 						}
 					}
+					title: "{quests.steam_age.create_tools.task}"
 					type: "item"
 				}
 			]
