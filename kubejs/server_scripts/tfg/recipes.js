@@ -104,4 +104,5 @@ const registerTFGRecipes = (event) => {
 	registerTFGRepairKitRecipes(event)
 
 	registerTFGMaterialRemovePipesRecipes(event)
+	registerTFGRepairRecipes(event)
 }
