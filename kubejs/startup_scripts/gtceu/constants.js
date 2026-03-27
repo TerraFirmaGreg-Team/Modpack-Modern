@@ -419,6 +419,7 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "deepslate",
     "pyroxenite",
     "dripstone",
+    "tuff",
 
     "moon_stone",
     "moon_deepslate",
