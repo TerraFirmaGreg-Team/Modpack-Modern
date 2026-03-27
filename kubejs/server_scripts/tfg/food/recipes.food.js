@@ -579,6 +579,8 @@ function registerTFGFoodRecipes(event) {
 
 	global.cookingRecipe(event, "pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
 
+	global.cookingRecipe(event, "rice_pasta", "firmalife:food/raw_rice_noodles", "firmalife:food/cooked_rice_noodles", "#tfg:clean_water 100")
+
 	global.cookingRecipe(event, "corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
 
 	global.cookingRecipe(event, "baked_potato", "tfc:food/potato", "tfc:food/baked_potato")
