@@ -22,7 +22,6 @@ const registerTFGRocksTagPrefixes = (event) => {
 	}
 
 	const shouldGenerateSandOre = (material) => {
-		console.log(`does ${material.getName()} contain the word 'sand'? ${material.getName().includes('sand')}`)
 		return material.getName().includes("sand") && material.hasProperty(PropertyKey.ORE);
 	}
 
