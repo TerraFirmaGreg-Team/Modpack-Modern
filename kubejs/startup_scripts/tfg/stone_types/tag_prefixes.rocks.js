@@ -4,7 +4,6 @@
 const registerTFGRocksTagPrefixes = (event) => {
 	
 	TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
-	TagPrefix.ORES.remove(TagPrefix.oreTuff)
 	TagPrefix.ORES.remove(TagPrefix.oreSand)
 	TagPrefix.ORES.remove(TagPrefix.oreRedSand)
 	TagPrefix.ORES.remove(TagPrefix.oreMarble)
@@ -22,10 +21,15 @@ const registerTFGRocksTagPrefixes = (event) => {
 		return material.hasProperty(PropertyKey.ORE);
 	}
 
+	const shouldGenerateSandOre = (material) => {
+		console.log(`does ${material.getName()} contain the word 'sand'? ${material.getName().includes('sand')}`)
+		return material.getName().includes("sand") && material.hasProperty(PropertyKey.ORE);
+	}
+
 	global.TFC_STONE_TYPES.forEach(stoneTypeName => {
 
 		event.create(`${stoneTypeName}`, 'ore')
-			.stateSupplier(() => Block.getBlock('minecraft:stone').defaultBlockState())
+			.stateSupplier(() => Block.getBlock(`tfc:rock/raw/${stoneTypeName}`).defaultBlockState())
 			.baseModelLocation(`tfc:block/rock/raw/${stoneTypeName}`)
 			.unificationEnabled(true)
 			.materialIconType(GTMaterialIconType.ore)
@@ -146,4 +150,15 @@ const registerTFGRocksTagPrefixes = (event) => {
 		.generationCondition(shouldGenerateOre)
 
 	TFGHelpers.registerCobbleBlock('sandy_jadestone', 'tfg:rock/cobble_sandy_jadestone');
+
+	global.SAND_COLORS.forEach(color => {
+		event.create(`${color}_sand`, 'ore')
+			.stateSupplier(() => Block.getBlock(`tfc:sand/${color}`).defaultBlockState())
+			.baseModelLocation(`tfc:block/sand/${color}`)
+			.unificationEnabled(true)
+			.materialIconType(GTMaterialIconType.ore)
+			.generationCondition(shouldGenerateSandOre)
+
+		TFGHelpers.registerCobbleBlock(`${color}_sand`, `tfc:sand/${color}`);
+	})
 }

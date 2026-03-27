@@ -371,7 +371,7 @@ function registerTFGSupportData(event) {
 	event.support("tfg:rebar_support_horizontal", 4, 4, 8, "rebar_support");
 	event.support("tfg:steel_support_horizontal", 6, 6, 16, "steel_support");
 
-	const other_stone = ["pyroxenite", "migmatite", "travertine"];
+	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone'];
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone);
 
 	stone_types.forEach((stone) => {
