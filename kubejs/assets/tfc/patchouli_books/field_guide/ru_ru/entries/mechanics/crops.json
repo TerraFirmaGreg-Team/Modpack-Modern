@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "Содержит",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмень$()$(li)\n$(l:tfc:mechanics/crops#beet)Свёкла$()$(li)\n$(l:tfc:mechanics/crops#cabbage)Капуста$()$(li)\n$(l:tfc:mechanics/crops#canola)Канола$()$(li)\n$(l:tfc:mechanics/crops#carrot)Морковь$()$(li)\n$(l:tfc:mechanics/crops#cucumber)Огурец$()$(li)\n$(l:tfc:mechanics/crops#flax)Лён$()$(li)\n$(l:tfc:mechanics/crops#garlic)Чеснок$()$(li)\n$(l:tfc:mechanics/crops#green_bean)Горох$()$(li)\n$(l:tfc:mechanics/crops#jute)Джут$()$(li)\n$(l:tfc:mechanics/crops#lentil)Чечевица$()$(li)\n$(l:tfc:mechanics/crops#maize)Кукуруза$()$(li)\n$(l:tfc:mechanics/crops#melon)Арбуз$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмень$()$(li)$(l:tfc:mechanics/crops#beet)Свёкла$()$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()$(li)$(l:tfc:mechanics/crops#canola)Канола$()$(li)$(l:tfc:mechanics/crops#carrot)Морковь$()$(li)$(l:tfc:mechanics/crops#cucumber)Огурец$()$(li)$(l:tfc:mechanics/crops#flax)Лён$()$(li)$(l:tfc:mechanics/crops#garlic)Чеснок$()$(li)$(l:tfc:mechanics/crops#green_bean)Горох$()$(li)$(l:tfc:mechanics/crops#jute)Джут$()$(li)$(l:tfc:mechanics/crops#lentil)Чечевица$()$(li)$(l:tfc:mechanics/crops#maize)Кукуруза$()$(li)$(l:tfc:mechanics/crops#melon)Арбуз$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#oat)Овёс$()$(li)\n$(l:tfc:mechanics/crops#onion)Лук$()$(li)\n$(l:tfc:mechanics/crops#papyrus)Папирус$()$(li)\n$(l:tfc:mechanics/crops#potato)Картофель$()$(li)\n$(l:tfc:mechanics/crops#pumpkin)Тыква$()$(li)\n$(l:tfc:mechanics/crops#radish)Редиска$()$(li)\n$(l:tfc:mechanics/crops#red_bell_pepper)Красный сладкий перец$()$(li)\n$(l:tfc:mechanics/crops#rice)Рис$()$(li)\n$(l:tfc:mechanics/crops#rye)Рожь$()$(li)\n$(l:tfc:mechanics/crops#soybean)Соевые бобы$()$(li)\n$(l:tfc:mechanics/crops#squash)Кабачок$()$(li)\n$(l:tfc:mechanics/crops#sugarcane)Сахарный тростник$()$(li)\n$(l:tfc:mechanics/crops#sunflower)Подсолнух$()$(li)\n$(l:tfc:mechanics/crops#tomatoes)Помидор$()$(li)\n$(l:tfc:mechanics/crops#wheat)Пшеница$()$(li)\n$(l:tfc:mechanics/crops#yellow_bell_pepper)Жёлтый сладкий перец$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Овёс$()$(li)$(l:tfc:mechanics/crops#onion)Лук$()$(li)$(l:tfc:mechanics/crops#papyrus)Папирус$()$(li)$(l:tfc:mechanics/crops#potato)Картофель$()$(li)$(l:tfc:mechanics/crops#pumpkin)Тыква$()$(li)$(l:tfc:mechanics/crops#radish)Редиска$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Красный сладкий перец$()$(li)$(l:tfc:mechanics/crops#rice)Рис$()$(li)$(l:tfc:mechanics/crops#rye)Рожь$()$(li)$(l:tfc:mechanics/crops#soybean)Соевые бобы$()$(li)$(l:tfc:mechanics/crops#squash)Кабачок$()$(li)$(l:tfc:mechanics/crops#sugarcane)Сахарный тростник$()$(li)$(l:tfc:mechanics/crops#sunflower)Подсолнух$()$(li)$(l:tfc:mechanics/crops#tomatoes)Помидор$()$(li)$(l:tfc:mechanics/crops#wheat)Пшеница$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Жёлтый сладкий перец$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -4165,8 +4165,8 @@
 		"tfc:food/maize": 14,
 		"tfc:seeds/wheat": 16,
 		"tfc:food/wheat": 16,
-		"tfc:seeds/rice": 16,
-		"tfc:food/rice": 16,
+		"tfc:seeds/rice": 18,
+		"tfc:food/rice": 18,
 		"tfc:seeds/beet": 20,
 		"tfc:food/beet": 20,
 		"tfc:seeds/cabbage": 22,
