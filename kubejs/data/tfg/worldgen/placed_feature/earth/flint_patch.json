@@ -5,9 +5,6 @@
 			"type": "minecraft:in_square"
 		},
 		{
-			"type": "minecraft:biome"
-		},
-		{
 			"type": "minecraft:heightmap",
 			"heightmap": "OCEAN_FLOOR"
 		}
