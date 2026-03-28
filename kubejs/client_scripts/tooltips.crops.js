@@ -137,7 +137,7 @@ const registerCropTooltips = (event) => {
 
 		if (!crop.genTooltip) return;
 
-		if (crop.fruitTree === true) {
+		if (crop.id.includes('fruit_tree')) {
 			let entry = $TFGFruitTree.valueOf(crop.id.split('/').pop().toUpperCase());
 			let name = entry.getSerializedName();
 			let stages = entry.getStages();
