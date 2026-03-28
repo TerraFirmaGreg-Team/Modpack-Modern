@@ -491,4 +491,22 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
+
+	// Biome veins
+
+	event.add("tfg:in_biome/large_features/tfg/earth/canyons", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/volcanic_mountains", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/volcanic_oceanic_mountains", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/active_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/dormant_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/extinct_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/ancient_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/sunken_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/shield_volcano_shore", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/old_shield_volcano_shore", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/ice_sheet_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/ice_sheet_tuyas", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/ice_sheet_tuyas_edge", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/glaciated_shield_volcano", "tfg:earth/vein/deep_graphite");
+	event.add("tfg:in_biome/large_features/tfg/earth/tuyas", "tfg:earth/vein/deep_graphite");
 }

@@ -1,10 +1,10 @@
 {
-    "feature": "tfg:earth/vein/deep_sulfur",
+    "feature": "tfg:earth/vein/high_sulfur",
     "placement": [
         {
         "type": "tfc:near_fluid",
         "fluids": ["minecraft:lava"],
-        "radius": 2
+        "radius": 6
       }
     ]
 }
