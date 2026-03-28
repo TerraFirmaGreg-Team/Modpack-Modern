@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 150,
+			"min_yield": 100,
 			"fluid": "tfc:spring_water"
 		}
 	]

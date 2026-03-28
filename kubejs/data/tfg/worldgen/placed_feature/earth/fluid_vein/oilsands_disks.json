@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:earth/fluid_vein/oilsands_disk",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 6
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -8,
+					"max_inclusive": 8
+				}
+			},
+			"y_spread": 0
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+	]
+}

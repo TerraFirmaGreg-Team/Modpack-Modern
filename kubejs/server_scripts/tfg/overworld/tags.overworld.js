@@ -493,7 +493,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
 
 	// Fluid veins
-	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout_and_sands");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/random_active_hot_spring");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");

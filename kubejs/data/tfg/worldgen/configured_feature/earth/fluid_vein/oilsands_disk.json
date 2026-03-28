@@ -1,0 +1,123 @@
+{
+	"type": "tfc:soil_disc",
+	"config": {
+		"height": 3,
+		"min_radius": 3,
+		"max_radius": 6,
+		"integrity": 0.8,
+		"states": [
+			{
+				"replace": "tfc:sand/white",
+				"with": "gtceu:white_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/diorite",
+				"with": "gtceu:white_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/chalk",
+				"with": "gtceu:white_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/marble",
+				"with": "gtceu:white_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/quartzite",
+				"with": "gtceu:white_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/yellow",
+				"with": "gtceu:yellow_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/limestone",
+				"with": "gtceu:yellow_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/slate",
+				"with": "gtceu:yellow_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/red",
+				"with": "gtceu:red_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/chert",
+				"with": "gtceu:red_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/rhyolite",
+				"with": "gtceu:red_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/brown",
+				"with": "gtceu:brown_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/conglomerate",
+				"with": "gtceu:brown_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/claystone",
+				"with": "gtceu:brown_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/black",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/basalt",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/phyllite",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/andesite",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/dacite",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/gabbro",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/dolomite",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/shale",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfg:tuff_gravel",
+				"with": "gtceu:black_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/green",
+				"with": "gtceu:green_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/gneiss",
+				"with": "gtceu:green_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/schist",
+				"with": "gtceu:green_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:sand/pink",
+				"with": "gtceu:pink_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:rock/gravel/granite",
+				"with": "gtceu:pink_sand_oilsands_ore"
+			}
+		]
+	}
+}

@@ -4,15 +4,15 @@
         "size": {
             "type": "minecraft:uniform",
             "value": {
-                "max_inclusive": 6,
-                "min_inclusive": 3
+                "max_inclusive": 9,
+                "min_inclusive": 6
             }
         },
         "surface_offset": {
             "type": "minecraft:uniform",
             "value": {
-                "max_inclusive": 6,
-                "min_inclusive": 2
+                "max_inclusive": 2,
+                "min_inclusive": 1
             }
         }
     }

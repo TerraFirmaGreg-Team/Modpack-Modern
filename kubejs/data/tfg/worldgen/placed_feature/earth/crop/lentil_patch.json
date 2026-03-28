@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:earth/cucumber_patch",
+	"feature": "tfg:earth/crop/lentil_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -10,12 +10,12 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": 15,
-			"max_temperature": 40,
-			"min_rainfall": 350,
-			"max_rainfall": 500,
+			"min_temperature": -18,
+			"max_temperature": 2,
+			"min_rainfall": 250,
+			"max_rainfall": 425,
 			"min_forest": "sparse",
-			"max_forest": "normal"
+			"max_forest": "old_growth"
 		}
 	]
 }

@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:earth/cumin_patch",
+	"feature": "tfg:earth/crop/cilantro_patch",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
@@ -10,10 +10,9 @@
 		},
 		{
 			"type": "tfc:climate",
-			"min_temperature": 6,
-			"max_temperature": 20,
-			"min_rainfall": 50,
-			"max_rainfall": 250,
+			"min_temperature": 5,
+			"max_temperature": 15,
+			"max_rainfall": 150,
 			"max_forest": "edge"
 		}
 	]
