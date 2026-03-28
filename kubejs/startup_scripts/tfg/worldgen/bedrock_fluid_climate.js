@@ -53,7 +53,7 @@ const TRUE_OCEAN_BIOMES = [
 // =========================================================
 // NATURAL GAS
 // =========================================================
-
+/*
 // Surface Indicator - Wet/Cold Climate
 temperatureAndRainfall("natural_gas_surface_indicator", -20, 0, 300, 500, 50)
 
@@ -99,3 +99,4 @@ temperatureAndRainfall("raw_oil_spout_hot", 20, 30, 0, 50, 30)
 
 // Spout - Ocean Biomes
 climateAndBiome("raw_oil_spout_ocean", 15, 30, 0, 100, TRUE_OCEAN_BIOMES, 30)
+*/

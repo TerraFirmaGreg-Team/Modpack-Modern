@@ -58,13 +58,6 @@ const registerTFGFluids = (event) => {
        	.bucketColor(0x76796d)
        	.noBlock()
 
-	// Earth
-
-	event.create('tfg:muddy_water')
-		.thinTexture(0x54410f)
-		.bucketColor(0x54410f)
-		.viscosity(2000)
-
 	// Moon
 	event.create('tfg:cryogenized_fluix')
 		.thickTexture(0xde8cfb)

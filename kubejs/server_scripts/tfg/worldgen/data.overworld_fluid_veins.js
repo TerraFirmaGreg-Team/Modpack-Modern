@@ -2,7 +2,7 @@
 "use strict";
 
 function registerTFGOverworldBedrockFluidVeins(event) {
-
+/*
     // REMOVE DEFAULTS
     event.remove('gtceu:heavy_oil_deposit')
     event.remove('gtceu:light_oil_deposit')
@@ -17,7 +17,8 @@ function registerTFGOverworldBedrockFluidVeins(event) {
 
     // Common — everywhere except salt water, true ocean, dry biomes
     // Can't exclude so make it as : is_normal + is_mountain + is_cold + is_karst + is_shore_island + is_fresh_water
-    event.add('tfg:water_common', vein => {
+    
+	event.add('tfg:water_common', vein => {
         vein.dimensions('minecraft:overworld')
         vein.fluid(() => Fluid.of('minecraft:water').fluid)
         vein.weight(0)
@@ -341,5 +342,5 @@ function registerTFGOverworldBedrockFluidVeins(event) {
         vein.depletedYield(0)
         vein.biomeTag(10, 'tfg:earth/is_mountain')
     })
-
+*/
 }
