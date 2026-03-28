@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмінь$()\n$(li)$(l:tfc:mechanics/crops#beet)Буряк$()\n$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()\n$(li)$(l:tfc:mechanics/crops#canola)Ріпак$()\n$(li)$(l:tfc:mechanics/crops#carrot)Морква$()\n$(li)$(l:tfc:mechanics/crops#flax)Льон$()\n$(li)$(l:tfc:mechanics/crops#garlic)Часник$()\n$(li)$(l:tfc:mechanics/crops#green_bean)Зелена квасоля$()\n$(li)$(l:tfc:mechanics/crops#jute)Джут$()\n$(li)$(l:tfc:mechanics/crops#maize)Кукурудза$()\n$(li)$(l:tfc:mechanics/crops#melon)Диня$()\n$(li)$(l:tfc:mechanics/crops#oat)Овес$()\n$(li)$(l:tfc:mechanics/crops#onion)Цибуля$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Ячмінь$()\n$(li)$(l:tfc:mechanics/crops#beet)Буряк$()\n$(li)$(l:tfc:mechanics/crops#cabbage)Капуста$()\n$(li)$(l:tfc:mechanics/crops#canola)Ріпак$()\n$(li)$(l:tfc:mechanics/crops#carrot)Морква$()\n$(li)$(l:tfc:mechanics/crops#cucumber)Огірок$()\n$(li)$(l:tfc:mechanics/crops#flax)Льон$()\n$(li)$(l:tfc:mechanics/crops#garlic)Часник$()\n$(li)$(l:tfc:mechanics/crops#green_bean)Зелена квасоля$()\n$(li)$(l:tfc:mechanics/crops#jute)Джут$()\n$(li)$(l:tfc:mechanics/crops#lentil)Сочевиця$()\n$(li)$(l:tfc:mechanics/crops#maize)Кукурудза$()\n$(li)$(l:tfc:mechanics/crops#melon)Диня$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#papyrus)Папірус$()\n$(li)$(l:tfc:mechanics/crops#potato)Картопля$()\n$(li)$(l:tfc:mechanics/crops#pumpkin)Гарбуз$()\n$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Червоний солодкий перець$()\n$(li)$(l:tfc:mechanics/crops#rice)Рис$()\n$(li)$(l:tfc:mechanics/crops#rye)Жито$()\n$(li)$(l:tfc:mechanics/crops#soybean)Соєві боби$()\n$(li)$(l:tfc:mechanics/crops#squash)Кабачок$()\n$(li)$(l:tfc:mechanics/crops#sugarcane)Цукрова тростина$()\n$(li)$(l:tfc:mechanics/crops#sunflower)Соняшник$()\n$(li)$(l:tfc:mechanics/crops#tomatoes)Помідор$()\n$(li)$(l:tfc:mechanics/crops#wheat)Пшениця$()\n$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Жовтий солодкий перець$()\n$(li)$(l:tfc:mechanics/crops#cucumber)Огірок$()\n$(li)$(l:tfc:mechanics/crops#radish)Редиска$()\n$(li)$(l:tfc:mechanics/crops#lentil)Сочевиця$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Овес$()\n$(li)$(l:tfc:mechanics/crops#onion)Цибуля$()\n$(li)$(l:tfc:mechanics/crops#papyrus)Папірус$()\n$(li)$(l:tfc:mechanics/crops#potato)Картопля$()\n$(li)$(l:tfc:mechanics/crops#pumpkin)Гарбуз$()\n$(li)$(l:tfc:mechanics/crops#radish)Редис$()\n$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Червоний перець$()\n$(li)$(l:tfc:mechanics/crops#rice)Рис$()\n$(li)$(l:tfc:mechanics/crops#rye)Жито$()\n$(li)$(l:tfc:mechanics/crops#soybean)Соя$()\n$(li)$(l:tfc:mechanics/crops#squash)Кабачок$()\n$(li)$(l:tfc:mechanics/crops#sugarcane)Цукрова тростина$()\n$(li)$(l:tfc:mechanics/crops#sunflower)Соняшник$()\n$(li)$(l:tfc:mechanics/crops#tomatoes)Помідор$()\n$(li)$(l:tfc:mechanics/crops#wheat)Пшениця$()\n$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Жовтий перець$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -3919,7 +3919,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий огірок$() росте в PLACEHOLDER",
+			"text": "$(thing)Дикий огірок$() росте при температурі від 15 до 40 °C та кількості опадів від 350 до 500 мм.",
 			"enable_visualize": false
 		},
 		{
@@ -4034,7 +4034,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дика редиска$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дикий редис$() ростуть при температурі від -16 до 4 °C та кількості опадів від 75 до 325 мм.",
 			"enable_visualize": false
 		},
 		{
@@ -4149,14 +4149,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Дика сочевиця$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дика сочевиця$() росте при температурі від -18 до 2 °C та кількості опадів від 250 до 425 мм.",
 			"enable_visualize": false
 		}
 	],
 	"read_by_default": true,
 	"extra_recipe_mappings": {
-		"tfc:seeds/barley": 6,
-		"tfc:food/barley": 6,
+		"tfc:seeds/barley": 8,
+		"tfc:food/barley": 8,
 		"tfc:seeds/oat": 10,
 		"tfc:food/oat": 10,
 		"tfc:seeds/rye": 12,

@@ -58,6 +58,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:epiphyte_plantable_on', '#minecraft:logs');
 	event.add('tfg:epiphyte_plantable_on', '#forge:stone');
 	event.add('tfg:epiphyte_plantable_on', '#forge:sandstone');
+	event.add('tfg:epiphyte_plantable_on', '#forge:gravel');
 
 	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/basalt');
 	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/limestone');
@@ -100,6 +101,11 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
 
 	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
+
+	event.add('tfc:powder_snow_replaceable', 'minecraft:snow_block');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:ice');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:packed_ice');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:blue_ice');
 }
 
 function registerTFGOverworldBiomeTags(event) {

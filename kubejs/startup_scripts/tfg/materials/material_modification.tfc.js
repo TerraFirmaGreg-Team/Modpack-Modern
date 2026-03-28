@@ -3,7 +3,7 @@
 
 function registerTFCMaterialModification(event) {
 	
-	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
+	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.common.tfgt.material.property.TFCProperty')
 
 	
 	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)

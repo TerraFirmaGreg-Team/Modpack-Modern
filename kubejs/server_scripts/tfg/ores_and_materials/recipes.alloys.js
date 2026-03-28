@@ -288,6 +288,16 @@ function registerTFGAlloyingRecipes(event) {
         .duration(20)
         .EUt(GTValues.VA[GTValues.LV])
 
+	// Cobalt brass dust from aluminium silicate
+	
+	event.recipes.greate.mixing('9x #forge:dusts/cobalt_brass', [
+		'#forge:dusts/brass','#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass', '#forge:dusts/brass',
+		'#forge:dusts/aluminium_silicate', 
+		'#forge:dusts/cobalt'])
+		.recipeTier(0)
+		.circuitNumber(1)
+		.id('tfg:cobalt_brass_mixing')
+
 	// New Alloys
 
 	event.recipes.gtceu.mixer('tfg:ostrum_iodide')

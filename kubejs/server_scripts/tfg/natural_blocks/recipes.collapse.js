@@ -90,6 +90,7 @@ function registerTFGCollapseRecipes(event) {
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/white', 'tfg:sand/fluorapatite/white')
 	event.recipes.tfc.landslide('tfg:sand/fluorapatite/yellow', 'tfg:sand/fluorapatite/yellow')
 	
+	// Dirt
 	event.recipes.tfc.landslide('tfg:coarse_dirt/sandy_loam', 'tfg:coarse_dirt/sandy_loam')
 	event.recipes.tfc.landslide('tfg:coarse_dirt/silty_loam', 'tfg:coarse_dirt/silty_loam')
 	event.recipes.tfc.landslide('tfg:coarse_dirt/silt', 'tfg:coarse_dirt/silt')
@@ -110,8 +111,14 @@ function registerTFGCollapseRecipes(event) {
 		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:clay/${dirt}`, `tfg:clay_grass/${dirt}`)
 		event.recipes.tfc.landslide(`tfg:coarse_dirt/${dirt}`, `tfg:coarse_dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/dirt/${dirt}`, `tfg:tamped/dirt/${dirt}`)
+		event.recipes.tfc.landslide(`tfg:tamped/mud/${dirt}`, `tfg:tamped/mud/${dirt}`)
 	})
 
-	// Other
+	// Other Ores
 	event.recipes.tfc.collapse("#forge:raw_ore_blocks");
+
+	global.SAND_COLORS.forEach(color => {
+		event.recipes.tfc.landslide(`tfc:sand/${color}`, `#forge:ores_in_ground/${color}_sand`)
+	});
 }

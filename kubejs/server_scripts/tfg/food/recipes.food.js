@@ -2,7 +2,7 @@
 "use strict";
 
 
-const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
+const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.trait.ISPOutputRecipeLogic")
 const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
 const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
 
@@ -578,6 +578,8 @@ function registerTFGFoodRecipes(event) {
 	//#region Misc
 
 	global.cookingRecipe(event, "pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
+
+	global.cookingRecipe(event, "rice_pasta", "firmalife:food/raw_rice_noodles", "firmalife:food/cooked_rice_noodles", "#tfg:clean_water 100")
 
 	global.cookingRecipe(event, "corn_tortilla", "firmalife:food/masa", "firmalife:food/corn_tortilla")
 
