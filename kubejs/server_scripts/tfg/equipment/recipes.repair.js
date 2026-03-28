@@ -158,6 +158,7 @@ function registerTFGRepairRecipes(event) {
    		}).id(`tfg:item_repair/${metal}_mattock`)
 	})
 
+	// Sacks 'n' Such Repairs
 	SNS_METALS.forEach(metal => {
 		event.custom({
         	type: 'tfg:item_repair',
@@ -186,6 +187,7 @@ function registerTFGRepairRecipes(event) {
     	}).id(`tfg:item_repair/${metal}_horseshoes`)
 	})
 
+	// For Specific Repairs
 	SPECIAL_REPAIRS.forEach(repair => {
 		event.custom({
        		type: 'tfg:item_repair',
@@ -201,6 +203,7 @@ function registerTFGRepairRecipes(event) {
     	}).id(`tfg:item_repair/${linuxUnfucker(repair.item)}`)
 	})
 
+	// Simpler Leather Gear
 	LEATHER_REPAIR_GEAR.forEach(gear => {
 		event.custom({
        		type: 'tfg:item_repair',
@@ -216,6 +219,7 @@ function registerTFGRepairRecipes(event) {
     	}).id(`tfg:item_repair/${linuxUnfucker(gear)}`)
 	})
 
+	// TFC Textile Leather Clothes
 	TFC_TEXTILE_LEATHER_REPAIR.forEach(item => {
 		TFC_TEXTILE_TYPES.forEach(type => {
 			event.custom({
@@ -231,6 +235,22 @@ function registerTFGRepairRecipes(event) {
        			repairPercentage: 0.25
     		}).id(`tfg:item_repair/${item}_${type}`)
 		})
+	})
+
+	// Tongs
+	global.TFC_METALS.forEach(metal => {
+		event.custom({
+       		type: 'tfg:item_repair',
+       		pattern: [
+				"RH ",
+       		],
+       		key: {
+				R: { tag: `forge:rods/${metal}` },
+       		    H: { item: `tfchotornot:tongs/${metal}` },
+       	 	    // T: { tag: "forge:tools/hammers" }
+       		},
+       		repairPercentage: 0.5
+    	}).id(`tfg:item_repair/${metal}_tongs`)
 	})
 
     function repairColoredSteel(namespace, material) {
