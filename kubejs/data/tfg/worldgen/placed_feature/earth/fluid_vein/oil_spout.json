@@ -3,14 +3,14 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 1
+			"chance": 80
 		},
 		{
 			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+			"heightmap": "WORLD_SURFACE"
 		},
 		{
 			"type": "minecraft:block_predicate_filter",
@@ -21,8 +21,20 @@
 			}
 		},
 		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "uniform",
+				"min_inclusive": {
+					"absolute": -20
+				},
+				"max_inclusive": {
+					"absolute": 20
+				}
+			}
+		},
+		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 150
+			"min_yield": 151
 		}
 	]
 }

@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 150,
+			"min_yield": 140,
 			"fluid": "gtceu:oil_light"
 		}
 	]

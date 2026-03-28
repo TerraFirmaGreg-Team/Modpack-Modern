@@ -1,13 +1,6 @@
 {
     "type": "tfg:bedrock_spout",
     "config": {
-        "fluid": "gtceu:oil",
-        "allowed_fluids": [
-            "gtceu:oil",
-            "gtceu:oil_light",
-            "gtceu:oil_medium",
-            "gtceu:oil_heavy"
-        ],
         "size": {
             "type": "minecraft:uniform",
             "value": {
