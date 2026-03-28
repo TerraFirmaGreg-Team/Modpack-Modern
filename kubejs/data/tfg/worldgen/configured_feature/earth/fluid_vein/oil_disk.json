@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:disk",
+	"config": {
+		"half_height": 1,
+		"radius": {
+			"type": "minecraft:biased_to_bottom",
+			"value": {
+				"min_inclusive": 1,
+				"max_inclusive": 4
+			}
+		},
+		"state_provider": {
+			"fallback": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "gtceu:oil"
+				}
+			},
+			"rules": []
+		},
+		"target": {
+			"type": "minecraft:matching_blocks",
+			"blocks": "tfc:fluid/salt_water"
+		}
+	}
+}
