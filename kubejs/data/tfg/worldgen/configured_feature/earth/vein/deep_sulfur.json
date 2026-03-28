@@ -10,7 +10,7 @@
     "random_name": "deep_sulfur",
     "project": false,
     "project_offset": false,
-    "near_lava": false,
+    "near_lava": true,
     "blocks": [
       {
         "replace": [

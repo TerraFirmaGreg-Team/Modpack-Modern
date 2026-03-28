@@ -11,6 +11,7 @@
     "project": false,
     "project_offset": false,
     "near_lava": false,
+    "biomes": "#tfg:earth/is_volcanic",
     "blocks": [
       {
         "replace": [
