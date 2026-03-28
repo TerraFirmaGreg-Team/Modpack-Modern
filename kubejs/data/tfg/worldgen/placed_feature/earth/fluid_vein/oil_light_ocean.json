@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:earth/fluid_vein/oil_spout",
+	"feature": "tfg:earth/fluid_vein/oil_light_ocean",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 1
+			"chance": 30
 		},
 		{
 			"type": "minecraft:in_square"
@@ -17,12 +17,13 @@
 			"predicate": {
 				"type": "minecraft:matching_blocks",
 				"offset": [ 0, -1, 0 ],
-				"blocks": "#tfc:can_carve"
+				"blocks": "tfc:fluid/salt_water"
 			}
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 150
+			"min_yield": 150,
+			"fluid": "gtceu:oil_light"
 		}
 	]
 }

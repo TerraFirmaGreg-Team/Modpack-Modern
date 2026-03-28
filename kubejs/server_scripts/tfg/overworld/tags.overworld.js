@@ -494,4 +494,13 @@ function registerTFGOverworldPlacedFeatures(event) {
 
 	// Fluid veins
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/random_active_hot_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_heavy_ocean");
+	// Remove hot springs from old worldgen biomes
+	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
+	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
+	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
 }
