@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"all": "tfg:block/tar_pit",
+	}
+}

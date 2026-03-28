@@ -18,6 +18,10 @@ const registerTFGBlocks = (event) => {
 
 	registerTFGNuclearBlocks(event)
 
+	event.create('tfg:tar_pit')
+		.fullBlock(true)
+		.opaque(true)
+
 	event.create('tfg:big_volcano_smoke_emitter', 'tfg:particle_emitter_decoration')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.soundType('stone')
