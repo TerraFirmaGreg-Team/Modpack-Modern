@@ -80,8 +80,6 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfc_textile:crocodile_boots", material: "tfc:burlap_cloth" },
 	]
 
-	const OTHER_REPAIRS = [ 'scraping', 'hiking', 'mattock' ]
-
     repairColoredSteel('gtceu', 'red_steel');
 	repairColoredSteel('gtceu', 'blue_steel');
 
