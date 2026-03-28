@@ -1,6 +1,6 @@
 {
-	"parent": "block/cube_column",
-	"textures": {
-		"all": "tfg:block/tar_pit",
-	}
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tfg:block/tar_pit"
+  }
 }
