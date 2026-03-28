@@ -140,7 +140,8 @@ global.FOOD_FRUIT = [
 	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
 	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
 	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
-	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
+	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 },
+	{name: 'magmango', id: 'tfg:food/magmango', saturation: 1, water: 15, fruit: 1.5, decay: 2.25}
 ];
 
 /** @type {Hammering[]} */
@@ -311,6 +312,14 @@ global.CROP_CLIMATE_DATA = [
 	{ 
 		id: 'tfg:ghost_pepper', seed: 'tfg:ghost_pepper_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
 		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:fruit_tree/lavacado',
+		minHydration: 20, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 5.5, tempWiggle: 4, genData: true, genTooltip: true
+	},
+	{ 
+		id: 'tfg:fruit_tree/magmango',
+		minHydration: 30, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 8, tempWiggle: 5, genData: true, genTooltip: true
 	},
 	// ============== Mars =================
 	{ 

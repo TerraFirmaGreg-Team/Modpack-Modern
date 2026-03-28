@@ -596,6 +596,23 @@ function registerTFGFoodData(event) {
 		food.saturation(1);
 	});
 
+	// Lavacado
+	event.foodItem('tfg:food/lavacado', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(2);
+		food.vegetables(1.5);
+		food.saturation(1);
+	});
+
+	// Magmango
+	event.foodItem('tfg:food/magmango', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(2.25);
+		food.water(15);
+		food.fruit(1.5);
+		food.saturation(1);
+	});
+
 	//#region Drinkables
 	// Proto Growth Medium
 	event.drinkable("tfg:proto_growth_medium", (data) => {

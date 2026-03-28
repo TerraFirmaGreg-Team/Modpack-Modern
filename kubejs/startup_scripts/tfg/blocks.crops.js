@@ -92,6 +92,7 @@ const registerTFGCrops = (event) => {
 		.growthModifier(1.2)
 		.expiryModifier(1.2)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('minecraft:flowers')
 		.productItem(product => {
 			product.texture('tfg:item/flax_product')
 			product.tag('tfc:scrapable')
@@ -111,6 +112,7 @@ const registerTFGCrops = (event) => {
 		.food('tfg:flax_product')
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
+		.tagBlock('minecraft:flowers')
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
@@ -225,7 +227,6 @@ const registerTFGCrops = (event) => {
 		.hardness(0.2)
 		.tagBoth('tfc:wild_crops')
 		.tagBlock('minecraft:mineable/hoe')
-		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:can_be_snow_piled')
 		.tagItem('c:hidden_from_recipe_viewers')
 

@@ -16,6 +16,9 @@ function registerTFGFoodItemTags(event) {
 	event.add("tfg:sugars", "afc:birch_sugar");
 	event.add("tfg:sugars", "afc:maple_sugar");
 
+	event.add('tfc:foods/vegetables', 'tfg:food/lavacado')
+	event.add('tfc:foods/fruits', 'tfg:food/magmango')
+
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
 		'tfg:food/raw_crawlermari',
