@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
       "type": "patchouli:text"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)尺寸$(): 25$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "text": "$(thing)稀有度$(): 1/210 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)尺寸$(): 25$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "Cassiterite & Tin (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_tin"
@@ -108,7 +108,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/240 区块$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 32$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/240 区块$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 32$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -187,17 +187,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 15%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 15%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "Cobalt",
       "type": "patchouli:text",
       "anchor": "surface_cobalt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "辉钴矿",
+      "name": "钴矿",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/cobalt"
         },
         "pattern": [
           [
@@ -209,12 +209,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 100%$(br)$(thing)来源$(): 钴, 砷$(br)$(thing)化学式$(): CoAsS$(br)$(thing)危害$(): $(c)$(t:需要面罩)砷中毒 (吸入)$(/t)$()",
+      "text": "$(thing)百分比$(): 100%$(br)$(thing)熔化$(): 钴$(br)$(thing)化学式$(): Co",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
       "title": "Garnierite (Nickel)",
       "type": "patchouli:text",
       "anchor": "surface_nickel"
@@ -238,6 +238,58 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 100%$(br)$(thing)熔化$(): 镍$(br)$(thing)化学式$(): NiO",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 60%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)高度$(): 150$(br)$(thing)半径$(): 18$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Only appears in volcanic biomes.",
+      "title": "Graphite & Diamond",
+      "type": "patchouli:text",
+      "anchor": "deep_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "石墨",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 59%$(br)$(thing)用于$(): $(l:mechanics/fire_clay)耐火粘土$(), 石墨烯$(br)$(thing)化学式$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "钻石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 40%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -268,7 +320,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/45 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/45 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "Hematite",
       "type": "patchouli:text",
       "anchor": "surface_hematite"
@@ -347,7 +399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "surface_limonite"
@@ -374,7 +426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
       "title": "Magnetite",
       "type": "patchouli:text",
       "anchor": "surface_magnetite"
@@ -401,7 +453,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/32 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 大理岩, 板岩, 片岩, 片麻岩, 白云岩, 白垩岩, 石灰岩, 石英岩",
+      "text": "$(thing)稀有度$(): 1/32 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 大理岩, 板岩, 片岩, 片麻岩, 白云岩, 白垩岩, 石灰岩, 石英岩",
       "title": "Malachite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_malachite"
@@ -428,7 +480,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 15%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 5$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "text": "$(thing)稀有度$(): 1/90 区块$(br)$(thing)密度$(): 15%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 5$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
       "title": "Mica",
       "type": "patchouli:text",
       "anchor": "surface_mica"
@@ -455,7 +507,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/24 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/24 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "Native Copper",
       "type": "patchouli:text",
       "anchor": "surface_native_copper"
@@ -482,7 +534,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/35 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 15$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/35 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 15$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "Native Gold",
       "type": "patchouli:text",
       "anchor": "surface_gold"
@@ -509,7 +561,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/15 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
+      "text": "$(thing)稀有度$(): 1/15 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
       "title": "Native Silver",
       "type": "patchouli:text",
       "anchor": "surface_native_silver"
@@ -536,7 +588,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 花岗岩",
+      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 90$(br2)$(thing)岩石类型$(): 花岗岩",
       "title": "Redstone, Ruby & Cinnabar",
       "type": "patchouli:text",
       "anchor": "deep_redstone"
@@ -603,7 +655,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/130 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/130 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
       "title": "Saltpeter",
       "type": "patchouli:text",
       "anchor": "surface_salpeter"
@@ -630,7 +682,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 英安岩",
+      "text": "$(thing)稀有度$(): 1/30 区块$(br)$(thing)密度$(): 30%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 安山岩, 流纹岩, 玄武岩, 花岗岩, 英安岩, 辉长岩, 闪长岩",
       "title": "Sphalerite",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -657,7 +709,61 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 120$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/20 区块$(br)$(thing)密度$(): 80%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -50 — 20$(br)$(thing)尺寸$(): 10$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Generates near lava.",
+      "title": "Sulfur (Deep)",
+      "type": "patchouli:text",
+      "anchor": "deep_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硫",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 100%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 90%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 100 — 170$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Only appears in volcanic biomes.",
+      "title": "Sulfur (Volcanic)",
+      "type": "patchouli:text",
+      "anchor": "high_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硫",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 100%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/120 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 10$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "Sylvite & Quartz",
       "type": "patchouli:text",
       "anchor": "surface_sylvite_quartz"
@@ -709,7 +815,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/7 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "text": "$(thing)稀有度$(): 1/7 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 20$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "Tetrahedrite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -736,7 +842,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "text": "$(thing)稀有度$(): 1/220 区块$(br)$(thing)密度$(): 45%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 70$(br)$(thing)尺寸$(): 36$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
       "title": "Tin",
       "type": "patchouli:text",
       "anchor": "normal_tin"
@@ -815,7 +921,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/60 区块$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 90$(br)$(thing)尺寸$(): 15$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/60 区块$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 60 — 80$(br)$(thing)尺寸$(): 15$(br)$(thing)指示器最大深度$(): 35$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩, 页岩",
       "title": "Tricalcium Phosphate",
       "type": "patchouli:text",
       "anchor": "surface_tricalcium_phosphate"

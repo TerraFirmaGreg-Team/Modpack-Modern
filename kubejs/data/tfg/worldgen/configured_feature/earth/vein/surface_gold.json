@@ -6,7 +6,7 @@
     "rarity": 35,
     "density": 0.3,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_gold",
     "blocks": [
       {
@@ -62,51 +62,6 @@
         "with": [
           {
             "block": "gtceu:dacite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/granite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:granite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/diorite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:diorite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/gabbro"
-        ],
-        "with": [
-          {
-            "block": "gtceu:gabbro_gold_ore",
             "weight": 100
           },
           {

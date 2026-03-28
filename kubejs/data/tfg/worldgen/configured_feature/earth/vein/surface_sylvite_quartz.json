@@ -6,16 +6,16 @@
     "rarity": 120,
     "density": 0.2,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_sylvite_quartz",
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/shale"
+          "tfc:rock/raw/quartzite"
         ],
         "with": [
           {
-            "block": "gtceu:shale_rock_salt_ore",
+            "block": "gtceu:quartzite_rock_salt_ore",
             "weight": 100
           },
           {
@@ -23,18 +23,18 @@
             "weight": 1
           },
           {
-            "block": "gtceu:shale_quartzite_ore",
+            "block": "gtceu:quartzite_quartzite_ore",
             "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/claystone"
+          "tfc:rock/raw/slate"
         ],
         "with": [
           {
-            "block": "gtceu:claystone_rock_salt_ore",
+            "block": "gtceu:slate_rock_salt_ore",
             "weight": 100
           },
           {
@@ -42,18 +42,18 @@
             "weight": 1
           },
           {
-            "block": "gtceu:claystone_quartzite_ore",
+            "block": "gtceu:slate_quartzite_ore",
             "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/limestone"
+          "tfc:rock/raw/phyllite"
         ],
         "with": [
           {
-            "block": "gtceu:limestone_rock_salt_ore",
+            "block": "gtceu:phyllite_rock_salt_ore",
             "weight": 100
           },
           {
@@ -61,18 +61,18 @@
             "weight": 1
           },
           {
-            "block": "gtceu:limestone_quartzite_ore",
+            "block": "gtceu:phyllite_quartzite_ore",
             "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/conglomerate"
+          "tfc:rock/raw/schist"
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_rock_salt_ore",
+            "block": "gtceu:schist_rock_salt_ore",
             "weight": 100
           },
           {
@@ -80,18 +80,18 @@
             "weight": 1
           },
           {
-            "block": "gtceu:conglomerate_quartzite_ore",
+            "block": "gtceu:schist_quartzite_ore",
             "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/dolomite"
+          "tfc:rock/raw/gneiss"
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_rock_salt_ore",
+            "block": "gtceu:gneiss_rock_salt_ore",
             "weight": 100
           },
           {
@@ -99,18 +99,18 @@
             "weight": 1
           },
           {
-            "block": "gtceu:dolomite_quartzite_ore",
+            "block": "gtceu:gneiss_quartzite_ore",
             "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/chert"
+          "tfc:rock/raw/marble"
         ],
         "with": [
           {
-            "block": "gtceu:chert_rock_salt_ore",
+            "block": "gtceu:marble_rock_salt_ore",
             "weight": 100
           },
           {
@@ -118,45 +118,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:chert_quartzite_ore",
-            "weight": 100
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/chalk"
-        ],
-        "with": [
-          {
-            "block": "gtceu:chalk_rock_salt_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_rock_salt_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:chalk_quartzite_ore",
-            "weight": 100
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:tuff"
-        ],
-        "with": [
-          {
-            "block": "gtceu:tuff_rock_salt_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_rock_salt_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:tuff_quartzite_ore",
+            "block": "gtceu:marble_quartzite_ore",
             "weight": 100
           }
         ]
@@ -164,7 +126,7 @@
     ],
     "indicator": {
       "rarity": 14,
-      "depth": 120,
+      "depth": 35,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [

@@ -6,50 +6,95 @@
     "rarity": 90,
     "density": 0.15,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_cobalt",
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/granite"
+          "tfc:rock/raw/quartzite"
         ],
         "with": [
           {
-            "block": "gtceu:granite_cobaltite_ore",
+            "block": "gtceu:quartzite_cobalt_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_cobaltite_block",
+            "block": "gtceu:raw_cobalt_block",
             "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/diorite"
+          "tfc:rock/raw/slate"
         ],
         "with": [
           {
-            "block": "gtceu:diorite_cobaltite_ore",
+            "block": "gtceu:slate_cobalt_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_cobaltite_block",
+            "block": "gtceu:raw_cobalt_block",
             "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/gabbro"
+          "tfc:rock/raw/phyllite"
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_cobaltite_ore",
+            "block": "gtceu:phyllite_cobalt_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_cobaltite_block",
+            "block": "gtceu:raw_cobalt_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_cobalt_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_cobalt_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_cobalt_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_cobalt_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_cobalt_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_cobalt_block",
             "weight": 1
           }
         ]
@@ -62,7 +107,7 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:cobaltite_indicator",
+          "block": "gtceu:cobalt_indicator",
           "weight": 100
         }
       ]

@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
       "type": "patchouli:text"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/210 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 25$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/210 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 25$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Cassiterite & Tin (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_tin"
@@ -108,7 +108,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/240 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 60%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 32$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/240 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 60%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 32$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -187,17 +187,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 15%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 15%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Cobalt",
       "type": "patchouli:text",
       "anchor": "surface_cobalt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Kobaltit",
+      "name": "Kobalt",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/cobalt"
         },
         "pattern": [
           [
@@ -209,12 +209,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Quelle von$(): Kobalt, Arsen$(br)$(thing)Formel$(): CoAsS$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Atemschutzmaske)Arsenikose (Einatmung)$(/t)$()",
+      "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Schmelzt in$(): Kobalt$(br)$(thing)Formel$(): Co",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
       "title": "Garnierite (Nickel)",
       "type": "patchouli:text",
       "anchor": "surface_nickel"
@@ -238,6 +238,58 @@
       "enable_visualize": false,
       "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Schmelzt in$(): Nickel$(br)$(thing)Formel$(): NiO",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/140 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 60%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Hoch und schmal)Rohrader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)Höhe$(): 150$(br)$(thing)Radius$(): 18$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit$(br2)Only appears in volcanic biomes.",
+      "title": "Graphite & Diamond",
+      "type": "patchouli:text",
+      "anchor": "deep_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Graphit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 59%$(br)$(thing)Verwendet für$(): $(l:mechanics/fire_clay)Schamotte$(), Graphen$(br)$(thing)Formel$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Diamant",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 40%$(br)$(thing)Verwendet für$(): Mazeratoren, AE2$(br)$(thing)Formel$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -268,7 +320,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/45 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/45 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 35%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
       "title": "Hematite",
       "type": "patchouli:text",
       "anchor": "surface_hematite"
@@ -347,7 +399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "surface_limonite"
@@ -374,7 +426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
       "title": "Magnetite",
       "type": "patchouli:text",
       "anchor": "surface_magnetite"
@@ -401,7 +453,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/32 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Gneis, Kalk, Kalkstein, Kristallschiefer, Marmor, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/32 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Gneis, Kalk, Kalkstein, Kristallschiefer, Marmor, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Malachite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_malachite"
@@ -428,7 +480,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 15%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 5$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/90 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 15%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 5$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Gabbro, Granit, Rhyolith",
       "title": "Mica",
       "type": "patchouli:text",
       "anchor": "surface_mica"
@@ -455,7 +507,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/24 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/24 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
       "title": "Native Copper",
       "type": "patchouli:text",
       "anchor": "surface_native_copper"
@@ -482,7 +534,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/35 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 15$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Gabbro, Granit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/35 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 15$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
       "title": "Native Gold",
       "type": "patchouli:text",
       "anchor": "surface_gold"
@@ -509,7 +561,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/15 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/15 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
       "title": "Native Silver",
       "type": "patchouli:text",
       "anchor": "surface_native_silver"
@@ -536,7 +588,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 35%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Granit",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 35%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 90$(br2)$(thing)Gesteinsarten$(): Granit",
       "title": "Redstone, Ruby & Cinnabar",
       "type": "patchouli:text",
       "anchor": "deep_redstone"
@@ -603,7 +655,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/130 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 35%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/130 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 35%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
       "title": "Saltpeter",
       "type": "patchouli:text",
       "anchor": "surface_salpeter"
@@ -630,7 +682,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/30 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Rhyolith",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/30 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 30%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Gabbro, Granit, Rhyolith",
       "title": "Sphalerite",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -657,7 +709,61 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 120$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/20 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 80%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit$(br2)Generates near lava.",
+      "title": "Sulfur (Deep)",
+      "type": "patchouli:text",
+      "anchor": "deep_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Quelle von$(): Schwefel$(br)$(thing)Formel$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 90%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 100 — 170$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit$(br2)Only appears in volcanic biomes.",
+      "title": "Sulfur (Volcanic)",
+      "type": "patchouli:text",
+      "anchor": "high_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Quelle von$(): Schwefel$(br)$(thing)Formel$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 20%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Sylvite & Quartz",
       "type": "patchouli:text",
       "anchor": "surface_sylvite_quartz"
@@ -709,7 +815,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/7 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/7 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 20$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Tetrahedrite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -736,7 +842,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/220 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 45%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 36$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/220 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 45%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 36$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 60$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer",
       "title": "Tin",
       "type": "patchouli:text",
       "anchor": "normal_tin"
@@ -815,7 +921,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/60 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 50%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 90$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 15$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 20$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/60 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 50%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 60 — 80$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 15$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 35$(br2)$(thing)Gesteinsarten$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Schieferstein, Tonstein",
       "title": "Tricalcium Phosphate",
       "type": "patchouli:text",
       "anchor": "surface_tricalcium_phosphate"

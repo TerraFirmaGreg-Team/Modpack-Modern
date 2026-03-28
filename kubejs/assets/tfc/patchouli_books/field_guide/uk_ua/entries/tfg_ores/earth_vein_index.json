@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
       "type": "patchouli:text"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/210 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Розмір$(): 25$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 1/210 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Розмір$(): 25$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Cassiterite & Tin (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_tin"
@@ -108,7 +108,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/240 чанків$(br)$(thing)Щільність$(): 60%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 32$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/240 чанків$(br)$(thing)Щільність$(): 60%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 32$(br)$(thing)Індикатор Max Depth$(): 60$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -187,17 +187,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 15%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит",
+      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 15%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Cobalt",
       "type": "patchouli:text",
       "anchor": "surface_cobalt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Кобальтит",
+      "name": "Кобальт",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/cobalt"
         },
         "pattern": [
           [
@@ -209,12 +209,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Кобальту, Миш'яку$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Небезпечний$(): $(c)$(t:Потрібна захисна маска)Арсенікоз (інгаляція)$(/t)$()",
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Розплавляється в$(): Кобальту$(br)$(thing)Формула$(): Co",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит",
+      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Garnierite (Nickel)",
       "type": "patchouli:text",
       "anchor": "surface_nickel"
@@ -238,6 +238,58 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Розплавляється в$(): Нікель$(br)$(thing)Формула$(): NiO",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 1/140 чанків$(br)$(thing)Щільність$(): 60%$(br)$(thing)Тип$(): Трубна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Висота$(): 150$(br)$(thing)Радіус$(): 18$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит$(br2)Only appears in volcanic biomes.",
+      "title": "Graphite & Diamond",
+      "type": "patchouli:text",
+      "anchor": "deep_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Графіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 59%$(br)$(thing)Використовується для$(): $(l:mechanics/fire_clay)Вогнетривкової глини$(), Графену$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Діамант",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Використовується для$(): Подрібнювачів, AE2$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -268,7 +320,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/45 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
+      "text": "$(thing)Рідкість$(): 1/45 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
       "title": "Hematite",
       "type": "patchouli:text",
       "anchor": "surface_hematite"
@@ -347,7 +399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "surface_limonite"
@@ -374,7 +426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Magnetite",
       "type": "patchouli:text",
       "anchor": "surface_magnetite"
@@ -401,7 +453,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/32 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Вапняк, Гнейс, Доломіт, Кварцит, Крейда, Мармур, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 1/32 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Вапняк, Гнейс, Доломіт, Кварцит, Крейда, Мармур, Мармур, Філіт, Шиферний сланець",
       "title": "Malachite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_malachite"
@@ -428,7 +480,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 15%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 5$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 1/90 чанків$(br)$(thing)Щільність$(): 15%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 5$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Граніт, Дацит, Діорит, Ріоліт",
       "title": "Mica",
       "type": "patchouli:text",
       "anchor": "surface_mica"
@@ -455,7 +507,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/24 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
+      "text": "$(thing)Рідкість$(): 1/24 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
       "title": "Native Copper",
       "type": "patchouli:text",
       "anchor": "surface_native_copper"
@@ -482,7 +534,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/35 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 15$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Граніт, Дацит, Діорит, Ріоліт",
+      "text": "$(thing)Рідкість$(): 1/35 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 15$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
       "title": "Native Gold",
       "type": "patchouli:text",
       "anchor": "surface_gold"
@@ -509,7 +561,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/15 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит",
+      "text": "$(thing)Рідкість$(): 1/15 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит",
       "title": "Native Silver",
       "type": "patchouli:text",
       "anchor": "surface_native_silver"
@@ -536,7 +588,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Граніт",
+      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 90$(br2)$(thing)Типи каменю$(): Граніт",
       "title": "Redstone, Ruby & Cinnabar",
       "type": "patchouli:text",
       "anchor": "deep_redstone"
@@ -603,7 +655,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/130 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/130 чанків$(br)$(thing)Щільність$(): 35%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
       "title": "Saltpeter",
       "type": "patchouli:text",
       "anchor": "surface_salpeter"
@@ -630,7 +682,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/30 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Дацит, Ріоліт",
+      "text": "$(thing)Рідкість$(): 1/30 чанків$(br)$(thing)Щільність$(): 30%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Андезит, Базальт, Габро, Граніт, Дацит, Діорит, Ріоліт",
       "title": "Sphalerite",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -657,7 +709,61 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 120$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/20 чанків$(br)$(thing)Щільність$(): 80%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Розмір$(): 10$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит$(br2)Generates near lava.",
+      "title": "Sulfur (Deep)",
+      "type": "patchouli:text",
+      "anchor": "deep_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сірка",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 90%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 100 — 170$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит$(br2)Only appears in volcanic biomes.",
+      "title": "Sulfur (Volcanic)",
+      "type": "patchouli:text",
+      "anchor": "high_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сірка",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 1/120 чанків$(br)$(thing)Щільність$(): 20%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 10$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Sylvite & Quartz",
       "type": "patchouli:text",
       "anchor": "surface_sylvite_quartz"
@@ -709,7 +815,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/7 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 1/7 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 20$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Tetrahedrite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -736,7 +842,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 36$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
+      "text": "$(thing)Рідкість$(): 1/220 чанків$(br)$(thing)Щільність$(): 45%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 36$(br)$(thing)Індикатор Max Depth$(): 60$(br2)$(thing)Типи каменю$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Філіт, Шиферний сланець",
       "title": "Tin",
       "type": "patchouli:text",
       "anchor": "normal_tin"
@@ -815,7 +921,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/60 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Розмір$(): 15$(br)$(thing)Індикатор Max Depth$(): 20$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
+      "text": "$(thing)Рідкість$(): 1/60 чанків$(br)$(thing)Щільність$(): 50%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Розмір$(): 15$(br)$(thing)Індикатор Max Depth$(): 35$(br2)$(thing)Типи каменю$(): Аргиліт, Вапняк, Глинистий сланець, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Tricalcium Phosphate",
       "type": "patchouli:text",
       "anchor": "surface_tricalcium_phosphate"

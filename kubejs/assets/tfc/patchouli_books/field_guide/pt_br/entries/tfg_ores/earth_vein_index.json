@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobalt)Cobalt$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_silver)Native Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_quartz)Sylvite & Quartz$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tin)Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()",
       "type": "patchouli:text"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Tamanho$(): 25$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/210 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Tamanho$(): 25$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Cassiterite & Tin (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_tin"
@@ -108,7 +108,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/240 chunks$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 32$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/240 chunks$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 32$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -187,17 +187,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 15%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito",
+      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 15%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Cobalt",
       "type": "patchouli:text",
       "anchor": "surface_cobalt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Cobaltita",
+      "name": "Cobalto",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/cobaltite"
+          "0": "#forge:ores/cobalt"
         },
         "pattern": [
           [
@@ -209,12 +209,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Cobalto, Arsênico$(br)$(thing)Fórmula$(): CoAsS$(br)$(thing)Perigo$(): $(c)$(t:Requer Máscara Facial)Arsenicose (Inalação)$(/t)$()",
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Derrete em$(): Cobalto$(br)$(thing)Fórmula$(): Co",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito",
+      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
       "title": "Garnierite (Nickel)",
       "type": "patchouli:text",
       "anchor": "surface_nickel"
@@ -238,6 +238,58 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Derrete em$(): Níquel$(br)$(thing)Fórmula$(): NiO",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 1/140 chunks$(br)$(thing)Densidade$(): 60%$(br)$(thing)Tipo$(): Veio Tubular$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Altura$(): 150$(br)$(thing)Raio$(): 18$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Only appears in volcanic biomes.",
+      "title": "Graphite & Diamond",
+      "type": "patchouli:text",
+      "anchor": "deep_graphite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Grafite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 59%$(br)$(thing)Usado para$(): $(l:mechanics/fire_clay)Argila Refratária$(), Grafeno$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Diamante",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Usado para$(): Maceradores, AE2$(br)$(thing)Fórmula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -268,7 +320,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/45 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/45 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Hematite",
       "type": "patchouli:text",
       "anchor": "surface_hematite"
@@ -347,7 +399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "surface_limonite"
@@ -374,7 +426,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
       "title": "Magnetite",
       "type": "patchouli:text",
       "anchor": "surface_magnetite"
@@ -401,7 +453,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/32 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Calcário, Dolomito, Filito, Giz, Gnaisse, Mármore, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/32 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Calcário, Dolomito, Filito, Giz, Gnaisse, Mármore, Mármore, Quartzito, Xisto",
       "title": "Malachite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_malachite"
@@ -428,7 +480,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 15%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 5$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/90 chunks$(br)$(thing)Densidade$(): 15%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 5$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Gabro, Granito, Riolito",
       "title": "Mica",
       "type": "patchouli:text",
       "anchor": "surface_mica"
@@ -455,7 +507,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/24 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/24 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Native Copper",
       "type": "patchouli:text",
       "anchor": "surface_native_copper"
@@ -482,7 +534,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/35 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 15$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Gabro, Granito, Riolito",
+      "text": "$(thing)Raridade$(): 1/35 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 15$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Native Gold",
       "type": "patchouli:text",
       "anchor": "surface_gold"
@@ -509,7 +561,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/15 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito",
+      "text": "$(thing)Raridade$(): 1/15 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito",
       "title": "Native Silver",
       "type": "patchouli:text",
       "anchor": "surface_native_silver"
@@ -536,7 +588,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Granito",
+      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 90$(br2)$(thing)Tipos de Pedra$(): Granito",
       "title": "Redstone, Ruby & Cinnabar",
       "type": "patchouli:text",
       "anchor": "deep_redstone"
@@ -603,7 +655,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/130 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/130 chunks$(br)$(thing)Densidade$(): 35%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
       "title": "Saltpeter",
       "type": "patchouli:text",
       "anchor": "surface_salpeter"
@@ -630,7 +682,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Riolito",
+      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 30%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Diorito, Gabro, Granito, Riolito",
       "title": "Sphalerite",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -657,7 +709,61 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 120$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/20 chunks$(br)$(thing)Densidade$(): 80%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): -50 — 20$(br)$(thing)Tamanho$(): 10$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Generates near lava.",
+      "title": "Sulfur (Deep)",
+      "type": "patchouli:text",
+      "anchor": "deep_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Enxofre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 90%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 100 — 170$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Only appears in volcanic biomes.",
+      "title": "Sulfur (Volcanic)",
+      "type": "patchouli:text",
+      "anchor": "high_sulfur"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Enxofre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 1/120 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Sylvite & Quartz",
       "type": "patchouli:text",
       "anchor": "surface_sylvite_quartz"
@@ -709,7 +815,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/7 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/7 chunks$(br)$(thing)Densidade$(): 25%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Tetrahedrite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -736,7 +842,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
+      "text": "$(thing)Raridade$(): 1/220 chunks$(br)$(thing)Densidade$(): 45%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Tamanho$(): 36$(br)$(thing)Profundidade Máxima do Indicador$(): 60$(br2)$(thing)Tipos de Pedra$(): Ardósia, Filito, Gnaisse, Mármore, Quartzito, Xisto",
       "title": "Tin",
       "type": "patchouli:text",
       "anchor": "normal_tin"
@@ -815,7 +921,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/60 chunks$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 90$(br)$(thing)Tamanho$(): 15$(br)$(thing)Profundidade Máxima do Indicador$(): 20$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
+      "text": "$(thing)Raridade$(): 1/60 chunks$(br)$(thing)Densidade$(): 50%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 60 — 80$(br)$(thing)Tamanho$(): 15$(br)$(thing)Profundidade Máxima do Indicador$(): 35$(br2)$(thing)Tipos de Pedra$(): Argilito, Calcário, Cherte, Conglomerado, Dolomito, Folhelho, Folhelho, Giz",
       "title": "Tricalcium Phosphate",
       "type": "patchouli:text",
       "anchor": "surface_tricalcium_phosphate"

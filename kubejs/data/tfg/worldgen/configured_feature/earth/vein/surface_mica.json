@@ -6,16 +6,16 @@
     "rarity": 90,
     "density": 0.15,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_mica",
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/quartzite"
+          "tfc:rock/raw/rhyolite"
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_mica_ore",
+            "block": "gtceu:rhyolite_mica_ore",
             "weight": 100
           },
           {
@@ -26,11 +26,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/slate"
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
         ],
         "with": [
           {
-            "block": "gtceu:slate_mica_ore",
+            "block": "gtceu:basalt_mica_ore",
             "weight": 100
           },
           {
@@ -41,11 +42,11 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/phyllite"
+          "tfc:rock/raw/andesite"
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_mica_ore",
+            "block": "gtceu:andesite_mica_ore",
             "weight": 100
           },
           {
@@ -56,11 +57,11 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/schist"
+          "tfc:rock/raw/dacite"
         ],
         "with": [
           {
-            "block": "gtceu:schist_mica_ore",
+            "block": "gtceu:dacite_mica_ore",
             "weight": 100
           },
           {
@@ -71,11 +72,11 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/gneiss"
+          "tfc:rock/raw/granite"
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_mica_ore",
+            "block": "gtceu:granite_mica_ore",
             "weight": 100
           },
           {
@@ -86,11 +87,26 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/marble"
+          "tfc:rock/raw/diorite"
         ],
         "with": [
           {
-            "block": "gtceu:marble_mica_ore",
+            "block": "gtceu:diorite_mica_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_mica_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_mica_ore",
             "weight": 100
           },
           {

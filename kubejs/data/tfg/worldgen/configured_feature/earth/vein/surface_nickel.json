@@ -6,16 +6,16 @@
     "rarity": 120,
     "density": 0.2,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_nickel",
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/granite"
+          "tfc:rock/raw/shale"
         ],
         "with": [
           {
-            "block": "gtceu:granite_garnierite_ore",
+            "block": "gtceu:shale_garnierite_ore",
             "weight": 100
           },
           {
@@ -26,11 +26,11 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/diorite"
+          "tfc:rock/raw/claystone"
         ],
         "with": [
           {
-            "block": "gtceu:diorite_garnierite_ore",
+            "block": "gtceu:claystone_garnierite_ore",
             "weight": 100
           },
           {
@@ -41,11 +41,86 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/gabbro"
+          "tfc:rock/raw/limestone"
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_garnierite_ore",
+            "block": "gtceu:limestone_garnierite_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_garnierite_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_garnierite_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_garnierite_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_garnierite_ore",
+            "weight": 100
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tuff_garnierite_ore",
             "weight": 100
           },
           {

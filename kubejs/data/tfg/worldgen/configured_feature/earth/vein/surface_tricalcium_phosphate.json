@@ -6,7 +6,7 @@
     "rarity": 60,
     "density": 0.5,
     "min_y": 60,
-    "max_y": 90,
+    "max_y": 80,
     "random_name": "surface_tricalcium_phosphate",
     "blocks": [
       {
@@ -131,8 +131,8 @@
       }
     ],
     "indicator": {
-      "rarity": 15,
-      "depth": 20,
+      "rarity": 14,
+      "depth": 35,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
