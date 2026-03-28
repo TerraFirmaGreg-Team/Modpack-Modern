@@ -491,4 +491,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
+
+	// Fluid veins
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout");
 }
