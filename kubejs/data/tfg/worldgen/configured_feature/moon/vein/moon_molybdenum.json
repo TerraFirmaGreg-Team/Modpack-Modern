@@ -8,6 +8,9 @@
     "min_y": 0,
     "max_y": 50,
     "random_name": "moon_molybdenum",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

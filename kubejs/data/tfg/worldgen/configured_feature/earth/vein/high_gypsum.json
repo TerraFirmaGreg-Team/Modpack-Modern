@@ -8,6 +8,9 @@
     "min_y": 100,
     "max_y": 170,
     "random_name": "high_gypsum",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [
