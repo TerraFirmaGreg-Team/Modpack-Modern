@@ -253,6 +253,19 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:oils', 'gtceu:oil_medium')
 	event.add('tfg:oils', 'gtceu:oil_heavy')
 
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:kvass')
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:lemonade')
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:nalivka')
+	event.add('tfg:cooling_drinks', 'gtceu:ice')
+
+	event.add('tfg:warming_drinks', 'tfc_gourmet:coffee')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:cocoa')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_mint')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_chamomile')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_nettle')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_rosehip')
+	event.add('tfg:warming_drinks', 'tfc:spring_water')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
