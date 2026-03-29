@@ -48,6 +48,7 @@
 								"type": "minecraft:matching_blocks",
 								"blocks": [
 									"minecraft:water",
+									"tfc:fluid/river_water",
 									"tfc:fluid/salt_water"
 								]
 							}

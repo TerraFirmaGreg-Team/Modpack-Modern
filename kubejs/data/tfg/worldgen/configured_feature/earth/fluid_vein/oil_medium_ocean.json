@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": "tfg:earth/fluid_vein/oil_medium_disk",
+		"tries": 6,
+		"xz_spread": 12,
+		"y_spread": 1
+	}
+}

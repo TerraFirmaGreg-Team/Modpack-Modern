@@ -35,12 +35,19 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('tfc:forge_insulation', 'minecraft:gilded_blackstone');
 
 	// Ores
-	event.add("minecraft:mineable/pickaxe", "#forge:ores");
-	event.add("minecraft:needs_iron_tool", "#forge:ores");
+	global.ORE_BEARING_STONES.forEach(stone => {
+		event.add("minecraft:mineable/pickaxe", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_collapse", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_start_collapse", `#forge:ores_in_ground/${stone}`);
+		event.add("tfc:can_trigger_collapse", `#forge:ores_in_ground/${stone}`);
+	})
 
-	event.add("tfc:can_collapse", "#forge:ores");
-	event.add("tfc:can_start_collapse", "#forge:ores");
-	event.add("tfc:can_trigger_collapse", "#forge:ores");
+	global.SAND_COLORS.forEach(color => {
+		event.add("minecraft:mineable/shovel", `#forge:ores_in_ground/${color}_sand`);
+		event.add("minecraft:needs_stone_tool", `#forge:ores_in_ground/${color}_sand`);
+		event.add("tfc:can_landslide", `#forge:ores_in_ground/${color}_sand`);
+	})
+
 	event.add("c:hidden_from_recipe_viewers", "#forge:ores");
     event.add("tfc:monster_spawns_on", "#forge:ores");
     event.add("tfc:prospectable", "#forge:ores");

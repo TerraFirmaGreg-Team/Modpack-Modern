@@ -141,8 +141,6 @@ const registerGTCEUMetals = (event) => {
 }
 
 function registerGTCEUBedrockFluidVeins(event) {
-
-	registerTFGOverworldBedrockFluidVeins(event)
 	registerTFGMoonBedrockFluidVeins(event)
 	registerTFGMarsBedrockFluidVeins(event)
 	registerTFGVenusBedrockFluidVeins(event)

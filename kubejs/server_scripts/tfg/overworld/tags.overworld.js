@@ -58,6 +58,7 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfg:epiphyte_plantable_on', '#minecraft:logs');
 	event.add('tfg:epiphyte_plantable_on', '#forge:stone');
 	event.add('tfg:epiphyte_plantable_on', '#forge:sandstone');
+	event.add('tfg:epiphyte_plantable_on', '#forge:gravel');
 
 	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/basalt');
 	event.add('tfg:sea_stack_rocks', 'tfc:rock/hardened/limestone');
@@ -100,6 +101,11 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('firmalife:butterfly_grass_mutants', 'tfg:plant/red_oat_grass')
 
 	event.add('tfc:kaolin_clay_replaceable', '#tfc:mud');
+
+	event.add('tfc:powder_snow_replaceable', 'minecraft:snow_block');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:ice');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:packed_ice');
+	event.add('tfc:powder_snow_replaceable', 'minecraft:blue_ice');
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -485,4 +491,16 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/sulfur_patch");
 	event.add("tfg:feature/shield_volcanoes", "tfg:earth/volcano/volcanic_ash_pile");
 	event.add("tfg:in_biome/surface_decoration/active_shield_volcano", "tfg:earth/volcano/volcano_smoke_random");
+
+	// Fluid veins
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/random_active_hot_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_heavy_ocean");
+	// Remove hot springs from old worldgen biomes
+	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
+	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
+	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
 }

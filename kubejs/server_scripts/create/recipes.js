@@ -2155,7 +2155,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:plates/brass',
 		C: 'minecraft:redstone_torch',
 		D: '#forge:stone',
-		E: '#forge:rods/amethyst'
+		E: '#tfg:precision_fabricator_holder_rods'
 	}).id('tfg:shaped/pulse_timer')
 
 	event.shaped('create:desk_bell', [

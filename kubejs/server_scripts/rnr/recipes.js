@@ -128,7 +128,7 @@ const registerRnrRecipes = (event) => {
 				item: `rnr:crushed_base_course`
 			},
 			input_block: `tfg:tamped/mud/${soil}`,
-			output_block: `tfg:tamped/soil/${soil}`
+			output_block: `tfg:tamped/dirt/${soil}`
 		})
 
 		event.custom({
@@ -150,7 +150,7 @@ const registerRnrRecipes = (event) => {
 		})
 		event.custom({
 			type: `rnr:mattock`,
-			ingredient: `tfg:duff_${soil}`,
+			ingredient: `tfg:duff/${soil}`,
 			result: `rnr:tamped_${soil}`,
 			mode: `smooth`
 		})

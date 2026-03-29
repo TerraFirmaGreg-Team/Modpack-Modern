@@ -796,7 +796,9 @@ global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:plant/peach_sapling", output: "tfc:food/peach", leaves: "tfc:plant/peach_leaves" },
     { input: "tfc:plant/plum_sapling", output: "tfc:food/plum", leaves: "tfc:plant/plum_leaves" },
     { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple", leaves: "tfc:plant/red_apple_leaves" },
-    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" }
+    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" },
+    { input: "tfg:fruit_trees/lavacado_sapling", output: "tfg:food/lavacado", leaves: "tfg:fruit_trees/lavacado_leaves" },
+    { input: "tfg:fruit_trees/magmango_sapling", output: "tfg:food/magmango", leaves: "tfg:fruit_trees/magmango_leaves" }
 ]);
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
