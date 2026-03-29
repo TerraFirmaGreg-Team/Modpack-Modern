@@ -1,0 +1,56 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:gold_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:small_gold_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfc:groundcover/pumice",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.25
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:pyrite_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.0533
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
