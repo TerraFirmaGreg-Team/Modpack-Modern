@@ -37,11 +37,11 @@ const registerTFGBlocks = (event) => {
 		.box(0, 0, 0, 16, 1, 16, true)
 		.defaultTranslucent()
 		.particles(p => p
-			.position(0.5, 0.2, 0.5)
+			.position(0.5, 0.5, 0.5)
 			.velocity(0, 1, 0)
 			.particle('minecraft:dust')
 			.dust(1, 0.95, 1, 1))
-		.emitDelay(10);
+		.emitDelay(8);
 
 	event.create('tfg:natural_gas_bubble_emitter', 'tfg:particle_emitter_decoration')
 		.soundType('sand')
@@ -51,7 +51,7 @@ const registerTFGBlocks = (event) => {
 		.defaultTranslucent()
 		.particles(p => p
 			.position(0.5, 0.2, 0.5)
-			.velocity(0, 1, 0)
+			.velocity(0, 2, 0)
 			.particle('minecraft:bubble_column_up'))
 		.emitDelay(5);
 
