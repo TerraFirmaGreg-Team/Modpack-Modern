@@ -1212,33 +1212,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 90%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 100%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "钻石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 10%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

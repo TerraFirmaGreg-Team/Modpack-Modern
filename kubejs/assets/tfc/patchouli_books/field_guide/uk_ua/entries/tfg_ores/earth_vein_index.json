@@ -1212,33 +1212,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 90%$(br)$(thing)Використовується для$(): Палива, Дистиляції$(br)$(thing)Формула$(): C",
+      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Використовується для$(): Палива, Дистиляції$(br)$(thing)Формула$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Діамант",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 10%$(br)$(thing)Використовується для$(): Подрібнювачів, AE2$(br)$(thing)Формула$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

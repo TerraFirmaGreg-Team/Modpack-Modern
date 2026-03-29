@@ -1212,33 +1212,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 90%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Diamond",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/diamond"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 10%$(br)$(thing)Used for$(): Macerators, AE2$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
