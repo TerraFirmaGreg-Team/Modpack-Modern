@@ -1,8 +1,8 @@
 # Changelog
 
 ## Unreleased
-WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
-## New Overworld World Generation
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### New Overworld World Generation
 TFC's 1.21 world generation has been backported to TFG! Please read the above upgrade guide for information on what will happen to your existing world. This was a huge team effort so a big thank you to everyone who contributed, and of course to @Therighthon for his work on the new worldgen in TFC (and for the help debugging!).
 
 Remember that the new world generation is AN ALPHA and please report any problems you have with it, including any generation that looks strange. TFC isn't finished with its world generation changes either, so if you decide to play on the new world generation, there will be changes in the future that could cause ugly chunk borders.
@@ -25,6 +25,8 @@ Remember that the new world generation is AN ALPHA and please report any problem
 - Moved Rose Quartz to now only spawn in Ice Sheet and Glacited biomes (new worldgen only) @Pyritie
 - Redid our logo (again) and added a new main menu panorama @Redeix
 - Currently the world preview screen (usually accessible via K) does not work with the new worldgen after you've created a new world. We're working on it!
+### New Shaders
+Our shaders have been basically totally rewritten to be up to date with new versions of complementary and support Colorwheel (less lag from create). They are still a work in progress, so please send us any feedback or issues you have with them! @woopSmile @Zaraney
 ### Other Changes
 - Added repair recipes for every other piece of equipment and armor @Thomasx0 @SakuraKitsurugi 
 - Drinkable fluids with effects should now also display their effect when inside a container (like a flask) @SakuraKitsurugi
