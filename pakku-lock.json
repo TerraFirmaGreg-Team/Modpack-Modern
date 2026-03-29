@@ -5730,7 +5730,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "everycomp-1.20-2.9.18-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.17-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5738,22 +5738,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7815/757/everycomp-1.20-2.9.18-forge.jar",
-                    "id": "7815757",
+                    "url": "https://edge.forgecdn.net/files/7597/912/everycomp-1.20-2.9.17-forge.jar",
+                    "id": "7597912",
                     "parent_id": "628539",
                     "hashes": {
-                        "sha1": "f9524ee2a1a4b58bfb475c71e90d3a22729f3141",
-                        "md5": "b5c70957c6cba6e99172f8b2fdbf6062"
+                        "sha1": "f916b0f9871722d56adea057111b70e4c0529866",
+                        "md5": "750f6bd2c84400cf860212bdc1185850"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 2842755,
-                    "date_published": "2026-03-26T07:40:29.137Z"
+                    "size": 2834698,
+                    "date_published": "2026-02-09T04:43:30.063Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "everycomp-1.20-2.9.18-forge.jar",
+                    "file_name": "everycomp-1.20-2.9.17-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5761,18 +5761,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/FFHgFkhq/everycomp-1.20-2.9.18-forge.jar",
-                    "id": "FFHgFkhq",
+                    "url": "https://cdn.modrinth.com/data/eiktJyw1/versions/VfyRmElC/everycomp-1.20-2.9.17-forge.jar",
+                    "id": "VfyRmElC",
                     "parent_id": "eiktJyw1",
                     "hashes": {
-                        "sha512": "a19211948fa14a5e7b935ca7d086c092d0b131bbc599d1fc266c13c5c6e998fc7de8a7bc265340473fab50a8046e7f3004aef632981186a4102cb43c3334c88a",
-                        "sha1": "f9524ee2a1a4b58bfb475c71e90d3a22729f3141"
+                        "sha512": "b56c5258a8a34178205574fc262a35c7a5d31299954f3a90d3fb876433cc000b2a89ff9ffecfdb5bd5eb68524ae582a7c4807ca9297b6438fc4861a6b11f036a",
+                        "sha1": "f916b0f9871722d56adea057111b70e4c0529866"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 2842755,
-                    "date_published": "2026-03-26T07:40:53.785847Z"
+                    "size": 2834698,
+                    "date_published": "2026-02-09T04:43:50.932298Z"
                 }
             ]
         },
