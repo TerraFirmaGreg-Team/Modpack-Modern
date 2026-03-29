@@ -170,4 +170,9 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:ruby_slurry");
     event.add("c:hidden_from_recipe_viewers", "gtceu:green_sapphire_slurry");
     event.add("c:hidden_from_recipe_viewers", "gtceu:sapphire_slurry");
+
+    event.add("c:hidden_from_recipe_viewers", "gtceu:nether_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:liquid_nether_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:ender_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:liquid_ender_air");
 }

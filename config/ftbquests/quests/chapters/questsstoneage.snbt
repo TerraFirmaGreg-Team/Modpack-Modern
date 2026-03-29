@@ -61,6 +61,18 @@
 			x: 2.0d
 			y: 7.0d
 		}
+		{
+			id: "1C8FCD75778C1614"
+			linked_quest: "082310DF9BEA92CE"
+			x: 17.0d
+			y: 8.5d
+		}
+		{
+			id: "07CB391030266E3E"
+			linked_quest: "5261ECBE3438B05E"
+			x: 19.0d
+			y: 8.5d
+		}
 	]
 	quests: [
 		{
@@ -693,7 +705,7 @@
 			}]
 			title: "{quests.metal_age.copper_anvil.title}"
 			x: 26.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -716,7 +728,7 @@
 			}]
 			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5E186CD5E83BFDF0"]
@@ -756,13 +768,14 @@
 			]
 			title: "{quests.stone_age.flux.title}"
 			x: 19.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"618090A6D0D3B2F1"
 				"669F84C6A2A64145"
 				"3462FD6E24F9BE0B"
+				"082310DF9BEA92CE"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.copper_for_anvil.desc}"]
@@ -776,7 +789,7 @@
 			}]
 			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 17.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -817,7 +830,7 @@
 			]
 			title: "{quests.stone_age.rock_anvil.title}"
 			x: 21.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1249,7 +1262,7 @@
 			}]
 			title: "{quests.stone_age.create_forge.title}"
 			x: 23.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			description: [
@@ -1275,7 +1288,7 @@
 			}]
 			title: "{quests.stone_age.get_raw_rock.title}"
 			x: 21.0d
-			y: 13.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -1303,7 +1316,7 @@
 			]
 			title: "{quests.stone_age.quern.title}"
 			x: 19.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
@@ -2112,7 +2125,7 @@
 			}]
 			title: "{quests.stone_age.crush_ore.title}"
 			x: 18.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2621BF784BEB7033"]
@@ -2159,7 +2172,7 @@
 			]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
 			x: 17.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["050444CE0EA04FDF"]
@@ -2191,7 +2204,7 @@
 			}]
 			title: "{quests.stone_age.clean_dust.title}"
 			x: 17.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]

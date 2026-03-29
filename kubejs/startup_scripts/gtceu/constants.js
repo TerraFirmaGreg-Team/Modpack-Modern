@@ -180,6 +180,10 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:molten_desh_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
+    "gtceu:nether_air_bucket",
+    "gtceu:liquid_nether_air_bucket",
+    "gtceu:ender_air_bucket",
+    "gtceu:liquid_ender_air_bucket",
 
     //armor
     "gtceu:bronze_helmet",
