@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandin & Saphir$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatit & Pyrochlor$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnäsit & Monazit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismut$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornit & Cooperit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierit & Kobaltit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Gold, Elektrotin, & Bauxit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Graphit & Diamant$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematit & Limonit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematit & Limonit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Kassiterit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Kohle & Hematit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Kupfer & Chalkopyrit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lapis, Lasurit, & Sodalith$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Almandin & Saphir$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Apatit & Pyrochlor$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Bastnäsit & Monazit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Bismut$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Bornit & Cooperit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Garnierit & Kobaltit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Gold, Elektrotin, & Bauxit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Graphit & Diamant$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematit & Limonit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematit & Limonit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Kassiterit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Kohle & Hematit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Kupfer & Chalkopyrit$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lapis, Lasurit, & Sodalith$()$()",
       "type": "patchouli:text"
     },
     {
@@ -780,98 +780,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/210 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 40$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 30$(br2)$(thing)Gesteinsarten$(): Argillit, Basalt, Dazit, Dolomit, Kalkstein, Konglomerat, Quarzit, Roter Granit, Tonstein",
-      "title": "Hematit & Limonit",
-      "type": "patchouli:text",
-      "anchor": "mars_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Hematit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 50%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Gelbes Limonit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/yellow_limonite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 30%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Goethit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/goethite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 15%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Natives Gold",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Schmelzt in$(): Gold$(br)$(thing)Formel$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/140 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 25%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 80 — 180$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 45$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 40$(br2)$(thing)Gesteinsarten$(): Argillit, Basalt, Dazit, Diorit, Dolomit, Gabbro, Granit, Hornstein, Kalk, Kalkstein, Konglomerat, Quarzit, Roter Granit, Schieferstein, Tonstein, Trachyt",
       "title": "Hematit & Limonit",
       "type": "patchouli:text",
@@ -955,6 +863,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Quelle von$(): Calcium$(br)$(thing)Formel$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/210 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 40%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 40$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 30$(br2)$(thing)Gesteinsarten$(): Argillit, Basalt, Dazit, Dolomit, Kalkstein, Konglomerat, Quarzit, Roter Granit, Tonstein",
+      "title": "Hematit & Limonit",
+      "type": "patchouli:text",
+      "anchor": "mars_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Hematit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 50%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gelbes Limonit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 30%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Goethit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 15%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Natives Gold",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 5%$(br)$(thing)Schmelzt in$(): Gold$(br)$(thing)Formel$(): Au",
       "type": "patchouli:multiblock"
     },
     {
