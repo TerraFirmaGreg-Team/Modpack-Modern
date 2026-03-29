@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)紫水晶, 蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)金矿, 赤铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)针铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)钼铅矿, 辉钼矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)铬铁矿$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)紫水晶, 蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)金矿, 赤铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)针铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)钼铅矿, 辉钼矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)铜矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)铬铁矿$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1226,73 +1226,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/160 区块$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 花岗岩, 辉石岩",
-      "title": "红石, 朱砂, 红宝石",
-      "type": "patchouli:text",
-      "anchor": "nether_redstone"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "红石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/redstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 45%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "红宝石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ruby"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铬, 铝$(br)$(thing)化学式$(): CrAl₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "朱砂",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cinnabar"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 水银$(br)$(thing)化学式$(): HgS",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 1/230 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br)$(thing)高度$(): 8$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 石灰华, 辉石岩",
       "title": "紫水晶, 蛋白石, 石榴石",
       "type": "patchouli:text",
@@ -1382,6 +1315,73 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/160 区块$(br)$(thing)密度$(): 50%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 0 — 128$(br)$(thing)尺寸$(): 45$(br2)$(thing)岩石类型$(): 花岗岩, 辉石岩",
+      "title": "红石, 朱砂, 红宝石",
+      "type": "patchouli:text",
+      "anchor": "nether_redstone"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "红石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 45%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "红宝石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铬, 铝$(br)$(thing)化学式$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "朱砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cinnabar"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 水银$(br)$(thing)化学式$(): HgS",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
