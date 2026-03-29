@@ -303,18 +303,6 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
-        },
-        "supplemental-patches": {
-            "side": "CLIENT",
-            "export": false
-        },
-        "euphoria-patches": {
-            "side": "CLIENT",
-            "export": false
-        },
-        "complementary-unbound": {
-            "side": "CLIENT",
-            "export": false
         }
     }
 }
