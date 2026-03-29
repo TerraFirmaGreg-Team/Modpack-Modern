@@ -104,7 +104,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sulfur')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tin')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_redstone')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_native_silver')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_hematite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_malachite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_sylvite_quartz')

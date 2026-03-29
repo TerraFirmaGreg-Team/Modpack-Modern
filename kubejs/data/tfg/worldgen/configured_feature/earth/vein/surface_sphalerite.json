@@ -4,11 +4,11 @@
   "config": {
     "size": 15,
     "rarity": 30,
-    "density": 0.3,
-    "min_y": 60,
-    "max_y": 70,
+    "density": 0.25,
+    "min_y": -20,
+    "max_y": -5,
     "random_name": "surface_sphalerite",
-    "project": false,
+    "project": true,
     "project_offset": false,
     "near_lava": false,
     "blocks": [

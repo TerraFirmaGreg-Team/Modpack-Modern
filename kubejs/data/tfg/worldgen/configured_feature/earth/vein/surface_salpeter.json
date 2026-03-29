@@ -4,13 +4,13 @@
   "config": {
     "size": 5,
     "rarity": 130,
-    "density": 0.35,
-    "min_y": 60,
-    "max_y": 70,
+    "density": 0.3,
+    "min_y": -20,
+    "max_y": -5,
     "random_name": "surface_salpeter",
-    "project": false,
+    "project": true,
     "project_offset": false,
-    "near_lava": true,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [
@@ -75,7 +75,7 @@
       }
     ],
     "indicator": {
-      "rarity": 14,
+      "rarity": 12,
       "depth": 35,
       "underground_rarity": 40,
       "underground_count": 200,

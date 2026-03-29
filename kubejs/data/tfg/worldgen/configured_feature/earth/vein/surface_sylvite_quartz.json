@@ -4,11 +4,11 @@
   "config": {
     "size": 5,
     "rarity": 120,
-    "density": 0.2,
-    "min_y": 60,
-    "max_y": 70,
+    "density": 0.15,
+    "min_y": -20,
+    "max_y": -5,
     "random_name": "surface_sylvite_quartz",
-    "project": false,
+    "project": true,
     "project_offset": false,
     "near_lava": false,
     "blocks": [
@@ -128,7 +128,7 @@
       }
     ],
     "indicator": {
-      "rarity": 14,
+      "rarity": 12,
       "depth": 35,
       "underground_rarity": 40,
       "underground_count": 200,

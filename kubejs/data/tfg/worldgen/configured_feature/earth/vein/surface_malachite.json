@@ -4,11 +4,11 @@
   "config": {
     "size": 15,
     "rarity": 32,
-    "density": 0.25,
-    "min_y": 60,
-    "max_y": 70,
+    "density": 0.2,
+    "min_y": -20,
+    "max_y": -5,
     "random_name": "surface_malachite",
-    "project": false,
+    "project": true,
     "project_offset": false,
     "near_lava": false,
     "blocks": [
@@ -164,7 +164,7 @@
       }
     ],
     "indicator": {
-      "rarity": 14,
+      "rarity": 12,
       "depth": 35,
       "underground_rarity": 40,
       "underground_count": 200,
