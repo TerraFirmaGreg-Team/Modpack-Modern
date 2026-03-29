@@ -19,10 +19,6 @@
         "with": [
           {
             "block": "gtceu:shale_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -34,10 +30,6 @@
         "with": [
           {
             "block": "gtceu:claystone_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -49,10 +41,6 @@
         "with": [
           {
             "block": "gtceu:limestone_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -64,10 +52,6 @@
         "with": [
           {
             "block": "gtceu:conglomerate_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -79,10 +63,6 @@
         "with": [
           {
             "block": "gtceu:dolomite_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -94,10 +74,6 @@
         "with": [
           {
             "block": "gtceu:chert_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -109,10 +85,6 @@
         "with": [
           {
             "block": "gtceu:chalk_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -124,10 +96,6 @@
         "with": [
           {
             "block": "gtceu:tuff_tricalcium_phosphate_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tricalcium_phosphate_block",
             "weight": 1
           }
         ]
@@ -141,7 +109,7 @@
       "blocks": [
         {
           "block": "gtceu:tricalcium_phosphate_indicator",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

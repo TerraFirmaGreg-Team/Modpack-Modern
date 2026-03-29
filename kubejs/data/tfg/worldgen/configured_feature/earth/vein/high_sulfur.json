@@ -20,10 +20,6 @@
         "with": [
           {
             "block": "gtceu:granite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -35,10 +31,6 @@
         "with": [
           {
             "block": "gtceu:diorite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -50,10 +42,6 @@
         "with": [
           {
             "block": "gtceu:gabbro_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -65,10 +53,6 @@
         "with": [
           {
             "block": "gtceu:rhyolite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -81,10 +65,6 @@
         "with": [
           {
             "block": "gtceu:basalt_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -96,10 +76,6 @@
         "with": [
           {
             "block": "gtceu:andesite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -111,10 +87,6 @@
         "with": [
           {
             "block": "gtceu:dacite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -126,10 +98,6 @@
         "with": [
           {
             "block": "gtceu:shale_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -141,10 +109,6 @@
         "with": [
           {
             "block": "gtceu:claystone_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -156,10 +120,6 @@
         "with": [
           {
             "block": "gtceu:limestone_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -171,10 +131,6 @@
         "with": [
           {
             "block": "gtceu:conglomerate_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -186,10 +142,6 @@
         "with": [
           {
             "block": "gtceu:dolomite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -201,10 +153,6 @@
         "with": [
           {
             "block": "gtceu:chert_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -216,10 +164,6 @@
         "with": [
           {
             "block": "gtceu:chalk_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -231,10 +175,6 @@
         "with": [
           {
             "block": "gtceu:tuff_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -246,10 +186,6 @@
         "with": [
           {
             "block": "gtceu:quartzite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -261,10 +197,6 @@
         "with": [
           {
             "block": "gtceu:slate_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -276,10 +208,6 @@
         "with": [
           {
             "block": "gtceu:phyllite_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -291,10 +219,6 @@
         "with": [
           {
             "block": "gtceu:schist_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -306,10 +230,6 @@
         "with": [
           {
             "block": "gtceu:gneiss_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -321,10 +241,6 @@
         "with": [
           {
             "block": "gtceu:marble_sulfur_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_sulfur_block",
             "weight": 1
           }
         ]
@@ -338,7 +254,7 @@
       "blocks": [
         {
           "block": "gtceu:sulfur_indicator",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

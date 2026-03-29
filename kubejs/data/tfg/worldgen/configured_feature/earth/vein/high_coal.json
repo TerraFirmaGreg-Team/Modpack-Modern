@@ -19,15 +19,11 @@
         "with": [
           {
             "block": "gtceu:granite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:granite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -38,15 +34,11 @@
         "with": [
           {
             "block": "gtceu:diorite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:diorite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -57,15 +49,11 @@
         "with": [
           {
             "block": "gtceu:gabbro_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:gabbro_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -76,15 +64,11 @@
         "with": [
           {
             "block": "gtceu:rhyolite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:rhyolite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -96,15 +80,11 @@
         "with": [
           {
             "block": "gtceu:basalt_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:basalt_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -115,15 +95,11 @@
         "with": [
           {
             "block": "gtceu:andesite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:andesite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -134,15 +110,11 @@
         "with": [
           {
             "block": "gtceu:dacite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:dacite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -153,15 +125,11 @@
         "with": [
           {
             "block": "gtceu:shale_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:shale_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -172,15 +140,11 @@
         "with": [
           {
             "block": "gtceu:claystone_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:claystone_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -191,15 +155,11 @@
         "with": [
           {
             "block": "gtceu:limestone_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:limestone_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -210,15 +170,11 @@
         "with": [
           {
             "block": "gtceu:conglomerate_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:conglomerate_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -229,15 +185,11 @@
         "with": [
           {
             "block": "gtceu:dolomite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:dolomite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -248,15 +200,11 @@
         "with": [
           {
             "block": "gtceu:chert_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:chert_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -267,15 +215,11 @@
         "with": [
           {
             "block": "gtceu:chalk_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:chalk_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -286,15 +230,11 @@
         "with": [
           {
             "block": "gtceu:tuff_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:tuff_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -305,15 +245,11 @@
         "with": [
           {
             "block": "gtceu:quartzite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:quartzite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -324,15 +260,11 @@
         "with": [
           {
             "block": "gtceu:slate_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:slate_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -343,15 +275,11 @@
         "with": [
           {
             "block": "gtceu:phyllite_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:phyllite_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -362,15 +290,11 @@
         "with": [
           {
             "block": "gtceu:schist_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:schist_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -381,15 +305,11 @@
         "with": [
           {
             "block": "gtceu:gneiss_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:gneiss_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       },
@@ -400,15 +320,11 @@
         "with": [
           {
             "block": "gtceu:marble_coal_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
+            "weight": 9
           },
           {
             "block": "gtceu:marble_diamond_ore",
-            "weight": 11
+            "weight": 1
           }
         ]
       }
@@ -421,11 +337,11 @@
       "blocks": [
         {
           "block": "gtceu:coal_indicator",
-          "weight": 100
+          "weight": 9
         },
         {
           "block": "gtceu:diamond_bud_indicator",
-          "weight": 11
+          "weight": 1
         }
       ]
     }

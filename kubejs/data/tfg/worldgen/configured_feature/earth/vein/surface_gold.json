@@ -19,10 +19,6 @@
         "with": [
           {
             "block": "gtceu:rhyolite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
             "weight": 1
           }
         ]
@@ -35,10 +31,6 @@
         "with": [
           {
             "block": "gtceu:basalt_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
             "weight": 1
           }
         ]
@@ -50,10 +42,6 @@
         "with": [
           {
             "block": "gtceu:andesite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
             "weight": 1
           }
         ]
@@ -65,10 +53,6 @@
         "with": [
           {
             "block": "gtceu:dacite_gold_ore",
-            "weight": 100
-          },
-          {
-            "block": "minecraft:raw_gold_block",
             "weight": 1
           }
         ]
@@ -82,7 +66,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_native_gold",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

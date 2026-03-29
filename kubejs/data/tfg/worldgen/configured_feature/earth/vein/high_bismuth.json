@@ -19,10 +19,6 @@
         "with": [
           {
             "block": "gtceu:granite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -34,10 +30,6 @@
         "with": [
           {
             "block": "gtceu:diorite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -49,10 +41,6 @@
         "with": [
           {
             "block": "gtceu:gabbro_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -64,10 +52,6 @@
         "with": [
           {
             "block": "gtceu:rhyolite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -80,10 +64,6 @@
         "with": [
           {
             "block": "gtceu:basalt_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -95,10 +75,6 @@
         "with": [
           {
             "block": "gtceu:andesite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -110,10 +86,6 @@
         "with": [
           {
             "block": "gtceu:dacite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -125,10 +97,6 @@
         "with": [
           {
             "block": "gtceu:shale_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -140,10 +108,6 @@
         "with": [
           {
             "block": "gtceu:claystone_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -155,10 +119,6 @@
         "with": [
           {
             "block": "gtceu:limestone_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -170,10 +130,6 @@
         "with": [
           {
             "block": "gtceu:conglomerate_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -185,10 +141,6 @@
         "with": [
           {
             "block": "gtceu:dolomite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -200,10 +152,6 @@
         "with": [
           {
             "block": "gtceu:chert_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -215,10 +163,6 @@
         "with": [
           {
             "block": "gtceu:chalk_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -230,10 +174,6 @@
         "with": [
           {
             "block": "gtceu:tuff_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -245,10 +185,6 @@
         "with": [
           {
             "block": "gtceu:quartzite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -260,10 +196,6 @@
         "with": [
           {
             "block": "gtceu:slate_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -275,10 +207,6 @@
         "with": [
           {
             "block": "gtceu:phyllite_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -290,10 +218,6 @@
         "with": [
           {
             "block": "gtceu:schist_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -305,10 +229,6 @@
         "with": [
           {
             "block": "gtceu:gneiss_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -320,10 +240,6 @@
         "with": [
           {
             "block": "gtceu:marble_bismuth_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_bismuth_block",
             "weight": 1
           }
         ]
@@ -337,7 +253,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_bismuthinite",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

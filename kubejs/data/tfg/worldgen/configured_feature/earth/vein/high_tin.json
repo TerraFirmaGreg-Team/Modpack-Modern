@@ -19,16 +19,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:granite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:granite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:granite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -38,16 +34,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:diorite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:diorite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:diorite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -57,16 +49,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:gabbro_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:gabbro_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -76,16 +64,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:rhyolite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:rhyolite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:rhyolite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -96,16 +80,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:basalt_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:basalt_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:basalt_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -115,16 +95,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:andesite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:andesite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:andesite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -134,16 +110,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:dacite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:dacite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:dacite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -153,16 +125,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:shale_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:shale_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:shale_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -172,16 +140,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:claystone_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:claystone_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:claystone_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -191,16 +155,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:limestone_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:limestone_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:limestone_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -210,16 +170,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:conglomerate_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:conglomerate_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -229,16 +185,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:dolomite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:dolomite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -248,16 +200,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:chert_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:chert_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:chert_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -267,16 +215,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:chalk_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:chalk_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:chalk_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -286,16 +230,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:tuff_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:tuff_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -305,16 +245,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:quartzite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:quartzite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -324,16 +260,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:slate_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:slate_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -343,16 +275,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:phyllite_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:phyllite_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -362,16 +290,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:schist_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:schist_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -381,16 +305,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:gneiss_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:gneiss_cassiterite_ore",
+            "weight": 6
           }
         ]
       },
@@ -400,16 +320,12 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_cassiterite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_cassiterite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:marble_tin_ore",
-            "weight": 67
+            "weight": 4
+          },
+          {
+            "block": "gtceu:marble_cassiterite_ore",
+            "weight": 6
           }
         ]
       }
@@ -422,11 +338,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 100
+          "weight": 4
         },
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 67
+          "weight": 6
         }
       ]
     }

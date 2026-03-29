@@ -19,10 +19,6 @@
         "with": [
           {
             "block": "gtceu:shale_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -34,10 +30,6 @@
         "with": [
           {
             "block": "gtceu:claystone_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -49,10 +41,6 @@
         "with": [
           {
             "block": "gtceu:limestone_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -64,10 +52,6 @@
         "with": [
           {
             "block": "gtceu:conglomerate_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -79,10 +63,6 @@
         "with": [
           {
             "block": "gtceu:dolomite_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -94,10 +74,6 @@
         "with": [
           {
             "block": "gtceu:chert_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -109,10 +85,6 @@
         "with": [
           {
             "block": "gtceu:chalk_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -124,10 +96,6 @@
         "with": [
           {
             "block": "gtceu:tuff_garnierite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           }
         ]
@@ -141,7 +109,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

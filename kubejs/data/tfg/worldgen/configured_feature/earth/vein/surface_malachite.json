@@ -14,90 +14,22 @@
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/quartzite"
+          "tfc:rock/raw/shale"
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
+            "block": "gtceu:shale_malachite_ore",
             "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/slate"
+          "tfc:rock/raw/claystone"
         ],
         "with": [
           {
-            "block": "gtceu:slate_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/phyllite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:phyllite_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/schist"
-        ],
-        "with": [
-          {
-            "block": "gtceu:schist_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/gneiss"
-        ],
-        "with": [
-          {
-            "block": "gtceu:gneiss_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/marble"
-        ],
-        "with": [
-          {
-            "block": "gtceu:marble_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
+            "block": "gtceu:claystone_malachite_ore",
             "weight": 1
           }
         ]
@@ -109,25 +41,17 @@
         "with": [
           {
             "block": "gtceu:limestone_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
             "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/chalk"
+          "tfc:rock/raw/conglomerate"
         ],
         "with": [
           {
-            "block": "gtceu:chalk_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
+            "block": "gtceu:conglomerate_malachite_ore",
             "weight": 1
           }
         ]
@@ -139,10 +63,94 @@
         "with": [
           {
             "block": "gtceu:dolomite_malachite_ore",
-            "weight": 100
-          },
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
           {
-            "block": "gtceu:raw_malachite_block",
+            "block": "gtceu:chert_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tuff_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_malachite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_malachite_ore",
             "weight": 1
           }
         ]
@@ -154,10 +162,6 @@
         "with": [
           {
             "block": "gtceu:marble_malachite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_malachite_block",
             "weight": 1
           }
         ]
@@ -171,7 +175,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_malachite",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

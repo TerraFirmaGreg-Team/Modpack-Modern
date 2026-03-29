@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:shale_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -34,7 +34,7 @@
         "with": [
           {
             "block": "gtceu:claystone_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -49,7 +49,7 @@
         "with": [
           {
             "block": "gtceu:limestone_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -64,7 +64,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -79,7 +79,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -94,7 +94,7 @@
         "with": [
           {
             "block": "gtceu:chert_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -109,7 +109,7 @@
         "with": [
           {
             "block": "gtceu:chalk_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -124,7 +124,7 @@
         "with": [
           {
             "block": "gtceu:tuff_yellow_limonite_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -141,7 +141,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_limonite",
-          "weight": 100
+          "weight": 20
         }
       ]
     }

@@ -20,7 +20,7 @@
         "with": [
           {
             "block": "gtceu:granite_sulfur_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "gtceu:raw_sulfur_block",
@@ -35,7 +35,7 @@
         "with": [
           {
             "block": "gtceu:diorite_sulfur_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "gtceu:raw_sulfur_block",
@@ -50,7 +50,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_sulfur_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "gtceu:raw_sulfur_block",
@@ -60,14 +60,14 @@
       }
     ],
     "indicator": {
-      "rarity": 10,
-      "depth": 1,
+      "rarity": 100,
+      "depth": 5,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
           "block": "gtceu:sulfur_indicator",
-          "weight": 100
+          "weight": 10
         }
       ]
     }

@@ -20,15 +20,11 @@
         "with": [
           {
             "block": "gtceu:granite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:granite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -39,15 +35,11 @@
         "with": [
           {
             "block": "gtceu:diorite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:diorite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -58,15 +50,11 @@
         "with": [
           {
             "block": "gtceu:gabbro_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:gabbro_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -77,15 +65,11 @@
         "with": [
           {
             "block": "gtceu:rhyolite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:rhyolite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -97,15 +81,11 @@
         "with": [
           {
             "block": "gtceu:basalt_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:basalt_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -116,15 +96,11 @@
         "with": [
           {
             "block": "gtceu:andesite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:andesite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -135,15 +111,11 @@
         "with": [
           {
             "block": "gtceu:dacite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:dacite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -154,15 +126,11 @@
         "with": [
           {
             "block": "gtceu:shale_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:shale_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -173,15 +141,11 @@
         "with": [
           {
             "block": "gtceu:claystone_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:claystone_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -192,15 +156,11 @@
         "with": [
           {
             "block": "gtceu:limestone_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:limestone_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -211,15 +171,11 @@
         "with": [
           {
             "block": "gtceu:conglomerate_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:conglomerate_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -230,15 +186,11 @@
         "with": [
           {
             "block": "gtceu:dolomite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:dolomite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -249,15 +201,11 @@
         "with": [
           {
             "block": "gtceu:chert_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:chert_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -268,15 +216,11 @@
         "with": [
           {
             "block": "gtceu:chalk_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:chalk_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -287,15 +231,11 @@
         "with": [
           {
             "block": "gtceu:tuff_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:tuff_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -306,15 +246,11 @@
         "with": [
           {
             "block": "gtceu:quartzite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:quartzite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -325,15 +261,11 @@
         "with": [
           {
             "block": "gtceu:slate_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:slate_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -344,15 +276,11 @@
         "with": [
           {
             "block": "gtceu:phyllite_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:phyllite_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -363,15 +291,11 @@
         "with": [
           {
             "block": "gtceu:schist_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:schist_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -382,15 +306,11 @@
         "with": [
           {
             "block": "gtceu:gneiss_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:gneiss_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       },
@@ -401,15 +321,11 @@
         "with": [
           {
             "block": "gtceu:marble_lead_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_lead_block",
-            "weight": 1
+            "weight": 6
           },
           {
             "block": "gtceu:marble_silver_ore",
-            "weight": 67
+            "weight": 4
           }
         ]
       }
@@ -422,11 +338,11 @@
       "blocks": [
         {
           "block": "gtceu:lead_indicator",
-          "weight": 100
+          "weight": 6
         },
         {
           "block": "tfc:ore/small_native_silver",
-          "weight": 67
+          "weight": 4
         }
       ]
     }

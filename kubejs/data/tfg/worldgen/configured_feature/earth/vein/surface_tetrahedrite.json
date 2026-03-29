@@ -14,15 +14,44 @@
     "blocks": [
       {
         "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_tetrahedrite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_tetrahedrite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_tetrahedrite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
           "tfc:rock/raw/quartzite"
         ],
         "with": [
           {
             "block": "gtceu:quartzite_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -34,10 +63,6 @@
         "with": [
           {
             "block": "gtceu:slate_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -49,10 +74,6 @@
         "with": [
           {
             "block": "gtceu:phyllite_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -64,10 +85,6 @@
         "with": [
           {
             "block": "gtceu:schist_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -79,10 +96,6 @@
         "with": [
           {
             "block": "gtceu:gneiss_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -94,10 +107,6 @@
         "with": [
           {
             "block": "gtceu:marble_tetrahedrite_ore",
-            "weight": 100
-          },
-          {
-            "block": "gtceu:raw_tetrahedrite_block",
             "weight": 1
           }
         ]
@@ -111,7 +120,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_tetrahedrite",
-          "weight": 100
+          "weight": 1
         }
       ]
     }

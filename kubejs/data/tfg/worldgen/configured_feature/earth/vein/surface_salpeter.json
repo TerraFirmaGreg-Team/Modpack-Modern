@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_saltpeter_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -35,7 +35,7 @@
         "with": [
           {
             "block": "gtceu:basalt_saltpeter_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -50,7 +50,7 @@
         "with": [
           {
             "block": "gtceu:andesite_saltpeter_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:dacite_saltpeter_ore",
-            "weight": 100
+            "weight": 20
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -82,7 +82,7 @@
       "blocks": [
         {
           "block": "gtceu:saltpeter_indicator",
-          "weight": 100
+          "weight": 20
         }
       ]
     }

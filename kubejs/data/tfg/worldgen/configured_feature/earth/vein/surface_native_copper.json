@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_copper_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "minecraft:raw_copper_block",
@@ -35,7 +35,7 @@
         "with": [
           {
             "block": "gtceu:basalt_copper_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "minecraft:raw_copper_block",
@@ -50,7 +50,7 @@
         "with": [
           {
             "block": "gtceu:andesite_copper_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "minecraft:raw_copper_block",
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:dacite_copper_ore",
-            "weight": 100
+            "weight": 10
           },
           {
             "block": "minecraft:raw_copper_block",
@@ -82,7 +82,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_native_copper",
-          "weight": 100
+          "weight": 10
         }
       ]
     }
