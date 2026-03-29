@@ -190,6 +190,44 @@ function registerTFGFLPlanters(event) {
 		null
 	);
 
+	event.firmalifePlantable(
+		"tfg:fruit_trees/lavacado_sapling",
+		"bonsai",
+		2,
+		null,
+		0.5,
+		"tfg:fruit_trees/lavacado_sapling",
+		"tfg:food/lavacado",
+		null,
+		[
+			"tfg:block/fruit_tree/lavacado_fruiting_leaves",
+			"tfg:block/fruit_tree/lavacado_dry_leaves",
+			"tfg:block/fruit_tree/lavacado_flowering_leaves",
+			"tfg:block/fruit_tree/lavacado_branch",
+			"tfg:block/fruit_tree/lavacado_leaves"
+		],
+		null
+	);
+
+	event.firmalifePlantable(
+		"tfg:fruit_trees/magmango_sapling",
+		"bonsai",
+		2,
+		null,
+		0.5,
+		"tfg:fruit_trees/magmango_sapling",
+		"tfg:food/magmango",
+		null,
+		[
+			"tfg:block/fruit_tree/magmango_fruiting_leaves",
+			"tfg:block/fruit_tree/magmango_dry_leaves",
+			"tfg:block/fruit_tree/magmango_flowering_leaves",
+			"tfg:block/fruit_tree/magmango_branch",
+			"tfg:block/fruit_tree/magmango_leaves"
+		],
+		null
+	);
+
 	//#endregion
 	//#region Mars
 

@@ -17,6 +17,7 @@ const registerCropTooltips = (event) => {
 	const $FLFruitTree = Java.loadClass('com.eerussianguy.firmalife.common.blocks.plant.FLFruitBlocks$Tree');
 	const $FLStationaryBush = Java.loadClass('com.eerussianguy.firmalife.common.blocks.plant.FLFruitBlocks$StationaryBush');
 	const $FLClimateRanges = Java.loadClass('com.eerussianguy.firmalife.common.util.FLClimateRanges');
+	const $TFGFruitTree = Java.loadClass('su.terrafirmagreg.core.common.data.TFGFruitTree$FruitTreeType');
 
 	//#region Helper Functions.
 	// =======================================================================================
@@ -134,12 +135,25 @@ const registerCropTooltips = (event) => {
 
 	global.CROP_CLIMATE_DATA.forEach((crop) => {
 
-		if (crop.genTooltip !== true) return;
+		if (!crop.genTooltip) return;
 
-		const resolvedDimension = dimensionNames[crop.dimension] || crop.dimension || undefined;
-		const resolvedFertilizer = fertilizerNames[crop.fertilizer] || undefined;
+		if (crop.id.includes('fruit_tree')) {
+			let entry = $TFGFruitTree.valueOf(crop.id.split('/').pop().toUpperCase());
+			let name = entry.getSerializedName();
+			let stages = entry.getStages();
+			let dimension = entry.getDimension().toString();
+			let resolvedDimension = dimensionNames[dimension] || dimension;
 
-		plantTooltip(event, crop.seed, crop.minHydration, crop.maxHydration, crop.minTemp, crop.maxTemp, resolvedFertilizer, resolvedDimension, null, crop.moreInfo);
+			plantTooltip(event, `tfg:fruit_trees/${name}_sapling`,
+				crop.minHydration, crop.maxHydration, crop.minTemp, crop.maxTemp,
+				null, resolvedDimension, getFruitingMonths(stages), crop.moreInfo
+			);
+		} else {
+			const resolvedDimension = dimensionNames[crop.dimension] || crop.dimension || undefined;
+			const resolvedFertilizer = fertilizerNames[crop.fertilizer] || undefined;
+
+			plantTooltip(event, crop.seed, crop.minHydration, crop.maxHydration, crop.minTemp, crop.maxTemp, resolvedFertilizer, resolvedDimension, null, crop.moreInfo);
+		}
 
 	});
 

@@ -462,52 +462,19 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 
-	// Drink effects
-	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
 	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
 	event.addAdvanced(['#tfg:silk_harvest_ice'], (item, advanced, text) => {
-		const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
-		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) !== -1);
-		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) !== -1);
+		try {
+			const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
+			let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) !== -1);
+			let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) !== -1);
 
-		if (indexOf !== -1) {
-			text.remove(keyToRemove);
-			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
-		}
+			if (indexOf !== -1) {
+				text.remove(keyToRemove);
+				text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+			}
+		} catch (e) {}
 	})
 }

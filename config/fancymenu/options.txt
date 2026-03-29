@@ -14,7 +14,7 @@ B:advanced_customization_mode = 'false';
 
 ##[loading]
 
-S:preload_resources = '[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
+S:preload_resources = '[slideshow]new_loading_screen%!source_end!%[cubic_panorama]worldgen%!source_end!%[source:local]config/fancymenu/assets/icons/icon/icon.fma%!source_end!%[source:local]config/fancymenu/assets/cursor.png%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 B:game_intro_fade_out = 'true';

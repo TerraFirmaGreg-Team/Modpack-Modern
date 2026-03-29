@@ -30,6 +30,31 @@ const registerTFGBlocks = (event) => {
 		.hasTicker(true)
 		.emitDelay(200);
 
+	event.create('tfg:natural_gas_emitter', 'tfg:particle_emitter_decoration')
+		.soundType('sand')
+		.noDrops()
+		.noItem()
+		.box(0, 0, 0, 16, 1, 16, true)
+		.defaultTranslucent()
+		.particles(p => p
+			.position(0.5, 0.2, 0.5)
+			.velocity(0, 1, 0)
+			.particle('minecraft:dust')
+			.dust(1, 0.95, 1, 1))
+		.emitDelay(10);
+
+	event.create('tfg:natural_gas_bubble_emitter', 'tfg:particle_emitter_decoration')
+		.soundType('sand')
+		.noDrops()
+		.noItem()
+		.box(0, 0, 0, 16, 1, 16, true)
+		.defaultTranslucent()
+		.particles(p => p
+			.position(0.5, 0.2, 0.5)
+			.velocity(0, 1, 0)
+			.particle('minecraft:bubble_column_up'))
+		.emitDelay(5);
+
 	// Temporary, remove in 0.12
 	event.create('gtceu:ostrum_linear_accelerator')
 		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
