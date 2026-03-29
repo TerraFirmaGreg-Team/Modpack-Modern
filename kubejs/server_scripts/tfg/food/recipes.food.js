@@ -145,6 +145,10 @@ function registerTFGFoodRecipes(event) {
 			itemOutputs: [`2x tfc:food/${grain}_flour`],
 			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_flour`).copyOldestFood()
 		})
+    event.recipes.create.milling(
+      `2x tfc:food/${grain}_flour`, 
+      `tfc:food/${grain}_grain`
+    )
 
 		event.recipes.tfc.advanced_shaped_crafting(
 			TFC.isp.of(`tfc:food/${grain}_flour`).copyFood(), [
