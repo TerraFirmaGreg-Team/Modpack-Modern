@@ -5,6 +5,13 @@ function registerTFGOverworldItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/cycad_plant')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:volcanic_ash')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/volcanic_ash')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:oil_slick')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:heavy_oil_slick')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:light_oil_slick')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:raw_oil_slick')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:big_volcano_smoke_emitter')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:natural_gas_emitter')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:natural_gas_bubble_emitter')
 
 	global.NEW_OVERWORLD_PLANTS.forEach(plant => {
 		event.add('tfc:plants', plant);
@@ -499,6 +506,9 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_heavy_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent_ocean");
+
 	// Remove hot springs from old worldgen biomes
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")

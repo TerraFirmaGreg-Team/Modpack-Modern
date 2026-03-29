@@ -17,7 +17,13 @@
 			"predicate": {
 				"type": "minecraft:matching_blocks",
 				"offset": [ 0, -1, 0 ],
-				"blocks": "tfc:fluid/salt_water"
+				"blocks": [
+					"tfc:fluid/salt_water",
+					"tfc:sea_ice",
+					"minecraft:ice",
+					"minecraft:packed_ice",
+					"minecraft:blue_ice"
+				]
 			}
 		},
 		{

@@ -54,6 +54,13 @@
 			x: 0.0d
 			y: 12.5d
 		}
+		{
+			id: "1A97424A38544065"
+			linked_quest: "3D845616A2F7083F"
+			shape: "heart"
+			x: 2.0d
+			y: 7.0d
+		}
 	]
 	quests: [
 		{
@@ -423,6 +430,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.water_jug.desc}"]
 			id: "7D828280098F6BEE"
+			optional: true
 			subtitle: "{quests.stone_age.water_jug.subtitle}"
 			tasks: [{
 				id: "0D682F8BE96153F9"
@@ -502,6 +510,7 @@
 			description: ["{quests.stone_age.leather_flask.desc}"]
 			guide_page: "tfc:field_guide tfc:waterflasks/bladders"
 			id: "62BD1E75FD629161"
+			optional: true
 			subtitle: "{quests.stone_age.leather_flask.subtitle}"
 			tasks: [{
 				id: "19738C50367BC37B"
@@ -520,8 +529,8 @@
 		}
 		{
 			dependencies: [
-				"1562419608EB333D"
 				"174DA15847665CF8"
+				"1D40CAE675C4BB91"
 			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
 			guide_page: "tfc:field_guide tfc:waterflasks/recipes"
@@ -547,8 +556,8 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.iron_flask.title}"
-			x: 2.0d
-			y: 8.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -941,6 +950,7 @@
 			]
 			description: ["{quests.stone_age.make_jug.desc}"]
 			id: "718CDC407CDE32E1"
+			optional: true
 			subtitle: "{quests.stone_age.make_jug.subtitle}"
 			tasks: [{
 				id: "3106F057BE27C2D5"
@@ -1812,6 +1822,7 @@
 			description: ["{quests.stone_age.glass_bottles.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			id: "4F7B5C34B7CD27F2"
+			optional: true
 			subtitle: "{quests.stone_age.glass_bottles.subtitle}"
 			tasks: [{
 				id: "07146369A0BF82E7"
@@ -2187,6 +2198,7 @@
 			description: ["{quests.stone_age.portable_storage.desc}"]
 			icon: "sophisticatedbackpacks:backpack"
 			id: "59B30B2C92285D2D"
+			shape: "circle"
 			subtitle: "{quests.stone_age.portable_storage.subtitle}"
 			tasks: [{
 				id: "77863C6CD510E601"
