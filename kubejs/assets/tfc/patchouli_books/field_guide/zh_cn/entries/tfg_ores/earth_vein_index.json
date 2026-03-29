@@ -3256,7 +3256,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/34 区块$(br)$(thing)密度$(): 84%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -60 — -45$(br)$(thing)尺寸$(): 23$(br)$(thing)高度$(): 5$(br)$(thing)指示器最大深度$(): 5$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Only near Lava",
+      "text": "$(thing)稀有度$(): 1/34 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -60 — -45$(br)$(thing)尺寸$(): 23$(br)$(thing)高度$(): 5$(br)$(thing)指示器最大深度$(): 5$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_sulfur"
@@ -3278,7 +3278,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 100%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "text": "$(thing)百分比$(): 90%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "斑铜矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)熔化$(): 铜$(br)$(thing)化学式$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "辉铜矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 5%$(br)$(thing)来源$(): 铜$(br)$(thing)化学式$(): Cu₂S",
       "type": "patchouli:multiblock"
     },
     {

@@ -3256,7 +3256,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/34 chunks$(br)$(thing)Densidade$(): 84%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -60 — -45$(br)$(thing)Tamanho$(): 23$(br)$(thing)Altura$(): 5$(br)$(thing)Profundidade Máxima do Indicador$(): 5$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Only near Lava",
+      "text": "$(thing)Raridade$(): 1/34 chunks$(br)$(thing)Densidade$(): 40%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -60 — -45$(br)$(thing)Tamanho$(): 23$(br)$(thing)Altura$(): 5$(br)$(thing)Profundidade Máxima do Indicador$(): 5$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_sulfur"
@@ -3278,7 +3278,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "text": "$(thing)Porcentagem$(): 90%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bornita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Calcocita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Cobre$(br)$(thing)Fórmula$(): Cu₂S",
       "type": "patchouli:multiblock"
     },
     {

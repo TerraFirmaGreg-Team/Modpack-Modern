@@ -3256,7 +3256,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/34 чанків$(br)$(thing)Щільність$(): 84%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): -60 — -45$(br)$(thing)Розмір$(): 23$(br)$(thing)Висота$(): 5$(br)$(thing)Індикатор Max Depth$(): 5$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит$(br2)Only near Lava",
+      "text": "$(thing)Рідкість$(): 1/34 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Дискова вена$(br)$(thing)Y$(): -60 — -45$(br)$(thing)Розмір$(): 23$(br)$(thing)Висота$(): 5$(br)$(thing)Індикатор Max Depth$(): 5$(br2)$(thing)Типи каменю$(): Габро, Граніт, Діорит$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_sulfur"
@@ -3278,7 +3278,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "text": "$(thing)Відсоток$(): 90%$(br)$(thing)Джерело$(): Сірки$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Борніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Мідь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Халькоцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Міді$(br)$(thing)Формула$(): Cu₂S",
       "type": "patchouli:multiblock"
     },
     {
