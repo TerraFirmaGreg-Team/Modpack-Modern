@@ -117,6 +117,10 @@
 			{
 				"replace": "tfc:rock/gravel/granite",
 				"with": "gtceu:pink_sand_oilsands_ore"
+			},
+			{
+				"replace": "tfc:mud/silt",
+				"with": "gtceu:brown_sand_oilsands_ore"
 			}
 		]
 	}

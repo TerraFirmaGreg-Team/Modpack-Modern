@@ -13,14 +13,28 @@
 			"fallback": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:oil_heavy"
+					"Name": "minecraft:air"
 				}
 			},
-			"rules": []
+			"rules": [
+				{
+					"if_true": {
+						"type": "minecraft:matching_blocks",
+						"offset": [ 0, -1, 0 ],
+						"blocks": "tfc:fluid/salt_water"
+					},
+					"then": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:heavy_oil_slick"
+						}
+					}
+				}
+			]
 		},
 		"target": {
 			"type": "minecraft:matching_blocks",
-			"blocks": "tfc:fluid/salt_water"
+			"blocks": "minecraft:air"
 		}
 	}
 }

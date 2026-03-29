@@ -1,9 +1,11 @@
 {
-	"type": "minecraft:random_patch",
+	"type": "lithostitched:composite",
 	"config": {
-		"feature": "tfg:earth/fluid_vein/oil_heavy_disk",
-		"tries": 6,
-		"xz_spread": 12,
-		"y_spread": 1
+		"features": [
+			"tfg:earth/fluid_vein/oil_slick_heavy_disks",
+			"tfg:earth/fluid_vein/oil_tar_heavy_disks",
+			"tfg:earth/fluid_vein/oilsands_disks"
+		],
+		"placement_type": "never_cancel"
 	}
 }
