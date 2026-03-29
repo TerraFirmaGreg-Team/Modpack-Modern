@@ -206,7 +206,7 @@ function registerTFGToolMaterialModification(event) {
 
 	const DURABILITY_MULTIPLIER = 5;
 
-	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8 * 6, 1, [
+	GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 48, 1, [
 		GTToolType.AXE,
 		GTToolType.HARD_HAMMER,
 		GTToolType.HOE,
@@ -214,12 +214,11 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.SHOVEL
 	]).build());
 
-	GTMaterials.Flint.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.8, 2, 54 * DURABILITY_MULTIPLIER, 1, [
+	GTMaterials.Flint.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.5, 2, 24 * DURABILITY_MULTIPLIER, 1, [
 		GTToolType.AXE,
 		GTToolType.HOE,
 		GTToolType.KNIFE,
 		GTToolType.SHOVEL,
-		GTToolType.PICKAXE,
 		GTToolType.SWORD
 	]).build());
 
