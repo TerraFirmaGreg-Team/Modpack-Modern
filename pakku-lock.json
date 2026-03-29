@@ -4775,11 +4775,8 @@
             ]
         },
         {
-            "pakku_id": "5SRIkN3py32YXyBG",
+            "pakku_id": "xhj4gdXUt2Zv4KMy",
             "pakku_links": [
-                "x1EwQZ6H2kVKR3U3",
-                "6k7DoFyO7bpHnhyk",
-                "znIzfNElWkwpdz2V",
                 "ihA4iuyUc3fA0D4q"
             ],
             "type": "MOD",
@@ -4796,29 +4793,20 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sandworm_mod-1.1.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
+                    "file_name": "sandworm_mod-1.2.0.jar",
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7833/465/sandworm_mod-1.1.2.jar",
-                    "id": "7833465",
+                    "url": "https://edge.forgecdn.net/files/7840/625/sandworm_mod-1.2.0.jar",
+                    "id": "7840625",
                     "parent_id": "1496185",
                     "hashes": {
-                        "sha1": "ce72a67e2315a2254c920a9e15711331b8a97da6",
-                        "md5": "c0df35485551faa5592230df53cca059"
+                        "sha1": "aead13ba60e0137eabbba8c05c42a50107977be9",
+                        "md5": "0fce7552f4e83132c41dcc4ed253d43a"
                     },
                     "required_dependencies": [
-                        "419699",
-                        "979809",
-                        "616457",
                         "388172"
                     ],
-                    "size": 4528682,
-                    "date_published": "2026-03-29T06:39:59.323Z"
+                    "size": 4528680,
+                    "date_published": "2026-03-29T13:13:39.810Z"
                 }
             ]
         },
