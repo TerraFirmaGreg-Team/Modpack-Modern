@@ -14795,25 +14795,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Unbound-2.0.4.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7071/331/TerraFirmaGreg-Shaders-Unbound-2.0.4.zip",
-                    "id": "7071331",
+                    "url": "https://edge.forgecdn.net/files/7776/669/TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
+                    "id": "7776669",
                     "parent_id": "954161",
                     "hashes": {
-                        "sha1": "ddc9642fef583442c3334823a7b15a613c5926b4",
-                        "md5": "be4f6aa6031677e8bcef10588d9ef0a1"
+                        "sha1": "8eeb7f9c49869b6c3358821605029b606b31dff3",
+                        "md5": "0ca5c41aa3c4c993f73f1dd65c412586"
                     },
                     "required_dependencies": [],
-                    "size": 615212,
-                    "date_published": "2025-10-05T20:06:41.043Z"
+                    "size": 514523,
+                    "date_published": "2026-03-18T16:57:18.650Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Unbound-2.0.4.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -14823,16 +14823,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/kYLLjFRs/TerraFirmaGreg-Shaders-Unbound-2.0.4.zip",
-                    "id": "kYLLjFRs",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/Iee65Dko/TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
+                    "id": "Iee65Dko",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "e26b3a7089fc633e346978b4c63fbd0fea6e05952cadcd58081ce245a96d1e4373e734d5ce1fa2a1df77faf7afcb632007edddcdb74bb36e0db962359cbab0ea",
-                        "sha1": "ddc9642fef583442c3334823a7b15a613c5926b4"
+                        "sha512": "5562c0a963245058457df89a66e86f15db52a32df7dd36121c71b76af11f71c358fe6e097754f9acca22d2fa76e4b13049e520da5299c1c7a1b3fc62bc42ad1e",
+                        "sha1": "8eeb7f9c49869b6c3358821605029b606b31dff3"
                     },
                     "required_dependencies": [],
-                    "size": 615212,
-                    "date_published": "2025-10-05T20:06:42.540324Z"
+                    "size": 514523,
+                    "date_published": "2026-03-18T16:57:20.560997Z"
                 }
             ]
         },
