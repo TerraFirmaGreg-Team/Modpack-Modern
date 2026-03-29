@@ -85,4 +85,13 @@ const registerBeneathRecipes = (event) => {
 	], {
 		A: `beneath:wood/leaves/warped`
 	}).id(`tfg:shaped/beneath/warped_leaves_to_fallen_leaves`);
+
+	event.shaped('beneath:juicer', [
+		'ABA',
+		' C '
+	], {
+		A: 'waterflasks:leather_side',
+		B: '#forge:rods/wooden',
+		C: '#forge:tools/knives'
+	}).id('beneath:crafting/juicer')
 }
