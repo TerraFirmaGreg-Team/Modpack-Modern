@@ -21,8 +21,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  # Sync lang files (with skip-untranslated-strings)
-  sync-lang:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -40,18 +39,10 @@ jobs:
           done
           echo "All source files are valid JSON"
 
-      - name: Restore Cache
-        uses: actions/cache/restore@v5
-        with:
-          path: "kubejs/assets/**/lang/en_us.json"
-          key: crowdin-lang-${{ hashFiles('kubejs/assets/**/lang/en_us.json') }}
-          restore-keys: crowdin-lang-
-
       - name: Сrowdin
         uses: crowdin/github-action@v2
         with:
           upload_sources: true
-          upload_sources_args: '--cache'
           download_translations: true
           skip_untranslated_strings: true
           export_only_approved: true
@@ -63,43 +54,10 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
-      - name: Save Cache
-        uses: actions/cache/save@v5
-        with:
-          path: "kubejs/assets/**/lang/en_us.json"
-          key: crowdin-lang-${{ hashFiles('kubejs/assets/**/lang/en_us.json') }}
-
-  # Sync Patchouli books (without skip-untranslated-strings)
-  sync-patchouli:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        
-      - name: Validate source files
-        run: |
-          echo "Validating source language files..."
-          find kubejs/assets -name "en_us.json" -type f | while read file; do
-            echo " Found source file: $file"
-            if ! jq empty "$file" 2>/dev/null; then
-              echo " Invalid JSON in $file"
-              exit 1
-            fi
-          done
-          echo "All source files are valid JSON"
-
-      - name: Restore Сache
-        uses: actions/cache/restore@v4
-        with:
-          path: 'kubejs/assets/**/patchouli_books/**/en_us/**/*.json'
-          key: crowdin-patchouli-${{ hashFiles('kubejs/assets/**/patchouli_books/**/en_us/**/*.json') }}
-          restore-keys: crowdin-patchouli-
-
       - name: Сrowdin
         uses: crowdin/github-action@v2
         with:
           upload_sources: true
-          upload_sources_args: '--cache'
           download_translations: true
           skip_untranslated_files: true
           export_only_approved: true
@@ -111,16 +69,11 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
-      - name: Save Сache
-        uses: actions/cache/save@v5
-        with:
-          path: 'kubejs/assets/**/patchouli_books/**/en_us/**/*.json'
-          key: crowdin-patchouli-${{ hashFiles('kubejs/assets/**/patchouli_books/**/en_us/**/*.json') }}
 
   # Create Pull Request after all syncs are done
   create-pr:
     runs-on: ubuntu-latest
-    needs: [sync-lang, sync-patchouli]
+    needs: [sync]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -128,7 +81,7 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2
         with:
-          upload_sources: false
+          download_translations: true
           localization_branch_name: 'translations'
           commit_message: "[translation] New translations"
           pull_request_base_branch_name: 'dev'
