@@ -26,7 +26,7 @@
 			id: "0CE64B9914191C56"
 			linked_quest: "6FFD4990FF07078A"
 			shape: "diamond"
-			x: -9.0d
+			x: -8.5d
 			y: 11.5d
 		}
 		{
@@ -49,7 +49,7 @@
 			id: "7C03FE015586C652"
 			linked_quest: "55213ACBF5F5D398"
 			shape: "heart"
-			x: -10.5d
+			x: -11.0d
 			y: 16.0d
 		}
 		{
@@ -63,7 +63,7 @@
 			id: "68F5E521F2DB0A86"
 			linked_quest: "0404FBCC34011053"
 			shape: "heart"
-			x: -11.5d
+			x: -12.0d
 			y: 16.0d
 		}
 		{
@@ -733,8 +733,8 @@
 				}
 			]
 			title: "{quests.steam_age.circuit_boards.title}"
-			x: -9.0d
-			y: 10.0d
+			x: -8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -1650,7 +1650,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.resin_boards.title}"
-			x: -10.5d
+			x: -10.0d
 			y: 11.5d
 		}
 		{
@@ -2035,7 +2035,7 @@
 			]
 			id: "1F7AAF65CC0A4ADF"
 			shape: "heart"
-			size: 1.5d
+			size: 1.25d
 			subtitle: "{quests.steam_age.large_bronze_boiler.subtitle}"
 			tasks: [{
 				id: "6D8BDDF41B0A5384"
@@ -2044,6 +2044,19 @@
 			}]
 			x: -9.0d
 			y: 16.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "66E34DAA25149FC0"
+			shape: "heart"
+			size: 1.25d
+			tasks: [{
+				id: "1AFCDD1CA8362669"
+				item: "tfg:gas_well"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 14.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

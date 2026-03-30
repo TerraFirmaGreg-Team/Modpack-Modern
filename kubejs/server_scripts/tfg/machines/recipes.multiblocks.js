@@ -324,5 +324,18 @@ function registerTFGMultiblockRecipes(event) {
 
 	event.replaceInput({ id: 'gtceu:shaped/casing_steel_turbine_casing'}, 'gtceu:magnalium_plate', 'gtceu:double_magnalium_plate')
 	event.replaceInput({ id: 'gtceu:assembler/casing_steel_turbine'}, 'gtceu:magnalium_plate', 'gtceu:double_magnalium_plate')
+
+	// Gas Well
+
+	event.recipes.gtceu.shaped('tfg:gas_well', [
+		'ABA',
+		'BCB',
+		'DBD'
+	], {
+		A: Item.of('gtceu:small_steel_gear'),
+		B: '#gtceu:circuits/ulv',
+		C: Item.of('gtceu:ulv_machine_hull'),
+		D: Item.of('#forge:normal_pipes/steel')
+	}).addMaterialInfo().id('tfg:shaped/gas_well')
 	
 }
