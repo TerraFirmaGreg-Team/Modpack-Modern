@@ -3,7 +3,7 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 22,
-    "rarity": 340,
+    "rarity": 420,
     "density": 0.24,
     "min_y": -50,
     "max_y": 20,
@@ -28,6 +28,10 @@
           {
             "block": "gtceu:quartzite_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       },
@@ -47,6 +51,10 @@
           {
             "block": "gtceu:slate_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       },
@@ -66,6 +74,10 @@
           {
             "block": "gtceu:phyllite_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       },
@@ -85,6 +97,10 @@
           {
             "block": "gtceu:schist_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       },
@@ -104,6 +120,10 @@
           {
             "block": "gtceu:gneiss_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       },
@@ -123,6 +143,10 @@
           {
             "block": "gtceu:marble_lithium_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:raw_lithium_block",
+            "weight": 1
           }
         ]
       }
