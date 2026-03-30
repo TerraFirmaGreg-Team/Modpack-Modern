@@ -1,0 +1,496 @@
+{
+	"name": "幽冥之地作物",
+	"category": "tfc:beneath",
+	"icon": "tfg:textures/item/cassava_product.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "幽冥之地作物",
+			"text": "$(thing)幽冥之地$()环境或许恶劣，但依然能在那里找到农作物。幽冥之地的作物具有极强的生命力，能在极端高温条件下生长，这使它们在地下和地表生存中发挥重要作用。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "幽冥之地的作物与地表作物的行为方式完全相同，它们同样需要水分、温度和养分。你甚至可以在$(thing)温室$()里种植它们。$(br2)在幽冥之地种植作物时，一个重要的考虑因素是作物需要12级的光照，而幽冥之地的自然光线无法提供这种光照。为了解决这个问题，你可以利用$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)岩浆引水桥$()或其他任何可用的光源。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目录",
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)木薯$()$(li)$(l:tfc:beneath/beneath_crops#peanut)花生$()$(li)$(l:tfc:beneath/beneath_crops#beans)芸豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)鬼椒$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cassava",
+			"title": "木薯",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 70 - 100 %$(br)$(bold)营养物质$(): 氮$(br2)木薯可以作为$(thing)蔬菜$()食用，但食用前最好先$(thing)煮熟$()。$(br)"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生木薯$()生长于【占位符】。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "peanut",
+			"title": "花生",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 钾$(br2)食用花生可以获得$(thing)蔬菜$()和$(thing)蛋白质$()营养"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生花生$()生长于【占位符】。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beans",
+			"title": "芸豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 钾$(br2)食用芸豆可提供$(thing)蔬菜$()和$(thing)蛋白质$()。注意，食用前一定要先煮熟！"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生大豆$()生长于【占位符】。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_pepper",
+			"title": "鬼椒",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 氮$(br2)鬼椒可以作为$(thing)蔬菜$()食用。它们也是地下居民常见的零食。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)野生鬼椒$()生长于【占位符】。",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:cassava_seeds": 4,
+		"tfg:cassava_product": 4,
+		"tfg:peanut_seeds": 6,
+		"tfg:peanut_product": 6,
+		"tfg:beans_seeds": 8,
+		"tfg:beans_product": 8,
+		"tfg:ghost_pepper_seeds": 10,
+		"beneath:ghost_pepper": 10
+	}
+}

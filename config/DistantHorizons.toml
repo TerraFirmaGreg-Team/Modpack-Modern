@@ -807,7 +807,7 @@ _version = 3
 	# Enables adaptive transfer speed based on client performance.
 	# If true, DH will automatically adjust transfer rate to minimize connection lag.
 	# If false, transfer speed will remain fixed.
-	enableAdaptiveTransferSpeed = false
+	enableAdaptiveTransferSpeed = true
 
 	[server.experimental]
 		#

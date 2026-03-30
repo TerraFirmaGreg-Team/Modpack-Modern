@@ -256,9 +256,6 @@
         "colorwheel": {
             "side": "CLIENT"
         },
-        "colorwheel-patcher": {
-            "side": "CLIENT"
-        },
         "autopack-director": {
             "export": false
         },
@@ -303,8 +300,6 @@
         "ftb-xmod-compat": {
             "export": true
         },
-
-
         "probejs": {
             "side": "CLIENT",
             "export": false

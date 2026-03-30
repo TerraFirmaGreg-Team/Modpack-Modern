@@ -177,10 +177,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:molten_vanadium_steel_bucket",
     "gtceu:molten_gallium_arsenide_bucket",
     "gtceu:molten_hsla_steel_bucket",
-    "gtceu:molten_rocket_alloy_t2_bucket",
     "gtceu:molten_desh_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
+    "gtceu:nether_air_bucket",
+    "gtceu:liquid_nether_air_bucket",
+    "gtceu:ender_air_bucket",
+    "gtceu:liquid_ender_air_bucket",
 
     //armor
     "gtceu:bronze_helmet",
@@ -420,6 +423,7 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "deepslate",
     "pyroxenite",
     "dripstone",
+    "tuff",
 
     "moon_stone",
     "moon_deepslate",

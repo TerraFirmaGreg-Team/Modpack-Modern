@@ -3,7 +3,7 @@
 
 const registerExposureRecipes = (event) => {
 
-	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.trait.ISPOutputRecipeLogic")
+	const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.trait.ISPOutputRecipeLogic")
 
 	event.remove({ id: 'exposure:sequenced_color_film_developing' })
 

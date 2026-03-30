@@ -40,8 +40,8 @@ function registerGTCEUItemTags(event) {
     const saws = event.get('forge:tools/saws').getObjectIds().concat(event.get('forge:tools/chainsaws').getObjectIds());
     saws.forEach(sawId =>
     {
-        const id = sawId.getNamespace() + ":" + sawId.getPath();
-        if(global.ICE_SAW_BLACKLIST.includes(id) || Item.of(sawId).hasTag('forge:tools/buzzsaws'))
+        const id = `${sawId.getNamespace()}:${sawId.getPath()}`;
+        if (global.ICE_SAW_BLACKLIST.includes(id) || Item.of(sawId).hasTag('forge:tools/buzzsaws'))
         {
             return;
         }
@@ -160,7 +160,6 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_vanadium_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_gallium_arsenide");
     event.add("c:hidden_from_recipe_viewers", "gtceu:molten_hsla_steel");
-    event.add("c:hidden_from_recipe_viewers", "gtceu:molten_rocket_alloy_t2");
     event.add("c:hidden_from_recipe_viewers", "gtceu:damascus_steel");
     event.add("c:hidden_from_recipe_viewers", "gtceu:blaze");
     event.add("c:hidden_from_recipe_viewers", "gtceu:thorium");
@@ -171,4 +170,9 @@ function registerGTCEUFluidTags(event) {
     event.add("c:hidden_from_recipe_viewers", "gtceu:ruby_slurry");
     event.add("c:hidden_from_recipe_viewers", "gtceu:green_sapphire_slurry");
     event.add("c:hidden_from_recipe_viewers", "gtceu:sapphire_slurry");
+
+    event.add("c:hidden_from_recipe_viewers", "gtceu:nether_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:liquid_nether_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:ender_air");
+    event.add("c:hidden_from_recipe_viewers", "gtceu:liquid_ender_air");
 }

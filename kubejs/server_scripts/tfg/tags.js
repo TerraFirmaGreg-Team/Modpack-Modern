@@ -12,6 +12,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGRailgunItemTags(event)
 	registerTFGRocketItemTags(event)
 	registerTFGGeneralWorldgenItemTags(event);
+	registerTFGOverworldItemTags(event);
 	registerTFGBeneathItemTags(event)
 	registerTFGMoonItemTags(event)
 	registerTFGMarsItemTags(event)
@@ -35,6 +36,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_drum', 'gtceu:bronze_drum')
 	event.add('tfg:any_bronze_drum', 'gtceu:black_bronze_drum')
 	event.add('tfg:any_bronze_drum', 'gtceu:bismuth_bronze_drum')
+
+	//Explosive Tag for the Gas Well
+	event.add('tfg:explosives', 'gtceu:powderbarrel', 'minecraft:tnt', 'gtceu:industrial_tnt', 'gtceu:dynamite')
 
 	// Tools
 	event.add('tfg:empty_dna_syringes', 'tfg:empty_dna_syringe')
@@ -60,7 +64,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:any_bronze_frame', '#forge:frames/bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/bismuth_bronze')
 	event.add('tfg:any_bronze_frame', '#forge:frames/black_bronze')
-	
+
 	event.add('forge:rods/any_bronze', '#forge:rods/bronze')
 	event.add('forge:rods/any_bronze', '#forge:rods/bismuth_bronze')
 	event.add('forge:rods/any_bronze', '#forge:rods/black_bronze')
@@ -68,7 +72,7 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/bismuth_bronze')
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
-	
+
 	// Steam Bloomery
     event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
     event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
@@ -79,15 +83,15 @@ const registerTFGItemTags = (event) => {
 	// Holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
 	event.remove('forge:dusts/nitrocellulose', 'tfg:nitrocellulose')
-	
+
 	event.remove('forge:dusts', 'tfg:cellulose_matrix')
 	event.remove('forge:dusts/cellulose_matrix', 'tfg:cellulose_matrix')
-	
+
 	event.remove('tfc:pileable_ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots', 'tfg:polycaprolactam_fabric')
 	event.remove('forge:ingots/tfg_polycaprolactam', 'tfg:polycaprolactam_fabric')
-	
-	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')	
+
+	event.remove('forge:nuggets', 'tfg:polycaprolactam_string')
 	event.remove('forge:nuggets/tfg_polycaprolactam', 'tfg:polycaprolactam_string')
 	
 	// Tags for the precision fabricator renderer
@@ -152,6 +156,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGFoodBlockTags(event)
 	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
+	registerTFGOverworldBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)
 	registerTFGMarsBlockTags(event)
@@ -190,7 +195,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
-	
+
 	event.add('tfc:any_water', 'tfg:semiheavy_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_water')
 	event.add('tfc:drinkables', 'tfg:semiheavy_water')
@@ -207,7 +212,7 @@ const registerTFGFluidTags = (event) => {
 	event.add('minecraft:water', 'tfg:rich_stock')
 	event.add('tfc:drinkables', 'tfg:rich_stock')
 	event.add('tfc:any_drinkables', 'tfg:rich_stock')
-	
+
 	event.add('minecraft:water', 'tfg:light_stock')
 	event.add('tfc:drinkables', 'tfg:light_stock')
 	event.add('tfc:any_drinkables', 'tfg:light_stock')
@@ -221,14 +226,23 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
+	event.add('tfc:drinkables', 'tfg:vintage_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_beer')
 	event.add('tfg:alcohols', 'tfg:vintage_beer')
+	event.add('tfc:drinkables', 'tfg:vintage_cider')
 	event.add('tfg:alcohols', 'tfg:vintage_cider')
+	event.add('tfc:drinkables', 'tfg:vintage_rum')
 	event.add('tfg:alcohols', 'tfg:vintage_rum')
+	event.add('tfc:drinkables', 'tfg:vintage_sake')
 	event.add('tfg:alcohols', 'tfg:vintage_sake')
+	event.add('tfc:drinkables', 'tfg:vintage_corn_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_rye_whiskey')
 	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
+	event.add('tfc:drinkables', 'tfg:vintage_mead')
 	event.add('tfg:alcohols', 'tfg:vintage_mead')
+	event.add('tfc:drinkables', 'tfg:vintage_vodka')
 	event.add('tfg:alcohols', 'tfg:vintage_vodka')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
@@ -239,10 +253,23 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfg:oils', 'gtceu:oil_medium')
 	event.add('tfg:oils', 'gtceu:oil_heavy')
 
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:kvass')
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:lemonade')
+	event.add('tfg:cooling_drinks', 'tfc_gourmet:nalivka')
+	event.add('tfg:cooling_drinks', 'gtceu:ice')
+
+	event.add('tfg:warming_drinks', 'tfc_gourmet:coffee')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:cocoa')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_mint')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_chamomile')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_nettle')
+	event.add('tfg:warming_drinks', 'tfc_gourmet:tea_rosehip')
+	event.add('tfg:warming_drinks', 'tfc:spring_water')
+
 	global.BREATHABLE_COMPRESSED_AIRS.forEach(x => {
 		event.add('tfg:breathable_compressed_air', x)
 	})
-	
+
 	// Platline tags
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_copper_solution')
 	event.add('tfg:sulfuric_metal_solution', 'gtceu:sulfuric_nickel_solution')
@@ -294,8 +321,26 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
 
+	// Tag used by TFC to control monsters spawning on the surface
+	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:husk')
+	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
+	event.add('tfc:vanilla_monsters', 'minecraft:slime')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
+	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
+	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
+	
+	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
+	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
+	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
+	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
+	event.add('tfc:hunted_by_cats', 'tfg:lemming')
+	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
 }

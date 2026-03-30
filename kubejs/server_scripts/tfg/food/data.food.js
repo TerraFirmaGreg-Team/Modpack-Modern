@@ -529,6 +529,90 @@ function registerTFGFoodData(event) {
 		food.saturation(1.8);
 	});
 
+	// Lentil
+	event.foodItem('tfg:lentil_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1);
+		food.vegetables(1);
+		food.saturation(1.5);
+	});
+	event.foodItem('tfg:food/cooked_lentil', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+		food.vegetables(2);
+		food.saturation(1.5);
+	});
+
+	// Beans
+	event.foodItem('tfg:beans_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+	});
+	event.foodItem('tfg:food/cooked_beans', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+		food.protein(1);
+		food.vegetables(0.5);
+		food.saturation(1);
+	});
+
+	// Radish
+	event.foodItem('tfg:radish_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+		food.vegetables(2);
+		food.saturation(2);
+	});
+
+	// Peanut
+	event.foodItem('tfg:peanut_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1);
+		food.protein(0.5);
+		food.vegetables(1);
+		food.saturation(1);
+	});
+
+	// Cassava
+	event.foodItem('tfg:cassava_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+		food.vegetables(0.5);
+		food.saturation(1);
+	});
+	event.foodItem('tfg:food/cooked_cassava', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1);
+		food.vegetables(2);
+		food.saturation(2);
+	});
+
+	// Cucumber
+	event.foodItem('tfg:cucumber_product', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(1);
+		food.water(10);
+		food.vegetables(2);
+		food.saturation(1);
+	});
+
+	// Lavacado
+	event.foodItem('tfg:food/lavacado', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(2);
+		food.vegetables(1.5);
+		food.saturation(1);
+	});
+
+	// Magmango
+	event.foodItem('tfg:food/magmango', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(2.25);
+		food.water(15);
+		food.fruit(1.5);
+		food.saturation(1);
+	});
+
 	//#region Drinkables
 	// Proto Growth Medium
 	event.drinkable("tfg:proto_growth_medium", (data) => {

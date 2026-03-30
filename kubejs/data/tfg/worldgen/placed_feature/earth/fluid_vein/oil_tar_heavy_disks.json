@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:earth/fluid_vein/oil_tar_heavy_disk",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -4,
+					"max_inclusive": 4
+				}
+			},
+			"y_spread": 0
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "OCEAN_FLOOR"
+		}
+	]
+}

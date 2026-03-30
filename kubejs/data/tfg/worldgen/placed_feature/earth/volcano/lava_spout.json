@@ -1,0 +1,25 @@
+{
+	"feature": "tfg:earth/volcano/lava_spout",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "tfg:cinder_cone",
+			"center": true
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": -40
+				},
+				"min_inclusive": {
+					"absolute": -50
+				}
+			}
+		}
+	]
+}

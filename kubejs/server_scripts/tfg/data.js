@@ -56,6 +56,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_lamp_mold', 1.0, null, null);
 
 	event.itemHeat('betterend:charnia_orange', 0.25, null, null)
 	event.itemHeat('betterend:charnia_cyan', 0.25, null, null)
@@ -63,6 +64,13 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
+	
+	event.itemHeat("tfg:lentil_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_lentil", 1, null, null);
+	event.itemHeat("tfg:cassava_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_cassava", 1, null, null);
+	event.itemHeat("tfg:beans_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_beans", 1, null, null);
 }
 
 //#endregion
@@ -333,10 +341,12 @@ function registerTFGItemSize(event) {
 			"tfg:unfired_spindle_head_mold",
 			"tfg:unfired_small_gear_mold",
 			"tfg:unfired_nugget_mold",
+			"tfg:unfired_lamp_mold",
 			"tfg:rod_mold",
 			"tfg:spindle_head_mold",
 			"tfg:small_gear_mold",
-			"tfg:nugget_mold"
+			"tfg:nugget_mold",
+			"tfg:lamp_mold"
 		]),
 		"normal",
 		"medium",
@@ -361,7 +371,7 @@ function registerTFGSupportData(event) {
 	event.support("tfg:rebar_support_horizontal", 4, 4, 8, "rebar_support");
 	event.support("tfg:steel_support_horizontal", 6, 6, 16, "steel_support");
 
-	const other_stone = ["pyroxenite", "migmatite", "travertine"];
+	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone'];
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone);
 
 	stone_types.forEach((stone) => {

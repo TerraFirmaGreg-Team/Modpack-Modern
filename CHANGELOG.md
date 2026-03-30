@@ -1,19 +1,89 @@
 # Changelog
 
 ## Unreleased
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### New Overworld World Generation
+TFC's 1.21 world generation has been backported to TFG! Please read the above upgrade guide for information on what will happen to your existing world. This was a huge team effort so a big thank you to everyone who contributed, and of course to @Therighthon for his work on the new worldgen in TFC (and for the help debugging!).
+
+Remember that the new world generation is AN ALPHA and please report any problems you have with it, including any generation that looks strange. TFC isn't finished with its world generation changes either, so if you decide to play on the new world generation, there will be changes in the future that could cause ugly chunk borders.
+
+- Backported the new world generation, including 80 new biomes @Pyritie @Mqrius
+- Backported five new animals (leopard seal, bison, mongoose, lemming, jerboa) @Ujhik
+- Backported three new crops (radish, lentil, cucumber) with some more to come to the Beneath soon @Redeix
+- Backported four new dirts, but no, we didn't backport the rest of TFC 1.21's crop system. All dirts have the same behaviour as the existing ones @Pyritie @SakuraKitsurugi
+- Backported a whole load of new decorative plants @Pyritie
+- Tuff is now obtainable in the overworld! Find it near volcanoes. @Pyritie
+- Added a system to detect, keep, and change which version of world generation to use @Mqrius
+- Added a system on world creation to let you select which climate you'd like to spawn in @BlueBoat29
+- Herbs now spawn in the wild like other crops. You can grow more at home inside a firmalife or electric greenhouse. Seed Balls now grow normal grass instead @Pyritie
+- Enhanced the bedrock fluid vein system with climate and biome conditions and restrictions, for more variation and to encourage trains @BlueBoat29 @TomPlop
+- Added features on the surface to indicate if you're in an area with particularly good bedrock fluid veins. Spring water now only generates on the surface if that chunk contains a spring water bedrock fluid. Oil spouts now only generate on land and match whatever oil is in that chunk. Natural Gas and ocean Oil now has a new feature. A steam-age bedrock fluid drill will be coming soon. @TomPlop @Pyritie @BlueBoat29
+- Overhauled overworld ore generation. Some ores are now restricted or more common to different climates and biomes. "Early game" ores now generate pretty commonly in small veins just below the surface, so you don't have to dig down 80 blocks with stone tools. Bigger veins with a wider variety of ores are now exclusively deeper underground without any indicators on the surface (only in caves) so you'll have to go caving if you want to find them. Remember we have much stronger prospector picks! @TomPlop @Pyritie
+- Massively buffed river deposits for panning and sluicing - the deposits are more common and they give a lot more resources than before. Useful if you're trying to find copper, tin, silver, or gold @Pyritie
+- There's a new layer of Hornfels rock just above bedrock. To get past it (to the Beneath) you'll either have to use explosives, break it with a steel tool or higher, or actually go caving to find a (common) cave that goes through it. Please let us know if this system is fun or not! We're trying to find reasons to actually use the overworld caves instead of just digging straight down. If we end up keeping this system, we'll add more decoration to caves to make them more interesting too. @Redeix @DrEthan77 @Pyritie
+- Added Husks, Drowned, and Slimes as normal cave mobs, for a little extra variety @Pyritie
+- Moved Rose Quartz to now only spawn in Ice Sheet and Glacited biomes (new worldgen only) @Pyritie
+- Redid our logo (again) and added a new main menu panorama @Redeix
+- Currently the world preview screen (usually accessible via K) does not work with the new worldgen after you've created a new world. We're working on it!
+### New Shaders
+Our shaders have been basically totally rewritten to be up to date with new versions of complementary and support Colorwheel (less lag from create). They are still a work in progress, so please send us any feedback or issues you have with them! @woopSmile @Zaraney
+### Other Changes
+- Added repair recipes for every other piece of equipment and armor @Thomasx0 @SakuraKitsurugi 
+- Drinkable fluids with effects should now also display their effect when inside a container (like a flask) @SakuraKitsurugi
+- Rovers are no longer safe from the sandworm @jmecn
+- Tool crafting can now use any rod instead of just wood @Pyritie
+- Different kinds of glass now have different resistance to different bullets, instead of every kind of bullet piercing every glass (#3573) @SakuraKitsurugi
+- Cobalt brass dust can now also be mixed from aluminium silicate dust (#3533) @applenper
+- Create's Girders are now cheaper to craft (#3549) @SakuraKitsurugi
+- Added a clay mold for lamps! Now you have no excuse to keep using torches until LV. (#3547) @SakuraKitsurugi
+- Added food processor recipes for TFC Gourmet's pizzas, and added back a crafting table recipe for Firmalife's pizza (#3539) @Nixieeunrare
+- Crafting more rose quartz now requires you to have one in the first place, so you can't skip the arctic trip if you want create's logistics @Pyritie
+- Added a mech press recipe for turning sticks into stick bundles @Pyritie
+- Added recipes to craft Wan's Ancient Beasts' smithing and banner templates (#3519) @SakuraKitsurugi
+- Removed the remaining nether air and ender air recipes. @Pyritie
+### Bug fixes
+- Fixed an issue where wearing clothes would overwrite any temperature immunity your main equipment would provide (#3449) @Mqrius
+- Fixed the dugout canoe looking very strange on servers if you tried to make one longer than 3 blocks @Mqrius
+- Fixed holding superglue in your offhand while using a scythe to harvest crops would duplicate the seeds (#3534) @Ujhik
+- Fixed the vacuumizer deleting outputs if it was set on the wrong mode @Mqrius
+- Fixed Dry Ice not dropping when broken @Nixieeunrare
+- Fixed the sandworm crashing servers when attacked (#2156) @jmecn
+- Fixed some cases where the sandworm would just rumble endlessly and not appear @jmecn
+- Fixed ore block textures to have more variety @Pyritie
+- Fixed food processor recipe conflicts for Cocoa and Coffee (#3559, #3570) @tresher2
+- Fixed the molten t2 rocket alloy fluid not being visible in EMI @Pyritie
+### Translation updates
+- Ukranian: @MetEnBouldry, @furrydenis, s5edranner
+- Chinese (simplified): @jmecn
+- Russian: @Nixieeunrare, Regrifone, Arka, iDzmitry, Neon430, MichalichMIC, ehnis
+- Spanish: infernaleiko
+- Korean: @AirRice Firo_SF
+- Polish: SzymonA
+- French: tylrs
+- Japanese: @sakura-gondra
+
+## [0.11.28] - 22-03-2026
+No, this isn't the worldgen update. That's version 0.12.
 ### Breaking changes
 - Circuit change for Tier 1 Rocket Fin / ASM Alloy Mixer / Rocket Fin Tier 2 / Rocket Cone Tier 2 to avoid recipe conflicts @TomPlop
 - Chorus-Infused Ceramic Insulation now requires a fluix crystal instead of dust, to avoid a recipe conflict (#3411) @Pyritie
 - All other laser engraver lens recipes now require gem lenses instead of glass ones (#3460) @TomPlop
+- The Heat Exchanger needs to be broken and recrafted because of a namespace change @TomPlop
+- Fixed dust consistency for Redstone Etching Fluid but now it needs a lot more redstone to craft (#3486) @SpicyNoodle5
 ### Changes
 - Cleaned up some of the stonecutter recipes so there should be fewer duplicates @Pyritie @SpicyNoodle5
 - Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
 - Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
 - Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
-- The highest tier airplanes now actually require stainless steel as their quest says @Pyritie
-- Added more gem slurries for ore processing and lens crafting (#3460) @TomPlop
+- The highest tier airplanes now actually require stainless steel as their quest says, and tweaked some of the other aircraft recipes @Pyritie
+- Added more gem slurries for ore processing and lens crafting, although the Clean slurries won't be craftable until Venus (#3460) @TomPlop @SakuraKitsurugi
 - Sped up the crafting times of basalt fiber insulation and silicon carbide (#3460) @TomPlop
 - More balance changes to the new large boilers, and added EMI tabs for the information (#3460) @TomPlop
+- Added fuels for trains! Like with solid fuel, liquid fuels make your train go faster, except fluids have to be in a separate Fuel Tank. Most combustible liquid fuels work. (#3273) @SakuraKitsurugi
+- Increased the speed and acceleration of fuelled trains to double their unfuelled stats @Pyritie
+- Added recycling recipes for Input/Output Hatches/Buses (#3470) @Nixieeunrare
+- Added recipes to craft more locometal items before LV machines, and improved locometal crafting in general (#3462, #3484) @SakuraKitsurugi
+- Added crafting for copycat pressure plates and recycling for most copycat blocks (#3463) @SakuraKitsurugi
 ### Bug fixes
 - Fixed the field guide not working @Mqrius
 - Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77
@@ -23,7 +93,11 @@
 - Fixed being able to dupe chorus fruit by repeatedly breaking and placing a chorus flower (#3433) @Pyritie
 - Fixed Keratophyre missing a texture when knapping (#3418) @Pyritie
 - Fixed High Voltage Coils only requiring 1 black steel fine wire instead of 16 like the others @Pyritie
+- Fixed not being able to use vintage alcohols for general alcohol crafts (#3464) @lysteryale
 ### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis, s5edranner
+- Russian @Nixieeunrare, Polimerka, mihikav, Regrifone, Arka
 
 ## [0.11.27] - 13-03-2026
 ### Changes

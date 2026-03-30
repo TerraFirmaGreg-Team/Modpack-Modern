@@ -510,12 +510,12 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'AAA'
 	], {
-		A: '#forge:plates/cast_iron',
+		A: '#forge:plates/iron',
 		B: '#tfc:hammers'
 	}).id('gtceu:shaped/cauldron')
 
 	event.recipes.gtceu.assembler('cauldron')
-		.itemInputs('7x #forge:plates/cast_iron')
+		.itemInputs('7x #forge:plates/iron')
 		.circuit(10)
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)
@@ -945,13 +945,6 @@ const registerMinecraftRecipes = (event) => {
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
-
-	//#region Slime
-	event.smelting('tfc:glue', 'minecraft:slime_ball')
-		.id('tfg:smelting/slime_to_glue')
-	event.smelting('tfc:glue', 'minecraft:magma_cream')
-		.id('tfg:smelting/magma_cream_to_glue')
-
 
 	//#region Mushrooms
 

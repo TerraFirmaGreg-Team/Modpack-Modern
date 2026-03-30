@@ -1,0 +1,50 @@
+{
+	"type": "lithostitched:select",
+	"config": {
+		"features": [
+			{
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "tfg:big_volcano_smoke_emitter"
+								}
+							}
+						}
+					},
+					"placement": []
+				},
+				"predicate": {
+					"type": "minecraft:matching_blocks",
+					"blocks": "minecraft:air"
+				}
+			},
+			{
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "tfg:big_volcano_smoke_emitter",
+									"Properties": {
+										"fluid": "lava"
+									}
+								}
+							}
+						}
+					},
+					"placement": []
+				},
+				"predicate": {
+					"type": "minecraft:matching_blocks",
+					"blocks": "minecraft:lava"
+				}
+			}
+		]
+	}
+}

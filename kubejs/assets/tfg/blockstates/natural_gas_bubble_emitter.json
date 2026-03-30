@@ -1,0 +1,18 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "tfg:block/natural_gas_emitter"
+			},
+			{
+				"model": "tfg:block/natural_gas_emitter", "y":  90
+			},
+			{
+				"model": "tfg:block/natural_gas_emitter", "y": 180
+			},
+			{
+				"model": "tfg:block/natural_gas_emitter", "y": 270
+			}
+		]
+	}
+}

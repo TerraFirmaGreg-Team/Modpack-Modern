@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 蓝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)硫, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)磁铁矿, 钒$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)紫水晶, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)褐铁矿$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝石, 蓝石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfur)硫, 黄铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sheldonite)硫铂矿, 斑铜矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_magnetite)磁铁矿, 钒$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_apatite)磷灰石, 烧绿石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_redstone)红石, 朱砂, 红宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_amethyst)紫水晶, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_beryllium)绿宝石, 铍矿$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_olivine)膨润土, 橄榄石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)蓝宝石, 铁铝榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)蓝晶石, 云母, 铝土矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_garnet_opal)蛋白石, 石榴石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_limonite)褐铁矿$()$()",
       "type": "patchouli:text"
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/140 区块$(br)$(thing)密度$(): 35%$(br)$(thing)类型$(): 管状矿脉$(br)$(thing)Y 坐标$(): 20 — 120$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩$(br2)仅出现在$(thing)西南$()的沙漠中，最低温度7°C，最大降雨量100毫米。",
       "title": "塔基安矿, 油砂",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
@@ -265,7 +265,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/150 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 30 — 70$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩",
+      "text": "$(thing)稀有度$(): 1/150 区块$(br)$(thing)密度$(): 20%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): 30 — 70$(br)$(thing)尺寸$(): 60$(br)$(thing)指示器最大深度$(): 50$(br2)$(thing)岩石类型$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 粘土岩, 页岩$(br2)仅出现在$(thing)西部$()的沙漠中，最大降雨量120毫米。",
       "title": "油砂",
       "type": "patchouli:text",
       "anchor": "desert_oilsands"
@@ -1514,6 +1514,73 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/160 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -32 — 100$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 花岗岩$(br2)找不到吗？花岗岩总是生成在$(thing)流纹岩$()的下方，而且在海洋中寻找也可能有用！",
+      "title": "红石, 朱砂, 红宝石",
+      "type": "patchouli:text",
+      "anchor": "normal_redstone"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "红石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/redstone"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 45%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "红宝石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruby"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铬, 铝$(br)$(thing)化学式$(): CrAl₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "朱砂",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cinnabar"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 水银$(br)$(thing)化学式$(): HgS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 1/230 区块$(br)$(thing)密度$(): 25%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -64 — 26$(br)$(thing)尺寸$(): 40$(br)$(thing)高度$(): 8$(br)$(thing)指示器最大深度$(): 20$(br2)$(thing)岩石类型$(): 千枚岩, 大理岩, 板岩, 燧石, 片岩, 片麻岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 页岩",
       "title": "紫水晶, 石榴石",
       "type": "patchouli:text",
@@ -1603,73 +1670,6 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/160 区块$(br)$(thing)密度$(): 40%$(br)$(thing)类型$(): 团簇状矿脉$(br)$(thing)Y 坐标$(): -32 — 100$(br)$(thing)尺寸$(): 40$(br)$(thing)指示器最大深度$(): 60$(br2)$(thing)岩石类型$(): 花岗岩$(br2)找不到吗？花岗岩总是生成在$(thing)流纹岩$()的下方，而且在海洋中寻找也可能有用！",
-      "title": "红石, 朱砂, 红宝石",
-      "type": "patchouli:text",
-      "anchor": "normal_redstone"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "红石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/redstone"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 45%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "红宝石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ruby"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 35%$(br)$(thing)来源$(): 铬, 铝$(br)$(thing)化学式$(): CrAl₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "朱砂",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cinnabar"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 20%$(br)$(thing)来源$(): 水银$(br)$(thing)化学式$(): HgS",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

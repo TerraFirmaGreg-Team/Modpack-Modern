@@ -261,13 +261,51 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Always test the integration of your changes with the main project.
   - Before sending a Pull Request, it is important to ensure that your changes do not disrupt the modpack's operation and comply with [internal code of conduct](CODE_OF_CONDUCT.md).
 
-- #### Localization: 
-  - If you're looking for Localizing the modpack to a Language, please feel free to head to the [Tools-Modern]
+- #### Localization:
+  - If you're looking for Localizing the modpack to a Language, please feel free to head to the [Crowdin]
+
 - #### Linting & Typescript support
-  - Install NodeJS and use an editor with Typescript and ESLint support (e.g. Visual Studio Code).
-  - Run `npm init`, and create a project with default options. (required for language support to work properly)
-  - Run `npm install --save-dev eslint@latest @eslint/js@latest @stylistic/eslint-plugin`
-  - To enable type annotations & diagnostics, run [ProbeJS] and set `noCheck: false` in tsconfig.json.
+
+  All development tools configuration is located in the `kubejs/` folder.
+
+  **Installation:**
+
+  ```bash
+  # From the modpack root
+  npm install --prefix kubejs
+
+  # Or from the kubejs folder
+  npm install
+  ```
+
+  **Running the linter:**
+
+  ```bash
+  # From the modpack root
+  npm run lint --prefix kubejs
+  npm run lint:fix --prefix kubejs
+
+  # Or from the kubejs folder
+  cd kubejs
+  npm run lint
+  npm run lint:fix
+  ```
+
+  **Code formatting (Prettier):**
+
+  ```bash
+  # Format all files
+  npm run format --prefix kubejs
+
+  # Check formatting without changes
+  npm run format:check --prefix kubejs
+  ```
+
+  **TypeScript checking:**
+
+  1. Install dependencies (see above)
+  2. Run ProbeJS to generate types
+  3. Set `"noCheck": false` in `kubejs/tsconfig.json`
 
 ---
 
@@ -487,9 +525,9 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
     - Регулярно синхронизируйте свой форк с оригинальным репозиторием для избежания конфликтов. 
     - Используйте понятные сообщения коммитов для лучшего понимания изменений.
 
-- #### Отладка и тестирование: 
-  - Перед внесением ваших изменений убедитесь, что проект запускается без ошибок. 
-  - Проверяйте логи PrismLauncher для выявления возможных проблем. 
+- #### Отладка и тестирование:
+  - Перед внесением ваших изменений убедитесь, что проект запускается без ошибок.
+  - Проверяйте логи PrismLauncher для выявления возможных проблем.
   - Использование Visual Studio Code с расширением [ProbeJs] поможет быстрее обнаруживать и устранять ошибки.
 
 - #### Документация и обсуждение: 
@@ -497,11 +535,53 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Коллективное обсуждение часто приводит к нахождению оптимальных решений и улучшению проекта в целом.
 
 - #### Совместная разработка: 
-  - Всегда тестируйте интеграцию ваших изменений с основным проектом. 
+  - Всегда тестируйте интеграцию ваших изменений с основным проектом.
   - Перед отправкой Pull Request важно убедиться, что ваши изменения не нарушают работу модпака и соответствуют [внутренним соглашениям по коду](CODE_OF_CONDUCT.md).
 
-- #### Локализация: 
-  - Если вы ищете локализацию Modpack на языке, пожалуйста, не стесняйтесь перейти к [Tools-Modern]
+- #### Локализация:
+  - Если вы ищете локализацию Modpack на языке, пожалуйста, не стесняйтесь перейти к [Crowdin]
+
+- #### Линтинг и поддержка TypeScript:
+
+  Вся конфигурация инструментов разработки находится в папке `kubejs/`.
+
+  **Установка:**
+
+  ```bash
+  # Из корня модпака
+  npm install --prefix kubejs
+
+  # Или из папки kubejs
+  npm install
+  ```
+
+  **Запуск линтера:**
+
+  ```bash
+  # Из корня модпака
+  npm run lint --prefix kubejs
+  npm run lint:fix --prefix kubejs
+
+  # Или из папки kubejs
+  npm run lint
+  npm run lint:fix
+  ```
+
+  **Форматирование кода (Prettier):**
+
+  ```bash
+  # Форматировать все файлы
+  npm run format --prefix kubejs
+
+  # Проверка форматирования без изменений
+  npm run format:check --prefix kubejs
+  ```
+
+  **Проверка типов TypeScript:**
+
+  1. Установите зависимости (см. выше)
+  2. Запустите ProbeJS для генерации типов
+  3. Установите `"noCheck": false` в `kubejs/tsconfig.json`
 
 ---
 
@@ -509,7 +589,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 [TerraFirmaGreg-Modern]: https://github.com/TerraFirmaGreg-Team/Modpack-Modern
 [Dev-Modern]: https://github.com/orgs/TerraFirmaGreg-Team/teams/dev-modern
 [Contributor-Modern]: https://github.com/orgs/TerraFirmaGreg-Team/teams/contributor-modern
-[Tools-Modern]: https://github.com/TerraFirmaGreg-Team/Tools-Modern
+[Crowdin]: https://crowdin.com/project/terrafirmagreg-modern
 [PrismLauncher]: https://prismlauncher.org
 [Visual Studio Code]: https://code.visualstudio.com
 [Git]: https://git-scm.com

@@ -4,7 +4,7 @@
 	"additionalplacements.stairs.connections_type.no_vertical_connections": "Вертикальні з’єднання не дозволені",
 	"commands.ap_stairs_state_debug.wrong_block": "%s не є допустимим блоком, повинен бути блоком сходів з додатковими станами.",
 	"key.additionalplacements.placement_toggle": "Змінити логіку розміщення",
-	"key.categories.additionalplacements": "Додаткові місця",
+	"key.categories.additionalplacements": "Additional Placements",
 	"msg.additionalplacements.disconnected": "Конфлікт конфігурації Additional Placements",
 	"msg.additionalplacements.errors.client": "Відхилено на стороні клієнта:",
 	"msg.additionalplacements.errors.server": "Відхилено на стороні сервера:",

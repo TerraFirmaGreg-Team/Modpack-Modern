@@ -364,7 +364,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.overworld_graphite.title}"
-			x: 11.0d
+			x: 12.0d
 			y: -30.5d
 		}
 		{
@@ -503,7 +503,7 @@
 				}
 			]
 			title: "{quests.metal_age.beneath_kaolin.title}"
-			x: 12.0d
+			x: 11.0d
 			y: -33.5d
 		}
 		{
@@ -795,7 +795,7 @@
 			]
 			title: "{quests.metal_age.beneath_graphite.title}"
 			x: 12.0d
-			y: -30.5d
+			y: -33.5d
 		}
 		{
 			dependencies: ["5A936E9BCF30AA3D"]
@@ -812,7 +812,7 @@
 			}]
 			title: "{quests.metal_age.overworld_kaolin.title}"
 			x: 11.0d
-			y: -33.5d
+			y: -30.5d
 		}
 		{
 			description: ["{quests.metal_age.blast_furance_fuel.desc}"]
