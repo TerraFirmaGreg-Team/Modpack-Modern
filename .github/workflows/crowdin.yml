@@ -55,6 +55,7 @@ jobs:
           download_translations: true
           skip_untranslated_strings: true
           export_only_approved: true
+          create_pull_request: false
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -101,6 +102,7 @@ jobs:
           download_translations: true
           skip_untranslated_files: true
           export_only_approved: true
+          create_pull_request: false
           config: .github/config/crowdin_patchouli.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
