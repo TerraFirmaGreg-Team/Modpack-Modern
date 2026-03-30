@@ -112,7 +112,7 @@ jobs:
           upload_sources: ${{ github.event.inputs.operation == 'upload' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' || github.event_name == 'push' }}
           upload_translations: false
           import_eq_suggestions: true
-          skip_untranslated_files: true
+          # skip_untranslated_files: true
           download_translations: ${{ github.event.inputs.operation == 'download' || github.event.inputs.operation == 'both' || github.event_name == 'schedule' }}
           download_language: ${{ github.event.inputs.download_language }}
           config: crowdin.yml
