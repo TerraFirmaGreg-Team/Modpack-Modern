@@ -1,13 +1,130 @@
 // priority: 0
 "use strict";
 
+const MINECRAFT_COPPER_RECIPE_COMPONENT_FIELDS = [
+	['block', 'block'],
+	['cutted', 'cutted'],
+	['stairs', 'stairs'],
+	['slabs', 'slabs'],
+	['shingles', 'shingles'],
+	['shingleStairs', 'shingle_stairs'],
+	['shingleSlabs', 'shingle_slabs'],
+	['tiles', 'tiles'],
+	['tileStairs', 'tile_stairs'],
+	['tileSlabs', 'tile_slabs']
+]
+
+const MINECRAFT_COPPER_BLOCK_STONECUTTING_FIELDS = [
+	['cutted', 'cutted'],
+	['shingles', 'shingles'],
+	['tiles', 'tiles']
+]
+
+const MINECRAFT_COPPER_VARIANT_STONECUTTING_FIELDS = [
+	['shingles', 'shingleStairs', 1, 'shingle_stairs', 'shingles'],
+	['shingles', 'shingleSlabs', 2, 'shingle_slabs', 'shingles'],
+	['tiles', 'tileStairs', 1, 'tile_stairs', 'tiles'],
+	['tiles', 'tileSlabs', 2, 'tile_slabs', 'tiles']
+]
+
+const MINECRAFT_COPPER_VARIANT_ASSEMBLER_FIELDS = [
+	['shingles', 'shingleStairs', 'shingle_stairs'],
+	['tiles', 'tileStairs', 'tile_stairs']
+]
+
 /**
- * 
- * @param {Internal.RecipesEventJS} event 
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {Object} source
+ * @param {Object} target
+ */
+const addCopperOxidizingRecipes = (event, source, target) => {
+	for (const [componentName, recipeSuffix] of MINECRAFT_COPPER_RECIPE_COMPONENT_FIELDS) {
+		if (!source[componentName] || !target[componentName]) continue
+
+		event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_${recipeSuffix}_${source.name}`)
+			.itemInputs(source[componentName])
+			.inputFluids("#tfc:any_water 150")
+			.circuit(1)
+			.itemOutputs(target[componentName])
+			.duration(1000)
+			.EUt(4)
+	}
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {Object} source
+ * @param {Object} target
+ */
+const addCopperWaxingRecipes = (event, source, target) => {
+	for (const [componentName, recipeSuffix] of MINECRAFT_COPPER_RECIPE_COMPONENT_FIELDS) {
+		if (!source[componentName] || !target[componentName]) continue
+
+		event.recipes.gtceu.assembler(`tfg:minecraft/waxing_${recipeSuffix}_${target.name}`)
+			.itemInputs(source[componentName], '#forge:wax')
+			.circuit(1)
+			.itemOutputs(target[componentName])
+			.duration(50)
+			.EUt(4)
+	}
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {Object} element
+ */
+const addCopperStonecuttingRecipes = (event, element) => {
+	for (const [componentName, recipeSuffix] of MINECRAFT_COPPER_BLOCK_STONECUTTING_FIELDS) {
+		if (!element[componentName]) continue
+
+		event.stonecutting(`4x ${element[componentName]}`, element.block)
+			.id(`tfg:stonecutting/${recipeSuffix}_${element.name}`)
+	}
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {Object} element
+ */
+const addCopperVariantStonecuttingRecipes = (event, element) => {
+	for (const [sourceName, targetName, outputCount, recipeSuffix, sourceSuffix] of MINECRAFT_COPPER_VARIANT_STONECUTTING_FIELDS) {
+		if (!element[sourceName] || !element[targetName]) continue
+
+		event.stonecutting(`${outputCount}x ${element[targetName]}`, element[sourceName])
+			.id(`tfg:stonecutting/${recipeSuffix}_from_${sourceSuffix}_${element.name}`)
+	}
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS} event
+ * @param {Object} element
+ */
+const addCopperVariantAssemblerRecipes = (event, element) => {
+	for (const [sourceName, targetName, recipeSuffix] of MINECRAFT_COPPER_VARIANT_ASSEMBLER_FIELDS) {
+		if (!element[sourceName] || !element[targetName]) continue
+
+		event.recipes.gtceu.assembler(`tfg:minecraft/assembler/${recipeSuffix}_${element.name}`)
+			.itemInputs(`4x ${element[sourceName]}`)
+			.circuit(7)
+			.itemOutputs(`3x ${element[targetName]}`)
+			.duration(80)
+			.EUt(7.5)
+	}
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS} event
  */
 const registerMinecraftRecipes = (event) => {
 
 	removeMinecraftRecipes(event)
+	const copperRecipeComponentsWaxedOffset = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2
 
 	//#region Добавление, copper
 
@@ -15,77 +132,16 @@ const registerMinecraftRecipes = (event) => {
 		let element = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i];
 
 		// Создание ржавчины, oxidation
-		if (i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2 - 1) {
-
-			let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i + 1]
-
-			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_block_${element.name}`)
-				.itemInputs(element.block)
-				.inputFluids("#tfc:any_water 150")
-				.circuit(1)
-				.itemOutputs(element2.block)
-				.duration(1000)
-				.EUt(4)
-
-			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_cutted_${element.name}`)
-				.itemInputs(element.cutted)
-				.inputFluids("#tfc:any_water 150")
-				.circuit(1)
-				.itemOutputs(element2.cutted)
-				.duration(1000)
-				.EUt(4)
-
-			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_stairs_${element.name}`)
-				.itemInputs(element.stairs)
-				.inputFluids("#tfc:any_water 150")
-				.circuit(1)
-				.itemOutputs(element2.stairs)
-				.duration(1000)
-				.EUt(4)
-
-			event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_slabs_${element.name}`)
-				.itemInputs(element.slabs)
-				.inputFluids("#tfc:any_water 150")
-				.circuit(1)
-				.itemOutputs(element2.slabs)
-				.duration(1000)
-				.EUt(4)
-		} else if (i > global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2 - 1) {
-			let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i - global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2]
-
-			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_block_${element.name}`)
-				.itemInputs(element2.block, '#forge:wax')
-				.circuit(1)
-				.itemOutputs(element.block)
-				.duration(50)
-				.EUt(4)
-
-			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_cutted_${element.name}`)
-				.itemInputs(element2.cutted, '#forge:wax')
-				.circuit(1)
-				.itemOutputs(element.cutted)
-				.duration(50)
-				.EUt(4)
-
-			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_stairs_${element.name}`)
-				.itemInputs(element2.stairs, '#forge:wax')
-				.circuit(1)
-				.itemOutputs(element.stairs)
-				.duration(50)
-				.EUt(4)
-
-			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_slabs_${element.name}`)
-				.itemInputs(element2.slabs, '#forge:wax')
-				.circuit(1)
-				.itemOutputs(element.slabs)
-				.duration(50)
-				.EUt(4)
+		if (i < copperRecipeComponentsWaxedOffset - 1) {
+			addCopperOxidizingRecipes(event, element, global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i + 1])
+		} else if (i > copperRecipeComponentsWaxedOffset - 1) {
+			addCopperWaxingRecipes(event, global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i - copperRecipeComponentsWaxedOffset], element)
 		}
 
-		// Обрезанный блок
-		event.recipes.tfc.damage_inputs_shapeless_crafting(
-			event.shapeless(`4x ${  element.cutted}`, [element.block, '#tfc:chisels'])
-		).id(`tfg:shapeless/cutted_${element.name}`)
+		// Блочные варианты из stonecutter
+		addCopperStonecuttingRecipes(event, element)
+		addCopperVariantStonecuttingRecipes(event, element)
+		addCopperVariantAssemblerRecipes(event, element)
 	}
 
 	//#endregion
@@ -1000,7 +1056,7 @@ const registerMinecraftRecipes = (event) => {
       "minecraft:glowstone_dust",
       "#forge:dyes"])
     .id("tfg:shapeless/glow_ink_sac");
-		
+
 	//#endregion
 
 	//#region Gunpowder
@@ -1058,7 +1114,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('3x minecraft:polished_blackstone_button', ['minecraft:polished_blackstone_pressure_plate', '#forge:tools/saws'])
 		.id(`tfg:shapeless/saw_blackstone_pressure_plate_to_button`)
-			
+
 	// #endregion
 
 	// Minecart w/ Furnace
