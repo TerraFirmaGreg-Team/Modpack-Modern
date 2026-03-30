@@ -1,0 +1,17 @@
+{
+  "fluid.tfc_gourmet.cocoa": "カカオ",
+  "fluid_type.tfc_gourmet.cocoa": "カカオ",
+  "block.tfc_gourmet.fluid.cocoa": "カカオ",
+  "tfc_gourmet.jade.aging": "現在熟成中",
+  "tfc_gourmet.jade.not_aging": "熟成できない",
+  "tfc_gourmet.jade.slices": "スライス：%s",
+  "tfc_gourmet.jade.food_age": "熟成度：%s",
+  "tfc_gourmet.jade.food_age.fresh": "新鮮",
+  "tfc_gourmet.jade.food_age.aged": "少し熟成",
+  "tfc_gourmet.jade.food_age.vintage": "完全な熟成",
+  "tfc_gourmet.jade.has_firepit": "焚き火が設置されています",
+  "tfc_gourmet.jade.no_firepit": "焚き火が設置されていません",
+  "tfc_gourmet.jade.time_left": "残り時間: %s",
+  "tfc_gourmet.tooltip.food_trait.smoked": "燻製",
+  "config.jade.plugin_tfc_gourmet.brinza_wheel": "チーズ"
+}
