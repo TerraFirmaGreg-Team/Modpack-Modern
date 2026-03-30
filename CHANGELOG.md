@@ -43,6 +43,7 @@ Our shaders have been basically totally rewritten to be up to date with new vers
 - Added recipes to craft Wan's Ancient Beasts' smithing and banner templates (#3519) @SakuraKitsurugi
 - Lapis, lazurite, and sodalite can now be melted into aluminium silicate @Pyritie
 - Removed the remaining nether air and ender air recipes @Pyritie
+- Removed flint pickaxes and lowered the durability of flint tools, but now loose flint appears all over the ground in areas with gravel. @Pyritie
 ### Bug fixes
 - Fixed an issue where wearing clothes would overwrite any temperature immunity your main equipment would provide (#3449) @Mqrius
 - Fixed the dugout canoe looking very strange on servers if you tried to make one longer than 3 blocks @Mqrius
