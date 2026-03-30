@@ -400,7 +400,7 @@
     },
     {
       "type": "patchouli:empty",
-      "draw_filler": false
+      "draw_filler": ""
     },
     {
       "type": "tfc:glassworking_recipe",
@@ -429,6 +429,6 @@
   "read_by_default": true,
   "extra_recipe_mappings": {
     "tag:tfc:glass_batches": 1,
-    "tag:forge:glass": 2
+    "tag:forge:glass": ""
   }
 }

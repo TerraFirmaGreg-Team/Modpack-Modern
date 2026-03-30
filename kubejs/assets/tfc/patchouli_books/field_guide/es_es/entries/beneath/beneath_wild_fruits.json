@@ -1,0 +1,307 @@
+{
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "mapping": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "L": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "mapping": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "L": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Mayo"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [
+        {
+          "text": "",
+          "color": ""
+        },
+        {
+          "text": "",
+          "color": ""
+        },
+        {
+          "text": "",
+          "color": ""
+        },
+        {
+          "text": "",
+          "color": ""
+        }
+      ],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    }
+  ],
+  "read_by_default": "",
+  "sortnum": "",
+  "extra_recipe_mappings": {
+    "tfg:food/lavacado": "",
+    "tfg:fruit_trees/lavacado_sapling": "",
+    "tfg:food/magmango": "",
+    "tfg:fruit_trees/magmango_sapling": ""
+  }
+}

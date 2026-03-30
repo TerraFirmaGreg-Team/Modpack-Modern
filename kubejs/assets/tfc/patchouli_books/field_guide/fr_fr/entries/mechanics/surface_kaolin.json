@@ -1,0 +1,93 @@
+{
+    "name": "Kaolin Clay",
+    "icon": "",
+    "category": "",
+    "read_by_default": "",
+    "pages": [
+		{
+			"type": "",
+			"anchor": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+					[
+					""
+					],
+					[
+					""
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					""
+					],
+					[
+					""
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					""
+					],
+					[
+					""
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					""
+					],
+					[
+					""
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				}
+			]
+		},
+		{
+			"type": "",
+			"item": "",
+			"anchor": "",
+			"text": ""
+		}
+    ]
+}

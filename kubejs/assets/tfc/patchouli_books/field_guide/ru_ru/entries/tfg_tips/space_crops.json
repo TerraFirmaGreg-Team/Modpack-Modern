@@ -58,7 +58,7 @@
 				}
 			},
 			"text": "$(thing)Хорусовые цветки$() также можно выращивать вручную, сажая их на любой гравие или песке.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "patchouli:text",
@@ -139,7 +139,7 @@
 				}
 			],
 			"text": "$(thing)Дикие Янтарные ростки$() растут в любом климате на янтарном, рустиксовом, или cангнумовом мицелии.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "patchouli:text",
@@ -574,17 +574,17 @@
 	"extra_recipe_mappings": {
 		"tfg:lunar_chorus_flower": 4,
 		"minecraft:chorus_fruit": 4,
-		"betterend:amber_root_seeds": 6,
-		"betterend:amber_root_product": 6,
-		"betterend:blossom_berry_seeds": 8,
-		"betterend:blossom_berry_product": 8,
+		"betterend:amber_root_seeds": "",
+		"betterend:amber_root_product": "",
+		"betterend:blossom_berry_seeds": "",
+		"betterend:blossom_berry_product": "",
 		"betterend:bolux_mushroom_seeds": 10,
 		"betterend:bolux_mushroom_product": 10,
-		"betterend:cave_pumpkin_plant_seeds": 12,
-		"betterend:cave_pumpkin": 12,
-		"betterend:chorus_mushroom_seeds": 14,
-		"betterend:chorus_mushroom_product": 14,
-		"betterend:shadow_berry_seeds": 16,
-		"betterend:shadow_berry_product": 16
+		"betterend:cave_pumpkin_plant_seeds": "",
+		"betterend:cave_pumpkin": "",
+		"betterend:chorus_mushroom_seeds": "",
+		"betterend:chorus_mushroom_product": "",
+		"betterend:shadow_berry_seeds": "",
+		"betterend:shadow_berry_product": ""
 	}
 }

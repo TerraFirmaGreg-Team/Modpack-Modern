@@ -1,80 +1,80 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
+	"__comment__": "",
 	"name": "Горн",
-	"category": "tfc:mechanics",
-	"icon": "tfc:bloomery",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "$(thing)Горн$() — це пристрій, який використовується для виплавки $(thing)залізної руди$() у $(thing)залізну крицю$(), яку можна обробити в $(thing)коване залізо$(). Залізні руди — це $(l:the_world/ores_and_minerals#hematite)гематит$(), $(l:the_world/ores_and_minerals#limonite)лімоніт$() та $(l:the_world/ores_and_minerals#magnetite)магнетит$(). Ці руди плавляться в $(thing)литий чавун$(), а не в $(thing)коване залізо$(). Усі предмети, що містять залізо, плавляться в литий чавун. Щоб перетворити їх на придатне до використання залізо, потрібен горн. У горні можна переплавляти будь-які залізні предмети, включно із залізними інструментами та злитками литого чавуну!"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/bloomery",
+			"type": "",
+			"recipe": "",
 			"text": "Горн виготовляється з 8 $(thing)подвійних бронзових пластин$()."
 		},
 		{
-			"type": "patchouli:multiblock",
-			"multiblock_id": "tfc:bloomery",
+			"type": "",
+			"multiblock_id": "",
 			"name": "Горн",
 			"text": "Мінімальний розмір горна. Блок горна відкривається та закривається за допомогою $(item)$(k:key.use)$().",
-			"enable_visualize": true
+			"enable_visualize": ""
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Горн може вміщувати максимум 48 $(thing)вхідних предметів$(), по 16 предметів на шар димаря. Щоб додати шари до димаря, складіть ще два шари кам’яних блоків.$(br2)Щоб додати предмети до горна, підніміться нагору та киньте їх всередину. Має утворитися башта з сірої руди.$(br2)Ви можете використовувати як $(item)деревне вугілля$(), так і $(item)вугілля$() як паливо для вашого горна."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
+				""
 			],
 			"text": "Горн споживає $(thing)1 предмет палива$() та $(thing)144 мВ литого чавуну$(), щоб створити один $(thing)криця$().",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Якщо не хочете рахувати, ми рекомендуємо $(item)25 пилів металевої руди$() та $(item)22 предмети палива$().$(br2)Після заповнення горна комбінацією $(thing)палива$() та $(thing)руди$(), підпаліть дверцята горна й зачекайте 15 годин, поки він переплавиться. Коли горн згасне, він залишить $(thing)крицю$() у вигляді блока. Усередині цього блока містяться $(thing)сирі залізні криці$(), які можна отримати, багаторазово добуваючи $(thing)крицю$() кайлом."
 		},
 		{
-			"type": "patchouli:multiblock",
+			"type": "",
 			"multiblock": {
 				"pattern": [
 					[
-						"X"
+						""
 					],
 					[
-						"0"
+						""
 					]
 				],
 				"mapping": {
-					"X": "tfc:bloom[layers=8]"
+					"X": ""
 				}
 			},
 			"name": "Блок Криці",
 			"text": "Велика $(thing)криця$().",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:anvil_recipe",
-			"recipe": "tfc:anvil/refined_iron_bloom",
+			"type": "",
+			"recipe": "",
 			"text": "$(thing)Сиру залізну крицю$() потрібно обробити на $(l:mechanics/anvils)ковадлі$(), щоб отримати $(thing)очищену залізну крицю$()."
 		},
 		{
-			"type": "tfc:anvil_recipe",
-			"recipe": "tfc:anvil/wrought_iron_from_bloom",
+			"type": "",
+			"recipe": "",
 			"text": "$(thing)Очищену залізну крицю$() потрібно обробити на $(l:mechanics/anvils)ковадлі$(), щоб отримати $(thing)Злитки кованого заліза$()."
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "$(li)Якщо горн містить більше предметів, ніж може вмістити відповідно до висоти свого димаря, він спробує викинути їх спереду.$() \n$(li)Щоб забрати предмети з горна, який не запалений, не ламайте вежу з розплавлених блоків. Зламайте блок горна.$() \n$(li)Криці плавляться лише в литий чавун, а не в коване залізо. Їх потрібно обробляти!$()",
 			"title": "Нотатки коваля"
 		}
 	],
-	"read_by_default": true,
+	"read_by_default": "",
 	"extra_recipe_mappings": {
-		"tfc:bloom": 6,
-		"tfc:raw_iron_bloom": 7,
-		"tfc:refined_iron_bloom": 8
+		"tfc:bloom": "",
+		"tfc:raw_iron_bloom": "",
+		"tfc:refined_iron_bloom": ""
 	}
 }

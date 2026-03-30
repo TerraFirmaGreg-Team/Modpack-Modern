@@ -1,0 +1,237 @@
+{
+  "__comment__": "",
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        ""
+    ],
+    [
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        ""
+      ]
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        },
+        {
+    "pattern": [
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "",
+        ""
+    ]
+    ],
+    "mapping": {
+    "0": "",
+    "R": ""
+    }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": "",
+  "sortnum": "",
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": "",
+    "tfc:rock/anvil/diorite": "",
+    "tfc:rock/anvil/gabbro": "",
+    "tfc:rock/anvil/rhyolite": "",
+    "tfc:rock/anvil/basalt": "",
+    "tfc:rock/anvil/andesite": "",
+    "tfc:rock/anvil/dacite": ""
+  }
+}

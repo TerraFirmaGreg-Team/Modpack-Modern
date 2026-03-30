@@ -2,7 +2,7 @@
 	"__comment__": "This file was automatically created by mcresources",
 	"name": "Травы и специи",
 	"category": "tfc:firmalife",
-	"icon": "firmalife:spice/basil_leaves",
+	"icon": "",
 	"pages": [
 		{
 			"type": "patchouli:text",
@@ -40,7 +40,7 @@
 			],
 			"name": "Базилик",
 			"text": "$(thing)Дикий базилик$() растёт при температуре от 12 до 25 °C и осадках 300–500 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -74,7 +74,7 @@
 			],
 			"name": "Лавр",
 			"text": "$(thing)Дикий лавровый лист$() растёт при температуре от 8 до 14 °C и осадках 25–225 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -108,7 +108,7 @@
 			],
 			"name": "Кардамон",
 			"text": "$(thing)Дикий кардамон$() растёт при температуре от 18 до 30 °C и осадках 350–500 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -142,7 +142,7 @@
 			],
 			"name": "Кинза",
 			"text": "$(thing)Дикий кориандр$() растёт при температуре от 5 до 15 °C и осадках 0–150 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -176,7 +176,7 @@
 			],
 			"name": "Тмин",
 			"text": "$(thing)Дикий тмин$() растёт при температуре от 6 до 20 °C и осадках 50–250 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -210,7 +210,7 @@
 			],
 			"name": "Орегано",
 			"text": "$(thing)Дикий орегано$() растёт при температуре от 5 до 13 °C и осадках 50–150 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -244,7 +244,7 @@
 			],
 			"name": "Пимента",
 			"text": "$(thing)Дикий душистый перец$() растёт при температуре от 15 до 30 °C и осадках 200–450 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -278,7 +278,7 @@
 			],
 			"name": "Ванильная",
 			"text": "$(thing)Дикая ваниль$() растёт при температуре от 18 до 30 °C и осадках 200–500 мм.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "patchouli:crafting",
@@ -302,7 +302,7 @@
 			},
 			"name": "",
 			"text": "Бабочковая трава.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "patchouli:text",
@@ -313,13 +313,13 @@
 	"sortnum": 19,
 	"extra_recipe_mappings": {
 		"firmalife:plant/basil": 1,
-		"firmalife:plant/bay_laurel": 2,
-		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/bay_laurel": "",
+		"firmalife:plant/cardamom": "",
 		"firmalife:plant/cilantro": 4,
 		"firmalife:plant/cumin": 5,
-		"firmalife:plant/oregano": 6,
-		"firmalife:plant/pimento": 7,
-		"firmalife:plant/vanilla": 8,
-		"firmalife:seed_ball": 9
+		"firmalife:plant/oregano": "",
+		"firmalife:plant/pimento": "",
+		"firmalife:plant/vanilla": "",
+		"firmalife:seed_ball": ""
 	}
 }

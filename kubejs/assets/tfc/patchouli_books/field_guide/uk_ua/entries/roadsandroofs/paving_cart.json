@@ -1,58 +1,58 @@
 {
   "name": "Асфальтувальний візок",
-  "category": "tfc:roadsandroofs",
-  "icon": "tfg:rnr_plow",
+  "category": "",
+  "icon": "",
   "pages": [
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(thing)Асфальтувальний візок$() — це спеціалізований візок, який використовується для швидкого та ефективного укладання дорожнього покриття. Його можна заповнити дорожніми матеріалами та $(thing)подрібненою основою$() для створення доріг. Візок також може заповнювати вже наявні блоки основи"
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "title": "Асфальтувальний візок",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+      ""
       ],
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "title": "Повзунок регулювання ширини",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+      ""
       ],
-      "border": true,
+      "border": "",
       "text": "Візок дозволяє регулювати ширину шляху через GUI"
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "title": "Шлях змінної ширини",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+      ""
       ],
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "title": "Кнопка випадкового вибору",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+      ""
       ],
-      "border": true,
+      "border": "",
       "text": "Візок має режим, у якому матеріали укладаються у випадковий візерунок."
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "title": "Шлях із випадкових матеріалів",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+      ""
       ],
-      "border": true
+      "border": ""
     }
   ],
-  "read_by_default": true,
+  "read_by_default": "",
   "extra_recipe_mappings": {
-    "tfg:rnr_plow": 0
+    "tfg:rnr_plow": ""
   },
-  "sortnum": 20
+  "sortnum": ""
 }

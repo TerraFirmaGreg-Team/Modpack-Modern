@@ -1,0 +1,80 @@
+{
+	"__comment__": "",
+	"name": "Bloomery",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock_id": "",
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"images": [
+				""
+			],
+			"text": "",
+			"border": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						""
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"X": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": "",
+			"title": ""
+		}
+	],
+	"read_by_default": "",
+	"extra_recipe_mappings": {
+		"tfc:bloom": "",
+		"tfc:raw_iron_bloom": "",
+		"tfc:refined_iron_bloom": ""
+	}
+}
