@@ -17,7 +17,8 @@ Remember that the new world generation is AN ALPHA and please report any problem
 - Added a system on world creation to let you select which climate you'd like to spawn in @BlueBoat29
 - Herbs now spawn in the wild like other crops. You can grow more at home inside a firmalife or electric greenhouse. Seed Balls now grow normal grass instead @Pyritie
 - Enhanced the bedrock fluid vein system with climate and biome conditions and restrictions, for more variation and to encourage trains @BlueBoat29 @TomPlop
-- Added features on the surface to indicate if you're in an area with particularly good bedrock fluid veins. Spring water now only generates on the surface if that chunk contains a spring water bedrock fluid. Oil spouts now only generate on land and match whatever oil is in that chunk. Natural Gas and ocean Oil now has a new feature. A steam-age bedrock fluid drill will be coming soon. @TomPlop @Pyritie @BlueBoat29
+- Added features on the surface to indicate if you're in an area with particularly good bedrock fluid veins. Spring water now only generates on the surface if that chunk contains a spring water bedrock fluid. Oil spouts now only generate on land and match whatever oil is in that chunk. Natural Gas and ocean Oil now has a new feature. @TomPlop @Pyritie @BlueBoat29
+- Added a steam age bedrock fluid drill, that takes steam and explosives as input @TomPlop
 - Overhauled overworld ore generation. Some ores are now restricted or more common to different climates and biomes. "Early game" ores now generate pretty commonly in small veins just below the surface, so you don't have to dig down 80 blocks with stone tools. Bigger veins with a wider variety of ores are now exclusively deeper underground without any indicators on the surface (only in caves) so you'll have to go caving if you want to find them. Remember we have much stronger prospector picks! @TomPlop @Pyritie
 - Massively buffed river deposits for panning and sluicing - the deposits are more common and they give a lot more resources than before. Useful if you're trying to find copper, tin, silver, or gold @Pyritie
 - There's a new layer of Hornfels rock just above bedrock. To get past it (to the Beneath) you'll either have to use explosives, break it with a steel tool or higher, or actually go caving to find a (common) cave that goes through it. Please let us know if this system is fun or not! We're trying to find reasons to actually use the overworld caves instead of just digging straight down. If we end up keeping this system, we'll add more decoration to caves to make them more interesting too. @Redeix @DrEthan77 @Pyritie
@@ -40,7 +41,9 @@ Our shaders have been basically totally rewritten to be up to date with new vers
 - Crafting more rose quartz now requires you to have one in the first place, so you can't skip the arctic trip if you want create's logistics @Pyritie
 - Added a mech press recipe for turning sticks into stick bundles @Pyritie
 - Added recipes to craft Wan's Ancient Beasts' smithing and banner templates (#3519) @SakuraKitsurugi
-- Removed the remaining nether air and ender air recipes. @Pyritie
+- Lapis, lazurite, and sodalite can now be melted into aluminium silicate @Pyritie
+- Removed the remaining nether air and ender air recipes @Pyritie
+- Removed flint pickaxes and lowered the durability of flint tools, but now loose flint appears all over the ground in areas with gravel. @Pyritie
 ### Bug fixes
 - Fixed an issue where wearing clothes would overwrite any temperature immunity your main equipment would provide (#3449) @Mqrius
 - Fixed the dugout canoe looking very strange on servers if you tried to make one longer than 3 blocks @Mqrius

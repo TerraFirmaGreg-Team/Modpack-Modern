@@ -14714,53 +14714,49 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.30.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7791/918/TerraFirmaGreg-Core-Modern-0.8.30.jar",
-                    "id": "7791918",
+                    "url": "https://edge.forgecdn.net/files/7843/460/TerraFirmaGreg-Core-Modern-0.9.0.jar",
+                    "id": "7843460",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "7c016f977434140cbb6cd9b738c4a20a33dd06de",
-                        "md5": "a21e3b0a83c8b122c5c705e8bcbfd93b"
+                        "sha1": "c1aef6c39bfc1a89d2b9e5686e9b710bb7576e14",
+                        "md5": "786a4f146fe13079b3ff278090fe9197"
                     },
                     "required_dependencies": [
-                        "890405",
                         "302973"
                     ],
-                    "size": 10194877,
-                    "date_published": "2026-03-21T22:39:16.453Z"
+                    "size": 11766969,
+                    "date_published": "2026-03-29T23:26:22.097Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.8.30.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/V6SPXlVC/TerraFirmaGreg-Core-Modern-0.8.30.jar",
-                    "id": "V6SPXlVC",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/P9HumfUD/TerraFirmaGreg-Core-Modern-0.9.0.jar",
+                    "id": "P9HumfUD",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "783e341292d3778edae3c87134f9265aa5631b37a2f18e3b29f51b6d141d18fc84051aa76238a4376f29d6296ae1832531f8efd1b809c2b40cf23694e2fe157e",
-                        "sha1": "7c016f977434140cbb6cd9b738c4a20a33dd06de"
+                        "sha512": "03eb9c31c80b3f3f4cf652e5f1bee5a91884b9561b79bdb3a3ef4c74c1ea41dc34f95fc0cc4b35aaa778e920e1f5805c97ed09535a8ed1239e424348175d3a77",
+                        "sha1": "c1aef6c39bfc1a89d2b9e5686e9b710bb7576e14"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "JaCEZUhg"
+                        "1o7aFiY6"
                     ],
-                    "size": 10194877,
-                    "date_published": "2026-03-21T22:39:19.319061Z"
+                    "size": 11766969,
+                    "date_published": "2026-03-29T23:26:25.098610Z"
                 }
             ]
         },
@@ -14783,25 +14779,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7776/669/TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
-                    "id": "7776669",
+                    "url": "https://edge.forgecdn.net/files/7843/588/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "id": "7843588",
                     "parent_id": "954161",
                     "hashes": {
-                        "sha1": "8eeb7f9c49869b6c3358821605029b606b31dff3",
-                        "md5": "0ca5c41aa3c4c993f73f1dd65c412586"
+                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329",
+                        "md5": "a50a19911603d13b1b34c40c001009e1"
                     },
                     "required_dependencies": [],
-                    "size": 514523,
-                    "date_published": "2026-03-18T16:57:18.650Z"
+                    "size": 2252352,
+                    "date_published": "2026-03-30T00:07:45.630Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -14811,16 +14807,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/Iee65Dko/TerraFirmaGreg-Shaders-Unbound-3.0.2.zip",
-                    "id": "Iee65Dko",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/cgsXvszz/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "id": "cgsXvszz",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "5562c0a963245058457df89a66e86f15db52a32df7dd36121c71b76af11f71c358fe6e097754f9acca22d2fa76e4b13049e520da5299c1c7a1b3fc62bc42ad1e",
-                        "sha1": "8eeb7f9c49869b6c3358821605029b606b31dff3"
+                        "sha512": "7f5eb25efae9a7ccb1e8511ce460a5e51009e76e951385d0a04e13f86725718f591ddfa15f9325b639e0a5778da3ce1ee6602a22e5025b060bb180541de284a5",
+                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329"
                     },
                     "required_dependencies": [],
-                    "size": 514523,
-                    "date_published": "2026-03-18T16:57:20.560997Z"
+                    "size": 2252352,
+                    "date_published": "2026-03-30T00:07:47.295651Z"
                 }
             ]
         },
