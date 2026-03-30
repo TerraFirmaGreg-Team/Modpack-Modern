@@ -27,6 +27,7 @@ files:
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
     update_option: "update_as_unapproved"
     type: "json"
+    skip_untranslated_strings: true
     #dest: "/messages.%file_extension%"
 
     languages_mapping:
