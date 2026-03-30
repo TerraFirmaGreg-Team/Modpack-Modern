@@ -7,7 +7,7 @@ api_token_env: "CROWDIN_TOKEN"
 preserve_hierarchy: true
 
 files:
-  - source: "/kubejs/assets/*/lang/en_us.json"
+  - source: "/*/lang/en_us.json"
     translation: "/%original_path%/%locale_with_underscore%.%file_extension%"
     update_option: "update_as_unapproved"
 
