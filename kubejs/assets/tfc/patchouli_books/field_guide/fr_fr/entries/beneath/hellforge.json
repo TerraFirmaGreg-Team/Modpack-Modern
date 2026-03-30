@@ -1,0 +1,50 @@
+{
+	"name": "The Hellforge",
+	"category": "tfc:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It is constructed from Hellbricks, $(l:beneath/ores_and_minerals#cursecoal)Anthracite$(), and Pyroxenite Aqueducts."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Hellforge",
+			"text": "",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:beneath/ores_and_minerals#cursecoal)Anthracite$() piles, which then may be lit to start the forge."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The item slots of the Hellforge may contain fuel, or things to be smelted; there is no distinction. Be careful what you put in! There are also slots for melting things, as with the charcoal forge. The lava meter on the screen indicates temperature (as well as the visual movement of its items in world)."
+		}
+	],
+	"read_by_default": true
+}

@@ -5,38 +5,48 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "O $(thing)Carrinho Pavimentador$() é um carrinho especializado usado para aplicar superfícies de estrada de forma rápida e eficiente. Ele pode ser carregado com materiais para estradas e $(thing)Base Britada$() para criar estradas. O carrinho também pode preencher quaisquer blocos de base já existentes."
+      "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with road materials and $(thing)Crushed Base Course$() to create roads. The cart can also fill in any existing base course blocks"
     },
     {
       "type": "patchouli:image",
       "title": "Carrinho Pavimentador",
-      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png" ],
+      "images": [
+      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+      ],
       "border": true
-        },
-        {
+    },
+    {
       "type": "patchouli:image",
-      "title": "Controle de Largura",
-      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png" ],
+      "title": "Width Adjustment Slider",
+      "images": [
+      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+      ],
       "border": true,
-      "text": "O carrinho permite ajustar a largura do caminho na interface."
-        },
-        {
+      "text": "The cart allows you to adjust the width of the path in the GUI"
+    },
+    {
       "type": "patchouli:image",
-      "title": "Largura do Caminho",
-      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png" ],
+      "title": "Variable Width Path",
+      "images": [
+      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+      ],
       "border": true
-        },
-        {
+    },
+    {
       "type": "patchouli:image",
-      "title": "Botão Aleatório",
-      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png" ],
+      "title": "Randomizer Button",
+      "images": [
+      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+      ],
       "border": true,
-      "text": "O carrinho possui um modo que aplica materiais em um padrão aleatório."
-        },
-        {
+      "text": "The cart has a mode that will lay down materials in a random pattern."
+    },
+    {
       "type": "patchouli:image",
-      "title": "Materiais Aleatórios",
-      "images": [ "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png" ],
+      "title": "Random Material Path",
+      "images": [
+      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+      ],
       "border": true
     }
   ],

@@ -1,15 +1,16 @@
 {
-  "itemGroup.gtceuterminal": "Terminal GregTechCEu",
-
-  "item.gtceuterminal.multi_structure_manager": "Gestor Multi-Estructura",
-  "item.gtceuterminal.schematic_interface": "Interfaz de Esquemas",
-
-  "item.gtceuterminal.terminal.success": "Multibloque Construido Exitosamente",
-  "item.gtceuterminal.terminal.failed": "Fallo al Construir el Multibloque",
-  "item.gtceuterminal.terminal.cooldown": "Terminal en tiempo de espera",
-  "item.gtceuterminal.terminal.not_controller": "No es un Controlador de Multibloque",
-  "item.gtceuterminal.terminal.already_formed": "Multibloque ya Formado",
-
-  "item.gtceuterminal.multi_structure_manager.tooltip": "Gestiona y Mejora Multiblocks Cercanos",
-  "item.gtceuterminal.schematic_interface.tooltip": "Copia y Pega Esquemas de Multiblocks"
+  "itemGroup.gtceuterminal": "GregTechCEu Terminal",
+  "item.gtceuterminal.multi_structure_manager": "Multi-Structure Manager",
+  "item.gtceuterminal.schematic_interface": "Schematic Interface",
+  "item.gtceuterminal.dismantler": "Dismantler",
+  "item.gtceuterminal.terminal.success": "Multiblock Built Successfully",
+  "item.gtceuterminal.terminal.failed": "Failed to Build Multiblock",
+  "item.gtceuterminal.terminal.cooldown": "Terminal on Cooldown",
+  "item.gtceuterminal.terminal.not_controller": "Not a Multiblock Controller",
+  "item.gtceuterminal.terminal.already_formed": "Multiblock Already Formed",
+  "item.gtceuterminal.multi_structure_manager.tooltip": "Manage and Upgrade Nearby Multiblocks",
+  "item.gtceuterminal.schematic_interface.tooltip": "Copy and Paste Multiblock Schematics",
+  "item.gtceuterminal.dismantler.tooltip": "Disassemble Multiblocks and Return Components",
+  "item.gtceuterminal.energy_analyzer": "Energy Analyzer",
+  "item.gtceuterminal.power_logger.desc": "Monitors machine power consumption"
 }

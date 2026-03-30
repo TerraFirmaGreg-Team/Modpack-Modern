@@ -1,0 +1,16 @@
+{
+	"name": "The Unposter",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Unposter$() is used to grow mushrooms. Mushrooms and nether crops can be deposited into it. When it is by a mushroom, it will consume the items inside to multiply that mushroom in the area around it, once a day."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		}
+	],
+	"read_by_default": true
+}
