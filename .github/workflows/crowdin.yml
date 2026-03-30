@@ -47,6 +47,7 @@ jobs:
           skip_untranslated_strings: true
           export_only_approved: true
           create_pull_request: false
+          crowdin_branch_name: 'translations'
           localization_branch_name: 'translations'
           config: .github/config/crowdin_lang.yml
         env:
@@ -62,6 +63,7 @@ jobs:
           skip_untranslated_strings: true
           export_only_approved: true
           create_pull_request: false
+          crowdin_branch_name: 'translations'
           localization_branch_name: 'translations'
           config: .github/config/crowdin_patchouli.yml
         env:
@@ -82,7 +84,7 @@ jobs:
         uses: crowdin/github-action@v2
         with:
           upload_sources: false
-          download_translations: true
+          download_translations: false
           config: .github/config/crowdin_lang.yml
           localization_branch_name: 'translations'
           commit_message: "[translation] New translations"
