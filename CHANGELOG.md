@@ -1,6 +1,11 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+### Translation updates
+
+## [0.12.0] - 30-03-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### New Overworld World Generation
 TFC's 1.21 world generation has been backported to TFG! Please read the above upgrade guide for information on what will happen to your existing world. This was a huge team effort so a big thank you to everyone who contributed, and of course to @Therighthon for his work on the new worldgen in TFC (and for the help debugging!).
