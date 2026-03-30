@@ -6,7 +6,7 @@ api_token_env: "CROWDIN_TOKEN"
 preserve_hierarchy: true
 
 files:
-  - source: "kubejs/assets/tfc/patchouli_books/field_guide/en_us/**/*.json"
+  - source: "../kubejs/assets/tfc/patchouli_books/field_guide/en_us/**/*.json"
     translation: "/tfc/patchouli_books/field_guide/%locale_with_underscore%/**/%original_file_name%"
     update_option: "update_as_unapproved"
 
