@@ -81,7 +81,9 @@ jobs:
       - name: Create Pull Request
         uses: crowdin/github-action@v2
         with:
+          upload_sources: false
           download_translations: true
+          config: .github/config/crowdin_lang.yml
           localization_branch_name: 'translations'
           commit_message: "[translation] New translations"
           pull_request_base_branch_name: 'dev'
