@@ -1,0 +1,688 @@
+{
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "pattern": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ],
+        "mapping": {
+          "X": ""
+        }
+      },
+      "name": "野生の小麦",
+      "text": "",
+      "enable_visualize": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "種",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "大麦"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "オーツ麦"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ライ麦"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "トウモロコシ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "小麦"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "稲"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ビーツ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "キャベツ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ニンジン"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ニンニク"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "サヤインゲン"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "スイカ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "種",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "ジャガイモ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "カボチャ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "タマネギ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "大豆"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "スカッシュ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "サトウキビ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "トマト"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ジュート"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "パピルス"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "赤ピーマン"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "黄ピーマン"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "ヒマワリ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "種",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "キャノーラ"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "亜麻"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    }
+  ],
+  "read_by_default": "",
+  "sortnum": "",
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": ""
+  }
+}

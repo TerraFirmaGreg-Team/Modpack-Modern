@@ -3,7 +3,7 @@
     "icon": "gtceu:red_steel_hammer",
     "category": "tfc:tfg_tips",
     "read_by_default": true,
-    "priority": false,
+    "priority": "",
     "pages": [
         {
             "type": "patchouli:text",
@@ -15,7 +15,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
-            "border": false,
+            "border": "",
             "text": "Пользовательский интерфейс с включенным TFC Anvil Helper"
         },
         {
@@ -23,7 +23,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
-            "border": false,
+            "border": "",
             "anchor": "ui_explained",
             "tile": "Пользовательский интерфейс и ты",
             "text": "Пользовательский интерфейс наковальни с TFC Anvil Helper Enabled имеет цветные обозначения."
@@ -37,7 +37,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
-            "border": false
+            "border": ""
         },
         {
             "type": "patchouli:text",
@@ -48,7 +48,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
-            "border": false
+            "border": ""
         },
         {
             "type": "patchouli:text",
@@ -59,7 +59,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
-            "border": false
+            "border": ""
         },
         {
             "type": "patchouli:text",
@@ -76,7 +76,7 @@
             "images": [
             "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
-            "border": false,
+            "border": "",
             "text": "Идеально выкованная головка кирки из кованого железа"
         },
         {

@@ -47,9 +47,9 @@
 					"X": "beneath:ore/nether_cursecoal"
 				}
 			},
-			"name": "Антрацит",
+			"name": "",
 			"text": "Антрацит является мощным $(l:beneath/hellforge)топливом$(). Его можно найти в мигматите на внешних уровнях бездны.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		}
 	],
 	"read_by_default": true

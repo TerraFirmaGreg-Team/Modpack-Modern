@@ -1,0 +1,82 @@
+{
+  "__comment__": "",
+  "name": "ガラスの精製",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "シリカガラスバッチ",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "recipe2": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": "商売道具"
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": "",
+  "extra_recipe_mappings": {
+    "tfc:powder/lime": "",
+    "tfc:powder/soda_ash": "",
+    "tfc:paddle": "",
+    "tfc:jacks": "",
+    "tfc:gem_saw": ""
+  }
+}

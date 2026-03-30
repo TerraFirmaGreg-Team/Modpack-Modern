@@ -1,55 +1,55 @@
 {
 	"name": "Регулювання температури",
-	"category": "tfc:beneath",
-	"icon": "minecraft:ice",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Безодня гаряча! Температура починається з 15°C на самому верху і лише стає гарячішою, коли ви спускаєтеся.$(br2)$(item)Мішковиний$() та $(item)Шовковий$() одяг може допомогти але ось кілька інших способів залишатися в прохолоді!"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "minecraft:water_bucket",
+			"type": "",
+			"item": "",
 			"title": "Вода",
 			"text": "Вода зустрічається повсюди на верхніх рівнях Безодні. Швидке занурення може швидко вас охолодить!"
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Лід",
-			"item": "minecraft:packed_ice",
+			"item": "",
 			"text": "Візьми із собою трохи $(thing)Льоду$()! Стояння поруч із ним знижує температуру довкілля. Лід можна добути на поверхні за допомогою $(item)Пили$(), а $(thing)Стислий$() та $(thing)Синій$() лід не тануть."
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:ice_bucket",
+			"type": "",
+			"item": "",
 			"title": "Обладунки зі Синьої Сталі",
 			"text": "Ах, так освіжає! Охолоджує на 4°C."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Спорядження з синьої сталі",
-			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"item": "",
 			"text": "Шукаєш щось більш постійне? $(thing)Комплект для занурення з синьої сталі$() утримуватиме температуру на рівні 28°C та дозволить плавати навіть у лаві!$(br2)$(item)Вогнестійкі шкури$() можна отримати від місцевого $(thing)Червоного лося$() або знайти в бастіонах."
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "tfg:create/shaped/netherite_diving_helmet",
-			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+			"type": "",
+			"recipe": "",
+			"recipe2": ""
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "tfg:create/shaped/netherite_backtank",
-			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+			"type": "",
+			"recipe": "",
+			"recipe2": ""
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+			"type": "",
+			"recipe": ""
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "tfg:create/shaped/netherite_diving_boots",
-			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+			"type": "",
+			"recipe": "",
+			"recipe2": ""
 		}
 	],
-	"read_by_default": true
+	"read_by_default": ""
 }

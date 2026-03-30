@@ -1,75 +1,75 @@
 {
 	"name": "Біоми",
-	"category": "tfc:beneath",
-	"icon": "minecraft:spyglass",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "У Безодні є повний набір нових біомів для дослідження! Більшість із них поділяється на дві категорії: $(thing)верхні$() та $(thing)нижні$(). Верхні біоми зустрічаються лише на вищих рівнях, а нижні розташовані ближче до лави."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Пишна западина",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Вологий і повний зелені! Найгостинніший регіон для облаштування підземної бази."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Гнилісні печери",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Природні утилізатори активно працюють у цьому вологому регіоні, наповненому гнилизною."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Павуче лігво",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Тут легко здогадатися, хто мешкає! Місце також прикрашене величезними стовпами з $(thing)травертину$()."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Попелястий ліс",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Залишки Пишної западини після частих пожеж, викликаних спекою."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Лавові потоки",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Регіон, багатий на руду $(thing)Піроксеніт$(), переплетений річками лави."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Базальтові дельти",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Улюблений біом Незеру повертається і залишається таким же небезпечним для подорожей, як і завжди."
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"title": "Глибокі печери",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/deep_caves.png"
+				""
 			],
-			"border": true,
+			"border": "",
 			"text": "Між іншими біомами розташовані більш рівнинні ділянки з габро, шиферного сланцю, граніту, діориту та гнейсу.$(br)"
 		}
 	],
-	"read_by_default": true
+	"read_by_default": ""
 }

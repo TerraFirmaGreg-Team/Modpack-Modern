@@ -1,0 +1,325 @@
+{
+	"__comment__": "",
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "Vanilla",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						""
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"X": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		}
+	],
+	"read_by_default": "",
+	"sortnum": "",
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": "",
+		"firmalife:plant/bay_laurel": "",
+		"firmalife:plant/cardamom": "",
+		"firmalife:plant/cilantro": "",
+		"firmalife:plant/cumin": "",
+		"firmalife:plant/oregano": "",
+		"firmalife:plant/pimento": "",
+		"firmalife:plant/vanilla": "",
+		"firmalife:seed_ball": ""
+	}
+}

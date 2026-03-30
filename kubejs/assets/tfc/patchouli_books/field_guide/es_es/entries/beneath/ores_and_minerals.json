@@ -1,0 +1,56 @@
+{
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "Travertino",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"X": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		}
+	],
+	"read_by_default": ""
+}

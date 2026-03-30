@@ -1,0 +1,92 @@
+{
+  "__comment__": "",
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "item": "",
+      "title": "",
+      "link_recipes": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "item": "",
+      "title": "",
+      "link_recipes": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": "",
+  "extra_recipe_mappings": {
+    "tfc:metal/propick/bismuth_bronze": "",
+    "tfc:metal/propick/black_bronze": "",
+    "tfc:metal/propick/bronze": "",
+    "tfc:metal/propick/copper": "",
+    "tfc:metal/propick/wrought_iron": "",
+    "tfc:metal/propick/steel": "",
+    "tfc:metal/propick/black_steel": "",
+    "tfc:metal/propick/blue_steel": "",
+    "tfc:metal/propick/red_steel": "",
+    "gtceu:prospector.lv": "",
+    "gtceu:prospector.hv": "",
+    "gtceu:prospector.luv": ""
+  }
+}

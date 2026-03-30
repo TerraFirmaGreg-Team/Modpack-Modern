@@ -1,0 +1,58 @@
+{
+  "name": "舗装車",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "舗装車",
+      "images": [
+      ""
+      ],
+      "border": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "images": [
+      ""
+      ],
+      "border": ""
+    }
+  ],
+  "read_by_default": "",
+  "extra_recipe_mappings": {
+    "tfg:rnr_plow": ""
+  },
+  "sortnum": ""
+}

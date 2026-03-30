@@ -25,7 +25,7 @@
       },
       "name": "",
       "text": "Все типы металлических наковален.",
-      "enable_visualize": false
+      "enable_visualize": ""
     },
     {
       "type": "patchouli:crafting",
@@ -49,7 +49,7 @@
         "tfc:textures/gui/book/gui/anvil_empty.png"
       ],
       "text": "Интерфейс наковальни.",
-      "border": false
+      "border": ""
     },
     {
       "type": "patchouli:text",
@@ -61,7 +61,7 @@
         "tfc:textures/gui/book/gui/anvil_in_use.png"
       ],
       "text": "После выбора создания кирки.",
-      "border": false
+      "border": ""
     },
     {
       "type": "patchouli:text",
@@ -90,7 +90,7 @@
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
       "title": "ЭТО ШЕДЕВР!",
-      "link_recipes": false,
+      "link_recipes": "",
       "text": "Существует четыре уровня бонуса ковки: $(li)Плохо выковано$(li)Хорошо выковано$(li)Мастерски выковано$(li)Идеально выковано$(br2)Эти бонусы увеличивают мощность вашего инструмента - делая его менее ломким, добывающим быстрее и/или наносящим больше урона в бою, в зависимости от инструмента."
     },
     {

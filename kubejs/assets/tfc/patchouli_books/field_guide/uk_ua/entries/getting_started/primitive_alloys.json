@@ -1,76 +1,76 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
+	"__comment__": "",
 	"name": "Примітивні сплави",
-	"category": "tfc:getting_started",
-	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "$(thing)Сплави$() - це спосіб змішування двох або більше металів разом для створення нового, більш міцного матеріалу. На початку гри - мідь є корисним металом для створення інструменту. Наступний рівень металу є одним із трьох типів $(thing)бронзи$(). Сплав складається зі складових $(thing)металів$(), кожен з яких повинен задовольняти певний відсоток від загального цілого."
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Один метод, за допомогою якого сплави можуть бути виготовлені під час ранньої гри, полягає в використанні $(thing)горщика$(). Процес дуже схожий на $(l:getting_started/finding_ores#casting)лиття$(). Однак замість того, щоб використовувати лише один метал, помісти достатню кількість шматків руди всередину горщика в правильному співвідношенні, щоб утворити суміш відомого сплаву."
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Наприклад, щоб створити 1000 мВ $(thing)Бронзи$() (показано праворуч), вам знадобиться від 700 до 800 мВ $(thing)Міді$() та від 200 до 300 мВ $(thing)Оловa$().$(br2)Наступні три сторінки показують рецепти трьох видів бронзи. Кожен тип бронзи можна використовувати для виготовлення інструментів, $(l:mechanics/armor)броні$() та інших металевих предметів. Вони трохи відрізняються, тому отримані інструменти матимуть різну міцність, ефективність та шкоду при атаці."
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:bronze_ingot",
+			"type": "",
+			"item": "",
 			"title": "Бронза",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Олова$()$(br2)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:bismuth_bronze_ingot",
+			"type": "",
+			"item": "",
 			"title": "Бісмутова бронза",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 30 % : $(thing)Цинку$()$(li)50 - 65 % : $(thing)Міді$()$(li)10 - 20 % : $(thing)Бісмуту$()$(br2)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:black_bronze_ingot",
+			"type": "",
+			"item": "",
 			"title": "Чорна бронза",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)50 - 70 % : $(thing)Міді$()$(li)10 - 25 % : $(thing)Срібла$()$(li)10 - 25 % : $(thing)Золота$()$(br2)"
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Інші сплави не підходять для створення інструментів. Це $(thing)латунь$(), $(thing)рожеве золото$() та $(thing)стерлінгове срібло$().$(br2)$(thing)Латунь$() — корисний сплав для всіляких механізмів, зокрема $(l:mechanics/mechanical_power)механічної енергії$().$(br2)$(thing)Рожеве золото$() та $(thing)стерлінгове срібло$() використовуються для створення $(l:mechanics/steel#red_steel)червоної сталі$() та $(l:mechanics/steel#blue_steel)синьої сталі$().",
 			"title": "Технічні сплави"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "brass",
-			"item": "create:brass_ingot",
+			"type": "",
+			"anchor": "",
+			"item": "",
 			"title": "Латунь",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)70 - 80 % : $(thing)Міді$()$(li)20 - 30 % : $(thing)Цинку$()$(br2)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:rose_gold_ingot",
+			"type": "",
+			"item": "",
 			"title": "Рожеве золото",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)15 - 30 % : $(thing)Міді$()$(li)70 - 85 % : $(thing)Золота$()$(br2)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:sterling_silver_ingot",
+			"type": "",
+			"item": "",
 			"title": "Стерлінгове срібло",
-			"link_recipes": false,
+			"link_recipes": "",
 			"text": "$(br)$(bold)Вимоги:$()$(br)$(li)20 - 40 % : $(thing)Міді$()$(li)60 - 80 % : $(thing)Срібла$()$(br2)"
 		}
 	],
-	"read_by_default": true,
-	"sortnum": 5,
+	"read_by_default": "",
+	"sortnum": "",
 	"extra_recipe_mappings": {
-		"gtceu:bronze_ingot": 3,
-		"gtceu:bismuth_bronze_ingot": 4,
-		"gtceu:black_bronze_ingot": 5,
-		"create:brass_ingot": 7
+		"gtceu:bronze_ingot": "",
+		"gtceu:bismuth_bronze_ingot": "",
+		"gtceu:black_bronze_ingot": "",
+		"create:brass_ingot": ""
 	}
 }

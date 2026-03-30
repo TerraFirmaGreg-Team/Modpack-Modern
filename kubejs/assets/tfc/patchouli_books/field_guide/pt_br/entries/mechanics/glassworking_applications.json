@@ -1,0 +1,434 @@
+{
+  "__comment__": "",
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": "Mesa de Servir"
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "mapping": {
+          "C": "",
+          "0": ""
+        },
+        "pattern": [
+          [
+          "",
+          "",
+          "",
+          ""
+          ]
+        ]
+      },
+      "text": "",
+      "border": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": "Despejar na Bacia"
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "mapping": {
+          "C": "",
+          "0": ""
+        },
+        "pattern": [
+          [
+          "",
+          "",
+          ""
+          ],
+          [
+          "",
+          "",
+          ""
+          ]
+        ]
+      },
+      "text": "",
+      "border": ""
+    },
+    {
+      "type": "",
+      "title": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "text": "Olivina"
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        },
+        {
+          "fill": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [
+        {
+          "text": "",
+          "color": ""
+        },
+        {
+          "text": "",
+          "color": ""
+        },
+        {
+          "text": "",
+          "color": ""
+        }
+      ],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": "",
+  "extra_recipe_mappings": {
+    "tag:tfc:glass_batches": "",
+    "tag:forge:glass": ""
+  }
+}
