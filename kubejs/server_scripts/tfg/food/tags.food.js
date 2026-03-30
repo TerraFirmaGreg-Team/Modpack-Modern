@@ -16,6 +16,9 @@ function registerTFGFoodItemTags(event) {
 	event.add("tfg:sugars", "afc:birch_sugar");
 	event.add("tfg:sugars", "afc:maple_sugar");
 
+	event.add('tfc:foods/vegetables', 'tfg:food/lavacado')
+	event.add('tfc:foods/fruits', 'tfg:food/magmango')
+
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
 		'tfg:food/raw_crawlermari',
@@ -298,6 +301,12 @@ function registerTFGFoodItemTags(event) {
 	event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
 	event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
 	event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/barrel_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/silken_pincushion_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear_purple')
 
 	event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')

@@ -1,7 +1,7 @@
 {
     "name": "TerraFirmaGreg-Modern",
     "version": "DEV",
-    "release_type": "release",
+    "release_type": "alpha",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -256,9 +256,6 @@
         "colorwheel": {
             "side": "CLIENT"
         },
-        "colorwheel-patcher": {
-            "side": "CLIENT"
-        },
         "autopack-director": {
             "export": false
         },
@@ -303,8 +300,6 @@
         "ftb-xmod-compat": {
             "export": true
         },
-
-
         "probejs": {
             "side": "CLIENT",
             "export": false

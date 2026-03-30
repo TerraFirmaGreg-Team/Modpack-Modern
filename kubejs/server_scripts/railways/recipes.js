@@ -249,7 +249,7 @@ const registerRailWaysRecipes = (event) => {
 	}).id('tfg:railways/shaped/fuel_tank')
 
 	event.recipes.gtceu.assembler('tfg:railways/fuel_tank')
-		.itemInputs ('create:fluid_tank', 'create:railway_casing', 'create:electron_tube', 'firmalife:reinforced_glass')
+		.itemInputs('create:fluid_tank', 'create:railway_casing', 'create:electron_tube', 'firmalife:reinforced_glass')
 		.circuit(1)
 		.itemOutputs('railways:fuel_tank')
 		.duration(200)
@@ -463,7 +463,7 @@ const registerRailWaysRecipes = (event) => {
 				
 		SNR_SMOKESTACK_TYPES.forEach(type => {
 	
-			if(mat.craft_mat != 'brass') {
+			if (mat.craft_mat != 'brass') {
 				event.recipes.createItemApplication([`railways:smokestack_${type}_brass_cap${mat.capped_mat}`], [`railways:smokestack_${type}${mat.base_mat}`, '#forge:bolts/brass'])
 					.id(`tfg:railways/item_application/smokestack_${type}_brass_cap${mat.capped_mat}`)
 
@@ -475,7 +475,7 @@ const registerRailWaysRecipes = (event) => {
 					.EUt(24)
 					.category(GTRecipeCategories.CHEM_DYES)
 			}
-			if(mat.craft_mat != 'copper') {
+			if (mat.craft_mat != 'copper') {
 				event.recipes.createItemApplication([`railways:smokestack_${type}_copper_cap${mat.capped_mat}`], [`railways:smokestack_${type}${mat.base_mat}`, '#forge:bolts/copper'])
 					.id(`tfg:railways/item_application/smokestack_${type}_copper_cap${mat.capped_mat}`)
 
@@ -504,7 +504,7 @@ const registerRailWaysRecipes = (event) => {
 
 	// Монорельс
 	event.recipes.createSequencedAssembly([
-		'8x railways:track_monorail',
+		'6x railways:track_monorail',
 	], 'create:metal_girder', [
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:plates/wrought_iron']),
 		event.recipes.greate.pressing('railways:track_incomplete_monorail', 'railways:track_incomplete_monorail'),
@@ -514,7 +514,7 @@ const registerRailWaysRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('railways/monorail')
 		.itemInputs('create:metal_girder', '2x #forge:plates/wrought_iron')
-		.itemOutputs('8x railways:track_monorail')
+		.itemOutputs('6x railways:track_monorail')
 		.duration(250)
 		.EUt(32)
 

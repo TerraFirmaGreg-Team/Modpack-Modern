@@ -1,0 +1,14 @@
+{
+	"type": "tfc:multiple",
+	"config": {
+		"features": [
+			"tfg:earth/volcano/replace_basalt_with_dirt_center",
+			"tfg:earth/volcano/replace_basalt_with_dirt_edges",
+			"tfg:earth/volcano/obsidian_rivulet",
+			"tfg:earth/volcano/water_caldera",
+			"tfg:earth/volcano/spring_water_fissure",
+			"tfg:earth/volcano/spring_water_surface_spring",
+			"tfg:earth/volcano/tuff_blob"
+		]
+	}
+}

@@ -1178,9 +1178,9 @@
 					type: "item"
 				}
 				{
-					count: 14L
+					count: 10L
 					id: "2E6781820FF96078"
-					item: { Count: 14, id: "gtceu:heatproof_machine_casing" }
+					item: "gtceu:heatproof_machine_casing"
 					type: "item"
 				}
 				{
@@ -1696,6 +1696,7 @@
 			dependencies: [
 				"0404FBCC34011053"
 				"7FA1525D681C4B4A"
+				"3DC0755814508BD7"
 			]
 			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
 			id: "1AD51E2B66EA7F67"
@@ -1765,7 +1766,7 @@
 			]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
 			x: 5.0d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -2070,6 +2071,26 @@
 			title: "{quests.medium_voltage.mv_jetpack.title}"
 			x: 1.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["66E34DAA25149FC0"]
+			icon: "gtceu:natural_gas_bucket"
+			id: "3DC0755814508BD7"
+			shape: "heart"
+			tasks: [
+				{
+					id: "5458466C6BA34B64"
+					item: "gtceu:natural_gas_bucket"
+					type: "item"
+				}
+				{
+					id: "1F02511A45AA5C9B"
+					item: "tfg:gas_well"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -5.5d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

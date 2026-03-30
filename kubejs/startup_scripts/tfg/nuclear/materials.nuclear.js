@@ -560,7 +560,7 @@ StartupEvents.registry("item", (event) => {
 
 		if (createDepleted === undefined) createDepleted = true;
 
-		event.createCustom("tfg:" + id, () => {
+		event.createCustom(`tfg:${id}`, () => {
 			return new $FuelCellItem(
 				durability,
 				rods,
@@ -569,7 +569,7 @@ StartupEvents.registry("item", (event) => {
 		});
 
 		if (createDepleted) {
-			event.createCustom("tfg:depleted_" + id, () => {
+			event.createCustom(`tfg:depleted_${id}`, () => {
 				return new $DepletedFuelCellItem();
 			});
 		}

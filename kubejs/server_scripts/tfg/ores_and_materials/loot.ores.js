@@ -55,12 +55,19 @@ const registerTFGOreLoots = (event) => {
 					])
 					.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
 					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.02)));
+			})
 
-				// break with hammer
-				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
-					.matchMainHand('#forge:tools/hammers')
+			// Sand ores
+			global.SAND_COLORS.forEach(sandType => {
+				event.addBlockLootModifier(`gtceu:${sandType}_sand_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
-					.addLoot(LootEntry.of(GTBlocks.COBBLE_BLOCKS.get(TagPrefix.get(stoneType)).get().getBlock().id));
+					.addWeightedLoot([
+						richRawOre.withChance(0.2),
+						normalRawOre.withChance(0.6),
+						poorRawOre.withChance(0.2)
+					])
+					.addLoot(LootEntry.of(`tfc:sand/${sandType}`).when(c => c.randomChance(0.2)))
+					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.02)));
 			})
 		}
 	})

@@ -5,6 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
 			"recipe": "beneath:crafting/blackstone_aqueduct",
 			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние."
 		},

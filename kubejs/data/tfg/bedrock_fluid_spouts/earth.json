@@ -1,0 +1,34 @@
+{
+    "entries": [
+        {
+            "vein_ids": ["tfg:heavy_oil_spout_hot", "tfg:heavy_oil_spout_ocean"],
+            "feature": "tfg:earth/spouts/heavy_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:raw_oil_spout_hot", "tfg:raw_oil_spout_ocean"],
+            "feature": "tfg:earth/spouts/raw_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:light_oil_spout_hot", "tfg:light_oil_spout_ocean"],
+            "feature": "tfg:earth/spouts/light_oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:oil_spout_hot", "tfg:oil_spout_ocean"],
+            "feature": "tfg:earth/spouts/oil_spout",
+            "type": "spout"
+        },
+        {
+            "vein_ids": ["tfg:natural_gas_surface_indicator", "tfg:natural_gas_ocean"],
+            "feature": "tfg:earth/spouts/gas_vent",
+            "type": "structure"
+        },
+        {
+            "vein_ids": ["tfg:spring_water"],
+            "feature": "tfg:earth/spouts/spring_water",
+            "type": "pool"
+        }
+    ]
+}

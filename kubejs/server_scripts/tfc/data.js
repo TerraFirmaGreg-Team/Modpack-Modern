@@ -109,8 +109,14 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:tiny_ammonium_chloride_dust', 0.03, null, null)
 	event.fertilizer('gtceu:small_ammonium_chloride_dust', 0.075, null, null)
 	event.fertilizer('gtceu:ammonium_chloride_dust', 0.3, null, null)
+	
+	event.fertilizer('gtceu:tiny_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:ash_dust', null, 0.1, 0.3)
 
-
+	event.fertilizer('gtceu:tiny_dark_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_dark_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:dark_ash_dust', null, 0.1, 0.3)
 }
 
 

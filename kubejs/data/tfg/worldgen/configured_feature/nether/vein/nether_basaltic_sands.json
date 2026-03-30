@@ -9,6 +9,9 @@
     "min_y": 48,
     "max_y": 128,
     "random_name": "nether_basaltic_sands",
+    "project": false,
+    "project_offset": false,
+    "near_lava": false,
     "blocks": [
       {
         "replace": [

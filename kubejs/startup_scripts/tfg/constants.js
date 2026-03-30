@@ -140,7 +140,8 @@ global.FOOD_FRUIT = [
 	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
 	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
 	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
-	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 }
+	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 },
+	{name: 'magmango', id: 'tfg:food/magmango', saturation: 1, water: 15, fruit: 1.5, decay: 2.25}
 ];
 
 /** @type {Hammering[]} */
@@ -251,3 +252,131 @@ global.ICE_SAW_BLACKLIST = [
 	"gtceu:arsenic_bronze_saw",
 	"gtceu:damascus_steel_saw"
 ];
+
+/**
+ * @typedef {Object} CropClimateData
+ * @property {string} id - Crop block ID.
+ * @property {string} seed - Seed Item ID. For tooltip info.
+ * @property {string} dimension - Dimension ID. For tooltip info.
+ * @property {'NITROGEN'|'POTASSIUM'|'PHOSPHOROUS'|null} fertilizer - Fertilizer type. For tooltip info.
+ * @property {string} moreInfo - Additional info lines to add to the tooltip, or null.
+ * @property {number} minHydration - Minimum hydration.
+ * @property {number} maxHydration - Maximum hydration.
+ * @property {number} minTemp - Minimum temperature.
+ * @property {number} maxTemp - Maximum temperature.
+ * @property {number} hydrationWiggle - Hydration wiggle.
+ * @property {number} tempWiggle - Temperature wiggle.
+ * @property {boolean} genData - Generates data in data.crops.js
+ * @property {boolean} genTooltip - Generate tooltip info.
+ */
+/** @type {CropClimateData[]} - Index of crop climate data */
+global.CROP_CLIMATE_DATA = [
+	// ============== Earth =================
+	{ 
+		id: 'tfg:sunflower', seed: 'tfg:sunflower_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN',
+		minHydration: 20, maxHydration: 80, minTemp: 5, maxTemp: 40, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:rapeseed', seed: 'tfg:rapeseed_seeds', dimension: 'minecraft:overworld', fertilizer: 'PHOSPHOROUS',
+		minHydration: 10, maxHydration: 60, minTemp: -5, maxTemp: 25, hydrationWiggle: 7.5, tempWiggle: 1.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:flax', seed: 'tfg:flax_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN',
+		minHydration: 15, maxHydration: 65, minTemp: -8, maxTemp: 25, hydrationWiggle: 6.5, tempWiggle: 3, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:radish', seed: 'tfg:radish_seeds', dimension: 'minecraft:overworld', fertilizer: 'POTASSIUM',
+		minHydration: 15, maxHydration: 65, minTemp: -20, maxTemp: 20, hydrationWiggle: 7, tempWiggle: 2, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:lentil', seed: 'tfg:lentil_seeds', dimension: 'minecraft:overworld', fertilizer: 'PHOSPHOROUS',
+		minHydration: 50, maxHydration: 100, minTemp: -20, maxTemp: 18, hydrationWiggle: 7, tempWiggle: 3, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:cucumber', seed: 'tfg:cucumber_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN', moreInfo: 'tfg.tooltip.crop.stick',
+		minHydration: 70, maxHydration: 100, minTemp: 5, maxTemp: 40, hydrationWiggle: 6.5, tempWiggle: 2, genData: true, genTooltip: true 
+	},
+	// ============== Beneath =================
+	{ 
+		id: 'tfg:peanut', seed: 'tfg:peanut_seeds', dimension: 'minecraft:the_nether', fertilizer: 'POTASSIUM',
+		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:cassava', seed: 'tfg:cassava_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
+		minHydration: 50, maxHydration: 100, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:beans', seed: 'tfg:beans_seeds', dimension: 'minecraft:the_nether', fertilizer: 'POTASSIUM',
+		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:ghost_pepper', seed: 'tfg:ghost_pepper_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
+		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'tfg:fruit_tree/lavacado',
+		minHydration: 20, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 5.5, tempWiggle: 4, genData: true, genTooltip: true
+	},
+	{ 
+		id: 'tfg:fruit_tree/magmango',
+		minHydration: 30, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 8, tempWiggle: 5, genData: true, genTooltip: true
+	},
+	// ============== Mars =================
+	{ 
+		id: 'betterend:amber_root', seed: 'betterend:amber_root_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
+		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'betterend:blossom_berry', seed: 'betterend:blossom_berry_seeds', dimension: 'ad_astra:mars', fertilizer: 'POTASSIUM',
+		minHydration: 70, maxHydration: 100, minTemp: -80, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'betterend:bolux_mushroom', seed: 'betterend:bolux_mushroom_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
+		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'betterend:cave_pumpkin_plant', seed: 'betterend:cave_pumpkin_plant_seeds', dimension: 'ad_astra:mars', fertilizer: 'NITROGEN',
+		minHydration: 0, maxHydration: 60, minTemp: -100, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'betterend:chorus_mushroom', seed: 'betterend:chorus_mushroom_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
+		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	},
+	{ 
+		id: 'betterend:shadow_berry', seed: 'betterend:shadow_berry_seeds', dimension: 'ad_astra:mars', fertilizer: 'POTASSIUM',
+		minHydration: 50, maxHydration: 100, minTemp: -80, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
+	}
+
+];
+
+/**
+ * @type {string[]}
+ */
+global.NEW_OVERWORLD_PLANTS = [
+	"tfg:plant/red_oat_grass",
+	"tfg:plant/azalea",
+	"tfg:plant/bear_grass",
+	"tfg:plant/bird_nest_fern",
+	"tfg:plant/buttercup",
+	"tfg:plant/cornflower",
+	"tfg:plant/dry_grass",
+	"tfg:plant/edelweiss",
+	"tfg:plant/elegant_sunburst_lichen",
+	"tfg:plant/fan_palm",
+	"tfg:plant/kinnikinnick",
+	"tfg:plant/mountain_hullwort",
+	"tfg:plant/moss_campion",
+	"tfg:plant/palash",
+	"tfg:plant/penwortel",
+	"tfg:plant/prickly_pear",
+	"tfg:plant/prickly_pear_purple",
+	"tfg:plant/qantu",
+	"tfg:plant/ramirezella",
+	"tfg:plant/ramunda",
+	"tfg:plant/silken_pincushion_cactus",
+	"tfg:plant/silver_bromeliad",
+	"tfg:plant/tank_bromeliad",
+	"tfg:plant/yellow_saxifrage",
+	"tfg:plant/flame_vine",
+	"tfg:plant/cycad"
+]

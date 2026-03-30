@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kaolinite",
-			"text": "制作$(l:mechanics/fire_clay)耐火黏土$()需要高岭土。它生成于Y=75-110之间的高原、古老山脉、丘陵与高地，要求$(l:the_world/climate#temperature)温度$()不低于18°C，$(l:the_world/climate#rainfall)降雨量$()不低于300mm。$(thing)火球花$()会生长在高岭土上，其位置可能低至下方 35 格。"
+			"text": "制作$(l:mechanics/fire_clay)耐火黏土$()需要高岭土。它生成于Y=75-110之间的高原、丘陵与高地（及其$(t:石灰岩、白云岩、白垩岩或大理岩地表岩层)喀斯特$() $(t:伯伦地貌、天坑、灰岩坑、石林或塔状喀斯特)变种$()）、古老山脉和盾状火山，要求$(l:the_world/climate#temperature)温度$()不低于18°C，$(l:the_world/climate#rainfall)降雨量$()不低于300mm。$(thing)火球花$()会生长在高岭土上，其位置可能低至下方35格。"
 		},
 		{
 			"type": "tfc:multimultiblock",

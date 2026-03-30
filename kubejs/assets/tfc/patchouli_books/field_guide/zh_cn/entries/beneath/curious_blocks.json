@@ -5,6 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
 			"recipe": "beneath:crafting/blackstone_aqueduct",
 			"text": "辉石岩引水桥可用于远距离输送岩浆。"
 		},

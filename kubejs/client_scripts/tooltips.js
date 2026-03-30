@@ -4,6 +4,9 @@
  * @param {Internal.ItemTooltipEventJS} event 
  */
 const registerTooltips = (event) => {
+
+	registerCropTooltips(event);
+
 	//Your IDE may say that "item" and "advanced" are never used, but they are required! So dont remove them <3
 
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
@@ -459,100 +462,19 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.obsolete.depreciated'))
 	})
 
-	// Drink effects
-	event.addAdvanced(['tfc_gourmet:kvass_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:lemonade_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:coffee_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:cocoa_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_mint_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_chamomile_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_nettle_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:tea_rosehip_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['tfc_gourmet:nalivka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-	event.addAdvanced(['tfc:bucket/spring_water'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.warming_foods'));
-	})
-	event.addAdvanced(['firmalife:bucket/red_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.haste").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/rose_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.dolphins_grace").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/white_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.species.wither_resistance").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/dessert_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.species.iron_will").append(Text.of(" (05:20)")).blue());
-	})
-	event.addAdvanced(['firmalife:bucket/sparkling_wine'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.strength").append(Text.of(" (05:20)")).blue());
-		text.add(2, Text.translate("effect.minecraft.jump_boost").append(Text.of(" II (05:20)")).blue());
-	})
-	event.addAdvanced(['gtceu:ice_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.cooling_foods'));
-	})
-    event.addAdvanced(['tfg:vintage_beer_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.absorption").append(Text.of(" III (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_cider_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_rum_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.speed").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_mead_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.regeneration").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_sake_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_vodka_bucket'], (item, advanced, text) => {
-		text.add(1, Text.translate("effect.minecraft.resistance").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" III (04:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_corn_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
-    })
-    event.addAdvanced(['tfg:vintage_rye_whiskey_bucket'], (item, advanced, text) => {
-    	text.add(1, Text.translate("effect.minecraft.haste").append(Text.of(" II (08:00)")).blue());
-    })
-
 	// Saw can silk harvest ice
 	//This kinda sucks, but it works. We're basically getting the default "silk_ice" harvesting tooltip, getting the index, then removing it.
 	//Then, we insert on that index our custom tooltip that tells the player it harvests ALL ice blocks
 	event.addAdvanced(['#tfg:silk_harvest_ice'], (item, advanced, text) => {
-		const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
-		let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) != -1);
-		let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) != -1);
+		try {
+			const sculptorKey = "item.gtceu.tool.behavior.silk_ice";
+			let keyToRemove = text.find(tip => tip.toString().indexOf(sculptorKey) !== -1);
+			let indexOf = text.findIndex(tip => tip.toString().indexOf(sculptorKey) !== -1);
 
-		if(indexOf != -1)
-		{
-			text.remove(keyToRemove);
-			text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
-		}
+			if (indexOf !== -1) {
+				text.remove(keyToRemove);
+				text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
+			}
+		} catch (e) {}
 	})
 }

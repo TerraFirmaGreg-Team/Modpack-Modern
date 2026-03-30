@@ -53,7 +53,8 @@ function registerTFGClayRecipes(event) {
 		{ input: "tfg:unfired_rod_mold", output: "tfg:rod_mold", name: "rod_mold" },
 		{ input: "tfg:unfired_spindle_head_mold", output: "tfg:spindle_head_mold", name: "spindle_head_mold" },
 		{ input: "tfg:unfired_small_gear_mold", output: "tfg:small_gear_mold", name: "small_gear_mold" },
-		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" }
+		{ input: "tfg:unfired_nugget_mold", output: "tfg:nugget_mold", name: "nugget_mold" },
+		{ input: "tfg:unfired_lamp_mold", output: "tfg:lamp_mold", name: "lamp_mold" }
 	]);
 
 	TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
@@ -140,7 +141,7 @@ function registerTFGClayRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay2')
-		.itemInputs('tfc:powder/graphite', '4x tfc:kaolin_clay')
+		.itemInputs('4x tfc:powder/graphite', '4x tfc:kaolin_clay')
 		.itemOutputs('2x tfc:fire_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -223,4 +224,6 @@ function registerTFGClayRecipes(event) {
 		.resultItem('tfg:small_gear_mold')
 	event.recipes.tfc.heating('tfg:unfired_nugget_mold', 1399)
 		.resultItem('tfg:nugget_mold')
+	event.recipes.tfc.heating('tfg:unfired_lamp_mold', 1399)
+		.resultItem('tfg:lamp_mold')
 }

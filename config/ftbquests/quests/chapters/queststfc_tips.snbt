@@ -1468,6 +1468,7 @@
 				{
 					id: "1864A20BCD18139C"
 					item: "tfc:pan/empty"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1881,7 +1882,12 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4A8910950F638BB5"]
+			dependencies: [
+				"4A8910950F638BB5"
+				"1D40CAE675C4BB91"
+				"560B17BFBE8D477D"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.juicer.desc}"]
 			guide_page: "tfc:field_guide tfc:beneath/water"
 			id: "3D845616A2F7083F"

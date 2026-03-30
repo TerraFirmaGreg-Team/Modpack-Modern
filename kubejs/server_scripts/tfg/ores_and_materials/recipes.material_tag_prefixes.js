@@ -166,7 +166,9 @@ function processPlate(event, material) {
 		addTFCMelting(event, plateItem, material, 144, 'plate');
 
 		const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
-		addAnvilRecipe(event, plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'sheet');
+		if (!doubleIngotItem.isEmpty()) {
+			addAnvilRecipe(event, plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'], false, material, 'sheet');
+		}
 	}
 
 	
@@ -257,7 +259,9 @@ function processRod(event, material) {
 		addTFCMelting(event, shortRodItem, material, 144 / 2, 'rod');
 
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		addAnvilRecipe(event, shortRodItem.withCount(2), ingotItem, ['draw_last'], false, material, 'rod');
+		if (!ingotItem.isEmpty()) {
+			addAnvilRecipe(event, shortRodItem.withCount(2), ingotItem, ['draw_last'], false, material, 'rod');
+		}
 	}
 		
 	// Every material with a short rod also has a long rod
@@ -361,7 +365,7 @@ function processLamp(event, material) {
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
-	addMaterialCasting(event, unfinishedLampItem, null, false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144);
+	addMaterialCasting(event, unfinishedLampItem, 'tfg:lamp_mold', false, 'tfg:lamp_casting_mold', material, 'unfinished_lamp', getMaterialAmount(TFGTagPrefix.lampUnfinished, material) * 144);
 
 	// Finished lamp
 	event.recipes.gtceu.packer(`tfg:${materialName}_lamp`)
@@ -523,7 +527,9 @@ function processNugget(event, material) {
 		addMaterialCasting(event, nuggetItem.withCount(4), 'tfg:nugget_mold', false, null, material, 'nugget', 144 * (4/9));
 		
 		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
-		addAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget');
+		if (!ingotItem.isEmpty()) {
+			addAnvilRecipe(event, nuggetItem.withCount(9), ingotItem, ['punch_last', 'hit_second_last', 'punch_third_last'], false, material, 'nugget');
+		}
 	}
 }
 
