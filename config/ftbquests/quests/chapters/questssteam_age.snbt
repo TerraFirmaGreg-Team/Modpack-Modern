@@ -2014,6 +2014,10 @@
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: [
+				"{quests.steam_age.gas_vent.desc.1}"
+				"{image:tfg:textures/quests/gas_vent.png width:256 height:136 align:center}"
+			]
 			id: "66E34DAA25149FC0"
 			shape: "heart"
 			size: 1.25d
