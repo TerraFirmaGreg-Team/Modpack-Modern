@@ -41,7 +41,8 @@ Our shaders have been basically totally rewritten to be up to date with new vers
 - Crafting more rose quartz now requires you to have one in the first place, so you can't skip the arctic trip if you want create's logistics @Pyritie
 - Added a mech press recipe for turning sticks into stick bundles @Pyritie
 - Added recipes to craft Wan's Ancient Beasts' smithing and banner templates (#3519) @SakuraKitsurugi
-- Removed the remaining nether air and ender air recipes. @Pyritie
+- Lapis, lazurite, and sodalite can now be melted into aluminium silicate @Pyritie
+- Removed the remaining nether air and ender air recipes @Pyritie
 ### Bug fixes
 - Fixed an issue where wearing clothes would overwrite any temperature immunity your main equipment would provide (#3449) @Mqrius
 - Fixed the dugout canoe looking very strange on servers if you tried to make one longer than 3 blocks @Mqrius

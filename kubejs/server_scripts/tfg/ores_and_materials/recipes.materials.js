@@ -50,6 +50,7 @@ function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
  * @param {String} recipeIdSuffix
  */
 function addAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, recipeIdSuffix) {
+	console.log(`anvil recipe: ${inputItem} -> ${outputItem}`)
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	event.recipes.tfc.anvil(outputItem, inputItem, steps)
 		.tier(tfcProperty.getTier())
