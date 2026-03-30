@@ -5,12 +5,13 @@
     "size": 25,
     "rarity": 60,
     "density": 0.25,
-    "min_y": 110,
-    "max_y": 160,
+    "min_y": -20,
+    "max_y": 1,
     "random_name": "high_tetrahedrite",
-    "project": false,
+    "project": true,
     "project_offset": false,
     "near_lava": false,
+    "biomes": "#tfg:earth/is_mountain",
     "blocks": [
       {
         "replace": [
