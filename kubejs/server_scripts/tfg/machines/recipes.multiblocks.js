@@ -335,7 +335,7 @@ function registerTFGMultiblockRecipes(event) {
 		A: Item.of('gtceu:small_steel_gear'),
 		B: '#gtceu:circuits/ulv',
 		C: Item.of('gtceu:ulv_machine_hull'),
-		D: Item.of('#forge:normal_pipes/steel')
+		D: Item.of('#forge:normal_fluid_pipes/steel')
 	}).addMaterialInfo().id('tfg:shaped/gas_well')
 	
 }
