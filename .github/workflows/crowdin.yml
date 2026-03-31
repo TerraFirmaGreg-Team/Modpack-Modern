@@ -20,6 +20,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  LOCALIZATION_BRANCH: translations
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -47,7 +50,7 @@ jobs:
           skip_untranslated_strings: true
           export_only_approved: true
           create_pull_request: false
-          localization_branch_name: 'translations'
+          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -72,7 +75,7 @@ jobs:
           skip_untranslated_files: true
           export_only_approved: true
           create_pull_request: false
-          localization_branch_name: 'translations'
+          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           config: .github/config/crowdin_patchouli.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -92,7 +95,7 @@ jobs:
         uses: devops-infra/action-pull-request@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: translations
+          source_branch: ${{ env.LOCALIZATION_BRANCH }}
           target_branch: dev
           ignore_users: "dependabot"
           label: "Pull request: Translation"
