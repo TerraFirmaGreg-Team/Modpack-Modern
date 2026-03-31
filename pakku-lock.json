@@ -8576,6 +8576,122 @@
             ]
         },
         {
+            "pakku_id": "DN5fOe2DcDRXbD4t",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "iris-shader-folder",
+                "modrinth": "iris-shader-folder"
+            },
+            "name": {
+                "curseforge": "Iris/Oculus Shader Folder",
+                "modrinth": "Iris/Oculus Shader Folder"
+            },
+            "id": {
+                "curseforge": "1351246",
+                "modrinth": "yv6sGJzN"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "iris_shader_folder-1.2.5-forge.jar",
+                    "mc_versions": [
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20-Snapshot",
+                        "1.20.4",
+                        "1.20.3-Snapshot",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7156/940/iris_shader_folder-1.2.5-forge.jar",
+                    "id": "7156940",
+                    "parent_id": "1351246",
+                    "hashes": {
+                        "sha1": "25c96039cbde065c339fff6e19a1992d5781ed4e",
+                        "md5": "1739a63b4267f89028bba5ba4fee9fba"
+                    },
+                    "required_dependencies": [],
+                    "size": 195272,
+                    "date_published": "2025-10-27T18:13:15.193Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "iris_shader_folder-1.2.5-forge.jar",
+                    "mc_versions": [
+                        "1.13",
+                        "1.13.1",
+                        "1.13.2",
+                        "1.14",
+                        "1.14.1",
+                        "1.14.2",
+                        "1.14.3",
+                        "1.14.4",
+                        "1.15",
+                        "1.15.1",
+                        "1.15.2",
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6",
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/akjo8k0G/iris_shader_folder-1.2.5-forge.jar",
+                    "id": "akjo8k0G",
+                    "parent_id": "yv6sGJzN",
+                    "hashes": {
+                        "sha512": "32ed7e753e961e26621e1bb9a94605bf33a2b2ba30991e6a360e81cbdd87c83bf0c139c891c46538d05e65169c1eca0817838e41ebb3d28df614d8cd9c1679ed",
+                        "sha1": "25c96039cbde065c339fff6e19a1992d5781ed4e"
+                    },
+                    "required_dependencies": [],
+                    "size": 195272,
+                    "date_published": "2025-10-27T18:11:30.226023Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "IiVfXdShLIwbXMtg",
             "type": "MOD",
             "side": "CLIENT",
