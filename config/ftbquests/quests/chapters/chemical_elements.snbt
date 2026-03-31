@@ -875,13 +875,7 @@
 			subtitle: "{quests.chemical_elements.element} #93"
 			tasks: [{
 				id: "6419DE220603E2EC"
-				item: {
-					Count: 1
-					id: "tfg:neptunium_237_rod"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "gtceu:neptunium_237_dust"
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.neptunium.title}"
