@@ -1,0 +1,8 @@
+{
+  "__COMMENT__": "Este archivo fue generado automáticamente por el LanguageMerger, lea el archivo \".README IF TRANSLATING\" encontrado en \"minecraft/kubejs\" para más información.",
+  "item.soulbinding.binding_chains": "Binding Chains",
+  "item.soulbinding.binding_chains.bind": "Most Hostile Mobs will be Bound and Unable to move when this item is tossed to them.",
+  "item.soulbinding.binding_chains.desc": "Combine with an item on the Anvil to make the item Soulbound to you and no longer lost upon Death.",
+  "tooltip.soulbinding.soulbound": "Alma vinculada",
+  "tooltip.soulbinding.soulbound.desc": "Alma vinculada: Mantiene el item luego de la muerte."
+}
