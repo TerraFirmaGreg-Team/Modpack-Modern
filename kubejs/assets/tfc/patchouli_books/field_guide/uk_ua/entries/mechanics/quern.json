@@ -1,80 +1,80 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
+  "__comment__": "",
   "name": "Жорна",
-  "category": "tfc:mechanics",
-  "icon": "tfc:quern",
+  "category": "",
+  "icon": "",
   "pages": [
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(thing)Жорна$() — це пристрій для подрібнення предметів. Вони можуть дробити необроблені руди для $(l:tfg_ores/ore_basics#processing)обробки$(), а також виготовляти порошки, $(l:mechanics/dye)барвники$() та деякі інші предмети. Складаються з $(thing)основи$() та $(thing)ручного каменя$()."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "tfc:crafting/quern",
+      "type": "",
+      "recipe": "",
       "text": "Основа жорен створюється з трьох $(thing)гладких каменів$() та трьох будь‑яких інших блоків $(thing)каменю$().$(br2)Кам’яні блоки можна отримати шляхом $(l:getting_started/primitive_anvils#raw_rock)видобутку$(), а гладкі блоки — за допомогою $(l:mechanics/chisel)зубила$()."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "tfc:crafting/handstone",
+      "type": "",
+      "recipe": "",
       "text": "Жорнам потрібен $(thing)ручний камінь$() для роботи."
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "images": [
-        "tfc:textures/gui/book/tutorial/quern_empty.png"
+        ""
       ],
       "text": "Наведіть на верхню частину блоку жорен та $(item)$(k:key.use)$(), щоб встановити ручний камінь.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "images": [
-        "tfc:textures/gui/book/tutorial/quern_add_item.png"
+        ""
       ],
       "text": "Використайте $(item)$(k:key.use)$() по верхній частині ручного каменя, щоб додати предмети.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "images": [
-        "tfc:textures/gui/book/tutorial/quern_handle.png"
+        ""
       ],
       "text": "Використайте $(item)$(k:key.use)$() по ручці, щоб обертати ручний камінь.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:image",
+      "type": "",
       "images": [
-        "tfc:textures/gui/book/tutorial/quern_result.png"
+        ""
       ],
       "text": "Результат з’явиться на основі жорен. $(item)$(k:key.use)$() будь‑де по основі, щоб забрати його.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "tfc:quern_recipe",
+      "type": "",
       "title": "Подрібнена руда",
-      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+      "recipe": "",
       "text": "$(l:tfg_ores/ore_basics#processing)Руди$() можна подрібнити, щоб отримати більше металу."
     },
     {
-      "type": "tfc:quern_recipe",
+      "type": "",
       "title": "Порошки",
-      "recipe": "tfg:quern/sulfur_powder",
+      "recipe": "",
       "text": "Жорна використовуються для виготовлення різних $(thing)порошків$() з пилу, наприклад, $(thing)сірки$(). $(thing)Коштовне каміння$() також можна подрібнити на порошок."
     },
     {
-      "type": "tfc:quern_recipe",
+      "type": "",
       "title": "Барвники",
-      "recipe": "tfc:quern/red_dye",
+      "recipe": "",
       "text": "$(l:mechanics/dye)Барвник$() можна отримати з різних квітів."
     },
     {
-      "type": "patchouli:spotlight",
+      "type": "",
       "item": {
-        "tag": "tfc:foods/flour"
+        "tag": ""
       },
       "text": "$(thing)Рослини$() можна обробити ножем або жорнами, щоб отримати $(thing)зерно$(), яке потім можна змолоти на $(thing)борошно$()."
     }
   ],
-  "read_by_default": true
+  "read_by_default": ""
 }

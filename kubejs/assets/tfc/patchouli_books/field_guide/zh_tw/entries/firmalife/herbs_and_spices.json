@@ -1,0 +1,325 @@
+{
+	"__comment__": "",
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "羅勒",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "月桂",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "豆蔻",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "香菜",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "孜然芹",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "滇香薷",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "全香子",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"X": ""
+					}
+				}
+			],
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						""
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"X": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		}
+	],
+	"read_by_default": "",
+	"sortnum": "",
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": "",
+		"firmalife:plant/bay_laurel": "",
+		"firmalife:plant/cardamom": "",
+		"firmalife:plant/cilantro": "",
+		"firmalife:plant/cumin": "",
+		"firmalife:plant/oregano": "",
+		"firmalife:plant/pimento": "",
+		"firmalife:plant/vanilla": "",
+		"firmalife:seed_ball": ""
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"item": {
+				"tag": ""
+			},
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"multiblock": {
+				"pattern": [
+					[
+						""
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"X": ""
+				}
+			},
+			"name": "Anthracite",
+			"text": "",
+			"enable_visualize": ""
+		}
+	],
+	"read_by_default": ""
+}

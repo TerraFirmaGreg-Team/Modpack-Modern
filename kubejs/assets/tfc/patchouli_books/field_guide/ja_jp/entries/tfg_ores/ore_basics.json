@@ -1,0 +1,48 @@
+{
+    "name": "",
+    "icon": "",
+    "category": "",
+    "priority": "",
+    "sortnum": "",
+    "read_by_default": "",
+    "pages": [
+        {
+            "type": "",
+            "text": ""
+        },
+        {
+            "type": "",
+            "recipe": "",
+            "recipe2": ""
+        },
+        {
+            "type": "",
+            "title": "ピッケル",
+            "text": "",
+            "item": {
+                "tag": ""
+            }
+        },
+        {
+            "type": "",
+            "title": "採掘用ハンマー",
+            "text": "",
+            "item": {
+                "tag": ""
+            }
+        },
+        {
+            "type": "",
+            "title": "",
+            "anchor": "",
+            "item": "",
+            "text": ""
+        },
+        {
+            "type": "",
+            "title": "",
+            "recipe": "",
+            "text": ""
+        }
+    ]
+}

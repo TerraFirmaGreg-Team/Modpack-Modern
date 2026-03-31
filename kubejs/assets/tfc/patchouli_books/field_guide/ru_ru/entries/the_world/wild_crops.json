@@ -24,7 +24,7 @@
       },
       "name": "Дикорастущая пшеница",
       "text": "Пример дикой культуры, в данном случае $(l:mechanics/crops#wheat)Пшеница$().",
-      "enable_visualize": false
+      "enable_visualize": ""
     },
     {
       "type": "patchouli:text",
@@ -456,13 +456,13 @@
       "first_column_width": 80,
       "column_width": 70,
       "row_height": 10,
-      "left_buffer": 2,
+      "left_buffer": "",
       "top_buffer": 12,
-      "draw_background": false
+      "draw_background": ""
     },
     {
       "type": "patchouli:empty",
-      "draw_filler": false
+      "draw_filler": ""
     },
     {
       "type": "tfc:table",
@@ -595,13 +595,13 @@
       "first_column_width": 80,
       "column_width": 70,
       "row_height": 10,
-      "left_buffer": 2,
+      "left_buffer": "",
       "top_buffer": 12,
-      "draw_background": false
+      "draw_background": ""
     },
     {
       "type": "patchouli:empty",
-      "draw_filler": false
+      "draw_filler": ""
     },
     {
       "type": "tfc:table",
@@ -671,13 +671,13 @@
       "first_column_width": 80,
       "column_width": 70,
       "row_height": 10,
-      "left_buffer": 2,
+      "left_buffer": "",
       "top_buffer": 12,
-      "draw_background": false
+      "draw_background": ""
     },
     {
       "type": "patchouli:empty",
-      "draw_filler": false
+      "draw_filler": ""
     }
   ],
   "read_by_default": true,

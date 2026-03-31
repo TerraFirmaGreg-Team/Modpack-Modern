@@ -1,75 +1,75 @@
 {
 	"name": "Небезпечні матеріали",
-	"icon": "createdeco:decal_skull",
-	"category": "tfc:tfg_ores",
-	"priority": true,
-	"sortnum": 1,
-	"read_by_default": true,
+	"icon": "",
+	"category": "",
+	"priority": "",
+	"sortnum": "",
+	"read_by_default": "",
 	"pages": [
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Небезпечні матеріали",
-			"item": "gtceu:cobaltite_dust",
+			"item": "",
 			"text": "Деякі руди та пилу є небезпечними та можуть спричинити негативні наслідки або навіть вбити вас, якщо їх носити з собою в інвентарі.$(br2)Деяке спорядження, таке як $(thing)маски$(), $(thing)рукавички$() та $(thing)костюми для небезпечних матеріалів$(), може бути використано пізніше для нейтралізації цих ефектів."
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "",
 			"title": "Лицьова маска",
-			"recipe": "gtceu:shaped/face_mask",
+			"recipe": "",
 			"text": "$(thing)Маска$() забезпечує захист від будь-яких небезпек, пов'язаних з вдиханням $(item)$(), таких як арсенікоз."
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:rubber_gloves",
+			"type": "",
+			"item": "",
 			"title": "Гумові рукавиці",
-			"link_recipes": true,
+			"link_recipes": "",
 			"text": "Гумові рукавички можна виготовити із $(l:mechanics/leather_making)шкіри$() та $(l:arborfirmacraft/making_rubber)латексу$(), або із гумових листів. Вони забезпечують захист від будь-яких $(item)контактних зі шкірою$() небезпек, таких як бериліоз."
 		},
 		{
-			"type": "tfc:knapping_recipe",
-			"recipe": "tfchotornot:leather_knapping/mittens",
+			"type": "",
+			"recipe": "",
 			"text": "Спершу обробіть шкіру, щоб зробити рукавиці."
 		},
 		{
-			"type": "tfc:sealed_barrel_recipe",
-			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"type": "",
+			"recipe": "",
 			"text": "Потім рукавиці замочують в $(thing)оцеті$() – суміші фруктів та алкоголю."
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "tfg:latex_soaked_gloves",
+			"type": "",
+			"item": "",
 			"text": "Підготовлені шкіряні рукавички потім нагрівають у $(thing)чані$() з $(thing)вулканізованим латексом$(), за крок від гуми."
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "gtceu:rubber_gloves",
+			"type": "",
+			"item": "",
 			"text": "Нарешті, просочені латексом рукавички нагріваються у $(l:firmalife/oven)печі$()."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Камінці",
 			"item": {
-				"tag": "tfc:rock_knapping"
+				"tag": ""
 			},
 			"text": "Найпростіший спосіб запобігти потраплянню небезпечних предметів до вашого інвентарю – це взагалі їх не підбирати. Наприклад, заповнення інвентарю $(thing)камінням$() дозволить вам вибирати, які предмети ви бажаєте підібрати, а з небезпечними розберетеся пізніше."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Контейнери",
 			"text": "Небезпечні матеріали завдають шкоди лише тоді, коли вони знаходяться у вашому $(thing)інвентарі$(), але це не стосується інших контейнерів!$(br)Небезпечні матеріали не завдаватимуть шкоди, якщо вони знаходяться в іншому контейнері, наприклад, у $(l:tfg_tips/inventory_management)рюкзаку$() або $(l:getting_started/pottery#vessel)корчага$(). $(thing)Клацання ПКМ$(), тримаючи корчагу, дозволяє безпосередньо переносити її вміст до контейнерів і з контейнерів",
-			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+			"item": ""
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Прісна вода",
-			"item": "tfc:bucket/spring_water",
+			"item": "",
 			"text": "Стояння у $(thing)прісній воді $() забезпечить повільний ефект $(thing)регенерації$(), хоча ви не можете її пити."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Ліжко",
 			"item": {
-				"tag": "minecraft:beds"
+				"tag": ""
 			},
 			"text": "Якщо все інше не допомагає, принести із собою ліжко для відродження—це гарна ідея.$(br2)Якщо у вас немає доступу до $(thing)вовни$() або $(thing)нитки$(), ви також можете зробити $(l:getting_started/a_place_to_sleep)солом'яне ліжко$()."
 		}

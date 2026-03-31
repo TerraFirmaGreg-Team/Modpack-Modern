@@ -1,377 +1,377 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
+  "__comment__": "",
   "name": "Вироби зі скла",
-  "category": "tfc:mechanics",
-  "icon": "minecraft:glass",
+  "category": "",
+  "icon": "",
   "pages": [
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "Найпростішими скляними виробами є $(thing)скляні панелі$() та $(thing)скляні блоки$(). Щоб їх виготовити, потрібно почати зі $(l:mechanics/glassworking#blowpipe)склодувної трубки$() зі $(thing)скляною сумішшю$(), а потім виконати $(thing)виливання$().$(br)\n$(li)$(bold)Виливання на стіл$() використовується для створення $(thing)скляних панелей$()\n$(li)$(bold)Виливання у басейн$() використовується для створення $(thing)скляних блоків$()"
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "Скло також можна $(thing)забарвити$() перед заливанням, щоб отримати кольорове скло. Колір залежить від типу порції скла та будь‑яких доданих порошків.$(br2)Кожен тип $(thing)порції скла$() має свій природний колір скла, який він створює. $(thing)Силікатне$() скло можна виготовити в багатьох кольорах, тоді як $(thing)олівінове$() та $(thing)вулканічне$() скло можна зробити лише у відносно небагатьох кольорах."
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(thing)Скляні панелі$() виготовляються за допомогою $(thing)виливання на стіл$(). Стіл для виливання створюється шляхом розміщення до шістнадцяти $(thing)блоків каолінової глини$() або $(thing)блоків, вкритих латунню$() у суцільній площі.$(br2)\n1. Додай $(l:mechanics/glassworking)скляну суміш$() до $(thing)склодувної трубки$().$(br)\n2. Нагрійте склодувну трубку до $(4)$(bold)тьмяно-червоного$() кольору.$(br)\n3. Використай $(item)$(k:key.use)$() зі $(thing)склодувною трубкою$() на поверхні столу.$(br)\n4. Нарешті використайте $(item)$(k:key.use)$() з $(l:mechanics/glassworking#paddle)лопаткою$(), щоб розплющити скло.",
       "title": "Виливання на стіл"
     },
     {
-      "type": "patchouli:multiblock",
+      "type": "",
       "multiblock": {
         "mapping": {
-          "C": "#tfc:glass_pouring_table",
-          "0": "#tfc:glass_pouring_table"
+          "C": "",
+          "0": ""
         },
         "pattern": [
           [
-          "CCCC",
-          "CCC0",
-          "CCCC",
-          "CCCC"
+          "",
+          "",
+          "",
+          ""
           ]
         ]
       },
       "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(thing)Скляні блоки$() виготовляються за допомогою $(thing)виливання у басейн$(). Басейн створюється шляхом оточення повітряного блоку з усіх боків, крім верхнього, $(thing)блоками каолінової глини$() або $(thing)блоками, вкритими латунню$().$(br2)\n1. Додай $(l:mechanics/glassworking)скляну суміш$() до $(thing)склодувної трубки$().$(br)\n2. Нагрій склодувну трубку до $(4)$(bold)тьмяно-червоного$() кольору.$(br)\n3. Використай $(item)$(k:key.use)$() зі $(thing)склодувною трубкою$() на поверхні столу.",
       "title": "Виливання в басейн"
     },
     {
-      "type": "patchouli:multiblock",
+      "type": "",
       "multiblock": {
         "mapping": {
-          "C": "#tfc:glass_basin_blocks",
-          "0": "#tfc:glass_basin_blocks"
+          "C": "",
+          "0": ""
         },
         "pattern": [
           [
-          " C ",
-          "C C",
-          " C "
+          "",
+          "",
+          ""
           ],
           [
-          "   ",
-          " 0 ",
-          "   "
+          "",
+          "",
+          ""
           ]
         ]
       },
       "text": "Після охолодження скло можна розбити за допомогою $(l:mechanics/glassworking#saw)ювелірної пилки$(), щоб отримати його.",
-      "border": true
+      "border": ""
     },
     {
-      "type": "patchouli:crafting",
+      "type": "",
       "title": "Блоки для склоробства",
-      "recipe": "tfc:crafting/white_kaolin_clay",
+      "recipe": "",
       "text": "$(thing)Блоки, вкриті латунню$() можна створити, тримаючи $(thing)латунну пластину$() та використавши $(item)$(k:key.use)$() на будь-якому $(thing)кам’яному цегляному блоці$()."
     },
     {
-      "type": "patchouli:text",
-      "anchor": "coloring",
+      "type": "",
+      "anchor": "",
       "text": "Скло має природний колір залежно від типу $(l:mechanics/glassworking)скляної суміші$(), яка була використана. Інші кольори можна отримати за допомогою $(l:mechanics/bowls)миски$().$(br2)\nЩоб використати, постав $(l:mechanics/bowls)миску$() на землю, потім застосуй $(item)$(k:key.use)$() з потрібним $(thing)порошком$(). Перед $(thing)виливанням$() використайте $(thing)склодувну трубку$() на мисці, щоб додати порошок до суміші.",
       "title": "Фарбування скла"
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(li)$(bold)$(7)Білий$(): Силікатне або гематитове скло + $(thing)Кальцинована сода\n$()$(li)$(bold)$(0)Чорний$(): Будь-яке скло + $(thing)Графіт$()$(li)$(bold)$(8)Сірий$(): Будь-яке + $(thing)Графіт$() + $(thing)Кальцинована сода\n$()$(li)$(bold)$(7)Світло-сірий$(): Будь-яке + $(thing)Графіт$() + 2x $(thing)Кальцинована сода\n$()$(li)$(bold)$(5)Фіолетовий$(): Будь-яке + $(thing)Залізо$() + $(thing)Мідь$()$(li)$(bold)$(#964b00)Коричневий$(): Будь-яке + $(thing)Нікель$()$(li)$(bold)$(3)Бірюзовий$(): Не вулканічне скло + $(thing)Мідь$() + $(thing)Сапфір$()$(li)$(bold)$(2)Зелений$(): Селікатне або гематитове скло + $(thing)Залізо$()",
       "title": "Кольори барвників"
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(li)$(bold)$(a)Лаймовий$(): Силікатне або Гематитове скло + $(thing)Залізо$() + $(thing)Сода$()$(li)$(bold)$(b)Блакитний$(): Силікатне скло + $(thing)Лазур$()$(li)$(bold)$(1)Синій$(): Силікатне скло + $(thing)Мідь$()$(li)$(bold)$(4)Червоний$(): Силікатне або Гематитове скло + $(thing)Олово$()$(li)$(bold)$(6)Жовтий$(): Силікатне або Гематитове скло + $(thing)Срібло$()$(li)$(bold)$(#ef8e38)Помаранчевий$(): Силікатне скло + $(thing)Пірит$()$(li)$(bold)$(5)Пурпуровий$(): Силікатне або Гематитове скло + $(thing)Рубін$()$(li)$(bold)$(d)Рожевий$(): Силікатне скло + $(thing)Золото$()$(li)$(bold)$(0)Тоноване$(): Несилікатне скло + $(thing)Аметист$()"
     },
     {
-      "type": "tfc:table_small",
+      "type": "",
       "strings": [
         {
           "text": ""
         },
         {
-          "text": "C"
+          "text": ""
         },
         {
-          "text": "T"
+          "text": ""
         },
         {
-          "fill": "0xff42f2"
+          "fill": ""
         },
         {
-          "fill": "0x8af3ff"
+          "fill": ""
         },
         {
-          "fill": "0x526cff"
+          "fill": ""
         },
         {
-          "fill": "0xe3e3e3"
+          "fill": ""
         },
         {
-          "fill": "0xe69407"
+          "fill": ""
         },
         {
-          "fill": "0xc738c9"
+          "fill": ""
         },
         {
-          "fill": "0xffe81c"
+          "fill": ""
         },
         {
-          "fill": "0x48ff1f"
+          "fill": ""
         },
         {
-          "fill": "0xe01414"
+          "fill": ""
         },
         {
-          "fill": "0x0c9400"
+          "fill": ""
         },
         {
-          "fill": "0x188a9e"
+          "fill": ""
         },
         {
-          "fill": "0x7d4f00"
+          "fill": ""
         },
         {
-          "fill": "0x6e059c"
+          "fill": ""
         },
         {
-          "fill": "0x7d7d7d"
+          "fill": ""
         },
         {
-          "fill": "0xbdbdbd"
+          "fill": ""
         },
         {
-          "fill": "0x000000"
+          "fill": ""
         },
         {
           "text": "Силікат"
         },
         {
-          "fill": "0x3d42a8"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
           "text": "Гематит"
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3d42a8"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
           "text": "Олівін"
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3d42a8"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
           "text": "Вулканічний"
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3d42a8"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0xb33e3e"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         },
         {
-          "fill": "0x3eb340"
+          "fill": ""
         }
       ],
       "text": "Доступність кольорів скла. 'C' означає прозоре, 'T' — тоноване. Кольори можна виготовити лише з певних скляних сумішей.",
@@ -379,56 +379,56 @@
       "legend": [
         {
           "text": "Можна виготовити",
-          "color": "0x3eb340"
+          "color": ""
         },
         {
           "text": "Не можна виготовити",
-          "color": "0xb33e3e"
+          "color": ""
         },
         {
           "text": "Стандартний колір",
-          "color": "0x3d42a8"
+          "color": ""
         }
       ],
-      "columns": 18,
-      "first_column_width": 35,
-      "column_width": 10,
-      "row_height": 10,
-      "left_buffer": 5,
-      "top_buffer": 15,
-      "draw_background": true
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
     },
     {
-      "type": "patchouli:empty",
-      "draw_filler": false
+      "type": "",
+      "draw_filler": ""
     },
     {
-      "type": "tfc:glassworking_recipe",
-      "anchor": "lamp_glass",
-      "recipe": "tfc:glassworking/lamp_glass",
+      "type": "",
+      "anchor": "",
+      "recipe": "",
       "text": "$(thing)Скло для ламп$() є необхідним компонентом для створення $(l:mechanics/lamps)ламп$()."
     },
     {
-      "type": "tfc:glassworking_recipe",
-      "anchor": "jar",
-      "recipe": "tfc:glassworking/jar",
+      "type": "",
+      "anchor": "",
+      "recipe": "",
       "text": "$(l:mechanics/jarring)Банки$() також виготовляються з видувного скла, але лише з силікатного або гематитового скла."
     },
     {
-      "type": "tfc:glassworking_recipe",
-      "anchor": "glass_bottle",
-      "recipe": "tfc:glassworking/silica_bottle",
+      "type": "",
+      "anchor": "",
+      "recipe": "",
       "text": "$(thing)Скляні пляшки$() також можна виготовляти. Якість скляної пляшки залежить від типу скла, з якого вона зроблена."
     },
     {
-      "type": "tfc:glassworking_recipe",
-      "recipe": "tfc:glassworking/lens",
+      "type": "",
+      "recipe": "",
       "text": "$(thing)Лінза$() використовується для створення $(thing)підзорної труби$(), $(thing)компаса$() та інших предметів."
     }
   ],
-  "read_by_default": true,
+  "read_by_default": "",
   "extra_recipe_mappings": {
-    "tag:tfc:glass_batches": 1,
-    "tag:forge:glass": 2
+    "tag:tfc:glass_batches": "",
+    "tag:forge:glass": ""
   }
 }

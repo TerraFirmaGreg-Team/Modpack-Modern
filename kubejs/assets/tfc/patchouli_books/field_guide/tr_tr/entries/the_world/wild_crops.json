@@ -1,0 +1,688 @@
+{
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "pattern": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ],
+        "mapping": {
+          "X": ""
+        }
+      },
+      "name": "Yabani Buğday",
+      "text": "",
+      "enable_visualize": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Crop",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "Arpa"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Yulaf"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Çavdar"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Mısır"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Buğday"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Pirinç"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Turp"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Lahana"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Havuç"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Sarımsak"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Yeşil Fasülye"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Karpuz"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Crop",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "Patates"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Bal Kabağı"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Soğan"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Soya Fasülyesi"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Su Kabağı"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Şeker Kamışı"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Domates"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Jüt"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Papyrus"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Red Bell Pepper"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Yellow Bell Pepper"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Crop",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    }
+  ],
+  "read_by_default": "",
+  "sortnum": "",
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": ""
+  }
+}

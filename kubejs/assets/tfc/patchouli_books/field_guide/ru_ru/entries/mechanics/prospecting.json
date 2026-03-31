@@ -17,7 +17,7 @@
       "anchor": "propick",
       "item": "tfc:metal/propick/copper",
       "title": "Кирка геолога",
-      "link_recipes": false,
+      "link_recipes": "",
       "text": "Если вы ищете металлические руды или жилы минералов (у которых нет самородков), и вы не можете найти жилу наугад, стоит достать $(thing)Геологический молоток$(). Он исследует область 25x25x25(зависит от его материала), центрируясь на блоке, по которому кликнули, и сообщает в строке действий количество и тип найденной руды."
     },
     {
@@ -61,7 +61,7 @@
       "anchor": "prospector",
       "item": "gtceu:prospector.lv",
       "title": "Цифровой сканер руд",
-      "link_recipes": false,
+      "link_recipes": "",
       "text": "Технологии! Нечего искать руды как первобытный человек, теперь вы можете искать их залежи по-новому. $(br)$(item)Сканер руд $() - решение из $(thing)GregTech$() для поиска жил и жидкостей в коре вашего мира. Возможности конкретной геологической кирки зависят от её $(#ff1100)уровня$()."
     },
     {
@@ -76,15 +76,15 @@
   ],
   "read_by_default": true,
   "extra_recipe_mappings": {
-    "tfc:metal/propick/bismuth_bronze": 2,
-    "tfc:metal/propick/black_bronze": 2,
-    "tfc:metal/propick/bronze": 2,
-    "tfc:metal/propick/copper": 2,
-    "tfc:metal/propick/wrought_iron": 2,
-    "tfc:metal/propick/steel": 2,
-    "tfc:metal/propick/black_steel": 2,
-    "tfc:metal/propick/blue_steel": 2,
-    "tfc:metal/propick/red_steel": 2,
+    "tfc:metal/propick/bismuth_bronze": "",
+    "tfc:metal/propick/black_bronze": "",
+    "tfc:metal/propick/bronze": "",
+    "tfc:metal/propick/copper": "",
+    "tfc:metal/propick/wrought_iron": "",
+    "tfc:metal/propick/steel": "",
+    "tfc:metal/propick/black_steel": "",
+    "tfc:metal/propick/blue_steel": "",
+    "tfc:metal/propick/red_steel": "",
     "gtceu:prospector.lv": 10,
     "gtceu:prospector.hv": 10,
     "gtceu:prospector.luv": 10

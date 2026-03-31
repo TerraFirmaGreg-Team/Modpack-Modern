@@ -1,0 +1,168 @@
+{
+	"__comment__": "",
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						"",
+						"",
+						"",
+						"",
+						""
+					],
+					[
+						"",
+						"",
+						"",
+						"",
+						""
+					]
+				],
+				"mapping": {
+					"G": "",
+					"1": "",
+					"2": "",
+					"3": "",
+					"4": "",
+					"5": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"images": [
+				""
+			],
+			"text": "",
+			"border": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"recipes": [
+				"",
+				"",
+				"",
+				""
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipe": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipes": [
+				""
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipes": [
+				""
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipes": [
+				"",
+				"",
+				""
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipes": [
+				""
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"recipes": [
+				"",
+				"",
+				"",
+				""
+			],
+			"text": ""
+		}
+	],
+	"read_by_default": "",
+	"sortnum": "",
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": "",
+		"tfc:stone/knife_head/metamorphic": "",
+		"tfc:stone/knife_head/igneous_extrusive": "",
+		"tfc:stone/knife_head/igneous_intrusive": "",
+		"tfc:stone/knife/sedimentary": "",
+		"tfc:stone/knife/metamorphic": "",
+		"tfc:stone/knife/igneous_extrusive": "",
+		"tfc:stone/knife/igneous_intrusive": "",
+		"tfc:stone/axe_head/sedimentary": "",
+		"tfc:stone/axe_head/metamorphic": "",
+		"tfc:stone/axe_head/igneous_extrusive": "",
+		"tfc:stone/axe_head/igneous_intrusive": "",
+		"tfc:stone/axe/sedimentary": "",
+		"tfc:stone/axe/metamorphic": "",
+		"tfc:stone/axe/igneous_extrusive": "",
+		"tfc:stone/axe/igneous_intrusive": "",
+		"tfc:stone/shovel_head/sedimentary": "",
+		"tfc:stone/shovel_head/metamorphic": "",
+		"tfc:stone/shovel_head/igneous_extrusive": "",
+		"tfc:stone/shovel_head/igneous_intrusive": "",
+		"tfc:stone/shovel/sedimentary": "",
+		"tfc:stone/shovel/metamorphic": "",
+		"tfc:stone/shovel/igneous_extrusive": "",
+		"tfc:stone/shovel/igneous_intrusive": "",
+		"tfc:stone/hoe_head/sedimentary": "",
+		"tfc:stone/hoe_head/metamorphic": "",
+		"tfc:stone/hoe_head/igneous_extrusive": "",
+		"tfc:stone/hoe_head/igneous_intrusive": "",
+		"tfc:stone/hoe/sedimentary": "",
+		"tfc:stone/hoe/metamorphic": "",
+		"tfc:stone/hoe/igneous_extrusive": "",
+		"tfc:stone/hoe/igneous_intrusive": "",
+		"tfc:stone/hammer_head/sedimentary": "",
+		"tfc:stone/hammer_head/metamorphic": "",
+		"tfc:stone/hammer_head/igneous_extrusive": "",
+		"tfc:stone/hammer_head/igneous_intrusive": "",
+		"tfc:stone/hammer/sedimentary": "",
+		"tfc:stone/hammer/metamorphic": "",
+		"tfc:stone/hammer/igneous_extrusive": "",
+		"tfc:stone/hammer/igneous_intrusive": "",
+		"tfc:stone/javelin_head/sedimentary": "",
+		"tfc:stone/javelin_head/metamorphic": "",
+		"tfc:stone/javelin_head/igneous_extrusive": "",
+		"tfc:stone/javelin_head/igneous_intrusive": "",
+		"tfc:stone/javelin/sedimentary": "",
+		"tfc:stone/javelin/metamorphic": "",
+		"tfc:stone/javelin/igneous_extrusive": "",
+		"tfc:stone/javelin/igneous_intrusive": ""
+	}
+}

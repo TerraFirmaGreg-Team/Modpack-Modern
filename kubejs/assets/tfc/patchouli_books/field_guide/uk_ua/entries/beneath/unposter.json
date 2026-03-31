@@ -1,16 +1,16 @@
 {
 	"name": "Антипостер",
-	"category": "tfc:beneath",
-	"icon": "beneath:unposter",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "$(thing)Антипостер$() використовується для вирощування грибів. У нього можна помістити гриби та незерські культури. Якщо він розташований поруч із грибом, то щодня споживатиме предмети всередині, щоб розмножувати цей гриб у навколишній області."
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/unposter"
+			"type": "",
+			"recipe": ""
 		}
 	],
-	"read_by_default": true
+	"read_by_default": ""
 }

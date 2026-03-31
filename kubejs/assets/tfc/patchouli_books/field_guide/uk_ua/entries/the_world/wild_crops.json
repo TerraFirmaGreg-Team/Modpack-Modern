@@ -1,344 +1,344 @@
 {
   "name": "Дикі рослини",
-  "category": "tfc:the_world",
-  "icon": "tfc:textures/gui/book/icons/wild_crops.png",
+  "category": "",
+  "icon": "",
   "pages": [
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "$(thing)Дикі рослини$() можна знайти розкиданими по світу, вони ростуть невеликими ділянками. Їх можна збирати для отримання їжі та насіння, які потім можна вирощувати вже в окультуреному вигляді.$(br2)Збирати дикі культури можна кулаками, або за допомогою $(thing)ножа$() чи іншого гострого інструмента. Після зрізання з них випадає $(thing)насіння$() та деякі $(thing)продукти$()."
     },
     {
-      "type": "patchouli:multiblock",
+      "type": "",
       "multiblock": {
         "pattern": [
           [
-            "X"
+            ""
           ],
           [
-            "0"
+            ""
           ]
         ],
         "mapping": {
-          "X": "tfc:wild_crop/wheat[mature=true]"
+          "X": ""
         }
       },
       "name": "Дика пшениця",
       "text": "Приклад дикої культури, у цьому випадку $(l:mechanics/crops#wheat)Пшениця$().",
-      "enable_visualize": false
+      "enable_visualize": ""
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "Кожна $(l:mechanics/crops)рослина$(), яку можна вирощувати, також зустрічається в дикій природі. Дикі культури виглядають схожими на свої окультурені аналоги, але вони сильніше приховані в траві. Дикі культури є стиглими лише з червня по жовтень. В інший час вони виглядають мертвими до наступного літа."
     },
     {
-      "type": "tfc:multimultiblock",
+      "type": "",
       "text": "Усі види різних диких рослин",
       "multiblocks": [
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/barley"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/oat"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/rye"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "Y"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/maize[part=top]",
-            "Y": "tfc:wild_crop/maize[part=bottom]"
+            "X": "",
+            "Y": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/barley"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/rice[fluid=water]"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/beet"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/cabbage"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/carrot"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/garlic"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "Y"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/green_bean[part=top]",
-            "Y": "tfc:wild_crop/green_bean[part=bottom]"
+            "X": "",
+            "Y": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/potato"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/onion"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/soybean"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/squash"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "Y"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/sugarcane[part=top]",
-            "Y": "tfc:wild_crop/sugarcane[part=bottom]"
+            "X": "",
+            "Y": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "Y"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/tomato[part=top]",
-            "Y": "tfc:wild_crop/tomato[part=bottom]"
+            "X": "",
+            "Y": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "Y"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/jute[part=top]",
-            "Y": "tfc:wild_crop/jute[part=bottom]"
+            "X": "",
+            "Y": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/pumpkin"
+            "X": ""
           }
         },
         {
           "pattern": [
             [
-              "X"
+              ""
             ],
             [
-              "0"
+              ""
             ]
           ],
           "mapping": {
-            "X": "tfc:wild_crop/melon"
+            "X": ""
           }
         }
       ]
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "Дикі рослини з’являються в кліматі, близькому до того, де саму культуру можна вирощувати, тому, якщо ви шукаєте конкретну культуру, шукайте її в кліматі, де вона культивується. Проте, на відміну від $(l:mechanics/crops)рослин$(), які посадив гравець, дикі культури не потребують $(l:mechanics/hydration)орошення$(). Замість цього вони зустрічаються в областях, що залежать від середньої $()температури$() та $()опадів$().",
       "title": "Пошук диких рослин"
     },
     {
-      "type": "patchouli:text",
+      "type": "",
       "text": "На наступних сторінках наведено таблицю середовищ, де можна знайти дикі рослини."
     },
     {
-      "type": "tfc:table",
+      "type": "",
       "strings": [
         {
           "text": "Рослина",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Температура (°C)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Опади (мм)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Ячмінь"
@@ -452,32 +452,32 @@
       "text": "",
       "title": "Вимоги для диких рослин",
       "legend": [],
-      "columns": 2,
-      "first_column_width": 80,
-      "column_width": 70,
-      "row_height": 10,
-      "left_buffer": 2,
-      "top_buffer": 12,
-      "draw_background": false
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
     },
     {
-      "type": "patchouli:empty",
-      "draw_filler": false
+      "type": "",
+      "draw_filler": ""
     },
     {
-      "type": "tfc:table",
+      "type": "",
       "strings": [
         {
           "text": "Рослина",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Температура (°C)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Опади (мм)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Картопля"
@@ -591,32 +591,32 @@
       "text": "",
       "title": "Вимоги для диких рослин",
       "legend": [],
-      "columns": 2,
-      "first_column_width": 80,
-      "column_width": 70,
-      "row_height": 10,
-      "left_buffer": 2,
-      "top_buffer": 12,
-      "draw_background": false
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
     },
     {
-      "type": "patchouli:empty",
-      "draw_filler": false
+      "type": "",
+      "draw_filler": ""
     },
     {
-      "type": "tfc:table",
+      "type": "",
       "strings": [
         {
           "text": "Рослина",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Температура (°C)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Опади (мм)",
-          "bold": true
+          "bold": ""
         },
         {
           "text": "Ріпак"
@@ -667,22 +667,22 @@
       "text": "",
       "title": "Вимоги для диких рослин",
       "legend": [],
-      "columns": 2,
-      "first_column_width": 80,
-      "column_width": 70,
-      "row_height": 10,
-      "left_buffer": 2,
-      "top_buffer": 12,
-      "draw_background": false
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
     },
     {
-      "type": "patchouli:empty",
-      "draw_filler": false
+      "type": "",
+      "draw_filler": ""
     }
   ],
-  "read_by_default": true,
-  "sortnum": 4,
+  "read_by_default": "",
+  "sortnum": "",
   "extra_recipe_mappings": {
-    "tag:tfc:wild_crops": 0
+    "tag:tfc:wild_crops": ""
   }
 }

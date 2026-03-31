@@ -1,0 +1,688 @@
+{
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "pattern": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ],
+        "mapping": {
+          "X": ""
+        }
+      },
+      "name": "Trigo Selvagem",
+      "text": "",
+      "enable_visualize": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": "",
+            "Y": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        },
+        {
+          "pattern": [
+            [
+              ""
+            ],
+            [
+              ""
+            ]
+          ],
+          "mapping": {
+            "X": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Plantação",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "Cevada"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Aveia"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Centeio"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Milho"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Trigo"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Arroz"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Beterraba"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Alface"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Cenoura"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Alho"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Feijão Verde"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Melancia"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Plantação",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "Batata"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Abóbora"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Cebola"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Soja"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Moringa"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Cana-de-Açúcar"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Tomate"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Juta"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Papiro"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Pimentão Vermelho"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Pimentão Amarelo"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Girassol"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    },
+    {
+      "type": "",
+      "strings": [
+        {
+          "text": "Plantação",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "",
+          "bold": ""
+        },
+        {
+          "text": "Canola"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "Linho"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "text": "",
+      "title": "",
+      "legend": [],
+      "columns": "",
+      "first_column_width": "",
+      "column_width": "",
+      "row_height": "",
+      "left_buffer": "",
+      "top_buffer": "",
+      "draw_background": ""
+    },
+    {
+      "type": "",
+      "draw_filler": ""
+    }
+  ],
+  "read_by_default": "",
+  "sortnum": "",
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": ""
+  }
+}
