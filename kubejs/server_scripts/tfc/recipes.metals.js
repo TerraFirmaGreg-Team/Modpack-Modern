@@ -237,6 +237,11 @@ function registerTFCMetalsRecipes(event) {
 		.resultFluid(Fluid.of('gtceu:iron', 288))
 		.id(`tfc:heating/grill`)
 
+	// Wrought Iron Grill
+	event.recipes.tfc.anvil('tfc:wrought_iron_grill', '#forge:double_plates/wrought_iron', ['punch_last', 'draw_any', 'punch_not_last'])
+		.tier(3)
+		.id(`tfc:anvil/wrought_iron_grill`)
+
 	// Ванильная дверь декрафт
 	event.recipes.tfc.heating('minecraft:iron_door', 1535)
 		.resultFluid(Fluid.of('gtceu:iron', 288))
