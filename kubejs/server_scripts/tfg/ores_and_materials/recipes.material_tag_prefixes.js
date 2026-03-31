@@ -472,6 +472,7 @@ function processBuzzsawBlade(event, material) {
 			.id(`tfg:vi/lathe/${materialName}_buzzsaw`)
 	}
 
+	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	addMaterialRecycling(event, buzzsawBladeItem, material, 'buzz_saw_blade', TagPrefix.toolHeadBuzzSaw);
 
 	event.remove({ id: `gtceu:shaped/buzzsaw_blade_${materialName}` })
