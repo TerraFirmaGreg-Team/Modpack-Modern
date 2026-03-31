@@ -1,0 +1,29 @@
+{
+	"name": "獨特方塊",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
+			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"text": "輝石岩引水道可以輸送熔岩至任何距離。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"text": "地獄磚是一種建築磚塊，也可用於地獄熔爐。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ancient_altar",
+			"text": "輝石岩基座可用於展示想要展示的物品！"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_brick",
+			"text": "片麻岩和輝石岩磚的製作方式與普通磚塊相同，包含需要先製作磚塊本身。"
+		}
+	],
+	"read_by_default": true
+}
