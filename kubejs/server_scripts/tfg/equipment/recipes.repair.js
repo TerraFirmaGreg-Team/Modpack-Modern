@@ -6,7 +6,7 @@ function registerTFGRepairRecipes(event) {
 	const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
 	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer']
 	const ONLY_COLORED_TOOLS = ['buzzsaw']
-	const TFC_EQUIPMENT_METAL_GEAR = [ 'propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'horse_armor' ]
+	const TFC_EQUIPMENT_METAL_GEAR = [ 'propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'horse_armor', 'javelin' ]
 	const SNS_METALS = [ 'steel', 'black_steel', 'blue_steel', "red_steel" ]
 
 	const LEATHER_REPAIR_GEAR = [
@@ -38,6 +38,18 @@ function registerTFGRepairRecipes(event) {
 
 	const SPECIAL_REPAIRS = [
 		{ item: "grapplemod:grapplinghook", material: "gtceu:repair_kit_wrought_iron" },
+
+		{ item: "constructionwand:stone_wand", material: "gtceu:repair_kit_copper" },
+		{ item: "constructionwand:iron_wand", material: "gtceu:repair_kit_wrought_iron" },
+		{ item: "constructionwand:diamond_wand", material: "gtceu:repair_kit_blue_steel" },
+
+		{ item: "tfg:fishing_net/brass", material: "gtceu:brass_bolt" },
+		{ item: "tfg:fishing_net/rose_gold", material: "gtceu:rose_gold_bolt" },
+		{ item: "tfg:fishing_net/sterling_silver", material: "gtceu:sterling_silver_bolt" },
+		{ item: "tfg:fishing_net/invar", material: "gtceu:invar_bolt" },
+		{ item: "tfg:fishing_net/tin_alloy", material: "gtceu:tin_alloy_bolt" },
+		{ item: "tfg:fishing_net/cupronickel", material: "gtceu:cupronickel_bolt" },
+		{ item: "tfg:fishing_net/magnalium", material: "gtceu:magnalium_bolt" },
 
 		{ item: "create:netherite_diving_boots", material: "gtceu:repair_kit_blue_steel" },
 		{ item: "create:netherite_diving_helmet", material: "gtceu:repair_kit_blue_steel" },
