@@ -1,0 +1,19 @@
+{
+  "block.ftbquests.detector.player": "Player Detector",
+  "block.ftbquests.detector.player.height": "高さ",
+  "block.ftbquests.detector.player.radius": "半径",
+  "block.ftbquests.screen.size": "容量",
+  "ftbquests.chapter.image.height": "高さ",
+  "ftbquests.chapter.image.rotation": "繰り返し",
+  "ftbquests.chapter.image.width": "幅",
+  "ftbquests.gui.reset_progress": "進行度をリセット",
+  "ftbquests.loot.entitytype.passive": "レベル最小",
+  "ftbquests.null": "無し",
+  "ftbquests.quest.appearance.size": "容量",
+  "ftbquests.quest.shape.diamond": "Diamond",
+  "ftbquests.quest_link.size": "容量",
+  "ftbquests.reward.ftbquests.npc_mail.items": "個",
+  "ftbquests.reward_table.weight": "重量",
+  "ftbquests.task.ftbquests.fluid.amount": "金額",
+  "ftbquests.task.ftbquests.kill.entity": "エンティティ名"
+}

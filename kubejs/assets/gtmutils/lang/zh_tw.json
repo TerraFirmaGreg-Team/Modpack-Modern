@@ -1,0 +1,13 @@
+{
+  "block.gtmutils.enlarged_stocking_bus.desc.0": "直接從ME網路取用物品",
+  "block.gtmutils.enlarged_stocking_hatch.desc.0": "直接從ME網路取用流體",
+  "block.gtmutils.tag_enlarged_stocking_bus.desc.0": "直接從ME網路取用物品",
+  "block.gtmutils.tag_enlarged_stocking_hatch.desc.0": "直接從ME網路取用流體",
+  "block.gtmutils.tag_stocking_bus.desc.0": "直接從ME網路取用物品",
+  "block.gtmutils.tag_stocking_hatch.desc.0": "直接從ME網路取用流體",
+  "item.gtceu.tool.mv_chainsaw": "%s鏈鋸（§bMV§r）",
+  "tooltip.omnibreaker.charge_status": "電量：%s EU / %s EU",
+  "tooltip.omnibreaker.tool_mode_1": "扳手",
+  "tooltip.omnibreaker.tool_mode_2": "螺絲起子",
+  "tooltip.omnibreaker.tool_mode_4": "撬棍"
+}
