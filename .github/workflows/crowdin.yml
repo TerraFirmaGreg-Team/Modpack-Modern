@@ -48,7 +48,8 @@ jobs:
         with:
           upload_sources: true
           download_translations: true
-          # export_only_approved: true
+          export_only_approved: true
+          # skip_untranslated_files: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
@@ -75,16 +76,21 @@ jobs:
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
       - name: Remove empty translation files
+        id: remove_empty
         run: |
           echo "Removing empty translation files..."
-          find kubejs/assets -name "*.json" -type f | while read file; do
+          CHANGED=false
+          for file in $(find kubejs/assets -name "*.json" -type f); do
             if [ "$(jq -r 'keys | length' "$file" 2>/dev/null)" -eq 0 ]; then
               echo "Removing empty file: $file"
               rm "$file"
+              CHANGED=true
             fi
           done
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
 
       - name: Commit removed files
+        if: steps.remove_empty.outputs.changed == 'true'
         uses: devops-infra/action-commit-push@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
