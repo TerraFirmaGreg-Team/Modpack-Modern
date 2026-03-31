@@ -16,10 +16,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: write
-  pull-requests: write
-
 env:
   LOCALIZATION_BRANCH: translations
   TARGET_BRANCH: dev
@@ -42,6 +38,7 @@ jobs:
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
+          commit_message: "[translation] New translations"
           config: .github/config/crowdin_patchouli.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -66,13 +63,13 @@ jobs:
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
+          commit_message: "[translation] New translations"
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
-  # Create Pull Request after all syncs are done
   create-pr:
     name: "[🤝] Create Pull Request"
     runs-on: ubuntu-latest
