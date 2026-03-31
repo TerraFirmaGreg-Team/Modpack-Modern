@@ -14861,7 +14861,7 @@
             ]
         },
         {
-            "pakku_id": "xCpLjCguyfdGP47K",
+            "pakku_id": "YSoDLidLSJf6hdpZ",
             "type": "SHADER",
             "side": "CLIENT",
             "slug": {
@@ -14879,25 +14879,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7843/588/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
-                    "id": "7843588",
+                    "url": "https://edge.forgecdn.net/files/7848/994/TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
+                    "id": "7848994",
                     "parent_id": "954161",
                     "hashes": {
-                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329",
-                        "md5": "a50a19911603d13b1b34c40c001009e1"
+                        "sha1": "263df9a4b9b9c2961a595fe9016c4038fec12144",
+                        "md5": "a80ecaa35252d89c90fbdbb59eed3b70"
                     },
                     "required_dependencies": [],
-                    "size": 2252352,
-                    "date_published": "2026-03-30T00:07:45.630Z"
+                    "size": 2251469,
+                    "date_published": "2026-03-31T03:18:04.367Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -14907,16 +14907,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/cgsXvszz/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
-                    "id": "cgsXvszz",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/TuhpCFo4/TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
+                    "id": "TuhpCFo4",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "7f5eb25efae9a7ccb1e8511ce460a5e51009e76e951385d0a04e13f86725718f591ddfa15f9325b639e0a5778da3ce1ee6602a22e5025b060bb180541de284a5",
-                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329"
+                        "sha512": "d6b19b02541386709e7d8bfdb8b8a2dc3c4cc604066c09d7a1f4979e5de541bc91577c8d628ecb5e51b326ce2bae5062d53a039d8832f59cefd2d4ede5131d14",
+                        "sha1": "263df9a4b9b9c2961a595fe9016c4038fec12144"
                     },
                     "required_dependencies": [],
-                    "size": 2252352,
-                    "date_published": "2026-03-30T00:07:47.295651Z"
+                    "size": 2251469,
+                    "date_published": "2026-03-31T03:18:07.913223Z"
                 }
             ]
         },
