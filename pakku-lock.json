@@ -8576,7 +8576,10 @@
             ]
         },
         {
-            "pakku_id": "DN5fOe2DcDRXbD4t",
+            "pakku_id": "8XO2vCNl00TcjiTl",
+            "pakku_links": [
+                "y0UC3kpLVhVgLz9b"
+            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -8594,7 +8597,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "iris_shader_folder-1.2.5-forge.jar",
+                    "file_name": "iris_shader_folder-1.2.6-forge.jar",
                     "mc_versions": [
                         "1.20.2-Snapshot",
                         "1.20.5-Snapshot",
@@ -8612,32 +8615,23 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7156/940/iris_shader_folder-1.2.5-forge.jar",
-                    "id": "7156940",
+                    "url": "https://edge.forgecdn.net/files/7850/795/iris_shader_folder-1.2.6-forge.jar",
+                    "id": "7850795",
                     "parent_id": "1351246",
                     "hashes": {
-                        "sha1": "25c96039cbde065c339fff6e19a1992d5781ed4e",
-                        "md5": "1739a63b4267f89028bba5ba4fee9fba"
+                        "sha1": "1718b74961b8922e262f768632ccdc46ecaeb25a",
+                        "md5": "43345e21683319fa56a54421bebc59e2"
                     },
-                    "required_dependencies": [],
-                    "size": 195272,
-                    "date_published": "2025-10-27T18:13:15.193Z"
+                    "required_dependencies": [
+                        "581495"
+                    ],
+                    "size": 194223,
+                    "date_published": "2026-03-31T13:50:53.193Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "iris_shader_folder-1.2.5-forge.jar",
+                    "file_name": "iris_shader_folder-1.2.6-forge.jar",
                     "mc_versions": [
-                        "1.13",
-                        "1.13.1",
-                        "1.13.2",
-                        "1.14",
-                        "1.14.1",
-                        "1.14.2",
-                        "1.14.3",
-                        "1.14.4",
-                        "1.15",
-                        "1.15.1",
-                        "1.15.2",
                         "1.16",
                         "1.16.1",
                         "1.16.2",
@@ -8660,34 +8654,24 @@
                         "1.20.3",
                         "1.20.4",
                         "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.11"
+                        "1.20.6"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/akjo8k0G/iris_shader_folder-1.2.5-forge.jar",
-                    "id": "akjo8k0G",
+                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/KYvsvg6S/iris_shader_folder-1.2.6-forge.jar",
+                    "id": "KYvsvg6S",
                     "parent_id": "yv6sGJzN",
                     "hashes": {
-                        "sha512": "32ed7e753e961e26621e1bb9a94605bf33a2b2ba30991e6a360e81cbdd87c83bf0c139c891c46538d05e65169c1eca0817838e41ebb3d28df614d8cd9c1679ed",
-                        "sha1": "25c96039cbde065c339fff6e19a1992d5781ed4e"
+                        "sha512": "2b6494a9cb7f17df3f553c55a1050fcbdac5cd2b82df22549cc4469aa7f5a8e758cd2f1d6e7180d17e5331ffcaa061619e4881c7d323c5033c6c559710e989f3",
+                        "sha1": "1718b74961b8922e262f768632ccdc46ecaeb25a"
                     },
-                    "required_dependencies": [],
-                    "size": 195272,
-                    "date_published": "2025-10-27T18:11:30.226023Z"
+                    "required_dependencies": [
+                        "GchcoXML"
+                    ],
+                    "size": 194223,
+                    "date_published": "2026-03-31T13:38:58.044105Z"
                 }
             ]
         },
