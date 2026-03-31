@@ -54,6 +54,16 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_ID: ${{ vars.CROWDIN_ID }}
 
+      - name: Remove empty translation files
+        run: |
+          echo "Removing empty translation files..."
+          find kubejs/assets -name "*.json" -type f | while read file; do
+            if [ "$(jq -r 'keys | length' "$file" 2>/dev/null)" -eq 0 ]; then
+              echo "Removing empty file: $file"
+              rm "$file"
+            fi
+          done
+
       - name: Сrowdin (Patchouli)
         uses: crowdin/github-action@v2
         with:
