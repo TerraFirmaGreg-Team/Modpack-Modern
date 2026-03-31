@@ -16,6 +16,7 @@
 - Fixed water wheels not working at full strength in the new worldgen river biomes @Pyritie
 - Fixed grapes and hollow shells not spawning @Pyritie
 - Fixed sunflowers, canola, flax, radishes, lentils, cucmbers, basil, bay laurel, cardamom, cilantro, cumin, oregano, pimento, and vanilla not spawning @Pyritie
+- Fixed some dropped illager tools having the wrong stats @Pyritie
 ### Translation updates
 
 ## [0.12.0] - 30-03-2026

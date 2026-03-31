@@ -198,9 +198,9 @@ function registerPrimitiveCreaturesLoots(event) {
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
-			Item.of('tfg:arsenic_bronze_spade', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
-			Item.of('tfg:arsenic_bronze_scythe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.2f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:6.5f},HideFlags:2}'),
-			Item.of('tfg:arsenic_bronze_mining_hammer', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1,TorchPlacing:1b},GT.Tool:{AttackDamage:3.5f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:18431,ToolSpeed:5.0f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_spade', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_scythe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:2,AoELayer:2,AoERow:2,MaxAoEColumn:2,MaxAoELayer:2,MaxAoERow:2},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_mining_hammer', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1,TorchPlacing:1b},HideFlags:2}'),
 			Item.of('tfg:arsenic_bronze_sword')])
 	event.addEntityLootModifier('primitive_creatures:nahida')
 		.addWeightedLoot([
@@ -225,7 +225,7 @@ function registerPrimitiveCreaturesLoots(event) {
 		.addWeightedLoot([2, 3], ['tfg:food/raw_long_pig_filet'])
 		.addWeightedLoot([
 			Item.of('tfg:arsenic_bronze_sword'),
-			Item.of('tfg:arsenic_bronze_axe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},GT.Tool:{AttackDamage:7.0f,AttackSpeed:-3.4f,DefaultEnchantments:[],HarvestLevel:2,MaxDamage:6143,ToolSpeed:4.5f},HideFlags:2}'),
+			Item.of('tfg:arsenic_bronze_axe', '{Damage:0,DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},HideFlags:2}'),
 			LootEntry.of('sns:burlap_sack'),
 			LootEntry.of('sns:seed_pouch'),
 			LootEntry.of('sns:ore_sack')])
