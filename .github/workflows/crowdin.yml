@@ -68,10 +68,13 @@ jobs:
               rm "$file"
             fi
           done
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --cached --quiet || git commit -m "Remove empty translation files"
+
+      - name: Commit removed files
+        uses: devops-infra/action-commit-push@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "Remove empty translation files"
+          target_branch: ${{ env.LOCALIZATION_BRANCH }}
 
       - name: Сrowdin (Patchouli)
         uses: crowdin/github-action@v2
