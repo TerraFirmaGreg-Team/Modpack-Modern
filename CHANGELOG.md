@@ -2,7 +2,25 @@
 
 ## Unreleased
 ### Changes
+- Added a recipe to turn driftwood into sticks @Pyritie
+- Clay can now spawn in coarse dirt (but if you're in hot/dry climates, try finding a Mud Flats biome) (#3637) @Pyritie
+- GregTech ore indicators also no longer appear on the minimap @BlueBoat29
+- Improved the rarity section of the ore vein EMI tab @SakuraKitsurugi
+- Removed some biomes that illages were spawning weirdly in @Pyritie
+- Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
+- Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
+- Molten igneous mafic + ice mixer recipe is now HV, so you can't get free iron early @Pyritie
 ### Bug fixes
+- Fixed a server crash @Mqrius
+- Fixed many of the new ore veins not spawning at all @TomPlop
+- Fixed recycling amounts of buzzsaw blades that didn't have buzzsaw tools (#3628) @Pyritie
+- Fixed water wheels not working at full strength in the new worldgen river biomes @Pyritie
+- Fixed grapes and hollow shells not spawning @Pyritie
+- Fixed sunflowers, canola, flax, radishes, lentils, cucmbers, basil, bay laurel, cardamom, cilantro, cumin, oregano, pimento, and vanilla not spawning @Pyritie
+- Fixed some dropped illager tools having the wrong stats @Pyritie
+- Fixed gregtech drills getting mining speed bonuses from the digger helmet upgrade @Thomasx0
+- Fixed the digger helmet drinking upgrade cancelling sprinting @Thomasx0
+- Fixed the digger helmet adding additional armor when wearing another head equipment that adds armor @Thomasx0
 ### Translation updates
 
 ## [0.12.0] - 30-03-2026

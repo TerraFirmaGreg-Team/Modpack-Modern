@@ -1,0 +1,20 @@
+{
+  "button.tfcgenviewer.save": "Зберегти",
+  "tfcgenviewer.preview_world.visualizer_type.biomes": "Біоми",
+  "tfcgenviewer.preview_world.visualizer_type.rocks": "Камінці",
+  "tfcgenviewer.rock_editor.delete_tooltip": "Видалити",
+  "tfcgenviewer.rock_editor.currently_editing_layer": "Наразі редагується: %s",
+  "tfcgenviewer.rock_editor.confirm": "Підтвердити",
+  "rock.tfc.andesite": "Андезит",
+  "rock.tfc.basalt": "Базальт",
+  "rock.tfc.chalk": "Крейда",
+  "rock.tfc.diorite": "Діорит",
+  "rock.tfc.granite": "Гранит",
+  "rock.tfc.marble": "Мармур",
+  "biome.tfcgenviewer.unknown": "Невідомий біом",
+  "tfcgenviewer.rock_type.land": "Посадка",
+  "tfcgenviewer.rock_type.volcanic": "Вулканічний",
+  "tfcgenviewer.biome_altitude.low": "Низьке",
+  "tfcgenviewer.biome_altitude.medium": "Середня",
+  "tfcgenviewer.biome_altitude.high": "Високе"
+}
