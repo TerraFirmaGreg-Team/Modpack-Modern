@@ -1,0 +1,19 @@
+{
+  "block.ftbquests.detector.player": "Player Detector",
+  "block.ftbquests.detector.player.height": "高",
+  "block.ftbquests.detector.player.radius": "半徑",
+  "block.ftbquests.screen.size": "尺寸",
+  "ftbquests.chapter.image.height": "高",
+  "ftbquests.chapter.image.rotation": "重複",
+  "ftbquests.chapter.image.width": "寬度",
+  "ftbquests.gui.change_progress.reset": "重設",
+  "ftbquests.gui.reset_progress": "重設進程",
+  "ftbquests.loot.entitytype.passive": "被動",
+  "ftbquests.null": "無",
+  "ftbquests.quest.appearance.size": "尺寸",
+  "ftbquests.quest_link.size": "尺寸",
+  "ftbquests.reward.ftbquests.npc_mail.items": "個",
+  "ftbquests.reward_table.weight": "重量",
+  "ftbquests.task.ftbquests.fluid.amount": "數量",
+  "ftbquests.task.ftbquests.kill.entity": "實體名稱"
+}
