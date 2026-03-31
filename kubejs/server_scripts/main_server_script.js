@@ -100,6 +100,7 @@ ServerEvents.tags('block', event => {
 	registerTFCBlockTags(event)
 	registerTFGBlockTags(event)
 	registerTFGBlockTagsNuclear(event)
+	registerTFCGurmanItemTags(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
 })
