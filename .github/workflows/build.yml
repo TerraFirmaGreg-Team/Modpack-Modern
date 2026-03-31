@@ -5,6 +5,15 @@ on:
     branches:
       - dev
       - main
+    paths:
+      - '.pakku'
+      - 'config'
+      - 'defaultconfigs'
+      - 'kubejs'
+      - 'tacz'
+      - 'CHANGELOG.md'
+      - 'pakku-lock.json'
+      - 'pakku.json'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
