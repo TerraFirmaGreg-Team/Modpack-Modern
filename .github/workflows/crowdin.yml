@@ -99,28 +99,28 @@ jobs:
 
 
   # Create Pull Request after all syncs are done
-  create-pr:
-    runs-on: ubuntu-latest
-    needs: [sync]
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+  # create-pr:
+  #   runs-on: ubuntu-latest
+  #   needs: [sync]
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v6
 
-      - name: Create Pull Request
-        uses: devops-infra/action-pull-request@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: ${{ env.LOCALIZATION_BRANCH }}
-          target_branch: ${{ env.TARGET_BRANCH }}
-          ignore_users: "dependabot"
-          label: "Pull request: Translation"
-          title: 'New Crowdin translations'
-          body: |
-            ## 🌐 New translations from Crowdin
+  #     - name: Create Pull Request
+  #       uses: devops-infra/action-pull-request@v1
+  #       with:
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
+  #         source_branch: ${{ env.LOCALIZATION_BRANCH }}
+  #         target_branch: ${{ env.TARGET_BRANCH }}
+  #         ignore_users: "dependabot"
+  #         label: "Pull request: Translation"
+  #         title: 'New Crowdin translations'
+  #         body: |
+  #           ## 🌐 New translations from Crowdin
 
-            ### 🔄 Changes
-            - Updated translation files
-            - Patchouli book translations
+  #           ### 🔄 Changes
+  #           - Updated translation files
+  #           - Patchouli book translations
 
-            ### 🧪 Testing
-            Test in-game with different languages.
+  #           ### 🧪 Testing
+  #           Test in-game with different languages.
