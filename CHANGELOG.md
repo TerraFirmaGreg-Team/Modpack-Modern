@@ -8,7 +8,7 @@
 - Improved the rarity section of the ore vein EMI tab @SakuraKitsurugi
 - Removed some biomes that illages were spawning weirdly in @Pyritie
 - Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
-- Added missing repair recipes for javelins and construction wands (#3651) @SakuraKitsuragi
+- Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
 ### Bug fixes
 - Fixed a server crash @Mqrius
 - Fixed many of the new ore veins not spawning at all @TomPlop
