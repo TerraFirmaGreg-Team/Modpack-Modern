@@ -59,7 +59,7 @@ jobs:
         with:
           upload_sources: true
           download_translations: true
-          skip_untranslated_strings: true
+          skip_untranslated_files: true
           export_only_approved: true
           create_pull_request: false
           localization_branch_name: 'translations'
