@@ -66,13 +66,16 @@ jobs:
               rm "$file"
             fi
           done
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Remove empty translation files"
 
       - name: Сrowdin (Patchouli)
         uses: crowdin/github-action@v2
         with:
           upload_sources: true
           download_translations: true
-          skip_untranslated_files: true
           export_only_approved: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
