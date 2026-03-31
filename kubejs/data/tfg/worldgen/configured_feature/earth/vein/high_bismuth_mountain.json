@@ -3,22 +3,101 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 15,
-    "rarity": 62,
-    "density": 0.2,
-    "min_y": -20,
-    "max_y": -5,
-    "random_name": "surface_malachite",
+    "rarity": 90,
+    "density": 0.25,
+    "min_y": -30,
+    "max_y": 0,
+    "random_name": "high_bismuth_mountain",
     "project": true,
     "project_offset": false,
     "near_lava": false,
+    "biomes": "#tfg:earth/is_mountain",
     "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_bismuth_ore",
+            "weight": 1
+          }
+        ]
+      },
       {
         "replace": [
           "tfc:rock/raw/shale"
         ],
         "with": [
           {
-            "block": "gtceu:shale_malachite_ore",
+            "block": "gtceu:shale_bismuth_ore",
             "weight": 1
           }
         ]
@@ -29,7 +108,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:claystone_malachite_ore",
+            "block": "gtceu:claystone_bismuth_ore",
             "weight": 1
           }
         ]
@@ -40,7 +119,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:limestone_malachite_ore",
+            "block": "gtceu:limestone_bismuth_ore",
             "weight": 1
           }
         ]
@@ -51,7 +130,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_malachite_ore",
+            "block": "gtceu:conglomerate_bismuth_ore",
             "weight": 1
           }
         ]
@@ -62,7 +141,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_malachite_ore",
+            "block": "gtceu:dolomite_bismuth_ore",
             "weight": 1
           }
         ]
@@ -73,7 +152,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:chert_malachite_ore",
+            "block": "gtceu:chert_bismuth_ore",
             "weight": 1
           }
         ]
@@ -84,7 +163,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:chalk_malachite_ore",
+            "block": "gtceu:chalk_bismuth_ore",
             "weight": 1
           }
         ]
@@ -95,7 +174,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_malachite_ore",
+            "block": "gtceu:tuff_bismuth_ore",
             "weight": 1
           }
         ]
@@ -106,7 +185,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_malachite_ore",
+            "block": "gtceu:quartzite_bismuth_ore",
             "weight": 1
           }
         ]
@@ -117,7 +196,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_malachite_ore",
+            "block": "gtceu:slate_bismuth_ore",
             "weight": 1
           }
         ]
@@ -128,7 +207,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_malachite_ore",
+            "block": "gtceu:phyllite_bismuth_ore",
             "weight": 1
           }
         ]
@@ -139,7 +218,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_malachite_ore",
+            "block": "gtceu:schist_bismuth_ore",
             "weight": 1
           }
         ]
@@ -150,7 +229,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_malachite_ore",
+            "block": "gtceu:gneiss_bismuth_ore",
             "weight": 1
           }
         ]
@@ -161,7 +240,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_malachite_ore",
+            "block": "gtceu:marble_bismuth_ore",
             "weight": 1
           }
         ]
@@ -174,7 +253,7 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "tfc:ore/small_malachite",
+          "block": "tfc:ore/small_bismuthinite",
           "weight": 1
         }
       ]

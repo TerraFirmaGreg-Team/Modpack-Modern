@@ -3,17 +3,151 @@
   "type": "tfc:disc_vein",
   "config": {
     "height": 10,
-    "size": 20,
+    "size": 27,
     "rarity": 160,
-    "density": 0.18,
-    "min_y": -20,
-    "max_y": 1,
+    "density": 0.26,
+    "min_y": 10,
+    "max_y": 70,
     "random_name": "normal_salt",
-    "project": true,
+    "project": false,
     "project_offset": false,
     "near_lava": false,
     "biomes": "#tfg:earth/is_shore_island",
     "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:granite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:granite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:diorite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:diorite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:gabbro_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:gabbro_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:rhyolite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:rhyolite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:basalt_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:basalt_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:andesite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:andesite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:dacite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:dacite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
       {
         "replace": [
           "tfc:rock/raw/shale"
@@ -165,11 +299,125 @@
             "weight": 1
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:quartzite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:quartzite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:slate_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:slate_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:phyllite_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:phyllite_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:schist_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:schist_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:gneiss_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:gneiss_borax_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_salt_ore",
+            "weight": 6
+          },
+          {
+            "block": "gtceu:marble_rock_salt_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:marble_borax_ore",
+            "weight": 1
+          }
+        ]
       }
     ],
     "indicator": {
-      "rarity": 12,
-      "depth": 60,
+      "rarity": 18,
+      "depth": 70,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [

@@ -88,6 +88,7 @@ const registerTFGOreVeinFeatures = (event) => {
 
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_lazurite_calcite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_graphite')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_copper_gypsum')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_tin')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_bauxite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_copper_tin')
@@ -105,6 +106,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_coal')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sapphire')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_copper')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_bismuth_mountain')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_realgar')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_native_copper')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_galena')
@@ -113,10 +115,12 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_salt')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_monazite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_quartz')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfide')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_copper_sulfide')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_sulfur')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_quartz_borax')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/sand_mineral_sand')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_graphite_volcanic')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_limonite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_asbestos')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_copper_iron')
@@ -145,7 +149,6 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_tantalite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tricalcium_phosphate')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/high_bismuth')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_banded_iron')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_cassiterite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_magnetite')
@@ -154,6 +157,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tetrahedrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_iron')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_magnetite')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuth')
 
 	// #endregion
 
