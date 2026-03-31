@@ -1,0 +1,1021 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chemical_elements"
+	group: "31B01EAD21CA863A"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:iron_dust"
+	}
+	id: "2477DBCE1DD223C0"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{quests.chemical_elements.warning.desc.1}"
+				"{quests.chemical_elements.warning.desc.2}"
+			]
+			icon: "createdeco:decal_warning"
+			id: "537EAF6E902F562C"
+			size: 2.0d
+			subtitle: "{quests.chemical_elements.warning.subtitle}"
+			tasks: [{
+				id: "2B6989461D037FDF"
+				title: "{quests.chemical_elements.warning.task}"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: ["{quests.chemical_elements.hydrogen.desc}"]
+			id: "417807F06314E78F"
+			subtitle: "{quests.chemical_elements.element} #1"
+			tasks: [{
+				id: "1BCC8FDB759F9489"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.hydrogen.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["{quests.chemical_elements.helium.desc}"]
+			id: "3EE0AE78935A527F"
+			subtitle: "{quests.chemical_elements.element} #2"
+			tasks: [{
+				id: "2498B47EBC1D4400"
+				item: "gtceu:helium_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.helium.title}"
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			description: ["{quests.chemical_elements.lithium.desc}"]
+			id: "3271728CD931477E"
+			subtitle: "{quests.chemical_elements.element} #3"
+			tasks: [{
+				id: "0F4C7A090E0CFA8B"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.lithium.title}"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.beryllium.desc}"]
+			id: "57BA243D35AF24F3"
+			subtitle: "{quests.chemical_elements.element} #4"
+			tasks: [{
+				id: "26EEB5970C4FF815"
+				item: "gtceu:beryllium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.beryllium.title}"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.boron.desc}"]
+			id: "7B09373F39E86D84"
+			subtitle: "{quests.chemical_elements.element} #5"
+			tasks: [{
+				id: "7ABA472B385DFF17"
+				item: "gtceu:boron_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.boron.title}"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.carbon.desc}"]
+			id: "13A2584BFC01606A"
+			subtitle: "{quests.chemical_elements.element} #6"
+			tasks: [{
+				id: "0747C1633EBF90A0"
+				item: "gtceu:carbon_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.carbon.title}"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.nitrogen.desc}"]
+			id: "7FB54CB8D9790BAE"
+			subtitle: "{quests.chemical_elements.element} #7"
+			tasks: [{
+				id: "053CCDC8AE45D6EF"
+				item: "gtceu:nitrogen_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.nitrogen.title}"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.oxygen.desc}"]
+			id: "23F2473B4F67D79E"
+			subtitle: "{quests.chemical_elements.element} #8"
+			tasks: [{
+				id: "1FAB593DC981FEA6"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.oxygen.title}"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.fluorine.desc}"]
+			id: "53714898C549F8CA"
+			subtitle: "{quests.chemical_elements.element} #9"
+			tasks: [{
+				id: "03CCD7F1879D666D"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.fluorine.title}"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.neon.desc}"]
+			id: "6DDB5AC172F50249"
+			subtitle: "{quests.chemical_elements.element} #10"
+			tasks: [{
+				id: "6F551138A4F923EE"
+				item: "gtceu:neon_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.neon.title}"
+			x: 17.0d
+			y: 1.0d
+		}
+		{
+			description: ["{quests.chemical_elements.sodium.desc}"]
+			id: "3B9DB7067B45C465"
+			subtitle: "{quests.chemical_elements.element} #11"
+			tasks: [{
+				id: "2B413B99D18C88C5"
+				item: "gtceu:sodium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.sodium.title}"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.magnesium.desc}"]
+			id: "052EE4ADB19956D5"
+			subtitle: "{quests.chemical_elements.element} #12"
+			tasks: [{
+				id: "5050EC24E30DCA32"
+				item: "gtceu:magnesium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.magnesium.title}"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.aluminium.desc}"]
+			id: "4A6E870AB234E8BE"
+			subtitle: "{quests.chemical_elements.element} #13"
+			tasks: [{
+				id: "227639EBBBFA3A51"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.aluminium.title}"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.silicon.desc}"]
+			id: "081A57061C64F14F"
+			subtitle: "{quests.chemical_elements.element} #14"
+			tasks: [{
+				id: "43F646BAA76796A4"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.silicon.title}"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.phosphorus.desc}"]
+			id: "1B7EBE6DCBCC20BB"
+			subtitle: "{quests.chemical_elements.element} #15"
+			tasks: [{
+				id: "460A1DC15776CE5C"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.phosphorus.title}"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.sulfur.desc}"]
+			id: "2C697389E4AA2B58"
+			subtitle: "{quests.chemical_elements.element} #16"
+			tasks: [{
+				id: "1EB13766F05F6ED6"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.sulfur.title}"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.chlorine.desc}"]
+			id: "506BE6495CCF841D"
+			subtitle: "{quests.chemical_elements.element} #17"
+			tasks: [{
+				id: "2964E61F69502FE4"
+				item: "gtceu:chlorine_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.chlorine.title}"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.argon.desc}"]
+			id: "75C2AF14CAEF3875"
+			subtitle: "{quests.chemical_elements.element} #18"
+			tasks: [{
+				id: "576668BD27ED0B9F"
+				item: "gtceu:argon_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.argon.title}"
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			description: ["{quests.chemical_elements.potassium.desc}"]
+			id: "461ED2281995BADB"
+			subtitle: "{quests.chemical_elements.element} #19"
+			tasks: [{
+				id: "46C2AABD17430CD8"
+				item: "gtceu:potassium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.potassium.title}"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.calcium.desc}"]
+			id: "3771AC87A526185B"
+			subtitle: "{quests.chemical_elements.element} #20"
+			tasks: [{
+				id: "555C5987F40228CF"
+				item: "gtceu:calcium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.calcium.title}"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.titanium.desc}"]
+			id: "4AEB8D209C70660A"
+			subtitle: "{quests.chemical_elements.element} #22"
+			tasks: [{
+				id: "07981EFCB95E7055"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.titanium.title}"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.vanadium.desc}"]
+			id: "227A966DCA13A941"
+			subtitle: "{quests.chemical_elements.element} #23"
+			tasks: [{
+				id: "0AB43879D4F2649F"
+				item: "gtceu:vanadium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.vanadium.title}"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.chromium.desc}"]
+			icon: "gtceu:chromium_dust"
+			id: "4DFBF867874CBFA8"
+			subtitle: "{quests.chemical_elements.element} #24"
+			tasks: [{
+				id: "0320FB9EB316294B"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.chromium.title}"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.manganese.desc}"]
+			id: "6252BE28A5C23283"
+			subtitle: "{quests.chemical_elements.element} #25"
+			tasks: [{
+				id: "457A1886581CFD07"
+				item: "gtceu:manganese_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.manganese.title}"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.iron.desc}"]
+			id: "1AFAFB838E3C036E"
+			subtitle: "{quests.chemical_elements.element} #26"
+			tasks: [{
+				id: "094CF2DF4F6060D4"
+				item: "gtceu:iron_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.iron.title}"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.cobalt.desc}"]
+			id: "0CF1250C10714990"
+			subtitle: "{quests.chemical_elements.element} #27"
+			tasks: [{
+				id: "49815C0BA3304308"
+				item: "gtceu:cobalt_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.cobalt.title}"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.nickel.desc}"]
+			id: "09C0951651CBE65F"
+			subtitle: "{quests.chemical_elements.element} #28"
+			tasks: [{
+				id: "7BDDD73D92D904ED"
+				item: "gtceu:nickel_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.nickel.title}"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.copper.desc}"]
+			id: "0537EB5AE0BD3B83"
+			subtitle: "{quests.chemical_elements.element} #29"
+			tasks: [{
+				id: "017F8CD97DBADABD"
+				item: "gtceu:copper_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.copper.title}"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.zinc.desc}"]
+			id: "16C019F81FC5A87A"
+			subtitle: "{quests.chemical_elements.element} #30"
+			tasks: [{
+				id: "5E051F9DEA7EF04E"
+				item: "gtceu:zinc_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.zinc.title}"
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.gallium.desc}"]
+			id: "508E7521E49F115A"
+			subtitle: "{quests.chemical_elements.element} #31"
+			tasks: [{
+				id: "522121FE22FE993F"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.gallium.title}"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.arsenic.desc}"]
+			id: "4E78B7BF08DD5137"
+			subtitle: "{quests.chemical_elements.element} #33"
+			tasks: [{
+				id: "39CCC564BF9F6FEF"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.arsenic.title}"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.krypton.desc}"]
+			id: "45FD8CC0CC0CAB6F"
+			subtitle: "{quests.chemical_elements.element} #36"
+			tasks: [{
+				id: "5C77235DAA5073A5"
+				item: "gtceu:krypton_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.krypton.title}"
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			description: ["{quests.chemical_elements.yttrium.desc}"]
+			id: "6018EAB73B9D5B5D"
+			subtitle: "{quests.chemical_elements.element} #39"
+			tasks: [{
+				id: "0299A4E92C40D6C0"
+				item: "gtceu:yttrium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.yttrium.title}"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.niobium.desc}"]
+			id: "6370608EFCA7A482"
+			subtitle: "{quests.chemical_elements.element} #41"
+			tasks: [{
+				id: "04AC469DAC83312C"
+				item: "gtceu:niobium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.niobium.title}"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.molybdenum.desc}"]
+			id: "5DBE8C4D8C1C34C3"
+			subtitle: "{quests.chemical_elements.element} #42"
+			tasks: [{
+				id: "516FB2188D390B41"
+				item: "gtceu:molybdenum_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.molybdenum.title}"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.ruthenium.desc}"]
+			id: "5ED5D1204E674C5B"
+			subtitle: "{quests.chemical_elements.element} #44"
+			tasks: [{
+				id: "58745BBE3B5E48B1"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.ruthenium.title}"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.rhodium.desc}"]
+			id: "7382CF8AC2FAA612"
+			subtitle: "{quests.chemical_elements.element} #45"
+			tasks: [{
+				id: "444405DAE41F47F8"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.rhodium.title}"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.palladium.desc}"]
+			id: "330DA2570B63B70C"
+			subtitle: "{quests.chemical_elements.element} #46"
+			tasks: [{
+				id: "016DFBC5CCD3D596"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.palladium.title}"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.silver.desc}"]
+			id: "6C59CD0D4B7C0224"
+			subtitle: "{quests.chemical_elements.element} #47"
+			tasks: [{
+				id: "65F9593866ABD5AB"
+				item: "gtceu:silver_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.silver.title}"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.cadmium.desc}"]
+			id: "038EC8E07AD71956"
+			subtitle: "{quests.chemical_elements.element} #48"
+			tasks: [{
+				id: "6E19A00F7B27201D"
+				item: "gtceu:cadmium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.cadmium.title}"
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.indium.desc}"]
+			id: "109D9795EB0D36A3"
+			subtitle: "{quests.chemical_elements.element} #49"
+			tasks: [{
+				id: "582A18675DFF33FB"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.indium.title}"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.tin.desc}"]
+			id: "74F9429B68CBDB9E"
+			subtitle: "{quests.chemical_elements.element} #50"
+			tasks: [{
+				id: "433AB82491159087"
+				item: "gtceu:tin_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.tin.title}"
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.antimony.desc}"]
+			id: "376E58ED64E29244"
+			subtitle: "{quests.chemical_elements.element} #51"
+			tasks: [{
+				id: "06FABD2435859557"
+				item: "gtceu:antimony_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.antimony.title}"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.iodine.desc}"]
+			id: "0E79476B04FE4DFF"
+			subtitle: "{quests.chemical_elements.element} #53"
+			tasks: [{
+				id: "60DC8A768F5D3AD6"
+				item: "gtceu:iodine_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.iodine.title}"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.xenon.desc}"]
+			id: "315DFEECDCA0182A"
+			subtitle: "{quests.chemical_elements.element} #54"
+			tasks: [{
+				id: "281FF66A86159452"
+				item: "gtceu:xenon_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.xenon.title}"
+			x: 17.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.barium.desc}"]
+			id: "754BD4898EA2E32C"
+			subtitle: "{quests.chemical_elements.element} #56"
+			tasks: [{
+				id: "2DCE847775BE0DE7"
+				item: "gtceu:barium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.barium.title}"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.lanthanum.desc}"]
+			id: "29C3462EFE0F4921"
+			subtitle: "{quests.chemical_elements.element} #57"
+			tasks: [{
+				id: "5327384113DFF03E"
+				item: "gtceu:lanthanum_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.lanthanum.title}"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			description: ["{quests.chemical_elements.cerium.desc}"]
+			id: "651B779D02D74F5D"
+			subtitle: "{quests.chemical_elements.element} #58"
+			tasks: [{
+				id: "495963B0EBFDAEE3"
+				item: "gtceu:cerium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.cerium.title}"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			description: ["{quests.chemical_elements.neodymium.desc}"]
+			id: "59DEDE9D49BF6BE8"
+			subtitle: "{quests.chemical_elements.element} #60"
+			tasks: [{
+				id: "09A377779D63B8F8"
+				item: "gtceu:neodymium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.neodymium.title}"
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			description: ["{quests.chemical_elements.samarium.desc}"]
+			id: "02B800AF538538C8"
+			subtitle: "{quests.chemical_elements.element} #62"
+			tasks: [{
+				id: "2575A4A9444FB5C1"
+				item: "gtceu:samarium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.samarium.title}"
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			description: ["{quests.chemical_elements.tantalum.desc}"]
+			id: "67361686C18AB4E6"
+			subtitle: "{quests.chemical_elements.element} #73"
+			tasks: [{
+				id: "579BE72A491B2307"
+				item: "gtceu:tantalum_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.tantalum.title}"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.tungsten.desc}"]
+			id: "5987B2FD290054B3"
+			subtitle: "{quests.chemical_elements.element} #74"
+			tasks: [{
+				id: "5357C6E4EF9C39F9"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.tungsten.title}"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.rhenium.desc}"]
+			id: "61FFBBFCCB38C478"
+			subtitle: "{quests.chemical_elements.element} #75"
+			tasks: [{
+				id: "45840C7D5789EA53"
+				item: "gtceu:rhenium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.rhenium.title}"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.osmium.desc}"]
+			id: "66827D3183133EB8"
+			subtitle: "{quests.chemical_elements.element} #76"
+			tasks: [{
+				id: "355CC32CC103DF83"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.osmium.title}"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.iridium.desc}"]
+			id: "0089869FBFF4BB2E"
+			subtitle: "{quests.chemical_elements.element} #77"
+			tasks: [{
+				id: "1FACE788F38481E0"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.iridium.title}"
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.platinum.desc}"]
+			id: "5BF3A1D8B66162C2"
+			subtitle: "{quests.chemical_elements.element} #78"
+			tasks: [{
+				id: "678C0E55325C6BEC"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.platinum.title}"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.gold.desc}"]
+			id: "46576F512686B6F2"
+			subtitle: "{quests.chemical_elements.element} #79"
+			tasks: [{
+				id: "4383803011753D1C"
+				item: "gtceu:gold_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.gold.title}"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.mercury.desc}"]
+			id: "7C23E33A844D9DF0"
+			subtitle: "{quests.chemical_elements.element} #80"
+			tasks: [{
+				id: "48EF50082DE485AD"
+				item: "gtceu:mercury_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.mercury.title}"
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.thallium.desc}"]
+			id: "4529F4271C78317C"
+			subtitle: "{quests.chemical_elements.element} #81"
+			tasks: [{
+				id: "522276C0C66B1ADF"
+				item: "gtceu:thallium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.thallium.title}"
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.lead.desc}"]
+			id: "4D0E732C63BBEE02"
+			subtitle: "{quests.chemical_elements.element} #82"
+			tasks: [{
+				id: "40C5C1A1726CCDBC"
+				item: "gtceu:lead_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.lead.title}"
+			x: 13.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.bismuth.desc}"]
+			id: "31E5166CD1ACF135"
+			subtitle: "{quests.chemical_elements.element} #83"
+			tasks: [{
+				id: "141D63D0A43D2470"
+				item: "gtceu:bismuth_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.bismuth.title}"
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.radon.desc}"]
+			id: "26CCD7E7DE2B4547"
+			subtitle: "{quests.chemical_elements.element} #86"
+			tasks: [{
+				id: "4A55C3616AFD3E98"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.radon.title}"
+			x: 17.0d
+			y: 5.0d
+		}
+		{
+			description: ["{quests.chemical_elements.thorium.desc}"]
+			id: "1CBB889155D266FF"
+			subtitle: "{quests.chemical_elements.element} #90"
+			tasks: [{
+				id: "2956250809C5253D"
+				item: "gtceu:thorium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.thorium.title}"
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			description: ["{quests.chemical_elements.uranium.desc}"]
+			icon: "gtceu:uranium_dust"
+			id: "2BBAC2F1537E08BA"
+			subtitle: "{quests.chemical_elements.element} #92"
+			tasks: [{
+				id: "38476862A2A6F9EE"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.uranium.title}"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			description: ["{quests.chemical_elements.neptunium.desc}"]
+			icon: "gtceu:neptunium_237_dust"
+			id: "439C31850DF0B983"
+			subtitle: "{quests.chemical_elements.element} #93"
+			tasks: [{
+				id: "6419DE220603E2EC"
+				item: {
+					Count: 1
+					id: "tfg:neptunium_237_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.neptunium.title}"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["{quests.chemical_elements.plutonium.desc}"]
+			icon: "gtceu:plutonium_dust"
+			id: "13072C175C613D5F"
+			subtitle: "{quests.chemical_elements.element} #94"
+			tasks: [{
+				id: "0670640059E678DD"
+				item: "gtceu:plutonium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.plutonium.title}"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			description: ["{quests.chemical_elements.europium.desc}"]
+			id: "23D55E8A38F45779"
+			subtitle: "{quests.chemical_elements.element} #63"
+			tasks: [{
+				id: "3AB55D4F07FD97EF"
+				item: "gtceu:europium_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			description: ["{quests.chemical_elements.americium.desc}"]
+			id: "1A321305AA1A8DF3"
+			subtitle: "{quests.chemical_elements.element} #95"
+			tasks: [{
+				id: "70FEE805EBB8EF9C"
+				item: "gtceu:americium_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: ["{quests.chemical_elements.lutetium.desc}"]
+			id: "1B5846EAFA1DFD2F"
+			subtitle: "{quests.chemical_elements.element} #71"
+			tasks: [{
+				id: "68D099C9721E8C82"
+				item: "gtceu:lutetium_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 7.0d
+		}
+        {
+            description: ["{quests.chemical_elements.darmstadtium.desc}"]
+            id: "A1D4C8E9F0B2A3C4"
+            subtitle: "{quests.chemical_elements.element} #110"
+            tasks: [{
+                id: "B2E5F1A6C3D7E8F9"
+                item: "gtceu:darmstadtium_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.darmstadtium.title}"
+            x: 9.0d
+            y: 6.0d
+        }
+        {
+            description: ["{quests.chemical_elements.tritanium.desc}"]
+            id: "C3F6A2B7D8E9A1B2"
+            subtitle: "{quests.chemical_elements.element} #119"
+            tasks: [{
+                id: "D4A7B3C8E9F0A2B3"
+                item: "gtceu:tritanium_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.tritanium.title}"
+            x: 0.0d
+            y: 7.0d
+        }
+        {
+            description: ["{quests.chemical_elements.duranium.desc}"]
+            id: "E5B8C4D9F0A1B2C3"
+            subtitle: "{quests.chemical_elements.element} #120"
+            tasks: [{
+                id: "F6C9D5E0A1B2C3D4"
+                item: "gtceu:duranium_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.duranium.title}"
+            x: 1.0d
+            y: 7.0d
+        }
+        {
+            description: ["{quests.chemical_elements.trinium.desc}"]
+            id: "07DAD6E1B2C3D4E5"
+            subtitle: "{quests.chemical_elements.element} #125"
+            tasks: [{
+                id: "18EBE7F2C3D4E5F6"
+                item: "gtceu:trinium_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.trinium.title}"
+            x: 6.0d
+            y: 7.0d
+        }
+        {
+            description: ["{quests.chemical_elements.naquadah.desc}"]
+            id: "29FCF803D4E5F6A7"
+            subtitle: "{quests.chemical_elements.element} #174"
+            tasks: [{
+                id: "3A0D0914E5F6A7B8"
+                item: "gtceu:naquadah_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.naquadah.title}"
+            x: 17.0d
+            y: 8.0d
+        }
+        {
+            description: ["{quests.chemical_elements.neutronium.desc}"]
+            id: "4B1E1A25F6A7B8C9"
+            subtitle: "{quests.chemical_elements.element} #0"
+            tasks: [{
+                id: "5C2F2B36A7B8C9D0"
+                item: "gtceu:neutronium_dust"
+                type: "item"
+            }]
+            title: "{quests.chemical_elements.neutronium.title}"
+            x: -1.0d
+            y: 0.0d
+        }
+	]
+	title: "{quests.chemical_elements.chapter_title}"
+}
