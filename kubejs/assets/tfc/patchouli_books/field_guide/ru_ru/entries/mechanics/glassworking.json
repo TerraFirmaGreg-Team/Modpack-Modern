@@ -73,10 +73,10 @@
   ],
   "read_by_default": true,
   "extra_recipe_mappings": {
-    "tfc:powder/lime": 2,
-    "tfc:powder/soda_ash": 3,
-    "tfc:paddle": 7,
-    "tfc:jacks": 8,
-    "tfc:gem_saw": 9
+    "tfc:powder/lime": "",
+    "tfc:powder/soda_ash": "",
+    "tfc:paddle": "",
+    "tfc:jacks": "",
+    "tfc:gem_saw": ""
   }
 }

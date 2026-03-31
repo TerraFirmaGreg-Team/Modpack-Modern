@@ -17,7 +17,7 @@
 			"anchor": "maple",
 			"title": "Клён",
 			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
-			"link_recipe": false,
+			"link_recipe": "",
 			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -8.4°C$(br)$(thing)Максимальная температура$(): 8°C$(br)$(thing)Минимальные годовые осадки$(): 240$(br)$(thing)Максимальные годовые осадки$(): 470$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -15°C$(br)$(thing)Макс. темп. для производства$(): 5°C$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 5mb"
 		},
 		{
@@ -33,7 +33,7 @@
 			"anchor": "birch",
 			"title": "Берёза",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
-			"link_recipe": false,
+			"link_recipe": "",
 			"text": "$(bold)Климат$()$(br)$(thing)Минимальная температура$(): -12.1°C$(br)$(thing)Максимальная температура$(): 6.1°C$(br)$(thing)Минимальные годовые осадки$(): 125$(br)$(thing)Максимальные годовые осадки$(): 310$(br2)$(bold)Информация для подсочки$()$(br)$(thing)Мин. темп. для производства$(): -15°C$(br)$(thing)Макс. темп. для производства$(): 5°C$(br)$(thing)Только весной$(): Нет$(br)$(thing)Скорость производства$(): 5mb"
 		},
 		{

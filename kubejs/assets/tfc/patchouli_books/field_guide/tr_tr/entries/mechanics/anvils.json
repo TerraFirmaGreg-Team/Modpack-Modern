@@ -1,0 +1,111 @@
+{
+  "__comment__": "",
+  "name": "",
+  "category": "",
+  "icon": "",
+  "pages": [
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "multiblock": {
+        "pattern": [
+      [
+      ""
+      ],
+      [
+      ""
+      ]
+        ],
+        "mapping": {
+      "X": ""
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": ""
+    },
+    {
+      "type": "",
+      "recipe": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "images": [
+        ""
+      ],
+      "text": "",
+      "border": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "images": [
+        ""
+      ],
+      "text": "",
+      "border": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "text": "",
+      "title": ""
+    },
+    {
+      "type": "",
+      "item": "",
+      "title": "Perfectly Forged",
+      "link_recipes": "",
+      "text": ""
+    },
+    {
+      "type": "",
+      "anchor": "",
+      "text": "",
+      "title": "Leğimleme"
+    },
+    {
+      "type": "",
+      "text": ""
+    }
+  ],
+  "read_by_default": "",
+  "extra_recipe_mappings": {
+    "tag:tfc:anvils": ""
+  }
+}

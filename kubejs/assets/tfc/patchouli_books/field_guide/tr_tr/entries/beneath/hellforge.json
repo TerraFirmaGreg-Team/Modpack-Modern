@@ -1,0 +1,50 @@
+{
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						"",
+						"",
+						"",
+						"",
+						""
+					],
+					[
+						"",
+						"",
+						"",
+						"",
+						""
+					]
+				],
+				"mapping": {
+					"Z": "",
+					"Y": "",
+					"0": "",
+					"X": ""
+				}
+			},
+			"name": "",
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		}
+	],
+	"read_by_default": ""
+}

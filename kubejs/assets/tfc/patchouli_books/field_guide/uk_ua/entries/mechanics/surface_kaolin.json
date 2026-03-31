@@ -1,92 +1,92 @@
 {
     "name": "Каолінова глина",
-    "icon": "tfc:kaolin_clay",
-    "category": "tfc:mechanics",
-    "read_by_default": true,
+    "icon": "",
+    "category": "",
+    "read_by_default": "",
     "pages": [
 		{
-			"type": "patchouli:text",
-			"anchor": "kaolinite",
+			"type": "",
+			"anchor": "",
 			"text": "Каолінова глина потрібна для створення $(l:mechanics/fire_clay)вогнетривкої глини$(). \nВона може траплятися на висотах Y=75–110 у плато, хвилястих пагорбах та високогір’ї \n(а також у їхніх $(t:Поверхнева порода з вапняку, доломіту, крейди або мармуру)карстових$() \n$(t:Буренових, Сенотних, Долинних, Шильних або Карстовив веж)варіантах$()), старих горах та \nвулканах щитових типів за умови $(l:the_world/climate#temperature)температури$() \nне менш ніж 18°C та $(l:the_world/climate#rainfall)річної кількості опадів$() \nне менш ніж 300 мм. Квітка $(thing)кривава лілія$() росте на каоліновій глині, \nяка може залягати на глибині до 35 блоків."
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"text": "Зазвичай, рухайтеся $(thing)Південний схід$(), щоб підвищити температуру та вологість.",
 			"multiblocks": [
 				{
 					"pattern": [
 					[
-					"X"
+					""
 					],
 					[
-					"Y"
+					""
 					],
 					[
-					"0"
+					""
 					]
 					],
 					"mapping": {
-					"X": "tfc:plant/blood_lily",
-					"Y": "tfc:kaolin_clay_grass"
+					"X": "",
+					"Y": ""
 					}
 				},
 				{
 					"pattern": [
 					[
-					"X"
+					""
 					],
 					[
-					"Y"
+					""
 					],
 					[
-					"0"
+					""
 					]
 					],
 					"mapping": {
-					"X": "tfc:plant/blood_lily",
-					"Y": "tfc:red_kaolin_clay"
+					"X": "",
+					"Y": ""
 					}
 				},
 				{
 					"pattern": [
 					[
-					"X"
+					""
 					],
 					[
-					"Y"
+					""
 					],
 					[
-					"0"
+					""
 					]
 					],
 					"mapping": {
-					"X": "tfc:plant/blood_lily",
-					"Y": "tfc:white_kaolin_clay"
+					"X": "",
+					"Y": ""
 					}
 				},
 				{
 					"pattern": [
 					[
-					"X"
+					""
 					],
 					[
-					"Y"
+					""
 					],
 					[
-					"0"
+					""
 					]
 					],
 					"mapping": {
-					"X": "tfc:plant/blood_lily",
-					"Y": "tfc:pink_kaolin_clay"
+					"X": "",
+					"Y": ""
 					}
 				}
 			]
 		},
 		{
-			"type": "patchouli:spotlight",
-			"item": "tfc:powder/kaolinite",
-			"anchor": "powder",
+			"type": "",
+			"item": "",
+			"anchor": "",
 			"text": "Лише $(thing)20%$() каолінової глини перетворюється на $(thing)каолінітовий порошок$(), тому рекомендується випалювати її на місці за допомогою $(l:getting_started/pit_kiln)ямних печей$(), щоб заощадити місце в інвентарі.$(br2)Також візьміть із собою близько 20 $(thing)блоків$() каолінової глини для подальшого $(l:mechanics/glassworking_applications)склодувного виробництва$()."
 		}
     ]

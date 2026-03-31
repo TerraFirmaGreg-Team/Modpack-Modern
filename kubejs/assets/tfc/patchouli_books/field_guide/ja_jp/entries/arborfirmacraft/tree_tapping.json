@@ -1,0 +1,36 @@
+{
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+        {
+            "type": "",
+            "text": ""
+        },
+        {
+            "type": "",
+            "title": "",
+            "images": [
+            	""
+            ],
+            "border": ""
+        },
+        {
+            "type": "",
+            "text": ""
+        },
+        {
+            "type": "",
+            "images": [
+            	""
+            ],
+            "text": "",
+            "border": ""
+        }
+	],
+	"read_by_default": "",
+	"sortnum": "",
+	"extra_recipe_mappings": {
+        "afc:tree_tap": ""
+	}
+}

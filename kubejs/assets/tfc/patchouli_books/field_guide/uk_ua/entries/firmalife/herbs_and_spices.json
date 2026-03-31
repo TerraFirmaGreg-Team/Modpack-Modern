@@ -2,291 +2,291 @@
 	"__comment__": "This file was automatically created by mcresources",
 	"name": "Пряні трави та спеції",
 	"category": "tfc:firmalife",
-	"icon": "firmalife:spice/basil_leaves",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "У Firmalife є низка невеликих рослин, які можна збирати та вирощувати самостійно, і які мають кулінарні властивості. Усі їх можна знайти в дикій природі, після чого ви зможете вирощувати їх більше за допомогою $(l:firmalife/greenhouse) теплиці$()."
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/basil[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/basil[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Базилік",
 			"text": "$(thing)Дикий базилік$() росте при температурі від 12 до 25°C, і від 300 до 500мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/bay_laurel[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/bay_laurel[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Лавровий лист",
 			"text": "$(thing)Дикий лавровий лист$() росте між 8 та 14°C, і від 25 до 225 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cardamom[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cardamom[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Кардамон",
 			"text": "$(thing)Дикий кардамон$() росте при температурі від 18 до 30°C, і від 350 до 500 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cilantro[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cilantro[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Кінза",
 			"text": "$(thing)Дика кінза$() росте при температурі від 5 до 15°C, і від 0 до 150 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cumin[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/cumin[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Кмин",
 			"text": "$(thing)Дикий кмин$() росте при температурі від 6 до 20°C, і від 50 до 250 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/oregano[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/oregano[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Материнник",
 			"text": "$(thing)Дика материнник$() росте при температурі від 5 до 13°C, і від 50 до 150 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/pimento[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/pimento[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Духмяний перець",
 			"text": "\"$(thing)Дикий духмяний перець$() росте при температурі від 15 до 30°C, і від 200 до 450 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "tfc:multimultiblock",
+			"type": "",
 			"multiblocks": [
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/vanilla[stage=0]"
+						"X": ""
 					}
 				},
 				{
 					"pattern": [
 						[
-							"X"
+							""
 						],
 						[
-							"0"
+							""
 						]
 					],
 					"mapping": {
-						"X": "firmalife:plant/vanilla[stage=1]"
+						"X": ""
 					}
 				}
 			],
 			"name": "Ваніль",
 			"text": "$(thing)Дика ваніль$() росте при температурі від 18 до 30°C, і від 200 до 500 мм опадів.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "",
 			"recipe": "firmalife:crafting/seed_ball",
 			"text": "$(item)Насіннєві кульки$() можна використовувати для посадки різних типів трави. Це може бути корисно після розчищення території під базу для будівництва. Рецепт насіннєвої кульки потребує $(item)компост$() та 4 $(thing)насіння$()."
 		},
 		{
-			"type": "patchouli:multiblock",
+			"type": "",
 			"multiblock": {
 				"pattern": [
 					[
@@ -302,24 +302,24 @@
 			},
 			"name": "",
 			"text": "Рослини метеликової трави.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Метеликова трава з часом дозріває. Коли вона досягає зрілості, з'являється шанс, що вона пошириться на сусідні блоки або перетвориться на щось нове. Блоки метеликової трави, що виросли завдяки поширенню від іншого блоку трави, більше не поширюються.$(br)Після того як метеликова трава перетвориться на іншу траву, ви зможете зібрати її за допомогою $(item)ножиць$()."
 		}
 	],
 	"read_by_default": true,
 	"sortnum": 19,
 	"extra_recipe_mappings": {
-		"firmalife:plant/basil": 1,
-		"firmalife:plant/bay_laurel": 2,
-		"firmalife:plant/cardamom": 3,
-		"firmalife:plant/cilantro": 4,
-		"firmalife:plant/cumin": 5,
-		"firmalife:plant/oregano": 6,
-		"firmalife:plant/pimento": 7,
-		"firmalife:plant/vanilla": 8,
-		"firmalife:seed_ball": 9
+		"firmalife:plant/basil": "",
+		"firmalife:plant/bay_laurel": "",
+		"firmalife:plant/cardamom": "",
+		"firmalife:plant/cilantro": "",
+		"firmalife:plant/cumin": "",
+		"firmalife:plant/oregano": "",
+		"firmalife:plant/pimento": "",
+		"firmalife:plant/vanilla": "",
+		"firmalife:seed_ball": ""
 	}
 }

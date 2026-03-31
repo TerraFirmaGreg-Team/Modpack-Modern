@@ -1,56 +1,56 @@
 {
 	"name": "Руди та Мінерали",
-	"category": "tfc:beneath",
-	"icon": "beneath:ore/normal_nether_gold",
+	"category": "",
+	"icon": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Руди, які можна знайти в Безодні, переважно схожі на ті, що зустрічаються на поверхні, але є кілька змін. Для точних деталей зверніться до категорії $(l:tfg_ores)Руди в TFG$()."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Мігматит",
 			"item": {
-				"tag": "forge:ores_in_ground/deepslate"
+				"tag": ""
 			},
 			"text": "Найпоширенішим типом породи є мігматит. Ця глибока метаморфічна порода містить широкий спектр руд, які зазвичай зустрічаються в інших типах порід на поверхні."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Травертин",
 			"item": {
-				"tag": "forge:ores_in_ground/dripstone"
+				"tag": ""
 			},
 			"text": "У більш вологих місцях ви можете знайти $(thing)Травертин$(). Це осадкова порода, яка може містити такі ж види руд, як і Мігматит."
 		},
 		{
-			"type": "patchouli:spotlight",
+			"type": "",
 			"title": "Піроксеніт",
 			"item": {
-				"tag": "forge:ores_in_ground/pyroxenite"
+				"tag": ""
 			},
 			"text": "На найглибшому рівні Безодні різні типи порід поступово перетворюються на $(thing)Піроксеніт$(). Ця ультраосновна магматична порода надзвичайно багата на руди, але на цій глибині також панує сильна спека, тож будьте готові!"
 		},
 		{
-			"type": "patchouli:multiblock",
-			"anchor": "cursecoal",
+			"type": "",
+			"anchor": "",
 			"multiblock": {
 				"pattern": [
 					[
-						"X"
+						""
 					],
 					[
-						"0"
+						""
 					]
 				],
 				"mapping": {
-					"X": "beneath:ore/nether_cursecoal"
+					"X": ""
 				}
 			},
 			"name": "Антрацит",
 			"text": "Антрацит — це потужне $(l:beneath/hellforge)паливо$(). Його можна знайти в Мігматиті у верхній половині Безодні.",
-			"enable_visualize": false
+			"enable_visualize": ""
 		}
 	],
-	"read_by_default": true
+	"read_by_default": ""
 }

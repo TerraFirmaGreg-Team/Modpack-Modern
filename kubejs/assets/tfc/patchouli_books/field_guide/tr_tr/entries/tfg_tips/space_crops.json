@@ -1,0 +1,590 @@
+{
+	"name": "",
+	"category": "",
+	"icon": "",
+	"pages": [
+		{
+			"type": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblock": {
+				"pattern": [
+					[
+						""
+					],
+					[
+						""
+					],
+					[
+						""
+					],
+					[
+						""
+					],
+					[
+						""
+					]
+				],
+				"mapping": {
+					"0": "",
+					"V": "",
+					"E": "",
+					"X": "",
+					"B": "",
+					"D": "",
+					"Z": ""
+				}
+			},
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				}
+			],
+			"text": "",
+			"enable_visualize": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"text": "",
+			"title": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				}
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"text": "",
+			"title": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				}
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"text": "",
+			"title": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"",
+							"",
+							""
+						],
+						[
+							"",
+							"",
+							""
+						]
+					],
+					"mapping": {
+						"G": "",
+						"0": "",
+						"C": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							"",
+							"",
+							""
+						],
+						[
+							"",
+							"",
+							""
+						]
+					],
+					"mapping": {
+						"G": "",
+						"0": "",
+						"C": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							"",
+							"",
+							""
+						],
+						[
+							"",
+							"",
+							""
+						]
+					],
+					"mapping": {
+						"G": "",
+						"0": "",
+						"C": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							"",
+							"",
+							""
+						],
+						[
+							"",
+							"",
+							""
+						]
+					],
+					"mapping": {
+						"G": "",
+						"0": "",
+						"C": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							"",
+							"",
+							""
+						],
+						[
+							"",
+							"",
+							""
+						]
+					],
+					"mapping": {
+						"G": "",
+						"0": "",
+						"C": "",
+						"P": ""
+					}
+				}
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				}
+			],
+			"text": ""
+		},
+		{
+			"type": "",
+			"anchor": "",
+			"title": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				},
+				{
+					"pattern": [
+						[
+							""
+						],
+						[
+							""
+						],
+						[
+							""
+						]
+					],
+					"mapping": {
+						"Y": "",
+						"Z": ""
+					}
+				}
+			],
+			"text": ""
+		}
+	],
+	"read_by_default": "",
+	"extra_recipe_mappings": {
+		"tfg:lunar_chorus_flower": "",
+		"minecraft:chorus_fruit": "",
+		"betterend:amber_root_seeds": "",
+		"betterend:amber_root_product": "",
+		"betterend:blossom_berry_seeds": "",
+		"betterend:blossom_berry_product": "",
+		"betterend:bolux_mushroom_seeds": "",
+		"betterend:bolux_mushroom_product": "",
+		"betterend:cave_pumpkin_plant_seeds": "",
+		"betterend:cave_pumpkin": "",
+		"betterend:chorus_mushroom_seeds": "",
+		"betterend:chorus_mushroom_product": "",
+		"betterend:shadow_berry_seeds": "",
+		"betterend:shadow_berry_product": ""
+	}
+}

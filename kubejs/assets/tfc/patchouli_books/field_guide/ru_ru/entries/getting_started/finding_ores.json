@@ -46,7 +46,7 @@
       },
       "name": "",
       "text": "Все маленькие кусочки руды",
-      "enable_visualize": false
+      "enable_visualize": ""
     },
     {
       "type": "patchouli:text",
@@ -82,7 +82,7 @@
         "tfc:textures/gui/book/gui/casting.png"
       ],
       "text": "Интерфейс литья.",
-      "border": false
+      "border": ""
     },
     {
       "type": "patchouli:text",

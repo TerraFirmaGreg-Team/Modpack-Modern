@@ -1,0 +1,93 @@
+{
+    "name": "",
+    "icon": "",
+    "category": "",
+    "read_by_default": "",
+    "pages": [
+		{
+			"type": "",
+			"anchor": "",
+			"text": ""
+		},
+		{
+			"type": "",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				},
+				{
+					"pattern": [
+					[
+					"X"
+					],
+					[
+					"Y"
+					],
+					[
+					""
+					]
+					],
+					"mapping": {
+					"X": "",
+					"Y": ""
+					}
+				}
+			]
+		},
+		{
+			"type": "",
+			"item": "",
+			"anchor": "",
+			"text": ""
+		}
+    ]
+}

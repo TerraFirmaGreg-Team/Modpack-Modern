@@ -53,7 +53,7 @@
 			},
 			"name": "Блок крицы",
 			"text": "Здоровенная $(thing)Крица$().",
-			"enable_visualize": false
+			"enable_visualize": ""
 		},
 		{
 			"type": "tfc:anvil_recipe",
@@ -73,8 +73,8 @@
 	],
 	"read_by_default": true,
 	"extra_recipe_mappings": {
-		"tfc:bloom": 6,
-		"tfc:raw_iron_bloom": 7,
-		"tfc:refined_iron_bloom": 8
+		"tfc:bloom": "",
+		"tfc:raw_iron_bloom": "",
+		"tfc:refined_iron_bloom": ""
 	}
 }

@@ -1,160 +1,160 @@
 {
 	"name": "Індекс видобутку",
-	"category": "tfc:arborfirmacraft",
-	"icon": "afc:wood/sapling/weeping_maple",
-	"read_by_default": true,
+	"category": "",
+	"icon": "",
+	"read_by_default": "",
 	"pages": [
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "Це список усіх дерев, придатних для добування, відсортованих в алфавітному порядку.$(br)$(thing)кліматичні дані$() нададуть інформацію про температуру та опади, за яких може з’являтися дерево, тоді як $(thing)дані про добування$() містять відомості про продуктивність, швидкість потоку та чи виробляє дерево лише навесні."
 		},
 		{
-			"type": "patchouli:text",
+			"type": "",
 			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Клен$()$(l:arborfirmacraft/tapping_index#birch)$(li)Береза$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Гевея$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Каучуковий інжир$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Сейба$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Осика$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Смерека$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)Білий кедр$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Дуглас$()"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "maple",
+			"type": "",
+			"anchor": "",
 			"title": "Клен",
-			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): -8.4°C$(br)$(thing)Максимальна температура$(): 8°C$(br)$(thing)Мінімальна кількість опадів$(): 240$(br)$(thing)Максимальна кількість опадів$(): 470$(br2)$(bold)Дані про добування$()$(br)$(thing)Мінімальна температура для продуктивності$(): -4°C$(br)$(thing)Максимальна температура для продуктивності$(): 6°C$(br)$(thing)Тільки навесні$(): Так$(br)$(thing)Швидкість потоку$(): 5 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): Кленовий сік$(br)$(thing)Переробляється в$(): Кленовий цукор",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "birch",
+			"type": "",
+			"anchor": "",
 			"title": "Береза",
-			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): -12.1°C$(br)$(thing)Максимальна температура$(): 6.1°C$(br)$(thing)Мінімальна кількість опадів$(): 125$(br)$(thing)Максимальна кількість опадів$(): 310$(br2)$(bold)Дані про добування$()$(br)$(thing)Мінімальна температура для продуктивності$(): -4°C$(br)$(thing)Максимальна температура для продуктивності$(): 6°C$(br)$(thing)Тільки навесні$(): Так$(br)$(thing)Швидкість потоку$(): 5 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): Березовий сік$(br)$(thing)Переробляється в$(): Березовий цукор",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "hevea",
+			"type": "",
+			"anchor": "",
 			"title": "Гевея",
-			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): 17.1°C$(br)$(thing)Максимальна температура$(): 26.2°C$(br)$(thing)Мінімальна кількість опадів$(): 390$(br)$(thing)Максимальна кількість опадів$(): 500$(br2)$(bold)Дані про добування$()$(br)$(thing)Мінімальна температура для продуктивності$(): 8°C$(br)$(thing)Максимальна температура для продуктивності$(): Н/Д$(br)$(thing)Тільки навесні$(): Ні$(br)$(thing)Швидкість потоку$(): 3 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
+			""
 			],
 			"text": "\"$(thing)Виробляє$(): латекс$(br)$(thing)Переробляється в$(): клейку смолу та гуму",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "rubber_fig",
+			"type": "",
+			"anchor": "",
 			"title": "Каучуковий інжир",
-			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): 9.8°C$(br)$(thing)Максимальна температура$(): 20.7°C$(br)$(thing)Мінімальна кількість опадів$(): 290$(br)$(thing)Максимальна кількість опадів$(): 400$(br2)$(bold)Дані про добування$()$(br)$(thing)Мінімальна температура для продуктивності$(): 4°C$(br)$(thing)Максимальна температура для продуктивності$(): Н/Д$(br)$(thing)Тільки навесні$(): Ні$(br)$(thing)Швидкість потоку$(): 2 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
+			""
 			],
 			"text": "\"$(thing)Виробляє$(): латекс$(br)$(thing)Переробляється в$(): клейку смолу та гуму",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "kapok",
+			"type": "",
+			"anchor": "",
 			"title": "Cейба п'ятитичиникова",
-			"item": "tfc:wood/log/kapok,tfc:wood/wood/kapok,tfc:wood/leaves/kapok,tfc:wood/sapling/kapok",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): 17.1°C$(br)$(thing)Максимальна температура$(): 38°C$(br)$(thing)Мінімальна кількість опадів$(): 320$(br)$(thing)Максимальна кількість опадів$(): 500$(br2)$(bold)Дані про добування$()$(br)$(thing)Мінімальна температура для продуктивності$(): 12°C$(br)$(thing)Максимальна температура для продуктивності$(): Н/Д$(br)$(thing)Тільки навесні$(): Ні$(br)$(thing)Швидкість потоку$(): 4 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
+			""
 			],
 			"text": "\"$(thing)Виробляє$(): латекс$(br)$(thing)Переробляється в$(): клейку смолу та гуму",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "aspen",
+			"type": "",
+			"anchor": "",
 			"title": "Осика",
-			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні Дані$()$(br)$(thing)Мінімальна Температура$(): -15.7°C$(br)$(thing)Максимальна Температура$(): -1.1°C$(br)$(thing)Мінімальна кількість опадів$(): 350$(br)$(thing)Максимальна кількість опадів$(): 500$(br2)$(bold)Дані для добування$()$(br)$(thing)Мін. Температура для аиробництва$(): -10°C$(br)$(thing)Макс. температура для виробництва$(): Н/Д$(br)$(thing)Ексклюзивно для весни$(): Ні$(br)$(thing)Швидкість потоку$(): 2 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "spruce",
+			"type": "",
+			"anchor": "",
 			"title": "Смерека",
-			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): -17.5°C$(br)$(thing)Максимальна температура$(): -6.6°C$(br)$(thing)Мінімальна кількість опадів$(): 220$(br)$(thing)Максимальна кількість опадів$(): 470$(br2)$(bold)Дані щодо видобування$()$(br)$(thing)Мін температура для видобування$(): -10°C$(br)$(thing)Макс температура для видобування$(): Н/Д$(br)$(thing)Ексклюзивно весною$(): Ні$(br)$(thing)Швидкість потоку$(): 4 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "white_cedar",
+			"type": "",
+			"anchor": "",
 			"title": "Білий кедр",
-			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): -15.7°C$(br)$(thing)Максимальна температура$(): 0.7°C$(br)$(thing)Мінімальна кількість опадів$(): 100$(br)$(thing)Максимальна кількість опадів$(): 285$(br2)$(bold)Дані щодо видобування$()$(br)$(thing)Мін температура для видобування$(): -8°C$(br)$(thing)Макс температура для видобування$(): Н/Д$(br)$(thing)Ексклюзивно весною$(): Ні$(br)$(thing)Швидкість потоку$(): 3 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
-			"border": true
+			"border": ""
 		},
 		{
-			"type": "patchouli:spotlight",
-			"anchor": "douglas_fir",
+			"type": "",
+			"anchor": "",
 			"title": "Дуглас",
-			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
-			"link_recipe": false,
+			"item": "",
+			"link_recipe": "",
 			"text": "$(bold)Кліматичні дані$()$(br)$(thing)Мінімальна температура$(): -15.7°C$(br)$(thing)Максимальна температура$(): 6.1°C$(br)$(thing)Мінімальна кількість опадів$(): 305$(br)$(thing)Максимальна кількість опадів$(): 500$(br2)$(bold)Дані щодо видобування$()$(br)$(thing)Мін температура для видобування$(): -8°C$(br)$(thing)Макс температура для видобування$(): Н/Д$(br)$(thing)Ексклюзивно весною$(): Ні$(br)$(thing)Швидкість потоку$(): 2 мВ"
 		},
 		{
-			"type": "patchouli:image",
+			"type": "",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
+			""
 			],
 			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
-			"border": true
+			"border": ""
 		}
 	]
 }
