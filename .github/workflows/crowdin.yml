@@ -22,6 +22,7 @@ permissions:
 
 env:
   LOCALIZATION_BRANCH: translations
+  TARGET_BRANCH: dev
 
 jobs:
   sync:
@@ -51,6 +52,7 @@ jobs:
           export_only_approved: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
+          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -79,6 +81,7 @@ jobs:
           export_only_approved: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
+          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
           config: .github/config/crowdin_patchouli.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -99,7 +102,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: ${{ env.LOCALIZATION_BRANCH }}
-          target_branch: dev
+          target_branch: ${{ env.TARGET_BRANCH }}
           ignore_users: "dependabot"
           label: "Pull request: Translation"
           title: 'New Crowdin translations'
