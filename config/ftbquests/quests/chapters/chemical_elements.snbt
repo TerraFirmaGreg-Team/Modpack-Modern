@@ -954,7 +954,7 @@
 		{
 			description: ["{quests.chemical_elements.tritanium.desc}"]
 			id: "3BFCA913579F56DD"
-			subtitle: "{quests.chemical_elements.element} #119"
+			subtitle: "{quests.chemical_elements.element} #§k119§r"
 			tasks: [{
 				id: "31F3FB3659622CA2"
 				item: "gtceu:tritanium_bucket"
@@ -967,7 +967,7 @@
 		{
 			description: ["{quests.chemical_elements.duranium.desc}"]
 			id: "1ED10C267196E4A1"
-			subtitle: "{quests.chemical_elements.element} #120"
+			subtitle: "{quests.chemical_elements.element} #§k120§r"
 			tasks: [{
 				id: "1A6749739753A601"
 				item: "gtceu:duranium_bucket"
@@ -980,7 +980,7 @@
 		{
 			description: ["{quests.chemical_elements.trinium.desc}"]
 			id: "07DAD6E1B2C3D4E5"
-			subtitle: "{quests.chemical_elements.element} #125"
+			subtitle: "{quests.chemical_elements.element} #§k125§r"
 			tasks: [{
 				id: "18EBE7F2C3D4E5F6"
 				item: "gtceu:trinium_dust"
@@ -988,12 +988,12 @@
 			}]
 			title: "{quests.chemical_elements.trinium.title}"
 			x: 6.0d
-			y: 8.0d
+			y: 11.0d
 		}
 		{
 			description: ["{quests.chemical_elements.naquadah.desc}"]
 			id: "29FCF803D4E5F6A7"
-			subtitle: "{quests.chemical_elements.element} #174"
+			subtitle: "{quests.chemical_elements.element} #§k174§r"
 			tasks: [{
 				id: "3A0D0914E5F6A7B8"
 				item: "gtceu:naquadah_dust"
