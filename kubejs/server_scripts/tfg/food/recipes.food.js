@@ -1310,6 +1310,17 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('minecraft:golden_apple').resetFood()
 	})
 
+	//Honeyed Apple
+
+	event.shapeless('create:honeyed_apple', ['#tfc:foods/apples', 'firmalife:raw_honey'])
+	
+	event.recipes.gtceu.food_processor('create:honeyed_apple')
+		.itemInputs('#tfc:foods/apples', 'firmalife:raw_honey')
+		.itemOutputs(TFC.isp.of('create:honeyed_apple').resetFood())
+		.circuit(5)
+		.duration(60)
+		.EUt(16)
+
 	//#region New foods
 
 	event.recipes.tfc.heating('tfg:food/raw_birt', 200)
