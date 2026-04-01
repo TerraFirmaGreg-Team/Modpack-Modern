@@ -2483,13 +2483,4 @@ const registerCreateRecipes = (event) => {
 	event.smelting('#forge:ingots/tin', 'create:crushed_raw_tin')
 	event.smelting('#forge:ingots/lead', 'create:crushed_raw_lead')
 
-	// apple
-
-	event.shapeless('create:honeyed_apple', ['#tfc:foods/apples', 'firmalife:raw_honey'])
-	
-	event.recipes.gtceu.food_processor('create:honeyed_apple')
-	.itemInputs('#tfc:foods/apples', 'firmalife:raw_honey')
-	.itemOutputs('create:honeyed_apple')
-	.duration(60)
-	.EUt(16)
 }
