@@ -47,8 +47,8 @@ const addCopperOxidizingRecipes = (event, source, target) => {
 			.inputFluids("#tfc:any_water 150")
 			.circuit(1)
 			.itemOutputs(target[componentName])
-			.duration(1000)
-			.EUt(4)
+			.duration(60)
+			.EUt(10)
 	}
 }
 
@@ -67,7 +67,7 @@ const addCopperWaxingRecipes = (event, source, target) => {
 			.circuit(1)
 			.itemOutputs(target[componentName])
 			.duration(50)
-			.EUt(4)
+			.EUt(10)
 	}
 }
 
