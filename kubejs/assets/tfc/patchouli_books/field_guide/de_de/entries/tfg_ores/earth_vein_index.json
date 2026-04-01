@@ -24,22 +24,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1849,7 +1849,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 21%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Hoch und schmal)Rohrader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 0$(br)$(thing)Höhe$(): 150$(br)$(thing)Radius$(): 9$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit$(br2)Only in Volcanic Biomes",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/120 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 15%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Hoch und schmal)Rohrader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 0$(br)$(thing)Höhe$(): 80$(br)$(thing)Radius$(): 9$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
@@ -2374,6 +2374,73 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/230 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 24%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 28$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 15$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit",
+      "title": "Lead & Silver",
+      "type": "patchouli:text",
+      "anchor": "deep_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Galenit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 52%$(br)$(thing)Schmelzt in$(): Blei$(br)$(thing)Formel$(): PbS$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Atemschutzmaske)Leicht Giftig (Einatmung)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Natives Silber",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 26%$(br)$(thing)Schmelzt in$(): Silber$(br)$(thing)Formel$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Blei",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 21%$(br)$(thing)Schmelzt in$(): Blei$(br)$(thing)Formel$(): Pb$(br)$(thing)Gefahr$(): $(c)$(t:Benötigt Atemschutzmaske)Leicht Giftig (Einatmung)$(/t)$()",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -3408,6 +3475,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Prozentsatz$(): 100%$(br)$(thing)Schmelzt in$(): Zink$(br)$(thing)Formel$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/180 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 22%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Meistens rundförmig)Klumpenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 33$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 15$(br2)$(thing)Gesteinsarten$(): Gneis, Kristallschiefer, Marmor, Phyllit, Quarzit, Tonschiefer$(br2)Deep vein.",
+      "title": "Sphalerite, Pyrite & Sulfur",
+      "type": "patchouli:text",
+      "anchor": "deep_sphalerite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sphalerit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 63%$(br)$(thing)Schmelzt in$(): Zink$(br)$(thing)Formel$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pyrit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 27%$(br)$(thing)Schmelzt in$(): Gusseisen$(br)$(thing)Formel$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 9%$(br)$(thing)Quelle von$(): Schwefel$(br)$(thing)Formel$(): S",
       "type": "patchouli:multiblock"
     },
     {

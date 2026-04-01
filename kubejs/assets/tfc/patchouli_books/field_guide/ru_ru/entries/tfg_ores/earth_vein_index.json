@@ -24,22 +24,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1849,7 +1849,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 21%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 150$(br)$(thing)Радиус$(): 9$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only in Volcanic Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 80$(br)$(thing)Радиус$(): 9$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
@@ -2374,6 +2374,73 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 28$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "title": "Lead & Silver",
+      "type": "patchouli:text",
+      "anchor": "deep_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Свинец",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -3408,6 +3475,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 33$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Deep vein.",
+      "title": "Sphalerite, Pyrite & Sulfur",
+      "type": "patchouli:text",
+      "anchor": "deep_sphalerite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 63%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 27%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
