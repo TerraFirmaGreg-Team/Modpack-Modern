@@ -68,14 +68,6 @@
 			image: "ftbquests:textures/shapes/square/outline.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 3.0d
-			y: 4.0d
-		}
-		{
-			height: 1.0d
-			image: "ftbquests:textures/shapes/square/outline.png"
-			rotation: 0.0d
-			width: 1.0d
 			x: 6.0d
 			y: 4.0d
 		}
@@ -842,6 +834,20 @@
 			}]
 			title: "{quests.chemical_elements.yttrium.title}"
 			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["{quests.chemical_elements.zirconium.desc}"]
+			id: "43B837B54E9BA726"
+			optional: true
+			subtitle: "{quests.chemical_elements.element} #40"
+			tasks: [{
+				id: "5AEF38AF6DC5F9C2"
+				item: "gtceu:zirconium_dust"
+				type: "item"
+			}]
+			title: "{quests.chemical_elements.zirconium.title}"
+			x: 3.0d
 			y: 4.0d
 		}
 		{
