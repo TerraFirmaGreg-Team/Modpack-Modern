@@ -74,6 +74,7 @@ jobs:
     name: "[🤝] Create Pull Request"
     runs-on: ubuntu-latest
     needs: [sync-language, sync-patchouli]
+    if: github.event_name == 'schedule'
     steps:
       - name: "[📦] Checkout repository"
         uses: actions/checkout@v6
