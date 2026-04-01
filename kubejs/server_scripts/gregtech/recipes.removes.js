@@ -947,6 +947,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:rock_breaker/obsidian' })
 
 	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_magnesia_refractory_brick_to_nugget' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_rough_silicon_carbide_to_nugget' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_wax_to_nugget' })
 
 	// Remove nether air and ender air
 	event.remove({ id: 'gtceu:centrifuge/nether_air_separation' })

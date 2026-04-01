@@ -301,4 +301,7 @@ const registerTFCRecipes = (event) => {
 			A: `tfc:wood/sapling/${type}`
 		}).id(`tfg:shaped/tfc/${type}_krummholz`);
 	});
+
+	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
+		.id('tfg:shapeless/driftwood_to_stick')
 }

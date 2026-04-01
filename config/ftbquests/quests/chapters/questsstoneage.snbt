@@ -593,6 +593,7 @@
 					icon: "tfc:plant/pampas_grass"
 					id: "0DEAAE4416D8F289"
 					observe_type: 1
+					optional_task: true
 					timer: 0L
 					title: "{quests.tasktype.lookat} #tfc:clay_indicators"
 					to_observe: "#tfc:clay_indicators"
