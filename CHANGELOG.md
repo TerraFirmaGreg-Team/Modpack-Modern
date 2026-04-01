@@ -4,12 +4,13 @@
 ### Changes
 - Added a recipe to turn driftwood into sticks @Pyritie
 - Clay can now spawn in coarse dirt (but if you're in hot/dry climates, try finding a Mud Flats biome) (#3637) @Pyritie
-- GregTech ore indicators also no longer appear on the minimap @BlueBoat29
+- TFC and GregTech ore indicators also no longer appear on the minimap @BlueBoat29 @Mqrius
 - Improved the rarity section of the ore vein EMI tab @SakuraKitsurugi
 - Removed some biomes that illages were spawning weirdly in @Pyritie
 - Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
 - Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
 - Molten igneous mafic + ice mixer recipe is now HV, so you can't get free iron early @Pyritie
+- Hiking boots, space suits, and red steel/caribou/polar bear/direwolf/insulated leather equipment are now immune to powder snow (#3626) @Pyritie
 ### Bug fixes
 - Fixed a server crash @Mqrius
 - Fixed many of the new ore veins not spawning at all @TomPlop
@@ -21,7 +22,7 @@
 - Fixed gregtech drills getting mining speed bonuses from the digger helmet upgrade @Thomasx0
 - Fixed the digger helmet drinking upgrade cancelling sprinting @Thomasx0
 - Fixed the digger helmet adding additional armor when wearing another head equipment that adds armor @Thomasx0
-### Translation updates
+- Fixed drowned not understanding how javelins work @Pyritie
 
 ## [0.12.0] - 30-03-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
