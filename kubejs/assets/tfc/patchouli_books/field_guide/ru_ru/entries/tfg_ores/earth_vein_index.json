@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfide$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3598,6 +3598,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/170 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Volcanic Biomes",
+      "title": "Sulfide",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Борнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 39%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 13%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/34 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 87%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -60 — -45$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 5$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
@@ -3715,73 +3807,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₂S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/170 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Volcanic Biomes",
-      "title": "Sulfur, Stibnite & Bornite",
-      "type": "patchouli:text",
-      "anchor": "normal_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Борнит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 56%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Сера",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Стибнит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 18%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {

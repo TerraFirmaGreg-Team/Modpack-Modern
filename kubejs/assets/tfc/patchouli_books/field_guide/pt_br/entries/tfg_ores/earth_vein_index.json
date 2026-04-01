@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfide$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3598,6 +3598,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)Raridade$(): 1/170 chunks$(br)$(thing)Densidade$(): 29%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 10 — 70$(br)$(thing)Tamanho$(): 34$(br)$(thing)Altura$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 70$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Tufo, Xisto$(br2)Only in Volcanic Biomes",
+      "title": "Sulfide",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bornita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 39%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Esfalerita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Enxofre",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 17%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Estibnita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 13%$(br)$(thing)Derrete em$(): Antimônio$(br)$(thing)Fórmula$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)Raridade$(): 1/34 chunks$(br)$(thing)Densidade$(): 87%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): -60 — -45$(br)$(thing)Tamanho$(): 39$(br)$(thing)Altura$(): 5$(br)$(thing)Profundidade Máxima do Indicador$(): 5$(br2)$(thing)Tipos de Pedra$(): Diorito, Gabro, Granito$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
@@ -3715,73 +3807,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Cobre$(br)$(thing)Fórmula$(): Cu₂S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/170 chunks$(br)$(thing)Densidade$(): 29%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 10 — 70$(br)$(thing)Tamanho$(): 34$(br)$(thing)Altura$(): 10$(br)$(thing)Profundidade Máxima do Indicador$(): 70$(br2)$(thing)Tipos de Pedra$(): Andesito, Ardósia, Argilito, Basalto, Calcário, Cherte, Conglomerado, Dacito, Diorito, Dolomito, Filito, Folhelho, Gabro, Giz, Gnaisse, Granito, Mármore, Quartzito, Riolito, Tufo, Xisto$(br2)Only in Volcanic Biomes",
-      "title": "Sulfur, Stibnite & Bornite",
-      "type": "patchouli:text",
-      "anchor": "normal_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Bornita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 56%$(br)$(thing)Derrete em$(): Cobre$(br)$(thing)Fórmula$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Enxofre",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 25%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Estibnita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 18%$(br)$(thing)Derrete em$(): Antimônio$(br)$(thing)Fórmula$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {

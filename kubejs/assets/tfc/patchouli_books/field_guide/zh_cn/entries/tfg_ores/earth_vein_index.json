@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfide$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3598,6 +3598,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)稀有度$(): 1/170 区块$(br)$(thing)密度$(): 29%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 70$(br)$(thing)尺寸$(): 34$(br)$(thing)高度$(): 10$(br)$(thing)指示器最大深度$(): 70$(br2)$(thing)岩石类型$(): 凝灰岩, 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩$(br2)Only in Volcanic Biomes",
+      "title": "Sulfide",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "斑铜矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 39%$(br)$(thing)熔化$(): 铜$(br)$(thing)化学式$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "闪锌矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)熔化$(): 锌$(br)$(thing)化学式$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硫",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 17%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "辉锑矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 13%$(br)$(thing)熔化$(): 锑$(br)$(thing)化学式$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)稀有度$(): 1/34 区块$(br)$(thing)密度$(): 87%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): -60 — -45$(br)$(thing)尺寸$(): 39$(br)$(thing)高度$(): 5$(br)$(thing)指示器最大深度$(): 5$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
@@ -3715,73 +3807,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 10%$(br)$(thing)来源$(): 铜$(br)$(thing)化学式$(): Cu₂S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)稀有度$(): 1/170 区块$(br)$(thing)密度$(): 29%$(br)$(thing)类型$(): 盘状矿脉$(br)$(thing)Y 坐标$(): 10 — 70$(br)$(thing)尺寸$(): 34$(br)$(thing)高度$(): 10$(br)$(thing)指示器最大深度$(): 70$(br2)$(thing)岩石类型$(): 凝灰岩, 千枚岩, 大理岩, 安山岩, 板岩, 流纹岩, 燧石, 片岩, 片麻岩, 玄武岩, 白云岩, 白垩岩, 石灰岩, 石英岩, 砾岩, 粘土岩, 花岗岩, 英安岩, 辉长岩, 闪长岩, 页岩$(br2)Only in Volcanic Biomes",
-      "title": "Sulfur, Stibnite & Bornite",
-      "type": "patchouli:text",
-      "anchor": "normal_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "斑铜矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 56%$(br)$(thing)熔化$(): 铜$(br)$(thing)化学式$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "硫",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 硫$(br)$(thing)化学式$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "辉锑矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 18%$(br)$(thing)熔化$(): 锑$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {

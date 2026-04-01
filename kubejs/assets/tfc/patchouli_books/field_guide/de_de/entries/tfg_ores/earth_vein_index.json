@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfide$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3598,6 +3598,98 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/170 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 29%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Breit und flach)Scheibenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 34$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 70$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Dolomit, Gabbro, Gneis, Granit, Hornstein, Kalk, Kalkstein, Konglomerat, Kristallschiefer, Marmor, Phyllit, Quarzit, Rhyolith, Schieferstein, Tonschiefer, Tonstein, Tuff$(br2)Only in Volcanic Biomes",
+      "title": "Sulfide",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bornit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 39%$(br)$(thing)Quelle von$(): Kupfer$(br)$(thing)Formel$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sphalerit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 30%$(br)$(thing)Schmelzt in$(): Zink$(br)$(thing)Formel$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 17%$(br)$(thing)Quelle von$(): Schwefel$(br)$(thing)Formel$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Stibnit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentsatz$(): 13%$(br)$(thing)Schmelzt in$(): Antimonie$(br)$(thing)Formel$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/34 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 87%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Breit und flach)Scheibenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): -60 — -45$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 39$(br)$(thing)Höhe$(): 5$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 5$(br2)$(thing)Gesteinsarten$(): Diorit, Gabbro, Granit$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
@@ -3715,73 +3807,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Prozentsatz$(): 10%$(br)$(thing)Quelle von$(): Kupfer$(br)$(thing)Formel$(): Cu₂S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:Die Chance, dass eine Ader pro Chunk generiert wird. Kleinere und untere Zahlen sind häufiger.)Seltenheit$(/t)$(): 1/170 Chunks$(br)$(thing)$(t:Der Prozentsatz von Blöcken in einer Ader, die Erze anstelle von Stein sind. Eine höherer Prozentsatz heißt mehr Erze.)Dichte$(/t)$(): 29%$(br)$(thing)$(t:Die Form einer Ader.)Typ$(/t)$(): $(t:Breit und flach)Scheibenader$(/t)$(br)$(thing)$(t:Die Y-Höhen, zwischen denen die Ader generieren kann.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:Der durchschnittliche Durchmesser der Ader)Größe$(/t)$(): 34$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:Wenn die Distanz zwischen der Oberfläche und der Erzader größer als diese Zahl ist, werden keine Indikatoren an der Oberfläche generiert.)Indikator Maximale Tiefe$(/t)$(): 70$(br2)$(thing)Gesteinsarten$(): Andesit, Basalt, Dazit, Diorit, Dolomit, Gabbro, Gneis, Granit, Hornstein, Kalk, Kalkstein, Konglomerat, Kristallschiefer, Marmor, Phyllit, Quarzit, Rhyolith, Schieferstein, Tonschiefer, Tonstein, Tuff$(br2)Only in Volcanic Biomes",
-      "title": "Sulfur, Stibnite & Bornite",
-      "type": "patchouli:text",
-      "anchor": "normal_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Bornit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 56%$(br)$(thing)Quelle von$(): Kupfer$(br)$(thing)Formel$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 25%$(br)$(thing)Quelle von$(): Schwefel$(br)$(thing)Formel$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Stibnit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentsatz$(): 18%$(br)$(thing)Schmelzt in$(): Antimonie$(br)$(thing)Formel$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
