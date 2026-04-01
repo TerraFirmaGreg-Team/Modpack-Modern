@@ -14,26 +14,387 @@
 		id: "gtceu:iron_dust"
 	}
 	id: "2477DBCE1DD223C0"
+	images: [
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 17.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: 7.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.0d
+			y: 8.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: 8.5d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
-		{
-			description: [
-				"{quests.chemical_elements.warning.desc.1}"
-				"{quests.chemical_elements.warning.desc.2}"
-			]
-			icon: "createdeco:decal_warning"
-			id: "537EAF6E902F562C"
-			size: 2.0d
-			subtitle: "{quests.chemical_elements.warning.subtitle}"
-			tasks: [{
-				id: "2B6989461D037FDF"
-				title: "{quests.chemical_elements.warning.task}"
-				type: "checkmark"
-			}]
-			x: 7.0d
-			y: 1.0d
-		}
 		{
 			description: ["{quests.chemical_elements.hydrogen.desc}"]
 			icon: "gtceu:hydrogen_bucket"
@@ -682,8 +1043,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.lanthanum.title}"
-			x: 2.5d
-			y: 7.0d
+			x: 2.0d
+			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.cerium.desc}"]
@@ -695,8 +1056,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.cerium.title}"
-			x: 3.5d
-			y: 7.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.neodymium.desc}"]
@@ -708,8 +1069,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.neodymium.title}"
-			x: 5.5d
-			y: 7.0d
+			x: 5.0d
+			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.samarium.desc}"]
@@ -721,8 +1082,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.samarium.title}"
-			x: 7.5d
-			y: 7.0d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.tantalum.desc}"]
@@ -890,8 +1251,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.thorium.title}"
-			x: 3.5d
-			y: 8.0d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.uranium.desc}"]
@@ -911,8 +1272,8 @@
 				}
 			]
 			title: "{quests.chemical_elements.uranium.title}"
-			x: 5.5d
-			y: 8.0d
+			x: 5.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.neptunium.desc}"]
@@ -925,8 +1286,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.neptunium.title}"
-			x: 6.5d
-			y: 8.0d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.plutonium.desc}"]
@@ -946,8 +1307,8 @@
 				}
 			]
 			title: "{quests.chemical_elements.plutonium.title}"
-			x: 7.5d
-			y: 8.0d
+			x: 7.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.europium.desc}"]
@@ -958,8 +1319,8 @@
 				item: "gtceu:europium_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 7.0d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.americium.desc}"]
@@ -970,8 +1331,8 @@
 				item: "gtceu:americium_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 8.0d
+			x: 8.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.lutetium.desc}"]
@@ -982,8 +1343,8 @@
 				item: "gtceu:lutetium_bucket"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 8.0d
+			x: 16.0d
+			y: 8.5d
 		}
 		{
 			description: ["{quests.chemical_elements.darmstadtium.desc}"]
