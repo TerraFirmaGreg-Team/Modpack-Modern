@@ -10,6 +10,7 @@
 - Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
 - Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
 - Molten igneous mafic + ice mixer recipe is now HV, so you can't get free iron early @Pyritie
+- Hiking boots, space suits, and red steel/caribou/polar bear/direwolf/insulated leather equipment are now immune to powder snow (#3626) @Pyritie
 ### Bug fixes
 - Fixed a server crash @Mqrius
 - Fixed many of the new ore veins not spawning at all @TomPlop
