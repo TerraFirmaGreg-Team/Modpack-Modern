@@ -1314,12 +1314,12 @@ function registerTFGFoodRecipes(event) {
 
 	event.recipes.tfc.advanced_shapeless_crafting(TFC.isp.of('create:honeyed_apple').copyFood(), ['#tfc:foods/apples', 'firmalife:raw_honey'])
 	
-	event.recipes.gtceu.food_processor('create:honeyed_apple')
-		.itemInputs('#tfc:foods/apples', 'firmalife:raw_honey')
-		.itemOutputs(TFC.isp.of('create:honeyed_apple').copyFood())
-		.circuit(5)
-		.duration(60)
-		.EUt(16)
+	global.processorRecipe(event, 'honeyed_apple', 5 * 20, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['#tfc:foods/apples', 'firmalife:raw_honey'],
+		itemOutputs: ['create:honeyed_apple'],
+		circuit: 5,
+		itemOutputProvider: TFC.isp.of('create:honeyed_apple').copyFood()
+	})
 
 	//#region New foods
 
