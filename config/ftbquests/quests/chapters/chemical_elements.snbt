@@ -38,11 +38,23 @@
 			description: ["{quests.chemical_elements.hydrogen.desc}"]
 			id: "417807F06314E78F"
 			subtitle: "{quests.chemical_elements.element} #1"
-			tasks: [{
-				id: "1BCC8FDB759F9489"
-				item: "gtceu:hydrogen_bucket"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "1BCC8FDB759F9489"
+                    item: "gtceu:hydrogen_bucket"
+                    type: "item"
+			    }
+                {
+                    id: "1BCC8FDB759F9490"
+                    item: "gtceu:deuterium_bucket"
+                    type: "item"
+			    }
+                {
+                    id: "1BCC8FDB759F9491"
+                    item: "gtceu:tritium_bucket"
+                    type: "item"
+			    }
+            ]
 			title: "{quests.chemical_elements.hydrogen.title}"
 			x: 0.0d
 			y: 0.0d
@@ -51,11 +63,18 @@
 			description: ["{quests.chemical_elements.helium.desc}"]
 			id: "3EE0AE78935A527F"
 			subtitle: "{quests.chemical_elements.element} #2"
-			tasks: [{
-				id: "2498B47EBC1D4400"
-				item: "gtceu:helium_bucket"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "2498B47EBC1D4400"
+                    item: "gtceu:helium_bucket"
+                    type: "item"
+                }
+                {
+                    id: "2498B47EBC1D4401"
+                    item: "gtceu:helium_3_bucket"
+                    type: "item"
+                }
+            ]
 			title: "{quests.chemical_elements.helium.title}"
 			x: 17.0d
 			y: 0.0d
@@ -621,6 +640,26 @@
 			y: 4.0d
 		}
 		{
+			description: ["{quests.chemical_elements.caesium.desc}"]
+			id: "754BD4898EA2E32D"
+			subtitle: "{quests.chemical_elements.element} #55"
+			tasks: [
+                {
+                    id: "2DCE847775BE0DE7"
+                    item: "gtceu:caesium_dust"
+                    type: "item"
+                }
+                {
+                    id: "2DCE847775BE0DE8"
+                    item: "gtceu:caesium_137_dust"
+                    type: "item"
+                }
+            ]
+			title: "{quests.chemical_elements.caesium.title}"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
 			description: ["{quests.chemical_elements.barium.desc}"]
 			id: "754BD4898EA2E32C"
 			subtitle: "{quests.chemical_elements.element} #56"
@@ -859,11 +898,18 @@
 			icon: "gtceu:uranium_dust"
 			id: "2BBAC2F1537E08BA"
 			subtitle: "{quests.chemical_elements.element} #92"
-			tasks: [{
-				id: "38476862A2A6F9EE"
-				item: "gtceu:uranium_dust"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "38476862A2A6F9EE"
+                    item: "gtceu:uranium_dust"
+                    type: "item"
+                }
+                {
+                    id: "38476862A2A6F9EF"
+                    item: "gtceu:uranium_235_dust"
+                    type: "item"
+                }
+            ]
 			title: "{quests.chemical_elements.uranium.title}"
 			x: 5.0d
 			y: 9.0d
@@ -887,11 +933,18 @@
 			icon: "gtceu:plutonium_dust"
 			id: "13072C175C613D5F"
 			subtitle: "{quests.chemical_elements.element} #94"
-			tasks: [{
-				id: "0670640059E678DD"
-				item: "gtceu:plutonium_dust"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "0670640059E678DD"
+                    item: "gtceu:plutonium_dust"
+                    type: "item"
+                }
+                {
+                    id: "0670640059E678DE"
+                    item: "gtceu:plutonium_241_dust"
+                    type: "item"
+                }
+            ]
 			title: "{quests.chemical_elements.plutonium.title}"
 			x: 7.0d
 			y: 9.0d
@@ -988,11 +1041,23 @@
 			description: ["{quests.chemical_elements.naquadah.desc}"]
 			id: "29FCF803D4E5F6A7"
 			subtitle: "{quests.chemical_elements.element} #§k174§r"
-			tasks: [{
-				id: "3A0D0914E5F6A7B8"
-				item: "gtceu:naquadah_dust"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "3A0D0914E5F6A7B8"
+                    item: "gtceu:naquadah_dust"
+                    type: "item"
+                }
+                {
+                    id: "3A0D0914E5F6A7B9"
+                    item: "gtceu:enriched_naquadah_dust"
+                    type: "item"
+                }
+                {
+                    id: "3A0D0914E5F6A7BA"
+                    item: "gtceu:naquadria_ingot"
+                    type: "item"
+                }
+            ]
 			title: "{quests.chemical_elements.naquadah.title}"
 			x: 9.0d
 			y: 11.0d
@@ -1007,8 +1072,8 @@
 				type: "item"
 			}]
 			title: "{quests.chemical_elements.neutronium.title}"
-			x: -1.0d
-			y: 0.0d
+			x: 0.0d
+			y: -1.0d
 		}
 	]
 	title: "{quests.chemical_elements.chapter_title}"
