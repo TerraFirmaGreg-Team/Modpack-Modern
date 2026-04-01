@@ -1330,13 +1330,21 @@
 		}
 		{
 			description: ["{quests.chemical_elements.americium.desc}"]
+			icon: "gtceu:americium_241_dust"
 			id: "1A321305AA1A8DF3"
 			subtitle: "{quests.chemical_elements.element} #95"
-			tasks: [{
-				id: "70FEE805EBB8EF9C"
-				item: "gtceu:americium_bucket"
-				type: "item"
-			}]
+			tasks: [
+                {
+                    id: "70FEE805EBB8EF9C"
+                    item: "gtceu:americium_241_dust"
+                    type: "item"
+                }
+                {
+                    id: "70FEE805EBB8EF9D"
+                    item: "gtceu:americium_bucket"
+                    type: "item"
+                }
+            ]
 			x: 8.0d
 			y: 8.5d
 		}
