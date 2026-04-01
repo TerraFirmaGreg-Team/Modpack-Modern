@@ -6,7 +6,6 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Added a recipe to turn driftwood into sticks @Pyritie
 - Clay can now spawn in coarse dirt (but if you're in hot/dry climates, try finding a Mud Flats biome) (#3637) @Pyritie
 - TFC and GregTech ore indicators also no longer appear on the minimap @BlueBoat29 @Mqrius
-- Improved the rarity section of the ore vein EMI tab @SakuraKitsurugi
 - Removed some biomes that illages were spawning weirdly in @Pyritie
 - Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
 - Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
