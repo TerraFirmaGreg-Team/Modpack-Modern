@@ -14,40 +14,6 @@
 		id: "gtceu:iron_dust"
 	}
 	id: "2477DBCE1DD223C0"
-	images: [
-		{
-			height: 1.0d
-			image: "minecraft:block/red_concrete"
-			rotation: 0.0d
-			width: 0.1d
-			x: 2.0d
-			y: 7.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/blue_concrete"
-			rotation: 0.0d
-			width: 0.1d
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/red_concrete"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.0d
-			y: 5.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/blue_concrete"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.0d
-			y: 6.0d
-		}
-	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
