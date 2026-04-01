@@ -2486,4 +2486,10 @@ const registerCreateRecipes = (event) => {
 	// apple
 
 	event.shapeless('create:honeyed_apple', ['#tfc:foods/apples', 'firmalife:raw_honey'])
+	
+	event.recipes.gtceu.food_processor('create:honeyed_apple')
+	.itemInputs('#tfc:foods/apples', 'firmalife:raw_honey')
+	.itemOutputs('create:honeyed_apple')
+	.duration(60)
+	.EUt(16)
 }
