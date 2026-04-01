@@ -1,6 +1,7 @@
 # Changelog
 
-## Unreleased
+## [0.12.1] - 01-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Changes
 - Added a recipe to turn driftwood into sticks @Pyritie
 - Clay can now spawn in coarse dirt (but if you're in hot/dry climates, try finding a Mud Flats biome) (#3637) @Pyritie
