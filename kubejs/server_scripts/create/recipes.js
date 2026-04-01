@@ -2482,4 +2482,8 @@ const registerCreateRecipes = (event) => {
 	event.smelting('#forge:ingots/silver', 'create:crushed_raw_silver')
 	event.smelting('#forge:ingots/tin', 'create:crushed_raw_tin')
 	event.smelting('#forge:ingots/lead', 'create:crushed_raw_lead')
+
+	// apple
+
+	event.shapeless('create:honeyed_apple', ['#tfc:foods/apples', 'firmalife:raw_honey'])
 }

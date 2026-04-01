@@ -112,6 +112,8 @@ const registerCreateItemTags = (event) => {
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_scoria_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_scorchia_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_veridium_slab')
+
+	event.add('tfc:foods/apple', 'create:honeyed_apple')
 }
 
 const registerCreateBlockTags = (event) => {
