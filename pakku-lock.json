@@ -8571,6 +8571,106 @@
             ]
         },
         {
+            "pakku_id": "8XO2vCNl00TcjiTl",
+            "pakku_links": [
+                "y0UC3kpLVhVgLz9b"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "iris-shader-folder",
+                "modrinth": "iris-shader-folder"
+            },
+            "name": {
+                "curseforge": "Iris/Oculus Shader Folder",
+                "modrinth": "Iris/Oculus Shader Folder"
+            },
+            "id": {
+                "curseforge": "1351246",
+                "modrinth": "yv6sGJzN"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "iris_shader_folder-1.2.6-forge.jar",
+                    "mc_versions": [
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20-Snapshot",
+                        "1.20.4",
+                        "1.20.3-Snapshot",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7850/795/iris_shader_folder-1.2.6-forge.jar",
+                    "id": "7850795",
+                    "parent_id": "1351246",
+                    "hashes": {
+                        "sha1": "1718b74961b8922e262f768632ccdc46ecaeb25a",
+                        "md5": "43345e21683319fa56a54421bebc59e2"
+                    },
+                    "required_dependencies": [
+                        "581495"
+                    ],
+                    "size": 194223,
+                    "date_published": "2026-03-31T13:50:53.193Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "iris_shader_folder-1.2.6-forge.jar",
+                    "mc_versions": [
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/yv6sGJzN/versions/KYvsvg6S/iris_shader_folder-1.2.6-forge.jar",
+                    "id": "KYvsvg6S",
+                    "parent_id": "yv6sGJzN",
+                    "hashes": {
+                        "sha512": "2b6494a9cb7f17df3f553c55a1050fcbdac5cd2b82df22549cc4469aa7f5a8e758cd2f1d6e7180d17e5331ffcaa061619e4881c7d323c5033c6c559710e989f3",
+                        "sha1": "1718b74961b8922e262f768632ccdc46ecaeb25a"
+                    },
+                    "required_dependencies": [
+                        "GchcoXML"
+                    ],
+                    "size": 194223,
+                    "date_published": "2026-03-31T13:38:58.044105Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "IiVfXdShLIwbXMtg",
             "type": "MOD",
             "side": "CLIENT",
@@ -14756,7 +14856,7 @@
             ]
         },
         {
-            "pakku_id": "xCpLjCguyfdGP47K",
+            "pakku_id": "YSoDLidLSJf6hdpZ",
             "type": "SHADER",
             "side": "CLIENT",
             "slug": {
@@ -14774,25 +14874,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7843/588/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
-                    "id": "7843588",
+                    "url": "https://edge.forgecdn.net/files/7848/994/TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
+                    "id": "7848994",
                     "parent_id": "954161",
                     "hashes": {
-                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329",
-                        "md5": "a50a19911603d13b1b34c40c001009e1"
+                        "sha1": "263df9a4b9b9c2961a595fe9016c4038fec12144",
+                        "md5": "a80ecaa35252d89c90fbdbb59eed3b70"
                     },
                     "required_dependencies": [],
-                    "size": 2252352,
-                    "date_published": "2026-03-30T00:07:45.630Z"
+                    "size": 2251469,
+                    "date_published": "2026-03-31T03:18:04.367Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -14802,16 +14902,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/cgsXvszz/TerraFirmaGreg-Shaders-Complementary-3.1.0.zip",
-                    "id": "cgsXvszz",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/TuhpCFo4/TerraFirmaGreg-Shaders-Complementary-3.1.1.zip",
+                    "id": "TuhpCFo4",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "7f5eb25efae9a7ccb1e8511ce460a5e51009e76e951385d0a04e13f86725718f591ddfa15f9325b639e0a5778da3ce1ee6602a22e5025b060bb180541de284a5",
-                        "sha1": "516e9cfdfb6b3cb59f17cda27a0a9b5860c99329"
+                        "sha512": "d6b19b02541386709e7d8bfdb8b8a2dc3c4cc604066c09d7a1f4979e5de541bc91577c8d628ecb5e51b326ce2bae5062d53a039d8832f59cefd2d4ede5131d14",
+                        "sha1": "263df9a4b9b9c2961a595fe9016c4038fec12144"
                     },
                     "required_dependencies": [],
-                    "size": 2252352,
-                    "date_published": "2026-03-30T00:07:47.295651Z"
+                    "size": 2251469,
+                    "date_published": "2026-03-31T03:18:07.913223Z"
                 }
             ]
         },
