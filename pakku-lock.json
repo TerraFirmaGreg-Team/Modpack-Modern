@@ -14808,29 +14808,6 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/OFVcQPLK/TerraFirmaGreg-Core-Modern-0.9.2.jar",
-                    "id": "OFVcQPLK",
-                    "parent_id": "lNttW2Xl",
-                    "hashes": {
-                        "sha512": "b14fd3b1c63f039f25dbf68267711c34066300905aca13325a629bdc5f34f3b22e4a1bfa22ed974f4885aacb3834aaecb6f95406bb4dc0c1d2d0d32f4c667b3c",
-                        "sha1": "9c9d30d23a5ddeeaa75a061a4b4c6a8848c9a38d"
-                    },
-                    "required_dependencies": [
-                        "1o7aFiY6"
-                    ],
-                    "size": 11776980,
-                    "date_published": "2026-04-01T19:00:57.481535Z"
-                },
-                {
                     "type": "curseforge",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.9.2.jar",
                     "mc_versions": [
@@ -14852,6 +14829,29 @@
                     ],
                     "size": 11776980,
                     "date_published": "2026-04-01T19:00:52.727Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/OFVcQPLK/TerraFirmaGreg-Core-Modern-0.9.2.jar",
+                    "id": "OFVcQPLK",
+                    "parent_id": "lNttW2Xl",
+                    "hashes": {
+                        "sha512": "b14fd3b1c63f039f25dbf68267711c34066300905aca13325a629bdc5f34f3b22e4a1bfa22ed974f4885aacb3834aaecb6f95406bb4dc0c1d2d0d32f4c667b3c",
+                        "sha1": "9c9d30d23a5ddeeaa75a061a4b4c6a8848c9a38d"
+                    },
+                    "required_dependencies": [
+                        "1o7aFiY6"
+                    ],
+                    "size": 11776980,
+                    "date_published": "2026-04-01T19:00:57.481535Z"
                 }
             ]
         },
