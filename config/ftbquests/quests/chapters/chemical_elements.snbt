@@ -409,7 +409,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.hydrogen.title}"
+			title: "{material.gtceu.hydrogen}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -429,7 +429,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.helium.title}"
+			title: "{material.gtceu.helium}"
 			x: 17.0d
 			y: 0.0d
 		}
@@ -442,7 +442,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.lithium.title}"
+			title: "{material.gtceu.lithium}"
 			x: 0.0d
 			y: 1.0d
 		}
@@ -455,7 +455,7 @@
 				item: "gtceu:beryllium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.beryllium.title}"
+			title: "{material.gtceu.beryllium}"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -468,7 +468,7 @@
 				item: "gtceu:boron_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.boron.title}"
+			title: "{material.gtceu.boron}"
 			x: 12.0d
 			y: 1.0d
 		}
@@ -481,7 +481,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.carbon.title}"
+			title: "{material.gtceu.carbon}"
 			x: 13.0d
 			y: 1.0d
 		}
@@ -494,7 +494,7 @@
 				item: "gtceu:nitrogen_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.nitrogen.title}"
+			title: "{material.gtceu.nitrogen}"
 			x: 14.0d
 			y: 1.0d
 		}
@@ -507,7 +507,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.oxygen.title}"
+			title: "{material.gtceu.oxygen}"
 			x: 15.0d
 			y: 1.0d
 		}
@@ -520,7 +520,7 @@
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.fluorine.title}"
+			title: "{material.gtceu.fluorine}"
 			x: 16.0d
 			y: 1.0d
 		}
@@ -533,7 +533,7 @@
 				item: "gtceu:neon_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.neon.title}"
+			title: "{material.gtceu.neon}"
 			x: 17.0d
 			y: 1.0d
 		}
@@ -546,7 +546,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.sodium.title}"
+			title: "{material.gtceu.sodium}"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -559,7 +559,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.magnesium.title}"
+			title: "{material.gtceu.magnesium}"
 			x: 1.0d
 			y: 2.0d
 		}
@@ -572,7 +572,7 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.aluminium.title}"
+			title: "{material.gtceu.aluminium}"
 			x: 12.0d
 			y: 2.0d
 		}
@@ -585,7 +585,7 @@
 				item: "gtceu:silicon_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.silicon.title}"
+			title: "{material.gtceu.silicon}"
 			x: 13.0d
 			y: 2.0d
 		}
@@ -598,7 +598,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.phosphorus.title}"
+			title: "{material.gtceu.phosphorus}"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -611,7 +611,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.sulfur.title}"
+			title: "{material.gtceu.sulfur}"
 			x: 15.0d
 			y: 2.0d
 		}
@@ -624,7 +624,7 @@
 				item: "gtceu:chlorine_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.chlorine.title}"
+			title: "{material.gtceu.chlorine}"
 			x: 16.0d
 			y: 2.0d
 		}
@@ -637,7 +637,7 @@
 				item: "gtceu:argon_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.argon.title}"
+			title: "{material.gtceu.argon}"
 			x: 17.0d
 			y: 2.0d
 		}
@@ -650,7 +650,7 @@
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.potassium.title}"
+			title: "{material.gtceu.potassium}"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -663,7 +663,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.calcium.title}"
+			title: "{material.gtceu.calcium}"
 			x: 1.0d
 			y: 3.0d
 		}
@@ -676,7 +676,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.titanium.title}"
+			title: "{material.gtceu.titanium}"
 			x: 3.0d
 			y: 3.0d
 		}
@@ -689,7 +689,7 @@
 				item: "gtceu:vanadium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.vanadium.title}"
+			title: "{material.gtceu.vanadium}"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -702,7 +702,7 @@
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.chromium.title}"
+			title: "{material.gtceu.chromium}"
 			x: 5.0d
 			y: 3.0d
 		}
@@ -715,7 +715,7 @@
 				item: "gtceu:manganese_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.manganese.title}"
+			title: "{material.gtceu.manganese}"
 			x: 6.0d
 			y: 3.0d
 		}
@@ -728,7 +728,7 @@
 				item: "gtceu:iron_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.iron.title}"
+			title: "{material.gtceu.iron}"
 			x: 7.0d
 			y: 3.0d
 		}
@@ -741,7 +741,7 @@
 				item: "gtceu:cobalt_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.cobalt.title}"
+			title: "{material.gtceu.cobalt}"
 			x: 8.0d
 			y: 3.0d
 		}
@@ -754,7 +754,7 @@
 				item: "gtceu:nickel_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.nickel.title}"
+			title: "{material.gtceu.nickel}"
 			x: 9.0d
 			y: 3.0d
 		}
@@ -767,7 +767,7 @@
 				item: "gtceu:copper_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.copper.title}"
+			title: "{material.gtceu.copper}"
 			x: 10.0d
 			y: 3.0d
 		}
@@ -780,7 +780,7 @@
 				item: "gtceu:zinc_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.zinc.title}"
+			title: "{material.gtceu.zinc}"
 			x: 11.0d
 			y: 3.0d
 		}
@@ -793,7 +793,7 @@
 				item: "gtceu:gallium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.gallium.title}"
+			title: "{material.gtceu.gallium}"
 			x: 12.0d
 			y: 3.0d
 		}
@@ -806,7 +806,7 @@
 				item: "gtceu:arsenic_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.arsenic.title}"
+			title: "{material.gtceu.arsenic}"
 			x: 14.0d
 			y: 3.0d
 		}
@@ -819,7 +819,7 @@
 				item: "gtceu:krypton_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.krypton.title}"
+			title: "{material.gtceu.krypton}"
 			x: 17.0d
 			y: 3.0d
 		}
@@ -832,7 +832,7 @@
 				item: "gtceu:yttrium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.yttrium.title}"
+			title: "{material.gtceu.yttrium}"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -846,7 +846,7 @@
 				item: "gtceu:zirconium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.zirconium.title}"
+			title: "{material.gtceu.zirconium}"
 			x: 3.0d
 			y: 4.0d
 		}
@@ -859,7 +859,7 @@
 				item: "gtceu:niobium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.niobium.title}"
+			title: "{material.gtceu.niobium}"
 			x: 4.0d
 			y: 4.0d
 		}
@@ -872,7 +872,7 @@
 				item: "gtceu:molybdenum_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.molybdenum.title}"
+			title: "{material.gtceu.molybdenum}"
 			x: 5.0d
 			y: 4.0d
 		}
@@ -885,7 +885,7 @@
 				item: "gtceu:ruthenium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.ruthenium.title}"
+			title: "{material.gtceu.ruthenium}"
 			x: 7.0d
 			y: 4.0d
 		}
@@ -898,7 +898,7 @@
 				item: "gtceu:rhodium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.rhodium.title}"
+			title: "{material.gtceu.rhodium}"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -911,7 +911,7 @@
 				item: "gtceu:palladium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.palladium.title}"
+			title: "{material.gtceu.palladium}"
 			x: 9.0d
 			y: 4.0d
 		}
@@ -924,7 +924,7 @@
 				item: "gtceu:silver_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.silver.title}"
+			title: "{material.gtceu.silver}"
 			x: 10.0d
 			y: 4.0d
 		}
@@ -937,7 +937,7 @@
 				item: "gtceu:cadmium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.cadmium.title}"
+			title: "{material.gtceu.cadmium}"
 			x: 11.0d
 			y: 4.0d
 		}
@@ -950,7 +950,7 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.indium.title}"
+			title: "{material.gtceu.indium}"
 			x: 12.0d
 			y: 4.0d
 		}
@@ -963,7 +963,7 @@
 				item: "gtceu:tin_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.tin.title}"
+			title: "{material.gtceu.tin}"
 			x: 13.0d
 			y: 4.0d
 		}
@@ -976,7 +976,7 @@
 				item: "gtceu:antimony_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.antimony.title}"
+			title: "{material.gtceu.antimony}"
 			x: 14.0d
 			y: 4.0d
 		}
@@ -989,7 +989,7 @@
 				item: "gtceu:iodine_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.iodine.title}"
+			title: "{material.gtceu.iodine}"
 			x: 16.0d
 			y: 4.0d
 		}
@@ -1002,7 +1002,7 @@
 				item: "gtceu:xenon_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.xenon.title}"
+			title: "{material.gtceu.xenon}"
 			x: 17.0d
 			y: 4.0d
 		}
@@ -1022,7 +1022,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.caesium.title}"
+			title: "{material.gtceu.caesium}"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -1035,7 +1035,7 @@
 				item: "gtceu:barium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.barium.title}"
+			title: "{material.gtceu.barium}"
 			x: 1.0d
 			y: 5.0d
 		}
@@ -1048,7 +1048,7 @@
 				item: "gtceu:lanthanum_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.lanthanum.title}"
+			title: "{material.gtceu.lanthanum}"
 			x: 2.0d
 			y: 7.5d
 		}
@@ -1061,7 +1061,7 @@
 				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.cerium.title}"
+			title: "{material.gtceu.cerium}"
 			x: 3.0d
 			y: 7.5d
 		}
@@ -1074,7 +1074,7 @@
 				item: "gtceu:neodymium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.neodymium.title}"
+			title: "{material.gtceu.neodymium}"
 			x: 5.0d
 			y: 7.5d
 		}
@@ -1087,7 +1087,7 @@
 				item: "gtceu:samarium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.samarium.title}"
+			title: "{material.gtceu.samarium}"
 			x: 7.0d
 			y: 7.5d
 		}
@@ -1100,7 +1100,7 @@
 				item: "gtceu:tantalum_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.tantalum.title}"
+			title: "{material.gtceu.tantalum}"
 			x: 4.0d
 			y: 5.0d
 		}
@@ -1113,7 +1113,7 @@
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.tungsten.title}"
+			title: "{material.gtceu.tungsten}"
 			x: 5.0d
 			y: 5.0d
 		}
@@ -1126,7 +1126,7 @@
 				item: "gtceu:rhenium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.rhenium.title}"
+			title: "{material.gtceu.rhenium}"
 			x: 6.0d
 			y: 5.0d
 		}
@@ -1139,7 +1139,7 @@
 				item: "gtceu:osmium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.osmium.title}"
+			title: "{material.gtceu.osmium}"
 			x: 7.0d
 			y: 5.0d
 		}
@@ -1152,7 +1152,7 @@
 				item: "gtceu:iridium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.iridium.title}"
+			title: "{material.gtceu.iridium}"
 			x: 8.0d
 			y: 5.0d
 		}
@@ -1165,7 +1165,7 @@
 				item: "gtceu:platinum_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.platinum.title}"
+			title: "{material.gtceu.platinum}"
 			x: 9.0d
 			y: 5.0d
 		}
@@ -1178,7 +1178,7 @@
 				item: "gtceu:gold_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.gold.title}"
+			title: "{material.gtceu.gold}"
 			x: 10.0d
 			y: 5.0d
 		}
@@ -1191,7 +1191,7 @@
 				item: "gtceu:mercury_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.mercury.title}"
+			title: "{material.gtceu.mercury}"
 			x: 11.0d
 			y: 5.0d
 		}
@@ -1204,7 +1204,7 @@
 				item: "gtceu:thallium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.thallium.title}"
+			title: "{material.gtceu.thallium}"
 			x: 12.0d
 			y: 5.0d
 		}
@@ -1217,7 +1217,7 @@
 				item: "gtceu:lead_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.lead.title}"
+			title: "{material.gtceu.lead}"
 			x: 13.0d
 			y: 5.0d
 		}
@@ -1230,7 +1230,7 @@
 				item: "gtceu:bismuth_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.bismuth.title}"
+			title: "{material.gtceu.bismuth}"
 			x: 14.0d
 			y: 5.0d
 		}
@@ -1243,7 +1243,7 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.radon.title}"
+			title: "{material.gtceu.radon}"
 			x: 17.0d
 			y: 5.0d
 		}
@@ -1256,7 +1256,7 @@
 				item: "gtceu:thorium_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.thorium.title}"
+			title: "{material.gtceu.thorium}"
 			x: 3.0d
 			y: 8.5d
 		}
@@ -1277,7 +1277,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.uranium.title}"
+			title: "{material.gtceu.uranium}"
 			x: 5.0d
 			y: 8.5d
 		}
@@ -1291,7 +1291,7 @@
 				item: "gtceu:neptunium_237_dust"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.neptunium.title}"
+			title: "{material.gtceu.neptunium}"
 			x: 6.0d
 			y: 8.5d
 		}
@@ -1312,7 +1312,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.plutonium.title}"
+			title: "{material.gtceu.plutonium}"
 			x: 7.0d
 			y: 8.5d
 		}
@@ -1334,17 +1334,17 @@
 			id: "1A321305AA1A8DF3"
 			subtitle: "{quests.chemical_elements.element} #95"
 			tasks: [
-                {
-                    id: "70FEE805EBB8EF9C"
-                    item: "gtceu:americium_241_dust"
-                    type: "item"
-                }
-                {
-                    id: "70FEE805EBB8EF9D"
-                    item: "gtceu:americium_bucket"
-                    type: "item"
-                }
-            ]
+				{
+					id: "70FEE805EBB8EF9C"
+					item: "gtceu:americium_241_dust"
+					type: "item"
+				}
+				{
+					id: "70FEE805EBB8EF9D"
+					item: "gtceu:americium_bucket"
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: 8.5d
 		}
@@ -1369,7 +1369,7 @@
 				item: "gtceu:darmstadtium_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.darmstadtium.title}"
+			title: "{material.gtceu.darmstadtium}"
 			x: 9.0d
 			y: 6.0d
 		}
@@ -1382,7 +1382,7 @@
 				item: "gtceu:tritanium_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.tritanium.title}"
+			title: "{material.gtceu.tritanium}"
 			x: 0.0d
 			y: 10.0d
 		}
@@ -1395,7 +1395,7 @@
 				item: "gtceu:duranium_bucket"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.duranium.title}"
+			title: "{material.gtceu.duranium}"
 			x: 1.0d
 			y: 10.0d
 		}
@@ -1408,7 +1408,7 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.trinium.title}"
+			title: "{material.gtceu.trinium}"
 			x: 2.0d
 			y: 10.0d
 		}
@@ -1434,7 +1434,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.chemical_elements.naquadah.title}"
+			title: "{material.gtceu.naquadah}"
 			x: 3.0d
 			y: 10.0d
 		}
@@ -1447,7 +1447,7 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			title: "{quests.chemical_elements.neutronium.title}"
+			title: "{material.gtceu.neutronium}"
 			x: 0.0d
 			y: -1.0d
 		}
