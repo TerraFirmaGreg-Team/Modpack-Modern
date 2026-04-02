@@ -170,7 +170,6 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
  */
 function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);

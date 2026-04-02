@@ -19,6 +19,7 @@
     ],
     "client_overrides": [
         "resourcepacks",
+        "shaderpacks",
         "kubejs/assets/**",
         "defaultconfigs/tfc-server.toml",
         "config/ftbbackups2.json",
@@ -257,12 +258,6 @@
             "side": "CLIENT"
         },
         "autopack-director": {
-            "export": false
-        },
-        "tfc-caelum": {
-            "export": false
-        },
-        "caelum": {
             "export": false
         },
         "extreme-sound-muffler": {

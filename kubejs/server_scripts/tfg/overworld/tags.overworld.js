@@ -192,10 +192,8 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illages', 'tfg:earth/burren_plateau')
 	event.add('tfg:has_structure/illages', 'tfg:earth/drumlins')
 	event.add('tfg:has_structure/illages', 'tfg:earth/hills')
-	event.add('tfg:has_structure/illages', 'tfg:earth/hoodoos')
 	event.add('tfg:has_structure/illages', 'tfg:earth/inverted_patterned_ground')
 	event.add('tfg:has_structure/illages', 'tfg:earth/knob_and_kettle')
-	event.add('tfg:has_structure/illages', 'tfg:earth/mesas')
 	event.add('tfg:has_structure/illages', 'tfg:earth/patterned_ground')
 	event.add('tfg:has_structure/illages', 'tfg:earth/plains')
 	event.add('tfg:has_structure/illages', 'tfg:earth/plateau')
@@ -458,21 +456,21 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/veins", "tfg:earth/geode/quartzite");
 
 	// Crops
-	event.add("tfc:feature/crops", "tfg:earth/sunflower_patch");
-	event.add("tfc:feature/crops", "tfg:earth/rapeseed_patch");
-	event.add("tfc:feature/crops", "tfg:earth/flax_patch");
-	event.add("tfc:feature/crops", "tfg:earth/radish_patch");
-	event.add("tfc:feature/crops", "tfg:earth/lentil_patch");
-	event.add("tfc:feature/crops", "tfg:earth/cucumber_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/sunflower_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/rapeseed_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/flax_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/radish_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/lentil_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/cucumber_patch");
 	// Herbs and spices
-	event.add("tfc:feature/crops", "tfg:earth/basil_patch");
-	event.add("tfc:feature/crops", "tfg:earth/bay_laurel_patch");
-	event.add("tfc:feature/crops", "tfg:earth/cardamom_patch");
-	event.add("tfc:feature/crops", "tfg:earth/cilantro_patch");
-	event.add("tfc:feature/crops", "tfg:earth/cumin_patch");
-	event.add("tfc:feature/crops", "tfg:earth/oregano_patch");
-	event.add("tfc:feature/crops", "tfg:earth/pimento_patch");
-	event.add("tfc:feature/crops", "tfg:earth/vanilla_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/basil_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/bay_laurel_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/cardamom_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/cilantro_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/cumin_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/oregano_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/pimento_patch");
+	event.add("tfc:feature/crops", "tfg:earth/crop/vanilla_patch");
 	// TODO: add mustard
 
 	// Other decoration

@@ -14,32 +14,42 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope & Sapphire$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalcium Phosphate & Pyrochlore$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnasite, Monazite & Neodymium$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonite, Magnesite & Olivine$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismuth, Silver, Gold & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topaz, Chalcocite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterite & Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos)Cassiterite Sand & Asbestos$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Cassiterite Sand, Asbestos & Diatomite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Chalcopyrite, Goethite & Pyrite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope & Sapphire$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalcium Phosphate & Pyrochlore$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnasite, Monazite & Neodymium$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonite, Magnesite & Olivine$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismuth$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismuth, Silver, Gold & Electrotine$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topaz, Chalcocite & Bornite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_cassiterite)Cassiterite & Tin$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterite & Tin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos)Cassiterite Sand & Asbestos$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Cassiterite Sand, Asbestos & Diatomite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Chalcopyrite, Pyrite & Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Chalcopyrite, Zeolite & Cassiterite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Chalcopyrite, Zeolite & Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Galena & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite, Nickel & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierite, Nickel, Cobaltite & Pentlandite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethite, Limonite & Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Chalcocite, Gypsum, Cobalt & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Chalcopyrite, Goethite & Pyrite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Chalcopyrite, Pyrite & Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Chalcopyrite, Zeolite & Cassiterite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Chalcopyrite, Zeolite & Realgar$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Coal (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Galena & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierite (Nickel)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierite, Nickel & Cobaltite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierite, Nickel, Cobaltite & Pentlandite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethite, Limonite & Hematite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethite, Limonite, Hematite & Malachite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Gold & Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphite & Diamond$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Pyrolusite & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine & Tantalite$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gypsum (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematite & Limonite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Kyanite, Mica & Pollucite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurite, Sodalite, Lapis & Calcite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Lead & Silver$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite, Vanadium Magnetite & Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica & Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_mineral_sand)Mineral Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_mineral_sand)Mineral Sands$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzite & Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzite & Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby & Cinnabar$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby & Cinnabar (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Salt, Rock Salt & Borax$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite & Alunite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate & Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sphalerite, Pyrite & Sulfur$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumene & Rock Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfide$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite & Chalcocite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sylvite & Salt$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax & Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Copper)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Copper & Stibnite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite, Emerald & Beryllium$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin (High Elevation)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalcium Phosphate$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenite, Molybdenite & Powellite$()$()",
+      "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Almandine, Pyrope & Sapphire",
       "type": "patchouli:text",
       "anchor": "deep_sapphire"
@@ -131,7 +141,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 41$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Apatite, Tricalcium Phosphate & Pyrochlore",
       "type": "patchouli:text",
       "anchor": "deep_apatite"
@@ -198,7 +208,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/290 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 24$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/290 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 31$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Bastnasite, Monazite & Neodymium",
       "type": "patchouli:text",
       "anchor": "deep_monazite"
@@ -265,7 +275,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/310 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 16%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 24$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/420 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 31$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Bauxite & Ilmenite",
       "type": "patchouli:text",
       "anchor": "deep_bauxite"
@@ -317,7 +327,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 41$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
       "title": "Bentonite, Magnesite & Olivine",
       "type": "patchouli:text",
       "anchor": "deep_magnetite_olivine"
@@ -409,10 +419,10 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/150 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 100 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Mountain Biomes",
       "title": "Bismuth",
       "type": "patchouli:text",
-      "anchor": "high_bismuth"
+      "anchor": "high_bismuth_mountain"
     },
     {
       "Type": "patchouli:multiblock",
@@ -436,7 +446,34 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only in Mountain Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — -10$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Риолит, Сланец$(br2)Only in plains, plateau and hills\\nSurface Vein\\nY is range\\nfrom surface.",
+      "title": "Bismuth",
+      "type": "patchouli:text",
+      "anchor": "surface_bismuth"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Висмут",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bismuth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Плавится в$(): Висмут$(br)$(thing)Формула$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only in Mountain Biomes",
       "title": "Bismuth, Silver, Gold & Electrotine",
       "type": "patchouli:text",
       "anchor": "deep_bismuth"
@@ -528,7 +565,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 14%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 24$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 17%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 31$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Blue Topaz, Topaz, Chalcocite & Bornite",
       "type": "patchouli:text",
       "anchor": "deep_topaz"
@@ -620,7 +657,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/220 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 16$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 33%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 23$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Cassiterite & Tin",
       "type": "patchouli:text",
       "anchor": "normal_cassiterite"
@@ -672,7 +709,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 37$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Cassiterite & Tin (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_tin"
@@ -724,7 +761,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -5 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Black Sand, Brown Sand, Green Sand, Pink Sand, Red Sand, White Sand, Yellow Sand$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -5 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 35$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Black Sand, Brown Sand, Green Sand, Pink Sand, Red Sand, White Sand, Yellow Sand$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
       "title": "Cassiterite Sand",
       "type": "patchouli:text",
       "anchor": "sand_tin"
@@ -751,7 +788,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Only in Dry Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/100 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 22$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец$(br2)Only in Dry Biomes",
       "title": "Cassiterite Sand & Asbestos",
       "type": "patchouli:text",
       "anchor": "normal_asbestos"
@@ -803,7 +840,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 32$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Cassiterite Sand, Asbestos & Diatomite",
       "type": "patchouli:text",
       "anchor": "deep_asbestos"
@@ -870,7 +907,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 42$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 80$(br)$(thing)Высота$(): 35$(br)$(thing)Радиус$(): 16$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Karst Biomes",
+      "title": "Chalcocite, Gypsum, Cobalt & Sulfur",
+      "type": "patchouli:text",
+      "anchor": "normal_copper_gypsum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Халькозин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 54%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₂S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobalt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 22%$(br)$(thing)Плавится в$(): Кобальт$(br)$(thing)Формула$(): Co",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гипс",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gypsum"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 13%$(br)$(thing)Используется для$(): Алебастр (можно покрасить) и его кирпичи$(br)$(thing)Формула$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 49$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
       "title": "Chalcopyrite, Goethite & Pyrite",
       "type": "patchouli:text",
       "anchor": "deep_copper_iron"
@@ -962,7 +1091,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/100 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 33%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 32$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Chalcopyrite, Pyrite & Copper",
       "type": "patchouli:text",
       "anchor": "normal_copper"
@@ -1029,7 +1158,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 26%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 46$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
       "title": "Chalcopyrite, Zeolite & Cassiterite",
       "type": "patchouli:text",
       "anchor": "deep_copper_tin"
@@ -1096,7 +1225,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/70 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 90 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/70 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)Высота$(): 12$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Hill Biomes",
       "title": "Chalcopyrite, Zeolite & Realgar",
       "type": "patchouli:text",
       "anchor": "high_realgar"
@@ -1118,7 +1247,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 53%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): CuFeS₂",
+      "text": "$(thing)Процент руды$(): 57%$(br)$(thing)Плавится в$(): Медь$(br)$(thing)Формула$(): CuFeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1138,7 +1267,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Используется для$(): Алюминий, Кислород$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "text": "$(thing)Процент руды$(): 28%$(br)$(thing)Используется для$(): Алюминий, Кислород$(br)$(thing)Формула$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1158,12 +1287,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Используется для$(): Мышьяк$(br)$(thing)Формула$(): As₄S₄$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Отравление мышьяком (Вдыхание вредных веществ)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Используется для$(): Мышьяк$(br)$(thing)Формула$(): As₄S₄$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Отравление мышьяком (Вдыхание вредных веществ)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/340 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 36$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/200 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 36$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Coal",
       "type": "patchouli:text",
       "anchor": "normal_coal"
@@ -1190,7 +1319,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 100 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/30 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 90 — 160$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
       "title": "Coal (High Elevation)",
       "type": "patchouli:text",
       "anchor": "high_coal"
@@ -1217,7 +1346,34 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 10%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 45%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
+      "title": "Coal (Surface)",
+      "type": "patchouli:text",
+      "anchor": "surface_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Используется для$(): Топливо, Ректификация$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 10%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Cobaltite",
       "type": "patchouli:text",
       "anchor": "surface_cobaltite"
@@ -1244,7 +1400,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 10%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/110 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 18%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 25$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
       "title": "Galena & Silver",
       "type": "patchouli:text",
       "anchor": "normal_galena"
@@ -1296,7 +1452,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Garnierite (Nickel)",
       "type": "patchouli:text",
       "anchor": "surface_nickel"
@@ -1323,7 +1479,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/100 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 27$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Garnierite, Nickel & Cobaltite",
       "type": "patchouli:text",
       "anchor": "normal_garnierite"
@@ -1390,7 +1546,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 36$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 43$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Garnierite, Nickel, Cobaltite & Pentlandite",
       "type": "patchouli:text",
       "anchor": "deep_nickel"
@@ -1482,7 +1638,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/280 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 42$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/280 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 49$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
       "title": "Goethite, Limonite & Hematite",
       "type": "patchouli:text",
       "anchor": "deep_banded_iron"
@@ -1549,7 +1705,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 41$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
       "title": "Goethite, Limonite, Hematite & Malachite",
       "type": "patchouli:text",
       "anchor": "deep_iron"
@@ -1641,7 +1797,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/110 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 33%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 26$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
       "title": "Gold & Magnetite",
       "type": "patchouli:text",
       "anchor": "normal_gold"
@@ -1693,7 +1849,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 14%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 150$(br)$(thing)Радиус$(): 18$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only in Volcanic Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 80$(br)$(thing)Радиус$(): 9$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Graphite & Diamond",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
@@ -1745,7 +1901,59 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/240 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 17%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 150$(br)$(thing)Радиус$(): 18$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only in Volcanic Biomes",
+      "title": "Graphite & Diamond",
+      "type": "patchouli:text",
+      "anchor": "deep_graphite_volcanic"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Графит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/graphite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 60%$(br)$(thing)Используется для$(): $(l:mechanics/fire_clay)Огнеупорная глина$(), Графен$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Алмаз",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/diamond"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Используется для$(): Измельчители, AE2$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/240 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 41$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Grossular, Pyrolusite & Tantalite",
       "type": "patchouli:text",
       "anchor": "deep_manganese"
@@ -1812,7 +2020,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/290 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 28$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/290 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 35$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Grossular, Spessartine & Tantalite",
       "type": "patchouli:text",
       "anchor": "deep_tantalite"
@@ -1904,7 +2112,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 80%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 100 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/40 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 80%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 90 — 140$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец",
       "title": "Gypsum (High Elevation)",
       "type": "patchouli:text",
       "anchor": "high_gypsum"
@@ -1931,7 +2139,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/45 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/75 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Hematite",
       "type": "patchouli:text",
       "anchor": "surface_hematite"
@@ -1958,7 +2166,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/185 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/100 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 26$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Риолит, Сланец",
       "title": "Hematite & Limonite",
       "type": "patchouli:text",
       "anchor": "normal_iron"
@@ -2010,7 +2218,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 32$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Kyanite, Mica & Pollucite",
       "type": "patchouli:text",
       "anchor": "deep_kyanite"
@@ -2077,7 +2285,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/130 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/130 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Lazurite, Sodalite, Lapis & Calcite",
       "type": "patchouli:text",
       "anchor": "deep_lazurite_calcite"
@@ -2169,7 +2377,74 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nOnly in Mountain Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/230 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 28$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "title": "Lead & Silver",
+      "type": "patchouli:text",
+      "anchor": "deep_galena"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Галена",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/galena"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 52%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Серебро",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/silver"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 26%$(br)$(thing)Плавится в$(): Серебро$(br)$(thing)Формула$(): Ag",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Свинец",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lead"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 21%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): Pb$(br)$(thing)Ядовит$(): $(c)$(t:Требуется Медицинская маска)Слабо ядовитый (Вдыхание вредных веществ)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nOnly in Mountain Biomes",
       "title": "Lead & Silver",
       "type": "patchouli:text",
       "anchor": "high_lead"
@@ -2221,7 +2496,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Limonite",
       "type": "patchouli:text",
       "anchor": "surface_limonite"
@@ -2248,7 +2523,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Magnetite",
       "type": "patchouli:text",
       "anchor": "surface_magnetite"
@@ -2275,7 +2550,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 38$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 32%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
       "title": "Magnetite, Vanadium Magnetite & Gold",
       "type": "patchouli:text",
       "anchor": "deep_magnetite"
@@ -2342,7 +2617,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/32 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/62 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Malachite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_malachite"
@@ -2369,7 +2644,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 10%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 10%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Mica",
       "type": "patchouli:text",
       "anchor": "surface_mica"
@@ -2396,7 +2671,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 23$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
       "title": "Mica & Kyanite",
       "type": "patchouli:text",
       "anchor": "normal_mica"
@@ -2540,7 +2815,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 41$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Габбро, Гранит, Диорит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Mineral Sands",
       "type": "patchouli:text",
       "anchor": "deep_mineral_sand"
@@ -2632,7 +2907,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/24 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/54 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Native Copper",
       "type": "patchouli:text",
       "anchor": "surface_native_copper"
@@ -2659,7 +2934,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/35 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/65 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Native Gold",
       "type": "patchouli:text",
       "anchor": "surface_gold"
@@ -2686,7 +2961,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/170 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)Высота$(): 4$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/150 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 23%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 23$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
       "title": "Quartzite & Barite",
       "type": "patchouli:text",
       "anchor": "normal_quartz"
@@ -2738,7 +3013,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)Высота$(): 30$(br)$(thing)Радиус$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 70$(br)$(thing)Высота$(): 30$(br)$(thing)Радиус$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит",
       "title": "Quartzite & Borax",
       "type": "patchouli:text",
       "anchor": "normal_quartz_borax"
@@ -2790,7 +3065,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 25$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 180$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 32$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 180$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Deep vein with\\nindicators that can\\nspawn very high.",
       "title": "Redstone, Ruby & Cinnabar",
       "type": "patchouli:text",
       "anchor": "deep_redstone"
@@ -2857,7 +3132,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 32%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 46$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Redstone, Ruby & Cinnabar (Large)",
       "type": "patchouli:text",
       "anchor": "deep_big_redstone"
@@ -2924,7 +3199,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 18%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Only in Shore Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/160 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 26%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 27$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Shore Biomes",
       "title": "Salt, Rock Salt & Borax",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -2991,7 +3266,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/130 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/50 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Дацит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Saltpeter",
       "type": "patchouli:text",
       "anchor": "surface_salpeter"
@@ -3018,7 +3293,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/260 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 29$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/260 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 36$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
       "title": "Saltpeter, Diatomite & Alunite",
       "type": "patchouli:text",
       "anchor": "deep_saltpeter"
@@ -3110,7 +3385,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/340 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 24%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 22$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/420 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 29$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец",
       "title": "Scheelite, Tungstate & Lithium",
       "type": "patchouli:text",
       "anchor": "deep_scheelite"
@@ -3177,7 +3452,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/30 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Sphalerite",
       "type": "patchouli:text",
       "anchor": "surface_sphalerite"
@@ -3204,7 +3479,74 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)Высота$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/180 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 33$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Deep vein.",
+      "title": "Sphalerite, Pyrite & Sulfur",
+      "type": "patchouli:text",
+      "anchor": "deep_sphalerite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 63%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Пирит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 27%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 9%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/190 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 23%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 22$(br)$(thing)Высота$(): 8$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец",
       "title": "Spodumene & Rock Salt",
       "type": "patchouli:text",
       "anchor": "normal_spodumene"
@@ -3256,7 +3598,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/34 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -60 — -45$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 23$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 5$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only near Lava",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/170 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 29%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 34$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Volcanic Biomes",
+      "title": "Sulfide",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Борнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 39%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сфалерит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sphalerite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 17%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Стибнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 13%$(br)$(thing)Плавится в$(): Сурьма$(br)$(thing)Формула$(): Sb₂S₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/34 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 87%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -60 — -45$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 39$(br)$(thing)Высота$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 5$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит$(br2)Only near Lava",
       "title": "Sulfur (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_sulfur"
@@ -3278,52 +3712,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 90%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Борнит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Халькозин",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chalcocite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₂S",
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 90%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 100 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Volcanic Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/30 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 90%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 100 — 170$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Volcanic Biomes",
       "title": "Sulfur (Volcanic)",
       "type": "patchouli:text",
       "anchor": "high_sulfur"
@@ -3350,7 +3744,74 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/120 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 5$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/34 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 27%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Широкая и плоская)Дискообразная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -60 — -45$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 21$(br)$(thing)Высота$(): 6$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Only near Lava",
+      "title": "Sulfur, Bornite & Chalcocite",
+      "type": "patchouli:text",
+      "anchor": "deep_copper_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сера",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 80%$(br)$(thing)Используется для$(): Сера$(br)$(thing)Формула$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Борнит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Халькозин",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Используется для$(): Медь$(br)$(thing)Формула$(): Cu₂S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/50 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 15%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Аспидный сланец, Гнейс, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Sylvite & Salt",
       "type": "patchouli:text",
       "anchor": "surface_sylvite_salt"
@@ -3402,7 +3863,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 60$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 28%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Высокая и узкая)Трубчатая жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 10 — 70$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 70$(br2)$(thing)Виды камней$(): Андезит, Аспидный сланец, Базальт, Гнейс, Дацит, Кварцит, Мрамор, Риолит, Филлит, Шиферный сланец$(br2)Only spawn in dry\\nand hot climates\\nMax Rain: 100mm\\nMin Temp: 12°C",
       "title": "Tarkianite, Borax & Trona",
       "type": "patchouli:text",
       "anchor": "normal_tarkianite"
@@ -3469,7 +3930,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/7 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/37 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Кварцит, Мрамор, Филлит, Шиферный сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Tetrahedrite (Copper)",
       "type": "patchouli:text",
       "anchor": "surface_tetrahedrite"
@@ -3496,7 +3957,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 110 — 160$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 25$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Андезит, Базальт, Габбро, Гранит, Дацит, Диорит, Риолит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -30 — 1$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 25$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Only in Mountain Biomes",
       "title": "Tetrahedrite, Copper & Stibnite",
       "type": "patchouli:text",
       "anchor": "high_tetrahedrite"
@@ -3563,7 +4024,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 18%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 28$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/270 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 21%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 35$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Thorianite, Uraninite, Emerald & Beryllium",
       "type": "patchouli:text",
       "anchor": "deep_thorianite"
@@ -3655,7 +4116,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/80 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nOnly in Mountain Biomes",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/50 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 0$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 30$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 60$(br2)$(thing)Виды камней$(): Tуф, Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Филлит, Шиферный сланец$(br2)Surface Vein\\nOnly in Mountain Biomes",
       "title": "Tin (High Elevation)",
       "type": "patchouli:text",
       "anchor": "high_tin"
@@ -3707,7 +4168,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/60 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 10$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nThe Y-Level shows its range from surface.",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/90 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -20 — -5$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 15$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 35$(br2)$(thing)Виды камней$(): Tуф, Аргиллит, Доломит, Известняк, Конгломерат, Кремнистый сланец, Мел, Сланец$(br2)Surface Vein\\nY is range\\nfrom surface.",
       "title": "Tricalcium Phosphate",
       "type": "patchouli:text",
       "anchor": "surface_tricalcium_phosphate"
@@ -3734,7 +4195,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 19%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 35$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 20$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): -50 — 20$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 42$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 15$(br2)$(thing)Виды камней$(): Габбро, Гранит, Диорит",
       "title": "Wulfenite, Molybdenite & Powellite",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"

@@ -89,8 +89,8 @@ function registerTFGHVMaterialRecipes(event) {
     event.recipes.gtceu.mixer('tfg:obsidian_dust')
         .inputFluids(Fluid.of('tfg:igneous_mafic', 144), Fluid.of('gtceu:ice', 1000))
 		.itemOutputs(Item.of('gtceu:obsidian_dust', 1))
-        .duration(20 * 28)
-        .EUt(GTValues.VA[GTValues.LV]);
+        .duration(20 * 7)
+        .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.gas_pressurizer('tfg:obsidian_dust')
 		.itemInputs(Item.of('gtceu:obsidian_dust', 1))
