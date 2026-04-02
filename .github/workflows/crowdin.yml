@@ -65,7 +65,7 @@ jobs:
           upload_sources: true
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
           skip_untranslated_strings: true
-          # export_only_approved: true
+          export_only_approved: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
