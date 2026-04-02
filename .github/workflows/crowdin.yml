@@ -54,6 +54,7 @@ jobs:
   sync-language:
     name: "Sync Language"
     runs-on: ubuntu-latest
+    needs: [sync-patchouli]
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v6
