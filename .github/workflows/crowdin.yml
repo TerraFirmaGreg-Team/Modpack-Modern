@@ -32,7 +32,7 @@ jobs:
         uses: crowdin/github-action@v2
         with:
           upload_sources: true
-          download_translations: ${{ github.event.inputs.operation == 'schedule' }}
+          download_translations: ${{ github.event_name == 'schedule' }}
           export_only_approved: true
           skip_untranslated_files: true
           create_pull_request: false
@@ -48,7 +48,6 @@ jobs:
   sync-language:
     name: "Sync Language"
     runs-on: ubuntu-latest
-    needs: [sync-patchouli]
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v6
@@ -57,7 +56,7 @@ jobs:
         uses: crowdin/github-action@v2
         with:
           upload_sources: true
-          download_translations: ${{ github.event.inputs.operation == 'schedule' }}
+          download_translations: ${{ github.event_name == 'schedule' }}
           skip_untranslated_strings: true
           export_only_approved: true
           create_pull_request: false
@@ -73,26 +72,44 @@ jobs:
   cleanup-empty-files:
     name: "Cleanup Empty Files"
     runs-on: ubuntu-latest
-    needs: [sync-language, sync-patchouli]
+    needs: [sync-patchouli, sync-language]
     if: github.event_name == 'schedule'
+    outputs:
+      changed: ${{ steps.remove_empty.outputs.changed }}
     steps:
-      - name: "Checkout repository"
+      - name: "Check if translations branch exists"
+        id: check_branch
+        run: |
+          if git ls-remote --exit-code --heads origin ${{ env.LOCALIZATION_BRANCH }} > /dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "::notice::Branch '${{ env.LOCALIZATION_BRANCH }}' does not exist, skipping cleanup"
+          fi
+
+      - name: "Checkout translations branch"
+        if: steps.check_branch.outputs.exists == 'true'
         uses: actions/checkout@v6
         with:
           ref: ${{ env.LOCALIZATION_BRANCH }}
+          fetch-depth: 0
 
       - name: "Remove empty translation files"
         id: remove_empty
+        if: steps.check_branch.outputs.exists == 'true'
         run: |
-          echo "Removing empty translation files..."
+          echo "🔍 Searching for empty JSON files..."
           CHANGED=false
-          for file in $(find kubejs/assets -name "*.json" -type f); do
+          COUNT=0
+          while IFS= read -r -d '' file; do
             if [ "$(jq -r 'keys | length' "$file" 2>/dev/null)" -eq 0 ]; then
-              echo "Removing empty file: $file"
+              echo "  🗑️  Removing: $file"
               rm "$file"
               CHANGED=true
+              ((COUNT++))
             fi
-          done
+          done < <(find kubejs/assets -name "*.json" -type f -print0)
+          echo "📊 Checked files, found $COUNT empty"
           echo "changed=$CHANGED" >> $GITHUB_OUTPUT
 
       - name: "Commit removed files"
@@ -107,6 +124,7 @@ jobs:
     name: "Create Pull Request"
     runs-on: ubuntu-latest
     needs: [cleanup-empty-files]
+    if: github.event_name == 'schedule'
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v6
