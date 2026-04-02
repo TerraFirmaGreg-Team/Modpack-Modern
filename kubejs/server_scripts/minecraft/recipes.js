@@ -27,10 +27,6 @@ const MINECRAFT_COPPER_VARIANT_STONECUTTING_FIELDS = [
 	['tiles', 'tileSlabs', 2, 'tile_slabs', 'tiles']
 ]
 
-const MINECRAFT_COPPER_VARIANT_ASSEMBLER_FIELDS = [
-	['shingles', 'shingleStairs', 'shingle_stairs'],
-	['tiles', 'tileStairs', 'tile_stairs']
-]
 
 /**
  *
@@ -99,23 +95,6 @@ const addCopperVariantStonecuttingRecipes = (event, element) => {
 	}
 }
 
-/**
- *
- * @param {Internal.RecipesEventJS} event
- * @param {Object} element
- */
-const addCopperVariantAssemblerRecipes = (event, element) => {
-	for (const [sourceName, targetName, recipeSuffix] of MINECRAFT_COPPER_VARIANT_ASSEMBLER_FIELDS) {
-		if (!element[sourceName] || !element[targetName]) continue
-
-		event.recipes.gtceu.assembler(`tfg:minecraft/assembler/${recipeSuffix}_${element.name}`)
-			.itemInputs(`4x ${element[sourceName]}`)
-			.circuit(7)
-			.itemOutputs(`3x ${element[targetName]}`)
-			.duration(80)
-			.EUt(7.5)
-	}
-}
 
 /**
  *
@@ -141,7 +120,6 @@ const registerMinecraftRecipes = (event) => {
 		// Блочные варианты из stonecutter
 		addCopperStonecuttingRecipes(event, element)
 		addCopperVariantStonecuttingRecipes(event, element)
-		addCopperVariantAssemblerRecipes(event, element)
 	}
 
 	//#endregion
