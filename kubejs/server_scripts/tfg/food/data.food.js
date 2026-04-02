@@ -596,6 +596,15 @@ function registerTFGFoodData(event) {
 		food.saturation(1);
 	});
 
+	// Honeyed Apple
+	event.foodItem('create:honeyed_apple', (food) => {
+		food.hunger(3.5);
+		food.decayModifier(0.8);
+		food.water(5);
+		food.fruit(2);
+		food.saturation(1);
+	});
+
 	// Lavacado
 	event.foodItem('tfg:food/lavacado', (food) => {
 		food.hunger(3.5);

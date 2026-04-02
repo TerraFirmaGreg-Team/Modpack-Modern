@@ -356,6 +356,9 @@ function registerTFGItemSize(event) {
 	//Universal Compost Bags
 	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
 	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+
+	//Honeyed Apples
+	event.itemSize("create:honeyed_apple", "small", "light")
 }
 
 //#endregion
