@@ -7,6 +7,7 @@
 	"constructionwand.description.key.sneak": "Schleichen",
 	"constructionwand.description.key.sneak_opt": "Schleichen+%s",
 	"constructionwand.description.wand": "Ein %1$s kann maximal %2$d Blöcke auf der dir zugewandten Seite eines Bauwerks platzieren und hält %3$s.\n\nHalte %5$s gedrückt und scrolle, um die Platzierung zu beschränken (Horizontal, Vertikal, Nord/Süd, Ost/West, Keine).\n\nÖffne den Optionsbildschirm mit %6$s§9+Rechtsklick§0.\n\n§5§nRÜCKGÄNGIG§0§r\nHalte §9Schleichen+§0%4$s während du einen Block fokussierst. Die letzten platzierten Blöcke werden mit einem grünen Rahmen markiert. §9Schleichen+§0%4$s§9+Rechtsklick§0 auf einen dieser Blöcke macht diese Operation rückgängig und gibt dir alle Items zurück. Wenn du den Kristall der Zerstörung benutzt hast, werden die zerstörten Blöcke wiederhergestellt.\n\n§5§nCONTAINER§0§r\nShulkerkisten, Bündel und viele Container von anderen Mods können Baumaterial für deinen Stab bereitstellen.\n\n§5§nLINKE-HAND-PRIORITÄT§0§r\nWenn du einen Block in der linken Hand hältst, wird der Stab diesen anstatt des Blocks, den du anschaust, platzieren.",
+	"constructionwand.option.cores": "",
 	"constructionwand.option.cores.constructionwand:core_angel": "§6Kristall der Engel",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "Platziere hinter Blöcken sowie in der Luft",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§cKristall der Zerstörung",
