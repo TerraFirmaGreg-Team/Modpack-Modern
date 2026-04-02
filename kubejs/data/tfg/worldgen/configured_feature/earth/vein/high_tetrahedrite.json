@@ -5,12 +5,13 @@
     "size": 25,
     "rarity": 60,
     "density": 0.25,
-    "min_y": 110,
-    "max_y": 160,
+    "min_y": -30,
+    "max_y": 1,
     "random_name": "high_tetrahedrite",
-    "project": false,
+    "project": true,
     "project_offset": false,
     "near_lava": false,
+    "biomes": "#tfg:earth/is_mountain",
     "blocks": [
       {
         "replace": [
@@ -19,7 +20,7 @@
         "with": [
           {
             "block": "gtceu:granite_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -27,11 +28,11 @@
           },
           {
             "block": "gtceu:granite_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:granite_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -42,7 +43,7 @@
         "with": [
           {
             "block": "gtceu:diorite_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -50,11 +51,11 @@
           },
           {
             "block": "gtceu:diorite_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:diorite_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -65,7 +66,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -73,11 +74,11 @@
           },
           {
             "block": "gtceu:gabbro_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:gabbro_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -88,7 +89,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -96,11 +97,11 @@
           },
           {
             "block": "gtceu:rhyolite_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:rhyolite_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -112,7 +113,7 @@
         "with": [
           {
             "block": "gtceu:basalt_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -120,11 +121,11 @@
           },
           {
             "block": "gtceu:basalt_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:basalt_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -135,7 +136,7 @@
         "with": [
           {
             "block": "gtceu:andesite_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -143,11 +144,11 @@
           },
           {
             "block": "gtceu:andesite_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:andesite_stibnite_ore",
-            "weight": 20
+            "weight": 2
           }
         ]
       },
@@ -158,7 +159,7 @@
         "with": [
           {
             "block": "gtceu:dacite_tetrahedrite_ore",
-            "weight": 50
+            "weight": 5
           },
           {
             "block": "gtceu:raw_tetrahedrite_block",
@@ -166,11 +167,333 @@
           },
           {
             "block": "gtceu:dacite_copper_ore",
-            "weight": 30
+            "weight": 3
           },
           {
             "block": "gtceu:dacite_stibnite_ore",
-            "weight": 20
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:shale_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:shale_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:shale_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:claystone_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:claystone_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:claystone_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:limestone_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:limestone_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:conglomerate_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:conglomerate_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:dolomite_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:dolomite_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:chert_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:chert_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:chalk_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:chalk_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tuff_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:tuff_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:tuff_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:quartzite_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:slate_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:slate_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:phyllite_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:phyllite_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:schist_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:schist_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:gneiss_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:gneiss_stibnite_ore",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_tetrahedrite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:raw_tetrahedrite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:marble_copper_ore",
+            "weight": 3
+          },
+          {
+            "block": "gtceu:marble_stibnite_ore",
+            "weight": 2
           }
         ]
       }
@@ -183,15 +506,15 @@
       "blocks": [
         {
           "block": "tfc:ore/small_tetrahedrite",
-          "weight": 50
+          "weight": 5
         },
         {
           "block": "tfc:ore/small_native_copper",
-          "weight": 30
+          "weight": 3
         },
         {
           "block": "gtceu:stibnite_indicator",
-          "weight": 20
+          "weight": 2
         }
       ]
     }

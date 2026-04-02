@@ -5,6 +5,15 @@ on:
     branches:
       - dev
       - main
+    paths:
+      - '.pakku'
+      - 'config'
+      - 'defaultconfigs'
+      - 'kubejs'
+      - 'tacz'
+      - 'CHANGELOG.md'
+      - 'pakku-lock.json'
+      - 'pakku.json'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,7 +26,7 @@ jobs:
   info:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
-    if: ${{  github.repository_owner == 'TerraFirmaGreg-Team' }}
+    if: ${{ !github.event.repository.fork }}
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}

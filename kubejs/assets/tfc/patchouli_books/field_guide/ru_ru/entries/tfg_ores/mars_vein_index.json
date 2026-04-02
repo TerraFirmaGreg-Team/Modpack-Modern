@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин & Сапфир$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит & Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Электротин & Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Асбест & Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Лазуритит и Содалит$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин & Сапфир$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит & Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Электротин & Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Асбест & Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Лазуритит и Содалит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -596,98 +596,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 30$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит",
-      "title": "Гематит и Лимонит",
-      "type": "patchouli:text",
-      "anchor": "mars_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Жёлтый лимонит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/yellow_limonite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гётит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/goethite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородная Золото",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/140 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 80 — 180$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 45$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 40$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Габбро, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит, Кремнистый сланец, Мел, Сланец, Трахит",
       "title": "Гематит и Лимонит",
       "type": "patchouli:text",
@@ -771,6 +679,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Используется для$(): Кальций$(br)$(thing)Формула$(): CaCO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Вероятность генерации жилы в чанке. Чем меньше знаменатель(второе число), тем чаще встречается.)Редкость$(/t)$(): 1/210 на чанк$(br)$(thing)$(t:Содержание блоков руды в жиле заменяющих камень. Большее значение означает больше руды.)Плотность$(/t)$(): 40%$(br)$(thing)$(t:Форма жилы.)Вид$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Уровни Y, между которыми может сгенерироваться жила.)Y-уровень$(/t)$(): 0 — 70$(br)$(thing)(t:Средний диаметр жилы)Размер$(/t)$(): 40$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше чем это число, то жила не сгененрирует индикаторы на поверхности.)Максимальная высота индикатора$(/t)$(): 30$(br2)$(thing)Виды камней$(): Аргиллит, Аргиллит, Базальт, Дацит, Доломит, Известняк, Кварцит, Конгломерат, Красный гранит",
+      "title": "Гематит и Лимонит",
+      "type": "patchouli:text",
+      "anchor": "mars_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Жёлтый лимонит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гётит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/goethite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородная Золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
       "type": "patchouli:multiblock"
     },
     {

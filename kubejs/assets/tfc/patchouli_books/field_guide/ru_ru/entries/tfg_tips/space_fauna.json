@@ -114,7 +114,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:eater",
+			"entity": "wan_ancient_beasts:snatcher",
 			"scale": 0.35,
 			"name": " ",
 			"text": "Хищники высшего уровня, $(thing)Пожиратели$() — это враждебные животные, обитающие при температуре выше -109°C. Если вам удастся убить одного из них, вы сможете его съесть."
@@ -126,14 +126,14 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:soarer",
+			"entity": "wan_ancient_beasts:charger",
 			"scale": 0.45,
 			"name": " ",
 			"text": "Крушители естественные соперники $(thing)Рейдеров$(). Они будут атаковать друг друга, если увидят"
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:glider",
+			"entity": "wan_ancient_beasts:surfer",
 			"scale": 0.4,
 			"offset": 0.2,
 			"name": "Глайдер",
@@ -141,7 +141,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:crusher",
+			"entity": "wan_ancient_beasts:soarer",
 			"scale": 0.4,
 			"offset": 1,
 			"name": "Крушитель",
@@ -149,21 +149,21 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:springling",
+			"entity": "wan_ancient_beasts:eater",
 			"scale": 0.5,
 			"name": "Пожиратель",
 			"text": "$(thing)Долгошеи$() — это дикие животные, обитающие при температуре выше -108°C. Кормление их $(item)Саженцами$() позволит вам ездить на них верхом и удлинять их невероятно длинные шеи. Их также можно употреблять в пищу."
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:goober",
+			"entity": "species:cruncher",
 			"scale": 0.7,
 			"name": "Кусач",
 			"text": "$(thing)Слюпики$() Это ленивые дикие животные, обитающие при температуре выше -109°C. Они пассивны и могут быть съедены."
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:walker",
+			"entity": "wan_ancient_beasts:glider",
 			"scale": 0.4,
 			"offset": 0.2,
 			"name": "Глайдер",
@@ -171,7 +171,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:toxlacanth",
+			"entity": "wan_ancient_beasts:crusher",
 			"scale": 0.5,
 			"offset": 0.5,
 			"name": "Крушитель",
@@ -179,7 +179,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "species:stackatick",
+			"entity": "species:springling",
 			"scale": 0.9,
 			"name": "Долгошей",
 			"text": "Одни из немногих животных, способных выжить в марсианской пустыне, $(thing)Жуки-перевозчик$() — это пассивные кормовые животные. Их также можно употреблять в пищу."
@@ -208,7 +208,7 @@
 		},
 		{
 			"type": "patchouli:entity",
-			"entity": "wan_ancient_beasts:rawan_ancient_beasts:toxlacanthider",
+			"entity": "wan_ancient_beasts:toxlacanth",
 			"scale": 0.35,
 			"name": "Токслакант",
 			"text": "$(thing)Токслаканты$() — водные животные. Рекомендуется убивать их издалека и готовить мясо перед употреблением."
