@@ -957,12 +957,15 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/ender_air_separation' })
 	event.remove({ id: 'gtceu:vacuum_freezer/liquid_ender_air' })
 	event.remove({ id: 'gtceu:distillation_tower/distill_liquid_ender_air' })
+
+	// Remove Oarlock Recipe
+	TFGHelpers.clearMaterialInfo('alekiships:oarlock')
 }
 
 function removeMaceratorRecipe(event, id) {
 	event.remove({ id: `gtceu:macerator/${id}` })
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/${id}` })
-	event.remove({ id: `greate:crushing/integration/gtceu/macerator/${id}` })
+	event.remove({ id: `greate:crushing/integration/gtceu/ma/cerator/${id}` })
 }
 
 function removeCutterRecipe(event, id) {
