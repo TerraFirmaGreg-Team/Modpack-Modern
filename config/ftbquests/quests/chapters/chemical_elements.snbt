@@ -1229,6 +1229,26 @@
 			y: 7.5d
 		}
 		{
+			description: ["{quests.chemical_elements.europium.desc}"]
+			disable_toast: true
+			id: "23D55E8A38F45779"
+			subtitle: "{quests.chemical_elements.element} #63"
+			tasks: [{
+				id: "3AB55D4F07FD97EF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:europium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:europium\"}})item(gtceu:europium_bucket))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{material.gtceu.europium}"
+			x: 8.0d
+			y: 7.5d
+		}
+		{
 			description: ["{quests.chemical_elements.tantalum.desc}"]
 			disable_toast: true
 			id: "67361686C18AB4E6"
@@ -1418,7 +1438,7 @@
 				item: "gtceu:thorium_dust"
 				type: "item"
 			}]
-			title: "{material.gtceu.thorium}"
+			title: "{quests.chemical_elements.thorium.title}"
 			x: 3.0d
 			y: 8.5d
 		}
@@ -1442,7 +1462,7 @@
 					type: "item"
 				}
 			]
-			title: "{material.gtceu.uranium}"
+			title: "{quests.chemical_elements.uranium.title}"
 			x: 5.0d
 			y: 8.5d
 		}
@@ -1481,28 +1501,9 @@
 					type: "item"
 				}
 			]
-			title: "{material.gtceu.plutonium}"
+			title: "{quests.chemical_elements.plutonium.title}"
 			x: 7.0d
 			y: 8.5d
-		}
-		{
-			description: ["{quests.chemical_elements.europium.desc}"]
-			disable_toast: true
-			id: "23D55E8A38F45779"
-			subtitle: "{quests.chemical_elements.element} #63"
-			tasks: [{
-				id: "3AB55D4F07FD97EF"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:europium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:europium\"}})item(gtceu:europium_bucket))"
-					}
-				}
-				type: "item"
-			}]
-			x: 8.0d
-			y: 7.5d
 		}
 		{
 			description: ["{quests.chemical_elements.americium.desc}"]
@@ -1530,6 +1531,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.chemical_elements.americium.title}"
 			x: 8.0d
 			y: 8.5d
 		}
@@ -1549,6 +1551,7 @@
 				}
 				type: "item"
 			}]
+			title: "{material.gtceu.lutetium}"
 			x: 16.0d
 			y: 8.5d
 		}
