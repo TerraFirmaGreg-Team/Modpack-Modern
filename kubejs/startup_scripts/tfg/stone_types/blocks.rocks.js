@@ -134,7 +134,6 @@ function registerTFGRockBlocks(event) {
 				.tagBlock('tfc:loose_rocks')
 				.tagItem('tfc:any_knapping')
 				.tagItem('tfc:rock_knapping')
-				.tagBoth(rock.tfcTag)
 				.tagItem("rnr:loose_rock_items")
 
 			if (rock.tfcTag != null) {
