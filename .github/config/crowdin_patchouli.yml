@@ -1,4 +1,4 @@
-base_url: "https://api.crowdin.com"
+base_url: "https://terrafirmagreg.api.crowdin.com"
 base_path: "../../kubejs/assets"
 
 project_id_env: "CROWDIN_ID"
