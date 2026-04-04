@@ -10,5 +10,9 @@
 	"block.tfcgroomer.steel_grooming_station": "鋼の給餌箱",
 	"block.tfcgroomer.wrought_iron_grooming_station": "錬鉄の給餌箱",
 	"config.jade.plugin_tfcgroomer.grooming_station": "給餌箱",
-	"tfcgroomer.grooming_station.range": "範囲: %s"
+	"gui.tfcgroomer.enable_breeding": "Enable Breeding",
+	"tfcgroomer.grooming_station.range": "範囲: %s",
+	"tfcgroomer.tooltip.breedDisabled": "Breeding Disabled",
+	"tfcgroomer.tooltip.breedEnabled": "Breeding Enabled",
+	"tfcgroomer.tooltip.toggleBreeding": "Toggle Breeding"
 }

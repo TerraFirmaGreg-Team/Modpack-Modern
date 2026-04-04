@@ -1,4 +1,30 @@
 {
-  "block.create_factory_logistics.jar_packager": "Bottler"
+  "block.create_factory_logistics.factory_fluid_gauge": "Factory Fluid Gauge",
+  "block.create_factory_logistics.jar_packager": "Bottler",
+  "block.create_factory_logistics.network_link": "Network Link",
+  "entity.create_factory_logistics.jar": "Jar",
+  "item.create_factory_logistics.fluid_mechanism": "Fluid Mechanism",
+  "item.create_factory_logistics.incomplete_fluid_mechanism": "Incomplete Fluid Mechanism",
+  "item.create_factory_logistics.jar": "Copper Jar",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Factory Logistics",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "Hold Alt to place containing fluid",
+  "itemGroup.create_factory_logistics.base": "Create Factory Logistics",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "Content Type:",
+  "create_factory_logistics.gui.ingredient_type.fluid": "液体",
+  "create_factory_abstractions.gui.ingredient_type.item": "アイテム",
+  "create_factory_logistics.gui.network_link.mode": "Stock Source",
+  "create_factory_logistics.gui.network_link.mode.stored": "In Stock",
+  "create_factory_logistics.gui.network_link.mode.promised": "Promised",
+  "create_factory_logistics.gui.network_link.mode.all": "In Stock and Promised",
+  "create_factory_logistics.ponder.mixer_upkeep.header": "Mixer Upkeep with Network links",
+  "create_factory_logistics.ponder.mixer_upkeep.text_1": "Network Links could be attached to a inventory reading device like Threshold Switch",
+  "create_factory_logistics.ponder.mixer_upkeep.text_2": "So that blaze burner would be fed only when necessary",
+  "create_factory_logistics.ponder.mixer_upkeep.text_3": "When order has arrived, the switch will read new state and react",
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "Place Fluid to Monitor",
+  "entity.create_factory_logistics.composite_package": "Composite Package",
+  "create.item_attributes.is_fluid": "is %1$s",
+  "create.item_attributes.is_fluid.inverted": "is not %1$s",
+  "create.item_attributes.is_fluid_no_nbt": "is %1$s (no NBT)",
+  "create.item_attributes.is_fluid_no_nbt.inverted": "is not %1$s (no NBT)"
 }
 
