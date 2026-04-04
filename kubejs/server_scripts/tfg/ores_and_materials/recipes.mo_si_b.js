@@ -22,6 +22,7 @@ function registerTFGMoSiBRecipes(event) {
 		.outputFluids(Fluid.of('tfg:hydroxide_decomposition_off_gas', 300))
 		.duration(12 * 20)
 		.EUt(GTValues.VA[GTValues.EV])
+		.circuit(1)
 
 	event.recipes.gtceu.arc_furnace('tfg:silicon_tetrachloride_water')
 		.itemInputs(Item.of('tfg:dirty_mo_si_b_dust', 1))

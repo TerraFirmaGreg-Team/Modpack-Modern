@@ -129,8 +129,11 @@ function registerTFGMVMaterialRecipes(event) {
 
 	//#region Modify Electronic Component to require Silicon Rubber
 
-	//event.replaceInput({ id: 'gtceu:assembler/transistor' }, Fluid.of('gtceu:polyethylene'), Fluid.of('gtceu:silicone_rubber'))
-	event.replaceInput({ id: 'gtceu:assembler/capacitor' }, Item.of('gtceu:polyethylene_foil'), Item.of('gtceu:silicone_rubber_foil'))
+
+	global.modifyRecipe(event, "gtceu:assembler/capacitor", {
+		newId: "tfg:assembler/capacitor",
+		fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" },
+	})
 
 	global.modifyRecipe(event, "gtceu:assembler/transistor", {
 		newId: "tfg:assembler/transistor",

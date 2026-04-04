@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### Breaking changes
+- Capacitor recipe was change with Silicon Rubber and Polyehtylene swapped
+- Molybdenum Discilicide now use Circuit 2 in the Mixer
+- Dirty Mo_Si_B now use Circuit 1 in the Mixer
+### Changes
+
+### Bug fixes
+
 ## [0.12.1] - 01-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Changes
