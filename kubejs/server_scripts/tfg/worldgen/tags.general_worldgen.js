@@ -124,4 +124,15 @@ function registerTFGGeneralWorldgenBlockTags(event) {
 	event.add('minecraft:replaceable', 'tfg:pile/volcanic_ash')
 
 	event.add('minecraft:replaceable', '#tfc:loose_rocks')
+
+	// New clay blocks
+	event.add('tfc:clay', 'tfg:clay/alfisol')
+	event.add('tfc:clay', 'tfg:clay/mollisol')
+	event.add('tfc:clay', 'tfg:clay/oxisol')
+	event.add('tfc:clay', 'tfg:clay/podzol')
+	event.add('tfc:clay_grass', 'tfg:clay_grass/alfisol')
+	event.add('tfc:clay_grass', 'tfg:clay_grass/mollisol')
+	event.add('tfc:clay_grass', 'tfg:clay_grass/oxisol')
+	event.add('tfc:clay_grass', 'tfg:clay_grass/podzol')
+	event.add('tfc:clay', '#tfc:clay_grass')
 }
