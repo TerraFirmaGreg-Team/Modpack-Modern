@@ -44,14 +44,6 @@
 			image: "ftbquests:textures/shapes/square/outline.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 16.0d
-			y: 3.0d
-		}
-		{
-			height: 1.0d
-			image: "ftbquests:textures/shapes/square/outline.png"
-			rotation: 0.0d
-			width: 1.0d
 			x: 0.0d
 			y: 4.0d
 		}
@@ -913,12 +905,33 @@
 			y: 3.0d
 		}
 		{
+			description: ["{quests.chemical_elements.bromine.desc}"]
+			disable_toast: true
+			id: "45FD8CC0CC0CABFF"
+			optional: true
+			subtitle: "{quests.chemical_elements.element} #38"
+			tasks: [{
+				id: "5C77235DAA5073A5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:bromine\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:bromine\"}})item(gtceu:bromine_bucket))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{material.gtceu.bromine}"
+			x: 16.0d
+			y: 3.0d
+		}
+		{
 			description: ["{quests.chemical_elements.krypton.desc}"]
 			disable_toast: true
 			id: "45FD8CC0CC0CAB6F"
 			subtitle: "{quests.chemical_elements.element} #36"
 			tasks: [{
-				id: "5C77235DAA5073A5"
+				id: "3E176E4B132EEBA6"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
