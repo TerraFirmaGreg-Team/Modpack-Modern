@@ -141,7 +141,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `gtceu:repair_kit_${metal}` },
@@ -157,7 +157,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `gtceu:repair_kit_${metal}` },
@@ -170,7 +170,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `gtceu:repair_kit_${metal}` },
@@ -185,7 +185,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `gtceu:repair_kit_${metal}` },
@@ -198,7 +198,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `gtceu:repair_kit_${metal}` },
@@ -214,7 +214,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `${repair.material}` },
@@ -230,7 +230,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { item: `sns:leather_strip` },
@@ -247,7 +247,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `sns:leather_strip` },
@@ -264,7 +264,7 @@ function registerTFGRepairRecipes(event) {
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
-				"RH ",
+				"RH",
 			],
 			key: {
 				R: { tag: `forge:rods/${(metal == "cast_iron" ? "iron" : metal)}` },
@@ -280,7 +280,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `${namespace}:repair_kit_${material}` },
@@ -300,7 +300,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `${namespace}:repair_kit_${repairKitMaterial}` },
@@ -317,7 +317,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `${namespace}:repair_kit_${material}` },
@@ -337,7 +337,7 @@ function registerTFGRepairRecipes(event) {
 			event.custom({
 				type: 'tfg:item_repair',
 				pattern: [
-					"RH ",
+					"RH",
 				],
 				key: {
 					R: { item: `${namespace}:repair_kit_${material}` },
