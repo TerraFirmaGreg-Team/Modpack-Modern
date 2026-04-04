@@ -389,23 +389,45 @@
 	quests: [
 		{
 			description: ["{quests.chemical_elements.hydrogen.desc}"]
+			disable_toast: true
 			icon: "gtceu:hydrogen_bucket"
 			id: "417807F06314E78F"
 			subtitle: "{quests.chemical_elements.element} #1"
 			tasks: [
 				{
+					disable_toast: true
 					id: "1BCC8FDB759F9489"
-					item: "gtceu:hydrogen_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:hydrogen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:hydrogen\"}})item(gtceu:hydrogen_bucket))"
+						}
+					}
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1BCC8FDB759F9490"
-					item: "gtceu:deuterium_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:deuterium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:deuterium\"}})item(gtceu:deuterium_bucket))"
+						}
+					}
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1BCC8FDB759F9491"
-					item: "gtceu:tritium_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:tritium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:tritium\"}})item(gtceu:tritium_bucket))"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -415,17 +437,32 @@
 		}
 		{
 			description: ["{quests.chemical_elements.helium.desc}"]
+			disable_toast: true
 			id: "3EE0AE78935A527F"
 			subtitle: "{quests.chemical_elements.element} #2"
 			tasks: [
 				{
+					disable_toast: true
 					id: "2498B47EBC1D4400"
-					item: "gtceu:helium_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:helium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:helium\"}})item(gtceu:helium_bucket))"
+						}
+					}
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2498B47EBC1D4401"
-					item: "gtceu:helium_3_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:helium_3\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:helium_3\"}})item(gtceu:helium_3_bucket))"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -435,6 +472,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.lithium.desc}"]
+			disable_toast: true
 			id: "3271728CD931477E"
 			subtitle: "{quests.chemical_elements.element} #3"
 			tasks: [{
@@ -448,6 +486,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.beryllium.desc}"]
+			disable_toast: true
 			id: "57BA243D35AF24F3"
 			subtitle: "{quests.chemical_elements.element} #4"
 			tasks: [{
@@ -461,6 +500,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.boron.desc}"]
+			disable_toast: true
 			id: "7B09373F39E86D84"
 			subtitle: "{quests.chemical_elements.element} #5"
 			tasks: [{
@@ -474,6 +514,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.carbon.desc}"]
+			disable_toast: true
 			id: "13A2584BFC01606A"
 			subtitle: "{quests.chemical_elements.element} #6"
 			tasks: [{
@@ -487,11 +528,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.nitrogen.desc}"]
+			disable_toast: true
 			id: "7FB54CB8D9790BAE"
 			subtitle: "{quests.chemical_elements.element} #7"
 			tasks: [{
 				id: "053CCDC8AE45D6EF"
-				item: "gtceu:nitrogen_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:nitrogen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:nitrogen\"}})item(gtceu:nitrogen_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.nitrogen}"
@@ -500,11 +548,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.oxygen.desc}"]
+			disable_toast: true
 			id: "23F2473B4F67D79E"
 			subtitle: "{quests.chemical_elements.element} #8"
 			tasks: [{
 				id: "1FAB593DC981FEA6"
-				item: "gtceu:oxygen_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:oxygen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:oxygen\"}})item(gtceu:oxygen_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.oxygen}"
@@ -513,11 +568,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.fluorine.desc}"]
+			disable_toast: true
 			id: "53714898C549F8CA"
 			subtitle: "{quests.chemical_elements.element} #9"
 			tasks: [{
 				id: "03CCD7F1879D666D"
-				item: "gtceu:fluorine_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:fluorine\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:fluorine\"}})item(gtceu:fluorine_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.fluorine}"
@@ -526,11 +588,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.neon.desc}"]
+			disable_toast: true
 			id: "6DDB5AC172F50249"
 			subtitle: "{quests.chemical_elements.element} #10"
 			tasks: [{
 				id: "6F551138A4F923EE"
-				item: "gtceu:neon_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:neon\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:neon\"}})item(gtceu:neon_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.neon}"
@@ -539,6 +608,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.sodium.desc}"]
+			disable_toast: true
 			id: "3B9DB7067B45C465"
 			subtitle: "{quests.chemical_elements.element} #11"
 			tasks: [{
@@ -552,6 +622,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.magnesium.desc}"]
+			disable_toast: true
 			id: "052EE4ADB19956D5"
 			subtitle: "{quests.chemical_elements.element} #12"
 			tasks: [{
@@ -565,6 +636,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.aluminium.desc}"]
+			disable_toast: true
 			id: "4A6E870AB234E8BE"
 			subtitle: "{quests.chemical_elements.element} #13"
 			tasks: [{
@@ -578,6 +650,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.silicon.desc}"]
+			disable_toast: true
 			id: "081A57061C64F14F"
 			subtitle: "{quests.chemical_elements.element} #14"
 			tasks: [{
@@ -591,6 +664,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.phosphorus.desc}"]
+			disable_toast: true
 			id: "1B7EBE6DCBCC20BB"
 			subtitle: "{quests.chemical_elements.element} #15"
 			tasks: [{
@@ -604,6 +678,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.sulfur.desc}"]
+			disable_toast: true
 			id: "2C697389E4AA2B58"
 			subtitle: "{quests.chemical_elements.element} #16"
 			tasks: [{
@@ -617,11 +692,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.chlorine.desc}"]
+			disable_toast: true
 			id: "506BE6495CCF841D"
 			subtitle: "{quests.chemical_elements.element} #17"
 			tasks: [{
 				id: "2964E61F69502FE4"
-				item: "gtceu:chlorine_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:chlorine\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:chlorine\"}})item(gtceu:chlorine_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.chlorine}"
@@ -630,11 +712,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.argon.desc}"]
+			disable_toast: true
 			id: "75C2AF14CAEF3875"
 			subtitle: "{quests.chemical_elements.element} #18"
 			tasks: [{
 				id: "576668BD27ED0B9F"
-				item: "gtceu:argon_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:argon\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:argon\"}})item(gtceu:argon_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.argon}"
@@ -643,6 +732,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.potassium.desc}"]
+			disable_toast: true
 			id: "461ED2281995BADB"
 			subtitle: "{quests.chemical_elements.element} #19"
 			tasks: [{
@@ -656,6 +746,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.calcium.desc}"]
+			disable_toast: true
 			id: "3771AC87A526185B"
 			subtitle: "{quests.chemical_elements.element} #20"
 			tasks: [{
@@ -669,6 +760,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.titanium.desc}"]
+			disable_toast: true
 			id: "4AEB8D209C70660A"
 			subtitle: "{quests.chemical_elements.element} #22"
 			tasks: [{
@@ -682,6 +774,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.vanadium.desc}"]
+			disable_toast: true
 			id: "227A966DCA13A941"
 			subtitle: "{quests.chemical_elements.element} #23"
 			tasks: [{
@@ -695,6 +788,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.chromium.desc}"]
+			disable_toast: true
 			id: "4DFBF867874CBFA8"
 			subtitle: "{quests.chemical_elements.element} #24"
 			tasks: [{
@@ -708,6 +802,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.manganese.desc}"]
+			disable_toast: true
 			id: "6252BE28A5C23283"
 			subtitle: "{quests.chemical_elements.element} #25"
 			tasks: [{
@@ -721,6 +816,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.iron.desc}"]
+			disable_toast: true
 			id: "1AFAFB838E3C036E"
 			subtitle: "{quests.chemical_elements.element} #26"
 			tasks: [{
@@ -734,6 +830,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.cobalt.desc}"]
+			disable_toast: true
 			id: "0CF1250C10714990"
 			subtitle: "{quests.chemical_elements.element} #27"
 			tasks: [{
@@ -747,6 +844,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.nickel.desc}"]
+			disable_toast: true
 			id: "09C0951651CBE65F"
 			subtitle: "{quests.chemical_elements.element} #28"
 			tasks: [{
@@ -760,6 +858,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.copper.desc}"]
+			disable_toast: true
 			id: "0537EB5AE0BD3B83"
 			subtitle: "{quests.chemical_elements.element} #29"
 			tasks: [{
@@ -773,6 +872,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.zinc.desc}"]
+			disable_toast: true
 			id: "16C019F81FC5A87A"
 			subtitle: "{quests.chemical_elements.element} #30"
 			tasks: [{
@@ -786,6 +886,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.gallium.desc}"]
+			disable_toast: true
 			id: "508E7521E49F115A"
 			subtitle: "{quests.chemical_elements.element} #31"
 			tasks: [{
@@ -799,6 +900,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.arsenic.desc}"]
+			disable_toast: true
 			id: "4E78B7BF08DD5137"
 			subtitle: "{quests.chemical_elements.element} #33"
 			tasks: [{
@@ -812,11 +914,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.krypton.desc}"]
+			disable_toast: true
 			id: "45FD8CC0CC0CAB6F"
 			subtitle: "{quests.chemical_elements.element} #36"
 			tasks: [{
 				id: "5C77235DAA5073A5"
-				item: "gtceu:krypton_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:krypton\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:krypton\"}})item(gtceu:krypton_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.krypton}"
@@ -825,6 +934,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.yttrium.desc}"]
+			disable_toast: true
 			id: "6018EAB73B9D5B5D"
 			subtitle: "{quests.chemical_elements.element} #39"
 			tasks: [{
@@ -838,6 +948,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.zirconium.desc}"]
+			disable_toast: true
 			id: "43B837B54E9BA726"
 			optional: true
 			subtitle: "{quests.chemical_elements.element} #40"
@@ -852,6 +963,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.niobium.desc}"]
+			disable_toast: true
 			id: "6370608EFCA7A482"
 			subtitle: "{quests.chemical_elements.element} #41"
 			tasks: [{
@@ -865,6 +977,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.molybdenum.desc}"]
+			disable_toast: true
 			id: "5DBE8C4D8C1C34C3"
 			subtitle: "{quests.chemical_elements.element} #42"
 			tasks: [{
@@ -878,6 +991,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.ruthenium.desc}"]
+			disable_toast: true
 			id: "5ED5D1204E674C5B"
 			subtitle: "{quests.chemical_elements.element} #44"
 			tasks: [{
@@ -891,6 +1005,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.rhodium.desc}"]
+			disable_toast: true
 			id: "7382CF8AC2FAA612"
 			subtitle: "{quests.chemical_elements.element} #45"
 			tasks: [{
@@ -904,6 +1019,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.palladium.desc}"]
+			disable_toast: true
 			id: "330DA2570B63B70C"
 			subtitle: "{quests.chemical_elements.element} #46"
 			tasks: [{
@@ -917,6 +1033,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.silver.desc}"]
+			disable_toast: true
 			id: "6C59CD0D4B7C0224"
 			subtitle: "{quests.chemical_elements.element} #47"
 			tasks: [{
@@ -930,6 +1047,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.cadmium.desc}"]
+			disable_toast: true
 			id: "038EC8E07AD71956"
 			subtitle: "{quests.chemical_elements.element} #48"
 			tasks: [{
@@ -943,6 +1061,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.indium.desc}"]
+			disable_toast: true
 			id: "109D9795EB0D36A3"
 			subtitle: "{quests.chemical_elements.element} #49"
 			tasks: [{
@@ -956,6 +1075,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.tin.desc}"]
+			disable_toast: true
 			id: "74F9429B68CBDB9E"
 			subtitle: "{quests.chemical_elements.element} #50"
 			tasks: [{
@@ -969,6 +1089,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.antimony.desc}"]
+			disable_toast: true
 			id: "376E58ED64E29244"
 			subtitle: "{quests.chemical_elements.element} #51"
 			tasks: [{
@@ -982,6 +1103,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.iodine.desc}"]
+			disable_toast: true
 			id: "0E79476B04FE4DFF"
 			subtitle: "{quests.chemical_elements.element} #53"
 			tasks: [{
@@ -995,11 +1117,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.xenon.desc}"]
+			disable_toast: true
 			id: "315DFEECDCA0182A"
 			subtitle: "{quests.chemical_elements.element} #54"
 			tasks: [{
 				id: "281FF66A86159452"
-				item: "gtceu:xenon_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:xenon\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:xenon\"}})item(gtceu:xenon_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.xenon}"
@@ -1008,15 +1137,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.caesium.desc}"]
+			disable_toast: true
 			id: "754BD4898EA2E32D"
 			subtitle: "{quests.chemical_elements.element} #55"
 			tasks: [
 				{
+					disable_toast: true
 					id: "2DCE847775BE0DE7"
 					item: "gtceu:caesium_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2DCE847775BE0DE8"
 					item: "gtceu:caesium_137_dust"
 					type: "item"
@@ -1028,6 +1160,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.barium.desc}"]
+			disable_toast: true
 			id: "754BD4898EA2E32C"
 			subtitle: "{quests.chemical_elements.element} #56"
 			tasks: [{
@@ -1041,6 +1174,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.lanthanum.desc}"]
+			disable_toast: true
 			id: "29C3462EFE0F4921"
 			subtitle: "{quests.chemical_elements.element} #57"
 			tasks: [{
@@ -1054,6 +1188,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.cerium.desc}"]
+			disable_toast: true
 			id: "651B779D02D74F5D"
 			subtitle: "{quests.chemical_elements.element} #58"
 			tasks: [{
@@ -1067,6 +1202,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.neodymium.desc}"]
+			disable_toast: true
 			id: "59DEDE9D49BF6BE8"
 			subtitle: "{quests.chemical_elements.element} #60"
 			tasks: [{
@@ -1080,6 +1216,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.samarium.desc}"]
+			disable_toast: true
 			id: "02B800AF538538C8"
 			subtitle: "{quests.chemical_elements.element} #62"
 			tasks: [{
@@ -1093,6 +1230,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.tantalum.desc}"]
+			disable_toast: true
 			id: "67361686C18AB4E6"
 			subtitle: "{quests.chemical_elements.element} #73"
 			tasks: [{
@@ -1106,6 +1244,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.tungsten.desc}"]
+			disable_toast: true
 			id: "5987B2FD290054B3"
 			subtitle: "{quests.chemical_elements.element} #74"
 			tasks: [{
@@ -1119,6 +1258,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.rhenium.desc}"]
+			disable_toast: true
 			id: "61FFBBFCCB38C478"
 			subtitle: "{quests.chemical_elements.element} #75"
 			tasks: [{
@@ -1132,6 +1272,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.osmium.desc}"]
+			disable_toast: true
 			id: "66827D3183133EB8"
 			subtitle: "{quests.chemical_elements.element} #76"
 			tasks: [{
@@ -1145,6 +1286,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.iridium.desc}"]
+			disable_toast: true
 			id: "0089869FBFF4BB2E"
 			subtitle: "{quests.chemical_elements.element} #77"
 			tasks: [{
@@ -1158,6 +1300,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.platinum.desc}"]
+			disable_toast: true
 			id: "5BF3A1D8B66162C2"
 			subtitle: "{quests.chemical_elements.element} #78"
 			tasks: [{
@@ -1171,6 +1314,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.gold.desc}"]
+			disable_toast: true
 			id: "46576F512686B6F2"
 			subtitle: "{quests.chemical_elements.element} #79"
 			tasks: [{
@@ -1184,11 +1328,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.mercury.desc}"]
+			disable_toast: true
 			id: "7C23E33A844D9DF0"
 			subtitle: "{quests.chemical_elements.element} #80"
 			tasks: [{
 				id: "48EF50082DE485AD"
-				item: "gtceu:mercury_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:mercury\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:mercury\"}})item(gtceu:mercury_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.mercury}"
@@ -1197,6 +1348,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.thallium.desc}"]
+			disable_toast: true
 			id: "4529F4271C78317C"
 			subtitle: "{quests.chemical_elements.element} #81"
 			tasks: [{
@@ -1210,6 +1362,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.lead.desc}"]
+			disable_toast: true
 			id: "4D0E732C63BBEE02"
 			subtitle: "{quests.chemical_elements.element} #82"
 			tasks: [{
@@ -1223,6 +1376,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.bismuth.desc}"]
+			disable_toast: true
 			id: "31E5166CD1ACF135"
 			subtitle: "{quests.chemical_elements.element} #83"
 			tasks: [{
@@ -1236,11 +1390,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.radon.desc}"]
+			disable_toast: true
 			id: "26CCD7E7DE2B4547"
 			subtitle: "{quests.chemical_elements.element} #86"
 			tasks: [{
 				id: "4A55C3616AFD3E98"
-				item: "gtceu:radon_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:radon\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:radon\"}})item(gtceu:radon_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.radon}"
@@ -1249,6 +1410,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.thorium.desc}"]
+			disable_toast: true
 			id: "1CBB889155D266FF"
 			subtitle: "{quests.chemical_elements.element} #90"
 			tasks: [{
@@ -1262,16 +1424,19 @@
 		}
 		{
 			description: ["{quests.chemical_elements.uranium.desc}"]
+			disable_toast: true
 			icon: "gtceu:uranium_dust"
 			id: "2BBAC2F1537E08BA"
 			subtitle: "{quests.chemical_elements.element} #92"
 			tasks: [
 				{
+					disable_toast: true
 					id: "38476862A2A6F9EE"
 					item: "gtceu:uranium_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "38476862A2A6F9EF"
 					item: "gtceu:uranium_235_dust"
 					type: "item"
@@ -1283,6 +1448,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.neptunium.desc}"]
+			disable_toast: true
 			icon: "gtceu:neptunium_237_dust"
 			id: "439C31850DF0B983"
 			subtitle: "{quests.chemical_elements.element} #93"
@@ -1297,16 +1463,19 @@
 		}
 		{
 			description: ["{quests.chemical_elements.plutonium.desc}"]
+			disable_toast: true
 			icon: "gtceu:plutonium_dust"
 			id: "13072C175C613D5F"
 			subtitle: "{quests.chemical_elements.element} #94"
 			tasks: [
 				{
+					disable_toast: true
 					id: "0670640059E678DD"
 					item: "gtceu:plutonium_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0670640059E678DE"
 					item: "gtceu:plutonium_241_dust"
 					type: "item"
@@ -1318,11 +1487,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.europium.desc}"]
+			disable_toast: true
 			id: "23D55E8A38F45779"
 			subtitle: "{quests.chemical_elements.element} #63"
 			tasks: [{
 				id: "3AB55D4F07FD97EF"
-				item: "gtceu:europium_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:europium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:europium\"}})item(gtceu:europium_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			x: 8.0d
@@ -1330,18 +1506,27 @@
 		}
 		{
 			description: ["{quests.chemical_elements.americium.desc}"]
+			disable_toast: true
 			icon: "gtceu:americium_241_dust"
 			id: "1A321305AA1A8DF3"
 			subtitle: "{quests.chemical_elements.element} #95"
 			tasks: [
 				{
+					disable_toast: true
 					id: "70FEE805EBB8EF9C"
 					item: "gtceu:americium_241_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "70FEE805EBB8EF9D"
-					item: "gtceu:americium_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:americium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:americium\"}})item(gtceu:americium_bucket))"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1350,11 +1535,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.lutetium.desc}"]
+			disable_toast: true
 			id: "1B5846EAFA1DFD2F"
 			subtitle: "{quests.chemical_elements.element} #71"
 			tasks: [{
 				id: "68D099C9721E8C82"
-				item: "gtceu:lutetium_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:lutetium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:lutetium\"}})item(gtceu:lutetium_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			x: 16.0d
@@ -1362,11 +1554,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.darmstadtium.desc}"]
+			disable_toast: true
 			id: "46A3048BBA303A6F"
 			subtitle: "{quests.chemical_elements.element} #110"
 			tasks: [{
 				id: "6F97020BAE0B99FA"
-				item: "gtceu:darmstadtium_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:darmstadtium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:darmstadtium\"}})item(gtceu:darmstadtium_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.darmstadtium}"
@@ -1375,11 +1574,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.tritanium.desc}"]
+			disable_toast: true
 			id: "3BFCA913579F56DD"
 			subtitle: "{quests.chemical_elements.element} #§k119§r"
 			tasks: [{
 				id: "31F3FB3659622CA2"
-				item: "gtceu:tritanium_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:tritanium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:tritanium\"}})item(gtceu:tritanium_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.tritanium}"
@@ -1388,11 +1594,18 @@
 		}
 		{
 			description: ["{quests.chemical_elements.duranium.desc}"]
+			disable_toast: true
 			id: "1ED10C267196E4A1"
 			subtitle: "{quests.chemical_elements.element} #§k120§r"
 			tasks: [{
 				id: "1A6749739753A601"
-				item: "gtceu:duranium_bucket"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:duranium\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:duranium\"}})item(gtceu:duranium_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{material.gtceu.duranium}"
@@ -1401,6 +1614,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.trinium.desc}"]
+			disable_toast: true
 			id: "07DAD6E1B2C3D4E5"
 			subtitle: "{quests.chemical_elements.element} #§k125§r"
 			tasks: [{
@@ -1414,21 +1628,25 @@
 		}
 		{
 			description: ["{quests.chemical_elements.naquadah.desc}"]
+			disable_toast: true
 			icon: "gtceu:naquadah_dust"
 			id: "29FCF803D4E5F6A7"
 			subtitle: "{quests.chemical_elements.element} #§k174§r"
 			tasks: [
 				{
+					disable_toast: true
 					id: "3A0D0914E5F6A7B8"
 					item: "gtceu:naquadah_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3A0D0914E5F6A7B9"
 					item: "gtceu:enriched_naquadah_dust"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3A0D0914E5F6A7BA"
 					item: "gtceu:naquadria_ingot"
 					type: "item"
@@ -1440,6 +1658,7 @@
 		}
 		{
 			description: ["{quests.chemical_elements.neutronium.desc}"]
+			disable_toast: true
 			id: "4B1E1A25F6A7B8C9"
 			subtitle: "{quests.chemical_elements.element} #0"
 			tasks: [{
