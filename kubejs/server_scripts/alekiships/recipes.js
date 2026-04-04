@@ -95,7 +95,7 @@ const registerAlekishipsRecipes = (event) => {
 	//#region Anchor
 	event.recipes.tfc.anvil(
 		'alekiships:anchor',
-		'#forge:double_ingots/wrought_iron',
+		'#forge:double_plates/wrought_iron',
 		[
 			'hit_last',
 			'punch_second_last',
