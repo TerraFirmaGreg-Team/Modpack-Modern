@@ -15,7 +15,7 @@ function registerTFGPastoralRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.LV])
         .circuit(2)
-    TFGRecipeSchemaBindings.animalPresentEntity(milk_yak, 'firmalife:yak')
+    TFGRecipeSchemaBindings.animalPresentEntity(milk_yak, 'tfc:yak')
 
     let milk_goat = event.recipes.gtceu.pastoral_engine('tfg:milk_goat')
         .outputFluids('firmalife:goat_milk 1000')
