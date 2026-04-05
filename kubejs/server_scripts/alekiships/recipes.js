@@ -6,11 +6,14 @@
  */
 const registerAlekishipsRecipes = (event) => {
 	//remove recipes
-	event.remove({ output: "alekiships:oarlock"})
-	event.remove({ output: "alekiships:cleat"})
-	event.remove({ output: "alekiships:anchor"})
+	event.remove("alekiships:crafting/oarlock")
+	event.remove("alekiships:crafting/cleat")
+	event.remove("alekiships:crafting/anchor")
 	event.remove("alekiships:crafting/cannon")
 	event.remove("alekiships:crafting/cannonball")
+	event.remove("firmaciv:anvil/oarlock")
+	event.remove("firmaciv:anvil/cleat")
+	event.remove("firmaciv:anvil/anchor")
 
 	//#region Oarlock
 	event.recipes.tfc.anvil(
@@ -49,7 +52,6 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
-		.addMaterialInfo(false)
 
 	event.recipes.gtceu.assembler('tfg:alekiships/oarlock/bismuth_bronze')
 		.itemInputs('2x #forge:ingots/bismuth_bronze')
@@ -57,7 +59,6 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
-		.addMaterialInfo(false)
 
 	event.recipes.gtceu.assembler('tfg:alekiships/oarlock/black_bronze')
 		.itemInputs('2x #forge:ingots/black_bronze')
@@ -65,7 +66,6 @@ const registerAlekishipsRecipes = (event) => {
 		.itemOutputs('alekiships:oarlock')
 		.duration(75)
 		.EUt(4)
-		.addMaterialInfo(false)
 	//#endregion
 
 	//#region Cleat
@@ -137,4 +137,7 @@ const registerAlekishipsRecipes = (event) => {
 		.resultFluid(Fluid.of('gtceu:iron', 288))
 		.id(`alekiships:heating/cannonball`)
 	//#endregion
+
+	// Remove Oarlock Recycle Recipe
+	TFGHelpers.clearMaterialInfo('alekiships:oarlock')
 }
