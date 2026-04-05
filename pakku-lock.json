@@ -4708,6 +4708,73 @@
             ]
         },
         {
+            "pakku_id": "EZsypKHb95KeyzBH",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "default-options",
+                "modrinth": "default-options"
+            },
+            "name": {
+                "curseforge": "Default Options",
+                "modrinth": "Default Options"
+            },
+            "id": {
+                "curseforge": "232131",
+                "modrinth": "WEg59z5b"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "defaultoptions-forge-1.20.1-18.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6972/483/defaultoptions-forge-1.20.1-18.0.4.jar",
+                    "id": "6972483",
+                    "parent_id": "232131",
+                    "hashes": {
+                        "sha1": "37ef64d3ae7fda292c882ee949a0280bf6c7f033",
+                        "md5": "2a453bba939907b55d4d7e0c31e6d8ad"
+                    },
+                    "required_dependencies": [
+                        "531761"
+                    ],
+                    "size": 94684,
+                    "date_published": "2025-09-07T12:29:22.480Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "defaultoptions-forge-1.20.1-18.0.4.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/WEg59z5b/versions/t5i53ltA/defaultoptions-forge-1.20.1-18.0.4.jar",
+                    "id": "t5i53ltA",
+                    "parent_id": "WEg59z5b",
+                    "hashes": {
+                        "sha512": "01e9bc32c967a9ccce0504d0b88245e8a3b27cea1e29ed4740a06064179387e28f36dbd2e95401eb38854984361e06b8d58cca3f0d4ba88d660b2d0013845bc9",
+                        "sha1": "37ef64d3ae7fda292c882ee949a0280bf6c7f033"
+                    },
+                    "required_dependencies": [
+                        "MBAkmtvl"
+                    ],
+                    "size": 94684,
+                    "date_published": "2025-09-07T12:29:20.644337Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "xhj4gdXUt2Zv4KMy",
             "pakku_links": [
                 "ihA4iuyUc3fA0D4q"
