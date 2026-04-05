@@ -14,6 +14,7 @@
 	"msg.additionalplacements.generate.failure.tag": "產生資料包時發生錯誤：無法儲存標籤 %s",
 	"msg.additionalplacements.generate.notfixed": "自動建立標籤未能解決標籤不一致的問題，需要手動修正。請確保已啟用標籤不一致的記錄功能並檢查遊戲輸出紀錄。此操作需要具備資料包建立以及新增／移除方塊標籤的相關知識。",
 	"msg.additionalplacements.generate.success": "標籤匯出完成",
+	"msg.additionalplacements.local_world_notice": "注意：若嘗試載入本地存檔，世界仍會在背景持續運作。請重新啟動遊戲解決此問題。",
 	"msg.additionalplacements.mismatchedtags.0": "[額外放置] 偵測到生成方塊存在缺失及／或多餘的標籤。請使用「",
 	"msg.additionalplacements.mismatchedtags.1": "」產生標籤，然後使用「",
 	"msg.additionalplacements.mismatchedtags.2": "」重新載入標籤（若失敗請重新載入世界）。詳細資訊請查看遊戲輸出紀錄，或於設定檔中停用此訊息。",

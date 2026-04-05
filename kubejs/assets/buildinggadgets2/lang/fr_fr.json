@@ -1,15 +1,17 @@
 {
-  "buildinggadgets2.buttons.render": "Rendu",
+  "buildinggadgets2.buttons.copy": "Copier",
+  "buildinggadgets2.buttons.paste": "Coller",
   "buildinggadgets2.buttons.save": "Sauvegarder",
   "buildinggadgets2.gui.range": "Portée",
+  "buildinggadgets2.modes.copy": "Copier",
+  "buildinggadgets2.modes.cut": "Couper",
+  "buildinggadgets2.modes.paste": "Coller",
   "buildinggadgets2.modes.surface": "Surface",
+  "buildinggadgets2.radialmenu.cut": "Couper",
   "buildinggadgets2.radialmenu.rotate": "Tourner",
   "buildinggadgets2.screen.clear": "Effacer",
+  "buildinggadgets2.screen.close": "Fermer",
   "buildinggadgets2.screen.confirm": "Confirmer",
-  "buildinggadgets2.screen.down": "En bas",
   "buildinggadgets2.screen.end": "Fin",
-  "buildinggadgets2.screen.left": "Gauche",
-  "buildinggadgets2.screen.right": "Droit",
-  "buildinggadgets2.screen.up": "Haut de la page",
   "key.buildinggadgets2.range": "Portée"
 }

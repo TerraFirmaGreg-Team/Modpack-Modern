@@ -1,8 +1,19 @@
 {
-	"beneath.screen.lost_page.reward": "Recompensa",
-	"block.beneath.ore.nether_cursecoal.prospected": "Antracito",
+	"beneath.block_entity.hellforge": "Forja Infernal",
+	"beneath.screen.juicer": "Espremedor",
+	"beneath.screen.juicer.mushrooms": "Alimente-me com cogumelos!",
+	"block.beneath.ancient_altar": "Pedestal de Piroxenita",
+	"block.beneath.blackstone_aqueduct": "Aqueduto de Piroxenita",
+	"block.beneath.blackstone_pebble": "Piroxenita Solta",
+	"block.beneath.cursecoal_pile": "Pilha de Antracito",
+	"block.beneath.glowstone_spike": "Espinho de Pedra Luminosa",
+	"block.beneath.hellbricks": "Tijolos Infernais",
+	"block.beneath.loose_blackstone": "Piroxenita Solta",
+	"block.beneath.mushroom.button": "Botão",
+	"block.beneath.mushroom.death_cap": "Boné de Morte",
 	"block.beneath.sulfur": "Enxofre",
-	"block.minecraft.nether_quartz_ore.prospected": "Nether Quartzo",
-	"item.beneath.cursecoal": "Antracito",
+	"item.beneath.food.button": "Botão",
+	"item.beneath.food.death_cap": "Boné de Morte",
+	"item.beneath.loose_blackstone": "Piroxenita Solta",
 	"tfc.recipe.barrel.tfc.barrel.mortar": "Argamassa"
 }

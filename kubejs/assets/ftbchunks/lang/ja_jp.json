@@ -1,12 +1,9 @@
 {
-  "ftbchunks.map_mode.none": "無し",
-  "ftbchunks.minimap.blur_mode.off": "オフ",
-  "ftbchunks.minimap.blur_mode.on": "オン",
+  "ftbchunks.map_mode.none": "なし",
   "ftbchunks.minimap.compass": "Compass",
+  "ftbchunks.minimap.enabled": "有効化",
   "ftbchunks.minimap.position": "位置",
-  "ftbchunks.minimap.position.left": "左",
-  "ftbchunks.minimap.position.none": "無し",
-  "ftbchunks.minimap.position.right": "右",
-  "ftbchunks.minimap.zoom": "ズーム",
-  "ftbchunks.waypoint.share.player": "プレイヤー"
+  "ftbchunks.minimap.position.none": "なし",
+  "ftbchunks.minimap.scale": "スケール",
+  "minimap.info.ftbchunks.fps.title": "FPS"
 }

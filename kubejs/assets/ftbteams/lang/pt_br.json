@@ -1,7 +1,8 @@
 {
   "ftbteams.gui.create_party": "Descrição",
   "ftbteams.gui.party_description": "Descrição",
-  "ftbteams.info.owner.none": "Nenhum",
-  "ftbteams.ranks.none": "Nenhum",
+  "ftbteams.info.owner": "Dono(a): %s",
+  "ftbteams.info.owner.none": "Nenhuma",
+  "ftbteams.ranks.none": "Nenhuma",
   "ftbteamsconfig.ftbteams.description": "Descrição"
 }

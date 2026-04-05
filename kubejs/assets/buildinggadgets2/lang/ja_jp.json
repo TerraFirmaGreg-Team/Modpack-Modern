@@ -1,17 +1,15 @@
 {
-  "buildinggadgets2.buttons.render": "描画",
   "buildinggadgets2.buttons.save": "保存",
   "buildinggadgets2.gui.range": "範囲",
-  "buildinggadgets2.modes.stairs": "階段",
   "buildinggadgets2.modes.surface": "表面",
   "buildinggadgets2.radialmenu.rotate": "回転",
   "buildinggadgets2.screen.clear": "削除",
   "buildinggadgets2.screen.confirm": "確認",
   "buildinggadgets2.screen.down": "下",
   "buildinggadgets2.screen.end": "終了",
-  "buildinggadgets2.screen.left": "左",
-  "buildinggadgets2.screen.right": "右",
   "buildinggadgets2.screen.up": "上",
   "buildinggadgets2.tooltips.holdshift": "§eShift§7で詳細を表示",
+  "buildinggadgets2.tooltips.mode": "モード: %s",
+  "buildinggadgets2.tooltips.range": "範囲: %d",
   "key.buildinggadgets2.range": "範囲"
 }

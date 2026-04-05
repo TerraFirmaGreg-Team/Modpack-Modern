@@ -1,0 +1,307 @@
+{
+  "name": "Beneath Wild Fruits",
+  "category": "tfc:beneath",
+  "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(l:beneath)Beneath$() hosts its own unique selection of wild fruits, which have adapted to the extreme conditions underground. Wild fruits can be cultivated in all the same ways as regular $(l:the_world/wild_fruits)wild fruits$() in the Overworld."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "内容物",
+      "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "lavacado",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
+      "title": "Lavacado"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "An example lavacado tree.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  L  ",
+              "     ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L1L ",
+              "  L  ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L1L ",
+              "  L  ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L3L ",
+              " L2L ",
+              "  L  ",
+              "     "
+            ],
+            [
+              "     ",
+              "     ",
+              "  0  ",
+              "     ",
+              "     "
+            ],
+            [
+              "     ",
+              "     ",
+              "  1  ",
+              "     ",
+              "     "
+            ]
+          ],
+          "mapping": {
+            "0": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
+            "1": "tfg:fruit_trees/lavacado_branch[down=true,up=true]",
+            "2": "tfg:fruit_trees/lavacado_branch[down=true,west=true]",
+            "3": "tfg:fruit_trees/lavacado_branch[east=true,up=true]",
+            "L": "tfg:fruit_trees/lavacado_leaves[lifecycle=dormant]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "magmango",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
+      "title": "Magmango"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "An example magmango tree.",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  L  ",
+              "     ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L1L ",
+              "  L  ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L1L ",
+              "  L  ",
+              "     ",
+              "     "
+            ],
+            [
+              "  L  ",
+              " L3L ",
+              " L2L ",
+              "  L  ",
+              "     "
+            ],
+            [
+              "     ",
+              "     ",
+              "  0  ",
+              "     ",
+              "     "
+            ],
+            [
+              "     ",
+              "     ",
+              "  1  ",
+              "     ",
+              "     "
+            ]
+          ],
+          "mapping": {
+            "0": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
+            "1": "tfg:fruit_trees/magmango_branch[down=true,up=true]",
+            "2": "tfg:fruit_trees/magmango_branch[down=true,west=true]",
+            "3": "tfg:fruit_trees/magmango_branch[east=true,up=true]",
+            "L": "tfg:fruit_trees/magmango_leaves[lifecycle=dormant]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": ""
+        },
+        {
+          "text": "Jan"
+        },
+        {
+          "text": "Feb"
+        },
+        {
+          "text": "Mar"
+        },
+        {
+          "text": "Apr"
+        },
+        {
+          "text": "May"
+        },
+        {
+          "text": "Jun"
+        },
+        {
+          "text": "Jul"
+        },
+        {
+          "text": "Aug"
+        },
+        {
+          "text": "Sep"
+        },
+        {
+          "text": "Oct"
+        },
+        {
+          "text": "Nov"
+        },
+        {
+          "text": "Dec"
+        },
+        {
+          "text": "Lavacado"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "text": "Magmango"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xcca0db"
+        },
+        {
+          "fill": "0xa217ff"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0xa8986a"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        },
+        {
+          "fill": "0x6ab553"
+        }
+      ],
+      "text": "The fruiting calendar for fruit trees.",
+      "title": "Fruit Trees",
+      "legend": [
+        {
+          "text": "Dormant",
+          "color": "0xa8986a"
+        },
+        {
+          "text": "Healthy",
+          "color": "0x6ab553"
+        },
+        {
+          "text": "Flowering",
+          "color": "0xcca0db"
+        },
+        {
+          "text": "Fruiting",
+          "color": "0xa217ff"
+        }
+      ],
+      "columns": 12,
+      "first_column_width": 45,
+      "column_width": 15,
+      "row_height": 10,
+      "left_buffer": 5,
+      "top_buffer": 11,
+      "draw_background": true
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5,
+  "extra_recipe_mappings": {
+    "tfg:food/lavacado": 3,
+    "tfg:fruit_trees/lavacado_sapling": 3,
+    "tfg:food/magmango": 5,
+    "tfg:fruit_trees/magmango_sapling": 5
+  }
+}

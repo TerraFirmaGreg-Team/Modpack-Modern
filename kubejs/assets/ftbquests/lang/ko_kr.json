@@ -1,0 +1,20 @@
+{
+  "block.ftbquests.detector.player": "플레이어 탐지기",
+  "block.ftbquests.detector.player.height": "높이",
+  "block.ftbquests.detector.player.radius": "반지름",
+  "block.ftbquests.screen.size": "크기",
+  "ftbquests.chapter.image.height": "높이",
+  "ftbquests.chapter.image.rotation": "시간차",
+  "ftbquests.chapter.image.width": "폭",
+  "ftbquests.gui.reset_progress": "진행도 초기화",
+  "ftbquests.loot.entitytype.passive": "패시브 발전",
+  "ftbquests.null": "없음",
+  "ftbquests.quest.appearance.size": "크기",
+  "ftbquests.quest.visibility": "가시성",
+  "ftbquests.quest_link.size": "크기",
+  "ftbquests.reward.ftbquests.npc_mail.items": "개",
+  "ftbquests.reward.ftbquests.toast": "토스트",
+  "ftbquests.task.ftbquests.biome.biome": "생물군계",
+  "ftbquests.task.ftbquests.fluid.amount": "수량",
+  "ftbquests.task.ftbquests.kill.entity": "엔티티 이름"
+}

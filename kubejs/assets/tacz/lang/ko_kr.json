@@ -1,0 +1,10 @@
+{
+	"config.tacz.client.render.enable_tooltip_id": "툴팁에서 ID 보이기",
+	"config.tacz.client.render.enable_tooltip_id.desc": "고급 도구 설명이 켜져 있을 때 아이템 툴팁에 총/탄약/부속품 ID를 표시합니다.",
+	"death.attack.tacz.bullet.item": "%1$s이(가) %3$s을(를) 사용한 %2$s에게 맞아 죽었습니다.",
+	"gui.tacz.gun_smith_table.filter": "필터",
+	"tacz.ammo.12g.name": "§912 게이지 산탄",
+	"tacz.ammo.30_06.name": "§b.30-06 스프링필드 탄약",
+	"tacz.gun.m700.name": "M700 저격 소총",
+	"tooltip.tacz.attachment.none": "없음"
+}

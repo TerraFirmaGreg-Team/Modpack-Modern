@@ -1,15 +1,12 @@
 {
-  "buildinggadgets2.buttons.render": "Render",
   "buildinggadgets2.buttons.save": "Kaydet",
   "buildinggadgets2.gui.range": "Menzil",
   "buildinggadgets2.modes.surface": "Yüzey",
   "buildinggadgets2.radialmenu.rotate": "Döndür",
   "buildinggadgets2.screen.clear": "Temizle",
   "buildinggadgets2.screen.confirm": "Onayla",
-  "buildinggadgets2.screen.down": "Aşağı",
+  "buildinggadgets2.screen.down": "Down",
   "buildinggadgets2.screen.end": "Son",
-  "buildinggadgets2.screen.left": "Sol",
-  "buildinggadgets2.screen.right": "Sağ",
-  "buildinggadgets2.screen.up": "Yukarı",
+  "buildinggadgets2.screen.up": "Up",
   "key.buildinggadgets2.range": "Menzil"
 }

@@ -1,5 +1,5 @@
 {
-	"name": "危险材料",
+	"name": "Hazardous Materials",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,13 +8,13 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "危险材料",
+			"title": "Hazardous Materials",
 			"item": "gtceu:cobaltite_dust",
 			"text": "某些矿石和粉尘具有危险性，若存放在物品栏中可能会对你造成负面效果甚至致命伤害。$(br2)特定装备如$(thing)口罩$()、$(thing)手套$()以及后续的$(thing)防化服$()可用于抵御这些效果。"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "面罩",
+			"title": "Face Mask",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。"
 		},

@@ -38,7 +38,7 @@
 					}
 				}
 			],
-			"name": "罗勒",
+			"name": "Basil",
 			"text": "$(thing)野生罗勒$()生长在温度12-25°C、降雨量300-500mm的区域。",
 			"enable_visualize": false
 		},
@@ -72,7 +72,7 @@
 					}
 				}
 			],
-			"name": "月桂",
+			"name": "Bay Laurel",
 			"text": "$(thing)野生月桂$()生长在温度8-14°C、降雨量25-225mm的区域。",
 			"enable_visualize": false
 		},
@@ -106,7 +106,7 @@
 					}
 				}
 			],
-			"name": "豆蔻",
+			"name": "Cardamom",
 			"text": "$(thing)野生豆蔻$()生长在温度18-30°C、降雨量350-500mm的区域。",
 			"enable_visualize": false
 		},
@@ -140,7 +140,7 @@
 					}
 				}
 			],
-			"name": "香菜",
+			"name": "Cilantro",
 			"text": "$(thing)野生香菜$()生长在温度5-15°C、降雨量0-150mm的区域。",
 			"enable_visualize": false
 		},
@@ -174,7 +174,7 @@
 					}
 				}
 			],
-			"name": "孜然芹",
+			"name": "Cumin",
 			"text": "$(thing)野生孜然$()生长在温度6-20°C、降雨量50-250mm的区域。",
 			"enable_visualize": false
 		},
@@ -208,7 +208,7 @@
 					}
 				}
 			],
-			"name": "滇香薷",
+			"name": "Oregano",
 			"text": "$(thing)野生牛至$()生长在温度5-13°C、降雨量50-150mm的区域。",
 			"enable_visualize": false
 		},
@@ -242,7 +242,7 @@
 					}
 				}
 			],
-			"name": "全香子",
+			"name": "Pimento",
 			"text": "$(thing)野生多香果$()生长在温度15-30°C、降雨量200-450mm的区域。",
 			"enable_visualize": false
 		},
@@ -276,7 +276,7 @@
 					}
 				}
 			],
-			"name": "原版",
+			"name": "Vanilla",
 			"text": "$(thing)野生香草$()生长在温度18-30°C、降雨量200-500mm的区域。",
 			"enable_visualize": false
 		},
