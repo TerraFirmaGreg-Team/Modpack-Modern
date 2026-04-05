@@ -588,7 +588,7 @@ jobs:
           shell: bash
           run: |
             if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/actionssecurity-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
             fi  
     
         - name: Download artifact
