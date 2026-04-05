@@ -39,8 +39,8 @@ jobs:
         with:
           upload_sources: true
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-          # export_only_approved: true
           # skip_untranslated_files: true
+          # export_only_approved: true
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
@@ -81,51 +81,25 @@ jobs:
     runs-on: ubuntu-latest
     needs: [sync-patchouli, sync-language]
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-    outputs:
-      changed: ${{ steps.remove_empty.outputs.changed }}
     steps:
-      - name: "Check if translations branch exists"
-        id: check_branch
-        run: |
-          if git ls-remote --exit-code --heads origin ${{ env.LOCALIZATION_BRANCH }} > /dev/null 2>&1; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-            echo "::notice::Branch '${{ env.LOCALIZATION_BRANCH }}' does not exist, skipping cleanup"
-          fi
-
       - name: "Checkout translations branch"
-        if: steps.check_branch.outputs.exists == 'true'
         uses: actions/checkout@v6
         with:
           ref: ${{ env.LOCALIZATION_BRANCH }}
           fetch-depth: 0
+        continue-on-error: true
 
       - name: "Remove empty translation files"
-        id: remove_empty
-        if: steps.check_branch.outputs.exists == 'true'
         run: |
-          echo "🔍 Searching for empty JSON files..."
-          CHANGED=false
-          COUNT=0
-          while IFS= read -r -d '' file; do
-            if [ "$(jq -r 'keys | length' "$file" 2>/dev/null)" -eq 0 ]; then
-              echo "  🗑️  Removing: $file"
-              rm "$file"
-              CHANGED=true
-              ((COUNT++))
-            fi
-          done < <(find kubejs/assets -name "*.json" -type f -print0)
-          echo "📊 Checked files, found $COUNT empty"
-          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          find kubejs/assets -name "*.json" -type f -exec sh -c '
+            jq -e "keys | length == 0" "$1" >/dev/null 2>&1 && rm "$1"
+          ' _ {} \;
 
-      - name: "Commit removed files"
-        if: steps.remove_empty.outputs.changed == 'true'
-        uses: devops-infra/action-commit-push@v1
+      - name: "Commit and push changes"
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: "Remove empty translation files"
-          target_branch: ${{ env.LOCALIZATION_BRANCH }}
+          branch: ${{ env.LOCALIZATION_BRANCH }}
 
   create-pr:
     name: "[🤝] Create Pull Request"
