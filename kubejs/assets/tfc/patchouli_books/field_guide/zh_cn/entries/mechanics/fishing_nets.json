@@ -1,12 +1,12 @@
 {
-	"name": "渔网",
+	"name": "Fishing Nets",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "渔网",
+			"title": "Fishing Nets",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},

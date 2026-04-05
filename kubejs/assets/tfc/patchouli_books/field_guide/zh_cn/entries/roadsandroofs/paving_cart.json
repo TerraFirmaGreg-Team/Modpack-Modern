@@ -1,5 +1,5 @@
 {
-  "name": "铺路车",
+  "name": "Paving Cart",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "铺路车",
+      "title": "Paving Cart",
       "images": [
       "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],

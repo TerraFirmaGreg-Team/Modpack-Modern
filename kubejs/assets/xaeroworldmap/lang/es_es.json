@@ -1,11 +1,15 @@
 {
-  "gui.xaero_back": "Volver",
+  "gui.xaero_auto_cave_mode_minimap": "Minimapa",
+  "gui.xaero_box_auto_cave_mode": "",
+  "gui.xaero_box_open_waypoints": "Waypoints",
   "gui.xaero_confirm": "Confirmar",
-  "gui.xaero_default": "Predeterminado",
-  "gui.xaero_vanilla": "Vanilla",
+  "gui.xaero_debug": "Depuración",
+  "gui.xaero_mw_manual": "Manual",
+  "gui.xaero_mw_server": "Servidor",
+  "gui.xaero_off": "APAGADO",
+  "gui.xaero_on": "ENCENDIDO",
   "gui.xaero_wm_cave_mode_type_full": "Lleno",
-  "gui.xaero_wm_settings_search_placeholder": "Search...",
-  "gui.xaero_wm_team_color": "Equipo",
+  "gui.xaero_wm_color_minimap": "Minimapa",
   "gui.xaero_wm_white": "Blanco",
   "gui.xaero_wm_yellow": "Amarillo"
 }

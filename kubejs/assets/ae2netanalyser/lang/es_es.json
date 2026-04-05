@@ -1,4 +1,26 @@
 {
+  "itemGroup.ae2netanalyser": "Analizador de red AE2",
+  "item.ae2netanalyser.network_analyser": "Analizador de red ME",
+  "gui.ae2netanalyser.network_analyser.mode": "Modo",
   "gui.ae2netanalyser.network_analyser.node_size": "Tamaño",
-  "gui.ae2netanalyser.network_analyser.mode.FULL": "Lleno"
+  "gui.ae2netanalyser.network_analyser.reset": "Restablecer color",
+  "gui.ae2netanalyser.network_analyser.mode.FULL": "Lleno",
+  "gui.ae2netanalyser.network_analyser.mode.NODES": "Nodos",
+  "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "Links",
+  "gui.ae2netanalyser.network_analyser.mode.NONUM": "Sin número",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
+  "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "Enlace normal",
+  "gui.ae2netanalyser.network_analyser.LINK.DENSE": "Enlace denso",
+  "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "Enlace P2P",
+  "gui.ae2netanalyser.network_analyser.NODE.NORMAL": "Nodo Normal",
+  "gui.ae2netanalyser.network_analyser.NODE.DENSE": "Nodo denso",
+  "gui.ae2netanalyser.network_analyser.NODE.MISSING": "Modo Sin Conexión",
+  "gui.ae2netanalyser.network_analyser.channel.INFINITE": "Modo de canal: Canal Infinito",
+  "gui.ae2netanalyser.network_analyser.channel.DEFAULT": "Modo de canal: por defecto",
+  "gui.ae2netanalyser.network_analyser.channel.X2": "Modo de canal: Canales x2",
+  "gui.ae2netanalyser.network_analyser.channel.X3": "Modo de canal: Canales x3",
+  "gui.ae2netanalyser.network_analyser.channel.X4": "Modo de canal: Canales x4",
+  "gui.ae2netanalyser.network_analyser.state.normal_nodes": "Nodos normales: %s",
+  "gui.ae2netanalyser.network_analyser.state.dense_nodes": "Dense Nodes: %s",
+  "gui.ae2netanalyser.network_analyser.state.missing_nodes": "Nodos sin conexión: %s"
 }

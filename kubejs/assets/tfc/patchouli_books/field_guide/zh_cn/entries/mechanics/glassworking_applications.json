@@ -15,7 +15,7 @@
     {
       "type": "patchouli:text",
       "text": "$(thing)玻璃板$()是用$(thing)台式浇筑$()法制成的。将最多16个$(thing)高岭土方块$()或$(thing)镀黄铜块$()放置在统一平面以形成一块浇筑平台后：$(br2) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、$()对准浇筑平台$(item)$(k:key.use)$()点击$(thing)吹风管$()；$(br) 4、手持$(l:mechanics/glassworking#paddle)玻璃压板$()$(item)$(k:key.use)$()点击平台上的玻璃原料以将玻璃平铺在整个平台表面。",
-      "title": "台式浇筑"
+      "title": "Table Pour"
     },
     {
       "type": "patchouli:multiblock",
@@ -39,7 +39,7 @@
     {
       "type": "patchouli:text",
       "text": "$(thing)玻璃块$()则需要用$(thing)盆式浇筑$()法制作。用5个$(thing)高岭土方块$()或$(thing)镀黄铜块$()将一块空气围起来后：$(br2) 1、将$(l:mechanics/glassworking)玻璃原料$()装入$(thing)吹风管$()；$(br) 2、将吹风管加热至至少$(4)$(bold)淡红$()；$(br) 3、对准盆内部$(item)$(k:key.use)$()点击$(thing)吹风管$()。",
-      "title": "盆式浇筑"
+      "title": "Basin Pour"
     },
     {
       "type": "patchouli:multiblock",
@@ -260,7 +260,7 @@
           "fill": "0x3eb340"
         },
         {
-          "text": "橄榄石"
+          "text": "Olivine"
         },
         {
           "fill": "0xb33e3e"

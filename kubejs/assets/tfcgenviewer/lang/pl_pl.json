@@ -1,8 +1,11 @@
 {
   "button.tfcgenviewer.save": "Zapisz",
   "tfcgenviewer.preview_world.km": "%s km",
+  "tfcgenviewer.rock_editor.delete_tooltip": "Usuń",
   "tfcgenviewer.rock_editor.confirm": "Potwierdź",
+  "rock.tfc.limestone": "Wapień",
+  "rock.tfc.quartzite": "Kwarcyt",
   "tfcgenviewer.biome_altitude.low": "Niski",
-  "tfcgenviewer.biome_altitude.medium": "Średnia",
+  "tfcgenviewer.biome_altitude.medium": "Średnie",
   "tfcgenviewer.biome_altitude.high": "Wysoki"
 }

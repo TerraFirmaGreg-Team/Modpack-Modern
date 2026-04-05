@@ -1,17 +1,4 @@
 {
-  "desc.framedblocks.blueprint_none": "Aucune",
-  "msg.framedblocks.powered_saw.status.ready": "Prêt",
-  "tooltip.framedblocks.one_way_window.dir.down": "En bas",
-  "tooltip.framedblocks.one_way_window.dir.east": "Est",
-  "tooltip.framedblocks.one_way_window.dir.north": "Nord",
-  "tooltip.framedblocks.one_way_window.dir.south": "Sud",
-  "tooltip.framedblocks.one_way_window.dir.up": "Haut de la page",
-  "tooltip.framedblocks.one_way_window.dir.west": "Ouest",
-  "tooltip.framedblocks.one_way_window.face.down": "En bas",
-  "tooltip.framedblocks.one_way_window.face.east": "Est",
-  "tooltip.framedblocks.one_way_window.face.none": "Aucune",
-  "tooltip.framedblocks.one_way_window.face.north": "Nord",
-  "tooltip.framedblocks.one_way_window.face.south": "Sud",
-  "tooltip.framedblocks.one_way_window.face.up": "Haut de la page",
-  "tooltip.framedblocks.one_way_window.face.west": "Ouest"
+  "desc.framedblocks.blueprint_invalid": "Invalide",
+  "tooltip.framedblocks.y_slope.horizontal": "horizontale"
 }

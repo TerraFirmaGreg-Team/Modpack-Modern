@@ -1,8 +1,12 @@
 {
   "gui.xaero_confirm": "確認",
-  "gui.xaero_vanilla": "バニラ",
+  "gui.xaero_mw_manual": "手動",
+  "gui.xaero_off": "OFF",
+  "gui.xaero_on": "ON",
+  "gui.xaero_wm_cave_mode_start_auto": "自動",
   "gui.xaero_wm_cave_mode_type_full": "満杯",
-  "gui.xaero_wm_settings_search_placeholder": "検索…",
+  "gui.xaero_wm_green": "緑",
+  "gui.xaero_wm_red": "赤",
   "gui.xaero_wm_white": "白色",
   "gui.xaero_wm_yellow": "黄色"
 }

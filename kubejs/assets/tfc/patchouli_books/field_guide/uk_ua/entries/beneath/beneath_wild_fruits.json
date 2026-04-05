@@ -16,7 +16,7 @@
       "type": "patchouli:text",
       "anchor": "lavacado",
       "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 20 - 100 %$(br2)Дерева Лавакадо ростуть з грудня по квітень, починають цвісти у травні та червні, а плодоносять у липні.",
-      "title": "Лавакадо"
+      "title": "Lavacado"
     },
     {
       "type": "tfc:multimultiblock",
@@ -81,7 +81,7 @@
       "type": "patchouli:text",
       "anchor": "magmango",
       "text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 30 - 100 %$(br2)Дерева Магманго ростуть з жовтня по лютий, починають цвісти у березні та квітні, а плодоносять у травні.",
-      "title": "Магманго"
+      "title": "Magmango"
     },
     {
       "type": "tfc:multimultiblock",
@@ -185,7 +185,7 @@
           "text": "Груд"
         },
         {
-          "text": "Лавакадо"
+          "text": "Lavacado"
         },
         {
           "fill": "0x6ab553"
@@ -224,7 +224,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Магманго"
+          "text": "Magmango"
         },
         {
           "fill": "0x6ab553"

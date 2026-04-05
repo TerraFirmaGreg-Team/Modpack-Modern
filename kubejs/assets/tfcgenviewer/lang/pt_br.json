@@ -1,5 +1,6 @@
 {
   "button.tfcgenviewer.save": "Salvar",
+  "tfcgenviewer.preview_world.visualizer_type.rocks": "Rochas",
   "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.rock_editor.confirm": "Confirmar",
   "rock.tfc.andesite": "Andesito",
@@ -15,13 +16,11 @@
   "rock.tfc.granite": "Granito",
   "rock.tfc.limestone": "Calcário",
   "rock.tfc.phyllite": "Filito",
-  "rock.tfc.quartzite": "Quartzito",
   "rock.tfc.rhyolite": "Riolito",
   "rock.tfc.schist": "Xisto",
   "rock.tfc.shale": "Folhelho",
   "rock.tfc.slate": "Ardósia",
-  "tfcgenviewer.rock_type.land": "Pousar",
   "tfcgenviewer.biome_altitude.low": " Baixo",
-  "tfcgenviewer.biome_altitude.medium": " Médio",
+  "tfcgenviewer.biome_altitude.medium": "Médio",
   "tfcgenviewer.biome_altitude.high": " Alto"
 }
