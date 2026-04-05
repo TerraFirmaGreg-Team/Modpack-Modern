@@ -1,2 +1,14 @@
 type = user_variables
 
+variable {
+  name = all_active
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = latest_active
+  value = 1
+  reset_on_launch = false
+}
+
