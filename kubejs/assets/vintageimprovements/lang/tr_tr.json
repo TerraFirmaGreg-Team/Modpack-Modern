@@ -1,8 +1,7 @@
 {
-	"block.vintageimprovements.laser": "Lazer",
 	"item.vintageimprovements.bronze_rod": "Bronz Sırık",
 	"item.vintageimprovements.bronze_sheet": "Bronz Levha",
-	"item.vintageimprovements.laser_item": "Lazer",
+	"item.vintageimprovements.cast_iron_rod": "Dökme Demir Sırık",
 	"item.vintageimprovements.nickel_rod": "Nikel Sırık",
 	"item.vintageimprovements.rose_gold_rod": "Gül Altını Sırık",
 	"item.vintageimprovements.silver_rod": "Gümüş Sırık",
@@ -12,10 +11,11 @@
 	"item.vintageimprovements.tin_rod": "Kalay Sırık",
 	"item.vintageimprovements.tin_sheet": "Kalay Levha",
 	"item.vintageimprovements.zinc_rod": "Çinko Sırık",
+	"vintageimprovements.gui.goggles.current_speed": "Hız:",
 	"vintageimprovements.gui.goggles.high": "Yüksek",
 	"vintageimprovements.gui.goggles.low": "Düşük",
 	"vintageimprovements.gui.goggles.medium": "Orta",
-	"vintageimprovements.gui.goggles.smithing_mode": "Demircilik",
+	"vintageimprovements.item_description.ingredient": "İçindekiler:",
 	"vintageimprovements.jei.text.any": "Herhangi",
 	"vintageimprovements.jei.text.high": "Yüksek",
 	"vintageimprovements.jei.text.low": "Düşük",
@@ -26,5 +26,6 @@
 	"vintageimprovements.recipe.assembly.high": "Yüksek",
 	"vintageimprovements.recipe.assembly.low": "Düşük",
 	"vintageimprovements.recipe.assembly.medium": "Orta",
+	"vintageimprovements.recipe.assembly.on": "açık",
 	"vintageimprovements.recipe.assembly.speed": "Hız"
 }

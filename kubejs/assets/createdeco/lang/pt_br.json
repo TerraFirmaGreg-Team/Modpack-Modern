@@ -1,7 +1,15 @@
 {
 	"block.createdeco.brass_bars": "Grades de Latão",
 	"block.createdeco.brass_door": "Porta de Latão",
-	"block.createdeco.copper_bars": "Grades de Cobre",
+	"block.createdeco.copper_bars": "Barras de Cobre",
 	"block.createdeco.copper_door": "Porta de Cobre",
-	"block.createdeco.industrial_iron_support": "Suporte de Aço"
+	"block.createdeco.copper_trapdoor": "Alçapão de Cobre",
+	"block.createdeco.industrial_iron_bars": "Barras de Aço",
+	"block.createdeco.industrial_iron_door": "Porta de Aço",
+	"block.createdeco.industrial_iron_support": "Suporte de Aço",
+	"block.createdeco.industrial_iron_trapdoor": "Alçapão de Aço",
+	"block.createdeco.iron_bars": "Barras de Ferro Forjado",
+	"block.createdeco.iron_trapdoor": "Alçapão de Ferro Forjado",
+	"item.createdeco.netherite_sheet": "Chapa de Netherite",
+	"item.createdeco.zinc_sheet": "Chapa de Zinco"
 }

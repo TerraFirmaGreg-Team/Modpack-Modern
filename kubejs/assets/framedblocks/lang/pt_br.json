@@ -1,17 +1,18 @@
 {
-  "desc.framedblocks.blueprint_none": "Nenhum",
+  "desc.framedblocks.blueprint_none": "Nenhuma",
   "msg.framedblocks.powered_saw.status.ready": "Pronto",
-  "tooltip.framedblocks.one_way_window.dir.down": "Para baixo",
+  "tooltip.framedblocks.one_way_window.dir.down": "Baixo",
   "tooltip.framedblocks.one_way_window.dir.east": "Leste",
   "tooltip.framedblocks.one_way_window.dir.north": "Norte",
   "tooltip.framedblocks.one_way_window.dir.south": "Sul",
-  "tooltip.framedblocks.one_way_window.dir.up": "Para cima",
+  "tooltip.framedblocks.one_way_window.dir.up": "Cima",
   "tooltip.framedblocks.one_way_window.dir.west": "Oeste",
-  "tooltip.framedblocks.one_way_window.face.down": "Para baixo",
+  "tooltip.framedblocks.one_way_window.face.down": "Baixo",
   "tooltip.framedblocks.one_way_window.face.east": "Leste",
-  "tooltip.framedblocks.one_way_window.face.none": "Nenhum",
+  "tooltip.framedblocks.one_way_window.face.none": "Nenhuma",
   "tooltip.framedblocks.one_way_window.face.north": "Norte",
   "tooltip.framedblocks.one_way_window.face.south": "Sul",
-  "tooltip.framedblocks.one_way_window.face.up": "Para cima",
-  "tooltip.framedblocks.one_way_window.face.west": "Oeste"
+  "tooltip.framedblocks.one_way_window.face.up": "Cima",
+  "tooltip.framedblocks.one_way_window.face.west": "Oeste",
+  "tooltip.framedblocks.y_slope.horizontal": "horizontal"
 }

@@ -6,5 +6,9 @@
   "block.afc.wood.sapling.mulga_blackwood": "ブラックウッドの苗木",
   "block.afc.wood.sapling.shisham_rosewood": "ローズウッドの苗木",
   "fluid.afc.latex": "ラテックス",
-  "itemGroup.afc_creative_mode_tab": "ArborFirmaCraft"
+  "itemGroup.afc_creative_mode_tab": "ArborFirmaCraft",
+  "tooltip.afc.tap.amount": "金額: ",
+  "tooltip.afc.tap.efficiency": "効率: ",
+  "tooltip.afc.tap.fluid": "液体: ",
+  "tooltip.afc.tap.spring": "春: "
 }

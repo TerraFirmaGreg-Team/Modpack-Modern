@@ -1,7 +1,10 @@
 {
 	"block.species.alphacene_mushroom": "Champignon Alphacène",
 	"block.species.wraptor_egg": "Œuf d'Apparition de Wrapteur",
+	"enchantment.species.capacity": "Capacité",
 	"entity.species.harpoon": "Harpoon",
 	"entity.species.wraptor": "Wraptor",
-	"item.species.harpoon": "Harpoon"
+	"item.species.crankbow.fullness": "%s/%s",
+	"item.species.harpoon": "Harpoon",
+	"item.species.spectre_light.color": "Couleur: "
 }

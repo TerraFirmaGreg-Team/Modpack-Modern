@@ -3360,7 +3360,14 @@
 	"item.create.zinc_nugget": "鋅粒",
 	"itemGroup.create.base": "機械動力",
 	"itemGroup.create.palettes": "機械動力 | 建築方塊",
-	"tag.fluid.forge.chocolate": "巧克力",
+	"tag.fluid.forge.chocolate": "熱可可",
+	"tag.item.create.sandpaper": "砂紙",
+	"tag.item.create.stone_types.andesite": "安山岩",
+	"tag.item.create.stone_types.calcite": "方解石",
+	"tag.item.create.stone_types.deepslate": "深板岩",
+	"tag.item.create.stone_types.diorite": "閃長岩",
+	"tag.item.create.stone_types.granite": "花崗岩",
 	"tag.item.forge.dough": "麵團",
-	"tag.item.forge.flour.wheat": "小麥粉"
+	"tag.item.forge.dough.wheat": "小麥麵糰",
+	"tag.item.forge.flour.wheat": "小麥麵粉"
 }

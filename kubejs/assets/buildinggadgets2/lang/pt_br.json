@@ -1,16 +1,13 @@
 {
-  "buildinggadgets2.buttons.render": "Renderizar",
   "buildinggadgets2.buttons.save": "Salvar",
   "buildinggadgets2.gui.range": "Alcance",
-  "buildinggadgets2.modes.stairs": "Escadas",
   "buildinggadgets2.modes.surface": "Superfície",
   "buildinggadgets2.radialmenu.rotate": "Rodar",
   "buildinggadgets2.screen.clear": "Limpar",
   "buildinggadgets2.screen.confirm": "Confirmar",
-  "buildinggadgets2.screen.down": "Para baixo",
+  "buildinggadgets2.screen.down": "Baixo",
   "buildinggadgets2.screen.end": "Terminar",
-  "buildinggadgets2.screen.left": "Esquerda",
-  "buildinggadgets2.screen.right": "Direita",
-  "buildinggadgets2.screen.up": "Para cima",
+  "buildinggadgets2.screen.up": "Cima",
+  "buildinggadgets2.tooltips.range": "Alcance: %d",
   "key.buildinggadgets2.range": "Alcance"
 }

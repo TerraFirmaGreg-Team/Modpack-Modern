@@ -1,8 +1,11 @@
 {
-  "gui.xaero_back": "返回",
   "gui.xaero_confirm": "確認",
+  "gui.xaero_off": "關",
+  "gui.xaero_on": "開",
+  "gui.xaero_wm_cave_mode_start_auto": "自動",
   "gui.xaero_wm_cave_mode_type_full": "庫存已滿",
-  "gui.xaero_wm_settings_search_placeholder": "搜尋…",
+  "gui.xaero_wm_green": "綠色物品",
+  "gui.xaero_wm_red": "紅酒",
   "gui.xaero_wm_white": "白",
   "gui.xaero_wm_yellow": "黃"
 }

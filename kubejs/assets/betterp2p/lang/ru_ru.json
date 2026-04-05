@@ -7,7 +7,6 @@
     "gui.advanced_memory_card.pos": "Позиция: %d, %d, %d",
     "gui.advanced_memory_card.side": "Сторона: %s",
     "gui.advanced_memory_card.dim": "Измерение: %d",
-    "gui.advanced_memory_card.name": "Имя: %s",
     "gui.advanced_memory_card.sortinfo1": "Теги сортировки",
     "gui.advanced_memory_card.sortinfo2": "Показывать только входные P2P",
     "gui.advanced_memory_card.sortinfo3": "Показывать только выходные P2P",
@@ -40,9 +39,7 @@
     "gui.advanced_memory_card.gui_scale.dynamic": "Текущий размер: Автоматический",
     "gui.advanced_memory_card.p2p_status.bound": "Привязано",
     "gui.advanced_memory_card.p2p_status.unbound": "Отвязано",
-    "gui.advanced_memory_card.p2p_status.input": "Входы",
     "gui.advanced_memory_card.p2p_status.output": "Выход",
-    "gui.advanced_memory_card.p2p_status.offline": "Офлайн",
     "gui.advanced_memory_card.types.filtered": "Отображение: %s",
     "gui.advanced_memory_card.types.any": "§aВсе",
     "gui.advanced_memory_card.error.same_type": "P2P уже этого типа."

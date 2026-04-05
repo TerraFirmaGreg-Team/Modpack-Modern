@@ -1,15 +1,16 @@
 {
-  "cuttergroup.domum_ornamentum.ddoor": "Puertas",
-  "cuttergroup.domum_ornamentum.etrapdoor": "Trampillas",
-  "cuttergroup.domum_ornamentum.jbrick": "Ladrillos",
   "domum_ornamentum.door.type.name.full": "Lleno",
+  "domum_ornamentum.fancydoor.center.header": "Centro:",
   "domum_ornamentum.fancydoor.type.name.full": "Lleno",
+  "domum_ornamentum.fancytrapdoor.center.header": "Centro:",
   "domum_ornamentum.fancytrapdoor.type.name.full": "Lleno",
-  "domum_ornamentum.light.frame.type.center_light": "Centro",
+  "domum_ornamentum.group": "Grupo:",
+  "domum_ornamentum.light.center.header": "Centro:",
   "domum_ornamentum.light.frame.type.horizontal_light": "Horizontal",
-  "domum_ornamentum.panel.type.name.boss": "Jefe",
   "domum_ornamentum.panel.type.name.full": "Lleno",
+  "domum_ornamentum.pillar.header": "Tipo:",
+  "domum_ornamentum.post.type.name.double": "Doble",
   "domum_ornamentum.post.type.name.heavy": "Pesado",
-  "domum_ornamentum.trapdoor.type.name.boss": "Jefe",
+  "domum_ornamentum.timber.center.header": "Centro:",
   "domum_ornamentum.trapdoor.type.name.full": "Lleno"
 }

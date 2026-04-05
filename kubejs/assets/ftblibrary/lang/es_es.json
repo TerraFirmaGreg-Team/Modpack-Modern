@@ -1,15 +1,12 @@
 {
-  "config.group.value": "Valor",
-  "ftblibrary.gui.error": "¡Error!",
-  "ftblibrary.panel.position.bottom": "Abajo",
-  "ftblibrary.panel.position.left": "Izquierda",
-  "ftblibrary.panel.position.right": "Derecha",
-  "ftblibrary.panel.position.top": "Arriba",
-  "gui.add": "Añadir",
-  "gui.close": "Cerrar",
-  "gui.color": "Color",
-  "gui.info": "Información",
-  "gui.other": "Otro",
-  "gui.remove": "Eliminar",
-  "gui.search_box": "Search..."
+  "ftblibrary.mb": "%d mB of %s",
+  "ftblibrary.panel.position.bottom_left": "Abajo a la izquierda",
+  "ftblibrary.panel.position.bottom_right": "Abajo a la derecha",
+  "ftblibrary.panel.position.top_left": "Arriba a la izquierda",
+  "ftblibrary.panel.position.top_right": "Arriba a la derecha",
+  "gui.accept": "Aceptar",
+  "gui.blacklist": "Lista negra",
+  "gui.inactive": "Inactivo",
+  "gui.settings": "Ajustes",
+  "gui.whitelist": "Lista blanca"
 }
