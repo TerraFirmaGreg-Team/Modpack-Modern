@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Содержание",
+      "title": "Содержит",
       "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Лавакадо$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Магманго$()"
     },
     {
@@ -161,7 +161,7 @@
           "text": "Апр"
         },
         {
-          "text": "Май"
+          "text": "May"
         },
         {
           "text": "Июн"

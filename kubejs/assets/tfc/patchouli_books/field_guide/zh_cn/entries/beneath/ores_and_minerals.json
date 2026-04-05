@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "石灰华",
+			"title": "Travertine",
 			"item": {
 				"tag": "forge:ores_in_ground/dripstone"
 			},
@@ -47,7 +47,7 @@
 					"X": "beneath:ore/nether_cursecoal"
 				}
 			},
-			"name": "无烟煤",
+			"name": "Anthracite",
 			"text": "无烟煤是一种强大的 $(l:beneath/hellforge)燃料$()。可在幽冥之地上层区的混合岩中找到。",
 			"enable_visualize": false
 		}

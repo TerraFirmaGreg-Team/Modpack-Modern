@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "Смесь для силикатного стекла",
+      "title": "Silica Glass Batch",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "Партии стекла затем можно изготовить, используя один из вышеупомянутых цветов песка, плюс $(l:mechanics/glassworking#lime)Известь$() и тип $(l:mechanics/glassworking#potash)Поташа$()."
     },

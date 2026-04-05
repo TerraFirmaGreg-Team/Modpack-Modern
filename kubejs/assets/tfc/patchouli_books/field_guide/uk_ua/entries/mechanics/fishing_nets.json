@@ -1,12 +1,12 @@
 {
-	"name": "Рибальські сітки",
+	"name": "Fishing Nets",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Рибальські сітки",
+			"title": "Fishing Nets",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},

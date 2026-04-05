@@ -19,21 +19,21 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
-			"title": "Бронза",
+			"title": "Bronze",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)70 - 80 %: $(thing)Медь$()$(li)20 - 30 %: $(thing)Олово$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Висмутовая бронза",
+			"title": "Bismuth Bronze",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)20 - 30 % : $(thing)Цинк$()$(li)50 - 65 %: $(thing)Медь$()$(li)10 - 20 % : $(thing)Висмут$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Чёрная бронза",
+			"title": "Black Bronze",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)50 - 70 %: $(thing)Медь$()$(li)10 - 25 %: $(thing)Серебро$()$(li)10 - 25 %: $(thing)Золото$()$(br2)"
 		},
@@ -46,21 +46,21 @@
 			"type": "patchouli:spotlight",
 			"anchor": "brass",
 			"item": "create:brass_ingot",
-			"title": "Латунь",
+			"title": "Brass",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования:$()$(br)$(li)70 - 80 %: $(thing)Медь$()$(li)20 - 30 %: $(thing)Цинк$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "Розовое золото",
+			"title": "Rose Gold",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)15 - 30 %: $(thing)Медь$()$(li)70 - 85 %: $(thing)Золото$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Стирлинговое серебро",
+			"title": "Sterling Silver",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)20 - 40 %: $(thing)Медь$()$(li)60 - 80 %: $(thing)Серебро$()$(br2)"
 		}
