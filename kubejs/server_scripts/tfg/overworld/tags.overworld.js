@@ -200,7 +200,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illages', 'tfg:earth/plateau_wide')
 	event.add('tfg:has_structure/illages', 'tfg:earth/rocky_plateau')
 	event.add('tfg:has_structure/illages', 'tfg:earth/stone_circles')
-	event.add('tfg:has_structure/illages', 'tfg:earth/tuyas')
 
 	event.add('tfg:has_structure/illager_camp', 'tfc:badlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:canyons')
@@ -471,7 +470,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 
 	// Fluid veins
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout_and_sands");
-	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/random_active_hot_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/spring_water");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");

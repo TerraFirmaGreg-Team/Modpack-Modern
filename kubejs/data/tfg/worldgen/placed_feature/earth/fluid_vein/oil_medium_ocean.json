@@ -28,8 +28,9 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 140,
-			"fluid": "gtceu:oil_medium"
+			"vein_ids": [
+				"tfg:raw_oil_spout_ocean"
+			]
 		}
 	]
 }
