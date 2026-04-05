@@ -522,7 +522,7 @@ jobs:
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
             ${{ needs.info.outputs.project_full_name }}-docker.yml
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
-          generate_release_notes: true
+          # generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
   release-curseforge:
