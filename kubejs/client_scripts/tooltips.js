@@ -169,6 +169,11 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.machine.heat_battery_2'));
 		text.add(3, Text.translate('tfg.tooltip.machine.heat_battery_3'));
 	})
+	event.addAdvanced(['tfg:gas_well'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.machine.gas_well_1'));
+		text.add(2, Text.translate('tfg.tooltip.machine.gas_well_2'));
+		text.add(3, Text.translate('tfg.tooltip.machine.gas_well_3'));
+	})
 
 	//#endregion
 	
