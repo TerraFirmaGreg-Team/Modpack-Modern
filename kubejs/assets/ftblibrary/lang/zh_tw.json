@@ -1,11 +1,8 @@
 {
-  "dimension.minecraft.the_end": "終界",
-  "ftblibrary.panel.position.left": "向左",
-  "ftblibrary.panel.position.right": "向右",
-  "gui.active": "已啟用",
+  "ftblibrary.empty": "空的",
+  "ftblibrary.mb": "%d mB的%s",
+  "gui.accept": "接受",
   "gui.blacklist": "黑名單",
-  "gui.close": "關閉",
-  "gui.other": "其他",
-  "gui.search_box": "搜尋…",
+  "gui.inactive": "未激活",
   "gui.whitelist": "白名單"
 }

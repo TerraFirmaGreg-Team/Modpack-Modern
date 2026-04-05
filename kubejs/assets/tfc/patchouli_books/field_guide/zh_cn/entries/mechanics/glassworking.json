@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "二氧化硅玻璃原料",
+      "title": "Silica Glass Batch",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "玻璃原料除了需要对应颜色的沙子以外，还需要准备$(l:mechanics/glassworking#lime)石灰粉$()和任意一种$(l:mechanics/glassworking#potash)钾盐添加物$()。"
     },

@@ -1,0 +1,49 @@
+{
+	"name": "乳膠製程",
+	"category": "tfc:arborfirmacraft",
+	"icon": "gtceu:sticky_resin",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "看來你已經採集特定熱帶樹木獲得了$(thing)乳膠$()⋯⋯恭喜！乳膠本身用途有限，但加工後能產出極其有用的副產品！$(br2)若尚未找到能產乳膠的樹木，可查閱$(l:arborfirmacraft/tapping_index)採集索引$()獲取更多資訊！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sticky_resin",
+			"title": "一種黏性物質",
+			"link_recipe": true,
+			"text": "$(thing)乳膠$()有幾種用途，其中一種是製造$(item)黏性樹脂$()。黏性樹脂需要在$(l:firmalife/oven_appliances#vat)鐵鍋$()或$(l:mechanics/pot)陶鍋$()中加入$(thing)草木灰$()一起熬製來凝固乳膠。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "膠著生意",
+			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+			"text": "$(thing)黏性樹脂$()有許多用途，託它那黏性十足的特性。可以用它製造多種物品，例如$(item)膠帶$()，讓箱子可以在不掉落內容物的情況下移動子。更重要的是，可以用它製造$(item)覆膜電路基板$()和$(item)電阻$()，這些將是最早期的電子元件。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:vulcanized_latex_bucket",
+			"title": "我就是橡膠...",
+			"text": "$(thing)乳膠$()另一主要用途是製造橡膠。為使乳膠更堅韌耐用以供工業用途，需將與$(thing)硫磺粉$()加入到$(l:firmalife/oven_appliances#vat)鐵鍋$()或$(l:mechanics/pot)陶鍋$()中一同熬製成$(thing)硫化乳膠$()。事實上，這整個過程稱為硫化！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "提煉橡膠",
+			"item": "gtceu:raw_rubber_dust",
+			"text": "利用$(thing)提取機$()或$(thing)真空腔室$()，將$(thing)硫化乳膠$()乾燥成$(item)生橡膠$()。生橡膠需在$(thing)合金爐$()中與$(thing)硫磺粉$()進一步處理，才能成為$(thing)橡膠錠$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_ingot",
+			"text": "$(thing)橡膠錠$()有許多非常有用的用途，例如製作$(thing)輸送帶$()提供工廠使用，或$(thing)絕緣導線$()。絕緣導線能避免觸電災害並且降低電壓損耗。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "松脂",
+			"item": "tfg:conifer_pitch_bucket",
+			"text": "黏性樹脂也能藉由從特定$(thing)針葉樹$()採集$(thing)松脂$()，但這些樹不能用於製作橡膠"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 3
+}

@@ -3363,10 +3363,10 @@
 	"tag.block.create.postboxes": "Postboxes",
 	"tag.block.create.table_cloths": "Table Cloths",
 	"tag.block.create.toolboxes": "Toolboxes",
-	"tag.fluid.forge.chocolate": "Chocolat",
 	"tag.fluid.forge.honey": "Honey",
 	"tag.item.create.postboxes": "Postboxes",
 	"tag.item.create.stone_types.asurine": "Asurine",
+	"tag.item.create.stone_types.calcite": "Calcite",
 	"tag.item.create.stone_types.crimsite": "Crimsite",
 	"tag.item.create.stone_types.limestone": "Calcaire",
 	"tag.item.create.stone_types.ochrum": "Ochrum",
@@ -3375,7 +3375,5 @@
 	"tag.item.create.stone_types.veridium": "Veridium",
 	"tag.item.create.table_cloths": "Table Cloths",
 	"tag.item.create.toolboxes": "Toolboxes",
-	"tag.item.forge.dough": "Pâte",
-	"tag.item.forge.flour.wheat": "Farine de blé",
-	"tag.item.forge.gems.certus_quartz": "Certus Quartz"
+	"tag.item.forge.dough": "Pâte"
 }

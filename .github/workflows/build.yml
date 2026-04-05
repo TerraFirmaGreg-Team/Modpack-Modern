@@ -522,7 +522,7 @@ jobs:
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
             ${{ needs.info.outputs.project_full_name }}-docker.yml
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
-          generate_release_notes: true
+          # generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
   release-curseforge:
@@ -588,7 +588,7 @@ jobs:
           shell: bash
           run: |
             if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+              echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/actionssecurity-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
             fi  
     
         - name: Download artifact

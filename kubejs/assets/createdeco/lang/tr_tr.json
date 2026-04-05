@@ -1,6 +1,12 @@
 {
 	"block.createdeco.brass_bars": "Pirinç Parmaklık",
 	"block.createdeco.brass_door": "Pirinç Kapı",
-	"block.createdeco.copper_bars": "Bakır Parmaklık",
-	"block.createdeco.copper_door": "Bakır Kapı"
+	"block.createdeco.copper_bars": "Copper Bars",
+	"block.createdeco.copper_door": "Bakır Kapı",
+	"block.createdeco.copper_trapdoor": "Bakır Tuzak Kapısı",
+	"block.createdeco.industrial_iron_bars": "Steel Bars",
+	"block.createdeco.industrial_iron_trapdoor": "Çelik Tuzak Kapısı",
+	"block.createdeco.iron_bars": "Wrought Iron Bars",
+	"block.createdeco.iron_trapdoor": "Dövme Demir Tuzak Kapısı",
+	"item.createdeco.zinc_sheet": "Çinko Levha"
 }

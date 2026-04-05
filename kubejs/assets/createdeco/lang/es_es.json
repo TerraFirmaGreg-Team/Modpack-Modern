@@ -19,8 +19,9 @@
 	"block.createdeco.blue_iron_lamp": "Lámpara de jaula azul de hierro forjado",
 	"block.createdeco.brass_bars": "Barrotes de Latón",
 	"block.createdeco.brass_door": "Puerta de Latón",
-	"block.createdeco.copper_bars": "Barras de cobre",
+	"block.createdeco.copper_bars": "Copper Bars",
 	"block.createdeco.copper_door": "Puerta de cobre",
+	"block.createdeco.copper_trapdoor": "Trampilla de Cobre",
 	"block.createdeco.green_andesite_lamp": "Lámpara de jaula verde de aleación de estaño",
 	"block.createdeco.green_industrial_iron_lamp": "Lámpara de jaula verde de acero",
 	"block.createdeco.green_iron_lamp": "Lámpara de jaula verde de hierro forjado",
@@ -72,5 +73,6 @@
 	"item.createdeco.iron_coin": "Moneda de hierro forjado",
 	"item.createdeco.iron_coinstack": "Montón de monedas de hierro forjado",
 	"item.createdeco.netherite_coin": "Moneda de acero azul",
-	"item.createdeco.netherite_coinstack": "Montón de monedas de acero azul"
+	"item.createdeco.netherite_coinstack": "Montón de monedas de acero azul",
+	"item.createdeco.zinc_sheet": "Hoja de zinc"
 }

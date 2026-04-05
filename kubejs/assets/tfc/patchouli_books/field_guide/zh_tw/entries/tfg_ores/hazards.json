@@ -1,0 +1,77 @@
+{
+	"name": "群巒格雷的有害物質",
+	"icon": "createdeco:decal_skull",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "有害物質",
+			"item": "gtceu:cobaltite_dust",
+			"text": "某些礦石和粉塵是有害的，如果將它們攜帶在物品欄，會導致負面效果甚至死亡。$(br2)某些設備如 $(thing)面罩$()、$(thing)手套$() 和 $(thing)有害物質防護服$() 可以用來抵消這些影響。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "面罩",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)面罩$()提供保護以抵消任何 $(item)吸入$() 危害，例如砷中毒。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "橡膠手套",
+			"link_recipes": true,
+			"text": "橡膠手套可以由 $(l:mechanics/leather_making)皮革$() 和 $(l:arborfirmacraft/making_rubber)乳膠$() 製成，或由橡膠板製成。它們提供保護以抵消任何 $(item)皮膚接觸$() 危害，例如鈹病。"
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "首先，將皮革敲製成手套。"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "接著將手套浸泡在$(thing)醋$()裡, 醋是水果與酒精的混合物."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "隨後將浸泡後的皮革手套在$(thing)大鍋$()內與$(thing)硫化乳膠$()一起加熱，在一步之遙就能製成橡膠手套。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "最後將浸泡乳膠手套放入$(l:firmalife/oven)烤爐$()內加熱即可完成。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Rocks",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"text": "防止有害物質危害最簡單的方法就是不要拾取它們到物品欄。$(br)例如，將物品欄填滿$(thing)岩石$()，這樣你就可以選擇性地拾取物品，並在稍後一次性處理所有有害物質。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Containers",
+			"text": "有害物質只會在$(thing)物品欄$()造成傷害，但這不適用於其他容器！$(br)有害物質在其他容器中不會造成傷害，例如$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()。手持時$(thing)滑鼠右鍵點擊$()可以直接轉移其內容物。",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "溫泉",
+			"item": "tfc:bucket/spring_water",
+			"text": "站在$(thing)溫泉$()內會提供緩慢的$(thing)再生$()效果，雖然不能喝它。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Bed",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"text": "如果其他方法都失敗了，攜帶一張床來重生是一個好主意。$(br2)如果沒有$(thing)羊毛$()或$(thing)線$()，也可以製作$(l:getting_started/a_place_to_sleep)茅草床$()。"
+		}
+	]
+}

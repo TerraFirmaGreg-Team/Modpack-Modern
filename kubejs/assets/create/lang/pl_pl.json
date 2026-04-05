@@ -2294,6 +2294,7 @@
 	"create.ponder.redstone_link.text_6": "Jedynie emitery z pasującymi częstotliwościami będą się ze sobą komunikować",
 	"create.ponder.redstone_requester.header": "Zautomatyzowane zamówienia z żądaczami redstone",
 	"create.ponder.redstone_requester.text_1": "Kliknij prawym przyciskiem myszy na Łącznik Magazynowy przed postawieniem, aby połączyć z jego siecią",
+	"create.ponder.redstone_requester.text_2": "Tak samo jak ???, żądacze czerwienitowe mogą zamawiać przedmioty z sieci logistycznych",
 	"create.ponder.redstone_requester.text_3": "Kliknij prawym przyciskiem myszy, aby otworzyć jego interfejs konfiguracji",
 	"create.ponder.redstone_requester.text_4": "Kolejność ustawiona w interfejsie będzie żądana podczas każdego pulsu redstone",
 	"create.ponder.redstone_requester.text_5": "Alternatywnie, żądacz może być w pełni skonfigurowany przed postawieniem",
@@ -3027,6 +3028,7 @@
 	"create.track_signal.cannot_change_mode": "Nie można zmienić trybu tego sygnału",
 	"create.track_signal.mode_change.cross_signal": "-> Zezwól na przejazd jeżeli droga w pełni przejezdna",
 	"create.track_signal.mode_change.entry_signal": "-> Zezwól na przejazd jeżeli droga nie jest zajęta",
+	"create.track_signal.mode_controlled_by_computer": "Tryb sygnału jest sterowany przez komputer",
 	"create.track_target.clear": "Zaznaczenie toru wyczyszczone",
 	"create.track_target.invalid": "Nie można zaznaczyć tego toru",
 	"create.track_target.missing": "Najpierw kliknij PPM na docelowy tor",
@@ -3358,7 +3360,15 @@
 	"item.create.zinc_nugget": "Bryłka cynku",
 	"itemGroup.create.base": "Create",
 	"itemGroup.create.palettes": "Bloki budowlane Create",
-	"tag.fluid.forge.chocolate": "Czekolada",
+	"tag.block.create.simple_mounted_storage": "Proste miejsca montażowe",
+	"tag.block.create.tree_attachments": "Załączniki do drzewa",
+	"tag.block.create.wrench_pickup": "",
+	"tag.block.forge.relocation_not_supported": "Niemożliwe do przeniesienia",
+	"tag.create.mounted_item_storage_type.create.fuel_blacklist": "Nie daje paliwa",
+	"tag.item.create.sandpaper": "Papier ścierny",
+	"tag.item.create.stone_types.calcite": "Kalcyt",
 	"tag.item.forge.dough": "Ciasto",
-	"tag.item.forge.flour.wheat": "Mąka pszenna"
+	"tag.item.forge.dough.wheat": "Ciasto pszenne",
+	"tag.item.forge.flour.wheat": "Mąka pszenna",
+	"tag.item.forge.gems.certus_quartz": "Jasny kwarc"
 }

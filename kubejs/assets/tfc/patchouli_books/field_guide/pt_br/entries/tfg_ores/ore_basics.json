@@ -19,13 +19,17 @@
             "type": "patchouli:spotlight",
             "title": "Picareta",
             "text": "Quebrar um bloco de minério com uma picareta renderá $(thing)minérios brutos$() (pobres, normais ou ricos), além de um pouco de pó de pedra. Cada um deles não vale muitos mB e você precisará de vários para fazer um único lingote. No entanto, alguns outros minerais só podem ser usados nesse estado, como $(thing)carvão$().",
-            "item": { "tag": "minecraft:pickaxes" }
+            "item": {
+                "tag": "minecraft:pickaxes"
+            }
         },
         {
             "type": "patchouli:spotlight",
             "title": "Marreta de Mineração",
             "text": "Basicamente, são picaretas com alcance 3x3 e também rendem $(thing)minérios brutos$(). Também são boas para limpar pedras depois de martelar os minérios!$(br2)Segurar $(thing)agachar$() quebrará apenas um bloco por vez.",
-            "item": { "tag": "forge:tools/mining_hammers" }
+            "item": {
+                "tag": "forge:tools/mining_hammers"
+            }
         },
         {
             "type": "patchouli:spotlight",

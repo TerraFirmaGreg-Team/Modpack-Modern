@@ -34,6 +34,7 @@
 	"deafission.machine.material_holder.tooltip": "Lagert eingehende Gegenstände für Hitze- und Strahlungsbasierte Kernreaktorrezepte.",
 	"deafission.machine.redstone_port.tooltip": "Rechts-Klicke mit einem Schraubenschlüssel, um den Modus zu ändern.",
 	"deafission.recipe.coolant_heat_per_tick": "Hitze: -%s HE/t/°",
+	"deafission.recipe.hb_io_energy": "Hitze: %s HE",
 	"deafission.recipe.heat": "Hitze: %s HE",
 	"deafission.recipe.heat_per_tick": "Hitze: -%s HE/t",
 	"deafission.recipe.temp": "Temperatur: %s°",

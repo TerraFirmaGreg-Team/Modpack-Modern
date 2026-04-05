@@ -53,14 +53,14 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "玫瑰金",
+			"title": "Rose Gold",
 			"link_recipes": false,
 			"text": "$(br)$(bold)条件：$()$(br)$(li)15 - 30 % : $(thing)铜$()$(li)70 - 85 % : $(thing)金$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "纯银",
+			"title": "Sterling Silver",
 			"link_recipes": false,
 			"text": "$(br)$(bold)条件：$()$(br)$(li)20 - 40 % : $(thing)铜$()$(li)60 - 80 % : $(thing)银$()$(br2)"
 		}

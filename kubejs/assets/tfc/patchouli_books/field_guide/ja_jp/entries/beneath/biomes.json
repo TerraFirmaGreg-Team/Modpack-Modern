@@ -1,0 +1,75 @@
+{
+	"name": "Biomes",
+	"category": "tfc:beneath",
+	"icon": "minecraft:spyglass",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath has a full set of new biomes to explore! Most are split into two categories: $(thing)upper$() and $(thing)lower$(). The upper biomes are only found higher up, while the lower ones are closer to the lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lush Hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Humid and full of greenery! The most hospitable area for an underground base."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Decaying Caverns",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+			],
+			"border": true,
+			"text": "Nature's recyclers are hard at work in this damp region full of rot."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Webbed Lair",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+			],
+			"border": true,
+			"text": "No prizes for guessing what lives here! Also features huge $(thing)Travertine$() pillars."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Ash Forest",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "What remains of the Lush Hollow after the frequent fires caused by the heat."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lava Floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basalt Deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Everyone's favourite nether biome returns, and is just as dangerous to navigate as ever."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Deep Caves",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/deep_caves.png"
+			],
+			"border": true,
+			"text": "Between the other biomes are more plain areas of either Gabbro, Schist, Granite, Diorite, and Gneiss.$(br)"
+		}
+	],
+	"read_by_default": true
+}

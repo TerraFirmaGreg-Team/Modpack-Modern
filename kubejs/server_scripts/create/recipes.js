@@ -17,7 +17,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/linear_chassisfrom_conversion' },
 			{ id: 'create:crafting/kinetics/secondary_linear_chassisfrom_conversion' },
 			{ id: 'create:crafting/kinetics/portable_storage_interface' },
-			{ id: 'create:crafting/kinetics/track_signal' },
 			{ id: 'create:crafting/kinetics/track_observer' },
 			{ id: 'create:crafting/kinetics/controls' },
 			{ id: 'create:crafting/logistics/content_observer' },
@@ -73,6 +72,13 @@ const registerCreateRecipes = (event) => {
 	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
 	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
 	event.remove({ type: 'create:draining', id: 'create:potions' })
+
+	// Train Signal
+	event.shapeless('4x create:track_signal', [
+		'create:railway_casing',
+		'gtceu:glass_tube',
+		'#forge:dusts/glowstone'
+	]).id('create:crafting/kinetics/track_signal')
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
@@ -718,11 +724,11 @@ const registerCreateRecipes = (event) => {
         .addMaterialInfo(true)
 
 	// Корпус поезда
-	event.recipes.createItemApplication(['create:railway_casing'], ['create:brass_casing', '#forge:plates/black_steel'])
+	event.recipes.createItemApplication(['create:railway_casing'], ['#forge:stripped_logs', '#forge:plates/steel'])
 		.id('tfg:create/item_application/railway_casing')
 
 	event.recipes.gtceu.assembler('tfg:create/railway_casing')
-		.itemInputs('create:brass_casing', '#forge:plates/black_steel')
+		.itemInputs('#forge:stripped_logs', '#forge:plates/steel')
 		.circuit(10)
 		.itemOutputs('create:railway_casing')
 		.duration(50)
@@ -2451,10 +2457,10 @@ const registerCreateRecipes = (event) => {
 	event.shapeless('2x create:copper_door', ['createdeco:copper_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
 		.id('tfg:shapeless/create_copper_door')
 
-	event.shapeless('2x create:train_door', ['createdeco:industrial_iron_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
+	event.shapeless('2x create:train_door', ['minecraft:iron_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
 		.id('tfg:shapeless/create_train_door')
 
-	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/steel', '#minecraft:wooden_trapdoors'])
+	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/wrought_iron', '#minecraft:wooden_trapdoors'])
 		.id('tfg:shapeless/create_train_trapdoor')
 
 	// Fantasy stone blocks
