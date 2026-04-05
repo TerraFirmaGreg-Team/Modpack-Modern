@@ -550,12 +550,23 @@ function registerTFGRockRecipes(event) {
 
 		let compositionId = composition.replace(/tfg:/g, '');
 
-		event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
-			.itemInputs(`#tfg:stone_composition/${compositionId}`)
-			.itemOutputs(ChemicalHelper.getDust(material, GTValues.M))
-			.duration(150)
-			.EUt(2)
-			.category(GTRecipeCategories.MACERATOR_RECYCLING);
+		// Brick composition is 5 bricks -> 4 blocks
+		if (composition === "brick") {
+			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
+				.itemInputs(`#tfg:stone_composition/${compositionId}`)
+				.itemOutputs('5x gtceu:small_brick_dust')
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING);
+		} else {
+			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
+				.itemInputs(`#tfg:stone_composition/${compositionId}`)
+				.itemOutputs(ChemicalHelper.getDust(material, GTValues.M))
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING);
+		}
+
 
 		// check if any items have this tag otherwise it errors
 		let half = Ingredient.of(`#tfg:stone_composition/${compositionId}_half`).itemIds.toArray();
