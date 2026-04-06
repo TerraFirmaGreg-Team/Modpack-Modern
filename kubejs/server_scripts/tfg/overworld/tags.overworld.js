@@ -114,6 +114,8 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfc:powder_snow_replaceable', 'minecraft:ice');
 	event.add('tfc:powder_snow_replaceable', 'minecraft:packed_ice');
 	event.add('tfc:powder_snow_replaceable', 'minecraft:blue_ice');
+
+	event.add('tfc:can_carve', 'tfg:gilsonite');
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -475,6 +477,10 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_heavy_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_light_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_medium_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_heavy_spring");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent_ocean");
 
