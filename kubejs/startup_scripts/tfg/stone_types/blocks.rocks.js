@@ -16,8 +16,11 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
+				.hardness(5)
+				.resistance(8)
 
 			if (rock.tfcTag != null) {
 				block.tagBoth(rock.tfcTag);
@@ -31,8 +34,11 @@ function registerTFGRockBlocks(event) {
 					.soundType(rock.sound ?? 'stone')
 					.mapColor(rock.mapColor)
 					.tagBlock('minecraft:mineable/pickaxe')
+					.requiresTool(true)
 					.fullBlock(true)
 					.opaque(true)
+					.hardness(5)
+					.resistance(8)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -54,9 +60,12 @@ function registerTFGRockBlocks(event) {
 					.soundType(rock.sound ?? 'stone')
 					.mapColor(rock.mapColor)
 					.tagBlock('minecraft:mineable/pickaxe')
+					.requiresTool(true)
 					.fullBlock(true)
 					.opaque(true)
 					.naturallySupported(false)
+					.hardness(5)
+					.resistance(8)
 
 				if (rock.tfcTag != null) {
 					block.tagBoth(rock.tfcTag);
@@ -71,8 +80,11 @@ function registerTFGRockBlocks(event) {
 						.mapColor(rock.mapColor)
 						.tagBoth(`tfg:rock_${shape}s`)
 						.tagBlock('minecraft:mineable/pickaxe')
+						.requiresTool(true)
 						.fullBlock(true)
 						.opaque(true)
+						.hardness(5)
+						.resistance(8)
 
 					if (rock.tfcTag != null) {
 						block.tagBoth(rock.tfcTag);
@@ -115,8 +127,11 @@ function registerTFGRockBlocks(event) {
 				.tagBoth('tfc:rock/hardened')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
+				.hardness(5)
+				.resistance(8)
 
 			if (rock.tfcTag != null) {
 				hardened.tagBoth(rock.tfcTag);
@@ -154,6 +169,7 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.hardness(0.8)
 				.resistance(0.8)
 				.requiresTool(true)
@@ -190,6 +206,8 @@ function registerTFGRockBlocks(event) {
 				.textureAll(rock.bricks.texture ?? rock.bricks.block.replace(/:/g, ":block/"))
 				.mapColor(rock.mapColor)
 				.tagBoth('tfc:rock/aqueducts')
+				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 
 			if (rock.tfcTag != null) {
 				aqueduct.tagBoth(rock.tfcTag);
@@ -228,6 +246,7 @@ function registerTFGRockBlocks(event) {
 				.soundType(rock.sound ?? 'stone')
 				.mapColor(rock.mapColor)
 				.tagBlock('minecraft:mineable/pickaxe')
+				.requiresTool(true)
 				.fullBlock(true)
 				.opaque(true)
 
@@ -244,6 +263,7 @@ function registerTFGRockBlocks(event) {
 		.textureAll('minecraft:block/red_sandstone_top')
 		.mapColor('teracotta_red')
 		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
 		.fullBlock(true)
 		.opaque(true)
 
@@ -252,6 +272,7 @@ function registerTFGRockBlocks(event) {
 		.textureAll('minecraft:block/cut_red_sandstone')
 		.mapColor('teracotta_red')
 		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
 		.fullBlock(true)
 		.opaque(true)
 		
@@ -260,6 +281,7 @@ function registerTFGRockBlocks(event) {
 		.textureAll('minecraft:block/cut_red_sandstone')
 		.mapColor('teracotta_red')
 		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
 		.fullBlock(true)
 		.opaque(true)
 
@@ -268,6 +290,7 @@ function registerTFGRockBlocks(event) {
 		.textureAll('ad_astra:block/venus_sandstone_bricks')
 		.mapColor(global.BIG_ROCK_TABLE.venus_stone.mapColor)
 		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
 		.fullBlock(true)
 		.opaque(true)
 
@@ -278,6 +301,7 @@ function registerTFGRockBlocks(event) {
 			.tagBoth(`tfg:brick_${shape}s`)
 			.mapColor(global.BIG_ROCK_TABLE.venus_stone.mapColor)
 			.tagBlock('minecraft:mineable/pickaxe')
+			.requiresTool(true)
 			.fullBlock(true)
 			.opaque(true)
 	})
