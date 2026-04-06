@@ -462,15 +462,11 @@ function registerTFGWoodenRecipes(event) {
             // Barrel Press from Stomping Barrel
                 if (barrel_press && stomping_barrel && name) {
                     event.shapeless(barrel_press, [
-                        'ABC',
-                        'D  ',
-                        '   '
-                    ], {
-                        A: stomping_barrel,
-                        B: '#forge:rods/wrought_iron',
-                        C: '#forge:plates/wrought_iron',
-                        D: '#forge:small_gears/brass'
-                    })
+                        stomping_barrel,
+                        '#forge:rods/wrought_iron',
+                        '#forge:plates/wrought_iron',
+                        '#forge:small_gears/brass'
+                    ])
                     .id(`tfg:shaped/${name}_barrel_press`)
                 };
 
