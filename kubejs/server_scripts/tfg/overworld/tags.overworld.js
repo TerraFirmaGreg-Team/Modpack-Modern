@@ -17,7 +17,7 @@ function registerTFGOverworldItemTags(event) {
 		event.add('tfc:plants', plant);
 		event.add('tfc:compost_greens_low', plant);
 	});
-	
+
 	event.add('tfc:fluxstone', 'tfg:plant/mussels');
 	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
 	event.add('tfc:fluxstone', 'firmalife:hollow_shell');
@@ -31,7 +31,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
 	event.add('tfc:compost_browns', '#tfg:anemones');
-	
+
 	event.add('tfc:makes_red_dye', 'tfg:plant/kinnikinnick')
 	event.add('tfc:makes_red_dye', 'tfg:plant/tank_bromeliad')
 	event.add('tfc:makes_brown_dye', 'tfg:plant/shawiash')
@@ -287,7 +287,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shield_volcano_shore')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shore')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/tidal_flats')
-	
+
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/highlands')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/plateau')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/old_mountains')
@@ -311,7 +311,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rocky_plateau')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rolling_hills')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/stone_circles')
-	
+
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/hills')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau_wide')
@@ -320,7 +320,7 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/inverted_patterned_ground')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/mud_flats')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/salt_flats')
-	
+
 	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc_ruined_world:has_structure/large_structure')
 	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc_ruins:has_structure/ruin_small')
 
@@ -482,4 +482,39 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
+}
+
+function registerTFGOverworldEntityTypeTags(event) {
+
+	// Tag used by TFC to control monsters spawning on the surface
+	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:husk')
+	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
+	event.add('tfc:vanilla_monsters', 'minecraft:slime')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
+	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
+	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
+
+	// Takes no damage from the new 1.21 cacti
+	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
+	event.add('tfg:ignores_cacti', 'waves:waves')
+	event.add('tfg:ignores_cacti', 'tfg:jerboa')
+
+	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
+	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
+	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
+	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
+	event.add('tfc:hunted_by_cats', 'tfg:lemming')
+	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
+
+	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
+	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
+	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
 }

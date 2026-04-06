@@ -39,6 +39,8 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Fixed some issues with repair recipes in a crafting grid (#3697) @SakuraKitsurugi @Thomasx0
 - Fixed the texture of the glass batches in an artisan table @Redeix
 - Fixed inconsistent recycling outputs of various (clay) brick blocks (#3690) @SpicyNoodle5
+- Fixed bison and leopard seal children being rendered as adults (#3674) @Pyritie
+- Fixed bison herds from self destructing (#3682) @Pyritie
 
 ## [0.12.1] - 01-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
