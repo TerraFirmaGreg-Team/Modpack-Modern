@@ -1,13 +1,37 @@
 type = user_variables
 
 variable {
+  name = changelog_text_scale
+  value = 2
+  reset_on_launch = false
+}
+
+variable {
   name = all_active
   value = 0
   reset_on_launch = false
 }
 
 variable {
+  name = last_checked_version
+  value = 0.11.7
+  reset_on_launch = false
+}
+
+variable {
   name = latest_active
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = cool_variable_name
+  value = some_value
+  reset_on_launch = false
+}
+
+variable {
+  name = display_changelog_hint
   value = 1
   reset_on_launch = false
 }

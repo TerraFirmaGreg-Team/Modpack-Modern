@@ -134,6 +134,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:realgar_gem",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "gtceu:cobalt_nugget",
 					"weight": 100,
 					"functions": [

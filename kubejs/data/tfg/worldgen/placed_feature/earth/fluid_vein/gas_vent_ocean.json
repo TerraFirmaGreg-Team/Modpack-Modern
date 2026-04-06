@@ -22,8 +22,9 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 95,
-			"fluid": "gtceu:natural_gas"
+			"vein_ids": [
+				"tfg:natural_gas_ocean"
+			]
 		}
 	]
 }

@@ -855,12 +855,12 @@ const registerRailWaysRecipes = (event) => {
 	})
 
 	event.recipes.gtceu.assembler('tfg:railways/phantom_tracks')
-		.itemInputs('32x create:track', 'ae2:ender_dust')
+		.itemInputs('32x #create:tracks', '#forge:small_dusts/ender_pearl')
 		.itemOutputs('32x railways:track_phantom')
 		.duration(100)
 		.EUt(16)
 
-	event.shapeless('8x railways:track_phantom', ['#forge:small_dusts/ender_pearl', '8x create:track'])
+	event.shapeless('8x railways:track_phantom', ['#forge:tiny_dusts/ender_pearl', '8x #create:tracks'])
 		.id('tfg:shapeless/phantom_tracks')
 
 	//#endregion

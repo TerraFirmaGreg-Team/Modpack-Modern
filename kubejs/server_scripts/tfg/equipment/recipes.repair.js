@@ -6,7 +6,7 @@ function registerTFGRepairRecipes(event) {
 	const MANUAL_TOOLS = ['knife', 'hoe', 'scythe', 'hammer', 'file', 'sword', 'butchery_knife', 'crowbar']
 	const ONLY_MANUAL_TOOLS = ['spade', 'pickaxe', 'shovel', 'axe', 'wrench', 'mortar', 'saw', 'screwdriver', 'wire_cutter', 'mining_hammer']
 	const ONLY_COLORED_TOOLS = ['buzzsaw']
-	const TFC_EQUIPMENT_METAL_GEAR = ['propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'horse_armor', 'javelin']
+	const TFC_EQUIPMENT_METAL_GEAR = ['propick', 'chisel', 'mace', 'fishing_rod', 'shears', 'helmet', 'chestplate', 'greaves', 'boots', 'shield', 'javelin']
 	const SNS_METALS = ['steel', 'black_steel', 'blue_steel', "red_steel"]
 
 	const LEATHER_REPAIR_GEAR = [
@@ -15,7 +15,6 @@ function registerTFGRepairRecipes(event) {
 		'minecraft:leather_chestplate',
 		'minecraft:leather_leggings',
 		'minecraft:leather_boots',
-		'minecraft:leather_horse_armor',
 		'tfcambiental:insulated_leather_hat',
 		'tfcambiental:insulated_leather_tunic',
 		'tfcambiental:insulated_leather_pants',
@@ -53,7 +52,6 @@ function registerTFGRepairRecipes(event) {
 
 		{ item: "create:netherite_diving_boots", material: "gtceu:repair_kit_blue_steel" },
 		{ item: "create:netherite_diving_helmet", material: "gtceu:repair_kit_blue_steel" },
-		{ item: "create:netherite_backtank", material: "gtceu:repair_kit_blue_steel" },
 		{ item: "minecraft:netherite_leggings", material: "gtceu:repair_kit_blue_steel" },
 		{ item: "minecraft:netherite_boots", material: "gtceu:repair_kit_blue_steel" },
 
