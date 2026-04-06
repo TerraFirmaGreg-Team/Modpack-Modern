@@ -380,7 +380,7 @@ function registerTFGWoodenRecipes(event) {
 
             // Jar Shelf
                 if (jar_shelf && lumber && plank && name) {
-                    event.shaped(jar_shelf, [
+                    event.shaped(`2x ${jar_shelf}`, [
                         'AAA',
                         'B B',
                         'C C'
@@ -420,7 +420,7 @@ function registerTFGWoodenRecipes(event) {
 
             // Jarbnet
                 if (jarbnet && lumber && log && name) {
-                    event.shaped(jarbnet, [
+                    event.shaped(`2x ${jarbnet}`, [
                         'A  ',
                         'BCC',
                         'A  '
@@ -461,7 +461,7 @@ function registerTFGWoodenRecipes(event) {
 
             // Barrel Press from Stomping Barrel
                 if (barrel_press && stomping_barrel && name) {
-                    event.shaped(barrel_press, [
+                    event.shapeless(barrel_press, [
                         'ABC',
                         'D  ',
                         '   '
@@ -476,7 +476,7 @@ function registerTFGWoodenRecipes(event) {
 
             // Wine Shelf
                 if (wine_shelf && log && name) {
-                    event.shaped(wine_shelf, [
+                    event.shaped(`4x ${wine_shelf}`, [
                         'ABA',
                         'ABA',
                         'ABA'
