@@ -6,26 +6,6 @@
  */
 function registerTFGTemporaryRecipes(event) {
 	
-	event.shapeless('vintageimprovements:belt_grinder', 'vintageimprovements:lathe')
-
-	event.shapeless('tfg:ostrum_linear_accelerator', 'gtceu:ostrum_linear_accelerator')
-	event.shapeless('tfg:steam_bloomery', 'gtceu:steam_bloomery')
-	event.shapeless('tfg:heat_exchanger', 'gtceu:heat_exchanger')
-	event.shapeless('tfg:large_bronze_boiler', 'gtceu:bronze_large_boiler')
-	event.shapeless('tfg:large_steel_boiler', 'gtceu:steel_large_boiler')
-
-	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_dust')
-	event.shapeless('tfg:igneous_intermediate_dust', 'gtceu:diorite_dust')
-	event.shapeless('tfg:igneous_intermediate_dust', 'gtceu:andesite_dust')
-	event.shapeless('tfg:metamorphic_dust', 'gtceu:marble_dust')
-	event.shapeless('tfg:metamorphic_dust', 'gtceu:deepslate_dust')
-	event.shapeless('tfg:igneous_ultramafic_dust', 'gtceu:blackstone_dust')
-	event.shapeless('tfg:igneous_felsic_dust', 'gtceu:granite_red_dust')
-	event.shapeless('tfg:igneous_mafic_dust', 'gtceu:basalt_dust')
-
-	// TODO: remove nether/ender air in 0.12
-
-
 	// Temporary recipes until gregtech fixes its pipe problem with .setIgnored()
 	const broken_pipes = [
 		GTMaterials.Copper,
