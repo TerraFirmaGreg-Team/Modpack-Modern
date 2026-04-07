@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "Firmalife'ta, pişirme özelliği olan, toplayıp kendi yetiştirebileceğin birçok küçük bitki var. Doğada bulunabilirler, ve toplandığında bir $(l:firmalife/greenhouse)Greenhouse$()'ta yetiştirilebilirler, burada 20 birim N, P ve K kullanırlar."
 		},
 		{
 			"type": "tfc:multimultiblock",

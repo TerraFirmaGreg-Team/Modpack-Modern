@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Kräuter und Gewürze",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
@@ -38,7 +38,7 @@
 					}
 				}
 			],
-			"name": "Basil",
+			"name": "Basilikum",
 			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -72,7 +72,7 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
+			"name": "Lorbeer",
 			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -242,7 +242,7 @@
 					}
 				}
 			],
-			"name": "Pimento",
+			"name": "Piment",
 			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -276,7 +276,7 @@
 					}
 				}
 			],
-			"name": "Vanilla",
+			"name": "Vanille",
 			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -301,7 +301,7 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Eine Schmetterlingsgraspflanze.",
 			"enable_visualize": false
 		},
 		{

@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Luvas de couro preparadas são então aquecidas em uma $(thing)cubat$() com $(thing)Látex Vulcanizado$(), a um passo da borracha."
+			"text": "Luvas de couro preparadas são então aquecidas em uma $(thing)cuba$() com $(thing)Látex Vulcanizado$(), a um passo da borracha."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -56,12 +56,12 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Recipientes",
-			"text": "Materiais perigosos só causam dano enquanto estiverem em seu $(thing)inventário$(), mas isso não se aplica a outros contêineres!$(br)Materiais perigosos não causarão dano enquanto estiverem em outro contêiner, como uma $(l:tfg_tips/inventory_management)Mochila$() ou $(l:getting_started/pottery#vessel)Vaso$(). $(thing)Clicar com o botão direito$() enquanto segura um vaso permitirá a transferência direta do seu conteúdo de e para outros contêineres.",
+			"text": "Materiais perigosos só causam dano enquanto estiverem em seu $(thing)inventário$(), mas isso não se aplica a outros contêineres!$(br)Materiais perigosos não causarão dano enquanto estiverem em outro contêiner, como uma $(l:tfg_tips/inventory_management)Mochila$() ou $(l:getting_started/pottery#vessel)Vaso$(). $(thing)Clicar com o botão direito$() enquanto segura um vaso permitirá a transferência direta do seu conteúdo para outros contêineres",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Spring Water",
+			"title": "Água Termal",
 			"item": "tfc:bucket/spring_water",
 			"text": "Ficar na $(thing)Água Termal$() causará um efeito lento de $(thing)Regeneração$()."
 		},

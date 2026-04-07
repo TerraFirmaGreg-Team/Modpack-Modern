@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Primitive Alloys",
+	"name": "Ligas Primitivas",
 	"category": "tfc:getting_started",
 	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
 	"pages": [
@@ -26,41 +26,41 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Bismuth Bronze",
+			"title": "Bronze de Bismuto",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Black Bronze",
+			"title": "Bronze Negro",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
 			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
-			"title": "Utility Alloys"
+			"title": "Ligas de Utilidade"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "brass",
 			"item": "create:brass_ingot",
-			"title": "Brass",
+			"title": "Latão",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "Rose Gold",
+			"title": "Ouro Rosa",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Sterling Silver",
+			"title": "Prata de Lei",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
 		}

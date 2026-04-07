@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "barley",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
-			"title": "Barley"
+			"title": "Orge"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "oat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
-			"title": "Oat"
+			"title": "Avoine"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "rye",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
-			"title": "Rye"
+			"title": "Seigle"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
-			"title": "Maize"
+			"title": "Maïs"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "wheat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
-			"title": "Wheat"
+			"title": "Blé"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -776,7 +776,7 @@
 			"type": "patchouli:text",
 			"anchor": "rice",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
-			"title": "Rice"
+			"title": "Riz"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -924,7 +924,7 @@
 			"type": "patchouli:text",
 			"anchor": "beet",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
-			"title": "Beet"
+			"title": "Betterave"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1038,7 +1038,7 @@
 			"type": "patchouli:text",
 			"anchor": "cabbage",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
-			"title": "Cabbage"
+			"title": "Chou"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1152,7 +1152,7 @@
 			"type": "patchouli:text",
 			"anchor": "carrot",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
-			"title": "Carrot"
+			"title": "Carotte"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1249,7 +1249,7 @@
 			"type": "patchouli:text",
 			"anchor": "garlic",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
-			"title": "Garlic"
+			"title": "Ail"
 		},
 		{
 			"type": "tfc:multimultiblock",

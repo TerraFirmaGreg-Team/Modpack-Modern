@@ -77,7 +77,7 @@
 			"type": "patchouli:spotlight"
 		},
 		{
-			"title": "Sea Water",
+			"title": "海水",
 			"text": "饮用$(thing)海水$()不能补充水分，反而会让你更加口渴。体温过高也会让你更容易口渴。在海上迷路了？下雨时抬头看天，可以轻松补充水分！",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water"

@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "O $(thing)Aspersor$() é um dispositivo que borrifa água em uma área de 5x6x5 centralizada no bloco abaixo dele. Você sabe que ele está funcionando quando ele goteja partículas de água. Aspersores colocados virados para cima irrigam a mesma área de 5x6x5 só que voltada para cima."
+			"text": "O $(thing)Aspersor$() é um dispositivo que borrifa água em uma área de 5x6x5 centralizada no bloco abaixo dele. Você sabe que ele está funcionando quando ele goteja partículas de água. Aspersores colocados virados para cima irrigam a mesma área de 5x6x5, porém voltada para cima."
 		},
 		{
 			"type": "tfc:anvil_recipe",

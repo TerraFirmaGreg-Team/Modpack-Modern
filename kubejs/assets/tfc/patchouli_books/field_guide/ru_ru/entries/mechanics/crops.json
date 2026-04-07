@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "Культуры",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "barley",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Увлажненность$(): 35 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Овес - это одноблочная культура. Семена овса можно посадить на пашне, и они дадут $(thing)Овес$() и $(thing)Семена овса$() в качестве продукта.",
-			"title": "Barley"
+			"title": "Ячмень"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "oat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 35 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Овёс — это культура высотой в один блок. Семена овса можно сажать на вспаханную землю, и он даёт $(thing)Овёс$() и $(thing)Семена овса$() в качестве урожая.",
-			"title": "Oat"
+			"title": "Овёс"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "rye",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 25 - 85 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Рожь — это культура высотой в один блок. Семена ржи можно сажать на вспаханную землю, и она даёт $(thing)Рожь$() и $(thing)Семена ржи$() в качестве урожая.",
-			"title": "Rye"
+			"title": "Рожь"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 75 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Кукуруза — это культура высотой в два блока. Семена кукурузы можно сажать на вспаханную землю, она вырастает до двух блоков в высоту и даёт $(thing)Кукуруза$() и $(thing)Семена кукурузы$() в качестве урожая.",
-			"title": "Maize"
+			"title": "Маис"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "wheat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 25 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Пшеница — это культура высотой в один блок. Семена пшеницы можно сажать на вспаханную землю, и она даёт $(thing)Пшеница$() и $(thing)Семена пшеницы$() в качестве урожая.",
-			"title": "Wheat"
+			"title": "Пшеница"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -776,7 +776,7 @@
 			"type": "patchouli:text",
 			"anchor": "rice",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 25 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Рис — это культура высотой в один блок. Рис необходимо выращивать под водой — его нужно сажать на вспаханную землю в пресной воде глубиной в один блок. Он даёт $(thing)Рис$() и $(thing)Семена риса$() в качестве урожая.",
-			"title": "Rice"
+			"title": "Рис"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -924,7 +924,7 @@
 			"type": "patchouli:text",
 			"anchor": "beet",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 18 - 85 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Свёкла — это культура высотой в один блок. Семена свёклы можно сажать на вспаханную землю, и она даёт $(thing)Свёкла$() и $(thing)Семена свёклы$() в качестве урожая.",
-			"title": "Beet"
+			"title": "Свёкла"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1038,7 +1038,7 @@
 			"type": "patchouli:text",
 			"anchor": "cabbage",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 15 - 65 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Капуста — это культура высотой в один блок. Семена капусты можно сажать на вспаханную землю, и она даёт $(thing)Капуста$() и $(thing)Семена капусты$() в качестве урожая.",
-			"title": "Cabbage"
+			"title": "Капуста"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1152,7 +1152,7 @@
 			"type": "patchouli:text",
 			"anchor": "carrot",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 25 - 100 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Морковь — это культура высотой в один блок. Семена моркови можно сажать на вспаханную землю, и она даёт $(thing)Морковь$() и $(thing)Семена моркови$() в качестве урожая.",
-			"title": "Carrot"
+			"title": "Морковь"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1249,7 +1249,7 @@
 			"type": "patchouli:text",
 			"anchor": "garlic",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 15 - 75 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Чеснок — это культура высотой в один блок. Семена чеснока можно сажать на вспаханную землю, и он даёт $(thing)Чеснок$() и $(thing)Семена чеснока$() в качестве урожая.",
-			"title": "Garlic"
+			"title": "Чеснок"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1526,7 +1526,7 @@
 			"type": "patchouli:text",
 			"anchor": "potato",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 50 - 100 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Картофель — это культура высотой в один блок. Семена картофеля можно сажать на вспаханную землю, и он даёт $(thing)Картофель$() и $(thing)Семена картофеля$() в качестве урожая.",
-			"title": "Potatoes"
+			"title": "Картофель"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2394,7 +2394,7 @@
 			"type": "patchouli:text",
 			"anchor": "soybean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 40 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Соя — это культура высотой в один блок. Семена сои можно сажать на пашне, и она даёт $(thing)Соя$() и $(thing)Семена сои$() в качестве урожая.",
-			"title": "Soybean"
+			"title": "Соевые бобы"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2525,7 +2525,7 @@
 			"type": "patchouli:text",
 			"anchor": "squash",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 23 - 95 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Кабачок — это культура высотой в один блок. Семена кабачка можно сажать на пашне, и он даёт $(thing)Кабачок$() и $(thing)Семена кабачка$() в качестве урожая.",
-			"title": "Squash"
+			"title": "Кабачок"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2673,7 +2673,7 @@
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 40 - 100 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Сахарный тростник — это культура высотой в два блока. Семена сахарного тростника можно сажать на пашне, он вырастает до двух блоков и даёт $(thing)Сахарный тростник$() и $(thing)Семена сахарного тростника$() в качестве урожая. Из сахарного тростника можно сделать $(thing)Сахар$().",
-			"title": "Sugarcane"
+			"title": "Сахарный тростник"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3033,7 +3033,7 @@
 			"type": "patchouli:text",
 			"anchor": "jute",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 25 - 100 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Джут — это культура высотой в два блока. Семена джута можно сажать на пашне, он вырастает до двух блоков и даёт $(thing)Джут$() и $(thing)Семена джута$() в качестве урожая.",
-			"title": "Jute"
+			"title": "Джут"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3171,7 +3171,7 @@
 			"type": "patchouli:text",
 			"anchor": "papyrus",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Увлажненность$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Папирус - это двухблочная культура. Семена папируса можно посадить на пашне, они вырастут в два блока в высоту и произведут $(l:mechanics/papermaking)Папирус$() и$(thing)Семена папируса$().",
-			"title": "Papyrus"
+			"title": "Папирус"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3309,7 +3309,7 @@
 			"type": "patchouli:text",
 			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Подсолнух$(br2)это двухблочный урожай. Семена подсолнуха можно посадить на пашне, он вырастит в два блока высотой, и будет производиться $(item)Шляпы подсолнуха$(), который может быть обработан в $(thing)Растительное мвсло$(). Растительное масло может использоваться как топливо для ламп, так и $(thing)для Биодизеля$() позже.$(br)Подсолнух также считается Цветом для $(l:firmalife/beekeeping)Пчёл$().",
-			"title": "Sunflower"
+			"title": "Подсолнух"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3468,7 +3468,7 @@
 			"type": "patchouli:text",
 			"anchor": "canola",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)влажность$(): 10 - 60 %$(br)$(bold)Полезное вещество$(): Фосфор$(br2)Канола высотой два блока. Семена канолы могут быть посажены на пашне, при сбора даёт $(item)Стебли канолы$(), которые могут быть обработаны в $(thing)Растительное масло$(). Оно может использоваться как топливо для ламп, а затем $(thing)биодизеля$().$(br)Канола также считается цветом для $(l:firmalife/пчеловодства)пчел$().",
-			"title": "Canola"
+			"title": "Канола"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3628,7 +3628,7 @@
 			"type": "patchouli:text",
 			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)влажность$(): 15 - 65 %$(br)$(bold)Полезное вещество$(): Азот$(br2)Лён — это двухблочная культура. её можно посадить на пашню, при сборе даёт $(item)Стебли льну$(), которые можно переработать в $(thing)Льняные нитки$() или $(thing)Льняную ткань$().$(br) Лён считается цветком для $(l:firmalife/beekeeping)пчёл$().",
-			"title": "Flax"
+			"title": "Лён"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3787,7 +3787,7 @@
 			"type": "patchouli:text",
 			"anchor": "cucumber",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Огурцы — двухблочная культура. Семена огурцов можно сажать на пашню, они вырастают в два блока и дают $(item)огурцы$(), которые обеспечивают $(thing)овощную$() питательность.$(br)$(bold)Для полного созревания огурцам требуется подпорка.$()",
-			"title": "Cucumber"
+			"title": "Огурец"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
+			"title": "Редис",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 15 - 65 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Редьку можно есть для получения $(thing)овощной$() питательности. Если вам нужно растение, способное выживать в более холодных температурах, редька — хороший выбор."
 		},
 		{
@@ -4040,7 +4040,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
+			"title": "Чечевица",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 50 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Чечевицу можно есть для получения $(thing)овощной$() питательности, хотя перед употреблением её рекомендуется приготовить. Чечевица — ещё один хороший выбор для выращивания в более холодном климате."
 		},
 		{

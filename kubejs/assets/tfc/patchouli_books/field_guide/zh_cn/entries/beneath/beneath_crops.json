@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "木薯",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 70 - 100 %$(br)$(bold)营养物质$(): 氮$(br2)木薯可以作为$(thing)蔬菜$()食用，但食用前最好先$(thing)煮熟$()。$(br)"
 		},
 		{
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
+			"title": "花生",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 钾$(br2)食用花生可以获得$(thing)蔬菜$()和$(thing)蛋白质$()营养"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
+			"title": "鬼椒",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 氮$(br2)鬼椒可以作为$(thing)蔬菜$()食用。它们也是地下居民常见的零食。"
 		},
 		{

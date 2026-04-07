@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "barley",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 18 - 75 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Ячмінь — це одноблокова культура. Насіння ячменю можна висаджувати на ріллі, і воно дає $(thing)ячмінь$() та $(thing)насіння ячменю$() як продукт.",
-			"title": "Barley"
+			"title": "Ячмінь"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "oat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 35 - 100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Овес — це одноблокова культура. Насіння вівса можна висаджувати на ріллі, і вони дадуть $(thing)овес$() та $(thing)насіння вівса$() як продукт.",
-			"title": "Oat"
+			"title": "Овес"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "rye",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 25 - 85 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Жито — це одноблокова культура. Насіння жита можна висаджувати на ріллі, і вони дадуть $(thing)жито$() та $(thing)насіння жита$() як продукт.",
-			"title": "Rye"
+			"title": "Жито"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 75 - 100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Кукурудза — це двоблокова культура. Насіння кукурудзи можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(thing)кукурудзу$() та $(thing)насіння кукурудзи$() як продукт.",
-			"title": "Maize"
+			"title": "Кукурудза"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "wheat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 25 - 100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Пшениця — це одноблокова культура. Насіння пшениці можна висаджувати на ріллі, і вони дадуть $(thing)пшеницю$() та $(thing)насіння пшениці$() як продукт.",
-			"title": "Wheat"
+			"title": "Пшениця"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -776,7 +776,7 @@
 			"type": "patchouli:text",
 			"anchor": "rice",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 25 - 100 %$(br)$(bold)Поживна речовина$(): Фосфор$(br2)Рис — це одноблокова культура. Рис потрібно вирощувати під водою — його слід садити на ріллі у прісній воді глибиною один блок. Він дає $(thing)рис$() та $(thing)насіння рису$() як продукт.",
-			"title": "Rice"
+			"title": "Рис"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -924,7 +924,7 @@
 			"type": "patchouli:text",
 			"anchor": "beet",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 18 - 85 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Буряк — це одноблокова культура. Насіння буряка можна висаджувати на ріллі, і вони дадуть $(thing)буряк$() та $(thing)насіння буряка$() як продукт.",
-			"title": "Beet"
+			"title": "Буряк"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1038,7 +1038,7 @@
 			"type": "patchouli:text",
 			"anchor": "cabbage",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 15 - 65 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Капуста — це одноблокова культура. Насіння капусти можна висаджувати на ріллі, і вони дадуть $(thing)капусту$() та $(thing)насіння капусти$() як продукт.",
-			"title": "Cabbage"
+			"title": "Капуста"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1152,7 +1152,7 @@
 			"type": "patchouli:text",
 			"anchor": "carrot",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 25 - 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Морква — це одноблокова культура. Насіння моркви можна висаджувати на ріллі, і вони дадуть $(thing)моркву$() та $(thing)насіння моркви$() як продукт.",
-			"title": "Carrot"
+			"title": "Морква"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1249,7 +1249,7 @@
 			"type": "patchouli:text",
 			"anchor": "garlic",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 15 - 75 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Часник — це одноблокова культура. Насіння часнику можна висаджувати на ріллі, і вони дадуть $(thing)часник$() та $(thing)насіння часнику$() як продукт.",
-			"title": "Garlic"
+			"title": "Часник"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2394,7 +2394,7 @@
 			"type": "patchouli:text",
 			"anchor": "soybean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 40 - 100 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Соєві боби — це одноблокова культура. Насіння сої можна висаджувати на ріллі, і вони дадуть $(thing)соєві боби$() та $(thing)насіння сої$() як продукт.",
-			"title": "Soybean"
+			"title": "Соєві боби"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2525,7 +2525,7 @@
 			"type": "patchouli:text",
 			"anchor": "squash",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 23 - 95 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Кабачок — це одноблокова культура. Насіння кабачку можна висаджувати на ріллі, і воно дає $(thing)кабачок$() та $(thing)насіння кабачку$() як продукт.",
-			"title": "Squash"
+			"title": "Кабачок"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2673,7 +2673,7 @@
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 40 - 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Цукрова тростина — це двоблокова культура. Насіння цукрової тростини можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(thing)цукрову тростину$() і $(thing)насіння цукрової тростини$() як продукт. Цукрову тростину можна використати для виготовлення $(thing)цукру$().",
-			"title": "Sugarcane"
+			"title": "Цукрова тростина"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3033,7 +3033,7 @@
 			"type": "patchouli:text",
 			"anchor": "jute",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 25 - 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Джут — це двоблокова культура. Насіння джуту можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(thing)джут$() і $(thing)насіння джуту$() як продукт.",
-			"title": "Jute"
+			"title": "Джут"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3171,7 +3171,7 @@
 			"type": "patchouli:text",
 			"anchor": "papyrus",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 70 - 100 %$(br)$(bold)Поживна речовина$(): Калій$(br2)Папірус — це двоблокова культура. Насіння папірусу можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(l:mechanics/papermaking)папірус$() і $(thing)насіння папірусу$() як продукт.",
-			"title": "Papyrus"
+			"title": "Папірус"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3309,7 +3309,7 @@
 			"type": "patchouli:text",
 			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 20 - 80 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Соняшник — це двоблокова культура. Насіння соняшника можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(item)моняшникові кошики$(), які можна переробити на $(thing)олію з насіння$(). Олія з насіння може використовуватися як паливо для ламп, а також для виготовлення $(thing)біодизеля$() пізніше.$(br)Соняшник також вважається квіткою для цілей $(l:firmalife/beekeeping)бджільництва$().",
-			"title": "Sunflower"
+			"title": "Соняшник"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3628,7 +3628,7 @@
 			"type": "patchouli:text",
 			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Вологість$(): 15 - 65 %$(br)$(bold)Поживна речовина$(): Азот$(br2)Льон — це двоблокова культура. Насіння льону можна висаджувати на ріллі, вони виростуть заввишки у два блоки та дадуть $(item)стебла льону$(), які можна переробити на $(thing)льон$() або $(thing)мішковину$().$(br)Льон також вважається квіткою для цілей $(l:firmalife/beekeeping)бджільництва$().",
-			"title": "Flax"
+			"title": "Льон"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3787,7 +3787,7 @@
 			"type": "patchouli:text",
 			"anchor": "cucumber",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 5 - 40 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 70 - 100 %$(br)\n$(bold)Поживні речовини$(): Азот$(br2)\nОгірки — це культура заввишки у два блоки. Насіння огірків можна висаджувати на ріллі, вони виростають на два блоки заввишки та дають $(item)огірки$(), які забезпечують $(thing)овочеве$() насичення.$(br)\n$(bold)Огіркам потрібна палиця, щоб повністю дозріти.$()",
-			"title": "Cucumber"
+			"title": "Огірок"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
+			"title": "Редька",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 20 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 15 - 65 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nРедиску можна їсти для отримання $(thing)овочеве$() насичення. Якщо потрібна рослина, здатна виживати при нижчих температурах, редиска — гарний вибір."
 		},
 		{
@@ -4040,7 +4040,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
+			"title": "Сочевиця",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 18 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 50 - 100 %$(br)\n$(bold)Поживні речовини$(): Фосфор$(br2)\nСочевицю можна їсти для отримання $(thing)овочеве$() насичення, хоча рекомендується спершу її приготувати. Сочевиця — ще один гарний вибір для вирощування у холоднішому кліматі."
 		},
 		{

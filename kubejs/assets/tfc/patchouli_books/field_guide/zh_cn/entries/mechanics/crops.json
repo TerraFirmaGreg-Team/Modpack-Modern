@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "农作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "barley",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：18 - 75 %$(br)$(bold)营养物质$()：氮$(br2)大麦是一种一格高的农作物。种植大麦会产出$(thing)大麦$()和$(thing)大麦种子$()。",
-			"title": "Barley"
+			"title": "大麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "oat",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：35 - 100 %$(br)$(bold)营养物质$()：磷$(br2)燕麦是一种一格高的农作物。种植燕麦会产出$(thing)燕麦$()和$(thing)燕麦种子$()。",
-			"title": "Oat"
+			"title": "燕麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "rye",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：25 - 85 %$(br)$(bold)营养物质$()：磷$(br2)黑麦是一种一格高的农作物。种植黑麦会产出$(thing)黑麦$()和$(thing)黑麦种子$()。",
-			"title": "Rye"
+			"title": "黑麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：75 - 100 %$(br)$(bold)营养物质$()：磷$(br2)玉米是一种两格高的农作物。种植玉米会产出$(thing)玉米$()和$(thing)玉米种子$()。",
-			"title": "Maize"
+			"title": "玉米"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "wheat",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：25 - 100 %$(br)$(bold)营养物质$()：磷$(br2)小麦是一种一格高的农作物。种植小麦会产出$(thing)小麦$()和$(thing)小麦种子$()。",
-			"title": "Wheat"
+			"title": "小麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -776,7 +776,7 @@
 			"type": "patchouli:text",
 			"anchor": "rice",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：25 - 100 %$(br)$(bold)营养物质$()：磷$(br2)水稻是一种一格高的农作物。水稻必须种植在一格淡水深的耕地上。种植水稻会产出$(thing)水稻$()和$(thing)水稻种子$()。",
-			"title": "Rice"
+			"title": "水稻"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -924,7 +924,7 @@
 			"type": "patchouli:text",
 			"anchor": "beet",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：18 - 85 %$(br)$(bold)营养物质$()：钾$(br2)甜菜是一种一格高的农作物。种植甜菜会产出$(thing)甜菜$()和$(thing)甜菜种子$()。",
-			"title": "Beet"
+			"title": "甜菜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1038,7 +1038,7 @@
 			"type": "patchouli:text",
 			"anchor": "cabbage",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：15 - 65 %$(br)$(bold)营养物质$()：氮$(br2)卷心菜是一种一格高的农作物。种植卷心菜会产出$(thing)卷心菜$()和$(thing)卷心菜种子$()。",
-			"title": "Cabbage"
+			"title": "卷心菜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1152,7 +1152,7 @@
 			"type": "patchouli:text",
 			"anchor": "carrot",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：25 - 100 %$(br)$(bold)营养物质$()：钾$(br2)胡萝卜是一种一格高的农作物。种植胡萝卜会产出$(thing)胡萝卜$()和$(thing)胡萝卜种子$()。",
-			"title": "Carrot"
+			"title": "胡萝卜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1249,7 +1249,7 @@
 			"type": "patchouli:text",
 			"anchor": "garlic",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：15 - 75 %$(br)$(bold)营养物质$()：氮$(br2)大蒜是一种一格高的农作物。种植大蒜会产出$(thing)大蒜$()和$(thing)大蒜种子$()。",
-			"title": "Garlic"
+			"title": "大蒜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1526,7 +1526,7 @@
 			"type": "patchouli:text",
 			"anchor": "potato",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：50 - 100 %$(br)$(bold)营养物质$()：钾$(br2)马铃薯是一种一格高的农作物。种植马铃薯会产出$(thing)马铃薯$()和$(thing)马铃薯种子$()。",
-			"title": "Potatoes"
+			"title": "马铃薯"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2394,7 +2394,7 @@
 			"type": "patchouli:text",
 			"anchor": "soybean",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：40 - 100 %$(br)$(bold)营养物质$()：氮$(br2)大豆是一种一格高的农作物。种植大豆会产出$(thing)大豆$()和$(thing)大豆种子$()。",
-			"title": "Soybean"
+			"title": "大豆"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2525,7 +2525,7 @@
 			"type": "patchouli:text",
 			"anchor": "squash",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：23 - 95 %$(br)$(bold)营养物质$()：钾$(br2)西葫芦是一种一格高的农作物。种植西葫芦会产出$(thing)西葫芦$()和$(thing)西葫芦种子$()。",
-			"title": "Squash"
+			"title": "西葫芦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2673,7 +2673,7 @@
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：40 - 100 %$(br)$(bold)营养物质$()：钾$(br2)甘蔗是一种两格高的农作物。种植甘蔗会产出$(thing)甘蔗$()和$(thing)甘蔗种子$()。甘蔗可以制成$(thing)糖$()。",
-			"title": "Sugarcane"
+			"title": "甘蔗"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3033,7 +3033,7 @@
 			"type": "patchouli:text",
 			"anchor": "jute",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：25 - 100 %$(br)$(bold)营养物质$()：钾$(br2)黄麻是一种两格高的农作物。种植黄麻会产出$(thing)黄麻$()和$(thing)黄麻种子$()。",
-			"title": "Jute"
+			"title": "黄麻"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3171,7 +3171,7 @@
 			"type": "patchouli:text",
 			"anchor": "papyrus",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：70 - 100 %$(br)$(bold)营养物质$()：钾$(br2)纸莎草是一种两格高的作物。纸莎草种子可以种植在耕地上，生长到两格高，并生产$(l:mechanics/papermaking)纸莎草$()和$(thing)纸莎草种子$()作为产物。",
-			"title": "Papyrus"
+			"title": "纸莎草"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3309,7 +3309,7 @@
 			"type": "patchouli:text",
 			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)湿度$()：20 - 80 %$(br)$(bold)营养物质$()：氮$(br2)向日葵是一种两格高的作物。向日葵种子可以种植在耕地上，生长到两格高，并生产可加工为$(thing)种子油$()的$(item)向日葵花盘$()。种子油既可用作灯油，也可在后期用于制作$(thing)生物柴油$()。$(br)在$(l:firmalife/beekeeping)养蜂$()系统中，向日葵同样被视为有效花源。",
-			"title": "Sunflower"
+			"title": "向日葵"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3468,7 +3468,7 @@
 			"type": "patchouli:text",
 			"anchor": "canola",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 10 - 60 %$(br)$(bold)营养物质$()：磷$(br2)油菜是一种两格高的作物。油菜种子可种植在耕地上，生长到两格高，并生产可加工为$(thing)种子油$()的$(item)油菜籽荚$()。种子油既可用作灯油，也可在后期用于制作$(thing)生物柴油$()。$(br)在$(l:firmalife/beekeeping)养蜂$()系统中，油菜同样被视为有效花源。",
-			"title": "Canola"
+			"title": "油菜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3628,7 +3628,7 @@
 			"type": "patchouli:text",
 			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8°C - 25°C$(br)$(bold)$(l:mechanics/hydration)湿度$()：15 - 65 %$(br)$(bold)营养物质$()：氮$(br2)亚麻是一种两格高的农作物。亚麻种子可以种植在耕地上，生长到两格高，并生产用于加工为$(thing)亚麻布$()或$(thing)粗麻布$()的$(item)亚麻茎杆$()。$(br)在$(l:firmalife/beekeeping)养蜂$()系统中，亚麻同样被视为有效花源。",
-			"title": "Flax"
+			"title": "亚麻"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3787,7 +3787,7 @@
 			"type": "patchouli:text",
 			"anchor": "cucumber",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 70 - 100 %$(br)$(bold)营养物质$(): 氮$(br2)黄瓜是一种两格高作物。黄瓜种子可以种植在耕地上，能生长到两格高，产出可作为$(thing)蔬菜$()食用$(item)的黄瓜$()。$(br)$(bold)种植黄瓜需要插根木棍才能完全成熟。$()",
-			"title": "Cucumber"
+			"title": "黄瓜"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
+			"title": "萝卜",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 15 - 65 %$(br)$(bold)营养物质$(): 钾$(br2)萝卜可以作为$(thing)蔬菜$()食用。如果你需要一种能在较低温度下存活的作物，萝卜是个不错的选择。"
 		},
 		{
@@ -4040,7 +4040,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
+			"title": "扁豆",
 			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 50 - 100 %$(br)$(bold)营养物质$(): 磷$(br2)扁豆可以作为$(thing)蔬菜$()食用，但建议先煮熟。在较寒冷的气候条件下，扁豆是另一种不错的种植选择。"
 		},
 		{

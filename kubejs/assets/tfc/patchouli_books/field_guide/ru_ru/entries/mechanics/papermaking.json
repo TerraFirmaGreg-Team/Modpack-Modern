@@ -62,7 +62,7 @@
             "X": "tfc:groundcover/pumice"
           }
         },
-        "name": "Pumice",
+        "name": "Пемза",
         "text": "Кусок пемзы, положенный на землю.",
         "enable_visualize": false
       },
@@ -96,20 +96,20 @@
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "Полоска твердой древесины",
         "recipe": "tfg:crafting/strip_hardwood",
         "text": "Затем, обтёсанное дерево должно быть обработано топором для получения $(item)Полосок из Твёрдого дерева$(). Вы можете сделать это топором или более сложными методами."
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "Пропитанная полоска твердой древесины",
         "recipe": "tfg:barrel/soak_hardwood_strip",
         "text": "Затем отдельные полоски кладут в $(l:mechanics/barrels)Бочки$() с $(thing)Водой$(). Это $(thing)дестабилизирует структурную целостность$() $(thing)дерева$() и оно может быть $(thing)обработано дальше$()"
       },
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
+        "title": "Масса из твёрдого дерева",
         "text": "После этого используйте $(l:mechanics/quern)Жёрнов$(), чтобы Раздробить полоски на $(item)Целлюлозу из твёрдого дерева$()"
       },
       {

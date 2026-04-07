@@ -52,7 +52,7 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Crushed Ore",
+      "title": "Подрібнена руда",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
       "text": "$(l:tfg_ores/ore_basics#processing)Руди$() можна подрібнити, щоб отримати більше металу."
     },

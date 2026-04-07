@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "No Firmalife, há diversas pequenas plantas que você pode coletar e cultivar por conta própria, as quais possuem propriedades culinárias. Todas podem ser encontradas na natureza e, após serem colhidas, podem ser cultivadas em uma $(l:firmalife/greenhouse)Estufa$(), onde consomem 20 pontos de N, P e K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Manjericão",
+			"text": "$(thing)Manjericão Selvagem$() cresce entre 12 e 25C, e 300 a 500mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "Loureiro",
+			"text": "$(thing)Loureiro Selvagem$() cresce entre 8 e 14C, e 25 a 225mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "Cardamomo",
+			"text": "$(thing)Cardamomo Selvagem$() cresce entre 18 e 30C, e 350 a 500mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "Coentro",
+			"text": "$(thing)Coentro Selvagem$() cresce entre 5 e 15C, e 0 a 150mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "Cominho",
+			"text": "$(thing)Cominho Selvagem$() cresce entre 6 e 20C, e 50 a 250mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "Orégano",
+			"text": "$(thing)Orégano Selvagem$() cresce entre 5 e 13C, e 50 a 150mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -243,7 +243,7 @@
 				}
 			],
 			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"text": "$(thing)Pimento Selvagem$() cresce entre 15 e 30C, e 200 a 450mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
@@ -276,14 +276,14 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "Baunilha",
+			"text": "$(thing)Baunilha Selvagem$() cresce entre 18 e 30C, e 200 a 500mm de precipitação.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)Bolas de Sementes$() podem ser usadas para plantar diferentes Gramas. Podem ser úteis após limpar a sua base para construção. A receita para a bola de semente requer $(item)Composto$() e 4 $(thing)Sementes$()."
 		},
 		{
 			"type": "patchouli:multiblock",

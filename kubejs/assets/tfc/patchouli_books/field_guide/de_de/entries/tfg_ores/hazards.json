@@ -63,7 +63,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Spring Water",
 			"item": "tfc:bucket/spring_water",
-			"text": "Standing in $(thing)Spring Water$() will provide a slow $(thing)Regeneration$() effect, though you cannot drink it."
+			"text": "In $(thing)Quellwasser$() zu stehen bietet einen langsamen $(thing)Regenrationseffekt$(), jedoch ist es nicht zum Trinken geeignet."
 		},
 		{
 			"type": "patchouli:spotlight",

@@ -16,7 +16,7 @@
       "type": "patchouli:text",
       "anchor": "lavacado",
       "text": "$(bold)$(l:the_world/climate#temperature)温度$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 100 %$(br2)熔岩鳄梨树在12月至次年4月生长，5月至6月开花，7月结果。",
-      "title": "Lavacado"
+      "title": "熔岩鳄梨"
     },
     {
       "type": "tfc:multimultiblock",
@@ -81,7 +81,7 @@
       "type": "patchouli:text",
       "anchor": "magmango",
       "text": "$(bold)$(l:the_world/climate#temperature)温度$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 30 - 100 %$(br2)岩浆芒果树在10月至次年2月生长，3月至4月开花，5月结果。",
-      "title": "Magmango"
+      "title": "岩浆芒果"
     },
     {
       "type": "tfc:multimultiblock",
@@ -161,7 +161,7 @@
           "text": "4月"
         },
         {
-          "text": "May"
+          "text": "五月"
         },
         {
           "text": "6月"
@@ -185,7 +185,7 @@
           "text": "12月"
         },
         {
-          "text": "Lavacado"
+          "text": "熔岩鳄梨"
         },
         {
           "fill": "0x6ab553"
@@ -224,7 +224,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Magmango"
+          "text": "岩浆芒果"
         },
         {
           "fill": "0x6ab553"

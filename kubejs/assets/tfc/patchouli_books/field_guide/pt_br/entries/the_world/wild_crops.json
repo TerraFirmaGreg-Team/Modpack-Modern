@@ -1,11 +1,11 @@
 {
-  "name": "Wild Crops",
+  "name": "Plantas Selvagens",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "$(thing)Plantas selvagens$() podem ser encontradas espalhadas pelo mundo, crescendo em pequenos grupos. Podem ser colhidas para alimentação e sementes, que podem ser cultivadas sob a forma não selvagem.$(br2)Pode colher plantas selvagens com suas mãos, ou com uma $(thing)Faca$() ou outra ferramenta afiada. Quando quebradas, eles vão soltar $(thing)Sementes$() e alguns $(thing)Produtos$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
+      "name": "Trigo Selvagem",
       "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Todos as $(l:mechanics/crops)plantas$() que podem ser cultivadas também podem ser encontradas na natureza. As plantas selvagens parecerão semelhantes às cultivadas, mas estão mais escondidas dentro da grama. As plantas selvagens só estão maduras de Junho a Outubro, caso contrário parecem mortas até o próximo Verão."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Todas as diferentes variedades de plantas selvagens",
       "multiblocks": [
         {
           "pattern": [
@@ -318,30 +318,30 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Procurando Plantas Selvagens"
+      "text": "Plantas selvagens aparecerão em climas próximos de onde a planta pode ser cultivada, então se procurar uma planta específica, procure no clima onde ela pode ser cultivada. Porém, ao contrário de $(l:mechanics/crops)Plantas$() que o jogador plantou, plantas selvagens não precisam de $(l:mechanics/hydration)Hidratação$().\nEm vez disso, elas aparecem em áreas dependendo da $()Temperatura$() e $()Precipitação$() médias.",
+      "title": "Encontrando Plantas Selvagens"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "As próximas páginas mostram uma tabela dos ambientes onde é possível encontrar plantas selvagens."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Planta",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitação (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Cevada"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Aveia"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Centeio"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Milho"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Trigo"
         },
         {
           "text": " -4 - 35"
@@ -386,16 +386,16 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Arroz"
         },
         {
           "text": " 15 - 30"
         },
         {
-          "text": "100 - 500"
+          "text": "100 - 500 "
         },
         {
-          "text": "Beet"
+          "text": "Beterraba"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Repolho"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Cenoura"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Alho"
         },
         {
           "text": "-20 - 18"
@@ -431,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Feijão Verde"
         },
         {
           "text": "  2 - 35"
@@ -440,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "Melancia"
         },
         {
           "text": "  5 - 37"
@@ -450,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Requisitos de Plantas Selvagens",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Planta",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitação (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Batata"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Abóbora"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Cebola"
         },
         {
           "text": "  0 - 30"
@@ -507,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "Soja"
         },
         {
           "text": "  8 - 30"
@@ -516,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "Moringa"
         },
         {
           "text": "  5 - 33"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Cana-de-Açúcar"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Tomate"
         },
         {
           "text": "  0 - 36"
@@ -543,7 +543,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Jute"
+          "text": "Juta"
         },
         {
           "text": "  5 - 37"
@@ -552,7 +552,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Papyrus"
+          "text": "Papiro"
         },
         {
           "text": " 19 - 37"
@@ -561,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "Pimentão Vermelho"
         },
         {
           "text": " 16 - 30"
@@ -570,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "Pimentão Amarelo"
         },
         {
           "text": " 16 - 30"
@@ -579,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Sunflower"
+          "text": "Girassol"
         },
         {
           "text": "  5 - 40"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Requisitos de Plantas Selvagens",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -607,15 +607,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Planta",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitação (mm)",
           "bold": true
         },
         {
@@ -628,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Flax"
+          "text": "Linho"
         },
         {
           "text": " -8 - 25"
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "Pepino"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "Rabanete"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "Lentilha"
         },
         {
           "text": " -18 - 2"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Requisitos de Plantas Selvagens",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,

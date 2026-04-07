@@ -1,40 +1,40 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Bloomery",
+	"name": "Bas Fourneau",
 	"category": "tfc:mechanics",
 	"icon": "tfc:bloomery",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(l:tfg_ores/earth_vein_index#normal_hematite)Hematite$(), $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$(), and $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+			"text": "Un $(thing)Bas Fourneau$() est un appareil utilisé pour fondre du $(thing)Minerai de Fer$() en $(thing)Loupes Ferreuses$(), qui peuvent être travaillées en $(thing)Fer Forgé$(). L'$(l:tfg_ores/earth_vein_index#normal_hematite)Hématite$(), la $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$() et la $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnétite$() sont quelques exemples de minerais de fer communs. Ces minerais deviennent de la $(thing)Fonte$() en fondant, pas du $(thing)Fer Forgé$(). Tous les items contenant du fer deviennent de la fonte en fondant, un bas fourneau est requis pour les transformer en un fer utilisable. N'importe quel item en fer peut être utilisé dans un bas fourneau, y compris des outils en fer ou des dépites de fonte !"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/bloomery",
-			"text": "The bloomery is made from 8 $(thing)Bronze Double Plates$()."
+			"text": "Le bas fourneau est fait à partir de 8 $(thing)Doubles Plaques de Bronze$()."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
-			"name": "A Bloomery",
-			"text": "A minimum size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+			"name": "Un Bas Fourneau",
+			"text": "Un bas fourneau de taille minimale. Le bloc de bas fourneau s'ouvre et se referme avec $(item)$(k:key.use)$().",
 			"enable_visualize": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form.$(br2)You can use both $(item)Charcoal$() and $(item)Coal$() as fuel for your bloomery."
+			"text": "Un bas fourneau peut contenir au maximum 48 $(thing)Items$(), soit 16 items par couche de cheminée. Pour ajouter des couches à la cheminée, empilez deux nouvelles couches de briques de pierre.$(br2)Pour ajouter des items à la cheminée, grimpez en haut et balancez-les dedans. Une tour de minerai gris devrait se former.$(br2)Vous pouvez utiliser soit du $(item)Charbon de Bois$(), soit du $(item)Charbon$() comme carburant pour votre bas fourneau."
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
 			],
-			"text": "The bloomery consumes $(thing)1 item of Fuel$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
+			"text": "Le bas fourneau consomme $(thing)1 item de Carburant$() et $(thing)144 mB de Fonte$() pour produire une $(thing)Loupe$().",
 			"border": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If you don't want to do the math, we recommend $(item)25 metal ore dusts$() and $(item)22 fuel items$().$(br2)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait 15 hours for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+			"text": "Si vous ne voulez pas calculer, nous recommandons d'utiliser $(item)25 poudres de minerai de métal$() et $(item)22 items de carburant$().$(br2)Après avoir rempli le bas fourneau d'un mélange de $(thing)Carburant$() et de $(thing)Minerai$(), allumez le bas fourneau et attendez 15 heures qu'il fonde le fer. Quand le bas fourneau s'éteint, il laisse un bloc de $(thing)Loupe$(). Celui-ci contient des $(thing)Loupes Ferreuse Brutes$(), qui peuvent être obtenues et minant la $(thing)Loupe$() plusieurs fois avec une pioche."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -51,24 +51,24 @@
 					"X": "tfc:bloom[layers=8]"
 				}
 			},
-			"name": "The Bloom Block",
-			"text": "A large $(thing)Bloom$().",
+			"name": "Le Bloc de Loupe",
+			"text": "Une grosse $(thing)Loupe$().",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/refined_iron_bloom",
-			"text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Refined Iron Bloom$()."
+			"text": "Les $(thing)Loupes Ferreuses Brutes$() doivent être travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Loupes Ferreuses Raffinées$()."
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/wrought_iron_from_bloom",
-			"text": "The $(thing)Refined Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Wrought Iron Ingots$()."
+			"text": "Les $(thing)Loupes Ferreuses Raffinées$() doivent être aussi travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Lingots de Fer Forgé$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)If the bloomery finds itself with more items contained than it can handle based on its chimney, it will try to spit them out the front.$()$(li)To retrieve your items from a bloomery that is not lit, do not break the molten block tower. Break the bloomery block.$()$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$()",
-			"title": "Smith's Notes"
+			"text": "$(li)Si le bas fourneau contient plus d'items que sa cheminée ne peut en contenir, il essaiera de les recracher par devant.$()$(li)Si vous voulez récupérer les items d'un bas fourneau qui n'a pas encore été allumé, ne cassez pas la tour de blocs fondus. Cassez le bas fourneau.$()$(li)Les loupes fondront en fonte, pas en fer forgé. Elles doivent être travaillées !$()",
+			"title": "Notes du Forgeron"
 		}
 	],
 	"read_by_default": true,

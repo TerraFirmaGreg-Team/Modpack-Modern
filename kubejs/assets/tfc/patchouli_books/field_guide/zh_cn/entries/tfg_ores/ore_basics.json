@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mining Hammer",
+            "title": "采矿锤",
             "text": "这本质上是具备3x3范围采集的镐，同样会产出$(thing)粗矿石$()。在敲落矿石后清理岩层时尤其高效！$(br2)按住$(thing)潜行$()可切换为单格采集模式。",
             "item": {
                 "tag": "forge:tools/mining_hammers"
