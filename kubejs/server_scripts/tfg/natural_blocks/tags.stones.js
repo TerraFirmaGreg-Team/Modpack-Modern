@@ -223,6 +223,7 @@ function registerTFGStoneItemTags(event) {
 
 		if (rock.spike != null) {
 			addToTfcTag(rock.spike);
+			event.add('tfg:rock_spikes', rock.spike);
 		}
 
 		if (rock.pillar != null) {
