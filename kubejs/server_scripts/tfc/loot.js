@@ -101,14 +101,6 @@ function registerTFCLoots(event) {
 		.addWeightedLoot([1, 2], ['tfc:food/gran_feline'])
 
 
-	event.addEntityLootModifier('tfc:sabertooth')
-		.addWeightedLoot([9, 14], ['tfc:food/gran_feline'])
-
-	event.addEntityLootModifier('tfc:sabertooth')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([4, 7], ['tfc:food/gran_feline'])
-
-
 	event.addEntityLootModifier('tfc:dog')
 		.addWeightedLoot([5, 8], ['tfc:food/wolf'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
@@ -320,7 +312,6 @@ function registerTFCLoots(event) {
 	event.addEntityLootModifier('tfc:rabbit')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addLoot('tfc:food/rabbit')
-		.addWeightedLoot([0, 1], ['tfc:blubber'])
 
 
 	event.addEntityLootModifier('tfc:sheep')
