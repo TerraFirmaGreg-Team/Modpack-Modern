@@ -17,5 +17,25 @@
                 "top": 1
             }
         }
+    },
+    "com.simibubi.create.content.logistics.stockTicker.StockKeeperRequestScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 5,
+                "top": -2
+            }
+        }
     }
 }
