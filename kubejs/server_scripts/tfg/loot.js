@@ -88,6 +88,17 @@ function registerTFGLoots(event) {
 		.removeLoot(Ingredient.all)
 		.addLoot('minecraft:campfire')
 
+	event.addBlockLootModifier('tfg:large_nest_box')
+		.removeLoot('tfg:large_nest_box')
+		.customCondition({
+				block: "tfg:large_nest_box",
+				condition: "minecraft:block_state_property",
+				properties: {
+					nest_part: "0"
+				}
+			})
+		.addLoot('tfg:large_nest_box')
+
 	//#endregion
 
 	//Cross-mod glass compat
