@@ -523,6 +523,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:fishing_rod',
     'minecraft:brewing_stand',
     'minecraft:warped_fungus_on_a_stick', 
+    'minecraft:crimson_roots', 
+    'minecraft:nether_sprouts', 
     'minecraft:carrot_on_a_stick',
     'minecraft:carrot',
     'minecraft:melon',
@@ -626,6 +628,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:grindstone',
     'minecraft:fermented_spider_eye',
     'minecraft:ender_eye',
+    'minecraft:turtle_helmet',
+    'minecraft:budding_amethyst',
+    'minecraft:small_amethyst_bud',
+    'minecraft:medium_amethyst_bud',
+    'minecraft:large_amethyst_bud',
+    'minecraft:disc_fragment_5',
 
     // Кримзон незер дерево
     'minecraft:crimson_stem', 
@@ -694,22 +702,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
 global.MINECRAFT_HIDED_ITEMS = [
     '/spawn_egg/',
     
-    /*
-    'minecraft:exposed_copper', 
-    'minecraft:exposed_cut_copper', 
-    'minecraft:exposed_cut_copper_stairs', 
-    'minecraft:exposed_cut_copper_slab', 
-    'minecraft:weathered_copper', 
-    'minecraft:weathered_cut_copper', 
-    'minecraft:weathered_cut_copper_stairs', 
-    'minecraft:weathered_cut_copper_slab', 
-    'minecraft:oxidized_copper', 
-    'minecraft:oxidized_cut_copper', 
-    'minecraft:oxidized_cut_copper_stairs', 
-    'minecraft:oxidized_cut_copper_slab',*/
-
-    'minecraft:crimson_fungus',
-    'minecraft:warped_fungus',
+    'minecraft:cobweb',
+    'minecraft:bedrock',
 
     "minecraft:raw_iron_block",
     "minecraft:raw_copper_block",

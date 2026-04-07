@@ -191,6 +191,7 @@ LootJS.modifiers((event) => {
 	registerBeneathLoots(event)
 	registerTFGRockLoots(event)
 	registerTFGOreLoots(event)
+	registerMinecraftLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
 	registerSpeciesLoots(event)

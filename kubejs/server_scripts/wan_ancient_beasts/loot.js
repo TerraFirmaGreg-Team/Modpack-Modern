@@ -65,4 +65,23 @@ function registerWansAncientBeastsLoots(event) {
 	event.addEntityLootModifier('tfg:surfer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([3, 4], ['tfg:food/raw_surfer_steak'])
+
+
+	event.addLootTableModifier('wan_ancient_beasts:chests/abandoned_village').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_peaks').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_plains').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_taiga').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_icespikes').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_desert').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_jungle').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_badlands').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_savanna').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/digsite_oldgrowthtaiga').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/badlands_temple').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/desert_temple').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/ice_castle').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/ruined_castle').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/dead_coral').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/training_outpost').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('wan_ancient_beasts:chests/ancient_nest').removeLoot(ItemFilter.ALWAYS_TRUE)
 }

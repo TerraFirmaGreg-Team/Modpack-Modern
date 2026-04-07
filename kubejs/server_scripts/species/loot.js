@@ -64,4 +64,14 @@ function registerSpeciesLoots(event) {
 		.addWeightedLoot([2, 4], ['create:copper_sheet'])
 		.addSequenceLoot(LootEntry.of('create:precision_mechanism').when(c => c.randomChance(0.5)))
 		.addSequenceLoot(LootEntry.of('species:kinetic_core').when(c => c.randomChance(0.2)))
+
+
+	event.addEntityLootModifier('species:wraptor').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:deepfish').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:ghoul').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:bewereager').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:spectre').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:wicked').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('species:chests/libra_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('species:chests/wraptor_coop_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
 }

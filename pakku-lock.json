@@ -759,6 +759,69 @@
             ]
         },
         {
+            "pakku_id": "vDd4XicVJIvQjgqc",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "advanced-loot-info",
+                "modrinth": "advanced-loot-info"
+            },
+            "name": {
+                "curseforge": "Advanced Loot Info",
+                "modrinth": "Advanced Loot Info"
+            },
+            "id": {
+                "curseforge": "1205426",
+                "modrinth": "PEPVViac"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7873/360/AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "id": "7873360",
+                    "parent_id": "1205426",
+                    "hashes": {
+                        "sha1": "0bac90e85efbab8c4257ac64c8d37839f4f10be6",
+                        "md5": "863f39bfbe1994439fce89722cdf0332"
+                    },
+                    "required_dependencies": [],
+                    "size": 724691,
+                    "date_published": "2026-04-04T15:07:06.990Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/QnZi0UD1/AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "id": "QnZi0UD1",
+                    "parent_id": "PEPVViac",
+                    "hashes": {
+                        "sha512": "d6f53fceaf9e178955d338a2740e2d059e8fdcca4dd38a5fc58c54d617cf0655ecc0b51cb5a4ab9caf341e7f6124e44f4913f38b74203e60904e233a206a70d4",
+                        "sha1": "0bac90e85efbab8c4257ac64c8d37839f4f10be6"
+                    },
+                    "required_dependencies": [],
+                    "size": 724691,
+                    "date_published": "2026-04-04T15:07:00.249168Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "F5HxgTY5cUnKQx1S",
             "pakku_links": [
                 "SA19Vecc1QTF7Kih"
