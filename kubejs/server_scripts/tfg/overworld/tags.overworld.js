@@ -118,11 +118,12 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfc:can_carve', 'tfg:gilsonite');
 
     event.add("tfc:monster_spawns_on", "beneath:crackrack");
-	event.add("tfc:monster_spawns_on", "minecraft:deepslate");
-	event.add("tfc:monster_spawns_on", "tfg:rock/hardened_deepslate");
+	event.add("tfc:monster_spawns_on", "minecraft:calcite");
 	event.add("tfc:monster_spawns_on", "tfg:mafic_hornfels");
 	event.add("tfc:monster_spawns_on", "tfg:carbonate_hornfels");
 	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
+	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
+	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
 }
 
 function registerTFGOverworldBiomeTags(event) {

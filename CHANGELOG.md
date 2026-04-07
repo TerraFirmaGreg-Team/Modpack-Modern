@@ -20,6 +20,8 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Added a recipe to craft honeyed apples (#3661) @Froffy025
 - Added recipes for copper shingles, tiles, and related blocks, and adjusted the recipes of other decorative copper blocks (#3630) @Nixieeunrare
 - Bulgogi, Bratwurst, Tandoori Chicken, and Tonkatsu can now go in sandwiches (#3617) @Froffy025
+- Drowned now only spawn with javelins 1/3 of the time, and will never spawn with a trident @Pyritie
+- Reduced the amount of overworld monsters a little @Pyritie
 - More performance improvements @Mqrius
 ### Bug fixes
 - Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
