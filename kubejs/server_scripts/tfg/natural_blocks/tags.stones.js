@@ -190,6 +190,7 @@ function registerTFGStoneItemTags(event) {
 		if (rock.gravel != null) {
 			addToTfcTag(rock.gravel);
 			addToMaterialTag(material, rock.gravel);
+			event.add('tfc:rock/gravel', rock.gravel);
 			if (rock.gravelTag != null) {
 				event.add(rock.gravelTag, rock.gravel);
 			}
