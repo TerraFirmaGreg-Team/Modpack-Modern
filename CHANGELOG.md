@@ -24,6 +24,8 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Reduced the amount of overworld monsters a little @Pyritie
 - More performance improvements @Mqrius
 - Added bladders and rennet to sniffers' drop table and rennet to glacian sheep @Pyritie
+- Slightly reduced the amount of metal dusts from panning/sluicing deposits @Pyritie
+- Added EMI tabs for entity drops, chest loot, fishing loot, panning, and sluicing @Pyritie
 ### Bug fixes
 - Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
 - Fixed various TFG-created rock blocks (mossy cobbles, etc) not requiring a pickaxe to mine (#3725) @Pyritie
