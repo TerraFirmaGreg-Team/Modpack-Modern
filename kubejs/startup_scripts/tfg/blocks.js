@@ -54,21 +54,5 @@ const registerTFGBlocks = (event) => {
 			.velocity(0, 2, 0)
 			.particle('minecraft:bubble_column_up'))
 		.emitDelay(5);
-
-	// Temporary, remove in 0.12
-	event.create('gtceu:ostrum_linear_accelerator')
-		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
 	
-	event.create('gtceu:steam_bloomery')
-		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
-	event.create('gtceu:heat_exchanger')
-		.tagBlock('gtceu:mineable/pickaxe_or_wrench')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-
 }
