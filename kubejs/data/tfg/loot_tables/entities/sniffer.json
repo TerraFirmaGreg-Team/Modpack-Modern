@@ -75,6 +75,42 @@
 					"name": "tfc:large_raw_hide"
 				}
 			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:rennet",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 6
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "waterflasks:bladder",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 1,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 }

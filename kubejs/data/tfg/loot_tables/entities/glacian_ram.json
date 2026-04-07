@@ -75,6 +75,22 @@
 					"name": "tfc:small_sheepskin_hide"
 				}
 			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "firmalife:rennet",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 4
+						}
+					]
+				}
+			]
 		}
 	]
 }

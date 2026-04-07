@@ -186,7 +186,7 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:leopard_seal')
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 		.addWeightedLoot([1, 4], ['minecraft:bone'])
-		.addWeightedLoot([1], ['tfc:medium_raw_hide'])
+		.addLoot(LootEntry.of('tfc:medium_raw_hide', 1))
 	
 	// Leopard seal extra with butchery knife
 	event.addEntityLootModifier('tfg:leopard_seal')
@@ -197,8 +197,10 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:bison')
 		.addWeightedLoot([12, 20], ['tfg:food/raw_bison_meat'])
 		.addWeightedLoot([7, 10], ['minecraft:bone'])
-		.addWeightedLoot([1], ['tfc:large_raw_hide'])
+		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addLoot(LootEntry.of('firmalife:rennet', 4))
 	
 	// Bison drop extra with butchery knife
 	event.addEntityLootModifier('tfg:bison')
@@ -216,5 +218,5 @@ function registerTFGLoots(event) {
 	
 	event.addEntityLootModifier('tfg:mongoose')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
-		.addWeightedLoot([1], ['tfc:small_raw_hide'])
+		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
 };

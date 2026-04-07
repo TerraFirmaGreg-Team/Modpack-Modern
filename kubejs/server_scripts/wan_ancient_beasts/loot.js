@@ -47,6 +47,7 @@ function registerWansAncientBeastsLoots(event) {
 		.addWeightedLoot([25, 35], ['tfg:food/raw_walker_steak'])
 		.addWeightedLoot([4, 8], ['tfc:blubber'])
 		.addSequenceLoot(LootEntry.of('wan_ancient_beasts:walker_egg').when(c => c.randomChance(0.1)))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
 
 	event.addEntityLootModifier('wan_ancient_beasts:walker')
 		.matchMainHand('#forge:tools/butchery_knives')

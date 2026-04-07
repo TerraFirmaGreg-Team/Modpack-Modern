@@ -8,8 +8,12 @@ function registerTFCLoots(event) {
 	// Hostile animals
 
 	event.addEntityLootModifier('tfc:black_bear')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:black_bear_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([8, 12], ['tfc:food/bear'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
 
 	event.addEntityLootModifier('tfc:black_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -17,6 +21,8 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:panda')
+		.addLoot('tfc:large_raw_hide')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([8, 12], ['tfc:food/bear'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
@@ -26,8 +32,12 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:grizzly_bear')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:grizzly_bear_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([10, 16], ['tfc:food/bear'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
 
 	event.addEntityLootModifier('tfc:grizzly_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -35,8 +45,12 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:polar_bear')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:polar_bear_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([14, 20], ['tfc:food/bear'])
 		.addWeightedLoot([6, 12], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
 
 	event.addEntityLootModifier('tfc:polar_bear')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -45,6 +59,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:cougar')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:cougar_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([6, 10], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:cougar')
@@ -53,6 +70,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:panther')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:panther_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([6, 10], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:panther')
@@ -61,6 +81,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:sabertooth')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:sabertooth_fur')
+		.addWeightedLoot([1, 8], ['minecraft:bone'])
 		.addWeightedLoot([9, 14], ['tfc:food/gran_feline'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
@@ -70,6 +93,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:lion')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:lion_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([9, 14], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:lion')
@@ -78,6 +104,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:tiger')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:tiger_fur')
+		.addWeightedLoot([1, 7], ['minecraft:bone'])
 		.addWeightedLoot([9, 14], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:tiger')
@@ -86,6 +115,7 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:ocelot')
+		.addWeightedLoot([1, 2], ['minecraft:bone'])
 		.addWeightedLoot([2, 5], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:ocelot')
@@ -119,6 +149,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:direwolf')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:direwolf_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([8, 12], ['tfc:food/wolf'])
 
 	event.addEntityLootModifier('tfc:direwolf')
@@ -143,6 +176,9 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:crocodile')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:crocodile_leather')
+		.addWeightedLoot([1, 7], ['minecraft:bone'])
 		.addWeightedLoot([5, 10], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 		.addSequenceLoot(LootEntry.of('tfc:metal/fish_hook/copper').when(c => c.randomChance(0.2)))
 
@@ -152,6 +188,9 @@ function registerTFCLoots(event) {
 
 
 	// Passive animals
+
+	event.addEntityLootModifier('tfc:alpaca')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
 
 	event.addEntityLootModifier('tfc:alpaca')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -169,9 +208,12 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
-		
+
 
 	event.addEntityLootModifier('tfc:caribou')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('tfc_textile:caribou_fur')
+		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfc:caribou')
@@ -185,6 +227,10 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:cow')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+		.addLoot(LootEntry.of('firmalife:rennet', 6))
+
+	event.addEntityLootModifier('tfc:cow')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 12], ['tfc:food/beef'])
 		.addWeightedLoot([2, 4], ['tfc:blubber'])
@@ -194,7 +240,7 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 4], ['tfc:food/venison'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
-		
+
 
 	event.addEntityLootModifier('tfc:dolphin')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
@@ -205,6 +251,9 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
+
+	event.addEntityLootModifier('tfc:donkey')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
 
 	event.addEntityLootModifier('tfc:donkey')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -229,6 +278,10 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:goat')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addLoot(LootEntry.of('firmalife:rennet', 4))
+
+	event.addEntityLootModifier('tfc:goat')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([4, 6], ['tfc:food/chevon'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
@@ -238,6 +291,9 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([1, 2], ['tfc:food/grouse'])
 
+
+	event.addEntityLootModifier('tfc:horse')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
 
 	event.addEntityLootModifier('tfc:horse')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -256,19 +312,27 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:moose')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+
+	event.addEntityLootModifier('tfc:moose')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([5, 10], ['tfc:food/venison'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
 
 	event.addEntityLootModifier('tfc:mule')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.2)))
+
+	event.addEntityLootModifier('tfc:mule')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/horse_meat'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
-		
+
 
 	event.addEntityLootModifier('tfc:musk_ox')
 		.addWeightedLoot([2, 4], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+		.addLoot(LootEntry.of('firmalife:rennet', 6))
 
 	event.addEntityLootModifier('tfc:musk_ox')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -315,6 +379,10 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:sheep')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addLoot(LootEntry.of('firmalife:rennet', 6))
+
+	event.addEntityLootModifier('tfc:sheep')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([6, 9], ['tfc:food/mutton'])
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
@@ -337,6 +405,10 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:yak')
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+		.addLoot(LootEntry.of('firmalife:rennet', 4))
+
+	event.addEntityLootModifier('tfc:yak')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/chevon'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
@@ -346,7 +418,7 @@ function registerTFCLoots(event) {
 
 	event.addBlockLootModifier('minecraft:ice')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
-	
+
 	event.addBlockLootModifier('minecraft:ice')
 		.not(n => n.matchMainHand("#tfg:silk_harvest_ice"))
 		.addLoot('firmalife:ice_shavings')
