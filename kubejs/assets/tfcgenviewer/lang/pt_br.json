@@ -1,5 +1,6 @@
 {
   "button.tfcgenviewer.save": "Salvar",
+  "tfcgenviewer.preview_world.visualizer_type.rainfall": "Precipitação",
   "tfcgenviewer.preview_world.visualizer_type.rocks": "Rochas",
   "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.rock_editor.confirm": "Confirmar",
@@ -20,6 +21,12 @@
   "rock.tfc.schist": "Xisto",
   "rock.tfc.shale": "Folhelho",
   "rock.tfc.slate": "Ardósia",
+  "tfcgenviewer.climate.rainfall": "Precipitação, 0mm -> 500mm",
+  "tfcgenviewer.rainfall.0": "0 a 100 mm",
+  "tfcgenviewer.rainfall.1": "100 a 200 mm",
+  "tfcgenviewer.rainfall.2": "200 a 300 mm",
+  "tfcgenviewer.rainfall.3": "300 a 400 mm",
+  "tfcgenviewer.rainfall.4": "400 a 500 mm",
   "tfcgenviewer.biome_altitude.low": " Baixo",
   "tfcgenviewer.biome_altitude.medium": "Médio",
   "tfcgenviewer.biome_altitude.high": " Alto"

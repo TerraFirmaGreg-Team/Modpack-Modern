@@ -1,12 +1,12 @@
 {
-	"name": "Trowel",
+	"name": "抹刀",
 	"icon": "tfg:trowel",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"title": "Trowel",
+			"title": "抹刀",
 			"recipe": "tfg:shaped/trowel",
 			"text": "$(item)抹刀$()允许建筑者右键点击表面时，从其快捷栏中随机放置方块。$(br2)抹刀还内置了对$(item)道路与屋顶$()模组的功能支持——意味着它同样可以随机放置如砖块或板岩之类的填充物。"
 		},

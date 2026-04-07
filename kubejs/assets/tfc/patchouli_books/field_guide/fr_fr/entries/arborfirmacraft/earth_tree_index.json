@@ -1,12 +1,12 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Index des Arbres Terriens",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tree in the world, and what climates they grow in.$(br2)Looking for particular wood type to decorate your base? This should help you find it. The list is sorted alphabetically by wood type.$(br2)Also check out the $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
+			"text": "Voici une liste de tous les arbres du monde, ans dans quels climats ils poussent.$(br2)Vous cherchez un type de bois particulier pour décorer votre base ? Cela devrait vous aider à le trouver. Cette liste est triée alphabétiquement en anglais par type de bois.$(br2)Voir aussi $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
 		},
 		{
 			"type": "patchouli:spotlight",

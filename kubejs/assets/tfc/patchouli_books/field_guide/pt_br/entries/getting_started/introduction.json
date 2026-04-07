@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Introduction",
+	"name": "Introdução",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
 	"pages": [
@@ -36,7 +36,7 @@
 					"5": "tfc:wood/twig/ash"
 				}
 			},
-			"name": "Example",
+			"name": "Exemplo ",
 			"text": "A smattering of common sticks and stones.",
 			"enable_visualize": false
 		},
@@ -49,7 +49,7 @@
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "The Knapping Interface.",
+			"text": "A Interface de Talhar.",
 			"border": false
 		},
 		{
@@ -65,7 +65,7 @@
 				"tfg:rock_knapping/stone_knife_head_2",
 				"tfg:rock_knapping/stone_knife_head_3"
 			],
-			"text": "A knife blade, crafted from several different rock types."
+			"text": "Uma lâmina de faca, feita de vários tipos diferentes de pedra."
 		},
 		{
 			"type": "patchouli:crafting",

@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Zioła i Przyprawy",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "W Firmalife, istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, które są używane w gotowaniu. Można je znaleźć w środowisku naturalnym i po zebraniu, mogą być uprawiane w  $(l:firmalife/grejpfrut)Szklarni$(), w której zużywają 20 punktów N, P i K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Bazylia",
+			"text": "$(thing)Dzika Bazylia$() rośnie od 12 do 25C oraz od 300 do 500 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "Wawrzyn Szlachetny",
+			"text": "$(thing)Dziki Wawrzyn Szlachetny$() rośnie między 8 a 14C i 25 do 225 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "Kardamon",
+			"text": "$(thing)Dziki Kardamon$() rośnie od 18 do 30C oraz od 350 do 500 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "Kolendra",
+			"text": "$(thing)Dzika Kolendra$() rośnie od 5 do 15C, i od 0 do 150 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "Kmin Rzymski",
+			"text": "$(thing)Dziki Kmin Rzymski$() rośnie między 6 a 20C, i od 50 do 250 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -209,7 +209,7 @@
 				}
 			],
 			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"text": "$(thing)Dzikie Oregano$() rośnie od 5 do 13C oraz od 50 do 150 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -242,8 +242,8 @@
 					}
 				}
 			],
-			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"name": "Ziele Angielskie",
+			"text": "$(thing)Dzikie Ziele Angielskie$() rośnie między 15 a 30C oraz od 200 do 450 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
@@ -276,14 +276,14 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "Wanilia",
+			"text": "$(thing)Dzika Wanilia$() rośnie od 18 do 30C oraz od 200 do 500 mm opadów deszczowych.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)Kula nasienna() może być użyta do posadzenia różnego rodzaju traw. Może być użyteczna po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasiona$()."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Trawa Łąkowa.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "Trawa Łąkowa dojrzewa z upływem czasu. Gdy dojrzeje, ma szansę rozprzestrzenić się na otaczające bloki lub zamienić się w coś nowego. Bloki Trawy Łąkowej rozdzielone przez inny blok trawy nie rozprzestrzeniają się.$(br)Po tym, jak Trawa Łąkowa zamieni się w inną trawę, możesz ją zebrać za pomocą $(item)Nożyc$()."
 		}
 	],
 	"read_by_default": true,

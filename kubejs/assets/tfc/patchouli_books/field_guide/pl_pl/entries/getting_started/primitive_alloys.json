@@ -1,68 +1,68 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Primitive Alloys",
+	"name": "Podstawowe Stopy Metali",
 	"category": "tfc:getting_started",
 	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+			"text": "$(thing)Stopy$() to metoda mieszania dwóch lub więcej metali razem, aby stworzyć nowy, silniejszy metal. We wczesnym etapie gry, miedź jest użytecznym metalem do tworzenia narzędzi, następnym poziomem metalu jest jeden z trzech typów $(thing)Brązu$(). Stop składa się ze składników $(thing)metalów$(), które muszą spełniać określony procent całości."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:getting_started/finding_ores#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+			"text": "Jedną z metod, za pomocą której stopy mogą być wykonane we wczesnej grze, jest użycie $(thing)Małej Wazy$(). Proces jest bardzo podobny do $(l:getting_started/finding_ores#casting)Odlewania$(). Zamiast jednak użycia tylko jednego metalu, należy umieścić wystarczającą ilość części rudy w wazie we właściwym stosunku do znanej mieszanki stopowej."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "Na przykład, aby utworzyć 1000 mB  $(thing)Brązu$() (widoczne z prawej), potrzebujesz od 700 do 800 mB  $(thing)Miedzi$(), oraz od 200 do 300 mB  $(thing)Cyny$().$(br2)Kolejne trzy strony pokazują receptury trzech rodzajów brązu. Każdy rodzaj brązu może być użyty do produkcji narzędzi, $(l:mechanics/zbroi)Zbroi$() i innych metalowych przedmiotów. Są one nieco inne, a więc powstałe w ich wyniku narzędzia będą miały różną trwałość, wydajność i wartość zadawania ataków."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
-			"title": "Bronze",
+			"title": "Brąz",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedzi$()$(li)20 - 30 % : $(thing)Cyny$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Bismuth Bronze",
+			"title": "Brąz Bizmutowy",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 30 % : $(thing)Cynku$()$(li)50 - 65 % : $(thing)Miedzi$()$(li)10 - 20 % : $(thing)Bismutu$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Black Bronze",
+			"title": "Czarny Brąz",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)50 - 70 % : $(thing)Miedzi$()$(li)10 - 25 % : $(thing)Srebra$()$(li)10 - 25 % : $(thing)Złota$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
-			"title": "Utility Alloys"
+			"text": "Inne stopy nie nadają się do tworzenia narzędzi. Są to $(thing)Mosiądz$(), $(thing)Różowe Złoto$() oraz $(thing)Szczere Srebro$().$(br2)$(thing)Mosiądz$() jest przydatnym stopem dla wszelkiego rodzaju przyrządów, w tym $(l:mechanics/mechanical_power)Siły Mechanicznej$().$(br2)$(thing)Różowe Złoto$() i $(thing)Szczere Srebro$() są używane do wytwarzania $(l:mechanics/steel#red_steel)Czerwonej Stali$() i $(l:mechanics/steel#blue_steel)Niebieskiej Stali$().",
+			"title": "Użytkowe Stopy"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "mosiądz",
 			"item": "create:brass_ingot",
-			"title": "Brass",
+			"title": "Mosiądz",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedzi$()$(li)20 - 30 % : $(thing)Cyny$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "Różane złoto",
+			"title": "Różowe Złoto",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)15 - 30 % : $(thing)Miedzi$()$(li)70 - 85 % : $(thing)Złota$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Srebro standardowe",
+			"title": "Szczere Srebro",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedzi$()$(li)60 - 80 % : $(thing)Srebra$()$(br2)"
 		}
 	],
 	"read_by_default": true,

@@ -1,12 +1,12 @@
 {
-	"name": "Harvest Baskets",
+	"name": "Лукошки",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Harvest Baskets",
+			"title": "Лукошки",
 			"item": {
 				"tag": "tfg:harvester"
 			},
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Harvest Basket",
+			"title": "Лукошко",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
 			"text": "Обычное $(item)Лукошко$() может быть сделано из пропитанного папируса или твердой древесины."
 		}

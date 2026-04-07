@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Travertine",
+			"title": "Травертин",
 			"item": {
 				"tag": "forge:ores_in_ground/dripstone"
 			},
@@ -47,7 +47,7 @@
 					"X": "beneath:ore/nether_cursecoal"
 				}
 			},
-			"name": "Anthracite",
+			"name": "Антрацит",
 			"text": "Антрацит — це потужне $(l:beneath/hellforge)паливо$(). Його можна знайти в Мігматиті у верхній половині Безодні.",
 			"enable_visualize": false
 		}

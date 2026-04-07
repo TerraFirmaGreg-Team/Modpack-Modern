@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Лицевая маска",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка."
 		},

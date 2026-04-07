@@ -42,7 +42,7 @@
             "type": "patchouli:crafting",
             "title": "Purifying dust",
             "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
-            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
+            "text": "Um die zerkleinerten Erze zu noch mehr mB zu schmelzen, platziere sie erst in ein crafting grid mit einem $(thing)Hammer$(). Dies wird $(thing)Unreines Pulver$() herstellen. Wirf das Pulver in Wasser oder einen mit Wasser gefüllten $(item)$(k:key.use)$() a $(thing)Kessel$(), um das Pulver zu reinigen."
         }
     ]
 }

@@ -62,7 +62,7 @@
             "X": "tfc:groundcover/pumice"
           }
         },
-        "name": "Pumice",
+        "name": "浮石",
         "text": "地上的浮石。",
         "enable_visualize": false
       },
@@ -96,20 +96,20 @@
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "硬木条",
         "recipe": "tfg:crafting/strip_hardwood",
         "text": "接着，用斧头切削已去皮的木材得到 $(item)硬木条$()。这也可以使用斧具或更精密的方法完成"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "浸泡硬木条",
         "recipe": "tfg:barrel/soak_hardwood_strip",
         "text": "将硬木条放入盛有$(thing)淡水$()的$(l:mechanics/barrels)大木桶$()中浸泡，此步骤将$(thing)削弱木材结构强度$()以便$(thing)进一步分解$()"
       },
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
+        "title": "硬木浆",
         "text": "随后使用$(l:mechanics/quern)手推磨$()将浸水硬木条磨碎成$(item)硬木浆$()"
       },
       {

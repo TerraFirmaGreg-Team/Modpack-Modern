@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Herbes et épices",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Basilic",
+			"text": "$(thing)Basil$() grandit entre 12 et 25C, et 300 à 500 mm de pluie.",
 			"enable_visualize": false
 		},
 		{
@@ -72,7 +72,7 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
+			"name": "Laurier",
 			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -106,7 +106,7 @@
 					}
 				}
 			],
-			"name": "Cardamom",
+			"name": "Cardamome",
 			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -140,7 +140,7 @@
 					}
 				}
 			],
-			"name": "Cilantro",
+			"name": "Coriandre",
 			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -175,7 +175,7 @@
 				}
 			],
 			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"text": "$(thing)Wild Cumin$() grandit entre 6 et 20C, et entre 50 et 250mm de pluie.",
 			"enable_visualize": false
 		},
 		{
@@ -208,7 +208,7 @@
 					}
 				}
 			],
-			"name": "Oregano",
+			"name": "Origan",
 			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -242,7 +242,7 @@
 					}
 				}
 			],
-			"name": "Pimento",
+			"name": "Piment",
 			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
 			"enable_visualize": false
 		},
@@ -276,7 +276,7 @@
 					}
 				}
 			],
-			"name": "Vanilla",
+			"name": "Vanille",
 			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
 			"enable_visualize": false
 		},
