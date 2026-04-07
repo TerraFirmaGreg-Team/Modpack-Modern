@@ -134,12 +134,7 @@ const registerCreateBlockTags = (event) => {
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
 	event.removeAll('create:fan_processing_catalysts/haunting')
-
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
+	event.removeAll('create:fan_processing_catalysts/splashing')
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
@@ -207,10 +202,5 @@ const registerCreateFluidTags = (event) => {
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
 	event.removeAll('create:fan_processing_catalysts/haunting')
-	
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
+	event.removeAll('create:fan_processing_catalysts/splashing')
 }
