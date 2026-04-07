@@ -1,5 +1,5 @@
 {
-  "name": "Concrete Roads",
+  "name": "Бетонные дороги",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Concrete Road",
+      "title": "Бетонная дорога",
       "images": [
       "rnr:textures/gui/book/concrete_road.png"
       ],

@@ -1,5 +1,5 @@
 {
-  "name": "Wild Crops",
+  "name": "Cultures sauvages",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
@@ -22,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "name": "Blé sauvage",
+      "text": "Un exemple de culture sauvage, dans ce cas $(l:mechanics/crops#wheat)Blé$().",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Chaque $(l:mechanics/crops)crop$() qui peut être cultivé peut aussi être trouvé dans la nature. Les cultures sauvages ressembleront à leurs homologues cultivés, mais sont plus cachées dans l'herbe. Les cultures sauvages ne sont mûries que de juin à octobre, sinon elles sont mortes jusqu'à l'été prochain."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Toutes les variétés de cultures sauvages",
       "multiblocks": [
         {
           "pattern": [
@@ -318,30 +318,30 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "text": "Les cultures sauvages vont apparaître dans les climats près de l'endroit où la culture peut être cultivée, donc si vous cherchez une culture spécifique, regardez dans le climat où la culture peut être cultivée. Cependant, contrairement à $(l:mechanics/crops)Crops$() que le joueur a planté, les cultures sauvages n'ont pas besoin de $(l:mechanics/hydration)Hydration$(). À la place, ils sont trouvés dans les zones en fonction de la moyenne de $()Temperature$() et de $()Rainfall$().",
+      "title": "Trouver les cultures sauvages"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Les pages suivantes montrent un tableau des environnements où se trouvent les cultures sauvages."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Culture",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Température (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Précipitations (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Orge"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Avoine"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Seigle"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Maïs"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Blé"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Riz"
         },
         {
           "text": " 15 - 30"
@@ -395,7 +395,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Beet"
+          "text": "Betterave"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Chou"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Carotte"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Ail"
         },
         {
           "text": "-20 - 18"
@@ -431,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Haricot vert"
         },
         {
           "text": "  2 - 35"
@@ -440,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "Pastèque"
         },
         {
           "text": "  5 - 37"
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Culture",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Température (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Précipitations (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Pomme de terre"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Citrouille"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Oignon"
         },
         {
           "text": "  0 - 30"
@@ -607,15 +607,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Culture",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Température (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Précipitations (mm)",
           "bold": true
         },
         {

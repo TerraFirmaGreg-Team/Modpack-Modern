@@ -1,5 +1,5 @@
 {
-	"name": "Frequently Asked Questions",
+	"name": "Często Zadawane Pytania",
 	"icon": "minecraft:spyglass",
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
@@ -17,7 +17,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "boats",
-			"text": "$(italic)Why did my boat sink?$()$(br2)Build your boat on land, then push it or use a $(item)Lead$() to launch it. If it's already sunk, too bad, make another one."
+			"text": "$(italic)Dlaczego moja łódź zatonęła?$()$(br2)Zbuduj swoją łódź na lądzie, a następnie popchnij ją lub użyj $(item)Lead$() aby ją zwodować. Jeżeli już zatonęła, to masz pecha, musisz zbudować nową."
 		},
 		{
 			"type": "patchouli:text",

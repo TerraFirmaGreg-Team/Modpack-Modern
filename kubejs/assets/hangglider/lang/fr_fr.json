@@ -1,4 +1,7 @@
 {
-  "item.hangglider.hang_glider": "Hang Glider",
-  "itemGroup.hangglider.main": "Hang Glider"
+  "item.hangglider.glider_framework": "Structure de deltaplane",
+  "item.hangglider.glider_wing": "Aile de deltaplane",
+  "item.hangglider.hang_glider": "Deltaplane",
+  "item.hangglider.reinforced_hang_glider": "Deltaplane renforcé",
+  "itemGroup.hangglider.main": "Deltaplane"
 }

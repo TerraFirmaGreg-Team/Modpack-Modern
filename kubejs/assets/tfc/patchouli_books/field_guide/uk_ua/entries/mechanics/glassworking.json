@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "Silica Glass Batch",
+      "title": "Порція кремнеземного скла",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "Порції для скла можна виготовити з одного з вищезгаданих кольорів піску, додавши $(l:mechanics/glassworking#lime)вапно$() та один із різновидів $(l:mechanics/glassworking#potash)поташу$()."
     },
@@ -30,7 +30,7 @@
     {
       "type": "patchouli:text",
       "text": "Склоробство починається зі скляної суміші, після чого виконується серія кроків. Для цього можуть знадобитися спеціальні інструменти:$(br)\n$(li)$(l:mechanics/glassworking#blowpipe)Склодувна трубка$(), щоб $(thing)видувати$() та $(thing)розтягувати$()\n$(li)$(l:mechanics/glassworking#paddle)Лопатка$(), щоб $(thing)розплющувати$()\n$(li)$(l:mechanics/glassworking#jacks)Щипці$(), щоб $(thing)затискати$()\n$(li)$(l:mechanics/glassworking#saw)Ювелірна пилка$(), щоб $(thing)пиляти$()",
-      "title": "Tools of the Trade"
+      "title": "Інструменти ремесла"
     },
     {
       "type": "tfc:knapping_recipe",

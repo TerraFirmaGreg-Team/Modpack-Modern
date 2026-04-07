@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "barley",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
-			"title": "Barley"
+			"title": "Cevada"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -194,7 +194,7 @@
 			"type": "patchouli:text",
 			"anchor": "oat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
-			"title": "Oat"
+			"title": "Aveia"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -342,7 +342,7 @@
 			"type": "patchouli:text",
 			"anchor": "rye",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
-			"title": "Rye"
+			"title": "Centeio"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
-			"title": "Maize"
+			"title": "Milho"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -628,7 +628,7 @@
 			"type": "patchouli:text",
 			"anchor": "wheat",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
-			"title": "Wheat"
+			"title": "Trigo"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -776,7 +776,7 @@
 			"type": "patchouli:text",
 			"anchor": "rice",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
-			"title": "Rice"
+			"title": "Arroz"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -924,7 +924,7 @@
 			"type": "patchouli:text",
 			"anchor": "beet",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
-			"title": "Beet"
+			"title": "Beterraba"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1038,7 +1038,7 @@
 			"type": "patchouli:text",
 			"anchor": "cabbage",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
-			"title": "Cabbage"
+			"title": "Repolho"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1152,7 +1152,7 @@
 			"type": "patchouli:text",
 			"anchor": "carrot",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
-			"title": "Carrot"
+			"title": "Cenoura"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1249,7 +1249,7 @@
 			"type": "patchouli:text",
 			"anchor": "garlic",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
-			"title": "Garlic"
+			"title": "Alho"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2394,7 +2394,7 @@
 			"type": "patchouli:text",
 			"anchor": "soybean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Soybean is a single block crop. Soybean seeds can be planted on farmland and will produce $(thing)Soybean$() and $(thing)Soybean Seeds$() as a product.",
-			"title": "Soybean"
+			"title": "Soja"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2525,7 +2525,7 @@
 			"type": "patchouli:text",
 			"anchor": "squash",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 23 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Squash is a single block crop. Squash seeds can be planted on farmland and will produce $(thing)Squash$() and $(thing)Squash Seeds$() as a product.",
-			"title": "Squash"
+			"title": "Moringa"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2673,7 +2673,7 @@
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-			"title": "Sugarcane"
+			"title": "Cana-de-Açúcar"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3033,7 +3033,7 @@
 			"type": "patchouli:text",
 			"anchor": "jute",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Jute is a two block tall crop. Jute seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Jute$() and $(thing)Jute Seeds$() as a product.",
-			"title": "Jute"
+			"title": "Juta"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3171,7 +3171,7 @@
 			"type": "patchouli:text",
 			"anchor": "papyrus",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Papyrus is a two block tall crop. Papyrus seeds can be planted on farmland, will grow two blocks tall, and will produce $(l:mechanics/papermaking)Papyrus$() and $(thing)Papyrus Seeds$() as a product.",
-			"title": "Papyrus"
+			"title": "Papiro"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3309,7 +3309,7 @@
 			"type": "patchouli:text",
 			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Sunflower"
+			"title": "Girassol"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3628,7 +3628,7 @@
 			"type": "patchouli:text",
 			"anchor": "flax",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Flax"
+			"title": "Linho"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3787,7 +3787,7 @@
 			"type": "patchouli:text",
 			"anchor": "cucumber",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
-			"title": "Cucumber"
+			"title": "Pepino"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
+			"title": "Rabanete",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
 		},
 		{
@@ -4040,7 +4040,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
+			"title": "Lentilha",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
 		},
 		{

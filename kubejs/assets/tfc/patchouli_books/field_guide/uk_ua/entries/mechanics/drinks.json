@@ -46,7 +46,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Teas",
+			"title": "Чай",
 			"text": "$(thing)Чай$() можна заварювати з використанням сушених версій певних рослин.$(br2)Він забезпечує короткі, але корисні підсилення та підвищує температуру тіла на 4°C. Ідеально підходить для зими!",
 			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
 		},
@@ -71,7 +71,7 @@
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
 		},
 		{
-			"title": "Spring Water",
+			"title": "Джерельна вода",
 			"text": "Пиття $(thing)джерельної води$() зігріває вас на 4°C та застосовує невеликий ефект регенерації під час знаходження в ній, а також зігріває вас при стояні у ній.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight"

@@ -1,8 +1,12 @@
 {
+  "ftbchunks.ally_mode.default": "Padrão",
+  "ftbchunks.force_load_mode.default": "Padrão",
+  "ftbchunks.gui.delete": "Deletar",
   "ftbchunks.map_mode.none": "Nenhuma",
   "ftbchunks.minimap": "Minimapa",
   "ftbchunks.minimap.compass": "Compass",
   "ftbchunks.minimap.position": "Posição",
   "ftbchunks.minimap.position.none": "Nenhuma",
+  "minimap.info.ftbchunks.debug.title": "Depurar/Debug",
   "minimap.info.ftbchunks.fps.title": "FPS"
 }

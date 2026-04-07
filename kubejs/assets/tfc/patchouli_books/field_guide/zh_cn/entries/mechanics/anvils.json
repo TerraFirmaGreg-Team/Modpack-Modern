@@ -97,7 +97,7 @@
       "type": "patchouli:text",
       "anchor": "welding",
       "text": "焊接是一种将两个物品熔合为新物品的工艺。无论是在$(l:getting_started/primitive_anvils)石砧$()还是金属砧上操作，焊接流程都完全一致。$(br2)首先，必须将待焊接的两个物品放置在砧上。可通过手持物品对砧点击使用，或打开砧的操作界面将其放入最左侧的两个槽位中完成放置。",
-      "title": "Welding"
+      "title": "焊接配方"
     },
     {
       "type": "patchouli:text",

@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "Маніок",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 70 - 100 %$(br)\n$(bold)Поживні речовини$(): Азот$(br2)\nМаніок можна їсти для отримання $(thing)овочевого$() насичення, хоча найкраще її $(thing)готувати$() перед споживанням.$(br)"
 		},
 		{
@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
+			"title": "Арахіс",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nАрахіс можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення"
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Beans",
+			"title": "Квасоля",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nКвасолю можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення. Однак її спершу потрібно приготувати!"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
+			"title": "Примарний перець",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Азот$(br2)\nПримарні перці можна їсти для отримання $(thing)овочевого$() насичення. Вони також є поширеною закускою серед мешканців Безодні."
 		},
 		{

@@ -1,5 +1,5 @@
 {
-  "name": "Paving Cart",
+  "name": "Тележка для мощения",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Paving Cart",
+      "title": "Тележка для мощения",
       "images": [
       "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],

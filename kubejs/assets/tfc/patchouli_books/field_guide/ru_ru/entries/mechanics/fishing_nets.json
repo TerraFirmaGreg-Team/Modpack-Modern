@@ -1,12 +1,12 @@
 {
-	"name": "Fishing Nets",
+	"name": "Рыболовные сети",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fishing Nets",
+			"title": "Рыболовные сети",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},
@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Wood Fishing Net",
+			"title": "Рыболовная сеть (Дерево)",
 			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
 			"text": "Базовая $(item)Деревянная рыболовная сеть$()."
 		}

@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "Маниок",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 70 - 100 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Маниок можно есть для получения $(thing)овощной$() питательности, хотя перед употреблением его лучше $(thing)приготовить$().$(br)"
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Beans",
+			"title": "Фасоль",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Фасоль можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности. Однако перед употреблением её необходимо приготовить!"
 		},
 		{
@@ -369,7 +369,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
+			"title": "Призрачный перец",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Азот$(br2)Призрачный перец можно есть для получения $(thing)овощной$() питательности. Это обычная закуска среди обитателей Бездны."
 		},
 		{
