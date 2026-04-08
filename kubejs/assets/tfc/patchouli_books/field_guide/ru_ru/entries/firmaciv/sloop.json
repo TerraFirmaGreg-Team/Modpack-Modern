@@ -1,11 +1,11 @@
 {
-  "name": "Sloops",
+  "name": "Шлюпы",
   "category": "tfc:firmaciv",
   "icon": "firmaciv:sloop_icon_only",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Iron Age already? Well, I guess it's high time you built yourself a proper ship. The sloop is 4 blocks wide and over 8 blocks long, an impressive upgrade from the rowboat! It holds up to 13 containers and up to 7 passengers, and, depending on the wind, can sail extremely fast. It can also carry up to 6 cannons!"
+      "text": "Уже Железный век? Что ж, думаю, пора построить себе настоящий корабль. Шлюп имеет 4 блока в ширину и более 8 блоков в длину — это впечатляющее улучшение по сравнению с гребной лодкой! Он вмещает до 13 ящиков и до 7 пассажиров, а в зависимости от ветра может идти очень быстро. Также он может нести до 6 орудий!"
     },
     {
       "type": "patchouli:image",
@@ -15,17 +15,17 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The sloop is expensive, however, requiring a wealth of wrought iron, copper, wool, and other materials. But materials aren't the only cost! You'll have to learn how to sail, as well, and it can take some practice! You'll also likely want to build docks and other infrastructure if you plan on bringing your ship in close to shore."
+      "text": "Шлюп стоит дорого, ведь нужно немало кованого железа, меди, шерсти и других материалов. Но материалы – это не единственная цена! Вам также придется научиться управлять парусом, а это может потребовать практики! Кроме того, вам, по всей вероятности, захочется построить пока и другую инфраструктуру, если вы планируете подходить кораблём близко к берегу."
     },
     {
       "type": "patchouli:text",
-      "text": "Here is bill of materials for constructing the sloop:$(br2)12 Wrought Iron Ingots$(br)24 Copper Ingots$(br)648 Lumber$(br)34 Logs$(br)24 Wool Cloth$(br)6 String$(br)72 Jute Fiber"
+      "text": "Вот перечень материалов для строительства шлюпа:$(br2)12 слитков кованого железа$(br)24 медных слитков$(br)648 досок$(br)34 бревна$(br)24 шерстяные ткани$(br)6 нитей$(br)72 джутовых волокна"
     },
     {
       "type": "patchouli:crafting",
-      "title": "Scaffolding",
+      "title": "Леса",
       "recipe": "firmaciv:crafting/watercraft_frame_flat",
-      "text": "Much like a rowboat, you'll start with Shipwright's Scaffolding. However, you'll also need a new flat variant for larger ships."
+      "text": "Как и в случае с гребной лодкой, вы начнете с лесов кораблестроителя. Однако вам также понадобится их новый плоский вариант для больших кораблей."
     },
     {
       "type": "patchouli:multiblock",
@@ -64,13 +64,13 @@
           "a": "firmaciv:watercraft_frame_flat"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Shipwright's Scaffolding arranged in order to construct a sloop hull.",
+      "name": "Строительство шлюпа",
+      "text": "Леса кораблестроителя, расположенные для сооружения корпуса шлюпа.",
       "enable_visualize": true
     },
     {
       "type": "patchouli:text",
-      "text": "Next, you'll need to add planks of suitably a strong hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+      "text": "Далее вам нужно будет добавить доски из соответствующей прочной твёрдой древесины:$(br2)Акация$(br)Ясень$(br)Осина$(br)Берёза$(br)Гренадил$(br)Каштан$(br)Гикори$(br)Клён$(br)Дуб$(br)Палисандр$(br)"
     },
     {
       "type": "patchouli:multiblock",
@@ -109,8 +109,8 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Four planks have been added to each scaffold.",
+      "name": "Строительство шлюпа",
+      "text": "Четыре доски были добавлены в каждые леса.",
       "enable_visualize": true
     },
     {
@@ -150,8 +150,8 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
+      "name": "Строительство шлюпа",
+      "text": "Используя молот во второй руке, добавьте по четыре медных болта к каждому лесу. Медные болты делаются из медных слитков.",
       "enable_visualize": true
     },
     {
@@ -193,13 +193,13 @@
           "R": "alekiships:cleat[facing=south]"
         }
       },
-      "name": "Sloop Scaffolding",
-      "text": "Finally, add the cleats to the hull. These are smithed from wrought iron double ingots.",
+      "name": "Строительство шлюпа",
+      "text": "Наконец, добавьте швартовые утки к корпусу. Они выковываются из двойных слитков кованого железа.",
       "enable_visualize": true
     },
     {
       "type": "patchouli:text",
-      "text": "Building the hull is only the first step of sloop construction, however! After the hull is complete, look for the blue hammer icon and use $(item)$(k:key.use)$() to add the items that show next to your crosshair, building out the rest of the ship.$(br2)The following pages contain recipes for unique items you'll need to complete the construction."
+      "text": "Однако построение корпуса – это только первый шаг в постройке шлюпа! После завершения работы над корпусом найдите синюю иконку молота и нажмите $(item)$(k:key.use)$(), чтобы добавить предметы, которые отображаются возле вашего перекрестка, достраивая оставшийся корабль.$(br2)На следующих страницах приведены рецепты уникальных предметов, которые пригодятся вам для завершения строительства."
     },
     {
       "type": "patchouli:crafting",
@@ -209,7 +209,7 @@
     {
       "type": "patchouli:crafting",
       "recipe2": "firmaciv:crafting/rope_coil",
-      "text": "You'll also need to add an anchor, which is smithed from a Wrought Iron Double Sheet."
+      "text": "Еще тебе  необходимо добавить якорь, выкованный из Двойного листа кованого железа."
     }
   ],
   "read_by_default": true,
