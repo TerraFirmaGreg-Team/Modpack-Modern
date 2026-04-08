@@ -12,7 +12,9 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Added recipes, textures, and names for new Glacian, Aeronos, and Strophar blocks (#3721) @SakuraKitsuragi
 - Changed both the firepit pot and vat to not require exact fluid quantities for recipes, and won't void excess fluid inputs @Redeix
 - Improved the EMI display of ore veins @SakuraKitsurugi
+- Improved the EMI display of fluid veins @BlueBoat29
 - Improved the EMI display of equipment repair recipes @Pyritie
+- Added EMI tabs for entity drops, chest loot, fishing loot, panning, and sluicing @Pyritie
 - Rowboats now only require a bronze anvil to craft, while a sloop now only requires wrought iron (#3703) @SakuraKitsurugi
 - Added more emeralds to the illage loot tables (remember, you can "hire" Mercenaries with these!) and added some realgar gems, but slightly lowered the amount of loot per chest @Pyritie
 - Added a periodic table quest chapter with information on where to find every element and what its main uses are (#3652) @ashleney
@@ -25,7 +27,7 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - More performance improvements @Mqrius
 - Added bladders and rennet to sniffers' drop table and rennet to glacian sheep @Pyritie
 - Slightly reduced the amount of metal dusts from panning/sluicing deposits @Pyritie
-- Added EMI tabs for entity drops, chest loot, fishing loot, panning, and sluicing @Pyritie
+- Improved the hazardous materials field guide page with more information about each medical condition (#3717) @Symasas225
 ### Bug fixes
 - Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
 - Fixed various TFG-created rock blocks (mossy cobbles, etc) not requiring a pickaxe to mine (#3725) @Pyritie
@@ -46,6 +48,9 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Fixed inconsistent recycling outputs of various (clay) brick blocks (#3690) @SpicyNoodle5
 - Fixed bison and leopard seal children being rendered as adults (#3674) @Pyritie
 - Fixed bison herds from self destructing (#3682) @Pyritie
+- Fixed breaking large nests giving 4 large nests back @SakuraKitsurugi
+- Fixed not being able to chisel the new mud brick blocks (#3737) @SokvisalMong
+- Fixed not being able to anvil a copper spindle head on certain seeds @Redeix
 
 ## [0.12.1] - 01-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
