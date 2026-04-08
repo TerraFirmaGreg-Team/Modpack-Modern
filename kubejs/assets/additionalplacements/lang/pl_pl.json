@@ -1,7 +1,7 @@
 {
 	"additionalplacements.stairs.connections_type.all_connections": "Wszystkie połączenia dozwolone",
-	"additionalplacements.stairs.connections_type.no_mixed_connections": "Nie dozwolone są połączenia mieszane",
-	"additionalplacements.stairs.connections_type.no_vertical_connections": "Nie dozwolone są połączenia pionowe",
+	"additionalplacements.stairs.connections_type.no_mixed_connections": "Połączenia mieszane niedozwolone",
+	"additionalplacements.stairs.connections_type.no_vertical_connections": "Połączenia pionowe niedozwolone",
 	"commands.ap_stairs_state_debug.wrong_block": "%s nie jest prawidłowym blokiem, musi on być schodami posiadającymi dodatkowe stany.",
 	"key.additionalplacements.placement_toggle": "Przełącz logikę położeń",
 	"key.categories.additionalplacements": "Additional Placements",

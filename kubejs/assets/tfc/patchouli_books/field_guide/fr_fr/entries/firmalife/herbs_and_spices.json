@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "Dans Firmalife, il y a plusieurs petites plantes, que vous pouvez récupérer et cultiver par vous-mêmes, qui ont des propriétés culinaires. Elles peuvent toutes êtres trouvées dans la nature et, une fois récoltées, peuvent être cultivées dans une $(l:firmalife/greenhouse)Serre$(), dans laquelle elles consomment 20 points de N, P, et K"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -73,7 +73,7 @@
 				}
 			],
 			"name": "Laurier",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"text": "Le $(thing)laurier sauvage$() pousse entre 8 et 14 °C, et entre 25 et 225 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -107,7 +107,7 @@
 				}
 			],
 			"name": "Cardamome",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"text": "La $(thing)cardamome sauvage$() pousse entre 18 et 30 °C, et entre 350 et 550 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -141,7 +141,7 @@
 				}
 			],
 			"name": "Coriandre",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"text": "La $(thing)coriandre sauvage$() pousse entre 5 et 15 °C, et entre 0 et 150 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -209,7 +209,7 @@
 				}
 			],
 			"name": "Origan",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"text": "L'$(thing)origan sauvage$() pousse entre 5 et 13 °C, et entre 50 et 150 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -243,7 +243,7 @@
 				}
 			],
 			"name": "Piment",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"text": "Le $(thing)piment sauvage$() pousse entre 15 et 30 °C, et entre 200 et 450 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -277,13 +277,13 @@
 				}
 			],
 			"name": "Vanille",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"text": "La $(thing)vanille sauvage$() pousse entre 18 et 30 °C, et entre 200 et 500 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "Des $(item)Boules de plantes$() peuvent être utilisées pour planter différents types d'herbes. Cela peut être utile après avoir nettoyé votre base pour construire. La recette de la boule de plantes nécessite du $(item)Compost$() et 4 $(thing)Graines$()."
 		},
 		{
 			"type": "patchouli:multiblock",

@@ -1,5 +1,5 @@
 {
-	"name": "危险材料",
+	"name": "危险物质",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,22 +8,50 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "危险材料",
+			"title": "危险物质",
 			"item": "gtceu:cobaltite_dust",
-			"text": "某些矿石和粉尘具有危险性，若存放在物品栏中可能会对你造成负面效果甚至致命伤害。$(br2)特定装备如$(thing)口罩$()、$(thing)手套$()以及后续的$(thing)防化服$()可用于抵御这些效果。"
+			"text": "某些$(thing)矿石$()、$(thing)粉末$()和$(thing)化学品$()具有危险性，若放在物品栏中可能会对你造成$(item)负面效果$()，甚至$(item)致死$()。携带时，屏幕上会以$(item)状态效果$()的形式显示。$(br2)可以使用$(thing)面罩$()、$(thing)手套$()和$(thing)防化服$()等装备来抵御这些影响。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "所有效果",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)砷中毒$()$(li)$(l:tfg_ores/hazards#Asbestosis)石棉肺$()$(li)$(l:tfg_ores/hazards#Berylliosis)铍中毒$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一氧化碳中毒$()$(li)$(l:tfg_ores/hazards#Carcinogens)致癌物$()$(li)$(l:tfg_ores/hazards#Chemical_burns)化学烧伤$()$(li)$(l:tfg_ores/hazards#Irritants)刺激性物质$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)甲醇中毒$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)致恶心化学品$()$(li)$(l:tfg_ores/hazards#Poisons)有毒物质$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)放射性物质$()$(li)$(l:tfg_ores/hazards#Silicosis)矽肺病$()$(br2)下一页将提供应对这些影响的方法。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "预防与治疗",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)石头？$()$(li)$(l:tfg_ores/hazards#containers)容器$()$(li)$(l:tfg_ores/hazards#mask)面罩$()$(li)$(l:tfg_ores/hazards#gloves)橡胶手套$()$(li)$(l:tfg_ores/hazards#hazmat)防化服$()$(li)$(l:tfg_ores/hazards#medicine)药片、药丸与药膏$()$(li)$(l:tfg_ores/hazards#rad_away)消辐宁™药片$()$(li)$(l:tfg_ores/hazards#respawn)不愿设想的方法……$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "石头！",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"anchor": "rocks",
+			"text": "$(thing)预防$()危险物品进入物品栏的$(thing)最简单方法$()就是$(item)根本不拾取它们$()。$(br2)例如，用$(thing)石头$()填满物品栏后，你可以选择性拾取所需物品，留待之后统一处理危险物资。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "容器",
+			"anchor": "containers",
+			"text": "危险物质仅当存放在$(thing)物品栏$()时才会造成伤害，其他容器则不受此影响！$(br)当危险材料存放在$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()等容器中时不会造成伤害。手持大缸时$(thing)右键点击$()可直接与容器进行物品转移。",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "面罩",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。"
+			"text": "$(thing)口罩$()能抵御所有$(item)吸入性$()危害，例如砷中毒。",
+			"anchor": "mask"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
 			"title": "橡胶手套",
 			"link_recipes": true,
-			"text": "橡胶手套可由$(l:mechanics/leather_making)皮革$()与$(l:arborfirmacraft/making_rubber)乳胶$()制作，或直接使用橡胶片合成。它们能防护所有$(item)皮肤接触$()类危害，例如铍中毒。"
+			"anchor": "gloves",
+			"text": "$(thing)橡胶手套$()可由$(l:mechanics/leather_making)皮革$()与$(l:arborfirmacraft/making_rubber)乳胶$()制作，或直接使用$(thing)橡胶片$()合成。它们能防护所有$(item)皮肤接触$()类危害，例如$(thing)铍粉$()。"
 		},
 		{
 			"type": "tfc:knapping_recipe",
@@ -33,12 +61,12 @@
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "将连指手套浸入由水果与酒精混合而成的$(thing)醋$()中。"
+			"text": "将$(thing)连指手套$()浸入由水果与酒精混合而成的$(thing)醋$()中。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "将处理过的皮革手套与$(thing)硫化乳胶$()一同在$(thing)锅$()中加热，此时距制成橡胶手套仅一步之遥。"
+			"text": "将处理过的$(thing)皮革手套$()与$(thing)硫化乳胶$()一同在$(thing)锅$()中加热，此时距制成橡胶手套仅一步之遥。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -47,31 +75,132 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "岩石策略",
+			"title": "防化服",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "一套完整的$(thing)防化服$()可以$(item)免疫$()$(item)所有$()危害，甚至$(item)辐射$()。它在$(thing)LV组装机$()中用$(thing)聚乙烯$()和$(thing)聚氯乙烯$()制成。$(br2)你也可以在JEI中查找$(thing)#ppe_armor$()，获取更多提供危险物质防护的装备。",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "药品",
 			"item": {
-				"tag": "tfc:rock_knapping"
+				"tag": "tfg:medicine"
 			},
-			"text": "避免危险物品进入物品栏的最简单方法就是根本不拾取它们。$(br)例如，用$(thing)石头$()填满物品栏后，你可以选择性拾取所需物品，留待之后统一处理危险物资。"
+			"anchor": "medicine",
+			"text": "如果你确实严重接触到危险物质，有一些$(thing)药品$()可以帮助你恢复。$(br2)基础$(thing)药片$()是最原始且容易制作的，但大多数都带有$(item)负面副作用$()。$(thing)药丸$()和$(thing)药膏$()更有效，副作用也更少，但它们需要$(thing)LV设备$()和更高级的资源来制作。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "容器隔离",
-			"text": "危险材料仅当存放在$(thing)物品栏$()时才会造成伤害，其他容器则不受此影响！$(br)当危险材料存放在$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()等容器中时不会造成伤害。手持大缸时$(thing)右键点击$()可直接与容器进行物品转移",
-			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+			"title": "消辐宁™药片",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "这是针对$(item)所有$()危害的$(item)终极$()解药，也是对抗$(item)辐射$()的$(item)唯一$()有效解药。然而，它也是制作起来最$(thing)昂贵$()和$(thing)困难$()的，需要$(thing)HV级$()设备和高级材料。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "温泉疗愈",
-			"item": "tfc:bucket/spring_water",
-			"text": "站立于$(thing)温泉$()中可获得缓慢的$(thing)生命恢复$()效果。"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "随身床铺",
+			"title": "失败……",
 			"item": {
 				"tag": "minecraft:beds"
 			},
+			"anchor": "respawn",
 			"text": "若所有防护措施均失效，随身携带床铺用于重生是个明智之举。$(br2)若无法获取$(thing)羊毛$()或$(thing)线$()，你也可以制作$(l:getting_started/a_place_to_sleep)茅草床$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "砷中毒",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "砷中毒",
+			"text": "$(thing)砷中毒$()是一种因吸入$(thing)砷$()粉、蒸气或$(thing)雄黄$()而引起的疾病。它会逐渐增加$(item)饥饿$()，随后是$(item)恶心$()，最终$(item)死亡$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)砷中毒$()的防护。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "石棉肺",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "石棉肺",
+			"text": "$(thing)石棉肺$()是一种因吸入$(thing)石棉$()粉尘而引起的疾病。如果携带时间足够长，会导致$(item)饥饿$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)石棉肺$()的防护。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "铍中毒",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "铍中毒",
+			"text": "$(thing)铍中毒$()是一种因皮肤接触$(thing)铍粉$()或$(thing)液态铍$()而引起的疾病。起初可能看起来影响不大。然而，接触时间越长，它$(item)杀死$()你的速度就越快。$(br2)$(l:tfg_ores/hazards#gloves)手套$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)铍中毒$()的防护。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "一氧化碳中毒",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)一氧化碳中毒$()是一种因吸入$(thing)一氧化碳$()气体而引起的疾病。长时间接触会导致$(item)恶心$()和快速$(item)死亡$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以提供对$(thing)一氧化碳$()的防护。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致癌物",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "致癌物",
+			"text": "$(thing)致癌物$()是导致$(item)癌症$()的物质。它们包括$(thing)铬粉$()以及一些有机化合物，例如$(thing)苯及其产物$()。$(thing)致癌物$()$(item)不会自行消失$()，但在造成实际伤害之前会给出大量警告。开始时是$(item)虚弱$()，接着是$(item)饥饿$()，然后是$(item)缓慢$()，之后是$(item)挖掘疲劳$()。只有当累积到足够的暴露量时，才会导致$(item)死亡$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致癌物",
+			"item": "gtceu:chromium_dust",
+			"anchor": "致癌物",
+			"text": "$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入有害化学物质，而$(l:tfg_ores/hazards#gloves)手套$()可以防止接触$(thing)铬粉$()。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()则可以同时防护两者。$(br2)在严重暴露的情况下，建议服用一些$(l:tfg_ores/hazards#medicine)药品$()以$(thing)预防$()任何可能的伤害。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "化学烧伤",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)化学烧伤$()是由吸入或皮肤接触某些$(thing)气体$()、$(thing)酸$()、$(thing)碱$()或$(thing)粉尘$()引起的。接触会导致$(item)虚弱$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接皮肤接触。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()可以防护一切。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "刺激性物质",
+			"item": "gtceu:chromite_dust",
+			"anchor": "刺激性物质",
+			"text": "$(thing)刺激$()是由吸入$(thing)甲酸铵$()或皮肤接触$(thing)铬铁矿粉$()引起的。短暂接触只会导致$(item)虚弱$()，但如果忽略较长时间，则会开始$(item)随机造成伤害$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接皮肤接触。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()可以同时防护两者。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "甲醇中毒",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)甲醇中毒$()是由吸入$(thing)甲醇$()引起的。它会造成强烈的$(item)失明$()效果。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以防止吸入。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "致恶心化学品",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)致恶心化学品$()，例如$(thing)丁醛$()，是吸入后会引起$(item)反胃$()的物质。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以防止吸入。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "有毒物质",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "$(thing)有毒物质$()分为两种。弱毒包括$(thing)铅粉$()，而强毒包括$(thing)二氧化氮$()。$(thing)弱毒$()会引起$(item)逐渐恶化的中毒$()效果，而$(thing)普通毒$()会引起$(item)虚弱$()和$(item)更强的中毒$()效果。$(br2)$(l:tfg_ores/hazards#mask)面罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接皮肤接触。$(br2)$(l:tfg_ores/hazards#hazmat)防化服$()可以防止任何接触。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物质",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "大多数$(thing)放射性物质$()，如$(thing)铀-238$()，你只会在$(thing)EV级$()或更高等级遇到。它们会$(item)永久性地辐射$()你。少量接触会导致$(item)发光$()，但长时间接触会迅速引发$(item)死亡$()。$(br2)我们知道它看起来美味且含有十亿卡路里，但$(#ff0000)请不要食用铀！$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物质",
+			"item": "gtceu:plutonium_ingot",
+			"text": "只有$(l:tfg_ores/hazards#hazmat)防化服$()以及一些高级盔甲能提供全面的辐射防护。$(br2)如果你确实受到了辐射，只有$(l:tfg_ores/hazards#rad_away)消辐宁™药片$()可以治愈你。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "矽肺病",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "矽肺病",
+			"text": "$(thing)矽肺病$()是一种因吸入$(thing)二氧化硅粉尘$()而引起的疾病。接触会导致$(item)生命值$()和$(item)潜水时的空气供应$()$(item)减少$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以防止吸入二氧化硅。"
 		}
 	]
 }
