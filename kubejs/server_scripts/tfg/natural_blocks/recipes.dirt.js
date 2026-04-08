@@ -132,6 +132,24 @@ function registerTFGDirtRecipes(event) {
 				item: `${namespace}:mud_brick/${dirtType}`
 			}
 		}).id(`tfg:drying/${dirtType}_drying_brick_to_brick`)
+
+		// Grass blocks
+		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_bonemeal`)
+
+		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'gtceu:fertilizer', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_fertilizer`)
+
+		// Coarse dirt
+		event.shapeless(`2x tfg:coarse_dirt/${dirtType}`, [`${namespace}:dirt/${dirtType}`, '#forge:gravel'])
+			.id(`tfg:shapeless/create_coarse_${dirtType}_dirt`)
+
+		event.shapeless(`${namespace}:dirt/${dirtType}`, [`tfg:coarse_dirt/${dirtType}`, '#minecraft:hoes'])
+			.id(`tfg:shapeless/sift_coarse_${dirtType}_dirt`)
+
+		// Duff
+		event.shapeless(`tfg:duff/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'tfc:groundcover/humus'])
+			.id(`tfg:shapeless/create_${dirtType}_duff`)
 	}
 
 	function registerMudStandards(namespace, dirtType) {
@@ -190,24 +208,6 @@ function registerTFGDirtRecipes(event) {
 
 		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_wall`, `${namespace}:mud_bricks/${dirtType}_slab`, 'smooth')
 			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_wall`)
-
-		// Grass blocks
-		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
-			.id(`tfg:shapeless/${dirtType}_grass_bonemeal`)
-
-		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'gtceu:fertilizer', '#forge:seeds'])
-			.id(`tfg:shapeless/${dirtType}_grass_fertilizer`)
-
-		// Coarse dirt
-		event.shapeless(`2x tfg:coarse_dirt/${dirtType}`, [`${namespace}:dirt/${dirtType}`, '#forge:gravel'])
-			.id(`tfg:shapeless/create_coarse_${dirtType}_dirt`)
-
-		event.shapeless(`${namespace}:dirt/${dirtType}`, [`tfg:coarse_dirt/${dirtType}`, '#minecraft:hoes'])
-			.id(`tfg:shapeless/sift_coarse_${dirtType}_dirt`)
-
-		// Duff
-		event.shapeless(`tfg:duff/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'tfc:groundcover/humus'])
-			.id(`tfg:shapeless/create_${dirtType}_duff`)
 	}
 
 	global.TFC_MUD_TYPES.forEach(dirtType => registerMudExtensions('tfc', dirtType));
