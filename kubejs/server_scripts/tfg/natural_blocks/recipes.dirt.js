@@ -167,17 +167,27 @@ function registerTFGDirtRecipes(event) {
 		event.stonecutting(`${namespace}:mud_bricks/${dirtType}_stairs`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_stairs`)
 
+		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_stairs`, `${namespace}:mud_bricks/${dirtType}`, 'stair')
+			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_stairs`)
+
 		// Блок кирпичей -> Плиты
 		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_slab` })
 
 		event.stonecutting(`2x ${namespace}:mud_bricks/${dirtType}_slab`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_slab`)
 
+		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_slab`, `${namespace}:mud_bricks/${dirtType}`, 'slab')
+			.extraDrop(`${namespace}:mud_bricks/${dirtType}_slab`)
+			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_slab`)
+
 		// Блок кирпичей -> Стена
 		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_wall` })
 
 		event.stonecutting(`${namespace}:mud_bricks/${dirtType}_wall`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_wall`)
+
+		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_wall`, `${namespace}:mud_bricks/${dirtType}_slab`, 'smooth')
+			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_wall`)
 
 		// Grass blocks
 		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
