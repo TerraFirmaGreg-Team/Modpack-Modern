@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:mineshaft/mineshaft",
+			"weight": 100
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 5,
+		"separation": 2,
+		"salt": 1646207470
+	}
+}
