@@ -74,7 +74,7 @@ function registerTFGDirtRecipes(event) {
 		.duration(200)
 		.EUt(16)
 
-	function registerMudExtensions(namespace, dirtType) {
+	function buildDirtRecipes(namespace, dirtType) {
 		// Dirt + Sticks -> Rooted Dirt
 		event.recipes.gtceu.mixer(`${dirtType}_to_rooted`)
 			.itemInputs(`${namespace}:dirt/${dirtType}`, "#forge:rods/wooden")
@@ -133,26 +133,6 @@ function registerTFGDirtRecipes(event) {
 			}
 		}).id(`tfg:drying/${dirtType}_drying_brick_to_brick`)
 
-		// Grass blocks
-		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
-			.id(`tfg:shapeless/${dirtType}_grass_bonemeal`)
-
-		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'gtceu:fertilizer', '#forge:seeds'])
-			.id(`tfg:shapeless/${dirtType}_grass_fertilizer`)
-
-		// Coarse dirt
-		event.shapeless(`2x tfg:coarse_dirt/${dirtType}`, [`${namespace}:dirt/${dirtType}`, '#forge:gravel'])
-			.id(`tfg:shapeless/create_coarse_${dirtType}_dirt`)
-
-		event.shapeless(`${namespace}:dirt/${dirtType}`, [`tfg:coarse_dirt/${dirtType}`, '#minecraft:hoes'])
-			.id(`tfg:shapeless/sift_coarse_${dirtType}_dirt`)
-
-		// Duff
-		event.shapeless(`tfg:duff/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'tfc:groundcover/humus'])
-			.id(`tfg:shapeless/create_${dirtType}_duff`)
-	}
-
-	function registerMudStandards(namespace, dirtType) {
 		// Mud brick blocks
 		event.shaped(`${namespace}:mud_bricks/${dirtType}`, [
 			'AA',
@@ -187,18 +167,11 @@ function registerTFGDirtRecipes(event) {
 		event.stonecutting(`${namespace}:mud_bricks/${dirtType}_stairs`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_stairs`)
 
-		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_stairs`, `${namespace}:mud_bricks/${dirtType}`, 'stair')
-			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_stairs`)
-
 		// Блок кирпичей -> Плиты
 		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_slab` })
 
 		event.stonecutting(`2x ${namespace}:mud_bricks/${dirtType}_slab`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_slab`)
-
-		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_slab`, `${namespace}:mud_bricks/${dirtType}`, 'slab')
-			.extraDrop(`${namespace}:mud_bricks/${dirtType}_slab`)
-			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_slab`)
 
 		// Блок кирпичей -> Стена
 		event.remove({ id: `tfc:crafting/soil/${dirtType}_mud_bricks_wall` })
@@ -206,14 +179,39 @@ function registerTFGDirtRecipes(event) {
 		event.stonecutting(`${namespace}:mud_bricks/${dirtType}_wall`, `${namespace}:mud_bricks/${dirtType}`)
 			.id(`tfc:stonecutting/soil/${dirtType}_mud_bricks_wall`)
 
-		event.recipes.tfc.chisel(`${namespace}:mud_bricks/${dirtType}_wall`, `${namespace}:mud_bricks/${dirtType}_slab`, 'smooth')
-			.id(`tfg:chisel/${namespace}_soil/${dirtType}_mud_bricks_wall`)
+		// Grass blocks
+		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'minecraft:bone_meal', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_bonemeal`)
+
+		event.shapeless(`${namespace}:grass/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'gtceu:fertilizer', '#forge:seeds'])
+			.id(`tfg:shapeless/${dirtType}_grass_fertilizer`)
+
+		// Coarse dirt
+		event.shapeless(`2x tfg:coarse_dirt/${dirtType}`, [`${namespace}:dirt/${dirtType}`, '#forge:gravel'])
+			.id(`tfg:shapeless/create_coarse_${dirtType}_dirt`)
+
+		event.shapeless(`${namespace}:dirt/${dirtType}`, [`tfg:coarse_dirt/${dirtType}`, '#minecraft:hoes'])
+			.id(`tfg:shapeless/sift_coarse_${dirtType}_dirt`)
+
+		// Duff
+		event.shapeless(`tfg:duff/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'tfc:groundcover/humus'])
+			.id(`tfg:shapeless/create_${dirtType}_duff`)
 	}
 
-	global.TFC_MUD_TYPES.forEach(dirtType => registerMudExtensions('tfc', dirtType));
+	global.TFC_MUD_TYPES.forEach(dirtType => buildDirtRecipes('tfc', dirtType));
 	global.TFG_MUD_TYPES.forEach(dirtType => {
-		registerMudExtensions('tfg', dirtType);
-		registerMudStandards('tfg', dirtType);
+		buildDirtRecipes('tfg', dirtType);
+
+		// Chisel Recipes
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_stairs`, `tfg:mud_bricks/${dirtType}`, 'stair')
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_stairs`)
+
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_slab`, `tfg:mud_bricks/${dirtType}`, 'slab')
+			.extraDrop(`tfg:mud_bricks/${dirtType}_slab`)
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_slab`)
+
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_wall`, `tfg:mud_bricks/${dirtType}_slab`, 'smooth')
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_wall`)
 		
 		event.shapeless(`4x tfg:drying_bricks/${dirtType}`, [`tfg:mud/${dirtType}`, 'tfc:straw'])
 			.id(`tfg:shapeless/drying_bricks_${dirtType}`);
