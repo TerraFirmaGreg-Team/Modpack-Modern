@@ -74,7 +74,7 @@ function registerTFGDirtRecipes(event) {
 		.duration(200)
 		.EUt(16)
 
-	function buildDirtRecipes(namespace, dirtType) {
+	function registerMudExtensions(namespace, dirtType) {
 		// Dirt + Sticks -> Rooted Dirt
 		event.recipes.gtceu.mixer(`${dirtType}_to_rooted`)
 			.itemInputs(`${namespace}:dirt/${dirtType}`, "#forge:rods/wooden")
@@ -132,7 +132,9 @@ function registerTFGDirtRecipes(event) {
 				item: `${namespace}:mud_brick/${dirtType}`
 			}
 		}).id(`tfg:drying/${dirtType}_drying_brick_to_brick`)
+	}
 
+	function registerMudStandards(namespace, dirtType) {
 		// Mud brick blocks
 		event.shaped(`${namespace}:mud_bricks/${dirtType}`, [
 			'AA',
@@ -208,9 +210,10 @@ function registerTFGDirtRecipes(event) {
 			.id(`tfg:shapeless/create_${dirtType}_duff`)
 	}
 
-	global.TFC_MUD_TYPES.forEach(dirtType => buildDirtRecipes('tfc', dirtType));
+	global.TFC_MUD_TYPES.forEach(dirtType => registerMudExtensions('tfc', dirtType));
 	global.TFG_MUD_TYPES.forEach(dirtType => {
-		buildDirtRecipes('tfg', dirtType);
+		registerMudExtensions('tfg', dirtType);
+		registerMudStandards('tfg', dirtType);
 		
 		event.shapeless(`4x tfg:drying_bricks/${dirtType}`, [`tfg:mud/${dirtType}`, 'tfc:straw'])
 			.id(`tfg:shapeless/drying_bricks_${dirtType}`);
