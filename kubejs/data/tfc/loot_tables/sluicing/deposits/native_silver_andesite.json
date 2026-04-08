@@ -11,14 +11,24 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "tfc:ore/small_native_silver",
+              "name": "gtceu:silver_dust",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.55
+                  "chance": 0.5
                 }
               ]
             },
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:small_silver_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
             {
               "type": "minecraft:item",
               "name": "tfc:rock/loose/andesite",
@@ -31,11 +41,11 @@
             },
             {
               "type": "minecraft:item",
-              "name": "gtceu:raw_pyrite",
+              "name": "gtceu:pyrite_dust",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
-                  "chance": 0.04
+                  "chance": 0.1
                 }
               ]
             }

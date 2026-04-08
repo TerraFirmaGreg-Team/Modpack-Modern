@@ -213,7 +213,8 @@ function registerTFGToolMaterialModification(event) {
 		GTToolType.KNIFE,
 		GTToolType.SHOVEL
 	]).build());
-
+	
+	GTMaterials.Flint.removeProperty(PropertyKey.TOOL);
 	GTMaterials.Flint.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.5, 2, 24 * DURABILITY_MULTIPLIER, 1, [
 		GTToolType.AXE,
 		GTToolType.HOE,

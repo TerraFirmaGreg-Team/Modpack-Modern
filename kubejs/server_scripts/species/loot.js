@@ -24,16 +24,20 @@ function registerSpeciesLoots(event) {
 		.addLoot('tfc:large_raw_hide')
 		.addWeightedLoot([4, 6], ['minecraft:bone'])
 		.addWeightedLoot([12, 20], ['tfg:food/raw_goober_meat'])
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('species:petrified_egg').when(c => c.randomChance(0.1)))
 
 	event.addEntityLootModifier('species:goober')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([6, 10], ['tfg:food/raw_goober_meat'])
+		.addWeightedLoot([2, 4], ['tfc:blubber'])
 
 		
 	event.addEntityLootModifier('species:springling')
 		.addLoot('tfc:small_raw_hide')
 		.addWeightedLoot([2, 4], ['minecraft:bone'])
 		.addWeightedLoot([6, 8], ['tfg:food/raw_springling_collar'])
+		.addSequenceLoot(LootEntry.of('species:springling_egg').when(c => c.randomChance(0.1)))
 
 	event.addEntityLootModifier('species:springling')
 		.matchMainHand('#forge:tools/butchery_knives')
@@ -64,4 +68,14 @@ function registerSpeciesLoots(event) {
 		.addWeightedLoot([2, 4], ['create:copper_sheet'])
 		.addSequenceLoot(LootEntry.of('create:precision_mechanism').when(c => c.randomChance(0.5)))
 		.addSequenceLoot(LootEntry.of('species:kinetic_core').when(c => c.randomChance(0.2)))
+
+
+	event.addEntityLootModifier('species:wraptor').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:deepfish').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:ghoul').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:bewereager').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:spectre').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('species:wicked').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('species:chests/libra_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addLootTableModifier('species:chests/wraptor_coop_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
 }

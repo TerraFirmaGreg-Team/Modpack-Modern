@@ -877,8 +877,8 @@ function registerTFGWoodenRecipes(event) {
             event.replaceInput({ id: 'tfc:crafting/vanilla/ladder' }, '#tfc:lumber', nonAdAstraLumber)
 
             event.recipes.gtceu.assembler('tfg:ladder_from_lumber')
-                .itemInputs(nonAdAstraLumber.withCount(7))
-                .itemOutputs('8x minecraft:ladder')
+                .itemInputs(nonAdAstraLumber.withCount(6))
+                .itemOutputs('16x minecraft:ladder')
                 .circuit(7)
                 .duration(40)
                 .EUt(4)

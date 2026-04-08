@@ -33,6 +33,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['#forge:repair_kit_materials'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.repair_kits'))
 	})
+	event.addAdvanced(['minecraft:shield'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wooden_shield'))
+	})
 
 	//#region Multiblock Controler Tooltip
 

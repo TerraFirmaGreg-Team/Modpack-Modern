@@ -3,6 +3,9 @@
 
 function registerPrimitiveCreaturesLoots(event) {
 
+	event.addEntityLootModifier('primitive_creatures:idolater_').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('primitive_creatures:musselwarden').removeLoot(ItemFilter.ALWAYS_TRUE)
+
 	// kaolin klayze
 	event.addEntityLootModifier('primitive_creatures:tfc')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
