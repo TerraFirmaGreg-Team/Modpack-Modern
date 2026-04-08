@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Anvils",
+  "name": "Kowadła",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/anvil/copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:mechanics/anvils#working)Working$() is done to form one piece of metal into another, and $(l:getting_started/primitive_anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+      "text": "Kowadła są niezbędnym narzędziem, służącym do obróbki metali.$(br2)$(l:mechanics/anvils#working)Kucie$() pozwala nadać metalowi żądaną formę, a $(l:getting_started/primitive_anvils#welding)spawanie$() umożliwia zespojenie dwóch metalowych przedmiotów w jeden."
     },
     {
       "type": "patchouli:multiblock",
@@ -24,31 +24,31 @@
         }
       },
       "name": "",
-      "text": "All types of metal anvils.",
+      "text": "Wszystkie metalowe kowadła",
       "enable_visualize": false
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Anvils can be crafted with $(thing)double ingots$() of their respective metal. For your first anvil, you must first $(l:getting_started/primitive_anvils#welding)weld$() double ingots on a $(l:getting_started/primitive_anvils)stone anvil$()."
+      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą dwie sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Anvils each have a $(thing)tier$(), which defines what types of material they can work and weld. An anvil can work metals of its current tier, and it can weld metals that are one tier higher.$(br)$(li)$(bold)Tier 0$(): Stone Anvils$(li)$(bold)Tier I$(): Copper$(li)$(bold)Tier II$(): Bismuth Bronze, Black Bronze, Bronze$(li)$(bold)Tier III$(): Wrought Iron$(li)$(bold)Tier IV$(): Steel$(li)$(bold)Tier V$(): Black Steel$(li)$(bold)Tier VI$(): Red Steel, Blue Steel"
+      "text": "Każde kowadło posiada swoją  $(thing)rangę$(), która określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów odpowiadających rangą jego własnej oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Ranga 0$(): Kamienne kowadła$(li)$(bold)Ranga I$(): Miedź$(li)$(bold)Ranga II$(): Brąz bizmutowy, Brąz czarny, Brąz$(li)$(bold)Ranga III$(): Żelazo kuźnicze$(li)$(bold)Ranga IV$(): Stal$(li)$(bold)Ranga V$(): Stal czarna$(li)$(bold)Ranga VI$(): Stal czerwona, Stal niebieska"
     },
     {
       "type": "patchouli:text",
       "anchor": "working",
-      "text": "In order to work an item on the anvil, you will need to use the anvil, to open up the anvil interface, seen to the right. On the left, there are two input slots for items - for working, the target item must be in the right hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-      "title": "Working"
+      "text": "Aby wykuć przedmiot należy otworzyć interfejs kowadła widoczny po prawej stronie, klikając na nie. Po lewej stronie interfejsu znajdują się dwa sloty na przedmioty przeznaczone do obróbki - muszą one znajdować się w slocie prawej ręki. Potrzebny będzie również młot, który musi znajdować się w slocie po prawej stronie interfejsu $(bold)lub$() w głównej ręce. W trakcie pracy młot będzie stopniowo ulegał zużyciu.",
+      "title": "Kucie"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/anvil_empty.png"
       ],
-      "text": "The anvil interface.",
+      "text": "Interfejs kowadła",
       "border": false
     },
     {
@@ -75,7 +75,7 @@
     {
       "type": "patchouli:text",
       "text": "The $(thing)rules$(), are the two or three icons shown on the top of the anvil interface. They represent specific actions that must be taken, at specific times, in order for your working to be a success. For example, a rule could be $(2)Bend Second Last$(), meaning the second to last action you take $(bold)must$() be a $(2)Bend$() action.",
-      "title": "Working Rules"
+      "title": "Zasady kucia"
     },
     {
       "type": "patchouli:text",
@@ -84,12 +84,12 @@
     {
       "type": "patchouli:text",
       "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items, such as tool heads, when they are worked in a low or minimal amount of steps, receive a Forging Bonus based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.",
-      "title": "Forging Bonuses"
+      "title": "Bonusy"
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
-      "title": "Perfectly Forged",
+      "title": "Bezbłędnie wykute",
       "link_recipes": false,
       "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
     },
@@ -97,7 +97,7 @@
       "type": "patchouli:text",
       "anchor": "zespajanie",
       "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)Stone Anvil$() or a metal anvil.$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
-      "title": "Welding"
+      "title": "Spawanie"
     },
     {
       "type": "patchouli:text",
