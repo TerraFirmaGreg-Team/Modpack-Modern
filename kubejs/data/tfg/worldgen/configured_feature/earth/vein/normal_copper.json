@@ -3,8 +3,8 @@
   "type": "tfc:disc_vein",
   "config": {
     "height": 10,
-    "size": 32,
-    "rarity": 100,
+    "size": 30,
+    "rarity": 130,
     "density": 0.33,
     "min_y": 10,
     "max_y": 70,
@@ -268,7 +268,7 @@
       }
     ],
     "indicator": {
-      "rarity": 18,
+      "rarity": 22,
       "depth": 70,
       "underground_rarity": 40,
       "underground_count": 200,
