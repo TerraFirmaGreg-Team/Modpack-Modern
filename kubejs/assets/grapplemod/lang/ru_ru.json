@@ -218,6 +218,8 @@
   "text.autoconfig.grapplemod.option.options.enchantments.wallrun.enchant_rarity_wallrun": "enchant_rarity_wall",
   "text.autoconfig.grapplemod.option.options.enchantments.wallrun.enchant_rarity_wallrun.@Tooltip": "Редкость на столе зачарований, (0=очень редко, 3=обыкновенно)",
   "text.autoconfig.grapplemod.option.options.enchantments.wallrun.max_wallrun_time": "max_wallrun_time",
+  "text.autoconfig.grapplemod.option.options.enchantments.wallrun.max_wallrun_time.@Tooltip": "Максимальное время, которое игрок может провести бегая вдоль стены (сек)",
+  "text.autoconfig.grapplemod.option.options.enchantments.wallrun.wall_jump_side": "прыжок_в сторону_во_время_бега_по_стене",
   "text.autoconfig.grapplemod.option.options.enchantments.wallrun.wallrun_drag.@Tooltip": "Сила сопротивления при беге по стене (блоков/такт^2)",
   "text.autoconfig.grapplemod.option.options.grapplinghook": "крюк-кошка",
   "text.autoconfig.grapplemod.option.options.grapplinghook.@Tooltip": "Настройки крюка-кошки",
