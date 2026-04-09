@@ -3640,6 +3640,35 @@
             ]
         },
         {
+            "pakku_id": "ab7eDpfo6vN30Jcm",
+            "type": "MOD",
+            "slug": {
+                "github": "Deepacat/Crafting-station-improved"
+            },
+            "name": {
+                "github": "Crafting-station-improved"
+            },
+            "id": {
+                "github": "1022822186"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "github",
+                    "file_name": "craftingstation-1.20.1-1.3.3.jar",
+                    "release_type": "release",
+                    "url": "https://github.com/Deepacat/Crafting-station-improved/releases/download/1.3.3/craftingstation-1.20.1-1.3.3.jar",
+                    "id": "336082764",
+                    "parent_id": "1022822186",
+                    "hashes": {
+                        "sha256": "c768f5d211f4e374f6cc7cf3bf034a6dd41247d2c3378a7bd39e296fa1561b97"
+                    },
+                    "size": 93034,
+                    "date_published": "2026-01-04T05:44:01Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "lePQHTl9cI4dUuqu",
             "type": "MOD",
             "side": "CLIENT",
