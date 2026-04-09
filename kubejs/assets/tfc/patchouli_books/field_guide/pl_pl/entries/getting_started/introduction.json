@@ -37,7 +37,7 @@
 				}
 			},
 			"name": "Przykład",
-			"text": "Tak wyglądają podstawowe patyki i kamienie leżące na ziemi.",
+			"text": "Garstka powszechnych patyków i kamieni.",
 			"enable_visualize": false
 		},
 		{
@@ -84,7 +84,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_shovel_head"
 			],
-			"text": "$(thing)Łopat$() można użyć do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)Ścieżek$() przez $(item)użycie$() ich na $(thing)Ziemi$() lub $(thing)Trawie$()."
+			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)Ścieżek$() przez $(item)użycie$() ich na $(thing)Ziemi$() lub $(thing)Trawie$()."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -93,14 +93,14 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Motyki$() są użytecznymi narzędziami dla $(l:mechanics/crops)Rolnictwa$(), ale można je również wykorzystać do cięcia liści i innych roślin."
+			"text": "$(thing)Motyki$() są przydatne w  $(l:mechanics/crops)Rolnictwie$(), ale można je również wykorzystać do ścinania liści i innych roślin."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)Młotów$() można używać jako Broń$(l:mechanics/damage_types)Miażdżącą$() ale są ważniejszymi narzędziami używanymi do $(l:getting_started/primitive_anvils)Wykuwania$()."
+			"text": "$(thing)Młotów$() można używać jako broni$(l:mechanics/damage_types)Miażdżącej$() ale są ważniejszymi narzędziami używanymi do $(l:getting_started/primitive_anvils)Wykuwania$()."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -110,7 +110,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Wreszcie, $(thing)Włócznia$() może być użyta jako prymitywna broń, która może być rzucana w cele lub użyta jako broń $(l:mechanics/damage_types)Przebijająca$()."
+			"text": "Wreszcie, $(thing)Włócznia$() może być użyta jako prymitywna broń miotana lub można jej użyć jako broni $(l:mechanics/damage_types)Przebijającej$()."
 		}
 	],
 	"read_by_default": true,

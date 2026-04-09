@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Stopy$() to metoda mieszania dwóch lub więcej metali razem, aby stworzyć nowy, silniejszy metal. We wczesnym etapie gry, miedź jest użytecznym metalem do tworzenia narzędzi, następnym poziomem metalu jest jeden z trzech typów $(thing)Brązu$(). Stop składa się ze składników $(thing)metalów$(), które muszą spełniać określony procent całości."
+			"text": "$(thing)Stopy$() to metoda mieszania dwóch lub więcej metali razem aby stworzyć nowy, silniejszy metal. We wczesnym etapie gry, chociaż miedź jest użytecznym metalem do tworzenia narzędzi, kolejnym poziomem metalu jest jeden z trzech typów $(thing)Brązu$(). Stop składa się z $(thing)metali$() składowych, które muszą stanowić określony procent całości."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Jedną z metod, za pomocą której stopy mogą być wykonane we wczesnej grze, jest użycie $(thing)Małej Wazy$(). Proces jest bardzo podobny do $(l:getting_started/finding_ores#casting)Odlewania$(). Zamiast jednak użycia tylko jednego metalu, należy umieścić wystarczającą ilość części rudy w wazie we właściwym stosunku do znanej mieszanki stopowej."
+			"text": "Jedną z metod, za pomocą której stopy mogą być wykonane na wczesnym etapie gry, jest użycie $(thing)Małego Naczynia$(). Proces jest bardzo podobny do $(l:getting_started/finding_ores#casting)Odlewania$(). Jednak zamiast użyć tylko jednego metalu, umieść odpowiednią ilość odłamków rudy w naczyniu zgodnie z proporcjami znanej mieszanki stopowej."
 		},
 		{
 			"type": "patchouli:text",
@@ -40,7 +40,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "Inne stopy nie nadają się do tworzenia narzędzi. Są to $(thing)Mosiądz$(), $(thing)Różowe Złoto$() oraz $(thing)Szczere Srebro$().$(br2)$(thing)Mosiądz$() jest przydatnym stopem dla wszelkiego rodzaju przyrządów, w tym $(l:mechanics/mechanical_power)Siły Mechanicznej$().$(br2)$(thing)Różowe Złoto$() i $(thing)Szczere Srebro$() są używane do wytwarzania $(l:mechanics/steel#red_steel)Czerwonej Stali$() i $(l:mechanics/steel#blue_steel)Niebieskiej Stali$().",
-			"title": "Użytkowe Stopy"
+			"title": "Stopy Użytkowe"
 		},
 		{
 			"type": "patchouli:spotlight",
