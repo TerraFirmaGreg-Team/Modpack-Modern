@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин і Сапфір$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Бісмут$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт і Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Вугілля і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит та Лимоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лимоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Електротин і Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Азбест і Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазур, Лазурит та Содаліт$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин і Сапфір$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит і Пірохлор$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит і Монацит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Бісмут$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борніт і Куперит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Вугілля і Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарнієрит і Кобальтит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит та Лимоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит та Лимоніт$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графіт і Діамант$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Золото, Електротин і Боксит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Каситерит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварцит, Азбест і Барит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазур, Лазурит та Содаліт$()$()",
       "type": "patchouli:text"
     },
     {
@@ -648,98 +648,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Рідкість$(): 1/140 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Трахіт, Червоний граніт",
-      "title": "Гематит та Лимоніт",
-      "type": "patchouli:text",
-      "anchor": "mars_surface_hematite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 55%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Жовтий лимоніт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/yellow_limonite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): FeHO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Самородна Золото",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/gold"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Золото$(br)$(thing)Формула$(): Au",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кальцит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/calcite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)Рідкість$(): 1/210 чанків$(br)$(thing)Щільність$(): 40%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 0 — 70$(br)$(thing)Розмір$(): 40$(br)$(thing)Індикатор Max Depth$(): 30$(br2)$(thing)Типи каменю$(): Аргиліт, Аргіліт, Базальт, Вапняк, Дацит, Доломіт, Кварцит, Конгломерат, Червоний граніт",
       "title": "Гематит та Лимоніт",
       "type": "patchouli:text",
@@ -823,6 +731,98 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Рідкість$(): 1/140 чанків$(br)$(thing)Щільність$(): 25%$(br)$(thing)Тип$(): Кластерна вена$(br)$(thing)Y$(): 80 — 180$(br)$(thing)Розмір$(): 45$(br)$(thing)Індикатор Max Depth$(): 40$(br2)$(thing)Типи каменю$(): Аргиліт, Аргіліт, Базальт, Вапняк, Габро, Глинистий сланець, Граніт, Дацит, Діорит, Доломіт, Кварцит, Конгломерат, Крейда, Кременистий сланець, Трахіт, Червоний граніт",
+      "title": "Гематит та Лимоніт",
+      "type": "patchouli:text",
+      "anchor": "mars_surface_hematite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 55%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Жовтий лимоніт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/yellow_limonite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Розплавляється в$(): Чавун$(br)$(thing)Формула$(): FeHO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Самородна Золото",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/gold"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Розплавляється в$(): Золото$(br)$(thing)Формула$(): Au",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кальцит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/calcite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 5%$(br)$(thing)Джерело$(): Кальцію$(br)$(thing)Формула$(): CaCO₃",
       "type": "patchouli:multiblock"
     },
     {

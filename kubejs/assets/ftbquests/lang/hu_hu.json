@@ -1,5 +1,18 @@
 {
   "block.ftbquests.detector.player": "Játékos Detektor",
+  "block.ftbquests.detector.player.height": "Magasság",
+  "block.ftbquests.detector.player.radius": "Sugár",
+  "block.ftbquests.screen.size": "Méret",
+  "ftbquests.chapter.image.height": "Magasság",
+  "ftbquests.chapter.image.rotation": "Gyakoriság",
+  "ftbquests.chapter.image.width": "Szélesség",
+  "ftbquests.gui.reset_progress": "Visszaugrás az elejére",
+  "ftbquests.loot.entitytype.passive": "Passzív",
+  "ftbquests.quest.appearance.size": "Méret",
+  "ftbquests.quest_link.size": "Méret",
+  "ftbquests.reward.ftbquests.npc_mail.items": "darab",
   "ftbquests.task.ftbquests.fluid": "Folyadék",
-  "ftbquests.task.ftbquests.fluid.fluid": "Folyadék"
+  "ftbquests.task.ftbquests.fluid.amount": "Összeg",
+  "ftbquests.task.ftbquests.fluid.fluid": "Folyadék",
+  "ftbquests.task.ftbquests.kill.entity": "Entitás neve"
 }

@@ -96,6 +96,8 @@
   "ftbquests.chapter.image.order.tooltip": "Порядок, у якому малюнки в одному розділі малюються. Малюнки вищого порядку малюються над нижчими.",
   "ftbquests.chapter.image.rotation": "Обертання",
   "ftbquests.chapter.image.width": "Ширина",
+  "ftbquests.chapter.image.x": "X",
+  "ftbquests.chapter.image.y": "Y",
   "ftbquests.chapter.misc.autofocus_id": "Автофокус ID квесту",
   "ftbquests.chapter.misc.autofocus_id.tooltip": "Якщо не порожнє, повинно бути ID квесту або посилання на квест (використовуйте Копіювати ID квесту для отримання).\nПри відкритті розділу панель автоматично центрує вид на цей квест",
   "ftbquests.chapter.misc.consume_items": "Усталене 'Споживання предметів'",

@@ -1,4 +1,6 @@
 {
+	"block.firmalife.climate_station": "Stacja Pogodowa",
+	"block.firmalife.copper_greenhouse_wall": "Miedziana Ściana Szklarni",
 	"block.firmalife.floor_sprinkler": "Zraszacz podłogowy",
 	"block.firmalife.plant.basil": "Bazylia",
 	"block.firmalife.plant.bay_laurel": "Wawrzyn Szlachetny",
@@ -14,6 +16,7 @@
 	"config.jade.plugin_firmalife.fruit_tree_sapling": "Sadzonka drzewa owocowego",
 	"firmalife.advancements.story.sprinkler.title": "Zraszacz",
 	"firmalife.block_entity.berry_bush": "Krzew owocowy",
+	"firmalife.block_entity.climate_station": "Stacja Pogodowa",
 	"firmalife.enum.additiontype.fish": "Ryba",
 	"firmalife.enum.additiontype.none": "Żaden",
 	"firmalife.enum.winetype.white": "Białe",

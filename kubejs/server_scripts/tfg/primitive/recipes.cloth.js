@@ -145,7 +145,7 @@ function registerTFGClothRecipes(event) {
 		'tfg:copper_spindle_head',
         'gtceu:copper_rod',
         [
-            'shrink_last',
+            'draw_last',
             'upset_second_last',
 			'shrink_third_last'
         ]
