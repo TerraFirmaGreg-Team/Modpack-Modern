@@ -32,7 +32,10 @@
 		{
 			"type": "tfg:fluid_vein",
 			"vein_ids": [
-				"tfg:natural_gas_surface_indicator"
+				"tfg:natural_gas_surface_indicator",
+				"tfg:natural_gas_permafrost",
+				"tfg:natural_gas_swamp",
+				"tfg:natural_gas_volcanic"
 			]
 		}
 	]
