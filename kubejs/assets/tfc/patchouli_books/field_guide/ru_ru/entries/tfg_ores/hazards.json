@@ -10,17 +10,17 @@
 			"type": "patchouli:spotlight",
 			"title": "Противодействие ядовитым рудам",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Некоторые $(thing)руды$(), $(thing)пыли$() и $(thing)химикаты$() являются опасными и могут вызвать $(item)отрицательные эффекты$() или даже $(item)убить$() вас, если они находятся в вашем инвентаре. При переносе они отображаются на экране как $(item)статус эффект$().$(br2)Определённое снаряжение, такое как $(thing)маски$(), $(thing)перчатки$() и $(thing)защитный костюм$(), может использоваться для нейтрализации этих эффектов."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Все эффекты",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Отравление мышьяком$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Асбестоз$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Беррилиоз$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Отравление угарным газом$()$(li)$(l:tfg_ores/hazards#Carcinogens)Канцерогены$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Отравление метанолом$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Раздражающие вещества$()$(li)$(l:tfg_ores/hazards#Poisons)Отравляющие вещества$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Радиоактивные вещества$()$(li)$(l:tfg_ores/hazards#Silicosis)Силикоз$()$()$(br2)На следующей странице будет информация о том, как бороться с этими эффектами."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Профилактика и лечение",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Контейнеры$()$(li)$(l:tfg_ores/hazards#mask)Медицинская маска$()$(li)$(l:tfg_ores/hazards#gloves)Резиновые перчатки$()$(li)$(l:tfg_ores/hazards#hazmat)Защитный костюм$()$(li)$(l:tfg_ores/hazards#medicine)Пилюли, таблетки, мази$()$(li)$(l:tfg_ores/hazards#rad_away)Пилюля Антирадин™$()$(li)$(l:tfg_ores/hazards#respawn)Немыслимое...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -29,18 +29,18 @@
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)The easiest way$() to $(thing)prevent$() hazardous effects is to $(item)not pick up the dangerous items at all$().$(br2)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones later."
+			"text": "$(thing)Простейший способ$() $(thing)предотвратить$() опасные эффекты — это $(item) вообще не подбирать опасные предметы$().$(br2)Заполнение инвентаря $(thing)камнями$(), например, позволит вам выбирать, какие предметы подбирать, оставляя опасные на потом."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Containers",
+			"title": "Контейнеры",
 			"anchor": "containers",
-			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of its contents to and from containers.",
+			"text": "кмкмкмкмОпасные вещества наносят ущерб только тогда, когда они находятся в вашем $(thing)инвентаре$(), но это не касается других контейнеров!$(br) Опасные вещества не будут наносить урон, пока они в  другом контейнере, например в$(l:getting_started/pottery#vessel)сосуде $(). $(thing) Щёлкните Пкм$(), удерживая сосуд, позволит непосредственно переносить его содержимое в контейнеры и из них.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Медицинская маска",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка.",
 			"anchor": "mask"
@@ -48,20 +48,20 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber gloves",
+			"title": "Резиновые перчатки",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+			"text": "$(thing)Резиновые перчатки$() могут быть изготовлены из $(l:mechanics/leather_making)кожи$() и $(l:arborfirmacraft/making_rubber)латекса$(), или из $(thing)каучуковых листов$(). Они обеспечивают защиту от любых опасностей $(item)контакта с кожей$(), таких как $(thing)бериллиевая пыль$()."
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Сначала сделайте перчатки кузнеца из кожи."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "$(thing)Перчатки$() затем замачиваются в $(thing)уксусе$(), смеси фруктов и алкоголя."
 		},
 		{
 			"type": "patchouli:spotlight",
