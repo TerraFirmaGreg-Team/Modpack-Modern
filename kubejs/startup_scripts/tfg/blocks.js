@@ -1,6 +1,6 @@
 "use strict";
 
-function registerTFGBlocks(event) {
+const registerTFGBlocks = (event) => {
 
 	registerTFGDimensionMarkerBlocks(event)
 	registerTFGCrops(event)

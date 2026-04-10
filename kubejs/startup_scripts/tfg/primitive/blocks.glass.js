@@ -1,6 +1,6 @@
 "use strict";
 
-const registerTFGGlassBlocks = (event) => {
+function registerTFGGlassBlocks(event) {
     createGlassBlock(event, 'glass', false)
     createGlassBlock(event, 'tinted_glass', true)
 
