@@ -5,22 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Zraszacz$() to urządzenie spryskujące wodą obszar 5x6x5, którego środkiem jest blok poniżej zraszacza. Wiesz, że działa, gdy pojawiają się cząstki wody. Zraszacze zwrócone w górę nawadniają taki sam obszar 5x6x5 powyżej."
+			"text": "$(thing)Zraszacz$() to urządzenie spryskujące wodą obszar 5x6x5, którego środkiem jest blok poniżej zraszacza. Na poprawne działanie wskazywać będą pojawiające się kropelki wody. Zraszacze zwrócone w górę nawadniają taki sam obszar 5x6x5 powyżej."
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "Zraszacz wytwarza się z $(thing)Arkusza miedzi$()."
+			"text": "Zraszacz wytwarza się z $(thing)miedzianej blachy$()."
 		},
 		{
-			"title": "Rurociąg",
+			"title": "Rurociągi",
 			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Zraszacze muszą być podłączone do systemu rurociągów, które doprowadzają wodę do spryskiwania. Dzieje się tak poprzez połączenie do nich $(thing)Rur do Płynów$(). Możesz pompować wodę do nich za pomocą $(thing)Popmpy Mechanicznej$()."
+			"text": "Zraszacze muszą być podłączone do systemu rurociągów dostarczających wodę. Można to osiągnąć poprzez podłączenie sieci $(thing)rur do płynów$(). $(thing)Pompa mechaniczna$() pozwoli napełnić je wodą."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Możesz kliknąć prawym przyciskiem myszy na rurę trzymając Rame GregTech (taką jak$(thing)Miedziana rama$()), aby poprowadzić ją przez ścianę, lub użyj Przyłącza do szklarni. Następnie możesz przymocować zraszacz bezpośrednio do rury! Kliknij prawym przyciskiem myszy na rury trzymając klucz aby zmienić kierunek przepływu lub kliknij na nie prawym przyciskiem myszy kucając mając $(thing)wolną drugą rękę$(), aby zrobić je jednokierunkowe."
+			"text": "Kliknąwszy prawym przyciskiem myszy na rurę trzymając Ramę GregTech (taką jak$(thing)miedziana rama$()), aby poprowadzić ją przez ścianę, lub użyj przyłącza do szklarni. Następnie możesz przymocować zraszacz bezpośrednio do rury! Kliknij prawym przyciskiem myszy na rury trzymając klucz aby zmienić kierunek przepływu lub kliknij na nie prawym przyciskiem myszy kucając, mając $(thing)wolną drugą rękę$(), aby uczynić je jednokierunkowymi."
 		}
 	],
 	"read_by_default": true,

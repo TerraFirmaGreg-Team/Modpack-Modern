@@ -53,7 +53,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan - the scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+      "text": "Następnie należy wybrać $(thing)schemat$(), który pozwoli na wybór upragnionego przedmiotu do wykucia. $(item)$(k:key.attack)$() na przycisk z ikoną zwoju i wybierz odpowiedni schemat. Powróci wtedy interfejs kowadła z wybranym schematem oraz widocznymi $(thing)warunkami$() i $(thing)celem$() do spełnienia."
     },
     {
       "type": "patchouli:image",
@@ -65,25 +65,25 @@
     },
     {
       "type": "patchouli:text",
-      "text": "In the middle of the anvil screen, there is a bar with two colored indicators. The $(2)green$() pointer, is your current working progress. The $(4)red$() pointer, is the target. Your goal is to line up the current progress, with the target.$(br2)In order to do this, you can use the $(2)green$() and $(4)red$() action buttons, which move your current progress a certain amount, depending on the action taken.",
-      "title": "Targets"
+      "text": "Na środku widnieć będzie pasek z dwoma kolorowymi wskaźnikami. $(2)Zielony$() wskaźnik oznacza dotychczasowy postęp. Wskaźnik $(4)czerwony$() zaś oznacza cel do spełnienia. Zadaniem gracza jest zrównanie zielonego wskaźnika z czerwonym. $(br2)Aby to osiągnąć, należy wykorzystać $(2)zielone$() i $(4)czerwone$() przyciski operacji kuźniczych, które będą przesuwać dotychczasowy postęp o określoną wartość, zależnie od podjętej operacji.",
+      "title": "Cele"
     },
     {
       "type": "patchouli:text",
-      "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item - you will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+      "text": "$(2)Zielone$() operacje będą zawsze przesuwały dotychczasowy postęp w $(bold)prawą$() stronę, natomiast $(4)czerwone$() - w stronę $(bold)lewą$(). Uwaga, jeżeli zielony wskaźnik zostanie przesunięty poza pasek postępu, sztabka zostanie utracona przez nadmierne wyrobienie materiału. Ponadto podczas wykonywania operacji kuźniczych gracz musi spełnić również wyznaczone $(thing)warunki$()..."
     },
     {
       "type": "patchouli:text",
-      "text": "The $(thing)rules$(), are the two or three icons shown on the top of the anvil interface. They represent specific actions that must be taken, at specific times, in order for your working to be a success. For example, a rule could be $(2)Bend Second Last$(), meaning the second to last action you take $(bold)must$() be a $(2)Bend$() action.",
+      "text": "$(thing)Warunki$() to dwie lub trzy ikony wyświetlone na górze interfejsu. Określają one konkretne operacje, które muszą zostać podjęte we wskazanym momencie i kolejności, by wybrany przedmiot mógł zostać wytworzony. Przykładowym warunkiem jest \"$(2)Wygnij jako przedostatni$()\", co oznacza, że przedostatnią operacją, jaką podejmie gracz, $(bold)musi$() być operacja $(2)gięcia$().",
       "title": "Zasady kucia"
     },
     {
       "type": "patchouli:text",
-      "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+      "text": "Ostatnie podjęte operacje widoczne są tuż pod wspomnianymi ikonami warunków. Gdy warunek zostanie spełniony, podświetli się on na zielono. Kucie powiedzie się, gdy wszystkie warunki zostaną spełnione. $(br2)Wreszcie istotną jest $(l:mechanics/heating)temperatura$() przedmiotu przeznaczonego do obróbki. Metale są kowalne jedynie powyżej określonych temperatur, gdy wskaźnik podpowiada: \"Kowalne\". Podczas kucia przedmiot może zostać wyciągnięty do ponownego podgrzania."
     },
     {
       "type": "patchouli:text",
-      "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items, such as tool heads, when they are worked in a low or minimal amount of steps, receive a Forging Bonus based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.",
+      "text": "Wykuwanie przedmiotu może być żmudne i posiadać wiele następujących po sobie kroków. Wszelako efektywna praca zostaje nagrodzona. Niektóre przedmioty, jak na przykład głowice narzędzi, będąc wykonanymi w niewielkiej, bądź minimalnej ilości kroków, otrzymują bonus zależny od tego, jak efektywnie zostały wykonane. Bonus będzie wtedy stosował się do głównej cechy docelowego narzędzia; na przykład głowica kilofu wykorzystana do jego wytworzenia.",
       "title": "Bonusy"
     },
     {
@@ -91,17 +91,17 @@
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
       "title": "Bezbłędnie wykute",
       "link_recipes": false,
-      "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
+      "text": "Wyróżniamy cztery jakości bonusu: $(li)Słabo wykute$(li)Dobrze wykute$(li)Profesjonalnie wykute$(li)Bezbłędnie wykute$(br2) Bonusy te zwiększają jakość wykonanego narzędzia, czyniąc je wytrzymalszym, szybszym i/lub zadającym więcej obrażeń podczas walki, zależnie od jego rodzaju."
     },
     {
       "type": "patchouli:text",
       "anchor": "zespajanie",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)Stone Anvil$() or a metal anvil.$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "Spawanie jest procesem, podczas którego dwa elementy zostają połączone w jeden, nowy przedmiot. Spawanie działa tak samo niezależnie od rodzaju kowadła.$(br2)Po pierwsze potrzebnym jest umieścić dwa przeznaczone do spawania przedmioty w kowadle. Można uczynić to poprzez kliknięcie nimi na kowadło, bądź wprowadzenie ich w interfejsie kowadła w dwa skrajne lewe sloty.",
       "title": "Spawanie"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)Hammer$() on the anvil. You will hear a hammering sound and the items will be welded together. They can then be extracted by using $(item)$(k:key.use)$() on the anvil with an empty hand."
+      "text": "Co więcej, potrzebne będzie posiadanie co najmniej jednego $(l:mechanics/flux)topnika$() w kowadle, by ułatwić proces spawania. Wtedy, gdy obydwa przedmioty są $(l:mechanics/heating)wystarczająco gorące$() do spawania - wskaźnik podpowiada \"Kowalne\" - trzeba użyć jakiegokolwiek $(thing)młota$() na kowadle. Po usłyszeniu dźwięku uderzającego młota o metal, przedmioty zostaną zespojone. Mogą one zostać pobrane poprzez użycie $(item)$(k:key.use)$() pustą dłonią na kowadle."
     }
   ],
   "read_by_default": true,
