@@ -337,5 +337,19 @@ function registerTFGMultiblockRecipes(event) {
 		C: Item.of('gtceu:ulv_machine_hull'),
 		D: Item.of('#forge:normal_fluid_pipes/steel')
 	}).addMaterialInfo().id('tfg:shaped/gas_well')
+
+	// Pastoral Engine
+
+	event.recipes.gtceu.shaped('tfg:pastoral_engine', [
+		'ABA',
+		'DCE',
+		'ABA'
+	], {
+		A: Item.of('gtceu:copper_single_cable'),
+		B: '#gtceu:circuits/ulv',
+		C: Item.of('gtceu:steel_machine_casing'),
+		D: Item.of('tfcgroomer:red_steel_grooming_station'),
+		E: Item.of('tfcgroomer:blue_steel_grooming_station')
+	}).addMaterialInfo().id('tfg:shaped/gas_well')
 	
 }
