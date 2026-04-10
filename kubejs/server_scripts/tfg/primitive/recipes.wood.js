@@ -94,4 +94,17 @@ function registerTFGWoodRecipes(event) {
 		.duration(20)
 		.circuit(6)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Crafting Station
+		event.shaped('craftingstation:crafting_station', [
+			'BCB',
+			'ADA',
+			'AEA'
+	], {
+			A: '#tfc:lumber',
+			B: '#forge:screws/any_bronze', 
+			C: '#tfc:workbenches',
+			D: '#forge:tools/saws', 
+			E: '#forge:tools/hammers' 
+	}).id('craftingstation:shaped/crafting_station')
 }
