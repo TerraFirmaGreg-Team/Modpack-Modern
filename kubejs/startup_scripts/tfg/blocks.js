@@ -1,6 +1,6 @@
 "use strict";
 
-const registerTFGBlocks = (event) => {
+function registerTFGBlocks(event) {
 
 	registerTFGDimensionMarkerBlocks(event)
 	registerTFGCrops(event)
@@ -8,6 +8,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGMudBrickBlocks(event)
 	registerTFGRockBlocks(event)
 	registerTFGSupportBlocks(event)
+	registerTFGGlassBlocks(event)
 
 	registerTFGWorldGenTrees(event)
 	registerTFGWorldGenBeneathDecoBlocks(event)
