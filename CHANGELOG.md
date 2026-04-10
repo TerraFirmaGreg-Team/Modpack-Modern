@@ -32,6 +32,7 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Improved the hazardous materials field guide page with more information about each medical condition (#3717) @Symasas225
 - Added connected texture versions of vanilla glass blocks (shapeless craft to switch between the normal ones and these) (#3743) @SakuraKitsurugi
 - Fixed some wood fence and gate recipes being inconsistent (#3758) @SakuraKitsurugi
+- Added crafting stations (#3750) @Froffy025
 ### Bug fixes
 - Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
 - Fixed various TFG-created rock blocks (mossy cobbles, etc) not requiring a pickaxe to mine (#3725) @Pyritie
