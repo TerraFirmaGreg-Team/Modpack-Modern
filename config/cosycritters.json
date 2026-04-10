@@ -1,8 +1,8 @@
 {
   "configVersion": 1,
-  "maxBirds": 50,
+  "maxBirds": 30,
   "maxMoths": 8,
-  "maxSpiders": 16,
+  "maxSpiders": 10,
   "spawnHatman": false,
   "spawnBird": true,
   "spawnMoth": true,
