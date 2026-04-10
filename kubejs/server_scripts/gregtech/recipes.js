@@ -308,7 +308,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify Rotor Holder to require an Assembler
 
-	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	//event.remove({ id: 'gtceu:shaped/rotor_holder_hv' }) Keep it craftable before the Assembler
 	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
