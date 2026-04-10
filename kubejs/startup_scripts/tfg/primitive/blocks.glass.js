@@ -10,7 +10,7 @@ function registerTFGGlassBlocks(event) {
 }
 
 function createGlassBlock(event, name, opaque) {
-    event.create(`tfg:smooth_${name}`)
+    event.create(`tfg:glass/smooth_${name}`)
         .textureAll(`tfg:block/glass/smooth_${name}`)
         .hardness(0.3)
         .glassSoundType()

@@ -10,6 +10,6 @@ function registerTFGGlassRecipes(event) {
 }
 
 function createGlassRecipe(event, name) {
-	event.recipes.shapeless(`tfg:smooth_${name}`, [ `minecraft:${name}` ]).id(`tfg:shapeless/${name}_to_smooth_${name}`)
-	event.recipes.shapeless(`minecraft:${name}`, [ `tfg:smooth_${name}` ]).id(`tfg:shapeless/smooth_${name}_to_${name}`)
+	event.recipes.shapeless(`tfg:glass/smooth_${name}`, [ `minecraft:${name}` ]).id(`tfg:shapeless/${name}_to_smooth_${name}`)
+	event.recipes.shapeless(`minecraft:${name}`, [ `tfg:glass/smooth_${name}` ]).id(`tfg:shapeless/smooth_${name}_to_${name}`)
 }
