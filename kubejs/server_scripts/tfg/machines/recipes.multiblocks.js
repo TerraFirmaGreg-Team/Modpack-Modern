@@ -350,6 +350,6 @@ function registerTFGMultiblockRecipes(event) {
 		C: Item.of('gtceu:steel_machine_casing'),
 		D: Item.of('tfcgroomer:red_steel_grooming_station'),
 		E: Item.of('tfcgroomer:blue_steel_grooming_station')
-	}).addMaterialInfo().id('tfg:shaped/gas_well')
+	}).addMaterialInfo().id('tfg:shaped/pastoral_engine')
 	
 }
