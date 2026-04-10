@@ -96,15 +96,22 @@ function registerTFGWoodRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	// Crafting Station
-		event.shaped('craftingstation:crafting_station', [
-			'BCB',
-			'ADA',
-			'AEA'
+	event.shaped('craftingstation:crafting_station', [
+		'BCB',
+		'ADA',
+		'AEA'
 	], {
-			A: '#tfc:lumber',
-			B: '#forge:screws/any_bronze', 
-			C: '#tfc:workbenches',
-			D: '#forge:tools/saws', 
-			E: '#forge:tools/hammers' 
-	}).id('craftingstation:shaped/crafting_station')
+		A: '#tfc:lumber',
+		B: '#forge:screws/any_bronze', 
+		C: '#tfc:workbenches',
+		D: '#forge:tools/saws', 
+		E: '#forge:tools/hammers' 
+	}).id('tfg:shaped/crafting_station')
+
+	event.recipes.gtceu.assembler("tfg:crafting_station")
+		.itemInputs('4x #tfc:lumber', '2x #forge:screws/any_bronze', '#tfc:workbenches')
+		.itemOutputs('craftingstation:crafting_station')
+		.duration(20)
+		.circuit(10)
+		.EUt(GTValues.VA[GTValues.LV])
 }
