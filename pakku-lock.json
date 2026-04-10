@@ -3490,49 +3490,47 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+                    "file_name": "corpsecurioscompat-1.20.1-Forge-4.0.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7088/113/corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
-                    "id": "7088113",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7891/790/corpsecurioscompat-1.20.1-Forge-4.0.1.jar",
+                    "id": "7891790",
                     "parent_id": "1138130",
                     "hashes": {
-                        "sha1": "3b36538ca8c6cc16982788c8e058cb726357a90c",
-                        "md5": "0bdc0b6b4a41df8dbfb9ab4621319547"
+                        "sha1": "1320497f252c57bf2ac0149e7b499a9f9db74650",
+                        "md5": "8d99f45c935897fe1069c5e1f41c14b4"
                     },
                     "required_dependencies": [
                         "1264423"
                     ],
-                    "size": 23655,
-                    "date_published": "2025-10-09T20:23:18.440Z"
+                    "size": 22535,
+                    "date_published": "2026-04-07T20:12:03.600Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
+                    "file_name": "corpsecurioscompat-1.20.1-Forge-4.0.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pJGcKPh1/versions/zgt34xjo/corpsecurioscompat-1.20.1-Forge-3.1.3.jar",
-                    "id": "zgt34xjo",
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/pJGcKPh1/versions/gC9IUqZM/corpsecurioscompat-1.20.1-Forge-4.0.1.jar",
+                    "id": "gC9IUqZM",
                     "parent_id": "pJGcKPh1",
                     "hashes": {
-                        "sha512": "1775a3c1c42e886ac2a0ce18ebc3d88a192f68c7474ad4114287e762c90ecaeda4bd49129026824da614efc7af3d0af2dda9fcd35f231a3d02aa0981f018103d",
-                        "sha1": "3b36538ca8c6cc16982788c8e058cb726357a90c"
+                        "sha512": "75768077f9f1820b75e7b1a02a61317817dd96f4c4f07fe78f3482161ceb249a2efe6d8dd452146eb697c6c2fc071faf46f52db2e2552a2ab9df9a3c09a707ad",
+                        "sha1": "1320497f252c57bf2ac0149e7b499a9f9db74650"
                     },
-                    "required_dependencies": [
-                        "OfKzpbRU"
-                    ],
-                    "size": 23655,
-                    "date_published": "2025-11-18T11:12:27.896456Z"
+                    "required_dependencies": [],
+                    "size": 22535,
+                    "date_published": "2026-04-07T20:11:46.621776Z"
                 }
             ]
         },
@@ -3583,6 +3581,20 @@
             },
             "id": {
                 "curseforge": "1310299"
+            "pakku_id": "pYeN3mBUsIkhMt5w",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "cosy-critters",
+                "modrinth": "cosy-critters"
+            },
+            "name": {
+                "curseforge": "Cosy Critters & Creepy Crawlies",
+                "modrinth": "Cosy Critters & Creepy Crawlies"
+            },
+            "id": {
+                "curseforge": "1182393",
+                "modrinth": "61PI8Hzj"
             },
             "files": [
                 {
@@ -3606,6 +3618,47 @@
                     "required_dependencies": [],
                     "size": 93034,
                     "date_published": "2026-01-15T10:55:32.653Z"
+                    "file_name": "cosycritters-0.3.2+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7892/37/cosycritters-0.3.2+1.20.1-forge.jar",
+                    "id": "7892037",
+                    "parent_id": "1182393",
+                    "hashes": {
+                        "sha1": "ea2c53b109f9181282b9897e9c5c8a3beac76576",
+                        "md5": "e49ba775cf1d62cd725830bba0d9d4bd"
+                    },
+                    "required_dependencies": [],
+                    "size": 733481,
+                    "date_published": "2026-04-07T21:18:20.543Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "cosycritters-0.3.2+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/61PI8Hzj/versions/Z0NuiQ9A/cosycritters-0.3.2+1.20.1-forge.jar",
+                    "id": "Z0NuiQ9A",
+                    "parent_id": "61PI8Hzj",
+                    "hashes": {
+                        "sha512": "7e2a344b29c2f7618a64a0a0db0a7263cc44d470298c9e10a9e8704757ec45217f4bc0c93421e32f13057023fcf8b2354131f7552972a69a7e110a003d8d782e",
+                        "sha1": "ea2c53b109f9181282b9897e9c5c8a3beac76576"
+                    },
+                    "required_dependencies": [],
+                    "size": 733481,
+                    "date_published": "2026-04-07T21:18:22.279869Z"
                 }
             ]
         },
@@ -4166,7 +4219,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "createpickywheels-forge-1.20.1-6.0.8-5.jar",
+                    "file_name": "createpickywheels-forge-1.20.1-6.0.8-6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4175,18 +4228,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7803/204/createpickywheels-forge-1.20.1-6.0.8-5.jar",
-                    "id": "7803204",
+                    "url": "https://edge.forgecdn.net/files/7893/92/createpickywheels-forge-1.20.1-6.0.8-6.jar",
+                    "id": "7893092",
                     "parent_id": "866839",
                     "hashes": {
-                        "sha1": "7cd8ec4e8c62b999b3f927bc0580f9a9aa4c1b12",
-                        "md5": "6a1f27ae7658e5af84cc7e5ae15e7d09"
+                        "sha1": "e863d29bc576114d3517c8ae2f6ffdb47d68a547",
+                        "md5": "e6a2d1c950ec96231e16bddd7b66d94f"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 211235,
-                    "date_published": "2026-03-24T05:31:38.437Z"
+                    "size": 87836,
+                    "date_published": "2026-04-08T02:29:07.517Z"
                 }
             ]
         },
@@ -12942,7 +12995,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.17.1638.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.20.1670.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12951,20 +13004,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7886/275/sophisticatedcore-1.20.1-1.3.17.1638.jar",
-                    "id": "7886275",
+                    "url": "https://edge.forgecdn.net/files/7898/578/sophisticatedcore-1.20.1-1.3.20.1670.jar",
+                    "id": "7898578",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "f6cc8242d4d7d6274e4d0ec2da0cd30e0958353b",
-                        "md5": "b168ae0a7bb7c753ba2c44fff159d926"
+                        "sha1": "eb6ffefe12364353f50719eef69f84cbfd51f59a",
+                        "md5": "18195692592a96e4a40433471a75596a"
                     },
                     "required_dependencies": [],
-                    "size": 1428575,
-                    "date_published": "2026-04-06T18:29:34.177Z"
+                    "size": 1430255,
+                    "date_published": "2026-04-09T08:32:12.430Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.17.1638.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.20.1670.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12973,16 +13026,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/o4wYPK15/sophisticatedcore-1.20.1-1.3.17.1638.jar",
-                    "id": "o4wYPK15",
+                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/oTbp8tRn/sophisticatedcore-1.20.1-1.3.20.1670.jar",
+                    "id": "oTbp8tRn",
                     "parent_id": "nmoqTijg",
                     "hashes": {
-                        "sha512": "465c902c1c32eb1fcf2d198e3a2b1ef8ac9ca528511da07259a8bc6a1226b1118f527e51fa1e960e30d0427d1130440827081b00eaf63e40fba915171ffc73fa",
-                        "sha1": "9d67579ef29f086f14e3ab2821daff4c5c4e2895"
+                        "sha512": "760c6b859babe3f8496000e124ddce2d301ecc82534cd6502861be87d0be5ef263a93924a68c1f2e28b7abb88f621f90a65a7050da44452e557a173342e98875",
+                        "sha1": "c433247bcb17d8dafacfbf15d42c3c1ca4d032a8"
                     },
                     "required_dependencies": [],
-                    "size": 1428576,
-                    "date_published": "2026-04-06T18:30:41.475763Z"
+                    "size": 1430255,
+                    "date_published": "2026-04-09T08:32:46.524571Z"
                 }
             ]
         },
