@@ -2092,6 +2092,24 @@
 			x: 5.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["0DBC148D92A9F69F"]
+			description: ["{quests.low_voltage.rancher.desc}"]
+			icon: "minecraft:milk_bucket"
+			id: "35BA757ACDB3ED82"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.rancher.subtitle}"
+			tasks: [{
+				id: "03BA37C094F8C0A7"
+				item: "tfg:pastoral_engine"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.rancher.title}"
+			x: -2.0d
+			y: 19.5d
+		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]
 	title: "{quests.low_voltage}"
