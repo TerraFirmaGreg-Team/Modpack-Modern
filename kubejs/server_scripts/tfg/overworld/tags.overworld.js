@@ -55,6 +55,18 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
+
+	event.add('minecraft:flowers', 'tfg:plant/azalea')
+	event.add('minecraft:flowers', 'tfg:plant/buttercup')
+	event.add('minecraft:flowers', 'tfg:plant/cornflower')
+	event.add('minecraft:flowers', 'tfg:plant/edelweiss')
+	event.add('minecraft:flowers', 'tfg:plant/mountain_hullwort')
+	event.add('minecraft:flowers', 'tfg:plant/palash')
+	event.add('minecraft:flowers', 'tfg:plant/penwortel')
+	event.add('minecraft:flowers', 'tfg:plant/qantu')
+	event.add('minecraft:flowers', 'tfg:plant/ramirezella')
+	event.add('minecraft:flowers', 'tfg:plant/ramunda')
+	event.add('minecraft:flowers', 'tfg:plant/yellow_saxifrage')
 }
 
 function registerTFGOverworldBlockTags(event) {
