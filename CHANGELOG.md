@@ -57,6 +57,7 @@ WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgra
 - Fixed not being able to chisel the new mud brick blocks (#3737) @SokvisalMong
 - Fixed not being able to anvil a copper spindle head on certain seeds @Redeix
 - Fixed a crash when trying to use a fluid rig on a chunk that was generated in 0.11 (#3718) @TomPlop
+- Fixed vacuum chambers taking the same amount of time regardless of their RPM @ashleney
 
 ## [0.12.1] - 01-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
