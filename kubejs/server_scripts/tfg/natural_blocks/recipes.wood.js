@@ -187,8 +187,8 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: lumber,
-                        B: plank
+                        A: plank,
+                        B: lumber
                     })
                     .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
                 };
@@ -199,8 +199,8 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: plank,
-                        B: lumber
+                        A: lumber,
+                        B: plank
                     })
                     .id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
                 };
