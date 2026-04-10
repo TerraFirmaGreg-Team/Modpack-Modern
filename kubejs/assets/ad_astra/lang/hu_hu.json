@@ -1,4 +1,5 @@
 {
+	"advancements.ad_astra.under_pressure.title": "Nyomás alatt",
 	"block.ad_astra.aeronos_cap": "Aeronos Gombatető",
 	"block.ad_astra.aeronos_door": "Aeronos Ajtó",
 	"block.ad_astra.aeronos_fence": "Aeronos Kerítés",
@@ -433,6 +434,7 @@
 	"item.ad_astra.tier_2_rocket": "ASM 4914 Titánium Rakéta",
 	"item.ad_astra.tier_3_rocket": "45-Ti Volfrámacél Rakéta",
 	"item.ad_astra.tier_4_rocket": "4-es Szintű Rakéta",
+	"item.ad_astra.wrench": "Csavarkulcs",
 	"item.ad_astra.zip_gun": "Hajtópisztoly",
 	"itemGroup.ad_astra.main": "Ad Astra",
 	"key.ad_astra.open_radio": "Nyitott Rádió",
@@ -536,6 +538,7 @@
 	"tooltip.ad_astra.clear_fluid_tank": "Shift-jobb-klikkelj a kitörlésért",
 	"tooltip.ad_astra.construct_space_station_at": "Építs űrállomást %s múlva [%s, %s]-nél",
 	"tooltip.ad_astra.construction_cost": "Megépítése ebbe kerül:",
+	"tooltip.ad_astra.distribution_mode.round_robin": "Sorjában",
 	"tooltip.ad_astra.door.locked": "Bezárt Ajtó",
 	"tooltip.ad_astra.door.unlocked": "Nyitott Ajtó",
 	"tooltip.ad_astra.energy": "%s FE / %s FE",

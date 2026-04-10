@@ -359,6 +359,9 @@ function registerTFGItemSize(event) {
 
 	//Honeyed Apples
 	event.itemSize("create:honeyed_apple", "small", "light")
+
+	//Crafting Station
+	event.itemSize("craftingstation:crafting_station", "large", "heavy", "crafting_station");
 }
 
 //#endregion

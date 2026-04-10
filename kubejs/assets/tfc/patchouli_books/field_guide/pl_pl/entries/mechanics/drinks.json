@@ -77,7 +77,7 @@
 			"type": "patchouli:spotlight"
 		},
 		{
-			"title": "Słona woda",
+			"title": "Woda morska",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water"

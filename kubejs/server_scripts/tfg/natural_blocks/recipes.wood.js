@@ -34,7 +34,7 @@ function registerTFGWoodenRecipes(event) {
          * @param {string} stripped_wood -ID for the stripped wood.
          */
         function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence,
-            fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, chest, trapped_chest, 
+            fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest, 
             loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel, 
             stomping_barrel, barrel_press, wine_shelf) {
 
@@ -187,8 +187,8 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: lumber,
-                        B: plank
+                        A: plank,
+                        B: lumber
                     })
                     .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
                 };
@@ -199,8 +199,8 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: plank,
-                        B: lumber
+                        A: lumber,
+                        B: plank
                     })
                     .id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
                 };
@@ -277,6 +277,19 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shaped/${name}_workbench`)
                 };
 
+            // Bookshelf
+                if (bookshelf && lumber && name) {
+                    event.shaped(bookshelf, [
+                        'AAA',
+                        'BBB',
+                        'AAA'
+                    ], {
+                        A: lumber,
+                        B: '#forge:rods/wooden'
+                    })
+                    .id(`tfg:shaped/${name}_bookshelf`)
+                };
+
             // Chest
                 if (chest && lumber && name) {
                     event.shaped(chest, [
@@ -334,16 +347,14 @@ function registerTFGWoodenRecipes(event) {
                 };
 
             // Lectern
-            // !!! TEMPORARY RECIPE AS BOOKSHELVES ARE STILL MISSING !!!
-                if (lectern && lumber && plank && name) {
+                if (lectern && lumber && bookshelf && name) {
                     event.shaped(lectern, [
                         'AAA',
                         ' B ',
                         ' A '
                     ], {
                         A: lumber,
-                        // B: bookshelf
-                        B: plank
+                        B: bookshelf
                     })
                     .id(`tfg:shaped/${name}_lectern`)
                 };
@@ -649,6 +660,7 @@ function registerTFGWoodenRecipes(event) {
                 wood.stripped_wood,
                 `tfg:wood/tool_rack/${wood.name}`,
                 `tfg:wood/workbench/${wood.name}`,
+                `tfg:wood/bookshelf/${wood.name}`,
                 `tfg:wood/chest/${wood.name}`,
                 `tfg:wood/trapped_chest/${wood.name}`,
                 `tfg:wood/loom/${wood.name}`,
@@ -742,6 +754,7 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
+                null,
                 null
             );
         });
@@ -794,6 +807,7 @@ function registerTFGWoodenRecipes(event) {
                 `afc:wood/planks/${wood}_button`, 
                 `afc:wood/wood/${wood}`, 
                 `afc:wood/stripped_wood/${wood}`,
+                null,
                 null,
                 null,
                 null,
@@ -991,6 +1005,7 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
+                null,
                 null
             );
         });
@@ -1075,6 +1090,7 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
+                null,
                 null
             );
 
@@ -1122,6 +1138,7 @@ function registerTFGWoodenRecipes(event) {
                 'gtceu:treated_wood_pressure_plate', 
                 'gtceu:treated_wood_button', 
                 null, 
+                null,
                 null,
                 null,
                 null,

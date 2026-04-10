@@ -6,11 +6,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "Beneath Crops",
-			"text": "The $(thing)Beneath$() may be a harsh environment, but it is still possible to find crops there. Beneath crops are incredibly resilient and can grow in extreme heat conditions making them useful for surviving below the Earth and on the surface."
+			"text": "Malgré que le $(thing)Sous-Monde$() soit un environnement hostile, il est toujours possible d'y trouver des plantes cultivées. Les cultures du Sous-Monde sont particulièrement résiliente et tolèrent des chaleurs extrêmes, les rendant idéales pour des plantations souterraines ou à la surface."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface, they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isnt provided by the Beneath's natural light. To solve this problem, you can utilize $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() or any other available light source."
+			"text": "Les plantations dans le Sous-Monde fonctionnent pareillement à la surface ; ayant des exigences concernant humidité, température ainsi que nutriments. Elles peuvent aussi être cultivées dans une $(thing)serre$().$(br2)Attention  :  les cultures plantées dans le Sous-Monde nécessite toujours un niveau de lumière minimum de 12, qui n'est pas présent naturellement. Ce problème peut être résolu par des $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)aqueducts de lave$() ou tout autre source lumineuse."
 		},
 		{
 			"type": "patchouli:text",
@@ -25,7 +25,7 @@
 			"type": "patchouli:text",
 			"anchor": "cassava",
 			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hhumidité$(): 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le manioc peut être consommé afin de gagner de la nutrition $(thing)Légume$(), mais il est plus efficace $(thing)cuisiné$() avant d'être mangé.$(br)"
 		},
 		{
 			"type": "tfc:multimultiblock",

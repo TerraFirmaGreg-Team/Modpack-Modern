@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "W Firmalife, istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, które są używane w gotowaniu. Można je znaleźć w środowisku naturalnym i po zebraniu, mogą być uprawiane w  $(l:firmalife/grejpfrut)Szklarni$(), w której zużywają 20 punktów N, P i K."
+			"text": "W Firmalife istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, a które są używane do gotowania. Można je znaleźć w środowisku naturalnym i po zebraniu mogą być uprawiane w  $(l:firmalife/greenhouse)Szklarni$(), w której zużywają 20 punktów N, P i K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -283,7 +283,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Kula nasienna() może być użyta do posadzenia różnego rodzaju traw. Może być użyteczna po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasiona$()."
+			"text": "$(item)Kule nasienne() mogą być używane do sadzenia różnego rodzaju traw. Może to być przydatne po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasion$()."
 		},
 		{
 			"type": "patchouli:multiblock",

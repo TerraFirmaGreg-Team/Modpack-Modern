@@ -1,0 +1,16 @@
+{
+  "itemGroup.gtceuterminal": "GregTechCEu Terminal",
+  "item.gtceuterminal.multi_structure_manager": "Menedżer Wielo-Strukturalny ",
+  "item.gtceuterminal.schematic_interface": "Schematyczny Interfejs",
+  "item.gtceuterminal.dismantler": "Rozmontowywacz",
+  "item.gtceuterminal.terminal.success": "Obiekt Zbudowany Prawidłowo",
+  "item.gtceuterminal.terminal.failed": "Nie Udało się Złożyć Obiektu",
+  "item.gtceuterminal.terminal.cooldown": "Terminal w Czasie Odnowienia",
+  "item.gtceuterminal.terminal.not_controller": "Nie jest Kontrolerem Wielobloku",
+  "item.gtceuterminal.terminal.already_formed": "Wieloblok jest już Złożony",
+  "item.gtceuterminal.multi_structure_manager.tooltip": "Zarządzaj i Aktualizuj Pobliskie Wielobloki",
+  "item.gtceuterminal.schematic_interface.tooltip": "Kopiuje i Wkleja Schematy Wielobloków",
+  "item.gtceuterminal.dismantler.tooltip": "Rozmontowuje Wielobloki i zwraca ich Komponenty",
+  "item.gtceuterminal.energy_analyzer": "Analizator Energii",
+  "item.gtceuterminal.power_logger.desc": "Monitoruje Zużycie Energii Maszyny"
+}

@@ -8,6 +8,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGMudBrickBlocks(event)
 	registerTFGRockBlocks(event)
 	registerTFGSupportBlocks(event)
+	registerTFGGlassBlocks(event)
 
 	registerTFGWorldGenTrees(event)
 	registerTFGWorldGenBeneathDecoBlocks(event)
