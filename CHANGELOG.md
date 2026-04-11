@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.12.2] - 11-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Breaking changes
 - Changed the recipe for normal and SMD Capacitors, with Silicon Rubber and Polyethylene swapped (#3683) @TomPlop
