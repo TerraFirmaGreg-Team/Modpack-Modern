@@ -7,6 +7,7 @@
 - Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
 - Removed the (wrong) warning message when tools are about to break, and adjusted the placement of the inventory sorting buttons on GregTech GUI screens @Pyritie
 ### Bug fixes
+- Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
 
 ## [0.12.2] - 11-04-2026
