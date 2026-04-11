@@ -2,7 +2,12 @@
 
 ## Unreleased
 ### Changes
+- Drowned now always carry a javelin on hard difficulty, and zombies sometimes spawn with weapons on hard difficulty too @Pyritie
+- Pressing 'U' on a raw rock will now also filter the Ore Veins tab by that rock type @BlueBoat29
+- Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
+- Removed the (wrong) warning message when tools are about to break, and adjusted the placement of the inventory sorting buttons on GregTech GUI screens @Pyritie
 ### Bug fixes
+- Fixed the new flowers not counting for bees (#3760) @Froffy025
 
 ## [0.12.2] - 11-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
