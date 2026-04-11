@@ -1,3 +1,13 @@
 {
-  "gui.createstockbridge.address": "Adres paczki:"
+  "block.createstockbridge.ae_bridge": "Most magazynowy AE",
+  "gui.createstockbridge.address": "Adres paczki:",
+  "gui.stockbridge.remote_items": "System produktów magazynowych Create",
+  "createstockbridge.ponder.ae_stockbridge.header": "Połączenie systemu magazynowego z AE",
+  "createstockbridge.ponder.ae_stockbridge.text_1": "Most magazynowy AE łączy system produktów magazynowych Create z AE",
+  "createstockbridge.ponder.ae_stockbridge.text_2": "Kliknij prawym przyciskiem myszy, aby powiązać z domyślną siecią przed umieszczeniem",
+  "createstockbridge.ponder.ae_stockbridge.text_3": "Ustaw adres Mostu magazynowego AE, aby pasował do adresu Żabołapu",
+  "createstockbridge.ponder.ae_stockbridge.text_4": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_5": "AE",
+  "createstockbridge.ponder.ae_stockbridge.text_6": "AE może żądać przedmiotów przez 'wytwarzanie'",
+  "createstockbridge.ponder.ae_stockbridge.text_7": "Create może żądać przechowywanych elementów od AE"
 }
