@@ -46,6 +46,7 @@ function registerTFGGemSlurriesProcessing(event) {
         [GTMaterials.Spessartine,                      'spessartine',    { gem: 300, flawless: 700, exquisite: 1500 }],
         [GTMaterials.Opal,                             'opal',           { gem: 300, flawless: 700, exquisite: 1500 }],
         [GTMaterials.GarnetYellow,                     'yellow_garnet',  { gem: 300, flawless: 700, exquisite: 1500 }],
+        [GTMaterials.Realgar,                          'realgar',        { gem: 300, flawless: 700, exquisite: 1500 }],
     ];
 
     gemMaterials.forEach(([material, output, amounts]) => {
@@ -130,6 +131,7 @@ function registerTFGGemSlurriesProcessing(event) {
         ['opal',            4000,   2000,     500,   [['gtceu:silicon_dioxide_dust', 1*30], ['tfc:powder/kaolinite', 1]],                                                            [],                                                                                      []],
         ['yellow_garnet',   4000,   2000,     500,   [['gtceu:andradite_dust', 5*2], ['gtceu:grossular_dust', 8*2], ['gtceu:uvarovite_dust', 3*2]],                                  [],                                                                                      []],
         ['armalcolite',     4000,   2000,     500,   [['gtceu:magnesium_dust', 1*7.5], ['gtceu:ilmenite_dust', 1*7.5]],                                                              [['gtceu:oxygen', 2000*7.5]],                                                            []],
+        ['realgar',         4000,   2000,     500,   [['gtceu:arsenic_dust', 1*15], ['gtceu:sulfur_dust', 1*15]],                                                                    [],                                                                                      []],
         //['',     4000,   2000,     500,   [['', ], ['', ], ['',]],  [['', ]],      []],
     ];
 
