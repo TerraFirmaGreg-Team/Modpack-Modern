@@ -195,6 +195,12 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'tfg:semiheavy_ammoniacal_water')
 	event.add('tfc:ingredients', 'tfg:semiheavy_ammoniacal_water')
 	event.add('minecraft:water', 'tfg:semiheavy_ammoniacal_water')
+	
+	event.add('tfc:any_water', 'tfg:muddy_water')
+	event.add('tfc:hydrating', 'tfg:muddy_water')
+	event.add('tfc:drinkables', 'tfg:muddy_water')
+	event.add('tfc:any_drinkables', 'tfg:muddy_water')
+	event.add('minecraft:water', 'tfg:muddy_water')
 
 	event.add('tfc:any_water', 'tfg:semiheavy_water')
 	event.add('tfc:hydrating', 'tfg:semiheavy_water')
@@ -310,6 +316,7 @@ const registerTFGPlacedFeatures = (event) => {
 
 const registerTFGEntityTypeTags = (event) => {
 
+	registerTFGOverworldEntityTypeTags(event)
 	registerTFGMoonEntityTypeTags(event)
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)
@@ -320,27 +327,4 @@ const registerTFGEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:axolotl_pet_enderman')
 	event.add('ad_astra:can_survive_in_space', 'endermanoverhaul:hammerhead_pet_enderman')
-
-	// Tag used by TFC to control monsters spawning on the surface
-	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
-	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
-	event.add('tfc:vanilla_monsters', 'minecraft:husk')
-	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
-	event.add('tfc:vanilla_monsters', 'minecraft:slime')
-
-	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
-	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
-	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
-	
-	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
-	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
-	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
-	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
-	event.add('tfc:land_prey', 'tfg:leopard_seal')
-	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
-	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
-	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
-	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
-	event.add('tfc:hunted_by_cats', 'tfg:lemming')
-	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
 }

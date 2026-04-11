@@ -52,7 +52,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:bar_of_chocolate', 
     'create:sweet_roll', 
     'create:chocolate_glazed_berries', 
-    'create:honeyed_apple', 
     'create:builders_tea', 
     'create:andesite_alloy', 
     'create:chromatic_compound', 

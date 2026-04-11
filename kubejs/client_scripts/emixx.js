@@ -150,6 +150,7 @@ const registerSingleGroups = (event) => {
         '#forge:bud_indicators',
         '#forge:glass',
         '#forge:glass_panes',
+        '#forge:coral_blocks',
 
         // Blocks (GTCEU)
         '#gtceu:lamps',
@@ -171,6 +172,11 @@ const registerSingleGroups = (event) => {
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
+        '#tfc:colored_glazed_terracotta',
+        '#tfc:corals',
+        '#tfc:colored_raw_alabaster',
+        '#tfc:colored_bricks_alabaster',
+        '#tfc:colored_polished_alabaster',
 
         // Stone-related
         '#tfc:rock/hardened',
@@ -179,6 +185,7 @@ const registerSingleGroups = (event) => {
         '#tfc:rock/smooth',
         '#tfc:rock/gravel',
         '#tfc:rock/aqueducts',
+        '#tfg:rock_spikes',
 
         // Blocks (Firmalife)
         '#firmalife:food_shelves',
@@ -210,7 +217,60 @@ const registerSingleGroups = (event) => {
         '#mcw_tfc_aio:gutters',
         '#mcw_tfc_aio:awnings',
         '#mcw_tfc_aio:furniture',
-        '#mcw_tfc_aio:stripped_furniture'
+        '#mcw_tfc_aio:stripped_furniture',
+
+        // Create
+        '#create:tracks',
+        '#create:valve_handles',
+        '#create:postboxes',
+        '#create:table_cloths',
+        '#create:toolboxes',
+        '#create:seats',
+        '#createdeco:placards',
+
+        // Steam n Rails
+        '#railways:conductor_caps',
+        '#railways:palettes/cycle_groups/netherite/base',
+        '#railways:palettes/cycle_groups/brown/base',
+        '#railways:palettes/cycle_groups/maroon/base',
+        '#railways:palettes/cycle_groups/red/base',
+        '#railways:palettes/cycle_groups/vermilion/base',
+        '#railways:palettes/cycle_groups/orange/base',
+        '#railways:palettes/cycle_groups/granite/base',
+        '#railways:palettes/cycle_groups/dripstone/base',
+        '#railways:palettes/cycle_groups/ochrum/base',
+        '#railways:palettes/cycle_groups/yellow/base',
+        '#railways:palettes/cycle_groups/chartreuse/base',
+        '#railways:palettes/cycle_groups/olive_green/base',
+        '#railways:palettes/cycle_groups/lime/base',
+        '#railways:palettes/cycle_groups/green/base',
+        '#railways:palettes/cycle_groups/pine_green/base',
+        '#railways:palettes/cycle_groups/cyan/base',
+        '#railways:palettes/cycle_groups/sea_green/base',
+        '#railways:palettes/cycle_groups/turquoise/base',
+        '#railways:palettes/cycle_groups/light_blue/base',
+        '#railways:palettes/cycle_groups/blue/base',
+        '#railways:palettes/cycle_groups/royal_blue/base',
+        '#railways:palettes/cycle_groups/purple/base',
+        '#railways:palettes/cycle_groups/magenta/base',
+        '#railways:palettes/cycle_groups/pink/base',
+        '#railways:palettes/cycle_groups/white/base',
+        '#railways:palettes/cycle_groups/diorite/base',
+        '#railways:palettes/cycle_groups/limestone/base',
+        '#railways:palettes/cycle_groups/light_gray/base',
+        '#railways:palettes/cycle_groups/tuff/base',
+        '#railways:palettes/cycle_groups/gray/base',
+        '#railways:palettes/cycle_groups/scorchia/base',
+        '#railways:palettes/cycle_groups/black/base',
+
+        // Misc
+        '#comforts:sleeping_bags',
+        '#comforts:hammocks',
+        '#minecraft:music_discs',
+        '#simplylight:any_lamp_on',
+        '#simplylight:any_lamp_off',
+        '#computercraft:disks',
+        '#wan_ancient_beasts:charger_armors'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {

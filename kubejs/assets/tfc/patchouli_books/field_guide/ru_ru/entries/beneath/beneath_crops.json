@@ -209,7 +209,7 @@
 						]
 					],
 					"mapping": {
-						"Y": "tfg:peanut[age=3",
+						"Y": "tfg:peanut[age=3]",
 						"Z": "tfc:farmland/loam"
 					}
 				},

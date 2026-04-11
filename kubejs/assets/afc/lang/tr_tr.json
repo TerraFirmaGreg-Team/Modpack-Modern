@@ -1,8 +1,21 @@
 {
+  "block.afc.tree_tap": "Ağaç Musluğu",
+  "block.afc.wood.axle.baobab": "Baobab Şaftı",
+  "block.afc.wood.axle.cypress": "Cypress Şaftı",
+  "block.afc.wood.axle.eucalyptus": "Eucalyptus  Şaftı",
+  "block.afc.wood.axle.fig": "Fig Şaftı",
+  "block.afc.wood.axle.hevea": "Hevea Şaftı",
+  "block.afc.wood.axle.ipe": "Ipe Şaftı",
+  "block.afc.wood.axle.ironwood": "Ironwood Şaftı",
+  "block.afc.wood.axle.mahogany": "Mahogany Şaftı",
+  "block.afc.wood.axle.teak": "Teak Şaftı",
+  "block.afc.wood.axle.tualang": "",
   "block.afc.wood.leaves.mulga_blackwood": "Karaodun Yaprakları",
   "block.afc.wood.leaves.shisham_rosewood": "Gülağacı Yaprakları",
   "block.afc.wood.potted_sapling.mulga_blackwood": "Karaodun Fidanı Saksısı",
   "block.afc.wood.potted_sapling.shisham_rosewood": "Gülağacı Fidanı Saksısı",
   "block.afc.wood.sapling.mulga_blackwood": "Karaodun Fidanı",
-  "block.afc.wood.sapling.shisham_rosewood": "Gülağacı Fidanı"
+  "block.afc.wood.sapling.shisham_rosewood": "Gülağacı Fidanı",
+  "tooltip.afc.tap.amount": "Miktar: ",
+  "tooltip.afc.tap.spring": "Bahar: "
 }

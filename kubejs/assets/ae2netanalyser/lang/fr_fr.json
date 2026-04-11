@@ -1,4 +1,26 @@
 {
+  "itemGroup.ae2netanalyser": "Analyseur réseau AE2",
+  "item.ae2netanalyser.network_analyser": "Analyseur réseau ME",
+  "gui.ae2netanalyser.network_analyser.mode": "Mode",
   "gui.ae2netanalyser.network_analyser.node_size": "Taille",
-  "gui.ae2netanalyser.network_analyser.mode.FULL": "Plein"
+  "gui.ae2netanalyser.network_analyser.reset": "Réinitialiser les couleurs",
+  "gui.ae2netanalyser.network_analyser.mode.FULL": "Plein",
+  "gui.ae2netanalyser.network_analyser.mode.NODES": "Nœuds",
+  "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "Liens",
+  "gui.ae2netanalyser.network_analyser.mode.NONUM": "Sans numéro",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
+  "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "Lien normal",
+  "gui.ae2netanalyser.network_analyser.LINK.DENSE": "Lien dense",
+  "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "Lien P2P",
+  "gui.ae2netanalyser.network_analyser.NODE.NORMAL": "Nœud Normal",
+  "gui.ae2netanalyser.network_analyser.NODE.DENSE": "Nœud dense",
+  "gui.ae2netanalyser.network_analyser.NODE.MISSING": "Nœud hors connexion",
+  "gui.ae2netanalyser.network_analyser.channel.INFINITE": "Mode canal : Canal infini",
+  "gui.ae2netanalyser.network_analyser.channel.DEFAULT": "Mode canal : Par défaut",
+  "gui.ae2netanalyser.network_analyser.channel.X2": "Mode canal : Canal x2",
+  "gui.ae2netanalyser.network_analyser.channel.X3": "Mode canal : Canal x3",
+  "gui.ae2netanalyser.network_analyser.channel.X4": "Mode canal : Canal x4",
+  "gui.ae2netanalyser.network_analyser.state.normal_nodes": "Nœuds Normaux : %s",
+  "gui.ae2netanalyser.network_analyser.state.dense_nodes": "Nœuds denses : %s",
+  "gui.ae2netanalyser.network_analyser.state.missing_nodes": "Nœuds hors connexion : %s"
 }

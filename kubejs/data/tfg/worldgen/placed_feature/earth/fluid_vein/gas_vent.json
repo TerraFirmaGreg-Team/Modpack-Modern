@@ -31,8 +31,12 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 140,
-			"fluid": "gtceu:natural_gas"
+			"vein_ids": [
+				"tfg:natural_gas_surface_indicator",
+				"tfg:natural_gas_permafrost",
+				"tfg:natural_gas_swamp",
+				"tfg:natural_gas_volcanic"
+			]
 		}
 	]
 }

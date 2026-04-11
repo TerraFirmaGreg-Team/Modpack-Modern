@@ -1,0 +1,688 @@
+{
+  "name": "Plantas Selvagens",
+  "category": "tfc:the_world",
+  "icon": "tfc:textures/gui/book/icons/wild_crops.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Plantas selvagens$() podem ser encontradas espalhadas pelo mundo, crescendo em pequenos grupos. Podem ser colhidas para alimentação e sementes, que podem ser cultivadas sob a forma não selvagem.$(br2)Pode colher plantas selvagens com suas mãos, ou com uma $(thing)Faca$() ou outra ferramenta afiada. Quando quebradas, eles vão soltar $(thing)Sementes$() e alguns $(thing)Produtos$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:wild_crop/wheat[mature=true]"
+        }
+      },
+      "name": "Trigo Selvagem",
+      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Todos as $(l:mechanics/crops)plantas$() que podem ser cultivadas também podem ser encontradas na natureza. As plantas selvagens parecerão semelhantes às cultivadas, mas estão mais escondidas dentro da grama. As plantas selvagens só estão maduras de Junho a Outubro, caso contrário parecem mortas até o próximo Verão."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Todas as diferentes variedades de plantas selvagens",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/oat"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rye"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/maize[part=top]",
+            "Y": "tfc:wild_crop/maize[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rice[fluid=water]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/beet"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/cabbage"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/carrot"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/garlic"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/green_bean[part=top]",
+            "Y": "tfc:wild_crop/green_bean[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/potato"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/onion"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/soybean"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/squash"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/sugarcane[part=top]",
+            "Y": "tfc:wild_crop/sugarcane[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/tomato[part=top]",
+            "Y": "tfc:wild_crop/tomato[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/jute[part=top]",
+            "Y": "tfc:wild_crop/jute[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/pumpkin"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/melon"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Plantas selvagens aparecerão em climas próximos de onde a planta pode ser cultivada, então se procurar uma planta específica, procure no clima onde ela pode ser cultivada. Porém, ao contrário de $(l:mechanics/crops)Plantas$() que o jogador plantou, plantas selvagens não precisam de $(l:mechanics/hydration)Hidratação$().\nEm vez disso, elas aparecem em áreas dependendo da $()Temperatura$() e $()Precipitação$() médias.",
+      "title": "Encontrando Plantas Selvagens"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "As próximas páginas mostram uma tabela dos ambientes onde é possível encontrar plantas selvagens."
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Planta",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Precipitação (mm)",
+          "bold": true
+        },
+        {
+          "text": "Cevada"
+        },
+        {
+          "text": " -8 - 26"
+        },
+        {
+          "text": " 70 - 310"
+        },
+        {
+          "text": "Aveia"
+        },
+        {
+          "text": "  3 - 40"
+        },
+        {
+          "text": "140 - 400"
+        },
+        {
+          "text": "Centeio"
+        },
+        {
+          "text": "-11 - 30"
+        },
+        {
+          "text": "100 - 350"
+        },
+        {
+          "text": "Milho"
+        },
+        {
+          "text": " 13 - 40"
+        },
+        {
+          "text": "300 - 500"
+        },
+        {
+          "text": "Trigo"
+        },
+        {
+          "text": " -4 - 35"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Arroz"
+        },
+        {
+          "text": " 15 - 30"
+        },
+        {
+          "text": "100 - 500 "
+        },
+        {
+          "text": "Beterraba"
+        },
+        {
+          "text": " -5 - 20"
+        },
+        {
+          "text": " 70 - 300"
+        },
+        {
+          "text": "Repolho"
+        },
+        {
+          "text": "-10 - 27"
+        },
+        {
+          "text": " 60 - 280"
+        },
+        {
+          "text": "Cenoura"
+        },
+        {
+          "text": "  3 - 30"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Alho"
+        },
+        {
+          "text": "-20 - 18"
+        },
+        {
+          "text": " 60 - 310"
+        },
+        {
+          "text": "Feijão Verde"
+        },
+        {
+          "text": "  2 - 35"
+        },
+        {
+          "text": "150 - 410"
+        },
+        {
+          "text": "Melancia"
+        },
+        {
+          "text": "  5 - 37"
+        },
+        {
+          "text": "200 - 500"
+        }
+      ],
+      "text": "",
+      "title": "Requisitos de Plantas Selvagens",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Planta",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Precipitação (mm)",
+          "bold": true
+        },
+        {
+          "text": "Batata"
+        },
+        {
+          "text": " -1 - 37"
+        },
+        {
+          "text": "200 - 410"
+        },
+        {
+          "text": "Abóbora"
+        },
+        {
+          "text": "  0 - 30"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Cebola"
+        },
+        {
+          "text": "  0 - 30"
+        },
+        {
+          "text": "100 - 390"
+        },
+        {
+          "text": "Soja"
+        },
+        {
+          "text": "  8 - 30"
+        },
+        {
+          "text": "160 - 410"
+        },
+        {
+          "text": "Moringa"
+        },
+        {
+          "text": "  5 - 33"
+        },
+        {
+          "text": " 90 - 390"
+        },
+        {
+          "text": "Cana-de-Açúcar"
+        },
+        {
+          "text": " 12 - 38"
+        },
+        {
+          "text": "160 - 500"
+        },
+        {
+          "text": "Tomate"
+        },
+        {
+          "text": "  0 - 36"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Juta"
+        },
+        {
+          "text": "  5 - 37"
+        },
+        {
+          "text": "100 - 410"
+        },
+        {
+          "text": "Papiro"
+        },
+        {
+          "text": " 19 - 37"
+        },
+        {
+          "text": "310 - 500"
+        },
+        {
+          "text": "Pimentão Vermelho"
+        },
+        {
+          "text": " 16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Pimentão Amarelo"
+        },
+        {
+          "text": " 16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Girassol"
+        },
+        {
+          "text": "  5 - 40"
+        },
+        {
+          "text": "100 - 450"
+        }
+      ],
+      "text": "",
+      "title": "Requisitos de Plantas Selvagens",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Planta",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Precipitação (mm)",
+          "bold": true
+        },
+        {
+          "text": "Canola"
+        },
+        {
+          "text": " -5 - 25"
+        },
+        {
+          "text": " 50 - 350"
+        },
+        {
+          "text": "Linho"
+        },
+        {
+          "text": " -8 - 25"
+        },
+        {
+          "text": "175 - 475"
+        },
+        {
+          "text": "Pepino"
+        },
+        {
+          "text": " 15 - 40"
+        },
+        {
+          "text": "350 - 500"
+        },
+        {
+          "text": "Rabanete"
+        },
+        {
+          "text": " -16 - 4"
+        },
+        {
+          "text": "75 - 325"
+        },
+        {
+          "text": "Lentilha"
+        },
+        {
+          "text": " -18 - 2"
+        },
+        {
+          "text": "250 - 425"
+        }
+      ],
+      "text": "",
+      "title": "Requisitos de Plantas Selvagens",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4,
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": 0
+  }
+}

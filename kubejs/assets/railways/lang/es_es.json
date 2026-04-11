@@ -15,13 +15,11 @@
 	"block.railways.track_birch": "Vía de tren de abedul",
 	"block.railways.track_blackstone": "Vía de tren de piedra negra",
 	"block.railways.track_byg_baobab": "Vía de tren de acacia",
-	"block.railways.track_byg_cypress": "Vía de tren de abeto",
 	"block.railways.track_coupler": "Acople de vagones",
 	"block.railways.track_crimson": "Vía de tren carmesí",
 	"block.railways.track_dark_oak": "Vía de tren de roble oscuro",
 	"block.railways.track_jungle": "Vía de tren de jungla",
 	"block.railways.track_monorail": "Vía de tren de monorraíl",
-	"block.railways.track_natures_spirit_cypress": "Vía de tren de abeto",
 	"block.railways.track_oak": "Vía de tren de roble",
 	"block.railways.track_spruce": "Vía de tren de abeto",
 	"block.railways.track_tfc_oak": "Vía de tren de roble",
@@ -102,8 +100,6 @@
 	"railways.display_source.coupler.no_action": "Acciones no disponibles",
 	"railways.display_source.signal.green": "Eliminar",
 	"railways.display_source.signal.yellow": "Aviso",
-	"railways.display_source.switch.reverse_left": "Izquierda",
-	"railways.display_source.switch.reverse_right": "Derecha",
 	"railways.display_source.track_coupler_info": "Información del enganche de vagones",
 	"railways.gui.bogey_menu.category.favorites": "Favoritos",
 	"railways.journeymap.train_marker_toggle": "Marcadores de trenes",
@@ -155,6 +151,5 @@
 	"railways.whistle.tool.bound_usage": "¡Usa en una vía para invocar el tren enlazado!",
 	"railways.whistle.tool.conductor_id": "Maquinista: §6%s§r",
 	"railways.whistle.tool.not_bound": "No enlazado, úsalo sobre un maquinista sentado en un tren para enlazarlo.",
-	"railways.whistle.tool.train_id": "Tren: §e%1$s§r (§6%2$s§r)",
-	"tag.item.forge.string": "hilo"
+	"railways.whistle.tool.train_id": "Tren: §e%1$s§r (§6%2$s§r)"
 }

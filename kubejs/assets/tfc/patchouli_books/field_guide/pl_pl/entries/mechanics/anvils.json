@@ -1,0 +1,111 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Kowadła",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/anvil/copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Kowadła są niezbędnym narzędziem, służącym do obróbki metali.$(br2)$(l:mechanics/anvils#working)Kucie$() pozwala nadać metalowi żądaną formę, a $(l:getting_started/primitive_anvils#welding)spawanie$() umożliwia zespojenie dwóch metalowych przedmiotów w jeden."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+      [
+      "X"
+      ],
+      [
+      "0"
+      ]
+        ],
+        "mapping": {
+      "X": "#tfc:anvils"
+        }
+      },
+      "name": "",
+      "text": "Wszystkie metalowe kowadła",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/anvil/copper",
+      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą dwie sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tiers",
+      "text": "Każde kowadło posiada swoją  $(thing)rangę$(), która określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów odpowiadających rangą jego własnej oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Ranga 0$(): Kamienne kowadła$(li)$(bold)Ranga I$(): Miedź$(li)$(bold)Ranga II$(): Brąz bizmutowy, Brąz czarny, Brąz$(li)$(bold)Ranga III$(): Żelazo kuźnicze$(li)$(bold)Ranga IV$(): Stal$(li)$(bold)Ranga V$(): Stal czarna$(li)$(bold)Ranga VI$(): Stal czerwona, Stal niebieska"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "working",
+      "text": "Aby wykuć przedmiot należy otworzyć interfejs kowadła widoczny po prawej stronie, klikając na nie. Po lewej stronie interfejsu znajdują się dwa sloty na przedmioty przeznaczone do obróbki - muszą one znajdować się w slocie prawej ręki. Potrzebny będzie również młot, który musi znajdować się w slocie po prawej stronie interfejsu $(bold)lub$() w głównej ręce. W trakcie pracy młot będzie stopniowo ulegał zużyciu.",
+      "title": "Kucie"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_empty.png"
+      ],
+      "text": "Interfejs kowadła",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Następnie należy wybrać $(thing)schemat$(), który pozwoli na wybór upragnionego przedmiotu do wykucia. $(item)$(k:key.attack)$() na przycisk z ikoną zwoju i wybierz odpowiedni schemat. Powróci wtedy interfejs kowadła z wybranym schematem oraz widocznymi $(thing)warunkami$() i $(thing)celem$() do spełnienia."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_in_use.png"
+      ],
+      "text": "Interfejs po wybraniu opcji głowicy kilofa do wykucia.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Na środku widnieć będzie pasek z dwoma kolorowymi wskaźnikami. $(2)Zielony$() wskaźnik oznacza dotychczasowy postęp. Wskaźnik $(4)czerwony$() zaś oznacza cel do spełnienia. Zadaniem gracza jest zrównanie zielonego wskaźnika z czerwonym. $(br2)Aby to osiągnąć, należy wykorzystać $(2)zielone$() i $(4)czerwone$() przyciski operacji kuźniczych, które będą przesuwać dotychczasowy postęp o określoną wartość, zależnie od podjętej operacji.",
+      "title": "Cele"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(2)Zielone$() operacje będą zawsze przesuwały dotychczasowy postęp w $(bold)prawą$() stronę, natomiast $(4)czerwone$() - w stronę $(bold)lewą$(). Uwaga, jeżeli zielony wskaźnik zostanie przesunięty poza pasek postępu, sztabka zostanie utracona przez nadmierne wyrobienie materiału. Ponadto podczas wykonywania operacji kuźniczych gracz musi spełnić również wyznaczone $(thing)warunki$()..."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Warunki$() to dwie lub trzy ikony wyświetlone na górze interfejsu. Określają one konkretne operacje, które muszą zostać podjęte we wskazanym momencie i kolejności, by wybrany przedmiot mógł zostać wytworzony. Przykładowym warunkiem jest \"$(2)Wygnij jako przedostatni$()\", co oznacza, że przedostatnią operacją, jaką podejmie gracz, $(bold)musi$() być operacja $(2)gięcia$().",
+      "title": "Zasady kucia"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ostatnie podjęte operacje widoczne są tuż pod wspomnianymi ikonami warunków. Gdy warunek zostanie spełniony, podświetli się on na zielono. Kucie powiedzie się, gdy wszystkie warunki zostaną spełnione. $(br2)Wreszcie istotną jest $(l:mechanics/heating)temperatura$() przedmiotu przeznaczonego do obróbki. Metale są kowalne jedynie powyżej określonych temperatur, gdy wskaźnik podpowiada: \"Kowalne\". Podczas kucia przedmiot może zostać wyciągnięty do ponownego podgrzania."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Wykuwanie przedmiotu może być żmudne i posiadać wiele następujących po sobie kroków. Wszelako efektywna praca zostaje nagrodzona. Niektóre przedmioty, jak na przykład głowice narzędzi, będąc wykonanymi w niewielkiej, bądź minimalnej ilości kroków, otrzymują bonus zależny od tego, jak efektywnie zostały wykonane. Bonus będzie wtedy stosował się do głównej cechy docelowego narzędzia; na przykład głowica kilofu wykorzystana do jego wytworzenia.",
+      "title": "Bonusy"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
+      "title": "Bezbłędnie wykute",
+      "link_recipes": false,
+      "text": "Wyróżniamy cztery jakości bonusu: $(li)Słabo wykute$(li)Dobrze wykute$(li)Profesjonalnie wykute$(li)Bezbłędnie wykute$(br2) Bonusy te zwiększają jakość wykonanego narzędzia, czyniąc je wytrzymalszym, szybszym i/lub zadającym więcej obrażeń podczas walki, zależnie od jego rodzaju."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "zespajanie",
+      "text": "Spawanie jest procesem, podczas którego dwa elementy zostają połączone w jeden, nowy przedmiot. Spawanie działa tak samo niezależnie od rodzaju kowadła.$(br2)Po pierwsze potrzebnym jest umieścić dwa przeznaczone do spawania przedmioty w kowadle. Można uczynić to poprzez kliknięcie nimi na kowadło, bądź wprowadzenie ich w interfejsie kowadła w dwa skrajne lewe sloty.",
+      "title": "Spawanie"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Co więcej, potrzebne będzie posiadanie co najmniej jednego $(l:mechanics/flux)topnika$() w kowadle, by ułatwić proces spawania. Wtedy, gdy obydwa przedmioty są $(l:mechanics/heating)wystarczająco gorące$() do spawania - wskaźnik podpowiada \"Kowalne\" - trzeba użyć jakiegokolwiek $(thing)młota$() na kowadle. Po usłyszeniu dźwięku uderzającego młota o metal, przedmioty zostaną zespojone. Mogą one zostać pobrane poprzez użycie $(item)$(k:key.use)$() pustą dłonią na kowadle."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:anvils": 0
+  }
+}

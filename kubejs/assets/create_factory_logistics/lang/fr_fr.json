@@ -1,4 +1,15 @@
 {
-  "block.create_factory_logistics.jar_packager": "Bottler"
+  "block.create_factory_logistics.jar_packager": "Embouteilleuse",
+  "block.create_factory_logistics.network_link": "Connexion réseau",
+  "entity.create_factory_logistics.jar": "Pot",
+  "item.create_factory_logistics.jar": "Pot en cuivre",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Factory Logistics",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "Maintenez Alt pour placer le fluide contenu",
+  "itemGroup.create_factory_logistics.base": "Create Factory Logistics",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "Type de contenu",
+  "create_factory_logistics.gui.ingredient_type.fluid": "Fluide",
+  "create_factory_abstractions.gui.ingredient_type.item": "Item",
+  "create_factory_logistics.gui.network_link.mode": "Stock d'origine",
+  "create_factory_logistics.gui.network_link.mode.stored": "En stock"
 }
 

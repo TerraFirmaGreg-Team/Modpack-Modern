@@ -303,7 +303,6 @@ function registerTFCMetalsRecipes(event) {
 				.inputFluids("#tfg:clean_water 100")
 				.chancedOutput(`1x gtceu:${ore.replace(/native_/g, '')}_dust`, 6000, 0)
 				.chancedOutput(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`, 5000, 0)
-				.chancedOutput('gtceu:pyrite_dust', 1000, 0)
 				.duration(40)
 				.EUt(GTValues.VHA[GTValues.LV])
 
@@ -312,15 +311,13 @@ function registerTFCMetalsRecipes(event) {
 				.inputFluids(Fluid.of('gtceu:distilled_water', 50))
 				.chancedOutput(`1x gtceu:${ore.replace(/native_/g, '')}_dust`, 6000, 0)
 				.chancedOutput(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`, 5000, 0)
-				.chancedOutput('gtceu:pyrite_dust', 1000, 0)
 				.duration(20)
 				.EUt(GTValues.VHA[GTValues.LV])
 
 			event.recipes.greate.splashing(
 				[
 					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
-					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5),
-					Item.of('gtceu:pyrite_dust').withChance(0.1)
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
 				],
 				[
 					`1x tfc:deposit/${ore}/${stone}`,
@@ -333,8 +330,7 @@ function registerTFCMetalsRecipes(event) {
 			event.recipes.greate.splashing(
 				[
 					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
-					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5),
-					Item.of('gtceu:pyrite_dust').withChance(0.1)
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
 				],
 				[
 					`1x tfc:deposit/${ore}/${stone}`,
@@ -347,8 +343,7 @@ function registerTFCMetalsRecipes(event) {
 			event.recipes.vintageimprovements.vibrating(
 				[
 					Item.of(`1x gtceu:${ore.replace(/native_/g, '')}_dust`).withChance(0.6), 
-					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5),
-					Item.of('gtceu:pyrite_dust').withChance(0.1)
+					Item.of(`1x gtceu:small_${ore.replace(/native_/g, '')}_dust`).withChance(0.5)
 				],
 				`tfc:deposit/${ore}/${stone}`)
 				.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)

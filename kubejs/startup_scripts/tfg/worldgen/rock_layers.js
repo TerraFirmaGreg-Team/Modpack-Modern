@@ -12,7 +12,7 @@ TFCEvents.rockSettings(event => {
 		'tfg:spike/tuff_spike',
 		'tfg:loose/tuff',
 		null
-	)
+	);
 })
 
 TFCEvents.defaultWorldSettings(event => {

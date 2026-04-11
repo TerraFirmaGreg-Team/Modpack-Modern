@@ -1,0 +1,80 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Bas Fourneau",
+	"category": "tfc:mechanics",
+	"icon": "tfc:bloomery",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Un $(thing)Bas Fourneau$() est un appareil utilisé pour fondre du $(thing)Minerai de Fer$() en $(thing)Loupes Ferreuses$(), qui peuvent être travaillées en $(thing)Fer Forgé$(). L'$(l:tfg_ores/earth_vein_index#normal_hematite)Hématite$(), la $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$() et la $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnétite$() sont quelques exemples de minerais de fer communs. Ces minerais deviennent de la $(thing)Fonte$() en fondant, pas du $(thing)Fer Forgé$(). Tous les items contenant du fer deviennent de la fonte en fondant, un bas fourneau est requis pour les transformer en un fer utilisable. N'importe quel item en fer peut être utilisé dans un bas fourneau, y compris des outils en fer ou des dépites de fonte !"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfc:crafting/bloomery",
+			"text": "Le bas fourneau est fait à partir de 8 $(thing)Doubles Plaques de Bronze$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock_id": "tfc:bloomery",
+			"name": "Un Bas Fourneau",
+			"text": "Un bas fourneau de taille minimale. Le bloc de bas fourneau s'ouvre et se referme avec $(item)$(k:key.use)$().",
+			"enable_visualize": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Un bas fourneau peut contenir au maximum 48 $(thing)Items$(), soit 16 items par couche de cheminée. Pour ajouter des couches à la cheminée, empilez deux nouvelles couches de briques de pierre.$(br2)Pour ajouter des items à la cheminée, grimpez en haut et balancez-les dedans. Une tour de minerai gris devrait se former.$(br2)Vous pouvez utiliser soit du $(item)Charbon de Bois$(), soit du $(item)Charbon$() comme carburant pour votre bas fourneau."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
+			],
+			"text": "Le bas fourneau consomme $(thing)1 item de Carburant$() et $(thing)144 mB de Fonte$() pour produire une $(thing)Loupe$().",
+			"border": true
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Si vous ne voulez pas calculer, nous recommandons d'utiliser $(item)25 poudres de minerai de métal$() et $(item)22 items de carburant$().$(br2)Après avoir rempli le bas fourneau d'un mélange de $(thing)Carburant$() et de $(thing)Minerai$(), allumez le bas fourneau et attendez 15 heures qu'il fonde le fer. Quand le bas fourneau s'éteint, il laisse un bloc de $(thing)Loupe$(). Celui-ci contient des $(thing)Loupes Ferreuse Brutes$(), qui peuvent être obtenues et minant la $(thing)Loupe$() plusieurs fois avec une pioche."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "tfc:bloom[layers=8]"
+				}
+			},
+			"name": "Le Bloc de Loupe",
+			"text": "Une grosse $(thing)Loupe$().",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/refined_iron_bloom",
+			"text": "Les $(thing)Loupes Ferreuses Brutes$() doivent être travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Loupes Ferreuses Raffinées$()."
+		},
+		{
+			"type": "tfc:anvil_recipe",
+			"recipe": "tfc:anvil/wrought_iron_from_bloom",
+			"text": "Les $(thing)Loupes Ferreuses Raffinées$() doivent être aussi travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Lingots de Fer Forgé$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Si le bas fourneau contient plus d'items que sa cheminée ne peut en contenir, il essaiera de les recracher par devant.$()$(li)Si vous voulez récupérer les items d'un bas fourneau qui n'a pas encore été allumé, ne cassez pas la tour de blocs fondus. Cassez le bas fourneau.$()$(li)Les loupes fondront en fonte, pas en fer forgé. Elles doivent être travaillées !$()",
+			"title": "Notes du Forgeron"
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:bloom": 6,
+		"tfc:raw_iron_bloom": 7,
+		"tfc:refined_iron_bloom": 8
+	}
+}

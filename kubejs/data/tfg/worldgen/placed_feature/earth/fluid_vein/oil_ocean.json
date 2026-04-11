@@ -28,8 +28,9 @@
 		},
 		{
 			"type": "tfg:fluid_vein",
-			"min_yield": 140,
-			"fluid": "gtceu:oil"
+			"vein_ids": [
+				"tfg:oil_spill_ocean"
+			]
 		}
 	]
 }

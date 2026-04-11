@@ -60,7 +60,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Стирлинговое серебро",
+			"title": "Стерлинговое серебро",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Требования: $()$(br)$(li)20 - 40 %: $(thing)Медь$()$(li)60 - 80 %: $(thing)Серебро$()$(br2)"
 		}

@@ -8,70 +8,199 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Опасные материалы",
+			"title": "Противодействие ядовитым рудам",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Некоторые руды ядовиты! Их перенос в инвентаре будет наносить вам урон.$(br2)Существует $(thing)костюм хим. защиты (Hazmat)$(), но он становится доступен в $(thing)MV$(). Так что же нам делать?$(br2)Вот несколько советов по противодействию этому в TFG на данный момент:"
+			"text": "Некоторые $(thing)руды$(), $(thing)пыли$() и $(thing)химикаты$() являются опасными и могут вызвать $(item)отрицательные эффекты$() или даже $(item)убить$() вас, если они находятся в вашем инвентаре. При переносе они отображаются на экране как $(item)статус эффект$().$(br2)Определённое снаряжение, такое как $(thing)маски$(), $(thing)перчатки$() и $(thing)защитный костюм$(), может использоваться для нейтрализации этих эффектов."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Все эффекты",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Отравление мышьяком$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Асбестоз$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Беррилиоз$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Отравление угарным газом$()$(li)$(l:tfg_ores/hazards#Carcinogens)Канцерогены$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Отравление метанолом$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Раздражающие вещества$()$(li)$(l:tfg_ores/hazards#Poisons)Отравляющие вещества$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Радиоактивные вещества$()$(li)$(l:tfg_ores/hazards#Silicosis)Силикоз$()$()$(br2)На следующей странице будет информация о том, как бороться с этими эффектами."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Профилактика и лечение",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Контейнеры$()$(li)$(l:tfg_ores/hazards#mask)Медицинская маска$()$(li)$(l:tfg_ores/hazards#gloves)Резиновые перчатки$()$(li)$(l:tfg_ores/hazards#hazmat)Защитный костюм$()$(li)$(l:tfg_ores/hazards#medicine)Пилюли, таблетки, мази$()$(li)$(l:tfg_ores/hazards#rad_away)Пилюля Антирадин™$()$(li)$(l:tfg_ores/hazards#respawn)Немыслимое...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Камни!",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"anchor": "rocks",
+			"text": "$(thing)Простейший способ$() $(thing)предотвратить$() опасные эффекты — это $(item) вообще не подбирать опасные предметы$().$(br2)Заполнение инвентаря $(thing)камнями$(), например, позволит вам выбирать, какие предметы подбирать, оставляя опасные на потом."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Контейнеры",
+			"anchor": "containers",
+			"text": "кмкмкмкмОпасные вещества наносят ущерб только тогда, когда они находятся в вашем $(thing)инвентаре$(), но это не касается других контейнеров!$(br) Опасные вещества не будут наносить урон, пока они в  другом контейнере, например в$(l:getting_started/pottery#vessel)сосуде $(). $(thing) Щёлкните Пкм$(), удерживая сосуд, позволит непосредственно переносить его содержимое в контейнеры и из них.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "Медицинская маска",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка."
+			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка.",
+			"anchor": "mask"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
 			"title": "Резиновые перчатки",
 			"link_recipes": true,
-			"text": "Резиновые перчатки можно изготовить либо из $(l:mechanics/leather_making)Кожи$() и $(l:arborfirmacraft/making_rubber)Латекса$(), либо из резиновых листов. Они обеспечивают защиту от любых $(item)контактных$() угроз, например, от бериллиоза."
+			"anchor": "gloves",
+			"text": "$(thing)Резиновые перчатки$() могут быть изготовлены из $(l:mechanics/leather_making)кожи$() и $(l:arborfirmacraft/making_rubber)латекса$(), или из $(thing)каучуковых листов$(). Они обеспечивают защиту от любых опасностей $(item)контакта с кожей$(), таких как $(thing)бериллиевая пыль$()."
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "Сначала обработайте кожу методом отщепа, чтобы сделать рукавицы."
+			"text": "Сначала сделайте перчатки кузнеца из кожи."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "После этого, перчатки замачивают в $(thing)Уксусе$(), смеси фруктов и алкоголя."
+			"text": "$(thing)Перчатки$() затем замачиваются в $(thing)уксусе$(), смеси фруктов и алкоголя."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Подготовленные кожаные перчатки затем нагреваются в $(thing)чане$() вместе с $(thing)Вулканизированным латексом$()."
+			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Наконец, пропитанные латексом перчатки нагреваются в $(l:firmalife/oven)Печи$()."
+			"text": "Наконец, пропитанные латексом перчатки нагреваются в $(l:firmalife/ovens)Печи$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Горные породы ",
+			"title": "The Hazmat Suit",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Medicine",
 			"item": {
-				"tag": "tfc:rock_knapping"
+				"tag": "tfg:medicine"
 			},
-			"text": "Самый простой способ предотвратить попадание опасных предметов в ваш инвентарь — вообще их не подбирать.$(br)Например, если заполнить инвентарь $(thing)камнями$(), вы сможете выбирать, какие предметы поднимать, а с опасными разобраться позже."
+			"anchor": "medicine",
+			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Контейнеры.",
-			"text": "Опасные материалы наносят урон, только пока находятся в вашем $(thing)инвентаре$(), но это не относится к другим контейнерам!$(br)Опасные материалы не будут наносить урон, пока находятся в другом контейнере, например, в $(l:tfg_tips/inventory_management)рюкзаке$() или $(l:getting_started/pottery#vessel)сосуде$(). $(thing)Нажатие правой кнопкой мыши$() с сосудом в руке позволяет напрямую перемещать его содержимое в контейнеры и обратно",
-			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+			"title": "The RadAwayᵗᵐ pill",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Родниковая вода",
-			"item": "tfc:bucket/spring_water",
-			"text": "Нахождение в $(thing)Родниковой воде$() даст тебе слабую $(thing)Регенерацию$()."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Кровать",
+			"title": "Failure...",
 			"item": {
 				"tag": "minecraft:beds"
 			},
-			"text": "Если для вас это слишком сложно, тогда хорошим вариантом будет возродиться на вашей кровати $(br2)Если у вас нет доступа к $(thing) шерсти или $(thing)ниткам. Вы также можете сделать $(l:getting_started/a_place_to_sleep)Соломенную кровать$()."
+			"anchor": "respawn",
+			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отравление мышьяком",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "Отравление мышьяком",
+			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Асбестоз",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "Асбестоз",
+			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Бериллиоз",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "Бериллиоз",
+			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Carbon Monoxide poisoning",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Carcinogens",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "Carcinogens",
+			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Carcinogens",
+			"item": "gtceu:chromium_dust",
+			"anchor": "Carcinogens",
+			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Chemical burns",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from everything."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Irritants",
+			"item": "gtceu:chromite_dust",
+			"anchor": "Irritants",
+			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Methanol poisoning",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Nauseating chemicals",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Poisonous materials",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "There are two types of $(thing)Poisonous materials$(). Weak include $(thing)Lead Dust$(), while the stronger poisons include $(thing)Nitrogen Dioxide$(). $(thing)Weak poisons$() cause a $(item)Progressively Worsening Poison$() effect, while $(thing)Regular poisons$() cause $(item)Weakness$() and a $(item)Stronger Poison$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from any contact."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioactive materials",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "Most $(thing)Radioactive substances $()like $(thing)Uranium 238$() you will only meet at $(thing)EV tier$() or above. They will $(item)Permanently Irradiate$() you. Small exposure causes $(item)glowing$(), but prolonged contact triggers a quick $(item)Death$().$(br2)We know it looks tasty and has a billion calories, but $(#ff0000)PLEASE DO NOT EAT URANIUM!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioactive materials",
+			"item": "gtceu:plutonium_ingot",
+			"text": "Only the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br2)In the case you do get irradiated, only the $(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ pill$() can cure you."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Силикоз",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "Силикоз",
+			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
 		}
 	]
 }

@@ -116,6 +116,22 @@
 							"tag": "{Potion: \"minecraft:harming\"}"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
 				}
 			],
 			"rolls": {

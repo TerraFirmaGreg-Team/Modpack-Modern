@@ -1,0 +1,174 @@
+{
+    "name": "砧的工作指南",
+    "icon": "gtceu:red_steel_hammer",
+    "category": "tfc:tfg_tips",
+    "read_by_default": true,
+    "priority": false,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Working with Anvils",
+            "text": "在$(l:mechanics/anvils)砧$()內$(l:mechanics/anvils#working)作業$()是$(thing)群巒格雷$()內的關鍵進程，在邁向蒸汽與機械時代前，大多數工作都需要使用砧。$(br)本指南分為兩個部分：$(l:tfg_tips/anvil_working_guide#ui_explained)界面$()和$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)完美鍛造技巧$()。$(br2)模組包有一個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() 的自訂$(thing)資源包$()，需要啟用它才能理解本指南。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+            ],
+            "border": false,
+            "text": "這是啟用TFC Anvil Helper資源包後砧的界面。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false,
+            "anchor": "ui_explained",
+            "tile": "界面與你",
+            "text": "啟用TFC Anvil Helper資源包後砧的界面以顏色標記。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.選擇你要在砧內製造的物品。$()每個物品都有特定的一組所需$(#be00ff)步驟$()和$(#ff6b00)工作量$() $(br)$(#ff00c6)2. 目前正在處理的輸入物品。$() $(br)$(#be00ff)3.必要步驟$()，步驟必須按照順序才算完成。總共有4種不同的順序（見下一頁）："
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)任意：步驟可以位在任意位置。$()$(li)最後：步驟必須為最後一步。$()$(li)不能最後：步驟不能是最後一步。$()$(li)一步之遙：步驟必須為倒數第二步。$()$(li)再兩步：步驟必須為倒數第三步。$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.步驟的類別$()每種步驟類別會增/減當前作業值。在選單內由左至右由上至下分別為：$(li)輕敲: -3$()$(li)敲打: -6$()$(li)沖壓: +2$()$(li)彎曲: +7$()$(li)重敲: -9$()$(li)拔長: -15$()$(li)墩粗: +13$()$(li)收縮: +16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+            ],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.這邊的插槽放置鎚子以及助焊劑$()$(br)$(#00e622)6.物品當前的工作量$()執行不同步驟會增/減物品的工作量.$(br)$(#e6dc00)7.這個物件的工作值$()$(#00ff26)工作值$()必須與目標工作值完全對齊，且$(#ff00c6)必要步驟$()必須被滿足，物品才能被視為完成.$(br)$(#ff6b00)8.工作條$()用來查看工作值與目標工作值是否一致。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "完美鍛造",
+            "text": "$(thing)完美鍛造$()任何可能損壞的物品，像是$(thing)工具頭$()、$(thing)武器$()以及$(thing)護甲$()將使物品獲得耐久度與整體效能的加成，鍛造步驟越少效果越顯著，若以最少步驟完成鍛造，物品將被視為完美鍛造，不僅能獲得額外加成，還能減少鎚子的損耗。"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+            ],
+            "border": false,
+            "text": "一個完美鍛造的鍛鐵鎬頭"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "鍛造指南",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "本指南將講解如何完美鍛造任何物品，首先以鍛鐵鎬頭為例。$(br2)$(bold)$(italic)免責聲明：$()$ (br)雖然《群巒格雷》世界中的所有物品所需鍛造步驟與順序皆相同，但目標工作值會因世界種子不同而異。因此本指南預設鍛造生鐵鎬頭所需的目標工作值為$(bold)83$()"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第一步",
+            "text": "鍛造旅程的第一步，將所有必要步驟的數值相加以獲得目標值。製作鎬頭需完成下列步驟：$(li)$(bold)沖壓$() 最後$()$(li)$(bold)彎曲$() 不能最後$()$(li)$(bold)拔長$() 不能最後$().$ (br)透過加總每道步驟底部的數值，我們便得到所需的數值。將此值命名為「必要工作量」。$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+            ],
+            "text": "這些是鎬頭的必要步驟"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第二步",
+            "text": "雖然我們設定工作量的主要目的是使其與目標工作量對齊，必須確保同時滿足要求以及步驟。因此，直接將工作量與目標工作量對齊並不會產生理想結果。相反地，我們可透過計算「目標工作量」與「必要工作量」得出衍生數值。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "值可依據「必要工作量」的正/負數號取得。$(li)「必要工作量」為正數$()$(li2)「目標工作量」減去「必要工作量」的絕對值$()$(li3)83 - 6 == $(bold)77$()$()$ (li)「必要工作量」為負數$()$(li2)「必要工作量」的絕對值加「目標工作量」$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "物品的「必要工作量」為-6，因此要尋找的數值為$(bold)89$()。$(br)您可能會好奇：如何精確獲取目標工作量的數值？其實，透過砧介面的工作條已經顯示了這項資訊。雖然僅顯示20的倍數，但透過彩色刻度線可輕鬆判讀其他數值：$(li)淺灰色：代表5的倍數$()$(li)灰色：代表奇數$()$(li)深灰色：代表偶數$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+            "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+            ]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第三步",
+            "text": "有了「目標工作量」與「必要工作量」推導出的數值後，我們現在需要達到該數值。這可以透過手動將每道步驟對應的數值加總，或使用介面列上的快速查閱表來完成。每種顏色代表介面中的步驟類型。$(br)例如：紅色 == 拔長 (+16)"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+            ],
+            "text": "16+16+16+16+16+7+2=89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "鍛造第四步",
+            "text": "既然我們已知所需步驟，現在該計算「目標工作量」與「必要工作量」衍生的數值。以鎬頭為例，其總工藝值為83，我們需達到89。因此操作流程為：(收縮x5) → 彎曲 → 沖壓。(br2)當工作值達到目標值後，只需遵循必要步驟——以鎬頭為例即：拉伸→彎曲→沖壓。你看！完美鍛造物就此誕生！"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+            ],
+            "text": "未加工的錠->期望達到的工作量->物品所需的必要步驟."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "打個比方",
+            "text": "讓我們看看製程在其他物品上的應用，如板或棒。別忘了，目標工作量會因世界種子不同而變化，因此在您的世界中數值將有所差異。$(br)板的目標值：$(bold)111$()$(br)所需步驟：輕擊x3，任意。$(br)「所需工作量」: -3x3 =-9$(br)衍生值：111+9=120。$(br)達成數值路徑：(收縮x5)->(墩粗x2)->(沖壓x2)$(br)獲取物品條件：120-(輕擊x3)==$(bold)111$()。兩項要求皆滿足。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "棒的目標值:$(bold)78$()$(br)必要步驟：拉伸x2，彎曲x1$(br)「所需工作量」:(-15x2)+7=-23$(br)衍生值：78+23=101。$(br)達成數值路徑：(收縮x5)->(彎曲x3)$(br)獲取物品條件：101-15-15+7=78."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "零碎資訊",
+            "text": "必要步驟的空欄表示該步驟可替換成為任意步驟。鍛造失敗時可將物品熔融重鑄為錠，此舉將移除物品的「已加工」標記，得以重新嘗試完美鍛造。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "恭喜您抵達篇章的最後！若想成為本指南圖片的貢獻者，撰寫時使用的種子為 $(bold)-7291708953208913102$()，亦可建立自創世界親自測試演算法！$(br2)$(br)另外... 既然來到這裡，若親自計算必要步驟與衍生值，隨時可使用$(l:https://adrianmiller99.github.io/tfg-anvil-calculator/src/index.html)TFC Anvil Calculator$()來協助您！"
+        }
+    ]
+}

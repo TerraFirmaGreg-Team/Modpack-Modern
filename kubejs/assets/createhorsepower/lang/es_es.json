@@ -1,4 +1,23 @@
 {
 	"block.createhorsepower.horse_crank": "Manivela animal",
-	"item.createhorsepower.horse_crank": "Manivela animal"
+	"createhorsepower.ponder.horse_crank.header": "Usando la Manivela Animal",
+	"createhorsepower.ponder.horse_crank.text_1": "Esto es una Manivela Animal",
+	"createhorsepower.ponder.horse_crank.text_2": "Para usar una manivela animal primero debes tener bloques válidos debajo",
+	"createhorsepower.ponder.horse_crank.text_3": "Algunos materiales pueden ser mejores que otros",
+	"createhorsepower.ponder.horse_crank.text_4": "Cuando un trabajador válido es enganchado la manivela producirá estrés",
+	"createhorsepower.ponder.horse_crank.text_5": "Puedes enganchar cualquier mob en el config para convertirlo en un trabajador",
+	"createhorsepower.ponder.horse_crank.text_6": "Puedes obtener rotación con un engranaje desde el lado...",
+	"createhorsepower.ponder.horse_crank.text_7": "...o un eje, desde abajo...",
+	"createhorsepower.ponder.horse_crank.text_8": "...pero no desde arriba",
+	"createhorsepower.ponder.tag.path_types": "Bloques de camino",
+	"createhorsepower.ponder.tag.path_types.description": "Bloques viables para que animales trabajadores caminen encima",
+	"createhorsepower.ponder.tag.viable_workers": "Trabajadores válidos",
+	"createhorsepower.ponder.tag.viable_workers.description": "Animales que pueden ser usados para tirar de la Manivela animal",
+	"entity.createhorsepower.chp_leash_knot": "(CHP) Nudo de correa",
+	"item.createhorsepower.horse_crank": "Manivela animal",
+	"tooltip.createhorsepower.horse_crank.alreadyHasWorker": "La manivela ya tiene un trabajador",
+	"tooltip.createhorsepower.horse_crank.attached": "El trabajador ha sido enganchado",
+	"tooltip.createhorsepower.horse_crank.detached": "El trabajador ha sido desenganchado",
+	"tooltip.createhorsepower.horse_crank.maximumMobs": "Solo 1 mob puede ser enganchado",
+	"tooltip.createhorsepower.horse_crank.notValidWorker": "El mob no es un trabajador válido"
 }

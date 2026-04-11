@@ -1,0 +1,42 @@
+{
+	"name": "高爐提示",
+	"icon": "tfc:blast_furnace",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "群巒傳說高爐提示",
+			"text": "看來你終於找到$(item)高嶺土$()了，現在肯定準備興奮地打造一座五層高的$(thing)高爐$()吧！在開始大展身手之前，先來幾點小建議！"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:ceramic/unfired_fire_brick",
+			"text": "在將所有耐火黏土用於製作20塊耐火磚之前，提醒您進入蒸汽時代後，製作成本將大幅降低。如此一來，便能將$(item)高嶺土$()與$(item)石墨$()留存，用於打造$(thing)鍛造台$()。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "預熱金屬",
+			"item": "tfc:firepit",
+			"text": "將鐵轉換成鋼，高爐必須將內部的鐵加熱至$(thing)亮白色$()。在第一次操作時，金屬會隨著高爐一起加熱。後續操作仍需相同時間，即使高爐已達到溫度，因為金屬仍需要從從冷態重新加熱。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "如果金屬在放入高爐前已預熱，則達到亮白色所需時間會減少。考慮在$(l:tfc:mechanics/charcoal_forge)木炭爐$()中預熱金屬，再放入已預熱的高爐中以節省時間，特別是處理量較小的高爐。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "高爐自動化",
+			"item": "greate:steel_mechanical_pump",
+			"text": "進入$(thing)蒸汽$()與$(thing)LV$()時代需要很多$(item)鋼$()。距離$(thing)電力高爐$()還很遙遠，也許該考慮優化鋼的生產效率。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "使用$(item)泵$()從高爐中抽出液體。將液體泵入$(l:tfc:tfcchannelcasting/channel_casting)鑄模台$()，再用漏斗或滑道取出錠：輕鬆實現自動化！$(br2)也可以使用$(item)機械手$()自動操作風箱！但請小心，頻繁操作風箱會消耗更多燃料並使$(thing)鼓風口$()更快損壞。$(br2)你可以用$(thing)鍛造錘$()或$(thing)長柄錘(Helve Hammer)$()處理$(item)生鐵$()與$(item)高碳鋼$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "使用漏斗或物品管道自動替換損壞的鼓風口。"
+		}
+	]
+}

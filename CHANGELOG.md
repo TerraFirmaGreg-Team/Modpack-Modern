@@ -1,5 +1,68 @@
 # Changelog
 
+## Unreleased
+### Changes
+### Bug fixes
+
+## [0.12.2] - 11-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### Breaking changes
+- Changed the recipe for normal and SMD Capacitors, with Silicon Rubber and Polyethylene swapped (#3683) @TomPlop
+- Molybdenum Discilicide now uses Circuit 2 in the Mixer (#3635) @TomPlop
+- Dirty MoSiB now use Circuit 1 in the Mixer (#3635) @TomPlop
+- Old 0.11 chunks now actually contain bedrock fluid instead of nothing, but you will need to delete your `.minecraft/saves/(world name)/data/gtceu_bedrock_fluid.dat` file when updating to this patch (only if you've got 0.11 chunks) @TomPlop
+### Changes
+- Further improvements to the main menu, and adding buttons to view the changelog, go to our youtube and crowdin pages, etc @Redeix
+- Improved the way various structures are supported by the terrain, so there will be less floating @Mqrius
+- Added recipes, textures, and names for new Glacian, Aeronos, and Strophar wood blocks and machines (#3721) @SakuraKitsuragi
+- Changed both the firepit pot and vat to not require exact fluid quantities for recipes, and won't void excess fluid inputs @Redeix
+- Improved the EMI display of ore veins @SakuraKitsurugi
+- Improved the EMI display of fluid veins @BlueBoat29
+- Improved the EMI display of equipment repair recipes @Pyritie
+- Added EMI tabs for entity drops, chest loot, fishing loot, panning, and sluicing @Pyritie
+- Added a new machine for automating animal milking and shearing. Does not go any faster than the in-world times, and you'll have to replace old animals yourself, but hey it's automatic. @TomPlop
+- Rowboats now only require a bronze anvil to craft, while a sloop now only requires wrought iron (#3703) @SakuraKitsurugi
+- Added more emeralds to the illage loot tables (remember, you can "hire" Mercenaries with these!) and added some realgar gems, but slightly lowered the amount of loot per chest @Pyritie
+- Added a periodic table quest chapter with information on where to find every element and what its main uses are (#3652) @ashleney
+- Train related things now only require steel instead of black steel, and rails are now even cheaper (and red alloy instead of electron tubes) (#3702) @SakuraKitsurugi
+- Added a recipe to craft honeyed apples (#3661) @Froffy025
+- Added recipes for copper shingles, tiles, and related blocks, and adjusted the recipes of other decorative copper blocks (#3630) @Nixieeunrare
+- Bulgogi, Bratwurst, Tandoori Chicken, and Tonkatsu can now go in sandwiches (#3617) @Froffy025
+- Drowned now only spawn with javelins 1/3 of the time, and will never spawn with a trident @Pyritie
+- Reduced the amount of overworld monsters a little @Pyritie
+- More performance improvements @Mqrius
+- Added bladders and rennet to sniffers' drop table and rennet to glacian sheep @Pyritie
+- Slightly reduced the amount of metal dusts from panning/sluicing deposits @Pyritie
+- Improved the hazardous materials field guide page with more information about each medical condition (#3717) @Symasas225
+- Added connected texture versions of vanilla glass blocks (shapeless craft to switch between the normal ones and these) (#3743) @SakuraKitsurugi
+- Fixed some wood fence and gate recipes being inconsistent (#3758) @SakuraKitsurugi
+- Added crafting stations (#3750) @Froffy025
+### Bug fixes
+- Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
+- Fixed various TFG-created rock blocks (mossy cobbles, etc) not requiring a pickaxe to mine (#3725) @Pyritie
+- Updated the tooltips for hot/cold protection equipment because people keep trying to carry things with their feet (#3713) @Pyritie
+- Changed the texture of the steel cogs/large steel cogs a little, to make them more different than the aluminium ones (#3696) @Pyritie
+- Fixed the stone ruins and aqueduct structures from not generating (#3694) @Pyritie
+- Fixed the drops of mud bricks so they return the correct number and state (#3679) @Pyritie
+- Fixed the new dirts not working with the animal crank block whitelist (#3676) @Pyritie
+- Fixed illages so they stop spawning half inside rivers @Pyritie
+- Fixed some tags related to the new dirts and quests (#3675) @Pyritie @SpicyNoodle5
+- Fixed wrong loot table of cornflowers (#3671) @Pyritie
+- Fixed TFG cobblestones not breaking charcoal piles like TFC cobblestones (#3670) @Pyritie
+- Fixed spring water not generating on the surface (#3650) @Pyritie
+- Fixed mature cucumber crops not dropping any cucumbers @Redeix
+- Fixed magma blocks so only the magma part is emissive and not the stone @Redeix
+- Fixed some issues with repair recipes in a crafting grid (#3697) @SakuraKitsurugi @Thomasx0
+- Fixed the texture of the glass batches in an artisan table @Redeix
+- Fixed inconsistent recycling outputs of various (clay) brick blocks (#3690) @SpicyNoodle5
+- Fixed bison and leopard seal children being rendered as adults (#3674) @Pyritie
+- Fixed bison herds from self destructing (#3682) @Pyritie
+- Fixed breaking large nests giving 4 large nests back @SakuraKitsurugi
+- Fixed not being able to chisel the new mud brick blocks (#3737) @SokvisalMong
+- Fixed not being able to anvil a copper spindle head on certain seeds @Redeix
+- Fixed a crash when trying to use a fluid rig on a chunk that was generated in 0.11 (#3718) @TomPlop
+- Fixed vacuum chambers taking the same amount of time regardless of their RPM @ashleney
+
 ## [0.12.1] - 01-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
 ### Changes

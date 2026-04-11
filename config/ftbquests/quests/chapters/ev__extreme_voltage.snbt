@@ -33,20 +33,20 @@
 			linked_quest: "0CA5B715B76E4A5B"
 			shape: "diamond"
 			x: 13.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "6058CD9466BE0852"
 			linked_quest: "00202200344F3456"
 			x: 13.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			id: "49FB3507B0FB3000"
 			linked_quest: "155F421FC2F39C3C"
 			shape: "diamond"
-			x: 10.0d
-			y: 2.0d
+			x: 11.5d
+			y: 3.0d
 		}
 		{
 			id: "7FDAA0AA0D463A49"
@@ -1611,6 +1611,7 @@
 			description: ["{quests.extreme_voltage.new_qol.desc}"]
 			icon: "gtceu:ev_sensor"
 			id: "70ABD1E3FC1CA672"
+			shape: "circle"
 			tasks: [{
 				id: "73ABA113A9069875"
 				title: "{quests.extreme_voltage.new_qol.title}"
@@ -1952,6 +1953,7 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.reactor_components.desc.2}"
 			]
+			icon: "deafission:material_holder"
 			id: "63A8FE8F9C8EB5B3"
 			subtitle: "{quests.extreme_voltage.reactor_components.subtitle}"
 			tasks: [
@@ -1996,6 +1998,7 @@
 				{
 					id: "473E7CBA4AEEEE6E"
 					item: "tfg:impure_moderate_core_frame"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -2221,8 +2224,8 @@
 				item: "tfg:rad_away_pill"
 				type: "item"
 			}]
-			shape: "diamond"
-			size: 2.0d
+			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.extreme_voltage.radiation.subtitle}"
 			tasks: [{
 				id: "4122324E4B17FA99"
@@ -2333,12 +2336,13 @@
 				"{@pagebreak}"
 				"{quests.extreme_voltage.btx_loop.desc.2}"
 			]
+			icon: "gtceu:rhenium_dust"
 			id: "38184C7BA01A9B5B"
 			optional: true
+			shape: "circle"
 			tasks: [{
-				id: "39568ED5E30CDC88"
-				item: "gtceu:rhenium_dust"
-				type: "item"
+				id: "2515CD0C40ED29E6"
+				type: "checkmark"
 			}]
 			x: -5.5d
 			y: -7.0d
@@ -2563,7 +2567,7 @@
 			]
 			title: "{quests.extreme_voltage.ostrum_tools.title}"
 			x: 13.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["52AB0BDC64293253"]

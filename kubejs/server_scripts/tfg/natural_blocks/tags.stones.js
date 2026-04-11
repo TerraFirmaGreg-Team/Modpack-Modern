@@ -190,6 +190,7 @@ function registerTFGStoneItemTags(event) {
 		if (rock.gravel != null) {
 			addToTfcTag(rock.gravel);
 			addToMaterialTag(material, rock.gravel);
+			event.add('tfc:rock/gravel', rock.gravel);
 			if (rock.gravelTag != null) {
 				event.add(rock.gravelTag, rock.gravel);
 			}
@@ -222,6 +223,7 @@ function registerTFGStoneItemTags(event) {
 
 		if (rock.spike != null) {
 			addToTfcTag(rock.spike);
+			event.add('tfg:rock_spikes', rock.spike);
 		}
 
 		if (rock.pillar != null) {
@@ -336,10 +338,12 @@ function registerTFGStoneBlockTags(event) {
 		if (rock.cobble != null) {
 			event.add('tfc:can_landslide', rock.cobble.block)
 			event.add('forge:cobblestone', rock.cobble.block)
+			event.add('tfc:toughness_2', rock.cobble.block)
 
 			if (rock.cobble.mossy != null) {
 				event.add('tfc:can_landslide', rock.cobble.mossy.block)
 				event.add('forge:cobblestone', rock.cobble.mossy.block)
+				event.add('tfc:toughness_2', rock.cobble.mossy.block)
 			}
 		}
 		

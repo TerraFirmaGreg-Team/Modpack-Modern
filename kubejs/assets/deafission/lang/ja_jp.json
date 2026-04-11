@@ -22,11 +22,16 @@
 	"deafission.machine.fuel_holder.tooltip": "核分裂反応を安全に行うために、燃料棒を格納するブロックです。",
 	"deafission.machine.material_holder.tooltip": "熱や放射線を使う核分裂炉のレシピで使用するアイテムを入れるためのコンポーネントブロックです。",
 	"deafission.machine.redstone_port.tooltip": "レンチでモードを切り替えられます。",
+	"deafission.recipe.temp": "温度: %s°",
 	"deafission.redstone_port.mode.fuels": "燃料",
 	"deafission.redstone_port.mode.heat": "熱",
+	"emi.deafission.efficiency_component_key": "効率:",
+	"emi.deafission.thermal_component_value_temp": "温度: %d°",
+	"emi.deafission.throttle_component_key": "スロットル:",
 	"item.deafission.fuelcell_plutonium_x1": "Plutonium Fuel Cell",
 	"item.deafission.fuelcell_thorium_x1": "Thorium Fuel Cell",
 	"item.deafission.fuelcell_uranium_x1": "Uranium Fuel Cell",
 	"material.deafission.flibe": "FLiBe Coolant",
-	"material.deafission.flibe_hot": "FLiBe Coolant（Hot）"
+	"material.deafission.flibe_hot": "FLiBe Coolant（Hot）",
+	"tooltip.deafission.fuelcell.heat": "熱: %s%%"
 }

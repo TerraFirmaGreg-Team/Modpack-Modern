@@ -1,13 +1,10 @@
 {
+  "ftbchunks.gui.allies": "Alliés",
   "ftbchunks.gui.settings": "Paramètres",
-  "ftbchunks.map_mode.none": "Aucune",
-  "ftbchunks.minimap.blur_mode.off": "Désactivés",
-  "ftbchunks.minimap.blur_mode.on": "Activés",
+  "ftbchunks.minimap.blur_mode.off": "Off",
+  "ftbchunks.minimap.blur_mode.on": "On",
   "ftbchunks.minimap.compass": "Compass",
   "ftbchunks.minimap.position": "Position",
-  "ftbchunks.minimap.position.left": "Gauche",
-  "ftbchunks.minimap.position.none": "Aucune",
-  "ftbchunks.minimap.position.right": "Droit",
-  "ftbchunks.minimap.zoom": "Zoomer",
+  "ftbchunks.party_limit_mode.owner": "Propriétaire",
   "minimap.info.ftbchunks.real_time.title": "En temps réel"
 }

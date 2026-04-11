@@ -1,0 +1,51 @@
+{
+  "configVersion": 1,
+  "maxBirds": 30,
+  "maxMoths": 8,
+  "maxSpiders": 10,
+  "spawnHatman": false,
+  "spawnBird": true,
+  "spawnMoth": true,
+  "spawnSpider": true,
+  "bird": {
+    "biomeList": {
+      "entries": [
+        "#tfg:earth/is_hill",
+		"#tfg:earth/is_karst",
+		"#tfg:earth/is_lake",
+		"#tfg:earth/is_mountain",
+		"#tfg:earth/is_normal",
+		"#tfg:earth/is_river",
+		"#tfg:earth/is_salt_water",
+		"#tfg:earth/is_sandstone",
+		"#tfg:earth/is_swamp",
+		"#tfg:earth/is_volcanic",
+		"#tfg:earth/is_oldgen"
+      ],
+      "isWhitelist": true
+    },
+    "blockList": {
+      "entries": [
+        "#minecraft:leaves"
+      ],
+      "isWhitelist": true
+    },
+    "reactionDistance": 10,
+    "reactionSpeed": 20,
+    "despawnDistance": 128,
+    "blockAvoidanceDistance": 8,
+    "blockAvoidanceFactor": 0.1,
+    "separationDistance": 2,
+    "separation": 0.01,
+    "flockRange": 20,
+    "alignment": 0.05,
+    "cohesion": 0.001,
+    "maxSpeed": 1.0,
+    "minSpeed": 0.3,
+    "maxBehaviourTime": 400,
+    "landingResponsiveness": 0.01,
+    "flightHeightLimit": 20,
+    "flightHeightLimitFactor": 0.005,
+    "flightRandomness": 0.03
+  }
+}

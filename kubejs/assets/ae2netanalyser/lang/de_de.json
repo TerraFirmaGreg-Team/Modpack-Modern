@@ -1,5 +1,26 @@
 {
+  "itemGroup.ae2netanalyser": "AE2 Netzanalyse",
+  "item.ae2netanalyser.network_analyser": "ME Netzanalyse",
   "gui.ae2netanalyser.network_analyser.mode": "Modus",
   "gui.ae2netanalyser.network_analyser.node_size": "Größe",
-  "gui.ae2netanalyser.network_analyser.mode.FULL": "Voll"
+  "gui.ae2netanalyser.network_analyser.reset": "Farbe zurücksetzen",
+  "gui.ae2netanalyser.network_analyser.mode.FULL": "Voll",
+  "gui.ae2netanalyser.network_analyser.mode.NODES": "Knoten",
+  "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "Links",
+  "gui.ae2netanalyser.network_analyser.mode.NONUM": "Keine Nummer",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
+  "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "Normaler Link",
+  "gui.ae2netanalyser.network_analyser.LINK.DENSE": "Dichter Link",
+  "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "P2P Link",
+  "gui.ae2netanalyser.network_analyser.NODE.NORMAL": "Normaler Knoten",
+  "gui.ae2netanalyser.network_analyser.NODE.DENSE": "Dichter Knoten",
+  "gui.ae2netanalyser.network_analyser.NODE.MISSING": "Offline Knoten",
+  "gui.ae2netanalyser.network_analyser.channel.INFINITE": "Kanalmodus: Unendlicher Kanal",
+  "gui.ae2netanalyser.network_analyser.channel.DEFAULT": "Kanalmodus: Standard",
+  "gui.ae2netanalyser.network_analyser.channel.X2": "Kanalmodus: x2 Kanäle",
+  "gui.ae2netanalyser.network_analyser.channel.X3": "Kanalmodus: x3 Kanäle",
+  "gui.ae2netanalyser.network_analyser.channel.X4": "Kanalmodus: x4 Kanäle",
+  "gui.ae2netanalyser.network_analyser.state.normal_nodes": "Normale Knoten: %s",
+  "gui.ae2netanalyser.network_analyser.state.dense_nodes": "Dichte Knoten: %s",
+  "gui.ae2netanalyser.network_analyser.state.missing_nodes": "Offline-Knoten: %s"
 }

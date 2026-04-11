@@ -426,7 +426,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	// Pyroxenite
 	"blackstone": generateMissing('blackstone', {
-		material: 'tfg:igneous_ultramafic',
+		material: 'tfg:igneous_felsic',
 		tfcTag: 'tfc:igneous_intrusive_items',
 		gravelTag: 'tfc:black_gravel',
 		sound: 'stone',

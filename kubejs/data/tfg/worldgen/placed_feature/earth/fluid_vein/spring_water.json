@@ -1,0 +1,18 @@
+{
+	"feature": "tfc:random_active_hot_spring",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfg:fluid_vein",
+			"vein_ids": [
+				"tfg:spring_water"
+			]
+		}
+	]
+}

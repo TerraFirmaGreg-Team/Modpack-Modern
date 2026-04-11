@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Посевы",
+	"name": "Культуры",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
@@ -490,7 +490,7 @@
 			"type": "patchouli:text",
 			"anchor": "maize",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Влажность$(): 75 - 100 %$(br)$(bold)Питательное вещество$(): Фосфор$(br2)Кукуруза — это культура высотой в два блока. Семена кукурузы можно сажать на вспаханную землю, она вырастает до двух блоков в высоту и даёт $(thing)Кукуруза$() и $(thing)Семена кукурузы$() в качестве урожая.",
-			"title": "Кукуруза"
+			"title": "Маис"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Редиска",
+			"title": "Редис",
 			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 15 - 65 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Редьку можно есть для получения $(thing)овощной$() питательности. Если вам нужно растение, способное выживать в более холодных температурах, редька — хороший выбор."
 		},
 		{

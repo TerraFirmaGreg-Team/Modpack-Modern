@@ -1,11 +1,6 @@
 {
-  "ftbchunks.map_mode.none": "Hiçbiri",
-  "ftbchunks.minimap.blur_mode.off": "Kapalı",
-  "ftbchunks.minimap.blur_mode.on": "Açık",
+  "ftbchunks.map_mode.none": "Yok",
   "ftbchunks.minimap.compass": "Compass",
   "ftbchunks.minimap.position": "Konum",
-  "ftbchunks.minimap.position.left": "Sol",
-  "ftbchunks.minimap.position.none": "Hiçbiri",
-  "ftbchunks.minimap.position.right": "Sağ",
-  "ftbchunks.minimap.zoom": "Yakınlaştırma"
+  "ftbchunks.minimap.position.none": "Yok"
 }

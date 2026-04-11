@@ -1,3 +1,15 @@
 {
-  "entity.alekiships.vehicle_switch_sail": "Voile"
+  "alekiships.config.server.windAffectsBoatsWithNoAnchor": "Le vent affecte les bateaux sans ancrage",
+  "entity.alekiships.cannon": "Canon",
+  "entity.alekiships.cannonball": "Boulet de canon",
+  "entity.alekiships.vehicle_anchor": "Ancre",
+  "entity.alekiships.vehicle_collider": "Véhicule",
+  "entity.alekiships.vehicle_mast": "Mât",
+  "entity.alekiships.vehicle_part": "Pièce de véhicule",
+  "entity.alekiships.vehicle_switch_sail": "Voile",
+  "item.alekiships.anchor": "Ancre",
+  "item.alekiships.cannon": "Canon",
+  "item.alekiships.cannonball": "Boulet de canon",
+  "item.alekiships.oar": "Rame",
+  "press_button": "Appuyer"
 }

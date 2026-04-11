@@ -1,4 +1,7 @@
 {
+  "__COMMENT__": "Ten plik został wygenerowany automatycznie przez LanguageMerger, przeczytaj plik \".README IF TRANSLATING\" znajdujący się w \"minecraft/kubejs\" po więcej informacji.",
+  "block.ftbquests.aux_task_screen": "Ekran zadań",
+  "block.ftbquests.chest.output_desc": "Tutaj pojawią się nagrody",
   "block.ftbquests.detector.player": "Detektor graczy",
   "block.ftbquests.detector.player.height": "Wysokość",
   "block.ftbquests.detector.player.radius": "Promień",
@@ -6,13 +9,23 @@
   "ftbquests.chapter.image.height": "Wysokość",
   "ftbquests.chapter.image.rotation": "Obieg",
   "ftbquests.chapter.image.width": "Szerokość",
+  "ftbquests.gui.error": "Błąd!",
   "ftbquests.gui.reset_progress": "Resetuj postęp harmonogramu",
+  "ftbquests.gui.undo": "Cofnij",
   "ftbquests.loot.entitytype.passive": "Bierny",
-  "ftbquests.null": "Brak",
+  "ftbquests.null": "Żaden",
   "ftbquests.quest.appearance.size": "Wielkość",
+  "ftbquests.quest.shape.diamond": "Diament",
   "ftbquests.quest_link.size": "Wielkość",
+  "ftbquests.reward.ftbquests.gamestage.remove": "Usuń",
+  "ftbquests.reward.ftbquests.npc_faction.add": "Dodaj",
   "ftbquests.reward.ftbquests.npc_mail.items": "Przemioty",
+  "ftbquests.reward_table.loot_crate.color": "Kolor",
   "ftbquests.reward_table.weight": "Waga",
+  "ftbquests.task.ftbquests.fluid": "Ciecz",
   "ftbquests.task.ftbquests.fluid.amount": "Ilość",
-  "ftbquests.task.ftbquests.kill.entity": "Nazwa bytu"
+  "ftbquests.task.ftbquests.fluid.fluid": "Ciecz",
+  "ftbquests.task.ftbquests.kill.entity": "Nazwa bytu",
+  "ftbquests.task.ftbquests.stat.value": "Wartość",
+  "item.ftbquests.missing_item": "Brakujący przedmiot"
 }

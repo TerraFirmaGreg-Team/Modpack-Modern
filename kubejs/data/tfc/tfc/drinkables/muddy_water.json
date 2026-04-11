@@ -1,0 +1,16 @@
+{
+	"ingredient": "tfg:muddy_water",
+	"thirst": 5,
+	"effects": [
+		{
+			"type": "minecraft:poison",
+			"duration": 200,
+			"amplifier": 0
+		},
+		{
+			"type": "tfc:thirst",
+			"duration": 600,
+			"amplifier": 0
+		}
+	]
+}

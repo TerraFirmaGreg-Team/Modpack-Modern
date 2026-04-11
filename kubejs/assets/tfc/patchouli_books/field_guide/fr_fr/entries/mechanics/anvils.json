@@ -1,0 +1,111 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Enclumes",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/anvil/copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Les enclumes sont un outil important nécessaire pour travailler le métal, car elles vous permettent de travailler et souder des lingots en métal en diverses formes.$(br2)$(l:mechanics/anvils#working)Travailler$() sert à transformer un morceau de métal en un autre, et $(l:getting_started/primitive_anvils#welding)le soudage$() sert à fusionner deux pièces en métal en une seule."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+      [
+      "X"
+      ],
+      [
+      "0"
+      ]
+        ],
+        "mapping": {
+      "X": "#tfc:anvils"
+        }
+      },
+      "name": "",
+      "text": "Tous les types d'enclumes en métal.",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/anvil/copper",
+      "text": "Les enclumes peuvent être fabriquées avec des $(thing)doubles lingots$() de leur métal respectif. Pour votre première enclume, vous devez d'abord $(l:getting_started/primitive_anvils#welding)souder$() un double lingot sur une $(l:getting_started/primitive_anvils)enclume en pierre$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tiers",
+      "text": "Les enclumes ont chacune un $(thing)niveau$(), qui définit quels types de matériaux elles peuvent travailler et souder. Une enclume peut travailler des métaux de son propre niveau et souder des métaux qui sont un niveau au-dessus. $(br)$(li)$(bold)Niveau 0$(): Enclumes en Pierre$(li)$(bold)Niveau I$(): Cuivre$(li)$(bold)Niveau II$(): Bronze au Bismuth, Bronze Noir, Bronze$(li)$(bold)Niveau III$(): Fer Forgé$(li)$(bold)Niveau IV$(): Acier$(li)$(bold)Niveau V$(): Acier Noir$(li)$(bold)Niveau VI$(): Acier Rouge, Acier Bleu"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "working",
+      "text": "Afin de travailler un item à l'enclume, vous devrez utiliser l'enclume, pour ouvrir l'interface de l'enclume, à droite. A gauche, il y a deux emplacements d'input pour des items. Pour le travailler, l'item cible doit être placé dans l'emplacement de droite. Vous aurez aussi besoin d'un marteau pour travailler, soit dans l'emplacement dédié pour les marteaux tout à droite de l'interface de l'enclume  $(bold)soit$() dans votre main principale. Le marteau perdra graduellement de la durabilité au fur et à mesure que vous travaillerez l'item.",
+      "title": "Travail"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_empty.png"
+      ],
+      "text": "L'interface de l'enclume.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous devrez ensuite sélectionner le $(thing)plan$(), qui choisit quel item vous voulez créer. $(item)$(k:key.attack)$() sur le boutton de scroll, et ensuite choisissez un des items à créer. L'interface normale de l'enclume va revenir, mais vous aurez choisi un plan : le parchemin montrera l'item que vous êtes en train de créer, et les $(thing)règles$() et l'$(thing)objectif$() seront alors remplies."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_in_use.png"
+      ],
+      "text": "Après avoir choisi de créer une pioche.",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Au milieu de l'écran de l'enclume se trouve une barre avec deux indicateurs colorés. Le pointeur $(2)vert$() représente votre progrès actuel du travail. Le pointeur $(4)rouge$() est l'objectif. Votre but est d'aligner le progrès avec la cible.$(br2)Pour cela, vous pouvez utiliser les boutons $(2)verts$() et $(4)rouges$(), qui servent à déplacer votre progrès d'un certain montant, selon l'action prise.",
+      "title": "Objectifs"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les actions $(2)vertes$() déplaceront toujours votre progrès vers la $(bold)droite$() et les actions $(4)rouges$() déplaceront toujours vos actions vers la $(bold)gauche$(). Notez que si vous déplacez votre progrès hors de la barre, vous perdrez le lingot. Cependant, vous devez aussi suivre les $(thing)règles$()..."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les $(thing)règles$(), sont deux des trois icônes affichées en haut de l'interface de l'enclume. Elles représentent les actions précises qui doivent être prises, à des moments précis, afin que votre travail soit un succès. Par exemple, une règle peut être \"$(2)Plier Avant-Dernier$()\", ce qui signifie que votre avant-dernière action $(bold)doit$() être \"$(2)Plier$()\".",
+      "title": "Règles du Travail"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vos trois dernières actions sont affichées juste en dessous des règles. Quand une règle est satisfaite, son contour passera au vert. Un succès se produit quand toutes les règles sont satisfaites.$(br2)Enfin, faites attention à la $(l:mechanics/heating)température$() de vos items. Des métaux ne peuvent être travaillés que s'ils sont au-dessus d'une certaine température où l'infobulle indique \"Peut trvailler\". Vous pouvez sortir un item de l'enclume et le réchauffer pendant le processus de travail."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le travail peut être fastidieux, et peut prendre de nombreuses étapes pour être  correct. Cependant, il y a un avantage à être efficace. Certains items, comme les têtes d'outils, quand ils sont travaillés un nombre faible ou minimal de fois, reçoivent un Bonus de Forge basé sur l'efficacité aec laquelle ils ont été forgés. Ce bonus sera alors appliqué aux outils où ces items ont été utilisés : par exemple une tête de pioche utilisée pour faire une pioche.",
+      "title": "Bonus de Forge"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
+      "title": "Parfaitement Forgé",
+      "link_recipes": false,
+      "text": "Il y a trois niveaux de bonus de forge : $(li)Mal forgé$(li)Bien Forgé$(li)Très Bien Forgé$(li)Parfaitement Forgé$(br2)Ces bonus augmentent la puissance de votre outil, ce qui le fait se briser moins souvent, miner plus vite et/ou infliger plus de dégâts en combat, en fonction de l'outil."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Le soudage est un processus au travers duquel deux items sont fusionnés afin de créer un nouvel item. Le soudage fonctionne de la même manière que ce soit sur une $(l:getting_started/primitive_anvils)Enclume en Pierre$() ou une enclume en métal.$(br2)D'abord, vous devez placer les deux items que vous voulez souder sur l'enclume. Vous pouvez pour cela utiliser les items sur l'enclume, ou ouvrir l'interface de l'enclume puis les insérer dans les deux emplacements à gauche.",
+      "title": "Soudage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez besoin d'au moins un $(l:mechanics/flux)Flux$() dans l'enclume pour faciliter le processus de soudage. Ensuite, pendant que les deux items sont $(l:mechanics/heating)suffisamment chauds$() pour être soudés - l'infobulle dira \"Peut Souder\" - vous devrez utiliser n'importe lequel des $(thing)Marteaux$() sur l'enclume. Vous entendrez un son de marteau and les items seront soudés ensemble. Ils peuvent alors en être extraits en utilisant $(item)$(k:key.use)$() sur l'enclume avec une main vide."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:anvils": 0
+  }
+}

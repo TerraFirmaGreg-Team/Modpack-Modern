@@ -174,7 +174,7 @@
 					}
 				}
 			],
-			"name": "孜然芹",
+			"name": "孜然",
 			"text": "$(thing)野生孜然$()生长在温度6-20°C、降雨量50-250mm的区域。",
 			"enable_visualize": false
 		},
@@ -208,7 +208,7 @@
 					}
 				}
 			],
-			"name": "滇香薷",
+			"name": "牛至",
 			"text": "$(thing)野生牛至$()生长在温度5-13°C、降雨量50-150mm的区域。",
 			"enable_visualize": false
 		},
@@ -242,7 +242,7 @@
 					}
 				}
 			],
-			"name": "全香子",
+			"name": "多香果",
 			"text": "$(thing)野生多香果$()生长在温度15-30°C、降雨量200-450mm的区域。",
 			"enable_visualize": false
 		},
@@ -276,7 +276,7 @@
 					}
 				}
 			],
-			"name": "原版",
+			"name": "香草",
 			"text": "$(thing)野生香草$()生长在温度18-30°C、降雨量200-500mm的区域。",
 			"enable_visualize": false
 		},

@@ -17,7 +17,7 @@ function registerTFGOverworldItemTags(event) {
 		event.add('tfc:plants', plant);
 		event.add('tfc:compost_greens_low', plant);
 	});
-	
+
 	event.add('tfc:fluxstone', 'tfg:plant/mussels');
 	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
 	event.add('tfc:fluxstone', 'firmalife:hollow_shell');
@@ -31,7 +31,7 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfg:anemones', "tfg:plant/anemone_large_orange");
 	event.add('tfg:anemones', "tfg:plant/anemone_large_purple");
 	event.add('tfc:compost_browns', '#tfg:anemones');
-	
+
 	event.add('tfc:makes_red_dye', 'tfg:plant/kinnikinnick')
 	event.add('tfc:makes_red_dye', 'tfg:plant/tank_bromeliad')
 	event.add('tfc:makes_brown_dye', 'tfg:plant/shawiash')
@@ -114,6 +114,16 @@ function registerTFGOverworldBlockTags(event) {
 	event.add('tfc:powder_snow_replaceable', 'minecraft:ice');
 	event.add('tfc:powder_snow_replaceable', 'minecraft:packed_ice');
 	event.add('tfc:powder_snow_replaceable', 'minecraft:blue_ice');
+
+	event.add('tfc:can_carve', 'tfg:gilsonite');
+
+    event.add("tfc:monster_spawns_on", "beneath:crackrack");
+	event.add("tfc:monster_spawns_on", "minecraft:calcite");
+	event.add("tfc:monster_spawns_on", "tfg:mafic_hornfels");
+	event.add("tfc:monster_spawns_on", "tfg:carbonate_hornfels");
+	event.add("tfc:monster_spawns_on", "tfg:pelitic_hornfels");
+	event.add("tfc:monster_spawns_on", "minecraft:packed_ice");
+	event.add("tfc:monster_spawns_on", "minecraft:blue_ice");
 }
 
 function registerTFGOverworldBiomeTags(event) {
@@ -200,7 +210,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illages', 'tfg:earth/plateau_wide')
 	event.add('tfg:has_structure/illages', 'tfg:earth/rocky_plateau')
 	event.add('tfg:has_structure/illages', 'tfg:earth/stone_circles')
-	event.add('tfg:has_structure/illages', 'tfg:earth/tuyas')
 
 	event.add('tfg:has_structure/illager_camp', 'tfc:badlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:canyons')
@@ -228,7 +237,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/burren_plains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/burren_plateau')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/burren_roche_moutonee')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/buttes')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/cenote_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/cenote_highlands')
@@ -248,16 +256,11 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/embayments')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/extinct_shield_volcano')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/extreme_doline_plateau')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/glacially_carved_mountains')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/glacially_carved_oceanic_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/grassy_dunes')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/hills')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/hoodoos')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/knob_and_kettle')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/low_canyons')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mesas')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mud_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/oceanic_mountains')
@@ -272,21 +275,9 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/salt_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/setback_cliffs')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shield_volcano_shore')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shilin_canyons')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shilin_highlands')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shilin_plains')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shilin_plateau')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/shore')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/stair_step_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/stone_circles')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/terrace_lower')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/terrace_upper')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tidal_flats')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tower_karst_canyons')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tower_karst_highlands')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tower_karst_hills')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tower_karst_lake')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tower_karst_plains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/tuyas')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/volcanic_mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/volcanic_oceanic_mountains')
@@ -303,15 +294,11 @@ function registerTFGOverworldBiomeTags(event) {
 
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/embayments')
-	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/rocky_shores')
-	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/sea_stacks')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shield_volcano_shore')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/shore')
-	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/terrace_lower')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/tidal_flats')
-	
+
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/highlands')
-	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/glacially_carved_mountains')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/plateau')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/old_mountains')
 	event.add('tfc_ruins:has_structure/ruin_rich', 'tfg:earth/rolling_hills')
@@ -327,49 +314,42 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/knob_and_kettle')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/low_canyons')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/lowlands')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/mesas')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/patterned_ground')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/plains')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/plateau')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/plateau_wide')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rocky_plateau')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/rolling_hills')
-	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/setback_cliffs')
 	event.add('tfc_ruins:has_structure/ruin_small', 'tfg:earth/stone_circles')
-	
+
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/hills')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plateau_wide')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/plains')
-	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/drumlins')
-	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/mesas')
-	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/hoodoos')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/patterned_ground')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/knob_and_kettle')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/mud_flats')
 	event.add('tfc_ruined_world:has_structure/large_structure', 'tfg:earth/salt_flats')
-	
-	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/small_structure', 'tfg:earth/old_mountains')
-	event.add('tfc_ruined_world:has_structure/small_structure', 'tfg:earth/glacially_carved_mountains')
 
-	event.add('tfc_ruined_world:has_structure/ancient_monument_1', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/ancient_monument_2', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/castle_1', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/castle_2', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/limestone_church', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/medium_gneiss_church', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/small_gneiss_church', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/small_limestone_church', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/small_limestone_church_2', '#tfc:ruined_world:has_structure/large_structure')
-	event.add('tfc_ruined_world:has_structure/tower_1', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/tower_2', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/tower_3', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/tower_4', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/tower_5', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/towerhouse_1', '#tfc:ruined_world:has_structure/small_structure')
-	event.add('tfc_ruined_world:has_structure/towerhouse_2', '#tfc:ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/small_structure', '#tfc_ruins:has_structure/ruin_small')
+
+	event.add('tfc_ruined_world:has_structure/ancient_monument_1', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/ancient_monument_2', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/castle_1', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/castle_2', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/limestone_church', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/medium_gneiss_church', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/small_gneiss_church', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/small_limestone_church', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/small_limestone_church_2', '#tfc_ruined_world:has_structure/large_structure')
+	event.add('tfc_ruined_world:has_structure/tower_1', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/tower_2', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/tower_3', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/tower_4', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/tower_5', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/towerhouse_1', '#tfc_ruined_world:has_structure/small_structure')
+	event.add('tfc_ruined_world:has_structure/towerhouse_2', '#tfc_ruined_world:has_structure/small_structure')
 
 	// Kaolin
 	event.add("tfc:kaolin_clay_spawns_in", "tfc:rolling_hills");
@@ -500,11 +480,15 @@ function registerTFGOverworldPlacedFeatures(event) {
 
 	// Fluid veins
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_spout_and_sands");
-	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/random_active_hot_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/spring_water");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_light_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_medium_ocean");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_heavy_ocean");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_light_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_medium_spring");
+	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/oil_tar_heavy_spring");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent");
 	event.add("tfc:in_biome/underground_structures", "tfg:earth/fluid_vein/gas_vent_ocean");
 
@@ -512,4 +496,39 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.remove("tfc:in_biome/large_features/old_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/volcanic_mountains", "tfc:random_active_hot_spring")
 	event.remove("tfc:in_biome/large_features/canyons", "tfc:random_active_hot_spring")
+}
+
+function registerTFGOverworldEntityTypeTags(event) {
+
+	// Tag used by TFC to control monsters spawning on the surface
+	event.add('tfc:vanilla_monsters', 'endermanoverhaul:flower_fields_enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:enderman')
+	event.add('tfc:vanilla_monsters', 'minecraft:husk')
+	event.add('tfc:vanilla_monsters', 'minecraft:drowned')
+	event.add('tfc:vanilla_monsters', 'minecraft:slime')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
+	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
+	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
+
+	// Takes no damage from the new 1.21 cacti
+	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
+	event.add('tfg:ignores_cacti', 'waves:waves')
+	event.add('tfg:ignores_cacti', 'tfg:jerboa')
+
+	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
+	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+	event.add('tfc:land_prey', 'tfg:leopard_seal')
+	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
+	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
+	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
+	event.add('tfc:hunted_by_cats', 'tfg:jerboa')
+	event.add('tfc:hunted_by_cats', 'tfg:lemming')
+	event.add('tfc:hunted_by_cats', 'tfg:mongoose')
+
+	event.add('tfg:not_rammed_by_rammers', '#tfc:bubble_column_immune')
+	event.add('tfg:not_rammed_by_rammers', '#tfc:pests')
+	event.add('tfg:not_rammed_by_rammers', 'tfc:frog')
 }
