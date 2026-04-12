@@ -759,17 +759,13 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_red_granite')
 	removeMaceratorRecipe(event, 'macerate_calcite')
 	removeMaceratorRecipe(event, 'macerate_wool')
+	removeMaceratorRecipe(event, 'macerate_hay_block')
 
 	removeMaceratorRecipe(event, 'macerate_enchanting_table')
 	event.remove({ id: 'gtceu:arc_furnace/arc_enchanting_table' })
 
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
-	// TODO: uncomment with venus update
-	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_ender_air' })
-	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_nether_air' })
-	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_ender_air' })
-	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_firebricks' })

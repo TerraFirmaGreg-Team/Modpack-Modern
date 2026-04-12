@@ -1,6 +1,6 @@
 {
-    "name": "Ores in TFG",
-    "description": "TFG has its own ore generation system that's similar to TFC's with the huge but rare veins, but with multiple minerals per vein. This category lists all of the vein types and where to find them.$(br2)Veins are named after their most dominant ore, but most veins contain 3-5 minerals.$(br2)See also: $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$()",
+    "name": "Minerales en TFG",
+    "description": "TFG tiene su propio sistema de generación de minerales, similar al de TFC, con vetas grandes pero poco comunes, pero con varios minerales por veta. Esta categoría lista todos los tipos de vetas y dónde encontrarlas.$(br2)Las vetas se nombran según su mineral predominante, pero la mayoría contienen entre 3 y 5 minerales.$(br2)Ver también: $(l:the_world/geology)Geología$(), $(l:getting_started/finding_ores)Indicadores$()",
     "icon": "tfc:ore/pyrite",
     "sortnum": 60
 }
