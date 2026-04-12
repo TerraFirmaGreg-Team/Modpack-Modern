@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Dans Firmalife, il y a plusieurs petites plantes, que vous pouvez récupérer et cultiver par vous-mêmes, qui ont des propriétés culinaires. Elles peuvent toutes êtres trouvées dans la nature et, une fois récoltées, peuvent être cultivées dans une $(l:firmalife/greenhouse)Serre$(), dans laquelle elles consomment 20 points de N, P, et K"
+			"text": "Dans Firmalife, il y a plusieurs petites plantes, que vous pouvez récupérer et cultiver par vous-mêmes, qui ont des propriétés culinaires. Elles peuvent toutes êtres trouvées dans la nature et, une fois récoltées, peuvent être cultivées dans une $(l:firmalife/greenhouse)Serre$(), dans laquelle elles consomment 20 points de N, P, et K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -175,7 +175,7 @@
 				}
 			],
 			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grandit entre 6 et 20C, et entre 50 et 250mm de pluie.",
+			"text": "Le $(thing)cumin sauvage$() pousse entre 6 et 20 °C, et entre 50 et 250 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
