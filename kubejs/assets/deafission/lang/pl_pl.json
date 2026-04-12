@@ -1,3 +1,7 @@
 {
+	"block.deafission.fission_reactor_mk1": "Reaktor jądrowy gen. I",
+	"block.deafission.fission_reactor_mk2": "Reaktor jądrowy gen. II",
+	"block.deafission.fission_reactor_smr1": "Mały reaktor jądrowy gen. I",
+	"deafission.fission_reactor.gui.coolant": "Chłodziwo %s mB/t",
 	"emi.deafission.throttle_component_key": "Prędkość:"
 }

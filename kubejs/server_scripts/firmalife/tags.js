@@ -29,6 +29,7 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('minecraft:leaves', 'firmalife:plant/fig_leaves')
 
     event.add('tfc:clay_recycle_5', '#firmalife:clay_recycle_5')
+
 }
 
 const registerFirmaLifeBlockTags = (event) => {
@@ -77,6 +78,21 @@ const registerFirmaLifeBlockTags = (event) => {
 
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
     event.add('firmalife:oven_insulation', 'firmalife:vat');
+
+    // tfg and a few missed(?) tfc flowers for bee restoration
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/azalea')    
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/buttercup')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/cornflower')
+	event.add('firmalife:bee_restoration_plants', 'tfg:plant/edelweiss')
+    event.add('firmalife:bee_restoration_plants', 'tfc:plant/rose')
+    event.add('firmalife:bee_restoration_plants', 'tfc:plant/hibiscus')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/mountain_hullwort')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/palash')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/penwortel')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/qantu')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramirezella')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/ramunda')
+    event.add('firmalife:bee_restoration_plants', 'tfg:plant/yellow_saxifrage')
 }
 
 const registerFirmaLifeFluidTags = (event) => {

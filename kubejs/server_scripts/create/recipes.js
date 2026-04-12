@@ -205,7 +205,8 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:chute')
 		.duration(200)
 		.EUt(20)
-		.addMaterialInfo(true)
+
+	TFGHelpers.registerMaterialInfo('create:chute', [GTMaterials.WroughtIron, 3]);
 
 	// Металлический держатель
 	event.recipes.gtceu.shaped('4x create:metal_bracket', [
@@ -532,7 +533,7 @@ const registerCreateRecipes = (event) => {
 		'ADA'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:drill_heads',
+		B: 'tfg:steel_drill_head',
 		C: 'greate:steel_cogwheel',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/hammers',
@@ -542,13 +543,13 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/mechanical_drill')
 
 	event.recipes.gtceu.assembler('create:mechanical_drill')
-		.itemInputs('2x #forge:plates/wrought_iron', '#forge:drill_heads', '#forge:cogwheels', 'create:andesite_casing', '#gtceu:circuits/ulv')
+		.itemInputs('2x #forge:plates/wrought_iron', 'tfg:steel_drill_head', '#forge:cogwheels', 'create:andesite_casing', '#gtceu:circuits/ulv')
 		.itemOutputs('create:mechanical_drill')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(19)
 
-	TFGHelpers.registerMaterialInfo('create:mechanical_drill', [GTMaterials.Wood, 1, GTMaterials.Steel, 4, GTMaterials.WroughtIron, 3]);
+	TFGHelpers.registerMaterialInfo('create:mechanical_drill', [GTMaterials.Wood, 1, GTMaterials.Steel, 8, GTMaterials.WroughtIron, 7]);
 
 	event.shaped('create:mechanical_roller', [
 		'GBG',

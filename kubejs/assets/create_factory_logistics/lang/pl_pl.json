@@ -1,4 +1,18 @@
 {
-  "create_factory_logistics.gui.ingredient_type.fluid": "Ciecz"
+  "block.create_factory_logistics.factory_fluid_gauge": "Miernik fabryczny płynów",
+  "block.create_factory_logistics.jar_packager": "Rozlewnia",
+  "block.create_factory_logistics.network_link": "Łącze sieciowe",
+  "entity.create_factory_logistics.jar": "Słoik",
+  "item.create_factory_logistics.fluid_mechanism": "Mechanizm płynów",
+  "item.create_factory_logistics.incomplete_fluid_mechanism": "Niedokończony mechanizm płynów",
+  "item.create_factory_logistics.jar": "Miedziany słoik",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Factory Logistics",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "Przytrzymaj Alt, aby umieścić płyn",
+  "itemGroup.create_factory_logistics.base": "Create: Factory Logistics",
+  "create_factory_logistics.gui.ingredient_type.fluid": "Ciecz",
+  "create_factory_abstractions.gui.ingredient_type.item": "Przemiot",
+  "create_factory_logistics.ponder.mixer_upkeep.text_2": "Aby palnik płomienny był karmiony tylko w razie potrzeby",
+  "create_factory_logistics.ponder.mixer_upkeep.text_3": "Po otrzymaniu zamówienia, przełącznik odczyta nowy stan i zareaguje",
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "Umieść ciecz do monitorowania"
 }
 

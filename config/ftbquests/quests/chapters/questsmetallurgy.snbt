@@ -1348,6 +1348,20 @@
 			x: 9.5d
 			y: -34.0d
 		}
+		{
+			dependencies: ["48A8E3210B2BAE1C"]
+			description: ["{quests.metal_age.crafting_station.desc}"]
+			id: "5B860F2BECC8BC93"
+			subtitle: "{quests.metal_age.crafting_station.subtitle}"
+			tasks: [{
+				id: "3F33BC982FF71EA7"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			title: "{quests.metal_age.crafting_station.title}"
+			x: 4.0d
+			y: -29.5d
+		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]
 	title: "{quests.metal_age}"

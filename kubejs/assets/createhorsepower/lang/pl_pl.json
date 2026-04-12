@@ -1,0 +1,23 @@
+{
+	"block.createhorsepower.horse_crank": "Korba zwierzęca",
+	"createhorsepower.ponder.horse_crank.header": "Używanie Korby konnej",
+	"createhorsepower.ponder.horse_crank.text_1": "To jest Korba konna",
+	"createhorsepower.ponder.horse_crank.text_2": "Aby użyć korby konnej, musisz najpierw mieć pod nim prawidłowe bloki",
+	"createhorsepower.ponder.horse_crank.text_3": "Niektóre materiały mogą być lepsze od innych",
+	"createhorsepower.ponder.horse_crank.text_4": "Po przyłączeniu prawidłowego pracownika korba wytwarza stres",
+	"createhorsepower.ponder.horse_crank.text_5": "Możesz dołączyć dowolnego moba w konfiguracji, aby przekształcić go w pracownika",
+	"createhorsepower.ponder.horse_crank.text_6": "Możesz otrzymać siłę rotacyjną od pobocznej zębatki...",
+	"createhorsepower.ponder.horse_crank.text_7": "",
+	"createhorsepower.ponder.horse_crank.text_8": "...ale nie od góry",
+	"createhorsepower.ponder.tag.path_types": "Bloki ścieżek",
+	"createhorsepower.ponder.tag.path_types.description": "Bloki zdolne do poruszania się przez zwierzęta robocze",
+	"createhorsepower.ponder.tag.viable_workers": "Prawidłowy pracownicy",
+	"createhorsepower.ponder.tag.viable_workers.description": "Zwierzęta, które mogą być użyte do pociągnięcia Korby konnej",
+	"entity.createhorsepower.chp_leash_knot": "(CHP) Węzeł smyczy",
+	"item.createhorsepower.horse_crank": "Korba konna",
+	"tooltip.createhorsepower.horse_crank.alreadyHasWorker": "Korba ma już pracownika",
+	"tooltip.createhorsepower.horse_crank.attached": "Pracownik został dołączony",
+	"tooltip.createhorsepower.horse_crank.detached": "Pracownik został odłączony",
+	"tooltip.createhorsepower.horse_crank.maximumMobs": "Tylko 1 mob może zostać dołączony",
+	"tooltip.createhorsepower.horse_crank.notValidWorker": "Mob nie jest prawidłowym pracownikiem"
+}

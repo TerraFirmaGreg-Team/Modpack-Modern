@@ -1,24 +1,24 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Índice de árboles terrestres",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tree in the world, and what climates they grow in.$(br2)Looking for particular wood type to decorate your base? This should help you find it. The list is sorted alphabetically by wood type.$(br2)Also check out the $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
+			"text": "Esta es una lista de todos los árboles del mundo y en qué climas crecen.$(br2)¿Buscas un tipo de madera particular para decorar tu base? Esto te ayudará a encontrarla. La lista está ordenada alfabéticamente por tipo de madera.$(br2)también revisa el índice $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "Acacia de goma arábiga",
 			"item": "tag:tfc:acacia_logs",
-			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
+			"text": "$(bold)Acacia espinosa de paraguas$()$(br)$(thing)Precipitación$(): 90 — 275 mm$(br)$(thing)Temperatura$(): 13.4 — 40 °C$(br2)$(bold)Acacia koa$()$(br)$(thing)Precipitación$(): 350 — 500 mm$(br)$(thing)Temperatura$(): 15.3 — 24.4 °C$(br2)$(bold)Acacia de goma arábiga$()$(br)$(thing)Precipitación$(): 90 — 275 mm$(br)$(thing)Temperatura$(): 11.6 — 40 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ash",
+			"title": "Ceniza",
 			"item": "tag:tfc:ash_logs",
-			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
+			"text": "$(bold)Ceniza Blanca$()$(br)$(thing)Precipitación$(): 60 — 240mm$(br)$(thing)Temperatura$(): -13.9 — 0.7 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -30,25 +30,25 @@
 			"type": "patchouli:spotlight",
 			"title": "Baobab",
 			"item": "tag:afc:baobab_logs",
-			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
+			"text": "$(bold)Baobab$()$(br)$(thing)Precipitación$(): 30 — 190mm$(br)$(thing)Temperatura$(): 15.3 — 26.2 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Birch",
+			"title": "Abedul",
 			"item": "tag:tfc:birch_logs",
-			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
+			"text": "$(bold)Abedul$()$(br)$(thing)Precipitación$(): 125 — 310mm$(br)$(thing)Temperatura$(): -13.9 — 2.5 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Blackwood",
+			"title": "Ébano",
 			"item": "tag:tfc:blackwood_logs",
-			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Rainfall$(): 85 — 285mm$(br)$(thing)Temperature$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Rainfall$(): 35 — 150mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
+			"text": "$(bold)Ébano africano (Mpingo)$()$(br)$(thing)Precipitación$(): 85 — 285 mm$(br)$(thing)Temperatura$(): 13.4 — 22.5 °C$(br2)$(bold)Ébano mulga$()$(br)$(thing)Precipitación$(): 35 — 150 mm$(br)$(thing)Temperatura$(): 9.8 — 20.7 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Cedro",
 			"item": "tag:tfc:white_cedar_logs",
-			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
+			"text": "$(bold)Cedro Blanco$()$(br)$(thing)Precipitación$(): 100 — 220mm$(br)$(thing)Temperatura$(): -13.9 — 4.3 °C$(br2)$(bold)Cedro Atlántico$()$(br)$(thing)Precipitación$(): 165 — 500mm$(br)$(thing)Temperatura$(): 8.0 — 13.4 °C"
 		},
 		{
 			"type": "patchouli:spotlight",
