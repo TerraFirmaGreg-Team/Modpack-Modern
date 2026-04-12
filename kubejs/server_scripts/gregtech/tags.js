@@ -79,6 +79,16 @@ function registerGTCEUItemTags(event) {
     // any rubber plate
     event.add('tfg:rubber_plates', '#forge:plates/rubber', '#forge:plates/silicone_rubber', '#forge:plates/styrene_butadiene_rubber')
 
+    // rubber rings
+    event.add('tfg:rubber_rings', 'gtceu:rubber_ring')
+	event.add('tfg:rubber_rings', 'gtceu:silicone_rubber_ring')
+	event.add('tfg:rubber_rings', 'gtceu:styrene_butadiene_rubber_ring')
+
+    // rubber foils
+    event.add('tfg:rubber_foils', 'gtceu:rubber_foil')
+	event.add('tfg:rubber_foils', 'gtceu:silicone_rubber_foil')
+	event.add('tfg:rubber_foils', 'gtceu:styrene_butadiene_rubber_foil')
+    
     // Remove slurry bucket
 
     event.add('c:hidden_from_recipe_viewers', 'gtceu:ruby_slurry_bucket', 'gtceu:green_sapphire_slurry_bucket', 'gtceu:sapphire_slurry_bucket')

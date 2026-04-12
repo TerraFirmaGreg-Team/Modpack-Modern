@@ -12,6 +12,7 @@ function registerTFGMiscAlloyMaterials(event) {
 		.components('1x arsenic', '1x tin', '8x copper')
 		.color(0xE76848)
 		.iconSet('metallic')
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	// EV New Material
 
