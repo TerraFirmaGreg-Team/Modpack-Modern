@@ -9,18 +9,19 @@
   "spawnSpider": true,
   "bird": {
     "biomeList": {
-      "entries": [
-        "#tfg:earth/is_hill",
-		"#tfg:earth/is_karst",
-		"#tfg:earth/is_lake",
-		"#tfg:earth/is_mountain",
-		"#tfg:earth/is_normal",
-		"#tfg:earth/is_river",
-		"#tfg:earth/is_sandstone",
-		"#tfg:earth/is_swamp",
-		"#tfg:earth/is_volcanic",
-		"#tfg:earth/is_oldgen"
-      ],
+        "entries": [
+            "#tfg:earth/is_hill",
+            "#tfg:earth/is_karst",
+            "#tfg:earth/is_lake",
+            "#tfg:earth/is_mountain",
+            "#tfg:earth/is_normal",
+            "#tfg:earth/is_river",
+            "#tfg:earth/is_sandstone",
+            "#tfg:earth/is_swamp",
+            "#tfg:earth/is_volcanic",
+            "#tfg:earth/is_cold",
+            "#tfg:earth/is_oldgen"
+        ],
       "isWhitelist": true
     },
     "blockList": {
