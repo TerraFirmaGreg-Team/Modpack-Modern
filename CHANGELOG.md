@@ -2,6 +2,10 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.3] - 12-04-2026
+### Changes
 - Drowned now always carry a javelin on hard difficulty, and zombies sometimes spawn with weapons on hard difficulty too @Pyritie
 - Pressing 'U' on a raw rock will now also filter the Ore Veins tab by that rock type @BlueBoat29
 - Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
