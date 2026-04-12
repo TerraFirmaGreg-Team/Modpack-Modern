@@ -521,7 +521,13 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
 	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
-	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
+	event.add('tfc:deals_crushing_damage', 'minecraft:slime')
+
+	event.add('tfc:zombies', 'minecraft:drowned')
+	event.add('tfc:zombies', 'minecraft:zombified_piglin')
+
+	event.add('tfg:slimes', 'minecraft:slime')
+	event.add('tfg:slimes', 'minecraft:magma_cube')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
@@ -529,10 +535,14 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
+	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
+
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
 	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
 	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')

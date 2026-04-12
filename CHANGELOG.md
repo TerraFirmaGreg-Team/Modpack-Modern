@@ -6,6 +6,9 @@
 - Pressing 'U' on a raw rock will now also filter the Ore Veins tab by that rock type @BlueBoat29
 - Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
 - Removed the (wrong) warning message when tools are about to break, and adjusted the placement of the inventory sorting buttons on GregTech GUI screens @Pyritie
+- The Steam Rock Crusher, Steam Miner, and Mechanical Drill now use a cheaper "drill" component (#3512) @Pyritie
+- Slimes and magma cubes are now weak to slashing damage but resistant to piercing and bludgeoning @Pyritie
+- Drowned now have the same resistances as other zombies @Pyritie
 ### Bug fixes
 - Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
