@@ -226,7 +226,7 @@
 			"entity": "tfg:jerboa",
 			"scale": 1.2,
 			"name": "Jerboa",
-			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
+			"text": "The jerboa spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
 		},
 		{
 			"type": "patchouli:entity",
