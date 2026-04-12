@@ -10,10 +10,13 @@
 - Slimes and magma cubes are now weak to slashing damage but resistant to piercing and bludgeoning @Pyritie
 - Drowned now have the same resistances as other zombies @Pyritie
 - Updated the field guide with the new wild animals (#3705) @Pyritie
+- Added missing realgar gem slurry (#3767) @SakuraKitsurugi
+- Some recipes which previously required normal rubber rings/foils can now work with any rubber (#3774) @applenper
 ### Bug fixes
 - Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
-- Fixed some 
+- Fixed a crash caused by loading an old worldgen chunk with an active fluid rig @Pyritie
+- Fixed the bounding box of the new pastoral rancher multiblock so it detects animals in the correct area @TomPlop
 
 ## [0.12.2] - 11-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
