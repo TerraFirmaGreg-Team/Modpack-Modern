@@ -1766,6 +1766,12 @@ const registerCreateRecipes = (event) => {
 		.duration(200)
 		.EUt(7)
 
+	event.recipes.gtceu.packer('tfg:cardboard_block')
+		.itemInputs('4x create:cardboard', '#forge:string')
+		.itemOutputs('create:bound_cardboard_block')
+		.duration(500)
+		.EUt(7)
+
 	event.recipes.gtceu.shaped('create:packager', [
 		' A ',
 		'BCD',
