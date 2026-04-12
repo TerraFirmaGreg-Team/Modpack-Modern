@@ -294,7 +294,7 @@ const registerCreateRecipes = (event) => {
 		'CFC'
 	], {
 		A: 'create:copper_casing',
-		B: 'tfg:rubber_foils',
+		B: '#tfg:rubber_foils',
 		C: '#forge:plates/copper',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/hammers',
