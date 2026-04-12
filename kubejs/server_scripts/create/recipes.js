@@ -294,7 +294,7 @@ const registerCreateRecipes = (event) => {
 		'CFC'
 	], {
 		A: 'create:copper_casing',
-		B: '#forge:foils/rubber',
+		B: 'tfg:rubber_foils',
 		C: '#forge:plates/copper',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/hammers',
@@ -302,7 +302,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/hose_pulley')
 
 	event.recipes.gtceu.assembler('create:hose_pulley')
-		.itemInputs('create:copper_casing', '#forge:foils/rubber', '2x #forge:plates/copper', 'minecraft:bucket')
+		.itemInputs('create:copper_casing', '#tfg:rubber_foils', '2x #forge:plates/copper', 'minecraft:bucket')
 		.itemOutputs('create:hose_pulley')
 		.duration(50)
 		.circuit(1)
@@ -332,7 +332,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/spout')
 
 	event.recipes.gtceu.assembler('create:spout')
-		.itemInputs('create:fluid_tank', '2x #forge:foils/rubber')
+		.itemInputs('create:fluid_tank', '2x #tfg:rubber_foils')
 		.itemOutputs('create:spout')
 		.duration(50)
 		.circuit(2)
@@ -858,14 +858,14 @@ const registerCreateRecipes = (event) => {
 		'BBC'
 	], {
 		A: '#forge:plates/brass',
-		B: '#forge:foils/rubber',
+		B: '#tfg:rubber_foils',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives',
 		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel')
 
 	event.recipes.gtceu.assembler('create:brass_funnel')
-		.itemInputs('2x #forge:plates/brass', '2x #forge:foils/rubber', 'create:electron_tube')
+		.itemInputs('2x #forge:plates/brass', '2x #tfg:rubber_foils', 'create:electron_tube')
 		.itemOutputs('2x create:brass_funnel')
 		.circuit(8)
 		.duration(50)
@@ -899,12 +899,12 @@ const registerCreateRecipes = (event) => {
 		'BB'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:foils/rubber',
+		B: '#tfg:rubber_foils',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel')
 
 	event.recipes.gtceu.assembler('create:andesite_tunnel')
-		.itemInputs('#forge:plates/wrought_iron', '#forge:foils/rubber')
+		.itemInputs('#forge:plates/wrought_iron', '#tfg:rubber_foils')
 		.itemOutputs('create:andesite_tunnel')
 		.circuit(10)
 		.duration(50)
@@ -936,13 +936,13 @@ const registerCreateRecipes = (event) => {
 		'BB'
 	], {
 		A: '#forge:plates/brass',
-		B: '#forge:foils/rubber',
+		B: '#tfg:rubber_foils',
 		C: 'create:electron_tube',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/brass_tunnel')
 
 	event.recipes.gtceu.assembler('create:brass_tunnel')
-		.itemInputs('2x #forge:plates/brass', '2x #forge:foils/rubber', 'create:electron_tube')
+		.itemInputs('2x #forge:plates/brass', '2x #tfg:rubber_foils', 'create:electron_tube')
 		.itemOutputs('2x create:brass_tunnel')
 		.circuit(12)
 		.duration(50)
@@ -2057,7 +2057,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.assembler('create:goggles_rubber')
-		.itemInputs('2x #forge:rings/brass', '#forge:foils/rubber', '2x tfc:lens')
+		.itemInputs('2x #forge:rings/brass', '#tfg:rubber_foils', '2x tfc:lens')
 		.itemOutputs('create:goggles')
 		.circuit(10)
 		.duration(50)
