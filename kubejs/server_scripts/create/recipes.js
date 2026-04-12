@@ -820,13 +820,13 @@ const registerCreateRecipes = (event) => {
 		'BBC'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:foils/rubber',
+		B: '#tfg:rubber_foils',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/andesite_funnel')
 
 	event.recipes.gtceu.assembler('create:andesite_funnel')
-		.itemInputs('#forge:plates/wrought_iron', '#forge:foils/rubber')
+		.itemInputs('#forge:plates/wrought_iron', '#tfg:rubber_foils')
 		.itemOutputs('create:andesite_funnel')
 		.circuit(6)
 		.duration(50)
