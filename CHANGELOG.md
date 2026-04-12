@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+- Fixed not being able to eat ice shavings @Pyritie
 
 ## [0.12.3] - 12-04-2026
 ### Changes
