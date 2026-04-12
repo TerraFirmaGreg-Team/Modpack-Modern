@@ -9,6 +9,7 @@
 - The Steam Rock Crusher, Steam Miner, and Mechanical Drill now use a cheaper "drill" component (#3512) @Pyritie
 - Slimes and magma cubes are now weak to slashing damage but resistant to piercing and bludgeoning @Pyritie
 - Drowned now have the same resistances as other zombies @Pyritie
+- Updated the field guide with the new wild animals (#3705) @Pyritie
 ### Bug fixes
 - Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
