@@ -13,6 +13,7 @@
 ### Bug fixes
 - Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
+- Fixed some 
 
 ## [0.12.2] - 11-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
