@@ -3,10 +3,12 @@
         "highlight_foused_items": {
             "value": false
         },
+        "highlight_foused_items_foreground": false,
         "villager_trading_enable": {
             "value": false
         },
         "enable_updates_check": false,
+        "highlight_clicking_slot": false,
         "first_run": false
     },
     "GuiSettings": {
@@ -21,6 +23,18 @@
         },
         "show_continuous_crafting_checkbox": {
             "value": false
+        }
+    },
+    "LockedSlotsSettings": {
+        "lock_slots_switch_config_modifier": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "lock_slots_config_key": {
+            "main": {
+                "keys": ""
+            }
         }
     },
     "AutoRefillSettings": {

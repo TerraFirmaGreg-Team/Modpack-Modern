@@ -5,13 +5,13 @@
     "name": "forge",
     "version": "fmlloader-1.20.1-47.4.13.jar"
   },
-  "[1.20.1 Forge] Additional Placements 3.0.0.jar": {
-    "jarName": "[1.20.1 Forge] Additional Placements 3.0.0.jar",
+  "[1.20.1 Forge] Additional Placements 3.0.1.jar": {
+    "jarName": "[1.20.1 Forge] Additional Placements 3.0.1.jar",
     "modId": "additionalplacements",
     "name": "Additional Placements",
-    "version": "3.0.0",
-    "curseForgeHash": 2568572903,
-    "modrinthHash": "c1c30d3bce71de81c87bc54b136b5816c0c904cf"
+    "version": "3.0.1",
+    "curseForgeHash": 2129944957,
+    "modrinthHash": "9f5d85cce1ba38a7a874254c5e2efd0a7e5e05ea"
   },
   "aaa-particles-forge-1.20.1-1.4.15.jar": {
     "jarName": "aaa-particles-forge-1.20.1-1.4.15.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 1007694343,
     "modrinthHash": "1c93d31216aa53e53e97f4e24adb899673accb52"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.11.6.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.11.6.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.11.8.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.11.8.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.6",
-    "curseForgeHash": 3466674065,
-    "modrinthHash": "dd2a62eb31ebe96b3f13ea9288527c2000cd6fa5"
+    "version": "1.11.8",
+    "curseForgeHash": 1309094860,
+    "modrinthHash": "34e6786638b45ead327da1dbab237dfb23355cec"
   },
   "crashexploitfixer-forge-1.1.0+1.20.1.jar": {
     "jarName": "crashexploitfixer-forge-1.1.0+1.20.1.jar",
@@ -508,6 +508,14 @@
     "version": "0.4.0",
     "curseForgeHash": 694433954,
     "modrinthHash": "49712554e365e4412fa6362f0394e919fe7eb261"
+  },
+  "create_repair-forge-1.20.1-1.0.0-all.jar": {
+    "jarName": "create_repair-forge-1.20.1-1.0.0-all.jar",
+    "modId": "create_repair",
+    "name": "Create Repair: Unofficial Create Community Patch",
+    "version": "1.0.0",
+    "curseForgeHash": 1079237881,
+    "modrinthHash": "151bf048ed9c4fe84d2137acc05f6be7dba2f3d4"
   },
   "createaddition-1.20.1-1.3.3.jar": {
     "jarName": "createaddition-1.20.1-1.3.3.jar",
@@ -677,13 +685,13 @@
     "curseForgeHash": 484254904,
     "modrinthHash": "780caf39421ccfc495d14cb287856ced97c32985"
   },
-  "entityculling-forge-1.10.0-mc1.20.1.jar": {
-    "jarName": "entityculling-forge-1.10.0-mc1.20.1.jar",
+  "entityculling-forge-1.10.1-mc1.20.1.jar": {
+    "jarName": "entityculling-forge-1.10.1-mc1.20.1.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.10.0",
-    "curseForgeHash": 2205338562,
-    "modrinthHash": "b7e15f04d29f4d97afff8a6ce5a0162d2a595819"
+    "version": "1.10.1",
+    "curseForgeHash": 4042303852,
+    "modrinthHash": "764617346e7231c4d3189465deefc9071f51b55e"
   },
   "etched-3.0.4.jar": {
     "jarName": "etched-3.0.4.jar",
@@ -861,13 +869,13 @@
     "curseForgeHash": 3807919150,
     "modrinthHash": "7f36ec4af42ad1d69872c58022e93a9d1b9c82b7"
   },
-  "ftb-quests-forge-2001.4.20.jar": {
-    "jarName": "ftb-quests-forge-2001.4.20.jar",
+  "ftb-quests-forge-2001.4.21.jar": {
+    "jarName": "ftb-quests-forge-2001.4.21.jar",
     "modId": "ftbquests",
     "name": "FTB Quests",
-    "version": "2001.4.20",
-    "curseForgeHash": 4177984873,
-    "modrinthHash": "5ea9b9f41fe4a50eacaed6a12df434580ea26c42"
+    "version": "2001.4.21",
+    "curseForgeHash": 2340368871,
+    "modrinthHash": "928d287c016d4032d80870d9d3c5503e1ec85c21"
   },
   "ftb-ranks-forge-2001.1.7.jar": {
     "jarName": "ftb-ranks-forge-2001.1.7.jar",
@@ -1258,13 +1266,13 @@
     "curseForgeHash": 544928077,
     "modrinthHash": "24e6611df470afd957eafd16c43890b7214e3da9"
   },
-  "modernfix-forge-5.26.2+mc1.20.1.jar": {
-    "jarName": "modernfix-forge-5.26.2+mc1.20.1.jar",
+  "modernfix-forge-5.27.4+mc1.20.1.jar": {
+    "jarName": "modernfix-forge-5.27.4+mc1.20.1.jar",
     "modId": "modernfix",
     "name": "ModernFix",
-    "version": "5.26.2+mc1.20.1",
-    "curseForgeHash": 2785638273,
-    "modrinthHash": "0adfc122e9f632d8847688c4c3ed20a1af182afa"
+    "version": "5.27.4+mc1.20.1",
+    "curseForgeHash": 932668074,
+    "modrinthHash": "b3acaa79e27c7496c9e8b86cefbcefb9586a2620"
   },
   "moonlight-1.20-2.16.28-forge.jar": {
     "jarName": "moonlight-1.20-2.16.28-forge.jar",
@@ -1330,13 +1338,13 @@
     "curseForgeHash": 1367373369,
     "modrinthHash": "c0806369f4257149664904db44efc60bd1785c17"
   },
-  "notenoughanimations-forge-1.12.0-mc1.20.1.jar": {
-    "jarName": "notenoughanimations-forge-1.12.0-mc1.20.1.jar",
+  "notenoughanimations-forge-1.12.1-mc1.20.1.jar": {
+    "jarName": "notenoughanimations-forge-1.12.1-mc1.20.1.jar",
     "modId": "notenoughanimations",
     "name": "NotEnoughAnimations",
-    "version": "1.12.0",
-    "curseForgeHash": 4287025205,
-    "modrinthHash": "bbf826c31cb40e495e88b8679463955afd944566"
+    "version": "1.12.1",
+    "curseForgeHash": 1699199212,
+    "modrinthHash": "19df9f1f44d7c594884cf9810ac52a9a4ba13be6"
   },
   "OctoLib-FORGE-0.5.0.1+1.20.1.jar": {
     "jarName": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
@@ -1594,13 +1602,13 @@
     "curseForgeHash": 2197810606,
     "modrinthHash": "7529fbf938787ed13a251cbf40936f8c29ec4b6c"
   },
-  "sophisticatedbackpacks-1.20.1-3.24.32.1645.jar": {
-    "jarName": "sophisticatedbackpacks-1.20.1-3.24.32.1645.jar",
+  "sophisticatedbackpacks-1.20.1-3.24.34.1662.jar": {
+    "jarName": "sophisticatedbackpacks-1.20.1-3.24.34.1662.jar",
     "modId": "sophisticatedbackpacks",
     "name": "Sophisticated Backpacks",
-    "version": "3.24.32.1645",
-    "curseForgeHash": 3243637920,
-    "modrinthHash": "b24b757fd20837688a83baa278e2a2901b5149f7"
+    "version": "3.24.34.1662",
+    "curseForgeHash": 4094817974,
+    "modrinthHash": "976572bc8c0f93642e49baeca58baf6332167134"
   },
   "sophisticatedcore-1.20.1-1.3.20.1670.jar": {
     "jarName": "sophisticatedcore-1.20.1-1.3.20.1670.jar",
@@ -1889,13 +1897,13 @@
     "curseForgeHash": 165753123,
     "modrinthHash": "a6163b39827b483fb2976c916d99fce6cbf247a9"
   },
-  "ToolBelt-1.20.1-1.20.02.jar": {
-    "jarName": "ToolBelt-1.20.1-1.20.02.jar",
+  "ToolBelt-1.20.1-1.20.03.jar": {
+    "jarName": "ToolBelt-1.20.1-1.20.03.jar",
     "modId": "toolbelt",
     "name": "Tool Belt",
-    "version": "1.20.02",
-    "curseForgeHash": 3460520715,
-    "modrinthHash": "3e4e2d2e3ee9486de4c6b64bcf8f25d87d55fc92"
+    "version": "1.20.03",
+    "curseForgeHash": 155110247,
+    "modrinthHash": "486038e2b0e075c48f325a7665ad0f3149f7632c"
   },
   "toomanyrecipeviewers-0.7.2+mc.20.1.jar": {
     "jarName": "toomanyrecipeviewers-0.7.2+mc.20.1.jar",
@@ -1945,13 +1953,13 @@
     "curseForgeHash": 1856755993,
     "modrinthHash": "b70b0ba5f6ce45732f756c794c8994fb78b2843e"
   },
-  "voicechat-forge-1.20.1-2.6.15.jar": {
-    "jarName": "voicechat-forge-1.20.1-2.6.15.jar",
+  "voicechat-forge-1.20.1-2.6.16.jar": {
+    "jarName": "voicechat-forge-1.20.1-2.6.16.jar",
     "modId": "voicechat",
     "name": "Simple Voice Chat",
-    "version": "1.20.1-2.6.15",
-    "curseForgeHash": 330240396,
-    "modrinthHash": "f9b6f5d73f3990412a1ce3ca2299640b1b3ee849"
+    "version": "1.20.1-2.6.16",
+    "curseForgeHash": 3563607284,
+    "modrinthHash": "6c4cebc4883290dd38998189e98100829d85f452"
   },
   "wab-1.20.1-1.4.1.jar": {
     "jarName": "wab-1.20.1-1.4.1.jar",
