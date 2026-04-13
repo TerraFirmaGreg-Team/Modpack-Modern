@@ -9,7 +9,7 @@
       "text": "In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
     },
     {
-      "type": "patchouli:text",
+      "type": "patchouli:multiblock",
       "multiblock": {
         "pattern": [
           [
