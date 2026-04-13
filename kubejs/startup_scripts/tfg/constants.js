@@ -380,3 +380,9 @@ global.NEW_OVERWORLD_PLANTS = [
 	"tfg:plant/flame_vine",
 	"tfg:plant/cycad"
 ]
+
+global.TFG_BENEATH_WOOD_TYPES = [
+	"araucaria",
+	"mahoe",
+	"beech"
+]
