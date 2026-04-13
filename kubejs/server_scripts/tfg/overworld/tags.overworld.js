@@ -423,6 +423,7 @@ function registerTFGOverworldPlacedFeatures(event) {
 	event.add('tfg:in_biome/surface_decoration/ice_sheet_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/ice_sheet_shore', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/ice_sheet_tuyas', 'tfg:earth/rose_quartz/rose_quartz')
+	event.add('tfg:in_biome/surface_decoration/subglacial_lake', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/glaciated_mountains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/glacited_oceanic_mountains', 'tfg:earth/rose_quartz/rose_quartz')
 	event.add('tfg:in_biome/surface_decoration/glacited_shield_volcano', 'tfg:earth/rose_quartz/rose_quartz')
