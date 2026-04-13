@@ -1,0 +1,390 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Дикі тварини",
+	"category": "tfc:the_world",
+	"icon": "tfc:medium_raw_hide",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Світ TFC сповнений тваринного життя. Деякі тварини тут, щоб допомагати, а деякі — неймовірно небезпечні. Цей розділ присвячений диким тваринам. Інформацію про свійську худобу — тварин, які можуть давати потрібні вам ресурси, — дивіться на сторінці $(l:mechanics/animal_husbandry)Тваринництво$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Тварин можна розділити на кілька категорій: $(l:the_world/wild_animals#predators)Хижаки$(), $(l:the_world/wild_animals#prey)Здобич$() та $(l:the_world/wild_animals#aquatic)Водні тварини$().$(br2)На наступних сторінках буде детально описано кожну з цих категорій."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "хижаки",
+			"text": "$(thing)Хижаки$() — це тварини, які можуть атакувати гравця. Вони бувають або $(thing)Нічними$() (полюють лише вночі), або $(thing)Денними$() (полюють лише вдень). Хижаки можуть бути нейтральними або ворожими, залежно від того, чи вбили вони ціль нещодавно. Хижаки мають власну територію, яку захищатимуть: якщо ви відбіжите достатньо далеко, хижак припинить погоню та повернеться додому.",
+			"title": "Хижаки"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:polar_bear",
+			"scale": 0.55,
+			"name": "Білий ведмідь",
+			"text": "Білий ведмідь з'являється лише в найхолодніших регіонах, де $(l:the_world/climate#temperature)температура$() не перевищує 10°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить не менше 100 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:grizzly_bear",
+			"scale": 0.55,
+			"name": "Ведмідь грізлі",
+			"text": "Ведмідь гризлі з'являється в лісах помірного клімату з діапазоном $(l:the_world/climate#temperature)температур$() від -15 до 15°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 200 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:black_bear",
+			"scale": 0.55,
+			"name": "Чорний ведмідь",
+			"text": "Чорний ведмідь з'являється в лісах теплішого та вологішого клімату з $(l:the_world/climate#temperature)температурою$() від 5 до 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 250 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:cougar",
+			"scale": 0.6,
+			"name": "Пума",
+			"text": "Пума віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:panther",
+			"scale": 0.6,
+			"name": "Пантера",
+			"text": "Пантера віддає перевагу більшості помірних кліматичних зон із $(l:the_world/climate#temperature)температурою$() від -10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 150 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:lion",
+			"scale": 0.55,
+			"name": "Лев",
+			"text": "Лев з'являється на рівнинах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 16°C та рівнем $(l:the_world/climate#rainfall)опадів$() від 50 до 300 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:tiger",
+			"scale": 0.55,
+			"name": "Тигр",
+			"text": "Тигр з'являється в лісах із середньою $(l:the_world/climate#temperature)температурою$() щонайменше 13°C та рівнем $(l:the_world/climate#rainfall)опадів$() понад 100 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:sabertooth",
+			"scale": 0.6,
+			"name": "Шаблезубий тигр",
+			"text": "Шаблезуб з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 0°C та рівня $(l:the_world/climate#rainfall)опадів$() понад 250 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:wolf",
+			"scale": 0.7,
+			"text": "Вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче 22°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Якщо погодувати вовка достатню кількість разів, він стане прирученою $(l:mechanics/pets)Собакою$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:direwolf",
+			"scale": 0.7,
+			"text": "Лютововк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче нуля та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Вони більші за звичайних вовків і не піддаються прирученню."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:hyena",
+			"scale": 0.7,
+			"text": "Гієна з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 80 до 380 мм. Вони полюють зграями. Вони не піддаються прирученню."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crocodile",
+			"scale": 0.7,
+			"name": "Крокодил",
+			"text": "Крокодил з'являється біля річок, озер та боліт за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та будь-якого рівня $(l:the_world/climate#rainfall)опадів$(). Вони ведуть нічний спосіб життя і найбільш небезпечні у воді."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:ocelot",
+			"scale": 0.7,
+			"text": "Оцелот полює на дрібних тварин. Він з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від 15 до 30°C та рівня $(l:the_world/climate#rainfall)опадів$() від 300 до 500 мм. Якщо погодувати оцелота достатню кількість разів, він стане прирученим $(l:mechanics/pets)Котом$(). Оцелоти можуть їсти сиру рибу"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ramming_prey",
+			"text": "$(thing)Таранні$() тварини час від часу намагаються атакувати з розгону істот поблизу, зокрема й гравця. Їхні атаки потужні, але від них можна ухилитися. Вони тарантимуть частіше, якщо їх атакувати.",
+			"title": "Таранні"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:boar",
+			"scale": 0.7,
+			"name": "Вепр",
+			"text": "Дикий кабан з'являється за $(l:the_world/climate#temperature)температури$() від -5 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:moose",
+			"scale": 0.7,
+			"name": "Лось",
+			"text": "Лось з'являється в лісах за $(l:the_world/climate#temperature)температури$() від -15 до 10°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 300 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:wildebeest",
+			"scale": 0.7,
+			"name": "Гну",
+			"text": "Антилопа гну з'являється на відкритих рівнинах за будь-якої $(l:the_world/climate#temperature)температури$() вище 13°C та рівня $(l:the_world/climate#rainfall)опадів$() від 90 до 380 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:bison",
+			"scale": 0.7,
+			"name": "Бізон",
+			"text": "Бізон з'являється на відкритих рівнинах за $(l:the_world/climate#temperature)температури$() від -10 до 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 420 мм."
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "prey",
+			"text": "$(thing)Здобич$() — це тварини, які бояться гравців і хижаків. Вони вміють майстерно втікати від небезпеки, але зазвичай не можуть дати відсіч. Деякі тварини-жертви полюбляють ласувати сільськогосподарськими культурами.",
+			"title": "Здобич"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:rabbit",
+			"scale": 0.7,
+			"name": "Кролик",
+			"text": "Кролик відомий тим, що полюбляє гризти моркву та капусту. Вони повсюдно поширені у світі та змінюють колір хутра залежно від клімату. Для їхньої появи достатньо лише 15 мм $(l:the_world/climate#rainfall)опадів$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:fox",
+			"scale": 0.7,
+			"name": "Лисиця",
+			"text": "Лисиця полюбляє їсти ягоди з кущів. Її можна знайти в лісах за $(l:the_world/climate#temperature)температури$() нижче 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:deer",
+			"scale": 0.7,
+			"text": "Олень з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від -15 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() від 130 до 400 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:caribou",
+			"scale": 0.6,
+			"name": "Карибу",
+			"text": "Карибу з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче -9°C та рівня $(l:the_world/climate#rainfall)опадів$() від 110 до 500 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:gazelle",
+			"scale": 0.7,
+			"text": "Газель з'являється на відкритих рівнинах за будь-якої $(l:the_world/climate#temperature)температури$() вище 12°C та рівня $(l:the_world/climate#rainfall)опадів$() від 90 до 380 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:bongo",
+			"scale": 0.9,
+			"name": "Бонго",
+			"text": "Бонго з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 15°C та рівня $(l:the_world/climate#rainfall)опадів$() від 230 до 500 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:grouse",
+			"scale": 0.7,
+			"text": "Рябчик з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -12 до 13°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 400 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:pheasant",
+			"scale": 0.7,
+			"text": "Фазан з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від -5 до 17°C та рівня $(l:the_world/climate#rainfall)опадів$() від 100 до 300 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:turkey",
+			"scale": 0.7,
+			"text": "Індик з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() від 0 до 17°C та рівня $(l:the_world/climate#rainfall)опадів$() від 250 до 450 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:peafowl",
+			"scale": 0.6,
+			"name": "Павич",
+			"text": "Павич з'являється в лісах за будь-якої $(l:the_world/climate#temperature)температури$() вище 14°C та рівня $(l:the_world/climate#rainfall)опадів$() від 190 до 500 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:lemming",
+			"scale": 1.5,
+			"offset": -0.2,
+			"name": "Лемінг",
+			"text": "Лемінг з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -12 до -3°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:jerboa",
+			"scale": 1.2,
+			"name": "Тушканчик",
+			"text": "Тушканчик з'являється за будь-якої $(l:the_world/climate#temperature)температури$() від -3 до 25°C та рівня $(l:the_world/climate#rainfall)опадів$() нижче 160 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:mongoose",
+			"scale": 0.8,
+			"name": "Мангуст",
+			"text": "Мангуст з'являється за будь-якої $(l:the_world/climate#temperature)температури$() вище 12°C та рівня $(l:the_world/climate#rainfall)опадів$() від 160 до 500 мм."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aquatic",
+			"text": "$(thing)Водні тварини$() — це широка категорія, що охоплює кілька різних типів поведінки. Вони можуть бути $(thing)Мешканцями узбережжя$(), $(thing)Рибами$(), $(thing)Молюсками$() або $(thing)Великими водними істотами$().",
+			"title": "Водні тварини"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Прибережні тварини$() з'являються лише на морських узбережжях і проводять частину дня плаваючи, а частину — гуляючи пляжем. Це допитливі істоти, які ходитимуть за гравцем услід, проте їх неможливо приручити."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:penguin",
+			"scale": 0.7,
+			"name": "Пінгвін",
+			"text": "Пінгвін з'являється лише на найхолодніших пляжах, де $(l:the_world/climate#temperature)температура$() не перевищує -14°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить щонайменше 75 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:turtle",
+			"scale": 0.7,
+			"name": "Морська черепаха",
+			"text": "Морська черепаха полюбляє теплу воду. Вона з'являється за $(l:the_world/climate#temperature)температури$() щонайменше 21°C та рівня $(l:the_world/climate#rainfall)опадів$() не менше 250 мм."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Риби$() — це маленькі істоти, що плавають у воді. Більшість із них можна $(l:mechanics/fishing)виловити вудкою$(). Деякі віддають перевагу океанам, річкам або озерам.",
+			"title": "Риба"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:cod",
+			"scale": 0.7,
+			"name": "Тріска",
+			"text": "Тріска віддає перевагу холодним океанам із $(l:the_world/climate#temperature)температурою$() не вище 18°C. Її можна виловити вудкою."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:pufferfish",
+			"scale": 0.7,
+			"name": "Риба фугу",
+			"text": "Риба фугу мешкає в будь-якому океані з $(l:the_world/climate#temperature)температурою$() щонайменше 10°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:jellyfish",
+			"scale": 0.7,
+			"name": "Медуза",
+			"text": "Медузи мешкають у тепліших океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:tropical_fish",
+			"scale": 0.7,
+			"name": "Тропічна риба",
+			"text": "Тропічні риби віддають перевагу теплішим океанам із $(l:the_world/climate#temperature)температурою$() щонайменше 18°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:salmon",
+			"scale": 0.7,
+			"name": "Лосось",
+			"text": "Лосось з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() щонайменше -5°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:bluegill",
+			"scale": 0.7,
+			"name": "Синьозябровий окунь",
+			"text": "Синьозябровий окунь з'являється в будь-якій річці або озері з $(l:the_world/climate#temperature)температурою$() від -10°C до 26°C."
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shellfish",
+			"text": "$(thing)Молюски$() — це маленькі тварини, які мешкають на дні водойм. Їх не можна виловити вудкою, але з них випадають мушлі, які можна їсти або переробляти на $(l:mechanics/flux)флюс$(). Молюски можуть бути $(l:mechanics/fishing)наживкою$() для риби.",
+			"title": "Молюски"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:isopod",
+			"scale": 0.7,
+			"name": "Рівноніг",
+			"text": "Рівноногі з'являються в глибоководних частинах океанів із $(l:the_world/climate#temperature)температурою$() не вище 14°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:lobster",
+			"scale": 0.7,
+			"name": "Лобстер",
+			"text": "Лобстер з'являється в будь-якому океані, $(l:the_world/climate#temperature)температура$() якого не перевищує 21°C."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:crayfish",
+			"scale": 0.7,
+			"name": "Рак",
+			"text": "Річкові раки схожі на лобстерів, але з'являються в річках та озерах. Їм потрібна $(l:the_world/climate#temperature)температура$() щонайменше 5°C та рівень $(l:the_world/climate#rainfall)опадів$() не менше 125 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:horseshoe_crab",
+			"scale": 0.7,
+			"name": "Мечохвіст",
+			"text": "Мечохвости з'являються в океанах помірного клімату з $(l:the_world/climate#temperature)температурою$() від 10 до 21°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 400 мм."
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Великі водні істоти$() — це великі тварини, що мешкають у великих водоймах. Деякі з них полюють на рибу. З них випадає $(l:mechanics/lamps#tallow)ворвань$(), яку можна переробити на паливо для ламп.",
+			"title": "Великі водні істоти"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:orca",
+			"scale": 0.25,
+			"name": "Косатка",
+			"text": "Косатки мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() не вище 19°C та рівнем $(l:the_world/climate#rainfall)опадів$() щонайменше 100 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:dolphin",
+			"scale": 0.4,
+			"name": "Дельфін",
+			"text": "Дельфіни мешкають у глибоких океанах із $(l:the_world/climate#temperature)температурою$() щонайменше 10°C та рівнем $(l:the_world/climate#rainfall)опадів$() не менше 200 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfc:manatee",
+			"scale": 0.25,
+			"name": "Ламантин",
+			"text": "Ламантини мешкають у будь-яких теплих озерах із $(l:the_world/climate#temperature)температурою$() щонайменше 20°C та рівнем $(l:the_world/climate#rainfall)опадів$() не більше 300 мм."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "tfg:leopard_seal",
+			"scale": 0.5,
+			"name": "Морський леопард",
+			"text": "Морський леопард з'являється лише на найхолодніших пляжах, де $(l:the_world/climate#temperature)температура$() не перевищує -9°C, а рівень $(l:the_world/climate#rainfall)опадів$() становить щонайменше 105 мм. Вони полюють на пінгвінів, а самі стають здобиччю для косаток."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Кальмари можуть з'являтися в будь-якому глибокому океані. З них випадають $(thing)Чорнильні мішки$(), і вони випускають чорнило на будь-якого гравця, що підійде надто близько. Подейкують, що кальмари в глибоких недосліджених печерах мають дивні властивості.",
+			"title": "Кальмар"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 6
+}

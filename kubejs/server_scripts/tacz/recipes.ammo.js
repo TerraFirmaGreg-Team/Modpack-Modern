@@ -4,7 +4,7 @@ function registerTACZAmmoRecipes(event){
 	
 	//Ammo Boxes
 	event.recipes.gtceu.assembler('tfg_tacz:steel_ab')
-		.itemInputs('4x #forge:double_plates/steel', '16x #forge:screws/steel', '4x #forge:rings/rubber')
+		.itemInputs('4x #forge:double_plates/steel', '16x #forge:screws/steel', '4x #tfg:rubber_rings')
 		.itemOutputs(Item.of('tacz:ammo_box', '{Level:0}'))
 		.EUt(GTValues.VA[GTValues.LV])
 		.duration(60)

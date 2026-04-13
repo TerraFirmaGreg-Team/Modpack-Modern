@@ -105,7 +105,7 @@ const registerAlekishipsRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:alekiships/anchor')
 		.itemInputs('2x #forge:plates/wrought_iron')
-		.circuit(10)
+		.circuit(25)
 		.itemOutputs('alekiships:anchor')
 		.duration(75)
 		.EUt(4)
