@@ -109,6 +109,7 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
 	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
 
+	// Booster
 	event.remove({ id: "gtceu:large_boiler/gtceu_creosote" })
 	event.remove({ id: "gtceu:large_boiler/wood_gas" })
 
@@ -145,11 +146,6 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:the_nether')
 
 	// Same stats as fish oil
-	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
-		.inputFluids(Fluid.of('tfc:olive_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
-		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 160))

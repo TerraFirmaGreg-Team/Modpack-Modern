@@ -55,6 +55,18 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
+
+	event.add('minecraft:flowers', 'tfg:plant/azalea')
+	event.add('minecraft:flowers', 'tfg:plant/buttercup')
+	event.add('minecraft:flowers', 'tfg:plant/cornflower')
+	event.add('minecraft:flowers', 'tfg:plant/edelweiss')
+	event.add('minecraft:flowers', 'tfg:plant/mountain_hullwort')
+	event.add('minecraft:flowers', 'tfg:plant/palash')
+	event.add('minecraft:flowers', 'tfg:plant/penwortel')
+	event.add('minecraft:flowers', 'tfg:plant/qantu')
+	event.add('minecraft:flowers', 'tfg:plant/ramirezella')
+	event.add('minecraft:flowers', 'tfg:plant/ramunda')
+	event.add('minecraft:flowers', 'tfg:plant/yellow_saxifrage')
 }
 
 function registerTFGOverworldBlockTags(event) {
@@ -509,7 +521,13 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
 	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
-	event.add('tfc:deals_piercing_damage', 'minecraft:trident')
+	event.add('tfc:deals_crushing_damage', 'minecraft:slime')
+
+	event.add('tfc:zombies', 'minecraft:drowned')
+	event.add('tfc:zombies', 'minecraft:zombified_piglin')
+
+	event.add('tfg:slimes', 'minecraft:slime')
+	event.add('tfg:slimes', 'minecraft:magma_cube')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
@@ -517,10 +535,14 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
+	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
+
 	event.add('tfc:hunted_by_ocean_predators', 'tfg:leopard_seal')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:penguin')
 	event.add('tfc:hunted_by_ocean_predators', 'tfc:turtle')
+
 	event.add('tfc:land_prey', 'tfg:leopard_seal')
+
 	event.add('tfc:hunted_by_dogs', 'tfg:jerboa')
 	event.add('tfc:hunted_by_dogs', 'tfg:lemming')
 	event.add('tfc:hunted_by_dogs', 'tfg:mongoose')
