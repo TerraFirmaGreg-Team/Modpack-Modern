@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Contents",
+      "title": "Contenu",
       "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
     },
     {

@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Contenu",
 			"text": "$(li)$(l:tfc:tfg_tips/space_crops#amber_root)Amber Root$()$(li)$(l:tfc:tfg_tips/space_crops#blossom_berry)Blossom Berry$()$(li)$(l:tfc:tfg_tips/space_crops#bolux_mushroom)Bolux Mushroom$()$(li)$(l:tfc:tfg_tips/space_crops#bulbkin)Bulbkin$()$(li)$(l:tfc:tfg_tips/space_crops#chalmie_mushroom)Chalmie Mushroom$()$(li)$(l:tfc:tfg_tips/space_crops#chorus_fruit)Chorus Fruit$()$(li)$(l:tfc:tfg_tips/space_crops#nox_berry)Nox Berry$()"
 		},
 		{
