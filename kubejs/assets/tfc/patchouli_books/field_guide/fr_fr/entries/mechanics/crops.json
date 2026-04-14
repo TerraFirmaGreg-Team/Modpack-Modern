@@ -1,46 +1,46 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "Cultures",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Crops are a source of food and some other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$(). Seeds are also useful as $(l:mechanics/fishing)bait$()."
+			"text": "Les cultures sont une source de nourriture et autres matériaux. Bien que chaque culture soit différente d'une autre, elles partagent des principes similaires. Afin de commencer à cultiver, vous aurez besoin de $(thing)Graines$(), qui s'obtiennent en recherchant des $(l:the_world/wild_crops)Cultures sauvages$() puis en les cassant.$(br2)Vos graines obtenues, vous aurez besoin d'une $(thing)Houe$(). Les graines sont aussi utiles en tant qu'$(l:mechanics/fishing)appât$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
+			"text": "En plus d'en trouver dans des cultures sauvages, les graines peuvent aussi venir de cultures existantes. Quand une culture mature meurt - à cause du temps, ou en la laissant pourrir - elle se transformera en graine, permettant d'obtenir plus de graines qui pourront être utilisé pour faire pousser encore plus de cultures à la prochaine saison."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+			"title": "Contenu",
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Avoine$()$(li)$(l:tfc:mechanics/crops#onion)Oignon$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Pomme de terre$()$(li)$(l:tfc:mechanics/crops#pumpkin)Citrouille$()$(li)$(l:tfc:mechanics/crops#radish)Radis$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Poivron rouge$()$(li)$(l:tfc:mechanics/crops#rice)Riz$()$(li)$(l:tfc:mechanics/crops#rye)Seigle$()$(li)$(l:tfc:mechanics/crops#soybean)Soja$()$(li)$(l:tfc:mechanics/crops#squash)Courge$()$(li)$(l:tfc:mechanics/crops#sugarcane)Canne à sucre$()$(li)$(l:tfc:mechanics/crops#sunflower)Tournesol$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomate$()$(li)$(l:tfc:mechanics/crops#wheat)Blé$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Poivron jaune$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			],
-			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above."
+			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/stone/hoe_sedimentary",
-			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$()."
+			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)Les houes fonctionnent comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$().  Elle peuvent auss être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"text": "Toutes les cultures doivent être plantées sur de la terre labourée pour pousser. Certaines cultures ont des exigences supplémentaires comme être submergées ou avoir besoin d'un tuteur.$(br2)Bien que les cultures n'aient pas besoin de $(thing)nutriments$() pour pousser, ceux-ci aident grandement. Il y a tois nutriments : l'$(b)Azote$(), le $(6)Phosphore$(), et le $(d)Potassium$(). Chaque culture possède un nutriment favori.",
+			"title": "Faire pousser vos cultures"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br2)The next several pages list all the crops present in TFC"
+			"text": "Consommer son nutriment préféré pousse une culture à grandir plus vite et à avoir un meilleur rendement lors de la récolte. Cela signifie que les cultures qui ont consommé plus de nutriments donnent plus de nourritures quand elles sont cassées ! Consommer un nutriment remplit également légèrement les autres nutriments autour de lui.$(br2)Les prochaines pages recensent toutes les cultures présentes dans TFC."
 		},
 		{
 			"type": "patchouli:text",
