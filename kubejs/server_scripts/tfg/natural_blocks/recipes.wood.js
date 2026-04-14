@@ -33,7 +33,7 @@ function registerTFGWoodenRecipes(event) {
          * @param {string} log_wood -ID for the log wood.
          * @param {string} stripped_wood -ID for the stripped wood.
          */
-        function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence,
+        function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, log_fence,
             fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest, 
             loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel, 
             stomping_barrel, barrel_press, wine_shelf) {
@@ -188,6 +188,18 @@ function registerTFGWoodenRecipes(event) {
                         'ABA'
                     ], {
                         A: plank,
+                        B: lumber
+                    })
+                    .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
+                };
+
+            // Fence from log and lumber
+                if (fence && log && lumber && name) {
+                    event.shaped(`8x ${fence}`, [
+                        'ABA',
+                        'ABA'
+                    ], {
+                        A: log,
                         B: lumber
                     })
                     .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
@@ -644,13 +656,14 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/lumber/${wood.name}`,
                 `#tfg:${wood.name}_logs`,
                 `tfg:${wood.name}_log`,
-                `tfg:wood/lumber/${wood.name}_stripped`, 
+                `tfg:${wood.name}_log_stripped`,
                 `tfg:wood/planks/${wood.name}`, 
                 `tfg:wood/stairs/${wood.name}`, 
                 `tfg:wood/slab/${wood.name}`, 
                 `tfg:wood/door/${wood.name}`, 
                 `tfg:wood/trapdoor/${wood.name}`, 
                 `tfg:wood/fence/${wood.name}`, 
+                `tfg:wood/log_fence/${wood.name}`, 
                 `tfg:wood/fence_gate/${wood.name}`, 
                 `tfg:wood/support/${wood.name}`, 
                 `tfg:wood/pressure_plate/${wood.name}`, 
@@ -698,6 +711,7 @@ function registerTFGWoodenRecipes(event) {
                 wood.door, 
                 wood.trapdoor, 
                 wood.fence, 
+                `tfg:wood/log_fence/${wood.name}`, 
                 wood.fence_gate, 
                 wood.support, 
                 wood.pressure_plate, 
@@ -777,6 +791,7 @@ function registerTFGWoodenRecipes(event) {
                 `beneath:wood/planks/${wood}_door`, 
                 `beneath:wood/planks/${wood}_trapdoor`, 
                 null, 
+                null,
                 null, 
                 null, 
                 `beneath:wood/planks/${wood}_pressure_plate`,
@@ -845,6 +860,7 @@ function registerTFGWoodenRecipes(event) {
                 `afc:wood/planks/${wood}_stairs`,
                 `afc:wood/planks/${wood}_slab`, 
                 null, 
+                null,
                 null, 
                 null, 
                 null, 
@@ -1028,6 +1044,7 @@ function registerTFGWoodenRecipes(event) {
                 null, 
                 null, 
                 null, 
+                null,
                 null, 
                 null, 
                 `tfc:wood/planks/${wood}_pressure_plate`,
@@ -1113,6 +1130,7 @@ function registerTFGWoodenRecipes(event) {
                 'minecraft:bamboo_door',
                 'minecraft:bamboo_trapdoor',
                 'minecraft:bamboo_fence',
+                null,
                 'minecraft:bamboo_fence_gate',
                 null,
                 'minecraft:bamboo_pressure_plate',
@@ -1179,6 +1197,7 @@ function registerTFGWoodenRecipes(event) {
                 'gtceu:treated_wood_door', 
                 'gtceu:treated_wood_trapdoor', 
                 'gtceu:treated_wood_fence', 
+                null,
                 'gtceu:treated_wood_fence_gate', 
                 null, 
                 'gtceu:treated_wood_pressure_plate', 
