@@ -635,6 +635,52 @@ function registerTFGWoodenRecipes(event) {
 
     // #endregion
 
+    // #region TFG
+
+        global.TFG_NEW_WOOD_TYPES.forEach(wood => {
+            TFGWoodBuilder(
+                event, 
+                wood.name, 
+                `tfg:wood/lumber/${wood.name}`,
+                `#tfg:${wood.name}_logs`,
+                `tfg:${wood.name}_log`,
+                `tfg:wood/lumber/${wood.name}_stripped`, 
+                `tfg:wood/planks/${wood.name}`, 
+                `tfg:wood/stairs/${wood.name}`, 
+                `tfg:wood/slab/${wood.name}`, 
+                `tfg:wood/door/${wood.name}`, 
+                `tfg:wood/trapdoor/${wood.name}`, 
+                `tfg:wood/fence/${wood.name}`, 
+                `tfg:wood/fence_gate/${wood.name}`, 
+                `tfg:wood/support/${wood.name}`, 
+                `tfg:wood/pressure_plate/${wood.name}`, 
+                `tfg:wood/button/${wood.name}`, 
+                `tfg:${wood.name}_wood`, 
+                `tfg:${wood.name}_wood_stripped`,
+                `tfg:wood/tool_rack/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`,
+                `tfg:wood/bookshelf/${wood.name}`,
+                `tfg:wood/chest/${wood.name}`,
+                `tfg:wood/trapped_chest/${wood.name}`,
+                `tfg:wood/loom/${wood.name}`,
+                `tfg:wood/sluice/${wood.name}`,
+                `tfg:wood/barrel/${wood.name}`,
+                `tfg:wood/lectern/${wood.name}`,
+                `tfg:wood/scribing_table/${wood.name}`,
+                `tfg:wood/sewing_table/${wood.name}`,
+                `tfg:wood/jar_shelf/${wood.name}`,
+                `tfg:wood/food_shelf/${wood.name}`,
+                `tfg:wood/hanger/${wood.name}`,
+                `tfg:wood/jarbnet/${wood.name}`,
+                `tfg:wood/big_barrel/${wood.name}`,
+                `tfg:wood/stomping_barrel/${wood.name}`,
+                `tfg:wood/barrel_press/${wood.name}`,
+                `tfg:wood/wine_shelf/${wood.name}`
+            )
+        })
+
+    // #endregion
+
     // #region Ad Astra
 
         global.AD_ASTRA_WOOD.forEach(wood => {
