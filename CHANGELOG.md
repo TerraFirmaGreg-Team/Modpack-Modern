@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changes
+- Bloomery now only works with charcoal again @TomPlop
 ### Bug fixes
 - Fixed not being able to eat ice shavings @Pyritie
 
