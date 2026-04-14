@@ -1,0 +1,35 @@
+{
+	"name": "tfg:illagers/malay_village_living_buildings",
+	"fallback": "tfg:illagers/malay_village_living_paths",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/rumahgadang",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:malay/baseline/rumah_gadang_stilts",
+				"processors": "tfg:illagers/malay_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

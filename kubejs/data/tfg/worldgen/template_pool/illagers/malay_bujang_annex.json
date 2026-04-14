@@ -1,0 +1,15 @@
+{
+	"name": "tfg:illagers/malay_bujang_annex",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:malay/annex/wall",
+				"processors": "tfg:illagers/malay_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
