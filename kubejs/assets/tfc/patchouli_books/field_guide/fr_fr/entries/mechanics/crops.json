@@ -45,7 +45,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "barley",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 18 - 75 %$(br)$(bold)Nutriment$() : Azote$(br2)L'orge est une culture d'un bloc de haut. Des graines d'orge peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Orge$() et des $(thing)Graines d'orge$().",
 			"title": "Orge"
 		},
 		{
@@ -193,7 +193,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "oat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 35 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)L'avoine est une culture d'un bloc de haut. Des graines d'avoine peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Avoine$() et des $(thing)Graines d'avoine$().",
 			"title": "Avoine"
 		},
 		{
@@ -341,7 +341,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rye",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 85 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le seigle est une culture d'un bloc de haut. Des graines de seigle peuvent être plantées dans de la terre labourée et produisent du $(thing)Seigle$() et des $(thing)Graines de seigle$().",
 			"title": "Seigle"
 		},
 		{
@@ -489,7 +489,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "maize",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le maïs est une culture de deux blocs de haut. Des graines de maïs peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Maïs$() et des $(thing)Graines de maïs$().",
 			"title": "Maïs"
 		},
 		{
@@ -627,7 +627,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "wheat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le blé est une culture d'un bloc de haut. Des graines de blé peuvent être plantées dans de la terre labourée et produisent du $(thing)blé$() et des $(thing)Graines de blé$().",
 			"title": "Blé"
 		},
 		{
@@ -775,12 +775,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rice",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le riz est une culture d'un bloc de haut. Il doit être planté sous l'eau, dans de la terre labourée sous un seul bloc d'eau douce. Il produit du $(thing)Riz$() et des $(thing)Graines de riz$().",
 			"title": "Riz"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+			"text": "Note : Pour pousser, le bloc de riz doit être $(thing)Submergé$().",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -923,7 +923,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beet",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 18 - 85 %$(br)$(bold)Nutriment$() : Potassium$(br2)La betterave est une culture d'un bloc de haut. Des graines de betterave peuvent être plantées dans de la terre labourée et produisent des $(thing)Betteraves$() et des $(thing)Graines de betterave$().",
 			"title": "Betterave"
 		},
 		{
@@ -1037,7 +1037,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cabbage",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutriment$() : Azote$(br2)Le chou est une culture d'un bloc de haut. Des graines de chou peuvent être plantées dans de la terre labourée et produisent des $(thing)Choux$() et des $(thing)Graines de chou$().",
 			"title": "Chou"
 		},
 		{
@@ -1151,7 +1151,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "carrot",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Potassium$(br2)La carotte est une culture d'un bloc de haut. Des graines de carotte peuvent être plantées dans de la terre labourée et produisent des $(thing)carottes$() et des $(thing)Graines de carotte$().",
 			"title": "Carotte"
 		},
 		{
@@ -1248,7 +1248,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "garlic",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 75 %$(br)$(bold)Nutriment$() : Azote$(br2)L'ail est une culture d'un bloc de haut. Des graines d'ail peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Ail$() et des $(thing)Graines d'ail$().",
 			"title": "Ail"
 		},
 		{
@@ -1345,12 +1345,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "green_bean",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
-			"title": "Green Beans"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 38 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le haricots verts est une culture grimpante de deux blocs de haut. Des graines d'haricot vert peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Haricots verts$() et des $(thing)Graines d'haricot vert$().",
+			"title": "Haricots verts"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "The stick is required in order for the crop to fully grow.",
+			"text": "Un bâton est nécessaire pour que la culture pousse complètement.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1525,8 +1525,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "potato",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-			"title": "Potatoes"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$() : Potassium$(br2)La pomme de terre est une culture d'un bloc de haut. Des graines de pomme de terre peuvent être plantées dans de la terre labourée et produisent des $(thing)Pommes de terre$() et des $(thing)Graines de pomme de terre$().",
+			"title": "Pommes de terre"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1656,8 +1656,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "pumpkin",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 80 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Pumpkins are a spreading crop. Pumpkin seeds can be planted on farmland and will place up to two $(thing)Pumpkin Blocks$() on the ground next to it while it is mature. If the pumpkin blocks are harvested, and the plant matures again, it can grow more pumpkins. Pumpkins can be made into $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$().",
-			"title": "Pumpkins"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 30 - 80 %$(br)$(bold)Nutriment$() : Phosphore$(br2)La citrouille est une culture rampante. Des graines de citrouille peuvent être plantées dans de la terre labourée et produisent jusqu'à deux $(thing)Blocs de citrouilles$() au sol à côté d'elles quand elles sont matures. Si le bloc de citrouille est récolté, et que la plante mûrit à nouveau, elle produire plus de citrouilles. Les citrouilles peuvent être transformées en $(l:mechanics/lighting#jack_o_lanterns)Citrouille-lanternes$().",
+			"title": "Citrouilles"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1828,8 +1828,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "melon",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
-			"title": "Melons"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)La pastèque est une culture rampante. Des graines de pastèque peuvent être plantées dans de la terre labourée et produisent jusqu'à deux $(thing)Blocs de pastèque$() au sol à côté d'elles quand elles sont matures. Si le bloc de citrouille est récolté, et que la plante mûrit à nouveau, elle produire plus de pastèques.",
+			"title": "Pastèques"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2000,8 +2000,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "red_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Red Bell Peppers are a pickable crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
-			"title": "Red Bell Peppers"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron rouge est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"title": "Poivrons rouges"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2131,8 +2131,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "yellow_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Yellow Bell Peppers are a pickable crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
-			"title": "Yellow Bell Peppers"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron jaune est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"title": "Poivrons jaunes"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2262,8 +2262,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "onion",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 90 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Onions are a single block crop. Onion seeds can be planted on farmland and will produce $(thing)Onions$() and $(thing)Onion Seeds$() as a product.",
-			"title": "Onions"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 90 %$(br)$(bold)Nutriment$() : Azote$(br2)L'oignon est une culture d'un bloc de haut. Des graines d'oigon peuvent être plantées dans de la terre labourée et produisent des $(thing)Oignons$() et des $(thing)Graines d'oignon$().",
+			"title": "Oignon"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2393,8 +2393,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "soybean",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Soybean is a single block crop. Soybean seeds can be planted on farmland and will produce $(thing)Soybean$() and $(thing)Soybean Seeds$() as a product.",
-			"title": "Soybean"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 40 - 100 %$(br)$(bold)Nutriment$() : Azote$(br2)Le soja est une culture d'un bloc de haut. Des graines de soja peuvent être plantées dans de la terre labourée et produisent du $(thing)Soja$() et des $(thing)Graines de soja$().",
+			"title": "Soja"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2524,8 +2524,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "squash",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 23 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Squash is a single block crop. Squash seeds can be planted on farmland and will produce $(thing)Squash$() and $(thing)Squash Seeds$() as a product.",
-			"title": "Squash"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 23 - 95 %$(br)$(bold)Nutriment$() : Potassium$(br2)La courge est une culture d'un bloc de haut. Des graines de courge peuvent être plantées dans de la terre labourée et produisent des $(thing)Courges$() et des $(thing)Graines de courge$().",
+			"title": "Courge"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2672,8 +2672,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-			"title": "Sugarcane"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 40 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)La canne à sucre est une culture de deux blocs de haut. Des graines de canne à sucre peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Canne à sucre$() et des $(thing)Graines de canne à sucre$(). La canne sucre peut être utilisée pour faire du $(thing)Sucre$().",
+			"title": "Canne à sucre"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2852,12 +2852,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "tomatoes",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Tomatoes are a climbing two block tall crop. Tomato seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Tomatoes$() and $(thing)Tomato Seeds$() as a product.",
-			"title": "Tomatoes"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 30 - 95 %$(br)$(bold)Nutriment$(): Potassium$(br2)La tomate est une culture grimpante de deux blocs de haut. Des graines de tomate peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Tomates$() et des $(thing)Graines de tomate$().",
+			"title": "Tomates"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "The stick is required in order for the crop to fully grow.",
+			"text": "Un bâton est nécessaire pour que la culture pousse complètement.",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -3032,7 +3032,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "jute",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Jute is a two block tall crop. Jute seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Jute$() and $(thing)Jute Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)La jute est une culture de deux blocs de haut. Des graines de jute peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Jute$() et des $(thing)Graines de jute$().",
 			"title": "Jute"
 		},
 		{
@@ -3170,7 +3170,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "papyrus",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Papyrus is a two block tall crop. Papyrus seeds can be planted on farmland, will grow two blocks tall, and will produce $(l:mechanics/papermaking)Papyrus$() and $(thing)Papyrus Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)Le papyrus est une culture de deux blocs de haut. Des graines de papyrus peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Papyrus$() et des $(thing)Graines de papyrus$().",
 			"title": "Papyrus"
 		},
 		{
@@ -3308,8 +3308,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "tournesol",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Sunflower"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Tournesol"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3462,13 +3462,13 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Sunflowers$() grow between 5 and 40C, and 100 to 450mm of rainfall. Their seeds can also be roasted and eaten!"
+			"text": "Le $(thing)tournesol sauvage$() pousse entre 5 et 40 °C, et entre 100 et 450 mm de précipitations. Leurs graines peuvent aussi être grillées et mangées !"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "canola",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Canola"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 10 - 60 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le colza est une culture de deux blocs de haut. Des graines de colza peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Siliques de colza$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Colza"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3621,14 +3621,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Canola$(), also known as $(thing)Rapeseed$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
+			"text": "Le $(thing)Colza sauvage$(), aussi connu sous le nom de $(thing)Canola$(), pousse entre -7 et 25 °C, et entre 50 et 350 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flax",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Flax"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le lin est une culture de deux blocs de haut. Des graines de lin peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Tiges de lin$() qui peuvent être transformées en $(thing)Lin$() ou en $(thing)Toile$(). Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Lin"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3781,13 +3781,13 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+			"text": "Le $(thing)lin sauvage$() pousse entre -5 et 23 °C, et entre 175 et 475 mm de précipitations."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cucumber",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
-			"title": "Cucumber"
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le concombre est une culture de deux blocs de haut. Des graines de concombre peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut, et produisent des $(thing)Tomates$() et des $(thing)Graines de tomate$(). $(br)$(bold)Le concombre a besoin d'un bâton pour grandir complètement.$()",
+			"title": "Concombre"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3919,14 +3919,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"text": "Le $(thing)concombre sauvage$() pousse entre 15 et 40 °C, et entre 350 et 500 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
+			"title": "Radis",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutriment$(): Potassium$(br2)Les radis peuvent être mangés pour vos besoins en $(thing)Légumes$(). Si vous avez besoin d'une plante capable de résister à de faibles températures, les radis sont un bon choix."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4034,14 +4034,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"text": "Le $(thing)radis sauvage$() pousse entre -16 et 4 °C, et entre 75 et 325 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
+			"title": "Lentilles",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$(): Phosphore$(br2)Les lentilles peuvent être mangés pour vos besoins en $(thing)Légumes$(), mais il est recommandé de les cuire d'abord. Les lentilles sont un autres bon choix pour cultiver dans des climats plus froids."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"text": "Les $(thing)lentilles sauvage$() poussent entre -18 et 42 °C, et entre 250 et 425 mm de précipitations.",
 			"enable_visualize": false
 		}
 	],
