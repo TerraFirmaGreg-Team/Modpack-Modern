@@ -1,0 +1,14 @@
+{
+	"name": "tfg:mineshaft/rubble",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"element": {
+				"element_type": "minecraft:feature_pool_element",
+				"feature": "tfg:earth/cobble_rubble",
+				"projection": "rigid"
+			},
+			"weight": 2
+		}
+	]
+}
