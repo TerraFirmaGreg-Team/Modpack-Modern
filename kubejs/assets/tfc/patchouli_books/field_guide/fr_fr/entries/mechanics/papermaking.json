@@ -1,26 +1,26 @@
 {
-    "name": "Papermaking",
+    "name": "Fabrication du papier",
     "category": "tfc:mechanics",
     "icon": "tfc:unrefined_paper",
     "pages": [
       {
         "type": "patchouli:text",
-        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking#paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
+        "text": "Le $(thing)Papier$() est fabriqué à partir de tiges de $(l:mechanics/crops#papyrus)Papyrus$() traitées, à partir de $(l:mechanics/papermaking#parchment)Peaux d'animal$(), ou bien grâce à $(l:mechanics/papermaking#paperfromwood)un long procédé utilisant divers types de Bois$(). Le papier est utile pour le matériel écrit tels que les $(thing)Livres$() et les $(thing)Cartes$()."
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/papyrus_strips",
-        "text": "Papyrus must first be cut into strips with a $(thing)Knife$()"
+        "text": "Le papyrus doit d'abord être coupé en bandelette grâce à un $(thing)Couteau$()"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
         "recipe": "tfc:barrel/soaked_papyrus_strip",
-        "text": "Then, papyrus strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$()."
+        "text": "Les bandelettes de papyrus doivent ensuite être trempées dans un $(l:mechanics/barrels)Tonneau$() rempli d'$(thing)Eau$()."
       },
       {
         "type": "tfc:loom_recipe",
         "recipe": "tfc:loom/unrefined_paper",
-        "text": "Then, soaked papyrus strips are woven together in a loom to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:mechanics/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
+        "text": "Les bandelettes sont alors tissées ensemble à un métier à tisser pour faire du $(thing)Papier brut$(). Enfin, il doit être placé sur une bûche puis $(l:mechanics/leather_making#scraping)Gratté$() pour faire du $(thing)Papier$()."
       },
       {
         "type": "patchouli:crafting",
@@ -39,13 +39,13 @@
       },
       {
         "type": "patchouli:text",
-        "text": "Flip to the next page for information on papermaking via the parchment process."
+        "text": "Tournez la page pour obtenir des informations sur la fabrication de papier par la route du parchemin."
       },
       {
         "type": "patchouli:text",
         "anchor": "parchment",
-        "text": "$(thing)Parchment Paper$() starts with a scraped hide. Review the $(l:mechanics/leather_making)leather making chapter$() to learn how to make it. Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), or from $(l:mechanics/sluices)Sluicing$() or $(l:mechanics/panning)Panning$() ore deposits with Andesite, Rhyolite, or Dacite in them.",
-        "title": "Parchment"
+        "text": "Le $(thing)Parchemin$() vient à la base de peau grattée. Consultez le $(l:mechanics/leather_making)chapitre sur la production de cuir$() pour apprendre à la faire. Le parchemin a besoin de traitement par quelques items différents. Vous aurez d'abord besoin de $(thing)Pierre ponce$(). La pierre ponce se trouve par terre près de $(l:the_world/geology)Volcans$(),   en $(l:mechanics/panning)Orpaillant$() ou en utilisant un $(l:mechanics/sluices)Sluice$() sur des dépôt de minerais andésitiques, rhyolitiques ou dacitiques.",
+        "title": "Parchemin"
       },
       {
         "type": "patchouli:multiblock",
@@ -62,67 +62,67 @@
             "X": "tfc:groundcover/pumice"
           }
         },
-        "name": "Pumice",
-        "text": "A Pumice rock placed on the ground.",
+        "name": "Pierre ponce",
+        "text": "Une pierre ponce placée au sol",
         "enable_visualize": false
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/large_treated_hide",
-        "text": "Crafting pumice, a hammer, and scraped hide gives sections of $(thing)Treated Hide$()."
+        "text": "Combiner de la pierre ponce, un marteau et une peau grattée donne des sections de $(thing)Peau traitée$()."
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/parchment",
-        "text": "Treated hide, $(l:mechanics/glassworking#lime)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+        "text": "À partir de la peau traitée, de la $(l:mechanics/glassworking#lime)poudre de chaux$(), de la farine et un œuf frais vienne compléter le processus de traitement en donnent du papier utilisable."
       },
       {
         "type": "patchouli:text",
         "anchor": "paperfromwood",
-        "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper",
-        "title": "Paper from Wood"
+        "text": "La $(thing)Création de papier à partir de bois$() est une technique ancienne nécessitant le traitement de types de bois durs en feuilles de bois, qui sont ensuite décomposée en pulpe puis pressées, séchées et grattées pour faire du papier.$(br2)Notez que les bois tendres ne sont pas adaptés à la fabrication de papier.",
+        "title": "Papier à partir de bois"
       },
       {
         "type": "patchouli:text",
-        "text": "First you need to find Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+        "text": "Vous aurez d'abord besoin de trouver du Bois dur :$(br2)Acacia$(br)Frêne$(br)Tremble$(br)Bouleau$(br)Mimosa à bois noir$(br)Châtaignier$(br)Caryer$(br)Érable$(br)Chêne$(br)Palissandre$(br)Sycomore"
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stripped Hardwood",
+        "title": "Bois dur écorcé",
         "item": {
           "tag": "tfg:stripped_hardwood"
         },
-        "text": "The process begins by stripping the $(thing)Hardwood$()'s bark off to expose the internal fibers of the log, You can strip the log by placing it down and right clicking it with an axe"
+        "text": "Le procédé commence par écorcer le $(thing)Bois dur$() pour exposer les fibres internes de la bûche. Vous pouvez écorcer une bûche en la plaçant puis en cliquant droit dessus avec une hache."
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "Bandelette de bois dur",
         "recipe": "tfg:crafting/strip_hardwood",
-        "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
+        "text": "Ensuite, le bois écorcé est raboté pour obtenir des $(item)Bandelettes de bois dur$(). Cela peut se faire à l'aide d'une hache ou d'autres méthodes plus sophistiquées."
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "Bandelettes de bois dur trempées",
         "recipe": "tfg:barrel/soak_hardwood_strip",
-        "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
+        "text": "Les bandelettes sont ensuite trempées dans un $(l:mechanics/barrels)Tonneau$() d'$(thing)Eau$(), ce qui $(thing)affaiblit l'intégrité sutructurelle$() du $(thing)bois$() afin qu'il soit $(thing)décomposé$()"
       },
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
-        "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
+        "title": "Pulpe de bois dur",
+        "text": "Après cela, utilisez la $(l:mechanics/quern)Meule$() pour broyer les bandelettes trempées en $(item)Pulpe de bois dur$()"
       },
       {
         "type": "patchouli:crafting",
         "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
-        "title": "Piling up the Pulp",
-        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More sophisticated methods of crushing the strips yield higher amounts of pulp"
+        "title": "Rassembler la pulpe",
+        "text": "Bien que la meule vous donne des petits tas de pulpe, vous voudrez les combiner dans un $(thing)Établi$(). Des méthodes plus sophistiquées de broyer les bandelettes donnent plus de pulpe."
       },
       {
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
-        "title": "Breaking down the Pulp",
-        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
+        "title": "Décomposer la pulpe",
+        "text": "Avant que la pulpe ne soit transformée en papier, elle doit être décomposée en la $(thing)Bouillant avec de la Lessive caustique$() dans une $(l:firmalife/oven_appliances#vat)Cuve$() ou une $(l:mechanics/pot)Marmite$()."
       },
       {
         "type": "patchouli:empty"
@@ -130,31 +130,31 @@
       {
         "type": "patchouli:spotlight",
         "item": "tfg:soaked_unrefined_paper",
-        "title": "Pressing the Pulp",
-        "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
+        "title": "Presser la pulpe",
+        "text": "Après l'avoir décomposée en la bouillant avec de la lessive caustique, la $(item)Pulpe de bois dur traitée thermochimiquement$() peut être pressée en une feuille de $(item)Papier brut trempé$()"
       },
       {
         "type": "tfc:anvil_recipe",
         "recipe": "tfg:anvil/soaked_unrefined_paper",
-        "text": "You can utilize an $(l:mechanics/anvils)Anvil$() to beat down the pulp into a sheet"
+        "text": "Vous pouvez utiliser une $(l:mechanics/anvils)Enclume$() pour aplatir la pulpe en papier"
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stomping in Barrel",
+        "title": "Piétinement dans un tonneau",
         "item": {
           "tag": "firmalife:stomping_barrels"
         },
-        "text": "Alternatively, you can stomp the Thermochemically Treated Hardwood Pulp in a $(l:firmalife/wine)Stomping Barrel$()"
+        "text": "Alternativement, vous pouvez piétiner la Pulpe de bois dur traitée thermochimiquement dans un $(l:firmalife/wine)Tonneau à piétinement$()"
       },
       {
         "type": "tfc:drying_recipe",
         "recipe": "tfg:drying/unrefined_paper",
-        "text": "The final step is $(l:firmalife/drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+        "text": "L'étape finale est le $(l:firmalife/drying)Séchage$() du $(item)Papier brut trempé$() en $(item)Papier brut$(), qui peut enfin être gratté en $(item)Papier$(), comme vu précédemment."
       },
       {
         "type": "patchouli:text",
-        "title": "Cutting Steps...?",
-        "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(thing)EMI$() for the different approaches you can take for making paper with wood."
+        "title": "Couper des étapes...?",
+        "text": "Avancer dans l'Arbre technologique vous permettra de créer du papier à partir de bois avec moins d'étapes. Consultez l'$(thing)EMI$() pour les différentes approches possibles pour la fabrication de papier à partir de bois."
       }
     ],
     "read_by_default": true
