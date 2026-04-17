@@ -389,7 +389,8 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10
+		daysToGrow: 10,
+		location: "beneath"
 	},
 	{
 		name: "mahoe",
@@ -398,7 +399,8 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10
+		daysToGrow: 10,
+		location: "beneath"
 	},
 	{
 		name: "beech",
@@ -407,6 +409,7 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10
+		daysToGrow: 10,
+		location: "beneath"
 	}
 ]

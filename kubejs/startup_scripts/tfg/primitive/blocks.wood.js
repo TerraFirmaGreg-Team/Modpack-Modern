@@ -2,15 +2,21 @@
 
 function registerTFGNewWoodBlocks(event) {
     global.TFG_NEW_WOOD_TYPES.forEach(wood => {
-        TFGWoodRegistry(event, wood)
+        TFGWoodLeavesRegistry(event, wood)
+		TFGWoodSaplingRegistry(event, wood)
+		TFGWoodSupportRegistry(event, wood, `tfg:block/wood/stripped_log/${wood.name}`)
     })
 
-    function TFGWoodRegistry(event, wood) {
-        // Leaves, Fallen Leaves
+	global.WAB_WOOD.forEach(wood => {
+		TFGWoodLeavesRegistry(event, wood)
+		TFGWoodSaplingRegistry(event, wood)
+		TFGWoodSupportRegistry(event, wood, `wan_ancient_beasts:block/stripped_${wood.name}_log`)
+	})
+
+    function TFGWoodLeavesRegistry(event, wood) {
         event.create(`tfg:wood/leaves/${wood.name}`, 'tfc:leaves')
 		    .soundType(`${wood.leafSound}`)
 		    .tagBlock('minecraft:mineable/hoe')
-		    .mapColor(`${wood.leafColor}`)
 		    .noDynamicTinting()
 			.twig(`tfg:wood/twig/${wood.name}`)
 		    .fallenLeaves(leaves => {
@@ -30,22 +36,24 @@ function registerTFGNewWoodBlocks(event) {
 				}
 			})
 		})
+	}
 
-        // Saplings
+	function TFGWoodSaplingRegistry(event, wood) {
         event.create(`tfg:wood/sapling/${wood.name}`, 'tfc:sapling')
-            .features(`tfg:tree/${wood.name}`)
+            .features(`tfg:${wood.location}/tree/${wood.name}`)
 		    .tagBoth('minecraft:saplings')
 		    .tagBlock('tfc:can_be_snow_piled')
 		    .growthDays(wood.daysToGrow)
 		    .defaultCutout()
 		    .noCollision()
 		    .mapColor(`${wood.leafColor}`)
+	}
 
-        // Vertical Support / Horizontal Support
-        event.create(`tfg:wood/support/${wood.name}`, 'tfc:support')
-		    .textureAll(`tfg:block/wood/stripped_log/${wood.name}`)
+    function TFGWoodSupportRegistry(event, wood, stripped_log) {
+		event.create(`tfg:wood/support/${wood.name}`, 'tfc:support')
+		    .textureAll(`${stripped_log}`)
 		    .horizontal(horizontal => {
-			    horizontal.textureAll(`tfg:block/wood/stripped_log/${wood.name}`)
+			    horizontal.textureAll(`${stripped_log}`)
                 horizontal.soundType(`${wood.woodSound}`)
 			    horizontal.hardness(2)
 			    horizontal.resistance(2)
@@ -59,5 +67,5 @@ function registerTFGNewWoodBlocks(event) {
 		    .mapColor(`${wood.woodColor}`)
 		    .tagBlock('minecraft:mineable/axe')
 		    .requiresTool(false)
-    }
+	}
 }
