@@ -39,7 +39,7 @@
 				}
 			],
 			"name": "Bazylia",
-			"text": "$(thing)Dzika Bazylia$() rośnie od 12 do 25C oraz od 300 do 500 mm opadów deszczowych.",
+			"text": "$(thing)Dzika Bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -73,7 +73,7 @@
 				}
 			],
 			"name": "Wawrzyn Szlachetny",
-			"text": "$(thing)Dziki Wawrzyn Szlachetny$() rośnie między 8 a 14C i 25 do 225 mm opadów deszczowych.",
+			"text": "$(thing)Dziki Wawrzyn Szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
 			"enable_visualize": false
 		},
 		{
@@ -107,7 +107,7 @@
 				}
 			],
 			"name": "Kardamon",
-			"text": "$(thing)Dziki Kardamon$() rośnie od 18 do 30C oraz od 350 do 500 mm opadów deszczowych.",
+			"text": "$(thing)Dziki Kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
 			"enable_visualize": false
 		},
 		{
@@ -141,7 +141,7 @@
 				}
 			],
 			"name": "Kolendra",
-			"text": "$(thing)Dzika Kolendra$() rośnie od 5 do 15C, i od 0 do 150 mm opadów deszczowych.",
+			"text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150mm.",
 			"enable_visualize": false
 		},
 		{
@@ -175,7 +175,7 @@
 				}
 			],
 			"name": "Kmin Rzymski",
-			"text": "$(thing)Dziki Kmin Rzymski$() rośnie między 6 a 20C, i od 50 do 250 mm opadów deszczowych.",
+			"text": "$(thing)Dziki Kmin Rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
 			"enable_visualize": false
 		},
 		{
@@ -209,7 +209,7 @@
 				}
 			],
 			"name": "Oregano",
-			"text": "$(thing)Dzikie Oregano$() rośnie od 5 do 13C oraz od 50 do 150 mm opadów deszczowych.",
+			"text": "$(thing)Dzikie Oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150mm.",
 			"enable_visualize": false
 		},
 		{
@@ -243,7 +243,7 @@
 				}
 			],
 			"name": "Ziele Angielskie",
-			"text": "$(thing)Dzikie Ziele Angielskie$() rośnie między 15 a 30C oraz od 200 do 450 mm opadów deszczowych.",
+			"text": "$(thing)Dzikie Ziele Angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
 			"enable_visualize": false
 		},
 		{
@@ -277,7 +277,7 @@
 				}
 			],
 			"name": "Wanilia",
-			"text": "$(thing)Dzika Wanilia$() rośnie od 18 do 30C oraz od 200 do 500 mm opadów deszczowych.",
+			"text": "$(thing)Dzikie Wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 do 500mm.",
 			"enable_visualize": false
 		},
 		{
