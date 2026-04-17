@@ -427,7 +427,7 @@ const registerMinecraftRecipes = (event) => {
 		'A',
 		'B'
 	], {
-		A: 'minecraft:charcoal',
+		A: '#minecraft:coals',
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('tfg:crafting/torch_charcoal')
 
