@@ -2,6 +2,45 @@
 
 function registerTFGCoalRecipes(event) {
 
+	// Lignite -> Coal dust
+	event.shaped('gtceu:coal_dust', [
+		'A',
+		'B'
+	], {
+		A: 'tfc:ore/lignite',
+		B: '#forge:tools/mortars'
+	}).id('tfg:mortar/lignite')
+	
+	event.recipes.tfc.quern("gtceu:coal_dust", "tfc:ore/lignite")
+		.id('tfg:quern/lignite');
+
+	event.recipes.gtceu.macerator('tfg:lignite')
+		.itemInputs('tfc:ore/lignite')
+		.itemOutputs('#forge:dusts/coal')
+		.EUt(2)
+		.duration(12)
+
+	// Anthracite -> Coal dust
+
+	event.shaped('2x gtceu:coal_dust', [
+		'A',
+		'B'
+	], {
+		A: 'beneath:cursecoal',
+		B: '#forge:tools/mortars'
+	}).id('tfg:mortar/anthracite')
+	
+	event.recipes.tfc.quern("2x gtceu:coal_dust", "beneath:cursecoal")
+		.id('tfg:quern/anthracite');
+
+	event.recipes.gtceu.macerator('tfg:anthracite')
+		.itemInputs('beneath:cursecoal')
+		.itemOutputs('2x #forge:dusts/coal')
+		.EUt(2)
+		.duration(12)
+
+	// Coke oven etc
+
 	event.recipes.gtceu.coke_oven("tfg:lignite_to_coke")
 		.itemInputs('tfc:ore/lignite')
 		.itemOutputs('1x gtceu:coke_gem')

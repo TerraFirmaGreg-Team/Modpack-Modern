@@ -845,7 +845,12 @@ function removeGTCEURecipes(event) {
 	event.remove({ id : 'gtceu:shaped/titanium_large_boiler' })
 	event.remove({ id : 'gtceu:shaped/tungstensteel_large_boiler' })
 
-	
+	event.remove({ id: 'gtceu:coke_oven/coal_to_coke' })
+	event.remove({ id: 'gtceu:shapeless/hammer_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:shapeless/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:shapeless/purified_ore_to_dust_coal' })
+	event.remove({ id: 'gtceu:shapeless/refined_ore_to_dust_coal' })
+
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })
