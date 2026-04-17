@@ -1,6 +1,10 @@
 {
   "tooltip.tfclunchbox.contents": "Zawiera:",
+  "tooltip.tfclunchbox.cooling_active": "Chłodzenie: Aktywne",
+  "tooltip.tfclunchbox.cooling_inactive": "Chłodzenie: Pasywne",
+  "tooltip.tfclunchbox.cooling_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
   "tooltip.tfclunchbox.empty": "Pusty",
   "tooltip.tfclunchbox.food_trait.lunchbox_preserved": "Zakonserwowane",
-  "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:"
+  "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:",
+  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły"
 }

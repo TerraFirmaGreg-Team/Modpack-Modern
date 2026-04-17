@@ -1,10 +1,20 @@
 {
+  "cuttergroup.domum_ornamentum.gpillar": "Filary",
+  "cuttergroup.domum_ornamentum.ilight": "Światła",
+  "cuttergroup.domum_ornamentum.jbrick": "Cegły",
+  "domum_ornamentum.allbrick.column.format": "Główny materiał: %s",
+  "domum_ornamentum.door.name.format": "%s drzwi",
   "domum_ornamentum.door.type.name.full": "Pełny",
+  "domum_ornamentum.fancydoor.type.name.creeper": "Creeper",
   "domum_ornamentum.fancydoor.type.name.full": "Pełny",
+  "domum_ornamentum.fancytrapdoor.type.name.creeper": "Creeper",
   "domum_ornamentum.fancytrapdoor.type.name.full": "Pełny",
   "domum_ornamentum.light.frame.type.horizontal_light": "poziomo",
   "domum_ornamentum.panel.type.name.full": "Pełny",
+  "domum_ornamentum.pillar.column.format": "Główny materiał: %s",
   "domum_ornamentum.pillar.header": "Typ:",
   "domum_ornamentum.post.type.name.heavy": "Ciężkie",
+  "domum_ornamentum.shingle.main.format": "Główny materiał: %s",
+  "domum_ornamentum.shingle_slab.main.format": "Główny materiał: %s",
   "domum_ornamentum.trapdoor.type.name.full": "Pełny"
 }

@@ -1,5 +1,7 @@
 {
   "button.tfcgenviewer.save": "Zapisz",
+  "tfcgenviewer.preview_world.visualizer_type.rock_types": "Typy skał",
+  "tfcgenviewer.preview_world.visualizer_type.rocks": "Skały",
   "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.rock_editor.delete_tooltip": "Usuń",
   "tfcgenviewer.rock_editor.confirm": "Potwierdź",
@@ -8,6 +10,10 @@
   "rock.tfc.granite": "Granit",
   "rock.tfc.limestone": "Wapień",
   "rock.tfc.quartzite": "Kwarcyt",
+  "tfcgenviewer.rock_type.oceanic": "Oceaniczny",
+  "tfcgenviewer.rock_type.volcanic": "Wulkaniczny",
+  "tfcgenviewer.climate.rainfall": "Opady, 0 do 500 mm",
+  "tfcgenviewer.temperature.0": "-20 do -10 °C",
   "tfcgenviewer.biome_altitude.low": "Niski",
   "tfcgenviewer.biome_altitude.medium": "Średnie",
   "tfcgenviewer.biome_altitude.high": "Wysoki"
