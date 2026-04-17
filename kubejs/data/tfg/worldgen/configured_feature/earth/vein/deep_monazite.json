@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -27,11 +27,11 @@
           },
           {
             "block": "gtceu:quartzite_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:quartzite_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -42,7 +42,7 @@
         "with": [
           {
             "block": "gtceu:slate_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -50,11 +50,11 @@
           },
           {
             "block": "gtceu:slate_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:slate_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -73,11 +73,11 @@
           },
           {
             "block": "gtceu:phyllite_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:phyllite_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -88,7 +88,7 @@
         "with": [
           {
             "block": "gtceu:schist_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -96,11 +96,11 @@
           },
           {
             "block": "gtceu:schist_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:schist_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -111,7 +111,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -119,11 +119,11 @@
           },
           {
             "block": "gtceu:gneiss_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gneiss_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -134,7 +134,7 @@
         "with": [
           {
             "block": "gtceu:marble_bastnasite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_bastnasite_block",
@@ -142,11 +142,11 @@
           },
           {
             "block": "gtceu:marble_monazite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:marble_neodymium_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -159,15 +159,15 @@
       "blocks": [
         {
           "block": "gtceu:bastnasite_indicator",
-          "weight": 6
+          "weight": 12
         },
         {
           "block": "gtceu:monazite_bud_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "gtceu:neodymium_indicator",
-          "weight": 1
+          "weight": 2
         }
       ]
     }

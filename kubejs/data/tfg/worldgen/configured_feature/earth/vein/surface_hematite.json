@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_hematite_ore",
-            "weight": 15
+            "weight": 100
           },
           {
             "block": "gtceu:raw_hematite_block",
@@ -35,7 +35,7 @@
         "with": [
           {
             "block": "gtceu:basalt_hematite_ore",
-            "weight": 15
+            "weight": 100
           },
           {
             "block": "gtceu:raw_hematite_block",
@@ -50,7 +50,7 @@
         "with": [
           {
             "block": "gtceu:andesite_hematite_ore",
-            "weight": 15
+            "weight": 100
           },
           {
             "block": "gtceu:raw_hematite_block",
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:dacite_hematite_ore",
-            "weight": 15
+            "weight": 100
           },
           {
             "block": "gtceu:raw_hematite_block",
@@ -82,7 +82,7 @@
       "blocks": [
         {
           "block": "tfc:ore/small_hematite",
-          "weight": 15
+          "weight": 100
         }
       ]
     }

@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:shale_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -27,15 +27,15 @@
           },
           {
             "block": "gtceu:shale_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:shale_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:shale_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -46,7 +46,7 @@
         "with": [
           {
             "block": "gtceu:claystone_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -54,15 +54,15 @@
           },
           {
             "block": "gtceu:claystone_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:claystone_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:claystone_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -73,7 +73,7 @@
         "with": [
           {
             "block": "gtceu:limestone_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -81,15 +81,15 @@
           },
           {
             "block": "gtceu:limestone_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:limestone_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:limestone_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -100,7 +100,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -108,15 +108,15 @@
           },
           {
             "block": "gtceu:conglomerate_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:conglomerate_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:conglomerate_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -127,7 +127,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -135,15 +135,15 @@
           },
           {
             "block": "gtceu:dolomite_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:dolomite_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:dolomite_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -154,7 +154,7 @@
         "with": [
           {
             "block": "gtceu:chert_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -162,15 +162,15 @@
           },
           {
             "block": "gtceu:chert_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:chert_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:chert_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -181,7 +181,7 @@
         "with": [
           {
             "block": "gtceu:chalk_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -189,15 +189,15 @@
           },
           {
             "block": "gtceu:chalk_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:chalk_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:chalk_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -208,7 +208,7 @@
         "with": [
           {
             "block": "gtceu:tuff_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -216,15 +216,15 @@
           },
           {
             "block": "gtceu:tuff_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:tuff_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:tuff_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -235,7 +235,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -243,15 +243,15 @@
           },
           {
             "block": "gtceu:quartzite_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:quartzite_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:quartzite_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -262,7 +262,7 @@
         "with": [
           {
             "block": "gtceu:slate_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -270,15 +270,15 @@
           },
           {
             "block": "gtceu:slate_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:slate_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:slate_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -289,7 +289,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -297,15 +297,15 @@
           },
           {
             "block": "gtceu:phyllite_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:phyllite_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:phyllite_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -316,7 +316,7 @@
         "with": [
           {
             "block": "gtceu:schist_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -324,15 +324,15 @@
           },
           {
             "block": "gtceu:schist_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:schist_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:schist_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -343,7 +343,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -351,15 +351,15 @@
           },
           {
             "block": "gtceu:gneiss_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:gneiss_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:gneiss_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -370,7 +370,7 @@
         "with": [
           {
             "block": "gtceu:marble_saltpeter_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_saltpeter_block",
@@ -378,15 +378,15 @@
           },
           {
             "block": "gtceu:marble_diatomite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:marble_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:marble_alunite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       }
@@ -399,19 +399,19 @@
       "blocks": [
         {
           "block": "gtceu:saltpeter_indicator",
-          "weight": 12
+          "weight": 24
         },
         {
           "block": "gtceu:diatomite_indicator",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:electrotine_indicator",
-          "weight": 4
+          "weight": 8
         },
         {
           "block": "gtceu:alunite_indicator",
-          "weight": 4
+          "weight": 8
         }
       ]
     }

@@ -21,15 +21,19 @@
         "with": [
           {
             "block": "gtceu:granite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:granite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:granite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -40,15 +44,19 @@
         "with": [
           {
             "block": "gtceu:diorite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:diorite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:diorite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -59,15 +67,19 @@
         "with": [
           {
             "block": "gtceu:gabbro_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gabbro_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:gabbro_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -78,15 +90,19 @@
         "with": [
           {
             "block": "gtceu:rhyolite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:rhyolite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:rhyolite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -98,15 +114,19 @@
         "with": [
           {
             "block": "gtceu:basalt_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:basalt_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:basalt_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -117,15 +137,19 @@
         "with": [
           {
             "block": "gtceu:andesite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:andesite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:andesite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -136,15 +160,19 @@
         "with": [
           {
             "block": "gtceu:dacite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:dacite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:dacite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -155,15 +183,19 @@
         "with": [
           {
             "block": "gtceu:shale_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:shale_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:shale_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -174,15 +206,19 @@
         "with": [
           {
             "block": "gtceu:claystone_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:claystone_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:claystone_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -193,15 +229,19 @@
         "with": [
           {
             "block": "gtceu:limestone_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:limestone_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:limestone_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -212,15 +252,19 @@
         "with": [
           {
             "block": "gtceu:conglomerate_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:conglomerate_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:conglomerate_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -231,15 +275,19 @@
         "with": [
           {
             "block": "gtceu:dolomite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:dolomite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:dolomite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -250,15 +298,19 @@
         "with": [
           {
             "block": "gtceu:chert_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:chert_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:chert_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -269,15 +321,19 @@
         "with": [
           {
             "block": "gtceu:chalk_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:chalk_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:chalk_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -288,15 +344,19 @@
         "with": [
           {
             "block": "gtceu:tuff_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:tuff_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:tuff_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -307,15 +367,19 @@
         "with": [
           {
             "block": "gtceu:quartzite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:quartzite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:quartzite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -326,15 +390,19 @@
         "with": [
           {
             "block": "gtceu:slate_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:slate_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:slate_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -345,15 +413,19 @@
         "with": [
           {
             "block": "gtceu:phyllite_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:phyllite_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:phyllite_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -364,15 +436,19 @@
         "with": [
           {
             "block": "gtceu:schist_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:schist_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:schist_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -383,15 +459,19 @@
         "with": [
           {
             "block": "gtceu:gneiss_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gneiss_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:gneiss_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -402,15 +482,19 @@
         "with": [
           {
             "block": "gtceu:marble_salt_ore",
-            "weight": 6
+            "weight": 60
+          },
+          {
+            "block": "gtceu:raw_salt_block",
+            "weight": 1
           },
           {
             "block": "gtceu:marble_rock_salt_ore",
-            "weight": 3
+            "weight": 30
           },
           {
             "block": "gtceu:marble_borax_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       }
@@ -423,15 +507,15 @@
       "blocks": [
         {
           "block": "gtceu:salt_indicator",
-          "weight": 6
+          "weight": 60
         },
         {
           "block": "gtceu:rock_salt_indicator",
-          "weight": 3
+          "weight": 30
         },
         {
           "block": "gtceu:borax_indicator",
-          "weight": 1
+          "weight": 10
         }
       ]
     }

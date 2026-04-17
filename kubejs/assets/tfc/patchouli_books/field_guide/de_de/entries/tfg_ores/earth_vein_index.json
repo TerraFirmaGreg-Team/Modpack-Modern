@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope, Saphir...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalciumphosphat... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Basaltic Mineral Sand...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnäsit, Monazite, Neodym$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonit, Magnesit, Olivine...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismut$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismut (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismut, Native Silver...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topas, Chalkosin...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Chalkosin, Gips, Cobalt...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Coal (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierit (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope, Saphir...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalciumphosphat... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Basaltic Mineral Sand...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnäsit, Monazite, Neodym$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonit, Magnesit, Olivine...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismut$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismut (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismut, Native Silver...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Bituminous Coal$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Bituminous Coal (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topas, Chalkosin...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Chalkosin, Gips, Cobalt...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierit (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierit, Nickel...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierit, Nickel...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gips (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethit, Limonit, Hämatit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethit, Limonit, Hämatit...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Granitic Mineral Sand, Opal...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphit, Coal, Diamond (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphit, Coal, Diamond (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Bleicherde, Gips$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Halit, Sylvin (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Halit, Sylvin, Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hämatit (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hämatit, Limonit$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierit, Nickel...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierit, Nickel...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gips (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethit, Limonit, Hämatit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethit, Limonit, Hämatit...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Granitic Mineral Sand, Opal...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Graphit, Bituminous Coal... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Graphit, Bituminous Coal... (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossular, Bleicherde, Gips$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossular, Spessartine...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Halit, Sylvin (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Halit, Sylvin, Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hämatit (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hämatit, Limonit$()$()",
       "type": "patchouli:text"
     },
     {
@@ -580,6 +580,60 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Height$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate, Tuff",
+      "title": "Bituminous Coal",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bituminous Coal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate, Tuff",
+      "title": "Bituminous Coal (High)",
+      "type": "patchouli:text",
+      "anchor": "high_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Bituminous Coal",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 17%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 27$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
       "title": "Blue Topaz, Topas, Chalkosin...",
       "type": "patchouli:text",
@@ -788,60 +842,6 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Height$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Gneiss, Marble, Phyllite, Quartzite, Schist, Slate, Tuff",
-      "title": "Coal",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Coal",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Andesite, Basalt, Chalk, Chert, Claystone, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Gneiss, Granite, Limestone, Marble, Phyllite, Quartzite, Rhyolite, Schist, Shale, Slate, Tuff",
-      "title": "Coal (High)",
-      "type": "patchouli:text",
-      "anchor": "high_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Coal",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -1285,7 +1285,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 15%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)Height$(): 80$(br)$(thing)Radius$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
-      "title": "Graphit, Coal, Diamond (Deep)",
+      "title": "Graphit, Bituminous Coal... (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
     },
@@ -1311,7 +1311,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Coal",
+      "name": "Bituminous Coal",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1352,7 +1352,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 17%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)Height$(): 150$(br)$(thing)Radius$(): 18$(br)$(thing)Biomes$(): $(t:Schluchten, Vulkanische Berge, Vulkanische Ozeanische Berge, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)Volcanic$(/t)$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite",
-      "title": "Graphit, Coal, Diamond (Volcanic)",
+      "title": "Graphit, Bituminous Coal... (Volcanic)",
       "type": "patchouli:text",
       "anchor": "deep_graphite_volcanic"
     },
@@ -1378,7 +1378,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Coal",
+      "name": "Bituminous Coal",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"

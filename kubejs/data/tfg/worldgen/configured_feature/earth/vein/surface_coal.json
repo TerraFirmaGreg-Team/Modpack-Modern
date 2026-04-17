@@ -15,46 +15,78 @@
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/rhyolite"
+          "tfc:rock/raw/shale"
         ],
         "with": [
           {
-            "block": "gtceu:rhyolite_coal_ore",
-            "weight": 1
+            "block": "gtceu:shale_lignite_ore",
+            "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/basalt",
-          "minecraft:basalt"
+          "tfc:rock/raw/claystone"
         ],
         "with": [
           {
-            "block": "gtceu:basalt_coal_ore",
-            "weight": 1
+            "block": "gtceu:claystone_lignite_ore",
+            "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/andesite"
+          "tfc:rock/raw/limestone"
         ],
         "with": [
           {
-            "block": "gtceu:andesite_coal_ore",
-            "weight": 1
+            "block": "gtceu:limestone_lignite_ore",
+            "weight": 100
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/dacite"
+          "tfc:rock/raw/conglomerate"
         ],
         "with": [
           {
-            "block": "gtceu:dacite_coal_ore",
-            "weight": 1
+            "block": "gtceu:conglomerate_lignite_ore",
+            "weight": 100
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_lignite_ore",
+            "weight": 100
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_lignite_ore",
+            "weight": 100
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_lignite_ore",
+            "weight": 100
           }
         ]
       }
@@ -66,8 +98,8 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:coal_indicator",
-          "weight": 1
+          "block": "gtceu:lignite_indicator",
+          "weight": 100
         }
       ]
     }
