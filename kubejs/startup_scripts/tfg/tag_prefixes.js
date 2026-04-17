@@ -16,6 +16,28 @@ function registerTFGTagPrefixes(event) {
 
 	excludeAllGemsButNormal(GTMaterials.Coke)
 	
+	TagPrefix.rawOre.setIgnored(GTMaterials.Coal);
+	TFGTagPrefix.richRawOre.setIgnored(GTMaterials.Coal);
+	TFGTagPrefix.poorRawOre.setIgnored(GTMaterials.Coal);
+	TagPrefix.crushed.setIgnored(GTMaterials.Coal);
+	TagPrefix.crushedPurified.setIgnored(GTMaterials.Coal);
+	TagPrefix.crushedRefined.setIgnored(GTMaterials.Coal);
+	TagPrefix.dustImpure.setIgnored(GTMaterials.Coal);
+	TagPrefix.dustPure.setIgnored(GTMaterials.Coal);
+	TagPrefix.plate.setIgnored(GTMaterials.Coal);
+
+	TagPrefix.dust.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.dustSmall.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.dustTiny.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.rawOre.setIgnored(GTMaterials.get('lignite'));
+	TFGTagPrefix.richRawOre.setIgnored(GTMaterials.get('lignite'));
+	TFGTagPrefix.poorRawOre.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.crushed.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.crushedPurified.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.crushedRefined.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.dustImpure.setIgnored(GTMaterials.get('lignite'));
+	TagPrefix.dustPure.setIgnored(GTMaterials.get('lignite'));
+	
 	TagPrefix.nugget.setIgnored(GTMaterials.RawRubber);
 	TagPrefix.ingot.setIgnored(GTMaterials.RawRubber);
 	TagPrefix.plate.setIgnored(GTMaterials.RawRubber);
