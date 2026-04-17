@@ -1,0 +1,110 @@
+{
+	"name": "tfg:illagers/malay_village_living_buildings",
+	"fallback": "tfg:illagers/malay_village_living_paths",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:guaranteed",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/kitchen",
+					"processors": "tfg:illagers/malay_paths",
+					"projection": "rigid"
+				},
+				"count": 1,
+			    "min_depth": 3
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/gadang",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 1,
+				"min_depth": 2
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/bujang_basic",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 6,
+				"min_depth": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:malay/baseline/bujang_two_way",
+				"processors": "tfg:illagers/malay_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/bujang_basic1",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 6,
+				"min_depth": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:malay/baseline/bujang_two_way1",
+				"processors": "tfg:illagers/malay_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/bujang_basic2",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 6,
+				"min_depth": 2
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:malay/baseline/bujang_two_way2",
+				"processors": "tfg:illagers/malay_structures",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}
