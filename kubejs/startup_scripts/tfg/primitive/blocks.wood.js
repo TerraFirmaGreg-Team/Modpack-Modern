@@ -11,7 +11,8 @@ function registerTFGNewWoodBlocks(event) {
 		    .soundType(`${wood.leafSound}`)
 		    .tagBlock('minecraft:mineable/hoe')
 		    .mapColor(`${wood.leafColor}`)
-		    .seasonalColors(false)
+		    .noDynamicTinting()
+			.twig(`tfg:wood/twig/${wood.name}`)
 		    .fallenLeaves(leaves => {
 			    leaves.noCollision()
 			    leaves.notSolid()
