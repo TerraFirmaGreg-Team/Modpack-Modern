@@ -2,21 +2,15 @@
 
 function registerTFGCoalRecipes(event) {
 
-	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
-		.itemInputs('gtceu:poor_raw_coal')
+	event.recipes.gtceu.coke_oven("tfg:lignite_to_coke")
+		.itemInputs('tfc:ore/lignite')
 		.itemOutputs('1x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 500))
 		.duration(900)
 
 	event.recipes.gtceu.coke_oven("tfg:coal_to_coke")
-		.itemInputs('gtceu:raw_coal')
+		.itemInputs('tfc:ore/bituminous_coal')
 		.itemOutputs('2x gtceu:coke_gem')
-		.outputFluids(Fluid.of('gtceu:creosote', 1000))
-		.duration(900)
-
-	event.recipes.gtceu.coke_oven("tfg:rich_coal_to_coke")
-		.itemInputs('gtceu:rich_raw_coal')
-		.itemOutputs('4x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 2000))
 		.duration(900)
 
@@ -26,7 +20,7 @@ function registerTFGCoalRecipes(event) {
 		.duration(900)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
-		.itemInputs('3x gtceu:rich_raw_coal')
+		.itemInputs('3x tfc:ore/bituminous_coal')
 		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 3000))
 		.duration(288)
@@ -34,7 +28,7 @@ function registerTFGCoalRecipes(event) {
 		.circuit(8)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_coke_creosote")
-		.itemInputs('4x gtceu:rich_raw_coal')
+		.itemInputs('4x tfc:ore/bituminous_coal')
 		.itemOutputs('16x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 8000))
 		.duration(576)
@@ -42,7 +36,7 @@ function registerTFGCoalRecipes(event) {
 		.circuit(1)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coal_gas")
-		.itemInputs('4x gtceu:rich_raw_coal')
+		.itemInputs('4x tfc:ore/bituminous_coal')
 		.itemOutputs('16x gtceu:coke_gem')
 		.inputFluids(Fluid.of('gtceu:steam'))
 		.outputFluids(Fluid.of('gtceu:coal_gas', 4000))
@@ -51,7 +45,7 @@ function registerTFGCoalRecipes(event) {
 		.circuit(22)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coke_creosote_nitrogen")
-		.itemInputs('4x gtceu:rich_raw_coal')
+		.itemInputs('4x tfc:ore/bituminous_coal')
 		.itemOutputs('16x gtceu:coke_gem')
 		.inputFluids(Fluid.of('gtceu:nitrogen'))
 		.outputFluids(Fluid.of('gtceu:creosote', 8000))
@@ -60,7 +54,7 @@ function registerTFGCoalRecipes(event) {
 		.circuit(2)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_tar")
-		.itemInputs('6x gtceu:raw_coal')
+		.itemInputs('6x tfc:ore/lignite')
 		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 3000))
 		.duration(288)
@@ -68,16 +62,16 @@ function registerTFGCoalRecipes(event) {
 		.circuit(8)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote")
-		.itemInputs('8x gtceu:raw_coal')
-		.itemOutputs('16x gtceu:coke_gem')
+		.itemInputs('8x tfc:ore/lignite')
+		.itemOutputs('8x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 8000))
 		.duration(576)
 		.EUt(64)
 		.circuit(1)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coal_gas")
-		.itemInputs('8x gtceu:raw_coal')
-		.itemOutputs('16x gtceu:coke_gem')
+		.itemInputs('8x tfc:ore/lignite')
+		.itemOutputs('8x gtceu:coke_gem')
 		.inputFluids(Fluid.of('gtceu:steam'))
 		.outputFluids(Fluid.of('gtceu:coal_gas', 4000))
 		.duration(288)
@@ -85,8 +79,8 @@ function registerTFGCoalRecipes(event) {
 		.circuit(22)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote_nitrogen")
-		.itemInputs('8x gtceu:raw_coal')
-		.itemOutputs('16x gtceu:coke_gem')
+		.itemInputs('8x tfc:ore/lignite')
+		.itemOutputs('8x gtceu:coke_gem')
 		.inputFluids(Fluid.of('gtceu:nitrogen'))
 		.outputFluids(Fluid.of('gtceu:creosote', 8000))
 		.duration(288)

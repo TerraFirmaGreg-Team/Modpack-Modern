@@ -413,15 +413,6 @@ const registerMinecraftRecipes = (event) => {
 		B: '#tfc:can_be_lit_on_torch'
 	}).id('gtceu:shaped/torch_coal_dust')
 
-	// Из гема угля, from coal
-	event.shaped('4x tfc:dead_torch', [
-		'A',
-		'B'
-	], {
-		A: 'minecraft:coal',
-		B: '#tfc:can_be_lit_on_torch'
-	}).id('tfg:crafting/torch_coal')
-
 	// Из пыли древесного угля, from charcoal dust
 	event.shaped('4x tfc:dead_torch', [
 		'A',
@@ -451,59 +442,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region В сборщике, assembler recipes
-
-	// Из серы, from sulfur
-	event.recipes.gtceu.assembler('torch_sulfur')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:sulfur_dust')
-		.itemOutputs('2x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из фосфора, from phosphorous
-	event.recipes.gtceu.assembler('torch_phosphorus')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:phosphorus_dust')
-		.itemOutputs('6x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из гема коксаm, from coke gems
-	event.recipes.gtceu.assembler('torch_coke_gem')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_gem')
-		.itemOutputs('8x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из пыли коксаm, from coke dust
-	event.recipes.gtceu.assembler('torch_coke_dust')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_dust')
-		.itemOutputs('8x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из гема ванильного угляm, from coal
-	event.recipes.gtceu.assembler('torch_coal')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'minecraft:coal')
-		.itemOutputs('4x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из пыли ванильного угляm, from coal dust
-	event.recipes.gtceu.assembler('torch_coal_dust')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coal_dust')
-		.itemOutputs('4x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-	// Из пыли древесного угляm, from charcoal dust
-	event.recipes.gtceu.assembler('torch_charcoal_dust')
-		.itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:charcoal_dust')
-		.itemOutputs('4x tfc:dead_torch')
-		.duration(100)
-		.EUt(1)
-
-
-	//#endregion
 
 	// Мертвый факел в обычный, smelt dead torch
 	event.smelting('tfc:torch', 'tfc:dead_torch')
