@@ -346,7 +346,7 @@ function registerTFGMaterialRecipes(event) {
 		}
 
 		const oreProperty = material.getProperty(PropertyKey.ORE);
-		if (oreProperty !== null) {
+		if (oreProperty !== null && material !== GTMaterials.Coal && material != GTMaterials.get('lignite')) {
 			processSmallOre(event, material)
 			processPoorRawOre(event, material)
 			processNormalRawOre(event, material)

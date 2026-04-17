@@ -33,4 +33,5 @@ function registerTFGOresMaterialModification(event) {
 	// Change ore multipliers
 	GTMaterials.Cassiterite.getProperty(PropertyKey.ORE).setOreMultiplier(1);
 	GTMaterials.CassiteriteSand.getProperty(PropertyKey.ORE).setOreMultiplier(1);
+	GTMaterials.Coal.getProperty(PropertyKey.ORE).setOreMultiplier(1);
 }

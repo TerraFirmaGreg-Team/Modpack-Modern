@@ -40,7 +40,7 @@
 					"processors": "tfg:illagers/malay_structures",
 					"projection": "rigid"
 				},
-				"limit": 6,
+				"limit": 2,
 				"min_depth": 2
 			}
 		},
@@ -63,7 +63,7 @@
 					"processors": "tfg:illagers/malay_structures",
 					"projection": "rigid"
 				},
-				"limit": 6,
+				"limit": 2,
 				"min_depth": 2
 			}
 		},
@@ -86,7 +86,7 @@
 					"processors": "tfg:illagers/malay_structures",
 					"projection": "rigid"
 				},
-				"limit": 6,
+				"limit": 2,
 				"min_depth": 2
 			}
 		},

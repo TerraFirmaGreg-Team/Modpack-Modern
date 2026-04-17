@@ -5,6 +5,8 @@
  * @param {Internal.RecipesEventJS} event 
  */
 function registerTFGTemporaryRecipes(event) {
+
+	event.shapeless('tfc:ore/bituminous_coal', 'minecraft:coal')
 	
 	// Temporary recipes until gregtech fixes its pipe problem with .setIgnored()
 	const broken_pipes = [
