@@ -100,6 +100,19 @@
 			}
 		},
 		{
+			"weight": 100,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "tfg:malay/baseline/sloop",
+					"processors": "tfg:illagers/malay_structures",
+					"projection": "rigid"
+				},
+				"limit": 1
+			}
+		},
+		{
 			"weight": 10,
 			"element": {
 				"projection": "rigid",
