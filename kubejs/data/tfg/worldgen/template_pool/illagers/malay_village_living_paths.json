@@ -7,7 +7,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/straight_short",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -16,7 +16,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/straight_medium",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -25,7 +25,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/straight_long",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -34,7 +34,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/bend_left",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -43,7 +43,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/bend_right",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -52,7 +52,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/t_junction",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -61,7 +61,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/fork_left",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -70,7 +70,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/fork_right",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -79,7 +79,7 @@
 			"element": {
 				"location": "tfg:malay/baseline/cross",
 				"processors": "tfg:illagers/malay_paths",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
