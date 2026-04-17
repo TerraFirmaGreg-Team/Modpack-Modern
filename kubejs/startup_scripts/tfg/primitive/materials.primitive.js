@@ -90,6 +90,19 @@ function registerTFGPrimitiveMaterials(event) {
 		.formula("Al2Si2O5(OH)4")
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	// Ores need to be in the default namespace
+	event.create('lignite')
+		.components('1x carbon')
+		.color(0x362D21)
+		.secondaryColor(0x15171A)
+		.iconSet(GTMaterialIconSet.LIGNITE)
+		.ore()
+		.flags(
+			GTMaterialFlags.FLAMMABLE,
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+		)
+
 	// Film developing
 	event.create('tfg:pyrogallol')
 		.dust()

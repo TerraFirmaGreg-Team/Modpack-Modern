@@ -39,14 +39,12 @@ const registerCreateItemTags = (event) => {
 
 	event.removeAll('create:crushed_raw_materials')
 
-	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
+	event.add('create:blaze_burner_fuel/regular', "tfc:ore/lignite")
+	event.add('create:blaze_burner_fuel/regular', "tfc:ore/bituminous_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:charcoal_dust")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:raw_coal")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:rich_raw_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:flawed_coal_gem")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:chipped_coal_gem")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:pure_coal_dust")
 
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")

@@ -62,6 +62,7 @@ function registerTFGBoilerRecipes(event) {
 	removeBoilerRecipe('gtceu_tiny_charcoal_dust')
 	removeBoilerRecipe('gtceu_pure_coal_dust')
 	removeBoilerRecipe('gtceu_impure_coal_dust')
+	removeBoilerRecipe('gtceu_coal_lens')
 	removeBoilerRecipe('createaddition_biomass_pellet')
 	removeBoilerRecipe('createaddition_biomass_pellet_block')
 
@@ -93,6 +94,18 @@ function registerTFGBoilerRecipes(event) {
 	event.recipes.gtceu.steam_boiler('tfg:flora_pellets')
 		.itemInputs('tfg:flora_pellets')
 		.duration(1200)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.steam_boiler('tfg:lignite')
+		.itemInputs('tfc:ore/lignite')
+		.duration(60 * 20) // same as charcoal
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+		
+	event.recipes.gtceu.steam_boiler('tfg:bituminous_coal')
+		.itemInputs('tfc:ore/bituminous_coal')
+		.duration(80 * 20) // same as vanilla coal used to be
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 

@@ -83,6 +83,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:mud_brick_slab',
 
     // Руды
+    'minecraft:coal',
     'minecraft:coal_ore', 
     'minecraft:iron_ore', 
     'minecraft:copper_ore', 
