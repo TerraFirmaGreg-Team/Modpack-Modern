@@ -41,5 +41,12 @@
                 "top": -2
             }
         }
+    },
+    "cy.jdkdigital.tfcgroomer.inventory.GroomingStationScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": 54
+            }
+        }
     }
 }
