@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphit, Diamond, Coal$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Grossular, Spessartine...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Hematit, Smaragd, Thorianite...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Kassiterit, Zinn, Salpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Lasurit, Sodalith, Kalzit$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lazurite, Sodalite, Lapis...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Magnetit, Spessartin, Chromit...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Quartz, Nether Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Red Garnet, Yellow Garnet...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Rubin, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Salpeter, Halit, Lepidolith...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Saphir, Hämatit, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Schwarzerz, Native Copper...$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphit, Diamond...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Grossular, Spessartine...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Hematit, Smaragd, Thorianite...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Kassiterit, Zinn, Salpeter$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Lasurit, Sodalith, Kalzit$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lazurite, Sodalite, Lapis...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Magnetit, Spessartin, Chromit...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Quartz, Nether Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Red Garnet, Yellow Garnet...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Rubin, Zinnober$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Salpeter, Halit, Lepidolith...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Saphir, Hämatit, Pyrit...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Schwarzerz, Native Copper...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1233,7 +1233,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)Height$(): 60$(br)$(thing)Radius$(): 12$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Gneiss, Granite, Pyroxenite, Schist",
-      "title": "Graphit, Diamond, Coal",
+      "title": "Graphit, Diamond...",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
     },
@@ -1279,7 +1279,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Coal",
+      "name": "Bituminous Coal",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"

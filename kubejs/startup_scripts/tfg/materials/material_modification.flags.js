@@ -211,4 +211,5 @@ function registerTFGFlagsMaterialModification(event) {
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
+	GTMaterials.Coal.addFlags(NO_ORE_PROCESSING_TAB)
 }

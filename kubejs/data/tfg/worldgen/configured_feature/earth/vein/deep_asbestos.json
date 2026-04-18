@@ -19,20 +19,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:quartzite_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:quartzite_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:quartzite_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -42,20 +42,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:slate_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:slate_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:slate_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -65,20 +65,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:phyllite_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:phyllite_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:phyllite_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -88,20 +88,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:schist_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:schist_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:schist_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -111,20 +111,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:gneiss_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:gneiss_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gneiss_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -134,20 +134,20 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_cassiterite_sand_ore",
-            "weight": 5
+            "block": "gtceu:marble_cassiterite_ore",
+            "weight": 10
           },
           {
-            "block": "gtceu:raw_cassiterite_sand_block",
+            "block": "gtceu:raw_cassiterite_block",
             "weight": 1
           },
           {
             "block": "gtceu:marble_asbestos_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:marble_diatomite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -160,15 +160,15 @@
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:asbestos_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "gtceu:diatomite_indicator",
-          "weight": 1
+          "weight": 2
         }
       ]
     }

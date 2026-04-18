@@ -20,7 +20,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:shale_cassiterite_sand_ore",
+            "block": "gtceu:shale_cassiterite_ore",
             "weight": 6
           },
           {
@@ -35,7 +35,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:claystone_cassiterite_sand_ore",
+            "block": "gtceu:claystone_cassiterite_ore",
             "weight": 6
           },
           {
@@ -50,7 +50,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:limestone_cassiterite_sand_ore",
+            "block": "gtceu:limestone_cassiterite_ore",
             "weight": 6
           },
           {
@@ -65,7 +65,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_cassiterite_sand_ore",
+            "block": "gtceu:conglomerate_cassiterite_ore",
             "weight": 6
           },
           {
@@ -80,7 +80,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_cassiterite_sand_ore",
+            "block": "gtceu:dolomite_cassiterite_ore",
             "weight": 6
           },
           {
@@ -95,7 +95,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:chert_cassiterite_sand_ore",
+            "block": "gtceu:chert_cassiterite_ore",
             "weight": 6
           },
           {
@@ -110,7 +110,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:chalk_cassiterite_sand_ore",
+            "block": "gtceu:chalk_cassiterite_ore",
             "weight": 6
           },
           {
@@ -125,7 +125,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_cassiterite_sand_ore",
+            "block": "gtceu:tuff_cassiterite_ore",
             "weight": 6
           },
           {
@@ -140,7 +140,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_cassiterite_sand_ore",
+            "block": "gtceu:quartzite_cassiterite_ore",
             "weight": 6
           },
           {
@@ -155,7 +155,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_cassiterite_sand_ore",
+            "block": "gtceu:slate_cassiterite_ore",
             "weight": 6
           },
           {
@@ -170,7 +170,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_cassiterite_sand_ore",
+            "block": "gtceu:phyllite_cassiterite_ore",
             "weight": 6
           },
           {
@@ -185,7 +185,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_cassiterite_sand_ore",
+            "block": "gtceu:schist_cassiterite_ore",
             "weight": 6
           },
           {
@@ -200,7 +200,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_cassiterite_sand_ore",
+            "block": "gtceu:gneiss_cassiterite_ore",
             "weight": 6
           },
           {
@@ -215,7 +215,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_cassiterite_sand_ore",
+            "block": "gtceu:marble_cassiterite_ore",
             "weight": 6
           },
           {

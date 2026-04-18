@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:granite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -34,7 +34,7 @@
         "with": [
           {
             "block": "gtceu:diorite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -49,7 +49,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -64,7 +64,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -80,7 +80,7 @@
         "with": [
           {
             "block": "gtceu:basalt_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -95,7 +95,7 @@
         "with": [
           {
             "block": "gtceu:andesite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -110,7 +110,7 @@
         "with": [
           {
             "block": "gtceu:dacite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -125,7 +125,7 @@
         "with": [
           {
             "block": "gtceu:shale_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -140,7 +140,7 @@
         "with": [
           {
             "block": "gtceu:claystone_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -155,7 +155,7 @@
         "with": [
           {
             "block": "gtceu:limestone_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -170,7 +170,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -185,7 +185,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -200,7 +200,7 @@
         "with": [
           {
             "block": "gtceu:chert_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -215,7 +215,7 @@
         "with": [
           {
             "block": "gtceu:chalk_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -230,7 +230,7 @@
         "with": [
           {
             "block": "gtceu:tuff_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -245,7 +245,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -260,7 +260,7 @@
         "with": [
           {
             "block": "gtceu:slate_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -275,7 +275,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -290,7 +290,7 @@
         "with": [
           {
             "block": "gtceu:schist_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -305,7 +305,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -320,7 +320,7 @@
         "with": [
           {
             "block": "gtceu:marble_gypsum_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_gypsum_block",
@@ -337,7 +337,7 @@
       "blocks": [
         {
           "block": "gtceu:gypsum_indicator",
-          "weight": 10
+          "weight": 100
         }
       ]
     }

@@ -21,15 +21,15 @@
         "with": [
           {
             "block": "gtceu:granite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:granite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:granite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -44,15 +44,15 @@
         "with": [
           {
             "block": "gtceu:diorite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:diorite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -67,15 +67,15 @@
         "with": [
           {
             "block": "gtceu:gabbro_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:gabbro_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -90,15 +90,15 @@
         "with": [
           {
             "block": "gtceu:rhyolite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:rhyolite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:rhyolite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -114,15 +114,15 @@
         "with": [
           {
             "block": "gtceu:basalt_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:basalt_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:basalt_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -137,15 +137,15 @@
         "with": [
           {
             "block": "gtceu:andesite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:andesite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:andesite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -160,15 +160,15 @@
         "with": [
           {
             "block": "gtceu:dacite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:dacite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:dacite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -183,15 +183,15 @@
         "with": [
           {
             "block": "gtceu:shale_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:shale_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:shale_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -206,15 +206,15 @@
         "with": [
           {
             "block": "gtceu:claystone_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:claystone_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:claystone_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -229,15 +229,15 @@
         "with": [
           {
             "block": "gtceu:limestone_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:limestone_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:limestone_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -252,15 +252,15 @@
         "with": [
           {
             "block": "gtceu:conglomerate_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:conglomerate_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:conglomerate_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -275,15 +275,15 @@
         "with": [
           {
             "block": "gtceu:dolomite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:dolomite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:dolomite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -298,15 +298,15 @@
         "with": [
           {
             "block": "gtceu:chert_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:chert_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:chert_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -321,15 +321,15 @@
         "with": [
           {
             "block": "gtceu:chalk_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:chalk_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:chalk_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -344,15 +344,15 @@
         "with": [
           {
             "block": "gtceu:tuff_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:tuff_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:tuff_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -367,15 +367,15 @@
         "with": [
           {
             "block": "gtceu:quartzite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:quartzite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:quartzite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -390,15 +390,15 @@
         "with": [
           {
             "block": "gtceu:slate_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:slate_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:slate_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -413,15 +413,15 @@
         "with": [
           {
             "block": "gtceu:phyllite_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:phyllite_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:phyllite_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -436,15 +436,15 @@
         "with": [
           {
             "block": "gtceu:schist_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:schist_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:schist_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -459,15 +459,15 @@
         "with": [
           {
             "block": "gtceu:gneiss_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:gneiss_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:gneiss_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -482,15 +482,15 @@
         "with": [
           {
             "block": "gtceu:marble_sulfur_ore",
-            "weight": 4
+            "weight": 20
           },
           {
             "block": "gtceu:marble_stibnite_ore",
-            "weight": 3
+            "weight": 15
           },
           {
             "block": "gtceu:marble_bornite_ore",
-            "weight": 9
+            "weight": 45
           },
           {
             "block": "gtceu:raw_bornite_block",
@@ -507,15 +507,15 @@
       "blocks": [
         {
           "block": "gtceu:sulfur_indicator",
-          "weight": 4
+          "weight": 20
         },
         {
           "block": "gtceu:stibnite_indicator",
-          "weight": 3
+          "weight": 15
         },
         {
           "block": "gtceu:bornite_indicator",
-          "weight": 9
+          "weight": 45
         }
       ]
     }

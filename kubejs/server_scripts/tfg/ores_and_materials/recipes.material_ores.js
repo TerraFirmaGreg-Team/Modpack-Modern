@@ -329,7 +329,7 @@ function processCrushedOre(event, material) {
 		
 		event.recipes.greate.splashing(
 			[pureOreItem, Item.of(byproductItem).withChance(0.14), 'gtceu:stone_dust'],
-			[crushedOreItem, Fluid.of('minecraft:water', 500)]
+			[crushedOreItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)
 		.circuitNumber(1)
@@ -337,7 +337,7 @@ function processCrushedOre(event, material) {
 
 		event.recipes.greate.splashing(
 			[pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'],
-			[crushedOreItem, Fluid.of('gtceu:distilled_water', 50)]
+			[crushedOreItem, Fluid.of('gtceu:distilled_water', 25)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -459,7 +459,7 @@ function processImpureDust(event, material) {
 		// Bulk washing
 		event.recipes.greate.splashing(
 			[dustItem],
-			[impureDustItem, Fluid.of('minecraft:water', 500)]
+			[impureDustItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)		
 		.circuitNumber(1)
@@ -467,7 +467,7 @@ function processImpureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[impureDustItem, Fluid.of('gtceu:distilled_water', 50)]
+			[impureDustItem, Fluid.of('gtceu:distilled_water', 25)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -524,7 +524,7 @@ function processPureDust(event, material) {
 		// Bulk washing
 		event.recipes.greate.splashing(
 			[dustItem],
-			[pureDustItem, Fluid.of('minecraft:water', 500)]
+			[pureDustItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)
 		.circuitNumber(1)
@@ -532,7 +532,7 @@ function processPureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[pureDustItem, Fluid.of('gtceu:distilled_water', 50)]
+			[pureDustItem, Fluid.of('gtceu:distilled_water', 25)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)

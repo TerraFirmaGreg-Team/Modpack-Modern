@@ -321,7 +321,7 @@ function registerTFCMetalsRecipes(event) {
 				],
 				[
 					`1x tfc:deposit/${ore}/${stone}`,
-					Fluid.of('minecraft:water', 500)
+					Fluid.of('minecraft:water', 250)
 				])
 				.recipeTier(1)
 				.circuitNumber(1)
@@ -334,7 +334,7 @@ function registerTFCMetalsRecipes(event) {
 				],
 				[
 					`1x tfc:deposit/${ore}/${stone}`,
-					Fluid.of('gtceu:distilled_water', 50)
+					Fluid.of('gtceu:distilled_water', 25)
 				])
 				.recipeTier(1)
 				.circuitNumber(2)

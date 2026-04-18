@@ -20,7 +20,7 @@
         "with": [
           {
             "block": "gtceu:shale_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -28,7 +28,7 @@
           },
           {
             "block": "gtceu:shale_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -39,7 +39,7 @@
         "with": [
           {
             "block": "gtceu:claystone_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -47,7 +47,7 @@
           },
           {
             "block": "gtceu:claystone_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -58,7 +58,7 @@
         "with": [
           {
             "block": "gtceu:limestone_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -66,7 +66,7 @@
           },
           {
             "block": "gtceu:limestone_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -77,7 +77,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -85,7 +85,7 @@
           },
           {
             "block": "gtceu:conglomerate_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -96,7 +96,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -104,7 +104,7 @@
           },
           {
             "block": "gtceu:dolomite_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -115,7 +115,7 @@
         "with": [
           {
             "block": "gtceu:chert_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -123,7 +123,7 @@
           },
           {
             "block": "gtceu:chert_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -134,7 +134,7 @@
         "with": [
           {
             "block": "gtceu:chalk_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -142,7 +142,7 @@
           },
           {
             "block": "gtceu:chalk_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -153,7 +153,7 @@
         "with": [
           {
             "block": "gtceu:tuff_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -161,7 +161,7 @@
           },
           {
             "block": "gtceu:tuff_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -172,7 +172,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -180,7 +180,7 @@
           },
           {
             "block": "gtceu:quartzite_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -191,7 +191,7 @@
         "with": [
           {
             "block": "gtceu:slate_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -199,7 +199,7 @@
           },
           {
             "block": "gtceu:slate_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -210,7 +210,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -218,7 +218,7 @@
           },
           {
             "block": "gtceu:phyllite_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -229,7 +229,7 @@
         "with": [
           {
             "block": "gtceu:schist_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -237,7 +237,7 @@
           },
           {
             "block": "gtceu:schist_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -248,7 +248,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -256,7 +256,7 @@
           },
           {
             "block": "gtceu:gneiss_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       },
@@ -267,7 +267,7 @@
         "with": [
           {
             "block": "gtceu:marble_spodumene_ore",
-            "weight": 15
+            "weight": 75
           },
           {
             "block": "gtceu:raw_spodumene_block",
@@ -275,7 +275,7 @@
           },
           {
             "block": "gtceu:marble_rock_salt_ore",
-            "weight": 5
+            "weight": 25
           }
         ]
       }
@@ -288,11 +288,11 @@
       "blocks": [
         {
           "block": "gtceu:spodumene_indicator",
-          "weight": 15
+          "weight": 75
         },
         {
           "block": "gtceu:rock_salt_indicator",
-          "weight": 5
+          "weight": 25
         }
       ]
     }

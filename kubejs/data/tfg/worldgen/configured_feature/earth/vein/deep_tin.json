@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -27,7 +27,7 @@
           },
           {
             "block": "gtceu:quartzite_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -38,7 +38,7 @@
         "with": [
           {
             "block": "gtceu:slate_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -46,7 +46,7 @@
           },
           {
             "block": "gtceu:slate_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -57,7 +57,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -65,7 +65,7 @@
           },
           {
             "block": "gtceu:phyllite_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -76,7 +76,7 @@
         "with": [
           {
             "block": "gtceu:schist_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -84,7 +84,7 @@
           },
           {
             "block": "gtceu:schist_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -95,7 +95,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -103,7 +103,7 @@
           },
           {
             "block": "gtceu:gneiss_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -114,7 +114,7 @@
         "with": [
           {
             "block": "gtceu:marble_cassiterite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_cassiterite_block",
@@ -122,7 +122,7 @@
           },
           {
             "block": "gtceu:marble_tin_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -135,11 +135,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 7
+          "weight": 14
         },
         {
           "block": "tfc:ore/small_cassiterite",
-          "weight": 1
+          "weight": 2
         }
       ]
     }

@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:shale_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -27,11 +27,11 @@
           },
           {
             "block": "gtceu:shale_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:shale_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -42,7 +42,7 @@
         "with": [
           {
             "block": "gtceu:claystone_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -50,11 +50,11 @@
           },
           {
             "block": "gtceu:claystone_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:claystone_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:limestone_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -73,11 +73,11 @@
           },
           {
             "block": "gtceu:limestone_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:limestone_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -88,7 +88,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -96,11 +96,11 @@
           },
           {
             "block": "gtceu:conglomerate_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:conglomerate_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -111,7 +111,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -119,11 +119,11 @@
           },
           {
             "block": "gtceu:dolomite_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:dolomite_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -134,7 +134,7 @@
         "with": [
           {
             "block": "gtceu:chert_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -142,11 +142,11 @@
           },
           {
             "block": "gtceu:chert_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:chert_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -157,7 +157,7 @@
         "with": [
           {
             "block": "gtceu:chalk_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -165,11 +165,11 @@
           },
           {
             "block": "gtceu:chalk_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:chalk_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -180,7 +180,7 @@
         "with": [
           {
             "block": "gtceu:tuff_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -188,11 +188,11 @@
           },
           {
             "block": "gtceu:tuff_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:tuff_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -203,7 +203,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -211,11 +211,11 @@
           },
           {
             "block": "gtceu:quartzite_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:quartzite_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -226,7 +226,7 @@
         "with": [
           {
             "block": "gtceu:slate_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -234,11 +234,11 @@
           },
           {
             "block": "gtceu:slate_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:slate_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -249,7 +249,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -257,11 +257,11 @@
           },
           {
             "block": "gtceu:phyllite_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:phyllite_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -272,7 +272,7 @@
         "with": [
           {
             "block": "gtceu:schist_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -280,11 +280,11 @@
           },
           {
             "block": "gtceu:schist_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:schist_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -295,7 +295,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -303,11 +303,11 @@
           },
           {
             "block": "gtceu:gneiss_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:gneiss_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -318,7 +318,7 @@
         "with": [
           {
             "block": "gtceu:marble_goethite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_goethite_block",
@@ -326,11 +326,11 @@
           },
           {
             "block": "gtceu:marble_yellow_limonite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:marble_hematite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       }
@@ -343,15 +343,15 @@
       "blocks": [
         {
           "block": "gtceu:goethite_indicator",
-          "weight": 6
+          "weight": 12
         },
         {
           "block": "tfc:ore/small_limonite",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "tfc:ore/small_hematite",
-          "weight": 3
+          "weight": 6
         }
       ]
     }
