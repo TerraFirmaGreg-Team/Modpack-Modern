@@ -100,7 +100,8 @@ function registerTFGPrimitiveMaterials(event) {
 		.flags(
 			GTMaterialFlags.FLAMMABLE,
 			GTMaterialFlags.DISABLE_DECOMPOSITION,
-			GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES,
+			GTMaterialFlags.NO_ORE_PROCESSING_TAB
 		)
 
 	// Film developing
