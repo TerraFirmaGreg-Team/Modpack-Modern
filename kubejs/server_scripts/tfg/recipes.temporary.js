@@ -7,6 +7,11 @@
 function registerTFGTemporaryRecipes(event) {
 
 	event.shapeless('tfc:ore/bituminous_coal', 'minecraft:coal')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:crushed_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:purified_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:refined_coal_ore')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:impure_coal_dust')
+	event.shapeless('tfc:ore/bituminous_coal', 'gtceu:pure_coal_dust')
 	
 	// Temporary recipes until gregtech fixes its pipe problem with .setIgnored()
 	const broken_pipes = [
