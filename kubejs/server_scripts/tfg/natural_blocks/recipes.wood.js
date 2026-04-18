@@ -193,16 +193,16 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
                 };
 
-            // Fence from log and lumber
-                if (fence && log && lumber && name) {
-                    event.shaped(`8x ${fence}`, [
+            // Log Fence from log and lumber
+                if (log_fence && log && lumber && name) {
+                    event.shaped(`8x ${log_fence}`, [
                         'ABA',
                         'ABA'
                     ], {
                         A: log,
                         B: lumber
                     })
-                    .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
+                    .id(`tfg:shaped/${name}_log_fence_from_log_and_lumber`)
                 };
 
             // Fence gate from lumber and plank
@@ -729,7 +729,7 @@ function registerTFGWoodenRecipes(event) {
                 event, 
                 wood.name, 
                 `tfg:wood/lumber/${wood.name}`,
-                `#tfg:${wood.name}_logs`,
+                `#wan_ancient_beasts:${wood.name}_logs`,
                 `wan_ancient_beasts:${wood.name}_log`,
                 `wan_ancient_beasts:stripped_${wood.name}_log`,
                 `wan_ancient_beasts:${wood.name}_planks`, 
