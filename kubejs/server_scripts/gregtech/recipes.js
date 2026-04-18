@@ -441,4 +441,11 @@ const registerGTCEURecipes = (event) => {
         newId: "tfg:assemble_sterling_silver_turbine_blade",
         eut: GTValues.VA[GTValues.MV]
     })
+
+	//Fix Alloy Blast Smelter's downgraded recipes
+
+	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+		fluidOutputs: { "gtceu:red_alloy": 720 }
+	})
+
 }

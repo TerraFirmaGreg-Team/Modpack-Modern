@@ -201,5 +201,9 @@ global.modifyRecipe = function(event, recipeId, options) {
                 }
             }
         }
+
+        if (recipeJson.data && recipeJson.data.ebf_temp) {
+            newRecipe.blastFurnaceTemp(recipeJson.data.ebf_temp)
+        }
     }
 }
