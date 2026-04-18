@@ -12775,7 +12775,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.5.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.6.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -12784,20 +12784,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7876/334/ShoulderSurfing-Forge-1.20.1-4.22.5.jar",
-                    "id": "7876334",
+                    "url": "https://edge.forgecdn.net/files/7944/358/ShoulderSurfing-Forge-1.20.1-4.22.6.jar",
+                    "id": "7944358",
                     "parent_id": "243190",
                     "hashes": {
-                        "sha1": "e3d2a2d616ed7cc77362fa5b56569a9f6d859237",
-                        "md5": "1fab5a702ccf1d2b146db038eab40446"
+                        "sha1": "9e50c6affdadae60f4d2cc3d2104100f6acd8410",
+                        "md5": "6e87544b6ad1bed46b6e652607bc61ca"
                     },
                     "required_dependencies": [],
-                    "size": 266786,
-                    "date_published": "2026-04-04T21:42:38.293Z"
+                    "size": 268182,
+                    "date_published": "2026-04-18T09:52:56.763Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.5.jar",
+                    "file_name": "ShoulderSurfing-Forge-1.20.1-4.22.6.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -12806,16 +12806,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/ZXQX9GQs/ShoulderSurfing-Forge-1.20.1-4.22.5.jar",
-                    "id": "ZXQX9GQs",
+                    "url": "https://cdn.modrinth.com/data/kepjj2sy/versions/1K45b03D/ShoulderSurfing-Forge-1.20.1-4.22.6.jar",
+                    "id": "1K45b03D",
                     "parent_id": "kepjj2sy",
                     "hashes": {
-                        "sha512": "429669b73f3ae31caf165569bb7e0234ae35a6d8f1388cfcf90a869ffae8eb4022920f751fcee0865b80de5a9401af60478e762226505264dbc7ae10ecd3837f",
-                        "sha1": "e3d2a2d616ed7cc77362fa5b56569a9f6d859237"
+                        "sha512": "24493d68946d4469d050f23af7b472a094c70ea8590a2b0d319710e109415ea7ddb3b6649a77805a06547772ed2508c446075b3f8daaee565b28409cddbca61b",
+                        "sha1": "9e50c6affdadae60f4d2cc3d2104100f6acd8410"
                     },
                     "required_dependencies": [],
-                    "size": 266786,
-                    "date_published": "2026-04-04T21:42:46.456976Z"
+                    "size": 268182,
+                    "date_published": "2026-04-18T09:53:10.145910Z"
                 }
             ]
         },
@@ -15342,9 +15342,8 @@
             ]
         },
         {
-            "pakku_id": "q8hf1a0p1LNYh8as",
+            "pakku_id": "DEmuaO3pYfY1Plbn",
             "pakku_links": [
-                "WN9DdLqsRKVeZIc9",
                 "64uacGcEw697jVGs"
             ],
             "type": "MOD",
@@ -15364,7 +15363,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.5.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15372,22 +15371,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7942/295/TerraFirmaGreg-Core-Modern-0.9.5.jar",
-                    "id": "7942295",
+                    "url": "https://edge.forgecdn.net/files/7945/670/TerraFirmaGreg-Core-Modern-0.9.6.jar",
+                    "id": "7945670",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "4ed1928f179c3bb027b407cb64738367de058220",
-                        "md5": "4af695a926f9442d2d304a1a43eaccb5"
+                        "sha1": "e1ea31bd455f07f2bca14d702d60bc261a99d2d5",
+                        "md5": "612f1be80c998afa52b1b5f7391b6033"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 11938093,
-                    "date_published": "2026-04-17T23:11:23.940Z"
+                    "size": 11939222,
+                    "date_published": "2026-04-18T15:32:13.507Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.5.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15395,18 +15394,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ZRqFl70J/TerraFirmaGreg-Core-Modern-0.9.5.jar",
-                    "id": "ZRqFl70J",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ffeQFaDv/TerraFirmaGreg-Core-Modern-0.9.6.jar",
+                    "id": "ffeQFaDv",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "57c548b955de9cc85708c84ca70b58b59fd67d6f069f0d6044bda8c0fe2168de06b1dac9e8734333b51d17abbc2565f0c80de96d32b00df68acc7566e19541c6",
-                        "sha1": "4ed1928f179c3bb027b407cb64738367de058220"
+                        "sha512": "2f36d10ca69735e694f6999d2d20c6bee516fa81f3b0239ad5511ef4061c692eb3f9aa1f0db1a0072c03b34ffe90d9f419de96c0862db701f26c729ec0382f2d",
+                        "sha1": "e1ea31bd455f07f2bca14d702d60bc261a99d2d5"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 11938093,
-                    "date_published": "2026-04-17T23:11:27.062445Z"
+                    "size": 11939222,
+                    "date_published": "2026-04-18T15:32:20.668555Z"
                 }
             ]
         },

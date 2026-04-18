@@ -4,6 +4,18 @@
 ### Changes
 ### Bug fixes
 
+## [0.12.5] - 18-04-2026
+- We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
+- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Changes
+- The Cracker is now post-cleanroom @TomPlop
+### Bug fixes
+- Fixed a crash on Linux and MacOS
+- Fixed krummholz replacing parts of trees and other blocks @Pyritie
+- Fixed the amount of Red Alloy made in an ABS (#3829) @TomPlop
+- Fixed loose rocks generating on sea ice @Pyritie
+- Fixed Molybdenum Silicon Boron in the OLA being uncraftble @TomPlop
+
 ## [0.12.4] - 18-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
 ### Breaking Changes
