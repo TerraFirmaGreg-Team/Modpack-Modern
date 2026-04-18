@@ -26,7 +26,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "aaa_particles-forge-1.20.1-2.0.0.jar",
+                    "file_name": "aaa-particles-forge-1.20.1-1.4.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -35,20 +35,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7932/405/aaa_particles-forge-1.20.1-2.0.0.jar",
-                    "id": "7932405",
+                    "url": "https://edge.forgecdn.net/files/7889/13/aaa-particles-forge-1.20.1-1.4.15.jar",
+                    "id": "7889013",
                     "parent_id": "979809",
                     "hashes": {
-                        "sha1": "51c3f54ea029479346107819bb8995046763c35f",
-                        "md5": "d6676c5ded0aee4e7c136649443b87d7"
+                        "sha1": "556f79ae82a9d413de55e207fdc0d80d20a28359",
+                        "md5": "37efcb5dea30d0fa9915d374e0aa0bed"
                     },
                     "required_dependencies": [],
-                    "size": 4027235,
-                    "date_published": "2026-04-15T20:02:58.593Z"
+                    "size": 5260268,
+                    "date_published": "2026-04-07T08:14:00.460Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "aaa_particles-forge-1.20.1-2.0.0.jar",
+                    "file_name": "aaa_particles-1.20.1-1.4.11-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -57,16 +57,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/En8uHTOK/versions/JBAotatv/aaa_particles-forge-1.20.1-2.0.0.jar",
-                    "id": "JBAotatv",
+                    "url": "https://cdn.modrinth.com/data/En8uHTOK/versions/heNkI8gU/aaa_particles-1.20.1-1.4.11-forge.jar",
+                    "id": "heNkI8gU",
                     "parent_id": "En8uHTOK",
                     "hashes": {
-                        "sha512": "bde028b183b0f93d78b5fccc4598f3ceab7ff255f3542c7f23aece6b3e41f1bcabeab28bc3fc6d2f92bf209202307410ba469eae3701288c9b3a7a740238f262",
-                        "sha1": "51c3f54ea029479346107819bb8995046763c35f"
+                        "sha512": "7d0df9076d1871338556165be8ee3feadfb8e09ab7315ab2726c398f8351ea5e3e0d1907caae2aa9afa5443d9e6ef71d139590887ee0a670a0e4de11dfa0e17b",
+                        "sha1": "e046caeff220722933cb82097a62412d902f6002"
                     },
                     "required_dependencies": [],
-                    "size": 4027235,
-                    "date_published": "2026-04-15T20:10:17.676036Z"
+                    "size": 5255759,
+                    "date_published": "2025-06-05T09:23:07.127326Z"
                 }
             ]
         },
