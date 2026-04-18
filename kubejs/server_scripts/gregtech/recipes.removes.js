@@ -867,6 +867,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shapeless/purified_ore_to_dust_coal' })
 	event.remove({ id: 'gtceu:shapeless/refined_ore_to_dust_coal' })
 	event.remove({ id: 'gtceu:shapeless/crushed_ore_to_dust_coal' })
+	event.remove({ id: 'gtceu:shapeless/centrifuged_ore_to_dust_coal' })
 
 	// Snow Stuffs
 
