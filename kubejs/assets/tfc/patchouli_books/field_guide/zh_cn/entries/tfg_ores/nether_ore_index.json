@@ -8,13 +8,13 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "This is the $(thing)Ore Index$() for $(thing)The Beneath$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+      "text": "This is the $(thing)Ore Index$() for $(thing)幽冥之地$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
       "title": "The Beneath Ore Index",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Native Copper: $(l:tfg_ores/nether_vein_index#nether_copper)65%$(/l), $(l:tfg_ores/nether_vein_index#nether_tetrahedrite)30%$(/l)$()$(li)Native Gold: $(l:tfg_ores/nether_vein_index#nether_gold)75%$(/l), $(l:tfg_ores/nether_vein_index#nether_magnetite)30%$(/l), $(l:tfg_ores/nether_vein_index#nether_hematite)5%$(/l)$()$(li)Native Silver: $(l:tfg_ores/nether_vein_index#nether_silver)35%$(/l)$()$(li)下界石英: $(l:tfg_ores/nether_vein_index#nether_quartz)54%$(/l)$()$(li)云母: $(l:tfg_ores/nether_vein_index#nether_mica)33%$(/l)$()$(li)天然碱: $(l:tfg_ores/nether_vein_index#nether_lubricant)10%$(/l)$()$(li)孔雀石: $(l:tfg_ores/nether_vein_index#nether_goethite)20%$(/l)$()$(li)斑铜矿: $(l:tfg_ores/nether_vein_index#nether_sheldonite)41%$(/l), $(l:tfg_ores/nether_vein_index#nether_topaz)15%$(/l)$()$(li)方解石: $(l:tfg_ores/nether_vein_index#nether_gypsum)30%$(/l), $(l:tfg_ores/nether_vein_index#nether_lapis)15%$(/l)$()$(li)方钍石: $(l:tfg_ores/nether_vein_index#nether_beryllium)0%$(/l)$()$(li)方钠石: $(l:tfg_ores/nether_vein_index#nether_lapis)25%$(/l)$()$(li)方铅矿: $(l:tfg_ores/nether_vein_index#nether_silver)30%$(/l)$()$(li)无烟煤: $(l:tfg_ores/nether_vein_index#nether_anthracite)100%$(/l)$()$(li)明矾石: $(l:tfg_ores/nether_vein_index#nether_saltpeter)15%$(/l)$()",
+      "text": "$(li)下界石英: $(l:tfg_ores/nether_vein_index#nether_quartz)54%$(/l)$()$(li)云母: $(l:tfg_ores/nether_vein_index#nether_mica)33%$(/l)$()$(li)原生金: $(l:tfg_ores/nether_vein_index#nether_gold)75%$(/l), $(l:tfg_ores/nether_vein_index#nether_magnetite)30%$(/l), $(l:tfg_ores/nether_vein_index#nether_hematite)5%$(/l)$()$(li)原生铜: $(l:tfg_ores/nether_vein_index#nether_copper)65%$(/l), $(l:tfg_ores/nether_vein_index#nether_tetrahedrite)30%$(/l)$()$(li)原生银: $(l:tfg_ores/nether_vein_index#nether_silver)35%$(/l)$()$(li)天然碱: $(l:tfg_ores/nether_vein_index#nether_lubricant)10%$(/l)$()$(li)孔雀石: $(l:tfg_ores/nether_vein_index#nether_goethite)20%$(/l)$()$(li)斑铜矿: $(l:tfg_ores/nether_vein_index#nether_sheldonite)41%$(/l), $(l:tfg_ores/nether_vein_index#nether_topaz)15%$(/l)$()$(li)方解石: $(l:tfg_ores/nether_vein_index#nether_gypsum)30%$(/l), $(l:tfg_ores/nether_vein_index#nether_lapis)15%$(/l)$()$(li)方钍石: $(l:tfg_ores/nether_vein_index#nether_beryllium)0%$(/l)$()$(li)方钠石: $(l:tfg_ores/nether_vein_index#nether_lapis)25%$(/l)$()$(li)方铅矿: $(l:tfg_ores/nether_vein_index#nether_silver)30%$(/l)$()$(li)无烟煤: $(l:tfg_ores/nether_vein_index#nether_anthracite)100%$(/l)$()$(li)明矾石: $(l:tfg_ores/nether_vein_index#nether_saltpeter)15%$(/l)$()",
       "type": "patchouli:text"
     },
     {

@@ -19,11 +19,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:quartzite_coal_ore",
+            "block": "gtceu:quartzite_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -34,11 +34,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:slate_coal_ore",
+            "block": "gtceu:slate_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -49,11 +49,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:phyllite_coal_ore",
+            "block": "gtceu:phyllite_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -64,11 +64,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_coal_ore",
+            "block": "gtceu:schist_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -79,11 +79,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_coal_ore",
+            "block": "gtceu:gneiss_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -94,11 +94,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:marble_coal_ore",
+            "block": "gtceu:marble_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -109,11 +109,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_coal_ore",
+            "block": "gtceu:tuff_lignite_ore",
             "weight": 100
           },
           {
-            "block": "gtceu:raw_coal_block",
+            "block": "gtceu:raw_lignite_block",
             "weight": 1
           }
         ]
@@ -126,7 +126,7 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:coal_indicator",
+          "block": "gtceu:lignite_indicator",
           "weight": 100
         }
       ]

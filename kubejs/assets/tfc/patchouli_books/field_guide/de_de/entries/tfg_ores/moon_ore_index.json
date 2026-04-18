@@ -8,7 +8,7 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "This is the $(thing)Ore Index$() for $(thing)The Moon$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+      "text": "This is the $(thing)Ore Index$() for $(thing)Der Mond$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
       "title": "Moon Ore Index",
       "type": "patchouli:text"
     },
@@ -24,7 +24,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Ilmenit: $(l:tfg_ores/moon_vein_index#moon_bauxite)42%$(/l), $(l:tfg_ores/moon_vein_index#moon_desh)30%$(/l)$()$(li)Kalzit: $(l:tfg_ores/moon_vein_index#moon_gypsum)25%$(/l)$()$(li)Kassiterit: $(l:tfg_ores/moon_vein_index#moon_cassiterite)41%$(/l)$()$(li)Kassiteritsand: $(l:tfg_ores/moon_vein_index#moon_pyrolusite)23%$(/l), $(l:tfg_ores/moon_vein_index#moon_garnierite)19%$(/l)$()$(li)Lapis: $(l:tfg_ores/moon_vein_index#moon_bauxite)36%$(/l), $(l:tfg_ores/moon_vein_index#moon_mica)23%$(/l), $(l:tfg_ores/moon_vein_index#moon_gold)20%$(/l)$()$(li)Lasurit: $(l:tfg_ores/moon_vein_index#moon_mica)33%$(/l)$()$(li)Lead: $(l:tfg_ores/moon_vein_index#moon_silver)23%$(/l)$()$(li)Lepidolith: $(l:tfg_ores/moon_vein_index#moon_saltpeter)37%$(/l)$()$(li)Magnetit: $(l:tfg_ores/moon_vein_index#moon_magnetite)25%$(/l), $(l:tfg_ores/moon_vein_index#moon_gold)20%$(/l)$()$(li)Molybdänit: $(l:tfg_ores/moon_vein_index#moon_molybdenum)33%$(/l)$()$(li)Monazite: $(l:tfg_ores/moon_vein_index#moon_monazite)30%$(/l)$()$(li)Native Copper: $(l:tfg_ores/moon_vein_index#moon_tetrahedrite)15%$(/l)$()$(li)Native Gold: $(l:tfg_ores/moon_vein_index#moon_gold)55%$(/l), $(l:tfg_ores/moon_vein_index#moon_magnetite)15%$(/l)$()$(li)Native Silver: $(l:tfg_ores/moon_vein_index#moon_silver)42%$(/l)$()",
+      "text": "$(li)Ilmenit: $(l:tfg_ores/moon_vein_index#moon_bauxite)42%$(/l), $(l:tfg_ores/moon_vein_index#moon_desh)30%$(/l)$()$(li)Kalzit: $(l:tfg_ores/moon_vein_index#moon_gypsum)25%$(/l)$()$(li)Kassiterit: $(l:tfg_ores/moon_vein_index#moon_cassiterite)41%$(/l)$()$(li)Kassiteritsand: $(l:tfg_ores/moon_vein_index#moon_pyrolusite)23%$(/l), $(l:tfg_ores/moon_vein_index#moon_garnierite)19%$(/l)$()$(li)Lapis: $(l:tfg_ores/moon_vein_index#moon_bauxite)36%$(/l), $(l:tfg_ores/moon_vein_index#moon_mica)23%$(/l), $(l:tfg_ores/moon_vein_index#moon_gold)20%$(/l)$()$(li)Lasurit: $(l:tfg_ores/moon_vein_index#moon_mica)33%$(/l)$()$(li)Lead: $(l:tfg_ores/moon_vein_index#moon_silver)23%$(/l)$()$(li)Lepidolith: $(l:tfg_ores/moon_vein_index#moon_saltpeter)37%$(/l)$()$(li)Magnetit: $(l:tfg_ores/moon_vein_index#moon_magnetite)25%$(/l), $(l:tfg_ores/moon_vein_index#moon_gold)20%$(/l)$()$(li)Molybdänit: $(l:tfg_ores/moon_vein_index#moon_molybdenum)33%$(/l)$()$(li)Monazite: $(l:tfg_ores/moon_vein_index#moon_monazite)30%$(/l)$()$(li)Natives Gold: $(l:tfg_ores/moon_vein_index#moon_gold)55%$(/l), $(l:tfg_ores/moon_vein_index#moon_magnetite)15%$(/l)$()$(li)Natives Kupfer: $(l:tfg_ores/moon_vein_index#moon_tetrahedrite)15%$(/l)$()$(li)Natives Silber: $(l:tfg_ores/moon_vein_index#moon_silver)42%$(/l)$()",
       "type": "patchouli:text"
     },
     {
