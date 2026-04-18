@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐煤$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐煤 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐铁矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤铁矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)辉钴矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)辉铜矿, 石膏, 钴, 硫$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)针铁矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)针铁矿, 褐铁矿, 赤铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)钙铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿, 钼, 钼钙矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)铅, 原生银 (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐煤 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐煤, 煤炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐铁矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤铁矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)辉钴矿 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)辉铜矿, 石膏, 钴, 硫$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)针铁矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)针铁矿, 褐铁矿, 赤铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)钙铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿, 钼, 钼钙矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)铅, 原生银 (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2443,33 +2443,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)高度$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)生物群系$(): 任意$(br2)$(thing)Stone Types$(): 凝灰岩, 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
-      "title": "褐煤",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "褐煤",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lignite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/90 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -20 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 15$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 35$(br)$(thing)生物群系$(): $(t:平原, 山丘, 低地, 山峦, 高地, 恶地, 高原, 广袤高原, 高原湖, 岩石高原, 塔状喀斯特平原, 塔状喀斯特峡谷, 塔状喀斯特丘陵, 塔状喀斯特高地, 石灰岩高原, 石灰岩平原, 石林丘陵, 石林高地, 石林高原, 溶斗平原, 溶斗丘陵, 溶斗起伏丘陵, 溶斗高地, 溶斗高原, 溶洞平原, 溶洞丘陵, 溶洞起伏丘陵, 溶洞高地, 溶洞高原, 极深溶斗高原)Plains, Plateaus, and Hills$(/t)$(br2)$(thing)Stone Types$(): 燧石, 白云岩, 白垩岩, 石灰岩, 砾岩, 页岩, 黏土岩",
       "title": "褐煤 (Surface)",
       "type": "patchouli:text",
@@ -2494,6 +2467,58 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)高度$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)生物群系$(): 任意$(br2)$(thing)Stone Types$(): 凝灰岩, 千枚岩, 大理岩, 板岩, 片岩, 片麻岩, 石英岩",
+      "title": "褐煤, 煤炭",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "褐煤",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 70%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "煤炭",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

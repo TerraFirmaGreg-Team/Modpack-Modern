@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭, 石炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2867,33 +2867,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Marble, Quartzite, Tuff, 千枚岩, 片岩, 片麻岩, 粘板岩",
-      "title": "褐炭",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "褐炭",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lignite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/90 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -20 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 15$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 35$(br)$(thing)Biomes$(): $(t:平原, 丘, 低地, 緩やかな丘, 高地, 荒野, 高原, Plateau Wide, 高原の湖, Rocky Plateau, Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Burren Plateau, Burren Plains, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau)Plains, Plateaus, and Hills$(/t)$(br2)$(thing)Stone Types$(): 白亜, 石灰岩, 礫岩, 粘土岩, 苦灰岩, 角岩, 頁岩",
       "title": "褐炭 (Surface)",
       "type": "patchouli:text",
@@ -2918,6 +2891,58 @@
       "enable_visualize": false,
       "text": "$(thing)パーセント$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Marble, Quartzite, Tuff, 千枚岩, 片岩, 片麻岩, 粘板岩",
+      "title": "褐炭, 石炭",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "褐炭",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 70%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "石炭",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

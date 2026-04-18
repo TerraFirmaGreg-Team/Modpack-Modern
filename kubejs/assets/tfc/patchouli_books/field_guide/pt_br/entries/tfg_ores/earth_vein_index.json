@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Grafite, Carvão, Diamante (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Grafite, Carvão, Diamante (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossulária, Espessartina...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossulária, Pirolusita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematita, Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurita, Sodalita...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Lignito$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Lignito (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Grafite, Carvão, Diamante (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Grafite, Carvão, Diamante (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossulária, Espessartina...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossulária, Pirolusita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematita, Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurita, Sodalita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Lignito (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Lignito, Carvão$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2902,33 +2902,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Altura$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Ardósia, Filito, Gnaisse, Marble, Quartzito, Tufo, Xisto",
-      "title": "Lignito",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Lignito",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lignite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/90 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -20 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 15$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 35$(br)$(thing)Biomes$(): $(t:Plancícies, Colinas, Terras Baixas, Colinas Onduladas, Terras Altas, Terras Áridas, Platô, Plateau Wide, Lago de Platô, Rocky Plateau, Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Burren Plateau, Burren Plains, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau)Plains, Plateaus, and Hills$(/t)$(br2)$(thing)Stone Types$(): Argilito, Calcário, Cherte, Conglomerado, Dolomita, Folhelho, Giz",
       "title": "Lignito (Surface)",
       "type": "patchouli:text",
@@ -2953,6 +2926,58 @@
       "enable_visualize": false,
       "text": "$(thing)Porcentagem$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Altura$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Ardósia, Filito, Gnaisse, Marble, Quartzito, Tufo, Xisto",
+      "title": "Lignito, Carvão",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Lignito",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 70%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Carvão",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

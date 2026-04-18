@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope, Saphir...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalciumphosphat... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Basaltic Mineral Sand...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnäsit, Monazite, Neodym$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonit, Magnesit, Olivine...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismut$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismut (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismut, Natives Silber...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topas, Chalkosin...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Braunkohle$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Braunkohle (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Chalkosin, Gips, Cobalt...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierit (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandine, Pyrope, Saphir...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatite, Tricalciumphosphat... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Basaltic Mineral Sand...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnäsit, Monazite, Neodym$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonit, Magnesit, Olivine...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismut$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismut (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismut, Natives Silber...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Blue Topaz, Topas, Chalkosin...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Braunkohle (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Braunkohle, Steinkohle$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Cassiterite Sand$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Chalkosin, Gips, Cobalt...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierit (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -672,33 +672,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Gneis, Kristallschiefer, Marble, Phyllit, Quartzite, Tonschiefer, Tuff",
-      "title": "Braunkohle",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Braunkohle",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lignite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/90 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -20 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 15$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 35$(br)$(thing)Biomes$(): $(t:Ebene, Hügel, Tiefland, Sanfte Hügel, Highlands, Ödland, Hochebene, Plateau Wide, Hochebenensee, Rocky Plateau, Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Burren Plateau, Burren Plains, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau)Plains, Plateaus, and Hills$(/t)$(br2)$(thing)Stone Types$(): Dolomit, Hornstein, Kalk, Kalkstein, Konglomerat, Schieferstein, Tonstein",
       "title": "Braunkohle (Surface)",
       "type": "patchouli:text",
@@ -723,6 +696,58 @@
       "enable_visualize": false,
       "text": "$(thing)Prozentzahl$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Gneis, Kristallschiefer, Marble, Phyllit, Quartzite, Tonschiefer, Tuff",
+      "title": "Braunkohle, Steinkohle",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Braunkohle",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 70%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Steinkohle",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 30%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
