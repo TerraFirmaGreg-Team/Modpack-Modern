@@ -449,4 +449,9 @@ const registerGTCEURecipes = (event) => {
         fluidOutputs: { "gtceu:red_alloy": 720 }
 	});
 
+	// Change Cracker to require Cleanroom
+
+	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
+
+
 }
