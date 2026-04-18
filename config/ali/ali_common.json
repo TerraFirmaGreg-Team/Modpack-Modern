@@ -1,4 +1,5 @@
 {
+    "configVersion": 1,
     "blockCategories": [],
     "entityCategories": [
         {
@@ -26,6 +27,11 @@
             "type": "GAMEPLAY",
             "icon": "tfc:metal/fishing_rod/copper",
             "hide": false,
+            "catalysts": [
+                {
+                    "tag": "forge:fishing_rods"
+                }
+            ],
             "pattern": [
                 "^.*:gameplay/fishing.*$"
             ]
@@ -35,6 +41,14 @@
             "type": "GAMEPLAY",
             "icon": "minecraft:gold_ingot",
             "hide": false,
+            "catalysts": [
+                {
+                    "item": "minecraft:gold_ingot"
+                },
+                {
+                    "item": "tfg:piglin_disguise"
+                }
+            ],
             "pattern": [
                 "^minecraft:gameplay/piglin_bartering$"
             ]
@@ -44,6 +58,14 @@
             "type": "GAMEPLAY",
             "icon": "tfc:pan/empty",
             "hide": false,
+            "catalysts": [
+                {
+                    "item": "tfc:pan/empty"
+                },
+                {
+                    "tag": "tfc:ore_deposits"
+                }
+            ],
             "pattern": [
                 "^tfc:panning.*$"
             ]
@@ -53,6 +75,14 @@
             "type": "GAMEPLAY",
             "icon": "tfc:wood/sluice/oak",
             "hide": false,
+            "catalysts": [
+                {
+                    "tag": "tfc:sluices"
+                },
+                {
+                    "tag": "tfc:ore_deposits"
+                }
+            ],
             "pattern": [
                 "^tfc:sluicing.*$"
             ]
