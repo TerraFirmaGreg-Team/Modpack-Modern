@@ -777,7 +777,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -786,20 +786,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7938/885/AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
-                    "id": "7938885",
+                    "url": "https://edge.forgecdn.net/files/7873/360/AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "id": "7873360",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "ef21a66c2d87b7360d63155b1035646d6e6b0f19",
-                        "md5": "a70d78005a8b902b1a08efdd2e616bcb"
+                        "sha1": "0bac90e85efbab8c4257ac64c8d37839f4f10be6",
+                        "md5": "863f39bfbe1994439fce89722cdf0332"
                     },
                     "required_dependencies": [],
-                    "size": 752896,
-                    "date_published": "2026-04-17T08:01:40.547Z"
+                    "size": 724691,
+                    "date_published": "2026-04-04T15:07:06.990Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -808,16 +808,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/Z4D1luwf/AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
-                    "id": "Z4D1luwf",
+                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/QnZi0UD1/AdvancedLootInfo-forge-1.20.1-1.8.3.jar",
+                    "id": "QnZi0UD1",
                     "parent_id": "PEPVViac",
                     "hashes": {
-                        "sha512": "3fbd5d536fa27714aabb943a1227c2f13af3db3952768728d663156de0dc218c775ddb5cb7d2af8e7ba2facb8ffc1ba2c058b2d89dcad8293c545f7882d7ade1",
-                        "sha1": "ef21a66c2d87b7360d63155b1035646d6e6b0f19"
+                        "sha512": "d6f53fceaf9e178955d338a2740e2d059e8fdcca4dd38a5fc58c54d617cf0655ecc0b51cb5a4ab9caf341e7f6124e44f4913f38b74203e60904e233a206a70d4",
+                        "sha1": "0bac90e85efbab8c4257ac64c8d37839f4f10be6"
                     },
                     "required_dependencies": [],
-                    "size": 752896,
-                    "date_published": "2026-04-17T08:01:36.408884Z"
+                    "size": 724691,
+                    "date_published": "2026-04-04T15:07:00.249168Z"
                 }
             ]
         },
