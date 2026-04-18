@@ -337,7 +337,7 @@ function processCrushedOre(event, material) {
 
 		event.recipes.greate.splashing(
 			[pureOreItem, Item.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'],
-			[crushedOreItem, Fluid.of('gtceu:distilled_water', 25)]
+			[crushedOreItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -467,7 +467,7 @@ function processImpureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[impureDustItem, Fluid.of('gtceu:distilled_water', 25)]
+			[impureDustItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
@@ -532,7 +532,7 @@ function processPureDust(event, material) {
 
 		event.recipes.greate.splashing(
 			[dustItem],
-			[pureDustItem, Fluid.of('gtceu:distilled_water', 25)]
+			[pureDustItem, Fluid.of('gtceu:distilled_water', 50)]
 		)
 		.recipeTier(1)
 		.circuitNumber(2)
