@@ -440,5 +440,13 @@ const registerGTCEURecipes = (event) => {
 	global.modifyRecipe(event, "gtceu:assembler/assemble_sterling_silver_turbine_blade", {
         newId: "tfg:assemble_sterling_silver_turbine_blade",
         eut: GTValues.VA[GTValues.MV]
-    })
+    });
+
+	// Change Red Alloy in the ABS to match
+
+	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+        newId: "tfg:red_alloy",
+        fluidOutputs: { "gtceu:red_alloy": 720 }
+	});
+
 }
