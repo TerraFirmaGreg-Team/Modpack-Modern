@@ -350,7 +350,7 @@ function registerTFGItemSize(event) {
 		]),
 		"normal",
 		"medium",
-		"Molds"
+		"molds"
 	)
 
 	//Universal Compost Bags
