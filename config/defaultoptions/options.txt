@@ -1,6 +1,6 @@
 guiScale:3
-resourcePacks:["vanilla","mod_resources","gtceu:dynamic_assets","Moonlight Mods Dynamic Assets","afc_compat_assets","afc_data","fabric","firmalife_compat_assets","firmalife_data","tfc_tumbleweed","tfcimprovedbadlands","file/TerraFirmaCraft_New_Animals.zip","file/Perfected Anvil Helper.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip"]
-incompatibleResourcePacks:["firmalife_data","file/Perfected Anvil Helper.zip"]
+resourcePacks:["vanilla","mod_resources","gtceu:dynamic_assets","Moonlight Mods Dynamic Assets","afc_compat_assets","afc_data","fabric","firmalife_compat_assets","firmalife_data","tfc_tumbleweed","tfcimprovedbadlands","file/TerraFirmaCraft_New_Animals.zip","file/Perfected Anvil Helper.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip","file/Icon Xaero\u0027s 1.22.zip","builtin/create_repair_asset_overrides"]
+incompatibleResourcePacks:["firmalife_data","file/Perfected Anvil Helper.zip","file/Icon Xaero\u0027s 1.22.zip"]
 narrator:0
 soundCategory_master:1.0
 soundCategory_music:0.4

@@ -20,11 +20,15 @@
         "with": [
           {
             "block": "gtceu:quartzite_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:quartzite_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -35,11 +39,15 @@
         "with": [
           {
             "block": "gtceu:slate_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:slate_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -50,11 +58,15 @@
         "with": [
           {
             "block": "gtceu:phyllite_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:phyllite_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -65,11 +77,15 @@
         "with": [
           {
             "block": "gtceu:schist_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:schist_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -80,11 +96,15 @@
         "with": [
           {
             "block": "gtceu:gneiss_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:gneiss_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -95,11 +115,15 @@
         "with": [
           {
             "block": "gtceu:marble_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:marble_coal_ore",
+            "weight": 30
           }
         ]
       },
@@ -110,11 +134,15 @@
         "with": [
           {
             "block": "gtceu:tuff_lignite_ore",
-            "weight": 100
+            "weight": 70
           },
           {
             "block": "gtceu:raw_lignite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:tuff_coal_ore",
+            "weight": 30
           }
         ]
       }
@@ -127,7 +155,11 @@
       "blocks": [
         {
           "block": "gtceu:lignite_indicator",
-          "weight": 100
+          "weight": 70
+        },
+        {
+          "block": "gtceu:coal_indicator",
+          "weight": 30
         }
       ]
     }

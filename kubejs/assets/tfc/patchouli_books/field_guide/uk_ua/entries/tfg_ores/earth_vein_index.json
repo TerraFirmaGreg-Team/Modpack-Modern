@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Ортофосфат кальцію... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентоніт, Магнезит, Олівін...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Бісмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Бісмут (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Бісмут, Самородне срібло...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ільменіт$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Буре вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Буре вугілля (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Вугілля (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галеніт, Самородне срібло$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Ортофосфат кальцію... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентоніт, Магнезит, Олівін...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Бісмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Бісмут (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Бісмут, Самородне срібло...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ільменіт$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Буре вугілля (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Буре вугілля, Вугілля$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Вугілля (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галеніт, Самородне срібло$()$()",
       "type": "patchouli:text"
     },
     {
@@ -632,33 +632,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Висота$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Біоми$(): Коли-небудь$(br2)$(thing)Stone Types$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Туф, Філіт, Шиферний сланець",
-      "title": "Буре вугілля",
-      "type": "patchouli:text",
-      "anchor": "normal_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Буре вугілля",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/lignite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/90 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 45%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -20 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 15$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 35$(br)$(thing)Біоми$(): $(t:Рівнини, Пагорби, Низини, Пагорбисті рівнини, Височини, Безплідні землі, Плато, Широке плато, Озерне плато, Скелясте плато, Баштові карстові рівнини, Каньйони вежового карсту, Баштові карстові гори, Високогірний баштовий карст, Бурренське плато, Спалені рівнини, Гори кам'яного лісу, Високогір'я Шілінь, Плато Шілінь, Карстові рівнини, Долинні горби, Хвилясті пагорби з долинами, Долинне нагір'я, Долинне плато, Сенотні рівнини, Сенотні горби, Хвилясті пагорби з печерами, Сенотне нагір'я, Сенотне плато, Екстремальне долинне плато)Plains, Plateaus, and Hills$(/t)$(br2)$(thing)Stone Types$(): Аргіліт, Вапняк, Глинистий сланець, Доломіт, Конгломерат, Крейда, Кременистий сланець",
       "title": "Буре вугілля (Surface)",
       "type": "patchouli:text",
@@ -683,6 +656,58 @@
       "enable_visualize": false,
       "text": "$(thing)Відсоток$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Висота$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Біоми$(): Коли-небудь$(br2)$(thing)Stone Types$(): Аспідний сланець, Гнейс, Кварцит, Мармур, Туф, Філіт, Шиферний сланець",
+      "title": "Буре вугілля, Вугілля",
+      "type": "patchouli:text",
+      "anchor": "normal_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Буре вугілля",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/lignite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 70%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Вугілля",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 30%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
