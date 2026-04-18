@@ -73,6 +73,13 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/fire_charge' })
 
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
+
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_cocoa' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb_block'})

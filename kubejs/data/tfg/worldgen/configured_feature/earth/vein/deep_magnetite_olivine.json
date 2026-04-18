@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -27,15 +27,15 @@
           },
           {
             "block": "gtceu:rhyolite_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:rhyolite_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:rhyolite_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:rhyolite_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -47,7 +47,7 @@
         "with": [
           {
             "block": "gtceu:basalt_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -55,15 +55,15 @@
           },
           {
             "block": "gtceu:basalt_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:basalt_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:basalt_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:basalt_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -74,7 +74,7 @@
         "with": [
           {
             "block": "gtceu:andesite_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -82,15 +82,15 @@
           },
           {
             "block": "gtceu:andesite_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:andesite_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:andesite_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:andesite_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -101,7 +101,7 @@
         "with": [
           {
             "block": "gtceu:dacite_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -109,15 +109,15 @@
           },
           {
             "block": "gtceu:dacite_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:dacite_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:dacite_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:dacite_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -128,7 +128,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -136,15 +136,15 @@
           },
           {
             "block": "gtceu:quartzite_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:quartzite_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:quartzite_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:quartzite_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -155,7 +155,7 @@
         "with": [
           {
             "block": "gtceu:slate_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -163,15 +163,15 @@
           },
           {
             "block": "gtceu:slate_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:slate_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:slate_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:slate_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -182,7 +182,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -190,15 +190,15 @@
           },
           {
             "block": "gtceu:phyllite_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:phyllite_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:phyllite_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:phyllite_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -209,7 +209,7 @@
         "with": [
           {
             "block": "gtceu:schist_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -217,15 +217,15 @@
           },
           {
             "block": "gtceu:schist_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:schist_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:schist_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:schist_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -236,7 +236,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -244,15 +244,15 @@
           },
           {
             "block": "gtceu:gneiss_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:gneiss_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:gneiss_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:gneiss_fullers_earth_ore",
+            "weight": 24
           }
         ]
       },
@@ -263,7 +263,7 @@
         "with": [
           {
             "block": "gtceu:marble_bentonite_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:raw_bentonite_block",
@@ -271,15 +271,15 @@
           },
           {
             "block": "gtceu:marble_magnesite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:marble_olivine_ore",
-            "weight": 2
+            "weight": 4
           },
           {
-            "block": "gtceu:marble_glauconite_sand_ore",
-            "weight": 12
+            "block": "gtceu:marble_fullers_earth_ore",
+            "weight": 24
           }
         ]
       }
@@ -292,19 +292,19 @@
       "blocks": [
         {
           "block": "gtceu:bentonite_indicator",
-          "weight": 9
+          "weight": 18
         },
         {
           "block": "gtceu:magnesite_indicator",
-          "weight": 4
+          "weight": 8
         },
         {
           "block": "gtceu:olivine_bud_indicator",
-          "weight": 2
+          "weight": 4
         },
         {
-          "block": "gtceu:glauconite_sand_indicator",
-          "weight": 12
+          "block": "gtceu:fullers_earth_indicator",
+          "weight": 24
         }
       ]
     }

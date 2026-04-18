@@ -15,12 +15,12 @@
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/shale"
+          "tfc:rock/raw/quartzite"
         ],
         "with": [
           {
-            "block": "gtceu:shale_coal_ore",
-            "weight": 10
+            "block": "gtceu:quartzite_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -30,12 +30,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/claystone"
+          "tfc:rock/raw/slate"
         ],
         "with": [
           {
-            "block": "gtceu:claystone_coal_ore",
-            "weight": 10
+            "block": "gtceu:slate_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -45,12 +45,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/limestone"
+          "tfc:rock/raw/phyllite"
         ],
         "with": [
           {
-            "block": "gtceu:limestone_coal_ore",
-            "weight": 10
+            "block": "gtceu:phyllite_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -60,12 +60,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/conglomerate"
+          "tfc:rock/raw/schist"
         ],
         "with": [
           {
-            "block": "gtceu:conglomerate_coal_ore",
-            "weight": 10
+            "block": "gtceu:schist_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -75,12 +75,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/dolomite"
+          "tfc:rock/raw/gneiss"
         ],
         "with": [
           {
-            "block": "gtceu:dolomite_coal_ore",
-            "weight": 10
+            "block": "gtceu:gneiss_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -90,27 +90,12 @@
       },
       {
         "replace": [
-          "tfc:rock/raw/chert"
+          "tfc:rock/raw/marble"
         ],
         "with": [
           {
-            "block": "gtceu:chert_coal_ore",
-            "weight": 10
-          },
-          {
-            "block": "gtceu:raw_coal_block",
-            "weight": 1
-          }
-        ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/chalk"
-        ],
-        "with": [
-          {
-            "block": "gtceu:chalk_coal_ore",
-            "weight": 10
+            "block": "gtceu:marble_coal_ore",
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -125,7 +110,7 @@
         "with": [
           {
             "block": "gtceu:tuff_coal_ore",
-            "weight": 10
+            "weight": 100
           },
           {
             "block": "gtceu:raw_coal_block",
@@ -142,7 +127,7 @@
       "blocks": [
         {
           "block": "gtceu:coal_indicator",
-          "weight": 10
+          "weight": 100
         }
       ]
     }

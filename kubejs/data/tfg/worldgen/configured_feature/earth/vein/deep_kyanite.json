@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -27,11 +27,11 @@
           },
           {
             "block": "gtceu:quartzite_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:quartzite_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -42,7 +42,7 @@
         "with": [
           {
             "block": "gtceu:slate_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -50,11 +50,11 @@
           },
           {
             "block": "gtceu:slate_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:slate_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -73,11 +73,11 @@
           },
           {
             "block": "gtceu:phyllite_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:phyllite_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -88,7 +88,7 @@
         "with": [
           {
             "block": "gtceu:schist_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -96,11 +96,11 @@
           },
           {
             "block": "gtceu:schist_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:schist_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -111,7 +111,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -119,11 +119,11 @@
           },
           {
             "block": "gtceu:gneiss_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:gneiss_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -134,7 +134,7 @@
         "with": [
           {
             "block": "gtceu:marble_kyanite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_kyanite_block",
@@ -142,11 +142,11 @@
           },
           {
             "block": "gtceu:marble_mica_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:marble_pollucite_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       }
@@ -159,15 +159,15 @@
       "blocks": [
         {
           "block": "gtceu:kyanite_indicator",
-          "weight": 12
+          "weight": 24
         },
         {
           "block": "gtceu:mica_indicator",
-          "weight": 8
+          "weight": 16
         },
         {
           "block": "gtceu:pollucite_indicator",
-          "weight": 5
+          "weight": 10
         }
       ]
     }

@@ -26,7 +26,7 @@
         "with": [
           {
             "block": "gtceu:granite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -34,15 +34,15 @@
           },
           {
             "block": "gtceu:granite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:granite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:granite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -53,7 +53,7 @@
         "with": [
           {
             "block": "gtceu:diorite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -61,15 +61,15 @@
           },
           {
             "block": "gtceu:diorite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:diorite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -80,7 +80,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -88,15 +88,15 @@
           },
           {
             "block": "gtceu:gabbro_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:gabbro_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -107,7 +107,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -115,15 +115,15 @@
           },
           {
             "block": "gtceu:rhyolite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:rhyolite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:rhyolite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -135,7 +135,7 @@
         "with": [
           {
             "block": "gtceu:basalt_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -143,15 +143,15 @@
           },
           {
             "block": "gtceu:basalt_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:basalt_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:basalt_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -162,7 +162,7 @@
         "with": [
           {
             "block": "gtceu:andesite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -170,15 +170,15 @@
           },
           {
             "block": "gtceu:andesite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:andesite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:andesite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -189,7 +189,7 @@
         "with": [
           {
             "block": "gtceu:dacite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -197,15 +197,15 @@
           },
           {
             "block": "gtceu:dacite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:dacite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:dacite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -216,7 +216,7 @@
         "with": [
           {
             "block": "gtceu:shale_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -224,15 +224,15 @@
           },
           {
             "block": "gtceu:shale_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:shale_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:shale_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -243,7 +243,7 @@
         "with": [
           {
             "block": "gtceu:claystone_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -251,15 +251,15 @@
           },
           {
             "block": "gtceu:claystone_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:claystone_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:claystone_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -270,7 +270,7 @@
         "with": [
           {
             "block": "gtceu:limestone_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -278,15 +278,15 @@
           },
           {
             "block": "gtceu:limestone_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:limestone_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:limestone_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -297,7 +297,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -305,15 +305,15 @@
           },
           {
             "block": "gtceu:conglomerate_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:conglomerate_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:conglomerate_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -324,7 +324,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -332,15 +332,15 @@
           },
           {
             "block": "gtceu:dolomite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:dolomite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:dolomite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -351,7 +351,7 @@
         "with": [
           {
             "block": "gtceu:chert_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -359,15 +359,15 @@
           },
           {
             "block": "gtceu:chert_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:chert_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:chert_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -378,7 +378,7 @@
         "with": [
           {
             "block": "gtceu:chalk_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -386,15 +386,15 @@
           },
           {
             "block": "gtceu:chalk_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:chalk_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:chalk_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -405,7 +405,7 @@
         "with": [
           {
             "block": "gtceu:tuff_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -413,15 +413,15 @@
           },
           {
             "block": "gtceu:tuff_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:tuff_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:tuff_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -432,7 +432,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -440,15 +440,15 @@
           },
           {
             "block": "gtceu:quartzite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:quartzite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:quartzite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -459,7 +459,7 @@
         "with": [
           {
             "block": "gtceu:slate_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -467,15 +467,15 @@
           },
           {
             "block": "gtceu:slate_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:slate_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:slate_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -486,7 +486,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -494,15 +494,15 @@
           },
           {
             "block": "gtceu:phyllite_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:phyllite_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:phyllite_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -513,7 +513,7 @@
         "with": [
           {
             "block": "gtceu:schist_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -521,15 +521,15 @@
           },
           {
             "block": "gtceu:schist_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:schist_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:schist_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -540,7 +540,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -548,15 +548,15 @@
           },
           {
             "block": "gtceu:gneiss_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:gneiss_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:gneiss_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       },
@@ -567,7 +567,7 @@
         "with": [
           {
             "block": "gtceu:marble_chalcocite_ore",
-            "weight": 12
+            "weight": 48
           },
           {
             "block": "gtceu:raw_chalcocite_block",
@@ -575,15 +575,15 @@
           },
           {
             "block": "gtceu:marble_gypsum_ore",
-            "weight": 3
+            "weight": 12
           },
           {
             "block": "gtceu:marble_cobalt_ore",
-            "weight": 5
+            "weight": 20
           },
           {
             "block": "gtceu:marble_sulfur_ore",
-            "weight": 2
+            "weight": 8
           }
         ]
       }
@@ -596,19 +596,19 @@
       "blocks": [
         {
           "block": "gtceu:chalcocite_indicator",
-          "weight": 12
+          "weight": 48
         },
         {
           "block": "gtceu:gypsum_indicator",
-          "weight": 3
+          "weight": 12
         },
         {
           "block": "gtceu:cobalt_indicator",
-          "weight": 5
+          "weight": 20
         },
         {
           "block": "gtceu:sulfur_indicator",
-          "weight": 2
+          "weight": 8
         }
       ]
     }

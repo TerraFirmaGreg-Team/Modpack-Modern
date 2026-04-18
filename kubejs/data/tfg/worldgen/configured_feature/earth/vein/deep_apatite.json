@@ -19,15 +19,19 @@
         "with": [
           {
             "block": "gtceu:granite_apatite_ore",
-            "weight": 8
+            "weight": 16
+          },
+          {
+            "block": "gtceu:raw_apatite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:granite_tricalcium_phosphate_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:granite_pyrochlore_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -38,15 +42,19 @@
         "with": [
           {
             "block": "gtceu:diorite_apatite_ore",
-            "weight": 8
+            "weight": 16
+          },
+          {
+            "block": "gtceu:raw_apatite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:diorite_tricalcium_phosphate_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:diorite_pyrochlore_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -57,15 +65,19 @@
         "with": [
           {
             "block": "gtceu:gabbro_apatite_ore",
-            "weight": 8
+            "weight": 16
+          },
+          {
+            "block": "gtceu:raw_apatite_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gabbro_tricalcium_phosphate_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:gabbro_pyrochlore_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       }
@@ -78,15 +90,15 @@
       "blocks": [
         {
           "block": "gtceu:apatite_bud_indicator",
-          "weight": 8
+          "weight": 16
         },
         {
           "block": "gtceu:tricalcium_phosphate_indicator",
-          "weight": 6
+          "weight": 12
         },
         {
           "block": "gtceu:pyrochlore_indicator",
-          "weight": 2
+          "weight": 4
         }
       ]
     }

@@ -52,7 +52,7 @@
   "ftbteams.message.promoted": "Promu %s en tant que modérateur !",
   "ftbteams.message.remove_ally": "Le joueur %s in n'est plus un allié de votre équipe !",
   "ftbteams.message.team_disbanded": "Dissous de force l'équipe '%s' (%s) !",
-  "ftbteams.message.transfer_owner": "Défini %s proprétaire de l'équipe !",
+  "ftbteams.message.transfer_owner": "Défini %s propriétaire de l'équipe !",
   "ftbteams.missing_data": "Les données de l'équipe n'ont pas été reçues du serveur !\nFTB Teams ne va pas fonctionner correctement.\nRegarder le journal du serveur pour des erreurs, et assurez-vous d'activer le mode 'En ligne' du serveur.",
   "ftbteams.name_too_short": "Le nom de l'équipe est trop court ! (doit être >=3 à caractères)",
   "ftbteams.not_in_party": "Vous n'avez pas créé ou rejoint d'équipe !",

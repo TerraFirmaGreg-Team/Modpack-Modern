@@ -2,7 +2,7 @@
     "from": "minecraft:overworld",
     "to": "ad_astra:earth_orbit",
     "from_y_min": 500,
-    "from_y_max": 600,
-    "to_y": -64,
+    "from_y_max": 999999,
+    "to_y": -80,
     "cloud_platform": false
 }

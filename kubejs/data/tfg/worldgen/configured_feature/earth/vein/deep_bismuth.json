@@ -26,19 +26,19 @@
         "with": [
           {
             "block": "gtceu:granite_bismuth_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:granite_silver_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:granite_gold_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:granite_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_electrotine_block",
@@ -53,19 +53,19 @@
         "with": [
           {
             "block": "gtceu:diorite_bismuth_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:diorite_silver_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:diorite_gold_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:diorite_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_electrotine_block",
@@ -80,19 +80,19 @@
         "with": [
           {
             "block": "gtceu:gabbro_bismuth_ore",
-            "weight": 9
+            "weight": 18
           },
           {
             "block": "gtceu:gabbro_silver_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:gabbro_gold_ore",
-            "weight": 8
+            "weight": 16
           },
           {
             "block": "gtceu:gabbro_electrotine_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_electrotine_block",
@@ -109,19 +109,19 @@
       "blocks": [
         {
           "block": "tfc:ore/small_bismuthinite",
-          "weight": 9
+          "weight": 18
         },
         {
           "block": "tfc:ore/small_native_silver",
-          "weight": 8
+          "weight": 16
         },
         {
           "block": "tfc:ore/small_native_gold",
-          "weight": 8
+          "weight": 16
         },
         {
           "block": "gtceu:electrotine_indicator",
-          "weight": 4
+          "weight": 8
         }
       ]
     }

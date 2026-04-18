@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -35,7 +35,7 @@
         "with": [
           {
             "block": "gtceu:basalt_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -50,7 +50,7 @@
         "with": [
           {
             "block": "gtceu:andesite_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:dacite_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -80,7 +80,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -95,7 +95,7 @@
         "with": [
           {
             "block": "gtceu:slate_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -110,7 +110,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -125,7 +125,7 @@
         "with": [
           {
             "block": "gtceu:schist_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -140,7 +140,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -155,7 +155,7 @@
         "with": [
           {
             "block": "gtceu:marble_cobaltite_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_cobaltite_block",
@@ -172,7 +172,7 @@
       "blocks": [
         {
           "block": "gtceu:cobaltite_indicator",
-          "weight": 20
+          "weight": 100
         }
       ]
     }
