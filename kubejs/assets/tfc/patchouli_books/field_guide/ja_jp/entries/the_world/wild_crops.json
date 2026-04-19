@@ -23,7 +23,7 @@
         }
       },
       "name": "野生の小麦",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "text": "例として、野生の小麦です。",
       "enable_visualize": false
     },
     {
@@ -329,19 +329,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "作物",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "気温（°C）",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "降水量（mm）",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "大麦"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "オーツ麦"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "ライ麦"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "トウモロコシ"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "小麦"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "米"
         },
         {
           "text": " 15 - 30"
@@ -395,7 +395,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Beet"
+          "text": "ビーツ"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "キャベツ"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "ニンジン"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "ニンニク"
         },
         {
           "text": "-20 - 18"
@@ -431,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "サヤインゲン"
         },
         {
           "text": "  2 - 35"
@@ -440,7 +440,7 @@
           "text": "150 - 410"
         },
         {
-          "text": "Melon"
+          "text": "スイカ"
         },
         {
           "text": "  5 - 37"
@@ -450,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "野生作物の生育環境",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "作物",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "気温（°C）",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "降水量（mm）",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "ジャガイモ"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "カボチャ"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "タマネギ"
         },
         {
           "text": "  0 - 30"
@@ -507,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "大豆"
         },
         {
           "text": "  8 - 30"
@@ -516,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "スカッシュ"
         },
         {
           "text": "  5 - 33"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "サトウキビ"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "トマト"
         },
         {
           "text": "  0 - 36"
@@ -543,7 +543,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Jute"
+          "text": "ジュート"
         },
         {
           "text": "  5 - 37"
@@ -552,7 +552,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Papyrus"
+          "text": "パピルス"
         },
         {
           "text": " 19 - 37"
@@ -561,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "赤ピーマン"
         },
         {
           "text": " 16 - 30"
@@ -570,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "黄ピーマン"
         },
         {
           "text": " 16 - 30"
@@ -579,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Sunflower"
+          "text": "ヒマワリ"
         },
         {
           "text": "  5 - 40"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "野生作物の生育環境",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -607,19 +607,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "作物",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "気温（°C）",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "降水量（mm）",
           "bold": true
         },
         {
-          "text": "Canola"
+          "text": "キャノーラ"
         },
         {
           "text": " -5 - 25"
@@ -628,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Flax"
+          "text": "亜麻"
         },
         {
           "text": " -8 - 25"
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "キュウリ"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "ラディッシュ"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "レンズ豆"
         },
         {
           "text": " -18 - 2"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "野生作物の生育環境",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
