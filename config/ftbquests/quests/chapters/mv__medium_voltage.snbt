@@ -2071,6 +2071,7 @@
 				"{quests.medium_voltage.large_steel_boiler.desc.3}"
 			]
 			id: "6DCF1E5EFFE24901"
+			optional: true
 			shape: "heart"
 			size: 1.25d
 			subtitle: "{quests.medium_voltage.large_steel_boiler.subtitle}"
