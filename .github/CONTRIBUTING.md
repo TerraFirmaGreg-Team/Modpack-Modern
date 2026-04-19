@@ -12,9 +12,10 @@
       - [Step 1: Creating a New Instance in PrismLauncher](#step-1-creating-a-new-instance-in-prismlauncher)
       - [Step 2: Cleaning the Project Folder](#step-2-cleaning-the-project-folder)
       - [Step 3: Make a fork of the Repository](#step-3-make-a-fork-of-the-repository)
-      - [Step 4: Cloning the Repository into instance](#step-4-cloning-the-repository-into-instance)
-      - [Step 5: Synchronizing Dependencies via Pakku](#step-5-synchronizing-dependencies-via-pakku)
-      - [Step 6: Working with Branches and Creating Pull Request](#step-6-working-with-branches-and-creating-pull-request)
+      - [Step 4: Cloning the Repository](#step-4-cloning-the-repository)
+      - [Step 5: Copying and linking development \& instance](#step-5-copying-and-linking-development--instance)
+      - [Step 6: Synchronizing Dependencies via Pakku](#step-6-synchronizing-dependencies-via-pakku)
+      - [Step 7: Working with Branches and Creating Pull Request](#step-7-working-with-branches-and-creating-pull-request)
       - [Step 7: Processing and Merging Pull Request](#step-7-processing-and-merging-pull-request)
     - [3. Additional Recommendations](#3-additional-recommendations)
   - [Russian Version](#russian-version)
@@ -78,8 +79,8 @@ You can do all of this in a web browser.
 2. Make sure you are signed in, and press **`Fork`**.
 3. Configure and press **`Create fork`**
 
-#### Step 4: Cloning the Repository into instance
-If you did not clone the repository in Step 1, follow these steps:
+#### Step 4: Cloning the Repository
+First, create a new folder to store your development folder, to prevent configs getting messed up.
 
 **Method A: Visual Studio Code**  
 1. Open [Visual Studio Code] and ensure your are logged into github. (Bottom left user)
@@ -88,27 +89,33 @@ If you did not clone the repository in Step 1, follow these steps:
 4. Select **`Clone from Github`**.
 5. Search your repository name ("YourNameHere/TerraFirmaGreg-Modern") and select it.
 6. If you are prompted to open existing clone, press **`Clone Again`**.
-7. Select your instance **`minecraft`** folder to clone into.
+7. Select your development folder to clone into.
 
 **Method B: GitHub Desktop**  
 1. Open [GitHub Desktop] and log in.  
 2. Select **File → Clone repository...**  
 3. On the **URL** tab, enter: **`https://github.com/YourNameHere/Modpack-Modern.git`**
-4. In the **Local Path** field, select the `minecraft` folder created in Step 2.  
+4. In the **Local Path** field, select your development folder. 
 5. Click **Clone**.
 
 **Method C: Terminal / cmd**
 This can also be done inside VSCode, using the terminal at the bottom of your screen.  
-1. Open **terminal** or **cmd** in the root directory of instance folder.  
+1. Open **terminal** or **cmd** in the root directory of your development folder.  
 2. Execute the command:
   ```bash
-   git clone https://github.com/YourNameHere/Modpack-Modern.git "minecraft"
+   git clone https://github.com/YourNameHere/Modpack-Modern.git
   ```
 
-> [!TIP] 
-> This approach allows you to work with the main version of the repository for local testing and development.
+#### Step 5: Copying and linking development & instance
+1. Copy all of your files from your development folder into the **`minecraft`** folder.
+2. Delete any folders you are going to change. The most likely one is **`kubejs`**.
+3. Symbolically link your development **`kubejs`** folder to your prism folder. There are a few ways to do this, the easiest being using `mklink Link Target` in a command prompt.
 
-#### Step 5: Synchronizing Dependencies via Pakku
+>[!TIP]
+> This is done so you can edit files in your development instance without your game messing up most files.
+> It is technically possible to develop in your instance folder, but strongly discouraged. If you do, use the local `.git/info/exclude` file to prevent sending random changes.
+
+#### Step 6: Synchronizing Dependencies via Pakku
 1. Open **terminal** or **cmd** in the root directory of the `TerraFirmaGreg-Modern/minecraft` folder.
 2. Execute the following command:
 ```bash
@@ -127,7 +134,7 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
 >[!TIP]
 > Even newer releases may be available in Github Actions. Additionally, if you are developing Core-Modern, you can copy your builds to test it. 
 
-#### Step 6: Working with Branches and Creating Pull Request
+#### Step 7: Working with Branches and Creating Pull Request
 There are two approaches to creating a Pull Request: via terminal and via Visual Studio Code.
 
 **Branch Designation**
