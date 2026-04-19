@@ -9,7 +9,7 @@
 	#Currently supported:
 	#   - DISCORD: Uses terminology like 'join the Discord' and 'post in #channel'.
 	#   - GITHUB: Uses terminology like 'visit the GitHub' and 'post into a new issue'.
-	formulation_type = "DISCORD"
+	formulation_type = "GITHUB"
 	#Anyways log will be uploaded to mclo.gs, but with this option you can wrap link to gnomebot.dev for better formatting.
 	#If help_link equals 'CHANGE_ME', this value will be ignored and gnomebot.dev used.
 	#Supported values: mclo.gs / gnomebot.dev
