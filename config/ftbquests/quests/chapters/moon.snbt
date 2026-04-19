@@ -281,6 +281,7 @@
 							"ftbfiltersystem:filter": "or(item(minecraft:chorus_fruit))"
 						}
 					}
+					title: "{item.minecraft.chorus_fruit}"
 					type: "item"
 				}
 			]

@@ -1,47 +1,47 @@
 {
-	"name": "Processing Latex",
+	"name": "Traitement du latex",
 	"category": "tfc:arborfirmacraft",
 	"icon": "gtceu:sticky_resin",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "So you've gotten some $(thing)latex$() by tapping specific tropical trees... congratulations! Latex by itself doesn't do much, but by processing it we can get some very useful byproducts!$(br2)If you haven't yet found any trees that produce latex, you can look at the $(l:arborfirmacraft/tapping_index)Tapping Index$() entry for more information!"
+			"text": "Alors comme ça vous avez obtenu du $(thing)latex$() en entaillant certains arbres tropicaux... Bravo ! Le latex ne sert pas à grand-chose par lui-même, mais en le traitant on peut obtenir beaucoup de dérivés utiles !$(br2)Si vous n'avez pas encore trouvé d'arbes produisant du latex, vous pouvez regarder l'entrée traitant de l'$(l:arborfirmacraft/tapping_index)entaillage d'arbre$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sticky_resin",
-			"title": "A sticky substance",
+			"title": "Une substance collante",
 			"link_recipe": true,
-			"text": "One of the ways $(thing)Latex$() can be used is in the production of $(item)Sticky Resin$(). Sticky resin needs to be produced by treating latex in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$() with some $(thing)Wood Ash$() to coagulate it."
+			"text": "Une utilisation du $(thing)Latex$() est la production de $(item)Résine collante$(). La résine collante doit être produite à partir de latex dans une $(l:firmalife/oven_appliances#vat)Cuve$() ou une $(l:mechanics/pot)Marmite$() avec de la $(thing)Cendre de bois$() pour le permettre de coaguler."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sticky Business",
+			"title": "Une affaire collante",
 			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
-			"text": "$(thing)Sticky Resin$() has a number of uses, thanks to it being well... sticky. It can be used to create multiple items such as $(item)Tape$() which will let you move crates around without dropping what's inside, but more importantly, it can be used to create $(item)Resin Circuit Boards$() and $(item)Resistors$(), which will be some of your first electrical components."
+			"text": "La $(thing)Résine collante$() possède de nombreuses applications, puisqu'elle est eh bien...collante. Elle peut être utilisée pour produire de nombreux items tels que du $(item)Ruban adhésif$(), qui vous permettra de déplacer des caisses sans en vider le contenu, mais surtout, elle peut être utiliser pour créer des $(item)Cuircuits imprimés en résine$() ainsi que des $(item)Résistors$(), vos premiers composant électriques."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber...",
-			"text": "The other main use of $(thing)Latex$() is to make rubber. To make the latex stronger and harder for industrial uses, it needs to be heated (either in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()) with added $(thing)Sulfur Powder$() to produce $(thing)Vulcanized Latex$(). In fact, this whole process is called vulcanization!"
+			"title": "Je suis le caoutchouc...",
+			"text": "L'autre utilité principale du $(thing)Latex$() est la production de caoutchouc. Pour rendre le latex plus fort et solide pour des applications industrielles, il faut le chauffer (soit dans une $(l:firmalife/oven_appliances#vat)Cuve$() ou une $(l:mechanics/pot)Marmite$()) en ajoutant de la $(thing)Poudre de soufre$() pour produire du $(thing)Caoutchouc vulcanisé$(). En effet, tout se procédé se nomme \"vulcanisation\" !"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Extraction",
 			"item": "gtceu:raw_rubber_dust",
-			"text": "Using a $(thing)Extractor$() or $(thing)Vacuum Chamber$(), the $(thing)Vulcanized Latex$() can be dried into $(item)Raw Rubber Pulp$(). This pulp needs to be further treated with $(thing)Sulfur Dust$() in an $(thing)Alloy Smelter$() to create $(thing)Rubber Ingots$()."
+			"text": "Grâce à un $(thing)Extracteur$() ou une $(thing)Chambre à vide$(), le $(thing)Caoutchouc vulcanisé$() peut être séché en $(thing)Pulpe de caoutchouc brut$(). Cette pulpe doit ensuite être traitée avec de la $(thing)Poussière de soufre$() dans une $(thing)Fonderie d'alliage$() pour créer des $(thing)Lingots de caoutchouc$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_ingot",
-			"text": "$(thing)Rubber Ingots$() have a number of very useful applications, such as for crafting $(thing)Belts$() for your factories or for $(bold)insulating$() $(thing)electrical wires$(). Insulated wires become safe to touch without accidentally electrocuting yourself, and have reduced voltage loss."
+			"text": "Les $(thing)Lingots de caoutchouc$() ont de nombreuses applications utiles, telles que la fabrication de $(thing)Convoyeurs$() pour vos usines ou bien l'$(bold)isolation$() de câbles électriques. Les câbles électriques peuvent être touchés sans s'électrocuter, et ont une perte de voltage réduite."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Conifer Pitch",
+			"title": "Poix de conifère",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "Sticky Resin can also be obtained via $(thing)Conifer Pitch$() tapped from certain $(thing)Coniferous Trees$(), but these trees cannot be used for Rubber."
+			"text": "De la résine collante peut également être obtenue à partir de $(thing)Poix de conifère$(), obtenue à partir de $(thing)Conifères$(), mais ces arbres ne peuvent pas produire de latex."
 		}
 	],
 	"read_by_default": true,

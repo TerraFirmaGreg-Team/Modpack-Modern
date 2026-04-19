@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:granite_blue_topaz_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_blue_topaz_block",
@@ -27,15 +27,15 @@
           },
           {
             "block": "gtceu:granite_topaz_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:granite_chalcocite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:granite_bornite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -46,7 +46,7 @@
         "with": [
           {
             "block": "gtceu:diorite_blue_topaz_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_blue_topaz_block",
@@ -54,15 +54,15 @@
           },
           {
             "block": "gtceu:diorite_topaz_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:diorite_chalcocite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:diorite_bornite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -73,7 +73,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_blue_topaz_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_blue_topaz_block",
@@ -81,15 +81,15 @@
           },
           {
             "block": "gtceu:gabbro_topaz_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:gabbro_chalcocite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gabbro_bornite_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -102,19 +102,19 @@
       "blocks": [
         {
           "block": "gtceu:blue_topaz_bud_indicator",
-          "weight": 7
+          "weight": 14
         },
         {
           "block": "gtceu:topaz_bud_indicator",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:chalcocite_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "gtceu:bornite_indicator",
-          "weight": 1
+          "weight": 2
         }
       ]
     }

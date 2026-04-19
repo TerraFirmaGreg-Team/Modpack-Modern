@@ -42,6 +42,11 @@ const registerBeneathItemTags = (event) => {
 	event.add("tfg:rubber_plants", "beneath:gleamflower")
 	event.add("tfg:rubber_plants", "beneath:burpflower")
 	event.add("tfg:rubber_plants", "beneath:food/fools_funnel")
+
+	global.TFC_EQUIPMENT_METALS.forEach(metal => {
+		event.add("minecraft:hanging_signs", `beneath:wood/hanging_sign/${metal}/crimson`)
+		event.add("minecraft:hanging_signs", `beneath:wood/hanging_sign/${metal}/warped`)
+	})
 }
 
 const registerBeneathBlockTags = (event) => {
@@ -68,4 +73,9 @@ const registerBeneathBlockTags = (event) => {
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/warped')
+
+	global.TFC_EQUIPMENT_METALS.forEach(metal => {
+		event.add("minecraft:mineable/axe", `beneath:wood/hanging_sign/${metal}/crimson`)
+		event.add("minecraft:mineable/axe", `beneath:wood/hanging_sign/${metal}/warped`)
+	})
 }

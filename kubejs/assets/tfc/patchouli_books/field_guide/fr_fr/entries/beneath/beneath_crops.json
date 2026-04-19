@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
+			"title": "Contenu",
 			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
 		},
 		{

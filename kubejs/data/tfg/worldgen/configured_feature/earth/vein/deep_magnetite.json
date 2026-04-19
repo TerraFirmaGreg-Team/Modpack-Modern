@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -27,11 +27,11 @@
           },
           {
             "block": "gtceu:rhyolite_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:rhyolite_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -43,7 +43,7 @@
         "with": [
           {
             "block": "gtceu:basalt_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -51,11 +51,11 @@
           },
           {
             "block": "gtceu:basalt_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:basalt_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -66,7 +66,7 @@
         "with": [
           {
             "block": "gtceu:andesite_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -74,11 +74,11 @@
           },
           {
             "block": "gtceu:andesite_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:andesite_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -89,7 +89,7 @@
         "with": [
           {
             "block": "gtceu:dacite_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -97,11 +97,11 @@
           },
           {
             "block": "gtceu:dacite_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:dacite_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -112,7 +112,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -120,11 +120,11 @@
           },
           {
             "block": "gtceu:quartzite_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:quartzite_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -135,7 +135,7 @@
         "with": [
           {
             "block": "gtceu:slate_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -143,11 +143,11 @@
           },
           {
             "block": "gtceu:slate_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:slate_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -158,7 +158,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -166,11 +166,11 @@
           },
           {
             "block": "gtceu:phyllite_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:phyllite_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -181,7 +181,7 @@
         "with": [
           {
             "block": "gtceu:schist_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -189,11 +189,11 @@
           },
           {
             "block": "gtceu:schist_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:schist_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -204,7 +204,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -212,11 +212,11 @@
           },
           {
             "block": "gtceu:gneiss_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:gneiss_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       },
@@ -227,7 +227,7 @@
         "with": [
           {
             "block": "gtceu:marble_magnetite_ore",
-            "weight": 12
+            "weight": 24
           },
           {
             "block": "gtceu:raw_magnetite_block",
@@ -235,11 +235,11 @@
           },
           {
             "block": "gtceu:marble_vanadium_magnetite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:marble_gold_ore",
-            "weight": 5
+            "weight": 10
           }
         ]
       }
@@ -252,15 +252,15 @@
       "blocks": [
         {
           "block": "tfc:ore/small_magnetite",
-          "weight": 12
+          "weight": 24
         },
         {
           "block": "gtceu:vanadium_magnetite_indicator",
-          "weight": 7
+          "weight": 14
         },
         {
           "block": "tfc:ore/small_native_gold",
-          "weight": 5
+          "weight": 10
         }
       ]
     }

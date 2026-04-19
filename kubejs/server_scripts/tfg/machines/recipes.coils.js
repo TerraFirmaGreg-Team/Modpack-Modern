@@ -18,6 +18,21 @@ function registerTFGCoilRecipes(event) {
 		.itemOutputs('#forge:dusts/magnesia')
 		.duration(20 * 20)
 
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_fullers_earth')
+		.itemInputs('13x #forge:dusts/fullers_earth')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_asbestos')
+		.itemInputs('6x #forge:dusts/asbestos')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_soapstone')
+		.itemInputs('7x #forge:dusts/soapstone')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
 	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia')
 		.itemInputs('#forge:dusts/magnesium_hydroxide')
 		.itemOutputs('#forge:dusts/magnesia')

@@ -1920,7 +1920,7 @@
 		{
 			dependencies: ["5E2E37673AD87A4B"]
 			description: ["{quests.tfg_tips.reach_the_beneath.desc}"]
-			guide_page: "tfc:field_guide tfc:beneath:biomes"
+			guide_page: "tfc:field_guide tfc:beneath/biomes"
 			id: "70DA01DFDAE54224"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.reach_the_beneath.subtitle}"

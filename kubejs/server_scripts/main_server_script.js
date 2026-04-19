@@ -103,6 +103,7 @@ ServerEvents.tags('block', event => {
 	registerTFGBlockTagsNuclear(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
+	registerCraftingStationBlockTags(event)
 })
 
 /**

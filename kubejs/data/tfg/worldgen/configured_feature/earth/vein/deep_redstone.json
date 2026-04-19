@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:granite_redstone_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -27,11 +27,11 @@
           },
           {
             "block": "gtceu:granite_ruby_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:granite_cinnabar_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -42,7 +42,7 @@
         "with": [
           {
             "block": "gtceu:diorite_redstone_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -50,11 +50,11 @@
           },
           {
             "block": "gtceu:diorite_ruby_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:diorite_cinnabar_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       },
@@ -65,7 +65,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_redstone_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -73,11 +73,11 @@
           },
           {
             "block": "gtceu:gabbro_ruby_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:gabbro_cinnabar_ore",
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -90,15 +90,15 @@
       "blocks": [
         {
           "block": "gtceu:redstone_indicator",
-          "weight": 4
+          "weight": 8
         },
         {
           "block": "gtceu:ruby_bud_indicator",
-          "weight": 2
+          "weight": 4
         },
         {
           "block": "gtceu:cinnabar_bud_indicator",
-          "weight": 1
+          "weight": 2
         }
       ]
     }

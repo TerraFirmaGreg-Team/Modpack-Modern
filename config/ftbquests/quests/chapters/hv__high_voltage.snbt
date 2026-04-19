@@ -284,11 +284,6 @@
 					item: "gtceu:hv_energy_input_hatch"
 					type: "item"
 				}
-				{
-					id: "0799251A5E99839C"
-					item: "gtceu:sodium_potassium_bucket"
-					type: "item"
-				}
 			]
 			title: "{quests.high_voltage.hv_energy_hatch.title}"
 			x: 2.5d

@@ -1,5 +1,8 @@
 {
+	"block.vintageimprovements.sulfur_block": "Blok siarki",
 	"block.vintageimprovements.vacuum_chamber": "",
+	"block.vintageimprovements.vibrating_table": "Stół wibrujący",
+	"item.vintageimprovements.aluminum_sheet": "Płyta aluminiowa",
 	"item.vintageimprovements.bronze_rod": "Brązowy pręt",
 	"item.vintageimprovements.bronze_sheet": "Brązowa płyta",
 	"item.vintageimprovements.cast_iron_rod": "Żeliwny pręt",
@@ -16,6 +19,9 @@
 	"vintageimprovements.gui.goggles.high": "Wysoki",
 	"vintageimprovements.gui.goggles.low": "Niski",
 	"vintageimprovements.gui.goggles.medium": "Średnie",
+	"vintageimprovements.gui.goggles.not_enough_rpm": "Za mało siły rotacji na minutę dla aktualnej receptury. Niezbędne:",
+	"vintageimprovements.gui.goggles.smithing_mode": "Wykuwanie",
+	"vintageimprovements.gui.goggles.vacuumizing_mode": "Próżniowanie",
 	"vintageimprovements.item_description.ingredient": "Składnik:",
 	"vintageimprovements.jei.text.any": "Dowolna kolejność",
 	"vintageimprovements.jei.text.high": "Wysoki",
@@ -23,10 +29,12 @@
 	"vintageimprovements.jei.text.medium": "Średnie",
 	"vintageimprovements.ponder.curving_press.text_5": "Przedmioty wejściowe mogą być rzucone pod prasę lub położone na składnicy",
 	"vintageimprovements.ponder.curving_press.text_7": "…prasa zatrzyma je i przetworzy - wszystko automatycznie",
+	"vintageimprovements.recipe.assembly.and": "&",
 	"vintageimprovements.recipe.assembly.any": "Dowolna kolejność",
 	"vintageimprovements.recipe.assembly.high": "Wysoki",
 	"vintageimprovements.recipe.assembly.low": "Niski",
 	"vintageimprovements.recipe.assembly.medium": "Średnie",
 	"vintageimprovements.recipe.assembly.on": "włączony",
-	"vintageimprovements.recipe.assembly.speed": "Prędkość"
+	"vintageimprovements.recipe.assembly.speed": "Prędkość",
+	"vintageimprovements.recipe.vacuumizing": "Próżniowanie"
 }

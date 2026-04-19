@@ -167,8 +167,7 @@ function registerTFGCompostRecipes(event) {
 	//Browns
 	// Lows via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 1), [
-		'A',
-		'B'
+		'BA'
 	], {
 		A: '#tfc:compost_browns_low',
 		B: '#forge:tools/mortars'
@@ -176,8 +175,7 @@ function registerTFGCompostRecipes(event) {
 
 	// Mediums via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 2), [
-		'A',
-		'B'
+		'BA'
 	], {
 		A: '#tfc:compost_browns',
 		B: '#forge:tools/mortars'
@@ -185,8 +183,7 @@ function registerTFGCompostRecipes(event) {
 
 	// Highs via crafting with mortar
 	event.shaped(Item.of('tfg:universal_compost_browns', 4), [
-		'A',
-		'B'
+		'BA'
 	], {
 		A: '#tfc:compost_browns_high',
 		B: '#forge:tools/mortars'

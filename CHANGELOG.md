@@ -2,6 +2,42 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.5] - 18-04-2026
+- We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
+- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Changes
+- The Cracker is now post-cleanroom @TomPlop
+### Bug fixes
+- Fixed a crash on Linux and MacOS
+- Fixed krummholz replacing parts of trees and other blocks @Pyritie
+- Fixed the amount of Red Alloy made in an ABS (#3829) @TomPlop
+- Fixed loose rocks generating on sea ice @Pyritie
+- Fixed Molybdenum Silicon Boron in the OLA being uncraftble @TomPlop
+
+## [0.12.4] - 18-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Breaking Changes
+- Generic "Coal" no longer exists. It's been replaced with TFC's Lignite and Bituminous Coal. Existing raw coal ore should automatically turn into bituminous coal, other items should have shapeless crafting recipes into bituminous coal, and coal ore blocks in your world should also be bituminous coal. You can use lignite and bituminous coal in all of the same ways you used to use raw coal ore as well as the vanilla coal items. This also means coal ore processing has been removed. (#3808) @Pyritie
+### Changes
+- Bloomery now only works with charcoal again @TomPlop
+- Added new malaysian-inspired illages for hot and humid climates (#3810, #3814) @Filiipa
+- Upgraded the EMI Ore Vein Info tab @Pyritie
+- Changed piglin bartering from Cinnabar to Redstone @Pyritie
+- Fixed Create hats for TFC's passive and neutral mobs (#3794) @Astrimitsu
+- You can now use oil, raw oil, light oil, and heavy oil as lamp fuel (#3790) @SakuraKitsurugi
+- Made the in-world natural gas vent indicator feature less common @Pyritie
+- You can now eat ice shavings for hydration @Pyritie
+- Hornfels now drop themselves when mined @Pyritie
+- Olive oil is no longer a steam boiler fuel, only a boiler booster @TomPlop
+- All shore biomes are no longer valid for spawning, so you shouldn't start on a tiny deserted island any more @Pyritie
+### Bug fixes
+- Fixed not being able to eat ice shavings @Pyritie
+- Fixed not being able to use chiseled bricks in gregtech facades (#3807) @Astrimitsu
+
+## [0.12.3] - 12-04-2026
+### Changes
 - Drowned now always carry a javelin on hard difficulty, and zombies sometimes spawn with weapons on hard difficulty too @Pyritie
 - Pressing 'U' on a raw rock will now also filter the Ore Veins tab by that rock type @BlueBoat29
 - Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
@@ -9,9 +45,14 @@
 - The Steam Rock Crusher, Steam Miner, and Mechanical Drill now use a cheaper "drill" component (#3512) @Pyritie
 - Slimes and magma cubes are now weak to slashing damage but resistant to piercing and bludgeoning @Pyritie
 - Drowned now have the same resistances as other zombies @Pyritie
+- Updated the field guide with the new wild animals (#3705) @Pyritie
+- Added missing realgar gem slurry (#3767) @SakuraKitsurugi
+- Some recipes which previously required normal rubber rings/foils can now work with any rubber (#3774) @applenper
 ### Bug fixes
 - Fixed roses taking over the world @Pyritie
 - Fixed the new flowers not counting for bees (#3760) @Froffy025
+- Fixed a crash caused by loading an old worldgen chunk with an active fluid rig @Pyritie
+- Fixed the bounding box of the new pastoral rancher multiblock so it detects animals in the correct area @TomPlop
 
 ## [0.12.2] - 11-04-2026
 WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!

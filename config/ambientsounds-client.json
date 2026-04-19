@@ -88,12 +88,12 @@
     },
     "cold": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.75
     },
     "desert": {
       "overall": 1,
       "cicadas-desert": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.75
     },
     "forest_cold": {
       "overall": 1,
@@ -122,8 +122,8 @@
     },
     "highland": {
       "overall": 1,
-      "heavy-wind": 1,
-      "wind-in-leaves": 1
+      "heavy-wind": 0.75,
+      "wind-in-leaves": 0.85
     },
     "jungle": {
       "overall": 1,
@@ -148,7 +148,7 @@
     "ocean": {
       "overall": 1,
       "ocean": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.65
     },
     "ocean_deep": {
       "overall": 1,
@@ -176,11 +176,11 @@
     },
     "sky": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.65
     },
     "snow": {
       "overall": 1,
-      "wind.light-wind": 1
+      "wind.light-wind": 0.50
     },
     "space": {
       "overall": 1

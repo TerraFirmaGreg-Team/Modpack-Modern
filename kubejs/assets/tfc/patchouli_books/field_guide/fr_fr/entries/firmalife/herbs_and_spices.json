@@ -39,7 +39,7 @@
 				}
 			],
 			"name": "Basilic",
-			"text": "$(thing)Basil$() grandit entre 12 et 25C, et 300 à 500 mm de pluie.",
+			"text": "Le $(thing)basilic$() pousse entre 12 et 25 °C, et entre 300 et 500 mm de précipitations.",
 			"enable_visualize": false
 		},
 		{
@@ -283,7 +283,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "Des $(item)Boules de plantes$() peuvent être utilisées pour planter différents types d'herbes. Cela peut être utile après avoir nettoyé votre base pour construire. La recette de la boule de plantes nécessite du $(item)Compost$() et 4 $(thing)Graines$()."
+			"text": "Des $(item)Boules de graines$() peuvent être utilisées pour planter différents types d'herbes. Cela peut être utile après avoir nettoyé votre base pour construire. La recette de la boule de plantes nécessite du $(item)Compost$() et 4 $(thing)Graines$()."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,7 +301,7 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Une herbe à papillon.",
 			"enable_visualize": false
 		},
 		{

@@ -27,8 +27,9 @@ const registerMinecraftItemTags = (event) => {
 
 	event.remove('minecraft:creeper_drop_music_discs', ['minecraft:music_disc_11'])
 
+	event.remove('forge:gems', 'tfc:ore/lignite')
+	event.remove('forge:gems', 'tfc:ore/bituminous_coal')
 	event.remove('forge:gems', 'minecraft:charcoal')
-	event.remove('forge:gems', 'minecraft:coal')
 	event.remove('forge:gems', 'minecraft:flint')
 
 	event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
@@ -38,7 +39,8 @@ const registerMinecraftItemTags = (event) => {
 	event.add('tfc:makes_black_dye', 'minecraft:ink_sac')
 	event.add('tfc:makes_white_dye', 'minecraft:bone_meal')
 
-	event.add('create:blaze_burner_fuel/regular', 'minecraft:coal')
+	event.add('create:blaze_burner_fuel/regular', 'tfc:ore/lignite')
+	event.add('create:blaze_burner_fuel/regular', 'tfc:ore/bituminous_coal')
 	event.add('create:blaze_burner_fuel/regular', 'minecraft:charcoal')
 
 	event.add("tfg:rubber_plants", "minecraft:spore_blossom")

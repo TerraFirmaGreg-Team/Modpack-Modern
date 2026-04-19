@@ -1,26 +1,26 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Primitive Anvils",
+  "name": "Enclumes Primitives",
   "category": "tfc:getting_started",
   "icon": "tfc:rock/anvil/granite",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "An alternative to casting tools directly in the early game, and a requirement for higher tier metals, is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:mechanics/anvils#working)working$() and $(l:getting_started/primitive_anvils#welding)welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+      "text": "Une $(thing)Enclume$() est une alternative au moulage direct d'outils en début de jeu et un prérequis aux métaux de plus haut niveau. Une enclume possède deux grandes utilités : Le $(l:mechanics/anvils#working)travail du métal$() et son $(l:getting_started/primitive_anvils#welding)soudage$(). Une enclume peut souder des doubles lingots du type requis pour créer l'enclume de niveau supérieur, ce qui sera nécessaire pour travailler d'autres items de ce métal."
     },
     {
       "type": "patchouli:text",
-      "text": "First, you need to acquire a block of $(thing)raw rock$(), that is $(thing)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(thing)igneous intrusive$() (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could $(l:getting_started/primitive_anvils#raw_rock)extract one$() from the surrounding rock."
+      "text": "Vous aurez besoin en premier lieu de récolter un bloc de $(thing)pierre brute$(), qui soit $(thing)ignée extrusive$() (Rhyolite, Basalte, Andésite ou Dacite) ou bien $(thing)ignée intrusive$() (Granite, Diorite ou Gabbro). Vous pouvez trouver et utiliser un bloc à nu, ou vous pouvez l'$(l:getting_started/primitive_anvils#raw_rock)extraire$() de la roche avoisinnante."
     },
     {
       "type": "patchouli:text",
       "anchor": "stone_anvils",
-      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
-      "title": "Rock Anvil"
+      "text": "Vous aurez aussi besoin d'un $(thing)marteau$() fait en n'importe quel matériau. Afin de créer l'enclume, faites simplement un clic droit sur la $(thing)face supérieure$() exposée d'un de ces blocs bruts avec votre $(thing)marteau$(), et voilà ! Une enclume va être créée.$(br2)Les enclume ont différents $(l:mechanics/anvils#tiers)niveaux$() et l'enclume en pierre est le niveau 0 - le plus bas niveau. Elle ne peut que $(l:getting_started/primitive_anvils#welding)souder$() des lingots de niveau I.",
+      "title": "Enclume en pierre"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Converting the center raw rock to an anvil.",
+      "text": "Conversion du bloc brut central en enclume.",
       "multiblocks": [
         {
     "pattern": [
@@ -42,12 +42,12 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
-      "title": "Obtaining Raw Rock"
+      "text": "Afin d'obtenir un bloc de pierre brute sans la briser en plusieurs morceaux, elle doit être $(thing)extraite$(). Vous devez miner les six blocs adjacents à ce bloc de pierre brut. Une fois qu'elle sera entourée d'air de tous les côtés, elle se changera en item récupérable.",
+      "title": "Obtenir de la Pierre brute"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+      "text": "Minage des six côtés d'un morceau de pierre brute. Une fois fini, le bloc central se transformera en item.",
       "multiblocks": [
         {
     "pattern": [
@@ -215,12 +215,12 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
-      "title": "Welding"
+      "text": "Le soudage est un processus au travers duquel deux items sont fusionnés afin de créer un nouvel item. Le soudage fonctionne de la même manière que ce soit sur une $(l:getting_started/primitive_anvils)Enclume en Pierre$() ou une $(l:mechanics/anvils)enclume en métal$().$(br2)D'abord, vous devez placer les deux items que vous voulez souder sur l'enclume. Vous pouvez pour cela utiliser les items sur l'enclume, ou ouvrir l'interface de l'enclume puis les insérer dans les deux emplacements à gauche.",
+      "title": "Soudage"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "Vous aurez besoin d'au moins un $(l:mechanics/flux)Flux$() dans l'enclume pour faciliter le processus de soudage. Ensuite, pendant que les deux items sont $(l:mechanics/heating)suffisamment chauds$() pour être soudés - l'infobulle dira \"Peut Souder\" - vous devrez utiliser n'importe lequel des $(thing)Marteaux$() sur l'enclume. Vous entendrez un son de marteau and les items seront soudés ensemble."
     }
   ],
   "read_by_default": true,

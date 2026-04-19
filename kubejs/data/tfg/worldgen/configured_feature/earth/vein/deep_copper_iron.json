@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:granite_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -27,15 +27,15 @@
           },
           {
             "block": "gtceu:granite_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:granite_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:granite_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -46,7 +46,7 @@
         "with": [
           {
             "block": "gtceu:diorite_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -54,15 +54,15 @@
           },
           {
             "block": "gtceu:diorite_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:diorite_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:diorite_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -73,7 +73,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -81,15 +81,15 @@
           },
           {
             "block": "gtceu:gabbro_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:gabbro_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gabbro_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -100,7 +100,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -108,15 +108,15 @@
           },
           {
             "block": "gtceu:rhyolite_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:rhyolite_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:rhyolite_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -128,7 +128,7 @@
         "with": [
           {
             "block": "gtceu:basalt_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -136,15 +136,15 @@
           },
           {
             "block": "gtceu:basalt_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:basalt_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:basalt_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -155,7 +155,7 @@
         "with": [
           {
             "block": "gtceu:andesite_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -163,15 +163,15 @@
           },
           {
             "block": "gtceu:andesite_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:andesite_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:andesite_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       },
@@ -182,7 +182,7 @@
         "with": [
           {
             "block": "gtceu:dacite_chalcopyrite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -190,15 +190,15 @@
           },
           {
             "block": "gtceu:dacite_goethite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:dacite_pyrite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:dacite_copper_ore",
-            "weight": 2
+            "weight": 4
           }
         ]
       }
@@ -211,19 +211,19 @@
       "blocks": [
         {
           "block": "gtceu:chalcopyrite_indicator",
-          "weight": 6
+          "weight": 12
         },
         {
           "block": "gtceu:goethite_indicator",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:pyrite_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "tfc:ore/small_native_copper",
-          "weight": 2
+          "weight": 4
         }
       ]
     }

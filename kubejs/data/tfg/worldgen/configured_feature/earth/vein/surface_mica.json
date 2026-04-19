@@ -19,7 +19,7 @@
         "with": [
           {
             "block": "gtceu:granite_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -34,7 +34,7 @@
         "with": [
           {
             "block": "gtceu:diorite_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -49,7 +49,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -64,7 +64,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -80,7 +80,7 @@
         "with": [
           {
             "block": "gtceu:basalt_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -95,7 +95,7 @@
         "with": [
           {
             "block": "gtceu:andesite_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -110,7 +110,7 @@
         "with": [
           {
             "block": "gtceu:dacite_mica_ore",
-            "weight": 20
+            "weight": 100
           },
           {
             "block": "gtceu:raw_mica_block",
@@ -127,7 +127,7 @@
       "blocks": [
         {
           "block": "gtceu:mica_indicator",
-          "weight": 20
+          "weight": 100
         }
       ]
     }

@@ -28,7 +28,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Chaque $(l:mechanics/crops)crop$() qui peut être cultivé peut aussi être trouvé dans la nature. Les cultures sauvages ressembleront à leurs homologues cultivés, mais sont plus cachées dans l'herbe. Les cultures sauvages ne sont mûries que de juin à octobre, sinon elles sont mortes jusqu'à l'été prochain."
+      "text": "Chaque $(l:mechanics/crops)culture$() qui peut être cultivée peut aussi être trouvée dans la nature. Les cultures sauvages ressemblent à leurs homologues cultivés, mais sont plus cachées dans l'herbe. Les cultures sauvages ne sont matures que de juin à octobre, sinon elles sont mortes jusqu'à l'été prochain."
     },
     {
       "type": "tfc:multimultiblock",
@@ -318,7 +318,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Les cultures sauvages vont apparaître dans les climats près de l'endroit où la culture peut être cultivée, donc si vous cherchez une culture spécifique, regardez dans le climat où la culture peut être cultivée. Cependant, contrairement à $(l:mechanics/crops)Crops$() que le joueur a planté, les cultures sauvages n'ont pas besoin de $(l:mechanics/hydration)Hydration$(). À la place, ils sont trouvés dans les zones en fonction de la moyenne de $()Temperature$() et de $()Rainfall$().",
+      "text": "Les cultures sauvages vont apparaître dans les climats près de l'endroit où la culture peut être cultivée, donc si vous cherchez une culture spécifique, regardez dans le climat où la culture peut être cultivée. Cependant, contrairement aux $(l:mechanics/crops)Cultures$() que le joueur a plantées, les cultures sauvages n'ont pas besoin d'être $(l:mechanics/hydration)Hydratées$(). À la place, elles sont trouvées dans les zones en fonction de la moyenne de $()Température$() et de $()Précipitations$().",
       "title": "Trouver les cultures sauvages"
     },
     {

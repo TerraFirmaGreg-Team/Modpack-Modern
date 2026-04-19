@@ -19,19 +19,19 @@
         "with": [
           {
             "block": "gtceu:granite_thorium_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:granite_uraninite_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:granite_emerald_ore",
-            "weight": 1
+            "weight": 2
           },
           {
             "block": "gtceu:granite_beryllium_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:raw_beryllium_block",
@@ -46,19 +46,19 @@
         "with": [
           {
             "block": "gtceu:diorite_thorium_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:diorite_uraninite_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:diorite_emerald_ore",
-            "weight": 1
+            "weight": 2
           },
           {
             "block": "gtceu:diorite_beryllium_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:raw_beryllium_block",
@@ -73,19 +73,19 @@
         "with": [
           {
             "block": "gtceu:gabbro_thorium_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:gabbro_uraninite_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:gabbro_emerald_ore",
-            "weight": 1
+            "weight": 2
           },
           {
             "block": "gtceu:gabbro_beryllium_ore",
-            "weight": 2
+            "weight": 4
           },
           {
             "block": "gtceu:raw_beryllium_block",
@@ -102,19 +102,19 @@
       "blocks": [
         {
           "block": "gtceu:thorium_indicator",
-          "weight": 4
+          "weight": 8
         },
         {
           "block": "gtceu:uraninite_indicator",
-          "weight": 2
+          "weight": 4
         },
         {
           "block": "gtceu:emerald_bud_indicator",
-          "weight": 1
+          "weight": 2
         },
         {
           "block": "gtceu:beryllium_indicator",
-          "weight": 2
+          "weight": 4
         }
       ]
     }
