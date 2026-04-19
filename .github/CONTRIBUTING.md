@@ -112,7 +112,7 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
 
 >[!TIP]
 > This is done so you can edit files in your development instance without your game messing up most files.
-> It is technically possible to develop in your instance folder, but strongly discouraged. If you do, use the local `.git/info/exclude` file to prevent sending random changes.
+> It is technically possible to develop in your instance folder, but strongly discouraged. If you do, create a local `.mygitignore` and run `git config --local core.excludesFile .mygitignore` to prevent adding unnessacary changes.
 
 #### Step 6: Synchronizing Dependencies via Pakku
 1. Open **terminal** or **cmd** in the root directory of the `TerraFirmaGreg-Modern/minecraft` folder.
