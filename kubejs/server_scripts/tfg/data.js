@@ -361,7 +361,29 @@ function registerTFGItemSize(event) {
 	event.itemSize("create:honeyed_apple", "small", "light")
 
 	//Crafting Station
-	event.itemSize("craftingstation:crafting_station", "large", "heavy", "crafting_station");
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.WAB_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.BENEATH_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.TFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
 }
 
 //#endregion
