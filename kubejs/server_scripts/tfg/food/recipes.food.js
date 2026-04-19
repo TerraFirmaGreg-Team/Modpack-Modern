@@ -1510,6 +1510,16 @@ function registerTFGFoodRecipes(event) {
 			.itemOutput(TFC.isp.of(`${i}x tfg:food/cooked_fries`).copyFood()
 		).id(`tfg:pot/cooked_fries_${i}`);
 
+		// Popcorn
+		event.recipes.tfc.pot(
+			Array(i).fill('tfc:food/maize_grain'),
+			TFC.fluidStackIngredient('#firmalife:oils', 50 * i),
+			20*20,
+			200
+			)
+			.itemOutput(TFC.isp.of(`${i}x tfg:food/popcorn`).copyFood()
+		).id(`tfg:pot/popcorn_${i}`);
+		
 		// Beer Battered Cheese Curds
 		event.recipes.tfc.pot(
 			Array(i).fill('tfg:food/raw_beer_battered_cheese_curds'),
@@ -1540,6 +1550,21 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['tfg:food/cooked_fries'],
 		fluidInputs: ['#firmalife:oils 100'],
 		itemOutputProvider: TFC.isp.of('tfg:food/cooked_fries').copyFood().addTrait('firmalife:oven_baked')
+	});
+
+	// Popcorn
+	global.registerFoodRecipe(event, 'food_oven', 'popcorn', 20*10, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+		itemInputs: ['tfc:food/maize_grain'],
+		itemOutputs: ['tfg:food/popcorn'],
+		fluidInputs: ['#firmalife:oils 50'],
+		itemOutputProvider: TFC.isp.of('tfg:food/popcorn').copyFood().addTrait('firmalife:oven_baked')
+	});
+
+	global.processorRecipe(event, 'buttered_popcorn', 20*4, 8, {
+		itemInputs: ['2x tfg:food/popcorn', 'firmalife:food/butter'],
+		itemOutputs: ['2x tfg:food/buttered_popcorn'],
+		circuit: 3,
+		itemOutputProvider: TFC.isp.of('2x tfg:food/buttered_popcorn').copyFood()
 	});
 
 	// Beer Battered Cheese Curds

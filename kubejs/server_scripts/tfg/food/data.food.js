@@ -427,6 +427,22 @@ function registerTFGFoodData(event) {
 		food.water(20);
 		food.decayModifier(0);
 	});
+	
+	// Popcorn
+	event.foodItem('tfg:food/popcorn', (food) => {
+		food.hunger(1);
+		food.decayModifier(1);
+		food.grain(1);
+		food.saturation(1);
+	});
+
+	event.foodItem('tfg:food/buttered_popcorn', (food) => {
+		food.hunger(2);
+		food.decayModifier(1);
+		food.grain(1);
+		food.dairy(0.3);
+		food.saturation(2);
+	});
 
 	// Fries
 	event.foodItem('tfg:food/raw_fries', (food) => {
