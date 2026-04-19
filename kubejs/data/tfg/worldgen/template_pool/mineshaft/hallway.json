@@ -1,0 +1,42 @@
+{
+	"name": "tfg:mineshaft/hallway",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:mineshaft/hallway/hallway_s_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/hallway/hallway_t_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
