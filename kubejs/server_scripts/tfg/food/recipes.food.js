@@ -1561,7 +1561,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	global.processorRecipe(event, 'buttered_popcorn', 20*4, 8, {
-		itemInputs: ['2x tfg:food/popcorn', 'firmalife:food/butter'],
+		itemInputs: ['2x tfg:food/popcorn', 'firmalife:food/butter', 'tfc:powder/salt'],
 		itemOutputs: ['2x tfg:food/buttered_popcorn'],
 		circuit: 3,
 		itemOutputProvider: TFC.isp.of('2x tfg:food/buttered_popcorn').copyFood()
