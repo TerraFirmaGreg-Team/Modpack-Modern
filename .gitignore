@@ -181,3 +181,12 @@ config/xaero/world-map/client.cfg
 config/xaero/world-map/common.cfg
 config/xaero/world-map/profiles/default.cfg
 config/xaero/world-map/server_profiles/default.cfg
+config/packetfixer.properties
+config/xaerominimap-common.txt
+config/xaeroworldmap-common.txt
+config/showcaser/showcaser-server-config.json
+config/showcaser/showcaser-server-storage.json
+defaultconfigs/copycats-server.toml
+defaultconfigs/craftingstation-server.toml
+defaultconfigs/gtceuterminal-server.toml
+defaultconfigs/exposure-server.toml

@@ -154,7 +154,9 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
 
 >[!WARNING]
 > If you've changed a config file, it may not be counted. Why? Check .gitignore and remove it if **you've** made changes to it.
-> Often the game will update these on it's own, which is fine, but if the modpack doesn't use it at all, don't add new files. 
+> Often the game will update these on it's own, which is fine, but if the modpack doesn't use it at all, don't add new files.
+> If a mod has updated a config, check it if you can and make sure that none of our settings got accidentally changed. 
+> If a mod ADDS a new config, you can add it to the .gitignore.
 
 **Method A: Visual Studio Code**
   >[!TIP]
