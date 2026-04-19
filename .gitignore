@@ -191,3 +191,6 @@ libEffekseerNativeForJava.so
 /defaultconfigs/gtceuterminal-server.toml
 /defaultconfigs/exposure-server.toml
 /kubejs/jsconfig.json
+
+# While this is modified in the repository, it will be force formatted, so if you need to edit it, you must do it manually.
+/config/InventoryHUD/curios.json
