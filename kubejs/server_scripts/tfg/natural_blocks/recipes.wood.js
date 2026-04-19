@@ -1302,6 +1302,7 @@ function registerTFGWoodenRecipes(event) {
         // Removed recipe changes
             event.remove({ output: 'gtceu:treated_wood_door' });
             event.remove({ output: 'gtceu:treated_wood_trapdoor' });
+			event.remove({ output: 'gtceu:treated_wood_slab' });
             event.remove({ output: 'gtceu:treated_wood_stairs' });
             event.remove({ output: 'gtceu:treated_wood_fence' });
             event.remove({ output: 'gtceu:treated_wood_fence_gate' });
