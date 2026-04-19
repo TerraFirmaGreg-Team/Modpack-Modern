@@ -9,10 +9,10 @@
           - [Reccomended Plugins:](#reccomended-plugins)
     - [2. Project Preparation](#2-project-preparation)
       - [Step 1: Creating a New Instance in PrismLauncher](#step-1-creating-a-new-instance-in-prismlauncher)
-      - [Step 2: Cleaning the Project Folder](#step-2-cleaning-the-project-folder)
+      - [Step 2: Finding the Prism Folder](#step-2-finding-the-prism-folder)
       - [Step 3: Make a fork of the Repository](#step-3-make-a-fork-of-the-repository)
       - [Step 4: Cloning the Repository](#step-4-cloning-the-repository)
-      - [Step 5: Copying and linking development \& instance](#step-5-copying-and-linking-development--instance)
+      - [Step 5: Copying and linking development \& instance folders](#step-5-copying-and-linking-development--instance-folders)
       - [Step 6: Synchronizing Dependencies via Pakku](#step-6-synchronizing-dependencies-via-pakku)
       - [Step 7: Working with Branches and Creating Pull Request](#step-7-working-with-branches-and-creating-pull-request)
       - [Step 8: Processing and Merging Pull Request](#step-8-processing-and-merging-pull-request)
@@ -64,9 +64,8 @@
 > Creating instance (Select 47.4.13 for forge instead of pictured)
 > ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
 
-#### Step 2: Cleaning the Project Folder
+#### Step 2: Finding the Prism Folder
 1. Locate the instance folder in the PrismLauncher directory at **`TerraFirmaGreg-Modern/minecraft`**.
-2. Delete all files and directories inside the `minecraft` folder to avoid version conflicts and leftover old data.
 
 > [!TIP]  
 > For quick access, right-click on the instance and select **`Folder`**.  
@@ -105,7 +104,7 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
    git clone https://github.com/YourNameHere/Modpack-Modern.git
   ```
 
-#### Step 5: Copying and linking development & instance
+#### Step 5: Copying and linking development & instance folders
 1. Copy all of your files from your development folder into the **`minecraft`** folder.
 2. Delete any folders you are going to change. The most likely one is **`kubejs`**.
 3. Symbolically link your development **`kubejs`** folder to your prism folder. There are a few ways to do this, the easiest being using `mklink Link Target` in a command prompt.
