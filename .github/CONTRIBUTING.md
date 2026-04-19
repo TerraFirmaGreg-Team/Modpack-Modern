@@ -1,5 +1,4 @@
 # Contribution to TerraFirmaGreg-Modern
-8//
 ## Table of Contents
 - [Contribution to TerraFirmaGreg-Modern](#contribution-to-terrafirmagreg-modern)
   - [Table of Contents](#table-of-contents)
