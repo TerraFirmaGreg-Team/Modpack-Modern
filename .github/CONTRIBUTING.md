@@ -1,5 +1,5 @@
 # Contribution to TerraFirmaGreg-Modern
-
+8//
 ## Table of Contents
 - [Contribution to TerraFirmaGreg-Modern](#contribution-to-terrafirmagreg-modern)
   - [Table of Contents](#table-of-contents)
@@ -7,11 +7,12 @@
     - [1. Required and Recommended Software](#1-required-and-recommended-software)
       - [Required Software](#required-software)
       - [Recommended Software](#recommended-software)
+          - [Reccomended Plugins:](#reccomended-plugins)
     - [2. Project Preparation](#2-project-preparation)
-      - [Step 1: Cloning the Main Repository](#step-1-cloning-the-main-repository)
-      - [Step 2: Creating a New Instance in PrismLauncher](#step-2-creating-a-new-instance-in-prismlauncher)
-      - [Step 3: Cleaning the Project Folder](#step-3-cleaning-the-project-folder)
-      - [Step 4: Cloning the Repository into an Empty Folder](#step-4-cloning-the-repository-into-an-empty-folder)
+      - [Step 1: Creating a New Instance in PrismLauncher](#step-1-creating-a-new-instance-in-prismlauncher)
+      - [Step 2: Cleaning the Project Folder](#step-2-cleaning-the-project-folder)
+      - [Step 3: Make a fork of the Repository](#step-3-make-a-fork-of-the-repository)
+      - [Step 4: Cloning the Repository into instance](#step-4-cloning-the-repository-into-instance)
       - [Step 5: Synchronizing Dependencies via Pakku](#step-5-synchronizing-dependencies-via-pakku)
       - [Step 6: Working with Branches and Creating Pull Request](#step-6-working-with-branches-and-creating-pull-request)
       - [Step 7: Processing and Merging Pull Request](#step-7-processing-and-merging-pull-request)
@@ -46,72 +47,55 @@
 #### Recommended Software
 - [PrismLauncher]: An optimized launcher for Minecraft modifications, making it easier to create separate instances.
 - [Visual Studio Code]: A code editor with extensive capabilities for working with projects and integrating various plugins.
-- [GitHub Desktop]: A graphical client for managing Git repositories developed by GitHub.
+###### Reccomended Plugins:
+- [Github Pull Requests]
 
 ---
 
 ### 2. Project Preparation
 
-#### Step 1: Cloning the Main Repository
-1. Go to the official repository page of [TerraFirmaGreg-Modern] on GitHub.
-2. Clone the repository using one of the following methods:
-
-   **Method A: GitHub Desktop**  
-   - Open [GitHub Desktop] and log in.  
-   - Select **File → Clone repository...**  
-   - Go to the **URL** tab and enter:
-      ```bash
-      https://github.com/TerraFirmaGreg-Team/Modpack-Modern.git
-      ```
-   - In the **Local Path** field, select or create a folder for the repository, e.g., `TerraFirmaGreg-Modern/minecraft`.  
-   - Click **Clone**.
-
-   **Method B: Terminal / cmd**  
-   - Open **terminal** or **cmd** in the desired directory.  
-   - Execute the command:
-      ```bash
-      git clone https://github.com/TerraFirmaGreg-Team/Modpack-Modern.git "PATH_TO_FOLDER/TerraFirmaGreg-Modern/minecraft"
-      ```
-   - Replace `PATH_TO_FOLDER` with the appropriate path in your environment.
-
-> [!TIP]  
-> This approach allows you to immediately work with the main version of the repository for local testing and development.
-
-#### Step 2: Creating a New Instance in PrismLauncher
+#### Step 1: Creating a New Instance in PrismLauncher
 1. Open [PrismLauncher] and click on the **`Add Instance`** button.
 2. In the **Name** field, enter the name **`TerraFirmaGreg-Modern`**.
-3. Select Minecraft version **`1.20.1`** and Forge version **`47.4.6`** — these versions are necessary for the modpack to work correctly.
+3. Select Minecraft version **`1.20.1`** and Forge version **`47.4.13`** — these versions are necessary for the modpack to work correctly.
 
 > [!TIP]  
+> Creating instance (Select 47.4.13 for forge instead of pictured)
 > ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/new_instances.png?raw=true)
 
-#### Step 3: Cleaning the Project Folder
+#### Step 2: Cleaning the Project Folder
 1. Locate the instance folder in the PrismLauncher directory at **`TerraFirmaGreg-Modern/minecraft`**.
+2. Delete all files and directories inside the `minecraft` folder to avoid version conflicts and leftover old data.
 
 > [!TIP]  
 > For quick access, right-click on the instance and select **`Folder`**.  
 > ![Instance folder in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/wiki/prism_folder.png?raw=true)
 
-> [!WARNING]  
-> Delete all files and directories inside the `minecraft` folder to avoid version conflicts and leftover old data.
+#### Step 3: Make a fork of the Repository
+You can do all of this in a web browser.
+1. Open [TerraFirmaGreg-Modern] repository.
+2. Make sure you are signed in, and press **`Fork`**.
+3. Configure and press **`Create fork`**
 
-#### Step 4: Cloning the Repository into an Empty Folder
+#### Step 4: Cloning the Repository into instance
 If you did not clone the repository in Step 1, follow these steps:
 
-**Method A: GitHub Desktop**  
-1. Open [GitHub Desktop] and log in.  
-2. Select **File → Clone repository...**  
-3. On the **URL** tab, enter: **`https://github.com/TerraFirmaGreg-Team/Modpack-Modern.git`**
-4. In the **Local Path** field, select the `TerraFirmaGreg-Modern/minecraft` folder created in Step 2.  
-5. Click **Clone**.
+**Method A: Visual Studio Code**  
+1. Open [Visual Studio Code] and ensure your are logged into github. (Bottom left user)
+2. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the Command Palette.
+3. Search **`Git: Clone`** and select it. 
+4. Select **`Clone from Github`**.
+5. Search your repository name ("YourNameHere/TerraFirmaGreg-Modern") and select it.
+6. If you are prompted to open existing clone, press **`Clone Again`**.
+7. Select your instance **minecraft** folder to clone into.
 
-**Method B: Terminal / cmd**  
-1. Open **terminal** or **cmd** in the root directory of the `TerraFirmaGreg-Modern` folder.  
+**Method B: Terminal / cmd**
+This can also be done inside VSCode, using the terminal at the bottom of your screen.  
+1. Open **terminal** or **cmd** in the root directory of instance folder.  
 2. Execute the command:
   ```bash
-   git clone https://github.com/TerraFirmaGreg-Team/Modpack-Modern.git "minecraft"
+   git clone https://github.com/YourNameHere/Modpack-Modern.git "minecraft"
   ```
-  This command creates a minecraft folder inside TerraFirmaGreg-Modern and downloads the repository files there.
 
 > [!TIP] 
 > This approach allows you to work with the main version of the repository for local testing and development.
@@ -122,54 +106,72 @@ If you did not clone the repository in Step 1, follow these steps:
 ```bash
   pakku fetch
 ```
+
 > [!TIP]
 > This command downloads all necessary project files into the modpacks folder. Note that the command may differ depending on how Pakku was installed.
 
+>[!WARNING]
+> This will not update your TerraFirmaGreg-Core-Modern! Keep following.
+
+3. Open [TerraFirmaGreg-Core-Modern] and download latest release.
+4. In your mods folder, find the TerraFirmaGreg-Core-Modern jar file, delete it, and replace it with the one you just downloaded.
+
+>[!TIP]
+> Even newer releases may be available in Github Actions. Additionally, if you are developing Core-Modern, you can copy your builds to test it. 
+
 #### Step 6: Working with Branches and Creating Pull Request
-There are two approaches to creating a Pull Request: via terminal and via GitHub Desktop.
+There are two approaches to creating a Pull Request: via terminal and via Visual Studio Code.
 
 **Branch Designation**
   - **`main`:**
     - This branch contains the stable, tested, and released version of the project. 
     - It should only contain changes that have passed the full review cycle.
-    - Changes can be accepted by members of the [Dev-Modern] team; at least one approval is required.
+    - Changes can be accepted by members of the **Dev** team; at least one approval is required.
 
   - **`dev`:**
     - The main development branch where new features, bug fixes, and experimental changes are integrated.
     - After testing, changes from dev may be merged into the main branch for a new version release.
-    - Changes can be accepted by members of the [Contributor-Modern] team; at least two approvals are required.
+    - Changes can be accepted by members of the **Contributor** team; at least two approvals are required.
 
   - **`feature/bugfix-branch`:**
     - For example, (`feature/add-custom-quest`) or (`bugfix/fix-launch-crash`). 
     - It is recommended to create separate branches from dev for developing specific features or fixing bugs.
     - After completing the work, merge them back into dev.
-    - Members of the [Contributor-Modern] team can create branches in the main repository.
+    - Members of the **Contributor** team can create branches in the main repository.
+
+>[!TIP]
+> Remember, you can make branches in your fork freely!
 
 **Process of Creating Pull Request**
 
-**Method A: GitHub Desktop**
-
+**Method A: Visual Studio Code**
+  >[!TIP]
+  >Most everything in VSCode can also be done through the command palette!
 1. **Creating a New Branch:**
-   - Open [GitHub Desktop] and ensure that your local repository **`TerraFirmaGreg-Modern`** is selected.
-   - In the top menu, select **`Branch → New Branch...`**.
+   - Open [Visual Studio Code] and ensure that you are in your development folder.
+   - In the sidebar, open the **Source Control** menu. 
+   - Next to changes, click the three dots and click **`Branch > Create Branch`**
    - In the appearing window, enter a name for your new branch (e.g., **`feature/add-custom-quest`** or **`bugfix/fix-launch-crash`**).  
-   - Click **`Create Branch`**. Now you are in a new branch created from the dev branch.
+   - Press <kbd>Enter</kbd> to confirm. Now you are in a new branch created from the dev branch.
 
 2. **Making and Committing Changes:**
-   - Make the necessary changes to the project using your favorite code editor (e.g., [Visual Studio Code]).
-   - Return to GitHub Desktop, go to the **`Changes`** tab, where you will see a list of modified files.
-   - Add a description of your changes, enter a commit message, and click **`Commit to <branch_name>`**.
+   - Make the necessary changes to the project.
+   - Return to Source Control, where you will see a list of modified files.
+   - Add a description of your changes, enter a commit message, and click **`Commit`**.
 
 3. **Publishing the Branch:**
-   - After committing changes, click the **`Push origin`** button in the top right corner of GitHub Desktop. 
+   - After committing changes, click the new **`Push`** button. 
    - This will send your new branch to GitHub.
 
 4. **Creating Pull Request:**
-   - After a successful push, [GitHub Desktop] will offer you a **Create Pull Request** button or a link **View on GitHub**. Click it.
-   - In the opened web interface of GitHub, ensure that:
+   - After a successful push, you can open the [Github Pull Requests] menu, if installed, and press **Create Pull Request**.
+   - Ensure that:
      - The base branch for merging is set to **`dev`** of the main repository.
      - The title and description of the Pull Request contain detailed descriptions of the changes made, as well as links to related Issues if necessary.
    - Click **Create Pull Request** to send a request to merge your changes into the dev branch.
+
+>[!TIP]
+> You can also create a pull request using the website, if you prefer.
 
 **Method B: Using terminal / cmd**
 
@@ -597,3 +599,5 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 [Pakku]: https://juraj-hrivnak.github.io/Pakku/home.html
 [ProbeJs]: https://marketplace.visualstudio.com/items/?itemName=Prunoideae.probejs
 [Discord]: https://discord.gg/AEaCzCTUwQ
+[GitHub Pull Requests]: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
+[TerraFirmaGreg-Core-Modern]: https://github.com/TerraFirmaGreg-Team/Core-Modern
