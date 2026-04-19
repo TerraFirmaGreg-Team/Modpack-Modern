@@ -1567,6 +1567,15 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('2x tfg:food/buttered_popcorn').copyFood()
 	});
 
+	event.recipes.firmalife.mixing_bowl()
+		.itemIngredients([
+			TFC.ingredient.notRotten('tfg:food/popcorn'),
+			TFC.ingredient.notRotten('tfg:food/popcorn'),
+			TFC.ingredient.notRotten('firmalife:food/butter'),
+			'tfc:powder/salt'])
+		.outputItem('2x tfg:food/buttered_popcorn')
+		.id('tfg:mixing_bowl/buttered_popcorn');
+
 	// Beer Battered Cheese Curds
 	global.registerFoodRecipe(event, 'food_oven', 'cooked_beer_battered_cheese_curds', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
 		itemInputs: ['tfg:food/raw_beer_battered_cheese_curds'],
