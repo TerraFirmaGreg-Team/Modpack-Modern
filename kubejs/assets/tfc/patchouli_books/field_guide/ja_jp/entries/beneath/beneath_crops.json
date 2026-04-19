@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -24,8 +24,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
+			"title": "キャッサバ",
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キャッサバは$(thing)野菜$()系の栄養を取ることができる食材です。$(thing)加熱調理$()してから食べた方が良いでしょう。$(br)"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cassava$() grows in PLACEHOLDER.",
+			"text": "$(thing)Wild Cassava$() grows in PLACEHOLDER。",
 			"enable_visualize": false
 		},
 		{
