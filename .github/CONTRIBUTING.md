@@ -110,18 +110,18 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
 3. Symbolically link your development **`kubejs`** folder to your prism folder. There are a few ways to do this, the easiest being using `mklink Link Target` in a command prompt.
 
 >[!TIP]
-> This is done so you can edit files in your development instance without your game messing up most files.
+> This is done so you can edit files in your development instance without your game messing up most files. If you update your development instance, you should also update your prism instance.
 > It is technically possible to develop in your instance folder, but strongly discouraged. If you do, create a local `.mygitignore` and run `git config --local core.excludesFile .mygitignore` to prevent adding unnessacary changes.
 
 #### Step 6: Synchronizing Dependencies via Pakku
-1. Open **terminal** or **cmd** in the root directory of the `TerraFirmaGreg-Modern/minecraft` folder.
+1. Open **terminal** or **cmd** in the root directory of your Prism instance folder.
 2. Execute the following command:
 ```bash
   pakku fetch
 ```
 
 > [!TIP]
-> This command downloads all necessary project files into the modpacks folder. Note that the command may differ depending on how Pakku was installed.
+> This command downloads all necessary project files into the modpack's folder. Note that the command may differ depending on how Pakku was installed.
 
 >[!WARNING]
 > This will not update your TerraFirmaGreg-Core-Modern! Keep following.
@@ -130,7 +130,7 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
 4. In your mods folder, find the TerraFirmaGreg-Core-Modern jar file, delete it, and replace it with the one you just downloaded.
 
 >[!TIP]
-> Even newer releases may be available in Github Actions. Additionally, if you are developing Core-Modern, you can copy your builds to test it. 
+> Even newer releases may be available in Github Actions. Additionally, if you are developing [TerraFirmaGreg-Core-Modern], you can copy your built jars to test them. 
 
 #### Step 7: Working with Branches and Creating Pull Request
 There are two approaches to creating a Pull Request: via terminal and via Visual Studio Code.
