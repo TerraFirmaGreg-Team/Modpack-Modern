@@ -3,4 +3,8 @@
 	#How long in ticks before the entity can teleport again
 	#Range: > 0
 	cooldown = 600
+	#Whether sneaking halves the amount of time it takes to switch dimensions
+	allow_sneak = true
+	#Reset the fall distance when teleporting, prevents dying from hitting clouds/unseen blocks in next dimension
+	reset_fall_distance = true
 

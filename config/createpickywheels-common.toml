@@ -45,6 +45,11 @@
 		waterwheelSourceRange = 3
 		#When enabled boosted waterwheels require correct flow (like in TerraFirmaCraft's water river)
 		waterwheelsSourceRequiresFlow = true
+		#When enabled waterwheels accepts flowing water in source calculation
+		waterwheelsAcceptsFlowing = false
+		#Minimum level of shallowness required to accept flowing water in source calculation
+		#Range: 1 ~ 7
+		waterwheelsMinimumShallowness = 3
 
 ##Windmill requirements
 [windmills]
@@ -56,13 +61,13 @@
 	#Penalty for Windmills placed on whitelisted but not on preferential biomes [windmills_boosted biome tag].
 	#Range: 0.0 ~ 1.7976931348623157E308
 	windmillPenalty = 1.0
-	#The minimum floor area required. Default: 1/4 of the max area [PI * 32 ^ 2].
+	#The minimum floor area required. Default: 1/4 of the max area [PI * 32 ^ 2]. Set this and windmillRequiredRangePoints to zero, to disable area check.
 	#Range: > 1
 	windmillThreshold = 1
-	#The minimum length of air current required.
+	#The minimum distance for it to consider a valid air current source.
 	#Range: > 1
 	windmillRequiredRange = 1
-	#The minimum amount of points that must hit windmillRequiredRange.
+	#The minimum amount of points that must hit windmillRequiredRange. Set this and windmillThreshold to zero, to disable area check.
 	#Range: > 1
 	windmillRequiredRangePoints = 1
 	#The maximum distance a windmill can consider air blocks from.

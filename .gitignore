@@ -138,7 +138,10 @@ libEffekseerNativeForJava.so
 # .pakku/server-overrides/mods
 # .pakku/server-overrides/user_jvm_args.txt
 
-# Configs that get auto-updated on startup
+#Disabled mods
+mods/*.disabled
+
+#Unchanged configs (Remove if you change them!)
 config/configuration-options.json
 config/copycats-client.toml
 config/copycats-common.toml
@@ -147,11 +150,10 @@ config/gtceuterminals.yaml
 config/krypton_fnp.yaml
 config/particle_core_disabled_optimizations_v2.json
 config/tfc_gourmet-common.toml
-config/voicechat-client.toml
 config/wakes-client.toml
 config/xaerohud.txt
-config/xaerominimap-common.txt.backup0
-config/xaeroworldmap-common.txt.backup0
+config/xaerominimap-common.txt.backup*
+config/xaeroworldmap-common.txt.backup*
 config/euphoria_patcher/data.json
 config/gtceuterminal/buses.json
 config/gtceuterminal/coils.json
@@ -165,13 +167,6 @@ config/gtceuterminal/parallel_hatches.json
 config/gtceuterminal/substation_hatches.json
 config/gtceuterminal/wireless_hatches.json
 config/showcaser/showcaser-client-config.json
-config/showcaser/showcaser-server-config.json
-config/showcaser/showcaser-server-storage.json
-config/voicechat/category-volumes.properties
-config/voicechat/player-volumes.properties
-config/voicechat/translations.properties
-config/voicechat/voicechat-client.properties
-config/voicechat/voicechat-server.properties
 config/xaero/lib/client.cfg
 config/xaero/lib/common.cfg
 config/xaero/lib/profiles/default.cfg
@@ -186,7 +181,3 @@ config/xaero/world-map/client.cfg
 config/xaero/world-map/common.cfg
 config/xaero/world-map/profiles/default.cfg
 config/xaero/world-map/server_profiles/default.cfg
-defaultconfigs/copycats-server.toml
-defaultconfigs/craftingstation-server.toml
-defaultconfigs/exposure-server.toml
-defaultconfigs/gtceuterminal-server.toml

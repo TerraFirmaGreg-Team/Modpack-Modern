@@ -46,9 +46,10 @@
 
 #### Recommended Software
 - [PrismLauncher]: An optimized launcher for Minecraft modifications, making it easier to create separate instances.
+- [Github Desktop] A graphical client for managing Git repositories developed by GitHub.
 - [Visual Studio Code]: A code editor with extensive capabilities for working with projects and integrating various plugins.
 ###### Reccomended Plugins:
-- [Github Pull Requests]
+- [Github Pull Requests] Has many of the features of Github Desktop built in for an all-in-one editing suite.
 
 ---
 
@@ -87,9 +88,16 @@ If you did not clone the repository in Step 1, follow these steps:
 4. Select **`Clone from Github`**.
 5. Search your repository name ("YourNameHere/TerraFirmaGreg-Modern") and select it.
 6. If you are prompted to open existing clone, press **`Clone Again`**.
-7. Select your instance **minecraft** folder to clone into.
+7. Select your instance **`minecraft`** folder to clone into.
 
-**Method B: Terminal / cmd**
+**Method B: GitHub Desktop**  
+1. Open [GitHub Desktop] and log in.  
+2. Select **File → Clone repository...**  
+3. On the **URL** tab, enter: **`https://github.com/YourNameHere/Modpack-Modern.git`**
+4. In the **Local Path** field, select the `minecraft` folder created in Step 2.  
+5. Click **Clone**.
+
+**Method C: Terminal / cmd**
 This can also be done inside VSCode, using the terminal at the bottom of your screen.  
 1. Open **terminal** or **cmd** in the root directory of instance folder.  
 2. Execute the command:
@@ -140,9 +148,13 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
     - Members of the **Contributor** team can create branches in the main repository.
 
 >[!TIP]
-> Remember, you can make branches in your fork freely!
+> Remember, you can make branches in your fork freely! It makes pull requests a lot easier.
 
 **Process of Creating Pull Request**
+
+>[!WARNING]
+> If you've changed a config file, it may not be counted. Why? Check .gitignore and remove it if **you've** made changes to it.
+> Often the game will update these on it's own, which is fine, but if the modpack doesn't use it at all, don't add new files. 
 
 **Method A: Visual Studio Code**
   >[!TIP]
@@ -173,7 +185,31 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
 >[!TIP]
 > You can also create a pull request using the website, if you prefer.
 
-**Method B: Using terminal / cmd**
+**Method B: GitHub Desktop**
+
+1. **Creating a New Branch:**
+   - Open [GitHub Desktop] and ensure that your local repository **`TerraFirmaGreg-Modern`** is selected.
+   - In the top menu, select **`Branch → New Branch...`**.
+   - In the appearing window, enter a name for your new branch (e.g., **`feature/add-custom-quest`** or **`bugfix/fix-launch-crash`**).  
+   - Click **`Create Branch`**. Now you are in a new branch created from the dev branch.
+
+2. **Making and Committing Changes:**
+   - Make the necessary changes to the project using your favorite code editor (e.g., [Visual Studio Code]).
+   - Return to GitHub Desktop, go to the **`Changes`** tab, where you will see a list of modified files.
+   - Add a description of your changes, enter a commit message, and click **`Commit to <branch_name>`**.
+
+3. **Publishing the Branch:**
+   - After committing changes, click the **`Push origin`** button in the top right corner of GitHub Desktop. 
+   - This will send your new branch to GitHub.
+
+4. **Creating Pull Request:**
+   - After a successful push, [GitHub Desktop] will offer you a **Create Pull Request** button or a link **View on GitHub**. Click it.
+   - In the opened web interface of GitHub, ensure that:
+     - The base branch for merging is set to **`dev`** of the main repository.
+     - The title and description of the Pull Request contain detailed descriptions of the changes made, as well as links to related Issues if necessary.
+   - Click **Create Pull Request** to send a request to merge your changes into the dev branch.
+
+**Method C: Using terminal / cmd**
 
 1. **Synchronizing with upstream:**
   - Ensure that your local repository is up-to-date. If you have already set up remote upstream (the official repository), execute:
