@@ -15,7 +15,7 @@
       - [Step 5: Copying and linking development \& instance](#step-5-copying-and-linking-development--instance)
       - [Step 6: Synchronizing Dependencies via Pakku](#step-6-synchronizing-dependencies-via-pakku)
       - [Step 7: Working with Branches and Creating Pull Request](#step-7-working-with-branches-and-creating-pull-request)
-      - [Step 7: Processing and Merging Pull Request](#step-7-processing-and-merging-pull-request)
+      - [Step 8: Processing and Merging Pull Request](#step-8-processing-and-merging-pull-request)
     - [3. Additional Recommendations](#3-additional-recommendations)
   - [Russian Version](#russian-version)
     - [1. Необходимое и рекомендуемое ПО](#1-необходимое-и-рекомендуемое-по)
@@ -258,7 +258,7 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
 > [!TIP]  
 > If you have questions about formatting a Pull Request or are unsure with which branch to merge, refer to the project documentation or contact the team via [Discord].
 
-#### Step 7: Processing and Merging Pull Request
+#### Step 8: Processing and Merging Pull Request
 1. Reviewing Pull Request:
   - After creating a Pull Request, it enters a queue for review by members of the team.
   - Members of [Dev-Modern] (for merging into main) or [Contributor-Modern] (for merging into dev) review the changes made, leave comments, and request revisions if necessary.
