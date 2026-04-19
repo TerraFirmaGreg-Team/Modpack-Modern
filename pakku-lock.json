@@ -9781,32 +9781,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "kubejs_tfc-1.20.1-1.3.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6996/502/kubejs_tfc-1.20.1-1.3.3.jar",
-                    "id": "6996502",
-                    "parent_id": "841001",
-                    "hashes": {
-                        "sha1": "5561aa3db97bf01d0b02e09164276bba9b8f7fd8",
-                        "md5": "5ba8a4bb55d65d43119b6943244ea906"
-                    },
-                    "required_dependencies": [
-                        "302973",
-                        "238086"
-                    ],
-                    "size": 973038,
-                    "date_published": "2025-09-14T15:59:47.140Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "kubejs_tfc-1.20.1-1.3.3.jar",
+                    "file_name": "kubejs_tfc-1.20.1-1.3.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9815,19 +9790,41 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/mhtClB2S/versions/XeAvj4GH/kubejs_tfc-1.20.1-1.3.3.jar",
-                    "id": "XeAvj4GH",
-                    "parent_id": "mhtClB2S",
+                    "url": "https://edge.forgecdn.net/files/7948/670/kubejs_tfc-1.20.1-1.3.4.jar",
+                    "id": "7948670",
+                    "parent_id": "841001",
                     "hashes": {
-                        "sha512": "8d9a61fa3eb441ff8b098e4f5ed87b49bc3ce5568750d8ab27846ef49862892a8f4cb085994e7c30f6d3c56fce59b7fa7c7f40b951f048c89f05f85df3d8a68b",
-                        "sha1": "5561aa3db97bf01d0b02e09164276bba9b8f7fd8"
+                        "sha1": "4d252791f33012f81d28a6ce19ebcd3f6081e8b4",
+                        "md5": "a90a7abe437aa1ec4d8376c2c635be0e"
                     },
                     "required_dependencies": [
-                        "umyGl7zF",
-                        "JaCEZUhg"
+                        "238086",
+                        "302973"
                     ],
-                    "size": 973038,
-                    "date_published": "2025-09-14T16:00:02.370745Z"
+                    "size": 986787,
+                    "date_published": "2026-04-19T05:54:37.090Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "kubejs_tfc-1.20.1-1.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/mhtClB2S/versions/3uRavUwO/kubejs_tfc-1.20.1-1.3.4.jar",
+                    "id": "3uRavUwO",
+                    "parent_id": "mhtClB2S",
+                    "hashes": {
+                        "sha512": "516b1352b1952476e000ca020107d7fb0b724d2769669b40bc453b46322ebc911939f568058b87bac511f216ca021e4d534ac3542578f2439f660156c21f7811",
+                        "sha1": "4d252791f33012f81d28a6ce19ebcd3f6081e8b4"
+                    },
+                    "required_dependencies": [],
+                    "size": 986787,
+                    "date_published": "2026-04-19T05:54:39.885870Z"
                 }
             ]
         },
