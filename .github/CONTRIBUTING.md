@@ -111,7 +111,7 @@ This can also be done inside VSCode, using the terminal at the bottom of your sc
 
 >[!TIP]
 > This is done so you can edit files in your development instance without your game messing up most files. If you update your development instance, you should also update your prism instance.
-> It is technically possible to develop in your instance folder, but strongly discouraged. If you do, create a local `.mygitignore` and run `git config --local core.excludesFile .mygitignore` to prevent adding unnessacary changes.
+> It is technically possible to develop in your instance folder, but strongly discouraged. If you do, use `.git/info/exclude` like a local .gitignore.
 
 #### Step 6: Synchronizing Dependencies via Pakku
 1. Open **terminal** or **cmd** in the root directory of your Prism instance folder.
