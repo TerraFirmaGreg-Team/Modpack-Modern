@@ -139,29 +139,23 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
   - **`main`:**
     - This branch contains the stable, tested, and released version of the project. 
     - It should only contain changes that have passed the full review cycle.
-    - Changes can be accepted by members of the **Dev** team; at least one approval is required.
+    - Changes can be accepted by members of the **Dev-Modern** team; at least one approval is required.
 
   - **`dev`:**
     - The main development branch where new features, bug fixes, and experimental changes are integrated.
     - After testing, changes from dev may be merged into the main branch for a new version release.
-    - Changes can be accepted by members of the **Contributor** team; at least two approvals are required.
+    - Changes can be accepted by members of the **Contributor-Modern** team; at least two approvals are required.
 
   - **`feature/bugfix-branch`:**
     - For example, (`feature/add-custom-quest`) or (`bugfix/fix-launch-crash`). 
     - It is recommended to create separate branches from dev for developing specific features or fixing bugs.
     - After completing the work, merge them back into dev.
-    - Members of the **Contributor** team can create branches in the main repository.
+    - Members of the **Contributor-Modern** team can create branches in the main repository.
 
 >[!TIP]
 > Remember, you can make branches in your fork freely! It makes pull requests a lot easier.
 
 **Process of Creating Pull Request**
-
->[!WARNING]
-> If you've changed a config file, it may not be counted. Why? Check .gitignore and remove it if **you've** made changes to it.
-> Often the game will update these on it's own, which is fine, but if the modpack doesn't use it at all, don't add new files.
-> If a mod has updated a config, check it if you can and make sure that none of our settings got accidentally changed. 
-> If a mod ADDS a new config, you can add it to the .gitignore.
 
 **Method A: Visual Studio Code**
   >[!TIP]
