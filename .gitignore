@@ -16,7 +16,6 @@ node_modules/
 Modpack-Modern.sln
 Modpack-Modern.esproj
 .env
-.mygitignore
 # crowdin.yml
 
 # Pakku
@@ -103,9 +102,7 @@ defaultconfigs/ftbranks/players.snbt
 /schematics
 /scripts
 /gtceu
-/kubejs/jsconfig.json
-#Disabled mods
-/mods/*.disabled
+/mods
 
 # Client data
 bansoukou
