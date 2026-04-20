@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Quern",
+  "name": "Żarno",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
   "pages": [
@@ -52,19 +52,19 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Crushed Ore",
+      "title": "Pokruszona ruda",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
       "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Powders",
+      "title": "Proszki",
       "recipe": "tfg:quern/sulfur_powder",
       "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Dyes",
+      "title": "Barwniki",
       "recipe": "tfc:quern/red_dye",
       "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
     },

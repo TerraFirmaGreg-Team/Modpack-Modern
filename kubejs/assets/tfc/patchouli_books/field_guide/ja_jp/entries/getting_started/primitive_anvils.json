@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "まずは特定の種類の$(thing)石$()ブロックが必要になります（丸石ではいけません）。対象となるのは$(thing)火成噴出岩$()（流紋岩・玄武岩・安山岩・デイサイト）か、$(thing)火成貫入岩$()（花崗岩・閃緑岩・斑れい岩）です。地表に露出しているものをそのまま使うか、周囲の岩から$(l:getting_started/primitive_anvils#raw_rock)切り出して$()入手することもできます。"
+      "text": "まず、特定の種類の$(thing)石$()ブロックが必要になります（丸石ではいけません）。対象となるのは$(thing)火成噴出岩$()（流紋岩・玄武岩・安山岩・デイサイト）か、$(thing)火成貫入岩$()（花崗岩・閃緑岩・斑れい岩）です。地表に露出しているものをそのまま使うか、周囲の岩から$(l:getting_started/primitive_anvils#raw_rock)切り出して$()入手することもできます。"
     },
     {
       "type": "patchouli:text",
@@ -215,12 +215,12 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "溶接は、2つのアイテムを接合して別のアイテムを作る工程です。$(l:getting_started/primitive_anvils)石の金床$()でも$(l:mechanics/anvils)金属の金床$()でも、やり方は共通です。$(br2)まずは溶接したいアイテム2つ（インゴットやプレートなど）を金床に置きます。直接使用して置くか、GUIを開いて左側の2スロットに入れることでセットできます。",
       "title": "溶接"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "また、溶接を行うには、金床に$(l:mechanics/flux)融剤$()を少なくとも1つ入れておく必要があります。そのうえで、溶接するアイテムが両方とも$(l:mechanics/heating)溶接可能な温度$()（ツールチップに「溶接可能」と表示）になっている状態で、$(thing)ハンマー$()を持ちShift+右クリックで叩くかGUIの「Weld」ボタンを押します。すると打撃音とともにアイテムが溶接されます。"
     }
   ],
   "read_by_default": true,

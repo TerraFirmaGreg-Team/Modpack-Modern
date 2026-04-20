@@ -10,12 +10,12 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "minecraft:water_bucket",
-			"title": "Water",
+			"title": "Woda",
 			"text": "Water can be found all over the upper levels of the Beneath. Taking a quick dip can cool you off fast!"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ice",
+			"title": "Lód",
 			"item": "minecraft:packed_ice",
 			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and $(thing)Packed$() and $(thing)Blue$() ice won't melt."
 		},

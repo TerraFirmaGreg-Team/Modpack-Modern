@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ash",
+			"title": "Popiół",
 			"item": "tag:tfc:ash_logs",
 			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
 		},
@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Birch",
+			"title": "Brzoza",
 			"item": "tag:tfc:birch_logs",
 			"text": "$(bold)Birch$()$(br)$(thing)Rainfall$(): 125 — 310mm$(br)$(thing)Temperature$(): -13.9 — 2.5°C"
 		},
@@ -46,13 +46,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cedar",
+			"title": "Cedr",
 			"item": "tag:tfc:white_cedar_logs",
 			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chestnut",
+			"title": "Kasztan",
 			"item": "tag:tfc:chestnut_logs",
 			"text": "$(bold)Chestnut$()$(br)$(thing)Rainfall$(): 150 — 300mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
 		},
@@ -80,19 +80,19 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fir",
+			"title": "Jodła",
 			"item": "tag:tfc:douglas_fir_logs",
 			"text": "$(bold)Douglas Fir$()$(br)$(thing)Rainfall$(): 305 — 500mm$(br)$(thing)Temperature$(): -10.3 — 6.1°C$(br2)$(bold)Mountain Fir$()$(br)$(thing)Rainfall$(): 220 — 345mm$(br)$(thing)Temperature$(): -1.1 — 11.6°C$(br2)$(bold)Balsam Fir$()$(br)$(thing)Rainfall$(): 210 — 500mm$(br)$(thing)Temperature$(): -13.9 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hevea",
+			"title": "Kauczukowiec",
 			"item": "tag:afc:hevea_logs",
 			"text": "$(bold)Hevea$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 17.1 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hickory",
+			"title": "Orzesznik",
 			"item": "tag:tfc:hickory_logs",
 			"text": "$(bold)Bitternut Hickory$()$(br)$(thing)Rainfall$(): 210 — 400mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C$(br2)$(bold)Scrub Hickory$()$(br)$(thing)Rainfall$(): 400 — 475mm$(br)$(thing)Temperature$(): 11.6 — 17.1°C"
 		},
@@ -104,7 +104,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ironwood",
+			"title": "Drzewo żelazne",
 			"item": "tag:afc:ironwood_logs",
 			"text": "$(bold)King Ironwood$()$(br)$(thing)Rainfall$(): 320 — 430mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Lebombo Ironwood$()$(br)$(thing)Rainfall$(): 150 — 230mm$(br)$(thing)Temperature$(): 20.7 — 40.0°C$(br2)$(bold)Horsetail Ironwood$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
 		},
@@ -116,19 +116,19 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mahogany",
+			"title": "Mahoń",
 			"item": "tag:afc:mahogany_logs",
 			"text": "$(bold)Mahogany$()$(br)$(thing)Rainfall$(): 300 — 430mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C$(br2)$(bold)Small Leaf Mahogany$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 11.6 — 18.9°C$(br2)$(bold)Sapele Mahogany$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Mangrove",
+			"title": "Namorzyny",
 			"item": "tag:tfc:mangrove_logs",
 			"text": "$(bold)Mangrove$()$(br)$(thing)Rainfall$(): 220mm+$(br)$(thing)Temperature$(): 18.0°C+$(br)Note: only spawns in Salt Marsh biomes"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Maple",
+			"title": "Klon",
 			"item": "tag:tfc:maple_logs",
 			"text": "$(bold)Sugar Maple$()$(br)$(thing)Rainfall$(): 260 — 360mm$(br)$(thing)Temperature$(): -8.4 — 8.0°C$(br2)$(bold)Bigleaf Maple$()$(br)$(thing)Rainfall$(): 405 — 500mm$(br)$(thing)Temperature$(): -4.8 — 11.6°C$(br2)$(bold)Weeping Maple$()$(br)$(thing)Rainfall$(): 240 — 320mm$(br)$(thing)Temperature$(): 0.7 — 4.3°C"
 		},
@@ -140,13 +140,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Palm",
+			"title": "Palma",
 			"item": "tag:tfc:palm_logs",
 			"text": "$(bold)Palm$()$(br)$(thing)Rainfall$(): 0 — 250mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Jaggery Palm$()$(br)$(thing)Rainfall$(): 400 — 500mm$(br)$(thing)Temperature$(): 20.7 — 26.2°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Pine",
+			"title": "Sosna",
 			"item": "tag:tfc:pine_logs",
 			"text": "$(bold)Boreal Pine$()$(br)$(thing)Rainfall$(): 60 — 270mm$(br)$(thing)Temperature$(): -19.4 — -3.0°C$(br2)$(bold)Stone Pine$()$(br)$(thing)Rainfall$(): 140 — 290mm$(br)$(thing)Temperature$(): 2.5 — 18.9°C$(br2)$(bold)Red Pine$()$(br)$(thing)Rainfall$(): 185 — 320mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
 		},
@@ -156,13 +156,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rosewood",
+			"title": "Palisander",
 			"item": "tag:tfc:rosewood_logs",
 			"text": "$(bold)Shisham Rosewood$()$(br)$(thing)Rainfall$(): 245 — 360mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Giant Rosewood$()$(br)$(thing)Rainfall$(): 340 — 440mm$(br)$(thing)Temperature$(): 15.3 — 22.5°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sequoia",
+			"title": "Sekwoja",
 			"item": "tag:tfc:sequoia_logs",
 			"text": "$(bold)Sequoia$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 0.7 — 8.0°C$(br2)$(bold)Coast Redwood$()$(br)$(thing)Rainfall$(): 320 — 500mm$(br)$(thing)Temperature$(): 4.3 — 9.8°C"
 		},
@@ -178,13 +178,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sycamore",
+			"title": "Jawor",
 			"item": "tag:tfc:sycamore_logs",
 			"text": "$(bold)Sycamore$()$(br)$(thing)Rainfall$(): 330 — 480mm$(br)$(thing)Temperature$(): -6.6 — 11.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Teak",
+			"title": "Tek",
 			"item": "tag:afc:teak_logs",
 			"text": "$(bold)True Teak$()$(br)$(thing)Rainfall$(): 215 — 330mm$(br)$(thing)Temperature$(): 13.4 — 26.2°C$(br2)$(bold)Iroko Teak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): 17.1 — 40.0°C$(br2)$(bold)Flame of the Forest$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 13.4 — 24.4°C"
 		},
