@@ -159,11 +159,6 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
 
 **Process of Creating Pull Request**
 
->[!WARNING]
-> If you have changed the config file, it may not be considered. Why? Check it out.gitignore and remove it from the list if **you've** have made changes to it.
-> The game often updates these files on its own, which is normal, but if the modpack doesn't use them at all, don't add new files to the commit.
-> If the mod has updated the config, check it and make sure that our settings have not been accidentally changed.
-
 **Method A: Visual Studio Code**
   >[!TIP]
   >Most everything in VSCode can also be done through the command palette!
