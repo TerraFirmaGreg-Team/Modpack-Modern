@@ -270,7 +270,8 @@ const registerSingleGroups = (event) => {
         '#simplylight:any_lamp_on',
         '#simplylight:any_lamp_off',
         '#computercraft:disks',
-        '#wan_ancient_beasts:charger_armors'
+        '#wan_ancient_beasts:charger_armors',
+        '#tfg:crafting_stations'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {
