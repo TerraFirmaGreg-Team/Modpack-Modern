@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Glass Products",
+  "name": "Wyroby szklane",
   "category": "tfc:mechanics",
   "icon": "minecraft:glass",
   "pages": [
@@ -79,7 +79,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)$(bold)$(7)White$(): Silica or Hematitic Glass + $(thing)Soda Ash$()$(li)$(bold)$(0)Black$(): Any Glass + $(thing)Graphite$()$(li)$(bold)$(8)Gray$(): Any + $(thing)Graphite$() + $(thing)Soda Ash$()$(li)$(bold)$(7)Light Gray$(): Any + $(thing)Graphite$() + 2x $(thing)Soda Ash$()$(li)$(bold)$(5)Purple$(): Any + $(thing)Iron$() + $(thing)Copper$()$(li)$(bold)$(#964b00)Brown$(): Any + $(thing)Nickel$()$(li)$(bold)$(3)Cyan$(): Non-Volcanic Glass + $(thing)Copper$() + $(thing)Sapphire$()$(li)$(bold)$(2)Green$(): Silica or Hematitic Glass + $(thing)Iron$()",
-      "title": "Dye Colors"
+      "title": "Kolory barwników"
     },
     {
       "type": "patchouli:text",
@@ -146,7 +146,7 @@
           "fill": "0x000000"
         },
         {
-          "text": "Silica"
+          "text": "Krzemionkowe"
         },
         {
           "fill": "0x3d42a8"
@@ -203,7 +203,7 @@
           "fill": "0x3eb340"
         },
         {
-          "text": "Hematitic"
+          "text": "Hematytowe"
         },
         {
           "fill": "0xb33e3e"
@@ -317,7 +317,7 @@
           "fill": "0x3eb340"
         },
         {
-          "text": "Volcanic"
+          "text": "Wulkaniczne"
         },
         {
           "fill": "0xb33e3e"

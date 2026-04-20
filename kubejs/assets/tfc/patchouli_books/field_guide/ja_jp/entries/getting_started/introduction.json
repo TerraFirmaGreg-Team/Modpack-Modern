@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Introduction",
+	"name": "はじめに",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In TerraFirmaCraft, the first things you can obtain are sticks, twigs, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+			"text": "TerraFirmaCraftで最初に入手できるのは棒、小枝、小石です。これらはほぼすべての気候で地面に落ちています。$(item)$(k:key.use)$()か壊すことで拾えます。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -36,25 +36,25 @@
 					"5": "tfc:wood/twig/ash"
 				}
 			},
-			"name": "Example",
-			"text": "A smattering of common sticks and stones.",
+			"name": "例",
+			"text": "小石や棒の生成の例です。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+			"text": "棒は地面に落ちている棒や小枝を拾い集めるほか、木の葉を素手で壊すことでも入手できます。石と棒が揃ったら、$(thing)ナッピング$()を始めましょう。ナッピングとは石同士を打ち付けて目的の形に加工する作業です。行うには石を2つ以上手に持ち、空中で右クリックすると$(thing)ナッピングGUI$()が開きます。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "The Knapping Interface.",
+			"text": "ナッピングGUI。",
 			"border": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+			"text": "ナッピングでは、狙った形になるようにマスを削っていきます。例えば右に表示された形に合わせて削ればナイフの刃が作れます。$(br2)クラフトと同様で、目的の形状に位置の関係はなく、一部のレシピでは1度に複数個作れるものもあります。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -65,26 +65,26 @@
 				"tfg:rock_knapping/stone_knife_head_2",
 				"tfg:rock_knapping/stone_knife_head_3"
 			],
-			"text": "A knife blade, crafted from several different rock types."
+			"text": "いくつかの異なる種類の岩石から作られたナイフの刃。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "All stone tool heads can be crafted with a stick or twig to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking plants."
+			"text": "石器の頭は、棒や小枝と組み合わせることで道具として完成させられます。$(br2)石のナイフは植物を刈ることで$(thing)藁$()を集めることができます。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. However, saplings and sticks will only be obtained if leaves were broken individually."
+			"text": "$(thing)斧$()を使えば、葉も含めて木を丸ごと伐採できます。ただし、苗木や棒は葉を個別に壊した場合にしか手に入りません。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_shovel_head"
 			],
-			"text": "$(thing)Shovels$() can be used to dig soil type blocks. They can also be used to create $(thing)Paths$() by $(item)using$() them on $(thing)Dirt$() or $(thing)Grass$()."
+			"text": "$(thing)シャベル$()は土系ブロックを掘るのに使えます。また、$(thing)土$()や$(thing)草ブロック$()に$(item)使用する$()ことで、$(thing)道$()を作ることもできます。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -93,14 +93,14 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Hoes$() are useful tools for $(l:mechanics/crops)Farming$(), but they can also be used to cut down leaves and other plant matter."
+			"text": "$(thing)クワ$()は$(l:mechanics/crops)農業$()に使用する道具です。また、葉や草などの植物の除去にも使えます。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)Hammers$() can be used as $(l:mechanics/damage_types)Crushing$() weapons, but are more important tools used for $(l:getting_started/primitive_anvils)Forging$()."
+			"text": "$(thing)ハンマー$()は$(l:mechanics/damage_types)打撃$()系の武器として使えますが、主要な用途は$(l:getting_started/primitive_anvils)鍛造$()作業でしょう。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -110,7 +110,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:mechanics/damage_types)Piercing$() weapon."
+			"text": "最後に、$(thing)槍$()は投げて攻撃できる原始的な武器であり、$(l:mechanics/damage_types)貫通$()属性の武器としても扱えます。石器時代の狩りの主役ですね。"
 		}
 	],
 	"read_by_default": true,

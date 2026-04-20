@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Charger",
+			"title": "Ładowarka",
 			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
 		},
 		{
@@ -174,7 +174,7 @@
 			"entity": "wan_ancient_beasts:crusher",
 			"scale": 0.5,
 			"offset": 0.5,
-			"name": "Crusher",
+			"name": "Kruszarka",
 			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
 		},
 		{
