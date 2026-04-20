@@ -1,7 +1,10 @@
 {
 	"enchantment.species.capacity": "Pojemność",
+	"entity.species.ghoul": "Ghul",
 	"entity.species.harpoon": "Harpun",
 	"item.species.crankbow.fullness": "%s / %s",
 	"item.species.harpoon": "Harpun",
-	"item.species.spectre_light.color": "Kolor: "
+	"item.species.logo": "Species",
+	"item.species.spectre_light.color": "Kolor: ",
+	"subtitles.item.species.wicked_wax.eat": "Jedzenie"
 }
