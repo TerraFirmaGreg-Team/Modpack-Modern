@@ -1,0 +1,110 @@
+
+[camera]
+	#Default focal range of the camera (without a lens attached).
+	#Allowed range: 10-300
+	#Default: 18-55
+	default_focal_range = "18-55"
+	#Can attack while looking through Viewfinder.
+	#Default: true
+	viewfinder_attacking = true
+	#Camera distance in thirdperson-front mode. Default: 1.75
+	#Range: 0.1 ~ 4.0
+	selfie_camera_distance = 1.75
+	#Shifts viewfinder view down to match waist-level camera position. Default: false.
+	waist_level_viewfinder = false
+	#Right-clicking a Camera in GUI will open Camera Attachments screen. Only in player inventory.
+	#Default: true
+	right_click_attachments_screen = true
+	#Right-clicking Camera in GUI with attachment item will insert/swap it.
+	#Default: true
+	right_click_hotswap = true
+	#Self-timer will attract attention of nearby entities and makes them look at the Camera. Default: true
+	timer_attracts_mob_attention = true
+	#Radius in blocks around the camera in which mobs will be affected by the timer. Default: 16
+	#Range: 1 ~ 64
+	timer_attention_radius = 16
+
+[camera_stand]
+	#Maximum allowed distance between Camera Stand and a player for the stand to function.
+	#Camera on stand will capture the chunks that player is currently seeing, this may result is some parts of the world missing when camera on stand is taking photos while a player far away. Short render distances can be a problem as well.
+	#Default: 100
+	#Range: > 1
+	working_range = 100
+	#Attempting to take a photo outside the working range will cause the Camera on stand to 'malfunction' and it would need to be repaired (by simply using it). Default: true
+	out_of_working_range_malfunction = true
+	#If owner of the Camera Stand is not in range, closest player will be chosen to create and render a photo. Default: true
+	fallback_to_other_players = true
+	#Other players can be chosen for Interplanar Projector exposure, if owner is not in range.
+	#WARNING: If enabled, projector will attempt to load an image from other player's computer (or use their PC to load from URL). Potentially, this can be used for malicious intents.
+	#Default: false
+	fallback_to_other_players_projector = false
+
+[capture]
+	#Default size of an exposure image. High values take more disk space and can cause lag. Default: 320
+	#Range: 1 ~ 2048
+	default_frame_size = 320
+	#Interplanar Projector can load images from URL or file on client's PC. Default: true
+	projecting_enabled = true
+	#Time limit in ticks for projecting.
+	#Default: 100 (5 seconds)
+	#Range: 1 ~ 200
+	projecting_timeout_ticks = 100
+
+[lightroom]
+	#Light level that is required for Lightroom to work. Default: 13
+	#Range: 0 ~ 15
+	lightroom_light_requirement = 13
+	#Dyes that are used for particular printing process.
+	#Valid dyes are: cyan, magenta, yellow, black.
+	#Multiple definitions will make the lightroom consume multiple items per print. ["black", "black"] -> 2 Black Dye is consumed per print.
+	#Dyes for black and white print. Default: ["black"]
+	dyes_black_and_white = ["black"]
+	#Dyes for color print. Default: ["cyan", "magenta", "yellow", "black"]
+	dyes_color = ["cyan", "magenta", "yellow", "black"]
+	#Dyes for chromatic red channel print. Default: ["magenta", "yellow"]
+	dyes_chromatic_red = ["magenta", "yellow"]
+	#Dyes for chromatic green channel print. Default: ["cyan", "yellow"]
+	dyes_chromatic_green = ["cyan", "yellow"]
+	#Dyes for chromatic blue channel print. Default: ["cyan", "magenta"]
+	dyes_chromatic_blue = ["cyan", "magenta"]
+	#Time in ticks to print black and white photograph. Default: 80
+	#Range: > 1
+	print_time_black_and_white = 80
+	#Time in ticks to print color photograph. Default: 160
+	#Range: > 1
+	print_time_color = 160
+	#Time in ticks to print one channel of a chromatic photograph. Default: 120
+	#Range: > 1
+	print_time_chromatic = 120
+	#Amount of experience awarded per printed black and white Photograph. Default: 2
+	#Range: 0 ~ 99
+	experience_black_and_white = 2
+	#Amount of experience awarded per printed color Photograph. Default: 4
+	#Range: 0 ~ 99
+	experience_color = 4
+	#Amount of experience awarded per printed chromatic Photograph (when all three channels have been printed). Default: 5
+	#Range: 0 ~ 99
+	experience_chromatic = 5
+
+[photographs]
+	#How many photographs can be stacked in Stacked Photographs item. Default: 16.
+	#Larger numbers may cause errors. Use at your own risk. 32 should be fine though.
+	#Range: 2 ~ 64
+	stacked_photographs_size = 16
+
+[misc]
+	#Film rolls can be renamed by using the item. No experience cost. Default: true
+	film_roll_easy_renaming = true
+	#Increases item name length limit for Interplanar Projector to 150 characters. Vanilla limit: 50.
+	#Default: true
+	increase_interplanar_projector_name_limit = true
+
+[integration]
+	#Create Deployers will be able to insert/swap attachments on Camera Stand. Default: true
+	create_deployer_stand_hotswap = true
+
+#You wouldn't need to touch these settings most likely. They are there to help debug/fix some weird issues.
+[debug]
+	#Clean up data about timed-out expected exposure uploads on level/server save. Default: true
+	cleanup_timed_out_expected_uploads = true
+

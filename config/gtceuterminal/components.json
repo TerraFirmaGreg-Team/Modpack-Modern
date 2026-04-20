@@ -1,0 +1,28 @@
+{
+  "_comment": "GTCEu Terminal - Custom Component Configuration",
+  "_description": "Add custom blocks from addons and KubeJS here. Supports wildcards (*).",
+  "_examples": "gtmthings:*_wireless_energy_input_hatch matches all wireless energy hatches",
+  "components": {
+    "energy_hatch": [
+      "gtmthings:*_wireless_energy_output_hatch",
+      "gtmthings:max_*_energy_input_hatch",
+      "gtmthings:opv_*_energy_input_hatch",
+      "gtmthings:uxv_*_energy_input_hatch",
+      "gtcommunityadd:*_energy_input_hatch",
+      "gtmthings:uev_*_energy_input_hatch",
+      "gtmthings:*_wireless_energy_input_hatch",
+      "gtmthings:uiv_*_energy_input_hatch"
+    ],
+    "fluid_hatch": [
+      "gtcommunityadd:*_fluid_input_hatch"
+    ],
+    "item_hatch": [],
+    "maintenance_hatch": [],
+    "muffler_hatch": [],
+    "laser_hatch": [],
+    "rotor_holder": [],
+    "casing": [],
+    "coil": [],
+    "other": []
+  }
+}

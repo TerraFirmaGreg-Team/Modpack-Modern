@@ -147,8 +147,3 @@
 	#Format: list of "dimension_id=version", e.g. ["minecraft:overworld=1"]
 	worldgenOverrides = []
 
-[overworld_climate]
-	#The maximum amount of snow update to apply for each correction tick
-	#Range: > 1
-	snowMaxAccumulationOnUpdate = 256
-
