@@ -50,6 +50,9 @@
 			strophar = true
 			glacian = true
 
+		[types.wood_type.wan_ancient_beasts]
+			ginkgo = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.gtceu]
@@ -57,6 +60,10 @@
 
 		[types.leaves_type.ad_astra]
 			glacian = true
+
+		[types.leaves_type.wan_ancient_beasts]
+			amber_ginkgo = true
+			verdant_ginkgo = true
 
 #Disables specific entries
 [entries]

@@ -1,0 +1,65 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Laser Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_laser_target_hatch",
+      "componentType": "LASER_INPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_laser_source_hatch",
+      "componentType": "LASER_OUTPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_256a_laser_target_hatch",
+      "componentType": "LASER_INPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_256a_laser_source_hatch",
+      "componentType": "LASER_OUTPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_1024a_laser_target_hatch",
+      "componentType": "LASER_INPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_1024a_laser_source_hatch",
+      "componentType": "LASER_OUTPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_4096a_laser_target_hatch",
+      "componentType": "LASER_INPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_4096a_laser_source_hatch",
+      "componentType": "LASER_OUTPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_16384a_laser_target_hatch",
+      "componentType": "LASER_INPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtceu:*_16384a_laser_source_hatch",
+      "componentType": "LASER_OUTPUT",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtmthings:*_wireless_laser_target_hatch",
+      "componentType": "WIRELESS_LASER_INPUT"
+    },
+    {
+      "blockIdPattern": "gtmthings:*_wireless_laser_source_hatch",
+      "componentType": "WIRELESS_LASER_OUTPUT"
+    }
+  ]
+}

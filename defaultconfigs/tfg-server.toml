@@ -138,7 +138,7 @@
 	#The chance that sand piles will decumulate during a sandstoem. Lower values = faster sand dispersal, but also more block updates (aka lag).
 	#Range: > 1
 	sandDecumulateChance = 36
-	
+
 [world_generation]
 	#Per-dimension worldgen version overrides. Normally the version used during world 
 	#creation is stored in SavedData and used automatically. Set an entry here to force 

@@ -1,0 +1,16 @@
+mixin:
+  # Enable new encryption optimizations on the client side
+  clientEncrypt: true
+  # Optimized RconClient implementation
+  rconClient: false
+  # Optimized VarLong implementation
+  bestVarLong: true
+  # Optimized VarInt implementation
+  bestVarInt: true
+  # Optimized Utf implementation
+  bestUtf: true
+compress:
+  # The compression level for packets, between 1-9.
+  compressionLevel: 4
+  # Permit Oversized Packets
+  permitOversizedPackets: false
