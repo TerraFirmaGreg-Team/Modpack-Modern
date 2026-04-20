@@ -32,7 +32,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Wszystkie warianty dzikich roślin",
       "multiblocks": [
         {
           "pattern": [
@@ -318,12 +318,12 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
+      "text": "Dzikie plony występują w klimatach, w których mona je uprawiać, więc konkretnych upraw, przyjrzyj się klimatowi, w którym można uprawiać.\nW przeciwieństwie $(l:mechaniki/Plony)Plonów$() zasadzonych przez gracza dzikie plony nie wymagają $(l:mechaniki/nawodnienie)Nawodnienia$().Zmiast tego znajdują się w zależności od średniej $()Temperatury$() i $()opadów$().",
       "title": "Znajdowanie dzikich roślin"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Następna strony pokazują tabele środowisk, gdzie występują dzikie plony."
     },
     {
       "type": "tfc:table",

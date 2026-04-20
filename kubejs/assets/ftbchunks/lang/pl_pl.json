@@ -1,13 +1,26 @@
 {
+  "ftbchunks.appearance.noise": "Szum",
   "ftbchunks.appearance.shadows": "Cienie",
   "ftbchunks.force_load_mode.default": "Domyślne",
+  "ftbchunks.force_load_mode.never": "Nigdy",
   "ftbchunks.fps": "FPS: %d",
   "ftbchunks.gui.settings": "Ustawienia",
+  "ftbchunks.map_mode.night": "Noc",
   "ftbchunks.map_mode.none": "Żaden",
   "ftbchunks.minimap": "Minimapa",
+  "ftbchunks.minimap.biome": "Biom",
+  "ftbchunks.minimap.blur_mode.on": "Włączony",
   "ftbchunks.minimap.compass": "Kompas",
   "ftbchunks.minimap.position": "Pozycja",
   "ftbchunks.minimap.position.none": "Żaden",
+  "ftbchunks.minimap.scale": "Skala",
   "ftbchunks.minimap.waypoints": "Punkty nawigacyjne",
-  "ftbchunks.waypoints": "Punkty nawigacyjne"
+  "ftbchunks.party_limit_mode.owner": "Właściciel",
+  "ftbchunks.pvp_mode.never": "Nigdy",
+  "ftbchunks.time_mode.clock": "Zegar",
+  "ftbchunks.waypoint.share": "Udostępnij",
+  "ftbchunks.waypoint.share.party": "Drużyna",
+  "ftbchunks.waypoints": "Punkty nawigacyjne",
+  "minimap.info.ftbchunks.biome.title": "Biom",
+  "minimap.info.ftbchunks.debug.title": "Debug"
 }

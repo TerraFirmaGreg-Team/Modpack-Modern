@@ -1,6 +1,7 @@
 {
 	"block.vintageimprovements.sulfur_block": "Blok siarki",
-	"block.vintageimprovements.vacuum_chamber": "",
+	"block.vintageimprovements.vacuum_chamber": "Komora próżniowa",
+	"block.vintageimprovements.vanadium_block": "Blok wanadu",
 	"block.vintageimprovements.vibrating_table": "Stół wibrujący",
 	"item.vintageimprovements.aluminum_sheet": "Płyta aluminiowa",
 	"item.vintageimprovements.bronze_rod": "Brązowy pręt",
@@ -36,5 +37,8 @@
 	"vintageimprovements.recipe.assembly.medium": "Średnie",
 	"vintageimprovements.recipe.assembly.on": "włączony",
 	"vintageimprovements.recipe.assembly.speed": "Prędkość",
+	"vintageimprovements.recipe.assembly.vibrating": "Wibracje",
+	"vintageimprovements.recipe.auto_curving": "Zakrzywianie",
+	"vintageimprovements.recipe.curving": "Zakrzywianie",
 	"vintageimprovements.recipe.vacuumizing": "Próżniowanie"
 }

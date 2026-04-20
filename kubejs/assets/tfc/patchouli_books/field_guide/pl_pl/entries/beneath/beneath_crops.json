@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cassava",
-			"title": "Cassava",
+			"title": "Maniok",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cassava can be eaten for $(thing)Vegetable$() nutrition, although it is best $(thing)cooked$() before consumed.$(br)"
 		},
 		{
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Beans",
+			"title": "Fasola",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
