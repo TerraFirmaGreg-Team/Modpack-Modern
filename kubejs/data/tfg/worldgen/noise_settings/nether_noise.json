@@ -9,7 +9,7 @@
 	"disable_mob_generation": false,
 	"legacy_random_source": true,
 	"noise": {
-		"height": 128,
+		"height": 208,
 		"min_y": 0,
 		"size_horizontal": 1,
 		"size_vertical": 1
@@ -45,15 +45,15 @@
 									"argument1": -2.5,
 									"argument2": {
 										"type": "minecraft:add",
-										"argument1": 0.96,
+										"argument1": 0.9375,
 										"argument2": {
 											"type": "minecraft:mul",
 											"argument1": {
 												"type": "minecraft:y_clamped_gradient",
 												"from_value": 1.0,
-												"from_y": 118,
+												"from_y": 198,
 												"to_value": 0.0,
-												"to_y": 128
+												"to_y": 208
 											},
 											"argument2": {
 												"type": "minecraft:add",
@@ -143,6 +143,16 @@
 					}
 				}
 			},
+
+			{
+				"type": "kubejs_tfc:rock",
+				"rock_block": "raw",
+				"fallback_state": {
+					"Name": "minecraft:deepslate"
+				}
+			},
+
+
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -843,8 +853,9 @@
 				}
 			},
 			{
-				"type": "minecraft:block",
-				"result_state": {
+				"type": "kubejs_tfc:rock",
+				"rock_block": "raw",
+				"fallback_state": {
 					"Name": "minecraft:deepslate"
 				}
 			}

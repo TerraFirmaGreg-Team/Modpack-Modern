@@ -437,7 +437,6 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		loose: 'beneath:blackstone_pebble',
 		brick: 'beneath:blackstone_brick',
 		aqueduct: 'beneath:blackstone_aqueduct',
-		gravel: 'tfg:tuff_gravel',
 		raw: generateForms('blackstone', 'minecraft:%s'),
 		cobble: generateFormsExisting('blackstone', 'tfg:rock/cobble_%s', { texture: 'minecraft:block/blackstone_top' },
 			generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),

@@ -12,6 +12,8 @@ const TWO_PI = JavaMath.PI * 2;
 
 const OXYGENATED_TEMP = 15;
 
+global.NETHER_HEIGHT = 208;
+
 global.MARS_PLANET_SIZE = 10000;
 global.MARS_MIN_AVG_TEMP = -110;
 global.MARS_MAX_AVG_TEMP = -15;
@@ -148,17 +150,16 @@ function calcAverage(playerZ, scale, min, max) {
 TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:nether_climate', builder => {
-
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return lerp(100, 25, pos.y / 128);
+			return lerp(100, 25, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
-			return lerp(100, 25, pos.y / 128);
+			return lerp(100, 25, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-			return lerp(0, 500, pos.y / 128);
+			return lerp(0, 500, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
