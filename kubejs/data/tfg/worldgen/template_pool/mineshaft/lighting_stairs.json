@@ -1,0 +1,42 @@
+{
+	"name": "tfg:mineshaft/lighting_stairs",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 5,
+			"element": {
+				"location": "tfg:mineshaft/lighting/torches",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:mineshaft/lighting/fallen_lamp_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:mineshaft/lighting/fallen_lamp_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "minecraft:empty",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

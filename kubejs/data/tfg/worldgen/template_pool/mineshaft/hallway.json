@@ -3,7 +3,7 @@
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 40,
+			"weight": 70,
 			"element": {
 				"location": "tfg:mineshaft/hallway/hallway_s_1",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -12,16 +12,25 @@
 			}
 		},
 		{
-			"weight": 20,
+			"weight": 35,
 			"element": {
-				"location": "tfg:mineshaft/hallway/hallway_t_1",
+				"location": "tfg:mineshaft/hallway/hallway_l",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
 		{
-			"weight": 10,
+			"weight": 35,
+			"element": {
+				"location": "tfg:mineshaft/hallway/hallway_r",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
 			"element": {
 				"location": "tfg:mineshaft/hallway/end_1",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -30,9 +39,90 @@
 			}
 		},
 		{
-			"weight": 10,
+			"weight": 30,
 			"element": {
 				"location": "tfg:mineshaft/hallway/end_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 36,
+			"element": {
+				"location": "tfg:mineshaft/intersection/hallway_t_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 36,
+			"element": {
+				"location": "tfg:mineshaft/intersection/hallway_t_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 36,
+			"element": {
+				"location": "tfg:mineshaft/intersection/hallway_t_3",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 12,
+			"element": {
+				"location": "tfg:mineshaft/intersection/hallway_x",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight":28,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 24,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 16,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_rubble_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 14,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_rubble_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:mineshaft/stair/stair_start",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

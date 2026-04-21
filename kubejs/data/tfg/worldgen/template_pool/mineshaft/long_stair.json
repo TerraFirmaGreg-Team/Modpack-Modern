@@ -1,0 +1,33 @@
+{
+	"name": "tfg:mineshaft/long_stair",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 50,
+			"element": {
+				"location": "tfg:mineshaft/stair/stair_middle",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:mineshaft/stair/stair_exit",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:mineshaft/stair/stair_rubble",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
