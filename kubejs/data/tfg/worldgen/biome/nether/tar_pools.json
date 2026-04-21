@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 5855333,
+		"fog_color": 9868701,
 		"additions_sound": {
 			"sound": "tfg:ambient.middle_nether.additions",
 			"tick_chance": 0.0015
@@ -24,16 +24,18 @@
 				"sound_id": "tfg:music.nether"
 			}
 		},
-		"sky_color": 5855333,
+		"sky_color": 9868701,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,
 		"grass_color": 6466617
 	},
 	"features": [
-		[],
 		[
 			"tfg:nether/terrain/lava_lake",
 			"tfg:nether/terrain/spring_water_lake"
+		],
+		[
+			"tfc:erosion"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -53,27 +55,9 @@
 			"tfg:nether/terrain/mossy_cobble"
 		],
 		[
-			"beneath:blackstone_boulders",
-			"beneath:blackstone_pebble_patch",
-			"tfg:nether/surface/loose_gabbro",
-			"tfg:nether/surface/bone_patch",
-			"tfg:nether/surface/rotten_flesh_patch",
-			"tfg:nether/surface/dead_bush_patch",
-			"beneath:burpflower_patch",
-			"beneath:gleamflower_patch",
-			"beneath:sulfur_patch",
-			"tfg:nether/surface/pumice_patch",
-			"tfg:nether/surface/beneath_mushrooms",
-			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+
 		],
-		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/spikes/gabbro_spikes",
-			"tfg:nether/hardening"
-		]
+		"#tfg:nether_global_decoration"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

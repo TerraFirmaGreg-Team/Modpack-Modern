@@ -6,14 +6,14 @@
 	"effects": {
 		"fog_color": 9533575,
 		"additions_sound": {
-			"sound": "tfg:ambient.upper_nether.additions",
+			"sound": "tfg:ambient.middle_nether.additions",
 			"tick_chance": 0.0015
 		},
-		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
+		"ambient_sound": "tfg:ambient.middle_nether.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "tfg:ambient.upper_nether.mood",
+			"sound": "tfg:ambient.middle_nether.mood",
 			"tick_delay": 6000
 		},
 		"music": {

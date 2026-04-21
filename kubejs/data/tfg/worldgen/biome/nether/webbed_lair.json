@@ -20,10 +20,10 @@
 			}
 		},
 		"additions_sound": {
-			"sound": "tfg:ambient.upper_nether_cave.additions",
+			"sound": "tfg:ambient.upper_nether.additions",
 			"tick_chance": 0.0015
 		},
-		"ambient_sound": "tfg:ambient.upper_nether_cave.loop",
+		"ambient_sound": "tfg:ambient.upper_nether.loop",
 		"sky_color": 5799235,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,

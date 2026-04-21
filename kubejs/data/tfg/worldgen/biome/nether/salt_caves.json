@@ -4,12 +4,12 @@
 	},
 	"downfall": 0.5,
 	"effects": {
+		"fog_color": 9868701,
 		"additions_sound": {
 			"sound": "tfg:ambient.upper_nether.additions",
 			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.upper_nether.loop",
-		"fog_color": 7369031,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -24,22 +24,18 @@
 				"sound_id": "tfg:music.nether"
 			}
 		},
-		"sky_color": 7369031,
-		"water_color": 6388580,
-		"water_fog_color": 2302743,
-		"foliage_color": 7171928,
-		"particle": {
-			"options": {
-				"type": "minecraft:mycelium"
-			},
-			"probability": 0.1
-		}
+		"sky_color": 9868701,
+		"water_color": 7255466,
+		"water_fog_color": 3169873,
+		"grass_color": 6466617
 	},
 	"features": [
-		[],
 		[
 			"tfg:nether/terrain/lava_lake",
 			"tfg:nether/terrain/spring_water_lake"
+		],
+		[
+			"tfc:erosion"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -47,7 +43,9 @@
 		],
 		[],
 		[
-			"tfg:nether/terrain/glowstone_ceiling"
+			"tfg:nether/terrain/glowstone_ceiling",
+			"tfg:nether/spikes/calcite",
+			"tfg:nether/spikes/mega_calcite"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -57,37 +55,9 @@
 			"tfg:nether/terrain/mossy_cobble"
 		],
 		[
-			"beneath:blackstone_boulders",
-			"beneath:blackstone_pebble_patch",
-			"tfg:nether/surface/loose_deepslate",
-			"tfg:nether/surface/big_mushrooms",
-			"tfg:nether/surface/moss_patch_big",
-			"tfg:nether/surface/glow_mushroom",
-			"tfg:nether/surface/humus_patch",
-			"tfg:nether/surface/bone_patch",
-			"tfg:nether/surface/rotten_flesh_patch",
-			"tfg:nether/surface/dead_bush_patch",
-			"tfg:nether/surface/mushroom_sprouts",
-			"tfg:nether/terrain/mud_pool",
-			"tfg:nether/surface/green_algae_patch",
-			"tfg:nether/surface/small_mushrooms",
-			"tfg:nether/terrain/liana_ceiling",
-			"minecraft:spore_blossom",
-			"beneath:burpflower_patch",
-			"beneath:gleamflower_patch",
-			"beneath:sulfur_patch",
-			"tfg:nether/surface/pumice_patch",
-			"tfg:nether/surface/beneath_mushrooms",
-			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+
 		],
-		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/deepslate_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/hardening"
-		]
+		"#tfg:nether_global_decoration"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -106,12 +76,19 @@
 				"weight": 10
 			}
 		],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "minecraft:axolotl",
+				"maxCount": 5,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 8,
+				"minCount": 4,
 				"weight": 100
 			}
 		],
@@ -130,52 +107,40 @@
 				"weight": 100
 			},
 			{
-				"type": "minecraft:zombie",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
-				"type": "minecraft:drowned",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
-				"type": "minecraft:creeper",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:silverfish",
+				"type": "minecraft:spider",
 				"maxCount": 5,
 				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:skeleton",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombie",
 				"maxCount": 4,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:spider",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 50
+				"type": "minecraft:creeper",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 90
 			},
 			{
-				"type": "minecraft:slime",
-				"maxCount": 4,
-				"minCount": 4,
-				"weight": 100
+				"type": "minecraft:silverfish",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
 			},
 			{
 				"type": "minecraft:phantom",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 5
 			},
 			{
 				"type": "minecraft:enderman",
@@ -184,10 +149,28 @@
 				"weight": 10
 			},
 			{
-				"type": "endermanoverhaul:mushroom_fields_enderman",
-				"maxCount": 2,
+				"type": "endermanoverhaul:nether_wastes_enderman",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 5
+			},
+			{
+				"type": "endermanoverhaul:swamp_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "endermanoverhaul:dark_oak_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			}
 		],
 		"underground_water_creature": [
@@ -200,5 +183,5 @@
 		],
 		"water_creature": []
 	},
-	"temperature": 0.8
+	"temperature": 1
 }

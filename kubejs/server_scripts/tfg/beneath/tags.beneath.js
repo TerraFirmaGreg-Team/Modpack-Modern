@@ -160,4 +160,13 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
+    
+	event.add('tfg:nether_underground_decoration', 'tfc:cave_column')
+	event.add('tfg:nether_underground_decoration', 'tfc:large_cave_spike')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagmite')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagtite')
+
+	event.add('tfg:nether_global_decoration', 'tfg:nether/surface/loose_rocks')
+	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')
+    event.add('tfg:nether_global_decoration', "tfg:glow_lichen");
 }

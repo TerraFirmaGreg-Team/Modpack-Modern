@@ -2,7 +2,7 @@
 	"type": "minecraft:flat_cache",
 	"argument": {
 		"type": "minecraft:shifted_noise",
-		"noise": "minecraft:erosion",
+		"noise": "tfg:nether_biome_bottom",
 		"shift_x": "minecraft:shift_x",
 		"shift_y": 0,
 		"shift_z": "minecraft:shift_z",
