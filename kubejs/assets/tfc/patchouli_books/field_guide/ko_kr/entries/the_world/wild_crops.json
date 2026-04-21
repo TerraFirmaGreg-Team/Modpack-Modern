@@ -1,11 +1,11 @@
 {
-  "name": "Wild Crops",
+  "name": "야생 작물",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "$(thing)야생 작물$()은 세계 곳곳에 작은 군락 형태로 자생합니다. 이들은 식량과 씨앗을 얻기 위해 수확할 수 있으며, 획득한 씨앗은 야생이 아닌 형태로 직접 재배할 수 있습니다.$(br2)야생 작물은 맨손이나 $(thing)칼$() 또는 다른 날카로운 도구로 수확할 수 있습니다. 파괴하면 $(thing)씨앗$()과 일부 $(thing)수확물$()을 드롭합니다."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "name": "야생 밀",
+      "text": "야생 작물의 예시로, 이 경우 $(l:mechanics/crops#wheat)밀$()입니다.",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "재배 가능한 모든 $(l:mechanics/crops)작물$()은 야생에서도 발견할 수 있습니다. 야생 작물은 재배된 작물과 비슷한 모습이지만, 풀 속에 더 잘 숨겨져 있습니다. 야생 작물은 6월부터 10월 사이에만 성숙하며, 그 외의 기간에는 다음 여름이 올 때까지 말라 죽은 것처럼 보입니다."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "다양한 종류의 야생 작물",
       "multiblocks": [
         {
           "pattern": [
@@ -318,139 +318,139 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "text": "야생 작물은 해당 작물이 재배 가능한 기후와 유사한 환경에서 생성되므로, 특정 작물을 찾고 있다면 그 작물이 재배 가능한 기후를 찾아보는 것이 좋습니다. 그러나 플레이어가 직접 심은 $(l:mechanics/crops)작물$()과는 달리, 야생 작물은 $(l:mechanics/hydration)수분$()을 필요로 하지 않습니다. 대신 평균 $()기온$()과 $()강수량$()에 따라 생성됩니다.",
+      "title": "야생 작물 찾기"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "다음 페이지에서는 야생 작물을 발견할 수 있는 환경을 표로 정리하여 보여줍니다."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "작물",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "기온(°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "강수량(mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "보리"
         },
         {
-          "text": " -8 - 26"
+          "text": " -8~26"
         },
         {
-          "text": " 70 - 310"
+          "text": " 70~310"
         },
         {
-          "text": "Oat"
+          "text": "귀리"
         },
         {
-          "text": "  3 - 40"
+          "text": "  3~40"
         },
         {
-          "text": "140 - 400"
+          "text": "140~400"
         },
         {
-          "text": "Rye"
+          "text": "호밀"
         },
         {
-          "text": "-11 - 30"
+          "text": "-11~30"
         },
         {
-          "text": "100 - 350"
+          "text": "100~350"
         },
         {
-          "text": "Maize"
+          "text": "옥수수"
         },
         {
-          "text": " 13 - 40"
+          "text": " 13~40"
         },
         {
-          "text": "300 - 500"
+          "text": "300~500"
         },
         {
-          "text": "Wheat"
+          "text": "밀"
         },
         {
-          "text": " -4 - 35"
+          "text": "-4~35"
         },
         {
-          "text": "100 - 400"
+          "text": "100~400"
         },
         {
-          "text": "Rice"
+          "text": "쌀"
         },
         {
-          "text": " 15 - 30"
+          "text": "15~30"
         },
         {
-          "text": "100 - 500"
+          "text": "100~500"
         },
         {
-          "text": "Beet"
+          "text": "사탕무"
         },
         {
-          "text": " -5 - 20"
+          "text": "-5~20"
         },
         {
-          "text": " 70 - 300"
+          "text": "70~300"
         },
         {
-          "text": "Cabbage"
+          "text": "배추"
         },
         {
-          "text": "-10 - 27"
+          "text": "-10~27"
         },
         {
-          "text": " 60 - 280"
+          "text": "60~280"
         },
         {
-          "text": "Carrot"
+          "text": "당근"
         },
         {
-          "text": "  3 - 30"
+          "text": "3~30"
         },
         {
-          "text": "100 - 400"
+          "text": "100~400"
         },
         {
-          "text": "Garlic"
+          "text": "마늘"
         },
         {
-          "text": "-20 - 18"
+          "text": "-20~18"
         },
         {
-          "text": " 60 - 310"
+          "text": "60~310"
         },
         {
-          "text": "Green Bean"
+          "text": "강낭콩"
         },
         {
-          "text": "  2 - 35"
+          "text": "2~35"
         },
         {
-          "text": "150 - 410"
+          "text": "150~410"
         },
         {
-          "text": "Melon"
+          "text": "멜론"
         },
         {
-          "text": "  5 - 37"
+          "text": "5~37"
         },
         {
-          "text": "200 - 500"
+          "text": "200~500"
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "야생 작물 생성 조건",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -468,46 +468,46 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "작물",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "기온(°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "강수량(mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "감자"
         },
         {
-          "text": " -1 - 37"
+          "text": "-1~37"
         },
         {
-          "text": "200 - 410"
+          "text": "200~410"
         },
         {
-          "text": "Pumpkin"
+          "text": "호박"
         },
         {
-          "text": "  0 - 30"
+          "text": "0~30"
         },
         {
-          "text": "120 - 390"
+          "text": "120~390"
         },
         {
-          "text": "Onion"
+          "text": "양파"
         },
         {
-          "text": "  0 - 30"
+          "text": "0~30"
         },
         {
-          "text": "100 - 390"
+          "text": "100~390"
         },
         {
-          "text": "Soybean"
+          "text": "대두"
         },
         {
           "text": "  8 - 30"
@@ -540,13 +540,13 @@
           "text": "  0 - 36"
         },
         {
-          "text": "120 - 390"
+          "text": "120~390"
         },
         {
           "text": "Jute"
         },
         {
-          "text": "  5 - 37"
+          "text": "5~37"
         },
         {
           "text": "100 - 410"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "야생 작물 생성 조건",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -607,15 +607,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "작물",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "기온(°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "강수량(mm)",
           "bold": true
         },
         {
@@ -640,10 +640,10 @@
           "text": "Cucumber"
         },
         {
-          "text": " 15 - 40"
+          "text": "15~40"
         },
         {
-          "text": "350 - 500"
+          "text": "350~500"
         },
         {
           "text": "Radish"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "야생 작물 생성 조건",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,

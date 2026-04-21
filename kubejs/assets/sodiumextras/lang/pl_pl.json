@@ -2,7 +2,14 @@
   "sodium.extras.options.common.fast": "Szybkie",
   "sodium.extras.options.common.millis": "ms",
   "sodium.extras.options.common.normal": "Zwyczajny",
+  "sodium.extras.options.common.off": "Wył.",
   "sodium.extras.options.common.on": "Włączony",
   "sodium.extras.options.common.slow": "Wolne",
-  "sodium.extras.options.darkness.mode.dark": "Ciemny"
+  "sodium.extras.options.darkness.mode.dark": "Ciemny",
+  "sodium.extras.options.darkness.mode.dim": "Ciemny",
+  "sodium.extras.options.displayfps.avg": "Śr.",
+  "sodium.extras.options.displayfps.fps": "FPS (kl./s)",
+  "sodium.extras.options.displayfps.gpu": "GPU",
+  "sodium.extras.options.displayfps.mem": "MEM",
+  "sodium.extras.options.displayfps.min": "MIN"
 }
