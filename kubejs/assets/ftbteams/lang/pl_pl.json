@@ -1,5 +1,7 @@
 {
   "ftbteams.accept": "Akceptuj ✔",
+  "ftbteams.gui.create_party": "Opis",
+  "ftbteams.gui.party_description": "Opis",
   "ftbteams.info.owner": "Właściciel: %s",
   "ftbteams.info.owner.none": "Żaden",
   "ftbteams.privacy_mode.private": "Prywatny",
@@ -7,5 +9,6 @@
   "ftbteams.ranks.none": "Żaden",
   "ftbteams.ranks.officer": "Oficer",
   "ftbteams.ranks.owner": "Właściciel",
-  "ftbteamsconfig.ftbteams.color": "Kolor"
+  "ftbteamsconfig.ftbteams.color": "Kolor",
+  "ftbteamsconfig.ftbteams.description": "Opis"
 }

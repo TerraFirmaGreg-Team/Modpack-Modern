@@ -9,12 +9,14 @@
   "ftbchunks.map_mode.none": "Żaden",
   "ftbchunks.minimap": "Minimapa",
   "ftbchunks.minimap.biome": "Biom",
+  "ftbchunks.minimap.blur_mode.off": "Wył.",
   "ftbchunks.minimap.blur_mode.on": "Włączony",
   "ftbchunks.minimap.compass": "Kompas",
   "ftbchunks.minimap.position": "Pozycja",
   "ftbchunks.minimap.position.none": "Żaden",
   "ftbchunks.minimap.scale": "Skala",
   "ftbchunks.minimap.waypoints": "Punkty nawigacyjne",
+  "ftbchunks.minimap.xyz": "XYZ",
   "ftbchunks.party_limit_mode.owner": "Właściciel",
   "ftbchunks.pvp_mode.never": "Nigdy",
   "ftbchunks.time_mode.clock": "Zegar",
@@ -22,5 +24,6 @@
   "ftbchunks.waypoint.share.party": "Drużyna",
   "ftbchunks.waypoints": "Punkty nawigacyjne",
   "minimap.info.ftbchunks.biome.title": "Biom",
-  "minimap.info.ftbchunks.debug.title": "Debug"
+  "minimap.info.ftbchunks.debug.title": "Debug",
+  "minimap.info.ftbchunks.fps.title": "FPS (kl./s)"
 }
