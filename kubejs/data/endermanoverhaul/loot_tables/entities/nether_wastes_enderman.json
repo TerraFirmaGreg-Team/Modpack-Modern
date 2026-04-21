@@ -41,19 +41,25 @@
 			"rolls": 2.0
 		},
 		{
-			"type": "minecraft:item",
-			"functions": [
+			"bonus_rolls": 0.0,
+			"entries": [
 				{
-					"add": false,
-					"count": {
-						"type": "minecraft:uniform",
-						"max": 4.0,
-						"min": 2.0
-					},
-					"function": "minecraft:set_count"
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4.0,
+								"min": 2.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "tfc:ore/normal_native_gold"
 				}
 			],
-			"name": "tfc:ore/normal_native_gold"
+			"rolls": 1.0
 		}
 	]
 }
