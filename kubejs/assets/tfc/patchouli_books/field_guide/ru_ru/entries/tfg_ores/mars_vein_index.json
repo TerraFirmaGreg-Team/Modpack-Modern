@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин, Пироп, Сапфир...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит, Трикальцийфосфат...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Бериллий, Изумруд, Реальгар$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит, Куперит, Никель...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут, Гематит, Сера, Гипс$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит, Никель, Кобальтит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит, Лимонит, Native Gold...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит, Лимонит, Гётит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит, Уголь, Алмаз, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Зеленый сапфир, Боксит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит, Олово, Селитра$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_almandine)Альмандин, Пироп, Сапфир...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_apatite)Апатит, Трикальцийфосфат...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_neodynium)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_beryllium)Бериллий, Изумруд, Реальгар$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Битумный уголь, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_sheldonite)Борнит, Куперит, Никель...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_bismuthinite)Висмут, Гематит, Сера, Гипс$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_galena)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_nickel)Гарниерит, Никель, Кобальтит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Гематит, Лимонит, Native Gold...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Гематит, Лимонит, Гётит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_graphite)Графит, Битумный уголь, Алмаз...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tantalite)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_gold)Зеленый сапфир, Боксит...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварц, Барит, Асбест, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Мыльный камень, Тальк...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоуновая пыль, Рубин...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сера, Пирит, Сфалерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Сильвин, Галит, Лепидолит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит, Никель, Галена...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_coal)Уголь, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торианит, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранит, Торианит, Уранинит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Халькопирит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит, Вольфрамат, Литий...$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_surface_cassiterite)Касситерит, Олово, Селитра$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Кварц, Барит, Асбест, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Мыльный камень, Тальк...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Редстоуновая пыль, Рубин...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Сера, Пирит, Сфалерит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Сильвин, Галит, Лепидолит...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Сфалерит, Никель, Галена...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Тетраэдрит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Тетраэдрит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Уранит, Торианит, Гематит$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Уранит, Торианит, Уранинит$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_copper)Халькопирит, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Шеелит, Вольфрамат, Литий...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -384,6 +384,58 @@
       "enable_visualize": false,
       "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Source of$(): Arsenic$(br)$(thing)Formula$(): As₄S₄$(br)$(thing)Hazard$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/215 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 60%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 55$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Диорит, Доломит, Конгломерат, Красный гранит, Мел, Трахит",
+      "title": "Битумный уголь, Гематит",
+      "type": "patchouli:text",
+      "anchor": "mars_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Битумный уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 70%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Гематит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/hematite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -940,7 +992,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 120$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Аргиллит, Габбро, Гранит, Дацит, Диорит, Красный гранит, Трахит",
-      "title": "Графит, Уголь, Алмаз, Гематит",
+      "title": "Графит, Битумный уголь, Алмаз...",
       "type": "patchouli:text",
       "anchor": "mars_graphite"
     },
@@ -966,7 +1018,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -2131,58 +2183,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент нагрузки$(): 4%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/215 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 60%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 55$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Аргиллит, Аргиллит, Базальт, Гранит, Дацит, Диорит, Доломит, Конгломерат, Красный гранит, Мел, Трахит",
-      "title": "Уголь, Гематит",
-      "type": "patchouli:text",
-      "anchor": "mars_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Уголь",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 70%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Гематит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/hematite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃",
       "type": "patchouli:multiblock"
     },
     {

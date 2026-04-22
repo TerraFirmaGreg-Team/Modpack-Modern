@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)アパタイト, リン酸三カルシウム, パイロクロア (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)クォーツ, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)クォーツ, 重晶石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)グラファイト, 石炭, ダイヤモンド (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)グラファイト, 石炭, ダイヤモンド (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)タキアン鉱, ホウ砂, トロナ$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)トリアナイト, 閃ウラン鉱, エメラルド, ベリリウム$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)バストネス石, モナザイト, ネオジム$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)ビスマス$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)ビスマス (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)ビスマス, 自然銀, 自然金, エレクトロチン$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)ベントナイト, 菱苦土鉱, オリビン, フラー土$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)ボーキサイト, チタン鉄鉱$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)アパタイト, リン酸三カルシウム, パイロクロア (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)クォーツ, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)クォーツ, 重晶石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)グラファイト, 歴青炭, ダイヤモンド (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)グラファイト, 歴青炭, ダイヤモンド (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)タキアン鉱, ホウ砂, トロナ$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)トリアナイト, 閃ウラン鉱, エメラルド, ベリリウム$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)バストネス石, モナザイト, ネオジム$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)ビスマス$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)ビスマス (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)ビスマス, 自然銀, 自然金, エレクトロチン$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)ブルートパーズ, トパーズ, 輝銅鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)ベントナイト, 菱苦土鉱, オリビン, フラー土$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)ボーキサイト, チタン鉄鉱$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)モリブデン鉛鉱, 輝水鉛鉱, モリブデン, パウエル石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)リシア輝石, カリ岩塩$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)リン酸三カルシウム (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)レッドストーン, ルビー, 辰砂 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)レッドストーン, ルビー, 辰砂 (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)四面銅鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)孔雀石 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)岩塩, カリ岩塩 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)岩塩, カリ岩塩, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)方鉛鉱, 自然銀$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)方鉛鉱, 自然銀, 鉛 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)灰礬柘榴石, 満礬柘榴石, 軟マンガン鉱, タンタル石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)灰礬柘榴石, 軟マンガン鉱, タンタル石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)モリブデン鉛鉱, 輝水鉛鉱, モリブデン, パウエル石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)リシア輝石, カリ岩塩$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)リン酸三カルシウム (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)レッドストーン, ルビー, 辰砂 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)レッドストーン, ルビー, 辰砂 (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)四面銅鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)孔雀石 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)岩塩, カリ岩塩 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)岩塩, カリ岩塩, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)方鉛鉱, 自然銀$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)方鉛鉱, 自然銀, 鉛 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)歴青炭 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)灰礬柘榴石, 満礬柘榴石, 軟マンガン鉱, タンタル石$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチウム$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)石炭 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 (Deep)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)灰礬柘榴石, 軟マンガン鉱, タンタル石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチウム$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 (Deep)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭, 石炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭, 歴青炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()",
       "type": "patchouli:text"
     },
     {
@@ -221,7 +221,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 15%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)高さ$(): 80$(br)$(thing)半径$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): 斑れい岩, 花崗岩, 閃緑岩",
-      "title": "グラファイト, 石炭, ダイヤモンド (Deep)",
+      "title": "グラファイト, 歴青炭, ダイヤモンド (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
     },
@@ -247,7 +247,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石炭",
+      "name": "歴青炭",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -288,7 +288,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 17%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)高さ$(): 150$(br)$(thing)半径$(): 18$(br)$(thing)Biomes$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)Volcanic$(/t)$(br2)$(thing)Stone Types$(): 斑れい岩, 花崗岩, 閃緑岩",
-      "title": "グラファイト, 石炭, ダイヤモンド (Volcanic)",
+      "title": "グラファイト, 歴青炭, ダイヤモンド (Volcanic)",
       "type": "patchouli:text",
       "anchor": "deep_graphite_volcanic"
     },
@@ -314,7 +314,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石炭",
+      "name": "歴青炭",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1626,6 +1626,33 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Basalt, Marble, Quartzite, Tuff, デイサイト, 千枚岩, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "title": "歴青炭 (High)",
+      "type": "patchouli:text",
+      "anchor": "high_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "歴青炭",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/290 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 27%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 31$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Marble, Quartzite, 千枚岩, 片岩, 片麻岩, 粘板岩",
       "title": "灰礬柘榴石, 満礬柘榴石, 軟マンガン鉱, タンタル石",
       "type": "patchouli:text",
@@ -2102,33 +2129,6 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Basalt, Marble, Quartzite, Tuff, デイサイト, 千枚岩, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
-      "title": "石炭 (High)",
-      "type": "patchouli:text",
-      "anchor": "high_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "石炭",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -2895,7 +2895,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): : いつでも$(br2)$(thing)Stone Types$(): Marble, Quartzite, Tuff, 千枚岩, 片岩, 片麻岩, 粘板岩",
-      "title": "褐炭, 石炭",
+      "title": "褐炭, 歴青炭",
       "type": "patchouli:text",
       "anchor": "normal_coal"
     },
@@ -2921,7 +2921,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "石炭",
+      "name": "歴青炭",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
