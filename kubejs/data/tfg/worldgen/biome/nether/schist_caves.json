@@ -30,19 +30,13 @@
 		"grass_color": 6466617
 	},
 	"features": [
-		[],
+		"#tfg:nether_lakes_and_geodes",
 		[
-			"tfg:nether/terrain/lava_lake",
-			"tfg:nether/terrain/spring_water_lake"
-		],
-		[
-			"minecraft:basalt_pillar",
-			"tfg:earth/geode/amethyst"
+			"tfc:erosion"
 		],
 		[],
+		[],
 		[
-			"tfg:nether/terrain/glowstone_ceiling",
-			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
 		[],
@@ -55,7 +49,6 @@
 		[
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
-			"tfg:nether/surface/loose_schist",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -65,15 +58,9 @@
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+			"tfg:nether/surface/stick_patch"
 		],
-		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/spikes/schist_spikes",
-			"tfg:nether/hardening"
-		]
+		"#tfg:nether_global_decoration"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

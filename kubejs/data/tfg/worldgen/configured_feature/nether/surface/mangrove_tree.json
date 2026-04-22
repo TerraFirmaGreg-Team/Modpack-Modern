@@ -46,7 +46,7 @@
 				}
 			},
 			"mangrove_root_placement": {
-				"can_grow_through": "#minecraft:moss_replaceable",
+				"can_grow_through": "#minecraft:base_stone_nether",
 				"max_root_length": 15,
 				"max_root_width": 8,
 				"muddy_roots_in": [

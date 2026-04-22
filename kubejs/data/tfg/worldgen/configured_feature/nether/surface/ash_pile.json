@@ -10,7 +10,7 @@
 				"Name": "minecraft:blackstone"
 			}
 		},
-		"replaceable": "#minecraft:moss_replaceable",
+		"replaceable": "#minecraft:base_stone_nether",
 		"surface": "floor",
 		"vegetation_chance": 0.9,
 		"vegetation_feature": {

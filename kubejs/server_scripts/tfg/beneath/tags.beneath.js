@@ -42,8 +42,6 @@ function registerTFGBeneathItemTags(event) {
 
 
 function registerTFGBeneathBlockTags(event) {
-	event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
-    event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
 
 	event.remove('tfc:plants', 'beneath:gleamflower')
     event.remove('tfc:plants', 'beneath:burpflower')
@@ -51,37 +49,65 @@ function registerTFGBeneathBlockTags(event) {
     beneath_plants.forEach(plant =>
 	    event.add('tfg:plants/beneath', plant)
     );
-    
-    event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:moss_block')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:dripstone_block')
-    event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
-    event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
-    event.add('minecraft:nether_carver_replaceables', 'minecraft:dripstone_block')
-    event.add('minecraft:frogs_spawnable_on', 'minecraft:deepslate')
-    event.add('minecraft:frogs_spawnable_on', 'minecraft:blackstone')
-    event.add('minecraft:frogs_spawnable_on', 'minecraft:dripstone_block')
-    event.add('minecraft:axolotls_spawnable_on', 'minecraft:deepslate')
-    event.add('minecraft:axolotls_spawnable_on', 'minecraft:dripstone_block')
-    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
-    event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
-    event.add('tfc:creeping_plantable_on', 'minecraft:deepslate')
-    event.add('tfc:creeping_plantable_on', 'minecraft:blackstone')
-    event.add('tfc:creeping_stone_plantable_on', 'minecraft:moss_block')
-    event.add('tfc:creeping_stone_plantable_on', 'minecraft:deepslate')
-    event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
+
 
     event.add('minecraft:base_stone_nether', 'minecraft:deepslate')
     event.add('minecraft:base_stone_nether', 'minecraft:blackstone')
     event.add('minecraft:base_stone_nether', 'minecraft:dripstone_block')
+    event.add('minecraft:base_stone_nether', 'minecraft:tuff')
+    event.add("minecraft:base_stone_nether", "beneath:crackrack");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/gneiss");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/schist");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/diorite");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/granite");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/gabbro");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/basalt");
+    event.add("minecraft:base_stone_nether", "tfc:rock/raw/phyllite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/raw/slate");
+    event.add("minecraft:base_stone_nether", "tfc:rock/raw/marble");
+
+	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_deepslate')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_blackstone')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_tuff')
+    event.add("minecraft:base_stone_nether", "tfg:rock/hardened_crackrack");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/gneiss");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/schist");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/diorite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/granite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/gabbro");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/basalt");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/phyllite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/slate");
+    event.add("minecraft:base_stone_nether", "tfc:rock/hardened/marble");
+
+	event.add('minecraft:base_stone_nether', 'tfg:rock/mossy_cobble_deepslate')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/mossy_cobble_blackstone')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/mossy_cobble_dripstone')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/mossy_cobble_tuff')
+    event.add("minecraft:base_stone_nether", "tfg:rock/mossy_cobble_crackrack");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/gneiss");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/schist");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/diorite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/granite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/gabbro");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/basalt");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/phyllite");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/slate");
+    event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/marble");
+    
+
+    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', '#minecraft:base_stone_nether')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_stone_plantable_on', '#minecraft:base_stone_nether')
+    event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
+    event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:moss_block')
+    event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
+	event.add('tfg:lush_ground_replaceable', '#minecraft:base_stone_nether')
+    event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
 
     event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
 
@@ -89,22 +115,6 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:mineable/hoe', 'minecraft:cobweb');
     event.add('minecraft:mineable/shovel', 'minecraft:cobweb');
     event.add('minecraft:mineable/axe', 'minecraft:cobweb');
-
-    event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
-	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_deepslate')
-	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_deepslate')
-	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_deepslate')
-	event.add('tfc:grass_plantable_on', 'tfg:rock/hardened_deepslate')
-	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_deepslate')
-
-	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_blackstone')
-	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_blackstone')
-	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_blackstone')
-	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_blackstone')
-	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_blackstone')
-
-	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
-	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
     
     event.add("beneath:nether_bush_plantable_on", "#tfc:clay_grass");
     event.add("minecraft:small_dripleaf_placeable", "#tfc:clay_grass");
@@ -155,7 +165,12 @@ function registerTFGBeneathBiomeTags(event) {
 
 function registerTFGBeneathPlacedFeatures(event) {
 
-    event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
+
+    event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/lava_lake");
+    event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
+    event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
+    event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/amethyst");
+    event.add('tfg:nether_lakes_and_geodes', 'beneath:vein/crackrack_pipe')
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
@@ -165,8 +180,11 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'tfc:large_cave_spike')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagmite')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagtite')
+	event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/glowstone_ceiling")
+	event.add('tfg:nether_underground_decoration', "tfg:nether/spikes/calcite")
 
 	event.add('tfg:nether_global_decoration', 'tfg:nether/surface/loose_rocks')
 	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')
     event.add('tfg:nether_global_decoration', "tfg:glow_lichen");
+    event.add('tfg:nether_global_decoration', "beneath:glowstone_spikes");
 }

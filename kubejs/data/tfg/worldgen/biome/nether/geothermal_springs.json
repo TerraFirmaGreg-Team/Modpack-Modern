@@ -30,21 +30,13 @@
 		"grass_color": 6466617
 	},
 	"features": [
-		[
-			"tfg:nether/terrain/lava_lake",
-			"tfg:nether/terrain/spring_water_lake"
-		],
+		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfc:erosion"
 		],
-		[
-			"minecraft:basalt_pillar",
-			"tfg:earth/geode/amethyst"
-		],
+		[],
 		[],
 		[
-			"tfg:nether/terrain/glowstone_ceiling",
-			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
 		[],

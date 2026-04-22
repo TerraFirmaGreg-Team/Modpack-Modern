@@ -30,19 +30,13 @@
 		"grass_color": 6466617
 	},
 	"features": [
-		[],
+		"#tfg:nether_lakes_and_geodes",
 		[
-			"tfg:nether/terrain/lava_lake",
-			"tfg:nether/terrain/spring_water_lake"
-		],
-		[
-			"minecraft:large_dripstone",
-			"tfg:earth/geode/amethyst"
+			"tfc:erosion"
 		],
 		[],
-		[
-			"tfg:nether/terrain/glowstone_ceiling"
-		],
+		[],
+		[],
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
@@ -67,16 +61,9 @@
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+			"tfg:nether/surface/stick_patch"
 		],
-		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/deepslate_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/spikes/dripstone_spikes",
-			"tfg:nether/hardening"
-		]
+		"#tfg:nether_global_decoration"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

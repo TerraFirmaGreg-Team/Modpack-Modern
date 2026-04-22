@@ -10,7 +10,7 @@
 				"Name": "tfc:muddy_roots/silty_loam"
 			}
 		},
-		"replaceable": "#minecraft:lush_ground_replaceable",
+		"replaceable": "#tfg:lush_ground_replaceable",
 		"surface": "floor",
 		"vegetation_chance": 0.7,
 		"vegetation_feature": {

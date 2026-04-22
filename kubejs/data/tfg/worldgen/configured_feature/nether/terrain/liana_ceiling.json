@@ -16,7 +16,7 @@
 				"Name": "tfg:rock/hardened_deepslate"
 			}
 		},
-		"replaceable": "#minecraft:moss_replaceable",
+		"replaceable": "#minecraft:base_stone_nether",
 		"surface": "ceiling",
 		"vegetation_chance": 0.08,
 		"vegetation_feature": {
