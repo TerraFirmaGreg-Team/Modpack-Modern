@@ -199,7 +199,7 @@ function registerTFGLoots(event) {
 		.addWeightedLoot([7, 10], ['minecraft:bone'])
 		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
-		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
 		.addLoot(LootEntry.of('firmalife:rennet', 4))
 	
 	// Bison drop extra with butchery knife
