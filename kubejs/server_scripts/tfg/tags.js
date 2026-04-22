@@ -145,6 +145,93 @@ const registerTFGItemTags = (event) => {
 		event.removeAllTagsFrom(glassLens);
 		event.add("c:hidden_from_recipe_viewers", glassLens);
 	});
+	
+	//tag unfinished tracks for emi++ grouping
+	
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}`)
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_narrow`)
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_wide`)	
+	})
+	
+	const OTHER_TRACKS = [
+		"blackstone", "tieless", "acacia",
+		"birch",      "cherry",  "jungle",
+		"spruce",     "crimson",  "warped",
+		"bamboo",     "stripped_bamboo", "create_andesite"
+	]
+	
+	OTHER_TRACKS.forEach(rail => {
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}`)
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_narrow`)
+		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_wide`)
+	})
+	
+	event.add('tfg:incomplete_tracks', `railways:track_incomplete_monorail`)
+	
+	// tag locometal blocks (minus (trap)doors) for emi++ grouping
+
+	const LOCOMETAL_TYPES = [
+		"riveted_locometal", "slashed_locometal", "locometal_vent", "flat_riveted_locometal",
+		"flat_slashed_locometal", "plated_locometal", "locometal_pillar", "locometal_smokebox",
+		"brass_wrapped_locometal", "copper_wrapped_locometal", "iron_wrapped_locometal", 
+		"wrapped_locometal_smokebox", "copper_wrapped_locometal_smokebox",
+		"hazard_stripes_diagonal_on_black", "hazard_stripes_chevron_on_black", 
+		"hazard_stripes_diagonal_on_white", "hazard_stripes_chevron_on_white",
+		"iron_wrapped_locometal_smokebox", "locometal_boiler", "brass_wrapped_locometal_boiler",
+		"copper_wrapped_locometal_boiler", "iron_wrapped_locometal_boiler", 
+		"locometal_flywheel", "locometal_end_ladder", "locometal_rung_ladder",
+		"round_pane_locometal_window", "single_pane_locometal_window",
+		"two_pane_locometal_window", "four_pane_locometal_window",
+	]
+	
+	LOCOMETAL_TYPES.forEach(type => {
+		event.add('tfg:locometal_blocks', `railways:${type}`)
+		global.LOCOMETAL_COLORS.forEach(colorObj => { 
+    		colorObj.colors.forEach(subColor => {
+            	event.add('tfg:locometal_blocks', `railways:${subColor}_${type}`)
+        	})
+    	})
+	})
+
+	//tag smokestacks for emi++ grouping
+	const SMOKESTACK_TYPES = [
+		"long", "coalburner", "oilburner", "streamlined", "woodburner",
+	]
+
+	const SMOKESTACK_MATERIALS = [ 
+	"brass_cap_steel", "copper_cap_steel", "iron_cap_steel", "brass", "iron_cap_copper",
+	"copper_cap_brass", "iron_cap_brass", "copper", "brass_cap_copper",
+	]
+
+	SMOKESTACK_TYPES.forEach(type => {
+		event.add('tfg:smokestacks', `railways:smokestack_${type}`)
+		SMOKESTACK_MATERIALS.forEach(mat => {
+			event.add('tfg:smokestacks', `railways:smokestack_${type}_${mat}`)
+		})
+	})
+	
+	event.add('tfg:smokestacks', 'railways:smokestack_caboosestyle')
+
+	// links and headstocks
+
+	const TRAIN_LINKS_AND_HEADSTOCKS = [
+	"link_and_pin", "link_and_pin_linkless", "knuckle_coupler", "split_knuckle_coupler", "screwlink_coupler",
+	]
+
+	TRAIN_LINKS_AND_HEADSTOCKS.forEach(type => {
+		event.add('tfg:train_connectors', `railways:${type}`)
+		event.add('tfg:train_connectors', `railways:wooden_headstock_${type}`)
+		event.add('tfg:train_connectors', `railways:copycat_headstock_${type}`)
+	})
+	
+	event.add('tfg:train_connectors', 'railways:small_buffer')
+	event.add('tfg:train_connectors', 'railways:wooden_headstock_buffer')
+	event.add('tfg:train_connectors', 'railways:copycat_headstock_buffer')
+	event.add('tfg:train_connectors', 'railways:big_buffer')
+	event.add('tfg:train_connectors', 'railways:wooden_headstock')
+	event.add('tfg:train_connectors', 'railways:copycat_headstock')
+	
 }
 
 //#region Blocks
