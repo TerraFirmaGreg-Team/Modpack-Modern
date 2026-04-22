@@ -158,7 +158,7 @@ const registerTFGItemTags = (event) => {
 		"blackstone", "tieless", "acacia",
 		"birch",      "cherry",  "jungle",
 		"spruce",     "crimson",  "warped",
-		"bamboo",     "stripped_bamboo"
+		"bamboo",     "stripped_bamboo", "create_andesite"
 	]
 	
 	OTHER_TRACKS.forEach(rail => {
@@ -167,9 +167,6 @@ const registerTFGItemTags = (event) => {
 		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_wide`)
 	})
 	
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_create_andesite`)
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_create_andesite_narrow`)
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_create_andesite_wide`)
 	event.add('tfg:incomplete_tracks', `railways:track_incomplete_monorail`)
 	
 	// tag locometal blocks (minus (trap)doors) for emi++ grouping
@@ -193,7 +190,6 @@ const registerTFGItemTags = (event) => {
 		event.add('tfg:locometal_blocks', `railways:${type}`)
 		global.LOCOMETAL_COLORS.forEach(colorObj => { 
     		colorObj.colors.forEach(subColor => {
-
             	event.add('tfg:locometal_blocks', `railways:${subColor}_${type}`)
         	})
     	})
@@ -210,7 +206,6 @@ const registerTFGItemTags = (event) => {
 	]
 
 	SMOKESTACK_TYPES.forEach(type => {
-
 		event.add('tfg:smokestacks', `railways:smokestack_${type}`)
 		SMOKESTACK_MATERIALS.forEach(mat => {
 			event.add('tfg:smokestacks', `railways:smokestack_${type}_${mat}`)
