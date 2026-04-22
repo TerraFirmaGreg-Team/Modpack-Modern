@@ -186,7 +186,6 @@ const registerTFGItemTags = (event) => {
 	]
 	
 	LOCOMETAL_TYPES.forEach(type => {
-
 		event.add('tfg:locometal_blocks', `railways:${type}`)
 		global.LOCOMETAL_COLORS.forEach(colorObj => { 
     		colorObj.colors.forEach(subColor => {
