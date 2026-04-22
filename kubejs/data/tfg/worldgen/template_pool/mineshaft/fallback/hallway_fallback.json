@@ -1,0 +1,24 @@
+{
+	"name": "tfg:mineshaft/fallback/hallway",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

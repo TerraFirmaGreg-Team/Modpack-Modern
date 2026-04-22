@@ -1,6 +1,6 @@
 {
-	"name": "tfg:mineshaft/lighting",
-	"fallback": "tfg:mineshaft/fallback/lighting_fallback",
+	"name": "tfg:mineshaft/fallback/lighting",
+	"fallback": "minecraft:empty",
 	"elements": [
 		{
 			"weight": 4,
@@ -24,24 +24,6 @@
 			"weight": 1,
 			"element": {
 				"location": "tfg:mineshaft/lighting/fallen_lamp_2",
-				"processors": "tfg:mineshaft/support_fixer",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
-			}
-		},
-		{
-			"weight": 3,
-			"element": {
-				"location": "tfg:mineshaft/lighting/lamp",
-				"processors": "tfg:mineshaft/support_fixer",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
-			}
-		},
-		{
-			"weight": 1,
-			"element": {
-				"location": "minecraft:empty",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

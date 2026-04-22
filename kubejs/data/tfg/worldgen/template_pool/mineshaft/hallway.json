@@ -1,6 +1,6 @@
 {
 	"name": "tfg:mineshaft/hallway",
-	"fallback": "minecraft:empty",
+	"fallback": "tfg:mineshaft/fallback/hallway_fallback",
 	"elements": [
 		{
 			"weight": 70,
@@ -30,7 +30,7 @@
 			}
 		},
 		{
-			"weight": 30,
+			"weight": 20,
 			"element": {
 				"location": "tfg:mineshaft/hallway/end_1",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"weight": 30,
+			"weight": 20,
 			"element": {
 				"location": "tfg:mineshaft/hallway/end_2",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -126,6 +126,19 @@
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 30,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:mineshaft/shaft/shaft_start",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"limit": 1
 			}
 		}
 	]

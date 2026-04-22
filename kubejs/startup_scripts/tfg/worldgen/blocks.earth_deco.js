@@ -12,6 +12,15 @@ function registerTFGWorldGenEarthDecoBlocks(event) {
 			.texture('metal', `tfc:block/metal/smooth/${metal}`)
 			.texture('particle', `tfc:block/metal/smooth/${metal}`)
 	});
+	
+	event.create('tfg:rusted_pully', 'cardinal')
+		.model('tfg:block/rusted_pulley')
+		.renderType('cutout_mipped')
+		.soundType('metal')
+		.notSolid()
+		.tagBlock('minecraft:mineable/axe')
+		.tagBlock('minecraft:mineable/pickaxe')
+		
 		
 	
 }
