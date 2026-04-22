@@ -10,7 +10,7 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"name": "minecraft:deepslate",
+							"name": "minecraft:tuff",
 							"conditions": [
 								{
 									"condition": "tfc:is_isolated"
