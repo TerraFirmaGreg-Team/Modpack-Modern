@@ -188,7 +188,6 @@ const registerTFGItemTags = (event) => {
 		"two_pane_locometal_window", "four_pane_locometal_window",
 	]
 	
-
 	LOCOMETAL_TYPES.forEach(type => {
 
 		event.add('tfg:locometal_blocks', `railways:${type}`)
@@ -199,7 +198,6 @@ const registerTFGItemTags = (event) => {
         	})
     	})
 	})
-
 
 	//tag smokestacks for emi++ grouping
 	const SMOKESTACK_TYPES = [
