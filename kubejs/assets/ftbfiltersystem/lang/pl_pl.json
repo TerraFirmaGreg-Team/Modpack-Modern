@@ -1,7 +1,9 @@
 {
+  "filter.ftbfiltersystem.block.name": "Jest blokiem",
   "filter.ftbfiltersystem.stack_size.name": "Wielkość stosu",
   "ftbfiltersystem.gui.add": "Dodaj...",
   "ftbfiltersystem.gui.configure": "Konfiguracja...",
   "ftbfiltersystem.gui.delete": "Usuń",
+  "ftbfiltersystem.gui.item_source.creative": "Kreatywny",
   "ftbfiltersystem.gui.percentage": "Procenty"
 }
