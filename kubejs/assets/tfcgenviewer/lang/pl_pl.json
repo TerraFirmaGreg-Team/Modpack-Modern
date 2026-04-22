@@ -1,6 +1,7 @@
 {
   "button.tfcgenviewer.apply": "Zastosuj",
   "button.tfcgenviewer.save": "Zapisz",
+  "tfcgenviewer.preview_world.visualizer_type": "Wizualizacja",
   "tfcgenviewer.preview_world.visualizer_type.biomes": "Biomy",
   "tfcgenviewer.preview_world.visualizer_type.rock_types": "Typy skał",
   "tfcgenviewer.preview_world.visualizer_type.rocks": "Skały",
@@ -13,14 +14,18 @@
   "rock.tfc.basalt": "Bazalt",
   "rock.tfc.chalk": "Kreda",
   "rock.tfc.chert": "Czert",
+  "rock.tfc.claystone": "Iłowiec",
   "rock.tfc.dacite": "Dacyt",
   "rock.tfc.diorite": "Dioryt",
+  "rock.tfc.dolomite": "Dolomit",
   "rock.tfc.gabbro": "Gabro",
   "rock.tfc.gneiss": "Gnejs",
   "rock.tfc.granite": "Granit",
   "rock.tfc.limestone": "Wapień",
   "rock.tfc.marble": "Marmur",
+  "rock.tfc.phyllite": "Fyllit",
   "rock.tfc.quartzite": "Kwarcyt",
+  "rock.tfc.rhyolite": "Ryolit",
   "rock.tfc.schist": "Łupek metamorficzny",
   "rock.tfc.shale": "Łupek ilasty\n",
   "rock.tfc.slate": "Łupek",
@@ -30,5 +35,6 @@
   "tfcgenviewer.temperature.0": "-20 do -10 °C",
   "tfcgenviewer.biome_altitude.low": "Niski",
   "tfcgenviewer.biome_altitude.medium": "Średnie",
-  "tfcgenviewer.biome_altitude.high": "Wysoki"
+  "tfcgenviewer.biome_altitude.high": "Wysoki",
+  "tfcgenviewer.biome_altitude.mountain": "Góra"
 }

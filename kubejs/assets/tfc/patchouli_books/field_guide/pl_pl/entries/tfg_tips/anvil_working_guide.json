@@ -90,7 +90,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Step 1",
+            "title": "Krok 1",
             "text": "The first Step in your Forging Journey is to get the Value taken by Adding all of the Required Step's values together. For a Pickaxe Head, you need the following Steps:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)By adding the Values on the Bottom of each Step, We get the Value we're looking for. Lets call this value \"requiredWork\".$(br)$(bold)2 + 7 + (-15) = -6$()"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Step 2",
+            "title": "Krok 2",
             "text": "While our main goal for the Work Amount is to align it with the Target Work, we need to make sure both that requirement AND the Steps requirements are fulfilled, as such, directly aligning the Work Amount with the Target Work will not yield desirable results. Instead, we can calculate the a value derived from Target Work and \"requiredWork\""
         },
         {
@@ -122,7 +122,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Step 3",
+            "title": "Krok 3",
             "text": "With the value derived from \"Target Work\" and \"requiredWork\", we now need to reach said Work value, this can be done either manually by adding the numbers attached for each step, or by using the cheat sheet in the UI bar. Each color represents the Step Type in the UI. $(br)IE: Red == Shrink (+16)"
         },
         {

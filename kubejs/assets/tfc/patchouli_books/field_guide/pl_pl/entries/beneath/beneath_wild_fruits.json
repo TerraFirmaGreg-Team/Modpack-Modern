@@ -16,7 +16,7 @@
       "type": "patchouli:text",
       "anchor": "lavacado",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-      "title": "Lavacado"
+      "title": "Lawokado"
     },
     {
       "type": "tfc:multimultiblock",
@@ -185,7 +185,7 @@
           "text": "Gru"
         },
         {
-          "text": "Lavacado"
+          "text": "Lawokado"
         },
         {
           "fill": "0x6ab553"
@@ -275,11 +275,11 @@
           "color": "0x6ab553"
         },
         {
-          "text": "Flowering",
+          "text": "Kwitnie",
           "color": "0xcca0db"
         },
         {
-          "text": "Fruiting",
+          "text": "Owocuje",
           "color": "0xa217ff"
         }
       ],

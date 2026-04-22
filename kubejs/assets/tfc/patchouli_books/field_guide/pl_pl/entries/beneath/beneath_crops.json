@@ -139,7 +139,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
+			"title": "Orzech ziemny",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
 		},
 		{

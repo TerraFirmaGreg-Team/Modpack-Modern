@@ -1,5 +1,6 @@
 {
 	"above": "Nad",
+	"altitude": "Wysokość",
 	"below": "Pod",
 	"block.firmaciv.watercraft_frame_angled": "Ukośne Rusztowanie Stoczniowca",
 	"block.firmaciv.watercraft_frame_flat": "Płaskie Rusztowanie Stoczniowca",
@@ -22,6 +23,7 @@
 	"entity.firmaciv.compartment_large_vessel": "Wielka waza",
 	"entity.firmaciv.compartment_tfc_barrel": "Przegroda z Beczką",
 	"entity.firmaciv.compartment_tfc_chest": "Przegroda ze Skrzynią",
+	"entity.firmaciv.kayak": "Kajak",
 	"entity.firmaciv.rowboat.acacia": "Akacjowa Szalupa",
 	"entity.firmaciv.rowboat.birch": "Brzozowa Szalupa",
 	"entity.firmaciv.rowboat.mangrove": "Namorzynowa Szalupa",
@@ -39,7 +41,9 @@
 	"entity.firmaciv.sloop.spruce": "Świerkowy Slup",
 	"firmaciv.advancements.kayak_paddle.title": "Podwójne kłopoty",
 	"firmaciv.advancements.oarlock.title": "The Montlake Cut",
+	"item.firmaciv.barometer": "Barometr",
 	"item.firmaciv.cannon": "Armata",
+	"item.firmaciv.kayak": "Kajak",
 	"item.firmaciv.large_triangular_sail": "Duży żagiel",
 	"item.firmaciv.rope_coil": "Zwój liny",
 	"item.firmaciv.sextant": "Sekstans",
@@ -49,9 +53,11 @@
 	"item.firmaciv.unfinished_sextant": "Niedokończony sekstant",
 	"itemGroup.firmaciv": "Firma: Civilization",
 	"latitude": "Szerokość geograficzna",
+	"longitude": "Długość geograficzna",
 	"meters": "Metry",
 	"north": "Północ",
 	"press_button": "Naciśnij",
+	"sea_level": "Poziom morza",
 	"south": "Południe",
 	"west": "Zachód"
 }

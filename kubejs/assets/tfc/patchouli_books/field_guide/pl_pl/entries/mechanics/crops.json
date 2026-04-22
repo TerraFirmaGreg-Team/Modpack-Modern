@@ -1829,7 +1829,7 @@
 			"type": "patchouli:text",
 			"anchor": "melon",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
-			"title": "Melons"
+			"title": "Melon"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2263,7 +2263,7 @@
 			"type": "patchouli:text",
 			"anchor": "onion",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 90 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Onions are a single block crop. Onion seeds can be planted on farmland and will produce $(thing)Onions$() and $(thing)Onion Seeds$() as a product.",
-			"title": "Onions"
+			"title": "Cebula"
 		},
 		{
 			"type": "tfc:multimultiblock",

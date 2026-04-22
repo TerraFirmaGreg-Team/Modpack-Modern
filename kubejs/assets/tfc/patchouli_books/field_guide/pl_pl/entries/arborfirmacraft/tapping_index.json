@@ -111,7 +111,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "spruce",
-			"title": "Spruce",
+			"title": "Świerk",
 			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"

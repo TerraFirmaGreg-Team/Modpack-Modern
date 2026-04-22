@@ -168,7 +168,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Spruce",
+			"title": "Świerk",
 			"item": "tag:tfc:spruce_logs",
 			"text": "$(bold)Blue Spruce$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -19.4 — 2.5°C$(br2)$(bold)Coast Spruce$()$(br)$(thing)Rainfall$(): 320 — 390mm$(br)$(thing)Temperature$(): -12.1 — 6.1°C$(br2)$(bold)Sitka Spruce$()$(br)$(thing)Rainfall$(): 370 — 500mm$(br)$(thing)Temperature$(): 2.5 — 8.0°C"
 		},
@@ -196,7 +196,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Willow",
+			"title": "Wierzba",
 			"item": "tag:tfc:willow_logs",
 			"text": "$(bold)Corkscrew Willow$()$(br)$(thing)Rainfall$(): 330 — 500mm$(br)$(thing)Temperature$(): -6.6 — 9.8°C$(br2)$(bold)Weeping Willow$()$(br)$(thing)Rainfall$(): 355 — 500mm$(br)$(thing)Temperature$(): 9.8 — 17.1°C"
 		}

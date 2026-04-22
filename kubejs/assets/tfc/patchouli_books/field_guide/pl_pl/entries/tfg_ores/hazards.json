@@ -116,7 +116,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Abestoza",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Asbestosis",
+			"anchor": "Abestoza",
 			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
 		},
 		{
@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Krzemica",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "Silicosis",
+			"anchor": "Krzemica",
 			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
 		}
 	]

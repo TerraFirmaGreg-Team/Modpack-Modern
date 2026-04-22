@@ -232,7 +232,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfg:mongoose",
 			"scale": 0.8,
-			"name": "Mongoose",
+			"name": "Mangusta",
 			"text": "The mongoose spawns at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
 		},
 		{
