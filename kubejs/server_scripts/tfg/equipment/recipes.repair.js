@@ -220,7 +220,7 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.25
-		}).id(`tfg:item_repair/${linuxUnfucker(repair.item)}`)
+		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}`)
 	})
 
 	// Simpler Leather Gear
@@ -236,7 +236,7 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.25
-		}).id(`tfg:item_repair/${linuxUnfucker(gear)}`)
+		}).id(`tfg:item_repair/${global.linuxUnfucker(gear)}`)
 	})
 
 	// TFC Textile Leather Clothes

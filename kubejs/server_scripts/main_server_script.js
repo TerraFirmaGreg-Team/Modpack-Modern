@@ -213,12 +213,6 @@ GTCEuServerEvents.fluidVeins(event => {
 })
 
 
-/** Correct recipe IDs to replace invalid characters */
-function linuxUnfucker(value) {
-	const str = (value === undefined || value === null) ? "" : value.toString();
-	return str.replace(/[/:\s]/g, "_");
-};
-
 /**
  * Событие регистрации рецептов.
  * Срабатывает после инициализации датапаков и тегов.

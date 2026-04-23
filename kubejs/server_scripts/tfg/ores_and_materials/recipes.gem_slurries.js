@@ -7,7 +7,7 @@ function registerTFGGemSlurriesProcessing(event) {
     // Slurry Refining
 
     function slurryProcessing(event, inputId, output, amount) {
-        event.recipes.gtceu.coal_liquefaction_tower(`tfg:dirty_${output}_slurry_${linuxUnfucker(inputId)}`)
+        event.recipes.gtceu.coal_liquefaction_tower(`tfg:dirty_${output}_slurry_${global.linuxUnfucker(inputId)}`)
             .itemInputs(Item.of(inputId))
             .perTick(true)
 		    .chancedFluidInput(Fluid.of('gtceu:hydrogen', 10), 1000, 0)

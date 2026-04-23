@@ -119,6 +119,8 @@ global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
  */
 function registerTFGFoodRecipes(event) {
 
+	registerTFGFruitFoodRecipes(event);
+
 	//#region Meat cooking
 
 	global.TFC_MEAT_RECIPE_COMPONENTS.forEach(item => {
@@ -404,7 +406,6 @@ function registerTFGFoodRecipes(event) {
 	const smoking_meats = Ingredient.of('#tfc:foods/raw_meats').itemIds;
 	const smoking_cheese = Ingredient.of('#firmalife:foods/cheeses').itemIds;
 	const brining_veg = Ingredient.of('#firmalife:foods/pizza_ingredients').itemIds;
-	const drying_fruits = Ingredient.of('#tfc:foods/fruits').itemIds;
 	const drying_recipes = [
 		{input: 'firmalife:food/soy_mixture', output: 'firmalife:food/tofu'},
 		{input: 'tfc:food/soybean', output: 'firmalife:food/dehydrated_soybeans'},
@@ -418,7 +419,7 @@ function registerTFGFoodRecipes(event) {
 	const brining_ingredients = smoking_meats.concat(brining_veg);
 
 	brining_ingredients.forEach(item => {
-		global.processorRecipeText(event, `${linuxUnfucker(item)}/brining`, 200, 16, "tfg.food_recipe.brining", {
+		global.processorRecipeText(event, `${global.linuxUnfucker(item)}/brining`, 200, 16, "tfg.food_recipe.brining", {
 			circuit: 5,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -428,7 +429,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_meats.forEach(item => {
-		global.processorRecipeText(event, `${linuxUnfucker(item)}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+		global.processorRecipeText(event, `${global.linuxUnfucker(item)}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -438,7 +439,7 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	smoking_cheese.forEach(item => {
-		global.processorRecipeText(event, `${linuxUnfucker(item)}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
+		global.processorRecipeText(event, `${global.linuxUnfucker(item)}/smoking`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [item],
 			itemOutputs: [item],
@@ -447,32 +448,13 @@ function registerTFGFoodRecipes(event) {
 		})
 	})
 
-	drying_fruits.forEach(item => {
-		global.processorRecipeText(event, `${linuxUnfucker(item)}/drying`, 200, 16, "tfg.food_recipe.drying", {
-			circuit: 6,
-			itemInputs: [item],
-			itemOutputs: [item],
-			fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
-			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:dried")
-		})
-	})
-
 	drying_recipes.forEach(item => {
-		global.processorRecipeText(event, `${linuxUnfucker(item.input)}/drying`, 200, 16, "tfg.food_recipe.drying", {
+		global.processorRecipeText(event, `${global.linuxUnfucker(item.input)}/drying`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [item.input],
 			itemOutputs: [item.output],
 			fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
 			itemOutputProvider: TFC.isp.of(item.output).copyOldestFood()
-		})
-	})
-
-	global.FOOD_FRUIT.forEach(fruit => {
-		global.processorRecipeText(event, `${fruit.name}/drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
-			circuit: 7,
-			itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
-			itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
-			itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
 		})
 	})
 
@@ -485,7 +467,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['1x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
-			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(food => food.hunger(4).saturation(1.5).microplastics(0.25).decayModifier(4.5)), [
 			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
@@ -496,7 +478,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['2x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
-			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(food => food.hunger(4).saturation(1.5).microplastics(0.25).decayModifier(4.5)), [
 			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
@@ -507,7 +489,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['3x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
-			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(food => food.hunger(4).saturation(1.5).microplastics(0.25).decayModifier(4.5)), [
 			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
@@ -518,7 +500,7 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['4x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
-			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(food => food.hunger(4).saturation(1.5).microplastics(0.25).decayModifier(4.5)), [
 			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
@@ -529,52 +511,14 @@ function registerTFGFoodRecipes(event) {
 		itemInputs: ['5x #tfg:foods/usable_in_meal_bag', '2x tfg:foil_pack', 'tfg:dry_ice'],
 		itemOutputs: ['2x tfg:food/meal_bag'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
-			(food => food.hunger(4).saturation(1.5).decayModifier(4.5)), [
+			(food => food.hunger(4).saturation(1.5).microplastics(0.25).decayModifier(4.5)), [
 			(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
 		]).addTrait('tfg:freeze_dried')
 	})
 
 	//#endregion
 
-	//#region Jams
 
-	global.TFC_JAMS.forEach(name => {
-		global.processorRecipe(event, `${name}_jam`, 200, 8, {
-			circuit: 15,
-			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
-			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputs: [`4x tfc:jar/${name}`],
-			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}`).copyFood()
-		})
-
-		global.processorRecipe(event, `${name}_jam_no_seal`, 200, 8, {
-			circuit: 16,
-			itemInputs: [`4x tfc:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
-			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputs: [`4x tfc:jar/${name}_unsealed`],
-			itemOutputProvider: TFC.isp.of(`4x tfc:jar/${name}_unsealed`).copyFood()
-		})
-	})
-
-	global.FIRMALIFE_JAMS.forEach(name => {
-		global.processorRecipe(event, `${name}_jam`, 200, 8, {
-			circuit: 15,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x #tfc:empty_jar_with_lid"],
-			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputs: [`4x firmalife:jar/${name}`],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}`).copyFood()
-		})
-
-		global.processorRecipe(event, `${name}_jam_no_seal`, 200, 8, {
-			circuit: 16,
-			itemInputs: [`4x firmalife:food/${name}`, "#tfc:sweetener", "4x tfc:empty_jar"],
-			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputs: [`4x firmalife:jar/${name}_unsealed`],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:jar/${name}_unsealed`).copyFood()
-		})
-	})
-
-	//#endregion
 	//#region Misc
 
 	global.cookingRecipe(event, "pasta", "firmalife:food/raw_egg_noodles", "firmalife:food/cooked_pasta", "#tfg:clean_water 100")
@@ -1021,7 +965,7 @@ function registerTFGFoodRecipes(event) {
 	//#region Alcohols
 
 	global.TFC_ALCOHOL.forEach(alcohol => {
-		global.processorRecipe(event, linuxUnfucker(alcohol.id), 2400, 1, {
+		global.processorRecipe(event, global.linuxUnfucker(alcohol.id), 2400, 1, {
 			itemInputs: [alcohol.ingredient],
 			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
 			fluidOutputs: [Fluid.of(alcohol.id, 500)],
@@ -1555,7 +1499,7 @@ function registerTFGFoodRecipes(event) {
 	 */
 	const beer = ['tfc:beer', 'tfcagedalcohol:aged_beer'];
 	beer.forEach(beerType => {
-		global.processorRecipe(event, `raw_beer_battered_cheese_curds/${linuxUnfucker(beerType)}`, 20*5, GTValues.VA[GTValues.ULV], {
+		global.processorRecipe(event, `raw_beer_battered_cheese_curds/${global.linuxUnfucker(beerType)}`, 20*5, GTValues.VA[GTValues.ULV], {
 			itemInputs: ['4x #tfg:foods/cheese_curds', '#tfc:foods/flour', 'tfc:powder/salt', '#forge:eggs'],
 			fluidInputs: [`${beerType} 100`],
 			itemOutputs: ['4x tfg:food/raw_beer_battered_cheese_curds'],
@@ -1601,30 +1545,25 @@ function registerTFGFoodRecipes(event) {
 		0
 	).id('tfg:crafting/cheeseburger');
 
-	// Prosessor burgers allow extra ingredients.
-	for (let i = 1; i <= 5; i++) {
-		global.processorRecipe(event, `hamburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
-			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
-			itemOutputs: ['tfg:food/hamburger'],
-			circuit: i,
-			itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
-				(food) => food.hunger(4).decayModifier(1.3),
-				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
-			)
-		});
-	};
+	global.processorRecipe(event, 'tfg:hamburger', 20*1, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['2x tfg:food/brioche_bun','3x #tfg:foods/usable_in_burgers'],
+		itemOutputs: ['tfg:food/hamburger'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		)
+	});
 
-	for (let i = 1; i <= 4; i++) {
-		global.processorRecipe(event, `cheeseburger_${i}`, 20*1, GTValues.VA[GTValues.ULV], {
-			itemInputs: [`${i}x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
-			itemOutputs: ['tfg:food/cheeseburger'],
-			circuit: i,
-			itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
-				(food) => food.hunger(4).decayModifier(1.3),
-				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
-			)
-		});
-	};
+	global.processorRecipe(event, `tfg:cheeseburger`, 20*1, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['2x #tfg:foods/usable_in_burgers', '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
+		itemOutputs: ['tfg:food/cheeseburger'],
+		circuit: 2,
+		itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
+			(food) => food.hunger(4).decayModifier(1.3),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+		)
+	});
 
 	// Tirage Mixture
 	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
@@ -1845,9 +1784,9 @@ function registerTFGFoodRecipes(event) {
 				spice.plant,
 				'#forge:tools/knives'
 			]
-		).id(`tfg:crafting/${linuxUnfucker(spice.product)}`);
+		).id(`tfg:crafting/${global.linuxUnfucker(spice.product)}`);
 
-		event.recipes.gtceu.food_processor(`tfg:${linuxUnfucker(spice.product)}`)
+		event.recipes.gtceu.food_processor(`tfg:${global.linuxUnfucker(spice.product)}`)
 			.itemInputs(spice.plant)
 			.itemOutputs(Item.of(spice.product).withCount(2))
 			.duration(10)

@@ -526,7 +526,7 @@ function registerTFGArtisanTableRecipes(event) {
 				"pattern": mold.pattern,
 				"artisanType": "tfg:casting_mold",
 				"type": "tfg:artisan"
-			}).id(`tfg:artisan_table/${linuxUnfucker(mold.name)}_casting_mold`);
+			}).id(`tfg:artisan_table/${global.linuxUnfucker(mold.name)}_casting_mold`);
 		};	
 		if (mold.genExtrude){
 			event.custom({
@@ -534,7 +534,7 @@ function registerTFGArtisanTableRecipes(event) {
 				"pattern": mold.pattern,
 				"artisanType": "tfg:extruder_mold",
 				"type": "tfg:artisan"
-			}).id(`tfg:artisan_table/${linuxUnfucker(mold.name)}_extruder_mold`);
+			}).id(`tfg:artisan_table/${global.linuxUnfucker(mold.name)}_extruder_mold`);
 		};
 	});
 	

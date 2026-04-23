@@ -99,49 +99,52 @@ global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "z
 
 /**
  * @typedef {Object} Fruit
- * @property {string} name - Fruit Name
- * @property {string} id - Fruit ID
- * @property {number} saturation - Saturation Value
- * @property {number} water - Water Value
- * @property {number} fruit - Fruit Value
- * @property {number} decay - Decay Modifier
+ * @property {string} name - Fruit Name.
+ * @property {string} id - Fruit ID.
+ * @property {number<0x000000, 0xFFFFFF| #000000, #FFFFFF>} color - Fruit Color in hex.
+ * @property {boolean|undefined} genFreezeDried - Whether to generate a freeze dried fruit item.
+ * @property {boolean|undefined} genJam - Whether to generate jam fruit items.
+ * @property {number} saturation - Saturation Value.
+ * @property {number<0, 100>} water - Water Value. A full bar is 100.
+ * @property {number} fruit - Fruit Value.
+ * @property {number} decay - Decay Modifier. Higher means faster decay.
  */
 
 /** @type {Fruit[]} */
 global.FOOD_FRUIT = [
-	{name: 'red_grapes', id: 'firmalife:food/red_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'white_grapes', id: 'firmalife:food/white_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'glow_berries', id: 'minecraft:glow_berries', saturation: 0, water: 5, fruit: 0.5, decay: 2.25},
-	{name: 'chorus_fruit', id: 'minecraft:chorus_fruit', saturation: 0, water: 5, fruit: 2, decay: 1.2},
-	{name: 'popped_chorus_fruit', id: 'minecraft:popped_chorus_fruit', saturation: 1, water: 0, fruit: 3, decay: 0.8},
-	{name: 'blackberry', id: 'tfc:food/blackberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'blueberry', id: 'tfc:food/blueberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'bunchberry', id: 'tfc:food/bunchberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cloudberry', id: 'tfc:food/cloudberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cranberry', id: 'tfc:food/cranberry', saturation: 0.2, water: 5, fruit: 1, decay: 2.25},
-	{name: 'elderberry', id: 'tfc:food/elderberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'gooseberry', id: 'tfc:food/gooseberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'raspberry', id: 'tfc:food/raspberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'snowberry', id: 'tfc:food/snowberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'strawberry', id: 'tfc:food/strawberry', saturation: 0.4, water: 10, fruit: 0.5, decay: 4.5},
-	{name: 'wintergreen_berry', id: 'tfc:food/wintergreen_berry', saturation: 0.2, water: 5, fruit: 1, decay: 2.1},
-	{name: 'banana', id: 'tfc:food/banana', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'cherry', id: 'tfc:food/cherry', saturation: 0.2, water: 5, fruit: 1, decay: 3.5},
-	{name: 'green_apple', id: 'tfc:food/green_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.5},
-	{name: 'lemon', id: 'tfc:food/lemon', saturation: 0.2, water: 5, fruit: 0.08, decay: 2.25},
-	{name: 'olive', id: 'tfc:food/olive', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'orange', id: 'tfc:food/orange', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.25},
-	{name: 'peach', id: 'tfc:food/peach', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
-	{name: 'plum', id: 'tfc:food/plum', saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'red_apple', id: 'tfc:food/red_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
-	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'melon_slice', id: 'tfc:food/melon_slice', saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'fig', id: 'firmalife:food/fig', saturation: 1, water: 5, fruit: 0.9, decay: 1},
-	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
-	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
-	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
-	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 },
-	{name: 'magmango', id: 'tfg:food/magmango', saturation: 1, water: 15, fruit: 1.5, decay: 2.25}
+	{name: 'red_grapes', id: 'firmalife:food/red_grapes', color: 0x712f75, genFreezeDried: true, saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
+	{name: 'white_grapes', id: 'firmalife:food/white_grapes', color: 0x819b2c, genFreezeDried: true, saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
+	{name: 'glow_berries', id: 'minecraft:glow_berries', color: 0xee9444, genFreezeDried: true, genJam: true, saturation: 0, water: 5, fruit: 0.5, decay: 2.25},
+	{name: 'chorus_fruit', id: 'minecraft:chorus_fruit', color: 0x8c668b, genFreezeDried: true, genJam: true, saturation: 0, water: 5, fruit: 2, decay: 1.2},
+	{name: 'popped_chorus_fruit', id: 'minecraft:popped_chorus_fruit', color: 0x633b63, genFreezeDried: true, genJam: true, saturation: 1, water: 0, fruit: 3, decay: 0.8},
+	{name: 'blackberry', id: 'tfc:food/blackberry', color: 0x3e2664, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'blueberry', id: 'tfc:food/blueberry', color: 0x2f42a3, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'bunchberry', id: 'tfc:food/bunchberry', color: 0xda1b45, genFreezeDried: true, saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'cloudberry', id: 'tfc:food/cloudberry', color: 0xe54e2c, genFreezeDried: true, saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'cranberry', id: 'tfc:food/cranberry', color: 0xa3001c, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 1, decay: 2.25},
+	{name: 'elderberry', id: 'tfc:food/elderberry', color: 0x580042, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
+	{name: 'gooseberry', id: 'tfc:food/gooseberry', color: 0x75a62a, genFreezeDried: true, saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'raspberry', id: 'tfc:food/raspberry', color: 0xa6314d, genFreezeDried: true, saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
+	{name: 'snowberry', id: 'tfc:food/snowberry', color: 0xbebebe, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
+	{name: 'strawberry', id: 'tfc:food/strawberry', color: 0xa6314d, genFreezeDried: true, saturation: 0.4, water: 10, fruit: 0.5, decay: 4.5},
+	{name: 'wintergreen_berry', id: 'tfc:food/wintergreen_berry', color: 0x822927, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 1, decay: 2.1},
+	{name: 'banana', id: 'tfc:food/banana', color: 0xe6cd47, genFreezeDried: true, saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
+	{name: 'cherry', id: 'tfc:food/cherry', color: 0xcf3360, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 1, decay: 3.5},
+	{name: 'green_apple', id: 'tfc:food/green_apple', color: 0x789945, genFreezeDried: true, saturation: 0.4, water: 0, fruit: 1, decay: 2.5},
+	{name: 'lemon', id: 'tfc:food/lemon', color: 0xd9be38, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 0.08, decay: 2.25},
+	{name: 'olive', id: 'tfc:food/olive', color: 0x85a55f, genFreezeDried: true, saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
+	{name: 'orange', id: 'tfc:food/orange', color: 0xde8d33, genFreezeDried: true, saturation: 0.4, water: 10, fruit: 0.5, decay: 2.25},
+	{name: 'peach', id: 'tfc:food/peach', color: 0xc56954, genFreezeDried: true, saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
+	{name: 'plum', id: 'tfc:food/plum', color: 0x8a40b7, genFreezeDried: true, saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
+	{name: 'red_apple', id: 'tfc:food/red_apple', color: 0x9f3131, genFreezeDried: true, saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
+	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', color: 0xa97c4c, genFreezeDried: true, saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
+	{name: 'melon_slice', id: 'tfc:food/melon_slice', color: 0xad160b, genFreezeDried: true, saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
+	{name: 'fig', id: 'firmalife:food/fig', color: 0x9e4264, genFreezeDried: true, saturation: 1, water: 5, fruit: 0.9, decay: 1},
+	{name: 'pineapple', id: 'firmalife:food/pineapple', color: 0xd5b600, genFreezeDried: true, saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
+	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', color: 0xe5e2c0, genFreezeDried: true, genJam: true, saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
+	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', color: 0xcc4db7, genFreezeDried: true, genJam: true, saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
+	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', color: 0x2c276f, genFreezeDried: true, genJam: true, saturation: 1, water: 5, fruit: 1.5, decay: 2 },
+	{name: 'magmango', id: 'tfg:food/magmango', color: 0xeca345, genFreezeDried: true, saturation: 1, genJam: true, water: 15, fruit: 1.5, decay: 2.25}
 ];
 
 /** @type {Hammering[]} */
