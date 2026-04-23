@@ -2,9 +2,12 @@
   "ftbteams.accept": "Akceptuj ✔",
   "ftbteams.gui.add_ally": "Sojusznik",
   "ftbteams.gui.create_party": "Opis",
+  "ftbteams.gui.demote": "Degraduj %s",
   "ftbteams.gui.kick": "Wyrzuć %s",
   "ftbteams.gui.party_description": "Opis",
+  "ftbteams.gui.promote": "Promuj %s",
   "ftbteams.gui.send_invite": "Zaproś",
+  "ftbteams.info.members.none": "Brak członków",
   "ftbteams.info.owner": "Właściciel: %s",
   "ftbteams.info.owner.none": "Żaden",
   "ftbteams.privacy_mode.allies": "Sojusznicy",
@@ -17,5 +20,6 @@
   "ftbteams.ranks.officer": "Oficer",
   "ftbteams.ranks.owner": "Właściciel",
   "ftbteamsconfig.ftbteams.color": "Kolor",
-  "ftbteamsconfig.ftbteams.description": "Opis"
+  "ftbteamsconfig.ftbteams.description": "Opis",
+  "sidebar_button.ftbteams.my_team": "Moja drużyna"
 }

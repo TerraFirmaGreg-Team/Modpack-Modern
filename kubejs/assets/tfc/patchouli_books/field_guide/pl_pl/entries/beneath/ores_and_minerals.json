@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Migmatite",
+			"title": "Migmatyt",
 			"item": {
 				"tag": "forge:ores_in_ground/deepslate"
 			},
@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Travertine",
+			"title": "Trawertyn",
 			"item": {
 				"tag": "forge:ores_in_ground/dripstone"
 			},
@@ -25,7 +25,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Pyroxenite",
+			"title": "Piroksenit",
 			"item": {
 				"tag": "forge:ores_in_ground/pyroxenite"
 			},
@@ -47,7 +47,7 @@
 					"X": "beneath:ore/nether_cursecoal"
 				}
 			},
-			"name": "Anthracite",
+			"name": "Antracyt",
 			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It can be found in Migmatite in the upper half of the Beneath.",
 			"enable_visualize": false
 		}

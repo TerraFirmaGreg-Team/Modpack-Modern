@@ -3,8 +3,14 @@
   "category.deathpunishment.penalties": "Kary za śmierć",
   "title.deathpunishment.config": "Konfiguracja kar za śmierć",
   "message.deathpunishment.corpse_cooldown": "Zwłoki są jeszcze ciepłe! Spróbuj ponownie za %s minut.",
+  "config.deathpunishment.general.hunger_mode": "Tryb głodu",
+  "config.deathpunishment.general.thirst_mode": "Tryb pragnienia",
+  "config.deathpunishment.general.health_mode": "Tryb zdrowia",
   "config.deathpunishment.general.food_level": "Poziom głodu",
   "config.deathpunishment.general.thirst_level": "Poziom spragnienia",
   "config.deathpunishment.general.health": "Poziom życia",
-  "config.deathpunishment.penalties.corpse_cooldown": "Czas odnowienia zwłok (0-60 min)"
+  "config.deathpunishment.penalties.corpse_cooldown": "Czas odnowienia zwłok (0-60 min)",
+  "enum.deathpunishment.hunger_mode.TFC": "Domyślne TFC",
+  "enum.deathpunishment.thirst_mode.TFC": "Domyślne TFC",
+  "enum.deathpunishment.health_mode.TFC": "Domyślne TFC"
 }

@@ -16,7 +16,7 @@
       "type": "patchouli:text",
       "anchor": "stone_anvils",
       "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
-      "title": "Rock Anvil"
+      "title": "Kowadło z kamienia"
     },
     {
       "type": "tfc:multimultiblock",

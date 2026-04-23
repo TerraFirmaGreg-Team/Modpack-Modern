@@ -109,7 +109,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Zatrucie arszenikiem",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Arsenicosis",
+			"anchor": "Zatrucie arszenikiem",
 			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
 		},
 		{
@@ -123,7 +123,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Beryloza",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "Berylliosis",
+			"anchor": "Beryloza",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
 		},
 		{
@@ -156,9 +156,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "Substancje drażniące",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "Substancje drażniące",
 			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
 		},
 		{
