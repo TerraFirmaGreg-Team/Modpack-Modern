@@ -8,19 +8,19 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "Este é o $(thing)Índice de Veios$() para $(item)Venus$(). Cada veio contém detalhes sobre sua raridade, densidade, tipo de veio, altura onde é encontrado, tamanhos, tipos de rocha em que aparece e mais.",
+      "text": "This is the $(thing)Vein Index$() for $(item)Vênus$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns in, and more.",
       "title": "Venus Vein Index",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Enxofre e Pirita$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Salts & Spodumene$()$()",
+      "text": "$(li)$(l:tfg_ores/venus_vein_index#venus_manual_sulfur)Enxofre, Pirita, Esfalerita$()$()$(li)$(l:tfg_ores/venus_vein_index#venus_manual_salt)Sal, Sal-gema, Lepidolita...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio Aglomerado$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Ignimbrito, Lamproíto, Riolito, Traquito, Travertino",
-      "title": "Enxofre e Pirita",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Andesito, Basalt, Dacito, Ignimbrite, Lamproite, Riolito, Traquito, Travertine",
+      "title": "Enxofre, Pirita, Esfalerita",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
     },
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Fonte de$(): Enxofre$(br)$(thing)Fórmula$(): S",
+      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Derrete em$(): Ferro Fundido$(br)$(thing)Fórmula$(): FeS₂",
+      "text": "$(thing)Porcentagem$(): 15%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,19 +81,19 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Derrete em$(): Zinco$(br)$(thing)Fórmula$(): ZnS",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Raridade$(): 1/30 chunks$(br)$(thing)Densidade$(): 20%$(br)$(thing)Tipo$(): Veio em Disco$(br)$(thing)Y$(): 40 — 65$(br)$(thing)Tamanho$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)Profundidade Máxima do Indicador$(): 30$(br2)$(thing)Tipos de Pedra$(): Andesito, Basalto, Dacito, Ignimbrito, Lamproíto, Riolito, Traquito, Travertino$(br2)Only appears in the $(thing)Salt Flats$() biome.",
-      "title": "Salts & Spodumene",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 20%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)Altura$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Andesito, Basalt, Dacito, Ignimbrite, Lamproite, Riolito, Traquito, Travertine",
+      "title": "Sal, Sal-gema, Lepidolita...",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Halita",
+      "name": "Sal",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/salt"
@@ -108,12 +108,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Fonte de$(): Sódio, Cloro$(br)$(thing)Fórmula$(): NaCl",
+      "text": "$(thing)Porcentagem$(): 80%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Silvita",
+      "name": "Sal-gema",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/rock_salt"
@@ -128,12 +128,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Fonte de$(): Potássio, Cloro, Fertilizante$(br)$(thing)Fórmula$(): KCl",
+      "text": "$(thing)Porcentagem$(): 10%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Lepidorita",
+      "name": "Lepidolita",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/lepidolite"
@@ -148,12 +148,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Potássio, Lítio, Alumínio, Flúor$(br)$(thing)Fórmula$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Espodumena",
+      "name": "Espodumênio",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/spodumene"
@@ -168,7 +168,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Fonte de$(): Lítio, Alumínio$(br)$(thing)Fórmula$(): LiAlSi₂O₆",
+      "text": "$(thing)Porcentagem$(): 5%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {

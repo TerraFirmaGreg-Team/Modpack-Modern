@@ -273,7 +273,8 @@ function registerTFGFoodItemTags(event) {
 		'tfc_gourmet:falafel',
 		'tfc_gourmet:hummus',
 		'tfc_gourmet:sauerkraut',
-		'tfc_gourmet:bratwurst'
+		'tfc_gourmet:bratwurst',
+		'tfg:buttered_popcorn'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);

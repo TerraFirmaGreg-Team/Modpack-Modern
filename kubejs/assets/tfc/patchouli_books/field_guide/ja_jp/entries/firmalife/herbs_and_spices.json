@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "ハーブとスパイス",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "Firmalifeでは、料理に使える小型の植物を採取して、自分で育てることができます。これらはすべて自然界で入手でき、収穫後は$(l:firmalife/greenhouse)温室$()で栽培可能です。栽培時には、N・P・Kの養分をそれぞれ20ずつ消費します。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "バジル",
+			"text": "$(thing)野生のバジル$()は気温が12°C~25°C、降水量300~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "ローリエ",
+			"text": "$(thing)野生のローリエ$()は、気温が8~14C、降水量25~225mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "カルダモン",
+			"text": "$(thing)野生のカルダモン$()は気温が18~30°C、降水量350~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "コリアンダー",
+			"text": "$(thing)野生のコリアンダー$()は気温が5~15C、降水量0~150mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "クミン",
+			"text": "$(thing)野生のクミン$()は気温が6~20C、降水量50~250mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "オレガノ",
+			"text": "$(thing)野生のオレガノ$()は気温が5~13C、降水量50~150mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -242,8 +242,8 @@
 					}
 				}
 			],
-			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"name": "ピメント",
+			"text": "$(thing)野生のピメント$()は気温が15~30°C、降水量200~450mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
@@ -276,14 +276,14 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "バニラ",
+			"text": "$(thing)野生のバニラ$()は気温が18°C~30°C、降水量200~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)シードボール$()を使うことで、様々な種類の草を植えることができます。拠点を整地した後の景観整備などに便利です。作成には$(item)堆肥$()1つと$(thing)種$()が4つ必要になります。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "バタフライグラス",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "バタフライグラスは時間が経つと成長し、成熟すると周囲に広がったり、別の種類の草へ変化することがあります。ただし、一度ほかの草から広がったものは、それ以上増殖しません。$(br)別の草に変化した後は、$(item)ハサミ$()を使って回収できます。"
 		}
 	],
 	"read_by_default": true,

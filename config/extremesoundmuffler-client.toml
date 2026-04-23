@@ -2,44 +2,66 @@
 #General settings
 [general]
 	#Blacklisted Sounds - add the name of the sounds to blacklist, separated with comma
+	#Default: "ui.", "music.", "ambient."
 	forbiddenSounds = ["ui.", "music.", "ambient."]
 	#Allow the "ALL" sounds list to include the blacklisted sounds?
+	#Default: false
 	lawfulAllList = false
 	#Volume set when pressed the mute button by default
+	#Default: 0
 	#Range: 0.0 ~ 0.9
 	defaultMuteVolume = 0.0
 	#Set to true to move the muffle and play buttons to the left side of the GUI
+	#Default: false
 	leftButtons = false
 	#Show tips in the Muffler screen?
+	#Default: true
 	showTip = true
 	#Whether or not use the dark theme
+	#Default: false
 	useDarkTheme = false
+	#General mod muffling, any sound from these mods will be muffled down to the provided volume. 
+	#Name of the mod and desired volume, separated by ":" 
+	#Example: "minecraft:50", "extremesoundmuffler:0"
+	#Default: empty
+	modsMuffled = []
 
 #Inventory button settings
 [inventory_button]
 	#Disable the Muffle button in the player inventory?
+	#Default: false
 	disableInventoryButton = false
 	#Coordinates for the Muffler button in the player inventory.
 	# You can change this in game by holding the RMB over the button and draging it around
+	#Default: 75
 	#Range: > -2147483648
 	invButtonX = 75
 	#Coordinates for the Muffler button in the player inventory. 
 	#You can change this in game by holding the RMB over the button and draging it around
+	#Default: 7
 	#Range: > -2147483648
 	invButtonY = 7
 	#Disable the Muffle button in the creative player inventory?
+	#Default: false
 	disableCreativeInventoryButton = false
 	#Coordinates for the Muffler button in the creative player inventory.
 	# You can change this in game by holding the RMB over the button and draging it around
+	#Default: 2
 	#Range: > -2147483648
 	creativeInvButtonX = 2
 	#Coordinates for the Muffler button in the creative player inventory. 
 	#You can change this in game by holding the RMB over the button and draging it around
+	#Default: 2
 	#Range: > -2147483648
 	creativeInvButtonY = 2
 
 #Anchor settings
 [Anchors]
 	#Disable the Anchors?
+	#Default: false
 	disableAnchors = false
+	#Set max size for anchors (Warning: high values may cause LAG!).
+	#Default: 32
+	#Range: > 1
+	anchorRange = 32
 

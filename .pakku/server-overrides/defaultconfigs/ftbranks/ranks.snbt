@@ -7,6 +7,7 @@
 		ftbchunks.max_claimed: 10
 		ftbchunks.max_force_loaded: 2
 		ftbchunks.chunk_load_offline: false
+		ftbessentials.rtp.cooldown: 3600
 		command.enderchest: false
 		command.ldlib: false
 		command.compass_server: false
@@ -97,5 +98,6 @@
 		ftbranks.name_format: "&c{name}&c"
 		ftbchunks.max_claimed: 10000
 		ftbchunks.max_force_loaded: 10000
+		ftbessentials.rtp.cooldown: 0
 	}
 }

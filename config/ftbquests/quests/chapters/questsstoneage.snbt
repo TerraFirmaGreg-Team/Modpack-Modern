@@ -88,16 +88,15 @@
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_rock.subtitle}"
 			tasks: [{
-				count: 4L
-				id: "6EC31A845E58B399"
+				id: "4FEBB1E609A34025"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
+						"ftbfiltersystem:filter": "or(item_tag(tfc:rock_knapping)item(minecraft:flint))"
 					}
 				}
-				title: "{quests.tasktype.item.any} #tfc:rock_knapping"
+				title: "{quests.stone_age.find_rock.task}"
 				type: "item"
 			}]
 			title: "{quests.stone_age.find_rock.title}"

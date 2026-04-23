@@ -201,6 +201,17 @@ function registerTFGDirtRecipes(event) {
 	global.TFC_MUD_TYPES.forEach(dirtType => buildDirtRecipes('tfc', dirtType));
 	global.TFG_MUD_TYPES.forEach(dirtType => {
 		buildDirtRecipes('tfg', dirtType);
+
+		// Chisel Recipes
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_stairs`, `tfg:mud_bricks/${dirtType}`, 'stair')
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_stairs`)
+
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_slab`, `tfg:mud_bricks/${dirtType}`, 'slab')
+			.extraDrop(`tfg:mud_bricks/${dirtType}_slab`)
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_slab`)
+
+		event.recipes.tfc.chisel(`tfg:mud_bricks/${dirtType}_wall`, `tfg:mud_bricks/${dirtType}_slab`, 'smooth')
+			.id(`tfg:chisel/tfg_soil/${dirtType}_mud_bricks_wall`)
 		
 		event.shapeless(`4x tfg:drying_bricks/${dirtType}`, [`tfg:mud/${dirtType}`, 'tfc:straw'])
 			.id(`tfg:shapeless/drying_bricks_${dirtType}`);

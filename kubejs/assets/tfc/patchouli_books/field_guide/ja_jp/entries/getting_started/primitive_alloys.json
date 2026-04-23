@@ -1,68 +1,68 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Primitive Alloys",
+	"name": "最初の合金",
 	"category": "tfc:getting_started",
 	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+			"text": "$(thing)合金$()は、2つ以上の金属を混合した強力な新しい金属です。ゲーム初期では銅製ツールが使えますが、その次の段階では3種類ある$(thing)青銅$()のいずれかを目指すことになります。合金は複数の$(thing)金属$()を決められた比率で混ぜる必要があります。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:getting_started/finding_ores#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+			"text": "序盤では、$(thing)壺$()を使って合金を作ることができます。やり方は$(l:getting_started/finding_ores#casting)鋳造$()に近いですが、1種類の金属ではなく、合金レシピに合う比率になるよう複数の鉱石を容器に入れるのがポイントです。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "たとえば、1000 mBの$(thing)青銅$()（右の図）を作る場合、$(thing)銅$()を700〜800 mB、$(thing)錫$()を200〜300 mBの割合で用意し、混合する必要があります。$(br2)次の3ページでは3種類の青銅レシピが紹介されています。どの青銅もツールや$(l:mechanics/armor)防具$()などに使えますが、性能に差があり、耐久・作業効率・攻撃力がそれぞれ変わります。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
-			"title": "Bronze",
+			"title": "青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)70 - 80 % : $(thing)銅$()$(li)20 - 30 % : $(thing)錫$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Bismuth Bronze",
+			"title": "蒼鉛青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)20 - 30 % : $(thing)亜鉛$()$(li)50 - 65 % : $(thing)銅$()$(li)10 - 20% : $(thing)蒼鉛$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Black Bronze",
+			"title": "黒青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)50 - 70 % : $(thing)銅$()$(li)10 - 25 % : $(thing)銀$()$(li)10 - 25 % : $(thing)金$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
-			"title": "Utility Alloys"
+			"text": "一部の合金は道具の素材として使うには向いていません。たとえば、$(thing)真鍮$()・$(thing)ローズゴールド$()・$(thing)スターリングシルバー$()がそれに当たります。$(br2)$(thing)真鍮$()は$(l:mechanics/mechanical_power)動力機構$()などの各種装置に要求される合金です。$(br2)$(thing)ローズゴールド$()と$(thing)スターリングシルバー$()は、$(l:mechanics/steel#red_steel)赤鋼$()や$(l:mechanics/steel#blue_steel)青鋼$()の材料として使われます。",
+			"title": "用途が限定的な合金"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "brass",
 			"item": "create:brass_ingot",
-			"title": "Brass",
+			"title": "真鍮",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)70 - 80 % : $(thing)銅$()$(li)20 - 30 % : $(thing)亜鉛$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "Rose Gold",
+			"title": "ローズゴールド",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)15 - 30 % : $(thing)銅$()$(li)70 - 85 % : $(thing)金$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Sterling Silver",
+			"title": "スターリングシルバー",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)材料:$()$(br)$(li)20 - 40 % : $(thing)銅$()$(li)60 - 80 % : $(thing)銀$()$(br2)"
 		}
 	],
 	"read_by_default": true,

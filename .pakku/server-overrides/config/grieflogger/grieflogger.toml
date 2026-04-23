@@ -1,0 +1,53 @@
+[database]
+    # Whether to use MySQL or SQLite
+    # Allowed values: true, false - Default: false
+    useMysql = false
+
+    # MySQL host
+    # Allowed length: 1 ~ 255 - Default: 'localhost'
+    mysqlHost = "localhost"
+
+    # MySQL port
+    # Allowed range: 1 ~ 65535 - Default: 3306
+    mysqlPort = 3306
+
+    # MySQL database
+    # Allowed length: 1 ~ 255 - Default: 'database'
+    mysqlDatabase = "database"
+
+    # MySQL username
+    # Allowed length: 1 ~ 255 - Default: 'username'
+    mysqlUsername = "username"
+
+    # MySQL password
+    # Allowed length: 1 ~ 255 - Default: 'password'
+    mysqlPassword = "password"
+
+    # MySQL timeout
+    # Allowed range: 1 ~ 60000 - Default: 5000
+    mysqlTimeout = 5000
+
+    # Whether to use indexes (improves inspect/lookup speed)
+    # Allowed values: true, false - Default: true
+    useIndexes = true
+
+[general]
+    # Maximum page size
+    # Allowed range: 1 ~ 100 - Default: 10
+    maxPageSize = 100
+
+[server]
+    # Whether to run the mod in server side only mode
+    # Allowed values: true, false - Default: true
+    serverSideOnlyMode = true
+
+[queue]
+    # The frequency at which the database queue is executed (every 'x' ticks)
+    # Allowed range: 1 ~ 100 - Default: 20
+    queueFrequency = 20
+
+[hello]
+    # The frequency at which the hello packet is sent to the server (every 'x' ticks)
+    # Allowed range: 1 ~ 1000 - Default: 600
+    helloFrequency = 600
+

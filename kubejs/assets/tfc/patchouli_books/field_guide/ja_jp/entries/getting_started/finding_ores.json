@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Ores, Metal, and Casting",
+  "name": "鉱石、金属、鋳造",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
+      "text": "棒や小枝、石だけでなく、探索中には地面に落ちている小さな鉱石片も見つかります。これらは非常に重要で、ピッケルを手に入れる前に鉱石や金属を確保できる数少ない手段です。"
     },
     {
       "type": "patchouli:multiblock",
@@ -45,63 +45,63 @@
         }
       },
       "name": "",
-      "text": "All small ore pieces",
+      "text": "全ての小さな鉱石",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "These small ore pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere nearby, probably underground and close to the surface. Be sure to note where you find small ores, as the location of ore veins will be useful later during $(l:mechanics/prospecting)Prospecting$().$(br2)The twelve types of small ores, and the metal they can be melted into are listed on the next page."
+      "text": "これらの小さな鉱石片は2つの点で役立ってくれます。1つは溶かして金属資源として使えること、そしてもう1つは近くに鉱脈があることを示す目印になることです（多くはその地下にあります）。見つけた場所を記録しておくことで、後の$(l:mechanics/prospecting)探鉱$()で鉱脈を発見するのに役立ちます。$(br2)小さな鉱石は全部で12種類あり、それらを溶かすことで得られる金属は次のページで確認できます。"
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Native Copper ($(thing)Copper$())$(li)Native Gold ($(thing)Gold$())$(li)Hematite ($(thing)Cast Iron$())$(li)Native Silver ($(thing)Silver$())$(li)Cassiterite ($(thing)Tin$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garnierite ($(thing)Nickel$())$(li)Malachite ($(thing)Copper$())$(li)Magnetite ($(thing)Cast Iron$())$(li)Limonite ($(thing)Cast Iron$())$(li)Sphalerite ($(thing)Zinc$())$(li)Tetrahedrite ($(thing)Copper$())",
-      "title": "Small Ores"
+      "text": "$(li)自然銅 ($(thing)銅$())$(li)自然金 ($(thing)金$())$(li)赤鉄鉱 ($(thing)鋳鉄$())$(li)自然銀 ($(thing)銀 $())$(li)錫石 ($(thing)錫$())$(li)輝蒼鉛鉱 ($(thing)蒼鉛$())$(li)珪ニッケル鉱 ($(thing)ニッケル$())$(li)孔雀石 ($(thing)銅$())$(li)磁鉄鉱 ($(thing)鋳鉄$())$(li)褐鉄鉱 ($(thing)鋳鉄$())$(li)閃亜鉛鉱 ($(thing)亜鉛$())$(li)四面銅鉱 ($(thing)銅$())",
+      "title": "小さな鉱石"
     },
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "In TerraFirmaCraft, ores each contain a certain number of $(thing)units$(), or $(thing)mB (millibuckets)$() of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide $(thing)16 mB$() of metal. In order to extract this metal, it needs to be $(thing)melted$(), and made into tools using a process called $(thing)casting$().",
-      "title": "Casting"
+      "text": "TerraFirmaCraftでは、鉱石ごとに取り出せる金属量が$(thing)mB$()単位で決まっています。地表で拾える小さな鉱石は品質が低く、得られるのはわずか$(thing)16 mB$()です。これを利用するには、まず$(thing)溶かして$()から、$(thing)鋳造$()によってツールへ加工する必要があります。",
+      "title": "鋳造"
     },
     {
       "type": "patchouli:text",
-      "text": "You will need:$(br)$(li)A $(l:getting_started/pottery#vessel)Small Vessel$()$(li)Enough materials for a $(l:getting_started/pit_kiln)Pit Kiln$().$(li)One or more $(l:getting_started/pottery#mold)Mold(s)$() to cast the molten metal.$(li)And finally, at least 144 mB total of a metal which is suitable for casting: $(thing)Copper$(), in one or more of its three ore forms.$(br2)$(br)$(italic)Note: Casting can also be done with some $(l:getting_started/primitive_alloys)Alloys$()"
+      "text": "必要なもの：$(br)$(li)$(l:getting_started/pottery#vessel)壺$()$(li)$(l:getting_started/pit_kiln)穴窯$()に必要な材料$(li)溶けた金属を流し込む$(l:getting_started/pottery#mold)鋳型$()（1つ以上）$(li)そして、鋳造に使える合計144 mB以上の金属（いずれかの種類の$(thing)銅鉱石$()）$(br2)$(br)$(italic)補足：鋳造は一部の$(l:getting_started/primitive_alloys)合金$()でも可能です。"
     },
     {
       "type": "patchouli:text",
-      "text": "First, open the $(thing)Small Vessel$() and put the ores inside. Count up the total amount of metal in the ores carefully! The vessel can only hold up to 3024mB of molten metal, excess will be lost. Then, you need to build a $(l:getting_started/pit_kiln)Pit Kiln$() with the filled small vessel inside. As the vessel heats, the ores inside it will melt, and you'll be left with a vessel of molten metal."
+      "text": "まず$(thing)壺$()を開き、鉱石を入れます。このとき、壺にいれた金属量（mB）の総量をしっかり計算しておきましょう。壺には熔融金属が最大3024mBまでしか入らないため、それ以上は無駄になってしまいます。次に、$(l:getting_started/pit_kiln)穴窯$()でその壺を加熱します。（陶器を焼く時と同じように壺を中に入れた状態で穴窯を構築してください。）加熱が完了すると鉱石が溶け、中身が熔融金属に変わります。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely."
+      "text": "壺は非常に熱くなるので注意が必要です。棒2本とナイフで$(thing)木製トング$()を作りましょう。オフハンドに持っていれば、熱いものも安全に取り扱えます。"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "Hold the vessel and $(item)$(k:key.use)$() to open the $(thing)Casting$() interface.",
+      "text": "加熱された壺を手に持ち$(item)$(k:key.use)$()で、$(thing)鋳造GUI$()を開きます。",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "With the casting interface open, place your empty fired mold in the center slot. It will fill up as long as the vessel remains liquid. (If the vessel solidifies, it can be reheated in another pit kiln.) Once the mold is full, it can be removed and left to cool. Once cool, the mold and its contents can be extracted by using the mold, or putting it in the crafting grid."
+      "text": "鋳造画面を開き、中央スロットに鋳型をセットします。容器内の金属が溶けている間は、型に流し込まれていきます。（金属が時間経過で冷えて固まってしまった場合は、穴窯や炉で再加熱できます。）型が満たされたら取り出して冷まし（水に入れることで素早く冷却可能）、冷却後は$(item)使用する$()か単体クラフトで型とその中身を取り出せます。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "gtceu:shaped/pickaxe_copper",
-      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
+      "text": "これでついに最初のピッケルが作れます！流れをおさらいすると。銅を集めてピッケルの頭を作れる分を確保し、鋳型を焼き、穴窯で銅を溶かし、型に流して鋳造します。あとは棒に付ければ完成です！これで$(l:tfg_ores/index)鉱石$()の採掘が可能になります。"
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/chisel/copper",
-      "text": "A couple other important metal tools are available for progression as well. The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and other recipes."
+      "text": "進めていくうえで、ほかにも重要な金属ツールがあります。$(l:mechanics/chisel)ノミ$()は、建築や各種レシピで石ブロックを加工する際に便利です。"
     },
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:copper_saw",
-      "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
+      "text": "のこぎりを使えば、原木を$(l:mechanics/support_beams)梁$()や$(thing)板$()に加工できます。木の板は板材や作業台、樽、チェストなど様々なアイテムの作成に必要になります。のこぎりは$(l:firmaciv/canoe)カヌー$()作りにも使います。"
     }
   ],
   "read_by_default": true,

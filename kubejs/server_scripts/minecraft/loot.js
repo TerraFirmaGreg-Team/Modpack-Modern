@@ -93,4 +93,6 @@ function registerMinecraftLoots(event) {
 	event.addLootTableModifier('exposure:chests/abandoned_mineshaft').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addLootTableModifier('exposure:chests/village_plains_house').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addLootTableModifier('exposure:chests/shipwreck_map').removeLoot(ItemFilter.ALWAYS_TRUE)
+
+	event.addBlockLootModifier('minecraft:cherry_leaves').removeLoot(ItemFilter.ALWAYS_TRUE).matchMainHand('#forge:shears').addLoot('minecraft:cherry_leaves');
 }

@@ -88,6 +88,8 @@ function registerTFGMoonEntityTypeTags(event) {
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
 	event.add('tfc:deals_crushing_damage', 'species:birt')
 
+	event.add('tfc:zombies', 'ad_astra:corrupted_lunarian')
+
 	event.add('tfg:ignores_gravity', 'minecraft:shulker_bullet')
 	event.add('tfg:ignores_gravity', 'endermanoverhaul:spirit')
 	event.add('tfg:ignores_gravity', 'species:birt')

@@ -331,7 +331,8 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Vibrating
 
-		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)) {
+		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)
+			&&material !== GTMaterials.Coal && material !== GTMaterials.get('lignite')) {
 
 			let highYield = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT)
 
@@ -345,8 +346,8 @@ function registerVintageImprovementsRecipes(event) {
 					Item.of(ChemicalHelper.get(TagPrefix.gemChipped, material, 1)).withChance(highYield ? 0.30 : 0.35)
 				], 
 				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
-				.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-				.id(`tfg:vi/vibrating/${material.getName()}`)
+					.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+					.id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
 		// #endregion

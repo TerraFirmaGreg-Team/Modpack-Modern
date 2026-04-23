@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "O $(thing)Carrinho Pavimentador$() é um carrinho especializado usado para aplicar superfícies de estrada de forma rápida e eficiente. Ele pode ser carregado com materiais para estradas e $(thing)Base Britada$() para criar estradas. O carrinho também pode preencher quaisquer blocos de base já existentes."
+      "text": "O $(thing)Carrinho Pavimentador$() é um carrinho especializado usado para aplicar superfícies de estrada de forma rápida e eficiente. Ele pode ser carregado com materiais para estradas e $(thing)Base Britada$() para criar estradas. O carrinho também pode preencher quaisquer blocos de base já existentes"
     },
     {
       "type": "patchouli:image",

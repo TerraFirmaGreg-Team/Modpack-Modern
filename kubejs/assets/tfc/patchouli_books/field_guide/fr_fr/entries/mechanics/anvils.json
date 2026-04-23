@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Les enclumes sont un outil important nécessaire pour travailler le métal, car elles vous permettent de travailler et souder des lingots en métal en diverses formes.$(br2)$(l:mechanics/anvils#working)Travailler$() sert à transformer un morceau de métal en un autre, et $(l:getting_started/primitive_anvils#welding)le soudage$() sert à fusionner deux pièces en métal en une seule."
+      "text": "Les enclumes sont un outil important nécessaires pour travailler le métal, car elles vous permettent de travailler et souder des lingots en métal en diverses formes.$(br2)$(l:mechanics/anvils#working)Travailler$() sert à transformer un morceau de métal en un autre, et $(l:getting_started/primitive_anvils#welding)le soudage$() sert à fusionner deux pièces en métal en une seule."
     },
     {
       "type": "patchouli:multiblock",
@@ -35,12 +35,12 @@
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Les enclumes ont chacune un $(thing)niveau$(), qui définit quels types de matériaux elles peuvent travailler et souder. Une enclume peut travailler des métaux de son propre niveau et souder des métaux qui sont un niveau au-dessus. $(br)$(li)$(bold)Niveau 0$(): Enclumes en Pierre$(li)$(bold)Niveau I$(): Cuivre$(li)$(bold)Niveau II$(): Bronze au Bismuth, Bronze Noir, Bronze$(li)$(bold)Niveau III$(): Fer Forgé$(li)$(bold)Niveau IV$(): Acier$(li)$(bold)Niveau V$(): Acier Noir$(li)$(bold)Niveau VI$(): Acier Rouge, Acier Bleu"
+      "text": "Les enclumes ont chacune un $(thing)niveau$(), qui définit quels types de matériaux elles peuvent travailler et souder. Une enclume peut travailler des métaux de son propre niveau et souder des métaux qui sont un niveau au-dessus. $(br)$(li)$(bold)Niveau 0$(): Enclumes en Pierre$(li)$(bold)Niveau I$(): Cuivre$(li)$(bold)Niveau II$(): Bronze au bismuth, Bronze noir, Bronze$(li)$(bold)Niveau III$(): Fer forgé$(li)$(bold)Niveau IV$(): Acier$(li)$(bold)Niveau V$(): Acier noir$(li)$(bold)Niveau VI$(): Acier rouge, Acier bleu"
     },
     {
       "type": "patchouli:text",
       "anchor": "working",
-      "text": "Afin de travailler un item à l'enclume, vous devrez utiliser l'enclume, pour ouvrir l'interface de l'enclume, à droite. A gauche, il y a deux emplacements d'input pour des items. Pour le travailler, l'item cible doit être placé dans l'emplacement de droite. Vous aurez aussi besoin d'un marteau pour travailler, soit dans l'emplacement dédié pour les marteaux tout à droite de l'interface de l'enclume  $(bold)soit$() dans votre main principale. Le marteau perdra graduellement de la durabilité au fur et à mesure que vous travaillerez l'item.",
+      "text": "Afin de travailler un item à l'enclume, vous devrez utiliser l'enclume afin d'ouvrir l'interface de l'enclume, comme ci-contre. A gauche, il y a deux emplacements d'entrée pour des items. Pour le travailler, l'item cible doit être placé dans l'emplacement de droite. Vous aurez aussi besoin d'un marteau pour travailler, soit dans l'emplacement dédié pour les marteaux tout à droite de l'interface de l'enclume $(bold)soit$() dans votre main principale. Le marteau perdra graduellement de la durabilité au fur et à mesure que vous travaillerez l'item.",
       "title": "Travail"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Vous devrez ensuite sélectionner le $(thing)plan$(), qui choisit quel item vous voulez créer. $(item)$(k:key.attack)$() sur le boutton de scroll, et ensuite choisissez un des items à créer. L'interface normale de l'enclume va revenir, mais vous aurez choisi un plan : le parchemin montrera l'item que vous êtes en train de créer, et les $(thing)règles$() et l'$(thing)objectif$() seront alors remplies."
+      "text": "Vous devrez ensuite sélectionner le $(thing)plan$(), qui choisit quel item vous voulez créer. $(item)$(k:key.attack)$() sur l'icône de parchemin, et ensuite choisissez un des items à créer. L'interface normale de l'enclume va revenir, mais vous aurez choisi un plan : le parchemin montrera l'item que vous êtes en train de créer, et les $(thing)règles$() et l'$(thing)objectif$() seront alors indiquées."
     },
     {
       "type": "patchouli:image",
@@ -65,12 +65,12 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Au milieu de l'écran de l'enclume se trouve une barre avec deux indicateurs colorés. Le pointeur $(2)vert$() représente votre progrès actuel du travail. Le pointeur $(4)rouge$() est l'objectif. Votre but est d'aligner le progrès avec la cible.$(br2)Pour cela, vous pouvez utiliser les boutons $(2)verts$() et $(4)rouges$(), qui servent à déplacer votre progrès d'un certain montant, selon l'action prise.",
+      "text": "Au milieu de l'écran de l'enclume se trouve une barre avec deux pointeurs colorés. Le pointeur $(2)vert$() représente votre progrès actuel du travail. Le pointeur $(4)rouge$() est l'objectif. Votre but est d'aligner le progrès avec la cible.$(br2)Pour cela, vous pouvez utiliser les boutons $(2)verts$() et $(4)rouges$(), qui servent à déplacer votre progrès d'un certain montant, selon l'action prise.",
       "title": "Objectifs"
     },
     {
       "type": "patchouli:text",
-      "text": "Les actions $(2)vertes$() déplaceront toujours votre progrès vers la $(bold)droite$() et les actions $(4)rouges$() déplaceront toujours vos actions vers la $(bold)gauche$(). Notez que si vous déplacez votre progrès hors de la barre, vous perdrez le lingot. Cependant, vous devez aussi suivre les $(thing)règles$()..."
+      "text": "Les actions $(2)vertes$() déplaceront toujours votre progrès vers la $(bold)droite$() et les actions $(4)rouges$() déplaceront toujours votre progrès vers la $(bold)gauche$(). Notez que si vous déplacez votre progrès hors de la barre, vous perdrez le lingot. Cependant, vous devez aussi suivre certaines $(thing)règles$()..."
     },
     {
       "type": "patchouli:text",
@@ -79,11 +79,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Vos trois dernières actions sont affichées juste en dessous des règles. Quand une règle est satisfaite, son contour passera au vert. Un succès se produit quand toutes les règles sont satisfaites.$(br2)Enfin, faites attention à la $(l:mechanics/heating)température$() de vos items. Des métaux ne peuvent être travaillés que s'ils sont au-dessus d'une certaine température où l'infobulle indique \"Peut trvailler\". Vous pouvez sortir un item de l'enclume et le réchauffer pendant le processus de travail."
+      "text": "Vos trois dernières actions sont affichées juste en dessous des règles. Quand une règle est satisfaite, son contour passera au vert.Vous réussissez quand toutes les règles sont satisfaites.$(br2)Enfin, faites attention à la $(l:mechanics/heating)température$() de vos items. Des métaux ne peuvent être travaillés que s'ils sont au-dessus d'une certaine température où l'infobulle indique \"Peut trvailler\". Vous pouvez sortir un item de l'enclume et le réchauffer pendant le processus de travail."
     },
     {
       "type": "patchouli:text",
-      "text": "Le travail peut être fastidieux, et peut prendre de nombreuses étapes pour être  correct. Cependant, il y a un avantage à être efficace. Certains items, comme les têtes d'outils, quand ils sont travaillés un nombre faible ou minimal de fois, reçoivent un Bonus de Forge basé sur l'efficacité aec laquelle ils ont été forgés. Ce bonus sera alors appliqué aux outils où ces items ont été utilisés : par exemple une tête de pioche utilisée pour faire une pioche.",
+      "text": "Le travail peut être fastidieux, et peut prendre de nombreuses étapes pour devenir correct. Cependant, il y a un avantage à être efficace. Certains items, comme les têtes d'outils, quand ils sont travaillés un nombre faible ou minimal de fois, reçoivent un Bonus de Forge basé sur l'efficacité aec laquelle ils ont été forgés. Ce bonus sera alors appliqué aux outils où ces items ont été utilisés : par exemple une tête de pioche utilisée pour faire une pioche.",
       "title": "Bonus de Forge"
     },
     {

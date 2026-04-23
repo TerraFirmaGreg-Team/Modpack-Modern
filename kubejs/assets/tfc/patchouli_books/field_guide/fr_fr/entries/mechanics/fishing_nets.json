@@ -1,22 +1,22 @@
 {
-	"name": "Fishing Nets",
+	"name": "Filets de Pêche",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fishing Nets",
+			"title": "Filets de Pêche",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},
-			"text": "Tired of hunting down fish with spears? Or loosing a floppy catch while $(l:mechanics/fishing)fishing$()? Craft a $(thing)Fishing Net$() to scoop up your dinner.$(br)To use a fishing net; right click on a fish entity to capture the fish into your inventory. Different tier fishing nets all act the same, but have different durability."
+			"text": "Lassé de chasser les poissons à la lance ? Ou de perdre un poisson agité en $(l:mechanics/fishing)pêchant$() ? Fabriquez un $(thing)Filet de pêche$() pour ramasser votre déjeuner.$(br)Pour utiliser un filet de pêche; faites un clic droit sur un poisson pour le capturer dans votre inventaire. Les différents niveaux de filets de pêches agissent de la même manière mais ont une durabilité différente."
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Wood Fishing Net",
+			"title": "Filet de pêche en bois",
 			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
-			"text": "A basic $(item)Wood Fishing Net$()."
+			"text": "Un $(item)Filet de pêche en bois$() basique."
 		}
 	]
 }

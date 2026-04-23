@@ -26,11 +26,15 @@
         "with": [
           {
             "block": "gtceu:granite_graphite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_graphite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:granite_coal_ore",
+            "weight": 4
           },
           {
             "block": "gtceu:granite_diamond_ore",
@@ -45,11 +49,15 @@
         "with": [
           {
             "block": "gtceu:diorite_graphite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_graphite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:diorite_coal_ore",
+            "weight": 4
           },
           {
             "block": "gtceu:diorite_diamond_ore",
@@ -64,11 +72,15 @@
         "with": [
           {
             "block": "gtceu:gabbro_graphite_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:raw_graphite_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:gabbro_coal_ore",
+            "weight": 4
           },
           {
             "block": "gtceu:gabbro_diamond_ore",
@@ -78,14 +90,18 @@
       }
     ],
     "indicator": {
-      "rarity": 100,
+      "rarity": 22,
       "depth": 1,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
           "block": "gtceu:graphite_indicator",
-          "weight": 6
+          "weight": 12
+        },
+        {
+          "block": "gtceu:coal_indicator",
+          "weight": 4
         },
         {
           "block": "gtceu:diamond_bud_indicator",

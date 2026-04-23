@@ -1,4 +1,14 @@
 {
-    "item.betterp2p.advanced_memory_card.selected": "Częstotliwość:"
+    "item.betterp2p.advanced_memory_card.selected": "Częstotliwość:",
+    "gui.advanced_memory_card.select": "Wybierz",
+    "gui.advanced_memory_card.unbind": "Usuń powiązanie",
+    "gui.advanced_memory_card.side": "Rozmiar: %s",
+    "gui.advanced_memory_card.name": "Nazwa: %s",
+    "gui.advanced_memory_card.desc.not_set": "Nie ustawiono",
+    "gui.advanced_memory_card.p2p_status.bound": "Powiązano",
+    "gui.advanced_memory_card.p2p_status.input": "Wejście",
+    "gui.advanced_memory_card.p2p_status.output": "Wyjście",
+    "gui.advanced_memory_card.p2p_status.offline": "Offline",
+    "gui.advanced_memory_card.types.any": "§aWszystkie"
 }
 

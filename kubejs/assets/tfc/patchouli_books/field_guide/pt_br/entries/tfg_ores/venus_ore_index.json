@@ -8,13 +8,13 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "Este é o $(thing)Índice de Minérios$() para $(thing)Venus$(). Todos os minérios estão ordenados alfabeticamente e do veio mais rico para o mais pobre. Você pode clicar neles para saber mais sobre cada veio.",
+      "text": "This is the $(thing)Ore Index$() for $(thing)Vênus$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
       "title": "Venus Ore Index",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Enxofre: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Esfalerita: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Espodumena: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Halita: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lepidorita: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pirita: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Silvita: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
+      "text": "$(li)Enxofre: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Esfalerita: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Espodumênio: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Lepidolita: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pirita: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sal: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Sal-gema: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

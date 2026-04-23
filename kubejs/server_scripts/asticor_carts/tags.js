@@ -11,6 +11,9 @@ const registerAsticorCartsItemTags = (event) => {
     global.TFC_WOOD_TYPES.forEach(wood => {
         event.add('c:hidden_from_recipe_viewers', `tfcastikorcarts:postilion/${wood}`)
     })
+    global.AFC_WOOD_TYPES.forEach(wood => {
+        event.add('c:hidden_from_recipe_viewers', `tfcastikorcarts:postilion/${wood}`)
+    })
 }
 
 const registerAsticorCartsBlockTags = (event) => {

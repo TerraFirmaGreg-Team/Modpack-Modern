@@ -48,6 +48,8 @@
 	DisableMovementAttributeFov = true
 	#Enable the display of the TACZ ID in the tooltip when Advanced Tooltip is enabled
 	EnableTaczIdInTooltip = true
+	#Enable translucent while render block entity or not. Enable this option will result in ADDITIONAL PERFORMANCE OVERHEAD.
+	EnableBlockEntityTranslucent = false
 
 [Zoom]
 	#Screen distance coefficient for zoom, using MDV standard, default is MDV133

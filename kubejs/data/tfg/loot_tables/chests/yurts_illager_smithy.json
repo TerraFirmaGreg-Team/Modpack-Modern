@@ -70,7 +70,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:poor_raw_coal",
+					"name": "tfc:ore/lignite",
 					"weight": 100,
 					"functions": [
 						{
@@ -86,23 +86,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:raw_coal",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 4
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rich_raw_coal",
+					"name": "tfc:ore/bituminous_coal",
 					"weight": 100,
 					"functions": [
 						{

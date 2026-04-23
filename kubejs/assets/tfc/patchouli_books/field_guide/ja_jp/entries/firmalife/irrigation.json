@@ -1,26 +1,26 @@
 {
-	"name": "Irrigation",
+	"name": "給水",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:sprinkler",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below the sprinkler block. You know it is working when it drips out water particles. Sprinklers placed facing up irrigate the same 5x6x5 area above."
+			"text": "$(thing)スプリンクラー$()は、設置したブロックの下を中心に5×6×5の範囲へ水を散布する装置です。水のパーティクルが出ていれば正常に動作しています。上向きに設置した場合は、上方向の同じ範囲に給水します。"
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "The sprinkler is made with a $(thing)Copper Plate$()."
+			"text": "スプリンクラーは $(thing)銅プレート$()で作ることができます。"
 		},
 		{
-			"title": "Piping",
+			"title": "配管",
 			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump water into them with a $(thing)Mechanical Pump$()."
+			"text": "スプリンクラーを動かすには、水を供給する配管ネットワークに接続する必要があります。$(thing)液体パイプ$()をつないで配管し、$(thing)メカニカルポンプ$()で水を送り込むことで使用できます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
+			"text": "パイプは$(thing)銅の足場$()などのGregTechの足場ブロックで右クリックすることで、壁に埋め込んで設置できます。あるいは温室のポートを使う方法もあります。こうして設置したパイプには、スプリンクラーを直接取り付け可能です。さらに、流体パイプはレンチの右クリックで向きを変更でき、オフハンドを空にした状態でスニーク右クリックすると一方通行に設定できます。"
 		}
 	],
 	"read_by_default": true,

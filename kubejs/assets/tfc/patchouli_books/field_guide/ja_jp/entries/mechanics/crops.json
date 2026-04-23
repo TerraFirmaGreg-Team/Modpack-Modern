@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+			"text": "$(li)\n$(l:tfc:mechanics/crops#barley)大麦$()$(li)\n$(l:tfc:mechanics/crops#beet)ビーツ$()$(li)\n$(l:tfc:mechanics/crops#cabbage)キャベツ$()$(li)\n$(l:tfc:mechanics/crops#canola)キャノーラ$()$(li)\n$(l:tfc:mechanics/crops#carrot)ニンジン$()$(li)\n$(l:tfc:mechanics/crops#cucumber)キュウリ$()$(li)\n$(l:tfc:mechanics/crops#flax)亜麻$()$(li)\n$(l:tfc:mechanics/crops#garlic)ニンニク$()$(li)\n$(l:tfc:mechanics/crops#green_bean)サヤインゲン$()$(li)\n$(l:tfc:mechanics/crops#jute)ジュート$()$(li)\n$(l:tfc:mechanics/crops#lentil)レンズ豆\n$()$(li)\n$(l:tfc:mechanics/crops#maize)トウモロコシ$()$(li)\n$(l:tfc:mechanics/crops#melon)スイカ$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+			"text": "$(li)\n$(l:tfc:mechanics/crops#oat)オーツ麦$()$(li)\n$(l:tfc:mechanics/crops#onion)タマネギ$()$(li)\n$(l:tfc:mechanics/crops#papyrus)パピルス$()$(li)\n$(l:tfc:mechanics/crops#potato)ジャガイモ$()$(li)\n$(l:tfc:mechanics/crops#pumpkin)カボチャ$()$(li)\n$(l:tfc:mechanics/crops#radish)ラディッシュ$()$(li)\n$(l:tfc:mechanics/crops#red_bell_pepper)赤ピーマン$()$(li)\n$(l:tfc:mechanics/crops#rice)稲$()$(li)\n$(l:tfc:mechanics/crops#rye)ライ麦$()$(li)\n$(l:tfc:mechanics/crops#soybean)大豆$()$(li)\n$(l:tfc:mechanics/crops#squash)スカッシュ$()$(li)\n$(l:tfc:mechanics/crops#sugarcane)サトウキビ$()$(li)\n$(l:tfc:mechanics/crops#sunflower)ヒマワリ$()$(li)\n$(l:tfc:mechanics/crops#tomatoes)トマト$()$(li)\n$(l:tfc:mechanics/crops#wheat)小麦$()$(li)\n$(l:tfc:mechanics/crops#yellow_bell_pepper)黄ピーマン$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -45,8 +45,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "barley",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
-			"title": "Barley"
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)大麦は1ブロック分の作物です。大麦の種は農地に植えることができ、$(thing)大麦$()と$(thing)大麦の種$()を生産します。",
+			"title": "大麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -193,8 +193,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "oat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
-			"title": "Oat"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 35 - 100 %$(br)$(bold)栄養素$(): リン$(br2)オーツ麦は１ブロック分の作物です。オーツ麦の種は農地に植えることができ、$(thing)オーツ麦$()と$(thing)オーツ麦の種$()を生産します。",
+			"title": "オーツ麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -341,8 +341,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rye",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
-			"title": "Rye"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 85 %$(br)$(bold)栄養素$(): リン$(br2)ライ麦は１ブロック分の作物です。 ライ麦の種は農地に植えることができ、 $(thing)ライ麦$()と$(thing)ライ麦の種$()を生産します。",
+			"title": "ライ麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -489,8 +489,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "maize",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
-			"title": "Maize"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 75 - 100 %$(br)$(bold)栄養素$(): リン$(br2)トウモロコシは２ブロックの高さに成長する作物です。トウモロコシの種は農地に植えることができ、$(thing)トウモロコシ$()と$(thing)トウモロコシの種$()を生産します。",
+			"title": "トウモロコシ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -627,8 +627,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "wheat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
-			"title": "Wheat"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 100 %$(br)$(bold)栄養素$(): リン$(br2)小麦は１ブロック分の作物です。小麦の種は農地に植えることができ、$(thing)小麦$()と$(thing)小麦の種$()を生産します。",
+			"title": "小麦"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -775,12 +775,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rice",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
-			"title": "Rice"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 100 %$(br)$(bold)栄養素$(): リン$(br2)稲は１ブロック分の作物です。稲は水中で栽培します。1ブロックの深さの淡水の農地に植える必要があります。$(thing)稲$()と$(thing)稲の種$()を生産します。",
+			"title": "稲"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+			"text": "注: 成長するには、稲の苗が$(thing)水中$()でなければなりません。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -923,8 +923,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beet",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
-			"title": "Beet"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 85 %$(br)$(bold)栄養素$(): カリウム$(br2)ビーツは１ブロック分の作物です。 ビーツの種は農地に植えることができ、 $(thing)ビーツ$()と$(thing)ビーツの種$()を生産します。",
+			"title": "ビーツ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1037,8 +1037,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cabbage",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
-			"title": "Cabbage"
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): 窒素$(br2)キャベツは1ブロック分の作物です。キャベツの種は農地に植えることができ、$(thing)キャベツ$()と$(thing)キャベツの種$()を生産します。",
+			"title": "キャベツ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1151,8 +1151,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "carrot",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
-			"title": "Carrot"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 100 %$(br)$(bold)栄養素$(): カリウム$(br2)ニンジンは１ブロック分の作物です。ニンジンの種は農地に植えることができ、$(thing)ニンジン$()と$(thing)ニンジンの種$()を生産します。",
+			"title": "ニンジン"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1248,8 +1248,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "garlic",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Garlic is a single block crop. Garlic seeds can be planted on farmland and will produce $(thing)Garlic$() and $(thing)Garlic Seeds$() as a product.",
-			"title": "Garlic"
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)ニンニクは1ブロック分の作物です。ニンニクの種は農地に植えることができ、$(thing)ニンニク$()と$(thing)ニンニクの種$()を生産します。",
+			"title": "ニンニク"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1345,12 +1345,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "green_bean",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
-			"title": "Green Beans"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 38 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)サヤインゲンはつる性の作物で2ブロック分の高さに成長します。サヤインゲンの種は農地に植えることができ、棒がある場合は2ブロックの高さに成長し、$(thing)サヤインゲン$()と$(thing)サヤインゲンの種$()を生産します。",
+			"title": "サヤインゲン"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "The stick is required in order for the crop to fully grow.",
+			"text": "作物が十分に成長するためには棒が必要です。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -1525,8 +1525,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "potato",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-			"title": "Potatoes"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 50 - 100 %$(br)$(bold)栄養素$(): カリウム$(br2)ジャガイモは１ブロック分の作物です。ジャガイモの種は農地に植えることができ、$(thing)ジャガイモ$()と$(thing)ジャガイモの種$()を生産します。",
+			"title": "ジャガイモ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1656,8 +1656,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "pumpkin",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 80 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Pumpkins are a spreading crop. Pumpkin seeds can be planted on farmland and will place up to two $(thing)Pumpkin Blocks$() on the ground next to it while it is mature. If the pumpkin blocks are harvested, and the plant matures again, it can grow more pumpkins. Pumpkins can be made into $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$().",
-			"title": "Pumpkins"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 30 - 80 %$(br)$(bold)栄養素$(): リン$(br2)カボチャは幅を取る作物です。カボチャの種は農地に植えることができ、成熟するとその隣の地面に最大で2個の$(thing)カボチャブロック$()を生産します。 カボチャを収穫し植物が再び成長すると、より多くのカボチャが得られます。 カボチャは$(l:mechanics/lighting#jack_o_lanterns)ジャック・オ・ランタン$()に加工できます。",
+			"title": "カボチャ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1828,8 +1828,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "melon",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
-			"title": "Melons"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 75 - 100 %$(br)$(bold)栄養素$(): リン$(br2)スイカは幅を取る作物です。スイカの種は農地に植えることができ、成熟するとその隣の地面に最大で2個の$(thing)スイカブロック$()を生産します。 植物が再び成長すると、より多くのスイカが得られます。",
+			"title": "スイカ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2000,8 +2000,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "red_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Red Bell Peppers are a pickable crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
-			"title": "Red Bell Peppers"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 60%$(br)$(bold)栄養素$(): カリウム$(br2)赤ピーマンは摘み取ることができる作物です。 成熟に近づくと、 $(item)$(k:key.use)$()で収穫して緑ピーマンを手に入れることができます。 $(item)$(k:key.use)$()で収穫すると、植物を破壊することなく、将来的により多くのピーマンを得られます。",
+			"title": "赤ピーマン"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2131,8 +2131,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "yellow_bell_pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 60 %$(br)$(bold)Nutrient$(): Potassium$(br2)Yellow Bell Peppers are a pickable crop. When they are near mature, they can be harvested with $(item)$(k:key.use)$() to obtain Green Bell Peppers. Harvesting with $(item)$(k:key.use)$() allows the plant to grow more peppers in the future rather than destroying the plant.",
-			"title": "Yellow Bell Peppers"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 60%$(br)$(bold)栄養素$(): カリウム$(br2)黄ピーマンは摘み取ることができる作物です。 成熟に近づくと、 $(item)$(k:key.use)$()で収穫して緑ピーマンを手に入れることができます。 $(item)$(k:key.use)$()で収穫すると、植物を破壊することなく、将来的により多くのピーマンを得られます。",
+			"title": "黄ピーマン"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2262,8 +2262,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "onion",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 90 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Onions are a single block crop. Onion seeds can be planted on farmland and will produce $(thing)Onions$() and $(thing)Onion Seeds$() as a product.",
-			"title": "Onions"
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 90 %$(br)$(bold)栄養素$(): 窒素$(br2)タマネギは1ブロック分の作物です。タマネギの種は農地に植えることができ、$(thing)タマネギ$()と$(thing)タマネギの種$()を生産します。",
+			"title": "タマネギ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2393,8 +2393,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "soybean",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Soybean is a single block crop. Soybean seeds can be planted on farmland and will produce $(thing)Soybean$() and $(thing)Soybean Seeds$() as a product.",
-			"title": "Soybean"
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 40 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)大豆は1ブロック分の作物です。大豆の種は農地に植えることができ、$(thing)大豆$()と$(thing)大豆の種$()を生産します。",
+			"title": "大豆"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2524,8 +2524,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "squash",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 23 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Squash is a single block crop. Squash seeds can be planted on farmland and will produce $(thing)Squash$() and $(thing)Squash Seeds$() as a product.",
-			"title": "Squash"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 23 - 95 %$(br)$(bold)栄養素$(): カリウム$(br2)スカッシュは１ブロック分の作物です。スカッシュの種は農地に植えることができ、$(thing)スカッシュ$()と$(thing)スカッシュの種$()を生産します。",
+			"title": "スカッシュ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2672,8 +2672,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-			"title": "Sugarcane"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 40 - 100 %$(br)$(bold)栄養素$(): カリウム$(br2)サトウキビは２ブロックの高さに成長する作物です。サトウキビの種は農地に植えることができ、$(thing)サトウキビ$()と$(thing)サトウキビの種$()を生産します。サトウキビを使って$(thing)砂糖$()を作ることができます。",
+			"title": "サトウキビ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2852,12 +2852,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "tomatoes",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Tomatoes are a climbing two block tall crop. Tomato seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Tomatoes$() and $(thing)Tomato Seeds$() as a product.",
-			"title": "Tomatoes"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 30 - 95 %$(br)$(bold)栄養素$(): カリウム$(br2)トマトはつる性の作物で2ブロック分の高さに成長します。トマトの種は農地に植えることができ、棒がある場合は2ブロックの高さに成長し、$(thing)トマト$()と$(thing)トマトの種$()を生産します。",
+			"title": "トマト"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "The stick is required in order for the crop to fully grow.",
+			"text": "作物が十分に成長するためには棒が必要です。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -3032,8 +3032,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "jute",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Jute is a two block tall crop. Jute seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Jute$() and $(thing)Jute Seeds$() as a product.",
-			"title": "Jute"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 100 %$(br)$(bold)栄養素$(): カリウム$(br2)ジュートは２ブロックの高さに成長する作物です。ジュートの種は農地に植えることができ、$(thing)ジュート$()と$(thing)ジュートの種$()を生産します。",
+			"title": "ジュート"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3170,8 +3170,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "papyrus",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Papyrus is a two block tall crop. Papyrus seeds can be planted on farmland, will grow two blocks tall, and will produce $(l:mechanics/papermaking)Papyrus$() and $(thing)Papyrus Seeds$() as a product.",
-			"title": "Papyrus"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): カリウム$(br2)パピルスは２ブロックの高さに成長する作物です。パピルスの種は農地に植えることができ、$(l:mechanics/papermaking)パピルス$()と$(thing)パピルスの種$()を生産します。",
+			"title": "パピルス"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3308,8 +3308,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "sunflower",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)A Sunflower is a two block tall crop. Sunflower seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Sunflower Caps$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)A Sunflower also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Sunflower"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): 窒素$(br2)ヒマワリは高さ2ブロックの作物です。 ヒマワリの種は農地に植えることができ、2ブロックの高さに成長し、$(thing)種油$()の原料になる$(item)ヒマワリの花冠$()を生産します。種油はランタン用燃料として使えるほか、後に$(thing)バイオディーゼル$()の素材にもなります。$(br)ヒマワリは$(l:firmalife/beekeeping)養蜂$()をする際には花として扱われます。",
+			"title": "ヒマワリ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3462,13 +3462,13 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Sunflowers$() grow between 5 and 40C, and 100 to 450mm of rainfall. Their seeds can also be roasted and eaten!"
+			"text": "$(thing)野生のヒマワリ$()は気温が5~40°C、降水量100~450mmの土地に生えています。 ヒマワリの種は焼くことでおやつになります！"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "canola",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 10 - 60 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Canola is a two block tall crop. Canola seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Canola Ovules$() which can be processed into $(thing)Seed Oil$(). Seed Oil can both be used as Lamp Fuel, as well as $(thing)Bio Diesel$() later on.$(br)Canola also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Canola"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 10 - 60 %$(br)$(bold)栄養素$(): リン$(br2)キャノーラは高さ2ブロックの作物です。 キャノーラの種は農地に植えることができ、2ブロックの高さに成長し、$(thing)種油$()の原料になる$(item)キャノーラの胚$()を生産します。種油はランタン用燃料として使えるほか、後に$(thing)バイオディーゼル$()の素材にもなります。$(br)キャノーラは$(l:firmalife/beekeeping)養蜂$()をする際には花として扱われます。",
+			"title": "キャノーラ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3621,14 +3621,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Canola$(), also known as $(thing)Rapeseed$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
+			"text": "$(thing)野生のキャノーラ$()は気温が-7~25°C、降水量50~ 350mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flax",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
-			"title": "Flax"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): 窒素$(br2)亜麻は高さ2ブロックの作物です。 亜麻の種は農地に植えることができ、2ブロックの高さに成長し、$(thing)リネン$()と$(thing)麻布$()の原料になる$(item)亜麻の茎$()を生産します。 $(br)亜麻は$(l:firmalife/beekeeping)養蜂$()をする際に花として扱われます。",
+			"title": "亜麻"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3781,13 +3781,13 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+			"text": "$(thing)野生の亜麻$()は気温が-5 ~23°C、降水量175~475mmの土地に生えています。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cucumber",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
-			"title": "Cucumber"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キュウリはつる性の作物で2ブロック分の高さに成長します。 キュウリの種は農地に植えることができ、棒がある場合は2ブロックの高さに成長し、$(thing)キュウリ$()と$(thing)キュウリの種$()を生産します。",
+			"title": "キュウリ"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3919,14 +3919,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"text": "$(thing)野生のキュウリ$()は気温が15~40°C、降水量350~500mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Radish",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
+			"title": "ラディッシュ",
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): カリウム$(br2)ラディッシュは$(thing)野菜$()系の栄養を取ることができる食材です。寒冷地で農耕を営む場合には優秀な作物になります。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4034,14 +4034,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"text": "$(thing)野生のラディッシュ$()は、気温が-16~4C、降水量75~325mmの土地に生えています。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
-			"title": "Lentil",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
+			"title": "レンズ豆",
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 18  °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 50 - 100 %$(br)$(bold)栄養素$(): リン$(br2)レンズ豆は$(thing)野菜$()系の栄養を取ることができる食材です。加熱調理してから食べた方が良いでしょう。寒冷地での農耕向きの作物です。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"text": "$(thing)野生のレンズ豆$()は気温が-18~2°C、降水量250~425mmの土地に生えています。",
 			"enable_visualize": false
 		}
 	],

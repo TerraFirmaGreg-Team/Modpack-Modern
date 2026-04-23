@@ -21,7 +21,7 @@
         "with": [
           {
             "block": "gtceu:granite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -29,11 +29,11 @@
           },
           {
             "block": "gtceu:granite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:granite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -44,7 +44,7 @@
         "with": [
           {
             "block": "gtceu:diorite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -52,11 +52,11 @@
           },
           {
             "block": "gtceu:diorite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -67,7 +67,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -75,11 +75,11 @@
           },
           {
             "block": "gtceu:gabbro_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -90,7 +90,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -98,11 +98,11 @@
           },
           {
             "block": "gtceu:rhyolite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:rhyolite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -114,7 +114,7 @@
         "with": [
           {
             "block": "gtceu:basalt_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -122,11 +122,11 @@
           },
           {
             "block": "gtceu:basalt_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:basalt_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -137,7 +137,7 @@
         "with": [
           {
             "block": "gtceu:andesite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -145,11 +145,11 @@
           },
           {
             "block": "gtceu:andesite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:andesite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -160,7 +160,7 @@
         "with": [
           {
             "block": "gtceu:dacite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -168,11 +168,11 @@
           },
           {
             "block": "gtceu:dacite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:dacite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -183,7 +183,7 @@
         "with": [
           {
             "block": "gtceu:shale_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -191,11 +191,11 @@
           },
           {
             "block": "gtceu:shale_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:shale_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -206,7 +206,7 @@
         "with": [
           {
             "block": "gtceu:claystone_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -214,11 +214,11 @@
           },
           {
             "block": "gtceu:claystone_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:claystone_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -229,7 +229,7 @@
         "with": [
           {
             "block": "gtceu:limestone_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -237,11 +237,11 @@
           },
           {
             "block": "gtceu:limestone_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:limestone_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -252,7 +252,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -260,11 +260,11 @@
           },
           {
             "block": "gtceu:conglomerate_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:conglomerate_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -275,7 +275,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -283,11 +283,11 @@
           },
           {
             "block": "gtceu:dolomite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:dolomite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -298,7 +298,7 @@
         "with": [
           {
             "block": "gtceu:chert_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -306,11 +306,11 @@
           },
           {
             "block": "gtceu:chert_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:chert_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -321,7 +321,7 @@
         "with": [
           {
             "block": "gtceu:chalk_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -329,11 +329,11 @@
           },
           {
             "block": "gtceu:chalk_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:chalk_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -344,7 +344,7 @@
         "with": [
           {
             "block": "gtceu:tuff_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -352,11 +352,11 @@
           },
           {
             "block": "gtceu:tuff_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:tuff_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -367,7 +367,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -375,11 +375,11 @@
           },
           {
             "block": "gtceu:quartzite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:quartzite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -390,7 +390,7 @@
         "with": [
           {
             "block": "gtceu:slate_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -398,11 +398,11 @@
           },
           {
             "block": "gtceu:slate_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:slate_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -413,7 +413,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -421,11 +421,11 @@
           },
           {
             "block": "gtceu:phyllite_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:phyllite_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -436,7 +436,7 @@
         "with": [
           {
             "block": "gtceu:schist_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -444,11 +444,11 @@
           },
           {
             "block": "gtceu:schist_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:schist_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -459,7 +459,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -467,11 +467,11 @@
           },
           {
             "block": "gtceu:gneiss_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:gneiss_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       },
@@ -482,7 +482,7 @@
         "with": [
           {
             "block": "gtceu:marble_chalcopyrite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:raw_chalcopyrite_block",
@@ -490,11 +490,11 @@
           },
           {
             "block": "gtceu:marble_zeolite_ore",
-            "weight": 2
+            "weight": 20
           },
           {
             "block": "gtceu:marble_realgar_ore",
-            "weight": 1
+            "weight": 10
           }
         ]
       }
@@ -507,15 +507,15 @@
       "blocks": [
         {
           "block": "gtceu:chalcopyrite_indicator",
-          "weight": 4
+          "weight": 40
         },
         {
           "block": "gtceu:zeolite_indicator",
-          "weight": 2
+          "weight": 20
         },
         {
           "block": "gtceu:realgar_bud_indicator",
-          "weight": 1
+          "weight": 10
         }
       ]
     }

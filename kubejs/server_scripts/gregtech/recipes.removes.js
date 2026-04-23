@@ -759,17 +759,13 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_red_granite')
 	removeMaceratorRecipe(event, 'macerate_calcite')
 	removeMaceratorRecipe(event, 'macerate_wool')
+	removeMaceratorRecipe(event, 'macerate_hay_block')
 
 	removeMaceratorRecipe(event, 'macerate_enchanting_table')
 	event.remove({ id: 'gtceu:arc_furnace/arc_enchanting_table' })
 
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
-	// TODO: uncomment with venus update
-	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_ender_air' })
-	//event.remove({ id: 'gtceu:vacuum_freezer/liquid_nether_air' })
-	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_ender_air' })
-	//event.remove({ id: 'gtceu:distillation_tower/distill_liquid_nether_air' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_firebricks' })
@@ -849,7 +845,30 @@ function removeGTCEURecipes(event) {
 	event.remove({ id : 'gtceu:shaped/titanium_large_boiler' })
 	event.remove({ id : 'gtceu:shaped/tungstensteel_large_boiler' })
 
-	
+	event.remove({ id: 'gtceu:coke_oven/coal_to_coke' })
+	event.remove({ id: 'gtceu:forge_hammer/hammer_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:forge_hammer/hammer_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'gtceu:forge_hammer/hammer_coal_refined_ore_to_dust' })
+	event.remove({ id: 'gtceu:macerator/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:macerator/macerate_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'gtceu:macerator/macerate_coal_refined_ore_to_dust' })
+	event.remove({ id: 'gtceu:sifter/sift_coal_purified_ore_to_gems' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_coal_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:centrifuge/centrifuge_coal_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:ore_washer/wash_coal_pure_dust_to_dust' })
+	event.remove({ id: 'gtceu:ore_washer/wash_coal_dirty_dust_to_dust' })
+	event.remove({ id: 'gtceu:ore_washer/wash_coal_crushed_ore_to_purified_ore' })
+	event.remove({ id: 'gtceu:ore_washer/wash_coal_crushed_ore_to_purified_ore_fast' })
+	event.remove({ id: 'gtceu:ore_washer/wash_coal_crushed_ore_to_purified_ore_distilled' })
+	event.remove({ id: 'gtceu:thermal_centrifuge/centrifuge_coal_purified_ore_to_refined_ore' })
+	event.remove({ id: 'gtceu:thermal_centrifuge/centrifuge_coal_crushed_ore_to_refined_ore' })
+	event.remove({ id: 'gtceu:shapeless/hammer_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:shapeless/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'gtceu:shapeless/purified_ore_to_dust_coal' })
+	event.remove({ id: 'gtceu:shapeless/refined_ore_to_dust_coal' })
+	event.remove({ id: 'gtceu:shapeless/crushed_ore_to_dust_coal' })
+	event.remove({ id: 'gtceu:shapeless/centrifuged_ore_to_dust_coal' })
+
 	// Snow Stuffs
 
 	event.remove({ id: 'gtceu:fluid_solidifier/snow_block' })

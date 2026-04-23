@@ -54,7 +54,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'gtceu:shaped/andesite_alloy_shaft' })
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
 
-	event.remove({ id: /^greate:(mixing|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
+	event.remove({ id: /^greate:(mixing|cutting|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
 	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })
@@ -72,6 +72,13 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/fire_charge' })
+
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
+	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
+	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
 
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_cocoa' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })

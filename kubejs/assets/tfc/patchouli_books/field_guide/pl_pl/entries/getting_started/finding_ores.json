@@ -61,7 +61,7 @@
       "type": "patchouli:text",
       "anchor": "odlewanie",
       "text": "In TerraFirmaCraft, ores each contain a certain number of $(thing)units$(), or $(thing)mB (millibuckets)$() of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide $(thing)16 mB$() of metal. In order to extract this metal, it needs to be $(thing)melted$(), and made into tools using a process called $(thing)casting$().",
-      "title": "Casting"
+      "title": "Odlewanie"
     },
     {
       "type": "patchouli:text",

@@ -33,10 +33,10 @@ function registerTFGWoodenRecipes(event) {
          * @param {string} log_wood -ID for the log wood.
          * @param {string} stripped_wood -ID for the stripped wood.
          */
-        function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence,
-            fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, chest, trapped_chest, 
+        function TFGWoodBuilder(event, name, lumber, logs, log, stripped_log, plank, stair, slab, door, trapdoor, fence, log_fence,
+            fence_gate, support, pressure_plate, button, log_wood, stripped_wood, tool_rack, workbench, bookshelf, chest, trapped_chest, 
             loom, sluice, barrel, lectern, scribing_table, sewing_table, jar_shelf, food_shelf, hanger, jarbnet, big_barrel, 
-            stomping_barrel, barrel_press, wine_shelf) {
+            stomping_barrel, barrel_press, wine_shelf, sign, hanging_sign, crafting_station, workbench_as_material) {
 
             // Stripped log from log
                 if (log && stripped_log && name) {
@@ -187,10 +187,22 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: lumber,
-                        B: plank
+                        A: plank,
+                        B: lumber
                     })
                     .id(`tfg:shaped/${name}_fence_from_lumber_and_plank`)
+                };
+
+            // Log Fence from log and lumber
+                if (log_fence && log && lumber && name) {
+                    event.shaped(`8x ${log_fence}`, [
+                        'ABA',
+                        'ABA'
+                    ], {
+                        A: log,
+                        B: lumber
+                    })
+                    .id(`tfg:shaped/${name}_log_fence_from_log_and_lumber`)
                 };
 
             // Fence gate from lumber and plank
@@ -199,8 +211,8 @@ function registerTFGWoodenRecipes(event) {
                         'ABA',
                         'ABA'
                     ], {
-                        A: plank,
-                        B: lumber
+                        A: lumber,
+                        B: plank
                     })
                     .id(`tfg:shaped/${name}_fence_gate_from_lumber_and_plank`)
                 };
@@ -277,6 +289,19 @@ function registerTFGWoodenRecipes(event) {
                     .id(`tfg:shaped/${name}_workbench`)
                 };
 
+            // Bookshelf
+                if (bookshelf && lumber && name) {
+                    event.shaped(bookshelf, [
+                        'AAA',
+                        'BBB',
+                        'AAA'
+                    ], {
+                        A: lumber,
+                        B: '#forge:rods/wooden'
+                    })
+                    .id(`tfg:shaped/${name}_bookshelf`)
+                };
+
             // Chest
                 if (chest && lumber && name) {
                     event.shaped(chest, [
@@ -334,16 +359,14 @@ function registerTFGWoodenRecipes(event) {
                 };
 
             // Lectern
-            // !!! TEMPORARY RECIPE AS BOOKSHELVES ARE STILL MISSING !!!
-                if (lectern && lumber && plank && name) {
+                if (lectern && lumber && bookshelf && name) {
                     event.shaped(lectern, [
                         'AAA',
                         ' B ',
                         ' A '
                     ], {
                         A: lumber,
-                        // B: bookshelf
-                        B: plank
+                        B: bookshelf
                     })
                     .id(`tfg:shaped/${name}_lectern`)
                 };
@@ -482,7 +505,57 @@ function registerTFGWoodenRecipes(event) {
                     })
                     .id(`tfg:shaped/${name}_wine_shelf`)
                 };
-        };
+
+            // Sign
+                if (sign && lumber && name) {
+                    event.shaped(`3x ${sign}`, [
+                        'AAA',
+                        'AAA',
+                        ' B '
+                    ], {
+                        A: lumber,
+                        B: '#forge:rods/wooden'
+                    })
+                    .id(`tfg:shaped/${name}_sign`)
+                };
+
+            // Hanging Sign
+                if (hanging_sign && lumber && name) {
+                    event.shaped(`3x ${hanging_sign}`, [
+                        'A A',
+                        'BBB',
+                        'BBB'
+                    ], {
+                        A: '#forge:chains',
+                        B: lumber
+                    })
+                    .id(`tfg:shaped/${name}_hanging_sign`)
+                };
+
+            // Crafting Station
+                if(crafting_station && lumber && workbench_as_material && name) {
+                    event.shaped(crafting_station, [
+		                'BCB',
+		                'ADA',
+		                'AEA'
+                    ], {
+		                A: lumber,
+		                B: '#forge:screws/any_bronze', 
+		                C: workbench_as_material,
+		                D: '#forge:tools/saws', 
+		                E: '#forge:tools/hammers' 
+                    }).id(`tfg:shaped/${name}_crafting_station`)
+
+                    event.shapeless(`2x ${crafting_station}_slab`, [ crafting_station ]).id(`tfg:shapeless/${name}_crafting_station_slab`)
+
+                    event.recipes.gtceu.assembler(`tfg:${name}_crafting_station`)
+		                .itemInputs(`4x ${lumber}`, '2x #forge:screws/any_bronze', workbench_as_material)
+		                .itemOutputs(crafting_station)
+		                .duration(20)
+		                .circuit(10)
+		                .EUt(GTValues.VA[GTValues.LV])
+                    };
+        }
 
     // #endregion
 
@@ -624,6 +697,108 @@ function registerTFGWoodenRecipes(event) {
 
     // #endregion
 
+    // #region TFG
+
+        global.TFG_NEW_WOOD_TYPES.forEach(wood => {
+            TFGWoodBuilder(
+                event, 
+                wood.name, 
+                `tfg:wood/lumber/${wood.name}`,
+                `#tfg:${wood.name}_logs`,
+                `tfg:wood/log/${wood.name}`,
+                `tfg:wood/stripped_log/${wood.name}`,
+                `tfg:wood/planks/${wood.name}`, 
+                `tfg:wood/stairs/${wood.name}`, 
+                `tfg:wood/slab/${wood.name}`, 
+                `tfg:wood/door/${wood.name}`, 
+                `tfg:wood/trapdoor/${wood.name}`, 
+                `tfg:wood/fence/${wood.name}`, 
+                `tfg:wood/log_fence/${wood.name}`, 
+                `tfg:wood/fence_gate/${wood.name}`, 
+                `tfg:wood/support/${wood.name}`, 
+                `tfg:wood/pressure_plate/${wood.name}`, 
+                `tfg:wood/button/${wood.name}`, 
+                `tfg:wood/wood/${wood.name}`, 
+                `tfg:wood/stripped_wood/${wood.name}`,
+                `tfg:wood/tool_rack/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`,
+                `tfg:wood/bookshelf/${wood.name}`,
+                `tfg:wood/chest/${wood.name}`,
+                `tfg:wood/trapped_chest/${wood.name}`,
+                `tfg:wood/loom/${wood.name}`,
+                `tfg:wood/sluice/${wood.name}`,
+                `tfg:wood/barrel/${wood.name}`,
+                `tfg:wood/lectern/${wood.name}`,
+                `tfg:wood/scribing_table/${wood.name}`,
+                `tfg:wood/sewing_table/${wood.name}`,
+                `tfg:wood/jar_shelf/${wood.name}`,
+                `tfg:wood/food_shelf/${wood.name}`,
+                `tfg:wood/hanger/${wood.name}`,
+                `tfg:wood/jarbnet/${wood.name}`,
+                `tfg:wood/big_barrel/${wood.name}`,
+                `tfg:wood/stomping_barrel/${wood.name}`,
+                `tfg:wood/barrel_press/${wood.name}`,
+                `tfg:wood/wine_shelf/${wood.name}`,
+                `tfg:wood/sign/${wood.name}`,
+                `tfg:wood/hanging_sign/${wood.name}`,
+                `tfg:wood/crafting_station/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`
+            )
+        })
+
+    // #endregion
+
+    // #region WAB
+
+        global.WAB_WOOD.forEach(wood => {
+            TFGWoodBuilder(
+                event, 
+                wood.name, 
+                `tfg:wood/lumber/${wood.name}`,
+                `#wan_ancient_beasts:${wood.name}_logs`,
+                `wan_ancient_beasts:${wood.name}_log`,
+                `wan_ancient_beasts:stripped_${wood.name}_log`,
+                `wan_ancient_beasts:${wood.name}_planks`, 
+                `wan_ancient_beasts:${wood.name}_stairs`, 
+                `wan_ancient_beasts:${wood.name}_slab`, 
+                `wan_ancient_beasts:${wood.name}_door`, 
+                `wan_ancient_beasts:${wood.name}_trapdoor`, 
+                `wan_ancient_beasts:${wood.name}_fence`, 
+                `tfg:wood/log_fence/${wood.name}`, 
+                `wan_ancient_beasts:${wood.name}_fence_gate`, 
+                `tfg:wood/support/${wood.name}`, 
+                `wan_ancient_beasts:${wood.name}_pressure_plate`, 
+                `wan_ancient_beasts:${wood.name}_button`, 
+                `wan_ancient_beasts:${wood.name}_wood`, 
+                `wan_ancient_beasts:stripped_${wood.name}_wood`,
+                `tfg:wood/tool_rack/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`,
+                `tfg:wood/bookshelf/${wood.name}`,
+                `tfg:wood/chest/${wood.name}`,
+                `tfg:wood/trapped_chest/${wood.name}`,
+                `tfg:wood/loom/${wood.name}`,
+                `tfg:wood/sluice/${wood.name}`,
+                `tfg:wood/barrel/${wood.name}`,
+                `tfg:wood/lectern/${wood.name}`,
+                `tfg:wood/scribing_table/${wood.name}`,
+                `tfg:wood/sewing_table/${wood.name}`,
+                `tfg:wood/jar_shelf/${wood.name}`,
+                `tfg:wood/food_shelf/${wood.name}`,
+                `tfg:wood/hanger/${wood.name}`,
+                `tfg:wood/jarbnet/${wood.name}`,
+                `tfg:wood/big_barrel/${wood.name}`,
+                `tfg:wood/stomping_barrel/${wood.name}`,
+                `tfg:wood/barrel_press/${wood.name}`,
+                `tfg:wood/wine_shelf/${wood.name}`,
+                `wan_ancient_beasts:${wood.name}_sign`,
+                `wan_ancient_beasts:${wood.name}_hanging_sign`,
+                `tfg:wood/crafting_station/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`
+            )
+        })
+
+    // #endregion
+
     // #region Ad Astra
 
         global.AD_ASTRA_WOOD.forEach(wood => {
@@ -641,6 +816,7 @@ function registerTFGWoodenRecipes(event) {
                 wood.door, 
                 wood.trapdoor, 
                 wood.fence, 
+                `tfg:wood/log_fence/${wood.name}`, 
                 wood.fence_gate, 
                 wood.support, 
                 wood.pressure_plate, 
@@ -649,6 +825,7 @@ function registerTFGWoodenRecipes(event) {
                 wood.stripped_wood,
                 `tfg:wood/tool_rack/${wood.name}`,
                 `tfg:wood/workbench/${wood.name}`,
+                `tfg:wood/bookshelf/${wood.name}`,
                 `tfg:wood/chest/${wood.name}`,
                 `tfg:wood/trapped_chest/${wood.name}`,
                 `tfg:wood/loom/${wood.name}`,
@@ -664,7 +841,11 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/big_barrel/${wood.name}`,
                 `tfg:wood/stomping_barrel/${wood.name}`,
                 `tfg:wood/barrel_press/${wood.name}`,
-                `tfg:wood/wine_shelf/${wood.name}`
+                `tfg:wood/wine_shelf/${wood.name}`,
+                `tfg:wood/sign/${wood.name}`,
+                `tfg:wood/hanging_sign/${wood.name}`,
+                `tfg:wood/crafting_station/${wood.name}`,
+                `tfg:wood/workbench/${wood.name}`
             );
         });
 
@@ -719,6 +900,7 @@ function registerTFGWoodenRecipes(event) {
                 `beneath:wood/planks/${wood}_door`, 
                 `beneath:wood/planks/${wood}_trapdoor`, 
                 null, 
+                null,
                 null, 
                 null, 
                 `beneath:wood/planks/${wood}_pressure_plate`,
@@ -742,7 +924,12 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
-                null
+                null,
+                null,
+                null,
+                null,
+                `tfg:wood/crafting_station/${wood}`,
+                `beneath:wood/planks/${wood}_workbench`
             );
         });
 
@@ -786,6 +973,7 @@ function registerTFGWoodenRecipes(event) {
                 `afc:wood/planks/${wood}_stairs`,
                 `afc:wood/planks/${wood}_slab`, 
                 null, 
+                null,
                 null, 
                 null, 
                 null, 
@@ -809,9 +997,14 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
+                null,
                 `afc:wood/stomping_barrel/${wood}`,
                 null,
-                null
+                null,
+                null,
+                null,
+                `tfg:wood/crafting_station/${wood}`,
+                `afc:wood/planks/${wood}_workbench`
             );
         });
 
@@ -968,6 +1161,7 @@ function registerTFGWoodenRecipes(event) {
                 null, 
                 null, 
                 null, 
+                null,
                 null, 
                 null, 
                 `tfc:wood/planks/${wood}_pressure_plate`,
@@ -991,7 +1185,12 @@ function registerTFGWoodenRecipes(event) {
                 null,
                 null,
                 null,
-                null
+                null,
+                null,
+                null,
+                null,
+                `tfg:wood/crafting_station/${wood}`,
+                `tfc:wood/planks/${wood}_workbench`
             );
         });
 
@@ -1052,10 +1251,16 @@ function registerTFGWoodenRecipes(event) {
                 'minecraft:bamboo_door',
                 'minecraft:bamboo_trapdoor',
                 'minecraft:bamboo_fence',
+                null,
                 'minecraft:bamboo_fence_gate',
                 null,
                 'minecraft:bamboo_pressure_plate',
                 'minecraft:bamboo_button',
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -1097,6 +1302,7 @@ function registerTFGWoodenRecipes(event) {
         // Removed recipe changes
             event.remove({ output: 'gtceu:treated_wood_door' });
             event.remove({ output: 'gtceu:treated_wood_trapdoor' });
+			event.remove({ output: 'gtceu:treated_wood_slab' });
             event.remove({ output: 'gtceu:treated_wood_stairs' });
             event.remove({ output: 'gtceu:treated_wood_fence' });
             event.remove({ output: 'gtceu:treated_wood_fence_gate' });
@@ -1117,11 +1323,17 @@ function registerTFGWoodenRecipes(event) {
                 'gtceu:treated_wood_door', 
                 'gtceu:treated_wood_trapdoor', 
                 'gtceu:treated_wood_fence', 
+                null,
                 'gtceu:treated_wood_fence_gate', 
                 null, 
                 'gtceu:treated_wood_pressure_plate', 
                 'gtceu:treated_wood_button', 
                 null, 
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,

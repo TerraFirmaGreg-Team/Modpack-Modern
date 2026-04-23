@@ -71,6 +71,7 @@ const registerTFGGemSlurryMaterials = (event) => {
         [GTMaterials.Spessartine,                       'spessartine'   ],
         [GTMaterials.Opal,                              'opal'          ],
         [GTMaterials.GarnetYellow,                      'yellow_garnet' ],
+        [GTMaterials.Realgar,                           'realgar'       ]
     ];
 
     GEM_MATERIALS.forEach(([material, name]) => {

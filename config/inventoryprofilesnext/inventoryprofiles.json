@@ -3,10 +3,12 @@
         "highlight_foused_items": {
             "value": false
         },
+        "highlight_foused_items_foreground": false,
         "villager_trading_enable": {
             "value": false
         },
         "enable_updates_check": false,
+        "highlight_clicking_slot": false,
         "first_run": false
     },
     "GuiSettings": {
@@ -20,6 +22,50 @@
             "value": false
         },
         "show_continuous_crafting_checkbox": {
+            "value": false
+        }
+    },
+    "LockedSlotsSettings": {
+        "lock_slots_switch_config_modifier": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "lock_slots_config_key": {
+            "main": {
+                "keys": ""
+            }
+        }
+    },
+    "AutoRefillSettings": {
+        "auto_refill_prefer_smaller_stacks": true,
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "allow_break_for_non_enchanted": {
+            "value": true
+        },
+        "tool_max_durability_threshold": 5000,
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        },
+        "number_of_notifications": 1,
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "audio_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
             "value": false
         }
     },

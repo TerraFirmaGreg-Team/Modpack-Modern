@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "item_predicate": {
+        "items": [
+          "create_connected:creative_fluid_vessel"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "applied_ammo_box:creative_ammo_box"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "gtceu:creative_energy"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "gtceu:creative_computation_provider"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "gtceu:creative_tank"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "gtceu:creative_chest"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "gtceu:creative_data_access_hatch"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "ae2:creative_item_cell"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "ae2:creative_fluid_cell"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "ae2:creative_energy_cell"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "create:handheld_worldshaper"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "create:creative_motor"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "create:creative_fluid_tank"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "create:creative_crate"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "create:creative_blaze_cake"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "createaddition:creative_energy"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    },
+    {
+      "item_predicate": {
+        "items": [
+          "advancedperipherals:chunk_controller"
+        ]
+      },
+      "groups": [
+        "default"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "default",
+      "properties": {}
+    }
+  ]
+}

@@ -1220,18 +1220,73 @@
 			optional: true
 			size: 1.0d
 			subtitle: "{quests.tfg_tips.creosote.subtitle}"
-			tasks: [{
-				id: "6980AF89760133FD"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
+			tasks: [
+				{
+					id: "6980AF89760133FD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
+						}
 					}
+					optional_task: true
+					title: "{quests.tfg_tips.creosote.task_creosote}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.creosote.task}"
-				type: "item"
-			}]
+				{
+					id: "44D9566297A3D4E2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil\"}}))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.creosote.task_oil}"
+					type: "item"
+				}
+				{
+					id: "77ECE0485E20212F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_light_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_light\"}}))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.creosote.task_light_oil}"
+					type: "item"
+				}
+				{
+					id: "65018DAF63ED6217"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_medium_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_medium\"}}))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.creosote.task_raw_oil}"
+					type: "item"
+				}
+				{
+					id: "2A5159D95817D555"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(gtceu:oil_heavy_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:oil_heavy\"}}))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.creosote.task_heavy_oil}"
+					type: "item"
+				}
+			]
 			title: "{quests.tfg_tips.creosote.title}"
 			x: -11.2d
 			y: 15.84d

@@ -119,6 +119,16 @@ const registerAFCBlockTags = (event) => {
 		event.removeAllTagsFrom(block)
 	})
 
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		event.add('minecraft:mineable/axe', `afc:wood/food_shelf/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/hanger/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/jarbnet/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/big_barrel/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/stomping_barrel/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/barrel_press/${wood}`)
+		event.add('minecraft:mineable/axe', `afc:wood/wine_shelf/${wood}`)
+	})
+
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_kapok")
 	event.add("afc:tappable_logs", "tfc:wood/log/kapok")
 

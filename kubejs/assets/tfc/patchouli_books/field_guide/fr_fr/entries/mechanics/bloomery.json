@@ -6,17 +6,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Un $(thing)Bas Fourneau$() est un appareil utilisé pour fondre du $(thing)Minerai de Fer$() en $(thing)Loupes Ferreuses$(), qui peuvent être travaillées en $(thing)Fer Forgé$(). L'$(l:tfg_ores/earth_vein_index#normal_hematite)Hématite$(), la $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$() et la $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnétite$() sont quelques exemples de minerais de fer communs. Ces minerais deviennent de la $(thing)Fonte$() en fondant, pas du $(thing)Fer Forgé$(). Tous les items contenant du fer deviennent de la fonte en fondant, un bas fourneau est requis pour les transformer en un fer utilisable. N'importe quel item en fer peut être utilisé dans un bas fourneau, y compris des outils en fer ou des dépites de fonte !"
+			"text": "Un $(thing)Bas Fourneau$() est un appareil utilisé pour transformer du $(thing)Minerai de fer$() en $(thing)Loupes ferreuses$(), qui peuvent être travaillées en $(thing)Fer forgé$(). L'$(l:tfg_ores/earth_vein_index#normal_hematite)Hématite$(), la $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$() et la $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnétite$() sont quelques exemples de minerais de fer communs. Ces minerais deviennent de la $(thing)Fonte$() en fondant, pas du $(thing)Fer forgé$(). Tous les items contenant du fer deviennent de la fonte en fondant, un bas fourneau est requis pour les transformer en un fer utilisable. N'importe quel item en fer peut être utilisé dans un bas fourneau, y compris des outils en fer ou des lingots de fonte !"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/bloomery",
-			"text": "Le bas fourneau est fait à partir de 8 $(thing)Doubles Plaques de Bronze$()."
+			"text": "Le bas fourneau est fait à partir de 8 $(thing)Doubles plaques de bronze$()."
 		},
 		{
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
-			"name": "Un Bas Fourneau",
+			"name": "Un bas fourneau",
 			"text": "Un bas fourneau de taille minimale. Le bloc de bas fourneau s'ouvre et se referme avec $(item)$(k:key.use)$().",
 			"enable_visualize": true
 		},
@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Si vous ne voulez pas calculer, nous recommandons d'utiliser $(item)25 poudres de minerai de métal$() et $(item)22 items de carburant$().$(br2)Après avoir rempli le bas fourneau d'un mélange de $(thing)Carburant$() et de $(thing)Minerai$(), allumez le bas fourneau et attendez 15 heures qu'il fonde le fer. Quand le bas fourneau s'éteint, il laisse un bloc de $(thing)Loupe$(). Celui-ci contient des $(thing)Loupes Ferreuse Brutes$(), qui peuvent être obtenues et minant la $(thing)Loupe$() plusieurs fois avec une pioche."
+			"text": "Si vous ne voulez pas calculer, nous recommandons d'utiliser $(item)25 poudres de minerai de métal$() et $(item)22 items de carburant$().$(br2)Après avoir rempli le bas fourneau d'un mélange de $(thing)Carburant$() et de $(thing)Minerai$(), allumez le bas fourneau et attendez 15 heures qu'il fonde le fer. Quand le bas fourneau s'éteint, il laisse un bloc de $(thing)Loupe$(). Celui-ci contient des $(thing)Loupes ferreuse brutes$(), qui peuvent être obtenues et minant la $(thing)Loupe$() plusieurs fois avec une pioche."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -58,12 +58,12 @@
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/refined_iron_bloom",
-			"text": "Les $(thing)Loupes Ferreuses Brutes$() doivent être travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Loupes Ferreuses Raffinées$()."
+			"text": "Les $(thing)Loupes ferreuses brutes$() doivent être travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Loupes ferreuses raffinées$()."
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/wrought_iron_from_bloom",
-			"text": "Les $(thing)Loupes Ferreuses Raffinées$() doivent être aussi travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Lingots de Fer Forgé$()."
+			"text": "Les $(thing)Loupes ferreuses raffinées$() doivent être aussi travaillées dans une $(l:mechanics/anvils)enclume$() pour faire des $(thing)Lingots de fer forgé$()."
 		},
 		{
 			"type": "patchouli:text",

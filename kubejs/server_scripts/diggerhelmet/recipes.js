@@ -32,7 +32,7 @@ function registerDiggerHelmetRecipes(event) {
 	], {
 		A: '#tfc:glass_bottles',
 		B: '#forge:screws/wrought_iron',
-		C: '#forge:foils/rubber'
+		C: '#tfg:rubber_foils'
 	}).id('tfg:shaped/auto_drink_modifier_rubber')
 
 	event.shapeless('diggerhelmet:silk_lining', [

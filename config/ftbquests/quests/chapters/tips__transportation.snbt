@@ -646,10 +646,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"0A92F5C4BB6AF972"
-				"2B84F34BFA37C828"
-			]
+			dependencies: ["2B84F34BFA37C828"]
 			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
 			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
 			id: "3DF4F4848B231980"

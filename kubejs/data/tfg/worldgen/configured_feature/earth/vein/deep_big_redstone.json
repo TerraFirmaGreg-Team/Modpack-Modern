@@ -3,7 +3,7 @@
   "type": "tfc:disc_vein",
   "config": {
     "height": 5,
-    "size": 46,
+    "size": 42,
     "rarity": 270,
     "density": 0.32,
     "min_y": -50,
@@ -20,15 +20,19 @@
         "with": [
           {
             "block": "gtceu:granite_redstone_ore",
-            "weight": 10
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_redstone_block",
+            "weight": 1
           },
           {
             "block": "gtceu:granite_ruby_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:granite_cinnabar_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -39,15 +43,19 @@
         "with": [
           {
             "block": "gtceu:diorite_redstone_ore",
-            "weight": 10
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_redstone_block",
+            "weight": 1
           },
           {
             "block": "gtceu:diorite_ruby_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:diorite_cinnabar_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -58,36 +66,40 @@
         "with": [
           {
             "block": "gtceu:gabbro_redstone_ore",
-            "weight": 10
+            "weight": 20
+          },
+          {
+            "block": "gtceu:raw_redstone_block",
+            "weight": 1
           },
           {
             "block": "gtceu:gabbro_ruby_ore",
-            "weight": 6
+            "weight": 12
           },
           {
             "block": "gtceu:gabbro_cinnabar_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       }
     ],
     "indicator": {
-      "rarity": 16,
+      "rarity": 22,
       "depth": 15,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
           "block": "gtceu:redstone_indicator",
-          "weight": 10
+          "weight": 20
         },
         {
           "block": "gtceu:ruby_bud_indicator",
-          "weight": 6
+          "weight": 12
         },
         {
           "block": "gtceu:cinnabar_bud_indicator",
-          "weight": 4
+          "weight": 8
         }
       ]
     }

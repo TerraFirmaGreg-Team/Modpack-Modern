@@ -308,7 +308,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify Rotor Holder to require an Assembler
 
-	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	//event.remove({ id: 'gtceu:shaped/rotor_holder_hv' }) Keep it craftable before the Assembler
 	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
@@ -434,4 +434,24 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:hv_energy_output_hatch')
 		.duration(20*20)
 		.EUt(GTValues.VA[GTValues.MV])
+
+	// Change Sterling Silver Turbine Rotor to be craftable at MV
+
+	global.modifyRecipe(event, "gtceu:assembler/assemble_sterling_silver_turbine_blade", {
+        newId: "tfg:assemble_sterling_silver_turbine_blade",
+        eut: GTValues.VA[GTValues.MV]
+    });
+
+	// Change Red Alloy in the ABS to match
+
+	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+        newId: "tfg:red_alloy",
+        fluidOutputs: { "gtceu:red_alloy": 720 }
+	});
+
+	// Change Cracker to require Cleanroom
+
+	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
+
+
 }
