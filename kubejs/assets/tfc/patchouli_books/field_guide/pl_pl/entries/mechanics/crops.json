@@ -1346,7 +1346,7 @@
 			"type": "patchouli:text",
 			"anchor": "green_bean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
-			"title": "Green Beans"
+			"title": "Zielona fasolka"
 		},
 		{
 			"type": "tfc:multimultiblock",

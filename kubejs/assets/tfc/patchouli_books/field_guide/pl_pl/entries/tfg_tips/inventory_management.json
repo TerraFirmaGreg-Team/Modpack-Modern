@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Crates",
+			"title": "Skrzynki",
 			"anchor": "crates",
 			"text": "For storage, GregTech has $(item)Crates$() which can hold all the bigger items a backpack can, and different tiers can hold more and more items.$(br2)Crates can also have $(thing)Item Filters$() and $(thing)Item Tag Filters$() put on them if you'd like to make a basic sorting system.$(br2)$(thing)Item Pipes$() don't pull by themselves though, so you'll need a $(thing)Chute$() or $(thing)Hopper$() to push into them."
 		},
