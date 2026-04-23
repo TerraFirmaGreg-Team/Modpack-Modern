@@ -3,7 +3,7 @@
 	"fallback": "tfg:mineshaft/fallback/shaft_fallback",
 	"elements": [
 		{
-			"weight": 70,
+			"weight": 50,
 			"element": {
 				"location": "tfg:mineshaft/shaft/shaft_end",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -12,7 +12,7 @@
 			}
 		},
 		{
-			"weight": 30,
+			"weight": 50,
 			"element": {
 				"element_type": "lithostitched:limited",
 				"delegate": {

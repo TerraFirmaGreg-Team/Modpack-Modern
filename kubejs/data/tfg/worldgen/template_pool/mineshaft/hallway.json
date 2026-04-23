@@ -32,19 +32,27 @@
 		{
 			"weight": 20,
 			"element": {
-				"location": "tfg:mineshaft/hallway/end_1",
-				"processors": "tfg:mineshaft/support_fixer",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"location": "tfg:mineshaft/hallway/end_1",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"allowed_depth": [3, 20]
 			}
 		},
 		{
 			"weight": 20,
 			"element": {
-				"location": "tfg:mineshaft/hallway/end_2",
-				"processors": "tfg:mineshaft/support_fixer",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"location": "tfg:mineshaft/hallway/end_2",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"allowed_depth": [4, 20]
 			}
 		},
 		{
@@ -113,10 +121,14 @@
 		{
 			"weight": 14,
 			"element": {
-				"location": "tfg:mineshaft/ladder/ladder_rubble_2",
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"location": "tfg:mineshaft/ladder/ladder_rubble_2",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
+				},
+				"allowed_depth": [4, 20]
 			}
 		},
 		{
@@ -139,6 +151,15 @@
 					"element_type": "minecraft:single_pool_element"
 				},
 				"limit": 1
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"location": "tfg:mineshaft/special/special_entrance",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
 			}
 		}
 	]

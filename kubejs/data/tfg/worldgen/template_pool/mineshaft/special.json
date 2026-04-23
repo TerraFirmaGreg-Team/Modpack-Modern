@@ -1,0 +1,19 @@
+{
+	"name": "tfg:mineshaft/shaft_end",
+	"fallback": "tfg:mineshaft/hallway",
+	"elements": [
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:mineshaft/special/ore_spawn",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"limit": 1
+			}
+		}
+	]
+}

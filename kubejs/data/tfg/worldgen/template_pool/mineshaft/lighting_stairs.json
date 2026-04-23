@@ -33,7 +33,7 @@
 			"weight": 1,
 			"element": {
 				"location": "minecraft:empty",
-				"processors": "tfg:mineshaft/support_fixer",
+				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
