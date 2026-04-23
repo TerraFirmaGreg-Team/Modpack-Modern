@@ -19,11 +19,11 @@
         "with": [
           {
             "block": "gtceu:granite_bauxite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:granite_ilmenite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_ilmenite_block",
@@ -38,11 +38,11 @@
         "with": [
           {
             "block": "gtceu:diorite_bauxite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:diorite_ilmenite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_ilmenite_block",
@@ -57,11 +57,11 @@
         "with": [
           {
             "block": "gtceu:gabbro_bauxite_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gabbro_ilmenite_ore",
-            "weight": 7
+            "weight": 14
           },
           {
             "block": "gtceu:raw_ilmenite_block",
@@ -78,11 +78,11 @@
       "blocks": [
         {
           "block": "gtceu:bauxite_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "gtceu:ilmenite_indicator",
-          "weight": 7
+          "weight": 14
         }
       ]
     }

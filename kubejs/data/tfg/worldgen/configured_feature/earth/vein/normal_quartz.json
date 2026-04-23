@@ -20,7 +20,7 @@
         "with": [
           {
             "block": "gtceu:shale_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -28,7 +28,7 @@
           },
           {
             "block": "gtceu:shale_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -39,7 +39,7 @@
         "with": [
           {
             "block": "gtceu:claystone_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -47,7 +47,7 @@
           },
           {
             "block": "gtceu:claystone_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -58,7 +58,7 @@
         "with": [
           {
             "block": "gtceu:limestone_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -66,7 +66,7 @@
           },
           {
             "block": "gtceu:limestone_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -77,7 +77,7 @@
         "with": [
           {
             "block": "gtceu:conglomerate_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -85,7 +85,7 @@
           },
           {
             "block": "gtceu:conglomerate_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -96,7 +96,7 @@
         "with": [
           {
             "block": "gtceu:dolomite_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -104,7 +104,7 @@
           },
           {
             "block": "gtceu:dolomite_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -115,7 +115,7 @@
         "with": [
           {
             "block": "gtceu:chert_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -123,7 +123,7 @@
           },
           {
             "block": "gtceu:chert_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -134,7 +134,7 @@
         "with": [
           {
             "block": "gtceu:chalk_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -142,7 +142,7 @@
           },
           {
             "block": "gtceu:chalk_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       },
@@ -153,7 +153,7 @@
         "with": [
           {
             "block": "gtceu:tuff_quartzite_ore",
-            "weight": 9
+            "weight": 90
           },
           {
             "block": "gtceu:raw_quartzite_block",
@@ -161,7 +161,7 @@
           },
           {
             "block": "gtceu:tuff_barite_ore",
-            "weight": 3
+            "weight": 30
           }
         ]
       }
@@ -174,11 +174,11 @@
       "blocks": [
         {
           "block": "gtceu:quartzite_bud_indicator",
-          "weight": 9
+          "weight": 90
         },
         {
           "block": "gtceu:barite_indicator",
-          "weight": 3
+          "weight": 30
         }
       ]
     }

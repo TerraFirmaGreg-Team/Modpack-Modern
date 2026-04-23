@@ -20,19 +20,19 @@
         "with": [
           {
             "block": "gtceu:shale_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:shale_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:shale_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:shale_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -43,19 +43,19 @@
         "with": [
           {
             "block": "gtceu:claystone_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:claystone_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:claystone_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:claystone_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -66,19 +66,19 @@
         "with": [
           {
             "block": "gtceu:limestone_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:limestone_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:limestone_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:limestone_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -89,19 +89,19 @@
         "with": [
           {
             "block": "gtceu:conglomerate_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:conglomerate_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:conglomerate_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:conglomerate_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -112,19 +112,19 @@
         "with": [
           {
             "block": "gtceu:dolomite_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:dolomite_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:dolomite_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:dolomite_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -135,19 +135,19 @@
         "with": [
           {
             "block": "gtceu:chert_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:chert_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:chert_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:chert_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -158,19 +158,19 @@
         "with": [
           {
             "block": "gtceu:chalk_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:chalk_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:chalk_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:chalk_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       },
@@ -181,19 +181,19 @@
         "with": [
           {
             "block": "gtceu:tuff_garnierite_ore",
-            "weight": 12
+            "weight": 60
           },
           {
-            "block": "gtceu:tuff_nickel_ore",
-            "weight": 4
-          },
-          {
-            "block": "gtceu:raw_nickel_block",
+            "block": "gtceu:raw_garnierite_block",
             "weight": 1
           },
           {
+            "block": "gtceu:tuff_nickel_ore",
+            "weight": 20
+          },
+          {
             "block": "gtceu:tuff_cobaltite_ore",
-            "weight": 7
+            "weight": 35
           }
         ]
       }
@@ -206,15 +206,15 @@
       "blocks": [
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 12
+          "weight": 60
         },
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 4
+          "weight": 20
         },
         {
           "block": "gtceu:cobaltite_indicator",
-          "weight": 7
+          "weight": 35
         }
       ]
     }

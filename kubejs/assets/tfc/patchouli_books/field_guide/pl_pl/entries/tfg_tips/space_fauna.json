@@ -24,7 +24,7 @@
 			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
 			"scale": 1.3,
 			"offset": -0.3,
-			"name": "Moon Rabbit",
+			"name": "Królik księżycowy",
 			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth rabbits. They also eat Chorus Fruit."
 		},
 		{
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Charger",
+			"title": "Ładowarka",
 			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
 		},
 		{
@@ -174,7 +174,7 @@
 			"entity": "wan_ancient_beasts:crusher",
 			"scale": 0.5,
 			"offset": 0.5,
-			"name": "Crusher",
+			"name": "Kruszarka",
 			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
 		},
 		{

@@ -227,8 +227,8 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 3
-		#Determines whether void upgrade allows voiding anything or it only has overflow option
-		voidAnythingEnabled = true
+		#Determines whether void upgrade allows voiding always or it only has overflow options
+		voidAlwaysEnabled = true
 
 	#Advanced Void Upgrade Settings
 	[server.advancedVoidUpgrade]
@@ -238,13 +238,13 @@
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 4
-		#Determines whether void upgrade allows voiding anything or it only has overflow option
-		voidAnythingEnabled = true
+		#Determines whether void upgrade allows voiding always or it only has overflow options
+		voidAlwaysEnabled = true
 
 	#Stack Upgrade Settings
 	[server.stackUpgrade]
 		#List of items that are not supposed to stack in storage even when stack upgrade is inserted. Item registry names are expected here.
-		nonStackableItems = ["minecraft:bundle", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+		nonStackableItems = ["minecraft:bundle", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box", "sns:leather_sack", "sns:ore_sack", "tfc:ceramic/vessel", "tfc:ceramic/black_glazed_vessel", "tfc:ceramic/blue_glazed_vessel", "tfc:ceramic/brown_glazed_vessel", "tfc:ceramic/cyan_glazed_vessel", "tfc:ceramic/gray_glazed_vessel", "tfc:ceramic/green_glazed_vessel", "tfc:ceramic/light_blue_glazed_vessel", "tfc:ceramic/light_gray_glazed_vessel", "tfc:ceramic/lime_glazed_vessel", "tfc:ceramic/magenta_glazed_vessel", "tfc:ceramic/orange_glazed_vessel", "tfc:ceramic/pink_glazed_vessel", "tfc:ceramic/purple_glazed_vessel", "tfc:ceramic/red_glazed_vessel", "tfc:ceramic/white_glazed_vessel", "tfc:ceramic/yellow_glazed_vessel"]
 
 	#Smelting Upgrade Settings
 	[server.smeltingUpgrade]

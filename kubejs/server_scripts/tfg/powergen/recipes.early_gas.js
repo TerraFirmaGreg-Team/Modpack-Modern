@@ -14,11 +14,17 @@ function registerTFGEarlyGasRecipes(event) {
 		.heated()
 		.id('tfg:vi/vacuumizing/syngas_from_charcoal')
 
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 200), ['minecraft:coal', Fluid.of('gtceu:creosote', 250)])
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 200), ['tfc:ore/lignite', Fluid.of('gtceu:creosote', 250)])
 		.secondaryFluidOutput(0)
 		.processingTime(4000)
 		.heated()
-		.id('tfg:vi/vacuumizing/syngas_from_coal')
+		.id('tfg:vi/vacuumizing/syngas_from_lignite')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['tfc:ore/bituminous_coal', Fluid.of('gtceu:creosote', 250)])
+		.secondaryFluidOutput(0)
+		.processingTime(4000)
+		.heated()
+		.id('tfg:vi/vacuumizing/syngas_from_bituminous_coal')
 	
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:syngas', 400), ['gtceu:coke_gem', Fluid.of('gtceu:creosote', 250)])
 		.secondaryFluidOutput(0)
@@ -39,10 +45,17 @@ function registerTFGEarlyGasRecipes(event) {
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.LV])
 
-	event.recipes.gtceu.brewery('tfg:syngas_from_coal')
-		.itemInputs('minecraft:coal')
+	event.recipes.gtceu.brewery('tfg:syngas_from_lignite')
+		.itemInputs('tfc:ore/lignite')
 		.inputFluids('gtceu:creosote 250')
 		.outputFluids('tfg:syngas 200')
+		.duration(20*15)
+		.EUt(GTValues.VHA[GTValues.LV])
+
+	event.recipes.gtceu.brewery('tfg:syngas_from_bituminous_coal')
+		.itemInputs('tfc:ore/bituminous_coal')
+		.inputFluids('gtceu:creosote 250')
+		.outputFluids('tfg:syngas 400')
 		.duration(20*15)
 		.EUt(GTValues.VHA[GTValues.LV])
 
@@ -85,23 +98,44 @@ function registerTFGEarlyGasRecipes(event) {
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])
 
-	// Coal
+	// Lignite
 
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal')
-		.itemInputs(Item.of('minecraft:coal', 10))
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_lignite')
+		.itemInputs(Item.of('tfc:ore/lignite', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*64)
 		.circuit(1)
 		.EUt(GTValues.VHA[GTValues.MV])
 
-	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_coal_hydrogen')
-		.itemInputs(Item.of('minecraft:coal', 10))
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_lignite_hydrogen')
+		.itemInputs(Item.of('tfc:ore/lignite', 10))
 		.inputFluids(Fluid.of('gtceu:creosote', 4000))
 		.perTick(true)
 		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
 		.perTick(false)
 		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 6400), Fluid.of('tfg:raw_aromatic_mix', 4000))
+		.duration(20*32)
+		.circuit(2)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	// Bituminous Coal
+		
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_bituminous')
+		.itemInputs(Item.of('tfc:ore/bituminous_coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 4000))
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 9600), Fluid.of('tfg:raw_aromatic_mix', 4000))
+		.duration(20*64)
+		.circuit(1)
+		.EUt(GTValues.VHA[GTValues.MV])
+
+	event.recipes.gtceu.coal_liquefaction_tower('tfg:raw_aromatic_mix_bituminous_hydrogen')
+		.itemInputs(Item.of('tfc:ore/bituminous_coal', 10))
+		.inputFluids(Fluid.of('gtceu:creosote', 4000))
+		.perTick(true)
+		.chancedFluidInput(Fluid.of('gtceu:hydrogen', 1), 1000, 0)
+		.perTick(false)
+		.outputFluids(Fluid.of('gtceu:coal_tar', 1000), Fluid.of('tfg:syngas', 9600), Fluid.of('tfg:raw_aromatic_mix', 4000))
 		.duration(20*32)
 		.circuit(2)
 		.EUt(GTValues.VHA[GTValues.MV])

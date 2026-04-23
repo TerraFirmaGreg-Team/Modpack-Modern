@@ -11,6 +11,7 @@
 .vs/
 .vscode/
 .idea/
+kubejs/jsconfig.json
 package.g.props
 node_modules/
 Modpack-Modern.sln
@@ -102,6 +103,7 @@ defaultconfigs/ftbranks/players.snbt
 /schematics
 /scripts
 /gtceu
+/mods
 
 # Client data
 bansoukou
@@ -137,4 +139,3 @@ libEffekseerNativeForJava.so
 # .pakku/server-overrides/scripts
 # .pakku/server-overrides/mods
 # .pakku/server-overrides/user_jvm_args.txt
-

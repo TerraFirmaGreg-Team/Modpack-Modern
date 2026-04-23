@@ -2,6 +2,19 @@
 	"block.deafission.fission_reactor_mk1": "Reaktor jądrowy gen. I",
 	"block.deafission.fission_reactor_mk2": "Reaktor jądrowy gen. II",
 	"block.deafission.fission_reactor_smr1": "Mały reaktor jądrowy gen. I",
+	"block.deafission.fuel_holder": "Pojemnik na paliwo",
 	"deafission.fission_reactor.gui.coolant": "Chłodziwo %s mB/t",
-	"emi.deafission.throttle_component_key": "Prędkość:"
+	"deafission.fission_reactor.gui.recipe": "Przepis: %s",
+	"deafission.overlay.hb_energy": "%s HU",
+	"deafission.recipe.temp": "Temp: %s°",
+	"emi.deafission.efficiency_component_value": "%d",
+	"emi.deafission.heat_component_value": "%d°",
+	"emi.deafission.thermal_component_value_temp": "Temp: %d°",
+	"emi.deafission.throttle_component_key": "Prędkość:",
+	"emi.deafission.throttle_component_value": "%d",
+	"item.deafission.fuelcell_plutonium_x1": "Pręt paliwowy z plutonu",
+	"item.deafission.fuelcell_thorium_x1": "Pręt paliwowy z toru",
+	"item.deafission.fuelcell_uranium_x1": "Pręt paliwowy z uranu",
+	"tooltip.deafission.fuelcell.heat": "Ciepło: %s%%",
+	"tooltip.deafission.fuelcell.rodcount": "Pręty: %s"
 }

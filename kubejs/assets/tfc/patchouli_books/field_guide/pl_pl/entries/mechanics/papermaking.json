@@ -1,5 +1,5 @@
 {
-    "name": "Papermaking",
+    "name": "Produkcja papieru",
     "category": "tfc:mechanics",
     "icon": "tfc:unrefined_paper",
     "pages": [
@@ -45,7 +45,7 @@
         "type": "patchouli:text",
         "anchor": "parchment",
         "text": "$(thing)Parchment Paper$() starts with a scraped hide. Review the $(l:mechanics/leather_making)leather making chapter$() to learn how to make it. Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), or from $(l:mechanics/sluices)Sluicing$() or $(l:mechanics/panning)Panning$() ore deposits with Andesite, Rhyolite, or Dacite in them.",
-        "title": "Parchment"
+        "title": "Pergamin"
       },
       {
         "type": "patchouli:multiblock",
@@ -62,7 +62,7 @@
             "X": "tfc:groundcover/pumice"
           }
         },
-        "name": "Pumice",
+        "name": "Pumeks",
         "text": "A Pumice rock placed on the ground.",
         "enable_visualize": false
       },

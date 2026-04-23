@@ -25,7 +25,7 @@
         "with": [
           {
             "block": "gtceu:quartzite_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -33,15 +33,15 @@
           },
           {
             "block": "gtceu:quartzite_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:quartzite_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:quartzite_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -52,7 +52,7 @@
         "with": [
           {
             "block": "gtceu:slate_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -60,15 +60,15 @@
           },
           {
             "block": "gtceu:slate_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:slate_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:slate_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -79,7 +79,7 @@
         "with": [
           {
             "block": "gtceu:phyllite_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -87,15 +87,15 @@
           },
           {
             "block": "gtceu:phyllite_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:phyllite_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:phyllite_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -106,7 +106,7 @@
         "with": [
           {
             "block": "gtceu:schist_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -114,15 +114,15 @@
           },
           {
             "block": "gtceu:schist_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:schist_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:schist_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -133,7 +133,7 @@
         "with": [
           {
             "block": "gtceu:gneiss_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -141,15 +141,15 @@
           },
           {
             "block": "gtceu:gneiss_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:gneiss_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:gneiss_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       },
@@ -160,7 +160,7 @@
         "with": [
           {
             "block": "gtceu:marble_lazurite_ore",
-            "weight": 5
+            "weight": 10
           },
           {
             "block": "gtceu:raw_lazurite_block",
@@ -168,15 +168,15 @@
           },
           {
             "block": "gtceu:marble_sodalite_ore",
-            "weight": 4
+            "weight": 8
           },
           {
             "block": "gtceu:marble_lapis_ore",
-            "weight": 3
+            "weight": 6
           },
           {
             "block": "gtceu:marble_calcite_ore",
-            "weight": 3
+            "weight": 6
           }
         ]
       }
@@ -189,19 +189,19 @@
       "blocks": [
         {
           "block": "gtceu:lazurite_bud_indicator",
-          "weight": 5
+          "weight": 10
         },
         {
           "block": "gtceu:sodalite_bud_indicator",
-          "weight": 4
+          "weight": 8
         },
         {
           "block": "gtceu:lapis_bud_indicator",
-          "weight": 3
+          "weight": 6
         },
         {
           "block": "gtceu:calcite_indicator",
-          "weight": 3
+          "weight": 6
         }
       ]
     }

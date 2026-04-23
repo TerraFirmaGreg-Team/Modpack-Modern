@@ -1,7 +1,7 @@
 {
     "name": "TerraFirmaGreg-Modern",
     "version": "DEV",
-    "release_type": "alpha",
+    "release_type": "release",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -9,11 +9,17 @@
         "defaultconfigs",
         "kubejs",
         "tacz",
+        "!kubejs/.prettierrc",
+        "!kubejs/eslint.config.js",
+        "!kubejs/package-lock.json",
+        "!kubejs/package.json",
+        "!kubejs/tsconfig.json",
         "!kubejs/probe/**",
         "!kubejs/assets/**",
         "!defaultconfigs/tfc-server.toml",
-        "!config/ftbbackups2.json",
-        "!defaultconfigs/ftbranks/ranks.snbt"
+        "!defaultconfigs/ftbranks/ranks.snbt",
+        "!config/ftbbackups2.json"
+        
     ],
     "server_overrides": [
     ],

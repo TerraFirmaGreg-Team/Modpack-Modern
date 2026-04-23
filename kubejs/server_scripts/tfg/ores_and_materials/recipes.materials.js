@@ -195,6 +195,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	if (tfcProperty !== null) {
 
 		event.recipes.tfc.welding(TFC.isp.of(outputItem).copyHeat(), inputItem1, inputItem2, tfcProperty.getTier() - 1)
+			.combine_forging_bonus(true)
 			.id(`tfc:welding/${id}`);
 
 		compactingTier = tfcProperty.getTier() < tierThreshold ? 0 : 1;
@@ -346,7 +347,7 @@ function registerTFGMaterialRecipes(event) {
 		}
 
 		const oreProperty = material.getProperty(PropertyKey.ORE);
-		if (oreProperty !== null) {
+		if (oreProperty !== null && material !== GTMaterials.Coal && material != GTMaterials.get('lignite')) {
 			processSmallOre(event, material)
 			processPoorRawOre(event, material)
 			processNormalRawOre(event, material)

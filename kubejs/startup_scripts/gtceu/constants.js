@@ -235,6 +235,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:thorium_plate",
     "gtceu:thorium_rod",
 
+    // Coal
+    "gtceu:crushed_coal_ore",
+    "gtceu:purified_coal_ore",
+    "gtceu:refined_coal_ore",
+    "gtceu:impure_coal_dust",
+    "gtceu:pure_coal_dust",
+
     // Replaced with our own
     "gtceu:paracetamol_pill",
     "gtceu:rad_away_pill",

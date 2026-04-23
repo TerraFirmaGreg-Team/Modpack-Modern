@@ -45,6 +45,8 @@ function registerTFGHeatData(event) {
 
 	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
+	event.itemHeat('tfg:food/popcorn', 1.0, null, null);
+	event.itemHeat('tfg:food/buttered_popcorn', 1.0, null, null);
 	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);
@@ -350,7 +352,7 @@ function registerTFGItemSize(event) {
 		]),
 		"normal",
 		"medium",
-		"Molds"
+		"molds"
 	)
 
 	//Universal Compost Bags
@@ -361,7 +363,29 @@ function registerTFGItemSize(event) {
 	event.itemSize("create:honeyed_apple", "small", "light")
 
 	//Crafting Station
-	event.itemSize("craftingstation:crafting_station", "large", "heavy", "crafting_station");
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.WAB_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.BENEATH_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.TFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
 }
 
 //#endregion

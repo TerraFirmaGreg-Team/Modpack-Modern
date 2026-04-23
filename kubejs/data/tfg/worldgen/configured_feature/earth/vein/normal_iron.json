@@ -20,11 +20,11 @@
         "with": [
           {
             "block": "gtceu:rhyolite_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:rhyolite_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -40,11 +40,11 @@
         "with": [
           {
             "block": "gtceu:basalt_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:basalt_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -59,11 +59,11 @@
         "with": [
           {
             "block": "gtceu:andesite_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:andesite_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -78,11 +78,11 @@
         "with": [
           {
             "block": "gtceu:dacite_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:dacite_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -97,11 +97,11 @@
         "with": [
           {
             "block": "gtceu:shale_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:shale_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -116,11 +116,11 @@
         "with": [
           {
             "block": "gtceu:claystone_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:claystone_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -135,11 +135,11 @@
         "with": [
           {
             "block": "gtceu:limestone_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:limestone_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -154,11 +154,11 @@
         "with": [
           {
             "block": "gtceu:conglomerate_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:conglomerate_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -173,11 +173,11 @@
         "with": [
           {
             "block": "gtceu:dolomite_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:dolomite_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -192,11 +192,11 @@
         "with": [
           {
             "block": "gtceu:chert_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:chert_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -211,11 +211,11 @@
         "with": [
           {
             "block": "gtceu:chalk_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:chalk_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -230,11 +230,11 @@
         "with": [
           {
             "block": "gtceu:tuff_hematite_ore",
-            "weight": 4
+            "weight": 40
           },
           {
             "block": "gtceu:tuff_yellow_limonite_ore",
-            "weight": 7
+            "weight": 70
           },
           {
             "block": "gtceu:raw_yellow_limonite_block",
@@ -251,11 +251,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_hematite",
-          "weight": 4
+          "weight": 40
         },
         {
           "block": "tfc:ore/small_limonite",
-          "weight": 7
+          "weight": 70
         }
       ]
     }

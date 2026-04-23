@@ -2,9 +2,39 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.5] - 18-04-2026
+- We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
+- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Changes
+- The Cracker is now post-cleanroom @TomPlop
+### Bug fixes
+- Fixed a crash on Linux and MacOS
+- Fixed krummholz replacing parts of trees and other blocks @Pyritie
+- Fixed the amount of Red Alloy made in an ABS (#3829) @TomPlop
+- Fixed loose rocks generating on sea ice @Pyritie
+- Fixed Molybdenum Silicon Boron in the OLA being uncraftble @TomPlop
+
+## [0.12.4] - 18-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Breaking Changes
+- Generic "Coal" no longer exists. It's been replaced with TFC's Lignite and Bituminous Coal. Existing raw coal ore should automatically turn into bituminous coal, other items should have shapeless crafting recipes into bituminous coal, and coal ore blocks in your world should also be bituminous coal. You can use lignite and bituminous coal in all of the same ways you used to use raw coal ore as well as the vanilla coal items. This also means coal ore processing has been removed. (#3808) @Pyritie
+### Changes
 - Bloomery now only works with charcoal again @TomPlop
+- Added new malaysian-inspired illages for hot and humid climates (#3810, #3814) @Filiipa
+- Upgraded the EMI Ore Vein Info tab @Pyritie
+- Changed piglin bartering from Cinnabar to Redstone @Pyritie
+- Fixed Create hats for TFC's passive and neutral mobs (#3794) @Astrimitsu
+- You can now use oil, raw oil, light oil, and heavy oil as lamp fuel (#3790) @SakuraKitsurugi
+- Made the in-world natural gas vent indicator feature less common @Pyritie
+- You can now eat ice shavings for hydration @Pyritie
+- Hornfels now drop themselves when mined @Pyritie
+- Olive oil is no longer a steam boiler fuel, only a boiler booster @TomPlop
+- All shore biomes are no longer valid for spawning, so you shouldn't start on a tiny deserted island any more @Pyritie
 ### Bug fixes
 - Fixed not being able to eat ice shavings @Pyritie
+- Fixed not being able to use chiseled bricks in gregtech facades (#3807) @Astrimitsu
 
 ## [0.12.3] - 12-04-2026
 ### Changes

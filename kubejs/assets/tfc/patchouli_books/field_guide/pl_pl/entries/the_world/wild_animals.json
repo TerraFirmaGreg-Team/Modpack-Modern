@@ -136,7 +136,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Bison",
+			"name": "Bizon",
 			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
 		},
 		{
@@ -225,14 +225,14 @@
 			"type": "patchouli:entity",
 			"entity": "tfg:jerboa",
 			"scale": 1.2,
-			"name": "Jerboa",
+			"name": "Skoczek",
 			"text": "The jerboa spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:mongoose",
 			"scale": 0.8,
-			"name": "Mongoose",
+			"name": "Mangusta",
 			"text": "The mongoose spawns at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
 		},
 		{
@@ -256,7 +256,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:turtle",
 			"scale": 0.7,
-			"name": "Sea Turtle",
+			"name": "Żółw morski",
 			"text": "The sea turtle likes warm water. It spawns in $(l:the_world/climate#temperature)temperature$() of at least 21°C and $(l:the_world/climate#rainfall)rainfall$() of at least 250mm."
 		},
 		{

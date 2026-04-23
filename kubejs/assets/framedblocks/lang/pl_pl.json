@@ -1,7 +1,13 @@
 {
+  "desc.framedblocks.blueprint_false": "fałsz",
   "desc.framedblocks.blueprint_invalid": "Nieprawidłowy",
   "desc.framedblocks.blueprint_none": "Żaden",
+  "msg.framedblocks.lock_state.locked": "zablokowany",
+  "msg.framedblocks.powered_saw.status": "Status: ",
+  "msg.framedblocks.powered_saw.status.no_recipe": "Brak przepisu",
   "msg.framedblocks.powered_saw.status.ready": "Gotowe do gotowania",
+  "title.framedblocks.powered_saw.target_block": "Cel:",
+  "title.framedblocks.sign.edit": "Edytuj znak",
   "tooltip.framedblocks.one_way_window.dir.down": "Dół",
   "tooltip.framedblocks.one_way_window.dir.east": "Wschód",
   "tooltip.framedblocks.one_way_window.dir.north": "Północ",
@@ -15,5 +21,12 @@
   "tooltip.framedblocks.one_way_window.face.south": "Południe",
   "tooltip.framedblocks.one_way_window.face.up": "Góra",
   "tooltip.framedblocks.one_way_window.face.west": "Zachód",
+  "tooltip.framedblocks.one_way_window.face_abbr.down": "D",
+  "tooltip.framedblocks.one_way_window.face_abbr.east": "W",
+  "tooltip.framedblocks.one_way_window.face_abbr.none": "-",
+  "tooltip.framedblocks.one_way_window.face_abbr.north": "Płn",
+  "tooltip.framedblocks.one_way_window.face_abbr.south": "Pd",
+  "tooltip.framedblocks.one_way_window.face_abbr.up": "G",
+  "tooltip.framedblocks.one_way_window.face_abbr.west": "Z",
   "tooltip.framedblocks.y_slope.horizontal": "poziomo"
 }

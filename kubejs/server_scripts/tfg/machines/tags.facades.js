@@ -9,7 +9,7 @@ function registerTFGFacadeWhitelistItemTags(event) {
 		'#tfc:rock/smooth',
 		'#tfc:rock/gravel',
 		'#tfc:rock/cracked_bricks',
-		'#tfc:rock/chiseled',
+		'#tfc:rock/chiseled_bricks',
 		'#tfc:rock/raw',
 		'#tfc:metal_plated_blocks',
 		'#tfc:dirt',

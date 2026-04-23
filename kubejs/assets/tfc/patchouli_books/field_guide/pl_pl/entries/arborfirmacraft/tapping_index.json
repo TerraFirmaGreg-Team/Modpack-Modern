@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "maple",
-			"title": "Maple",
+			"title": "Klon",
 			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -8.4°C$(br)$(thing)Maximum Temperature$(): 8°C$(br)$(thing)Minimum Rainfall$(): 240$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "birch",
-			"title": "Birch",
+			"title": "Brzoza",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
@@ -95,7 +95,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "aspen",
-			"title": "Aspen",
+			"title": "Osika",
 			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): -1.1°C$(br)$(thing)Minimum Rainfall$(): 350$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
@@ -111,7 +111,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "spruce",
-			"title": "Spruce",
+			"title": "Świerk",
 			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"

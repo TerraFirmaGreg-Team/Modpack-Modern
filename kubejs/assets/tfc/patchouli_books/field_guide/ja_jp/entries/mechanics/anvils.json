@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Anvils",
+  "name": "金床",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/anvil/copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:mechanics/anvils#working)Working$() is done to form one piece of metal into another, and $(l:getting_started/primitive_anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+      "text": "金床は金属加工に欠かせない作業台です。主に$(br2)$(l:mechanics/anvils#working)鍛造$()と$(l:getting_started/primitive_anvils#welding)溶接$()の2つの作業に使います。$(br2)$(l:mechanics/anvils#working)鍛造$()、インゴットを叩いて実用的な形に加工することです。$(l:getting_started/primitive_anvils#welding)溶接$()は2つの金属アイテムを一体化させるための工程です。"
     },
     {
       "type": "patchouli:multiblock",
@@ -24,84 +24,84 @@
         }
       },
       "name": "",
-      "text": "All types of metal anvils.",
+      "text": "全種類の金床",
       "enable_visualize": false
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Anvils can be crafted with $(thing)double ingots$() of their respective metal. For your first anvil, you must first $(l:getting_started/primitive_anvils#welding)weld$() double ingots on a $(l:getting_started/primitive_anvils)stone anvil$()."
+      "text": "金床は、対応する金属の$(thing)ダブルインゴット$()を使って作成します。最初の金床を作るには、$(l:getting_started/primitive_anvils)石の金床$()で$(l:getting_started/primitive_anvils#welding)溶接$()することによってダブルインゴットを作成する必要があります。"
     },
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Anvils each have a $(thing)tier$(), which defines what types of material they can work and weld. An anvil can work metals of its current tier, and it can weld metals that are one tier higher.$(br)$(li)$(bold)Tier 0$(): Stone Anvils$(li)$(bold)Tier I$(): Copper$(li)$(bold)Tier II$(): Bismuth Bronze, Black Bronze, Bronze$(li)$(bold)Tier III$(): Wrought Iron$(li)$(bold)Tier IV$(): Steel$(li)$(bold)Tier V$(): Black Steel$(li)$(bold)Tier VI$(): Red Steel, Blue Steel"
+      "text": "金床にはそれぞれ$(thing)等級$()があり、その金床で扱える金属の種類は金床の等級によって決まります。金床は同じ等級の金属を鍛造することができ、1段階上の等級の金属を溶接することができます。$(br)$(li)$(bold)等級０$(): 石の金床$(li)$(bold)等級１$(): 銅$(li)$(bold)等級２$(): ビスマスブロンズ・ブラックブロンズ・青銅$(li)$(bold)等級３$(): 錬鉄$(li)$(bold)等級４$(): 鋼鉄$(li)$(bold)等級５$(): 黒鋼$(li)$(bold)等級６$(): 赤鋼・青鋼"
     },
     {
       "type": "patchouli:text",
       "anchor": "working",
-      "text": "In order to work an item on the anvil, you will need to use the anvil, to open up the anvil interface, seen to the right. On the left, there are two input slots for items - for working, the target item must be in the right hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-      "title": "Working"
+      "text": "金床でアイテムを鍛造するには、まず金床をのGUIを開きます。左側には2つのスロットがあり、鍛造したいアイテムは左側の2つのスロットの右スロットに入れます。鍛造するにはハンマーも必要です。金床GUIの右側にあるハンマースロットにセットするか、$(bold)または$()手に持って使用します。鍛造作業をしているうちにハンマーの耐久は少しずつ減っていきます。",
+      "title": "鍛造"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/anvil_empty.png"
       ],
-      "text": "The anvil interface.",
+      "text": "金床GUI",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan - the scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+      "text": "次に、金床GUIの$(thing)レシピ$()ボタン（左側の2つのスロットの上のボタン）から作りたいものをを選び、どのアイテムを作るか決めます。$(item)$(k:key.attack)$()で一覧を開き、その中から作りたいアイテムを選択します。すると金床GUIに戻り、作成内容が設定された状態になります。レシピボタンには現在作っているアイテムが表示され、$(thing)ルール$()と$(thing)ターゲット$()も表示されます。"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/anvil_in_use.png"
       ],
-      "text": "After selecting to create a pickaxe.",
+      "text": "ピッケルの作成を選択した画面。",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "In the middle of the anvil screen, there is a bar with two colored indicators. The $(2)green$() pointer, is your current working progress. The $(4)red$() pointer, is the target. Your goal is to line up the current progress, with the target.$(br2)In order to do this, you can use the $(2)green$() and $(4)red$() action buttons, which move your current progress a certain amount, depending on the action taken.",
-      "title": "Targets"
+      "text": "金床GUIの下部中央には、2色のインジケーターが付いたメーターがあります。$(2)緑$()矢印は現在の作業の進行状況で、$(4)赤$()矢印がターゲットを示しています。この2つをぴったり重ねるのが目標です。$(br2)そのために、$(2)緑$()と$(4)赤$()のアクションボタンを使って進行状況を調整します。選んだアクションによって、進行度が決まった量だけ動きます。",
+      "title": "ターゲット"
     },
     {
       "type": "patchouli:text",
-      "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item - you will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+      "text": "$(2)緑$()アクションは進行状況を$(bold)右$()に動かし、$(4)赤$()アクションは進行状況を$(bold)左$()へ動かします。もし進行状況がメーターの外に出てしまうと加工失敗となり、元のアイテムは失われます。さらに鍛造を完了させるには、$(thing)ルール$()の条件も満たす必要があります…"
     },
     {
       "type": "patchouli:text",
-      "text": "The $(thing)rules$(), are the two or three icons shown on the top of the anvil interface. They represent specific actions that must be taken, at specific times, in order for your working to be a success. For example, a rule could be $(2)Bend Second Last$(), meaning the second to last action you take $(bold)must$() be a $(2)Bend$() action.",
-      "title": "Working Rules"
+      "text": "$(thing)ルール$()とは、金床画面の上部に表示される2～3個のアイコンです。これは、鍛造を成功させアイテムの作成を完了させるための条件を示しています。つまり、鍛造を完了するためには上に指定された順番でアクションを行うことにより緑と赤の矢印を一致させる必要があるということです。例えばルールで「$(2)$曲げる：最後から2番目に()」と指定されていた場合は、最後から2番目のアクションは「$(2)曲げる$()」でなければならないという意味です。",
+      "title": "鍛造におけるルール"
     },
     {
       "type": "patchouli:text",
-      "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+      "text": "直前の3回分のアクションはルールの下に表示されます。それがルールのとおりになっていた場合は、該当ルールが緑色になります。すべてのルールを満たして緑と赤矢印が一致していたら鍛造成功です！$(br2)また、アイテムの$(l:mechanics/heating)温度$()管理も重要です。金属はツールチップに「鍛造可能」と表示される温度以上でないと鍛造できません。途中で取り出して再加熱してもそのアイテムに進行状況は残るため、続きから行うことができます。"
     },
     {
       "type": "patchouli:text",
-      "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items, such as tool heads, when they are worked in a low or minimal amount of steps, receive a Forging Bonus based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.",
-      "title": "Forging Bonuses"
+      "text": "ここまでの話を聞いて鍛造は手順が多く面倒だと感じたかもしれません。ですが鍛造にはその手間に見合ったメリットがあります。ツールヘッドなどは、少ない手数で鍛造すると「鍛造ボーナス」が付き、そのボーナス応じて性能が向上します。このボーナスは、その部品を使ってツールを作った際にも適応されます。",
+      "title": "鍛造ボーナス"
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
-      "title": "Perfectly Forged",
+      "title": "完璧な鍛造",
       "link_recipes": false,
-      "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
+      "text": "鍛造ボーナスには4段階あります：$(li)不十分な鍛造$(li)良い鍛造$(li)巧みな鍛造$(li)完璧な鍛造$(br2)鍛造にかけた手数が少ないほど高い段階のものが完成し、段階が高いほどツールの性能が向上します。たとえば、耐久が上がったり採掘速度が速くなったり、武器なら攻撃力が上がるなどの効果が得られます（効果はツールごとに異なります）。"
     },
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)Stone Anvil$() or a metal anvil.$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
-      "title": "Welding"
+      "text": "溶接は、2つのアイテムを接合して別のアイテムを作る工程です。$(l:getting_started/primitive_anvils)石の金床$()でも$(l:mechanics/anvils)金属の金床$()でも、やり方は共通です。$(br2)まずは溶接したいアイテム2つ（インゴットやプレートなど）を金床に置きます。直接使用して置くか、GUIを開いて左側の2スロットに入れることでセットできます。",
+      "title": "溶接"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)Hammer$() on the anvil. You will hear a hammering sound and the items will be welded together. They can then be extracted by using $(item)$(k:key.use)$() on the anvil with an empty hand."
+      "text": "また、溶接を行うには、金床に$(l:mechanics/flux)融剤$()を少なくとも1つ入れておく必要があります。そのうえで、溶接するアイテムが両方とも$(l:mechanics/heating)溶接可能な温度$()（ツールチップに「溶接可能」と表示）になっている状態で、$(thing)ハンマー$()を持ちShift+右クリックで叩くかGUIの「Weld」ボタンを押します。すると打撃音とともにアイテムが溶接されます。"
     }
   ],
   "read_by_default": true,

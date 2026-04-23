@@ -22,7 +22,7 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
+      "name": "Dzika pszenica",
       "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
       "enable_visualize": false
     },
@@ -32,7 +32,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Wszystkie odmiany dzikich roślin",
       "multiblocks": [
         {
           "pattern": [
@@ -318,30 +318,30 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "text": "Dzikie plony występują w klimatach, w których mona je uprawiać, więc konkretnych upraw, przyjrzyj się klimatowi, w którym można uprawiać.\nW przeciwieństwie $(l:mechaniki/Plony)Plonów$() zasadzonych przez gracza dzikie plony nie wymagają $(l:mechaniki/nawodnienie)Nawodnienia$().Zmiast tego znajdują się w zależności od średniej $()Temperatury$() i $()opadów$().",
+      "title": "Znajdowanie dzikich roślin"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Następna strony pokazują tabele środowisk, gdzie występują dzikie plony."
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Plon",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Opady deszczu (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Jęczmień"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Owies"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Żyto"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Kukurydza"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Pszenica"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Ryż"
         },
         {
           "text": " 15 - 30"
@@ -395,7 +395,7 @@
           "text": "100 - 500"
         },
         {
-          "text": "Beet"
+          "text": "Burak"
         },
         {
           "text": " -5 - 20"
@@ -404,7 +404,7 @@
           "text": " 70 - 300"
         },
         {
-          "text": "Cabbage"
+          "text": "Kapusta"
         },
         {
           "text": "-10 - 27"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Marchew"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Czosnek"
         },
         {
           "text": "-20 - 18"
@@ -431,7 +431,7 @@
           "text": " 60 - 310"
         },
         {
-          "text": "Green Bean"
+          "text": "Fasolka szparagowa"
         },
         {
           "text": "  2 - 35"
@@ -450,7 +450,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wymagania dotyczące dzikich upraw",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Plon",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Opady deszczu (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Ziemniak"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Dynia"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Cebula"
         },
         {
           "text": "  0 - 30"
@@ -507,7 +507,7 @@
           "text": "100 - 390"
         },
         {
-          "text": "Soybean"
+          "text": "Soja"
         },
         {
           "text": "  8 - 30"
@@ -516,7 +516,7 @@
           "text": "160 - 410"
         },
         {
-          "text": "Squash"
+          "text": "Kabaczek"
         },
         {
           "text": "  5 - 33"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Trzcina cukrowa"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Pomidor"
         },
         {
           "text": "  0 - 36"
@@ -543,7 +543,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Jute"
+          "text": "Juta"
         },
         {
           "text": "  5 - 37"
@@ -552,7 +552,7 @@
           "text": "100 - 410"
         },
         {
-          "text": "Papyrus"
+          "text": "Papirus"
         },
         {
           "text": " 19 - 37"
@@ -561,7 +561,7 @@
           "text": "310 - 500"
         },
         {
-          "text": "Red Bell Pepper"
+          "text": "Czerwona papryka"
         },
         {
           "text": " 16 - 30"
@@ -570,7 +570,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Yellow Bell Pepper"
+          "text": "Żółta papryka"
         },
         {
           "text": " 16 - 30"
@@ -579,7 +579,7 @@
           "text": "190 - 400"
         },
         {
-          "text": "Sunflower"
+          "text": "Słonecznik"
         },
         {
           "text": "  5 - 40"
@@ -589,7 +589,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wymagania dotyczące dzikich upraw",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
@@ -607,19 +607,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Plon",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (°C)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Opady deszczu (mm)",
           "bold": true
         },
         {
-          "text": "Canola"
+          "text": "Rzepak"
         },
         {
           "text": " -5 - 25"
@@ -628,7 +628,7 @@
           "text": " 50 - 350"
         },
         {
-          "text": "Flax"
+          "text": "Len"
         },
         {
           "text": " -8 - 25"
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "Ogórek"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "Rzodkiew"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "Soczewica"
         },
         {
           "text": " -18 - 2"
@@ -665,7 +665,7 @@
         }
       ],
       "text": "",
-      "title": "Wild Crop Requirements",
+      "title": "Wymagania dotyczące dzikich upraw",
       "legend": [],
       "columns": 2,
       "first_column_width": 80,
