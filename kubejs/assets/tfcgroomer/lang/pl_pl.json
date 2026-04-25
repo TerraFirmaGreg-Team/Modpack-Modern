@@ -3,5 +3,9 @@
 	"block.tfcgroomer.black_bronze_grooming_station": "Koryto z czarnego brązu",
 	"block.tfcgroomer.black_steel_grooming_station": "Koryto z czarnego stali",
 	"block.tfcgroomer.blue_steel_grooming_station": "Koryto z czarnego stali",
-	"tfcgroomer.grooming_station.range": "Zasięg: %s"
+	"gui.tfcgroomer.enable_breeding": "Włącz hodowle",
+	"tfcgroomer.grooming_station.range": "Zasięg: %s",
+	"tfcgroomer.tooltip.breedDisabled": "Hodowla wyłączona",
+	"tfcgroomer.tooltip.breedEnabled": "Hodowla włączona",
+	"tfcgroomer.tooltip.toggleBreeding": "Przełącz hodowle"
 }

@@ -1,5 +1,8 @@
 {
   "block.morered.and_gate": "Bramka AND ",
+  "block.morered.bitwise_and_gate": "Bitowa bramka AND",
+  "block.morered.bitwise_not_gate": "Bitowa bramka NOT",
+  "block.morered.bitwise_xor_gate": "Bitowa bramka XOR",
   "block.morered.diode": "Dioda",
   "block.morered.latch": "Przerzutnik",
   "block.morered.multiplexer": "Multiplekser",
