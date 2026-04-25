@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Wild Animals",
+	"name": "Dzikie zwierzęta",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
 	"pages": [
@@ -239,7 +239,7 @@
 			"type": "patchouli:text",
 			"anchor": "aquatic",
 			"text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
-			"title": "Aquatic Animals"
+			"title": "Zwierzęta morskie"
 		},
 		{
 			"type": "patchouli:text",
@@ -376,7 +376,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfg:leopard_seal",
 			"scale": 0.5,
-			"name": "Leopard Seal",
+			"name": "Lampart morski",
 			"text": "The leopard seal spawns in only the coldest beaches, with $(l:the_world/climate#temperature)temperature$() of at most -9°C and $(l:the_world/climate#rainfall)rainfall$() of at least 105mm. They hunt penguins and are hunted by orcas."
 		},
 		{
