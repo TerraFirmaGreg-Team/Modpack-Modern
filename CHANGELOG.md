@@ -2,7 +2,30 @@
 
 ## Unreleased
 ### Changes
+- Added a system to instantly clear snow and ice as chunks are loaded, as soon as the temperature is warm enough. If you want to keep the old system, or if this is causing a large performance hit, check `defaultconfigs/tfg-server.toml`. @Vykonn
+- Crafting stations now have their own wood variants, and added back the slab types (#3839) @SakuraKitsurugi
+- GT Food Ovens can now use any type of Firmalife top oven instead of just the brick one (#3848) @SakuraKitsurugi
+- Icicles no longer spawn on monorails and chain conveyors (#3711) @SakuraKitsurugi
+- Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
+- Added popcorn (#3850) @applenper
+- Added craftable cherry blossom leaves, if you're desperate for pink particles (#3861) @SakuraKitsurugi
+- Improved EMI++ stack grouping for steam 'n' rails (#3868) @Astrimitsu
 ### Bug fixes
+- Fixed a crash when using the railgun in the Beneath @ashleney
+- Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
+- Fixed some dupe exploits with vessels and SnS containers in backpacks (#3881, #3878) @ashleney
+- Fixed some linux server crashes @Pyritie
+- Fixed the position of lutetium on the periodic table quest (#3835) @ashleney
+- Fixed shears losing their forging bonus when the knife heads are welded @Pyritie
+- Fixed a recipe conflict with treated wood slabs (#3809) @SakuraKitsurugi
+- Fixed some inconsistencies with train track recipes (#3847) @SakuraKitsurugi
+- Fixed AFC wood types of Kegs not having a preferred mineable tool (#3849) @SakuraKitsurugi
+- Fixed raw tuff giving migmatite when extracted @Pyritie
+- Fixed bison having the wrong drop rate of bladders (#3862) @Pyritie
+- Fixed broken model of dead radishes (#3872) @Redeix
+- Fixed not being able to craft monorails in an assembler (#3873) @SakuraKitsurugi
+- Fixed not being able to obtain fruit tree saplings with a chainsaw (#3877) @Mqrius @SakuraKitsurugi
+- Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026
 - We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
