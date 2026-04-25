@@ -124,12 +124,10 @@ function registerTFCDyeRecipes(event) {
 	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
 
 		event.remove(`tfc:pot/${dyeName}_dye`);
-
-		let inputArray = new Array(0);
-
+		
 		for (let i = 1; i < 5; i++) {
 
-			inputArray.length = 0;
+			let inputArray = new Array(0);
 
 			for (let j = 1; j < i + 1; j++) {
 				inputArray.push(`#forge:dyes/${dyeName}`);
