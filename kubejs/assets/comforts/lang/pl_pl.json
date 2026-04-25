@@ -18,6 +18,7 @@
   "block.comforts.hammock_red": "Czerwony hamak",
   "block.comforts.hammock_white": "Biały hamak",
   "block.comforts.hammock_yellow": "Żółty hamak",
+  "block.comforts.no_sleep": "To dekoracja — nie możesz tu spać",
   "block.comforts.rope_and_nail": "Lina i gwóźdź",
   "block.comforts.sleeping_bag.broke": "Śpiwór się popsuł!",
   "block.comforts.sleeping_bag.occupied": "Ten śpiwór jest już zajęty",
@@ -39,6 +40,9 @@
   "block.comforts.sleeping_bag_white": "Biały śpiwór",
   "block.comforts.sleeping_bag_yellow": "Żółty śpiwór",
   "capability.comforts.not_sleepy": "Nie możesz teraz odpoczywać; nie czujesz się jeszcze zmęczony",
+  "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
+  "item.comforts.hammock.placement.tooltip": "Wymaga %s aby położyć.",
+  "item.comforts.rope_and_nail.placement.tooltip": "Używanie do powieszenia hamaka.",
   "itemGroup.comforts": "Comforts",
   "itemGroup.comforts.general": "Comforts"
 }

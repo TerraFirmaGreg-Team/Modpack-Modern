@@ -1,5 +1,8 @@
 {
+  "item.tfchotornot.burlap_potholder": "Rękawica kuchenna z juty",
   "item.tfchotornot.mittens": "Rękawice",
+  "item.tfchotornot.tong_part.tin": "Część szczypców z cyny",
+  "item.tfchotornot.tongs.bismuth": "Szczypce z bizmutu",
   "item.tfchotornot.tongs.blue_steel": "Szczypce z niebieskiej stali",
   "item.tfchotornot.tongs.brass": "Szczypce z mosiądzu",
   "item.tfchotornot.tongs.bronze": "Szczypce z brązu",
@@ -14,5 +17,6 @@
   "item.tfchotornot.tongs.tin": "Szczypce z cyny",
   "item.tfchotornot.tongs.wood": "Szczypce z drewna",
   "item.tfchotornot.tongs.wrought_iron": "Szczypce z kutego żelaza",
-  "item.tfchotornot.tongs.zinc": "Szczypce z cynku"
+  "item.tfchotornot.tongs.zinc": "Szczypce z cynku",
+  "tfchotornot.creative_tab.tfchotornot": "TFC Hot or Not"
 }

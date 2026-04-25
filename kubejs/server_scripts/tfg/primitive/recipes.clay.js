@@ -183,7 +183,7 @@ function registerTFGClayRecipes(event) {
 		.EUt(2)
 
 	event.recipes.gtceu.macerator('tfg:ceramic_molds')
-		.itemInputs('#tfc:fired_molds')
+		.itemInputs(Ingredient.of('#tfc:fired_molds').subtract('tfc:ceramic/fire_ingot_mold').subtract('tfg:rod_mold').subtract('tfg:small_gear_mold'))
 		.itemOutputs('2x #forge:dusts/brick')
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)

@@ -20,7 +20,6 @@ function registerTFGOverworldItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:plant/mussels');
 	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
-	event.add('tfc:fluxstone', 'firmalife:hollow_shell');
 
 	event.add('tfg:stone_composition/igneous_mafic', 'tfg:mafic_hornfels')
 	event.add('tfg:stone_composition/metamorphic', 'tfg:pelitic_hornfels')

@@ -403,6 +403,18 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
+	event.shapeless('2x tfc:powder/flux', [
+		'firmalife:hollow_shell',
+		'#forge:tools/hammers'])
+		.replaceIngredient('firmalife:hollow_shell', Item.empty)
+		.id('tfg:shapeless/hollow_shell_to_flux')
+
+	event.recipes.gtceu.macerator('firmalife:hollow_shell')
+		.itemInputs('firmalife:hollow_shell')
+		.itemOutputs('2x tfc:powder/flux')
+		.EUt(2)
+		.duration(50)
+
 	// Dough
 
 	global.TFC_GRAINS.forEach(grain => {

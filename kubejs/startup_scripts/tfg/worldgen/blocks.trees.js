@@ -2,13 +2,14 @@
 
 function registerTFGWorldGenTrees(event) {
 
-		// Mars Saplings
+	// Mars Saplings
 
 	event.create('tfg:saplings/crimson', 'tfc:sapling')
 		.features('tfg:mars/tree/crimson')
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
+		.hardness(0)
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -20,6 +21,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
+		.hardness(0)
 		.growthDays(6)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -31,6 +33,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
+		.hardness(0)
 		.growthDays(3)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -42,6 +45,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
+		.hardness(0)
 		.growthDays(7)
 		.soundType('nether_wart')
 		.defaultCutout()
@@ -53,7 +57,8 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
-		.growthDays(9)
+		.hardness(0)
+		.growthDays(7)
 		.soundType('nether_wart')
 		.defaultCutout()
 		.noCollision()
@@ -64,6 +69,7 @@ function registerTFGWorldGenTrees(event) {
 		.tagBoth('minecraft:saplings')
 		.tagBlock('tfg:do_not_destroy_in_space')
 		.tagBlock('tfc:can_be_snow_piled')
+		.hardness(0)
 		.growthDays(9)
 		.soundType('nether_wart')
 		.defaultCutout()

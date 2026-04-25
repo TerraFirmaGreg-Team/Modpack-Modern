@@ -134,7 +134,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Step 4",
+            "title": "Krok 4",
             "text": "Now that we know the required steps, its time to reach the Value derived from \"Target Work\" and \"requiredWork\". For a pickaxe head where it's TotalWork value is 83, we need to reach 89. As such, we do: (Shrink x 5) -> Bend -> Punch.$(br2)Once our Work value is at our desired value, just follow the Required Steps, which for a pickaxe head its: Draw -> Bend -> Punch. And Voila! We've obtained a Perfectly Forged Item!"
         },
         {

@@ -74,7 +74,7 @@
       "type": "patchouli:text",
       "anchor": "coloring",
       "text": "Glass has a natural color based on the type of $(l:mechanics/glassworking)Glass Batch$() that was used. Other colors can be made using a $(l:mechanics/bowls)Bowl$().$(br2)To use, place the $(l:mechanics/bowls)Bowl$() on the ground, then $(item)$(k:key.use)$() the required $(thing)Powder$(). Before $(thing)Pouring$(), use the $(thing)Blowpipe$() on the bowl to add the powder to the batch.",
-      "title": "Coloring Glass"
+      "title": "Barwienie szkła"
     },
     {
       "type": "patchouli:text",
@@ -386,7 +386,7 @@
           "color": "0xb33e3e"
         },
         {
-          "text": "Default Color",
+          "text": "Domyślny kolor",
           "color": "0x3d42a8"
         }
       ],
