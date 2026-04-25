@@ -163,7 +163,36 @@
 					}
 				}
 			},
-
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/lush_hollow"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:block",
+					"result_state": {
+						"Name": "minecraft:moss_block"
+					}
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/webbed_lair"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:block",
+					"result_state": {
+						"Name": "tfg:pale_moss_block"
+					}
+				}
+			},
 
 
 
