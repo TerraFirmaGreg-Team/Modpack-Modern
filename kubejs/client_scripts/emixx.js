@@ -90,7 +90,6 @@ const registerSingleGroups = (event) => {
         // Tools (Minecraft)
         '#tfc:pickaxes',
         '#tfc:shovels',
-        '#tfc:axes',
         '#tfc:hoes',
 
         // Tools (Forge)

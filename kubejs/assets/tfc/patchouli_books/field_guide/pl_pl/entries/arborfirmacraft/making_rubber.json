@@ -1,5 +1,5 @@
 {
-	"name": "Processing Latex",
+	"name": "Przetwarzanie lateksu",
 	"category": "tfc:arborfirmacraft",
 	"icon": "gtceu:sticky_resin",
 	"pages": [
@@ -10,7 +10,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sticky_resin",
-			"title": "A sticky substance",
+			"title": "Lepka substancja",
 			"link_recipe": true,
 			"text": "One of the ways $(thing)Latex$() can be used is in the production of $(item)Sticky Resin$(). Sticky resin needs to be produced by treating latex in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$() with some $(thing)Wood Ash$() to coagulate it."
 		},
@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Conifer Pitch",
+			"title": "Pak drzewny",
 			"item": "tfg:conifer_pitch_bucket",
 			"text": "Sticky Resin can also be obtained via $(thing)Conifer Pitch$() tapped from certain $(thing)Coniferous Trees$(), but these trees cannot be used for Rubber."
 		}

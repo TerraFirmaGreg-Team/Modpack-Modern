@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
-			"name": "A Bloomery",
+			"name": "Dymarka",
 			"text": "A minimum size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
 			"enable_visualize": true
 		},

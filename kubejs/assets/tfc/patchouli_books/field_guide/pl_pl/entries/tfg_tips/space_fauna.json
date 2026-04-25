@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/moon",
-			"title": "Moon Animals",
+			"title": "Księżycowe zwierzęta",
 			"text": "$(item)The Moon$() may be pretty barren, but it still has a few animals that call it home.$(br2)It's considered a $(thing)Cold$() world despite the pretty extreme temperature swings.",
 			"anchor": "księżyc"
 		},
@@ -24,7 +24,7 @@
 			"entity": "tfg:moon_rabbit{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,MoonRabbitType:5}",
 			"scale": 1.3,
 			"offset": -0.3,
-			"name": "Moon Rabbit",
+			"name": "Królik księżycowy",
 			"text": "Besides their coloring, $(thing)Moon Rabbits$() have identical stats to Earth rabbits. They also eat Chorus Fruit."
 		},
 		{
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/mars",
-			"title": "Mars Animals",
+			"title": "Marsjańskie zwierzęta",
 			"text": "$(item)Mars$() is the planet with an environment closest to Earth's, featuring a wide variety of animals to interact with and crops to feed them (and yourself) with... outside of the huge desert, where almost nothing lives.$(br2)Mars is a $(thing)Cold$() planet.",
 			"anchor": "mars"
 		},
@@ -65,7 +65,7 @@
 			"tfg:textures/gui/field_guide/sandworm.png"
 			],
 			"border": true,
-			"title": "The Sandworm",
+			"title": "Czerw piaskowy",
 			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the desert.$(br)"
 		},
 		{

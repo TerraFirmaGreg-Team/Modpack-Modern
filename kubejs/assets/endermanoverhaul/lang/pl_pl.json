@@ -1,3 +1,24 @@
 {
-	"entity.endermanoverhaul.scarab": "Chrząszcz"
+	"block.endermanoverhaul.tiny_skull": "Mała czaszka",
+	"entity.endermanoverhaul.ancient_pearl": "Starożytna perła",
+	"entity.endermanoverhaul.bubble_pearl": "Bąbelkowa perła",
+	"entity.endermanoverhaul.cave_enderman": "Jaskiniowy Enderman",
+	"entity.endermanoverhaul.coral_enderman": "Koralowy Enderman",
+	"entity.endermanoverhaul.crimson_pearl": "Karmazynowa perła",
+	"entity.endermanoverhaul.desert_enderman": "Zagubiony Enderman",
+	"entity.endermanoverhaul.icy_pearl": "Lodowa perła",
+	"entity.endermanoverhaul.nether_wastes_enderman": "Ognisty Enderman",
+	"entity.endermanoverhaul.savanna_enderman": "Piaskowy Enderman",
+	"entity.endermanoverhaul.scarab": "Chrząszcz",
+	"entity.endermanoverhaul.snowy_enderman": "Śnieżny Enderman",
+	"entity.endermanoverhaul.swamp_enderman": "Omszały Enderman",
+	"item.endermanoverhaul.ancient_pearl": "Starożytna perła",
+	"item.endermanoverhaul.bubble_pearl": "Bąbelkowa perła",
+	"item.endermanoverhaul.crimson_pearl": "Karmazynowa perła",
+	"item.endermanoverhaul.enderman_tooth": "Ząb Endermana",
+	"item.endermanoverhaul.icy_pearl": "Lodowa perła",
+	"item.endermanoverhaul.scarab_spawn_egg": "Jajo przyzywające żuka",
+	"tag.item.endermanoverhaul.ender_pearls": "Enderperły",
+	"tooltip.endermanoverhaul.ancient_pet": "Zdrowie zwierzaka: %.1f",
+	"tooltip.endermanoverhaul.bound_to": "Powiązany z: %s"
 }
