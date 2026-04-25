@@ -1,6 +1,6 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "Uprawy",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
@@ -36,7 +36,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"title": "Uprawy rolne"
 		},
 		{
 			"type": "patchouli:text",
@@ -1346,7 +1346,7 @@
 			"type": "patchouli:text",
 			"anchor": "green_bean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
-			"title": "Green Beans"
+			"title": "Zielona fasolka"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1526,7 +1526,7 @@
 			"type": "patchouli:text",
 			"anchor": "potato",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-			"title": "Potatoes"
+			"title": "Ziemniaki"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1657,7 +1657,7 @@
 			"type": "patchouli:text",
 			"anchor": "pumpkin",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 80 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Pumpkins are a spreading crop. Pumpkin seeds can be planted on farmland and will place up to two $(thing)Pumpkin Blocks$() on the ground next to it while it is mature. If the pumpkin blocks are harvested, and the plant matures again, it can grow more pumpkins. Pumpkins can be made into $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$().",
-			"title": "Pumpkins"
+			"title": "Dynie"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1829,7 +1829,7 @@
 			"type": "patchouli:text",
 			"anchor": "melon",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
-			"title": "Melons"
+			"title": "Melon"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2263,7 +2263,7 @@
 			"type": "patchouli:text",
 			"anchor": "onion",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 90 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Onions are a single block crop. Onion seeds can be planted on farmland and will produce $(thing)Onions$() and $(thing)Onion Seeds$() as a product.",
-			"title": "Onions"
+			"title": "Cebula"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -2853,7 +2853,7 @@
 			"type": "patchouli:text",
 			"anchor": "tomatoes",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 95 %$(br)$(bold)Nutrient$(): Potassium$(br2)Tomatoes are a climbing two block tall crop. Tomato seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Tomatoes$() and $(thing)Tomato Seeds$() as a product.",
-			"title": "Tomatoes"
+			"title": "Pomidory"
 		},
 		{
 			"type": "tfc:multimultiblock",

@@ -45,6 +45,8 @@ function registerTFGHeatData(event) {
 
 	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
+	event.itemHeat('tfg:food/popcorn', 1.0, null, null);
+	event.itemHeat('tfg:food/buttered_popcorn', 1.0, null, null);
 	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);

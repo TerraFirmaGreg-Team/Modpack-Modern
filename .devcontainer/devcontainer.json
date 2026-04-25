@@ -1,0 +1,21 @@
+{
+  "name": "Modpack-Modern",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "git.openRepositoryInParentFolders": "always",
+        "git.autofetch": "all",
+        "git.autoStash": true
+      }
+    }
+  },
+  "postCreateCommand": "echo 'Dev container ready for shader development'"
+}

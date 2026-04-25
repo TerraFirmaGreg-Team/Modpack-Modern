@@ -1,5 +1,17 @@
 {
+  "block.morered.and_gate": "Bramka AND ",
+  "block.morered.bitwise_and_gate": "Bitowa bramka AND",
+  "block.morered.bitwise_not_gate": "Bitowa bramka NOT",
+  "block.morered.bitwise_xor_gate": "Bitowa bramka XOR",
+  "block.morered.diode": "Dioda",
+  "block.morered.latch": "Przerzutnik",
+  "block.morered.multiplexer": "Multiplekser",
+  "block.morered.nand_gate": "Bramka NAND",
   "block.morered.nor_gate": "Bramka NOR",
   "block.morered.not_gate": "Bramka NOT",
-  "block.morered.or_gate": "Bramka OR"
+  "block.morered.or_gate": "Bramka OR",
+  "block.morered.stone_plate": "Kamienna płytka",
+  "block.morered.xnor_gate": "Bramka XNOR",
+  "block.morered.xor_gate": "Bramka XOR",
+  "gui.morered.category.soldering": "Lutowanie"
 }

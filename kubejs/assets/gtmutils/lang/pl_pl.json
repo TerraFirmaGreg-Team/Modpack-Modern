@@ -1,3 +1,17 @@
 {
-  "tooltip.omnibreaker.tool_mode_1": "Klucz"
+  "config.gtmutils.option.coinsEnabled": "coinsEnabled",
+  "config.gtmutils.option.features": "funkcje",
+  "config.gtmutils.option.omnibreakerTier": "omnibreakerTier",
+  "config.gtmutils.option.pterbEnabled": "pterbEnabled",
+  "gtceu.placeholder_info.watfrequency.1": "Użycie:",
+  "item.gtceu.tool.ev_wrench": "Klucz EN (%s)",
+  "item.gtceu.tool.luv_drill": "Wiertło LuV (%s)",
+  "item.gtceu.tool.mv_wrench": "Klucz SN (%s)",
+  "item.gtceu.tool.zpm_drill": "Wiertło MPZ (%s)",
+  "item.gtmutils.chocolate_coin": "Czekoladowa moneta",
+  "tooltip.omnibreaker.tool_mode": "Aktualny tryb: %s",
+  "tooltip.omnibreaker.tool_mode_1": "Klucz",
+  "tooltip.omnibreaker.tool_mode_2": "Śrubokręt",
+  "tooltip.omnibreaker.tool_mode_3": "Nożyce do drutu",
+  "tooltip.omnibreaker.tool_mode_4": "Łom"
 }

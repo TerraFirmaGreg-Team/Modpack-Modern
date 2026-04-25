@@ -134,6 +134,11 @@
     },
     "lake": {
       "overall": 1,
+      "ocean": 1,
+      "frog": 1
+    },
+    "martian_lake": {
+      "overall": 1,
       "ocean": 1
     },
     "mesa": {
@@ -154,6 +159,11 @@
       "overall": 1,
       "whale": 1
     },
+    "pale-garden": {
+      "overall": 1,
+      "pale-garden-ambience": 1,
+      "owl": 1
+    },
     "plains": {
       "overall": 1,
       "cricket": 1,
@@ -163,6 +173,10 @@
     "rain": {
       "overall": 1,
       "rain": 1
+    },
+    "river": {
+      "overall": 1,
+      "ocean": 1
     },
     "savanna": {
       "overall": 1,
@@ -180,7 +194,7 @@
     },
     "snow": {
       "overall": 1,
-      "wind.light-wind": 0.50
+      "wind.light-wind": 0.5
     },
     "space": {
       "overall": 1

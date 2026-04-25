@@ -37,6 +37,13 @@ const registerCreateItemTags = (event) => {
 		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
+	// tfc wood tracks should be included in the create:tracks tag
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.add('create:tracks', `railways:track_tfc_${wood}`)
+		event.add('create:tracks', `railways:track_tfc_${wood}_narrow`)
+		event.add('create:tracks', `railways:track_tfc_${wood}_wide`)	
+	})
+
 	event.removeAll('create:crushed_raw_materials')
 
 	event.add('create:blaze_burner_fuel/regular', "tfc:ore/lignite")
@@ -180,6 +187,8 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:carbonate_hornfels')
 	event.add('create:non_movable', 'tfg:pelitic_hornfels')
 	event.add('create:non_movable', 'tfg:mafic_hornfels')
+
+	event.add('tfg:no_icicle_generation', 'create:chain_conveyor')
 }
 
 

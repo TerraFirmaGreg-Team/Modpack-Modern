@@ -1,5 +1,5 @@
 {
-	"name": "Biomes",
+	"name": "Biomy",
 	"category": "tfc:beneath",
 	"icon": "minecraft:spyglass",
 	"pages": [
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair",
+			"title": "Leże pająków",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas",
+			"title": "Bazaltowe delty",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],

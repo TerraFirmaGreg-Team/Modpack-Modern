@@ -205,7 +205,7 @@
 		syncPlayerPickupHitboxWithContraptionHitbox = false
 		#.
 		#Whether to prevent block dropping when contraption is placed inside in-world blocks.
-		noDropWhenContraptionReplaceBlocks = false
+		noDropWhenContraptionReplaceBlocks = true
 
 	#.
 	#Configure speed/capacity levels for requirements and indicators.
@@ -495,11 +495,11 @@
 	maxTrackPlacementLength = 128
 	#.
 	#Maximum length of a Train Stations' assembly track.
-	#Range: > 5
+	#Range: 5 ~ 512
 	maxAssemblyLength = 128
 	#.
 	#Maximum amount of bogeys assembled as a single Train.
-	#Range: > 1
+	#Range: 1 ~ 200
 	maxBogeyCount = 20
 	#.
 	#Relative speed of a manually controlled Train compared to a Scheduled one.

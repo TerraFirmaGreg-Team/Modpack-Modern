@@ -1,0 +1,11 @@
+
+#GTCEu Terminal Addon Server Configuration
+[general]
+	#Radius in blocks for multiblock scanning (default: 32)
+	#Range: 8 ~ 128
+	multiblockScanRadius = 32
+	#Enable Applied Energistics 2 integration (default: true)
+	enableAE2Integration = true
+	#Enable debug logging for troubleshooting (default: false)
+	enableDebugLogging = false
+
