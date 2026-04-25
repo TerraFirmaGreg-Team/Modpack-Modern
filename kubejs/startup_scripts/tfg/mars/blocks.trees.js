@@ -1,8 +1,8 @@
 "use strict";
 
-function registerTFGWorldGenTrees(event) {
+function registerTFGMarsTrees(event) {
 
-		// Mars Saplings
+	// Mars Saplings
 
 	event.create('tfg:saplings/crimson', 'tfc:sapling')
 		.features('tfg:mars/tree/crimson')

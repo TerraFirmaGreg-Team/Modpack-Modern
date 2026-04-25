@@ -59,8 +59,6 @@ global.WAB_DISABLED_ITEMS = [
 	'wan_ancient_beasts:bellflower_seeds',
 	'wan_ancient_beasts:moonflower',
 	'wan_ancient_beasts:equisetum_seeds',
-	'wan_ancient_beasts:olden_moss_carpet',
-	'wan_ancient_beasts:olden_moss_block',
 	'wan_ancient_beasts:amber_ginkgo_seeds',
 	'wan_ancient_beasts:verdant_ginkgo_seeds',
 	'wan_ancient_beasts:amber_ginkgo_sapling',
@@ -86,7 +84,7 @@ global.WAB_WOOD = [
 		leafColor: "orange",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10,
-		location: "beneath"
+		daysToGrow: 7,
+		location: "nether"
 	}
 ]

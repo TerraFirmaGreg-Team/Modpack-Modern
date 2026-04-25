@@ -11,7 +11,9 @@ const beneath_plants = [
     'minecraft:glow_lichen',
     'minecraft:hanging_roots',
 	'minecraft:spore_blossom',
-    '#beneath:mushrooms'
+    '#beneath:mushrooms',
+    'tfg:plant/eyeblossom',
+    'tfg:plant/pale_hanging_moss'
 ];
 
 function registerTFGBeneathItemTags(event) {
@@ -36,8 +38,18 @@ function registerTFGBeneathItemTags(event) {
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:mushroom_stem')
     event.add('tfc:compost_greens', 'minecraft:moss_block')
+    event.add('tfc:compost_greens', 'tfg:pale_moss_block')
+    event.add('tfc:compost_greens', 'wan_ancient_beasts:olden_moss_block')
     event.add('tfc:compost_greens_low', 'minecraft:moss_carpet')
+    event.add('tfc:compost_greens_low', 'tfg:pale_moss_carpet')
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:olden_moss_carpet')
     event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
+    event.add('tfc:compost_greens_low', 'tfg:plant/eyeblossom');
+    event.add('tfc:compost_greens_low', 'tfg:plant/pale_hanging_moss');
+
+    event.add('tfc:moss', 'minecraft:moss_carpet')
+    event.add('tfc:moss', 'tfg:pale_moss_carpet')
+    event.add('tfc:moss', 'wan_ancient_beasts:olden_moss_carpet')
 }
 
 
@@ -49,7 +61,6 @@ function registerTFGBeneathBlockTags(event) {
     beneath_plants.forEach(plant =>
 	    event.add('tfg:plants/beneath', plant)
     );
-
 
     event.add('minecraft:base_stone_nether', 'minecraft:deepslate')
     event.add('minecraft:base_stone_nether', 'minecraft:blackstone')
@@ -96,18 +107,25 @@ function registerTFGBeneathBlockTags(event) {
     event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/slate");
     event.add("minecraft:base_stone_nether", "tfc:rock/mossy_cobble/marble");
     
-
-    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
-    event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
     event.add('tfc:creeping_plantable_on', '#minecraft:base_stone_nether')
-    event.add('tfc:creeping_stone_plantable_on', 'minecraft:moss_block')
     event.add('tfc:creeping_stone_plantable_on', '#minecraft:base_stone_nether')
     event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
     event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:moss_block')
     event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
 	event.add('tfg:lush_ground_replaceable', '#minecraft:base_stone_nether')
     event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
+
+    const moss_blocks = [
+        'minecraft:moss_block',
+        'tfg:pale_moss_block',
+        'wan_ancient_beasts:olden_moss_block'
+    ];
+    moss_blocks.forEach(block => {
+        event.add('tfc:grass_plantable_on', block)
+        event.add('tfc:creeping_plantable_on', block)
+        event.add('tfc:creeping_stone_plantable_on', block)
+        event.add('beneath:nether_bush_plantable_on', block)
+    })
 
     event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
 

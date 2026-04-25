@@ -389,8 +389,8 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10,
-		location: "beneath"
+		daysToGrow: 5,
+		location: "nether"
 	},
 	{
 		name: "mahoe",
@@ -399,8 +399,8 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10,
-		location: "beneath"
+		daysToGrow: 5,
+		location: "nether"
 	},
 	{
 		name: "beech",
@@ -409,7 +409,7 @@ global.TFG_NEW_WOOD_TYPES = [
 		leafColor: "green",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10,
-		location: "beneath"
+		daysToGrow: 6,
+		location: "nether"
 	}
 ]

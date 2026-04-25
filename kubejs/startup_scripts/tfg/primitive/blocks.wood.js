@@ -42,7 +42,7 @@ function registerTFGNewWoodBlocks(event) {
 	function TFGWoodSaplingRegistry(event, wood) {
         event.create(`tfg:wood/sapling/${wood.name}`, 'tfc:sapling')
 			.soundType(`${wood.leafSound}`)
-            .features(`tfg:${wood.location}/tree/${wood.name}`)
+            .features(`tfg:${wood.location}/tree/${wood.name}_mini`)
 		    .tagBoth('minecraft:saplings')
 		    .tagBlock('tfc:can_be_snow_piled')
 		    .growthDays(wood.daysToGrow)

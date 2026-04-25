@@ -10,17 +10,6 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Moss
 	event.replaceInput({ input: 'minecraft:vine' }, 'minecraft:vine', '#tfc:moss')
 
-	event.shapeless('1x minecraft:moss_block', [
-		'#tfc:dirt',
-		'#tfc:moss'
-	]).id(`tfg:shapeless/moss_block`)
-
-	event.shaped('6x minecraft:moss_carpet', [
-		'AA'
-	], {
-		A: 'minecraft:moss_block'
-	}).id(`tfg:shaped/moss_carpet`)
-
 	// Universal Circuit
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
 		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1), [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
