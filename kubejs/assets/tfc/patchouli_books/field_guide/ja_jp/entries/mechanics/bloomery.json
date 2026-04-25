@@ -1,40 +1,40 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Bloomery",
+	"name": "塊鉄炉",
 	"category": "tfc:mechanics",
 	"icon": "tfc:bloomery",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(l:tfg_ores/earth_vein_index#normal_hematite)Hematite$(), $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$(), and $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+			"text": "$(thing)塊鉄炉$()は、$(thing)鉄鉱石$()を製錬し$(thing)塊鉄$()を作成します。この$(thing)塊鉄$()を鍛造することで$(thing)錬鉄$()になります。代表的な鉄鉱石として、$(l:tfg_ores/earth_vein_index#normal_hematite)赤鉄鉱$()、$(l:tfg_ores/earth_vein_index#normal_limonite)褐鉄鉱$()、$(l:tfg_ores/earth_vein_index#normal_magnetite)磁鉄鉱$()などがありますが、これらはそのまま溶かそうとすると$(thing)鋳鉄$()になってしまいます。しかし、鋳鉄は実用的な強度を兼ね備えていません。実用的な強度の鉄である「錬鉄」を作成するために、塊鉄炉を利用する必要があります。ちなみに、鉄を含むものであれば、ツールや鋳鉄インゴットなども含めて、どんなものでも材料として利用できます！"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/bloomery",
-			"text": "The bloomery is made from 8 $(thing)Bronze Double Plates$()."
+			"text": "塊鉄炉は$(thing)青銅系の二重プレート$()8枚で作ることができます。"
 		},
 		{
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
-			"name": "A Bloomery",
-			"text": "A minimum size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+			"name": "塊鉄炉",
+			"text": "最小の塊鉄炉。塊鉄炉ブロックは$(item)$(k:key.use)$()で開閉します。",
 			"enable_visualize": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form.$(br2)You can use both $(item)Charcoal$() and $(item)Coal$() as fuel for your bloomery."
+			"text": "塊鉄炉は最大サイズで構築した場合、48個まで$(thing)投入物$()を入れることができます。煙突1層につき16個の投入物に対応できるようになります。煙突を1層高くするには、石ブロックをさらに2段積み重ねてください。$(br2)素材と燃料を投入する際は、上まで登って中にアイテムをドロップします。すると灰色の鉱石が積み上がったような状態になります。$(br2)燃料には$(item)木炭$()と$(item)石炭$()のどちらも使用可能です。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
 			],
-			"text": "The bloomery consumes $(thing)1 item of Fuel$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
+			"text": "塊鉄炉では、$(thing)燃料1つ$()と$(thing)鋳鉄144mB分$()を使って、$(thing)塊鉄$()を1つ作り出します。",
 			"border": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If you don't want to do the math, we recommend $(item)25 metal ore dusts$() and $(item)22 fuel items$().$(br2)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait 15 hours for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+			"text": "細かい計算が面倒な場合は、$(item)鉄鉱石の粉25個$()と$(item)燃料22個$()を目安にするとよいでしょう。$(br2)$(thing)燃料$()と$(thing)鉱石$()を両方投入して塊鉄炉を満たしたら、閉じてある塊鉄炉本体に火を付けて15分ほど待ちます。処理が完了すると塊鉄炉は停止し、$(thing)塊鉄ブロック$()が残ります。ピッケルなどでこれを掘り出すと$(thing)塊鉄$()を取り出せます。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -51,24 +51,24 @@
 					"X": "tfc:bloom[layers=8]"
 				}
 			},
-			"name": "The Bloom Block",
-			"text": "A large $(thing)Bloom$().",
+			"name": "塊鉄ブロック",
+			"text": "塊鉄の塊",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/refined_iron_bloom",
-			"text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Refined Iron Bloom$()."
+			"text": "$(thing)塊鉄$()はそのままでは使えないため、$(l:mechanics/anvils)金床$()で鍛造して$(thing)鍛造された塊鉄$()へと仕上げる必要があります。"
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/wrought_iron_from_bloom",
-			"text": "The $(thing)Refined Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Wrought Iron Ingots$()."
+			"text": "さらに$(thing)鍛造された塊鉄$()を$(l:mechanics/anvils)金床$()で鍛造することで、ついに$(thing)錬鉄インゴット$()が完成します！"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)If the bloomery finds itself with more items contained than it can handle based on its chimney, it will try to spit them out the front.$()$(li)To retrieve your items from a bloomery that is not lit, do not break the molten block tower. Break the bloomery block.$()$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$()",
-			"title": "Smith's Notes"
+			"text": "$(li)塊鉄炉の容量を超えてアイテムを入れると、余分なものは前面から排出されてしまう。$()\n$(li)火をつける前の塊鉄炉から材料を取り出す場合は、内部のブロックの塊ではなく、塊鉄炉本体を壊さなければならない。$()\n$(li)塊鉄をそのまま溶かしても鋳鉄になるだけだ。必ず金床で鍛造するように。$()",
+			"title": "とある鍛冶屋が残したメモ書き"
 		}
 	],
 	"read_by_default": true,

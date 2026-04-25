@@ -1,4 +1,5 @@
 {
+  "block.mcw_tfc_aio.bridges.iron_bridges.iron_bridge": "Żelazny most",
   "block.mcw_tfc_aio.fences.other_fences.hedge": "Żywopłot",
   "block.mcw_tfc_aio.furniture.acacia_furniture.acacia_bookshelf": "Akacjowa biblioteczka",
   "block.mcw_tfc_aio.furniture.acacia_furniture.acacia_bookshelf_cupboard": "Akacjowa biblioteczka z szafką",
@@ -29,6 +30,9 @@
   "block.mcw_tfc_aio.roofs.ash_roofs.ash_roof": "Dach z jesionu",
   "block.mcw_tfc_aio.roofs.oak_roofs.oak_roof": "Dach z dębu",
   "item.mcw_tfc_aio.pliers": "Kombnierki",
+  "item.mcw_tfc_aio.roofing_hammer": "Młotek do dachów",
+  "itemGroup.fences": "Macaw's TFC Fences",
+  "itemGroup.roofs": "Macaw's TFC Roofs",
   "mcw_tfc_aio.container.threerows": "Meble",
   "tfc.recipe.barrel.mcw_tfc_aio.bleach_terracotta": "Wybielanie terakoty"
 }

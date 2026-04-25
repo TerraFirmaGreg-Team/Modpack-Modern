@@ -9,12 +9,16 @@
   "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Factory Logistics",
   "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "Przytrzymaj Alt, aby umieścić płyn",
   "itemGroup.create_factory_logistics.base": "Create: Factory Logistics",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "Typ zawartości:",
   "create_factory_logistics.gui.ingredient_type.fluid": "Ciecz",
   "create_factory_abstractions.gui.ingredient_type.item": "Przemiot",
   "create_factory_logistics.gui.network_link.mode.stored": "Na stanie",
+  "create_factory_logistics.gui.network_link.mode.promised": "Obiecano",
   "create_factory_logistics.ponder.mixer_upkeep.text_2": "Aby palnik płomienny był karmiony tylko w razie potrzeby",
   "create_factory_logistics.ponder.mixer_upkeep.text_3": "Po otrzymaniu zamówienia, przełącznik odczyta nowy stan i zareaguje",
   "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "Umieść ciecz do monitorowania",
-  "create.item_attributes.is_fluid": "jest %1$s"
+  "create.item_attributes.is_fluid": "jest %1$s",
+  "create.item_attributes.is_fluid.inverted": "nie jest %1$s",
+  "create.item_attributes.is_fluid_no_nbt": "jest %1$s (brak NBT)"
 }
 

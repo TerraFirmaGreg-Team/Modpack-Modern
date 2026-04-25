@@ -1,13 +1,26 @@
 {
   "item.sns.buckle": "Klamra",
+  "item.sns.burlap_sack": "Worek jutowy",
+  "item.sns.hiking_boots": "Buty górskie",
+  "item.sns.leather_sack": "Skórzany worek",
+  "item.sns.leather_strip": "Skórzany pasek",
+  "item.sns.metal.horseshoe.steel": "Stalowe podkowy",
+  "item.sns.metal.horseshoes.steel": "Stalowa podkowa",
+  "item.sns.mob_net": "Siatka na moby",
   "item.sns.ore_sack": "Worek na rudę",
   "item.sns.quiver": "Kołczan",
+  "item.sns.reinforced_fabric": "Wzmocniona tkanina",
+  "item.sns.reinforced_fiber": "Wzmocnione włókno",
   "item.sns.seed_pouch": "Woreczek na nasiona",
   "item.sns.steel_toe_hiking_boots": "Obuwie ochronne ze stali",
   "item.sns.straw_basket": "Słomiany koszyk",
   "item.sns.unfinished_leather_sack": "Niewykończony worek skórzany",
+  "sns.advancements.leather_sack.title": "Skórzany worek",
   "sns.advancements.straw_basket.title": "Słomiany koszyk",
+  "sns.creative_tab.sacks": "Sacks 'N Such",
   "sns.disabled": "Nieaktywne",
   "sns.enabled": "Aktywny",
-  "sns.stack_name.mob_net.with_mob": "%s (%s)"
+  "sns.extra_fall_distance": "Odległość upadku",
+  "sns.stack_name.mob_net.with_mob": "%s (%s)",
+  "sns.tooltip.item_container.slot_count": "Liczba miejsc: %s"
 }

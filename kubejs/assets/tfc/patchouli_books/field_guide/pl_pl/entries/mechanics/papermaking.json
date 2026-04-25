@@ -80,7 +80,7 @@
         "type": "patchouli:text",
         "anchor": "paperfromwood",
         "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper",
-        "title": "Paper from Wood"
+        "title": "Papier z drewna"
       },
       {
         "type": "patchouli:text",
@@ -88,7 +88,7 @@
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stripped Hardwood",
+        "title": "Ociosane twarde drewno",
         "item": {
           "tag": "tfg:stripped_hardwood"
         },
@@ -96,7 +96,7 @@
       },
       {
         "type": "patchouli:crafting",
-        "title": "Hardwood Strip",
+        "title": "Pasek twardego drewna",
         "recipe": "tfg:crafting/strip_hardwood",
         "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
       },
@@ -130,7 +130,7 @@
       {
         "type": "patchouli:spotlight",
         "item": "tfg:soaked_unrefined_paper",
-        "title": "Pressing the Pulp",
+        "title": "Wyciskanie pulpy",
         "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
       },
       {

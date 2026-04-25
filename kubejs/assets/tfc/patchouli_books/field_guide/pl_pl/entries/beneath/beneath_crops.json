@@ -1,11 +1,11 @@
 {
-	"name": "Beneath Crops",
+	"name": "Rośliny z Głębin",
 	"category": "tfc:beneath",
 	"icon": "tfg:textures/item/cassava_product.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
+			"title": "Rośliny z Głębin",
 			"text": "The $(thing)Beneath$() may be a harsh environment, but it is still possible to find crops there. Beneath crops are incredibly resilient and can grow in extreme heat conditions making them useful for surviving below the Earth and on the surface."
 		},
 		{
