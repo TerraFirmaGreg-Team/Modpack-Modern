@@ -20,6 +20,9 @@ function registerTFCItemTags(event) {
         }
     });
 
+    // Add chainsaws to #tfc:axes so they drop fruit tree saplings
+    event.add("tfc:axes", "#forge:tools/chainsaws");
+
     /**
      * @type {string[]} - Item IDs and tags usable on tfc tool racks.
      */
@@ -193,20 +196,15 @@ function registerTFCItemTags(event) {
     event.remove("forge:dusts/sulfur", "tfc:powder/sulfur");
 
     // Тэги для возможности использования разных углей в кузне
-    event.add("tfc:forge_fuel", "minecraft:coal");
+    event.add("minecraft:coals", "tfc:ore/bituminous_coal");
+    event.add("minecraft:coals", "tfc:ore/lignite");
+
     event.add("tfc:forge_fuel", "minecraft:coal_block");
     event.add("tfc:forge_fuel", 'gtceu:flawless_coal_gem');
     event.add("tfc:forge_fuel", 'gtceu:exquisite_coal_gem');
     event.add("tfc:forge_fuel", 'gtceu:flawed_coal_gem');
     event.add("tfc:forge_fuel", 'gtceu:chipped_coal_gem');
-    event.add("tfc:forge_fuel", 'gtceu:crushed_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:purified_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:refined_coal_ore');
-    event.add("tfc:forge_fuel", 'gtceu:impure_coal_dust');
 
-    event.add("tfc:forge_fuel", "gtceu:rich_raw_coal");
-    event.add("tfc:forge_fuel", "gtceu:raw_coal");
-    event.add("tfc:forge_fuel", "gtceu:poor_raw_coal");
     event.add("tfc:forge_fuel", "gtceu:coal_dust");
     event.add("tfc:forge_fuel", "gtceu:small_coal_dust");
     event.add("tfc:forge_fuel", "gtceu:tiny_coal_dust");
@@ -220,7 +218,8 @@ function registerTFCItemTags(event) {
     event.add("tfc:forge_fuel", "gtceu:charcoal_block");
 
     // Change blast furnace to use coke
-    event.remove("tfc:blast_furnace_fuel", "minecraft:coal");
+    event.remove("tfc:blast_furnace_fuel", "tfc:ore/lignite");
+    event.remove("tfc:blast_furnace_fuel", "tfc:ore/bituminous_coal");
     event.remove("tfc:blast_furnace_fuel", "minecraft:charcoal");
     event.add("tfc:blast_furnace_fuel", "gtceu:coke_gem");
     event.add("tfc:blast_furnace_fuel", "beneath:cursecoal");
@@ -229,8 +228,6 @@ function registerTFCItemTags(event) {
     global.TFC_WOOD_TYPES.forEach((woodType) => {
         event.add("tfg:default_chests", `tfc:wood/chest/${woodType}`);
         event.add("tfg:trapped_chests", `tfc:wood/trapped_chest/${woodType}`);
-
-        event.add("tfg:bladed_axles", `tfc:wood/bladed_axle/${woodType}`);
     });
 
     //Hardwood Tags
@@ -424,13 +421,15 @@ function registerTFCItemTags(event) {
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
-    global.TFC_WET_MUD_BRICKS.forEach((wetMudBrick) => {
-        event.add("tfc:wet_mud_bricks", wetMudBrick);
-    });
-
-    global.TFC_DRY_MUD_BRICKS.forEach((dryMudBrick) => {
-        event.add("tfc:dry_mud_bricks", dryMudBrick);
-    });
+    global.TFC_MUD_TYPES.forEach(mud => {
+        event.add("tfc:wet_mud_bricks", `tfc:mud_brick/${mud}`);
+        event.add("tfc:dry_mud_bricks", `tfc:drying_bricks/${mud}`);
+    })
+    global.TFG_MUD_TYPES.forEach(mud => {
+        event.add("tfc:wet_mud_bricks", `tfg:mud_brick/${mud}`);
+        event.add("tfc:mud_bricks", `tfg:mud_bricks/${mud}`);
+        event.add("tfc:dry_mud_bricks", `tfg:drying_bricks/${mud}`);
+    })
 
     // Workaround for some of the ruin structures having tfc knives
     event.add('tfc:knives', 'tfc:stone/knife/sedimentary')

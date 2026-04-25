@@ -1239,6 +1239,17 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab' })
 
+	global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.forEach(element => {
+		const blockId = element.block.split(':')[1]
+		const cuttedId = element.cutted.split(':')[1]
+		const stairsId = element.stairs.split(':')[1]
+		const slabsId = element.slabs.split(':')[1]
+
+		event.remove({ id: `minecraft:${cuttedId}_from_${blockId}_stonecutting` })
+		event.remove({ id: `minecraft:${stairsId}_from_${blockId}_stonecutting` })
+		event.remove({ id: `minecraft:${slabsId}_from_${blockId}_stonecutting` })
+	})
+
 	//#endregion
 	
 	//#endregion

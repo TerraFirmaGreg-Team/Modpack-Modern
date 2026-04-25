@@ -37,16 +37,21 @@ const registerCreateItemTags = (event) => {
 		if (dye !== 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
 
+	// tfc wood tracks should be included in the create:tracks tag
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.add('create:tracks', `railways:track_tfc_${wood}`)
+		event.add('create:tracks', `railways:track_tfc_${wood}_narrow`)
+		event.add('create:tracks', `railways:track_tfc_${wood}_wide`)	
+	})
+
 	event.removeAll('create:crushed_raw_materials')
 
-	event.add('create:blaze_burner_fuel/regular', "gtceu:poor_raw_coal")
+	event.add('create:blaze_burner_fuel/regular', "tfc:ore/lignite")
+	event.add('create:blaze_burner_fuel/regular', "tfc:ore/bituminous_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:coal_dust")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:charcoal_dust")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:raw_coal")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:rich_raw_coal")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:flawed_coal_gem")
 	event.add('create:blaze_burner_fuel/regular', "gtceu:chipped_coal_gem")
-	event.add('create:blaze_burner_fuel/regular', "gtceu:pure_coal_dust")
 
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
@@ -87,6 +92,12 @@ const registerCreateItemTags = (event) => {
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
 	event.add('create:non_movable', '#tfc:can_landslide')
+	event.add('create:non_movable', 'tfg:smoker_source')
+	event.add('create:non_movable', 'tfg:lava_source')
+	event.add('create:non_movable', 'tfg:big_volcano_smoke_emitter')
+	event.add('create:non_movable', 'tfg:carbonate_hornfels')
+	event.add('create:non_movable', 'tfg:pelitic_hornfels')
+	event.add('create:non_movable', 'tfg:mafic_hornfels')
 
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
@@ -106,6 +117,9 @@ const registerCreateItemTags = (event) => {
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_scoria_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_scorchia_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_veridium_slab')
+
+	event.add('tfc:foods', 'create:honeyed_apple')
+	event.add('tfc:foods/fruits', 'create:honeyed_apple')
 }
 
 const registerCreateBlockTags = (event) => {
@@ -125,12 +139,7 @@ const registerCreateBlockTags = (event) => {
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
 	event.removeAll('create:fan_processing_catalysts/haunting')
-
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
+	event.removeAll('create:fan_processing_catalysts/splashing')
 
 	event.add('create:chest_mounted_storage', '#forge:chests/wooden')
 	event.add('create:chest_mounted_storage', 'framedblocks:framed_chest')
@@ -172,6 +181,14 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:spice')
 	event.add('create:non_movable', 'tfg:geyser_source')
 	event.add('create:non_movable', 'tfg:geyser_source_small')
+	event.add('create:non_movable', 'tfg:smoker_source')
+	event.add('create:non_movable', 'tfg:lava_source')
+	event.add('create:non_movable', 'tfg:big_volcano_smoke_emitter')
+	event.add('create:non_movable', 'tfg:carbonate_hornfels')
+	event.add('create:non_movable', 'tfg:pelitic_hornfels')
+	event.add('create:non_movable', 'tfg:mafic_hornfels')
+
+	event.add('tfg:no_icicle_generation', 'create:chain_conveyor')
 }
 
 
@@ -192,10 +209,5 @@ const registerCreateFluidTags = (event) => {
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
 	event.removeAll('create:fan_processing_catalysts/haunting')
-	
-	// Waters for bulk washing
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
-	event.add('create:fan_processing_catalysts/splashing', 'tfg:semiheavy_ammoniacal_water')
+	event.removeAll('create:fan_processing_catalysts/splashing')
 }

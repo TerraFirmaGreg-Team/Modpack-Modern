@@ -1,0 +1,325 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Zioła i Przyprawy",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:spice/basil_leaves",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "W Firmalife istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, a które są używane do gotowania. Można je znaleźć w środowisku naturalnym i po zebraniu mogą być uprawiane w  $(l:firmalife/greenhouse)Szklarni$(), w której zużywają 20 punktów N, P i K."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=1]"
+					}
+				}
+			],
+			"name": "Bazylia",
+			"text": "$(thing)Dzika bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=1]"
+					}
+				}
+			],
+			"name": "Wawrzyn Szlachetny",
+			"text": "$(thing)Dziki wawrzyn szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=1]"
+					}
+				}
+			],
+			"name": "Kardamon",
+			"text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=1]"
+					}
+				}
+			],
+			"name": "Kolendra",
+			"text": "$(thing)Dzika Kolendra$() rośnie w temp. od 5 do 15 C oraz przy opadach między 0 do 150mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=1]"
+					}
+				}
+			],
+			"name": "Kmin rzymski",
+			"text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=1]"
+					}
+				}
+			],
+			"name": "Oregano",
+			"text": "$(thing)Dzikie oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=1]"
+					}
+				}
+			],
+			"name": "Ziele Angielskie",
+			"text": "$(thing)Dzikie Ziele Angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=1]"
+					}
+				}
+			],
+			"name": "Wanilia",
+			"text": "$(thing)Dzika wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 a 500 mm.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "$(item)Kule nasienne() mogą być używane do sadzenia różnego rodzaju traw. Może to być przydatne po wyczyszczeniu obszaru pod zbudowanie bazy. Przepis na kulę nasienną wymaga $(item)Kompostu$() i 4 $(thing)Nasion$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "",
+			"text": "Trawa Łąkowa.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Trawa Łąkowa dojrzewa z upływem czasu. Gdy dojrzeje, ma szansę rozprzestrzenić się na otaczające bloki lub zamienić się w coś nowego. Bloki Trawy Łąkowej rozdzielone przez inny blok trawy nie rozprzestrzeniają się.$(br)Po tym, jak Trawa Łąkowa zamieni się w inną trawę, możesz ją zebrać za pomocą $(item)Nożyc$()."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 19,
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": 1,
+		"firmalife:plant/bay_laurel": 2,
+		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/cilantro": 4,
+		"firmalife:plant/cumin": 5,
+		"firmalife:plant/oregano": 6,
+		"firmalife:plant/pimento": 7,
+		"firmalife:plant/vanilla": 8,
+		"firmalife:seed_ball": 9
+	}
+}

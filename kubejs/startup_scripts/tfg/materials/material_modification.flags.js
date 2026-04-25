@@ -32,7 +32,8 @@ function registerTFGFlagsMaterialModification(event) {
 		GENERATE_FINE_WIRE,
 		NO_ORE_PROCESSING_TAB,
 		NO_ORE_SMELTING,
-		DISABLE_DECOMPOSITION
+		DISABLE_DECOMPOSITION,
+		GENERATE_LENS
 	} = $MATERIAL_FLAGS
 
 	GTMaterials.Clay.addFlags(DISABLE_DECOMPOSITION);
@@ -54,6 +55,15 @@ function registerTFGFlagsMaterialModification(event) {
 	GTMaterials.Thorium.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Uraninite.addFlags(GENERATE_DUSTY_ORES);
 	GTMaterials.Hematite.addFlags(GENERATE_DUSTY_ORES);
+
+	// Generate Lenses
+
+	GTMaterials.Apatite.addFlags(GENERATE_LENS)
+	GTMaterials.Spessartine.addFlags(GENERATE_LENS)
+	GTMaterials.GarnetYellow.addFlags(GENERATE_LENS)
+	GTMaterials.Olivine.addFlags(GENERATE_LENS)
+	GTMaterials.Grossular.addFlags(GENERATE_LENS)
+	GTMaterials.Coal.addFlags(GENERATE_LENS)
 
 	// Castable stuff 
 	GTMaterials.Copper.addFlags(CAN_BE_UNMOLDED);
@@ -201,4 +211,5 @@ function registerTFGFlagsMaterialModification(event) {
 	// Hide ore processing tab for plutonium
 	GTMaterials.Plutonium239.addFlags(GENERATE_ROD, GENERATE_LONG_ROD, NO_ORE_PROCESSING_TAB, NO_ORE_SMELTING)
 	GTMaterials.Thorium.addFlags(NO_ORE_SMELTING)
+	GTMaterials.Coal.addFlags(NO_ORE_PROCESSING_TAB)
 }

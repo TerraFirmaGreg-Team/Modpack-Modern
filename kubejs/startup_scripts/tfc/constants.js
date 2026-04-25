@@ -313,8 +313,6 @@ global.TFC_DISABLED_ITEMS = /** @type {const} */ ([
     "tfc:ore/cryolite",
     "tfc:ore/saltpeter",
     "tfc:ore/borax",
-    "tfc:ore/bituminous_coal",
-    "tfc:ore/lignite",
     "tfc:ore/sylvite",
 
     // Axles
@@ -674,6 +672,7 @@ global.TFC_SOFTWOOD_TYPES = /** @type {const} */ ([
 ]);
 
 global.TFC_MUD_TYPES = /** @type {const} */ (["silt", "loam", "sandy_loam", "silty_loam"]);
+global.TFG_MUD_TYPES = /** @type {const} */ (["alfisol", "mollisol", "oxisol", "podzol"]);
 
 /**
  * Хранит названия типов полублоков из камня в TFC. (Не кирпичей)
@@ -739,6 +738,7 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_glacian_mutton", output: "tfg:food/cooked_glacian_mutton", name: "cooked_glacian_mutton" },
     { input: "tfg:food/raw_sniffer_beef", output: "tfg:food/cooked_sniffer_beef", name: "cooked_sniffer_beef" },
     { input: "tfg:food/raw_wraptor", output: "tfg:food/cooked_wraptor", name: "cooked_wraptor" },
+    { input: "tfg:food/raw_bison_meat", output: "tfg:food/cooked_bison_meat", name: "cooked_bison_meat" },
     { input: "wan_ancient_beasts:toxlacanth", output: "wan_ancient_beasts:cooked_toxlacanth", name: "cooked_toxlacanth" },
     { input: "tfg:food/raw_springling_collar", output: "tfg:food/cooked_springling_collar", name: "cooked_springling_collar" },
     { input: "tfg:food/raw_walker_steak", output: "tfg:food/cooked_walker_steak", name: "cooked_walker_steak" },
@@ -751,7 +751,10 @@ global.TFC_MEAT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfg:food/raw_long_pig_filet", output: "tfg:food/cooked_long_pig_filet", name: "cooked_long_pig_filet" },
     { input: "tfg:food/raw_cruncher_ribs", output: "tfg:food/cooked_cruncher_ribs", name: "cooked_cruncher_ribs" },
     { input: "tfg:food/raw_stickastackatick", output: "tfg:food/cooked_stickastackatick", name: "cooked_stickastackatick" },
-    { input: "tfg:food/raw_burger_patty", output: "tfg:food/cooked_burger_patty", name: "cooked_burger_patty" }
+    { input: "tfg:food/raw_burger_patty", output: "tfg:food/cooked_burger_patty", name: "cooked_burger_patty" },
+    { input: "tfg:lentil_product", output: "tfg:food/cooked_lentil", name: "cooked_lentil" },
+    { input: "tfg:cassava_product", output: "tfg:food/cooked_cassava", name: "cooked_cassava" },
+    { input: "tfg:beans_product", output: "tfg:food/cooked_beans", name: "cooked_beans" }
 
 ]);
 
@@ -791,7 +794,9 @@ global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:plant/peach_sapling", output: "tfc:food/peach", leaves: "tfc:plant/peach_leaves" },
     { input: "tfc:plant/plum_sapling", output: "tfc:food/plum", leaves: "tfc:plant/plum_leaves" },
     { input: "tfc:plant/red_apple_sapling", output: "tfc:food/red_apple", leaves: "tfc:plant/red_apple_leaves" },
-    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" }
+    { input: "tfc:plant/banana_sapling", output: "tfc:food/banana" },
+    { input: "tfg:fruit_trees/lavacado_sapling", output: "tfg:food/lavacado", leaves: "tfg:fruit_trees/lavacado_leaves" },
+    { input: "tfg:fruit_trees/magmango_sapling", output: "tfg:food/magmango", leaves: "tfg:fruit_trees/magmango_leaves" }
 ]);
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -820,7 +825,14 @@ global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = /** @type {const} */ ([
     { input: "tfc:seeds/yellow_bell_pepper", output: "tfc:food/yellow_bell_pepper"},
     { input: "tfg:sunflower_seeds", output: "tfg:sunflower_product"},
     { input: "tfg:rapeseed_seeds", output: "tfg:rapeseed_product"},
-    { input: "tfg:flax_seeds", output: "tfg:flax_product"}
+    { input: "tfg:flax_seeds", output: "tfg:flax_product"},
+    { input: "tfg:beans_seeds", output: "tfg:beans_product"},
+    { input: "tfg:radish_seeds", output: "tfg:radish_product"},
+    { input: "tfg:lentil_seeds", output: "tfg:lentil_product"},
+    { input: "tfg:peanut_seeds", output: "tfg:peanut_product"},
+    { input: "tfg:cucumber_seeds", output: "tfg:cucumber_product"},
+    { input: "tfg:cassava_seeds", output: "tfg:cassava_product"},
+    { input: "tfg:ghost_pepper_seeds", output: "beneath:ghost_pepper"}
 ]);
 
 global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = /** @type {const} */ ([
@@ -876,20 +888,6 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
         unsalted_cheese: "tfc_gourmet:alpaca_brinza_slice", unsalted_wheel: "tfc_gourmet:alpaca_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     }
-]);
-
-global.TFC_DRY_MUD_BRICKS = /** @type {const} */ ([
-    "tfc:mud_brick/loam",
-    "tfc:mud_brick/sandy_loam",
-    "tfc:mud_brick/silt",
-    "tfc:mud_brick/silty_loam"
-]);
-
-global.TFC_WET_MUD_BRICKS = /** @type {const} */ ([
-    "tfc:drying_bricks/loam",
-    "tfc:drying_bricks/sandy_loam",
-    "tfc:drying_bricks/silt",
-    "tfc:drying_bricks/silty_loam"
 ]);
 
 global.TFC_ALCOHOL = /** @type {const} */ ([
@@ -1013,3 +1011,115 @@ global.TFC_DOUGHS = /** @type {const} */ ([
      'tfc:volcanic_oceanic_mountain_lake',
      'tfc:volcanic_oceanic_mountains'
  ])
+
+global.NEW_TFC_BIOMES = /** @type {const} */ ([
+    'tfg:earth/active_shield_volcano',
+    'tfg:earth/ancient_shield_volcano',
+    'tfg:earth/badlands',
+    'tfg:earth/burren_badlands',
+    'tfg:earth/burren_badlands_tall',
+    'tfg:earth/burren_plains',
+    'tfg:earth/burren_plateau',
+    'tfg:earth/burren_roche_moutonee',
+    'tfg:earth/buttes',
+    'tfg:earth/canyons',
+    'tfg:earth/cenote_canyons',
+    'tfg:earth/cenote_highlands',
+    'tfg:earth/cenote_hills',
+    'tfg:earth/cenote_plains',
+    'tfg:earth/cenote_plateau',
+    'tfg:earth/cenote_rolling_hills',
+    'tfg:earth/coastal_dunes',
+    'tfg:earth/deep_ocean',
+    'tfg:earth/deep_ocean_trench',
+    'tfg:earth/doline_canyons',
+    'tfg:earth/doline_highlands',
+    'tfg:earth/doline_hills',
+    'tfg:earth/doline_plains',
+    'tfg:earth/doline_plateau',
+    'tfg:earth/doline_rolling_hills',
+    'tfg:earth/dormant_shield_volcano',
+    'tfg:earth/drumlins',
+    'tfg:earth/dune_sea',
+    'tfg:earth/embayments',
+    'tfg:earth/extinct_shield_volcano',
+    'tfg:earth/extreme_doline_mountains',
+    'tfg:earth/extreme_doline_plateau',
+    'tfg:earth/glacially_carved_mountains',
+    'tfg:earth/glacially_carved_oceanic_mountains',
+    'tfg:earth/glaciated_mountains',
+    'tfg:earth/glaciated_oceanic_mountains',
+    'tfg:earth/glaciated_shield_volcano',
+    'tfg:earth/grassy_dunes',
+    'tfg:earth/guano_island',
+    'tfg:earth/highlands',
+    'tfg:earth/hills',
+    'tfg:earth/hoodoos',
+    'tfg:earth/ice_sheet',
+    'tfg:earth/ice_sheet_edge',
+    'tfg:earth/ice_sheet_mountains',
+    'tfg:earth/ice_sheet_mountains_edge',
+    'tfg:earth/ice_sheet_oceanic',
+    'tfg:earth/ice_sheet_oceanic_mountains',
+    'tfg:earth/ice_sheet_oceanic_mountains_edge',
+    'tfg:earth/ice_sheet_shield_volcano',
+    'tfg:earth/ice_sheet_shore',
+    'tfg:earth/ice_sheet_tuyas',
+    'tfg:earth/ice_sheet_tuyas_edge',
+    'tfg:earth/inverted_patterned_ground',
+    'tfg:earth/knob_and_kettle',
+    'tfg:earth/lake',
+    'tfg:earth/low_canyons',
+    'tfg:earth/lowlands',
+    'tfg:earth/meltwater_lake',
+    'tfg:earth/mesas',
+    'tfg:earth/mountain_lake',
+    'tfg:earth/mountains',
+    'tfg:earth/mud_flats',
+    'tfg:earth/ocean',
+    'tfg:earth/ocean_reef',
+    'tfg:earth/oceanic_mountain_lake',
+    'tfg:earth/oceanic_mountains',
+    'tfg:earth/old_mountain_lake',
+    'tfg:earth/old_mountains',
+    'tfg:earth/old_shield_volcano_shore',
+    'tfg:earth/patterned_ground',
+    'tfg:earth/plains',
+    'tfg:earth/plateau',
+    'tfg:earth/plateau_lake',
+    'tfg:earth/plateau_wide',
+    'tfg:earth/river',
+    'tfg:earth/rocky_plateau',
+    'tfg:earth/rocky_shores',
+    'tfg:earth/rolling_hills',
+    'tfg:earth/salt_flats',
+    'tfg:earth/salt_marsh',
+    'tfg:earth/sea_stacks',
+    'tfg:earth/setback_cliffs',
+    'tfg:earth/shield_volcano_shore',
+    'tfg:earth/shilin_canyons',
+    'tfg:earth/shilin_highlands',
+    'tfg:earth/shilin_hills',
+    'tfg:earth/shilin_plains',
+    'tfg:earth/shilin_plateau',
+    'tfg:earth/shore',
+    'tfg:earth/stair_step_canyons',
+    'tfg:earth/stone_circles',
+    'tfg:earth/subglacial_lake',
+    'tfg:earth/sunken_shield_volcano',
+    'tfg:earth/terrace_lower',
+    'tfg:earth/terrace_upper',
+    'tfg:earth/tidal_flats',
+    'tfg:earth/tower_karst_bay',
+    'tfg:earth/tower_karst_canyons',
+    'tfg:earth/tower_karst_highlands',
+    'tfg:earth/tower_karst_hills',
+    'tfg:earth/tower_karst_lake',
+    'tfg:earth/tower_karst_plains',
+    'tfg:earth/tuyas',
+    'tfg:earth/volcanic_mountain_lake',
+    'tfg:earth/volcanic_mountains',
+    'tfg:earth/volcanic_oceanic_mountain_lake',
+    'tfg:earth/volcanic_oceanic_mountains',
+    'tfg:earth/whorled_canyons'
+])

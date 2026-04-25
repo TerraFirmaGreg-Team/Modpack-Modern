@@ -1,0 +1,20 @@
+# [Energy Analyzer] Maximum machines linkable per item (1-64)
+energy_analyzer.max_linked_machines: 16
+# [Energy Analyzer] How often energy data is refreshed in ticks (20 = 1s, min 5)
+energy_analyzer.refresh_interval_ticks: 20
+# [Energy Analyzer] Show per-hatch energy breakdown in the UI
+energy_analyzer.show_per_hatch_details: true
+# [Energy Analyzer] Seconds of energy history to graph (5-120)
+energy_analyzer.history_seconds: 30
+# [Manager] Maximum number of multiblocks detected and shown in the UI (1-128)
+manager.max_detected_multiblocks: 32
+# [Manager] Allow upgrading components using items from a linked ME network (requires AE2)
+manager.allow_me_network_upgrade: true
+# [Manager] How long the multiblock highlight lasts in the world after clicking (seconds, 1-60)
+manager.highlight_duration_seconds: 10
+# [Manager] Highlight color as hex RGB, e.g. 00AAFF = blue, FFAA00 = orange, 00FF88 = green
+manager.highlight_color: 00AAFF
+# [Schematic] Preserve AE2/ME bus slot configurations when copying and pasting multiblocks (requires AE2)
+schematic.allow_ae2_config_copy: true
+# [Schematic] Allow the Placement Planner 'Build All' button to place real blocks in the world. Disabled by default — the planner is a planning tool, not a builder.
+schematic.planner_build_all_enabled: false

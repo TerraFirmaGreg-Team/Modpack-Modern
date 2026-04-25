@@ -8,6 +8,18 @@ function registerTFGWoodItems(event) {
 			.tag('tfc:lumber')
 	})
 
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => {
+		event.create(`tfg:wood/lumber/${wood.name}`)
+			.translationKey(`item.tfg.item.wood.lumber.${wood.name}`)
+			.tag('tfc:lumber')
+	})
+
+	global.WAB_WOOD.forEach(wood => {
+		event.create(`tfg:wood/lumber/${wood.name}`)
+			.translationKey(`item.tfg.item.wood.lumber.${wood.name}`)
+			.tag('tfc:lumber')
+	})
+
 	
 	event.create('tfg:twigs/strophar')
 		.tag('tfc:twigs')

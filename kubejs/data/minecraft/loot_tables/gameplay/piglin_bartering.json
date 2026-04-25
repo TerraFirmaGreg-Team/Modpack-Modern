@@ -117,7 +117,17 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:cinnabar_gem",
+					"name": "minecraft:redstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
 					"weight": 100
 				},
 				{

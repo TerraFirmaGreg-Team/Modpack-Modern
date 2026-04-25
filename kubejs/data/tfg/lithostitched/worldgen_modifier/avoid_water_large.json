@@ -2,7 +2,9 @@
 	"type": "lithostitched:set_structure_spawn_condition",
 	"structures": [
 		"tfg:illagers/norse_village_living",
-		"tfg:illagers/norse_village_ruined"
+		"tfg:illagers/norse_village_ruined",
+		"tfg:illagers/arabic_village_living",
+		"tfg:illagers/yurts_village_living"
 	],
 	"spawn_condition": {
 		"type": "lithostitched:grid",
@@ -11,7 +13,7 @@
 			"biomes": "#tfg:never_has_structure/illages"
 		},
 		"radius": 105,
-		"distance_between_points": 15,
+		"distance_between_points": 8,
 		"allowed_count": 0
 	}
 }

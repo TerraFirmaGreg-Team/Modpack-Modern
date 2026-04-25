@@ -1,0 +1,19 @@
+{
+    "type": "tfg:bedrock_spout",
+    "config": {
+        "size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 9,
+                "min_inclusive": 6
+            }
+        },
+        "surface_offset": {
+            "type": "minecraft:uniform",
+            "value": {
+                "max_inclusive": 2,
+                "min_inclusive": 1
+            }
+        }
+    }
+}

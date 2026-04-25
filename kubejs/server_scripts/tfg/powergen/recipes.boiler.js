@@ -62,6 +62,7 @@ function registerTFGBoilerRecipes(event) {
 	removeBoilerRecipe('gtceu_tiny_charcoal_dust')
 	removeBoilerRecipe('gtceu_pure_coal_dust')
 	removeBoilerRecipe('gtceu_impure_coal_dust')
+	removeBoilerRecipe('gtceu_coal_lens')
 	removeBoilerRecipe('createaddition_biomass_pellet')
 	removeBoilerRecipe('createaddition_biomass_pellet_block')
 
@@ -96,6 +97,18 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 
+	event.recipes.gtceu.steam_boiler('tfg:lignite')
+		.itemInputs('tfc:ore/lignite')
+		.duration(60 * 20) // same as charcoal
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+		
+	event.recipes.gtceu.steam_boiler('tfg:bituminous_coal')
+		.itemInputs('tfc:ore/bituminous_coal')
+		.duration(80 * 20) // same as vanilla coal used to be
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
 	// Small nerf to charcoal
 
 	event.forEachRecipe({ id: /gtceu:(steam_boiler|large_boiler)\/.*charcoal.*/ }, recipe => {
@@ -108,6 +121,11 @@ function registerTFGBoilerRecipes(event) {
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil" })
 	event.remove({ id: "gtceu:large_boiler/gtceu_oil_heavy" })
 	event.remove({ id: "gtceu:large_boiler/gtceu_fish_oil" })
+
+	// Booster
+	event.remove({ id: "gtceu:large_boiler/gtceu_creosote" })
+	event.remove({ id: "gtceu:large_boiler/wood_gas" })
+
 	// This generates both a small boiler and large boiler recipe. Remove it above to avoid a duplicate
 	event.recipes.gtceu.steam_boiler('tfg:oil')
 		.inputFluids(Fluid.of('gtceu:oil', 200))
@@ -141,11 +159,6 @@ function registerTFGBoilerRecipes(event) {
 		.dimension('minecraft:the_nether')
 
 	// Same stats as fish oil
-	event.recipes.gtceu.steam_boiler('tfg:olive_oil')
-		.inputFluids(Fluid.of('tfc:olive_oil', 160))
-		.duration(200)
-		.dimension('minecraft:overworld')
-		.dimension('minecraft:the_nether')
 
 	event.recipes.gtceu.steam_boiler('tfg:seed_oil')
 		.inputFluids(Fluid.of('gtceu:seed_oil', 160))
@@ -162,6 +175,65 @@ function registerTFGBoilerRecipes(event) {
 	event.recipes.gtceu.steam_boiler('tfg:tallow')
 		.inputFluids(Fluid.of('tfc:tallow', 160))
 		.duration(200)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	// Super Fuel Boiler
+	// Weird test
+
+	event.recipes.gtceu.super_boiler('tfg:syngas_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('tfg:syngas', 20000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:syngas_fuel')
+		.itemInputs(Item.of('#minecraft:coals', 1))
+		.inputFluids(Fluid.of('tfg:syngas', 20000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:light_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:light_fuel', 20000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:light_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:light_fuel', 20000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:heavy_fuel_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:heavy_fuel', 20000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:heavy_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:heavy_fuel', 20000*4))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:naphtha_binder')
+		.itemInputs(Item.of('gtceu:bio_chaff', 1))
+		.inputFluids(Fluid.of('gtceu:naphtha', 20000))
+		.duration(20*150)
+		.dimension('minecraft:overworld')
+		.dimension('minecraft:the_nether')
+
+	event.recipes.gtceu.super_boiler('tfg:naphtha_fuel')
+		.itemInputs(Item.of('minecraft:charcoal', 1))
+		.inputFluids(Fluid.of('gtceu:naphtha', 20000*4))
+		.duration(20*150)
 		.dimension('minecraft:overworld')
 		.dimension('minecraft:the_nether')
 

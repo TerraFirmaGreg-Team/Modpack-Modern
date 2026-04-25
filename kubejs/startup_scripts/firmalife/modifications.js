@@ -9,10 +9,17 @@ function registerFirmalifeItemModifications(event) {
 	event.modify('firmalife:mixing_bowl', item => {
 		item.setCraftingRemainder('firmalife:mixing_bowl')
 	})
+
+	event.modify('firmalife:ice_shavings', item => {
+		item.foodProperties = food => {
+			food.hunger(0)
+			food.saturation(0)
+		}
+	})
 	
 	//#region add cooling/heating to foods
 	global.COOLING_FOODS.forEach(food => {
-		event.modify(food, item =>{
+		event.modify(food, item => {
 			item.foodProperties = food => {
 				food.effect('tfg:cooling', 20, 0, 1)
 			}
@@ -20,7 +27,7 @@ function registerFirmalifeItemModifications(event) {
 	})
 	
 	global.WARMING_FOODS.forEach(food => {
-		event.modify(food, item =>{
+		event.modify(food, item => {
 			item.foodProperties = food => {
 				food.effect('tfg:warming', 20, 1, 1)
 			}

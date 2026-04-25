@@ -1,0 +1,4213 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Cultures",
+	"category": "tfc:mechanics",
+	"icon": "tfc:textures/item/food/wheat.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Les cultures sont une source de nourriture et autres matériaux. Bien que chaque culture soit différente d'une autre, elles partagent des principes similaires. Afin de commencer à cultiver, vous aurez besoin de $(thing)Graines$(), qui s'obtiennent en recherchant des $(l:the_world/wild_crops)Cultures sauvages$() puis en les cassant.$(br2)Vos graines obtenues, vous aurez besoin d'une $(thing)Houe$(). Les graines sont aussi utiles en tant qu'$(l:mechanics/fishing)appât$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "En plus d'en trouver dans des cultures sauvages, les graines peuvent aussi venir de cultures existantes. Quand une culture mature meurt - à cause du temps, ou en la laissant pourrir - elle se transformera en graine, permettant d'obtenir plus de graines qui pourront être utilisé pour faire pousser encore plus de cultures à la prochaine saison."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Contenu",
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)Orge$()$(li)$(l:tfc:mechanics/crops#beet)Betterave$()$(li)$(l:tfc:mechanics/crops#cabbage)Chou$()$(li)$(l:tfc:mechanics/crops#canola)Colza$()$(li)$(l:tfc:mechanics/crops#carrot)Carotte$()$(li)$(l:tfc:mechanics/crops#cucumber)Concombre$()$(li)$(l:tfc:mechanics/crops#flax)Lin$()$(li)$(l:tfc:mechanics/crops#garlic)Ail$()$(li)$(l:tfc:mechanics/crops#green_bean)Haricot vert$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentilles$()$(li)$(l:tfc:mechanics/crops#maize)Maïs$()$(li)$(l:tfc:mechanics/crops#melon)Pastèque$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)Avoine$()$(li)$(l:tfc:mechanics/crops#onion)Oignon$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Pomme de terre$()$(li)$(l:tfc:mechanics/crops#pumpkin)Citrouille$()$(li)$(l:tfc:mechanics/crops#radish)Radis$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Poivron rouge$()$(li)$(l:tfc:mechanics/crops#rice)Riz$()$(li)$(l:tfc:mechanics/crops#rye)Seigle$()$(li)$(l:tfc:mechanics/crops#soybean)Soja$()$(li)$(l:tfc:mechanics/crops#squash)Courge$()$(li)$(l:tfc:mechanics/crops#sugarcane)Canne à sucre$()$(li)$(l:tfc:mechanics/crops#sunflower)Tournesol$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomate$()$(li)$(l:tfc:mechanics/crops#wheat)Blé$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Poivron jaune$()"
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head_1"
+			],
+			"text": "Pour commencer, une $(thing)Houe en pierre$() peut être $(thing)taillée, comme ci-dessus."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)Les houes fonctionnent comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$().  Elle peuvent auss être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Toutes les cultures doivent être plantées sur de la terre labourée pour pousser. Certaines cultures ont des exigences supplémentaires comme être submergées ou avoir besoin d'un tuteur.$(br2)Bien que les cultures n'aient pas besoin de $(thing)nutriments$() pour pousser, ceux-ci aident grandement. Il y a tois nutriments : l'$(b)Azote$(), le $(6)Phosphore$(), et le $(d)Potassium$(). Chaque culture possède un nutriment favori.",
+			"title": "Faire pousser vos cultures"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Consommer son nutriment préféré pousse une culture à grandir plus vite et à avoir un meilleur rendement lors de la récolte. Cela signifie que les cultures qui ont consommé plus de nutriments donnent plus de nourritures quand elles sont cassées ! Consommer un nutriment remplit également légèrement les autres nutriments autour de lui.$(br2)Les prochaines pages recensent toutes les cultures présentes dans TFC."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barley",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 18 - 75 %$(br)$(bold)Nutriment$() : Azote$(br2)L'orge est une culture d'un bloc de haut. Des graines d'orge peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Orge$() et des $(thing)Graines d'orge$().",
+			"title": "Orge"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/barley[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oat",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 35 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)L'avoine est une culture d'un bloc de haut. Des graines d'avoine peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Avoine$() et des $(thing)Graines d'avoine$().",
+			"title": "Avoine"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/oat[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rye",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 85 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le seigle est une culture d'un bloc de haut. Des graines de seigle peuvent être plantées dans de la terre labourée et produisent du $(thing)Seigle$() et des $(thing)Graines de seigle$().",
+			"title": "Seigle"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rye[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "maize",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le maïs est une culture de deux blocs de haut. Des graines de maïs peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Maïs$() et des $(thing)Graines de maïs$().",
+			"title": "Maïs"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/maize[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=3,part=top]",
+						"Y": "tfc:crop/maize[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=4,part=top]",
+						"Y": "tfc:crop/maize[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/maize[age=5,part=top]",
+						"Y": "tfc:crop/maize[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wheat",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le blé est une culture d'un bloc de haut. Des graines de blé peuvent être plantées dans de la terre labourée et produisent du $(thing)blé$() et des $(thing)Graines de blé$().",
+			"title": "Blé"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/wheat[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rice",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)Le riz est une culture d'un bloc de haut. Il doit être planté sous l'eau, dans de la terre labourée sous un seul bloc d'eau douce. Il produit du $(thing)Riz$() et des $(thing)Graines de riz$().",
+			"title": "Riz"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "Note : Pour pousser, le bloc de riz doit être $(thing)Submergé$().",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=0,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=1,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=2,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=3,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=4,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=5,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=6,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/rice[age=7,fluid=water]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beet",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 18 - 85 %$(br)$(bold)Nutriment$() : Potassium$(br2)La betterave est une culture d'un bloc de haut. Des graines de betterave peuvent être plantées dans de la terre labourée et produisent des $(thing)Betteraves$() et des $(thing)Graines de betterave$().",
+			"title": "Betterave"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/beet[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cabbage",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutriment$() : Azote$(br2)Le chou est une culture d'un bloc de haut. Des graines de chou peuvent être plantées dans de la terre labourée et produisent des $(thing)Choux$() et des $(thing)Graines de chou$().",
+			"title": "Chou"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/cabbage[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "carrot",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutriment$() : Potassium$(br2)La carotte est une culture d'un bloc de haut. Des graines de carotte peuvent être plantées dans de la terre labourée et produisent des $(thing)carottes$() et des $(thing)Graines de carotte$().",
+			"title": "Carotte"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/carrot[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garlic",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 75 %$(br)$(bold)Nutriment$() : Azote$(br2)L'ail est une culture d'un bloc de haut. Des graines d'ail peuvent être plantées dans de la terre labourée et produisent de l'$(thing)Ail$() et des $(thing)Graines d'ail$().",
+			"title": "Ail"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/garlic[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "green_bean",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 38 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le haricots verts est une culture grimpante de deux blocs de haut. Des graines d'haricot vert peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Haricots verts$() et des $(thing)Graines d'haricot vert$().",
+			"title": "Haricots verts"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "Un bâton est nécessaire pour que la culture pousse complètement.",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=0,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=0,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=1,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=1,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=2,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=2,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=3,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=3,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=4,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=4,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=5,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=5,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=6,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=6,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/green_bean[age=7,part=top,stick=true]",
+						"Y": "tfc:crop/green_bean[age=7,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "potato",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$() : Potassium$(br2)La pomme de terre est une culture d'un bloc de haut. Des graines de pomme de terre peuvent être plantées dans de la terre labourée et produisent des $(thing)Pommes de terre$() et des $(thing)Graines de pomme de terre$().",
+			"title": "Pommes de terre"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/potato[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pumpkin",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 30 - 80 %$(br)$(bold)Nutriment$() : Phosphore$(br2)La citrouille est une culture rampante. Des graines de citrouille peuvent être plantées dans de la terre labourée et produisent jusqu'à deux $(thing)Blocs de citrouilles$() au sol à côté d'elles quand elles sont matures. Si le bloc de citrouille est récolté, et que la plante mûrit à nouveau, elle produire plus de citrouilles. Les citrouilles peuvent être transformées en $(l:mechanics/lighting#jack_o_lanterns)Citrouille-lanternes$().",
+			"title": "Citrouilles"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=0]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=1]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=2]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=3]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=4]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=5]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=6]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/pumpkin[age=7]",
+						"P": "tfc:pumpkin"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "melon",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 75 - 100 %$(br)$(bold)Nutriment$() : Phosphore$(br2)La pastèque est une culture rampante. Des graines de pastèque peuvent être plantées dans de la terre labourée et produisent jusqu'à deux $(thing)Blocs de pastèque$() au sol à côté d'elles quand elles sont matures. Si le bloc de citrouille est récolté, et que la plante mûrit à nouveau, elle produire plus de pastèques.",
+			"title": "Pastèques"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=0]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=1]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=2]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=3]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=4]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=5]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=6]",
+						"P": "minecraft:air"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"   ",
+							" CP",
+							"   "
+						],
+						[
+							"GGG",
+							"G0G",
+							"GGG"
+						]
+					],
+					"mapping": {
+						"G": "tfc:farmland/loam",
+						"0": "tfc:farmland/loam",
+						"C": "tfc:crop/melon[age=7]",
+						"P": "tfc:melon"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "red_bell_pepper",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron rouge est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"title": "Poivrons rouges"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/red_bell_pepper[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yellow_bell_pepper",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 16 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 60 %$(br)$(bold)Nutriment$() : Potassium$(br2)Le poivron jaune est une culture cueillable. Ils peuvent être cueillis avec $(item)$(k:key.use)$() quand ils sont presques mûrs pour obtenir des Poivrons verts. Cueillir avec $(item)$(k:key.use)$() permet au plant de produire plus de poivrons à l'avenir plutôt que de le détruire.",
+			"title": "Poivrons jaunes"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/yellow_bell_pepper[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "onion",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 90 %$(br)$(bold)Nutriment$() : Azote$(br2)L'oignon est une culture d'un bloc de haut. Des graines d'oigon peuvent être plantées dans de la terre labourée et produisent des $(thing)Oignons$() et des $(thing)Graines d'oignon$().",
+			"title": "Oignon"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/onion[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "soybean",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 40 - 100 %$(br)$(bold)Nutriment$() : Azote$(br2)Le soja est une culture d'un bloc de haut. Des graines de soja peuvent être plantées dans de la terre labourée et produisent du $(thing)Soja$() et des $(thing)Graines de soja$().",
+			"title": "Soja"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/soybean[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "squash",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 23 - 95 %$(br)$(bold)Nutriment$() : Potassium$(br2)La courge est une culture d'un bloc de haut. Des graines de courge peuvent être plantées dans de la terre labourée et produisent des $(thing)Courges$() et des $(thing)Graines de courge$().",
+			"title": "Courge"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=0]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=1]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=2]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=3]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=4]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=5]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=6]",
+						"Y": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/squash[age=7]",
+						"Y": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sugarcane",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 40 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)La canne à sucre est une culture de deux blocs de haut. Des graines de canne à sucre peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Canne à sucre$() et des $(thing)Graines de canne à sucre$(). La canne sucre peut être utilisée pour faire du $(thing)Sucre$().",
+			"title": "Canne à sucre"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/sugarcane[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=4,part=top]",
+						"Y": "tfc:crop/sugarcane[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=5,part=top]",
+						"Y": "tfc:crop/sugarcane[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=6,part=top]",
+						"Y": "tfc:crop/sugarcane[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/sugarcane[age=7,part=top]",
+						"Y": "tfc:crop/sugarcane[age=7,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tomatoes",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 0 - 36 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 30 - 95 %$(br)$(bold)Nutriment$(): Potassium$(br2)La tomate est une culture grimpante de deux blocs de haut. Des graines de tomate peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut si un bâton est présent, et produisent des $(thing)Tomates$() et des $(thing)Graines de tomate$().",
+			"title": "Tomates"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "Un bâton est nécessaire pour que la culture pousse complètement.",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=0,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=0,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=1,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=1,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=2,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=2,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=3,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=3,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=4,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=4,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=5,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=5,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=6,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=6,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/tomato[age=7,part=top,stick=true]",
+						"Y": "tfc:crop/tomato[age=7,part=bottom,stick=true]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jute",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 25 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)La jute est une culture de deux blocs de haut. Des graines de jute peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent de la $(thing)Jute$() et des $(thing)Graines de jute$().",
+			"title": "Jute"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/jute[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=3,part=top]",
+						"Y": "tfc:crop/jute[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=4,part=top]",
+						"Y": "tfc:crop/jute[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/jute[age=5,part=top]",
+						"Y": "tfc:crop/jute[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "papyrus",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 19 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutrmient$(): Potassium$(br2)Le papyrus est une culture de deux blocs de haut. Des graines de papyrus peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent du $(thing)Papyrus$() et des $(thing)Graines de papyrus$().",
+			"title": "Papyrus"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"text": "",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfc:crop/papyrus[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=3,part=top]",
+						"Y": "tfc:crop/papyrus[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=4,part=top]",
+						"Y": "tfc:crop/papyrus[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfc:crop/papyrus[age=5,part=top]",
+						"Y": "tfc:crop/papyrus[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tournesol",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Tournesol"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:sunflower[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=4,part=top]",
+						"Y": "tfg:sunflower[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=5,part=top]",
+						"Y": "tfg:sunflower[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:sunflower[age=6,part=top]",
+						"Y": "tfg:sunflower[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Le $(thing)tournesol sauvage$() pousse entre 5 et 40 °C, et entre 100 et 450 mm de précipitations. Leurs graines peuvent aussi être grillées et mangées !"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "canola",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -5 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 10 - 60 %$(br)$(bold)Nutrmient$(): Phosphore$(br2)Le colza est une culture de deux blocs de haut. Des graines de colza peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Siliques de colza$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Colza"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:rapeseed[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=3,part=top]",
+						"Y": "tfg:rapeseed[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=4,part=top]",
+						"Y": "tfg:rapeseed[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=5,part=top]",
+						"Y": "tfg:rapeseed[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:rapeseed[age=6,part=top]",
+						"Y": "tfg:rapeseed[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Le $(thing)Colza sauvage$(), aussi connu sous le nom de $(thing)Canola$(), pousse entre -7 et 25 °C, et entre 50 et 350 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flax",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le lin est une culture de deux blocs de haut. Des graines de lin peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Tiges de lin$() qui peuvent être transformées en $(thing)Lin$() ou en $(thing)Toile$(). Le colza joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
+			"title": "Lin"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:flax[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=4,part=top]",
+						"Y": "tfg:flax[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=5,part=top]",
+						"Y": "tfg:flax[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:flax[age=6,part=top]",
+						"Y": "tfg:flax[age=6,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Le $(thing)lin sauvage$() pousse entre -5 et 23 °C, et entre 175 et 475 mm de précipitations."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cucumber",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 70 - 100 %$(br)$(bold)Nutriment$(): Azote$(br2)Le concombre est une culture de deux blocs de haut. Des graines de concombre peuvent être plantée dans de la terre labourée, grandisent jusqu'à deux blocs de haut, et produisent des $(thing)Tomates$() et des $(thing)Graines de tomate$(). $(br)$(bold)Le concombre a besoin d'un bâton pour grandir complètement.$()",
+			"title": "Concombre"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=0,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "minecraft:air",
+						"Y": "tfg:cucumber[age=1,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=2,part=top]",
+						"Y": "tfg:cucumber[age=2,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=3,part=top]",
+						"Y": "tfg:cucumber[age=3,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=4,part=top]",
+						"Y": "tfg:cucumber[age=4,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "tfg:cucumber[age=5,part=top]",
+						"Y": "tfg:cucumber[age=5,part=bottom]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Le $(thing)concombre sauvage$() pousse entre 15 et 40 °C, et entre 350 et 500 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radish",
+			"title": "Radis",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 15 - 65 %$(br)$(bold)Nutriment$(): Potassium$(br2)Les radis peuvent être mangés pour vos besoins en $(thing)Légumes$(). Si vous avez besoin d'une plante capable de résister à de faibles températures, les radis sont un bon choix."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:radish[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Le $(thing)radis sauvage$() pousse entre -16 et 4 °C, et entre 75 et 325 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lentil",
+			"title": "Lentilles",
+			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 50 - 100 %$(br)$(bold)Nutriment$(): Phosphore$(br2)Les lentilles peuvent être mangés pour vos besoins en $(thing)Légumes$(), mais il est recommandé de les cuire d'abord. Les lentilles sont un autres bon choix pour cultiver dans des climats plus froids."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:lentil[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "Les $(thing)lentilles sauvage$() poussent entre -18 et 42 °C, et entre 250 et 425 mm de précipitations.",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfc:seeds/barley": 8,
+		"tfc:food/barley": 8,
+		"tfc:seeds/oat": 10,
+		"tfc:food/oat": 10,
+		"tfc:seeds/rye": 12,
+		"tfc:food/rye": 12,
+		"tfc:seeds/maize": 14,
+		"tfc:food/maize": 14,
+		"tfc:seeds/wheat": 16,
+		"tfc:food/wheat": 16,
+		"tfc:seeds/rice": 18,
+		"tfc:food/rice": 18,
+		"tfc:seeds/beet": 20,
+		"tfc:food/beet": 20,
+		"tfc:seeds/cabbage": 22,
+		"tfc:food/cabbage": 22,
+		"tfc:seeds/carrot": 24,
+		"tfc:food/carrot": 24,
+		"tfc:seeds/garlic": 26,
+		"tfc:food/garlic": 26,
+		"tfc:seeds/green_bean": 28,
+		"tfc:food/green_bean": 28,
+		"tfc:seeds/potato": 30,
+		"tfc:food/potato": 30,
+		"tfc:seeds/pumpkin": 32,
+		"tfc:seeds/melon": 34,
+		"tfc:seeds/red_bell_pepper": 36,
+		"tfc:seeds/yellow_bell_pepper": 38,
+		"tfc:seeds/onion": 40,
+		"tfc:food/onion": 40,
+		"tfc:seeds/soybean": 42,
+		"tfc:food/soybean": 42,
+		"tfc:seeds/squash": 44,
+		"tfc:food/squash": 44,
+		"tfc:seeds/sugarcane": 46,
+		"tfc:food/sugarcane": 46,
+		"tfc:seeds/tomato": 48,
+		"tfc:food/tomato": 48,
+		"tfc:seeds/jute": 50,
+		"tfc:jute": 50,
+		"tfc:seeds/papyrus": 52,
+		"tfc:papyrus": 52,
+		"tfg:sunflower_seeds": 54,
+		"tfg:sunflower_product": 54,
+		"tfg:rapeseed_seeds": 56,
+		"tfg:rapeseed_product": 56,
+		"tfg:flax_seeds": 58,
+		"tfg:flax_product": 58,
+		"tfg:cucumber_seeds": 60,
+		"tfg:cucumber_product": 60,
+		"tfg:radish_seeds": 62,
+		"tfg:radish_product": 62,
+		"tfg:lentil_seeds": 64,
+		"tfg:lentil_product": 64
+	}
+}

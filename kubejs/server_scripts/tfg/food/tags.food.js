@@ -16,6 +16,9 @@ function registerTFGFoodItemTags(event) {
 	event.add("tfg:sugars", "afc:birch_sugar");
 	event.add("tfg:sugars", "afc:maple_sugar");
 
+	event.add('tfc:foods/vegetables', 'tfg:food/lavacado')
+	event.add('tfc:foods/fruits', 'tfg:food/magmango')
+
 	const RAW_MEATS = [
 		'tfg:food/raw_birt',
 		'tfg:food/raw_crawlermari',
@@ -45,15 +48,8 @@ function registerTFGFoodItemTags(event) {
 
 	global.WARMING_FOODS.forEach(food => { event.add('tfg:warming_foods', food) })
 
-	//jam sandwhich stuff
-	const usable_in_jam_sandwich = Ingredient.of('#tfc:foods/usable_in_jam_sandwich').itemIds.toArray().map(String);
-	const preserves = Ingredient.of('#tfc:foods/preserves').itemIds.toArray().map(String);
-
-	const usable_in_jam_sandwich_2 = usable_in_jam_sandwich.filter(item => !preserves.includes(item));
-
-	usable_in_jam_sandwich_2.forEach(item => {
-		event.add('tfc:foods/usable_in_jam_sandwich_2', item);
-	});
+	// Alias of tfc:foods/preserves, used to give the 2-jam sandwich recipe a distinct tree key in GT's RecipeDB.
+	event.add('tfc:foods/preserves_2', '#tfc:foods/preserves')
 
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_sniffer_beef')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_wraptor')
@@ -135,6 +131,8 @@ function registerTFGFoodItemTags(event) {
 		'tfg:food/cooked_walker_steak',
 		'tfg:food/raw_crusher_meat',
 		'tfg:food/cooked_crusher_meat',
+		'tfg:food/raw_bison_meat',
+		'tfg:food/cooked_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat',
 		'wan_ancient_beasts:cooked_ancient_meat'
 	];
@@ -192,6 +190,7 @@ function registerTFGFoodItemTags(event) {
 		'tfc:food/venison',
 		'tfg:food/raw_sniffer_beef',
 		'tfg:food/raw_crusher_meat',
+		'tfg:food/raw_bison_meat',
 		'wan_ancient_beasts:raw_ancient_meat'
 	];
 	burgerMeats.forEach(item => {
@@ -274,7 +273,8 @@ function registerTFGFoodItemTags(event) {
 		'tfc_gourmet:falafel',
 		'tfc_gourmet:hummus',
 		'tfc_gourmet:sauerkraut',
-		'tfc_gourmet:bratwurst'
+		'tfc_gourmet:bratwurst',
+		'tfg:buttered_popcorn'
 	];
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
@@ -302,6 +302,12 @@ function registerTFGFoodItemTags(event) {
 	event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
 	event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
 	event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/barrel_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/silken_pincushion_cactus')
+	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear')
+	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear_purple')
 
 	event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
@@ -332,7 +338,6 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfc:foods/dairy', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_sandwich', 'ad_astra:cheese')
 	event.add('tfc:foods/usable_in_jam_sandwich', 'ad_astra:cheese')
-	event.add('tfc:foods/usable_in_jam_sandwich_2', 'ad_astra:cheese')
 	event.add('firmalife:foods/cheeses', 'ad_astra:cheese')
 
 	// Auto-eat blacklist for backpack feeding upgrade and quarktech helmet

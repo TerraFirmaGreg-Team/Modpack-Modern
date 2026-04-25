@@ -1,0 +1,237 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Bigornas Primitivas",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Uma alternativa à fundição de ferramentas no jogo inicial, e a exigência de metais de nível mais alto, é usar uma $(thing)Bigorna$(). Uma bigorna é um bloco que pode ser usado para dois processos diferentes: $(l:mechanics/anvils#working)trabalhar$() e $(l:getting_started/primitive_anvils#welding)soldar$(). Uma bigorna pode soldar barras duplas do tipo de metal necessário para criar o próximo nível de bigorna acima dela, que será necessário para trabalhar outros itens a partir daquele metal."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Primeiro, você precisa adquirir um bloco de $(thing)pedra bruta$(), que seja $(thing)ígnea extrusiva$() (Riólito, Basalto, Andesito, ou Dacito) ou $(thing)ígnea intrusiva$() (Granito, Diorito, ou Gabro). Você pode encontrar e usar um bloco exposto no mundo, ou você pode $(l:getting_started/primitive_anvils#raw_rock)extrair um$() das rochas ao redor."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
+      "title": "Bigorna de Pedra"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Convertendo a pedra bruta central numa bigorna.",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        " 0 "
+    ],
+    [
+        "RRR"
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        "tfc:rock_anvil"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
+      "title": "Obtendo Pedra Bruta"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Minerando todos os seis lados de uma peça de pedra bruta - uma vez completa, o bloco central saltará como um item.",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "title": "Soldagem"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

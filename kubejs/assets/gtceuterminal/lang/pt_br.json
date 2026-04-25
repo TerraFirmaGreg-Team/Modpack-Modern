@@ -1,0 +1,16 @@
+{
+  "itemGroup.gtceuterminal": "Terminal GregTechCEu",
+  "item.gtceuterminal.multi_structure_manager": "Gerenciador Multi-Estrutura",
+  "item.gtceuterminal.schematic_interface": "Interface Esquemática",
+  "item.gtceuterminal.dismantler": "Desmontador",
+  "item.gtceuterminal.terminal.success": "Multibloco Construído com Sucesso",
+  "item.gtceuterminal.terminal.failed": "Falha ao Construir Multibloco",
+  "item.gtceuterminal.terminal.cooldown": "Terminal em Tempo de Espera",
+  "item.gtceuterminal.terminal.not_controller": "Não é um Controlador Multibloco",
+  "item.gtceuterminal.terminal.already_formed": "Multibloco Já Formado",
+  "item.gtceuterminal.multi_structure_manager.tooltip": "Gerenciar e Atualizar Multiblocos Próximos",
+  "item.gtceuterminal.schematic_interface.tooltip": "Copiar e Colar Esquemáticos de Multibloco",
+  "item.gtceuterminal.dismantler.tooltip": "Desmontar Multiblocos e Devolver Componentes",
+  "item.gtceuterminal.energy_analyzer": "Analisador de Energia",
+  "item.gtceuterminal.power_logger.desc": "Monitora o consumo de energia da máquina"
+}

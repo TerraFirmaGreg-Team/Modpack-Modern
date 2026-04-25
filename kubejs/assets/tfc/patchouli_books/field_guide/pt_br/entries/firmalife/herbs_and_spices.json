@@ -1,0 +1,325 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Ervas e Especiarias",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:spice/basil_leaves",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "No Firmalife, há diversas pequenas plantas que você pode coletar e cultivar por conta própria, as quais possuem propriedades culinárias. Todas podem ser encontradas na natureza e, após serem colhidas, podem ser cultivadas em uma $(l:firmalife/greenhouse)Estufa$(), onde consomem 20 pontos de N, P e K."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=1]"
+					}
+				}
+			],
+			"name": "Manjericão",
+			"text": "$(thing)Manjericão Selvagem$() cresce entre 12 e 25C, e 300 a 500mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=1]"
+					}
+				}
+			],
+			"name": "Loureiro",
+			"text": "$(thing)Loureiro Selvagem$() cresce entre 8 e 14C, e 25 a 225mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=1]"
+					}
+				}
+			],
+			"name": "Cardamomo",
+			"text": "$(thing)Cardamomo Selvagem$() cresce entre 18 e 30C, e 350 a 500mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=1]"
+					}
+				}
+			],
+			"name": "Coentro",
+			"text": "$(thing)Coentro Selvagem$() cresce entre 5 e 15C, e 0 a 150mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=1]"
+					}
+				}
+			],
+			"name": "Cominho",
+			"text": "$(thing)Cominho Selvagem$() cresce entre 6 e 20C, e 50 a 250mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=1]"
+					}
+				}
+			],
+			"name": "Orégano",
+			"text": "$(thing)Orégano Selvagem$() cresce entre 5 e 13C, e 50 a 150mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=1]"
+					}
+				}
+			],
+			"name": "Pimento",
+			"text": "$(thing)Pimento Selvagem$() cresce entre 15 e 30C, e 200 a 450mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=1]"
+					}
+				}
+			],
+			"name": "Baunilha",
+			"text": "$(thing)Baunilha Selvagem$() cresce entre 18 e 30C, e 200 a 500mm de precipitação.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "$(item)Bolas de Sementes$() podem ser usadas para plantar diferentes Gramas. Podem ser úteis após limpar a sua base para construção. A receita para a bola de semente requer $(item)Composto$() e 4 $(thing)Sementes$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "",
+			"text": "A butterfly grass plant.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 19,
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": 1,
+		"firmalife:plant/bay_laurel": 2,
+		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/cilantro": 4,
+		"firmalife:plant/cumin": 5,
+		"firmalife:plant/oregano": 6,
+		"firmalife:plant/pimento": 7,
+		"firmalife:plant/vanilla": 8,
+		"firmalife:seed_ball": 9
+	}
+}

@@ -90,7 +90,6 @@ const registerSingleGroups = (event) => {
         // Tools (Minecraft)
         '#tfc:pickaxes',
         '#tfc:shovels',
-        '#tfc:axes',
         '#tfc:hoes',
 
         // Tools (Forge)
@@ -150,6 +149,7 @@ const registerSingleGroups = (event) => {
         '#forge:bud_indicators',
         '#forge:glass',
         '#forge:glass_panes',
+        '#forge:coral_blocks',
 
         // Blocks (GTCEU)
         '#gtceu:lamps',
@@ -171,6 +171,11 @@ const registerSingleGroups = (event) => {
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
+        '#tfc:colored_glazed_terracotta',
+        '#tfc:corals',
+        '#tfc:colored_raw_alabaster',
+        '#tfc:colored_bricks_alabaster',
+        '#tfc:colored_polished_alabaster',
 
         // Stone-related
         '#tfc:rock/hardened',
@@ -179,6 +184,7 @@ const registerSingleGroups = (event) => {
         '#tfc:rock/smooth',
         '#tfc:rock/gravel',
         '#tfc:rock/aqueducts',
+        '#tfg:rock_spikes',
 
         // Blocks (Firmalife)
         '#firmalife:food_shelves',
@@ -210,7 +216,33 @@ const registerSingleGroups = (event) => {
         '#mcw_tfc_aio:gutters',
         '#mcw_tfc_aio:awnings',
         '#mcw_tfc_aio:furniture',
-        '#mcw_tfc_aio:stripped_furniture'
+        '#mcw_tfc_aio:stripped_furniture',
+
+        // Create
+        '#create:tracks',
+        '#create:valve_handles',
+        '#create:postboxes',
+        '#create:table_cloths',
+        '#create:toolboxes',
+        '#create:seats',
+        '#createdeco:placards',
+
+        // Steam n Rails
+        '#railways:conductor_caps',
+		'#tfg:incomplete_tracks',
+		'#tfg:locometal_blocks',
+        '#tfg:smokestacks',
+        '#tfg:train_connectors',
+		
+        // Misc
+        '#comforts:sleeping_bags',
+        '#comforts:hammocks',
+        '#minecraft:music_discs',
+        '#simplylight:any_lamp_on',
+        '#simplylight:any_lamp_off',
+        '#computercraft:disks',
+        '#wan_ancient_beasts:charger_armors',
+        '#tfg:crafting_stations'
     ]
 
     SINGLE_GROUPS_TO_REGISTER.forEach(x => {

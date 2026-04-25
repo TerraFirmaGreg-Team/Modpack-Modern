@@ -1,47 +1,57 @@
 {
-  "__comment__": "This file was automatically created by mcresources",
-  "type": "minecraft:empty",
-  "pools": [
-    {
-      "name": "loot_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "tfc:ore/small_cassiterite",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.55
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "tfc:rock/loose/schist",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "gtceu:raw_pyrite",
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.04
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:cassiterite_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.4
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:small_cassiterite_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfc:rock/loose/schist",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.5
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "gtceu:pyrite_dust",
+							"conditions": [
+								{
+									"condition": "minecraft:random_chance",
+									"chance": 0.1
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
 }

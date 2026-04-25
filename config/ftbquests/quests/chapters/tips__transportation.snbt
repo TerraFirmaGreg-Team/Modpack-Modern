@@ -646,10 +646,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"0A92F5C4BB6AF972"
-				"2B84F34BFA37C828"
-			]
+			dependencies: ["2B84F34BFA37C828"]
 			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
 			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
 			id: "3DF4F4848B231980"
@@ -1159,11 +1156,6 @@
 			subtitle: "{quests.tfg_tips.aircraft_upgrades.subtitle}"
 			tasks: [
 				{
-					id: "6DF2BE113934991F"
-					item: "immersive_aircraft:gyroscope"
-					type: "item"
-				}
-				{
 					id: "3825ED5E282B43EB"
 					item: "immersive_aircraft:sturdy_pipes"
 					type: "item"
@@ -1176,6 +1168,21 @@
 				{
 					id: "58C9E47E9F8301E6"
 					item: "immersive_aircraft:eco_engine"
+					type: "item"
+				}
+				{
+					id: "6DF2BE113934991F"
+					item: "immersive_aircraft:gyroscope"
+					type: "item"
+				}
+				{
+					id: "7C1F239C4E82212D"
+					item: "immersive_aircraft:gyroscope_dials"
+					type: "item"
+				}
+				{
+					id: "0AD1785F4FAFE3CB"
+					item: "immersive_aircraft:gyroscope_hud"
 					type: "item"
 				}
 			]

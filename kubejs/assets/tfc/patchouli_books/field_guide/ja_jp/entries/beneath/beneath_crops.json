@@ -1,0 +1,496 @@
+{
+	"name": "Beneath Crops",
+	"category": "tfc:beneath",
+	"icon": "tfg:textures/item/cassava_product.png",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Beneath Crops",
+			"text": "The $(thing)Beneath$() may be a harsh environment, but it is still possible to find crops there. Beneath crops are incredibly resilient and can grow in extreme heat conditions making them useful for surviving below the Earth and on the surface."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Crops in the beneath behave just the same as crops on the surface, they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isnt provided by the Beneath's natural light. To solve this problem, you can utilize $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() or any other available light source."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "内容物",
+			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cassava",
+			"title": "キャッサバ",
+			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 70 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)キャッサバは$(thing)野菜$()系の栄養を取ることができる食材です。$(thing)加熱調理$()してから食べた方が良いでしょう。$(br)"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:cassava[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Cassava$() grows in PLACEHOLDER。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "peanut",
+			"title": "Peanut",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:peanut[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Peanuts$() grow in PLACEHOLDER.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beans",
+			"title": "Beans",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:beans[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Beans$() grow in PLACEHOLDER.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_pepper",
+			"title": "Ghost Pepper",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=0]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=1]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=2]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=3]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=4]",
+						"Z": "tfc:farmland/loam"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"Y"
+						],
+						[
+							"Z"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"Y": "tfg:ghost_pepper[age=5]",
+						"Z": "tfc:farmland/loam"
+					}
+				}
+			],
+			"text": "$(thing)Wild Ghost Peppers$() grow in PLACEHOLDER.",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true,
+	"extra_recipe_mappings": {
+		"tfg:cassava_seeds": 4,
+		"tfg:cassava_product": 4,
+		"tfg:peanut_seeds": 6,
+		"tfg:peanut_product": 6,
+		"tfg:beans_seeds": 8,
+		"tfg:beans_product": 8,
+		"tfg:ghost_pepper_seeds": 10,
+		"beneath:ghost_pepper": 10
+	}
+}

@@ -304,14 +304,6 @@ function registerTFGKnappingRecipes(event) {
 
 	//#endregion
 
-	event.recipes.tfc.knapping('gtceu:flint_pickaxe_head', 'tfg:flint', [
-		" XXX ",
-		"X   X"
-	])
-		.ingredient('minecraft:flint')
-		.outsideSlotRequired(false)
-		.id('tfg:rock_knapping/flint_pickaxe_head')
-
 	event.recipes.tfc.knapping('gtceu:flint_sword_head', 'tfg:flint', [
 		"XX   ",
 		"XXX  ",
@@ -372,5 +364,26 @@ function registerTFGKnappingRecipes(event) {
 	])
 		.ingredient('5x minecraft:clay_ball')
 		.id('tfg:fire_clay_knapping/unfired_nugget_mold')
+		
+	event.recipes.tfc.knapping('tfg:unfired_spindle_head_mold', 'tfc:clay', [
+		"XXXXX",
+		"XX XX",
+		"     ",
+		"XX XX",
+		"XXXXX"
+	])
+		.ingredient('5x minecraft:clay_ball')
+		.id('tfg:clay_knapping/unfired_spindle_head_mold')
+
+	event.recipes.tfc.knapping('tfg:unfired_lamp_mold', 'tfc:clay', [
+		"XXXXX",
+		"XX XX",
+		"X X X",
+		"X   X",
+		"XXXXX"
+	])
+		.ingredient('5x minecraft:clay_ball')
+		.id('tfg:clay_knapping/unfired_lamp_mold')
+
 
 }

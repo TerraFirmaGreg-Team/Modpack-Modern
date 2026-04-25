@@ -1,0 +1,14 @@
+{
+  "tfc_gourmet.jade.aging": "正在熟化",
+  "tfc_gourmet.jade.not_aging": "沒有在熟化",
+  "tfc_gourmet.jade.slices": "可以切 %s 片",
+  "tfc_gourmet.jade.food_age": "熟成時間: %s",
+  "tfc_gourmet.jade.food_age.fresh": "新鮮的",
+  "tfc_gourmet.jade.food_age.aged": "熟成的",
+  "tfc_gourmet.jade.food_age.vintage": "陳年的",
+  "tfc_gourmet.jade.has_firepit": "有合格的篝火",
+  "tfc_gourmet.jade.no_firepit": "沒有合格的篝火",
+  "tfc_gourmet.jade.time_left": "剩餘時間：%s",
+  "tfc_gourmet.tooltip.food_trait.smoked": "熏製的",
+  "config.jade.plugin_tfc_gourmet.brinza_wheel": "乳酪"
+}

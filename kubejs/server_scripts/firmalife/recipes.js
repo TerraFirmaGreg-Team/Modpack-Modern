@@ -137,6 +137,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('8x firmalife:pineapple_yarn')
 		.duration(50)
 		.EUt(7)
+		
+	event.remove({ id: 'firmalife:crafting/pineapple_yarn' })
 
 	// Pineapple Leather
 	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_leather`)
@@ -307,26 +309,26 @@ const registerFirmaLifeRecipes = (event) => {
 		}).addMaterialInfo().id(`firmalife:crafting/greenhouse/${tier.tier}_greenhouse_port`)
 	});
 
-	event.recipes.gtceu.shaped('firmalife:sweeper', [
+	event.recipes.gtceu.shaped('2x firmalife:sweeper', [
 		'ABD',
 		'CB '
 	], {
-		A: '#forge:saw_heads/steel',
-		B: '#forge:rods/steel',
+		A: '#forge:saw_heads/wrought_iron',
+		B: '#forge:rods/wrought_iron',
 		C: '#forge:small_gears/red_alloy',
 		D: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('firmalife:crafting/sweeper')
 
-	event.recipes.gtceu.shaped('firmalife:picker', [
+	event.recipes.gtceu.shaped('4x firmalife:picker', [
 		'ABD',
 		'CC ',
 		'EE '
 	], {
-		A: '#forge:plates/steel',
+		A: '#forge:plates/wrought_iron',
 		B: '#forge:small_gears/red_alloy',
-		C: '#forge:rods/steel',
+		C: '#forge:rods/wrought_iron',
 		D: '#forge:tools/wrenches',
-		E: '#forge:hoe_heads/steel'
+		E: '#forge:hoe_heads/wrought_iron'
 	}).addMaterialInfo().id('firmalife:crafting/picker')
 
 	//#endregion

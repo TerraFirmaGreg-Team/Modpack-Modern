@@ -122,6 +122,7 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:crafting/cake' })
 	event.remove({ id: 'tfc:crafting/pumpkin_chunks' })
 	event.remove({ id: 'tfc:crafting/alabaster_brick' })
+	event.remove({ id: 'tfc:crafting/vanilla/redstone/sticky_piston' })
 
 	global.TFC_DOUGHS.forEach(dough => {
 		for (let i = 1; i <= 8; i++) {
@@ -143,4 +144,6 @@ function removeTFCRecipes(event) {
 	event.remove({ id: 'tfc:heating/metal/weak_red_steel_ingot' })
 	event.remove({ id: 'tfc:casting/weak_red_steel_ingot' })
 	event.remove({ id: 'tfc:casting/weak_red_steel_fire_ingot' })
+	
+	event.remove({ id: 'tfc:crafting/wool_yarn' })
 }

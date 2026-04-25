@@ -5,13 +5,19 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"anchor": "blackstone_aqueduct",
 			"recipe": "beneath:crafting/blackstone_aqueduct",
-			"text": "Піроксенітовий акведук дозволяє проводити лаву на будь-яку відстань."
+			"text": "Акведук з перексоніту дозволяє проводити лаву на будь-яку відстань."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shapeless/hellbricks_from_soot",
-			"text": "Пекельні цеглини - це будівельні блоки, які також використовуються для Пекельної кузні."
+			"text": "Пекельні цегли - це будівельні блоки, які також використовуються для Пекельної кузні."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ancient_altar",
+			"text": "П’єдестал із піроксеніту можна використати, щоб виставити предмети, якими хочеш похвалитися!"
 		},
 		{
 			"type": "patchouli:crafting",

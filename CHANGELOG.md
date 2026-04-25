@@ -3,7 +3,272 @@
 ## Unreleased
 ### Changes
 ### Bug fixes
+
+## [0.12.5] - 18-04-2026
+- We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
+- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Changes
+- The Cracker is now post-cleanroom @TomPlop
+### Bug fixes
+- Fixed a crash on Linux and MacOS
+- Fixed krummholz replacing parts of trees and other blocks @Pyritie
+- Fixed the amount of Red Alloy made in an ABS (#3829) @TomPlop
+- Fixed loose rocks generating on sea ice @Pyritie
+- Fixed Molybdenum Silicon Boron in the OLA being uncraftble @TomPlop
+
+## [0.12.4] - 18-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+### Breaking Changes
+- Generic "Coal" no longer exists. It's been replaced with TFC's Lignite and Bituminous Coal. Existing raw coal ore should automatically turn into bituminous coal, other items should have shapeless crafting recipes into bituminous coal, and coal ore blocks in your world should also be bituminous coal. You can use lignite and bituminous coal in all of the same ways you used to use raw coal ore as well as the vanilla coal items. This also means coal ore processing has been removed. (#3808) @Pyritie
+### Changes
+- Bloomery now only works with charcoal again @TomPlop
+- Added new malaysian-inspired illages for hot and humid climates (#3810, #3814) @Filiipa
+- Upgraded the EMI Ore Vein Info tab @Pyritie
+- Changed piglin bartering from Cinnabar to Redstone @Pyritie
+- Fixed Create hats for TFC's passive and neutral mobs (#3794) @Astrimitsu
+- You can now use oil, raw oil, light oil, and heavy oil as lamp fuel (#3790) @SakuraKitsurugi
+- Made the in-world natural gas vent indicator feature less common @Pyritie
+- You can now eat ice shavings for hydration @Pyritie
+- Hornfels now drop themselves when mined @Pyritie
+- Olive oil is no longer a steam boiler fuel, only a boiler booster @TomPlop
+- All shore biomes are no longer valid for spawning, so you shouldn't start on a tiny deserted island any more @Pyritie
+### Bug fixes
+- Fixed not being able to eat ice shavings @Pyritie
+- Fixed not being able to use chiseled bricks in gregtech facades (#3807) @Astrimitsu
+
+## [0.12.3] - 12-04-2026
+### Changes
+- Drowned now always carry a javelin on hard difficulty, and zombies sometimes spawn with weapons on hard difficulty too @Pyritie
+- Pressing 'U' on a raw rock will now also filter the Ore Veins tab by that rock type @BlueBoat29
+- Bees with the Nature Restoration trait now also spawn some of the new flowers (#3760) @Froffy025
+- Removed the (wrong) warning message when tools are about to break, and adjusted the placement of the inventory sorting buttons on GregTech GUI screens @Pyritie
+- The Steam Rock Crusher, Steam Miner, and Mechanical Drill now use a cheaper "drill" component (#3512) @Pyritie
+- Slimes and magma cubes are now weak to slashing damage but resistant to piercing and bludgeoning @Pyritie
+- Drowned now have the same resistances as other zombies @Pyritie
+- Updated the field guide with the new wild animals (#3705) @Pyritie
+- Added missing realgar gem slurry (#3767) @SakuraKitsurugi
+- Some recipes which previously required normal rubber rings/foils can now work with any rubber (#3774) @applenper
+### Bug fixes
+- Fixed roses taking over the world @Pyritie
+- Fixed the new flowers not counting for bees (#3760) @Froffy025
+- Fixed a crash caused by loading an old worldgen chunk with an active fluid rig @Pyritie
+- Fixed the bounding box of the new pastoral rancher multiblock so it detects animals in the correct area @TomPlop
+
+## [0.12.2] - 11-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### Breaking changes
+- Changed the recipe for normal and SMD Capacitors, with Silicon Rubber and Polyethylene swapped (#3683) @TomPlop
+- Molybdenum Discilicide now uses Circuit 2 in the Mixer (#3635) @TomPlop
+- Dirty MoSiB now use Circuit 1 in the Mixer (#3635) @TomPlop
+- Old 0.11 chunks now actually contain bedrock fluid instead of nothing, but you will need to delete your `.minecraft/saves/(world name)/data/gtceu_bedrock_fluid.dat` file when updating to this patch (only if you've got 0.11 chunks) @TomPlop
+### Changes
+- Further improvements to the main menu, and adding buttons to view the changelog, go to our youtube and crowdin pages, etc @Redeix
+- Improved the way various structures are supported by the terrain, so there will be less floating @Mqrius
+- Added recipes, textures, and names for new Glacian, Aeronos, and Strophar wood blocks and machines (#3721) @SakuraKitsuragi
+- Changed both the firepit pot and vat to not require exact fluid quantities for recipes, and won't void excess fluid inputs @Redeix
+- Improved the EMI display of ore veins @SakuraKitsurugi
+- Improved the EMI display of fluid veins @BlueBoat29
+- Improved the EMI display of equipment repair recipes @Pyritie
+- Added EMI tabs for entity drops, chest loot, fishing loot, panning, and sluicing @Pyritie
+- Added a new machine for automating animal milking and shearing. Does not go any faster than the in-world times, and you'll have to replace old animals yourself, but hey it's automatic. @TomPlop
+- Rowboats now only require a bronze anvil to craft, while a sloop now only requires wrought iron (#3703) @SakuraKitsurugi
+- Added more emeralds to the illage loot tables (remember, you can "hire" Mercenaries with these!) and added some realgar gems, but slightly lowered the amount of loot per chest @Pyritie
+- Added a periodic table quest chapter with information on where to find every element and what its main uses are (#3652) @ashleney
+- Train related things now only require steel instead of black steel, and rails are now even cheaper (and red alloy instead of electron tubes) (#3702) @SakuraKitsurugi
+- Added a recipe to craft honeyed apples (#3661) @Froffy025
+- Added recipes for copper shingles, tiles, and related blocks, and adjusted the recipes of other decorative copper blocks (#3630) @Nixieeunrare
+- Bulgogi, Bratwurst, Tandoori Chicken, and Tonkatsu can now go in sandwiches (#3617) @Froffy025
+- Drowned now only spawn with javelins 1/3 of the time, and will never spawn with a trident @Pyritie
+- Reduced the amount of overworld monsters a little @Pyritie
+- More performance improvements @Mqrius
+- Added bladders and rennet to sniffers' drop table and rennet to glacian sheep @Pyritie
+- Slightly reduced the amount of metal dusts from panning/sluicing deposits @Pyritie
+- Improved the hazardous materials field guide page with more information about each medical condition (#3717) @Symasas225
+- Added connected texture versions of vanilla glass blocks (shapeless craft to switch between the normal ones and these) (#3743) @SakuraKitsurugi
+- Fixed some wood fence and gate recipes being inconsistent (#3758) @SakuraKitsurugi
+- Added crafting stations (#3750) @Froffy025
+### Bug fixes
+- Fixed requiring a saw and axe to be held at the same time in order to carve a canoe @Mqrius
+- Fixed various TFG-created rock blocks (mossy cobbles, etc) not requiring a pickaxe to mine (#3725) @Pyritie
+- Updated the tooltips for hot/cold protection equipment because people keep trying to carry things with their feet (#3713) @Pyritie
+- Changed the texture of the steel cogs/large steel cogs a little, to make them more different than the aluminium ones (#3696) @Pyritie
+- Fixed the stone ruins and aqueduct structures from not generating (#3694) @Pyritie
+- Fixed the drops of mud bricks so they return the correct number and state (#3679) @Pyritie
+- Fixed the new dirts not working with the animal crank block whitelist (#3676) @Pyritie
+- Fixed illages so they stop spawning half inside rivers @Pyritie
+- Fixed some tags related to the new dirts and quests (#3675) @Pyritie @SpicyNoodle5
+- Fixed wrong loot table of cornflowers (#3671) @Pyritie
+- Fixed TFG cobblestones not breaking charcoal piles like TFC cobblestones (#3670) @Pyritie
+- Fixed spring water not generating on the surface (#3650) @Pyritie
+- Fixed mature cucumber crops not dropping any cucumbers @Redeix
+- Fixed magma blocks so only the magma part is emissive and not the stone @Redeix
+- Fixed some issues with repair recipes in a crafting grid (#3697) @SakuraKitsurugi @Thomasx0
+- Fixed the texture of the glass batches in an artisan table @Redeix
+- Fixed inconsistent recycling outputs of various (clay) brick blocks (#3690) @SpicyNoodle5
+- Fixed bison and leopard seal children being rendered as adults (#3674) @Pyritie
+- Fixed bison herds from self destructing (#3682) @Pyritie
+- Fixed breaking large nests giving 4 large nests back @SakuraKitsurugi
+- Fixed not being able to chisel the new mud brick blocks (#3737) @SokvisalMong
+- Fixed not being able to anvil a copper spindle head on certain seeds @Redeix
+- Fixed a crash when trying to use a fluid rig on a chunk that was generated in 0.11 (#3718) @TomPlop
+- Fixed vacuum chambers taking the same amount of time regardless of their RPM @ashleney
+
+## [0.12.1] - 01-04-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### Changes
+- Added a recipe to turn driftwood into sticks @Pyritie
+- Clay can now spawn in coarse dirt (but if you're in hot/dry climates, try finding a Mud Flats biome) (#3637) @Pyritie
+- TFC and GregTech ore indicators also no longer appear on the minimap @BlueBoat29 @Mqrius
+- Removed some biomes that illages were spawning weirdly in @Pyritie
+- Reordered the wrought iron grill anvil recipe so it goes right to left like everything else (#3621) @winjwinj
+- Added missing repair recipes for javelins, scraping knives, and construction wands (#3651) @SakuraKitsuragi
+- Molten igneous mafic + ice mixer recipe is now HV, so you can't get free iron early @Pyritie
+- Hiking boots, space suits, and red steel/caribou/polar bear/direwolf/insulated leather equipment are now immune to powder snow (#3626) @Pyritie
+### Bug fixes
+- Fixed a server crash @Mqrius
+- Fixed many of the new ore veins not spawning at all @TomPlop
+- Fixed recycling amounts of buzzsaw blades that didn't have buzzsaw tools (#3628) @Pyritie
+- Fixed water wheels not working at full strength in the new worldgen river biomes @Pyritie
+- Fixed grapes and hollow shells not spawning @Pyritie
+- Fixed sunflowers, canola, flax, radishes, lentils, cucmbers, basil, bay laurel, cardamom, cilantro, cumin, oregano, pimento, and vanilla not spawning @Pyritie
+- Fixed some dropped illager tools having the wrong stats @Pyritie
+- Fixed gregtech drills getting mining speed bonuses from the digger helmet upgrade @Thomasx0
+- Fixed the digger helmet drinking upgrade cancelling sprinting @Thomasx0
+- Fixed the digger helmet adding additional armor when wearing another head equipment that adds armor @Thomasx0
+- Fixed drowned not understanding how javelins work @Pyritie
+
+## [0.12.0] - 30-03-2026
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). We do not recommend using Alpha versions for progression, but if you do, please make frequent backups!
+### New Overworld World Generation
+TFC's 1.21 world generation has been backported to TFG! Please read the above upgrade guide for information on what will happen to your existing world. This was a huge team effort so a big thank you to everyone who contributed, and of course to @Therighthon for his work on the new worldgen in TFC (and for the help debugging!).
+
+Remember that the new world generation is AN ALPHA and please report any problems you have with it, including any generation that looks strange. TFC isn't finished with its world generation changes either, so if you decide to play on the new world generation, there will be changes in the future that could cause ugly chunk borders.
+
+- Backported the new world generation, including 80 new biomes @Pyritie @Mqrius
+- Backported five new animals (leopard seal, bison, mongoose, lemming, jerboa) @Ujhik
+- Backported three new crops (radish, lentil, cucumber) with some more to come to the Beneath soon @Redeix
+- Backported four new dirts, but no, we didn't backport the rest of TFC 1.21's crop system. All dirts have the same behaviour as the existing ones @Pyritie @SakuraKitsurugi
+- Backported a whole load of new decorative plants @Pyritie
+- Tuff is now obtainable in the overworld! Find it near volcanoes. @Pyritie
+- Added a system to detect, keep, and change which version of world generation to use @Mqrius
+- Added a system on world creation to let you select which climate you'd like to spawn in @BlueBoat29
+- Herbs now spawn in the wild like other crops. You can grow more at home inside a firmalife or electric greenhouse. Seed Balls now grow normal grass instead @Pyritie
+- Enhanced the bedrock fluid vein system with climate and biome conditions and restrictions, for more variation and to encourage trains @BlueBoat29 @TomPlop
+- Added features on the surface to indicate if you're in an area with particularly good bedrock fluid veins. Spring water now only generates on the surface if that chunk contains a spring water bedrock fluid. Oil spouts now only generate on land and match whatever oil is in that chunk. Natural Gas and ocean Oil now has a new feature. @TomPlop @Pyritie @BlueBoat29
+- Added a steam age bedrock fluid drill, that takes steam and explosives as input @TomPlop
+- Overhauled overworld ore generation. Some ores are now restricted or more common to different climates and biomes. "Early game" ores now generate pretty commonly in small veins just below the surface, so you don't have to dig down 80 blocks with stone tools. Bigger veins with a wider variety of ores are now exclusively deeper underground without any indicators on the surface (only in caves) so you'll have to go caving if you want to find them. Remember we have much stronger prospector picks! @TomPlop @Pyritie
+- Massively buffed river deposits for panning and sluicing - the deposits are more common and they give a lot more resources than before. Useful if you're trying to find copper, tin, silver, or gold @Pyritie
+- There's a new layer of Hornfels rock just above bedrock. To get past it (to the Beneath) you'll either have to use explosives, break it with a steel tool or higher, or actually go caving to find a (common) cave that goes through it. Please let us know if this system is fun or not! We're trying to find reasons to actually use the overworld caves instead of just digging straight down. If we end up keeping this system, we'll add more decoration to caves to make them more interesting too. @Redeix @DrEthan77 @Pyritie
+- Added Husks, Drowned, and Slimes as normal cave mobs, for a little extra variety @Pyritie
+- Moved Rose Quartz to now only spawn in Ice Sheet and Glacited biomes (new worldgen only) @Pyritie
+- Redid our logo (again) and added a new main menu panorama @Redeix
+- Currently the world preview screen (usually accessible via K) does not work with the new worldgen after you've created a new world. We're working on it!
+### New Shaders
+Our shaders have been basically totally rewritten to be up to date with new versions of complementary and support Colorwheel (less lag from create). They are still a work in progress, so please send us any feedback or issues you have with them! @woopSmile @Zaraney
+### Other Changes
+- Added repair recipes for every other piece of equipment and armor @Thomasx0 @SakuraKitsurugi 
+- Drinkable fluids with effects should now also display their effect when inside a container (like a flask) @SakuraKitsurugi
+- Rovers are no longer safe from the sandworm @jmecn
+- Tool crafting can now use any rod instead of just wood @Pyritie
+- Different kinds of glass now have different resistance to different bullets, instead of every kind of bullet piercing every glass (#3573) @SakuraKitsurugi
+- Cobalt brass dust can now also be mixed from aluminium silicate dust (#3533) @applenper
+- Create's Girders are now cheaper to craft (#3549) @SakuraKitsurugi
+- Added a clay mold for lamps! Now you have no excuse to keep using torches until LV. (#3547) @SakuraKitsurugi
+- Added food processor recipes for TFC Gourmet's pizzas, and added back a crafting table recipe for Firmalife's pizza (#3539) @Nixieeunrare
+- Crafting more rose quartz now requires you to have one in the first place, so you can't skip the arctic trip if you want create's logistics @Pyritie
+- Added a mech press recipe for turning sticks into stick bundles @Pyritie
+- Added recipes to craft Wan's Ancient Beasts' smithing and banner templates (#3519) @SakuraKitsurugi
+- Lapis, lazurite, and sodalite can now be melted into aluminium silicate @Pyritie
+- Removed the remaining nether air and ender air recipes @Pyritie
+- Removed flint pickaxes and lowered the durability of flint tools, but now loose flint appears all over the ground in areas with gravel. @Pyritie
+### Bug fixes
+- Fixed an issue where wearing clothes would overwrite any temperature immunity your main equipment would provide (#3449) @Mqrius
+- Fixed the dugout canoe looking very strange on servers if you tried to make one longer than 3 blocks @Mqrius
+- Fixed holding superglue in your offhand while using a scythe to harvest crops would duplicate the seeds (#3534) @Ujhik
+- Fixed the vacuumizer deleting outputs if it was set on the wrong mode @Mqrius
+- Fixed Dry Ice not dropping when broken @Nixieeunrare
+- Fixed the sandworm crashing servers when attacked (#2156) @jmecn
+- Fixed some cases where the sandworm would just rumble endlessly and not appear @jmecn
+- Fixed ore block textures to have more variety @Pyritie
+- Fixed food processor recipe conflicts for Cocoa and Coffee (#3559, #3570) @tresher2
+- Fixed the molten t2 rocket alloy fluid not being visible in EMI @Pyritie
 ### Translation updates
+- Ukranian: @MetEnBouldry, @furrydenis, s5edranner
+- Chinese (simplified): @jmecn
+- Russian: @Nixieeunrare, Regrifone, Arka, iDzmitry, Neon430, MichalichMIC, ehnis
+- Spanish: infernaleiko
+- Korean: @AirRice Firo_SF
+- Polish: SzymonA
+- French: tylrs
+- Japanese: @sakura-gondra
+
+## [0.11.28] - 22-03-2026
+No, this isn't the worldgen update. That's version 0.12.
+### Breaking changes
+- Circuit change for Tier 1 Rocket Fin / ASM Alloy Mixer / Rocket Fin Tier 2 / Rocket Cone Tier 2 to avoid recipe conflicts @TomPlop
+- Chorus-Infused Ceramic Insulation now requires a fluix crystal instead of dust, to avoid a recipe conflict (#3411) @Pyritie
+- All other laser engraver lens recipes now require gem lenses instead of glass ones (#3460) @TomPlop
+- The Heat Exchanger needs to be broken and recrafted because of a namespace change @TomPlop
+- Fixed dust consistency for Redstone Etching Fluid but now it needs a lot more redstone to craft (#3486) @SpicyNoodle5
+### Changes
+- Cleaned up some of the stonecutter recipes so there should be fewer duplicates @Pyritie @SpicyNoodle5
+- Added equivalent assembler recipes for Immersive Aircraft crafting table recipes (#3410) @SpicyNoodle5
+- Changed the rain screen effect to a clear transparent texture instead of blue dots (#3422) @applenper
+- Cassiterite and Cassiterite Sand ores now smelt directly into 1 tin instead of 2, to match TFC @Pyritie
+- The highest tier airplanes now actually require stainless steel as their quest says, and tweaked some of the other aircraft recipes @Pyritie
+- Added more gem slurries for ore processing and lens crafting, although the Clean slurries won't be craftable until Venus (#3460) @TomPlop @SakuraKitsurugi
+- Sped up the crafting times of basalt fiber insulation and silicon carbide (#3460) @TomPlop
+- More balance changes to the new large boilers, and added EMI tabs for the information (#3460) @TomPlop
+- Added fuels for trains! Like with solid fuel, liquid fuels make your train go faster, except fluids have to be in a separate Fuel Tank. Most combustible liquid fuels work. (#3273) @SakuraKitsurugi
+- Increased the speed and acceleration of fuelled trains to double their unfuelled stats @Pyritie
+- Added recycling recipes for Input/Output Hatches/Buses (#3470) @Nixieeunrare
+- Added recipes to craft more locometal items before LV machines, and improved locometal crafting in general (#3462, #3484) @SakuraKitsurugi
+- Added crafting for copycat pressure plates and recycling for most copycat blocks (#3463) @SakuraKitsurugi
+### Bug fixes
+- Fixed the field guide not working @Mqrius
+- Fixed not being able to put the copper spindle on a tool rack (#3445) @DrEthan77
+- Fixed not being able to macerate Raw Suevite @Pyritie
+- Fixed René-41 so it makes twice as much dust in the mixer, but halved the duration of the EBF/cooling recipes and doubled the cost of the foils per coil, so the end result is the same (#3446) @Pyritie
+- Fixed being able to stonecut slabs back into full blocks (#3156) @Pyritie 
+- Fixed being able to dupe chorus fruit by repeatedly breaking and placing a chorus flower (#3433) @Pyritie
+- Fixed Keratophyre missing a texture when knapping (#3418) @Pyritie
+- Fixed High Voltage Coils only requiring 1 black steel fine wire instead of 16 like the others @Pyritie
+- Fixed not being able to use vintage alcohols for general alcohol crafts (#3464) @lysteryale
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis, s5edranner
+- Russian @Nixieeunrare, Polimerka, mihikav, Regrifone, Arka
+
+## [0.11.27] - 13-03-2026
+### Changes
+- Added new large boilers that will soon replace the original gregtech boilers. These ones can accept more kinds of water and booster fluids to push your boilers further - check the new quest for more information. (#3360) @TomPlop
+- Added a new Large Steam Turbine that has a base production of 2048 EU/t but can't accept higher Rotors than EV @TomPlop
+- Removed vanilla advancements @Mqrius
+- Added copper spindle, with much more durability than the clay one (#3345) @DrEthan77
+- Phantom Silk now counts as dark cloth instead of light cloth for the sewing table (#3376) @Pyritie
+- New textures for the blue steel diving equipment to match the blue steel armor (#3385) @Facundo46
+- TFC jams can now also use honey instead of only sugars (#3362) @SakuraKitsurugi
+- Changed the recipe of Steel Pipe Casing and Magnalium Turbine Casing @TomPlop
+- Added a Repair Kit item so you can finally repair your GregTech Tools! Recipes for armor and other things coming soon. @TomPlop @Redeix
+- Changed the HV Dynamo Hatch to be craftable before the Cleanroom @TomPlop
+- Added a 16A HV Dynamo Hatch @TomPlop
+- Adjusted how fast the player heats up and cools down @Pyritie
+- Lowered the fluid temperatures of polysilicon, bakelite, and phenolic resin @Pyritie
+### Bug fixes
+- Fixed crashes with the Greate encased fan @Electrolyte220
+- Fixed EMI bookmarked recipe tooltip when GT machine UI is open @Mqrius
+- Fixed the "is supported/won't collapse" tooltips to work with the collapsible performance improvements in the previous update @Mqrius
+- Fixed livestock breeding failing often @Mqrius
+- Fixed a crash with the rotten voiding cover @Mqrius
+- Fixed the EMI recipes for the Artisan Table @Mqrius
+- Fixed arsenic bronze drops from primitive illagers (#3386) @Mqrius
+- Fixed a ton of log spam relating to the new steam n rails update (#3361) @SakuraKitsurugi 
+- Fixed keratophyre brick fence being usable as a facade cover (#3365) @Pyritie
+- Fixed some of the Diamond-Tipped Mo-50 Re tools having incorrect or missing crafting recipes @TomPlop
+- Maybe fixed being able to use shipping containers on trains (#3402) @Pyritie
+### Translation updates
+- Chinese (simplified) @jmecn
+- Ukranian @MetEnBouldry @furrydenis
 
 ## [0.11.26] - 10-03-2026
 ### Changes

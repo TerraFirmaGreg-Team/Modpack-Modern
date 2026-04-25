@@ -67,21 +67,6 @@ global.WAB_DISABLED_ITEMS = [
 	'wan_ancient_beasts:verdant_ginkgo_sapling',
 	'wan_ancient_beasts:amber_ginkgo_leaves',
 	'wan_ancient_beasts:verdant_ginkgo_leaves',
-	'wan_ancient_beasts:ginkgo_log',
-	'wan_ancient_beasts:stripped_ginkgo_log',
-	'wan_ancient_beasts:ginkgo_wood',
-	'wan_ancient_beasts:stripped_ginkgo_wood',
-	'wan_ancient_beasts:ginkgo_planks',
-	'wan_ancient_beasts:ginkgo_stairs',
-	'wan_ancient_beasts:ginkgo_slab',
-	'wan_ancient_beasts:ginkgo_fence',
-	'wan_ancient_beasts:ginkgo_fence_gate',
-	'wan_ancient_beasts:ginkgo_door',
-	'wan_ancient_beasts:ginkgo_trapdoor',
-	'wan_ancient_beasts:ginkgo_pressure_plate',
-	'wan_ancient_beasts:ginkgo_button',
-	'wan_ancient_beasts:ginkgo_sign',
-	'wan_ancient_beasts:ginkgo_hanging_sign',
 	'wan_ancient_beasts:ginkgo_boat',
 	'wan_ancient_beasts:ginkgo_chest_boat',
 	'wan_ancient_beasts:petrified_log',
@@ -91,4 +76,17 @@ global.WAB_DISABLED_ITEMS = [
 	'wan_ancient_beasts:horns_pottery_sherd',
 	'wan_ancient_beasts:loot_pottery_sherd',
 	'wan_ancient_beasts:steal_pottery_sherd'
+]
+
+global.WAB_WOOD = [
+	{
+		name: "ginkgo",
+		barkColor: "brown",
+		woodColor: "green",
+		leafColor: "orange",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 10,
+		location: "beneath"
+	}
 ]

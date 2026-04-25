@@ -1,0 +1,48 @@
+{
+    "name": "TFGで採掘するには",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "tfc:tfg_ores",
+    "priority": true,
+    "sortnum": 0,
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "鉱石を掘るには、$(thing)ピッケル$()か$(thing)採掘用ハンマー$()を用意する必要があります。$(br2)普通の$(thing)ハンマー$()でも石系ブロックは素早く壊せますが、鉱石は入手できません。ただし、石ブロックを$(l:getting_started/primitive_anvils#raw_rock)回収する$()用途には役立ちます。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "gtceu:shaped/pickaxe_copper",
+            "recipe2": "gtceu:shaped/mining_hammer_copper"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "ピッケル",
+            "text": "つるはしで鉱石を壊すと、$(thing)原石$()（低純度・中純度・高純度）と少量の石の粉が手に入ります。1つあたりのmB量は少ないため、インゴット化には複数必要になりますが、$(thing)石炭$()のようにこの形のままでしか使えない鉱物もあります。",
+            "item": {
+                "tag": "minecraft:pickaxes"
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "採掘用ハンマー",
+            "text": "これは3×3範囲で採掘できるピッケルのようなもので、$(thing)原石$()も採掘できます。整地にも便利です！$(br2)$(thing)スニーク$()しながら使うと、1ブロックずつ採掘することもできます。",
+            "item": {
+                "tag": "forge:tools/mining_hammers"
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "基礎的な鉱石処理",
+            "anchor": "processing",
+            "item": "gtceu:crushed_copper_ore",
+            "text": "鉱石は加工することで、より多くの金属を取り出せるようになります。まずは$(l:mechanics/quern)臼$()で原石を砕くところから始めます。この作業は後に、$(thing)石臼$()や$(thing)破砕ホイール$()、$(thing)粉砕機$()、$(thing)鍛造機$()といった機械で自動化可能になります。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "鉱石の精製",
+            "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
+            "text": "粉砕した鉱石からより多くのmBを得るために、まず$(thing)ハンマー$()と一緒にクラフトして$(thing)汚れた粉$()にしましょう。その後、この汚れた粉を水に投げ込むか、水入りの$(thing)大釜$()に$(item)$(k:key.use)$()で洗浄しましょう。"
+        }
+    ]
+}

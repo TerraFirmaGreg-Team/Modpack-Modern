@@ -25,6 +25,9 @@
 	#.
 	#Should flywheels and blocks extending the FlywheelBlock class be animated when apart of trains?
 	animatedFlywheels = true
+	#.
+	#Allow all wrenches to auto-fill `/snr shadow_realm banish` when sneak-used, without requiring the tag ShadowHammer.
+	universalShadowWrench = false
 
 	#.
 	#Smoke Settings

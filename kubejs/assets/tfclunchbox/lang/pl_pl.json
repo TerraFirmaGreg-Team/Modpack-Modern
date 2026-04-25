@@ -1,0 +1,18 @@
+{
+  "container.tfclunchbox.lunchbox": "Pudełko śniadaniowe",
+  "gui.tfclunchbox.lunchbox": "Pudełko śniadaniowe",
+  "item.tfclunchbox.lunchbox": "Pudełko śniadaniowe",
+  "tooltip.tfclunchbox.contents": "Zawiera:",
+  "tooltip.tfclunchbox.cooling_active": "Chłodzenie: Aktywne",
+  "tooltip.tfclunchbox.cooling_inactive": "Chłodzenie: Pasywne",
+  "tooltip.tfclunchbox.cooling_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły",
+  "tooltip.tfclunchbox.cooling_lunchbox.ice_absent": "Brak",
+  "tooltip.tfclunchbox.cooling_lunchbox.ice_present": "Obecny",
+  "tooltip.tfclunchbox.cooling_lunchbox.ice_status": "Lód: %s",
+  "tooltip.tfclunchbox.empty": "Pusty",
+  "tooltip.tfclunchbox.food_trait.lunchbox_cooled": "Chłodzone",
+  "tooltip.tfclunchbox.food_trait.lunchbox_preserved": "Zakonserwowane",
+  "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:",
+  "tooltip.tfclunchbox.lunchbox.empty": "Pusty",
+  "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły"
+}

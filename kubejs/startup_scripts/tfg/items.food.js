@@ -170,6 +170,20 @@ function registerTFGFoodItems(event) {
 		.tag('tfc:foods/meats')
 		.tag('tfc:foods/cooked_meats')
 
+	//Bison
+	event.create('tfg:food/raw_bison_meat')
+        .food(food => food.hunger(2).saturation(1)
+            .effect('minecraft:hunger', 100, 0, 1))
+        .tag('tfc:foods')
+        .tag('tfc:foods/meats')
+        .tag('tfc:foods/raw_meats')
+
+    event.create('tfg:food/cooked_bison_meat')
+        .food(food => food.hunger(5).saturation(4))
+        .tag('tfc:foods')
+        .tag('tfc:foods/meats')
+        .tag('tfc:foods/cooked_meats')
+
 	//Springling
 	event.create('tfg:food/raw_springling_collar')
 		.translationKey('item.tfg.food.raw_springling_chops')
@@ -408,6 +422,19 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(3).saturation(2))
 		.tag('tfc:foods')
 		.tag('tfg:foods/usable_in_burgers');
+		
+	// Popcorn
+	event.create('tfg:food/popcorn')
+		.translationKey('item.tfg.food.popcorn')
+		.texture('tfg:item/food/popcorn')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/buttered_popcorn')
+		.translationKey('item.tfg.food.buttered_popcorn')
+		.texture('tfg:item/food/buttered_popcorn')
+		.food(food => food.hunger(2).saturation(2))
+		.tag('tfc:foods');
 
 	// French Fries
 	event.create('tfg:food/raw_fries')
@@ -487,7 +514,6 @@ function registerTFGFoodItems(event) {
 			})
 		)
 		.tag('tfc:foods/usable_in_jam_sandwich')
-		.tag('tfc:foods/usable_in_jam_sandwich_2')
 		.tag('tfc:foods/usable_in_sandwich')
 		.tag('tfg:foods/usable_in_meal_bag')
 		.tag('tfc:foods/dairy')
@@ -524,6 +550,33 @@ function registerTFGFoodItems(event) {
 			})
 		)
 	    .tag('tfc:foods');
+
+	// Cooked Lentils
+	event.create('tfg:food/cooked_lentil')
+		.translationKey('item.tfg.food.cooked_lentil')
+		.texture('tfg:item/food/cooked_lentil')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/vegetables')
+		.tag('tfg:foods/legumes');
+
+	// Cooked Cassava
+	event.create('tfg:food/cooked_cassava')
+		.translationKey('item.tfg.food.cooked_cassava')
+		.texture('tfg:item/food/cooked_cassava')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/usable_in_salad')
+		.tag('tfc:foods/usable_in_soup');
+
+	// Cooked Beans
+	event.create('tfg:food/cooked_beans')
+		.translationKey('item.tfg.food.cooked_beans')
+		.texture('tfg:item/food/cooked_beans')
+		.food(food => food.hunger(3).saturation(2))
+		.tag('tfc:foods')
+		.tag('tfc:foods/vegetables')
+		.tag('tfg:foods/legumes');
 
 	//#region Spices
 

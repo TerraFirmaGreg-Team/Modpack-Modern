@@ -9,16 +9,23 @@
         "defaultconfigs",
         "kubejs",
         "tacz",
+        "!kubejs/.prettierrc",
+        "!kubejs/eslint.config.js",
+        "!kubejs/package-lock.json",
+        "!kubejs/package.json",
+        "!kubejs/tsconfig.json",
         "!kubejs/probe/**",
         "!kubejs/assets/**",
         "!defaultconfigs/tfc-server.toml",
-        "!config/ftbbackups2.json",
-        "!defaultconfigs/ftbranks/ranks.snbt"
+        "!defaultconfigs/ftbranks/ranks.snbt",
+        "!config/ftbbackups2.json"
+        
     ],
     "server_overrides": [
     ],
     "client_overrides": [
         "resourcepacks",
+        "shaderpacks",
         "kubejs/assets/**",
         "defaultconfigs/tfc-server.toml",
         "config/ftbbackups2.json",
@@ -256,25 +263,9 @@
         "colorwheel": {
             "side": "CLIENT"
         },
-        "colorwheel-patcher": {
-            "side": "CLIENT"
-        },
         "autopack-director": {
             "export": false
         },
-        "tfc-caelum": {
-            "export": false
-        },
-        "caelum": {
-            "export": false
-        },
-        "extreme-sound-muffler": {
-            "export": false
-        },
-        "extreme_sound_muffler": {
-            "export": false
-        },
-
         "ftb-backups-2": {
             "side": "BOTH",
             "export": true
@@ -303,8 +294,6 @@
         "ftb-xmod-compat": {
             "export": true
         },
-
-
         "probejs": {
             "side": "CLIENT",
             "export": false

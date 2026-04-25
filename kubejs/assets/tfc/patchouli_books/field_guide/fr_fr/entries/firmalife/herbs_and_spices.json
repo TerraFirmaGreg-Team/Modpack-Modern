@@ -1,0 +1,325 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Herbes et épices",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:spice/basil_leaves",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Dans Firmalife, il y a plusieurs petites plantes, que vous pouvez récupérer et cultiver par vous-mêmes, qui ont des propriétés culinaires. Elles peuvent toutes êtres trouvées dans la nature et, une fois récoltées, peuvent être cultivées dans une $(l:firmalife/greenhouse)Serre$(), dans laquelle elles consomment 20 points de N, P, et K."
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=1]"
+					}
+				}
+			],
+			"name": "Basilic",
+			"text": "Le $(thing)basilic$() pousse entre 12 et 25 °C, et entre 300 et 500 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=1]"
+					}
+				}
+			],
+			"name": "Laurier",
+			"text": "Le $(thing)laurier sauvage$() pousse entre 8 et 14 °C, et entre 25 et 225 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=1]"
+					}
+				}
+			],
+			"name": "Cardamome",
+			"text": "La $(thing)cardamome sauvage$() pousse entre 18 et 30 °C, et entre 350 et 550 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=1]"
+					}
+				}
+			],
+			"name": "Coriandre",
+			"text": "La $(thing)coriandre sauvage$() pousse entre 5 et 15 °C, et entre 0 et 150 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=1]"
+					}
+				}
+			],
+			"name": "Cumin",
+			"text": "Le $(thing)cumin sauvage$() pousse entre 6 et 20 °C, et entre 50 et 250 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=1]"
+					}
+				}
+			],
+			"name": "Origan",
+			"text": "L'$(thing)origan sauvage$() pousse entre 5 et 13 °C, et entre 50 et 150 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=1]"
+					}
+				}
+			],
+			"name": "Piment",
+			"text": "Le $(thing)piment sauvage$() pousse entre 15 et 30 °C, et entre 200 et 450 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=1]"
+					}
+				}
+			],
+			"name": "Vanille",
+			"text": "La $(thing)vanille sauvage$() pousse entre 18 et 30 °C, et entre 200 et 500 mm de précipitations.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "Des $(item)Boules de graines$() peuvent être utilisées pour planter différents types d'herbes. Cela peut être utile après avoir nettoyé votre base pour construire. La recette de la boule de plantes nécessite du $(item)Compost$() et 4 $(thing)Graines$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "",
+			"text": "Une herbe à papillon.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 19,
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": 1,
+		"firmalife:plant/bay_laurel": 2,
+		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/cilantro": 4,
+		"firmalife:plant/cumin": 5,
+		"firmalife:plant/oregano": 6,
+		"firmalife:plant/pimento": 7,
+		"firmalife:plant/vanilla": 8,
+		"firmalife:seed_ball": 9
+	}
+}

@@ -38,6 +38,15 @@ function registerTFGPrimitiveItems(event) {
 
 	event.create('tfg:armor_stand_arms')
 
+	event.create('tfg:copper_spindle')
+		.tag('tfg:tools/spindles')
+		.tag('tfc:usable_on_tool_rack')
+		.maxDamage(120)
+		.texture('tfg:item/copper_spindle')
+	event.create('tfg:copper_spindle_head')
+		.texture('tfg:item/copper_spindle_head')
+
+
 	event.create('tfg:harvest_basket')
 		.parentModel('tfg:item/harvest_basket')
 		.maxDamage(256)
@@ -172,6 +181,31 @@ function registerTFGPrimitiveItems(event) {
 			"XXXXXXXXXXXXXX"
 		])
 
+
+	event.create('tfg:spindle_head_mold', 'tfc:mold')
+        .capacity(72)
+		.texture("base", "tfg:item/mold/fired/spindle_head_empty")
+		.texture("fluid", "tfg:item/mold/fired/spindle_head_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_spindle_head_mold')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXX  XX",
+			"XXXXXXXXX   XX",
+			"XXXXXX     XXX",
+			"XXXXX     XXXX",
+			"XXXX     XXXXX",
+			"XXXX    XXXXXX",
+			"XXXX   XXXXXXX",
+			"XXX   XXXXXXXX",
+			"XX   XXXXXXXXX",
+			"XX  XXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
+
 	event.create('tfg:small_gear_mold', 'tfc:mold')
         .capacity(144)
 		.texture("base", "tfg:item/mold/fired/small_gear_mold_empty")
@@ -219,6 +253,30 @@ function registerTFGPrimitiveItems(event) {
 			"XXXXXXXXXXXXXX",
 			"XXXXXXXXXXXXXX"
 		])
+
+	event.create('tfg:lamp_mold', 'tfc:mold')
+        .capacity(144)
+		.texture("base", "tfg:item/mold/fired/lamp_mold_empty")
+		.texture("fluid", "tfg:item/mold/fired/lamp_mold_overlay")
+		.tag('tfc:fired_molds')
+		.tag('tfc:molds')
+		.fluidTagAccept('tfg:usable_in_lamp_mold')
+		.tfcccAllowedInMoldTable([
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXX XXXXXXX",
+			"XXXXX    XXXXX",
+			"XXXXX    XXXXX",
+			"XXXX      XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX XXXX XXXX",
+			"XXXX      XXXX",
+			"XXXXXXXXXXXXXX",
+			"XXXXXXXXXXXXXX"
+		])
 	
 	// Unfired Molds
 	event.create('tfg:unfired_rod_mold')
@@ -227,6 +285,13 @@ function registerTFGPrimitiveItems(event) {
 		.tag('tfc:fire_clay_recycle_5')
 		.tag('tfc:molds')
 		.tag('tfc:unfired_pottery')
+		
+	event.create('tfg:unfired_spindle_head_mold')
+		.texture("tfg:item/mold/unfired/unfired_spindle_head_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')	
 	
 	event.create('tfg:unfired_small_gear_mold')
 		.texture("tfg:item/mold/unfired/unfired_small_gear_mold")
@@ -237,6 +302,13 @@ function registerTFGPrimitiveItems(event) {
 	
 	event.create('tfg:unfired_nugget_mold')
 		.texture("tfg:item/mold/unfired/unfired_nugget_mold")
+		.tag('tfc:unfired_molds')
+		.tag('tfc:clay_recycle_5')
+		.tag('tfc:molds')
+		.tag('tfc:unfired_pottery')
+
+	event.create('tfg:unfired_lamp_mold')
+		.texture("tfg:item/mold/unfired/unfired_lamp_mold")
 		.tag('tfc:unfired_molds')
 		.tag('tfc:clay_recycle_5')
 		.tag('tfc:molds')

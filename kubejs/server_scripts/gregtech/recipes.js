@@ -161,7 +161,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover');
@@ -170,7 +170,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover32');
@@ -179,7 +179,7 @@ const registerGTCEURecipes = (event) => {
 		.modifyResult((craftingGrid, result) => {
 			let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 
-			let facadeNBT = `{Facade: {Count:1b,id:` + `'${blockID}'` + `}}`
+			let facadeNBT = `{Facade: {Count:1b,id:'${blockID}'}}`
 			result.nbt = facadeNBT
 			return result;
 		}).id('gtceu:facade_cover_recycle');
@@ -308,7 +308,7 @@ const registerGTCEURecipes = (event) => {
 
 	// Modify Rotor Holder to require an Assembler
 
-	event.remove({ id: 'gtceu:shaped/rotor_holder_hv' })
+	//event.remove({ id: 'gtceu:shaped/rotor_holder_hv' }) Keep it craftable before the Assembler
 	event.remove({ id: 'gtceu:shaped/rotor_holder_ev' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_iv' })
 	event.remove({ id: 'gtceu:shaped/rotor_holder_luv' })
@@ -413,4 +413,45 @@ const registerGTCEURecipes = (event) => {
 		.duration(20*2)
 		.EUt(GTValues.VA[GTValues.LV])
 		.circuit(1)
+
+	// Increase casing costs
+
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:normal_fluid_pipes/steel', '#forge:huge_fluid_pipes/steel')
+	event.replaceInput({ id: 'gtceu:shaped/casing_steel_pipe' }, '#forge:plates/steel', '#forge:double_plates/steel')
+
+	// Modify HV Dynamo Hatch to be craftable before Cleanroom
+
+	event.recipes.gtceu.assembler('gtceu:voltage_coil_hv')
+		.itemInputs('#forge:rods/magnetic_steel', '16x #forge:fine_wires/black_steel')
+		.itemOutputs('gtceu:hv_voltage_coil')
+		.circuit(1)
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('gtceu:dynamo_hatch_hv')
+		.itemInputs('gtceu:hv_machine_hull', '2x #forge:springs/gold', '2x gtceu:ulpic_chip', 'gtceu:hv_voltage_coil')
+		.inputFluids('gtceu:sodium_potassium 1000')
+		.itemOutputs('gtceu:hv_energy_output_hatch')
+		.duration(20*20)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	// Change Sterling Silver Turbine Rotor to be craftable at MV
+
+	global.modifyRecipe(event, "gtceu:assembler/assemble_sterling_silver_turbine_blade", {
+        newId: "tfg:assemble_sterling_silver_turbine_blade",
+        eut: GTValues.VA[GTValues.MV]
+    });
+
+	// Change Red Alloy in the ABS to match
+
+	global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+        newId: "tfg:red_alloy",
+        fluidOutputs: { "gtceu:red_alloy": 720 }
+	});
+
+	// Change Cracker to require Cleanroom
+
+	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
+
+
 }

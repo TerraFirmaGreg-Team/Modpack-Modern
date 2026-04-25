@@ -1,0 +1,26 @@
+{
+  "block.create_factory_logistics.factory_fluid_gauge": "Gyári folyadékszintjelző",
+  "block.create_factory_logistics.jar_packager": "Palackozó",
+  "block.create_factory_logistics.network_link": "Hálózati kapcsolat",
+  "entity.create_factory_logistics.jar": "Befőttesüveg",
+  "item.create_factory_logistics.fluid_mechanism": "Folyadékáramlás",
+  "item.create_factory_logistics.incomplete_fluid_mechanism": "Hiányos folyadékáramlás",
+  "item.create_factory_logistics.jar": "Réz kancsó",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "Create: Gyári logisztika",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "Tartsa lenyomva az Alt billentyűt a folyadékos edény elhelyezéséhez",
+  "itemGroup.create_factory_logistics.base": "Create Gyári logisztika",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "Tartalomtípus:",
+  "create_factory_logistics.gui.ingredient_type.fluid": "Folyadék",
+  "create_factory_abstractions.gui.ingredient_type.item": "Eszköz",
+  "create_factory_logistics.gui.network_link.mode": "Forrás",
+  "create_factory_logistics.gui.network_link.mode.stored": "Készleten",
+  "create_factory_logistics.gui.network_link.mode.promised": "Szállításra készen",
+  "create_factory_logistics.gui.network_link.mode.all": "Raktáron és szállításra készen",
+  "create_factory_logistics.ponder.mixer_upkeep.header": "Keverőgép-karbantartása hálózati kapcsolatokkal",
+  "create_factory_logistics.ponder.mixer_upkeep.text_1": "A hálózati csatlakozók olyan raktározó eszközökhöz csatlakoztathatók, mint például a küszöbérték kapcsoló",
+  "create_factory_logistics.ponder.mixer_upkeep.text_2": "Így a lángégő csak akkor kapna tüzelőanyagot, amikor szükséges",
+  "create_factory_logistics.ponder.mixer_upkeep.text_3": "Amikor a parancs beérkezik, a kapcsoló felismeri az új állapotot, és reagál rá",
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "A vizsgálandó folyadék helye",
+  "entity.create_factory_logistics.composite_package": "Összeállított csomag"
+}
+

@@ -21,12 +21,17 @@
       "type": "patchouli:multiblock",
       "multiblock": {
         "mapping": {
-			"C": "#tfc:glass_pouring_table",
-			"0": "#tfc:glass_pouring_table"
-		},
-		"pattern": [
-			[ "CCCC", "CCC0", "CCCC", "CCCC" ]
-		]
+          "C": "#tfc:glass_pouring_table",
+          "0": "#tfc:glass_pouring_table"
+        },
+        "pattern": [
+          [
+          "CCCC",
+          "CCC0",
+          "CCCC",
+          "CCCC"
+          ]
+        ]
       },
       "text": "После охлаждения стекло можно разбить с помощью $(l:mechanics/glassworking#saw)Пилы с напылением$(), чтобы получить.",
       "border": true
@@ -40,26 +45,36 @@
       "type": "patchouli:multiblock",
       "multiblock": {
         "mapping": {
-			"C": "#tfc:glass_basin_blocks",
-			"0": "#tfc:glass_basin_blocks"
-		},
-		"pattern": [
-			[ " C ", "C C", " C " ],
-			[ "   ", " 0 ", "   " ]
-		]
+          "C": "#tfc:glass_basin_blocks",
+          "0": "#tfc:glass_basin_blocks"
+        },
+        "pattern": [
+          [
+          " C ",
+          "C C",
+          " C "
+          ],
+          [
+          "   ",
+          " 0 ",
+          "   "
+          ]
+        ]
       },
       "text": "После охлаждения стекло можно разбить с помощью $(l:mechanics/glassworking#saw)Пилы с напылением$(), чтобы получить.",
       "border": true
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Окрашивание стекла",
+      "recipe": "tfc:crafting/white_kaolin_clay",
+      "text": "$(thing)Блоки, покрытые латунью$() можно получить, держа $(thing)латунную пластину$() и нажать$(item)$(k:key.use)$() на любом $(thing)каменном кирпиче$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "coloring",
       "text": "Стекло имеет естественный цвет на основе типа $(l:mechanics/glassworking)Партии стекла$(), которая была использована. Другие цвета могут быть получены с использованием $(l:mechanics/bowls)Чаши$().$(br2)Для использования, поместите $(l:mechanics/bowls)Чашу$() на землю, затем $(item)$(k:key.use)$() необходимый $(thing)Порошок$(). Перед $(thing)Литьём$(), используйте $(thing)Духовую трубку$() на чаше, чтобы добавить порошок в партию.",
       "title": "Окрашивание стекла"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "$(br2)На следующих страницах показаны различные комбинации типов стекла и материалов порошка для создания каждого цвета."
     },
     {
       "type": "patchouli:text",
@@ -414,7 +429,6 @@
   "read_by_default": true,
   "extra_recipe_mappings": {
     "tag:tfc:glass_batches": 1,
-    "tag:forge:glass_panes": 2,
-    "tag:forge:glass": 4
+    "tag:forge:glass": 2
   }
 }

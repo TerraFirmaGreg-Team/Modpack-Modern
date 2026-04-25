@@ -13,10 +13,10 @@
 		"type": "tfc:climate",
 		"salt": 26256356324,
 		"spacing": 60,
-		"separation": 45,
+		"separation": 35,
 		"climate": {
 			"min_temperature": -12,
-			"max_temperature": 2,
+			"max_temperature": 4,
 			"min_rainfall": 250,
 			"max_forest": "edge"
 		}

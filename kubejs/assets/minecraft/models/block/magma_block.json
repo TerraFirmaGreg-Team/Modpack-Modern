@@ -1,0 +1,6 @@
+{
+	"parent": "tfg:block/rock/cube_magma",
+	"textures": {
+		"all": "minecraft:block/blackstone"
+	}
+}

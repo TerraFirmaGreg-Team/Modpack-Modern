@@ -122,7 +122,7 @@
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
         "title": "纸浆分解",
-        "text": "在继续加工成纸张前，必须用$(thing)碱液$()在$(l:firmalife/oven_appliances#vat)不锈钢锅$()或$(l:mechanics/pot)陶锅$()中沸煮浆料以进一步分解。"
+        "text": "在继续加工成纸张前，必须用$(thing)碱液$()在$(l:firmalife/oven_appliances#vat)铁锅$()或$(l:mechanics/pot)陶锅$()中沸煮浆料以进一步分解。"
       },
       {
         "type": "patchouli:empty"
@@ -144,7 +144,7 @@
         "item": {
           "tag": "firmalife:stomping_barrels"
         },
-        "text": "替代方案是在 $(l:firmalife/wine)踩踏桶$()中踩踏热化学处理硬木浆"
+        "text": "替代方案是在 $(l:firmalife/wine)踩踏盆$()中踩踏热化学处理硬木浆"
       },
       {
         "type": "tfc:drying_recipe",

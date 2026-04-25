@@ -7,58 +7,200 @@
 	"read_by_default": true,
 	"pages": [
 		{
-			"type": "patchouli:text",
-			"text": "Некоторые руды ядовиты! Их перенос в инвентаре будет наносить вам урон.$(br2)Существует $(thing)костюм хим. защиты (Hazmat)$(), но он становится доступен в $(thing)MV$(). Так что же нам делать?$(br2)Вот несколько советов по противодействию этому в TFG на данный момент:"
+			"type": "patchouli:spotlight",
+			"title": "Противодействие ядовитым рудам",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Некоторые $(thing)руды$(), $(thing)пыли$() и $(thing)химикаты$() являются опасными и могут вызвать $(item)отрицательные эффекты$() или даже $(item)убить$() вас, если они находятся в вашем инвентаре. При переносе они отображаются на экране как $(item)статус эффект$().$(br2)Определённое снаряжение, такое как $(thing)маски$(), $(thing)перчатки$() и $(thing)защитный костюм$(), может использоваться для нейтрализации этих эффектов."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "С помощью сосудов, руду можно переносить безопасно, а с помощью же $(thing)ПКМ$() самим сосудом по руде (или с рудой внутри), можно либо поместить руду внутрь сундука или машины, либо выложить её без повторного помещения её непосредственно в инвентарь. $(br2)Либо же можно отключить яды в настройках мода."
+			"title": "Все эффекты",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Отравление мышьяком$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Асбестоз$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Беррилиоз$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Отравление угарным газом$()$(li)$(l:tfg_ores/hazards#Carcinogens)Канцерогены$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Отравление метанолом$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Раздражающие вещества$()$(li)$(l:tfg_ores/hazards#Poisons)Отравляющие вещества$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Радиоактивные вещества$()$(li)$(l:tfg_ores/hazards#Silicosis)Силикоз$()$()$(br2)На следующей странице будет информация о том, как бороться с этими эффектами."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Профилактика и лечение",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Контейнеры$()$(li)$(l:tfg_ores/hazards#mask)Медицинская маска$()$(li)$(l:tfg_ores/hazards#gloves)Резиновые перчатки$()$(li)$(l:tfg_ores/hazards#hazmat)Защитный костюм$()$(li)$(l:tfg_ores/hazards#medicine)Пилюли, таблетки, мази$()$(li)$(l:tfg_ores/hazards#rad_away)Пилюля Антирадин™$()$(li)$(l:tfg_ores/hazards#respawn)Немыслимое...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Камни",
-			"item": { "tag": "tfc:rock_knapping" },
-			"text": "Чтобы избежать ядовитых камней, проще всего их вовсе не поднимать.$(br)Забив инвентарь, например, $(thing)Камнями$(), можно <<забронировать>> место в инвентаре, а потом за один заход поднять все ядовитые предметы и быстренько их сложить в $(thing)Сосуд$() или $(thing)Рюкзак$()."
+			"title": "Камни!",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"anchor": "rocks",
+			"text": "$(thing)Простейший способ$() $(thing)предотвратить$() опасные эффекты — это $(item) вообще не подбирать опасные предметы$().$(br2)Заполнение инвентаря $(thing)камнями$(), например, позволит вам выбирать, какие предметы подбирать, оставляя опасные на потом."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Контейнеры",
-			"text": "Как уже говорилось ранее, урон от отравления наносится если предметы лежат непосредственно в $(thing)инвентаре$() игрока, нахождение их в любом другом контейнере полностью нейтрализует все отрицательные эффекты.",
+			"anchor": "containers",
+			"text": "Опасные материалы наносят урон, только если находятся в вашем $(thing)инвентаре$(), но это не относится к другим контейнерам!$(br)Опасные материалы не будут наносить урон, пока находятся в другом контейнере, например, в $(l:tfg_tips/inventory_management)рюкзаке$() или $(l:getting_started/pottery#vessel)сосуде$(). $(thing)Нажатие правой кнопкой мыши$() с сосудом в руке позволяет напрямую перемещать его содержимое в контейнеры и обратно.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"title": "Броня",
-			"text": "Чем лучше броня, тем меньше урона вы будете получать даже от ядовитых руд.",
-			"item": { "tag": "minecraft:trimmable_armor" }
+			"type": "patchouli:crafting",
+			"title": "Медицинская маска",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)Медицинская маска$() защитит тебя от $(item)Вдыхания$() опасных веществ, например мышьяка.",
+			"anchor": "mask"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Родниковая вода",
-			"item": "tfc:bucket/spring_water",
-			"text": "Нахождение в $(thing)Родниковой воде$() усиливает естественную $(thing)Регенерацию$()."
+			"item": "gtceu:rubber_gloves",
+			"title": "Резиновые перчатки",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "$(thing)Резиновые перчатки$() могут быть изготовлены из $(l:mechanics/leather_making)кожи$() и $(l:arborfirmacraft/making_rubber)латекса$(), или из $(thing)резиновых листов$(). Они обеспечивают защиту от любых опасностей $(item)контакта с кожей$(), таких как $(thing)бериллиевая пыль$()."
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "Сначала сделайте перчатки кузнеца из кожи."
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "$(thing)Перчатки$() затем замачиваются в $(thing)уксусе$(), смеси фруктов и алкоголя."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Выдержанный алкоголь",
-			"text": "$(thing)Выдержанные (Aged)$() версии алкоголя дают эффекты ванильных зелий.$(br2)Переносить же его можно в $(l:getting_started/pottery#jug)Кувшине$() или $(l:waterflasks/recipes)Фляге$().",
-			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "Выдержанное пиво: Поглощение II (20:00)$(br2)Выдержанный сидр: Скорость (5:20)$(br2)Выдержанный ром: Скорость II (2:40)$(br2)Выдержанное сакэ: Сопротивление (5:20)$(br2)Выдержанная водка: Сопротивление II (2:40)$(br2)Выдержанный кукурузный виски: Спешка (5:20)$(br2)Выдержанный ржаной виски: Спещка (5:20)$(br2)Выдержанный виски: Спешка II (2:40)"
+			"item": "tfg:latex_soaked_gloves",
+			"text": "Подготовленные $(thing) кожаные перчатки$() затем нагреваются в $(thing)чане$() с $(thing)вулканизированным латексом$(), на один шаг ближе к резиновым перчаткам."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": { "tag": "tfc:foods" },
-			"title": "Рацион питания",
-			"text": "Поддержание хорошего $(l:getting_started/food_and_water#nutrients)рациона$() значительно увеличивает максимальный уровень здоровья.$(br2)$(l:mechanics/pot#soup)Супы$(), $(l:mechanics/sandwiches)Бутерброды$() и $(l:mechanics/salad)Салаты$() - вот здоровая еда."
+			"item": "gtceu:rubber_gloves",
+			"text": "Наконец, пропитанные латексом перчатки нагреваются в $(l:firmalife/ovens)Печи$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Кровать",
-			"item": { "tag": "minecraft:beds" },
-			"text": "Крайняя мера - умер, возродился.$(br2)Если $(thing)Шерсти$() или $(thing)Ниток$() нет, то можно сделать $(l:getting_started/a_place_to_sleep)кровать из сена$()."
+			"title": "Защитный костюм",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "Полный $(thing)Защитный костюм$() обеспечивает $(item)иммунитет$() к $(item)каждой$() опасности, даже к $(item)радиации$(). Он производится в $(thing)LV сборщике$() из $(thing)Полиэтилена$() и $(thing)Поливинилхлорида$().$(br2)Интересный факт! Вы также можете найти $(thing)#ppe_armor$() в JEI, чтобы увидеть большее снаряжение, которое защищает от опасных материалов.",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Лекарства",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "Если вы серьезно пострадали от опасного воздействия, существуют определенные $(thing)медикаменты$(), которые помогут вам восстановиться.$(br2)Базовые $(thing)пилюли$() - самые примитивные и лёгкие к изготовлению, но большинство имеют $(item)побочные негативные эффекты$(). $(thing)Таблетки$() и $(thing)мази$() более эффективны и имеют меньше побочных действий, но они требуют $(thing)LV оборудования$() и лучших ресурсов для создания."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Пилюля Антирадинᵗᵐ",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "Это $(item)Лучшее$() средство от $(item)ВСЕХ$() опасностей и $(item)ЕДИНСТВЕННОЕ$() эффективное средство против $(item)Радиации$(). Однако их $(thing)дороже$() и $(thing)труднее$() изготовить, поскольку они требуют оборудования $(thing)HV уровня$() и продвинутых материалов."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Неудача...",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "Если ничего не помогает, хорошей идеей будет взять с собой кровать для возрождения.$(br2) Если  у вас нет доступа к $(thing)шерсти$() или $(thing)ниткам$(), вы можете также изготовить $(l:getting_started/a_place_to_sleep)Соломенную кровать$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отравление мышьяком",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "Отравление мышьяком",
+			"text": "$(thing)Отравление мышьяком$() — это болезнь, вызванная вдыханием $(thing)Мышьяка$() из его пыли, пара или $(thing)Реальгара$(). Она постепенно усиливает $(item)голод$(), за которым следует $(item)тошнота$() и, наконец, $(item)смерть$().$(br2)$(l:tfg_ores/hazards#mask)медицинская маска$() и $(l:tfg_ores/hazards#hazmat)защитный костюм$() обеспечивают защиту от $(thing)отравления мышьяком$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Асбестоз",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "Асбестоз",
+			"text": "$(thing)Асбестоз$() — это болезнь, вызванная вдыханием $(thing)асбестовой$() пыли. Если она длится достаточно долго, то вызывает $(item)голод$().$(br2)$(l:tfg_ores/hazards#mask)Защитная маска$() и $(l:tfg_ores/hazards#hazmat)Защитный костюм$() обеспечивают защиту от $(thing)Асбестоза$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Бериллиоз",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "Бериллиоз",
+			"text": "$(thing)Бериллиоз$() - болезнь, вызванная контактом кожи с  $(thing)пылью бериллия$() или $(thing)жидким бериллием$(). Сначала может показаться, что она ничего не делает. Тем не менее, чем дольше контакт, тем скорее она $(item)убивает $() вас.$(br2)$(l:tfg_ores/hazards#gloves)Резиновые перчатки$() и $(l:tfg_ores/hazards#hazmat)защитный костюм$() обеспечивают защиту от $(thing)бериллиоза$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отравление угарным газом",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)Отравление угарным газом$() — это болезнь, вызванная вдыханием $(thing)угарного газа$(). Длительное воздействие вызывает $(item)тошноту$() и быструю $(item)смерть$().$(br2)$(l:tfg_ores/hazards#mask)Медицинская маска$() и $(l:tfg_ores/hazards#hazmat)защитный костюм$() обеспечивают защиту от $(thing)угарного газа$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогены",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "Канцерогены",
+			"text": "$(thing)Канцерогены$() — это вещества, вызывающие $(item)рак$(). К ним относятся $(thing)хромовая пыль$(), а также некоторые органические соединения, такие как $(thing)бензол и его производные$(). $(thing)Канцерогены$() $(item)не исчезают сами собой$(), но они дают множество предупреждений, прежде чем нанести серьёзный урон. Всё начинается со $(item)слабости$(), далее следует $(item)голод$(), затем $(item)замедление$(), а впоследствии — $(item)утомление$(). Лишь когда накапливается значительная доза воздействия, она влечет за собой $(item)Смерть$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Канцерогены",
+			"item": "gtceu:chromium_dust",
+			"anchor": "Канцерогены",
+			"text": "$(l:tfg_ores/hazards#mask)Защитная маска$() защищает от вдыхания вредных химикатов, тогда как $(l:tfg_ores/hazards#gloves)резиновые перчатки$() защищают от контакта с $(thing)пылью хрома$().$(br2)$(l:tfg_ores/hazards#hazmat)Защитный костюм$() защищает от обоих факторов.$(br2)В случае сильного воздействия рекомендуется принять $(l:tfg_ores/hazards#medicine)лекарство$(), чтобы $(thing)предотвратить$() любой возможный ущерб."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Химические ожоги",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)Химические ожоги$() возникают из-за вдыхания или контакта кожи с определенными $(thing)газами$(), $(thing)кислотами$(), $(thing)щелочами$() или $(thing)пылями$(). Воздействие вызывает $(item)слабость$().$(br2)$(l:tfg_ores/hazards#mask)Защитная маска$() защищает от вдыхания, тогда как $(l:tfg_ores/hazards#gloves)резиновые перчатки$() защищают от прямого контакта с кожей.$(br2)$(l:tfg_ores/hazards#hazmat)Защитный костюм$() защищает от всего."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Раздражающие вещества",
+			"item": "gtceu:chromite_dust",
+			"anchor": "Раздражающие вещества",
+			"text": "$(thing)Раздражение$() возникает из-за вдыхания $(thing)формиата аммония$() или контакта кожи с $(thing)пылью хрома$(). Кратковременный контакт вызывает только $(item)слабость$(), но если игнорировать это дольше, оно начинает $(item)наносить случайный урон$().$(br2)$(l:tfg_ores/hazards#mask)Защитная маска$() защищает от вдыхания, тогда как $(l:tfg_ores/hazards#gloves)Перчатки$() от прямого контакта с кожей.$(br2)$(l:tfg_ores/hazards#hazmat)Защитный костюм$() защищает от обоих факторов."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отравление метанолом",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)Отравление метанолом$() возникает из-за вдыхания $(thing)метанола$(). Оно вызывает сильный эффект $(item)слепоты$().$(br2)$(l:tfg_ores/hazards#mask)Защитная маска$() и $(l:tfg_ores/hazards#hazmat)защитный костюм() предостерегают от вдыхания."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Химикаты вызывающие тошноту",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)Тошнотворные химикаты$(), такие как $(thing)бутиральдегид$(), — это вещества, вызывающие $(item)тошноту$() при вдыхании.$(br2)$(l:tfg_ores/hazards#mask)Защитная маска$() и $(l:tfg_ores/hazards#hazmat)защитный костюм$() защищают от вдыхания."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Отравляющие вещества",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "Существует два типа $(thing)ядовитых материалов$(). К слабым относится $(thing)свинцовая пыль$(), тогда как более сильные яды включают $(thing)диоксид азота$(). $(thing)Слабые яды$() вызывают эффект $(item)отравления, который постепенно усиливается$(), тогда как $(thing)обычные яды$() вызывают $(item)слабость$() и $(item)сильнейший эффект отравления$().$(br2)$(l:tfg_ores/hazards#mask)Медицинская маска$() защищает от вдыхания, тогда как $(l:tfg_ores/hazards#gloves)перчатки$() защищают от прямого контакта с кожей.$(br2)$(l:tfg_ores/hazards#hazmat)Защитный костюм$() защищает от любого контакта."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Радиоактивные вещества",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "Большинство $(thing)радиоактивных веществ$(), таких как $(thing)уран-238$(), встретятся вам только на $(thing)EV уровне$() или выше. Они $(item)облучают вас перманентно$(). Небольшое влияние вызывает $(item)свечение$(), но длительный контакт приводит к быстрой $(item)Смерти$().$(br2)Мы знаем, что он выглядит вкусно и имеет миллиард калорий, но $(#ff0000)ПОЖАЛУЙСТА, НЕ ЕШЬТЕ УРАН!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Радиоактивные вещества",
+			"item": "gtceu:plutonium_ingot",
+			"text": "Только $(l:tfg_ores/hazards#hazmat)защитный костюм$(), а также некоторые совершенные доспехи обеспечивают полную защиту от радиации.$(br2)В случае, если вы всё же получили облучение, только $(l:tfg_ores/hazards#rad_away)пилюля АнтиРадинᵗᵐ$() может вас вылечить."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Силикоз",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "Силикоз",
+			"text": "$(thing)Силикоз$() — это болезнь, вызванная вдыханием $(thing)пыли диоксида кремния$(). Воздействие вызывает $(item)уменьшение$() как $(item)здоровья$(), так и $(item)запаса воздуха$() во время погружения $(thing)под воду$().$(br2)$(l:tfg_ores/hazards#mask)Медицинская маска$() и $(l:tfg_ores/hazards#hazmat)Защитный костюм$() предоставляют защиту от вдыхания диоксида кремния."
 		}
 	]
 }

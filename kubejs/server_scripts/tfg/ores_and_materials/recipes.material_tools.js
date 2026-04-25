@@ -79,7 +79,7 @@ function processGTToolHead(event, toolType, headTagPrefix, material) {
 	} else {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
-			[toolHeadItem, '#forge:rods/wooden'],
+			[toolHeadItem, '#forge:rods'],
 			toolHeadItem
 		)
 		.id(`gtceu:shaped/${toolType.name}_${materialName}`);
@@ -108,6 +108,13 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 		return;
 
 	event.remove({ mod: 'gtceu', type: 'minecraft:crafting_shaped', output: toolHeadItem })
+
+	const EXCLUDED_MATERIALS = [
+        'diamond_tipped_mo_50_re',
+    ];
+
+    if (EXCLUDED_MATERIALS.includes(material.getName()))
+		return;
 
 	const materialName = material.getName();
 	const materialAmount = getMaterialAmount(headTagPrefix, material);
@@ -163,7 +170,6 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
  */
 function modifyRecyclingAmounts(material) {
 	TagPrefix.toolHeadWrench.modifyMaterialAmount(material, 2);
-	TagPrefix.toolHeadBuzzSaw.modifyMaterialAmount(material, 2);
 	TagPrefix.toolHeadScrewdriver.modifyMaterialAmount(material, 1);
 	TagPrefix.toolHeadWireCutter.modifyMaterialAmount(material, 2);
 	TFGTagPrefix.toolHeadSword.modifyMaterialAmount(material, 2);

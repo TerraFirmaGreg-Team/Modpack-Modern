@@ -1,0 +1,93 @@
+{
+	"name": "Effets des Boissons",
+	"icon": "firmalife:olivine_wine_bottle",
+	"category": "tfc:mechanics",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Les potions et la magie n'existent pas dans le monde TerraFirmaCraft, mais plein d'autres boissons octroient un effet similaire !$(br2)Cette entrée sert à recenser tous les différents effets, en plus, ces boissons vous hydratent en bonus."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Contenants à boisson",
+			"text": "Vous pouvez boire depuis une $(l:getting_started/pottery#jug)Cruche$(), $(l:waterflasks/recipes)Gourde$(), ou une $(l:mechanics/glassworking_applications#glass_bottle)Bouteille en verre$(). Les cruches ne contiennent qu'une gorgée et cassent facilement. Les bouteilles en verre ne contiennent que quelques gorgées, et peuvent aussi casser. Les gourdes peuvent contenir encore plus de liquide et utilisent lentement de la durabilité, sauf la $(item)Gourde en acier rouge$() qui contient 20 gorgées et ne se casse jamais.",
+			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alcool Vieilli",
+			"text": "Les $(thing)Alcools vieillis$() sont préparés en vieillissant de l'alcool normal, qui s'obtient en laissant divers fruits, farines, ou autres ingrédients dans un tonneau rempli d'eau. En bonus, ils altèrent votre manière d'écrire dans le tchat !",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Bière vieillie : Absorption II (5:20)$(li)Cidre vieilli : Rapidité (5:20)$(li)Rhum vieilli : Rapidité II (2:40)$(li)Saké vieilli : Résistance (5:20)$(li)Vodka vieillie : Résistance II (2:40)$(li)Whisky de maïs vieilli : Célérité (5:20)$(li)Whisky de seigle vieilli : Célérité (5:20)$(li)Whysky vieilli : Célérité II (2:40)$(li)Hydromel vieilli : Régénération (5:20)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alcool âgé",
+			"text": "Les $(thing)Alcools âgés$() sont préparés en vieillissant encore plus les alcools vieillis dans des tonneaux scellés. Ces alcools octroient un effet plus puissant et plus durable.",
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Bière âgée : Absorption III (8:00)$(li)Cidre âgé : Rapidité II (8:00)$(li)Rhum âgé : Rapidité III (4:00)$(li)Saké âgé : Résistance II (8:00)$(li)Vodka âgée : Résistance III (4:00)$(li)Whisky de maïs âgé : Célérité II (8:00)$(li)Whisky de seigle âgé : Célérité II (8:00)$(li)Whysky âgé : Célérité III (4:00)$(li)Hydromel âgé : Régénération II (8:00)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Vin",
+			"text": "Le $(thing)Vin$() est un type d'alcool produit d'une manière différente des autres. C'est un processus compliqué mais qui en vaut la peine, qui ne peut pas être automatisé à l'aide de machines. Consultez l'entrée portant sur la $(l:firmalife/wine)Viticulture$() pour apprendre à le faire.$(br2)Tous les vins vous donnent $(item)Force (5:20)$() en plus d'un autre effet !",
+			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Vin rouge : Célérité (5:20)$(li)Vin blanc : Résistance à la décomposition (5:20)$(li)Vin rosé : Vitesse de nage (5:20)$(li)Vin mousseux : Sauts améliorés II (5:20)$(li)Vin de dessert : Résistance au recul (5:20)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Thés",
+			"text": "Les $(thing)Thés$() peuvent être préparés grâce à la version séchée de certaines plantes.$(br2)Ils octroient des bonus et augmentent votre témpérature interne de 4°C. Parfait pour l'hiver !",
+			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Thé à la menthe : Régénération II (0:30)$(li)Thé à la camomille : Résistance II (0:30)$(li)Thé à l'églantier : Absorption (0:30)$(li)Thé à l'ortie : Chute lente (0:30)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Douceur",
+			"text": "Une catégorie pour des boissons plus diverses avec un très bon goût et des effets spéciaux. Enjoy !",
+			"item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)Chocolat chaud : Célérité (0:30), vous réchauffe de 4°C$(li)Café : Rapidité (0:30), vous réchauffe de 4°C$(li)Limonade : Célérité (0:30), vous rafraîchit de 2°C$(li)Nalivka : Célérité (4:00), vous rafraîchit de 2°C$(li)Kvas : Célérité (2:00), vous rafraîchit de 2°C$(li)Compote : Sauts améliorés II (0:30)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Laits",
+			"text": "Du $(thing)Lait$() peut être obtenu auprès de bétail femelle en cliquant droit avec un seau en bois ou en métal une fois que votre familiarité a atteint un certain niveau. (Si la traite ne fonctionne pas, assurez-vous que les seaux ne soient pas empilés !)$(br)Bien qu'il n'octroie pas de buff, le lait remplit vos besoins en produits laitiers si vous le buvez après manger, et peut plus tard être transformé en fromage.",
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
+		},
+		{
+			"title": "Eau de Source",
+			"text": "Boire de l'$(thing)Eau de source$() vous réchauffe de 4°C et donne un petit effet de régénération et vous réchauffe encore plus si vous vous tenez dedans.",
+			"item": "tfc:bucket/spring_water",
+			"type": "patchouli:spotlight"
+		},
+		{
+			"title": "Eau de Mer",
+			"text": "Boire de l'$(thing)Eau de mer$() ne vous désaltère pas et au contraire vous assoiffe. Une haute température corporelle vous donne soif également. Vous êtes perdus en mer ? Regardez en l'air quand il pleut pour de l'hydratation facile !",
+			"type": "patchouli:spotlight",
+			"item": "tfc:bucket/salt_water"
+		},
+		{
+			"title": "Granité",
+			"text": "Boir un $(thing)Granité$() vous rafraîchit de 4°C, parfait pour l'été ! Aussi pratique pour voyager dans le Beneath.",
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket"
+		}
+	]
+}
+

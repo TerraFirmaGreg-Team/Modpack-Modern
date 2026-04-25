@@ -45,6 +45,8 @@ function registerTFGHeatData(event) {
 
 	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
+	event.itemHeat('tfg:food/popcorn', 1.0, null, null);
+	event.itemHeat('tfg:food/buttered_popcorn', 1.0, null, null);
 	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
 	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);
@@ -53,8 +55,10 @@ function registerTFGHeatData(event) {
 	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
 
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_nugget_mold', 1.0, null, null);
+	event.itemHeat('tfg:unfired_lamp_mold', 1.0, null, null);
 
 	event.itemHeat('betterend:charnia_orange', 0.25, null, null)
 	event.itemHeat('betterend:charnia_cyan', 0.25, null, null)
@@ -62,6 +66,13 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
+	
+	event.itemHeat("tfg:lentil_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_lentil", 1, null, null);
+	event.itemHeat("tfg:cassava_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_cassava", 1, null, null);
+	event.itemHeat("tfg:beans_product", 1, null, null);
+	event.itemHeat("tfg:food/cooked_beans", 1, null, null);
 }
 
 //#endregion
@@ -329,20 +340,52 @@ function registerTFGItemSize(event) {
 	event.itemSize(
 		orArray([
 			"tfg:unfired_rod_mold",
+			"tfg:unfired_spindle_head_mold",
 			"tfg:unfired_small_gear_mold",
 			"tfg:unfired_nugget_mold",
+			"tfg:unfired_lamp_mold",
 			"tfg:rod_mold",
+			"tfg:spindle_head_mold",
 			"tfg:small_gear_mold",
-			"tfg:nugget_mold"
+			"tfg:nugget_mold",
+			"tfg:lamp_mold"
 		]),
 		"normal",
 		"medium",
-		"Molds"
+		"molds"
 	)
 
 	//Universal Compost Bags
 	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
 	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+
+	//Honeyed Apples
+	event.itemSize("create:honeyed_apple", "small", "light")
+
+	//Crafting Station
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.WAB_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AD_ASTRA_WOOD.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.BENEATH_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.AFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
+
+	global.TFC_WOOD_TYPES.forEach(wood => { 
+		event.itemSize(`tfg:wood/crafting_station/${wood.name}`, "large", "heavy", `${wood.name}_crafting_station`);
+	})
 }
 
 //#endregion
@@ -358,7 +401,7 @@ function registerTFGSupportData(event) {
 	event.support("tfg:rebar_support_horizontal", 4, 4, 8, "rebar_support");
 	event.support("tfg:steel_support_horizontal", 6, 6, 16, "steel_support");
 
-	const other_stone = ["pyroxenite", "migmatite", "travertine"];
+	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone'];
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone);
 
 	stone_types.forEach((stone) => {

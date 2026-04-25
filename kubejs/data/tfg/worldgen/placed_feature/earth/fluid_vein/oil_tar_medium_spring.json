@@ -1,0 +1,18 @@
+{
+	"feature": "tfg:earth/fluid_vein/oil_tar_medium_spring",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 30
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfg:fluid_vein",
+			"vein_ids": [
+
+			]
+		}
+	]
+}

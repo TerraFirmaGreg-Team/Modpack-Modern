@@ -43,6 +43,8 @@ BlockEvents.rightClicked(event => {
 	}
 })
 
+//#endregion
+
 /**
  *
  * @param {Internal.Player} player
@@ -54,4 +56,3 @@ function getTFGPersistentDataRoot(player) {
 	}
 	return player.persistentData.getCompound("tfg:custom_data")
 }
-

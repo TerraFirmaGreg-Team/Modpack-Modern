@@ -331,7 +331,8 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Vibrating
 
-		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)) {
+		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)
+			&&material !== GTMaterials.Coal && material !== GTMaterials.get('lignite')) {
 
 			let highYield = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT)
 
@@ -345,8 +346,8 @@ function registerVintageImprovementsRecipes(event) {
 					Item.of(ChemicalHelper.get(TagPrefix.gemChipped, material, 1)).withChance(highYield ? 0.30 : 0.35)
 				], 
 				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
-				.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-				.id(`tfg:vi/vibrating/${material.getName()}`)
+					.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+					.id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
 		// #endregion
@@ -397,32 +398,6 @@ function registerVintageImprovementsRecipes(event) {
 		], '#tfc:rock/gravel')
 		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/vibrating/gravel`)
-
-	global.TFC_STONE_TYPES.forEach(stone => {
-		event.recipes.vintageimprovements.vibrating(
-			ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Gold, 1),
-			`tfc:deposit/native_gold/${stone}`)
-			.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/vibrating/deposits/${stone}_gold`)
-
-		event.recipes.vintageimprovements.vibrating(
-			ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Copper, 1),
-			`tfc:deposit/native_copper/${stone}`)
-			.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/vibrating/deposits/${stone}_copper`)
-
-		event.recipes.vintageimprovements.vibrating(
-			ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Silver, 1),
-			`tfc:deposit/native_silver/${stone}`)
-			.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/vibrating/deposits/${stone}_silver`)
-
-		event.recipes.vintageimprovements.vibrating(
-			ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Cassiterite, 1),
-			`tfc:deposit/cassiterite/${stone}`)
-			.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
-			.id(`tfg:vi/vibrating/deposits/${stone}_cassiterite`)
-	})
 
 	// #endregion
 

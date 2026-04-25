@@ -1,0 +1,109 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Minerais, Métal, et Moulage",
+  "category": "tfc:getting_started",
+  "icon": "tfc:ore/normal_native_copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "En plus des bâtons, brindilles et cailloux au sol, vous pouvez trouver dans vos voyages des petits morceaux de minerais éparpillés par terre. Ceux-ci sont importants, puisqu'ils sont l'une des seules sources de minerais avant d'avoir une pioche."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+          "    ",
+          "  0 ",
+          "    "
+          ],
+          [
+          "ABCD",
+          "EFGH",
+          "IJKL"
+          ],
+          [
+          "XXXX",
+          "XXXX",
+          "XXXX"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:grass/loam",
+          "A": "tfc:ore/small_native_copper",
+          "B": "tfc:ore/small_native_gold",
+          "C": "tfc:ore/small_hematite",
+          "D": "tfc:ore/small_native_silver",
+          "E": "tfc:ore/small_cassiterite",
+          "F": "tfc:ore/small_bismuthinite",
+          "G": "tfc:ore/small_garnierite",
+          "H": "tfc:ore/small_malachite",
+          "I": "tfc:ore/small_magnetite",
+          "J": "tfc:ore/small_limonite",
+          "K": "tfc:ore/small_sphalerite",
+          "L": "tfc:ore/small_tetrahedrite"
+        }
+      },
+      "name": "",
+      "text": "Tous les petits morceaux de minerais",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ces petits morceaux ont deux utilités : ils servent de source de métal, et surtout, indiquent la présence d'une plus grosse veine de minerai proche, probablement sous-terre proche de la surface. Assurez-vous de retenir où vous trouvez ces minerais, connaître l'emplacement de veines de métaux sera utile plus tard pour $(l:mechanics/prospecting)Prospecter$().$(br2)Les douze types de morceaux de minerais, et les métaux en lesquels ils fondent sont recensés sur la page suivante."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Cuivre natifr ($(thing)Cuivre$())$(li)Or natif ($(thing)Or$())$(li)Hématite ($(thing)Fonte$())$(li)Argent natif($(thing)Argent$())$(li)Cassitérite ($(thing)Étain$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garniérite ($(thing)Nickel$())$(li)Malachite ($(thing)Cuivre$())$(li)Magnétite ($(thing)Fonte$())$(li)Limonite ($(thing)Fonte$())$(li)Sphalérite ($(thing)Zinc$())$(li)Tetrahédrite ($(thing)Cuivre$())",
+      "title": "Morceaux de minerai"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "casting",
+      "text": "Dans TerraFirmaCraft, les minerais contienne un certain nombre d'$(thing)unités$(), ou $(thing)mB (\"millibuckets\", milliseaux en français)$() de métal qui peut effectivement être extrait. Les morceaux de minerai comme ceux trouvés à la surface sont de la plus basse qualité, et ne donne que $(thing)16 mB$() de métal. Afin d'extraire ce métal, il doivent être $(thing)fondus$() et transformés en outils grâce au $(thing)moulage$().",
+      "title": "Moulage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez besoin de :$(br)$(li)Un $(l:getting_started/pottery#vessel)Petit récipient$()$(li)Assez de matériaux pour un $(l:getting_started/pit_kiln)Four en fosse$().$(li)Un ou plusieurs $(l:getting_started/pottery#mold)Moule(s)$() pour y couler le métal fondu.$(li)Et enfin, au moins 144 mB au total de métal pouvant être moulé : Du $(thing)Cuivre$() sous l'une ou plusieurs de ses trois formes.$(br2)$(br)$(italic)Note: Il est aussi possible de mouler des $(l:getting_started/primitive_alloys)Alliages$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Tout d'abord, ouvrez le $(thing)Petit récipient$() et placez-y les minerais. Comptez soigneusement la quantité de métal dans les minerais ! Le récipient peut contenir jusqu'à 3024 mB de métal fondu, tout excès sera perdu. Vous devrez ensuite construire un $(l:getting_started/pit_kiln)Four en fosse$() avec les récipient remplis à l'intérieur. En chauffant, les minerais contenus dans les récipients vont fondre, et vous vous retrouverez avec un récipient de métal fondu."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "Attention, le récipient sera brûlant ! Fabriquez des $(thing)Pinces en bois$() avec deux bâtons et un couteau et placez-les dans votre main secondaire afin de manipuler le récipient en toute sécurité."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/casting.png"
+      ],
+      "text": "Tenez le récipient et utilisez $(item)$(k:key.use)$() pour ouvrir l'interface de $(thing)Moulage$().",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "L'interface de moulage ouverte, placez votre moule cuit vide dans l'emplacement central. Il se remplira si le récipient contient encore du liquide. (Si le récipient se solidifie, il peut être réchauffé dans un autre four en fosse.) Le moule plein peut alors être retiré puis laissé refroidir. Quand il est froid, le moule peut être séparé de son contenu en l'utilisant ou bien en le plaçant dans un établi."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "gtceu:shaped/pickaxe_copper",
+      "text": "Vous pouvez maintenant fabriquer votre première pioche ! Trouvez suffisamment de cuivre pour faire une tête de pioche, puis cuisez un moule à pioche et faites fondre le métal dans un four en fosse puis moulez votre tête. Flanquez-la sur un bâton et voilà ! Vous pouvez maintenant aller miner du $(l:tfg_ores/index)minerai$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/chisel/copper",
+      "text": "D'autres outils importants pour votre progression sont également disponibles. Le $(l:mechanics/chisel)Ciseau$() est utile pour travailler avec des blocs de pierre pour la construction ou pour d'autres recettes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:copper_saw",
+      "text": "La scie vous permet de transformer des bûches de bois en $(l:mechanics/support_beams)poteaux de support$() ou en $(thing)bois de construction$(), qui peut ensuite être transformé en planches, établis, tonneaux ou coffres, etc. Elle sert aussi à faire un $(l:firmaciv/canoe)canoë$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4
+}

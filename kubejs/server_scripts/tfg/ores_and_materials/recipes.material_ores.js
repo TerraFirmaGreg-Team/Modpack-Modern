@@ -189,6 +189,7 @@ function processNormalRawOre(event, material) {
 	}
 
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
+	event.remove({ id: `greate:crushing/integration/gtceu/macerator/macerate_raw_${materialName}_ore_to_crushed_ore` })
 
 	// Macerator
 	event.recipes.gtceu.macerator(`macerate_raw_${materialName}_ore_to_crushed_ore`)
@@ -328,7 +329,7 @@ function processCrushedOre(event, material) {
 		
 		event.recipes.greate.splashing(
 			[pureOreItem, Item.of(byproductItem).withChance(0.14), 'gtceu:stone_dust'],
-			[crushedOreItem, Fluid.of('minecraft:water', 500)]
+			[crushedOreItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)
 		.circuitNumber(1)
@@ -458,7 +459,7 @@ function processImpureDust(event, material) {
 		// Bulk washing
 		event.recipes.greate.splashing(
 			[dustItem],
-			[impureDustItem, Fluid.of('minecraft:water', 500)]
+			[impureDustItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)		
 		.circuitNumber(1)
@@ -523,7 +524,7 @@ function processPureDust(event, material) {
 		// Bulk washing
 		event.recipes.greate.splashing(
 			[dustItem],
-			[pureDustItem, Fluid.of('minecraft:water', 500)]
+			[pureDustItem, Fluid.of('minecraft:water', 250)]
 		)
 		.recipeTier(1)
 		.circuitNumber(1)

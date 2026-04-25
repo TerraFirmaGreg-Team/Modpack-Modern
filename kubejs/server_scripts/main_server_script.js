@@ -54,6 +54,7 @@ ServerEvents.tags('item', event => {
 	registerSNSItemTags(event)
 	registerSpeciesItemTags(event)
 	registerTACZItemTags(event)
+	registerTFCGurmanItemTags(event)
 	registerTFCItemTags(event)
 	registerTFCScrapingKnivesItemTags(event)
 	registerTFCTextileItemTags(event)
@@ -102,6 +103,7 @@ ServerEvents.tags('block', event => {
 	registerTFGBlockTagsNuclear(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
+	registerCraftingStationBlockTags(event)
 })
 
 /**
@@ -177,6 +179,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
+	registerTFCDataForRailways(event)
 	registerWABData(event)
 	registerSpeciesData(event)
 })
@@ -190,6 +193,7 @@ LootJS.modifiers((event) => {
 	registerBeneathLoots(event)
 	registerTFGRockLoots(event)
 	registerTFGOreLoots(event)
+	registerMinecraftLoots(event)
 	registerLootrLoots(event)
 	registerPrimitiveCreaturesLoots(event)
 	registerSpeciesLoots(event)

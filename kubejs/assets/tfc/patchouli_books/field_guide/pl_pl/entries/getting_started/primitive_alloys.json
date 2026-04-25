@@ -1,0 +1,76 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Podstawowe Stopy Metali",
+	"category": "tfc:getting_started",
+	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Stopy$() to metoda mieszania dwóch lub więcej metali razem aby stworzyć nowy, silniejszy metal. We wczesnym etapie gry, chociaż miedź jest użytecznym metalem do tworzenia narzędzi, kolejnym poziomem metalu jest jeden z trzech typów $(thing)Brązu$(). Stop składa się z $(thing)metali$() składowych, które muszą stanowić określony procent całości."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Jedną z metod, za pomocą której stopy mogą być wykonane na wczesnym etapie gry, jest użycie $(thing)Małego Naczynia$(). Proces jest bardzo podobny do $(l:getting_started/finding_ores#casting)Odlewania$(). Jednak zamiast użyć tylko jednego metalu, umieść odpowiednią ilość odłamków rudy w naczyniu zgodnie z proporcjami znanej mieszanki stopowej."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Na przykład, aby utworzyć 1000 mB  $(thing)Brązu$() (widoczne z prawej), potrzebujesz od 700 do 800 mB  $(thing)Miedzi$(), oraz od 200 do 300 mB  $(thing)Cyny$().$(br2)Kolejne trzy strony pokazują receptury trzech rodzajów brązu. Każdy rodzaj brązu może być użyty do produkcji narzędzi, $(l:mechanics/zbroi)Zbroi$() i innych metalowych przedmiotów. Są one nieco inne, a więc powstałe w ich wyniku narzędzia będą miały różną trwałość, wydajność i wartość zadawania ataków."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bronze_ingot",
+			"title": "Brąz",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedzi$()$(li)20 - 30 % : $(thing)Cyny$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:bismuth_bronze_ingot",
+			"title": "Brąz Bizmutowy",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 30 % : $(thing)Cynku$()$(li)50 - 65 % : $(thing)Miedzi$()$(li)10 - 20 % : $(thing)Bismutu$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:black_bronze_ingot",
+			"title": "Czarny Brąz",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)50 - 70 % : $(thing)Miedzi$()$(li)10 - 25 % : $(thing)Srebra$()$(li)10 - 25 % : $(thing)Złota$()$(br2)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Inne stopy nie nadają się do tworzenia narzędzi. Są to $(thing)Mosiądz$(), $(thing)Różowe Złoto$() oraz $(thing)Szczere Srebro$().$(br2)$(thing)Mosiądz$() jest przydatnym stopem dla wszelkiego rodzaju przyrządów, w tym $(l:mechanics/mechanical_power)Siły Mechanicznej$().$(br2)$(thing)Różowe Złoto$() i $(thing)Szczere Srebro$() są używane do wytwarzania $(l:mechanics/steel#red_steel)Czerwonej Stali$() i $(l:mechanics/steel#blue_steel)Niebieskiej Stali$().",
+			"title": "Stopy Użytkowe"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "mosiądz",
+			"item": "create:brass_ingot",
+			"title": "Mosiądz",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedzi$()$(li)20 - 30 % : $(thing)Cyny$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rose_gold_ingot",
+			"title": "Różowe Złoto",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)15 - 30 % : $(thing)Miedzi$()$(li)70 - 85 % : $(thing)Złota$()$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:sterling_silver_ingot",
+			"title": "Szczere Srebro",
+			"link_recipes": false,
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedzi$()$(li)60 - 80 % : $(thing)Srebra$()$(br2)"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 5,
+	"extra_recipe_mappings": {
+		"gtceu:bronze_ingot": 3,
+		"gtceu:bismuth_bronze_ingot": 4,
+		"gtceu:black_bronze_ingot": 5,
+		"create:brass_ingot": 7
+	}
+}

@@ -19,6 +19,21 @@ function registerTFGStoneItemTags(event) {
 		}
 	}
 
+	function addToStonecutterTag(tag, entry) {
+		if (tag != null) {
+			event.add(tag, entry.block);
+			if (entry.stair != null) {
+				event.add(tag, entry.stair);
+			}
+			if (entry.wall != null) {
+				event.add(tag, entry.wall);
+			}
+			if (entry.slab != null) {
+				event.add(`${tag}_half`, entry.slab);
+			}
+		}
+	}
+
 	const SHAPES = ['stair', 'slab', 'wall'];
 
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
@@ -34,6 +49,9 @@ function registerTFGStoneItemTags(event) {
 			}
 			addToTfcTag(rock.raw.block);
 			addToMaterialTag(material, rock.raw.block);
+			if (rock.brick == null) {
+				addToStonecutterTag(rock.stonecutterTag, rock.raw);
+			}
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
@@ -86,6 +104,7 @@ function registerTFGStoneItemTags(event) {
 			event.add('tfc:rock/bricks', rock.bricks.block);
 			addToTfcTag(rock.bricks.block);
 			addToMaterialTag(material, rock.bricks.block);
+			addToStonecutterTag(rock.stonecutterTag, rock.bricks);
 
 			SHAPES.forEach(shape => {
 				if (rock.bricks[shape] != null) {
@@ -144,9 +163,7 @@ function registerTFGStoneItemTags(event) {
 			event.add('forge:smooth_stone', rock.polished.block);
 			addToTfcTag(rock.polished.block);
 			addToMaterialTag(material, rock.polished.block);
-			if (rock.stonecutterTag != null) {
-				event.add(rock.stonecutterTag, rock.polished.block);
-			}
+			addToStonecutterTag(rock.stonecutterTag, rock.polished);
 
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {
@@ -167,15 +184,13 @@ function registerTFGStoneItemTags(event) {
 			event.add('tfc:rock/chiseled_bricks', rock.chiseled.block);
 			addToTfcTag(rock.chiseled.block);
 			addToMaterialTag(material, rock.chiseled.block);
-			if (rock.stonecutterTag != null) {
-				event.add(rock.stonecutterTag, rock.chiseled.block);
-				addToMaterialTag(material, rock.chiseled.block);
-			}
+			addToStonecutterTag(rock.stonecutterTag, rock.chiseled);
 		}
 
 		if (rock.gravel != null) {
 			addToTfcTag(rock.gravel);
 			addToMaterialTag(material, rock.gravel);
+			event.add('tfc:rock/gravel', rock.gravel);
 			if (rock.gravelTag != null) {
 				event.add(rock.gravelTag, rock.gravel);
 			}
@@ -208,6 +223,7 @@ function registerTFGStoneItemTags(event) {
 
 		if (rock.spike != null) {
 			addToTfcTag(rock.spike);
+			event.add('tfg:rock_spikes', rock.spike);
 		}
 
 		if (rock.pillar != null) {
@@ -232,17 +248,12 @@ function registerTFGStoneItemTags(event) {
 				event.add('tfc:rock/chiseled_bricks', blockForms.block);
 				addToTfcTag(blockForms.block);
 				addToMaterialTag(material, blockForms.block);
-				if (rock.stonecutterTag != null) {
-					event.add(rock.stonecutterTag, blockForms.block);
-				}
+				addToStonecutterTag(rock.stonecutterTag, blockForms);
 
 				SHAPES.forEach(shape => {
 					if (blockForms[shape] != null) {
 						addToTfcTag(blockForms[shape]);
 						addToMaterialTag(material, blockForms[shape]);
-						if (rock.stonecutterTag != null) {
-							event.add(rock.stonecutterTag, blockForms[shape]);
-						}
 					}
 				})
 			})
@@ -327,10 +338,12 @@ function registerTFGStoneBlockTags(event) {
 		if (rock.cobble != null) {
 			event.add('tfc:can_landslide', rock.cobble.block)
 			event.add('forge:cobblestone', rock.cobble.block)
+			event.add('tfc:toughness_2', rock.cobble.block)
 
 			if (rock.cobble.mossy != null) {
 				event.add('tfc:can_landslide', rock.cobble.mossy.block)
 				event.add('forge:cobblestone', rock.cobble.mossy.block)
+				event.add('tfc:toughness_2', rock.cobble.mossy.block)
 			}
 		}
 		

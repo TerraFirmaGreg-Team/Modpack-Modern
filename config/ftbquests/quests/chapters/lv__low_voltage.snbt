@@ -80,6 +80,13 @@
 			x: 7.0d
 			y: 4.5d
 		}
+		{
+			id: "258922881D3BAB94"
+			linked_quest: "1F7AAF65CC0A4ADF"
+			shape: "heart"
+			x: 0.0d
+			y: -6.0d
+		}
 	]
 	quests: [
 		{
@@ -393,34 +400,6 @@
 			title: "{quests.low_voltage.lv_polariser.title}"
 			x: 3.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6E186F9C57155BFA"
-				"46FA9DD4755A5548"
-				"3D8174C64DDC268B"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{quests.low_voltage.lbb.desc.1}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.2}"
-				"{@pagebreak}"
-				"{quests.low_voltage.lbb.desc.3}"
-			]
-			id: "33263404ED38C6D2"
-			optional: true
-			shape: "heart"
-			size: 1.0d
-			subtitle: "{quests.low_voltage.lbb.subtitle}"
-			tasks: [{
-				id: "560D4D0D6BECE006"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
-			title: "{quests.low_voltage.lbb.title}"
-			x: 0.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1199,9 +1178,9 @@
 					type: "item"
 				}
 				{
-					count: 14L
+					count: 10L
 					id: "2E6781820FF96078"
-					item: { Count: 14, id: "gtceu:heatproof_machine_casing" }
+					item: "gtceu:heatproof_machine_casing"
 					type: "item"
 				}
 				{
@@ -1717,6 +1696,7 @@
 			dependencies: [
 				"0404FBCC34011053"
 				"7FA1525D681C4B4A"
+				"3DC0755814508BD7"
 			]
 			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
 			id: "1AD51E2B66EA7F67"
@@ -1786,7 +1766,7 @@
 			]
 			title: "{quests.low_voltage.lv_gas_syngas.title}"
 			x: 5.0d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -2091,6 +2071,45 @@
 			title: "{quests.medium_voltage.mv_jetpack.title}"
 			x: 1.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["66E34DAA25149FC0"]
+			icon: "gtceu:natural_gas_bucket"
+			id: "3DC0755814508BD7"
+			shape: "heart"
+			tasks: [
+				{
+					id: "5458466C6BA34B64"
+					item: "gtceu:natural_gas_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F02511A45AA5C9B"
+					item: "tfg:gas_well"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0DBC148D92A9F69F"]
+			description: ["{quests.low_voltage.rancher.desc}"]
+			icon: "minecraft:milk_bucket"
+			id: "35BA757ACDB3ED82"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.rancher.subtitle}"
+			tasks: [{
+				id: "03BA37C094F8C0A7"
+				item: "tfg:pastoral_engine"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.rancher.title}"
+			x: -2.0d
+			y: 19.5d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

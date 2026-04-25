@@ -29,6 +29,25 @@
         fluidInputs: { "forge:sulfuric_acid": 500 }
     })
 
+    // Modify item output quantity
+    global.modifyRecipe(event, "gtceu:electric_blast_furnace/some_recipe", {
+        newId: "tfg:some_recipe",
+        itemOutputs: { "gtceu:steel_ingot": 2 }
+    })
+
+    // Modify fluid output quantity
+    global.modifyRecipe(event, "gtceu:chemical_reactor/some_recipe", {
+        newId: "tfg:some_recipe",
+        fluidOutputs: { "gtceu:sulfuric_acid": 1000 }
+    })
+
+    // Modify blast furnace temperature (override)
+    // Works for both electric_blast_furnace and alloy_blast_smelter (data.ebf_temp)
+    global.modifyRecipe(event, "gtceu:electric_blast_furnace/some_recipe", {
+        newId: "tfg:some_recipe",
+        blastFurnaceTemp: 2700
+    })
+
     // An exemple of all together
     global.modifyRecipe(event, "gtceu:circuit_assembler/some_recipe", {
         newId: "tfg:my_modified_recipe",
@@ -40,13 +59,20 @@
     })
 
     // An exemple regarding the Transistor with the itemInputs not existing - It just skips it
-        global.modifyRecipe(event, "gtceu:assembler/transistor", {
+    global.modifyRecipe(event, "gtceu:assembler/transistor", {
         newId: "tfg:transistor",
         duration: 20 * 50,
         eut: GTValues.VA[GTValues.HV],
         fluidReplacements: { "forge:polyethylene": "gtceu:silicone_rubber" },
         itemInputs: { "gtceu:silicon_plate": 2 },
         fluidInputs: { "gtceu:silicone_rubber": 1000 }
+    })
+
+    // An exemple for alloy_blast_smelter with temperature override
+    global.modifyRecipe(event, "gtceu:alloy_blast_smelter/red_alloy", {
+        newId: "tfg:red_alloy",
+        fluidOutputs: { "gtceu:red_alloy": 720 },
+        blastFurnaceTemp: 2700
     })
     */
 
@@ -61,15 +87,29 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         var machineName = javaRecipe.getId().toString().split(":")[1].split("/")[0]
         var recipeName = recipeId.split("/").slice(1).join("/")
-        var newId = options.newId || ("tfg:" + machineName + "/" + recipeName)
+        var newId = options.newId || (`tfg:${machineName}/${recipeName}`)
+
+        // Extract Temp
+        if (recipeJson.recipeConditions) {
+            for (var ci0 = 0; ci0 < recipeJson.recipeConditions.length; ci0++) {
+                var cond0 = recipeJson.recipeConditions[ci0]
+                if (cond0.type === "blastFurnaceTemp") {
+                    recipeJson.blastFurnaceTemp = cond0.temperature
+                }
+            }
+        }
+        if (!recipeJson.blastFurnaceTemp && recipeJson.data && recipeJson.data.ebf_temp) {
+            recipeJson.blastFurnaceTemp = recipeJson.data.ebf_temp
+        }
 
         // Duration and EUt
-
         if (options.duration) recipeJson.duration = options.duration
         if (options.eut) recipeJson.tickInputs.eu[0].content = options.eut
 
-        // Replace a fluid
+        // Override blast furnace temperature
+        if (options.blastFurnaceTemp) recipeJson.blastFurnaceTemp = options.blastFurnaceTemp
 
+        // Replace a fluid
         if (options.fluidReplacements && recipeJson.inputs && recipeJson.inputs.fluid) {
             for (var fr = 0; fr < recipeJson.inputs.fluid.length; fr++) {
                 var frValues = recipeJson.inputs.fluid[fr].content.value
@@ -85,12 +125,11 @@ global.modifyRecipe = function(event, recipeId, options) {
         }
 
         // Modify amount of item input
-
         if (options.itemInputs && recipeJson.inputs && recipeJson.inputs.item) {
             for (var key in options.itemInputs) {
                 for (var ii = 0; ii < recipeJson.inputs.item.length; ii++) {
                     var ing = recipeJson.inputs.item[ii].content.ingredient
-                    if ((ing.item && ing.item === key) || (ing.tag && ing.tag === key)) {
+                    if (ing && ((ing.item && ing.item === key) || (ing.tag && ing.tag === key))) {
                         recipeJson.inputs.item[ii].content.count = options.itemInputs[key]
                     }
                 }
@@ -145,7 +184,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 var ing2 = recipeJson.inputs.item[ii2].content.ingredient
                 var count = recipeJson.inputs.item[ii2].content.count || 1
                 if (ing2 && typeof ing2 === "object" && "tag" in ing2) {
-                    newRecipe.itemInputs(count + "x #" + ing2.tag)
+                    newRecipe.itemInputs(`${count}x #${ing2.tag}`)
                 } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
                 }
@@ -160,7 +199,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 if (fluidVal && fluidVal.fluid) {
                     newRecipe.inputFluids(Fluid.of(fluidVal.fluid, amount))
                 } else if (fluidVal && fluidVal.tag) {
-                    newRecipe.inputFluids(Fluid.of("gtceu:" + fluidVal.tag.split(":")[1], amount))
+                    newRecipe.inputFluids(Fluid.of(`gtceu:${fluidVal.tag.split(":")[1]}`, amount))
                 }
             }
         }
@@ -184,7 +223,7 @@ global.modifyRecipe = function(event, recipeId, options) {
                 if (fluidOutVal && fluidOutVal.fluid) {
                     newRecipe.outputFluids(Fluid.of(fluidOutVal.fluid, outAmount))
                 } else if (fluidOutVal && fluidOutVal.tag) {
-                    newRecipe.outputFluids(Fluid.of("gtceu:" + fluidOutVal.tag.split(":")[1], outAmount))
+                    newRecipe.outputFluids(Fluid.of(`gtceu:${fluidOutVal.tag.split(":")[1]}`, outAmount))
                 }
             }
         }
@@ -195,11 +234,18 @@ global.modifyRecipe = function(event, recipeId, options) {
                 var cond = recipeJson.recipeConditions[ci]
                 if (cond.type === "cleanroom") {
                     newRecipe.cleanroom(CleanroomType[cond.cleanroom.toUpperCase()])
+                } else if (cond.type === "blastFurnaceTemp") {
+                    newRecipe.blastFurnaceTemp(recipeJson.blastFurnaceTemp || cond.temperature)
                 } else if (cond.type === "research" && cond.research && cond.research.length > 0) {
                     var research = cond.research[0]
                     newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
                 }
             }
+        }
+
+        // Temperature via data.ebf_temp — only applied if not recipeConditions
+        if (recipeJson.blastFurnaceTemp && (!recipeJson.recipeConditions || !recipeJson.recipeConditions.some(function(c) { return c.type === "blastFurnaceTemp" }))) {
+            newRecipe.blastFurnaceTemp(recipeJson.blastFurnaceTemp)
         }
     }
 }

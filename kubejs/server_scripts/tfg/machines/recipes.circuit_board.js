@@ -82,27 +82,34 @@ function registerTFGCircuitBoardsRecipes(event) {
 		.duration(20 * 5)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	function lensPolishing(event, fluid, colour, temp) {
+	function lensPolishing(event, fluid, colour, slurry, temp, energy) {
 		event.recipes.gtceu.high_temperature_precision_fabricator(`tfg:lens_${fluid}_${colour}`)
 			.itemInputs('tfg:worked_optical_borosilicate_blank', '#tfg:precision_fabricator_holder_rods')
-			.inputFluids(Fluid.of(`tfg:dirty_${fluid}_slurry`, 1000))
+			.inputFluids(Fluid.of(`tfg:${slurry}_${fluid}_slurry`, 1000))
 			.itemOutputs(Item.of(`#forge:lenses/${colour}`, 1))
 			.addData("ebf_temp", temp)
 			.duration(20 * 120)
-			.EUt(GTValues.VA[GTValues.MV]);
+			.EUt(GTValues.VA[energy]);
 	}
 
 	const LENS_POLISHING = [
-		['emerald', 'green', 1530],
-		['sapphire', 'blue', 1530],
-		['ruby', 'red', 1530],
-		['diamond', 'light_blue', 1530],
-		['apatite', 'cyan', 1810],
-		['spessartine', 'orange', 1810],
+		['emerald',      'green',      'dirty',    1530, GTValues.MV],
+		['sapphire',     'blue',       'dirty',    1530, GTValues.MV],
+		['ruby',         'red',        'dirty',    1530, GTValues.MV],
+		['diamond',      'light_blue', 'dirty',    1530, GTValues.MV],
+		['apatite',      'cyan',       'filtered', 1810, GTValues.HV],
+		['spessartine',  'orange',     'filtered', 1810, GTValues.HV],
+		['yellow_garnet','yellow',     'filtered', 1810, GTValues.HV],
+		['olivine',      'lime',       'filtered', 1810, GTValues.HV],
+		['amethyst',     'purple',     'filtered', 1810, GTValues.HV],
+		['grossular',    'brown',      'filtered', 1810, GTValues.HV],
+		['armalcolite',  'gray',       'filtered', 1810, GTValues.HV],
+		['coal',         'black',      'filtered', 1530, GTValues.MV],
 	];
 
 	LENS_POLISHING.forEach(([fluid, colour]) => event.remove({ output: `#forge:lenses/${colour}` }));
-	LENS_POLISHING.forEach(([fluid, colour, temp]) => lensPolishing(event, fluid, colour, temp));
+	LENS_POLISHING.forEach(([fluid, colour]) => event.remove({ output: `gtceu:${colour}_glass_lens` }));
+	LENS_POLISHING.forEach(([fluid, colour, slurry, temp, energy]) => lensPolishing(event, fluid, colour, slurry, temp, energy));
 
 	// Printed Circuit boards
 
@@ -158,9 +165,9 @@ function registerTFGCircuitBoardsRecipes(event) {
 		},
 	]
 
-	FLUID_REPLACEMENTS.forEach(function(replacement) {
-		var recipeId = "gtceu:chemical_reactor/" + replacement.recipe
-		var largeRecipeId = "gtceu:large_chemical_reactor/" + replacement.recipe
+	FLUID_REPLACEMENTS.forEach((replacement) => {
+		var recipeId = `gtceu:chemical_reactor/${replacement.recipe}`
+		var largeRecipeId = `gtceu:large_chemical_reactor/${replacement.recipe}`
 
 		if (replacement.new !== undefined) {
 			var fluidReplacements = {}

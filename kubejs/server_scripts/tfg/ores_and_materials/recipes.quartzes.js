@@ -11,9 +11,10 @@ function registerTFGQuartzRecipes(event) {
 
 	event.recipes.gtceu.autoclave("autoclave_dust_rose_quartz_ice")
 		.itemInputs('#forge:dusts/rose_quartz')
+		.notConsumable('#forge:gems/rose_quartz')
 		.inputFluids(Fluid.of("gtceu:ice", 144))
 		.itemOutputs("#forge:gems/rose_quartz")
-		.duration(2000)
+		.duration(30 * 20)
 		.EUt(120)
 
 	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')

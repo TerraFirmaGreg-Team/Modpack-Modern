@@ -1,0 +1,688 @@
+{
+  "name": "Dzikie plony",
+  "category": "tfc:the_world",
+  "icon": "tfc:textures/gui/book/icons/wild_crops.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:wild_crop/wheat[mature=true]"
+        }
+      },
+      "name": "Dzika pszenica",
+      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Wszystkie odmiany dzikich roślin",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/oat"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rye"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/maize[part=top]",
+            "Y": "tfc:wild_crop/maize[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/barley"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/rice[fluid=water]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/beet"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/cabbage"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/carrot"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/garlic"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/green_bean[part=top]",
+            "Y": "tfc:wild_crop/green_bean[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/potato"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/onion"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/soybean"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/squash"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/sugarcane[part=top]",
+            "Y": "tfc:wild_crop/sugarcane[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/tomato[part=top]",
+            "Y": "tfc:wild_crop/tomato[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/jute[part=top]",
+            "Y": "tfc:wild_crop/jute[part=bottom]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/pumpkin"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:wild_crop/melon"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dzikie plony występują w klimatach, w których mona je uprawiać, więc konkretnych upraw, przyjrzyj się klimatowi, w którym można uprawiać.\nW przeciwieństwie $(l:mechaniki/Plony)Plonów$() zasadzonych przez gracza dzikie plony nie wymagają $(l:mechaniki/nawodnienie)Nawodnienia$().Zmiast tego znajdują się w zależności od średniej $()Temperatury$() i $()opadów$().",
+      "title": "Znajdowanie dzikich roślin"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Następna strony pokazują tabele środowisk, gdzie występują dzikie plony."
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Plon",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Opady deszczu (mm)",
+          "bold": true
+        },
+        {
+          "text": "Jęczmień"
+        },
+        {
+          "text": " -8 - 26"
+        },
+        {
+          "text": " 70 - 310"
+        },
+        {
+          "text": "Owies"
+        },
+        {
+          "text": "  3 - 40"
+        },
+        {
+          "text": "140 - 400"
+        },
+        {
+          "text": "Żyto"
+        },
+        {
+          "text": "-11 - 30"
+        },
+        {
+          "text": "100 - 350"
+        },
+        {
+          "text": "Kukurydza"
+        },
+        {
+          "text": " 13 - 40"
+        },
+        {
+          "text": "300 - 500"
+        },
+        {
+          "text": "Pszenica"
+        },
+        {
+          "text": " -4 - 35"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Ryż"
+        },
+        {
+          "text": " 15 - 30"
+        },
+        {
+          "text": "100 - 500"
+        },
+        {
+          "text": "Burak"
+        },
+        {
+          "text": " -5 - 20"
+        },
+        {
+          "text": " 70 - 300"
+        },
+        {
+          "text": "Kapusta"
+        },
+        {
+          "text": "-10 - 27"
+        },
+        {
+          "text": " 60 - 280"
+        },
+        {
+          "text": "Marchew"
+        },
+        {
+          "text": "  3 - 30"
+        },
+        {
+          "text": "100 - 400"
+        },
+        {
+          "text": "Czosnek"
+        },
+        {
+          "text": "-20 - 18"
+        },
+        {
+          "text": " 60 - 310"
+        },
+        {
+          "text": "Fasolka szparagowa"
+        },
+        {
+          "text": "  2 - 35"
+        },
+        {
+          "text": "150 - 410"
+        },
+        {
+          "text": "Melon"
+        },
+        {
+          "text": "  5 - 37"
+        },
+        {
+          "text": "200 - 500"
+        }
+      ],
+      "text": "",
+      "title": "Wymagania dotyczące dzikich upraw",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Plon",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Opady deszczu (mm)",
+          "bold": true
+        },
+        {
+          "text": "Ziemniak"
+        },
+        {
+          "text": " -1 - 37"
+        },
+        {
+          "text": "200 - 410"
+        },
+        {
+          "text": "Dynia"
+        },
+        {
+          "text": "  0 - 30"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Cebula"
+        },
+        {
+          "text": "  0 - 30"
+        },
+        {
+          "text": "100 - 390"
+        },
+        {
+          "text": "Soja"
+        },
+        {
+          "text": "  8 - 30"
+        },
+        {
+          "text": "160 - 410"
+        },
+        {
+          "text": "Kabaczek"
+        },
+        {
+          "text": "  5 - 33"
+        },
+        {
+          "text": " 90 - 390"
+        },
+        {
+          "text": "Trzcina cukrowa"
+        },
+        {
+          "text": " 12 - 38"
+        },
+        {
+          "text": "160 - 500"
+        },
+        {
+          "text": "Pomidor"
+        },
+        {
+          "text": "  0 - 36"
+        },
+        {
+          "text": "120 - 390"
+        },
+        {
+          "text": "Juta"
+        },
+        {
+          "text": "  5 - 37"
+        },
+        {
+          "text": "100 - 410"
+        },
+        {
+          "text": "Papirus"
+        },
+        {
+          "text": " 19 - 37"
+        },
+        {
+          "text": "310 - 500"
+        },
+        {
+          "text": "Czerwona papryka"
+        },
+        {
+          "text": " 16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Żółta papryka"
+        },
+        {
+          "text": " 16 - 30"
+        },
+        {
+          "text": "190 - 400"
+        },
+        {
+          "text": "Słonecznik"
+        },
+        {
+          "text": "  5 - 40"
+        },
+        {
+          "text": "100 - 450"
+        }
+      ],
+      "text": "",
+      "title": "Wymagania dotyczące dzikich upraw",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Plon",
+          "bold": true
+        },
+        {
+          "text": "Temperatura (°C)",
+          "bold": true
+        },
+        {
+          "text": "Opady deszczu (mm)",
+          "bold": true
+        },
+        {
+          "text": "Rzepak"
+        },
+        {
+          "text": " -5 - 25"
+        },
+        {
+          "text": " 50 - 350"
+        },
+        {
+          "text": "Len"
+        },
+        {
+          "text": " -8 - 25"
+        },
+        {
+          "text": "175 - 475"
+        },
+        {
+          "text": "Ogórek"
+        },
+        {
+          "text": " 15 - 40"
+        },
+        {
+          "text": "350 - 500"
+        },
+        {
+          "text": "Rzodkiew"
+        },
+        {
+          "text": " -16 - 4"
+        },
+        {
+          "text": "75 - 325"
+        },
+        {
+          "text": "Soczewica"
+        },
+        {
+          "text": " -18 - 2"
+        },
+        {
+          "text": "250 - 425"
+        }
+      ],
+      "text": "",
+      "title": "Wymagania dotyczące dzikich upraw",
+      "legend": [],
+      "columns": 2,
+      "first_column_width": 80,
+      "column_width": 70,
+      "row_height": 10,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 4,
+  "extra_recipe_mappings": {
+    "tag:tfc:wild_crops": 0
+  }
+}

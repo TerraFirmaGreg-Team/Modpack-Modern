@@ -8,13 +8,13 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "This is the $(thing)Ore Index$() for $(thing)Venus$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+      "text": "This is the $(thing)Ore Index$() for $(thing)金星$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
       "title": "Venus Ore Index",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)Halite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)Lepidolite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Pyrite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()$(li)Sphalerite: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)Spodumene: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)Sulfur: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)Sylvite: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()",
+      "text": "$(li)カリ岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)10%$(/l)$()$(li)リシア輝石: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)リチア雲母: $(l:tfg_ores/venus_vein_index#venus_manual_salt)5%$(/l)$()$(li)岩塩: $(l:tfg_ores/venus_vein_index#venus_manual_salt)80%$(/l)$()$(li)硫黄: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)80%$(/l)$()$(li)閃亜鉛鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)5%$(/l)$()$(li)黄鉄鉱: $(l:tfg_ores/venus_vein_index#venus_manual_sulfur)15%$(/l)$()",
       "type": "patchouli:text"
     }
   ],

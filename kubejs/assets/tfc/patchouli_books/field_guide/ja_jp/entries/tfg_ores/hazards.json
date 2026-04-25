@@ -1,0 +1,206 @@
+{
+	"name": "危険物質",
+	"icon": "createdeco:decal_skull",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "危険物質",
+			"item": "gtceu:cobaltite_dust",
+			"text": "一部の$(thing)鉱石$()や$(thing)粉$()、$(thing)化学物質$()は危険物質であり、インベントリ内にあるだけで$(item)デバフ$()を受けたり、最悪の場合$(item)死んでしまう$()ことがあります。所持中は$(item)ステータスエフェクト$()として画面に表示されます。$(br2)これらの影響は、$(thing)フェイスマスク$()や$(thing)ゴム手袋$()、$(thing)$危険物用スーツ()といった装備で防ぐことができます。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "全てのエフェクト",
+			"text": "$(li)\n$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)\n$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)\n$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)\n$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)\n\n$(l:tfg_ores/hazards#Carcinogens)癌$()$(li)\n$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)\n$(l:tfg_ores/hazards#Irritants)炎症$()$(li)\n$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)\n$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)\n$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li\n)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)\n$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "予防と防護策",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)石?$()$()$(li)$(l:tfg_ores/hazards#containers)収容$()$(li)$(l:tfg_ores/hazards#mask)フェイスマスク$()$(li)$(l:tfg_ores/hazards#gloves)ゴム手袋$()$(li)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()$(li)$(l:tfg_ores/hazards#medicine)丸薬、錠剤、軟膏$()$(li)$(l:tfg_ores/hazards#rad_away) RadAwayᵗᵐ 錠$()$(li)$(l:tfg_ores/hazards#respawn)どうしようもなくなったときは...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ドクターストーン",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"anchor": "rocks",
+			"text": "$(thing)最も簡単な方法$()は、有害な影響を$(thing)防ぐ$()ために、$(item)危険なアイテムを拾わないようにする$()ことです。$(br2)例えば、インベントリを$(thing)小石$()で埋めることで、どのアイテムを拾うか選別できるようになり、有害なものを置いておくことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "確保、収容、保護",
+			"anchor": "containers",
+			"text": "有害物質がダメージを与えるのは$(thing)インベントリ内$()にあるときだけで、収納物内にあるときには影響を受けません。$(br)$(l:tfg_tips/inventory_management)リュック$()や$(l:getting_started/pottery#vessel)壺$()といった容器に入れておけば、安全に保管できます。$(thing)右クリック$()で壺の中身を他のストレージに直接入れることも可能です。",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "フェイスマスク",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)フェイスマスク$()は、ヒ素中毒などの$(item)吸入$()系の有害効果から身を守ることができます。",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "ゴム手袋",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "$(thing)Rubber gloves$()は、$(l:mechanics/leather_making)革$()と$(l:arborfirmacraft/making_rubber)ラテックス$()、または$(thing)ゴムシート$()から作成できます。装備することで、$(thing)ベリリウムの粉$()のような$(item)皮膚接触$()系の有害効果から身を守ることができます。"
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "まずは、革を成形してミトンを作りましょう。"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "$(thing)ミトン$()を果物やお酒から作ることができる $(thing)お酢$()に浸しましょう 。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "$(thing)準備された革のグローブ$()を$(thing)加硫処理ラテックス$()と一緒に$(thing)釜$()にいれて加熱しましょう。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "最後にラテックスに浸されたグローブを$(l:firmalife/ovens)オーブン$()で焼くことでゴム手袋が完成します。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "防護服",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "$(thing)危険物用スーツ$()一式をフル装備すると、$(item)放射線$()を含めた$(item)あらゆる$()危険物による影響を完全に無効化できます。作成には$(thing)ポリエチレン$()と$(thing)ポリ塩化ビニル$()が必要になり、$(thing)LV組立機$()で作成することができます。$(br2)小ネタとして、JEIで$(thing)#ppe_armor$()と検索すると、危険物対策用の装備を一覧で確認できます。",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "医薬品",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "もし有害物質の影響を受けてしまっても、治療に使える$(thing)医薬品$()を作ることができます。$(br2)もっとも簡単に作れる$(thing)丸薬$()は手軽に使えますが、$(item)副作用$()には気をつけましょう。一方で$(thing)錠剤$()や$(thing)軟膏$()は効果が高く副作用も少ないものの、作成には$(thing)LV以上の機械$()やより高度な素材が必要になります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "RadAwayᵗᵐ 錠",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "これは$(item)あらゆる$()有害効果を治療できる$(item)究極$()の薬であり、$(item)放射能汚染$()の$(item)唯一有効$()治療法でもあります。ただし、その分$(thing)コストが非常に高く$()、$(thing)作成難易度も高い$()ため、$(thing)HV以上$()の機械や高価な素材が必要になります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "救済",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "どうしようもないときのために、リスポーン用のベッドがあれば安心です。$(br2)$(thing)羊毛$()や$(thing)糸$()が無くても、$(l:getting_started/a_place_to_sleep)藁のベッド$()で代用できます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ヒ素中毒",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "ヒ素中毒",
+			"text": "$(thing)ヒ素中毒$()は、粉塵や蒸気、または$(thing)鶏冠石$()に含まれる$(thing)ヒ素$()を吸い込むことで発症する病気です。徐々に$(item)空腹感$()が増加し、やがて$(item)吐き気$()を引き起こし、最終的には$(item)死$()に至ります。$(br2)この状態は、$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "アスベスト症",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "アスベスト症",
+			"text": "$(thing)アスベスト症$()は、$(thing)石綿$()の粉塵を吸い込むことで発症する病気です。長時間さらされると$(item)空腹$()状態が発症します。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、防ぐことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "ベリリウム症",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "ベリリウム症",
+			"text": "$(thing)ベリリウム症$()は、$(thing)ベリリウムの粉$()や$(thing)液化ベリリウム$()が皮膚に触れることで発症する病気です。初めは大きな影響がないように見えますが、長くさらされるほど急速に$(item)死$()の危険性が高まります。$(br2)$(l:tfg_ores/hazards#gloves)ゴム手袋$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "一酸化炭素中毒",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)一酸化炭素中毒$()は、$(thing)一酸化炭素$()を吸い込むことで発症する中毒です。長くさらされると$(item)吐き気$()を引き起こし、やがて急速に$(item)死$()に至ります。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "癌",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "癌",
+			"text": "$(thing)発がん性物質$()は$(item)癌$()の原因となる有害物質で、$(thing)クロムの粉$()や$(thing)ベンゼン系$()などが含まれます。この病気は$(item)自然に治ることはありません$()が、深刻な状態になる前に段階的に影響が現れます。はじめは$(item)弱体化$()が発症し、次に$(item)空腹$()、さらに$(item)鈍足$()、最終的には$(item)採掘速度低下$()へと悪化していきます。曝露が蓄積すると、やがて$(item)死$()に至ります。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "癌",
+			"item": "gtceu:chromium_dust",
+			"anchor": "癌",
+			"text": "$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は$(thing)クロムの粉$()の接触による発症を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、その両方に対応できます。$(br2)もし深刻な曝露を受けた場合は、症状を$(thing)防ぐ$()ために$(l:tfg_ores/hazards#medicine)医薬品$()を使用するのが望ましいです。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "化学熱傷",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)化学熱傷$()は、一部の$(thing)ガス$()や$(thing)酸$()、$(thing)素材$()、$(thing)粉$()に触れたり吸い込んだりすることで発生します。影響を受けると$(item)弱体化$()が付与されます。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による影響を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋()は皮膚接触から守ります。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備すれば両方に対応できます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "炎症",
+			"item": "gtceu:chromite_dust",
+			"anchor": "炎症",
+			"text": "$(thing)炎症$()は、$(thing)ギ酸アンモニウム$()を吸い込んだり、$(thing)クロム鉄鉱の粉$()に触れたりすることで発生します。短時間なら$(item)弱体化$()程度で済みますが、放置するとやがてランダムにダメージを受けるようになります。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は皮膚接触を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備すれば両方に対応できます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "メタノール中毒",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)メタノール中毒$()は、$(thing)メタノール$()を吸い込むことで発症し、$(item)盲目$()を引き起こします。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "化学性悪心",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)化学性悪心$()は、$(thing)ブチルアルデヒド$()などを吸い込むことで発症する$(item)吐き気$()の症状です。$(br2)$(l:tfg_ores/hazards#mask)$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を使えば吸入による影響を防げます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "有毒性物質",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "$(thing)有毒性物質$()には2つの種類があります。弱い毒には$(thing)鉛の粉$()があり、より強力なものとしては$(thing)二酸化窒素$()が挙げられます。$(thing)弱毒$()は$(item)徐々に悪化する毒性症状$()を引き起こし、$(thing)有毒$()は$(item)弱体化$()とより強力な$(item)毒性症状$()を与えます。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入対策、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は皮膚接触対策として有効です。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()なら、あらゆる接触から完全に保護できます。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物質",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "$(thing)放射性物質$()（$(thing)ウラン238$()など）は、主に$(thing)EV$()以降で登場します。これらはプレイヤーに$(item)恒久的な被爆$()の影響を与えます。少し触れるだけなら$(item)発光$()程度で済みますが、長時間さらされると$(item)死$()に至ります。$(br2)確かに魅惑的な見た目で美味しそうですが、$(#ff0000)絶対にウランは食べないでください！$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "放射性物質",
+			"item": "gtceu:plutonium_ingot",
+			"text": "放射線を完全に防げるのは、$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()や一部の高性能な装備に限られます。$(br2)もし被爆してしまった場合は、$(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ 錠$()のみが有効な治療手段です。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "珪肺",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "珪肺",
+			"text": "$(thing)珪肺$()は、$(thing)二酸化ケイ素の粉$()の吸引によって発症する病気です。発症中は$(item)体力$()と、水中での$(item)呼吸量$()がどちらも減少します。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
+		}
+	]
+}

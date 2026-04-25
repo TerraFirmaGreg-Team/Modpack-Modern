@@ -1,0 +1,325 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "ハーブとスパイス",
+	"category": "tfc:firmalife",
+	"icon": "firmalife:spice/basil_leaves",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Firmalifeでは、料理に使える小型の植物を採取して、自分で育てることができます。これらはすべて自然界で入手でき、収穫後は$(l:firmalife/greenhouse)温室$()で栽培可能です。栽培時には、N・P・Kの養分をそれぞれ20ずつ消費します。"
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/basil[stage=1]"
+					}
+				}
+			],
+			"name": "バジル",
+			"text": "$(thing)野生のバジル$()は気温が12°C~25°C、降水量300~500mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/bay_laurel[stage=1]"
+					}
+				}
+			],
+			"name": "ローリエ",
+			"text": "$(thing)野生のローリエ$()は、気温が8~14C、降水量25~225mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cardamom[stage=1]"
+					}
+				}
+			],
+			"name": "カルダモン",
+			"text": "$(thing)野生のカルダモン$()は気温が18~30°C、降水量350~500mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cilantro[stage=1]"
+					}
+				}
+			],
+			"name": "コリアンダー",
+			"text": "$(thing)野生のコリアンダー$()は気温が5~15C、降水量0~150mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/cumin[stage=1]"
+					}
+				}
+			],
+			"name": "クミン",
+			"text": "$(thing)野生のクミン$()は気温が6~20C、降水量50~250mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/oregano[stage=1]"
+					}
+				}
+			],
+			"name": "オレガノ",
+			"text": "$(thing)野生のオレガノ$()は気温が5~13C、降水量50~150mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/pimento[stage=1]"
+					}
+				}
+			],
+			"name": "ピメント",
+			"text": "$(thing)野生のピメント$()は気温が15~30°C、降水量200~450mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "tfc:multimultiblock",
+			"multiblocks": [
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=0]"
+					}
+				},
+				{
+					"pattern": [
+						[
+							"X"
+						],
+						[
+							"0"
+						]
+					],
+					"mapping": {
+						"X": "firmalife:plant/vanilla[stage=1]"
+					}
+				}
+			],
+			"name": "バニラ",
+			"text": "$(thing)野生のバニラ$()は気温が18°C~30°C、降水量200~500mmの土地に生えています。",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "$(item)シードボール$()を使うことで、様々な種類の草を植えることができます。拠点を整地した後の景観整備などに便利です。作成には$(item)堆肥$()1つと$(thing)種$()が4つ必要になります。"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "",
+			"text": "バタフライグラス",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "バタフライグラスは時間が経つと成長し、成熟すると周囲に広がったり、別の種類の草へ変化することがあります。ただし、一度ほかの草から広がったものは、それ以上増殖しません。$(br)別の草に変化した後は、$(item)ハサミ$()を使って回収できます。"
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 19,
+	"extra_recipe_mappings": {
+		"firmalife:plant/basil": 1,
+		"firmalife:plant/bay_laurel": 2,
+		"firmalife:plant/cardamom": 3,
+		"firmalife:plant/cilantro": 4,
+		"firmalife:plant/cumin": 5,
+		"firmalife:plant/oregano": 6,
+		"firmalife:plant/pimento": 7,
+		"firmalife:plant/vanilla": 8,
+		"firmalife:seed_ball": 9
+	}
+}

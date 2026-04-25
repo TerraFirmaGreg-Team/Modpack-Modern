@@ -1,0 +1,29 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Wireless Hatch Configuration (GTMThings)",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtmthings:*_2a_wireless_energy_input_hatch",
+      "componentType": "WIRELESS_ENERGY_INPUT",
+      "amperage": "2A"
+    },
+    {
+      "blockIdPattern": "gtmthings:*_2a_wireless_energy_output_hatch",
+      "componentType": "WIRELESS_ENERGY_OUTPUT",
+      "amperage": "2A"
+    },
+    {
+      "blockIdPattern": "gtmthings:*_256a_wireless_laser_target_hatch",
+      "componentType": "WIRELESS_LASER_INPUT",
+      "amperage": "256A",
+      "minTier": 5
+    },
+    {
+      "blockIdPattern": "gtmthings:*_256a_wireless_laser_source_hatch",
+      "componentType": "WIRELESS_LASER_OUTPUT",
+      "amperage": "256A",
+      "minTier": 5
+    }
+  ]
+}

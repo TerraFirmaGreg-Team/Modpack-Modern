@@ -1,0 +1,52 @@
+{
+    "com.lowdragmc.lowdraglib.gui.modular.ModularUIGuiContainer": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": -19,
+                "bottom": 69
+            },
+            "SORT": {
+                "horizontalOffset": -43,
+                "bottom": 120
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -31,
+                "bottom": 107
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -19,
+                "bottom": 94
+            },
+            "SETTINGS": {
+                "top": 1
+            }
+        }
+    },
+    "com.simibubi.create.content.logistics.stockTicker.StockKeeperRequestScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 5,
+                "top": -2
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 5,
+                "top": -2
+            }
+        }
+    },
+    "cy.jdkdigital.tfcgroomer.inventory.GroomingStationScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": 54
+            }
+        }
+    }
+}

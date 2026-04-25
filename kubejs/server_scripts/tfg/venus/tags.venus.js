@@ -101,11 +101,6 @@ function registerTFGVenusBlockTags(event) {
 	event.add('tfc:can_carve', '#ad_astra:venus_stone_replaceables')
 	event.add('minecraft:animals_spawnable_on', '#ad_astra:venus_stone_replaceables')
 
-	event.add("tfc:monster_spawns_on", "create:scorchia");
-	event.add("tfc:monster_spawns_on", "create:scoria");
-	event.add("tfc:monster_spawns_on", "minecraft:basalt");
-	event.add("tfc:monster_spawns_on", "minecraft:smooth_basalt");
-
 	event.add("minecraft:strider_warm_blocks", "create:scorchia");
 	event.add("minecraft:strider_warm_blocks", "tfg:rock/hardened_scorchia");
 	event.add("minecraft:strider_warm_blocks", "minecraft:basalt");

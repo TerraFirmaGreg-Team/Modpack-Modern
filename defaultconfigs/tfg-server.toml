@@ -139,3 +139,11 @@
 	#Range: > 1
 	sandDecumulateChance = 36
 
+[world_generation]
+	#Per-dimension worldgen version overrides. Normally the version used during world 
+	#creation is stored in SavedData and used automatically. Set an entry here to force 
+	#a specific version regardless of what was recorded at generation time. 
+	#Changing this for an existing world can cause chunk boundary artifacts. 
+	#Format: list of "dimension_id=version", e.g. ["minecraft:overworld=1"]
+	worldgenOverrides = []
+

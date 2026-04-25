@@ -1,0 +1,8 @@
+{
+    "type": "tfg:fluid_gas_vent",
+    "config": {
+        "base_radius": 6,
+        "chance": 0.8,
+        "vent": "tfg:natural_gas_emitter"
+    }
+}

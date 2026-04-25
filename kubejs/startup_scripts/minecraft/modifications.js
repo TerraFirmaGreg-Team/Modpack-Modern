@@ -47,3 +47,11 @@ function registerMinecraftItemModifications(event) {
 		item.burnTime = 100
 	})
 }
+
+function registerMinecraftBlockModifications(event) {
+
+	event.modify('minecraft:cherry_leaves', block => {
+		block.hasCollision = false
+		block.speedFactor = 0.25
+	})
+}

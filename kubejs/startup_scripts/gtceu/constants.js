@@ -177,10 +177,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     "gtceu:molten_vanadium_steel_bucket",
     "gtceu:molten_gallium_arsenide_bucket",
     "gtceu:molten_hsla_steel_bucket",
-    "gtceu:molten_rocket_alloy_t2_bucket",
     "gtceu:molten_desh_bucket",
     "tfg:molten_weak_blue_steel_bucket",
     "tfg:molten_weak_red_steel_bucket",
+    "gtceu:nether_air_bucket",
+    "gtceu:liquid_nether_air_bucket",
+    "gtceu:ender_air_bucket",
+    "gtceu:liquid_ender_air_bucket",
 
     //armor
     "gtceu:bronze_helmet",
@@ -231,6 +234,13 @@ global.GTCEU_DISABLED_ITEMS = /** @type {const} */ ([
     // (Normal) thorium bits
     "gtceu:thorium_plate",
     "gtceu:thorium_rod",
+
+    // Coal
+    "gtceu:crushed_coal_ore",
+    "gtceu:purified_coal_ore",
+    "gtceu:refined_coal_ore",
+    "gtceu:impure_coal_dust",
+    "gtceu:pure_coal_dust",
 
     // Replaced with our own
     "gtceu:paracetamol_pill",
@@ -420,6 +430,7 @@ global.ORE_BEARING_STONES = /** @type {const} */ ([
     "deepslate",
     "pyroxenite",
     "dripstone",
+    "tuff",
 
     "moon_stone",
     "moon_deepslate",
@@ -461,7 +472,9 @@ global.ADD_CIRCUIT = /** @type {const} */ ([
     { recipeId: "gtceu:large_chemical_reactor/biphenyl_from_toluene", circuitNumber: 2 },
 
     { recipeId: "gtceu:chemical_reactor/polydimethylsiloxane_from_silicon", circuitNumber: 3 },
-    { recipeId: "gtceu:large_chemical_reactor/polydimethylsiloxane_from_silicon", circuitNumber: 3 }
+    { recipeId: "gtceu:large_chemical_reactor/polydimethylsiloxane_from_silicon", circuitNumber: 3 },
+
+    { recipeId: "gtceu:mixer/molybdenum_disilicide", circuitNumber: 2 }
 ]);
 //#endregion
 

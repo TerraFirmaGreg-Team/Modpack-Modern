@@ -1,0 +1,168 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"name": "Wprowadzenie",
+	"category": "tfc:getting_started",
+	"icon": "tfc:rock/loose/granite",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "W TerraFirmaCraft pierwsze przedmioty, które możesz zdobyć, to patyki, gałązki i kamienie. Można je znaleźć leżące na ziemi w niemal każdym klimacie. Użyj $(item)$(k:key.use)$() lub zniszcz je, aby je podnieść."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"1    ",
+						" 2  4",
+						"  03 ",
+						" 4   ",
+						"    5"
+					],
+					[
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG",
+						"GGGGG"
+					]
+				],
+				"mapping": {
+					"G": "tfc:grass/sandy_loam",
+					"1": "tfc:rock/loose/granite[count=1]",
+					"2": "tfc:rock/loose/granite[count=2]",
+					"3": "tfc:rock/loose/granite[count=3]",
+					"4": "tfc:groundcover/stick",
+					"5": "tfc:wood/twig/ash"
+				}
+			},
+			"name": "Przykład",
+			"text": "Garstka powszechnych patyków i kamieni.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Oprócz zbierania patyków i gałązek z ziemi, patyki można także otrzymać przez niszczenie liści ręką. Gdy już masz kilka kamieni i patyków, jesteś gotowy do rozpoczęcia $(thing)Ciosania$(). Ciosanie to proces, w którym dwa kamienie są uderzane razem, tworząc konkretny kształt. Aby ciosać, należy najpierw trzymać co najmniej dwa kamienie w dłoni, następnie kliknij prawym przyciskiem myszy w powietrze aby otworzyć $(thing)interfejs ciosania$()."
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfc:textures/gui/book/gui/rock_knapping.png"
+			],
+			"text": "Interfejs Ciosania.",
+			"border": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "W celu wytworzenia określonego przedmiotu, musisz usunąć kwadraty w taki sposób aby utworzyć żądany wzór. Na przykład stwórz ostrze noża w taki sposób jak przedstawia to przepis po prawej stronie.$(br2)Jak w przypadku receptur wytwarzania, umiejscowienie pożądanego wzoru podczas ciosania nie ma znaczenia, a niektóre receptury mają wiele prawidłowych wariantów."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"anchor": "knife",
+			"recipes": [
+				"tfg:rock_knapping/stone_knife_head",
+				"tfg:rock_knapping/stone_knife_head_1",
+				"tfg:rock_knapping/stone_knife_head_2",
+				"tfg:rock_knapping/stone_knife_head_3"
+			],
+			"text": "Ostrze noża wykonane z różnych typów kamienia."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/knife_stone",
+			"text": "Wszystkie główne części kamiennych narzędzi mogą być połączone z patykiem lub gałązką aby stworzyć docelowe narzędzie.$(br2)Kamiennym nożem można zebrać $(thing)Słome$() ścinając rośliny."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_axe_head"
+			],
+			"text": "$(thing)Siekiery$() mogą być użyte do ścięcia całych drzew, kłód i liści. Jednakże sadzonki i patyki będą uzyskiwane tylko w przypadku osobnego zniszczenia liści."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_shovel_head"
+			],
+			"text": "$(thing)Łopat$() można używać do kopania bloków gleby. Mogą być również użyte do tworzenia $(thing)Ścieżek$() przez $(item)użycie$() ich na $(thing)Ziemi$() lub $(thing)Trawie$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hoe_head",
+				"tfg:rock_knapping/stone_hoe_head_1",
+				"tfg:rock_knapping/stone_hoe_head_2"
+			],
+			"text": "$(thing)Motyki$() są przydatne w  $(l:mechanics/crops)Rolnictwie$(), ale można je również wykorzystać do ścinania liści i innych roślin."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfg:rock_knapping/stone_hammer_head"
+			],
+			"text": "$(thing)Młotów$() można używać jako broni$(l:mechanics/damage_types)Miażdżącej$() ale są ważniejszymi narzędziami używanymi do $(l:getting_started/primitive_anvils)Wykuwania$()."
+		},
+		{
+			"type": "tfc:rock_knapping_recipe",
+			"recipes": [
+				"tfc:rock_knapping/javelin_head_sedimentary",
+				"tfc:rock_knapping/javelin_head_metamorphic",
+				"tfc:rock_knapping/javelin_head_igneous_extrusive",
+				"tfc:rock_knapping/javelin_head_igneous_intrusive"
+			],
+			"text": "Wreszcie, $(thing)Włócznia$() może być użyta jako prymitywna broń miotana lub można jej użyć jako broni $(l:mechanics/damage_types)Przebijającej$()."
+		}
+	],
+	"read_by_default": true,
+	"sortnum": 0,
+	"extra_recipe_mappings": {
+		"tfc:stone/knife_head/sedimentary": 5,
+		"tfc:stone/knife_head/metamorphic": 5,
+		"tfc:stone/knife_head/igneous_extrusive": 5,
+		"tfc:stone/knife_head/igneous_intrusive": 5,
+		"tfc:stone/knife/sedimentary": 5,
+		"tfc:stone/knife/metamorphic": 5,
+		"tfc:stone/knife/igneous_extrusive": 5,
+		"tfc:stone/knife/igneous_intrusive": 5,
+		"tfc:stone/axe_head/sedimentary": 7,
+		"tfc:stone/axe_head/metamorphic": 7,
+		"tfc:stone/axe_head/igneous_extrusive": 7,
+		"tfc:stone/axe_head/igneous_intrusive": 7,
+		"tfc:stone/axe/sedimentary": 7,
+		"tfc:stone/axe/metamorphic": 7,
+		"tfc:stone/axe/igneous_extrusive": 7,
+		"tfc:stone/axe/igneous_intrusive": 7,
+		"tfc:stone/shovel_head/sedimentary": 8,
+		"tfc:stone/shovel_head/metamorphic": 8,
+		"tfc:stone/shovel_head/igneous_extrusive": 8,
+		"tfc:stone/shovel_head/igneous_intrusive": 8,
+		"tfc:stone/shovel/sedimentary": 8,
+		"tfc:stone/shovel/metamorphic": 8,
+		"tfc:stone/shovel/igneous_extrusive": 8,
+		"tfc:stone/shovel/igneous_intrusive": 8,
+		"tfc:stone/hoe_head/sedimentary": 9,
+		"tfc:stone/hoe_head/metamorphic": 9,
+		"tfc:stone/hoe_head/igneous_extrusive": 9,
+		"tfc:stone/hoe_head/igneous_intrusive": 9,
+		"tfc:stone/hoe/sedimentary": 9,
+		"tfc:stone/hoe/metamorphic": 9,
+		"tfc:stone/hoe/igneous_extrusive": 9,
+		"tfc:stone/hoe/igneous_intrusive": 9,
+		"tfc:stone/hammer_head/sedimentary": 10,
+		"tfc:stone/hammer_head/metamorphic": 10,
+		"tfc:stone/hammer_head/igneous_extrusive": 10,
+		"tfc:stone/hammer_head/igneous_intrusive": 10,
+		"tfc:stone/hammer/sedimentary": 10,
+		"tfc:stone/hammer/metamorphic": 10,
+		"tfc:stone/hammer/igneous_extrusive": 10,
+		"tfc:stone/hammer/igneous_intrusive": 10,
+		"tfc:stone/javelin_head/sedimentary": 11,
+		"tfc:stone/javelin_head/metamorphic": 11,
+		"tfc:stone/javelin_head/igneous_extrusive": 11,
+		"tfc:stone/javelin_head/igneous_intrusive": 11,
+		"tfc:stone/javelin/sedimentary": 11,
+		"tfc:stone/javelin/metamorphic": 11,
+		"tfc:stone/javelin/igneous_extrusive": 11,
+		"tfc:stone/javelin/igneous_intrusive": 11
+	}
+}

@@ -1,0 +1,68 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Haut-Fourneau",
+  "category": "tfc:mechanics",
+  "icon": "tfc:blast_furnace",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Un $(thing)Haut Fourneau$() est un appareil avancé utilisé dans la création d'$(thing)Acier$(). En mélangeant du $(l:getting_started/finding_ores)Minerai de fer$() avec du $(l:tfg_tips/basic_automation)Coke$() ou bien de l'$(l:beneath/ores_and_minerals#cursecoal)Anthacite$(), ainsi qu'avec du $(l:mechanics/flux)Flux$() dans un environnement chaud et contrôlé, vous pouvez créer un métal plus fort que la fonte ou le fer forgé.$(br2)Pour obtenir un haut fourneau, vous aurez besoin d'un $(l:mechanics/crucible)Creuset$() et de beaucoup de $(thing)Plaques de fer forgé$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/blast_furnace",
+      "text": "La fabrication du haut fourneau lui-même nécessite un $(thing)Creuset$() ainsi que de $(thing)Doubles plaques de fer forgé$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous devrez alors construire la structure du haut fourneau, avec sa $(thing)Cheminée$(). La cheminée doit être faite en $(l:mechanics/fire_clay#fire_bricks)Briques réfractaires renforcées$(), puisqu'elles sont suffisamment résistantes pour supporter la chaleur intense. Elles sont fabriquées à partir de blocs de briques réfractaires et de plaques de fer forgé ou de fonte. Ces plaques peuvent être appliquées à chaque face exposée des briques en utilisant $(item)$(k:key.sneak)$() + $(item)$(k:key.use)$() avec l'item en main, ou bien peuvent être transformées en $(l:mechanics/blast_furnace_insulation)Isolation pour haut fourneau$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:blast_furnace",
+      "name": "Un Haut Fourneau",
+      "text": "Un haut fourneau avec une cheminée de taille minimale.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La cheminée d'un haut fourneau peut être haute d'au maximum cinq couches, chaque couche nécessitant quatre $(thing)Briques réfractaires$() et douze $(thing)Plaques de fer forgé$(). Chaque nouvelle couche augmente la capacité du haut fourneau, le permettant de créer plus d'acier d'un coup. Chaque couche de cheminée, jusqu'à un maximum de cinq, permet au haut fourneau de contenir quatre minerais de plus."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Afin d'utiliser le haut fourneau, vous devrez envoyer des items dans le haut de sa cheminée. Pour la production d'acier, vous devrez envoyer un nombre égal de $(l:getting_started/finding_ores)Minerais de fer$() et de $(l:mechanics/flux)Flux$(). Tous les minerais et items fondables en $(thing)Fonte$() fondront. Vous aurez aussi besoin d'ajouter du $(l:tfg_tips/basic_automation)Coke$() ou de l'$(l:beneath/ores_and_minerals#cursecoal)Anthacite$(), qui seront consommés au cours du fonctionnement du haut fourneau."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Utiliser le haut fourneau ouvrira son interface, comme ci-contre. Dans cette interface, vous verrez une mesure à la fois du contenu en minerai et en carburant du haut fourneau. L'emplacement en haut à droite doit contenir une $(thing)Tuyère$(), c'est-à-dire un tuyau en métal servant à acheminer de l'air dans le haut fourneau, ce qui est requis afin d'atteindre des températures suffisamment haute pour fondre l'acier. Une tuyère peut être forgée dans une $(l:mechanics/anvils)Enclume$()."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+      "tfc:textures/gui/book/gui/blast_furnace.png"
+      ],
+      "text": "L'interface du Haut Fourneau",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez aussi besoin d'un $(l:mechanics/bellows)Soufflet$() pour aider le Haut Fourneau à atteindre la température de fusion du fer. Le soufflet peut être placé contre n'importe quel côté du haut fourneau."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:full_blast_furnace",
+      "name": "",
+      "text": "Un haut fourneau de taille maximale avec un creuset et un soufflet attaché.",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Afin de commencer, allumez le haut fourneau avec un $(l:getting_started/firepit#firestarter)Allume-Feu$() ou un $(thing)Briquet$(). Les minerais à l'intérieur vont commencer à chauffer. Assurez-vous que le haut fourneau contienne assez de carburant, et utilisez le soufflet pour rajouter de l'air au haut fourneau après que sa température ait atteint le maximum permis par le charbon. Quand il sera suffisamment chaud, le minerai fondra et deviendra de la $(l:mechanics/steel)Fonte Brute$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le métal liquide ruissellera alors dans n'importe quel contenant de métal liquide placé directement sous le haut fourneau, tel qu'un $(l:mechanics/crucible)Creuset$(). Il peut alors être coulé dans un moule à lingot d'un emplacement de sortie du creuset puis travaillé en $(l:mechanics/steel)Acier$()."
+    }
+  ],
+  "read_by_default": true
+}

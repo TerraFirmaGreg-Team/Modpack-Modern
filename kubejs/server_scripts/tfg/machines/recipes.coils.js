@@ -18,6 +18,21 @@ function registerTFGCoilRecipes(event) {
 		.itemOutputs('#forge:dusts/magnesia')
 		.duration(20 * 20)
 
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_fullers_earth')
+		.itemInputs('13x #forge:dusts/fullers_earth')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_asbestos')
+		.itemInputs('6x #forge:dusts/asbestos')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
+	event.recipes.gtceu.coke_oven('tfg:magnesia_from_soapstone')
+		.itemInputs('7x #forge:dusts/soapstone')
+		.itemOutputs('#forge:dusts/magnesia')
+		.duration(20 * 40)
+
 	event.recipes.gtceu.pyrolyse_oven('tfg:magnesia')
 		.itemInputs('#forge:dusts/magnesium_hydroxide')
 		.itemOutputs('#forge:dusts/magnesia')
@@ -79,7 +94,7 @@ function registerTFGCoilRecipes(event) {
 
 	event.remove({ id: 'gtceu:assembler/coil_kanthal' })
 	event.recipes.gtceu.assembler('tfg:coil_kanthal')
-		.itemInputs('8x #forge:double_wires/kanthal', '8x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
+		.itemInputs('8x #forge:double_wires/kanthal', '16x #forge:foils/rene_41', '1x #forge:ingots/silicon_carbide')
 		.inputFluids('gtceu:cobalt 144')
 		.itemOutputs('gtceu:kanthal_coil_block')
 		.duration(20 * 15)
@@ -100,28 +115,28 @@ function registerTFGCoilRecipes(event) {
 	TFGHelpers.registerMaterialInfo('tfg:blue_alloy_desh_foil', [GTMaterials.BlueAlloy, 0.5, GTMaterials.get('gtceu:desh'), 0.25])
 
 	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_dynamite')
-		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_dust', '2x gtceu:dynamite')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '2x gtceu:dynamite')
 		.itemOutputs('tfg:chorus_ceramic_insulation')
 		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_powderbarrel')
-		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_dust', '8x gtceu:powderbarrel')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '8x gtceu:powderbarrel')
 		.itemOutputs('tfg:chorus_ceramic_insulation')
 		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_tnt')
-		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_dust', '4x minecraft:tnt')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', '4x minecraft:tnt')
 		.itemOutputs('tfg:chorus_ceramic_insulation')
 		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.implosion_compressor('tfg:chorus_ceramic_insulation_itnt')
-		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_dust', 'gtceu:industrial_tnt')
+		.itemInputs('ae2:sky_dust', '#forge:dusts/perlite', '#forge:dusts/kaolinite', 'minecraft:popped_chorus_fruit', 'ae2:fluix_crystal', 'gtceu:industrial_tnt')
 		.itemOutputs('tfg:chorus_ceramic_insulation')
 		.chancedOutput('#forge:dusts/dark_ash', 2500, 0)
 		.duration(20)

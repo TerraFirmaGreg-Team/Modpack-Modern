@@ -88,6 +88,17 @@ function registerTFGLoots(event) {
 		.removeLoot(Ingredient.all)
 		.addLoot('minecraft:campfire')
 
+	event.addBlockLootModifier('tfg:large_nest_box')
+		.removeLoot('tfg:large_nest_box')
+		.customCondition({
+				block: "tfg:large_nest_box",
+				condition: "minecraft:block_state_property",
+				properties: {
+					nest_part: "0"
+				}
+			})
+		.addLoot('tfg:large_nest_box')
+
 	//#endregion
 
 	//Cross-mod glass compat
@@ -165,8 +176,47 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:sniffer')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([8, 10], ['tfg:food/raw_sniffer_beef'])
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
 
 	event.addEntityLootModifier('tfg:wraptor')
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([2, 3], ['tfg:food/raw_wraptor'])
+
+	// Leopard seal normal loot table
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.addWeightedLoot([3, 6], ['tfc:blubber'])
+		.addWeightedLoot([1, 4], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:medium_raw_hide', 1))
+	
+	// Leopard seal extra with butchery knife
+	event.addEntityLootModifier('tfg:leopard_seal')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([1, 3], ['tfc:blubber'])
+
+	// Bison normal loot table
+	event.addEntityLootModifier('tfg:bison')
+		.addWeightedLoot([12, 20], ['tfg:food/raw_bison_meat'])
+		.addWeightedLoot([7, 10], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
+		.addWeightedLoot([1, 2], ['tfc:blubber'])
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
+		.addLoot(LootEntry.of('firmalife:rennet', 4))
+	
+	// Bison drop extra with butchery knife
+	event.addEntityLootModifier('tfg:bison')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([4, 6], ['tfg:food/raw_bison_meat'])
+		.addWeightedLoot([0, 1], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfg:lemming')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:jerboa')
+		.addWeightedLoot([0, 1], ['minecraft:bone'])
+		.addWeightedLoot([0, 1], ['tfc:small_raw_hide'])
+	
+	event.addEntityLootModifier('tfg:mongoose')
+		.addWeightedLoot([1, 3], ['minecraft:bone'])
+		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
 };

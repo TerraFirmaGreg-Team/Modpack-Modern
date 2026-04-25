@@ -1,7 +1,7 @@
 ##[general]
 
 B:force_fullscreen = 'false';
-I:default_gui_scale = '-1';
+I:default_gui_scale = '3';
 B:play_vanilla_menu_music = 'true';
 
 
@@ -14,7 +14,7 @@ B:advanced_customization_mode = 'false';
 
 ##[loading]
 
-S:preload_resources = '[cubic_panorama]beneath%!source_end!%[slideshow]new_loading_screen%!source_end!%';
+S:preload_resources = '[slideshow]new_loading_screen%!source_end!%[cubic_panorama]worldgen%!source_end!%[source:local]config/fancymenu/assets/icons/icon/icon.fma%!source_end!%[source:local]config/fancymenu/assets/cursor.png%!source_end!%[source:local]config/fancymenu/assets/loading_bar/loading_bar_440x16_bg.png%!source_end!%[source:local]config/fancymenu/assets/loading_bar/loading_bar_440x16_a/loading_bar_440x16_a.fma%!source_end!%[source:local]config/fancymenu/assets/icons/1920x330_tfg_logo_s_b.png%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 B:game_intro_fade_out = 'true';

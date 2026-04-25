@@ -1,0 +1,237 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "最初の金床",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)金床$()は序盤の金属加工に必須の作業台です。金床では「$(l:mechanics/anvils#working)鍛造$()」と「$(l:getting_started/primitive_anvils#welding)溶接$()」の2種類の加工を行うことができます。この章では、本格的な金床を作るために必要な原始的な金床である「石の金床」の作り方について説明します。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "まず、特定の種類の$(thing)石$()ブロックが必要になります（丸石ではいけません）。対象となるのは$(thing)火成噴出岩$()（流紋岩・玄武岩・安山岩・デイサイト）か、$(thing)火成貫入岩$()（花崗岩・閃緑岩・斑れい岩）です。地表に露出しているものをそのまま使うか、周囲の岩から$(l:getting_started/primitive_anvils#raw_rock)切り出して$()入手することもできます。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "また、$(thing)ハンマー$()も用意してください。金床は、前述の種類の石ブロックの$(thing)上面$()を $(thing)ハンマー$()で右クリックすることで作成できます。$(br2)金床には$(l:mechanics/anvils#tiers)等級（ティア）$()があり、石の金床は等級０（最下位の等級）です。そのため、石の金床では等級１のインゴットの$(l:getting_started/primitive_anvils#welding)溶接$()しか行えません。",
+      "title": "石の金床"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "中央の石を金床に加工します。",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        " 0 "
+    ],
+    [
+        "RRR"
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        "tfc:rock_anvil"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "石ブロックをそのままの形で手に入れるには、$(thing)切り出す$()必要があります。切り出したいブロックの上下左右前後すべてを採掘して周囲を空気にすると、ブロックがアイテム化して回収できるようになります。",
+      "title": "石の回収"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "石の周囲6面を全て採掘しましょう。完了すると中央の石ブロックがアイテムとしてドロップします。",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "溶接は、2つのアイテムを接合して別のアイテムを作る工程です。$(l:getting_started/primitive_anvils)石の金床$()でも$(l:mechanics/anvils)金属の金床$()でも、やり方は共通です。$(br2)まずは溶接したいアイテム2つ（インゴットやプレートなど）を金床に置きます。直接使用して置くか、GUIを開いて左側の2スロットに入れることでセットできます。",
+      "title": "溶接"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "また、溶接を行うには、金床に$(l:mechanics/flux)融剤$()を少なくとも1つ入れておく必要があります。そのうえで、溶接するアイテムが両方とも$(l:mechanics/heating)溶接可能な温度$()（ツールチップに「溶接可能」と表示）になっている状態で、$(thing)ハンマー$()を持ちShift+右クリックで叩くかGUIの「Weld」ボタンを押します。すると打撃音とともにアイテムが溶接されます。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

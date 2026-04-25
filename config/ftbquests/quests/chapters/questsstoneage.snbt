@@ -54,6 +54,25 @@
 			x: 0.0d
 			y: 12.5d
 		}
+		{
+			id: "1A97424A38544065"
+			linked_quest: "3D845616A2F7083F"
+			shape: "heart"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "1C8FCD75778C1614"
+			linked_quest: "082310DF9BEA92CE"
+			x: 17.0d
+			y: 8.5d
+		}
+		{
+			id: "07CB391030266E3E"
+			linked_quest: "5261ECBE3438B05E"
+			x: 19.0d
+			y: 8.5d
+		}
 	]
 	quests: [
 		{
@@ -69,16 +88,15 @@
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_rock.subtitle}"
 			tasks: [{
-				count: 4L
-				id: "6EC31A845E58B399"
+				id: "4FEBB1E609A34025"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
+						"ftbfiltersystem:filter": "or(item_tag(tfc:rock_knapping)item(minecraft:flint))"
 					}
 				}
-				title: "{quests.tasktype.item.any} #tfc:rock_knapping"
+				title: "{quests.stone_age.find_rock.task}"
 				type: "item"
 			}]
 			title: "{quests.stone_age.find_rock.title}"
@@ -423,6 +441,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.water_jug.desc}"]
 			id: "7D828280098F6BEE"
+			optional: true
 			subtitle: "{quests.stone_age.water_jug.subtitle}"
 			tasks: [{
 				id: "0D682F8BE96153F9"
@@ -502,6 +521,7 @@
 			description: ["{quests.stone_age.leather_flask.desc}"]
 			guide_page: "tfc:field_guide tfc:waterflasks/bladders"
 			id: "62BD1E75FD629161"
+			optional: true
 			subtitle: "{quests.stone_age.leather_flask.subtitle}"
 			tasks: [{
 				id: "19738C50367BC37B"
@@ -520,8 +540,8 @@
 		}
 		{
 			dependencies: [
-				"1562419608EB333D"
 				"174DA15847665CF8"
+				"1D40CAE675C4BB91"
 			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
 			guide_page: "tfc:field_guide tfc:waterflasks/recipes"
@@ -547,8 +567,8 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.iron_flask.title}"
-			x: 2.0d
-			y: 8.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -572,6 +592,7 @@
 					icon: "tfc:plant/pampas_grass"
 					id: "0DEAAE4416D8F289"
 					observe_type: 1
+					optional_task: true
 					timer: 0L
 					title: "{quests.tasktype.lookat} #tfc:clay_indicators"
 					to_observe: "#tfc:clay_indicators"
@@ -684,7 +705,7 @@
 			}]
 			title: "{quests.metal_age.copper_anvil.title}"
 			x: 26.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -707,7 +728,7 @@
 			}]
 			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5E186CD5E83BFDF0"]
@@ -747,13 +768,14 @@
 			]
 			title: "{quests.stone_age.flux.title}"
 			x: 19.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"618090A6D0D3B2F1"
 				"669F84C6A2A64145"
 				"3462FD6E24F9BE0B"
+				"082310DF9BEA92CE"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.copper_for_anvil.desc}"]
@@ -767,7 +789,7 @@
 			}]
 			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 17.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -808,7 +830,7 @@
 			]
 			title: "{quests.stone_age.rock_anvil.title}"
 			x: 21.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -941,6 +963,7 @@
 			]
 			description: ["{quests.stone_age.make_jug.desc}"]
 			id: "718CDC407CDE32E1"
+			optional: true
 			subtitle: "{quests.stone_age.make_jug.subtitle}"
 			tasks: [{
 				id: "3106F057BE27C2D5"
@@ -1239,7 +1262,7 @@
 			}]
 			title: "{quests.stone_age.create_forge.title}"
 			x: 23.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			description: [
@@ -1265,7 +1288,7 @@
 			}]
 			title: "{quests.stone_age.get_raw_rock.title}"
 			x: 21.0d
-			y: 13.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -1293,7 +1316,7 @@
 			]
 			title: "{quests.stone_age.quern.title}"
 			x: 19.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
@@ -1812,6 +1835,7 @@
 			description: ["{quests.stone_age.glass_bottles.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			id: "4F7B5C34B7CD27F2"
+			optional: true
 			subtitle: "{quests.stone_age.glass_bottles.subtitle}"
 			tasks: [{
 				id: "07146369A0BF82E7"
@@ -2101,7 +2125,7 @@
 			}]
 			title: "{quests.stone_age.crush_ore.title}"
 			x: 18.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2621BF784BEB7033"]
@@ -2148,7 +2172,7 @@
 			]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
 			x: 17.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["050444CE0EA04FDF"]
@@ -2180,13 +2204,14 @@
 			}]
 			title: "{quests.stone_age.clean_dust.title}"
 			x: 17.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
 			description: ["{quests.stone_age.portable_storage.desc}"]
 			icon: "sophisticatedbackpacks:backpack"
 			id: "59B30B2C92285D2D"
+			shape: "circle"
 			subtitle: "{quests.stone_age.portable_storage.subtitle}"
 			tasks: [{
 				id: "77863C6CD510E601"

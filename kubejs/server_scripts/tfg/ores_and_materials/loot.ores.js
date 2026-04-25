@@ -22,6 +22,33 @@ const registerTFGOreLoots = (event) => {
 					.addLoot(ChemicalHelper.get(TagPrefix.gemChipped, material, 1));
 			}
 
+			// Special case for coal and lignite
+			if (material === GTMaterials.Coal || material === GTMaterials.get('lignite')) {
+				let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
+				let rawOre = ChemicalHelper.get(TagPrefix.gem, material, 1)
+				event.addBlockLootModifier(rawOreBlock)
+					.removeLoot(ItemFilter.ALWAYS_TRUE)
+					.addWeightedLoot([4, 6], rawOre)
+					.addLoot(LootEntry.of(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Coal, 1))
+						.when(c => c.randomChance(0.2)));
+
+				// Stone ores
+				global.ORE_BEARING_STONES.forEach(stoneType => {
+					let stoneTypeMaterial = GTMaterials.get(global.BIG_ROCK_TABLE[stoneType === "pyroxenite" ? "blackstone" : stoneType].material);
+				
+					let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
+
+					event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
+						.removeLoot(Ingredient.all)
+						.addLoot(rawOre)
+						.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
+						.addLoot(LootEntry.of(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Coal, 1))
+							.when(c => c.randomChance(0.05)));
+				})
+
+				return;
+			}
+
 			let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
 			let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
 			let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
@@ -35,7 +62,7 @@ const registerTFGOreLoots = (event) => {
 					normalRawOre.withChance(0.6),
 					poorRawOre.withChance(0.2)
 				])
-				.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.1)));
+				.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.2)));
 
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
@@ -45,7 +72,6 @@ const registerTFGOreLoots = (event) => {
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 				let namespace = material === $GreateMaterials.RoseQuartz ? 'greate' : 'gtceu';
 
-				// break with pickaxe/mining hammer/drill/mining machine
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
 					.addWeightedLoot([
@@ -54,13 +80,20 @@ const registerTFGOreLoots = (event) => {
 						poorRawOre.withChance(0.2)
 					])
 					.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
-					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.02)));
+					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));
+			})
 
-				// break with hammer
-				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
-					.matchMainHand('#forge:tools/hammers')
+			// Sand ores
+			global.SAND_COLORS.forEach(sandType => {
+				event.addBlockLootModifier(`gtceu:${sandType}_sand_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
-					.addLoot(LootEntry.of(GTBlocks.COBBLE_BLOCKS.get(TagPrefix.get(stoneType)).get().getBlock().id));
+					.addWeightedLoot([
+						richRawOre.withChance(0.2),
+						normalRawOre.withChance(0.6),
+						poorRawOre.withChance(0.2)
+					])
+					.addLoot(LootEntry.of(`tfc:sand/${sandType}`).when(c => c.randomChance(0.2)))
+					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));
 			})
 		}
 	})

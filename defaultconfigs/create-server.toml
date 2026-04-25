@@ -495,11 +495,11 @@
 	maxTrackPlacementLength = 128
 	#.
 	#Maximum length of a Train Stations' assembly track.
-	#Range: > 5
+	#Range: 5 ~ 512
 	maxAssemblyLength = 128
 	#.
 	#Maximum amount of bogeys assembled as a single Train.
-	#Range: > 1
+	#Range: 1 ~ 200
 	maxBogeyCount = 20
 	#.
 	#Relative speed of a manually controlled Train compared to a Scheduled one.
@@ -532,15 +532,15 @@
 		#[in Blocks/Second]
 		#The top speed of powered Trains.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainTopSpeed = 40.0
+		poweredTrainTopSpeed = 56.0
 		#.
 		#[in Blocks/Second]
 		#The top speed of powered Trains during a turn.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainTurningTopSpeed = 20.0
+		poweredTrainTurningTopSpeed = 28.0
 		#.
 		#[in Blocks/Second²]
 		#The acceleration of powered Trains.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainAcceleration = 3.0
+		poweredTrainAcceleration = 6.0
 

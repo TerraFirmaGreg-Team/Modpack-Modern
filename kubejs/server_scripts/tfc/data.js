@@ -40,21 +40,12 @@ const registerTFCFuels = (event) => {
 	event.fuel('gtceu:charcoal_block', 1350, 1800 * 9, 1.0)
 	event.fuel('gtceu:charcoal_dust', 1350, 600, 1.0)
 
-	event.fuel('minecraft:coal', 1415, 1900 / 2, 1.0)
 	event.fuel('minecraft:coal_block', 1415, 1900 * 4.5, 1.0)
 	event.fuel('gtceu:flawless_coal_gem', 1415, 1900 * 2, 1.0)
 	event.fuel('gtceu:exquisite_coal_gem', 1415, 1900 * 4, 1.0)
 	event.fuel('gtceu:flawed_coal_gem', 1415, 1900 / 2, 1.0)
 	event.fuel('gtceu:chipped_coal_gem', 1415, 1900 / 4, 1.0)
 
-	event.fuel('gtceu:crushed_coal_ore', 1415, 1000, 0.8)
-	event.fuel('gtceu:purified_coal_ore', 1415, 1000, 1.0)
-	event.fuel('gtceu:refined_coal_ore', 1415, 1000, 1.0)
-	event.fuel('gtceu:impure_coal_dust', 1415, 500, 0.8)
-
-	event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
-	event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
-	event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
 	event.fuel('gtceu:coal_dust', 1415, 600, 0.85)
 	event.fuel('gtceu:small_coal_dust', 1415, 600 / 4, 0.85)
 	event.fuel('gtceu:tiny_coal_dust', 1415, 600 / 9, 0.85)
@@ -63,6 +54,10 @@ const registerTFCFuels = (event) => {
 
 const registerTFCLampFuels = (event) => {
 	event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_light', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_medium', '#tfc:lamps', 1000)
+	event.lampFuel('gtceu:oil_heavy', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:seed_oil', '#tfc:lamps', 7000)
 	event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
@@ -109,8 +104,14 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:tiny_ammonium_chloride_dust', 0.03, null, null)
 	event.fertilizer('gtceu:small_ammonium_chloride_dust', 0.075, null, null)
 	event.fertilizer('gtceu:ammonium_chloride_dust', 0.3, null, null)
+	
+	event.fertilizer('gtceu:tiny_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:ash_dust', null, 0.1, 0.3)
 
-
+	event.fertilizer('gtceu:tiny_dark_ash_dust', null, 0.01, 0.03)
+	event.fertilizer('gtceu:small_dark_ash_dust', null, 0.025, 0.075)
+	event.fertilizer('gtceu:dark_ash_dust', null, 0.1, 0.3)
 }
 
 

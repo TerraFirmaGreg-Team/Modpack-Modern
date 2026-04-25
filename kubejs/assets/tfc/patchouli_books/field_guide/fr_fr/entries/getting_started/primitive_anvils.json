@@ -1,0 +1,237 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Enclumes Primitives",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Une $(thing)Enclume$() est une alternative au moulage direct d'outils en début de jeu et un prérequis aux métaux de plus haut niveau. Une enclume possède deux grandes utilités : Le $(l:mechanics/anvils#working)travail du métal$() et son $(l:getting_started/primitive_anvils#welding)soudage$(). Une enclume peut souder des doubles lingots du type requis pour créer l'enclume de niveau supérieur, ce qui sera nécessaire pour travailler d'autres items de ce métal."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez besoin en premier lieu de récolter un bloc de $(thing)pierre brute$(), qui soit $(thing)ignée extrusive$() (Rhyolite, Basalte, Andésite ou Dacite) ou bien $(thing)ignée intrusive$() (Granite, Diorite ou Gabbro). Vous pouvez trouver et utiliser un bloc à nu, ou vous pouvez l'$(l:getting_started/primitive_anvils#raw_rock)extraire$() de la roche avoisinnante."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "Vous aurez aussi besoin d'un $(thing)marteau$() fait en n'importe quel matériau. Afin de créer l'enclume, faites simplement un clic droit sur la $(thing)face supérieure$() exposée d'un de ces blocs bruts avec votre $(thing)marteau$(), et voilà ! Une enclume va être créée.$(br2)Les enclume ont différents $(l:mechanics/anvils#tiers)niveaux$() et l'enclume en pierre est le niveau 0 - le plus bas niveau. Elle ne peut que $(l:getting_started/primitive_anvils#welding)souder$() des lingots de niveau I.",
+      "title": "Enclume en pierre"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Conversion du bloc brut central en enclume.",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        " 0 "
+    ],
+    [
+        "RRR"
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        "tfc:rock_anvil"
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "Afin d'obtenir un bloc de pierre brute sans la briser en plusieurs morceaux, elle doit être $(thing)extraite$(). Vous devez miner les six blocs adjacents à ce bloc de pierre brut. Une fois qu'elle sera entourée d'air de tous les côtés, elle se changera en item récupérable.",
+      "title": "Obtenir de la Pierre brute"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Minage des six côtés d'un morceau de pierre brute. Une fois fini, le bloc central se transformera en item.",
+      "multiblocks": [
+        {
+    "pattern": [
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        " R ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        "RRR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        " R "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " RR",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "tfc:rock/raw/gabbro",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        },
+        {
+    "pattern": [
+    [
+        "   ",
+        "   ",
+        "   "
+    ],
+    [
+        "   ",
+        " R ",
+        "   "
+    ],
+    [
+        "   ",
+        " 0 ",
+        "   "
+    ]
+    ],
+    "mapping": {
+    "0": "AIR",
+    "R": "tfc:rock/raw/gabbro"
+    }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Le soudage est un processus au travers duquel deux items sont fusionnés afin de créer un nouvel item. Le soudage fonctionne de la même manière que ce soit sur une $(l:getting_started/primitive_anvils)Enclume en Pierre$() ou une $(l:mechanics/anvils)enclume en métal$().$(br2)D'abord, vous devez placer les deux items que vous voulez souder sur l'enclume. Vous pouvez pour cela utiliser les items sur l'enclume, ou ouvrir l'interface de l'enclume puis les insérer dans les deux emplacements à gauche.",
+      "title": "Soudage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous aurez besoin d'au moins un $(l:mechanics/flux)Flux$() dans l'enclume pour faciliter le processus de soudage. Ensuite, pendant que les deux items sont $(l:mechanics/heating)suffisamment chauds$() pour être soudés - l'infobulle dira \"Peut Souder\" - vous devrez utiliser n'importe lequel des $(thing)Marteaux$() sur l'enclume. Vous entendrez un son de marteau and les items seront soudés ensemble."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

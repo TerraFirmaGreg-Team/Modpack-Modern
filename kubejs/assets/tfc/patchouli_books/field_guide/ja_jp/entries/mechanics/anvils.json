@@ -1,0 +1,111 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "金床",
+  "category": "tfc:mechanics",
+  "icon": "tfc:metal/anvil/copper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "金床は金属加工に欠かせない作業台です。主に$(br2)$(l:mechanics/anvils#working)鍛造$()と$(l:getting_started/primitive_anvils#welding)溶接$()の2つの作業に使います。$(br2)$(l:mechanics/anvils#working)鍛造$()、インゴットを叩いて実用的な形に加工することです。$(l:getting_started/primitive_anvils#welding)溶接$()は2つの金属アイテムを一体化させるための工程です。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+      [
+      "X"
+      ],
+      [
+      "0"
+      ]
+        ],
+        "mapping": {
+      "X": "#tfc:anvils"
+        }
+      },
+      "name": "",
+      "text": "全種類の金床",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/metal/anvil/copper",
+      "text": "金床は、対応する金属の$(thing)ダブルインゴット$()を使って作成します。最初の金床を作るには、$(l:getting_started/primitive_anvils)石の金床$()で$(l:getting_started/primitive_anvils#welding)溶接$()することによってダブルインゴットを作成する必要があります。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tiers",
+      "text": "金床にはそれぞれ$(thing)等級$()があり、その金床で扱える金属の種類は金床の等級によって決まります。金床は同じ等級の金属を鍛造することができ、1段階上の等級の金属を溶接することができます。$(br)$(li)$(bold)等級０$(): 石の金床$(li)$(bold)等級１$(): 銅$(li)$(bold)等級２$(): ビスマスブロンズ・ブラックブロンズ・青銅$(li)$(bold)等級３$(): 錬鉄$(li)$(bold)等級４$(): 鋼鉄$(li)$(bold)等級５$(): 黒鋼$(li)$(bold)等級６$(): 赤鋼・青鋼"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "working",
+      "text": "金床でアイテムを鍛造するには、まず金床をのGUIを開きます。左側には2つのスロットがあり、鍛造したいアイテムは左側の2つのスロットの右スロットに入れます。鍛造するにはハンマーも必要です。金床GUIの右側にあるハンマースロットにセットするか、$(bold)または$()手に持って使用します。鍛造作業をしているうちにハンマーの耐久は少しずつ減っていきます。",
+      "title": "鍛造"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_empty.png"
+      ],
+      "text": "金床GUI",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "次に、金床GUIの$(thing)レシピ$()ボタン（左側の2つのスロットの上のボタン）から作りたいものをを選び、どのアイテムを作るか決めます。$(item)$(k:key.attack)$()で一覧を開き、その中から作りたいアイテムを選択します。すると金床GUIに戻り、作成内容が設定された状態になります。レシピボタンには現在作っているアイテムが表示され、$(thing)ルール$()と$(thing)ターゲット$()も表示されます。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/gui/anvil_in_use.png"
+      ],
+      "text": "ピッケルの作成を選択した画面。",
+      "border": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "金床GUIの下部中央には、2色のインジケーターが付いたメーターがあります。$(2)緑$()矢印は現在の作業の進行状況で、$(4)赤$()矢印がターゲットを示しています。この2つをぴったり重ねるのが目標です。$(br2)そのために、$(2)緑$()と$(4)赤$()のアクションボタンを使って進行状況を調整します。選んだアクションによって、進行度が決まった量だけ動きます。",
+      "title": "ターゲット"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(2)緑$()アクションは進行状況を$(bold)右$()に動かし、$(4)赤$()アクションは進行状況を$(bold)左$()へ動かします。もし進行状況がメーターの外に出てしまうと加工失敗となり、元のアイテムは失われます。さらに鍛造を完了させるには、$(thing)ルール$()の条件も満たす必要があります…"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)ルール$()とは、金床画面の上部に表示される2～3個のアイコンです。これは、鍛造を成功させアイテムの作成を完了させるための条件を示しています。つまり、鍛造を完了するためには上に指定された順番でアクションを行うことにより緑と赤の矢印を一致させる必要があるということです。例えばルールで「$(2)$曲げる：最後から2番目に()」と指定されていた場合は、最後から2番目のアクションは「$(2)曲げる$()」でなければならないという意味です。",
+      "title": "鍛造におけるルール"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "直前の3回分のアクションはルールの下に表示されます。それがルールのとおりになっていた場合は、該当ルールが緑色になります。すべてのルールを満たして緑と赤矢印が一致していたら鍛造成功です！$(br2)また、アイテムの$(l:mechanics/heating)温度$()管理も重要です。金属はツールチップに「鍛造可能」と表示される温度以上でないと鍛造できません。途中で取り出して再加熱してもそのアイテムに進行状況は残るため、続きから行うことができます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ここまでの話を聞いて鍛造は手順が多く面倒だと感じたかもしれません。ですが鍛造にはその手間に見合ったメリットがあります。ツールヘッドなどは、少ない手数で鍛造すると「鍛造ボーナス」が付き、そのボーナス応じて性能が向上します。このボーナスは、その部品を使ってツールを作った際にも適応されます。",
+      "title": "鍛造ボーナス"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
+      "title": "完璧な鍛造",
+      "link_recipes": false,
+      "text": "鍛造ボーナスには4段階あります：$(li)不十分な鍛造$(li)良い鍛造$(li)巧みな鍛造$(li)完璧な鍛造$(br2)鍛造にかけた手数が少ないほど高い段階のものが完成し、段階が高いほどツールの性能が向上します。たとえば、耐久が上がったり採掘速度が速くなったり、武器なら攻撃力が上がるなどの効果が得られます（効果はツールごとに異なります）。"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "溶接は、2つのアイテムを接合して別のアイテムを作る工程です。$(l:getting_started/primitive_anvils)石の金床$()でも$(l:mechanics/anvils)金属の金床$()でも、やり方は共通です。$(br2)まずは溶接したいアイテム2つ（インゴットやプレートなど）を金床に置きます。直接使用して置くか、GUIを開いて左側の2スロットに入れることでセットできます。",
+      "title": "溶接"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "また、溶接を行うには、金床に$(l:mechanics/flux)融剤$()を少なくとも1つ入れておく必要があります。そのうえで、溶接するアイテムが両方とも$(l:mechanics/heating)溶接可能な温度$()（ツールチップに「溶接可能」と表示）になっている状態で、$(thing)ハンマー$()を持ちShift+右クリックで叩くかGUIの「Weld」ボタンを押します。すると打撃音とともにアイテムが溶接されます。"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tag:tfc:anvils": 0
+  }
+}

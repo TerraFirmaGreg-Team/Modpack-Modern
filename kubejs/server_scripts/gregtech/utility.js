@@ -17,11 +17,11 @@ const addJsonElement = (jsonArray, jsonElement) => {
  * Adding a circuit is optional.
  *
  * @param {*} event 
- * @param {string} input -Item
- * @param {string} fluid_input -Fluid
+ * @param {string|string[]} input -Item
+ * @param {string|string[]} fluid_input -Fluid
  * @param {string} output -Item
- * @param {number} circuit -0-32
- * @param {string} fluid_output -Fluid
+ * @param {number|null} circuit -0-32
+ * @param {string|string[]} fluid_output -Fluid
  * @param {number} duration -Ticks
  * @param {number} EUt -GTValues.VA[]
  * @param {number} rpm -Depreciated

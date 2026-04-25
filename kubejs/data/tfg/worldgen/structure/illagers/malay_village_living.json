@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:jigsaw",
+	"start_pool": "tfg:illagers/malay_village_living_start_pool",
+	"size": 5,
+	"max_distance_from_center": 116,
+	"biomes": "#tfg:has_structure/malay_illage",
+	"step": "surface_structures",
+	"terrain_adaptation": "none",
+	"start_height": {
+		"absolute": 63
+	},
+	"use_expansion_hack": false,
+	"spawn_overrides": {
+		"creature": {
+			"bounding_box": "full",
+			"spawns": []
+		},
+		"monster": {
+			"bounding_box": "full",
+			"spawns": []
+		}
+	}
+}
