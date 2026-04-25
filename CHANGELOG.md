@@ -25,6 +25,7 @@
 - Fixed broken model of dead radishes (#3872) @Redeix
 - Fixed not being able to craft monorails in an assembler (#3873) @SakuraKitsurugi
 - Fixed not being able to obtain fruit tree saplings with a chainsaw (#3877) @Mqrius @SakuraKitsurugi
+- Fixed small mars mushrooms uprooting themselves @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026

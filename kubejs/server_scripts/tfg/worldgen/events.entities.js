@@ -27,7 +27,7 @@ const NEW_MOB_MAX_HP = {
 	"species:springling": 60,
 	"species:quake": 130,
 	"species:cruncher": 1200,
-	"wan_ancient_beasts:snatcher": 80,
+	"wan_ancient_beasts:snatcher": 60,
 
 	// venus mobs
 	"endermanoverhaul:savanna_enderman": 85,
