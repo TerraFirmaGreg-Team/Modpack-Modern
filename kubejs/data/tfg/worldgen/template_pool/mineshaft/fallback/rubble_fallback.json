@@ -1,6 +1,6 @@
 {
-	"name": "tfg:mineshaft/rubble",
-	"fallback": "tfg:mineshaft/fallback/rubble_fallback",
+	"name": "tfg:mineshaft/fallback/rubble_fallback",
+	"fallback": "minecraft:empty",
 	"elements": [
 		{
 			"element": {

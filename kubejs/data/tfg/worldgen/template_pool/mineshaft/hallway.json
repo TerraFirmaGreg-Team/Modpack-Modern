@@ -92,6 +92,15 @@
 			}
 		},
 		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/intersection/hallway_w",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
 			"weight":28,
 			"element": {
 				"location": "tfg:mineshaft/ladder/ladder_1",
