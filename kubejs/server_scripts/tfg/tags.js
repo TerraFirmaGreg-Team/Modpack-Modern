@@ -1,12 +1,12 @@
 ﻿"use strict";
 
 const forEachTFGRopeLadderVariant = (callback) => {
-	const variants = ['araucaria', 'beech', 'mahoe', 'ginkgo'];
-	global.AD_ASTRA_WOOD.forEach(wood => variants.push(wood.name));
-	global.BENEATH_WOOD_TYPES.forEach(wood => variants.push(wood));
-	global.AFC_WOOD_TYPES.forEach(wood => variants.push(wood));
-	global.TFC_WOOD_TYPES.forEach(wood => variants.push(wood));
-	variants.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`));
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.WAB_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.AD_ASTRA_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.BENEATH_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
+	global.AFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
+	global.TFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
 }
 
 const registerTFGItemTags = (event) => {
@@ -29,7 +29,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 	registerTFGMaterialHiddenPipesTags(event)
-
+	
 	// Curios slots for wearables
 	event.add("curios:face", "tfg:snorkel")
 	event.add("curios:clothes_socks", "tfg:flippers")
