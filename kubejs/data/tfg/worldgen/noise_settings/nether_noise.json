@@ -348,8 +348,8 @@
 								"if_true": {
 									"type": "tfg:noise3d_threshold",
 									"noise": "tfg:nether_salt_streams",
-									"min_threshold": -0.07,
-									"max_threshold": 0.07
+									"min_threshold": -0.04,
+									"max_threshold": 0.04
 								},
 								"then_run": {
 									"type": "minecraft:sequence",
@@ -420,8 +420,8 @@
 										"if_true": {
 											"type": "tfg:noise3d_threshold",
 											"noise": "tfg:nether_salt_streams",
-											"min_threshold": -0.25,
-											"max_threshold": 0.25
+											"min_threshold": -0.15,
+											"max_threshold": 0.15
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -542,8 +542,8 @@
 								"if_true": {
 									"type": "tfg:noise3d_threshold",
 									"noise": "tfg:nether_salt_streams",
-									"min_threshold": -0.12,
-									"max_threshold": 0.12
+									"min_threshold": -0.04,
+									"max_threshold": 0.04
 								},
 								"then_run": {
 									"type": "minecraft:block",
