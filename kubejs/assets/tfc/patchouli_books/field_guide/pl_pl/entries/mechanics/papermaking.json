@@ -102,7 +102,7 @@
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "Nasączony pasek twardego drewna",
         "recipe": "tfg:barrel/soak_hardwood_strip",
         "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
       },
@@ -140,7 +140,7 @@
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stomping in Barrel",
+        "title": "Wyciskanie w beczce",
         "item": {
           "tag": "firmalife:stomping_barrels"
         },

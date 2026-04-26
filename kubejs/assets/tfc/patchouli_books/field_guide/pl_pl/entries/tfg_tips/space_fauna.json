@@ -1,11 +1,11 @@
 {
-	"name": "Extraterrestrial Fauna",
+	"name": "Fauna pozaziemska",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:sniffer_egg",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Extraterrestrial Fauna",
+			"title": "Fauna pozaziemska",
 			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:mechanics/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
 		},
 		{
