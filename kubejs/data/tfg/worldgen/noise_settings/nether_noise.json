@@ -338,7 +338,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:stone_depth",
-								"offset": 1,
+								"offset": 0,
 								"surface_type": "floor",
 								"add_surface_depth": false,
 								"secondary_depth_range": 0
@@ -532,6 +532,31 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "tfg:noise3d_threshold",
+									"noise": "tfg:nether_salt_streams",
+									"min_threshold": -0.12,
+									"max_threshold": 0.12
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:fluid/muddy_water"
+									}
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
 								"offset": 1,
 								"surface_type": "floor",
 								"add_surface_depth": false,
@@ -540,21 +565,6 @@
 							"then_run": {
 								"type": "minecraft:sequence",
 								"sequence": [
-									{
-										"type": "minecraft:condition",
-										"if_true": {
-											"type": "tfg:noise3d_threshold",
-											"noise": "tfg:nether_salt_streams",
-											"min_threshold": -0.12,
-											"max_threshold": 0.12
-										},
-										"then_run": {
-											"type": "minecraft:block",
-											"result_state": {
-												"Name": "tfg:fluid/muddy_water"
-											}
-										}
-									},
 									{
 										"type": "minecraft:condition",
 										"if_true": {

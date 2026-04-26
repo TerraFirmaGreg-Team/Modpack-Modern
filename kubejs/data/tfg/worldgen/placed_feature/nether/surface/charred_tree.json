@@ -13,12 +13,15 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 100
+					"absolute": 90
 				},
 				"min_inclusive": {
 					"above_bottom": 32
 				}
 			}
+		},
+		{
+			"type": "minecraft:biome"
 		},
 		{
 			"type": "minecraft:block_predicate_filter",
@@ -32,7 +35,8 @@
 				"blocks": [
 					"minecraft:deepslate",
 					"minecraft:blackstone",
-					"minecraft:magma_block"
+					"minecraft:magma_block",
+					"tfc:rock/raw/basalt"
 				]
 			}
 		},

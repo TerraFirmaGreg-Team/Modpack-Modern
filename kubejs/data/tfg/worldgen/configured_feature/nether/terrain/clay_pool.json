@@ -10,7 +10,7 @@
 				"Name": "minecraft:clay"
 			}
 		},
-		"replaceable": "#tfg:lush_ground_replaceable",
+		"replaceable": "#minecraft:base_stone_nether",
 		"surface": "floor",
 		"vegetation_chance": 0.6,
 		"vegetation_feature": {

@@ -113,7 +113,6 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
     event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
     event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
-	event.add('tfg:lush_ground_replaceable', '#minecraft:base_stone_nether')
     event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
     
     event.add('minecraft:nether_carver_replaceables', "tfc:fluid/salt_water");
@@ -198,7 +197,6 @@ function registerTFGBeneathBiomeTags(event) {
 
 function registerTFGBeneathPlacedFeatures(event) {
 
-
     event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/lava_lake");
     event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
     event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
@@ -209,8 +207,8 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
     
-	event.add('tfg:nether_underground_decoration', 'tfc:cave_column')
-	event.add('tfg:nether_underground_decoration', 'tfc:large_cave_spike')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/cave_column')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/large_cave_spike')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagmite')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagtite')
 	event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/glowstone_ceiling")

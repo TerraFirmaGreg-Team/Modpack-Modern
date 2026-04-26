@@ -13,38 +13,27 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 120
+					"below_top": 6
 				},
 				"min_inclusive": {
-					"above_bottom": 38
+					"above_bottom": 120
 				}
 			}
 		},
 		{
+			"type": "minecraft:biome"
+		},
+		{
 			"type": "minecraft:block_predicate_filter",
 			"predicate": {
-				"type": "minecraft:matching_blocks",
+				"type": "minecraft:matching_block_tag",
 				"offset": [
 					0,
 					-1,
 					0
 				],
-				"blocks": [
-					"minecraft:deepslate",
-					"minecraft:blackstone",
-					"beneath:soul_clay",
-					"tfc:dirt/silty_loam",
-					"tfc:dirt/loam",
-					"tfc:mud/silty_loam",
-					"tfc:mud/loam",
-					"tfc:muddy_roots/silty_loam",
-					"tfc:peat",
-					"tfg:rock/hardened_deepslate"
-				]
+				"tag": "minecraft:nether_carver_replaceables"
 			}
-		},
-		{
-			"type": "minecraft:biome"
 		}
 	]
 }

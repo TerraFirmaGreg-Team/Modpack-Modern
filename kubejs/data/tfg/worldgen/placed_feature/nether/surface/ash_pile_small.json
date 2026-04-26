@@ -18,6 +18,12 @@
 			}
 		},
 		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
 			"type": "minecraft:environment_scan",
 			"allowed_search_condition": {
 				"type": "minecraft:matching_blocks",
@@ -28,9 +34,6 @@
 			"target_condition": {
 				"type": "minecraft:solid"
 			}
-		},
-		{
-			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:biome"

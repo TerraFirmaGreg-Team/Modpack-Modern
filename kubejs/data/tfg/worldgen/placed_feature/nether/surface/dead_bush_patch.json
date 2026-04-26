@@ -2,10 +2,6 @@
 	"feature": "tfg:nether/surface/dead_bush_patch",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 3
-		},
-		{
 			"type": "minecraft:count_on_every_layer",
 			"count": 1
 		},
@@ -14,15 +10,12 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 120
+					"below_top": 6
 				},
 				"min_inclusive": {
-					"above_bottom": 38
+					"above_bottom": 120
 				}
 			}
-		},
-		{
-			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:biome"
