@@ -1678,7 +1678,7 @@ function registerTFGFoodRecipes(event) {
 			'firmalife:tirage_mixture'
 		])
 		.fluidIngredient(TFC.fluidStackIngredient('#tfc:milks', 500))
-		.outputItem('6x tfg:food/brioche_dough')
+		.outputItem('5x tfg:food/brioche_dough')
 		.id('tfg:mixing_bowl/brioche_dough');
 
 	global.processorRecipe(event, 'brioche_dough/tirage_mixture', 20*2, GTValues.VA[GTValues.ULV], {
