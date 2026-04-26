@@ -10,6 +10,7 @@
   "ftblibrary.gui.error": "Wystąpił błąd!",
   "ftblibrary.gui.listSize": "%d przedmiotów",
   "ftblibrary.gui.listSize1": "1 przedmiot",
+  "ftblibrary.gui.nbt_copied": "NBT skopiowany do schowka",
   "ftblibrary.gui.no_selection": "Nic nie zaznaczono",
   "ftblibrary.mb": "%d mB %s",
   "ftblibrary.palette.blues": "Niebieski",
@@ -80,5 +81,6 @@
   "sidebar_button.ftblibrary.toggle.night": "Ustaw czas na noc",
   "sidebar_button.ftblibrary.toggle.night.tooltip": "Włącza noc",
   "sidebar_button.ftblibrary.toggle.rain": "Przełącz deszcz",
-  "sidebar_button.ftblibrary.toggle.rain.tooltip": "Przełącza pomiędzy ładną i deszczową pogodą"
+  "sidebar_button.ftblibrary.toggle.rain.tooltip": "Przełącza pomiędzy ładną i deszczową pogodą",
+  "sidebar_group.ftblibrary.cheat": "FTB Library – oszustwa"
 }

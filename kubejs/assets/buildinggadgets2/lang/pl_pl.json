@@ -27,6 +27,7 @@
   "buildinggadgets2.messages.outofpower": "Gadżet rozładowany!",
   "buildinggadgets2.messages.overwritecut": "Narzędzie już zapisało dane wycinania - kliknij ponownie, aby NADPISAĆ te dane",
   "buildinggadgets2.messages.range_set": "Zasięg: %d",
+  "buildinggadgets2.messages.render_set": "Typ renderowania ustawiony na: %s",
   "buildinggadgets2.messages.undofailedunloaded": "Cofnięcie niepowiodło się: Chunki nie są załadowane (Za daleko): %s",
   "buildinggadgets2.modes.build_to_me": "Buduj w moją stronę",
   "buildinggadgets2.modes.copy": "Kopiuj",
