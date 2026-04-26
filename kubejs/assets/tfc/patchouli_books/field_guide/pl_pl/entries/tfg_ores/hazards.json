@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
+			"title": "Zapobieganie i leki",
 			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
 		},
 		{
