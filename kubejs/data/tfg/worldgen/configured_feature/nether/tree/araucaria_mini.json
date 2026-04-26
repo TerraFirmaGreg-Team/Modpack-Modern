@@ -2,12 +2,6 @@
 	"type": "tfc:random_tree",
 	"config": {
 		"structures": [
-			"tfg:trees/araucaria_large1",
-			"tfg:trees/araucaria_large2",
-			"tfg:trees/araucaria_large3",
-			"tfg:trees/araucaria_large4",
-			"tfg:trees/araucaria_large5",
-			"tfg:trees/araucaria_large6",
 			"tfg:trees/araucaria_normal1",
 			"tfg:trees/araucaria_normal2",
 			"tfg:trees/araucaria_normal3",
@@ -16,8 +10,8 @@
 			"tfg:trees/araucaria_normal6"
 		],
 		"placement": {
-			"width": 2,
-			"height": 5
+			"width": 1,
+			"height": 3
 		}
 	}
 }

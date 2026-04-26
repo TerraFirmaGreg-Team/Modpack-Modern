@@ -3,20 +3,16 @@
 
 TFCEvents.worldgenData(event => {
 
-	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries',
-		[
-			// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
-			// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
+	event.forest('tfg:mars_forest', '#tfg:mars_forest_entries', [
+		// https://notenoughmail.github.io/kubejs_tfc/1.20.1/worldgen/#forest-types-map-entry
+		// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
 
-			event.forestTypesMapEntry('none',       [0, 1],   1,  0.1,  0, false, false, 0),
-			event.forestTypesMapEntry('sparse',     [0, 3],   10, 0.3,  1, false, false, [0, 1]),
-			event.forestTypesMapEntry('edge',       [2, 5],   20, 0.8,  2, true,  false, [1, 2]),
-			event.forestTypesMapEntry('normal',     [7, 10],  35, 1,    3, true,  false, [4, 6]),
-			event.forestTypesMapEntry('old_growth', [10, 13], 50, 1,    4, true,  true,  [5, 8])
-		],
-		false, 
-		placement => {}
-	)
+		event.forestTypesMapEntry('none',       [0, 1],   1,  0.1, 0, false, false, 0),
+		event.forestTypesMapEntry('sparse',     [0, 3],   10, 0.3, 1, false, false, [0, 1]),
+		event.forestTypesMapEntry('edge',       [2, 5],   20, 0.8, 2, true,  false, [1, 2]),
+		event.forestTypesMapEntry('normal',     [7, 10],  35, 1,   3, true,  false, [4, 6]),
+		event.forestTypesMapEntry('old_growth', [10, 13], 50, 1,   4, true,  true,  [5, 8])
+	], false, placement => {})
 
 	event.forestEntry('tfg:mars/crimson_forest_entry',
 		climate => {
@@ -161,6 +157,72 @@ TFCEvents.worldgenData(event => {
 		null, null, null, null, null, null,
 		placement => {}
 	)
+
+	
+	event.forest('tfg:webbed_lair_forest', '#tfg:webbed_lair_entries', [
+		// type, treeCount, groundcoverCount, perChunkChance, bushCount, hasSpoilerOldGrowth, allowsOldGrowth, leafPileCount
+		event.forestTypesMapEntry('none',       [1, 4],   50, 1, 5, false, false, [7, 10]),
+		event.forestTypesMapEntry('sparse',     [3, 6],   40, 1, 4, false, false, [6, 9]),
+		event.forestTypesMapEntry('edge',       [6, 9],   30, 1, 3, true,  false, [5, 8]),
+		event.forestTypesMapEntry('normal',     [8, 11],  20, 1, 2, true,  false, [4, 7]),
+		event.forestTypesMapEntry('old_growth', [10, 13], 10, 1, 1, true,  true,  [3, 6])
+	], 
+	false, 
+	placement => {})
+
+	event.forest('tfg:muggy_bog_forest', '#tfg:muggy_bog_entries', [
+		event.forestTypesMapEntry('none',       [0, 2], 10, 0.5, 0, false, false, 0),
+		event.forestTypesMapEntry('sparse',     [1, 4], 20, 0.9, 1, false, false, [1, 2]),
+		event.forestTypesMapEntry('edge',       [3, 5], 20, 1,   2, true,  false, [3, 6]),
+		event.forestTypesMapEntry('normal',     [4, 6], 20, 1,   3, true,  false, [5, 8]),
+		event.forestTypesMapEntry('old_growth', [5, 7], 20, 1,   4, true,  true,  [7, 10])
+	], false, placement => {})
+	
+	event.forest('tfg:lush_hollow_forest', '#tfg:lush_hollow_entries', [
+		event.forestTypesMapEntry('none',       [0, 1],  1,  0.1, 0, false, false, 0),
+		event.forestTypesMapEntry('sparse',     [0, 3],  10, 0.5, 1, false, false, [0, 1]),
+		event.forestTypesMapEntry('edge',       [2, 5],  20, 0.9, 2, true,  false, [1, 2]),
+		event.forestTypesMapEntry('normal',     [5, 8],  30, 1,   3, true,  false, [2, 3]),
+		event.forestTypesMapEntry('old_growth', [7, 10], 40, 1,   4, true,  true,  [3, 4])
+	], false, placement => {})
+	
+	event.forest('tfg:thorny_brambles_forest', '#tfg:thorny_brambles_entries', [
+		event.forestTypesMapEntry('none',       [1, 4],   50, 1, 5, false, false, [7, 10]),
+		event.forestTypesMapEntry('sparse',     [3, 6],   40, 1, 4, false, false, [6, 9]),
+		event.forestTypesMapEntry('edge',       [6, 9],   30, 1, 3, true,  false, [5, 8]),
+		event.forestTypesMapEntry('normal',     [8, 11],  20, 1, 2, true,  false, [4, 7]),
+		event.forestTypesMapEntry('old_growth', [10, 13], 10, 1, 1, true,  true,  [3, 6])
+	], false, placement => {})
+
+	event.forestEntry('tfg:nether/araucaria_forest_entry',
+		climate => {},
+		'tfg:wood/wood/araucaria', // bush log
+		'tfg:wood/leaves/araucaria', // bush leaves
+		'tfg:wood/log/araucaria', // fallen log
+		'tfg:wood/leaves/araucaria_fallen', // fallen leaves
+		[ // ground cover
+			'minecraft:cobweb',
+			'tfg:wood/leaves/araucaria_fallen',
+			'tfg:wood/twig/araucaria',
+			'tfg:pale_moss_carpet',
+			'tfg:plant/eyeblossom'
+		],
+		'tfg:nether/tree/araucaria', // tree feature
+		'tfg:nether/tree/araucaria_mini', // dead tree feature
+		'tfg:nether/tree/araucaria', // old growth tree feature
+		null, // krummholz
+		null, // chance for old growth
+		null, // chance for old growth in non-old growth forests
+		null, // chance for a fallen tree
+		null, // chance for a dead tree
+		null, // false (default) to spawn with the ocean floor heightmap, true for world surface
+		placement => {
+			placement.simplePlacement('minecraft:in_square')
+			placement.jsonPlacement('{"type":"minecraft:height_range", "height":{"type":"minecraft:uniform", "max_inclusive": {"absolute":190}, "min_inclusive":{"above_bottom":120}}}')
+			placement.jsonPlacement('{"type":"minecraft:environment_scan", "allowed_search_condition":{"type":"minecraft:matching_blocks", "blocks":"minecraft:air"}, "direction_of_search":"down", "max_steps":12, "target_condition":{"type":"minecraft:solid"}}')
+			placement.simplePlacement('minecraft:biome')
+		}
+	)
 })
 
 function registerTFGForestConfiguredFeatures(event) {
@@ -170,4 +232,11 @@ function registerTFGForestConfiguredFeatures(event) {
 	event.add('tfg:mars_forest_entries', 'tfg:mars/strophar_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/alphacene_forest_entry')
 	event.add('tfg:mars_forest_entries', 'tfg:mars/glacian_forest_entry')
+
+	event.add('tfg:webbed_lair_entries', 'tfg:nether/araucaria_forest_entry')
+	//event.add('tfg:muggy_bog_entries', 'tfg:nether/mangrove_forest_entry')
+	//event.add('tfg:lush_hollow_entries', 'tfg:nether/ginkgo_forest_entry')
+	//event.add('tfg:lush_hollow_entries', 'tfg:nether/beech_forest_entry')
+	//event.add('tfg:thorny_brambles_entries', 'tfg:nether/beech_forest_entry')
+	//event.add('tfg:thorny_brambles_entries', 'tfg:nether/mahoe_forest_entry')
 }

@@ -1,7 +1,5 @@
 {
-	"carvers": {
-		"air": "minecraft:nether_cave"
-	},
+	"carvers": {},
 	"downfall": 0.5,
 	"effects": {
 		"fog_color": 9868701,
@@ -32,7 +30,8 @@
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
 		[
-			"tfc:erosion"
+			"tfc:erosion",
+			"tfg:nether/terrain/fluid_plug"
 		],
 		[],
 		[],

@@ -32,7 +32,8 @@
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
 		[
-			"tfc:erosion"
+			"tfc:erosion",
+			"tfg:nether/terrain/fluid_plug"
 		],
 		[],
 		[],

@@ -78,7 +78,15 @@ TFCEvents.createChunkDataProvider('nether', event => {
 	const emptyLayer = TFC.misc.lerpFloatLayer(0, 0, 0, 0);
 
 	event.partial((data, chunk) => {
-		data.generatePartial(emptyLayer, emptyLayer, 0, 0, 0)
+		let x = chunk.pos.minBlockX;
+		let z = chunk.pos.minBlockZ;
+		data.generatePartial(
+			emptyLayer, 
+			emptyLayer, 
+			floatToForestType(forestLayerNoise.noise(x, z)),
+			forestWeirdnessNoise.noise(x, z), // forest weirdness
+			forestDensityNoise.noise(x, z) // forest density
+		)
 	})
 
 	event.full((data, chunk) => {
