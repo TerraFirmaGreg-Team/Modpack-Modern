@@ -36,7 +36,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"title": "Uprawy rolne"
 		},
 		{
 			"type": "patchouli:text",

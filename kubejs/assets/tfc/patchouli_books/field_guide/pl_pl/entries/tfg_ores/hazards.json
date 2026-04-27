@@ -14,12 +14,12 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "All of the effects",
+			"title": "Wszystkie efekty",
 			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
+			"title": "Zapobieganie i leki",
 			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
 		},
 		{

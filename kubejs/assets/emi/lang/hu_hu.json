@@ -2,5 +2,21 @@
   "config.emi.ui.bottom_sidebar_size": "Méret",
   "config.emi.ui.left_sidebar_size": "Méret",
   "config.emi.ui.right_sidebar_size": "Méret",
-  "config.emi.ui.top_sidebar_size": "Méret"
+  "config.emi.ui.top_sidebar_size": "Méret",
+  "emi.fluid.amount.droplets": "%s d",
+  "emi.fluid.amount.liters": "%s L",
+  "emi.fluid.amount.millibuckets": "%s mB",
+  "emi.sidebar.theme.vanilla": "Vanilla",
+  "tag.item.c.armors.boots": "Cipők",
+  "tag.item.c.armors.chestplates": "Mellvértek",
+  "tag.item.c.armors.helmets": "Sisakok",
+  "tag.item.c.armors.leggings": "Lábszárvédők",
+  "tag.item.c.crops.wheat": "Búza",
+  "tag.item.c.plates": "Lemezek",
+  "tag.item.c.raw_copper_ores": "Nyers Rézércek",
+  "tag.item.c.raw_gold_ores": "Nyers Aranyércek",
+  "tag.item.c.raw_iron_ores": "Nyers Vasércek",
+  "tag.item.c.raw_materials": "Nyersanyagok",
+  "tag.item.c.wrenches": "Csavarkulcsok",
+  "tag.item.minecraft.music_discs": "Hanglemez"
 }

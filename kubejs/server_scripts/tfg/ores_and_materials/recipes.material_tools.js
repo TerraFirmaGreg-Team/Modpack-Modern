@@ -143,7 +143,7 @@ function processToolHead(event, headTagPrefix, tagPrefixName, extruderMold, cera
 		}
 
 		if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED) && ceramicMold !== null) {
-			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144);
+			addMaterialCasting(event, toolHeadItem, ceramicMold, false, null, material, tagPrefixName, materialAmount * 144, false);
 		}
 	}
 	// Gem tools

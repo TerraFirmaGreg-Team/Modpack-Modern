@@ -1,5 +1,7 @@
 {
   "tooltip.merequester.batch": "Wielkość partii",
+  "tooltip.merequester.export": "Eksportowanie ",
   "tooltip.merequester.idle": "Bezczynny",
-  "tooltip.merequester.link": "Wytwarzanie"
+  "tooltip.merequester.link": "Wytwarzanie",
+  "tooltip.merequester.whole_number": "Musi być liczbą całkowitą!"
 }

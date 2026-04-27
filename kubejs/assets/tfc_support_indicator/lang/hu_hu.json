@@ -1,0 +1,7 @@
+{
+  "config.jade.plugin_tfc_support_indicator.support_indicator": "TFC Stabilitás Indikátor",
+  "tfc_support_indicator.might_trigger_collapse": "Beomlás Veszély",
+  "tfc_support_indicator.self_supported": "Megtámsztva",
+  "tfc_support_indicator.self_unsupported": "Nincs Megtámasztva",
+  "tfc_support_indicator.wont_trigger_collapse": "Stabil"
+}

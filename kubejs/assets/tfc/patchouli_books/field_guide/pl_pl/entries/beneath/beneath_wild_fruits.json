@@ -20,7 +20,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example lavacado tree.",
+      "text": "Przykładowe drzewo lawokado.",
       "multiblocks": [
         {
           "pattern": [
@@ -85,7 +85,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example magmango tree.",
+      "text": "Przykładowe drzewo magmango.",
       "multiblocks": [
         {
           "pattern": [
@@ -264,7 +264,7 @@
         }
       ],
       "text": "The fruiting calendar for fruit trees.",
-      "title": "Fruit Trees",
+      "title": "Drzewa owocowe",
       "legend": [
         {
           "text": "Dormant",

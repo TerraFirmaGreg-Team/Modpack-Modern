@@ -1,5 +1,5 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Indeks drzew Ziemi",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Blackwood",
+			"title": "Dalbergia czarnodrzew",
 			"item": "tag:tfc:blackwood_logs",
 			"text": "$(bold)Mpingo Blackwood$()$(br)$(thing)Rainfall$(): 85 — 285mm$(br)$(thing)Temperature$(): 13.4 — 22.5°C$(br2)$(bold)Mulga Blackwood$()$(br)$(thing)Rainfall$(): 35 — 150mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
 		},
@@ -134,7 +134,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Oak, Black Oak",
+			"title": "Dąb/Dąb barwierski",
 			"item": "tag:tfc:oak_logs",
 			"text": "$(bold)Pin Oak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): -8.4 — 6.1°C$(br2)$(bold)Live Oak$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 0.7 — 13.4°C$(br2)$(bold)Black Oak$()$(br)$(thing)Rainfall$(): 150 — 330mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
 		},

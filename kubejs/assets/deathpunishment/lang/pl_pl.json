@@ -10,7 +10,17 @@
   "config.deathpunishment.general.thirst_level": "Poziom spragnienia",
   "config.deathpunishment.general.health": "Poziom życia",
   "config.deathpunishment.penalties.corpse_cooldown": "Czas odnowienia zwłok (0-60 min)",
+  "config.deathpunishment.penalties.thirst_duration": "Czas trwania pragnienia (0-600 s)",
+  "config.deathpunishment.penalties.hunger_duration": "Czas trwania głodu (0-600 s)",
+  "config.deathpunishment.penalties.movement_duration": "Czas trwania spowolnienia (0-600 s)",
+  "config.deathpunishment.penalties.darkness_duration": "Czas trwania ciemności (0-600 s)",
   "enum.deathpunishment.hunger_mode.TFC": "Domyślne TFC",
+  "enum.deathpunishment.hunger_mode.MANUAL": "Konfiguracja ręczna",
+  "enum.deathpunishment.hunger_mode.KEEP": "Zachowaj po śmierci",
   "enum.deathpunishment.thirst_mode.TFC": "Domyślne TFC",
-  "enum.deathpunishment.health_mode.TFC": "Domyślne TFC"
+  "enum.deathpunishment.thirst_mode.MANUAL": "Konfiguracja ręczna",
+  "enum.deathpunishment.thirst_mode.KEEP": "Zachowaj po śmierci",
+  "enum.deathpunishment.health_mode.TFC": "Domyślne TFC",
+  "enum.deathpunishment.health_mode.MANUAL": "Konfiguracja ręczna",
+  "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci"
 }

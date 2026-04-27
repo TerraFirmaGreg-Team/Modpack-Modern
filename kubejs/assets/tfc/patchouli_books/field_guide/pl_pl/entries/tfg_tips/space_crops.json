@@ -1,11 +1,11 @@
 {
-	"name": "Extraterrestrial Crops",
+	"name": "Rolnictwo pozaziemskie",
 	"category": "tfc:tfg_tips",
 	"icon": "betterend:textures/item/blossom_berry.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Extraterrestrial Crops",
+			"title": "Rolnictwo pozaziemskie",
 			"text": "It turns out Earth isn't the only celestial body with life. During your travels, you may come across other kinds of edible flora. These all use the same mechanics you're used to on Earth (with some exceptions), and can be grown either in normal Farmland, in a Firmalife $(l:firmalife/greenhouse)Greenhouse$(), or in a GregTech Electric Greenhouse depending on your needs."
 		},
 		{
@@ -24,7 +24,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "chorus_fruit",
-			"title": "Chorus Fruit",
+			"title": "Owoc refrenusu",
 			"text": "$(bold)Location$(): The Moon$(br)$(bold)Biomes$(): Chorus Forest, Chorus Thicket$(br2)Chorus Plants grow in tall formations. Breaking the stem will yield nothing, while breaking the Flowers at the top will yield Chorus Fruits or a Flower.$(br)Chorus Fruits can be eaten for $(thing)Fruit$(), cooked and eaten as $(item)Popped Chorus Fruit$(), or can be distilled into $(thing)Nitrogen$().$(br)"
 		},
 		{
@@ -492,7 +492,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "nox_berry",
-			"title": "Nox Berry",
+			"title": "Psianka czarna",
 			"text": "$(bold)Location$(): Mars$(br)$(bold)$(l:the_world/climate#temperature)Temperature$(): -80 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Nox Berries are a single block crop. Nox berry seeds can be planted on farmland and will produce $(item)Nox Berries$() which can be eaten for $(thing)Fruit$().$(br2)It is recommended to $(item)cook$() Nox Berries before eating."
 		},
 		{
