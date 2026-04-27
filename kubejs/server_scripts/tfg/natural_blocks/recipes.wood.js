@@ -7,6 +7,17 @@
  */
 function registerTFGWoodenRecipes(event) {
 
+    function registerRopeLadderRecipe(name, lumber) {
+        event.shaped(`2x tfg:wood/rope_ladder/${name}`, [
+            'RLR',
+            'RLR',
+            'RLR'
+        ], {
+            R: 'tfc:jute_fiber',
+            L: lumber
+        }).id(`tfg:shaped/${name}_rope_ladder`);
+    }
+
     // #region TFG Wood Builder
 
         /**
@@ -744,6 +755,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood.name}`,
                 `tfg:wood/workbench/${wood.name}`
             )
+            registerRopeLadderRecipe(wood.name, `tfg:wood/lumber/${wood.name}`);
         })
 
     // #endregion
@@ -795,6 +807,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood.name}`,
                 `tfg:wood/workbench/${wood.name}`
             )
+            registerRopeLadderRecipe(wood.name, `tfg:wood/lumber/${wood.name}`);
         })
 
     // #endregion
@@ -847,6 +860,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood.name}`,
                 `tfg:wood/workbench/${wood.name}`
             );
+            registerRopeLadderRecipe(wood.name, wood.lumber);
         });
 
         event.shaped('8x ad_astra:aeronos_ladder', [
@@ -931,6 +945,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood}`,
                 `beneath:wood/planks/${wood}_workbench`
             );
+            registerRopeLadderRecipe(wood, `beneath:wood/lumber/${wood}`);
         });
 
         registerTFGWoodRecycling('beneath', ['crimson'], GTMaterials.get('hardwood'));
@@ -1006,6 +1021,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood}`,
                 `afc:wood/planks/${wood}_workbench`
             );
+            registerRopeLadderRecipe(wood, `afc:wood/lumber/${wood}`);
         });
 
         registerTFGWoodRecycling('afc', global.AFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
@@ -1192,6 +1208,7 @@ function registerTFGWoodenRecipes(event) {
                 `tfg:wood/crafting_station/${wood}`,
                 `tfc:wood/planks/${wood}_workbench`
             );
+            registerRopeLadderRecipe(wood, `tfc:wood/lumber/${wood}`);
         });
 
         registerTFGWoodRecycling('tfc', global.TFC_HARDWOOD_TYPES, GTMaterials.get('hardwood'));
