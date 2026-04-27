@@ -27,7 +27,7 @@
 				"blocks": "minecraft:air"
 			},
 			"direction_of_search": "up",
-			"max_steps": 12,
+			"max_steps": 6,
 			"target_condition": {
 				"type": "minecraft:solid"
 			}

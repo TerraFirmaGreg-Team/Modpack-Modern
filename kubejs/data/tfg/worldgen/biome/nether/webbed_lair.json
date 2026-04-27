@@ -37,9 +37,7 @@
 		],
 		[],
 		[],
-		[
-			"tfg:nether/spikes/mega_calcite"
-		],
+		[],
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
@@ -49,6 +47,22 @@
 			"tfg:webbed_lair_forest"
 		],
 		[
+			"tfg:nether/tree/araucaria_placer",
+			"tfg:nether/tree/araucaria_shrub",
+			"tfg:nether/tree/araucaria_fallen_leaves",
+			"tfg:nether/tree/araucaria_twig",
+			"tfg:nether/surface/cobwebs",
+			"tfg:nether/surface/eyeblossom",
+			"tfg:nether/surface/pale_moss_carpet",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/terrain/pale_moss_ceiling",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/stick_patch"
 
 		],
 		"#tfg:nether_global_decoration"
@@ -80,10 +94,16 @@
 		],
 		"creature": [
 			{
-				"type": "beneath:red_elk",
-				"maxCount": 3,
-				"minCount": 2,
+				"type": "tfc:crocodile",
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "tfc:frog",
+				"weight": 100,
+				"minCount": 3,
+				"maxCount": 4
 			}
 		],
 		"misc": [],
@@ -131,16 +151,10 @@
 				"weight": 75
 			},
 			{
-				"type": "endermanoverhaul:nether_wastes_enderman",
+				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 75
-			},
-			{
-				"type": "endermanoverhaul:swamp_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
+				"weight": 50
 			},
 			{
 				"type": "minecraft:phantom",

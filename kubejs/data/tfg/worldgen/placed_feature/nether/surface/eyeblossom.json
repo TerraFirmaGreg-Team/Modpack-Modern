@@ -1,9 +1,12 @@
 {
-	"feature": "tfg:nether/surface/green_algae_patch",
+	"feature": "tfg:nether/surface/eyeblossom",
 	"placement": [
 		{
-			"type": "minecraft:count_on_every_layer",
-			"count": 20
+			"type": "minecraft:count",
+			"count": 64
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",
@@ -13,7 +16,7 @@
 					"below_top": 6
 				},
 				"min_inclusive": {
-					"above_bottom": 100
+					"above_bottom": 120
 				}
 			}
 		},

@@ -1,0 +1,40 @@
+{
+	"feature": "tfc:cobble_boulder",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 24
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"below_top": 10
+				},
+				"min_inclusive": {
+					"above_bottom": 32
+				}
+			}
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "tfc:flat_enough",
+			"flatness": 0.4
+		}
+	]
+}

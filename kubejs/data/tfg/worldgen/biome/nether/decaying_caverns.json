@@ -49,11 +49,11 @@
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble"
+			"tfg:nether/terrain/mossy_cobble",
+			"tfg:nether/terrain/mud_delta",
+			"tfg:nether/terrain/clay_disc"
 		],
 		[
-			"beneath:blackstone_boulders",
-			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/big_mushrooms",
 			"tfg:nether/surface/moss_patch_big",
 			"tfg:nether/surface/glow_mushroom",
@@ -61,15 +61,11 @@
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
-
 			"tfg:nether/surface/mushroom_sprouts",
-			"tfg:nether/surface/green_algae_patch",
-			"tfg:nether/surface/small_mushrooms",
 			"tfg:nether/terrain/liana_ceiling",
 			"minecraft:spore_blossom",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
-			"beneath:sulfur_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
 			"tfg:nether/surface/stick_patch"
@@ -84,7 +80,20 @@
 		}
 	},
 	"spawners": {
-		"water_ambient": [],
+		"water_ambient": [
+			{
+				"type": "tfc:isopod",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 4
+			},
+			{
+				"type": "tfc:crayfish",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 4
+			}
+		],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -93,13 +102,26 @@
 				"weight": 10
 			}
 		],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "minecraft:axolotl",
+				"maxCount": 5,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
 		"creature": [
 			{
-				"type": "beneath:red_elk",
-				"maxCount": 3,
-				"minCount": 2,
+				"type": "tfc:crocodile",
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "tfc:frog",
+				"weight": 100,
+				"minCount": 3,
+				"maxCount": 4
 			}
 		],
 		"misc": [],

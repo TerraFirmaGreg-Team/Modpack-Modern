@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:add",
+	"argument1": {
+		"type": "minecraft:y_clamped_gradient",
+		"from_value": 2,
+		"from_y": 32,
+		"to_value": -2,
+		"to_y": 200
+	},
+	"argument2": {
+		"type": "minecraft:flat_cache",
+		"argument": {
+			"type": "minecraft:shifted_noise",
+			"noise": "tfg:nether_depth",
+			"shift_x": "minecraft:shift_x",
+			"shift_y": 0,
+			"shift_z": "minecraft:shift_z",
+			"xz_scale": 0.6,
+			"y_scale": 0
+		}
+	}
+}

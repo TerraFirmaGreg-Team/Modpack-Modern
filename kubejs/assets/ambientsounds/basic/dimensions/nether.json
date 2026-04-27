@@ -8,11 +8,6 @@
     "biome-selector": {
         "always": true
     },
-    "surface-selector": {
-        "regions": [
-            "cave"
-        ]
-    },
     "regions": [
         {
             "name": "nether_caves",
@@ -25,8 +20,12 @@
                         "ambientsounds:cave.cave2",
                         "ambientsounds:cave.cave3"
                     ],
-                    "volume": 0.5,
-                    "transition": 200
+                    "volume": 0.25,
+                    "transition": 200,
+                    "length": {
+                        "min": 100,
+                        "max": 500
+                    }
                 }
             ]
         }

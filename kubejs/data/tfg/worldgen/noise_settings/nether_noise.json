@@ -21,7 +21,7 @@
 		"temperature": "tfg:nether/bottom_biome_noise",
 		"ridges": "tfg:nether/top_forest_noise",
 		"vegetation": "tfg:nether/middle_forest_noise",
-		"depth": "minecraft:overworld/depth",
+		"depth": "tfg:nether/depth_noise",
 		"final_density": {
 			"type": "minecraft:squeeze",
 			"argument": {
@@ -129,71 +129,6 @@
 			},
 
 
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:not",
-					"invert": {
-						"type": "minecraft:y_above",
-						"add_stone_depth": false,
-						"anchor": {
-							"absolute": 35
-						},
-						"surface_depth_multiplier": 0
-					}
-				},
-				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:stone_depth",
-						"offset": 0,
-						"surface_type": "floor",
-						"add_surface_depth": false,
-						"secondary_depth_range": 0
-					},
-					"then_run": {
-						"type": "minecraft:sequence",
-						"sequence": [
-							{
-								"type": "minecraft:condition",
-								"if_true": {
-									"type": "minecraft:noise_threshold",
-									"noise": "tfg:nether_cracks",
-									"min_threshold": -1,
-									"max_threshold": 1
-								},
-								"then_run": {
-									"type": "minecraft:block",
-									"result_state": {
-										"Name": "minecraft:lava"
-									}
-								}
-							},
-							{
-								"type": "minecraft:condition",
-								"if_true": {
-									"type": "minecraft:noise_threshold",
-									"noise": "tfg:nether_cracks",
-									"min_threshold": -2,
-									"max_threshold": 2
-								},
-								"then_run": {
-									"type": "minecraft:block",
-									"result_state": {
-										"Name": "minecraft:magma_block"
-									}
-								}
-							},
-							{
-								"type": "minecraft:block",
-								"result_state": {
-									"Name": "minecraft:blackstone"
-								}
-							}
-						]
-					}
-				}
-			},
 
 
 
@@ -315,7 +250,7 @@
 								"type": "kubejs_tfc:rock",
 								"rock_block": "hardened",
 								"fallback_state": {
-									"Name": "minecraft:deepslate"
+									"Name": "tfg:rock/hardened_deepslate"
 								}
 							}
 						},
@@ -524,32 +459,7 @@
 								"type": "kubejs_tfc:rock",
 								"rock_block": "hardened",
 								"fallback_state": {
-									"Name": "minecraft:deepslate"
-								}
-							}
-						},
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "minecraft:stone_depth",
-								"offset": 0,
-								"surface_type": "floor",
-								"add_surface_depth": false,
-								"secondary_depth_range": 0
-							},
-							"then_run": {
-								"type": "minecraft:condition",
-								"if_true": {
-									"type": "tfg:noise3d_threshold",
-									"noise": "tfg:nether_salt_streams",
-									"min_threshold": -0.04,
-									"max_threshold": 0.04
-								},
-								"then_run": {
-									"type": "minecraft:block",
-									"result_state": {
-										"Name": "tfg:fluid/muddy_water"
-									}
+									"Name": "tfg:rock/hardened_deepslate"
 								}
 							}
 						},
@@ -726,7 +636,7 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:noise_threshold",
-									"max_threshold": 1.7976931348623157E308,
+									"max_threshold": 1,
 									"min_threshold": -0.012,
 									"noise": "minecraft:patch"
 								},
@@ -779,9 +689,9 @@
 							},
 							{
 								"type": "kubejs_tfc:rock",
-								"rock_block": "raw",
+								"rock_block": "hardened",
 								"fallback_state": {
-									"Name": "minecraft:blackstone"
+									"Name": "tfg:rock/hardened_deepslate"
 								}
 							}
 						]
@@ -958,7 +868,7 @@
 					"type": "kubejs_tfc:rock",
 					"rock_block": "hardened",
 					"fallback_state": {
-						"Name": "minecraft:deepslate"
+						"Name": "tfg:rock/hardened_deepslate"
 					}
 				}
 			},

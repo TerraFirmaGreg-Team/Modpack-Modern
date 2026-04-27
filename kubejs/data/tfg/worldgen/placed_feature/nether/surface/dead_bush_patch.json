@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "minecraft:count_on_every_layer",
-			"count": 1
+			"count": 4
 		},
 		{
 			"type": "minecraft:height_range",

@@ -17,6 +17,7 @@ function registerTFGNewWoodBlocks(event) {
         event.create(`tfg:wood/leaves/${wood.name}`, 'tfc:leaves')
 		    .soundType(`${wood.leafSound}`)
 		    .tagBlock('minecraft:mineable/hoe')
+		    .tagBoth('minecraft:leaves')
 			.defaultCutout()
 		    .noDynamicTinting()
 			.twig(`tfg:wood/twig/${wood.name}`)

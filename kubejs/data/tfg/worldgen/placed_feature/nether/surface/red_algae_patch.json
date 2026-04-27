@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:nether/surface/red_algae_patch",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 20
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"below_top": 6
+				},
+				"min_inclusive": {
+					"above_bottom": 100
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

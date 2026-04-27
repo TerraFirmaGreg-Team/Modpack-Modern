@@ -124,6 +124,7 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:nether_carver_replaceables', "#tfc:dirt");
     event.add('minecraft:nether_carver_replaceables', "beneath:soul_clay");
     event.add('minecraft:nether_carver_replaceables', "tfc:peat");
+    event.add('minecraft:nether_carver_replaceables', "tfg:hardened_clay");
 
     const moss_blocks = [
         'minecraft:moss_block',
@@ -212,7 +213,11 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagmite')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagtite')
 	event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/glowstone_ceiling")
-	event.add('tfg:nether_underground_decoration', "tfg:nether/spikes/calcite")
+	event.add('tfg:nether_underground_decoration', "beneath:blackstone_boulders")
+    event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/cobble_boulder")
+    event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/cobble_boulder_patch")
+    event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/raw_boulder")
+    event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/raw_boulder_patch")
 
 	event.add('tfg:nether_global_decoration', 'tfg:nether/surface/loose_rocks')
 	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')

@@ -38,6 +38,7 @@
 		[],
 		[],
 		[
+			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
 		[],
@@ -45,10 +46,27 @@
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble"
+			"tfg:nether/terrain/mossy_cobble",
+			"tfg:nether/terrain/salt_delta",
+			"tfg:nether/terrain/mud_delta",
+			"tfg:nether/terrain/clay_disc"
 		],
 		[
-
+			"tfg:nether/tree/mangrove",
+			"tfg:nether/tree/mangrove_fallen_leaves",
+			"tfg:nether/tree/mangrove_twig",
+			"tfg:nether/surface/moss_patch_big",
+			"tfg:nether/surface/humus_patch",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/surface/mushroom_sprouts",
+			"tfg:nether/terrain/spanish_moss_ceiling",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/stick_patch"
 		],
 		"#tfg:nether_global_decoration"
 	],
@@ -60,7 +78,32 @@
 		}
 	},
 	"spawners": {
-		"water_ambient": [],
+		"water_ambient": [
+			{
+				"type": "tfc:isopod",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 4
+			},
+			{
+				"type": "tfc:horseshoe_crab",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 4
+			},
+			{
+				"type": "tfc:jellyfish",
+				"weight": 1,
+				"minCount": 2,
+				"maxCount": 6
+			},
+			{
+				"type": "tfc:crayfish",
+				"weight": 1,
+				"minCount": 1,
+				"maxCount": 4
+			}
+		],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -79,10 +122,16 @@
 		],
 		"creature": [
 			{
-				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
+				"type": "tfc:crocodile",
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "tfc:frog",
+				"weight": 100,
+				"minCount": 3,
+				"maxCount": 4
 			}
 		],
 		"misc": [],
@@ -149,9 +198,9 @@
 			},
 			{
 				"type": "endermanoverhaul:swamp_enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
@@ -161,9 +210,9 @@
 			},
 			{
 				"type": "endermanoverhaul:mushroom_fields_enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 5
+				"weight": 50
 			}
 		],
 		"underground_water_creature": [

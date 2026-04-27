@@ -16,7 +16,7 @@
 				"Name": "minecraft:glowstone"
 			}
 		},
-		"replaceable": "#minecraft:base_stone_nether",
+		"replaceable": "#minecraft:nether_carver_replaceables",
 		"surface": "ceiling",
 		"vegetation_chance": 0.4,
 		"vegetation_feature": {

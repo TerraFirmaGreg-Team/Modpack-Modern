@@ -154,7 +154,7 @@
 						"biome": "tfg:nether/webbed_lair",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -166,7 +166,7 @@
 						"biome": "tfg:nether/salt_caves",
 						"parameters": {
 							"continentalness": [ 0.2, 1 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -178,7 +178,7 @@
 						"biome": "tfg:nether/salt_caves",
 						"parameters": {
 							"continentalness": [ 0.2, 1 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -190,7 +190,7 @@
 						"biome": "tfg:nether/muggy_bog",
 						"parameters": {
 							"continentalness": [ -0.2, 0.2 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -202,7 +202,7 @@
 						"biome": "tfg:nether/muggy_bog",
 						"parameters": {
 							"continentalness": [ -0.2, 0.2 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -214,7 +214,7 @@
 						"biome": "tfg:nether/decaying_caverns",
 						"parameters": {
 							"continentalness": [ -1, -0.2 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -226,7 +226,7 @@
 						"biome": "tfg:nether/decaying_caverns",
 						"parameters": {
 							"continentalness": [ -1, -0.2 ],
-							"depth": [ -1, -0.45 ],
+							"depth": [ -1, -0.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -241,7 +241,7 @@
 						"biome": "tfg:nether/lush_hollow",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -0.15, 0.15 ],
 							"offset": 0,
@@ -253,7 +253,7 @@
 						"biome": "tfg:nether/geothermal_springs",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ 0.2, 1 ],
 							"humidity": [ -1, -0.15 ],
 							"offset": 0,
@@ -265,7 +265,7 @@
 						"biome": "tfg:nether/geothermal_springs",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ 0.2, 1 ],
 							"humidity": [ 0.15, 1 ],
 							"offset": 0,
@@ -277,7 +277,7 @@
 						"biome": "tfg:nether/tar_pools",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ -0.2, 0.2 ],
 							"humidity": [ -1, -0.15 ],
 							"offset": 0,
@@ -289,7 +289,7 @@
 						"biome": "tfg:nether/tar_pools",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ -0.2, 0.2 ],
 							"humidity": [ 0.15, 1 ],
 							"offset": 0,
@@ -301,7 +301,7 @@
 						"biome": "tfg:nether/thorny_brambles",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ -1, -0.2 ],
 							"humidity": [ -1, -0.15 ],
 							"offset": 0,
@@ -313,7 +313,7 @@
 						"biome": "tfg:nether/thorny_brambles",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.45, -0.05 ],
+							"depth": [ -0.5, 1.5 ],
 							"erosion": [ -1, -0.2 ],
 							"humidity": [ 0.15, 1 ],
 							"offset": 0,
@@ -328,7 +328,7 @@
 						"biome": "tfg:nether/lava_floes",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.05, 1 ],
+							"depth": [ 1.5, 2 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -340,7 +340,7 @@
 						"biome": "tfg:nether/ash_forest",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.05, 1 ],
+							"depth": [ 1.5, 2 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,
@@ -352,7 +352,7 @@
 						"biome": "tfg:nether/basalt_deltas",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
-							"depth": [ -0.05, 1 ],
+							"depth": [ 1.5, 2 ],
 							"erosion": [ -1, 1 ],
 							"humidity": [ -1, 1 ],
 							"offset": 0,

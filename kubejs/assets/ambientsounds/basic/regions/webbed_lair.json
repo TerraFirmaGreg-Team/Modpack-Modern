@@ -13,22 +13,6 @@
 	},
 	"sounds": [
 		{
-			"name": "cave-lush",
-			"category": "cave",
-			"files": [
-				"ambientsounds:cave.cave-lush"
-			],
-			"length": {
-				"min": 100,
-				"max": 500
-			},
-			"pause": {
-				"min": 250,
-				"max": 500
-			},
-			"volume": 0.4
-		},
-		{
 			"name": "pale-garden-ambience",
 			"files": [
 				"ambientsounds:suspense.pale-garden"
