@@ -56,6 +56,19 @@
 			}
 		},
 		{
+			"weight": 5,
+			"element": {
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"location": "tfg:mineshaft/hallway/end_3",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"allowed_depth": [8, 20]
+			}
+		},
+		{
 			"weight": 36,
 			"element": {
 				"location": "tfg:mineshaft/intersection/hallway_t_1",

@@ -19,6 +19,15 @@
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_3",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
 		}
 	]
 }

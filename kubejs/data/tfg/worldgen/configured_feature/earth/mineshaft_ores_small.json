@@ -4,15 +4,15 @@
 		"horizontal_range": {
             "type": "minecraft:uniform",
             "value": {
-                "max_inclusive": 28,
-                "min_inclusive": 15
+                "max_inclusive": 16,
+                "min_inclusive": 10
             }
         },
 		"vertical_range": {
             "type": "minecraft:uniform",
             "value": {
-                "max_inclusive": 18,
-                "min_inclusive": 14
+                "max_inclusive": 10,
+                "min_inclusive": 6
             }
         },
         "all_ores": true
