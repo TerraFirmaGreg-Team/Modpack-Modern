@@ -287,21 +287,6 @@
 						{
 							"type": "minecraft:condition",
 							"if_true": {
-								"type": "tfg:noise3d_threshold",
-								"noise": "tfg:nether_salt_streams",
-								"min_threshold": -0.05,
-								"max_threshold": 0.05
-							},
-							"then_run": {
-								"type": "minecraft:block",
-								"result_state": {
-									"Name": "tfc:mud/silt"
-								}
-							}
-						},
-						{
-							"type": "minecraft:condition",
-							"if_true": {
 								"type": "minecraft:stone_depth",
 								"offset": 0,
 								"surface_type": "floor",
@@ -314,10 +299,26 @@
 									{
 										"type": "minecraft:condition",
 										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": 0,
+											"max_threshold": 0.3
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "raw",
+											"fallback_state": {
+												"Name": "minecraft:deepslate"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
 											"type": "tfg:noise3d_threshold",
 											"noise": "tfg:nether_salt_streams",
-											"min_threshold": -0.15,
-											"max_threshold": 0.15
+											"min_threshold": -0.12,
+											"max_threshold": 0.12
 										},
 										"then_run": {
 											"type": "minecraft:sequence",
@@ -439,10 +440,26 @@
 									{
 										"type": "minecraft:condition",
 										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -0.2,
+											"max_threshold": 0
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "raw",
+											"fallback_state": {
+												"Name": "minecraft:deepslate"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
 											"type": "tfg:noise3d_threshold",
 											"noise": "tfg:nether_salt_streams",
-											"min_threshold": -0.2,
-											"max_threshold": 0.2
+											"min_threshold": -0.15,
+											"max_threshold": 0
 										},
 										"then_run": {
 											"type": "minecraft:block",
@@ -456,8 +473,8 @@
 										"if_true": {
 											"type": "tfg:noise3d_threshold",
 											"noise": "tfg:nether_salt_streams",
-											"min_threshold": -0.3,
-											"max_threshold": 0.3
+											"min_threshold": 0,
+											"max_threshold": 0.15
 										},
 										"then_run": {
 											"type": "minecraft:block",

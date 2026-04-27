@@ -68,6 +68,7 @@
 			"tfg:nether/surface/moonflower_patch",
 			"tfg:nether/surface/rafflesia_patch",
 			"tfg:nether/surface/sundew_patch",
+			"tfg:nether/surface/lilypad_patch",
 			"minecraft:spore_blossom",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
@@ -79,26 +80,17 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"tfc:octopoteuthis": {
-			"energy_budget": 0.12,
-			"charge": 1.0
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:leaf_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
-		"water_ambient": [
-			{
-				"type": "tfc:isopod",
-				"weight": 1,
-				"minCount": 1,
-				"maxCount": 4
-			},
-			{
-				"type": "tfc:crayfish",
-				"weight": 1,
-				"minCount": 1,
-				"maxCount": 4
-			}
-		],
+		"water_ambient": [],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -117,16 +109,10 @@
 		],
 		"creature": [
 			{
-				"type": "tfc:crocodile",
-				"maxCount": 1,
+				"type": "minecraft:zombie_horse",
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "tfc:frog",
-				"weight": 100,
-				"minCount": 3,
-				"maxCount": 4
+				"weight": 1
 			}
 		],
 		"misc": [],
@@ -202,17 +188,23 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
-			}
-		],
-		"underground_water_creature": [
+			},
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			}
 		],
-		"water_creature": []
+		"underground_water_creature": [],
+		"water_creature": [
+			{
+				"type": "species:leaf_hanger",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		]
 	},
 	"temperature": 0.8
 }

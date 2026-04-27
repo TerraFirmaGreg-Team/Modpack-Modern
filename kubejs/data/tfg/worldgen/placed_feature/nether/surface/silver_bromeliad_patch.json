@@ -1,9 +1,12 @@
 {
-	"feature": "tfg:nether/surface/red_algae_patch",
+	"feature": "tfg:nether/surface/silver_bromeliad_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 100
+			"count": 6
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",

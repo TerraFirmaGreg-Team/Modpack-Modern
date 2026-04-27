@@ -58,6 +58,7 @@
 			"tfg:nether/surface/dead_bush_patch",
 			"tfg:nether/terrain/pale_moss_ceiling",
 			"tfg:nether/surface/moonflower_patch",
+			"tfg:nether/surface/silver_bromeliad_patch",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"tfg:nether/surface/beneath_mushrooms",
@@ -68,12 +69,7 @@
 		"#tfg:nether_global_decoration"
 	],
 	"has_precipitation": false,
-	"spawn_costs": {
-		"tfc:octopoteuthis": {
-			"energy_budget": 0.12,
-			"charge": 1.0
-		}
-	},
+	"spawn_costs": {},
 	"spawners": {
 		"water_ambient": [],
 		"ambient": [
@@ -92,20 +88,7 @@
 				"weight": 10
 			}
 		],
-		"creature": [
-			{
-				"type": "tfc:crocodile",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "tfc:frog",
-				"weight": 100,
-				"minCount": 3,
-				"maxCount": 4
-			}
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{

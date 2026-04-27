@@ -230,6 +230,7 @@ function registerTFGBeneathPlacedFeatures(event) {
     event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/raw_boulder_patch")
 
 	event.add('tfg:nether_global_decoration', 'tfg:nether/surface/loose_rocks')
+    event.add('tfg:nether_global_decoration', 'tfg:nether/surface/hanging_roots_patch')
 	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')
     event.add('tfg:nether_global_decoration', "tfg:glow_lichen");
     event.add('tfg:nether_global_decoration', "beneath:glowstone_spikes");

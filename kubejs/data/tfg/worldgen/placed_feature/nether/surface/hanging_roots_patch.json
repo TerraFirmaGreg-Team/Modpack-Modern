@@ -1,19 +1,22 @@
 {
-	"feature": "tfg:nether/surface/red_algae_patch",
+	"feature": "tfg:nether/surface/hanging_roots_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 100
+			"count": 10
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"below_top": 6
+					"below_top": 4
 				},
 				"min_inclusive": {
-					"above_bottom": 120
+					"above_bottom": 48
 				}
 			}
 		},

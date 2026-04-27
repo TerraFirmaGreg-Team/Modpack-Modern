@@ -22,11 +22,12 @@
 					}
 				},
 				{
-					"type": "minecraft:block_predicate_filter",
+					"type": "block_predicate_filter",
 					"predicate": {
-						"type": "minecraft:matching_block_tag",
-						"offset": [ 0, -1, 0 ],
-						"tag": "tfc:dirt"
+						"type": "would_survive",
+						"state": {
+							"Name": "wan_ancient_beasts:rafflesia"
+						}
 					}
 				}
 			]
