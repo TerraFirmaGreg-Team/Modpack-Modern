@@ -31,15 +31,7 @@
                         "dripstone"
                     ],
                     "volume": 0.25,
-                    "transition": 100,
-                    "length": {
-                        "min": 400,
-                        "max": 800
-                    },
-                    "pause": {
-                        "min": 100,
-                        "max": 300
-                    }
+                    "transition": 200
                 }
             ]
         }

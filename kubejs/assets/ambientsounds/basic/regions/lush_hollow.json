@@ -20,10 +20,9 @@
 				"ambientsounds:animals.frog-cave1"
 			],
 			"volume": 0.3,
-			"transition": 100,
 			"length": {
-				"min": 1000,
-				"max": 1500
+				"min": 200,
+				"max": 500
 			},
 			"pause": {
 				"min": 100,
