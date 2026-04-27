@@ -1,5 +1,7 @@
 {
 	"block.endermanoverhaul.tiny_skull": "Mała czaszka",
+	"config.endermanoverhaul.allowPickingUpBlocks": "Zezwól na podnoszenie bloków",
+	"config.endermanoverhaul.replaceDefaultEnderman": "Zastąp domyślnego Endermana",
 	"entity.endermanoverhaul.ancient_pearl": "Starożytna perła",
 	"entity.endermanoverhaul.bubble_pearl": "Bąbelkowa perła",
 	"entity.endermanoverhaul.cave_enderman": "Jaskiniowy Enderman",
@@ -13,6 +15,7 @@
 	"entity.endermanoverhaul.scarab": "Chrząszcz",
 	"entity.endermanoverhaul.snowy_enderman": "Śnieżny Enderman",
 	"entity.endermanoverhaul.swamp_enderman": "Omszały Enderman",
+	"entity.endermanoverhaul.warped_forest_enderman": "Enderman ze spaczonego lasu",
 	"item.endermanoverhaul.ancient_pearl": "Starożytna perła",
 	"item.endermanoverhaul.bubble_pearl": "Bąbelkowa perła",
 	"item.endermanoverhaul.crimson_pearl": "Karmazynowa perła",
@@ -22,5 +25,6 @@
 	"itemGroup.endermanoverhaul.main": "Enderman Overhaul",
 	"tag.item.endermanoverhaul.ender_pearls": "Enderperły",
 	"tooltip.endermanoverhaul.ancient_pet": "Zdrowie zwierzaka: %.1f",
-	"tooltip.endermanoverhaul.bound_to": "Powiązany z: %s"
+	"tooltip.endermanoverhaul.bound_to": "Powiązany z: %s",
+	"tooltip.endermanoverhaul.icy_pearl": "Zamraża pobliskie cele przy trafieniu"
 }

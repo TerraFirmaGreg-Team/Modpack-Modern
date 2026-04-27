@@ -28,6 +28,7 @@
   "tfcgenviewer.rock_editor.delete_tooltip": "Usuń",
   "tfcgenviewer.rock_editor.delete_tooltip.named": "Usuń '%s'",
   "tfcgenviewer.rock_editor.edit_tooltip": "Przenieś '%s' do edytora",
+  "tfcgenviewer.rock_editor.change_block": "Przełącz edycję bloku: %s",
   "tfcgenviewer.rock_editor.rock_layer_type.volcanic": "Wulkaniczne warstwy skalne",
   "tfcgenviewer.rock_editor.layer_in_editor": "W edytorze",
   "tfcgenviewer.rock_editor.layer_definition_mapping": "%s -> %s",
@@ -39,8 +40,10 @@
   "tfcgenviewer.rock_editor.hint.gravel_selection": "Blok żwiru",
   "tfcgenviewer.rock_editor.hint.cobble_selection": "Blok bruku",
   "tfcgenviewer.rock_editor.hint.sand_selection": "Blok piasku",
+  "tfcgenviewer.rock_editor.hint.sandstone_selection": "Blok piaskowca",
   "tfcgenviewer.rock_editor.tab.rock_settings": "Ustawienia skał",
   "tfcgenviewer.rock_editor.tab.layer_types": "Typy warstw",
+  "tfcgenviewer.rock_editor.error.layer_already_exists": "Warstwa '%s' już istnieje",
   "tfcgenviewer.rock_editor.error.editor_is_occupied": "Edytor jest zajęty",
   "rock.tfcgenviewer.unknown": "Nieznana skała",
   "rock.tfc.andesite": "Andezyt",
@@ -68,6 +71,7 @@
   "tfcgenviewer.rock_type.land": "Ląd",
   "tfcgenviewer.rock_type.oceanic": "Oceaniczny",
   "tfcgenviewer.rock_type.volcanic": "Wulkaniczny",
+  "tfcgenviewer.climate.temperature": "Temperatura, -20 °C -> 30 °C",
   "tfcgenviewer.climate.rainfall": "Opady, 0 do 500 mm",
   "tfcgenviewer.temperature.0": "-20 do -10 °C",
   "tfcgenviewer.temperature.1": "-10 do 0 °C",
@@ -92,5 +96,8 @@
   "tfcgenviewer.feature.coral_reef": "Rafa koralowa",
   "tfcgenviewer.key.open_viewer": "Otwórz przeglądarkę świata",
   "tfcgenviewer.commands.set.success": "Ustaw %s na %s",
-  "tfcgenviewer.commands.add.success": "Dodano %s do filtru %s"
+  "tfcgenviewer.commands.add.success": "Dodano %s do filtru %s",
+  "tfcgenviewer.commands.add.fail": "Gracz już jest w filtrze %s",
+  "tfcgenviewer.commands.remove.success": "Usunięto %s z filtru %s",
+  "tfcgenviewer.commands.remove.fail": "Gracz nie jest w filtrze %s"
 }

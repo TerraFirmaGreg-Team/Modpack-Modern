@@ -20,5 +20,7 @@
   "ftbfiltersystem.gui.item_source.creative": "Kreatywny",
   "ftbfiltersystem.gui.item_source.mod": "Mod",
   "ftbfiltersystem.gui.percentage": "Procenty",
+  "ftbfiltersystem.message.changes_saved": "Filtr został zaktualizowany!",
+  "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "item.ftbfiltersystem.smart_filter": "Inteligentny filtr"
 }
