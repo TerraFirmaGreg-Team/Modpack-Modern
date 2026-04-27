@@ -43,8 +43,7 @@
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble",
-			"tfg:webbed_lair_forest"
+			"tfg:nether/terrain/mossy_cobble"
 		],
 		[
 			"tfg:nether/tree/araucaria_placer",
@@ -133,28 +132,16 @@
 				"weight": 100
 			},
 			{
-				"type": "minecraft:enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
 				"type": "minecraft:silverfish",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
-			},
-			{
-				"type": "endermanoverhaul:scarab",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 75
+				"weight": 15
 			},
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 50
+				"weight": 20
 			},
 			{
 				"type": "minecraft:phantom",
@@ -163,14 +150,7 @@
 				"weight": 5
 			}
 		],
-		"underground_water_creature": [
-			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 10
-			}
-		],
+		"underground_water_creature": [],
 		"water_creature": []
 	},
 	"temperature": 0.8

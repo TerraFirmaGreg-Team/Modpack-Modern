@@ -11,13 +11,13 @@
 			"type": "minecraft:uniform",
 			"value": {
 				"max_inclusive": 1,
-				"min_inclusive": 0
+				"min_inclusive": 1
 			}
 		},
 		"size": {
 			"type": "minecraft:uniform",
 			"value": {
-				"max_inclusive": 8,
+				"max_inclusive": 6,
 				"min_inclusive": 4
 			}
 		}

@@ -13,7 +13,12 @@ const beneath_plants = [
 	'minecraft:spore_blossom',
     '#beneath:mushrooms',
     'tfg:plant/eyeblossom',
-    'tfg:plant/pale_hanging_moss'
+    'tfg:plant/pale_hanging_moss',
+    'wan_ancient_beasts:rafflesia',
+    'wan_ancient_beasts:sundew',
+    'wan_ancient_beasts:bellflower',
+    'wan_ancient_beasts:equisetum',
+    'wan_ancient_beasts:moonflower'
 ];
 
 function registerTFGBeneathItemTags(event) {
