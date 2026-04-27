@@ -230,7 +230,28 @@ function registerTFGWorldGenMarsDecoBlocks(event) {
 		.texture('particle', 'species:block/alphacene_mushroom_block')
 		.texture('all', 'species:block/alphacene_mushroom_block')
 		.texture('top', 'minecraft:block/mushroom_stem')
-		
+
+	// Decorative saplings
+	
+	function createFakeSapling(name) {
+		event.create(`tfg:fake_sapling/${name}`, 'tfg:decorative_plant')
+			.box(3, 0, 3, 13, 8, 13)
+			.soundType('nether_wart')
+			.renderType('cutout_mipped')
+			.lootItem(`tfg:saplings/${name}`)
+			.tagItem('c:hidden_from_recipe_viewers')
+			.tagBlock('minecraft:replaceable')
+			.tagBlock('tfg:do_not_destroy_in_space')
+			.tagBlock('tfc:can_be_snow_piled')
+	}
+
+	createFakeSapling('aeronos')
+	createFakeSapling('strophar')
+	createFakeSapling('crimson')
+	createFakeSapling('warped')
+	createFakeSapling('alphacene')
+	createFakeSapling('glacian')
+
 	// Misc
 
 	event.create('tfg:spice', 'tfg:particle_emitter')

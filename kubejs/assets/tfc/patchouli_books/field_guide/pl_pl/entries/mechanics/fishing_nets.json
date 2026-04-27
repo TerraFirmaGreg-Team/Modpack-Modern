@@ -1,12 +1,12 @@
 {
-	"name": "Fishing Nets",
+	"name": "Sieci rybackie",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fishing Nets",
+			"title": "Sieci rybackie",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},
@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Wood Fishing Net",
+			"title": "Drewniana siatka rybacka",
 			"recipe": "tfc:kjs/damage/shaped/fishing_net/wood",
 			"text": "A basic $(item)Wood Fishing Net$()."
 		}

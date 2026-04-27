@@ -124,34 +124,32 @@ function registerTFCDyeRecipes(event) {
 	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
 
 		event.remove(`tfc:pot/${dyeName}_dye`);
-
-		let inputArray = new Array(0);
-
+		
 		for (let i = 1; i < 5; i++) {
 
-			inputArray.length = 0;
+			let inputArray = new Array(0);
 
 			for (let j = 1; j < i + 1; j++) {
 				inputArray.push(`#forge:dyes/${dyeName}`);
 			}
 
-			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 250 * i), 200, 200)
-				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 144 * i))
+			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 144 * i), 200, 200)
+				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 288 * i))
 				.id(`tfc:pot/${i}x_${dyeName}_dye`)
 		}
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_acetic`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
-			.inputFluids('gtceu:acetic_acid 250', "#tfg:clean_water 1000")
-			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144 * 3))
+			.inputFluids('gtceu:acetic_acid 25', "#tfg:clean_water 475")
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 7 * 144))
 			.duration(15 * 20)
 			.EUt(24)
 
 		event.recipes.gtceu.chemical_reactor(`chemical_dye_${dyeName}_vinegar`)
 			.itemInputs(`#forge:dyes/${dyeName}`)
-			.inputFluids(Fluid.of('tfc:vinegar', 250))
-			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 144))
-			.duration(30 * 20)
+			.inputFluids(Fluid.of('tfc:vinegar', 144))
+			.outputFluids(Fluid.of(`tfc:${dyeName}_dye`, 288))
+			.duration(15 * 20)
 			.EUt(24)
 	})
 

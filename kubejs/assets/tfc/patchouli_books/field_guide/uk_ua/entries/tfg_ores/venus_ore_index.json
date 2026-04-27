@@ -8,7 +8,7 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "This is the $(thing)Ore Index$() for $(thing)Венера$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+      "text": "Це $(thing)Індекс руд$() для $(thing)Венера$().  \nУсі руди відсортовані за абеткою, а потім — від найбагатшого до найбіднішого типу жил.  \nВи можете натиснути на них, щоб дізнатися більше про кожну жилу.",
       "title": "Індекс руд Венери",
       "type": "patchouli:text"
     },

@@ -6,15 +6,20 @@
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material 
  */
 function getFluidRecipeEUt(material) {
-	// Special case for bis bronze, black bronze, rose gold and sterling silver because removing the blast property doesn't change the tier of
-	// the extractor recipes retroactively
-	return material.hasProperty(PropertyKey.BLAST) && material !== GTMaterials.BismuthBronze && material !== GTMaterials.BlackBronze && material !== GTMaterials.RoseGold && material !== GTMaterials.SterlingSilver
+	// Special case for bis bronze, black bronze, rose gold and sterling silver because removing the blast property 
+	// doesn't change the tier of the extractor recipes retroactively
+	return material.hasProperty(PropertyKey.BLAST) 
+		&& material !== GTMaterials.BismuthBronze
+		&& material !== GTMaterials.BlackBronze
+		&& material !== GTMaterials.RoseGold
+		&& material !== GTMaterials.SterlingSilver
 		? GTValues.VA[GTValues.MV]
 		: GTValues.VA[GTValues.LV];
 }
 
 /** 
  * @param {TagPrefix} tagPrefix 
+ * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material
  */
 function getMaterialAmount(tagPrefix, material) {
 	return tagPrefix.getMaterialAmount(material) / GTValues.M;
@@ -121,16 +126,18 @@ const getFillingNBT = (material, amount) => {
 /**
  * @param {Internal.RecipesEventJS} event 
  * @param {Internal.ItemStack} outputItem
- * @param {String} ceramicMold 
+ * @param {String?} ceramicMold 
  * @param {boolean} isFireMold
- * @param {String} gtMold
+ * @param {String?} gtMold
  * The mold item for the fluid solidifier/alloy smelter.
  * Pass null for built-in GT molds, since GT already generates recipes for those
  * @param {com.gregtechceu.gtceu.api.data.chemical.material.Material_} material
  * @param {String} tagPrefixName
  * @param {number} mbAmount
+ * @param {boolean} lowerTierAlloySmelting 
+ * Forces the alloy smelter recipe to be LV, but at the cost of twice the inputs
  */
-function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount) {
+function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, material, tagPrefixName, mbAmount, lowerTierAlloySmelting) {
 	const materialName = material.getName();
 
 	// If it's a TFC material, add ceramic mold casting + create spouting
@@ -159,13 +166,24 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
 	if (gtMold !== null) {
 		const ingotAmount = mbAmount / 144;
 
-		event.recipes.gtceu.alloy_smelter(`tfg:cast_${materialName}_${tagPrefixName}`)
-			.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
-			.notConsumable(gtMold)
-			.itemOutputs(outputItem)
-			.duration(material.getMass() * 2 * ingotAmount)
-			.EUt(getFluidRecipeEUt(material))
-			.category(GTRecipeCategories.INGOT_MOLDING)
+		if (lowerTierAlloySmelting) {
+			event.recipes.gtceu.alloy_smelter(`tfg:cast_${materialName}_${tagPrefixName}`)
+				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount * 2))
+				.notConsumable(gtMold)
+				.itemOutputs(outputItem)
+				.duration(material.getMass() * 2 * ingotAmount)
+				.EUt(GTValues.VA[GTValues.LV])
+				.category(GTRecipeCategories.INGOT_MOLDING)
+		}
+		else {
+			event.recipes.gtceu.alloy_smelter(`tfg:cast_${materialName}_${tagPrefixName}`)
+				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, ingotAmount))
+				.notConsumable(gtMold)
+				.itemOutputs(outputItem)
+				.duration(material.getMass() * 2 * ingotAmount)
+				.EUt(getFluidRecipeEUt(material))
+				.category(GTRecipeCategories.INGOT_MOLDING)
+		}
 
 		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${materialName}_${tagPrefixName}`)
 			.inputFluids(Fluid.of(material.getFluid(), mbAmount))

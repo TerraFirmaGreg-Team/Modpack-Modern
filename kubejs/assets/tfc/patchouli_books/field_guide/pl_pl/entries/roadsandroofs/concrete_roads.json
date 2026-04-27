@@ -1,5 +1,5 @@
 {
-  "name": "Concrete Roads",
+  "name": "Betonowe drogi",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Concrete Road",
+      "title": "Betonowa droga",
       "images": [
       "rnr:textures/gui/book/concrete_road.png"
       ],
@@ -19,14 +19,14 @@
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
       "item": "gtceu:concrete_bucket",
-      "title": "Concrete Crafting",
+      "title": "Wytwarzanie betonu",
       "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
       "item": "rnr:bucket/concrete",
-      "title": "Concrete Crafting",
+      "title": "Wytwarzanie betonu",
       "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring a Concrete Road",
+      "title": "Wylewanie betonowej drogi",
       "images": [
       "rnr:textures/gui/book/wet_concrete.png"
       ],

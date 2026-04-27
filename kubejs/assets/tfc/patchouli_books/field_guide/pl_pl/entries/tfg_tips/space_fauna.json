@@ -1,11 +1,11 @@
 {
-	"name": "Extraterrestrial Fauna",
+	"name": "Fauna pozaziemska",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:sniffer_egg",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Extraterrestrial Fauna",
+			"title": "Fauna pozaziemska",
 			"text": "Space is home to many other kinds of animals than those you'd find on Earth. A few animals are hostile and will attack the player, but most are passive. Only a few of them are $(l:mechanics/animal_husbandry)domesticatable$().$(br)Animals you find on other worlds can be divided into two categories: $(item)hot$() and $(item)cold$(). Animals can only survive on planets that either have a similar climate to where they came from, or on $(thing)temperate$() planets like Earth."
 		},
 		{
@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/moon",
-			"title": "Moon Animals",
+			"title": "Księżycowe zwierzęta",
 			"text": "$(item)The Moon$() may be pretty barren, but it still has a few animals that call it home.$(br2)It's considered a $(thing)Cold$() world despite the pretty extreme temperature swings.",
 			"anchor": "księżyc"
 		},
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:marker/mars",
-			"title": "Mars Animals",
+			"title": "Marsjańskie zwierzęta",
 			"text": "$(item)Mars$() is the planet with an environment closest to Earth's, featuring a wide variety of animals to interact with and crops to feed them (and yourself) with... outside of the huge desert, where almost nothing lives.$(br2)Mars is a $(thing)Cold$() planet.",
 			"anchor": "mars"
 		},
@@ -65,7 +65,7 @@
 			"tfg:textures/gui/field_guide/sandworm.png"
 			],
 			"border": true,
-			"title": "The Sandworm",
+			"title": "Czerw piaskowy",
 			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the desert.$(br)"
 		},
 		{

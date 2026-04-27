@@ -1,16 +1,16 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Crops are a source of food and some other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$(). Seeds are also useful as $(l:mechanics/fishing)bait$()."
+			"text": "作物は食料や様々な素材の重要な供給源です。作物の種類ごとに細かな違いはありますが、基本的な育て方は共通しています。栽培を始めるにはまず$(thing)種$()が必要です。これは、$(l:the_world/wild_crops)野生の作物$()を見つけて採取することで入手できます。$(br2)種を入手したら、$(thing)クワ$()も用意しましょう。なお、種は$(l:mechanics/fishing)釣りエサ$()にもなります。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
+			"text": "種は野生の作物からだけでなく、育てた作物からも入手できます。作物が完全に成長したあと、放置しすぎたり、気温の変化などの影響で枯れると、次の時期に作物を育てるために使用できる多くの種を落とします。"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,21 +26,21 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			],
-			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above."
+			"text": "まず、石を$(thing)加工$()して$(thing)石のクワ$() を作成します。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/stone/hoe_sedimentary",
-			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$()."
+			"text": "$(br2)クワを作成したら、バニラと同様に土ブロックを右クリックして耕すことで$(thing)耕地$()にできます。また、クワは$(thing)根付いた土$()を通常の$(thing)土$()に戻す用途にも使えます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"text": "作物はすべて、栽培するために耕地へ植える必要があります。作物によっては、水に浸かっている必要があったり、支柱として棒が必要だったりと追加条件があります。$(br2)作物をただ育てるだけであれば$(thing)栄養素$()は必要ありません、しかし、栄養素があると成長が有利になります。栄養素には$(b)窒素$()、$(6)リン$()、$(d)カリウム$()の3種類があり、それぞれの作物ごとに適した栄養素があります。",
+			"title": "作物の成長"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br2)The next several pages list all the crops present in TFC"
+			"text": "作物は好みの栄養素を土壌から吸収することで成長が早まり、収穫量も増加します。つまり、より多くの栄養を摂取した作物ほど、収穫したときにより多くの収穫物が手に入ります！さらに、栄養素を摂取すると周囲の別の栄養素が少し回復する効果もあります。$(br2)この後のページでは、TFCに登場するすべての作物が解説されています。"
 		},
 		{
 			"type": "patchouli:text",

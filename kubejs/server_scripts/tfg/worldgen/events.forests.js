@@ -30,7 +30,7 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/crimson', // fallen log
 		'beneath:wood/fallen_leaves/crimson', // fallen leaves
 		[ // ground cover
-			'minecraft:crimson_fungus',
+			'tfg:fake_sapling/crimson',
 			'beneath:wood/fallen_leaves/crimson',
 			'beneath:wood/twig/crimson',
 			'tfg:groundcover/wraptor_feather',
@@ -60,7 +60,7 @@ TFCEvents.worldgenData(event => {
 		'beneath:wood/log/warped',
 		'beneath:wood/fallen_leaves/warped',
 		[
-			'minecraft:warped_fungus',
+			'tfg:fake_sapling/warped',
 			'beneath:wood/fallen_leaves/warped',
 			'beneath:wood/twig/warped',
 			'tfg:groundcover/wraptor_feather',
@@ -84,7 +84,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:aeronos_mushroom",
+			"tfg:fake_sapling/aeronos",
 			'tfg:groundcover/aeronos_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -107,7 +107,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"ad_astra:strophar_mushroom",
+			"tfg:fake_sapling/strophar",
 			'tfg:groundcover/strophar_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -129,7 +129,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
-			"species:alphacene_mushroom",
+			"tfg:fake_sapling/alphacene",
 			'tfg:groundcover/alphacene_stick',
 			'tfg:groundcover/wraptor_feather',
 			'tfg:groundcover/glider_feather'
@@ -151,6 +151,7 @@ TFCEvents.worldgenData(event => {
 		null,
 		null,
 		[
+			"tfg:fake_sapling/glacian",
 			"tfg:glacian_leaves_fallen",
 			'tfg:groundcover/glacian_stick'
 		],

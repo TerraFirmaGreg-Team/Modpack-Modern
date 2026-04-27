@@ -206,8 +206,6 @@ function registerTFGMarsBlockTags(event) {
 
 	event.removeAll('minecraft:sniffer_diggable_block')
 
-	event.add('tfc:can_be_snow_piled', 'minecraft:crimson_fungus')
-	event.add('tfc:can_be_snow_piled', 'minecraft:warped_fungus')
 	event.add('tfc:can_be_snow_piled', 'minecraft:torchflower')
 	event.add('tfc:can_be_snow_piled', 'minecraft:pitcher_plant')
 
@@ -230,9 +228,6 @@ function registerTFGMarsBlockTags(event) {
 
 	event.remove('ad_astra:strophar_caps', 'ad_astra:strophar_cap')
 	event.remove('ad_astra:aeronos_caps', 'ad_astra:aeronos_cap')
-
-	event.add('tfc:can_be_snow_piled', 'ad_astra:aeronos_mushroom')
-	event.add('tfc:can_be_snow_piled', 'ad_astra:strophar_mushroom')
 
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/amber_mycelium')
 	event.add('tfg:do_not_destroy_in_space', 'tfg:grass/rusticus_mycelium')

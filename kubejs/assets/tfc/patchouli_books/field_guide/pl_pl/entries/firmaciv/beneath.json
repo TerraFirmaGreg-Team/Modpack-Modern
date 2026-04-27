@@ -1,5 +1,5 @@
 {
-    "name": "Martian Boats",
+    "name": "Marsjańska łodzie",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -15,7 +15,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
+            "title": "Drzewa miękkie",
             "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
             "item": "beneath:wood/stripped_log/crimson"
         },
@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hardwoods",
+            "title": "Drzewa twarde",
             "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
             "item": "beneath:wood/planks/warped"
         },
