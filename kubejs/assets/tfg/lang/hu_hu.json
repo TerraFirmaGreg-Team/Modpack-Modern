@@ -1,7 +1,17 @@
 {
 	"block.tfg.pile.venus_sand": "Trachithomok",
 	"block.tfg.pile.venus_sand_covering": "Trachithomok",
+	"block.tfg.sunflower": "Napraforgó",
+	"block.tfg.rapeseed": "Repce",
+	"block.tfg.flax": "Len",
+	"block.tfg.lentil": "Lencse",
+	"block.tfg.cucumber": "Uborka",
+	"block.tfg.radish": "Retek",
+	"effect.tfg.arsenicosis_warning": "Arzénmérgezés",
+	"item.tfg.cucumber_product": "Uborka",
+	"item.tfg.radish_product": "Retek",
 	"tfg.ore_patchouli_info.height": "Magasság",
 	"tfg.ore_patchouli_info.radius": "Sugár",
-	"tfg.ore_patchouli_info.percentage": "Százalék"
+	"tfg.ore_patchouli_info.percentage": "Százalék",
+	"quests.tfg_tips.hazard_materials.title": "Vestélyes Anyagok"
 }

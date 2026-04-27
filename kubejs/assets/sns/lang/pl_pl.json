@@ -4,7 +4,13 @@
   "item.sns.hiking_boots": "Buty górskie",
   "item.sns.leather_sack": "Skórzany worek",
   "item.sns.leather_strip": "Skórzany pasek",
+  "item.sns.metal.horseshoe.black_steel": "Podkowa z czarnej stali",
+  "item.sns.metal.horseshoe.blue_steel": "Podkowa z niebieskiej stali",
+  "item.sns.metal.horseshoe.red_steel": "Podkowa z czerwonej stali",
   "item.sns.metal.horseshoe.steel": "Stalowe podkowy",
+  "item.sns.metal.horseshoes.black_steel": "Podkowy z czarnej stali",
+  "item.sns.metal.horseshoes.blue_steel": "Podkowy z niebieskiej stali",
+  "item.sns.metal.horseshoes.red_steel": "Podkowy z czerwonej stali",
   "item.sns.metal.horseshoes.steel": "Stalowa podkowa",
   "item.sns.mob_net": "Siatka na moby",
   "item.sns.ore_sack": "Worek na rudę",
@@ -22,5 +28,7 @@
   "sns.enabled": "Aktywny",
   "sns.extra_fall_distance": "Odległość upadku",
   "sns.stack_name.mob_net.with_mob": "%s (%s)",
+  "sns.status.mob_net.cannot_capture_generic": "Nie możesz przechwycić %ss",
+  "sns.tooltip.item_container.allowed_size": "Największy rozmiar przedmiotu: %s",
   "sns.tooltip.item_container.slot_count": "Liczba miejsc: %s"
 }

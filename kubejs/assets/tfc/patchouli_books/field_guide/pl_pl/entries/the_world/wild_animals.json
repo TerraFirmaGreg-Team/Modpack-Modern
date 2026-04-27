@@ -349,7 +349,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:mechanics/lamps#tallow)blubber$(), which can be made into lamp fuel.",
-			"title": "Large Water Creatures"
+			"title": "Duże stworzenia wodne"
 		},
 		{
 			"type": "patchouli:entity",

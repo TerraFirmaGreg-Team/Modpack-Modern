@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Piglin Bartering",
+			"title": "Handel z piglinami",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
 		},
 		{

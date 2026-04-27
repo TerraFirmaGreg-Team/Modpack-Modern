@@ -1,16 +1,16 @@
 {
-	"name": "Drink Effects",
+	"name": "飲み物の効果",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Potions and magic don't exist in the world of TerraFirmaCraft, but there's plenty of other drinks that can provide similar effects!$(br2)This entry serves as a list of all the different effects, and as a bonus, they all keep you hydrated too."
+			"text": "TerraFirmaCraftの世界にはポーションも魔法もありませんが、その代わりに似た効果を持つ飲み物が豊富に存在しています！$(br2)この項目では、それらの効果を一覧で確認できるようになっています。もちろん、水分補給にもなりますよ。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Drink containers",
+			"title": "飲み物を入れる容器",
 			"text": "You can drink things out of a $(l:getting_started/pottery#jug)Jug$(), $(l:waterflasks/recipes)Flask$(), or $(l:mechanics/glassworking_applications#glass_bottle)Glass Bottle$(). Jugs only hold enough for 1 drink and break easily. Glass bottles only hold a few drinks, and also have a chance of breaking. Flasks can hold even more and slowly use durability instead, except the $(item)Red Steel Flask$() which holds 20 drinks and never breaks.",
 			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
 		},
