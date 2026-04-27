@@ -155,6 +155,11 @@ function registerTFGBeneathBlockTags(event) {
     event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/beech')
     event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/mangrove')
 
+    event.add('tfc:creeping_stone_plantable_on', 'tfg:halite')
+    event.add('tfg:anemone_plantable_on', 'tfg:halite')
+    event.add('tfg:epiphyte_plantable_on', 'tfg:halite')
+    event.add('tfg:epiphyte_plantable_on', 'tfg:pale_moss')
+
     event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
 
     event.add('minecraft:mineable/pickaxe', 'minecraft:cobweb');
@@ -182,19 +187,17 @@ function registerTFGBeneathBlockTags(event) {
 
 function registerTFGBeneathBiomeTags(event) {
 
-    event.add('tfg:nether_biomes', 'tfg:nether/lush_hollow')
-	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/lush_hollow')
-	event.add('minecraft:spawns_cold_variant_frogs', 'tfg:nether/lush_hollow')
-	
 	event.add('tfg:nether_biomes', 'tfg:nether/decaying_caverns')
-	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/decaying_caverns')
-	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/decaying_caverns')
-	event.add('minecraft:has_closer_water_fog', 'tfg:nether/decaying_caverns')
-	
+    event.add('tfg:nether_biomes', 'tfg:nether/salt_caves')
+    event.add('tfg:nether_biomes', 'tfg:nether/muggy_bog')
+	event.add('tfg:nether_biomes', 'tfg:nether/webbed_lair')
+    event.add('tfg:nether_biomes', 'tfg:nether/lush_hollow')
+    event.add('tfg:nether_biomes', 'tfg:nether/geothermal_springs')
+    event.add('tfg:nether_biomes', 'tfg:nether/tar_pools')
+    event.add('tfg:nether_biomes', 'tfg:nether/thorny_brambles')
 	event.add('tfg:nether_biomes', 'tfg:nether/basalt_deltas')
 	event.add('tfg:nether_biomes', 'tfg:nether/ash_forest')
 	event.add('tfg:nether_biomes', 'tfg:nether/lava_floes')
-	event.add('tfg:nether_biomes', 'tfg:nether/webbed_lair')
 	event.add('tfg:nether_biomes', 'tfg:nether/gneiss_caves')
 	event.add('tfg:nether_biomes', 'tfg:nether/diorite_caves')
 	event.add('tfg:nether_biomes', 'tfg:nether/gabbro_caves')

@@ -3,40 +3,44 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "minecraft:simple_block",
+				"type": "tfc:block_with_fluid",
 				"config": {
 					"to_place": {
 						"type": "tfc:random_property",
-						"property": "flower_amount",
 						"state": {
-							"Name": "wan_ancient_beasts:moonflower",
+							"Name": "tfc:plant/manatee_grass",
 							"Properties": {
-								"flower_amount": "1"
+								"age": "1",
+								"stage": "1"
 							}
-						}
+						},
+						"property": "age"
 					}
 				}
 			},
 			"placement": [
 				{
-					"type": "minecraft:block_predicate_filter",
+					"type": "block_predicate_filter",
 					"predicate": {
-						"type": "minecraft:matching_blocks",
-						"blocks": "minecraft:air"
+						"type": "tfc:air_or_empty_fluid"
 					}
 				},
 				{
 					"type": "block_predicate_filter",
 					"predicate": {
-						"type": "would_survive",
+						"type": "tfc:would_survive_with_fluid",
 						"state": {
-							"Name": "wan_ancient_beasts:moonflower"
+							"Name": "tfc:plant/manatee_grass",
+							"Properties": {
+								"age": "1",
+								"stage": "1"
+							}
 						}
 					}
 				}
 			]
 		},
-		"tries": 36,
+		"tries": 64,
 		"xz_spread": 6,
 		"y_spread": 2
 	}

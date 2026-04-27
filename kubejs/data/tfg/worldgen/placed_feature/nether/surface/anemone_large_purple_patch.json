@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/surface/lilypad_patch",
+	"feature": "tfg:nether/surface/anemone_large_purple_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 100
+			"count": 10
 		},
 		{
 			"type": "minecraft:height_range",

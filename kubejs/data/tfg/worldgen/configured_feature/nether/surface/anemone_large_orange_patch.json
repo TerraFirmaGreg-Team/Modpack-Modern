@@ -1,0 +1,81 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "lithostitched:select",
+				"config": {
+					"features": [
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "tfg:plant/anemone_large_orange"
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": "minecraft:air"
+							}
+						},
+						{
+							"feature": {
+								"feature": {
+									"type": "minecraft:simple_block",
+									"config": {
+										"to_place": {
+											"type": "minecraft:simple_state_provider",
+											"state": {
+												"Name": "tfg:plant/anemone_large_orange",
+												"Properties": {
+													"fluid": "salt_water",
+													"open": "true"
+												}
+											}
+										}
+									}
+								},
+								"placement": []
+							},
+							"predicate": {
+								"type": "minecraft:matching_blocks",
+								"blocks": [
+									"minecraft:water",
+									"tfc:fluid/salt_water"
+								]
+							}
+						}
+					]
+				}
+			},
+			"placement": [
+				{
+					"predicate": {
+						"type": "tfc:air_or_empty_fluid"
+					},
+					"type": "block_predicate_filter"
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:plant/anemone_large_orange"
+						}
+					}
+				}
+			]
+		},
+		"tries": 36,
+		"xz_spread": 3,
+		"y_spread": 2
+	}
+}

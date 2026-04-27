@@ -6,9 +6,6 @@
 	"biomes": [
 		"webbed_lair"
 	],
-	"features": [
-		"tree"
-	],
 	"biome-type": "underground",
 	"min-height-relative": {
 		"max": -5,

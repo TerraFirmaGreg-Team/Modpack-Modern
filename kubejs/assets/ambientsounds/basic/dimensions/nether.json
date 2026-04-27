@@ -26,10 +26,6 @@
                         "ambientsounds:cave.cave-water5",
                         "ambientsounds:cave.cave-lush"
                     ],
-                    "features": [
-                        "rock",
-                        "dripstone"
-                    ],
                     "volume": 0.25,
                     "transition": 200
                 }
