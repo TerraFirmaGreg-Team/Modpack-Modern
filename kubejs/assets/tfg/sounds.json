@@ -2,39 +2,9 @@
 	"ambient.upper_nether.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:cave/cave-lush",
+				"name": "minecraft:ambient/nether/soulsand_valley/ambience",
 				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:animals/frog/frog-cave1",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water1",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water2",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water3",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water4",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water5",
-				"stream": true,
-				"volume": 1
+				"volume": 0.77
 			}
 		]
 	},
@@ -192,29 +162,9 @@
 	"ambient.middle_nether.loop": {
 		"sounds": [
 			{
-				"name": "ambientsounds:cave/cave-water1",
+				"name": "minecraft:ambient/nether/crimson_forest/ambience",
 				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water2",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water3",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water4",
-				"stream": true,
-				"volume": 1
-			},
-			{
-				"name": "ambientsounds:cave/cave-water5",
-				"stream": true,
-				"volume": 1
+				"volume": 0.77
 			}
 		]
 	},

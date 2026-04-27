@@ -1,7 +1,12 @@
 {
     "name": "ad_astra_orbit",
     "dimension-names": [
-        "mercury"
+        "earth_orbit",
+        "moon_orbit",
+        "mars_orbit",
+        "venus_orbit",
+        "mercury_orbit",
+        "glacio_orbit"
     ],
     "rain": false,
     "storm": false,

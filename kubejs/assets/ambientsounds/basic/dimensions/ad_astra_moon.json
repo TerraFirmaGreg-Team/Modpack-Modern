@@ -1,13 +1,13 @@
 {
-    "name": "ad_astra_venus",
+    "name": "ad_astra_moon",
     "dimension-names": [
-        "venus"
+        "moon"
     ],
     "biome-selector": {
-        "always": true
+        "always": false
     },
-    "rain": true,
-    "storm": true,
+    "rain": false,
+    "storm": false,
     "surface-selector": {
         "regions": [
             "surface"

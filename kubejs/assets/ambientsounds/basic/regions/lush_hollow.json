@@ -1,0 +1,66 @@
+{
+	"name": "lush_hollow",
+	"biomes": [
+		"lush_hollow",
+		"muggy_bog"
+	],
+	"regions": [
+		"cave"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "cave-lush",
+			"category": "cave",
+			"files": [
+				"ambientsounds:cave.cave-lush"
+			],
+			"length": {
+				"min": 100,
+				"max": 500
+			},
+			"pause": {
+				"min": 250,
+				"max": 500
+			},
+			"volume": 0.4
+		},
+		{
+			"name": "frog",
+			"category": "animal",
+			"files": [
+				"ambientsounds:animals.frog-cave1"
+			],
+			"volume": 0.3,
+			"length": {
+				"min": 100,
+				"max": 300
+			},
+			"pause": {
+				"min": 100,
+				"max": 750
+			}
+		},
+		{
+			"name": "cave-water",
+			"category": "cave",
+			"files": [
+				"ambientsounds:cave.cave-water1",
+				"ambientsounds:cave.cave-water2",
+				"ambientsounds:cave.cave-water3",
+				"ambientsounds:cave.cave-water4",
+				"ambientsounds:cave.cave-water5"
+			],
+			"volume": 0.4,
+			"length": {
+				"min": 400,
+				"max": 700
+			},
+			"transition": 200
+		}
+	]
+}

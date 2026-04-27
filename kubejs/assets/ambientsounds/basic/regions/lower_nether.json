@@ -1,0 +1,34 @@
+{
+	"name": "lower_nether",
+	"biomes": [
+		"basalt_deltas",
+		"ash_forest",
+		"lava_floes"
+	],
+	"features": [
+		"rock"
+	],
+	"regions": [
+		"cave"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "suspense",
+			"category": "wind",
+			"files": [
+				"ambientsounds:suspense.nether"
+			],
+			"volume": 0.1,
+			"length": {
+				"min": 200,
+				"max": 700
+			},
+			"transition": 200
+		}
+	]
+}
