@@ -1,4 +1,5 @@
 {
+  "block.grapplemod.block_grapple_modifier": "Modyfikator haka",
   "grapplecustomization.angle": "Kąt",
   "grapplemod.upgradecategories.double": "Podwójny hak",
   "grapplemod.upgradecategories.forcefield": "Pole siłowe",
@@ -17,6 +18,7 @@
   "grappletooltip.swing.desc": "- Huśtanie",
   "grappletooltip.throwalt.desc": "- Rzuć (alternatywnie)",
   "item.grapplemod.magnethook": "Hak magnetyczny",
+  "item.grapplemod.motorhook": "Hak z silnikiem",
   "item.grapplemod.rockethook": "Hak rakietowy",
   "key.climb.desc": "Wspinaj się",
   "key.climbdown.desc": "Zejdź na dół",
@@ -33,6 +35,7 @@
   "text.autoconfig.grapplemod.option.clientOptions.sounds.rocket_sound_volume": "rocket_sound_volume",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.slide_sound_volume": "slide_sound_volume",
   "text.autoconfig.grapplemod.option.clientOptions.sounds.wallrun_sound_volume": "wallrun_sound_volume",
+  "text.autoconfig.grapplemod.option.clientOptions.sounds.wallrunjump_sound_volume": "wallrunjump_sound_volume",
   "text.autoconfig.grapplemod.option.options": "opcje",
   "text.autoconfig.grapplemod.option.options.enchantments": "enchantments",
   "text.autoconfig.grapplemod.option.options.enchantments.doublejump": "doublejump",
@@ -55,6 +58,7 @@
   "text.autoconfig.grapplemod.option.options.enderstaff.ender_staff_recharge": "ender_staff_recharge",
   "text.autoconfig.grapplemod.option.options.enderstaff.ender_staff_strength": "ender_staff_strength",
   "text.autoconfig.grapplemod.option.options.grapplinghook": "grapplinghook",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.@Tooltip": "Opcje dla haków",
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks": "bloki",
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grappleBreakBlocks": "grappleBreakBlocks",
   "text.autoconfig.grapplemod.option.options.grapplinghook.blocks.grapplingBlocks": "grapplingBlocks",
@@ -135,6 +139,7 @@
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.magnet.attractradius.min_upgraded": "min_upgraded",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor": "silnik",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.motor": "Silnik włączony",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.motor.@Tooltip": "Ciągnie gracza w kierunku haka",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.motor.default_value": "default_value",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.motor.enabled": "włączone",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.motoracceleration": "Przyspieszenie silnika",
@@ -226,5 +231,6 @@
   "text.autoconfig.grapplemod.option.options.other": "inne",
   "text.autoconfig.grapplemod.option.options.other.@Tooltip": "Inne opcje",
   "text.autoconfig.grapplemod.option.options.other.airstrafe_acceleration": "airstrafe_acceleration",
+  "text.autoconfig.grapplemod.option.options.other.dont_override_movement_in_air": "dont_override_movement_in_air",
   "text.autoconfig.grapplemod.option.options.other.override_allowflight": "override_allowflight"
 }

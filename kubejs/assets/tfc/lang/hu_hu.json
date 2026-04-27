@@ -1,4 +1,6 @@
 {
+	"block.fluid.tfc.river_water": "Folyó Víz",
+	"block.fluid.tfc.salt_water": "Tengervíz",
 	"block.tfc.crop.barley": "Árpa",
 	"block.tfc.crop.beet": "Cékla",
 	"block.tfc.crop.cabbage": "Káposzta",
@@ -25,7 +27,8 @@
 	"block.tfc.melon": "Görögdinnye",
 	"block.tfc.pumpkin": "Sütőtök",
 	"block.tfc.wild_crop.wheat": "Vadbúza",
-	"config.jade.plugin_tfc.crop": "Termés",
+	"config.jade.plugin_tfc.crop": "Kultúrnövény",
+	"fluid.tfc.river_water": "Folyó Víz",
 	"item.tfc.food.barley": "Árpa",
 	"item.tfc.food.beet": "Cékla",
 	"item.tfc.food.cabbage": "Káposzta",
@@ -47,5 +50,5 @@
 	"item.tfc.food.yellow_bell_pepper": "Sárga Kaliforniai Paprika",
 	"item.tfc.jute": "Juta",
 	"item.tfc.papyrus": "Papirusz",
-	"tfc.block_entity.crop": "Termés"
+	"tfc.block_entity.crop": "Kultúrnövény"
 }
