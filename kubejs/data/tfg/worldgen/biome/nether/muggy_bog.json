@@ -103,16 +103,15 @@
 				"weight": 10
 			}
 		],
-		"creature": [
+		"creature": [],
+		"misc": [],
+		"monster": [
 			{
 				"type": "minecraft:zombie_horse",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 1
-			}
-		],
-		"misc": [],
-		"monster": [
+				"weight": 100
+			},
 			{
 				"type": "minecraft:piglin",
 				"maxCount": 4,
