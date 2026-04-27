@@ -18,13 +18,27 @@
                     "files": [
                         "ambientsounds:cave.cave1",
                         "ambientsounds:cave.cave2",
-                        "ambientsounds:cave.cave3"
+                        "ambientsounds:cave.cave3",
+                        "ambientsounds:cave.cave-water1",
+                        "ambientsounds:cave.cave-water2",
+                        "ambientsounds:cave.cave-water3",
+                        "ambientsounds:cave.cave-water4",
+                        "ambientsounds:cave.cave-water5",
+                        "ambientsounds:cave.cave-lush"
+                    ],
+                    "features": [
+                        "rock",
+                        "dripstone"
                     ],
                     "volume": 0.25,
                     "transition": 200,
                     "length": {
                         "min": 100,
                         "max": 500
+                    },
+                    "pause": {
+                        "min": 100,
+                        "max": 400
                     }
                 }
             ]
