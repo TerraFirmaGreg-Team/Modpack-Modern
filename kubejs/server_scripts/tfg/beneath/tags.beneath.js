@@ -51,6 +51,11 @@ function registerTFGBeneathItemTags(event) {
     event.add('tfc:compost_greens_low', 'minecraft:twisting_vines')
     event.add('tfc:compost_greens_low', 'tfg:plant/eyeblossom');
     event.add('tfc:compost_greens_low', 'tfg:plant/pale_hanging_moss');
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:rafflesia')
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:sundew')
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:bellflower')
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:equisetum')
+    event.add('tfc:compost_greens_low', 'wan_ancient_beasts:moonflower')
 
     event.add('tfc:moss', 'minecraft:moss_carpet')
     event.add('tfc:moss', 'tfg:pale_moss_carpet')
