@@ -181,7 +181,7 @@
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 1,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			}
@@ -190,7 +190,7 @@
 		"water_creature": [
 			{
 				"type": "species:leaf_hanger",
-				"maxCount": 1,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			}

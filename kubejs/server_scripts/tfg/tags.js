@@ -402,6 +402,7 @@ const registerTFGPlacedFeatures = (event) => {
 const registerTFGEntityTypeTags = (event) => {
 
 	registerTFGOverworldEntityTypeTags(event)
+	registerTFGBeneathEntityTypeTags(event)
 	registerTFGMoonEntityTypeTags(event)
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)

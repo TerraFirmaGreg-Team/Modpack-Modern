@@ -94,10 +94,6 @@
 			"energy_budget": 0.15,
 			"charge": 0.7
 		},
-		"species:cliff_hanger": {
-			"energy_budget": 0.3,
-			"charge": 0.3
-		},
 		"ad_astra:sulfur_creeper": {
 			"energy_budget": 0.15,
 			"charge": 0.6
@@ -189,12 +185,6 @@
 			},
 			{
 				"type": "primitive_creatures:golem_2",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "species:cliff_hanger",
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
