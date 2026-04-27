@@ -203,21 +203,6 @@
 							"if_true": {
 								"type": "tfg:noise3d_threshold",
 								"noise": "tfg:nether_salt_streams",
-								"min_threshold": -0.04,
-								"max_threshold": 0.04
-							},
-							"then_run": {
-								"type": "minecraft:block",
-								"result_state": {
-									"Name": "tfc:fluid/salt_water"
-								}
-							}
-						},
-						{
-							"type": "minecraft:condition",
-							"if_true": {
-								"type": "tfg:noise3d_threshold",
-								"noise": "tfg:nether_salt_streams",
 								"min_threshold": -0.06,
 								"max_threshold": 0.06
 							},
