@@ -1,5 +1,14 @@
 ﻿"use strict";
 
+const forEachTFGRopeLadderVariant = (callback) => {
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.WAB_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.AD_ASTRA_WOOD.forEach(wood => callback(`tfg:wood/rope_ladder/${wood.name}`))
+	global.BENEATH_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
+	global.AFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
+	global.TFC_WOOD_TYPES.forEach(wood => callback(`tfg:wood/rope_ladder/${wood}`))
+}
+
 const registerTFGItemTags = (event) => {
 
 	registerTFGTrimItemTags(event)
@@ -20,6 +29,15 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 	registerTFGMaterialHiddenPipesTags(event)
+	
+	// Curios slots for wearables
+	event.add("curios:face", "tfg:snorkel")
+	event.add("curios:clothes_socks", "tfg:flippers")
+	event.add("curios:clothes_socks", "tfg:snowshoes")
+
+	forEachTFGRopeLadderVariant(ropeLadder => {
+		event.add('tfg:rope_ladders', ropeLadder)
+	})
 
 	// Disable auto generation for Vintage Recipes
 
@@ -254,6 +272,11 @@ const registerTFGBlockTags = (event) => {
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:reflector')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_aluminium_plated_steel')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:machine_casing_power_casing')
+
+	forEachTFGRopeLadderVariant(ropeLadder => {
+		event.add('tfg:rope_ladders', ropeLadder)
+		event.add('minecraft:mineable/axe', ropeLadder)
+	})
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')

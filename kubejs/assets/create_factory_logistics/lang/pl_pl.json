@@ -19,6 +19,7 @@
   "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "Umieść ciecz do monitorowania",
   "create.item_attributes.is_fluid": "jest %1$s",
   "create.item_attributes.is_fluid.inverted": "nie jest %1$s",
-  "create.item_attributes.is_fluid_no_nbt": "jest %1$s (brak NBT)"
+  "create.item_attributes.is_fluid_no_nbt": "jest %1$s (brak NBT)",
+  "create.item_attributes.is_fluid_no_nbt.inverted": "jest %1$s (brak NBT)"
 }
 
