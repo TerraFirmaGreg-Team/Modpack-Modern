@@ -83,4 +83,11 @@ function registerCreateFluidLogisticsRecipes(event) {
 	}).id("fluidlogistics:mechanical_crafting/hand_pointer")
 
 
+	event.recipes.shapeless(
+		Item.of('create:filter',
+			'{Blacklist:0b,Items:{Items:[{Count:1b,Slot:0,id:"fluidlogistics:compressed_storage_tank"}],Size:18},RespectNBT:0b}').withName([Text.red("Use this filter to categorize fluids in the Stock Ticker")]),
+		['create:filter', 'minecraft:water_bucket'])
+		.id('tfg:stock_ticker_fluid_filter')
+		.keepIngredient('minecraft:water_bucket')
+	
 }

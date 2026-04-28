@@ -351,7 +351,7 @@
 			y: -1.0d
 		}
 		{
-			can_repeat: true
+			can_repeat: false
 			dependencies: [
 				"341E2F290344BEEE"
 				"487D05818B3E9D19"
@@ -359,43 +359,12 @@
 			description: ["{quests.create_logistics.stock_ticker_fluid_filter.desc}"]
 			icon: "create:filter"
 			id: "5B6D7F0BA07F2C17"
-			ignore_reward_blocking: true
 			optional: true
-			rewards: [{
-				id: "4722E6D4CEB86BE1"
-				item: {
-					Count: 1
-					id: "create:filter"
-					tag: {
-						Blacklist: 0b
-						Items: {
-							Items: [{
-								Count: 1b
-								Slot: 0
-								id: "fluidlogistics:compressed_storage_tank"
-								tag: {
-									Identity: [I;
-										-322009974
-										1906787320
-										-1470671005
-										1051643458
-									]
-								}
-							}]
-							Size: 18
-						}
-						RespectNBT: 0b
-					}
-				}
-				type: "item"
-			}]
 			subtitle: "{quests.create_logistics.stock_ticker_fluid_filter.subtitle}"
 			tasks: [{
-				consume_items: true
-				id: "5D3692ED997C42BF"
-				item: "create:filter"
-				match_nbt: false
-				type: "item"
+				id: "594061F63C2404EB"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
 			}]
 			title: "{quests.create_logistics.stock_ticker_fluid_filter.title}"
 			x: 5.0d

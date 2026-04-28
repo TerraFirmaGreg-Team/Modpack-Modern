@@ -3830,7 +3830,7 @@
 	"quests.create_logistics.bottler.desc": "The &3Fluid Packager&r is the fluid equivalent of the packager. Place it next to any kind of fluid container (Fluid Tank, Drums, machines, and so on), and put a &3Frogport&r on top of the &3Fluid Packager&r, and the rest will work as you'd expect! The &3Fluid Packager&r at the destination can similarly push directly into fluid containers, no pump needed!",
 	"quests.create_logistics.stock_ticker_fluid_filter.title": "Fluid Categories",
 	"quests.create_logistics.stock_ticker_fluid_filter.subtitle": "Organize your fluids",
-	"quests.create_logistics.stock_ticker_fluid_filter.desc": "Want to seperate your fluids from items in the &3Stock Ticker&r?\nSubmit a &3List Filter&r to this quest. The reward is a filter that, when placed in the &3Stock Ticker&r will put all your fluids into one category to keep everything nice and neat.\n\n&oThis filter is only available as a quest due to technical limitations of how fluids are displayed in the stock ticker. This quest can be completed as many times as neeed&r",
+	"quests.create_logistics.stock_ticker_fluid_filter.desc": "Want to seperate your fluids from items in the &3Stock Ticker&r?\n\nCraft a &3List Filter&r with a &3Water Bucket&r to get filter that, when placed in the &3Stock Ticker&r will put all your fluids into one category to keep everything nice and neat.\n\n&oThis filter is only available through a crafting recipe due to technical limitations of how fluids are displayed in the stock ticker.&r",
 
 	"quests.create_logistics.hand_pointer.title": "Tight on space?",
 	"quests.create_logistics.hand_pointer.subtitle": "Saving on precious space",
