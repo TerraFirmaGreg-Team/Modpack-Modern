@@ -640,6 +640,71 @@
 			{
 				"type": "minecraft:condition",
 				"if_true": {
+					"type": "minecraft:not",
+					"invert": {
+						"type": "minecraft:y_above",
+						"add_stone_depth": false,
+						"anchor": {
+							"absolute": 35
+						},
+						"surface_depth_multiplier": 0
+					}
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:stone_depth",
+						"offset": 0,
+						"surface_type": "floor",
+						"add_surface_depth": false,
+						"secondary_depth_range": 0
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "tfg:noise3d_threshold",
+									"noise": "tfg:nether_cracks",
+									"min_threshold": -1,
+									"max_threshold": 1
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:lava"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "tfg:noise3d_threshold",
+									"noise": "tfg:nether_cracks",
+									"min_threshold": -2,
+									"max_threshold": 2
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:magma_block"
+									}
+								}
+							},
+							{
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "minecraft:blackstone"
+								}
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
 						"tfg:nether/basalt_deltas"
