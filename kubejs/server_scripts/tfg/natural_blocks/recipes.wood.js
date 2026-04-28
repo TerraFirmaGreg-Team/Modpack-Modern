@@ -567,7 +567,7 @@ function registerTFGWoodenRecipes(event) {
 				L: lumber
 			}).id(`tfg:shaped/${name}_rope_ladder`);
 
-			event.shaped(`32x ${rope_ladder}`, [
+			event.shaped(`16x ${rope_ladder}`, [
 				' L ',
 				'RL ',
 				' L '
