@@ -23,11 +23,18 @@
                         "ambientsounds:cave.cave-water2",
                         "ambientsounds:cave.cave-water3",
                         "ambientsounds:cave.cave-water4",
-                        "ambientsounds:cave.cave-water5",
-                        "ambientsounds:cave.cave-lush"
+                        "ambientsounds:cave.cave-water5"
                     ],
                     "volume": 0.25,
-                    "transition": 200
+                    "length": {
+                        "min": 1000,
+                        "max": 1500
+                    },
+                    "pause": {
+                        "min": 100,
+                        "max": 400
+                    },
+                    "transition": 100
                 }
             ]
         }

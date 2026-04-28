@@ -17,7 +17,8 @@
 			"name": "frog",
 			"category": "animal",
 			"files": [
-				"ambientsounds:animals.frog-cave1"
+				"ambientsounds:animals.frog-cave1",
+				"ambientsounds:cave.cave-lush"
 			],
 			"volume": 0.3,
 			"length": {
@@ -27,7 +28,8 @@
 			"pause": {
 				"min": 100,
 				"max": 550
-			}
+			},
+			"transition": 100
 		}
 	]
 }
