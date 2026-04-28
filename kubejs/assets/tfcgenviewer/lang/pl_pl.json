@@ -1,4 +1,5 @@
 {
+  "button.tfcgenviewer.preview_world": "Podgląd świata",
   "button.tfcgenviewer.apply": "Zastosuj",
   "button.tfcgenviewer.save": "Zapisz",
   "button.tfcgenviewer.current_seed": "Obecne ziarno: %s",
@@ -22,6 +23,7 @@
   "tfcgenviewer.preview_world.preview_pos": "(%s,%s)",
   "tfcgenviewer.preview_world.no_tooltip_available": "Brak dostępnych podpowiedzi",
   "tfcgenviewer.rock_editor.title": "Edytuj skały",
+  "tfcgenviewer.rock_editor.graph": "Wykres online",
   "tfcgenviewer.rock_editor.validate": "Weryfikuj",
   "tfcgenviewer.rock_editor.validate.fail": "Nie udało się zweryfikować: %s",
   "tfcgenviewer.rock_editor.validate.success": "Walidacja zakończona sukcesem",
@@ -93,6 +95,8 @@
   "tfcgenviewer.biome_altitude.high.tooltip": "Góry",
   "tfcgenviewer.biome_altitude.mountain": "Góra",
   "tfcgenviewer.biome_altitude.mountain.tooltip": "Góry",
+  "tfcgenviewer.spawn.border": "Granica spawnu",
+  "tfcgenviewer.spawn.reticule": "Środek spawnu",
   "tfcgenviewer.feature.coral_reef": "Rafa koralowa",
   "tfcgenviewer.key.open_viewer": "Otwórz przeglądarkę świata",
   "tfcgenviewer.commands.set.success": "Ustaw %s na %s",

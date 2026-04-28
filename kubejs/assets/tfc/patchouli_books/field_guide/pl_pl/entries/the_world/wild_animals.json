@@ -218,7 +218,7 @@
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
+			"name": "Leming",
 			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
 		},
 		{
@@ -313,7 +313,7 @@
 			"type": "patchouli:text",
 			"anchor": "shellfish",
 			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish"
+			"title": "Skorupiaki"
 		},
 		{
 			"type": "patchouli:entity",
