@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aged Alcohol",
+			"title": "Dojrzały alkohol",
 			"text": "$(thing)Aged Alcohols$() are prepared by ageing normal alcohol, which itself is made by leaving various fruits, flours, or other ingredients in a barrel with water. As a bonus, they effect your speech in chat!",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
 		},
