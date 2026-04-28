@@ -226,11 +226,10 @@ const registerRailWaysRecipes = (event) => {
 		A: 'create:portable_fluid_interface',
 		B: 'create:railway_casing',
 		C: '#forge:tools/wrenches',
-		//D: 'create_factory_logistics:fluid_mechanism',
 	}).id('tfg:railways/shaped/portable_fuel_interface')
 
 	event.recipes.gtceu.assembler('tfg:railways/portable_fuel_interface')
-		.itemInputs('create:portable_fluid_interface', 'create:railway_casing')//, 'create_factory_logistics:fluid_mechanism')
+		.itemInputs('create:portable_fluid_interface', 'create:railway_casing')
 		.circuit(1)
 		.itemOutputs('railways:portable_fuel_interface')
 		.duration(200)

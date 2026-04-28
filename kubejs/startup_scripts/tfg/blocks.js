@@ -57,15 +57,4 @@ const registerTFGBlocks = (event) => {
 			.particle('minecraft:bubble_column_up'))
 		.emitDelay(5);
 	
-	/*// Factory Logistics -> Fluid Logistics Migration
-	event.create('create_factory_logistics:factory_fluid_gauge')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-	
-	event.create('create_factory_logistics:jar_packager')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.requiresTool(false)
-		.textureAll('tfg:item/deprecated')
-		*/
 }
