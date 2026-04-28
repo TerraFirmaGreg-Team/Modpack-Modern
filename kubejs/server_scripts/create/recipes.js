@@ -1784,6 +1784,14 @@ const registerCreateRecipes = (event) => {
 		E: 'create:electron_tube'
 	}).addMaterialInfo().id('tfg:create/shaped/packager')
 
+		event.recipes.gtceu.assembler('create:packager')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:copper_casing', 'create:bound_cardboard_block', 'create:electron_tube')
+		.itemOutputs('create:packager')
+		.circuit(20)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.addMaterialInfo(true)
+
 	event.shaped('create:item_hatch', [
 		'A',
 		'B',

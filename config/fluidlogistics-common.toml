@@ -1,0 +1,8 @@
+#The maximum amount of fluid (in mB) a compressed tank can hold
+#Range: 1000 ~ 100000
+compressedTankCapacity = 10000
+#The maximum amount of fluid (in mB) a fluid package can hold
+#The effective maximum is limited by both 90000 mB and 9x the configured compressed tank capacity
+#Range: 1 ~ 90000
+fluidPackageCapacity = 10000
+
