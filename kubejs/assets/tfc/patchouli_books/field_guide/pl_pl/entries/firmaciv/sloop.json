@@ -64,7 +64,7 @@
           "a": "firmaciv:watercraft_frame_flat"
         }
       },
-      "name": "Sloop Scaffolding",
+      "name": "Szkielet sloopa",
       "text": "Shipwright's Scaffolding arranged in order to construct a sloop hull.",
       "enable_visualize": true
     },
@@ -109,7 +109,7 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=3]"
         }
       },
-      "name": "Sloop Scaffolding",
+      "name": "Szkielet sloopa",
       "text": "Four planks have been added to each scaffold.",
       "enable_visualize": true
     },
@@ -150,7 +150,7 @@
           "a": "firmaciv:wood/watercraft_frame/flat/oak[frame_processed=7]"
         }
       },
-      "name": "Sloop Scaffolding",
+      "name": "Szkielet sloopa",
       "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
       "enable_visualize": true
     },
@@ -193,7 +193,7 @@
           "R": "alekiships:cleat[facing=south]"
         }
       },
-      "name": "Sloop Scaffolding",
+      "name": "Szkielet sloopa",
       "text": "Finally, add the cleats to the hull. These are smithed from wrought iron double ingots.",
       "enable_visualize": true
     },
