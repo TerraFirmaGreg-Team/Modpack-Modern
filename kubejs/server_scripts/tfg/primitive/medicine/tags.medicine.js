@@ -28,6 +28,10 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:medicine', 'tfg:instant_health_salvo')
 	event.add('tfg:medicine', 'tfg:paracetamol_pill')
 	event.add('tfg:medicine', 'tfg:rad_away_pill')
+	event.add('tfg:medicine', 'tfg:mining_powder')
+	event.add('tfg:medicine', 'tfg:acrobat_powder')
+	event.add('tfg:medicine', 'tfg:recovery_powder')
+	event.add('tfg:medicine', 'tfg:combat_powder')
 
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/blood_lily')
 	event.add('tfg:antipoison_ingredients', 'tfc:plant/pistia')
@@ -82,12 +86,26 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/meads_milkweed')
 	event.add('tfg:fire_resistance_ingredients', 'firmalife:plant/bay_laurel')
 	event.add('tfg:fire_resistance_ingredients', 'beneath:ghost_pepper')
+	event.add('tfg:fire_resistance_ingredients', 'tfg:plant/flame_vine')
 
 	event.add('tfg:resistance_ingredients', 'tfc:plant/hibiscus')
 	event.add('tfg:resistance_ingredients', 'gtceu:calcium_dust')
 
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/foxglove')
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/artists_conk')
+
+	event.add('tfg:strength_ingredients', 'tfg:plant/prickly_pear')
+	event.add('tfg:strength_ingredients', 'tfg:plant/prickly_pear_purple')
+	event.add('tfg:strength_ingredients', 'tfc:powder/sulfur')
+
+	event.add('tfg:jump_boost_ingredients', 'tfg:plant/penwortel')
+	event.add('tfg:jump_boost_ingredients', 'tfg:plant/qantu')
+	event.add('tfg:jump_boost_ingredients', 'tfc:plant/silver_spurflower')
+	event.add('tfg:jump_boost_ingredients', 'tfc:plant/silver_spurflower')
+
+	event.add('tfg:slow_fall_ingredients', 'tfc:plant/reindeer_lichen')
+	event.add('tfg:slow_fall_ingredients', 'tfc:plant/spanish_moss')
+	event.add('tfg:slow_fall_ingredients', 'tfg:plant/mountain_hullwort')
 
 	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
