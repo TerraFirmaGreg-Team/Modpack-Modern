@@ -12304,6 +12304,68 @@
             ]
         },
         {
+            "pakku_id": "m70PcuULri7rPTAL",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "realm-rpg-fallen-adventurers",
+                "modrinth": "realm-rpg-fallen-adventurers"
+            },
+            "name": {
+                "curseforge": "Realm RPG: Fallen Adventurers",
+                "modrinth": "Realm RPG: Fallen Adventurers"
+            },
+            "id": {
+                "curseforge": "916895",
+                "modrinth": "tu54PMAb"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "realmrpg_skeletons-1.1.0-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6058/824/realmrpg_skeletons-1.1.0-forge-1.20.1.jar",
+                    "id": "6058824",
+                    "parent_id": "916895",
+                    "hashes": {
+                        "sha1": "b3e2385a5df9a24b12089b76f97a9e9337956255",
+                        "md5": "39a9a0fbe5cba2765f46090dc0c245b8"
+                    },
+                    "required_dependencies": [],
+                    "size": 652022,
+                    "date_published": "2025-01-06T08:14:00.100Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "realmrpg_skeletons-1.1.0-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/tu54PMAb/versions/7nBJQPCM/realmrpg_skeletons-1.1.0-forge-1.20.1.jar",
+                    "id": "7nBJQPCM",
+                    "parent_id": "tu54PMAb",
+                    "hashes": {
+                        "sha512": "e2b8a972460366f95df207f0534888426a28dd49ef237f34cc103ebe265e31882d86f6d88e8553527a512dfc91cafdd05ba27ed2e32dc13ae48f10bc535017c2",
+                        "sha1": "b3e2385a5df9a24b12089b76f97a9e9337956255"
+                    },
+                    "required_dependencies": [],
+                    "size": 652022,
+                    "date_published": "2025-01-06T08:14:29.096299Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "zQAe1eid9EE5PMwK",
             "type": "MOD",
             "side": "BOTH",
