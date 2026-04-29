@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.package_filter.title}"
-			x: -3.5d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
@@ -85,7 +85,7 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.frogport.title}"
-			x: -3.5d
+			x: -2.5d
 			y: -2.5d
 		}
 		{
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.postbox.title}"
-			x: -3.5d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -155,8 +155,8 @@
 				}
 			]
 			title: "{quests.create_logistics.rose_quartz_lens.title}"
-			x: 5.0d
-			y: 2.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["09D5BD00E3308E76"]
@@ -171,7 +171,7 @@
 			}]
 			title: "{quests.create_logistics.rose_quartz.title}"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3137824EEA1E4D9B"]
@@ -190,8 +190,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.cold_rose_quartz.title}"
-			x: 2.5d
-			y: 2.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -209,7 +209,7 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.stock_link.title}"
-			x: 5.0d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -235,7 +235,7 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.stock_ticker.title}"
-			x: 8.0d
+			x: 5.0d
 			y: -1.0d
 		}
 		{
@@ -254,8 +254,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.redstone_requester.title}"
-			x: 7.5d
-			y: -3.5d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -272,6 +272,7 @@
 				"{@pagebreak}"
 				"{quests.create_logistics.factory_gauge.desc.4}"
 			]
+			hide_until_deps_complete: false
 			id: "2262F1FD4EAB777F"
 			shape: "gear"
 			size: 3.0d
@@ -284,13 +285,13 @@
 				}
 				{
 					id: "38DC47D44D9741FC"
-					item: "create_factory_logistics:factory_fluid_gauge"
+					item: "create:factory_gauge"
 					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{quests.create_logistics.factory_gauge.title}"
-			x: 5.0d
+			x: 8.0d
 			y: -4.0d
 		}
 		{
@@ -309,8 +310,8 @@
 				type: "item"
 			}]
 			title: "{quests.create_logistics.tablecloths.title}"
-			x: 8.0d
-			y: 1.5d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["09D5BD00E3308E76"]
@@ -320,12 +321,54 @@
 			subtitle: "{quests.create_logistics.bottler.subtitle}"
 			tasks: [{
 				id: "3D6CCC6C3853CD9C"
-				item: "create_factory_logistics:jar_packager"
+				item: "fluidlogistics:fluid_packager"
 				type: "item"
 			}]
 			title: "{quests.create_logistics.bottler.title}"
 			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09D5BD00E3308E76"]
+			description: ["{quests.create_logistics.hand_pointer.desc}"]
+			id: "419D38767D905E59"
+			optional: true
+			subtitle: "{quests.create_logistics.hand_pointer.subtitle}"
+			tasks: [
+				{
+					id: "2C4580FDBFEED60E"
+					item: "fluidlogistics:hand_pointer"
+					type: "item"
+				}
+				{
+					id: "203135D4BED82079"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
+			title: "{quests.create_logistics.hand_pointer.title}"
+			x: 2.5d
 			y: -1.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"341E2F290344BEEE"
+				"487D05818B3E9D19"
+			]
+			description: ["{quests.create_logistics.stock_ticker_fluid_filter.desc}"]
+			icon: "create:filter"
+			id: "5B6D7F0BA07F2C17"
+			optional: true
+			subtitle: "{quests.create_logistics.stock_ticker_fluid_filter.subtitle}"
+			tasks: [{
+				id: "594061F63C2404EB"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.create_logistics.stock_ticker_fluid_filter.title}"
+			x: 5.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["{quests.create_logistics.subtitle}"]
