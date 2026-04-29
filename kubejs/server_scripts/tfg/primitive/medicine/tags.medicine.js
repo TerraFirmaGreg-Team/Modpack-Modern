@@ -101,7 +101,6 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:jump_boost_ingredients', 'tfg:plant/penwortel')
 	event.add('tfg:jump_boost_ingredients', 'tfg:plant/qantu')
 	event.add('tfg:jump_boost_ingredients', 'tfc:plant/silver_spurflower')
-	event.add('tfg:jump_boost_ingredients', 'tfc:plant/silver_spurflower')
 
 	event.add('tfg:slow_fall_ingredients', 'tfc:plant/reindeer_lichen')
 	event.add('tfg:slow_fall_ingredients', 'tfc:plant/spanish_moss')
