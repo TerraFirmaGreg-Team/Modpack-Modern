@@ -451,7 +451,9 @@ const registerTooltips = (event) => {
 		};
 	});
 
-	//#endregion
+	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
+	});
 
 	// Wearables
 	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {

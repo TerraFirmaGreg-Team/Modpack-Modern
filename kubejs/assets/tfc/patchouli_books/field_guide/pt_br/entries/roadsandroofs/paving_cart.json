@@ -11,7 +11,7 @@
       "type": "patchouli:image",
       "title": "Paving Cart",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
@@ -19,7 +19,7 @@
       "type": "patchouli:image",
       "title": "Controle de Largura",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
       "text": "O carrinho permite ajustar a largura do caminho na interface."
@@ -28,7 +28,7 @@
       "type": "patchouli:image",
       "title": "Largura do Caminho",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
@@ -36,7 +36,7 @@
       "type": "patchouli:image",
       "title": "Botão Aleatório",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
       "text": "O carrinho possui um modo que aplica materiais em um padrão aleatório."
@@ -45,7 +45,7 @@
       "type": "patchouli:image",
       "title": "Materiais Aleatórios",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }
