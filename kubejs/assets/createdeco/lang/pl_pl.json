@@ -50,6 +50,8 @@
 	"block.createdeco.industrial_iron_catwalk_railing": "Stalowa poręcz",
 	"block.createdeco.industrial_iron_coinstack": "Stos monet ze stali",
 	"block.createdeco.industrial_iron_door": "Stalowe drzwi",
+	"block.createdeco.industrial_iron_facade": "Stalowa fasada",
+	"block.createdeco.industrial_iron_hull": "Stalowy kadłub pociągu",
 	"block.createdeco.industrial_iron_ladder": "Stalowa drabina",
 	"block.createdeco.industrial_iron_support": "Stalowa podpora",
 	"block.createdeco.industrial_iron_trapdoor": "Stalowa klapa",
@@ -90,8 +92,11 @@
 	"block.createdeco.tiled_red_bricks": "Kafelki z czerwonych cegieł",
 	"block.createdeco.yellow_shipping_container": "Żółty kontener",
 	"block.createdeco.zinc_catwalk": "Cynowy pomost",
+	"block.createdeco.zinc_door": "Cynkowe drzwi",
 	"block.createdeco.zinc_facade": "Cynkowa fasada",
+	"block.createdeco.zinc_hull": "Cynkowy kadłub pociągu",
 	"block.createdeco.zinc_ladder": "Cynkowa drabinka",
+	"block.createdeco.zinc_support": "Podpora z cynku",
 	"block.createdeco.zinc_trapdoor": "Cynowa klapa",
 	"block.createdeco.zinc_window": "Cynkowe okno",
 	"block.createdeco.zinc_window_pane": "Cynkowa szyba",
@@ -104,5 +109,6 @@
 	"item.createdeco.industrial_iron_coin": "Stalowa moneta",
 	"item.createdeco.industrial_iron_coinstack": "Stos monet ze stali",
 	"item.createdeco.iron_coin": "Moneta z kutego żelaza",
+	"item.createdeco.zinc_coin": "Moneta z cynku",
 	"item.createdeco.zinc_sheet": "Cynkowa płyta"
 }
