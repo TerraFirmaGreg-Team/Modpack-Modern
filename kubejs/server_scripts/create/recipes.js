@@ -1784,7 +1784,6 @@ const registerCreateRecipes = (event) => {
 		E: 'create:electron_tube'
 	}).addMaterialInfo().id('tfg:create/shaped/packager')
 
-
 	event.shaped('create:item_hatch', [
 		'A',
 		'B',

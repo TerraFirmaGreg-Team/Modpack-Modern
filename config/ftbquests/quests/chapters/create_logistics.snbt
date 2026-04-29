@@ -277,19 +277,11 @@
 			shape: "gear"
 			size: 3.0d
 			subtitle: "{quests.create_logistics.factory_gauge.subtitle}"
-			tasks: [
-				{
-					id: "05AEAFF6BC6C21BE"
-					item: "create:factory_gauge"
-					type: "item"
-				}
-				{
-					id: "38DC47D44D9741FC"
-					item: "create:factory_gauge"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "05AEAFF6BC6C21BE"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
 			title: "{quests.create_logistics.factory_gauge.title}"
 			x: 8.0d
 			y: -4.0d
