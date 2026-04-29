@@ -32,6 +32,7 @@
 - Fixed the hollow shell to flux crafting table recipe so it always consumes the shell @Pyritie
 - Fixed the amount of health that Snatchers have @Pyritie
 - Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
+- Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026
