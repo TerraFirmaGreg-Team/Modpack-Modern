@@ -56,7 +56,7 @@
 			}
 		},
 		{
-			"weight": 5,
+			"weight": 30,
 			"element": {
 				"element_type": "lithostitched:delegating",
 				"delegate": {
@@ -126,6 +126,24 @@
 			"weight": 24,
 			"element": {
 				"location": "tfg:mineshaft/ladder/ladder_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight":20,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_3",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/ladder/ladder_4",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

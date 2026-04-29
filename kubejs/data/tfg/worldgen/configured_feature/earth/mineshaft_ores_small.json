@@ -4,8 +4,8 @@
 		"horizontal_range": {
             "type": "minecraft:uniform",
             "value": {
-                "max_inclusive": 16,
-                "min_inclusive": 10
+                "max_inclusive": 20,
+                "min_inclusive": 16
             }
         },
 		"vertical_range": {

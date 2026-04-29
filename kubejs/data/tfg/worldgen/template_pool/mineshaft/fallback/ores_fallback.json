@@ -1,11 +1,11 @@
 {
-	"name": "tfg:mineshaft/ores_small",
-	"fallback": "tfg:mineshaft/fallback/ores_small_fallback",
+	"name": "tfg:mineshaft/fallback/ores_fallback",
+	"fallback": "minecraft:empty",
 	"elements": [
 		{
 			"element": {
 				"element_type": "minecraft:feature_pool_element",
-				"feature": "tfg:earth/mineshaft_ores_small",
+				"feature": "tfg:earth/mineshaft_ores",
 				"projection": "rigid"
 			},
 			"weight": 2

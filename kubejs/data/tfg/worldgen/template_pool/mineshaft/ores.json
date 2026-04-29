@@ -1,6 +1,6 @@
 {
 	"name": "tfg:mineshaft/ores",
-	"fallback": "minecraft:empty",
+	"fallback": "tfg:mineshaft/fallback/ores_fallback",
 	"elements": [
 		{
 			"element": {

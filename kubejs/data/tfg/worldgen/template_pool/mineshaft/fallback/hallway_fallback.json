@@ -21,7 +21,7 @@
 			}
 		},
 		{
-			"weight": 20,
+			"weight": 90,
 			"element": {
 				"location": "tfg:mineshaft/hallway/end_3",
 				"processors": "tfg:mineshaft/support_fixer",
