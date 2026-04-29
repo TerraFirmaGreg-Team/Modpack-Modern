@@ -5,208 +5,1109 @@
 	group: "31B01EAD21CA863A"
 	icon: "computercraft:computer_advanced"
 	id: "1A6D6B70EC13DDC6"
+	images: [
+		{
+			height: 3.0d
+			image: "ad_astra:textures/environment/moon.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			click: "https://tweaked.cc/"
+			height: 1.0d
+			hover: ["ComputerCraft Wiki"]
+			image: "computercraft:item/printed_book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			click: "https://docs.advanced-peripherals.de/latest/"
+			height: 1.0d
+			hover: ["Advanced Peripherals Wiki"]
+			image: "advancedperipherals:item/book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 7.0d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["26394C1290D70AB6"]
-			description: ["To continue the quest line, you need to craft any of the computers."]
-			icon: "computercraft:computer_advanced"
-			id: "591C5E26EE7466F3"
-			shape: "gear"
-			size: 2.0d
+			description: [
+				"Welcome to ComputerCraft! Here you will be building and programming computers using Lua, a real life language, renowned for being beginner-friendly."
+				""
+				"On its own, the &3basic computer&r is little more than an advanced logic gate and item sorter, but that changes quickly through the use of peripherals! This chapter will point out what you can do with this newfangled technology."
+				""
+				"Since Lua is a coding language used in real life, you can look up any tutorial you wish to get familiar with its concepts! "
+				"For more info on ComputerCraft in particular, the images of books in this chapter to links to wikis."
+			]
+			id: "5F2D9F4908401D0D"
+			subtitle: "You've met Luna. Prepare for Lua"
 			tasks: [{
-				id: "6BC9F3064F29B986"
-				title: "CC: Tweaked"
-				type: "checkmark"
+				id: "2E906826F6FDAF5F"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			title: "Welcome to ComputerCraft!"
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: [
+				"These function almost identical to their basic counterparts but..."
+				"- &3Computers,&r &3pocket computers&r, and &3turtles&r can run multiple programs at once using the \"&dmultishell&r\" library"
+				"- &3Turtles&r have a bigger fuel tank"
+				"- All 4 support color! &cW&6o&ew&ai&9e&d!"
+			]
+			id: "791B05ACA5FD85FC"
+			subtitle: "Better than ever!"
+			tasks: [
+				{
+					id: "065C2D0A373063AB"
+					item: "computercraft:computer_advanced"
+					type: "item"
+				}
+				{
+					id: "6694EF08DED64B71"
+					item: "computercraft:turtle_advanced"
+					type: "item"
+				}
+				{
+					id: "6BEF24FE2926ACF0"
+					item: "computercraft:pocket_computer_advanced"
+					type: "item"
+				}
+				{
+					id: "6F32EA6613583DD1"
+					item: "computercraft:monitor_advanced"
+					type: "item"
+				}
+			]
+			title: "Advanced Variants"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: [
+				"A portable computer than can be used from your hotbar or offhand! "
+				"It only has 1 slot for peripherals, accessed from the \"back\", but you can use the \"&eequip()&r\" and \"&eunequip()&r\" functions from the \"&dpocket&r\" library if you're feeling clever."
+				""
+				"Holding in your offhand renders the terminal like a &3vanilla map&r."
+			]
+			id: "4CD956A0E923C1B6"
+			subtitle: "Ipad Baby"
+			tasks: [{
+				id: "74F8BAFCA9F2881B"
+				item: "computercraft:pocket_computer_normal"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: [
+				"&3Turtles&r are computers that can move, mine, build, fight, pick up items, and see! They are incredibly powerful, especially since they have 2 slots for peripherals, accessed on the \"left\" and \"right\" sides."
+				""
+				"&3Turtles&r can move forward, backward, up, and down at the cost of furnace fuel, and can turn left and right for free."
+				""
+				"Their ability to place blocks also gives them a limited ability to simulate right clicks. It's rather inconsistent, but don't let that stop you from experimenting!"
+				""
+				"You can give them a nametag with \"&dos.&esetComputerLabel()&r\", or even color them with dye in a crafting table!"
+			]
+			hide_dependent_lines: true
+			id: "3C6A84E06D46CD0F"
+			subtitle: "Asimov would be concerned"
+			tasks: [{
+				id: "5E8B93E5E8506DEF"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"Monitors are used to display text and symbols! "
+				""
+				"It uses a \"cursor\" system that's hidden by default. You can use \"&esetCursorBlink()&r\" to reveal it, and use \"&esetCursorPos()&r\" from the \"&dmonitor&r\" library to move it! The top-left corner of the screen is defined as (1, 1)."
+				""
+				"You can also use it as a touch screen using the \"&9monitor_touch&r\" event, and you can draw a pixel by setting the background color of your text, then writing an empty space."
+				""
+				"They can be connected together to form pretty much any size rectangle you'd like!"
+			]
+			id: "0B29A2BF94C63336"
+			subtitle: "Look ma! I'm on TV!"
+			tasks: [{
+				id: "616B08AEEACAD536"
+				item: "computercraft:monitor_normal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"It's a &3speaker&r! What more could you want?"
+				"It can plany any noteblock sound at any pitch, and play most game sounds."
+				""
+				"And if you're willing to go down a rabbit hole and learn about audio sampling and such, you can use it to play completely custom music and sounds."
+			]
+			id: "1BBFCD620C85DB80"
+			subtitle: " Flutes and trombones and saxes from beyond"
+			tasks: [{
+				id: "7DD0AB6A9A957F8B"
+				item: "computercraft:speaker"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"&3Drisk drives&r and &3floppy disks&r serve as both an auxilary storage for data, as well as a way to automatically copy data to new computers. If you wanna make a self-replicating &3turtle&r army, you'll need these!"
+				""
+				"&3Floppy disks&r can hold up to 125 kilobytes of data each."
+			]
+			id: "5B1A8D8CC62FC5B1"
+			subtitle: "Why is the save icon a vending machine?"
+			tasks: [
+				{
+					id: "09F3121204F7195A"
+					item: "computercraft:disk_drive"
+					type: "item"
+				}
+				{
+					id: "2691C1EABAAF0305"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:disks)"
+						}
+					}
+					title: "Any #computercraft:disks"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"Yeah! &3Computers&r can be wrapped as peripherals by other &3computers&r!"
+				""
+				"You can't do that much though. You can just get the ID and label, and turn it on and off."
+			]
+			id: "21EAABD0D38C744D"
+			subtitle: "How recursive!"
+			tasks: [{
+				id: "3079507A3939B9C7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(computercraft:computer_normal)item(computercraft:computer_advanced))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Computers"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"&3Wireless&r and &3ender modems&r are essentially upgraded &3redstone links&r, able to transmit data over long distances, and tell how far apart computers are."
+				""
+				"&3Wireless modems&r have a limited range that gets longer the higher up in the world its placed. The range is reduced while raining though."
+				""
+				"&3Ender modems&r have unlimited range and can even transmit data across dimensions, making it very useful for interplanetary logistics."
+				""
+				"You can use either the \"&drednet&r\" or \"&dmodem&r\" library for sending messages. &dRednet&r is much easier to set up at the cost of finer control, and &dmodem&r is the opposite."
+				""
+				"You can transmit any kind of data except for functions and metatables."
+				"This is a good thing."
+			]
+			id: "029B6ECECAE729D8"
+			subtitle: "RCE Machines"
+			tasks: [{
+				id: "681E084FFAE1538B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(computercraft:wireless_modem_normal)item(computercraft:wireless_modem_advanced))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Wireless and Ender Modems"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"&3Wired modems&r allow you expand the number of peripherals a &3computer&r can connect to! No longer are you limited to 6 faces!"
+				""
+				"Using these, it's only natural you try to make some kind of AE2-like system, since you can use it to wrap &3inventories&r and &3fluid tanks&r as peripherals and move your things about the place."
+				""
+				"Oh yeah, and it can do everything &3wireless&r and &3ender modems&r can do, but only on the wired network its connected to."
+			]
+			id: "47D9E37D0E20B6F5"
+			subtitle: "AE2 is crying in the corner"
+			tasks: [
+				{
+					id: "340F93D39415017C"
+					item: "computercraft:wired_modem"
+					type: "item"
+				}
+				{
+					id: "77520C95616AC4DF"
+					item: "computercraft:cable"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"It prints text onto &3paper&r! You can set the color of the text by inserting dye items, and you need to manually start and eject pages with the \"&enewPage()&r\" and \"&eendPage()&r\" functions."
+				""
+				"You can also use &3string&r or &3yarn&r to bind the printed pages into a pamplet, or add &3leather&r to the mix to make a book!"
+			]
+			id: "7DC9A7FA540C670C"
+			subtitle: "No laser printers"
+			tasks: [{
+				id: "277E212F93FC34B5"
+				item: "computercraft:printer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["This one just extends the \"&dredstone&r\" library, allowing you to set and get signals by this block as if it was a whole computer!"]
+			id: "08C8C4E751DF5CBA"
+			subtitle: "When 6 faces aren't enough"
+			tasks: [{
+				id: "754E959DC88029F6"
+				item: "computercraft:redstone_relay"
+				type: "item"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "0BFFB20573B2A9A5"
-			tasks: [{
-				id: "4A52931C6E78FFC2"
-				item: "computercraft:computer_normal"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "249A6189A9334B14"
-			tasks: [{
-				id: "28B5BBAAA33CDEDA"
-				item: "computercraft:computer_advanced"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["249A6189A9334B14"]
-			id: "2A507BD15FBA08FC"
-			tasks: [{
-				id: "73DA9F99EF913F3D"
-				item: "computercraft:turtle_advanced"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["0BFFB20573B2A9A5"]
-			id: "4C3A1901BA40FB24"
-			tasks: [{
-				id: "64B16F8F192CEE23"
-				item: "computercraft:turtle_normal"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3Environment Detector&r is a versitile peripheral! Almost like the mod author crammed a bunch of random features into it because they didn't fit anywhere else."
+				""
+				"This thing can read various stats about the local light level, the biome and dimension its in, the phase of the moon, the current weather, the time of day, and the nearby entities."
+				""
+				"If you haven't solved animal hubsandry yet, this should help a bit, as it can count animals and read a specific animal's gender, in a roundabout way!"
+				""
+				"Also the phase of the moon can be used to determine the day of the month."
 			]
-			dependency_requirement: "one_completed"
-			id: "5196983324E8F52A"
+			id: "366B73FA1A626DBD"
+			subtitle: "Climate Science??? In MY GregTech?!"
 			tasks: [{
-				id: "420333B377F27A78"
-				item: "computercraft:cable"
+				id: "7FEE9F7879B91E48"
+				item: "advancedperipherals:environment_detector"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The Chat Box can be used to send and recieve chat messages! How about it! "
+				"It can send messages to specific players, and format them with &cc&6o&el&ao&br&ds&f, &lbolding,&r &oitalics,&r &1&nlinks&r&r, the usual!"
+				""
+				"It can even send toasts - the things that pop up on the top right of your screen when you complete a quest."
+			]
+			id: "780995E2158D5314"
+			subtitle: "Apocolyptic amounts of yapping"
+			tasks: [{
+				id: "597B5BD38B0AF794"
+				item: "advancedperipherals:chat_box"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3Player Detector&r is a block that can read a list of people currently logged in, as well as a bit of information of each."
+				""
+				"What kind of information? Well, their..."
+				"- Current and max health"
+				"- Air supply"
+				"- Current dimension"
+				"- Direction"
+				"- Spawn point"
+				"- Current position"
+				"You know, the usual things."
+			]
+			id: "2421D1ADA60C3BB3"
+			subtitle: "Stalkers' best friend"
+			tasks: [{
+				id: "56CA2DC49B25B0BA"
+				item: "advancedperipherals:player_detector"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3ME bridge&r allows your computers to interface with your &2AE2&r systems, allowing it to view various stats, order crafts on your &3CPUs&r, or just push and pull items to and from the systems. "
+				""
+				"You can use this to, for example, emulate a &3ME requester&r in &6HV&r instead of &5EV.&r You could emulate a hundred &3ME requesters&r, for that matter!"
+				""
+				"It consumes a channel, by the way."
+			]
+			id: "01950B026EAAECE2"
+			subtitle: "Digital logic meets digital storage"
+			tasks: [{
+				id: "6C0E708A4AC5812A"
+				item: "advancedperipherals:me_bridge"
 				type: "item"
 			}]
 			x: 2.5d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3Inventory Manager&r is a block that lets you interface with player inventories, accessing their hotbar, inventory, offhand, and armor. You could even push or pull items from the inventory to surrounding storage blocks."
+				""
+				"In order to use it, you need to bind a &3memory card&r to yourself, which can be done with a shift-right click. The card can then be inserted into the &3manager&r block."
+				""
+				"It should go without saying, but don't give your memory card to someone you don't trust. Failing to do so could utterly &cruin&r you."
 			]
-			dependency_requirement: "one_completed"
-			icon: "computercraft:monitor_advanced"
-			id: "7FFDA4C59514AA98"
-			shape: "octagon"
-			size: 2.0d
+			id: "562C44506B8D6B5B"
+			subtitle: "Step 1 of getting softlocked"
+			tasks: [
+				{
+					id: "5926DDE12F4A3C9F"
+					item: "advancedperipherals:inventory_manager"
+					type: "item"
+				}
+				{
+					id: "3FAE91F369EAEB3D"
+					item: {
+						Count: 1
+						id: "advancedperipherals:memory_card"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3Block Reader&r reads the data of the block it's pointing at! This includes the block itself and its NBT data."
+				""
+				"There all sorts of nonsense you can get up to with this thing. For example, you could... "
+				""
+				"1. Use a &3schematic canon&r to make a list of materials in a &3book and quil&r"
+				"2. Put the &3book and quil&r in a &3lecturn&r"
+				"3. Have the &3block reader&r read the &3book&r in the &3lecturn&r"
+				"4. Pass that data to an &3ME bridge&r to craft all the stuff in the schematic"
+				""
+				"It's a lot of work, but the results are so satisfying~"
+			]
+			id: "4DE6ED0D9603524C"
+			subtitle: "Smartest Observer"
 			tasks: [{
-				id: "7D070BAFC0F4226A"
+				id: "255D175973D44694"
+				item: "advancedperipherals:block_reader"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The NBT storage&3 lets you store data in the NBT data of the block!"
+				""
+				"This is very useful if you don't want to futz about with Lua's file IO system, especially since it can hold 1 megabyte of data, and it's resistant to chunk unloads and server restarts."
+				""
+				"It's not a perfect solution though, since they can't be carried by &3turtles&r."
+			]
+			id: "5F5865233C224165"
+			subtitle: "The start of a datacenter"
+			tasks: [{
+				id: "3DA1EA7E49A65DDE"
+				item: "advancedperipherals:nbt_storage"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: [
+				"The Weak Automata Core - and all other cores - massively extend the functionality of a &3turtle&r drone."
+				""
+				"It allows them to scan nearby items and entities, selectively pick up items, refuel using batteries that store RF (not EU), and simulate right clicks way better."
+				""
+				"Most of these abilities have a cooldown AND a fuel cost, but you can increase one to lower the other, to better suit your needs. "
+			]
+			hide_dependent_lines: true
+			id: "191EEC093AC4E4D4"
+			subtitle: "This should just be in the base mod."
+			tasks: [{
+				id: "546F1E11F9556CE6"
+				item: {
+					Count: 1
+					id: "advancedperipherals:weak_automata_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: [
+				"The &3Husbandy Automata&r core can do everything the &3Weak Automata Core&r can do, and more!"
+				""
+				"It can simulate right clicks on animals, gather the same info on animals that an&3 Environmental Detector&r can get, and capture an animal for release elsewhere."
+				""
+				"You DEFINITELY should have automated animals at this point. You got this before going to Mars, right?"
+			]
+			hide_dependent_lines: true
+			id: "44948F5DD2BA92E6"
+			subtitle: "Cow tipping and kidnapping"
+			tasks: [{
+				id: "066FB2E7EB270C86"
+				item: "advancedperipherals:husbandry_automata_core"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: [
+				"The &3Ender Automata&r core can do everything the &3Weak Automata Core&r can do, and more!"
+				""
+				"This core's theme is teleportation! It allows the turtle to record its current position, and teleport back to it at the cost of fuel! Unfortunately, these points can't be manipulated with code."
+				""
+				"Removing the core permanently removes all the saved points, so be careful!"
+			]
+			hide_dependent_lines: true
+			id: "30AC05ADD73C548C"
+			subtitle: "There and back in an instant"
+			tasks: [{
+				id: "10CC3F9AA5628EAB"
+				item: "advancedperipherals:end_automata_core"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: [
+				"The &3Geoscanner&r scans the nearby enviornment, printing out the data in a ridiculously large &9table.&r There is a cooldown however, and a longer-ranged scan increases said cooldown."
+				""
+				"If you're truly sick of ore prospecting, you can slap this bad boy on your &3pocket computer&r and frolic through the countryside for a while, the ipad recording anything of note as you go."
+			]
+			id: "1F08650436F72A14"
+			subtitle: "Halfway to a digital miner"
+			tasks: [{
+				id: "1E5F565820EC3D9F"
+				item: "advancedperipherals:geo_scanner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"A candidate for the most useless peripheral. "
+				"&eextend()&r - forces the sticky side to extend."
+				"&eretract()&r - forces the sticky side to retract."
+				"&etoggle()&r - toggles between the two states."
+				""
+				"Wow."
+			]
+			id: "4C206263E6B050FD"
+			subtitle: "Why though?"
+			tasks: [{
+				id: "3460D536419CE199"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"As a peripheral, you can set the text and color of the tubes with code! Great for animated signs without &3deployer&r jank!"
+				""
+				"&esetText(&astring &9Text&e)&r - Sets what text is displayed on the tubes"
+				"&esetColor(&astring &9Color&e)&r - Sets the color of the text"
+			]
+			id: "27B1F8D84A175533"
+			subtitle: "Classier Signs"
+			tasks: [{
+				id: "48456E48BD67DFFB"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"The &3speedometer&r and &3stressometer&r only have a few functions."
+				""
+				"&3Speedometer&r:"
+				"&egetSpeed()&r - returns the speed in RPM."
+				""
+				"&3Stressometer&r:"
+				"&egetStress()&r - returns how much SU is currently being used."
+				"&egetStressCapacity()&r -  returns the max SU of the system."
+				""
+				"I mean, maybe you can make an automatic shutoff for a &3steam engine&r?"
+			]
+			id: "1A762A3711D318C2"
+			subtitle: "Might be more useful in Aeronautics"
+			tasks: [{
+				id: "2E2E8040F9A161B4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(create:stressometer)item(create:speedometer))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Speedometer and Stressometer"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Lets you set the speed automatically! Pretty simple!"
+				""
+				"&esetTargetSpeed(&aint &9speed&e) &f- Sets the speed of the contoller"
+				"&egetTargetSpeed()&r - Reads the speed the controller is set to"
+				""
+				"If for some insane reason you're still using a &3belt sander&r, you can use this to switch what speed it's at, to execute any recipe."
+			]
+			id: "713468372470E589"
+			subtitle: "Engineers REALLY hate him!"
+			tasks: [{
+				id: "66A085711B2AAC20"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Does a &3sequenced gearshift&r not offer enough control? Well computers give you even more power over them!"
+				""
+				"&emove(&aint &9distance&e) &f- Executes the \"move\" order with the listed distance, use negative numbers for the opposite direction"
+				"&erotate(&aint &9degrees&e) &f- Executes the \"rotate\" order with the listed degrees, use negative numbers for the opposite direction"
+				"&eisRunning()&r - Returns whether or not the gearshift is carrying out an order"
+			]
+			id: "1843BA5ED0802687"
+			subtitle: "Opus Magnum might be for you"
+			tasks: [{
+				id: "0725F27BD475D9AB"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"As a peripheral, you can start or stop the &3motor&r, as well as set its RPM, with negative numbers making it spin the opposite direction!"
+				""
+				"&egetSpeed()&r - Returns the current speed of the motor"
+				"&egetStressCapacity()&r - Returns how much SU the motor is currently contributing to the system"
+				"&esetSpeed(&afloat &9RPM&e)&f - Sets the speed of the motor in RPM, use negative numbers to reverse direction."
+				"&estop()&r - Stops the motor, until a new speed is ordered."
+				""
+				"It also extends the functionality of a generic energy peripheral."
+			]
+			id: "5675D8377D055291"
+			subtitle: "We've unlocked stepper motors"
+			tasks: [{
+				id: "3DC0E953E34F2108"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Wrapping a &3display link&r as a peripheral lets you automatically write to &3signs&r, &3display boards&r, and whatever else a &3display link&r can target!"
+				""
+				"&esetCursorPos(&aint&9 x, &aint &9y&e)&r - Sets the position of the cursor, with the top left corner being (1, 1)."
+				"&egetCursorPos&f - Returns the current position of the cursor."
+				"getSize() - Returns the max rows and columns."
+				"&ewrite(&astring &9Text&e)&r - Writes Text to the cursor's position."
+				"&eclearLine()&r - Clears the line the cursor is currently on"
+				"&eclear()&r - Clears all text from the target"
+				"&eupdate()&r - Forces the display link to update the target"
+			]
+			id: "28D25C4245AEBFA5"
+			subtitle: "Big Data when Small Logic walks in"
+			tasks: [{
+				id: "7707B99C34948D64"
+				item: "create:display_link"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"The true meat and potaoes of Create x ComputerCraft. The peak of autism, even."
+				""
+				"&eassemble()&r - Assembles the train in the station. The station block must be in \"assembly\" mode"
+				"&edisassemble()&r - Disassemble the train in the station, and puts the block in \"assembly\" mode"
+				"&esetAssemblyMode(&abool &9assemblyMode&e)&f - Toggles whether the station is in \"assembly\" mode"
+				"&eisInAssemblyMode()&r - Returns whether the station is in \"assembly\" mode"
+				"&egetStationName()&r - Returns the name of the station"
+				"&esetStationName(&astring &9name&e)&f -  Sets the name of the station"
+				"&eisTrainPresent()&r - Returns if a train is stopped in the station"
+				"&eisTrainImminent()&r - Returns if a train is about to pull into the station"
+				"&eisTrainEnroute()&r - Returns if a tain is traveling to the station"
+				"&egetTrainName()&r - Gets the name of the train currently stopped in the station"
+				"&ehasSchedule()&r - Returns whether or not the train has a schedule"
+				"&egetSchedule()&r - Gets the train's current schedule"
+				"&esetSchedule(&atable &9schedule&e)&f - Builds a schedule from code and assigns it to the train, see &egetSchedule()&r for an example."
+			]
+			id: "6F907DA4DEF43EEF"
+			subtitle: "Point of Departure"
+			tasks: [{
+				id: "79E9CBB1F1A1CD90"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Some junctions just need more advanced control. Don't blame us if this gets trains deadlocked though."
+				""
+				"&egetState()&r - Reads the state of the track block ahead of the signal"
+				"&eisForcedRed()&r - Reads if the signal is forcing trains to stop, usually trigged by redstone"
+				"&esetForcedRed(&abool &9powered&e)&f - Forces trains to stop, just like you can with redstone"
+				"&egetSignalType()&r - Reads if the signal is a normal signal or a \"chain\" signal"
+				"&ecycleSignalType()&r - Makes the block swap between being a normal signal or a \"chain\" signal"
+			]
+			id: "3DE09E83BF456B89"
+			tasks: [{
+				id: "32B4F8193C44B8D1"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Doesn't do much, but it's more useful than the &3sticker&r."
+				""
+				"&eisTrainPassing()&r - Returns if a train is currently passing the &3observer&r"
+				"&egetPassingTrainName()&r - Gets the name of the train that's passing the &3observer&r"
+			]
+			id: "0A1E9AC6454093B7"
+			tasks: [{
+				id: "5986B3603B92F99B"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Not as useful as one might think, but you can use it to get an overview of your High Logistics network."
+				""
+				"&estock(&aOptional<bool> &9detailed&e) &f- Returns a table describing every item in the network. Can optionally show more info on each item"
+				"&egetStockItemDetail(&aint &9slot&e) &f- Gets more info on a particular item in the network"
+				"&erequestFiltered(&astring &9address&e) &f- Sets the address on any packages ordered from the ticker"
+				"&elist()&r - Lists items stored in the ticker from transactions"
+			]
+			id: "62DD9C3DFD21CBE9"
+			subtitle: "Shop and Terminal"
+			tasks: [{
+				id: "266F17D1A94846AA"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Mostly just used to view the details of packages."
+				""
+				"&emakePackage()&r - Makes a package, as if pulsed once by redstone"
+				"&egetAddress()&r - Gets the current address of the packager"
+				"&esetAddress(&aoptional<string> &9address&e)&f - Sets the address of the packager"
+				"&egetPackage()&r - Gets the details of the package, including is contents and address"
+				""
+				"Also extends the functionality of a generic inventory peripheral."
+			]
+			id: "4F89686AA5873267"
+			tasks: [{
+				id: "4B1829DCCB79E690"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(create:packager)item(create:repackager)item(create_factory_logistics:jar_packager))"
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"We all love frogports, so it's only natural we can do more with them!"
+				""
+				"&esetAddress(&astring &9address&e)&f - Sets the address of the frogport"
+				"&egetAddress()&r - Gets the address of the frogport"
+				"&egetConfiguration()&r - Reads if the frogport can send or recieve packages, or only send."
+				"&esetConfiguration(&astring &9config&e)&f - Sets if the frogport can send or recieve packages, or only send."
+				""
+				"Also extends the functionality of a generic inventory peripheral."
+			]
+			id: "7D6913812D5323AC"
+			tasks: [{
+				id: "775F3367D66AA6ED"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"&erequest()&r - Requests a resupply, as if pulsed by redstone once"
+				"&esetRequest(&atable &9request&e) &f- Sets what will be requested, see getRequest() for an example"
+				"&esetCraftingRequest(&atable &9craftingRequest&e)&r - Sets a craftng request, see getRequest() for an example"
+				"&egetRequest()&r - Returns the current request"
+				"&egetConfiguration()&r - Returns if the requester accepts partial orders"
+				"&esetConfiguration(&astring &9config&e) &f- Sets if the requester accepts partial orders"
+				"&esetAddress(&astring &9address&e)&f - Sets the address of the requester"
+				"&egetAddress()&r - Gets the address of the requester"
+			]
+			id: "1BAAC23D8E7EB515"
+			subtitle: "Who needs Factory Gauges?"
+			tasks: [{
+				id: "18F5322880A368E6"
+				item: "create:redstone_requester"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Used to edit shops automatically!"
+				""
+				"&eisShop()&r - Returns true if the table cover is a shop"
+				"&egetAddress()&r - Sets the address of anything bought from this table cover"
+				"&esetAddress(&astring &9address&e)&f - Gets the address of anything bought from this table cover"
+				"&egetPriceTagItem()&r - Gets the item that's needed to make a purchase"
+				"&esetPriceTagItem(&aOptional<string> &9itemName&e) &r- Sets the item that's needed to make a purchase"
+				"&egetPriceTagCount()&r - Gets the number of items needed to make a purchase"
+				"&esetPriceTagCount(&adouble &9count&e)&f - Sets the number of items needed to make a purchase"
+				"&egetWares()&r - Gets the items currently up for sale"
+				"&esetWares(&atable &9products&e) &f- Sets the items that are up for sale"
+				""
+				"You could probably use this to do some kind of underhanded dynamic pricing or something, you snake~"
+			]
+			id: "4CDA6CC955EFFCA2"
+			subtitle: "We've gone from Walmart to Ebay."
+			tasks: [{
+				id: "6760FE9376C9F7C5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:table_cloths)"
+					}
+				}
+				title: "Any #create:table_cloths"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: [
+				"Mostly just acts like a box."
+				""
+				"&esetAddress(&astring &9address&e)&f - Sets the address of the postbox"
+				"&egetAddress()&r - Gets the address of the postbox"
+				"&esetConfiguration(&astring &9config&e)&f - Sets if the postbox can send or recieve packages, or only send."
+				"&egetConfiguration()&r - Returns if the postbox can send or recieve packages, or only send."
+				""
+				"Also extends the functionality of the generic inventory peripheral."
+			]
+			id: "782E097F31659E4D"
+			subtitle: "Check your email for a verification code"
+			tasks: [{
+				id: "06D57E9BCF721363"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:postboxes)"
+					}
+				}
+				title: "Any #create:postboxes"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["These peripherals are generally weak on paper, but they tend to be the bread and butter of your systems. Don't overlook them!"]
+			hide_dependent_lines: true
+			id: "160EC57392A6C5D5"
+			tasks: [{
+				id: "621B3390C334FC39"
+				title: "Base CC Peripherals"
 				type: "checkmark"
 			}]
-			title: "It's time to craft trinkets"
-			x: 5.0d
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: [
+				"These peripherals are from the Advanced peripherals addon, and most of its content is concerned with adding CC compatability with other mods like AE2 and Minecolonies."
+				""
+				"Some of these are a bit overpowered."
+			]
+			hide_dependent_lines: true
+			id: "3058785E70954678"
+			tasks: [{
+				id: "1270FE6363C041E3"
+				title: "Advanced Peripherals"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: [
+				"Surprise! A lotta Create blocks can be wrapped as peripherals too! "
+				""
+				"The usefullness of these is questionable, given what other tech you have access to by the time you get computers, but it could be used to retrofit older systems or enable other nonsense."
+				""
+				"Unfortunately, there doesn't seem to be a wiki for these, so this section will be more specific on what functions you can use."
+			]
+			hide_dependent_lines: true
+			id: "6226DDF4F16D439B"
+			tasks: [{
+				id: "73775B77514366BB"
+				title: "Create Peripherals"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: ["Peripherals are the main way your computers do things in the game world! You can access them using the \"&dperipheral&f\" library, and you can assign them to a variable with the \"&ewrap()&r\" function."]
+			id: "0B55AC33D41FED67"
+			subtitle: "Internet of Things"
+			tasks: [{
+				id: "6E4CFA68098E43CB"
+				title: "Peripherals"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: [
+				"You don't wrap &3bundled cables&r as peripherals, but you can use \"&egetBundledOutput()&r\" and \"&egetBundledInput()&r\" from the \"&dredstone&r\" library to send and recieve color-coded signals! "
+				""
+				"It's a little unintuitive though. Each &3bundled cable&r tracks the state of each color with a 16 bit integer, with each bit mappping onto the state of each color."
+				""
+				"The CC wiki (linked with the book icon earlier in the chapter) gives you a table that shows which bits go to which colors under the \"&dcolors&r\" library."
+				""
+				"If you know your bitwise operations, great! Otherwise, just add together the numbers in the \"dec\" column for all the colors you want ON."
+				"So if you just want blue and cyan to be on, plug in 2560 (which is 2048 + 512)."
+			]
+			id: "0E61A782522AC382"
+			subtitle: "Technially not a peripheral"
+			tasks: [{
+				id: "68C994632CF7AD03"
+				item: "morered:bundled_network_cable"
+				type: "item"
+			}]
+			x: 1.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "7B500E0A921321E9"
-			shape: "circle"
+			dependencies: [
+				"30AC05ADD73C548C"
+				"44948F5DD2BA92E6"
+				"191EEC093AC4E4D4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &3overpowered cores&r act just like their normal counterparts, but with their abilities upgraded! "
+				""
+				"However, they have a small chance to break on each use, so make sure to automate replacements!"
+			]
+			hide_dependency_lines: false
+			id: "23EA0D95CDFF4B01"
+			subtitle: "The only things that can break in this mod"
 			tasks: [{
-				id: "42590471EA46FCE8"
-				item: "computercraft:monitor_normal"
+				id: "46CE286E8AC42D2C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(advancedperipherals:overpowered_weak_automata_core)item(advancedperipherals:overpowered_husbandry_automata_core))"
+					}
+				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			title: "Overpowered Cores"
+			x: 3.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "4B88F658A752FA3F"
-			shape: "circle"
+			dependencies: ["7D22D66DC480F2A7"]
+			description: [
+				"If a block has an item inventory that can be accessed by automation, it can be wrapped as a inventory peripheral!"
+				""
+				"This lets you see the size of the inventory, list everything inside, view the details of specific slots, view the max stack size of a slot, or even move items between different inventories!"
+				""
+				"Wanting to use that last part to make a budget &2AE2&r system? Have a look at the &3wired modem&r and &3network cable&r!"
+			]
+			icon: "minecraft:chest"
+			id: "7054CE9765DA69A5"
 			tasks: [{
-				id: "42CCFEF24A41C1FE"
-				item: "computercraft:monitor_advanced"
-				type: "item"
+				id: "4F1B010D0BB71E66"
+				title: "Inventory"
+				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "48C4D2DB2E7F6F59"
-			shape: "circle"
+			dependencies: ["7D22D66DC480F2A7"]
+			description: [
+				"If a block has an fluid storage that can be accessed by automation, it can be wrapped as a fluid peripheral!"
+				""
+				"This lets you see the number and size for each fluid tank, and even move fluids between different blocks!"
+				""
+				"Wanting to use that last part to make a budget &2AE2&r system? Have a look at the &3wired modem&r and &3network cable&r!"
+			]
+			icon: "create:fluid_tank"
+			id: "1D2BD01EDABD6532"
 			tasks: [{
-				id: "72C0320D738C604E"
-				item: "computercraft:wireless_modem_normal"
-				type: "item"
+				id: "1D8C6D11E95A6FB1"
+				title: "Fluid Tank"
+				type: "checkmark"
 			}]
-			x: 6.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "2A43647C3C5D9E83"
-			shape: "circle"
-			tasks: [{
-				id: "79AE74FA098E7DC3"
-				item: "computercraft:wireless_modem_advanced"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "38F42B6D14F8DED1"
-			shape: "circle"
-			tasks: [{
-				id: "702BB2F0572F5E48"
-				item: "computercraft:wired_modem"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "27577CB16820E75B"
-			shape: "circle"
-			tasks: [{
-				id: "267B8DB63952DF1A"
-				item: "computercraft:speaker"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3AE64484AB9F1048"
-			shape: "circle"
-			tasks: [{
-				id: "2B14E62B1C603EFD"
-				item: "computercraft:disk_drive"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "77439E3A3EC781F8"
-			shape: "circle"
-			tasks: [{
-				id: "66B7614C462CE161"
-				item: "computercraft:printer"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3DFB9A8A2BE3E85B"
-			shape: "circle"
-			tasks: [{
-				id: "616A905A423A55B0"
-				item: "computercraft:disk_drive"
-				type: "item"
-			}]
-			x: 9.5d
+			x: -2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7D22D66DC480F2A7"]
+			icon: "createaddition:modular_accumulator"
+			id: "0E956D64BA615466"
+			tasks: [{
+				id: "0B4EB95356FA6DAE"
+				title: "FE battery"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["Many blocks in modded MC have implict interactions with ComputerCraft. If it can store items, fluids, or EU/FE, you can probably wrap it as a peripheral and mess with it!"]
+			hide_dependent_lines: true
+			id: "7D22D66DC480F2A7"
+			tasks: [{
+				id: "55FC842C700A3716"
+				title: "Generic Peripherals"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.computer.subtitle}"]
