@@ -7,13 +7,13 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Working with Anvils",
+            "title": "Praca na kowadle",
             "text": "$(l:mechanics/anvils#working)Working$() in $(l:mechanics/anvils)Anvils$() is a key process inside $(thing)TerraFirmaGreg$(), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:tfg_tips/anvil_working_guide#ui_explained)Understanding the UI$() and $(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
         },
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
             "text": "The UI for the Anvil with TFC Anvil Helper Enabled"
@@ -21,7 +21,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false,
             "anchor": "ui_explained",
@@ -35,7 +35,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -46,7 +46,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -57,7 +57,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"
             ],
             "border": false
         },
@@ -74,7 +74,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
             "border": false,
             "text": "A Perfectly Forged Wrought Iron Pickaxe Head"
@@ -96,7 +96,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
             ],
             "text": "The steps required for a Pickaxe"
         },
@@ -116,8 +116,8 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"
             ]
         },
         {
@@ -128,7 +128,7 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"
             ],
             "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
         },
@@ -140,9 +140,9 @@
         {
             "type": "patchouli:image",
             "images": [
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
-            "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png",
+                "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"
             ],
             "text": "An Ingot with No Work->Desired Work Value Reached->Doing the Required Steps for our Item."
         },

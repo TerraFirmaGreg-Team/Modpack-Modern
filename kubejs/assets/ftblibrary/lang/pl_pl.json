@@ -1,6 +1,7 @@
 {
   "config.group.value": "Wartość",
   "delete_item": "Czy chcesz usunąć '%s'?",
+  "dimension.hyperbox.hyperbox": "Hiperbox",
   "dimension.minecraft.overworld": "Nadziemie",
   "dimension.minecraft.the_end": "End",
   "dimension.minecraft.the_nether": "Nether",
@@ -21,6 +22,7 @@
   "ftblibrary.palette.reds": "Czerwień",
   "ftblibrary.panel.position.bottom": "Na dole",
   "ftblibrary.panel.position.bottom_left": "Lewy dolny róg",
+  "ftblibrary.panel.position.bottom_right": "Prawy dolny róg",
   "ftblibrary.panel.position.left": "Z lewej",
   "ftblibrary.panel.position.right": "Prawo",
   "ftblibrary.panel.position.top": "U góry",

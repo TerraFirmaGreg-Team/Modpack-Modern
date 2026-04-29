@@ -39,7 +39,7 @@
     {
       "type": "patchouli:image",
       "images": [
-      "tfc:textures/gui/book/gui/blast_furnace.png"
+        "tfc:textures/gui/book/gui/blast_furnace.png"
       ],
       "text": "高炉GUI",
       "border": false
