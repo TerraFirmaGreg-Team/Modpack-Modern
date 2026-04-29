@@ -32,7 +32,7 @@
       "type": "patchouli:image",
       "title": "Геологічний огляд",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
       "border": true,
       "text": "Використання геологічного молотка виглядає ось так. Велика частинка з позначкою $(bold)\"!\"$() — це стиль рентгену для всієї жили. А менші частинки — це стиль рентгену для кожного блока."
@@ -68,7 +68,7 @@
       "type": "patchouli:image",
       "title": "Сканер руд",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
       "text": "Приклад того, що ви можете побачити, використовуючи $(#e373ff)LuV сканер руд$()."

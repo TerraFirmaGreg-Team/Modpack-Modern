@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/sandworm.png"
+				"tfg:textures/gui/field_guide/sandworm.png"
 			],
 			"border": true,
 			"title": "Песчаный червь",

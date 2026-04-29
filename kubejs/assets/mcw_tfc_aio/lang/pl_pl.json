@@ -32,8 +32,12 @@
   "block.mcw_tfc_aio.modern_sandstone_wall": "Współczesny murek z piaskowca",
   "block.mcw_tfc_aio.modern_stone_brick_wall": "Współczesny murek z cegieł",
   "block.mcw_tfc_aio.roofs.ash_roofs.ash_roof": "Dach z jesionu",
+  "block.mcw_tfc_aio.roofs.black_concrete_roofs.black_concrete_roof": "Czarny betonowy dach",
+  "block.mcw_tfc_aio.roofs.brown_concrete_roofs.brown_concrete_roof": "Brązowy betonowy dach",
   "block.mcw_tfc_aio.roofs.gutters.gutter_middle": "Rynna",
+  "block.mcw_tfc_aio.roofs.lime_concrete_roofs.lime_concrete_roof": "Jasnozielony betonowy dach",
   "block.mcw_tfc_aio.roofs.oak_roofs.oak_roof": "Dach z dębu",
+  "block.mcw_tfc_aio.roofs.pink_concrete_roofs.pink_concrete_roof": "Różowy betonowy dach",
   "item.mcw_tfc_aio.pliers": "Kombnierki",
   "item.mcw_tfc_aio.rain_gutter": "Rynna",
   "item.mcw_tfc_aio.roofing_hammer": "Młotek do dachów",
@@ -43,5 +47,7 @@
   "itemGroup.mcw_tfc_aio": "Macaw's TFC All-In-One",
   "itemGroup.roofs": "Macaw's TFC Roofs",
   "mcw_tfc_aio.container.threerows": "Meble",
+  "mcw_tfc_aio.furnitureitem.desc": "Składnik do wytwarzania",
+  "mcw_tfc_aio.roofitem.desc": "Składnik do wytwarzania",
   "tfc.recipe.barrel.mcw_tfc_aio.bleach_terracotta": "Wybielanie terakoty"
 }

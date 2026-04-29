@@ -16,7 +16,7 @@
 			"type": "patchouli:text",
 			"anchor": "predators",
 			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"title": "Drapieżniki"
 		},
 		{
 			"type": "patchouli:entity",

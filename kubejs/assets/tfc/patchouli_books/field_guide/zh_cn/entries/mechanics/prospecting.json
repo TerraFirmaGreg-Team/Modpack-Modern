@@ -32,7 +32,7 @@
       "type": "patchouli:image",
       "title": "勘探者视角",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
       "border": true,
       "text": "使用勘矿镐时的效果如图所示。大型$(bold)\"!\"$()标识粒子为整矿脉透视模式，较小的粒子则为逐方块透视模式。"
@@ -68,7 +68,7 @@
       "type": "patchouli:image",
       "title": "探矿仪",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
       "text": "这是你使用$(#e373ff)LuV 探矿仪$()时可能会看到的一个例子。"
