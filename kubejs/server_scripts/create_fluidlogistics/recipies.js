@@ -3,7 +3,12 @@
 
 function registerCreateFluidLogisticsRecipes(event) {
 
-	event.remove({ mod: "fluidlogistics" });
+    event.remove({
+		not: [
+			{ id:'fluidlogistics:horizontal_multi_fluid_tank_from_tank' },
+			{ id: 'fluidlogistics:multi_fluid_tank_from_horizontal' },
+			{ id: 'fluidlogistics:hand_pointer_clear' },
+		], mod: "fluidlogistics" })
 
     event.shapeless('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
     event.recipes.create.item_application('fluidlogistics:waterproof_cardboard_block', ['create:cardboard_block', '#forge:wax'])
@@ -38,16 +43,7 @@ function registerCreateFluidLogisticsRecipes(event) {
 		E: '#forge:tools/wrenches'
 	}).id("fluidlogistics:shaped/multi_fluid_tank")
 
-	event.recipes.shapeless('fluidlogistics:horizontal_multi_fluid_tank', 'fluidlogistics:multi_fluid_tank').id("fluidlogistics:shapeless/multi_fluid_tank_conversion_from_normal")
-	event.recipes.shapeless('fluidlogistics:multi_fluid_tank', 'fluidlogistics:horizontal_multi_fluid_tank').id("fluidlogistics:shapeless/multi_fluid_tank_conversion_from_horizontal")
 
-	event.recipes.gtceu.assembler('fluidlogistics:fluid_packager')
-		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:copper_casing', 'fluidlogistics:waterproof_cardboard_block', 'create:electron_tube')
-		.itemOutputs('fluidlogistics:fluid_packager')
-		.circuit(20)
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-		.addMaterialInfo(true)
 
     event.recipes.gtceu.shaped('fluidlogistics:multi_fluid_access_port', [
 		' A ',
