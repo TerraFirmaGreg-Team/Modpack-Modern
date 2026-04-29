@@ -1136,7 +1136,7 @@ function registerTFGWoodenRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.greate.pressing('tfc:stick_bunch', [
+	event.recipes.greate.compacting('tfc:stick_bunch', [
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden',
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden',
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden'])
@@ -1144,7 +1144,7 @@ function registerTFGWoodenRecipes(event) {
 		.recipeTier(0)
 		.id('tfg:pressing/stick_bunch')
 
-	event.recipes.greate.pressing('tfc:stick_bundle', ['tfc:stick_bunch', 'tfc:stick_bunch'])
+	event.recipes.greate.compacting('tfc:stick_bundle', ['tfc:stick_bunch', 'tfc:stick_bunch'])
 		.circuitNumber(8)
 		.recipeTier(0)
 		.id('tfg:pressing/stick_bundle')
