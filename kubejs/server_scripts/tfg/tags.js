@@ -275,7 +275,6 @@ const registerTFGBlockTags = (event) => {
 
 	forEachTFGRopeLadderVariant(ropeLadder => {
 		event.add('tfg:rope_ladders', ropeLadder)
-		event.add('minecraft:mineable/axe', ropeLadder)
 		event.add('create:copycat_deny', ropeLadder)
 		event.add('minecraft:fall_damage_resetting', ropeLadder)
 		event.add('minecraft:climbable', ropeLadder)
