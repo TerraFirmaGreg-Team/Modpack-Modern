@@ -99,6 +99,7 @@ function registerTFGItemSize(event) {
 	});
 	event.itemSize("tfg:decorative_vase", "normal", "medium", "decorative_vase");
 	event.itemSize("tfg:decorative_vase/unfired", "normal", "medium", "decorative_vase/unfired");
+	event.itemSize("#tfg:rope_ladders", "normal", "light", "rope_ladders");
 
 	event.itemSize("tfg:fishing_net/wood", "large", "medium", "wood_fishing_net");
 	event.itemSize("tfg:fishing_net/brass", "large", "medium", "brass_fishing_net");

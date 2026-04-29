@@ -1,5 +1,6 @@
 {
   "config.framedblocks.client.conTexMode": "Tryb połączonych tekstur",
+  "config.framedblocks.client.showGhostBlocks": "Pokaż bloki \"duchy\"",
   "config.framedblocks.common.fireproofBlocks": "Bloki ognioodporne",
   "desc.framedblocks.blueprint_false": "fałsz",
   "desc.framedblocks.blueprint_invalid": "Nieprawidłowy",
@@ -19,6 +20,7 @@
   "title.framedblocks.powered_saw.target_block": "Cel:",
   "title.framedblocks.sign.edit": "Edytuj znak",
   "tooltip.framedblocks.framing_saw.have_item_none": "brak",
+  "tooltip.framedblocks.framing_saw.material": "Wartość materiału: %s",
   "tooltip.framedblocks.is_waterloggable.true": "Można otoczyć wodą.",
   "tooltip.framedblocks.one_way_window.dir.down": "Dół",
   "tooltip.framedblocks.one_way_window.dir.east": "Wschód",
