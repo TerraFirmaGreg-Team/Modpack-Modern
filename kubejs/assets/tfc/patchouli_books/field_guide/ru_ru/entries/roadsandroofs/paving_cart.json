@@ -11,7 +11,7 @@
       "type": "patchouli:image",
       "title": "Тележка для мощения",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
@@ -19,7 +19,7 @@
       "type": "patchouli:image",
       "title": "Ползунок регулировки ширины",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
       "text": "Тележка позволяет регулировать ширину дороги в GUI."
@@ -28,7 +28,7 @@
       "type": "patchouli:image",
       "title": "Переменная ширина дороги",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
@@ -36,7 +36,7 @@
       "type": "patchouli:image",
       "title": "Кнопка случайного выбор",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
       "text": "У тележки есть режим, который позволяет укладывать материалы в случайном порядке."
@@ -45,7 +45,7 @@
       "type": "patchouli:image",
       "title": "Дорожка из случайных материалов",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }

@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
 			],
 			"text": "$(thing)Produces$(): Maple Sap$(br)$(thing)Processes Into$(): Maple Sugar",
 			"border": true
@@ -39,7 +39,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
 			],
 			"text": "$(thing)Produces$(): Birch Sap$(br)$(thing)Processes Into$(): Birch Sugar",
 			"border": true
@@ -55,7 +55,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
 			],
 			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
 			"border": true
@@ -71,7 +71,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
 			],
 			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
 			"border": true
@@ -87,7 +87,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
 			],
 			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
 			"border": true
@@ -103,7 +103,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
 			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
@@ -119,7 +119,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
 			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
@@ -135,7 +135,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
 			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
@@ -151,7 +151,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
+				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
 			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true

@@ -68,7 +68,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "$(li)If the bloomery finds itself with more items contained than it can handle based on its chimney, it will try to spit them out the front.$()$(li)To retrieve your items from a bloomery that is not lit, do not break the molten block tower. Break the bloomery block.$()$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$()",
-			"title": "Smith's Notes"
+			"title": "Notatki kowala"
 		}
 	],
 	"read_by_default": true,
