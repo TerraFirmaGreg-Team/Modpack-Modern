@@ -1,74 +1,74 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Glassworking",
+  "name": "ガラスの精製",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Glassworking is the process of turning sand into glass. To start, you must create a $(thing)Glass Batch$(), of which there are four types:$(br)$(br) 1. $(thing)Silica$(), from white sand.$(br) 2. $(thing)Hematitic$(), from yellow, red, or pink sand.$(br) 3. $(thing)Olivine$(), from green or brown sand.$(br) 4. $(thing)Volcanic$(), from black sand."
+      "text": "ガラス加工とは、砂を原料にしてガラスを作る工程です。まずは$(thing)ガラスバッチ$()を用意する必要があり、次の4種類があります：$(br)$(br)\n1. $(thing)シリカ$()：白い砂$(br)\n2. $(thing)赤鉄鉱$()：黄色・赤・ピンクの砂$(br)\n3. $(thing)かんらん$()：緑・茶色の砂$(br)\n4. $(thing)火山$()：黒い砂"
     },
     {
       "type": "patchouli:crafting",
-      "title": "Silica Glass Batch",
+      "title": "シリカガラスバッチ",
       "recipe": "tfc:crafting/silica_glass_batch",
-      "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:mechanics/glassworking#lime)Lime$() and a type of $(l:mechanics/glassworking#potash)Potash$()."
+      "text": "ガラスバッチは、前述の対応する色の砂に加え、$(l:mechanics/glassworking#lime)石灰の粉$()と$(l:mechanics/glassworking#potash)炭酸カリウム系の粉$()を組み合わせて作成します。"
     },
     {
       "type": "patchouli:smelting",
       "anchor": "lime",
       "recipe": "tfg:smelting/lime",
-      "text": "$(thing)Lime$() is one of the ingredients required to make glass batches. It is a powder obtained by $(l:mechanics/heating)heating$() $(l:mechanics/flux)Flux$()."
+      "text": "$(thing)石灰の粉$()はガラスバッチ作成に使う素材の一つで、$(l:mechanics/flux)融剤$()を$(l:mechanics/heating)加熱$()することで入手できます。"
     },
     {
       "type": "patchouli:smelting",
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
       "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() can be used as well."
+      "text": "ガラスバッチの作成には、$(thing)炭酸カリウム$()系の粉も必要になります。これには$(thing)ソーダ灰$()または$(thing)硝石の粉$()を使うことができます。$(thing)ソーダ灰$()は$(thing)乾燥したワカメ$()や$(thing)昆布$()を加熱して得られる粉末です。$(thing)硝石の粉$()は$(l:tfg_ores/earth_vein_index#normal_saltpeter)硝酸カリウム$()を石臼で挽くことで入手できます。"
     },
     {
       "type": "patchouli:text",
-      "text": "Glassworking is done by starting with a glass batch, and then completing a series of steps. These steps may require specific tools:$(br)$(li)A $(l:mechanics/glassworking#blowpipe)Blowpipe$(), to $(thing)Blow$() and $(thing)Stretch$()$(li)A $(l:mechanics/glassworking#paddle)Paddle$(), to $(thing)Flatten$()$(li)$(l:mechanics/glassworking#jacks)Jacks$(), to $(thing)Pinch$()$(li)A $(l:mechanics/glassworking#saw)Gem Saw$(), to $(thing)Saw$()",
-      "title": "Tools of the Trade"
+      "text": "ガラスの精製は、ガラスバッチを元に複数の工程を順番にこなしていくことで行います。その工程ごとに専用の道具が必要になります。$(br)\n$(li)$(l:mechanics/glassworking#blowpipe)吹き竿$()：$(thing)吹く$()工程と$(thing)伸ばす$()工程に使用。$(li)$(l:mechanics/glassworking#paddle)木ごて$()：$(thing)平らにする$()工程に使用。$(li)$(l:mechanics/glassworking#jacks)ジャックス$()：$(thing)つまむ$()工程に使用。$(li)$(l:mechanics/glassworking#saw)宝石ノコギリ$()：$(thing)切り離す$()工程に使用。",
+      "title": "ガラス細工士の商売道具"
     },
     {
       "type": "tfc:knapping_recipe",
       "anchor": "blowpipe",
       "recipe": "tfc:clay_knapping/blowpipe",
-      "text": "The most important tool is the $(thing)Blowpipe$(). It can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$()."
+      "text": "最も重要な道具は$(thing)吹き竿$()です。粘土を$(thing)ナッピング$()して形を作り、それを焼き上げることで$(thing)陶器の吹き竿$()として使用できるようになります。"
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/blowpipe",
-      "text": "Ceramic blowpipes are brittle, and have a chance to to break when used. A more sturdy blowpipe can be $(l:mechanics/anvils#working)worked$() from a $(thing)Brass Rod$() on an anvil."
+      "text": "陶器の吹き竿は脆く、使っていると壊れることがあります。より頑丈なものが欲しい場合は、$(thing)真鍮の棒$()を金床で$(l:mechanics/anvils#working)鍛造$()して作ることができます。"
     },
     {
       "type": "patchouli:crafting",
       "anchor": "paddle",
       "recipe": "tfc:crafting/paddle",
-      "text": "The $(thing)Flatten$() operation can be done with a $(thing)Paddle$(), which is crafted from wood."
+      "text": "$(thing)平らにする$()工程は、木材で作れる$(thing)木ごて$()を使って行います。"
     },
     {
       "type": "tfc:welding_recipe",
       "anchor": "jacks",
       "recipe": "tfc:welding/jacks",
-      "text": "The $(thing)Pinch$() operation can be done with $(thing)Jacks$(), made from welding two brass rods together."
+      "text": "$(thing)つまむ$()工程は、$(thing)ジャックス$()を使って行います。この道具は真鍮の棒と真鍮のプレートを溶接して作ります。"
     },
     {
       "type": "patchouli:crafting",
       "anchor": "saw",
       "recipe": "tfc:crafting/gem_saw",
-      "text": "The $(thing)Saw$() operation can be done with a $(thing)Gem Saw$(). The gem saw is also used to break both $(thing)Glass Blocks$() and $(thing)Glass Panes$() and obtain them."
+      "text": "$(thing)切り離す$()工程は、$(thing)宝石ノコギリ$()で行います。この道具は、設置した$(thing)ガラスブロック$()や$(thing)ガラス板$()を壊して回収することもできます。"
     },
     {
       "type": "patchouli:text",
-      "text": "First, glass on the blowpipe must be heated to $(4)$(bold)Faint Red$(). Then, hold the blowpipe in your $(thing)offhand$() and hold $(item)$(k:key.use)$() to perform each step$().$(br)Use $(item)$(k:key.swapOffhand)$() to pick up a hot blowpipe into your offhand.$(br2)$(bold)Blow$()$(br)Use the $(thing)Blowpipe$() while facing straight ahead.$(br2)$(bold)Stretch$()$(br)Use the $(thing)Blowpipe$() while facing straight down.",
-      "title": "How to Glass"
+      "text": "まず、吹き竿のガラスを$(4)$(bold)ぼんやりした赤色$()の状態まで加熱します。その後、吹き竿を$(thing)オフハンド$()に持ち、$(item)$(k:key.use)$()を長押しして各工程を進めます。$(br)$(item)$(k:key.swapOffhand)$()を使えば、加熱済みの吹き竿をオフハンドに持ち替えられます。$(br2)$(bold)吹く$()$(br)正面を向いた状態で$(thing)吹き竿$()を使う。$(br2)$(bold)伸ばす$()$(br)下を向いた状態で$(thing)吹き竿$()を使う。",
+      "title": "ガラスの作り方"
     },
     {
       "type": "patchouli:text",
-      "text": "$(bold)Flatten$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#paddle)Paddle$() in your main hand.$(br2)$(bold)Pinch$()$(br)Use the $(thing)Blowpipe$() while holding $(l:mechanics/glassworking#jacks)Jacks$() in your main hand.$(br2)$(bold)Saw$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#saw)Gem Saw$() in your main hand.$(br2)$(bold)Roll$()$(br)Use the $(thing)Blowpipe$() with a $(l:mechanics/weaving#wool_cloth)Wool Cloth$() in your main hand."
+      "text": "$(bold)平らにする$()$(br)メインハンドに$(l:mechanics/glassworking#paddle)木ごて$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)つまむ$()$(br)メインハンドに$(l:mechanics/glassworking#jacks)ジャックス$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)切る$()$(br)メインハンドに$(l:mechanics/glassworking#saw)宝石ノコギリ$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)転がす$()$(br)メインハンドに$(l:mechanics/weaving#wool_cloth)羊毛の布$()を持って$(thing)吹き竿$()を使う。"
     }
   ],
   "read_by_default": true,

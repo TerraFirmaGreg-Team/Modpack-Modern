@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Inne stopy nie nadają się do tworzenia narzędzi. Są to $(thing)Mosiądz$(), $(thing)Różowe Złoto$() oraz $(thing)Szczere Srebro$().$(br2)$(thing)Mosiądz$() jest przydatnym stopem dla wszelkiego rodzaju przyrządów, w tym $(l:mechanics/mechanical_power)Siły Mechanicznej$().$(br2)$(thing)Różowe Złoto$() i $(thing)Szczere Srebro$() są używane do wytwarzania $(l:mechanics/steel#red_steel)Czerwonej Stali$() i $(l:mechanics/steel#blue_steel)Niebieskiej Stali$().",
+			"text": "Inne stopy nie nadają się do tworzenia narzędzi. Są to $(thing)mosiądz$(), $(thing)różowe złoto$() oraz $(thing)srebro wysokiej próby$().$(br2)$(thing)Mosiądz$() jest przydatnym stopem dla wszelkiego rodzaju przyrządów, w tym $(l:mechanics/mechanical_power)mechanicznych$().$(br2)$(thing)Różowe złoto$() i $(thing)srebro wysokiej próby$() są używane do wytwarzania $(l:mechanics/steel#red_steel)czerwonej stali$() i $(l:mechanics/steel#blue_steel)niebieskiej stali$().",
 			"title": "Stopy Użytkowe"
 		},
 		{
@@ -60,7 +60,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Szczere Srebro",
+			"title": "Srebro wysokiej próby",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedzi$()$(li)60 - 80 % : $(thing)Srebra$()$(br2)"
 		}
