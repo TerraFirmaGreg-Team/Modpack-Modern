@@ -14,6 +14,7 @@
 - Buffed the amount of dye you get from vinegar @Pyritie
 - Steel, black steel, red steel, and blue steel lamps, trapdoors, bells, chains, nuggets, and small gears can now be crafted in the steam alloy smelter (instead of requiring an MV one) but at twice the ingot cost, like other alloy smelter recipes @Pyritie
 - Steam thermal centrifuges can now be built with any pipe casing instead of just steel @Pyritie
+- Horses, donkeys, and mules are now immune to cacti damage @Pyritie
 ### Bug fixes
 - Fixed a crash when using the railgun in the Beneath @ashleney
 - Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
