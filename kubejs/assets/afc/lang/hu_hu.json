@@ -822,6 +822,7 @@
   "fluid.afc.maple_syrup": "Juharszirup",
   "item.afc.birch_sugar": "Nyírfa cukor",
   "item.afc.maple_sugar": "Juhar cukor",
+  "item.afc.rubber_bar": "Gumirúd",
   "item.afc.wood.boat.baobab": "Majomkenyérfa csónak",
   "item.afc.wood.boat.cypress": "Ciprusfa csónak",
   "item.afc.wood.boat.eucalyptus": "Eukaliptusz csónak",
@@ -863,5 +864,12 @@
   "item.tfc.wood.support.teak": "Tikfa támasz",
   "item.tfc.wood.support.tualang": "Tualang támasz",
   "itemGroup.afc_creative_mode_tab": "ArborFirmaCraft",
-  "tooltip.afc.tap.no_recipe": "Ehez a rönkhöz nem található recept"
+  "tfc.jei.tree_tap": "Fa csapolás",
+  "tooltip.afc.tap.amount": "Mennyiség: ",
+  "tooltip.afc.tap.current_temp": "Jelenlegi hőmérséklet: %s",
+  "tooltip.afc.tap.efficiency": "Hatékonyság: ",
+  "tooltip.afc.tap.fluid": "Folyadék: ",
+  "tooltip.afc.tap.no_recipe": "Ehez a rönkhöz nem található recept",
+  "tooltip.afc.tap.spring": "Tavasz: ",
+  "tooltip.afc.tap.temp_range": "Hőmérséklet tartomány: "
 }
