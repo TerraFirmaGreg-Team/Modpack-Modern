@@ -1,5 +1,5 @@
 {
-	"name": "tfg:mineshaft/shaft_end",
+	"name": "tfg:mineshaft/special",
 	"fallback": "tfg:mineshaft/hallway",
 	"elements": [
 		{
@@ -13,6 +13,28 @@
 					"element_type": "minecraft:single_pool_element"
 				},
 				"limit": 1
+			}
+		},
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:mineshaft/special/strip_mine",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"limit": 1
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "tfg:mineshaft/hallway/hallway_s_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
 			}
 		}
 	]

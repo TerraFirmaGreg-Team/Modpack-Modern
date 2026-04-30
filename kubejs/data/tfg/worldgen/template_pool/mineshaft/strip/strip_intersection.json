@@ -1,0 +1,42 @@
+{
+	"name": "tfg:mineshaft/strip/strip_intersection",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 30,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/intersection_dual",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/intersection_l",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/intersection_r",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/intersection_none",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
