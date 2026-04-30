@@ -96,6 +96,13 @@ const registerRnrItemTags = (event) => {
 	event.add('rnr:concrete_roads', `rnr:concrete_road_panel_slab`)
 	event.add('rnr:concrete_roads', `rnr:concrete_road_sett_slab`)
 	event.add('rnr:concrete_roads', `rnr:concrete_road_flagstones_slab`)
+	
+	event.add('rnr:concrete_roads', 'rnr:wet_concrete_road')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_control_joint')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_panel')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_sett')
+    event.add('rnr:concrete_roads', 'rnr:wet_concrete_road_flagstones')
+	
 };
 
 function registerRnrBlockTags(event) {
