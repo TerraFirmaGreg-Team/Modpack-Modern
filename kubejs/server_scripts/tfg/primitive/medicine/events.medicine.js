@@ -85,3 +85,20 @@ ItemEvents.foodEaten(event => {
 	player.addItemCooldown(item, 100)
 	server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${player.username} ${x} ${y} ${z} 10 2 1`)
 });
+
+//medicine powders
+
+const powderTypes = [
+	'mining',
+	'acrobat',
+	'recovery',
+	'combat'
+]
+powderTypes.forEach(type => {
+	ItemEvents.foodEaten(event => {
+		const { item, server, player, player: { x, y, z } } = event
+		if (item.id !== `tfg:${type}_powder`) return
+		player.addItemCooldown(item, 1200)
+		server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
+	})
+})
