@@ -1,12 +1,12 @@
 {
-	"name": "Harvest Baskets",
+	"name": "Koszyki zbieracza",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Harvest Baskets",
+			"title": "Koszyki zbieracza",
 			"item": {
 				"tag": "tfg:harvester"
 			},
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Harvest Basket",
+			"title": "Koszyk zbieracza",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
 			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
 		}

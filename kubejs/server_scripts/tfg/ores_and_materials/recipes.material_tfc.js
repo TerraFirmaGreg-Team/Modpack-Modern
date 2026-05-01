@@ -142,7 +142,7 @@ function processTFCTool(event, material) {
 		addAnvilRecipe(event, scrapingKnifeBlade, doubleIngotItem, ['hit_last','draw_not_last', 'draw_second_last'], true, material, 'scraping_knife_blade');
 		addTFCMelting(event, scrapingKnife, material, 144 * 2, 'scraping_knife');
 		addMaterialRecyclingNoTagPrefix(event, scrapingKnifeBlade, material, 'scraping_knife_blade', 2);
-		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2);
+		addMaterialCasting(event, scrapingKnifeBlade, 'tfcscraping:ceramic/scraping_knife_blade_mold', false, null, material, 'scraping_knife_blade', 144 * 2, false);
 	}
 
 	// Sword

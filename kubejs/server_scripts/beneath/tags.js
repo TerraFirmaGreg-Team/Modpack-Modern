@@ -12,7 +12,7 @@ const registerBeneathItemTags = (event) => {
 
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
-	event.remove('beneath:sparks_on_sulfur')
+	event.removeAll('beneath:sparks_on_sulfur')
 
 	event.add('tfc:firepit_kindling', 'beneath:crimson_straw')
 	event.add('tfc:firepit_kindling', 'beneath:warped_straw')
@@ -63,8 +63,6 @@ const registerBeneathBlockTags = (event) => {
 	event.add('beneath:poisonous_mushrooms', 'minecraft:red_mushroom')
 	
     event.add('tfc:can_landslide', 'beneath:soul_clay')
-
-	event.remove('beneath:sparks_on_sulfur')
 
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')

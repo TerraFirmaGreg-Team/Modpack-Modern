@@ -503,7 +503,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_invisibility`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:invisibility_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:invisibility_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -515,7 +515,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_fire_resistance`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:fire_resistance_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:fire_resistance_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -527,7 +527,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_resistance`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:resistance_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:resistance_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -539,7 +539,7 @@ function registerTFGMedicineRecipes(event) {
 	
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_instant_health`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:instant_health_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:instant_health_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -551,7 +551,7 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_absorption`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:absorption_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:absorption_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
@@ -563,11 +563,57 @@ function registerTFGMedicineRecipes(event) {
 
 	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/salvo_luck`)
 		.circuit(4)
-		.inputFluids(Fluid.of('gtceu:phenol', 250))
+		.inputFluids(Fluid.of('gtceu:creosote', 500))
 		.itemOutputs('1x tfg:luck_salvo')
 		.itemInputs('gtceu:sticky_resin', '#tfg:luck_ingredients', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	//#endregion
+
+	//#region mixing bowl recipes for salvos
+
+	const salvoTypes = [
+		'luck',
+		'fire_resistance',
+		'resistance',
+		'absorption',
+		'instant_health',
+		'invisibility'
+	]
+
+	salvoTypes.forEach(type => {
+		event.recipes.firmalife.mixing_bowl()
+		.ingredients(['gtceu:sticky_resin', `#tfg:${type}_ingredients`, ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1)], Fluid.of('gtceu:creosote', 500))
+		.outputItem(`1x tfg:${type}_salvo`)
+		.id(`tfg:mixing_bowl/${type}_salvo`)
+	})
+
+	//#endregion
+
+	//#region medicine powder recipes
+
+	const powderTypes = [
+		//type			ingredient one		ingredient two
+		['mining', 		'haste', 			'night_vision'],
+		['acrobat', 	'jump_boost', 		'slow_fall'],
+		['recovery',	'instant_health',	'regeneration'],
+		['combat',		'strength', 		'resistance']
+	]
+
+	powderTypes.forEach(type => {
+		event.recipes.firmalife.mixing_bowl()
+		.ingredients([`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal'], Fluid.of('tfg:conifer_pitch', 100))
+		.outputItem(`1x tfg:${type[0]}_powder`)
+		.id(`tfg:mixing_bowl/${type[0]}_powder`)
+
+		event.recipes.gtceu.mixer(`tfg:gtceu/mixer/${type[0]}_powder`)
+		.circuit(4)
+		.inputFluids(Fluid.of('tfg:conifer_pitch', 100))
+		.itemOutputs(`1x tfg:${type[0]}_powder`)
+		.itemInputs(`#tfg:${type[1]}_ingredients`, `#tfg:${type[2]}_ingredients`, 'minecraft:bone_meal')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+	})
 	//#endregion
 }

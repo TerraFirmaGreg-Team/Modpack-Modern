@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гётит, Лимонит, Гематит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит, Алмаз, Уголь$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит, Олово, Селитра$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Касситеритовый песок...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц, Незер-кварц, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Красный гранат, Желтый гранат...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоуновая пыль, Рубин...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра, Диатомовый пелит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера, Пирит, Сфалерит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гётит, Лимонит, Гематит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит, Алмаз, Битумный уголь$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит, Олово, Селитра$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Касситеритовый песок...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Кварц, Незер-кварц, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Красный гранат, Желтый гранат...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоуновая пыль, Рубин...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра, Диатомовый пелит...$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера, Пирит, Сфалерит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1300,7 +1300,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 128$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 12$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
-      "title": "Графит, Алмаз, Уголь",
+      "title": "Графит, Алмаз, Битумный уголь",
       "type": "patchouli:text",
       "anchor": "nether_graphite"
     },
@@ -1346,7 +1346,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"

@@ -14,27 +14,27 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Native Gold, Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Пироп, Сапфир...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Трикальцийфосфат... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентонит, Магнезит, Оливин...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ильменит$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Висмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Висмут (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Висмут, Самородное серебро...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфенит, Молибденит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галена, Самородное серебро$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Native Copper (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Native Gold (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Native Gold, Магнетит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Альмандин, Пироп, Сапфир...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Апатит, Трикальцийфосфат... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Бастнезит, Монацит, Неодим$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Бентонит, Магнезит, Оливин...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Битумный уголь (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Боксит, Ильменит$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Висмут$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Висмут (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Висмут, Самородное серебро...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Вульфенит, Молибденит...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Галена, Самородное серебро... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Галит, Сильвин (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Галит, Сильвин, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Гарниерит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарниерит, Никель, Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Гарниерит, Никель, Кобальтит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Гематит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Гематит, Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Гётит, Лимонит, Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Гётит, Лимонит, Гематит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Гипс (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Гранитный минеральный песок...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Графит, Уголь, Алмаз (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Графит, Уголь, Алмаз (Volcanic)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Галена, Самородное серебро$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Галена, Самородное серебро... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Галит, Сильвин (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Галит, Сильвин, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Гарниерит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Гарниерит, Никель, Кобальтит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Гарниерит, Никель, Кобальтит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Гематит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Гематит, Лимонит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Гётит, Лимонит, Гематит$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Гётит, Лимонит, Гематит...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Гипс (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Гранитный минеральный песок...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Графит, Битумный уголь, Алмаз (Deep)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Гроссуляр, Пиролюзит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Касситерит, Асбест$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Касситерит, Асбест...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Касситерит, Олово (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Касситеритовый песок$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварц, Барит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Кварц, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Кобальтит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Лигнит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Лигнит, Уголь$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Лимонит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Магнетит (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Графит, Битумный уголь, Алмаз (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Гроссуляр, Пиролюзит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Гроссуляр, Спасерит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Касситерит, Асбест$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Касситерит, Асбест...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Касситерит, Олово (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Касситеритовый песок$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Кварц, Барит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Кварц, Бура$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Кобальтит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Лазурит, Содалит, Лазуритит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Лигнит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Лигнит, Битумный уголь$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Лимонит (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Малахит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Олово, Касситерит (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Редстоуновая пыль, Рубин... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Редстоуновая пыль, Рубин... (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Свинец, Самородное серебро (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Селитра (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Селитра, Диатомовый пелит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Сера (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Сера (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Сера, Борнит, Халькозин (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Сера, Пирит, Сфалерит (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Сера, Стибнит, Борнит (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Синий топаз, Топаз, Халькозин...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Магнетит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Малахит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Олово, Касситерит (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Редстоуновая пыль, Рубин... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Редстоуновая пыль, Рубин... (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Свинец, Самородное серебро (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Селитра (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Селитра, Диатомовый пелит...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Сера (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Сера (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Сера, Борнит, Халькозин (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Сера, Пирит, Сфалерит (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Сера, Стибнит, Борнит (Volcanic)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Слюда (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Слюда, Ционит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен, Сильвин$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит, Галена$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Таркианит, Бура, Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраэдрит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Тетраэдрит, Native Copper... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Торианит, Уранинит, Изумруд...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Трикальцийфосфат (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Уголь (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Халькозин, Гипс, Кобальт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопирит, Гётит, Пирит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопирит, Пирит...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Синий топаз, Топаз, Халькозин...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Слюда (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Слюда, Ционит$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Сподумен, Сильвин$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Сфалерит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Сфалерит, Галена$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Таркианит, Бура, Трона$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Тетраэдрит (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Тетраэдрит, Native Copper... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Торианит, Уранинит, Изумруд...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Трикальцийфосфат (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Халькозин, Гипс, Кобальт...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Халькопирит, Гётит, Пирит...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Халькопирит, Пирит...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -537,6 +537,33 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Туф, Филлит, Шиферный сланец",
+      "title": "Битумный уголь (High)",
+      "type": "patchouli:text",
+      "anchor": "high_coal"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Битумный уголь",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/coal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -1587,7 +1614,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 15%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 80$(br)$(thing)Радиус$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Габбро, Гранит, Диорит",
-      "title": "Графит, Уголь, Алмаз (Deep)",
+      "title": "Графит, Битумный уголь, Алмаз (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
     },
@@ -1613,7 +1640,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -1654,7 +1681,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/140 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 17%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)Высота$(): 150$(br)$(thing)Радиус$(): 18$(br)$(thing)Биомы$(): $(t:Каньоны, Вулканические горы, Вулканические океанические горы, Щиты активных вулканов, Щиты спящих вулканов, Щиты потухших вулканов, Щиты древних вулканов, Щиты затопленных вулканов, Прибрежные вулканические щиты, Старые прибрежные вулканические щиты, Подлёдный вулкан, Ледяные Туйи, Край ледяной туйи, Ледниковый щитовой вулкан, Туйи)Вулкан.$(/t)$(br2)$(thing)Stone Types$(): Габбро, Гранит, Диорит",
-      "title": "Графит, Уголь, Алмаз (Volcanic)",
+      "title": "Графит, Битумный уголь, Алмаз (Volcanic)",
       "type": "patchouli:text",
       "anchor": "deep_graphite_volcanic"
     },
@@ -1680,7 +1707,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -2328,7 +2355,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/230 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 28%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)Высота$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Аспидный сланец, Гнейс, Кварцит, Мрамор, Туф, Филлит, Шиферный сланец",
-      "title": "Лигнит, Уголь",
+      "title": "Лигнит, Битумный уголь",
       "type": "patchouli:text",
       "anchor": "normal_coal"
     },
@@ -2354,7 +2381,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Уголь",
+      "name": "Битумный уголь",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/coal"
@@ -3717,33 +3744,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент нагрузки$(): 100%$(br)$(thing)Used for$(): Medicine, Fertiliser$(br)$(thing)Formula$(): Ca₃(PO₄)₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/30 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 90 — 160$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 30$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 60$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Андезит, Аргиллит, Аспидный сланец, Базальт, Габбро, Гнейс, Гранит, Дацит, Диорит, Доломит, Известняк, Кварцит, Конгломерат, Кремнистый сланец, Мел, Мрамор, Риолит, Сланец, Туф, Филлит, Шиферный сланец",
-      "title": "Уголь (High)",
-      "type": "patchouli:text",
-      "anchor": "high_coal"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Уголь",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/coal"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 100%$(br)$(thing)Used for$(): Fuel, Distillation$(br)$(thing)Formula$(): C",
       "type": "patchouli:multiblock"
     },
     {
