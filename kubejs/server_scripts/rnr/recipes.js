@@ -70,7 +70,7 @@ const registerRnrRecipes = (event) => {
 
 	global.TFC_STONE_TYPES.forEach(stone => {
 		//flagstones
-		event.recipes.gtceu.cutter(`rnr:flagstone/${stone}`)
+		event.recipes.gtceu.cutter(`tfg:flagstone/${stone}`)
 			.itemInputs(`tfc:brick/${stone}`)
 			.itemOutputs(`2x rnr:flagstone/${stone}`)
 			.duration(20)
@@ -136,7 +136,7 @@ const registerRnrRecipes = (event) => {
 	})
 	//sandstone flagstones
 	global.SAND_COLORS.forEach(sand => {
-		event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${sand}_sandstone`)
+		event.recipes.gtceu.cutter(`tfg:/flagstone/${sand}_sandstone`)
 			.itemInputs(`tfc:cut_sandstone/${sand}`)
 			.itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
 			.duration(20)
@@ -193,14 +193,14 @@ const registerRnrRecipes = (event) => {
 			.EUt(120)
 	})
 
-	const CONCRETE_STAIR_SLABS = [
+	const CONCRETE_STAIRS_SLABS = [
 		"",
 		"_sett",
 		"_flagstones",
 		"_panel"
 	]
 
-	CONCRETE_STAIR_SLABS.forEach(type => {
+	CONCRETE_STAIRS_SLABS.forEach(type => {
 		event.recipes.gtceu.assembler(`tfg:concrete_road${type}_slab`)
 			.itemInputs(`rnr:concrete_road${type}`)
 			.itemOutputs(`rnr:concrete_road${type}_slab`)
@@ -208,7 +208,7 @@ const registerRnrRecipes = (event) => {
 			.duration(20)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`rnr:concrete_road${type}_stairs`)
+		event.recipes.gtceu.assembler(`tfg:concrete_road${type}_stairs`)
 			.itemInputs(`rnr:concrete_road${type}`)
 			.itemOutputs(`rnr:concrete_road${type}_stairs`)
 			.circuit(3)
