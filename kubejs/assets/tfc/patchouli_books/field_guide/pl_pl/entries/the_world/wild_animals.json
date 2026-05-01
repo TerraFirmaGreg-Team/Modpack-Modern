@@ -109,7 +109,7 @@
 			"type": "patchouli:text",
 			"anchor": "ramming_prey",
 			"text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
-			"title": "Ramming"
+			"title": "Taranowanie"
 		},
 		{
 			"type": "patchouli:entity",

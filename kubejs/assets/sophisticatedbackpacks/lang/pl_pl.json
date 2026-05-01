@@ -15,6 +15,7 @@
 	"commands.sophisticatedbackpacks.template.create.alreadyexists": "Szablon '%s' już istnieje",
 	"commands.sophisticatedbackpacks.template.export.success": "Wyeksportowano szablon do %s",
 	"commands.sophisticatedbackpacks.template.give.backpack.success": "Oddaj plecak %s",
+	"commands.sophisticatedbackpacks.template.list.delete": "Usuń szablon",
 	"commands.sophisticatedbackpacks.template.list.delete.tooltip": "Kliknij, aby usunąć szablon: %s",
 	"commands.sophisticatedbackpacks.template.list.export": "Eksportuj szablon",
 	"commands.sophisticatedbackpacks.template.list.export.tooltip": "Kliknij, by wyeksportować szablon '%s' do datapacku",

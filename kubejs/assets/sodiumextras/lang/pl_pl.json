@@ -44,6 +44,7 @@
   "sodium.extras.options.displayfps.system.ram": "Tylko pamięć",
   "sodium.extras.options.displayfps.system.title": "Wyświetlaj metryki",
   "sodium.extras.options.displayfps.title": "Wyświetl FPS",
+  "sodium.extras.options.dynlights.entities.title": "Użyj dla bytów",
   "sodium.extras.options.dynlights.page": "Dynamiczne światła",
   "sodium.extras.options.fastbeds.title": "Używaj szybkich łóżek",
   "sodium.extras.options.fastchest.desc": "Jeśli włączone, zastępuje model skrzyń statycznym modelem, jak normalny blok. Psuje animację, ale zmniejsza obciążenie gry w otoczeniu wielu skrzyń.\n\nOpcja nie zmienia nic, jeśli masz zainstalowany flywheel i uruchomiłeś porcjowanie lub instancjonowanie backendu",
@@ -58,11 +59,13 @@
   "sodium.extras.options.screen.title": "Tryb pełnoekranowy",
   "sodium.extras.options.screen.windowed": "W oknie",
   "sodium.extras.options.zoom.default.title": "Domyślne powiększenie",
+  "sodium.extras.options.zoom.easing.title": "Wykładnik wygładzania",
   "sodium.extras.options.zoom.max.desc": "Maksymalne powiększenie FOV.",
   "sodium.extras.options.zoom.max.title": "Maksymalna wartość FOV",
   "sodium.extras.options.zoom.min.desc": "Maksymalne powiększenie FOV.",
   "sodium.extras.options.zoom.min.title": "Minimalna wartość FOV",
   "sodium.extras.options.zoom.page": "Powiększenie",
   "sodium.extras.options.zoom.sensitive.title": "Czułość myszy",
+  "sodium.extras.options.zoom.speed.title": "Szczybkość przybliżania",
   "sodium.extras.options.zoom.toggle.title": "Przełącz tryb"
 }

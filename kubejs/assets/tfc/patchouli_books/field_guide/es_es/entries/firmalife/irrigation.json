@@ -16,7 +16,7 @@
 			"title": "Piping",
 			"item": "gtceu:copper_tiny_fluid_pipe",
 			"type": "patchouli:spotlight",
-			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump water into them with a $(thing)Mechanical Pump$()."
+			"text": "Los aspersores deben estar conectados a un sistema de tuberías que los alimente con agua para poder funcionar. Esto se hace conectándolos con una serie de $(thing)Cañerías$(). Puedes bombearles agua con una $(thing)Bomba mecánica$()."
 		},
 		{
 			"type": "patchouli:text",

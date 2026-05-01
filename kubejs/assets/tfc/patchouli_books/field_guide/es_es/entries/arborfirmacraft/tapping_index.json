@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "birch",
-			"title": "Birch",
+			"title": "Abedul",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
