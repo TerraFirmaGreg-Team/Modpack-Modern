@@ -383,6 +383,46 @@ const registerRnrRecipes = (event) => {
 			.EUt(30)
 	})
 
+	const OTHER_ROOFS = [
+		{type:'terracotta', material:'rnr:terracotta_roof_tile' },
+		{type:'ceramic', 	material:'rnr:ceramic_roof_tile' },
+		{type:'thatch', 	material:'tfc:straw' }	
+	]
+
+	OTHER_ROOFS.forEach(roof => {
+		event.recipes.gtceu.assembler(`tfg:${roof.type}_roof`)
+			.itemInputs(`${roof.material}`, 'rnr:roof_frame')
+			.itemOutputs(`rnr:${roof.type}_roof`)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:${roof.type}_roof_slab_from_framing`)
+			.itemInputs(`${roof.material}`, 'rnr:roof_frame_slab')
+			.itemOutputs(`rnr:${roof.type}_roof_slab`)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:${roof.type}_roof_stairs_from_framing`)
+			.itemInputs(`${roof.material}`, 'rnr:roof_frame_stairs')
+			.itemOutputs(`rnr:${roof.type}_roof_stairs`)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:${roof.type}_roof_slab`)
+			.itemInputs(`rnr:${roof.type}_roof`)
+			.itemOutputs(`rnr:${roof.type}_roof_slab`)
+			.circuit(3)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:${roof.type}_roof_stairs`)
+			.itemInputs(`rnr:${roof.type}_roof`)
+			.itemOutputs(`rnr:${roof.type}_roof_stairs`)
+			.circuit(2)
+			.duration(20)
+			.EUt(30)
+	})
+
 	event.recipes.gtceu.mixer('rnr:mixer/wet_concrete_mix')
 		.inputFluids('gtceu:concrete 200', "#tfg:clean_water 800")
 		.outputFluids('rnr:concrete 1000')
