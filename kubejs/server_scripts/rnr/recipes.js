@@ -307,6 +307,7 @@ const registerRnrRecipes = (event) => {
 		event.recipes.gtceu.assembler(`tfg:wood/shingle/${wood}`)
 			.itemInputs(`tfc:wood/log/${wood}`)
 			.itemOutputs(`4x rnr:wood/shingle/${wood}`)
+			.circuit(3)
 			.duration(20)
 			.EUt(30)
 		
