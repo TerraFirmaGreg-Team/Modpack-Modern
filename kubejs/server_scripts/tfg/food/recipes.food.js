@@ -1,119 +1,6 @@
 ﻿// priority: 0
 "use strict";
 
-
-const $ISPRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.trait.ISPOutputRecipeLogic")
-const $SizedIngredient = Java.loadClass("com.gregtechceu.gtceu.api.recipe.ingredient.SizedIngredient")
-const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
-
-/**
-* @typedef {Object} FoodRecipeData
-* @property {number?} circuit
-* @property {Internal.GTRecipeComponents$FluidIngredientJS_[]?} fluidInputs
-* @property {Internal.FluidStackJS[]?} fluidOutputs
-* @property {(string | [string, Internal.Ingredient])[]?} itemInputs
-* @property {string[]?} itemOutputs Ingredient outputs - first output is replaced with ISP output if defined
-* @property {Internal.ItemStackProviderJS?} itemOutputProvider ItemStackProvider which provides the recipe output.
-* @property {boolean?} daytime
-* @property {boolean?} perTick
-* @property {(string | [string, Internal.GTRecipeSchema$GTRecipeJS.dimension])?} dimension
-* @property {Internal.GTRecipeSchema$GTRecipeJS.cleanroom?} cleanroom CleanroomType
-* @property {string[]?} notConsumable
-*
-* **NOTE:** TFC Ingredients do not support item counts higher than 1. Do `Sized(TFCIngredient('item:item'), count)` instead of `TFCIngredient('[count]x item:item')`
-*/
-//#region Helper funcs
-
-/**
-* @param {"food_oven"|"food_processor"} type
-* @param {string} id
-* @param {number} duration
-* @param {number} EUt
-* @param {string} text
-* @param {FoodRecipeData} data
-*/
-global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
-	if (data.itemInputs === undefined) data.itemInputs = []
-	if (data.itemOutputs === undefined) data.itemOutputs = []
-	if (data.fluidInputs === undefined) data.fluidInputs = []
-	if (data.fluidOutputs === undefined) data.fluidOutputs = []
-	if (data.notConsumable === undefined) data.notConsumable = []
-	let gregInputs = [], inputs = []
-	let outputFirstIndex = (data.itemOutputProvider === undefined) ? 0 : 1
-	data.itemInputs.forEach(item => {
-		if (typeof item === "string") {
-			gregInputs.push(item)
-
-			const match = item.match(/^(\d+)\s*x\s*/i);
-			let count = 1
-			if (match) {
-				count = parseInt(match[1]);
-				item = item.slice(match[0].length);
-			}
-			inputs.push($SizedIngredient.create(item, count))
-		} else {
-			gregInputs.push(item[0])
-			inputs.push(item[1])
-		}
-	})
-
-	$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
-
-	let r = event.recipes.gtceu[type](id)
-	.duration(duration)
-	.EUt(EUt)
-
-	if (data.circuit) r.circuit(data.circuit)
-	if (data.daytime) r.daytime(data.daytime)
-	if (data.perTick) r.perTick(data.perTick)
-	if (data.dimension) r.dimension(data.dimension)
-	if (data.cleanroom) r.cleanroom(data.cleanroom)
-	if (data.notConsumable.length > 0) r.notConsumable(data.notConsumable)
-	if (data.itemOutputs.length > 0) r.itemOutputs(data.itemOutputs)
-	if (data.itemInputs.length > 0) r.itemInputs(data.itemInputs)
-	if (data.fluidInputs.length > 0) r.inputFluids(data.fluidInputs);
-	if (data.fluidOutputs.length > 0) r.outputFluids(data.fluidOutputs);
-	if (text !== "") r.addDataString("action", text);
-
-	return r;
-}
-
-/**
-* @param {string} id
-* @param {number} duration
-* @param {number} EUt
-* @param {FoodRecipeData} data
-*/
-global.processorRecipe = (event, id, duration, EUt, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, "", data)
-
-/**
-* @param {string} id
-* @param {number} duration
-* @param {number} EUt
-* @param {FoodRecipeData} data
-* @param {string} text
-*/
-global.processorRecipeText = (event, id, duration, EUt, text, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, text, data)
-
-/**
-* @param {string} id
-* @param {string} input
-* @param {string} out
-* @param {Internal.FluidIngredient?} fluid
-* @param {boolean?} isFirmaDynamic
-*/
-global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
-	return global.registerFoodRecipe(event, "food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
-		itemInputs: [input],
-		itemOutputs: [out],
-		fluidInputs: (fluid === undefined) ? [] : [fluid],
-		itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
-	})
-}
-
-//#endregion
-
-
 /**
  * @param {Internal.RecipesEventJS} event
  */
@@ -124,7 +11,8 @@ function registerTFGFoodRecipes(event) {
 	//#region Meat cooking
 
 	global.TFC_MEAT_RECIPE_COMPONENTS.forEach(item => {
-		global.cookingRecipe(event, item.name, item.input, item.output)
+		// global.cookingRecipe(event, item.name, item.input, item.output)
+		global.generateFoodCookingRecipes(event, item.input, item.output)
 	})
 
 	//#endregion
@@ -1267,89 +1155,89 @@ function registerTFGFoodRecipes(event) {
 
 	//#region New foods
 
-	event.recipes.tfc.heating('tfg:food/raw_birt', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_birt').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_birt', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_birt').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_crawlermari', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_crawlermari').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_crawlermari', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_crawlermari').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_limpet', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_limpet').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_limpet', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_limpet').copyFood())
 
-	event.recipes.tfc.heating('tfg:sunflower_product', 200)
-	 	.resultItem(TFC.isp.of('tfg:roasted_sunflower_seeds').copyFood())
+	// event.recipes.tfc.heating('tfg:sunflower_product', 200)
+	//  	.resultItem(TFC.isp.of('tfg:roasted_sunflower_seeds').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_moon_rabbit', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_moon_rabbit').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_moon_rabbit', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_moon_rabbit').copyFood())
 
-	event.recipes.tfc.heating('betterend:bolux_mushroom_product', 200)
-		.resultItem(TFC.isp.of('betterend:bolux_mushroom_cooked').copyFood())
+	// event.recipes.tfc.heating('betterend:bolux_mushroom_product', 200)
+	// 	.resultItem(TFC.isp.of('betterend:bolux_mushroom_cooked').copyFood())
 
-	event.recipes.tfc.heating('betterend:chorus_mushroom_product', 200)
-		.resultItem(TFC.isp.of('betterend:chorus_mushroom_cooked').copyFood())
+	// event.recipes.tfc.heating('betterend:chorus_mushroom_product', 200)
+	// 	.resultItem(TFC.isp.of('betterend:chorus_mushroom_cooked').copyFood())
 
-	event.recipes.tfc.heating('betterend:shadow_berry_product', 200)
-		.resultItem(TFC.isp.of('betterend:shadow_berry_cooked').copyFood())
+	// event.recipes.tfc.heating('betterend:shadow_berry_product', 200)
+	// 	.resultItem(TFC.isp.of('betterend:shadow_berry_cooked').copyFood())
 
-	event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
-		.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
+	// event.recipes.tfc.heating('betterend:cave_pumpkin_pie_raw', 200)
+	// 	.resultItem(TFC.isp.of('betterend:cave_pumpkin_pie').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_glacian_mutton', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_glacian_mutton').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_glacian_mutton', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_glacian_mutton').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_sniffer_beef', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_sniffer_beef').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_wraptor', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_wraptor').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_bison_meat', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_bison_meat').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_bison_meat', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_bison_meat').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_springling_collar', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_springling_collar').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_walker_steak', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_walker_steak').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_glider_wings', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_glider_wings').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_glider_wings', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_glider_wings').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_whole_soarer', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_whole_soarer').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_whole_soarer', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_whole_soarer').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_crusher_meat', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_crusher_meat').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_crusher_meat', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_crusher_meat').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_goober_meat', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_goober_meat').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_surfer_steak', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_surfer_steak').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_surfer_steak', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_surfer_steak').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_cruncher_ribs', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_cruncher_ribs').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_cruncher_ribs', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_cruncher_ribs').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_stickastackatick', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_stickastackatick').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_stickastackatick', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_stickastackatick').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
+	// event.recipes.tfc.heating('tfg:food/raw_long_pig_filet', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_long_pig_filet').copyFood())
 
-	event.recipes.tfc.heating('tfg:food/brioche_dough', 200)
-		.resultItem(TFC.isp.of('tfg:food/brioche_bun').copyFood());
+	// event.recipes.tfc.heating('tfg:food/brioche_dough', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/brioche_bun').copyFood());
 
-	event.recipes.tfc.heating('tfg:food/raw_burger_patty', 200)
-		.resultItem(TFC.isp.of('tfg:food/cooked_burger_patty').copyFood());
+	// event.recipes.tfc.heating('tfg:food/raw_burger_patty', 200)
+	// 	.resultItem(TFC.isp.of('tfg:food/cooked_burger_patty').copyFood());
 
-	event.recipes.tfc.heating('tfg:lentil_product', 200)
-	 	.resultItem(TFC.isp.of('tfg:food/cooked_lentil').copyFood())
+	// event.recipes.tfc.heating('tfg:lentil_product', 200)
+	//  	.resultItem(TFC.isp.of('tfg:food/cooked_lentil').copyFood())
 
-	event.recipes.tfc.heating('tfg:cassava_product', 200)
-	 	.resultItem(TFC.isp.of('tfg:food/cooked_cassava').copyFood())
+	// event.recipes.tfc.heating('tfg:cassava_product', 200)
+	//  	.resultItem(TFC.isp.of('tfg:food/cooked_cassava').copyFood())
 
-	event.recipes.tfc.heating('tfg:beans_product', 200)
-	 	.resultItem(TFC.isp.of('tfg:food/cooked_beans').copyFood())
+	// event.recipes.tfc.heating('tfg:beans_product', 200)
+	//  	.resultItem(TFC.isp.of('tfg:food/cooked_beans').copyFood())
 
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('tfg:food/raw_stickastackatick').copyFood(),
@@ -1445,14 +1333,14 @@ function registerTFGFoodRecipes(event) {
 	// Deep Frying
 	for (let i = 1; i <= 5; i++) {
 		// Fries
-		event.recipes.tfc.pot(
-			Array(i).fill('tfg:food/raw_fries'),
-			TFC.fluidStackIngredient('#firmalife:oils', 100 * i),
-			20*20,
-			200
-			)
-			.itemOutput(TFC.isp.of(`${i}x tfg:food/cooked_fries`).copyFood()
-		).id(`tfg:pot/cooked_fries_${i}`);
+		// event.recipes.tfc.pot(
+		// 	Array(i).fill('tfg:food/raw_fries'),
+		// 	TFC.fluidStackIngredient('#firmalife:oils', 100 * i),
+		// 	20*20,
+		// 	200
+		// 	)
+		// 	.itemOutput(TFC.isp.of(`${i}x tfg:food/cooked_fries`).copyFood()
+		// ).id(`tfg:pot/cooked_fries_${i}`);
 
 		// Popcorn
 		event.recipes.tfc.pot(
@@ -1475,6 +1363,8 @@ function registerTFGFoodRecipes(event) {
 		).id(`tfg:pot/cooked_beer_battered_cheese_curds_${i}`);
 	};
 
+	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_fries', 'tfg:food/cooked_fries', true, true, 3)
+
 	// Fries
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('4x tfg:food/raw_fries').copyFood(),
@@ -1489,12 +1379,12 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_fries').copyFood()
 	});
 
-	global.registerFoodRecipe(event, 'food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
-		itemInputs: ['tfg:food/raw_fries'],
-		itemOutputs: ['tfg:food/cooked_fries'],
-		fluidInputs: ['#firmalife:oils 100'],
-		itemOutputProvider: TFC.isp.of('tfg:food/cooked_fries').copyFood().addTrait('firmalife:oven_baked')
-	});
+	// global.registerFoodRecipe(event, 'food_oven', 'cooked_fries', 20*6, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
+	// 	itemInputs: ['tfg:food/raw_fries'],
+	// 	itemOutputs: ['tfg:food/cooked_fries'],
+	// 	fluidInputs: ['#firmalife:oils 100'],
+	// 	itemOutputProvider: TFC.isp.of('tfg:food/cooked_fries').copyFood().addTrait('firmalife:oven_baked')
+	// });
 
 	// Popcorn
 	global.registerFoodRecipe(event, 'food_oven', 'popcorn', 20*10, GTValues.VA[GTValues.ULV], 'tfg.food_recipe.deep_frying', {
@@ -1545,7 +1435,7 @@ function registerTFGFoodRecipes(event) {
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.isp.of('tfg:food/hamburger').meal(
 			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
 		),
 		[
 			'CA ',
@@ -1579,20 +1469,20 @@ function registerTFGFoodRecipes(event) {
 		0
 	).id('tfg:crafting/cheeseburger');
 
-	global.processorRecipe(event, 'tfg:hamburger', 20*1, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['2x tfg:food/brioche_bun','3x #tfg:foods/usable_in_burgers'],
+	global.processorRecipe(event, `hamburger`, 20*1, GTValues.VA[GTValues.ULV], {
+		itemInputs: [`3x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
 		itemOutputs: ['tfg:food/hamburger'],
-		circuit: 1,
+		circuit: 2,
 		itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
 			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
 		)
 	});
 
-	global.processorRecipe(event, `tfg:cheeseburger`, 20*1, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['2x #tfg:foods/usable_in_burgers', '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
+	global.processorRecipe(event, `cheeseburger`, 20*1, GTValues.VA[GTValues.ULV], {
+		itemInputs: [`2x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
 		itemOutputs: ['tfg:food/cheeseburger'],
-		circuit: 2,
+		circuit: 3,
 		itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
 			(food) => food.hunger(4).decayModifier(1.3),
 			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
@@ -1728,7 +1618,7 @@ function registerTFGFoodRecipes(event) {
 			'#tfg:foods/cheese_curds',
 			'2x #tfc:bowls'
 		],
-		fluidInputs: ['tfg:brown_gravy 500'],
+		fluidInputs: ['tfg:brown_gravy 50'],
 		itemOutputs: ['2x tfg:food/poutine'],
 		itemOutputProvider: TFC.isp.of('2x tfg:food/poutine').simpleModifier('tfg:add_bowl').meal(
             (food) => food.hunger(5).water(5).saturation(1).decayModifier(1).grain(1).protein(0.5).dairy(1.5),
@@ -1853,5 +1743,4 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	//#endregion
-
 }
