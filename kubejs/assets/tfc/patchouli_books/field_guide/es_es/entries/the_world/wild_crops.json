@@ -1,11 +1,11 @@
 {
-  "name": "Wild Crops",
+  "name": "Cultivos Silvestres",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "Los $(thing)Cultivos Silvestres$() se pueden encontrar esparcidos por el mundo, creciendo en pequeños parches. Se pueden cosechar para obtener comida y semillas, las cuales se pueden cultivar, esta vez, en su forma no silvestre.$(br2)Puedes cosechar cultivos silvestres con los puños, con un $(thing)Cuchillo$() o con cualquier otra herramienta afilada. Cuando se rompen, soltarán $(thing)Semillas$() y algunos $(thing)Productos$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,7 +22,7 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
+      "name": "Trigo Silvestre",
       "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
       "enable_visualize": false
     },
@@ -32,7 +32,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Todas las distintas variedades de plantas silvestres ",
       "multiblocks": [
         {
           "pattern": [
@@ -333,7 +333,7 @@
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {
@@ -341,7 +341,7 @@
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Cebada"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Avena"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Centeno"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Maíz"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Trigo"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Arroz"
         },
         {
           "text": " 15 - 30"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Zanahoria"
         },
         {
           "text": "  3 - 30"
@@ -472,7 +472,7 @@
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {
@@ -611,7 +611,7 @@
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {

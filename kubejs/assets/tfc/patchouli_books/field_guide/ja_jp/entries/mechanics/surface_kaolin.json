@@ -1,5 +1,5 @@
 {
-    "name": "Kaolin Clay",
+    "name": "カオリン粘土",
     "icon": "tfc:kaolin_clay",
     "category": "tfc:mechanics",
     "read_by_default": true,
@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kaolinite",
-			"text": "Kaolin Clay is required to make $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+			"text": "カオリン粘土は、$(l:mechanics/fire_clay)耐火粘土$()の材料として必要になります。Y=75〜110の高さにある高原、緩やかな丘、高地（およびそれらの$(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)$()カルスト地形$(t:Burren, Cenote, Doline, Shilin, or Tower Karst)$()）、または古代の山岳や楯状火山において、$(l:the_world/climate#temperature)気温$() 18°C以上・$(l:the_world/climate#rainfall)降水量$()300mm以上の環境に生成されます。$(thing)ハエマンサス$()はカオリン粘土の上に咲く花で、目印になり、その下最大35ブロックの位置にカオリン粘土が存在する可能性があります。"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+			"text": "基本的には、$(thing)南東$()に進むほど、温暖湿潤な環境になります。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -87,7 +87,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfc:powder/kaolinite",
 			"anchor": "powder",
-			"text": "Only $(thing)20%$() of Kaolin Clay will turn into $(thing)Kaolinite Powder$(), so it's recommended to bake it on-site using $(l:getting_started/pit_kiln)Pit Kilns$() to save inventory space.$(br2)Bring home around 20 $(thing)Blocks$() of Kaolin Clay as well, for $(l:mechanics/glassworking_applications)Glassworking$() later."
+			"text": "カオリン粘土は$(thing)20%$()しか$(thing)カオリナイトの粉末$()にならないため、インベントリ節約のためにも$(l:getting_started/pit_kiln)穴窯$()などでその場で焼いてしまうのがおすすめです。$(br2)ただし、\n$(l:mechanics/glassworking_applications)ガラスの精製$()用に、カオリン粘土を$(thing)20ブロック$()ほど持ち帰っておくのもよいでしょう。"
 		}
     ]
 }

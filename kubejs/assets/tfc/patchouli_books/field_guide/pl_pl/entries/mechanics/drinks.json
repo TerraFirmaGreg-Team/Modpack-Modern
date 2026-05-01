@@ -26,7 +26,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Vintage Alcohol",
+			"title": "Klasyczny alkohol",
 			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels. These alcohols provide a stronger effect and a longer duration.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
 		},

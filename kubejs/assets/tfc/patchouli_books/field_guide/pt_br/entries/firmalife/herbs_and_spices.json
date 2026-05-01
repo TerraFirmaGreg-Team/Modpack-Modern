@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Uma planta de grama-borboleta.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "A grama-borboleta amadurece com o tempo. Quando atinge a maturidade, tem a oportunidade de se espalhar para os blocos vizinhos ou se transformar em algo novo. Blocos de grama-borboleta espalhados por outro bloco de grama não se espalham mais.$(br)Depois da Grama-borboleta virar outra grama, você pode pegá-la com $(item)Tesouras$()."
 		}
 	],
 	"read_by_default": true,
