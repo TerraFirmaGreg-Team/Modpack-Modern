@@ -62,16 +62,16 @@
       "item": "gtceu:prospector.lv",
       "title": "デジタルな鉱石探知",
       "link_recipes": false,
-      "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+      "text": "夢の技術が実現しました！これは鉱脈探索に革新をもたらします！$(br)$(item)電動探知機$()は、鉱脈や液体鉱脈を探知するための$(thing)GregTech$()製のデバイスです。鉱脈の位置や大きさを地上からでも簡単に確認できるようになります。その探知範囲や機能は$(#ff1100)電圧ティア$()が上がるほどに向上します。"
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "電動探知機",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
-      "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."
+      "text": "これは$(#e373ff)LuV電動探知機$()を使用した際の表示の例です。"
     }
   ],
   "read_by_default": true,

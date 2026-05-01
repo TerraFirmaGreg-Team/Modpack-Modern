@@ -63,7 +63,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "rubber_fig",
-			"title": "Rubber Fig",
+			"title": "Figa gumowa",
 			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 9.8°C$(br)$(thing)Maximum Temperature$(): 20.7°C$(br)$(thing)Minimum Rainfall$(): 290$(br)$(thing)Maximum Rainfall$(): 400$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 4°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
