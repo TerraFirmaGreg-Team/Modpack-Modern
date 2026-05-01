@@ -1,12 +1,12 @@
 {
-	"name": "Fishing Nets",
+	"name": "Redes de pesca",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fishing Nets",
+			"title": "Redes de pesca",
 			"item": {
 				"tag": "forge:tools/fishing_nets"
 			},
