@@ -213,6 +213,7 @@ function registerTFCLoots(event) {
 	event.addEntityLootModifier('tfc:caribou')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addLoot('tfc_textile:caribou_fur')
+		.addWeightedLoot([6, 10], ['tfc:food/venison'])
 		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 

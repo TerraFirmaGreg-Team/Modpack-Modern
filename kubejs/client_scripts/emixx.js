@@ -86,11 +86,11 @@ const registerSingleGroups = (event) => {
         '#tfchotornot:tong_parts',
         '#tfcscraping:scraping_knife_blades',
         '#forge:fish_hooks',
+        '#tfg:rope_ladders',
 
         // Tools (Minecraft)
         '#tfc:pickaxes',
         '#tfc:shovels',
-        '#tfc:axes',
         '#tfc:hoes',
 
         // Tools (Forge)

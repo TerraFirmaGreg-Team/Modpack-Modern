@@ -23,18 +23,18 @@
       "text": "中央の石を金床に加工します。",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        " 0 "
-    ],
-    [
-        "RRR"
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              " 0 "
+            ],
+            [
+              "RRR"
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         "tfc:rock_anvil"
       ]
@@ -50,165 +50,165 @@
       "text": "石の周囲6面を全て採掘しましょう。完了すると中央の石ブロックがアイテムとしてドロップします。",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         }
       ]
     },

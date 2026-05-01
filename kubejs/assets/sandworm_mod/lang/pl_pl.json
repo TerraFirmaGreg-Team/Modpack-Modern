@@ -1,4 +1,8 @@
 {
 	"block.sandworm_mod.thumper": "Dudnik",
-	"entity.sandworm_mod.worm_chain": "Czerw pustynny"
+	"death.attack.worm": "%1$s został połknięty",
+	"entity.sandworm_mod.worm_chain": "Czerw pustynny",
+	"entity.sandworm_mod.worm_head_segment": "Głowa czerwia piaskowego",
+	"entity.sandworm_mod.worm_segment": "Ciało czerwia piaskowego",
+	"item.sandworm_mod.sandworm_tooth": "Ząb czerwia piaskowego"
 }

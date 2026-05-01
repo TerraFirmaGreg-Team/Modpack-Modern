@@ -1,66 +1,66 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Prospecting",
+  "name": "探鉱",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)small metal nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/earth_ore_index)ores and minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+      "text": "その$(l:getting_started/finding_ores)小さな鉱石$()をどこで拾ったか覚えていますよね？さらなる鉱石を見つけるには、広範な探索と採掘が必要になる場合があります。そのため$(l:tfg_ores/earth_ore_index)鉱石や鉱物$()について十分に理解しておくことが重要です。特定の資源が必要な場合は、それが生成される岩石層を、自分の足元や世界各地で探し出す必要があります。"
     },
     {
       "type": "patchouli:text",
-      "text": "When picking up small nuggets becomes unsatisfying, it is time to start prospecting to find ore veins:$(br)$(li)Small nuggets, surface buds, and surface rocks occur when an ore vein is located below. If you find the center of a group of nuggets, it's likely that the vein is beneath you.$(li)Exposed ore can occur in cliffs and water bodies, which may be seen from farther away."
+      "text": "小さな金属の塊を拾うだけでは物足りなくなったら、鉱脈を探すための「探鉱」を始める段階です。$(br)$(li)小さな鉱石や小さな粉、露出した岩石は、その地下に鉱脈が存在する場合に現れます。それらの中心付近の直下に鉱脈がある可能性が高いです。$(li)また、鉱石は崖や水辺にも露出して生成されることがあり、遠くからでも確認できる場合もあります。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "propick",
       "item": "tfc:metal/propick/copper",
-      "title": "Prospector's Pick",
+      "title": "探鉱槌",
       "link_recipes": false,
-      "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
+      "text": "鉱脈を探していて、直観のままに掘り進めていてもまったく見つからないという場合は$(item)探鉱槌$()の出番です。$(thing)TFC$()の探鉱槌に慣れている人は、$(thing)TerraFirmaGreg$()でその挙動が大きく異なることに驚くかもしれません。"
     },
     {
       "type": "patchouli:text",
-      "text": "Right-clicking a prospector's pick in $(thing)TFG$() will cast a search ray in your views direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+      "text": "$(thing)TFG$()では探鉱槌で右クリックすることで、視線方向の鉱脈を探知し、様々な情報を表示してくれます。探知範囲（幅・深さ）はツールのティアに応じて変化し、ツールチップに表示されます。また上位ティアの探鉱槌になると、探知範囲内の鉱石の存在量が数値で表示するようになり、最上位のものは鉱脈の位置を$(thing)X線$()のように可視化して表示してくれるようになります。"
     },
     {
       "type": "patchouli:text",
-      "text": "The prospector's pick can display the following information on use:$(br)$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
+      "text": "探鉱槌は使用時にチャット欄にて以下の情報を表示します：$(br)$(li)鉱脈の$(thing)総鉱石量$()、鉱脈を構成する$(thing)鉱石の種類$()、および各鉱石タイプごとの$(thing)個別数量$()を確認できます。$(li)$(thing)色付き鋼$()製の探鉱槌は、鉱脈の$(thing)中心位置$()に大きなX線パーティクルを表示するものと$(thing)各鉱石ブロック単位のパーティクル$()を表示するものがあります。"
     },
     {
       "type": "patchouli:image",
-      "title": "Prospector View",
+      "title": "探鉱表示",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
       "border": true,
-      "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray."
+      "text": "探鉱槌使用時の表示の例です。大きな$(bold)\"！\"$()の表示は鉱脈の位置を示しており、小さな$(bold)\"！\"$()は各鉱石の位置を示しています。"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
+      "text": "探鉱槌を作成するには、他のツールと同じように、粘土を$(l:getting_started/pottery)ナッピング$()して探鉱槌の頭の型を作る必要があります。"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(item)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
+      "text": "未焼成の型を$(l:getting_started/pottery)ナッピング$()で作成した後、それを$(l:mechanics/heating)焼成$()して$(item)探鉱槌の頭の型$()に仕上げます。$(br2)その後、溶融した金属をその型へ流し込んで探鉱槌の頭を$(l:getting_started/finding_ores#casting)鋳造$()します。"
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "A prospector's pick head can also be $(l:mechanics/anvils#working)smithed$() out of an $(item)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The prospector's pick is then created by crafting the tool head with a stick."
+      "text": "探鉱槌の頭は、$(l:mechanics/anvils)金床$()で金属の$(item)インゴット$()を$(l:mechanics/anvils#working)鍛造$()することによっても作成できます。$(br2)その後、完成した探鉱槌の頭と棒を組み合わせてクラフトすることで、探鉱槌が完成します。"
     },
     {
       "type": "patchouli:text",
-      "text": "The majority of the stats and charecteristics of the prospector's picks can be adjustable in your server config file."
+      "text": "探鉱槌のほとんどの性能や特性は、サーバーの設定ファイルによって調整することができます。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "prospector",
       "item": "gtceu:prospector.lv",
-      "title": "Digital Ore Prospector's",
+      "title": "デジタルな鉱石探知",
       "link_recipes": false,
       "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
     },
@@ -68,7 +68,7 @@
       "type": "patchouli:image",
       "title": "Ore Prospector",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
       "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."

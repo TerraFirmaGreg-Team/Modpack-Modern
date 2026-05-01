@@ -11,7 +11,7 @@
       "type": "patchouli:image",
       "title": "铺路车",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
@@ -19,7 +19,7 @@
       "type": "patchouli:image",
       "title": "宽度调节滑块",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
       "text": "通过操作界面中的滑块可调整铺设路径的宽度"
@@ -28,7 +28,7 @@
       "type": "patchouli:image",
       "title": "可变宽度路径",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
@@ -36,7 +36,7 @@
       "type": "patchouli:image",
       "title": "随机模式按钮",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
       "text": "这辆推车有一种模式，可以以随机模式铺设材料。"
@@ -45,7 +45,7 @@
       "type": "patchouli:image",
       "title": "随机材料路径",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }

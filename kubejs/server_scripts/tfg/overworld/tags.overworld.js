@@ -20,7 +20,6 @@ function registerTFGOverworldItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:plant/mussels');
 	event.add('tfc:fluxstone', 'tfg:plant/barnacles');
-	event.add('tfc:fluxstone', 'firmalife:hollow_shell');
 
 	event.add('tfg:stone_composition/igneous_mafic', 'tfg:mafic_hornfels')
 	event.add('tfg:stone_composition/metamorphic', 'tfg:pelitic_hornfels')
@@ -555,6 +554,9 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
 	event.add('tfg:ignores_cacti', 'waves:waves')
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
+	event.add('tfg:ignores_cacti', 'tfc:horse')
+	event.add('tfg:ignores_cacti', 'tfc:donkey')
+	event.add('tfg:ignores_cacti', 'tfc:mule')
 
 	event.add('tfc:amphibious_creatures', 'tfg:leopard_seal')
 	event.add('tfc:spawns_on_cold_blocks', 'tfg:leopard_seal')
