@@ -39,188 +39,129 @@ const registerRnrRecipes = (event) => {
 		.duration(20)
 		.EUt(120)
 
-	global.TFC_STONE_TYPES.forEach(stone => {
-		// cobble roads
-		event.recipes.gtceu.forming_press(`tfg:cobbled_road/${stone}`)
-			.itemInputs('rnr:base_course', `tfc:rock/loose/${stone}`)
-			.itemOutputs(`rnr:rock/cobbled_road/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.forming_press(`tfg:cobbled_road/mossy_${stone}`)
-			.itemInputs('rnr:base_course', `tfc:rock/mossy_loose/${stone}`)
-			.itemOutputs(`rnr:rock/cobbled_road/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:cobbled_road/${stone}_slab`)
-			.itemInputs(`rnr:rock/cobbled_road/${stone}`)
-			.itemOutputs(`rnr:rock/cobbled_road/${stone}_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:cobbled_road/${stone}_stairs`)
-			.itemInputs(`rnr:rock/cobbled_road/${stone}`)
-			.itemOutputs(`rnr:rock/cobbled_road/${stone}_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-
-		// sett roads
-		event.recipes.gtceu.forming_press(`tfg:sett_road/${stone}`)
-			.itemInputs('rnr:base_course', `tfc:brick/${stone}`)
-			.itemOutputs(`rnr:rock/sett_road/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:sett_road/${stone}_slab`)
-			.itemInputs(`rnr:rock/sett_road/${stone}`)
-			.itemOutputs(`rnr:rock/sett_road/${stone}_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:sett_road/${stone}_stairs`)
-			.itemInputs(`rnr:rock/sett_road/${stone}`)
-			.itemOutputs(`rnr:rock/sett_road/${stone}_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-		
-		//flagstones
-		event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${stone}`)
-			.itemInputs(`tfc:brick/${stone}`)
-			.itemOutputs(`2x rnr:flagstone/${stone}`)
-			.duration(20)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.recipes.gtceu.cutter(`rnr:assembler/flagstone/mossy_${stone}`)
-			.itemInputs(`tfc:rock/mossy_loose/${stone}`)
-			.itemOutputs(`2x rnr:flagstone/${stone}`)
-			.duration(20)
-			.EUt(GTValues.VA[GTValues.ULV])
-		//flagstone roads	
-		event.recipes.gtceu.assembler(`tfg:flagstones/${stone}`)
-			.itemInputs('rnr:base_course', `rnr:flagstone/${stone}`)
-			.itemOutputs(`rnr:rock/flagstones/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:assembler/flagstones/${stone}_slab`)
-			.itemInputs(`rnr:rock/flagstones/${stone}`)
-			.itemOutputs(`rnr:rock/flagstones/${stone}_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:assembler/flagstones/${stone}_stairs`)
-			.itemInputs(`rnr:rock/flagstones/${stone}`)
-			.itemOutputs(`rnr:rock/flagstones/${stone}_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-
-
-		//gravel roads
-		event.recipes.gtceu.forming_press(`tfg:gravel_road/${stone}`)
-			.itemInputs('rnr:base_course', `rnr:gravel_fill/${stone}`)
-			.itemOutputs(`rnr:rock/gravel_road/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.forming_press(`tfg:over_height_gravel/${stone}`)
-			.itemInputs(`rnr:rock/gravel_road/${stone}`, `rnr:gravel_fill/${stone}`)
-			.itemOutputs(`rnr:rock/over_height_gravel/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:gravel_road/${stone}_slab`)
-			.itemInputs(`rnr:rock/gravel_road/${stone}`)
-			.itemOutputs(`rnr:rock/gravel_road/${stone}_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:gravel_road/${stone}_stairs`)
-			.itemInputs(`rnr:rock/gravel_road/${stone}`)
-			.itemOutputs(`rnr:rock/gravel_road/${stone}_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-
-		//macadam roads
-		event.recipes.gtceu.forming_press(`tfg:macadam_road/${stone}`)
-			.itemInputs(`rnr:rock/over_height_gravel/${stone}`)
-			.notConsumable('gtceu:empty_mold')
-			.itemOutputs(`rnr:rock/macadam_road/${stone}`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}_slab`)
-			.itemInputs(`rnr:rock/macadam_road/${stone}`)
-			.itemOutputs(`rnr:rock/macadam_road/${stone}_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}_stairs`)
-			.itemInputs(`rnr:rock/macadam_road/${stone}`)
-			.itemOutputs(`rnr:rock/macadam_road/${stone}_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-
-	});
-
-	//sandstone flagstones
-	global.SAND_COLORS.forEach(sand => {
-		event.recipes.gtceu.assembler(`rnr:assembler/flagstone/${sand}_sandstone`)
-			.itemInputs(`tfc:raw_sandstone/${sand}`)
-			.itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
-			.circuit(7)
-			.duration(20)
-
-			.EUt(GTValues.VA[GTValues.ULV])
-			event.recipes.gtceu.forming_press(`tfg:flagstones/${sand}_sandstone_flagstones`)
-			.itemInputs('rnr:base_course', `rnr:flagstone/${sand}_sandstone`)
-			.itemOutputs(`rnr:${sand}_sandstone_flagstones`)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_slab`)
-			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
-			.itemOutputs(`rnr:${sand}_sandstone_flagstones_slab`)
-			.circuit(2)
-			.duration(20)
-			.EUt(120)
-
-		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_stairs`)
-			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
-			.itemOutputs(`rnr:${sand}_sandstone_flagstones_stairs`)
-			.circuit(3)
-			.duration(20)
-			.EUt(120)
-		});
-	
-	//brick sett roads
-	event.recipes.gtceu.forming_press(`tfg:sett_road/brick}`)
+	//clay brick sett roads
+	event.recipes.gtceu.forming_press(`tfg:sett_road/brick`)
 		.itemInputs('rnr:base_course', 'minecraft:brick')
 		.itemOutputs('rnr:brick_road')
 		.duration(20)
 		.EUt(120)
+
 	event.recipes.gtceu.assembler(`tfg:sett_road_stairs/brick`)
 		.itemInputs('rnr:brick_road')
 		.itemOutputs('rnr:brick_road_slab')
 		.circuit(2)
 		.duration(20)
 		.EUt(120)
+
 	event.recipes.gtceu.assembler(`tfg:sett_road_slab/brick`)
 		.itemInputs('rnr:brick_road')
 		.itemOutputs('rnr:brick_road_stairs')
 		.circuit(3)
 		.duration(20)
 		.EUt(120)
+
+	const roads = [
+		{ type: 'cobbled_road', ingredient: 'tfc:rock/loose' },
+		{ type: 'sett_road',	ingredient: 'tfc:brick' },
+		{ type: 'flagstones',	ingredient: 'rnr:flagstone' },
+		{ type: 'gravel_road', 	ingredient: 'rnr:gravel_fill' }
+
+	]
+
+	global.TFC_STONE_TYPES.forEach(stone => {
+		//flagstones
+		event.recipes.gtceu.cutter(`rnr:flagstone/${stone}`)
+			.itemInputs(`tfc:brick/${stone}`)
+			.itemOutputs(`2x rnr:flagstone/${stone}`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		//cobble road from mossy rock
+		event.recipes.gtceu.forming_press(`tfg:rock/cobbled_road/${stone}_moss`)
+			.itemInputs('rnr:base_course', `tfc:rock/mossy_loose/${stone}`)
+			.itemOutputs(`rnr:rock/cobbled_road/${stone}`)
+			.duration(50)
+			.EUt(120)
+
+		//over height gravel & macadam
+		event.recipes.gtceu.forming_press(`tfg:over_height_gravel/${stone}`)
+			.itemInputs(`rnr:rock/gravel_road/${stone}`, `rnr:gravel_fill/${stone}`)
+			.itemOutputs(`rnr:rock/over_height_gravel/${stone}`)
+			.duration(50)
+			.EUt(120)
+		
+		event.recipes.gtceu.forming_press(`tfg:macadam_road/${stone}`)
+			.itemInputs(`rnr:rock/over_height_gravel/${stone}`)
+			.notConsumable('gtceu:empty_mold')
+			.itemOutputs(`rnr:rock/macadam_road/${stone}`)
+			.duration(50)
+			.EUt(120)
+
+		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}/slab`)
+			.itemInputs(`rnr:rock/macadam_road/${stone}`)
+			.itemOutputs(`rnr:rock/macadam_road/${stone}_slab`)
+			.circuit(2)
+			.duration(50)
+			.EUt(120)
+
+		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}_stairs`)
+			.itemInputs(`rnr:rock/macadam_road/${stone}`)
+			.itemOutputs(`rnr:rock/macadam_road/${stone}_stairs`)
+			.circuit(3)
+			.duration(50)
+			.EUt(120)
+
+		roads.forEach(road => {
+			// all other roads but sandstone flagstones
+			event.recipes.gtceu.forming_press(`tfg:${road.type}/${stone}`)
+				.itemInputs('rnr:base_course', `${road.ingredient}/${stone}`)
+				.itemOutputs(`rnr:rock/${road.type}/${stone}`)
+				.duration(50)
+				.EUt(120)
+
+			event.recipes.gtceu.assembler(`tfg:${road.type}/${stone}_slab`)
+				.itemInputs(`rnr:rock/${road.type}/${stone}`)
+				.itemOutputs(`rnr:rock/${road.type}/${stone}_slab`)
+				.circuit(2)
+				.duration(50)
+				.EUt(120)
+
+			event.recipes.gtceu.assembler(`tfg:${road.type}/${stone}_stairs`)
+				.itemInputs(`rnr:rock/${road.type}/${stone}`)
+				.itemOutputs(`rnr:rock/${road.type}/${stone}_stairs`)
+				.circuit(3)
+				.duration(50)
+				.EUt(120)
+		})
+	})
+	//sandstone flagstones
+	global.SAND_COLORS.forEach(sand => {
+		event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${sand}_sandstone`)
+			.itemInputs(`tfc:cut_sandstone/${sand}`)
+			.itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
+			.duration(20)
+
+			.EUt(GTValues.VA[GTValues.ULV])
+			event.recipes.gtceu.forming_press(`tfg:flagstones/${sand}_sandstone_flagstones`)
+			.itemInputs('rnr:base_course', `rnr:flagstone/${sand}_sandstone`)
+			.itemOutputs(`rnr:${sand}_sandstone_flagstones`)
+			.duration(50)
+			.EUt(120)
+
+		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_slab`)
+			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
+			.itemOutputs(`rnr:${sand}_sandstone_flagstones_slab`)
+			.circuit(2)
+			.duration(50)
+			.EUt(120)
+
+		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_stairs`)
+			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
+			.itemOutputs(`rnr:${sand}_sandstone_flagstones_stairs`)
+			.circuit(3)
+			.duration(50)
+			.EUt(120)
+		});
 	
 	// wet concretes
 	event.recipes.gtceu.chemical_bath('tfg:wet_concrete_road')
@@ -229,99 +170,47 @@ const registerRnrRecipes = (event) => {
 		.itemOutputs('rnr:wet_concrete_road')
 		.duration(20)
 		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:smooth_wet_concrete_road')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('gtceu:empty_mold')
-		.itemOutputs('rnr:wet_concrete_road')
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:wet_concrete_road_control_joint')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('#forge:rods')
-		.itemOutputs('rnr:wet_concrete_road_control_joint')
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:wet_concrete_road_panel')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('#forge:smooth_stone')
-		.itemOutputs('rnr:wet_concrete_road_panel')
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:wet_concrete_road_sett')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('#rnr:brick_road_items')
-		.itemOutputs('rnr:wet_concrete_road_sett')
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:wet_concrete_road_sett_minecraft_brick')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('minecraft:brick')
-		.itemOutputs('rnr:wet_concrete_road_sett')
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.forming_press('tfg:wet_concrete_road_flagstones')
-		.itemInputs('#tfg:wet_concrete_roads')
-		.notConsumable('#rnr:flagstone_road_items')
-		.itemOutputs('rnr:wet_concrete_road_flagstones')
-		.duration(20)
-		.EUt(120)
-
-	//dry concretes
-	event.recipes.gtceu.fluid_solidifier('tfg:concrete_road')
-	.itemInputs('rnr:wet_concrete_road')
-	.itemOutputs('rnr:concrete_road')
-	.duration(20)
-	.EUt(120)
-
-	event.recipes.gtceu.assembler(`tfg:concrete_road_slab`)
-		.itemInputs(`rnr:concrete_road`)
-		.itemOutputs(`rnr:concrete_road_slab`)
-		.circuit(2)
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.assembler(`rnr:concrete_road_stairs`)
-		.itemInputs(`rnr:concrete_road`)
-		.itemOutputs(`rnr:concrete_road_stairs`)
-		.circuit(3)
-		.duration(20)
-		.EUt(120)
-
-	event.recipes.gtceu.fluid_solidifier('tfg:concrete_road_control_joint')
-	.itemInputs('rnr:wet_concrete_road_control_joint')
-	.itemOutputs('rnr:concrete_road_control_joint')
-	.duration(20)
-	.EUt(120)
-
-	const CONCRETE_TYPES = [
-		"sett",
-		"flagstones",
-		"panel"
+	
+	const WET_CONCRETES = [
+		{ type: '', 				item:'gtceu:empty_mold'},
+		{ type: '_control_joint',	item:'#forge:rods'},
+		{ type: '_panel',			item:'#forge:smooth_stone'},
+		{ type: '_sett',			item:'#rnr:brick_road_items'},
+		{ type: '_flagstones',		item:'#rnr:flagstone_road_items'}
 	]
 
-	CONCRETE_TYPES.forEach(type => {
-		event.recipes.gtceu.fluid_solidifier(`tfg:concrete_road_${type}`)
-			.itemInputs(`rnr:wet_concrete_road_${type}`)
-			.itemOutputs(`rnr:concrete_road_${type}`)
+	WET_CONCRETES.forEach(concrete => {
+		event.recipes.gtceu.forming_press(`tfg:wet_concrete_road${concrete.type}`)
+			.itemInputs('#tfg:wet_concrete_roads')
+			.notConsumable(`${concrete.item}`)
+			.itemOutputs(`rnr:wet_concrete_road${concrete.type}`)
+			.duration(50)
+			.EUt(120)
+		event.recipes.gtceu.fluid_solidifier(`tfg:concrete_road${concrete.type}`)
+			.itemInputs(`rnr:wet_concrete_road${concrete.type}`)
+			.itemOutputs(`rnr:concrete_road${concrete.type}`)
 			.duration(20)
 			.EUt(120)
+	})
 
-		event.recipes.gtceu.assembler(`tfg:concrete_road_${type}_slab`)
-			.itemInputs(`rnr:concrete_road_${type}`)
-			.itemOutputs(`rnr:concrete_road_${type}_slab`)
+	const CONCRETE_STAIR_SLABS = [
+		"",
+		"_sett",
+		"_flagstones",
+		"_panel"
+	]
+
+	CONCRETE_STAIR_SLABS.forEach(type => {
+		event.recipes.gtceu.assembler(`tfg:concrete_road${type}_slab`)
+			.itemInputs(`rnr:concrete_road${type}`)
+			.itemOutputs(`rnr:concrete_road${type}_slab`)
 			.circuit(2)
 			.duration(20)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`rnr:concrete_road_${type}_stairs`)
-			.itemInputs(`rnr:concrete_road_${type}`)
-			.itemOutputs(`rnr:concrete_road_${type}_stairs`)
+		event.recipes.gtceu.assembler(`rnr:concrete_road${type}_stairs`)
+			.itemInputs(`rnr:concrete_road${type}`)
+			.itemOutputs(`rnr:concrete_road${type}_stairs`)
 			.circuit(3)
 			.duration(20)
 			.EUt(120)
@@ -341,28 +230,33 @@ const registerRnrRecipes = (event) => {
 			result: 'rnr:base_course',
 			mode: `smooth`})
 			.id(`tfg:rnr/mattock/recycle_${type}_concrete_road`)
+
 		event.custom({	
 			type: 'rnr:mattock',
 			ingredient: `rnr:${type}_concrete_road_stairs`,
 			result: 'rnr:base_course',
 			mode: 'smooth'})
 			.id(`tfg:rnr/mattock/recycle_${type}_concrete_road_stairs`)
+
 		event.custom({	
 			type: 'rnr:mattock',
 			ingredient: `rnr:${type}_concrete_road_slab`,
 			result: 'rnr:base_course',
 			mode: 'smooth'})
 			.id(`tfg:rnr/mattock/recycle_${type}_concrete_road_slab`)
+
 		event.recipes.gtceu.forge_hammer(`tfg:forge_hammer/recycle_${type}_concrete_road`)
 			.itemInputs(`rnr:${type}_concrete_road`)
 			.itemOutputs('rnr:base_course')
 			.duration(20)
 			.EUt(30)
+
 		event.recipes.gtceu.forge_hammer(`tfg:forge_hammer/recycle_${type}_concrete_road_stairs`)
 			.itemInputs(`rnr:${type}_concrete_road_stairs`)
 			.itemOutputs('rnr:base_course')
 			.duration(20)
 			.EUt(30)
+
 		event.recipes.gtceu.forge_hammer(`tfg:forge_hammer/recycle_${type}_concrete_road_slab`)
 			.itemInputs(`rnr:${type}_concrete_road_slab`)
 			.itemOutputs(`rnr:base_course`)
@@ -413,7 +307,6 @@ const registerRnrRecipes = (event) => {
 		event.recipes.gtceu.assembler(`tfg:wood/shingle/${wood}`)
 			.itemInputs(`tfc:wood/log/${wood}`)
 			.itemOutputs(`4x rnr:wood/shingle/${wood}`)
-			.circuit(3)
 			.duration(20)
 			.EUt(30)
 		
@@ -423,17 +316,29 @@ const registerRnrRecipes = (event) => {
 			.duration(20)
 			.EUt(30)
 
-		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab`)
+		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab_from_framing`)
 			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_slab')
 			.itemOutputs(`rnr:wood/shingles/${wood}_slab`)
-			.circuit(2)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_stairs_from_framing`)
+			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_stairs')
+			.itemOutputs(`rnr:wood/shingles/${wood}_stairs`)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab`)
+			.itemInputs(`rnr:wood/shingles/${wood}`)
+			.itemOutputs(`rnr:wood/shingles/${wood}_slab`)
+			.circuit(3)
 			.duration(20)
 			.EUt(30)
 
 		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_stairs`)
-			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_stairs')
+			.itemInputs(`rnr:wood/shingles/${wood}`)
 			.itemOutputs(`rnr:wood/shingles/${wood}_stairs`)
-			.circuit(3)
+			.circuit(2)
 			.duration(20)
 			.EUt(30)
 	})
@@ -452,17 +357,28 @@ const registerRnrRecipes = (event) => {
 			.duration(20)
 			.EUt(30)
 
-		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab`)
+		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab_from_framing`)
 			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_slab')
 			.itemOutputs(`rnr:wood/shingles/${wood}_slab`)
-			.circuit(2)
+			.duration(20)
+			.EUt(30)
+
+		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_stairs_from_framing`)
+			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_stairs')
+			.itemOutputs(`rnr:wood/shingles/${wood}_stairs`)
+			.duration(20)
+			.EUt(30)
+				event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_slab`)
+			.itemInputs(`rnr:wood/shingles/${wood}`)
+			.itemOutputs(`rnr:wood/shingles/${wood}_slab`)
+			.circuit(3)
 			.duration(20)
 			.EUt(30)
 
 		event.recipes.gtceu.assembler(`tfg:wood/shingles/${wood}_stairs`)
-			.itemInputs(`rnr:wood/shingle/${wood}`, 'rnr:roof_frame_stairs')
+			.itemInputs(`rnr:wood/shingles/${wood}`)
 			.itemOutputs(`rnr:wood/shingles/${wood}_stairs`)
-			.circuit(3)
+			.circuit(2)
 			.duration(20)
 			.EUt(30)
 	})

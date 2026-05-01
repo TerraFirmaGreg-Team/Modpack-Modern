@@ -239,6 +239,7 @@ const registerTFGItemTags = (event) => {
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_sett')
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_flagstones')
 	
+	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
 //#region Blocks
