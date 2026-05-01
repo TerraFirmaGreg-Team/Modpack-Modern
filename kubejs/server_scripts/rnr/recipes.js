@@ -175,7 +175,7 @@ const registerRnrRecipes = (event) => {
 		{ type: '', 				item:'gtceu:empty_mold'},
 		{ type: '_control_joint',	item:'#forge:rods'},
 		{ type: '_panel',			item:'#forge:smooth_stone'},
-		{ type: '_sett',			item:'#rnr:brick_road_items'},
+		{ type: '_sett',			item:'#tfg:stone_brick'},
 		{ type: '_flagstones',		item:'#rnr:flagstone_road_items'}
 	]
 
