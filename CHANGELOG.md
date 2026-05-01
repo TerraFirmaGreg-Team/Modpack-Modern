@@ -3,13 +3,18 @@
 ## Unreleased
 ### Changes
 - Added a system to instantly clear snow and ice as chunks are loaded, as soon as the temperature is warm enough. If you want to keep the old system, or if this is causing a large performance hit, check `defaultconfigs/tfg-server.toml`. @Vykonn
-- Crafting stations now have their own wood variants, and added back the slab types (#3839) @SakuraKitsurugi
-- GT Food Ovens can now use any type of Firmalife top oven instead of just the brick one (#3848) @SakuraKitsurugi
 - Icicles no longer spawn on monorails and chain conveyors (#3711) @SakuraKitsurugi
-- Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
+- Added Snowshoes, a Snorkel, Flippers, and Rope Ladders (#3890) @Thomasx0
+- Crafting stations now have their own wood variants, and added back the slab types (#3839) @SakuraKitsurugi
 - Added popcorn (#3850) @applenper
 - Added craftable cherry blossom leaves, if you're desperate for pink particles (#3861) @SakuraKitsurugi
 - Improved EMI++ stack grouping for steam 'n' rails (#3868) @Astrimitsu
+- GT Food Ovens can now use any type of Firmalife top oven instead of just the brick one (#3848) @SakuraKitsurugi
+- Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
+- Buffed the amount of dye you get from vinegar @Pyritie
+- Steel, black steel, red steel, and blue steel lamps, trapdoors, bells, chains, nuggets, and small gears can now be crafted in the steam alloy smelter (instead of requiring an MV one) but at twice the ingot cost, like other alloy smelter recipes @Pyritie
+- Steam thermal centrifuges can now be built with any pipe casing instead of just steel @Pyritie
+- Horses, donkeys, and mules are now immune to cacti damage @Pyritie
 ### Bug fixes
 - Fixed a crash when using the railgun in the Beneath @ashleney
 - Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
@@ -26,6 +31,11 @@
 - Fixed not being able to craft monorails in an assembler (#3873) @SakuraKitsurugi
 - Fixed not being able to obtain fruit tree saplings with a chainsaw (#3877) @Mqrius @SakuraKitsurugi
 - Fixed small mars mushrooms uprooting themselves @Pyritie
+- Fixed the hollow shell to flux crafting table recipe so it always consumes the shell @Pyritie
+- Fixed the amount of health that Snatchers have @Pyritie
+- Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
+- Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
+- Fixed caribou not dropping raw meat (#3924) @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026

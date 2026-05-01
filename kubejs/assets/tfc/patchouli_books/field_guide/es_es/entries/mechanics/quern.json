@@ -64,7 +64,7 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Dyes",
+      "title": "Tintes",
       "recipe": "tfc:quern/red_dye",
       "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
     },

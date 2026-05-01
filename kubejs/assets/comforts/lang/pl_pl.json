@@ -42,6 +42,7 @@
   "capability.comforts.not_sleepy": "Nie możesz teraz odpoczywać; nie czujesz się jeszcze zmęczony",
   "gui.comforts.config.hammocksStopPhantoms.name": "Hamaki zatrzymują fantomy",
   "gui.comforts.config.nightWakeTimeOffset.description": "Ilość czasu, w tikach, która zostanie dodana lub odjęta od nowego czasu po przespaniu dnia.",
+  "gui.comforts.config.sleepingBagBreakChance.name": "Szansa na zniszczenie śpiworu",
   "gui.comforts.config.sleepingBagEffects.name": "Efekty śpiworów",
   "item.comforts.hammock.placement.tooltip": "Wymaga %s aby położyć.",
   "item.comforts.rope_and_nail.placement.tooltip": "Używanie do powieszenia hamaka.",

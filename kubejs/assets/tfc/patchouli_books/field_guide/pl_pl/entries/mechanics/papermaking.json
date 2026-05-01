@@ -109,7 +109,7 @@
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
+        "title": "Masa drzewna z twardego drewna",
         "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
       },
       {
@@ -121,7 +121,7 @@
       {
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
-        "title": "Breaking down the Pulp",
+        "title": "Rozdrabianie pulpy",
         "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
       },
       {

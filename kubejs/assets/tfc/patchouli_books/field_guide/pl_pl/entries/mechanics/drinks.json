@@ -1,5 +1,5 @@
 {
-	"name": "Drink Effects",
+	"name": "Efekty napojów",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aged Alcohol",
+			"title": "Dojrzały alkohol",
 			"text": "$(thing)Aged Alcohols$() are prepared by ageing normal alcohol, which itself is made by leaving various fruits, flours, or other ingredients in a barrel with water. As a bonus, they effect your speech in chat!",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
 		},
@@ -26,7 +26,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Vintage Alcohol",
+			"title": "Klasyczny alkohol",
 			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels. These alcohols provide a stronger effect and a longer duration.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
 		},

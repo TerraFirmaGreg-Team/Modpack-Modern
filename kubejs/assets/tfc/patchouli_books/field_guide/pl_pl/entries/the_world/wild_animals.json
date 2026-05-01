@@ -16,7 +16,7 @@
 			"type": "patchouli:text",
 			"anchor": "predators",
 			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"title": "Drapieżniki"
 		},
 		{
 			"type": "patchouli:entity",
@@ -109,7 +109,7 @@
 			"type": "patchouli:text",
 			"anchor": "ramming_prey",
 			"text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
-			"title": "Ramming"
+			"title": "Taranowanie"
 		},
 		{
 			"type": "patchouli:entity",
@@ -218,7 +218,7 @@
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
+			"name": "Leming",
 			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
 		},
 		{
@@ -313,7 +313,7 @@
 			"type": "patchouli:text",
 			"anchor": "shellfish",
 			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish"
+			"title": "Skorupiaki"
 		},
 		{
 			"type": "patchouli:entity",

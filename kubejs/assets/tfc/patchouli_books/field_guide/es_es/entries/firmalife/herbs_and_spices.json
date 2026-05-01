@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Hierbas y Especias",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "En Firmalife, hay un puñado de plantas pequeñas que puedes recolectar y crecer por tu cuenta, las cuales tienen propiedades culinarias. Todas ellas se pueden encontrar en la naturaleza, y una vez cosechadas, pueden ser cultivadas en un $(l:firmalife/greenhouse)Invernadero$(), donde consumen 20 puntos de N, P y K."
 		},
 		{
 			"type": "tfc:multimultiblock",
