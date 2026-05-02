@@ -1,4 +1,5 @@
 {
+  "block.tfcchannelcasting.channel": "Kanał odlewniczy",
   "block.tfcchannelcasting.fluid.dark_chocolate": "Gorzka czekolada",
   "block.tfcchannelcasting.fluid.milk_chocolate": "Mleczna czekolada",
   "block.tfcchannelcasting.fluid.white_chocolate": "Biała czekolada",
@@ -9,10 +10,17 @@
   "item.tfcchannelcasting.bucket.milk_chocolate": "Wiadro mlecznej czekolady",
   "item.tfcchannelcasting.bucket.white_chocolate": "Wiadro białej czekolady",
   "item.tfcchannelcasting.unfired_channel": "Niewypalony kanał odlewniczy",
+  "item.tfcchannelcasting.unfired_mold_table": "Niewypalony stół do form",
   "metal.tfcchannelcasting.dark_chocolate": "Gorzka czekolada",
   "metal.tfcchannelcasting.milk_chocolate": "Mleczna czekolada",
   "metal.tfcchannelcasting.white_chocolate": "Biała czekolada",
   "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_strong_liquor": "Wypełnianie silnym alkoholem",
+  "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_sweet_liquor": "Wypełnianie słodkim alkoholem",
+  "tfc.recipe.barrel.tfcchannelcasting.barrel.fill_with_whiskey": "Wypełnianie whiskey",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_jam": "Wypełniony dżemem",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_strong_liquor": "Wypełniony silnym alkoholem",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_sweet_liquor": "Wypełniony słodkim alkoholem",
+  "tfcchannelcasting.tooltip.food_trait.filled_with_whiskey": "Wypełniony whiskey",
   "tfcchannelcasting.tooltip.food_trait.romantic": "Romantyczny",
   "tfcchannelcasting.tooltip.food_trait.scary": "Straszny"
 }

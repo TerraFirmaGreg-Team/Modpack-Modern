@@ -1,6 +1,7 @@
 {
   "item.sns.buckle": "Klamra",
   "item.sns.burlap_sack": "Worek jutowy",
+  "item.sns.frame_pack": "Plecak górski",
   "item.sns.hiking_boots": "Buty górskie",
   "item.sns.leather_sack": "Skórzany worek",
   "item.sns.leather_strip": "Skórzany pasek",
@@ -30,6 +31,8 @@
   "sns.extra_fall_distance": "Odległość upadku",
   "sns.stack_name.mob_net.with_mob": "%s (%s)",
   "sns.status.mob_net.cannot_capture_generic": "Nie możesz przechwycić %ss",
+  "sns.tooltip.horseshoe.modifier": "Gdy na koniu:",
   "sns.tooltip.item_container.allowed_size": "Największy rozmiar przedmiotu: %s",
+  "sns.tooltip.item_container.slot_capacity": "Pojemność miejsca: %s",
   "sns.tooltip.item_container.slot_count": "Liczba miejsc: %s"
 }

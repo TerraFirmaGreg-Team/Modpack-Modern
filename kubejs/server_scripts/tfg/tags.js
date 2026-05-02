@@ -265,6 +265,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
+	registerTFGMaterialBlockTags(event)
 
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_large')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_small')
@@ -275,7 +276,9 @@ const registerTFGBlockTags = (event) => {
 
 	forEachTFGRopeLadderVariant(ropeLadder => {
 		event.add('tfg:rope_ladders', ropeLadder)
-		event.add('minecraft:mineable/axe', ropeLadder)
+		event.add('create:copycat_deny', ropeLadder)
+		event.add('minecraft:fall_damage_resetting', ropeLadder)
+		event.add('minecraft:climbable', ropeLadder)
 	})
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')

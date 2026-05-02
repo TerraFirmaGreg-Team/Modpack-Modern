@@ -48,5 +48,8 @@
                 "bottom": 54
             }
         }
+    },
+    "su.terrafirmagreg.core.client.screen.TFGNutritionScreen": {
+        "ignore": true
     }
 }

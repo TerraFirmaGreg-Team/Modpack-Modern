@@ -1,11 +1,11 @@
 {
-  "name": "Wild Crops",
+  "name": "Cultivos Silvestres",
   "category": "tfc:the_world",
   "icon": "tfc:textures/gui/book/icons/wild_crops.png",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Wild Crops$() can be found scattered around the world, growing in small patches. They can be harvested for food and seeds, which can then be cultivated themselves in the not-wild form.$(br2)Harvesting wild crops can be done with your fists, or with a $(thing)Knife$() or other sharp tool. When broken, they will drop $(thing)Seeds$() and some $(thing)Products$()."
+      "text": "Los $(thing)Cultivos Silvestres$() se pueden encontrar esparcidos por el mundo, creciendo en pequeños parches. Se pueden cosechar para obtener comida y semillas, las cuales se pueden cultivar, esta vez, en su forma no silvestre.$(br2)Puedes cosechar cultivos silvestres con los puños, con un $(thing)Cuchillo$() o con cualquier otra herramienta afilada. Cuando se rompen, soltarán $(thing)Semillas$() y algunos $(thing)Productos$()."
     },
     {
       "type": "patchouli:multiblock",
@@ -22,17 +22,17 @@
           "X": "tfc:wild_crop/wheat[mature=true]"
         }
       },
-      "name": "Wild Wheat",
+      "name": "Trigo Silvestre",
       "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Cada $(l:mechanics/crops)planta$() que puede ser cultivada también se puede encontrar en la naturaleza. Los cultivos salvajes tendrán una apariencia similar a sus contrapartes cultivadas, pero están más escondidas entre la hierba. Los cultivos silvestres solo están maduros de Junio a Octubre. Sino, aparecerán muertos hasta el siguiente Verano."
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "All different varieties of wild crop",
+      "text": "Todas las distintas variedades de plantas silvestres ",
       "multiblocks": [
         {
           "pattern": [
@@ -319,29 +319,29 @@
     {
       "type": "patchouli:text",
       "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "title": "Encontrando Cultivos Silvestres"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Las siguientes páginas muestran una tabla con las condiciones ambientales sobre donde se pueden encontrar los cultivos silvestres. "
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {
-          "text": "Barley"
+          "text": "Cebada"
         },
         {
           "text": " -8 - 26"
@@ -350,7 +350,7 @@
           "text": " 70 - 310"
         },
         {
-          "text": "Oat"
+          "text": "Avena"
         },
         {
           "text": "  3 - 40"
@@ -359,7 +359,7 @@
           "text": "140 - 400"
         },
         {
-          "text": "Rye"
+          "text": "Centeno"
         },
         {
           "text": "-11 - 30"
@@ -368,7 +368,7 @@
           "text": "100 - 350"
         },
         {
-          "text": "Maize"
+          "text": "Maíz"
         },
         {
           "text": " 13 - 40"
@@ -377,7 +377,7 @@
           "text": "300 - 500"
         },
         {
-          "text": "Wheat"
+          "text": "Trigo"
         },
         {
           "text": " -4 - 35"
@@ -386,7 +386,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Rice"
+          "text": "Arroz"
         },
         {
           "text": " 15 - 30"
@@ -413,7 +413,7 @@
           "text": " 60 - 280"
         },
         {
-          "text": "Carrot"
+          "text": "Zanahoria"
         },
         {
           "text": "  3 - 30"
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Ajo"
         },
         {
           "text": "-20 - 18"
@@ -468,19 +468,19 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Patata"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Calabaza"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Cebolla"
         },
         {
           "text": "  0 - 30"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Caña de azúcar"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Tomate"
         },
         {
           "text": "  0 - 36"
@@ -607,15 +607,15 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
-          "text": "Temperature (°C)",
+          "text": "Temperatura (ºC)",
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {

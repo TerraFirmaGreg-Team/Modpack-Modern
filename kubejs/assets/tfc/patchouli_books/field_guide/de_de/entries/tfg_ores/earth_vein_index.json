@@ -34,7 +34,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Blautopas, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uranit, Smaragd...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalciumphosphat (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Schwefel (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Schwefel (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Schwefel, Gips, Chalkosin (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Schwefel, Pyrit, Zinkblende (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Schwefel, Stibnite, Gips (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Smaragd, Natives Silber$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Smaragd, Natives Silber, Lead (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Sodalith (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Sodalith, Lasurit$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Steinkohle (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Talk$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uranit, Smaragd...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Tricalciumphosphat (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1309,7 +1309,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/120 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 15%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 0$(br)$(thing)Höhe$(): 80$(br)$(thing)Radius$(): 9$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 10$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Granit",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/80 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 40%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -64 — -16$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 16$(br)$(thing)Höhe$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Andesit, Basalt, Dacit, Diorit, Gabbro, Gneis, Granit, Kristallschiefer, Marble, Phyllit, Quartzite, Rhyolit, Tonschiefer",
       "title": "Graphit, Steinkohle, Diamond (Deep)",
       "type": "patchouli:text",
       "anchor": "deep_graphite"
@@ -3291,7 +3291,7 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Blautopas",
+      "name": "Stibnite",
       "multiblock": {
         "mapping": {
           "0": "#forge:ores/stibnite"
@@ -3361,73 +3361,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Prozentzahl$(): 100%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/150 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 29%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 32$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): $(t:Schluchten, Vulkanische Berge, Vulkanische Ozeanische Berge, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)Volcanic$(/t)$(br2)$(thing)Stone Types$(): Andesit, Basalt, Dacit, Diorit, Dolomit, Gabbro, Gneis, Granit, Hornstein, Kalk, Kalkstein, Konglomerat, Kristallschiefer, Marble, Phyllit, Quartzite, Rhyolit, Schieferstein, Tonschiefer, Tonstein, Tuff",
-      "title": "Schwefel, Blautopas, Gips (Volcanic)",
-      "type": "patchouli:text",
-      "anchor": "normal_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Gips",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 56%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Schwefel",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/sulfur"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Blautopas",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/stibnite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -3562,6 +3495,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Prozentzahl$(): 9%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/150 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 29%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 32$(br)$(thing)Höhe$(): 10$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 70$(br)$(thing)Biomes$(): $(t:Schluchten, Vulkanische Berge, Vulkanische Ozeanische Berge, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)Volcanic$(/t)$(br2)$(thing)Stone Types$(): Andesit, Basalt, Dacit, Diorit, Dolomit, Gabbro, Gneis, Granit, Hornstein, Kalk, Kalkstein, Konglomerat, Kristallschiefer, Marble, Phyllit, Quartzite, Rhyolit, Schieferstein, Tonschiefer, Tonstein, Tuff",
+      "title": "Schwefel, Stibnite, Gips (Volcanic)",
+      "type": "patchouli:text",
+      "anchor": "normal_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Gips",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 56%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₅FeS₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Schwefel",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 25%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Stibnite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/stibnite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 18%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)Formula$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
