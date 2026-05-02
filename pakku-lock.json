@@ -3702,6 +3702,78 @@
             ]
         },
         {
+            "pakku_id": "AJMc5jDTWamA0h9r",
+            "pakku_links": [
+                "L1JQb1Zn9FqeEHc4"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "craftpresence",
+                "modrinth": "craftpresence"
+            },
+            "name": {
+                "curseforge": "CraftPresence",
+                "modrinth": "CraftPresence"
+            },
+            "id": {
+                "curseforge": "297038",
+                "modrinth": "DFqQfIBR"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CraftPresence-2.7.1+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7704/742/CraftPresence-2.7.1+1.20.1-forge.jar",
+                    "id": "7704742",
+                    "parent_id": "297038",
+                    "hashes": {
+                        "sha1": "c354216e78b6688c9bcbe67043b8f5e2156a4dde",
+                        "md5": "bda5c1f43a6b98a64a4ae71c8ec45616"
+                    },
+                    "required_dependencies": [
+                        "1056812"
+                    ],
+                    "size": 1310126,
+                    "date_published": "2026-03-03T08:20:32.277Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "CraftPresence-2.7.1+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/DFqQfIBR/versions/GN126FvZ/CraftPresence-2.7.1+1.20.1-forge.jar",
+                    "id": "GN126FvZ",
+                    "parent_id": "DFqQfIBR",
+                    "hashes": {
+                        "sha512": "6b39547c0d6990f2396926ff5e2a372afeda8d068581fcb858d9600ec8314174d1e70f3d120b52ce75acc15a9243a004143f8756b3335cbf07326bf9399beaa9",
+                        "sha1": "c354216e78b6688c9bcbe67043b8f5e2156a4dde"
+                    },
+                    "required_dependencies": [
+                        "nT86WUER"
+                    ],
+                    "size": 1310126,
+                    "date_published": "2026-03-03T08:21:20.505491Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "0Y8UKLWNcqtq1XXG",
             "type": "MOD",
             "slug": {
@@ -15360,7 +15432,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.6.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15368,22 +15440,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7945/670/TerraFirmaGreg-Core-Modern-0.9.6.jar",
-                    "id": "7945670",
+                    "url": "https://edge.forgecdn.net/files/8026/720/TerraFirmaGreg-Core-Modern-0.9.7.jar",
+                    "id": "8026720",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "e1ea31bd455f07f2bca14d702d60bc261a99d2d5",
-                        "md5": "612f1be80c998afa52b1b5f7391b6033"
+                        "sha1": "d53a1b1bc6fd51cfe410f166073a92c4c1e4b64f",
+                        "md5": "8f11a5bf973dde8e50a17403a8047884"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 11939222,
-                    "date_published": "2026-04-18T15:32:13.507Z"
+                    "size": 12870721,
+                    "date_published": "2026-05-02T14:04:05.293Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.6.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15391,18 +15463,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ffeQFaDv/TerraFirmaGreg-Core-Modern-0.9.6.jar",
-                    "id": "ffeQFaDv",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/BvjgMJJC/TerraFirmaGreg-Core-Modern-0.9.7.jar",
+                    "id": "BvjgMJJC",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "2f36d10ca69735e694f6999d2d20c6bee516fa81f3b0239ad5511ef4061c692eb3f9aa1f0db1a0072c03b34ffe90d9f419de96c0862db701f26c729ec0382f2d",
-                        "sha1": "e1ea31bd455f07f2bca14d702d60bc261a99d2d5"
+                        "sha512": "80f3eec0d18e925ffae48f575ae4f8a145b32bcf28c3e410c1a38c9249145998307ce7a2d163fc03d90d3d636341e0e5014878e0f33f236f5c8b9eb941d72e3b",
+                        "sha1": "d53a1b1bc6fd51cfe410f166073a92c4c1e4b64f"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 11939222,
-                    "date_published": "2026-04-18T15:32:20.668555Z"
+                    "size": 12870721,
+                    "date_published": "2026-05-02T14:04:07.748306Z"
                 }
             ]
         },
@@ -15843,6 +15915,71 @@
                     "required_dependencies": [],
                     "size": 587742,
                     "date_published": "2025-05-19T18:40:13.171143Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "L1JQb1Zn9FqeEHc4",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "unilib",
+                "modrinth": "unilib"
+            },
+            "name": {
+                "curseforge": "UniLib",
+                "modrinth": "UniLib"
+            },
+            "id": {
+                "curseforge": "1056812",
+                "modrinth": "nT86WUER"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "UniLib-1.2.1+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7703/340/UniLib-1.2.1+1.20.1-forge.jar",
+                    "id": "7703340",
+                    "parent_id": "1056812",
+                    "hashes": {
+                        "sha1": "bf4bd0346650ad95dcd13867793da99a639f31fa",
+                        "md5": "ef951050d7332deb6d2069b925a8701e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1657890,
+                    "date_published": "2026-03-02T23:56:36.377Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "UniLib-1.2.1+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/nT86WUER/versions/VhGMPy6D/UniLib-1.2.1+1.20.1-forge.jar",
+                    "id": "VhGMPy6D",
+                    "parent_id": "nT86WUER",
+                    "hashes": {
+                        "sha512": "d433e6521ac664d5ba60b7cc33218c6310fc8f3e9a2b1c9768e453124e3073e439187fd8e13c0a2baafff9e1d142d8d724c6d298b88e45c2cb92a865b62c5396",
+                        "sha1": "bf4bd0346650ad95dcd13867793da99a639f31fa"
+                    },
+                    "required_dependencies": [],
+                    "size": 1657890,
+                    "date_published": "2026-03-02T23:57:26.474349Z"
                 }
             ]
         },
