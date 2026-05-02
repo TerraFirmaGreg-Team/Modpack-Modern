@@ -13,6 +13,8 @@
 - Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
 - Buffed the amount of dye you get from vinegar @Pyritie
 - Steel, black steel, red steel, and blue steel lamps, trapdoors, bells, chains, nuggets, and small gears can now be crafted in the steam alloy smelter (instead of requiring an MV one) but at twice the ingot cost, like other alloy smelter recipes @Pyritie
+- Steam thermal centrifuges can now be built with any pipe casing instead of just steel @Pyritie
+- Horses, donkeys, and mules are now immune to cacti damage @Pyritie
 ### Bug fixes
 - Fixed a crash when using the railgun in the Beneath @ashleney
 - Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
@@ -33,6 +35,7 @@
 - Fixed the amount of health that Snatchers have @Pyritie
 - Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
 - Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
+- Fixed caribou not dropping raw meat (#3924) @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026

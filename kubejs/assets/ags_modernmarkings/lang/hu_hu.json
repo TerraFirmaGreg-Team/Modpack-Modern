@@ -106,6 +106,19 @@
   "creativetab.floor_markings": "Padlójelölések",
   "creativetab.wall_markings": "Faljelölések",
   "item.ags_modernmarkings.chalk": "Kréta",
+  "tooltip.ags_modernmarkings.floormarking_blackline": "Gyártási munka folyamatban ",
+  "tooltip.ags_modernmarkings.floormarking_blueline": "Gyártási nyersanyagok",
+  "tooltip.ags_modernmarkings.floormarking_greenline": "Gyártott késztermék",
+  "tooltip.ags_modernmarkings.floormarking_orangeline": "Vizsgálatra visszatartott tárgy",
+  "tooltip.ags_modernmarkings.floormarking_redhazard": "hagyd szabadon biztonsága vagy előírási okokból",
+  "tooltip.ags_modernmarkings.floormarking_redline": "Hibák, hulladék, piros cimkés területek",
+  "tooltip.ags_modernmarkings.floormarking_whitehazard": "üzemeltetési okokból szabadon hagyandó",
+  "tooltip.ags_modernmarkings.floormarking_whiteline": "Egyébként nem színkódolt dolgok",
+  "tooltip.ags_modernmarkings.floormarking_yellowhazard": "fizikai vagy egészségügyi kockázatok lehetséges",
+  "tooltip.ags_modernmarkings.floormarking_yellowline": "Folyosók, forgalmi sávok, munkacellák",
   "tooltip.ags_modernmarkings.floormarkingbasic": "padlójelölés",
-  "tooltip.ags_modernmarkings.wallmarking_basic": "faljelölés"
+  "tooltip.ags_modernmarkings.wallmarking_basic": "faljelölés",
+  "tooltip.ags_modernmarkings.wallmarking_diamond": "NFPA 704, veszélyes anyagok kockázatának jelzésére szolgál.",
+  "tooltip.ags_modernmarkings.wallmarking_jeo": "ermékelhelyezés!",
+  "tooltip.ags_modernmarkings.wallmarking_power": "elektromos fali jelölések"
 }

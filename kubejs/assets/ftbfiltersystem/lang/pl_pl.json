@@ -1,4 +1,5 @@
 {
+  "filter.ftbfiltersystem.and.name": "Wszystkie z",
   "filter.ftbfiltersystem.block.name": "Jest blokiem",
   "filter.ftbfiltersystem.custom.name": "Niestandardowa",
   "filter.ftbfiltersystem.durability.name": "Wytrzymałość",
@@ -11,6 +12,7 @@
   "filter.ftbfiltersystem.nbt.name": "NBT",
   "filter.ftbfiltersystem.not.name": "Nie",
   "filter.ftbfiltersystem.only_one.name": "Tylko jeden z",
+  "filter.ftbfiltersystem.or.name": "Dowolny z",
   "filter.ftbfiltersystem.stack_size.name": "Wielkość stosu",
   "ftbfiltersystem": "System filtrowania FTB",
   "ftbfiltersystem.gui.add": "Dodaj...",

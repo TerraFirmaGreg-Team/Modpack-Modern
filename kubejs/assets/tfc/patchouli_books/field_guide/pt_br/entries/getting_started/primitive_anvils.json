@@ -42,7 +42,7 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
+      "text": "Para obter um bloco de rocha bruta sem quebrá-lo em rochas menores, ele precisa ser $(thing)extraído$(). Você deve minerar os blocos dos seis lados de um bloco de pedra bruta - assim que esteja cercada por ar em todos os lados - ela vai cair como um item que pode ser pego.",
       "title": "Obtendo Pedra Bruta"
     },
     {
@@ -215,12 +215,12 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "Soldar é um processo através do qual dois itens são fundidos juntos para criar um novo item. Funciona da mesma maneira em uma $(l:getting_started/primitive_anvils)bigorna de pedra$() ou em uma $(l:mechanics/anvils)bigorna de metal$().$(br2)Primeiro, você deve colocar os dois itens que você quer soldar na bigorna. Você pode fazer isso usando os itens na bigorna, ou abrindo a interface da bigorna e inserindo-as nos dois slots mais à esquerda.",
       "title": "Soldagem"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "Você também precisa ter pelo menos um $(l:mechanics/flux)fluxo$() na bigorna para ajudar no processo de soldagem. Então, enquanto ambos os itens estão $(l:mechanics/heating)quentes o suficiente$() para soldar - o textodica vai dizer \"Pode Soldar\" - você deve usar qualquer $(thing)martelo$() na bigorna ou pressionar o botão de solda na interface dela. Você ouvirá um som de martelo e os itens serão soldados juntos."
     }
   ],
   "read_by_default": true,
