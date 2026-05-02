@@ -133,6 +133,13 @@ function registerTFGClayRecipes(event) {
 		.duration(100)
 		.EUt(16)
 
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite_from_blocks')
+		.itemInputs('#tfc:kaolin_blocks')
+		.notConsumable('gtceu:ball_casting_mold')
+		.chancedOutput('tfc:powder/kaolinite', 8000, 0)
+		.duration(400)
+		.EUt(16)
+
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')

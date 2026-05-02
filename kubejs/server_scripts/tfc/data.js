@@ -28,6 +28,8 @@ const registerTFCHeats = (event) => {
 
 	// Soybean
 	event.itemHeat('tfc:food/soybean', 1.0, null, null)
+
+	event.itemHeat('#tfc:kaolin_blocks', 3.0, null, null)
 }
 
 
