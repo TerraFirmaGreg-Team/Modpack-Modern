@@ -28,7 +28,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Every $(l:mechanics/crops)crop$() that can be cultivated can also be found in the wild. Wild crops will look similar to their cultivated counterparts, but are more hidden within the grass. Wild crops are only mature from June to October. Otherwise, they appear dead until the next Summer."
+      "text": "Cada $(l:mechanics/crops)planta$() que puede ser cultivada también se puede encontrar en la naturaleza. Los cultivos salvajes tendrán una apariencia similar a sus contrapartes cultivadas, pero están más escondidas entre la hierba. Los cultivos silvestres solo están maduros de Junio a Octubre. Sino, aparecerán muertos hasta el siguiente Verano."
     },
     {
       "type": "tfc:multimultiblock",
@@ -319,17 +319,17 @@
     {
       "type": "patchouli:text",
       "text": "Wild crops will spawn in climates near where the crop itself can be cultivated, so if looking for a specific crop, look in the climate where the crop can be cultivated. However, unlike $(l:mechanics/crops)Crops$() that the player has planted, wild crops do not require $(l:mechanics/hydration)Hydration$(). Instead, they are found in areas depending on the average $()Temperature$() and $()Rainfall$().",
-      "title": "Finding Wild Crops"
+      "title": "Encontrando Cultivos Silvestres"
     },
     {
       "type": "patchouli:text",
-      "text": "The next pages show a table of the environments where wild crops can be found."
+      "text": "Las siguientes páginas muestran una tabla con las condiciones ambientales sobre donde se pueden encontrar los cultivos silvestres. "
     },
     {
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
@@ -337,7 +337,7 @@
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {
@@ -422,7 +422,7 @@
           "text": "100 - 400"
         },
         {
-          "text": "Garlic"
+          "text": "Ajo"
         },
         {
           "text": "-20 - 18"
@@ -468,7 +468,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
@@ -476,11 +476,11 @@
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {
-          "text": "Potato"
+          "text": "Patata"
         },
         {
           "text": " -1 - 37"
@@ -489,7 +489,7 @@
           "text": "200 - 410"
         },
         {
-          "text": "Pumpkin"
+          "text": "Calabaza"
         },
         {
           "text": "  0 - 30"
@@ -498,7 +498,7 @@
           "text": "120 - 390"
         },
         {
-          "text": "Onion"
+          "text": "Cebolla"
         },
         {
           "text": "  0 - 30"
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Sugarcane"
+          "text": "Caña de azúcar"
         },
         {
           "text": " 12 - 38"
@@ -534,7 +534,7 @@
           "text": "160 - 500"
         },
         {
-          "text": "Tomato"
+          "text": "Tomate"
         },
         {
           "text": "  0 - 36"
@@ -607,7 +607,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Crop",
+          "text": "Cultivo",
           "bold": true
         },
         {
@@ -615,7 +615,7 @@
           "bold": true
         },
         {
-          "text": "Rainfall (mm)",
+          "text": "Precipitación (mm)",
           "bold": true
         },
         {

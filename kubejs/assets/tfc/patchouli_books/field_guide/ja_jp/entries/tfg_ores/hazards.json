@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "全てのエフェクト",
-			"text": "$(li)\n$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)\n$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)\n$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)\n$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)\n\n$(l:tfg_ores/hazards#Carcinogens)癌$()$(li)\n$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)\n$(l:tfg_ores/hazards#Irritants)炎症$()$(li)\n$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)\n$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)\n$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li\n)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)\n$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
+			"text": "$(li)\n$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)\n$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)\n$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)\n$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)\n\n$(l:tfg_ores/hazards#Carcinogens)発がん性$()$(li)\n$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)\n$(l:tfg_ores/hazards#Irritants)炎症$()$(li)\n$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)\n$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)\n$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li\n)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)\n$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
 		},
 		{
 			"type": "patchouli:text",
