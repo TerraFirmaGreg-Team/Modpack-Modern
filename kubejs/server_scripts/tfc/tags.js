@@ -421,6 +421,13 @@ function registerTFCItemTags(event) {
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
+    // Item tags for kaolin blocks
+    event.add('tfc:kaolin_blocks', [
+        'tfc:white_kaolin_clay',
+        'tfc:pink_kaolin_clay',
+        'tfc:red_kaolin_clay'
+    ]);
+
     global.TFC_MUD_TYPES.forEach(mud => {
         event.add("tfc:wet_mud_bricks", `tfc:mud_brick/${mud}`);
         event.add("tfc:dry_mud_bricks", `tfc:drying_bricks/${mud}`);
