@@ -25,6 +25,7 @@
 - Kaolin clay blocks can now also be cooked into powder, to save time processing it all (#3922) @SokvisalMong
 - Added new medicine powders, made salves cheaper (#3914) @applenper
 - Backported wolf/dog variants! Different types of them will spawn in different climates. @SakuraKitsurugi
+- ComputerCraft cables no longer require fluix @Pyritie
 ### Bug fixes
 - Fixed the world preview with the new worldgen! @Thomasx0
 - Fixed a crash when using the railgun in the Beneath @ashleney
