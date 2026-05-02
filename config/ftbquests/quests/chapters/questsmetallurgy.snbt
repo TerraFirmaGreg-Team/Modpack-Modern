@@ -452,20 +452,65 @@
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.mining.desc}"]
 			guide_page: "tfc:field_guide tfc:tfg_ores/ore_basics"
-			id: "234B68E86F72C29E"
-			subtitle: "{quests.metal_age.mining.subtitle}"
-			tasks: [{
-				id: "42657F198063D88B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				title: "Any #forge:tools/mining_hammers"
-				type: "item"
-			}]
+				id: "gtceu:bronze_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 3179
+						ToolSpeed: 5.2f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "234B68E86F72C29E"
+			subtitle: "{quests.metal_age.mining.subtitle}"
+			tasks: [
+				{
+					id: "42657F198063D88B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+						}
+					}
+					title: "Any #forge:tools/mining_hammers"
+					type: "item"
+				}
+				{
+					id: "12AEBC829B021ACE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rope_ladders)"
+						}
+					}
+					optional_task: true
+					title: "Any #tfg:rope_ladders"
+					type: "item"
+				}
+			]
 			title: "{quests.metal_age.mining.title}"
 			x: -0.5d
 			y: -32.0d
@@ -1352,6 +1397,8 @@
 			dependencies: ["48A8E3210B2BAE1C"]
 			description: ["{quests.metal_age.crafting_station.desc}"]
 			id: "5B860F2BECC8BC93"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.metal_age.crafting_station.subtitle}"
 			tasks: [{
 				id: "313114CA1558DD32"

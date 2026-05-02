@@ -17,3 +17,20 @@ function registerTFGMaterialItemTags(event) {
 	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
 }
+
+function registerTFGMaterialBlockTags(event) {
+
+	event.removeAllTagsFrom('minecraft:raw_iron_block')
+	
+	let stone_ores = Ingredient.of('#forge:ores_in_ground/stone').itemIds.toArray().map(String);
+	stone_ores.forEach(item => 
+	{
+		event.removeAllTagsFrom(item)
+	})
+
+	let iron_ores = Ingredient.of('#forge:ores/iron').itemIds.toArray().map(String);
+	iron_ores.forEach(item => 
+	{
+		event.removeAllTagsFrom(item)
+	})
+}

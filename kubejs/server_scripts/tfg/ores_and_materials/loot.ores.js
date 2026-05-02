@@ -8,7 +8,6 @@ const registerTFGOreLoots = (event) => {
 
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.ORE)) {
-
 			// Indicator buds
 			if (material.hasProperty(PropertyKey.GEM)) {
 				let bud = ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1).getItem().id;

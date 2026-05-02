@@ -9,6 +9,7 @@ const registerSpeciesBlockTags = (event) => {
 	event.removeAll('species:wraptor_nesting_blocks')
 	
 	event.add('species:petrified_egg_hatch', '#tfcambiental:warm_stuff')
+	event.remove('minecraft:dirt', 'species:alphacene_moss_block')
 }
 
 const registerSpeciesItemTags = (event) => {

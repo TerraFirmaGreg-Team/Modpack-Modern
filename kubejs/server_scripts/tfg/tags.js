@@ -265,6 +265,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
+	registerTFGMaterialBlockTags(event)
 
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_large')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_small')

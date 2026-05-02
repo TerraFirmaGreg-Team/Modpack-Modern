@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+- Chemical reactor recipe for silicon tetrachloride is now on circuit 5 (#3933) @Pyritie
 ### Changes
 - Added a system to instantly clear snow and ice as chunks are loaded, as soon as the temperature is warm enough. If you want to keep the old system, or if this is causing a large performance hit, check `defaultconfigs/tfg-server.toml`. @Vykonn
 - Icicles no longer spawn on monorails and chain conveyors (#3711) @SakuraKitsurugi
@@ -36,6 +38,7 @@
 - Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
 - Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
 - Fixed caribou not dropping raw meat (#3924) @Pyritie
+- Fixed wrought iron bridges being uncraftable @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026
