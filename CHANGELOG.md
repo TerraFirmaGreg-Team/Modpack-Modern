@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.12.6] - 02-05-2026
 ### Breaking Changes
 - Chemical reactor recipe for silicon tetrachloride is now on circuit 5 (#3933) @Pyritie
 ### Changes
