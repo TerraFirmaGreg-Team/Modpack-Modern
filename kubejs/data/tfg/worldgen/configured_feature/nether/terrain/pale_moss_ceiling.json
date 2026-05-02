@@ -40,7 +40,7 @@
 							"provider": {
 								"type": "minecraft:simple_state_provider",
 								"state": {
-									"Name": "tfg:plant/pale_hanging_moss"
+									"Name": "tfg:plant/pale_hanging_moss_plant"
 								}
 							}
 						},
@@ -49,7 +49,7 @@
 							"provider": {
 								"type": "minecraft:simple_state_provider",
 								"state": {
-									"Name": "tfg:plant/pale_hanging_moss_plant"
+									"Name": "tfg:plant/pale_hanging_moss"
 								}
 							}
 						}
