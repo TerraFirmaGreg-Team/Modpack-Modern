@@ -668,8 +668,8 @@ const registerAE2Recipes = (event) => {
 			'#forge:small_dusts/fluix')
 		.itemOutputs('4x ae2:fluix_glass_cable')
 		.circuit(1)
-		.duration(80)
-		.EUt(GTValues.VA[GTValues.MV])
+		.duration(20)
+		.EUt(480)
 		.addMaterialInfo(true)
 
 	// Covered Cable
