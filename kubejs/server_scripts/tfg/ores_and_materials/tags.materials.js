@@ -20,6 +20,7 @@ function registerTFGMaterialItemTags(event) {
 
 function registerTFGMaterialBlockTags(event) {
 
+	// Hide cast iron and vanilla stone ores from ALI
 	event.removeAllTagsFrom('minecraft:raw_iron_block')
 	
 	let stone_ores = Ingredient.of('#forge:ores_in_ground/stone').itemIds.toArray().map(String);
