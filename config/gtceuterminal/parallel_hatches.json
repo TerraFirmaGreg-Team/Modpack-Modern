@@ -1,0 +1,15 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Parallel Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_parallel_hatch",
+      "componentType": "PARALLEL_HATCH"
+    },
+    {
+      "blockIdPattern": "gtceu:*_parallel_hatch_mk*",
+      "componentType": "PARALLEL_HATCH_MK"
+    }
+  ]
+}

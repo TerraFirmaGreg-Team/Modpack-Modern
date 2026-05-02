@@ -133,6 +133,13 @@ function registerTFGClayRecipes(event) {
 		.duration(100)
 		.EUt(16)
 
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite_from_blocks')
+		.itemInputs('#tfc:kaolin_blocks')
+		.notConsumable('gtceu:ball_casting_mold')
+		.chancedOutput('tfc:powder/kaolinite', 8000, 0)
+		.duration(400)
+		.EUt(16)
+
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
@@ -183,7 +190,7 @@ function registerTFGClayRecipes(event) {
 		.EUt(2)
 
 	event.recipes.gtceu.macerator('tfg:ceramic_molds')
-		.itemInputs('#tfc:fired_molds')
+		.itemInputs(Ingredient.of('#tfc:fired_molds').subtract('tfc:ceramic/fire_ingot_mold').subtract('tfg:rod_mold').subtract('tfg:small_gear_mold'))
 		.itemOutputs('2x #forge:dusts/brick')
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)

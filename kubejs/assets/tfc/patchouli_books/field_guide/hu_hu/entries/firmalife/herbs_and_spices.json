@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "Fűszernövények és Fűszerek",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "Firmalifeban, sok kis növény van melyeket gyűjthetsz és termeszthetsz, ezeknek főzési tulajdonságai vannak. Megtalálhatóak a vadonban, és ha egyszer leszüretelted őket, akkor termesztheted egy $(l:firmalife/greenhouse)Üvegházban$(), ahol elfogyasztanak 20 pont N, P és K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Bazsalikom",
+			"text": "A $(thing)vad bazsalikom$() 12-25°C között nő és 300-500mm csapadákban.",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "Nemes Babér",
+			"text": "A $(thing)vad nemes babér$() 8-14°C között nő és 25-225mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "Kardamom",
+			"text": "A $(thing)vad kardamom$() 18-30°C között nő és 350-500mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "Koriander",
+			"text": "A $(thing)vad koriander$() 5-15°C között nő és 0-150mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "Rómaikömény",
+			"text": "A $(thing)vad rómaikömény$() 6-20°C között nő és 50-250mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "Szurokfű",
+			"text": "A $(thing)vad oregánó$() 5-13°C között nő és 50-150mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -243,7 +243,7 @@
 				}
 			],
 			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"text": "A $(thing)vad pimento$() 5-30°C között nő és 200-450mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
@@ -277,13 +277,13 @@
 				}
 			],
 			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"text": "A $(thing)vad vanilla$() 18-30°C között nő és 200-500mm csapadékban.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "A $(item)magbombát$() arra lehet használni, hogy különféle típusú füveket ültessünk. Ez hasznos lehet miután megtisztítottad a bázisodat az építéshez. A magbomba elkészítéséhez szükséged van  $(item)komposztra$() és 4 $(thing)magra$()."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "Egy gumós selyemkóró.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "A gumós selyemkóró idővel beérik. Amikor egy teljesen kifejődött, esély van rá, hogy tovább terjedjen a környező blokkokra vagy átalakuljon valami újjá. A gumós selyemkórók, melyekre egy másik fűblokk terjedt már nem terjednek tovább.$(br)Miután a gumós selyemkóró megváltoztat egy másik fűblokkot, felveheted őket egy $(item)ollóval$()."
 		}
 	],
 	"read_by_default": true,

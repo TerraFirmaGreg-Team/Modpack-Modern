@@ -29,7 +29,10 @@ const registerFirmaLifeItemTags = (event) => {
     event.add('minecraft:leaves', 'firmalife:plant/fig_leaves')
 
     event.add('tfc:clay_recycle_5', '#firmalife:clay_recycle_5')
-
+    event.add('tfg:oven_tops', 'firmalife:cured_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_rustic_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_tile_oven_top')
+    event.add('tfg:oven_tops', 'firmalife:cured_stone_oven_top')
 }
 
 const registerFirmaLifeBlockTags = (event) => {

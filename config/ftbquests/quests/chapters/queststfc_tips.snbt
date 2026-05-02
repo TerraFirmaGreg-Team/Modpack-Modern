@@ -1295,7 +1295,11 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: [
+				"150B7C5CD152E1BA"
+				"015E7A116CCD3191"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.thatch_bed.desc}"]
 			guide_page: "tfc:field_guide tfc:getting_started/a_place_to_sleep"
 			id: "4D11F11CE0E9F379"
@@ -1356,8 +1360,8 @@
 		}
 		{
 			dependencies: [
-				"4D11F11CE0E9F379"
 				"150B7C5CD152E1BA"
+				"4C444814F1C7B600"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.loom.desc}"]
@@ -1608,22 +1612,33 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["28333A7852497C4D"]
+			dependencies: [
+				"3E8833E7CE591E6F"
+				"28333A7852497C4D"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.aged_alcohol.desc}"]
 			id: "3179DABC8BCAD9FF"
 			subtitle: "{quests.tfg_tips.aged_alcohol.subtitle}"
-			tasks: [{
-				id: "4BFC8A6E37AF4855"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfcagedalcohol:bucket/aged_beer)item(tfcagedalcohol:bucket/aged_cider)item(tfcagedalcohol:bucket/aged_rum)item(tfcagedalcohol:bucket/aged_sake)item(tfcagedalcohol:bucket/aged_vodka)item(tfcagedalcohol:bucket/aged_whiskey)item(tfcagedalcohol:bucket/aged_corn_whiskey)item(tfcagedalcohol:bucket/aged_rye_whiskey))"
+			tasks: [
+				{
+					id: "4BFC8A6E37AF4855"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfcagedalcohol:bucket/aged_beer)item(tfcagedalcohol:bucket/aged_cider)item(tfcagedalcohol:bucket/aged_rum)item(tfcagedalcohol:bucket/aged_sake)item(tfcagedalcohol:bucket/aged_vodka)item(tfcagedalcohol:bucket/aged_whiskey)item(tfcagedalcohol:bucket/aged_corn_whiskey)item(tfcagedalcohol:bucket/aged_rye_whiskey))"
+						}
 					}
+					optional_task: true
+					title: "{quests.tfg_tips.aged_alcohol.task}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.aged_alcohol.task}"
-				type: "item"
-			}]
+				{
+					id: "1ADF2F604DCDE0DB"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.tfg_tips.aged_alcohol.title}"
 			x: 3.0d
 			y: 6.5d
@@ -1920,7 +1935,7 @@
 		{
 			dependencies: ["5E2E37673AD87A4B"]
 			description: ["{quests.tfg_tips.reach_the_beneath.desc}"]
-			guide_page: "tfc:field_guide tfc:beneath:biomes"
+			guide_page: "tfc:field_guide tfc:beneath/biomes"
 			id: "70DA01DFDAE54224"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.reach_the_beneath.subtitle}"
@@ -2266,6 +2281,27 @@
 			title: "{quests.tfg_tips.universal_compost.title}"
 			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["28333A7852497C4D"]
+			description: ["{quests.tfg_tips.powders.desc}"]
+			id: "7054530BDCB2E06E"
+			subtitle: "{quests.tfg_tips.powders.subtitle}"
+			tasks: [{
+				id: "32A01A3F5CF0AD2E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:combat_powder)item(tfg:recovery_powder)item(tfg:acrobat_powder)item(tfg:mining_powder))"
+					}
+				}
+				title: "{quests.tfg_tips.powders.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.powders.title}"
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

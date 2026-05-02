@@ -422,6 +422,19 @@ function registerTFGFoodItems(event) {
 		.food(food => food.hunger(3).saturation(2))
 		.tag('tfc:foods')
 		.tag('tfg:foods/usable_in_burgers');
+		
+	// Popcorn
+	event.create('tfg:food/popcorn')
+		.translationKey('item.tfg.food.popcorn')
+		.texture('tfg:item/food/popcorn')
+		.food(food => food.hunger(1).saturation(1))
+		.tag('tfc:foods');
+
+	event.create('tfg:food/buttered_popcorn')
+		.translationKey('item.tfg.food.buttered_popcorn')
+		.texture('tfg:item/food/buttered_popcorn')
+		.food(food => food.hunger(2).saturation(2))
+		.tag('tfc:foods');
 
 	// French Fries
 	event.create('tfg:food/raw_fries')

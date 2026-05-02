@@ -403,6 +403,18 @@ const registerFirmaLifeRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
 
+	event.shapeless('2x tfc:powder/flux', [
+		'firmalife:hollow_shell',
+		'#forge:tools/hammers'])
+		.replaceIngredient('firmalife:hollow_shell', Item.empty)
+		.id('tfg:shapeless/hollow_shell_to_flux')
+
+	event.recipes.gtceu.macerator('firmalife:hollow_shell')
+		.itemInputs('firmalife:hollow_shell')
+		.itemOutputs('2x tfc:powder/flux')
+		.EUt(2)
+		.duration(50)
+
 	// Dough
 
 	global.TFC_GRAINS.forEach(grain => {
@@ -827,23 +839,6 @@ const registerFirmaLifeRecipes = (event) => {
 		},
 		"duration": 16000
 	}).id('tfg:barrel/shosha_wheel')
-
-	// #region Oven heating recipes
-
-	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
-		.resultItem(`firmalife:cured_oven_top`)
-		.id(`tfg:heating/oven_top`)
-	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
-		.resultItem(`firmalife:cured_oven_chimney`)
-		.id(`tfg:heating/oven_chimney`)
-	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
-		.resultItem(`firmalife:cured_oven_bottom`)
-		.id(`tfg:heating/oven_bottom`)
-	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
-		.resultItem(`firmalife:cured_oven_hopper`)
-		.id(`tfg:heating/oven_hopper`)
-
-	// #endregion
 
 	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
 	// and adds traits that normally disappear on the craft

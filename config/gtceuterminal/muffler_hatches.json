@@ -1,0 +1,11 @@
+{
+  "version": "2.0",
+  "description": "GTCEu Terminal - Muffler Hatch Configuration",
+  "hatches": [],
+  "patterns": [
+    {
+      "blockIdPattern": "gtceu:*_muffler_hatch",
+      "componentType": "MUFFLER"
+    }
+  ]
+}

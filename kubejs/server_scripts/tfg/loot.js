@@ -62,7 +62,7 @@ function registerTFGLoots(event) {
 					LootEntry.of('tfc:burlap_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:wool_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:mortar').when((c) => c.randomChance(0.1)),
-					LootEntry.of('tfc:leather').when((c) => c.randomChance(0.1)),
+					LootEntry.of('minecraft:leather').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:black_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:red_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:white_chalk').when((c) => c.randomChance(0.1)),
@@ -199,7 +199,7 @@ function registerTFGLoots(event) {
 		.addWeightedLoot([7, 10], ['minecraft:bone'])
 		.addLoot(LootEntry.of('tfc:large_raw_hide', 1))
 		.addWeightedLoot([1, 2], ['tfc:blubber'])
-		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.1)))
+		.addSequenceLoot(LootEntry.of('waterflasks:bladder').when(c => c.randomChance(0.5)))
 		.addLoot(LootEntry.of('firmalife:rennet', 4))
 	
 	// Bison drop extra with butchery knife

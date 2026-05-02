@@ -1,5 +1,5 @@
 {
-	"name": "Blast Furnace Tips",
+	"name": "Wskazówki dotyczące pieca",
 	"icon": "tfc:blast_furnace",
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Preheating Metal",
+			"title": "Wstępne podgrzewanie metalu",
 			"item": "tfc:firepit",
 			"text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(thing)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
 		},
@@ -26,7 +26,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Automation",
+			"title": "Automatyzacja",
 			"item": "greate:steel_mechanical_pump",
 			"text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production."
 		},

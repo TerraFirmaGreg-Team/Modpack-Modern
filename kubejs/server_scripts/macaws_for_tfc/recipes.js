@@ -10,6 +10,8 @@ function registerMacawsForTFCRecipes(event) {
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:string', '#forge:string')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass', '#forge:glass')
 	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'minecraft:glass_pane', '#forge:glass_panes')
+	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'tfc:metal/rod/wrought_iron', '#forge:rods/wrought_iron')
+	event.replaceInput({ mod: 'mcw_tfc_aio' }, 'tfc:metal/ingot/wrought_iron', '#forge:ingots/wrought_iron')
 	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:steam_boiler' })
 	event.remove({ input: '@mcw_tfc_aio', type: 'gtceu:large_boiler' })
 

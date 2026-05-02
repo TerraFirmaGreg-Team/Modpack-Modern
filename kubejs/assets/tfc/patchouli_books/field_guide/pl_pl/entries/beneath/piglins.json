@@ -1,11 +1,11 @@
 {
-	"name": "Piglins",
+	"name": "Pigliny",
 	"category": "tfc:beneath",
 	"icon": "minecraft:gold_ingot",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Piglin Bartering",
+			"title": "Handel z piglinami",
 			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
 		},
 		{
@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Trade Results",
+			"title": "Wyniki handlu",
 			"text": "$(li)1 Copper Ingot$(li)1 Tin Ingot$(li)1 Silver Ingot$(li)1 Bronze Ingot$(li)1 Bismuth Bronze Ingot$(li)1 Cast Iron Ingot$(li)1 Zinc Ingot$(li)1 Brass Ingot$(li)1 Bismuth Ingot$(li)1 Nickel Ingot$(li)1 Cinnabar Gem"
 		},
 		{
@@ -26,13 +26,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Bastions",
+			"title": "Bastiony",
 			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Lanterns$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:piglin_disguise",
-			"title": "Piglin Disguise",
+			"title": "Przebranie piglina",
 			"text": "If you want to ensure an easy time trading--or simply mingling with the locals--Put on a $(thing)Piglin Disguise$() to prevent $(thing)Piglins$() from being hostile with you on first sight. But beware! They only put up with so much..."
 		}
 	],

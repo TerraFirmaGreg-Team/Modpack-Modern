@@ -39,7 +39,7 @@
 				}
 			],
 			"name": "Bazylia",
-			"text": "$(thing)Dzika Bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
+			"text": "$(thing)Dzika bazylia$() rośnie w temp. od 12 do 25 C oraz przy opadach między 300 do 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -73,7 +73,7 @@
 				}
 			],
 			"name": "Wawrzyn Szlachetny",
-			"text": "$(thing)Dziki Wawrzyn Szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
+			"text": "$(thing)Dziki wawrzyn szlachetny$() rośnie w temp. od 8 do 14 C oraz przy opadach między 25 do 225mm.",
 			"enable_visualize": false
 		},
 		{
@@ -107,7 +107,7 @@
 				}
 			],
 			"name": "Kardamon",
-			"text": "$(thing)Dziki Kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
+			"text": "$(thing)Dziki kardamon$() rośnie w temp. od 18 do 30 C oraz przy opadach między 350 do 500mm.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Kmin Rzymski",
-			"text": "$(thing)Dziki Kmin Rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
+			"name": "Kmin rzymski",
+			"text": "$(thing)Dziki kmin rzymski$() rośnie w temp. od 6 do 20 C oraz przy opadach między 50 do 250mm.",
 			"enable_visualize": false
 		},
 		{
@@ -209,7 +209,7 @@
 				}
 			],
 			"name": "Oregano",
-			"text": "$(thing)Dzikie Oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150mm.",
+			"text": "$(thing)Dzikie oregano$() rośnie w temp. od 5 do 13 C oraz przy opadach między 50 do 150mm.",
 			"enable_visualize": false
 		},
 		{
@@ -277,7 +277,7 @@
 				}
 			],
 			"name": "Wanilia",
-			"text": "$(thing)Dzikie Wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 do 500mm.",
+			"text": "$(thing)Dzika wanilia$() rośnie w temp. od 18 do 30 C oraz przy opadach między 200 a 500 mm.",
 			"enable_visualize": false
 		},
 		{

@@ -54,7 +54,7 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'gtceu:shaped/andesite_alloy_shaft' })
 	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
 
-	event.remove({ id: /^greate:(mixing|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
+	event.remove({ id: /^greate:(mixing|cutting|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
 	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })

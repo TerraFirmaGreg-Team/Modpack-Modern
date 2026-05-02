@@ -1,143 +1,143 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Wild Animals",
+	"name": "野生の動物",
 	"category": "tfc:the_world",
 	"icon": "tfc:medium_raw_hide",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The world of TFC is full of animal life. Some animals are here to help, and some are incredibly dangerous. This section is about wild animals. For information on livestock, animals that can give you items you need, see the $(l:mechanics/animal_husbandry)Animal Husbandry$() page."
+			"text": "TFCの世界には動物がたくさんいます。あなたのTFCライフを助けてくれる動物もいれば、非常に危険な動物もいます。このセクションでは野生動物について説明します。必要なアイテムを提供してくれる家畜や動物の詳細については、$(l:mechanics/animal_husbandry)牧畜$()ページを参照してください。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Animals can be grouped into a few different categories: $(l:the_world/wild_animals#predators)Predators$(), $(l:the_world/wild_animals#prey)Prey$(), and $(l:the_world/wild_animals#aquatic)Aquatic$() animals.$(br2)The next few pages will detail each of these categories of animals."
+			"text": "動物はいくつかの異なるカテゴリに分類できます: $(l:the_world/wild_animals#predators)肉食動物$()、$(l:the_world/wild_animals#prey)獲物の動物$()、および$(l:the_world/wild_animals#aquatic)水生生物$()。$(br2)次の数ページでは、これらの動物の各カテゴリについて詳しく説明します。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "predators",
-			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"text": "$(thing)肉食動物$()はプレイヤーを攻撃する可能性のある動物です。それらは、夜のみ狩猟する$(thing)夜行性$()か、日中のみ狩猟する$(thing)昼行性$()のいずれかです。肉食動物は、最近ターゲットを殺害したかどうかに応じて、中立にも敵対にもなります。肉食動物にはなわばりがあり、十分に遠くまで逃げれば、肉食動物は追いかけるのをやめてなわばりに戻ります。",
+			"title": "肉食動物"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:polar_bear",
 			"scale": 0.55,
 			"name": "シロクマ",
-			"text": "The polar bear spawns in only the coldest regions, $(l:the_world/climate#temperature)temperature$() at most 10°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 10°C以下、$(l:the_world/climate#rainfall)降水量$()100mm以上のとても寒い地域にのみ生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "ハイイログマ",
-			"text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
+			"name": "グリズリー",
+			"text": "$(l:the_world/climate#temperature)気温$() -15°C～15°C、$(l:the_world/climate#rainfall)降水量$()200mm以上の暖かい森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:black_bear",
 			"scale": 0.55,
-			"name": "アメリカグマ",
-			"text": "The black bear spawns in forests of warmer, wetter climates, of $(l:the_world/climate#temperature)temperature$() 5 to 20°C and at least 250mm of $(l:the_world/climate#rainfall)rainfall$()."
+			"name": "ブラックベア",
+			"text": "$(l:the_world/climate#temperature)気温$() 5°C～20°C、$(l:the_world/climate#rainfall)降水量$()250mm以上の暖かく湿った森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:cougar",
 			"scale": 0.6,
 			"name": "ピューマ",
-			"text": "The cougar prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+			"text": "$(l:the_world/climate#temperature)気温$() -10°C～21°C、$(l:the_world/climate#rainfall)降水量$()150mm以上の温暖な気候に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:panther",
 			"scale": 0.6,
 			"name": "ヒョウ",
-			"text": "The panther prefers most moderate climates, with $(l:the_world/climate#temperature)temperature$() from -10 to 21°C and at least 150mm of $(l:the_world/climate#rainfall)rainfall$()."
+			"text": "$(l:the_world/climate#temperature)気温$() -10°C～21°C、$(l:the_world/climate#rainfall)降水量$()150mm以上の温暖な気候に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:lion",
 			"scale": 0.55,
 			"name": "ライオン",
-			"text": "The lion spawns in plains with an average $(l:the_world/climate#temperature)temperature$() of at least 16°C, and $(l:the_world/climate#rainfall)rainfall$() between 50 and 300mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 16°C以上、$(l:the_world/climate#rainfall)降水量$()50～300mmの平原に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:tiger",
 			"scale": 0.55,
 			"name": "トラ",
-			"text": "The tiger spawns in forests with an average $(l:the_world/climate#temperature)temperature$() of at least 13°C, and $(l:the_world/climate#rainfall)rainfall$() above 100mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()100mm以上の森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:sabertooth",
 			"scale": 0.6,
 			"name": "サーベルタイガー",
-			"text": "The sabertooth spawns at any $(l:the_world/climate#temperature)temperature$() above 0°C, and any $(l:the_world/climate#rainfall)rainfall$() above 250mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 0°C以上、$(l:the_world/climate#rainfall)降水量$()250mm以上の環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 22°C以下、$(l:the_world/climate#rainfall)降水量$()150～420mmの環境に生息。群れで狩りをし、十分な回数餌を与えると、$(l:mechanics/pets)犬$()として飼い慣らせます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:direwolf",
 			"scale": 0.7,
-			"text": "The direwolf spawns at any $(l:the_world/climate#temperature)temperature$() below freezing, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. They are larger than regular wolves, and are not tamable."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 0°C以下、$(l:the_world/climate#rainfall)降水量$()150～420mmの環境に生息。群れで狩りをし、通常のオオカミより大きく、飼い慣らせません。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:hyena",
 			"scale": 0.7,
-			"text": "The hyena spawns at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 80 and 380mm. They hunt in packs. They are not tamable."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 15°C以上、$(l:the_world/climate#rainfall)降水量$()80～380mmの環境に生息。群れで狩りをし、飼い慣らせません。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:crocodile",
 			"scale": 0.7,
 			"name": "ワニ",
-			"text": "The crocodile spawns near rivers, lakes, and marshes at any $(l:the_world/climate#temperature)temperature$() warmer than 15°C, and at any $(l:the_world/climate#rainfall)rainfall$(). They are nocturnal, and most dangerous in the water."
+			"text": "$(l:the_world/climate#rainfall)降水量$()に関係なく$(l:the_world/climate#temperature)平均気温$()15℃以上の川、湖、湿地に生息。夜行性で水中では特に危険。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:ocelot",
 			"scale": 0.7,
-			"text": "The ocelot attacks small animals. It spawns at any $(l:the_world/climate#temperature)temperature$() from 15 to 30°C, and $(l:the_world/climate#rainfall)rainfall$() between 300 and 500mm, in forests. Feeding an ocelot enough times will tame it into a $(l:mechanics/pets)Cat$(). Ocelots can eat raw fish"
+			"text": "$(l:the_world/climate#temperature)気温$() 15°C～30°C、$(l:the_world/climate#rainfall)降水量$()300～500mmの森林に生息。群れで狩りをし、十分な回数生の魚を与えると、$(l:mechanics/pets)ネコ$()として飼い慣らせます。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "ramming_prey",
-			"text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
-			"title": "Ramming"
+			"text": "$(thing)突進$()する動物は時折、プレイヤーを含む近くの生物に突撃します。攻撃は強力ですが、回避可能です。攻撃されると突進する頻度が増します。",
+			"title": "突進"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:boar",
 			"scale": 0.7,
 			"name": "イノシシ",
-			"text": "The boar spawns at $(l:the_world/climate#temperature)temperature$() below 25°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -5°C～25°C、$(l:the_world/climate#rainfall)降水量$()130～400mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:moose",
 			"scale": 0.7,
 			"name": "ヘラジカ",
-			"text": "The moose spawns in forests at $(l:the_world/climate#temperature)temperature$() below 10°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 300mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -15°C～10°C、$(l:the_world/climate#rainfall)降水量$()150～300mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:wildebeest",
 			"scale": 0.7,
 			"name": "ヌー",
-			"text": "The wildebeest spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 13°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 13°C以上、$(l:the_world/climate#rainfall)降水量$()90～380mmの平原に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:bison",
 			"scale": 0.7,
-			"name": "Bison",
-			"text": "The bison spawns in open plains at $(l:the_world/climate#temperature)temperature$() below 15°C and above -10°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 420mm."
+			"name": "バイソン",
+			"text": "$(l:the_world/climate#temperature)気温$() -10°C～15°C、$(l:the_world/climate#rainfall)降水量$()160～420mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:empty"
@@ -145,123 +145,123 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "prey",
-			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-			"title": "Prey"
+			"text": "$(thing)獲物の動物$()はプレイヤーや捕食者を恐れます。危険から逃げるのが得意で、通常は反撃しません。いくつかの獲物動物は作物をつまむのを楽しみます。",
+			"title": "獲物の動物"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
 			"name": "ウサギ",
-			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
+			"text": "$(l:the_world/climate#rainfall)降水量$()15mm以上の場所に広く生息。ニンジンとキャベツを好み、気候によって毛皮が違っています。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:fox",
 			"scale": 0.7,
 			"name": "キツネ",
-			"text": "The fox likes to eat the berries off of bushes. It can be found in forests with $(l:the_world/climate#temperature)temperature$() below 25°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 25°C以上、$(l:the_world/climate#rainfall)降水量$()130～400mmの森林に生息。茂みのベリーを好んで食べます。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:deer",
 			"scale": 0.7,
-			"text": "The deer spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -15°C, and $(l:the_world/climate#rainfall)rainfall$() between 130 and 400mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -15°C～25°C、$(l:the_world/climate#rainfall)降水量$()130～400mmの森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:caribou",
 			"scale": 0.6,
 			"name": "トナカイ",
-			"text": "The caribou spawns at any $(l:the_world/climate#temperature)temperature$() below -9°C, and $(l:the_world/climate#rainfall)rainfall$() between 110 and 500mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() -9°C以下、$(l:the_world/climate#rainfall)降水量$()110～500mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:gazelle",
 			"scale": 0.7,
-			"text": "The gazelle spawns in open plains at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 90 and 380mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 12°C以上、$(l:the_world/climate#rainfall)降水量$()90～380mmの平原に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:bongo",
 			"scale": 0.9,
 			"name": "ボンゴ",
-			"text": "The bongo spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 15°C, and $(l:the_world/climate#rainfall)rainfall$() between 230 and 500mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 15°C以上、$(l:the_world/climate#rainfall)降水量$()230～500mmの森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:grouse",
 			"scale": 0.7,
-			"text": "The grouse spawns at any $(l:the_world/climate#temperature)temperature$() below 13°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 400mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -12°C～13°C、$(l:the_world/climate#rainfall)降水量$()150～400mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:pheasant",
 			"scale": 0.7,
-			"text": "The pheasant spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above -5°C, and $(l:the_world/climate#rainfall)rainfall$() between 100 and 300mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -5°C～17°C、$(l:the_world/climate#rainfall)降水量$()100～300mmの森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:turkey",
 			"scale": 0.7,
-			"text": "The turkey spawns in forests at any $(l:the_world/climate#temperature)temperature$() below 17°C and above 0°C, and $(l:the_world/climate#rainfall)rainfall$() between 250 and 450mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 0°C～17°C、$(l:the_world/climate#rainfall)降水量$()250～450mmの森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:peafowl",
 			"scale": 0.6,
 			"name": "クジャク",
-			"text": "The peafowl spawns in forests at any $(l:the_world/climate#temperature)temperature$() above 14°C, and $(l:the_world/climate#rainfall)rainfall$() between 190 and 500mm."
+			"text": "平均$(l:the_world/climate#temperature)気温$() 14°C以上、$(l:the_world/climate#rainfall)降水量$()190～500mmの森林に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:lemming",
 			"scale": 1.5,
 			"offset": -0.2,
-			"name": "Lemming",
-			"text": "The lemming spawns at any $(l:the_world/climate#temperature)temperature$() below -3°C and above -12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+			"name": "レミング",
+			"text": "$(l:the_world/climate#temperature)気温$() -3°C～-12°C、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:jerboa",
 			"scale": 1.2,
-			"name": "Jerboa",
-			"text": "The jerboa spawns at any $(l:the_world/climate#temperature)temperature$() below 25°C and above -3°C, and $(l:the_world/climate#rainfall)rainfall$() below 160mm."
+			"name": "トビネズミ",
+			"text": "$(l:the_world/climate#temperature)気温$() -3°C～25°C、$(l:the_world/climate#rainfall)降水量$()160mm以下の環境に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:mongoose",
 			"scale": 0.8,
-			"name": "Mongoose",
-			"text": "The mongoose spawns at any $(l:the_world/climate#temperature)temperature$() above 12°C, and $(l:the_world/climate#rainfall)rainfall$() between 160 and 500mm."
+			"name": "マングース",
+			"text": "平均$(l:the_world/climate#temperature)気温$() -9°C以上、$(l:the_world/climate#rainfall)降水量$()160～500mmの環境に生息。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "aquatic",
-			"text": "$(thing)Aquatic Animals$() are a broad category which covers a number of different behaviors. They may be $(thing)Shore Dwellers$(), $(thing)Fish$(), $(thing)Shellfish$(), or $(thing)Large Aquatic Creatures$()",
-			"title": "Aquatic Animals"
+			"text": "$(thing)水生動物$()は、多様な種類を含む大まかな分類です。$(thing)沿岸動物$()、$(thing)魚類$()、$(thing)甲殻類$()、$(thing)大型水生生物$()といったタイプに分かれます。",
+			"title": "水生生物"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Shore Animals$() only spawn on sea shores and spend some of their day swimming, and some walking on the beach. They are curious creatures, and will follow the player around, but cannot be tamed."
+			"text": "$(thing)沿岸動物$()は、海岸のみに生息し、泳いだり、ビーチを歩いたりして一日を過ごします。好奇心旺盛な生き物で、プレイヤーを追いかけますが、飼いならすことはできません。\n\n"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:penguin",
 			"scale": 0.7,
 			"name": "ペンギン",
-			"text": "The penguin spawns in only the coldest beaches, with $(l:the_world/climate#temperature)temperature$() of at most -14°C and $(l:the_world/climate#rainfall)rainfall$() of at least 75mm."
+			"text": "$(l:the_world/climate#temperature)気温$() -14°C以下、$(l:the_world/climate#rainfall)降水量$()75mm以上のとても寒い海岸に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:turtle",
 			"scale": 0.7,
-			"name": "Sea Turtle",
-			"text": "The sea turtle likes warm water. It spawns in $(l:the_world/climate#temperature)temperature$() of at least 21°C and $(l:the_world/climate#rainfall)rainfall$() of at least 250mm."
+			"name": "カメ",
+			"text": "$(l:the_world/climate#temperature)気温$() 21°C以上、$(l:the_world/climate#rainfall)降水量$()250mm以上の環境に生息。温かい水場を好みます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Fish$() are small creatures that swim in water. Most of them can be $(l:mechanics/fishing)fished$(). Some prefer oceans, rivers, or lakes.",
+			"text": "$(thing)魚$()は水中を泳ぐ小さな生き物です。ほとんどの魚は$(l:mechanics/fishing)釣り$()で捕獲できます。海、川、または湖に生息しています。",
 			"title": "魚"
 		},
 		{
@@ -269,42 +269,42 @@
 			"entity": "tfc:cod",
 			"scale": 0.7,
 			"name": "タラ",
-			"text": "Cod prefer colder oceans, $(l:the_world/climate#temperature)temperature$() at most 18°C. They can be fished."
+			"text": "$(l:the_world/climate#temperature)気温$()18℃以下の冷たい海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:pufferfish",
 			"scale": 0.7,
 			"name": "フグ",
-			"text": "Pufferfish live in any ocean with at least a $(l:the_world/climate#temperature)temperature$() of 10°C."
+			"text": "$(l:the_world/climate#temperature)気温$()10℃以上の海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:jellyfish",
 			"scale": 0.7,
 			"name": "クラゲ",
-			"text": "Jellyfish live in warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:tropical_fish",
 			"scale": 0.7,
 			"name": "熱帯魚",
-			"text": "Tropical fish prefer warmer oceans, with a $(l:the_world/climate#temperature)temperature$() of at least 18°C."
+			"text": "$(l:the_world/climate#temperature)気温$()18℃以上の温かい海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:salmon",
 			"scale": 0.7,
 			"name": "サケ",
-			"text": "Salmon spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -5°C."
+			"text": "$(l:the_world/climate#temperature)気温$()-5℃以上の川や湖に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:bluegill",
 			"scale": 0.7,
 			"name": "ブルーギル",
-			"text": "Bluegill spawn in any river or lake with a $(l:the_world/climate#temperature)temperature$() of at least -10°C and at most 26°C."
+			"text": "$(l:the_world/climate#temperature)気温$()-10～26℃の川や湖に生息。"
 		},
 		{
 			"type": "patchouli:empty"
@@ -312,76 +312,76 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "shellfish",
-			"text": "$(thing)Shellfish$() are small animals that live on the floor of bodies of water. They cannot be fished, but drop shells that can be eaten or made into $(l:mechanics/flux)flux$(). Shellfish can be $(l:mechanics/fishing)bait$() for fish.",
-			"title": "Shellfish"
+			"text": "$(thing)甲殻類$()は水底に生息する小さな生物です。釣ることができませんが、食料にしたり、殻を$(l:mechanics/flux)融剤$()の素材として使えます。また、$(l:mechanics/fishing)魚釣りの餌$()としても利用できます。",
+			"title": "甲殻類"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:isopod",
 			"scale": 0.7,
 			"name": "ダイオウグソクムシ",
-			"text": "Isopods spawn in deeper sections of oceans of $(l:the_world/climate#temperature)temperature$() at most 14°C."
+			"text": "$(l:the_world/climate#temperature)気温$()14℃以下の深い海域に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:lobster",
 			"scale": 0.7,
 			"name": "ロブスター",
-			"text": "Lobster spawn in any ocean that is at most of a $(l:the_world/climate#temperature)temperature$() of 21°C."
+			"text": "$(l:the_world/climate#temperature)気温$()21℃以上の海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:crayfish",
 			"scale": 0.7,
 			"name": "ザリガニ",
-			"text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 5°C以上、$(l:the_world/climate#rainfall)降水量$()125mm以上の川や湖\n生息。...ロブスターに似ていますね。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:horseshoe_crab",
 			"scale": 0.7,
 			"name": "カブトガニ",
-			"text": "Horseshoe crabs spawn in oceans of moderate climate, $(l:the_world/climate#temperature)temperature$() between 10 and 21°C and with a $(l:the_world/climate#rainfall)rainfall$() of at most 400mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 10～21℃、$(l:the_world/climate#rainfall)降水量$()400mm以下の温かい海に生息。"
 		},
 		{
 			"type": "patchouli:empty"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Large Water Creatures$() are larger animals that live in the bigger bodies of water. Some of them hunt fish. They drop $(l:mechanics/lamps#tallow)blubber$(), which can be made into lamp fuel.",
-			"title": "Large Water Creatures"
+			"text": "$(thing)大型水生生物$()は広い水域に生息する大型の生き物で、中には魚を捕食する種類もいます。狩ると$(l:mechanics/lamps#tallow)脂肪$()を落とし、ランタン燃料として利用できます。",
+			"title": "大型水生生物"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:orca",
 			"scale": 0.25,
 			"name": "シャチ",
-			"text": "Orca whales live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at most 19°C and $(l:the_world/climate#rainfall)rainfall$() of at least 100mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 19°C以下、$(l:the_world/climate#rainfall)降水量$()100mm以上の深い海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:dolphin",
 			"scale": 0.4,
 			"name": "イルカ",
-			"text": "Dolphins live in deep oceans with $(l:the_world/climate#temperature)temperature$() of at least 10°C and $(l:the_world/climate#rainfall)rainfall$() of at least 200mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 10°C以上、$(l:the_world/climate#rainfall)降水量$()200mm以上の深い海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:manatee",
 			"scale": 0.25,
 			"name": "マナティー",
-			"text": "Manatees live in any warm lake, with $(l:the_world/climate#temperature)temperature$() of at least 20°C and $(l:the_world/climate#rainfall)rainfall$() of at most 300mm."
+			"text": "$(l:the_world/climate#temperature)気温$() 20°C以上、$(l:the_world/climate#rainfall)降水量$()300mm以下の温かい海に生息。"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfg:leopard_seal",
 			"scale": 0.5,
-			"name": "Leopard Seal",
-			"text": "The leopard seal spawns in only the coldest beaches, with $(l:the_world/climate#temperature)temperature$() of at most -9°C and $(l:the_world/climate#rainfall)rainfall$() of at least 105mm. They hunt penguins and are hunted by orcas."
+			"name": "アザラシ",
+			"text": "$(l:the_world/climate#temperature)気温$() -9°C以下、$(l:the_world/climate#rainfall)降水量$()105mm以上のとても寒い海岸に生息。ペンギンを狩り、シャチに狩られます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Squid can spawn in any deep ocean. They drop $(thing)Ink Sacs$(), and ink any player that gets too close. Some say that squids in deep, unexplored caves have strange properties.",
+			"text": "イカは深い海であればどこでも出現します。$(thing)イカスミ$()を落とし、近づくとプレイヤーに墨を吐きかけてきます。また、洞窟の深層部に生息するイカには奇妙な性質があるとも言われています。",
 			"title": "イカ"
 		}
 	],

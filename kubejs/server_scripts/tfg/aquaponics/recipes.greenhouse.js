@@ -590,5 +590,8 @@ const registerTFGGreenhouseRecipes = (event) => {
 		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
+	// Custom
+	generateGreenHouseRecipe(event, null, '4x tfc:plant/cherry_sapling', ['16x minecraft:cherry_leaves', '8x minecraft:cherry_leaves'], 1, 20);
+
 	//#endregion
 };

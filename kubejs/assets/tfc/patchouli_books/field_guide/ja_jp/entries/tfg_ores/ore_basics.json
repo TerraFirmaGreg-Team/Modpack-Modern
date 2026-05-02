@@ -1,5 +1,5 @@
 {
-    "name": "Mining in TFG",
+    "name": "TFGで採掘するには",
     "icon": "minecraft:diamond_pickaxe",
     "category": "tfc:tfg_ores",
     "priority": true,
@@ -8,7 +8,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores.$(br2)A regular $(thing)hammer$() can also break stone type blocks quickly, but will not result in dropped ores. It can still be useful for $(l:getting_started/primitive_anvils#raw_rock)extracting$() stone blocks however."
+            "text": "鉱石を掘るには、$(thing)ピッケル$()か$(thing)採掘用ハンマー$()を用意する必要があります。$(br2)普通の$(thing)ハンマー$()でも石系ブロックは素早く壊せますが、鉱石は入手できません。ただし、石ブロックを$(l:getting_started/primitive_anvils#raw_rock)回収する$()用途には役立ちます。"
         },
         {
             "type": "patchouli:crafting",
@@ -17,32 +17,32 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Pickaxe",
-            "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)coal$().",
+            "title": "ピッケル",
+            "text": "つるはしで鉱石を壊すと、$(thing)原石$()（低純度・中純度・高純度）と少量の石の粉が手に入ります。1つあたりのmB量は少ないため、インゴット化には複数必要になりますが、$(thing)石炭$()のようにこの形のままでしか使えない鉱物もあります。",
             "item": {
                 "tag": "minecraft:pickaxes"
             }
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mining Hammer",
-            "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
+            "title": "採掘用ハンマー",
+            "text": "これは3×3範囲で採掘できるピッケルのようなもので、$(thing)原石$()も採掘できます。整地にも便利です！$(br2)$(thing)スニーク$()しながら使うと、1ブロックずつ採掘することもできます。",
             "item": {
                 "tag": "forge:tools/mining_hammers"
             }
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Basic ore processing",
+            "title": "基礎的な鉱石処理",
             "anchor": "processing",
             "item": "gtceu:crushed_copper_ore",
-            "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
+            "text": "鉱石は加工することで、より多くの金属を取り出せるようになります。まずは$(l:mechanics/quern)臼$()で原石を砕くところから始めます。この作業は後に、$(thing)石臼$()や$(thing)破砕ホイール$()、$(thing)粉砕機$()、$(thing)鍛造機$()といった機械で自動化可能になります。"
         },
         {
             "type": "patchouli:crafting",
-            "title": "Purifying dust",
+            "title": "鉱石の精製",
             "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
-            "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
+            "text": "粉砕した鉱石からより多くのmBを得るために、まず$(thing)ハンマー$()と一緒にクラフトして$(thing)汚れた粉$()にしましょう。その後、この汚れた粉を水に投げ込むか、水入りの$(thing)大釜$()に$(item)$(k:key.use)$()で洗浄しましょう。"
         }
     ]
 }

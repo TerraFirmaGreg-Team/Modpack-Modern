@@ -29,6 +29,7 @@ const registerTFGCrops = (event) => {
 		.growthModifier(0.8)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.texture('tfg:item/sunflower_product')
 		})
@@ -63,6 +64,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
@@ -93,6 +95,7 @@ const registerTFGCrops = (event) => {
 		.expiryModifier(1.2)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.texture('tfg:item/flax_product')
 			product.tag('tfc:scrapable')
@@ -125,6 +128,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -163,6 +167,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -201,6 +206,7 @@ const registerTFGCrops = (event) => {
 		.doubleStages(4)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
         .requiresStick(true)
 		.productItem(product => {
 			product.food(food => {
@@ -241,6 +247,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -279,6 +286,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -316,6 +324,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -354,6 +363,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.existingProductItem('beneath:ghost_pepper')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
@@ -387,6 +397,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -418,6 +429,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -447,6 +459,7 @@ const registerTFGCrops = (event) => {
 		.soundType('cherry_wood')
 		.tagBlock('minecraft:mineable/axe')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.mapColor('color_red')
 		.lightLevel(0.85)
 		.requiresTool(false)
@@ -461,6 +474,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
@@ -493,6 +507,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.box(2, 0, 2, 14, 4, 14)
 		.productItem(product => {
 			product.food(food => {
@@ -530,6 +545,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -564,6 +580,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(2)

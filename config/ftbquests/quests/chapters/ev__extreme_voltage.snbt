@@ -1768,9 +1768,11 @@
 		}
 		{
 			dependencies: ["4F647D6A4949EDF7"]
+			description: ["{quests.extreme_voltage.mars_infinites.desc}"]
 			id: "6ABD72F1C1971EE3"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.extreme_voltage.mars_infinites.subtitle}"
 			tasks: [
 				{
 					id: "500E6AD918D6F37A"
@@ -1821,6 +1823,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.extreme_voltage.mars_infinites.title}"
 			x: 22.0d
 			y: 9.0d
 		}

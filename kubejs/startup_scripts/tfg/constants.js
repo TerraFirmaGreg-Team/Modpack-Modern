@@ -380,3 +380,36 @@ global.NEW_OVERWORLD_PLANTS = [
 	"tfg:plant/flame_vine",
 	"tfg:plant/cycad"
 ]
+
+global.TFG_NEW_WOOD_TYPES = [
+	{
+		name: "araucaria",
+		barkColor: "brown",
+		woodColor: "white",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 10,
+		location: "beneath"
+	},
+	{
+		name: "mahoe",
+		barkColor: "brown",
+		woodColor: "blue",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 10,
+		location: "beneath"
+	},
+	{
+		name: "beech",
+		barkColor: "brown",
+		woodColor: "lime",
+		leafColor: "green",
+		woodSound: "wood",
+		leafSound: "azalea_leaves",
+		daysToGrow: 10,
+		location: "beneath"
+	}
+]

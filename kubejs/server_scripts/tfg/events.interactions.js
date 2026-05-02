@@ -29,8 +29,6 @@ function transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTo
 		if (item.isEmpty() || player.mainHandItem.id !== toolId) return;
 	}
 
-	if (!player.crouching) return;
-
 	let state = block.getBlockState().toString();
 	if (state.includes('[') && copyBlockstate === true) {
 		state = state.substring(state.indexOf('['));
@@ -85,7 +83,6 @@ function transformBlockWithToolReturn(event, inputBlock, outputBlock, outputItem
 	} else {
 		if (block.id.toString() !== inputBlock) return;
 	}
-	if (!player.crouching) return;
 
 	if (toolId.startsWith('#')) {
 		if (item.isEmpty() || !player.mainHandItem.hasTag(toolId.substring(1))) return;
@@ -94,7 +91,7 @@ function transformBlockWithToolReturn(event, inputBlock, outputBlock, outputItem
 	}
 
 	transformBlockWithTool(event, inputBlock, outputBlock, toolId, damageTool, soundId, particleId, copyBlockstate)
-	
+
 	const dim = block.level.name.getString();
 	server.runCommandSilent(`execute in ${dim} run summon item ${player.x} ${player.y} ${player.z} {Item:{id:'${outputItem}', Count:${outputCount}b}}`);
 
@@ -130,7 +127,6 @@ function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeI
 	} else {
 		if (item.isEmpty() || player.mainHandItem.id !== itemId) return;
 	}
-	if (!player.crouching) return;
 
 	let state = block.getBlockState().toString()
 	if (state.includes('[') && copyBlockstate === true) {
@@ -163,81 +159,128 @@ function transformBlockWithItem(event, inputBlock, outputBlock, itemId, consumeI
 
 // Declare Events
 BlockEvents.rightClicked(event => {
-	//Brick index events
-	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
-		if (rock.bricks != null) {
-			if (rock.bricks.cracked != null) {
-				//brick -> cracked
-				transformBlockWithTool(event, rock.bricks.block, rock.bricks.cracked.block, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.stair, rock.bricks.cracked.stair, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.slab, rock.bricks.cracked.slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.wall, rock.bricks.cracked.wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+	const { server, item, player, block } = event;
+	if (!player.crouching) return;
+
+	if (item.hasTag('forge:tools/hammers')) {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null) {
+				if (rock.bricks.cracked != null) {
+					//brick -> cracked
+					transformBlockWithTool(event, rock.bricks.block, rock.bricks.cracked.block, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.stair, rock.bricks.cracked.stair, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.slab, rock.bricks.cracked.slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.wall, rock.bricks.cracked.wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+				}
+				if (rock.bricks.cracked != null && rock.bricks.mossy != null) {
+					//mossy -> cracked
+					transformBlockWithTool(event, rock.bricks.mossy.block, rock.bricks.cracked.block, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.mossy.stair, rock.bricks.cracked.stair, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.mossy.slab, rock.bricks.cracked.slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+					transformBlockWithTool(event, rock.bricks.mossy.wall, rock.bricks.cracked.wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
+				}
+			}
+		}
+	}
+
+	if (item.hasTag('forge:tools/knives')) {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null && rock.bricks.mossy != null) {
+				//mossy -> brick
+				transformBlockWithTool(event, rock.bricks.mossy.block, rock.bricks.block, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.bricks.mossy.stair, rock.bricks.stair, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.bricks.mossy.slab, rock.bricks.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.bricks.mossy.wall, rock.bricks.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			}
+			if (rock.cobble != null && rock.cobble.mossy) {
+				//mossy -> cobble
+				transformBlockWithTool(event, rock.cobble.mossy.block, rock.cobble.block, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.cobble.mossy.stair, rock.cobble.stair, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.cobble.mossy.slab, rock.cobble.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithTool(event, rock.cobble.mossy.wall, rock.cobble.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			}
+		}
+	}
+
+	if (item.id === 'tfc:mortar') {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null && rock.bricks.cracked != null) {
 				//cracked -> brick
 				transformBlockWithItem(event, rock.bricks.cracked.block, rock.bricks.block, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
 				transformBlockWithItem(event, rock.bricks.cracked.stair, rock.bricks.stair, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
 				transformBlockWithItem(event, rock.bricks.cracked.slab, rock.bricks.slab, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
 				transformBlockWithItem(event, rock.bricks.cracked.wall, rock.bricks.wall, 'tfc:mortar', true, 1, 'minecraft:item.ink_sac.use', 'minecraft:effect', true);
 			}
-			if (rock.bricks.mossy != null) {
-				//brick -> mossy
-				transformBlockWithItem(event, rock.bricks.block, rock.bricks.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.stair, rock.bricks.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.slab, rock.bricks.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.wall, rock.bricks.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				//mossy -> brick
-				transformBlockWithTool(event, rock.bricks.mossy.block, rock.bricks.block, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.mossy.block, rock.bricks.block, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithTool(event, rock.bricks.mossy.stair, rock.bricks.stair, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.mossy.stair, rock.bricks.stair, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithTool(event, rock.bricks.mossy.slab, rock.bricks.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.mossy.slab, rock.bricks.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithTool(event, rock.bricks.mossy.wall, rock.bricks.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.mossy.wall, rock.bricks.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			}
-			if (rock.bricks.cracked != null && rock.bricks.mossy != null) {
-				//cracked -> mossy
-				transformBlockWithItem(event, rock.bricks.cracked.block, rock.bricks.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.cracked.stair, rock.bricks.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.cracked.slab, rock.bricks.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				transformBlockWithItem(event, rock.bricks.cracked.wall, rock.bricks.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-				//mossy -> cracked
-				transformBlockWithTool(event, rock.bricks.mossy.block, rock.bricks.cracked.block, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.mossy.stair, rock.bricks.cracked.stair, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.mossy.slab, rock.bricks.cracked.slab, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-				transformBlockWithTool(event, rock.bricks.mossy.wall, rock.bricks.cracked.wall, '#forge:tools/hammers', true, 'minecraft:block.copper.hit', 'minecraft:crit', true);
-			}
-			if (rock.polished != null) {
-				// brick -> smooth
-				transformBlockWithTool(event, rock.bricks.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				if (rock.bricks.mossy != null) {
-					transformBlockWithTool(event, rock.bricks.mossy.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				}
-				if (rock.bricks.cracked != null) {
-					transformBlockWithTool(event, rock.bricks.cracked.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
-				}
-			}
-		}
-		if (rock.cobble != null && rock.cobble.mossy) {
-			//cobble -> mossy
-			transformBlockWithItem(event, rock.cobble.block, rock.cobble.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.stair, rock.cobble.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.slab, rock.cobble.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.wall, rock.cobble.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
-			//mossy -> cobble
-			transformBlockWithTool(event, rock.cobble.mossy.block, rock.cobble.block, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.block, rock.cobble.block, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithTool(event, rock.cobble.mossy.stair, rock.cobble.stair, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.stair, rock.cobble.stair, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithTool(event, rock.cobble.mossy.slab, rock.cobble.slab, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.slab, rock.cobble.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithTool(event, rock.cobble.mossy.wall, rock.cobble.wall, '#forge:tools/knives', true, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
-			transformBlockWithItem(event, rock.cobble.mossy.wall, rock.cobble.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
 		}
 	}
-		
+
+	if (item.id === 'tfc:groundcover/pumice') {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null && rock.bricks.mossy != null) {
+				//mossy -> brick
+				transformBlockWithItem(event, rock.bricks.mossy.block, rock.bricks.block, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.bricks.mossy.stair, rock.bricks.stair, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.bricks.mossy.slab, rock.bricks.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.bricks.mossy.wall, rock.bricks.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			}
+			if (rock.cobble != null && rock.cobble.mossy) {
+				//mossy -> cobble
+				transformBlockWithItem(event, rock.cobble.mossy.block, rock.cobble.block, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.mossy.stair, rock.cobble.stair, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.mossy.slab, rock.cobble.slab, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.mossy.wall, rock.cobble.wall, 'tfc:groundcover/pumice', true, 1, 'minecraft:item.axe.wax_off', 'minecraft:item_slime', true);
+			}
+		}
+	}
+
+	if (item.hasTag('tfc:compost_greens_low')) {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null) {
+				if (rock.bricks.mossy != null) {
+					//brick -> mossy
+					transformBlockWithItem(event, rock.bricks.block, rock.bricks.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.stair, rock.bricks.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.slab, rock.bricks.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.wall, rock.bricks.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+				}
+				if (rock.bricks.cracked != null && rock.bricks.mossy != null) {
+					//cracked -> mossy
+					transformBlockWithItem(event, rock.bricks.cracked.block, rock.bricks.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.cracked.stair, rock.bricks.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.cracked.slab, rock.bricks.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+					transformBlockWithItem(event, rock.bricks.cracked.wall, rock.bricks.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+				}
+			}
+			if (rock.cobble != null && rock.cobble.mossy) {
+				//cobble -> mossy
+				transformBlockWithItem(event, rock.cobble.block, rock.cobble.mossy.block, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.stair, rock.cobble.mossy.stair, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.slab, rock.cobble.mossy.slab, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+				transformBlockWithItem(event, rock.cobble.wall, rock.cobble.mossy.wall, '#tfc:compost_greens_low', true, 1, 'minecraft:block.moss.hit', 'minecraft:item_slime', true);
+			}
+		}
+	}
+
+	if (item.hasTag('create:sandpaper')) {
+		for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+			if (rock.bricks != null) {
+				if (rock.polished != null) {
+					// brick -> smooth
+					transformBlockWithTool(event, rock.bricks.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+					if (rock.bricks.mossy != null) {
+						transformBlockWithTool(event, rock.bricks.mossy.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+					}
+					if (rock.bricks.cracked != null) {
+						transformBlockWithTool(event, rock.bricks.cracked.block, rock.polished.block, '#create:sandpaper', true, 'create:sanding_short', 'minecraft:crit', true);
+					}
+				}
+			}
+		}
+	}
+
 	//Misc Events
 	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool_frame', 'tfg:glacian_wool', true, 2, 'block.wool.place', 'minecraft:happy_villager', true);
-	transformBlockWithToolReturn(event, 'tfg:glacian_wool_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool', 2,'#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
+	transformBlockWithToolReturn(event, 'tfg:glacian_wool_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:glacian_wool', 2, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
 
 	transformBlockWithItem(event, 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_frame', 'tfg:aes_insulation_roll', true, 1, 'block.wool.place', 'minecraft:happy_villager', true);
 	transformBlockWithToolReturn(event, 'tfg:aes_insulation_frame', 'gtceu:incoloy_ma_956_frame', 'tfg:aes_insulation_roll', 1, '#forge:tools/wire_cutters', true, 'minecraft:block.beehive.shear', 'minecraft:crit', true);
@@ -261,7 +304,7 @@ BlockEvents.broken(event => {
 	const { server, item, player, block } = event;
 
 	let toolUsed = player.mainHandItem;
-	
+
 	if (!block.hasTag('tfc:mineable_with_sharp_tool') || !toolUsed.hasTag('tfc:sharp_tools')) {
 		return;
 	}

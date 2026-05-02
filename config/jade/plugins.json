@@ -8,13 +8,13 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage": true,
     "item_storage.normal_amount": 9,
+    "item_storage": true,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
-    "energy_storage": true,
     "entity_armor.max_for_render": 40,
+    "energy_storage": true,
     "breaking_progress": true,
     "tnt_stability": true,
     "item_storage.items_per_line": 9,
@@ -22,8 +22,8 @@
     "crop_progress": true,
     "command_block": true,
     "mob_growth": true,
-    "waxed": true,
     "harvest_tool.new_line": false,
+    "waxed": true,
     "entity_health.max_for_render": 40,
     "entity_health.show_fractions": false,
     "mob_spawner": true,
@@ -54,6 +54,12 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "gtmutils": {
+    "me_expanded_pattern_buffer_proxy_info": true,
+    "me_expanded_pattern_buffer_info": true,
+    "enlarged_me_stocking_bus_info": true,
+    "pterb_info": true
+  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -74,6 +80,7 @@
     "transformer": true,
     "energy_converter_provider": true,
     "controllable_provider": true,
+    "ldp_endpoint": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
     "me_pattern_buffer_proxy": true,
@@ -81,6 +88,7 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,
@@ -114,8 +122,8 @@
   },
   "ae2": {
     "part_icon": true,
-    "charger": true,
     "debug": true,
+    "charger": true,
     "part_tooltip": true,
     "grid_node_state": true,
     "pattern_provider": true,
@@ -134,6 +142,7 @@
     "shelf": true,
     "oven_top": true,
     "pumping_station": true,
+    "stovetop_pot": true,
     "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
@@ -141,17 +150,20 @@
     "hanger": true
   },
   "tfc": {
+    "axolotl": true,
     "bloomery": true,
     "nest_box": true,
     "bellows": true,
     "hoe_overlay": true,
+    "snatcher": true,
     "charcoal_forge": true,
     "mud_bricks": true,
     "loom": true,
     "bloom": true,
     "frog": true,
-    "sapling": true,
     "rabbit": true,
+    "sapling": true,
+    "jerboa": true,
     "composter": true,
     "surfer": true,
     "decaying": true,
@@ -160,6 +172,7 @@
     "ocelot": true,
     "candle_cake": true,
     "horse": true,
+    "charger": true,
     "clutch": true,
     "animal": true,
     "fruit_tree_sapling": true,
@@ -167,7 +180,9 @@
     "encased_axle": true,
     "crop": true,
     "blast_furnace": true,
+    "lemming": true,
     "hand_wheel": true,
+    "mongoose": true,
     "sheet_pile": true,
     "quern": true,
     "pit_kiln_above": true,
@@ -177,6 +192,7 @@
     "chested_horse": true,
     "pack_predator": true,
     "barrel": true,
+    "leopard_seal": true,
     "mold_table": true,
     "predator": true,
     "wild_animal": true,
@@ -192,6 +208,7 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
+    "bison": true,
     "soarer": true,
     "wet_concrete": true,
     "ingot_pile": true
@@ -211,8 +228,15 @@
     "lightroom": true,
     "photograph_frame": true
   },
+  "tfg": {
+    "tier_locked_block_info": true
+  },
   "jadeaddons.lootr": {
     "info": true
+  },
+  "tfc_gourmet": {
+    "milkable_animal": true,
+    "brinza_wheel": true
   },
   "corpse": {
     "corpse": true

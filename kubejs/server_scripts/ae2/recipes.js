@@ -668,8 +668,8 @@ const registerAE2Recipes = (event) => {
 			'#forge:small_dusts/fluix')
 		.itemOutputs('4x ae2:fluix_glass_cable')
 		.circuit(1)
-		.duration(20)
-		.EUt(480)
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.MV])
 		.addMaterialInfo(true)
 
 	// Covered Cable
@@ -2336,7 +2336,7 @@ const registerAE2Recipes = (event) => {
 		.duration(100)
 
 	event.recipes.gtceu.macerator('tfg:sky_stone_slab')
-		.itemInputs('2x #tfg:stone_types/suevite')
+		.itemInputs('2x #tfg:stone_types/suevite_half')
 		.itemOutputs('ae2:sky_dust')
 		.EUt(2)
 		.duration(100)

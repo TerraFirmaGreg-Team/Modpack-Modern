@@ -1145,7 +1145,7 @@ function registerGreateRecipes(event) {
 		'#forge:tools/saws'
 	]).id('tfg:greate/shapeless/treated_wood_window_pane')
 
-	event.recipes.gtceu.cutter(`tfg:greate/greate:treated_wood_window_pane`)
+	event.recipes.gtceu.cutter(`tfg:treated_wood_window_pane`)
 		.itemInputs(`3x greate:treated_wood_window`)
 		.itemOutputs(`8x greate:treated_wood_window_pane`)
 		.duration(40)

@@ -1,5 +1,5 @@
 {
-    "name": "Mining in TFG",
+    "name": "Górnictwo w TFG",
     "icon": "minecraft:diamond_pickaxe",
     "category": "tfc:tfg_ores",
     "priority": true,
@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Pickaxe",
+            "title": "Kilof",
             "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)coal$().",
             "item": {
                 "tag": "minecraft:pickaxes"
@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Mining Hammer",
+            "title": "Młot górniczy",
             "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
             "item": {
                 "tag": "forge:tools/mining_hammers"
@@ -40,7 +40,7 @@
         },
         {
             "type": "patchouli:crafting",
-            "title": "Purifying dust",
+            "title": "Oczyszczanie pyłu",
             "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
             "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
         }

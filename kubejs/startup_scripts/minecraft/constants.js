@@ -275,7 +275,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:stripped_cherry_log",
     "minecraft:stripped_cherry_wood",
     "minecraft:cherry_wood",
-    "minecraft:cherry_leaves",
     "minecraft:cherry_slab",
     "minecraft:cherry_fence",
     "minecraft:cherry_stairs",

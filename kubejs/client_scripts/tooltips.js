@@ -451,7 +451,24 @@ const registerTooltips = (event) => {
 		};
 	});
 
-	//#endregion
+	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
+	});
+
+	// Wearables
+	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wearable.snorkel'));
+	});
+	event.addAdvanced(['tfg:flippers'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wearable.flippers'));
+	});
+	event.addAdvanced(['tfg:snowshoes'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.wearable.snowshoes.powder'));
+		text.add(2, Text.translate('tfg.tooltip.wearable.snowshoes.snow'));
+	});
+	event.addAdvanced(['tfg:piglin_disguise'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.piglin_disguise'));
+	});
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
