@@ -1354,8 +1354,15 @@
 			id: "5B860F2BECC8BC93"
 			subtitle: "{quests.metal_age.crafting_station.subtitle}"
 			tasks: [{
-				id: "3F33BC982FF71EA7"
-				item: "craftingstation:crafting_station"
+				id: "313114CA1558DD32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:crafting_stations)"
+					}
+				}
+				title: "Any #tfg:crafting_stations"
 				type: "item"
 			}]
 			title: "{quests.metal_age.crafting_station.title}"

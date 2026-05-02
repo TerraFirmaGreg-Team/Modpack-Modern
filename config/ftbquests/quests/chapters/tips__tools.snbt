@@ -1486,7 +1486,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: [
+				"150B7C5CD152E1BA"
+				"0B140885C77A752D"
+			]
 			description: ["{quests.tfg_tips.cane.desc}"]
 			id: "75C6BF1C9405B4C7"
 			subtitle: "{quests.tfg_tips.cane.subtitle}"
@@ -2940,7 +2943,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.feeding_troughs.title}"
-			x: -5.5d
+			x: -6.0d
 			y: 6.5d
 		}
 		{
@@ -2961,8 +2964,32 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.scraping_knives.title}"
-			x: -3.5d
+			x: -3.0d
 			y: 6.5d
+		}
+		{
+			dependencies: [
+				"560B17BFBE8D477D"
+				"150B7C5CD152E1BA"
+			]
+			description: ["{quests.tfg_tips.tools_tips.swim_gear.desc}"]
+			id: "615361AD621B588E"
+			subtitle: "{quests.tfg_tips.tools_tips.swim_gear.subtitle}"
+			tasks: [
+				{
+					id: "631E27D70E823BCE"
+					item: "tfg:snorkel"
+					type: "item"
+				}
+				{
+					id: "3A3BF2350086F6D3"
+					item: "tfg:flippers"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.tools_tips.swim_gear.title}"
+			x: -4.5d
+			y: 6.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]
