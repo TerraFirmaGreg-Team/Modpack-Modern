@@ -777,7 +777,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.10.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -786,20 +786,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7938/885/AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
-                    "id": "7938885",
+                    "url": "https://edge.forgecdn.net/files/8002/62/AdvancedLootInfo-forge-1.20.1-1.10.0.jar",
+                    "id": "8002062",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "ef21a66c2d87b7360d63155b1035646d6e6b0f19",
-                        "md5": "a70d78005a8b902b1a08efdd2e616bcb"
+                        "sha1": "3f24e8ef618847743c8933aae9141202b1cded0a",
+                        "md5": "9c7948fea8dc8f6573ba9bbed1f2ab57"
                     },
                     "required_dependencies": [],
-                    "size": 752896,
-                    "date_published": "2026-04-17T08:01:40.547Z"
+                    "size": 792622,
+                    "date_published": "2026-04-27T19:56:41.253Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.10.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -808,16 +808,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/Z4D1luwf/AdvancedLootInfo-forge-1.20.1-1.9.1.jar",
-                    "id": "Z4D1luwf",
+                    "url": "https://cdn.modrinth.com/data/PEPVViac/versions/2keMeQIt/AdvancedLootInfo-forge-1.20.1-1.10.0.jar",
+                    "id": "2keMeQIt",
                     "parent_id": "PEPVViac",
                     "hashes": {
-                        "sha512": "3fbd5d536fa27714aabb943a1227c2f13af3db3952768728d663156de0dc218c775ddb5cb7d2af8e7ba2facb8ffc1ba2c058b2d89dcad8293c545f7882d7ade1",
-                        "sha1": "ef21a66c2d87b7360d63155b1035646d6e6b0f19"
+                        "sha512": "a3bf04dc53125a5db6bb347ae4a22520a75a90ec99409cf831ac2fb9c67db2ec7e6dd60db2a1c9431d885be159d80bcb8996fed5311a63f0182e19e87ccd9eea",
+                        "sha1": "3f24e8ef618847743c8933aae9141202b1cded0a"
                     },
                     "required_dependencies": [],
-                    "size": 752896,
-                    "date_published": "2026-04-17T08:01:36.408884Z"
+                    "size": 792622,
+                    "date_published": "2026-04-27T19:56:37.194878Z"
                 }
             ]
         },
@@ -3757,7 +3757,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "craftingtweaks-forge-1.20.1-18.2.8.jar",
+                    "file_name": "craftingtweaks-forge-1.20.1-18.2.9.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -3766,22 +3766,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7454/498/craftingtweaks-forge-1.20.1-18.2.8.jar",
-                    "id": "7454498",
+                    "url": "https://edge.forgecdn.net/files/8019/501/craftingtweaks-forge-1.20.1-18.2.9.jar",
+                    "id": "8019501",
                     "parent_id": "233071",
                     "hashes": {
-                        "sha1": "1c93d31216aa53e53e97f4e24adb899673accb52",
-                        "md5": "7208ef92ce8196cb479f39676ba6fc29"
+                        "sha1": "8f7a85056a753ffb9e9f178d32ccbcce44a29e63",
+                        "md5": "9d9de3a39fd928997f3d7d0c5b62d54f"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 231043,
-                    "date_published": "2026-01-13T13:11:06.543Z"
+                    "size": 230696,
+                    "date_published": "2026-05-01T06:46:11.390Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "craftingtweaks-forge-1.20.1-18.2.8.jar",
+                    "file_name": "craftingtweaks-forge-1.20.1-18.2.9.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -3790,18 +3790,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/DMu0oBKf/versions/pHj8hyWv/craftingtweaks-forge-1.20.1-18.2.8.jar",
-                    "id": "pHj8hyWv",
+                    "url": "https://cdn.modrinth.com/data/DMu0oBKf/versions/KOqT9kSZ/craftingtweaks-forge-1.20.1-18.2.9.jar",
+                    "id": "KOqT9kSZ",
                     "parent_id": "DMu0oBKf",
                     "hashes": {
-                        "sha512": "5294ffe1906cd987e6067a3f9bffad43ecce88bf7398fa41e83c2c9c29d135baf78a41fd90215adfa5ce9de113f6d96eb863da31947226308951910d30c5891f",
-                        "sha1": "14105e247ccff9a7674fd8c85ce8c77e7f318846"
+                        "sha512": "8bb7eb24d119cee809bad8f4166d18bc580ff0b20f18af4760546ec0410a70e857d063830776025acf907ff19856b5471e93db8b6d5a645c8215b73161d77207",
+                        "sha1": "0e49f431b105050fbf1b6a0e83de6e9cddccad3a"
                     },
                     "required_dependencies": [
                         "MBAkmtvl"
                     ],
-                    "size": 231043,
-                    "date_published": "2026-01-13T13:10:45.682500Z"
+                    "size": 230696,
+                    "date_published": "2026-05-01T06:45:53.655613Z"
                 }
             ]
         },
@@ -4341,7 +4341,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_repair-forge-1.20.1-1.1.1-all.jar",
+                    "file_name": "create_repair-forge-1.20.1-1.2.0-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4350,23 +4350,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7928/390/create_repair-forge-1.20.1-1.1.1-all.jar",
-                    "id": "7928390",
+                    "url": "https://edge.forgecdn.net/files/8023/187/create_repair-forge-1.20.1-1.2.0-all.jar",
+                    "id": "8023187",
                     "parent_id": "1477958",
                     "hashes": {
-                        "sha1": "be88f6871ca76d6b47b5fab470e79e43475b49bb",
-                        "md5": "2a40b6b8db077b0fa063f64f4feb8036"
+                        "sha1": "5410053339576ddb78ade41d10024f44030e2535",
+                        "md5": "80423f34af4ee5e4a3051547f2fc3050"
                     },
                     "required_dependencies": [
                         "980731",
                         "328085"
                     ],
-                    "size": 1260557,
-                    "date_published": "2026-04-15T00:56:39.993Z"
+                    "size": 1280783,
+                    "date_published": "2026-05-01T21:05:29.810Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "create_repair-forge-1.20.1-1.1.1-all.jar",
+                    "file_name": "create_repair-forge-1.20.1-1.2.0-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4375,19 +4375,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/G3K7UdxY/versions/m4xKS8Xh/create_repair-forge-1.20.1-1.1.1-all.jar",
-                    "id": "m4xKS8Xh",
+                    "url": "https://cdn.modrinth.com/data/G3K7UdxY/versions/V9pkstvu/create_repair-forge-1.20.1-1.2.0-all.jar",
+                    "id": "V9pkstvu",
                     "parent_id": "G3K7UdxY",
                     "hashes": {
-                        "sha512": "0622b39717708db666704ede2daa3e6450f97ac2740953dd42423d7d41d0e024f7a30c7f5004ffec9c70a8fc30753d0280d843c471a8d0b5d79901f21cafbb8f",
-                        "sha1": "be88f6871ca76d6b47b5fab470e79e43475b49bb"
+                        "sha512": "e2561590914ddbd9696651be45cf65e1e6ad5e1d8a460e347d61af0afa237661c2c1896bbe2d9d4a61f7aaa3f611666ae92035b1a04833269f7e25ba1173cf76",
+                        "sha1": "5410053339576ddb78ade41d10024f44030e2535"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "bxn6Iwdo"
+                        "bxn6Iwdo",
+                        "LNytGWDc"
                     ],
-                    "size": 1260557,
-                    "date_published": "2026-04-15T00:54:16.197786Z"
+                    "size": 1280783,
+                    "date_published": "2026-05-01T21:04:09.425922Z"
                 }
             ]
         },
@@ -9567,8 +9567,8 @@
                 "modrinth": "krypton-fnp"
             },
             "name": {
-                "curseforge": "Krypton FNP",
-                "modrinth": "Krypton FNP"
+                "curseforge": "Krypton Reno",
+                "modrinth": "Krypton Reno"
             },
             "id": {
                 "curseforge": "1269169",
@@ -9578,7 +9578,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Krypton FNP-forge-1.20.1-0.2.28.2-1.20.1.jar",
+                    "file_name": "Krypton Reno-forge-1.20.1-26.1.0-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9587,20 +9587,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7464/032/Krypton FNP-forge-1.20.1-0.2.28.2-1.20.1.jar",
-                    "id": "7464032",
+                    "url": "https://edge.forgecdn.net/files/8025/095/Krypton Reno-forge-1.20.1-26.1.0-1.20.1.jar",
+                    "id": "8025095",
                     "parent_id": "1269169",
                     "hashes": {
-                        "sha1": "84f719905f9c01943b7e67ba61b0624ae6b073a3",
-                        "md5": "cdf00793d38e0d689d4bb4edb18d78ff"
+                        "sha1": "f0b835c231242991ae99184b778ae9ad3404ced8",
+                        "md5": "23af7d0a61b6a7b99f32af97cd3e081f"
                     },
                     "required_dependencies": [],
-                    "size": 1794016,
-                    "date_published": "2026-01-15T16:03:38.220Z"
+                    "size": 1798275,
+                    "date_published": "2026-05-02T07:07:55.090Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "Krypton FNP-forge-1.20.1-0.2.28.2-1.20.1.jar",
+                    "file_name": "Krypton Reno-forge-1.20.1-26.1.0-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9609,16 +9609,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/JkxWVYwU/versions/e37D0ChM/Krypton FNP-forge-1.20.1-0.2.28.2-1.20.1.jar",
-                    "id": "e37D0ChM",
+                    "url": "https://cdn.modrinth.com/data/JkxWVYwU/versions/zuPljrqA/Krypton Reno-forge-1.20.1-26.1.0-1.20.1.jar",
+                    "id": "zuPljrqA",
                     "parent_id": "JkxWVYwU",
                     "hashes": {
-                        "sha512": "103e08777f541b54240a1fd42669f308f1b672ab5e6ffb7469ca2a9fd1827cb22b4d41b53d08a1f064c250c5d2eb84dec96daf604c927354154fdec443693997",
-                        "sha1": "84f719905f9c01943b7e67ba61b0624ae6b073a3"
+                        "sha512": "5066915a2aff117ee30e6ef2dfa25f2c49076d1c78b54246bbd7fcf027535fc6861e2de91749fb44580114ba216ffda497caf9defa088721c6ae5b4800eb496c",
+                        "sha1": "f0b835c231242991ae99184b778ae9ad3404ced8"
                     },
                     "required_dependencies": [],
-                    "size": 1794016,
-                    "date_published": "2026-01-15T16:03:44.377420Z"
+                    "size": 1798275,
+                    "date_published": "2026-05-02T07:07:55.760611Z"
                 }
             ]
         },
@@ -13378,7 +13378,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.29.1788.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.30.1809.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13387,20 +13387,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8007/530/sophisticatedcore-1.20.1-1.3.29.1788.jar",
-                    "id": "8007530",
+                    "url": "https://edge.forgecdn.net/files/8014/107/sophisticatedcore-1.20.1-1.3.30.1809.jar",
+                    "id": "8014107",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "e76412c3c0b893b59a6226a38e22acf6f266de28",
-                        "md5": "72da48f760df197f38bb0c49d4ebd4aa"
+                        "sha1": "0f0436995da702b84f0fad9292223671fcfc28d0",
+                        "md5": "8192b2f81210aaa8b32b71b5fbb6e51e"
                     },
                     "required_dependencies": [],
-                    "size": 1438572,
-                    "date_published": "2026-04-28T23:14:21.887Z"
+                    "size": 1438591,
+                    "date_published": "2026-04-30T10:06:01.363Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.29.1788.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.30.1809.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13409,16 +13409,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/D6RsMIbQ/sophisticatedcore-1.20.1-1.3.29.1788.jar",
-                    "id": "D6RsMIbQ",
+                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/8Xj3Q0s3/sophisticatedcore-1.20.1-1.3.30.1809.jar",
+                    "id": "8Xj3Q0s3",
                     "parent_id": "nmoqTijg",
                     "hashes": {
-                        "sha512": "970e431fb3d249cad4c7066f71a8a406cd3f245eaf05aa7159a92bab7944374fc4dd613cfc37e721d0ee2da9dcc0189823d82122f0988b98bdde52d2b7ed2287",
-                        "sha1": "06513cd873ffc8a22c1064191f8b5b3e0ef8e374"
+                        "sha512": "0dfce8eae3dee7d1db4dfb6e1cc3998113f4121105e9014bfb85eb4cc31581bfde1bc93554e7a3c8466cfe15ce53515dc2150ad355007a5801af0d33425bc949",
+                        "sha1": "5ed7e83caffe178bcc1b408da58d29f73b0af0b8"
                     },
                     "required_dependencies": [],
-                    "size": 1438572,
-                    "date_published": "2026-04-28T23:15:05.923522Z"
+                    "size": 1438590,
+                    "date_published": "2026-04-30T10:07:02.738238Z"
                 }
             ]
         },
