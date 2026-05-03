@@ -136,6 +136,41 @@ global.CF_DISABLED_STORAGES = [
     // Sophisticated Backpacks
     'sophisticatedbackpacks:backpack',
 
+    // GTceu Super Chests
+    'gtceu:ulv_super_chest',
+    'gtceu:lv_super_chest',
+    'gtceu:mv_super_chest',
+    'gtceu:hv_super_chest',
+    'gtceu:ev_super_chest',
+    'gtceu:iv_quantum_chest',
+    'gtceu:luv_quantum_chest',
+    'gtceu:zpm_quantum_chest',
+    'gtceu:uv_quantum_chest',
+    'gtceu:uhv_quantum_chest',
+
+    // GTceu Super Tanks
+    'gtceu:ulv_super_tank',
+    'gtceu:lv_super_tank',
+    'gtceu:mv_super_tank',
+    'gtceu:hv_super_tank',
+    'gtceu:ev_super_tank',
+    'gtceu:iv_quantum_tank',
+    'gtceu:luv_quantum_tank',
+    'gtceu:zpm_quantum_tank',
+    'gtceu:uv_quantum_tank',
+    'gtceu:uhv_quantum_tank',
+
+    // GTceu Drums
+    'gtceu:bronze_drum',
+    'gtceu:steel_drum',
+    'gtceu:aluminium_drum',
+    'gtceu:stainless_steel_drum',
+    'gtceu:gold_drum',
+    'gtceu:titanium_drum',
+    'gtceu:tungsten_steel_drum',
+    'gtceu:bismuth_bronze_drum',
+    'gtceu:black_bronze_drum',
+
     // TFG
     'tfg:artisan_table'
 ]
