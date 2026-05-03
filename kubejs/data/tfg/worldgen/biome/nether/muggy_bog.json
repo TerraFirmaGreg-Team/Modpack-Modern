@@ -31,7 +31,10 @@
 	},
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
-		[],
+		[
+			"tfg:nether/terrain/salt_delta",
+			"tfg:nether/terrain/mud_delta"
+		],
 		[],
 		[
 			"tfg:nether/spikes/calcite",
@@ -43,8 +46,6 @@
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/mossy_cobble",
-			"tfg:nether/terrain/salt_delta",
-			"tfg:nether/terrain/mud_delta",
 			"tfg:nether/terrain/clay_disc"
 		],
 		[
@@ -70,6 +71,10 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/crocodile",
+			"tfg:nether/entity/temperate_frog",
+			"tfg:nether/entity/cold_frog",
+			"tfg:nether/entity/isopod",
 			"tfc:erosion"
 		]
 	],

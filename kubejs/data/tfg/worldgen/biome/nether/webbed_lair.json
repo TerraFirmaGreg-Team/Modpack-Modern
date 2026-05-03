@@ -64,6 +64,8 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/crocodile",
+			"tfg:nether/entity/cold_frog",
 			"tfc:erosion"
 		]
 	],
