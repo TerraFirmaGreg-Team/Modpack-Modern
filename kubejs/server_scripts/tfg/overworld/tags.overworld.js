@@ -547,6 +547,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
 	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
 	event.add('tfc:deals_crushing_damage', 'minecraft:slime')
+	event.add('tfc:deals_slashing_damage', 'minecraft:enderman')
 
 	event.add('tfc:zombies', 'minecraft:drowned')
 	event.add('tfc:zombies', 'minecraft:zombified_piglin')

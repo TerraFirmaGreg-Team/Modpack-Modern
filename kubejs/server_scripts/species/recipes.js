@@ -41,7 +41,7 @@ function registerSpeciesRecipes(event) {
 
 	event.recipes.gtceu.assembler('species:hopelight')
 		.itemInputs('1x #forge:plates/magnalium', 'ae2:charged_certus_quartz_crystal')
-		.inputFluids(Fluid.of('gtceu:glowstone', 144*4))
+		.inputFluids(Fluid.of('gtceu:glowstone', 144 * 4))
 		.itemOutputs('2x species:hopelight')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.HV])
@@ -53,12 +53,12 @@ function registerSpeciesRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.HV])
 
-	event.shaped('2x species:coil', [
-		'ABA'
-	], {
-		A: '#forge:bolts/wrought_iron',
-		B: 'firmaciv:rope_coil'
-	}).id('tfg:shaped/coil')
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('3x species:coil', ['#tfg:tools/spindles', 'firmaciv:rope_coil'])
+	).id('tfg:shaped/coil')
+
+	event.shapeless('firmaciv:rope_coil', ['3x species:coil'])
+		.id('tfg:shapeless/coil')
 
 	event.shaped('species:harpoon', [
 		'A',
@@ -112,10 +112,10 @@ function registerSpeciesRecipes(event) {
 			0, 0, 0, 0, 0, 0, 0, 0, 0
 		],
 		[
-			1,  1,  1,  1,  0,  0,  0,  0,
-			1, -1, -1,  1,  0, -1, -1,  0,
-			1,  1,  1,  1,  0,  0,  0,  0,
-			1,  1, -1, -1, -1, -1,  0,  0
+			1, 1, 1, 1, 0, 0, 0, 0,
+			1, -1, -1, 1, 0, -1, -1, 0,
+			1, 1, 1, 1, 0, 0, 0, 0,
+			1, 1, -1, -1, -1, -1, 0, 0
 		]).id('tfg:sewing/wicked_mask')
 
 	event.recipes.gtceu.assembler('tfg:wicked_mask')
@@ -158,4 +158,35 @@ function registerSpeciesRecipes(event) {
 		D: 'gtceu:sticky_resin',
 		E: 'minecraft:gunpowder'
 	}).id('tfg:shaped/smoke_bomb_vessel')
+
+	event.recipes.tfc.heating('species:broken_links', 1535)
+		.resultFluid(Fluid.of('gtceu:iron', 144 / 2))
+		.id(`species:heating/broken_links`)
+
+	event.recipes.gtceu.extractor('tfg:broken_links')
+		.itemInputs('species:broken_links')
+		.outputFluids(Fluid.of('gtceu:iron', 144 / 2))
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:werefang')
+		.itemInputs("species:werefang")
+		.itemOutputs("3x minecraft:bone_meal")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.tfc.quern("3x minecraft:bone_meal", "species:werefang")
+		.id("tfg:quern/werefang")
+
+	event.recipes.gtceu.macerator('tfg:bone_spike')
+		.itemInputs(["species:bone_spike", "species:bone_vertebra", "species:bone_bark"])
+		.itemOutputs("9x minecraft:bone_meal")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+
+	event.recipes.tfc.quern("9x minecraft:bone_meal", ["species:bone_spike", "species:bone_vertebra", "species:bone_bark"])
+		.id("tfg:quern/bone_spike")
 }

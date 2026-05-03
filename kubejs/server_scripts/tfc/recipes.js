@@ -309,4 +309,14 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
 		.id('tfg:shapeless/driftwood_to_stick')
+
+	event.recipes.gtceu.macerator('tfg:candle')
+		.itemInputs("#minecraft:candles")
+		.itemOutputs("#forge:dusts/wax")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	
+	event.recipes.tfc.quern("gtceu:wax_dust", "#minecraft:candles")
+		.id("tfg:quern/candles")
 }

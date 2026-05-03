@@ -26,7 +26,5 @@ global.SPECIES_DISABLED_ITEMS = [
 	'species:wicked_dope',
 	'species:monster_meal',
 	'species:ghoul_tongue',
-	'species:broken_links',
-	'species:werefang',
 	'species:wicked_wax'
 ];

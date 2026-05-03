@@ -255,7 +255,20 @@ function registerTFGBeneathPlacedFeatures(event) {
 }
 
 function registerTFGBeneathEntityTypeTags(event) {
-    
+
 	event.add('tfc:deals_slashing_damage', 'species:leaf_hanger')
 	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
+	event.add('tfc:deals_slashing_damage', 'species:bewereager')
+	event.add('tfc:deals_slashing_damage', 'species:ghoul')
+
+	event.add('tfc:deals_crushing_damage', 'minecraft:zoglin')
+	event.add('tfc:deals_crushing_damage', 'species:spectre')
+	event.add('tfc:deals_crushing_damage', 'species:wicked')
+
+	event.add('tfc:deals_piercing_damage', 'minecraft:silverfish')
+	event.add('tfc:deals_piercing_damage', 'minecraft:phantom')
+	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:dark_oak_enderman')
+	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:mushroom_fields_enderman')
+	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:swamp_enderman')
+	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
 }
