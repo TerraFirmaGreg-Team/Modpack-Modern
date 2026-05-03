@@ -25,14 +25,14 @@ const registerRnrRecipes = (event) => {
 		.duration(20)
 		.EUt(120)
 
-	event.recipes.gtceu.assembler('tfg:hoggin_slab')
+	event.recipes.gtceu.forming_press('tfg:hoggin_slab')
 		.itemInputs('rnr:hoggin')
 		.itemOutputs('rnr:hoggin_slab')
 		.circuit(2)
 		.duration(20)
 		.EUt(120)
 
-	event.recipes.gtceu.assembler('tfg:hoggin_stairs')
+	event.recipes.gtceu.forming_press('tfg:hoggin_stairs')
 		.itemInputs('rnr:hoggin')
 		.itemOutputs('rnr:hoggin_stairs')
 		.circuit(3)
@@ -46,27 +46,19 @@ const registerRnrRecipes = (event) => {
 		.duration(20)
 		.EUt(120)
 
-	event.recipes.gtceu.assembler(`tfg:sett_road_stairs/brick`)
+	event.recipes.gtceu.forming_press(`tfg:sett_road_stairs/brick`)
 		.itemInputs('rnr:brick_road')
 		.itemOutputs('rnr:brick_road_slab')
 		.circuit(2)
 		.duration(20)
 		.EUt(120)
 
-	event.recipes.gtceu.assembler(`tfg:sett_road_slab/brick`)
+	event.recipes.gtceu.forming_press(`tfg:sett_road_slab/brick`)
 		.itemInputs('rnr:brick_road')
 		.itemOutputs('rnr:brick_road_stairs')
 		.circuit(3)
 		.duration(20)
 		.EUt(120)
-
-	const roads = [
-		{ type: 'cobbled_road', ingredient: 'tfc:rock/loose' },
-		{ type: 'sett_road',	ingredient: 'tfc:brick' },
-		{ type: 'flagstones',	ingredient: 'rnr:flagstone' },
-		{ type: 'gravel_road', 	ingredient: 'rnr:gravel_fill' }
-
-	]
 
 	global.TFC_STONE_TYPES.forEach(stone => {
 		//flagstones
@@ -77,7 +69,7 @@ const registerRnrRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.ULV])
 
 		//cobble road from mossy rock
-		event.recipes.gtceu.forming_press(`tfg:rock/cobbled_road/${stone}_moss`)
+		event.recipes.gtceu.forming_press(`tfg:cobbled_road/${stone}_moss`)
 			.itemInputs('rnr:base_course', `tfc:rock/mossy_loose/${stone}`)
 			.itemOutputs(`rnr:rock/cobbled_road/${stone}`)
 			.duration(50)
@@ -97,19 +89,27 @@ const registerRnrRecipes = (event) => {
 			.duration(50)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}/slab`)
+		event.recipes.gtceu.forming_press(`tfg:macadam_road/${stone}/slab`)
 			.itemInputs(`rnr:rock/macadam_road/${stone}`)
 			.itemOutputs(`rnr:rock/macadam_road/${stone}_slab`)
 			.circuit(2)
 			.duration(50)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`tfg:macadam_road/${stone}_stairs`)
+		event.recipes.gtceu.forming_press(`tfg:macadam_road/${stone}_stairs`)
 			.itemInputs(`rnr:rock/macadam_road/${stone}`)
 			.itemOutputs(`rnr:rock/macadam_road/${stone}_stairs`)
 			.circuit(3)
 			.duration(50)
 			.EUt(120)
+
+	const roads = [
+		{ type: 'cobbled_road', ingredient: 'tfc:rock/loose' },
+		{ type: 'sett_road',	ingredient: 'tfc:brick' },
+		{ type: 'flagstones',	ingredient: 'rnr:flagstone' },
+		{ type: 'gravel_road', 	ingredient: 'rnr:gravel_fill' }
+
+	]
 
 		roads.forEach(road => {
 			// all other roads but sandstone flagstones
@@ -119,14 +119,14 @@ const registerRnrRecipes = (event) => {
 				.duration(50)
 				.EUt(120)
 
-			event.recipes.gtceu.assembler(`tfg:${road.type}/${stone}_slab`)
+			event.recipes.gtceu.forming_press(`tfg:${road.type}/${stone}_slab`)
 				.itemInputs(`rnr:rock/${road.type}/${stone}`)
 				.itemOutputs(`rnr:rock/${road.type}/${stone}_slab`)
 				.circuit(2)
 				.duration(50)
 				.EUt(120)
 
-			event.recipes.gtceu.assembler(`tfg:${road.type}/${stone}_stairs`)
+			event.recipes.gtceu.forming_press(`tfg:${road.type}/${stone}_stairs`)
 				.itemInputs(`rnr:rock/${road.type}/${stone}`)
 				.itemOutputs(`rnr:rock/${road.type}/${stone}_stairs`)
 				.circuit(3)
@@ -136,7 +136,7 @@ const registerRnrRecipes = (event) => {
 	})
 	//sandstone flagstones
 	global.SAND_COLORS.forEach(sand => {
-		event.recipes.gtceu.cutter(`tfg:/flagstone/${sand}_sandstone`)
+		event.recipes.gtceu.cutter(`tfg:flagstone/${sand}_sandstone`)
 			.itemInputs(`tfc:cut_sandstone/${sand}`)
 			.itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
 			.duration(20)
@@ -148,14 +148,14 @@ const registerRnrRecipes = (event) => {
 			.duration(50)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_slab`)
+		event.recipes.gtceu.forming_press(`tfg:flagstones/${sand}_sandstone_flagstones_slab`)
 			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
 			.itemOutputs(`rnr:${sand}_sandstone_flagstones_slab`)
 			.circuit(2)
 			.duration(50)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`tfg:flagstones/${sand}_sandstone_flagstones_stairs`)
+		event.recipes.gtceu.forming_press(`tfg:flagstones/${sand}_sandstone_flagstones_stairs`)
 			.itemInputs(`rnr:${sand}_sandstone_flagstones`)
 			.itemOutputs(`rnr:${sand}_sandstone_flagstones_stairs`)
 			.circuit(3)
@@ -172,17 +172,17 @@ const registerRnrRecipes = (event) => {
 		.EUt(120)
 	
 	const WET_CONCRETES = [
-		{ type: '', 				item:'gtceu:empty_mold'},
-		{ type: '_control_joint',	item:'#forge:rods'},
-		{ type: '_panel',			item:'#forge:smooth_stone'},
-		{ type: '_sett',			item:'#tfg:stone_brick'},
-		{ type: '_flagstones',		item:'#rnr:flagstone_road_items'}
+		{ type: '', 				mold:'gtceu:empty_mold'},
+		{ type: '_control_joint',	mold:'#forge:rods'},
+		{ type: '_panel',			mold:'#forge:smooth_stone'},
+		{ type: '_sett',			mold:'#tfg:stone_brick'},
+		{ type: '_flagstones',		mold:'#rnr:flagstone_road_items'}
 	]
 
 	WET_CONCRETES.forEach(concrete => {
 		event.recipes.gtceu.forming_press(`tfg:wet_concrete_road${concrete.type}`)
 			.itemInputs('#tfg:wet_concrete_roads')
-			.notConsumable(`${concrete.item}`)
+			.notConsumable(`${concrete.mold}`)
 			.itemOutputs(`rnr:wet_concrete_road${concrete.type}`)
 			.duration(50)
 			.EUt(120)
@@ -201,14 +201,14 @@ const registerRnrRecipes = (event) => {
 	]
 
 	CONCRETE_STAIRS_SLABS.forEach(type => {
-		event.recipes.gtceu.assembler(`tfg:concrete_road${type}_slab`)
+		event.recipes.gtceu.forming_press(`tfg:concrete_road${type}_slab`)
 			.itemInputs(`rnr:concrete_road${type}`)
 			.itemOutputs(`rnr:concrete_road${type}_slab`)
 			.circuit(2)
 			.duration(20)
 			.EUt(120)
 
-		event.recipes.gtceu.assembler(`tfg:concrete_road${type}_stairs`)
+		event.recipes.gtceu.forming_press(`tfg:concrete_road${type}_stairs`)
 			.itemInputs(`rnr:concrete_road${type}`)
 			.itemOutputs(`rnr:concrete_road${type}_stairs`)
 			.circuit(3)
