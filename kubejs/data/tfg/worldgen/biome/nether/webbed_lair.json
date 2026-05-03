@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 6579304,
+		"fog_color": 7438457,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -24,17 +24,17 @@
 			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.upper_nether.loop",
-		"sky_color": 5799235,
+		"sky_color": 7438457,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
 		"grass_color": 6466617
 	},
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
+		[],
 		[
 			"tfc:erosion"
 		],
-		[],
 		[],
 		[],
 		[],

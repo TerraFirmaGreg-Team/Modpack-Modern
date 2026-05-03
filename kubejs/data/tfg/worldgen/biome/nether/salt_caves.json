@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 9868701,
+		"fog_color": 8026493,
 		"additions_sound": {
 			"sound": "tfg:ambient.upper_nether.additions",
 			"tick_chance": 0.0015
@@ -24,7 +24,7 @@
 				"sound_id": "tfg:music.nether"
 			}
 		},
-		"sky_color": 9868701,
+		"sky_color": 8026493,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
 		"grass_color": 6466617
@@ -32,9 +32,11 @@
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
 		[
+			"tfg:nether/terrain/salt_lake"
+		],
+		[
 			"tfc:erosion"
 		],
-		[],
 		[],
 		[
 			"tfg:nether/spikes/calcite",
@@ -95,8 +97,7 @@
 				"weight": 10
 			}
 		],
-		"creature": [
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
@@ -107,21 +108,21 @@
 			},
 			{
 				"type": "minecraft:piglin",
-				"maxCount": 4,
-				"minCount": 3,
-				"weight": 100
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 60
 			},
 			{
 				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
-				"minCount": 2,
-				"weight": 100
+				"minCount": 1,
+				"weight": 60
 			},
 			{
 				"type": "minecraft:spider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 40
 			},
 			{
 				"type": "minecraft:skeleton",
@@ -131,21 +132,27 @@
 			},
 			{
 				"type": "minecraft:zombie",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
+				"weight": 40
+			},
+			{
+				"type": "minecraft:drowned",
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:creeper",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 90
+				"weight": 20
 			},
 			{
 				"type": "minecraft:silverfish",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 50
+				"weight": 20
 			},
 			{
 				"type": "minecraft:phantom",
@@ -158,12 +165,6 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 10
-			},
-			{
-				"type": "endermanoverhaul:nether_wastes_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 5
 			},
 			{
 				"type": "endermanoverhaul:swamp_enderman",
@@ -185,8 +186,8 @@
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			}
 		],
@@ -195,7 +196,7 @@
 			{
 				"type": "species:leaf_hanger",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			}
 		]

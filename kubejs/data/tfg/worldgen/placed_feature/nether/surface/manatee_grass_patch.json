@@ -6,6 +6,9 @@
 			"count": 60
 		},
 		{
+			"type": "minecraft:in_square"
+		},
+		{
 			"type": "minecraft:height_range",
 			"height": {
 				"type": "minecraft:uniform",
