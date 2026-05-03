@@ -32,9 +32,6 @@
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
 		[],
-		[
-			"tfc:erosion"
-		],
 		[],
 		[
 			"tfg:nether/spikes/calcite",
@@ -50,7 +47,10 @@
 		[
 
 		],
-		"#tfg:nether_global_decoration"
+		"#tfg:nether_global_decoration",
+		[
+			"tfc:erosion"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
