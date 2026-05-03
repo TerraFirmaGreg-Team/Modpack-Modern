@@ -57,9 +57,9 @@ const registerTFGOreLoots = (event) => {
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addWeightedLoot([4, 6], [
-					richRawOre.withChance(0.2),
-					normalRawOre.withChance(0.6),
-					poorRawOre.withChance(0.2)
+					richRawOre.withChance(20),
+					normalRawOre.withChance(60),
+					poorRawOre.withChance(20)
 				])
 				.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.2)));
 
@@ -74,9 +74,9 @@ const registerTFGOreLoots = (event) => {
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
 					.addWeightedLoot([
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
+						richRawOre.withChance(20),
+						normalRawOre.withChance(60),
+						poorRawOre.withChance(20)
 					])
 					.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
 					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));
@@ -87,9 +87,9 @@ const registerTFGOreLoots = (event) => {
 				event.addBlockLootModifier(`gtceu:${sandType}_sand_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
 					.addWeightedLoot([
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
+						richRawOre.withChance(20),
+						normalRawOre.withChance(60),
+						poorRawOre.withChance(20)
 					])
 					.addLoot(LootEntry.of(`tfc:sand/${sandType}`).when(c => c.randomChance(0.2)))
 					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));
