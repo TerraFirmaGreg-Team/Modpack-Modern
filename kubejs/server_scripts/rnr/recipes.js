@@ -139,8 +139,8 @@ const registerRnrRecipes = (event) => {
 			.itemInputs(`tfc:cut_sandstone/${sand}`)
 			.itemOutputs(`8x rnr:flagstone/${sand}_sandstone`)
 			.duration(20)
-
 			.EUt(GTValues.VA[GTValues.ULV])
+
 			event.recipes.gtceu.forming_press(`tfg:flagstones/${sand}_sandstone_flagstones`)
 			.itemInputs('rnr:base_course', `rnr:flagstone/${sand}_sandstone`)
 			.itemOutputs(`rnr:${sand}_sandstone_flagstones`)
