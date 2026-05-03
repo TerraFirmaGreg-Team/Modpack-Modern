@@ -108,7 +108,6 @@ const registerRnrRecipes = (event) => {
 		{ type: 'sett_road',	ingredient: 'tfc:brick' },
 		{ type: 'flagstones',	ingredient: 'rnr:flagstone' },
 		{ type: 'gravel_road', 	ingredient: 'rnr:gravel_fill' }
-
 	]
 
 		roads.forEach(road => {
