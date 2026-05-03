@@ -89,7 +89,8 @@
 						"id": "lower_b",
 						"layers": {
 							"gabbro": "lowest",
-							"granite": "lowest"
+							"granite": "lowest",
+							"tuff": "lowest"
 						}
 					},
 					{
@@ -102,16 +103,17 @@
 					{
 						"id": "upper_b",
 						"layers": {
-							"diorite": "lower_a",
 							"schist": "lower_a",
-							"gneiss": "lower_a"
+							"gneiss": "lower_a",
+							"tuff": "lower_a"
 						}
 					},
 					{
 						"id": "upper_a",
 						"layers": {
 							"deepslate": "lower_b",
-							"dripstone": "lower_b"
+							"dripstone": "lower_b",
+							"diorite": "lower_b"
 						}
 					},
 					{
