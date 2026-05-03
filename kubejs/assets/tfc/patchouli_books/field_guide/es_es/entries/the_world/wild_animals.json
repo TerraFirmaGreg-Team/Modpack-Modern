@@ -78,7 +78,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
+			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
 		},
 		{
 			"type": "patchouli:entity",
