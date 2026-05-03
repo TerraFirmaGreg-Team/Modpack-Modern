@@ -27,7 +27,13 @@
 		"sky_color": 7429703,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
-		"grass_color": 6466617
+		"grass_color": 6466617,
+		"particle": {
+			"options": {
+				"type": "minecraft:mycelium"
+			},
+			"probability": 0.1
+		}
 	},
 	"features": [
 		"#tfg:nether_lakes_and_geodes",
