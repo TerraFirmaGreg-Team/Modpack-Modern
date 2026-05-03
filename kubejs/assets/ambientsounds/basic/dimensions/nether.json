@@ -26,15 +26,7 @@
                         "ambientsounds:cave.cave-water5"
                     ],
                     "volume": 0.25,
-                    "length": {
-                        "min": 1000,
-                        "max": 1500
-                    },
-                    "pause": {
-                        "min": 100,
-                        "max": 400
-                    },
-                    "transition": 100
+                    "transition": 200
                 }
             ]
         }
