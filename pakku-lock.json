@@ -4413,7 +4413,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_repair-forge-1.20.1-1.2.0-all.jar",
+                    "file_name": "create_repair-forge-1.20.1-1.2.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4422,23 +4422,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8023/187/create_repair-forge-1.20.1-1.2.0-all.jar",
-                    "id": "8023187",
+                    "url": "https://edge.forgecdn.net/files/8034/105/create_repair-forge-1.20.1-1.2.1-all.jar",
+                    "id": "8034105",
                     "parent_id": "1477958",
                     "hashes": {
-                        "sha1": "5410053339576ddb78ade41d10024f44030e2535",
-                        "md5": "80423f34af4ee5e4a3051547f2fc3050"
+                        "sha1": "3e0a6483541b1e0aac6ce974ac9fcedd3f99028c",
+                        "md5": "0890dfba5dd8771a86d4d8842cd43d6d"
                     },
                     "required_dependencies": [
-                        "980731",
-                        "328085"
+                        "328085",
+                        "980731"
                     ],
-                    "size": 1280783,
-                    "date_published": "2026-05-01T21:05:29.810Z"
+                    "size": 1280808,
+                    "date_published": "2026-05-03T19:05:59.410Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "create_repair-forge-1.20.1-1.2.0-all.jar",
+                    "file_name": "create_repair-forge-1.20.1-1.2.1-all.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4447,19 +4447,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/G3K7UdxY/versions/V9pkstvu/create_repair-forge-1.20.1-1.2.0-all.jar",
-                    "id": "V9pkstvu",
+                    "url": "https://cdn.modrinth.com/data/G3K7UdxY/versions/jbgiqmqD/create_repair-forge-1.20.1-1.2.1-all.jar",
+                    "id": "jbgiqmqD",
                     "parent_id": "G3K7UdxY",
                     "hashes": {
-                        "sha512": "e2561590914ddbd9696651be45cf65e1e6ad5e1d8a460e347d61af0afa237661c2c1896bbe2d9d4a61f7aaa3f611666ae92035b1a04833269f7e25ba1173cf76",
-                        "sha1": "5410053339576ddb78ade41d10024f44030e2535"
+                        "sha512": "3b7915686453de4dc82bd2d5c9e14f1de20eed26c2839b720cc3e44b3c0026864c1d742b5ea2cf2e85308885619a3d831d2be1e14ad1b325083f940499e627ea",
+                        "sha1": "3e0a6483541b1e0aac6ce974ac9fcedd3f99028c"
                     },
                     "required_dependencies": [
-                        "bxn6Iwdo",
-                        "LNytGWDc"
+                        "LNytGWDc",
+                        "bxn6Iwdo"
                     ],
-                    "size": 1280783,
-                    "date_published": "2026-05-01T21:04:09.425922Z"
+                    "size": 1280808,
+                    "date_published": "2026-05-03T19:07:29.279979Z"
                 }
             ]
         },
@@ -13383,7 +13383,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.36.1713.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.38.1738.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13392,22 +13392,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8007/547/sophisticatedbackpacks-1.20.1-3.24.36.1713.jar",
-                    "id": "8007547",
+                    "url": "https://edge.forgecdn.net/files/8034/902/sophisticatedbackpacks-1.20.1-3.24.38.1738.jar",
+                    "id": "8034902",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "27e949d5a3171df00beabd8105794d34da88e515",
-                        "md5": "4c064c3e7ec640945077ce780a3377c6"
+                        "sha1": "23e5158afec42fc3ac30c344d4939421bc9e2ccd",
+                        "md5": "a9c705f38693b6b4730e6a20229f6e41"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 1018674,
-                    "date_published": "2026-04-28T23:18:19.917Z"
+                    "size": 1019019,
+                    "date_published": "2026-05-03T21:59:24.430Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.36.1713.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.38.1738.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13416,18 +13416,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/yEzy1mZZ/sophisticatedbackpacks-1.20.1-3.24.36.1713.jar",
-                    "id": "yEzy1mZZ",
+                    "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/kvMThjUY/sophisticatedbackpacks-1.20.1-3.24.38.1738.jar",
+                    "id": "kvMThjUY",
                     "parent_id": "TyCTlI4b",
                     "hashes": {
-                        "sha512": "8fe212ce7f3a0299c003479e877fe8eef8455f033d11831e0bc9eb5bdb4a7ff01abacc86d1ebcbe62ec23c179013f60eacab121542b3e108cc5a5464ebc7769b",
-                        "sha1": "f18822efd1022cc54d9845d0479dedc88e3c817b"
+                        "sha512": "3ee8a58c54009a4a21e1c655348798946ab2e003890473e57c96bc0bee463f73b762ad3191b249503ba7ae1cdd8b2754b49778921d73072f1caeb5cd6e8aa785",
+                        "sha1": "a5a2dc5ee091066d15af51e0ed6fb0ea2c628d8f"
                     },
                     "required_dependencies": [
                         "nmoqTijg"
                     ],
-                    "size": 1018674,
-                    "date_published": "2026-04-28T23:18:57.206256Z"
+                    "size": 1019019,
+                    "date_published": "2026-05-03T22:00:17.825629Z"
                 }
             ]
         },
@@ -13450,7 +13450,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.30.1809.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.32.1828.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13459,20 +13459,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8014/107/sophisticatedcore-1.20.1-1.3.30.1809.jar",
-                    "id": "8014107",
+                    "url": "https://edge.forgecdn.net/files/8034/886/sophisticatedcore-1.20.1-1.3.32.1828.jar",
+                    "id": "8034886",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "0f0436995da702b84f0fad9292223671fcfc28d0",
-                        "md5": "8192b2f81210aaa8b32b71b5fbb6e51e"
+                        "sha1": "ddec8473620e12d5155080994031d08ea34afa9f",
+                        "md5": "9637e67eb8f695e4b26947ae852d50d0"
                     },
                     "required_dependencies": [],
-                    "size": 1438591,
-                    "date_published": "2026-04-30T10:06:01.363Z"
+                    "size": 1473357,
+                    "date_published": "2026-05-03T21:54:38.880Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "sophisticatedcore-1.20.1-1.3.30.1809.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.3.32.1828.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13481,16 +13481,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/8Xj3Q0s3/sophisticatedcore-1.20.1-1.3.30.1809.jar",
-                    "id": "8Xj3Q0s3",
+                    "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/T03P5wxy/sophisticatedcore-1.20.1-1.3.32.1828.jar",
+                    "id": "T03P5wxy",
                     "parent_id": "nmoqTijg",
                     "hashes": {
-                        "sha512": "0dfce8eae3dee7d1db4dfb6e1cc3998113f4121105e9014bfb85eb4cc31581bfde1bc93554e7a3c8466cfe15ce53515dc2150ad355007a5801af0d33425bc949",
-                        "sha1": "5ed7e83caffe178bcc1b408da58d29f73b0af0b8"
+                        "sha512": "24786254b859e60a763d8836f7d4718be64aae94796fcf15d6bb75e06e437ddd2c52eb509111ecc5df0905c22e356d50b13d4b24fa49db5e6fed6dab4562ad9c",
+                        "sha1": "e32cc21ce3d6539bac0c6a240a2d47aed003cb34"
                     },
                     "required_dependencies": [],
-                    "size": 1438590,
-                    "date_published": "2026-04-30T10:07:02.738238Z"
+                    "size": 1473357,
+                    "date_published": "2026-05-03T21:55:30.614667Z"
                 }
             ]
         },
@@ -15432,7 +15432,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15440,22 +15440,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8026/720/TerraFirmaGreg-Core-Modern-0.9.7.jar",
-                    "id": "8026720",
+                    "url": "https://edge.forgecdn.net/files/8037/113/TerraFirmaGreg-Core-Modern-0.9.8.jar",
+                    "id": "8037113",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "d53a1b1bc6fd51cfe410f166073a92c4c1e4b64f",
-                        "md5": "8f11a5bf973dde8e50a17403a8047884"
+                        "sha1": "4feb5ce8fae170c2097c01dbc153fb15524be8a6",
+                        "md5": "0b9fb1be89fec2e58ebd3dfd34e46836"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 12870721,
-                    "date_published": "2026-05-02T14:04:05.293Z"
+                    "size": 12908542,
+                    "date_published": "2026-05-04T10:02:26.163Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.7.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15463,18 +15463,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/BvjgMJJC/TerraFirmaGreg-Core-Modern-0.9.7.jar",
-                    "id": "BvjgMJJC",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/qzDPD5Se/TerraFirmaGreg-Core-Modern-0.9.8.jar",
+                    "id": "qzDPD5Se",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "80f3eec0d18e925ffae48f575ae4f8a145b32bcf28c3e410c1a38c9249145998307ce7a2d163fc03d90d3d636341e0e5014878e0f33f236f5c8b9eb941d72e3b",
-                        "sha1": "d53a1b1bc6fd51cfe410f166073a92c4c1e4b64f"
+                        "sha512": "e67870ea432a87542170516b9b157377bd0e741fd54dcd3d384ac1f80e2a3e1c180564c713e7f84e856dd7cdcd95bea438bfbc0a0def972b8675d16660aa7095",
+                        "sha1": "4feb5ce8fae170c2097c01dbc153fb15524be8a6"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 12870721,
-                    "date_published": "2026-05-02T14:04:07.748306Z"
+                    "size": 12908542,
+                    "date_published": "2026-05-04T10:02:29.031121Z"
                 }
             ]
         },
