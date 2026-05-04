@@ -8,13 +8,12 @@ const registerHandGliderRecipes = (event) => {
 
     // Glider Framework
     event.shaped('hangglider:glider_framework', [
-        'AAA',
-        'BCB',
+        ' A ',
+        'A A',
         'DCD'
     ], {
-        A: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1), 
-        B: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.WroughtIron, 1),
-        C: '#forge:screws',
+        A: '#forge:rods/any_bronze', 
+        C: '#forge:screws/any_bronze',
         D: '#forge:rings'
     }).id('hangglider:shaped/glider_framework')
 
@@ -25,8 +24,8 @@ const registerHandGliderRecipes = (event) => {
         'BAA'
     ], {
         A: '#forge:cloth', 
-        B: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),
-        C: '#forge:rings'
+        B: '#forge:rods/any_bronze',
+        C: '#forge:screws/any_bronze',
     }).id('hangglider:shaped/glider_wing')
 
     //Reinforced Hang Glider Stuff
