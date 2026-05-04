@@ -840,23 +840,6 @@ const registerFirmaLifeRecipes = (event) => {
 		"duration": 16000
 	}).id('tfg:barrel/shosha_wheel')
 
-	// #region Oven heating recipes
-
-	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
-		.resultItem(`firmalife:cured_oven_top`)
-		.id(`tfg:heating/oven_top`)
-	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
-		.resultItem(`firmalife:cured_oven_chimney`)
-		.id(`tfg:heating/oven_chimney`)
-	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
-		.resultItem(`firmalife:cured_oven_bottom`)
-		.id(`tfg:heating/oven_bottom`)
-	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
-		.resultItem(`firmalife:cured_oven_hopper`)
-		.id(`tfg:heating/oven_hopper`)
-
-	// #endregion
-
 	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
 	// and adds traits that normally disappear on the craft
 		

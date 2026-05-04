@@ -28,7 +28,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Extraction",
+			"title": "Wydobycie",
 			"item": "gtceu:raw_rubber_dust",
 			"text": "Using a $(thing)Extractor$() or $(thing)Vacuum Chamber$(), the $(thing)Vulcanized Latex$() can be dried into $(item)Raw Rubber Pulp$(). This pulp needs to be further treated with $(thing)Sulfur Dust$() in an $(thing)Alloy Smelter$() to create $(thing)Rubber Ingots$()."
 		},

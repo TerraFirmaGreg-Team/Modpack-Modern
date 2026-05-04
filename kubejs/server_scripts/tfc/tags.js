@@ -421,6 +421,13 @@ function registerTFCItemTags(event) {
     event.add("tfc:any_knapping", "#tfc:pit_kiln_straw");
     event.add("tfg:burlap_fiber", "tfc:jute_fiber");
 
+    // Item tags for kaolin blocks
+    event.add('tfc:kaolin_blocks', [
+        'tfc:white_kaolin_clay',
+        'tfc:pink_kaolin_clay',
+        'tfc:red_kaolin_clay'
+    ]);
+
     global.TFC_MUD_TYPES.forEach(mud => {
         event.add("tfc:wet_mud_bricks", `tfc:mud_brick/${mud}`);
         event.add("tfc:dry_mud_bricks", `tfc:drying_bricks/${mud}`);
@@ -493,6 +500,7 @@ function registerTFCItemTags(event) {
     event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
     event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
     event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
+    event.add('forge:tools/igniter', 'tfc:firestarter');
 }
 
 /** @param {TagEvent.Block} event */
@@ -532,6 +540,8 @@ function registerTFCBlockTags(event) {
 
     event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
     event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
+
+    event.removeAll("tfc:not_solid_supporting");
 
     // Glassworking blocks
     event.add("tfc:glass_basin_blocks", "create:brass_block");
@@ -592,6 +602,30 @@ function registerTFCBlockTags(event) {
     global.TFC_MAGMA_BLOCKS.forEach(magma => {
         event.add('minecraft:infiniburn_overworld', magma)
     })
+
+    event.add('tfg:dead_crops', "tfc:dead_crop/barley");
+    event.add('tfg:dead_crops', "tfc:dead_crop/oat");
+    event.add('tfg:dead_crops', "tfc:dead_crop/rye");
+    event.add('tfg:dead_crops', "tfc:dead_crop/maize");
+    event.add('tfg:dead_crops', "tfc:dead_crop/wheat");
+    event.add('tfg:dead_crops', "tfc:dead_crop/rice");
+    event.add('tfg:dead_crops', "tfc:dead_crop/beet");
+    event.add('tfg:dead_crops', "tfc:dead_crop/cabbage");
+    event.add('tfg:dead_crops', "tfc:dead_crop/carrot");
+    event.add('tfg:dead_crops', "tfc:dead_crop/green_bean");
+    event.add('tfg:dead_crops', "tfc:dead_crop/garlic");
+    event.add('tfg:dead_crops', "tfc:dead_crop/potato");
+    event.add('tfg:dead_crops', "tfc:dead_crop/onion");
+    event.add('tfg:dead_crops', "tfc:dead_crop/soybean");
+    event.add('tfg:dead_crops', "tfc:dead_crop/squash");
+    event.add('tfg:dead_crops', "tfc:dead_crop/sugarcane");
+    event.add('tfg:dead_crops', "tfc:dead_crop/tomato");
+    event.add('tfg:dead_crops', "tfc:dead_crop/jute");
+    event.add('tfg:dead_crops', "tfc:dead_crop/papyrus");
+    event.add('tfg:dead_crops', "tfc:dead_crop/pumpkin");
+    event.add('tfg:dead_crops', "tfc:dead_crop/melon");
+    event.add('tfg:dead_crops', "tfc:dead_crop/red_bell_pepper");
+    event.add('tfg:dead_crops', "tfc:dead_crop/yellow_bell_pepper");
 }
 
 /** @param {TagEvent.Fluid} event */

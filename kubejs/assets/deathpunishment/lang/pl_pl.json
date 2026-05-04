@@ -9,6 +9,7 @@
   "config.deathpunishment.general.food_level": "Poziom głodu",
   "config.deathpunishment.general.thirst_level": "Poziom spragnienia",
   "config.deathpunishment.general.health": "Poziom życia",
+  "config.deathpunishment.penalties.effect_amplifier": "Wzmacnianie efektu (0-5)",
   "config.deathpunishment.penalties.corpse_cooldown": "Czas odnowienia zwłok (0-60 min)",
   "config.deathpunishment.penalties.thirst_duration": "Czas trwania pragnienia (0-600 s)",
   "config.deathpunishment.penalties.hunger_duration": "Czas trwania głodu (0-600 s)",

@@ -75,7 +75,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The Hazmat Suit",
+			"title": "Kombinezon Hazmat",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
 			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
 			"anchor": "hazmat"
@@ -91,14 +91,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The RadAwayᵗᵐ pill",
+			"title": "Pigułka RadAway™",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
 			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Failure...",
+			"title": "Błąd...",
 			"item": {
 				"tag": "minecraft:beds"
 			},

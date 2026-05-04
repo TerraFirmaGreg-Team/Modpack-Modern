@@ -2,15 +2,50 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.7] - 04-05-2026
+### Changes
+- Added recipes to create roads in gregtech machines (#3929) @Astrimitsu
+- Added a blacklist for the crafting station to combat huge TPS lag issues - that means it won't work with vaults any more, but chests/crates are fine (#3951) @SakuraKitsurugi
+### Bug fixes
+- Fixed flame vines rendering as an error cube @Pyritie
+- Fixed rope ladders returning one additional ladder when collected @Thomasx0
+- Fixed some more linux issues @Pyritie
+- Fixed train driver/stock ticker hats on bears, rabbits, horseshoe crabs, isopods, jellyfish, manatees, and orcas @Allmoz
+- Fixed some vanilla mob loot appearing in EMI @Pyritie
+- Fixed missing repair recipe for hiking boots @Pyritie
+- Fixed ocelots not dropping small raw hides @Pyritie
+- Fixed the computercraft recipe for real this time @Pyritie
+- Fixed create glue not working @VoidLeech
+- Fixed jute, canola, sunflowers, and cucumbers not dropping any produce when harvested @Pyritie
+- Fixed not being able to craft sterling silver turbine rotors (#3954) @Pyritie
+- Fixed some weirdness with smooth stone collapsing (#3921) @Pyritie
+
+## [0.12.6] - 02-05-2026
+### Breaking Changes
+- Chemical reactor recipe for silicon tetrachloride is now on circuit 5 (#3933) @Pyritie
+### Changes
+- Added new nutrition screen! It shows much more information than the old one, and also shows the nutrition of your teammates so you can yell at them for living off raw grains. Note that the "negative nutrition" section is still a work in progress and nothing has negative nutrition yet. @Redeix
 - Added a system to instantly clear snow and ice as chunks are loaded, as soon as the temperature is warm enough. If you want to keep the old system, or if this is causing a large performance hit, check `defaultconfigs/tfg-server.toml`. @Vykonn
-- Crafting stations now have their own wood variants, and added back the slab types (#3839) @SakuraKitsurugi
-- GT Food Ovens can now use any type of Firmalife top oven instead of just the brick one (#3848) @SakuraKitsurugi
 - Icicles no longer spawn on monorails and chain conveyors (#3711) @SakuraKitsurugi
-- Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
+- Added Snowshoes, a Snorkel, Flippers, and Rope Ladders (#3890) @Thomasx0
+- Crafting stations now have their own wood variants, and added back the slab types (#3839) @SakuraKitsurugi
 - Added popcorn (#3850) @applenper
 - Added craftable cherry blossom leaves, if you're desperate for pink particles (#3861) @SakuraKitsurugi
 - Improved EMI++ stack grouping for steam 'n' rails (#3868) @Astrimitsu
+- GT Food Ovens can now use any type of Firmalife top oven instead of just the brick one (#3848) @SakuraKitsurugi
+- Added some more materials you can throw into the coke oven so getting Magnesia in LV is a little less painful @Pyritie
+- Buffed the amount of dye you get from vinegar @Pyritie
+- Steel, black steel, red steel, and blue steel lamps, trapdoors, bells, chains, nuggets, and small gears can now be crafted in the steam alloy smelter (instead of requiring an MV one) but at twice the ingot cost, like other alloy smelter recipes @Pyritie
+- Steam thermal centrifuges can now be built with any pipe casing instead of just steel @Pyritie
+- Horses, donkeys, and mules are now immune to cacti damage @Pyritie
+- Kaolin clay blocks can now also be cooked into powder, to save time processing it all (#3922) @SokvisalMong
+- Added new medicine powders, made salves cheaper (#3914) @applenper
+- Backported wolf/dog variants! Different types of them will spawn in different climates. @SakuraKitsurugi
+- ComputerCraft cables no longer require fluix @Pyritie
 ### Bug fixes
+- Fixed the world preview with the new worldgen! @Thomasx0
 - Fixed a crash when using the railgun in the Beneath @ashleney
 - Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
 - Fixed some dupe exploits with vessels and SnS containers in backpacks (#3881, #3878) @ashleney
@@ -26,6 +61,12 @@
 - Fixed not being able to craft monorails in an assembler (#3873) @SakuraKitsurugi
 - Fixed not being able to obtain fruit tree saplings with a chainsaw (#3877) @Mqrius @SakuraKitsurugi
 - Fixed small mars mushrooms uprooting themselves @Pyritie
+- Fixed the hollow shell to flux crafting table recipe so it always consumes the shell @Pyritie
+- Fixed the amount of health that Snatchers have @Pyritie
+- Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
+- Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
+- Fixed caribou not dropping raw meat (#3924) @Pyritie
+- Fixed wrought iron bridges being uncraftable @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026

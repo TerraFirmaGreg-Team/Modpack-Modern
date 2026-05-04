@@ -7,24 +7,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:food/frog_legs",
+					"name": "minecraft:bone",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 3,
-								"type": "minecraft:uniform"
-							}
-						},
-						{
-							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
+								"min": 1,
+								"max": 3
+							}
 						}
 					]
 				}
@@ -36,14 +27,14 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bone",
+					"name": "minecraft:rotten_flesh",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
+								"type": "minecraft:uniform",
 								"min": 1,
-								"max": 2,
-								"type": "minecraft:uniform"
+								"max": 3
 							}
 						}
 					]

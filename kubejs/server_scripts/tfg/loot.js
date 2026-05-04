@@ -62,7 +62,7 @@ function registerTFGLoots(event) {
 					LootEntry.of('tfc:burlap_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:wool_cloth').when((c) => c.randomChance(0.1)),
 					LootEntry.of('tfc:mortar').when((c) => c.randomChance(0.1)),
-					LootEntry.of('tfc:leather').when((c) => c.randomChance(0.1)),
+					LootEntry.of('minecraft:leather').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:black_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:red_chalk').when((c) => c.randomChance(0.1)),
 					LootEntry.of('chalk:white_chalk').when((c) => c.randomChance(0.1)),
@@ -156,12 +156,20 @@ function registerTFGLoots(event) {
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
-
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		const id = `everycomp:c/ad_astra/${wood.name}_window_pane`
 		event.addBlockLootModifier(id)
 			.addLoot(id)
 	})
+	global.WAB_WOOD.forEach(wood => {
+		const id = `everycomp:c/wan_ancient_beasts/${wood.name}_window_pane`
+		event.addBlockLootModifier(id)
+			.addLoot(id)
+	})
+	event.addBlockLootModifier('everycomp:c/domum_ornamentum/cactus_window_pane')
+			.addLoot('everycomp:c/domum_ornamentum/cactus_window_pane')
+	event.addBlockLootModifier('everycomp:c/domum_ornamentum/cactus_extra_window_pane')
+			.addLoot('everycomp:c/domum_ornamentum/cactus_extra_window_pane')
 
 	// Bonus animal drops with butchery knives
 
