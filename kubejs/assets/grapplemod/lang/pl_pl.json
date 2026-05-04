@@ -26,6 +26,7 @@
   "grappletooltip.repelleritemoff.desc": " ponownie - Wyłącz",
   "grappletooltip.repelleritemon.desc": " - Włącz",
   "grappletooltip.repelleritemslow.desc": " - Zwolnij",
+  "grappletooltip.rocket.desc": "(przytrzymaj) - Rakieta",
   "grappletooltip.slow.desc": "- Przestań się huśtać",
   "grappletooltip.swing.desc": "- Huśtanie",
   "grappletooltip.throwalt.desc": "- Rzuć (alternatywnie)",
@@ -126,6 +127,7 @@
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower": "hookthrower",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.detachonkeyrelease.default_value": "default_value",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.detachonkeyrelease.enabled": "włączone",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.hookgravity": "Grawitacja na haku",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.hookgravity.default_value": "default_value",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.hookgravity.enabled": "włączone",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.hookthrower.hookgravity.max": "max",
@@ -197,6 +199,7 @@
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.smartmotor.default_value": "default_value",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.motor.smartmotor.enabled": "włączone",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.rocket": "rakieta",
+  "text.autoconfig.grapplemod.option.options.grapplinghook.custom.rocket.rocket_active_time": "Czas rakiety (s)",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.rocket.rocket_active_time.default_value": "default_value",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.rocket.rocket_active_time.enabled": "włączone",
   "text.autoconfig.grapplemod.option.options.grapplinghook.custom.rocket.rocket_active_time.max": "max",
@@ -263,6 +266,7 @@
   "text.autoconfig.grapplemod.option.options.other": "inne",
   "text.autoconfig.grapplemod.option.options.other.@Tooltip": "Inne opcje",
   "text.autoconfig.grapplemod.option.options.other.airstrafe_acceleration": "airstrafe_acceleration",
+  "text.autoconfig.grapplemod.option.options.other.airstrafe_max_speed": "airstrafe_max_speed",
   "text.autoconfig.grapplemod.option.options.other.dont_override_movement_in_air": "dont_override_movement_in_air",
   "text.autoconfig.grapplemod.option.options.other.override_allowflight": "override_allowflight"
 }

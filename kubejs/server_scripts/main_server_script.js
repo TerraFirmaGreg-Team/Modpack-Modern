@@ -150,6 +150,10 @@ ServerEvents.tags('entity_type', event => {
 	registerWABEntityTypeTags(event)
 })
 
+ServerEvents.tags('block_entity_type', event => {
+	registerCraftingStationBlockEntityTags(event)
+})
+
 /**
  * Событие регистрации датапаков (Здесь можно регистрировать теги, данные, рецепты, общий метод короче).
  * Срабатывает до инициализации рецептов, но после тегов.
@@ -218,7 +222,7 @@ GTCEuServerEvents.fluidVeins(event => {
 /** Correct recipe IDs to replace invalid characters */
 function linuxUnfucker(value) {
 	const str = (value === undefined || value === null) ? "" : value.toString();
-	return str.replace(/[/:\s]/g, "_");
+	return str.replace(/[#/:\s]/g, "_").toLowerCase();
 };
 
 /**

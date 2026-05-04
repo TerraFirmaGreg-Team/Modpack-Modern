@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "ガラス加工とは、砂を原料にしてガラスを作る工程です。まずは$(thing)ガラスバッチ$()を用意する必要があり、次の4種類があります：$(br)$(br)\n1. $(thing)シリカ$()：白い砂$(br)\n2. $(thing)赤鉄鉱$()：黄色・赤・ピンクの砂$(br)\n3. $(thing)かんらん$()：緑・茶色の砂$(br)\n4. $(thing)火山$()：黒い砂"
+      "text": "ガラス加工とは、砂を原料にしてガラスを作る工程です。まずは$(thing)ガラスバッチ$()を用意する必要があり、次の4種類があります：$(br)$(br)1. $(thing)シリカ$()：白い砂$(br)2. $(thing)赤鉄鉱$()：黄色・赤・桃色の砂$(br)3. $(thing)かんらん$()：緑・茶色の砂$(br)4. $(thing)火山$()：黒い砂"
     },
     {
       "type": "patchouli:crafting",
@@ -29,7 +29,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "ガラスの精製は、ガラスバッチを元に複数の工程を順番にこなしていくことで行います。その工程ごとに専用の道具が必要になります。$(br)\n$(li)$(l:mechanics/glassworking#blowpipe)吹き竿$()：$(thing)吹く$()工程と$(thing)伸ばす$()工程に使用。$(li)$(l:mechanics/glassworking#paddle)木ごて$()：$(thing)平らにする$()工程に使用。$(li)$(l:mechanics/glassworking#jacks)ジャックス$()：$(thing)つまむ$()工程に使用。$(li)$(l:mechanics/glassworking#saw)宝石ノコギリ$()：$(thing)切り離す$()工程に使用。",
+      "text": "ガラスの精製は、ガラスバッチを元に複数の工程を順番にこなしていくことで行います。その工程ごとに専用の道具が必要になります。$(br)$(li)$(l:mechanics/glassworking#blowpipe)吹き竿$()：$(thing)吹く$()工程と$(thing)伸ばす$()工程に使用。$(li)$(l:mechanics/glassworking#paddle)木ごて$()：$(thing)平らにする$()工程に使用。$(li)$(l:mechanics/glassworking#jacks)ジャックス$()：$(thing)つまむ$()工程に使用。$(li)$(l:mechanics/glassworking#saw)宝石ノコギリ$()：$(thing)切り離す$()工程に使用。",
       "title": "ガラス細工士の商売道具"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(bold)平らにする$()$(br)メインハンドに$(l:mechanics/glassworking#paddle)木ごて$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)つまむ$()$(br)メインハンドに$(l:mechanics/glassworking#jacks)ジャックス$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)切る$()$(br)メインハンドに$(l:mechanics/glassworking#saw)宝石ノコギリ$()を持って$(thing)吹き竿$()を使う。$(br2)\n$(bold)転がす$()$(br)メインハンドに$(l:mechanics/weaving#wool_cloth)羊毛の布$()を持って$(thing)吹き竿$()を使う。"
+      "text": "$(bold)平らにする$()$(br)メインハンドに$(l:mechanics/glassworking#paddle)木ごて$()を持って$(thing)吹き竿$()を使う。$(br2)$(bold)つまむ$()$(br)メインハンドに$(l:mechanics/glassworking#jacks)ジャックス$()を持って$(thing)吹き竿$()を使う。$(br2)$(bold)切る$()$(br)メインハンドに$(l:mechanics/glassworking#saw)宝石ノコギリ$()を持って$(thing)吹き竿$()を使う。$(br2)$(bold)転がす$()$(br)メインハンドに$(l:mechanics/weaving#wool_cloth)羊毛の布$()を持って$(thing)吹き竿$()を使う。"
     }
   ],
   "read_by_default": true,

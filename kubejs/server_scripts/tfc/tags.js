@@ -541,6 +541,8 @@ function registerTFCBlockTags(event) {
     event.add("tfc:can_start_collapse", "#tfc:rock/smooth");
     event.add("tfc:can_trigger_collapse", "#tfc:rock/smooth");
 
+    event.removeAll("tfc:not_solid_supporting");
+
     // Glassworking blocks
     event.add("tfc:glass_basin_blocks", "create:brass_block");
     event.add("tfc:glass_pouring_table", "create:brass_block");

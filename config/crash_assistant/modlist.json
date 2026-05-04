@@ -469,6 +469,14 @@
     "curseForgeHash": 1846779623,
     "modrinthHash": "8f7a85056a753ffb9e9f178d32ccbcce44a29e63"
   },
+  "CraftPresence-2.7.1+1.20.1-forge.jar": {
+    "jarName": "CraftPresence-2.7.1+1.20.1-forge.jar",
+    "modId": "craftpresence",
+    "name": "CraftPresence",
+    "version": "2.7.1",
+    "curseForgeHash": 537329888,
+    "modrinthHash": "c354216e78b6688c9bcbe67043b8f5e2156a4dde"
+  },
   "CrashAssistant-forge-1.19-1.20.1-1.11.8.jar": {
     "jarName": "CrashAssistant-forge-1.19-1.20.1-1.11.8.jar",
     "modId": "crash_assistant",
@@ -517,13 +525,13 @@
     "curseForgeHash": 694433954,
     "modrinthHash": "49712554e365e4412fa6362f0394e919fe7eb261"
   },
-  "create_repair-forge-1.20.1-1.2.0-all.jar": {
-    "jarName": "create_repair-forge-1.20.1-1.2.0-all.jar",
+  "create_repair-forge-1.20.1-1.2.1-all.jar": {
+    "jarName": "create_repair-forge-1.20.1-1.2.1-all.jar",
     "modId": "create_repair",
     "name": "Create Repair: Unofficial Create Community Patch",
-    "version": "1.2.0",
-    "curseForgeHash": 1073172874,
-    "modrinthHash": "5410053339576ddb78ade41d10024f44030e2535"
+    "version": "1.2.1",
+    "curseForgeHash": 3708674001,
+    "modrinthHash": "3e0a6483541b1e0aac6ce974ac9fcedd3f99028c"
   },
   "createaddition-1.20.1-1.3.3.jar": {
     "jarName": "createaddition-1.20.1-1.3.3.jar",
@@ -1610,21 +1618,21 @@
     "curseForgeHash": 2197810606,
     "modrinthHash": "7529fbf938787ed13a251cbf40936f8c29ec4b6c"
   },
-  "sophisticatedbackpacks-1.20.1-3.24.36.1713.jar": {
-    "jarName": "sophisticatedbackpacks-1.20.1-3.24.36.1713.jar",
+  "sophisticatedbackpacks-1.20.1-3.24.38.1738.jar": {
+    "jarName": "sophisticatedbackpacks-1.20.1-3.24.38.1738.jar",
     "modId": "sophisticatedbackpacks",
     "name": "Sophisticated Backpacks",
-    "version": "3.24.36.1713",
-    "curseForgeHash": 1815641305,
-    "modrinthHash": "f18822efd1022cc54d9845d0479dedc88e3c817b"
+    "version": "3.24.38.1738",
+    "curseForgeHash": 2113797175,
+    "modrinthHash": "a5a2dc5ee091066d15af51e0ed6fb0ea2c628d8f"
   },
-  "sophisticatedcore-1.20.1-1.3.30.1809.jar": {
-    "jarName": "sophisticatedcore-1.20.1-1.3.30.1809.jar",
+  "sophisticatedcore-1.20.1-1.3.32.1828.jar": {
+    "jarName": "sophisticatedcore-1.20.1-1.3.32.1828.jar",
     "modId": "sophisticatedcore",
     "name": "Sophisticated Core",
-    "version": "1.3.30.1809",
-    "curseForgeHash": 3053520182,
-    "modrinthHash": "5ed7e83caffe178bcc1b408da58d29f73b0af0b8"
+    "version": "1.3.32.1828",
+    "curseForgeHash": 3920737391,
+    "modrinthHash": "e32cc21ce3d6539bac0c6a240a2d47aed003cb34"
   },
   "SoulBinding1.20.1(Forge)vs1.0.2.jar": {
     "jarName": "SoulBinding1.20.1(Forge)vs1.0.2.jar",
@@ -1713,13 +1721,13 @@
     "curseForgeHash": 914610799,
     "modrinthHash": "3edecb24918907d3a358e8688977df8f72855d17"
   },
-  "TerraFirmaGreg-Core-Modern-0.9.6.jar": {
-    "jarName": "TerraFirmaGreg-Core-Modern-0.9.6.jar",
+  "TerraFirmaGreg-Core-Modern-0.9.8.jar": {
+    "jarName": "TerraFirmaGreg-Core-Modern-0.9.8.jar",
     "modId": "tfg",
     "name": "TerraFirmaGreg-Core",
-    "version": "0.9.6",
-    "curseForgeHash": 2702986295,
-    "modrinthHash": "e1ea31bd455f07f2bca14d702d60bc261a99d2d5"
+    "version": "0.9.8",
+    "curseForgeHash": 3720302749,
+    "modrinthHash": "4feb5ce8fae170c2097c01dbc153fb15524be8a6"
   },
   "tfc_gourmet-1.5.2.jar": {
     "jarName": "tfc_gourmet-1.5.2.jar",
@@ -1944,6 +1952,14 @@
     "version": "5.1.4.382",
     "curseForgeHash": 1183005945,
     "modrinthHash": "45d737d4215c453c35bc8a16aa0c74d1179a0934"
+  },
+  "UniLib-1.2.1+1.20.1-forge.jar": {
+    "jarName": "UniLib-1.2.1+1.20.1-forge.jar",
+    "modId": "unilib",
+    "name": "UniLib",
+    "version": "1.2.1",
+    "curseForgeHash": 1423017580,
+    "modrinthHash": "bf4bd0346650ad95dcd13867793da99a639f31fa"
   },
   "vintage_kubejs-1.20.1-1.0.0rc-2.jar": {
     "jarName": "vintage_kubejs-1.20.1-1.0.0rc-2.jar",

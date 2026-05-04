@@ -249,7 +249,15 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:train_connectors', 'railways:big_buffer')
 	event.add('tfg:train_connectors', 'railways:wooden_headstock')
 	event.add('tfg:train_connectors', 'railways:copycat_headstock')
+
+	//wet concrete
+	event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_control_joint')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_panel')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_sett')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_flagstones')
 	
+	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
 //#region Blocks
