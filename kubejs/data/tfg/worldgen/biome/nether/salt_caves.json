@@ -66,13 +66,14 @@
 			"tfg:nether/surface/anemone_large_orange_patch",
 			"tfg:nether/surface/anemone_large_purple_patch",
 			"tfg:nether/surface/barnacles_patch",
+			"tfg:nether/surface/beach_groundcover_patch",
 			"beneath:gleamflower_patch",
 			"tfg:nether/surface/guano_patch"
 		],
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/crocodile",
-			"tfg:nether/entity/cold_frog",
+			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/jellyfish",
 			"tfg:nether/entity/horseshoe_crab",
 			"tfc:erosion"
