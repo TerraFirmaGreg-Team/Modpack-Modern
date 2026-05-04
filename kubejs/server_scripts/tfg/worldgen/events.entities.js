@@ -6,10 +6,10 @@ const NEW_MOB_MAX_HP = {
 	"primitive_creatures:beast": 40,
 
 	// beneath mobs
-	"minecraft:piglin": 15,
+	"minecraft:piglin": 20,
 	"species:leaf_hanger": 30,
-	"species:cliff_hanger": 25,
-	"species:spectre": 10,
+	"species:cliff_hanger": 30,
+	"species:spectre": 15,
 
 	// moon mobs
 	"endermanoverhaul:end_enderman": 50,
