@@ -2,7 +2,10 @@
 
 ## Unreleased
 ### Changes
+- Increased the render distance in the beneath @Pyritie
+- Reduced the costs of mechanical harvesters, mechanical plows, and display boards
 ### Bug fixes
+- I am once again fixing a linux crash @Pyritie
 
 ## [0.12.7] - 04-05-2026
 ### Changes
