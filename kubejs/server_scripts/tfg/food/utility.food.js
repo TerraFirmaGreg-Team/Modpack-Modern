@@ -25,13 +25,14 @@ const Sized = (ing, amount) => $SizedIngredient.create(ing, amount)
 */
 
 /**
-* @param {"food_oven"|"food_processor"} type Type of the food machine.
-* @param {string} id Recipe ID.
-* @param {number} duration Recipe duration.
-* @param {number} EUt Energy usage per tick.
-* @param {string} text Additional text for the recipe.
-* @param {FoodRecipeData} data Recipe data.
-*/
+ * @param event
+ * @param {"food_oven"|"food_processor"} type Type of the food machine.
+ * @param {string} id Recipe ID.
+ * @param {number} duration Recipe duration.
+ * @param {number} EUt Energy usage per tick.
+ * @param {string} text Additional text for the recipe.
+ * @param {FoodRecipeData} data Recipe data.
+ */
 global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
 	if (data.itemInputs === undefined) data.itemInputs = []
 	if (data.itemOutputs === undefined) data.itemOutputs = []
@@ -54,7 +55,7 @@ global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
 		} else {
 			gregInputs.push(item[0])
 			inputs.push(item[1])
-		};
+		}
 	});
 
 	$ISPRecipeLogic.RegisterRecipeData(`${type  }/${  id}`, inputs, (data.itemOutputProvider === undefined) ? null : data.itemOutputProvider.asCanonClass(), data.itemOutputs.slice(outputFirstIndex).map(i => Item.of(i)))
@@ -79,29 +80,32 @@ global.registerFoodRecipe = (event, type, id, duration, EUt, text, data) => {
 };
 
 /**
-* @param {string} id Recipe ID.
-* @param {number} duration Recipe duration.
-* @param {number} EUt Energy usage per tick.
-* @param {FoodRecipeData} data Recipe data.
-*/
+ * @param event
+ * @param {string} id Recipe ID.
+ * @param {number} duration Recipe duration.
+ * @param {number} EUt Energy usage per tick.
+ * @param {FoodRecipeData} data Recipe data.
+ */
 global.processorRecipe = (event, id, duration, EUt, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, "", data);
 
 /**
-* @param {string} id Recipe ID.
-* @param {number} duration Recipe duration.
-* @param {number} EUt Energy usage per tick.
-* @param {FoodRecipeData} data Recipe data.
-* @param {string} text Additional text for the recipe.
-*/
+ * @param event
+ * @param {string} id Recipe ID.
+ * @param {number} duration Recipe duration.
+ * @param {number} EUt Energy usage per tick.
+ * @param {FoodRecipeData} data Recipe data.
+ * @param {string} text Additional text for the recipe.
+ */
 global.processorRecipeText = (event, id, duration, EUt, text, data) => global.registerFoodRecipe(event, "food_processor", id, duration, EUt, text, data);
 
 /**
-* @param {string} id Recipe ID.
-* @param {string} input Recipe input.
-* @param {string} out Recipe output.
-* @param {Internal.FluidIngredient?} fluid Fluid ingredient.
-* @param {boolean?} isFirmaDynamic Whether the recipe uses `firmaLifeCopyDynamicFood`.
-*/
+ * @param event
+ * @param {string} id Recipe ID.
+ * @param {string} input Recipe input.
+ * @param {string} out Recipe output.
+ * @param {Internal.FluidIngredient?} fluid Fluid ingredient.
+ * @param {boolean?} isFirmaDynamic Whether the recipe uses `firmaLifeCopyDynamicFood`.
+ */
 global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
 	return global.registerFoodRecipe(event, "food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
 		itemInputs: [input],
@@ -125,7 +129,7 @@ global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
 global.generateJamProcessorRecipes = function(event, fruitId, fruitName, jar, unsealedJar) {
 	if (!fruitId || !fruitName || !jar || !unsealedJar) {
 		throw new Error(`Missing parameters for generateJamProcessorRecipes: fruitId=${fruitId}, fruitName=${fruitName}, jar=${jar}, unsealedJar=${unsealedJar}`);
-	};
+	}
 
 	global.processorRecipe(event, `jam/${fruitName}`, 100, 8, {
 		circuit: 15,
@@ -155,7 +159,7 @@ global.generateJamProcessorRecipes = function(event, fruitId, fruitName, jar, un
 global.generateJamPotAndVatRecipes = function(event, fruitId, fruitName, jar, texture) {
 	if (!fruitId || !fruitName || !jar || !texture) {
 		throw new Error(`Missing parameters for generateJamPotAndVatRecipes: fruitId=${fruitId}, fruitName=${fruitName}, jar=${jar}, texture=${texture}`);
-	};
+	}
 
 	for (let i = 2; i <= 4; i++) {
 		let ingredients = [];
@@ -172,7 +176,7 @@ global.generateJamPotAndVatRecipes = function(event, fruitId, fruitName, jar, te
 			200,
 			texture
 		).id(`tfg:pot/jam/${fruitName}_x${i}`)
-	};
+	}
 
 	event.recipes.firmalife.vat()
 		.inputFluid(TFC.fluidStackIngredient('firmalife:sugar_water', 500))
@@ -193,7 +197,7 @@ global.generateJamPotAndVatRecipes = function(event, fruitId, fruitName, jar, te
 global.generateJamUnsealingRecipe = function(event, jar, unsealedJar, fruitName) {
 	if (!jar || !unsealedJar || !fruitName) {
 		throw new Error(`Missing parameters for generateJamUnsealingRecipe: jar=${jar}, unsealedJar=${unsealedJar}, fruitName=${fruitName}`);
-	};
+	}
 
 	event.recipes.tfc.no_remainder_shapeless_crafting(
 		event.recipes.tfc.advanced_shapeless_crafting(
@@ -216,7 +220,7 @@ global.generateJamUnsealingRecipe = function(event, jar, unsealedJar, fruitName)
 global.generateAllJamRecipes = function(event, fruitId, fruitName, jar, unsealedJar, texture) {
 	if (!fruitId || !fruitName || !jar || !unsealedJar || !texture) {
 		throw new Error(`Missing parameters for generateAllJamRecipes: fruitId=${fruitId}, fruitName=${fruitName}, jar=${jar}, unsealedJar=${unsealedJar}, texture=${texture}`);
-	};
+	}
 
 	global.generateJamUnsealingRecipe(event, jar, unsealedJar, fruitName);
 	global.generateJamPotAndVatRecipes(event, fruitId, fruitName, jar, texture);
@@ -241,7 +245,7 @@ global.generateAllJamRecipes = function(event, fruitId, fruitName, jar, unsealed
 global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit) {
 	if (!inputFluid || !fluidQty || !inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFluidBoilingFoodRecipes: inputFluid=${inputFluid}, FluidQty=${fluidQty}, inputItem=${inputItem}, outputItem=${outputItem}`);
-	};
+	}
 
 	for (let i = 1; i <= 5; i++) {
 		event.recipes.tfc.pot(
@@ -252,7 +256,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			)
 			.itemOutput(TFC.isp.of(`${i}x ${outputItem}`).copyFood()
 		).id(`tfg:pot/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}_${i}`);
-	};
+	}
 
 	if (genVatRecipe === true) {
 		event.recipes.firmalife.vat()
@@ -262,7 +266,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			.length(100)
 			.temperature(200)
 			.id(`tfg:vat/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`);
-	};
+	}
 
 	if (genProcessorRecipe === true) {
 		let processorParameters = {
@@ -273,7 +277,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 		};
 		if (circuit !== null) processorParameters.circuit = circuit;
 		let a = global.processorRecipe(event, `tfg:${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`, 100, 8, processorParameters);
-	};
+	}
 };
 
 /**
@@ -319,13 +323,16 @@ global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, ge
  * @param {*} event
  * @param {Item} inputItem The item ID of the food item to be cooked.
  * @param {Item} outputItem The item ID of the resulting cooked food item.
+ * @param {boolean|null} disableGrilling Disables generating a `tfc.heating` recipe. 
  */
-global.generateFoodCookingRecipes = function(event, inputItem, outputItem) {
+global.generateFoodCookingRecipes = function(event, inputItem, outputItem, disableGrilling) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFoodCookingRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
-	};
+	}
 
 	global.cookingRecipe(event, `tfg:${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem);
+
+	if (disableGrilling) return;
 
 	event.recipes.tfc.heating(TFC.ingredient.notRotten(inputItem), 200)
 		.resultItem(TFC.isp.of(outputItem).copyFood())

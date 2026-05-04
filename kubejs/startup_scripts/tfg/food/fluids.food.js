@@ -19,23 +19,7 @@ const registerTFGFoodFluids = (event) => {
 			.temperature(293);
 	};
 
-	/**
-	 * Array of vintage alcohols to create with createVintageAlcohol.
-	 * @type {Array<{name: string, color: number}>} vintageAlcohols - Array of objects containing alcohol name and color.
-	 */
-	const vintageAlcohols = [
-		{name: 'whiskey', color: 0x392e14},
-		{name: 'beer', color: 0x6b5d21},
-		{name: 'cider', color: 0x62651f},
-		{name: 'rum', color: 0x461519},
-		{name: 'sake', color: 0x65785e},
-		{name: 'corn_whiskey', color: 0x75705c},
-		{name: 'rye_whiskey', color: 0x6c4e2d},
-		{name: 'mead', color: 0x6c5d1a},
-		{name: 'vodka', color: 0x76796d}
-	];
-
-	vintageAlcohols.forEach(alcohol => {
+	global.ALCOHOLS.forEach(alcohol => {
 		createVintageAlcohol(alcohol.name, alcohol.color);
 	});
 };

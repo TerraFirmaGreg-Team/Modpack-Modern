@@ -8,12 +8,15 @@ function registerTFGFoodRecipes(event) {
 
 	registerTFGFruitFoodRecipes(event);
 
-	//#region Meat cooking
+	//#region Basic Cooking
 
-	global.TFC_MEAT_RECIPE_COMPONENTS.forEach(item => {
-		// global.cookingRecipe(event, item.name, item.input, item.output)
+	global.TFC_FOOD_COOKING.forEach(item => {
+		global.generateFoodCookingRecipes(event, item.input, item.output, true)
+	});
+
+	global.TFG_FOOD_COOKING.forEach(item => {
 		global.generateFoodCookingRecipes(event, item.input, item.output)
-	})
+	});
 
 	//#endregion
 	//#region TFC Grains
