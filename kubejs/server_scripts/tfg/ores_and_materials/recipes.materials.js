@@ -204,10 +204,11 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * TFC Anvil tier. Should be 4 for everything except double ingots, which should be 5
  * @param {number} nonTfcTier
  * GregTech voltage tier. What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
+ * @param {String} recipeIdSuffix 
  */
-function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier) {
+function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	const id = `${material.getName()}_${linuxUnfucker(outputItem)}`;
+	const id = `${material.getName()}_${recipeIdSuffix}`;
 	let compactingTier = nonTfcTier;
 
 	if (tfcProperty !== null) {
