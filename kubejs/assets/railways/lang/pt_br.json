@@ -1,4 +1,5 @@
 {
+	"create.display_source.track_signal_source": "Estado do Sinal",
 	"create.railways.semaphore.search_mode.search_down": "Baixo",
 	"create.railways.semaphore.search_mode.search_up": "Cima",
 	"create.sliding_door.mode.manual": "Manual",
@@ -6,6 +7,8 @@
 	"railways.bogeys.styles.modern": "Modernizado",
 	"railways.coupler.edge_spacing.meters": "Metros",
 	"railways.display_source.signal.green": "Limpar",
+	"railways.display_source.signal.invalid": "Inválido",
+	"railways.display_source.signal.red": "Perigo",
 	"railways.display_source.signal.yellow": "Aviso",
 	"railways.gui.bogey_menu.category.favorites": "Favoritos",
 	"railways.whistle.tool.bound": "Obrigado a:",
