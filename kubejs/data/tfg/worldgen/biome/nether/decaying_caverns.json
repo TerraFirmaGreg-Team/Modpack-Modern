@@ -194,9 +194,15 @@
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
 			}
 		],
 		"underground_water_creature": [],
@@ -204,7 +210,7 @@
 			{
 				"type": "species:leaf_hanger",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			}
 		]

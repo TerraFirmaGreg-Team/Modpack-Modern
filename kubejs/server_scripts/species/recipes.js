@@ -160,12 +160,12 @@ function registerSpeciesRecipes(event) {
 	}).id('tfg:shaped/smoke_bomb_vessel')
 
 	event.recipes.tfc.heating('species:broken_links', 1535)
-		.resultFluid(Fluid.of('gtceu:iron', 144 / 2))
+		.resultFluid(Fluid.of('gtceu:iron', 144 / 4))
 		.id(`species:heating/broken_links`)
 
 	event.recipes.gtceu.extractor('tfg:broken_links')
 		.itemInputs('species:broken_links')
-		.outputFluids(Fluid.of('gtceu:iron', 144 / 2))
+		.outputFluids(Fluid.of('gtceu:iron', 144 / 4))
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
