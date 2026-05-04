@@ -6,7 +6,7 @@
 			"weight": 100,
 			"element": {
 				"location": "tfg:mineshaft/surface/small_hut",
-				"processors": "tfg:mineshaft/support_fixer",
+				"processors": "tfg:mineshaft/surface_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
