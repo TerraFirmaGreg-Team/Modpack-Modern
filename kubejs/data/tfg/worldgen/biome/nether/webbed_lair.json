@@ -40,13 +40,13 @@
 		[],
 		[],
 		[],
-		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/mossy_cobble"
 		],
+		"#tfg:nether_crops",
 		[
 			"tfg:nether/tree/araucaria_placer",
 			"tfg:nether/tree/araucaria_shrub",
@@ -76,7 +76,12 @@
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"species:spectre": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
+	},
 	"spawners": {
 		"water_ambient": [],
 		"ambient": [

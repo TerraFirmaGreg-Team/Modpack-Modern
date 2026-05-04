@@ -39,13 +39,13 @@
 		[],
 		[],
 		[],
-		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/mossy_cobble"
 		],
+		"#tfg:nether_crops",
 		[
 			"minecraft:spring_delta",
 			"minecraft:spring_closed_double",
@@ -69,7 +69,20 @@
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:leaf_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:spectre": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
+	},
 	"spawners": {
 		"ambient": [
 			{

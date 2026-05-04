@@ -247,6 +247,13 @@ function registerTFGBeneathPlacedFeatures(event) {
     event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/raw_boulder")
     event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/raw_boulder_patch")
 
+    event.add('tfg:nether_crops', "tfg:nether/crop/beans");
+    event.add('tfg:nether_crops', "tfg:nether/crop/cassava");
+    event.add('tfg:nether_crops', "tfg:nether/crop/ghost_pepper");
+    event.add('tfg:nether_crops', "tfg:nether/crop/peanut");
+    event.add('tfg:nether_crops', "tfg:nether/crop/magmango");
+    event.add('tfg:nether_crops', "tfg:nether/crop/lavacado");
+
 	event.add('tfg:nether_global_decoration', 'tfg:nether/surface/loose_rocks')
     event.add('tfg:nether_global_decoration', 'tfg:nether/surface/hanging_roots_patch')
 	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')

@@ -41,7 +41,6 @@
 			"tfg:nether/terrain/salt_lake",
 			"tfg:nether/terrain/salt_delta"
 		],
-		[],
 		[
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
@@ -53,6 +52,7 @@
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/mossy_cobble"
 		],
+		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
@@ -85,6 +85,10 @@
 			"charge": 0.9
 		},
 		"species:leaf_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
 		}
@@ -196,23 +200,23 @@
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 4,
-				"minCount": 3,
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "species:spectre",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
 		"water_creature": [
 			{
 				"type": "species:leaf_hanger",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 1,
+				"minCount": 1,
 				"weight": 100
 			}
 		]
