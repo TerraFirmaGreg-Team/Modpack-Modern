@@ -15,7 +15,7 @@
     {
       "type": "patchouli:text",
       "anchor": "stone_anvils",
-      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
+      "text": "Você também precisará de qualquer material de $(thing)martelo$(). A fim de fazer a bigorna, simplesmente clique direito na face $(thing)superior$() exposta de um desses blocos de pedra bruta com seu $(thing)martelo$() e voilà! Uma bigorna será formada.$(br2)Bigornas têm $(l:mechanics/anvils#tiers)níveis$() e a bigorna de rocha é  nível 0 - o nível mais baixo. Só é capaz de $(l:getting_started/primitive_anvils#welding)soldar$() lingotes de nível 1.",
       "title": "Bigorna de Pedra"
     },
     {

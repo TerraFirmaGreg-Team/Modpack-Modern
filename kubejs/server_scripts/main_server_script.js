@@ -150,6 +150,10 @@ ServerEvents.tags('entity_type', event => {
 	registerWABEntityTypeTags(event)
 })
 
+ServerEvents.tags('block_entity_type', event => {
+	registerCraftingStationBlockEntityTags(event)
+})
+
 /**
  * Событие регистрации датапаков (Здесь можно регистрировать теги, данные, рецепты, общий метод короче).
  * Срабатывает до инициализации рецептов, но после тегов.

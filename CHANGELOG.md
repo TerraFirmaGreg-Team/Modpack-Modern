@@ -4,6 +4,24 @@
 ### Changes
 ### Bug fixes
 
+## [0.12.7] - 04-05-2026
+### Changes
+- Added recipes to create roads in gregtech machines (#3929) @Astrimitsu
+- Added a blacklist for the crafting station to combat huge TPS lag issues - that means it won't work with vaults any more, but chests/crates are fine (#3951) @SakuraKitsurugi
+### Bug fixes
+- Fixed flame vines rendering as an error cube @Pyritie
+- Fixed rope ladders returning one additional ladder when collected @Thomasx0
+- Fixed some more linux issues @Pyritie
+- Fixed train driver/stock ticker hats on bears, rabbits, horseshoe crabs, isopods, jellyfish, manatees, and orcas @Allmoz
+- Fixed some vanilla mob loot appearing in EMI @Pyritie
+- Fixed missing repair recipe for hiking boots @Pyritie
+- Fixed ocelots not dropping small raw hides @Pyritie
+- Fixed the computercraft recipe for real this time @Pyritie
+- Fixed create glue not working @VoidLeech
+- Fixed jute, canola, sunflowers, and cucumbers not dropping any produce when harvested @Pyritie
+- Fixed not being able to craft sterling silver turbine rotors (#3954) @Pyritie
+- Fixed some weirdness with smooth stone collapsing (#3921) @Pyritie
+
 ## [0.12.6] - 02-05-2026
 ### Breaking Changes
 - Chemical reactor recipe for silicon tetrachloride is now on circuit 5 (#3933) @Pyritie

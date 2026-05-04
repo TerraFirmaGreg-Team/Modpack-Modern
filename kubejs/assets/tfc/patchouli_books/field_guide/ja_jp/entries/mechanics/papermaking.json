@@ -104,7 +104,7 @@
         "type": "tfc:sealed_barrel_recipe",
         "title": "剥いで浸した堅木",
         "recipe": "tfg:barrel/soak_hardwood_strip",
-        "text": "次に、剥いだ堅木を$(thing)水の入った$()$(l:mechanics/barrels)樽$()浸します。これによって$(thing)木材$()の構造的な強度が脆くなり、より細かく$(thing)分解できる状態$()になります。"
+        "text": "次に、剥いだ堅木を$(thing)水の入った$()$(l:mechanics/barrels)樽$()に浸します。これによって$(thing)木材$()の構造的な強度が脆くなり、より細かく$(thing)分解できる状態$()になります。"
       },
       {
         "type": "tfc:quern_recipe",

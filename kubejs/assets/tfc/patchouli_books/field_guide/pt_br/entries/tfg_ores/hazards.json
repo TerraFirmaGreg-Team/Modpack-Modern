@@ -14,13 +14,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Máscara Facial",
-			"text": "A $(thing)Máscara Facial$() fornece proteção contra quaisquer perigos de $(item)Inalação$(), como Arsenicose."
+			"title": "Todos os efeitos",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicose$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestose$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Beriliose$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Intoxicação por Monóxido de Carbono$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinógenos$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Queimaduras químicas$()$(li)$(l:tfg_ores/hazards#Irritants)Irritantes$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Intoxicação por Metanol$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Produtos químicos nauseantes$()$(li)$(l:tfg_ores/hazards#Poisons)Materiais venenosos$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Materiais radioativos$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicose$()$()$(br2)A próxima página fornecerá informações sobre como lidar com esses efeitos."
 		},
 		{
 			"type": "patchouli:text",
 			"title": "Prevenção e Curas",
-			"text": "Luvas de Borracha podem ser feitas de $(l:mechanics/leather_making)Couro$() e $(l:arborfirmacraft/making_rubber)Látex$(), ou de Chapas de Borracha. Elas oferecem proteção contra quaisquer riscos de $(item)Contato com a Pele$(), como Beriliose."
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rochas?$()$()$(li)$(l:tfg_ores/hazards#containers)Contêineres$()$(li)$(l:tfg_ores/hazards#mask)A Máscara Facial$()$(li)$(l:tfg_ores/hazards#gloves)As Luvas de Borracha$()$(li)$(l:tfg_ores/hazards#hazmat)O Traje de Proteção$()$(li)$(l:tfg_ores/hazards#medicine)Pílulas, Comprimidos e Pomadas$()$(li)$(l:tfg_ores/hazards#rad_away)A pílula RadAway™$()$(li)$(l:tfg_ores/hazards#respawn)O Impensável...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -42,7 +42,7 @@
 			"type": "patchouli:crafting",
 			"title": "Máscara Facial",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "Luvas de couro preparadas são então aquecidas em uma $(thing)cuba$() com $(thing)Látex Vulcanizado$(), a um passo da borracha.",
+			"text": "A $(thing)Máscara Facial$() oferece proteção contra qualquer risco de $(item)Inalação$(), como Arsenicose.",
 			"anchor": "mask"
 		},
 		{
@@ -51,7 +51,7 @@
 			"title": "Luvas de borracha",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "Por fim, as luvas embebidas em látex são aquecidas em um $(l:firmalife/oven)Forno$()."
+			"text": "As $(thing)Luvas de borracha$() podem ser feitas de $(l:mechanics/leather_making)Couro$() e $(l:arborfirmacraft/making_rubber)Látex$(), ou de $(thing)Chapas de Borracha$(). Elas oferecem proteção contra quaisquer riscos de $(item)Contato com a Pele$(), como $(thing)Pó de Berílio$()."
 		},
 		{
 			"type": "tfc:knapping_recipe",
@@ -77,7 +77,7 @@
 			"type": "patchouli:spotlight",
 			"title": "O Traje de Proteção",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
+			"text": "Um $(thing)Traje de Proteção$() completo oferece $(item)imunidade$() contra $(item)todos$() os tipos de perigos, inclusive $(item)radiação$(). Ele é fabricado em uma $(thing)Montadora LV$() a partir de $(thing)Polietileno$() e $(thing)Cloreto de Polivinila$().$(br2)Curiosidade! Você também pode pesquisar $(thing)#ppe_armor$() no JEI para encontrar mais equipamentos que oferecem proteção contra materiais perigosos.",
 			"anchor": "hazmat"
 		},
 		{
@@ -87,14 +87,14 @@
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+			"text": "Caso você fique gravemente exposto a um perigo, existem alguns $(thing)Medicamentos$() que podem ajudar na sua recuperação.$(br2)$(thing)Pílulas$() Básicas são as mais primitivas e fáceis de fazer, mas a maioria apresenta $(item)Efeitos Colaterais Negativos$(). $(thing)Comprimidos$() e $(thing)Pomadas$() são mais eficazes e têm menos efeitos colaterais, mas exigem $(thing)equipamentos LV$() e recursos mais avançados para serem produzidos."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "O comprimido RadAwayᵗᵐ",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
+			"text": "Esta é a $(item)ÚNICA CURA DEFINITIVA$() para $(item)TODOS$() os perigos e a $(item)ÚNICA CURA$() efetiva para $(item)Radiação$(). No entanto, também é a mais $(thing)Cara$() e $(thing)Difícil$() de produzir, exigindo equipamentos de $(thing)nível HV$() e materiais avançados."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -110,14 +110,14 @@
 			"title": "Arsenicose",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "Arsenicosis",
-			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+			"text": "$(thing)Arsenicose$() é uma doença causada pela inalação de $(thing)Arsênio$() pelo seu pó, vapor ou $(thing)Realgar$(). Ela aumenta gradativamente a $(item)fome$(), seguida de $(item)náuseas$() e, eventualmente, leva à $(item)morte$().$(br2)A $(l:tfg_ores/hazards#mask)Máscara Facial$() e o $(l:tfg_ores/hazards#hazmat)Traje de Proteção$() oferecem proteção contra a $(thing)Arsenicose$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Asbestose",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Asbestosis",
-			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+			"anchor": "Asbestose",
+			"text": "$(thing)Asbestose$() é uma doença causada pela inalação de pó de $(thing)Amianto$(). Se mantida por tempo suficiente, causa $(item)fome$().$(br2)A $(l:tfg_ores/hazards#mask)Máscara Facial$() e o $(l:tfg_ores/hazards#hazmat)Traje de Proteção$() oferecem proteção contra a $(thing)Asbestose$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogênicos",
+			"title": "Carcinógenos",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogênicos",
+			"anchor": "Carcinógenos",
 			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogênicos",
+			"title": "Carcinógenos",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogênicos",
+			"anchor": "Carcinógenos",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{

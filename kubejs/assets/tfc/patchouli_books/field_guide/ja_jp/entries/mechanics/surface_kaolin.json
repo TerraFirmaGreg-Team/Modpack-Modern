@@ -87,7 +87,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfc:powder/kaolinite",
 			"anchor": "powder",
-			"text": "カオリン粘土は$(thing)20%$()しか$(thing)カオリナイトの粉末$()にならないため、インベントリ節約のためにも$(l:getting_started/pit_kiln)穴窯$()などでその場で焼いてしまうのがおすすめです。$(br2)ただし、\n$(l:mechanics/glassworking_applications)ガラスの精製$()用に、カオリン粘土を$(thing)20ブロック$()ほど持ち帰っておくのもよいでしょう。"
+			"text": "カオリン粘土は$(thing)20%$()しか$(thing)カオリナイトの粉末$()にならないため、インベントリ節約のためにも$(l:getting_started/pit_kiln)穴窯$()などでその場で焼いてしまうのがおすすめです。$(br2)ただし、$(l:mechanics/glassworking_applications)ガラスの精製$()用に、カオリン粘土を$(thing)20ブロック$()ほど持ち帰っておくのもよいでしょう。"
 		}
     ]
 }
