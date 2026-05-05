@@ -14,14 +14,14 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "Por ejemplo, para crear 1000 mB de $(thing)Bronce$(), mostrado a la derecha, necesitarías entre 700 y 800 mB de $(thing)Bronce$(), y entre 200 y 300 mB de $(thing)Estaño$().$(br2) Las siguientes tres páginas muestran las recetas de los tres bronces. Cada tipo de bronce se puede usar para hacer herramientas, $(l:mechanics/armor)Armaduras$(), y otros objetos de metal. Son ligeramente distintos así que las herramientas resultantes tendrán diferente durabilidad, eficiencia y daño de ataque. "
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
-			"title": "Bronze",
+			"title": "Bronce",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Estaño$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -40,29 +40,29 @@
 		{
 			"type": "patchouli:text",
 			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
-			"title": "Utility Alloys"
+			"title": "Aleaciones de utilidad"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "brass",
 			"item": "create:brass_ingot",
-			"title": "Brass",
+			"title": "Latón",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "Oro rosa",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)15 - 30 % : $(thing)Cobre$()$(li)70 - 85 % : $(thing)Oro$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
 			"title": "Plata de ley",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 40 % : $(thing)Cobre$()$(li)60 - 80 % : $(thing)Plata$()$(br2)"
 		}
 	],
 	"read_by_default": true,
