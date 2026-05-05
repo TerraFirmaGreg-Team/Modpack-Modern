@@ -1,15 +1,15 @@
 {
 	"type": "lithostitched:jigsaw",
 	"start_pool": "tfg:mineshaft/mineshaft_start_pool",
-	"size": 12,
+	"size": 15,
 	"max_distance_from_center": 116,
 	"biomes": "#tfg:has_structure/illages",
 	"step": "surface_structures",
-	"terrain_adaptation": "beard_box",
+	"terrain_adaptation": "none",
 	"start_height": {
-		"absolute": 0
+		"absolute": 1
 	},
-	"project_start_to_heightmap": "MOTION_BLOCKING",
+	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"use_expansion_hack": false,
 	"adapt_noise": true,
 	"spawn_overrides": {

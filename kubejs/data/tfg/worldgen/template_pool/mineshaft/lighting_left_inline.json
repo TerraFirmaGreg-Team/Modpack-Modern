@@ -1,0 +1,33 @@
+{
+	"name": "tfg:mineshaft/lighting_left_inline",
+	"fallback": "tfg:mineshaft/fallback/lighting_fallback",
+	"elements": [
+		{
+			"weight": 6,
+			"element": {
+				"location": "tfg:mineshaft/lighting/torch_l",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:mineshaft/lighting/lamp_l",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"location": "minecraft:empty",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

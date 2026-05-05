@@ -1,5 +1,5 @@
 {
-	"name": "tfg:mineshaft/mineshaft_start_pool",
+	"name": "tfg:mineshaft/surface/small_shaft",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
@@ -7,8 +7,8 @@
 			"element": {
 				"element_type": "lithostitched:delegating",
 				"delegate": {
-					"location": "tfg:mineshaft/surface/small_hut",
-					"processors": "tfg:mineshaft/surface_fixer",
+					"location": "tfg:mineshaft/surface/small_shaft",
+					"processors": "tfg:mineshaft/support_fixer",
 					"projection": "rigid",
 					"element_type": "minecraft:single_pool_element"
 				},
