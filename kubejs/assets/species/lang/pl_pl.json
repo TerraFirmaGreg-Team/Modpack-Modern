@@ -28,6 +28,7 @@
 	"item.species.music_disc_dial": "Płyta muzyczna",
 	"item.species.music_disc_dial.desc": "lunarbunten - dial",
 	"item.species.music_disc_lapidarian": "Płyta muzyczna",
+	"item.species.music_disc_lapidarian.desc": "Exclaim! - Lapidarian",
 	"item.species.music_disk_spawner": "Płyta muzyczna",
 	"item.species.music_disk_spawner.desc": "Exclaim! - Spawner",
 	"item.species.ricoshield.desc.blocking": "Podczas blokowania:",
@@ -57,8 +58,10 @@
 	"species.developer.contribution_level.contributor": " (Współtwórca) ",
 	"species.developer.contribution_level.guest_artist": " (Gościnny artysta) ",
 	"species.developer.made_by": "Stworzone przez:",
+	"subtitles.entity.species.deflector_dummy.absorb": "Manekin pochłania obrażenia",
 	"subtitles.entity.species.deflector_dummy.hurt": "Uderzono manekina",
 	"subtitles.item.species.crankbow.speed": "Łuk korbowy przyspiesza",
+	"subtitles.item.species.ricoshield.absorb": "Tarcza pochłania obrażenia",
 	"subtitles.item.species.smoke_bomb.charge": "Gracz przygotowuje się",
 	"subtitles.item.species.wicked_treat.apply": "Zwierzę wzmocnione",
 	"subtitles.item.species.wicked_wax.eat": "Jedzenie"
