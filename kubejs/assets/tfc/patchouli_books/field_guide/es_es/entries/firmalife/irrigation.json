@@ -10,7 +10,7 @@
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "The sprinkler is made with a $(thing)Copper Plate$()."
+			"text": "El aspersor se craftea con una $(thing)Placa de Cobre$()."
 		},
 		{
 			"title": "Piping",
