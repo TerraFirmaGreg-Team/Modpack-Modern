@@ -105,7 +105,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
-			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
+			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу та каніфоль із хвойних порід",
 			"border": true
 		},
 		{
@@ -121,7 +121,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
-			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
+			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу та каніфоль із хвойних порід",
 			"border": true
 		},
 		{
@@ -137,7 +137,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
-			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
+			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу та каніфоль із хвойних порід",
 			"border": true
 		},
 		{
@@ -153,7 +153,7 @@
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
-			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу і хвойну смолу",
+			"text": "$(thing)Виробляє$(): соснову смолу$(br)$(thing)Перетворює на$(): липку смолу та каніфоль із хвойних порід",
 			"border": true
 		}
 	]
