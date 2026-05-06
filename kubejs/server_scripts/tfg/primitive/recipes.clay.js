@@ -221,7 +221,27 @@ function registerTFGClayRecipes(event) {
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
-	
+
+	//Hardened Clay
+	event.custom({
+		type:"firmalife_drying",
+		ingredient:{item:"minecraft:clay"},
+		result:{item:"tfg:hardened_clay"}}).id("tfg:drying_clay_hardened_clay")
+
+	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
+		.itemInputs('minecraft:clay')
+		.fluidOutputs('minecraft:water')
+		.itemOutputs('tfg:hardened_clay')
+		.duration(400)
+		.EUt(6)
+
+	event.recipes.gtceu.rock_breaker("hardened_clay_duping")
+		.notConsumable('tfg:hardened_clay')
+		.itemOutputs('tfg:hardened_clay')
+		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	// heating
 	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
         .resultItem('tfg:rod_mold')
