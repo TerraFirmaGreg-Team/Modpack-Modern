@@ -1,5 +1,5 @@
 {
-	"name": "What is the Beneath?",
+	"name": "Czym są Głębiny?",
 	"category": "tfc:beneath",
 	"icon": "minecraft:deepslate",
 	"priority": true,
@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
-			"title": "Entering the Beneath",
+			"title": "Wejście do Głębin",
 			"text": "To travel Beneath, simply stand on overworld bedrock for a little while. To get down to the bedrock, you'll have to either break through the Hornfels layer with $(item)Explosives$() or $(item)Steel+ Tools$(), or find a cave with the more brittle $(thing)Keratophyre$()."
 		},
 		{

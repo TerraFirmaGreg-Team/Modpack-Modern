@@ -56,7 +56,7 @@
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Najpierw stwórz rękawice ze skóry."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
@@ -170,7 +170,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Nauseating chemicals",
+			"title": "Substancje powodujące nudności",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "Nauseating_chemicals",
 			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."

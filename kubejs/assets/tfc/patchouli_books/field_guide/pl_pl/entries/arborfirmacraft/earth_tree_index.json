@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "Akacja, guma arabska",
 			"item": "tag:tfc:acacia_logs",
 			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
 		},

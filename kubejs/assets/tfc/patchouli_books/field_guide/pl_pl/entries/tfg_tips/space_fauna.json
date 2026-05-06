@@ -31,14 +31,14 @@
 			"type": "patchouli:entity",
 			"entity": "species:limpet",
 			"scale": 0.8,
-			"name": "Limpet",
+			"name": "Skałoczep",
 			"text": "$(thing)Limpets$() are a type of snail with ore on their shell. You can obtain the ore with any mining tool. They are passive and can be eaten."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "ad_astra:star_crawler",
 			"scale": 0.4,
-			"name": "Star Crawler",
+			"name": "Gwiezdny pełzacz",
 			"text": "$(thing)Star Crawlers$() are a type of starfish. They are hostile and can be eaten."
 		},
 		{
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Ładowarka",
+			"title": "Charger",
 			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
 		},
 		{
