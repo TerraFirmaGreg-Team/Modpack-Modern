@@ -29,6 +29,19 @@
 			}
 		},
 		{
+			"weight": 40,
+			"element": {
+				"element_type": "lithostitched:limited",
+				"delegate": {
+					"location": "tfg:mineshaft/special/spider_start",
+					"processors": "tfg:mineshaft/support_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"limit": 2
+			}
+		},
+		{
 			"weight": 1,
 			"element": {
 				"location": "tfg:mineshaft/hallway/hallway_s_1",

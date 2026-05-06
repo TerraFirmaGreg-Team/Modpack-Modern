@@ -194,7 +194,7 @@
 			}
 		},
 		{
-			"weight": 50,
+			"weight": 30,
 			"element": {
 				"location": "tfg:mineshaft/special/special_entrance",
 				"processors": "tfg:mineshaft/support_fixer",

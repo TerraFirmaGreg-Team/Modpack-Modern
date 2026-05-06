@@ -1,0 +1,60 @@
+{
+	"name": "tfg:mineshaft/spider_hallway",
+	"fallback": "tfg:mineshaft/fallback/hallway_fallback",
+	"elements": [
+		{
+			"weight": 70,
+			"element": {
+				"location": "tfg:mineshaft/spider/spider_hallway_s_1",
+				"processors": "tfg:mineshaft/spider_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 35,
+			"element": {
+				"location": "tfg:mineshaft/spider/spider_hallway_l",
+				"processors": "tfg:mineshaft/spider_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 35,
+			"element": {
+				"location": "tfg:mineshaft/spider/spider_hallway_r",
+				"processors": "tfg:mineshaft/spider_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 36,
+			"element": {
+				"location": "tfg:mineshaft/spider/spider_intersection_t_1",
+				"processors": "tfg:mineshaft/spider_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 36,
+			"element": {
+				"location": "tfg:mineshaft/spider/spider_intersection_t_2",
+				"processors": "tfg:mineshaft/spider_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:mineshaft/hallway/hallway_s_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
