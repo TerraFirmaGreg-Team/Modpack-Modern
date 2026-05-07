@@ -66,11 +66,11 @@
 			],
 			"border": true,
 			"title": "Czerw piaskowy",
-			"text": "$(thing)Sandworms$() are alerted by player footsteps. They are the reason almost nothing else lives in the desert.$(br)"
+			"text": "$(thing)Czerwie piaskowe$() wykrywają kroki graczy. Są powodem, dla którego na pustyni prawie nie ma życia.$(br)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Sniffers",
+			"title": "Niuchacze",
 			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$(). Their eggs can be cooked or extracted for Cream. They eat any Mars crop.",
 			"anchor": "sniffer"
 		},
@@ -79,7 +79,7 @@
 			"entity": "tfg:sniffer{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.45,
 			"name": " ",
-			"text": "A sniffer."
+			"text": "Niuchacz."
 		},
 		{
 			"type": "patchouli:text",
@@ -121,7 +121,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Charger",
+			"title": "Szarżer",
 			"text": "$(thing)Chargers$() are semipassive animals. You can tame them with $(item)any Mars crop$() to use them as a combat land mount.$(br2)Press $(k:key.wan_ancient_beasts.special_ability)$() for a headbutt attack, or press and hold $(item)Spacebar$() for a charge attack.$(br2)They can also be equipped with $(item)dyeable armor$()."
 		},
 		{
@@ -151,7 +151,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:eater",
 			"scale": 0.5,
-			"name": "Eater",
+			"name": "Pożeracz",
 			"text": "A top predator, $(thing)Eaters$() are hostile animals found above -109°C. If you can manage to take one down, they can be eaten."
 		},
 		{
