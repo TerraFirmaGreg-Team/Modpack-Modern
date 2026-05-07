@@ -498,4 +498,39 @@ const registerRnrRecipes = (event) => {
 			mode: `smooth`
 		})
 	})
+
+	event.custom({
+		type: `rnr:block_mod`,
+		input_item: {
+			item: `tfg:asphalt_mix_bucket`
+		},
+		input_block: `rnr:base_course`,
+		output_block: `tfg:pouring_asphalt_road`
+	})
+
+	// Asphalt road shape changes via RNR mattock-compatible block_mod.
+	const asphaltMattockItem = { tag: 'forge:mattocks' }
+	event.custom({
+		type: `rnr:block_mod`,
+		input_item: asphaltMattockItem,
+		input_block: `tfg:asphalt_road`,
+		output_block: `tfg:asphalt_road_slab`,
+		consume_ingredient: false
+	}).id('tfg:rnr/block_mod/asphalt_road_to_slab')
+
+	event.custom({
+		type: `rnr:block_mod`,
+		input_item: asphaltMattockItem,
+		input_block: `tfg:asphalt_road_slab`,
+		output_block: `tfg:asphalt_road_stairs`,
+		consume_ingredient: false
+	}).id('tfg:rnr/block_mod/asphalt_slab_to_stairs')
+
+	event.custom({
+		type: `rnr:block_mod`,
+		input_item: asphaltMattockItem,
+		input_block: `tfg:asphalt_road_stairs`,
+		output_block: `tfg:asphalt_road`,
+		consume_ingredient: false
+	}).id('tfg:rnr/block_mod/asphalt_stairs_to_road')
 };
