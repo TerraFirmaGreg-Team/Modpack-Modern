@@ -44,7 +44,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 
 	//Inventory Manager
 	event.recipes.gtceu.assembler('advancedperipherals:assembler/inventory_manager')
-		.itemInputs('1x computercraft:wired_modem', '1x gtceu:hv_machine_casing', '2x #gtceu:circuits/ev', '2x gtceu:hv_sensor', '2x ae2:export_bus', '1x ae2:equal_distribution_card')
+		.itemInputs('1x computercraft:wired_modem', '1x gtceu:luv_machine_casing', '2x #gtceu:circuits/luv', '2x gtceu:luv_sensor', '2x ae2:export_bus', '1x ae2:equal_distribution_card')
 		.circuit(4)
 		.itemOutputs('advancedperipherals:inventory_manager')
 		.duration(1200)
