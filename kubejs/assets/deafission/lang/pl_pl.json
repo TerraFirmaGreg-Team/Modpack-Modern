@@ -24,6 +24,7 @@
 	"deafission.fission_reactor.gui.recipe_none": "Przepis: Brak",
 	"deafission.fission_reactor.gui.stats": "%s H %s Th %s Eff",
 	"deafission.hb_export": "Eksportuj ciepło",
+	"deafission.hb_import": "Importuj ciepło",
 	"deafission.overlay.hb_capacity": "Pojemność: %s HU/°",
 	"deafission.overlay.hb_energy": "%s HU",
 	"deafission.overlay.hb_load": "Obciążenie: %s%% // %s%%",
@@ -34,6 +35,7 @@
 	"deafission.recipe.heat_per_tick": "Ciepło: -%s HU/t",
 	"deafission.recipe.temp": "Temp: %s°",
 	"deafission.subtitles.reactor_loop": "Głośne brzęczenie",
+	"emi.category.deafission.component_hb": "Komponenty baterii cieplnych",
 	"emi.deafission.efficiency_component_key": "Wydajność:",
 	"emi.deafission.efficiency_component_value": "%d",
 	"emi.deafission.heat_component_key": "Maksymalne ciepło:",
@@ -46,6 +48,8 @@
 	"item.deafission.fuelcell_plutonium_x1": "Pręt paliwowy z plutonu",
 	"item.deafission.fuelcell_thorium_x1": "Pręt paliwowy z toru",
 	"item.deafission.fuelcell_uranium_x1": "Pręt paliwowy z uranu",
+	"material.deafission.flibe": "Chłodziwo FLiBe",
+	"material.deafission.flibe_hot": "Chłodziwo FLiBe (Gorące)",
 	"tooltip.deafission.fuelcell.heat": "Ciepło: %s%%",
 	"tooltip.deafission.fuelcell.rodcount": "Pręty: %s"
 }

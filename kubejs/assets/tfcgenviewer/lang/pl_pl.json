@@ -36,6 +36,7 @@
   "tfcgenviewer.rock_editor.edit_tooltip": "Przenieś '%s' do edytora",
   "tfcgenviewer.rock_editor.change_block": "Przełącz edycję bloku: %s",
   "tfcgenviewer.rock_editor.rock_layer_type.bottom": "Dolne skały",
+  "tfcgenviewer.rock_editor.rock_layer_type.ocean_floor": "Oceaniczne warstwy skalne",
   "tfcgenviewer.rock_editor.rock_layer_type.volcanic": "Wulkaniczne warstwy skalne",
   "tfcgenviewer.rock_editor.layer_in_editor": "W edytorze",
   "tfcgenviewer.rock_editor.currently_editing_layer": "Obecnie edytowane: %s",
@@ -120,5 +121,10 @@
   "tfcgenviewer.commands.add.success": "Dodano %s do filtru %s",
   "tfcgenviewer.commands.add.fail": "Gracz już jest w filtrze %s",
   "tfcgenviewer.commands.remove.success": "Usunięto %s z filtru %s",
-  "tfcgenviewer.commands.remove.fail": "Gracz nie jest w filtrze %s"
+  "tfcgenviewer.commands.remove.fail": "Gracz nie jest w filtrze %s",
+  "tfcgenviewer.could_not_parse.color": "Wystąpił błąd podczas przetwarzania koloru: %s",
+  "tfcgenviewer.could_not_parse.gradient": "Wystąpił błąd podczas przetwarzania gradientu: %s",
+  "tfcgenviewer.could_not_parse.biome": "Wystąpił błąd podczas przetwarzania koloru biomu: %s",
+  "tfcgenviewer.narration.info_pane.title": "Widok informacji",
+  "tfcgenviewer.narration.preview_pane.title": "Widok podglądu"
 }
