@@ -146,7 +146,7 @@
 			"type": "patchouli:text",
 			"anchor": "prey",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-			"title": "Prey"
+			"title": "Zwierzyna"
 		},
 		{
 			"type": "patchouli:entity",
