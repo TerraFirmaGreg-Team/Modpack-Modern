@@ -48,7 +48,7 @@ const registerAdvancedPeripheralsRecipes = (event) => {
 		.circuit(4)
 		.itemOutputs('advancedperipherals:inventory_manager')
 		.duration(1200)
-		.EUt(GTValues.VA[GTValues.HV])
+		.EUt(GTValues.VA[GTValues.LuV])
 		.addMaterialInfo(true)
 
 	//Block Reader
