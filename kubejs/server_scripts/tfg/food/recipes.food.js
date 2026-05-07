@@ -914,12 +914,14 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	global.processorRecipe(event, "red_grapes", 50, 8, {
+		circuit: 8,
 		itemInputs: ["firmalife:food/red_grapes"],
 		itemOutputs: ["firmalife:food/smashed_red_grapes"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_red_grapes').copyFood()
 	})
 
 	global.processorRecipe(event, "white_grapes", 50, 8, {
+		circuit: 8,
 		itemInputs: ["firmalife:food/white_grapes"],
 		itemOutputs: ["firmalife:food/smashed_white_grapes"],
 		itemOutputProvider: TFC.isp.of('firmalife:food/smashed_white_grapes').copyFood()
