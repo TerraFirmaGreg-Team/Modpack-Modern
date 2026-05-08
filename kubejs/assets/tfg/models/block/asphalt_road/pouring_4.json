@@ -1,5 +1,5 @@
 {
-    "parent": "tfg:block/asphalt_road/asphalt_mix",
+    "parent": "tfg:block/asphalt_road/pouring",
     "ambientocclusion": false,
     "elements": [{
         "from": [
@@ -9,7 +9,7 @@
         ],
         "to": [
             16,
-            7,
+            15,
             16
         ],
         "faces": {
