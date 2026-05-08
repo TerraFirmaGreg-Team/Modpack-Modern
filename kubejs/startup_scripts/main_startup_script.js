@@ -15,7 +15,7 @@ global.linuxUnfucker = function(value) {
 
 	let parts = str.match(/[A-Z]+[0-9]*|[a-z]+[0-9]*|[0-9]+/g);
 	if (!parts) return "";
-	for (let i = 0; i < parts.length; i++) parts[i] = parts[i].toLowerCase();
+	for (let i = 0; i < parts.length; i++) parts[i] = parts[i].toLocaleLowerCase('en-US');
 	return parts.join('_');
 };
 
