@@ -1,0 +1,322 @@
+{
+	"createaddition.tooltip.energy.stored": "Oppbevart energi:",
+	"createaddition.tooltip.energy.capacity": "Kapasitet:",
+	"createaddition.tooltip.energy.consumption": "Energiforbruk:",
+	"createaddition.tooltip.energy.production": "Energi generert:",
+	"createaddition.tooltip.energy.charged": "Oppladet",
+	"createaddition.tooltip.energy.usage": "Energien i nettverket:",
+	"createaddition.tooltip.energy.demand": "Nettverksforbruk:",
+	"createaddition.tooltip.energy.supply": "Nettverksproduksjon:",
+	"createaddition.tooltip.energy.selected": "Valgt nettverkstilkobling:",
+	"createaddition.tooltip.energy.input": "inngang",
+	"createaddition.tooltip.energy.output": "utgang",
+
+	"createaddition.tooltip.energy.mode": "Modus:",
+	"createaddition.tooltip.energy.push": "Dytt",
+	"createaddition.tooltip.energy.pull": "Dra",
+	"createaddition.tooltip.energy.passive": "Passiv",
+	"createaddition.tooltip.energy.none": "Ingen",
+
+	"createaddition.tooltip.accumulator.info": "Akkumulatorinformasjon:",
+	"createaddition.tooltip.relay.info": "Reléinformasjon:",
+	"createaddition.tooltip.connector.info": "kontaktinformasjon:",
+
+	"createaddition.recipe.rolling": "Valsing",
+	"createaddition.recipe.rolling.sequence": "Valser i mekanisk valse",
+	"createaddition.recipe.charging": "Opplading",
+	"createaddition.recipe.liquid_burning": "Flyttende drivstoff",
+
+	"createaddition.recipe.liquid_burning.burn_time": "Brenntid",
+
+	"createaddition.command.cca_api.link": "Klikk her for å åpne API-dokumentasjon",
+
+	"desc.immersiveengineering.info.mineral.sphalerite": "Sfaleritt",
+
+	"item.createaddition.capacitor": "Kondensator",
+
+	"item.createaddition.diamond_grit": "Diamantstøv",
+	"item.createaddition.diamond_grit_sandpaper": "Diamantsandpapir",
+	"item.createaddition.diamond_grit_sandpaper.tooltip.summary": "Kan bli brukt til å _polere materialer_. Denne prosessen kan automatiseres med en mekanisk hånd.",
+	"item.createaddition.diamond_grit_sandpaper.tooltip.condition1": "Når anvendt",
+	"item.createaddition.diamond_grit_sandpaper.tooltip.behaviour1": "Polerer gjenstander når de er i den _sekundære hånden_ eller når de ligger på _gulvet_ når _du ser på dem._",
+
+	"item.createaddition.zinc_sheet": "Sinkplate",
+
+	"item.createaddition.copper_spool": "Kobberspole",
+	"item.createaddition.copper_spool.tooltip": "Tom kobberspole",
+	"item.createaddition.copper_spool.tooltip.summary": "Brukes for å vikle kobberledning på.",
+	"item.createaddition.copper_spool.tooltip.condition1": "Lav strømstyrke",
+	"item.createaddition.copper_spool.tooltip.behaviour1": "Kobler sammen kontakter for _lav strømstyrke._",
+	"item.createaddition.copper_spool.tooltip.condition2": "Høyreklikke to kontakter",
+	"item.createaddition.copper_spool.tooltip.behaviour2": "Kobler sammen to kontakter, og etterlater en tom spole.",
+	"item.createaddition.copper_wire": "Kobberledning",
+	"item.createaddition.copper_rod": "Kobberstav",
+
+	"item.createaddition.festive_spool": "Kobberspole med festlig lys",
+	"item.createaddition.festive_spool.tooltip": "Tom kobberspole med festlig lys",
+	"item.createaddition.festive_spool.tooltip.summary": "Brukes for å vikle festlig kobberledning på.",
+	"item.createaddition.festive_spool.tooltip.condition1": "Lav strømstyrke",
+	"item.createaddition.festive_spool.tooltip.behaviour1": "Kobler sammen kontakter for _lav strømstyrke_ festlig.",
+	"item.createaddition.festive_spool.tooltip.condition2": "Høyreklikke to kontakter",
+	"item.createaddition.festive_spool.tooltip.behaviour2": "Kobler sammen to kontakter, og etterlater en tom spole.",
+
+	"item.createaddition.iron_wire": "Jernledning",
+	"item.createaddition.iron_rod": "Jernstav",
+
+	"item.createaddition.gold_spool": "Gullspole",
+	"item.createaddition.gold_spool.tooltip": "Tom gullspole",
+	"item.createaddition.gold_spool.tooltip.summary": "Brukes for å vikle gulledning på.",
+	"item.createaddition.gold_spool.tooltip.condition1": "Høy strømstyrke",
+	"item.createaddition.gold_spool.tooltip.behaviour1": "Kobler sammen kontakter for _høy strømstyrke._",
+	"item.createaddition.gold_spool.tooltip.condition2": "Høyreklikke to kontakter",
+	"item.createaddition.gold_spool.tooltip.behaviour2": "Kobler sammen to kontakter, og etterlater en tom spole.",
+	"item.createaddition.gold_wire": "Gulledning",
+	"item.createaddition.gold_rod": "Gullstav",
+
+	"item.createaddition.electrum_ingot": "Elektrumbarre",
+	"item.createaddition.electrum_nugget": "Elektrumklump",
+	"item.createaddition.electrum_sheet": "Elektrumplate",
+	"item.createaddition.electrum_spool": "Elektrumspole",
+	"item.createaddition.electrum_spool.tooltip": "Tom elektrumspole",
+	"item.createaddition.electrum_spool.tooltip.summary": "Brukes for å vikle elektrumledning på.",
+	"item.createaddition.electrum_spool.tooltip.condition1": "Høy strømstyrke",
+	"item.createaddition.electrum_spool.tooltip.behaviour1": "Kobler sammen kontakter for _høy strømstyrke._",
+	"item.createaddition.electrum_spool.tooltip.condition2": "Høyreklikke to kontakter",
+	"item.createaddition.electrum_spool.tooltip.behaviour2": "Kobler sammen to kontakter, og etterlater en tom spole.",
+	"item.createaddition.electrum_wire": "Elektrumledning",
+	"item.createaddition.electrum_rod": "Elektrumstav",
+
+	"item.createaddition.brass_rod": "Messingstav",
+	"item.createaddition.bronze_rod": "Bronsestav",
+
+	"item.createaddition.cake_base": "Kakebunn",
+	"item.createaddition.cake_base_baked": "Bakt kakebunn",
+
+	"item.createaddition.straw": "Sugerør",
+
+	"item.createaddition.electrum_amulet": "Blek gullamulett",
+	"item.createaddition.electrum_amulet.tooltip": "ELEKTRUMAMULETT",
+	"item.createaddition.electrum_amulet.tooltip.summary": "Om _livet_ holder deg nede, kan denne _amuletten_ få deg til å føle at _lykken_ smiler til deg igjen.",
+
+	"item.createaddition.brass_figurine": "Messingfigur",
+	"item.createaddition.brass_figurine.tooltip": "MESSINGFIGUR",
+	"item.createaddition.brass_figurine.tooltip.summary": ".",
+
+	"item.createaddition.copper_goblet": "Kobberbeger",
+	"item.createaddition.copper_goblet.tooltip": "KOBBERBEGER",
+	"item.createaddition.copper_goblet.tooltip.summary": "Den ekstraordinære varmeoverføringsevnen til denne _begeret_ vil holde deg kjølig når du trenger det som mest.",
+
+	"item.createaddition.gold_goblet": "Utsmykket beger",
+	"item.createaddition.gold_goblet.tooltip": "UTSMYKKET_BEGER",
+	"item.createaddition.gold_goblet.tooltip.summary": "Å drikke fra dette _begeret_ vil mette mer enn noen vanlig flaske.",
+
+	"item.createaddition.seed_oil_bucket": "Bøtte med frøolje",
+	"item.createaddition.seed_oil_bucket.tooltip": "BØTTE_MED_FRØOLJE",
+	"item.createaddition.seed_oil_bucket.tooltip.summary": "En enkel _brennbar væske_.",
+	"fluid.createaddition.seed_oil": "Frøolje",
+
+	"item.createaddition.bioethanol_bucket": "Bøtte med biodrivstoff",
+	"item.createaddition.bioethanol_bucket.tooltip": "BIOETANOLBØTTE",
+	"item.createaddition.bioethanol_bucket.tooltip.summary": "En effektiv _brennbar væske_.",
+	"fluid.createaddition.bioethanol": "Biodrivstoff",
+
+	"item.createaddition.biomass": "Biomasse",
+	"item.createaddition.biomass_pellet": "Biomassepellet",
+	"item.createaddition.biomass_pellet.tooltip": "BIOMASSE_PELLET",
+	"item.createaddition.biomass_pellet.tooltip.summary": "Et energirikt _fast drivstoff_.",
+
+	"item.createaddition.spool": "Tom spole",
+	"item.createaddition.spool.nbt": "Er koblet en plass.",
+	"item.createaddition.spool.tooltip.summary": "Brukes for å vikle ledninger på.",
+	"item.createaddition.spool.tooltip.condition1": "Høyreklikke to sammenkoblete kontakter",
+	"item.createaddition.spool.tooltip.behaviour1": "Vil fjerne sammenkoblingen mellom to kontakter og vikle ledningen på _spolen_.",
+
+	"statusbar.createaddition.wire.linked": "Forbundet",
+	"statusbar.createaddition.wire.linked_in": "Ledning koblet til inngang",
+	"statusbar.createaddition.wire.linked_out": "Ledning koblet til utgang",
+
+	"statusbar.createaddition.wire.connect": "Første kontakt valgt",
+	"statusbar.createaddition.wire.connect_in": "Inngangskontakt valgt",
+	"statusbar.createaddition.wire.connect_out": "Utgangskontakt valgt",
+
+	"statusbar.createaddition.wire.long": "Ledningen er for lang",
+	"statusbar.createaddition.wire.count": "Kontakten kan ikke holde flere ledninger",
+	"statusbar.createaddition.wire.removed": "Ledning fjernet",
+	"statusbar.createaddition.wire.exists": "En ledning er alt koblet mellom de to kontaktene",
+	"statusbar.createaddition.wire.no_connection": "Ledning er ikke koblet på her",
+	"statusbar.createaddition.wire.invalid": "Ugyldig tilkobling",
+	"statusbar.createaddition.wire.requires_high_current": "Denne kontakten krever ledning for høy strømstyrke",
+
+	"block.createaddition.electric_motor": "Elektrisk motor",
+
+	"block.createaddition.alternator": "Dynamo",
+
+	"block.createaddition.creative_energy": "Kreative generator",
+	"block.createaddition.creative_energy.tooltip": "KREATIV_GENERATOR",
+	"block.createaddition.creative_energy.tooltip.summary": "Skaper en uendelig kilde av _⚡_.",
+
+	"block.createaddition.rolling_mill": "Mekanisk valse",
+
+	"block.createaddition.accumulator": "Akkumulator",
+	"block.createaddition.accumulator.tooltip": "AKKUMULATOR",
+	"block.createaddition.accumulator.tooltip.summary": "Akkumulerer elektrisk spenning. _Avviklet og kandidat for fjerning i en fremtidig versjon_.",
+	"block.createaddition.accumulator.tooltip.condition1": "Dra",
+	"block.createaddition.accumulator.tooltip.behaviour1": "Tilfører _⚡_ til _ledninger_ koblet til _kontakter_ markert med en pil pekende vekk fra akkumulatoren.",
+	"block.createaddition.accumulator.tooltip.condition2": "Dytt",
+	"block.createaddition.accumulator.tooltip.behaviour2": "Godtar _⚡_ fra _ledninger_ koblet til _kontakter_ markert med en pil pekende mot akkumulatoren.",
+
+	"block.createaddition.modular_accumulator": "Akkumulator",
+
+	"block.createaddition.portable_energy_interface": "Portabel energiutveksler",
+
+	"block.createaddition.connector": "Liten kontakt",
+	"block.createaddition.connector.tooltip": "KONTAKT",
+	"block.createaddition.connector.tooltip.summary": "Kobler blokker kompatibel med _Forge-energi_ sammen med _ledninger_ for å overføre _⚡_.",
+	"block.createaddition.connector.tooltip.condition1": "Lav strømstyrke",
+	"block.createaddition.connector.tooltip.behaviour1": "Kobles sammen med ledninger for _lav strømstyrke_.",
+	"block.createaddition.connector.tooltip.condition2": "Høyreklikking med en spole med ledning",
+	"block.createaddition.connector.tooltip.behaviour2": "Høyreklikk med en _gullspole_ eller _elektrumspole_ for å skape en _sammenkobling_ mellom opp til 4 kontakter.",
+	"block.createaddition.connector.tooltip.condition3": "Høyreklikk med en skiftenøkkel",
+	"block.createaddition.connector.tooltip.behaviour3": "For å veksle mellom modusene _dra_, _dytt_, og _ingen_.",
+
+	"block.createaddition.small_light_connector": "Liten kontakt med lys",
+	"block.createaddition.small_light_connector.tooltip": "KONTAKT MED LYS",
+	"block.createaddition.small_light_connector.tooltip.summary": "Kobler blokker kompatibel med _Forge-energi_ sammen med _ledninger_ for å overføre _⚡_, og avgir samtidig lys.",
+	"block.createaddition.small_light_connector.tooltip.condition1": "Lav strømstyrke",
+	"block.createaddition.small_light_connector.tooltip.behaviour1": "Kobles sammen med ledninger for _lav strømstyrke_.",
+	"block.createaddition.small_light_connector.tooltip.condition2": "Høyreklikking med en spole med ledning",
+	"block.createaddition.small_light_connector.tooltip.behaviour2": "Høyreklikk med en _gullspole_ eller _elektrumspole_ for å skape en _sammenkobling_ mellom opp til 4 kontakter.",
+	"block.createaddition.small_light_connector.tooltip.condition3": "høyreklikk med en skiftenøkkel",
+	"block.createaddition.small_light_connector.tooltip.behaviour3": "For å veksle mellom modusene _dra_, _dytt_, og _ingen_.",
+
+	"block.createaddition.large_connector": "Stor kontakt",
+	"block.createaddition.large_connector.tooltip": "KONTAKT",
+	"block.createaddition.large_connector.tooltip.summary": "Kobler blokker kompatibel med _Forge-energi_ sammen med _ledninger_ for å overføre _⚡_.",
+	"block.createaddition.large_connector.tooltip.condition1": "Høy strømstyrke",
+	"block.createaddition.large_connector.tooltip.behaviour1": "Kobles sammen med ledninger for _høy strømstyrke_.",
+	"block.createaddition.large_connector.tooltip.condition2": "Høyreklikking med en spole med ledning",
+	"block.createaddition.large_connector.tooltip.behaviour2": "Høyreklikk med en _gullspole_ eller _elektrumspole_ for å skape en _sammenkobling_ mellom opp til 6 kontakter.",
+	"block.createaddition.large_connector.tooltip.condition3": "Høyreklikk med en skiftenøkkel",
+	"block.createaddition.large_connector.tooltip.behaviour3": "For å veklse mellom modusene _dra_, _dytt_, og _ingen_.",
+
+	"block.createaddition.redstone_relay": "Redstonerelé",
+	"block.createaddition.redstone_relay.tooltip": "REDSTONERELE",
+	"block.createaddition.redstone_relay.tooltip.summary": "Lar _⚡_ passere fra _inngangskontakten_ til _utgangskontakten_ når den mottar et konstant _redstone-signal_.",
+	"block.createaddition.redstone_relay.tooltip.condition1": "Lav strømstyrke",
+	"block.createaddition.redstone_relay.tooltip.behaviour1": "Kobles sammen med ledninger for _lav strømstyrke_.",
+	"block.createaddition.redstone_relay.tooltip.condition2": "Dra",
+	"block.createaddition.redstone_relay.tooltip.behaviour2": "Tilfører _⚡_ til _ledninger_ koblet til _kontakten_ markert med en pil pekende vekk fra akkumulatoren.",
+	"block.createaddition.redstone_relay.tooltip.condition3": "Dytt",
+	"block.createaddition.redstone_relay.tooltip.behaviour3": "Godtar _⚡_ fra _ledninger_ koblet til _kontakten_ markert med en pil pekende mot akkumulatoren.",
+
+	"block.createaddition.digital_adapter": "Digital overgang",
+	"block.createaddition.digital_adapter.tooltip": "DIGITAL_OVERGANG",
+	"block.createaddition.digital_adapter.tooltip.summary": "Et _grensesnitt for Computercraft_ som lar datamaskiner derfra å samhandle med _resultattavler_, _hastighetsmålere_, _belastningsmålere_, _vinsjer_, _slangetrommler_, _heisvinsjer_, _mekaniske stempler_, _mekaniske lagrer_, og _rotasjonsregulatorer_.",
+
+	"block.createaddition.chocolate_cake": "Sjokoladekake",
+	"block.createaddition.honey_cake": "Honningkake",
+
+	"block.createaddition.electrum_block": "Elektrumblokk",
+
+	"block.createaddition.biomass_pellet_block": "Biomasseblokk",
+
+	"block.createaddition.seed_oil": "Frøolje",
+	"block.createaddition.bioethanol": "Bioetanol",
+
+	"block.createaddition.barbed_wire": "Piggtråd",
+	"block.createaddition.barbed_wire.tooltip": "PIGGTRÅD",
+	"block.createaddition.barbed_wire.tooltip.summary": "Påfører skade om en beveger seg gjennom den.",
+
+	"block.createaddition.tesla_coil": "Teslaspole",
+
+	"block.createaddition.liquid_blaze_burner": "Flammeskrønt-brenner med sugerør",
+
+	"itemGroup.createaddition.main":"Create Crafts & Additions",
+
+	"createaddition.ponder.tag.electric": "Elektriske forbrukere",
+	"createaddition.ponder.tag.electric.description": "Komponenter som bruker elektrisitet",
+
+	"createaddition.ponder.electric_motor.header": "Generering av rotasjonskraft med elektriske motorer",
+	"createaddition.ponder.electric_motor.text_1": "Elektriske motorer er en kompakt og justerbar kilde for rotasjonskraft",
+	"createaddition.ponder.electric_motor.text_2": "Rull med musehjulet på baksiden for å endre rotasjonshastigheten den gir",
+	"createaddition.ponder.electric_motor.text_3": "Men den elektriske motoren vil kreve elektrisk energi",
+	"createaddition.ponder.electric_motor.text_4": "Motorens elektriske forbruk bestemmes av hvilken rotasjonshastighet den stilles inn på",
+
+	"createaddition.ponder.alternator.header": "Generering av elektrisk energi ved å bruke en dynamo",
+	"createaddition.ponder.alternator.text_1": "Dynamoer er avhengig av minst 32 rotasjoner per minutt for å fungere",
+	"createaddition.ponder.alternator.text_2": "Den genererer da elektrisitet fra rotasjonskraft",
+	"createaddition.ponder.alternator.text_3": "Energiproduksjonen bestemmes av rotasjonshastigheten",
+
+	"createaddition.ponder.rolling_mill.header": "Å valse metaller til staver og ledninger",
+	"createaddition.ponder.rolling_mill.text_1": "Den mekaniske valsen bruker rotasjonskraft for å valse metaller til staver og ledninger",
+	"createaddition.ponder.rolling_mill.text_2": "For å manuelt bruke valsen, så skal gjenstandene, barrene, eller platene som skal valses slippes på toppen av valsen",
+	"createaddition.ponder.rolling_mill.text_3": "Høyreklikk valsen etter en stund for å manuelt hente ut de ferdigvalsete gjenstandene",
+
+	"createaddition.ponder.automated_rolling_mill.header": "Automatisering av den mekaniske valsen",
+	"createaddition.ponder.automated_rolling_mill.text_1": "Den mekaniske valsen kan bli automatisert ved hjelp av belter og funneller",
+	"createaddition.ponder.automated_rolling_mill.text_2": "Inngangsfunnel",
+	"createaddition.ponder.automated_rolling_mill.text_3": "Utgangsfunnel",
+
+	"createaddition.ponder.cc_electric_motor.header": "Å bruke ComputerCraft for å styre en elektrisk motor",
+	"createaddition.ponder.cc_electric_motor.text_1": "En elektrisk motor kan bli kontrollert med ComputerCraft",
+	"createaddition.ponder.cc_electric_motor.text_2": "Koble til motoren med «peripheral.wrap(side)»",
+	"createaddition.ponder.cc_electric_motor.text_3": "Få tak i API-dokumentasjonen med å bruke kommandoen «/cca_api» i nettpraten",
+
+	"createaddition.ponder.tesla_coil.header": "Å bruke en teslaspole for å lade opp gjenstander",
+	"createaddition.ponder.tesla_coil.text_1": "Teslaspolen vil lade opp gjenstander under seg.",
+	"createaddition.ponder.tesla_coil.text_2": "Den vil lade opp gjenstander som bruker Forge-energi i tillegg andre ting!",
+
+	"createaddition.ponder.tesla_coil_hurt.header": "Farlige teslaspoler",
+	"createaddition.ponder.tesla_coil_hurt.text_1": "En teslaspole kan også kunne påføre skade på spillere og skapninger i nærheten",
+	"createaddition.ponder.tesla_coil_hurt.text_2": "Dette vil aktiveres ved et konstant redstone-signal",
+	"createaddition.ponder.tesla_coil_hurt.text_3": "Forbered deg på å bli sjokket!",
+
+	"createaddition.ponder.liquid_blaze_burner.header": "Drivstoff i væskeform",
+	"createaddition.ponder.liquid_blaze_burner.text_1": "Å gi en flammeskrønt-brenner et sugerør …",
+	"createaddition.ponder.liquid_blaze_burner.text_2": "… vil la den akseptere drivstoff i væskeform fra bøtter …",
+	"createaddition.ponder.liquid_blaze_burner.text_3": "… eller fra væskerør.",
+
+	"createaddition.ponder.modular_accumulator.header": "Multiblokk-akkumulatoren",
+	"createaddition.ponder.modular_accumulator.text_1": "Akkumulatoren er en struktur bygd opp av flere blokker satt sammen",
+	"createaddition.ponder.modular_accumulator.text_2": "Den kan oppbevare store mengder elektrisk energi.",
+	"createaddition.ponder.modular_accumulator.text_3": "Sett en kontakt til å være inngang …",
+	"createaddition.ponder.modular_accumulator.text_4": "… og en annen kontakt til være utgang.",
+	"createaddition.ponder.modular_accumulator.text_5": "For å forbedre kompatibiliteten til andre modifikasjoner, så vil akkumulatoren aktivt avgi elektrisk Forge-energi til blokker plassert oppå akkumulatoren.",
+
+	"createaddition.display_source.digital_adapter_source": "Digital adapter",
+	"createaddition.display_source.digital_adapter_source_digital_adapter": "Digital adapter",
+	"createaddition.display_source.modular_accumulator": "Akkumulator",
+	"createaddition.display_source.accumulator.progress_bar": "Statuslinje",
+	"createaddition.display_source.accumulator.percent": "Prosentdel",
+	"createaddition.display_source.accumulator.current": "Strømnivå i ⚡",
+	"createaddition.display_source.accumulator.max": "Total kapasitet",
+	"createaddition.display_source.accumulator.remaining": "Gjenværende plass i ⚡",
+	"createaddition.display_source.accumulator.display": "Velg informasjon å vise:",
+
+	"createaddition.ponder.pei_transfer.header": "Energiutveksling gjennom energiutvekslere",
+	"createaddition.ponder.pei_transfer.text_1": "Akkumulatorer på en innretninger i bevegelse kan ikke koble seg på stasjonære kontakter.",
+	"createaddition.ponder.pei_transfer.text_2": "Men denne komponenten kan samhandle med akkumulatorene i innretningen uten å måtte demontere innretningen.",
+	"createaddition.ponder.pei_transfer.text_3": "Plasser en sekundær en med en avstand på 1 til 2 blokker imellom hverandre",
+	"createaddition.ponder.pei_transfer.text_4": "Når de passerer hverandre, så vil de stoppe innretningen og utveksle gjenstander",
+	"createaddition.ponder.pei_transfer.text_5": "Mens de er sammenkoblet, så vil utvekslerne representere ALLE akkumulatorer i innretningen",
+	"createaddition.ponder.pei_transfer.text_6": "Energi kan nå bli overført begge veier gjennom energiutveklseren alt etter hva kontakten på den stasjonære utveksleren er satt på",
+	"createaddition.ponder.pei_transfer.text_7": "Hvis ikke noe energi har blitt overført på en stund, så vil innretningen fortsette på ferden sin.",
+
+	"createaddition.ponder.pei_redstone.header": "Redstonekontroll av portable energiutvekslere",
+	"createaddition.ponder.pei_redstone.text_1": "Et konstant redstone-signal vil hindre den stasjonære utveksleren fra å utveksle energi.",
+
+	"createaddition.schedule.condition.energy_threshold": "Energibetingelse",
+	"createaddition.schedule.condition.threshold.unit": "K⚡",
+	"createaddition.schedule.condition.threshold.energy": "Energi",
+
+	"death.attack.barbed_wire": "%1$s prøvde å krysse piggtråd",
+  	"death.attack.barbed_wire.player": "%1$s prøvde å krysse piggtråd i kamp mot %2$s",
+
+	"effect.createaddition.shocking":"Sjokket",
+	"death.attack.tesla_coil": "%1$s mottok et dødbringende sjokk",
+  	"death.attack.tesla_coil.player": "%1$s mottok et dødbringende sjokk i kamp mot %2$s",
+  	"effect.createaddition.shocking.description": "Forårsaker ekstremt nedsatt bevegelsesevne",
+
+	"createaddition.subtitle.loud_zap": "Teslaspole sjokker",
+	"createaddition.subtitle.little_zap": "Teslaspole spraker"
+}
