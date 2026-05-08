@@ -79,4 +79,9 @@ const registerTFGFluids = (event) => {
 		.temperature(236)
 		.noBlock()
 
+	event.create('tfg:hormone_rich_urine')
+		.thinTexture(0xd4c84d)
+		.bucketColor(0xd4c84d)
+		.noBlock()
+
 }

@@ -88,5 +88,37 @@ const registerTFGMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_MATERIAL_RECIPES, GTMaterialFlags.EXPLOSIVE)
 		.macerateInto('gtceu:polycaprolactam')
 		.color(0x000000)
+
+	event.create('tfg:crystalline_equilin')
+		.dust()
+		.formula('C18H20O2')
+		.color(0xF5A9B8)
+		.secondaryColor(0xFFFFFF)
+
+	event.create('tfg:crystalline_testosterone')
+		.dust()
+		.formula('C19H28O2')
+		.color(0x5BCEFA)
+		.secondaryColor(0xFFFFFF)
+
+	event.create('tfg:estrogen_sulfate_concentrate')
+		.liquid()
+		.formula('C18H24O5S')
+		.color(0x5d4037)
+
+	event.create('tfg:equilin_solution')
+		.liquid()
+		.formula('C18H20O2')
+		.color(0xf4e4a6)
+
+	event.create('tfg:testosterone_lipid_concentrate')
+		.liquid()
+		.formula('C19H28O2')
+		.color(0xa86a1d)
+
+	event.create('tfg:testosterone_suspension')
+		.liquid()
+		.formula('C19H28O2')
+		.color(0xe8e6b0)
 	// #endregion
 }

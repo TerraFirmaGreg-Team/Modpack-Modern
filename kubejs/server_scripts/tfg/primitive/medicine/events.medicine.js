@@ -102,3 +102,33 @@ powderTypes.forEach(type => {
 		server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
 	})
 })
+
+ItemEvents.entityInteracted('minecraft:bucket', (event) => {
+	const { item, player, server, target } = event;
+
+	if (target.type !== 'tfc:horse') return;
+	if (typeof target.getPregnantTime !== 'function' || target.getPregnantTime() <= 0) return;
+
+	if (!player.isCreative()) {
+		item.shrink(1);
+	}
+
+	player.give('tfg:hormone_rich_urine_bucket');
+	player.swing();
+	server.runCommandSilent(`playsound minecraft:item.bucket.fill player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+	event.cancel();
+})
+
+ItemEvents.entityInteracted((event) => {
+	const { item, player, server, target } = event;
+	if (!(item.id.includes('knife'))) return;
+
+	if (target.type !== 'tfc:cow') return;
+	const gender = typeof target.getGender === 'function' ? String(target.getGender()).toLowerCase() : '';
+    if (gender !== 'male') return;
+
+	player.give('tfg:androgenic_tissue');
+	player.swing();
+	server.runCommandSilent(`playsound minecraft:item.axe.strip player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`);
+	event.cancel();
+})

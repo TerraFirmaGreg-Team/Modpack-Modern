@@ -571,6 +571,101 @@ function registerTFGMedicineRecipes(event) {
 
 	//#endregion
 
+	// #region Hormones
+
+    const crystallineEquilin = GTMaterials.get('tfg:crystalline_equilin');
+	const crystallineTestosterone = GTMaterials.get('tfg:crystalline_testosterone');
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:estrogen_sulfate_concentrate', 250), Fluid.of('tfg:hormone_rich_urine', 1000))
+		.heated()
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/estrogen_sulfate_concentrate')
+
+	event.recipes.greate.mixing(Fluid.of('tfg:equilin_solution', 500), [
+		Fluid.of('tfg:estrogen_sulfate_concentrate', 250),
+		Fluid.of('minecraft:water', 250)
+	])
+		.recipeTier(1)
+		.heated()
+		.id('tfg:greate/mixing/equilin_solution')
+
+	event.recipes.vintageimprovements.pressurizing(ChemicalHelper.get(TagPrefix.dust, crystallineEquilin, 1), Fluid.of('tfg:equilin_solution', 250))
+		.heated()
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/pressurizing/crystalline_equilin')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#forge:wax', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1), ChemicalHelper.get(TagPrefix.dust, crystallineEquilin, 1)], Fluid.of('tfc:spring_water', 250))
+		.outputItem('2x tfg:estrogen_pill')
+		.id('tfg:mixing_bowl/estrogen_pill')
+
+	event.recipes.vintageimprovements.pressurizing(Fluid.of('tfg:testosterone_lipid_concentrate', 250), 'tfg:androgenic_tissue')
+		.heated()
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/pressurizing/testosterone_lipid_concentrate')
+
+	event.recipes.greate.mixing(Fluid.of('tfg:testosterone_suspension', 500), [
+		Fluid.of('tfg:testosterone_lipid_concentrate', 250),
+		Fluid.of('minecraft:water', 250)
+	])
+		.recipeTier(1)
+		.heated()
+		.id('tfg:greate/mixing/testosterone_suspension')
+
+	event.recipes.vintageimprovements.vacuumizing(ChemicalHelper.get(TagPrefix.dust, crystallineTestosterone, 1), Fluid.of('tfg:testosterone_suspension', 250))
+		.heated()
+		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/crystalline_testosterone')
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['#forge:wax', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1), ChemicalHelper.get(TagPrefix.dust, crystallineTestosterone, 1)], Fluid.of('tfc:spring_water', 250))
+		.outputItem('2x tfg:testosterone_pill')
+		.id('tfg:mixing_bowl/testosterone_pill')
+
+	event.recipes.gtceu.distillery('tfg:gtceu/distillery/estrogen_sulfate_concentrate')
+		.inputFluids(Fluid.of('tfg:hormone_rich_urine', 1000))
+		.outputFluids(Fluid.of('tfg:estrogen_sulfate_concentrate', 250))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:gtceu/chemical_reactor/crystalline_equilin')
+		.inputFluids(Fluid.of('tfg:estrogen_sulfate_concentrate', 250), Fluid.of('minecraft:water', 250))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, crystallineEquilin, 1))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.extractor('tfg:gtceu/extractor/testosterone_lipid_concentrate')
+		.itemInputs('tfg:androgenic_tissue')
+		.outputFluids(Fluid.of('tfg:testosterone_lipid_concentrate', 250))
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:gtceu/chemical_reactor/crystalline_testosterone')
+		.inputFluids(Fluid.of('tfg:testosterone_lipid_concentrate', 250), Fluid.of('minecraft:water', 250))
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, crystallineTestosterone, 1))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+        
+	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/estrogen_tablet`)
+		.circuit(4)
+		.inputFluids(Fluid.of('gtceu:distilled_water', 50))
+		.itemOutputs('2x tfg:estrogen_tablet')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', ChemicalHelper.get(TagPrefix.dust, GTMaterials.get('tfg:crystalline_equilin'), 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+        
+	event.recipes.gtceu.mixer(`tfg:gtceu/mixer/testosterone_tablet`)
+		.circuit(4)
+		.inputFluids(Fluid.of('gtceu:distilled_water', 50))
+		.itemOutputs('2x tfg:testosterone_tablet')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', ChemicalHelper.get(TagPrefix.dust, GTMaterials.get('tfg:crystalline_testosterone'), 1), ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	//#endregion
+
 	//#region mixing bowl recipes for salvos
 
 	const salvoTypes = [
