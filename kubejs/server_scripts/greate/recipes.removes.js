@@ -80,12 +80,10 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
 	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
 
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_cocoa' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb_block'})
 	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
 
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_cocoa' })
 	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_honeycomb' })
 	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_honeycomb_block'})
 	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/quartz_sand_from_sand' })
