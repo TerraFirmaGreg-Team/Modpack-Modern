@@ -15,6 +15,7 @@
   "item.sns.metal.horseshoes.steel": "Stalowa podkowa",
   "item.sns.mob_net": "Siatka na moby",
   "item.sns.ore_sack": "Worek na rudę",
+  "item.sns.pack_frame": "Stelaż do plecaka",
   "item.sns.quiver": "Kołczan",
   "item.sns.red_steel_toe_hiking_boots": "Obuwie ochronne z czerwonej stali",
   "item.sns.reinforced_fabric": "Wzmocniona tkanina",
@@ -29,9 +30,12 @@
   "sns.disabled": "Nieaktywne",
   "sns.enabled": "Aktywny",
   "sns.extra_fall_distance": "Odległość upadku",
+  "sns.key.openItemContainer": "Otwórz pojemnik",
   "sns.stack_name.mob_net.with_mob": "%s (%s)",
   "sns.status.mob_net.cannot_capture_generic": "Nie możesz przechwycić %ss",
+  "sns.status.mob_net.cannot_capture_players": "Nie możesz chwytać graczy",
   "sns.tooltip.horseshoe.modifier": "Gdy na koniu:",
   "sns.tooltip.item_container.allowed_size": "Największy rozmiar przedmiotu: %s",
+  "sns.tooltip.item_container.slot_capacity": "Pojemność miejsca: %s",
   "sns.tooltip.item_container.slot_count": "Liczba miejsc: %s"
 }

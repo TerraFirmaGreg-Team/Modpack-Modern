@@ -3,7 +3,9 @@
 const registerWABBlockTags = (event) => {
 	global.WAB_DISABLED_BLOCKS.forEach(block => {
 		event.removeAllTagsFrom(block)
-		event.add('c:hidden_from_recipe_viewers', block)
+	})
+	global.WAB_DISABLED_ITEMS.forEach(item => {
+		event.removeAllTagsFrom(item)
 	})
 
 	// don't put sand layers on these, otherwise they'll fall through

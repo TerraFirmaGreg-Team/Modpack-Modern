@@ -144,6 +144,10 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:mars_soil', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_kaolin_mycelium')
 
+	event.add('tfc:kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
+
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_plants')

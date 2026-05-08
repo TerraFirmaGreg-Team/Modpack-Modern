@@ -38,6 +38,8 @@ function registerTFGRepairRecipes(event) {
 	const SPECIAL_REPAIRS = [
 		{ item: "grapplemod:grapplinghook", material: "gtceu:repair_kit_wrought_iron" },
 
+		{ item: "sns:hiking_boots", material: "sns:leather_strip" },
+
 		{ item: "constructionwand:stone_wand", material: "gtceu:repair_kit_copper" },
 		{ item: "constructionwand:iron_wand", material: "gtceu:repair_kit_wrought_iron" },
 		{ item: "constructionwand:diamond_wand", material: "gtceu:repair_kit_blue_steel" },

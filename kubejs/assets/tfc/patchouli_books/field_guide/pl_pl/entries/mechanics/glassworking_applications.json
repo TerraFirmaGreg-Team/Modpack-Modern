@@ -375,14 +375,14 @@
         }
       ],
       "text": "The availability of glass colors. 'C' is clear, 'T' is tinted. Colors can only be crafted with certain glass batches.",
-      "title": "Glass Color Availability",
+      "title": "Dostępność kolorów szkła",
       "legend": [
         {
           "text": "Może być wytworzony",
           "color": "0x3eb340"
         },
         {
-          "text": "Cannot be Crafted",
+          "text": "Nie może zostać wytworzone",
           "color": "0xb33e3e"
         },
         {

@@ -861,6 +861,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:steel_whisk', [GTMaterials.Steel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_steel_whisk' })
 	
 	event.shaped('gtceu:aluminium_whisk', [
@@ -883,6 +884,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:aluminium_whisk', [GTMaterials.Aluminium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_aluminium_whisk' })
 	
 	event.shaped('gtceu:stainless_steel_whisk', [
@@ -905,6 +907,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:stainless_steel_whisk', [GTMaterials.StainlessSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_stainless_steel_whisk' })
 	
 	event.shaped('gtceu:titanium_whisk', [
@@ -927,6 +930,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:titanium_whisk', [GTMaterials.Titanium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_titanium_whisk' })
 		
 	event.shaped('gtceu:tungsten_steel_whisk', [
@@ -949,6 +953,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:tungsten_steel_whisk', [GTMaterials.TungstenSteel, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_tungsten_steel_whisk' })
 		
 	event.shaped('gtceu:rhodium_plated_palladium_whisk', [
@@ -971,6 +976,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:rhodium_plated_palladium_whisk', [GTMaterials.RhodiumPlatedPalladium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_rhodium_plated_palladium_whisk' })
 		
 	event.shaped('gtceu:naquadah_alloy_whisk', [
@@ -993,6 +999,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:naquadah_alloy_whisk', [GTMaterials.NaquadahAlloy, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_naquadah_alloy_whisk' })
 		
 	event.shaped('gtceu:darmstadtium_whisk', [
@@ -1015,6 +1022,7 @@ function registerGreateRecipes(event) {
 		.removePreviousMaterialInfo()
 		.addMaterialInfo(true)
 
+	TFGHelpers.registerMaterialInfo('gtceu:darmstadtium_whisk', [GTMaterials.Darmstadtium, 4]);
 	event.remove({ id: 'gtceu:extractor/extract_darmstadtium_whisk' })
 
 	// #endregion

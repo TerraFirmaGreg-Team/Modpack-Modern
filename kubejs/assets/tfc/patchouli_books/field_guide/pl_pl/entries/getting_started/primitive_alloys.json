@@ -26,7 +26,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Brąz Bizmutowy",
+			"title": "Brąz bizmutowy",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 30 % : $(thing)Cynku$()$(li)50 - 65 % : $(thing)Miedzi$()$(li)10 - 20 % : $(thing)Bismutu$()$(br2)"
 		},
@@ -53,14 +53,14 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
-			"title": "Różowe Złoto",
+			"title": "Różowe złoto",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)15 - 30 % : $(thing)Miedzi$()$(li)70 - 85 % : $(thing)Złota$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Srebro wysokiej próby",
+			"title": "Srebro próby 925",
 			"link_recipes": false,
 			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedzi$()$(li)60 - 80 % : $(thing)Srebra$()$(br2)"
 		}

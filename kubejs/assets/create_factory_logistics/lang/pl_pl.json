@@ -19,6 +19,7 @@
   "create_factory_logistics.ponder.mixer_upkeep.text_2": "Aby palnik płomienny był karmiony tylko w razie potrzeby",
   "create_factory_logistics.ponder.mixer_upkeep.text_3": "Po otrzymaniu zamówienia, przełącznik odczyta nowy stan i zareaguje",
   "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "Umieść ciecz do monitorowania",
+  "entity.create_factory_logistics.composite_package": "Pakiet złożony",
   "create.item_attributes.is_fluid": "jest %1$s",
   "create.item_attributes.is_fluid.inverted": "nie jest %1$s",
   "create.item_attributes.is_fluid_no_nbt": "jest %1$s (brak NBT)",

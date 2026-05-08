@@ -109,6 +109,10 @@ function registerTFGPrimitiveBlockTags(event) {
 	//added for QOL but doesnt harvest anything
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.add('tfg:decorative_vases/generated', `tfg:decorative_vase/generated/${color}`)
+	})
 }
 
 function registerTFGPrimitiveFluidTags(event) {

@@ -47,7 +47,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "hevea",
-			"title": "Hevea",
+			"title": "Kauczukowiec",
 			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 26.2°C$(br)$(thing)Minimum Rainfall$(): 390$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"

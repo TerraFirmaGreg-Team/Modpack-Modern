@@ -168,7 +168,6 @@ const registerSingleGroups = (event) => {
         '#tfc:scribing_tables',
         '#tfc:sewing_tables',
         '#tfc:jar_shelves',
-        '#tfc:support_beams',
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
@@ -304,6 +303,10 @@ const registerMultiGroups = (event) => {
             '#forge:normal_restrictive_pipes',
             '#forge:large_restrictive_pipes',
             '#forge:huge_restrictive_pipes'
+        ]},
+        { group_name: 'support_beams', tags: [
+            "#tfc:support_beams",
+            "#beneath:support_beams"
         ]}
     ]
 

@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns",
+			"title": "Rozpadające się jaskinie",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Ash Forest",
+			"title": "Popiołowy las",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes",
+			"title": "Kry lawowe",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],

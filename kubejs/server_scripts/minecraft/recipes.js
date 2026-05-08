@@ -478,7 +478,6 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тигель, cauldron
 
 	event.shaped('minecraft:cauldron', [
-		'A A',
 		'ABA',
 		'AAA'
 	], {
@@ -487,11 +486,12 @@ const registerMinecraftRecipes = (event) => {
 	}).id('gtceu:shaped/cauldron')
 
 	event.recipes.gtceu.assembler('cauldron')
-		.itemInputs('7x #forge:plates/iron')
+		.itemInputs('5x #forge:plates/iron')
 		.circuit(10)
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	//#endregion
 
