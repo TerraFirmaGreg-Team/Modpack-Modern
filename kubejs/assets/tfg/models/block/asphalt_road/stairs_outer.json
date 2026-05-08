@@ -1,0 +1,8 @@
+{
+    "parent": "rnr:block/path_outer_stairs",
+    "textures": {
+        "side": "tfg:block/asphalt_road/block",
+        "top": "tfg:block/asphalt_road/block",
+        "bottom": "tfg:block/asphalt_road/block"
+    }
+}

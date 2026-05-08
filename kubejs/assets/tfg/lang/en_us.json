@@ -1488,10 +1488,12 @@
 	"block.tfg.wood.rope_ladder.willow": "Willow Rope Ladder",
 	"block.tfg.fluid.asphalt_mix": "Asphalt Mix",
 	"block.tfg.asphalt_road": "Asphalt Road",
-	"block.tfg.pouring_asphalt_road": "Pouring Asphalt",
-	"block.tfg.hot_asphalt_road": "Hot Asphalt",
+	"block.tfg.asphalt_mix": "Asphalt Mix (Poured)",
+	"block.tfg.asphalt_road_hot": "Hot Asphalt",
 	"block.tfg.asphalt_road_stairs": "Asphalt Road Stairs",
 	"block.tfg.asphalt_road_slab": "Asphalt Road Slab",
+	"item.tfg.asphalt_road_stencil_lines": "Asphalt Road Marking Stencil (Lines)",
+	"item.tfg.asphalt_road_stencil_cross": "Asphalt Road Marking Stencil (Cross)",
 	"tfg.block_entity.artisan_table": "Artisan Table",
 	"tfg.block_entity.large_nest_box": "Large Nest Box",
 	"effect.tfg.arsenicosis_warning": "Arsenicosis",
@@ -6967,5 +6969,7 @@
 	"quests.tfg_tips.tools_tips.concrete_roads.desc": "&6Wet concrete mix&r can be applied to base course to create roads which give a &b&l30%%&r&r bonus to movement speed. \n\n&4Be careful&r when creating concrete roads. There are a lot of rules to follow to make sure you don't end up with cracked or ruined surfaces. Consult the &3Field Guide&r for detailed instructions.",
 	"quests.tfg_tips.tools_tips.swim_gear.title": "Swimming Gear",
 	"quests.tfg_tips.tools_tips.swim_gear.subtitle": "Swimsuit not included",
-	"quests.tfg_tips.tools_tips.swim_gear.desc": "The &6Snorkel&r provides you with an extra 15 seconds of \"breath\" underwater, while the &aFlippers&r substantially increase your swim speed."
+	"quests.tfg_tips.tools_tips.swim_gear.desc": "The &6Snorkel&r provides you with an extra 15 seconds of \"breath\" underwater, while the &aFlippers&r substantially increase your swim speed.",
+	"item.tfg.asphalt_road_stencil_arrow": "Road Marking Stencil (Arrow)",
+	"config.jade.plugin_tfg.hot_asphalt_info": "Hot asphalt road"
 }

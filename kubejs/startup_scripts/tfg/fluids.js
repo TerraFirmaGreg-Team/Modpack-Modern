@@ -79,4 +79,10 @@ const registerTFGFluids = (event) => {
 		.temperature(236)
 		.noBlock()
 
+	// Asphalt Mix
+	event.create('tfg:asphalt_mix')
+		.thinTexture(0x262628)
+		.bucketColor(0x262628)
+		.temperature(420)
+		.noBlock()
 }

@@ -1,0 +1,38 @@
+{
+    "parent": "block/block",
+    "textures": {"decal": "tfg:block/asphalt_road/mask_arrow_north"},
+    "elements": [{
+        "from": [
+            -0.01,
+            14.992,
+            -0.01
+        ],
+        "to": [
+            16.01,
+            15.015,
+            16.01
+        ],
+        "faces": {
+            "up": {
+                "uv": [
+                    0,
+                    0,
+                    16,
+                    16
+                ],
+                "texture": "#decal",
+                "tintindex": 4
+            },
+            "down": {
+                "uv": [
+                    0,
+                    0,
+                    16,
+                    16
+                ],
+                "texture": "#decal",
+                "tintindex": 4
+            }
+        }
+    }]
+}
