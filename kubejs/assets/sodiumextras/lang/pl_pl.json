@@ -51,6 +51,7 @@
   "sodium.extras.options.displayfps.title": "Wyświetl FPS",
   "sodium.extras.options.dynlights.entities.title": "Użyj dla bytów",
   "sodium.extras.options.dynlights.page": "Dynamiczne światła",
+  "sodium.extras.options.dynlights.speed.title": "Prędkość aktualizacji świateł",
   "sodium.extras.options.fastbeds.title": "Używaj szybkich łóżek",
   "sodium.extras.options.fastchest.desc": "Jeśli włączone, zastępuje model skrzyń statycznym modelem, jak normalny blok. Psuje animację, ale zmniejsza obciążenie gry w otoczeniu wielu skrzyń.\n\nOpcja nie zmienia nic, jeśli masz zainstalowany flywheel i uruchomiłeś porcjowanie lub instancjonowanie backendu",
   "sodium.extras.options.fastchest.title": "Użyj szybkich skrzyń",
