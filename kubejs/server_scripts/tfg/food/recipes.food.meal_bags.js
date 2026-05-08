@@ -1,8 +1,14 @@
 "use strict";
 
+
+/**
+ * This file is for recipes related to meal bags and calorie paste. 
+ * And recipes for associated materials such as foil packs, dry ice, etc.
+ */
 function registerTFGMealBagRecipes(event) {
 
-	// Food related
+	//#region Materials
+
 	event.recipes.gtceu.forming_press('tfg:forming_press/foil_pack')
 		.itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
 		.itemOutputs('1x tfg:foil_pack')
@@ -87,4 +93,31 @@ function registerTFGMealBagRecipes(event) {
 	})
 
 	TFGHelpers.registerMaterialInfo('tfg:clean_foil_pack', [GTMaterials.Aluminium, 0.25, GTMaterials.Polyethylene, 0.25])
+
+	//#endregion
+	//#region Food Recipes
+
+	// Calorie Paste
+	global.processorRecipeText(event, 'calorie_paste', 100, 512, "tfg.food_recipe.freeze_drying", {
+		circuit: 8,
+		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
+		itemOutputs: ['tfg:food/calorie_paste'],
+		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
+		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried')
+	});
+
+	// Meal Bags
+	for (let i = 1; i <= 4; i++) {
+		global.processorRecipeText(event, `meal_bag/${i}`, 100, 120, "tfg.food_recipe.freeze_drying", {
+			circuit: 9 + i,
+			itemInputs: [`${i}x #tfg:foods/usable_in_meal_bag`, `2x tfg:foil_pack`, `tfg:dry_ice`],
+			itemOutputs: ['2x tfg:food/meal_bag'],
+			itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+				(food => food.hunger(4).saturation(1.1).microplastics(0.25).decayModifier(4.5)), [
+				(portion) => portion.nutrientModifier(1).saturationModifier(0.8).waterModifier(0)
+			]).addTrait('tfg:freeze_dried')
+		});
+	};
+
+	//#endregion
 }

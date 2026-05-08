@@ -837,18 +837,6 @@ function registerTFCFluidTags(event) {
     event.add("tfc:ingredients", "tfc:spring_water");
 	event.add('tfc:drinkables', 'tfc:spring_water')
 
-    event.add('tfg:alcohols', '#tfc:alcohols')
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_beer");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_cider");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_rum");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_sake");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_vodka");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_corn_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_rye_whiskey");
-    event.add("tfg:alcohols", "tfcagedalcohol:aged_mead");
-    event.add("tfg:alcohols", "tfc_gourmet:nalivka");
-
     // Добавляем тег для скрытия в EMI
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth");
     event.add("c:hidden_from_recipe_viewers", "tfc:metal/bismuth_bronze");

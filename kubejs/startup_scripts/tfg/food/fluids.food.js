@@ -4,15 +4,15 @@
 const registerTFGFoodFluids = (event) => {
 
 	/**
-	 * Function to create vintage alcohol fluids.
-	 * @param {*} name Alcohol name, example: "whiskey"
+	 * Function to create alcohol fluids.
+	 * @param {*} id Alcohol ID, example: "tfg:whiskey"
 	 * @param {*} color Color of the fluid in hexadecimal, example: 0x392e14
 	 */
-	function createVintageAlcohol(name, color) {
+	function createAlcohol(id, color) {
 
-		if (!name || !color) return;
+		if (!id || !color) return;
 
-		event.create(`tfg:vintage_${name}`)
+		event.create(id)
 			.thinTexture(color)
 			.bucketColor(color)
 			.noBlock()
@@ -20,6 +20,14 @@ const registerTFGFoodFluids = (event) => {
 	};
 
 	global.ALCOHOLS.forEach(alcohol => {
-		createVintageAlcohol(alcohol.name, alcohol.color);
+		if (alcohol.id && alcohol.genBase && alcohol.color) {
+			createAlcohol(alcohol.id, alcohol.color);
+		}
+		if (alcohol.agedId && alcohol.genAged && alcohol.color) {
+			createAlcohol(alcohol.agedId, alcohol.color);
+		}
+		if (alcohol.vintageId && alcohol.genVintage && alcohol.color) {
+			createAlcohol(alcohol.vintageId, alcohol.color);
+		}
 	});
 };

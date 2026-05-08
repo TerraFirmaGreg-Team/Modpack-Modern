@@ -238,27 +238,34 @@ global.generateAllJamRecipes = function(event, fruitId, fruitName, jar, unsealed
  * @param {number} FluidQty The quantity of the input fluid.
  * @param {Item} inputItem The item ID of the food item to be boiled.
  * @param {Item} outputItem The item ID of the resulting boiled food item.
- * @param {boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
- * @param {boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
- * @param {number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} genPotRecipe Whether to generate pot recipes. Defaults to `true`.
+ * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match. Defaults to `true`.
+ * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match. Defaults to `true`. Defaults to `true`.
+ * @param {Number|null} circuit The circuit value for the processor recipe.
  */
-global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit) {
+global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit) {
+	genPotRecipe = genPotRecipe !== false ? true : false;
+	genVatRecipe = genVatRecipe !== false ? true : false;
+	genProcessorRecipe = genProcessorRecipe !== false ? true : false;
+
 	if (!inputFluid || !fluidQty || !inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFluidBoilingFoodRecipes: inputFluid=${inputFluid}, FluidQty=${fluidQty}, inputItem=${inputItem}, outputItem=${outputItem}`);
 	}
 
-	for (let i = 1; i <= 5; i++) {
-		event.recipes.tfc.pot(
-			Array(i).fill(TFC.ingredient.notRotten(inputItem)),
-			TFC.fluidStackIngredient(inputFluid, fluidQty * i),
-			500,
-			200
-			)
-			.itemOutput(TFC.isp.of(`${i}x ${outputItem}`).copyFood()
-		).id(`tfg:pot/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}_${i}`);
+	if (genPotRecipe) {
+		for (let i = 1; i <= 5; i++) {
+			event.recipes.tfc.pot(
+				Array(i).fill(TFC.ingredient.notRotten(inputItem)),
+				TFC.fluidStackIngredient(inputFluid, fluidQty * i),
+				500,
+				200
+				)
+				.itemOutput(TFC.isp.of(`${i}x ${outputItem}`).copyFood()
+			).id(`tfg:pot/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}_${i}`);
+		}
 	}
 
-	if (genVatRecipe === true) {
+	if (genVatRecipe) {
 		event.recipes.firmalife.vat()
 			.inputFluid(TFC.fluidStackIngredient(inputFluid, fluidQty))
 			.inputItem(TFC.ingredient.notRotten(inputItem))
@@ -268,7 +275,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			.id(`tfg:vat/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`);
 	}
 
-	if (genProcessorRecipe === true) {
+	if (genProcessorRecipe) {
 		let processorParameters = {
 			itemInputs: [inputItem],
 			fluidInputs: [`${inputFluid} ${fluidQty}`],
@@ -276,7 +283,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			itemOutputProvider: TFC.isp.of(outputItem).copyFood()
 		};
 		if (circuit !== null) processorParameters.circuit = circuit;
-		let a = global.processorRecipe(event, `tfg:${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`, 100, 8, processorParameters);
+		let a = global.processorRecipe(event, `${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`, 100, 8, processorParameters);
 	}
 };
 
@@ -286,15 +293,16 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
  * @param {*} event 
  * @param {Item} inputItem The item ID of the food item to be boiled.
  * @param {Item} outputItem The item ID of the resulting boiled food item.
- * @param {boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
- * @param {boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
- * @param {number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
+ * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
+ * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
+ * @param {Number|null} circuit The circuit value for the processor recipe.
  */
-global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit) {
+global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateWaterBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
-	global.generateFluidBoilingFoodRecipes(event, '#tfg:clean_water', 100, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit);
+	global.generateFluidBoilingFoodRecipes(event, '#tfg:clean_water', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit);
 };
 
 /**
@@ -303,15 +311,16 @@ global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, 
  * @param {*} event 
  * @param {Item} inputItem The item ID of the food item to be boiled.
  * @param {Item} outputItem The item ID of the resulting boiled food item.
- * @param {boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
- * @param {boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
- * @param {number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} genPotRecipe Whether to also generate a pot recipe to match.
+ * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
+ * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
+ * @param {Number|null} circuit The circuit value for the processor recipe.
  */
-global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit) {
+global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateOilBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
-	global.generateFluidBoilingFoodRecipes(event, '#firmalife:oils', 100, inputItem, outputItem, genVatRecipe, genProcessorRecipe, circuit);
+	global.generateFluidBoilingFoodRecipes(event, '#firmalife:oils', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit);
 };
 
 //#endregion
@@ -323,21 +332,180 @@ global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, ge
  * @param {*} event
  * @param {Item} inputItem The item ID of the food item to be cooked.
  * @param {Item} outputItem The item ID of the resulting cooked food item.
- * @param {boolean|null} disableGrilling Disables generating a `tfc.heating` recipe. 
+ * @param {Boolean|null} genOvenRecipe Wether to generate a GT oven recipe. Default `true`.
+ * @param {Boolean|null} genHeatingRecipe Wether to generate heating recipes. Grilling, fire pit, oven. Default `true`.
+ * @param {Boolean|null} genFirmalifeOvenRecipe Wether to generate a firmalife oven recipe. Standalone oven recipe for things like pizzas. Default `false`.
  */
-global.generateFoodCookingRecipes = function(event, inputItem, outputItem, disableGrilling) {
+global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOvenRecipe, genHeatingRecipe, genFirmalifeOvenRecipe) {
+	genOvenRecipe = genOvenRecipe !== false ? true : false;
+	genHeatingRecipe = genHeatingRecipe !== false ? true : false;
+	genFirmalifeOvenRecipe = genFirmalifeOvenRecipe === true ? true : false;
+
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFoodCookingRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	}
 
-	global.cookingRecipe(event, `tfg:${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem);
+	if (genOvenRecipe) {
+		global.cookingRecipe(event, `${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem);
+	}
 
-	if (disableGrilling) return;
+	if (genHeatingRecipe) {
+		event.recipes.tfc.heating(TFC.ingredient.notRotten(inputItem), 200)
+			.resultItem(TFC.isp.of(outputItem).copyFood())
+			.id(`tfg:heating/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
+	}
 
-	event.recipes.tfc.heating(TFC.ingredient.notRotten(inputItem), 200)
-		.resultItem(TFC.isp.of(outputItem).copyFood())
-		.id(`tfg:heating/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
-
+	if (genFirmalifeOvenRecipe) {
+		event.recipes.firmalife.oven(
+			inputItem,
+			300,
+			200,
+			TFC.isp.of(outputItem).copyFood()
+		).id(`tfg:firmalife_oven/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
+	}
 };
 
 //#endregion
+//#region Alcohol Generator
+
+/**
+ * Generates a set of recipes for alcohol production, including processor and barrel recipes for base, aged, and vintage alcohols.
+ * @param {*} event 
+ * @param {Item|Item<tag>} ingredient Ingredient used for the base alcohol recipe.
+ * @param {Fluid} baseId Fluid ID for the base alcohol. Required if `genBaseProcessorRecipe` or `genBaseBarrelRecipe` or `genAgedRecipe` is true.
+ * @param {Fluid} agedId Fluid ID for the aged alcohol. Required if `genAgedRecipe` or `genVintageRecipe` is true.
+ * @param {Fluid} vintageId Fluid ID for the vintage alcohol. Required if `genVintageRecipe` is true.
+ * @param {Boolean} genBaseBarrelRecipe Whether to generate a base barrel recipe. Defaults to `false`.
+ * @param {Boolean} genBaseProcessorRecipe Whether to generate a base processor recipe. Defaults to `true`.
+ * @param {Boolean} genAgedRecipe Whether to generate an aged recipe. Defaults to `false`.
+ * @param {Boolean} genVintageRecipe Whether to generate a vintage recipe. Defaults to `true`.
+ */
+global.generateAlcoholRecipes = function(event, ingredient, baseId, agedId, vintageId, genBaseBarrelRecipe, genBaseProcessorRecipe, genAgedRecipe, genVintageRecipe) {
+	genBaseBarrelRecipe = genBaseBarrelRecipe === true ? true : false;
+	genBaseProcessorRecipe = genBaseProcessorRecipe !== false ? true : false;
+	genAgedRecipe = genAgedRecipe === true ? true : false;
+	genVintageRecipe = genVintageRecipe !== false ? true : false;
+
+	if (genBaseProcessorRecipe) {
+		global.processorRecipe(event, `processor_alcohol/${global.linuxUnfucker(baseId)}`, 2400, 1, {
+			itemInputs: [ingredient],
+			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
+			fluidOutputs: [Fluid.of(baseId, 500)],
+			circuit: 11,
+			notConsumable: ['#tfc:barrels']
+		});
+	}
+
+	if (genBaseBarrelRecipe) {
+		event.recipes.tfc.barrel_sealed(24000 * 3) // 3 days.
+			.inputFluid(Fluid.of('#tfg:clean_water', 100))
+    		.inputItem(ingredient)
+			.outputFluid(Fluid.of(baseId, 100))
+			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(baseId)}`)
+	}
+
+	if (genAgedRecipe) {
+		event.recipes.tfc.barrel_sealed(24000 * 24) // 24 days.
+			.inputFluid(Fluid.of(baseId, 100))
+			.outputFluid(Fluid.of(agedId, 100))
+			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(agedId)}`)
+	}
+
+	if (genVintageRecipe) {
+		event.recipes.tfc.barrel_sealed(24000 * 24) // 24 days.
+			.inputFluid(Fluid.of(agedId, 1000))
+			.outputFluid(Fluid.of(vintageId, 750))
+			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(vintageId)}`)
+	}
+};
+
+// #endregion
+// #region Preservation
+
+/**
+ * Generates processor and drying mat recipes for food drying.
+ * @param {*} event 
+ * @param {ItemStackIngredient} inputItem Input item to be dried.
+ * @param {Item} outputItem Ouput dried item.
+ * @param {Boolean} genProcessorRecipe Whether to generate a food processor recipe for drying. Defaults to `true`.
+ * @param {Boolean} genDryingMatRecipe Whether to generate a drying mat recipe for drying. Defaults to `false`.
+ */
+global.generateDryingFoodRecipes = function(event, inputItem, outputItem, genProcessorRecipe, genDryingMatRecipe) {
+	genProcessorRecipe = genProcessorRecipe !== false ? true : false;
+	genDryingMatRecipe = genDryingMatRecipe === true ? true : false;
+
+	if (genProcessorRecipe) {
+		global.processorRecipeText(event, `processor_drying/${global.linuxUnfucker(inputItem)}`, 200, 16, "tfg.food_recipe.drying", {
+			circuit: 6,
+			itemInputs: [inputItem],
+			itemOutputs: [outputItem],
+			fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+			itemOutputProvider: TFC.isp.of(outputItem).copyOldestFood()
+		})
+	}
+
+	if (genDryingMatRecipe) {
+		event.recipes.firmalife.drying(
+			outputItem,
+			TFC.ingredient.notRotten(inputItem)
+    	).id(`tfg:mat_drying/${global.linuxUnfucker(inputItem)}`)
+	}
+};
+
+/**
+ * Generates processor and fire pit smoking recipes for food smoking.
+ * @param {*} event 
+ * @param {ItemStackIngredient} inputItem Item to be smoked. Will return with `firmalife:smoked` trait.
+ * @param {Boolean} genProcessorRecipe Whether to generate a food processor recipe for smoking. Defaults to `true`.
+ * @param {Boolean} genFireSmokingRecipe Whether to generate a fire smoking recipe for smoking. Defaults to `false`.
+ */
+global.generateSmokingFoodRecipes = function(event, inputItem, genProcessorRecipe, genFireSmokingRecipe) {
+	genProcessorRecipe = genProcessorRecipe !== false ? true : false;
+	genFireSmokingRecipe = genFireSmokingRecipe === true ? true : false;
+
+	if (genProcessorRecipe) {
+		global.processorRecipeText(event, `processor_smoking${global.linuxUnfucker(inputItem)}`, 200, 16, "tfg.food_recipe.smoking", {
+			circuit: 6,
+			itemInputs: [inputItem],
+			itemOutputs: [inputItem],
+			fluidInputs: [Fluid.of('gtceu:wood_gas', 5)],
+			itemOutputProvider: TFC.isp.copyInput().addTrait("firmalife:smoked")
+		});
+	}
+
+	if (genFireSmokingRecipe) {
+		event.recipes.firmalife.smoking(
+        	TFC.isp.copyInput().addTrait('kubejs:smoked'),
+        	TFC.ingredient.notRotten(inputItem)
+    	).id(`tfg:fire_smoking/${global.linuxUnfucker(inputItem)}`);
+	}
+};
+
+/**
+ * Generates processor and barrel brining recipes for food brining.
+ * @param {*} event 
+ * @param {ItemStackIngredient} inputItem Item to be brined. Will return with `tfc:brined` trait.
+ * @param {Boolean} genProcessorRecipe Whether to generate a food processor recipe for brining. Defaults to `true`.
+ * @param {Boolean} genBarrelRecipe Whether to generate a barrel recipe for brining. Defaults to `false`.
+ */
+global.generateBriningFoodRecipes = function(event, inputItem, genProcessorRecipe, genBarrelRecipe) {
+	genProcessorRecipe = genProcessorRecipe !== false ? true : false;
+	genBarrelRecipe = genBarrelRecipe === true ? true : false;
+
+	if (genProcessorRecipe) {
+		global.processorRecipeText(event, `processor_brining/${global.linuxUnfucker(inputItem)}`, 200, 16, "tfg.food_recipe.brining", {
+			circuit: 5,
+			itemInputs: [inputItem],
+			itemOutputs: [inputItem],
+			fluidInputs: [Fluid.of('tfc:brine', 100)],
+			itemOutputProvider: TFC.isp.copyInput().addTrait('tfc:brined')
+		});
+	};
+
+	if (genBarrelRecipe) {
+		event.recipes.tfc.barrel_sealed(4800) // 4:00min
+        	.outputItem(TFC.isp.copyInput().addTrait('tfc:brined'))
+        	.inputs(TFC.ingredient.notRotten(inputItem), TFC.fluidStackIngredient('tfc:brine', 125))
+	}
+};
+//	#endregion

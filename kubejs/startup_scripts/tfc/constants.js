@@ -690,6 +690,7 @@ global.TFC_BRICK_SLAB_BLOCK_TYPES = /** @type {const} */ (["bricks", "mossy_bric
 global.SAND_COLORS = /** @type {const} */ (["brown", "white", "black", "red", "yellow", "green", "pink"]);
 
 global.TFC_FOOD_COOKING = /** @type {const} */ ([
+    // Meat
     { input: "tfc:food/horse_meat", output: "tfc:food/cooked_horse_meat" },
     { input: "tfc:food/bear", output: "tfc:food/cooked_bear" },
     { input: "tfc:food/mutton", output: "tfc:food/cooked_mutton" },
@@ -723,7 +724,15 @@ global.TFC_FOOD_COOKING = /** @type {const} */ ([
     { input: "tfc:food/duck", output: "tfc:food/cooked_duck" },
     { input: "tfc:food/chevon", output: "tfc:food/cooked_chevon" },
     { input: "tfc:food/fox", output: "tfc:food/cooked_fox" },
-    { input: "#forge:eggs", output: "tfc:food/cooked_egg" }
+    // Kelp & Seaweed
+    { input: "tfc:plant/winged_kelp", output: "tfc:food/dried_kelp" },
+    { input: "tfc:plant/leafy_kelp", output: "tfc:food/dried_kelp" },
+    { input: "tfc:plant/giant_kelp_flower", output: "tfc:food/dried_kelp" },
+    { input: "tfc:food/fresh_seaweed", output: "tfc:food/dried_seaweed" },
+    { input: "tfc:groundcover/seaweed", output: "tfc:food/dried_seaweed" },
+    // Other
+    { input: "#forge:eggs", output: "tfc:food/cooked_egg" },
+    { input: "tfc:food/potato", output: "tfc:food/baked_potato" }
 ]);
 
 global.TFC_GRAINS = /** @type {const} */ (["barley", "maize", "oat", "rye", "rice", "wheat"]);
@@ -856,18 +865,6 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
         unsalted_cheese: "tfc_gourmet:alpaca_brinza_slice", unsalted_wheel: "tfc_gourmet:alpaca_brinza_wheel",
         salted_cheese: null, salted_wheel: null
     }
-]);
-
-global.TFC_ALCOHOL = /** @type {const} */ ([
-    { id: "tfc:beer", ingredient: "tfc:food/barley_flour" },
-    { id: "tfc:cider", ingredient: "#tfc:foods/apples" },
-    { id: "tfc:rum", ingredient: "#tfg:sugars" },
-    { id: "tfc:sake", ingredient: "tfc:food/rice_flour" },
-    { id: "tfc:vodka", ingredient: "tfc:food/potato" },
-    { id: "tfc:whiskey", ingredient: "tfc:food/wheat_flour" },
-    { id: "tfc:corn_whiskey", ingredient: "tfc:food/maize_flour" },
-    { id: "tfc:rye_whiskey", ingredient: "tfc:food/rye_flour" },
-    { id: "firmalife:mead", ingredient: "firmalife:raw_honey" }
 ]);
 
 global.TFC_MAGMA_BLOCKS = /** @type {const} */ ([

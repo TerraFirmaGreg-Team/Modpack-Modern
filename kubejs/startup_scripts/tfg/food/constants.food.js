@@ -1,4 +1,4 @@
-// priority: -100
+// priority: 10
 "use strict";
 
 //#region Animal Products
@@ -407,7 +407,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		texture: 'tfg:item/food/popcorn',
 		nutrition: {
 			decay: 1,
-			grain: 1,
+			grain: 0.6,
 			saturation: 1
 		}
 	},{
@@ -416,7 +416,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		nutrition: {
 			decay: 1,
 			saturation: 2,
-			grain: 1,
+			grain: 0.6,
 			dairy: 0.3
 		}
 	},
@@ -658,20 +658,71 @@ global.SPICES = [
 /**
  * Index of alcohols.
  * @typedef {Object} alcohols
- * @property {string} name - Alcohol Name. eg. "whiskey"
- * @property {number} color - Alcohol Color eg. 0x392e14
+ * ------------------------------------------------------------------------------
+ * @property {Fluid} id Fluid id. eg. 'tfc:whiskey'
+ * @property {boolean} genBase Whether to generate a base version of this alcohol.
+ * @property {Object[]} effects List of effects applied by the base version. eg. `[{id: 'minecraft:haste', strength: 1, duration: 2400}]`
+ * ------------------------------------------------------------------------------
+ * @property {Fluid} agedId Fluid id of the aged version. eg. 'tfcagedalcohol:aged_whiskey'
+ * @property {boolean} genAged Whether to generate an aged version of this alcohol. Requires base version.
+ * @property {Object[]} agedEffects List of effects applied by the aged version. eg. `[{id: 'minecraft:haste', strength: 2, duration: 3200}]`
+ * ------------------------------------------------------------------------------
+ * @property {Fluid} vintageId Fluid id of the vintage version. eg. 'tfg:vintage_whiskey'
+ * @property {boolean} genVintage Whether to generate a vintage version of this alcohol. Requires aged version.
+ * @property {Object[]} vintageEffects List of effects applied by the vintage version. eg. `[{id: 'minecraft:haste', strength: 3, duration: 4800}]`
+ * ------------------------------------------------------------------------------
+ * @property {Item|Item<tag>} ingredient Ingredient. eg. 'tfc:food/wheat_flour'
+ * @property {string} name Alcohol Name. eg. 'whiskey'
+ * @property {number} color Alcohol Color eg. 0x392e14
  */
 /** @type {alcohols[]} - Item IDs */
 global.ALCOHOLS = [
-	{name: 'whiskey', color: 0x392e14},
-	{name: 'beer', color: 0x6b5d21},
-	{name: 'cider', color: 0x62651f},
-	{name: 'rum', color: 0x461519},
-	{name: 'sake', color: 0x65785e},
-	{name: 'corn_whiskey', color: 0x75705c},
-	{name: 'rye_whiskey', color: 0x6c4e2d},
-	{name: 'mead', color: 0x6c5d1a},
-	{name: 'vodka', color: 0x76796d}
+	{
+		id: 'tfc:beer',
+		agedId: 'tfcagedalcohol:aged_beer', agedEffects: [{id: 'minecraft:absorption', strength: 2, duration: 6400}], //5:20
+		vintageId: 'tfg:vintage_beer', genVintage: true, vintageEffects: [{id: 'minecraft:absorption', strength: 3, duration: 9600}], //8:00
+		ingredient: 'tfc:food/barley_flour', name: 'beer', color: 0x6b5d21
+	},{
+		id: 'tfc:cider',
+		agedId: 'tfcagedalcohol:aged_cider', agedEffects: [{id: 'minecraft:speed', strength: 1, duration: 6400}],
+		vintageId: 'tfg:vintage_cider', genVintage: true, vintageEffects: [{id: 'minecraft:speed', strength: 2, duration: 9600}],
+		ingredient: '#tfc:foods/apples', name: 'cider', color: 0x62651f
+	},{
+		id: 'tfc:rum',
+		agedId: 'tfcagedalcohol:aged_rum', agedEffects: [{id: 'minecraft:speed', strength: 2, duration: 3200}], //2:40
+		vintageId: 'tfg:vintage_rum', genVintage: true, vintageEffects: [{id: 'minecraft:speed', strength: 3, duration: 4800}], // 4:00
+		ingredient: '#tfg:sugars', name: 'rum', color: 0x461519
+	},{
+		id: 'tfc:sake',
+		agedId: 'tfcagedalcohol:aged_sake', agedEffects: [{id: 'minecraft:resistance', strength: 1, duration: 6400}],
+		vintageId: 'tfg:vintage_sake', genVintage: true, vintageEffects: [{id: 'minecraft:resistance', strength: 2, duration: 9600}],
+		ingredient: 'tfc:food/rice_flour', name: 'sake', color: 0x65785e
+	},{
+		id: 'tfc:vodka',
+		agedId: 'tfcagedalcohol:aged_vodka', agedEffects: [{id: 'minecraft:resistance', strength: 2, duration: 3200}],
+		vintageId: 'tfg:vintage_vodka', genVintage: true, vintageEffects: [{id: 'minecraft:resistance', strength: 3, duration: 4800}],
+		ingredient: 'tfc:food/potato', name: 'vodka', color: 0x76796d
+	},{
+		id: 'tfc:whiskey',
+		agedId: 'tfcagedalcohol:aged_whiskey', agedEffects: [{id: 'minecraft:haste', strength: 2, duration: 3200}],
+		vintageId: 'tfg:vintage_whiskey', genVintage: true, vintageEffects: [{id: 'minecraft:haste', strength: 3, duration: 4800}],
+		ingredient: 'tfc:food/wheat_flour', name: 'whiskey', color: 0x392e14
+	},{
+		id: 'tfc:corn_whiskey',
+		agedId: 'tfcagedalcohol:aged_corn_whiskey', agedEffects: [{id: 'minecraft:haste', strength: 1, duration: 6400}],
+		vintageId: 'tfg:vintage_corn_whiskey', genVintage: true, vintageEffects: [{id: 'minecraft:haste', strength: 2, duration: 9600}],
+		ingredient: 'tfc:food/maize_flour', name: 'corn_whiskey', color: 0x75705c
+	},{
+		id: 'tfc:rye_whiskey',
+		agedId: 'tfcagedalcohol:aged_rye_whiskey', agedEffects: [{id: 'minecraft:haste', strength: 1, duration: 6400}],
+		vintageId: 'tfg:vintage_rye_whiskey', genVintage: true, vintageEffects: [{id: 'minecraft:haste', strength: 2, duration: 9600}],
+		ingredient: 'tfc:food/rye_flour', name: 'rye_whiskey', color: 0x6c4e2d
+	},{
+		id: 'firmalife:mead',
+		agedId: 'tfcagedalcohol:aged_mead', agedEffects: [{id: 'minecraft:regeneration', strength: 1, duration: 6400}],
+		vintageId: 'tfg:vintage_mead', genVintage: true, vintageEffects: [{id: 'minecraft:regeneration', strength: 2, duration: 9600}],
+		ingredient: 'firmalife:raw_honey', name: 'mead', color: 0x6c5d1a
+	}
 ];
 
 // #endregion
