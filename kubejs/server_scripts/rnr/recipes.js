@@ -499,15 +499,6 @@ const registerRnrRecipes = (event) => {
 		})
 	})
 
-	event.custom({
-		type: `rnr:block_mod`,
-		input_item: {
-			item: `tfg:asphalt_mix_bucket`
-		},
-		input_block: `rnr:base_course`,
-		output_block: `tfg:pouring_asphalt_road`
-	})
-
 	// Asphalt road shape changes via RNR mattock-compatible block_mod.
 	const asphaltMattockItem = { tag: 'forge:mattocks' }
 	event.custom({
@@ -533,4 +524,5 @@ const registerRnrRecipes = (event) => {
 		output_block: `tfg:asphalt_road`,
 		consume_ingredient: false
 	}).id('tfg:rnr/block_mod/asphalt_stairs_to_road')
+
 };

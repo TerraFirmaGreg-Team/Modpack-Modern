@@ -37,12 +37,33 @@ function registerTFGAsphaltRoadRecipes(event) {
 		.duration(400)
 		.EUt(32)
 
-	// GT macerator KubeJS schema in this pack does not expose fluid-only outputs; use extractor as the LV recycle step.
-	event.recipes.gtceu.extractor('tfg:asphalt/rubble_to_mix')
+	event.recipes.gtceu.fluid_heater('tfg:asphalt/rubble_to_mix')
 		.itemInputs('1x tfg:asphalt_rubble')
-		.outputFluids(Fluid.of('tfg:asphalt_mix', 1000))
+		.outputFluids(Fluid.of('tfg:asphalt_mix', 50))
 		.duration(160)
 		.EUt(16)
+
+	event.recipes.gtceu.assembler('tfg:asphalt/asphalt_road_hot')
+		.itemInputs('rnr:base_course')
+		.inputFluids(Fluid.of('tfg:asphalt_mix', 100))
+		.itemOutputs('tfg:asphalt_road_hot')
+		.circuit(1)
+		.duration(100)
+		.EUt(120)
+
+	event.recipes.gtceu.chemical_bath('tfg:asphalt/asphalt_road_hot_cool_down_clean_water')
+		.itemInputs('tfg:asphalt_road_hot')
+		.inputFluids('#tfg:clean_water 250')
+		.itemOutputs('tfg:asphalt_road')
+		.duration(40)
+		.EUt(120)
+
+	event.recipes.gtceu.chemical_bath('tfg:asphalt/asphalt_road_hot_cool_down_distilled_water')
+		.itemInputs('tfg:asphalt_road_hot')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 250))
+		.itemOutputs('tfg:asphalt_road')
+		.duration(25)
+		.EUt(120)
 
 	event.stonecutting('tfg:asphalt_road_stairs', 'tfg:asphalt_road').id('tfg:stonecutting/asphalt_road_stairs')
 	event.stonecutting('tfg:asphalt_road_slab', 'tfg:asphalt_road').id('tfg:stonecutting/asphalt_road_slab')

@@ -1,0 +1,27 @@
+{
+    "parent": "tfg:block/asphalt_road/asphalt_mix",
+    "ambientocclusion": false,
+    "elements": [{
+        "from": [
+            0,
+            0,
+            0
+        ],
+        "to": [
+            16,
+            11,
+            16
+        ],
+        "faces": {
+            "east": {"texture": "#top"},
+            "south": {"texture": "#top"},
+            "north": {"texture": "#top"},
+            "west": {"texture": "#top"},
+            "up": {"texture": "#top"},
+            "down": {
+                "cullface": "down",
+                "texture": "#gravel"
+            }
+        }
+    }]
+}

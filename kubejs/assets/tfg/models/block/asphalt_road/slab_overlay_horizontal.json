@@ -1,0 +1,38 @@
+{
+    "parent": "block/block",
+    "textures": {"decal": "tfg:block/asphalt_road/mask_line_horizontal"},
+    "elements": [{
+        "from": [
+            -0.01,
+            6.978,
+            -0.01
+        ],
+        "to": [
+            16.01,
+            7.005,
+            16.01
+        ],
+        "faces": {
+            "up": {
+                "uv": [
+                    0,
+                    0,
+                    16,
+                    16
+                ],
+                "texture": "#decal",
+                "tintindex": 1
+            },
+            "down": {
+                "uv": [
+                    0,
+                    0,
+                    16,
+                    16
+                ],
+                "texture": "#decal",
+                "tintindex": 1
+            }
+        }
+    }]
+}

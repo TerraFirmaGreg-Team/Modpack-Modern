@@ -1,0 +1,23 @@
+{
+    "seed": 820843910007917,
+    "marking_grain": 0.35,
+    "blue_tint": 0.08,
+    "line_width_px": 6,
+    "noise_level": 16,
+    "export_files": [
+        "block.png",
+        "pouring.png",
+        "hot.png",
+        "mask_line_horizontal.png",
+        "mask_line_vertical.png",
+        "mask_cross.png",
+        "mask_arrow_north.png",
+        "mask_arrow_east.png",
+        "mask_arrow_south.png",
+        "mask_arrow_west.png"
+    ],
+    "tile_size": 16,
+    "tool": "AsphaltRoadApp",
+    "base_color": "#262628",
+    "edge_bleed": 0.7
+}
