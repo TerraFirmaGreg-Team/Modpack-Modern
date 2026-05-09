@@ -177,6 +177,13 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.asphalt_rubble.obtain'))
 		text.add(2, Text.translate('tfg.tooltip.asphalt_rubble.usage'))
 	})
+	event.addAdvanced([
+		'tfg:asphalt_road_stencil_lines',
+		'tfg:asphalt_road_stencil_cross',
+		'tfg:asphalt_road_stencil_arrow'
+	], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_stencil.hands'))
+	})
 
 	//#endregion
 	
