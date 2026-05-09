@@ -14,6 +14,9 @@
   "gui.tooltips.megacells.PartitionedFor": "Partycjonowane dla: %s",
   "gui.tooltips.megacells.Quantity": "Ilość: %s",
   "item.megacells.cable_mega_interface": "Interfejs MEGA",
+  "item.megacells.compression_card": "Karta kompresji",
+  "item.megacells.decompression_module": "Moduł dekompresji MEGA",
+  "item.megacells.decompression_pattern": "Wzór dekompresji",
   "item.megacells.sky_steel_ingot": "Sztabka podniebnej stali",
   "text.autoconfig.megacells.title": "MEGA Cells"
 }
