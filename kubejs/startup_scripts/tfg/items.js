@@ -23,8 +23,6 @@ const registerTFGItems = (event) => {
 	// Asphalt road materials
 	event.create('tfg:tar_chunk')
 	    .texture('tfg:item/asphalt_road/tar_chunk')
-	event.create('tfg:gilsonite_dust')
-	    .texture('tfg:item/asphalt_road/gilsonite_dust')
 	event.create('tfg:asphalt_binder')
 	    .texture('tfg:item/asphalt_road/asphalt_binder')
 	event.create('tfg:asphalt_rubble')

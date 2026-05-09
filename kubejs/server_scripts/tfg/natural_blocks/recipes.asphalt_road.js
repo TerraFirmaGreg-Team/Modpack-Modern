@@ -32,7 +32,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 
 	event.recipes.gtceu.macerator('tfg:asphalt/gilsonite_dust')
 		.itemInputs('1x tfg:gilsonite')
-		.itemOutputs('1x tfg:gilsonite_dust')
+		.itemOutputs('1x #forge:dusts/gilsonite')
 		.duration(100)
 		.EUt(7)
 
@@ -55,7 +55,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 		.EUt(32)
 
 	event.recipes.gtceu.mixer('tfg:asphalt/binder_boosted')
-		.itemInputs('1x tfg:tar_chunk', '1x #forge:dusts/stone', '1x tfg:gilsonite_dust')
+		.itemInputs('1x tfg:tar_chunk', '1x #forge:dusts/stone', '1x #forge:dusts/gilsonite')
 		.itemOutputs('2x tfg:asphalt_binder')
 		.duration(200)
 		.EUt(32)
