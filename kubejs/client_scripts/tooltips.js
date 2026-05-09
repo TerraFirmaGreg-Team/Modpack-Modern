@@ -173,6 +173,11 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.machine.heat_battery_3'));
 	})
 
+	event.addAdvanced(['tfg:asphalt_rubble'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_rubble.obtain'))
+		text.add(2, Text.translate('tfg.tooltip.asphalt_rubble.usage'))
+	})
+
 	//#endregion
 	
 	event.addAdvanced(['tfg:grow_light'], (item, advanced, text) => {
