@@ -614,6 +614,51 @@ function registerTFGArtisanTableRecipes(event) {
 		"artisanType": "tfg:optical_borosilicate",
 		"type": "tfg:artisan"	
 	}).id(`tfg:artisan_table/worked_optical_borosilicate_blank`);
-	
+
+	//#endregion
+
+	//#region Asphalt Road Stencils
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_lines"},
+		"pattern": [
+			"XX  XX",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_lines`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_cross"},
+		"pattern": [
+			"XX  XX",
+			"XX  XX",
+			"      ",
+			"      ",
+			"XX  XX",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_cross`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_arrow"},
+		"pattern": [
+			"XX  XX",
+			"XX  XX",
+			"X    X",
+			"X    X",
+			"      ",
+			"      "
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_arrow`);
 
 }

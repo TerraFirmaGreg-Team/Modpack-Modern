@@ -84,6 +84,7 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_single_wire')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_quadruple_wire')
 	event.add('tfg:artisan_table_inputs', 'tfg:optical_borosilicate_blank')
+	event.add('tfg:artisan_table_inputs', 'gtceu:treated_wood_plate')
 	event.add('tfg:artisan_table_inputs', 'tfc:powder/flux')
 	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
 	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
