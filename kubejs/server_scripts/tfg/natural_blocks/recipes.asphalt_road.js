@@ -68,7 +68,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 
 	event.recipes.gtceu.fluid_heater('tfg:asphalt/rubble_to_mix')
 		.itemInputs('1x tfg:asphalt_rubble')
-		.outputFluids(Fluid.of('tfg:asphalt_mix', 50))
+		.outputFluids(Fluid.of('tfg:asphalt_mix', 40))
 		.duration(160)
 		.EUt(16)
 
