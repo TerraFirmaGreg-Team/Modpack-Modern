@@ -499,30 +499,19 @@ const registerRnrRecipes = (event) => {
 		})
 	})
 
-	// Asphalt road shape changes via RNR mattock-compatible block_mod.
-	const asphaltMattockItem = { tag: 'forge:mattocks' }
+	// Asphalt road shaping: same pattern as RNR concrete (`rnr/recipes/mattock/slab/concrete_road_slab.json` etc.).
 	event.custom({
-		type: `rnr:block_mod`,
-		input_item: asphaltMattockItem,
-		input_block: `tfg:asphalt_road`,
-		output_block: `tfg:asphalt_road_slab`,
-		consume_ingredient: false
-	}).id('tfg:rnr/block_mod/asphalt_road_to_slab')
+		type: 'rnr:mattock',
+		ingredient: 'tfg:asphalt_road',
+		result: 'tfg:asphalt_road_slab',
+		mode: 'slab'
+	})
 
 	event.custom({
-		type: `rnr:block_mod`,
-		input_item: asphaltMattockItem,
-		input_block: `tfg:asphalt_road_slab`,
-		output_block: `tfg:asphalt_road_stairs`,
-		consume_ingredient: false
-	}).id('tfg:rnr/block_mod/asphalt_slab_to_stairs')
-
-	event.custom({
-		type: `rnr:block_mod`,
-		input_item: asphaltMattockItem,
-		input_block: `tfg:asphalt_road_stairs`,
-		output_block: `tfg:asphalt_road`,
-		consume_ingredient: false
-	}).id('tfg:rnr/block_mod/asphalt_stairs_to_road')
+		type: 'rnr:mattock',
+		ingredient: 'tfg:asphalt_road',
+		result: 'tfg:asphalt_road_stairs',
+		mode: 'stair'
+	})
 
 };
