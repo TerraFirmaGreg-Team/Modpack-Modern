@@ -91,6 +91,8 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_tools', '#forge:tools/files')
 	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
 	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/knives')
+	event.add('tfg:artisan_table_tools', '#forge:tools/saws')
 	event.add('tfg:artisan_table_tools', '#forge:tools/buzzsaws')
 	event.add('tfg:artisan_table_tools', 'tfc:gem_saw')
 	event.add('tfg:artisan_table_tools', '#create:sandpaper')
