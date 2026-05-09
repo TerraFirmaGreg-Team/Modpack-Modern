@@ -69,7 +69,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	// Brioche Dough
 	global.generateMixingFoodRecipes(event, 
 		['#forge:eggs', '#tfc:foods/flour', 'firmalife:tirage_mixture'],
-		'#tfc:milks 500', null, '4x tfg:food/brioche_dough'
+		'#tfc:milks 500', null, '4x tfg:food/brioche_dough', true
 	);
 
 	global.processorRecipe(event, 'brioche_dough/yeast', 20*2, GTValues.VA[GTValues.ULV], {
@@ -82,12 +82,26 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 
 	global.generateFoodCookingRecipes(event, 'tfg:food/brioche_dough', 'tfg:food/brioche_bun', true, false, true);
 
-	// Garlic Bread
-	global.processorRecipe(event, "garlic_bread", 300, 8, {
+	// Toast
+	global.processorRecipe(event, 'garlic_bread', 200, 8, {
 		circuit: 1,
 		itemInputs: ['firmalife:food/toast', 'firmalife:food/butter', 'tfc:food/garlic'],
 		itemOutputs: ['firmalife:food/garlic_bread'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/garlic_bread').copyOldestFood()
+	});
+
+	global.processorRecipe(event, 'toast_with_butter', 200, 8, {
+		circuit: 2,
+		itemInputs: ['firmalife:food/toast', 'firmalife:food/butter'],
+		itemOutputs: ['firmalife:food/toast_with_butter'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/toast_with_butter').copyOldestFood()
+	});
+
+	global.processorRecipe(event, 'toast_with_jam', 200, 8, {
+		circuit: 2,
+		itemInputs: ['firmalife:food/toast', '#tfg:foods/all_jams'],
+		itemOutputs: ['firmalife:food/toast_with_jam', 'tfc:empty_jar'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/toast_with_jam').copyOldestFood()
 	});
 
 	//#endregion
@@ -215,6 +229,40 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/pie_dough').copyOldestFood()
 	});
 
+	// Jam Pie
+	global.processorRecipe(event, 'filled_pie', 300, 16, {
+		itemInputs: ['#tfg:foods/all_jams', 'firmalife:food/pie_dough', 'firmalife:pie_pan'],
+		itemOutputs: ['firmalife:food/filled_pie', 'tfc:empty_jar'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/filled_pie').meal(
+			(food) => food.hunger(4).dairy(0.5).fruit(1.5).grain(1.0).saturation(1.0).water(0.5).decayModifier(4.5),
+			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
+		).firmaLifeAddPiePan()
+	});
+
+	// Savory Pie
+	for (let i = 1; i <= 3; i++) {
+		global.generateMixingFoodRecipes(event,
+			['firmalife:food/pie_dough', 'firmalife:pie_pan', `${i}x #tfg:foods/usable_in_savory_pie`], null, null,
+			'firmalife:food/filled_pie', true, false, true, i,
+			TFC.isp.of('firmalife:food/filled_pie').meal(
+				(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.0).decayModifier(4.5),
+				[(portion) => portion.nutrientModifier(1.0).waterModifier(0.8).saturationModifier(0.8)]
+			).firmaLifeAddPiePan(), `filled_savory_pie_${i}`
+		);
+	}
+
+	// Breakfast Pie
+	global.generateMixingFoodRecipes(event,
+		['firmalife:food/pie_dough', 'firmalife:pie_pan', '#forge:eggs', 'firmalife:food/bacon', '#tfg:foods/cheeses'], null, null,
+		'firmalife:food/filled_pie', true, false, true, 4,
+		TFC.isp.of('firmalife:food/filled_pie').meal(
+			(food) => food.hunger(4).dairy(0.5).grain(1.0).saturation(1.0).decayModifier(4.5),
+			[(portion) => portion.nutrientModifier(1.0).waterModifier(0.8).saturationModifier(0.8)]
+		).firmaLifeAddPiePan(), 'filled_breakfast_pie'
+	);
+
+	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pumpkin_pie', 'minecraft:pumpkin_pie', true, false, false, true);
+
 	// Pumpkin Pie
 	global.processorRecipe(event, 'pumpkin_pie_dough', 300, 16, {
 		circuit: 2,
@@ -229,6 +277,8 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputs: ['firmalife:food/raw_pumpkin_pie'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/raw_pumpkin_pie').copyFood()
 	});
+
+	global.generateFoodCookingRecipes(event, 'firmalife:food/filled_pie', 'firmalife:food/cooked_pie', true, false, false, true);
 
 	// Bulbkin Pie
 	global.generateMixingFoodRecipes(event, 

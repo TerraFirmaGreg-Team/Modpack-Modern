@@ -76,7 +76,7 @@ function registerTFGFoodData(event) {
 
 	// Honeyed Apple
 	event.foodItem('create:honeyed_apple', (food) => {
-		food.hunger(3.5);
+		food.hunger(4.0);
 		food.decayModifier(0.8);
 		food.water(5);
 		food.fruit(2);
@@ -86,7 +86,7 @@ function registerTFGFoodData(event) {
 	// Fruit tree products are registered in core. Data is added here.
 	// Lavacado
 	event.foodItem('tfg:food/lavacado', (food) => {
-		food.hunger(3.5);
+		food.hunger(4.0);
 		food.decayModifier(2);
 		food.vegetables(1.5);
 		food.saturation(1);
@@ -94,12 +94,23 @@ function registerTFGFoodData(event) {
 
 	// Magmango
 	event.foodItem('tfg:food/magmango', (food) => {
-		food.hunger(3.5);
+		food.hunger(4.0);
 		food.decayModifier(2.25);
 		food.water(15);
 		food.fruit(1.5);
 		food.saturation(1);
 	});
+
+	// Firmalife gave cooked pasta the 'dynamic_bowl' meal type accidentally.
+	// Overriding cooked rice noodles didnt work for some reason so I made a json for that one.
+	event.foodItem('firmalife:food/cooked_pasta', (food) => {
+		food.decayModifier(2.8);
+		food.hunger(4.0);
+		food.grain(1.0);
+		food.protein(1.5);
+		food.dairy(0.5);
+		food.saturation(2);
+	}, 'food_items/cooked_pasta');
 	
 	// Biochem Items
 	event.foodItem("tfg:progenitor_cells", (food) => {

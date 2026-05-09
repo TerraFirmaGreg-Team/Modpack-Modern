@@ -367,7 +367,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		texture: 'tfg:item/food/meal_bag',
 		mealType: 'dynamic',
 		returnItem: 'tfg:used_foil_pack',
-		tags: ['tfg:space_food']
+		tags: ['tfg:space_food', 'tfg:foods/microplastics']
 	},
 	// Calorie Paste
 	{
@@ -379,10 +379,11 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 			protein: 0.2,
 			grain: 0.1,
 			vegetables: 0.2,
-			decay: 4.5
+			decay: 4.5,
+			microplastics: 2.0
 		},
 		returnItem: 'tfg:used_foil_pack',
-		tags: ['tfg:space_food']
+		tags: ['tfg:space_food', 'tfg:foods/microplastics']
 	},
 	// Dino Nuggies
 	{
@@ -523,6 +524,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		nutrition: {
 			decay: 0.2
 		},
+		inedible: true,
 		returnItem: 'create:cardboard'
 	},{
 		id: 'tfg:food/cooked_instant_mac',
@@ -532,8 +534,10 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 			grain: 1.5,
 			dairy: 2.5,
 			protein: 0.8,
-			saturation: 1.8
+			saturation: 1.8,
+			microplastics: 2.0
 		},
+		tags: ['tfg:foods/microplastics'],
 		returnItem: 'create:cardboard'
 	},
 	// "Cheese"
@@ -546,7 +550,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 			microplastics: 2.0
 		},
 		returnItem: 'gtceu:polyethylene_foil',
-		tags: ['tfc:foods/usable_in_jam_sandwich', 'tfc:foods/usable_in_sandwich', 'tfg:foods/usable_in_meal_bag', 'tfc:foods/dairy']
+		tags: ['tfc:foods/usable_in_jam_sandwich', 'tfc:foods/usable_in_sandwich', 'tfg:foods/usable_in_meal_bag', 'tfc:foods/dairy', 'tfg:foods/microplastics']
 	}
 	// #endregion
 ]);
@@ -838,6 +842,7 @@ global.CROP_CLIMATE_DATA = [
  * @param {number} [meatItem.decay=2] Decay value. Default: 2 (10 Days).
  * @param {number} [meatItem.parasites=0] Parasite value. Default: 0.
  * @param {number} [meatItem.toxins=0] Toxin value. Default: 0.
+ * @param {number} [meatItem.microplastics=0] Microplastics value. Default: 0.
  * @param {number} [meatItem.water=0] Water value. Default: 0.
  */
 function createGenericMeatItems(meatItem) {
@@ -848,7 +853,21 @@ function createGenericMeatItems(meatItem) {
     const decay = meatItem.decay || 2;
     const parasites = meatItem.parasites || 0;
     const toxins = meatItem.toxins || 0;
+    const microplastics = meatItem.microplastics || 0;
     const water = meatItem.water || 0;
+
+	let rawTags = ['tfc:foods/meats', 'tfc:foods/raw_meats'];
+	let cookedTags = ['tfc:foods/meats', 'tfc:foods/cooked_meats'];
+
+	if (parasites) rawTags.push('tfg:foods/parasites');
+	if (toxins) {
+		rawTags.push('tfg:foods/toxins');
+		cookedTags.push('tfg:foods/toxins');
+	}
+	if (microplastics) {
+		rawTags.push('tfg:foods/microplastics');
+		cookedTags.push('tfg:foods/microplastics');
+	}
 
     global.TFG_CREATE_GENERIC_FOOD_ITEM.push(
         {
@@ -863,7 +882,7 @@ function createGenericMeatItems(meatItem) {
                 decay: Number((decay * 1.5).toFixed(1))
             },
             effect: {id: 'minecraft:hunger', duration: 600, strength: 3, probability: 0},
-            tags: ['tfc:foods/meats', 'tfc:foods/raw_meats']
+            tags: rawTags
         },
         {
             id: `tfg:food/cooked_${name}`,
@@ -875,7 +894,7 @@ function createGenericMeatItems(meatItem) {
                 toxins: toxins,
                 decay: decay
             },
-            tags: ['tfc:foods/meats', 'tfc:foods/cooked_meats']
+            tags: cookedTags
         }
     );
 };

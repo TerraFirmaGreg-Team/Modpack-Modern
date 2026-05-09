@@ -9,6 +9,7 @@ function registerTFGFoodRecipes(event) {
 	registerTFGPreservationFoodRecipes(event);
 	registerTFGMealBagRecipes(event);
 	registerTFGBakingAndDessertFoodRecipes(event);
+	registerTFGPizzaAndPastaFoodRecipes(event)
 
 	//#region Basic Cooking
 
@@ -23,8 +24,6 @@ function registerTFGFoodRecipes(event) {
 	global.FIRMALIFE_FOOD_COOKING.forEach(item => {
 		global.generateFoodCookingRecipes(event, item.input, item.output, true, false)
 	})
-
-	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pizza', 'firmalife:food/cooked_pizza', true, false, true)
 
 	//#endregion
 	//#region TFC Grains
@@ -164,21 +163,6 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	// Milks
-	// TODO: this has nutrition dynamically set in the pot recipe, can we do that here?
-	global.processorRecipe(event, `egg_noodles`, 50, 8, {
-		circuit: 6,
-		itemInputs: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
-		fluidInputs: ['#tfc:milks 1000'],
-		itemOutputs: ['firmalife:food/raw_egg_noodles'],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_egg_noodles").copyOldestFood()
-	})
-
-	global.processorRecipe(event, `rice_noodles`, 50, 8, {
-		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],
-		fluidInputs: ['#tfc:milks 1000'],
-		itemOutputs: ['2x firmalife:food/raw_rice_noodles'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/raw_rice_noodles').copyOldestFood()
-	})
 
 	// No ISP needed here
 	event.recipes.gtceu.fermenter(`tfg:fermenter/cream`)
@@ -190,24 +174,15 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 	//#region Boiling & Frying
-	
-	global.generateWaterBoilingFoodRecipes(event, '#firmalife:foods/raw_eggs', 'tfc:food/boiled_egg', false, false, true, 2)
-	global.generateWaterBoilingFoodRecipes(event, 'firmalife:food/raw_egg_noodles', 'firmalife:food/cooked_pasta', false, true, true)
-	global.generateWaterBoilingFoodRecipes(event, 'firmalife:food/raw_rice_noodles', 'firmalife:food/cooked_rice_noodles', false, true, true)
 	global.generateWaterBoilingFoodRecipes(event, 'tfc:food/rice_grain', 'tfc:food/cooked_rice', false, true, true)
-	
+	global.generateWaterBoilingFoodRecipes(event, '#firmalife:foods/raw_eggs', 'tfc:food/boiled_egg', false, false, true, 2)
+
 	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_fries', 'tfg:food/cooked_fries', true, true, true)
 	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_beer_battered_cheese_curds', 'tfg:food/cooked_beer_battered_cheese_curds', true, true, true)
 
 
 	// #endregion
 	// #region Firmalife
-
-	global.processorRecipe(event, "pasta_tomato_sauce", 60, 8, {
-		itemInputs: ["firmalife:food/cooked_pasta", "firmalife:food/tomato_sauce"],
-		itemOutputs: ["firmalife:food/pasta_with_tomato_sauce"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/pasta_with_tomato_sauce').copyFood()
-	})
 
 	global.processorRecipe(event, `masa_flour`, 100, 8, {
 		circuit: 31,
@@ -248,28 +223,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of("firmalife:food/tortilla_chips").copyFood()
 	})
 
-	global.processorRecipe(event, "tomato_sauce", 300, 8, {
-		circuit: 1,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
-		fluidInputs: ['#tfg:clean_water 200'],
-		itemOutputs: ['5x firmalife:food/tomato_sauce'],
-		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce').copyOldestFood()
-	})
-
-	global.processorRecipe(event, "tomato_sauce_mix", 600, 8, {
-		circuit: 2,
-		itemInputs: ['tfc:food/tomato', 'tfc:powder/salt', 'tfc:food/garlic'],
-		itemOutputs: ['5x firmalife:food/tomato_sauce_mix'],
-		itemOutputProvider: TFC.isp.of('5x firmalife:food/tomato_sauce_mix').copyOldestFood()
-	})
-
-	global.processorRecipe(event, "tomato_sauce_from_mix", 200, 8, {
-		itemInputs: ['firmalife:food/tomato_sauce_mix'],
-		fluidInputs: ['#tfg:clean_water 200'],
-		itemOutputs: ['firmalife:food/tomato_sauce'],
-		itemOutputProvider: TFC.isp.of('firmalife:food/tomato_sauce').copyOldestFood()
-	})
-
 	global.processorRecipe(event, "olive_paste", 60, 8, {
 		itemInputs: ['tfc:food/olive'],
 		itemOutputs: ['2x tfc:olive_paste'],
@@ -290,92 +243,6 @@ function registerTFGFoodRecipes(event) {
 		fluidInputs: ['#tfg:alcohols 250'],
 		fluidOutputs: [Fluid.of('tfc:vinegar', 250)]
 	})
-
-	//#region Pizza
-
-	global.processorRecipe(event, "pizza_no_extra", 600, GTValues.VHA[GTValues.LV], {
-		circuit: 3,
-		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese"],
-		itemOutputs: ["firmalife:food/raw_pizza"],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
-			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-		)
-	})
-
-	global.processorRecipe(event, "pizza_1_extra", 600, GTValues.VHA[GTValues.LV], {
-		circuit: 1,
-		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "#firmalife:foods/pizza_ingredients"],
-		itemOutputs: ["firmalife:food/raw_pizza"],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
-			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-		)
-	})
-
-	global.processorRecipe(event, "pizza_2_extra", 600, GTValues.VHA[GTValues.LV], {
-		circuit: 2,
-		itemInputs: ["firmalife:food/pizza_dough", "firmalife:food/tomato_sauce", "firmalife:food/shredded_cheese", "2x #firmalife:foods/pizza_ingredients"],
-		itemOutputs: ["firmalife:food/raw_pizza"],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_pizza").meal(
-			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-		)
-	})
-
-	global.processorRecipe(event, "pizza_dough", 300, 16, {
-		itemInputs: ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt'],
-		fluidInputs: ['#firmalife:oils 100'],
-		itemOutputs: ['4x firmalife:food/pizza_dough'],
-		itemOutputProvider: TFC.isp.of("4x firmalife:food/pizza_dough").copyOldestFood()
-	})
-
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.isp.of("firmalife:food/raw_pizza")
-			.meal(
-				(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-				[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-			)
-			.copyOldestFood(),
-		[
-			TFC.ingredient.notRotten("firmalife:food/pizza_dough"),
-			TFC.ingredient.notRotten("firmalife:food/tomato_sauce"),
-			TFC.ingredient.notRotten("firmalife:food/shredded_cheese")
-		]
-	).id("tfg:crafting/pizza_no_extra");
-
-	event.recipes.tfc.advanced_shapeless_crafting(
-	TFC.isp.of("firmalife:food/raw_pizza")
-		.meal(
-			(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-			[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-		)
-		.copyOldestFood(),
-	[
-		TFC.ingredient.notRotten("firmalife:food/pizza_dough"),
-		TFC.ingredient.notRotten("firmalife:food/tomato_sauce"),
-		TFC.ingredient.notRotten("firmalife:food/shredded_cheese"),
-		TFC.ingredient.notRotten("#firmalife:foods/pizza_ingredients")
-	]
-	).id("tfg:crafting/pizza_1_extra");
-
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.isp.of("firmalife:food/raw_pizza")
-			.meal(
-				(food) => food.hunger(4).saturation(1).grain(1).dairy(0.25).decayModifier(4.5),
-				[(portion) => portion.nutrientModifier(0.8).waterModifier(0.8).saturationModifier(0.8)]
-			)
-			.copyOldestFood(),
-		[
-			TFC.ingredient.notRotten("firmalife:food/pizza_dough"),
-			TFC.ingredient.notRotten("firmalife:food/tomato_sauce"),
-			TFC.ingredient.notRotten("firmalife:food/shredded_cheese"),
-			TFC.ingredient.notRotten("#firmalife:foods/pizza_ingredients"),
-			TFC.ingredient.notRotten("#firmalife:foods/pizza_ingredients")
-		]
-	).id("tfg:crafting/pizza_2_extra");
-
-	//#endregion
 
 	global.processorRecipe(event, "shredded_cheese", 100, 16, {
 		itemInputs: ['#firmalife:foods/cheeses'],
@@ -766,6 +633,33 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_beer_battered_cheese_curds').copyOldestFood()
 	});
 
+	// Burrito
+	global.processorRecipe(event, 'burrito', 60, 8, {
+		itemInputs: ['firmalife:food/shredded_cheese', 'firmalife:food/salsa', 'firmalife:food/corn_tortilla', '#firmalife:foods/cooked_meats_and_substitutes', '#tfc:foods/vegetables'],
+		itemOutputs: ['firmalife:food/burrito'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/burrito').meal(
+			(food) => food.hunger(4).decayModifier(4.5).saturation(4.0),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.8).saturationModifier(0.8)]
+		)
+	});
+
+	// Taco
+	global.processorRecipe(event, 'taco', 60, 8, {
+		itemInputs: ['firmalife:food/shredded_cheese', 'firmalife:food/salsa', 'firmalife:food/taco_shell', '#firmalife:foods/cooked_meats_and_substitutes', '#tfc:foods/vegetables'],
+		itemOutputs: ['firmalife:food/taco'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/taco').meal(
+			(food) => food.hunger(4).decayModifier(4.5).saturation(4.0),
+			[(portion) => portion.nutrientModifier(0.5).waterModifier(0.8).saturationModifier(0.8)]
+		)
+	});
+
+	// Nachos
+	global.processorRecipe(event, 'nachos', 60, 8, {
+		itemInputs: ['firmalife:food/shredded_cheese', 'firmalife:food/salsa', 'firmalife:food/tortilla_chips', '#firmalife:foods/cooked_meats_and_substitutes'],
+		itemOutputs: ['firmalife:food/nachos'],
+		itemOutputProvider: TFC.isp.of('firmalife:food/nachos').copyOldestFood()
+	});
+
 	// Hamburgers
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.isp.of('tfg:food/hamburger').meal(
@@ -988,20 +882,7 @@ function registerTFGFoodRecipes(event) {
 		.duration(20 * 20)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Instant Mac
-	global.processorRecipe(event, 'raw_instant_mac', 20 * 10, GTValues.VA[GTValues.LV], {
-		itemInputs: ['firmalife:food/raw_egg_noodles', '#tfg:foods/cheeses', '2x create:cardboard'],
-		itemOutputs: ['2x tfg:food/raw_instant_mac'],
-		fluidInputs: ['gtceu:polyethylene 100'],
-		itemOutputProvider: TFC.isp.of('2x tfg:food/raw_instant_mac').copyFood()
-	});
 
-	global.registerFoodRecipe(event, 'food_oven', 'cooked_instant_mac', 20 * 1, GTValues.VA[GTValues.LV], '' ,{
-		itemInputs: ['tfg:food/raw_instant_mac'],
-		itemOutputs: ['tfg:food/cooked_instant_mac'],
-		fluidInputs: ['#tfc:milks 500'],
-		itemOutputProvider: TFC.isp.of('tfg:food/cooked_instant_mac').copyFood()
-	});
 
 	//#region Spices
 

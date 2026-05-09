@@ -110,7 +110,7 @@ global.cookingRecipe = (event, id, input, out, fluid, isFirmaDynamic) => {
 	return global.registerFoodRecipe(event, "food_oven", id, 20 * 10, GTValues.VA[GTValues.LV], "", {
 		itemInputs: [input],
 		itemOutputs: [out],
-		fluidInputs: (fluid === undefined) ? [] : [fluid],
+		fluidInputs: (fluid === undefined || fluid === null) ? [] : [fluid],
 		itemOutputProvider: ((isFirmaDynamic) ? TFC.isp.of(out).firmaLifeCopyDynamicFood() : TFC.isp.of(out).copyFood()).addTrait("firmalife:oven_baked")
 	});
 };
@@ -242,12 +242,13 @@ global.generateAllJamRecipes = function(event, fruitId, fruitName, jar, unsealed
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match. Defaults to `true`.
  * @param {Boolean|null} genOvenRecipe Whether to also generate a food oven recipe to match. Defaults to `true`. Defaults to `true`.
  * @param {Number|null|undefined} circuit Optional circuit value for the oven recipe.
+ * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit) {
+global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit, copyDynamic) {
 	genPotRecipe = genPotRecipe !== false;
 	genVatRecipe = genVatRecipe !== false;
 	genOvenRecipe = genOvenRecipe !== false;
-
+	
 	if (!inputFluid || !fluidQty || !inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFluidBoilingFoodRecipes: inputFluid=${inputFluid}, FluidQty=${fluidQty}, inputItem=${inputItem}, outputItem=${outputItem}`);
 	}
@@ -260,16 +261,18 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 				500,
 				200
 				)
-				.itemOutput(TFC.isp.of(`${i}x ${outputItem}`).copyFood()
+				.itemOutput((copyDynamic) ? TFC.isp.of(`${i}x ${outputItem}`).firmaLifeCopyDynamicFood() : TFC.isp.of(`${i}x ${outputItem}`).copyFood()
 			).id(`tfg:pot/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}_${i}`);
 		}
 	}
+
+	let ispOut = (copyDynamic) ? TFC.isp.of(outputItem).firmaLifeCopyDynamicFood() : TFC.isp.of(outputItem).copyFood();
 
 	if (genVatRecipe) {
 		event.recipes.firmalife.vat()
 			.inputFluid(TFC.fluidStackIngredient(inputFluid, fluidQty))
 			.inputItem(TFC.ingredient.notRotten(inputItem))
-			.outputItem(TFC.isp.of(outputItem).copyFood())
+			.outputItem(ispOut)
 			.length(100)
 			.temperature(200)
 			.id(`tfg:vat/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`);
@@ -280,7 +283,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			itemInputs: [inputItem],
 			fluidInputs: [`${inputFluid} ${fluidQty}`],
 			itemOutputs: [outputItem],
-			itemOutputProvider: TFC.isp.of(outputItem).copyFood()
+			itemOutputProvider: ispOut
 		};
 		if (circuit !== null && circuit !== undefined) ovenParameters.circuit = circuit;
 		let a = global.registerFoodRecipe(event, 'food_oven', `${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`, 100, 8, '', ovenParameters);
@@ -297,8 +300,9 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
  * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
  * @param {Number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit) {
+global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit, copyDynamic) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateWaterBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
@@ -315,8 +319,9 @@ global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, 
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
  * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
  * @param {Number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit) {
+global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit, copyDynamic) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateOilBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
@@ -335,24 +340,27 @@ global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, ge
  * @param {Boolean|null} genOvenRecipe Wether to generate a GT oven recipe. Default `true`.
  * @param {Boolean|null} genHeatingRecipe Wether to generate heating recipes. Grilling, fire pit, oven. Default `true`.
  * @param {Boolean|null} genFirmalifeOvenRecipe Wether to generate a firmalife oven recipe. Standalone oven recipe for things like pizzas. Default `false`.
+ * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOvenRecipe, genHeatingRecipe, genFirmalifeOvenRecipe) {
+global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOvenRecipe, genHeatingRecipe, genFirmalifeOvenRecipe, copyDynamic) {
 	genOvenRecipe = genOvenRecipe !== false;
 	genHeatingRecipe = genHeatingRecipe !== false;
 	genFirmalifeOvenRecipe = genFirmalifeOvenRecipe === true;
+	copyDynamic = copyDynamic === true;
+
+	let ispOut = (copyDynamic) ? TFC.isp.of(outputItem).firmaLifeCopyDynamicFood() : TFC.isp.of(outputItem).copyFood();
 
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateFoodCookingRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	}
 
 	if (genOvenRecipe) {
-		global.cookingRecipe(event, `${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem);
+		global.cookingRecipe(event, `${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem, null, copyDynamic);
 	}
 
 	if (genHeatingRecipe) {
 		event.recipes.tfc.heating(TFC.ingredient.notRotten(inputItem), 200)
-			.resultItem(TFC.isp.of(outputItem).copyFood())
-			.id(`tfg:heating/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
+			.resultItem(ispOut).id(`tfg:heating/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
 	}
 
 	if (genFirmalifeOvenRecipe) {
@@ -360,7 +368,7 @@ global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOv
 			inputItem,
 			300,
 			200,
-			TFC.isp.of(outputItem).copyFood()
+			ispOut.addTrait("firmalife:oven_baked")
 		).id(`tfg:firmalife_oven/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
 	}
 };
@@ -517,9 +525,9 @@ global.generateBriningFoodRecipes = function(event, inputItem, genProcessorRecip
  * - Example input array: `['2x #tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product']`
  * - Returned formatted example array: `[TFC.ingredient.notRotten('#tfg:martian_eggs'), TFC.ingredient.notRotten('#tfg:martian_eggs'), TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), TFC.ingredient.notRotten('betterend:cave_pumpkin_chunks'), TFC.ingredient.notRotten('betterend:amber_root_product')]`
  * @param {Internal.Ingredient[]} inputArray Input array of standard item keys.
- * @return {Internal.ItemStackProvider[]} New array of mixing bowl formatted items.
+ * @return {Internal.ItemStackProvider[]} New array of ISP formatted items.
  */
-global.mixingBowlInputParser = function(inputArray) {
+global.ingredientStackInputParser = function(inputArray) {
 	let formattedInputs = [];
 
 	// If inputArray is a string, wrap it in an array to prevent errors. If null, return empty.
@@ -556,27 +564,76 @@ global.mixingBowlInputParser = function(inputArray) {
 	return formattedInputs;
 };
 
+/**
+ * Function to reformat a fluid string into a TFC fluid ingredient item. (An item that can hold fluids like a flask).
+ * - Example input array: `['#firmalife:oils 100', 'minecraft:water 1000']`
+ * - Returned formatted example array: `[TFC.ingredient.fluid(TFC.fluidStackIngredient('#firmalife:oils', 100)), TFC.ingredient.fluid(TFC.fluidStackIngredient('minecraft:water', 1000))]`
+ * @param {Internal.Fluid[]} inputArray Input array of standard fluid keys.
+ * @return {Internal.FluidStackIngredient[]} New array of ISP formatted fluids.
+ */
+global.fluidIngredientInputParser = function(inputArray) {
+	let formattedInputs = [];
+
+	// If inputArray is a string, wrap it in an array to prevent errors. If null, return empty.
+	if (typeof inputArray === 'string') {
+		inputArray = [inputArray];
+	}
+	if (!inputArray || !Array.isArray(inputArray)) {
+		return [];
+	}
+
+	inputArray.forEach(input => {
+		// Skip null or undefined entries in the list.
+		if (!input) return;
+		
+		// Regex splits 'fluid:name 400' into ['fluid:name 400', '400', 'fluid:name']
+		let match = input.match(/^(.+)\s+(\d+)$/);
+
+		let fluid = match ? match[1] : input;
+		let count = match ? parseInt(match[2]) : 1000;
+
+		// Create the TFC Fluid Ingredient
+		formattedInputs.push(TFC.ingredient.fluid(TFC.fluidStackIngredient(fluid, count)));
+	});
+
+	return formattedInputs;
+};
 
 /**
- * Function for generating mixing bowl and food processor recipes.
+ * Function for generating mixing bowl, advanced shapeless, and food processor recipes at once.
  * @param {*} event 
  * @param {Internal.Ingredient[]|null} inputItems Array of ingredients < 6. Ex. `['2x #tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product']`.
- * @param {Internal.Fluid|null} inputFluid Input fluid string. Ex. `'minecraft:water 1000'`.
+ * @param {Internal.Fluid|null} inputFluid Input fluid string. Ex. `'minecraft:water 1000'`. Can be an array if mixing bowl recipe isnt used.
  * @param {Internal.Fluid|null} outputFluid Output fluid string. Ex. `'minecraft:water 1000'`.
  * @param {Internal.Item|null} outputItem Output item with count < 6. Ex. `'5x betterend:cave_pumpkin_pie_dough'`.
+ * @param {Boolean|null} genShapelessRecipe Wether to generate an advanced shapeless recipe. Defaults to false. Will ignore fluid output since its not compatible.
  * @param {Boolean|null} genMixingBowlRecipe Wether to generate a firmalife mixing bowl recipe. Defaults to true.
  * @param {Boolean|null} genProcessorRecipe Wether to generate a food processor recipe. Defaults to true.
  * @param {Number|null} circuit Optional field for setting a food processor circuit number.
+ * @param {Internal.ItemStackProvider|null} outputProvider Optional override for a custom output provider. Defaults to `TFC.isp.of(outputItem).copyOldestFood()`. Note that mixing bowls do not support output providers.
+ * @param {String|null} idOverride Optional override to set a custom id. Defaults to outputItem, or outputFluid if outputItem isnt set.
  */
-global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outputFluid, outputItem, genMixingBowlRecipe, genProcessorRecipe, circuit) {
+global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outputFluid, outputItem, genShapelessRecipe, genMixingBowlRecipe, genProcessorRecipe, circuit, outputProvider, idOverride) {
+	genShapelessRecipe = genShapelessRecipe === true;
 	genProcessorRecipe = genProcessorRecipe !== false;
 	genMixingBowlRecipe = genMixingBowlRecipe !== false;
 
-	// Normalize items and parse mixing bowl ingredients.
+	// Normalize items to TFC ingredients.
 	if (typeof inputItems === 'string') inputItems = [inputItems];
-	const formattedInputItems = global.mixingBowlInputParser(inputItems);
+	const formattedInputItems = global.ingredientStackInputParser(inputItems);
+	// Normalize fluids to TFC ingredients.
+	const fluidArray = (typeof inputFluid === 'string') ? [inputFluid] : inputFluid;
+	const formattedFluidItems = fluidArray ? global.fluidIngredientInputParser(fluidArray) : [];
+	
 	// Format outputs just for error handling.
-	const formattedOutputItems = global.mixingBowlInputParser(outputItem);
+	const formattedOutputItems = outputItem && global.ingredientStackInputParser(outputItem);
+
+	let id;
+	if (idOverride) {
+		id = global.linuxUnfucker(idOverride);
+	} else {
+		id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
+	};
 
 	// Helper to split Fluid string into FluidStackIngredient.
 	const toFluidStack = (fluid) => {
@@ -585,20 +642,49 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
 	};
 
+	if (genShapelessRecipe) {
+		let outputItemData;
+		
+		if (outputItem) {
+			if (outputProvider) {
+				outputItemData = outputProvider
+			} else {
+				outputItemData = TFC.isp.of(outputItem).copyOldestFood()
+			}
+		} else {
+			throw new Error(`No output item for generateMixingFoodRecipes recipe ID: 'tfg:shapeless/${id}'`);
+		};
+
+		let ingredientsData = [];
+		if (formattedInputItems.length > 0) Array.prototype.push.apply(ingredientsData, formattedInputItems);
+		if (formattedFluidItems.length > 0) Array.prototype.push.apply(ingredientsData, formattedFluidItems);
+
+		if (ingredientsData.length > 9) throw new Error(`Too many inputs for generateMixingFoodRecipes recipe ID: 'tfg:shapeless/${id}'`);
+
+		event.recipes.tfc.advanced_shapeless_crafting(
+			outputItemData,
+			ingredientsData
+		).id(`tfg:shapeless/${id}`);
+
+	}
+
 	if (genProcessorRecipe) {
 		let processorData = {};
-		let id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
 
 		if (circuit != null) processorData.circuit = circuit;
 		if (inputItems) processorData.itemInputs = inputItems;
-		if (inputFluid) processorData.fluidInputs = [inputFluid];
+		if (inputFluid) processorData.fluidInputs = typeof inputFluid === 'string' ? [inputFluid] : inputFluid;
 		
 		if (outputItem) {
 			processorData.itemOutputs = [outputItem];
+			if (outputProvider) {
+				processorData.itemOutputProvider = outputProvider
+			} else {
 			processorData.itemOutputProvider = TFC.isp.of(outputItem).copyOldestFood();
+			}
 		}
 		if (outputFluid) {
-			processorData.fluidOutputs = [outputFluid];
+			processorData.fluidOutputs = typeof outputFluid === 'string' ? [outputFluid] : outputFluid;
 		}
 
 		global.processorRecipe(event, id, 200, GTValues.VA[GTValues.LV], processorData);
@@ -606,16 +692,15 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 
 	if (genMixingBowlRecipe) {
 		let recipe = event.recipes.firmalife.mixing_bowl();
-		let id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
 
-		if (formattedInputItems.length > 5) throw new Error(`Too many input items for generateMixingFoodRecipes recipe ID: ${id}`)
-		if (formattedOutputItems.length > 5) throw new Error(`Too many output items for generateMixingFoodRecipes recipe ID: ${id}`)
+		if (formattedInputItems.length > 5) throw new Error(`Too many input items for generateMixingFoodRecipes recipe ID: 'tfg:mixing_bowl/${id}'`)
+		if (formattedOutputItems && formattedOutputItems.length > 5) throw new Error(`Too many output items for generateMixingFoodRecipes recipe ID: 'tfg:mixing_bowl/${id}'`)
 
 		if (formattedInputItems.length > 0) recipe.itemIngredients(formattedInputItems);
-		if (inputFluid) recipe.fluidIngredient(TFC.fluidStackIngredient(toFluidStack(inputFluid)));
+		if (inputFluid) recipe.fluidIngredient(toFluidStack(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
 		
 		if (outputItem) recipe.outputItem(outputItem);
-		if (outputFluid) recipe.outputFluid(toFluidStack(outputFluid));
+		if (outputFluid) recipe.outputFluid(toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
 		
 		recipe.id(`tfg:mixing_bowl/${id}`);
 	}

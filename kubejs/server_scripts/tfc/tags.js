@@ -501,6 +501,18 @@ function registerTFCItemTags(event) {
     event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
     event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
     event.add('forge:tools/igniter', 'tfc:firestarter');
+
+    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
+    /** @type {{Item[]}} */
+    const fluidItemIngredientHolders = [
+        //'#gtceu:super_tanks',
+        //'#gtceu:fluid_cells',
+        //'#gtceu:drums',
+        '#tfc:barrels'
+    ];
+    fluidItemIngredientHolders.forEach(item => {
+        event.add('tfc:fluid_item_ingredient_empty_containers', item)
+    });
 }
 
 /** @param {TagEvent.Block} event */
