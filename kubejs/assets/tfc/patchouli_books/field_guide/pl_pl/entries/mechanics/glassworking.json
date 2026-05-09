@@ -41,7 +41,7 @@
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/blowpipe",
-      "text": "Ceramic blowpipes are brittle, and have a chance to to break when used. A more sturdy blowpipe can be $(l:mechanics/anvils#working)worked$() from a $(thing)Brass Rod$() on an anvil."
+      "text": "Ceramiczne dmuchawy są kruche i mają szansę na zniszczenie po użyciu. Bardziej wytrzymała dmuchawa może być $(l:mechanics/anvils#working)wykuta$() z $(thing)mosieżnego pręta$() na kowadle."
     },
     {
       "type": "patchouli:crafting",
