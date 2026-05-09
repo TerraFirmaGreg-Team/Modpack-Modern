@@ -1,5 +1,7 @@
 {
   "config.framedblocks.client.conTexMode": "Tryb połączonych tekstur",
+  "config.framedblocks.client.detailedCulling": "Szczegółowy culling",
+  "config.framedblocks.client.discreteUVSteps": "Użyj dyskretnych kroków UV",
   "config.framedblocks.client.showGhostBlocks": "Pokaż bloki \"duchy\"",
   "config.framedblocks.common.fireproofBlocks": "Bloki ognioodporne",
   "config.framedblocks.server.consumeCamoItem": "Zużyj przedmiot kamuflażu",
