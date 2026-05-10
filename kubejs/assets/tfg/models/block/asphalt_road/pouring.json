@@ -1,7 +1,7 @@
 {
     "parent": "rnr:block/path_block",
     "textures": {
-        "gravel": "minecraft:block/gravel",
+        "gravel": "tfg:block/asphalt_road/hot",
         "top": "tfg:block/asphalt_road/hot"
     }
 }
