@@ -13,7 +13,7 @@ function registerTFGAsphaltRoadItems(event) {
         "line_slash_l", "line_slash_r", 
         "num_0", "num_1", "num_2", "num_3", "num_4",
         "num_5", "num_6", "num_7", "num_8", "num_9",
-        "number", "slash_l", "slash_r"
+        "number", "slash_l", "slash_r", "t"
     ];
     masks.forEach(mask => {
         let itemId = `tfg:asphalt_road_stencil_${mask}`;
