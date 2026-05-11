@@ -172,5 +172,12 @@ global.CF_DISABLED_STORAGES = [
     'gtceu:black_bronze_drum',
 
     // TFG
-    'tfg:artisan_table'
+    'tfg:artisan_table',
+    
+    // Sophisticated Backpacks
+    'sophisticatedbackpacks:backpack',
+    'sophisticatedbackpacks:iron_backpack',
+    'sophisticatedbackpacks:gold_backpack',
+    'sophisticatedbackpacks:diamond_backpack',
+    'sophisticatedbackpacks:netherite_backpack'
 ]
