@@ -177,5 +177,18 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(5*20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true);
+		
+	// Silk thread
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('minecraft:string', [			
+			'4x tfg:silk_fibers',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/silk_fibers_to_thread'))
+
+	event.recipes.gtceu.wiremill('tfg:silk_fiber_thread')
+		.itemInputs('4x tfg:silk_fibers')
+		.itemOutputs('minecraft:string')
+		.duration(80)
+		.EUt(4)
 	
 }
