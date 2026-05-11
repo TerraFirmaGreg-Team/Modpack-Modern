@@ -349,7 +349,7 @@
 				"487D05818B3E9D19"
 			]
 			description: ["{quests.create_logistics.stock_ticker_fluid_filter.desc}"]
-			icon: "create:filter"
+			icon: "create:attribute_filter"
 			id: "5B6D7F0BA07F2C17"
 			optional: true
 			subtitle: "{quests.create_logistics.stock_ticker_fluid_filter.subtitle}"

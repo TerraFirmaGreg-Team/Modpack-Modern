@@ -22,14 +22,23 @@ function registerCreateFluidLogisticsRecipes(event) {
     event.recipes.gtceu.shaped('fluidlogistics:fluid_packager', [
 		' A ',
 		'BCD',
-		' E '
+		'FEG'
 	], {
 		A: '#forge:small_gears/red_alloy',
 		B: '#forge:springs/wrought_iron',
 		C: 'create:copper_casing',
 		D: 'fluidlogistics:waterproof_cardboard_block',
-		E: 'create:electron_tube'
+		E: 'create:electron_tube',
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wrenches'
 	}).id("fluidlogistics:shaped/fluid_packager")
+
+	event.recipes.gtceu.assembler('fluidlogistics:fluid_packager')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:copper_casing', 'fluidlogistics:waterproof_cardboard_block', 'create:electron_tube')
+		.itemOutputs('fluidlogistics:fluid_packager')
+		.circuit(20)
+		.duration(100)
+		.EUt(20)
 		
     event.recipes.gtceu.shaped('fluidlogistics:multi_fluid_tank', [
 		'ABA',
@@ -77,13 +86,5 @@ function registerCreateFluidLogisticsRecipes(event) {
 		C: 'create:precision_mechanism',
 		D: 'gtceu:brass_rod'
 	}).id("fluidlogistics:mechanical_crafting/hand_pointer")
-
-
-	event.recipes.shapeless(
-		Item.of('create:filter',
-			'{Blacklist:0b,Items:{Items:[{Count:1b,Slot:0,id:"fluidlogistics:compressed_storage_tank"}],Size:18},RespectNBT:0b}').withName([Text.red("Use this filter to categorize fluids in the Stock Ticker")]),
-		['create:filter', 'minecraft:water_bucket'])
-		.id('tfg:stock_ticker_fluid_filter')
-		.keepIngredient('minecraft:water_bucket')
 	
 }

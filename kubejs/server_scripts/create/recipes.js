@@ -1712,14 +1712,23 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.shaped('create:packager', [
 		' A ',
 		'BCD',
-		' E '
+		'FEG'
 	], {
 		A: '#forge:small_gears/red_alloy',
 		B: '#forge:springs/wrought_iron',
 		C: 'create:andesite_casing',
 		D: 'create:bound_cardboard_block',
-		E: 'create:electron_tube'
+		E: 'create:electron_tube',
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('tfg:create/shaped/packager')
+
+	event.recipes.gtceu.assembler('create:packager')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:andesite_casing', 'create:bound_cardboard_block', 'create:electron_tube')
+		.itemOutputs('create:packager')
+		.circuit(20)
+		.duration(100)
+		.EUt(20)
 
 	event.shaped('create:item_hatch', [
 		'A',
