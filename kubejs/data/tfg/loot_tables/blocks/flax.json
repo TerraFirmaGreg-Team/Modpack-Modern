@@ -1,0 +1,58 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfg:flax_product",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "tfg:flax",
+							"properties": {
+								"age": "6",
+								"part": "bottom"
+							}
+						}
+					],
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "tfc:crop_yield_uniform",
+								"min": 0,
+								"max": {
+									"type": "minecraft:uniform",
+									"min": 6,
+									"max": 10
+								}
+							}
+						}
+					]
+				}
+			],
+			"conditions": [ { "condition": "minecraft:survives_explosion" } ]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfg:flax_seeds",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "tfg:flax",
+							"properties": { "part": "bottom" }
+						}
+					]
+				}
+			],
+			"conditions": [ { "condition": "minecraft:survives_explosion" } ]
+		}
+	]
+}

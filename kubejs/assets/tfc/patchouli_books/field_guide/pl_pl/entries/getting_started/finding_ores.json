@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Ores, Metal, and Casting",
+  "name": "Rudy, metal i odlewanie",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
@@ -13,19 +13,19 @@
       "multiblock": {
         "pattern": [
           [
-          "    ",
-          "  0 ",
-          "    "
+            "    ",
+            "  0 ",
+            "    "
           ],
           [
-          "ABCD",
-          "EFGH",
-          "IJKL"
+            "ABCD",
+            "EFGH",
+            "IJKL"
           ],
           [
-          "XXXX",
-          "XXXX",
-          "XXXX"
+            "XXXX",
+            "XXXX",
+            "XXXX"
           ]
         ],
         "mapping": {

@@ -83,7 +83,12 @@ function registerTFGWoodenRecipes(event) {
 			)
 				.id(`tfg:shapeless/${name}_lumber_from_plank`)
 
-			generateCutterRecipe(event, plank, `4x ${lumber}`, 50, 7, `${name}_lumber_from_plank`)
+			event.recipes.gtceu.packer(`tfg:${name}_lumber_from_plank`)
+				.itemInputs(`${plank}`)
+				.circuit(1)
+				.itemOutputs(`4x ${lumber}`)
+				.duration(50)
+				.EUt(GTValues.VA[GTValues.ULV])	
 
 			// Plank from lumber
 			event.shaped(plank, [
@@ -123,6 +128,8 @@ function registerTFGWoodenRecipes(event) {
 				A: plank
 			})
 				.id(`tfg:shaped/${name}_slab_from_plank`)
+
+			generateCutterRecipe(event, plank, `2x ${slab}`, 50, 7 , `${name}_slab_from_plank`)
 		}
 
 		// Lumber from stair
@@ -567,7 +574,7 @@ function registerTFGWoodenRecipes(event) {
 				L: lumber
 			}).id(`tfg:shaped/${name}_rope_ladder`);
 
-			event.shaped(`32x ${rope_ladder}`, [
+			event.shaped(`16x ${rope_ladder}`, [
 				' L ',
 				'RL ',
 				' L '
@@ -1136,7 +1143,7 @@ function registerTFGWoodenRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.recipes.greate.pressing('tfc:stick_bunch', [
+	event.recipes.greate.compacting('tfc:stick_bunch', [
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden',
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden',
 		'#forge:rods/wooden', '#forge:rods/wooden', '#forge:rods/wooden'])
@@ -1144,7 +1151,7 @@ function registerTFGWoodenRecipes(event) {
 		.recipeTier(0)
 		.id('tfg:pressing/stick_bunch')
 
-	event.recipes.greate.pressing('tfc:stick_bundle', ['tfc:stick_bunch', 'tfc:stick_bunch'])
+	event.recipes.greate.compacting('tfc:stick_bundle', ['tfc:stick_bunch', 'tfc:stick_bunch'])
 		.circuitNumber(8)
 		.recipeTier(0)
 		.id('tfg:pressing/stick_bundle')

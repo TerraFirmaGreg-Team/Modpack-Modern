@@ -262,8 +262,23 @@ const registerTooltips = (event) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
+	global.BENEATH_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`beneath:wood/support/${wood}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.addAdvanced([`tfg:${wood.name}_support`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
+	global.WAB_WOOD.forEach(wood => {
+		event.addAdvanced([`tfg:wood/support/${wood.name}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`tfg:wood/support/${wood.name}`], (item, advanced, text) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
@@ -451,7 +466,9 @@ const registerTooltips = (event) => {
 		};
 	});
 
-	//#endregion
+	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
+	});
 
 	// Wearables
 	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {

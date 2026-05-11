@@ -32,7 +32,7 @@
       "type": "patchouli:image",
       "title": "Prospector View",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
       "border": true,
       "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray."
@@ -60,15 +60,15 @@
       "type": "patchouli:spotlight",
       "anchor": "geolog",
       "item": "gtceu:prospector.lv",
-      "title": "Digital Ore Prospector's",
+      "title": "Cyfrowy poszukiwacz rud",
       "link_recipes": false,
       "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "Wykrywacz rud",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
       "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."

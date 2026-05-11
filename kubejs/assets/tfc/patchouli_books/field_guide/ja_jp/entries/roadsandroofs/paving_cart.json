@@ -1,51 +1,51 @@
 {
-  "name": "Paving Cart",
+  "name": "舗装車",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with road materials and $(thing)Crushed Base Course$() to create roads. The cart can also fill in any existing base course blocks"
+      "text": "$(thing)舗装車$()は、道路を素早く効率よく敷設するための専用カートです。\n道路用の素材や$(thing)粉砕した路盤材$()を入れることで、道路を作ることができます。\nまた、すでに設置されている路盤を舗装することも可能です"
     },
     {
       "type": "patchouli:image",
-      "title": "Paving Cart",
+      "title": "舗装車",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
     {
       "type": "patchouli:image",
-      "title": "Width Adjustment Slider",
+      "title": "幅調整スライダー",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
-      "text": "The cart allows you to adjust the width of the path in the GUI"
+      "text": "GUIで道幅を調整できます"
     },
     {
       "type": "patchouli:image",
-      "title": "Variable Width Path",
+      "title": "道幅の変化",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
     {
       "type": "patchouli:image",
-      "title": "Randomizer Button",
+      "title": "ランダムモード",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
-      "text": "The cart has a mode that will lay down materials in a random pattern."
+      "text": "ランダムなパターンで道の素材を設置するモードがあります。"
     },
     {
       "type": "patchouli:image",
-      "title": "Random Material Path",
+      "title": "ランダムモードで舗装された道",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }

@@ -1,5 +1,5 @@
 {
-  "name": "Beneath Wild Fruits",
+  "name": "Dzikie owoce z Głębin",
   "category": "tfc:beneath",
   "icon": "tfg:textures/item/fruit_trees/magmango_sapling.png",
   "pages": [
@@ -263,11 +263,11 @@
           "fill": "0x6ab553"
         }
       ],
-      "text": "The fruiting calendar for fruit trees.",
+      "text": "Kalendarz owocowania drzew owocowych.",
       "title": "Drzewa owocowe",
       "legend": [
         {
-          "text": "Dormant",
+          "text": "Uśpione",
           "color": "0xa8986a"
         },
         {

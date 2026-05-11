@@ -1,29 +1,29 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Quern",
+  "name": "臼",
   "category": "tfc:mechanics",
   "icon": "tfc:quern",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Quern$() is a device for grinding items. It can crush raw ores for $(l:tfg_ores/ore_basics#processing)processing$(), as well as make powders, $(l:mechanics/dye)dyes$(), and some other items. It is assembled from a $(thing)Base$() and $(thing)Handstone$()."
+      "text": "$(thing)臼$()はアイテムをすり潰すための装置です。（TFGでは、Createの「石臼」と区別するために「臼」と表記しています。）鉱石を$(l:tfg_ores/ore_basics#processing)鉱石処理$()のために粉砕できるほか、粉末や$(l:mechanics/dye)染料$()などのアイテムを作るためにも利用できます。この装置は$(thing)下臼$()と$(thing)上臼$()を組み合わせて構成されます。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/quern",
-      "text": "The base of the quern can be crafted with three $(thing)smooth stone$() and three of any other $(thing)Stone$() blocks.$(br2)Stone blocks can be acquired via $(l:getting_started/primitive_anvils#raw_rock)extraction$(), and smooth blocks with the $(l:mechanics/chisel)chisel$()."
+      "text": "臼のベースとなる下臼は、$(thing)滑らかな石$()を3つと、任意の種類の$(thing)石ブロック$()を3つ組み合わせてクラフトできます。$(br2)石ブロックは$(l:getting_started/primitive_anvils#raw_rock)切り出す$()ことによって入手でき、滑らかな石は$(l:mechanics/chisel)ノミ$()を使って加工することで作成できます。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/handstone",
-      "text": "The quern needs a $(thing)Handstone$() to operate."
+      "text": "臼が動作するには$(thing)上臼$()も必要です。"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/tutorial/quern_empty.png"
       ],
-      "text": "Point at the top of the quern block and $(item)$(k:key.use)$() to place the handstone.",
+      "text": "設置した下臼の上面にカーソルを合わせ、$(item)$(k:key.use)$()で上臼を取り付けられます。",
       "border": true
     },
     {
@@ -31,7 +31,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_add_item.png"
       ],
-      "text": "Use $(item)$(k:key.use)$() on the top of the handstone to add items.",
+      "text": "上臼の上部へ$(item)$(k:key.use)$()を使用して、粉砕したいアイテムを投入できます。",
       "border": true
     },
     {
@@ -39,7 +39,7 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_handle.png"
       ],
-      "text": "Use $(item)$(k:key.use)$() the handle to spin the handstone.",
+      "text": "ハンドルに$(item)$(k:key.use)$()で上臼を回転させ、粉砕を開始します。",
       "border": true
     },
     {
@@ -47,33 +47,33 @@
       "images": [
         "tfc:textures/gui/book/tutorial/quern_result.png"
       ],
-      "text": "The output should appear on the base of the quern. $(item)$(k:key.use)$() anywhere on the base to retrieve it.",
+      "text": "処理が終わったアイテムは下臼に表示されます。下臼に$(item)$(k:key.use)$()で回収できます。",
       "border": true
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Crushed Ore",
+      "title": "砕いた鉱石",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
+      "text": "$(l:tfg_ores/ore_basics#processing)鉱石$()は粉砕処理を行うことで、より多くの金属を得ることができます。"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Powders",
+      "title": "粉末",
       "recipe": "tfg:quern/sulfur_powder",
-      "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
+      "text": "臼は、$(thing)硫黄$()などの粉をさらに細かく砕いて各種$(thing)粉末$()を生成するためにも使用されます。また、$(thing)宝石$()を粉末にすることも可能です。"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Dyes",
+      "title": "染料",
       "recipe": "tfc:quern/red_dye",
-      "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
+      "text": "$(l:mechanics/dye)染料$()は、各種の花をすり潰すことで入手できます。"
     },
     {
       "type": "patchouli:spotlight",
       "item": {
         "tag": "tfc:foods/flour"
       },
-      "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$()."
+      "text": "$(thing)穀物系の作物$()はナイフとクラフトすることで$(thing)穀物の粒$()にすることができ、さらにそれを臼で挽くことで$(thing)穀物の粉（小麦粉など）$()へと加工できます。"
     }
   ],
   "read_by_default": true

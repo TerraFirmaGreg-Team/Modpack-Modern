@@ -43,7 +43,7 @@ function registerTFGStoneItemTags(event) {
 			material = rock.material.replace(/tfg:/g, '');
 
 		if (rock.raw != null) {
-			if (rock.collapsible) {
+			if (rock.collapsible && rock.cobble != null) {
 				event.add('tfc:rock/raw', rock.raw.block);
 				event.add('forge:stone', rock.raw.block);
 			}
@@ -55,7 +55,9 @@ function registerTFGStoneItemTags(event) {
 
 			SHAPES.forEach(shape => {
 				if (rock.raw[shape] != null) {
-					event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
+					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.raw[shape]);
+					}
 					addToTfcTag(rock.raw[shape]);
 					addToMaterialTag(material, rock.raw[shape]);
 				}
@@ -168,7 +170,9 @@ function registerTFGStoneItemTags(event) {
 			SHAPES.forEach(shape => {
 				if (rock.polished[shape] != null) {
 					event.add('tfg:brick_index', rock.polished[shape]);
-					event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
+					if (rock.collapsible && rock.cobble != null) {
+						event.add(`tfg:rock_${shape}s`, rock.polished[shape]);
+					}
 					addToTfcTag(rock.polished[shape]);
 					addToMaterialTag(material, rock.polished[shape]);
 
