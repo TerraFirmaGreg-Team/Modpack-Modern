@@ -19,5 +19,12 @@ global.CF_WHITELISTED_STORAGES = [
     'gtceu:aluminium_crate',
     'gtceu:stainless_steel_crate',
     'gtceu:titanium_crate',
-    'gtceu:tungsten_steel_crate'
+    'gtceu:tungsten_steel_crate',
+
+    // Sophisticated Backpacks
+    'sophisticatedbackpacks:backpack',
+    'sophisticatedbackpacks:iron_backpack',
+    'sophisticatedbackpacks:gold_backpack',
+    'sophisticatedbackpacks:diamond_backpack',
+    'sophisticatedbackpacks:netherite_backpack'
 ]
