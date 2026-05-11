@@ -8,14 +8,16 @@ function registerTFGAsphaltRoadItems(event) {
 	event.create('tfg:asphalt_binder')
 	event.create('tfg:asphalt_rubble')
 
-    event.create('tfg:asphalt_road_stencil_line')
-		.tag('tfg:road_marking_stencils')
-	event.create('tfg:asphalt_road_stencil_cross')
-		.tag('tfg:road_marking_stencils')
-	event.create('tfg:asphalt_road_stencil_arrow')
-		.tag('tfg:road_marking_stencils')
-
-	TFGAsphaltRoadMarkings.registerStencil('tfg:asphalt_road_stencil_line', 'line')
-	TFGAsphaltRoadMarkings.registerStencil('tfg:asphalt_road_stencil_cross', 'cross')
-	TFGAsphaltRoadMarkings.registerStencil('tfg:asphalt_road_stencil_arrow', 'arrow')
+    let masks = [
+        "arrow", "corner", "cross", "line", 
+        "line_slash_l", "line_slash_r", 
+        "num_0", "num_1", "num_2", "num_3", "num_4",
+        "num_5", "num_6", "num_7", "num_8", "num_9",
+        "number", "slash_l", "slash_r"
+    ];
+    masks.forEach(mask => {
+        let itemId = `tfg:asphalt_road_stencil_${mask}`;
+        event.create(itemId).tag('tfg:road_marking_stencils');
+        TFGAsphaltRoadMarkings.registerStencil(itemId, mask);
+    });
 }
