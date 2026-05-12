@@ -137,7 +137,7 @@
 			"scale": 0.4,
 			"offset": 0.2,
 			"name": "Surfer",
-			"text": "$(thing)Surfers$() are semiaquatic passive animals. You can tame them with $(item)Raw Fish$() to ride them underwater. They can also be eaten."
+			"text": "$(thing)Surfery$() są pasywnymi zwierzętami wodnolądowymi. Możesz je oswoić za pomocą $(item)surowych ryb$() i jeździć na nich pod wodą. Ich mięso można również jeść."
 		},
 		{
 			"type": "patchouli:entity",
