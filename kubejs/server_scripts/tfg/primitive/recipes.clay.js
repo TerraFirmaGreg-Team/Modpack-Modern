@@ -230,17 +230,17 @@ function registerTFGClayRecipes(event) {
 
 	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
 		.itemInputs('minecraft:clay')
-		.fluidOutputs('minecraft:water')
+		.fluidOutputs(Fluidof('minecraft:water', 250))
 		.itemOutputs('tfg:hardened_clay')
 		.duration(400)
 		.EUt(6)
 
-	event.recipes.gtceu.rock_breaker("hardened_clay_duping")
-		.notConsumable('tfg:hardened_clay')
+	event.recipes.gtceu.food_processor('tfg:gtceu/food_processor/hardened_clay')
+		.itemInputs('minecraft:clay')
+		.fluidInputs([Fluid.of('gtceu:nitrogen', 100)])
 		.itemOutputs('tfg:hardened_clay')
-		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
-		.duration(50)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(400)
+		.EUt(6)
 
 	// heating
 	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
