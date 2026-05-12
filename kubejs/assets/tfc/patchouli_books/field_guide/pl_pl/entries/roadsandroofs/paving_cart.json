@@ -1,5 +1,5 @@
 {
-  "name": "Paving Cart",
+  "name": "Wóz brukarski",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Paving Cart",
+      "title": "Wóz brukarski",
       "images": [
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
@@ -17,7 +17,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Width Adjustment Slider",
+      "title": "Suwak regulacji szerokości",
       "images": [
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
@@ -26,7 +26,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Variable Width Path",
+      "title": "Ścieżka zmiennej szerokości",
       "images": [
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
@@ -43,7 +43,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Random Material Path",
+      "title": "Ścieżka z losowych materiałów",
       "images": [
         "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],

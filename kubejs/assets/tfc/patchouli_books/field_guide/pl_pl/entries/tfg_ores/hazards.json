@@ -56,22 +56,22 @@
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Najpierw stwórz rękawice ze skóry."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "Następnie nasącz $(thing)rękawice$() w $(thing)occie$(), mieszaninie owoców i alkoholu."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Przygotowane rękawice skórzane $(thing)$() muszą być następnie wypalone w kadzi $(thing)$() z $(thing)wulkanizowanym lateksem$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Wreszcie rękawice nasączone lateksem muszą być wysuszone w $(l:firmalife/ovens)piecu$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -170,7 +170,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Nauseating chemicals",
+			"title": "Substancje powodujące nudności",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "Nauseating_chemicals",
 			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."

@@ -6,6 +6,7 @@
   "gui.tfclunchbox.electric_lunchbox": "Elektryczna śniadaniówka",
   "gui.tfclunchbox.lunchbox": "Pudełko śniadaniowe",
   "item.tfclunchbox.cooling_lunchbox": "Chłodząca śniadaniówka",
+  "item.tfclunchbox.cooling_lunchbox.main": "Twój niesamowity towarzysz w przygodach z lodowym chłodzeniem",
   "item.tfclunchbox.electric_lunchbox": "Elektryczna śniadaniówka",
   "item.tfclunchbox.lunchbox": "Pudełko śniadaniowe",
   "itemGroup.tfclunchbox": "TFC Lunchbox",
@@ -34,5 +35,6 @@
   "tooltip.tfclunchbox.lunchbox.contents": "Zawartość:",
   "tooltip.tfclunchbox.lunchbox.empty": "Pusty",
   "tooltip.tfclunchbox.lunchbox.selected_slot": "Wybrane miejsce: %d",
+  "tooltip.tfclunchbox.lunchbox.shift": "Przytrzymaj SHIFT po więcej szczegółów",
   "tooltip.tfclunchbox.simple_lunchbox.hold_shift": "Przytrzymaj §eSHIFT§7, aby uzyskać szczegóły"
 }
