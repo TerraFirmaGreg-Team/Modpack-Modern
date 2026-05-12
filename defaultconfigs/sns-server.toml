@@ -187,7 +187,7 @@
 	["Boot config"."Blue Steel Toe Boots"]
 		#The movement speed bonus these boots provide
 		#Range: 0.0 ~ 1024.0
-		movementSpeed = 0.25
+		movementSpeed = 0.2
 		#The step height bonus these boots provide
 		#Range: 0.0 ~ 512.0
 		stepHeight = 0.5
@@ -202,10 +202,10 @@
 	["Boot config"."Red Steel Toe Boots"]
 		#The movement speed bonus these boots provide
 		#Range: 0.0 ~ 1024.0
-		movementSpeed = 0.2
+		movementSpeed = 0.25
 		#The step height bonus these boots provide
 		#Range: 0.0 ~ 512.0
-		stepHeight = 0.5
+		stepHeight = 0
 		#The extra fall distance in blocks before you begin taking fall damage
 		#Range: 0.0 ~ 64.0
 		fallPadding = 5.0
