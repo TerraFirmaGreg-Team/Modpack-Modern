@@ -276,6 +276,14 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'));
 		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'));
 	})
+	event.addAdvanced(['sns:blue_steel_toe_hiking_boots'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.armor.blue_steel_toe_hiking_boots_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.blue_steel_toe_hiking_boots_insulation'));
+	})
+	event.addAdvanced(['sns:red_steel_toe_hiking_boots'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.armor.red_steel_toe_hiking_boots_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.red_steel_toe_hiking_boots_insulation'));
+	})
 
 	// Supports
 	global.TFC_WOOD_TYPES.forEach(wood => {
