@@ -16,7 +16,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/handstone",
-      "text": "The quern needs a $(thing)Handstone$() to operate."
+      "text": "Żarna potrzebują $(thing)rozcieracza$(), żeby działać."
     },
     {
       "type": "patchouli:image",

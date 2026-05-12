@@ -30,7 +30,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą dwie sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
+      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą podwójne sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
     },
     {
       "type": "patchouli:text",
