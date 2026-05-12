@@ -224,13 +224,13 @@ function registerTFGClayRecipes(event) {
 
 	//Hardened Clay
 	event.custom({
-		type:"firmalife_drying",
+		type:"firmalife:drying",
 		ingredient:{item:"minecraft:clay"},
 		result:{item:"tfg:hardened_clay"}}).id("tfg:drying_clay_hardened_clay")
 
 	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
 		.itemInputs('minecraft:clay')
-		.fluidOutputs(Fluidof('minecraft:water', 250))
+		.outputFluids(Fluidof('minecraft:water', 250))
 		.itemOutputs('tfg:hardened_clay')
 		.duration(400)
 		.EUt(6)
