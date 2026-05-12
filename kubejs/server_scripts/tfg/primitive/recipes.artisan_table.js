@@ -627,7 +627,7 @@ function registerTFGArtisanTableRecipes(event) {
 			"X    X",
 			"X    X",
 			"      ",
-			"      "
+			"X    X"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
@@ -638,10 +638,10 @@ function registerTFGArtisanTableRecipes(event) {
 		"pattern": [
 			"XXXXXX",
 			"XXXXXX",
-			"XX    ",
-			"XX    ",
+			"XX   X",
+			"XX   X",
 			"XX  XX",
-			"XX  XX"
+			"XXXXXX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
@@ -650,12 +650,12 @@ function registerTFGArtisanTableRecipes(event) {
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_cross"},
 		"pattern": [
+			"XXXXXX",
 			"XX  XX",
+			"X    X",
+			"X    X",
 			"XX  XX",
-			"      ",
-			"      ",
-			"XX  XX",
-			"XX  XX"
+			"XXXXXX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
@@ -664,16 +664,101 @@ function registerTFGArtisanTableRecipes(event) {
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_line"},
 		"pattern": [
+			"XXXXXX",
 			"XX  XX",
 			"XX  XX",
 			"XX  XX",
 			"XX  XX",
-			"XX  XX",
-			"XX  XX"
+			"XXXXXX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
 	}).id(`tfg:artisan_table/asphalt_road_stencil_line`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_double_line"},
+		"pattern": [
+			"XXXXXX",
+			"X XX X",
+			"X XX X",
+			"X XX X",
+			"X XX X",
+			"XXXXXX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_double_line`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_slash_l"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			" XXXXX",
+			"  XXXX",
+			"X  XXX",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_slash_l`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_slash_r"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			"XXXXX ",
+			"XXXX  ",
+			"XXX  X",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_slash_r`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_slash_rl"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			" XXXX ",
+			"  XX  ",
+			"X    X",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_slash_rl`);
+
+	
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_t"},
+		"pattern": [
+			"XXXXXX",
+			"XXXXXX",
+			"X    X",
+			"X    X",
+			"XX  XX",
+			"XXXXXX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_t`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_fill"},
+		"pattern": [
+			"      ",
+			"      ",
+			"      ",
+			"      ",
+			"      ",
+			"      "
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_fill`);
 
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_line_slash_l"},
@@ -702,6 +787,20 @@ function registerTFGArtisanTableRecipes(event) {
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
 	}).id(`tfg:artisan_table/asphalt_road_stencil_line_slash_r`);
+
+	event.custom({
+		"result": {"item": "tfg:asphalt_road_stencil_line_slash_rl"},
+		"pattern": [
+			"XX  XX",
+			"XX  XX",
+			" X  X ",
+			"      ",
+			"X    X",
+			"XX  XX"
+		],
+		"artisanType": "tfg:road_marking_stencil",
+		"type": "tfg:artisan"
+	}).id(`tfg:artisan_table/asphalt_road_stencil_line_slash_rl`);
 
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_num_0"},
@@ -856,48 +955,5 @@ function registerTFGArtisanTableRecipes(event) {
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
 	}).id(`tfg:artisan_table/asphalt_road_stencil_number`);
-
-	event.custom({
-		"result": {"item": "tfg:asphalt_road_stencil_slash_l"},
-		"pattern": [
-			"XXXXXX",
-			"XXXXXX",
-			" XXXXX",
-			"  XXXX",
-			"X  XXX",
-			"XX  XX"
-		],
-		"artisanType": "tfg:road_marking_stencil",
-		"type": "tfg:artisan"
-	}).id(`tfg:artisan_table/asphalt_road_stencil_slash_l`);
-
-	event.custom({
-		"result": {"item": "tfg:asphalt_road_stencil_slash_r"},
-		"pattern": [
-			"XXXXXX",
-			"XXXXXX",
-			"XXXXX ",
-			"XXXX  ",
-			"XXX  X",
-			"XX  XX"
-		],
-		"artisanType": "tfg:road_marking_stencil",
-		"type": "tfg:artisan"
-	}).id(`tfg:artisan_table/asphalt_road_stencil_slash_r`);
-
-	
-	event.custom({
-		"result": {"item": "tfg:asphalt_road_stencil_t"},
-		"pattern": [
-			"XXXXXX",
-			"XXXXXX",
-			"      ",
-			"      ",
-			"XX  XX",
-			"XX  XX"
-		],
-		"artisanType": "tfg:road_marking_stencil",
-		"type": "tfg:artisan"
-	}).id(`tfg:artisan_table/asphalt_road_stencil_t`);
 
 }

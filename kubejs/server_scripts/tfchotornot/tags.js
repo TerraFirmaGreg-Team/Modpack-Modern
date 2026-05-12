@@ -13,6 +13,7 @@ const registerHotOrNotItemTags = (event) => {
     event.add('tfchotornot:hot_whitelist', 'minecraft:magma_block')
     event.add('tfchotornot:cold_whitelist', 'minecraft:blue_ice')
     event.add('tfchotornot:cold_whitelist', 'tfg:dry_ice')
+    event.add('tfchotornot:hot_whitelist', 'tfg:asphalt_road_hot')
 
     global.TFC_MAGMA_BLOCKS.forEach(magma => {
         event.add('tfchotornot:hot_whitelist', magma)
