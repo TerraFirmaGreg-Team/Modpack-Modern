@@ -8,6 +8,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	global.TFC_GRAINS.forEach(grain => {
 
 		//#region Flour Processing
+
 		// Raw crop to grain
 		global.processorRecipe(event, `${grain}_grain`, 100, 8, {
 			circuit: 30,
@@ -66,6 +67,36 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		});
 	});
 
+	// Maize Grain
+	global.processorRecipe(event, `masa_flour`, 100, 8, {
+		circuit: 31,
+		itemInputs: [`firmalife:food/nixtamal`],
+		itemOutputs: [`4x firmalife:food/masa_flour`],
+		itemOutputProvider: TFC.isp.of(`4x firmalife:food/masa_flour`).copyOldestFood()
+	});
+
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), ['A', 'B'], {
+			A: TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
+			B: '#forge:tools/mortars'
+		}, 0, 0).id(`tfg:mortar/masa_flour`);
+
+	global.processorRecipe(event, 'firmalife_masa', 300, 2, {
+		circuit: 3,
+		itemInputs: ['firmalife:food/masa_flour'],
+		fluidInputs: ['#tfg:clean_water 100'],
+		itemOutputs: ['2x firmalife:food/masa'],
+		itemOutputProvider: TFC.isp.of('2x firmalife:food/masa').copyFood()
+	});
+	
+	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['firmalife:food/cured_maize'],
+		fluidInputs: ['#tfg:clean_water 100'],
+		itemOutputs: ['firmalife:food/nixtamal'],
+		circuit: 1,
+		itemOutputProvider: TFC.isp.of('firmalife:food/nixtamal').copyFood()
+	});
+
 	// Brioche Dough
 	global.generateMixingFoodRecipes(event, 
 		['#forge:eggs', '#tfc:foods/flour', 'firmalife:tirage_mixture'],
@@ -103,6 +134,33 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputs: ['firmalife:food/toast_with_jam', 'tfc:empty_jar'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/toast_with_jam').copyOldestFood()
 	});
+
+	//#endregion
+	//#region Baking Ingredients
+
+	// Baking Ingredients
+	global.processorRecipe(event, 'yeast_starter', 1200, 8, {
+		circuit: 2,
+		fluidInputs: [Fluid.of('firmalife:yeast_starter', 100)],
+		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
+		itemInputs: ['#tfc:foods/flour']
+	});
+
+	global.processorRecipe(event, 'yeast_starter_from_water', 7200, 8, {
+		circuit: 10,
+		itemInputs: ['#tfc:foods/fruits'],
+		fluidInputs: ['#tfg:clean_water 100', 'gtceu:nitrogen 100'],
+		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)]
+	});
+
+	// Tirage Mixture
+	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
+		.itemInputs('#tfc:sweetener')
+		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
+		.itemOutputs('firmalife:tirage_mixture')
+		.duration(10)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//#endregion
 	//#region Chocolate

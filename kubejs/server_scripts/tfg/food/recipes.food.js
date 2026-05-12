@@ -9,7 +9,10 @@ function registerTFGFoodRecipes(event) {
 	registerTFGPreservationFoodRecipes(event);
 	registerTFGMealBagRecipes(event);
 	registerTFGBakingAndDessertFoodRecipes(event);
-	registerTFGPizzaAndPastaFoodRecipes(event)
+	registerTFGPizzaAndPastaFoodRecipes(event);
+	registerTFGSandwichFoodRecipes(event);
+	registerTFGSoupFoodRecipes(event);
+	registerTFGDairyFoodRecipes(event);
 
 	//#region Basic Cooking
 
@@ -26,67 +29,6 @@ function registerTFGFoodRecipes(event) {
 	})
 
 	//#endregion
-	//#region TFC Grains
-
-	global.TFC_GRAINS.forEach(grain => {
-
-		//Sandwich making
-
-		let breadTypes = [["bread", `tfc:food/${grain}_bread`], ["flatbread", `firmalife:food/${grain}_flatbread`], ["slice", `firmalife:food/${grain}_slice`]]
-		breadTypes.forEach((type) => {
-			global.processorRecipe(event, `${grain}_${type[0]}_sandwich`, 100, 16, {
-				circuit: 3,
-				itemInputs: [`2x ${type[1]}`, "3x #tfc:foods/usable_in_sandwich"],
-				itemOutputs: [`2x tfc:food/${grain}_bread_sandwich`],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_sandwich`).meal(
-					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
-					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
-					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
-				])
-			})
-
-			//Note: preserves needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwich ingredients.
-			// 1 jam + 2 cheese
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
-				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
-					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
-					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
-					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
-				])
-			})
-
-			// 2 jam + 1 cheese. Uses preserves_2 alias so GT's RecipeDB gives this a distinct tree key from recipe 1.
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
-				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves_2', '1x #tfc:foods/usable_in_jam_sandwich'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '2x tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
-					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
-					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
-					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
-				])
-			})
-
-			// 3 jam
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
-				circuit: 4,
-				itemInputs: [`2x ${type[1]}`, '3x #tfc:foods/preserves'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '3x tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
-					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
-					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
-					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
-				])
-			})
-		})
-
-
-	})
-
-	//#endregion
 
 	//#region Firmalife
 
@@ -100,102 +42,18 @@ function registerTFGFoodRecipes(event) {
     })
 
 	//#endregion
-	//#region Dairy
 
-	global.TFC_CURDS_AND_CHEESES.forEach(item => {
-
-		event.recipes.gtceu.fermenter(`tfg:curdled_${item.id}`)
-			.inputFluids(Fluid.of(item.milk, 2000))
-			.itemInputs('firmalife:rennet')
-			.outputFluids(Fluid.of(item.curdled_fluid, 2000))
-			.duration(2400)
-			.EUt(16)
-
-		event.recipes.gtceu.mixer(`lactose_milk_${item.id}`)
-			.circuit(1)
-			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('gtceu:acetic_acid', 25))
-			.itemOutputs('1x gtceu:lactose_dust')
-			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
-			.duration(300)
-			.EUt(GTValues.VA[GTValues.LV])
-
-		event.recipes.gtceu.mixer(`lactose_milk_vinegar_${item.id}`)
-			.circuit(1)
-			.inputFluids(Fluid.of(item.milk, 1000), Fluid.of('tfc:vinegar', 100))
-			.chancedOutput('gtceu:lactose_dust', 1000, 0)
-			.outputFluids(Fluid.of(item.curdled_fluid, 1000))
-			.duration(300)
-			.EUt(GTValues.VA[GTValues.LV])
-
-		global.processorRecipe(event, `${item.id}_curd`, 1200, 16, {
-			itemOutputs: [item.curd],
-			fluidInputs: [Fluid.of(item.curdled_fluid, 1000)],
-			itemOutputProvider: TFC.isp.of(item.curd).resetFood()
-		})
-
-		global.processorRecipe(event, `${item.id}_unsalted_cheese_wheel`, 8000, 16, {
-			itemInputs: [`3x ${item.curd}`],
-			itemOutputs: [item.unsalted_wheel],
-			fluidInputs: [Fluid.of('tfc:salt_water', 750)],
-			itemOutputProvider: TFC.isp.of(item.unsalted_wheel).copyOldestFood()
-		})
-
-		global.processorRecipe(event, `${item.id}_unsalted_cheese_cutting`, 100, 8, {
-			itemInputs: [item.unsalted_wheel],
-			itemOutputs: [`4x ${item.unsalted_cheese}`],
-			itemOutputProvider: TFC.isp.of(`4x ${item.unsalted_cheese}`).copyOldestFood()
-		})
-
-		if (item.salted_wheel === null || item.salted_cheese === null) return;
-
-		global.processorRecipe(event, `${item.id}_salted_cheese_wheel`, 1000, 16, {
-			circuit: 2,
-			itemInputs: [`3x ${item.curd}`, `6x tfc:powder/salt`],
-			itemOutputs: [item.salted_wheel],
-			itemOutputProvider: TFC.isp.of(item.salted_wheel).copyOldestFood()
-		})
-
-		global.processorRecipe(event, `${item.id}_salted_cheese_cutting`, 100, 8, {
-			itemInputs: [item.salted_wheel],
-			itemOutputs: [`4x ${item.salted_cheese}`],
-			itemOutputProvider: TFC.isp.of(`4x ${item.salted_cheese}`).copyOldestFood()
-		})
-	})
-
-	// Milks
-
-	// No ISP needed here
-	event.recipes.gtceu.fermenter(`tfg:fermenter/cream`)
-		.inputFluids("#tfc:milks 1000")
-		.outputFluids(Fluid.of('firmalife:cream'))
-		.circuit(6)
-		.duration(1200)
-		.EUt(24)
-
-	//#endregion
 	//#region Boiling & Frying
 	global.generateWaterBoilingFoodRecipes(event, 'tfc:food/rice_grain', 'tfc:food/cooked_rice', false, true, true)
 	global.generateWaterBoilingFoodRecipes(event, '#firmalife:foods/raw_eggs', 'tfc:food/boiled_egg', false, false, true, 2)
 
 	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_fries', 'tfg:food/cooked_fries', true, true, true)
-	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_beer_battered_cheese_curds', 'tfg:food/cooked_beer_battered_cheese_curds', true, true, true)
 
 
 	// #endregion
 	// #region Firmalife
 
-	global.processorRecipe(event, `masa_flour`, 100, 8, {
-		circuit: 31,
-		itemInputs: [`firmalife:food/nixtamal`],
-		itemOutputs: [`4x firmalife:food/masa_flour`],
-		itemOutputProvider: TFC.isp.of(`4x firmalife:food/masa_flour`).copyOldestFood()
-	})
 
-	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), ['A', 'B'], {
-			A: TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
-			B: '#forge:tools/mortars'
-		}, 0, 0).id(`tfg:mortar/masa_flour`)
 
 	event.recipes.tfc.advanced_shaped_crafting(
 		TFC.isp.of(`firmalife:food/soybean_paste`).copyFood(), ['A', 'B'], {
@@ -209,13 +67,7 @@ function registerTFGFoodRecipes(event) {
 			B: '#forge:tools/mortars'
 		}, 0, 0).id(`tfg:mortar/olive_paste`)
 
-	global.processorRecipe(event, 'firmalife_masa', 300, 2, {
-		circuit: 3,
-		itemInputs: ["firmalife:food/masa_flour"],
-		fluidInputs: ['#tfg:clean_water 100'],
-		itemOutputs: ["2x firmalife:food/masa"],
-		itemOutputProvider: TFC.isp.of("2x firmalife:food/masa").copyFood()
-	})
+
 
 	global.processorRecipe(event, "tortilla_chips", 40, 16, {
 		itemInputs: ["firmalife:food/taco_shell", "tfc:powder/salt"],
@@ -244,41 +96,13 @@ function registerTFGFoodRecipes(event) {
 		fluidOutputs: [Fluid.of('tfc:vinegar', 250)]
 	})
 
-	global.processorRecipe(event, "shredded_cheese", 100, 16, {
-		itemInputs: ['#firmalife:foods/cheeses'],
-		itemOutputs: ['4x firmalife:food/shredded_cheese'],
-		circuit: 30,
-		itemOutputProvider: TFC.isp.of('4x firmalife:food/shredded_cheese').copyFood()
-	})
+
 
 	global.processorRecipe(event, "basil", 20, 16, {
 		itemInputs: ['firmalife:plant/basil'],
 		itemOutputs: ['2x firmalife:spice/basil_leaves'],
 		circuit: 30,
 		itemOutputProvider: TFC.isp.of('2x firmalife:spice/basil_leaves').resetFood()
-	})
-
-
-	global.processorRecipe(event, "butter", 300, 16, {
-		itemInputs: ["tfc:powder/salt"],
-		fluidInputs: [Fluid.of('firmalife:cream', 1000)],
-		itemOutputs: ["firmalife:food/butter"],
-		itemOutputProvider: TFC.isp.of('firmalife:food/butter').resetFood()
-	})
-
-
-	global.processorRecipe(event, "yeast_starter", 1200, 8, {
-		circuit: 2,
-		fluidInputs: [Fluid.of('firmalife:yeast_starter', 100)],
-		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 600)],
-		itemInputs: ['#tfc:foods/flour']
-	})
-
-	global.processorRecipe(event, "yeast_starter_from_water", 7200, 8, {
-		circuit: 10,
-		itemInputs: ['#tfc:foods/fruits'],
-		fluidInputs: ['#tfg:clean_water 100', 'gtceu:nitrogen 100'],
-		fluidOutputs: [Fluid.of('firmalife:yeast_starter', 100)]
 	})
 
 	global.processorRecipe(event, "red_grapes", 50, 8, {
@@ -394,114 +218,7 @@ function registerTFGFoodRecipes(event) {
 	});
 
 	//#endregion
-	//#region Soup
 
-    global.processorRecipe(event, "grain_soup", 300, 8, {
-        circuit: 20,
-        itemInputs: [
-            '3x #tfc:bowls',
-            '2x #tfc:foods/grains',
-            '3x #tfc:foods/usable_in_soup'
-        ],
-        fluidInputs: [Fluid.of('minecraft:water', 100)],
-        itemOutputs: ['3x tfc:food/grain_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/grain_soup').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
-            [
-                (portion) => portion
-                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-                    .nutrientModifier(1)
-                    .saturationModifier(0.8)
-                    .waterModifier(0.8)
-            ]
-        )
-    })
-
-    global.processorRecipe(event, "fruit_soup", 200, 8, {
-        circuit: 21,
-        itemInputs: [
-            '3x #tfc:bowls',
-            '2x #tfc:foods/fruits',
-            '3x #tfc:foods/usable_in_soup'
-        ],
-        fluidInputs: [Fluid.of('minecraft:water', 100)],
-        itemOutputs: ['3x tfc:food/fruit_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/fruit_soup').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
-            [
-                (portion) => portion
-                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-                    .nutrientModifier(1)
-                    .saturationModifier(0.8)
-                    .waterModifier(0.8)
-            ]
-        )
-    })
-
-    global.processorRecipe(event, "vegetables_soup", 200, 8, {
-        circuit: 22,
-        itemInputs: [
-            '3x #tfc:bowls',
-            '2x #tfc:foods/vegetables',
-            '3x #tfc:foods/usable_in_soup'
-        ],
-        fluidInputs: [Fluid.of('minecraft:water', 100)],
-        itemOutputs: ['3x tfc:food/vegetables_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/vegetables_soup').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
-            [
-                (portion) => portion
-                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-                    .nutrientModifier(1)
-                    .saturationModifier(0.8)
-                    .waterModifier(0.8)
-            ]
-        )
-    })
-
-    global.processorRecipe(event, "protein_soup", 200, 8, {
-        circuit: 23,
-        itemInputs: [
-            '3x #tfc:bowls',
-            '2x #tfc:foods/meats',
-            '3x #tfc:foods/usable_in_soup'
-        ],
-        fluidInputs: [Fluid.of('minecraft:water', 100)],
-        itemOutputs: ['3x tfc:food/protein_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/protein_soup').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
-            [
-                (portion) => portion
-                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-                    .nutrientModifier(1)
-                    .saturationModifier(0.8)
-                    .waterModifier(0.8)
-            ]
-        )
-    })
-
-    global.processorRecipe(event, "dairy_soup", 200, 8, {
-        circuit: 24,
-        itemInputs: [
-            '3x #tfc:bowls',
-            '2x #tfc:foods/dairy',
-            '3x #tfc:foods/usable_in_soup'
-        ],
-        fluidInputs: [Fluid.of('minecraft:water', 100)],
-        itemOutputs: ['3x tfc:food/dairy_soup'],
-        itemOutputProvider: TFC.isp.of('3x tfc:food/dairy_soup').simpleModifier('tfg:add_bowl').meal(
-            (food) => food.hunger(5).water(1).saturation(1).decayModifier(4.5),
-            [
-                (portion) => portion
-                    .ingredient(Ingredient.of('#tfc:foods/usable_in_soup'))
-                    .nutrientModifier(1)
-                    .saturationModifier(0.8)
-                    .waterModifier(0.8)
-            ]
-        )
-    })
-
-	//#endregion
 
 	// These don't need the ISP handling, they're just here to keep all the food recipes together
 
@@ -626,12 +343,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_fries').copyFood()
 	});
 
-	global.processorRecipe(event, 'raw_beer_battered_cheese_curds', 20*5, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['4x #tfg:foods/cheese_curds', '#tfc:foods/flour', 'tfc:powder/salt', '#forge:eggs'],
-		fluidInputs: ['#tfg:alcohols/beer 200'],
-		itemOutputs: ['4x tfg:food/raw_beer_battered_cheese_curds'],
-		itemOutputProvider: TFC.isp.of('4x tfg:food/raw_beer_battered_cheese_curds').copyOldestFood()
-	});
 
 	// Burrito
 	global.processorRecipe(event, 'burrito', 60, 8, {
@@ -660,156 +371,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/nachos').copyOldestFood()
 	});
 
-	// Hamburgers
-	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of('tfg:food/hamburger').meal(
-			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
-		),
-		[
-			'CA ',
-			'BBB',
-			' A '
-		], {
-			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
-			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
-			C: '#forge:tools/knives'
-		},
-		0,
-		0
-	).id('tfg:crafting/hamburger');
-
-	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of('tfg:food/cheeseburger').meal(
-			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
-		),
-		[
-			'CA ',
-			'BBD',
-			' A '
-		], {
-			A: TFC.ingredient.notRotten('tfg:food/brioche_bun'),
-			B: TFC.ingredient.notRotten('#tfg:foods/usable_in_burgers'),
-			C: '#forge:tools/knives',
-			D: TFC.ingredient.notRotten('#tfg:foods/cheeses')
-		},
-		0,
-		0
-	).id('tfg:crafting/cheeseburger');
-
-	global.processorRecipe(event, `hamburger`, 20*1, GTValues.VA[GTValues.ULV], {
-		itemInputs: [`3x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun'],
-		itemOutputs: ['tfg:food/hamburger'],
-		circuit: 2,
-		itemOutputProvider: TFC.isp.of('tfg:food/hamburger').meal(
-			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.0)]
-		)
-	});
-
-	global.processorRecipe(event, `cheeseburger`, 20*1, GTValues.VA[GTValues.ULV], {
-		itemInputs: [`2x #tfg:foods/usable_in_burgers`, '2x tfg:food/brioche_bun', '#tfg:foods/cheeses'],
-		itemOutputs: ['tfg:food/cheeseburger'],
-		circuit: 3,
-		itemOutputProvider: TFC.isp.of('tfg:food/cheeseburger').meal(
-			(food) => food.hunger(4).decayModifier(1.3),
-			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.1)]
-		)
-	});
-
-	// Tirage Mixture
-	event.recipes.gtceu.food_processor('tfg:tirage_mixture')
-		.itemInputs('#tfc:sweetener')
-		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
-		.itemOutputs('firmalife:tirage_mixture')
-		.duration(10)
-		.circuit(4)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	// Burger Patty
-	event.recipes.tfc.advanced_shapeless_crafting(
-		TFC.itemStackProvider.of('tfg:food/raw_burger_patty').copyFood(),
-		[
-			TFC.ingredient.notRotten('#tfg:foods/burger_meats'),
-			'#forge:tools/mortars'
-		]
-	).id('tfg:crafting/raw_burger_patty');
-
-	global.processorRecipe(event, 'raw_burger_patty', 20*1, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['#tfg:foods/burger_meats'],
-		itemOutputs: ['tfg:food/raw_burger_patty'],
-		notConsumable: ['gtceu:wire_extruder_mold'],
-		itemOutputProvider: TFC.isp.of('tfg:food/raw_burger_patty').copyFood()
-	});
-
-	// Rich Stock
-	event.recipes.tfc.pot(
-		[
-			'#tfg:foods/makes_rich_stock',
-			'#tfc:foods/vegetables',
-			'#forge:bones',
-			'tfc:powder/salt',
-			'tfg:spice/bay_leaf'
-		],
-		TFC.fluidStackIngredient('#tfg:clean_water', 1000),
-		20*15,
-		200
-		)
-		.fluidOutput(Fluid.of('tfg:rich_stock', 1000)
-	).id('tfg:pot/rich_stock');
-
-	global.processorRecipe(event, 'rich_stock', 20*5, GTValues.VA[GTValues.ULV], {
-		itemInputs: [
-			'#tfg:foods/makes_rich_stock',
-			'#tfc:foods/vegetables',
-			'#forge:bones',
-			'tfc:powder/salt',
-			'tfg:spice/bay_leaf'
-		],
-		fluidInputs: ['#tfg:clean_water 1000'],
-		fluidOutputs: [Fluid.of('tfg:rich_stock', 1000)]
-	});
-
-	// Light Stock
-	event.recipes.tfc.pot(
-		[
-			'#tfg:foods/makes_light_stock',
-			'#tfc:foods/vegetables',
-			'#forge:bones',
-			'tfc:powder/salt',
-			'firmalife:spice/basil_leaves'
-		],
-		TFC.fluidStackIngredient('#tfg:clean_water', 1000),
-		20*15,
-		200
-		)
-		.fluidOutput(Fluid.of('tfg:light_stock', 1000)
-	).id('tfg:pot/light_stock');
-
-	global.processorRecipe(event, 'light_stock', 20*5, GTValues.VA[GTValues.ULV], {
-		itemInputs: [
-			'#tfg:foods/makes_light_stock',
-			'#tfc:foods/vegetables',
-			'#forge:bones',
-			'tfc:powder/salt',
-			'firmalife:spice/basil_leaves'
-		],
-		fluidInputs: ['#tfg:clean_water 1000'],
-		fluidOutputs: [Fluid.of('tfg:light_stock', 1000)]
-	});
-
-	// Brown Gravy
-	global.processorRecipe(event, 'brown_gravy', 20*5, GTValues.VA[GTValues.ULV], {
-		itemInputs: [
-			'#tfc:foods/flour',
-			'firmalife:food/butter',
-			'tfg:spice/allspice'
-		],
-		fluidInputs: ['tfg:light_stock 1000', 'tfg:rich_stock 1000'],
-		fluidOutputs: [Fluid.of('tfg:brown_gravy', 2000)]
-	});
-
 	// Poutine
 	global.processorRecipe(event, 'poutine', 20*10, GTValues.VA[GTValues.LV], {
 		itemInputs: [
@@ -824,25 +385,6 @@ function registerTFGFoodRecipes(event) {
 			[(portion) => portion.nutrientModifier(0.8).saturationModifier(1)]
 		)
 	});
-
-	// Oatmeal
-	for (let i = 1; i <= 4; i++) {
-		global.processorRecipe(event, `oatmeal_${i}`, 20*15, GTValues.VA[GTValues.LV], {
-			itemInputs: [
-				'4x #tfc:bowls',
-				'tfc:food/oat_grain',
-				`${i}x #tfg:foods/usable_in_oatmeal`,
-				'#tfc:sweetener'
-			],
-			fluidInputs: ['#tfc:milks 1000'],
-			itemOutputs: ['4x tfg:food/oatmeal'],
-			circuit: i,
-			itemOutputProvider: TFC.isp.of('4x tfg:food/oatmeal').simpleModifier('tfg:add_bowl').meal(
-				(food) => food.hunger(5).water(5).saturation(1).decayModifier(1.4).grain(0.8).dairy(1.5),
-				[(portion) => portion.nutrientModifier(0.7).saturationModifier(0.7)]
-			)
-		});
-	};
 
 	// Sodium Dihydrogen Citrate
 	event.recipes.gtceu.chemical_reactor('tfg:sodium_dihydrogen_citrate')
@@ -868,21 +410,6 @@ function registerTFGFoodRecipes(event) {
 		itemOutputs: ['2x tfg:citric_acid_dust' ],
 		itemOutputProvider: TFC.isp.of('2x tfg:citric_acid_dust')
 	});
-
-	// Slice of "Cheese"
-	event.recipes.gtceu.food_processor('tfg:slice_of_cheese')
-		.itemInputs(
-			ChemicalHelper.get(TagPrefix.dust, 'gtceu:lactose', 1),
-			ChemicalHelper.get(TagPrefix.dust, 'tfg:cholesterol', 1),
-			ChemicalHelper.get(TagPrefix.dust, 'tfg:sodium_dihydrogen_citrate', 1),
-			ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 8)
-		)
-		.inputFluids('#tfg:clean_water 1000')
-		.itemOutputs('8x tfg:food/slice_of_cheese')
-		.duration(20 * 20)
-		.EUt(GTValues.VA[GTValues.LV])
-
-
 
 	//#region Spices
 
@@ -920,13 +447,6 @@ function registerTFGFoodRecipes(event) {
 
 	//#endregion
 
-	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['firmalife:food/cured_maize'],
-		fluidInputs: ['#tfg:clean_water 100'],
-		itemOutputs: ['firmalife:food/nixtamal'],
-		circuit: 1,
-		itemOutputProvider: TFC.isp.of('firmalife:food/nixtamal').copyFood()
-	});
 
 	//#endregion
 }

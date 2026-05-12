@@ -636,7 +636,7 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 	};
 
 	// Helper to split Fluid string into FluidStackIngredient.
-	const toFluidStack = (fluid) => {
+	const toFluidStackIngredient = (fluid) => {
 		if (!fluid) return null;
 		let parts = fluid.split(' ');
 		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
@@ -697,11 +697,115 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		if (formattedOutputItems && formattedOutputItems.length > 5) throw new Error(`Too many output items for generateMixingFoodRecipes recipe ID: 'tfg:mixing_bowl/${id}'`)
 
 		if (formattedInputItems.length > 0) recipe.itemIngredients(formattedInputItems);
-		if (inputFluid) recipe.fluidIngredient(toFluidStack(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
+		if (inputFluid) recipe.fluidIngredient(toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
 		
 		if (outputItem) recipe.outputItem(outputItem);
-		if (outputFluid) recipe.outputFluid(toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
+		if (outputFluid) recipe.outputFluid(toFluidStackIngredient(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
 		
 		recipe.id(`tfg:mixing_bowl/${id}`);
 	}
 };
+
+//#endregion
+//#region Meal Generator
+
+/**
+ * Function for generating pot, and food processor recipes for new meal items.
+ * Requires an input item and input fluid.
+ * @param {*} event 
+ * @param {Internal.Ingredient[]} inputItems Array of ingredients < 6. Ex. `['2x #tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product']`.
+ * @param {Internal.Fluid|Internal.Fluid[]} inputFluid Input fluid string. Ex. `'minecraft:water 1000'`. Can be array if pot recipe isnt used.
+ * @param {Internal.Fluid|Internal.Fluid[]|null} outputFluid Output fluid string. Ex. `'minecraft:water 1000'`. Can be array if pot recipe isnt used.
+ * @param {Internal.Item|null} outputItem Output item with count < 6. Ex. `'5x betterend:cave_pumpkin_pie_dough'`.
+ * @param {Boolean|null} genPotRecipe Wether to generate a pot recipe. Defaults to true.
+ * @param {Boolean|null} genProcessorRecipe Wether to generate a food processor recipe. Defaults to true.
+ * @param {Internal.ItemStackProvider|null} outputProvider Optional override for a custom output provider. Defaults to `TFC.isp.of(outputItem).copyOldestFood()`.
+ * @param {Number|null} circuit Optional field for setting a food processor circuit number.
+ * @param {Number|null} duration Optional field for setting recipe duration. Defaults to `10sec`.
+ * @param {Number|null} temp Optional field for setting pot recipe required temp. Defaults to `200C`.
+ * @param {Number|null} tier Optional field for setting processor tier voltage. `GTValues.VA[GTValues.LV]`.
+ * @param {String|null} idOverride Optional override to set a custom id. Defaults to outputItem, or outputFluid if outputItem isnt set.
+ */
+global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputFluid, outputItem, genPotRecipe, genProcessorRecipe, outputProvider, circuit, duration, temp, tier, idOverride) {
+	genPotRecipe = genPotRecipe !== false;
+	genProcessorRecipe = genProcessorRecipe !== false;
+	let recipeDuration = duration ? duration : 200;
+
+	// Normalize items to TFC ingredients.
+	if (typeof inputItems === 'string') inputItems = [inputItems];
+	const formattedInputItems = global.ingredientStackInputParser(inputItems);
+	
+	// Format outputs just for error handling.
+	const formattedOutputItems = outputItem && global.ingredientStackInputParser(outputItem);
+
+	let id;
+	if (idOverride) {
+		id = global.linuxUnfucker(idOverride);
+	} else {
+		id = outputItem ? global.linuxUnfucker(outputItem) : global.linuxUnfucker(outputFluid);
+	};
+
+	// Helper to split Fluid string into FluidStackIngredient.
+	const toFluidStackIngredient = (fluid) => {
+		if (!fluid) return null;
+		let parts = fluid.split(' ');
+		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
+	};
+	// Helper to split Fluid string into FluidStack.
+	const toFluidStack = (fluid) => {
+		if (!fluid) return null;
+		let parts = fluid.split(' ');
+		return Fluid.of(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
+	};
+
+	if (genProcessorRecipe) {
+		let processorData = {};
+		let processorTier = tier ? tier : GTValues.VA[GTValues.LV];
+
+		if (circuit != null) processorData.circuit = circuit;
+		if (inputItems) processorData.itemInputs = inputItems;
+		if (inputFluid) processorData.fluidInputs = typeof inputFluid === 'string' ? [inputFluid] : inputFluid;
+		
+		if (outputItem) {
+			processorData.itemOutputs = [outputItem];
+			if (outputProvider) {
+				processorData.itemOutputProvider = outputProvider
+			} else {
+			processorData.itemOutputProvider = TFC.isp.of(outputItem).copyOldestFood();
+			}
+		}
+		if (outputFluid) {
+			processorData.fluidOutputs = typeof outputFluid === 'string' ? [outputFluid] : outputFluid;
+		}
+
+		global.processorRecipe(event, id, recipeDuration, processorTier, processorData);
+	}
+
+	if (genPotRecipe) {
+		if (formattedInputItems.length > 5) throw new Error(`Too many input items for generateMealFoodRecipes recipe ID: 'tfg:pot/${id}'`)
+
+		let potTemp = temp ? temp : 200;
+		let potInputFluid = toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0])
+		if (outputFluid) {
+			let potOutputFluid = toFluidStackIngredient(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
+		}
+		let recipe = event.recipes.tfc.pot(formattedInputItems, potInputFluid, recipeDuration, potTemp);
+
+		if (outputItem) {
+			if (outputProvider) {
+				recipe.itemOutput = outputProvider
+			} else {
+			recipe.itemOutput = TFC.isp.of(outputItem).copyOldestFood();
+			}
+		}
+		if (outputFluid) recipe.fluidOutput(
+			//Fluid.of('minecraft:water', 50)
+			toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
+		);
+		
+		recipe.id(`tfg:pot/${id}`);
+		
+	}
+};
+
+//#endregion

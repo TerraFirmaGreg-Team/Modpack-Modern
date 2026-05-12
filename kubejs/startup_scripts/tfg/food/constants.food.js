@@ -546,8 +546,8 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		texture: 'tfg:item/food/slice_of_cheese',
 		nutrition: {
 			decay: 0.1,
-			dairy: 1.0,
-			microplastics: 2.0
+			dairy: 0.2,
+			microplastics: 0.4
 		},
 		returnItem: 'gtceu:polyethylene_foil',
 		tags: ['tfc:foods/usable_in_jam_sandwich', 'tfc:foods/usable_in_sandwich', 'tfg:foods/usable_in_meal_bag', 'tfc:foods/dairy', 'tfg:foods/microplastics']
