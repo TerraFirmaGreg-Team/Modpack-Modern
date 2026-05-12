@@ -54,7 +54,7 @@
       "type": "tfc:quern_recipe",
       "title": "Pokruszona ruda",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
+      "text": "$(l:tfg_ores/ore_basics#processing)Rudy$() mogą zostać pokruszone, żeby otrzymać więcej metalu."
     },
     {
       "type": "tfc:quern_recipe",
