@@ -4,6 +4,8 @@
 ### Changes
 - Increased the render distance in the beneath @Pyritie
 - Reduced the costs of mechanical harvesters, mechanical plows, and display boards
+- Advancedperipherals Inventory Manager is now gated at LuV @ashleney
+- Barrels can't be used in railguns @ashleney
 ### Bug fixes
 - Fix whisk recycling @Ashleney
 - I am once again fixing a linux crash @Pyritie

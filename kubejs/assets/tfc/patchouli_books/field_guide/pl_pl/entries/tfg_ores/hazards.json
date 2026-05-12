@@ -61,17 +61,17 @@
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "Następnie nasącz $(thing)rękawice$() w $(thing)occie$(), mieszaninie owoców i alkoholu."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Przygotowane rękawice skórzane $(thing)$() muszą być następnie wypalone w kadzi $(thing)$() z $(thing)wulkanizowanym lateksem$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Wreszcie rękawice nasączone lateksem muszą być wysuszone w $(l:firmalife/ovens)piecu$()."
 		},
 		{
 			"type": "patchouli:spotlight",

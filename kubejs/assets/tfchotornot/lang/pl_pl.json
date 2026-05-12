@@ -35,6 +35,10 @@
   "item.tfchotornot.tongs.wood": "Szczypce z drewna",
   "item.tfchotornot.tongs.wrought_iron": "Szczypce z kutego żelaza",
   "item.tfchotornot.tongs.zinc": "Szczypce z cynku",
+  "item.tfchotornot.wool_potholder": "Wełniana łapka do garnków",
+  "message.tfchotornot.item_getting_hot": "Ostrożnie! Twoja druga ręka przegrzewa się!",
   "tfchotornot.creative_tab.tfchotornot": "TFC Hot or Not",
-  "tooltip.tfchotornot.toohot": "Zbyt gorący by chwycić!"
+  "tooltip.tfchotornot.toocold": "Zbyt zimne, by chwycić!",
+  "tooltip.tfchotornot.toohot": "Zbyt gorący by chwycić!",
+  "tooltip.tfchotornot.toolight": "Zbyt lekkie, by chwycić!"
 }
