@@ -178,6 +178,14 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.asphalt_rubble.usage'))
 	})
 
+	event.addAdvanced(['tfg:asphalt_road', 'tfg:asphalt_road_slab'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_road.marking'))
+		text.add(2, Text.translate('tfg.tooltip.asphalt_road.solvent'))
+	})
+	event.addAdvanced(['tfg:asphalt_road_hot'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_road_hot.hazard'))
+	})
+
 	let roadMaskIds = [
         "arrow", "corner", "cross", "line", 
         "line_slash_l", "line_slash_r", 
