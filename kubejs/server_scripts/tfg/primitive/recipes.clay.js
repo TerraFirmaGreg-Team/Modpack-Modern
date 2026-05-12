@@ -223,18 +223,23 @@ function registerTFGClayRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	//Hardened Clay
+	event.custom({
+		type:"firmalife:drying",
+		ingredient:{item:"minecraft:clay"},
+		result:{item:"tfg:hardened_clay"}}).id("tfg:drying_clay_hardened_clay")
+
 	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
 		.itemInputs('minecraft:clay')
-		.outputFluids(Fluidof('minecraft:water', 250))
+		.outputFluids(Fluid.of('minecraft:water', 250))
 		.itemOutputs('tfg:hardened_clay')
 		.duration(400)
 		.EUt(6)
 
-	global.processorRecipeText(event, `tfg/drying`, 400, 16, "tfg.clay.drying", {
+	global.processorRecipe(event, `drying_clay`, 200, 16, {
 		circuit: 6,
 		itemInputs: ['minecraft:clay'],
-		itemOutputs: ['tfg:hardened_clay'],
-		fluidInputs: ['gtceu:nitrogen', 100]
+		fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
+		itemOutputs: ['tfg:hardened_clay']
 	})
 
 	// heating
