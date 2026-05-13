@@ -194,9 +194,10 @@ const registerTooltips = (event) => {
         "num_5", "num_6", "num_7", "num_8", "num_9",
         "number"
     ];
-	let allStencilIds = roadMaskIds.map(mask => `tfg:asphalt_road_stencil_${mask}`);
-	event.addAdvanced(allStencilIds, (item, advanced, text) => {
-		text.add(1, Text.translate('tfg.tooltip.asphalt_stencil.hands'))
+	roadMaskIds.forEach(mask => {
+		event.addAdvanced([`tfg:asphalt_road_stencil_${mask}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.asphalt_road_stencil.usage'))
+		})
 	})
 
 	//#endregion
