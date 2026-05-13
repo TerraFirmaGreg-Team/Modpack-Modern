@@ -469,7 +469,7 @@
   "block.afc.wood.planks.ipe_pressure_plate": "Płytka naciskowa z ipe",
   "block.afc.wood.planks.ipe_sign": "Tabliczka z ipe",
   "block.afc.wood.planks.ipe_slab": "Płyta z ipe",
-  "block.afc.wood.planks.ipe_stairs": "Schody z ipe",
+  "block.afc.wood.planks.ipe_stairs": "Schody z drewna ipe",
   "block.afc.wood.planks.ipe_tool_rack": "Stojak na narzędzia z ipe",
   "block.afc.wood.planks.ipe_trapdoor": "Klapa z ipe",
   "block.afc.wood.planks.ipe_workbench": "Stół rzemieślniczy z ipe",
@@ -513,8 +513,8 @@
   "block.afc.wood.planks.teak_loom": "Tekowe krosno",
   "block.afc.wood.planks.teak_pressure_plate": "Tekowa płytka naciskowa",
   "block.afc.wood.planks.teak_sign": "Tekowa tabliczka",
-  "block.afc.wood.planks.teak_slab": "Tekowa płyta",
-  "block.afc.wood.planks.teak_stairs": "Tekowe schody",
+  "block.afc.wood.planks.teak_slab": "Teczynowa płyta",
+  "block.afc.wood.planks.teak_stairs": "Teczynowe schody",
   "block.afc.wood.planks.teak_tool_rack": "Tekowy stojak na narzędzia",
   "block.afc.wood.planks.teak_trapdoor": "Tekowa klapa",
   "block.afc.wood.planks.teak_workbench": "Tekowy stół rzemieślniczy",
@@ -871,5 +871,5 @@
   "tooltip.afc.tap.fluid": "Ciecz: ",
   "tooltip.afc.tap.no_recipe": "Brak receptury dla tego pnia",
   "tooltip.afc.tap.spring": "Wiosna: ",
-  "tooltip.afc.tap.temp_range": "Zakres temperatury pracy: "
+  "tooltip.afc.tap.temp_range": "Zakres temperatury: "
 }

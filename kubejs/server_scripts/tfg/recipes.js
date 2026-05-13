@@ -25,6 +25,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGCollapseRecipes(event)
 	registerTFGStoneDustRecipes(event)
 	registerTFGConcreteRecipes(event)
+	registerTFGAsphaltRoadRecipes(event)
 	registerTFGAlabasterRecipes(event)
 	registerTFGDirtRecipes(event)
 	registerTFGSandRecipes(event)

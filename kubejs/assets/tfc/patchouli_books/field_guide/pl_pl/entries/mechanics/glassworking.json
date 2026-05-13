@@ -16,7 +16,7 @@
     },
     {
       "type": "patchouli:smelting",
-      "anchor": "proch jasnozielony",
+      "anchor": "lime",
       "recipe": "tfg:smelting/lime",
       "text": "$(thing)Lime$() is one of the ingredients required to make glass batches. It is a powder obtained by $(l:mechanics/heating)heating$() $(l:mechanics/flux)Flux$()."
     },
@@ -34,7 +34,7 @@
     },
     {
       "type": "tfc:knapping_recipe",
-      "anchor": "dmuchawa",
+      "anchor": "blowpipe",
       "recipe": "tfc:clay_knapping/blowpipe",
       "text": "The most important tool is the $(thing)Blowpipe$(). It can be $(thing)knapped$() from clay, and then fired into a $(thing)Ceramic Blowpipe$()."
     },
@@ -45,19 +45,19 @@
     },
     {
       "type": "patchouli:crafting",
-      "anchor": "wiosło",
+      "anchor": "paddle",
       "recipe": "tfc:crafting/paddle",
       "text": "The $(thing)Flatten$() operation can be done with a $(thing)Paddle$(), which is crafted from wood."
     },
     {
       "type": "tfc:welding_recipe",
-      "anchor": "podnośniki",
+      "anchor": "jacks",
       "recipe": "tfc:welding/jacks",
       "text": "The $(thing)Pinch$() operation can be done with $(thing)Jacks$(), made from welding two brass rods together."
     },
     {
       "type": "patchouli:crafting",
-      "anchor": "cięcie",
+      "anchor": "saw",
       "recipe": "tfc:crafting/gem_saw",
       "text": "The $(thing)Saw$() operation can be done with a $(thing)Gem Saw$(). The gem saw is also used to break both $(thing)Glass Blocks$() and $(thing)Glass Panes$() and obtain them."
     },
