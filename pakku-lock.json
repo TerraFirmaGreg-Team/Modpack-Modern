@@ -1204,50 +1204,54 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "afc-1.0.20-1.20.1.jar",
+                    "file_name": "afc-1.0.22-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7200/580/afc-1.0.20-1.20.1.jar",
-                    "id": "7200580",
+                    "url": "https://edge.forgecdn.net/files/8071/302/afc-1.0.22-1.20.1.jar",
+                    "id": "8071302",
                     "parent_id": "877545",
                     "hashes": {
-                        "sha1": "0a06e8bc356c10941324657d74bf2dd2a082c892",
-                        "md5": "305aaf41433488cdb43ca52a0415d3c1"
+                        "sha1": "2da6328fbd2a9c911547617057e520838d36c175",
+                        "md5": "50f02cdeb307b57674ecc7d593368084"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 5138158,
-                    "date_published": "2025-11-08T21:55:56.050Z"
+                    "size": 5179203,
+                    "date_published": "2026-05-11T00:10:05.993Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "afc-1.0.20-1.20.1.jar",
+                    "file_name": "afc-1.0.22-1.20.1.jar",
                     "mc_versions": [
-                        "1.20.1"
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/pn3lpkuA/afc-1.0.20-1.20.1.jar",
-                    "id": "pn3lpkuA",
+                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/Tnswfgx5/afc-1.0.22-1.20.1.jar",
+                    "id": "Tnswfgx5",
                     "parent_id": "9q4wtMjp",
                     "hashes": {
-                        "sha512": "1cde189f8f66a6cb23a97280dd5ffcadb1626b57d4332dd9d138b87766975a5296ee61b36da19fde99c93a5cc69abc0612291b601937bef0c3516ab32e10a300",
-                        "sha1": "0a06e8bc356c10941324657d74bf2dd2a082c892"
+                        "sha512": "51d6a95554b528c00c59f90cb477cdbd30be4f986e8c9fd8c58df0dad40db84af384a35a0e37384e6eda9297e04df186b56ef64fcfe70b77fd765d0970d1cfe2",
+                        "sha1": "2da6328fbd2a9c911547617057e520838d36c175"
                     },
-                    "required_dependencies": [
-                        "JaCEZUhg"
-                    ],
-                    "size": 5138158,
-                    "date_published": "2025-11-08T21:56:38.003314Z"
+                    "required_dependencies": [],
+                    "size": 5179203,
+                    "date_published": "2026-05-11T00:09:23.559078Z"
                 }
             ]
         },
@@ -15362,7 +15366,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.21.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15371,22 +15375,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7730/77/TerraFirmaCraft-Forge-1.20.1-3.2.21.jar",
-                    "id": "7730077",
+                    "url": "https://edge.forgecdn.net/files/8063/607/TerraFirmaCraft-Forge-1.20.1-3.2.22.jar",
+                    "id": "8063607",
                     "parent_id": "302973",
                     "hashes": {
-                        "sha1": "3edecb24918907d3a358e8688977df8f72855d17",
-                        "md5": "ab9e3d655fe9fcf4bcf5db798cf71b26"
+                        "sha1": "b8d549900ac215a4eb52033208be2362c9ad96d9",
+                        "md5": "e7ae982aefeee67d8d9112c0838f976c"
                     },
                     "required_dependencies": [
                         "306770"
                     ],
-                    "size": 47421359,
-                    "date_published": "2026-03-08T17:40:58.773Z"
+                    "size": 47420618,
+                    "date_published": "2026-05-09T15:27:18.090Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.21.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15395,18 +15399,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/JaCEZUhg/versions/YOWlaJch/TerraFirmaCraft-Forge-1.20.1-3.2.21.jar",
-                    "id": "YOWlaJch",
+                    "url": "https://cdn.modrinth.com/data/JaCEZUhg/versions/oa33yuzy/TerraFirmaCraft-Forge-1.20.1-3.2.22.jar",
+                    "id": "oa33yuzy",
                     "parent_id": "JaCEZUhg",
                     "hashes": {
-                        "sha512": "fc47f9a9a03e053c77345bb4106a608dc8d204f646c44cace832a4da580a1f287ce55c2b9bd3d53f77bd970a12f459d2c0b6b4ce35c1296bc799053f5dc9d9e7",
-                        "sha1": "3edecb24918907d3a358e8688977df8f72855d17"
+                        "sha512": "b719d19d168f634259ad332f62103daa4bc9f8ac29fb96d36a97d2043f87000e92b509add0e3a58b6573b58974d9690bd6d9b7f3cb84ef39b18fa79afc2a0fa8",
+                        "sha1": "b8d549900ac215a4eb52033208be2362c9ad96d9"
                     },
                     "required_dependencies": [
                         "nU0bVIaL"
                     ],
-                    "size": 47421359,
-                    "date_published": "2026-03-08T17:41:05.678974Z"
+                    "size": 47420618,
+                    "date_published": "2026-05-09T15:27:22.337736Z"
                 }
             ]
         },
