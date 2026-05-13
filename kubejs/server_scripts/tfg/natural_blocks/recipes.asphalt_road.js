@@ -36,18 +36,12 @@ function registerTFGAsphaltRoadRecipes(event) {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	const tarMacerateToCarbon = (suffix, blockId) => {
-		event.recipes.gtceu.macerator(`tfg:asphalt/macerate/${suffix}`)
-			.itemInputs(`1x ${blockId}`)
-			.itemOutputs('1x gtceu:carbon_dust')
-			.chancedOutput('1x #forge:dusts/gilsonite', 2500, 0)
-			.duration(160)
-			.EUt(GTValues.VH[GTValues.LV])
-	}
-	tarMacerateToCarbon('oil_tar', 'tfg:oil_tar')
-	tarMacerateToCarbon('raw_oil_tar', 'tfg:raw_oil_tar')
-	tarMacerateToCarbon('light_oil_tar', 'tfg:light_oil_tar')
-	tarMacerateToCarbon('heavy_oil_tar', 'tfg:heavy_oil_tar')
+	event.recipes.gtceu.macerator('tfg:asphalt/macerate/tar_to_carbon')
+		.itemInputs('1x #tfg:asphalt_tars')
+		.itemOutputs('1x gtceu:carbon_dust')
+		.chancedOutput('1x #forge:dusts/gilsonite', 2500, 0)
+		.duration(160)
+		.EUt(GTValues.VH[GTValues.LV])
 
 	event.recipes.gtceu.mixer('tfg:asphalt/binder')
 		.itemInputs('1x tfg:tar_chunk', '4x #tfg:stone_dusts')
