@@ -6,6 +6,7 @@
 - Reduced the costs of mechanical harvesters, mechanical plows, and display boards
 - Advancedperipherals Inventory Manager is now gated at LuV @ashleney
 - Barrels can't be used in railguns @ashleney
+- Craft Lamp Glass by 4 rather that 1 @TomPlop
 ### Bug fixes
 - Fix whisk recycling @Ashleney
 - I am once again fixing a linux crash @Pyritie
