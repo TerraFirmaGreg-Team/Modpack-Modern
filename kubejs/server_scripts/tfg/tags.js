@@ -256,7 +256,18 @@ const registerTFGItemTags = (event) => {
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_panel')
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_sett')
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_flagstones')
-	
+
+	const ASPHALT_TARS = [
+		'tfg:oil_tar',
+		'tfg:raw_oil_tar',
+		'tfg:light_oil_tar',
+		'tfg:heavy_oil_tar',
+	]
+
+	ASPHALT_TARS.forEach(id => {
+		event.add('tfg:asphalt_tars', id)
+	})
+
 	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
@@ -292,6 +303,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+
+	event.add('tfg:functional_asphalt_roads', 'tfg:asphalt_road')
+	event.add('tfg:functional_asphalt_road_stairs', 'tfg:asphalt_road_stairs')
+	event.add('tfg:functional_asphalt_road_slabs', 'tfg:asphalt_road_slab')
 }
 //#endregion
 

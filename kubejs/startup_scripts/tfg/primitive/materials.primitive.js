@@ -90,6 +90,13 @@ function registerTFGPrimitiveMaterials(event) {
 		.formula("Al2Si2O5(OH)4")
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+	event.create('tfg:gilsonite')
+		.dust()
+		.color(0x343434)
+		.secondaryColor(0x1F1F1F)
+		.iconSet(GTMaterialIconSet.DULL)
+		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
 	// Ores need to be in the default namespace
 	event.create('lignite')
 		.components('1x carbon')

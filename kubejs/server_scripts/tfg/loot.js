@@ -99,6 +99,18 @@ function registerTFGLoots(event) {
 			})
 		.addLoot('tfg:large_nest_box')
 
+	const ASPHALT_ROAD_BLOCKS = [
+		'tfg:asphalt_road',
+		'tfg:asphalt_road_hot',
+		'tfg:asphalt_road_slab',
+		'tfg:asphalt_road_stairs'
+	]
+	ASPHALT_ROAD_BLOCKS.forEach(block => {
+		event.addBlockLootModifier(block)
+			.removeLoot(Ingredient.all)
+			.addLoot('tfg:asphalt_rubble')
+	})
+
 	//#endregion
 
 	//Cross-mod glass compat

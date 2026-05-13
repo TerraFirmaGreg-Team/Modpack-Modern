@@ -19,7 +19,8 @@ const registerTFGItems = (event) => {
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
 	registerTFGAquaponicsItems(event);
-	
+	registerTFGAsphaltRoadItems(event);
+
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
 
