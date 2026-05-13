@@ -1,6 +1,5 @@
 "use strict";
 
-
 /**
  * This file is for recipes related to dairy products like cheese/milk.
  */

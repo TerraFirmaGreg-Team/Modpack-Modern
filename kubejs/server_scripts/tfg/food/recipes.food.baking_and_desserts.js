@@ -40,10 +40,10 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		// Flatbread dough
 		global.processorRecipe(event, `${grain}_flatbread_dough`, 300, 8, {
 			itemInputs: [`tfc:food/${grain}_flour`],
-			itemOutputs: [`2x tfc:food/${grain}_dough`],
+			itemOutputs: [`4x tfc:food/${grain}_dough`],
 			circuit: 1,
 			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_dough`).copyFood()
+			itemOutputProvider: TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood()
 		});
 
 		// Firmalife dough
@@ -65,36 +65,6 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 			itemOutputs: [`2x firmalife:food/${grain}_slice`],
 			itemOutputProvider: TFC.isp.of(`2x firmalife:food/${grain}_slice`).copyOldestFood()
 		});
-	});
-
-	// Maize Grain
-	global.processorRecipe(event, `masa_flour`, 100, 8, {
-		circuit: 31,
-		itemInputs: [`firmalife:food/nixtamal`],
-		itemOutputs: [`4x firmalife:food/masa_flour`],
-		itemOutputProvider: TFC.isp.of(`4x firmalife:food/masa_flour`).copyOldestFood()
-	});
-
-	event.recipes.tfc.advanced_shaped_crafting(
-		TFC.isp.of(`4x firmalife:food/masa_flour`).copyFood(), ['A', 'B'], {
-			A: TFC.ingredient.notRotten(`firmalife:food/nixtamal`),
-			B: '#forge:tools/mortars'
-		}, 0, 0).id(`tfg:mortar/masa_flour`);
-
-	global.processorRecipe(event, 'firmalife_masa', 300, 2, {
-		circuit: 3,
-		itemInputs: ['firmalife:food/masa_flour'],
-		fluidInputs: ['#tfg:clean_water 100'],
-		itemOutputs: ['2x firmalife:food/masa'],
-		itemOutputProvider: TFC.isp.of('2x firmalife:food/masa').copyFood()
-	});
-	
-	global.processorRecipe(event, 'nixtamal', 20*30, GTValues.VA[GTValues.ULV], {
-		itemInputs: ['firmalife:food/cured_maize'],
-		fluidInputs: ['#tfg:clean_water 100'],
-		itemOutputs: ['firmalife:food/nixtamal'],
-		circuit: 1,
-		itemOutputProvider: TFC.isp.of('firmalife:food/nixtamal').copyFood()
 	});
 
 	// Brioche Dough

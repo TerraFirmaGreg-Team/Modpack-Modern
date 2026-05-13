@@ -809,3 +809,62 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 };
 
 //#endregion
+//#region Cutting Generator
+
+/**
+ * Function for generating shapeless, and food processor recipes for cutting food stuff like pumpkins.
+ * @param {*} event
+ * @param {Internal.Ingredient} inputItem Block input to cut. Ex. `'tfc:pumpkin'`
+ * @param {Internal.Item} outputItem Item stack output. Ex. `'4x tfc:food/pumpkin_chunks'`
+ * @param {Boolean|null} genShapelessKnifeRecipe Wether to generate shapeless knife recipe. Defaults to false.
+ * @param {Boolean|null} genShapelessHammerRecipe Wether to generate shapeless hammer recipe. Defaults to false.
+ * @param {Boolean|null} genShapelessMortarRecipe Wether to generate shapeless mortar and pestle recipe. Defaults to false.
+ * @param {Boolean|null} genProcessorRecipe Wether to generate a processor recipe. Defaults to true.
+ * @param {Number|null} circuitOverride Circuit number override for the processor recipe. Defaults to 30.
+ */
+global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genShapelessKnifeRecipe, genShapelessHammerRecipe, genShapelessMortarRecipe, genProcessorRecipe, circuitOverride) {
+	genShapelessKnifeRecipe = genShapelessKnifeRecipe === true;
+	genShapelessHammerRecipe = genShapelessHammerRecipe === true;
+	genShapelessMortarRecipe = genShapelessMortarRecipe === true;
+	genProcessorRecipe = genProcessorRecipe !== false;
+	let circuit = circuitOverride ? circuitOverride : 30;
+	let parsedInputItem;
+
+	if (TFC.misc.hasFood(inputItem)) {
+		parsedInputItem = TFC.ingredient.notRotten(inputItem);
+	} else {
+		parsedInputItem = inputItem;
+	}
+
+	if (genShapelessKnifeRecipe) {
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of(outputItem).copyFood(),
+			[parsedInputItem, '#tfc:knives'], inputItem)
+			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_knife`);
+	}
+
+	if (genShapelessHammerRecipe) {
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of(outputItem).copyFood(),
+			[parsedInputItem, '#forge:tools/hammers'], inputItem)
+			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_hammer`);
+	}
+
+	if (genShapelessMortarRecipe) {
+		event.recipes.tfc.advanced_shapeless_crafting(
+			outputItem,
+			[parsedInputItem, '#forge:tools/mortars'], inputItem)
+			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_mortar`);
+	}
+
+	if (genProcessorRecipe) {
+		global.processorRecipe(event, global.linuxUnfucker(outputItem), 100, 8, {
+			circuit: circuit,
+			itemInputs: [inputItem],
+			itemOutputs: [outputItem],
+			itemOutputProvider: TFC.itemStackProvider.of(outputItem).copyFood()
+		});
+	}
+};
+
+//#endregion

@@ -1,6 +1,5 @@
 "use strict";
 
-
 /**
  * This file is for recipes related to sandwich-adjacent items.
  * Is a hotdog a sandwich?...

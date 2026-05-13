@@ -1,6 +1,5 @@
 "use strict";
 
-
 /**
  * This file is for recipes related to pizzas and pastas.
  */
@@ -40,7 +39,6 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 	//#endregion
 	//#region Noodles
 
-	// TODO: this has nutrition dynamically set in the pot recipe, can we do that here?
 	global.processorRecipe(event, `egg_noodles`, 50, 8, {
 		circuit: 6,
 		itemInputs: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
@@ -78,6 +76,8 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 		itemOutputs: ['firmalife:food/raw_lasagna'],
 		itemOutputProvider: TFC.isp.of('firmalife:food/raw_lasagna').firmaLifeCopyDynamicFood()
 	});
+	
+	event.replaceInput({id: 'firmalife:crafting/lasagna'},'firmalife:plant/oregano','tfg:spice/oregano_leaves');
 
 	//#endregion
 	//#region Ingredients

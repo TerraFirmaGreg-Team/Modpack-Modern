@@ -1,6 +1,5 @@
 "use strict";
 
-
 /**
  * This file is for recipes related to soups, sauces, stews, stocks, porridge, etc.
  */
