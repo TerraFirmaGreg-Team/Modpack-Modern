@@ -167,9 +167,9 @@ const registerTFGItemTags = (event) => {
 	//tag unfinished tracks for emi++ grouping
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_wide`)	
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_wide`)	
 	})
 	
 	const OTHER_TRACKS = [
@@ -180,12 +180,12 @@ const registerTFGItemTags = (event) => {
 	]
 	
 	OTHER_TRACKS.forEach(rail => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_wide`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_wide`)
 	})
 	
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_monorail`)
+	event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_monorail`)
 	
 	// tag locometal blocks (minus (trap)doors) for emi++ grouping
 
