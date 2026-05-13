@@ -17,7 +17,7 @@
 			"item": "tfg:marker/moon",
 			"title": "Księżycowe zwierzęta",
 			"text": "$(item)The Moon$() may be pretty barren, but it still has a few animals that call it home.$(br2)It's considered a $(thing)Cold$() world despite the pretty extreme temperature swings.",
-			"anchor": "księżyc"
+			"anchor": "moon"
 		},
 		{
 			"type": "patchouli:entity",
