@@ -164,7 +164,8 @@ const registerTFGItemTags = (event) => {
 		event.add("c:hidden_from_recipe_viewers", glassLens);
 	});
 	
-	//tag unfinished tracks for emi++ grouping
+	event.add('tfg:track_rods', '#forge:rods/long/wrought_iron')
+	event.add('tfg:track_rods', '#forge:rods/steel')
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
 		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)

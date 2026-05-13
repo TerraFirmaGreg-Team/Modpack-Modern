@@ -84,49 +84,4 @@ const registerTFGItems = (event) => {
 	event.create('tfg:worked_optical_borosilicate_blank')
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
-
-	// Train Tracks
-	const OTHER_TRACKS = [
-		'blackstone', 'tieless', 'acacia', 'birch', 'cherry', 'jungle', 'spruce', 'crimson', 'warped', 'stripped_bamboo', 'bamboo'
-	]
-
-	event.create('tfg:track_incomplete_create_andesite_steel', 'create:sequenced_assembly')
-		.texture('railways:item/track_incomplete/track_incomplete_create_andesite')
-		.tag('c:hidden_from_recipe_viewers')
-
-	event.create('tfg:track_incomplete_create_andesite_narrow_steel', 'create:sequenced_assembly')
-		.texture('railways:item/track_incomplete/track_incomplete_create_andesite_narrow')
-		.tag('c:hidden_from_recipe_viewers')
-
-	event.create('tfg:track_incomplete_create_andesite_wide_steel', 'create:sequenced_assembly')
-		.texture('railways:item/track_incomplete/track_incomplete_create_andesite_wide')
-		.tag('c:hidden_from_recipe_viewers')
-	
-	OTHER_TRACKS.forEach(type => {
-		event.create(`tfg:track_incomplete_${type}_steel`, 'create:sequenced_assembly')
-			.texture(`railways:item/track_incomplete/track_incomplete_${type}`)
-			.tag('c:hidden_from_recipe_viewers')
-
-		event.create(`tfg:track_incomplete_${type}_narrow_steel`, 'create:sequenced_assembly')
-			.texture(`railways:item/track_incomplete/track_incomplete_${type}_narrow`)
-			.tag('c:hidden_from_recipe_viewers')
-			
-		event.create(`tfg:track_incomplete_${type}_wide_steel`, 'create:sequenced_assembly')
-			.texture(`railways:item/track_incomplete/track_incomplete_${type}_wide`)
-			.tag('c:hidden_from_recipe_viewers')
-	})
-
-	global.TFC_WOOD_TYPES.forEach(woodType => {
-		event.create(`tfg:track_incomplete_tfc_${woodType}_steel`, 'create:sequenced_assembly')
-			.texture(`tfc:item/track_incomplete/track_incomplete_${woodType}`)
-			.tag('c:hidden_from_recipe_viewers')
-
-		event.create(`tfg:track_incomplete_tfc_${woodType}_narrow_steel`, 'create:sequenced_assembly')
-			.texture(`tfc:item/track_incomplete/track_incomplete_${woodType}_narrow`)
-			.tag('c:hidden_from_recipe_viewers')
-
-		event.create(`tfg:track_incomplete_tfc_${woodType}_wide_steel`, 'create:sequenced_assembly')
-			.texture(`tfc:item/track_incomplete/track_incomplete_${woodType}_wide`)
-			.tag('c:hidden_from_recipe_viewers')
-	})
 }
