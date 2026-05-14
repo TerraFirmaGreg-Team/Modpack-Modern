@@ -292,40 +292,40 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 
 /**
  * Function to generate boiling recipes for a food item using water.
- * Can create pot, vat, and processor recipes depending on parameters.
+ * Can create pot, vat, and food oven recipes depending on parameters.
  * @param {*} event 
  * @param {Item} inputItem The item ID of the food item to be boiled.
  * @param {Item} outputItem The item ID of the resulting boiled food item.
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
- * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
- * @param {Number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} genOvenRecipe Whether to also generate a food oven recipe to match.
+ * @param {Number|null} circuit The circuit value for the food oven recipe.
  * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit, copyDynamic) {
+global.generateWaterBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit, copyDynamic) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateWaterBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
-	global.generateFluidBoilingFoodRecipes(event, '#tfg:clean_water', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit);
+	global.generateFluidBoilingFoodRecipes(event, '#tfg:clean_water', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit);
 };
 
 /**
  * Function to generate boiling recipes for a food item using oil.
- * Can create pot, vat, and processor recipes depending on parameters.
+ * Can create pot, vat, and food oven recipes depending on parameters.
  * @param {*} event 
  * @param {Item} inputItem The item ID of the food item to be boiled.
  * @param {Item} outputItem The item ID of the resulting boiled food item.
  * @param {Boolean|null} genPotRecipe Whether to also generate a pot recipe to match.
  * @param {Boolean|null} genVatRecipe Whether to also generate a vat recipe to match.
- * @param {Boolean|null} genProcessorRecipe Whether to also generate a processor recipe to match.
- * @param {Number|null} circuit The circuit value for the processor recipe.
+ * @param {Boolean|null} genOvenRecipe Whether to also generate a food oven recipe to match.
+ * @param {Number|null} circuit The circuit value for the food oven recipe.
  * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit, copyDynamic) {
+global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit, copyDynamic) {
 	if (!inputItem || !outputItem) {
 		throw new Error(`Missing parameters for generateOilBoilingFoodRecipes: inputItem=${inputItem}, outputItem=${outputItem}`);
 	};
-	global.generateFluidBoilingFoodRecipes(event, '#firmalife:oils', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genProcessorRecipe, circuit);
+	global.generateFluidBoilingFoodRecipes(event, '#firmalife:oils', 100, inputItem, outputItem, genPotRecipe, genVatRecipe, genOvenRecipe, circuit);
 };
 
 //#endregion
