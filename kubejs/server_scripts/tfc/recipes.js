@@ -309,4 +309,17 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
 		.id('tfg:shapeless/driftwood_to_stick')
+
+	// Buff Lamp Glass for easier early game
+	event.remove({ id: 'tfc:glassworking/lamp_glass'})
+	event.recipes.tfc.glassworking(
+        '4x tfc:lamp_glass',
+        '#tfc:glass_batches',
+        [
+            'blow',
+            'flatten',
+			'blow',
+			'saw'
+        ]
+    ).id('tfg:glassworking/lamp_glass')
 }
