@@ -552,12 +552,7 @@ global.ingredientStackInputParser = function(inputArray) {
 
 		// Loop through the count of each item and push to the new array with ingredient handler.
 		for (let i = 0; i < count; i++) {
-			// If it is a food item add the notRotten condition.
-			if (TFC.misc.hasFood(item)) {
-				formattedInputs.push(TFC.ingredient.notRotten(item));
-			} else {
-				formattedInputs.push(item);
-			}
+			formattedInputs.push(TFC.ingredient.notRotten(item));
 		};
 	});
 
@@ -799,7 +794,6 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 			}
 		}
 		if (outputFluid) recipe.fluidOutput(
-			//Fluid.of('minecraft:water', 50)
 			toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
 		);
 		
@@ -830,11 +824,7 @@ global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genSh
 	let circuit = circuitOverride ? circuitOverride : 30;
 	let parsedInputItem;
 
-	if (TFC.misc.hasFood(inputItem)) {
-		parsedInputItem = TFC.ingredient.notRotten(inputItem);
-	} else {
-		parsedInputItem = inputItem;
-	}
+	parsedInputItem = TFC.ingredient.notRotten(inputItem);
 
 	if (genShapelessKnifeRecipe) {
 		event.recipes.tfc.advanced_shapeless_crafting(
