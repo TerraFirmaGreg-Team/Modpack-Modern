@@ -142,3 +142,31 @@ function registerTFGPrimitiveFluidTags(event) {
 	
 	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }
+
+function registerTFGPrimitiveEntityTags(event) {
+
+	/**
+	 * @type {string[]} - List of entities that can be scooped by fishing nets.
+	 */
+	const entities = [
+		'tfc:salmon',
+		'tfc:rainbow_trout',
+		'tfc:lake_trout',
+		'tfc:bluegill',
+		'tfc:largemouth_bass',
+		'tfc:smallmouth_bass',
+		'tfc:tropical_fish',
+		'tfc:crappie',
+		'tfc:cod',
+		'tfc:pufferfish',
+		'tfc:jellyfish',
+		'tfc:lobster',
+		'tfc:isopod',
+		'tfc:crayfish',
+		'wan_ancient_beasts:toxlacanth'
+
+	];
+	entities.forEach(entity => {
+		event.add('tfg:fishing_net_scoopable', entity);
+	});
+};
