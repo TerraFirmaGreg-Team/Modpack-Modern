@@ -361,7 +361,7 @@ function processLamp(event, material) {
 	const materialName = material.getName();
 
 	// Unfinished lamp
-	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 1]);
+	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 0.25]);
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
@@ -376,7 +376,7 @@ function processLamp(event, material) {
 
 	event.recipes.gtceu.fluid_solidifier(`tfg:${materialName}_lamp_from_liquid`)
 		.itemInputs(unfinishedLampItem)
-		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
+		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 36))
 		.itemOutputs(finishedLampItem)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])

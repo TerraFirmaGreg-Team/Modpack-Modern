@@ -498,4 +498,20 @@ const registerRnrRecipes = (event) => {
 			mode: `smooth`
 		})
 	})
+
+	// Asphalt road shaping: same pattern as RNR concrete (`rnr/recipes/mattock/slab/concrete_road_slab.json` etc.).
+	event.custom({
+		type: 'rnr:mattock',
+		ingredient: 'tfg:asphalt_road',
+		result: 'tfg:asphalt_road_slab',
+		mode: 'slab'
+	})
+
+	event.custom({
+		type: 'rnr:mattock',
+		ingredient: 'tfg:asphalt_road',
+		result: 'tfg:asphalt_road_stairs',
+		mode: 'stair'
+	})
+
 };

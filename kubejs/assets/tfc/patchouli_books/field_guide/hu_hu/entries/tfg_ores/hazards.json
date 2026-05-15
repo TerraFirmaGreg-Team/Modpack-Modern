@@ -107,9 +107,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arzénmérgezés",
+			"title": "Arsenicosis",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Arzénmérgezés",
+			"anchor": "Arsenicosis",
 			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
 		},
 		{
