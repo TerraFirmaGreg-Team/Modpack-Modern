@@ -223,9 +223,14 @@ const registerFirmaLifeRecipes = (event) => {
 	 * @type {string[]} - Tier names of greenhouse casings.
 	 */
 	const greenhouse_tiers = [
-		{tier: 'treated_wood', material: 'firmalife:treated_lumber'},
-		{tier: 'copper', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Copper, 1)},
-		{tier: 'iron', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1)},
+		{tier: 'treated_wood', material: 'firmalife:treated_lumber', weathering: ["", "weathered_"]},
+		{tier: 'copper', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Copper, 1), weathering: [
+			"",
+			"exposed_",
+			"weathered_",
+			"oxidized_"
+		]},
+		{tier: 'iron', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1), weathering: ["", "rusted_"]},
 		{tier: 'stainless_steel', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.StainlessSteel, 1)}
 	];
 
@@ -330,6 +335,40 @@ const registerFirmaLifeRecipes = (event) => {
 		D: '#forge:tools/wrenches',
 		E: '#forge:hoe_heads/wrought_iron'
 	}).addMaterialInfo().id('firmalife:crafting/picker')
+
+	const GREENHOUSE_BLOCKS = [
+		"wall",
+		"panel_wall",
+		"panel_roof",
+		"roof",
+		"roof_top",
+		"trapdoor",
+		"door",
+		"port"
+	]
+
+	greenhouse_tiers.forEach(tier => {
+		if (tier.tier != "stainless_steel") {
+			tier.weathering.forEach((weathering, i, array) => {
+				if (array[i + 1]) {
+					GREENHOUSE_BLOCKS.forEach(block => {
+						event.recipes.gtceu.chemical_bath(`tfg:${array[i + 1]}_${tier.tier}_greenhouse_${block}`)
+							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
+							.inputFluids('minecraft:water 40')
+							.itemOutputs(`firmalife:${array[i + 1]}${tier.tier}_greenhouse_${block}`)
+							.duration(10)
+							.EUt(30)
+					})
+				}
+				else {
+					return
+				}
+			})
+		}
+		else {
+			return
+		}
+	})
 
 	//#endregion
 
