@@ -168,6 +168,11 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	});
 
 	// Eggs.
+	for (let i = 1; i <= 6; i++) {
+		event.remove({ id: `tfc:pot/boiled_egg_${i}` });
+	};
+	event.remove({ id: 'tfc:heating/cooked_egg' });
+	
 	global.processorRecipe(event, 'pickled_egg', 1000, 8, {
 		circuit: 1,
 		itemInputs: ['minecraft:clay_ball', 'tfc:powder/wood_ash', 'tfc:powder/salt', 'tfc:food/boiled_egg'],
@@ -175,7 +180,8 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/pickled_egg').copyFood()
 	});
 	
-	global.generateWaterBoilingFoodRecipes(event, '#firmalife:foods/raw_eggs', 'tfc:food/boiled_egg', false, false, true, 2);
+	global.generateFoodCookingRecipes(event, '#forge:eggs', 'tfc:food/cooked_egg', true, true, false, 1);
+	global.generateWaterBoilingFoodRecipes(event, '#forge:eggs', 'tfc:food/boiled_egg', true, false, true, 2);
 
 	//#endregion
 	//#region Chemicals

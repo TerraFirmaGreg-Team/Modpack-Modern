@@ -731,7 +731,6 @@ global.TFC_FOOD_COOKING = /** @type {const} */ ([
     { input: "tfc:food/fresh_seaweed", output: "tfc:food/dried_seaweed" },
     { input: "tfc:groundcover/seaweed", output: "tfc:food/dried_seaweed" },
     // Other
-    { input: "#forge:eggs", output: "tfc:food/cooked_egg" },
     { input: "tfc:food/potato", output: "tfc:food/baked_potato" }
 ]);
 

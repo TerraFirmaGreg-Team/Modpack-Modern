@@ -2,21 +2,16 @@
 "use strict";
 
 /** 
- * Correct strings to replace invalid characters and convert to snake_case.
+ * Correct strings to replace invalid characters for use in recipe IDs.
  * @param {string} value - The string to correct.
  * @returns {string} The corrected string. Example: `minecraft:iron_ingot` -> `minecraft_iron_ingot`
  */
 global.linuxUnfucker = function(value) {
 	let str = (value === undefined || value === null) ? "" : String(value);
-
-	str = str.replace(/[:/\-.\s]+/g, ' ');
-	str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
-	str = str.replace(/([A-Z])([A-Z][a-z])/g, '$1 $2');
-
-	let parts = str.match(/[A-Z]+[0-9]*|[a-z]+[0-9]*|[0-9]+/g);
-	if (!parts) return "";
-	for (let i = 0; i < parts.length; i++) parts[i] = parts[i].toLocaleLowerCase('en-US');
-	return parts.join('_');
+	// 1. Convert to en_us lowercase first to handle languages like Turkish.
+	// 2. Replace all characters except "a-z", "0-9", and "_" with "_".
+	// 3. Remove any leading and trailing underscores.
+	return str.toLocaleLowerCase('en-US').replace(/[^0-9_a-z]+/g, "_").replace(/^_+|_+$/g, "");
 };
 
 StartupEvents.registry('item', event => {

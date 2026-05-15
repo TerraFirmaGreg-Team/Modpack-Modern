@@ -289,7 +289,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		).firmaLifeAddPiePan(), 'filled_breakfast_pie'
 	);
 
-	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pumpkin_pie', 'minecraft:pumpkin_pie', true, false, false, true);
+	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pumpkin_pie', 'minecraft:pumpkin_pie', true, false, false, null, true);
 
 	// Pumpkin Pie
 	global.processorRecipe(event, 'pumpkin_pie_dough', 300, 16, {
@@ -306,12 +306,12 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputProvider: TFC.isp.of('firmalife:food/raw_pumpkin_pie').copyFood()
 	});
 
-	global.generateFoodCookingRecipes(event, 'firmalife:food/filled_pie', 'firmalife:food/cooked_pie', true, false, false, true);
+	global.generateFoodCookingRecipes(event, 'firmalife:food/filled_pie', 'firmalife:food/cooked_pie', true, false, false, null, true);
 
 	// Bulbkin Pie
 	global.generateMixingFoodRecipes(event, 
 		['#tfg:martian_eggs', '2x betterend:cave_pumpkin_chunks', 'betterend:amber_root_product', 'tfg:wraptor_sugar'],
-		'minecraft:water 1000', null, 'betterend:cave_pumpkin_pie_dough'
+		'#tfg:clean_water 1000', null, 'betterend:cave_pumpkin_pie_dough'
 	);
 
 	event.recipes.tfc.advanced_shapeless_crafting(
@@ -375,7 +375,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	});
 
 	global.processorRecipe(event, "birtday_cake", 300, GTValues.VA[GTValues.HV], {
-		itemInputs: ['createaddition:cake_base', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
+		itemInputs: ['createaddition:cake_base_baked', '4x species:birt_egg', '4x tfc:food/blueberry', '2x minecraft:chorus_fruit', 'gtceu:blue_alloy_single_wire'],
 		fluidInputs: [Fluid.of('gtceu:helium_3', 50)],
 		itemOutputs: ["species:birtday_cake"],
 		itemOutputProvider: TFC.isp.of("species:birtday_cake").copyOldestFood()

@@ -34,18 +34,17 @@ function registerTFGPizzaAndPastaFoodRecipes(event) {
 	});
 
 	// Cooking Pizza.
-	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pizza', 'firmalife:food/cooked_pizza', true, false, true, true);
+	global.generateFoodCookingRecipes(event, 'firmalife:food/raw_pizza', 'firmalife:food/cooked_pizza', true, false, true, null, true);
 
 	//#endregion
 	//#region Noodles
 
-	global.processorRecipe(event, `egg_noodles`, 50, 8, {
-		circuit: 6,
-		itemInputs: ["#tfc:foods/flour", 'tfc:powder/salt', '#forge:eggs'],
-		fluidInputs: ['#tfc:milks 1000'],
-		itemOutputs: ['firmalife:food/raw_egg_noodles'],
-		itemOutputProvider: TFC.isp.of("firmalife:food/raw_egg_noodles").copyOldestFood()
-	});
+	event.remove({ id: 'firmalife:mixing_bowl/egg_noodles' });
+
+	global.generateMixingFoodRecipes(event, 
+		['#forge:eggs', 'tfc:powder/salt', '#tfc:foods/flour'],
+		'#tfc:milks 1000', null, 'firmalife:food/raw_egg_noodles'
+	);
 
 	global.processorRecipe(event, `rice_noodles`, 50, 8, {
 		itemInputs: ["tfc:food/rice_flour", 'tfc:food/maize_flour', 'tfc:powder/salt'],

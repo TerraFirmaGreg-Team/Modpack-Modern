@@ -101,16 +101,40 @@ function registerTFGFoodData(event) {
 		food.saturation(1);
 	});
 
-	// Firmalife gave cooked pasta the 'dynamic_bowl' meal type accidentally.
-	// Overriding cooked rice noodles didnt work for some reason so I made a json for that one.
-	event.foodItem('firmalife:food/cooked_pasta', (food) => {
-		food.decayModifier(2.8);
-		food.hunger(4.0);
-		food.grain(1.0);
-		food.protein(1.5);
-		food.dairy(0.5);
-		food.saturation(2);
-	}, 'food_items/cooked_pasta');
+	// Eggs
+	/**
+	 * Array of egg items to get food data. 
+	 * Do not register eggs that can be fertilized here. Those items dynamically change expiration time.
+	 * @type {{String<Item>}}
+	 */
+	const eggItems = [
+		'wan_ancient_beasts:charger_egg',
+		'wan_ancient_beasts:crusher_egg',
+		'wan_ancient_beasts:eater_egg',
+		'wan_ancient_beasts:glider_egg',
+		'wan_ancient_beasts:petrified_egg',
+		'wan_ancient_beasts:raider_egg',
+		'wan_ancient_beasts:snatcher_egg',
+		'wan_ancient_beasts:soarer_egg',
+		'wan_ancient_beasts:surfer_egg',
+		'wan_ancient_beasts:walker_egg',
+		'species:cruncher_egg',
+		'species:birt_egg',
+		'species:petrified_egg',
+		'species:springling_egg'
+	];
+	eggItems.forEach(egg => {
+		event.foodItem(egg, food => {
+			food.decayModifier(2)
+		});
+	});
+
+	event.foodItem('species:cracked_wraptor_egg', food => {
+		food.hunger(4)
+		food.saturation(1)
+		food.water(5)
+		food.decayModifier(3)
+	});
 	
 	// Biochem Items
 	event.foodItem("tfg:progenitor_cells", (food) => {

@@ -370,10 +370,10 @@ const registerTFGFluidTags = (event) => {
 
 		if (alcohol.id) {
 			event.add('tfg:alcohols', alcohol.id);
+			event.add('tfg:base_alcohols', alcohol.id);
 			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.id);
 			if (alcohol.genBase) {
 				event.add('tfc:drinkables', alcohol.id);
-				event.add('tfc:alcohols', alcohol.id);
 			}
 		}
 

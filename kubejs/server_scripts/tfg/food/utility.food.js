@@ -253,6 +253,9 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 		throw new Error(`Missing parameters for generateFluidBoilingFoodRecipes: inputFluid=${inputFluid}, FluidQty=${fluidQty}, inputItem=${inputItem}, outputItem=${outputItem}`);
 	}
 
+	const unfuckedInput = global.linuxUnfucker(inputItem);
+	const unfuckedOutput = global.linuxUnfucker(outputItem);
+	
 	if (genPotRecipe) {
 		for (let i = 1; i <= 5; i++) {
 			event.recipes.tfc.pot(
@@ -262,7 +265,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 				200
 				)
 				.itemOutput((copyDynamic) ? TFC.isp.of(`${i}x ${outputItem}`).firmaLifeCopyDynamicFood() : TFC.isp.of(`${i}x ${outputItem}`).copyFood()
-			).id(`tfg:pot/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}_${i}`);
+			).id(`tfg:pot/${unfuckedInput}_boiled_into_${unfuckedOutput}_${i}`);
 		}
 	}
 
@@ -275,7 +278,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			.outputItem(ispOut)
 			.length(100)
 			.temperature(200)
-			.id(`tfg:vat/${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`);
+			.id(`tfg:vat/${unfuckedInput}_boiled_into_${unfuckedOutput}`);
 	}
 
 	if (genOvenRecipe) {
@@ -286,7 +289,7 @@ global.generateFluidBoilingFoodRecipes = function(event, inputFluid, fluidQty, i
 			itemOutputProvider: ispOut
 		};
 		if (circuit !== null && circuit !== undefined) ovenParameters.circuit = circuit;
-		let a = global.registerFoodRecipe(event, 'food_oven', `${global.linuxUnfucker(inputItem)}_boiled_into_${global.linuxUnfucker(outputItem)}`, 100, 8, '', ovenParameters);
+		let a = global.registerFoodRecipe(event, 'food_oven', `${unfuckedInput}_boiled_into_${unfuckedOutput}`, 100, 8, '', ovenParameters);
 	}
 };
 
@@ -340,13 +343,17 @@ global.generateOilBoilingFoodRecipes = function(event, inputItem, outputItem, ge
  * @param {Boolean|null} genOvenRecipe Wether to generate a GT oven recipe. Default `true`.
  * @param {Boolean|null} genHeatingRecipe Wether to generate heating recipes. Grilling, fire pit, oven. Default `true`.
  * @param {Boolean|null} genFirmalifeOvenRecipe Wether to generate a firmalife oven recipe. Standalone oven recipe for things like pizzas. Default `false`.
+ * @param {Number|null|undefined} circuit Optional circuit value for the oven recipe.
  * @param {Boolean|null} copyDynamic Optional override for ISP results to use `.firmaLifeCopyDynamicFood()` instead of `.copyFood()`
  */
-global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOvenRecipe, genHeatingRecipe, genFirmalifeOvenRecipe, copyDynamic) {
+global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOvenRecipe, genHeatingRecipe, genFirmalifeOvenRecipe, circuit, copyDynamic) {
 	genOvenRecipe = genOvenRecipe !== false;
 	genHeatingRecipe = genHeatingRecipe !== false;
 	genFirmalifeOvenRecipe = genFirmalifeOvenRecipe === true;
 	copyDynamic = copyDynamic === true;
+
+	const unfuckedInput = global.linuxUnfucker(inputItem);
+	const unfuckedOutput = global.linuxUnfucker(outputItem);
 
 	let ispOut = (copyDynamic) ? TFC.isp.of(outputItem).firmaLifeCopyDynamicFood() : TFC.isp.of(outputItem).copyFood();
 
@@ -355,21 +362,27 @@ global.generateFoodCookingRecipes = function(event, inputItem, outputItem, genOv
 	}
 
 	if (genOvenRecipe) {
-		global.cookingRecipe(event, `${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`, inputItem, outputItem, null, copyDynamic);
+		let ovenParameters = {
+			itemInputs: [inputItem],
+			itemOutputs: [outputItem],
+			itemOutputProvider: ispOut
+		};
+		if (circuit !== null && circuit !== undefined) ovenParameters.circuit = circuit;
+		let a = global.registerFoodRecipe(event, 'food_oven', `${unfuckedInput}_to_${unfuckedOutput}`, 100, 8, '', ovenParameters);
 	}
 
 	if (genHeatingRecipe) {
 		event.recipes.tfc.heating(TFC.ingredient.notRotten(inputItem), 200)
-			.resultItem(ispOut).id(`tfg:heating/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
+			.resultItem(ispOut).id(`tfg:heating/${unfuckedInput}_to_${unfuckedOutput}`);
 	}
 
 	if (genFirmalifeOvenRecipe) {
 		event.recipes.firmalife.oven(
-			inputItem,
+			TFC.ingredient.notRotten(inputItem),
 			300,
 			200,
 			ispOut.addTrait("firmalife:oven_baked")
-		).id(`tfg:firmalife_oven/${global.linuxUnfucker(inputItem)}_to_${global.linuxUnfucker(outputItem)}`);
+		).id(`tfg:firmalife_oven/${unfuckedInput}_to_${unfuckedOutput}`);
 	}
 };
 
@@ -394,8 +407,12 @@ global.generateAlcoholRecipes = function(event, ingredient, baseId, agedId, vint
 	genAgedRecipe = genAgedRecipe === true;
 	genVintageRecipe = genVintageRecipe !== false;
 
+	const unfuckedBaseId = global.linuxUnfucker(baseId);
+	const unfuckedAgedId = global.linuxUnfucker(agedId);
+	const unfuckedVintageId = global.linuxUnfucker(vintageId);
+
 	if (genBaseProcessorRecipe) {
-		global.processorRecipe(event, `processor_alcohol/${global.linuxUnfucker(baseId)}`, 2400, 1, {
+		global.processorRecipe(event, `processor_alcohol/${unfuckedBaseId}`, 2400, 1, {
 			itemInputs: [ingredient],
 			fluidInputs: ['#tfg:clean_water 500', 'firmalife:yeast_starter 10'],
 			fluidOutputs: [Fluid.of(baseId, 500)],
@@ -409,21 +426,21 @@ global.generateAlcoholRecipes = function(event, ingredient, baseId, agedId, vint
 			.inputFluid(Fluid.of('#tfg:clean_water', 100))
     		.inputItem(ingredient)
 			.outputFluid(Fluid.of(baseId, 100))
-			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(baseId)}`)
+			.id(`tfg:barrel_alcohol/${unfuckedBaseId}`)
 	}
 
 	if (genAgedRecipe) {
 		event.recipes.tfc.barrel_sealed(24000 * 24) // 24 days.
 			.inputFluid(Fluid.of(baseId, 100))
 			.outputFluid(Fluid.of(agedId, 100))
-			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(agedId)}`)
+			.id(`tfg:barrel_alcohol/${unfuckedAgedId}`)
 	}
 
 	if (genVintageRecipe) {
 		event.recipes.tfc.barrel_sealed(24000 * 24) // 24 days.
 			.inputFluid(Fluid.of(agedId, 1000))
 			.outputFluid(Fluid.of(vintageId, 750))
-			.id(`tfg:barrel_alcohol/${global.linuxUnfucker(vintageId)}`)
+			.id(`tfg:barrel_alcohol/${unfuckedVintageId}`)
 	}
 };
 
@@ -442,8 +459,10 @@ global.generateDryingFoodRecipes = function(event, inputItem, outputItem, genPro
 	genProcessorRecipe = genProcessorRecipe !== false;
 	genDryingMatRecipe = genDryingMatRecipe === true;
 
+	const unfuckedInput = global.linuxUnfucker(inputItem);
+
 	if (genProcessorRecipe) {
-		global.processorRecipeText(event, `processor_drying/${global.linuxUnfucker(inputItem)}`, 200, 16, "tfg.food_recipe.drying", {
+		global.processorRecipeText(event, `processor_drying/${unfuckedInput}`, 200, 16, "tfg.food_recipe.drying", {
 			circuit: 6,
 			itemInputs: [inputItem],
 			itemOutputs: [outputItem],
@@ -456,7 +475,7 @@ global.generateDryingFoodRecipes = function(event, inputItem, outputItem, genPro
 		event.recipes.firmalife.drying(
 			outputItem,
 			TFC.ingredient.notRotten(inputItem)
-    	).id(`tfg:mat_drying/${global.linuxUnfucker(inputItem)}`)
+    	).id(`tfg:mat_drying/${unfuckedInput}`)
 	}
 };
 
@@ -471,8 +490,10 @@ global.generateSmokingFoodRecipes = function(event, inputItem, genProcessorRecip
 	genProcessorRecipe = genProcessorRecipe !== false;
 	genFireSmokingRecipe = genFireSmokingRecipe === true;
 
+	const unfuckedInput = global.linuxUnfucker(inputItem);
+
 	if (genProcessorRecipe) {
-		global.processorRecipeText(event, `processor_smoking${global.linuxUnfucker(inputItem)}`, 200, 16, "tfg.food_recipe.smoking", {
+		global.processorRecipeText(event, `processor_smoking${unfuckedInput}`, 200, 16, "tfg.food_recipe.smoking", {
 			circuit: 6,
 			itemInputs: [inputItem],
 			itemOutputs: [inputItem],
@@ -485,7 +506,7 @@ global.generateSmokingFoodRecipes = function(event, inputItem, genProcessorRecip
 		event.recipes.firmalife.smoking(
         	TFC.isp.copyInput().addTrait('kubejs:smoked'),
         	TFC.ingredient.notRotten(inputItem)
-    	).id(`tfg:fire_smoking/${global.linuxUnfucker(inputItem)}`);
+    	).id(`tfg:fire_smoking/${unfuckedInput}`);
 	}
 };
 
@@ -729,9 +750,6 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 	// Normalize items to TFC ingredients.
 	if (typeof inputItems === 'string') inputItems = [inputItems];
 	const formattedInputItems = global.ingredientStackInputParser(inputItems);
-	
-	// Format outputs just for error handling.
-	const formattedOutputItems = outputItem && global.ingredientStackInputParser(outputItem);
 
 	let id;
 	if (idOverride) {
@@ -781,9 +799,6 @@ global.generateMealFoodRecipes = function(event, inputItems, inputFluid, outputF
 
 		let potTemp = temp ? temp : 200;
 		let potInputFluid = toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0])
-		if (outputFluid) {
-			let potOutputFluid = toFluidStackIngredient(typeof outputFluid === 'string' ? outputFluid : outputFluid[0])
-		}
 		let recipe = event.recipes.tfc.pot(formattedInputItems, potInputFluid, recipeDuration, potTemp);
 
 		if (outputItem) {
@@ -824,31 +839,33 @@ global.generateCuttingFoodRecipes = function(event, inputItem, outputItem, genSh
 	let circuit = circuitOverride ? circuitOverride : 30;
 	let parsedInputItem;
 
+	const unfuckedOutput = global.linuxUnfucker(outputItem);
+
 	parsedInputItem = TFC.ingredient.notRotten(inputItem);
 
 	if (genShapelessKnifeRecipe) {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(outputItem).copyFood(),
 			[parsedInputItem, '#tfc:knives'], inputItem)
-			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_knife`);
+			.id(`tfg:crafting/${unfuckedOutput}_knife`);
 	}
 
 	if (genShapelessHammerRecipe) {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(outputItem).copyFood(),
 			[parsedInputItem, '#forge:tools/hammers'], inputItem)
-			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_hammer`);
+			.id(`tfg:crafting/${unfuckedOutput}_hammer`);
 	}
 
 	if (genShapelessMortarRecipe) {
 		event.recipes.tfc.advanced_shapeless_crafting(
 			outputItem,
 			[parsedInputItem, '#forge:tools/mortars'], inputItem)
-			.id(`tfg:crafting/${global.linuxUnfucker(outputItem)}_mortar`);
+			.id(`tfg:crafting/${unfuckedOutput}_mortar`);
 	}
 
 	if (genProcessorRecipe) {
-		global.processorRecipe(event, global.linuxUnfucker(outputItem), 100, 8, {
+		global.processorRecipe(event, unfuckedOutput, 100, 8, {
 			circuit: circuit,
 			itemInputs: [inputItem],
 			itemOutputs: [outputItem],
