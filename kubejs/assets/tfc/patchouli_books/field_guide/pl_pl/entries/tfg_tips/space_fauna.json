@@ -83,7 +83,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Wraptors",
+			"title": "Wraptory",
 			"text": "$(thing)Wraptors$() are domesticatable animals found between -15 and -100°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Wraptor Feathers$(). Their eggs can be cooked or extracted for Wraptor Sugar. They eat any Mars crop.",
 			"anchor": "wraptor"
 		},
