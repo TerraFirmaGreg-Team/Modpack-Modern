@@ -1,5 +1,7 @@
 {
   "desc.framedblocks.blueprint_invalid": "Invalide",
+  "desc.framedblocks.blueprint_none": "Aucun",
+  "msg.framedblocks.powered_saw.status.ready": "Prêt",
   "tooltip.framedblocks.one_way_window.dir.down": "Bas",
   "tooltip.framedblocks.one_way_window.dir.east": "Est",
   "tooltip.framedblocks.one_way_window.dir.north": "Nord",
@@ -8,6 +10,7 @@
   "tooltip.framedblocks.one_way_window.dir.west": "Ouest",
   "tooltip.framedblocks.one_way_window.face.down": "Bas",
   "tooltip.framedblocks.one_way_window.face.east": "Est",
+  "tooltip.framedblocks.one_way_window.face.none": "Aucun",
   "tooltip.framedblocks.one_way_window.face.north": "Nord",
   "tooltip.framedblocks.one_way_window.face.south": "Sud",
   "tooltip.framedblocks.one_way_window.face.up": "Haut",

@@ -56,22 +56,22 @@
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "First, knap the leather into mittens."
+			"text": "Najpierw stwórz rękawice ze skóry."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+			"text": "Następnie nasącz $(thing)rękawice$() w $(thing)occie$(), mieszaninie owoców i alkoholu."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Przygotowane rękawice skórzane $(thing)$() muszą być następnie wypalone w kadzi $(thing)$() z $(thing)wulkanizowanym lateksem$()."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+			"text": "Wreszcie rękawice nasączone lateksem muszą być wysuszone w $(l:firmalife/ovens)piecu$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -109,7 +109,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Zatrucie arszenikiem",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Zatrucie arszenikiem",
+			"anchor": "Arsenicosis",
 			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
 		},
 		{
@@ -123,7 +123,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Beryloza",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "Beryloza",
+			"anchor": "Berylliosis",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
 		},
 		{
@@ -170,7 +170,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Nauseating chemicals",
+			"title": "Substancje powodujące nudności",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "Nauseating_chemicals",
 			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."
@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Krzemica",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "Krzemica",
+			"anchor": "Silicosis",
 			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
 		}
 	]

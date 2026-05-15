@@ -229,7 +229,6 @@ const registerSingleGroups = (event) => {
 
         // Steam n Rails
         '#railways:conductor_caps',
-		'#tfg:incomplete_tracks',
 		'#tfg:locometal_blocks',
         '#tfg:smokestacks',
         '#tfg:train_connectors',

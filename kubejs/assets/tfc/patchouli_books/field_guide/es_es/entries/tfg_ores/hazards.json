@@ -1,5 +1,5 @@
 {
-	"name": "Hazardous Materials",
+	"name": "Materiales peligrosos",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,18 +8,18 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Materiales peligrosos",
 			"item": "gtceu:cobaltite_dust",
 			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "All of the effects",
+			"title": "Todos los efectos",
 			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
+			"title": "Prevención y Curas",
 			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
 		},
 		{
@@ -156,14 +156,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "Irritantes",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "Irritantes",
 			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Methanol poisoning",
+			"title": "Envenenamiento por Metanol",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "Methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
