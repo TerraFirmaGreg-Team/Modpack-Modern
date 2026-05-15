@@ -932,7 +932,7 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
-		.circuit(1)
+		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion
