@@ -919,20 +919,11 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
 	//#region Mushrooms
-	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
+	event.recipes.gtceu.chemical_bath('tfg:mushrooms_to_shroomlight')
 		.itemInputs('4x #forge:mushrooms')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
-		.circuit(1)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
-		.itemInputs('4x #forge:mushrooms')
-		.inputFluids(Fluid.of('gtceu:glowstone', 144))
-		.itemOutputs('minecraft:shroomlight')
-		.duration(200)
-		.circuit(2)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	//#endregion
