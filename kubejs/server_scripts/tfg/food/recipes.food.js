@@ -960,15 +960,15 @@ function registerTFGFoodRecipes(event) {
 	global.processorRecipe(event, "brown_mushroom", 100, 8, {
 		circuit: 30,
 		itemInputs: ["minecraft:brown_mushroom_block"],
-		itemOutputs: ["4x minecraft:brown_mushroom"],
-		itemOutputProvider: TFC.isp.of("4x minecraft:brown_mushroom").resetFood()
+		itemOutputs: ["4x beneath:food/portobello"],
+		itemOutputProvider: TFC.isp.of("4x beneath:food/portobello").resetFood()
 	})
 
 	global.processorRecipe(event, "red_mushroom", 100, 8, {
 		circuit: 30,
 		itemInputs: ["minecraft:red_mushroom_block"],
-		itemOutputs: ["4x minecraft:red_mushroom"],
-		itemOutputProvider: TFC.isp.of("4x minecraft:red_mushroom").resetFood()
+		itemOutputs: ["4x tfg:food/fly_agaric"],
+		itemOutputProvider: TFC.isp.of("4x tfg:food/fly_agaric").resetFood()
 	})
 
 	global.processorRecipe(event, "cut_pumpkin", 100, 8, {
