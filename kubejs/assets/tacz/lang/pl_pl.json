@@ -46,7 +46,7 @@
 	"config.tacz.client.render.disable_movement_fov": "Wyłącz efekt szybkiego FOV",
 	"config.tacz.client.render.disable_movement_fov.desc": "Wyłącz wszystkie efekty FOV z prędkości poruszania podczas trzymania broni.",
 	"config.tacz.client.render.enable_tooltip_id": "Wyświetl identyfikatory TACZ",
-	"config.tacz.client.render.enable_tooltip_id.desc": "Wyświetl id broni/amuncji/wyposażenia w informacjach, kiedy zaawansowane informacje (F3+H) są włączone.",
+	"config.tacz.client.render.enable_tooltip_id.desc": "Wyświetl id broni/amunicji/wyposażenia w informacjach, kiedy zaawansowane informacje (F3+H) są włączone.",
 	"config.tacz.client.render.first_person_bullet_tracer_enable": "Włącz smugi pocisków w widoku z pierwszej osoby",
 	"config.tacz.client.render.first_person_bullet_tracer_enable.desc": "Czy renderować smugi pocisków w widoku z pierwszej osoby",
 	"config.tacz.client.render.gun_hud_enable": "Włącz HUD Broni",

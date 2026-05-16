@@ -1,0 +1,156 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "宠物",
+  "category": "tfc:mechanics",
+  "icon": "minecraft:lead",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)宠物$()是与$(l:mechanics/animal_husbandry)家畜$()功能相似的动物，但不会产出有用的产品。它们能听从指令、跟随你在家中活动、控制害虫，并协助你狩猎。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "每只宠物都会认定某位玩家为它的$(thing)主人$()。要成为宠物的主人，需要喂食使其亲密度提升至15%%以上。宠物只会听从其主人的指令。$(br2)使用$(l:mechanics/dye)染料$()点击宠物可更改其项圈颜色。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
+      "scale": 0.7,
+      "text": "一条狗。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "狗是一种以谷物、蔬菜和肉类（无论是否腐烂）为食的宠物。它们会协助你狩猎大多数陆地掠食者或猎物。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "狗的变种",
+      "text": "狗有多个变种，取决于它们是由哪种狼驯化而来。$(br2)下一页的表格列出了各狼变种可在哪些气候中找到。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/dog_variants.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "变种",
+          "bold": true
+        },
+        {
+          "text": "气候",
+          "bold": true
+        },
+        {
+          "text": "苍白"
+        },
+        {
+          "text": "寒冷沙漠、温带、湿润海洋性（平原）"
+        },
+        {
+          "text": "灰白"
+        },
+        {
+          "text": "北极、亚北极（森林）"
+        },
+        {
+          "text": "黑色"
+        },
+        {
+          "text": "苔原、湿润亚北极（森林）"
+        },
+        {
+          "text": "栗色"
+        },
+        {
+          "text": "苔原、湿润亚北极（平原）"
+        },
+        {
+          "text": "锈色"
+        },
+        {
+          "text": "湿润亚热带、热带雨林（平原）"
+        },
+        {
+          "text": "雪白"
+        },
+        {
+          "text": "北极、亚北极（平原）"
+        },
+        {
+          "text": "斑点"
+        },
+        {
+          "text": "炎热沙漠、亚热带、热带稀树草原（森林）"
+        },
+        {
+          "text": "条纹"
+        },
+        {
+          "text": "炎热沙漠、亚热带、热带稀树草原（平原）"
+        },
+        {
+          "text": "林地"
+        },
+        {
+          "text": "温带（森林）"
+        }
+      ],
+      "text": "",
+      "title": "狼变种分布位置",
+      "legend": [],
+      "columns": 1,
+      "first_column_width": 45,
+      "column_width": 195,
+      "row_height": 12,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "scale": 0.7,
+      "text": "一只猫。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "猫是一种以谷物、熟肉和乳制品为食的宠物。它们会协助你狩猎陆地猎物和小型鱼类。在家时，它们会主动消灭害虫。猫有时不会听从坐下指令。$(br2)变种：黑色、英国短毛、三花、Jellie、波斯、布偶、红色、暹罗、虎斑、白色。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
+      "scale": 0.7,
+      "text": "一只狐狸。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "狐狸是一种以任何可食用物品为食的宠物。它们会协助你狩猎陆地猎物和小型鱼类。在家时，它们会主动消灭害虫。狐狸有时不会听从坐下指令。$(br2)变种：红色、雪白。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "负责任的宠物主人必须学会控制自己的宠物。幸运的是，这很容易做到。在空手状态下按住$(item)$(k:key.sneak)$()并按下$(item)$(k:key.use)$()，即可打开$(thing)宠物界面$()。该界面包含多种指令，可用于指挥宠物：$(thing)放松$()、$(thing)我们到家了$()、$(thing)坐下$()、$(thing)跟随我$()和$(thing)与我狩猎$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)放松$()是宠物的默认状态，下达此指令可使其恢复该状态。如果宠物在家附近，它会在领地内漫步但不离开，并每天睡一次觉。如果离家太远，它会漫无目的地行走。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)我们到家了$()用于设定宠物的家位置。这告诉宠物，在放松时应该待在该区域内。告知宠物“到家”不会改变它当前正在进行的活动。$(br2)$(thing)坐下$()指令让宠物就地坐下。不过，动物也有自己的想法，最终会感到无聊而站起来！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)与我狩猎$()指令会让宠物跟随你，并在你攻击或被攻击时参与战斗。宠物只会攻击它们能力范围内的动物（例如，猫和狐狸无法帮助攻击熊！）。$(br2)$(thing)跟随我$()与“与我狩猎”类似，但宠物不会在战斗中冒险。"
+    }
+  ],
+  "read_by_default": true
+}

@@ -1,5 +1,7 @@
 {
+  "block.simplylight.edge_light.info": "Podąża za ścianami wewnątrz swojego bloku,",
   "block.simplylight.edge_light.info2": "idealny do korytarzy.",
+  "block.simplylight.edge_light_top.info": "Podąża za ścianami wewnątrz swojego bloku,",
   "block.simplylight.edge_light_top.info2": "idealny do korytarzy.",
   "block.simplylight.illuminant_black_block.info": "Prosty blok oświetleniowy,",
   "block.simplylight.illuminant_black_block.info2": "Aktywuje się przez %s.",
@@ -86,6 +88,8 @@
   "block.simplylight.rodlamp": "Pręt oświetleniowy",
   "block.simplylight.rodlamp.info": "Prosty pręt światła.",
   "block.simplylight.rodlamp.info2": "Można umieścić w dowolnym kierunku.",
+  "block.simplylight.wall_lamp": "Oświetlenie",
+  "block.simplylight.wall_lamp.info": "Wisi ze ścian lub przyczepia się do sufitów i podłogi.",
   "itemGroup.simplylight": "Simply Light",
   "simplylight.key.shift": "Shift",
   "simplylight.redstone": "Redstone",
