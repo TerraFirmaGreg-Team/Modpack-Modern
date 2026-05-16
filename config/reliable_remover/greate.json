@@ -150,18 +150,5 @@
 			"greate:long_shadow_steel_rod",
 			"greate:shadow_steel_block"
 		]
-	},
-	{
-		"action": "remove_recipe",
-		"and": {
-			"mod": [ "greate" ],
-			"type": [
-				"minecraft:crafting_shaped",
-				"minecraft:crafting_shapeless",
-				"create:deploying",
-				"create:sequenced_assembly",
-				"gtceu:assembler"
-			]
-		}
 	}
 ]

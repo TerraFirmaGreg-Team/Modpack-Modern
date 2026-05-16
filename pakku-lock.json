@@ -12380,71 +12380,7 @@
             ]
         },
         {
-            "pakku_id": "dHvXrgiv0ERimV7h",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "reliable-recipes",
-                "modrinth": "reliable-recipes"
-            },
-            "name": {
-                "curseforge": "Reliable Recipes",
-                "modrinth": "Reliable Recipes"
-            },
-            "id": {
-                "curseforge": "1414959",
-                "modrinth": "Hl4ARA1z"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8072/207/reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "id": "8072207",
-                    "parent_id": "1414959",
-                    "hashes": {
-                        "sha1": "53ec9d467c81962ce35cc031179b269859b1b76f",
-                        "md5": "23a69414cea2dcd199510fee6dfd4c9d"
-                    },
-                    "required_dependencies": [],
-                    "size": 95630,
-                    "date_published": "2026-05-11T05:34:41.510Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Hl4ARA1z/versions/3u05J991/reliable_recipes-forge-1.20.1-1.13.2.jar",
-                    "id": "3u05J991",
-                    "parent_id": "Hl4ARA1z",
-                    "hashes": {
-                        "sha512": "1fe14da409652c780f30acfecd0ddb3c9f31294d04264d30383b53fc8e7d23ca604e0c7f669a6666c33844eed95b0c271203f115d866e0925af517883dfa6664",
-                        "sha1": "53ec9d467c81962ce35cc031179b269859b1b76f"
-                    },
-                    "required_dependencies": [],
-                    "size": 95630,
-                    "date_published": "2026-05-11T05:34:41.631018Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "RQp14c98kovlFAwb",
-            "pakku_links": [
-                "dHvXrgiv0ERimV7h"
-            ],
+            "pakku_id": "5Zbqzu2oUephfrw4",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12462,7 +12398,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.0.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12470,22 +12406,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8072/221/reliable_remover-forge-1.20.1-2.4.0.jar",
-                    "id": "8072221",
+                    "url": "https://edge.forgecdn.net/files/8025/360/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "8025360",
                     "parent_id": "1420447",
                     "hashes": {
-                        "sha1": "2f4864d81f8f55ce25d4f36e8e0095117d5fd91c",
-                        "md5": "ff6ba6b7a15fb71633186889adc99c09"
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320",
+                        "md5": "a616942d10407f28f6888100f779a260"
                     },
-                    "required_dependencies": [
-                        "1414959"
-                    ],
-                    "size": 93226,
-                    "date_published": "2026-05-11T05:43:19.533Z"
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:57.963Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "reliable_remover-forge-1.20.1-2.4.0.jar",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12493,18 +12427,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/D7iC0HfM/reliable_remover-forge-1.20.1-2.4.0.jar",
-                    "id": "D7iC0HfM",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/lYkyEAA3/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "lYkyEAA3",
                     "parent_id": "pLxsKvNt",
                     "hashes": {
-                        "sha512": "f3c44ddd56415a430d92af323cc9c5d980e6050a224842d25477a38810375be44b3962480a1675792122ddebadbd21d009ae98e272f9b86869d8c8785f85bdd0",
-                        "sha1": "2f4864d81f8f55ce25d4f36e8e0095117d5fd91c"
+                        "sha512": "6c26015c07c30df09c04bdf9d592371b8a6adb5107d637e7a26995dbf21e3fe12555a2dc9f3b2e2a1530c0baa543343b7b017030727ba7d265ac5b448d7737cd",
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320"
                     },
-                    "required_dependencies": [
-                        "Hl4ARA1z"
-                    ],
-                    "size": 93226,
-                    "date_published": "2026-05-11T05:43:19.687473Z"
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:58.141797Z"
                 }
             ]
         },

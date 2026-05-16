@@ -10,8 +10,11 @@ function removeGTCEURecipes(event) {
 	event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#forge:chests/wooden')
 
 	//#region Выход: Крошечная кучка камня
-
+	
+	event.remove({ id: 'gtceu:compressor/stone_from_dust' })
+	event.remove({ id: 'gtceu:rock_breaker/stone' })
 	removeMaceratorRecipe(event, 'macerate_stone_button')
+	event.remove({ id: 'gtceu:shaped/stone_button' })
 
 	//#endregion
 
@@ -29,6 +32,17 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine' })
+	event.remove({ id: 'gtceu:shaped/smooth_stone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_hammer' })
+	event.remove({ id: 'gtceu:forge_hammer/stone_to_cobblestone' })
+	event.remove({ id: 'gtceu:rock_breaker/cobblestone' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_slab_saw' })
+	event.remove({ id: 'gtceu:forge_hammer/cracked_stone_bricks' })
+	event.remove({ id: 'gtceu:assembler/mossy_stone_bricks' })
+	event.remove({ id: 'gtceu:assembler/mossy_cobblestone' })
+	event.remove({ id: 'gtceu:shaped/cobbled_deepslate_hammer' })
+	event.remove({ id: 'gtceu:forge_hammer/deepslate_to_cobbled_deepslate' })
 
 	//#endregion
 
@@ -147,7 +161,8 @@ function removeGTCEURecipes(event) {
 	// #endregion
 
 	// #region basalt
-
+	
+	event.remove({ id: 'gtceu:rock_breaker/basalt' })
 	event.remove({ id: 'gtceu:shaped/basalt_polish_hammer' })
 	event.remove({ id: 'gtceu:assembler/assemble_basalt_into_polished' })
 
@@ -267,6 +282,12 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/nether_bricks_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_slab_saw' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_wall_saw' })
+	event.remove({ id: 'gtceu:compressor/nether_bricks' })
+	event.remove({ id: 'gtceu:shaped/nether_brick_slab_saw' })
+	event.remove({ id: 'gtceu:assembler/nether_brick_fence' })
+	event.remove({ id: 'gtceu:alloy_smelter/red_nether_bricks' })
+	event.remove({ id: 'gtceu:extractor/nether_bricks_extraction' })
+	event.remove({ id: 'gtceu:alloy_smelter/form_nether_brick' })
 	removeMaceratorRecipe(event, 'macerate_nether_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_nether_brick_slab')
 	removeMaceratorRecipe(event, 'macerate_nether_bricks')
@@ -375,10 +396,14 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
-	
+	event.remove({ id: 'gtceu:centrifuge/red_sand_separation' })
+	event.remove({ id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:forge_hammer/red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:compressor/red_sandstone' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_slab_saw' })	
 	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
-
 	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
 
 	// Gears
