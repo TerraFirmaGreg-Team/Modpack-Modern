@@ -223,10 +223,10 @@ function registerTFGClayRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 
 	//Hardened Clay
-	event.custom({
-		type:"firmalife:drying",
-		ingredient:{item:"minecraft:clay"},
-		result:{item:"tfg:hardened_clay"}}).id("tfg:drying_clay_hardened_clay")
+	event.recipes.firmalife.drying(
+		"tfg:hardened_clay",
+		"minecraft:clay"
+)
 
 	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
 		.itemInputs('minecraft:clay')
