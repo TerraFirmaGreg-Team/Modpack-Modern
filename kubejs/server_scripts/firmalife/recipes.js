@@ -339,7 +339,7 @@ const registerFirmaLifeRecipes = (event) => {
 							.EUt(30)
 
 						event.recipes.tfc.barrel_sealed(8000)
-							.inputFluid(Fluid.of('minecraft:water', 150))
+							.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 150))
 							.inputItem(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.outputItem(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.id(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
