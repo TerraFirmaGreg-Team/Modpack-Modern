@@ -5442,32 +5442,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "drippyloadingscreen_forge_3.1.2_MC_1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/4wF1Mfez/drippyloadingscreen_forge_3.1.2_MC_1.20.1.jar",
-                    "id": "4wF1Mfez",
-                    "parent_id": "v3CYg2V9",
-                    "hashes": {
-                        "sha512": "ed0dbb8f2ab0def4dd5e1705d96bd699886536c2cbf4e06e59513d34b2fb34f7ae375ea7ae965031cbd32a03479e65a5d121b273edad8281e621e0ee5dabd8e4",
-                        "sha1": "0f4fe368d76572f2af563b90fafea7d75c007d22"
-                    },
-                    "required_dependencies": [
-                        "J81TRJWm",
-                        "Wq5SjeWM"
-                    ],
-                    "size": 287611,
-                    "date_published": "2026-05-03T14:53:53.397477Z"
-                },
-                {
                     "type": "curseforge",
-                    "file_name": "drippyloadingscreen_forge_3.1.2_MC_1.20.1.jar",
+                    "file_name": "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5475,19 +5451,43 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8032/766/drippyloadingscreen_forge_3.1.2_MC_1.20.1.jar",
-                    "id": "8032766",
+                    "url": "https://edge.forgecdn.net/files/7248/426/drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
+                    "id": "7248426",
                     "parent_id": "511770",
                     "hashes": {
-                        "sha1": "0f4fe368d76572f2af563b90fafea7d75c007d22",
-                        "md5": "fb5f5106909e81ea86bea6ac0f5d021c"
+                        "sha1": "5c5e9dd39881b9b65dba7d7124690c51430a3ff1",
+                        "md5": "029b16e576071b67f3de0df7215a1062"
                     },
                     "required_dependencies": [
                         "367706",
                         "410295"
                     ],
-                    "size": 287611,
-                    "date_published": "2026-05-03T14:53:49.010Z"
+                    "size": 285003,
+                    "date_published": "2025-11-22T07:39:11.367Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/68GEZSYA/drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
+                    "id": "68GEZSYA",
+                    "parent_id": "v3CYg2V9",
+                    "hashes": {
+                        "sha512": "a40bc04b995c5ff5ec5ab6e999925296c613213de0db301b5171d7379672b28050d961556d6e5d41396d5493bdcd20a74fbeefe40b29bf61d74a465f6c71d13d",
+                        "sha1": "5c5e9dd39881b9b65dba7d7124690c51430a3ff1"
+                    },
+                    "required_dependencies": [
+                        "Wq5SjeWM",
+                        "J81TRJWm"
+                    ],
+                    "size": 285003,
+                    "date_published": "2025-11-22T07:39:16.928909Z"
                 }
             ]
         },
@@ -6841,8 +6841,8 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "fancymenu_forge_3.9.3_MC_1.20.1.jar",
+                    "type": "curseforge",
+                    "file_name": "fancymenu_forge_3.8.1_MC_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6850,43 +6850,43 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/NWQbGlsX/fancymenu_forge_3.9.3_MC_1.20.1.jar",
-                    "id": "NWQbGlsX",
+                    "url": "https://edge.forgecdn.net/files/7256/735/fancymenu_forge_3.8.1_MC_1.20.1.jar",
+                    "id": "7256735",
+                    "parent_id": "367706",
+                    "hashes": {
+                        "sha1": "1fef1d8ab0dc2dec116bc6d6cb6f789fd33b23b0",
+                        "md5": "bf41a4251d431d92b89b6c91f84d5546"
+                    },
+                    "required_dependencies": [
+                        "938643",
+                        "410295"
+                    ],
+                    "size": 4472193,
+                    "date_published": "2025-11-24T08:24:12.380Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "fancymenu_forge_3.8.1_MC_1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/MywA2BxT/fancymenu_forge_3.8.1_MC_1.20.1.jar",
+                    "id": "MywA2BxT",
                     "parent_id": "Wq5SjeWM",
                     "hashes": {
-                        "sha512": "0f47557d5f65b63836735f7d4e04c7eaf868f6a56f5d88ae74bb3bacbc712f9f90e9040bb48782fad5608fa477e948ad0b7c4e62a837a78e2457d4e760b83463",
-                        "sha1": "22b779ac73923b39a02625adb108e7ee17a5502b"
+                        "sha512": "71aca039cd5eb81f7a169df32473465e6bbd13f88b703de68475298f5dbf76bc85787ecd6b786a049cb7e6bf2426dac254424abd15c1900d9d520276f7d63ad9",
+                        "sha1": "1fef1d8ab0dc2dec116bc6d6cb6f789fd33b23b0"
                     },
                     "required_dependencies": [
                         "J81TRJWm",
                         "CVT4pFB2"
                     ],
-                    "size": 25625609,
-                    "date_published": "2026-05-15T18:36:15.198001Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "fancymenu_forge_3.9.1_MC_1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8089/423/fancymenu_forge_3.9.1_MC_1.20.1.jar",
-                    "id": "8089423",
-                    "parent_id": "367706",
-                    "hashes": {
-                        "sha1": "f4316685c0499e5e2dd3d26c0f0d60f8b57e0a0a",
-                        "md5": "bf6f21f0de13aaf7361ac7fb8f8241f7"
-                    },
-                    "required_dependencies": [
-                        "410295",
-                        "938643"
-                    ],
-                    "size": 25613027,
-                    "date_published": "2026-05-14T20:28:55.373Z"
+                    "size": 4472193,
+                    "date_published": "2025-11-24T08:24:19.760480Z"
                 }
             ]
         },
