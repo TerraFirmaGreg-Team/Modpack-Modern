@@ -2,14 +2,37 @@
 
 ## Unreleased
 ### Changes
+- Added tameable foxes! They work similarly to tamed cats. Check the Pets entry in the field guide for more information (#4032) @SakuraKitsurugi
+- Updated the field guide Pets entry with information on where to find each wolf variant @SakuraKitsurugi
+- Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check the field guide for more information about how it all works. (#4002) @jmecn
+- Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#4009) @Nezumi-Remis
+- Improved the Rotten Voiding Cover so now you can specify how rotten the item has to be for voiding. Set the "minimum days" to zero to keep the current behaviour (only void when completely rotten) @ashleney
 - Increased the render distance in the beneath @Pyritie
-- Reduced the costs of mechanical harvesters, mechanical plows, and display boards
-- Advancedperipherals Inventory Manager is now gated at LuV @ashleney
+- Reduced the costs of mechanical harvesters, mechanical plows, and display boards @Pyritie
+- Advanced Peripherals Inventory Manager is now gated at LuV @ashleney
 - Barrels can't be used in railguns @ashleney
-- Craft Lamp Glass by 4 rather that 1 @TomPlop
+- Buffed the amount of Lamp Glass per craft from 1 to 4 (#4022) @TomPlop
+- Removed vanilla brown and red small mushrooms from the beneath, added Fly Agaric instead (#4039) @SakuraKitsurugi
+- Any compostable item can now be used in the Unposter, and improved the Unposter field guide entry @SakuraKitsurugi
+- Shroomlight crafting now only needs any 4 mushrooms instead of specifically brown and red @SakuraKitsurugi
+- Updated the default configs for Distant Horizons 3.0+ (#3982) @Cage-With-Human-Parts
+- Ender dust can now be used as nitrogen/phosphorus fertiliser (#3982) @pehala
+- Removed the cutter recipe for planks to lumber, added a cutter recipe for planks to slabs, and added a packer recipe for planks to lumber (so now you can automate wood slabs without needing mechanical crafters) (#3973) @SokvisalMong
+- Railguns can now have the target dimension be the same as the source dimension (i.e. you can now send stuff between different bases on the overworld) @ashleney
 ### Bug fixes
-- Fix whisk recycling @Ashleney
-- I am once again fixing a linux crash @Pyritie
+- Fixed Flax loot table again (#3977) @applenper
+- Fixed whisk recycling @Ashleney
+- Fixed the Gas Well detecting explosives so it should now actually work @TomPlop
+- More linux crash fixes @Pyritie
+- Fixed being able to dupe some firmalife foods via crafting table (#4038) @ashleney
+- Fixed the bloomery field guide so it no longer lists Coal as a valid fuel @Pyritie
+- Fixed huge FPS drops when holding Fish Roe and Syringes (#3004) @Redeix
+- Updated the models of Seals and Mongeese and fixed their Create Hats @SakuraKitsurugi
+- Fixed sequenced assembly recipes for train tracks (#4024) @SakuraKitsurugi
+- Fixed recipe conflicts for normal and wide train tracks (#3986) @SakuraKitsurugi
+- Fixed the coke oven recipe for bituminous coal blocks giving way less creosote than expected (#3986) @SakuraKitsurugi
+- Fixed not being able to use steam in a blaze burner @Pyritie
+- Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
 
 ## [0.12.7] - 04-05-2026
 ### Changes
