@@ -33,6 +33,8 @@
 - Fixed the coke oven recipe for bituminous coal blocks giving way less creosote than expected (#3986) @SakuraKitsurugi
 - Fixed not being able to use steam in a blaze burner @Pyritie
 - Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
+- Fixed digger helmet disappearing when broken @Thomasx0
+- Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
 
 ## [0.12.7] - 04-05-2026
 ### Changes
