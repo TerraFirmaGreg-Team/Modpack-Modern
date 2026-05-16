@@ -3,15 +3,20 @@
 
 const registerCreateItemTags = (event) => {
 
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
-
 	// Face curio slot for goggles
 	event.remove("curios:head", "create:goggles")
 	event.add("curios:face", "create:goggles")
+	
+	event.remove('c:hidden_from_recipe_viewers', 'create:creative_blaze_cake')
+	event.remove('c:hidden_from_recipe_viewers', 'create:tree_fertilizer')
+	event.remove('c:hidden_from_recipe_viewers', 'create:creative_crate')
+	event.remove('c:hidden_from_recipe_viewers', 'create:creative_fluid_tank')
+	event.remove('c:hidden_from_recipe_viewers', 'create:handheld_worldshaper')
+	event.remove('c:hidden_from_recipe_viewers', 'create:creative_motor')
+	event.remove('c:hidden_from_recipe_viewers', 'create:minecart_contraption')
+	event.remove('c:hidden_from_recipe_viewers', 'create:furnace_minecart_contraption')
+	event.remove('c:hidden_from_recipe_viewers', 'create:chest_minecart_contraption')
+	event.remove('c:hidden_from_recipe_viewers', 'create:haunted_bell')
 
 	// This is greate's fault
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
@@ -123,11 +128,6 @@ const registerCreateItemTags = (event) => {
 }
 
 const registerCreateBlockTags = (event) => {
-
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {

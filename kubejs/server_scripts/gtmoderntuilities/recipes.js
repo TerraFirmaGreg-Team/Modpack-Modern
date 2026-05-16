@@ -19,9 +19,4 @@ const registerGTModernUtilitiesRecipes = (event) => {
 			{ id: 'gtceu:shaped/zpm_power_unit_energy_module' },
 		], mod: 'gtmutils'
 	});
-
-    global.GTM_UTILITIES_DISABLED_ITEMS.forEach(item => {
-        event.remove({ output : item })
-    })
-
 }

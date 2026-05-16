@@ -2200,9 +2200,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(16)
-		.addMaterialInfo(true)
 		
-	TFGHelpers.registerMaterialInfo('create:gantry_carriage', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
+	TFGHelpers.registerMaterialInfo('create:weighted_ejector', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:turntable', [
 		'DA ',
@@ -2238,7 +2237,6 @@ const registerCreateRecipes = (event) => {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('create:gearshift', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Redstone, 1]);
 

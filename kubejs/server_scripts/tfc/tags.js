@@ -372,12 +372,6 @@ function registerTFCItemTags(event) {
         });
     });
 
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-
     global.TFC_HIDDEN_ITEMS.forEach((item) => {
         event.add("c:hidden_from_recipe_viewers", item);
     });
@@ -555,11 +549,6 @@ function registerTFCBlockTags(event) {
 
     event.add("tfc:glass_basin_blocks", "tfc:white_kaolin_clay");
     event.add("tfc:glass_pouring_table", "tfc:white_kaolin_clay");
-
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-    });
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");

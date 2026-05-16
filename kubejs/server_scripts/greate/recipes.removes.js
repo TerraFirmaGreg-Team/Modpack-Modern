@@ -6,12 +6,6 @@
  */
 function removeGreateRecipes(event) {
 
-	global.GREATE_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-		TFGHelpers.clearMaterialInfo(item);
-	})
-
 	global.GREATE_DISABLED_FLUIDS.forEach(fluid => {
 		event.remove({ input: fluid })
 		event.remove({ output: fluid })
@@ -47,7 +41,7 @@ function removeGreateRecipes(event) {
 		event.remove({ id: `gtceu:extractor/extract_${tier}_gearbox` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_vertical_gearbox` })
 	})
-	
+
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_andesite_alloy' })
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' })
 	
@@ -56,13 +50,8 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: /^greate:(mixing|cutting|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
 	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
-
-	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })
-	event.remove({ mod: 'greate', type: 'minecraft:crafting_shapeless' })
-	event.remove({ mod: 'greate', type: 'create:deploying' });
-	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
-	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
 	
+
 	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_encased_fan' });
 	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_encased_fan' });
 	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_mechanical_mixer' });
@@ -94,6 +83,11 @@ function removeGreateRecipes(event) {
 
 	event.remove({ id: 'greate:shaped/copper_diving_helmet' })
 	event.remove({ id: 'greate:shaped/copper_backtank' })
+	
+	event.remove({ id: 'greate:item_application/copper_casing_from_wood' })
+	event.remove({ id: 'greate:item_application/copper_casing_from_wood_using_deployer' })
+	event.remove({ id: 'greate:item_application/brass_casing_from_wood' })
+	event.remove({ id: 'greate:item_application/brass_casing_from_wood_using_deployer' })
 
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
 	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })

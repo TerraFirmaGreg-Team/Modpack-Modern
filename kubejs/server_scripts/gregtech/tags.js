@@ -4,11 +4,6 @@
 /** @param {TagEvent.Item} event  */
 function registerGTCEUItemTags(event) {
     // Удаление тегов у отключенных предметов
-    global.GTCEU_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-
     global.GTCEU_HIDED_ITEMS.forEach((item) => {
         event.add("c:hidden_from_recipe_viewers", item);
     });
@@ -96,11 +91,6 @@ function registerGTCEUItemTags(event) {
 
 /** @param {TagEvent.Block} event  */
 function registerGTCEUBlockTags(event) {
-    // Удаление тегов у отключенных предметов
-    global.GTCEU_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-    });
-
     event.add('gtceu:mineable/pickaxe_or_wrench', 'gtceu:ulv_hermetic_casing');
 
     event.remove("gtceu:cleanroom_doors", "#minecraft:wooden_doors");

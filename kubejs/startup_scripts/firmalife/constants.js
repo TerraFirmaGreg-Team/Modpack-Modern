@@ -1,52 +1,6 @@
 // priority: -100
 "use strict";
 
-/**
- * Список хранит предметы, 
- * у которых должны быть удалены тэги и они должны быть скрыты в REI.
- */
-global.FIRMALIFE_DISABLED_ITEMS = [
-    
-    // Chromite
-    'firmalife:metal/ingot/chromium', 
-    'firmalife:metal/double_ingot/chromium', 
-    'firmalife:metal/sheet/chromium', 
-    'firmalife:metal/double_sheet/chromium', 
-    'firmalife:metal/rod/chromium', 
-    'firmalife:metal/bucket/chromium',
-
-    // Stainless Steel
-    'firmalife:metal/ingot/stainless_steel', 
-    'firmalife:metal/double_ingot/stainless_steel', 
-    'firmalife:metal/sheet/stainless_steel',
-    'firmalife:metal/double_sheet/stainless_steel', 
-    'firmalife:metal/rod/stainless_steel',
-    'firmalife:metal/bucket/stainless_steel',
-    
-    // Other
-    'firmalife:compost_tumbler',
-
-    // Greenhouse shit
-    'firmalife:pumping_station',
-    'firmalife:copper_pipe',
-    'firmalife:oxidized_copper_pipe',
-    'firmalife:irrigation_tank',
-
-    // disabled so people use tongs instead
-    'firmalife:peel',
-
-    'firmalife:bucket/chocolate',
-    'firmalife:bucket/fruity_fluid',
-    'firmalife:bucket/metal/chromium',
-    'firmalife:bucket/metal/stainless_steel',
-
-    // Unimplemented
-    'firmalife:food/frothy_coconut',
-    'firmalife:cinnamon_bark',
-    'firmalife:spice/cinnamon',
-    'firmalife:spice/ground_cinnamon'
-];
-
 global.FIRMALIFE_HIDED_ITEMS = [
     'firmalife:weathered_copper_greenhouse_wall', 
     'firmalife:weathered_copper_greenhouse_panel_wall', 

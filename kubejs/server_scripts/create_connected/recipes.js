@@ -3,11 +3,6 @@
 
 const registerCreateConnectedRecipes = (event) => {
 
-	global.CREATE_CONNECTED_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-
 	event.remove({ input: "create_connected:copycat_vertical_step", output: "create:copycat_step" });
 
 	// Remove Fluid Vessel Crafting

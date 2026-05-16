@@ -6,11 +6,6 @@
  */
 const registerFirmaLifeRecipes = (event) => {
 
-	global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-
 	// - Chromium
 
 	// Ores
