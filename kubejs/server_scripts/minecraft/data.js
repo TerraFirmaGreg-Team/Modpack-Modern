@@ -45,19 +45,4 @@ function registerTFCDataForMinecraft(event) {
 		food.fruit(3)
 		food.decayModifier(0.5)
 	})
-
-	event.foodItem('minecraft:red_mushroom', food => {
-		food.hunger(1.5)
-		food.vegetables(1)
-		food.water(5)
-		food.decayModifier(2)
-	})
-
-	event.foodItem('minecraft:brown_mushroom', food => {
-		food.saturation(2)
-		food.hunger(2)
-		food.vegetables(1)
-		food.water(2)
-		food.decayModifier(2)
-	})
 }

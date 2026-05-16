@@ -12,7 +12,7 @@
 								"to_place": {
 									"type": "minecraft:simple_state_provider",
 									"state": {
-										"Name": "minecraft:red_mushroom"
+										"Name": "tfg:fly_agaric"
 									}
 								}
 							}
@@ -53,7 +53,7 @@
 								"to_place": {
 									"type": "minecraft:simple_state_provider",
 									"state": {
-										"Name": "minecraft:brown_mushroom"
+										"Name": "beneath:mushroom/portobello"
 									}
 								}
 							}
