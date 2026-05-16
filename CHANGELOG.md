@@ -5,7 +5,7 @@
 - Added tameable foxes! They work similarly to tamed cats. Check the Pets entry in the field guide for more information (#4032) @SakuraKitsurugi
 - Updated the field guide Pets entry with information on where to find each wolf variant @SakuraKitsurugi
 - Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check the field guide for more information about how it all works. (#4002) @jmecn
-- Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#4009) @Nezumi-Remis
+- Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#3608, #4009) @Nezumi-Remis
 - Improved the Rotten Voiding Cover so now you can specify how rotten the item has to be for voiding. Set the "minimum days" to zero to keep the current behaviour (only void when completely rotten) @ashleney
 - Increased the render distance in the beneath @Pyritie
 - Reduced the costs of mechanical harvesters, mechanical plows, and display boards @Pyritie
