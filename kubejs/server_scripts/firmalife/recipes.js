@@ -335,27 +335,23 @@ const registerFirmaLifeRecipes = (event) => {
 							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.inputFluids('#tfc:any_water 40')
 							.itemOutputs(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
-							.duration(10)
+							.duration(30)
 							.EUt(30)
 
-						event.custom({
-							type: "ae2:transform",
-							circumstance: {
-							type: "fluid",
-							tag: "tfc:any_water"
-							},
-							ingredients: [{item: `firmalife:${weathering}${tier.tier}_greenhouse_${block}`}],
-							result: {item: `firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`}
-							}).id(`tfg:corrode_${weatheringArray[i + 1]}_${tier.tier}_greenhouse_${block}`)
+						event.recipes.tfc.barrel_sealed(8000)
+							.inputFluid(Fluid.of('minecraft:water', 150))
+							.inputItem(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
+							.outputItem(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
+							.id(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 					})
 				}	
-				if (weatheringArray[i - 1] !== undefined) {
+				if (i !== 0) {
 					GREENHOUSE_BLOCKS.forEach(block => {
-						event.recipes.gtceu.chemical_bath(`tfg:strip_${weatheringArray[i - 1]}${tier.tier}_greenhouse_${block}`)
+						event.recipes.gtceu.chemical_bath(`tfg:strip_${weathering}${tier.tier}_greenhouse_${block}`)
 							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
-							.fluidInput('gtceu:phosphoric_acid 10')
-							.itemOutputs(`firmalife:${weatheringArray[i - 1]}${tier.tier}_greenhouse_${block}`)
-							.duration(10)
+							.inputFluids('gtceu:phosphoric_acid 10')
+							.itemOutputs(`firmalife:${tier.tier}_greenhouse_${block}`)
+							.duration(30)
 							.EUt(30)
 					})
 				}
