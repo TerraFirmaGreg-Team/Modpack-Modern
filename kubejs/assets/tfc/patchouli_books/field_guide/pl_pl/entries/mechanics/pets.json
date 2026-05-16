@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Pets",
+  "name": "Zwierzęta domowe",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
   "pages": [
@@ -16,7 +16,7 @@
       "type": "patchouli:entity",
       "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
       "scale": 0.7,
-      "text": "A dog."
+      "text": "Pies."
     },
     {
       "type": "patchouli:text",
@@ -42,7 +42,7 @@
           "bold": true
         },
         {
-          "text": "Местность",
+          "text": "Klimat",
           "bold": true
         },
         {
@@ -58,13 +58,13 @@
           "text": "Arctic, Subarctic (Forests)"
         },
         {
-          "text": "Черный"
+          "text": "Czarny"
         },
         {
           "text": "Tundra, Humid Subarctic (Forests)"
         },
         {
-          "text": "Каштан"
+          "text": "Kasztan"
         },
         {
           "text": "Tundra, Humid Subarctic (Plains)"
@@ -119,7 +119,7 @@
       "type": "patchouli:entity",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.7,
-      "text": "A cat."
+      "text": "Kot."
     },
     {
       "type": "patchouli:text",
@@ -129,7 +129,7 @@
       "type": "patchouli:entity",
       "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
       "scale": 0.7,
-      "text": "A fox."
+      "text": "Lis."
     },
     {
       "type": "patchouli:text",
