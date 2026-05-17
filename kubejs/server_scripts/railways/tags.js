@@ -43,5 +43,5 @@ const registerRailWaysBlockTags = (event) => {
         event.removeAllTagsFrom(item)
     })
 
-	event.add('tfg:no_icicle_generation', 'railways:track_monorail')
+	event.add('tfc:no_icicle_generation', 'railways:track_monorail')
 }

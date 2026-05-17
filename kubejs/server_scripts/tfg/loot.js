@@ -99,6 +99,18 @@ function registerTFGLoots(event) {
 			})
 		.addLoot('tfg:large_nest_box')
 
+	const ASPHALT_ROAD_BLOCKS = [
+		'tfg:asphalt_road',
+		'tfg:asphalt_road_hot',
+		'tfg:asphalt_road_slab',
+		'tfg:asphalt_road_stairs'
+	]
+	ASPHALT_ROAD_BLOCKS.forEach(block => {
+		event.addBlockLootModifier(block)
+			.removeLoot(Ingredient.all)
+			.addLoot('tfg:asphalt_rubble')
+	})
+
 	//#endregion
 
 	//Cross-mod glass compat
@@ -227,4 +239,15 @@ function registerTFGLoots(event) {
 	event.addEntityLootModifier('tfg:mongoose')
 		.addWeightedLoot([1, 3], ['minecraft:bone'])
 		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
+
+	// Tamed Fox normal loot table
+	event.addEntityLootModifier('tfg:fox')
+		.addLoot(LootEntry.of('tfc:small_raw_hide', 1))
+		.addLoot(LootEntry.of('minecraft:bone', 1))
+		.addWeightedLoot([4, 7], ['tfc:food/fox'])
+
+	// Tamed Fox drop extra with butchery knife
+	event.addEntityLootModifier('tfg:fox')
+		.matchMainHand('#forge:tools/butchery_knives')
+		.addWeightedLoot([2, 4], ['tfc:food/fox'])
 };

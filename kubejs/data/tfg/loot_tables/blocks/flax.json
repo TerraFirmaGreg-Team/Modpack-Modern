@@ -13,7 +13,7 @@
 							"condition": "minecraft:block_state_property",
 							"block": "tfg:flax",
 							"properties": {
-								"age": "5",
+								"age": "6",
 								"part": "bottom"
 							}
 						}

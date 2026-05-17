@@ -508,9 +508,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 		generateGreenHouseRecipe(event, 'minecraft:the_nether', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:red_mushroom', ['24x minecraft:red_mushroom', '8x minecraft:red_mushroom'], 1, 1);
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:brown_mushroom', ['24x minecraft:brown_mushroom', '8x minecraft:brown_mushroom'], 1, 1);
-
 	// Crops
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
 		generateCropGreenHouseRecipe(event, null, element.input, element.output, element.leaves, 1);

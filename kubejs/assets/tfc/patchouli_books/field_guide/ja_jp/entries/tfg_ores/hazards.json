@@ -107,9 +107,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "ヒ素中毒",
+			"title": "Arsenicosis",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "ヒ素中毒",
+			"anchor": "Arsenicosis",
 			"text": "$(thing)ヒ素中毒$()は、粉塵や蒸気、または$(thing)鶏冠石$()に含まれる$(thing)ヒ素$()を吸い込むことで発症する病気です。徐々に$(item)空腹感$()が増加し、やがて$(item)吐き気$()を引き起こし、最終的には$(item)死$()に至ります。$(br2)この状態は、$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{

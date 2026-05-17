@@ -1,5 +1,6 @@
 {
   "button.tfcgenviewer.save": "Sauvegarder",
+  "tfcgenviewer.preview_world.km": "%s km",
   "tfcgenviewer.rock_editor.delete_tooltip": "Retirer",
   "tfcgenviewer.rock_editor.confirm": "Confirmer",
   "rock.tfc.andesite": "Andésite",
@@ -14,6 +15,7 @@
   "rock.tfc.granite": "Granite",
   "rock.tfc.limestone": "Calcaire",
   "rock.tfc.phyllite": "Phyllite",
+  "rock.tfc.quartzite": "Quartzite",
   "rock.tfc.rhyolite": "Rhyolite",
   "rock.tfc.schist": "Schiste",
   "rock.tfc.shale": "Shale",

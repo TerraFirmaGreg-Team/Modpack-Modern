@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "Albahaca",
+			"text": "La $(thing)Albahaca Silvestre$() crece entre los 12 y 25 °C, y una precipitación entre 300 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "Laurel",
+			"text": "El $(thing)Laurel Silvestre$() crece entre los 8 y 14 °C, y una precipitación entre 25 y 225 mm. ",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "Cadramomo",
+			"text": "El $(thing)Cardamomo Silvestre$() crece entre los 18 y 30 °C, y una precipitación entre 350 y 500 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -141,7 +141,7 @@
 				}
 			],
 			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"text": "El $(thing)Cilantro Silvestre$() crece entre los 5 y 15 °C, y una precipitación entre 0 y 150 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "Comino",
+			"text": "El $(thing)Comino Silvestre$() crece entre los 6 y 20 °C, y una precipitación entre 50 y 250 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "Orégano",
+			"text": "El $(thing)Orégano Silvestre$() crece entre los 5 y 13 °C, y una precipitación entre 50 y 150 mm.",
 			"enable_visualize": false
 		},
 		{
@@ -276,8 +276,8 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "Vainilla",
+			"text": "La $(thing)Vainilla Silvestre$() crece entre 18 y 30 °C, y una precipitación entre 200 y 500 mm.",
 			"enable_visualize": false
 		},
 		{

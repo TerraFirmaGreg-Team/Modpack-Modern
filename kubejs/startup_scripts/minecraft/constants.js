@@ -696,7 +696,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:nether_wart', 
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',
-    'minecraft:nautilus_shell'
+    'minecraft:nautilus_shell',
+    'minecraft:red_mushroom',
+    'minecraft:brown_mushroom'
 ];
 
 global.MINECRAFT_HIDED_ITEMS = [

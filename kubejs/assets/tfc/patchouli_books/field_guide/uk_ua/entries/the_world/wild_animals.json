@@ -78,7 +78,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "Вовк з'являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче 22°C та рівня $(l:the_world/climate#rainfall)опадів$() від 150 до 420 мм. Вони полюють зграями. Якщо погодувати вовка достатню кількість разів, він стане прирученою $(l:mechanics/pets)собакою$()."
+			"text": "Вовк з’являється за будь-якої $(l:the_world/climate#temperature)температури$() нижче 22°C та при $(l:the_world/climate#rainfall)рівні опадів$() між 70 і 480 мм. Вони полюють зграями. Якщо достатньо разів нагодувати вовка, він приручиться й стане $(l:mechanics/pets)собакою$()."
 		},
 		{
 			"type": "patchouli:entity",

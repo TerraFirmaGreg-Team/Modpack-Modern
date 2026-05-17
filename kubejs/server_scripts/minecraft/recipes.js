@@ -478,7 +478,6 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Тигель, cauldron
 
 	event.shaped('minecraft:cauldron', [
-		'A A',
 		'ABA',
 		'AAA'
 	], {
@@ -487,11 +486,12 @@ const registerMinecraftRecipes = (event) => {
 	}).id('gtceu:shaped/cauldron')
 
 	event.recipes.gtceu.assembler('cauldron')
-		.itemInputs('7x #forge:plates/iron')
+		.itemInputs('5x #forge:plates/iron')
 		.circuit(10)
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)
 		.EUt(4)
+		.addMaterialInfo(true)
 
 	//#endregion
 
@@ -919,22 +919,8 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
 	//#region Mushrooms
-
-	event.shapeless('4x minecraft:red_mushroom', ['minecraft:red_mushroom_block', '#forge:tools/knives'])
-		.id('tfg:shapeless/cut_red_mushroom_block')
-
-	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
-		.id('tfg:shapeless/cut_brown_mushroom_block')
-
-	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
-		.itemInputs('4x minecraft:red_mushroom')
-		.inputFluids(Fluid.of('gtceu:glowstone', 144))
-		.itemOutputs('minecraft:shroomlight')
-		.duration(200)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
-		.itemInputs('4x minecraft:brown_mushroom')
+	event.recipes.gtceu.chemical_bath('tfg:mushrooms_to_shroomlight')
+		.itemInputs('4x #forge:mushrooms')
 		.inputFluids(Fluid.of('gtceu:glowstone', 144))
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)

@@ -96,8 +96,6 @@ function registerTFGBiomassRecipes(event) {
 		.EUt(2)
 
 	let food = Ingredient.of('#tfc:foods')
-		.subtract('minecraft:brown_mushroom')
-		.subtract('minecraft:red_mushroom')
 		.withCount(8)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_food')

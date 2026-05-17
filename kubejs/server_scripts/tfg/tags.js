@@ -164,12 +164,13 @@ const registerTFGItemTags = (event) => {
 		event.add("c:hidden_from_recipe_viewers", glassLens);
 	});
 	
-	//tag unfinished tracks for emi++ grouping
+	event.add('tfg:track_rods', '#forge:rods/long/wrought_iron')
+	event.add('tfg:track_rods', '#forge:rods/steel')
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_wide`)	
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_wide`)	
 	})
 	
 	const OTHER_TRACKS = [
@@ -180,12 +181,12 @@ const registerTFGItemTags = (event) => {
 	]
 	
 	OTHER_TRACKS.forEach(rail => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_wide`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_wide`)
 	})
 	
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_monorail`)
+	event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_monorail`)
 	
 	// tag locometal blocks (minus (trap)doors) for emi++ grouping
 
@@ -256,7 +257,20 @@ const registerTFGItemTags = (event) => {
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_panel')
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_sett')
     event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_flagstones')
-	
+
+	const ASPHALT_TARS = [
+		'tfg:oil_tar',
+		'tfg:raw_oil_tar',
+		'tfg:light_oil_tar',
+		'tfg:heavy_oil_tar',
+	]
+
+	ASPHALT_TARS.forEach(id => {
+		event.add('tfg:asphalt_tars', id)
+	})
+
+	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
+
 	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
@@ -292,6 +306,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+
+	event.add('tfg:functional_asphalt_roads', 'tfg:asphalt_road')
+	event.add('tfg:functional_asphalt_road_stairs', 'tfg:asphalt_road_stairs')
+	event.add('tfg:functional_asphalt_road_slabs', 'tfg:asphalt_road_slab')
 }
 //#endregion
 
@@ -440,6 +458,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
+	registerTFGPrimitiveEntityTags(event)
 
 	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')

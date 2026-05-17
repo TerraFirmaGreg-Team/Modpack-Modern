@@ -29,7 +29,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "Niedźwiedź szary",
+			"name": "Niedźwiedź grizzly",
 			"text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
@@ -146,13 +146,13 @@
 			"type": "patchouli:text",
 			"anchor": "prey",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-			"title": "Prey"
+			"title": "Zwierzyna"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "Króli",
+			"name": "Królik",
 			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
 		},
 		{
@@ -333,7 +333,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crayfish",
 			"scale": 0.7,
-			"name": "Langusta",
+			"name": "Rak",
 			"text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
 		},
 		{

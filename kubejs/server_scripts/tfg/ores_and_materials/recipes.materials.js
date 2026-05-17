@@ -208,7 +208,7 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  */
 function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	const id = `${material.getName()}_${recipeIdSuffix}`;
+	const id = linuxUnfucker(`${material.getName()}_${recipeIdSuffix}`);
 	let compactingTier = nonTfcTier;
 
 	if (tfcProperty !== null) {

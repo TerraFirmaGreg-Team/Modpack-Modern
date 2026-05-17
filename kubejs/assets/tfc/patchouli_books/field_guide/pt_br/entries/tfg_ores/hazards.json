@@ -20,7 +20,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Prevenção e Curas",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rochas?$()$()$(li)$(l:tfg_ores/hazards#containers)Contêineres$()$(li)$(l:tfg_ores/hazards#mask)A Máscara Facial$()$(li)$(l:tfg_ores/hazards#gloves)As Luvas de Borracha$()$(li)$(l:tfg_ores/hazards#hazmat)O Traje de Proteção$()$(li)$(l:tfg_ores/hazards#medicine)Pílulas, Comprimidos e Pomadas$()$(li)$(l:tfg_ores/hazards#rad_away)A pílula RadAway™$()$(li)$(l:tfg_ores/hazards#respawn)O Impensável...$()"
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rochas?$()$()$(li)$(l:tfg_ores/hazards#containers)Recipientes$()$(li)$(l:tfg_ores/hazards#mask)A Máscara Facial$()$(li)$(l:tfg_ores/hazards#gloves)As Luvas de Borracha$()$(li)$(l:tfg_ores/hazards#hazmat)O Traje de Proteção$()$(li)$(l:tfg_ores/hazards#medicine)Pílulas, Comprimidos e Pomadas$()$(li)$(l:tfg_ores/hazards#rad_away)A pílula RadAway™$()$(li)$(l:tfg_ores/hazards#respawn)O Impensável...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -29,13 +29,13 @@
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "Primeiro, trabalhe o couro em mitenes."
+			"text": "$(thing)A maneira mais fácil$() de $(thing)evitar$() efeitos perigosos é $(item)simplesmente não pegar os itens perigosos$().$(br2)Preencher seu inventário com $(thing)Rochas$(), por exemplo, permitirá que você escolha quais itens deseja pegar, deixando os perigosos de para lidar depois."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Recipientes",
 			"anchor": "containers",
-			"text": "As Mitenes são então embebidas em $(thing)Vinagre$(), uma mistura de frutas e álcool.",
+			"text": "Materiais perigosos só causam dano enquanto estiverem no seu $(thing)inventário$(), mas isso não se aplica a outros recipientes!$(br)Materiais perigosos não causarão dano enquanto estiverem em outro recipiente, como uma $(l:tfg_tips/inventory_management)Mochila$() ou um $(l:getting_started/pottery#vessel)Vaso$(). $(thing)Clicar com o botão direito$() enquanto segura um vaso permitirá a transferência direta do seu conteúdo para e de outros recipientes.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
@@ -56,17 +56,17 @@
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "A maneira mais fácil de evitar que itens perigosos entrem no seu inventário é não pegá-los. $(br)Preencher seu inventário com $(thing)Rochas$(), por exemplo, permitirá que você escolha quais itens deseja pegar, permitindo que você lide com os perigosos de uma só vez mais tarde."
+			"text": "Primeiro, trabalhe o couro em luvas."
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "Materiais perigosos só causam dano enquanto estiverem em seu $(thing)inventário$(), mas isso não se aplica a outros contêineres!$(br)Materiais perigosos não causarão dano enquanto estiverem em outro contêiner, como uma $(l:tfg_tips/inventory_management)Mochila$() ou $(l:getting_started/pottery#vessel)Vaso$(). $(thing)Clicar com o botão direito$() enquanto segura um vaso permitirá a transferência direta do seu conteúdo para outros contêineres"
+			"text": "As $(thing)Luvas$() são então embebidas em $(thing)Vinagre$(), uma mistura de frutas e álcool."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Ficar na $(thing)Água Termal$() causará um efeito lento de $(thing)Regeneração$()."
+			"text": "$(thing)Luvas de couro$() preparadas são então aquecidas em uma $(thing)cuba$() com $(thing)Látex Vulcanizado$(), a um passo da borracha."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -82,7 +82,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Medicamento",
+			"title": "Medicamentos",
 			"item": {
 				"tag": "tfg:medicine"
 			},
@@ -124,14 +124,14 @@
 			"title": "Beriliose",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "Berylliosis",
-			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+			"text": "$(thing)Beriliose$() é uma doença causada pelo contato da pele com $(thing)Pó de Berílio$() ou $(thing)Berílio Líquido$(). Inicialmente, pode parecer que não causa muitos danos. No entanto, quanto maior o tempo de exposição, mais rápido ela $(item)mata$() você.$(br2)$(l:tfg_ores/hazards#gloves)Luvas$() e o $(l:tfg_ores/hazards#hazmat)Traje de Proteção$() oferecem proteção contra a $(thing)Beriliose$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Envenenamento por Monóxido de Carbono",
+			"title": "Intoxicação por Monóxido de Carbono",
 			"item": "gtceu:carbon_monoxide_bucket",
 			"anchor": "Carbon_Monoxide_poisoning",
-			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+			"text": "$(thing)Intoxicação por Monóxido de Carbono$() é uma doença causada pela inalação do gás $(thing)Monóxido de Carbono$(). A exposição prolongada causa $(item)náuseas$() e $(item)morte$() rápida.$(br2)A $(l:tfg_ores/hazards#mask)Máscara Facial$() e o $(l:tfg_ores/hazards#hazmat)Traje de Proteção$() oferecem proteção contra o $(thing)Monóxido de Carbono$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -163,7 +163,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Envenenamento por Metanol",
+			"title": "Intoxicação por Metanol",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "Methanol_poisoning",
 			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
@@ -200,7 +200,7 @@
 			"title": "Silicose",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "Silicosis",
-			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
+			"text": "$(thing)Silicose$() é uma doença causada pela inalação do $(thing)Pó de Dióxido de Silício$(). A exposição causa uma $(item)Redução$() tanto na $(item)Saúde$() quanto no $(item)Suprimento de Ar$() que você tem embaixo da $(thing)Água$().$(br2)A $(l:tfg_ores/hazards#mask)Máscara Facial$() e o $(l:tfg_ores/hazards#hazmat)Traje de Proteção$() oferecem proteção contra a inalação de dióxido de silício."
 		}
 	]
 }
