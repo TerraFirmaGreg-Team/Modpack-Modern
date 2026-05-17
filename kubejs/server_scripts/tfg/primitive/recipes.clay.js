@@ -232,15 +232,8 @@ function registerTFGClayRecipes(event) {
 		.itemInputs('minecraft:clay')
 		.outputFluids(Fluid.of('minecraft:water', 250))
 		.itemOutputs('tfg:hardened_clay')
-		.duration(400)
+		.duration(200)
 		.EUt(6)
-
-	global.processorRecipe(event, `drying_clay`, 200, 16, {
-		circuit: 6,
-		itemInputs: ['minecraft:clay'],
-		fluidInputs: [Fluid.of('gtceu:nitrogen', 100)],
-		itemOutputs: ['tfg:hardened_clay']
-	})
 
 	// heating
 	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
