@@ -20,6 +20,7 @@
 - Removed the cutter recipe for planks to lumber, added a cutter recipe for planks to slabs, and added a packer recipe for planks to lumber (so now you can automate wood slabs without needing mechanical crafters) (#3973) @SokvisalMong
 - Railguns can now have the target dimension be the same as the source dimension (i.e. you can now send stuff between different bases on the overworld) @ashleney
 - Added recipes for creating the weathered versions of firmalife greenhouse blocks (#4040) @Astrimitsu
+- Increased the tank size of encased fans to match the ore washer @Electrolyte220
 ### Bug fixes
 - Fixed Flax loot table again (#3977) @applenper
 - Fixed whisk recycling @Ashleney
@@ -36,6 +37,7 @@
 - Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
 - Fixed digger helmet disappearing when broken @Thomasx0
 - Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
+- Potentially fixed the huge lag spikes from doing massive concrete road pours @Therighthon
 
 ## [0.12.7] - 04-05-2026
 ### Changes
