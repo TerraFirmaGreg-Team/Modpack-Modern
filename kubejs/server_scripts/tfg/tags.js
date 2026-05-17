@@ -269,17 +269,7 @@ const registerTFGItemTags = (event) => {
 		event.add('tfg:asphalt_tars', id)
 	})
 
-	const ROAD_MASK_IDS = [
-        "arrow", "corner", "cross", "t", "fill", "double_line",
-		"line", "line_slash_l", "line_slash_r", "line_slash_rl",
-		"slash_l", "slash_r", "slash_rl",
-        "num_0", "num_1", "num_2", "num_3", "num_4",
-        "num_5", "num_6", "num_7", "num_8", "num_9",
-        "number"
-    ];
-	ROAD_MASK_IDS.forEach(mask => {
-		event.add('tfc:usable_on_tool_rack', `tfg:asphalt_road_stencil_${mask}`)
-	})
+	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
 
 	event.add('minecraft:brick', 'tfg:stone_brick')
 }
