@@ -7869,33 +7869,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "greate-0.0.75.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7853/389/greate-0.0.75.jar",
-                    "id": "7853389",
-                    "parent_id": "901996",
-                    "hashes": {
-                        "sha1": "be5a01379a229e19ced847cb3d1181b1ff670751",
-                        "md5": "034c6671b3d7f8b8775529a1b595dd54"
-                    },
-                    "required_dependencies": [
-                        "328085",
-                        "890405"
-                    ],
-                    "size": 1319786,
-                    "date_published": "2026-03-31T22:53:53.180Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "greate-0.0.75.jar",
+                    "file_name": "greate-0.0.76.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7904,19 +7879,44 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/aZjKnDVL/greate-0.0.75.jar",
-                    "id": "aZjKnDVL",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/d9Zv61Hv/greate-0.0.76.jar",
+                    "id": "d9Zv61Hv",
                     "parent_id": "8wDcQuht",
                     "hashes": {
-                        "sha512": "a3bb885a6d900cf7e1afac4a6e9a0fc87ed8901343e7ab3f24ab05c2135aa8881b2c76e62dae3294ce927f3e1260a625533ef81ac3d47e659a14ff07ab8d1576",
-                        "sha1": "be5a01379a229e19ced847cb3d1181b1ff670751"
+                        "sha512": "c7cf25b570dd53799743c9d8a4db8a54ad84c2fd2fd97bc9d73db74252438aaa0cb8f3599fe1953f88a6996603c5fe6946b45f90e71f2b91953714ecefbd628a",
+                        "sha1": "52b0a57a183ab7e3bf29e865b5df920aeb886d1f"
                     },
                     "required_dependencies": [
                         "7tG215v7",
                         "LNytGWDc"
                     ],
-                    "size": 1319786,
-                    "date_published": "2026-03-31T22:53:55.108629Z"
+                    "size": 1317332,
+                    "date_published": "2026-05-17T02:44:05.088490Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "greate-0.0.76.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/8101/605/greate-0.0.76.jar",
+                    "id": "8101605",
+                    "parent_id": "901996",
+                    "hashes": {
+                        "sha1": "52b0a57a183ab7e3bf29e865b5df920aeb886d1f",
+                        "md5": "acbc491f9c87ed1736b1e6bb4b266237"
+                    },
+                    "required_dependencies": [
+                        "890405",
+                        "328085"
+                    ],
+                    "size": 1317332,
+                    "date_published": "2026-05-17T02:44:03.110Z"
                 }
             ]
         },
