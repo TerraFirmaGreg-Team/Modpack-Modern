@@ -43,9 +43,18 @@
 - Fixed the coke oven recipe for bituminous coal blocks giving way less creosote than expected (#3986) @SakuraKitsurugi
 - Fixed not being able to use steam in a blaze burner @Pyritie
 - Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
+### Mod updates
 - Fixed digger helmet disappearing when broken @Thomasx0
 - Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
 - Potentially fixed the huge lag spikes from doing massive concrete road pours @Therighthon
+### Shaders
+- Fixed a crash with very high and ultra settings
+- Added partial support for Caelum and TFC Caelum
+- Now each planet has its own wind speed, which determines the speed of plant waving and the speed of water waves
+- Fixed a bug with working glowing fireboxes
+- Fixed a bug with double plants where they wave strangely
+- Fixed a bug with glowing glass from create
+- Added more blocks to block.properties
 
 ## [0.12.7] - 04-05-2026
 ### Changes
