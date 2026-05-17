@@ -40,7 +40,7 @@ function removeGreateRecipes(event) {
 	})
 
 	event.remove({ id: /^greate:(mixing|cutting|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
-	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
+	//event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shapeless' })
