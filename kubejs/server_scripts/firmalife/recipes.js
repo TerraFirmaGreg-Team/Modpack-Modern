@@ -329,8 +329,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 		if (tier.tier !== "stainless_steel") {
 			tier.weathering.forEach((weathering, i, weatheringArray) => {
-				if (weatheringArray[i + 1]) {
-					GREENHOUSE_BLOCKS.forEach(block => {
+				GREENHOUSE_BLOCKS.forEach(block => {
+					if (weatheringArray[i + 1]) {
 						event.recipes.gtceu.chemical_bath(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.inputFluids('#tfc:any_water 150')
@@ -343,21 +343,18 @@ const registerFirmaLifeRecipes = (event) => {
 							.inputItem(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.outputItem(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.id(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
-					})
-				}	
-				if (i !== 0) {
-					GREENHOUSE_BLOCKS.forEach(block => {
+					}
+					if (i !== 0) {	
 						event.recipes.gtceu.chemical_bath(`tfg:strip_${weathering}${tier.tier}_greenhouse_${block}`)
 							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.inputFluids('gtceu:phosphoric_acid 10')
 							.itemOutputs(`firmalife:${tier.tier}_greenhouse_${block}`)
 							.duration(30)
 							.EUt(30)
-					})
-				}
+					}
+				})
 			})
 		}
-
 	});
 
 	event.recipes.gtceu.shaped('2x firmalife:sweeper', [
