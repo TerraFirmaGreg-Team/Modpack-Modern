@@ -333,12 +333,12 @@ const registerFirmaLifeRecipes = (event) => {
 					GREENHOUSE_BLOCKS.forEach(block => {
 						event.recipes.gtceu.chemical_bath(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
-							.inputFluids('#tfc:any_water 40')
+							.inputFluids('#tfc:any_water 150')
 							.itemOutputs(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
 							.duration(30)
 							.EUt(30)
 
-						event.recipes.tfc.barrel_sealed(8000)
+						event.recipes.tfc.barrel_sealed(2000)
 							.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 150))
 							.inputItem(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
 							.outputItem(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
