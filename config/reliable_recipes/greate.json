@@ -79,4 +79,8 @@
 			"greate:cutting/integration/gtceu/cutter/cut_uhpic_distilled_water"
 		]
 	},
+	{
+		"action": "remove_recipe",
+		"pattern": "/^greate:(compacting|pressing)\/integration\/.*/"
+	}
 ]
