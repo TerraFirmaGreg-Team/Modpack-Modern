@@ -29,21 +29,6 @@ global.GREATE_DISABLED_FLUIDS = /** @type {const} */ ([
     "greate:shadow_steel"
 ]);
 
-global.GREATE_DISABLED_TAGS = /** @type {const} */ ([
-    "#forge:andesite_alloy",
-    "#forge:dusts/andesite_alloy",
-    "#forge:alloys/andesite_alloy",
-    "#forge:alloys/steel",
-    "#forge:alloys/aluminium",
-    "#forge:alloys/stainless_steel",
-    "#forge:alloys/titanium",
-    "#forge:alloys/tungsten_steel",
-    "#forge:alloys/rhodium_plated_palladium",
-    "#forge:alloys/naquadah_alloy",
-    "#forge:alloys/darmstadtium",
-    "#forge:alloys/neutronium"
-]);
-
 global.GREATE_BELTS = /** @type {const} */ ([
     "greate:silicone_rubber_belt_connector",
     "greate:polybenzimidazole_belt_connector",

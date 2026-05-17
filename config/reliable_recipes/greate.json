@@ -5,7 +5,7 @@
 			"gtceu:electrolyzer/decomposition_electrolyzing_andesite_alloy",
 			"gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound",
 			"gtceu:shaped/andesite_alloy_shaft",
-			"gtceu:extractor/extract_andesite_alloy" ,
+			"gtceu:extractor/extract_andesite_alloy",
 			"gtceu:macerator/macerate_andesite_alloy_encased_fan",
 			"gtceu:arc_furnace/arc_andesite_alloy_encased_fan",
 			"gtceu:macerator/macerate_andesite_alloy_mechanical_mixer",
@@ -82,5 +82,39 @@
 	{
 		"action": "remove_recipe",
 		"pattern": "/^greate:(compacting|pressing)\/integration\/.*/"
+	},
+	{
+		"action": "remove_recipe",
+		"input": [
+			"#forge:andesite_alloy",
+			"#forge:dusts/andesite_alloy",
+			"#forge:alloys/andesite_alloy",
+			"#forge:alloys/steel",
+			"#forge:alloys/aluminium",
+			"#forge:alloys/stainless_steel",
+			"#forge:alloys/titanium",
+			"#forge:alloys/tungsten_steel",
+			"#forge:alloys/rhodium_plated_palladium",
+			"#forge:alloys/naquadah_alloy",
+			"#forge:alloys/darmstadtium",
+			"#forge:alloys/neutronium"
+		]
+	},
+	{
+		"action": "remove_recipe",
+		"output": [
+			"#forge:andesite_alloy",
+			"#forge:dusts/andesite_alloy",
+			"#forge:alloys/andesite_alloy",
+			"#forge:alloys/steel",
+			"#forge:alloys/aluminium",
+			"#forge:alloys/stainless_steel",
+			"#forge:alloys/titanium",
+			"#forge:alloys/tungsten_steel",
+			"#forge:alloys/rhodium_plated_palladium",
+			"#forge:alloys/naquadah_alloy",
+			"#forge:alloys/darmstadtium",
+			"#forge:alloys/neutronium"
+		]
 	}
 ]

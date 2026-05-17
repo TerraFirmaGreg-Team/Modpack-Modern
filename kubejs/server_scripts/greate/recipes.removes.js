@@ -11,11 +11,6 @@ function removeGreateRecipes(event) {
 		event.remove({ output: fluid })
 	})
 
-	global.GREATE_DISABLED_TAGS.forEach(tag => {
-		event.remove({ input: tag })
-		event.remove({ output: tag })
-	})
-
 	global.GREATE_MATERIAL_TIERS.forEach(tier => {
 		
 		event.remove({ id: `greate:shaped/${tier}_shaft` })
