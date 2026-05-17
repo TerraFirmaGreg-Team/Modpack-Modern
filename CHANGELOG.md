@@ -4,7 +4,7 @@
 ### Changes
 - Added tameable foxes! They work similarly to tamed cats. Check the Pets entry in the field guide for more information (#4032) @SakuraKitsurugi
 - Updated the field guide Pets entry with information on where to find each wolf variant @SakuraKitsurugi
-- Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues/4002) for more information about how it all works, we'll put it in the field guide later. (#4002) @jmecn
+- Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check the field guide for information about how it all works. (#4002) @jmecn
 - Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#3608, #4009) @Nezumi-Remis
 - Improved the Rotten Voiding Cover so now you can specify how rotten the item has to be for voiding. Set the "minimum days" to zero to keep the current behaviour (only void when completely rotten) @ashleney
 - Increased the render distance in the beneath @Pyritie
@@ -19,6 +19,7 @@
 - Ender dust can now be used as nitrogen/phosphorus fertiliser (#3982) @pehala
 - Removed the cutter recipe for planks to lumber, added a cutter recipe for planks to slabs, and added a packer recipe for planks to lumber (so now you can automate wood slabs without needing mechanical crafters) (#3973) @SokvisalMong
 - Railguns can now have the target dimension be the same as the source dimension (i.e. you can now send stuff between different bases on the overworld) @ashleney
+- Added recipes for creating the weathered versions of firmalife greenhouse blocks (#4040) @Astrimitsu
 ### Bug fixes
 - Fixed Flax loot table again (#3977) @applenper
 - Fixed whisk recycling @Ashleney
