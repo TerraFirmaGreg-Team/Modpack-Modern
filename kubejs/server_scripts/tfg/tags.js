@@ -269,6 +269,8 @@ const registerTFGItemTags = (event) => {
 		event.add('tfg:asphalt_tars', id)
 	})
 
+	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
+
 	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 

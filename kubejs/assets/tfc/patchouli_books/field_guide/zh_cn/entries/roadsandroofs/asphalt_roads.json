@@ -1,0 +1,99 @@
+{
+  "name": "沥青路",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:asphalt_road",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "沥青路是依托石油与格雷科技产线的高级路面。$(br)在铺好$(l:roadsandroofs/making_a_road)基层$()后，用$(thing)沥青混合料$()浇筑，经短暂$(thing)热沥青路$()阶段，固化为可长期使用的$(thing)沥青路$()。$(br)正确建成后可提供40%移动速度加成。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "沥青路",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "与混凝土路不同，沥青路不需要控制缝，也不会因湿料开裂或踩踏未干路面而失效。$(br2)施工时要当心被$(thing)热沥青路$()烫伤，以及拆除时只能得到$(thing)沥青碎块$()而非整块路面。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "tar_chunk",
+      "item": "tfg:tar_chunk",
+      "title": "焦油块料",
+      "text": "沥青路的原料是石油。将$(thing)石油$()、$(thing)原油$()、$(thing)重油$()等流体在$(thing)流体固化器$()中固化成对应的$(thing)焦油$()，再用$(thing)提取机$()加工成$(thing)焦油块料$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "asphalt_mix",
+      "item": "tfg:asphalt_mix_bucket",
+      "title": "沥青混合料",
+      "text": "在$(thing)搅拌机$()中用焦油块料与石粉制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "浇筑沥青路",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "右键将一桶$(thing)沥青混合料$()浇在铺设好的$(thing)基层$()上，它会蔓延至最多20格相邻的基层上，将其变成$(thing)热沥青路$()。热沥青路在一段时间后会冷却成$(thing)沥青路$()。$(br2)潜行对$(thing)基层$()使用混合料，可消耗少量流体用于修补。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_hot",
+      "title": "热沥青路",
+      "text": "$(thing)热沥青路$()温度很高，接触该方块会持续受到烫伤。施工时请穿戴具备热防护能力的装备。$(br2)热沥青路转变为常温$(thing)沥青路$()后，路面本身不再高温。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+      "text": "$(thing)沥青路$()可以用$(thing)鹤嘴锄$()加工成$(thing)沥青路台阶$()与$(thing)沥青路楼梯$()。也可以使用切石机进行加工。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "road_marking_stencils",
+      "item": {
+        "tag": "tfg:road_marking_stencils"
+      },
+      "title": "道路标线板",
+      "text": "沥青路最突出的定制玩法是道路标线：在已铺好的路面上喷涂颜色与图案，规划车道、路口与警示线。$(br2)各类标线板可在$(thing)工匠台$()中制作。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+      "text": "一手持$(thing)喷漆罐$()，另一手为空或持$(thing)道路标线板$()，对沥青路和沥青路台阶使用即可喷漆。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "标识的颜色由喷漆罐决定，方向由玩家朝向决定。$(br)对已有标线再次喷涂会覆盖原标线并消耗喷罐耐久，同色、同方向、同图案重复喷涂则不消耗。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:solvent_spray_can",
+      "title": "清除标线",
+      "text": "若需重新规划路面，对沥青路或沥青路台阶使用$(thing)喷漆罐（溶剂）$()，即可将该处路面标识清除。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_rubble",
+      "title": "拆除与碎块回收",
+      "text": "破坏沥青路、热沥青路、台阶或楼梯时，只会掉落$(thing)沥青碎块$()，无法保留完整路面方块。将碎块投入$(thing)提取机$()可回收为少量沥青混合料。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}
