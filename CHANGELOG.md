@@ -52,7 +52,7 @@
 - Fixed a bug with glowing glass from create
 - Added more blocks to block.properties
 ### Mod updates
-Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are client-side mods so you can add them back if you'd like.
+Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are client-side mods so you can add them back if you'd like, and they've been added to the optional mod list.
 #### Digger Helmet
 - Fixed digger helmet disappearing when broken @Thomasx0
 - Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
