@@ -24,7 +24,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Dog Variants",
+      "title": "Warianty psów",
       "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found."
     },
     {
@@ -38,7 +38,7 @@
       "type": "tfc:table",
       "strings": [
         {
-          "text": "Variant",
+          "text": "Wariant",
           "bold": true
         },
         {
@@ -46,7 +46,7 @@
           "bold": true
         },
         {
-          "text": "Pale"
+          "text": "Blady"
         },
         {
           "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
@@ -70,25 +70,25 @@
           "text": "Tundra, Humid Subarctic (Plains)"
         },
         {
-          "text": "Rusty"
+          "text": "Rdzwy"
         },
         {
           "text": "Humid Subtropical, Tropical Rainforest (Plains)"
         },
         {
-          "text": "Snowy"
+          "text": "Śnieżny"
         },
         {
           "text": "Arctic, Subarctic (Plains)"
         },
         {
-          "text": "Spotted"
+          "text": "Cętkowany"
         },
         {
           "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
         },
         {
-          "text": "Striped"
+          "text": "W paski"
         },
         {
           "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
