@@ -3,7 +3,7 @@
 		"action": "remove_recipe",
 		"type": "minecraft:stonecutting",
 		"input": [
-			"create:rose_quartz"
+			"create:rose_quartz",
 			"minecraft:iron_ingot"
 		]
 	},
@@ -11,7 +11,7 @@
 		"action": "remove_recipe",
 		"type": "minecraft:stonecutting",
 		"output": [
-			"create:copycat_step"
+			"create:copycat_step",
 			"create:copycat_panel"
 		]
 	},
@@ -19,7 +19,7 @@
 		"action": "remove_recipe",
 		"type": "create:spout_filling",
 		"id": [
-			"create:potions"
+			"create:potions",
 			"create:fill_minecraft_glass_bottle_with_gtceu_potion"
 		]
 	},
