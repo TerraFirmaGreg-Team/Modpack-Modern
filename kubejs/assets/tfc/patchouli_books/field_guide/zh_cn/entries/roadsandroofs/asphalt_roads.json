@@ -68,7 +68,11 @@
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
-      "text": "一手持$(thing)喷漆罐$()，另一手为空或持$(thing)道路标线板$()，对沥青路和沥青路台阶使用即可喷漆。$(br)标识的颜色由喷漆罐决定，方向由玩家朝向决定。$(br)对已有标线再次喷涂会覆盖原标线并消耗喷罐耐久，同色、同方向、同图案重复喷涂则不消耗。"
+      "text": "一手持$(thing)喷漆罐$()，另一手为空或持$(thing)道路标线板$()，对沥青路和沥青路台阶使用即可喷漆。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "标识的颜色由喷漆罐决定，方向由玩家朝向决定。$(br)对已有标线再次喷涂会覆盖原标线并消耗喷罐耐久，同色、同方向、同图案重复喷涂则不消耗。"
     },
     {
       "type": "patchouli:image",

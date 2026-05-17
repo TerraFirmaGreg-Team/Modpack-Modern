@@ -68,7 +68,11 @@
     {
       "type": "patchouli:spotlight",
       "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
-      "text": "Hold a $(thing)Spray Can$() in one hand and either nothing or a $(thing)Road Marking Stencil$() in the other, then use it on an asphalt road or slab to paint.$(br)The colour is determined by the spray can, and the orientation by the player's facing direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same colour, orientation, and pattern are used (which costs no durability)."
+      "text": "Hold a $(thing)Spray Can$() in one hand and either nothing or a $(thing)Road Marking Stencil$() in the other, then use it on an asphalt road or slab to paint."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The color is determined by the spray can, and the orientation by the player's direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same color, orientation, and pattern are used."
     },
     {
       "type": "patchouli:image",

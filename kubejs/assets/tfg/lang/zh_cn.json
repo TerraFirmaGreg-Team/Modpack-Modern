@@ -3280,7 +3280,7 @@
 	"tfg.tooltip.asphalt_road_hot.hazard": "热沥青。小心烫伤。",
 	"tfg.tooltip.asphalt_mix.pouring": "右键在基层上使用 %s mB 进行浇筑。",
 	"tfg.tooltip.asphalt_mix.patch": "潜行+右键在基层上使用 %s mB 进行修补。",
-	"tfg.tooltip.asphalt_stencil.hands": "任一手持喷漆罐，配合标线板使用。",
+	"tfg.tooltip.asphalt_road_stencil.usage": "任一手持喷漆罐，配合标线板使用。",
 	"emi.category.tfg.ore_vein_info": "矿脉信息",
 	"tfg.emi.ore_veins.rock_types": "存在于岩石类型：",
 	"tfg.emi.ore_veins.rarity": "稀有度：%d",
