@@ -15373,31 +15373,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8037/113/TerraFirmaGreg-Core-Modern-0.9.8.jar",
-                    "id": "8037113",
-                    "parent_id": "513402",
-                    "hashes": {
-                        "sha1": "4feb5ce8fae170c2097c01dbc153fb15524be8a6",
-                        "md5": "0b9fb1be89fec2e58ebd3dfd34e46836"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 12908542,
-                    "date_published": "2026-05-04T10:02:26.163Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.8.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15405,18 +15382,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/qzDPD5Se/TerraFirmaGreg-Core-Modern-0.9.8.jar",
-                    "id": "qzDPD5Se",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WecMe2gL/TerraFirmaGreg-Core-Modern-0.9.9.jar",
+                    "id": "WecMe2gL",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "e67870ea432a87542170516b9b157377bd0e741fd54dcd3d384ac1f80e2a3e1c180564c713e7f84e856dd7cdcd95bea438bfbc0a0def972b8675d16660aa7095",
-                        "sha1": "4feb5ce8fae170c2097c01dbc153fb15524be8a6"
+                        "sha512": "851b2173d74eaca12bb98cff81c1dff1f039df1fc764da0056daf7e6670fe3b07c68b50ffd3548cf0fe80f1fa1a0d46161b26acc58d7da189e3977e2c9f5cc53",
+                        "sha1": "25c8612d6f798557473eb202fad7b395f1a2c04a"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 12908542,
-                    "date_published": "2026-05-04T10:02:29.031121Z"
+                    "size": 13062428,
+                    "date_published": "2026-05-17T12:21:37.676221Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.9.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8103/442/TerraFirmaGreg-Core-Modern-0.9.9.jar",
+                    "id": "8103442",
+                    "parent_id": "513402",
+                    "hashes": {
+                        "sha1": "25c8612d6f798557473eb202fad7b395f1a2c04a",
+                        "md5": "a3c9cc4bb27f2a5eda1095cec422e2ce"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 13062428,
+                    "date_published": "2026-05-17T12:21:35.520Z"
                 }
             ]
         },
@@ -15438,26 +15438,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.5.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7925/563/TerraFirmaGreg-Shaders-Complementary-3.1.5.zip",
-                    "id": "7925563",
-                    "parent_id": "954161",
-                    "hashes": {
-                        "sha1": "d2096d4dbcbd77b8a083cef1a8d3c463e8841a0c",
-                        "md5": "b8dbe01c4808798cbf4ec11f44634cb2"
-                    },
-                    "required_dependencies": [],
-                    "size": 2242470,
-                    "date_published": "2026-04-14T12:32:27.980Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.5.zip",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.20.1"
@@ -15467,16 +15449,34 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/2xlJfRwd/TerraFirmaGreg-Shaders-Complementary-3.1.5.zip",
-                    "id": "2xlJfRwd",
+                    "url": "https://cdn.modrinth.com/data/cFPyBbB1/versions/vyWrTwOC/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "id": "vyWrTwOC",
                     "parent_id": "cFPyBbB1",
                     "hashes": {
-                        "sha512": "ce1dadd4dc94e07b6ff01a1e8e50a64bfb1b131bcfb354989873480b68e4206afdd1f4f321012382338cc5616e95cdd97cd8ef8cf5ec69a0334835f5c68e481c",
-                        "sha1": "d2096d4dbcbd77b8a083cef1a8d3c463e8841a0c"
+                        "sha512": "7ee2025e2cb5d3173ef6d535739619b1be34e08c7db3d06de1c05d53bfa92574ff2fe277e285370447874481e940970b7b2529d36556e157f400ff91c324c18b",
+                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e"
                     },
                     "required_dependencies": [],
-                    "size": 2242470,
-                    "date_published": "2026-04-14T12:32:31.055890Z"
+                    "size": 2286615,
+                    "date_published": "2026-05-17T15:48:42.996433Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8104/352/TerraFirmaGreg-Shaders-Complementary-3.1.6.zip",
+                    "id": "8104352",
+                    "parent_id": "954161",
+                    "hashes": {
+                        "sha1": "72d5bb073fcddcae79605f40b2618446bc5c293e",
+                        "md5": "32b8d8cab35d287e07fb5993c1ecd0a1"
+                    },
+                    "required_dependencies": [],
+                    "size": 2286615,
+                    "date_published": "2026-05-17T15:48:41.433Z"
                 }
             ]
         },
