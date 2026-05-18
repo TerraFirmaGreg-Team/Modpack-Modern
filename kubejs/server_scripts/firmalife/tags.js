@@ -3,11 +3,7 @@
 
 const registerFirmaLifeItemTags = (event) => {
     
-    // Просто предметы для скрытия
-    global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
+   
     // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
     global.FOOD_FRUIT
         .map(fruit => fruit.id)

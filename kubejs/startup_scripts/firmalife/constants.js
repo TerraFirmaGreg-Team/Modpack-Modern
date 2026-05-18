@@ -1,54 +1,6 @@
 // priority: -100
 "use strict";
 
-global.FIRMALIFE_HIDED_ITEMS = [
-    'firmalife:weathered_copper_greenhouse_wall', 
-    'firmalife:weathered_copper_greenhouse_panel_wall', 
-    'firmalife:weathered_copper_greenhouse_panel_roof', 
-    'firmalife:weathered_copper_greenhouse_roof', 
-    'firmalife:weathered_copper_greenhouse_roof_top', 
-    'firmalife:weathered_copper_greenhouse_trapdoor', 
-    'firmalife:weathered_copper_greenhouse_door', 
-    'firmalife:weathered_copper_greenhouse_port', 
-
-    'firmalife:rusted_iron_greenhouse_wall', 
-    'firmalife:rusted_iron_greenhouse_panel_wall', 
-    'firmalife:rusted_iron_greenhouse_panel_roof', 
-    'firmalife:rusted_iron_greenhouse_roof',
-    'firmalife:rusted_iron_greenhouse_roof_top', 
-    'firmalife:rusted_iron_greenhouse_trapdoor', 
-    'firmalife:rusted_iron_greenhouse_door', 
-    'firmalife:rusted_iron_greenhouse_port', 
-
-    'firmalife:oxidized_copper_greenhouse_wall', 
-    'firmalife:oxidized_copper_greenhouse_panel_wall', 
-    'firmalife:oxidized_copper_greenhouse_panel_roof', 
-    'firmalife:oxidized_copper_greenhouse_roof', 
-    'firmalife:oxidized_copper_greenhouse_roof_top', 
-    'firmalife:oxidized_copper_greenhouse_trapdoor', 
-    'firmalife:oxidized_copper_greenhouse_door', 
-    'firmalife:oxidized_copper_greenhouse_port',
-
-    'firmalife:exposed_copper_greenhouse_wall', 
-    'firmalife:exposed_copper_greenhouse_panel_wall', 
-    'firmalife:exposed_copper_greenhouse_panel_roof', 
-    'firmalife:exposed_copper_greenhouse_roof', 
-    'firmalife:exposed_copper_greenhouse_roof_top',
-    'firmalife:exposed_copper_greenhouse_trapdoor', 
-    'firmalife:exposed_copper_greenhouse_door', 
-    'firmalife:exposed_copper_greenhouse_port',
-
-    'firmalife:weathered_treated_wood_greenhouse_wall', 
-    'firmalife:weathered_treated_wood_greenhouse_panel_wall', 
-    'firmalife:weathered_treated_wood_greenhouse_panel_roof', 
-    'firmalife:weathered_treated_wood_greenhouse_roof', 
-    'firmalife:weathered_treated_wood_greenhouse_roof_top', 
-    'firmalife:weathered_treated_wood_greenhouse_trapdoor', 
-    'firmalife:weathered_treated_wood_greenhouse_door', 
-    'firmalife:weathered_treated_wood_greenhouse_port'
-];
-
-
 global.FIRMALIFE_ORE_MATERIALS = [
     'chromite'
 ];
