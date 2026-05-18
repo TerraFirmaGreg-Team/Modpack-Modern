@@ -21,6 +21,7 @@
   "tfcgenviewer.preview_world.x_offset.tooltip": "Przesunięcie X środka podglądu od 0 (w km)",
   "tfcgenviewer.preview_world.z_offset": "Przesunięcie Z",
   "tfcgenviewer.preview_world.z_offset.tooltip": "Przesunięcie Z środka podglądu od 0 (w km)",
+  "tfcgenviewer.preview_world.spawn_overlay": "Nakładka spawnu",
   "tfcgenviewer.preview_world.preview_info.generating": "Generowanie...",
   "tfcgenviewer.preview_world.color_key_template": "%s : %s",
   "tfcgenviewer.preview_world.km": "%s km",
