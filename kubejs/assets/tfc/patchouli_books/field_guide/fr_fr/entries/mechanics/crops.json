@@ -3307,7 +3307,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "tournesol",
+			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
 			"title": "Tournesol"
 		},

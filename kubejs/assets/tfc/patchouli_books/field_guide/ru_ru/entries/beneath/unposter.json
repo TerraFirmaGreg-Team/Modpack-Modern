@@ -10,6 +10,18 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "beneath:crafting/unposter"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Дополнительные заметки",
+			"text": "$(thing)Грибница$() Находит и дублирует грибы в радиусе 11х11 блоков от себя.\n$(br2) Заметь, что грибы которые ты подобрал уже нельзя поставить обратно. Поэтому тебе нужно найти натурально сгенерированные грибы для работы грибницы"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+				"tfg:textures/gui/field_guide/unposter_radius.png"
+			],
+			"border": true
 		}
 	],
 	"read_by_default": true

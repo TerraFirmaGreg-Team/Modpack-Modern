@@ -1481,7 +1481,7 @@
 			description: ["{quests.medium_voltage.hv_machine_hull.desc}"]
 			id: "3E25696C98A6F123"
 			shape: "gear"
-			size: 4.0d
+			size: 3.0d
 			subtitle: "{quests.medium_voltage.hv_machine_hull.subtitle}"
 			tasks: [{
 				id: "23FB958E73846929"

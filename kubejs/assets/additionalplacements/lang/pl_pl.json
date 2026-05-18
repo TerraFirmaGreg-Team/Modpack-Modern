@@ -21,7 +21,7 @@
 	"msg.additionalplacements.placement_disable": "Logika położeń Additional Placements jest wyłączona",
 	"msg.additionalplacements.placement_enable": "Logika położeń Additional Placements jest włączona",
 	"msg.additionalplacements.stairs.connections_type_not_found": "Nieznane połączenie schodów typu %s",
-	"msg.additionalplacements.stairs.data_not_found": "Dane konfiguracyjne połączeń schodów nie zostały otrzymane od klienta",
+	"msg.additionalplacements.stairs.data_not_found": "Nie odebrano danych konfiguracyjnych połączeń schodów od klienta",
 	"msg.additionalplacements.stairs.mismatched.footer": "Aby połączyć się z tym serwerem, popraw wpisy w pliku config/additionalplacements-bootup.toml i uruchom ponownie grę.",
 	"msg.additionalplacements.stairs.mismatched.header": "Następujące bloki schodów mają niewłaściwy typ połączeń. Muszą one być:",
 	"tooltip.additionalplacements.ceiling_placement": "Może być umieszczony na sufitach",
