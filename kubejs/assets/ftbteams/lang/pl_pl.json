@@ -50,6 +50,7 @@
   "ftbteams.team_already_exists": "Nazwa zespołu jest zbyt krótka! (musi być >=3 znaki)",
   "ftbteams.team_not_found": "Drużyna '%s' nie została znaleziona!",
   "ftbteams.team_type.player": "Drużyna gracza",
+  "ftbteams.team_type.server": "Drużyna serwera",
   "ftbteamsconfig": "Właściwości drużyny",
   "ftbteamsconfig.ftbteams": "Podstawowe właściwości drużyny",
   "ftbteamsconfig.ftbteams.color": "Kolor",
