@@ -33,7 +33,7 @@
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Basic ore processing",
+            "title": "Podstawowe przetwarzanie rudy",
             "anchor": "processing",
             "item": "gtceu:crushed_copper_ore",
             "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."

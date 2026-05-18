@@ -28,6 +28,8 @@ const registerTFCHeats = (event) => {
 
 	// Soybean
 	event.itemHeat('tfc:food/soybean', 1.0, null, null)
+
+	event.itemHeat('#tfc:kaolin_blocks', 3.0, null, null)
 }
 
 
@@ -112,6 +114,10 @@ const registerTFCFertilizers = (event) => {
 	event.fertilizer('gtceu:tiny_dark_ash_dust', null, 0.01, 0.03)
 	event.fertilizer('gtceu:small_dark_ash_dust', null, 0.025, 0.075)
 	event.fertilizer('gtceu:dark_ash_dust', null, 0.1, 0.3)
+
+	event.fertilizer('ae2:ender_dust', 0.5, null, 0.5)
+	event.fertilizer('gtceu:small_ender_pearl_dust', 0.125, null, 0.125)
+	event.fertilizer('gtceu:tiny_ender_pearl_dust', 0.055, null, 0.055)
 }
 
 

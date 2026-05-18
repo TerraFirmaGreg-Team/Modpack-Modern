@@ -115,6 +115,7 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:ocelot')
+		.addLoot('tfc:small_raw_hide')
 		.addWeightedLoot([1, 2], ['minecraft:bone'])
 		.addWeightedLoot([2, 5], ['tfc:food/gran_feline'])
 

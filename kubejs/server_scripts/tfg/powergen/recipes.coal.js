@@ -41,6 +41,8 @@ function registerTFGCoalRecipes(event) {
 
 	// Coke oven etc
 
+	event.remove({ id: "gtceu:coke_oven/coal_to_coke_block" });
+
 	event.recipes.gtceu.coke_oven("tfg:lignite_to_coke")
 		.itemInputs('tfc:ore/lignite')
 		.itemOutputs('1x gtceu:coke_gem')
@@ -52,6 +54,12 @@ function registerTFGCoalRecipes(event) {
 		.itemOutputs('2x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 2000))
 		.duration(900)
+
+	event.recipes.gtceu.coke_oven("tfg:coal_block_to_coke_block")
+    	.itemInputs("minecraft:coal_block")
+    	.itemOutputs("2x gtceu:coke_block")
+    	.outputFluids(Fluid.of("gtceu:creosote", 18000))
+    	.duration(6000);
 
 	event.recipes.gtceu.coke_oven("tfg:peat")
 		.itemInputs('tfc:peat')

@@ -78,7 +78,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "狼生成在任何$(l:the_world/climate#temperature)温度$()低于22°C、$(l:the_world/climate#rainfall)降雨量$()在150至420mm之间的地方。它们成群狩猎。多次喂食狼可以将其驯服为$(l:mechanics/pets)狗$()。"
+			"text": "狼生成在任何$(l:the_world/climate#temperature)温度$()低于22°C、$(l:the_world/climate#rainfall)降雨量$()在70至480mm之间的地方。它们成群狩猎。多次喂食狼可以将其驯服为$(l:mechanics/pets)狗$()。"
 		},
 		{
 			"type": "patchouli:entity",

@@ -2336,7 +2336,7 @@ const registerAE2Recipes = (event) => {
 		.duration(100)
 
 	event.recipes.gtceu.macerator('tfg:sky_stone_slab')
-		.itemInputs('2x #tfg:stone_types/suevite')
+		.itemInputs('2x #tfg:stone_types/suevite_half')
 		.itemOutputs('ae2:sky_dust')
 		.EUt(2)
 		.duration(100)

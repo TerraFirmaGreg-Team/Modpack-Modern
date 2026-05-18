@@ -196,6 +196,7 @@ function registerTFGDirtRecipes(event) {
 		// Duff
 		event.shapeless(`tfg:duff/${dirtType}`, [`${namespace}:dirt/${dirtType}`, 'tfc:groundcover/humus'])
 			.id(`tfg:shapeless/create_${dirtType}_duff`)
+
 	}
 
 	global.TFC_MUD_TYPES.forEach(dirtType => buildDirtRecipes('tfc', dirtType));

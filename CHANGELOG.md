@@ -2,6 +2,100 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.8] - 17-05-2026
+### Breaking changes
+- Reduced the costs of mechanical harvesters, mechanical plows, and display boards @Pyritie
+- Barrels can't be used in railguns @ashleney
+- Removed vanilla brown and red small mushrooms from the beneath, added Fly Agaric instead (#4039) @SakuraKitsurugi
+- Shroomlight crafting now only needs any 4 mushrooms instead of specifically brown and red @SakuraKitsurugi
+- Removed the cutter recipe for planks to lumber, added a cutter recipe for planks to slabs, and added a packer recipe for planks to lumber (so now you can automate wood slabs without needing mechanical crafters) (#3973) @SokvisalMong
+- Fixed sequenced assembly recipes for train tracks (#4024) @SakuraKitsurugi
+- Fixed recipe conflicts for normal and wide train tracks (#3986) @SakuraKitsurugi
+- Rubber belts now work with Steel and Aluminium shafts, instead of Steel and Basic shafts @Pyritie
+### Changes
+- Added tameable foxes! They work similarly to tamed cats. Check the Pets entry in the field guide for more information (#4032) @SakuraKitsurugi
+- Updated the field guide Pets entry with information on where to find each wolf variant @SakuraKitsurugi
+- Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check the field guide for information about how it all works. (#4002) @jmecn
+- Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#3608, #4009) @Nezumi-Remis
+- Improved the Rotten Voiding Cover so now you can specify how rotten the item has to be for voiding. Set the "minimum days" to zero to keep the current behaviour (only void when completely rotten) @ashleney
+- Increased the render distance in the beneath @Pyritie
+- Advanced Peripherals Inventory Manager is now gated at LuV @ashleney
+- Buffed the amount of Lamp Glass per craft from 1 to 4 (#4022) @TomPlop
+- Any compostable item can now be used in the Unposter, and improved the Unposter field guide entry @SakuraKitsurugi
+- Updated the default configs for Distant Horizons 3.0+ (#3982) @Cage-With-Human-Parts
+- Ender dust can now be used as nitrogen/phosphorus fertiliser (#3982) @pehala
+- Railguns can now have the target dimension be the same as the source dimension (i.e. you can now send stuff between different bases on the overworld) @ashleney
+- Added recipes for creating the weathered versions of firmalife greenhouse blocks (#4040) @Astrimitsu
+- Increased the tank size of encased fans to match the ore washer @Electrolyte220
+- Added recipes to craft hardened clay blocks (#3971) @Froffy025
+- Added connected textures for more ad astra deco blocks (#4051) @SakuraKitsurugi
+### Bug fixes
+- Fixed Flax loot table again (#3977) @applenper
+- Fixed whisk recycling @Ashleney
+- Fixed the Gas Well detecting explosives so it should now actually work @TomPlop
+- More linux crash fixes @Pyritie
+- Fixed being able to dupe some firmalife foods via crafting table (#4038) @ashleney
+- Fixed the bloomery field guide so it no longer lists Coal as a valid fuel @Pyritie
+- Fixed huge FPS drops when holding Fish Roe and Syringes (#3004) @Redeix
+- Updated the models of Seals and Mongeese and fixed their Create Hats @SakuraKitsurugi
+- Fixed the coke oven recipe for bituminous coal blocks giving way less creosote than expected (#3986) @SakuraKitsurugi
+- Fixed not being able to use steam in a blaze burner @Pyritie
+- Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
+### Shaders
+- Fixed a crash with very high and ultra settings
+- Added partial support for Caelum and TFC Caelum
+- Now each planet has its own wind speed, which determines the speed of plant waving and the speed of water waves
+- Fixed a bug with working glowing fireboxes
+- Fixed a bug with double plants where they wave strangely
+- Fixed a bug with glowing glass from create
+- Added more blocks to block.properties
+### Mod updates
+Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are client-side mods so you can add them back if you'd like, and they've been added to the optional mod list.
+#### Digger Helmet
+- Fixed digger helmet disappearing when broken @Thomasx0
+- Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
+#### Roads 'n' Roofs
+- Potentially fixed the huge lag spikes from doing massive concrete road pours @Therighthon
+#### TerraFirmaCraft
+- Added a fallback for the rock surface height cache. This should prevent some crashes with Distant Horizons.
+- Fixed anvil updates not syncing to other players
+- Fixed colored steel buckets not displaying fluid color
+- Fixed crucibles blocking rain from being viewed by forges
+- Fixed not being able to replace flowing fluid with a source of the same fluid type using a TFC bucket
+- Fixed TFC fluids not preventing fall damage
+- Fixed donkeys being able to hold multiple chests
+- Allow making yellow dye from native gold powder
+- Fixed some issues with mangrove generation
+- Fixed some issues with submerged tree generation
+- Fixed an interaction where barrel racks would break when moved
+- Fixed an issue where rats might try to despawn on the client only
+- Fixed a problem where cats appeared sleeping even when they were not
+
+## [0.12.7] - 04-05-2026
+### Changes
+- Added recipes to create roads in gregtech machines (#3929) @Astrimitsu
+- Added a blacklist for the crafting station to combat huge TPS lag issues - that means it won't work with vaults any more, but chests/crates are fine (#3951) @SakuraKitsurugi
+### Bug fixes
+- Fixed flame vines rendering as an error cube @Pyritie
+- Fixed rope ladders returning one additional ladder when collected @Thomasx0
+- Fixed some more linux issues @Pyritie
+- Fixed train driver/stock ticker hats on bears, rabbits, horseshoe crabs, isopods, jellyfish, manatees, and orcas @Allmoz
+- Fixed some vanilla mob loot appearing in EMI @Pyritie
+- Fixed missing repair recipe for hiking boots @Pyritie
+- Fixed ocelots not dropping small raw hides @Pyritie
+- Fixed the computercraft recipe for real this time @Pyritie
+- Fixed create glue not working @VoidLeech
+- Fixed jute, canola, sunflowers, and cucumbers not dropping any produce when harvested @Pyritie
+- Fixed not being able to craft sterling silver turbine rotors (#3954) @Pyritie
+- Fixed some weirdness with smooth stone collapsing (#3921) @Pyritie
+
+## [0.12.6] - 02-05-2026
+### Breaking Changes
+- Chemical reactor recipe for silicon tetrachloride is now on circuit 5 (#3933) @Pyritie
+### Changes
+- Added new nutrition screen! It shows much more information than the old one, and also shows the nutrition of your teammates so you can yell at them for living off raw grains. Note that the "negative nutrition" section is still a work in progress and nothing has negative nutrition yet. @Redeix
 - Added a system to instantly clear snow and ice as chunks are loaded, as soon as the temperature is warm enough. If you want to keep the old system, or if this is causing a large performance hit, check `defaultconfigs/tfg-server.toml`. @Vykonn
 - Icicles no longer spawn on monorails and chain conveyors (#3711) @SakuraKitsurugi
 - Added Snowshoes, a Snorkel, Flippers, and Rope Ladders (#3890) @Thomasx0
@@ -15,7 +109,12 @@
 - Steel, black steel, red steel, and blue steel lamps, trapdoors, bells, chains, nuggets, and small gears can now be crafted in the steam alloy smelter (instead of requiring an MV one) but at twice the ingot cost, like other alloy smelter recipes @Pyritie
 - Steam thermal centrifuges can now be built with any pipe casing instead of just steel @Pyritie
 - Horses, donkeys, and mules are now immune to cacti damage @Pyritie
+- Kaolin clay blocks can now also be cooked into powder, to save time processing it all (#3922) @SokvisalMong
+- Added new medicine powders, made salves cheaper (#3914) @applenper
+- Backported wolf/dog variants! Different types of them will spawn in different climates. @SakuraKitsurugi
+- ComputerCraft cables no longer require fluix @Pyritie
 ### Bug fixes
+- Fixed the world preview with the new worldgen! @Thomasx0
 - Fixed a crash when using the railgun in the Beneath @ashleney
 - Fixed a crash when trying to craft power tools with non-matching heads and power units (#3525) @Mqrius
 - Fixed some dupe exploits with vessels and SnS containers in backpacks (#3881, #3878) @ashleney
@@ -36,6 +135,7 @@
 - Fixed red elks spawning in the air and then immediately dying from fall damage @Pyritie
 - Fixed some incorrect colors on the anvil helper resource pack for 3, 6, 19, and 22 (#3005) @SokvisalMong
 - Fixed caribou not dropping raw meat (#3924) @Pyritie
+- Fixed wrought iron bridges being uncraftable @Pyritie
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026

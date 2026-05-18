@@ -13,9 +13,9 @@ const registerComputerCraftRecipes = (event) => {
 
 	// Networking Cable
 	event.recipes.gtceu.assembler('computercraft:cable')
-		.itemInputs('ae2:fluix_glass_cable')
+		.itemInputs('2x #forge:rods/quartzite', '2x ae2:quartz_fiber')
 		.inputFluids(Fluid.of('gtceu:redstone', 288))
-		.itemOutputs('computercraft:cable')
+		.itemOutputs('2x computercraft:cable')
 		.duration(80)
 		.EUt(120)
 		.addMaterialInfo(true)

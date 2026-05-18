@@ -74,6 +74,12 @@
         fluidOutputs: { "gtceu:red_alloy": 720 },
         blastFurnaceTemp: 2700
     })
+
+    // Modify circuit configuration
+    global.modifyRecipe(event, "gtceu:some_machine/some_recipe", {
+        newId: "tfg:some_recipe",
+        circuit: 5
+    })
     */
 
 global.modifyRecipe = function(event, recipeId, options) {
@@ -108,6 +114,14 @@ global.modifyRecipe = function(event, recipeId, options) {
 
         // Override blast furnace temperature
         if (options.blastFurnaceTemp) recipeJson.blastFurnaceTemp = options.blastFurnaceTemp
+
+        // Override circuit
+        if (options.circuit !== undefined) recipeJson.inputs.item = recipeJson.inputs.item.map(slot => {
+            if (slot.content.type === "gtceu:circuit") {
+                slot.content.configuration = options.circuit
+            }
+            return slot
+        })
 
         // Replace a fluid
         if (options.fluidReplacements && recipeJson.inputs && recipeJson.inputs.fluid) {
@@ -187,7 +201,10 @@ global.modifyRecipe = function(event, recipeId, options) {
                     newRecipe.itemInputs(`${count}x #${ing2.tag}`)
                 } else if (ing2 && typeof ing2 === "object" && "item" in ing2) {
                     newRecipe.itemInputs(Item.of(ing2.item, count))
+                } else if (!ing2 && recipeJson.inputs.item[ii2].content.type === "gtceu:circuit") {
+                    newRecipe.circuit(recipeJson.inputs.item[ii2].content.configuration)
                 }
+                
             }
         }
 

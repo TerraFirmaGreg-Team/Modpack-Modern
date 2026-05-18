@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/bloomery",
-			"text": "The bloomery is made from 8 $(thing)Bronze Double Plates$()."
+			"text": "Dymarkę można stworzyć z 8 $(thing)podwójnych brązowych płyt$()."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -22,14 +22,14 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form.$(br2)You can use both $(item)Charcoal$() and $(item)Coal$() as fuel for your bloomery."
+			"text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form.$(br2)You can only use $(item)Charcoal$() as fuel for your bloomery."
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
 			],
-			"text": "The bloomery consumes $(thing)1 item of Fuel$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
+			"text": "The bloomery consumes $(thing)1 Charcoal$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
 			"border": true
 		},
 		{

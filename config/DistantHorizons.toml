@@ -1,13 +1,21 @@
-_version = 3
+_version = 4
 
 [client]
 	#
 	# Should Distant Horizon's config button appear in Minecraft's options screen next to the fov slider?
 	showDhOptionsButtonInMinecraftUi = true
 
-	[client.advanced]
-
 		[client.advanced.graphics]
+			#
+			# Enable Screen Space Ambient Occlusion
+			enableSsao = true
+			#
+			# If true some vanilla graphics settings will be automatically changed 
+			# during DH setup to provide a better experience. 
+			#  
+			# IE disabling vanilla clouds (which render on top of DH LODs), 
+			#    and chunk fading (DH already fades MC chunks)
+			overrideVanillaGraphicsSettings = true
 
 			[client.advanced.graphics.quality]
 				#
@@ -59,10 +67,6 @@ _version = 3
 				# False: skipped blocks will not change color of surface below them.
 				tintWithAvoidedBlocks = true
 				#
-				# What the value should vanilla Minecraft's texture LodBias be? 
-				# If set to 0 the mod wont overwrite vanilla's default (which so happens to also be 0)
-				lodBias = "0.0"
-				#
 				# How should LODs be shaded? 
 				# 
 				# AUTO: Uses the same side shading as vanilla Minecraft blocks. 
@@ -90,6 +94,10 @@ _version = 3
 				# DOUBLE_PASS: Slowest, fades after both MC's opaque and transparent passes, provides the smoothest transition.
 				vanillaFadeMode = "DOUBLE_PASS"
 				#
+				# Should DH fade out before reaching the far clip plane? 
+				# This is helpful to prevent DH clouds from cutting off in the distance.
+				dhFadeFarClipPlane = true
+				#
 				# How bright LOD colors are. 
 				# 
 				# 0 = black 
@@ -112,33 +120,6 @@ _version = 3
 				#     '2' equals to Vanilla Biome Blending of '5x5'...
 				lodBiomeBlending = 3
 
-			[client.advanced.graphics.ssao]
-				#
-				# Enable Screen Space Ambient Occlusion
-				enableSsao = true
-				#
-				# Determines how many points in space are sampled for the occlusion test. 
-				# Higher numbers will improve quality and reduce banding, but will increase GPU load.
-				sampleCount = 6
-				#
-				# Determines the radius Screen Space Ambient Occlusion is applied, measured in blocks.
-				radius = "4.0"
-				#
-				# Determines how dark the Screen Space Ambient Occlusion effect will be.
-				strength = "0.2"
-				#
-				# Increasing the value can reduce banding at the cost of reducing the strength of the effect.
-				bias = "0.02"
-				#
-				# Determines how dark the occlusion shadows can be. 
-				# 0 = totally black at the corners 
-				# 1 = no shadow
-				minLight = "0.25"
-				#
-				# The radius, measured in pixels, that blurring is calculated for the SSAO. 
-				# Higher numbers will reduce banding at the cost of GPU performance.
-				blurRadius = 2
-
 			[client.advanced.graphics.genericRendering]
 				#
 				# If true non terrain objects will be rendered in DH's terrain. 
@@ -151,12 +132,20 @@ _version = 3
 				# Sets the maximum height at which beacons will render.This will only affect new beacons coming into LOD render distance.Beacons currently visible in LOD chunks will not be affected.
 				beaconRenderHeight = 6000
 				#
+				# If true LOD beacon beams will be rendered wider at extreme distances, 
+				# making them easier to see. 
+				# If false all LOD beacon beams will only ever be 1 block wide.
+				expandDistantBeacons = true
+				#
 				# If true LOD clouds will be rendered.
 				enableCloudRendering = true
 				#
-				# Can be disabled to use much slower but more compatible direct rendering. 
-				# Disabling this can be used to fix some crashes on Mac.
-				enableInstancedRendering = true
+				# A comma separated separated list of dimension resource locations where DH clouds will render.
+				# 
+				# Example: "minecraft:overworld,minecraft:the_end"
+				# 
+				# Changes will only be seen when the world is re-loaded.
+				dimensionEnabledCloudRenderingCsv = "minecraft:overworld"
 
 			[client.advanced.graphics.fog]
 				#
@@ -285,7 +274,7 @@ _version = 3
 				noiseSteps = 4
 				#
 				# How intense should the noise should be?
-				noiseIntensity = "5.0"
+				noiseIntensity = "0.05"
 				#
 				# Defines how far should the noise texture render before it fades away. (in blocks) 
 				# Set to 0 to disable noise from fading away
@@ -296,14 +285,21 @@ _version = 3
 				# Determines how far from the camera Distant Horizons will start rendering. 
 				# Measured as a percentage of the vanilla render distance.
 				# 
-				# 0 = auto, overdraw will change based on the vanilla render distance.
+				# -1 = auto, overdraw will change based on the vanilla render distance.
 				# 
 				# Higher values will prevent LODs from rendering behind vanilla blocks at a higher distance,
 				# but may cause holes in the world. 
 				# Holes are most likely to appear when flying through unloaded terrain. 
 				# 
 				# Increasing the vanilla render distance increases the effectiveness of this setting.
-				overdrawPrevention = "0.0"
+				overdrawPrevention = "-1.0"
+				#
+				# If set to true the overdraw prevention radius will get closer
+				# to the camera when flying/moving quickly.
+				# 
+				# This helps reduce issues where Minecraft can't load or
+				# generate chunks fast enough to keep up with DH.
+				reduceOverdrawWithFastMovement = true
 				#
 				# If enabled caves won't be rendered. 
 				# 
@@ -342,14 +338,27 @@ _version = 3
 				#
 				# A comma separated list of block resource locations that won't be rendered by DH. 
 				# Air is always included in this list. 
-				# Requires a restart to change.
+				# 
+				# Note:
+				# If you see gaps, or holes you may have to change
+				# worldCompression to [MERGE_SAME_BLOCKS] and re-generate the LODs.
 				ignoredRenderBlockCsv = "minecraft:barrier,minecraft:structure_void,minecraft:light,minecraft:tripwire,minecraft:brown_mushroom"
 				#
 				# A comma separated list of block resource locations that shouldn't be rendered 
 				# if they are in a 0 sky light underground area. 
 				# Air is always included in this list. 
-				# Requires a restart to change.
-				ignoredRenderCaveBlockCsv = "minecraft:glow_lichen,minecraft:rail,minecraft:water,minecraft:lava,minecraft:bubble_column,minecraft:cave_vines_plant,minecraft:vine,minecraft:cave_vines,minecraft:short_grass,minecraft:tall_grass,minecraft:small_dripleaf,minecraft:big_dripleaf,minecraft:big_dripleaf_stem,minecraft:sculk_vein"
+				# 
+				# Defaults to an empty list since most cave blocks will be automatically ignored due to being: 
+				# transparent, non-solid, or liquids, but new blocks can be added here if needed.
+				ignoredRenderCaveBlockCsv = ""
+				#
+				# A comma separated list of block resource locations that will be replaced by water 
+				# if they're visible on the water's surface.
+				waterSubSurfaceBlockReplacementCsv = "minecraft:kelp,minecraft:tall_seagrass,minecraft:seagrass"
+				#
+				# A comma separated list of block resource locations that will be removed 
+				# when on top of water.
+				waterSurfaceBlockReplacementCsv = "minecraft:lily_pad"
 
 			[client.advanced.graphics.experimental]
 				#
@@ -361,10 +370,27 @@ _version = 3
 				# 100 = 1 to 100 (63,710 blocks) 
 				# 10000 = 1 to 10000 (637.1 blocks) 
 				# 
-				# Note: Due to current limitations, the min value is 50 
+				# Note: Due to current limitations, the min value is [50] 
 				# and the max value is 5000. Any values outside this range 
 				# will be set to 0 (disabled).
 				earthCurveRatio = 0
+				#
+				# A comma separated list of dimension resource locations where DH won't render. 
+				# 
+				# Example: "minecraft:the_nether,minecraft:the_end"
+				# 
+				# Note:
+				# Some DH settings will be disabled and/or changed to improve 
+				# visuals when DH rendering is disabled.
+				ignoredDimensionCsv = ""
+				#
+				# Requires a restart to change. 
+				#  
+				# Options: 
+				# AUTO - changes based on the most likely API for that MC version 
+				# OPEN_GL - Default 
+				# BLAZE_3D - Only supported on MC 1.21.11
+				renderingApi = "AUTO"
 
 		[client.advanced.multiplayer]
 			#
@@ -395,7 +421,7 @@ _version = 3
 			# What renderer is active? 
 			# 
 			# DEFAULT: Default lod renderer 
-			# DEBUG: Debug testing renderer 
+			# DEBUG_TRIANGLE: Debug testing renderer 
 			# DISABLED: Disable rendering
 			rendererMode = "DEFAULT"
 			#
@@ -405,7 +431,11 @@ _version = 3
 			# SHOW_DETAIL: LODs' color will be based on their detail level. 
 			# SHOW_BLOCK_MATERIAL: LODs' color will be based on their material. 
 			# SHOW_OVERLAPPING_QUADS: LODs will be drawn with total white, but overlapping quads will be drawn with red.
-			debugRendering = "OFF"
+			debugRenderingColors = "OFF"
+			#
+			# Stops vertex colors from being passed. 
+			# Useful for debugging shaders
+			enableWhiteWorld = false
 			#
 			# If enabled this will disable (most) vanilla Minecraft rendering. 
 			# 
@@ -417,13 +447,11 @@ _version = 3
 			# If enabled the LODs will render as wireframe.
 			renderWireframe = false
 			#
-			# If true the F8 key can be used to cycle through the different debug modes. 
-			# and the F6 key can be used to enable and disable LOD rendering.
+			# If true several keys can be used to toggle debug states. 
+			# F6 - enable/disable LOD rendering 
+			# F7 - enable/disable LOD only rendering 
+			# F8 - cycle through the different debug rendering modes
 			enableDebugKeybindings = false
-			#
-			# Stops vertex colors from being passed. 
-			# Useful for debugging shaders
-			enableWhiteWorld = false
 			#
 			# If true overlapping quads will be rendered as bright red for easy identification. 
 			# If false the quads will be rendered normally.
@@ -450,12 +478,6 @@ _version = 3
 				#
 				# Render LOD section status?
 				showRenderSectionStatus = false
-				#
-				# A white box will be drawn when an LOD starts rendering 
-				# and a purple box when an LOD stops rendering. 
-				# 
-				# This can be used to debug Quad Tree holes.
-				showRenderSectionToggling = false
 				#
 				# Render Quad Tree Rendering status?
 				showQuadTreeRenderStatus = false
@@ -487,10 +509,15 @@ _version = 3
 				#            Warning: this should only be enabled when debugging the LOD renderer 
 				#            as it may break Minecraft's renderer when an exception is thrown.
 				glErrorHandlingMode = "IGNORE"
-				#
-				# Massively reduces FPS. 
-				# Should only be used if mysterious EXCEPTION_ACCESS_VIOLATION crashes are happening in DH's rendering code for troubleshooting.
-				validateBufferIdsBeforeRendering = false
+
+			[client.advanced.debugging.positionFinderDebugging]
+				positionFinderEnable = false
+				positionFinderDetailLevel = 6
+				positionFinderXPos = 0
+				positionFinderZPos = 0
+				positionFinderMinBlockY = -64
+				positionFinderMaxBlockY = 125
+				positionFinderMarginPercent = "0.0"
 
 			[client.advanced.debugging.f3Screen]
 				#
@@ -504,17 +531,23 @@ _version = 3
 				# Shows info about each thread pool.
 				showThreadPools = true
 				#
+				# Shows info about the render thread tasks.
+				showRenderThreadTasks = false
+				#
 				# Shows the combined memory use and array counts for all DH pooled objects.
 				showCombinedObjectPools = false
 				#
 				# Shows the memory use and array counts for each DH object pool.
 				showSeparatedObjectPools = false
 				#
-				# Shows how many chunks are queud for processing and the max count that can be queued.
+				# Shows how many chunks are queued for processing and the max count that can be queued.
 				showQueuedChunkUpdateCount = true
 				#
 				# Shows what levels are loaded and world gen/rendering info about those levels.
 				showLevelStatus = true
+				#
+				# Only show levels that DH is actively rendering.
+				onlyShowRenderingLevels = true
 
 			[client.advanced.debugging.exampleConfigScreen]
 				boolTest = false
@@ -528,8 +561,6 @@ _version = 3
 				listTest = ["option 1", "option 2", "option 3"]
 				mapTest = "{}"
 				linkableTest = 420
-
-[common]
 
 	[common.worldGenerator]
 		#
@@ -581,6 +612,20 @@ _version = 3
 		# are being generated. 
 		# This can be useful for troubleshooting performance.
 		generationProgressIncludeChunksPerSecond = true
+		#
+		# The center X chunk position that the world gen max radius is centered around.
+		generationCenterChunkX = 0
+		#
+		# The center Z chunk position that the world gen max radius is centered around.
+		generationCenterChunkZ = 0
+		#
+		# The max radius in chunks around the central point where world generation is allowed. 
+		# If this value is set to 0, generation bounds are disabled and the render distance will be used. 
+		# 
+		# This should only be set if you have a pre-generated world that has a very limited size. 
+		# Setting this on a normal MC world will prevent the world generator from filling 
+		# out your render distance.
+		generationMaxChunkRadius = 0
 
 	[common.lodBuilding]
 		#
@@ -594,36 +639,6 @@ _version = 3
 		# Disabling this check may fix issues where LODs aren't updated after
 		# blocks have been changed.
 		disableUnchangedChunkCheck = false
-		#
-		# What algorithm should be used to compress new LOD data? 
-		# This setting will only affect new or updated LOD data, 
-		# any data already generated when this setting is changed will be
-		# unaffected until it needs to be re-written to the database.
-		# 
-		# UNCOMPRESSED 
-		# Should only be used for testing, is worse in every way vs [LZ4].
-		# Expected Compression Ratio: 1.0
-		# Estimated average DTO read speed: 6.09 milliseconds
-		# Estimated average DTO write speed: 6.01 milliseconds
-		# 
-		# LZ4 
-		# A good option if you're CPU limited and have plenty of hard drive space.
-		# Expected Compression Ratio: 0.4513
-		# Estimated average DTO read speed: 3.25 ms
-		# Estimated average DTO write speed: 5.99 ms
-		# 
-		# Z_STD 
-		# A good option if you're CPU limited and have plenty of hard drive space.
-		# Expected Compression Ratio: 0.2606
-		# Estimated average DTO read speed: 9.31 ms
-		# Estimated average DTO write speed: 15.13 ms
-		# 
-		# LZMA2 
-		# Slow but very good compression.
-		# Expected Compression Ratio: 0.2
-		# Estimated average DTO read speed: 13.29 ms
-		# Estimated average DTO write speed: 70.95 ms
-		dataCompression = "Z_STD"
 		#
 		# How should block data be compressed when creating LOD data? 
 		# This setting will only affect new or updated LOD data, 
@@ -640,37 +655,6 @@ _version = 3
 		# Hidden blocks (IE ores) are ignored.  
 		# Expected Compression Ratio: 0.7
 		worldCompression = "VISUALLY_EQUAL"
-		#
-		# True: Recalculate chunk height maps before chunks can be used by DH.
-		#       This can fix problems with worlds created by World Painter or 
-		#       other external tools where the heightmap format may be incorrect. 
-		# False: Assume any height maps handled by Minecraft are correct. 
-		# 
-		# Fastest: False
-		# Most Compatible: True
-		recalculateChunkHeightmaps = false
-		#
-		# If true LOD generation for pre-existing chunks will attempt to pull the lighting data 
-		# saved in Minecraft's Region files. 
-		# If false DH will pull in chunks without lighting and re-light them. 
-		#  
-		# Setting this to true will result in faster LOD generation 
-		# for already generated worlds, but is broken by most lighting mods. 
-		#  
-		# Set this to false if LODs are black.
-		pullLightingForPregeneratedChunks = false
-		#
-		# When DH pulls in pre-existing chunks it will attempt to 
-		# run any missing world generation steps; for example: 
-		# if a chunk has the status SURFACE, DH will skip BIOMES 
-		# and SURFACE, but will run FEATURES. 
-		#  
-		# However if for some reason the chunks are malformed 
-		# or there's some other issue that causes the status 
-		# to be incorrect that can either cause world gen 
-		# lock-ups and/or crashes. 
-		# If either of those happen try setting this to True.
-		assumePreExistingChunksAreFinished = false
 
 		[common.lodBuilding.experimental]
 			#
@@ -698,32 +682,47 @@ _version = 3
 		# is already set to 1 for the given option, or more finely 
 		# tune CPU performance.
 		threadRunTimeRatio = "1.0"
+		#
+		# What Java thread priority should DH's primary thread pools run with? 
+		# 
+		# You probably don't need to change this unless you are also 
+		# running C2ME and are seeing thread starvation in either C2ME or DH.
+		threadPriority = 5
 
 	[common.logging]
 		#
-		# If enabled, the mod will log information about the world generation process. 
-		# This can be useful for debugging.
-		logWorldGenEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
+		# 
+		globalFileMaxLevel = "INFO"
 		#
-		# If enabled, the mod will log performance about the world generation process. 
-		# This can be useful for debugging.
-		logWorldGenPerformance = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
+		# 
+		globalChatMaxLevel = "ERROR"
 		#
 		# If enabled, the mod will log information about the world generation process. 
 		# This can be useful for debugging.
-		logWorldGenLoadEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
+		logWorldGenEventToFile = "INFO"
 		#
-		# If enabled, the mod will log information about the renderer buffer process. 
+		# If enabled, the mod will log information about the world generation process. 
 		# This can be useful for debugging.
-		logRendererBufferEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
+		logWorldGenChunkLoadEventToFile = "INFO"
+		#
+		# If enabled, the mod will log information about the renderer setup, cleanup, and any issues it may encounter. 
+		# This can be useful for debugging.
+		logRendererEventToFile = "INFO"
 		#
 		# If enabled, the mod will log information about the renderer OpenGL process. 
 		# This can be useful for debugging.
-		logRendererGLEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
+		logRendererGLEventToFile = "INFO"
+		#
+		# If enabled, the mod will log information about the renderer OpenGL process. 
+		# This can be useful for debugging.
+		logRendererGLEventToChat = "ERROR"
 		#
 		# If enabled, the mod will log information about network operations. 
 		# This can be useful for debugging.
-		logNetworkEvent = "LOG_ERROR_TO_CHAT_AND_WARNING_TO_FILE"
+		logNetworkEventToFile = "INFO"
+		#
+		# If enabled, config changes sent by the server will be logged.
+		logConnectionConfigChangesToFile = "WARN"
 
 		[common.logging.warning]
 			#
@@ -747,9 +746,23 @@ _version = 3
 			# queued for updating.
 			showUpdateQueueOverloadedChatWarning = false
 			#
+			# If enabled, a chat message will be displayed when DH has too many chunks 
+			# queued for updating.
+			showSlowWorldGenSettingWarnings = true
+			#
 			# If enabled, a chat message will be displayed when a potentially problematic 
 			# mod is installed alongside DH.
 			showModCompatibilityWarningsOnStartup = true
+			#
+			# If enabled, a message will be logged if the garbage 
+			# collector Java is currently using is known 
+			# to cause frame stuttering and/or other issues.
+			logGarbageCollectorWarning = true
+			#
+			# If enabled, a chat message will be displayed if the garbage 
+			# collector Java is currently using is known 
+			# to cause frame stuttering and/or other issues.
+			showGarbageCollectorWarning = true
 
 [server]
 	#
@@ -757,10 +770,21 @@ _version = 3
 	# Disable this if you use alternative ways to send level keys.
 	sendLevelKeys = true
 	#
+	# Custom server key used which can be used to always reuse the same LOD data folder,
+	# for cases when the server doesn't have a static IP for some reason.
+	# If this value is empty, the client itself decides which folder name to use.
+	# Requires rejoining the server to apply after changing.
+	serverKey = ""
+	#
 	# Prefix of the level keys sent to the clients.
 	# If the mod is running behind a proxy, each backend should use a unique value.
 	# If this value is empty, level key will be based on the server's seed hash.
 	levelKeyPrefix = ""
+	#
+	# When enabled, Distant Horizons will attempt to download missing LODs from the server.
+	# 
+	# Note: the server must have Distant Generation enabled for it to work.
+	enableServerGeneration = true
 	#
 	# How many LOD generation requests per second should a client send? 
 	# Also limits the number of client requests allowed to stay in the server's queue.
@@ -768,16 +792,6 @@ _version = 3
 	#
 	# Defines the distance allowed to generate around the player.
 	maxGenerationRequestDistance = 4096
-	#
-	# Defines the X-coordinate of the central point for generation boundaries, in blocks.
-	generationBoundsX = 0
-	#
-	# Defines the Z-coordinate of the central point for generation boundaries, in blocks.
-	generationBoundsZ = 0
-	#
-	# Defines the radius around the central point within which generation is allowed, in blocks. 
-	# If this value is set to 0, generation bounds are disabled.
-	generationBoundsRadius = 0
 	#
 	# If true, clients will receive real-time LOD updates for chunks outside the client's render distance.
 	enableRealTimeUpdates = true
@@ -815,4 +829,3 @@ _version = 3
 		# This must also be enabled on the server; otherwise, it will have no effect.
 		# For better performance when switching LOD detail levels, enabling [upsampleLowerDetailLodsToFillHoles] is recommended.
 		enableNSizedGeneration = false
-

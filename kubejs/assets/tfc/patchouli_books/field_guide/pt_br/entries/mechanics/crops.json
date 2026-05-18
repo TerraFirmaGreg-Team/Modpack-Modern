@@ -2673,7 +2673,7 @@
 			"type": "patchouli:text",
 			"anchor": "sugarcane",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 12 - 38 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 40 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Sugarcane is a two block tall crop. Sugarcane seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Sugarcane$() and $(thing)Sugarcane Seeds$() as a product. Sugarcane can be used to make $(thing)Sugar$().",
-			"title": "Cana-de-Açúcar"
+			"title": "Cana-de-açúcar"
 		},
 		{
 			"type": "tfc:multimultiblock",
