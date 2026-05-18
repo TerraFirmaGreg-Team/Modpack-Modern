@@ -39,6 +39,8 @@ function registerTFGBeneathItemTags(event) {
 	    event.add('tfg:plants/beneath', plant)
     );
 
+    event.add('beneath:mushrooms', 'tfg:food/fly_agaric')
+	event.add('beneath:poisonous_mushrooms', 'tfg:food/fly_agaric')
     event.add('tfc:compost_greens', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:brown_mushroom_block')
     event.add('tfc:compost_greens', 'minecraft:mushroom_stem')
@@ -60,6 +62,13 @@ function registerTFGBeneathItemTags(event) {
     event.add('tfc:moss', 'minecraft:moss_carpet')
     event.add('tfc:moss', 'tfg:pale_moss_carpet')
     event.add('tfc:moss', 'wan_ancient_beasts:olden_moss_carpet')
+
+	event.add('beneath:unpostable', '#tfc:compost_greens_low')
+	event.add('beneath:unpostable', '#tfc:compost_greens')
+	event.add('beneath:unpostable', '#tfc:compost_greens_high')
+	event.add('beneath:unpostable', '#tfc:compost_browns_low')
+	event.add('beneath:unpostable', '#tfc:compost_browns')
+	event.add('beneath:unpostable', '#tfc:compost_browns_high')
 }
 
 

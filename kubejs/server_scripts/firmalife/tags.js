@@ -9,11 +9,6 @@ const registerFirmaLifeItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
-    // Просто предметы для скрытия
-    global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 
