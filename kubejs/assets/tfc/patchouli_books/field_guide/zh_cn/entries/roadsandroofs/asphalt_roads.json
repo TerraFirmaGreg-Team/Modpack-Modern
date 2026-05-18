@@ -31,7 +31,7 @@
       "anchor": "asphalt_mix",
       "item": "tfg:asphalt_mix_bucket",
       "title": "沥青混合料",
-      "text": "在$(thing)搅拌机$()中用焦油块料与石粉制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
+      "text": "在$(thing)搅拌机$()中用焦油块料与$(thing)石粉$()制成$(thing)沥青结合料$()。若加入$(thing)硬沥青粉$()，可提高结合料的产量。$(br)随后，把结合料与沙、石粉及$(thing)碎石基层$()一同拌成流体状的$(thing)沥青混合料$()。$(br)将其装入流体容器中，便于运输和浇筑。"
     },
     {
       "type": "patchouli:image",
@@ -90,7 +90,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_rubble",
-      "title": "拆除与碎块回收",
+      "title": "拆除与回收",
       "text": "破坏沥青路、热沥青路、台阶或楼梯时，只会掉落$(thing)沥青碎块$()，无法保留完整路面方块。将碎块投入$(thing)提取机$()可回收为少量沥青混合料。"
     }
   ],
