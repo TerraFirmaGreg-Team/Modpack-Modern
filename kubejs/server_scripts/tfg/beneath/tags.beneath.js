@@ -86,6 +86,8 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:base_stone_nether', 'minecraft:dripstone_block')
     event.add('minecraft:base_stone_nether', 'minecraft:tuff')
     event.add("minecraft:base_stone_nether", "minecraft:calcite");
+    event.add("minecraft:base_stone_nether", "tfg:rock/glauberite");
+    event.add("minecraft:base_stone_nether", "tfg:rock/aragonite");
     event.add("minecraft:base_stone_nether", "beneath:crackrack");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/gneiss");
     event.add("minecraft:base_stone_nether", "tfc:rock/raw/schist");
@@ -147,8 +149,8 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:axolotls_spawnable_on', '#minecraft:base_stone_nether')
     event.add('minecraft:frogs_spawnable_on', '#minecraft:base_stone_nether')
     event.add('beneath:nether_bush_plantable_on', '#minecraft:base_stone_nether')
-    event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
     
+    event.add('minecraft:nether_carver_replaceables', '#minecraft:base_stone_nether')
     event.add('minecraft:nether_carver_replaceables', "tfc:fluid/salt_water");
     event.add('minecraft:nether_carver_replaceables', "tfc:fluid/spring_water");
     event.add('minecraft:nether_carver_replaceables', "tfg:fluid/muddy_water");
@@ -159,6 +161,7 @@ function registerTFGBeneathBlockTags(event) {
     event.add('minecraft:nether_carver_replaceables', "beneath:soul_clay");
     event.add('minecraft:nether_carver_replaceables', "tfc:peat");
     event.add('minecraft:nether_carver_replaceables', "tfg:hardened_clay");
+    event.add('minecraft:nether_carver_replaceables', "tfg:gilsonite");
 
     const moss_blocks = [
         'minecraft:moss_block',

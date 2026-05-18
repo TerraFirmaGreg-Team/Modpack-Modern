@@ -132,24 +132,6 @@
 
 
 
-
-			{
-				"type": "minecraft:condition",
-				"if_true": {
-					"type": "minecraft:biome",
-					"biome_is": [
-						"tfg:nether/lush_hollow"
-					]
-				},
-				"then_run": {
-					"type": "minecraft:block",
-					"result_state": {
-						"Name": "minecraft:moss_block"
-					}
-				}
-			},
-
-
 			{
 				"type": "minecraft:condition",
 				"if_true": {
@@ -640,6 +622,473 @@
 			{
 				"type": "minecraft:condition",
 				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/lush_hollow"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -0.5,
+											"max_threshold": 1
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "minecraft:moss_block"
+											}
+										}
+									},
+									{
+										"type": "kubejs_tfc:rock",
+										"rock_block": "hardened",
+										"fallback_state": {
+											"Name": "tfg:rock/hardened_deepslate"
+										}
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 0,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "tfg:nether_rock_ceiling",
+									"min_threshold": -1,
+									"max_threshold": 0.35
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "minecraft:moss_block"
+									}
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/geothermal_springs"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": -1,
+											"max_threshold": -0.4
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/glauberite"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": 0.4,
+											"max_threshold": 1
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/aragonite"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": -0.4,
+											"max_threshold": -0.15
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "hardened",
+											"fallback_state": {
+												"Name": "tfg:rock/hardened_deepslate"
+											}
+										}
+									},
+									{
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "minecraft:calcite"
+										}
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 0,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": -1,
+											"max_threshold": -0.5
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "raw",
+											"fallback_state": {
+												"Name": "minecraft:deepslate"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": -0.35,
+											"max_threshold": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/glauberite"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "tfg:noise3d_threshold",
+											"noise": "tfg:nether_geothermal",
+											"min_threshold": 0,
+											"max_threshold": 0.35
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:rock/aragonite"
+											}
+										}
+									},
+									{
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "minecraft:calcite"
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/tar_pools"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "tfg:noise3d_threshold",
+								"noise": "tfg:nether_salt_streams",
+								"min_threshold": -0.1,
+								"max_threshold": 0.1
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfg:gilsonite"
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -1,
+											"max_threshold": 0
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "sandstone",
+											"fallback_state": {
+												"Name": "tfc:raw_sandstone/black"
+											}
+										}
+									},
+									{
+										"type": "kubejs_tfc:rock",
+										"rock_block": "hardened",
+										"fallback_state": {
+											"Name": "tfg:rock/hardened_deepslate"
+										}
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 0,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -1,
+											"max_threshold": -0.6
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:coarse_dirt/sandy_loam"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -0.6,
+											"max_threshold": -0.2
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "gravel",
+											"fallback_state": {
+												"Name": "tfg:rock/gravel_deepslate"
+											}
+										}
+									},
+									{
+										"type": "kubejs_tfc:rock",
+										"rock_block": "sand",
+										"fallback_state": {
+											"Name": "tfc:sand/black"
+										}
+									}
+								]
+
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 1,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "kubejs_tfc:rock",
+								"rock_block": "sandstone",
+								"fallback_state": {
+									"Name": "tfc:raw_sandstone/black"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/thorny_brambles"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -1,
+											"max_threshold": -0.2
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "wan_ancient_beasts:olden_moss_block"
+											}
+										}
+									},
+									{
+										"type": "kubejs_tfc:rock",
+										"rock_block": "hardened",
+										"fallback_state": {
+											"Name": "tfg:rock/hardened_deepslate"
+										}
+									}
+								]
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 0,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": -0.3,
+											"max_threshold": 0
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfg:coarse_dirt/silty_loam"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "tfg:nether_rock_ceiling",
+											"min_threshold": 0,
+											"max_threshold": 0.3
+										},
+										"then_run": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "gravel",
+											"fallback_state": {
+												"Name": "tfg:rock/gravel_deepslate"
+											}
+										}
+									},
+									{
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "wan_ancient_beasts:olden_moss_block"
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+
+
+			{
+				"type": "minecraft:condition",
+				"if_true": {
 					"type": "minecraft:not",
 					"invert": {
 						"type": "minecraft:y_above",
@@ -937,7 +1386,60 @@
 					]
 				}
 			},
-
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/ash_forest"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:condition",
+					"if_true": {
+						"type": "minecraft:stone_depth",
+						"offset": 0,
+						"surface_type": "floor",
+						"add_surface_depth": false,
+						"secondary_depth_range": 0
+					},
+					"then_run": {
+						"type": "minecraft:sequence",
+						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "tfg:nether_rock_ceiling",
+									"min_threshold": -0.35,
+									"max_threshold": -0.1
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:coarse_dirt/mollisol"
+									}
+								}
+							},
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "tfg:nether_rock_ceiling",
+									"min_threshold": 0.1,
+									"max_threshold": 0.35
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:dirt/mollisol"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
 
 
 
