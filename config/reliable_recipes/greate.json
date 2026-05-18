@@ -2,16 +2,6 @@
 	{
 		"action": "remove_recipe",
 		"id": [
-			"gtceu:electrolyzer/decomposition_electrolyzing_andesite_alloy",
-			"gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound",
-			"gtceu:shaped/andesite_alloy_shaft",
-			"gtceu:extractor/extract_andesite_alloy",
-			"gtceu:macerator/macerate_andesite_alloy_encased_fan",
-			"gtceu:arc_furnace/arc_andesite_alloy_encased_fan",
-			"gtceu:macerator/macerate_andesite_alloy_mechanical_mixer",
-			"gtceu:arc_furnace/arc_andesite_alloy_mechanical_mixer",
-			"gtceu:macerator/macerate_andesite_alloy_mechanical_pump",
-			"gtceu:arc_furnace/arc_andesite_alloy_mechanical_pump",
 			"greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button",
 			"greate:mixing/integration/gtceu/mixer/fire_charge",
 			"greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust",
