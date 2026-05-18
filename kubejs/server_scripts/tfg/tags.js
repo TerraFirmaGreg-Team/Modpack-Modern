@@ -269,6 +269,8 @@ const registerTFGItemTags = (event) => {
 		event.add('tfg:asphalt_tars', id)
 	})
 
+	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
+
 	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
@@ -469,6 +471,7 @@ const registerTFGEntityTypeTags = (event) => {
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
+	registerTFGPrimitiveEntityTags(event)
 
 	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')

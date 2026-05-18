@@ -47,7 +47,7 @@
   "ftbteams.ranks.officer": "Oficer",
   "ftbteams.ranks.owner": "Właściciel",
   "ftbteams.server_permissions_prevent": "Uprawnienia serwera uniemożliwiają Ci to działanie.",
-  "ftbteams.team_already_exists": "Uprawnienia serwera uniemożliwiają Ci to działanie.",
+  "ftbteams.team_already_exists": "Nazwa zespołu jest zbyt krótka! (musi być >=3 znaki)",
   "ftbteams.team_not_found": "Drużyna '%s' nie została znaleziona!",
   "ftbteams.team_type.player": "Drużyna gracza",
   "ftbteamsconfig": "Właściwości drużyny",

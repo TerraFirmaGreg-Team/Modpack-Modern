@@ -5,12 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Unposter$() is used to grow mushrooms. Mushrooms and nether crops can be deposited into it. When it is by a mushroom, it will consume the items inside to multiply that mushroom in the area around it, once a day."
+			"text": "The $(thing)Unposter$() is used to grow mushrooms.$(br2)You can deposit the same items as with the composter, except instead of making compost, when a mushroom is within its range, it will consume the items inside to multiply that mushroom in the area around it."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "beneath:crafting/unposter"
-		}
+		},
+		{
+      		"type": "patchouli:text",
+      		"title": "Extra Notes",
+      		"text": "The $(thing)Unposter$() searches for and duplicates mushrooms in a 11x11 square area centered on itself.$(br2)Note that mushrooms, once picked up, cannot be placed back down. You will need to find naturally spawned mushrooms for the unposter to work."
+    	},
+    	{
+      		"type": "patchouli:image",
+      		"images": ["tfg:textures/gui/field_guide/unposter_radius.png"],
+      		"border": true
+    	}
 	],
 	"read_by_default": true
 }
