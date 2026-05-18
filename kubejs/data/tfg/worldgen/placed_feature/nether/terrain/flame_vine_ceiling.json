@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/entity/cold_frog",
+	"feature": "tfg:nether/terrain/flame_vine_ceiling",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"type": "minecraft:count",
+			"count": 40
 		},
 		{
 			"type": "minecraft:in_square"
@@ -26,23 +26,19 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": "minecraft:air"
 			},
-			"direction_of_search": "down",
-			"max_steps": 12,
+			"direction_of_search": "up",
+			"max_steps": 6,
 			"target_condition": {
 				"type": "minecraft:solid"
 			}
 		},
 		{
-			"type": "minecraft:biome"
-		},
-		{
-			"type": "tfc:flat_enough",
-			"flatness": 0.4
-		},
-		{
 			"type": "minecraft:random_offset",
 			"xz_spread": 0,
-			"y_spread": 1
+			"y_spread": -1
+		},
+		{
+			"type": "minecraft:biome"
 		}
 	]
 }
