@@ -5,39 +5,52 @@
 		"dirt_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/wood/araucaria"
+				"Name": "wan_ancient_beasts:olden_moss_block"
 			}
 		},
 		"foliage_placer": {
-			"type": "minecraft:bush_foliage_placer",
-			"offset": 0,
-			"height": 1,
+			"type": "minecraft:mega_pine_foliage_placer",
+			"crown_height": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 6,
+					"min_inclusive": 5
+				}
+			},
+			"offset": 4,
 			"radius": 2
 		},
 		"foliage_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/leaves/araucaria"
+				"Name": "tfg:wood/leaves/beech",
+				"Properties": {
+					"persistent": "false",
+					"waterlogged": "false"
+				}
 			}
 		},
 		"force_dirt": false,
-		"ignore_vines": true,
+		"ignore_vines": false,
 		"minimum_size": {
 			"type": "minecraft:two_layers_feature_size",
 			"limit": 1,
 			"lower_size": 0,
-			"upper_size": 0
+			"upper_size": 2
 		},
 		"trunk_placer": {
 			"type": "minecraft:straight_trunk_placer",
-			"base_height": 1,
-			"height_rand_a": 0,
-			"height_rand_b": 0
+			"base_height": 6,
+			"height_rand_a": 2,
+			"height_rand_b": 1
 		},
 		"trunk_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/wood/araucaria"
+				"Name": "tfg:wood/log/beech",
+				"Properties": {
+					"axis": "y"
+				}
 			}
 		}
 	}

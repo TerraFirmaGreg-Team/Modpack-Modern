@@ -247,6 +247,7 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
+    event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/mossy_cobble');
     
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/cave_column')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/large_cave_spike')

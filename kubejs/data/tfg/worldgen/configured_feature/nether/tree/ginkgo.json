@@ -5,7 +5,7 @@
 		"dirt_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "minecraft:moss_block"
+				"Name": "wan_ancient_beasts:ginkgo_log"
 			}
 		},
 		"foliage_placer": {

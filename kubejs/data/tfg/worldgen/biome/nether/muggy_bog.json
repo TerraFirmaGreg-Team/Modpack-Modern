@@ -30,9 +30,9 @@
 		"grass_color": 6466617,
 		"particle": {
 			"options": {
-				"type": "minecraft:mycelium"
+				"type": "minecraft:falling_water"
 			},
-			"probability": 0.1
+			"probability": 0.004
 		}
 	},
 	"features": [
@@ -50,7 +50,6 @@
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble",
 			"tfg:nether/terrain/clay_disc"
 		],
 		"#tfg:nether_crops",

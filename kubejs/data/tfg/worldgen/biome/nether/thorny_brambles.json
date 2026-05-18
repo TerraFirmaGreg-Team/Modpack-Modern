@@ -40,12 +40,19 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble"
+			"tfg:nether/terrain/spring_lava"
 		],
 		"#tfg:nether_crops",
 		[
-
+			"tfg:nether/tree/mahoe",
+			"tfg:nether/tree/mahoe_shrub",
+			"tfg:nether/tree/mahoe_fallen_leaves",
+			"tfg:nether/tree/mahoe_twig",
+			"tfg:nether/tree/beech",
+			"tfg:nether/tree/beech_shrub",
+			"tfg:nether/tree/beech_fallen_leaves",
+			"tfg:nether/tree/beech_twig",
+			"tfg:nether/surface/moss_patch_small"
 		],
 		"#tfg:nether_global_decoration",
 		[

@@ -5,7 +5,7 @@
 		"dirt_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/wood/araucaria"
+				"Name": "tfg:wood/wood/mahoe"
 			}
 		},
 		"foliage_placer": {
@@ -17,7 +17,7 @@
 		"foliage_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/leaves/araucaria"
+				"Name": "tfg:wood/leaves/mahoe"
 			}
 		},
 		"force_dirt": false,
@@ -37,7 +37,7 @@
 		"trunk_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:wood/wood/araucaria"
+				"Name": "tfg:wood/wood/mahoe"
 			}
 		}
 	}

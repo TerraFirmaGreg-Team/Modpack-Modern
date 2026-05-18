@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/tree/ginkgo",
+	"feature": "tfg:nether/tree/beech_shrub",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 30
+			"count": 10
 		},
 		{
 			"type": "minecraft:in_square"
@@ -36,12 +36,30 @@
 			}
 		},
 		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "tfc:flat_enough",
+			"flatness": 0.4
+		},
+		{
 			"type": "minecraft:random_offset",
 			"xz_spread": 0,
 			"y_spread": 1
 		},
 		{
-			"type": "minecraft:biome"
+			"type": "block_predicate_filter",
+			"predicate": {
+				"type": "tfc:replaceable"
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"offset": [ 0, -1, 0 ],
+				"tag": "minecraft:nether_carver_replaceables"
+			}
 		}
 	]
 }
