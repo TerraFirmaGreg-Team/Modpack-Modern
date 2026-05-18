@@ -37,4 +37,10 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.box(0, 0, 0, 16, 1, 16)
 		.tagItem('tfc:compost_greens_low')
 		.tagBlock('minecraft:mineable/hoe')
+		
+	event.create('betterend:nightshade_moss', 'tfg:attached_decorative_plant')
+		.soundType('crop')
+		.tagBoth('tfg:plants/beneath')
+		.tagBlock('minecraft:replaceable')
+		.lightLevel(0.85)
 }

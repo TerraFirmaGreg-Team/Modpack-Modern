@@ -32,7 +32,7 @@
 			"options": {
 				"type": "minecraft:falling_water"
 			},
-			"probability": 0.004
+			"probability": 0.002
 		}
 	},
 	"features": [
@@ -67,6 +67,7 @@
 			"tfg:nether/surface/bellflower_patch",
 			"tfg:nether/surface/equisetum_patch",
 			"tfg:nether/surface/moonflower_patch",
+			"tfg:nether/surface/sundew_patch",
 			"tfg:nether/surface/salt_lick_patch",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",

@@ -1,24 +1,24 @@
 {
-	"feature": "tfg:nether/surface/rotten_flesh_patch",
+	"feature": "tfg:nether/surface/nightshade_moss",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 10
+			"count": 48
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"below_top": 6
+					"absolute": 150
 				},
 				"min_inclusive": {
-					"above_bottom": 36
+					"absolute": 50
 				}
 			}
-		},
-		{
-			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:biome"

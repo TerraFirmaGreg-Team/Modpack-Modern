@@ -173,8 +173,12 @@ function registerTFGBeneathBlockTags(event) {
         event.add('tfc:creeping_plantable_on', block)
         event.add('tfc:creeping_stone_plantable_on', block)
         event.add('beneath:nether_bush_plantable_on', block)
+        event.add('tfg:decorative_plant_attachable', block);
         event.add('minecraft:nether_carver_replaceables', block);
     })
+    
+	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
+	event.add('tfg:decorative_plant_attachable', '#minecraft:leaves')
 
     event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/araucaria')
     event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/mahoe')
@@ -197,19 +201,14 @@ function registerTFGBeneathBlockTags(event) {
     event.add("beneath:nether_bush_plantable_on", "#tfc:clay_grass");
     event.add("minecraft:small_dripleaf_placeable", "#tfc:clay_grass");
     event.add("minecraft:big_dripleaf_placeable", "#tfc:clay_grass");
-    event.add("minecraft:frogs_spawnable_on", "#tfc:clay_grass");
     event.add("minecraft:axolotls_spawnable_on", "#tfc:clay_grass");
 
     event.add("minecraft:small_dripleaf_placeable", "#tfc:clay");
     event.add("minecraft:big_dripleaf_placeable", "#tfc:clay");
-    event.add("minecraft:frogs_spawnable_on", "#tfc:clay");
     event.add("minecraft:axolotls_spawnable_on", "#tfc:clay");
 
     event.add("beneath:nether_bush_plantable_on", "#tfc:mud");
-    event.add("minecraft:frogs_spawnable_on", "#tfc:mud");
-
     event.add("beneath:nether_bush_plantable_on", "#tfc:dirt");
-    event.add("minecraft:frogs_spawnable_on", "#tfc:dirt");
 }
 
 function registerTFGBeneathBiomeTags(event) {

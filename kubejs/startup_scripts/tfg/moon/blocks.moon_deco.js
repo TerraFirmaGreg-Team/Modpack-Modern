@@ -33,21 +33,5 @@ function registerTFGWorldGenMoonDecoBlocks(event) {
 	createPlant(event, 'chorus_grass', 'moon')
 	createPlant(event, 'salteago', 'moon')
 	createPlant(event, 'vaiolush_fern', 'moon')
-
-
-	// Mars
-
-	
-
-	// europa...?
-
-	createPlant(event, 'crystal_grass', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'blooming_cooksonia', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'fracturn', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
-	createPlant(event, 'jungle_grass', 'unused')
-		.box(3, 0, 3, 13, 12, 13)
 }
 
