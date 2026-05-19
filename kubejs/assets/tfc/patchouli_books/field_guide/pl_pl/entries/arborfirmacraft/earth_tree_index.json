@@ -1,5 +1,5 @@
 {
-	"name": "Earth Tree Index",
+	"name": "Indeks drzew Ziemi",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "Akacja, guma arabska",
 			"item": "tag:tfc:acacia_logs",
 			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
 		},
@@ -68,7 +68,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "(Rainbow) Eucalyptus",
+			"title": "Eukaliptus (tęczowy)",
 			"item": "tag:afc:eucalyptus_logs",
 			"text": "$(bold)Blue Gum$()$(br)$(thing)Rainfall$(): 170 — 325mm$(br)$(thing)Temperature$(): 8.0 — 18.9°C$(br2)$(bold)Mountain Ash$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 9.8 — 18.9°C$(br2)$(bold)Rainbow Eucalyptus$()$(br)$(thing)Rainfall$(): 300 — 450mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C"
 		},

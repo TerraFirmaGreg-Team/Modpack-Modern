@@ -1,5 +1,5 @@
 {
-  "name": "Paving Cart",
+  "name": "Wóz brukarski",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
@@ -9,26 +9,26 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Paving Cart",
+      "title": "Wóz brukarski",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
     {
       "type": "patchouli:image",
-      "title": "Width Adjustment Slider",
+      "title": "Suwak regulacji szerokości",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
       "text": "The cart allows you to adjust the width of the path in the GUI"
     },
     {
       "type": "patchouli:image",
-      "title": "Variable Width Path",
+      "title": "Ścieżka zmiennej szerokości",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
@@ -36,16 +36,16 @@
       "type": "patchouli:image",
       "title": "Przycisk losowania",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
       "text": "The cart has a mode that will lay down materials in a random pattern."
     },
     {
       "type": "patchouli:image",
-      "title": "Random Material Path",
+      "title": "Ścieżka z losowych materiałów",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }
@@ -54,5 +54,5 @@
   "extra_recipe_mappings": {
     "tfg:rnr_plow": 0
   },
-  "sortnum": 20
+  "sortnum": 23
 }

@@ -19,7 +19,8 @@ const registerTFGItems = (event) => {
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
 	registerTFGAquaponicsItems(event);
-	
+	registerTFGAsphaltRoadItems(event);
+
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
 
@@ -83,5 +84,4 @@ const registerTFGItems = (event) => {
 	event.create('tfg:worked_optical_borosilicate_blank')
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
-
 }

@@ -21,25 +21,25 @@
 			"item": "gtceu:bronze_ingot",
 			"title": "Bronze",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Estanho$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
 			"title": "Bronze de Bismuto",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 30 % : $(thing)Zinco$()$(li)50 - 65 % : $(thing)Cobre$()$(li)10 - 20 % : $(thing)Bismuto$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
 			"title": "Bronze Negro",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)50 - 70 % : $(thing)Cobre$()$(li)10 - 25 % : $(thing)Prata$()$(li)10 - 25 % : $(thing)Ouro$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
+			"text": "Outras ligas não são adequadas para a criação de ferramentas. Estas são $(thing)Latão$(), $(thing)Ouro Rosé$() e $(thing)Prata Esterlina$().$(br2)$(thing)Latão$() é uma liga útil para todos os tipos de engenhocas, incluindo $(l:mechanics/mechanical_power)Energia Mecânica$().$(br2)$(thing)Ouro Rosé$() e $(thing)Prata Esterlina$() são usados para fabricar $(l:mechanics/steel#red_steel)Aço Rubro$() e $(l:mechanics/steel#blue_steel)Aço Azul$().",
 			"title": "Ligas de Utilidade"
 		},
 		{
@@ -48,21 +48,21 @@
 			"item": "create:brass_ingot",
 			"title": "Latão",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Zinco$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "Ouro Rosa",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)15 - 30 % : $(thing)Cobre$()$(li)70 - 85 % : $(thing)Ouro$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Prata de Lei",
+			"title": "Prata Esterlina",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 40 % : $(thing)Cobre$()$(li)60 - 80 % : $(thing)Prata$()$(br2)"
 		}
 	],
 	"read_by_default": true,

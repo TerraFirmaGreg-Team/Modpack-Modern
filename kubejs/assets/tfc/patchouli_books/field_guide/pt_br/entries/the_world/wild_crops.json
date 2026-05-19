@@ -23,7 +23,7 @@
         }
       },
       "name": "Trigo Selvagem",
-      "text": "An example of a wild crop, in this case $(l:mechanics/crops#wheat)Wheat$().",
+      "text": "Um exemplo de cultura selvagem, neste caso $(l:mechanics/crops#wheat)Trigo$().",
       "enable_visualize": false
     },
     {
@@ -525,7 +525,7 @@
           "text": " 90 - 390"
         },
         {
-          "text": "Cana-de-Açúcar"
+          "text": "Cana-de-açúcar"
         },
         {
           "text": " 12 - 38"

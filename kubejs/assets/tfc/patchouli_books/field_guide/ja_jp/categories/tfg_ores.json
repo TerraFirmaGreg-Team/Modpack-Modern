@@ -1,6 +1,6 @@
 {
-    "name": "Ores in TFG",
-    "description": "TFG has its own ore generation system that's similar to TFC's with the huge but rare veins, but with multiple minerals per vein. This category lists all of the vein types and where to find them.$(br2)Veins are named after their most dominant ore, but most veins contain 3-5 minerals.$(br2)See also: $(l:the_world/geology)Geology$(), $(l:getting_started/finding_ores)Indicators$()",
+    "name": "TFGにおける鉱石",
+    "description": "TFGでは、巨大で見つけにくい鉱脈が生成される点はTFCに似ていますが、1つの鉱脈に複数の鉱物が含まれる独自システムになっています。このカテゴリでは、各鉱脈の種類とその探し方をまとめています。$(br2)鉱脈の名前は主成分の鉱石に由来しますが、実際には多くの鉱脈が3〜5種類の鉱物を含んでいます。$(br2)より詳しく知りたい場合は $(l:the_world/geology)地質$() の項目や $(l:getting_started/finding_ores)指標$() の項目も参照してください。",
     "icon": "tfc:ore/pyrite",
     "sortnum": 60
 }

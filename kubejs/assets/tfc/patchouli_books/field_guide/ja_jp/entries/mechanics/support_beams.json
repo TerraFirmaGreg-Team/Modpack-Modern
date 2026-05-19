@@ -1,35 +1,35 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Support Beams & Collapses",
+  "name": "梁と崩落",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In TerraFirmaCraft, raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), $(thing)Smooth$() and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.",
-      "title": "Support Beams"
+      "text": "TerraFirmaCraftでは、石は非常に不安定なブロックであり、$(thing)崩落$()が起こりえます。$(thing)石$()や$(thing)鉱石$()、$(thing)滑らかな石$()、$(thing)つらら石$()などの多くの石系ブロックは、崩落する可能性があります。$(br2)これを防ぐには、$(thing)梁$()を設置してください。",
+      "title": "梁"
     },
     {
       "type": "patchouli:text",
-      "text": "Collapses can occur whenever a player $(thing)mines any Raw Rock$() that is near to $(thing)Unsupported Raw Rock$(). Once a collapse has started, however, even previously $(thing)Supported$() rock can start to collapse.$(br2)The rock on the roof of caves is $(thing)Naturally Supported$(). Any raw rock with a non-collapsible solid block beneath it, is also $(thing)Supported$(). Alternatively, $(thing)Support Beams$() can support a wide area at once."
+      "text": "プレイヤーが$(thing)梁の支えがない石ブロック$()の近くにある$(thing)$()を掘ると、崩落が発生することがあります。一度崩落が始まると、もともと$(thing)梁の支えがある$()ブロックであっても連鎖的に崩れてしまう可能性があります。$(br2)洞窟の天井などで見られる硬い石ブロックは梁がなくとも$(thing)支えがある$()状態として扱われます。また、下に崩落しないブロックがある石ブロックも$(thing)支えがある$()状態になります。さらに、$(thing)梁$()を使えば一定範囲内をまとめて支えることができます。"
     },
     {
       "type": "patchouli:text",
-      "text": "When graded $(l:the_world/ores_and_minerals)Ore$() (ore that can be poor, normal, or rich) collapses, it degrades in quality. Rich ore will become normal, normal will become poor, and poor will turn to cobblestone. Mineral ores will turn into cobblestone right away."
+      "text": "$(l:the_world/ores_and_minerals)鉱石$()は、崩落すると品質（低純度、中純度、高純度）が一段階ずつ下がります。高純度鉱石は中純度に、中純度鉱石は低純度に、そして低純度鉱石は丸石へと劣化していきます。なお、品質がない鉱物系の原石は崩落した時点で即座に丸石になります。"
     },
     {
       "type": "patchouli:text",
-      "text": "Dirt, grass, clay, gravel, cobblestone, and sand are also affected by gravity. However, unlike vanilla gravity blocks, these blocks fall down slopes, and cannot be stacked more than one high without supporting blocks around. $(l:mechanics/sluices)Ore Deposits$() also landslide, but do not degrade in quality."
+      "text": "土、草、粘土、砂利、丸石、砂といったブロックも重力の影響で動きます。バニラの重力ブロックと違い、これらは斜面に沿って崩れ落ちるため、周囲に支えがないと1段以上積むことができません。$(l:mechanics/sluices)鉱石が混じった砂利$()も同様に重力の影響を受けますが、こちらは品質が劣化することはありません。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_support",
-      "title": "Support Beams",
-      "text": "To get started, $(thing)Support Beams$() can be crafted with a $(thing)Saw$() and any type of $(thing)Logs$().$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright."
+      "title": "梁",
+      "text": "まず$(thing)梁$()は、$(thing)のこぎり$()と任意の$(thing)丸太$()から作成できます。$(br2)$(thing)梁$()をブロックの上に設置すると、最大3ブロック分の高さまで積まれた状態で配置されます。梁は、下にブロックがないと崩れてしまいます。"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram.",
+      "text": "上の図の通り、$(thing)水平の梁$()は、5ブロック以内にある$(thing)垂直の梁$()同士をつなぐように設置できます。",
       "multiblocks": [
         {
           "pattern": [
@@ -225,16 +225,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Only $(thing)Horizontal Support Beams$() cause nearby blocks to be $(thing)Supported$(). Any block within a $(bold)9 x 5 x 9$() area centered on a horizontal support beam is considered $(thing)Supported$().$(br2)In addition to being supported by support beams, rock can be supported simply by the virtue of having a solid block below it, such as more rock. However, it is important to note that $(thing)Non Solid Blocks$() such as $(thing)Stairs$() and $(thing)Slabs$(), along with $(thing)Smooth Stone$(), do $(bold)not$() count as supporting."
+      "text": "$(thing)水平の梁$()だけが周囲のブロックを$(thing)支えられている$()状態にします。水平の梁を中心にした$(bold)9 x 5 x 9$()の範囲内にあるブロックは、すべて$(thing)支えられている$()と判定されます。$(br2)また、支柱がなくても、下に別の石ブロックなどの固体ブロックがあれば自然に支えられます。ただし、$(thing)階段$()や$(thing)ハーフブロック$()といった$(thing)フルブロックではないブロック$()、および$(thing)滑らかな石$()は$(bold)支えとしては扱われない$()点に注意してください。"
     },
     {
       "type": "patchouli:text",
-      "text": "In addition to $(thing)Wooden Support Beams$() $(bold)TFG$() also adds higher tiers of support beams. Including $(thing)Stone Support Beams$(), $(thing)Concrete Support Beams$(), and $(thing)Steel Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!"
+      "text": "$(bold)TFG$()では$(thing)木製の梁$()にだけでなく、さらに上位の支柱も追加されます。$(thing)石の梁$()や$(thing)コンクリートの梁$()、$(thing)鋼鉄製の梁$()などがあり、上位のものほど支えられる範囲も広がります。最上位の梁は、水平の梁を中心に$(bold)33 x 13 x 33$()という非常に広い範囲を支えてくれます！"
     },
     {
       "type": "patchouli:text",
-      "text": "Finally, it is important to know that $(l:mechanics/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)$(br2)Remember kids: practice safe mining!",
-      "title": "Chiseling"
+      "text": "最後に重要な点として、$(l:mechanics/chisel)彫刻$()も採掘と同じように崩落の原因になります。特に、崩落発生の危険性がある$(thing)石ブロック$()に対して行うと、簡単に崩れてしまう危険性があります。$(br2)$(br2)皆さん、安全第一で採掘を行いましょう！",
+      "title": "彫刻"
     }
   ],
   "read_by_default": true,

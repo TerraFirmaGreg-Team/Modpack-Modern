@@ -223,11 +223,30 @@ const registerFirmaLifeRecipes = (event) => {
 	 * @type {string[]} - Tier names of greenhouse casings.
 	 */
 	const greenhouse_tiers = [
-		{tier: 'treated_wood', material: 'firmalife:treated_lumber'},
-		{tier: 'copper', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Copper, 1)},
-		{tier: 'iron', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1)},
+		{tier: 'treated_wood', material: 'firmalife:treated_lumber', weathering: ["", "weathered_"]},
+		{tier: 'copper', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Copper, 1), weathering: [
+			"",
+			"exposed_",
+			"weathered_",
+			"oxidized_"
+		]},
+		{tier: 'iron', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1), weathering: ["", "rusted_"]},
 		{tier: 'stainless_steel', material: ChemicalHelper.get(TagPrefix.rod, GTMaterials.StainlessSteel, 1)}
 	];
+
+	const GREENHOUSE_BLOCKS = [
+		"wall",
+		"panel_wall",
+		"panel_roof",
+		"roof",
+		"roof_top",
+		"trapdoor",
+		"door",
+		"port"
+	]
+
+	//addMaterialInfo throws errors in console if this isn't included
+	TFGHelpers.registerMaterialInfo('firmalife:treated_lumber', [GTMaterials.Wood, 1 / 4])
 
 	//Firmalife namespace is left so we dont have to change patchouli entries.
 	greenhouse_tiers.forEach(tier => {
@@ -307,6 +326,35 @@ const registerFirmaLifeRecipes = (event) => {
 			A: `#tfg:${tier.tier}_greenhouse_casings`,
 			B: ChemicalHelper.get(TagPrefix.pipeTinyFluid, GTMaterials.Copper, 1)
 		}).addMaterialInfo().id(`firmalife:crafting/greenhouse/${tier.tier}_greenhouse_port`)
+
+		if (tier.tier !== "stainless_steel") {
+			tier.weathering.forEach((weathering, i, weatheringArray) => {
+				GREENHOUSE_BLOCKS.forEach(block => {
+					if (weatheringArray[i + 1]) {
+						event.recipes.gtceu.chemical_bath(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
+							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
+							.inputFluids('#tfc:any_water 150')
+							.itemOutputs(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
+							.duration(30)
+							.EUt(30)
+
+						event.recipes.tfc.barrel_sealed(2000)
+							.inputFluid(TFC.fluidStackIngredient('#tfc:any_water', 150))
+							.inputItem(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
+							.outputItem(`firmalife:${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
+							.id(`tfg:corrode_${weatheringArray[i + 1]}${tier.tier}_greenhouse_${block}`)
+					}
+					if (i !== 0) {	
+						event.recipes.gtceu.chemical_bath(`tfg:strip_${weathering}${tier.tier}_greenhouse_${block}`)
+							.itemInputs(`firmalife:${weathering}${tier.tier}_greenhouse_${block}`)
+							.inputFluids('gtceu:phosphoric_acid 10')
+							.itemOutputs(`firmalife:${tier.tier}_greenhouse_${block}`)
+							.duration(30)
+							.EUt(30)
+					}
+				})
+			})
+		}
 	});
 
 	event.recipes.gtceu.shaped('2x firmalife:sweeper', [
@@ -839,23 +887,6 @@ const registerFirmaLifeRecipes = (event) => {
 		},
 		"duration": 16000
 	}).id('tfg:barrel/shosha_wheel')
-
-	// #region Oven heating recipes
-
-	event.recipes.tfc.heating(`firmalife:oven_top`, 1399)
-		.resultItem(`firmalife:cured_oven_top`)
-		.id(`tfg:heating/oven_top`)
-	event.recipes.tfc.heating(`firmalife:oven_chimney`, 1399)
-		.resultItem(`firmalife:cured_oven_chimney`)
-		.id(`tfg:heating/oven_chimney`)
-	event.recipes.tfc.heating(`firmalife:oven_bottom`, 1399)
-		.resultItem(`firmalife:cured_oven_bottom`)
-		.id(`tfg:heating/oven_bottom`)
-	event.recipes.tfc.heating(`firmalife:oven_hopper`, 1399)
-		.resultItem(`firmalife:cured_oven_hopper`)
-		.id(`tfg:heating/oven_hopper`)
-
-	// #endregion
 
 	// Adds a tooltip to the bacon craft to tell people it needs to be smoked first,
 	// and adds traits that normally disappear on the craft

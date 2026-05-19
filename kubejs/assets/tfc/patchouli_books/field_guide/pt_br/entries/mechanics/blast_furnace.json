@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/blast_furnace",
-      "text": "Crafting a blast furnace itself requires a $(thing)Crucible$(), along with some of the $(thing)Double Wrought Iron Plates$() you will need."
+      "text": "A criação de um alto-forno requer um $(thing)Cadinho$(), juntamente a algumas das $(thing)Placas Duplas de Ferro Forjado$() que você precisará."
     },
     {
       "type": "patchouli:text",
@@ -39,7 +39,7 @@
     {
       "type": "patchouli:image",
       "images": [
-      "tfc:textures/gui/book/gui/blast_furnace.png"
+        "tfc:textures/gui/book/gui/blast_furnace.png"
       ],
       "text": "The Blast Furnace Interface",
       "border": false

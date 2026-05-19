@@ -15,11 +15,11 @@
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)\n$(l:tfc:mechanics/crops#barley)大麦$()$(li)\n$(l:tfc:mechanics/crops#beet)ビーツ$()$(li)\n$(l:tfc:mechanics/crops#cabbage)キャベツ$()$(li)\n$(l:tfc:mechanics/crops#canola)キャノーラ$()$(li)\n$(l:tfc:mechanics/crops#carrot)ニンジン$()$(li)\n$(l:tfc:mechanics/crops#cucumber)キュウリ$()$(li)\n$(l:tfc:mechanics/crops#flax)亜麻$()$(li)\n$(l:tfc:mechanics/crops#garlic)ニンニク$()$(li)\n$(l:tfc:mechanics/crops#green_bean)サヤインゲン$()$(li)\n$(l:tfc:mechanics/crops#jute)ジュート$()$(li)\n$(l:tfc:mechanics/crops#lentil)レンズ豆\n$()$(li)\n$(l:tfc:mechanics/crops#maize)トウモロコシ$()$(li)\n$(l:tfc:mechanics/crops#melon)スイカ$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麦$()$(li)$(l:tfc:mechanics/crops#beet)ビーツ$()$(li)$(l:tfc:mechanics/crops#cabbage)キャベツ$()$(li)$(l:tfc:mechanics/crops#canola)キャノーラ$()$(li)$(l:tfc:mechanics/crops#carrot)ニンジン$()$(li)$(l:tfc:mechanics/crops#cucumber)キュウリ$()$(li)$(l:tfc:mechanics/crops#flax)亜麻$()$(li)$(l:tfc:mechanics/crops#garlic)ニンニク$()$(li)$(l:tfc:mechanics/crops#green_bean)サヤインゲン$()$(li)$(l:tfc:mechanics/crops#jute)ジュート$()$(li)$(l:tfc:mechanics/crops#lentil)レンズ豆\n$()$(li)$(l:tfc:mechanics/crops#maize)トウモロコシ$()$(li)$(l:tfc:mechanics/crops#melon)スイカ$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)\n$(l:tfc:mechanics/crops#oat)オーツ麦$()$(li)\n$(l:tfc:mechanics/crops#onion)タマネギ$()$(li)\n$(l:tfc:mechanics/crops#papyrus)パピルス$()$(li)\n$(l:tfc:mechanics/crops#potato)ジャガイモ$()$(li)\n$(l:tfc:mechanics/crops#pumpkin)カボチャ$()$(li)\n$(l:tfc:mechanics/crops#radish)ラディッシュ$()$(li)\n$(l:tfc:mechanics/crops#red_bell_pepper)赤ピーマン$()$(li)\n$(l:tfc:mechanics/crops#rice)稲$()$(li)\n$(l:tfc:mechanics/crops#rye)ライ麦$()$(li)\n$(l:tfc:mechanics/crops#soybean)大豆$()$(li)\n$(l:tfc:mechanics/crops#squash)スカッシュ$()$(li)\n$(l:tfc:mechanics/crops#sugarcane)サトウキビ$()$(li)\n$(l:tfc:mechanics/crops#sunflower)ヒマワリ$()$(li)\n$(l:tfc:mechanics/crops#tomatoes)トマト$()$(li)\n$(l:tfc:mechanics/crops#wheat)小麦$()$(li)\n$(l:tfc:mechanics/crops#yellow_bell_pepper)黄ピーマン$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)オーツ麦$()$(li)$(l:tfc:mechanics/crops#onion)タマネギ$()$(li)$(l:tfc:mechanics/crops#papyrus)パピルス$()$(li)$(l:tfc:mechanics/crops#potato)ジャガイモ$()$(li)$(l:tfc:mechanics/crops#pumpkin)カボチャ$()$(li)$(l:tfc:mechanics/crops#radish)ラディッシュ$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)赤ピーマン$()$(li)$(l:tfc:mechanics/crops#rice)稲$()$(li)$(l:tfc:mechanics/crops#rye)ライ麦$()$(li)$(l:tfc:mechanics/crops#soybean)大豆$()$(li)$(l:tfc:mechanics/crops#squash)スカッシュ$()$(li)$(l:tfc:mechanics/crops#sugarcane)サトウキビ$()$(li)$(l:tfc:mechanics/crops#sunflower)ヒマワリ$()$(li)$(l:tfc:mechanics/crops#tomatoes)トマト$()$(li)$(l:tfc:mechanics/crops#wheat)小麦$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄ピーマン$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -45,7 +45,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "barley",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)大麦は1ブロック分の作物です。大麦の種は農地に植えることができ、$(thing)大麦$()と$(thing)大麦の種$()を生産します。",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)大麦は1ブロック分の作物です。大麦の種は農地に植えることができ、$(thing)大麦$()と$(thing)大麦の種$()を生産します。",
 			"title": "大麦"
 		},
 		{
@@ -1037,7 +1037,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cabbage",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): 窒素$(br2)キャベツは1ブロック分の作物です。キャベツの種は農地に植えることができ、$(thing)キャベツ$()と$(thing)キャベツの種$()を生産します。",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): 窒素$(br2)キャベツは1ブロック分の作物です。キャベツの種は農地に植えることができ、$(thing)キャベツ$()と$(thing)キャベツの種$()を生産します。",
 			"title": "キャベツ"
 		},
 		{
@@ -1248,7 +1248,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "garlic",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 18 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)ニンニクは1ブロック分の作物です。ニンニクの種は農地に植えることができ、$(thing)ニンニク$()と$(thing)ニンニクの種$()を生産します。",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 75 %$(br)$(bold)栄養素$(): 窒素$(br2)ニンニクは1ブロック分の作物です。ニンニクの種は農地に植えることができ、$(thing)ニンニク$()と$(thing)ニンニクの種$()を生産します。",
 			"title": "ニンニク"
 		},
 		{
@@ -2262,7 +2262,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "onion",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 90 %$(br)$(bold)栄養素$(): 窒素$(br2)タマネギは1ブロック分の作物です。タマネギの種は農地に植えることができ、$(thing)タマネギ$()と$(thing)タマネギの種$()を生産します。",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 25 - 90 %$(br)$(bold)栄養素$(): 窒素$(br2)タマネギは1ブロック分の作物です。タマネギの種は農地に植えることができ、$(thing)タマネギ$()と$(thing)タマネギの種$()を生産します。",
 			"title": "タマネギ"
 		},
 		{
@@ -2393,7 +2393,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "soybean",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 40 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)大豆は1ブロック分の作物です。大豆の種は農地に植えることができ、$(thing)大豆$()と$(thing)大豆の種$()を生産します。",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 40 - 100 %$(br)$(bold)栄養素$(): 窒素$(br2)大豆は1ブロック分の作物です。大豆の種は農地に植えることができ、$(thing)大豆$()と$(thing)大豆の種$()を生産します。",
 			"title": "大豆"
 		},
 		{
@@ -3926,7 +3926,7 @@
 			"type": "patchouli:text",
 			"anchor": "radish",
 			"title": "ラディッシュ",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): カリウム$(br2)ラディッシュは$(thing)野菜$()系の栄養を取ることができる食材です。寒冷地で農耕を営む場合には優秀な作物になります。"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 15 - 65 %$(br)$(bold)栄養素$(): カリウム$(br2)ラディッシュは$(thing)野菜$()系の栄養を取ることができる食材です。寒冷地で農耕を営む場合には優秀な作物になります。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4041,7 +4041,7 @@
 			"type": "patchouli:text",
 			"anchor": "lentil",
 			"title": "レンズ豆",
-			"text": "$(bold)\n$(l:the_world/climate#temperature)気温$(): -20 - 18  °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 50 - 100 %$(br)$(bold)栄養素$(): リン$(br2)レンズ豆は$(thing)野菜$()系の栄養を取ることができる食材です。加熱調理してから食べた方が良いでしょう。寒冷地での農耕向きの作物です。"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): -20 - 18  °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 50 - 100 %$(br)$(bold)栄養素$(): リン$(br2)レンズ豆は$(thing)野菜$()系の栄養を取ることができる食材です。加熱調理してから食べた方が良いでしょう。寒冷地での農耕向きの作物です。"
 		},
 		{
 			"type": "tfc:multimultiblock",

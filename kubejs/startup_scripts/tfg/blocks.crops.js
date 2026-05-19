@@ -29,6 +29,7 @@ const registerTFGCrops = (event) => {
 		.growthModifier(0.8)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.texture('tfg:item/sunflower_product')
 		})
@@ -39,6 +40,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 		})
 	event.create('tfg:sunflower_wild', 'tfc:wild_crop')
 		.type('double')
@@ -63,10 +65,12 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 		})
 	event.create('tfg:rapeseed_wild', 'tfc:wild_crop')
 		.type('double')
@@ -93,6 +97,7 @@ const registerTFGCrops = (event) => {
 		.expiryModifier(1.2)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.texture('tfg:item/flax_product')
 			product.tag('tfc:scrapable')
@@ -104,6 +109,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 		})
 	event.create('tfg:flax_wild', 'tfc:wild_crop')
 		.type('double')
@@ -125,6 +131,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -142,6 +149,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:lentil_wild', 'tfc:wild_crop')
@@ -163,6 +171,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -179,6 +188,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:radish_wild', 'tfc:wild_crop')
@@ -201,6 +211,7 @@ const registerTFGCrops = (event) => {
 		.doubleStages(4)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
         .requiresStick(true)
 		.productItem(product => {
 			product.food(food => {
@@ -218,6 +229,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
         })
 	event.create('tfg:cucumber_wild', 'tfc:wild_crop')
 		.type('double')
@@ -241,6 +253,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -258,6 +271,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:peanut_wild', 'tfc:wild_crop')
@@ -279,6 +293,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -295,6 +310,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:cassava_wild', 'tfc:wild_crop')
@@ -316,6 +332,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -333,6 +350,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:beans_wild', 'tfc:wild_crop')
@@ -354,6 +372,7 @@ const registerTFGCrops = (event) => {
 		.stages(5)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.existingProductItem('beneath:ghost_pepper')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
@@ -363,6 +382,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('tfg:ghost_pepper_wild', 'tfc:wild_crop')
@@ -387,6 +407,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(4)
@@ -397,6 +418,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 6, 14)
 		})
 	event.create('betterend:amber_root_wild', 'tfc:wild_crop')
@@ -418,6 +440,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -428,6 +451,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 9, 14)
 		})
 	event.create('betterend:blossom_berry_wild', 'tfc:wild_crop')
@@ -447,6 +471,7 @@ const registerTFGCrops = (event) => {
 		.soundType('cherry_wood')
 		.tagBlock('minecraft:mineable/axe')
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.mapColor('color_red')
 		.lightLevel(0.85)
 		.requiresTool(false)
@@ -461,10 +486,12 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.deadBlock(dead => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 9, 14)
 		})
 		.fruitBlock('betterend:cave_pumpkin')
@@ -493,6 +520,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.box(2, 0, 2, 14, 4, 14)
 		.productItem(product => {
 			product.food(food => {
@@ -507,6 +535,7 @@ const registerTFGCrops = (event) => {
 			dead.box(2, 0, 2, 14, 4, 14)
 			dead.soundType('nether_wart')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 		})
     event.create('betterend:chorus_mushroom_wild', 'tfc:wild_crop')
         .type('default')
@@ -530,6 +559,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(5)
@@ -541,6 +571,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('crop')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 3, 14)
 		})
     event.create('betterend:shadow_berry_wild', 'tfc:wild_crop')
@@ -564,6 +595,7 @@ const registerTFGCrops = (event) => {
 		.stages(3)
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
+		.tagBlock('tfc:crops')
 		.productItem(product => {
 			product.food(food => {
 				food.hunger(2)
@@ -576,6 +608,7 @@ const registerTFGCrops = (event) => {
 			dead.hardness(0.2)
 			dead.soundType('nether_wart')
 			dead.tagBlock('minecraft:mineable/hoe')
+			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 5, 14)
 		})
     event.create('betterend:bolux_mushroom_wild', 'tfc:wild_crop')

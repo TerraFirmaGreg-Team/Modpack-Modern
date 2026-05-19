@@ -10,12 +10,12 @@
 			"type": "patchouli:spotlight",
 			"title": "危険物質",
 			"item": "gtceu:cobaltite_dust",
-			"text": "一部の$(thing)鉱石$()や$(thing)粉$()、$(thing)化学物質$()は危険物質であり、インベントリ内にあるだけで$(item)デバフ$()を受けたり、最悪の場合$(item)死んでしまう$()ことがあります。所持中は$(item)ステータスエフェクト$()として画面に表示されます。$(br2)これらの影響は、$(thing)フェイスマスク$()や$(thing)ゴム手袋$()、$(thing)$危険物用スーツ()といった装備で防ぐことができます。"
+			"text": "一部の$(thing)鉱石$()や$(thing)粉$()、$(thing)化学物質$()は危険物質であり、インベントリ内にあるだけで$(item)デバフ$()を受けたり、最悪の場合$(item)死んでしまう$()ことがあります。所持中は$(item)ステータスエフェクト$()として画面に表示されます。$(br2)これらの影響は、$(thing)フェイスマスク$()や$(thing)ゴム手袋$()、$(thing)危険物用スーツ$()といった装備で防ぐことができます。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "全てのエフェクト",
-			"text": "$(li)\n$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)\n$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)\n$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)\n$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)\n\n$(l:tfg_ores/hazards#Carcinogens)癌$()$(li)\n$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)\n$(l:tfg_ores/hazards#Irritants)炎症$()$(li)\n$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)\n$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)\n$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li\n)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)\n$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)$(l:tfg_ores/hazards#Carcinogens)発がん性$()$(li)$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)$(l:tfg_ores/hazards#Irritants)炎症$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
 		},
 		{
 			"type": "patchouli:text",
@@ -107,9 +107,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "ヒ素中毒",
+			"title": "Arsenicosis",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "ヒ素中毒",
+			"anchor": "Arsenicosis",
 			"text": "$(thing)ヒ素中毒$()は、粉塵や蒸気、または$(thing)鶏冠石$()に含まれる$(thing)ヒ素$()を吸い込むことで発症する病気です。徐々に$(item)空腹感$()が増加し、やがて$(item)吐き気$()を引き起こし、最終的には$(item)死$()に至ります。$(br2)この状態は、$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{

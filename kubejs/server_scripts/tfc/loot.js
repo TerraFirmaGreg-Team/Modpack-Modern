@@ -115,6 +115,7 @@ function registerTFCLoots(event) {
 
 
 	event.addEntityLootModifier('tfc:ocelot')
+		.addLoot('tfc:small_raw_hide')
 		.addWeightedLoot([1, 2], ['minecraft:bone'])
 		.addWeightedLoot([2, 5], ['tfc:food/gran_feline'])
 
@@ -213,6 +214,7 @@ function registerTFCLoots(event) {
 	event.addEntityLootModifier('tfc:caribou')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addLoot('tfc_textile:caribou_fur')
+		.addWeightedLoot([6, 10], ['tfc:food/venison'])
 		.addWeightedLoot([1, 6], ['minecraft:bone'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
 
