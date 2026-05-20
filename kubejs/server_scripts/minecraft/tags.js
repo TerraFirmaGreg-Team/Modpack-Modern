@@ -6,11 +6,6 @@
  * @param {TagEvent.Item} event 
  */
 const registerMinecraftItemTags = (event) => {
-	global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
-
 	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
@@ -49,10 +44,6 @@ const registerMinecraftItemTags = (event) => {
 }
 
 const registerMinecraftBlockTags = (event) => {
-	global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
-
 	// Stops saws from being able to pick up ice
 	event.remove('minecraft:ice', 'minecraft:ice')
 	event.remove('minecraft:ice', 'tfc:sea_ice')

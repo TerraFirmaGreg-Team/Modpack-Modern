@@ -34,47 +34,12 @@ const registerCreatedecoRecipes = (event) => {
 	//#endregion
 
 	//#region Recipe Removal
-	event.remove({ output: 'createdeco:zinc_sheet' })
-	event.remove({ output: 'createdeco:industrial_iron_sheet' })
-	event.remove({ output: 'createdeco:industrial_iron_nugget' })
-	event.remove({ output: 'createdeco:industrial_iron_ingot' })
-	event.remove({ id: 'createdeco:andesite_bars_overlay' })
-	event.remove({ id: 'createdeco:andesite_bars' })
-	event.remove({ id: 'createdeco:brass_bars_overlay' })
-	event.remove({ id: 'createdeco:brass_bars' })
-	event.remove({ id: 'createdeco:iron_bars_overlay' })
-	event.remove({ id: 'createdeco:copper_bars_overlay' })
-	event.remove({ id: 'createdeco:copper_bars' })
-	event.remove({ id: 'createdeco:industrial_iron_bars_overlay' })
-	event.remove({ id: 'createdeco:industrial_iron_bars' })
-	event.remove({ id: 'createdeco:zinc_bars_overlay' })
-	event.remove({ id: 'createdeco:zinc_bars' })
-	event.remove({ id: 'createdeco:industrial_iron_block' })
-	event.remove({ id: 'createdeco:netherite_ingot' })
+	
 	event.remove({ id: 'gtceu:assembler/bricks' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/wrought_iron' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
-	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
-	event.remove({ id: 'createdeco:andesite_sheet_metal' })
-	event.remove({ id: 'createdeco:brass_sheet_metal' })
-	event.remove({ id: 'createdeco:iron_sheet_metal' })
-	event.remove({ id: 'createdeco:copper_sheet_metal' })
-	event.remove({ id: 'createdeco:industrial_iron_sheet_metal' })
-	event.remove({ id: 'createdeco:zinc_sheet_metal' })
+	
 	//#endregion
 
 	//#region Lamp Recipes
-	const lampColors = ['blue', 'green', 'red', 'yellow'];
-	const lampTypes = ['zinc', 'brass', 'iron', 'industrial_iron', 'copper', 'andesite'];
-
-	lampTypes.forEach(type => {
-		lampColors.forEach(color => {
-			event.remove({ output: `createdeco:${color}_${type}_lamp` });
-		});
-	});
 
 	function lampRecipe(output, lampType, lampColor) {
 
@@ -129,6 +94,8 @@ const registerCreatedecoRecipes = (event) => {
 	}
 
 	// Loop through each lamp type and color to create the recipes
+	const lampColors = ['blue', 'green', 'red', 'yellow'];
+	const lampTypes = ['zinc', 'brass', 'iron', 'industrial_iron', 'copper', 'andesite'];
 	lampTypes.forEach(lampType => {
 		lampColors.forEach(lampColor => {
 			let output = `2x createdeco:${lampColor}_${lampType}_lamp`; // Define the output item ID
@@ -141,29 +108,6 @@ const registerCreatedecoRecipes = (event) => {
 	const dyeTypes = ['black', 'red', 'gray', 'green', 'blue', 'white', 'brown']
 	
 	global.CREATE_DECO_BRICK_TYPES.forEach((type, index) => {
-		event.remove({ output: `createdeco:${type}_bricks` });
-		event.remove({ output: `createdeco:${type}_brick_stairs` });
-		event.remove({ output: `createdeco:short_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:tiled_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:long_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:corner_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:cracked_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:mossy_${type}_brick_stairs` });
-		event.remove({ output: `createdeco:${type}_brick_slab` });
-		event.remove({ output: `createdeco:short_${type}_brick_slab` });
-		event.remove({ output: `createdeco:tiled_${type}_brick_slab` });
-		event.remove({ output: `createdeco:long_${type}_brick_slab` });
-		event.remove({ output: `createdeco:corner_${type}_brick_slab` });
-		event.remove({ output: `createdeco:cracked_${type}_brick_slab` });
-		event.remove({ output: `createdeco:mossy_${type}_brick_slab` });
-		event.remove({ output: `createdeco:${type}_brick_wall` });
-		event.remove({ output: `createdeco:short_${type}_brick_wall` });
-		event.remove({ output: `createdeco:tiled_${type}_brick_wall` });
-		event.remove({ output: `createdeco:long_${type}_brick_wall` });
-		event.remove({ output: `createdeco:corner_${type}_brick_wall` });
-		event.remove({ output: `createdeco:cracked_${type}_brick_wall` });
-		event.remove({ output: `createdeco:mossy_${type}_brick_wall` });
-
 		if (type !== "red") {
 			const dye = `#forge:dyes/${dyeTypes[index]}`;
 			event.shaped(`4x createdeco:${type}_bricks`, [

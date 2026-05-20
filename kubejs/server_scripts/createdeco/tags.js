@@ -4,11 +4,6 @@ const metalBars = /** @type {const} */ (["andesite", "brass", "iron", "copper", 
 
 /** @param {TagEvent.Item} event  */
 function registerCreateDecoItemTags(event) {
-	global.CREATEDECO_DISABLED_ITEMS.forEach((item) => {
-		event.removeAllTagsFrom(item);
-		event.add("c:hidden_from_recipe_viewers", item);
-	});
-
 	event.remove("createdeco:internal/blocks/iron_blocks", "minecraft:iron_block");
 	event.remove("createdeco:internal/blocks/industrial_iron_blocks", "create:industrial_iron_block");
 

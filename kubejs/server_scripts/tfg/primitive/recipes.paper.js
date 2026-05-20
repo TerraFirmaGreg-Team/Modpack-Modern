@@ -33,25 +33,7 @@ function registerTFGPapermakingRecipes(event) {
 		.duration(100)
 		.EUt(7)
 
-	const generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
-		event.custom({
-			"type": "firmalife:vat",
-			"input_item": {
-				"ingredient": {
-					"item": inputItem
-				}
-			},
-			"input_fluid": {
-				"ingredient": fluid,
-				"amount": fluidAmount
-			},
-			"output_item": {
-				"item": output
-			}
-		}).id(id)
-	}
-
-	const generatePotRecipe = (id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) => {
+	function generatePotRecipe(id, maxAmountOfInputItems, inputItem, inputFluid, inputFluidAmount, outputItem, ticks, temperature) {
 		for (let i = 0; i < maxAmountOfInputItems; i++) {
 			let iPlusOne = i + 1
 			let inputsArray = new Array(iPlusOne)
@@ -64,6 +46,7 @@ function registerTFGPapermakingRecipes(event) {
 				.id(`tfg:pot/${iPlusOne}x_${id}`)
 		}
 	}
+
 	//remove chemical bath recipe
 	event.remove({ id: 'gtceu:chemical_bath/paper_from_wood_dust' })
 	event.remove({ id: 'gtceu:chemical_bath/paper_from_wood_dust_distilled' })
@@ -97,7 +80,6 @@ function registerTFGPapermakingRecipes(event) {
 				r.replaceOutput('gtceu:wood_dust', 'gtceu:hardwood_dust')
 				r.replaceOutput('gtceu:small_wood_dust', 'gtceu:small_hardwood_dust')
 				r.replaceOutput('gtceu:tiny_wood_dust', 'gtceu_tiny_hardwood_dust')
-			
 			}
 		})
 	})
@@ -136,9 +118,24 @@ function registerTFGPapermakingRecipes(event) {
 		.id('tfg:quern/soaked_hardwood_strip')
 
 	//Cook hardwood dust in lye
-	generateVatRecipe('tfg:vat/thermochemically_treat_hardwood_dust', 'gtceu:hardwood_dust', 'tfc:lye', 300, 'gtceu:thermochemically_treated_hardwood_dust')
-	generateVatRecipe('tfg:vat/thermochemically_treat_small_hardwood_dust', 'gtceu:small_hardwood_dust', 'tfc:lye', 75, 'gtceu:small_thermochemically_treated_hardwood_dust')
-	generateVatRecipe('tfg:vat/thermochemically_treat_tiny_hardwood_dust', 'gtceu:tiny_hardwood_dust', 'tfc:lye', 33, 'gtceu:tiny_thermochemically_treated_hardwood_dust')
+	event.recipes.firmalife.vat()
+		.inputItem('gtceu:hardwood_dust')
+		.inputFluid(Fluid.of('tfc:lye', 300))
+		.outputItem('gtceu:thermochemically_treated_hardwood_dust')
+		.id('tfg:vat/thermochemically_treat_hardwood_dust')
+
+	event.recipes.firmalife.vat()
+		.inputItem('gtceu:small_hardwood_dust')
+		.inputFluid(Fluid.of('tfc:lye', 75))
+		.outputItem('gtceu:small_thermochemically_treated_hardwood_dust')
+		.id('tfg:vat/thermochemically_treat_small_hardwood_dust')
+
+	event.recipes.firmalife.vat()
+		.inputItem('gtceu:tiny_hardwood_dust')
+		.inputFluid(Fluid.of('tfc:lye', 33))
+		.outputItem('gtceu:tiny_thermochemically_treated_hardwood_dust')
+		.id('tfg:vat/thermochemically_treat_tiny_hardwood_dust')
+	
 	generatePotRecipe('thermochemically_treat_hardwood_dust', 3, 'gtceu:hardwood_dust', 'tfc:lye', 300, 'gtceu:thermochemically_treated_hardwood_dust', 600, 300)
 	generatePotRecipe('thermochemically_treat_small_hardwood_dust', 5, 'gtceu:small_hardwood_dust', 'tfc:lye', 75, 'gtceu:small_thermochemically_treated_hardwood_dust', 600, 300)
 	generatePotRecipe('thermochemically_treat_tiny_hardwood_dust', 5, 'gtceu:tiny_hardwood_dust', 'tfc:lye', 33, 'gtceu:tiny_thermochemically_treated_hardwood_dust', 600, 300)
@@ -154,18 +151,9 @@ function registerTFGPapermakingRecipes(event) {
 		.recipeTier(0)
 		.id('greate:pressing/soaked_unrefined_paper')
 
-	event.custom({
-		type: "firmalife:stomping",
-		ingredient: {
-			item: "gtceu:thermochemically_treated_hardwood_dust"
-		},
-		result: {
-			item: 'tfg:soaked_unrefined_paper'
-		},
-		input_texture: 'tfg:block/thermochemically_treated_hardwood_dust',
-		output_texture: 'tfg:block/soaked_unrefined_paper',
-		sound: 'minecraft:entity.slime.squish'
-	}).id('tfg:stomping/soaked_unrefined_paper')
+	event.recipes.firmalife.stomping('tfg:soaked_unrefined_paper', "gtceu:thermochemically_treated_hardwood_dust",
+		'tfg:block/thermochemically_treated_hardwood_dust', 'tfg:block/soaked_unrefined_paper', 'minecraft:entity.slime.squish')
+		.id('tfg:stomping/soaked_unrefined_paper')
 
 	//Dry the soaked unrefined paper
 	event.recipes.firmalife.drying('tfc:unrefined_paper', 'tfg:soaked_unrefined_paper')

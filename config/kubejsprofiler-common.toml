@@ -1,0 +1,11 @@
+#Whether profiling is enabled
+enabled = true
+#Whether or not to trace spans
+traceSpans = true
+#Min duration for function to trace in nanoseconds
+#Range: 0 ~ 9223372036854775807
+minFunctionDurationNs = 5000000
+#Max events to trace
+#Range: > 0
+maxTraceEvents = 25000
+
