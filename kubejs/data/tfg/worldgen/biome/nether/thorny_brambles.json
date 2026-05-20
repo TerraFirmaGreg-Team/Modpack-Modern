@@ -134,10 +134,10 @@
 				"weight": 100
 			},
 			{
-				"type": "minecraft:zoglin",
-				"maxCount": 2,
+				"type": "minecraft:hoglin",
+				"maxCount": 3,
 				"minCount": 1,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:zombified_piglin",
@@ -201,6 +201,12 @@
 			},
 			{
 				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
