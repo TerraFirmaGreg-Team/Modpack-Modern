@@ -2,11 +2,6 @@
 "use strict";
 
 const registerAsticorCartsRecipes = (event) => {
-    event.remove({ id: 'astikorcarts:animal_cart' });
-    event.remove({ id: 'astikorcarts:supply_cart' });
-    event.remove({ id: 'astikorcarts:plow' });
-    event.remove({ id: 'astikorcarts:wheel' });
-
     global.TFC_HARDWOOD_TYPES.forEach(type => {
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:wheel/${type}`, [GTMaterials.get('hardwood'), 2]);
         TFGHelpers.registerMaterialInfo(`tfcastikorcarts:supply_cart/${type}`, [GTMaterials.Brass, 1, GTMaterials.get('hardwood'), 8, GTMaterials.Wood, 12]);

@@ -23,5 +23,6 @@
   "enum.deathpunishment.thirst_mode.KEEP": "Zachowaj po śmierci",
   "enum.deathpunishment.health_mode.TFC": "Domyślne TFC",
   "enum.deathpunishment.health_mode.MANUAL": "Konfiguracja ręczna",
-  "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci"
+  "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci",
+  "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"
 }

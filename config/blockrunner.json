@@ -25,5 +25,8 @@
 	"#rnr:functional_concrete_road_slabs": 1.3,
 	"#tfg:functional_asphalt_roads": 1.4,
 	"#tfg:functional_asphalt_road_stairs": 1.4,
-	"#tfg:functional_asphalt_road_slabs": 1.4
+	"#tfg:functional_asphalt_road_slabs": 1.4,
+	"#forge:very_fast_walkable_blocks": 1.2,
+	"#forge:fast_walkable_blocks": 1.08,
+	"#forge:slow_walkable_blocks": 0.8
 }

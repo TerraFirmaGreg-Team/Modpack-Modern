@@ -299,22 +299,18 @@ function registerTFGFoodItemTags(event) {
 	event.add('tfg:solid_fats', 'tfc:blubber')
 
 	// Space foods
-	event.add('tfc:foods', 'minecraft:red_mushroom')
-	event.add('tfc:foods', 'minecraft:brown_mushroom')
 	event.add('tfc:foods', 'minecraft:glow_berries')
 	event.add('tfc:foods', 'minecraft:chorus_fruit')
 	event.add('tfc:foods', 'minecraft:popped_chorus_fruit')
 
-	event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
-	event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/vegetables', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/fruits', 'minecraft:glow_berries')
 	event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/fruits', 'minecraft:popped_chorus_fruit')
 
 	event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
 	event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
-	event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
-	event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+	event.add('beneath:usable_in_juicer', 'tfg:food/fly_agaric')
 	event.add('beneath:usable_in_juicer', 'tfc:plant/saguaro_fruit')
 	event.add('beneath:usable_in_juicer', 'tfc:plant/barrel_cactus')
 	event.add('beneath:usable_in_juicer', 'tfc:plant/silken_pincushion_cactus')
@@ -322,8 +318,7 @@ function registerTFGFoodItemTags(event) {
 	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear')
 	event.add('beneath:usable_in_juicer', 'tfg:plant/prickly_pear_purple')
 
-	event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
-	event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/usable_in_soup', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
@@ -338,8 +333,7 @@ function registerTFGFoodItemTags(event) {
     event.add("tfc:foods/usable_in_sandwich", "tfc:food/boiled_egg");
     event.add("tfc:foods/usable_in_sandwich", "firmalife:food/pickled_egg");
 	
-	event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
-	event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
+	event.add('tfc:foods/usable_in_salad', 'tfg:food/fly_agaric')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
 	event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')

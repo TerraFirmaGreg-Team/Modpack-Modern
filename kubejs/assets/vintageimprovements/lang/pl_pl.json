@@ -24,6 +24,7 @@
 	"item.vintageimprovements.nickel_rod": "Niklowy pręt",
 	"item.vintageimprovements.nickel_sheet": "Płytka z niklu",
 	"item.vintageimprovements.osmium_sheet": "Płytka z osmu",
+	"item.vintageimprovements.ostrum_sheet": "Płytka ostru",
 	"item.vintageimprovements.palladium_sheet": "Płytka z palladu",
 	"item.vintageimprovements.platinum_sheet": "Płytka z platyny",
 	"item.vintageimprovements.redstone_module": "Moduł czerwonego kamienia",
@@ -60,7 +61,7 @@
 	"vintageimprovements.gui.goggles.pressurizing_mode": "Sprężanie",
 	"vintageimprovements.gui.goggles.redstone_module": "Zainstalowano moduł czerwonego kamienia",
 	"vintageimprovements.gui.goggles.smithing_mode": "Wykuwanie",
-	"vintageimprovements.gui.goggles.vacuumizing_mode": "Próżniowanie",
+	"vintageimprovements.gui.goggles.vacuumizing_mode": "Pakowanie próżniowe",
 	"vintageimprovements.item_description.ingredient": "Składnik:",
 	"vintageimprovements.item_description.recipe_index": "Indeks przepisów:",
 	"vintageimprovements.item_description.result": "Wynik:",
@@ -97,7 +98,7 @@
 	"vintageimprovements.recipe.assembly.vibrating": "Wibracje",
 	"vintageimprovements.recipe.assembly.with": "z",
 	"vintageimprovements.recipe.auto_curving": "Zakrzywianie",
-	"vintageimprovements.recipe.auto_smithing": "Auto przepalanie",
+	"vintageimprovements.recipe.auto_smithing": "Automatyczne przepalanie",
 	"vintageimprovements.recipe.centrifugation": "Odwirowywanie",
 	"vintageimprovements.recipe.coiling": "Zwijanie",
 	"vintageimprovements.recipe.curving": "Zakrzywianie",
@@ -108,6 +109,6 @@
 	"vintageimprovements.recipe.pressurizing": "Sprężanie",
 	"vintageimprovements.recipe.turning": "Zakręcanie",
 	"vintageimprovements.recipe.unpacking": "Rozpakowywanie",
-	"vintageimprovements.recipe.vacuumizing": "Próżniowanie",
+	"vintageimprovements.recipe.vacuumizing": "Pakowanie próżniowe",
 	"vintageimprovements.recipe.vibrating": "Wibrowanie"
 }
