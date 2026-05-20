@@ -1,5 +1,5 @@
 {
-    "name": "Marsjańska łodzie",
+    "name": "Marsjańskie łodzie",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Crimson$()"
+            "text": "$(li)Szkarłatny$()"
         },
         {
             "type": "patchouli:spotlight",
