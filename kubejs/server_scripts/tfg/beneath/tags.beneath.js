@@ -290,4 +290,6 @@ function registerTFGBeneathEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:mushroom_fields_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:swamp_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
+
+    event.add('tfc:ignores_cacti', 'species:spectre')
 }

@@ -54,8 +54,6 @@
 			"tfg:nether/tree/beech_shrub",
 			"tfg:nether/tree/beech_fallen_leaves",
 			"tfg:nether/tree/beech_twig",
-			"tfg:nether/surface/philodendron",
-			"tfg:nether/surface/moss_patch_small",
 			"tfg:nether/terrain/lush_caves_ceiling",
 			"tfg:nether/terrain/lush_caves_clay",
 			"tfg:nether/terrain/lush_caves_vegetation",
@@ -66,7 +64,9 @@
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch"
+			"tfg:nether/surface/stick_patch",
+			"tfg:nether/surface/philodendron",
+			"tfg:nether/surface/moss_patch_small"
 		],
 		"#tfg:nether_global_decoration",
 		[

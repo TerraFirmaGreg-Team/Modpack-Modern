@@ -57,7 +57,6 @@
 			"tfg:nether/tree/mangrove",
 			"tfg:nether/tree/mangrove_fallen_leaves",
 			"tfg:nether/tree/mangrove_twig",
-			"tfg:nether/surface/moss_patch_big",
 			"tfg:nether/surface/humus_patch",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
@@ -73,7 +72,8 @@
 			"beneath:gleamflower_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch"
+			"tfg:nether/surface/stick_patch",
+			"tfg:nether/surface/moss_patch_big"
 		],
 		"#tfg:nether_global_decoration",
 		[

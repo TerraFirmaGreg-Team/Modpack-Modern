@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/surface/dead_bush_patch",
+	"feature": "tfg:nether/surface/murkweed_patch",
 	"placement": [
 		{
-			"type": "minecraft:count_on_every_layer",
-			"count": 2
+			"type": "minecraft:count",
+			"count": 20
 		},
 		{
 			"type": "minecraft:in_square"
@@ -13,10 +13,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"below_top": 6
+					"absolute": 150
 				},
 				"min_inclusive": {
-					"above_bottom": 40
+					"absolute": 50
 				}
 			}
 		},

@@ -1,0 +1,69 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "tfc:if_then",
+				"config": {
+					"if": {
+						"feature": {
+							"type": "minecraft:simple_block",
+							"config": {
+								"to_place": {
+									"type": "minecraft:simple_state_provider",
+									"state": {
+										"Name": "tfg:plant/palash",
+										"Properties": {
+											"half": "lower",
+											"age": "3"
+										}
+									}
+								}
+							}
+						},
+						"placement": []
+					},
+					"then": {
+						"feature": {
+							"type": "minecraft:simple_block",
+							"config": {
+								"to_place": {
+									"type": "minecraft:simple_state_provider",
+									"state": {
+										"Name": "tfg:plant/palash",
+										"Properties": {
+											"half": "upper",
+											"age": "3"
+										}
+									}
+								}
+							}
+						},
+						"placement": []
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:plant/palash"
+						}
+					}
+				}
+			]
+		},
+		"tries": 24,
+		"xz_spread": 6,
+		"y_spread": 2
+	}
+}

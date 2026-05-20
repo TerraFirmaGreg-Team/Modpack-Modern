@@ -61,10 +61,19 @@
 				{
 					"type": "minecraft:block_predicate_filter",
 					"predicate": {
-						"type": "minecraft:matching_block_tag",
-						"offset": [ 0, 1, 0 ],
-						"tag": "minecraft:nether_carver_replaceables"
-
+						"type": "minecraft:any_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_block_tag",
+								"offset": [ 0, 1, 0 ],
+								"tag": "minecraft:nether_carver_replaceables"
+							},
+							{
+								"type": "minecraft:matching_block_tag",
+								"offset": [ 0, 1, 0 ],
+								"tag": "minecraft:leaves"
+							}
+						]
 					}
 				},
 				{

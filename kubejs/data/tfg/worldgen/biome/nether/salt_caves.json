@@ -53,7 +53,6 @@
 		],
 		"#tfg:nether_crops",
 		[
-			"tfg:nether/surface/moss_patch_small",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -68,7 +67,8 @@
 			"tfg:nether/surface/barnacles_patch",
 			"tfg:nether/surface/beach_groundcover_patch",
 			"beneath:gleamflower_patch",
-			"tfg:nether/surface/guano_patch"
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/moss_patch_small"
 		],
 		"#tfg:nether_global_decoration",
 		[

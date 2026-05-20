@@ -4,11 +4,13 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 
 	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
 		.soundType('nether_wart')
-		.tagItem('tfc:plants')
+		.speedFactor(0.9)
+		.tagItem('tfg:plants/beneath')
 
 	event.create('tfg:mushroom_sprouts', 'tfg:decorative_plant')
 		.soundType('nether_wart')
-		.tagItem('tfc:plants')
+		.speedFactor(0.9)
+		.tagItem('tfg:plants/beneath')
 
 	event.create('tfg:charred_log')
 		.fullBlock(true)
@@ -43,4 +45,25 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.tagBoth('tfg:plants/beneath')
 		.tagBlock('minecraft:replaceable')
 		.lightLevel(0.85)
+
+	event.create('betterend:murkweed', 'tfg:decorative_plant')
+		.soundType('crop')
+		.mapColor('color_black')
+		.effect('minecraft:darkness')
+		.speedFactor(0.5)
+		.tagItem('tfg:plants/beneath')
+
+	event.create('betterend:needlegrass', 'tfg:decorative_plant')
+		.soundType('crop')
+		.mapColor('color_black')
+		.effect('minecraft:weakness')
+		.speedFactor(0.9)
+		.tagItem('tfg:plants/beneath')
+
+	event.create('tfg:plant/wither_rose', 'tfg:decorative_plant')
+		.soundType('crop')
+		.mapColor('color_black')
+		.effect('minecraft:wither')
+		.speedFactor(0.5)
+		.tagItem('tfg:plants/beneath')
 }
