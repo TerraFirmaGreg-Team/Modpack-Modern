@@ -3,11 +3,6 @@
 
 const registerBeneathRecipes = (event) => {
 
-	global.BENEATH_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-
 	event.remove({ id: 'beneath:collapse/basalt' })
 	event.remove({ id: 'beneath:collapse/nether_bricks' })
 	event.remove({ id: 'beneath:crafting/nether_bricks' })

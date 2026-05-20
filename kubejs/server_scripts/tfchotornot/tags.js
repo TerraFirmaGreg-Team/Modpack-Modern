@@ -2,12 +2,6 @@
 "use strict";
 
 const registerHotOrNotItemTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
 
     event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
     event.add('tfchotornot:hot_whitelist', 'minecraft:magma_block')
@@ -88,12 +82,4 @@ const registerHotOrNotFluidTags = (event) => {
 
     event.add("tfchotornot:fluid_whitelist", '#firmalife:oils')
     event.add("tfchotornot:fluid_whitelist", '#tfg:oil_fluids')
-}
-
-const registerHotOrNotBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
 }

@@ -9,13 +9,6 @@ function registerDomumOrnamentumItemTags(event) {
 
 /** @param {TagEvent.Block} event */
 function registerDomumOrnamentumBlockTags(event) {
-    //#region Hidden Items
-    global.DOMUM_ORNAMENTUM_DISABLED_ITEMS.forEach((item) => {
-        event.removeAllTagsFrom(item);
-        event.add("c:hidden_from_recipe_viewers", item);
-    });
-    //#endregion
-
     //#region Assign Tags
     const materials = [
         //tags

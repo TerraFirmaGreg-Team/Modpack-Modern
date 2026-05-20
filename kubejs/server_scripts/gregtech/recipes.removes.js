@@ -9,15 +9,12 @@ function removeGTCEURecipes(event) {
 	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
 	event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#forge:chests/wooden')
 
-	global.GTCEU_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-		TFGHelpers.clearMaterialInfo(item);
-	})
-
 	//#region Выход: Крошечная кучка камня
-
+	
+	event.remove({ id: 'gtceu:compressor/stone_from_dust' })
+	event.remove({ id: 'gtceu:rock_breaker/stone' })
 	removeMaceratorRecipe(event, 'macerate_stone_button')
+	event.remove({ id: 'gtceu:shaped/stone_button' })
 
 	//#endregion
 
@@ -27,8 +24,6 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_stone_slab')
 	removeMaceratorRecipe(event, 'macerate_stone_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_stone_brick_slab')
-	removeMaceratorRecipe(event, 'macerate_sandstone_stairs')
-	removeMaceratorRecipe(event, 'macerate_sandstone_slab')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_stairs')
 	removeMaceratorRecipe(event, 'macerate_red_sandstone_slab')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_slab')
@@ -37,18 +32,23 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_moss_block' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/mossy_cobblestone_from_vine' })
+	event.remove({ id: 'gtceu:shaped/smooth_stone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_hammer' })
+	event.remove({ id: 'gtceu:forge_hammer/stone_to_cobblestone' })
+	event.remove({ id: 'gtceu:rock_breaker/cobblestone' })
+	event.remove({ id: 'gtceu:shaped/cobblestone_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_slab_saw' })
+	event.remove({ id: 'gtceu:forge_hammer/cracked_stone_bricks' })
+	event.remove({ id: 'gtceu:assembler/mossy_stone_bricks' })
+	event.remove({ id: 'gtceu:assembler/mossy_cobblestone' })
+	event.remove({ id: 'gtceu:shaped/cobbled_deepslate_hammer' })
+	event.remove({ id: 'gtceu:forge_hammer/deepslate_to_cobbled_deepslate' })
 
 	//#endregion
 
 	//#region Выход: Кучка камня
 
-	removeMaceratorRecipe(event, 'macerate_stone_sword')
-	removeMaceratorRecipe(event, 'macerate_stone_shovel')
-	removeMaceratorRecipe(event, 'macerate_stone_pressure_plate')
-	removeMaceratorRecipe(event, 'macerate_stone_pickaxe')
-	removeMaceratorRecipe(event, 'macerate_stone_hoe')
 	removeMaceratorRecipe(event, 'macerate_stone_bricks')
-	removeMaceratorRecipe(event, 'macerate_stone_axe')
 	removeMaceratorRecipe(event, 'macerate_mossy_cobblestone')
 	removeMaceratorRecipe(event, 'macerate_cobblestone_wall')
 	removeMaceratorRecipe(event, 'macerate_cobblestone')
@@ -113,17 +113,6 @@ function removeGTCEURecipes(event) {
 	removeCutterRecipe(event, 'cut_deepslate_tile_into_slab_distilled_water')
 
 	event.remove({ id: 'gtceu:rock_breaker/deepslate' })
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate')
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_deepslate');
-	TFGHelpers.clearMaterialInfo('minecraft:cobbled_deepslate');
-	TFGHelpers.clearMaterialInfo('minecraft:cobbled_deepslate_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:chiseled_deepslate');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_deepslate_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate_bricks');
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate_brick_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate_tiles');
-	TFGHelpers.clearMaterialInfo('minecraft:deepslate_tile_wall');
 
 	// #endregion
 
@@ -168,19 +157,12 @@ function removeGTCEURecipes(event) {
 	removeCutterRecipe(event, 'cut_polished_blackstone_brick_into_slab_distilled_water')
 
 	event.remove({ id: 'gtceu:rock_breaker/blackstone' })
-	TFGHelpers.clearMaterialInfo('minecraft:blackstone');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_bricks');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_brick_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:chiseled_polished_blackstone');
-	TFGHelpers.clearMaterialInfo('minecraft:blackstone_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:polished_blackstone_wall');
-	TFGHelpers.clearMaterialInfo('minecraft:blackstone_brick_wall');
 
 	// #endregion
 
 	// #region basalt
-
+	
+	event.remove({ id: 'gtceu:rock_breaker/basalt' })
 	event.remove({ id: 'gtceu:shaped/basalt_polish_hammer' })
 	event.remove({ id: 'gtceu:assembler/assemble_basalt_into_polished' })
 
@@ -234,40 +216,12 @@ function removeGTCEURecipes(event) {
 
 	// #region Plant Ball
 
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_wheat' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_warped_stem' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_crimson_stem' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_tube_coral' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_sugar_cane' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_potato' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_nether_wart' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_horn_coral' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_fire_coral' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_carrot' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_cactus' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_bubble_coral' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_brain_coral' })
-	event.remove({ id: 'gtceu:compressor/plant_ball_from_beetroot' })
 	event.remove({ id: 'gtceu:compressor/plant_ball_from_moss' })
-
-	// #endregion
-
-	// #region Biomass
-
-	event.remove({ id: 'gtceu:brewery/biomass_from_sugar_cane' })
-	event.remove({ id: 'gtceu:brewery/biomass_from_potato' })
-	event.remove({ id: 'gtceu:brewery/biomass_from_carrot' })
-	event.remove({ id: 'gtceu:brewery/biomass_from_cactus' })
-	event.remove({ id: 'gtceu:brewery/biomass_from_beetroot' })
-
-	// #endregion
-
-	// #region Fish Oil
-
-	event.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
-	event.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
-	event.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
-	event.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
 
 	// #endregion
 
@@ -280,136 +234,13 @@ function removeGTCEURecipes(event) {
 	// #region Seed Oil
 
 	event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
-	event.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
-	event.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
-	event.remove({ id: 'gtceu:extractor/seed_oil_from_beetroot' })
 
 	// #endregion
-
-	//#region Выход: Крошечная кучка дерева
-
-	removeMaceratorRecipe(event, 'macerate_warped_button')
-	removeMaceratorRecipe(event, 'macerate_spruce_button')
-	removeMaceratorRecipe(event, 'macerate_oak_button')
-	removeMaceratorRecipe(event, 'macerate_mangrove_button')
-	removeMaceratorRecipe(event, 'macerate_jungle_button')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_button')
-	removeMaceratorRecipe(event, 'macerate_crimson_button')
-	removeMaceratorRecipe(event, 'macerate_cherry_button')
-	removeMaceratorRecipe(event, 'macerate_birch_button')
-	removeMaceratorRecipe(event, 'macerate_acacia_button')
-
-	//#endregion
-
-	//#region Выход: Маленькая кучка дерева
-
-	removeMaceratorRecipe(event, 'macerate_wooden_sword')
-	removeMaceratorRecipe(event, 'macerate_wooden_shovel')
-	removeMaceratorRecipe(event, 'macerate_wooden_pickaxe')
-	removeMaceratorRecipe(event, 'macerate_wooden_hoe')
-	removeMaceratorRecipe(event, 'macerate_wooden_axe')
-	removeMaceratorRecipe(event, 'macerate_warped_stairs')
-	removeMaceratorRecipe(event, 'macerate_warped_slab')
-	removeMaceratorRecipe(event, 'macerate_spruce_stairs')
-	removeMaceratorRecipe(event, 'macerate_spruce_slab')
-	removeMaceratorRecipe(event, 'macerate_oak_stairs')
-	removeMaceratorRecipe(event, 'macerate_oak_slab')
-	removeMaceratorRecipe(event, 'macerate_mangrove_stairs')
-	removeMaceratorRecipe(event, 'macerate_mangrove_slab')
-	removeMaceratorRecipe(event, 'macerate_jungle_stairs')
-	removeMaceratorRecipe(event, 'macerate_jungle_slab')
-	removeMaceratorRecipe(event, 'macerate_iron_sword')
-	removeMaceratorRecipe(event, 'macerate_iron_shovel')
-	removeMaceratorRecipe(event, 'macerate_iron_pickaxe')
-	removeMaceratorRecipe(event, 'macerate_iron_hoe')
-	removeMaceratorRecipe(event, 'macerate_iron_axe')
-	removeMaceratorRecipe(event, 'macerate_golden_sword')
-	removeMaceratorRecipe(event, 'macerate_golden_shovel')
-	removeMaceratorRecipe(event, 'macerate_golden_pickaxe')
-	removeMaceratorRecipe(event, 'macerate_golden_hoe')
-	removeMaceratorRecipe(event, 'macerate_golden_axe')
-	removeMaceratorRecipe(event, 'macerate_diamond_sword')
-	removeMaceratorRecipe(event, 'macerate_diamond_shovel')
-	removeMaceratorRecipe(event, 'macerate_diamond_pickaxe')
-	removeMaceratorRecipe(event, 'macerate_diamond_hoe')
-	removeMaceratorRecipe(event, 'macerate_diamond_axe')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_stairs')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_slab')
-	removeMaceratorRecipe(event, 'macerate_crimson_stairs')
-	removeMaceratorRecipe(event, 'macerate_crimson_slab')
-	removeMaceratorRecipe(event, 'macerate_cherry_stairs')
-	removeMaceratorRecipe(event, 'macerate_cherry_slab')
-	removeMaceratorRecipe(event, 'macerate_birch_stairs')
-	removeMaceratorRecipe(event, 'macerate_birch_slab')
-	removeMaceratorRecipe(event, 'macerate_acacia_stairs')
-	removeMaceratorRecipe(event, 'macerate_acacia_slab')
-
-	//#endregion
-
-	//#region Выход: Деревянная пыль
-
-	removeMaceratorRecipe(event, 'macerate_trapped_chest')
-	removeMaceratorRecipe(event, 'macerate_spruce_planks')
-	removeMaceratorRecipe(event, 'macerate_spruce_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_spruce_fence')
-	removeMaceratorRecipe(event, 'macerate_spruce_door')
-	removeMaceratorRecipe(event, 'macerate_spruce_boat')
-	removeMaceratorRecipe(event, 'macerate_oak_planks')
-	removeMaceratorRecipe(event, 'macerate_oak_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_oak_fence')
-	removeMaceratorRecipe(event, 'macerate_oak_door')
-	removeMaceratorRecipe(event, 'macerate_oak_boat')
-	removeMaceratorRecipe(event, 'macerate_mangrove_planks')
-	removeMaceratorRecipe(event, 'macerate_mangrove_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_mangrove_fence')
-	removeMaceratorRecipe(event, 'macerate_mangrove_door')
-	removeMaceratorRecipe(event, 'macerate_mangrove_boat')
-	removeMaceratorRecipe(event, 'macerate_jungle_planks')
-	removeMaceratorRecipe(event, 'macerate_jungle_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_jungle_fence')
-	removeMaceratorRecipe(event, 'macerate_jungle_door')
-	removeMaceratorRecipe(event, 'macerate_jungle_boat')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_planks')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_fence')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_door')
-	removeMaceratorRecipe(event, 'macerate_dark_oak_boat')
-	removeMaceratorRecipe(event, 'macerate_crafting_table')
-	removeMaceratorRecipe(event, 'macerate_chest')
-	removeMaceratorRecipe(event, 'macerate_chest_minecart')
-	removeMaceratorRecipe(event, 'macerate_cherry_planks')
-	removeMaceratorRecipe(event, 'macerate_cherry_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_cherry_fence')
-	removeMaceratorRecipe(event, 'macerate_cherry_door')
-	removeMaceratorRecipe(event, 'macerate_cherry_boat')
-	removeMaceratorRecipe(event, 'macerate_bookshelf')
-	removeMaceratorRecipe(event, 'macerate_birch_planks')
-	removeMaceratorRecipe(event, 'macerate_birch_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_birch_fence')
-	removeMaceratorRecipe(event, 'macerate_birch_door')
-	removeMaceratorRecipe(event, 'macerate_birch_boat')
-	removeMaceratorRecipe(event, 'macerate_acacia_planks')
-	removeMaceratorRecipe(event, 'macerate_acacia_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_acacia_fence')
-	removeMaceratorRecipe(event, 'macerate_acacia_door')
-	removeMaceratorRecipe(event, 'macerate_acacia_boat')
-	removeMaceratorRecipe(event, 'macerate_bamboo_raft')
-	removeMaceratorRecipe(event, 'macerate_crimson_door')
-	removeMaceratorRecipe(event, 'macerate_crimson_fence')
-	removeMaceratorRecipe(event, 'macerate_crimson_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_crimson_planks')
-	removeMaceratorRecipe(event, 'macerate_warped_door')
-	removeMaceratorRecipe(event, 'macerate_warped_fence')
-	removeMaceratorRecipe(event, 'macerate_warped_fence_gate')
-	removeMaceratorRecipe(event, 'macerate_warped_planks')
-
-	//#endregion
 
 	//#region Выход: Бумажная пыль
 
 	event.remove({ id: 'gtceu:shaped/paper_dust' })
 	event.remove({ id: 'gtceu:shaped_fluid_container/paper' })
-	event.remove({ id: 'gtceu:macerator/macerate_enchanting_table' })
 
 	//#endregion
 
@@ -430,63 +261,18 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:mixer/green_sapphire_slurry_from_washed_green_sapphire' })
 	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/green_sapphire_slurry_from_washed_green_sapphire' })
 
-	//#region Выход: Маленькая кучка мяса
+	//#region Выход: Слиток кованного железа
 
-	removeMaceratorRecipe(event, 'macerate_steak')
-	removeMaceratorRecipe(event, 'macerate_rabbit')
-	removeMaceratorRecipe(event, 'macerate_pork_chop')
-	removeMaceratorRecipe(event, 'macerate_mutton')
-	removeMaceratorRecipe(event, 'macerate_chicken')
-
-	// #endregion
-
-	//#region Выход: Пшеничная пыль
-
-	event.remove({ id: 'gtceu:shapeless/wheat_to_dust' })
-	removeMaceratorRecipe(event, 'macerate_wheat')
-	removeMaceratorRecipe(event, 'macerate_hay_block')
-
-	//#endregion
-
-		//#region Выход: Слиток кованного железа
-
-	event.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
-	event.remove({ id: 'gtceu:arc_furnace/arc_damaged_anvil' })
-	event.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
-	event.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
 	event.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
-	event.remove({ id: 'gtceu:arc_furnace/arc_compass' })
-
-	//#endregion
-
-	//#region Выход: Кованные самородки
-
-	event.remove({ id: 'gtceu:arc_furnace/arc_iron_bars' })
 
 	//#endregion
 
 	//#region Выход: Железная пыль
 
 	removeMaceratorRecipe(event, 'macerate_iron_trapdoor')
-	removeMaceratorRecipe(event, 'macerate_damaged_anvil')
-	removeMaceratorRecipe(event, 'macerate_chipped_anvil')
-	removeMaceratorRecipe(event, 'macerate_anvil')
 	removeMaceratorRecipe(event, 'macerate_furnace_minecart')
 	removeMaceratorRecipe(event, 'macerate_bucket')
-	removeMaceratorRecipe(event, 'macerate_compass')
-
-	//#endregion
-
-	//#region Выход: Крошечная железная пыль
-
-	removeMaceratorRecipe(event, 'macerate_iron_bars')
-
-	//#endregion
-
-	//#region Выход: Крошечная пыль золы
-
-	event.remove({ id: 'gtceu:arc_furnace/arc_bookshelf' })
 
 	//#endregion
 
@@ -496,17 +282,16 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/nether_bricks_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_slab_saw' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_wall_saw' })
+	event.remove({ id: 'gtceu:compressor/nether_bricks' })
+	event.remove({ id: 'gtceu:shaped/nether_brick_slab_saw' })
+	event.remove({ id: 'gtceu:assembler/nether_brick_fence' })
+	event.remove({ id: 'gtceu:alloy_smelter/red_nether_bricks' })
+	event.remove({ id: 'gtceu:extractor/nether_bricks_extraction' })
+	event.remove({ id: 'gtceu:alloy_smelter/form_nether_brick' })
 	removeMaceratorRecipe(event, 'macerate_nether_brick_stairs')
 	removeMaceratorRecipe(event, 'macerate_nether_brick_slab')
 	removeMaceratorRecipe(event, 'macerate_nether_bricks')
 	removeMaceratorRecipe(event, 'macerate_chiseled_nether_bricks')
-
-	//#endregion
-
-	//#region Выход: Пыль базальта
-
-	TFGHelpers.clearMaterialInfo('minecraft:basalt')
-	TFGHelpers.clearMaterialInfo('minecraft:polished_basalt');
 
 	//#endregion
 
@@ -578,36 +363,6 @@ function removeGTCEURecipes(event) {
 	// Iron nugget saw recipe
 	event.remove({ id: 'gtceu:shapeless/nugget_disassembling_iron'})
 
-	// Удаление рецептов связанных с Primitive Blast Furnace
-	event.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
-	removeMaceratorRecipe(event, 'macerate_primitive_blast_furnace')
-
-	// Удаление рецепта беск. воды кавера
-	event.remove('gtceu:assembler/cover_infinite_water')
-
-	// Удаление рецептов помпы
-	event.remove('gtceu:shaped/pump_deck')
-	event.remove('gtceu:shaped/pump_hatch')
-	event.remove('gtceu:shaped/primitive_pump')
-
-	// Удаление рецептов связанных с Barrel
-	event.remove({ id: 'gtceu:shaped/wooden_barrel' })
-	event.remove({ id: 'gtceu:assembler/wood_barrel' })
-	event.remove({ id: 'gtceu:arc_furnace/arc_wood_drum' })
-	removeMaceratorRecipe(event, 'macerate_wood_drum')
-
-	// Удаление рецептов связанных с FireBricks
-	event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
-	removeMaceratorRecipe(event, 'macerate_firebricks')
-	event.remove({ id: 'gtceu:extractor/extract_primitive_bricks' })
-
-	// Удаление рецептов связанных с FireBrick
-	event.remove({ id: 'gtceu:smelting/fireclay_brick' })
-	removeMaceratorRecipe(event, 'macerate_firebrick')
-
-	// Clay from mud
-	event.remove({ id: 'gtceu:compressor/mud_to_clay' })
-
 	// Rubber extraction
 	event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 	event.remove({ id: 'gtceu:extractor/raw_rubber_from_resin' })
@@ -641,10 +396,14 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/red_sandstone_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_wall_saw' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polish_hammer' })
-	
+	event.remove({ id: 'gtceu:centrifuge/red_sand_separation' })
+	event.remove({ id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:forge_hammer/red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand' })
+	event.remove({ id: 'gtceu:compressor/red_sandstone' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_slab_saw' })	
 	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_stair_saw' })
 	event.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
-
 	event.remove({ id: 'gtceu:shaped/cut_red_sandstone_slab_saw' })
 
 	// Gears
@@ -671,7 +430,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/leather_horse_armor' })
 	event.remove({ id: 'gtceu:shaped/bowl' })
 	event.remove({ id: 'gtceu:shaped/flower_pot' })
-	event.remove({ id: 'gtceu:shaped/jack_o_lantern' })
 	event.remove({ id: 'gtceu:shaped/armor_stand' })
 	event.remove({ id: 'gtceu:shaped/white_bed' })
 	event.remove({ id: 'gtceu:shaped/light_gray_bed' })
@@ -689,12 +447,9 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/purple_bed' })
 	event.remove({ id: 'gtceu:shaped/magenta_bed' })
 	event.remove({ id: 'gtceu:shaped/pink_bed' })
-	event.remove({ id: 'gtceu:shaped/flour_to_dough' })
-	event.remove({ id: 'gtceu:shaped/grindstone' })
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_iron' })
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:shaped/treated_door' })
-	event.remove({ id: 'gtceu:shaped/barrel' })
 	event.remove({ id: 'gtceu:shaped/book' })
 	event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
 	event.remove({ id: 'gtceu:shaped/smithing_table' })
@@ -722,7 +477,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/bell' })
 	event.remove({ id: 'gtceu:assembler/armor_stand' })
 	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })
-	event.remove({ id: 'gtceu:assembler/barrel' })
 	event.remove({ id: 'gtceu:assembler/book_from_leather' })
 	event.remove({ id: 'gtceu:assembler/name_tag' })
 	event.remove({ id: 'gtceu:assembler/smithing_table' })
@@ -738,8 +492,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/cartography_table' })
 
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__blaze' })
-
-	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 	
 	event.remove({ id: 'gtceu:assembler/assemble_brick_into_stair' })
 	event.remove({ id: 'gtceu:assembler/assemble_brick_into_wall' })
@@ -760,9 +512,6 @@ function removeGTCEURecipes(event) {
 	removeMaceratorRecipe(event, 'macerate_calcite')
 	removeMaceratorRecipe(event, 'macerate_wool')
 	removeMaceratorRecipe(event, 'macerate_hay_block')
-
-	removeMaceratorRecipe(event, 'macerate_enchanting_table')
-	event.remove({ id: 'gtceu:arc_furnace/arc_enchanting_table' })
 
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
@@ -905,10 +654,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__basalt' })
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_tuff' })
 
-	removeMaceratorRecipe(event, 'macerate_end_stone');
-	removeMaceratorRecipe(event, 'macerate_end_stone_bricks');
-	removeMaceratorRecipe(event, 'macerate_end_stone_brick_wall');
-
 
 	// Remove Default Pressure Plate Recipes
 	const MC_PRESSURE_PLATES = [
@@ -922,25 +667,6 @@ function removeGTCEURecipes(event) {
 	})
 	
 	event.remove({ id: /^gtceu:.*damascus_steel.*/ })
-
-	//removes metal armor
-	const armor = [
-		'gtceu:bronze_helmet',
-		'gtceu:bronze_chestplate',
-		'gtceu:bronze_leggings',
-		'gtceu:bronze_boots',
-		'gtceu:steel_helmet',
-		'gtceu:steel_chestplate',
-		'gtceu:steel_leggings',
-		'gtceu:steel_boots',
-		'gtceu:titanium_helmet',
-		'gtceu:titanium_chestplate',
-		'gtceu:titanium_leggings',
-		'gtceu:titanium_boots'
-	];
-	armor.forEach(armor => {
-		event.remove({ output: armor})
-	});
 
 	event.remove({ id: 'gtceu:shapeless/centrifuged_ore_to_dust_plutonium' })
 	event.remove({ id: 'gtceu:centrifuge/centrifuge_plutonium_dirty_dust_to_dust' })

@@ -3,15 +3,7 @@
 
 const registerFirmaLifeItemTags = (event) => {
     
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-
+   
     // Make our own "dried fruit" tag so we can display something in EMI - used for yeast starter
     global.FOOD_FRUIT
         .map(fruit => fruit.id)
@@ -34,22 +26,6 @@ const registerFirmaLifeItemTags = (event) => {
 }
 
 const registerFirmaLifeBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-
-    // Удаление тегов у отключенных предметов
-    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 	
 	//greenhouse wall fixes
 	event.remove('firmalife:always_valid_greenhouse_wall', '#minecraft:doors')
