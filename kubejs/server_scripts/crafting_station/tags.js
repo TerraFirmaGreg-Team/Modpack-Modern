@@ -2,7 +2,7 @@
 "use strict";
 
 const registerCraftingStationBlockEntityTags = (event) => {
-    global.CF_DISABLED_STORAGES.forEach(storage => {
-        event.add('craftingstation:blacklisted', storage)
+    global.CF_WHITELISTED_STORAGES.forEach(storage => {
+        event.add('craftingstation:whitelisted', storage)
     })
 }
