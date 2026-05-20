@@ -166,7 +166,7 @@
 			"entity": "wan_ancient_beasts:glider",
 			"scale": 0.4,
 			"offset": 0.2,
-			"name": "Lotnia",
+			"name": "Szybownik",
 			"text": "Despite their name, $(thing)Gliders$() cannot be tamed or ridden. They are passive and live in areas above -105°C. They enjoy music and can be eaten."
 		},
 		{
@@ -174,7 +174,7 @@
 			"entity": "wan_ancient_beasts:crusher",
 			"scale": 0.5,
 			"offset": 0.5,
-			"name": "Kruszarka",
+			"name": "Łamacz",
 			"text": "$(thing)Crushers$() are semihostile animals found in herds in areas above -100°C. They can be killed for their meat and hard spikes."
 		},
 		{
