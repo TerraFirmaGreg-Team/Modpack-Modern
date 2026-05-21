@@ -1,6 +1,9 @@
 ﻿// priority: 0
 "use strict";
 
+const $TFCAnvilRecipeLogic = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.trait.TFCAnvilRecipeLogic")
+const $ForgeRule = Java.loadClass("net.dries007.tfc.common.capabilities.forge.ForgeRule")
+
 function registerTFCMetalsRecipes(event) {
 
 	//#region Alloying
@@ -351,4 +354,51 @@ function registerTFCMetalsRecipes(event) {
 		})
 	})
 	//#endregion
+
+	// #region - TFC Anvil Machine Example (Tungstensteel)
+
+	// Remove existing recipes
+	event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel' })
+	event.remove({ id: 'gtceu:electric_blast_furnace/blast_tungsten_steel_gas' })
+	event.remove({ id: 'gtceu:vacuum_freezer/cool_hot_high_carbon_tungstensteel_ingot' })
+
+	// Tungstensteel Dust -> Hot High Carbon Tungstensteel ingot
+	event.replaceInput({ id: 'gtceu:electric_blast_furnace/blast_high_carbon_tungstensteel' }, 'tfg:high_carbon_tungstensteel_dust', 'gtceu:tungsten_steel_dust')
+	event.replaceInput({ id: 'gtceu:electric_blast_furnace/blast_high_carbon_tungstensteel_gas' }, 'tfg:high_carbon_tungstensteel_dust', 'gtceu:tungsten_steel_dust')
+
+	// Hot High Carbon Tungstensteel Ingot -> Hot Tungstensteel Ingot
+	event.recipes.tfc.anvil('gtceu:hot_tungsten_steel_ingot', 'tfg:hot_high_carbon_tungstensteel_ingot', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(6) // Red/Blue Steel
+		.id('tfc:anvil/hot_tungsten_steel_ingot')
+
+	// Register anvil machine recipe - TODO: Extract to a helper function
+	$TFCAnvilRecipeLogic.RegisterRecipeData(
+		'tfc:anvil/hot_tungsten_steel_ingot',
+		$SizedIngredient.create('tfg:hot_high_carbon_tungstensteel_ingot', 1),
+		0,
+		[$ForgeRule.HIT_LAST, $ForgeRule.HIT_SECOND_LAST, $ForgeRule.HIT_THIRD_LAST],
+		false,
+		TFC.isp.of('gtceu:hot_tungsten_steel_ingot').asCanonClass()
+	)
+
+	const anvilActions = [
+		'anvil_light_hit',
+		'anvil_medium_hit',
+		'anvil_hard_hit',
+		'anvil_draw',
+		'anvil_punch',
+		'anvil_bend',
+		'anvil_upset',
+		'anvil_shrink'
+	]
+
+	anvilActions.forEach((action) => {
+		event.recipes.gtceu[action]('hot_tungsten_steel_ingot')
+		.itemInputs('tfg:hot_high_carbon_tungstensteel_ingot')
+		.itemOutputs('gtceu:hot_tungsten_steel_ingot')
+		.duration(20 * 10)
+		.EUt(7)
+	})
+
+	// #endregion
 }
