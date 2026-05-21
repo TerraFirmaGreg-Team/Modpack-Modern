@@ -555,14 +555,14 @@ function registerTFGRockRecipes(event) {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
 				.itemInputs(`#tfg:stone_composition/${compositionId}`)
 				.itemOutputs('5x gtceu:small_brick_dust')
-				.duration(150)
+				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
 		} else {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}`)
 				.itemInputs(`#tfg:stone_composition/${compositionId}`)
 				.itemOutputs(ChemicalHelper.getDust(material, GTValues.M))
-				.duration(150)
+				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
 		}
@@ -574,7 +574,7 @@ function registerTFGRockRecipes(event) {
 			event.recipes.gtceu.macerator(`tfg:macerate_${compositionId}_half`)
 				.itemInputs(`#tfg:stone_composition/${compositionId}_half`)
 				.itemOutputs(ChemicalHelper.getDust(material, GTValues.M / 2))
-				.duration(150)
+				.duration(50)
 				.EUt(2)
 				.category(GTRecipeCategories.MACERATOR_RECYCLING);
 		}

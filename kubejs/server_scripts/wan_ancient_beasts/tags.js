@@ -1,12 +1,6 @@
 "use strict";
 
 const registerWABBlockTags = (event) => {
-	global.WAB_DISABLED_BLOCKS.forEach(block => {
-		event.removeAllTagsFrom(block)
-	})
-	global.WAB_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
 
 	// don't put sand layers on these, otherwise they'll fall through
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_sand')
@@ -16,10 +10,6 @@ const registerWABBlockTags = (event) => {
 }
 
 const registerWABItemTags = (event) => {
-	global.WAB_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
 
 	event.removeAll('wan_ancient_beasts:paleontologist_common')
 	event.removeAll('wan_ancient_beasts:paleontologist_rare')

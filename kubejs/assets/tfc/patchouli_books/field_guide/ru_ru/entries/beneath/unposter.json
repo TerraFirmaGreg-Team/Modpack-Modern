@@ -13,8 +13,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Extra Notes",
-			"text": "The $(thing)Unposter$() searches for and duplicates mushrooms in a 11x11 square area centered on itself.$(br2)Note that mushrooms, once picked up, cannot be placed back down. You will need to find naturally spawned mushrooms for the unposter to work."
+			"title": "Дополнительные заметки",
+			"text": "$(thing)Грибница$() Находит и дублирует грибы в радиусе 11х11 блоков от себя.\n$(br2) Заметь, что грибы которые ты подобрал уже нельзя поставить обратно. Поэтому тебе нужно найти натурально сгенерированные грибы для работы грибницы"
 		},
 		{
 			"type": "patchouli:image",

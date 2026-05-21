@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Concrete roads are the fastest variety of road that can be constructed, offering a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+      "text": "Concrete roads offer a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
     },
     {
       "type": "patchouli:image",
@@ -47,7 +47,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Control Joints",
+      "title": "Szczelina kontrolna",
       "images": [
         "rnr:textures/gui/book/control_joints.png"
       ],
