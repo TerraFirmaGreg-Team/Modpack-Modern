@@ -423,9 +423,9 @@ global.generateAlcoholRecipes = function(event, ingredient, baseId, agedId, vint
 
 	if (genBaseBarrelRecipe) {
 		event.recipes.tfc.barrel_sealed(24000 * 3) // 3 days.
-			.inputFluid(Fluid.of('#tfg:clean_water', 100))
+			.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 500))
     		.inputItem(ingredient)
-			.outputFluid(Fluid.of(baseId, 100))
+			.outputFluid(Fluid.of(baseId, 500))
 			.id(`tfg:barrel_alcohol/${unfuckedBaseId}`)
 	}
 
