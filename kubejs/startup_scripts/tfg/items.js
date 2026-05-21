@@ -13,7 +13,6 @@ const registerTFGItems = (event) => {
 	registerTFGWoodItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
-	registerTFGMarsItems(event);
 	registerTFGDimensionMarkerItems(event);
 	registerTFGBiotechItems(event);
 	registerTFGWeaponItems(event);

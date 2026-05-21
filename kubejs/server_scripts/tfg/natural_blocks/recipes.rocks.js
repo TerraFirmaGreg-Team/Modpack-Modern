@@ -71,7 +71,7 @@ function registerTFGRockRecipes(event) {
 		if (!rock.isTFC) {
 			if (blockEntry.stair != null) {
 				if (blockEntry.block != null) {
-					let id = linuxUnfucker(`${blockEntry.block}_to_${blockEntry.stair}`);
+					let id = global.linuxUnfucker(`${blockEntry.block}_to_${blockEntry.stair}`);
 
 					event.recipes.tfc.chisel(blockEntry.stair, blockEntry.block, 'stair')
 						.id(`tfg:chisel/${id}`);
@@ -82,7 +82,7 @@ function registerTFGRockRecipes(event) {
 			}
 			if (blockEntry.slab != null) {
 				if (blockEntry.block != null) {
-					let id = linuxUnfucker(`${blockEntry.block}_to_${blockEntry.slab}`);
+					let id = global.linuxUnfucker(`${blockEntry.block}_to_${blockEntry.slab}`);
 
 					event.recipes.tfc.chisel(blockEntry.slab, blockEntry.block, 'slab')
 						.extraDrop(blockEntry.slab)
@@ -97,7 +97,7 @@ function registerTFGRockRecipes(event) {
 			if (blockEntry.block != null) {
 				if (!rock.isTFC) {
 					event.stonecutting(blockEntry.wall, blockEntry.block)
-						.id(`tfg:stonecutting/${linuxUnfucker(blockEntry.block)}_to_${linuxUnfucker(blockEntry.wall)}`)
+						.id(`tfg:stonecutting/${global.linuxUnfucker(blockEntry.block)}_to_${global.linuxUnfucker(blockEntry.wall)}`)
 				}
 			}
 			if (blockEntry.slab != null) {
@@ -419,13 +419,13 @@ function registerTFGRockRecipes(event) {
 			tag_array = tag_array.filter((item, index) => tag_array.indexOf(item) === index);
 			tag_array.forEach(item => {
 				event.stonecutting(item, Ingredient.of(`#${rock.stonecutterTag}`).subtract(item))
-					.id(`tfg:stonecutter/${linuxUnfucker(item)}`)
+					.id(`tfg:stonecutter/${global.linuxUnfucker(item)}`)
 			})
 			tag_array_half.forEach(item => {
 				event.stonecutting(`2x ${item}`, Ingredient.of(`#${rock.stonecutterTag}`).subtract(item))
-					.id(`tfg:stonecutter/${linuxUnfucker(item)}_half`)
+					.id(`tfg:stonecutter/${global.linuxUnfucker(item)}_half`)
 				event.stonecutting(item, Ingredient.of(`#${rock.stonecutterTag}_half`).subtract(item))
-					.id(`tfg:stonecutter/${linuxUnfucker(item)}_slab_to_slab`)
+					.id(`tfg:stonecutter/${global.linuxUnfucker(item)}_slab_to_slab`)
 			})
 		}
 
@@ -515,7 +515,7 @@ function registerTFGRockRecipes(event) {
 
 	// Misc hammering recipes
 	global.HAMMERING.forEach(x => {
-		const id = linuxUnfucker(`${x.raw}_to_${x.hammered}`);
+		const id = global.linuxUnfucker(`${x.raw}_to_${x.hammered}`);
 
 		event.recipes.gtceu.forge_hammer(`tfg:${id}`)
 			.itemInputs(x.raw)
@@ -611,14 +611,14 @@ function registerTFGRockRecipes(event) {
 	];
 
 	MAGMA_BLOCKS.forEach(block => {
-		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${linuxUnfucker(block.magma)}`)
+		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${global.linuxUnfucker(block.magma)}`)
 			.itemInputs(`1x ${block.rock}`)
 			.inputFluids(Fluid.of('minecraft:lava', 250))
 			.itemOutputs(`1x ${block.magma}`)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.ULV])
 			
-		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${linuxUnfucker(block.magma)}`)
+		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${global.linuxUnfucker(block.magma)}`)
 			.itemInputs(`1x ${block.magma}`)
 			.outputFluids(Fluid.of('minecraft:lava', 250))
 			.itemOutputs(`1x ${block.rock}`)

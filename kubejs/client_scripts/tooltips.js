@@ -492,15 +492,6 @@ const registerTooltips = (event) => {
 
 	//#endregion
 
-	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
-		if (!event.isShift()) {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
-		} else {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"));
-			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
-		};
-	});
-
 	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
 	});
@@ -545,6 +536,6 @@ const registerTooltips = (event) => {
 				text.remove(keyToRemove);
 				text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 			}
-		} catch (e) {}
+		} catch (e) {/** */}
 	})
 }

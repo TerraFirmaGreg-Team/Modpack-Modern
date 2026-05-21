@@ -87,7 +87,62 @@ function registerGTCEUItemTags(event) {
     // Remove slurry bucket
 
     event.add('c:hidden_from_recipe_viewers', 'gtceu:ruby_slurry_bucket', 'gtceu:green_sapphire_slurry_bucket', 'gtceu:sapphire_slurry_bucket')
-}
+
+    
+    /**
+     * @type {{Item[]}} List of Super Tanks.
+     */
+    const superTanks = [
+        'gtceu:ulv_super_tank',
+        'gtceu:lv_super_tank',
+        'gtceu:mv_super_tank',
+        'gtceu:hv_super_tank',
+        'gtceu:ev_super_tank',
+        'gtceu:iv_quantum_tank',
+        'gtceu:luv_quantum_tank',
+        'gtceu:zpm_quantum_tank',
+        'gtceu:uv_quantum_tank',
+        'gtceu:uhv_quantum_tank'
+    ];
+    superTanks.forEach(tank => {
+        event.add('gtceu:super_tanks', tank)
+    });
+    
+    /**
+     * @type {{Item[]}} List of Fluid Cells.
+     */
+    const fluidCells = [
+        'gtceu:glass_vial',
+        'gtceu:fluid_cell',
+        'gtceu:universal_fluid_cell',
+        'gtceu:steel_fluid_cell',
+        'gtceu:aluminium_fluid_cell',
+        'gtceu:stainless_steel_fluid_cell',
+        'gtceu:titanium_fluid_cell',
+        'gtceu:tungsten_steel_fluid_cell'
+    ];
+    fluidCells.forEach(cell => {
+        event.add('gtceu:fluid_cells', cell);
+    });
+
+    /**
+     * @type {{Item[]}}
+     */
+    const drums = [
+        'gtceu:bronze_drum',
+        'gtceu:bismuth_bronze_drum',
+        'gtceu:black_bronze_drum',
+        'gtceu:steel_drum',
+        'gtceu:aluminium_drum',
+        'gtceu:stainless_steel_drum',
+        'gtceu:gold_drum',
+        'gtceu:titanium_drum',
+        'gtceu:tungstensteel_drum'
+    ];
+    drums.forEach(drum => {
+        event.add('gtceu:drums', drum);
+    });
+};
 
 /** @param {TagEvent.Block} event  */
 function registerGTCEUBlockTags(event) {
