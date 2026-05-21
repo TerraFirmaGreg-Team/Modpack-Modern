@@ -3,6 +3,10 @@
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFoodData(event) {
 
+	// Load nutrient types.
+	const $Nutrient = Java.loadClass('net.dries007.tfc.common.capabilities.food.Nutrient');
+	const $INutrientExtension = Java.loadClass('su.terrafirmagreg.core.common.food.nutrient.INutrientExtension');
+
 	/**
 	 * Registers food items from the `TFG_CREATE_GENERIC_FOOD_ITEM` array. 
 	 * Each item should have an id, and either nutrition or mealType defined.
@@ -28,16 +32,14 @@ function registerTFGFoodData(event) {
 			foodItem.nutrition.water && food.water(foodItem.nutrition.water);
 			// Decay defaults to 0 (non-perishable).
 			food.decayModifier(foodItem.nutrition.decay || 0);
-			// Set nutrition. Defaults to none.
-			foodItem.nutrition.dairy && food.dairy(foodItem.nutrition.dairy);
-			foodItem.nutrition.vegetables && food.vegetables(foodItem.nutrition.vegetables);
-			foodItem.nutrition.fruit && food.fruit(foodItem.nutrition.fruit);
-			foodItem.nutrition.grain && food.grain(foodItem.nutrition.grain);
-			foodItem.nutrition.protein && food.protein(foodItem.nutrition.protein);
-			// Set contaminants. Defaults to none.
-			foodItem.nutrition.toxins && food.toxins(foodItem.nutrition.toxins);
-			foodItem.nutrition.microplastics && food.microplastics(foodItem.nutrition.microplastics);
-			foodItem.nutrition.parasites && food.parasites(foodItem.nutrition.parasites);
+
+			// Set nutrition dynamically using enum entries. Defaults to none.
+			$Nutrient.VALUES.forEach(nutrient => {
+				const nutrientName = nutrient.getSerializedName();
+				if (foodItem.nutrition[nutrientName]) {
+					food[nutrientName](foodItem.nutrition[nutrientName]);
+				}
+			});
 		});
 	});
 
