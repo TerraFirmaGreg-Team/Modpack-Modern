@@ -92,6 +92,10 @@
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:wicked": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
@@ -209,6 +213,18 @@
 				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 3,
+				"minCount": 2,
 				"weight": 100
 			}
 		],
