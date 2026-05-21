@@ -11,7 +11,7 @@
  * @property {number} [hunger]
  * @property {number} [saturation]
  * @property {number} [protein]
- * @property {number} [decay] 2.25 is a good value for meat that should expire quicker like poultry or seafood.
+ * @property {number} [decay] 2 is a good value for meat that should expire quicker like poultry or seafood.
  * @property {number} [parasites] Parasites are only applied to raw meat.
  * @property {number} [toxins]
  * @property {number} [water] Water is only applied to raw meat.
@@ -20,21 +20,21 @@
 /** @type {AnimalProduct[]} */
 const animalProducts = [
 	{name: 'limpet', protein: 2.2},
-	{name: 'crawlermari', protein: 2.2, decay: 2.25, parasites: 3},
+	{name: 'crawlermari', protein: 2.2, decay: 2, parasites: 3},
 	{name: 'moon_rabbit', protein: 2.2},
 	{name: 'glacian_mutton', protein: 3},
 	{name: 'sniffer_beef', protein: 3},
-	{name: 'wraptor', protein: 3, decay: 2.25},
+	{name: 'wraptor', protein: 3, decay: 2},
 	{name: 'bison_meat', protein: 3},
-	{name: 'springling_collar', protein: 3, decay: 2.25},
+	{name: 'springling_collar', protein: 3, decay: 2},
 	{name: 'walker_steak', saturation: 2.2, protein: 4},
-	{name: 'glider_wings', protein: 2.75, decay: 2.25},
-	{name: 'whole_soarer', protein: 3.0, decay: 2.25},
+	{name: 'glider_wings', protein: 2.75, decay: 2},
+	{name: 'whole_soarer', protein: 3.0, decay: 2},
 	{name: 'crusher_meat', protein: 3, parasites: 3},
-	{name: 'goober_meat', water: 10, protein: 3, decay: 2.25},
+	{name: 'goober_meat', water: 10, protein: 3, decay: 2},
 	{name: 'cruncher_ribs', saturation: 2.2, protein: 4},
 	{name: 'surfer_steak', protein: 3},
-	{name: 'long_pig_filet', protein: 2, decay: 2.25, toxins: 3},
+	{name: 'long_pig_filet', protein: 2, decay: 2, toxins: 3},
 ];
 
 //#endregion
@@ -850,7 +850,7 @@ function createGenericMeatItems(meatItem) {
     const hunger = meatItem.hunger || 4;
     const saturation = meatItem.saturation || 2;
     const protein = meatItem.protein || 2.5;
-    const decay = meatItem.decay || 2;
+    const decay = meatItem.decay || 1.4;
     const parasites = meatItem.parasites || 0;
     const toxins = meatItem.toxins || 0;
     const microplastics = meatItem.microplastics || 0;
