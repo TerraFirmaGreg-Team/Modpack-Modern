@@ -51,6 +51,9 @@ function registerTFGFoodItemTags(event) {
 	// Alias of tfc:foods/preserves, used to give the 2-jam sandwich recipe a distinct tree key in GT's RecipeDB.
 	event.add('tfc:foods/preserves_2', '#tfc:foods/preserves')
 
+    event.add('tfg:foods/all_jams', '#tfc:sealed_jars');
+    event.add('tfg:foods/all_jams', '#tfc:foods/preserves');
+
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_sniffer_beef')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_wraptor')
 	event.add('tfg:raw_dinosaur_meat', 'tfg:food/raw_springling_collar')
@@ -279,6 +282,16 @@ function registerTFGFoodItemTags(event) {
 	usable_in_meal_bag.forEach(item => {
 		event.add('tfg:foods/usable_in_meal_bag', item);
 	});
+
+	/** @type {{String[]}} List of items that can go in a savory pie */
+	const usable_in_savory_pie = [
+		'#tfc:foods/meats',
+		'#tfc:foods/vegetables',
+	];
+	usable_in_savory_pie.forEach(item => {
+		event.add('tfg:foods/usable_in_savory_pie', item);
+	});
+
 	event.add('tfg:foil_packs', 'tfg:foil_pack');
 	event.add('tfg:foil_packs', 'tfg:clean_foil_pack')
 

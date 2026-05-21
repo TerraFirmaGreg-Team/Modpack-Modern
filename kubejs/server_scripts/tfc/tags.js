@@ -480,22 +480,34 @@ function registerTFCItemTags(event) {
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 
-	event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
-	event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
-	event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
+    event.add('tfc:food/bell_peppers', 'tfc:food/green_bell_pepper');
+    event.add('tfc:food/bell_peppers', 'tfc:food/yellow_bell_pepper');
+    event.add('tfc:food/bell_peppers', 'tfc:food/red_bell_pepper');
 
-	// More offhand things for piglin brutes
-	event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
-	event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
-	event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
-	event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
-	event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
+    // More offhand things for piglin brutes
+    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/gold');
+    event.add('tfc:mob_offhand_weapons', 'tfchotornot:tongs/rose_gold');
+    event.add('tfc:mob_offhand_weapons', 'gtceu:black_bronze_knife');
+    event.add('tfc:mob_offhand_weapons', 'tfc:metal/javelin/black_bronze');
+    event.add('tfc:mob_offhand_weapons', 'tfc:metal/mace/black_bronze');
 
-	event.add('tfc:starts_fires_with_items', 'gtceu:matches');
-	event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
-	event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
-	event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
-	event.add('forge:tools/igniter', 'tfc:firestarter');
+    event.add('tfc:starts_fires_with_items', 'gtceu:matches');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:matchbox');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:invar_lighter');
+    event.add('tfc:starts_fires_with_durability', 'gtceu:platinum_lighter');
+    event.add('forge:tools/igniter', 'tfc:firestarter');
+
+    //TODO: properly allow GT fluid containers to work with TFC crafting recipes.
+    /** @type {{Item[]}} */
+    const fluidItemIngredientHolders = [
+        //'#gtceu:super_tanks',
+        //'#gtceu:fluid_cells',
+        //'#gtceu:drums',
+        '#tfc:barrels'
+    ];
+    fluidItemIngredientHolders.forEach(item => {
+        event.add('tfc:fluid_item_ingredient_empty_containers', item)
+    });
 }
 
 /** @param {TagEvent.Block} event */
@@ -854,16 +866,6 @@ function registerTFCFluidTags(event) {
 	event.add("tfc:ingredients", "tfc:spring_water");
 	event.add('tfc:drinkables', 'tfc:spring_water')
 
-	event.add('tfg:alcohols', '#tfc:alcohols')
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_beer");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_cider");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_rum");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_sake");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_vodka");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_whiskey");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_corn_whiskey");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_rye_whiskey");
-	event.add("tfg:alcohols", "tfcagedalcohol:aged_mead");
 	event.add("tfg:alcohols", "tfc_gourmet:nalivka");
 
 	// Добавляем тег для скрытия в EMI

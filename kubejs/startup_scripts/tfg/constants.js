@@ -23,7 +23,7 @@ global.AIRCRAFT_UPGRADES = [
 	"aluminium_hull_reinforcement",
 	"stainless_steel_hull_reinforcement",
 	"titanium_hull_reinforcement"
-]
+];
 
 
 /**
@@ -39,7 +39,7 @@ global.MOON_STONE_TYPES = [
 	"moon_deepslate",
 	"moon_stone",
 	"rhyolite"
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -55,7 +55,7 @@ global.MOON_BIOMES = [
 	'tfg:moon/lunar_corals_sparse',
 	'tfg:moon/lunar_lights_dense',
 	'tfg:moon/lunar_lights_sparse'
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -75,7 +75,7 @@ global.MARS_BIOMES = [
 	'tfg:mars/sangnum_plains',
 	'tfg:mars/sangnum_hills',
 	'tfg:mars/martian_mountains'
-]
+];
 
 /**
  * @type {string[]} - Biome IDs
@@ -90,59 +90,12 @@ global.VENUS_BIOMES = [
 	'tfg:venus/stromatolite_beach',
 	'tfg:venus/sulfuric_ravine',
 	'tfg:venus/scorching_volcanoes'
-]
+];
 
 /**
  * @type {string[]} - Circuit Tiers
  */
 global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];
-
-/**
- * @typedef {Object} Fruit
- * @property {string} name - Fruit Name
- * @property {string} id - Fruit ID
- * @property {number} saturation - Saturation Value
- * @property {number} water - Water Value
- * @property {number} fruit - Fruit Value
- * @property {number} decay - Decay Modifier
- */
-
-/** @type {Fruit[]} */
-global.FOOD_FRUIT = [
-	{name: 'red_grapes', id: 'firmalife:food/red_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'white_grapes', id: 'firmalife:food/white_grapes', saturation: 0.4, water: 2, fruit: 0.5, decay: 2.25},
-	{name: 'glow_berries', id: 'minecraft:glow_berries', saturation: 0, water: 5, fruit: 0.5, decay: 2.25},
-	{name: 'chorus_fruit', id: 'minecraft:chorus_fruit', saturation: 0, water: 5, fruit: 2, decay: 1.2},
-	{name: 'popped_chorus_fruit', id: 'minecraft:popped_chorus_fruit', saturation: 1, water: 0, fruit: 3, decay: 0.8},
-	{name: 'blackberry', id: 'tfc:food/blackberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'blueberry', id: 'tfc:food/blueberry', saturation: 0.2, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'bunchberry', id: 'tfc:food/bunchberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cloudberry', id: 'tfc:food/cloudberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'cranberry', id: 'tfc:food/cranberry', saturation: 0.2, water: 5, fruit: 1, decay: 2.25},
-	{name: 'elderberry', id: 'tfc:food/elderberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'gooseberry', id: 'tfc:food/gooseberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'raspberry', id: 'tfc:food/raspberry', saturation: 0.4, water: 5, fruit: 0.8, decay: 4.5},
-	{name: 'snowberry', id: 'tfc:food/snowberry', saturation: 0.2, water: 5, fruit: 1, decay: 4.5},
-	{name: 'strawberry', id: 'tfc:food/strawberry', saturation: 0.4, water: 10, fruit: 0.5, decay: 4.5},
-	{name: 'wintergreen_berry', id: 'tfc:food/wintergreen_berry', saturation: 0.2, water: 5, fruit: 1, decay: 2.1},
-	{name: 'banana', id: 'tfc:food/banana', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'cherry', id: 'tfc:food/cherry', saturation: 0.2, water: 5, fruit: 1, decay: 3.5},
-	{name: 'green_apple', id: 'tfc:food/green_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.5},
-	{name: 'lemon', id: 'tfc:food/lemon', saturation: 0.2, water: 5, fruit: 0.08, decay: 2.25},
-	{name: 'olive', id: 'tfc:food/olive', saturation: 0.2, water: 0, fruit: 1, decay: 2.25},
-	{name: 'orange', id: 'tfc:food/orange', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.25},
-	{name: 'peach', id: 'tfc:food/peach', saturation: 0.4, water: 10, fruit: 0.5, decay: 2.5},
-	{name: 'plum', id: 'tfc:food/plum', saturation: 0.4, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'red_apple', id: 'tfc:food/red_apple', saturation: 0.4, water: 0, fruit: 1, decay: 2.25},
-	{name: 'pumpkin_chunks', id: 'tfc:food/pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'melon_slice', id: 'tfc:food/melon_slice', saturation: 0.2, water: 5, fruit: 0.8, decay: 2.25},
-	{name: 'fig', id: 'firmalife:food/fig', saturation: 1, water: 5, fruit: 0.9, decay: 1},
-	{name: 'pineapple', id: 'firmalife:food/pineapple', saturation: 1, water: 1, fruit: 0.8, decay: 4.5},
-	{name: 'cave_pumpkin', id: 'betterend:cave_pumpkin_chunks', saturation: 1, water: 5, fruit: 0.8, decay: 2.25 },
-	{name: 'blossom_berry', id: 'betterend:blossom_berry_product', saturation: 1, water: 7.5, fruit: 1.5, decay: 2 },
-	{name: 'shadow_berry', id: 'betterend:shadow_berry_cooked', saturation: 1, water: 5, fruit: 1.5, decay: 2 },
-	{name: 'magmango', id: 'tfg:food/magmango', saturation: 1, water: 15, fruit: 1.5, decay: 2.25}
-];
 
 /** @type {Hammering[]} */
 global.HAMMERING = [ // Crushing relationships for manual block hammering, create press hammering and gtceu forge hammer crushing.
@@ -163,27 +116,6 @@ global.HAMMERING = [ // Crushing relationships for manual block hammering, creat
 	{ raw: '#tfg:hematitic_gravel',                 hammered: 'minecraft:red_sand',              duration: 70, eu: 16 },
 ]
 
-global.COOLING_FOODS = [
-	'firmalife:food/vanilla_ice_cream',
-	'firmalife:food/chocolate_ice_cream',
-	'firmalife:food/strawberry_ice_cream',
-	'firmalife:food/cookie_dough_ice_cream',
-	'firmalife:food/banana_split'
-];
-
-global.COOLING_FOODS_STRONG = [
-	'tfg:ice_soup'
-];
-
-global.WARMING_FOODS = [
-	'tfc:food/grain_soup',
-	'tfc:food/fruit_soup',
-	'tfc:food/vegetables_soup',
-	'tfc:food/protein_soup',
-	'tfc:food/dairy_soup',
-	'tfg:food/poutine'
-];
-
 /**
  * @typedef {Object} LabEqupmentContainers
  * @property {string} type - Container Type
@@ -195,25 +127,6 @@ global.LAB_EQUIPMENT_CONTAINERS = [
 	{type: 'beaker', capacity: 1296},
 	{type: 'flask', capacity: 144},
 	{type: 'vial', capacity: 16}
-];
-
-/**
- * @typedef {Object} spices
- * @property {string} plant - Spice Plant
- * @property {string} product - Spice Product
- */
-/** @type {spices[]} - Item IDs */
-global.SPICES = [
-	// Cinnamon is not obtainable so im not including it yet.
-	{ plant: 'firmalife:plant/basil', product: 'firmalife:spice/basil_leaves' },
-	{ plant: 'firmalife:plant/vanilla', product: 'firmalife:spice/vanilla' },
-	// New spices V
-	{ plant: 'firmalife:plant/bay_laurel', product: 'tfg:spice/bay_leaf' },
-	{ plant: 'firmalife:plant/cardamom', product: 'tfg:spice/cardamom_pods' },
-	{ plant: 'firmalife:plant/cilantro', product: 'tfg:spice/cilantro_leaves' },
-	{ plant: 'firmalife:plant/cumin', product: 'tfg:spice/cumin_seeds' },
-	{ plant: 'firmalife:plant/oregano', product: 'tfg:spice/oregano_leaves' },
-	{ plant: 'firmalife:plant/pimento', product: 'tfg:spice/allspice' }
 ];
 
 /**
@@ -254,102 +167,6 @@ global.ICE_SAW_BLACKLIST = [
 ];
 
 /**
- * @typedef {Object} CropClimateData
- * @property {string} id - Crop block ID.
- * @property {string} seed - Seed Item ID. For tooltip info.
- * @property {string} dimension - Dimension ID. For tooltip info.
- * @property {'NITROGEN'|'POTASSIUM'|'PHOSPHOROUS'|null} fertilizer - Fertilizer type. For tooltip info.
- * @property {string} moreInfo - Additional info lines to add to the tooltip, or null.
- * @property {number} minHydration - Minimum hydration.
- * @property {number} maxHydration - Maximum hydration.
- * @property {number} minTemp - Minimum temperature.
- * @property {number} maxTemp - Maximum temperature.
- * @property {number} hydrationWiggle - Hydration wiggle.
- * @property {number} tempWiggle - Temperature wiggle.
- * @property {boolean} genData - Generates data in data.crops.js
- * @property {boolean} genTooltip - Generate tooltip info.
- */
-/** @type {CropClimateData[]} - Index of crop climate data */
-global.CROP_CLIMATE_DATA = [
-	// ============== Earth =================
-	{ 
-		id: 'tfg:sunflower', seed: 'tfg:sunflower_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN',
-		minHydration: 20, maxHydration: 80, minTemp: 5, maxTemp: 40, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:rapeseed', seed: 'tfg:rapeseed_seeds', dimension: 'minecraft:overworld', fertilizer: 'PHOSPHOROUS',
-		minHydration: 10, maxHydration: 60, minTemp: -5, maxTemp: 25, hydrationWiggle: 7.5, tempWiggle: 1.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:flax', seed: 'tfg:flax_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN',
-		minHydration: 15, maxHydration: 65, minTemp: -8, maxTemp: 25, hydrationWiggle: 6.5, tempWiggle: 3, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:radish', seed: 'tfg:radish_seeds', dimension: 'minecraft:overworld', fertilizer: 'POTASSIUM',
-		minHydration: 15, maxHydration: 65, minTemp: -20, maxTemp: 20, hydrationWiggle: 7, tempWiggle: 2, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:lentil', seed: 'tfg:lentil_seeds', dimension: 'minecraft:overworld', fertilizer: 'PHOSPHOROUS',
-		minHydration: 50, maxHydration: 100, minTemp: -20, maxTemp: 18, hydrationWiggle: 7, tempWiggle: 3, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:cucumber', seed: 'tfg:cucumber_seeds', dimension: 'minecraft:overworld', fertilizer: 'NITROGEN', moreInfo: 'tfg.tooltip.crop.stick',
-		minHydration: 70, maxHydration: 100, minTemp: 5, maxTemp: 40, hydrationWiggle: 6.5, tempWiggle: 2, genData: true, genTooltip: true 
-	},
-	// ============== Beneath =================
-	{ 
-		id: 'tfg:peanut', seed: 'tfg:peanut_seeds', dimension: 'minecraft:the_nether', fertilizer: 'POTASSIUM',
-		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:cassava', seed: 'tfg:cassava_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
-		minHydration: 50, maxHydration: 100, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:beans', seed: 'tfg:beans_seeds', dimension: 'minecraft:the_nether', fertilizer: 'POTASSIUM',
-		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:ghost_pepper', seed: 'tfg:ghost_pepper_seeds', dimension: 'minecraft:the_nether', fertilizer: 'NITROGEN',
-		minHydration: 20, maxHydration: 80, minTemp: 10, maxTemp: 80, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'tfg:fruit_tree/lavacado',
-		minHydration: 20, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 5.5, tempWiggle: 4, genData: true, genTooltip: true
-	},
-	{ 
-		id: 'tfg:fruit_tree/magmango',
-		minHydration: 30, maxHydration: 100, minTemp: 8, maxTemp: 80, hydrationWiggle: 8, tempWiggle: 5, genData: true, genTooltip: true
-	},
-	// ============== Mars =================
-	{ 
-		id: 'betterend:amber_root', seed: 'betterend:amber_root_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
-		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'betterend:blossom_berry', seed: 'betterend:blossom_berry_seeds', dimension: 'ad_astra:mars', fertilizer: 'POTASSIUM',
-		minHydration: 70, maxHydration: 100, minTemp: -80, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'betterend:bolux_mushroom', seed: 'betterend:bolux_mushroom_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
-		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'betterend:cave_pumpkin_plant', seed: 'betterend:cave_pumpkin_plant_seeds', dimension: 'ad_astra:mars', fertilizer: 'NITROGEN',
-		minHydration: 0, maxHydration: 60, minTemp: -100, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'betterend:chorus_mushroom', seed: 'betterend:chorus_mushroom_seeds', dimension: 'ad_astra:mars', fertilizer: 'PHOSPHOROUS',
-		minHydration: 0, maxHydration: 40, minTemp: -150, maxTemp: 15, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	},
-	{ 
-		id: 'betterend:shadow_berry', seed: 'betterend:shadow_berry_seeds', dimension: 'ad_astra:mars', fertilizer: 'POTASSIUM',
-		minHydration: 50, maxHydration: 100, minTemp: -80, maxTemp: 30, hydrationWiggle: 7.5, tempWiggle: 5.5, genData: true, genTooltip: true 
-	}
-
-];
-
-/**
  * @type {string[]}
  */
 global.NEW_OVERWORLD_PLANTS = [
@@ -379,8 +196,22 @@ global.NEW_OVERWORLD_PLANTS = [
 	"tfg:plant/yellow_saxifrage",
 	"tfg:plant/flame_vine",
 	"tfg:plant/cycad"
-]
+];
 
+/**
+ * @typedef {Object} NewWoodType.
+ * @property {string} name - Wood Type Name.
+ * @property {string} barkColor - Bark Color (Minecraft Color).
+ * @property {string} woodColor - Wood Color (Minecraft Color).
+ * @property {string} leafColor - Leaf Color (Minecraft Color).
+ * @property {string} woodSound - Wood Sound Type.
+ * @property {string} leafSound - Leaf Sound Type.
+ * @property {number} daysToGrow - Days to Grow.
+ * @property {string} location - Location.
+ */
+/**
+ * @type {NewWoodType[]}
+ */
 global.TFG_NEW_WOOD_TYPES = [
 	{
 		name: "araucaria",
@@ -412,4 +243,4 @@ global.TFG_NEW_WOOD_TYPES = [
 		daysToGrow: 6,
 		location: "nether"
 	}
-]
+];

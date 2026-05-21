@@ -58,7 +58,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cypress, Redcedar",
+			"title": "Cyprys, żywotnik olbrzymi",
 			"item": "tag:afc:cypress_logs",
 			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
 		},
@@ -74,7 +74,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Fig, Rubber Fig",
+			"title": "Figowiec, figowiec sprężysty",
 			"item": "tag:afc:fig_logs",
 			"text": "$(bold)Rusty Fig$()$(br)$(thing)Rainfall$(): 340 — 500mm$(br)$(thing)Temperature$(): 18.9 — 26.2°C$(br2)$(bold)Rubber Fig$()$(br)$(thing)Rainfall$(): 290 — 400mm$(br)$(thing)Temperature$(): 9.8 — 20.7°C"
 		},

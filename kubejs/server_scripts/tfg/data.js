@@ -25,8 +25,6 @@ function registerTFGHeatData(event) {
 	});
 	event.itemHeat("tfg:decorative_vase/unfired", 1, null, null);
 
-	event.itemHeat("tfg:sunflower_product", 1, null, null);
-	event.itemHeat("tfg:roasted_sunflower_seeds", 1, null, null);
 	event.itemHeat("tfc:powder/native_copper", 1, null, null);
 	event.itemHeat("tfc:powder/native_silver", 1, null, null);
 	event.itemHeat("tfc:powder/native_gold", 1, null, null);
@@ -40,20 +38,6 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
 	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
 
-	event.itemHeat('betterend:cave_pumpkin_pie_raw', 1.0, null, null);
-    event.itemHeat('betterend:cave_pumpkin_pie', 1.0, null, null);
-
-	event.itemHeat('tfg:food/raw_beer_battered_cheese_curds', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_beer_battered_cheese_curds', 1.0, null, null);
-	event.itemHeat('tfg:food/popcorn', 1.0, null, null);
-	event.itemHeat('tfg:food/buttered_popcorn', 1.0, null, null);
-	event.itemHeat('tfg:food/raw_fries', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_fries', 1.0, null, null);
-	event.itemHeat('tfg:food/brioche_dough', 1.0, null, null);
-	event.itemHeat('tfg:food/brioche_bun', 1.0, null, null);
-	event.itemHeat('tfg:food/raw_burger_patty', 1.0, null, null);
-	event.itemHeat('tfg:food/cooked_burger_patty', 1.0, null, null);
-
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_small_gear_mold', 1.0, null, null);
@@ -66,13 +50,7 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
-	
-	event.itemHeat("tfg:lentil_product", 1, null, null);
-	event.itemHeat("tfg:food/cooked_lentil", 1, null, null);
-	event.itemHeat("tfg:cassava_product", 1, null, null);
-	event.itemHeat("tfg:food/cooked_cassava", 1, null, null);
-	event.itemHeat("tfg:beans_product", 1, null, null);
-	event.itemHeat("tfg:food/cooked_beans", 1, null, null);
+
 }
 
 //#endregion
