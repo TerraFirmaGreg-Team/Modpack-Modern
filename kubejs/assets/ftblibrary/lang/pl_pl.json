@@ -1,6 +1,7 @@
 {
   "config.group.value": "Wartość",
   "delete_item": "Czy chcesz usunąć '%s'?",
+  "dimension.ae2.spatial_storage": "Magazyn przestrzenny AE2",
   "dimension.hyperbox.hyperbox": "Hiperbox",
   "dimension.minecraft.overworld": "Nadziemie",
   "dimension.minecraft.the_end": "End",
@@ -88,5 +89,6 @@
   "sidebar_button.ftblibrary.toggle.rain": "Przełącz deszcz",
   "sidebar_button.ftblibrary.toggle.rain.tooltip": "Przełącza pomiędzy ładną i deszczową pogodą",
   "sidebar_group.ftblibrary.cheat": "FTB Library – oszustwa",
-  "sidebar_group.ftblibrary.info": "FTB Library – info"
+  "sidebar_group.ftblibrary.info": "FTB Library – info",
+  "sidebar_group.ftblibrary.util": "FTB Library – różne"
 }
