@@ -90,7 +90,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_rubble",
-      "title": "Breaking and Recycling",
+      "title": "Zrywanie i odzyskiwanie materiałów",
       "text": "Breaking asphalt roads, hot asphalt, slabs, or stairs drops $(thing)Asphalt Rubble$() instead of the intact block. Processing the rubble in an $(thing)Extractor$() recovers a small amount of asphalt mixture."
     }
   ],
