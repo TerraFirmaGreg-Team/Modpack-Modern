@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:nether/terrain/mud_delta",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 60
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 195
+				},
+				"min_inclusive": {
+					"above_bottom": 100
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

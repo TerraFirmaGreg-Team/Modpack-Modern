@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:delta_feature",
+	"config": {
+		"contents": {
+			"Name": "tfc:fluid/salt_water"
+		},
+		"rim": {
+			"Name": "tfg:halite"
+		},
+		"rim_size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 3,
+				"min_inclusive": 2
+			}
+		},
+		"size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 6,
+				"min_inclusive": 3
+			}
+		}
+	}
+}

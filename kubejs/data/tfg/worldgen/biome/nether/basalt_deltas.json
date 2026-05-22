@@ -35,17 +35,9 @@
 		"water_fog_color": 329011
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[],
 		[
-			"tfg:nether/terrain/lava_lake"
-		],
-		[
-			"minecraft:basalt_pillar",
-			"tfg:earth/geode/amethyst"
-		],
-		[],
-		[
-			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:delta",
 			"minecraft:small_basalt_columns",
 			"minecraft:large_basalt_columns"
@@ -54,13 +46,12 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble"
+			"tfg:nether/terrain/spring_lava"
 		],
+		"#tfg:nether_crops",
 		[
 			"minecraft:spring_delta",
 			"minecraft:spring_closed_double",
-			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/loose_basalt",
 			"beneath:burpflower_patch",
@@ -68,18 +59,28 @@
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+			"tfg:nether/surface/stick_patch"
 		],
+		"#tfg:nether_global_decoration",
 		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/basalt_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/hardening"
+			"tfc:erosion"
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:leaf_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:spectre": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		}
+	},
 	"spawners": {
 		"ambient": [
 			{

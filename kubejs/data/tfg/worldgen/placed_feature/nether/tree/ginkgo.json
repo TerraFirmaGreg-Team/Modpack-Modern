@@ -1,0 +1,47 @@
+{
+	"feature": "tfg:nether/tree/ginkgo",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 30
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 150
+				},
+				"min_inclusive": {
+					"absolute": 50
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 1
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

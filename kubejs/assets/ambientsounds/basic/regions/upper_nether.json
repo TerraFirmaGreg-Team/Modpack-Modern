@@ -1,0 +1,44 @@
+{
+	"name": "upper_nether",
+	"biomes": [
+		"decaying_caverns",
+		"diorite_caves",
+		"gabbro_caves",
+		"gneiss_caves",
+		"granite_caves",
+		"schist_caves",
+		"salt_caves",
+		"tar_pools",
+		"thorny_brambles",
+		"geothermal_springs"
+	],
+	"features": [],
+	"regions": [
+		"cave"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "nether-cave-water",
+			"category": "cave",
+			"files": [
+				"ambientsounds:cave.cave-water1",
+				"ambientsounds:cave.cave-water2",
+				"ambientsounds:cave.cave-water3",
+				"ambientsounds:cave.cave-water4",
+				"ambientsounds:cave.cave-water5"
+			],
+			"volume": 0.4,
+			"features": [
+				"water",
+				"lush",
+				"dripstone"
+			],
+			"transition": 200
+		}
+	]
+}

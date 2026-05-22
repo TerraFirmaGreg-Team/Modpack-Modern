@@ -3,7 +3,7 @@
 	"thirst": 5,
 	"effects": [
 		{
-			"type": "minecraft:poison",
+			"type": "minecraft:nausea",
 			"duration": 200,
 			"amplifier": 0
 		},

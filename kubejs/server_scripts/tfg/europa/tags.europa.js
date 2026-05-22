@@ -5,8 +5,7 @@ function registerTFGEuropaEntityTypeTags(event) {
 		'endermanoverhaul:coral_enderman',
 		'endermanoverhaul:snowy_enderman',
 		'endermanoverhaul:ice_spikes_enderman',
-		'species:deepfish',
-		'species:leaf_hanger'
+		'species:deepfish'
 	]
 
 	ENTITIES.forEach(entity => {

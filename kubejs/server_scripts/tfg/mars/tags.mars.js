@@ -198,7 +198,6 @@ function registerTFGMarsBlockTags(event) {
 	event.remove('minecraft:flowers', 'minecraft:pitcher_plant')
 	event.remove('minecraft:flowers', 'minecraft:torchflower')
 
-	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
 	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_moss_block')

@@ -72,10 +72,6 @@ function registerSpeciesLoots(event) {
 
 	event.addEntityLootModifier('species:wraptor').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('species:deepfish').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('species:ghoul').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('species:bewereager').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('species:spectre').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('species:wicked').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addLootTableModifier('species:chests/libra_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addLootTableModifier('species:chests/wraptor_coop_chest').removeLoot(ItemFilter.ALWAYS_TRUE)
 }

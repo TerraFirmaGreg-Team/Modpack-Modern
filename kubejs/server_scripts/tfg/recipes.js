@@ -88,6 +88,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGSpaceSuitRecipes(event)
 	registerTFGInsulationRecipes(event)
 
+	registerTFGBeneathRecipes(event)
+
 	registerTFGMoonRecipes(event)
 	registerTFGMoonPlantRecipes(event)
 	registerTFGMoonRegolithRecipes(event)

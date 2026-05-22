@@ -10,7 +10,7 @@ global.WAB_WOOD = [
 		leafColor: "orange",
 		woodSound: "wood",
 		leafSound: "azalea_leaves",
-		daysToGrow: 10,
-		location: "beneath"
+		daysToGrow: 7,
+		location: "nether"
 	}
 ]
