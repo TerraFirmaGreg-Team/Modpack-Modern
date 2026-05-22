@@ -10,7 +10,7 @@
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "firmalife:anvil/sprinkler",
-			"text": "Zraszacz wytwarza się z $(thing)miedzianej blachy$()."
+			"text": "Zraszacz wytwarza się z $(thing)miedzianej płytki$()."
 		},
 		{
 			"title": "Rurociągi",

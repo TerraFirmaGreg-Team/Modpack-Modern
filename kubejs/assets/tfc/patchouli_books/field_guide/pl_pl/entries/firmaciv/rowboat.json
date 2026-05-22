@@ -46,7 +46,7 @@
           "6": "firmaciv:watercraft_frame_angled[facing=east,shape=inner_right]"
         }
       },
-      "name": "Rowboat Scaffolding",
+      "name": "Rusztowanie łodzi wiosłowej",
       "text": "Shipwright's Scaffolding arranged in order to construct a rowboat.",
       "enable_visualize": true
     },
@@ -78,7 +78,7 @@
           "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=3]"
         }
       },
-      "name": "Rowboat Scaffolding",
+      "name": "Rusztowanie łodzi wiosłowej",
       "text": "Four planks have been added to each scaffold.",
       "enable_visualize": true
     },
@@ -106,7 +106,7 @@
           "6": "firmaciv:wood/watercraft_frame/angled/hickory[facing=east,shape=inner_right,frame_processed=7]"
         }
       },
-      "name": "Rowboat Scaffolding",
+      "name": "Rusztowanie łodzi wiosłowej",
       "text": "Using a hammer in your offhand, add four copper bolts to each scaffold. Copper bolts are smithed from copper ingots.",
       "enable_visualize": true
     },
@@ -136,7 +136,7 @@
           "R": "alekiships:oarlock[facing=south]"
         }
       },
-      "name": "Rowboat Scaffolding",
+      "name": "Rusztowanie łodzi wiosłowej",
       "text": "Finally, add the oarlocks to the center of the boat. These are smithed from any Bronze Double Ingots.",
       "enable_visualize": true
     },
