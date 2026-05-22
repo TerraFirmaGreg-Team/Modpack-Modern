@@ -5,7 +5,7 @@ function registerCreateFluidLogisticsRecipes(event) {
 
     event.remove({
 		not: [
-			{ id:'fluidlogistics:horizontal_multi_fluid_tank_from_tank' },
+			{ id: 'fluidlogistics:horizontal_multi_fluid_tank_from_tank' },
 			{ id: 'fluidlogistics:multi_fluid_tank_from_horizontal' },
 			{ id: 'fluidlogistics:hand_pointer_clear' },
 		], mod: "fluidlogistics" })

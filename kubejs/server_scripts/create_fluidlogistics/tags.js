@@ -10,4 +10,8 @@ function registerCreateFluidLogisticsItemTags(event) {;
 
     //The smart faucet is like a spout but you can filter it for different liquids, not very usefull for this pack
     event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:smart_faucet')
+    
+    event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:smart_hopper')
+    event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:infinite_fluid_tank')
+    event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:fluid_pump')
 }
