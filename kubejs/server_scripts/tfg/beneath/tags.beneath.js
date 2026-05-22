@@ -69,6 +69,9 @@ function registerTFGBeneathItemTags(event) {
 	event.add('beneath:unpostable', '#tfc:compost_browns_low')
 	event.add('beneath:unpostable', '#tfc:compost_browns')
 	event.add('beneath:unpostable', '#tfc:compost_browns_high')
+
+    event.add('tfg:magma_food', 'tfg:rock/glauberite')
+    event.add('tfg:magma_food', 'gtceu:rich_raw_sulfur')
 }
 
 
