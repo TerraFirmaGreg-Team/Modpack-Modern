@@ -6,6 +6,7 @@
 ### Changes we forgot to write last time
 - Blue Steel hiking boots are now a little slower and Red Steel hiking boots had their step height removed to make them more distinct. Additionally added ambiental stats. (#3998) @SakuraKitsurugi
 ### Changes
+- Reverted stat changes to Blue and Red Steel hiking boots. Blue Steel hiking boots are now faster with lower durability. Step up can be disabled with a toggle in the new SnS update. (#4088) @SakuraKitsurugi
 ### Bug fixes
 
 ## [0.12.8] - 17-05-2026
