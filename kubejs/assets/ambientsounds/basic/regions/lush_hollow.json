@@ -1,0 +1,35 @@
+{
+	"name": "lush_hollow",
+	"biomes": [
+		"lush_hollow",
+		"muggy_bog"
+	],
+	"regions": [
+		"cave"
+	],
+	"biome-type": "underground",
+	"min-height-relative": {
+		"max": -5,
+		"fade": 2
+	},
+	"sounds": [
+		{
+			"name": "frog",
+			"category": "animal",
+			"files": [
+				"ambientsounds:animals.frog-cave1",
+				"ambientsounds:cave.cave-lush"
+			],
+			"volume": 0.3,
+			"length": {
+				"min": 200,
+				"max": 500
+			},
+			"pause": {
+				"min": 100,
+				"max": 550
+			},
+			"transition": 100
+		}
+	]
+}

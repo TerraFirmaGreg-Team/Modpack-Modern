@@ -1,15 +1,15 @@
 {
-  "name": "Asphalt Roads",
+  "name": "アスファルト道路",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:asphalt_road",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Asphalt roads are an advanced road type relying on oil and GregTech production lines.$(br)After preparing the $(l:roadsandroofs/making_a_road)base course$(), you pour $(thing)asphalt mixture$() over it. It briefly becomes $(thing)hot asphalt$() before solidifying into a durable $(thing)asphalt road$().$(br)A properly built asphalt road gives a 40% movement speed bonus."
+      "text": "アスファルトは、GregTechによる石油技術によって作ることができる優秀な道路材です。$(br)$(l:roadsandroofs/making_a_road)路盤$()を準備した後、その上に $(thing)アスファルト混合物$()を注ぎます。最初は $(thing)熱いアスファルト$()ですが、冷えて固まることで耐久性のある $(thing)アスファルトの道路$()になります。$(br)正しく敷設されたアスファルト道路の上では移動速度が40%上昇します。"
     },
     {
       "type": "patchouli:image",
-      "title": "Asphalt Road",
+      "title": "アスファルト",
       "images": [
         "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
       ],
@@ -17,13 +17,13 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Unlike concrete roads, asphalt does not require control joints and will not crack from wet material or get damaged by walking on uncured pavement.$(br2)Be careful when working with $(thing)Hot Asphalt$()—touching it will burn you. You'd better wear heat-protective gear. Also, breaking asphalt returns $(thing)Asphalt Rubble$() instead of intact road blocks."
+      "text": "コンクリートの道の施工とは異なり、アスファルト道路の敷設には収縮目地を必要とせず、ひび割れたり、硬化前に上を歩くことで足跡が付いたりなどもしません。$(br2)$(thing)ただし、熱いアスファルト$()を扱う際は注意してください――触れると火傷しますよ。安全のために耐火装備の着用を推奨します。なお、アスファルト道路を破壊すると、ブロックとしてではなく $(thing)アスファルトの瓦礫$() としてドロップします。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "tar_chunk",
       "item": "tfg:tar_chunk",
-      "title": "Tar Chunk",
+      "title": "タールの塊",
       "text": "The raw material for asphalt roads is oil. Solidify $(thing)Oil$(), $(thing)Raw Oil$(), $(thing)Heavy Oil$(), etc. in a $(thing)Fluid Solidifier$() to obtain corresponding $(thing)Tar$() blocks, then process them in an $(thing)Extractor$() to get $(thing)Tar Chunk$()."
     },
     {

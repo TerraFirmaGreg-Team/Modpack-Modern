@@ -18,7 +18,7 @@ const registerSoulboundRecipes = (event) => {
 				}
 				result.nbt.put('soulbindingSoulboundItems', true)
 				return result;
-			}).id(`tfg:soulbind_${linuxUnfucker(x.equipment)}`);
+			}).id(`tfg:soulbind_${global.linuxUnfucker(x.equipment)}`);
 
 	})
 

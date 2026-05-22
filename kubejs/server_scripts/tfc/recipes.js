@@ -322,4 +322,14 @@ const registerTFCRecipes = (event) => {
 			'saw'
         ]
     ).id('tfg:glassworking/lamp_glass')
+
+	event.recipes.gtceu.macerator('tfg:candle')
+		.itemInputs("#minecraft:candles")
+		.itemOutputs("#forge:dusts/wax")
+		.duration(50)
+		.EUt(2)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING);
+	
+	event.recipes.tfc.quern("gtceu:wax_dust", "#minecraft:candles")
+		.id("tfg:quern/candles")
 }

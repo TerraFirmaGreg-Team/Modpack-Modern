@@ -156,7 +156,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					Item.of(`3x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 					'2x minecraft:bucket'
 				],
-				`${linuxUnfucker(fish.id)}/basic_food/bucket_to_roe`
+				`${global.linuxUnfucker(fish.id)}/basic_food/bucket_to_roe`
 			);
 
 			generatePiscicultureRecipe(event,
@@ -169,7 +169,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT(),
 					'2x minecraft:bucket'
 				],
-				`${linuxUnfucker(fish.id)}/advanced_food/bucket_to_roe`
+				`${global.linuxUnfucker(fish.id)}/advanced_food/bucket_to_roe`
 			);
 		} else {
 			generatePiscicultureRecipe(event,
@@ -181,7 +181,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					`6x ${fish.item}`,
 					Item.of(`3x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 				],
-				`${linuxUnfucker(fish.id)}/basic_food/parent_to_roe`
+				`${global.linuxUnfucker(fish.id)}/basic_food/parent_to_roe`
 			);
 
 			generatePiscicultureRecipe(event,
@@ -193,7 +193,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 					`12x ${fish.item}`,
 					Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 				],
-				`${linuxUnfucker(fish.id)}/advanced_food/parent_to_roe`
+				`${global.linuxUnfucker(fish.id)}/advanced_food/parent_to_roe`
 			);
 		};
 
@@ -207,7 +207,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				`10x ${fish.item}`,
 				Item.of(`4x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
-			`${linuxUnfucker(fish.id)}/basic_food/roe_to_roe`
+			`${global.linuxUnfucker(fish.id)}/basic_food/roe_to_roe`
 		);
 
 		generatePiscicultureRecipe(event,
@@ -219,7 +219,7 @@ const registerTFGPiscicultureRecipes = (event) => {
 				`24x ${fish.item}`,
 				Item.of(`5x tfg:fish_roe`, {"mob_type": fish.id}).strongNBT()
 			],
-			`${linuxUnfucker(fish.id)}/advanced_food/roe_to_roe`
+			`${global.linuxUnfucker(fish.id)}/advanced_food/roe_to_roe`
 		);	
 		
 	});

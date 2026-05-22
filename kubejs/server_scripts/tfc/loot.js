@@ -180,12 +180,11 @@ function registerTFCLoots(event) {
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addLoot('tfc_textile:crocodile_leather')
 		.addWeightedLoot([1, 7], ['minecraft:bone'])
-		.addWeightedLoot([5, 10], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 		.addSequenceLoot(LootEntry.of('tfc:metal/fish_hook/copper').when(c => c.randomChance(0.2)))
 
-	event.addEntityLootModifier('tfc:crocodile')
-		.matchMainHand('#forge:tools/butchery_knives')
-		.addWeightedLoot([2, 5], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
+	//event.addEntityLootModifier('tfc:crocodile')
+	//	.matchMainHand('#forge:tools/butchery_knives')
+	//	.addWeightedLoot([2, 5], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 
 
 	// Passive animals
@@ -414,6 +413,9 @@ function registerTFCLoots(event) {
 		.matchMainHand('#forge:tools/butchery_knives')
 		.addWeightedLoot([7, 10], ['tfc:food/chevon'])
 		.addWeightedLoot([3, 6], ['tfc:blubber'])
+
+	event.addEntityLootModifier('tfc:jellyfish')
+		.addLoot('tfc:glue')
 
 
 	// Blocks

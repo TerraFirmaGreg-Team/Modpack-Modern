@@ -48,21 +48,21 @@
 			"item": "create:brass_ingot",
 			"title": "Mosiądz",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedzi$()$(li)20 - 30 % : $(thing)Cyny$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)70 - 80 % : $(thing)Miedź$()$(li)20 - 30 % : $(thing)Cynk$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "Różowe złoto",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)15 - 30 % : $(thing)Miedzi$()$(li)70 - 85 % : $(thing)Złota$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)15 - 30 % : $(thing)Miedź$()$(li)70 - 85 % : $(thing)Złoto$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
 			"title": "Srebro próby 925",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedzi$()$(li)60 - 80 % : $(thing)Srebra$()$(br2)"
+			"text": "$(br)$(bold)Wymagania:$()$(br)$(li)20 - 40 % : $(thing)Miedź$()$(li)60 - 80 % : $(thing)Srebro$()$(br2)"
 		}
 	],
 	"read_by_default": true,

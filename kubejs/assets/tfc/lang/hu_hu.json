@@ -1,6 +1,7 @@
 {
 	"block.fluid.tfc.river_water": "Folyó Víz",
 	"block.fluid.tfc.salt_water": "Tengervíz",
+	"block.tfc.ceramic.large_vessel": "Nagy hajó",
 	"block.tfc.crop.barley": "Árpa",
 	"block.tfc.crop.beet": "Cékla",
 	"block.tfc.crop.cabbage": "Káposzta",
@@ -50,5 +51,10 @@
 	"item.tfc.food.yellow_bell_pepper": "Sárga Kaliforniai Paprika",
 	"item.tfc.jute": "Juta",
 	"item.tfc.papyrus": "Papirusz",
-	"tfc.block_entity.crop": "Kultúrnövény"
+	"tfc.block_entity.crop": "Kultúrnövény",
+	"tfc.block_entity.large_vessel": "Nagy hajó",
+	"tfc.enum.direction.east": "Kelet",
+	"tfc.enum.direction.north": "Észak",
+	"tfc.enum.direction.south": "Dél",
+	"tfc.enum.direction.west": "Nyugat"
 }

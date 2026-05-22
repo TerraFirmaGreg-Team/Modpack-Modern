@@ -5,6 +5,12 @@ const NEW_MOB_MAX_HP = {
 	// earth mobs
 	"primitive_creatures:beast": 40,
 
+	// beneath mobs
+	"minecraft:piglin": 20,
+	"species:leaf_hanger": 30,
+	"species:cliff_hanger": 30,
+	"species:spectre": 15,
+
 	// moon mobs
 	"endermanoverhaul:end_enderman": 50,
 	"endermanoverhaul:end_islands_enderman": 120,
@@ -33,7 +39,6 @@ const NEW_MOB_MAX_HP = {
 	"endermanoverhaul:savanna_enderman": 85,
 	"endermanoverhaul:desert_enderman": 90,
 	"ad_astra:sulfur_creeper": 60,
-	"species:cliff_hanger": 95,
 	"species:trooper": 30,
 	"minecraft:blaze": 80,
 	"minecraft:strider": 50,
@@ -58,8 +63,7 @@ const NEW_MOB_MAX_HP = {
 	// europa mobs
 	"endermanoverhaul:ice_spikes_enderman": 85,
 	"endermanoverhaul:snowy_enderman": 80,
-	"endermanoverhaul:coral_enderman": 80,
-	"species:leaf_hanger": 85,
+	"endermanoverhaul:coral_enderman": 80
 };
 
 const NEW_MOB_ARMOR = {
@@ -73,8 +77,7 @@ const NEW_MOB_ARMOR = {
 	"endermanoverhaul:savanna_enderman": 4,
 	"endermanoverhaul:desert_enderman": 4,
 	"endermanoverhaul:nether_wastes_enderman": 2,
-	"ad_astra:sulfur_creeper": 4,
-	"species:cliff_hanger": 2,
+	"ad_astra:sulfur_creeper": 4
 };
 
 const NEEDS_FIREPROOFING = [

@@ -5,7 +5,7 @@ const registerCreateRecipes = (event) => {
 
 	// Удаление рецептов мода create 
 	event.remove({
-		not: [
+		not: [			
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
@@ -48,8 +48,7 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/stock_link_clear'},
 			{ id: 'create:crafting/logistics/stock_ticker_clear'},
 			{ id: 'create:crafting/logistics/factory_gauge_clear'},
-			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
-			//{ type: 'minecraft:stonecutting' }
+			{ output: '#create:table_cloths'} // Gotta do this to not purge the table cloth reset recipes
 		], mod: 'create'
 	})
 	// Make Bound Cardboard craftable with all string
@@ -62,16 +61,6 @@ const registerCreateRecipes = (event) => {
 			{ id: `create:crafting/logistics/${dye}_table_cloth_from_other_table_cloth` }
 		])
 	})
-
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:andesite_alloy' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:polished_rose_quartz' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'minecraft:iron_ingot' })
-	event.remove({ type: "minecraft:stonecutting", output: "create:copycat_step" })
-    event.remove({ type: "minecraft:stonecutting", output: "create:copycat_panel" })
-	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
-	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
-	event.remove({ type: 'create:draining', id: 'create:potions' })
 
 	// Train Signal
 	event.shapeless('4x create:track_signal', [
@@ -2209,9 +2198,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(16)
-		.addMaterialInfo(true)
 		
-	TFGHelpers.registerMaterialInfo('create:gantry_carriage', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
+	TFGHelpers.registerMaterialInfo('create:weighted_ejector', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:turntable', [
 		'DA ',
@@ -2247,7 +2235,6 @@ const registerCreateRecipes = (event) => {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('create:gearshift', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Redstone, 1]);
 
@@ -2352,6 +2339,9 @@ const registerCreateRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.stonecutting('4x create:rose_quartz_tiles', '#forge:storage_blocks/rose_quartz')
+	event.stonecutting('create:rose_quartz_tiles', 'create:small_rose_quartz_tiles')
+
 	event.recipes.gtceu.laser_engraver('tfg:small_rose_quartz_tiles')
 		.itemInputs('#forge:storage_blocks/rose_quartz')
 		.itemOutputs('4x create:small_rose_quartz_tiles')
@@ -2359,6 +2349,9 @@ const registerCreateRecipes = (event) => {
 		.circuit(2)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	event.stonecutting('4x create:small_rose_quartz_tiles', '#forge:storage_blocks/rose_quartz')
+	event.stonecutting('create:small_rose_quartz_tiles', 'create:rose_quartz_tiles')
 
 	//Bars
 
@@ -2416,19 +2409,6 @@ const registerCreateRecipes = (event) => {
 	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/wrought_iron', '#minecraft:wooden_trapdoors'])
 		.id('tfg:shapeless/create_train_trapdoor')
 
-	// Fantasy stone blocks
-
-	event.recipes.gtceu.macerator('tfg:asurine')
-		.itemInputs('create:asurine')
-		.itemOutputs('#forge:dusts/asurine')
-		.duration(50)
-		.EUt(2)
-
-	event.recipes.gtceu.macerator('tfg:ochrum')
-		.itemInputs('create:ochrum')
-		.itemOutputs('#forge:dusts/ochrum')
-		.duration(50)
-		.EUt(2)
 
 	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
 		.id('tfg:shapeless/sand_paper')

@@ -5,7 +5,7 @@
 		"dirt_provider": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "minecraft:blackstone"
+				"Name": "tfg:charred_log"
 			}
 		},
 		"foliage_placer": {

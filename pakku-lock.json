@@ -10,7 +10,7 @@
         {
             "pakku_id": "3R5XMmWw1kZCzgnB",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "aaa-particles",
                 "modrinth": "aaa-particles"
@@ -3792,7 +3792,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "craftingstation-1.20.1-1.3.3.jar",
+                    "file_name": "craftingstation-1.20.1-1.4.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3801,16 +3801,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7463/65/craftingstation-1.20.1-1.3.3.jar",
-                    "id": "7463065",
+                    "url": "https://edge.forgecdn.net/files/8108/816/craftingstation-1.20.1-1.4.0.jar",
+                    "id": "8108816",
                     "parent_id": "1310299",
                     "hashes": {
-                        "sha1": "14042cc0680f7401b22cb7786001ffcc152f2685",
-                        "md5": "08cb0e0a33fc272bdf7caf3ebdc29e50"
+                        "sha1": "f439fee029a5659957aebf1cd6a850fdc0bd81ba",
+                        "md5": "295fc162df1fae5215cb8fb9929a51c2"
                     },
                     "required_dependencies": [],
-                    "size": 93034,
-                    "date_published": "2026-01-15T10:55:32.653Z"
+                    "size": 93233,
+                    "date_published": "2026-05-18T13:22:17.220Z"
                 }
             ]
         },
@@ -12376,6 +12376,67 @@
                     "required_dependencies": [],
                     "size": 713454,
                     "date_published": "2024-09-09T08:07:43.540Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "5Zbqzu2oUephfrw4",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "reliable-remover",
+                "modrinth": "reliable-remover"
+            },
+            "name": {
+                "curseforge": "Reliable Remover",
+                "modrinth": "Reliable Remover"
+            },
+            "id": {
+                "curseforge": "1420447",
+                "modrinth": "pLxsKvNt"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8025/360/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "8025360",
+                    "parent_id": "1420447",
+                    "hashes": {
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320",
+                        "md5": "a616942d10407f28f6888100f779a260"
+                    },
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:57.963Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/lYkyEAA3/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "lYkyEAA3",
+                    "parent_id": "pLxsKvNt",
+                    "hashes": {
+                        "sha512": "6c26015c07c30df09c04bdf9d592371b8a6adb5107d637e7a26995dbf21e3fe12555a2dc9f3b2e2a1530c0baa543343b7b017030727ba7d265ac5b448d7737cd",
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320"
+                    },
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:58.141797Z"
                 }
             ]
         },

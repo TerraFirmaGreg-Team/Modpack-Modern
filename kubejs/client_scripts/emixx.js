@@ -165,7 +165,6 @@ const registerSingleGroups = (event) => {
         '#tfc:sluices',
         '#tfc:barrels',
         '#tfc:lecterns',
-        '#tfc:scribing_tables',
         '#tfc:sewing_tables',
         '#tfc:jar_shelves',
         '#tfc:minecarts',
@@ -306,6 +305,10 @@ const registerMultiGroups = (event) => {
         { group_name: 'support_beams', tags: [
             "#tfc:support_beams",
             "#beneath:support_beams"
+        ]},
+        { group_name: 'scribing_tables', tags: [
+            '#tfc:scribing_tables',
+            "#beneath:scribing_tables"
         ]}
     ]
 

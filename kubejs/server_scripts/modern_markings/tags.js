@@ -2,11 +2,6 @@
 
 const registerModernMarkingsItemTags = (event) => {
 
-	global.MODERN_MARKINGS_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	});
-
 	const floor_markings = [
 		'ags_modernmarkings:floor_marking_nostep', 
 		'ags_modernmarkings:floor_marking_white_arrow', 
