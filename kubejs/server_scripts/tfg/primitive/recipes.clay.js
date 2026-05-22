@@ -222,6 +222,14 @@ function registerTFGClayRecipes(event) {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	// Forge hammer clay
+	event.recipes.gtceu.forge_hammer("clay_unpack")
+		.itemInputs('minecraft:clay')
+		.itemOutputs('4x minecraft:clay_ball')
+		.duration(200)
+		.EUt(6)
+
+
 	//Hardened Clay
 	event.recipes.firmalife.drying(
 		"tfg:hardened_clay",
