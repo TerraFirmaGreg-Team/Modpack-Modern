@@ -46,9 +46,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cedr",
+			"title": "Żywotnik, cedr ",
 			"item": "tag:tfc:white_cedar_logs",
-			"text": "$(bold)White Cedar$()$(br)$(thing)Rainfall$(): 100 — 220mm$(br)$(thing)Temperature$(): -13.9 — 4.3°C$(br2)$(bold)Atlas Cedar$()$(br)$(thing)Rainfall$(): 165 — 500mm$(br)$(thing)Temperature$(): 8.0 — 13.4°C"
+			"text": "$(bold)Żywotnik zachodni$()$(br)$(thing)Opady$(): 100 — 220mm$(br)$(thing)Temperatura$(): -13.9 — 4.3°C$(br2)$(bold)Cedr atlaski$()$(br)$(thing)Opady$(): 165 — 500mm$(br)$(thing)Temperatura$(): 8.0 — 13.4°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -58,13 +58,13 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Cyprys, żywotnik olbrzymi",
+			"title": "Cypress, Redcedar",
 			"item": "tag:afc:cypress_logs",
 			"text": "$(bold)Slender Cypress$()$(br)$(thing)Rainfall$(): 100 — 260mm$(br)$(thing)Temperature$(): 2.5 — 15.3°C$(br2)$(bold)Bald Cypress$()$(br)$(thing)Rainfall$(): 360 — 500mm$(br)$(thing)Temperature$(): -1.1 — 15.3°C$(br2)$(bold)Weeping Cypress$()$(br)$(thing)Rainfall$(): 290 — 415mm$(br)$(thing)Temperature$(): -8.4 — 4.3°C"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(bold)Redcedar$()$(br)$(thing)Rainfall$(): 410 — 500mm$(br)$(thing)Temperature$(): -4.8 — 9.8°C"
+			"text": "$(bold)Żywotnik olbrzymi$()$(br)$(thing)Opady$(): 410 — 500mm$(br)$(thing)Temperatura$(): -4,8 — 9,8°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -80,9 +80,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Jodła",
+			"title": "Jodła/Jedlica",
 			"item": "tag:tfc:douglas_fir_logs",
-			"text": "$(bold)Douglas Fir$()$(br)$(thing)Rainfall$(): 305 — 500mm$(br)$(thing)Temperature$(): -10.3 — 6.1°C$(br2)$(bold)Mountain Fir$()$(br)$(thing)Rainfall$(): 220 — 345mm$(br)$(thing)Temperature$(): -1.1 — 11.6°C$(br2)$(bold)Balsam Fir$()$(br)$(thing)Rainfall$(): 210 — 500mm$(br)$(thing)Temperature$(): -13.9 — -1.1°C"
+			"text": "$(bold)Jedlica zielona$()$(br)$(thing)Opady$(): 305 — 500mm$(br)$(thing)Temperatura$(): -10.3 — 6.1°C$(br2)$(bold)Jodła górska$()$(br)$(thing)Opady$(): 220 — 345mm$(br)$(thing)Temperatura$(): -1.1 — 11.6°C$(br2)$(bold)Jodła balsamiczna$()$(br)$(thing)Opady$(): 210 — 500mm$(br)$(thing)Temperatura$(): -13.9 — -1.1°C"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -134,7 +134,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Dąb, Dąb barwierski",
+			"title": "Dąb",
 			"item": "tag:tfc:oak_logs",
 			"text": "$(bold)Pin Oak$()$(br)$(thing)Rainfall$(): 210 — 320mm$(br)$(thing)Temperature$(): -8.4 — 6.1°C$(br2)$(bold)Live Oak$()$(br)$(thing)Rainfall$(): 390 — 500mm$(br)$(thing)Temperature$(): 0.7 — 13.4°C$(br2)$(bold)Black Oak$()$(br)$(thing)Rainfall$(): 150 — 330mm$(br)$(thing)Temperature$(): 11.6 — 20.7°C"
 		},

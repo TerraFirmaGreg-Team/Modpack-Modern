@@ -15,10 +15,13 @@
 	"block.tfg.lentil": "Lencse",
 	"block.tfg.cucumber": "Uborka",
 	"block.tfg.radish": "Retek",
+	"block.tfg.ghost_pepper": "Szellem paprika",
 	"item.tfg.cucumber_product": "Uborka",
 	"item.tfg.radish_product": "Retek",
+	"item.tfg.ghost_pepper_product": "Szellem paprika",
 	"material.tfg.latex": "Kaucsuktej",
 	"material.tfg.chalk": "Kréta",
+	"tfg.ore_vein.nether_anthracite": "Antracit",
 	"tfg.tooltip.hotornot_floating_equipment": "§7Megakadályozz minden olyan §levegőnél könnyebb§7 gázt attól, hogy felemeljen.§r",
 	"tfg.ore_patchouli_info.height": "Magasság",
 	"tfg.ore_patchouli_info.radius": "Sugár",
@@ -33,5 +36,8 @@
 	"quests.stone_age.iron_flask.title": "Vas Kulacs",
 	"quests.tfg_tips.hazard_materials.title": "Vestélyes Anyagok",
 	"quests.tfg_tips.chalk.title": "Kréta",
-	"quests.tfg_tips.firmaciv.title": "Firma: Civilization"
+	"quests.tfg_tips.firmaciv.title": "Firma: Civilization",
+	"quests.tfg_tips.greenhouse.title": "Üvegház",
+	"quests.tfg_tips.beehive.title": "Méhkaptár",
+	"quests.tfg_tips.juicer.title": "Facsaró"
 }
