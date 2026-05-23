@@ -59,6 +59,7 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.effect('minecraft:weakness')
 		.speedFactor(0.9)
 		.tagItem('tfg:plants/beneath')
+		.lootItem('tfc:straw')
 
 	event.create('tfg:plant/wither_rose', 'tfg:decorative_plant')
 		.soundType('crop')
