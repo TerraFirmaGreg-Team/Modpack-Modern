@@ -2708,44 +2708,6 @@
             ]
         },
         {
-            "pakku_id": "0Cv6dO3ZGvsziQH1",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "clean-swing-through-grass"
-            },
-            "name": {
-                "curseforge": "Clean Swing Through Grass"
-            },
-            "id": {
-                "curseforge": "915308"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cleanswing-1.20-1.8.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5962/530/cleanswing-1.20-1.8.jar",
-                    "id": "5962530",
-                    "parent_id": "915308",
-                    "hashes": {
-                        "sha1": "c128e24c47ab4a389b3868ff6913ee0631f254e8",
-                        "md5": "84f9950e09245d82f72a6461f57ca30f"
-                    },
-                    "required_dependencies": [],
-                    "size": 8305,
-                    "date_published": "2024-12-04T16:23:38.883Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Zx4piwuLwghFhuAX",
             "pakku_links": [
                 "vcmbP1ZpBZtFq3zT"
@@ -4996,6 +4958,74 @@
                     "required_dependencies": [],
                     "size": 398066,
                     "date_published": "2025-04-13T13:09:28.168539Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PT47m7fkUvJ5mI7b",
+            "pakku_links": [
+                "3Hn4sTVbBvKyQJJS"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "cut-through",
+                "modrinth": "cut-through"
+            },
+            "name": {
+                "curseforge": "Cut Through",
+                "modrinth": "Cut Through"
+            },
+            "id": {
+                "curseforge": "969423",
+                "modrinth": "Dk6su9JN"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CutThrough-v8.0.2-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5137/980/CutThrough-v8.0.2-1.20.1-Forge.jar",
+                    "id": "5137980",
+                    "parent_id": "969423",
+                    "hashes": {
+                        "sha1": "47b151e9a38fa6052671cc74bb21ffd7a8494d41",
+                        "md5": "271dffd231164a07c4f855f31a78afa5"
+                    },
+                    "required_dependencies": [
+                        "495476"
+                    ],
+                    "size": 57764,
+                    "date_published": "2024-02-26T13:32:35.213Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "CutThrough-v8.0.2-1.20.1-Forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Dk6su9JN/versions/ZD7nA4WX/CutThrough-v8.0.2-1.20.1-Forge.jar",
+                    "id": "ZD7nA4WX",
+                    "parent_id": "Dk6su9JN",
+                    "hashes": {
+                        "sha512": "62a89186a53f2cb3e4bd22252dd049152053a1ae312d6421be528ac7e5fdda2883bf5bd7ec8b57b8af69c6f952cdb804d39acf5e85ddffb1e7d1a516c98d0c1c",
+                        "sha1": "47b151e9a38fa6052671cc74bb21ffd7a8494d41"
+                    },
+                    "required_dependencies": [
+                        "QAGBst4M"
+                    ],
+                    "size": 57764,
+                    "date_published": "2024-02-26T13:32:39.064885Z"
                 }
             ]
         },
@@ -12817,66 +12847,66 @@
             ]
         },
         {
-			"pakku_id": "5Zbqzu2oUephfrw4",
-			"type": "MOD",
-			"side": "BOTH",
-			"slug": {
-				"curseforge": "reliable-remover",
-				"modrinth": "reliable-remover"
-			},
-			"name": {
-				"curseforge": "Reliable Remover",
-				"modrinth": "Reliable Remover"
-			},
-			"id": {
-				"curseforge": "1420447",
-				"modrinth": "pLxsKvNt"
-			},
-			"files": [
-				{
-					"type": "curseforge",
-					"file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
-					"mc_versions": [
-						"1.20.1"
-					],
-					"loaders": [
-						"forge"
-					],
-					"release_type": "release",
-					"url": "https://edge.forgecdn.net/files/8025/360/reliable_remover-forge-1.20.1-2.3.0.jar",
-					"id": "8025360",
-					"parent_id": "1420447",
-					"hashes": {
-						"sha1": "958ad01d461e6706dd8788b772e8ac25c005d320",
-						"md5": "a616942d10407f28f6888100f779a260"
-					},
-					"required_dependencies": [],
-					"size": 177986,
-					"date_published": "2026-05-02T08:26:57.963Z"
-				},
-				{
-					"type": "modrinth",
-					"file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
-					"mc_versions": [
-						"1.20.1"
-					],
-					"loaders": [
-						"forge"
-					],
-					"release_type": "release",
-					"url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/lYkyEAA3/reliable_remover-forge-1.20.1-2.3.0.jar",
-					"id": "lYkyEAA3",
-					"parent_id": "pLxsKvNt",
-					"hashes": {
-						"sha512": "6c26015c07c30df09c04bdf9d592371b8a6adb5107d637e7a26995dbf21e3fe12555a2dc9f3b2e2a1530c0baa543343b7b017030727ba7d265ac5b448d7737cd",
-						"sha1": "958ad01d461e6706dd8788b772e8ac25c005d320"
-					},
-					"required_dependencies": [],
-					"size": 177986,
-					"date_published": "2026-05-02T08:26:58.141797Z"
-				}
-			]
-		},
+            "pakku_id": "5Zbqzu2oUephfrw4",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "reliable-remover",
+                "modrinth": "reliable-remover"
+            },
+            "name": {
+                "curseforge": "Reliable Remover",
+                "modrinth": "Reliable Remover"
+            },
+            "id": {
+                "curseforge": "1420447",
+                "modrinth": "pLxsKvNt"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8025/360/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "8025360",
+                    "parent_id": "1420447",
+                    "hashes": {
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320",
+                        "md5": "a616942d10407f28f6888100f779a260"
+                    },
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:57.963Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/pLxsKvNt/versions/lYkyEAA3/reliable_remover-forge-1.20.1-2.3.0.jar",
+                    "id": "lYkyEAA3",
+                    "parent_id": "pLxsKvNt",
+                    "hashes": {
+                        "sha512": "6c26015c07c30df09c04bdf9d592371b8a6adb5107d637e7a26995dbf21e3fe12555a2dc9f3b2e2a1530c0baa543343b7b017030727ba7d265ac5b448d7737cd",
+                        "sha1": "958ad01d461e6706dd8788b772e8ac25c005d320"
+                    },
+                    "required_dependencies": [],
+                    "size": 177986,
+                    "date_published": "2026-05-02T08:26:58.141797Z"
+                }
+            ]
+        },
         {
             "pakku_id": "zQAe1eid9EE5PMwK",
             "type": "MOD",
