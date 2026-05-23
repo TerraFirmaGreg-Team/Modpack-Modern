@@ -14125,6 +14125,67 @@
             ]
         },
         {
+            "pakku_id": "Lav8mlLxB6OjEPwy",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "strut-your-stuff",
+                "modrinth": "strut-your-stuff"
+            },
+            "name": {
+                "curseforge": "Strut Your Stuff (Library)",
+                "modrinth": "Strut Your Stuff"
+            },
+            "id": {
+                "curseforge": "1486746",
+                "modrinth": "sHO3MhQx"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "struts-1.1.0+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7796/581/struts-1.1.0+mc1.20.1.jar",
+                    "id": "7796581",
+                    "parent_id": "1486746",
+                    "hashes": {
+                        "sha1": "0fb4e23f58038ff0745c3f04663256b65a0f2a8c",
+                        "md5": "95430fd7b9683a13790bb87e5ef0a5da"
+                    },
+                    "required_dependencies": [],
+                    "size": 177593,
+                    "date_published": "2026-03-22T20:23:17.723Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "struts-1.1.0+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/sHO3MhQx/versions/Rx1n7jwi/struts-1.1.0+mc1.20.1.jar",
+                    "id": "Rx1n7jwi",
+                    "parent_id": "sHO3MhQx",
+                    "hashes": {
+                        "sha512": "1dc12bd0e8f4517fce48e40cc4ed9c84bad62b8723fe7ab32f200d9f18eb4efc649b51537dc96128cc79b01948384f82adf0b5a830e346ce6596b13ea7022dda",
+                        "sha1": "0fb4e23f58038ff0745c3f04663256b65a0f2a8c"
+                    },
+                    "required_dependencies": [],
+                    "size": 177593,
+                    "date_published": "2026-03-22T20:23:16.497595Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "H40iluU8Vao2XSgS",
             "type": "MOD",
             "side": "BOTH",

@@ -1,9 +1,11 @@
 {
+  "desc.framedblocks.blueprint_none": "Nincs",
   "tooltip.framedblocks.one_way_window.dir.east": "Kelet",
   "tooltip.framedblocks.one_way_window.dir.north": "Észak",
   "tooltip.framedblocks.one_way_window.dir.south": "Dél",
   "tooltip.framedblocks.one_way_window.dir.west": "Nyugat",
   "tooltip.framedblocks.one_way_window.face.east": "Kelet",
+  "tooltip.framedblocks.one_way_window.face.none": "Nincs",
   "tooltip.framedblocks.one_way_window.face.north": "Észak",
   "tooltip.framedblocks.one_way_window.face.south": "Dél",
   "tooltip.framedblocks.one_way_window.face.west": "Nyugat"

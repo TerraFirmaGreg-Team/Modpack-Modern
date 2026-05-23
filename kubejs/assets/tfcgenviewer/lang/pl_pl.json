@@ -61,6 +61,7 @@
   "tfcgenviewer.rock_editor.error.layer_already_exists": "Warstwa '%s' już istnieje",
   "tfcgenviewer.rock_editor.error.editor_is_occupied": "Edytor jest zajęty",
   "tfcgenviewer.rock_editor.error.self_referencing_definition.named": "'%s' nie może odwoływać się do samego siebie",
+  "tfcgenviewer.rock_editor.no_mossy_loose": "Bez zamszonych kamieni",
   "rock.tfcgenviewer.unknown": "Nieznana skała",
   "rock.tfc.andesite": "Andezyt",
   "rock.tfc.basalt": "Bazalt",
