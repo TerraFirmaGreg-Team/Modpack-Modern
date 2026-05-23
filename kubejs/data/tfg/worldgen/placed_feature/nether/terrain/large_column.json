@@ -1,9 +1,15 @@
 {
-	"feature": "tfg:nether/tree/mahoe_twig",
+	"feature": "tfg:nether/terrain/large_column",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 20
+			"count": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 40,
+					"min_inclusive": 5
+				}
+			}
 		},
 		{
 			"type": "minecraft:in_square"
@@ -13,10 +19,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 180
+					"below_top": 10
 				},
 				"min_inclusive": {
-					"absolute": 50
+					"above_bottom": 10
 				}
 			}
 		},

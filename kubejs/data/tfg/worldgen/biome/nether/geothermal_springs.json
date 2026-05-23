@@ -94,8 +94,8 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			}
 		],
@@ -103,42 +103,18 @@
 		"monster": [
 			{
 				"type": "minecraft:piglin",
-				"maxCount": 4,
-				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:spider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:skeleton",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombie",
+				"type": "minecraft:hoglin",
 				"maxCount": 4,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:creeper",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 90
-			},
-			{
-				"type": "minecraft:silverfish",
+				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
@@ -150,6 +126,18 @@
 				"weight": 5
 			},
 			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 2,
 				"minCount": 1,
@@ -159,36 +147,48 @@
 				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:swamp_enderman",
+				"type": "species:cliff_hanger",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:dark_oak_enderman",
+				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:bewereager",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 50
 			}
 		],
-		"underground_water_creature": [
+		"underground_water_creature": [],
+		"water_creature": [
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:leaf_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			}
-		],
-		"water_creature": []
+		]
 	},
 	"temperature": 1
 }

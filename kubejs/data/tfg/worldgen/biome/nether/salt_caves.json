@@ -120,12 +120,6 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "minecraft:zombie_horse",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
 				"type": "minecraft:piglin",
 				"maxCount": 3,
 				"minCount": 2,

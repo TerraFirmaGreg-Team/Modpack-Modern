@@ -52,13 +52,14 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.effect('minecraft:darkness')
 		.speedFactor(0.5)
 		.tagItem('tfg:plants/beneath')
+		.tagBlock('minecraft:replaceable')
 
 	event.create('betterend:needlegrass', 'tfg:decorative_plant')
 		.soundType('crop')
-		.mapColor('color_black')
 		.effect('minecraft:weakness')
 		.speedFactor(0.9)
 		.tagItem('tfg:plants/beneath')
+		.tagBlock('minecraft:replaceable')
 		.lootItem('tfc:straw')
 
 	event.create('tfg:plant/wither_rose', 'tfg:decorative_plant')
@@ -67,4 +68,13 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.effect('minecraft:wither')
 		.speedFactor(0.5)
 		.tagItem('tfg:plants/beneath')
+		.tagBlock('minecraft:replaceable')
+
+	event.create('tfg:plant/blackthorn', 'tfg:tall_decorative_plant')
+		.height(2)
+		.soundType('crop')
+		.box(1, 0, 1, 15, 16, 15)
+		.speedFactor(0.7)
+		.tagBoth('tfg:plants/beneath')
+		.tagBlock('minecraft:replaceable')
 }

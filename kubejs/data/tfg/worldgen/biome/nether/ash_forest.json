@@ -116,10 +116,10 @@
 				"weight": 50
 			},
 			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
+				"type": "minecraft:hoglin",
+				"maxCount": 4,
 				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:magma_cube",
@@ -128,22 +128,10 @@
 				"weight": 50
 			},
 			{
-				"type": "minecraft:silverfish",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 10
-			},
-			{
 				"type": "primitive_creatures:golem_2",
 				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
-			},
-			{
-				"type": "minecraft:skeleton",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 20
 			},
 			{
 				"type": "minecraft:phantom",
@@ -153,9 +141,9 @@
 			},
 			{
 				"type": "minecraft:wither_skeleton",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
@@ -166,6 +154,36 @@
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:bewereager",
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			}

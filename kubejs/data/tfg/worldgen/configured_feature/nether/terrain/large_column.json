@@ -1,0 +1,45 @@
+{
+	"type": "tfg:large_dripstone",
+	"config": {
+		"column_radius": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 14,
+				"min_inclusive": 3
+			}
+		},
+		"floor_to_ceiling_search_range": 40,
+		"height_scale": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 2,
+				"min_inclusive": 0.4
+			}
+		},
+		"replaceable_blocks": "#minecraft:nether_carver_replaceables",
+		"max_column_radius_to_cave_height_ratio": 0.33,
+		"min_bluntness_for_wind": 0.45,
+		"min_radius_for_wind": 4,
+		"stalactite_bluntness": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 0.9,
+				"min_inclusive": 0.3
+			}
+		},
+		"stalagmite_bluntness": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 1,
+				"min_inclusive": 0.4
+			}
+		},
+		"wind_speed": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 0.3,
+				"min_inclusive": 0
+			}
+		}
+	}
+}

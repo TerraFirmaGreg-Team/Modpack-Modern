@@ -84,6 +84,7 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/terrain/thorn_vegetation_patch",
 			"tfc:erosion"
 		]
 	],
@@ -120,8 +121,8 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			}
 		],
@@ -135,8 +136,8 @@
 			},
 			{
 				"type": "minecraft:hoglin",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
@@ -161,7 +162,7 @@
 				"type": "minecraft:wither_skeleton",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:enderman",

@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/lush_caves_ceiling",
+	"feature": "tfg:nether/terrain/thorn_vegetation_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 125
+			"count": 40
 		},
 		{
 			"type": "minecraft:in_square"
@@ -29,25 +29,16 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": "minecraft:air"
 			},
-			"direction_of_search": "up",
+			"direction_of_search": "down",
 			"max_steps": 12,
 			"target_condition": {
-				"type": "minecraft:any_of",
-				"predicates": [
-					{
-						"type": "minecraft:solid"
-					},
-					{
-						"type": "minecraft:matching_block_tag",
-						"tag": "minecraft:leaves"
-					}
-				]
+				"type": "minecraft:solid"
 			}
 		},
 		{
 			"type": "minecraft:random_offset",
 			"xz_spread": 0,
-			"y_spread": -1
+			"y_spread": 1
 		},
 		{
 			"type": "minecraft:biome"

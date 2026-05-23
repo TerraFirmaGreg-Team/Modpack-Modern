@@ -1,0 +1,50 @@
+{
+	"type": "lithostitched:composite",
+	"config": {
+		"features": [
+			{
+				"feature": {
+					"type": "minecraft:simple_block",
+					"config": {
+						"to_place": {
+							"type": "minecraft:simple_state_provider",
+							"state": {
+								"Name": "tfc:plant/king_fern",
+								"Properties": {
+									"age": 0,
+									"half": "lower"
+								}
+							}
+						}
+					}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "minecraft:simple_block",
+					"config": {
+						"to_place": {
+							"type": "minecraft:simple_state_provider",
+							"state": {
+								"Name": "tfc:plant/king_fern",
+								"Properties": {
+									"age": 0,
+									"half": "upper"
+								}
+							}
+						}
+					}
+				},
+				"placement": [
+					{
+						"type": "minecraft:random_offset",
+						"xz_spread": 0,
+						"y_spread": 1
+					}
+				]
+			}
+		],
+		"placement_type": "never_cancel"
+	}
+}

@@ -3,44 +3,53 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "tfc:if_then",
+				"type": "lithostitched:composite",
 				"config": {
-					"if": {
-						"feature": {
-							"type": "minecraft:simple_block",
-							"config": {
-								"to_place": {
-									"type": "minecraft:simple_state_provider",
-									"state": {
-										"Name": "tfg:plant/palash",
-										"Properties": {
-											"half": "lower",
-											"age": "3"
+					"features": [
+						{
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "tfg:plant/palash",
+											"Properties": {
+												"half": "lower",
+												"age": "3"
+											}
 										}
 									}
 								}
-							}
+							},
+							"placement": []
 						},
-						"placement": []
-					},
-					"then": {
-						"feature": {
-							"type": "minecraft:simple_block",
-							"config": {
-								"to_place": {
-									"type": "minecraft:simple_state_provider",
-									"state": {
-										"Name": "tfg:plant/palash",
-										"Properties": {
-											"half": "upper",
-											"age": "3"
+						{
+							"feature": {
+								"type": "minecraft:simple_block",
+								"config": {
+									"to_place": {
+										"type": "minecraft:simple_state_provider",
+										"state": {
+											"Name": "tfg:plant/palash",
+											"Properties": {
+												"half": "upper",
+												"age": "3"
+											}
 										}
 									}
 								}
-							}
-						},
-						"placement": []
-					}
+							},
+							"placement": [
+								{
+									"type": "minecraft:random_offset",
+									"xz_spread": 0,
+									"y_spread": 1
+								}
+							]
+						}
+					],
+					"placement_type": "never_cancel"
 				}
 			},
 			"placement": [
