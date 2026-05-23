@@ -276,7 +276,7 @@
 						}
 					},
 					{
-						"biome": "tfg:nether/tar_pools",
+						"biome": "tfg:nether/thorny_brambles",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
 							"depth": [ -1, 0.5 ],
@@ -288,7 +288,7 @@
 						}
 					},
 					{
-						"biome": "tfg:nether/tar_pools",
+						"biome": "tfg:nether/thorny_brambles",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
 							"depth": [ -1, 0.5 ],
@@ -300,7 +300,7 @@
 						}
 					},
 					{
-						"biome": "tfg:nether/thorny_brambles",
+						"biome": "tfg:nether/tar_pools",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
 							"depth": [ -1, 0.5 ],
@@ -312,7 +312,7 @@
 						}
 					},
 					{
-						"biome": "tfg:nether/thorny_brambles",
+						"biome": "tfg:nether/tar_pools",
 						"parameters": {
 							"continentalness": [ -1, 1 ],
 							"depth": [ -1, 0.5 ],
