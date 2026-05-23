@@ -17,9 +17,11 @@ function registerTFGNewWoodBlocks(event) {
         event.create(`tfg:wood/leaves/${wood.name}`, 'tfc:leaves')
 		    .soundType(`${wood.leafSound}`)
 		    .tagBlock('minecraft:mineable/hoe')
+		    .tagBoth('minecraft:leaves')
 			.defaultCutout()
 		    .noDynamicTinting()
 			.twig(`tfg:wood/twig/${wood.name}`)
+		    .mapColor('plant')
 		    .fallenLeaves(leaves => {
 			    leaves.noCollision()
 			    leaves.notSolid()
@@ -42,7 +44,7 @@ function registerTFGNewWoodBlocks(event) {
 	function TFGWoodSaplingRegistry(event, wood) {
         event.create(`tfg:wood/sapling/${wood.name}`, 'tfc:sapling')
 			.soundType(`${wood.leafSound}`)
-            .features(`tfg:${wood.location}/tree/${wood.name}`)
+            .features(`tfg:${wood.location}/tree/${wood.name}_mini`)
 		    .tagBoth('minecraft:saplings')
 		    .tagBlock('tfc:can_be_snow_piled')
 		    .growthDays(wood.daysToGrow)

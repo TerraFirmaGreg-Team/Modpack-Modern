@@ -1,0 +1,15 @@
+[
+	{
+		"action": "remove",
+		"items": [
+			"astikorcarts:animal_cart", 
+			"astikorcarts:supply_cart", 
+			"astikorcarts:plow", 
+			"astikorcarts:wheel"
+		]
+	},
+	{
+		"action": "remove",
+		"pattern": "/tfcastikorcarts:postilion/.*/"
+	}
+]

@@ -44,7 +44,7 @@ function registerTFGMedicineItemTags(event) {
 	event.add('tfg:poison_ingredients', 'tfc:plant/lily_of_the_valley')
 	event.add('tfg:poison_ingredients', 'tfc:plant/pulsatilla')
 	event.add('tfg:poison_ingredients', 'firmalife:food/nightshade_berry')
-	event.add('tfg:poison_ingredients', 'minecraft:red_mushroom')
+	event.add('tfg:poison_ingredients', 'tfg:food/fly_agaric')
 
 	event.add('tfg:regeneration_ingredients', 'tfc:plant/lilac')
 	event.add('tfg:regeneration_ingredients', 'tfc:plant/field_horsetail')

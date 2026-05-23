@@ -1,15 +1,82 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
+### Changes we forgot to write last time
+- Blue Steel hiking boots are now a little slower and Red Steel hiking boots had their step height removed to make them more distinct. Additionally added ambiental stats. (#3998) @SakuraKitsurugi
 ### Changes
-- Increased the render distance in the beneath @Pyritie
-- Reduced the costs of mechanical harvesters, mechanical plows, and display boards
-- Advancedperipherals Inventory Manager is now gated at LuV @ashleney
-- Barrels can't be used in railguns @ashleney
-- Craft Lamp Glass by 4 rather that 1 @TomPlop
+- Reverted stat changes to Blue and Red Steel hiking boots. Blue Steel hiking boots are now faster with lower durability. Step up can be disabled with a toggle in the new SnS update. (#4088) @SakuraKitsurugi
 ### Bug fixes
-- Fix whisk recycling @Ashleney
-- I am once again fixing a linux crash @Pyritie
+
+## [0.12.8] - 17-05-2026
+### Breaking changes
+- Reduced the costs of mechanical harvesters, mechanical plows, and display boards @Pyritie
+- Barrels can't be used in railguns @ashleney
+- Removed vanilla brown and red small mushrooms from the beneath, added Fly Agaric instead (#4039) @SakuraKitsurugi
+- Shroomlight crafting now only needs any 4 mushrooms instead of specifically brown and red @SakuraKitsurugi
+- Removed the cutter recipe for planks to lumber, added a cutter recipe for planks to slabs, and added a packer recipe for planks to lumber (so now you can automate wood slabs without needing mechanical crafters) (#3973) @SokvisalMong
+- Fixed sequenced assembly recipes for train tracks (#4024) @SakuraKitsurugi
+- Fixed recipe conflicts for normal and wide train tracks (#3986) @SakuraKitsurugi
+- Rubber belts now work with Steel and Aluminium shafts, instead of Steel and Basic shafts @Pyritie
+### Changes
+- Added tameable foxes! They work similarly to tamed cats. Check the Pets entry in the field guide for more information (#4032) @SakuraKitsurugi
+- Updated the field guide Pets entry with information on where to find each wolf variant @SakuraKitsurugi
+- Added asphalt roads! These are slightly faster than concrete roads (1.4x instead of 1.3x), have their own "pouring" process, and can be made from Gilsonite and Oil Tars (found near oil spouts and other oil indicators), are renewable, and can also be painted with many different road markings via the Spray Can and new Stencils. Check the field guide for information about how it all works. (#4002) @jmecn
+- Added many custom entity icons for Xaeros. Normally these are only visible when holding down Tab, but you can enable them all the time via Xaeros' minimap settings. (#3608, #4009) @Nezumi-Remis
+- Improved the Rotten Voiding Cover so now you can specify how rotten the item has to be for voiding. Set the "minimum days" to zero to keep the current behaviour (only void when completely rotten) @ashleney
+- Increased the render distance in the beneath @Pyritie
+- Advanced Peripherals Inventory Manager is now gated at LuV @ashleney
+- Buffed the amount of Lamp Glass per craft from 1 to 4 (#4022) @TomPlop
+- Any compostable item can now be used in the Unposter, and improved the Unposter field guide entry @SakuraKitsurugi
+- Updated the default configs for Distant Horizons 3.0+ (#3982) @Cage-With-Human-Parts
+- Ender dust can now be used as nitrogen/phosphorus fertiliser (#3982) @pehala
+- Railguns can now have the target dimension be the same as the source dimension (i.e. you can now send stuff between different bases on the overworld) @ashleney
+- Added recipes for creating the weathered versions of firmalife greenhouse blocks (#4040) @Astrimitsu
+- Increased the tank size of encased fans to match the ore washer @Electrolyte220
+- Added recipes to craft hardened clay blocks (#3971) @Froffy025
+- Added connected textures for more ad astra deco blocks (#4051) @SakuraKitsurugi
+### Bug fixes
+- Fixed Flax loot table again (#3977) @applenper
+- Fixed whisk recycling @Ashleney
+- Fixed the Gas Well detecting explosives so it should now actually work @TomPlop
+- More linux crash fixes @Pyritie
+- Fixed being able to dupe some firmalife foods via crafting table (#4038) @ashleney
+- Fixed the bloomery field guide so it no longer lists Coal as a valid fuel @Pyritie
+- Fixed huge FPS drops when holding Fish Roe and Syringes (#3004) @Redeix
+- Updated the models of Seals and Mongeese and fixed their Create Hats @SakuraKitsurugi
+- Fixed the coke oven recipe for bituminous coal blocks giving way less creosote than expected (#3986) @SakuraKitsurugi
+- Fixed not being able to use steam in a blaze burner @Pyritie
+- Fixed map block colors of magma, semiheady ammoniacal water, and muddy water @SakuraKitsurugi
+### Shaders
+- Fixed a crash with very high and ultra settings
+- Added partial support for Caelum and TFC Caelum
+- Now each planet has its own wind speed, which determines the speed of plant waving and the speed of water waves
+- Fixed a bug with working glowing fireboxes
+- Fixed a bug with double plants where they wave strangely
+- Fixed a bug with glowing glass from create
+- Added more blocks to block.properties
+### Mod updates
+Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are client-side mods so you can add them back if you'd like, and they've been added to the optional mod list.
+#### Digger Helmet
+- Fixed digger helmet disappearing when broken @Thomasx0
+- Fixed digger helmet immediately breaking when taking "magic" damage (such as nightshade's instant death effect) @Thomasx0
+#### Roads 'n' Roofs
+- Potentially fixed the huge lag spikes from doing massive concrete road pours @Therighthon
+#### TerraFirmaCraft
+- Added a fallback for the rock surface height cache. This should prevent some crashes with Distant Horizons.
+- Fixed anvil updates not syncing to other players
+- Fixed colored steel buckets not displaying fluid color
+- Fixed crucibles blocking rain from being viewed by forges
+- Fixed not being able to replace flowing fluid with a source of the same fluid type using a TFC bucket
+- Fixed TFC fluids not preventing fall damage
+- Fixed donkeys being able to hold multiple chests
+- Allow making yellow dye from native gold powder
+- Fixed some issues with mangrove generation
+- Fixed some issues with submerged tree generation
+- Fixed an interaction where barrel racks would break when moved
+- Fixed an issue where rats might try to despawn on the client only
+- Fixed a problem where cats appeared sleeping even when they were not
 
 ## [0.12.7] - 04-05-2026
 ### Changes

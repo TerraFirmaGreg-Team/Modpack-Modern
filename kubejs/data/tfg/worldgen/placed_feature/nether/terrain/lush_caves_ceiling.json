@@ -13,7 +13,7 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 128
+					"absolute": 150
 				},
 				"min_inclusive": {
 					"above_bottom": 48
@@ -29,7 +29,16 @@
 			"direction_of_search": "up",
 			"max_steps": 12,
 			"target_condition": {
-				"type": "minecraft:solid"
+				"type": "minecraft:any_of",
+				"predicates": [
+					{
+						"type": "minecraft:solid"
+					},
+					{
+						"type": "minecraft:matching_block_tag",
+						"tag": "minecraft:leaves"
+					}
+				]
 			}
 		},
 		{

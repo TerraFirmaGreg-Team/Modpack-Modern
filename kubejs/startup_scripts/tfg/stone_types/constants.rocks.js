@@ -437,7 +437,6 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 		loose: 'beneath:blackstone_pebble',
 		brick: 'beneath:blackstone_brick',
 		aqueduct: 'beneath:blackstone_aqueduct',
-		gravel: 'tfg:tuff_gravel',
 		raw: generateForms('blackstone', 'minecraft:%s'),
 		cobble: generateFormsExisting('blackstone', 'tfg:rock/cobble_%s', { texture: 'minecraft:block/blackstone_top' },
 			generateForms('blackstone', 'tfg:rock/mossy_cobble_%s')),
@@ -513,6 +512,36 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 			{ block: 'tfg:rock/chiseled_tuff_bricks' }
 		]
 	}),
+	// Vanilla sulfur
+	"glauberite": {
+		material: 'tfg:sedimentary_carbonate',
+		tfcTag: 'tfc:sedimentary_items',
+		stonecutterTag: 'tfg:stone_types/glauberite',
+		isTFC: false,
+		collapsible: false,
+		sound: 'tuff',
+		mapColor: 'color_yellow',
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
+		raw: generateForms('glauberite', 'tfg:rock/%s'),
+		bricks: generateForms('glauberite', 'tfg:rock/bricks_%s'),
+		polished: generateForms('glauberite', 'tfg:rock/polished_%s'),
+		chiseled: { block: 'tfg:rock/chiseled_glauberite' }
+	},
+	// Vanilla cinnabar
+	"aragonite": {
+		material: 'tfg:sedimentary_carbonate',
+		tfcTag: 'tfc:sedimentary_items',
+		stonecutterTag: 'tfg:stone_types/aragonite',
+		isTFC: false,
+		collapsible: false,
+		sound: 'dripstone_block',
+		mapColor: 'terracotta_red',
+		dimensions: ['minecraft:overworld', 'minecraft:the_nether', 'ad_astra:venus'],
+		raw: generateForms('aragonite', 'tfg:rock/%s'),
+		bricks: generateForms('aragonite', 'tfg:rock/bricks_%s'),
+		polished: generateForms('aragonite', 'tfg:rock/polished_%s'),
+		chiseled: { block: 'tfg:rock/chiseled_aragonite' }
+	},
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	// MOON ROCKS

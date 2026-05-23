@@ -1,4 +1,5 @@
 {
+  "item.sns.blue_steel_toe_hiking_boots": "Obuwie ochronne z niebieskiej stali",
   "item.sns.buckle": "Klamra",
   "item.sns.burlap_sack": "Worek jutowy",
   "item.sns.frame_pack": "Plecak górski",
@@ -27,8 +28,8 @@
   "sns.advancements.leather_sack.title": "Skórzany worek",
   "sns.advancements.straw_basket.title": "Słomiany koszyk",
   "sns.creative_tab.sacks": "Sacks 'N Such",
-  "sns.disabled": "Nieaktywne",
-  "sns.enabled": "Aktywny",
+  "sns.disabled": "Wyłączone",
+  "sns.enabled": "Włączony",
   "sns.extra_fall_distance": "Odległość upadku",
   "sns.key.openItemContainer": "Otwórz pojemnik",
   "sns.stack_name.mob_net.with_mob": "%s (%s)",

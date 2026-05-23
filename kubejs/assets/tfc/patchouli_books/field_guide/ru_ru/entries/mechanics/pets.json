@@ -1,52 +1,155 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Домашние животные",
+  "name": "Pets",
   "category": "tfc:mechanics",
   "icon": "minecraft:lead",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)Домашние животные$() - это животные, которые функционируют очень похоже на $(l:mechanics/animal_husbandry)Домашний скот$(), но не дают полезных продуктов. Вместо этого они могут выполнять команды, следовать за вами дома, контролировать вредителей и помогать в охоте."
+      "text": "$(thing)Pets$() are animals that function quite similar to $(l:mechanics/animal_husbandry)Livestock$(), but have no useful products. Instead, they can obey commands, follow you around your home, control pests, and help you hunt."
     },
     {
       "type": "patchouli:text",
-      "text": "Домашние животные признают определенного игрока своим $(thing)Хозяином$(). Чтобы стать хозяином домашнего животного, нужно покормить его, чтобы повысить его привязанность выше 15%%. Домашние животные будут выполнять только те команды, которые исходят от их хозяина.$(br2)Клик по домашнему животному $(l:mechanics/dye)красителем$() меняет цвет его ошейника."
+      "text": "Pets recognize a certain player as their $(thing)Owner$(). To become a pet's owner, feed it to raise its familiarity above 15%%. Pets will only obey commands that come from their owner.$(br2)Clicking on a pet with $(l:mechanics/dye)dye$() changes its collar color."
     },
     {
       "type": "patchouli:entity",
-      "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
+      "entity": "tfc:dog{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16,TFCWolfVariant:8}",
       "scale": 0.7,
-      "text": "Собака."
+      "text": "A dog."
     },
     {
       "type": "patchouli:text",
-      "text": "Собаки - это домашние животные, которые едят зерновые, овощи и мясо, будь то испорченное или нет. Они помогут вам охотиться практически на любого наземного хищника или добычу."
+      "text": "Dogs are a pet that eats grains, vegetables, and meat, rotten or not rotten. They will help you hunt most any land predator or prey."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Dog Variants",
+      "text": "Dogs come in multiple variants that depend on what type of wolf it was domesticated from.$(br2)The next pages show a table of the climates where specific wolf variants can be found."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/dog_variants.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "tfc:table",
+      "strings": [
+        {
+          "text": "Variant",
+          "bold": true
+        },
+        {
+          "text": "Местность",
+          "bold": true
+        },
+        {
+          "text": "Pale"
+        },
+        {
+          "text": "Cold Desert, Temperate, Humid Oceanic (Plains)"
+        },
+        {
+          "text": "Ashen"
+        },
+        {
+          "text": "Arctic, Subarctic (Forests)"
+        },
+        {
+          "text": "Чёрный"
+        },
+        {
+          "text": "Tundra, Humid Subarctic (Forests)"
+        },
+        {
+          "text": "Каштан"
+        },
+        {
+          "text": "Tundra, Humid Subarctic (Plains)"
+        },
+        {
+          "text": "Rusty"
+        },
+        {
+          "text": "Humid Subtropical, Tropical Rainforest (Plains)"
+        },
+        {
+          "text": "Snowy"
+        },
+        {
+          "text": "Arctic, Subarctic (Plains)"
+        },
+        {
+          "text": "Spotted"
+        },
+        {
+          "text": "Hot Desert, Subtropical, Tropical Savanna (Forests)"
+        },
+        {
+          "text": "Striped"
+        },
+        {
+          "text": "Hot Desert, Subtropical, Tropical Savanna (Plains)"
+        },
+        {
+          "text": "Woods"
+        },
+        {
+          "text": "Temperate (Forests)"
+        }
+      ],
+      "text": "",
+      "title": "Wolf Variant Locations",
+      "legend": [],
+      "columns": 1,
+      "first_column_width": 45,
+      "column_width": 195,
+      "row_height": 12,
+      "left_buffer": 2,
+      "top_buffer": 12,
+      "draw_background": false
+    },
+    {
+      "type": "patchouli:empty",
+      "draw_filler": false
     },
     {
       "type": "patchouli:entity",
       "entity": "tfc:cat{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
       "scale": 0.7,
-      "text": "Кот."
+      "text": "A cat."
     },
     {
       "type": "patchouli:text",
-      "text": "Коты - это домашние животные, которые едят зерновые, приготовленное мясо и молочные продукты. Они помогут вам охотиться на наземную добычу и мелкую рыбу. Дома они будут убивать вредителей без запроса. Коты не всегда слушаются, когда им говорят сидеть."
+      "text": "Cats are a pet that eats grains, cooked meats, and dairy products. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Cats do not always listen when being told to sit.$(br2)Variants: Black, British Shorthair, Calico, Jellie, Persian, Ragdoll, Red, Siamese, Tabby, White."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "tfg:fox{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,FoxType:1}",
+      "scale": 0.7,
+      "text": "A fox."
     },
     {
       "type": "patchouli:text",
-      "text": "Ответственные владельцы домашних животных должны научиться контролировать своего питомца. К счастью, это легко. Нажимая $(item)$(k:key.use)$() при удержании $(item)$(k:key.sneak)$() с пустой рукой, можно открыть $(thing)Экран домашнего животного$(). Этот экран содержит ряд команд, которые можно использовать, чтобы сказать питомцу, что делать: $(thing)Расслабься$(), $(thing)Мы дома$(), $(thing)Сидеть$(), $(thing)Иди за мной$() и $(thing)Охоться со мной$()."
+      "text": "Foxes are a pet that eats any edible food. They will help you hunt land prey and small fish. When at home, they will kill pests without being asked to. Foxes do not always listen when being told to sit.$(br2)Variants: Red, Snow."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Расслабься$() - это стандартное состояние домашних животных, и отдавая им команду, они возвращаются в это состояние. Если домашнее животное находится дома, оно будет бродить по территории, но не уйдет, и будет спать один раз в день. Если оно слишком далеко от дома, оно будет бесцельно ходить."
+      "text": "Responsible pet owners must learn to control their pet. Luckily, this is easy. By pressing $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$() with an empty hand, the $(thing)Pet Screen$() may be opened. This screen contains a number of commands that can be used to tell the pet what to do: $(thing)Relax$(), $(thing)We're Home$(), $(thing)Sit$(), $(thing)Follow Me$(), and $(thing)Hunt With Me$()."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Мы дома$() устанавливает домашнюю позицию для домашнего животного. Это говорит животному, что во время отдыха оно должно оставаться в этой общей области. Сообщение животному, что оно дома, не меняет его текущую активность.$(br2)$(thing)Сидеть$() говорит домашнему животному сесть там, где оно находится. Однако, у животных есть свои мысли, и они в конечном итоге заскучают и встанут!"
+      "text": "$(thing)Relax$() is the default state of pets, and commanding them returns them to this state. If a pet it at home, it will wander around the property, but not leave, and sleep once a day. If it is too far from home, it will walk aimlessly."
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Охоться со мной$() говорит домашнему животному следовать за вами и вступать в бой, когда вы атакуете или когда вас атакуют. Домашние животные будут атаковать только тех животных, на которых они могут напасть (например, коты не могут помочь атаковать медведей!).$(br2)$(thing)Иди за мной$() то же самое, что и охоться со мной, но домашнее животное не будет рисковать в бою."
+      "text": "$(thing)We're Home$() sets the home position of the pet. This tells the animal that it should, when relaxing, stay in that general area. Telling an animal that it is at home does not change the activity it is currently doing.$(br2)$(thing)Sit$() tells the pet to sit where it is. However, animals have minds of their own, and will eventually get bored and stand up!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Hunt With Me$() tells the pet to follow you, and engage in combat when you attack or are attacked. Pets will only attack animals that they are able to (for example, cats and foxes cannot help attack bears!).$(br2)$(thing)Follow Me$() is the same as Hunt With Me, but the pet will not risk itself in combat."
     }
   ],
   "read_by_default": true

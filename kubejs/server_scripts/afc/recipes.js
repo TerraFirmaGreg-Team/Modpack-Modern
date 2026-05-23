@@ -5,13 +5,8 @@
  * @param {Internal.RecipesEventJS} event 
  */
 const registerAFCRecipes = (event) => {
-
+	
 	// #region Removes
-
-	global.AFC_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
 
 	event.remove({ id: "afc:pot/rubber" })
 	event.remove({ id: "afc:tree_tapping/hevea_latex" })
@@ -20,7 +15,7 @@ const registerAFCRecipes = (event) => {
 	event.remove({ id: "afc:crafting/1_maple_sugar" })
 	event.remove({ id: "afc:crafting/0_birch_sugar_bucket" })
 	event.remove({ id: "afc:crafting/0_maple_sugar_bucket" })
-
+	
 
 	// #endregion
 

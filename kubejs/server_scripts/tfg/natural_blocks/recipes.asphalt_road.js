@@ -15,8 +15,8 @@ function registerTFGAsphaltRoadRecipes(event) {
 	}
 
 	tarExtract('oil_tar', 'tfg:oil_tar', 'gtceu:oil', 10)
-	//tarExtract('raw_oil_tar', 'tfg:raw_oil_tar', 'gtceu:oil_medium', 10)
-	//tarExtract('heavy_oil_tar', 'tfg:heavy_oil_tar', 'gtceu:oil_heavy', 10)
+	tarExtract('raw_oil_tar', 'tfg:raw_oil_tar', 'gtceu:oil_medium', 10)
+	tarExtract('heavy_oil_tar', 'tfg:heavy_oil_tar', 'gtceu:oil_heavy', 10)
 
 	const tarSolidify = (id, fluidId, outputBlock) => {
 		event.recipes.gtceu.fluid_solidifier(`tfg:asphalt/tar_solidify/${id}`)
@@ -27,21 +27,21 @@ function registerTFGAsphaltRoadRecipes(event) {
 	}
 
 	tarSolidify('oil', 'gtceu:oil', 'tfg:oil_tar')
-	//tarSolidify('raw_oil', 'gtceu:oil_medium', 'tfg:raw_oil_tar')
-	//tarSolidify('heavy_oil', 'gtceu:oil_heavy', 'tfg:heavy_oil_tar')
+	tarSolidify('raw_oil', 'gtceu:oil_medium', 'tfg:raw_oil_tar')
+	tarSolidify('heavy_oil', 'gtceu:oil_heavy', 'tfg:heavy_oil_tar')
 
 	event.recipes.gtceu.macerator('tfg:asphalt/gilsonite_dust')
 		.itemInputs('1x tfg:gilsonite')
 		.itemOutputs('1x #forge:dusts/gilsonite')
 		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
+		.EUt(2)
 
 	event.recipes.gtceu.macerator('tfg:asphalt/macerate/tar_to_carbon')
 		.itemInputs('1x #tfg:asphalt_tars')
 		.itemOutputs('1x gtceu:carbon_dust')
 		.chancedOutput('1x #forge:dusts/gilsonite', 2500, 0)
 		.duration(160)
-		.EUt(GTValues.VH[GTValues.LV])
+		.EUt(2)
 
 	event.recipes.gtceu.mixer('tfg:asphalt/binder')
 		.itemInputs('1x tfg:tar_chunk', '4x #tfg:stone_dusts')
@@ -64,14 +64,14 @@ function registerTFGAsphaltRoadRecipes(event) {
 		.EUt(GTValues.VA[GTValues.MV])
 
 	event.recipes.gtceu.assembler('tfg:asphalt/asphalt_road_hot')
-		.itemInputs('16x rnr:base_course')
-		.inputFluids(Fluid.of('tfg:asphalt_mix', 1000))
-		.itemOutputs('16x tfg:asphalt_road_hot')
+		.itemInputs('rnr:base_course')
+		.inputFluids(Fluid.of('tfg:asphalt_mix', 60))
+		.itemOutputs('tfg:asphalt_road_hot')
 		.circuit(1)
 		.duration(100)
 		.EUt(GTValues.VHA[GTValues.MV])
 
-	event.recipes.greate.mixing('16x tfg:asphalt_road_hot', [Fluid.of('tfg:asphalt_mix', 1000), '16x rnr:base_course'])
+	event.recipes.greate.mixing('tfg:asphalt_road_hot', [Fluid.of('tfg:asphalt_mix', 60), 'rnr:base_course'])
 		.recipeTier(2)
 		.heated()
 		.id('tfg:create/mixer/asphalt_road_hot')
@@ -86,7 +86,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 		.recipeTier(2)
 		.id('greate:pressing/asphalt_road_hot')
 
-	event.recipes.gtceu.fluid_heater('tfg:asphalt/rubble_to_mix')
+	event.recipes.gtceu.extractor('tfg:asphalt/rubble_to_mix')
 		.itemInputs('1x tfg:asphalt_rubble')
 		.outputFluids(Fluid.of('tfg:asphalt_mix', 40))
 		.duration(160)

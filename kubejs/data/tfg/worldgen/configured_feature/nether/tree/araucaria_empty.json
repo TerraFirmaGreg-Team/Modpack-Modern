@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:disk",
+	"config": {
+		"half_height": 1,
+		"radius": 1,
+		"state_provider": {
+			"fallback": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "tfg:pale_moss_block"
+				}
+			},
+			"rules": [
+				{
+					"if_true": {
+						"type": "minecraft:matching_block_tag",
+						"tag": "forge:stone"
+					},
+					"then": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:pale_moss_block"
+						}
+					}
+				},
+				{
+					"if_true": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "tfg:pale_moss_block"
+					},
+					"then": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "minecraft:air"
+						}
+					}
+				}
+			]
+		},
+		"target": {
+			"type": "minecraft:matching_block_tag",
+			"tag": "minecraft:nether_carver_replaceables"
+		}
+	}
+}

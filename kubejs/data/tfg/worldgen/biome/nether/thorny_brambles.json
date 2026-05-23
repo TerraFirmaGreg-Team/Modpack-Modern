@@ -1,0 +1,219 @@
+{
+	"carvers": {
+		"air": "minecraft:nether_cave"
+	},
+	"downfall": 0.5,
+	"effects": {
+		"fog_color": 4423013,
+		"additions_sound": {
+			"sound": "tfg:ambient.middle_nether.additions",
+			"tick_chance": 0.0015
+		},
+		"ambient_sound": "tfg:ambient.middle_nether.loop",
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "tfg:ambient.middle_nether.mood",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": {
+				"sound_id": "tfg:music.nether"
+			}
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:crimson_spore"
+			},
+			"probability": 0.01
+		},
+		"sky_color": 4423013,
+		"water_color": 4159204,
+		"water_fog_color": 329011,
+		"grass_color": 6466617
+	},
+	"features": [
+		"#tfg:nether_lakes_and_geodes",
+		[],
+		[
+			"tfg:nether/spikes/calcite",
+			"tfg:nether/spikes/mega_calcite"
+		],
+		[],
+		"#tfg:nether_veins",
+		"#tfg:nether_underground_decoration",
+		[
+			"tfg:nether/terrain/spring_lava"
+		],
+		"#tfg:nether_crops",
+		[
+			"tfg:nether/surface/glow_mushroom",
+			"tfg:nether/tree/mahoe",
+			"tfg:nether/tree/mahoe_shrub",
+			"tfg:nether/tree/mahoe_fallen_leaves",
+			"tfg:nether/tree/mahoe_twig",
+			"tfg:nether/tree/beech",
+			"tfg:nether/tree/beech_shrub",
+			"tfg:nether/tree/beech_fallen_leaves",
+			"tfg:nether/tree/beech_twig",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/terrain/flame_vine_ceiling",
+			"tfg:nether/surface/nightshade_moss",
+			"tfg:nether/surface/bellflower_patch",
+			"tfg:nether/surface/moonflower_patch",
+			"tfg:nether/surface/rafflesia_patch",
+			"tfg:nether/surface/murkweed_patch",
+			"tfg:nether/surface/wither_rose_patch",
+			"tfg:nether/surface/qantu_patch",
+			"tfg:nether/surface/palash_patch",
+			"tfg:nether/surface/ramirezella_patch",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
+			"tfg:nether/surface/needlegrass_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/stick_patch",
+			"tfg:nether/surface/olden_moss_carpet",
+			"tfg:nether/surface/philodendron",
+			"tfg:nether/surface/moss_patch_small"
+		],
+		"#tfg:nether_global_decoration",
+		[
+			"tfc:erosion"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:leaf_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:spectre": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:ghoul": {
+			"energy_budget": 0.15,
+			"charge": 0.7
+		}
+	},
+	"spawners": {
+		"water_ambient": [],
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			}
+		],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 8,
+				"minCount": 4,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "minecraft:piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:hoglin",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:swamp_enderman",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:dark_oak_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_creature": []
+	},
+	"temperature": 1
+}

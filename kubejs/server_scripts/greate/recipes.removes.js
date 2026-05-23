@@ -6,24 +6,10 @@
  */
 function removeGreateRecipes(event) {
 
-	global.GREATE_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-		TFGHelpers.clearMaterialInfo(item);
-	})
-
 	global.GREATE_DISABLED_FLUIDS.forEach(fluid => {
 		event.remove({ input: fluid })
 		event.remove({ output: fluid })
 	})
-
-	global.GREATE_DISABLED_TAGS.forEach(tag => {
-		event.remove({ input: tag })
-		event.remove({ output: tag })
-	})
-
-	event.remove({ mod: 'greate', input: 'create:andesite_alloy' });
-	event.remove({ mod: 'greate', output: 'minecraft:bamboo_pressure_plate'})
 
 	global.GREATE_MATERIAL_TIERS.forEach(tier => {
 		
@@ -47,94 +33,10 @@ function removeGreateRecipes(event) {
 		event.remove({ id: `gtceu:extractor/extract_${tier}_gearbox` })
 		event.remove({ id: `gtceu:extractor/extract_${tier}_vertical_gearbox` })
 	})
-	
-	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_andesite_alloy' })
-	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' })
-	
-	event.remove({ id: 'gtceu:shaped/andesite_alloy_shaft' })
-	event.remove({ id: 'gtceu:extractor/extract_andesite_alloy' })
-
-	event.remove({ id: /^greate:(mixing|cutting|sawing|splashing|crushing|milling)\/integration\/(create|createaddition|vintageimprovements|railways)\/.*/ })
-	event.remove({ id: /^greate:(compacting|pressing)\/integration\/.*/ })
 
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shaped' })
 	event.remove({ mod: 'greate', type: 'minecraft:crafting_shapeless' })
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
-	
-	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_encased_fan' });
-	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_encased_fan' });
-	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_mechanical_mixer' });
-	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_mechanical_mixer' });
-	event.remove({ id: 'gtceu:macerator/macerate_andesite_alloy_mechanical_pump' });
-	event.remove({ id: 'gtceu:arc_furnace/arc_andesite_alloy_mechanical_pump' });
-
-	event.remove({ id: 'greate:cutting/integration/create/cutting/runtime_generated/compat/minecraft/bamboo_planks_to_bamboo_button' })
-	event.remove({ id: 'greate:mixing/integration/gtceu/mixer/fire_charge' })
-
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_dust' })
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_crushed_ore_to_impure_dust' })
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_coal_refined_ore_to_dust' })
-
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_cocoa' })
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb' })
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/macerate_honeycomb_block'})
-	event.remove({ id: 'greate:milling/integration/gtceu/macerator/quartz_sand_from_sand' })
-
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_cocoa' })
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_honeycomb' })
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/macerate_honeycomb_block'})
-	event.remove({ id: 'greate:crushing/integration/gtceu/macerator/quartz_sand_from_sand' })
-
-	event.remove({ id: 'greate:mixing/brass_ingot' })
-
-	event.remove({ id: 'greate:shaped/copper_diving_helmet' })
-	event.remove({ id: 'greate:shaped/copper_backtank' })
-
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_phosphorus_boule_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_naquadah_boule' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_naquadah_boule_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_naquadah_boule_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_neutronium_boule' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_neutronium_boule_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_neutronium_boule_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nano_cpu' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nano_cpu_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nano_cpu_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_qbit_cpu' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_qbit_cpu_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_qbit_cpu_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_soc' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_soc_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_soc_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_asoc' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_asoc_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_asoc_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hasoc' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hasoc_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hasoc_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nand' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nand_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nand_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nor' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nor_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_nor_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_lpic' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_lpic_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_lpic_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_pic_wafer' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_pic_wafer_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_pic_wafer_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hpic' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hpic_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_hpic_distilled_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_uhpic' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_uhpic_water' })
-	event.remove({ id: 'greate:cutting/integration/gtceu/cutter/cut_uhpic_distilled_water' })
 }

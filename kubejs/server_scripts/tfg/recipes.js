@@ -13,7 +13,6 @@ const registerTFGRecipes = (event) => {
 
 	registerTFGFoodRecipes(event)
 	registerTFGRefrigeratorRecipes(event)
-	registerTFGMealBagRecipes(event)
 	registerTFGBiomassRecipes(event)
 	// Greenhouse needs to register before pisciculture.
 	registerTFGGreenhouseRecipes(event)
@@ -88,6 +87,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGRocketRecipes(event)
 	registerTFGSpaceSuitRecipes(event)
 	registerTFGInsulationRecipes(event)
+
+	registerTFGBeneathRecipes(event)
 
 	registerTFGMoonRecipes(event)
 	registerTFGMoonPlantRecipes(event)

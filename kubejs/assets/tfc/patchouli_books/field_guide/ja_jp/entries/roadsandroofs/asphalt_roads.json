@@ -1,0 +1,99 @@
+{
+  "name": "アスファルト道路",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:asphalt_road",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "アスファルトは、GregTechによる石油技術によって作ることができる優秀な道路材です。$(br)$(l:roadsandroofs/making_a_road)路盤$()を準備した後、その上に $(thing)アスファルト混合物$()を注ぎます。最初は $(thing)熱いアスファルト$()ですが、冷えて固まることで耐久性のある $(thing)アスファルトの道路$()になります。$(br)正しく敷設されたアスファルト道路の上では移動速度が40%上昇します。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "アスファルト",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "コンクリートの道の施工とは異なり、アスファルト道路の敷設には収縮目地を必要とせず、ひび割れたり、硬化前に上を歩くことで足跡が付いたりなどもしません。$(br2)$(thing)ただし、熱いアスファルト$()を扱う際は注意してください――触れると火傷しますよ。安全のために耐火装備の着用を推奨します。なお、アスファルト道路を破壊すると、ブロックとしてではなく $(thing)アスファルトの瓦礫$() としてドロップします。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "tar_chunk",
+      "item": "tfg:tar_chunk",
+      "title": "タールの塊",
+      "text": "The raw material for asphalt roads is oil. Solidify $(thing)Oil$(), $(thing)Raw Oil$(), $(thing)Heavy Oil$(), etc. in a $(thing)Fluid Solidifier$() to obtain corresponding $(thing)Tar$() blocks, then process them in an $(thing)Extractor$() to get $(thing)Tar Chunk$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "asphalt_mix",
+      "item": "tfg:asphalt_mix_bucket",
+      "title": "Asphalt Mixture",
+      "text": "In a $(thing)Mixer$(), combine Tar Chunks and $(thing)Stone Dust$() to make $(thing)Asphalt Binder$(). Adding $(thing)Gilsonite Dust$() increases the binder yield.$(br)Then mix the binder with sand, stone dust, and $(thing)Crushed Base$() to create a fluid $(thing)Asphalt Mixture$().$(br)Store it in a fluid container for easy transport and pouring."
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Pouring Asphalt",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Right-click a placed $(thing)Base Course Block$() with a bucket of $(thing)Asphalt Mixture$() to pour it. The mixture spreads to adjacent base course blocks, converting up to 20 adjacent base course blocks into $(thing)Hot Asphalt$(). After a short time, hot asphalt cools into $(thing)Asphalt Road$().$(br2)Sneak+right-click on a $(thing)Base Course Block$() with the mixture to patch a small area, consuming less fluid."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_hot",
+      "title": "Hot Asphalt",
+      "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools to $(thing)Asphalt Road$(), the surface is no longer hot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+      "text": "$(thing)Asphalt Roads$() can be turned into $(thing)Asphalt Road Slabs$() and $(thing)Asphalt Road Stairs$() using a $(thing)Mattock$() or a stonecutter."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "road_marking_stencils",
+      "item": {
+        "tag": "tfg:road_marking_stencils"
+      },
+      "title": "Road Marking Stencils",
+      "text": "The most distinctive customization feature of asphalt roads is road marking: spray colours and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+      "text": "Hold a $(thing)Spray Can$() in one hand and either nothing or a $(thing)Road Marking Stencil$() in the other, then use it on an asphalt road or slab to paint."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The color is determined by the spray can, and the orientation by the player's direction.$(br)Spraying again on an existing marking will replace it and consume spray can durability, unless the same color, orientation, and pattern are used."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:solvent_spray_can",
+      "title": "Removing Markings",
+      "text": "To redesign the road, use a $(thing)Spray Can (Solvent)$() on an asphalt road or slab to erase the marking at that location."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_rubble",
+      "title": "Breaking and Recycling",
+      "text": "Breaking asphalt roads, hot asphalt, slabs, or stairs drops $(thing)Asphalt Rubble$() instead of the intact block. Processing the rubble in an $(thing)Extractor$() recovers a small amount of asphalt mixture."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

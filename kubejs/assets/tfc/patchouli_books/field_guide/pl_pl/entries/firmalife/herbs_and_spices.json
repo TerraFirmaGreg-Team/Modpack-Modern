@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "W Firmalife istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, a które są używane do gotowania. Można je znaleźć w środowisku naturalnym i po zebraniu mogą być uprawiane w  $(l:firmalife/greenhouse)Szklarni$(), w której zużywają 20 punktów N, P i K."
+			"text": "W Firmalife istnieje wiele małych roślin, które możesz zbierać i sadzić samodzielnie, a które są używane do gotowania. Można je znaleźć w środowisku naturalnym i po zebraniu mogą być uprawiane w $(l:firmalife/greenhouse)Szklarni$(), w której zużywają 20 punktów N, P i K."
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -243,7 +243,7 @@
 				}
 			],
 			"name": "Ziele Angielskie",
-			"text": "$(thing)Dzikie Ziele Angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
+			"text": "$(thing)Dzikie ziele angielskie$() rośnie w temp. od 15 do 30 C oraz przy opadach między 200 do 450mm.",
 			"enable_visualize": false
 		},
 		{
@@ -301,7 +301,7 @@
 				}
 			},
 			"name": "",
-			"text": "Trawa Łąkowa.",
+			"text": "Budleja Davida",
 			"enable_visualize": false
 		},
 		{

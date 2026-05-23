@@ -2,12 +2,6 @@
 "use strict";
 
 const registerHotOrNotItemTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
 
     event.add('tfchotornot:hot_whitelist', '#forge:hot_ingots')
     event.add('tfchotornot:hot_whitelist', 'minecraft:magma_block')
@@ -25,24 +19,8 @@ const registerHotOrNotItemTags = (event) => {
     
     event.add('firmalife:usable_on_oven', '#tfchotornot:insulating')
 
-    event.add('tfg:insulating_container', 'gtceu:ulv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:lv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:mv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:hv_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:ev_super_tank')
-    event.add('tfg:insulating_container', 'gtceu:iv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:luv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:zpm_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:uv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:uhv_quantum_tank')
-    event.add('tfg:insulating_container', 'gtceu:glass_vial')
-    event.add('tfg:insulating_container', 'gtceu:fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:universal_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:steel_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:aluminium_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:stainless_steel_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:titanium_fluid_cell')
-    event.add('tfg:insulating_container', 'gtceu:tungsten_steel_fluid_cell')
+    event.add('tfg:insulating_container', '#gtceu:super_tanks')
+    event.add('tfg:insulating_container', '#gtceu:fluid_cells')
 
     event.add('tfg:hot_protection_equipment', 'tfc:metal/chestplate/blue_steel')
     event.add('tfg:hot_protection_equipment', 'tfc:metal/boots/blue_steel')
@@ -88,12 +66,4 @@ const registerHotOrNotFluidTags = (event) => {
 
     event.add("tfchotornot:fluid_whitelist", '#firmalife:oils')
     event.add("tfchotornot:fluid_whitelist", '#tfg:oil_fluids')
-}
-
-const registerHotOrNotBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.HOT_OR_NOT_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
 }

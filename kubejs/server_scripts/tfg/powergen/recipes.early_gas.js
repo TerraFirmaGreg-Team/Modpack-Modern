@@ -234,16 +234,25 @@ function registerTFGEarlyGasRecipes(event) {
 	//#endregion
 
 	// Increase Pyrolyse Oven duration
-
-	event.forEachRecipe({ id: /gtceu:pyrolyse_oven\/(log_to_creosote|log_to_creosote_nitrogen)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*2)
+	
+	function modifyRecipes(recipeIds, duration) {
+	recipeIds.forEach(id => {
+		global.modifyRecipe(event, id, {
+		newId: `tfg:${global.linuxUnfucker(id)}`,
+		duration: duration
+		})
 	})
+	}
 
-	event.forEachRecipe({ id: /gtceu:pyrolyse_oven\/(log_to_wood_tar|log_to_wood_tar_nitrogen)/ }, recipe => {
-        var newDuration = recipe.get("duration")
-        recipe.set("duration", newDuration*2)
-	})
+	modifyRecipes([
+	"gtceu:pyrolyse_oven/log_to_creosote_nitrogen",
+	"gtceu:pyrolyse_oven/log_to_wood_tar_nitrogen"
+	], 20 * 32)
+
+	modifyRecipes([
+	"gtceu:pyrolyse_oven/log_to_creosote",
+	"gtceu:pyrolyse_oven/log_to_wood_tar"
+	], 20 * 64)
 
 	//#region Power Gen
 	
