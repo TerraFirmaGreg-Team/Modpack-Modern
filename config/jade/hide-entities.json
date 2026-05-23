@@ -4,7 +4,9 @@
     "minecraft:area_effect_cloud",
     "minecraft:firework_rocket",
     "minecraft:interaction",
-    "minecraft:text_display"
+    "minecraft:text_display",
+	"mts:builder_rendering",
+	"mts:builder_existing"
   ],
   "version": 1
 }
