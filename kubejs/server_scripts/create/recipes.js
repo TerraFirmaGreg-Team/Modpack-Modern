@@ -89,7 +89,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:storage_blocks/wrought_iron',
 		C: '#tfc:rock/smooth',
 		D: 'minecraft:dispenser',
-		E: 'firmaciv:cannon'
+		E: ['firmaciv:cannon', 'alekiships:cannon']
 	}).addMaterialInfo().id('tfg:create/shaped/schematicannon')
 
 	// Стол для схематик
