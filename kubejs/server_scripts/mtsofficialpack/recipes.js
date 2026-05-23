@@ -4,6 +4,8 @@
 /** @param {Internal.RecipesEventJS_} event */
 const registerMTSOCPRecipes = (event) => {
 
+	if (!Platform.isLoaded('mts') || !Item.exists('mts:mtsofficialpack.trafficcone')) return;
+	
 	event.remove({mod: 'mtsofficialpack' })
 
 	//#region Parts

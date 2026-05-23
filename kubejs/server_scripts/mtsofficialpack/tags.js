@@ -3,6 +3,8 @@
 
 const registerMTSItemTags = (event) => {
    
+	if (!Platform.isLoaded('mts') || !Item.exists('mts:mtsofficialpack.trafficcone')) return;
+
     event.add('mts:bell206', ['mts:mtsofficialpack.bell206_red', 'mts:mtsofficialpack.bell206_seagreen', 'mts:mtsofficialpack.bell206_skyblue', 'mts:mtsofficialpack.bell206_yellow', 'mts:mtsofficialpack.bell206_black', 'mts:mtsofficialpack.bell206_blackstripe', 'mts:mtsofficialpack.bell206_blue', 'mts:mtsofficialpack.bell206_brown', 'mts:mtsofficialpack.bell206_gray', 'mts:mtsofficialpack.bell206_green', 'mts:mtsofficialpack.bell206_olive', 'mts:mtsofficialpack.bell206_orange', 'mts:mtsofficialpack.bell206_police']);
 	event.add('mts:bell47g', ['mts:mtsofficialpack.bell47g', 'mts:mtsofficialpack.bell47g_black', 'mts:mtsofficialpack.bell47g_blue', 'mts:mtsofficialpack.bell47g_olive']);
 	event.add('mts:comanche', ['mts:mtsofficialpack.comanche_blackred', 'mts:mtsofficialpack.comanche_blackredstripe', 'mts:mtsofficialpack.comanche_blue', 'mts:mtsofficialpack.comanche_orangebrown', 'mts:mtsofficialpack.comanche_red', 'mts:mtsofficialpack.comanche_seagreen', 'mts:mtsofficialpack.comanche_yellow']);

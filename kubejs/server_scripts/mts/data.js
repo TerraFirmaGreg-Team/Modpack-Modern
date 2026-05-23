@@ -2,7 +2,8 @@
 "use strict";
 
 const registerTFCDataForMTS = (event) => {
-	
+	if (!Platform.isLoaded('mts')) return;
+
     event.itemSize('mts:mts.jerrycan', 'normal', 'medium');
 	event.itemSize('mts:mts.custombench', 'large', 'heavy');
 	event.itemSize('mts:mts.decorbench', 'large', 'heavy');

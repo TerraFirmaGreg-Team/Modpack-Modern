@@ -3,6 +3,8 @@
 
 const registerTFCDataForMTSOCP = (event) => {
 	
+	if (!Platform.isLoaded('mts') || !Item.exists('mts:mtsofficialpack.trafficcone')) return;
+
     event.itemSize('#mts:bell206', 'huge', 'very_heavy');
     event.itemSize('#mts:bell47g', 'huge', 'very_heavy');
     event.itemSize('#mts:comanche', 'huge', 'very_heavy');

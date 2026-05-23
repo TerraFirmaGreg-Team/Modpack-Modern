@@ -4,6 +4,8 @@
 /** @param {Internal.RecipesEventJS_} event */
 const registerMTSRecipes = (event) => {
 
+	if (!Platform.isLoaded('mts')) return;
+	
 	event.remove({mod: 'mts' })
 	
 	//#region Usable Items
