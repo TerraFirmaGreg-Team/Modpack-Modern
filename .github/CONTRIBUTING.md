@@ -66,8 +66,9 @@ We recommend the following if you plan to make large changes that span Core, Mod
 
 1. Set up a dev instance for Prism Launcher.
 2. Make forks of Modpack-Modern, Core-Modern, and Tools-Modern and clone them.
-3. Symlink your Modpack-Modern configs and `kubejs` into your Prism Launcher instance.
-  - `mklink /D C:\Users\user\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft\kubejs C:\Users\user\tfg\Modpack-Modern\kubejs`
+3. Symlink your Modpack-Modern `kubejs` folder into your Prism Launcher instance.
+  - windows: `mklink /D C:\Users\user\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft\kubejs C:\Users\user\tfg\Modpack-Modern\kubejs`
+  - unix: `ln -s /.../Modpack-Modern/kubejs /.../minecraft/kubejs` 
 4. Test your changes by building your Core jar, adding it to your instance, and launching it.
 
 If you're using VS Code, you may want to try [ProbeJs](https://marketplace.visualstudio.com/items/?itemName=Prunoideae.probejs) for kubejs changes (optional).
@@ -78,23 +79,12 @@ To properly use VSCode to work with Core, you will need the Extension Pack for J
 
 ## Making changes to TFG
 
-### Editing recipes, mod configs and loottables
-
-To edit recipes and configs, make changes in the `kubejs` directory of your instance. Check out the TerraFirmaGreg wiki for guidance on using kubejs. To test your changes in-game, use the `/kubejs reload ...` command.
+To edit recipes and configs, make changes in the `kubejs`, `config` and `defaultconfigs` directories of your instance. To test your changes in-game, use the `/kubejs reload ...` command.
 
 
-### Adding user-facing text
-
-If your changes include any user-facing text (such as tooltips or quest content), place it in [Tools-Modern](https://github.com/TerraFirmaGreg-Team/Tools-Modern) under the `LanguageMerger/LanguageFiles/` directory.
-
-For example, LV age quest contents go to `LanguageMerger/LanguageFiles/tfg/en_us/Quests/low_voltage.json`.
-
-Translations should be submitted via Crowdin after your changes have been merged.
-
-### Editing behavior, adding mixins, ...
+If your changes include any user-facing text (such as tooltips or quest content), place it in [Tools-Modern](https://github.com/TerraFirmaGreg-Team/Tools-Modern) under the `LanguageMerger/LanguageFiles/` directory. For example, LV age quest contents go to `LanguageMerger/LanguageFiles/tfg/en_us/Quests/low_voltage.json`. Translations should be submitted via Crowdin after your changes have been merged.
 
 More complicated changes typically need to be made in `Core-Modern` using Java.
-
 If you're using IntelliJ, you can use Gradle to compile Core with `jar` and test your changes with `runClient`.
 If you don't use IntelliJ, you can compile Core from the command line by running `./gradlew.bat jar` and test it with `./gradlew.bat runClient`.
 
