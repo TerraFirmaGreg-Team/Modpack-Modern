@@ -13,6 +13,7 @@ const NEW_MOB_MAX_HP = {
 	"species:spectre": 16,
 	"species:ghoul": 40,
 	"species:bewereager": 60,
+	"species:mammutilation": 40,
 
 	// moon mobs
 	"endermanoverhaul:end_enderman": 50,

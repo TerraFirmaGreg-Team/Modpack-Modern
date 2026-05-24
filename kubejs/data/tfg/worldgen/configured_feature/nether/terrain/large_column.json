@@ -37,7 +37,7 @@
 		"wind_speed": {
 			"type": "minecraft:uniform",
 			"value": {
-				"max_exclusive": 0.3,
+				"max_exclusive": 0.1,
 				"min_inclusive": 0
 			}
 		}

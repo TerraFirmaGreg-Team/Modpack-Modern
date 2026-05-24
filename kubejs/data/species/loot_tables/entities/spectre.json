@@ -25,6 +25,11 @@
 			]
 		},
 		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
 			"rolls": 1,
 			"entries": [
 				{

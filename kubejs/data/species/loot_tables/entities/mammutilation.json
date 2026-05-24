@@ -2,6 +2,11 @@
 	"type": "minecraft:entity",
 	"pools": [
 		{
+			"conditions": [
+				{
+					"condition": "minecraft:killed_by_player"
+				}
+			],
 			"name": "loot_pool",
 			"rolls": 1,
 			"entries": [

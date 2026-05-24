@@ -165,6 +165,16 @@ function registerSpeciesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 
+	event.shaped('minecraft:arrow', [
+		' A ',
+		' B ',
+		' C '
+	], {
+		A: 'species:werefang',
+		B: '#forge:rods/wooden',
+		C: 'tfg:fletching'
+	}).id('tfg:shaped/arrow_werefang')
+
 	event.recipes.gtceu.macerator('tfg:werefang')
 		.itemInputs("species:werefang")
 		.itemOutputs("3x minecraft:bone_meal")
