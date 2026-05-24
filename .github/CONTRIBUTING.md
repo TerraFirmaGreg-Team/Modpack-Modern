@@ -46,19 +46,24 @@ Either install Git or skip to "Contributing without git" if your change is a sin
 
 For most changes, setting up a dev instance is optional. Refer to the sections on making changes to kubejs and Core if you're making a simple change.
 
+1. Get the latest version of Modpack-Modern and unzip it once
+    - Go to [Modpack-Modern's Actions](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/actions), pick the latest project build and download the multimc artifact at the bottom of the page.
+2. Create a new Prism Launcher instance and import the `TerraFirmaGreg-Modern-build-XXXX-multimc.zip` file.
+3. Update the Core-Modern jar
+    - Go to [Core-Modern's Actions](https://github.com/TerraFirmaGreg-Team/Core-Modern/actions), pick the latest project build and download the artifact at the bottom of the page.
+
 1. Create a new Prism Launcher instance with Minecraft version 1.20.1 and Forge.
 2. Get the latest version of [Modpack-Modern](https://github.com/TerraFirmaGreg-Team/Modpack-Modern)
-  - If you are familiar with Git, clone your fork of Modpack-Modern.
-  - If you have never used Git or do not plan to, click the green `<>` button and choose "Download ZIP".
+    - If you are familiar with Git, clone your fork of Modpack-Modern.
+    - If you have never used Git or do not plan to, click the green `<>` button and choose "Download ZIP".
 3. Paste the contents of Modpack-Modern into your instance's `minecraft` folder.
-  - The `kubejs`, `config`, `defaultconfigs`, etc. folders should be in the same directory as `saves` and `mods`.
-4. Update pakku by running `java -jar pakku.jar fetch` in your instance's `minecraft` directory.
-  - Open your command prompt.
-  - Type `cd C:\Users\DEVELOPER\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft` where `C:\...\minecraft` is the path to your instance's Minecraft directory.
-  - Type `java -jar pakku.jar fetch`.
-    - If you get a message claiming that Java does not exist, use `C:/.../javaw.exe -jar pakku.jar` where `C:/.../javaw.exe` is the path to a Java executable. You can find the path to your Java executable by opening the settings of your instance in Prism Launcher, going to "Java", and clicking "Detect".
-5. Update the Core-Modern jar
-  - Go to [Core-Modern's Actions](https://github.com/TerraFirmaGreg-Team/Core-Modern/actions), pick the latest project build and download the artifact at the bottom of the page.
+    - The `kubejs`, `config`, `defaultconfigs`, etc. folders should be in the same directory as `saves` and `mods`.
+
+If your mods are outdated or not present, or you downloaded the modpack by cloning Modpack-Modern, you will need to update pakku by running `java -jar pakku.jar fetch` in your instance's `minecraft` directory.
+    - Open your command prompt.
+    - Type `cd C:\Users\DEVELOPER\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft` where `C:\...\minecraft` is the path to your instance's Minecraft directory.
+    - Type `java -jar pakku.jar fetch`.
+      - If you get a message claiming that Java does not exist, use `C:/.../javaw.exe -jar pakku.jar` where `C:/.../javaw.exe` is the path to a Java executable. You can find the path to your Java executable by opening the settings of your instance in Prism Launcher, going to "Java", and clicking "Detect".
 
 ### Recommended Environment
 
@@ -67,8 +72,8 @@ We recommend the following if you plan to make large changes that span Core, Mod
 1. Set up a dev instance for Prism Launcher.
 2. Make forks of Modpack-Modern, Core-Modern, and Tools-Modern and clone them.
 3. Symlink your Modpack-Modern `kubejs` folder into your Prism Launcher instance.
-  - windows: `mklink /D C:\Users\user\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft\kubejs C:\Users\user\tfg\Modpack-Modern\kubejs`
-  - unix: `ln -s /.../Modpack-Modern/kubejs /.../minecraft/kubejs` 
+    - windows: `mklink /D C:\Users\user\AppData\Roaming\PrismLauncher\instances\INSTANCE\minecraft\kubejs C:\Users\user\tfg\Modpack-Modern\kubejs`
+    - unix: `ln -s /.../Modpack-Modern/kubejs /.../minecraft/kubejs` 
 4. Test your changes by building your Core jar, adding it to your instance, and launching it.
 
 If you're using VS Code, you may want to try [ProbeJs](https://marketplace.visualstudio.com/items/?itemName=Prunoideae.probejs) for kubejs changes (optional).
