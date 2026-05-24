@@ -1,20 +1,12 @@
 {
-	"feature": "tfg:nether/terrain/oil_lake_selector",
+	"feature": "tfg:nether/terrain/oil_tar_disk_selector",
 	"placement": [
 		{
 			"type": "minecraft:count",
 			"count": 10
 		},
 		{
-			"type": "minecraft:random_offset",
-			"y_spread": 0,
-			"xz_spread": {
-				"type": "minecraft:uniform",
-				"value": {
-					"min_inclusive": -8,
-					"max_inclusive": 8
-				}
-			}
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",

@@ -1,20 +1,12 @@
 {
-	"feature": "tfg:nether/terrain/oil_lake_selector",
+	"feature": "tfg:nether/terrain/oilsands_disk",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 10
+			"count": 3
 		},
 		{
-			"type": "minecraft:random_offset",
-			"y_spread": 0,
-			"xz_spread": {
-				"type": "minecraft:uniform",
-				"value": {
-					"min_inclusive": -8,
-					"max_inclusive": 8
-				}
-			}
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",
@@ -45,6 +37,21 @@
 		},
 		{
 			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:count",
+			"count": 3
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": -5,
+					"max_inclusive": 5
+				}
+			},
+			"y_spread": 0
 		}
 	]
 }
