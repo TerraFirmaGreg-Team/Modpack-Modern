@@ -20,6 +20,7 @@
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
 - Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
 - Added new metal girders and struts which can also be placed at arbitrary angles and used as railroad track (#4091) @SakuraKitsurugi
+- Mechanical arms can now interact with Vats @ashleney
 ### Bug fixes
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
 - Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
@@ -27,6 +28,9 @@
 - Fixed wet concrete panels, sett, and flagstones not supporting landslides or having an appropriate tool (#4110) @Pyritie
 - Fixed inconsistencies with cannons (#4103) @Pyritie
 - Fixed GT recycling recipes for Hermetic Casing I (#4101) @Pyritie
+- Potential fix for the rocket lander sometimes getting stuck or sending you to the wrong place (#3054) @ashleney
+- Fixed muddy water, spring water, and semiheavy ammoniacal water not doing anything when touching lava @Pyritie
+- Fixed being able to grow dead coral (#4096) @Pyritie
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 

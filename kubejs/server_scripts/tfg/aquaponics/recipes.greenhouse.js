@@ -541,12 +541,13 @@ const registerTFGGreenhouseRecipes = (event) => {
 	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
-	Ingredient.of('#forge:corals').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
-	});
-	Ingredient.of('#forge:coral_blocks').stacks.forEach(element => {
-		generateGreenHouseRecipe(event, null, `8x ${element.id}`, [element.withCount(12), element.withCount(4)], 1, 1);
-	});
+
+	const CORALS = [ 'tube', 'brain', 'bubble', 'fire', 'horn' ];
+	CORALS.forEach(coral => {
+		generateGreenHouseRecipe(event, null, `8x minecraft:${coral}_coral_block`, [`24x minecraft:${coral}_coral_block`, `8x tfc:coral/${coral}_coral`, `8x tfc:coral/${coral}_coral_fan`], 1, 1);
+		generateGreenHouseRecipe(event, null, `8x tfc:coral/${coral}_coral`, [`24x tfc:coral/${coral}_coral`, `8x minecraft:${coral}_coral_block`, `8x tfc:coral/${coral}_coral_fan`], 1, 1);
+		generateGreenHouseRecipe(event, null, `8x tfc:coral/${coral}_coral_fan`, [`24x tfc:coral/${coral}_coral_fan`, `8x minecraft:${coral}_coral_block`, `8x tfc:coral/${coral}_coral`], 1, 1);
+	})
 
 	generateGreenHouseRecipe(event, null, '8x minecraft:bamboo', ['64x minecraft:bamboo', '8x minecraft:bamboo'], 1, 1);
 
