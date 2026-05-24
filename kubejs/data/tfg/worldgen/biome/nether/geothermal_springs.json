@@ -36,12 +36,17 @@
 		"grass_color": 6466617
 	},
 	"features": [
+		[
+			"tfg:nether/terrain/huge_quartz"
+		],
+		[
+			"tfg:nether/terrain/spring_water_large_lake",
+			"tfg:nether/terrain/spring_water_lake"
+		],
 		"#tfg:nether_lakes_and_geodes",
-		[],
 		[
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
@@ -55,6 +60,7 @@
 			"tfg:nether/surface/sunburst_lichen_patch",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
+			"beneath:sulfur_patch",
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
 			"tfg:nether/surface/philodendron",

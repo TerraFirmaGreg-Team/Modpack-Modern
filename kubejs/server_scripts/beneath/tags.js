@@ -53,6 +53,8 @@ const registerBeneathBlockTags = (event) => {
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
 
+	event.add('minecraft:mineable/pickaxe', 'beneath:ancient_altar');
+
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')
 	event.add('tfg:do_not_destroy_in_space', 'beneath:wood/leaves/crimson')

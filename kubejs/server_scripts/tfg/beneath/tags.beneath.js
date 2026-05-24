@@ -186,6 +186,7 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
 	event.add('tfg:decorative_plant_attachable', '#minecraft:leaves')
 
+	event.add('species:cliff_hanger_spawnable_on', '#minecraft:nether_carver_replaceables');
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/araucaria')
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/mahoe')
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/ginkgo')

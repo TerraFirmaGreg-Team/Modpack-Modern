@@ -107,9 +107,7 @@ const NEEDS_FIREPROOFING = [
 	'arthropocolypse:mealworm',
 	'arthropocolypse:millipede_head',
 	'arthropocolypse:millipede_body',
-	'arthropocolypse:millipede_tail',
-	'species:ghoul',
-	'species:bewereager'
+	'arthropocolypse:millipede_tail'
 ];
 
 const VENUS_DAMAGE_BUFFING = {

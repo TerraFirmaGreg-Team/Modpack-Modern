@@ -2,16 +2,6 @@
 
 function registerTFGWorldGenBeneathDecoBlocks(event) {
 
-	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.speedFactor(0.9)
-		.tagItem('tfg:plants/beneath')
-
-	event.create('tfg:mushroom_sprouts', 'tfg:decorative_plant')
-		.soundType('nether_wart')
-		.speedFactor(0.9)
-		.tagItem('tfg:plants/beneath')
-
 	event.create('tfg:charred_log')
 		.fullBlock(true)
 		.woodSoundType()
@@ -21,6 +11,17 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.tagBoth('afc:logs_that_log')
 		.tagBoth('minecraft:logs')
 		.mapColor('black')
+
+	event.create('tfg:huge_quartz')
+		.fullBlock(true)
+		.soundType('amethyst')
+		.mapColor('quartz')
+		.textureAll('tfg:block/huge_quartz')
+		.requiresTool(true)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.defaultTranslucent()
+
+	// Pale moss
 
 	event.create('tfg:pale_moss_block')
 		.mapColor('glow_lichen')
@@ -39,6 +40,18 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.box(0, 0, 0, 16, 1, 16)
 		.tagItem('tfc:compost_greens_low')
 		.tagBlock('minecraft:mineable/hoe')
+
+	// Plants
+
+	event.create('tfg:mushroom_roots', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.speedFactor(0.9)
+		.tagItem('tfg:plants/beneath')
+
+	event.create('tfg:mushroom_sprouts', 'tfg:decorative_plant')
+		.soundType('nether_wart')
+		.speedFactor(0.9)
+		.tagItem('tfg:plants/beneath')
 		
 	event.create('betterend:nightshade_moss', 'tfg:attached_decorative_plant')
 		.soundType('crop')
