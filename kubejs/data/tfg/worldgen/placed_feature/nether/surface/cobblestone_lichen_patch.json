@@ -1,15 +1,18 @@
 {
-	"feature": "tfg:nether/surface/philodendron",
+	"feature": "tfc:plant/cobblestone_lichen_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
 			"count": {
 				"type": "minecraft:uniform",
 				"value": {
-					"max_inclusive": 20,
-					"min_inclusive": 10
+					"max_inclusive": 5,
+					"min_inclusive": 2
 				}
 			}
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:height_range",
@@ -19,12 +22,9 @@
 					"absolute": 180
 				},
 				"min_inclusive": {
-					"above_bottom": 42
+					"absolute": 50
 				}
 			}
-		},
-		{
-			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:biome"

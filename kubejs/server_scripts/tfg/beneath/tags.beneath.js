@@ -89,6 +89,8 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:base_stone_nether', 'minecraft:dripstone_block')
 	event.add('minecraft:base_stone_nether', 'minecraft:tuff')
 	event.add("minecraft:base_stone_nether", "minecraft:calcite");
+	event.add('minecraft:base_stone_nether', "tfg:gilsonite");
+	event.add('minecraft:base_stone_nether', "tfg:halite");
 	event.add("minecraft:base_stone_nether", "tfg:rock/glauberite");
 	event.add("minecraft:base_stone_nether", "tfg:rock/aragonite");
 	event.add("minecraft:base_stone_nether", "beneath:crackrack");
@@ -161,13 +163,11 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:nether_carver_replaceables', "tfc:fluid/spring_water");
 	event.add('minecraft:nether_carver_replaceables', "tfg:fluid/muddy_water");
 	event.add('minecraft:nether_carver_replaceables', "minecraft:water");
-	event.add('minecraft:nether_carver_replaceables', "tfg:halite");
 	event.add('minecraft:nether_carver_replaceables', "#tfc:mud")
 	event.add('minecraft:nether_carver_replaceables', "#tfc:dirt");
 	event.add('minecraft:nether_carver_replaceables', "beneath:soul_clay");
 	event.add('minecraft:nether_carver_replaceables', "tfc:peat");
 	event.add('minecraft:nether_carver_replaceables', "tfg:hardened_clay");
-	event.add('minecraft:nether_carver_replaceables', "tfg:gilsonite");
 
 	const moss_blocks = [
 		'minecraft:moss_block',
@@ -191,6 +191,7 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/ginkgo')
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/beech')
 	event.add('tfc:creeping_plantable_on', 'tfg:wood/leaves/mangrove')
+	event.add('tfg:epiphyte_plantable_on', 'tfg:gilsonite')
 
 	event.add('tfc:creeping_stone_plantable_on', 'tfg:halite')
 	event.add('tfg:anemone_plantable_on', 'tfg:halite')
@@ -298,5 +299,11 @@ function registerTFGBeneathEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:swamp_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
 
+	event.add('tfc:ignores_cacti', 'minecraft:skeleton')
+	event.add('tfc:ignores_cacti', 'minecraft:wither_skeleton')
+	event.add('tfc:ignores_cacti', 'minecraft:slime')
+	event.add('tfc:ignores_cacti', 'minecraft:magma_cube')
 	event.add('tfc:ignores_cacti', 'species:spectre')
+	event.add('tfc:ignores_cacti', 'species:wicked')
+	event.add('tfc:ignores_cacti', 'species:mammutilation')
 }
