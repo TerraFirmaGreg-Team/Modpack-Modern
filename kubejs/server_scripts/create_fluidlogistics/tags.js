@@ -14,4 +14,5 @@ function registerCreateFluidLogisticsItemTags(event) {;
     event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:smart_hopper')
     event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:infinite_fluid_tank')
     event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:fluid_pump')
+    event.add('c:hidden_from_recipe_viewers', 'fluidlogistics:water_containing_copper_casing')
 }
