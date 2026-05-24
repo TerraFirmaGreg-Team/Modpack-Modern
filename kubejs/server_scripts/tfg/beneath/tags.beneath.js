@@ -260,6 +260,7 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagmite')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/noise_cave_stalagtite')
 	event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/glowstone_ceiling")
+    event.add('tfg:nether_underground_decoration', "beneath:glowstone_spikes");
 	event.add('tfg:nether_underground_decoration', "beneath:blackstone_boulders")
     event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/cobble_boulder")
     event.add('tfg:nether_underground_decoration', "tfg:nether/terrain/cobble_boulder_patch")
@@ -277,7 +278,6 @@ function registerTFGBeneathPlacedFeatures(event) {
     event.add('tfg:nether_global_decoration', 'tfg:nether/surface/hanging_roots_patch')
 	event.add('tfg:nether_global_decoration', 'tfc:cave_spike')
     event.add('tfg:nether_global_decoration', "tfg:glow_lichen");
-    event.add('tfg:nether_global_decoration', "beneath:glowstone_spikes");
 }
 
 function registerTFGBeneathEntityTypeTags(event) {
