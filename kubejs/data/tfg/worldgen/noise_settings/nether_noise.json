@@ -859,8 +859,8 @@
 							"if_true": {
 								"type": "tfg:noise3d_threshold",
 								"noise": "tfg:nether_salt_streams",
-								"min_threshold": -0.1,
-								"max_threshold": 0.1
+								"min_threshold": -0.08,
+								"max_threshold": 0.08
 							},
 							"then_run": {
 								"type": "minecraft:block",
