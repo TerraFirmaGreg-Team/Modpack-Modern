@@ -146,6 +146,9 @@ function registerTFGBeneathBlockTags(event) {
     event.add("minecraft:base_stone_nether", "tfc:rock/gravel/phyllite");
     event.add("minecraft:base_stone_nether", "tfc:rock/gravel/slate");
     event.add("minecraft:base_stone_nether", "tfc:rock/gravel/marble");
+
+    event.add('minecraft:base_stone_nether', "#minecraft:sand");
+    event.add('minecraft:base_stone_nether', "#forge:sandstone");
         
     event.add('tfc:creeping_plantable_on', '#minecraft:base_stone_nether')
     event.add('tfc:creeping_stone_plantable_on', '#minecraft:base_stone_nether')

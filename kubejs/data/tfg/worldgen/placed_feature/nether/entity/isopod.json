@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 5
+			"count": 8
 		},
 		{
 			"type": "minecraft:in_square"
@@ -16,9 +16,12 @@
 					"below_top": 10
 				},
 				"min_inclusive": {
-					"above_bottom": 120
+					"absolute": 50
 				}
 			}
+		},
+		{
+			"type": "minecraft:biome"
 		},
 		{
 			"type": "minecraft:environment_scan",

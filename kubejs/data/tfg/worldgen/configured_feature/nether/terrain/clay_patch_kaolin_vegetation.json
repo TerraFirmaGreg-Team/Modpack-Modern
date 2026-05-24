@@ -2,7 +2,10 @@
 	"type": "minecraft:random_selector",
 	"config": {
 		"default": {
-			"feature": "tfg:nether/surface/king_fern",
+			"feature": {
+				"type": "tfc:tall_plant",
+				"config": { "block": "tfc:plant/king_fern" }
+			},
 			"placement": []
 		},
 		"features": [

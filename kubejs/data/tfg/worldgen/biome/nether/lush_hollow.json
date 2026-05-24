@@ -71,6 +71,7 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/cold_frog",
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
@@ -87,6 +88,10 @@
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.02,
+			"charge": 0.95
 		}
 	},
 	"spawners": {
@@ -113,6 +118,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],
@@ -130,27 +141,27 @@
 				"weight": 50
 			},
 			{
+				"type": "minecraft:hoglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
 				"type": "primitive_creatures:tfc",
 				"maxCount": 4,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:zombie",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
 				"type": "minecraft:creeper",
-				"maxCount": 4,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:slime",
 				"maxCount": 4,
-				"minCount": 1,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -160,8 +171,14 @@
 				"weight": 10
 			},
 			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
 				"type": "minecraft:enderman",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
 			},
@@ -170,16 +187,33 @@
 				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
-			}
-		],
-		"underground_water_creature": [
+			},
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "species:ghoul",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
 			}
 		],
+		"underground_water_creature": [],
 		"water_creature": []
 	},
 	"temperature": 0.8

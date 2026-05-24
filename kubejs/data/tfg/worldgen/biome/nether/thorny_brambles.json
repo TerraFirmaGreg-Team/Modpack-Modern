@@ -84,6 +84,7 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/zombie_horse",
 			"tfg:nether/terrain/thorn_vegetation_patch",
 			"tfc:erosion"
 		]
@@ -103,8 +104,12 @@
 			"charge": 0.9
 		},
 		"species:ghoul": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.03,
+			"charge": 0.93
 		}
 	},
 	"spawners": {
@@ -124,6 +129,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],

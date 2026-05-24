@@ -1,6 +1,9 @@
 {
 	"variants": {
-		"height=0": { "model": "tfg:block/plant/blackthorn" },
+		"height=0": [
+			{ "model": "tfg:block/plant/blackthorn" },
+			{ "model": "tfg:block/plant/blackthorn_inverted" }
+		],
 		"height=1": { "model": "tfg:block/plant/blackthorn_top" },
 		"height=2": { "model": "" },
 		"height=3": { "model": "" },

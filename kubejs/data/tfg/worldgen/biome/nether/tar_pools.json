@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 706962,
+		"fog_color": 7429703,
 		"additions_sound": {
 			"sound": "tfg:ambient.middle_nether.additions",
 			"tick_chance": 0.0015
@@ -24,7 +24,7 @@
 				"sound_id": "tfg:music.nether"
 			}
 		},
-		"sky_color": 706962,
+		"sky_color": 7429703,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
 		"grass_color": 6466617
@@ -56,6 +56,7 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
@@ -72,6 +73,14 @@
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:ghoul": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.03,
+			"charge": 0.93
 		}
 	},
 	"spawners": {
@@ -98,6 +107,12 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],

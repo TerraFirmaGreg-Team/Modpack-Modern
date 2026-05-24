@@ -1,13 +1,9 @@
 {
-	"feature": "tfg:nether/entity/cold_frog",
+	"feature": "tfg:nether/entity/zombie_horse",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 3
-		},
-		{
 			"type": "minecraft:rarity_filter",
-			"chance": 3
+			"chance": 2
 		},
 		{
 			"type": "minecraft:in_square"

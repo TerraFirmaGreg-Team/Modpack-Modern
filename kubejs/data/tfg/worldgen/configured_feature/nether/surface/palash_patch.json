@@ -3,54 +3,8 @@
 	"config": {
 		"feature": {
 			"feature": {
-				"type": "lithostitched:composite",
-				"config": {
-					"features": [
-						{
-							"feature": {
-								"type": "minecraft:simple_block",
-								"config": {
-									"to_place": {
-										"type": "minecraft:simple_state_provider",
-										"state": {
-											"Name": "tfg:plant/palash",
-											"Properties": {
-												"half": "lower",
-												"age": "3"
-											}
-										}
-									}
-								}
-							},
-							"placement": []
-						},
-						{
-							"feature": {
-								"type": "minecraft:simple_block",
-								"config": {
-									"to_place": {
-										"type": "minecraft:simple_state_provider",
-										"state": {
-											"Name": "tfg:plant/palash",
-											"Properties": {
-												"half": "upper",
-												"age": "3"
-											}
-										}
-									}
-								}
-							},
-							"placement": [
-								{
-									"type": "minecraft:random_offset",
-									"xz_spread": 0,
-									"y_spread": 1
-								}
-							]
-						}
-					],
-					"placement_type": "never_cancel"
-				}
+				"type": "tfc:tall_plant",
+				"config": { "block": "tfg:plant/palash" }
 			},
 			"placement": [
 				{

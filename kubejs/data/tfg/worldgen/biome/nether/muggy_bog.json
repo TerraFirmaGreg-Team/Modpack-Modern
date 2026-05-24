@@ -81,6 +81,7 @@
 			"tfg:nether/entity/temperate_frog",
 			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/isopod",
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
@@ -101,6 +102,10 @@
 		"species:wicked": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.02,
+			"charge": 0.95
 		}
 	},
 	"spawners": {
@@ -121,7 +126,14 @@
 				"weight": 10
 			}
 		],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 1
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
