@@ -21,6 +21,8 @@
 - Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
 - Added new metal girders and struts which can also be placed at arbitrary angles and used as railroad track (#4091) @SakuraKitsurugi
 ### Bug fixes
+- Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
+- Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 

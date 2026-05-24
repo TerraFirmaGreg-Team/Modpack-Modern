@@ -5,6 +5,9 @@ function registerDomumOrnamentumItemTags(event) {
     global.DOMUM_ORNAMENTUM_FLOATING_CARPETS.forEach((carpet) => {
         event.add("domum_ornamentum:floating_carpet", carpet);
     });
+
+    event.add('minecraft:fences', 'domum_ornamentum:vanilla_fence_compat')
+    event.add('minecraft:fence_gates', 'domum_ornamentum:vanilla_fence_gate_compat')
 }
 
 /** @param {TagEvent.Block} event */
