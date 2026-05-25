@@ -6,7 +6,7 @@
     "biome-selector": {
         "always": true
     },
-    "rain": true,
+    "rain": false,
     "storm": true,
     "surface-selector": {
         "regions": [
