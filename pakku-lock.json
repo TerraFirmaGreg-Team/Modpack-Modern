@@ -4728,7 +4728,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fluidlogistics-1.0.4.jar",
+                    "file_name": "fluidlogistics-1.0.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4736,20 +4736,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/g4AWLVIr/versions/uQ4EQtbf/fluidlogistics-1.0.4.jar",
-                    "id": "uQ4EQtbf",
+                    "url": "https://cdn.modrinth.com/data/g4AWLVIr/versions/pAAzSlaR/fluidlogistics-1.0.5.jar",
+                    "id": "pAAzSlaR",
                     "parent_id": "g4AWLVIr",
                     "hashes": {
-                        "sha512": "76effe588ea31948a42f6b32e3a5e32313045d96e9a8989a336dc12c905dec309a1c3a4949793352a742d2e54704c3d927f565bee2207049e5daf2477117fca0",
-                        "sha1": "f55ea6a236f2fc66654aa74388234783e6a6704f"
+                        "sha512": "e9bd2c61c77d471b39026cefdba679638a84bb117138eab633918bbaa224ecf8da32e8e75f79f2ff154e53bd79013ff2762f94fa7889910c5f31aed538742311",
+                        "sha1": "d186885eac2b8eef905b76b41b7d01442554be49"
                     },
                     "required_dependencies": [],
-                    "size": 849520,
-                    "date_published": "2026-05-12T13:06:20.733348Z"
+                    "size": 868985,
+                    "date_published": "2026-05-23T07:43:21.565859Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fluidlogistics-1.0.4.jar",
+                    "file_name": "fluidlogistics-1.0.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4757,18 +4757,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8077/824/fluidlogistics-1.0.4.jar",
-                    "id": "8077824",
+                    "url": "https://edge.forgecdn.net/files/8131/713/fluidlogistics-1.0.5.jar",
+                    "id": "8131713",
                     "parent_id": "1475079",
                     "hashes": {
-                        "sha1": "f55ea6a236f2fc66654aa74388234783e6a6704f",
-                        "md5": "760ef7ca9e00636f848ace81133e8727"
+                        "sha1": "d186885eac2b8eef905b76b41b7d01442554be49",
+                        "md5": "31ad6339245f937ba5ec1c637333463b"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 849520,
-                    "date_published": "2026-05-12T13:03:52.903Z"
+                    "size": 868985,
+                    "date_published": "2026-05-23T07:45:20.683Z"
                 }
             ]
         },
