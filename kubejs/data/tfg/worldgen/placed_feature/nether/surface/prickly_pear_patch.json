@@ -1,15 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/large_column",
+	"feature": "tfg:nether/surface/prickly_pear_patch",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": {
-				"type": "minecraft:uniform",
-				"value": {
-					"max_inclusive": 30,
-					"min_inclusive": 5
-				}
-			}
+			"count": 10
 		},
 		{
 			"type": "minecraft:in_square"
@@ -19,10 +13,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"below_top": 10
+					"absolute": 180
 				},
 				"min_inclusive": {
-					"above_bottom": 10
+					"absolute": 50
 				}
 			}
 		},

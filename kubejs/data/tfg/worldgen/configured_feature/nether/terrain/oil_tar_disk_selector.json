@@ -1,0 +1,96 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"default": {
+			"feature": "tfg:nether/terrain/oil_tar_disk",
+			"placement": [
+				{
+					"type": "minecraft:count",
+					"count": 3
+				},
+				{
+					"type": "minecraft:random_offset",
+					"xz_spread": {
+						"type": "minecraft:uniform",
+						"value": {
+							"min_inclusive": -5,
+							"max_inclusive": 5
+						}
+					},
+					"y_spread": 0
+				}
+			]
+		},
+		"features": [
+			{
+				"chance": 0.3,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_tar_medium_disk",
+					"placement": [
+						{
+							"type": "minecraft:count",
+							"count": 3
+						},
+						{
+							"type": "minecraft:random_offset",
+							"xz_spread": {
+								"type": "minecraft:uniform",
+								"value": {
+									"min_inclusive": -5,
+									"max_inclusive": 5
+								}
+							},
+							"y_spread": 0
+						}
+					]
+				}
+			},
+			{
+				"chance": 0.15,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_tar_heavy_disk",
+					"placement": [
+						{
+							"type": "minecraft:count",
+							"count": 3
+						},
+						{
+							"type": "minecraft:random_offset",
+							"xz_spread": {
+								"type": "minecraft:uniform",
+								"value": {
+									"min_inclusive": -5,
+									"max_inclusive": 5
+								}
+							},
+							"y_spread": 0
+						}
+					]
+				}
+			},
+			{
+				"chance": 0.15,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_tar_medium_disk",
+					"placement": [
+						{
+							"type": "minecraft:count",
+							"count": 3
+						},
+						{
+							"type": "minecraft:random_offset",
+							"xz_spread": {
+								"type": "minecraft:uniform",
+								"value": {
+									"min_inclusive": -5,
+									"max_inclusive": 5
+								}
+							},
+							"y_spread": 0
+						}
+					]
+				}
+			}
+		]
+	}
+}
