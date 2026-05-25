@@ -1411,7 +1411,7 @@
 								"if_true": {
 									"type": "minecraft:noise_threshold",
 									"noise": "tfg:nether_rock_ceiling",
-									"min_threshold": -0.35,
+									"min_threshold": -0.25,
 									"max_threshold": -0.1
 								},
 								"then_run": {
@@ -1427,7 +1427,7 @@
 									"type": "minecraft:noise_threshold",
 									"noise": "tfg:nether_rock_ceiling",
 									"min_threshold": 0.1,
-									"max_threshold": 0.35
+									"max_threshold": 0.25
 								},
 								"then_run": {
 									"type": "minecraft:block",

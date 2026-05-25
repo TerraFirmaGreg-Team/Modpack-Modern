@@ -12,7 +12,6 @@
 		"thorny_brambles",
 		"geothermal_springs"
 	],
-	"features": [],
 	"regions": [
 		"cave"
 	],
@@ -33,11 +32,6 @@
 				"ambientsounds:cave.cave-water5"
 			],
 			"volume": 0.4,
-			"features": [
-				"water",
-				"lush",
-				"dripstone"
-			],
 			"transition": 200
 		}
 	]
