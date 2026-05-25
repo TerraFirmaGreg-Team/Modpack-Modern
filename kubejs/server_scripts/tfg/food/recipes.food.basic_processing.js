@@ -186,6 +186,32 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	//#endregion
 	//#region Chemicals
 
+	// Crude Gelatin
+	event.recipes.tfc.pot(
+		Array(5).fill('minecraft:bone_meal'),
+		TFC.fluidStackIngredient('#tfg:clean_water', 1000),
+		500,
+		200
+		)
+		.itemOutput(TFC.isp.of('tfg:food/crude_gelatin').resetFood()
+	).id('tfg:pot/bone_meal_boiled_into_crude_gelatin');
+
+	event.recipes.firmalife.vat()
+		.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 1000))
+		.inputItem('5x minecraft:bone_meal')
+		.outputItem(TFC.isp.of('tfg:food/crude_gelatin').resetFood())
+		.length(100)
+		.temperature(200)
+		.id('tfg:vat/bone_meal_boiled_into_crude_gelatin');
+
+	global.registerFoodRecipe(event, 'food_oven', 'bone_meal_boiled_into_crude_gelatin', 100, 8, '', {
+		circuit: 1,
+		itemInputs: ['5x minecraft:bone_meal'],
+		fluidInputs: ['#tfg:clean_water 1000'],
+		itemOutputs: ['tfg:food/crude_gelatin'],
+		itemOutputProvider: TFC.isp.of('tfg:food/crude_gelatin').resetFood()
+	});
+
 	// Vinegar
 	global.processorRecipe(event, 'vinegar_alcohol', 600, GTValues.VA[GTValues.LV], {
 		circuit: 5,
