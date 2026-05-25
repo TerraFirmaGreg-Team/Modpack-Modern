@@ -24,6 +24,15 @@ function registerTFGPastoralRecipes(event) {
         .circuit(3)
     TFGRecipeSchemaBindings.animalPresentEntity(milk_goat, 'tfc:goat')
 
+    // Category of generic wool producers
+    let wool = event.recipes.gtceu.pastoral_engine('tfg:shear_wool')
+        .itemOutputs(Item.of('tfc:wool'))
+		.duration(20 * 5)
+		.EUt(GTValues.VA[GTValues.LV])
+        .circuit(4)
+    TFGRecipeSchemaBindings.animalPresent(wool, 'producing')
+
+    // Mars animals
     let glacian_wool = event.recipes.gtceu.pastoral_engine('tfg:shear_glacian')
         .itemOutputs(Item.of('tfg:glacian_wool'))
         .duration(20 * 5)
@@ -44,13 +53,5 @@ function registerTFGPastoralRecipes(event) {
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(7)
     TFGRecipeSchemaBindings.animalPresent(wraptor_wool, 'producing')
-
-    // Category
-    let wool = event.recipes.gtceu.pastoral_engine('tfg:shear_wool')
-        .itemOutputs(Item.of('tfc:wool'))
-		.duration(20 * 5)
-		.EUt(GTValues.VA[GTValues.LV])
-        .circuit(4)
-    TFGRecipeSchemaBindings.animalPresent(wool, 'producing')
 
 }
