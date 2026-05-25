@@ -14,18 +14,11 @@
 	"sounds": [
 		{
 			"name": "frog",
-			"category": "animal",
+			"category": "suspense",
 			"files": [
-				"ambientsounds:animals.frog-cave1",
-				"ambientsounds:animals.frog1",
-				"ambientsounds:animals.frog2"
+				"ambientsounds:animals.frog-cave1"
 			],
-			"volume": 0.3,
-			"pause": {
-				"min": 2500,
-				"max": 7500
-			},
-			"transition": 100
+			"volume": 0.3
 		}
 	]
 }

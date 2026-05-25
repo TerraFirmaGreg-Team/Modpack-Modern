@@ -14,16 +14,11 @@
 	"sounds": [
 		{
 			"name": "frog",
-			"category": "animal",
 			"files": [
 				"ambientsounds:cave.cave-lush"
 			],
-			"volume": 0.3,
-			"pause": {
-				"min": 2500,
-				"max": 7500
-			},
-			"transition": 100
+			"category": "suspense",
+			"volume": 0.3
 		}
 	]
 }
