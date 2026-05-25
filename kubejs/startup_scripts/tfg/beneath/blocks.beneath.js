@@ -20,6 +20,17 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
 		.defaultTranslucent()
+			
+	event.create('tfg:steam_emitter', 'tfg:particle_emitter_decoration')
+		.soundType('dripstone_block')
+		.mapColor('color_white')
+		.box(3, 0, 3, 13, 10, 13)
+		.particles(a => a
+			.range(2, 1, 2)
+			.velocity(0, 0.1, 0)
+			.particle('tfg:geothermal_steam')
+			.count(1)
+			.forced(true));
 
 	// Pale moss
 

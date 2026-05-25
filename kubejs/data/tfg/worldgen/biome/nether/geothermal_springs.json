@@ -26,9 +26,9 @@
 		},
 		"particle": {
 			"options": {
-				"type": "minecraft:white_ash"
+				"type": "tfg:geyser_poof"
 			},
-			"probability": 0.01
+			"probability": 0.002
 		},
 		"sky_color": 8223052,
 		"water_color": 4159204,
@@ -41,7 +41,7 @@
 		],
 		[
 			"tfg:nether/terrain/spring_water_large_lake",
-			"tfg:nether/terrain/spring_water_lake"
+			"tfg:nether/terrain/spring_water_lake_common"
 		],
 		"#tfg:nether_lakes_and_geodes",
 		[
@@ -59,6 +59,9 @@
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/cobblestone_lichen_patch",
 			"tfg:nether/surface/sunburst_lichen_patch",
+			"tfg:nether/surface/sulfur_dust_patch",
+			"tfg:nether/surface/sulfur_crystal_patch",
+			"tfg:nether/surface/steam_emitter_patch",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
