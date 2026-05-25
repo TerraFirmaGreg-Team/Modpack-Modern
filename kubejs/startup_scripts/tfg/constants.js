@@ -192,6 +192,7 @@ global.NEW_OVERWORLD_PLANTS = [
 	"tfg:plant/ramunda",
 	"tfg:plant/silken_pincushion_cactus",
 	"tfg:plant/silver_bromeliad",
+	"tfg:plant/shawiash",
 	"tfg:plant/tank_bromeliad",
 	"tfg:plant/yellow_saxifrage",
 	"tfg:plant/flame_vine",
