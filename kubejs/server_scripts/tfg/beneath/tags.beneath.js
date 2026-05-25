@@ -197,7 +197,9 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('tfc:creeping_stone_plantable_on', 'tfg:halite')
 	event.add('tfg:anemone_plantable_on', 'tfg:halite')
 	event.add('tfg:epiphyte_plantable_on', 'tfg:halite')
-	event.add('tfg:epiphyte_plantable_on', 'tfg:pale_moss')
+	event.add('tfg:epiphyte_plantable_on', 'tfg:pale_moss_block')
+	event.add('tfg:epiphyte_plantable_on', 'minecraft:moss_block')
+	event.add('tfg:epiphyte_plantable_on', 'tfc:kaolin_clay_grass')
 
 	event.add('minecraft:mineable/pickaxe', 'minecraft:lantern');
 

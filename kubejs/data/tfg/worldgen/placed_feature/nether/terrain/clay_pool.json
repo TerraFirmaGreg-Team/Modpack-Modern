@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/lush_caves_clay",
+	"feature": "tfg:nether/terrain/clay_pool",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 12
+			"type": "minecraft:rarity_filter",
+			"chance": 1
 		},
 		{
 			"type": "minecraft:in_square"
@@ -13,7 +13,7 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 180
+					"absolute": 190
 				},
 				"min_inclusive": {
 					"above_bottom": 48

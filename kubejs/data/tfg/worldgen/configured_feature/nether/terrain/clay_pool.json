@@ -10,7 +10,7 @@
 				"Name": "minecraft:clay"
 			}
 		},
-		"replaceable": "#minecraft:base_stone_nether",
+		"replaceable": "#minecraft:nether_carver_replaceables",
 		"surface": "floor",
 		"vegetation_chance": 0.6,
 		"vegetation_feature": {
@@ -21,8 +21,8 @@
 		"xz_radius": {
 			"type": "minecraft:uniform",
 			"value": {
-				"max_inclusive": 4,
-				"min_inclusive": 2
+				"max_inclusive": 6,
+				"min_inclusive": 4
 			}
 		}
 	}

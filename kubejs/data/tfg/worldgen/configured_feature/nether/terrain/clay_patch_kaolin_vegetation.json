@@ -38,6 +38,12 @@
 									},
 									{
 										"data": {
+											"Name": "tfc:plant/athyrium_fern"
+										},
+										"weight": 5
+									},
+									{
+										"data": {
 											"Name": "tfc:plant/ostrich_fern"
 										},
 										"weight": 15
@@ -59,6 +65,12 @@
 											"Name": "minecraft:large_fern"
 										},
 										"weight": 15
+									},
+									{
+										"data": {
+											"Name": "tfg:plant/tank_bromeliad"
+										},
+										"weight": 5
 									}
 								]
 							}

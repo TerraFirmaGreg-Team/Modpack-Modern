@@ -159,7 +159,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-			return lerp(0, 500, pos.y / global.NETHER_HEIGHT);
+			return lerp(-200, 500, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)

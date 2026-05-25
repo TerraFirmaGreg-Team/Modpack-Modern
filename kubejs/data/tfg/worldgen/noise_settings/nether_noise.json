@@ -1163,7 +1163,7 @@
 					"type": "minecraft:condition",
 					"if_true": {
 						"type": "minecraft:stone_depth",
-						"add_surface_depth": true,
+						"add_surface_depth": false,
 						"offset": 0,
 						"secondary_depth_range": 0,
 						"surface_type": "floor"
@@ -1183,7 +1183,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:y_above",
-										"add_stone_depth": true,
+										"add_stone_depth": false,
 										"anchor": {
 											"absolute": 30
 										},
@@ -1195,7 +1195,7 @@
 											"type": "minecraft:not",
 											"invert": {
 												"type": "minecraft:y_above",
-												"add_stone_depth": true,
+												"add_stone_depth": false,
 												"anchor": {
 													"absolute": 35
 												},
