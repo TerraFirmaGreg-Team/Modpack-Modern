@@ -79,6 +79,19 @@ function registerTFGPrimitiveMaterials(event) {
 			GTMaterialFlags.NO_ORE_PROCESSING_TAB
 		)
 
+	event.create('anthracite')
+		.components('1x carbon')
+		.color(0x45483C)
+		.secondaryColor(0x471A16)
+		.iconSet(GTMaterialIconSet.LIGNITE)
+		.ore()
+		.flags(
+			GTMaterialFlags.FLAMMABLE,
+			GTMaterialFlags.DISABLE_DECOMPOSITION,
+			GTMaterialFlags.DISABLE_MATERIAL_RECIPES,
+			GTMaterialFlags.NO_ORE_PROCESSING_TAB
+		)
+
 	// Film developing
 	event.create('tfg:pyrogallol')
 		.dust()

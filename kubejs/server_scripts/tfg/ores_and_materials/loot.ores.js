@@ -21,8 +21,8 @@ const registerTFGOreLoots = (event) => {
 					.addLoot(ChemicalHelper.get(TagPrefix.gemChipped, material, 1));
 			}
 
-			// Special case for coal and lignite
-			if (material === GTMaterials.Coal || material === GTMaterials.get('lignite')) {
+			// Special case for coals
+			if (material === GTMaterials.Coal || material === GTMaterials.get('lignite') || material === GTMaterials.get('anthracite')) {
 				let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
 				let rawOre = ChemicalHelper.get(TagPrefix.gem, material, 1)
 				event.addBlockLootModifier(rawOreBlock)
