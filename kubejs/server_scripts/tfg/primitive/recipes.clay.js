@@ -229,7 +229,6 @@ function registerTFGClayRecipes(event) {
 		.duration(200)
 		.EUt(6)
 
-
 	//Hardened Clay
 	event.recipes.firmalife.drying(
 		"tfg:hardened_clay",
