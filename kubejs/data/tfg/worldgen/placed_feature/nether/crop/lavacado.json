@@ -2,8 +2,8 @@
 	"feature": "tfg:nether/crop/lavacado",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 2
+			"type": "minecraft:count",
+			"count": 1
 		},
 		{
 			"type": "minecraft:in_square"
