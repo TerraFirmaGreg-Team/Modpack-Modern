@@ -29,10 +29,11 @@
 	"entity.endermanoverhaul.swamp_enderman": "Omszały Enderman",
 	"entity.endermanoverhaul.warped_forest_enderman": "Enderman ze spaczonego lasu",
 	"entity.endermanoverhaul.warped_pearl": "Spaczona perła",
+	"entity.endermanoverhaul.windswept_hills_enderman": "Księżycowy enderman",
 	"item.endermanoverhaul.ancient_pearl": "Starożytna perła",
 	"item.endermanoverhaul.bubble_pearl": "Bąbelkowa perła",
-	"item.endermanoverhaul.cave_enderman_spawn_egg": "Jajo przyzywające jaskiniowego Endermana",
-	"item.endermanoverhaul.coral_enderman_spawn_egg": "Jajo przyzywające koralowego Endermana",
+	"item.endermanoverhaul.cave_enderman_spawn_egg": "Jajo przyzywające jaskiniowego endermana",
+	"item.endermanoverhaul.coral_enderman_spawn_egg": "Jajo przyzywające koralowego endermana",
 	"item.endermanoverhaul.corrupted_blade": "Spaczone ostrze",
 	"item.endermanoverhaul.corrupted_pearl": "Spaczona perła",
 	"item.endermanoverhaul.corrupted_shield": "Spaczona tarcza",
@@ -50,6 +51,7 @@
 	"item.endermanoverhaul.spirit_spawn_egg": "Jajo przyzywające kometę",
 	"item.endermanoverhaul.summoner_pearl": "Perła Przywoływającego",
 	"item.endermanoverhaul.swamp_enderman_spawn_egg": "Jajo przyzywające zamszonego Endermana",
+	"item.endermanoverhaul.warped_forest_enderman_spawn_egg": "Jajo przyzywające endermana ze spaczonego lasu",
 	"item.endermanoverhaul.warped_pearl": "Spaczona perła",
 	"itemGroup.endermanoverhaul.main": "Enderman Overhaul",
 	"subtitles.endermanoverhaul.entity.ancient_pearl.hit": "Starożytna perła uderza",
@@ -65,6 +67,8 @@
 	"tooltip.endermanoverhaul.ancient_pet": "Zdrowie zwierzaka: %.1f",
 	"tooltip.endermanoverhaul.bound_to": "Powiązany z: %s",
 	"tooltip.endermanoverhaul.corrupted_blade": "Teleportuje cele losowo",
+	"tooltip.endermanoverhaul.hood": "Pozwala spojrzeć na endermany, nie denerwując ich",
 	"tooltip.endermanoverhaul.icy_pearl": "Zamraża pobliskie cele przy trafieniu",
-	"tooltip.endermanoverhaul.not_bound": "Niepowiązane"
+	"tooltip.endermanoverhaul.not_bound": "Niepowiązane",
+	"tooltip.endermanoverhaul.summoner_pearl": "Teleportuje pobliskie cele przy trafieniu"
 }
