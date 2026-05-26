@@ -89,7 +89,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:storage_blocks/wrought_iron',
 		C: '#tfc:rock/smooth',
 		D: 'minecraft:dispenser',
-		E: 'firmaciv:cannon'
+		E: ['firmaciv:cannon', 'alekiships:cannon']
 	}).addMaterialInfo().id('tfg:create/shaped/schematicannon')
 
 	// Стол для схематик
@@ -1701,14 +1701,23 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.shaped('create:packager', [
 		' A ',
 		'BCD',
-		' E '
+		'FEG'
 	], {
 		A: '#forge:small_gears/red_alloy',
 		B: '#forge:springs/wrought_iron',
 		C: 'create:andesite_casing',
 		D: 'create:bound_cardboard_block',
-		E: 'create:electron_tube'
+		E: 'create:electron_tube',
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('tfg:create/shaped/packager')
+
+	event.recipes.gtceu.assembler('create:packager')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:andesite_casing', 'create:bound_cardboard_block', 'create:electron_tube')
+		.itemOutputs('create:packager')
+		.circuit(20)
+		.duration(100)
+		.EUt(20)
 
 	event.shaped('create:item_hatch', [
 		'A',
@@ -2346,7 +2355,23 @@ const registerCreateRecipes = (event) => {
 
 	//Bars
 
-	event.stonecutting('4x create:andesite_bars', '#forge:ingots/tin_alloy')
+	const create_metals = [
+		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
+		{ metal: 'brass', material: 'brass', tier: 2 },
+		{ metal: 'copper', material: 'copper', tier: 1 },
+	];
+
+	create_metals.forEach(bar => {
+		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
+
+		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, [GTMaterials.get(bar.material), 0.25])
+
+		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
+
+		event.stonecutting(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`);
+	})
 
 	//Copycats
 	
@@ -2366,22 +2391,6 @@ const registerCreateRecipes = (event) => {
     	.duration(20)
     	.EUt(GTValues.VA[GTValues.LV])
     	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-
-	const create_metals = [
-		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
-		{ metal: 'brass', material: 'brass', tier: 2 },
-		{ metal: 'copper', material: 'copper', tier: 1 },
-	];
-
-	create_metals.forEach(bar => {
-		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
-
-		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, [GTMaterials.get(bar.material), 0.25])
-
-		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
-	})
 
 	// Doors
 

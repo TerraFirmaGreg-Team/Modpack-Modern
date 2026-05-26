@@ -143,7 +143,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "douglas_fir",
-			"title": "Daglezja zielona",
+			"title": "Jedlica zielona",
 			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
 			"link_recipe": false,
 			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 305$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"

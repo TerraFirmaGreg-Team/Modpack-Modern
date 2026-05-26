@@ -125,4 +125,10 @@ function registerRnrBlockTags(event) {
 	event.add('minecraft:mineable/pickaxe', `rnr:ceramic_roof_stairs`)
 	event.add('minecraft:mineable/pickaxe', `rnr:ceramic_roof_slab`)
 
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_panel')
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_sett')
+	event.add('tfc:supports_landslide', 'rnr:wet_concrete_road_flagstones')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_panel')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_sett')
+	event.add('minecraft:mineable/shovel', 'rnr:wet_concrete_road_flagstones')
 }

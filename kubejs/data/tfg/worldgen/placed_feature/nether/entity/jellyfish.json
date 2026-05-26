@@ -30,7 +30,10 @@
 			"max_steps": 12,
 			"target_condition": {
 				"type": "minecraft:matching_fluids",
-				"fluids": "tfc:salt_water"
+				"fluids": [
+					"tfc:salt_water",
+					"tfc:spring_water"
+				]
 			}
 		},
 		{

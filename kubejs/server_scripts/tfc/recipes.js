@@ -332,4 +332,6 @@ const registerTFCRecipes = (event) => {
 	
 	event.recipes.tfc.quern("gtceu:wax_dust", "#minecraft:candles")
 		.id("tfg:quern/candles")
+	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
+		.id("tfg:quern/wax_nugget")
 }

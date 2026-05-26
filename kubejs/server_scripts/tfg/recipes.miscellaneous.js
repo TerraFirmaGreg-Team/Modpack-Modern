@@ -166,5 +166,37 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(5*20)
 		.EUt(GTValues.VA[GTValues.LV])
 		.addMaterialInfo(true);
-	
+
+	//#region Struts and Girders
+
+	const STRUT_AND_GIRDER_METALS = [
+		{ metal: 'copper', amount: 4, recycle: GTMaterials.Copper, yield: 0.25 },
+		{ metal: 'zinc', amount: 4, recycle: GTMaterials.Zinc, yield: 0.25 },
+		{ metal: 'brass', amount: 4, recycle: GTMaterials.Brass, yield: 0.25 },
+		{ metal: 'tin_alloy', amount: 4, recycle: GTMaterials.TinAlloy, yield: 0.25 },
+		{ metal: 'wrought_iron', amount: 8, recycle: GTMaterials.WroughtIron, yield: 0.125 },
+		{ metal: 'steel', amount: 8, recycle: GTMaterials.Steel, yield: 0.125 }
+	]
+
+	STRUT_AND_GIRDER_METALS.forEach(material => {
+		// Girder
+		if(material.metal != 'steel') {
+			event.stonecutting(`${material.amount}x tfg:girder/beam/${material.metal}`, `#forge:ingots/${material.metal}`)
+			TFGHelpers.registerMaterialInfo(`tfg:girder/beam/${material.metal}`, [material.recycle, material.yield])
+		}
+		
+		// Truss
+		event.stonecutting(`${material.amount}x tfg:girder/truss/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:girder/truss/${material.metal}`, [material.recycle, material.yield])
+
+		// Girder Strut
+		event.stonecutting(`${material.amount}x tfg:strut/beam/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:strut/beam/${material.metal}`, [material.recycle, material.yield])
+
+		// Truss Strut
+		event.stonecutting(`${material.amount}x tfg:strut/truss/${material.metal}`, `#forge:ingots/${material.metal}`)
+		TFGHelpers.registerMaterialInfo(`tfg:strut/truss/${material.metal}`, [material.recycle, material.yield])
+	})
+
+	//#endregion
 }

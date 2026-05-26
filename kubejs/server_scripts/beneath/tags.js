@@ -3,7 +3,6 @@
 const registerBeneathItemTags = (event) => {
 
 	event.add("forge:raw_materials/cursecoal", "beneath:cursecoal")
-	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
@@ -46,12 +45,12 @@ const registerBeneathItemTags = (event) => {
 
 const registerBeneathBlockTags = (event) => {
 
-	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
-	
     event.add('tfc:can_landslide', 'beneath:soul_clay')
 
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
+
+	event.add('minecraft:mineable/pickaxe', 'beneath:ancient_altar');
 
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')

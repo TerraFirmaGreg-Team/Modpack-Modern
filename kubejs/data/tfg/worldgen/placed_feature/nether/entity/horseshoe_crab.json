@@ -32,7 +32,8 @@
 				"type": "minecraft:matching_fluids",
 				"fluids": [
 					"tfc:salt_water",
-					"tfg:muddy_water"
+					"tfg:muddy_water",
+					"tfc:spring_water"
 				]
 			}
 		},

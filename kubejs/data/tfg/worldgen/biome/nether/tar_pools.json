@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 706962,
+		"fog_color": 7429703,
 		"additions_sound": {
 			"sound": "tfg:ambient.middle_nether.additions",
 			"tick_chance": 0.0015
@@ -24,14 +24,23 @@
 				"sound_id": "tfg:music.nether"
 			}
 		},
-		"sky_color": 706962,
+		"particle": {
+			"options": {
+				"type": "minecraft:white_ash"
+			},
+			"probability": 0.01
+		},
+		"sky_color": 7429703,
 		"water_color": 4159204,
 		"water_fog_color": 329011,
 		"grass_color": 6466617
 	},
 	"features": [
+		[
+			"tfg:nether/terrain/oil_lake_selector",
+			"tfg:nether/terrain/small_oil_lake_selector"
+		],
 		"#tfg:nether_lakes_and_geodes",
-		[],
 		[
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
@@ -40,13 +49,24 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/terrain/clay_pool"
 		],
 		"#tfg:nether_crops",
 		[
+			"tfg:nether/terrain/oil_tar_disk_selector",
+			"tfg:nether/terrain/oilsands_disk",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/surface/dry_grass_patch",
+			"tfg:nether/surface/silken_pincushion_patch",
+			"tfg:nether/surface/barrel_cactus_patch",
+			"tfg:nether/surface/bird_nest_fern_patch",
+			"tfg:nether/surface/prickly_pear_patch",
+			"tfg:nether/surface/prickly_pear_purple_patch",
+			"tfg:nether/surface/cobblestone_lichen_patch",
+			"tfg:nether/surface/sunburst_lichen_patch",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"tfg:nether/surface/beneath_mushrooms",
@@ -56,22 +76,23 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"species:cliff_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"species:leaf_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:ghoul": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.03,
+			"charge": 0.93
 		}
 	},
 	"spawners": {
@@ -95,51 +116,33 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "minecraft:piglin",
-				"maxCount": 4,
-				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:spider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:skeleton",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombie",
+				"type": "minecraft:hoglin",
 				"maxCount": 4,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:creeper",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 90
-			},
-			{
-				"type": "minecraft:silverfish",
+				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
@@ -151,6 +154,18 @@
 				"weight": 5
 			},
 			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 2,
 				"minCount": 1,
@@ -160,36 +175,48 @@
 				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:swamp_enderman",
-				"maxCount": 1,
+				"type": "species:cliff_hanger",
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:dark_oak_enderman",
+				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:bewereager",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 5
+				"weight": 50
 			}
 		],
-		"underground_water_creature": [
+		"underground_water_creature": [],
+		"water_creature": [
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:leaf_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			}
-		],
-		"water_creature": []
+		]
 	},
 	"temperature": 1
 }

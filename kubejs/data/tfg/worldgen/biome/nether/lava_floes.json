@@ -44,14 +44,16 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"minecraft:spring_delta",
+			"minecraft:spring_closed_double"
 		],
 		"#tfg:nether_crops",
 		[
-			"minecraft:spring_delta",
-			"minecraft:spring_closed_double",
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/loose_basalt",
+			"tfg:nether/surface/smoker_source_patch",
+			"tfg:nether/surface/lava_source_patch",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -61,8 +63,7 @@
 			"beneath:sulfur_patch",
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
-			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch"
+			"tfg:nether/surface/guano_patch"
 		],
 		"#tfg:nether_global_decoration",
 		[
@@ -71,14 +72,6 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"species:cliff_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"species:leaf_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
@@ -112,16 +105,10 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "minecraft:piglin",
-				"maxCount": 3,
+				"type": "minecraft:hoglin",
+				"maxCount": 4,
 				"minCount": 2,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
+				"weight": 100
 			},
 			{
 				"type": "minecraft:magma_cube",
@@ -130,22 +117,10 @@
 				"weight": 100
 			},
 			{
-				"type": "minecraft:silverfish",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 20
-			},
-			{
 				"type": "primitive_creatures:golem_2",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
-			},
-			{
-				"type": "minecraft:skeleton",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
 			},
 			{
 				"type": "minecraft:phantom",
@@ -155,9 +130,9 @@
 			},
 			{
 				"type": "minecraft:wither_skeleton",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
@@ -168,6 +143,42 @@
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:nether_wastes_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:bewereager",
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			}

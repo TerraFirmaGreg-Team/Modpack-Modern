@@ -1,12 +1,38 @@
 # Changelog
 
 ## Unreleased
+### Major changes
+- We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
+#### Beneath
+- TODO
+#### Food rework
+- TODO
+#### Fluid Logistics
+- Replaced Create: Factory Logistics with Create Fluid Logistics, a different fluid addon for Create's logistics system that's less buggy (#3906) @Bumperdo09
+- Jar packagers in your world should be automatically replaced with the new Fluid packagers, and Fluid Gauges should be automatically replaced with normal factory gauges, which can now handle fluids themselves). **If you use a lot of these, please triple check you've made a backup before updating!**
+- Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
+- Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
+- Added an assembler recipe for the normal packager 
 ### Breaking changes
 - Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
-### Changes we forgot to write last time
-- Blue Steel hiking boots are now a little slower and Red Steel hiking boots had their step height removed to make them more distinct. Additionally added ambiental stats. (#3998) @SakuraKitsurugi
 ### Changes
+- Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
+- Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
+- Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
+- Added new metal girders and struts which can also be placed at arbitrary angles and used as railroad track (#4091) @SakuraKitsurugi
+- Mechanical arms can now interact with Vats @ashleney
 ### Bug fixes
+- Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
+- Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
+- Fixed not being able to use some fences and fence gates with the pastoral rancher (#4077) @Pyritie
+- Fixed wet concrete panels, sett, and flagstones not supporting landslides or having an appropriate tool (#4110) @Pyritie
+- Fixed inconsistencies with cannons (#4103) @Pyritie
+- Fixed GT recycling recipes for Hermetic Casing I (#4101) @Pyritie
+- Potential fix for the rocket lander sometimes getting stuck or sending you to the wrong place (#3054) @ashleney
+- Fixed muddy water, spring water, and semiheavy ammoniacal water not doing anything when touching lava @Pyritie
+- Fixed being able to grow dead coral (#4096) @Pyritie
+### Mod updates
+- Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 
 ## [0.12.8] - 17-05-2026
 ### Breaking changes

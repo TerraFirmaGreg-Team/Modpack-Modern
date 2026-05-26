@@ -143,7 +143,6 @@ const registerSingleGroups = (event) => {
         '#tfcastikorcarts:animal_cart',
 
         // Blocks (Forge)
-        '#forge:fence_gates',
         '#forge:chests',
         '#forge:frames',
         '#forge:surface_rocks',

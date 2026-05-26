@@ -44,7 +44,7 @@ function registerCreateDecoItemTags(event) {
 	event.add("createdeco:internal/blocks/brass_blocks", "#forge:storage_blocks/brass");
 	event.add("createdeco:internal/blocks/industrial_iron_blocks", "#forge:storage_blocks/steel");
 	event.add("createdeco:internal/blocks/zinc_blocks", "#forge:storage_blocks/zinc");
-	event.add("createdeco:internal/blocks/andesite_blocks", "#forge:storage_blocks/tin_alloy");
+	event.add("createdeco:internal/blocks/andesite_blocks", "#forge:storage_blocks/tin_alloy");	
 
 	global.MINECRAFT_DYE_NAMES.forEach((color) => {
 		event.add("createdeco:shipping_containers", `createdeco:${color}_shipping_container`);

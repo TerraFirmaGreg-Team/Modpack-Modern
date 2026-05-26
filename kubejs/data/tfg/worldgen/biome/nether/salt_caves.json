@@ -76,6 +76,7 @@
 			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/jellyfish",
 			"tfg:nether/entity/horseshoe_crab",
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
@@ -86,8 +87,8 @@
 			"charge": 0.9
 		},
 		"species:leaf_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.15,
+			"charge": 0.7
 		},
 		"species:spectre": {
 			"energy_budget": 0.05,
@@ -96,6 +97,10 @@
 		"species:wicked": {
 			"energy_budget": 0.05,
 			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.02,
+			"charge": 0.95
 		}
 	},
 	"spawners": {
@@ -116,15 +121,16 @@
 				"weight": 10
 			}
 		],
-		"creature": [],
+		"creature": [
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
 		"misc": [],
 		"monster": [
-			{
-				"type": "minecraft:zombie_horse",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 100
-			},
 			{
 				"type": "minecraft:piglin",
 				"maxCount": 3,
@@ -232,7 +238,7 @@
 		"water_creature": [
 			{
 				"type": "species:leaf_hanger",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			}

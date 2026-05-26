@@ -46,7 +46,8 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/terrain/clay_pool"
 		],
 		"#tfg:nether_crops",
 		[
@@ -84,26 +85,24 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
+			"tfg:nether/entity/zombie_horse",
+			"tfg:nether/terrain/thorn_vegetation_patch",
 			"tfc:erosion"
 		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"species:cliff_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"species:leaf_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
 		"species:spectre": {
 			"energy_budget": 0.05,
 			"charge": 0.9
 		},
 		"species:ghoul": {
-			"energy_budget": 0.15,
-			"charge": 0.7
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.03,
+			"charge": 0.93
 		}
 	},
 	"spawners": {
@@ -120,9 +119,15 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
+			},
+			{
+				"type": "species:mammutilation",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"misc": [],
@@ -135,8 +140,8 @@
 			},
 			{
 				"type": "minecraft:hoglin",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
@@ -161,7 +166,7 @@
 				"type": "minecraft:wither_skeleton",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:enderman",
@@ -189,7 +194,7 @@
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},

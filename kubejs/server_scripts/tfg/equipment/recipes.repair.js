@@ -261,13 +261,16 @@ function registerTFGRepairRecipes(event) {
 
 	// Tongs
 	global.TFC_METALS.forEach(metal => {
+		if (metal === "cast_iron")
+			return;
+
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
 				"RH",
 			],
 			key: {
-				R: { tag: `forge:rods/${(metal == "cast_iron" ? "iron" : metal)}` },
+				R: { tag: `forge:rods/${metal}` },
 				H: { item: `tfchotornot:tongs/${metal}` },
 				// T: { tag: "forge:tools/hammers" }
 			},

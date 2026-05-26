@@ -4,7 +4,6 @@
 global.MINECRAFT_HIDED_ITEMS = [
     '/spawn_egg/',
     
-    'minecraft:cobweb',
     'minecraft:bedrock',
     "minecraft:debug_stick",
     "minecraft:spawner",
@@ -12,19 +11,17 @@ global.MINECRAFT_HIDED_ITEMS = [
     "minecraft:repeating_command_block", 
 	"minecraft:chain_command_block",
     "minecraft:command_block_minecart",
-    "minecraft:player_head",
-    "minecraft:lantern",
 	"minecraft:light", 
 	"minecraft:structure_void",
 	"minecraft:jigsaw",
 	"minecraft:structure_block", 
 
+    "minecraft:lantern",
     "minecraft:raw_iron_block",
-    "minecraft:raw_copper_block",
-    "minecraft:raw_gold_block",
 	"minecraft:grass_block", 
 	"minecraft:infested_deepslate",
 
+    "minecraft:player_head",
 	"minecraft:piglin_head", 
 	"minecraft:zombie_head", 
 	"minecraft:dragon_head", 

@@ -151,19 +151,19 @@ TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:nether_climate', builder => {
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return lerp(100, 25, pos.y / global.NETHER_HEIGHT);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
-			return lerp(100, 25, pos.y / global.NETHER_HEIGHT);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {
-			return lerp(0, 500, pos.y / global.NETHER_HEIGHT);
+			return lerp(-200, 500, pos.y / global.NETHER_HEIGHT);
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
+		builder.setWaterFog((level, pos, calendarTicks) => 0)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 

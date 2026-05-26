@@ -4,10 +4,14 @@
 		"block": "minecraft:glow_lichen",
 		"can_be_placed_on": [
 			"minecraft:dripstone_block",
+			"tfg:rock/hardened_dripstone",
 			"minecraft:calcite",
 			"minecraft:tuff",
+			"tfg:rock/hardened_tuff",
 			"minecraft:deepslate",
+			"tfg:rock/hardened_deepslate",
 			"minecraft:blackstone",
+			"tfg:rock/hardened_blackstone",
 			"tfc:rock/raw/gabbro",
 			"tfc:rock/hardened/gabbro",
 			"tfc:rock/raw/schist",
@@ -47,8 +51,7 @@
 			"tfc:rock/raw/andesite",
 			"tfc:rock/hardened/andesite",
 			"tfc:rock/raw/dacite",
-			"tfc:rock/hardened/dacite",
-			"tfg:rock/hardened_deepslate"
+			"tfc:rock/hardened/dacite"
 		],
 		"can_place_on_ceiling": true,
 		"can_place_on_floor": false,

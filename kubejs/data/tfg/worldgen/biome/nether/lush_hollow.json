@@ -71,20 +71,21 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/cold_frog",
+			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"species:cliff_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
-		"species:leaf_hanger": {
-			"energy_budget": 0.05,
-			"charge": 0.9
-		},
 		"species:spectre": {
+			"energy_budget": 0.05,
+			"charge": 0.9
+		},
+		"species:mammutilation": {
+			"energy_budget": 0.02,
+			"charge": 0.95
+		},
+		"species:cliff_hanger": {
 			"energy_budget": 0.05,
 			"charge": 0.9
 		}
@@ -110,7 +111,7 @@
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 3,
+				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			}
@@ -118,68 +119,37 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "minecraft:piglin",
+				"type": "primitive_creatures:tfc",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
 				"maxCount": 4,
 				"minCount": 3,
 				"weight": 50
 			},
 			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
-			{
-				"type": "primitive_creatures:tfc",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombie",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
-				"type": "minecraft:creeper",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:slime",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:phantom",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
-				"type": "minecraft:enderman",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
 				"type": "endermanoverhaul:swamp_enderman",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
-			}
-		],
-		"underground_water_creature": [
+				"weight": 50
+			},
 			{
-				"type": "tfc:octopoteuthis",
-				"maxCount": 3,
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 50
 			}
 		],
+		"underground_water_creature": [],
 		"water_creature": []
 	},
 	"temperature": 0.8
