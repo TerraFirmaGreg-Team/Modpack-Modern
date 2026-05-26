@@ -31,14 +31,14 @@ const registerBeneathRecipes = (event) => {
 
 	event.shapeless('beneath:hellbricks', [
 		'minecraft:nether_bricks',
-		'minecraft:magma_cream',
+		['minecraft:magma_cream', 'minecraft:slime_ball'],
 		'tfc:powder/sulfur',
 		'tfc:soot'
 	]).id('tfg:shapeless/hellbricks_from_soot')
 
 	event.shapeless('beneath:hellbricks', [
 		'minecraft:nether_bricks',
-		'minecraft:magma_cream',
+		['minecraft:magma_cream', 'minecraft:slime_ball'],
 		'tfc:powder/sulfur',
 		'tfc:powder/wood_ash'
 	]).id('tfg:shapeless/hellbricks_from_wood_ash')

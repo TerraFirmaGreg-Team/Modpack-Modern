@@ -46,7 +46,8 @@
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/terrain/clay_pool"
 		],
 		"#tfg:nether_crops",
 		[
@@ -92,8 +93,8 @@
 	"has_precipitation": false,
 	"spawn_costs": {
 		"species:spectre": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.1,
+			"charge": 0.7
 		},
 		"species:ghoul": {
 			"energy_budget": 0.05,
@@ -199,7 +200,7 @@
 			},
 			{
 				"type": "species:spectre",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			},

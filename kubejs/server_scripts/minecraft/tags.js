@@ -29,6 +29,7 @@ const registerMinecraftItemTags = (event) => {
 
 	event.remove('forge:gems', 'tfc:ore/lignite')
 	event.remove('forge:gems', 'tfc:ore/bituminous_coal')
+	event.remove('forge:gems', 'beneath:cursecoal')
 	event.remove('forge:gems', 'minecraft:charcoal')
 	event.remove('forge:gems', 'minecraft:flint')
 

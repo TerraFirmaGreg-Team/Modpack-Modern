@@ -32,6 +32,12 @@
 									},
 									{
 										"data": {
+											"Name": "tfc:plant/athyrium_fern"
+										},
+										"weight": 10
+									},
+									{
+										"data": {
 											"Name": "tfc:plant/ostrich_fern"
 										},
 										"weight": 25
@@ -57,6 +63,26 @@
 								]
 							}
 						}
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "tfc:tall_plant",
+						"config": { "block": "tfg:plant/fan_palm" }
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "tfc:tall_plant",
+						"config": { "block": "tfg:plant/azalea" }
 					},
 					"placement": []
 				}

@@ -78,12 +78,16 @@
 	"has_precipitation": false,
 	"spawn_costs": {
 		"species:spectre": {
-			"energy_budget": 0.05,
-			"charge": 0.9
+			"energy_budget": 0.1,
+			"charge": 0.7
 		},
 		"species:mammutilation": {
 			"energy_budget": 0.02,
 			"charge": 0.95
+		},
+		"species:cliff_hanger": {
+			"energy_budget": 0.05,
+			"charge": 0.9
 		}
 	},
 	"spawners": {
@@ -110,34 +114,10 @@
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
-			},
-			{
-				"type": "species:mammutilation",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
 			}
 		],
 		"misc": [],
 		"monster": [
-			{
-				"type": "minecraft:piglin",
-				"maxCount": 4,
-				"minCount": 3,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:hoglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
 			{
 				"type": "primitive_creatures:tfc",
 				"maxCount": 4,
@@ -148,58 +128,22 @@
 				"type": "minecraft:creeper",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:phantom",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
-			},
-			{
-				"type": "minecraft:wither_skeleton",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "minecraft:enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:swamp_enderman",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "species:cliff_hanger",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "species:spectre",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "species:ghoul",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "species:wicked",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 50
