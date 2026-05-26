@@ -78,22 +78,8 @@
 		}
 	},
 	"spawners": {
-		"ambient": [
-			{
-				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
-			}
-		],
-		"axolotls": [
-			{
-				"type": "minecraft:axolotl",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 10
-			}
-		],
+		"ambient": [],
+		"axolotls": [],
 		"creature": [
 			{
 				"type": "beneath:red_elk",
