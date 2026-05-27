@@ -34,6 +34,7 @@ function registerTFGBeneathItemTags(event) {
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	event.remove('createaddition:plants', 'minecraft:moss_carpet')
+	event.add('createaddition:plants', 'wan_ancient_beasts:olden_moss_block')
 
 	beneath_plants.forEach(plant =>
 		event.add('tfg:plants/beneath', plant)
@@ -219,6 +220,9 @@ function registerTFGBeneathBlockTags(event) {
 
 	event.add("beneath:nether_bush_plantable_on", "#tfc:mud");
 	event.add("beneath:nether_bush_plantable_on", "#tfc:dirt");
+
+	event.remove("tfc:can_trigger_collapse", "minecraft:basalt");
+	event.remove("tfc:can_start_collapse", "minecraft:basalt");
 }
 
 function registerTFGBeneathBiomeTags(event) {
