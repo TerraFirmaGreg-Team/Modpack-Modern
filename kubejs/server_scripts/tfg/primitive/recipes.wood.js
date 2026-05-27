@@ -39,15 +39,27 @@ function registerTFGWoodRecipes(event) {
 	// Treated Wood
 	event.remove({ id: 'gtceu:shaped/treated_wood_planks' })
 
-	event.recipes.tfc.barrel_sealed(4000)
-		.outputItem('gtceu:treated_wood_planks')
-		.inputs('#minecraft:planks', TFC.fluidStackIngredient('#forge:creosote', 100))
-		.id('tfg:barrel/treated_wood_planks')
+	const TREATED_WOOD_ITEMS = [
+		{ output: 'treated_wood_plate', input: '#tfc:lumber', multiplier: 1 },
+		{ output: 'treated_wood_dust', input: 'tfg:wood_dusts', multiplier: 1 },
+		{ output: 'treated_wood_rod', input: '#forge:rods/wooden', multiplier: 2 },
+		{ output: 'long_treated_wood_rod', input: '#forge:rods/long/wood', multiplier: 4 },
+		{ output: 'treated_wood_planks', input: '#minecraft:planks', multiplier: 4 },
+		{ output: 'treated_wood_slab', input: '#minecraft:wooden_slabs', multiplier: 2 },
+		{ output: 'treated_wood_fence', input: '#forge:fences/wooden', multiplier: 2.25 },
+		{ output: 'treated_wood_pressure_plate', input: '#minecraft:wooden_pressure_plates', multiplier: 4 },
+		{ output: 'treated_wood_trapdoor', input: '#minecraft:wooden_trapdoors', multiplier: 2 },
+		{ output: 'treated_wood_stairs', input: '#minecraft:wooden_stairs', multiplier: 3 },
+		{ output: 'treated_wood_fence_gate', input: '#forge:fence_gates/wooden', multiplier: 6 },
+		{ output: 'treated_wood_door', input: '#minecraft:wooden_doors', multiplier: 3 },
+	]
 
-	event.recipes.tfc.barrel_sealed(2000)
-		.outputItem('gtceu:treated_wood_dust')
-		.inputs('#tfg:wood_dusts', TFC.fluidStackIngredient('#forge:creosote', 50))
-		.id('tfg:barrel/treated_wood_dust')
+	TREATED_WOOD_ITEMS.forEach(item => {
+		event.recipes.tfc.barrel_sealed(1000 * item.multiplier)
+			.outputItem(`gtceu:${item.output}`)
+			.inputs(`${item.input}`, TFC.fluidStackIngredient('#forge:creosote', 25 * item.multiplier))
+			.id(`tfg:barrel/${item.output}`)
+	})
 
 	// Empty Wooden Form
 	event.shaped('gtceu:empty_wooden_form', [
