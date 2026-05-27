@@ -26,10 +26,10 @@
         },
         "pattern": [
           [
-          "CCCC",
-          "CCC0",
-          "CCCC",
-          "CCCC"
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
           ]
         ]
       },
@@ -50,14 +50,14 @@
         },
         "pattern": [
           [
-          " C ",
-          "C C",
-          " C "
+            " C ",
+            "C C",
+            " C "
           ],
           [
-          "   ",
-          " 0 ",
-          "   "
+            "   ",
+            " 0 ",
+            "   "
           ]
         ]
       },
@@ -79,7 +79,7 @@
     {
       "type": "patchouli:text",
       "text": "$(li)$(bold)$(7)White$(): Silica or Hematitic Glass + $(thing)Soda Ash$()$(li)$(bold)$(0)Black$(): Any Glass + $(thing)Graphite$()$(li)$(bold)$(8)Gray$(): Any + $(thing)Graphite$() + $(thing)Soda Ash$()$(li)$(bold)$(7)Light Gray$(): Any + $(thing)Graphite$() + 2x $(thing)Soda Ash$()$(li)$(bold)$(5)Purple$(): Any + $(thing)Iron$() + $(thing)Copper$()$(li)$(bold)$(#964b00)Brown$(): Any + $(thing)Nickel$()$(li)$(bold)$(3)Cyan$(): Non-Volcanic Glass + $(thing)Copper$() + $(thing)Sapphire$()$(li)$(bold)$(2)Green$(): Silica or Hematitic Glass + $(thing)Iron$()",
-      "title": "Dye Colors"
+      "title": "Colores de tinte"
     },
     {
       "type": "patchouli:text",
@@ -378,15 +378,15 @@
       "title": "Glass Color Availability",
       "legend": [
         {
-          "text": "Can be Crafted",
+          "text": "Se puede Craftear",
           "color": "0x3eb340"
         },
         {
-          "text": "Cannot be Crafted",
+          "text": "No se puede Craftear",
           "color": "0xb33e3e"
         },
         {
-          "text": "Default Color",
+          "text": "Color predeterminado",
           "color": "0x3d42a8"
         }
       ],

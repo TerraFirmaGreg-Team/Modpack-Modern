@@ -1,5 +1,5 @@
 {
-	"name": "Hazardous Materials",
+	"name": "Vestélyes Anyagok",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,39 +8,39 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Vestélyes Anyagok",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Néhány $(thing)ércek$(), $(thing)porok$() és $(thing)vegyanyagok$() veszélyes, és $(item)negatív hatásokat$() okozhat, vagy akár $(item)halált$() is okozhat, ha a játékos tárhyben vannak. Amikor a játékos tárhelyben, egy $(item)állapothatással$() jelennek meg a képernyőn.$(br2)Bizonyos felszerelések, mint például a $(thing)masks$(), $(thing)kesztyü$() és a $(thing)vegy védelmi ruha$() használhatók ezen hatások ellensúlyozására."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "All of the effects",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"title": "Az összes rossz hatások",
+			"text": "$(li)$(l:tfg_ércek/veszélyek#Arzenikózis)Arzenikózis$()$()$(li)\n$(l:tfg_ércek/veszélyek#Azbesztózis)Azbesztózis$()$()$(li)\n$(l:tfg_ércek/veszélyek#Berilliózis)Berilliózis$()$(li)\n$(l:tfg_ércek/veszélyek#Szén-monoxid-mérgezés)Szén-monoxid-mérgezés$()\n$(li)$(l:tfg_ércek/veszélyek#Rákkeltő anyagok)Rákkeltő anyagok$()$(li)\n$(l:tfg_ércek/veszélyek#Kémiai_égések)Kémiai égési sérülések$()$(li)\n$(l:tfg_ércek/veszélyek#Irritáló anyagok)Irritáló anyagok$()$(li)\n$(l:tfg_ércek/veszélyek#Metanolmérgezés)Metanolmérgezés$()$(li)\n$(l:tfg_ércek/veszélyek#Hányingert okozó_vegyi anyagok)Hányingert okozó vegyszerek$()$(li)\n$(l:tfg_ércek/veszélyek#Mérgek)Mérgező anyagok$()$(li)\n$(l:tfg_ércek/veszélyek#Radioaktív_anyagok)Radioaktív anyagok$()$(li)\n$(l:tfg_ércek/veszélyek#Szilikózis)Szilikózis$()$()$(br2)A következő oldalon információkat talál arról, hogyan kell kezelni ezeket a hatásokat."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"title": "Megelözés és gyogyitás",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Kövek?$()$()$(li)\n$(l:tfg_ores/hazards#containers)Konténerek$()$(li)\n$(l:tfg_ores/hazards#mask)Az arcmaszk$()$(li)\n$(l:tfg_ores/hazards#gloves)A gumikesztyűk$()$(li)\n$(l:tfg_ores/hazards#hazmat)A veszélyes anyag ruha$()$(li)\n$(l:tfg_ores/hazards#medicine)Tabletták, tabletták és \"kenöcsök\"$()$(li)\n$(l:tfg_ores/hazards#rad_away)A RadAwayᵗᵐ pirula$()$(li)\n$(l:tfg_ores/hazards#respawn)A Elképzelhetetlen...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rocks!",
+			"title": "Kövek!",
 			"item": {
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)The easiest way$() to $(thing)prevent$() hazardous effects is to $(item)not pick up the dangerous items at all$().$(br2)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones later."
+			"text": "$(thing)A legkönnyeb mod$() to $(thing)megelözni$()a káros behatásokat $(item)hgy nem szeded fell a veszélyes tárgyakat$().$(br2)Az játékos tárhelyed feltöltés $(thing)Kövekell$(), példáúl meg elözi hogy bár mi mást felvegyél, és seggit abban hogy a veszélyes tárgyakkal késöbb törödj."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Containers",
+			"title": "Tárolók",
 			"anchor": "containers",
 			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of its contents to and from containers.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "Arcmaszk",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "The $(thing)Face Mask$() provides protection from any $(item)Inhalation$() hazards, such as Arsenicosis.",
 			"anchor": "mask"
@@ -48,7 +48,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber gloves",
+			"title": "Gumikesztyű",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
@@ -82,7 +82,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Medicine",
+			"title": "Orvosság",
 			"item": {
 				"tag": "tfg:medicine"
 			},
@@ -135,21 +135,21 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": " Rákkeltő anyagok",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
+			"anchor": " Rákkeltő anyagok",
 			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": " Rákkeltő anyagok",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
+			"anchor": " Rákkeltő anyagok",
 			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chemical burns",
+			"title": "Kémiai Éges",
 			"item": "gtceu:fluorine_bucket",
 			"anchor": "Chemical_burns",
 			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from everything."

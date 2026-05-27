@@ -116,6 +116,11 @@ const registerTFCRecipes = (event) => {
 	//More accesible solar drier
 	event.replaceInput({ id: 'firmalife:crafting/solar_drier' }, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
 
+	// Kaolinte blocks to powder
+	event.recipes.tfc.heating('#tfc:kaolin_blocks', 500)
+		.chance(0.8)
+		.resultItem('tfc:powder/kaolinite')
+		.id('tfg:tfc/heating/kaolinite_blocks')
 
 	//Lye
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', "#tfg:clean_water 200",
@@ -304,4 +309,17 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('minecraft:stick', ['tfc:groundcover/driftwood', '#forge:tools/knives'])
 		.id('tfg:shapeless/driftwood_to_stick')
+
+	// Buff Lamp Glass for easier early game
+	event.remove({ id: 'tfc:glassworking/lamp_glass'})
+	event.recipes.tfc.glassworking(
+        '4x tfc:lamp_glass',
+        '#tfc:glass_batches',
+        [
+            'blow',
+            'flatten',
+			'blow',
+			'saw'
+        ]
+    ).id('tfg:glassworking/lamp_glass')
 }

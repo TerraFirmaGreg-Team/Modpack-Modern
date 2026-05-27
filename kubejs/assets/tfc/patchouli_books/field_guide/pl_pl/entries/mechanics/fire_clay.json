@@ -20,7 +20,7 @@
     },
     {
       "type": "tfc:knapping_recipe",
-      "anchor": "tygiel",
+      "anchor": "crucible",
       "recipe": "tfc:fire_clay_knapping/crucible",
       "text": "The $(l:mechanics/crucible)Crucible$() in its unfired state is made from fire clay."
     },

@@ -437,10 +437,12 @@ const registerGTCEURecipes = (event) => {
 
 	// Change Sterling Silver Turbine Rotor to be craftable at MV
 
-	global.modifyRecipe(event, "gtceu:assembler/assemble_sterling_silver_turbine_blade", {
-        newId: "tfg:assemble_sterling_silver_turbine_blade",
-        eut: GTValues.VA[GTValues.MV]
-    });
+	// modifyRecipe doesn't work for turbine blades
+	event.recipes.gtceu.assembler('gtceu:assemble_sterling_silver_turbine_blade')
+		.itemInputs('8x #forge:turbine_blades/sterling_silver', '#forge:rods/long/magnalium')
+		.itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:sterling_silver"}}'))
+		.duration(10*20)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// Change Red Alloy in the ABS to match
 

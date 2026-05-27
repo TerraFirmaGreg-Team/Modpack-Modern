@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Ores, Metal, and Casting",
+  "name": "Rudy, metal i odlewanie",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
@@ -13,19 +13,19 @@
       "multiblock": {
         "pattern": [
           [
-          "    ",
-          "  0 ",
-          "    "
+            "    ",
+            "  0 ",
+            "    "
           ],
           [
-          "ABCD",
-          "EFGH",
-          "IJKL"
+            "ABCD",
+            "EFGH",
+            "IJKL"
           ],
           [
-          "XXXX",
-          "XXXX",
-          "XXXX"
+            "XXXX",
+            "XXXX",
+            "XXXX"
           ]
         ],
         "mapping": {
@@ -55,11 +55,11 @@
     {
       "type": "patchouli:text",
       "text": "$(li)Native Copper ($(thing)Copper$())$(li)Native Gold ($(thing)Gold$())$(li)Hematite ($(thing)Cast Iron$())$(li)Native Silver ($(thing)Silver$())$(li)Cassiterite ($(thing)Tin$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garnierite ($(thing)Nickel$())$(li)Malachite ($(thing)Copper$())$(li)Magnetite ($(thing)Cast Iron$())$(li)Limonite ($(thing)Cast Iron$())$(li)Sphalerite ($(thing)Zinc$())$(li)Tetrahedrite ($(thing)Copper$())",
-      "title": "Small Ores"
+      "title": "Małe rudy"
     },
     {
       "type": "patchouli:text",
-      "anchor": "odlewanie",
+      "anchor": "casting",
       "text": "In TerraFirmaCraft, ores each contain a certain number of $(thing)units$(), or $(thing)mB (millibuckets)$() of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide $(thing)16 mB$() of metal. In order to extract this metal, it needs to be $(thing)melted$(), and made into tools using a process called $(thing)casting$().",
       "title": "Odlewanie"
     },

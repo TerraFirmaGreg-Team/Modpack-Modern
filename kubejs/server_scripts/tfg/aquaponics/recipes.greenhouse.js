@@ -508,9 +508,6 @@ const registerTFGGreenhouseRecipes = (event) => {
 		generateGreenHouseRecipe(event, 'minecraft:the_nether', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
 
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:red_mushroom', ['24x minecraft:red_mushroom', '8x minecraft:red_mushroom'], 1, 1);
-	generateGreenHouseRecipe(event, 'minecraft:the_nether', '8x minecraft:brown_mushroom', ['24x minecraft:brown_mushroom', '8x minecraft:brown_mushroom'], 1, 1);
-
 	// Crops
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
 		generateCropGreenHouseRecipe(event, null, element.input, element.output, element.leaves, 1);
@@ -532,6 +529,12 @@ const registerTFGGreenhouseRecipes = (event) => {
 	});
 	global.AFC_SAPLINGS.forEach(element => {
 		generateTreeGreenHouseRecipe(event, null, `afc:wood/sapling/${element.sapling}`, element.log, `afc:wood/leaves/${element.sapling}`, 1);
+	});
+	global.WAB_WOOD.forEach(element => {
+		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `wan_ancient_beasts:${element.name}_log`, `tfg:wood/leaves/${element.name}`, 1);
+	});
+	global.TFG_NEW_WOOD_TYPES.forEach(element => {
+		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `tfg:wood/log/${element.name}`, `tfg:wood/leaves/${element.name}`, 1);
 	});
 
 	// Plants

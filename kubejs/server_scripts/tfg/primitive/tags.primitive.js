@@ -84,12 +84,15 @@ function registerTFGPrimitiveItemTags(event) {
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_single_wire')
 	event.add('tfg:artisan_table_inputs', 'gtceu:silver_quadruple_wire')
 	event.add('tfg:artisan_table_inputs', 'tfg:optical_borosilicate_blank')
+	event.add('tfg:artisan_table_inputs', 'gtceu:treated_wood_plate')
 	event.add('tfg:artisan_table_inputs', 'tfc:powder/flux')
 	event.add('tfg:artisan_table_tools', '#forge:tools/hammers')
 	event.add('tfg:artisan_table_tools', '#forge:tools/mallets')
 	event.add('tfg:artisan_table_tools', '#forge:tools/files')
 	event.add('tfg:artisan_table_tools', '#forge:tools/wire_cutters')
 	event.add('tfg:artisan_table_tools', '#forge:tools/screwdrivers')
+	event.add('tfg:artisan_table_tools', '#forge:tools/knives')
+	event.add('tfg:artisan_table_tools', '#forge:tools/saws')
 	event.add('tfg:artisan_table_tools', '#forge:tools/buzzsaws')
 	event.add('tfg:artisan_table_tools', 'tfc:gem_saw')
 	event.add('tfg:artisan_table_tools', '#create:sandpaper')
@@ -109,6 +112,10 @@ function registerTFGPrimitiveBlockTags(event) {
 	//added for QOL but doesnt harvest anything
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_red')
 	event.add('tfg:harvester_harvestable', 'firmalife:grape_fluff_white')
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.add('tfg:decorative_vases/generated', `tfg:decorative_vase/generated/${color}`)
+	})
 }
 
 function registerTFGPrimitiveFluidTags(event) {
@@ -135,3 +142,31 @@ function registerTFGPrimitiveFluidTags(event) {
 	
 	event.add('tfg:usable_in_spindle_head_mold', 'gtceu:copper');
 }
+
+function registerTFGPrimitiveEntityTags(event) {
+
+	/**
+	 * @type {string[]} - List of entities that can be scooped by fishing nets.
+	 */
+	const entities = [
+		'tfc:salmon',
+		'tfc:rainbow_trout',
+		'tfc:lake_trout',
+		'tfc:bluegill',
+		'tfc:largemouth_bass',
+		'tfc:smallmouth_bass',
+		'tfc:tropical_fish',
+		'tfc:crappie',
+		'tfc:cod',
+		'tfc:pufferfish',
+		'tfc:jellyfish',
+		'tfc:lobster',
+		'tfc:isopod',
+		'tfc:crayfish',
+		'wan_ancient_beasts:toxlacanth'
+
+	];
+	entities.forEach(entity => {
+		event.add('tfg:fishing_net_scoopable', entity);
+	});
+};

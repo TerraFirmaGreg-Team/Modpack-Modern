@@ -1,12 +1,12 @@
 {
-	"name": "Inventory Management",
+	"name": "Zarządzanie ekwipunkiem",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:chest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Inventory Management",
+			"title": "Zarządzanie ekwipunkiem",
 			"text": "So you've got a few $(l:getting_started/pottery#vessel)Vessels$() and you've made a few $(item)Wooden Chests$(), but you still have more items than you know what to do with. What's next?$(br2)A $(thing)Backpack$() can double your on-person inventory at base level, and further backpack upgrades increase it even more!"
 		},
 		{
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Drums",
+			"title": "Baryłki",
 			"anchor": "drums",
 			"text": "For storing fluids, GregTech has $(item)Drums$(). These can hold a large amount of a single fluid type, and different tiers hold more, just like with crates.$(br2)Unlike crates, drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push their fluid out of their bottom face by right-clicking them with a $(thing)Soft Mallet$() or $(thing)Screwdriver$()."
 		},
@@ -39,7 +39,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:lv_super_chest,gtceu:lv_super_tank",
-			"title": "Super Storage",
+			"title": "Super magazyn",
 			"text": "Are you producing an item on an industrial scale? GregTech's $(thing)Super Chests$() and $(thing)Super Tanks$() can hold a silly amount of a single item type, and can even void any overflow."
 		},
 		{

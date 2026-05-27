@@ -86,6 +86,7 @@ const registerSingleGroups = (event) => {
         '#tfchotornot:tong_parts',
         '#tfcscraping:scraping_knife_blades',
         '#forge:fish_hooks',
+        '#tfg:rope_ladders',
 
         // Tools (Minecraft)
         '#tfc:pickaxes',
@@ -167,7 +168,6 @@ const registerSingleGroups = (event) => {
         '#tfc:scribing_tables',
         '#tfc:sewing_tables',
         '#tfc:jar_shelves',
-        '#tfc:support_beams',
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
@@ -229,7 +229,6 @@ const registerSingleGroups = (event) => {
 
         // Steam n Rails
         '#railways:conductor_caps',
-		'#tfg:incomplete_tracks',
 		'#tfg:locometal_blocks',
         '#tfg:smokestacks',
         '#tfg:train_connectors',
@@ -303,6 +302,10 @@ const registerMultiGroups = (event) => {
             '#forge:normal_restrictive_pipes',
             '#forge:large_restrictive_pipes',
             '#forge:huge_restrictive_pipes'
+        ]},
+        { group_name: 'support_beams', tags: [
+            "#tfc:support_beams",
+            "#beneath:support_beams"
         ]}
     ]
 

@@ -138,7 +138,7 @@ function registerTFGRocketRecipes(event) {
 		.circuit(3)
 		.EUt(GTValues.VA[GTValues.HV])
 	
-	event.recipes.gtceu.extruder('tfg:forge:fine_wires_basalt_fiber')
+	event.recipes.gtceu.extruder('tfg:fine_wires_basalt_fiber')
 		.itemInputs(Item.of('tfc:brick/basalt'))
 		.notConsumable(Item.of('gtceu:wire_extruder_mold'))
 		.itemOutputs(Item.of('#forge:fine_wires/basalt_fiber', 8))

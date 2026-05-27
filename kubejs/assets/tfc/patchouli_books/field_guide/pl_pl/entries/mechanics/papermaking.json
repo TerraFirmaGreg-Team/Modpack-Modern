@@ -102,14 +102,14 @@
       },
       {
         "type": "tfc:sealed_barrel_recipe",
-        "title": "Soaked Hardwood Strip",
+        "title": "Nasączony pasek twardego drewna",
         "recipe": "tfg:barrel/soak_hardwood_strip",
         "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
       },
       {
         "type": "tfc:quern_recipe",
         "recipe": "tfg:quern/soaked_hardwood_strip",
-        "title": "Hardwood Pulp",
+        "title": "Pulpa z twardego drewna",
         "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
       },
       {
@@ -121,7 +121,7 @@
       {
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
-        "title": "Breaking down the Pulp",
+        "title": "Rozdrabianie pulpy",
         "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
       },
       {
@@ -140,7 +140,7 @@
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stomping in Barrel",
+        "title": "Wyciskanie w beczce",
         "item": {
           "tag": "firmalife:stomping_barrels"
         },
