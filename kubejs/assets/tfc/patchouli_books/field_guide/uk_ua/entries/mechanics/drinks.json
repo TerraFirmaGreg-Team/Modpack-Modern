@@ -17,7 +17,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Витриманий алкоголь",
-			"text": "Витримані напої $(thing)$() виготовляються шляхом витримування звичайного напою, який сам по собі виготовляється шляхом залишення різних фруктів, борошна чи інших інгредієнтів у діжці з водою. Як бонус, вони впливають на вашу мову в чаті!",
+			"text": "Витримані напої $(thing)$() виготовляються шляхом витримування звичайного напою, який сам по собі виготовляється шляхом залишення різних фруктів, борошна чи інших інгредієнтів у діжці з водою. Як бонус, вони впливають на твою мову в чаті!",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
 		},
 		{
