@@ -306,7 +306,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "L'herbe à papillon poussera au fil du temps. Une fois mûre, elle a une chance de se propager aux blocs environnants ou de devenir quelque chose de nouveau. Les blocs d'herbe à papillon qui furent créés par un autre bloc ne se répandront plus.$(br)Une fois que l'herbe à papillon devienne une autre herbe, vous pouvez ramasser celle-ci avec des $(item)Cisailles$()."
 		}
 	],
 	"read_by_default": true,

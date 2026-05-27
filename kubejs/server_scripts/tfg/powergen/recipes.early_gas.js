@@ -238,7 +238,7 @@ function registerTFGEarlyGasRecipes(event) {
 	function modifyRecipes(recipeIds, duration) {
 	recipeIds.forEach(id => {
 		global.modifyRecipe(event, id, {
-		newId: "tfg:" + linuxUnfucker(id),
+		newId: `tfg:${global.linuxUnfucker(id)}`,
 		duration: duration
 		})
 	})

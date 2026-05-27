@@ -1346,7 +1346,7 @@
 			"type": "patchouli:text",
 			"anchor": "green_bean",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 38 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green Beans is a climbing two block tall crop. Green Bean seeds can be planted on farmland, will grow two blocks tall if a stick is present, and will produce $(thing)Green Beans$() and $(thing)Green Bean Seeds$() as a product.",
-			"title": "Zielona fasolka"
+			"title": "Fasolka szparagowa"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1526,7 +1526,7 @@
 			"type": "patchouli:text",
 			"anchor": "potato",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -1 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Potatoes are a single block crop. Potato seeds can be planted on farmland and will produce $(thing)Potatoes$() and $(thing)Potato Seeds$() as a product.",
-			"title": "Ziemniaki"
+			"title": "Ziemniak"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1657,7 +1657,7 @@
 			"type": "patchouli:text",
 			"anchor": "pumpkin",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 80 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Pumpkins are a spreading crop. Pumpkin seeds can be planted on farmland and will place up to two $(thing)Pumpkin Blocks$() on the ground next to it while it is mature. If the pumpkin blocks are harvested, and the plant matures again, it can grow more pumpkins. Pumpkins can be made into $(l:mechanics/lighting#jack_o_lanterns)Jack 'o Lanterns$().",
-			"title": "Dynie"
+			"title": "Dynia"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -1829,7 +1829,7 @@
 			"type": "patchouli:text",
 			"anchor": "melon",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 37 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Melons are a spreading crop. Melon seeds can be planted on farmland and will place up to two $(thing)Melon Blocks$() on the ground next to it while it is mature. If the melon blocks are harvested, and the plant matures again, it can grow more melon.",
-			"title": "Melon"
+			"title": "Arbuz"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -3925,7 +3925,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
-			"title": "Rzodkiew",
+			"title": "Rzodkiewka",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
 		},
 		{

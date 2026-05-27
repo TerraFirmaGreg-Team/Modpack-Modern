@@ -253,7 +253,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
 		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'));
-		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'));
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth'));
@@ -492,15 +491,6 @@ const registerTooltips = (event) => {
 
 	//#endregion
 
-	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
-		if (!event.isShift()) {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
-		} else {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"));
-			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
-		};
-	});
-
 	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
 	});
@@ -545,6 +535,6 @@ const registerTooltips = (event) => {
 				text.remove(keyToRemove);
 				text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 			}
-		} catch (e) {}
+		} catch (e) {/** */}
 	})
 }

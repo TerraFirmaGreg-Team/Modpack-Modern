@@ -10,7 +10,7 @@ function registerTFGMoldRecipes(event) {
 
 		TFGHelpers.registerMaterialInfo(mold, [GTMaterials.Steel, 4])
 
-		event.recipes.gtceu.forming_press(`copy_shape_${linuxUnfucker(mold)}`)
+		event.recipes.gtceu.forming_press(`copy_shape_${global.linuxUnfucker(mold)}`)
 			.itemInputs('gtceu:empty_mold')
 			.notConsumable(mold)
 			.itemOutputs(mold)
@@ -22,7 +22,7 @@ function registerTFGMoldRecipes(event) {
 		
 		TFGHelpers.registerMaterialInfo(mold, [GTMaterials.Steel, 4])
 
-		event.recipes.gtceu.forming_press(`copy_shape_${linuxUnfucker(mold)}`)
+		event.recipes.gtceu.forming_press(`copy_shape_${global.linuxUnfucker(mold)}`)
 			.itemInputs('gtceu:empty_mold')
 			.notConsumable(mold)
 			.itemOutputs(mold)

@@ -1,6 +1,7 @@
 {
   "config.group.value": "Wartość",
   "delete_item": "Czy chcesz usunąć '%s'?",
+  "dimension.ae2.spatial_storage": "Magazyn przestrzenny AE2",
   "dimension.hyperbox.hyperbox": "Hiperbox",
   "dimension.minecraft.overworld": "Nadziemie",
   "dimension.minecraft.the_end": "End",
@@ -20,13 +21,14 @@
   "ftblibrary.palette.chat": "Kolory czatu",
   "ftblibrary.palette.dye": "Kolory barwników",
   "ftblibrary.palette.greens": "Zielony",
+  "ftblibrary.palette.nord": "Motyw Nord",
   "ftblibrary.palette.recent": "Ostatnie kolory",
   "ftblibrary.palette.reds": "Czerwony",
   "ftblibrary.panel.position.bottom": "Na dole",
   "ftblibrary.panel.position.bottom_left": "Lewy dolny róg",
   "ftblibrary.panel.position.bottom_right": "Prawy dolny róg",
   "ftblibrary.panel.position.left": "Z lewej",
-  "ftblibrary.panel.position.right": "Prawo",
+  "ftblibrary.panel.position.right": "Z prawej",
   "ftblibrary.panel.position.top": "U góry",
   "ftblibrary.panel.position.top_left": "Lewy górny róg",
   "ftblibrary.panel.position.top_right": "Prawy górny róg",
@@ -88,5 +90,6 @@
   "sidebar_button.ftblibrary.toggle.rain": "Przełącz deszcz",
   "sidebar_button.ftblibrary.toggle.rain.tooltip": "Przełącza pomiędzy ładną i deszczową pogodą",
   "sidebar_group.ftblibrary.cheat": "FTB Library – oszustwa",
-  "sidebar_group.ftblibrary.info": "FTB Library – info"
+  "sidebar_group.ftblibrary.info": "FTB Library – info",
+  "sidebar_group.ftblibrary.util": "FTB Library – różne"
 }

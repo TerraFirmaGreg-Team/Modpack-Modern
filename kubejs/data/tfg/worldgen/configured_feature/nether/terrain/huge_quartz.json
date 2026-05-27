@@ -1,0 +1,39 @@
+{
+	"type": "lithostitched:large_dripstone",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:huge_quartz"
+			}
+		},
+		"column_radius": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 8,
+				"min_inclusive": 6
+			}
+		},
+		"floor_to_ceiling_search_range": 40,
+		"height_scale": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 1.2,
+				"min_inclusive": 0.7
+			}
+		},
+		"replaceable_blocks": "#minecraft:nether_carver_replaceables",
+		"max_column_radius_to_cave_height_ratio": 0.1,
+		"min_bluntness_for_wind": 0,
+		"min_radius_for_wind": 0,
+		"stalactite_bluntness": 0.8,
+		"stalagmite_bluntness": 0.8,
+		"wind_speed": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_exclusive": 2.0,
+				"min_inclusive": 1.0
+			}
+		}
+	}
+}

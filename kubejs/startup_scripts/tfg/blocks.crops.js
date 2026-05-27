@@ -30,9 +30,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('minecraft:flowers')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.texture('tfg:item/sunflower_product')
-		})
+		.existingProductItem('tfg:sunflower_product')
 		.seedItem(seed => {
 			seed.texture('tfg:item/sunflower_seed')
 		})
@@ -132,15 +130,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-			product.tag('tfc:foods/legumes')
-		})
+		.existingProductItem('tfg:lentil_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -172,14 +162,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-		})
+		.existingProductItem('tfg:radish_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -213,14 +196,7 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
         .requiresStick(true)
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-		})
+		.existingProductItem('tfg:cucumber_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -254,15 +230,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-			product.tag('tfc:foods/legumes')
-		})
+		.existingProductItem('tfg:peanut_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -294,14 +262,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-		})
+		.existingProductItem('tfg:cassava_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -333,15 +294,7 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
-			product.tag('tfc:foods')
-			product.tag('tfc:foods/vegetables')
-			product.tag('tfc:foods/legumes')
-		})
+		.existingProductItem('tfg:beans_product')
 		.seedItem(seed => {
 			seed.tag('tfc:seeds')
 			seed.tag('forge:seeds')
@@ -408,11 +361,10 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(4)
-				food.saturation(1)
-			})
+		.existingProductItem('betterend:amber_root_product')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -441,11 +393,10 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(5)
-				food.saturation(1)
-			})
+		.existingProductItem('betterend:blossom_berry_product')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -478,6 +429,7 @@ const registerTFGCrops = (event) => {
 		.fullBlock(false)
 		.opaque(false)
 		.notSolid()
+		.tagItem('tfc:foods')
 
 	event.create('betterend:cave_pumpkin_plant', 'tfc:spreading_crop')
 		.mapColor('plant')
@@ -493,6 +445,10 @@ const registerTFGCrops = (event) => {
 			dead.tagBlock('minecraft:mineable/hoe')
 			dead.tagBlock('tfg:dead_crops')
 			dead.box(2, 0, 2, 14, 9, 14)
+		})
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.fruitBlock('betterend:cave_pumpkin')
 		.textureAt(0, "betterend:block/cave_pumpkin_stem_0")
@@ -522,13 +478,10 @@ const registerTFGCrops = (event) => {
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
 		.box(2, 0, 2, 14, 4, 14)
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(2)
-				food.saturation(1)
-				food.effect('minecraft:hunger', 30 * 20, 0, 1)
-				food.effect('minecraft:weakness', 30 * 20, 0, 1)
-			})
+		.existingProductItem('betterend:chorus_mushroom_product')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -560,12 +513,10 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(5)
-				food.saturation(1)
-				food.effect('minecraft:poison', 5 * 20, 0, 1)
-			})
+		.existingProductItem('betterend:shadow_berry_product')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)
@@ -596,13 +547,10 @@ const registerTFGCrops = (event) => {
 		.hardness(0.4)
 		.tagBlock('minecraft:mineable/hoe')
 		.tagBlock('tfc:crops')
-		.productItem(product => {
-			product.food(food => {
-				food.hunger(2)
-				food.saturation(1)
-				food.effect('tfc:thirst', 60 * 20, 0, 1)
-				food.effect('minecraft:nausea', 30 * 20, 0, 1)
-			})
+		.existingProductItem('betterend:bolux_mushroom_product')
+		.seedItem(seed => {
+			seed.tag('tfc:seeds')
+			seed.tag('forge:seeds')
 		})
 		.deadBlock(dead => {
 			dead.hardness(0.2)

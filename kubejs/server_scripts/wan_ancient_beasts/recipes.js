@@ -36,6 +36,7 @@ const registerWABRecipes = (event) => {
 		.itemOutputs('32x #forge:dusts/bone')
 		.duration(400)
 		.EUt(30)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.shaped('wan_ancient_beasts:reinforced_shield', [
 		'BAB',

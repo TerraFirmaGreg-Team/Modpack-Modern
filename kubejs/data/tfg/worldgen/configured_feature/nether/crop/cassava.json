@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:cassava_wild"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:cassava_wild"
+						}
+					}
+				}
+			]
+		},
+		"tries": 16,
+		"xz_spread": 5,
+		"y_spread": 1
+	}
+}

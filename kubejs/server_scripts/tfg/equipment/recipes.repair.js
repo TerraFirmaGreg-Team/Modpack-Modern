@@ -222,7 +222,7 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.25
-		}).id(`tfg:item_repair/${linuxUnfucker(repair.item)}`)
+		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}`)
 	})
 
 	// Simpler Leather Gear
@@ -238,7 +238,7 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.25
-		}).id(`tfg:item_repair/${linuxUnfucker(gear)}`)
+		}).id(`tfg:item_repair/${global.linuxUnfucker(gear)}`)
 	})
 
 	// TFC Textile Leather Clothes
@@ -261,13 +261,16 @@ function registerTFGRepairRecipes(event) {
 
 	// Tongs
 	global.TFC_METALS.forEach(metal => {
+		if (metal === "cast_iron")
+			return;
+
 		event.custom({
 			type: 'tfg:item_repair',
 			pattern: [
 				"RH",
 			],
 			key: {
-				R: { tag: `forge:rods/${(metal == "cast_iron" ? "iron" : metal)}` },
+				R: { tag: `forge:rods/${metal}` },
 				H: { item: `tfchotornot:tongs/${metal}` },
 				// T: { tag: "forge:tools/hammers" }
 			},

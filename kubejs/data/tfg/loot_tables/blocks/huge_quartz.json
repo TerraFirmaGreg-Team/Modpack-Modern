@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "name": "loot_pool",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:quartzite_gem"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "tag": "minecraft:pickaxes"
+                            }
+                        },
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "items": [ "tfc:gem_saw" ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

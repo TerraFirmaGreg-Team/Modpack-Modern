@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 80
+			"count": 10
 		},
 		{
 			"type": "minecraft:in_square"
@@ -13,7 +13,7 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 100
+					"absolute": 90
 				},
 				"min_inclusive": {
 					"above_bottom": 32
@@ -21,23 +21,27 @@
 			}
 		},
 		{
-			"type": "minecraft:block_predicate_filter",
-			"predicate": {
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
 				"type": "minecraft:matching_blocks",
-				"offset": [
-					0,
-					-1,
-					0
-				],
-				"blocks": [
-					"minecraft:deepslate",
-					"minecraft:blackstone",
-					"minecraft:magma_block"
-				]
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
 			}
 		},
 		{
 			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 1
 		}
 	]
 }

@@ -1,0 +1,4982 @@
+{
+  "comment1": "The following section is used for overriding crafting recipes from packs for use in modpacks and servers.",
+  "comment2": "Everything that is crafted on one of the benches can be modified here to include any item, including modded ones.",
+  "comment3": "The format is one of [modID]:[ItemName]:[Metadata]:[Qty], with the name being the same as the in-game /give command. (Ignore metadata for 1.16.5+ versions)",
+  "comment4": "If you need the full listing of items, set dumpCraftingConfig to true in the general config section.",
+  "comment5": "This will overwrite this file with all craft-able items in all packs.",
+  "comment6": "Note that their crafting recipes may vary depending on what packs are installed.",
+  "comment7": "For each entry, there are commom materials that are used in all recipes, type materials that are used in specific recipes, and repair materials.",
+  "overrides": {
+    "mts": {
+      "invisible_wheel": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "wheelbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "paintgun": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "y2kbutton": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "instrumentbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "invisible_standing": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "seatbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "key": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "decorbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "partscanner": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "fuelhose": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "vehiclebench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "ticket": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "enginebench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "jumperpack": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "jumpercable": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "jerrycan": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "gunbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "wrench": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "fuelpump": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "custombench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "handbook_car": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "charger": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "invisible_seat": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "itembench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellerbench": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "handbook_plane": {
+        "commonMaterialLists": [
+          []
+        ]
+      }
+    },
+    "mtsofficialpack": {
+      "pontoon": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_bolt:12",
+            "gtceu:wrought_iron_plate:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "mirrorornament": {
+        "commonMaterialLists": [
+          [
+            "tags:string:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            [
+              "tags:wool:1"
+            ]
+          ],
+          "_heart": [
+            [
+              "minecraft:paper:1"
+            ]
+          ],
+          "_1911gold": [
+            [
+              "tags:ingots/gold:1"
+            ]
+          ],
+          "_wheel": [
+            [
+              "mts:mtsofficialpack.wheelsmall:1"
+            ]
+          ],
+          "_1911gray": [
+            [
+              "tags:ingots/iron:1"
+            ]
+          ],
+          "_nuts": [
+            [
+              "mts:mtsofficialpack.nuts:2"
+            ]
+          ],
+          "_gapple": [
+            [
+              "minecraft:golden_apple:1"
+            ]
+          ],
+          "_emerald": [
+            [
+              "minecraft:emerald:1"
+            ]
+          ],
+          "_butter": [
+            [
+              "mts:mtsofficialpack.ocpbutter:1"
+            ]
+          ],
+          "_clock": [
+            [
+              "minecraft:clock:1"
+            ]
+          ],
+          "_saturn": [
+            [
+              "minecraft:clay_ball:1"
+            ]
+          ],
+          "_gmc": [
+            [
+              "tags:ingots/iron:1",
+              "tags:dirt:1"
+            ]
+          ],
+          "_piston": [
+            [
+              "minecraft:piston:1"
+            ]
+          ],
+          "_blockgrass": [
+            [
+              "tags:dirt:1"
+            ]
+          ],
+          "_hc": [
+            [
+              "minecraft:heart_of_the_sea:1"
+            ]
+          ],
+          "_pine": [
+            [
+              "tfc:wood/sapling/spruce:1"
+            ]
+          ],
+          "_diamond": [
+            [
+              "minecraft:diamond:1"
+            ]
+          ],
+          "_joystick": [
+            [
+              "minecraft:lever:1"
+            ]
+          ],
+          "_nstar": [
+            [
+              "minecraft:nether_star:1"
+            ]
+          ],
+          "_blocktnt": [
+            [
+              "minecraft:tnt:1"
+            ]
+          ],
+          "_blockgold": [
+            [
+              "minecraft:gold_block:1"
+            ]
+          ],
+          "_potato": [
+            [
+              "tfc:food/potato:1"
+            ]
+          ],
+          "_steak": [
+            [
+              "tfc:food/cooked_beef:1"
+            ]
+          ],
+          "_cactus": [
+            [
+              "tfc:plant/barrel_cactus:1"
+            ]
+          ],
+          "_anvil": [
+            [
+              "tfc:metal/anvil/wrought_iron:1"
+            ]
+          ],
+          "_snail": [
+            [
+              "minecraft:slime_ball:1"
+            ]
+          ],
+          "_creeper": [
+            [
+              "minecraft:paper:1"
+            ]
+          ],
+          "_totem": [
+            [
+              "tags:ingots/gold:1"
+            ]
+          ],
+          "_mogus": [
+            [
+              "minecraft:paper:1"
+            ]
+          ],
+          "_rubix": [
+            [
+              "gtceu:styrene_butadiene_rubber_ingot:1"
+            ]
+          ],
+          "_aviators": [
+            [
+              "minecraft:glass_pane:2"
+            ]
+          ],
+          "_car": [
+            [
+              "tags:ingots/iron:1"
+            ]
+          ],
+          "_1911black": [
+            [
+              "tags:ingots/iron:1"
+            ]
+          ],
+          "_cat": [
+            [
+              "tags:wool:1"
+            ]
+          ],
+          "_blockacacia": [
+            [
+              "tfc:wood/log/acacia:1"
+            ]
+          ],
+          "_skull": [
+            [
+              "minecraft:bone:5"
+            ]
+          ]
+        }
+      },
+      "gmcbrig": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:20",
+			"gtceu:wrought_iron_bolt:32",
+            "gtceu:wrought_iron_spring:8",
+            "gtceu:wrought_iron_rod:10",
+            "minecraft:tripwire_hook:2",
+            "minecraft:glass_pane:6",
+            "gtceu:fine_copper_wire:18",
+            "mts:mtsofficialpack.headlight:2",
+			"gtceu:lv_lithium_battery:1",
+			"gtceu:basic_electronic_circuit:4",
+			"tfc:metal/bars/wrought_iron:8"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blackwhite": [
+            [
+              "tags:dyes/white:1",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/yellow:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_cream": [
+            [
+              "tags:dyes/yellow:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/white:1",
+              "tags:dyes/brown:1"
+            ]
+          ]
+        }
+      },
+      "instrument_aircraft_attitude": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "minecraft:clay_ball:1",
+            "tags:dyes/white:1",
+            "tags:dyes/light_blue:1",
+            "tags:dyes/brown:1",
+			"gtceu:vacuum_tube:2",
+            "gtceu:glass_tube:1"
+          ]
+        ]
+      },
+      "fuzeimpact": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "e500": {
+        "commonMaterialLists": [
+          [
+            "vintageimprovements:aluminum_sheet:64",
+            "gtceu:aluminium_rod:3",
+            "gtceu:aluminium_spring:3",
+            "minecraft:lever:4",
+            "ad_astra:iron_plating_button:10",
+            "gtceu:aluminium_screw:64",
+            "gtceu:good_electronic_circuit:6",
+            "gtceu:fine_copper_wire:48",
+            "mts:mtsofficialpack.headlight:6",
+            "minecraft:glass_pane:10",
+			"gtceu:mv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blue": [
+            [
+              "tags:dyes/blue:3",
+              "tags:dyes/black:1",
+              "minecraft:cyan_carpet:8"
+            ]
+          ],
+          "_blackred": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/black:3",
+              "minecraft:cyan_carpet:8"
+            ]
+          ],
+          "_extravagant": [
+            [
+              "tags:dyes/pink:5",
+              "tags:ingots/gold:10",
+              "minecraft:red_carpet:8"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/lime:2",
+              "tags:dyes/black:1",
+              "minecraft:cyan_carpet:8"
+            ]
+          ],
+          "_silver": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/black:1",
+              "minecraft:cyan_carpet:8"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:3",
+              "tags:dyes/black:1",
+              "minecraft:cyan_carpet:8"
+            ]
+          ]
+        }
+      },
+      "smokecan_red": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "trimotor": {
+        "commonMaterialLists": [
+          [
+            "tfc:wood/planks/oak:15",
+            "gtceu:wrought_iron_plate:132",
+            "gtceu:wrought_iron_screw:90",
+            "gtceu:potin_small_fluid_pipe:16",
+            "minecraft:lever:4",
+            "minecraft:string:10",
+            "gtceu:fine_copper_wire:32",
+            "mts:mtsofficialpack.headlight:6",
+            "minecraft:glass_pane:24",
+			"gtceu:basic_electronic_circuit:4",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_white": [
+            [
+              "minecraft:white_carpet:10"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:4",
+              "minecraft:blue_carpet:10"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:4",
+              "minecraft:black_carpet:10"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:4",
+              "minecraft:red_carpet:10"
+            ]
+          ]
+        }
+      },
+      "enginelycomingo360": {
+        "commonMaterialLists": [
+          [
+            "mts:mtsofficialpack.piston:4",
+            "mts:mtsofficialpack.sparkplug:8",
+            "gtceu:wrought_iron_plate:6",
+            "gtceu:potin_small_fluid_pipe:3",
+            "minecraft:iron_block:1",
+            "gtceu:wrought_iron_bolt:16",
+            "gtceu:fine_copper_wire:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "spotlight_bell206": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_screw:4",
+            "gtceu:wrought_iron_plate:4",
+            "gtceu:fine_copper_wire:8",
+            "mts:mtsofficialpack.headlight:1",
+            "minecraft:glass:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "vulcanair": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:70",
+            "gtceu:wrought_iron_bolt:64",
+            "gtceu:wrought_iron_spring:1",
+            "gtceu:potin_small_fluid_pipe:2",
+            "minecraft:lever:4",
+            "minecraft:tripwire_hook:4",
+            "gtceu:basic_electronic_circuit:4",
+            "gtceu:fine_copper_wire:32",
+			"gtceu:lv_lithium_battery:1",
+            "mts:mtsofficialpack.headlight:4",
+            "minecraft:glass_pane:16"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_police": [
+            [
+              "tags:dyes/gray:2",
+              "tags:dyes/blue:1",
+              "tags:dyes/orange:1"
+            ]
+          ],
+          "_cow": [
+            [
+              "tags:dyes/brown:3"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:3"
+            ]
+          ],
+          "_bluestripe": [
+            [
+              "tags:dyes/blue:1",
+              "tags:dyes/light_blue:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:4"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/cyan:3"
+            ]
+          ],
+          "_winged": [
+            [
+              "tags:dyes/black:4"
+            ]
+          ],
+          "_blackred": [
+            [
+              "tags:dyes/black:2",
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:1",
+              "tags:dyes/lime:1"
+            ]
+          ],
+          "_redsnail": [
+            [
+              "tags:dyes/gray:3",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_redyellow": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/yellow:2"
+            ]
+          ],
+          "_blackyellow": [
+            [
+              "tags:dyes/black:2",
+              "tags:dyes/yellow:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:3"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:3",
+              "tags:dyes/blue:1"
+            ]
+          ]
+        }
+      },
+      "gunflaregun": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "pzl37los": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:96",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:4",
+            "minecraft:lever:4",
+            "minecraft:string:10",
+            "tfc:metal/bars/wrought_iron:24",
+            "gtceu:fine_copper_wire:32",
+            "mts:mtsofficialpack.headlight:3",
+            "minecraft:glass_pane:24",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_arctic": [
+            [
+              "tags:dyes/white:2",
+              "tags:dyes/light_gray:2",
+              "tags:dyes/blue:1",
+              "minecraft:snowball:10"
+            ]
+          ],
+          "": [
+            [
+              "tags:dyes/gray:4",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:4",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:4",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/white:1",
+              "tags:sand:20",
+              "tags:dyes/black:2"
+            ]
+          ]
+        }
+      },
+      "trafficcone": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/white:1",
+            "tags:dyes/orange:1",
+            "gtceu:rubber_ingot:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "scouthardtop": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:10",
+            "tfc:metal/bars/wrought_iron:2",
+            "minecraft:glass_pane:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ],
+          "_vinyl": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ]
+        }
+      },
+      "bell206": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:42",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_rod:24",
+            "gtceu:fine_copper_wire:48",
+			"gtceu:good_electronic_circuit:2",
+            "gtceu:basic_electronic_circuit:4",
+            "minecraft:lever:2",
+            "minecraft:glass_pane:12",
+            "mts:mtsofficialpack.headlight:2",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_police": [
+            [
+              "tags:dyes/blue:2",
+              "tags:dyes/orange:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:3"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:3"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/black:2",
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_blackstripe": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:3"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2",
+              "tags:dyes/yellow:1",
+              "tags:dyes/orange:1",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_skyblue": [
+            [
+              "tags:dyes/light_blue:3"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:3"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/lime:2",
+              "tags:dyes/green:1"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:3"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:3"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/blue:1"
+            ]
+          ]
+        }
+      },
+      "paint_blue": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "engineallison250": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:16",
+            "gtceu:fine_copper_wire:16",
+            "gtceu:vacuum_tube:2",
+            "mts:mtsofficialpack.sparkplug:4",
+            "gtceu:potin_small_fluid_pipe:6",
+			"gtceu:wrought_iron_rod:4",
+            "gtceu:wrought_iron_bolt:24",
+            "minecraft:iron_block:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "fordmustang69": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:36",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:4",
+            "tags:ingots/gold:16",
+            "tags:ingots/wrought_iron:18",
+            "minecraft:diamond:2",
+            "tfc:metal/trapdoor/wrought_iron:2",
+            "minecraft:lever:1",
+            "minecraft:glass_pane:8",
+            "minecraft:tripwire_hook:3",
+            "gtceu:fine_copper_wire:12",
+            "mts:mtsofficialpack.headlight:4",
+			"gtceu:good_electronic_circuit:2",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_police": [
+            [
+              "tags:dyes/white:1",
+              "tags:dyes/black:3"
+            ]
+          ],
+          "_whitestripe": [
+            [
+              "tags:dyes/blue:3",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:2",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_extravagant": [
+            [
+              "tags:ingots/gold:10",
+              "tags:dyes/white:1",
+              "tags:dyes/pink:2"
+            ]
+          ],
+          "_bluestripe": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_redstripe": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_silver": [
+            [
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:3",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:3"
+            ]
+          ],
+          "_lime": [
+            [
+              "tags:dyes/lime:3",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/white:1",
+              "tags:dyes/black:1",
+              "tags:dyes/cyan:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/black:1"
+            ]
+          ]
+        }
+      },
+      "wheelmedium": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "gtceu:wrought_iron_bolt:6",
+            "gtceu:rubber_plate:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ],
+          "_legacy": [
+            []
+          ]
+        }
+      },
+      "heavy_bomb": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "plastic": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "salesign": {
+        "commonMaterialLists": [
+          [
+            "minecraft:paper:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:1"
+            ]
+          ]
+        }
+      },
+      "enginedetroitdiesel": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:4",
+            "mts:mtsofficialpack.piston:6",
+			"gtceu:potin_small_fluid_pipe:6",
+            "gtceu:steel_plate:5",
+            "minecraft:iron_block:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "seat": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "gtceu:wrought_iron_rod:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "red": [
+            [
+              "minecraft:red_wool:1"
+            ]
+          ],
+          "pink": [
+            [
+              "minecraft:pink_wool:1"
+            ]
+          ],
+          "blue": [
+            [
+              "minecraft:blue_wool:1"
+            ]
+          ],
+          "white": [
+            [
+              "minecraft:white_wool:1"
+            ]
+          ],
+          "olive": [
+            [
+              "minecraft:green_wool:1"
+            ]
+          ],
+          "black": [
+            [
+              "minecraft:black_wool:1"
+            ]
+          ],
+          "yellow": [
+            [
+              "minecraft:yellow_wool:1"
+            ]
+          ],
+          "brown": [
+            [
+              "minecraft:brown_wool:1"
+            ]
+          ],
+          "cyan": [
+            [
+              "minecraft:cyan_wool:1"
+            ]
+          ],
+          "grey": [
+            [
+              "minecraft:gray_wool:1"
+            ]
+          ]
+        }
+      },
+      "fluidunloader": {
+        "commonMaterialLists": [
+          [
+            "tags:dusts/redstone:15",
+            "gtceu:steel_drum:1",
+            "gtceu:potin_small_fluid_pipe:4",
+            "minecraft:hopper:1",
+            "tags:slabs:8"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellersmall2blade": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_rod:1",
+            "tags:lumber:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "watercannon_proj": {
+        "commonMaterialLists": [
+          [
+            "minecraft:water_bucket:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "scout": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:30",
+            "gtceu:wrought_iron_bolt:45",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:4",
+            "minecraft:glass_pane:4",
+            "minecraft:tripwire_hook:2",
+            "gtceu:fine_copper_wire:12",
+            "mts:mtsofficialpack.headlight:2",
+			"tfc:metal/bars/wrought_iron:2",
+			"gtceu:basic_electronic_circuit:4",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_brown": [
+            [
+              "tags:dyes/brown:2",
+              "tags:dyes/yellow:1"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:3"
+            ]
+          ],
+          "_yellowwhite": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/light_gray:3"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:3"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/light_blue:3"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:3"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_gold": [
+            [
+              "tags:ingots/gold:10"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:3"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:2",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:3"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:3"
+            ]
+          ]
+        }
+      },
+      "skyhawk": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:48",
+            "gtceu:wrought_iron_bolt:42",
+            "gtceu:wrought_iron_spring:3",
+            "gtceu:potin_small_fluid_pipe:6",
+            "minecraft:lever:4",
+            "minecraft:tripwire_hook:4",
+            "gtceu:fine_copper_wire:24",
+            "mts:mtsofficialpack.headlight:2",
+            "minecraft:glass_pane:6",
+			"gtceu:basic_electronic_circuit:6",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_coffee": [
+            [
+              "tags:dyes/brown:1",
+              "tags:dyes/orange:1",
+              "tags:dyes/yellow:2"
+            ]
+          ],
+          "_red2": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/red:3"
+            ]
+          ],
+          "_blackorange": [
+            [
+              "tags:dyes/orange:1",
+              "tags:dyes/black:3"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:3"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:2"
+            ]
+          ],
+          "_blackred": [
+            [
+              "tags:dyes/black:2",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_bluered": [
+            [
+              "tags:dyes/red:1",
+              "tags:dyes/blue:3"
+            ]
+          ],
+          "_bluestripe": [
+            [
+              "tags:dyes/light_blue:1",
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/green:3"
+            ]
+          ],
+          "_blackyellow": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_butter": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/blue:2",
+              "mts:mtsofficialpack.ocpbutter:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/red:3"
+            ]
+          ]
+        }
+      },
+      "comanche": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:64",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:3",
+            "minecraft:lever:4",
+            "minecraft:tripwire_hook:4",
+            "gtceu:good_electronic_circuit:2",
+            "gtceu:fine_copper_wire:32",
+            "mts:mtsofficialpack.headlight:4",
+            "minecraft:glass_pane:8",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blue": [
+            [
+              "tags:dyes/blue:4"
+            ]
+          ],
+          "_blackred": [
+            [
+              "tags:dyes/black:3",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_orangebrown": [
+            [
+              "tags:dyes/orange:2",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:4"
+            ]
+          ],
+          "_blackredstripe": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:4"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:4"
+            ]
+          ]
+        }
+      },
+      "brigbedflat": {
+        "commonMaterialLists": [
+          [
+            "tags:wooden_slabs:24",
+            "gtceu:wrought_iron_plate:6",
+            "tfc:metal/bars/wrought_iron:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_altimeter": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "gtceu:vacuum_tube:1"
+          ]
+        ]
+      },
+      "barrelbell47g": {
+        "commonMaterialLists": [
+          [
+            "mts:mtsofficialpack.auxiliary_tank:1",
+            "gtceu:wrought_iron_bolt:4",
+            "gtceu:potin_small_fluid_pipe:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "gunm1919": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "merc230": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:38",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:6",
+            "minecraft:glass_pane:10",
+            "minecraft:tripwire_hook:3",
+            "minecraft:lever:1",
+            "gtceu:fine_copper_wire:12",
+            "mts:mtsofficialpack.headlight:4",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_police": [
+            [
+              "tags:dyes/green:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:2"
+            ]
+          ],
+          "_police2": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_extravagant": [
+            [
+              "tags:ingots/gold:10",
+              "minecraft:leather:5",
+              "tags:dyes/pink:2"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_silver": [
+            [
+              "tags:dyes/light_gray:2"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_beige": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_salmon": [
+            [
+              "tfc:food/salmon:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:1",
+              "tags:dyes/green:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ]
+        }
+      },
+      "piston": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "crate": {
+        "commonMaterialLists": [
+          [
+            "minecraft:chest:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_white": [
+            [
+              "tags:dyes/white:1"
+            ]
+          ],
+          "": [
+            []
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ]
+        }
+      },
+      "sign_highwayend": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "dump_storage": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "snail_sculpture": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "carseat": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "minecraft:leather:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_white": [
+            [
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_brown": [
+            []
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_grey": [
+            [
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ]
+        }
+      },
+      "spotlight": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_bolt:10",
+            "minecraft:lever:2",
+            "tfc:metal/trapdoor/wrought_iron:2",
+            "minecraft:glass:10",
+            "tags:dusts/redstone:15",
+            "mts:mtsofficialpack.headlight:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "quad": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:8",
+            "gtceu:wrought_iron_bolt:16",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:fine_copper_wire:4",
+            "mts:mtsofficialpack.headlight:2",
+            "mts:mtsofficialpack.wheelmedium:4",
+            "mts:mtsofficialpack.enginequad:1",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_white": [
+            [
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:1"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/lime:1"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:sand:5"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ]
+        }
+      },
+      "mc172": {
+        "commonMaterialLists": [
+          [
+            "gtceu:treated_wood_rod:20",
+            "gtceu:wrought_iron_plate:6",
+            "gtceu:wrought_iron_bolt:24",
+            "minecraft:lever:1",
+            "minecraft:string:4",
+            "minecraft:glass_pane:6",
+            "gtceu:fine_copper_wire:6",
+            "mts:mtsofficialpack.headlight:2",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_birch": [
+            [
+              "tfc:wood/planks/birch_slab:24",
+              "tags:birch_logs:2",
+              "tfc:wood/planks/birch:8"
+            ]
+          ],
+          "_oak": [
+            [
+              "tfc:wood/planks/oak_slab:24",
+              "tags:oak_logs:2",
+              "tfc:wood/planks/oak:8"
+            ]
+          ],
+          "_darkoak": [
+            [
+              "tfc:wood/planks/oak_slab:24",
+              "tags:black_oak_logs:2",
+              "tfc:wood/planks/oak:8"
+            ]
+          ],
+          "_jungle": [
+            [
+              "afc:wood/planks/teak_slab:24",
+              "tags:teak_logs:2",
+              "afc:wood/planks/teak:8"
+            ]
+          ],
+          "_spruce": [
+            [
+              "tfc:wood/planks/spruce_slab:24",
+              "tags:spruce_logs:2",
+              "tfc:wood/planks/spruce:8"
+            ]
+          ],
+          "_acacia": [
+            [
+              "tfc:wood/planks/acacia_slab:24",
+              "tags:acacia_logs:2",
+              "tfc:wood/planks/acacia:8"
+            ]
+          ]
+        }
+      },
+      "brigbeddump": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:28",
+            "gtceu:potin_small_fluid_pipe:4",
+            "mts:mtsofficialpack.hydraulics:1",
+            "gtceu:fine_copper_wire:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ],
+          "_sand": [
+            []
+          ],
+          "_gold": [
+            []
+          ],
+          "_copper": [
+            []
+          ],
+          "_iron": [
+            []
+          ],
+          "_podzol": [
+            []
+          ],
+          "_moss": [
+            []
+          ],
+          "_hay": [
+            []
+          ],
+          "_nether": [
+            []
+          ],
+          "_cobble": [
+            []
+          ],
+          "_dirt": [
+            []
+          ],
+          "_coal": [
+            []
+          ]
+        }
+      },
+      "enginefranklin0335": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:8",
+            "mts:mtsofficialpack.sparkplug:6",
+            "mts:mtsofficialpack.piston:6",
+            "gtceu:potin_small_fluid_pipe:10",
+			"gtceu:steel_plate:5",
+            "minecraft:iron_block:1",
+			"gtceu:basic_electronic_circuit:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "brigbedtanker": {
+        "commonMaterialLists": [
+          [
+            "gtceu:steel_drum:2",
+            "gtceu:wrought_iron_plate:12",
+            "tfc:metal/bars/wrought_iron:16"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blueorange": [
+            [
+              "tags:dyes/blue:1",
+              "tags:dyes/orange:1"
+            ]
+          ],
+          "_grey": [
+            [
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_blackred": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_blank": [
+            []
+          ],
+          "_greenred": [
+            [
+              "tags:dyes/green:1",
+              "tags:dyes/red:1"
+            ]
+          ]
+        }
+      },
+      "bulletflare_yellow": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "wheellarge": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:3",
+            "gtceu:wrought_iron_bolt:8",
+            "gtceu:rubber_plate:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_goth": [
+            []
+          ],
+          "": [
+            []
+          ],
+          "_legacy": [
+            []
+          ],
+          "_whiterim": [
+            []
+          ],
+          "_gold": [
+            [
+              "tags:ingots/gold:1"
+            ]
+          ],
+          "_spokes2": [
+            []
+          ],
+          "_whitewall": [
+            []
+          ],
+          "_holering": [
+            []
+          ],
+          "_spokes": [
+            []
+          ],
+          "_holes": [
+            []
+          ],
+          "_spokescopper": [
+            [
+              "tags:ingots/gold:1"
+            ]
+          ],
+          "_rusty": [
+            []
+          ]
+        }
+      },
+      "ammocrate_shell37": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "_prox": [
+            []
+          ],
+          "_he": [
+            []
+          ],
+          "_ap": [
+            []
+          ]
+        }
+      },
+      "spring": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "signalcontroller": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:6",
+            "gtceu:basic_electronic_circuit:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_deadend": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_electric": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "pole_flashingsignal_yellow": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/yellow:1",
+            "oredict:dustGlowstone:1",
+            "gtceu:fine_copper_wire:1",
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "headlight": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "pole_core": {
+        "commonMaterialLists": [
+          [
+            "gtceu:long_wrought_iron_rod:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_fuelflow": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "bomblet_bombrack": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_mts": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "pole_trafficsignal": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/red:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/lime:1",
+            "oredict:dustGlowstone:3",
+            "gtceu:fine_copper_wire:2",
+            "gtceu:wrought_iron_plate:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "plating": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "scoutbedpickup": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:12",
+            "gtceu:fine_copper_wire:4",
+            "tfc:metal/bars/wrought_iron:8"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "armorplate": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "instrument_aircraft_enginetemp": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/lime:1",
+            "tags:dyes/yellow:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "brigbedtransport": {
+        "commonMaterialLists": [
+          [
+            "tags:wooden_slabs:24",
+            "gtceu:wrought_iron_plate:18",
+            "tfc:metal/bars/wrought_iron:16",
+            "tags:wool:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            [
+              "tags:dyes/gray:3"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:2",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:3"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/blue:1",
+              "tags:sand:5",
+              "tags:dyes/black:1"
+            ]
+          ]
+        }
+      },
+      "pzlp11": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:38",
+            "gtceu:wrought_iron_bolt:32",
+            "minecraft:lever:3",
+            "minecraft:tripwire_hook:2",
+            "minecraft:string:10",
+            "gtceu:fine_copper_wire:12",
+            "minecraft:glass_pane:3",
+			"gtceu:basic_electronic_circuit:4",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            [
+              "tags:dyes/gray:2",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:2",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:2",
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/white:1",
+              "tags:sand:10",
+              "tags:dyes/black:1"
+            ]
+          ]
+        },
+        "repairMaterialLists": [
+          []
+        ]
+      },
+      "instrument_car_spedometer_mph": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "ft17": {
+        "commonMaterialLists": [
+          [
+            "gtceu:steel_plate:80",
+            "gtceu:wrought_iron_bolt:120",
+            "gtceu:wrought_iron_spring:2",
+            "gtceu:potin_small_fluid_pipe:4",
+            "minecraft:iron_block:4",
+            "tfc:metal/trapdoor/wrought_iron:2",
+            "minecraft:lever:8",
+            "tfc:metal/bars/wrought_iron:16",
+            "minecraft:tripwire_hook:3",
+			"gtceu:basic_electronic_circuit:4",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blue": [
+            [
+              "tags:dyes/light_blue:3"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:3"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:3"
+            ]
+          ],
+          "_tan": [
+            [
+              "tags:dyes/yellow:3",
+              "tags:sand:10"
+            ]
+          ]
+        }
+      },
+      "paint_yellow": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_tachometer": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sparkplug": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "telephonebooth": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bell47g": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:24",
+            "minecraft:lever:4",
+            "tfc:metal/bars/wrought_iron:16",
+            "gtceu:wrought_iron_bolt:24",
+            "gtceu:basic_electronic_circuit:2",
+            "gtceu:fine_copper_wire:24",
+            "minecraft:glass_pane:16",
+            "mts:mtsofficialpack.headlight:1",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            [
+              "tags:dyes/orange:3"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/light_blue:3"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:3"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:3"
+            ]
+          ]
+        }
+      },
+      "bulletrocket": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "auxiliary_tank": {
+        "commonMaterialLists": [
+          [
+            "gtceu:steel_drum:1",
+            "gtceu:wrought_iron_bolt:4",
+            "gtceu:potin_small_fluid_pipe:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "smokecan_blue": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "enginebristolmercury": {
+        "commonMaterialLists": [
+          [
+            "mts:mtsofficialpack.piston:9",
+            "mts:mtsofficialpack.sparkplug:18",
+            "gtceu:wrought_iron_plate:8",
+            "gtceu:potin_small_fluid_pipe:3",
+            "minecraft:iron_block:1",
+            "gtceu:wrought_iron_bolt:20",
+            "gtceu:fine_copper_wire:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_verticalspeed": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "instrument_aircraft_tachometer": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/black:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "don_icon": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_highway": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bumpersticker": {
+        "commonMaterialLists": [
+          [
+            "minecraft:paper:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_roostair": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ]
+        }
+      },
+      "blowtorch": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "watercannon": {
+        "commonMaterialLists": [
+          [
+            "gtceu:steel_drum:1",
+            "gtceu:potin_small_fluid_pipe:2",
+            "gtceu:wrought_iron_bolt:10",
+            "minecraft:lever:1",
+            "tags:dusts/redstone:20"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_trim": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "oredict:dyeGreen:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sign_donotenter": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "enginepw610f": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:10",
+            "mts:mtsofficialpack.sparkplug:2",
+            "gtceu:advanced_integrated_circuit:1",
+            "gtceu:steel_plate:12",
+            "gtceu:potin_small_fluid_pipe:3",
+            "minecraft:redstone_block:2",
+            "gtceu:wrought_iron_bolt:32"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_clock": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/black:1",
+            "tags:dyes/white:1"
+          ]
+        ]
+      },
+      "bulletflare_white": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "copperwire": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "spraycan_glow": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_plate:1",
+            "gtceu:potin_small_fluid_pipe:1",
+            "tags:dyes/cyan:4",
+            "minecraft:glowstone_dust:8"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "circuit": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "aa_turret_37": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "scoutpickuproof": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:6",
+            "minecraft:glass_pane:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_gear": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:4",
+            "tags:dyes/red:1",
+            "tags:dyes/blue:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "gunfireextinguisher": {
+        "commonMaterialLists": [
+          [
+            "minecraft:lever:1",
+            "gtceu:wrought_iron_bolt:1",
+            "gtceu:potin_small_fluid_pipe:4",
+            "tags:sand:10",
+            "minecraft:water_bucket:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_airspeed": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "tags:dyes/lime:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sign_route": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "basicbomb": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "itemloader": {
+        "commonMaterialLists": [
+          [
+            "minecraft:hopper:1",
+            "tags:ingots/gold:5",
+            "tags:dusts/redstone:5"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_flaps": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "instrument_aircraft_heading": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "instrument_aircraft_liftreserve": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/lime:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "instrument_aircraft_turncoord": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "barrel": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ],
+          "_blue": [
+            []
+          ],
+          "_black": [
+            []
+          ],
+          "_blank": [
+            []
+          ],
+          "_yellow": [
+            []
+          ]
+        }
+      },
+      "explosives": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "pole_streetlight": {
+        "commonMaterialLists": [
+          [
+            "oredict:dustGlowstone:2",
+            "gtceu:fine_copper_wire:1",
+            "gtceu:wrought_iron_plate:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_enginetemp_c": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sign_bump": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "ammocrate_bomb_250": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_enginetemp_f": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "gunconfetti": {
+        "commonMaterialLists": [
+          [
+            "gtceu:potin_small_fluid_pipe:1",
+            "minecraft:paper:4",
+            "tags:shears:1",
+            "tags:dyes/red:1",
+            "tags:dyes/green:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/blue:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_fuelqty": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sign_oneway_left": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "aa_base": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "solidfuel": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "sign_crosswalk": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "irsensor": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "grilleornament": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_bolt:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_cowskull": [
+            [
+              "minecraft:bone:1"
+            ]
+          ],
+          "_moustache": [
+            [
+              "minecraft:brown_wool:2"
+            ]
+          ],
+          "_horns": [
+            [
+              "minecraft:bone:1"
+            ]
+          ],
+          "_snail": [
+            [
+              "minecraft:slime_ball:8"
+            ]
+          ]
+        }
+      },
+      "dump_placer": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "testingmodule1": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_priority": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "wheelsmall": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:4",
+            "gtceu:rubber_plate:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ],
+          "_legacy": [
+            []
+          ]
+        }
+      },
+      "bullet3700proxy_mag": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "cratebell47g": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:4",
+            "mts:mtsofficialpack.crate:1",
+            "gtceu:wrought_iron_bolt:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "drill": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellerlarge2blade": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_ingot:2",
+            "gtceu:steel_rod:3"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "smokecan_green": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "ammocrate_rocket": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "aa_turret_762": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bulletflare_red": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "beacon_tower": {
+        "commonMaterialLists": [
+          [
+            "mts:mtsofficialpack.beacon_top:1",
+            "tfc:metal/bars/wrought_iron:32",
+            "tags:dyes/white:5",
+            "tags:dyes/red:5"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_inverted": [
+            []
+          ],
+          "_standard": [
+            []
+          ]
+        }
+      },
+      "sign_yield": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "glovebox_skyhawk": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "spraycan_blue": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_plate:1",
+            "gtceu:potin_small_fluid_pipe:1",
+            "tags:dyes/blue:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "double_bombrack": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "spraycan_yellow": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_plate:1",
+            "gtceu:potin_small_fluid_pipe:1",
+            "tags:dyes/yellow:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "processor": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "basecartridge": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "ocpbutter": {
+        "commonMaterialLists": [
+          [
+            "minecraft:milk_bucket:1",
+            "minecraft:clock:1"
+          ]
+        ]
+      },
+      "sign_speedlimit": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bullet3700proxy": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_ils": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "bullet3700he": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellerrotor206": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:20",
+            "gtceu:potin_small_fluid_pipe:6",
+            "mts:mtsofficialpack.hydraulics:1",
+            "tfc:metal/bars/wrought_iron:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_turn_right": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_left_direction": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "paint_black": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "camera_vulcanair": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_bolt:8",
+            "gtceu:wrought_iron_plate:6",
+            "gtceu:fine_copper_wire:8",
+            "gtceu:basic_electronic_circuit:1",
+            "gtceu:nightvision_goggles:1",
+            "minecraft:glass:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_fuelqty": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/red:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "fuelpump": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_turn_left": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_electric": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "instrument_aircraft_oilpressure": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/white:1",
+            "tags:dyes/lime:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "brigbedlogs": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:6",
+            "tfc:metal/bars/wrought_iron:4",
+            "tags:logs:10"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_cow": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "engineamci4": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:2",
+            "mts:mtsofficialpack.sparkplug:4",
+            "mts:mtsofficialpack.piston:4",
+            "gtceu:potin_small_fluid_pipe:4",
+			"gtceu:steel_plate:4",
+            "minecraft:iron_block:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_stop": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "repairkit": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "instrument_car_spedometer_blk": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/black:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "nuts": {
+        "commonMaterialLists": [
+          [
+            "minecraft:pumpkin_seeds:1",
+            "tags:dyes/red:1"
+          ]
+        ]
+      },
+      "smokecan_polychrome": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_coordinate": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "gtceu:basic_electronic_circuit:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "gunrocketpod": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "brigbedstake": {
+        "commonMaterialLists": [
+          [
+            "tags:wooden_slabs:32",
+            "gtceu:wrought_iron_bolt:10",
+            "gtceu:wrought_iron_plate:6",
+            "tfc:metal/bars/wrought_iron:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_entryforbidden": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "beacon_top": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:8",
+            "minecraft:observer:1",
+            "firmaciv:firmaciv_compass:1",
+            "tags:dusts/redstone:15",
+            "gtceu:fine_copper_wire:5"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "pole_crossingsignal": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/red:1",
+            "tags:dyes/lime:1",
+            "oredict:dustGlowstone:2",
+            "gtceu:fine_copper_wire:1",
+            "gtceu:wrought_iron_plate:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellerrotor": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "gtceu:potin_small_fluid_pipe:3",
+            "tags:dyes/red:2",
+            "tfc:metal/bars/wrought_iron:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "metaltube": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "extinguisherfoam": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "gunrocketlauncher": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "itemunloader": {
+        "commonMaterialLists": [
+          [
+            "minecraft:hopper:1",
+            "tags:ingots/iron:5",
+            "tags:dusts/redstone:5"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "dump_dropper": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "brigbedbox": {
+        "commonMaterialLists": [
+          [
+            "minecraft:chest:10",
+            "tags:wooden_slabs:8",
+            "gtceu:wrought_iron_plate:24",
+            "gtceu:wrought_iron_ingot:5",
+            "minecraft:paper:20"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "dump_hopper": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "spraycan_black": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_plate:1",
+            "gtceu:potin_small_fluid_pipe:1",
+            "tags:dyes/black:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "fluidloader": {
+        "commonMaterialLists": [
+          [
+            "tags:dusts/redstone:15",
+            "gtceu:steel_drum:1",
+            "gtceu:potin_small_fluid_pipe:4",
+            "minecraft:hopper:1",
+            "tags:slabs:8"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_turnslip": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "bulletflare_green": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_clock": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/black:1",
+            "tags:dyes/white:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "smallarmscartridge": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "gunft17turret": {
+        "commonMaterialLists": [
+          [
+            "gtceu:steel_plate:10",
+            "gtceu:steel_spring:1",
+            "gtceu:steel_normal_fluid_pipe:1",
+            "minecraft:glass_pane:8",
+            "minecraft:lever:1",
+            "tfc:metal/trapdoor/wrought_iron:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_adf": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "minecraft:compass:1",
+            "tags:dyes/white:1",
+            "tags:dyes/yellow:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "sign_oneway_right": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_restrictionsend": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "mre": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "bullet3700solid_mag": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_spedometer_kph": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "tags:dyes/black:1",
+            "tags:dyes/white:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "enginequad": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_bolt:6",
+            "gtceu:fine_copper_wire:1",
+            "mts:mtsofficialpack.sparkplug:1",
+            "mts:mtsofficialpack.piston:1",
+            "gtceu:potin_small_fluid_pipe:1",
+			"gtceu:wrought_iron_plate:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bullet3700he_mag": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "prop5": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "prop4": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "prop3": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "prop2": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "prop1": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "screws": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "paint_glow": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bomblet": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "pole_flashingsignal_red": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/red:1",
+            "oredict:dustGlowstone:1",
+            "gtceu:fine_copper_wire:1",
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "ft17track": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:15",
+            "gtceu:wrought_iron_bolt:10"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "hoist_bell206": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:4",
+            "gtceu:fine_copper_wire:16",
+            "gtceu:potin_small_fluid_pipe:4",
+            "minecraft:string:20",
+            "minecraft:tripwire_hook:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_priorityend": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "crashbarrier": {
+        "commonMaterialLists": [
+          [
+            "tags:concretes:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "gloveboxscout": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "skidhelicopter": {
+        "commonMaterialLists": [
+          [
+            "gtceu:long_wrought_iron_rod:2",
+            "gtceu:wrought_iron_bolt:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "enginemercedesm102": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "gtceu:wrought_iron_bolt:6",
+            "gtceu:fine_copper_wire:2",
+            "mts:mtsofficialpack.sparkplug:4",
+            "mts:mtsofficialpack.piston:4",
+            "gtceu:potin_small_fluid_pipe:4",
+			"gtceu:steel_plate:4",
+            "minecraft:iron_block:1",
+            "gtceu:rubber_plate:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "basicbomb_hardpoint": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bullet3700solid": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "heavy_bombrack": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "rods": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "instrument_car_oilpressure_p": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "bullet762": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bulletflare_rainbow": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "seat_harness": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "tags:wool:2",
+            "minecraft:string:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "paint_red": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "bulletflare_blue": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_car_oilpressure_b": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:fine_copper_wire:1",
+            "tags:dyes/white:1",
+            "tags:dyes/yellow:1",
+            "tags:dyes/red:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "hydraulics": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "gunobserver": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "pzl37_bombrack": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "spraycan_red": {
+        "commonMaterialLists": [
+          [
+            "gtceu:rubber_plate:1",
+            "gtceu:potin_small_fluid_pipe:1",
+            "tags:dyes/red:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "fuzeproxy": {
+        "commonMaterialLists": [
+          []
+        ]
+      },
+      "sign_right_direction": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_wrongway": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "enginefordfe428": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:4",
+            "mts:mtsofficialpack.sparkplug:8",
+            "mts:mtsofficialpack.piston:8",
+            "gtceu:potin_small_fluid_pipe:10",
+			"gtceu:steel_plate:8",
+            "minecraft:iron_block:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "sign_noparking": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "propellersmall3blade": {
+        "commonMaterialLists": [
+          [
+            "tags:dyes/white:3",
+            "gtceu:rubber_ingot:1",
+            "gtceu:long_wrought_iron_rod:2",
+            "tags:dusts/redstone:3"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "smokecan_white": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "instrument_aircraft_beacon_distance": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:1",
+            "gtceu:wrought_iron_bolt:1",
+            "gtceu:basic_electronic_circuit:1",
+            "minecraft:glass_pane:1"
+          ]
+        ]
+      },
+      "firetruck": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:64",
+            "gtceu:wrought_iron_bolt:58",
+            "gtceu:wrought_iron_spring:8",
+            "minecraft:glass_pane:10",
+            "gtceu:fine_copper_wire:14",
+            "minecraft:lever:1",
+            "minecraft:tripwire_hook:3",
+            "mts:mtsofficialpack.headlight:6",
+            "mts:mtsofficialpack.gunfireextinguisher:2",
+            "mts:mtsofficialpack.watercannon:1",
+            "tags:dyes/red:5",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      }
+    },
+    "oamp": {
+      "steeringornament": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_rod:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_pizza": [
+            [
+              "firma:food/cooked_pizza:1"
+            ]
+          ],
+          "_chain": [
+            [
+              "tags:chains:4"
+            ]
+          ],
+          "_classic": [
+            [
+              "gtceu:wrought_iron_ingot:1",
+              "tfc:wood/planks/oak:4"
+            ]
+          ],
+          "_saw": [
+            [
+              "tags:buzz_saw_heads:1"
+            ]
+          ],
+          "_goldchain": [
+            [
+              "tags:chains:2",
+              "minecraft:gold_ingot:1"
+            ]
+          ],
+          "_trapdoor": [
+            [
+              "tfc:wood/planks/oak_trapdoor:1"
+            ]
+          ],
+          "_shipswheel": [
+            [
+              "tfc:wood/planks/oak:4"
+            ]
+          ],
+          "_kart": [
+            [
+              "gtceu:wrought_iron_ingot:1"
+            ]
+          ],
+          "_yoke": [
+            [
+              "gtceu:rubber_ingot:1"
+            ]
+          ],
+          "_wrench": [
+            [
+              "mts:mts.wrench:1"
+            ]
+          ]
+        }
+      },
+      "luxorama": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:32",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:8",
+            "minecraft:glass_pane:6",
+            "minecraft:tripwire_hook:3",
+            "minecraft:lever:1",
+            "gtceu:fine_copper_wire:8",
+            "mts:mtsofficialpack.headlight:2",
+            "mts:oamp.engineescargoti6:1",
+			"gtceu:good_electronic_circuit:1",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_police": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_desertglow": [
+            [
+              "tags:dyes/pink:2"
+            ]
+          ],
+          "_mint": [
+            [
+              "tags:dyes/cyan:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_purple": [
+            [
+              "tags:dyes/purple:2"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_lightblue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_joepeach": [
+            [
+              "tags:dyes/orange:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_pink": [
+            [
+              "tags:dyes/pink:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_salmon": [
+            [
+              "tfc:food/salmon:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_jadegreen": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_royal": [
+            [
+              "tags:dyes/black:1",
+              "tags:dyes/white:1",
+              "tags:ingots/gold:10"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ]
+        }
+      },
+      "vintageseat": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "minecraft:leather:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_blue": [
+            [
+              "tags:dyes/blue:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ],
+          "_beige": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ],
+          "_light": [
+            [
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_joepeach": [
+            [
+              "tags:dyes/orange:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/light_gray:1"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/cyan:1"
+            ]
+          ],
+          "_purple": [
+            [
+              "tags:dyes/purple:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ]
+        }
+      },
+      "stationmerc": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:44",
+            "gtceu:wrought_iron_bolt:52",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:8",
+            "minecraft:glass_pane:16",
+            "minecraft:tripwire_hook:3",
+            "minecraft:lever:1",
+            "gtceu:fine_copper_wire:18",
+            "mts:mtsofficialpack.headlight:2",
+            "mts:mtsofficialpack.enginemercedesm102:1",
+			"gtceu:good_electronic_circuit:1",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_brown": [
+            [
+              "tags:dyes/brown:2"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_silver": [
+            [
+              "tags:dyes/light_gray:2"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:1",
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_beige": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ],
+          "_olive": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_green": [
+            [
+              "tags:dyes/green:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:1",
+              "tags:dyes/green:1"
+            ]
+          ],
+          "_salmon": [
+            [
+              "tfc:food/salmon:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ]
+        }
+      },
+      "camaro": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:32",
+            "gtceu:wrought_iron_bolt:48",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:12",
+            "tags:ingots/gold:14",
+            "minecraft:diamond:2",
+            "minecraft:glass_pane:16",
+            "minecraft:tripwire_hook:3",
+            "minecraft:lever:1",
+            "gtceu:fine_copper_wire:24",
+            "mts:mtsofficialpack.headlight:4",
+            "mts:oamp.enginecamarov8:1",
+			"gtceu:good_electronic_circuit:1",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_brown": [
+            [
+              "tags:dyes/brown:2"
+            ]
+          ],
+          "_orange": [
+            [
+              "tags:dyes/orange:2"
+            ]
+          ],
+          "_extravagant": [
+            [
+              "tags:dyes/pink:2",
+              "tags:dyes/white:1",
+              "tags:ingots/gold:10"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:2"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_bluestriped": [
+            [
+              "tags:dyes/blue:2"
+            ]
+          ],
+          "_skyblue": [
+            [
+              "tags:dyes/light_blue:2"
+            ]
+          ],
+          "_lime": [
+            [
+              "tags:dyes/lime:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:2"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:2"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:2"
+            ]
+          ]
+        }
+      },
+      "auxiliary_battery": {
+        "commonMaterialLists": [
+          [
+            "mts:mts.jumperpack:1",
+			"gtceu:lv_lithium_battery:4",
+            "gtceu:fine_copper_wire:8",
+            "gtceu:wrought_iron_bolt:4"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "escargot": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:28",
+            "gtceu:wrought_iron_bolt:32",
+            "gtceu:wrought_iron_spring:4",
+            "gtceu:potin_small_fluid_pipe:6",
+            "minecraft:glass_pane:8",
+            "minecraft:tripwire_hook:3",
+            "minecraft:lever:1",
+            "gtceu:fine_copper_wire:6",
+            "mts:mtsofficialpack.headlight:2",
+            "mts:oamp.engineescargoti6:1",
+			"gtceu:basic_electronic_circuit:2",
+			"gtceu:lv_lithium_battery:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_brown": [
+            [
+              "tags:dyes/brown:3"
+            ]
+          ],
+          "_mascar": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/white:1",
+              "tags:ingots/iron:5"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:3"
+            ]
+          ],
+          "_mint": [
+            [
+              "tags:dyes/green:2",
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_white": [
+            [
+              "tags:dyes/white:3"
+            ]
+          ],
+          "_blue": [
+            [
+              "tags:dyes/blue:3"
+            ]
+          ],
+          "_lightyellow": [
+            [
+              "tags:dyes/yellow:2",
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_maroon": [
+            [
+              "tags:dyes/red:2",
+              "tags:dyes/black:1"
+            ]
+          ],
+          "_black": [
+            [
+              "tags:dyes/black:2"
+            ]
+          ],
+          "_skyblue": [
+            [
+              "tags:dyes/light_blue:3"
+            ]
+          ],
+          "_joepeach": [
+            [
+              "tags:dyes/brown:2",
+              "tags:dyes/white:2"
+            ]
+          ],
+          "_pink": [
+            [
+              "tags:dyes/pink:3"
+            ]
+          ],
+          "_salmon": [
+            [
+              "tfc:food/salmon:2"
+            ]
+          ],
+          "_seagreen": [
+            [
+              "tags:dyes/cyan:2",
+              "tags:dyes/white:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:3"
+            ]
+          ],
+          "_yellow": [
+            [
+              "tags:dyes/yellow:3"
+            ]
+          ]
+        }
+      },
+      "sportseat": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:2",
+            "minecraft:leather:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_coffee": [
+            [
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_blackbrown": [
+            [
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_brown": [
+            [
+              "tags:dyes/brown:1"
+            ]
+          ],
+          "_beige": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ],
+          "_cream": [
+            [
+              "tags:dyes/yellow:1"
+            ]
+          ],
+          "_gray": [
+            [
+              "tags:dyes/gray:1"
+            ]
+          ],
+          "_red": [
+            [
+              "tags:dyes/red:1"
+            ]
+          ]
+        }
+      },
+      "dashornament": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_spring:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_hat": [
+            [
+              "minecraft:leather:1"
+            ]
+          ],
+          "_bobbletest": [
+            [
+              "minecraft:slime_ball:1"
+            ]
+          ],
+          "_cat": [
+            [
+              "tags:wool:1"
+            ]
+          ],
+          "_snail": [
+            [
+              "mts:mtsofficialpack.mirrorornament_snail:1"
+            ]
+          ]
+        }
+      },
+      "engineescargoti6": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:4",
+            "mts:mtsofficialpack.sparkplug:6",
+            "mts:mtsofficialpack.piston:6",
+            "gtceu:potin_small_fluid_pipe:8",
+			"gtceu:steel_plate:6",
+            "minecraft:iron_block:1"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "ecoline": {
+        "commonMaterialLists": [],
+        "extraMaterialLists": {
+          "_white": [
+            []
+          ]
+        }
+      },
+      "susdashornament": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": []
+        }
+      },
+      "enginecamarov8": {
+        "commonMaterialLists": [
+          [
+            "gtceu:fine_copper_wire:8",
+            "mts:mtsofficialpack.sparkplug:8",
+            "mts:mtsofficialpack.piston:8",
+            "gtceu:potin_small_fluid_pipe:16",
+			"gtceu:steel_plate:8",
+            "minecraft:iron_block:2"
+          ]
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "enginevwbus": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      },
+      "wheeloffroad": {
+        "commonMaterialLists": [
+          [
+            "gtceu:wrought_iron_plate:3",
+            "gtceu:wrought_iron_bolt:8",
+            "gtceu:rubber_plate:6"
+          ]
+        ],
+        "extraMaterialLists": {
+          "_default": [
+            []
+          ]
+        }
+      },
+      "vwbus": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "_red": [
+            []
+          ]
+        }
+      },
+      "engineecoline": {
+        "commonMaterialLists": [
+          []
+        ],
+        "extraMaterialLists": {
+          "": [
+            []
+          ]
+        }
+      }
+    }
+  }
+}
