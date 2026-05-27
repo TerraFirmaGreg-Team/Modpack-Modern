@@ -5,208 +5,840 @@
 	group: "31B01EAD21CA863A"
 	icon: "computercraft:computer_advanced"
 	id: "1A6D6B70EC13DDC6"
+	images: [
+		{
+			height: 3.0d
+			image: "ad_astra:textures/environment/moon.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			click: "https://tweaked.cc/"
+			height: 1.0d
+			hover: ["quests.computer.cc_tweaked_wiki.title"]
+			image: "computercraft:item/printed_book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			click: "https://docs.advanced-peripherals.de/latest/"
+			height: 1.0d
+			hover: ["quests.computer.advanced_peripherals_wiki.title"]
+			image: "advancedperipherals:item/book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 7.0d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["26394C1290D70AB6"]
-			description: ["To continue the quest line, you need to craft any of the computers."]
-			icon: "computercraft:computer_advanced"
-			id: "591C5E26EE7466F3"
-			shape: "gear"
-			size: 2.0d
+			description: ["{quests.computer.welcome.desc}"]
+			id: "5F2D9F4908401D0D"
+			subtitle: "{quests.computer.welcome.subtitle}"
 			tasks: [{
-				id: "6BC9F3064F29B986"
-				title: "CC: Tweaked"
-				type: "checkmark"
+				id: "2E906826F6FDAF5F"
+				item: "computercraft:computer_normal"
+				type: "item"
 			}]
+			title: "{quests.computer.welcome.title}"
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: ["{quests.computer.advanced_computers.desc}"]
+			id: "791B05ACA5FD85FC"
+			subtitle: "{quests.computer.advanced_computers.subtitle}"
+			tasks: [
+				{
+					id: "065C2D0A373063AB"
+					item: "computercraft:computer_advanced"
+					type: "item"
+				}
+				{
+					id: "6694EF08DED64B71"
+					item: "computercraft:turtle_advanced"
+					type: "item"
+				}
+				{
+					id: "6BEF24FE2926ACF0"
+					item: "computercraft:pocket_computer_advanced"
+					type: "item"
+				}
+				{
+					id: "6F32EA6613583DD1"
+					item: "computercraft:monitor_advanced"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.advanced_computers.title}"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: ["{quests.computer.pocket.desc}"]
+			id: "4CD956A0E923C1B6"
+			subtitle: "{quests.computer.pocket.subtitle}"
+			tasks: [{
+				id: "74F8BAFCA9F2881B"
+				item: "computercraft:pocket_computer_normal"
+				type: "item"
+			}]
+			title: "{quests.computer.pocket.title}"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: ["{quests.computer.turtles.desc}"]
+			hide_dependent_lines: true
+			id: "3C6A84E06D46CD0F"
+			subtitle: "{quests.computer.turtles.subtitle}"
+			tasks: [{
+				id: "5E8B93E5E8506DEF"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			title: "{quests.computer.turtles.title}"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.monitor.desc}"]
+			id: "0B29A2BF94C63336"
+			subtitle: "{quests.computer.monitor.subtitle}"
+			tasks: [{
+				id: "616B08AEEACAD536"
+				item: "computercraft:monitor_normal"
+				type: "item"
+			}]
+			title: "{quests.computer.monitor.title}"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.speaker.desc}"]
+			id: "1BBFCD620C85DB80"
+			subtitle: "{quests.computer.speaker.subtitle}"
+			tasks: [{
+				id: "7DD0AB6A9A957F8B"
+				item: "computercraft:speaker"
+				type: "item"
+			}]
+			title: "{quests.computer.speaker.title}"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.disk_drive.desc}"]
+			id: "5B1A8D8CC62FC5B1"
+			subtitle: "{quests.computer.disk_drive.subtitle}"
+			tasks: [
+				{
+					id: "09F3121204F7195A"
+					item: "computercraft:disk_drive"
+					type: "item"
+				}
+				{
+					id: "2691C1EABAAF0305"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(computercraft:disks)"
+						}
+					}
+					title: "Any #computercraft:disks"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.disk_drive.title}"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.computer_peripheral.desc}"]
+			id: "21EAABD0D38C744D"
+			subtitle: "{quests.computer.computer_peripheral.subtitle}"
+			tasks: [{
+				id: "3079507A3939B9C7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(computercraft:computer_normal)item(computercraft:computer_advanced))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.computer.computer_peripheral.title}"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.wireless_modem.desc}"]
+			id: "029B6ECECAE729D8"
+			subtitle: "{quests.computer.wireless_modem.subtitle}"
+			tasks: [{
+				id: "681E084FFAE1538B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(computercraft:wireless_modem_normal)item(computercraft:wireless_modem_advanced))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.computer.wireless_modem.title}"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.wired_modem.desc}"]
+			id: "47D9E37D0E20B6F5"
+			subtitle: "{quests.computer.wired_modem.subtitle}"
+			tasks: [
+				{
+					id: "340F93D39415017C"
+					item: "computercraft:wired_modem"
+					type: "item"
+				}
+				{
+					id: "77520C95616AC4DF"
+					item: "computercraft:cable"
+					type: "item"
+				}
+			]
+			title: "{quests.computer.wired_modem.title}"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.printer.desc}"]
+			id: "7DC9A7FA540C670C"
+			subtitle: "{quests.computer.printer.title}"
+			tasks: [{
+				id: "277E212F93FC34B5"
+				item: "computercraft:printer"
+				type: "item"
+			}]
+			title: "{quests.computer.printer.title}"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.redstone_relay.desc}"]
+			id: "08C8C4E751DF5CBA"
+			subtitle: "{quests.computer.redstone_relay.subtitle}"
+			tasks: [{
+				id: "754E959DC88029F6"
+				item: "computercraft:redstone_relay"
+				type: "item"
+			}]
+			title: "{quests.computer.redstone_relay.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "0BFFB20573B2A9A5"
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.environment_detector.desc}"]
+			id: "366B73FA1A626DBD"
+			subtitle: "{quests.computer.environment_detector.subtitle}"
 			tasks: [{
-				id: "4A52931C6E78FFC2"
-				item: "computercraft:computer_normal"
+				id: "7FEE9F7879B91E48"
+				item: "advancedperipherals:environment_detector"
 				type: "item"
 			}]
+			title: "{quests.computer.environment_detector.title}"
 			x: 2.5d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["591C5E26EE7466F3"]
-			id: "249A6189A9334B14"
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.chat_box.desc}"]
+			id: "780995E2158D5314"
+			subtitle: "{quests.computer.chat_box.subtitle}"
 			tasks: [{
-				id: "28B5BBAAA33CDEDA"
-				item: "computercraft:computer_advanced"
+				id: "597B5BD38B0AF794"
+				item: "advancedperipherals:chat_box"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			title: "{quests.computer.chat_box.title}"
+			x: 3.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["249A6189A9334B14"]
-			id: "2A507BD15FBA08FC"
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.player_detector.desc}"]
+			id: "2421D1ADA60C3BB3"
+			subtitle: "{quests.computer.player_detector.subtitle}"
 			tasks: [{
-				id: "73DA9F99EF913F3D"
-				item: "computercraft:turtle_advanced"
+				id: "56CA2DC49B25B0BA"
+				item: "advancedperipherals:player_detector"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.0d
+			title: "{quests.computer.player_detector.title}"
+			x: 4.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["0BFFB20573B2A9A5"]
-			id: "4C3A1901BA40FB24"
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.me_bridge.desc}"]
+			id: "01950B026EAAECE2"
+			subtitle: "{quests.computer.me_bridge.subtitle}"
 			tasks: [{
-				id: "64B16F8F192CEE23"
-				item: "computercraft:turtle_normal"
+				id: "6C0E708A4AC5812A"
+				item: "advancedperipherals:me_bridge"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
-			]
-			dependency_requirement: "one_completed"
-			id: "5196983324E8F52A"
-			tasks: [{
-				id: "420333B377F27A78"
-				item: "computercraft:cable"
-				type: "item"
-			}]
+			title: "{quests.computer.me_bridge.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0BFFB20573B2A9A5"
-				"249A6189A9334B14"
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.inventory_manager.desc}"]
+			id: "562C44506B8D6B5B"
+			subtitle: "{quests.computer.inventory_manager.subtitle}"
+			tasks: [
+				{
+					id: "5926DDE12F4A3C9F"
+					item: "advancedperipherals:inventory_manager"
+					type: "item"
+				}
+				{
+					id: "3FAE91F369EAEB3D"
+					item: {
+						Count: 1
+						id: "advancedperipherals:memory_card"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
-			dependency_requirement: "one_completed"
-			icon: "computercraft:monitor_advanced"
-			id: "7FFDA4C59514AA98"
-			shape: "octagon"
-			size: 2.0d
+			title: "{quests.computer.inventory_manager.title}"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.block_reader.desc}"]
+			id: "4DE6ED0D9603524C"
+			subtitle: "{quests.computer.block_reader.subtitle}"
 			tasks: [{
-				id: "7D070BAFC0F4226A"
+				id: "255D175973D44694"
+				item: "advancedperipherals:block_reader"
+				type: "item"
+			}]
+			title: "{quests.computer.block_reader.title}"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.nbt_storage.desc}"]
+			id: "5F5865233C224165"
+			subtitle: "{quests.computer.nbt_storage.subtitle}"
+			tasks: [{
+				id: "3DA1EA7E49A65DDE"
+				item: "advancedperipherals:nbt_storage"
+				type: "item"
+			}]
+			title: "{quests.computer.nbt_storage.title}"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: ["{quests.computer.automata_core.desc}"]
+			hide_dependent_lines: true
+			id: "191EEC093AC4E4D4"
+			subtitle: "{quests.computer.automata_core.subtitle}"
+			tasks: [{
+				id: "546F1E11F9556CE6"
+				item: {
+					Count: 1
+					id: "advancedperipherals:weak_automata_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{quests.computer.automata_core.title}"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: ["{quests.computer.husbandry_core.desc}"]
+			hide_dependent_lines: true
+			id: "44948F5DD2BA92E6"
+			subtitle: "{quests.computer.husbandry_core.subtitle}"
+			tasks: [{
+				id: "066FB2E7EB270C86"
+				item: "advancedperipherals:husbandry_automata_core"
+				type: "item"
+			}]
+			title: "{quests.computer.husbandry_core.title}"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3058785E70954678"
+				"3C6A84E06D46CD0F"
+			]
+			description: ["{quests.computer.ender_core.desc}"]
+			hide_dependent_lines: true
+			id: "30AC05ADD73C548C"
+			subtitle: "{quests.computer.ender_core.subtitle}"
+			tasks: [{
+				id: "10CC3F9AA5628EAB"
+				item: "advancedperipherals:end_automata_core"
+				type: "item"
+			}]
+			title: "{quests.computer.ender_core.title}"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3058785E70954678"]
+			description: ["{quests.computer.geo_scanner.desc}"]
+			id: "1F08650436F72A14"
+			subtitle: "{quests.computer.geo_scanner.subtitle}"
+			tasks: [{
+				id: "1E5F565820EC3D9F"
+				item: "advancedperipherals:geo_scanner"
+				type: "item"
+			}]
+			title: "{quests.computer.geo_scanner.title}"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.sticker.desc}"]
+			id: "4C206263E6B050FD"
+			subtitle: "{quests.computer.sticker.subtitle}"
+			tasks: [{
+				id: "3460D536419CE199"
+				item: "create:sticker"
+				type: "item"
+			}]
+			title: "{quests.computer.sticker.title}"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.nixie_tube.desc}"]
+			id: "27B1F8D84A175533"
+			subtitle: "{quests.computer.nixie_tube.subtitle}"
+			tasks: [{
+				id: "48456E48BD67DFFB"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			title: "{quests.computer.nixie_tube.title}"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.speed_and_stress_meters.desc}"]
+			id: "1A762A3711D318C2"
+			subtitle: "{quests.computer.speed_and_stress_meters.subtitle}"
+			tasks: [{
+				id: "2E2E8040F9A161B4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(create:stressometer)item(create:speedometer))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.computer.speed_and_stress_meters.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.rotation_speed_controller.desc}"]
+			id: "713468372470E589"
+			subtitle: "{quests.computer.rotation_speed_controller.subtitle}"
+			tasks: [{
+				id: "66A085711B2AAC20"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "{quests.computer.rotation_speed_controller.title}"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.sequenced_gearshift.desc}"]
+			id: "1843BA5ED0802687"
+			subtitle: "{quests.computer.sequenced_gearshift.subtitle}"
+			tasks: [{
+				id: "0725F27BD475D9AB"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
+			title: "{quests.computer.sequenced_gearshift.title}"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.electric_motor.desc}"]
+			id: "5675D8377D055291"
+			subtitle: "{quests.computer.electric_motor.subtitle}"
+			tasks: [{
+				id: "3DC0E953E34F2108"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			title: "{quests.computer.electric_motor.title}"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.display_link.desc}"]
+			id: "28D25C4245AEBFA5"
+			subtitle: "{quests.computer.display_link.subtitle}"
+			tasks: [{
+				id: "7707B99C34948D64"
+				item: "create:display_link"
+				type: "item"
+			}]
+			title: "{quests.computer.display_link.title}"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.train_station.desc}"]
+			id: "6F907DA4DEF43EEF"
+			subtitle: "{quests.computer.train_station.subtitle}"
+			tasks: [{
+				id: "79E9CBB1F1A1CD90"
+				item: "create:track_station"
+				type: "item"
+			}]
+			title: "{quests.computer.train_station.title}"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.train_signal.desc}"]
+			id: "3DE09E83BF456B89"
+			subtitle: "{quests.computer.train_signal.subtitle}"
+			tasks: [{
+				id: "32B4F8193C44B8D1"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			title: "{quests.computer.train_signal.title}"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.train_observer.desc}"]
+			id: "0A1E9AC6454093B7"
+			subtitle: "{quests.computer.train_observer.subtitle}"
+			tasks: [{
+				id: "5986B3603B92F99B"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			title: "{quests.computer.train_observer.title}"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.stock_ticker.desc}"]
+			id: "62DD9C3DFD21CBE9"
+			subtitle: "{quests.computer.stock_ticker.subtitle}"
+			tasks: [{
+				id: "266F17D1A94846AA"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			title: "{quests.computer.stock_ticker.title}"
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.packager.desc}"]
+			id: "4F89686AA5873267"
+			subtitle: "{quests.computer.packager.subtitle}"
+			tasks: [{
+				id: "4B1829DCCB79E690"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(create:packager)item(create:repackager)item(create_factory_logistics:jar_packager))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.computer.packager.title}"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.frogport.desc}"]
+			id: "7D6913812D5323AC"
+			subtitle: "{quests.computer.frogport.subtitle}"
+			tasks: [{
+				id: "775F3367D66AA6ED"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			title: "{quests.computer.frogport.title}"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.redstone_requester.desc}"]
+			id: "1BAAC23D8E7EB515"
+			subtitle: "{quests.computer.redstone_requester.subtitle}"
+			tasks: [{
+				id: "18F5322880A368E6"
+				item: "create:redstone_requester"
+				type: "item"
+			}]
+			title: "{quests.computer.redstone_requester.title}"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.table_cover.desc}"]
+			id: "4CDA6CC955EFFCA2"
+			subtitle: "{quests.computer.table_cover.subtitle}"
+			tasks: [{
+				id: "6760FE9376C9F7C5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:table_cloths)"
+					}
+				}
+				title: "Any #create:table_cloths"
+				type: "item"
+			}]
+			title: "{quests.computer.table_cover.title}"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6226DDF4F16D439B"]
+			description: ["{quests.computer.postbox.desc}"]
+			id: "782E097F31659E4D"
+			subtitle: "{quests.computer.postbox.subtitle}"
+			tasks: [{
+				id: "06D57E9BCF721363"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:postboxes)"
+					}
+				}
+				title: "Any #create:postboxes"
+				type: "item"
+			}]
+			title: "{quests.computer.postbox.title}"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["{quests.computer.cc_peripherals.desc}"]
+			hide_dependent_lines: true
+			id: "160EC57392A6C5D5"
+			tasks: [{
+				id: "621B3390C334FC39"
+				title: "{quests.computer.cc_peripherals.title}"
 				type: "checkmark"
 			}]
-			title: "It's time to craft trinkets"
-			x: 5.0d
+			title: "{quests.computer.cc_peripherals.title}"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["{quests.computer.ap_peripherals.desc}"]
+			hide_dependent_lines: true
+			id: "3058785E70954678"
+			tasks: [{
+				id: "1270FE6363C041E3"
+				title: "Advanced Peripherals"
+				type: "checkmark"
+			}]
+			title: "{quests.computer.ap_peripherals.title}"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["{quests.computer.create_peripherals.desc}"]
+			hide_dependent_lines: true
+			id: "6226DDF4F16D439B"
+			tasks: [{
+				id: "73775B77514366BB"
+				title: "{quests.computer.create_peripherals.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.computer.create_peripherals.title}"
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F2D9F4908401D0D"]
+			description: ["{quests.computer.peripherals.desc}"]
+			id: "0B55AC33D41FED67"
+			subtitle: "{quests.computer.peripherals.subtitle}"
+			tasks: [{
+				id: "6E4CFA68098E43CB"
+				title: "{quests.computer.peripherals.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.computer.peripherals.title}"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["160EC57392A6C5D5"]
+			description: ["{quests.computer.bundled_cable.desc}"]
+			id: "0E61A782522AC382"
+			subtitle: "{quests.computer.bundled_cable.subtitle}"
+			tasks: [{
+				id: "68C994632CF7AD03"
+				item: "morered:bundled_network_cable"
+				type: "item"
+			}]
+			title: "{quests.computer.bundled_cable.title}"
+			x: 1.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "7B500E0A921321E9"
-			shape: "circle"
+			dependencies: [
+				"30AC05ADD73C548C"
+				"44948F5DD2BA92E6"
+				"191EEC093AC4E4D4"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.computer.overpowered_cores.desc}"]
+			hide_dependency_lines: false
+			id: "23EA0D95CDFF4B01"
+			subtitle: "{quests.computer.overpowered_cores.subtitle}"
 			tasks: [{
-				id: "42590471EA46FCE8"
-				item: "computercraft:monitor_normal"
+				id: "46CE286E8AC42D2C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(advancedperipherals:overpowered_weak_automata_core)item(advancedperipherals:overpowered_husbandry_automata_core))"
+					}
+				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			title: "{quests.computer.overpowered_cores.title}"
+			x: 3.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "4B88F658A752FA3F"
-			shape: "circle"
+			dependencies: ["7D22D66DC480F2A7"]
+			description: ["{quests.computer.inventory.desc}"]
+			icon: "minecraft:chest"
+			id: "7054CE9765DA69A5"
 			tasks: [{
-				id: "42CCFEF24A41C1FE"
-				item: "computercraft:monitor_advanced"
-				type: "item"
+				id: "4F1B010D0BB71E66"
+				title: "{quests.computer.inventory.title}"
+				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 3.0d
+			title: "{quests.computer.inventory.title}"
+			x: -2.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "48C4D2DB2E7F6F59"
-			shape: "circle"
+			dependencies: ["7D22D66DC480F2A7"]
+			description: ["{quests.computer.tank.desc}"]
+			icon: "create:fluid_tank"
+			id: "1D2BD01EDABD6532"
 			tasks: [{
-				id: "72C0320D738C604E"
-				item: "computercraft:wireless_modem_normal"
-				type: "item"
+				id: "1D8C6D11E95A6FB1"
+				title: "{quests.computer.tank.title}"
+				type: "checkmark"
 			}]
-			x: 6.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "2A43647C3C5D9E83"
-			shape: "circle"
-			tasks: [{
-				id: "79AE74FA098E7DC3"
-				item: "computercraft:wireless_modem_advanced"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "38F42B6D14F8DED1"
-			shape: "circle"
-			tasks: [{
-				id: "702BB2F0572F5E48"
-				item: "computercraft:wired_modem"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "27577CB16820E75B"
-			shape: "circle"
-			tasks: [{
-				id: "267B8DB63952DF1A"
-				item: "computercraft:speaker"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3AE64484AB9F1048"
-			shape: "circle"
-			tasks: [{
-				id: "2B14E62B1C603EFD"
-				item: "computercraft:disk_drive"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "77439E3A3EC781F8"
-			shape: "circle"
-			tasks: [{
-				id: "66B7614C462CE161"
-				item: "computercraft:printer"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7FFDA4C59514AA98"]
-			id: "3DFB9A8A2BE3E85B"
-			shape: "circle"
-			tasks: [{
-				id: "616A905A423A55B0"
-				item: "computercraft:disk_drive"
-				type: "item"
-			}]
-			x: 9.5d
+			title: "{quests.computer.tank.title}"
+			x: -2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7D22D66DC480F2A7"]
+			description: ["{quests.computer.battery.desc}"]
+			icon: "createaddition:modular_accumulator"
+			id: "0E956D64BA615466"
+			tasks: [{
+				id: "0B4EB95356FA6DAE"
+				title: "{quests.computer.battery.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.computer.battery.title}"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["{quests.computer.generic_peripherals.desc}"]
+			hide_dependent_lines: true
+			id: "7D22D66DC480F2A7"
+			subtitle: "{quests.computer.generic_peripherals.subtitle}"
+			tasks: [{
+				id: "55FC842C700A3716"
+				title: "{quests.computer.generic_peripherals.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.computer.generic_peripherals.title}"
+			x: -2.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{quests.computer.subtitle}"]
