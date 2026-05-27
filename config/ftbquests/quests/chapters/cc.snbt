@@ -694,7 +694,7 @@
 			id: "160EC57392A6C5D5"
 			tasks: [{
 				id: "621B3390C334FC39"
-				title: "Base CC Peripherals"
+				title: "{quests.computer.cc_peripherals.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.cc_peripherals.title}"
@@ -722,7 +722,7 @@
 			id: "6226DDF4F16D439B"
 			tasks: [{
 				id: "73775B77514366BB"
-				title: "Create Peripherals"
+				title: "{quests.computer.create_peripherals.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.create_peripherals.title}"
@@ -736,7 +736,7 @@
 			subtitle: "{quests.computer.peripherals.subtitle}"
 			tasks: [{
 				id: "6E4CFA68098E43CB"
-				title: "Peripherals"
+				title: "{quests.computer.peripherals.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.peripherals.title}"
@@ -790,7 +790,7 @@
 			id: "7054CE9765DA69A5"
 			tasks: [{
 				id: "4F1B010D0BB71E66"
-				title: "Inventory"
+				title: "{quests.computer.inventory.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.inventory.title}"
@@ -804,7 +804,7 @@
 			id: "1D2BD01EDABD6532"
 			tasks: [{
 				id: "1D8C6D11E95A6FB1"
-				title: "Fluid Tank"
+				title: "{quests.computer.tank.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.tank.title}"
@@ -818,7 +818,7 @@
 			id: "0E956D64BA615466"
 			tasks: [{
 				id: "0B4EB95356FA6DAE"
-				title: "FE battery"
+				title: "{quests.computer.battery.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.battery.title}"
@@ -833,7 +833,7 @@
 			subtitle: "{quests.computer.generic_peripherals.subtitle}"
 			tasks: [{
 				id: "55FC842C700A3716"
-				title: "Generic Peripherals"
+				title: "{quests.computer.generic_peripherals.title}"
 				type: "checkmark"
 			}]
 			title: "{quests.computer.generic_peripherals.title}"
