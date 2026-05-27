@@ -4,45 +4,80 @@ function registerTFGMedicineItemTags(event) {
 
 	//#region Medicine
 	/**
-	 * Array of medicinal items.
+	 * Array of medicinal pill items.
 	 * @type {{Item}}
 	 */
-	const medicine = [
+	const medicine_pills = [
 		'tfg:antipoison_pill',
-		'tfg:antipoison_tablet',
 		'tfg:haste_pill',
-		'tfg:haste_tablet',
 		'tfg:night_vision_pill',
-		'tfg:night_vision_tablet',
 		'tfg:poison_pill',
-		'tfg:poison_tablet',
 		'tfg:regeneration_pill',
-		'tfg:regeneration_tablet',
 		'tfg:slowness_pill',
-		'tfg:slowness_tablet',
 		'tfg:speed_pill',
-		'tfg:speed_tablet',
 		'tfg:water_breathing_pill',
-		'tfg:water_breathing_tablet',
 		'tfg:weakness_pill',
-		'tfg:weakness_tablet',
+		'tfg:paracetamol_pill',
+		'tfg:rad_away_pill'
+	];
+	medicine_pills.forEach(items => {event.add('tfg:medicine/pills', items)});
+
+	/**
+	 * Array of medicinal tablet items.
+	 * @type {{Item}}
+	 */
+	const medicine_tablets = [
+		'tfg:antipoison_tablet',
+		'tfg:haste_tablet',
+		'tfg:night_vision_tablet',
+		'tfg:poison_tablet',
+		'tfg:regeneration_tablet',
+		'tfg:slowness_tablet',
+		'tfg:speed_tablet',
+		'tfg:water_breathing_tablet',
+		'tfg:weakness_tablet'
+	];
+	medicine_tablets.forEach(items => {event.add('tfg:medicine/tablets', items)});
+
+	/**
+	 * Array of medicinal salvo items.
+	 * @type {{Item}}
+	 */
+	const medicine_salvos = [
 		'tfg:absorption_salvo',
 		'tfg:fire_resistance_salvo',
 		'tfg:invisibility_salvo',
 		'tfg:luck_salvo',
 		'tfg:resistance_salvo',
-		'tfg:instant_health_salvo',
-		'tfg:paracetamol_pill',
-		'tfg:rad_away_pill',
+		'tfg:instant_health_salvo'
+	];
+	medicine_salvos.forEach(items => {event.add('tfg:medicine/salvos', items)});
+
+	/**
+	 * Array of medicinal powder items.
+	 * @type {{Item}}
+	 */
+	const medicine_powders = [
 		'tfg:mining_powder',
 		'tfg:acrobat_powder',
 		'tfg:recovery_powder',
-		'tfg:combat_powder',
+		'tfg:combat_powder'
+	];
+	medicine_powders.forEach(items => {event.add('tfg:medicine/powders', items)});
+
+	/**
+	 * Array of medicinal capsule items.
+	 * @type {{Item}}
+	 */
+	const medicine_capsules = [
 		'tfg:parasiticide_capsule',
 		'tfg:detox_capsule',
 		'tfg:nanofiltration_capsule'
 	];
-	medicine.forEach(items => {event.add('tfg:medicine', items)});
+	medicine_capsules.forEach(items => {event.add('tfg:medicine/capsules', items)});
+
+	const all_medicine = [].concat(medicine_pills, medicine_tablets, medicine_salvos, medicine_powders, medicine_capsules);
+	all_medicine.forEach(items => {event.add('tfg:medicine', items)});
 
 	//#endregion
 	//#region Antipoison

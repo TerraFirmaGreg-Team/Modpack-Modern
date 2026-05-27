@@ -557,7 +557,7 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		id: 'tfg:food/crude_gelatin',
 		texture: 'tfg:item/food/crude_gelatin',
 		nutrition: {
-			decay: 0.2
+			decay: 0.5
 		},
 		inedible: true
 	}
