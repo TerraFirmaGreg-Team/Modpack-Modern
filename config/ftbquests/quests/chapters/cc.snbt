@@ -884,6 +884,7 @@
 			description: ["{quests.computer.computer_monitor_cover.desc}"]
 			hide_dependency_lines: true
 			id: "21C7AC26BC3FD4E7"
+			subtitle: "{quests.computer.computer_monitor_cover.subtitle}"
 			title: "{quests.computer.computer_monitor_cover.title}"
 			tasks: [{
 				id: "5D6F043BBA5346B7"
