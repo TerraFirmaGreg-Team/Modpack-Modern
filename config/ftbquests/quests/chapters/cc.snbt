@@ -858,7 +858,7 @@
 			title: "{quests.computer.gregtech_peripherals.title}"
 			tasks: [{
 				id: "3EC7C1131D382607"
-				title: "GregTech Peripherals"
+				title: "{quests.computer.gregtech_peripherals.title}"
 				type: "checkmark"
 			}]
 			x: 7.0d
@@ -900,12 +900,13 @@
 			disable_toast: true
 			hide_dependency_lines: true
 			id: "736CDF6EAD05B3AE"
+			icon: "gtceu:gas_large_turbine"
 			subtitle: "{quests.computer.large_turbine.subtitle}"
 			title: "{quests.computer.large_turbine.title}"
 			tasks: [{
 				id: "3A9403E5F2E47238"
-				item: "gtceu:gas_large_turbine"
-				type: "item"
+				title: "{quests.computer.large_turbine.title}"
+				type: "checkmark"
 			}]
 			x: 8.0d
 			y: 1.0d
