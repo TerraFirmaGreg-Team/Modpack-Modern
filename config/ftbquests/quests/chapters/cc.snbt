@@ -34,6 +34,16 @@
 			x: -6.0d
 			y: 7.0d
 		}
+		{
+			click: "https://gregtechceu.github.io/GregTech-Modern/1.20.1/Gameplay/Central-Monitor/"
+			height: 1.0d
+			hover: ["quests.computer.gregtech_wiki_monitor.title"]
+			image: "patchouli:item/book_blue"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: -1.5d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -448,7 +458,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.sticker.title}"
-			x: 6.0d
+			x: 10.0d
 			y: 1.0d
 		}
 		{
@@ -462,7 +472,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.nixie_tube.title}"
-			x: 7.0d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -482,7 +492,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.speed_and_stress_meters.title}"
-			x: 6.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -496,7 +506,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.rotation_speed_controller.title}"
-			x: 7.0d
+			x: 11.0d
 			y: -3.0d
 		}
 		{
@@ -510,7 +520,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.sequenced_gearshift.title}"
-			x: 7.0d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -524,7 +534,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.electric_motor.title}"
-			x: 7.0d
+			x: 11.0d
 			y: -1.0d
 		}
 		{
@@ -538,7 +548,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.display_link.title}"
-			x: 7.0d
+			x: 11.0d
 			y: 1.0d
 		}
 		{
@@ -552,7 +562,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.train_station.title}"
-			x: 8.0d
+			x: 12.0d
 			y: -1.0d
 		}
 		{
@@ -566,7 +576,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.train_signal.title}"
-			x: 8.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -580,7 +590,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.train_observer.title}"
-			x: 8.0d
+			x: 12.0d
 			y: 1.0d
 		}
 		{
@@ -594,7 +604,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.stock_ticker.title}"
-			x: 9.0d
+			x: 13.0d
 			y: -4.0d
 		}
 		{
@@ -614,7 +624,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.packager.title}"
-			x: 9.0d
+			x: 13.0d
 			y: -3.0d
 		}
 		{
@@ -628,7 +638,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.frogport.title}"
-			x: 9.0d
+			x: 13.0d
 			y: -2.0d
 		}
 		{
@@ -642,7 +652,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.redstone_requester.title}"
-			x: 9.0d
+			x: 13.0d
 			y: -1.0d
 		}
 		{
@@ -663,7 +673,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.table_cover.title}"
-			x: 9.0d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -684,7 +694,7 @@
 				type: "item"
 			}]
 			title: "{quests.computer.postbox.title}"
-			x: 9.0d
+			x: 13.0d
 			y: 1.0d
 		}
 		{
@@ -726,13 +736,14 @@
 				type: "checkmark"
 			}]
 			title: "{quests.computer.create_peripherals.title}"
-			x: 7.5d
+			x: 11.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5F2D9F4908401D0D"]
 			description: ["{quests.computer.peripherals.desc}"]
 			id: "0B55AC33D41FED67"
+			optional: true
 			subtitle: "{quests.computer.peripherals.subtitle}"
 			tasks: [{
 				id: "6E4CFA68098E43CB"
@@ -740,7 +751,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.computer.peripherals.title}"
-			x: 2.0d
+			x: 3.5d
 			y: 3.5d
 		}
 		{
@@ -839,6 +850,98 @@
 			title: "{quests.computer.generic_peripherals.title}"
 			x: -2.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["0B55AC33D41FED67"]
+			description: ["{quests.computer.gregtech_peripherals.desc}"]
+			id: "3F927702B5072A68"
+			title: "{quests.computer.gregtech_peripherals.title}"
+			tasks: [{
+				id: "3EC7C1131D382607"
+				title: "{quests.computer.gregtech_peripherals.title}"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F927702B5072A68"]
+			description: ["{quests.computer.central_monitor.desc}"]
+			hide_dependency_lines: true
+			id: "10F49D1DCE7E102C"
+			subtitle: "{quests.computer.central_monitor.subtitle}"
+			title: "{quests.computer.central_monitor.title}"
+			tasks: [{
+				id: "7F69ADCFE210151F"
+				item: "gtceu:central_monitor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F927702B5072A68"]
+			description: ["{quests.computer.computer_monitor_cover.desc}"]
+			hide_dependency_lines: true
+			id: "21C7AC26BC3FD4E7"
+			subtitle: "{quests.computer.computer_monitor_cover.subtitle}"
+			title: "{quests.computer.computer_monitor_cover.title}"
+			tasks: [{
+				id: "5D6F043BBA5346B7"
+				item: "gtceu:computer_monitor_cover"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F927702B5072A68"]
+			description: ["{quests.computer.large_turbine.desc}"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "736CDF6EAD05B3AE"
+			icon: "gtceu:gas_large_turbine"
+			subtitle: "{quests.computer.large_turbine.subtitle}"
+			title: "{quests.computer.large_turbine.title}"
+			tasks: [{
+				id: "3A9403E5F2E47238"
+				title: "{quests.computer.large_turbine.title}"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F927702B5072A68"]
+			description: ["{quests.computer.gregtech_machine.desc}"]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_forge_hammer"
+			id: "5ACB5F66D7A324A3"
+			title: "{quests.computer.gregtech_machine.title}"
+			subtitle: "{quests.computer.gregtech_machine.subtitle}"
+			tasks: [{
+				id: "492F6F231A7A5859"
+				title: "{quests.computer.gregtech_machine.title}"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F927702B5072A68"]
+			description: ["{quests.computer.energy_storage.desc}"]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_battery_buffer_4x"
+			id: "272A44B5D037B0F4"
+			title: "{quests.computer.energy_storage.title}"
+			subtitle: "{quests.computer.energy_storage.subtitle}"
+			tasks: [{
+				id: "5E9CE703501884DD"
+				title: "{quests.computer.energy_storage.title}"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.computer.subtitle}"]
