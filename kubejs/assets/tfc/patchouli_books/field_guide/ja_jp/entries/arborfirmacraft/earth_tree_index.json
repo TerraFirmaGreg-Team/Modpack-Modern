@@ -22,9 +22,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "アスペン、ポプラ",
+			"title": "ヤマナラシ、ポプラ",
 			"item": "tag:tfc:aspen_logs",
-			"text": "$(bold)アスペン$()$(br)$(thing)降水量$(): 350 — 500mm$(br)$(thing)温度$(): -15.7 — -1.1°C$(br2)$(bold)ポプラ$()$(br)$(thing)降水量$(): 170 — 310mm$(br)$(thing)温度$(): -15.7 — -6.6°C"
+			"text": "$(bold)ヤマナラシ$()$(br)$(thing)降水量$(): 350 — 500mm$(br)$(thing)温度$(): -15.7 — -1.1°C$(br2)$(bold)ポプラ$()$(br)$(thing)降水量$(): 170 — 310mm$(br)$(thing)温度$(): -15.7 — -6.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",

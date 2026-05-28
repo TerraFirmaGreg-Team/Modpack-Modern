@@ -6,12 +6,12 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct",
 			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние."
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"recipe": "tfg:shapeless/hellbricks",
 			"text": "Адские кирпичи — это строительный блок, который также используется для Адской кузницы."
 		},
 		{

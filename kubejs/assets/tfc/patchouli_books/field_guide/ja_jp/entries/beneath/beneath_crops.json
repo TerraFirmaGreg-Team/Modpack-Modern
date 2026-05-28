@@ -1,21 +1,21 @@
 {
-	"name": "Beneath Crops",
+	"name": "Beneathの作物",
 	"category": "tfc:beneath",
 	"icon": "tfg:textures/item/cassava_product.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "Beneath Crops",
-			"text": "The $(thing)Beneath$() may be a harsh environment, but it is still possible to find crops there. Beneath crops are incredibly resilient and can grow in extreme heat conditions making them useful for surviving below the Earth and on the surface."
+			"title": "Beneathの作物",
+			"text": "$(thing)Beneath$()は過酷な環境かもしれませんが、それでもそこで作物を育てることは可能です。Beneathの作物は驚くほど生命力が強く、極度の暑さの中でも育つため、地中での生活にも地表での生活にも役立ちます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops in the beneath behave just the same as crops on the surface, they have hydration, temperature, and nutrient requirements. You can even plant them in $(thing)Greenhouses.$()$(br2)An important concern when planting crops in the Beneath is that crops require a light level of 12, which isnt provided by the Beneath's natural light. To solve this problem, you can utilize $(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() or any other available light source."
+			"text": "Beneathの作物は地上の作物と全く同じように振る舞い、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)Beneathで作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、地下の自然光ではこれを満たすことができません。この問題を解決するには、$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() や、その他の利用可能な光源を活用しましょう。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)ピーナッツ$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)ブラックストーン豆$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -139,8 +139,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "peanut",
-			"title": "Peanut",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Peanuts can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition"
+			"title": "ピーナッツ",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)ピーナッツは$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材です"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "黒石豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)ブラックストーン豆は$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材ですが、加熱調理する必要があります！"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,14 +363,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Beans$() grow in PLACEHOLDER.",
+			"text": "$(thing)Wild Blackstone Beans$() grow in PLACEHOLDER.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "ghost_pepper",
-			"title": "Ghost Pepper",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Ghost Peppers can be eaten for $(thing)Vegetable$() nutrition. They are also a common snack among the inhabitants of the Beneath."
+			"title": "ゴーストペッパー",
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): 窒素$(br2)ゴーストペッパーは$(thing)野菜$()系の栄養を取ることができる食材です。また、Beneathの住人の間では一般的なおやつでもあります。"
 		},
 		{
 			"type": "tfc:multimultiblock",
