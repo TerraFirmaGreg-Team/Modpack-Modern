@@ -615,5 +615,49 @@ function registerTFGMedicineRecipes(event) {
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.LV])
 	})
+
+	//#endregion
+	//#region Capsules
+	
+	/**
+	 * Function to generate capsule recipes.
+	 * @param event
+	 * @param {Internal.Ingredient} inputItem
+	 * @param {Internal.Item} outputItem
+	 */
+	function generateCapsules(event, inputItem, outputItem) {
+		event.recipes.gtceu.canner(`tfg:gtceu/canner/${global.linuxUnfucker(outputItem)}`)
+			.itemOutputs(outputItem)
+			.itemInputs('tfg:empty_capsule', inputItem)
+			.inputFluids('gtceu:phenol 200')
+			.duration(20 * 10)
+			.EUt(GTValues.VA[GTValues.LV]);
+	};
+
+	// Parasiticide
+	generateCapsules(event, '#tfg:antiparasitic_ingredients', 'tfg:parasiticide_capsule');
+	// Detox
+	generateCapsules(event, '#tfg:detox_ingredients', 'tfg:detox_capsule');
+	// Nanofiltration
+	generateCapsules(event, '#tfg:filtering_ingredients', 'tfg:nanofiltration_capsule');
+
+	//#endregion
+	//#region Ingredients
+
+	event.recipes.gtceu.forming_press('tfg:gtceu/forming_press/empty_capsule_from_crude_gelatin')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('tfg:empty_capsule')
+		.itemInputs('tfg:food/crude_gelatin', 'gtceu:sticky_resin', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
+		.duration(20 * 30)
+		.EUt(GTValues.VA[GTValues.LV]);
+
+	event.recipes.gtceu.forming_press('tfg:gtceu/forming_press/empty_capsule_from_gelatin')
+		.notConsumable('gtceu:pill_casting_mold')
+		.itemOutputs('10x tfg:empty_capsule')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Gelatin, 1), 'gtceu:sticky_resin', ChemicalHelper.get(TagPrefix.dust, GTMaterials.TricalciumPhosphate, 1))
+		.duration(20 * 30)
+		.cleanroom(CleanroomType.STERILE_CLEANROOM)
+		.EUt(GTValues.VA[GTValues.HV]);
+
 	//#endregion
 }

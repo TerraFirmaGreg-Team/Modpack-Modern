@@ -58,6 +58,7 @@ function registerTFGFoodItems(event) {
 				.tag('tfc:foods')
 				.tag('tfg:space_food')
 				.tag('tfg:foods/freeze_dried_fruits')
+				.tag('tfg:foods/microplastics')
 				.food(food => food.hunger(1).saturation(1)
 					.eaten(ctx => {
 						if (ctx.player) {

@@ -551,6 +551,15 @@ global.TFG_CREATE_GENERIC_FOOD_ITEM = /** @type {TFGCreateGenericFoodItem[]} */ 
 		},
 		returnItem: 'gtceu:polyethylene_foil',
 		tags: ['tfc:foods/usable_in_jam_sandwich', 'tfc:foods/usable_in_sandwich', 'tfg:foods/usable_in_meal_bag', 'tfc:foods/dairy', 'tfg:foods/microplastics']
+	},
+	// Crude Gelatin
+	{
+		id: 'tfg:food/crude_gelatin',
+		texture: 'tfg:item/food/crude_gelatin',
+		nutrition: {
+			decay: 0.5
+		},
+		inedible: true
 	}
 	// #endregion
 ]);

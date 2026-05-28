@@ -51,6 +51,7 @@ function registerTFGFoodData(event) {
 			food.hunger(4);
 			food.saturation(fruit.saturation);
 			food.water(0);
+			food.microplastics(0.5);
 			food.fruit(fruit.fruit);
 			food.decayModifier(fruit.decay);
 		});
@@ -85,7 +86,7 @@ function registerTFGFoodData(event) {
 		food.saturation(1);
 	});
 
-	// Fruit tree products are registered in core. Data is added here.
+	// Food Items registered in core.
 	// Lavacado
 	event.foodItem('tfg:food/lavacado', (food) => {
 		food.hunger(4.0);
@@ -101,6 +102,15 @@ function registerTFGFoodData(event) {
 		food.water(15);
 		food.fruit(1.5);
 		food.saturation(1);
+	});
+
+	// Fly Agaric
+	event.foodItem('tfg:food/fly_agaric', (food) => {
+		food.hunger(4.0);
+		food.decayModifier(2.1);
+		food.water(2);
+		food.vegetables(1.0);
+		food.nauseating(2.0);
 	});
 
 	// Eggs
@@ -161,6 +171,19 @@ function registerTFGFoodData(event) {
 			effect.amplifier(2);
 			effect.chance(0.25);
 			effect.duration(1200);
+		});
+	});
+
+	// Muddy Water
+	event.drinkable('tfg:muddy_water', (data) => {
+		data.thirst(10);
+		data.food(food => {
+			food.parasites(0.25);
+			food.nauseating(10);
+		});
+		data.effect("tfc:thirst", (effect) => {
+			effect.chance(1);
+			effect.duration(20*10);
 		});
 	});
 

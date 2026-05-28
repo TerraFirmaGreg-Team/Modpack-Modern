@@ -1640,8 +1640,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.aged_alcohol.title}"
-			x: 3.0d
-			y: 6.5d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1661,8 +1661,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.pills.title}"
-			x: 3.0d
-			y: 4.5d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1683,7 +1683,7 @@
 			}]
 			title: "{quests.tfg_tips.tablets.title}"
 			x: 4.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1703,8 +1703,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.salvo.title}"
-			x: 4.0d
-			y: 6.0d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["128483FFDC8277A0"]
@@ -2300,8 +2300,30 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.powders.title}"
-			x: 2.0d
-			y: 4.0d
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["28333A7852497C4D"]
+			description: ["{quests.tfg_tips.capsules.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			id: "6C5EE7CF11503A5C"
+			subtitle: "{quests.tfg_tips.capsules.subtitle}"
+			tasks: [{
+				id: "0501ECA20153DC15"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:medicine/capsules)"
+					}
+				}
+				title: "{quests.tfg_tips.capsules.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.capsules.title}"
+			x: 4.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
