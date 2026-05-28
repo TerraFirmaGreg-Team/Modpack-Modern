@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It is constructed from Hellbricks, $(l:beneath/ores_and_minerals#cursecoal)Anthracite$(), and Pyroxenite Aqueducts."
+			"text": "The $(thing)Hellforge$() is a gratuitously large forge, with high capacity for fuel, products, and heating. It can heat up to nine $(l:mechanics/crucible)Crucibles$() at a time, and doesn't require sky access either!"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:beneath/ores_and_minerals#cursecoal)Anthracite$() piles, which then may be lit to start the forge."
+			"text": "The Hellforge requires lava to flow in aqueducts in its four corners, as well as 21 hellbricks. The 3x3 center must be filled with $(l:mechanics/charcoal_pit)Charcoal Piles$() with 7 charcoal each, which then may be lit to start the forge."
 		},
 		{
 			"type": "patchouli:text",

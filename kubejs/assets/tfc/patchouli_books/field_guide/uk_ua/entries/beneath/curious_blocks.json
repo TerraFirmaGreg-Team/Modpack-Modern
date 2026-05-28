@@ -6,12 +6,12 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct",
 			"text": "Акведук з перексоніту дозволяє проводити лаву на будь-яку відстань."
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"recipe": "tfg:shapeless/hellbricks",
 			"text": "Пекельні цегли - це будівельні блоки, які також використовуються для Пекельної кузні."
 		},
 		{

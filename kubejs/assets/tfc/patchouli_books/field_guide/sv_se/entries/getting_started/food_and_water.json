@@ -1,0 +1,256 @@
+{
+    "name": "Food and Water",
+    "category": "tfc:getting_started",
+    "icon": "tfc:textures/item/food/orange.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Basics",
+            "anchor": "basics",
+            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:getting_started/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:mechanics/decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thirst",
+            "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
+            "title": "Thirst"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "minecraft:air",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "Water Safety",
+            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
+            "enable_visualize": false
+        },
+        {
+            "type": "tfc:knapping_recipe",
+            "recipe": "tfc:clay_knapping/jug",
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$()."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrition_screen",
+            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "title": "Nutrition Screen"
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
+            ],
+            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nutrients",
+            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:mechanics/pot#soup)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
+            "title": "Nutrients"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "average_nutrients",
+            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+        },
+        {
+            "title": "Fruit",
+            "type": "patchouli:text",
+            "anchor": "fruit",
+            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+        },
+        {
+            "title": "Vegetables",
+            "type": "patchouli:text",
+            "anchor": "vegetables",
+            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+        },
+        {
+            "title": "Protein",
+            "type": "patchouli:text",
+            "anchor": "protein",
+            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+        },
+        {
+            "title": "Grain",
+            "type": "patchouli:text",
+            "anchor": "grain",
+            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+        },
+        {
+            "title": "Dairy",
+            "type": "patchouli:text",
+            "anchor": "dairy",
+            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "contaminants",
+            "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
+            "title": "Contaminants"
+        },
+        {
+            "title": "Toxins",
+            "type": "patchouli:text",
+            "anchor": "toxins",
+            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+        },
+        {
+            "title": "Parasites",
+            "type": "patchouli:text",
+            "anchor": "parasites",
+            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+        },
+        {
+            "title": "Microplastics",
+            "type": "patchouli:text",
+            "anchor": "microplastics",
+            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transient_effects",
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
+            "title": "Transient Effects"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooling_transient_effect",
+            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warming_transient_effect",
+            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "quenching_transient_effect",
+            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bolstering_transient_effect",
+            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hearty_transient_effect",
+            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rejuvenating_transient_effect",
+            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_transient_effect",
+            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blazing_transient_effect",
+            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radiating_transient_effect",
+            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nauseating_transient_effect",
+            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)Gives the player the $(n)Nausea$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 12sec.$()$(li)Gives the player the $(n)Hunger VI$() effect with 10 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parching_transient_effect",
+            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadly_transient_effect",
+            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fulfilling_transient_effect",
+            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)Gives the player the $(n)Resistance$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 15min.$()$(li)Gives the player the $(n)Instant Health$() effect. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 2.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sugary_transient_effect",
+            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)Gives the player the $(n)Weakness$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(n)Speed$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spicy_transient_effect",
+            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:getting_started/size_and_weight",
+                "tfc:mechanics/animal_husbandry",
+                "tfc:mechanics/crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:mechanics/hydration",
+                "tfc:mechanics/decay",
+                "tfc:firmalife/differences_from_tfc",
+                "tfc:beneath/beneath_crops",
+                "tfc:beneath/beneath_wild_fruits",
+                "tfc:tfg_ores/hazards"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10
+}

@@ -6,12 +6,12 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"recipe": "tfg:shaped/blackstone_aqueduct",
 			"text": "輝石岩引水道可以輸送熔岩至任何距離。"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"recipe": "tfg:shapeless/hellbricks",
 			"text": "地獄磚是一種建築磚塊，也可用於地獄熔爐。"
 		},
 		{

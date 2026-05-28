@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Contenido",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Cassava$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Peanut$()$(li)$(l:tfc:beneath/beneath_crops#beans)Blackstone Beans$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Ghost Pepper$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Beans",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
+			"title": "Blackstone Beans",
+			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Beans$() grow in PLACEHOLDER.",
+			"text": "$(thing)Wild Blackstone Beans$() grow in PLACEHOLDER.",
 			"enable_visualize": false
 		},
 		{

@@ -1,5 +1,6 @@
 {
   "ftbteams.accept": "Akceptuj ✔",
+  "ftbteams.already_in_party": "Już jesteś w drużynie!",
   "ftbteams.cant_edit": "Nie możesz edytować %s!",
   "ftbteams.cant_kick_owner": "Nie można wyrzucić właściciela!",
   "ftbteams.create_party": "Utwórz drużynę",
@@ -29,6 +30,7 @@
   "ftbteams.info.owner.none": "Brak",
   "ftbteams.info.short_id": "Krótkie ID drużyny: %s",
   "ftbteams.list": "Wszystkie drużyny FTB: %s",
+  "ftbteams.message.deleted_server_team": "Usunięto drużynę serwerową '%s'!",
   "ftbteams.message.demoted": "Zdegradowano %s do członka!",
   "ftbteams.message.invited": "Zaproszono %s",
   "ftbteams.message.joined": "%s dołączył do twojej drużyny!",
