@@ -146,7 +146,7 @@
 			},
 			{
 				"type": "species:spectre",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},
