@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарні перці$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарніий перець$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Квасоля",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nКвасолю можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення. Однак її спершу потрібно приготувати!"
+			"title": "Чорнокам’яна квасоля",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nЧорнокам’яну квасолю можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення. Однак її спершу потрібно приготувати!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дика квасоля$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дика чорнокам’яна квасоля$() росте в PLACEHOLDER.",
 			"enable_visualize": false
 		},
 		{
