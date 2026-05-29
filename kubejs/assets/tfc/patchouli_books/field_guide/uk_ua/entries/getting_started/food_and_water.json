@@ -7,25 +7,25 @@
             "type": "patchouli:text",
             "title": "Індекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основи$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Спрага$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Екран харчування$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Поживні речовини$()$(li2)$(l:getting_started/food_and_water#fruit)Фрукти$()$(li2)$(l:getting_started/food_and_water#vegetables)Овочі$()$(li2)$(l:getting_started/food_and_water#protein)Білки$()$(li2)$(l:getting_started/food_and_water#grain)Зернові$()$(li2)$(l:getting_started/food_and_water#dairy)Молочні продукти$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()$(li2)$(l:getting_started/food_and_water#toxins)Токсини$()$(li2)$(l:getting_started/food_and_water#parasites)Паразити$()$(li2)$(l:getting_started/food_and_water#microplastics)Мікропластик$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основи$()  \n$(li)$(bold)$(l:getting_started/food_and_water#thirst)Спрага$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Екран харчування$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Поживні речовини$()  \n$(li2)$(l:getting_started/food_and_water#fruit)Фрукти$()  \n$(li2)$(l:getting_started/food_and_water#vegetables)Овочі$()  \n$(li2)$(l:getting_started/food_and_water#protein)Білки$()  \n$(li2)$(l:getting_started/food_and_water#grain)Зернові$()  \n$(li2)$(l:getting_started/food_and_water#dairy)Молочні продукти$()  \n$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()  \n$(li2)$(l:getting_started/food_and_water#toxins)Токсини$()  \n$(li2)$(l:getting_started/food_and_water#parasites)Паразити$()  \n$(li2)$(l:getting_started/food_and_water#microplastics)Мікропластик$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Тимчасові ефекти$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Охолодження$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Зігрівання$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Вгамування спраги$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Зміцнення$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Поживність$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Омолодження$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Заморожування$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Взаймання$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Випромінювання$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Нудота$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Зневоднення$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Смертельність$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Насичення$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Солодкість$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Гострота$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Тимчасові ефекти$()  \n$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Охолодження$()  \n$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Зігрівання$()  \n$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Втамування  спраги$()  \n$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Зміцення$()  \n$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Поживність$()  \n$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Омолодження$()  \n$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Замороження$()  \n$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Палкість$()  \n$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Випромінювання$()  \n$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Нудота$()  \n$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Зневоднення$()  \n$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Смертельність$()  \n$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Насичення$()  \n(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Солодкістьй$()  \n$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Гострота$()"
         },
         {
             "type": "patchouli:text",
             "title": "Основи",
             "anchor": "basics",
-            "text": "У TerraFirmaCraft тобі доведеться стежити не лише за голодом, але й за спрагою. Голод працює схоже на ванілу. Більшість видів їжі відновлюють близько п'ятої частини твоєї шкали голоду. Деякі продукти можуть відновлювати трохи менше, як-от $(thing)Коріння рогозу$(). Споживання їжі також відновлює $(thing)Насичення$() — це те, наскільки ти ситий. Опустошення шкали їжі або води призведе до сповільнення рухів та отримання шкоди. Смерть не скидає твої поживні речовини та шкідливі речовини."
+            "text": "У TerraFirmaCraft тобі доведеться стежити не лише за голодом, але й за спрагою. Голод працює схоже на ванілу. Більшість видів їжі відновлюють близько п'ятої частини твоєї шкали голоду. Деякі продукти можуть відновлювати трохи менше, як-от $(thing)коріння рогозу$(). Споживання їжі також відновлює $(thing)насичення$() — це те, наскільки ти ситий. Опустошення шкали їжі або води призведе до сповільнення рухів та отримання шкоди. Смерть не скидає твої поживні речовини та шкідливі речовини."
         },
         {
             "type": "patchouli:text",
-            "text": "Деякі продукти дуже ситні, тому вони довше захищають тебе від голоду, тоді як інші мають лише короткочасний ефект.$(br2)Ти втрачатимеш голод просто під час звичайного ігрового процесу. Шкала голоду вичерпується швидше, якщо ти бігаєш, плаваєш або стаєш $(l:getting_started/size_and_weight#overburdening)Перевантаженим$(). Інформацію про $(thing)Насичення$(), $(thing)Воду$(), а також $(thing)Поживні речовини$(), які дає їжа, можна побачити, якщо навести на неї курсор у своєму інвентарі. Натискання $(item)$(k:key.sneak)$() відкриває повну підказку."
+            "text": "Деякі продукти дуже ситні, тому вони довше захищають тебе від голоду, тоді як інші мають лише короткочасний ефект.$(br2)Ти втрачатимеш голод просто під час звичайного ігрового процесу. Шкала голоду вичерпується швидше, якщо ти бігаєш, плаваєш або стаєш $(l:getting_started/size_and_weight#overburdening)перевантаженим$(). Інформацію про $(thing)насичення$(), $(thing)воду$(), а також $(thing)поживні речовини$(), які дає їжа, можна побачити, якщо навести на неї курсор у своєму інвентарі. Натискання $(item)$(k:key.sneak)$() відкриває повну підказку."
         },
         {
             "type": "patchouli:text",
-            "text": "Уся їжа має підказку з цією інформацією. Вона містить $(l:mechanics/decay)Дату псування$() продукту, яку можна відтермінувати за допомогою консервації. Переглядаючи ці дані, важливо розуміти, що не вся їжа має поживну цінність. Наприклад, $(l:mechanics/bread)Тісто$() вважається їжею, але воно не має показників поживності, насичення чи води. Його споживання не принесе тобі жодної користі."
+            "text": "Уся їжа має підказку з цією інформацією. Вона містить $(l:mechanics/decay)дату псування$() продукту, яку можна відтермінувати за допомогою консервації. Переглядаючи ці дані, важливо розуміти, що не вся їжа має поживну цінність. Наприклад, $(l:mechanics/bread)тісто$() вважається їжею, але воно не має показників поживності, насичення чи води. Його споживання не принесе тобі жодної користі."
         },
         {
             "type": "patchouli:text",
@@ -34,7 +34,7 @@
         {
             "type": "patchouli:text",
             "anchor": "thirst",
-            "text": "Спрага — це рівень води у твоєму тілі. Вона вичерпується приблизно з такою ж швидкістю, як і голод. За високих температур або у разі великих витрат голоду твоя спрага зникатиме швидше. На щастя, пиття $(thing)Прісної води$() відновлює її рівень. Це можна зробити, натиснувши $(item)$(k:key.use)$() на блоці води. Пиття солоної води призводить до втрати спраги і навіть може накласти на тебе ефект $(thing)Спраги$(), який зневоднить тебе ще сильніше.",
+            "text": "Спрага — це рівень води у твоєму тілі. Вона вичерпується приблизно з такою ж швидкістю, як і голод. За високих температур або у разі великих витрат голоду твоя спрага зникатиме швидше. На щастя, пиття $(thing)свіжої води$() відновлює її рівень. Це можна зробити, натиснувши $(item)$(k:key.use)$() на блоці води. Пиття солоної води призводить до втрати спраги і навіть може накласти на тебе ефект $(thing)спраги$(), який зневоднить тебе ще сильніше.",
             "title": "Спрага"
         },
         {
@@ -67,13 +67,13 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Ти також можеш пити з інших місткостей, як-от $(l:waterflasks)Фляг$() або $(l:mechanics/glassworking)Скляних пляшок$()."
+            "text": "Ти також можеш пити з інших місткостей, як-от $(l:waterflasks)фляги$() або $(l:mechanics/glassworking)скляних пляшок$()."
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "В $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() екран харчування відображає розлогу інформацію про твоє здоров'я. $(li)Там є головний графік, що показує твої $(l:getting_started/food_and_water#nutrients)Поживні речовини$()$()$(li)Бічний графік, який демонструє твої $(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()$()$(li)Таблиця з показниками твого здоров'я.$()$(li)А також перемикач для перевірки стану харчування твоєї команди.$()$(br)$(item)Утримуй $(k:key.sneak)$() над будь-яким елементом на екрані, щоб переглянути детальнішу інформацію.$()",
-            "title": "Nutrition Screen"
+            "text": "В $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() екран харчування відображає розлогу інформацію про твоє здоров'я. $(li)Там є головний графік, що показує твої $(l:getting_started/food_and_water#nutrients)поживні речовини$()$()$(li)Бічний графік, який демонструє твої $(l:getting_started/food_and_water#contaminants)шкідливі речовини$()$()$(li)Таблиця з показниками твого здоров'я.$()$(li)А також перемикач для перевірки стану харчування твоєї команди.$()$(br)$(item)Утримуй $(k:key.sneak)$() над будь-яким елементом на екрані, щоб переглянути детальнішу інформацію.$()",
+            "title": "Вікно харчування"
         },
         {
             "type": "patchouli:image",
@@ -86,156 +86,156 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "Існує п'ять поживних речовин, які можна отримати з їжі: $(l)$(a)Фрукти$()$(), $(l)$(2)Овочі$()$(), $(l)$(c)Білки$()$(), $(l)$(6)Зернові$()$() та $(l)$(5)Молочні продукти$()$(). Споживання їжі дає тобі її поживні речовини. Такі страви, як $(l:mechanics/pot#soup)Суп$(), поєднують у собі більше корисних елементів за один прийом. Часто страви переймають поживні речовини безпосередньо зі своїх інгредієнтів. Це важливо, оскільки страви, які ти з'їв деякий час тому, більше не зараховуються до твого поточного рівня харчування.",
-            "title": "Nutrients"
+            "text": "Існує п'ять поживних речовин, які можна отримати з їжі: $(l)$(a)Фрукти$()$(), $(l)$(2)Овочі$()$(), $(l)$(c)Білки$()$(), $(l)$(6)Зернові$()$() та $(l)$(5)Молочні продукти$()$(). Споживання їжі дає тобі її поживні речовини. Такі страви, як $(l:mechanics/pot#soup)суп$(), поєднують у собі більше корисних елементів за один прийом. Часто страви переймають поживні речовини безпосередньо зі своїх інгредієнтів. Це важливо, оскільки страви, які ти з'їв деякий час тому, більше не зараховуються до твого поточного рівня харчування.",
+            "title": "Поживні речовини"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "Загальний показник твоїх поживних речовин визначає твоє максимальне здоров'я. За максимального значення ти можеш отримати $(l)$(c)30 сердець$()$(), тоді як мінімальне становить $(l)$(c)3 серця$()$().$(br)Твій середній рівень поживних речовин також впливає на таке:$()$(li)$(bold)Середнє значення >55% ↴$()$()$(italic)$(li2)Збільшує пасивну регенерацію здоров'я на 50%.$()$()$(italic)$(li2)Уповільнює швидкість прогресування $(l:tfg_ores/hazards#medicine)Захворювань$() на 25%.$()$()$(italic)$(li2)Збільшує швидкість пасивного лікування захворювань на 50%.$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)Середнє значення >85% ↴$()$()$(italic)$(li2)Збільшує пасивну регенерацію здоров'я на 100%.$()$()$(italic)$(li2)Уповільнює швидкість прогресування $(l:tfg_ores/hazards#medicine)Захворювань$() на 50%.$()$()$(italic)$(li2)Збільшує швидкість пасивного лікування захворювань на 100%.$()$()"
         },
         {
             "title": "Фрукти",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(a)Фрукти$()$() як поживну речовину можна знайти здебільшого у $(l:the_world/wild_fruits)плодових рослинах$(), наприклад, у ягідних кущах та фруктових деревах. Помітним винятком із цього є $(l:mechanics/crops#pumpkin)гарбузи$() та $(l:mechanics/crops#pumpkin)кавуни$(), які за своєю поживністю належать до фруктів.$(br2)Збільшення рівня фруктів призводить до таких ефектів:$()$(li)$(bold)Середнє значення >55% → $()$()$(italic)Зменшує витрати води на 25%.$()$(li)$(bold)Середнє значення >85% → $()$()$(italic)Збільшує швидкість добування на 30%.$()"
         },
         {
             "title": "Овочі",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)Овочі$()$() можна знайти майже в кожній $(l:mechanics/crops)сільськогосподарській культурі$().$(br2)Збільшення рівня овочів призводить до таких ефектів:$()$(li)$(bold)Рівень >55% → $()$()$(italic)Скасовує штраф до швидкості добування під водою.$()$(li)$(bold)Рівень >85% → $()$()$(italic)Накладає ефект підводного дихання.$()"
         },
         {
             "title": "Білки",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)Білки$()$() можна отримати з м'яса $(l:the_world/wild_animals)тварин$(). Їх також можна знайти в деяких культурах, наприклад у $(thing)бобах$().$(br2)Збільшення рівня білків призводить до таких ефектів:$()$(li)$(bold)Рівень >55% → $()$()$(italic)Зменшує множник утоми на 25%.$()$(li)$(bold)Рівень >85% → $()$()$(italic)Дозволяє переносити один додатковий величезний та важкий предмет (як-от запечатану бочку) без $(l:getting_started/size_and_weight#overburdening)перевантаження$().$()"
         },
         {
             "title": "Зернові",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)Зернові$()$() можна знайти у злакових культурах, як-от $(l:mechanics/crops#barley)ячмінь$(). Процес переробки зерна описано на сторінці $(l:firmalife/bread)Хліб$(). Деякі коренеплоди також вважаються зерновими.$(br2)Збільшення рівня зернових призводить до таких ефектів:$()$(li)$(bold)Рівень >55% → $()$()$(italic)Дає 5% бонус до швидкості бігу.$()$(li)$(bold)Рівень >85% → $()$()$(italic)Дає 15% бонус до швидкості бігу.$()"
         },
         {
             "title": "Молочні",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)Молочні продукти$()$() можна отримати з $(thing)Молока$(), яке дають $(l:mechanics/animal_husbandry#dairy_animals)Молочні тварини$(). Процес переробки та споживання молока описано на сторінці $(l:firmalife/cheese)Молочні продукти$().$(br2)Збільшення рівня молочних продуктів призводить до таких ефектів:$()$(li)$(bold)Рівень >55% → $()$()$(italic)Накладає ефект $(thing)Невагомість I$().$()$(li)$(bold)Рівень >85% → $()$()$(italic)Накладає ефект $(thing)Невагомість IV$().$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
+            "text": "Окрім поживних речовин, $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() також додає шкідливі речовини. Існує три типи шкідливих речовин, які можна отримати з їжі: $(l)$(d)Токсини$()$(), $(l)$(4)Паразити$()$() та $(l)$(3)Мікропластик$()$(). Шкідливі речовини можуть переноситися в готові страви та накопичуватися всередині твого тіла.",
             "title": "Забруднювачі"
         },
         {
             "title": "Токсини",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+            "text": "$(l)$(d)Токсини$()$() потрапляють в організм із певних небезпечних культур та м'яса. Рівень токсинів знижується природним шляхом зі швидкістю 3% на день. Використовуй $(item)Капсули детоксикації$(), щоб активно $(l:tfg_tips/mob_effects_glossary#cure_toxins)Виводити токсини$().$(br2)Збільшення рівня токсинів призводить до таких ефектів:$()$(li)$(bold)Рівень >0% → $()$()$(italic)За будь-якого нового підвищення: 25% шанс отримати випадковий небезпечний ефект на 10 секунд.$()$(li)$(bold)Рівень >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Смерть.$()"
         },
         {
             "title": "Паразити",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)Паразити$()$() з'являються через споживання деяких видів сирого м'яса або пиття грязної води. Використовуй $(item)Протипаразитарні капсули$(), щоб активно $(l:tfg_tips/mob_effects_glossary#cure_parasites)Знищувати паразитів$().$(br2)Збільшення рівня паразитів призводить до таких ефектів:$()$(li)$(bold)Рівень >10% → $()$()$(italic)20% шанс автоматичного збільшення рівня на 10% щодня, максимум до 60%.$()$(li)$(bold)Рівень >33% → $()$()$(italic)Збільшує пасивну втому на 25%.$()$(li)$(bold)Рівень >66% → $()$()$(italic)Збільшує пасивну втому на 50%.$()"
         },
         {
             "title": "Мікропластик",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)Мікропластик$()$() потрапляє в організм через споживання їжі, яка запакована у пластик. Рівень мікропластику знижується природним шляхом зі швидкістю 1% на день. Використовуй $(item)капсули нанофільтрації$(), щоб активно $(l:tfg_tips/mob_effects_glossary#cure_microplastics)виводити мікропластик$().$(br)Збільшення рівня мікропластику призводить до таких ефектів:$()$(li)$(bold)Рівень >33% → $()$()$(italic)Збільшує множник втрати спраги за високих температур на 25%$()$(li)$(bold)Рівень >66% ↴$()$()$(italic)$(li2)Збільшує множник втрати спраги за високих температур на 50%.$()$()$(italic)$(li2)За будь-якого нового підвищення: 5% шанс отримати $(l:tfg_ores/hazards#Carcinogens)Рак$().$()$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
-            "title": "Transient Effects"
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() також додає $(item)тимчасові ефекти$(). Тимчасові ефекти існують для того, щоб переносити бафи/дебафи з інгредієнтів у страви. Тимчасові ефекти можна комбінувати й споживати. Однак вони не накопичуються в гравцеві — вони одразу споживаються.$(br) Сила ефекту залежить від значення поживної речовини. Втім, спосіб визначення сили не є однаковим для кожного типу.$()",
+            "title": "Тимчасові ефекти"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) Охолодження$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#cooling)охолодження$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 хвилин.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) Зігрівання$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#warming)зігрівання$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 хвилин.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) Втамування спраги$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#quenched)втамування спраги$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 хвилин.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "bolstering_transient_effect",
-            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ffe417)♡$()$(bold) Зміцнення$()$(li)Накладає на тебе ефект $(n)поглинання$() на 8 хвилин. Рівень ефекту масштабується залежно від кількості очок поживної речовини, а максимальний рівень становить 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "hearty_transient_effect",
-            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ff171b)♡$()$(bold) Ситість$()$(li)Накладає на тебе ефект $(n)підвищення здоров'я$() на 8 хвилин. Рівень ефекту масштабується залежно від кількості очок поживної речовини, а максимальний рівень становить 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+            "text": "$(#ff178f)💕$()$(bold) Омолодження$()$(li)Накладає на тебе ефект $(n)регенерації$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 3 хвилини.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) Заморожування$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#freezing)заморожування$() тривалістю 5 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) Палкість$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#blazing)палкість$() тривалістю 5 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) Випромінювання$()$(li)Накладає на тебе ефект $(n)світіння$() на 24 секунди.$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#instant_radiation)радіоактивності$() на 24 секунди. Рівень ефекту масштабується залежно від кількості очок поживної речовини, а максимальний рівень становить 5.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nauseating_transient_effect",
-            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)Gives the player the $(n)Nausea$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 12sec.$()$(li)Gives the player the $(n)Hunger VI$() effect with 10 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#078f00)🤢$()$(bold) Нудота$()$(li)Накладає на тебе ефект $(n)нудоти$() тривалістю 5 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 12 секунд.$()$(li)Накладає на тебе ефект $(n)Голоду VI$() тривалістю 10 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 секунд.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+            "text": "🧂$(bold) Зневоднення$()$(li)Накладає на тебе ефект $(n)спраги$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 8 хвилин.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) Смертельність$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#final_moments)останні хвилини$() на 8 хвилин. Кожне додаткове очко поживної речовини скорочує цю тривалість удвічі.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "fulfilling_transient_effect",
-            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)Gives the player the $(n)Resistance$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 15min.$()$(li)Gives the player the $(n)Instant Health$() effect. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 2.$()"
+            "text": "$(#551913)🍖$()$(bold) Насичення$()$(li)Накладає на тебе ефект $(n)опору$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 15 хвилин.$()$(li)Накладає на тебе ефект $(n)Миттєвого зцілення$(). Рівень ефекту масштабується залежно від кількості очок поживної речовини, а максимальний рівень становить 2.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "sugary_transient_effect",
-            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)Gives the player the $(n)Weakness$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(n)Speed$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#837447)🍰$()$(bold) Солодкість$()$(li)Накладає на тебе ефект $(n)слабкості$() тривалістю 15 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 5 хвилин.$()$(li)Накладає на тебе ефект $(n)Швидкості$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 хвилин.$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) Гострота$()$(li)Накладає на тебе ефект $(n)спраги$() тривалістю 15 секунд за кожне 1 очко поживної речовини. Максимальна тривалість становить 5 хвилин.$()$(li)Накладає на тебе ефект $(l:tfg_tips/mob_effects_glossary#warming)Зігрівання$() тривалістю 1 хвилина за кожне 1 очко поживної речовини. Максимальна тривалість становить 30 хвилин.$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "Додаткове читання",
             "anchor": "relations",
             "entries": [
                 "tfc:getting_started/size_and_weight",

@@ -1,16 +1,24 @@
 {
+	"bar.species.cruncher": "%sの空腹度",
 	"block.species.alphacene_moss_block": "グラシアンのキャップ",
 	"block.species.alphacene_mushroom": "アルファキノコ",
+	"block.species.birtday_cake": "バートデーケーキ",
+	"block.species.bone_spike": "骨の棘",
 	"block.species.petrified_egg": "グーバーの卵",
 	"block.species.wraptor_egg": "ラプターの卵",
 	"enchantment.species.capacity": "容量増加",
+	"entity.species.deepfish": "ディープフィッシュ",
 	"entity.species.harpoon": "ハープーン",
 	"entity.species.wraptor": "ラプター",
 	"item.species.crankbow.fullness": "%s/%s",
+	"item.species.ghoul_spawn_egg": "グールのスポーンエッグ",
 	"item.species.harpoon": "ハープーン",
 	"item.species.music_disc_dial": "レコード",
 	"item.species.music_disc_lapidarian": "レコード",
 	"item.species.spectre_light.color": "色: ",
 	"item.species.spectre_light.dyeable": "染色可能",
-	"item.species.wraptor_spawn_egg": "ラプターのスポーンエッグ"
+	"item.species.wraptor_spawn_egg": "ラプターのスポーンエッグ",
+	"subtitles.block.species.wraptor_egg.hatch": "ラプターの卵が孵化する",
+	"subtitles.entity.species.spectre.attack": "Spectre clanks",
+	"subtitles.entity.species.springling.extend_finish": "Springling finishes extending"
 }

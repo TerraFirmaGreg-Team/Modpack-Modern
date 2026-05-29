@@ -7,12 +7,12 @@
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
 			"recipe": "tfg:shaped/blackstone_aqueduct",
-			"text": "Акведук з перексоніту дозволяє проводити лаву на будь-яку відстань."
+			"text": "Акведуки також можуть переносити лаву та інші рідини, що може бути корисним під час будівництва $(l:beneath/hellforge)пекельної кузні$()."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Пекельні цегли - це будівельні блоки, які також використовуються для Пекельної кузні."
+			"text": "Пекельні цегли — це будівельний блок, який також використовується для $(l:beneath/hellforge)пекельної кузні$()."
 		},
 		{
 			"type": "patchouli:spotlight",

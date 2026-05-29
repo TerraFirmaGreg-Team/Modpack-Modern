@@ -254,8 +254,8 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Фасоль",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Фасоль можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности. Однако перед употреблением её необходимо приготовить!"
+			"title": "Чернитная фасоль",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Чернитную фасоль можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности. Однако перед употреблением её необходимо приготовить!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикая Фасоль$() растёт в PLACEHOLDER.",
+			"text": "$(thing)Чернитная фасоль$() растёт в PLACEHOLDER.",
 			"enable_visualize": false
 		},
 		{

@@ -1,5 +1,5 @@
 {
-	"name": "Mob Effect Glossary",
+	"name": "Глосарій ефектів істот/гравця",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:splash_potion",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "This chapter is dedicated to describing custom mob effects in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Cooling$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Warming$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Quenched$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Detoxify$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Freezing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Blazing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Instant Radiation$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$()"
+			"text": "Цей розділ присвячений опису власних ефектів мобів у $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Охолодження$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Нагрівання$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Втамування спраги$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Лікування паразитів$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Детоксикація$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Фільтрація мікропластику$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Замороження$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Палаючий$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Миттєве випромінювання$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Останні миті$()"
 		},
 		{
 			"type": "patchouli:empty"
@@ -15,56 +15,56 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cooling",
-			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a minimum of $(n)5°C$()"
+			"text": "$(bold)$(9)Охолодження$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)охолоджує$() тебе до мінімальної температури $(n)5°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warming",
-			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a maximum of $(n)25°C$()"
+			"text": "$(bold)$(9)Зігрівання$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)зігріває$() тебе до максимальної температури $(n)25°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirsty$(). However, it does not prevent the Thirst effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)Втамування спраги$()$(li)Поки цей ефект активний, він запобігає природному зниженню рівня $(l:getting_started/food_and_water#thirst)води$(). Проте він не заважає однойменному ефекту «Спрага» вичерпувати твою шкалу.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Знищення паразитів$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#parasites)паразитів$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_toxins",
-			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Детоксикація$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#toxins)токсини$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_microplastics",
-			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Фільтрація мікропластику$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#microplastics)мікропластик$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "freezing",
-			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Заморожування$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)охолоджує$() тебе до небезпечно низької температури $(n)-20°C$(). Щоб вижити в таких умовах, рекомендується використовувати захисне спорядження."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blazing",
-			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)Палкість$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)зігріває$() тебе до небезпечно високої температури $(n)60°C$(). Щоб вижити в таких умовах, рекомендується використовувати захисне спорядження."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "instant_radiation",
-			"text": "$(bold)$(c)Instant Radiation$()$(li)This effect quickly damages the player with $(l:tfg_ores/hazards#Radioactive_materials)Radiation Damage$()"
+			"text": "$(bold)$(c)Миттєве випромінювання$()$(li)Цей ефект швидко завдає тобі шкоди через $(l:tfg_ores/hazards#Radioactive_materials)радіаційне ураження$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "final_moments",
-			"text": "$(bold)$(c)Final Moments$()$(li)This effect starts a timer that counts down your last few minutes. When the clock ends you die."
+			"text": "$(bold)$(c)Останні хвилини$()$(li)Цей ефект запускає таймер, який відлічує твої останні хвилини життя. Коли час закінчиться, ти помреш."
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Додаткове читання",
 			"anchor": "relations",
 			"entries": [
                 "tfc:getting_started/food_and_water",

@@ -1,27 +1,27 @@
 {
-    "name": "Food and Water",
+    "name": "食物与饮水",
     "category": "tfc:getting_started",
     "icon": "tfc:textures/item/food/orange.png",
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "物品索引",
+            "title": "索引",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)基础$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)口渴$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)营养界面$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)营养素$()$(li2)$(l:getting_started/food_and_water#fruit)水果$()$(li2)$(l:getting_started/food_and_water#vegetables)蔬菜$()$(li2)$(l:getting_started/food_and_water#protein)蛋白质$()$(li2)$(l:getting_started/food_and_water#grain)谷物$()$(li2)$(l:getting_started/food_and_water#dairy)乳制品$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)污染物$()$(li2)$(l:getting_started/food_and_water#toxins)毒素$()$(li2)$(l:getting_started/food_and_water#parasites)寄生虫$()$(li2)$(l:getting_started/food_and_water#microplastics)微塑料$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)瞬时效果$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)降温$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)升温$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)解渴$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)固本$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)强心$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)回春$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)冰冻$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)灼热$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)辐射$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)致呕$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)干渴$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)致命$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)饱腹$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)甜腻$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)辛辣$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "基础",
             "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "text": "在群峦传说中，你不仅需要管理饥饿值，还需要管理口渴值。饥饿机制与原版类似。大多数食物恢复大约五分之一的饥饿值。有些食物恢复得少一些，比如$(thing)香蒲根$()。进食也会恢复$(thing)饱食度$()，可以理解为你的饱腹程度。饥饿或水分耗尽会导致行动迟缓并受到伤害。死亡不会重置你的营养素或污染物。"
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:getting_started/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "有些食物非常饱腹，能让你更长时间不损失饥饿值，而有些食物的效果则比较短暂。$(br2)仅仅正常游戏就会让你损失饥饿值。如果你疾跑、游泳或变得$(l:getting_started/size_and_weight#overburdening)负担过重$()，饥饿消耗会更快。将鼠标悬停在食物上可以查看其$(thing)饱食度$()、$(thing)水分$()以及$(thing)营养素$()信息。按住$(item)$(k:key.sneak)$()可以显示完整提示框。"
         },
         {
             "type": "patchouli:text",

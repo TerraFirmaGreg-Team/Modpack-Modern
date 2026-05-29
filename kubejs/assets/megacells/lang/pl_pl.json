@@ -1,4 +1,6 @@
 {
+  "block.megacells.16m_crafting_storage": "MEGA Magazyn rzemieślniczy 16M",
+  "block.megacells.64m_crafting_storage": "MEGA Magazyn rzemieślniczy 64M",
   "block.megacells.mega_crafting_monitor": "Monitor rzemieślniczy MEGA",
   "block.megacells.mega_energy_cell": "Supergęste ogniwo energetyczne",
   "block.megacells.mega_interface": "Interfejs MEGA",
@@ -18,7 +20,16 @@
   "item.megacells.compression_card": "Karta kompresji",
   "item.megacells.decompression_module": "Moduł dekompresji MEGA",
   "item.megacells.decompression_pattern": "Wzór dekompresji",
+  "item.megacells.fluid_storage_cell_16m": "MEGA Magazyn płynów 16M",
+  "item.megacells.fluid_storage_cell_1m": "MEGA Magazyn płynów 1M",
+  "item.megacells.fluid_storage_cell_4m": "MEGA Magazyn płynów 4M",
+  "item.megacells.fluid_storage_cell_64m": "MEGA Magazyn płynów 64M",
   "item.megacells.greater_energy_card": "Większa karta energetyczna",
+  "item.megacells.item_storage_cell_16m": "MEGA Magazyn przedmiotów 16M",
+  "item.megacells.item_storage_cell_1m": "MEGA Magazyn przedmiotów 1M",
+  "item.megacells.item_storage_cell_256m": "MEGA Magazyn przedmiotów 256M",
+  "item.megacells.item_storage_cell_4m": "MEGA Magazyn przedmiotów 4M",
+  "item.megacells.item_storage_cell_64m": "MEGA Magazyn przedmiotów 64M",
   "item.megacells.sky_steel_ingot": "Sztabka podniebnej stali",
   "text.autoconfig.megacells.title": "MEGA Cells"
 }
