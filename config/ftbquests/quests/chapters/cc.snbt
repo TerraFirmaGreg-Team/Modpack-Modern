@@ -855,12 +855,12 @@
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.gregtech_peripherals.desc}"]
 			id: "3F927702B5072A68"
-			title: "{quests.computer.gregtech_peripherals.title}"
 			tasks: [{
 				id: "3EC7C1131D382607"
 				title: "{quests.computer.gregtech_peripherals.title}"
 				type: "checkmark"
 			}]
+			title: "{quests.computer.gregtech_peripherals.title}"
 			x: 7.0d
 			y: 2.0d
 		}
@@ -870,12 +870,12 @@
 			hide_dependency_lines: true
 			id: "10F49D1DCE7E102C"
 			subtitle: "{quests.computer.central_monitor.subtitle}"
-			title: "{quests.computer.central_monitor.title}"
 			tasks: [{
 				id: "7F69ADCFE210151F"
 				item: "gtceu:central_monitor"
 				type: "item"
 			}]
+			title: "{quests.computer.central_monitor.title}"
 			x: 6.5d
 			y: -0.5d
 		}
@@ -885,12 +885,12 @@
 			hide_dependency_lines: true
 			id: "21C7AC26BC3FD4E7"
 			subtitle: "{quests.computer.computer_monitor_cover.subtitle}"
-			title: "{quests.computer.computer_monitor_cover.title}"
 			tasks: [{
 				id: "5D6F043BBA5346B7"
 				item: "gtceu:computer_monitor_cover"
 				type: "item"
 			}]
+			title: "{quests.computer.computer_monitor_cover.title}"
 			x: 7.5d
 			y: -0.5d
 		}
@@ -899,15 +899,15 @@
 			description: ["{quests.computer.large_turbine.desc}"]
 			disable_toast: true
 			hide_dependency_lines: true
-			id: "736CDF6EAD05B3AE"
 			icon: "gtceu:gas_large_turbine"
+			id: "736CDF6EAD05B3AE"
 			subtitle: "{quests.computer.large_turbine.subtitle}"
-			title: "{quests.computer.large_turbine.title}"
 			tasks: [{
 				id: "3A9403E5F2E47238"
 				title: "{quests.computer.large_turbine.title}"
 				type: "checkmark"
 			}]
+			title: "{quests.computer.large_turbine.title}"
 			x: 8.0d
 			y: 1.0d
 		}
@@ -917,13 +917,13 @@
 			hide_dependency_lines: true
 			icon: "gtceu:lv_forge_hammer"
 			id: "5ACB5F66D7A324A3"
-			title: "{quests.computer.gregtech_machine.title}"
 			subtitle: "{quests.computer.gregtech_machine.subtitle}"
 			tasks: [{
 				id: "492F6F231A7A5859"
 				title: "{quests.computer.gregtech_machine.title}"
 				type: "checkmark"
 			}]
+			title: "{quests.computer.gregtech_machine.title}"
 			x: 7.0d
 			y: 1.0d
 		}
@@ -933,13 +933,13 @@
 			hide_dependency_lines: true
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "272A44B5D037B0F4"
-			title: "{quests.computer.energy_storage.title}"
 			subtitle: "{quests.computer.energy_storage.subtitle}"
 			tasks: [{
 				id: "5E9CE703501884DD"
 				title: "{quests.computer.energy_storage.title}"
 				type: "checkmark"
 			}]
+			title: "{quests.computer.energy_storage.title}"
 			x: 6.0d
 			y: 1.0d
 		}
