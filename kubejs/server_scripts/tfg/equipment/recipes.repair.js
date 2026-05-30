@@ -25,14 +25,14 @@ function registerTFGRepairRecipes(event) {
 	const TFC_TEXTILE_LEATHER_REPAIR = [
 		{ animal: 'caribou', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
 		{ animal: 'polar_bear', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'cougar', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'tiger', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'panther', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'sabertooth', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'black_bear', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'grizzly_bear', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
 		{ animal: 'direwolf', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
-		{ animal: 'lion', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'cougar', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'tiger', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'panther', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'sabertooth', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'black_bear', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'grizzly_bear', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'lion', repair: ['tfc:burlap_cloth', 'tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
 		{ animal: 'crocodile', repair: ['tfc:burlap_cloth', "tfg:linen_cloth", 'tfc:silk_cloth', 'tfg:phantom_silk', 'tfg:polycaprolactam_fabric'] }
 	]
 
