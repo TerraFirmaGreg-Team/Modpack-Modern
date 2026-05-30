@@ -6,15 +6,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "ae2:ender_dust"
+					"name": "endermanoverhaul:ancient_pearl"
 				},
 				{
 					"type": "minecraft:item",
-					"name": "endermanoverhaul:summoner_pearl"
+					"name": "endermanoverhaul:soul_pearl"
 				},
 				{
 					"type": "minecraft:item",
-					"name": "species:wicked_swapper"
+					"name": "endermanoverhaul:icy_pearl"
 				}
 			],
 			"rolls": 1.0
@@ -29,13 +29,13 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
+								"max": 4.0,
+								"min": 2.0
 							},
 							"function": "minecraft:set_count"
 						}
 					],
-					"name": "tfg:food/fly_agaric"
+					"name": "minecraft:chorus_fruit"
 				}
 			],
 			"rolls": 2.0

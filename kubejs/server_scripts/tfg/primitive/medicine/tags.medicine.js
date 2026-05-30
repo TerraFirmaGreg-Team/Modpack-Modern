@@ -171,7 +171,7 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/sea_lavender',
 		'tfc:plant/canna',
 		'tfc:plant/water_canna',
-		'tfg:plant/murkweed
+		'tfg:plant/murkweed'
 	];
 	weakness_ingredients.forEach(items => { event.add('tfg:weakness_ingredients', items) });
 
