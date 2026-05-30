@@ -252,8 +252,9 @@
 											"max_threshold": 0.3
 										},
 										"then_run": {
-											"type": "minecraft:block",
-											"result_state": {
+											"type": "kubejs_tfc:rock",
+											"rock_block": "sand",
+											"fallback_state": {
 												"Name": "tfc:sand/white"
 											}
 										}

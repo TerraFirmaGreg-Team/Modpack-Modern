@@ -24,6 +24,7 @@ StartupEvents.registry('block', event => {
 
 BlockEvents.modification(event => {
 	registerAdAstraBlockModifications(event)
+	registerBeneathBlockModifications(event)
 	registerSpeciesBlockModifications(event)
 	registerMinecraftBlockModifications(event)
 })
