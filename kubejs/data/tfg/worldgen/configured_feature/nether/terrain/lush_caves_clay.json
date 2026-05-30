@@ -17,7 +17,20 @@
 				"chance": 0.4,
 				"feature": {
 					"feature": "tfg:nether/terrain/clay_patch_kaolin",
-					"placement": []
+					"placement": [
+						{
+							"type": "minecraft:height_range",
+							"height": {
+								"type": "minecraft:uniform",
+								"max_inclusive": {
+									"absolute": 120
+								},
+								"min_inclusive": {
+									"above_bottom": 48
+								}
+							}
+						}
+					]
 				}
 			}
 		]
