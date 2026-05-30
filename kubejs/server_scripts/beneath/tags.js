@@ -34,7 +34,6 @@ const registerBeneathItemTags = (event) => {
 	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_wood/warped')
 
 	event.add("tfg:rubber_plants", "beneath:gleamflower")
-	event.add("tfg:rubber_plants", "beneath:burpflower")
 	event.add("tfg:rubber_plants", "beneath:food/fools_funnel")
 
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {

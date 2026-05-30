@@ -5,7 +5,6 @@
 */
 const beneath_plants = [
 	'beneath:gleamflower',
-	'beneath:burpflower',
 	'minecraft:big_dripleaf',
 	'minecraft:small_dripleaf',
 	'minecraft:glow_lichen',
