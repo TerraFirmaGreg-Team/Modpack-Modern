@@ -23,16 +23,17 @@ function registerTFGRepairRecipes(event) {
 
 	const TFC_TEXTILE_TYPES = ['hat', 'shirt', 'pants', 'boots']
 	const TFC_TEXTILE_LEATHER_REPAIR = [
-		'caribou',
-		'polar_bear',
-		'cougar',
-		'tiger',
-		'panther',
-		'sabertooth',
-		'black_bear',
-		'grizzly_bear',
-		'direwolf',
-		'lion'
+		{ animal: 'caribou', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'polar_bear', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'cougar', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'tiger', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'panther', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'sabertooth', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'black_bear', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'grizzly_bear', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'direwolf', repair: ['tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'lion', repair: ['tfg:linen_cloth', 'tfc:wool_cloth', 'tfg:polycaprolactam_fabric'] },
+		{ animal: 'crocodile', repair: ['tfc:burlap_cloth', "tfg:linen_cloth", 'tfc:silk_cloth', 'tfg:phantom_silk', 'tfg:polycaprolactam_fabric'] }
 	]
 
 	const SPECIAL_REPAIRS = [
@@ -81,15 +82,15 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfcambiental:silk_pants", material: "tfc:silk_cloth" },
 		{ item: "tfcambiental:silk_shoes", material: "tfc:silk_cloth" },
 
+		{ item: "tfc_textile:linen_hat", material: "tfg:linen_cloth" },
+		{ item: "tfc_textile:linen_shirt", material: "tfg:linen_cloth" },
+		{ item: "tfc_textile:linen_pants", material: "tfg:linen_cloth" },
+		{ item: "tfc_textile:linen_socks", material: "tfg:linen_cloth" },
+
 		{ item: "tfcambiental:burlap_cowl", material: "tfc:burlap_cloth" },
 		{ item: "tfcambiental:burlap_shirt", material: "tfc:burlap_cloth" },
 		{ item: "tfcambiental:burlap_pants", material: "tfc:burlap_cloth" },
-		{ item: "tfcambiental:burlap_shoes", material: "tfc:burlap_cloth" },
-
-		{ item: "tfc_textile:crocodile_hat", material: "tfc:burlap_cloth" },
-		{ item: "tfc_textile:crocodile_shirt", material: "tfc:burlap_cloth" },
-		{ item: "tfc_textile:crocodile_pants", material: "tfc:burlap_cloth" },
-		{ item: "tfc_textile:crocodile_boots", material: "tfc:burlap_cloth" },
+		{ item: "tfcambiental:burlap_shoes", material: "tfc:burlap_cloth" }
 	]
 
 	repairColoredSteel('gtceu', 'red_steel');
@@ -243,19 +244,21 @@ function registerTFGRepairRecipes(event) {
 
 	// TFC Textile Leather Clothes
 	TFC_TEXTILE_LEATHER_REPAIR.forEach(item => {
-		TFC_TEXTILE_TYPES.forEach(type => {
-			event.custom({
-				type: 'tfg:item_repair',
-				pattern: [
-					"RH",
-				],
-				key: {
-					R: { item: `sns:leather_strip` },
-					H: { item: `tfc_textile:${item}_${type}` },
-					// T: { tag: "forge:tools/hammers" }
-				},
-				repairPercentage: 0.25
-			}).id(`tfg:item_repair/${item}_${type}`)
+		item.repair.forEach(repair => {
+			TFC_TEXTILE_TYPES.forEach(type => {
+				event.custom({
+					type: 'tfg:item_repair',
+					pattern: [
+						"RH",
+					],
+					key: {
+						R: { item: repair },
+						H: { item: `tfc_textile:${item.animal}_${type}` },
+						// T: { tag: "forge:tools/hammers" }
+					},
+					repairPercentage: 0.25
+				}).id(`tfg:item_repair/${item.animal}_${type}_${global.linuxUnfucker(repair)}`)
+			})
 		})
 	})
 
