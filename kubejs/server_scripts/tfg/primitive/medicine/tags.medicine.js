@@ -108,7 +108,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/lily_of_the_valley',
 		'tfc:plant/pulsatilla',
 		'firmalife:food/nightshade_berry',
-		'tfg:food/fly_agaric'
+		'tfg:food/fly_agaric',
+		'tfg:plant/wither_rose'
 	];
 	poison_ingredients.forEach(items => { event.add('tfg:poison_ingredients', items) });
 
@@ -152,7 +153,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/nasturtium',
 		'tfc:plant/snapdragon_red',
 		'tfc:plant/snapdragon_white',
-		'tfc:plant/snapdragon_yellow'
+		'tfc:plant/snapdragon_yellow',
+		'tfg:plant/needlegrass'
 	];
 	slowness_ingredients.forEach(items => { event.add('tfg:slowness_ingredients', items) });
 
@@ -168,7 +170,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/sea_palm',
 		'tfc:plant/sea_lavender',
 		'tfc:plant/canna',
-		'tfc:plant/water_canna'
+		'tfc:plant/water_canna',
+		'tfg:plant/murkweed
 	];
 	weakness_ingredients.forEach(items => { event.add('tfg:weakness_ingredients', items) });
 
@@ -180,7 +183,8 @@ function registerTFGMedicineItemTags(event) {
 	 * @type {{Item}}
 	 */
 	const haste_ingredients = [
-		'#tfg:sugars'
+		'#tfg:sugars',
+		'wan_ancient_beasts:moonflower'
 	];
 	haste_ingredients.forEach(items => { event.add('tfg:haste_ingredients', items) });
 
@@ -279,7 +283,8 @@ function registerTFGMedicineItemTags(event) {
 	 */
 	const instant_health_ingredients = [
 		'tfc:plant/foxglove',
-		'tfc:plant/artists_conk'
+		'tfc:plant/artists_conk',
+		'beneath:food/shiitake'
 	];
 	instant_health_ingredients.forEach(items => { event.add('tfg:instant_health_ingredients', items) });
 
