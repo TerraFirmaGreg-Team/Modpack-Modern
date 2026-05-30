@@ -14,6 +14,7 @@ const registerMinecraftItemTags = (event) => {
 	event.removeAllTagsFrom("minecraft:raw_iron_block");
 	event.removeAllTagsFrom("minecraft:grass_block");
 	event.removeAllTagsFrom("minecraft:infested_deepslate");
+	event.removeAllTagsFrom("minecraft:furnace");
 
 	// Hide potions
 	event.add('c:hidden_from_recipe_viewers', /minecraft.*potion.*/)

@@ -3,7 +3,13 @@
 
 function removeMinecraftRecipes(event) {
 	
-	event.remove({ output: 'minecraft:tipped_arrow' })
+	// Everything in this array is stuff that we don't want, but needs to exist
+	// for technical reasons, and causes problems if we remove through reliable remover
+	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 
 	global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.forEach(element => {
 		const blockId = element.block.split(':')[1]
