@@ -25,17 +25,17 @@
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:mechanics/decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "所有食物都有包含这些信息的提示框。提示框还包括食物的$(l:mechanics/decay)腐烂日期$()，可以通过保存方式来延长。查看这些信息时，重要的是要知道并非所有食物都有营养价值。例如，$(l:mechanics/bread)面团$()是一种食物，但它没有营养、饱食度或水分值。吃它没什么好处。"
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "食物的提示框可能看起来像这样：$(br2)$(bold)橙子$()$(br)  $(2)$(bold)腐烂于：1004年7月6日 11:59（1个月1天后）$()$(br)  $(8)营养：$(br)  - 饱食度：2%$(br)  - 水分：10%$(br)$(a)  - 水果：0.5"
         },
         {
             "type": "patchouli:text",
             "anchor": "thirst",
-            "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
-            "title": "干渴"
+            "text": "口渴值是身体中的水分含量，其消耗速度与饥饿相似。在高温或高饥饿消耗的情况下，口渴消耗会更快。幸运的是，饮用$(thing)淡水$()可以补充口渴值。可以通过对着水方块按下$(item)$(k:key.use)$()来喝水。饮用盐水会导致口渴值下降，甚至有可能使你获得$(thing)口渴$()效果，进一步加速水分流失。",
+            "title": "口渴"
         },
         {
             "type": "patchouli:multiblock",
@@ -56,186 +56,186 @@
                     "Y": "tfc:plant/cattail[part=lower,fluid=water]"
                 }
             },
-            "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
+            "name": "饮水安全",
+            "text": "要避开盐水或泥水，请寻找河流、湖泊以及像$(thing)香蒲$()这样的淡水植物。",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "$(l:getting_started/pottery)捏制黏土$()并烧制一个$(l:getting_started/pottery#jug)陶壶$()是随身携带水的一种方法。像桶一样对着水按$(item)$(k:key.use)$()即可装水。按住$(item)$(k:key.use)$()可以喝水。"
         },
         {
             "type": "patchouli:text",
-            "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$()."
+            "text": "你也可以使用其他容器喝水，例如$(l:waterflasks)水壶$()或$(l:mechanics/glassworking)玻璃瓶$()。"
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
-            "title": "Nutrition Screen"
+            "text": "在$(bold)$(#ff0fb7)群峦$()$()$(bold)$(#595959)格雷$()$()中，营养界面会显示关于你健康的丰富信息。$(li)主图表显示你的$(l:getting_started/food_and_water#nutrients)营养素$()$()$(li)侧边图表显示你的$(l:getting_started/food_and_water#contaminants)污染物$()$()$(li)表格显示你的健康属性$()$(li)还有一个可切换的视图，用于查看队伍的营养状况$()$(br)$(item)按住-$(k:key.sneak)$()将鼠标悬停在界面元素上可查看更多信息。$()",
+            "title": "营养界面"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
+            "text": "营养界面，图表显示每种营养素的水准。",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:mechanics/pot#soup)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
-            "title": "Nutrients"
+            "text": "共有五种营养素，均可从食物中获得：$(l)$(a)水果$()$()、$(l)$(2)蔬菜$()$()、$(l)$(c)蛋白质$()$()、$(l)$(6)谷物$()$()和$(l)$(5)乳制品$()$()。进食会提供其营养素。像$(l:mechanics/pot#soup)汤$()这样的餐点会将更多营养素组合成一餐。通常，餐点会直接继承其食材的营养素。这一点很重要，因为你很久以前吃过的餐点不计入你当前的营养值。",
+            "title": "营养素"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "你的营养素总值决定了你的最大生命值。达到最大值时，你可以获得$(l)$(c)30颗心$()$()，而最低则为$(l)$(c)3颗心$()$()。$(br)你的平均营养值还会影响以下方面：$()$(li)$(bold)平均 >55% ↴$()$()$(italic)$(li2)被动生命恢复增加 50%。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)疾病$()进展速度降低 25%。$()$()$(italic)$(li2)疾病被动恢复速度提高 50%。$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)平均 >85% ↴$()$()$(italic)$(li2)被动生命恢复增加 100%。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)疾病$()进展速度降低 50%。$()$()$(italic)$(li2)疾病被动恢复速度提高 100%。$()$()"
         },
         {
             "title": "水果",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(a)水果$()$()营养主要来自$(l:the_world/wild_fruits)结果植物$()，如浆果丛和果树。一个明显的例外是$(l:mechanics/crops#pumpkin)南瓜$()和$(l:mechanics/crops#pumpkin)西瓜$()，它们在营养上属于水果。$(br2)提高水果值会带来以下效果：$()$(li)$(bold)平均 >55% → $()$()$(italic)口渴消耗减少 25%。$()$(li)$(bold)平均 >85% → $()$()$(italic)挖掘速度提高 30%。$()"
         },
         {
             "title": "蔬菜",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)蔬菜$()$()几乎存在于每一种$(l:mechanics/crops)作物$()中。$(br2)提高蔬菜值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)移除水下挖掘速度惩罚。$()$(li)$(bold)数值 >85% → $()$()$(italic)获得水下呼吸效果。$()"
         },
         {
             "title": "蛋白质",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)蛋白质$()$()可以从$(l:the_world/wild_animals)动物$()的肉中获得。一些作物如$(thing)豆类$()也能提供蛋白质。$(br2)提高蛋白质值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)疲劳倍率减少 25%。$()$(li)$(bold)数值 >85% → $()$()$(italic)允许你额外携带一件巨大/沉重的物品而不至于$(l:getting_started/size_and_weight#overburdening)负担过重$()（比如密封大桶）。$()"
         },
         {
             "title": "谷物",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)谷物$()$()存在于谷类作物中，例如$(l:mechanics/crops#barley)大麦$()。谷物的加工请参阅$(l:firmalife/bread)面包$()页面。一些块根作物也归类为谷物。$(br2)提高谷物值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)获得 5% 速度加成。$()$(li)$(bold)数值 >85% → $()$()$(italic)获得 15% 速度加成。$()"
         },
         {
             "title": "乳制品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)乳制品$()$()来自$(thing)牛奶$()，由$(l:mechanics/animal_husbandry#dairy_animals)产奶动物$()产出。牛奶的加工和饮用请参阅$(l:firmalife/cheese)乳制品$()页面。$(br2)提高乳制品值会带来以下效果：$()$(li)$(bold)数值 >55% → $()$()$(italic)获得$(thing)摔落保护 I$()效果。$()$(li)$(bold)数值 >85% → $()$()$(italic)获得$(thing)摔落保护 IV$()效果。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
+            "text": "除了营养素，$(bold)$(#ff0fb7)群峦$()$()$(bold)$(#595959)格雷$()$()还增加了污染物。共有三种污染物，均可从食物中获得：$(l)$(d)毒素$()$()、$(l)$(4)寄生虫$()$()和$(l)$(3)微塑料$()$()。污染物可以传递到餐点物品中，并在玩家体内积累。",
             "title": "污染物"
         },
         {
             "title": "毒素",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+            "text": "$(l)$(d)毒素$()$()来自特别危险的作物和肉类。毒素每天自然减少 3%。食用$(item)排毒胶囊$()可以主动$(l:tfg_tips/mob_effects_glossary#cure_toxins)治愈毒素$()。$(br2)提高毒素值会带来以下效果：$()$(li)$(bold)数值 >0% → $()$()$(italic)每次新增加时：25%概率获得随机负面效果，持续10秒。$()$(li)$(bold)数值 >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)死亡。$()"
         },
         {
             "title": "寄生虫",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)寄生虫$()$()来自食用某些生肉或饮用泥水。食用$(item)杀虫胶囊$()可以主动$(l:tfg_tips/mob_effects_glossary#cure_parasites)治愈寄生虫$()。$(br2)提高寄生虫值会带来以下效果：$()$(li)$(bold)数值 >10% → $()$()$(italic)20%概率每天增加10%，最高60%。$()$(li)$(bold)数值 >33% → $()$()$(italic)被动疲劳增加25%。$()$(li)$(bold)数值 >66% → $()$()$(italic)被动疲劳增加50%。$()"
         },
         {
             "title": "微塑料",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)微塑料$()$()来自食用塑料包装的食物。微塑料每天自然减少 1%。食用$(item)纳滤胶囊$()可以主动$(l:tfg_tips/mob_effects_glossary#cure_microplastics)治愈微塑料$()。$(br)提高微塑料值会带来以下效果：$()$(li)$(bold)数值 >33% → $()$()$(italic)高温口渴衰减倍率增加25%$()$(li)$(bold)数值 >66% ↴$()$()$(italic)$(li2)高温口渴衰减倍率增加50%。$()$()$(italic)$(li2)每次新增加时：5%概率罹患$(l:tfg_ores/hazards#Carcinogens)癌症$()。$()$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
-            "title": "Transient Effects"
+            "text": "$(bold)$(#ff0fb7)群峦$()$()$(bold)$(#595959)格雷$()$()还增加了$(item)瞬时效果$()。瞬时效果存在的目的是将增益/减益效果从食材传递到餐点物品中。瞬时效果可以组合和消耗。但它们不会在玩家体内积累——它们会立即被消耗。$(br)效果的强度取决于营养素数值。不过，每种类型的效果强度计算方式并不统一。$()",
+            "title": "瞬时效果"
         },
         {
             "type": "patchouli:text",
             "anchor": "cooling_transient_effect",
-            "text": "$(#12d7ff)❅$()$(bold) Cooling$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#cooling)Cooling$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#12d7ff)❅$()$(bold) 降温$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#cooling)降温$()效果，每1营养素点数持续1分钟，最长30分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "warming_transient_effect",
-            "text": "$(#ff7700)🔆$()$(bold) Warming$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#ff7700)🔆$()$(bold) 升温$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#warming)升温$()效果，每1营养素点数持续1分钟，最长30分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "quenching_transient_effect",
-            "text": "$(#00c792)🍹$()$(bold) Quenching$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#quenched)Quenched$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#00c792)🍹$()$(bold) 解渴$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#quenched)解渴$()效果，每1营养素点数持续1分钟，最长30分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "bolstering_transient_effect",
-            "text": "$(#ffe417)♡$()$(bold) Bolstering$()$(li)Gives the player the $(n)Absorption$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ffe417)♡$()$(bold) 加固$()$(li)给予玩家$(n)伤害吸收$()效果，持续8分钟。效果等级根据营养素点数缩放，最高等级5。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "hearty_transient_effect",
-            "text": "$(#ff171b)♡$()$(bold) Hearty$()$(li)Gives the player the $(n)Health Boost$() effect for 8 minutes. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#ff171b)♡$()$(bold) 强心$()$(li)给予玩家$(n)生命提升$()效果，持续8分钟。效果等级根据营养素点数缩放，最高等级5。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "rejuvenating_transient_effect",
-            "text": "$(#ff178f)💕$()$(bold) Rejuvenating$()$(li)Gives the player the $(n)Regeneration$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 3min.$()"
+            "text": "$(#ff178f)💕$()$(bold) 回春$()$(li)给予玩家$(n)生命恢复$()效果，每1营养素点数持续1分钟，最长3分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "freezing_transient_effect",
-            "text": "$(#12d7ff)⛇$()$(bold) Freezing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#freezing)Freezing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#12d7ff)⛇$()$(bold) 冰冻$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#freezing)冰冻$()效果，每1营养素点数持续5秒，最长30秒。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "blazing_transient_effect",
-            "text": "$(#ff7700)🔥$()$(bold) Blazing$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#blazing)Blazing$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#ff7700)🔥$()$(bold) 灼热$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#blazing)灼热$()效果，每1营养素点数持续5秒，最长30秒。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "radiating_transient_effect",
-            "text": "$(#9fc700)☢$()$(bold) Radiating$()$(li)Gives the player the $(n)Glowing$() effect for 24 seconds.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#instant_radiation)Radiation$() effect for 24 seconds. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 5.$()"
+            "text": "$(#9fc700)☢$()$(bold) 辐射$()$(li)给予玩家$(n)发光$()效果，持续24秒。$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#instant_radiation)辐射$()效果，持续24秒。效果等级根据营养素点数缩放，最高等级5。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nauseating_transient_effect",
-            "text": "$(#078f00)🤢$()$(bold) Nauseating$()$(li)Gives the player the $(n)Nausea$() effect with 5 seconds of duration per 1 nutrient point. With a max duration of 12sec.$()$(li)Gives the player the $(n)Hunger VI$() effect with 10 seconds of duration per 1 nutrient point. With a max duration of 30sec.$()"
+            "text": "$(#078f00)🤢$()$(bold) 致呕$()$(li)给予玩家$(n)反胃$()效果，每1营养素点数持续5秒，最长12秒。$()$(li)给予玩家$(n)饥饿 VI$()效果，每1营养素点数持续10秒，最长30秒。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "parching_transient_effect",
-            "text": "🧂$(bold) Parching$()$(li)Gives the player the $(n)Thirsty$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 8min.$()"
+            "text": "🧂$(bold) 干渴$()$(li)给予玩家$(n)口渴$()效果，每1营养素点数持续1分钟，最长8分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "deadly_transient_effect",
-            "text": "$(#470275)💀$()$(bold) Deadly$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$() effect for 8min. With every additional nutrient point halving the duration.$()"
+            "text": "$(#470275)💀$()$(bold) 致命$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#final_moments)临终时刻$()效果，持续8分钟。每额外增加1营养素点数，持续时间减半。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "fulfilling_transient_effect",
-            "text": "$(#551913)🍖$()$(bold) Fulfilling$()$(li)Gives the player the $(n)Resistance$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 15min.$()$(li)Gives the player the $(n)Instant Health$() effect. With its amplifier scaled based on the amount of nutrient points with a max amplifier of 2.$()"
+            "text": "$(#551913)🍖$()$(bold) 饱腹$()$(li)给予玩家$(n)抗性提升$()效果，每1营养素点数持续1分钟，最长15分钟。$()$(li)给予玩家$(n)瞬间治疗$()效果。效果等级根据营养素点数缩放，最高等级2。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "sugary_transient_effect",
-            "text": "$(#837447)🍰$()$(bold) Sugary$()$(li)Gives the player the $(n)Weakness$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(n)Speed$() effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#837447)🍰$()$(bold) 甜腻$()$(li)给予玩家$(n)虚弱$()效果，每1营养素点数持续15秒，最长5分钟。$()$(li)给予玩家$(n)速度$()效果，每1营养素点数持续1分钟，最长30分钟。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "spicy_transient_effect",
-            "text": "$(#8F0000)🌶 $()$(bold) Spicy$()$(li)Gives the player the $(n)Thirsty$() effect with 15 seconds of duration per 1 nutrient point. With a max duration of 5min.$()$(li)Gives the player the $(l:tfg_tips/mob_effects_glossary#warming)Warming$() mob effect with 1 minute of duration per 1 nutrient point. With a max duration of 30min.$()"
+            "text": "$(#8F0000)🌶 $()$(bold) 辛辣$()$(li)给予玩家$(n)口渴$()效果，每1营养素点数持续15秒，最长5分钟。$()$(li)给予玩家$(l:tfg_tips/mob_effects_glossary#warming)升温$()效果，每1营养素点数持续1分钟，最长30分钟。$()"
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "延伸阅读",
             "anchor": "relations",
             "entries": [
                 "tfc:getting_started/size_and_weight",

@@ -1,5 +1,5 @@
 {
-	"name": "Mob Effect Glossary",
+	"name": "状态效果术语表",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:splash_potion",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "This chapter is dedicated to describing custom mob effects in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Cooling$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Warming$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Quenched$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Detoxify$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Freezing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Blazing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Instant Radiation$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$()"
+			"text": "本章专门介绍$(bold)$(#ff0fb7)群峦$()$()$(bold)$(#595959)格雷$()$()中的自定义状态效果。$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)降温$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)升温$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)解渴$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)驱虫$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)排毒$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)过滤微塑料$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)冰冻$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)灼热$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)瞬时辐射$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)临终时刻$()"
 		},
 		{
 			"type": "patchouli:empty"
@@ -15,56 +15,56 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cooling",
-			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a minimum of $(n)5°C$()"
+			"text": "$(bold)$(9)降温$()$(li)激活时，此效果会持续$(l:beneath/cooling)降温$()，将玩家体温降至最低$(n)5°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warming",
-			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a maximum of $(n)25°C$()"
+			"text": "$(bold)$(9)升温$()$(li)激活时，此效果会持续$(l:beneath/cooling)升温$()，将玩家体温升至最高$(n)25°C$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirsty$(). However, it does not prevent the Thirst effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)解渴$()$(li)激活时，此效果可防止$(l:getting_started/food_and_water#thirst)口渴$()值的自然衰减。但无法阻止“口渴”效果本身降低你的口渴值。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)驱虫$()$(li)激活时，此效果会以基础等级约每10秒1%的速率逐渐清除$(l:getting_started/food_and_water#parasites)寄生虫污染$()。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_toxins",
-			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)排毒$()$(li)激活时，此效果会以基础等级约每10秒1%的速率逐渐清除$(l:getting_started/food_and_water#toxins)毒素污染$()。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_microplastics",
-			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)过滤微塑料$()$(li)激活时，此效果会以基础等级约每10秒1%的速率逐渐清除$(l:getting_started/food_and_water#microplastics)微塑料污染$()。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "freezing",
-			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)冰冻$()$(li)激活时，此效果会持续$(l:beneath/cooling)降温$()，将玩家体温降至危险的最低$(n)-20°C$()。建议穿戴防护装备以在此状态下存活。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blazing",
-			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)灼热$()$(li)激活时，此效果会持续$(l:beneath/cooling)升温$()，将玩家体温升至危险的最高$(n)60°C$()。建议穿戴防护装备以在此状态下存活。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "instant_radiation",
-			"text": "$(bold)$(c)Instant Radiation$()$(li)This effect quickly damages the player with $(l:tfg_ores/hazards#Radioactive_materials)Radiation Damage$()"
+			"text": "$(bold)$(c)瞬时辐射$()$(li)此效果会以$(l:tfg_ores/hazards#Radioactive_materials)辐射伤害$()迅速伤害玩家。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "final_moments",
-			"text": "$(bold)$(c)Final Moments$()$(li)This effect starts a timer that counts down your last few minutes. When the clock ends you die."
+			"text": "$(bold)$(c)临终时刻$()$(li)此效果启动一个倒计时，记录你最后的几分钟。当计时结束时，你将死亡。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸阅读",
 			"anchor": "relations",
 			"entries": [
                 "tfc:getting_started/food_and_water",

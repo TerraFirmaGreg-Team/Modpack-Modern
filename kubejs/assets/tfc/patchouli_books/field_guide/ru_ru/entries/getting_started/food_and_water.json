@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:getting_started/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "Некоторые продукты питания очень питательны, поэтому они дольше не дадут вам голодать, в то время как некоторые продукты имеют лишь кратковременное воздействие.$(br2)Шкала голода уменьшается во время обычной игры. Она уменьшается быстрее, если вы спринтуете, плаваете или $(l:getting_started/size_and_weight#overburdening)Перегружены$(). Информацию о $(thing)Насыщении$(), $(thing)Воде$(), и а также $(thing)Нутриентах$(), доступных из еды, можно получить, наведя курсор на нее в инвентаре. С помощью $(item)$(k:key.sneak)$() открывается полный набор подсказок."
         },
         {
             "type": "patchouli:text",
