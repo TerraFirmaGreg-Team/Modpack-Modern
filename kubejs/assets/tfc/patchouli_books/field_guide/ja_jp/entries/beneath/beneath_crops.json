@@ -10,12 +10,12 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Beneathの作物は地上の作物と全く同じように振る舞い、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)Beneathで作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、地下の自然光ではこれを満たすことができません。この問題を解決するには、$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() や、その他の利用可能な光源を活用しましょう。"
+			"text": "Beneathの作物は地上の作物と同じように、水分、温度、栄養素の条件が必要です。$(thing)温室$()に植えることも可能です。$(br2)Beneathで作物を栽培する際の重要な注意点として、作物には光レベル12が必要ですが、地下の自然光ではこれを満たすことができません。この問題を解決するには、$(l:tfc:beneath/curious_blocks#blackstone_aqueduct)Lava Aqueducts$() や、その他の利用可能な光源を活用しましょう。"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "内容物",
-			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)ピーナッツ$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)ブラックストーン豆$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()"
+			"text": "$(li)\n$(l:tfc:beneath/beneath_crops#cassava)キャッサバ$()$(li)\n$(l:tfc:beneath/beneath_crops#peanut)ピーナッツ$()$(li)\n$(l:tfc:beneath/beneath_crops#beans)黒石豆$()$(li)\n$(l:tfc:beneath/beneath_crops#ghost_pepper)ゴーストペッパー$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -255,7 +255,7 @@
 			"type": "patchouli:text",
 			"anchor": "beans",
 			"title": "黒石豆",
-			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)ブラックストーン豆は$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材ですが、加熱調理する必要があります！"
+			"text": "$(bold)$(l:the_world/climate#temperature)気温$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)水分量$(): 20 - 80 %$(br)$(bold)栄養素$(): カリウム$(br2)黒石豆は$(thing)野菜$()と$(thing)タンパク質$() 系の栄養を取ることができる食材ですが、加熱調理する必要があります！"
 		},
 		{
 			"type": "tfc:multimultiblock",

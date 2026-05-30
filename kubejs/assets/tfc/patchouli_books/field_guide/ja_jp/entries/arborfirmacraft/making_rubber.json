@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber...",
+			"title": "ゴムゴムの",
 			"text": "$(thing)ラテックス$()にはもうひとつ重要な用途があります。それはゴムの製造です。\nゴムを作るには、ラテックスと$(thing)硫黄の粉$()を$(l:firmalife/oven_appliances#vat)釜$()か$(l:mechanics/pot)鍋$()に投入して加熱し、$(thing)加硫処理ラテックス$()を作る必要があります。\nこれが、工業用途向けにラテックスをより強く硬くするための「加硫処理」になります！"
 		},
 		{
@@ -41,7 +41,7 @@
 			"type": "patchouli:spotlight",
 			"title": "針葉樹液",
 			"item": "tfg:conifer_pitch_bucket",
-			"text": "粘性樹脂は、特定の$(thing)針葉樹$()から採取できる$(thing)松脂$()からも入手できます。\nただし、この樹液ではゴムの生産には利用できません。"
+			"text": "粘性樹脂は、特定の$(thing)針葉樹$()から採取できる$(thing)針葉樹脂$()からも入手できます。\nただし、この樹液ではゴムの生産には利用できません。"
 		}
 	],
 	"read_by_default": true,

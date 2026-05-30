@@ -1,11 +1,18 @@
 {
+	"block.firmaciv.watercraft_frame_angled": "傾斜付き造船足場",
+	"block.firmaciv.watercraft_frame_flat": "平坦な造船足場",
 	"creativetab.firmaciv_tab": "Firma：Civilization",
 	"east": "東",
+	"eject_passengers": "降りる",
+	"entity.firmaciv.cannon": "大砲",
 	"entity.firmaciv.compartment_large_vessel": "大きな壺",
+	"entity.firmaciv.compartment_tfc_chest": "チェストのスペース",
 	"firmaciv.advancements.kayak_paddle.title": "ダブル・トラブル",
+	"item.firmaciv.cannon": "大砲",
 	"itemGroup.firmaciv": "Firma：Civilization",
 	"meters": "メートル",
 	"north": "北",
+	"press_button": "以下を押して",
 	"south": "南",
 	"west": "西"
 }
