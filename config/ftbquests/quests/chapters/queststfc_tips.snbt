@@ -1295,6 +1295,110 @@
 			y: 6.5d
 		}
 		{
+			dependencies: [
+				"150B7C5CD152E1BA"
+				"015E7A116CCD3191"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.thatch_bed.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/a_place_to_sleep"
+			id: "4D11F11CE0E9F379"
+			subtitle: "{quests.tfg_tips.thatch_bed.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "043F36EA13E6E426"
+					item: "tfc:thatch"
+					type: "item"
+				}
+				{
+					id: "414BD19EE363C720"
+					item: "tfc:large_raw_hide"
+					type: "item"
+				}
+				{
+					icon: "tfc:thatch_bed"
+					id: "469CFB85AB4A154F"
+					observe_type: 0
+					timer: 0L
+					title: "{quests.tasktype.looktat} tfc:thatch_bed"
+					to_observe: "tfc:thatch_bed"
+					type: "observation"
+				}
+			]
+			title: "{quests.tfg_tips.thatch_bed.title}"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"11AB8966EC8C10ED"
+				"0FACA5FBFCB26266"
+				"2D973C6DBC873824"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.bed.desc}"]
+			id: "5C01BDDA66249D7B"
+			shape: "gear"
+			size: 4.0d
+			subtitle: "{quests.tfg_tips.bed.subtitle}"
+			tasks: [{
+				id: "2967EABE3AE54241"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #minecraft:beds"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.bed.title}"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"150B7C5CD152E1BA"
+				"4C444814F1C7B600"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.loom.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/weaving"
+			id: "1766C916084261AA"
+			subtitle: "{quests.tfg_tips.loom.subtitle}"
+			tasks: [{
+				id: "625E0FB3A603902D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:looms)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:looms"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.loom.title}"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.wool_cloth.desc}"]
+			id: "11AB8966EC8C10ED"
+			subtitle: "{quests.tfg_tips.wool_cloth.subtitle}"
+			tasks: [{
+				id: "0DE4C9EE8F736C75"
+				item: "tfc:wool_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.wool_cloth.title}"
+			x: -1.0d
+			y: 11.0d
+		}
+		{
 			dependencies: ["1766C916084261AA"]
 			description: ["{quests.tfg_tips.pineapple_leather.desc}"]
 			id: "6D0017F4B44A0D45"
@@ -1307,6 +1411,111 @@
 			title: "{quests.tfg_tips.pineapple_leather.title}"
 			x: -1.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.burlap_cloth.desc}"]
+			id: "3FE557D2A6460561"
+			subtitle: "{quests.tfg_tips.burlap_cloth.subtitle}"
+			tasks: [{
+				id: "1B9B2F664691C9AA"
+				item: "tfc:burlap_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.burlap_cloth.title}"
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.silk_cloth.desc}"]
+			id: "0FACA5FBFCB26266"
+			subtitle: "{quests.tfg_tips.silk_cloth.subtitle}"
+			tasks: [{
+				id: "17226443DEC56609"
+				item: "tfc:silk_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.silk_cloth.title}"
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1766C916084261AA"
+				"4C444814F1C7B600"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.unrefined_paper.desc}"]
+			guide_page: "tfc:field_guide tfc:mechanics/papermaking"
+			id: "4CD3F04793CE47A2"
+			subtitle: "{quests.tfg_tips.unrefined_paper.subtitle}"
+			tasks: [{
+				id: "6A74D8B7FCDCC636"
+				item: "tfc:unrefined_paper"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.unrefined_paper.title}"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: [
+				"{quests.tfg_tips.panning.desc}"
+				"{image:tfg:textures/quests/ore_deposit.png width:100 height:100 align:center}"
+			]
+			guide_page: "tfc:field_guide tfc:mechanics/panning"
+			id: "082310DF9BEA92CE"
+			subtitle: "{quests.tfg_tips.panning.subtitle}"
+			tasks: [
+				{
+					id: "1864A20BCD18139C"
+					item: "tfc:pan/empty"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61B05C6828DE1714"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:ore_deposits)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:ore_deposits"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.panning.title}"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["082310DF9BEA92CE"]
+			description: [
+				"{quests.tfg_tips.sluice.desc}"
+				"{image:tfg:textures/quests/sluice.png width:100 height:100 align:center}"
+			]
+			guide_page: "tfc:field_guide tfc:mechanics/sluices"
+			id: "5261ECBE3438B05E"
+			subtitle: "{quests.tfg_tips.sluice.subtitle}"
+			tasks: [{
+				id: "33B9DEDAD0DAC0A3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sluices)"
+					}
+				}
+				title: "Any #tfc:sluices"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.sluice.title}"
+			x: -3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -1329,6 +1538,131 @@
 			title: "{quests.tfg_tips.candles.title}"
 			x: -2.5d
 			y: -14.5d
+		}
+		{
+			dependencies: ["5C01BDDA66249D7B"]
+			description: ["{quests.tfg_tips.sleeping_bags.desc}"]
+			id: "0EEB7293B5CA65D8"
+			subtitle: "{quests.tfg_tips.sleeping_bags.subtitle}"
+			tasks: [{
+				id: "56B210487D97FA31"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:sleeping_bags)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #comforts:sleeping_bags"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.sleeping_bags.title}"
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5C01BDDA66249D7B"]
+			description: ["{quests.tfg_tips.hammocks.desc}"]
+			id: "47723F97A3E60425"
+			subtitle: "{quests.tfg_tips.hammocks.subtitle}"
+			tasks: [
+				{
+					id: "774182313E02EDEB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:hammocks)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #comforts:hammocks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "324BAF05D22BEFA8"
+					item: "comforts:rope_and_nail"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.hammocks.title}"
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.status_effects.desc}"]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:fire_resistance"
+				}
+			}
+			id: "28333A7852497C4D"
+			shape: "circle"
+			subtitle: "{quests.tfg_tips.status_effects.subtitle}"
+			tasks: [{
+				id: "1F96808948B568A2"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.status_effects.title}"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"3E8833E7CE591E6F"
+				"28333A7852497C4D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.aged_alcohol.desc}"]
+			id: "3179DABC8BCAD9FF"
+			subtitle: "{quests.tfg_tips.aged_alcohol.subtitle}"
+			tasks: [
+				{
+					id: "4BFC8A6E37AF4855"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfcagedalcohol:bucket/aged_beer)item(tfcagedalcohol:bucket/aged_cider)item(tfcagedalcohol:bucket/aged_rum)item(tfcagedalcohol:bucket/aged_sake)item(tfcagedalcohol:bucket/aged_vodka)item(tfcagedalcohol:bucket/aged_whiskey)item(tfcagedalcohol:bucket/aged_corn_whiskey)item(tfcagedalcohol:bucket/aged_rye_whiskey))"
+						}
+					}
+					optional_task: true
+					title: "{quests.tfg_tips.aged_alcohol.task}"
+					type: "item"
+				}
+				{
+					id: "1ADF2F604DCDE0DB"
+					type: "checkmark"
+				}
+			]
+			title: "{quests.tfg_tips.aged_alcohol.title}"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["28333A7852497C4D"]
+			description: ["{quests.tfg_tips.pills.desc}"]
+			id: "448E3249E5EB0969"
+			subtitle: "{quests.tfg_tips.pills.subtitle}"
+			tasks: [{
+				id: "32A617086CD6E0B1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:haste_pill)item(tfg:night_vision_pill)item(tfg:poison_pill)item(tfg:regeneration_pill)item(tfg:slowness_pill)item(tfg:speed_pill)item(tfg:water_breathing_pill)item(tfg:weakness_pill)item(tfg:antipoison_pill))"
+					}
+				}
+				title: "{quests.tfg_tips.pills.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.pills.title}"
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
@@ -1561,6 +1895,26 @@
 			title: "{quests.tfg_tips.beneath_clothes.title}"
 			x: 8.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4A8910950F638BB5"
+				"1D40CAE675C4BB91"
+				"560B17BFBE8D477D"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.juicer.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/water"
+			id: "3D845616A2F7083F"
+			subtitle: "{quests.tfg_tips.juicer.subtitle}"
+			tasks: [{
+				id: "37D2748F141A8E25"
+				item: "beneath:juicer"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.juicer.title}"
+			x: 9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -1800,6 +2154,20 @@
 			y: -20.0d
 		}
 		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.phantom_silk.desc}"]
+			id: "2D973C6DBC873824"
+			subtitle: "{quests.tfg_tips.phantom_silk.subtitle}"
+			tasks: [{
+				id: "06ACBFC9D58340C0"
+				item: "tfg:phantom_silk"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.phantom_silk.title}"
+			x: 1.0d
+			y: 11.0d
+		}
+		{
 			dependencies: ["07FBA022050DA24A"]
 			description: ["{quests.tfg_tips.greenhouse_automation.desc}"]
 			guide_page: "tfc:field_guide tfc:firmalife/planters"
@@ -1913,6 +2281,27 @@
 			title: "{quests.tfg_tips.universal_compost.title}"
 			x: 4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["28333A7852497C4D"]
+			description: ["{quests.tfg_tips.powders.desc}"]
+			id: "7054530BDCB2E06E"
+			subtitle: "{quests.tfg_tips.powders.subtitle}"
+			tasks: [{
+				id: "32A01A3F5CF0AD2E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:combat_powder)item(tfg:recovery_powder)item(tfg:acrobat_powder)item(tfg:mining_powder))"
+					}
+				}
+				title: "{quests.tfg_tips.powders.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.powders.title}"
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["28333A7852497C4D"]
