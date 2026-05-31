@@ -1,15 +1,15 @@
 {
-	"name": "Tapping Trees",
+	"name": "樹液採取の仕方",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:tree_tap",
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "Some types of trees can be tapped for useful fluids. These trees can either produce sugary saps which can be concentrated into syrup and used as a sweetener, Latex which can be processed into rubber, or Pitch which can be processed into rosin, a wax substitute."
+            "text": "一部の樹木からは、有用な素材となる樹液を採取することができます。具体的には、豊富な糖分を含みシロップに濃縮して甘味料として使用できる樹液や、ゴムの素材となるラテックス、ワックスの代用品になる樹脂になる樹液などがあります。"
         },
         {
             "type": "patchouli:image",
-            "title": "Tapping a Maple Tree",
+            "title": "カエデのツリータップ",
             "images": [
             	"afc:textures/gui/book/maple_tapping.png"
             ],
@@ -17,14 +17,14 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Three things are required to tap a tree: the tree itself, a tree tap, which must forged from a Copper Ingot and placed in the middle of a trunk at least three blocks tall, and a barrel, which must be placed directly below the tap facing upward. If the conditions are right, your barrel will immediately begin to fill with sap."
+            "text": "木から樹液を採取するには、3つのものが必要です。まず樹液採取できる木、次に銅インゴットを鍛造して作るツリータップ、そして採取した樹液を受け止めるための樽です。ツリータップは高さ3ブロック以上の幹の中央部分に設置し、樽はその真下に上向きで設置する必要があります。条件が整っていれば、樽に少しずつ樹液が溜まり始めます。"
         },
         {
             "type": "patchouli:image",
             "images": [
             	"tfg:textures/gui/field_guide/tree_tapping/tapping_kapok.png"
             ],
-            "text": "A valid tapping configuration used to extract Latex from Kapok",
+            "text": "カポックからラテックスを採取するための樹液採取構成の例",
             "border": true
         }
 	],
