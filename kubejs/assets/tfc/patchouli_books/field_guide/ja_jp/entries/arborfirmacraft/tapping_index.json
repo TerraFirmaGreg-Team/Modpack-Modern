@@ -1,159 +1,159 @@
 {
-	"name": "樹液採集一覧",
+	"name": "樹液採取一覧",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/weeping_maple",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tappable tree in the world, sorted alphabetically.$(br)$(thing)Climate Data$() will tell you what Temperature and Rainfall the tree can appear in, while $(thing)Tapping Data$() will tell you details regarding production, flowrate, and whether the tree produces only in Spring."
+			"text": "これは、この世界で樹液採取できるすべての木をアルファベット順に並べた一覧です。$(br)$(thing)気候情報$()には、その木が生育する気温と降水量の条件が記載されています。$(thing)採取情報$()には、採取時の気温や季節などの条件と採取速度などの詳細が記載されています。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)Maple$()$(l:arborfirmacraft/tapping_index#birch)$(li)Birch$()$(l:arborfirmacraft/tapping_index#hevea)$(li)Hevea$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)Rubber Fig$()$(l:arborfirmacraft/tapping_index#kapok)$(li)Kapok$()$(l:arborfirmacraft/tapping_index#aspen)$(li)Aspen$()$(l:arborfirmacraft/tapping_index#spruce)$(li)Spruce$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)White Cedar$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)Douglas Fir$()"
+			"text": "$(l:arborfirmacraft/tapping_index#maple)$(li)カエデ$()$(l:arborfirmacraft/tapping_index#birch)$(li)シラカバ$()$(l:arborfirmacraft/tapping_index#hevea)$(li)パラゴムノキ$()$(l:arborfirmacraft/tapping_index#rubber_fig)$(li)\nインドゴムノキ$()$(l:arborfirmacraft/tapping_index#kapok)$(li)カポック$()$(l:arborfirmacraft/tapping_index#aspen)$(li)ヤマナラシ$()$(l:arborfirmacraft/tapping_index#spruce)$(li)トウヒ$()$(l:arborfirmacraft/tapping_index#white_cedar)$(li)ホワイトシダー$()$(l:arborfirmacraft/tapping_index#douglas_fir)$(li)ベイマツ$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "maple",
-			"title": "Maple",
+			"title": "カエデ",
 			"item": "tfc:wood/log/maple,tfc:wood/wood/maple,tfc:wood/leaves/maple,tfc:wood/sapling/maple",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -8.4°C$(br)$(thing)Maximum Temperature$(): 8°C$(br)$(thing)Minimum Rainfall$(): 240$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): -8.4°C$(br)$(thing)最高気温$(): 8°C$(br)$(thing)最小降水量$(): 240$(br)$(thing)最大降水量$(): 470$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -15°C$(br)$(thing)最高気温条件$(): 5°C$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 5mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/maple_tree.png"
 			],
-			"text": "$(thing)Produces$(): Maple Sap$(br)$(thing)Processes Into$(): Maple Sugar",
+			"text": "$(thing)産出$(): カエデ樹液$(br)$(thing)産出物の用途$(): メープルシュガー",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "birch",
-			"title": "Birch",
+			"title": "シラカバ",
 			"item": "tfc:wood/log/birch,tfc:wood/wood/birch,tfc:wood/leaves/birch,tfc:wood/sapling/birch",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -12.1°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 125$(br)$(thing)Maximum Rainfall$(): 310$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -15°C$(br)$(thing)Max Temp for Production$(): 5°C$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 5mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$():  -12.1°C$(br)$(thing)最高気温$():  6.1°C$(br)$(thing)最小降水量$(): 125$(br)$(thing)最大降水量$(): 310$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -15°C$(br)$(thing)最高気温条件$(): 5°C$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 5mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/birch_tree.png"
 			],
-			"text": "$(thing)Produces$(): Birch Sap$(br)$(thing)Processes Into$(): Birch Sugar",
+			"text": "$(thing)産出$(): シラカバ樹液$(br)$(thing)産出物の用途$(): バーチシュガー",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "hevea",
-			"title": "Hevea",
+			"title": "パラゴムノキ",
 			"item": "afc:wood/log/hevea,afc:wood/wood/hevea,afc:wood/leaves/hevea,afc:wood/sapling/hevea",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 26.2°C$(br)$(thing)Minimum Rainfall$(): 390$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): 17.1°C$(br)$(thing)最高気温$(): 26.2°C$(br)$(thing)最小降水量$(): 390$(br)$(thing)最大降水量$(): 500$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): 8°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 3mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/hevea_tree.png"
 			],
-			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"text": "$(thing)産出$(): ラテックス$(br)$(thing)産出物の用途$(): 粘性樹脂とゴム",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "rubber_fig",
-			"title": "Rubber Fig",
+			"title": "インドゴムノキ",
 			"item": "afc:wood/log/rubber_fig,afc:wood/wood/rubber_fig,afc:wood/leaves/rubber_fig,afc:wood/sapling/rubber_fig",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 9.8°C$(br)$(thing)Maximum Temperature$(): 20.7°C$(br)$(thing)Minimum Rainfall$(): 290$(br)$(thing)Maximum Rainfall$(): 400$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 4°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): 9.8°C$(br)$(thing)最高気温$(): 20.7°C$(br)$(thing)最小降水量$(): 290$(br)$(thing)最大降水量$(): 400$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): 4°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/rubber_fig_tree.png"
 			],
-			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"text": "$(thing)産出$(): ラテックス$(br)$(thing)産出物の用途$(): 粘性樹脂とゴム",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "kapok",
-			"title": "Kapok",
+			"title": "カポック",
 			"item": "tfc:wood/log/kapok,tfc:wood/wood/kapok,tfc:wood/leaves/kapok,tfc:wood/sapling/kapok",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): 17.1°C$(br)$(thing)Maximum Temperature$(): 38°C$(br)$(thing)Minimum Rainfall$(): 320$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): 12°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): 17.1°C$(br)$(thing)最高気温$(): 38°C$(br)$(thing)最小降水量$(): 320$(br)$(thing)最大降水量$(): 500$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): 12°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 4mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/kapok_tree.png"
 			],
-			"text": "$(thing)Produces$(): Latex$(br)$(thing)Processes Into$(): Sticky Resin & Rubber",
+			"text": "$(thing)産出$(): ラテックス$(br)$(thing)産出物の用途$(): 粘性樹脂とゴム",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "aspen",
-			"title": "Aspen",
+			"title": "ヤマナラシ",
 			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): -1.1°C$(br)$(thing)Minimum Rainfall$(): 350$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): -15.7°C$(br)$(thing)最高気温$(): -1.1°C$(br)$(thing)最小降水量$(): 350$(br)$(thing)最大降水量$(): 500$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -10°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/aspen_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)産出$(): 針葉樹液$(br)$(thing)産出物の用途$(): 粘性樹脂と針葉樹脂",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "spruce",
-			"title": "Spruce",
+			"title": "トウヒ",
 			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): -17.5°C$(br)$(thing)最高気温$(): -6.6°C$(br)$(thing)最小降水量$(): 220$(br)$(thing)最大降水量$(): 470$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -10°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 4mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/spruce_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)産出$(): 針葉樹液$(br)$(thing)産出物の用途$(): 粘性樹脂と針葉樹脂",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "white_cedar",
-			"title": "White Cedar",
+			"title": "ホワイトシダー",
 			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 0.7°C$(br)$(thing)Minimum Rainfall$(): 100$(br)$(thing)Maximum Rainfall$(): 285$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): -15.7°C$(br)$(thing)最高気温$(): 0.7°C$(br)$(thing)最小降水量$(): 100$(br)$(thing)最大降水量$(): 285$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -8°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 3mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)産出$(): 針葉樹液$(br)$(thing)産出物の用途$(): 粘性樹脂と針葉樹脂",
 			"border": true
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "douglas_fir",
-			"title": "Douglas Fir",
+			"title": "ベイマツ",
 			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 305$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)気候情報$()$(br)$(thing)最低気温$(): -15.7°C$(br)$(thing)最高気温$(): 6.1°C$(br)$(thing)最小降水量$(): 305$(br)$(thing)最大降水量$(): 500$(br2)$(bold)採取情報$()$(br)$(thing)最低気温条件$(): -8°C$(br)$(thing)最高気温条件$(): N/A$(br)$(thing)春季限定$(): いいえ$(br)$(thing)採取速度$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png"
 			],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
+			"text": "$(thing)産出$(): 針葉樹液$(br)$(thing)産出物の用途$(): 粘性樹脂と針葉樹脂",
 			"border": true
 		}
 	]
