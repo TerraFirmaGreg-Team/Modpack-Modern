@@ -511,6 +511,18 @@
 					title: "Any #tfg:rope_ladders"
 					type: "item"
 				}
+				{
+					id: "4F7AFA82DEF18BBC"
+					item: {
+						Count: 1
+						id: "diggerhelmet:digger_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{quests.metal_age.mining.title}"
 			x: -0.5d
