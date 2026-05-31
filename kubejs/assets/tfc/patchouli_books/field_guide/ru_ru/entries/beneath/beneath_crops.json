@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Содержание",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:tfc:beneath/beneath_crops#beans)Фасоль$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Призрачный перец$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:tfc:beneath/beneath_crops#beans)Чернитная фасоль$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Призрачный перец$()"
 		},
 		{
 			"type": "patchouli:text",
