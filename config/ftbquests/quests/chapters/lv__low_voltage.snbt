@@ -87,6 +87,13 @@
 			x: 0.0d
 			y: -6.0d
 		}
+		{
+			id: "00F47E7BD0D377EF"
+			linked_quest: "66E34DAA25149FC0"
+			shape: "heart"
+			x: 7.0d
+			y: -5.5d
+		}
 	]
 	quests: [
 		{
@@ -1933,7 +1940,6 @@
 		{
 			dependencies: [
 				"671F90ADCDF476A8"
-				"6FFD4990FF07078A"
 				"698DCAB4F014EB3B"
 			]
 			dependency_requirement: "one_completed"
@@ -2110,6 +2116,30 @@
 			title: "{quests.low_voltage.rancher.title}"
 			x: -2.0d
 			y: 19.5d
+		}
+		{
+			dependencies: ["37307A46E70011D3"]
+			description: ["{quests.tfg_tips.capsules.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			id: "69DA11F2EC7FAECC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.capsules.subtitle}"
+			tasks: [{
+				id: "265BDCE55CEDC38F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:medicine/capsules)"
+					}
+				}
+				title: "{quests.tfg_tips.capsules.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.capsules.title}"
+			x: 3.5d
+			y: 8.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

@@ -3,9 +3,9 @@
 	default_quest_shape: ""
 	filename: "mars"
 	group: "36FC51ACEF38D994"
-	icon: "ad_astra:mars_globe"
+	icon: "tfg:marker/mars"
 	id: "671B872DCEFCA5DD"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{

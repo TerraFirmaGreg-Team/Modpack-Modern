@@ -14,28 +14,13 @@
 		id: "gtceu:steel_gear"
 	}
 	id: "784A885090386609"
-	order_index: 2
+	order_index: 3
 	quest_links: [
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
 			x: -27.0d
 			y: 2.0d
-		}
-		{
-			id: "0CE64B9914191C56"
-			linked_quest: "6FFD4990FF07078A"
-			shape: "diamond"
-			x: -8.5d
-			y: 11.5d
-		}
-		{
-			id: "23A27702FF816291"
-			linked_quest: "6903C72A254A7B08"
-			shape: "octagon"
-			size: 2.0d
-			x: -11.5d
-			y: 8.0d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -80,6 +65,19 @@
 			size: 1.5d
 			x: -13.0d
 			y: 13.5d
+		}
+		{
+			id: "56FD630E00C6BF1A"
+			linked_quest: "031F9DC9BD21FA16"
+			shape: "diamond"
+			x: -8.5d
+			y: 11.5d
+		}
+		{
+			id: "0ED2F015B1ABE9E0"
+			linked_quest: "34055D52D947FD7A"
+			x: -11.5d
+			y: 8.0d
 		}
 	]
 	quests: [
@@ -677,8 +675,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"05BE9FE74E4F1AE9"
+				"031F9DC9BD21FA16"
 			]
 			description: ["{quests.steam_age.circuit_boards.desc}"]
 			icon: "gtceu:resin_printed_circuit_board"
@@ -787,8 +785,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"16CF5A9012EF4B27"
+				"031F9DC9BD21FA16"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.resistors.desc}"]
@@ -1156,7 +1154,7 @@
 			}]
 			title: "{quests.steam_age.potin.title}"
 			x: -2.5d
-			y: 14.75d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -1418,8 +1416,8 @@
 			dependencies: [
 				"69BDD31A69062B6C"
 				"43D0B4F2ACB9931B"
-				"6903C72A254A7B08"
 				"2C35D4E01AEC02AA"
+				"34055D52D947FD7A"
 			]
 			description: ["{quests.steam_age.lv_circuit.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
@@ -1605,8 +1603,8 @@
 		}
 		{
 			dependencies: [
-				"6FFD4990FF07078A"
 				"3E175E20C91F168B"
+				"031F9DC9BD21FA16"
 			]
 			description: ["{quests.steam_age.resin_boards.desc}"]
 			id: "05BE9FE74E4F1AE9"
@@ -2028,6 +2026,56 @@
 			}]
 			x: -9.0d
 			y: 14.0d
+		}
+		{
+			dependencies: [
+				"49896161B31DB7B4"
+				"5B891BA4897FD73C"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.tablets.desc}"]
+			id: "474B85F52F14AF52"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.tablets.subtitle}"
+			tasks: [{
+				id: "52585907F4BD07B6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:antipoison_tablet)item(tfg:haste_tablet)item(tfg:night_vision_tablet)item(tfg:poison_tablet)item(tfg:regeneration_tablet)item(tfg:slowness_tablet)item(tfg:speed_tablet)item(tfg:water_breathing_tablet)item(tfg:weakness_tablet))"
+					}
+				}
+				title: "{quests.tfg_tips.tablets.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.tablets.title}"
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["0D0D461AE3A3F7BF"]
+			description: ["{quests.tfg_tips.salvo.desc}"]
+			id: "1F1C8CD694E233E4"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.salvo.subtitle}"
+			tasks: [{
+				id: "051F16E4D540ADE8"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:absorption_salvo)item(tfg:fire_resistance_salvo)item(tfg:invisibility_salvo)item(tfg:luck_salvo)item(tfg:resistance_salvo)item(tfg:instant_health_salvo))"
+					}
+				}
+				title: "{quests.tfg_tips.salvo.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.salvo.title}"
+			x: -15.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

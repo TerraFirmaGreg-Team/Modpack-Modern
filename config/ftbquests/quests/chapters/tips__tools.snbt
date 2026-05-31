@@ -5,20 +5,12 @@
 	group: "19428C6E7A36D463"
 	icon: "create:white_toolbox"
 	id: "254D02A31AA8EB49"
-	order_index: 3
+	order_index: 2
 	quest_links: [
 		{
 			id: "1AD1F9822B738105"
 			linked_quest: "2E36E5755B2F551C"
 			x: 1.5d
-			y: 8.5d
-		}
-		{
-			id: "151A77C4CCD4B25F"
-			linked_quest: "150B7C5CD152E1BA"
-			shape: "octagon"
-			size: 2.0d
-			x: -4.5d
 			y: 8.5d
 		}
 		{
@@ -427,7 +419,6 @@
 			dependencies: [
 				"7FA5B6354A49C396"
 				"3C173357029AB649"
-				"4CD3F04793CE47A2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.backpack_materials.desc}"]
@@ -1386,7 +1377,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.glassblowing.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/glassworking"
 			icon: {
@@ -1443,7 +1434,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.trowel.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/trowel"
 			id: "26DFC32AD5DED4E9"
@@ -1464,7 +1455,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.fishing_net.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/fishing_nets"
 			id: "2A57C41D681E4611"
@@ -1487,8 +1477,8 @@
 		}
 		{
 			dependencies: [
-				"150B7C5CD152E1BA"
 				"0B140885C77A752D"
+				"205E3ACA10A16C23"
 			]
 			description: ["{quests.tfg_tips.cane.desc}"]
 			id: "75C6BF1C9405B4C7"
@@ -2008,7 +1998,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["72B3EA6588E18CCC"]
+			dependencies: [
+				"72B3EA6588E18CCC"
+				"174DA15847665CF8"
+			]
 			description: ["{quests.tfg_tips.grappling_hook.desc}"]
 			id: "7A200766AAC1EE19"
 			shape: "octagon"
@@ -2310,7 +2303,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: [
 				"{quests.tfg_tips.digger_helmet.desc.1}"
 				"{@pagebreak}"
@@ -2498,7 +2491,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.tools_tips.harvest_basket.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/harvest_baskets"
 			id: "5B0A9757F1EF1B9E"
@@ -2652,7 +2645,6 @@
 			dependencies: [
 				"509C064AA92FD78F"
 				"234B68E86F72C29E"
-				"4CD3F04793CE47A2"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.special_sacks.desc}"]
@@ -2748,7 +2740,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.hiking.desc}"]
 			guide_page: "tfc:field_guide tfc:sns/hiking_boots"
 			icon: {
@@ -2926,7 +2918,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.feeding_troughs.desc}"]
 			id: "343A712E8869482A"
 			subtitle: "{quests.tfg_tips.feeding_troughs.subtitle}"
@@ -2947,7 +2939,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.scraping_knives.desc}"]
 			id: "2301E2248A3560C8"
 			subtitle: "{quests.tfg_tips.scraping_knives.subtitle}"
@@ -2968,10 +2960,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"560B17BFBE8D477D"
-				"150B7C5CD152E1BA"
-			]
+			dependencies: ["205E3ACA10A16C23"]
 			description: ["{quests.tfg_tips.tools_tips.swim_gear.desc}"]
 			id: "615361AD621B588E"
 			subtitle: "{quests.tfg_tips.tools_tips.swim_gear.subtitle}"
@@ -2990,6 +2979,33 @@
 			title: "{quests.tfg_tips.tools_tips.swim_gear.title}"
 			x: -4.5d
 			y: 6.0d
+		}
+		{
+			description: ["{quests.tfg_tips.terrafirmacraft.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 64224000L
+						traits: [ ]
+					}
+				}
+				id: "tfc:food/green_apple"
+			}
+			id: "205E3ACA10A16C23"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.terrafirmacraft.subtitle}"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "72690323A7878761"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
+			}]
+			title: "{quests.tfg_tips.terrafirmacraft.title}"
+			x: -4.5d
+			y: 8.25d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.tools_tips.subtitle}"]

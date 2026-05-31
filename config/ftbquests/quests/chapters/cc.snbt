@@ -701,6 +701,7 @@
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.cc_peripherals.desc}"]
 			hide_dependent_lines: true
+			icon: "gtceu:portable_scanner"
 			id: "160EC57392A6C5D5"
 			tasks: [{
 				id: "621B3390C334FC39"
@@ -715,6 +716,7 @@
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.ap_peripherals.desc}"]
 			hide_dependent_lines: true
+			icon: "gtceu:portable_debug_scanner"
 			id: "3058785E70954678"
 			tasks: [{
 				id: "1270FE6363C041E3"
@@ -729,6 +731,7 @@
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.create_peripherals.desc}"]
 			hide_dependent_lines: true
+			icon: "gtceuterminal:schematic_interface"
 			id: "6226DDF4F16D439B"
 			tasks: [{
 				id: "73775B77514366BB"
@@ -742,6 +745,7 @@
 		{
 			dependencies: ["5F2D9F4908401D0D"]
 			description: ["{quests.computer.peripherals.desc}"]
+			icon: "gtceu:terminal"
 			id: "0B55AC33D41FED67"
 			optional: true
 			subtitle: "{quests.computer.peripherals.subtitle}"
@@ -840,6 +844,7 @@
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.generic_peripherals.desc}"]
 			hide_dependent_lines: true
+			icon: "gtceu:machine_memory_card"
 			id: "7D22D66DC480F2A7"
 			subtitle: "{quests.computer.generic_peripherals.subtitle}"
 			tasks: [{
@@ -854,6 +859,7 @@
 		{
 			dependencies: ["0B55AC33D41FED67"]
 			description: ["{quests.computer.gregtech_peripherals.desc}"]
+			icon: "gtceuterminal:energy_analyzer"
 			id: "3F927702B5072A68"
 			tasks: [{
 				id: "3EC7C1131D382607"
