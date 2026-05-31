@@ -111,8 +111,8 @@ TFCEvents.createChunkDataProvider('moon', event => {
 	event.full((data, chunk) => {
 		data.generateFull(heights, EMPTY_AQUIFER)
 	})
-	event.rocks((x, y, z, surfaceY, cache, rockLayers) => {
-		return rockLayers.sampleAtLayer(0, 0)
+	event.rocks((x, y, z, surfaceY, cache, rockSettings) => {
+		return rockSettings.sampleAtLayer(0, 0)
 	})
 })
 
