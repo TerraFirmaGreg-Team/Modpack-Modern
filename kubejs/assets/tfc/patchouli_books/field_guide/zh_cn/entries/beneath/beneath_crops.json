@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生木薯$()生长于【占位符】。",
+			"text": "$(thing)野生木薯$()生长于Y=80至Y=203之间。",
 			"enable_visualize": false
 		},
 		{
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生花生$()生长于【占位符】。",
+			"text": "$(thing)野生花生$()生长于Y=80至Y=203之间。",
 			"enable_visualize": false
 		},
 		{
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生黑石豆$()生长于【占位符】。",
+			"text": "$(thing)野生黑石豆$()生长于Y=32至Y=158之间。",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生鬼椒$()生长于【占位符】。",
+			"text": "$(thing)野生鬼椒$()生长于Y=32至Y=158之间。",
 			"enable_visualize": false
 		}
 	],

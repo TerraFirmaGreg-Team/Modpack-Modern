@@ -29,7 +29,7 @@
 			"images": [
 				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
 			],
-			"text": "The bloomery consumes $(thing)1 Charcoal$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
+			"text": "Dymarka zużywa $(thing)1 węgiel drzewny$() i $(thing)144 mW Żeliwa$(), by stworzyć jeden kawałek $(thing)surówki$().",
 			"border": true
 		},
 		{
@@ -52,7 +52,7 @@
 				}
 			},
 			"name": "Blok surówki",
-			"text": "A large $(thing)Bloom$().",
+			"text": "Duży $(thing)kawałek surówki$().",
 			"enable_visualize": false
 		},
 		{
