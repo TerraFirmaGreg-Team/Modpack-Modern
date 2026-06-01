@@ -233,6 +233,10 @@
 	"tfg.rock_patchouli_info.dripstone": "Travertínó",
 	"tfg.rock_patchouli_info.granite": "Gránit",
 	"tfg.rock_patchouli_info.tuff": "Tufa",
+	"quests.beneath": "A mélység",
+	"quests.tfg_tips.beneath.title": "A mélység",
+	"quests.tfg_tips.juicer.title": "Facsaró",
+	"quests.tfg_tips.red_elk.title": "Vörös jávorszarvas",
 	"quests.combat_tips.wood_shield.title": "Fapajzs",
 	"quests.computer.ap_peripherals.title": "Advanced Peripherals",
 	"quests.computer.tank.title": "Folyadéktartály",
@@ -271,7 +275,6 @@
 	"quests.stone_age.pit_kiln.title": "Veremkemence",
 	"quests.tfg_tips.hazard_materials.title": "Vestélyes Anyagok",
 	"quests.tfg_tips.charcoal_pile.title": "Faszén kupac",
-	"quests.tfg_tips.pineapple_leather.title": "Ananászbőr",
 	"quests.tfg_tips.chalk.title": "Kréta",
 	"quests.tfg_tips.firmaciv.title": "Firma: Civilization",
 	"quests.tfg_tips.greenhouse.title": "Üvegház",
@@ -279,7 +282,5 @@
 	"quests.tfg_tips.beeswax.title": "Méhviasz",
 	"quests.tfg_tips.oven.title": "Kemence",
 	"quests.tfg_tips.bacon.title": "Szalonna",
-	"quests.tfg_tips.composter.title": "Komposztáló",
-	"quests.tfg_tips.beneath.title": "A mélység",
-	"quests.tfg_tips.juicer.title": "Facsaró"
+	"quests.tfg_tips.composter.title": "Komposztáló"
 }
