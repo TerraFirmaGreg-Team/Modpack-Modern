@@ -12,7 +12,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Адские кирпичи — это строительный блок, который также используется для Адской кузницы."
+			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$()."
 		},
 		{
 			"type": "patchouli:spotlight",

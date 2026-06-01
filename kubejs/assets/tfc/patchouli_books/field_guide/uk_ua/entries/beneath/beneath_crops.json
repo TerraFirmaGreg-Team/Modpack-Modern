@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий маніок$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дикий маніок$() росте між Y=203 та Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий арахіс$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дикий арахіс$() росте між Y=203 and Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дика чорнокам’яна квасоля$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дика чорнокам’яна квасоля$() росте між Y=158 and Y=32.",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикі примарні перці$() ростуть у PLACEHOLDER.",
+			"text": "$(thing)Дикі примарні перці$() ростуть між Y=158 and Y=32.",
 			"enable_visualize": false
 		}
 	],

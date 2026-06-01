@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Peanuts$() grow in PLACEHOLDER.",
+			"text": "$(thing)Wild Peanuts$() grow between Y=203 and Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Blackstone Beans$() grow in PLACEHOLDER.",
+			"text": "$(thing)Wild Blackstone Beans$() grow between Y=158 and Y=32.",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Ghost Peppers$() grow in PLACEHOLDER.",
+			"text": "$(thing)Wild Ghost Peppers$() grow between Y=158 and Y=32.",
 			"enable_visualize": false
 		}
 	],

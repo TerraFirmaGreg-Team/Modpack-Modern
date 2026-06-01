@@ -17,24 +17,24 @@
             "type": "patchouli:text",
             "title": "Basics",
             "anchor": "basics",
-            "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
+            "text": "TerraFirmaCraftでは、満腹度だけでなく喉の渇きも管理しなければなりません。空腹システムはバニラと似ており、多くの食べ物は空腹ゲージの約5分の1を回復します。ただし、$(thing)ガマの根$()のように回復量が少ない食べ物もあります。食べ物を食べると$(thing)腹持ち$()も回復します。これは隠し満腹度を表す値です。食料や水分が不足すると、移動速度が低下し、さらにダメージを受けるようになります。死亡しても栄養状態や汚染度はリセットされません。"
         },
         {
             "type": "patchouli:text",
-            "text": "Some foods are very filling, so they keep you from losing hunger for longer, while some foods have a short-lived effect.$(br2)You will lose hunger just from regular gameplay. Hunger drains faster if you do things like sprint, swim, or become $(l:getting_started/size_and_weight#overburdening)Overburdened$(). Information about the $(thing)Saturation$(), $(thing)Water$(), as well as $(thing)Nutrients$() available from a food is available by hovering over it in your inventory. Using $(item)$(k:key.sneak)$() reveals the full tooltip."
+            "text": "食べ物によって満腹感の持続時間は異なります。非常に腹持ちの良い食べ物もあれば、効果がすぐに切れてしまう食べ物もあります。$(br2)空腹度は通常のプレイをしているだけでも減少していきます。さらに、ダッシュしたり、泳いだり、$(l:getting_started/size_and_weight#overburdening)過労$()状態になったりすると、空腹度の減少が早くなります。食べ物から得られる$(thing)腹持ち$()、$(thing)水分$()、$(thing)栄養素$()の情報は、インベントリ内でそのアイテムにカーソルを合わせることで確認できます。$(item)$(k:key.sneak)$()を押している間は、詳細なツールチップが表示されます。"
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:mechanics/decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "すべての食べ物には、情報が記載されたツールチップがあります。ツールチップには食べ物の$(l:mechanics/decay)腐るまでの期限$()も表示されており、保存処理によって期限を延ばすことができます。この情報を見る際に重要なのは、すべての食べ物に栄養価があるわけではないということです。例えば、$(l:mechanics/bread)パン生地$()は食べ物ではありますが、栄養素・腹持ち・水分のいずれも持っていません。そのため、食べてもほとんどメリットはありません。"
         },
         {
             "type": "patchouli:text",
-            "text": "A food tooltip may look like:$(br2)$(bold)Orange$()$(br)  $(2)$(bold)Expires on: 11:59 July 6, 1004 (in 1 month(s) and 1 day(s))$()$(br)  $(8)Nutrition:$(br)  - Saturation: 2%$(br)  - Water: 10%$(br)$(a)  - Fruit: 0.5"
+            "text": "ツールチップ表示の例：$(br2)$(bold)オレンジ$()$(br) $(2)$(bold)11:59 7月6日, 1004年 に腐る（あと1か月 1日）$()$(br) $(8)栄養素：$(br) - 腹持ち：2%$(br) - 水分：10%$(br)$(a) - 果物：0.5"
         },
         {
             "type": "patchouli:text",
             "anchor": "thirst",
-            "text": "Thirst is the level of water in your body. It depletes at a similar rate to hunger. At high temperatures or levels of high hunger usage, your thirst will deplete faster. Luckily, drinking $(thing)Fresh Water$() replenishes thirst. This can be done by clicking $(item)$(k:key.use)$() on a water block. Drinking saltwater causes you to lose thirst, and even has a chance of giving you the $(thing)Thirst$() effect, which will drain you even more.",
+            "text": "喉の渇きは、体内の水分量を表す値です。減少する速度は空腹度とほぼ同じですが、高温環境にいる場合や空腹度の消費が激しい行動をしている場合は、より速く減少します。幸いにも、$(thing)淡水$()を飲むことで喉の渇きを回復できます。水源に向かって$(item)$(k:key.use)$()を押すことで水を飲めます。なお、海水を飲むと喉の渇きが回復するどころか減少し、さらに$(thing)渇き$()の効果を受けることがあります。この効果は喉の渇きの減少をさらに加速させます。",
             "title": "喉の渇き"
         },
         {
@@ -56,18 +56,18 @@
                     "Y": "tfc:plant/cattail[part=lower,fluid=water]"
                 }
             },
-            "name": "Water Safety",
-            "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
+            "name": "安全な水",
+            "text": "海水を避けるには、川、湖、$(thing)ガマ$()などの淡水植物を探してください。",
             "enable_visualize": false
         },
         {
             "type": "tfc:knapping_recipe",
             "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "text": "粘土の$(l:getting_started/pottery)ナッピング$()で成型し、焼成した$(l:getting_started/pottery#jug)水差し$()を使えば、飲み水を持ち運べるようになります。$(item)$(k:key.use)$()で水を汲むことができ、水が入った状態で$(item)$(k:key.use)$()を長押しすると、水を飲めます。"
         },
         {
             "type": "patchouli:text",
-            "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$()."
+            "text": "$(l:waterflasks)水筒$()や$(l:mechanics/glassworking)ガラス瓶$()などでも飲み水を持ち運ぶことができ、それぞれ性能が異なります。"
         },
         {
             "type": "patchouli:text",
@@ -86,7 +86,7 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
-            "text": "There are five nutrients, all obtainable from food: $(l)$(a)Fruit$()$(), $(l)$(2)Vegetables$()$(), $(l)$(c)Protein$()$(), $(l)$(6)Grain$()$(), and $(l)$(5)Dairy$()$(). Eating food gives you its nutrients. Meals such as $(l:mechanics/pot#soup)Soup$() combine more nutrients into one meal. Often meals will borrow the nutrients from their ingredients directly. This is important, because meals you ate a while ago don't count towards your nutrition.",
+            "text": "栄養素には5種類あり、様々な食べ物から摂取できます。$(l)$(a)果物$()$()、$(l)$(2)野菜$()$()、$(l)$(c)タンパク質$()$()、$(l)$(6)穀物$()$()、そして$(l)$(5)乳製品$()$()。食べ物を食べると、その食べ物に含まれる栄養素を得られます。$(l:mechanics/pot#soup)スープ$()のような料理は、複数の栄養素を一度に摂取できる食事です。多くの料理は材料の栄養素をそのまま引き継ぎます。また、食べ飽きのようなシステムがあり、少し前に食べた食事をもう一度食べても栄養素として摂取することができないため、このような料理で栄養素を摂取することが重要になります。",
             "title": "Nutrients"
         },
         {
@@ -102,7 +102,7 @@
             "title": "果物",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)Fruit$()$() nutrients are mostly found from $(l:the_world/wild_fruits)Fruiting Plants$(), like berry bushes, and fruit trees. A notable exception to this is $(l:mechanics/crops#pumpkin)Pumpkins$() and $(l:mechanics/crops#pumpkin)Melons$(), which nutritionally are fruits.$(br2)Increasing your fruit value gives the following effects:$()$(li)$(bold)Average >55% → $()$()$(italic)Decreases thirst usage by 25%.$()$(li)$(bold)Average >85% → $()$()$(italic)Increases mining speed by 30%.$()"
+            "text": "$(l)$(a)果物$()$()の栄養素は、主にベリーの茂みや果樹などの$(l:the_world/wild_fruits)果実植物$()から得られます。例外として、$(l:mechanics/crops#pumpkin)カボチャ$()と$(l:mechanics/crops#pumpkin)スイカ$()は畑で育てられますが、果物の栄養素を含んでいます。$(br2)果物の栄養素を摂取すると、次の効果を得られます。$()$(li)$(bold)55％以上 → $()$()$(italic)喉が渇く速度が25％遅くなる。$()$(li)$(bold)85％以上 → $()$()$(italic)採掘速度が30％上昇する。$()"
         },
         {
             "title": "野菜",
@@ -126,7 +126,7 @@
             "title": "乳製品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)Dairy$()$() comes from $(thing)Milk$(), which is derived from $(l:mechanics/animal_husbandry#dairy_animals)Dairy Animals$(). Processing and drinking milk is covered on the $(l:firmalife/cheese)Dairy$() page.$(br2)Increasing your dairy value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives the $(thing)Feather Falling I$() effect.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the $(thing)Feather Falling IV$() effect.$()"
+            "text": "$(l)$(5)乳製品$()$()の栄養素は$(thing)ミルク$()から得られます。ミルクは$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()から採取できます。ミルクの加工や飲用については、$(l:firmalife/cheese)乳製品$()のページで詳しく説明されています。$(br2)乳製品の栄養値を摂取すると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)$(thing)落下耐性 I$()の効果を得る。$()$(li)$(bold)85%以上 → $()$()$(italic)$(thing)落下耐性 IV$()の効果を得る。$()"
         },
         {
             "type": "patchouli:text",

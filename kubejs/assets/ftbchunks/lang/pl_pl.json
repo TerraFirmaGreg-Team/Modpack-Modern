@@ -159,6 +159,7 @@
   "ftbchunks.waypoints.death_waypoint_autoremove_distance": "Odległość automatycznego usuwania punktów śmierci",
   "ftbchunks.waypoints.death_waypoints": "Utwórz punkty nawigacyjne po śmierci",
   "ftbchunks.waypoints.in_world_waypoints": "Pokaż punkty nawigacyjne w świecie",
+  "ftbchunks.waypoints.waypoint_dot_fade_distance": "Min. odległość zanikania kropki",
   "ftbchunks.waypoints.waypoint_fade_distance": "Min. odległość zanikania nadajnika",
   "ftbchunks.waypoints.waypoint_max_distance": "Maksymalna odległość rysowania punktów nawigacyjnych",
   "ftbteamsconfig.ftbchunks": "Właściwości FTB Chunks",
