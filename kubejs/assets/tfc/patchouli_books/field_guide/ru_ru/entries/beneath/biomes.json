@@ -5,16 +5,25 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "В Бездне есть полный набор новых биомов для исследования! Большинство из них делятся на две категории: $(thing)верхние$() и $(thing)нижние$(). Верхние биомы встречаются на верхних уровнях Бездны, в то время как нижние расположены в ближе к лаве."
+			"text": "В Бездне есть полный набор новых биомов для исследования! Бездну можно поделить на три вертикальных уровня, каждый из которых имеют свои биомы. Каждый из них лишь горячее и опаснее, пока вы спускаетесь!"
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Пышная лощина",
+			"title": "Соляные пещеры",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
-			"text": "Влажно и полно зелени! Самая гостеприимная зона для подземной базы."
+			"text": "Как тёплый океанский бриз, этот биом полон $(item)Галита$(). Отличное место для базы!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Знойная трясина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
+			],
+			"border": true,
+			"text": "Влажная и болотная. Безопасный источник дерева, если ты умеешь уклоняться от $(thing)Крокодилов$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -32,7 +41,43 @@
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
-			"text": "Ни за что не угадаете, кто тут обитает! А, и в этом месте можно найти огромные $(thing)Травертиновые$() сталагнаты или колонны."
+			"text": "Ни за что не угадаете, кто тут обитает! А, и в этом месте можно найти огромные $(thing)Травертиновые$() колонны."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Смолистые озера",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
+			],
+			"border": true,
+			"text": "Песочная, словно небольшая пустыня, эта область полна липких $(thing)Дёгтевых ям$(), полных нефти."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Геотермальные источники",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
+			],
+			"border": true,
+			"text": "Обойдёмся без Серных кубов, но этот горячий биом отличное место, чтобы найти $(thing)Родниковую воду$() для лечения."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Терновая роща",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
+			],
+			"border": true,
+			"text": "Труднопроходимый биом с растениями, которые влияют на тебя при наступании на них. Берегись!"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Пышная лощина",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
 		},
 		{
 			"type": "patchouli:image",
@@ -60,15 +105,6 @@
 			],
 			"border": true,
 			"text": "Любимый всеми адский биом возвращается и по-прежнему так же опасен для исследования."
-		},
-		{
-			"type": "patchouli:image",
-			"title": "Глубокие пещеры",
-			"images": [
-				"tfg:textures/gui/field_guide/nether/deep_caves.png"
-			],
-			"border": true,
-			"text": "Между другими биомами находятся более простые области из габбро, сланца, гранита, диорита и гнейса.$(br)"
 		}
 	],
 	"read_by_default": true

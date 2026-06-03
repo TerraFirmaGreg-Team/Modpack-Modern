@@ -11,7 +11,7 @@
 			"type": "patchouli:image",
 			"title": "繁茂空谷",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
 			"border": true,
 			"text": "湿润且植被茂盛！是地下基地最宜居的区域。"
@@ -20,7 +20,7 @@
 			"type": "patchouli:image",
 			"title": "腐化洞窟",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
+				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
 			"border": true,
 			"text": "大自然在此努力分解腐烂物质——这里是潮湿且充满腐殖质的地方。"
@@ -29,7 +29,7 @@
 			"type": "patchouli:image",
 			"title": "蛛网巢穴",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
+				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
 			"border": true,
 			"text": "不用猜也知道住在这里的是什么生物！也包含巨大的 $(thing)石灰华$() 柱。"
@@ -38,7 +38,7 @@
 			"type": "patchouli:image",
 			"title": "灰烬森林",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
 			"border": true,
 			"text": "因高温引发频繁火灾后，茂密深渊残留下来的地貌。"
@@ -47,7 +47,7 @@
 			"type": "patchouli:image",
 			"title": "熔岩浮岛",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
 			"border": true,
 			"text": "富含矿产的 $(thing)辉长岩$() 地区，被岩浆河流分割。"
@@ -56,7 +56,7 @@
 			"type": "patchouli:image",
 			"title": "玄武岩三角洲",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
 			"border": true,
 			"text": "大家熟悉的下界地形回归了，仍然和以前一样危险。"
@@ -65,10 +65,46 @@
 			"type": "patchouli:image",
 			"title": "深层岩窟",
 			"images": [
-				"tfg:textures/gui/field_guide/nether/deep_caves.png"
+				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],
 			"border": true,
 			"text": "在其他地形之间，是更多平淡的区域，包括辉长岩、片岩、花岗岩、闪长岩和片麻岩。$(br)"
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lush Hollow",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
+			],
+			"border": true,
+			"text": "Hot and full of greenery! The dense ferns hides the underlying $(thing)Kaolin Clay$()."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Ash Forest",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/ash_forest.png"
+			],
+			"border": true,
+			"text": "What remains of the Lush Hollow after the frequent fires caused by the heat."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Lava Floes",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/lava_floes.png"
+			],
+			"border": true,
+			"text": "An ore-rich $(thing)Pyroxenite$() area crisscrossed with rivers of lava."
+		},
+		{
+			"type": "patchouli:image",
+			"title": "Basalt Deltas",
+			"images": [
+				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
+			],
+			"border": true,
+			"text": "Everyone's favourite nether biome returns, and is just as dangerous to navigate as ever."
 		}
 	],
 	"read_by_default": true
