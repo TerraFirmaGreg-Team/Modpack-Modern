@@ -10,60 +10,60 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		//#region Flour Processing
 
 		// Raw crop to grain
-		global.processorRecipe(event, `${grain}_grain`, 100, 8, {
+		global.processorRecipe(event, `${grain.name}_grain`, 100, 8, {
 			circuit: 30,
-			itemInputs: [`tfc:food/${grain}`],
-			itemOutputs: [`tfc:food/${grain}_grain`],
-			itemOutputProvider: TFC.isp.of(`tfc:food/${grain}_grain`).copyOldestFood()
+			itemInputs: [`tfc:food/${grain.name}`],
+			itemOutputs: [`tfc:food/${grain.name}_grain`],
+			itemOutputProvider: TFC.isp.of(`tfc:food/${grain.name}_grain`).copyOldestFood()
 		});
 
 		//  Grain to flour
-		global.processorRecipe(event, `${grain}_flour`, 100, 8, {
+		global.processorRecipe(event, `${grain.name}_flour`, 100, 8, {
 			circuit: 31,
-			itemInputs: [`tfc:food/${grain}_grain`],
-			itemOutputs: [`2x tfc:food/${grain}_flour`],
-			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_flour`).copyOldestFood()
+			itemInputs: [`tfc:food/${grain.name}_grain`],
+			itemOutputs: [`2x tfc:food/${grain.name}_flour`],
+			itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_flour`).copyOldestFood()
 		});
 
 		event.recipes.tfc.advanced_shaped_crafting(
-			TFC.isp.of(`tfc:food/${grain}_flour`).copyFood(), [
+			TFC.isp.of(`tfc:food/${grain.name}_flour`).copyFood(), [
 				'A',
 				'B'
 			], {
-				A: TFC.ingredient.notRotten(`tfc:food/${grain}_grain`),
+				A: TFC.ingredient.notRotten(`tfc:food/${grain.name}_grain`),
 				B: '#forge:tools/mortars'
-			}, 0, 0).id(`tfg:mortar/${grain}_flour`);
+			}, 0, 0).id(`tfg:mortar/${grain.name}_flour`);
 
 		//#endregion
 		//#region Bread
 
 		// Flatbread dough
-		global.processorRecipe(event, `${grain}_flatbread_dough`, 300, 8, {
-			itemInputs: [`tfc:food/${grain}_flour`],
-			itemOutputs: [`4x tfc:food/${grain}_dough`],
+		global.processorRecipe(event, `${grain.name}_flatbread_dough`, 300, 8, {
+			itemInputs: [`tfc:food/${grain.name}_flour`],
+			itemOutputs: [`4x tfc:food/${grain.name}_dough`],
 			circuit: 1,
 			fluidInputs: ['#tfg:clean_water 100'],
-			itemOutputProvider: TFC.isp.of(`4x tfc:food/${grain}_dough`).copyFood()
+			itemOutputProvider: TFC.isp.of(`4x tfc:food/${grain.name}_dough`).copyFood()
 		});
 
 		// Firmalife dough
-		global.processorRecipe(event, `${grain}_dough`, 300, 16, {
-			itemInputs: [`tfc:food/${grain}_flour`, `#tfc:sweetener`],
-			itemOutputs: [`4x firmalife:food/${grain}_dough`],
+		global.processorRecipe(event, `${grain.name}_dough`, 300, 16, {
+			itemInputs: [`tfc:food/${grain.name}_flour`, `#tfc:sweetener`],
+			itemOutputs: [`4x firmalife:food/${grain.name}_dough`],
 			circuit: 1,
 			fluidInputs: [Fluid.of('firmalife:yeast_starter', 200)],
-			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${grain}_dough`).copyFood()
+			itemOutputProvider: TFC.isp.of(`4x firmalife:food/${grain.name}_dough`).copyFood()
 		});
 
 		// Bread baking
-		global.cookingRecipe(event, `${grain}_flatbread`, `tfc:food/${grain}_dough`, `firmalife:food/${grain}_flatbread`)
-		global.cookingRecipe(event, `${grain}_bread`, `firmalife:food/${grain}_dough`, `tfc:food/${grain}_bread`)
+		global.cookingRecipe(event, `${grain.name}_flatbread`, `tfc:food/${grain.name}_dough`, `firmalife:food/${grain.name}_flatbread`)
+		global.cookingRecipe(event, `${grain.name}_bread`, `firmalife:food/${grain.name}_dough`, `tfc:food/${grain.name}_bread`)
 
-		global.processorRecipe(event, `${grain}_bread_slice`, 10, 8, {
+		global.processorRecipe(event, `${grain.name}_bread_slice`, 10, 8, {
 			circuit: 1,
-			itemInputs: [`tfc:food/${grain}_bread`],
-			itemOutputs: [`2x firmalife:food/${grain}_slice`],
-			itemOutputProvider: TFC.isp.of(`2x firmalife:food/${grain}_slice`).copyOldestFood()
+			itemInputs: [`tfc:food/${grain.name}_bread`],
+			itemOutputs: [`2x firmalife:food/${grain.name}_slice`],
+			itemOutputProvider: TFC.isp.of(`2x firmalife:food/${grain.name}_slice`).copyOldestFood()
 		});
 	});
 
@@ -402,6 +402,88 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		itemOutputs: ['4x firmalife:food/hardtack_dough'],
 		circuit: 3,
 		itemOutputProvider: TFC.isp.of('4x firmalife:food/hardtack_dough').copyFood()
+	});
+
+	//#endregion
+	//#region Smoothies
+
+	global.FOOD_FRUIT.forEach(fruit => {
+
+		// Smoothie from yogurt.
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of('tfg:food/smoothie').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+				(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
+			),
+			[
+				TFC.ingredient.notRotten(fruit.id),
+				TFC.ingredient.notRotten(fruit.id),
+				TFC.ingredient.notRotten('tfg:food/yogurt'),
+				TFC.ingredient.notRotten('firmalife:ice_shavings'),
+				'#forge:tools/mortars'
+			]
+		).id(`tfg:crafting/smoothie/${fruit.name}`);
+
+		global.processorRecipe(event, `smoothie/${fruit.name}`, 60, GTValues.VA[GTValues.ULV], {
+			itemInputs: [`2x ${fruit.id}`, 'tfg:food/yogurt', 'firmalife:ice_shavings'],
+			itemOutputs: ['tfg:food/smoothie'],
+			notConsumable: ['#forge:buzz_saw_heads'],
+			itemOutputProvider: TFC.isp.of('tfg:food/smoothie').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+				(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
+			)
+		});
+
+	});
+
+	// Smoothie from fruit yogurt.
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
+			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
+		),
+		[
+			TFC.ingredient.notRotten('tfg:food/fruit_yogurt'),
+			TFC.ingredient.notRotten('firmalife:ice_shavings'),
+			'#forge:tools/mortars'
+		],
+		'tfg:food/fruit_yogurt'
+	).id('tfg:crafting/smoothie/fruit_yogurt');
+
+	global.processorRecipe(event, 'smoothie/fruit_yogurt', 60, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['tfg:food/fruit_yogurt', 'firmalife:ice_shavings'],
+		itemOutputs: ['tfg:food/smoothie'],
+		notConsumable: ['#forge:buzz_saw_heads'],
+		itemOutputProvider: TFC.itemStackProvider.of('tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
+			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
+		)
+	});
+
+	// Smoothie from fruit juice.
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('2x tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
+			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+			[(portion) => portion.nutrientModifier(1).saturationModifier(1.1)]
+		),
+		[
+			TFC.ingredient.notRotten('tfg:food/juice'),
+			TFC.ingredient.notRotten('tfg:food/yogurt'),
+			TFC.ingredient.notRotten('firmalife:ice_shavings'),
+			TFC.ingredient.notRotten('firmalife:ice_shavings'),
+			'#forge:tools/mortars'
+		],
+		'tfg:food/juice'
+	).id('tfg:crafting/smoothie/fruit_juice');
+
+	global.processorRecipe(event, 'smoothie/fruit_juice', 60, GTValues.VA[GTValues.ULV], {
+		itemInputs: ['tfg:food/juice', 'tfg:food/yogurt', '2x firmalife:ice_shavings'],
+		itemOutputs: ['2x tfg:food/smoothie'],
+		notConsumable: ['#forge:buzz_saw_heads'],
+		itemOutputProvider: TFC.itemStackProvider.of('2x tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
+			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
+			[(portion) => portion.nutrientModifier(1).saturationModifier(1.1)]
+		)
 	});
 
 	//#endregion

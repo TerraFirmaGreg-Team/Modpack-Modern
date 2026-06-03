@@ -184,6 +184,53 @@ function registerTFGBasicProcessingFoodRecipes(event) {
 	global.generateWaterBoilingFoodRecipes(event, '#forge:eggs', 'tfc:food/boiled_egg', true, false, true, 2);
 
 	//#endregion
+	//#region Fruit Processing
+
+	global.FOOD_FRUIT.forEach(fruit => {
+
+		// Juice
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of('tfg:food/juice').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+			(food) => food.hunger(4).decayModifier(1.5).water(15).quenching(3),
+			[(portion) => portion.nutrientModifier(1.1).saturationModifier(1.5)]
+		),
+			[
+				TFC.ingredient.notRotten(fruit.id),
+				TFC.ingredient.notRotten(fruit.id),
+				TFC.ingredient.notRotten(fruit.id),
+				'tfc:empty_jar',
+				'firmalife:cork',
+				'#forge:tools/mortars'
+			]
+		).id(`tfg:crafting/juice/${fruit.name}`);
+
+		global.processorRecipe(event, `juice/${fruit.name}`, 60, GTValues.VA[GTValues.ULV], {
+			itemInputs: [`3x ${fruit.id}`, 'tfc:empty_jar', 'firmalife:cork'],
+			itemOutputs: ['tfg:food/juice'],
+			notConsumable: ['#firmalife:barrel_presses'],
+			itemOutputProvider: TFC.isp.of('tfg:food/juice').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+				(food) => food.hunger(4).decayModifier(1.5).water(15).quenching(3),
+				[(portion) => portion.nutrientModifier(1.1).saturationModifier(1.5)]
+			)
+		});
+
+	});
+
+	event.recipes.tfc.barrel_instant()
+		.outputItem('tfc:empty_jar')
+		.inputItem('tfg:food/juice')
+		.inputFluid(TFC.fluidStackIngredient('#tfg:clean_water', 100))
+		.sound('minecraft:entity.generic.splash')
+		.id('tfg:barrel/juice_washing');
+
+	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/juice_washing')
+		.itemInputs('tfg:food/juice')
+		.itemOutputs('tfc:empty_jar')
+		.inputFluids('#tfg:clean_water 100')
+		.duration(20*1)
+		.EUt(GTValues.VA[GTValues.ULV]);
+
+	//#endregion
 	//#region Chemicals
 
 	// Crude Gelatin
