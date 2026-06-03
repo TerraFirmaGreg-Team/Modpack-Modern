@@ -13,7 +13,7 @@ function registerTFGSlimeBiomeTags(event) {
     event.add('tfg:slime_habitat', 'tfg:nether/salt_caves')
     event.add('tfg:slime_habitat', 'tfg:nether/lava_floes')
     event.add('tfg:slime_habitat', 'tfg:nether/ash_forest')
-    event.add('tfg:slime_habitat', 'tfg:nether/webbed_lair')
+    event.add('tfg:slime_habitat', 'tfg:nether/basalt_deltas')
 
     // Plant Slime
     event.add('tfg:nether/plant_slime_habitat', 'tfg:nether/muggy_bog')
@@ -31,7 +31,5 @@ function registerTFGSlimeBiomeTags(event) {
     // Lava Slime
     event.add('tfg:nether/lava_slime_habitat', 'tfg:nether/lava_floes')
     event.add('tfg:nether/lava_slime_habitat', 'tfg:nether/ash_forest')
-
-    // Latex Slime
-    event.add('tfg:nether/latex_slime_habitat', 'tfg:nether/webbed_lair')
+    event.add('tfg:nether/lava_slime_habitat', 'tfg:nether/basalt_deltas')
 }
