@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematite, Limonite, Goethite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematite, Limonite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lazurite, Sodalite, Lapis...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorianite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorianite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartz, Barite, Asbestos...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone, Ruby, Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Scheelite, Tungstate, Lithium...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite, Nickel, Galena...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Sulfur, Pyrite, Sphalerite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Sylvite, Halite, Lepidolite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetrahedrite, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetrahedrite, Native Copper...$()$()",
+      "text": "$(li)$(l:tfg_ores/mars_vein_index#mars_hematite)Hematite, Limonite, Goethite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_hematite)Hematite, Limonite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lapis)Lazurite, Sodalite, Lapis...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_pitchblende)Pitchblende, Thorianite...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_pitchblende)Pitchblende, Thorianite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_quartzite)Quartz, Barite, Asbestos...$()$()$(li)$(l:tfg_ores/mars_vein_index#deep_mars_chromite)Redstone, Ruby, Chromite$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_tungsten)Scheelite, Tungstate, Lithium...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_lubricant)Soapstone, Talc...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_nickel_galena)Sphalerite, Nickel, Galena...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_sulfur)Sulfur, Pyrite, Sphalerite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_salt)Sylvite, Halite, Lepidolite...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_stibnite)Tetrahedrite, Native Copper...$()$()$(li)$(l:tfg_ores/mars_vein_index#mars_surface_tetrahedrite)Tetrahedrite, Native Copper...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1518,73 +1518,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/370 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -30 — 0$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 60$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite, Red Granite",
-      "title": "Pitchblende, Thorianite...",
-      "type": "patchouli:text",
-      "anchor": "deep_mars_pitchblende"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Pitchblende",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pitchblende"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 52%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Thorianite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/thorium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 26%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): ThO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Uraninite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/uraninite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Percentage$(): 21%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/220 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 55%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 70$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Argillite, Conglomerate, Dacite, Diorite, Dolomite, Gabbro, Quartzite, Red Granite, Shale, Trachyte",
       "title": "Pitchblende, Thorianite...",
       "type": "patchouli:text",
@@ -1648,6 +1581,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 29%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₂O₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/370 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 30%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -30 — 0$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 60$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): Any$(br2)$(thing)Stone Types$(): Diorite, Gabbro, Granite, Red Granite",
+      "title": "Pitchblende, Thorianite...",
+      "type": "patchouli:text",
+      "anchor": "deep_mars_pitchblende"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Pitchblende",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pitchblende"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 52%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)Formula$(): (UO₂)₃ThPb$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Thorianite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/thorium"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 26%$(br)$(thing)Source of$(): Thorium$(br)$(thing)Formula$(): ThO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Uraninite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/uraninite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 21%$(br)$(thing)Source of$(): Uranium$(br)$(thing)Formula$(): UO₂$(br)$(thing)Hazard$(): $(c)$(t:Requires Full Protection)Radioactive (Any Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {

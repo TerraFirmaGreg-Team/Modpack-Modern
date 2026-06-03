@@ -51,7 +51,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 38%$(br)$(thing)Source of$(): Niobium$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
+      "text": "$(thing)パーセント$(): 38%$(br)$(thing)採取可能$(): ニオブ$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -183,7 +183,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 20%$(br)$(thing)Used for$(): LV components$(br)$(thing)化学式$(): SiO₂",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -275,7 +275,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -486,7 +486,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 50%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -573,7 +573,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Source of$(): Phosphorous, Rare Earth$(br)$(thing)化学式$(): ?(PO₄)",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): リン、レアアース$(br)$(thing)化学式$(): ?(PO₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -593,7 +593,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 6%$(br)$(thing)Source of$(): Neodymium$(br)$(thing)化学式$(): Nd",
+      "text": "$(thing)パーセント$(): 6%$(br)$(thing)採取可能$(): ネオジム$(br)$(thing)化学式$(): Nd",
       "type": "patchouli:multiblock"
     },
     {
@@ -613,7 +613,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 1%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 1%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -777,7 +777,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 18%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 18%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -797,7 +797,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -991,7 +991,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1078,7 +1078,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1130,7 +1130,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 38%$(br)$(thing)Source of$(): Silicon, Oxygen$(br)$(thing)化学式$(): (SiO₂)",
+      "text": "$(thing)パーセント$(): 38%$(br)$(thing)採取可能$(): ケイ素、酸素$(br)$(thing)化学式$(): (SiO₂)",
       "type": "patchouli:multiblock"
     },
     {
@@ -1170,7 +1170,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 9%$(br)$(thing)Source of$(): Pyrope, Almandine, Spessartine",
+      "text": "$(thing)パーセント$(): 9%$(br)$(thing)採取可能$(): 苦礬柘榴石、鉄礬柘榴石、満礬柘榴石",
       "type": "patchouli:multiblock"
     },
     {
@@ -1202,7 +1202,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 42%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 42%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1222,7 +1222,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 33%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)化学式$(): CrAl₂O₃",
+      "text": "$(thing)パーセント$(): 33%$(br)$(thing)採取可能$(): クロム、アルミニウム$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1262,7 +1262,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1334,7 +1334,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 20%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)化学式$(): Sb₂S₃",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)融解$(): アンチモニー$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1446,7 +1446,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 15%$(br)$(thing)Smelts into$(): Platinum$(br)$(thing)化学式$(): Pt",
+      "text": "$(thing)パーセント$(): 15%$(br)$(thing)融解$(): 白金$(br)$(thing)化学式$(): Pt",
       "type": "patchouli:multiblock"
     },
     {
@@ -1478,7 +1478,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 42%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 42%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1538,7 +1538,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1590,7 +1590,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)Source of$(): Manganese, Aluminium$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 25%$(br)$(thing)採取可能$(): マンガン、アルミニウム$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1610,7 +1610,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)Source of$(): Manganese$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)パーセント$(): 25%$(br)$(thing)採取可能$(): マンガン$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1682,7 +1682,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 40%$(br)$(thing)Source of$(): Tungsten$(br)$(thing)化学式$(): Ca(WO₃)O",
+      "text": "$(thing)パーセント$(): 40%$(br)$(thing)採取可能$(): タングステン$(br)$(thing)化学式$(): Ca(WO₃)O",
       "type": "patchouli:multiblock"
     },
     {
@@ -1963,7 +1963,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 29%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)化学式$(): KNO₃",
+      "text": "$(thing)パーセント$(): 29%$(br)$(thing)採取可能$(): カリウム、窒素$(br)$(thing)化学式$(): KNO₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2222,7 +2222,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2249,7 +2249,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 38%$(br)$(thing)Source of$(): Manganese$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)パーセント$(): 38%$(br)$(thing)採取可能$(): マンガン$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2361,7 +2361,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 27%$(br)$(thing)Source of$(): Aluminium, Magnesium$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 27%$(br)$(thing)採取可能$(): アルミニウム、マグネシウム$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2421,7 +2421,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 2%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 2%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
