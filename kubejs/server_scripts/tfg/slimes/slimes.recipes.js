@@ -25,7 +25,8 @@ function registerTFGSlimeRecipes(event) {
     
     // tfg:slime/slime_ball/latex
     event.recipes.firmalife.vat()
-        .inputs('5x tfg:slime/slime_ball/latex', Fluid.of('tfc:spring_water', 1000))
-        .outputFluid(Fluid.of('tfg:latex', 1000))
+        .inputs('tfg:slime/slime_ball/latex', Fluid.of('tfc:spring_water', 200))
+        .outputFluid(Fluid.of('tfg:latex', 200))
         .length(600)
+        .id('tfc:vat/latex_slime_ball_to_latex')
 }
