@@ -427,7 +427,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 		global.processorRecipe(event, `smoothie/${fruit.name}`, 60, GTValues.VA[GTValues.ULV], {
 			itemInputs: [`2x ${fruit.id}`, 'tfg:food/yogurt', 'firmalife:ice_shavings'],
 			itemOutputs: ['tfg:food/smoothie'],
-			notConsumable: ['#forge:buzz_saw_heads'],
+			circuit: 4,
 			itemOutputProvider: TFC.isp.of('tfg:food/smoothie').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
 				(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
 				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
@@ -453,7 +453,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	global.processorRecipe(event, 'smoothie/fruit_yogurt', 60, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['tfg:food/fruit_yogurt', 'firmalife:ice_shavings'],
 		itemOutputs: ['tfg:food/smoothie'],
-		notConsumable: ['#forge:buzz_saw_heads'],
+		circuit: 4,
 		itemOutputProvider: TFC.itemStackProvider.of('tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
 			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
 			[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.5)]
@@ -479,7 +479,7 @@ function registerTFGBakingAndDessertFoodRecipes(event) {
 	global.processorRecipe(event, 'smoothie/fruit_juice', 60, GTValues.VA[GTValues.ULV], {
 		itemInputs: ['tfg:food/juice', 'tfg:food/yogurt', '2x firmalife:ice_shavings'],
 		itemOutputs: ['2x tfg:food/smoothie'],
-		notConsumable: ['#forge:buzz_saw_heads'],
+		circuit: 4,
 		itemOutputProvider: TFC.itemStackProvider.of('2x tfg:food/smoothie').simpleModifier('tfg:copy_nbt').meal(
 			(food) => food.hunger(4).decayModifier(1.8).water(10).quenching(2).cooling(8),
 			[(portion) => portion.nutrientModifier(1).saturationModifier(1.1)]
