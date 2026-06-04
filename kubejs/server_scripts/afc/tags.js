@@ -23,7 +23,6 @@ const registerAFCItemTags = (event) => {
 		event.add('tfc:jar_shelves', `afc:wood/jar_shelf/${woodType}`)
 		event.add('tfc:minecarts', `afc:wood/chest_minecart/${woodType}`)
 		event.add('minecraft:signs', `afc:wood/sign/${woodType}`)
-        event.add('tfc:can_be_snow_piled', `afc:wood/twig/${woodType}`)
 
 		global.TFC_EQUIPMENT_METALS.forEach(metalType => {
 			event.add('minecraft:hanging_signs', `afc:wood/hanging_sign/${metalType}/${woodType}`)
@@ -120,6 +119,7 @@ const registerAFCBlockTags = (event) => {
 		event.add('minecraft:mineable/axe', `afc:wood/stomping_barrel/${wood}`)
 		event.add('minecraft:mineable/axe', `afc:wood/barrel_press/${wood}`)
 		event.add('minecraft:mineable/axe', `afc:wood/wine_shelf/${wood}`)
+        event.add('tfc:can_be_snow_piled', `afc:wood/twig/${woodType}`)
 	})
 
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_kapok")
