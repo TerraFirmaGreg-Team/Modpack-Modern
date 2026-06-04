@@ -168,6 +168,7 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:nether_carver_replaceables', "beneath:soul_clay");
 	event.add('minecraft:nether_carver_replaceables', "tfc:peat");
 	event.add('minecraft:nether_carver_replaceables', "tfg:hardened_clay");
+	event.add('minecraft:nether_carver_replaceables', "minecraft:magma_block");
 
 	const moss_blocks = [
 		'minecraft:moss_block',
