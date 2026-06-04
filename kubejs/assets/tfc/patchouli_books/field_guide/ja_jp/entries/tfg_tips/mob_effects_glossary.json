@@ -1,5 +1,5 @@
 {
-	"name": "Mob Effect Glossary",
+	"name": "状態異常辞典",
 	"category": "tfc:tfg_tips",
 	"icon": "minecraft:splash_potion",
 	"read_by_default": true,
@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "index",
-			"text": "This chapter is dedicated to describing custom mob effects in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Cooling$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Warming$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Quenched$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Detoxify$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Filter Microplastics$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Freezing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Blazing$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Instant Radiation$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Final Moments$()"
+			"text": "この章では、$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()での独自の状態効果について説明します。$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)冷却$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)温もり$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)潤い$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)駆虫$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)デトックス$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)マイクロプラスチック排出$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)凍結$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)灼熱$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)急性被爆$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)余命僅か$()"
 		},
 		{
 			"type": "patchouli:empty"
@@ -15,56 +15,56 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cooling",
-			"text": "$(bold)$(9)Cooling$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a minimum of $(n)5°C$()"
+			"text": "$(bold)$(9)冷却$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)冷却$()され、最低でも$(n)5°C$()まで体温が下がります。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "warming",
-			"text": "$(bold)$(9)Warming$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a maximum of $(n)25°C$()"
+			"text": "$(bold)$(9)温もり$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)温められ$()、体温が最大$(n)25°C$()まで上昇します。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirsty$(). However, it does not prevent the Thirst effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)潤い$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#thirst)水分$()ゲージの自然減少を防ぎます。ただし、渇き状態によるゲージの減少までは防げません。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)寄生虫治療$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#parasites)寄生虫汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_toxins",
-			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)デトックス$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#toxins)毒素汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_microplastics",
-			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)マイクロプラスチック排出$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#microplastics)マイクロプラスチック汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "freezing",
-			"text": "$(bold)$(c)Freezing$()$(li)While active this effect continually $(l:beneath/cooling)Cools$() the player down to a dangerously-low minimum of $(n)-20°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)凍結$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)冷却$()され、危険水準を下回る$(n)-20°C$()まで体温が下がります。この状態を生き延びるには、防護装備の着用を推奨します。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "blazing",
-			"text": "$(bold)$(c)Blazing$()$(li)While active this effect continually $(l:beneath/cooling)Warms$() the player up to a dangerously-high maximum of $(n)60°C$(). Protective equipment is recommended to survive this condition."
+			"text": "$(bold)$(c)灼熱$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)加熱$()され、危険水準を超えた$(n)60°C$()まで体温が上昇します。この状態を生き延びるには、防護装備の着用を推奨します。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "instant_radiation",
-			"text": "$(bold)$(c)Instant Radiation$()$(li)This effect quickly damages the player with $(l:tfg_ores/hazards#Radioactive_materials)Radiation Damage$()"
+			"text": "$(bold)$(c)急性被曝$()$(li)この効果は、プレイヤーに$(l:tfg_ores/hazards#Radioactive_materials)放射線ダメージ$()を素早く与えます。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "final_moments",
-			"text": "$(bold)$(c)Final Moments$()$(li)This effect starts a timer that counts down your last few minutes. When the clock ends you die."
+			"text": "$(bold)$(c)余命僅か$()$(li)この効果は、残された最後の数分を数えるタイマーを開始します。時間切れになると死亡します。"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "さらに読む",
 			"anchor": "relations",
 			"entries": [
                 "tfc:getting_started/food_and_water",
