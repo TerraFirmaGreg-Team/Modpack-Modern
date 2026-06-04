@@ -23,6 +23,7 @@ const registerAFCItemTags = (event) => {
 		event.add('tfc:jar_shelves', `afc:wood/jar_shelf/${woodType}`)
 		event.add('tfc:minecarts', `afc:wood/chest_minecart/${woodType}`)
 		event.add('minecraft:signs', `afc:wood/sign/${woodType}`)
+        event.add('tfc:can_be_snow_piled', `afc:wood/twig/${woodType}`)
 
 		global.TFC_EQUIPMENT_METALS.forEach(metalType => {
 			event.add('minecraft:hanging_signs', `afc:wood/hanging_sign/${metalType}/${woodType}`)
