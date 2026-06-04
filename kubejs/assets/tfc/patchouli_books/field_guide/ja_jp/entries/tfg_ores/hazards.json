@@ -116,14 +116,14 @@
 			"type": "patchouli:spotlight",
 			"title": "アスベスト症",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "石綿肺",
+			"anchor": "アスベスト症",
 			"text": "$(thing)アスベスト症$()は、$(thing)石綿$()の粉塵を吸い込むことで発症する病気です。長時間さらされると$(item)空腹$()状態が発症します。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、防ぐことができます。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "ベリリウム症",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "ベリリウム肺",
+			"anchor": "ベリリウム症",
 			"text": "$(thing)ベリリウム症$()は、$(thing)ベリリウムの粉$()や$(thing)液化ベリリウム$()が皮膚に触れることで発症する病気です。初めは大きな影響がないように見えますが、長くさらされるほど急速に$(item)死$()の危険性が高まります。$(br2)$(l:tfg_ores/hazards#gloves)ゴム手袋$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{

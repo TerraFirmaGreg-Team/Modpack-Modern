@@ -26,7 +26,7 @@
         {
             "type": "patchouli:spotlight",
             "title": "Młot górniczy",
-            "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
+            "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for quarrying stone!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
             "item": {
                 "tag": "forge:tools/mining_hammers"
             }
