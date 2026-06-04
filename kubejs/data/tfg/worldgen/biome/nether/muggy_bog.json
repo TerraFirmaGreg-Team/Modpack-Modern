@@ -114,9 +114,16 @@
 			{
 				"type": "minecraft:bat",
 				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "tfg:slime",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 70
 			}
+		
 		],
 		"axolotls": [
 			{
@@ -131,7 +138,7 @@
 				"type": "species:mammutilation",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 1
+				"weight": 100
 			}
 		],
 		"misc": [],

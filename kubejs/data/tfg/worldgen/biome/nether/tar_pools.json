@@ -102,9 +102,16 @@
 			{
 				"type": "minecraft:bat",
 				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "tfg:slime",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 50
 			}
+		
 		],
 		"axolotls": [
 			{
