@@ -40,6 +40,7 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Rewrote the ComputerCraft quest chapter (#3893) @HowzitToyah @ashleney
 - Added recipes for turning various wood items directly into their treated wood versions (#4134) @SakuraKitsurugi
 - Added in-world interactions between lava and spring water, salt water, muddy water, and semiheavy ammoniacal water @Pyritie
+- Tongs can now also be repaired with repair kits if one for their material exists @Pyritie
 ### Bug fixes
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
 - Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
