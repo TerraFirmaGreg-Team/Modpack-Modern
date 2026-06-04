@@ -20,7 +20,7 @@ function registerTFGSlimeRecipes(event) {
 
 		event.recipes.tfc.pot(inputArray, Fluid.of('tfc:spring_water', 200 * i), 300, 200)
 			.itemOutput(outputArray)
-			.id(`tfc:pot/${i}x_glowberry_slime_ball_to_sugar`)
+			.id(`tfg:pot/${i}x_glowberry_slime_ball_to_sugar`)
 	}
     
     // tfg:slime/slime_ball/latex
@@ -28,5 +28,5 @@ function registerTFGSlimeRecipes(event) {
         .inputs('tfg:slime/slime_ball/latex', Fluid.of('tfc:spring_water', 200))
         .outputFluid(Fluid.of('tfg:latex', 200))
         .length(600)
-        .id('tfc:vat/latex_slime_ball_to_latex')
+        .id('tfg:vat/latex_slime_ball_to_latex')
 }
