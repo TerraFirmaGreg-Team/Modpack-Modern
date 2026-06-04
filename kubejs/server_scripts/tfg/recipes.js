@@ -110,4 +110,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGMaterialRemovePipesRecipes(event)
 
 	registerTFGPastoralRecipes(event)
+
+	registerTFGSlimeRecipes(event);
 }
