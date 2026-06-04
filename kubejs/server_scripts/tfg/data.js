@@ -91,6 +91,7 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:fishing_net/magnalium", "large", "medium", "magnalium_fishing_net");
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
+	event.itemSize("tfg:rnr_plow", "very_large", "heavy", "rnr_plow");
 
 	event.itemSize("tfg:railgun_ammo_shell", "large", "light", "railgun_ammo_shell");
 	event.itemSize("tfg:quartz_crucible", "large", "very_heavy", "quartz_crucible");
