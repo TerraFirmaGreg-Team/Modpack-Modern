@@ -25,7 +25,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirsty$(). However, it does not prevent the Thirst effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -64,7 +64,7 @@
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "Читать дальше",
 			"anchor": "relations",
 			"entries": [
                 "tfc:getting_started/food_and_water",

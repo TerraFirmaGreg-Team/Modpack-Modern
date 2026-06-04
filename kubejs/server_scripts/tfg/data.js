@@ -58,6 +58,8 @@ function registerTFGHeatData(event) {
 
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGItemSize(event) {
+
+	registerTFGFoodItemSize(event);
 	/**
 	 * Turns an array of items into an ingredient that is an alternative of items in the array.
 	 * @param {Internal.Ingredient_[]} items Items to to take.
@@ -89,20 +91,13 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:fishing_net/magnalium", "large", "medium", "magnalium_fishing_net");
 
 	event.itemSize("tfg:trowel", "large", "medium", "trowel");
+	event.itemSize("tfg:rnr_plow", "very_large", "heavy", "rnr_plow");
 
 	event.itemSize("tfg:railgun_ammo_shell", "large", "light", "railgun_ammo_shell");
 	event.itemSize("tfg:quartz_crucible", "large", "very_heavy", "quartz_crucible");
 
 	event.itemSize("tfg:harvest_basket", "large", "medium", "harvest_basket");
 	event.itemSize("tfg:aluminium_harvest_basket", "large", "medium", "aluminium_harvest_basket");
-
-	event.itemSize("tfg:rapeseed_product", "small", "light", "rapeseed_product");
-	event.itemSize("tfg:sunflower_product", "small", "light", "sunflower_product");
-	event.itemSize("betterend:amber_root_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:blossom_berry_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:cave_pumpkin", "small", "light", "amber_roots");
-	event.itemSize("betterend:chorus_mushroom_product", "small", "light", "amber_roots");
-	event.itemSize("betterend:shadow_berry_product", "small", "light", "amber_roots");
 
 	event.itemSize(Ingredient.of("#minecraft:buttons"), "very_small", "very_light", "buttons");
 	event.itemSize(Ingredient.of("#forge:buzz_saw_heads"), "large", "heavy", "buzz_saw_blades");
@@ -309,9 +304,6 @@ function registerTFGItemSize(event) {
 	
 	event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 
-	event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
-	event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
-
 	event.itemSize('#forge:tools/wrenches', 'very_large', 'very_heavy', 'wrenches')
 	event.itemSize('#forge:tools/mining_hammers', 'very_large', 'very_heavy', 'mining_hammers')
 	event.itemSize('#forge:tools/spades', 'very_large', 'very_heavy', 'spades')
@@ -338,8 +330,6 @@ function registerTFGItemSize(event) {
 	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
 	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
 
-	//Honeyed Apples
-	event.itemSize("create:honeyed_apple", "small", "light")
 
 	//Crafting Station
 	global.TFG_NEW_WOOD_TYPES.forEach(wood => { 

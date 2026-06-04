@@ -30,7 +30,16 @@ function registerTFGFoodItems(event) {
 							if (ctx.player) ctx.player.give(foodItem.returnItem);
 						});
 					};
+
+					if (foodItem.alwaysEdible) {
+						food.alwaysEdible();
+					};
+
 				});
+
+				if (foodItem.drinkable) {
+					a.useAnimation('drink');
+				};
 
 				a.tag('tfc:foods');
 			};
@@ -49,32 +58,6 @@ function registerTFGFoodItems(event) {
 	 * Each generated food item is tagged appropriately for use in recipes and other mechanics.
 	 */
 	global.FOOD_FRUIT.forEach(fruit => {
-
-		// Freeze Dried Fruits
-		if (fruit.genFreezeDried && fruit.color) {
-
-			event.create(`tfg:food/freeze_dried/${fruit.name}`)
-				.translationKey(`item.tfg.food.freeze_dried.${fruit.name}`)
-				.tag('tfc:foods')
-				.tag('tfg:space_food')
-				.tag('tfg:foods/freeze_dried_fruits')
-				.tag('tfg:foods/microplastics')
-				.food(food => food.hunger(1).saturation(1)
-					.eaten(ctx => {
-						if (ctx.player) {
-							ctx.player.give('tfg:used_foil_pack')
-						}
-					})
-				)
-				.modelJson({
-					parent: 'tfg:item/item_2_layer_tintable',
-					textures: {
-						layer0: `tfg:item/foil_pack`,
-						layer1: 'tfg:item/food/freeze_dried_fruit_overlay'
-					}
-				})
-				.color(1, fruit.color);
-		}
 
 		// Jams
 		if (fruit.genJam && fruit.color) {

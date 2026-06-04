@@ -7,7 +7,7 @@
 	"constructionwand.description.key.sneak": "Skradanie się",
 	"constructionwand.description.key.sneak_opt": "Skradanie+%s",
 	"constructionwand.description.wand": "%1$s może umieścić do %2$d bloków po stronie budynku skierowanego do Ciebie i trwa %3$s.\n\nPrzytrzymaj %5$s i przewiń w dół, aby zmienić położenie (poziome, pionowe, północne/południowe, Wschód/zachód, bez blokady).\n\nOtwórz ekran opcji za pomocą %6$s§9+Kliknij prawym przyciskiem myszy§0.\n\n§5§nCOFANIE§0§r\nTrzymając §9Sneak+§0%4$s patrząc na bloki pokaże Ci ostatnie bloki, które umieściłeś z zieloną obramowaniem wokół nich. §9Sneak+§0%4$s§9+Kliknij prawym przyciskiem myszy§0 dowolny z nich cofnie operację, dając Ci wszystkie przedmioty. Jeśli użyłeś rdzenia destrukcji, przywróci on bloki.\n\n§5§nPOJEMNIKS§0§r\nMożna użyć bloków budowanych z skrzynek shulkerowych, sakw i innych pojemników z modów w różdżce budowlanej\n\n§5§nPRIORYTET DRUGIEJ RĘKI§0§r\nPosiadanie bloków w twojej drugiej ręce, umieści je zamiast bloku, którego patrzysz.",
-	"constructionwand.option.cores.constructionwand:core_angel": "Rdzeń anielski",
+	"constructionwand.option.cores.constructionwand:core_angel": "§6Rdzeń anielski",
 	"constructionwand.option.cores.constructionwand:core_angel.desc": "Umieść za blokami i w powietrzu",
 	"constructionwand.option.cores.constructionwand:core_destruction": "§cRdzeń zniszczenia",
 	"constructionwand.option.cores.constructionwand:core_destruction.desc": "Niszczy bloki skierowane do ciebie",

@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Bujna jaskinia",
+			"title": "Jaskinie solne",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/salt_caves.png"
 			],
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Rozpadające się jaskinie",
+			"title": "Duszne bagno",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/muggy_bog.png"
 			],
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Leże pająków",
+			"title": "Rozpadające się jaskinie",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Popiołowy las",
+			"title": "Leże pająków",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Kry lawowe",
+			"title": "Doły ze smołą",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/tar_pools.png"
 			],
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Bazaltowe delty",
+			"title": "Źródła geotermalne",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/geothermal_springs.png"
 			],
@@ -63,7 +63,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Głębokie jaskinie",
+			"title": "Cierniowy gaj",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/thorny_brambles.png"
 			],

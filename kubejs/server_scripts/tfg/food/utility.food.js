@@ -657,6 +657,12 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		let parts = fluid.split(' ');
 		return TFC.fluidStackIngredient(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
 	};
+	// Helper to split Fluid string into FluidStack.
+	const toFluidStack = (fluid) => {
+		if (!fluid) return null;
+		let parts = fluid.split(' ');
+		return Fluid.of(parts[0], parts.length > 1 ? parseInt(parts[1]) : 1000);
+	};
 
 	if (genShapelessRecipe) {
 		let outputItemData;
@@ -716,7 +722,7 @@ global.generateMixingFoodRecipes = function(event, inputItems, inputFluid, outpu
 		if (inputFluid) recipe.fluidIngredient(toFluidStackIngredient(typeof inputFluid === 'string' ? inputFluid : inputFluid[0]));
 		
 		if (outputItem) recipe.outputItem(outputItem);
-		if (outputFluid) recipe.outputFluid(toFluidStackIngredient(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
+		if (outputFluid) recipe.outputFluid(toFluidStack(typeof outputFluid === 'string' ? outputFluid : outputFluid[0]));
 		
 		recipe.id(`tfg:mixing_bowl/${id}`);
 	}
