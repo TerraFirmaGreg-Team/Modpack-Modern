@@ -11,6 +11,8 @@
   "item.tfclunchbox.electric_lunchbox.main": "電気の力で食品を冷蔵保存する最先端の弁当箱",
   "item.tfclunchbox.lunchbox": "ランチボックス",
   "item.tfclunchbox.simple_lunchbox.main": "シンプルなお弁当箱",
+  "itemGroup.tfclunchbox": "TFC Lunchbox",
+  "recipe.tfclunchbox.cooling_lunchbox": "ランチボックス冷却レシピ",
   "tooltip.tfclunchbox.battery_charge": "充電: %s / %s EU",
   "tooltip.tfclunchbox.battery_slot_help": "バッテリースロット",
   "tooltip.tfclunchbox.battery_slot_help.line1": "§7使用可能：",

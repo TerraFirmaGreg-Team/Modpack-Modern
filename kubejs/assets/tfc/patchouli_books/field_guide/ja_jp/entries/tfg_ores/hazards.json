@@ -109,21 +109,21 @@
 			"type": "patchouli:spotlight",
 			"title": "ヒ素中毒",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Arsenicosis",
+			"anchor": "ヒ素中毒",
 			"text": "$(thing)ヒ素中毒$()は、粉塵や蒸気、または$(thing)鶏冠石$()に含まれる$(thing)ヒ素$()を吸い込むことで発症する病気です。徐々に$(item)空腹感$()が増加し、やがて$(item)吐き気$()を引き起こし、最終的には$(item)死$()に至ります。$(br2)この状態は、$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "アスベスト症",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Asbestosis",
+			"anchor": "石綿肺",
 			"text": "$(thing)アスベスト症$()は、$(thing)石綿$()の粉塵を吸い込むことで発症する病気です。長時間さらされると$(item)空腹$()状態が発症します。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、防ぐことができます。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "ベリリウム症",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "Berylliosis",
+			"anchor": "ベリリウム肺",
 			"text": "$(thing)ベリリウム症$()は、$(thing)ベリリウムの粉$()や$(thing)液化ベリリウム$()が皮膚に触れることで発症する病気です。初めは大きな影響がないように見えますが、長くさらされるほど急速に$(item)死$()の危険性が高まります。$(br2)$(l:tfg_ores/hazards#gloves)ゴム手袋$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{
@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "珪肺",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "Silicosis",
+			"anchor": "珪肺",
 			"text": "$(thing)珪肺$()は、$(thing)二酸化ケイ素の粉$()の吸引によって発症する病気です。発症中は$(item)体力$()と、水中での$(item)呼吸量$()がどちらも減少します。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		}
 	]

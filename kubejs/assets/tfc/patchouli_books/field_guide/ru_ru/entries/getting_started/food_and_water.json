@@ -7,15 +7,15 @@
             "type": "patchouli:text",
             "title": "Индекс",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основы$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Жажда$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Экран Рациона$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Питательные вещества$()$(li2)$(l:getting_started/food_and_water#fruit)Фрукты$()$(li2)$(l:getting_started/food_and_water#vegetables)Овощи$()$(li2)$(l:getting_started/food_and_water#protein)Белки$()$(li2)$(l:getting_started/food_and_water#grain)Зерновые$()$(li2)$(l:getting_started/food_and_water#dairy)Молочные$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Загрязнители$()$(li2)$(l:getting_started/food_and_water#toxins)Токсины$()$(li2)$(l:getting_started/food_and_water#parasites)Паразиты$()$(li2)$(l:getting_started/food_and_water#microplastics)Микропластик$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Переходящие эффекты$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Охлаждение$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Согревание$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Утоление$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Укрепление$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Сытость$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Омолаживание$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Замерзание$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Обжигание$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Излучение$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Отвращение$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Сушение$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Смертность$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Удовлетворённость$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Приторность$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Жгучесть$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "Основы",
             "anchor": "basics",
             "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
         },
@@ -56,7 +56,7 @@
                     "Y": "tfc:plant/cattail[part=lower,fluid=water]"
                 }
             },
-            "name": "Water Safety",
+            "name": "Безопасность воды",
             "text": "To avoid saltwater or muddy water, look for rivers, lakes, and freshwater plants like $(thing)Cattails$().",
             "enable_visualize": false
         },
