@@ -100,6 +100,38 @@ function registerTFGDairyFoodRecipes(event) {
 	global.generateOilBoilingFoodRecipes(event, 'tfg:food/raw_beer_battered_cheese_curds', 'tfg:food/cooked_beer_battered_cheese_curds', true, true, true);
 
 	//#endregion
+	//#region Yogurt
+
+	// Cultured Milk
+    global.generateMixingFoodRecipes(event, '4x firmalife:fruit_leaf', '#tfc:milks 1000', 'tfg:cultured_milk 1000', null, false, true, true, 1, null, 'cultured_milk_from_fruit_leaf');
+    global.generateMixingFoodRecipes(event, 'tfg:food/yogurt', '#tfc:milks 1000', 'tfg:cultured_milk 1000', 'tfc:empty_jar', false, true, true, 1, null, 'cultured_milk_from_yogurt');
+
+	// Yo Gurt Whattup?
+	event.recipes.tfc.barrel_sealed(8000) // 8 hours.
+		.outputItem(TFC.isp.of('tfg:food/yogurt').resetFood())
+		.inputs('tfc:empty_jar', TFC.fluidStackIngredient('tfg:cultured_milk', 250)
+	).id('tfg:barrel/yogurt_fermentation')
+
+	global.processorRecipe(event, 'yogurt_fermentation', 1200, 1, {
+		itemInputs: ['tfc:empty_jar'],
+		fluidInputs: ['tfg:cultured_milk 250'],
+		itemOutputs: ['tfg:food/yogurt'],
+		notConsumable: ['#tfc:barrels'],
+		itemOutputProvider: TFC.isp.of('tfg:food/yogurt').resetFood()
+	});
+
+	// Fruit Yogurt
+	global.FOOD_FRUIT.forEach(fruit => {
+
+    	global.generateMixingFoodRecipes(event, ['tfg:food/yogurt', `2x ${fruit.id}`], null, null, 'tfg:food/fruit_yogurt', true, false, true, 1,
+			TFC.isp.of('tfg:food/fruit_yogurt').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+				(food) => food.hunger(4).decayModifier(1.5),
+				[(portion) => portion.nutrientModifier(1.2).saturationModifier(1.2)]
+			), `${fruit.id}_fruit_yogurt`);
+
+	});
+
+	//#endregion
 	//#region Churning
 
 	event.recipes.gtceu.fermenter(`tfg:fermenter/cream`)

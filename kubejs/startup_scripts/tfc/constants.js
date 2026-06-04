@@ -166,8 +166,6 @@ global.TFC_FOOD_COOKING = /** @type {const} */ ([
     { input: "tfc:food/potato", output: "tfc:food/baked_potato" }
 ]);
 
-global.TFC_GRAINS = /** @type {const} */ (["barley", "maize", "oat", "rye", "rice", "wheat"]);
-
 global.TFC_JAMS = /** @type {const} */ ([
     "blackberry",
     "blueberry",
@@ -280,21 +278,6 @@ global.TFC_CURDS_AND_CHEESES = /** @type {const} */ ([
         id: "goat", milk: "firmalife:goat_milk", curdled_fluid: "firmalife:curdled_goat_milk", curd: "firmalife:food/goat_curd",
         unsalted_cheese: "firmalife:food/feta", unsalted_wheel: "firmalife:feta_wheel",
         salted_cheese: "firmalife:food/chevre", salted_wheel: "firmalife:chevre_wheel"
-    },
-    {
-        id: "ox", milk: "tfc_gourmet:ox_milk", curdled_fluid: "tfc_gourmet:curdled_ox_milk", curd: "tfc_gourmet:ox_curd",
-        unsalted_cheese: "tfc_gourmet:ox_brinza_slice", unsalted_wheel: "tfc_gourmet:ox_brinza_wheel",
-        salted_cheese: null, salted_wheel: null
-    },
-    {
-        id: "sheep", milk: "tfc_gourmet:sheep_milk", curdled_fluid: "tfc_gourmet:curdled_sheep_milk", curd: "tfc_gourmet:sheep_curd",
-        unsalted_cheese: "tfc_gourmet:sheep_brinza_slice", unsalted_wheel: "tfc_gourmet:sheep_brinza_wheel",
-        salted_cheese: null, salted_wheel: null
-    },
-    {
-        id: "alpaca", milk: "tfc_gourmet:alpaca_milk", curdled_fluid: "tfc_gourmet:curdled_alpaca_milk", curd: "tfc_gourmet:alpaca_curd",
-        unsalted_cheese: "tfc_gourmet:alpaca_brinza_slice", unsalted_wheel: "tfc_gourmet:alpaca_brinza_wheel",
-        salted_cheese: null, salted_wheel: null
     }
 ]);
 

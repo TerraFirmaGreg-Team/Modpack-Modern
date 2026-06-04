@@ -1,5 +1,6 @@
 "use strict";
 
+//#region Food Data
 /** @param {Internal.TFCDataEventJS} event */
 function registerTFGFoodData(event) {
 
@@ -11,7 +12,7 @@ function registerTFGFoodData(event) {
 	 * Registers food items from the `TFG_CREATE_GENERIC_FOOD_ITEM` array. 
 	 * Each item should have an id, and either nutrition or mealType defined.
 	 */
-	global.TFG_CREATE_GENERIC_FOOD_ITEM.forEach((foodItem) => {	
+	global.TFG_CREATE_GENERIC_FOOD_ITEM.forEach((foodItem) => {
 		
 		event.itemHeat(foodItem.id, 1, null, null);
 
@@ -43,25 +44,12 @@ function registerTFGFoodData(event) {
 		});
 	});
 
-	/**
-	 * Registers freeze dried fruits from the `FOOD_FRUIT` array. Each fruit should have a name, saturation, decay, and fruit value defined.
-	 */
-	global.FOOD_FRUIT.forEach((fruit) => {
-		event.foodItem(`tfg:food/freeze_dried/${fruit.name}`, (food) => {
-			food.hunger(4);
-			food.saturation(fruit.saturation);
-			food.water(0);
-			food.microplastics(0.5);
-			food.fruit(fruit.fruit);
-			food.decayModifier(fruit.decay);
-		});
-	});
-
 	// Ice shavings
 	event.foodItem('firmalife:ice_shavings', food => {
 		food.water(5)
+		food.cooling(0.1)
 		food.decayModifier(0)
-	})
+	});
 
 	// Cave Pumpkin
 	event.foodItem("betterend:cave_pumpkin", (food) => {
@@ -159,7 +147,9 @@ function registerTFGFoodData(event) {
 		food.decayModifier(0.5);
 	});
 
+	//#endregion
 	//#region Drinkables
+
 	// Proto Growth Medium
 	event.drinkable("tfg:proto_growth_medium", (data) => {
 		data.thirst(10);
@@ -237,4 +227,37 @@ function registerTFGFoodData(event) {
 	});
 
 	//#endregion
-}
+};
+
+//#region Food Size Data
+/** @param {Internal.TFCDataEventJS} event */
+function registerTFGFoodItemSize(event) {
+
+	// Loop through generic food items and set size. Defaults to `small, light`.
+	global.TFG_CREATE_GENERIC_FOOD_ITEM.forEach((foodItem) => {
+
+		const volume = foodItem.size?.volume || 'small';
+		const weight = foodItem.size?.weight || 'light';
+
+		event.itemSize(foodItem.id, volume, weight, foodItem.id.split(':').pop());
+
+	});
+	
+	// TFG Earth Crops
+	event.itemSize("tfg:rapeseed_product", "small", "light", "rapeseed_product");
+	event.itemSize("tfg:sunflower_product", "small", "light", "sunflower_product");
+	
+	// TFG Mars Crops
+	event.itemSize("betterend:amber_root_product", "small", "light", "amber_roots");
+	event.itemSize("betterend:blossom_berry_product", "small", "light", "amber_roots");
+	event.itemSize("betterend:cave_pumpkin", "small", "light", "amber_roots");
+	event.itemSize("betterend:chorus_mushroom_product", "small", "light", "amber_roots");
+	event.itemSize("betterend:shadow_berry_product", "small", "light", "amber_roots");
+
+	// Honeyed Apples
+	event.itemSize("create:honeyed_apple", "small", "light")
+
+	// Jam
+	event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
+	event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
+};

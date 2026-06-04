@@ -13,17 +13,17 @@ function registerTFGSandwichFoodRecipes(event) {
 		 * @type {[string, string][]}.
 		 * */
 		const breadTypes = [
-			['bread', `tfc:food/${grain}_bread`],
-			['flatbread', `firmalife:food/${grain}_flatbread`],
-			['slice', `firmalife:food/${grain}_slice`]
+			['bread', `tfc:food/${grain.name}_bread`],
+			['flatbread', `firmalife:food/${grain.name}_flatbread`],
+			['slice', `firmalife:food/${grain.name}_slice`]
 		];
 
 		breadTypes.forEach((type) => {
-			global.processorRecipe(event, `${grain}_${type[0]}_sandwich`, 100, 16, {
+			global.processorRecipe(event, `${grain.name}_${type[0]}_sandwich`, 100, 16, {
 				circuit: 3,
 				itemInputs: [`2x ${type[1]}`, "3x #tfc:foods/usable_in_sandwich"],
-				itemOutputs: [`2x tfc:food/${grain}_bread_sandwich`],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_sandwich`).meal(
+				itemOutputs: [`2x tfc:food/${grain.name}_bread_sandwich`],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_bread_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
 					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
 					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
@@ -32,11 +32,11 @@ function registerTFGSandwichFoodRecipes(event) {
 
 			//Note: preserves needs to be first in the recipe code or else it will consider it as the usable_in_jam_sandwich ingredients.
 			// 1 jam + 2 cheese
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_1`, 100, 16, {
+			global.processorRecipe(event, `${grain.name}_${type[0]}_jam_sandwich_1`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '#tfc:foods/preserves', '2x #tfc:foods/usable_in_jam_sandwich'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, 'tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
+				itemOutputs: [`2x tfc:food/${grain.name}_bread_jam_sandwich`, 'tfc:empty_jar'],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
 					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
 					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
@@ -44,11 +44,11 @@ function registerTFGSandwichFoodRecipes(event) {
 			});
 
 			// 2 jam + 1 cheese. Uses preserves_2 alias so GT's RecipeDB gives this a distinct tree key from recipe 1.
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_2`, 100, 16, {
+			global.processorRecipe(event, `${grain.name}_${type[0]}_jam_sandwich_2`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '2x #tfc:foods/preserves_2', '1x #tfc:foods/usable_in_jam_sandwich'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '2x tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
+				itemOutputs: [`2x tfc:food/${grain.name}_bread_jam_sandwich`, '2x tfc:empty_jar'],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
 					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
 					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
@@ -56,11 +56,11 @@ function registerTFGSandwichFoodRecipes(event) {
 			});
 
 			// 3 jam
-			global.processorRecipe(event, `${grain}_${type[0]}_jam_sandwich_3`, 100, 16, {
+			global.processorRecipe(event, `${grain.name}_${type[0]}_jam_sandwich_3`, 100, 16, {
 				circuit: 4,
 				itemInputs: [`2x ${type[1]}`, '3x #tfc:foods/preserves'],
-				itemOutputs: [`2x tfc:food/${grain}_bread_jam_sandwich`, '3x tfc:empty_jar'],
-				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain}_bread_jam_sandwich`).meal(
+				itemOutputs: [`2x tfc:food/${grain.name}_bread_jam_sandwich`, '3x tfc:empty_jar'],
+				itemOutputProvider: TFC.isp.of(`2x tfc:food/${grain.name}_bread_jam_sandwich`).meal(
 					(food => food.hunger(4).water(0.5).saturation(1).decayModifier(4.5)), [
 					(portion) => portion.ingredient(Ingredient.of('#tfc:sandwich_bread')).nutrientModifier(0.5).saturationModifier(0.5).waterModifier(0.5),
 					(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0.8)
