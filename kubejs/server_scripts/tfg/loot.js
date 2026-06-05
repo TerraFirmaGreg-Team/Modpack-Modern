@@ -88,16 +88,23 @@ function registerTFGLoots(event) {
 		.removeLoot(Ingredient.all)
 		.addLoot('minecraft:campfire')
 
-	event.addBlockLootModifier('tfg:large_nest_box')
-		.removeLoot('tfg:large_nest_box')
-		.customCondition({
-				block: "tfg:large_nest_box",
+	const LARGE_NESTS = [
+		'tfg:large_nest_box',
+		'tfg:large_nest_box_warped'
+	]
+	LARGE_NESTS.forEach(nest => {
+		event.addBlockLootModifier(`${nest}`)
+			.removeLoot(`${nest}`)
+			.customCondition({
+				block: `${nest}`,
 				condition: "minecraft:block_state_property",
 				properties: {
 					nest_part: "0"
 				}
 			})
-		.addLoot('tfg:large_nest_box')
+			.addLoot(`${nest}`)
+	})
+	
 
 	const ASPHALT_ROAD_BLOCKS = [
 		'tfg:asphalt_road',
