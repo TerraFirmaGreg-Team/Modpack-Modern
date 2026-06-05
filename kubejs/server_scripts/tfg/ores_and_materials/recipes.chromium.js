@@ -111,8 +111,8 @@ function registerTFGChromiumProcessing(event) {
                 .itemOutputs(Item.of('gtceu:chromium_dust', 2), Item.of('gtceu:iron_dust', 1), Item.of('tfg:wollastonite_dust'))
                 .outputFluids(Fluid.of('gtceu:carbon_monoxide', 4000))
                 .duration(24 * 20)
-                .EUt(GTValues.VA[GTValues.HV])
-                .blastFurnaceTemp(2650)
+                .EUt(GTValues.VA[GTValues.MV])
+                .blastFurnaceTemp(1650)
 
         event.recipes.gtceu.electric_blast_furnace('tfg:chromite_from_carbon')
                 .itemInputs(Item.of('gtceu:chromite_dust', 1), Item.of('gtceu:carbon_dust', 4))
@@ -126,6 +126,16 @@ function registerTFGChromiumProcessing(event) {
                 .itemInputs(Item.of('tfg:ferrochrome_dust', 3))
                 .itemOutputs(Item.of('gtceu:chromium_dust', 2), Item.of('gtceu:iron_dust', 1))
                 .duration(14 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
+
+        //#end region
+
+        // Others
+
+        event.recipes.gtceu.chemical_reactor('tfg:calcium_carbonate_dust_from_calcium_hydroxide')
+                .itemInputs(Item.of('gtceu:soda_ash_dust', 1), Item.of('gtceu:calcium_hydroxide_dust', 1))
+                .itemOutputs(Item.of('gtceu:calcium_carbonate_dust', 1), Item.of('gtceu:sodium_hydroxide_dust', 2))
+                .duration(16 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
 
 
