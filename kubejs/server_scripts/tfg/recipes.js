@@ -104,6 +104,7 @@ const registerTFGRecipes = (event) => {
 	registerTFGEtchingRecipes(event)
 	registerTFGMVMaterialRecipes(event)
 	registerTFGGemSlurriesProcessing(event)
+	registerTFGChromiumProcessing(event)
 
 	registerTFGRepairRecipes(event)
 

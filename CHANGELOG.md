@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+### Breaking changes
+- Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
+- Sodium Aluminium dust part of the BTX Recyling loop is now a EV recipe, duration was reduced accordingly @TomPlop
 ### Major changes
 - We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 #### Beneath
@@ -13,8 +16,6 @@
 - Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
 - Added an assembler recipe for the normal packager 
-### Breaking changes
-- Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
 ### Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
