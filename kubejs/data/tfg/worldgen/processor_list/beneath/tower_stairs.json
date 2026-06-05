@@ -1,0 +1,82 @@
+{
+	"processors": [
+        {
+        "processor_type": "lithostitched:condition",
+        "random_mode": {
+            "mode": "per_block",
+            "name": "bastion:stair_block"
+        },
+        "if_true": [
+            {
+            "type": "lithostitched:matching_blocks",
+            "blocks": "minecraft:bamboo_mosaic",
+            "match_type": "input"
+            }
+        ],
+        "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                    {
+                        "weight": 9,
+                        "data": {
+                        "Name": "minecraft:polished_blackstone_bricks"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                        "Name": "minecraft:cave_air"
+                        }
+                    }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+            }
+        }
+        },
+        {
+        "processor_type": "lithostitched:condition",
+        "random_mode": {
+            "mode": "per_block",
+            "name": "bastion:stair_slab"
+        },
+        "if_true": [
+            {
+            "type": "lithostitched:matching_blocks",
+            "blocks": "minecraft:bamboo_mosaic_slab",
+            "match_type": "input"
+            }
+        ],
+        "then": {
+                "processor_type": "lithostitched:set_block",
+                "state_provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                    {
+                        "weight": 9,
+                        "data": {
+                        "Name": "minecraft:polished_blackstone_brick_slab"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                        "Name": "minecraft:cave_air"
+                        }
+                    }
+                    ]
+                },
+                "preserve_state": true,
+                "random_mode": "per_block",
+                "block_entity_modifier": {
+                    "type": "minecraft:passthrough"
+            }
+        }
+        }
+    ]
+}
