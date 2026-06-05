@@ -43,7 +43,7 @@ function registerTFGChromiumProcessing(event) {
                 .EUt(GTValues.VA[GTValues.LV])
                 .blastFurnaceTemp(1950)
 
-        event.recipes.gtceu.electric_blast_furnace('tfg:chromium_dustf_from_carbon')
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromium_dust_from_carbon')
                 .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('gtceu:carbon_dust', 3))
                 .itemOutputs(Item.of('gtceu:chromium_dust', 2))
                 .outputFluids(Fluid.of('gtceu:carbon_monoxide', 3000))
