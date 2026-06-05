@@ -79,7 +79,7 @@ function registerTFGChromiumProcessing(event) {
         event.recipes.gtceu.centrifuge('tfg:uvarovite_dust_from_garnet')
                 .itemInputs(Item.of('tfg:mixed_garnet_dust', 1))
                 .itemOutputs(Item.of('gtceu:uvarovite_dust', 3), Item.of('gtceu:grossular_dust', 2))
-                .duration(16 * 20)
+                .duration(8 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.electric_blast_furnace('tfg:sodium_chromate_dust')
