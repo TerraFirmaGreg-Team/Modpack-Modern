@@ -54,39 +54,4 @@ function registerTFCLunchBoxRecipes(event) {
                 });
 			}
 		})
-
-    /* event.shapeless('toolbelt:belt', ['toolbelt:belt', 'toolbelt:pouch'])
-		.modifyResult((grid, result) => {
-			let orig = grid.find(Item.of('toolbelt:belt').ignoreNBT())
-
-			if (orig.nbt == null) {
-				orig.nbt = { Size: 3 };
-			}
-			else {
-				if (orig.nbt.Size == null) {
-					orig.nbt = { Size: 3 };
-				}
-				else {
-					orig.nbt.Size = orig.nbt.getInt("Size") + 1;
-				}
-			}
-
-			return result.withNBT(orig.nbt);
-		})
-
-
-	event.shapeless('toolbelt:belt', ['toolbelt:belt', 'tfc:powder/wood_ash'])
-		.modifyResult((grid, result) => {
-			let orig = grid.find(Item.of('toolbelt:belt').ignoreNBT())
-
-			if (orig.nbt == null || orig.nbt.display == null) {
-				return result;
-			}
-			else {
-				delete orig.nbt.display;
-				return result.withNBT(orig.nbt);
-			}
-		})*/
-
-        
 }
