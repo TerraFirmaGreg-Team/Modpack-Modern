@@ -5,9 +5,20 @@
 - Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
 - Sodium Aluminium dust part of the BTX Recyling loop is now a EV recipe, duration was reduced accordingly @TomPlop
 ### Major changes
-- We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
+We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 #### Beneath
-- TODO
+The Beneath has been totally remade! It's now significantly taller (208 blocks tall instead of 128), has almost twice as many biomes, its own new set of crops, fruit trees, and wood sets, new structures, and new challenges. It's been split into three layers instead of just two, with the different layers providing challenges for different stages of the game, from wrought iron age to LV/MV. Also, it's *actually* hot now - make sure you're prepared!
+
+Because of the height change, you'll need to delete your generated chunks so you aren't sent above the bedrock roof. To do this, first make a backup of your save, Next, make sure you've left the Beneath and taken anything with you that you want to keep, then save and quit your game. After, simply go to your minecraft instance folder, then inside `saves`, then inside the folder named after your save. Delete the folder called `DIM-1`. Then launch your game as normal. The process is the same for servers.
+##### Other changes
+- Starting in the Beneath is now an option when creating a new world. For an extra challenge, it should be possible to get to HV without leaving! We'll work on improving this experience and providing some unique Beneath-only ways of getting resources in future updates.
+- Beneath ores and fluid veins have been reworked @TomPlop
+- Changed piglin bartering table so there's less junk
+- The blue steel diving set no longer makes you completely immune to hot temperatures, but it does still provide a lot of cooling and make you immune to fire damage
+- All aqueducts can now hold lava and different kinds of water
+- The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once
+- Fixed the TFG shaders making the entire Beneath red tinted
+- Added a new quest chapter for the Beneath
 #### Food rework
 - TODO
 #### Fluid Logistics
@@ -22,6 +33,15 @@
 - Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
 - Added new metal girders and struts which can also be placed at arbitrary angles and used as railroad track (#4091) @SakuraKitsurugi
 - Mechanical arms can now interact with Vats @ashleney
+- Added linen clothes, with the same stats as burlap @Pyritie
+- Rebalanced most of the TFC Textile clothing, so the stronger effecting ones aren't so quick to get (#4143) @Pyritie
+- Reduced the assembler recipe duration for rails @Pyritie
+- Increased spawn rates of illages a little, to account for the fewer amount of biomes they can spawn in with the new worldgen @Pyritie
+- Disabled instant snow melting on servers by default, to try and track down a bug related to chunk resetting @ashleney
+- Rewrote the ComputerCraft quest chapter (#3893) @HowzitToyah @ashleney
+- Added recipes for turning various wood items directly into their treated wood versions (#4134) @SakuraKitsurugi
+- Added in-world interactions between lava and spring water, salt water, muddy water, and semiheavy ammoniacal water @Pyritie
+- Tongs can now also be repaired with repair kits if one for their material exists @Pyritie
 ### Bug fixes
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
 - Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
@@ -32,6 +52,15 @@
 - Potential fix for the rocket lander sometimes getting stuck or sending you to the wrong place (#3054) @ashleney
 - Fixed muddy water, spring water, and semiheavy ammoniacal water not doing anything when touching lava @Pyritie
 - Fixed being able to grow dead coral (#4096) @Pyritie
+- Fixed item models for mushroom roots/sprouts (#4164) @Pyritie
+- Fixed bastions sometimes having mangrove chests instead of actual loot chests @Pyritie
+- Fixed a whole bunch of AFC trees not spawning in the overworld. Ever found large patches of duff with no trees? They should be fixed now (#4154) @ashleney
+- Fixed GT tools and sacks not being extractable from the Create logistics network @ashleney
+- Fixed two person rockets sometimes setting the second passenger on fire (#3317) @ashleney
+- Fixed guano islands biomes sometimes not having guano @Pyritie
+- Fixed GT solar panels and solar boilers not generating power while the player is in the overworld (#2665) @ashleney
+- Fixed a crash when putting a fluid drilling rig in Spatial Storage (#3855) @ashleney
+- Fixed hydroponics facility, growth chamber, and pisciculture fishery not working correctly with parallel hatches (#3563) @ashleney
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 

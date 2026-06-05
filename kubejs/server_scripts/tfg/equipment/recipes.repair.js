@@ -278,7 +278,23 @@ function registerTFGRepairRecipes(event) {
 				// T: { tag: "forge:tools/hammers" }
 			},
 			repairPercentage: 0.5
-		}).id(`tfg:item_repair/${metal}_tongs`)
+		}).id(`tfg:item_repair/${metal}_rod_tongs`)
+
+		let repairKit = Item.of(`gtceu:repair_kit_${metal}`);
+		if (!repairKit.isEmpty()) {
+			event.custom({
+				type: 'tfg:item_repair',
+				pattern: [
+					"RH",
+				],
+				key: {
+					R: repairKit,
+					H: { item: `tfchotornot:tongs/${metal}` },
+					// T: { tag: "forge:tools/hammers" }
+				},
+				repairPercentage: 0.25
+			}).id(`tfg:item_repair/${metal}_tongs`)
+		}
 	})
 
 	function repairColoredSteel(namespace, material) {

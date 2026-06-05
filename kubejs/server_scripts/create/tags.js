@@ -189,6 +189,8 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:mafic_hornfels')
 
 	event.add('tfc:no_icicle_generation', 'create:chain_conveyor')
+
+    event.add('tfg:track_replaceable', '#tfc:can_be_snow_piled')
 }
 
 
