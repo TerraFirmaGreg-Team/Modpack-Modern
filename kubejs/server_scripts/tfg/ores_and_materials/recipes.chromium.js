@@ -8,6 +8,7 @@ function registerTFGChromiumProcessing(event) {
     event.remove({ id: 'gtceu:centrifuge/sapphire_slurry_centrifuging' })
     event.remove({ id: 'gtceu:centrifuge/green_sapphire_slurry_centrifuging' })
     event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__garnet_sand' })
+    event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromite' })
 
     //#region Ruby Processing Change
 
@@ -38,9 +39,25 @@ function registerTFGChromiumProcessing(event) {
         event.recipes.gtceu.electric_blast_furnace('tfg:chromium_dustf_from_ruby')
                 .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('gtceu:aluminium_dust', 2))
                 .itemOutputs(Item.of('gtceu:chromium_dust', 2), Item.of('tfg:alumina_dust', 1))
-                .duration(46 * 20)
-                .EUt(GTValues.VA[GTValues.MV])
+                .duration(36 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
                 .blastFurnaceTemp(1950)
+
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromium_dustf_from_carbon')
+                .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('gtceu:carbon_dust', 3))
+                .itemOutputs(Item.of('gtceu:chromium_dust', 2))
+                .outputFluids(Fluid.of('gtceu:carbon_monoxide', 3000))
+                .duration(46 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
+                .blastFurnaceTemp(1950)
+
+        event.recipes.gtceu.chemical_reactor('tfg:chromium_dust_from_hydrogen')
+                .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 1))
+                .inputFluids(Fluid.of('gtceu:hydrogen', 6000))
+                .itemOutputs(Item.of('gtceu:chromium_dust', 2))
+                .outputFluids(Fluid.of('minecraft:water', 3000))
+                .duration(36 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.chemical_reactor('tfg:aluminium_hydroxide_dust_from_sodium_aluminium')
                 .itemInputs(Item.of('tfg:sodium_aluminium_dust', 2))
@@ -89,6 +106,28 @@ function registerTFGChromiumProcessing(event) {
 
         //#region Chromite
 
-        
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromite_from_calcium_carbonate')
+                .itemInputs(Item.of('gtceu:chromite_dust', 1), Item.of('gtceu:calcium_carbonate_dust', 1), Item.of('gtceu:carbon_dust', 3))
+                .itemOutputs(Item.of('gtceu:chromium_dust', 2), Item.of('gtceu:iron_dust', 1), Item.of('tfg:wollastonite_dust'))
+                .outputFluids(Fluid.of('gtceu:carbon_monoxide', 4000))
+                .duration(24 * 20)
+                .EUt(GTValues.VA[GTValues.HV])
+                .blastFurnaceTemp(2650)
+
+        event.recipes.gtceu.electric_blast_furnace('tfg:chromite_from_carbon')
+                .itemInputs(Item.of('gtceu:chromite_dust', 1), Item.of('gtceu:carbon_dust', 4))
+                .itemOutputs(Item.of('tfg:ferrochrome_dust', 1))
+                .outputFluids(Fluid.of('gtceu:carbon_monoxide', 4000))
+                .duration(32 * 20)
+                .EUt(GTValues.VA[GTValues.HV])
+                .blastFurnaceTemp(2110)
+
+        event.recipes.gtceu.electrolyzer('tfg:ferrochrome')
+                .itemInputs(Item.of('tfg:ferrochrome_dust', 3))
+                .itemOutputs(Item.of('gtceu:chromium_dust', 2), Item.of('gtceu:iron_dust', 1))
+                .duration(14 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
+
+
 
 }

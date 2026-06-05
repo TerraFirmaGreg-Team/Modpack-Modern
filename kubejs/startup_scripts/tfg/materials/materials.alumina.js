@@ -39,9 +39,9 @@ function registerTFGAluminaMaterials(event) {
 
 	event.create('tfg:chromium_3_oxide')
 		.dust()
-		.color(0xE6B8EB)
-		.secondaryColor(0xF7DDF5)
-		.iconSet(GTMaterialIconSet.METALLIC)
+		.color(0xD192D8)
+		.secondaryColor(0xD1CDD1)
+		.iconSet(GTMaterialIconSet.FINE)
 		.components('2x chromium', '3x oxygen')
 		.flags(
 			GTMaterialFlags.DISABLE_DECOMPOSITION)
