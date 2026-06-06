@@ -12402,6 +12402,42 @@
             ]
         },
         {
+            "pakku_id": "DscVrVV5OjYD2AqF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "phoenixs-chromatic-colors"
+            },
+            "name": {
+                "curseforge": "Phoenix's Chromatic Codes"
+            },
+            "id": {
+                "curseforge": "1483210"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "chromatic_codes-12.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7985/373/chromatic_codes-12.0.jar",
+                    "id": "7985373",
+                    "parent_id": "1483210",
+                    "hashes": {
+                        "sha1": "4f80b7c8445654b4b86bd45af2964d4228aec96d",
+                        "md5": "898b82f1df761d3c08ebaf7df9d1dc81"
+                    },
+                    "required_dependencies": [],
+                    "size": 273125,
+                    "date_published": "2026-04-26T00:26:01.343Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NAnmkz6EFQkpeHYH",
             "pakku_links": [
                 "3Hn4sTVbBvKyQJJS"
