@@ -2,6 +2,8 @@
 
 function registerTFGPrimitiveItems(event) {
 
+	event.create('tfg:unstrung_bow');
+
 	// Paper making
 	event.create('tfg:hardwood_strip')
 	event.create('tfg:soaked_hardwood_strip')

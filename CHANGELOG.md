@@ -35,14 +35,19 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Mechanical arms can now interact with Vats @ashleney
 - Added linen clothes, with the same stats as burlap @Pyritie
 - Rebalanced most of the TFC Textile clothing, so the stronger effecting ones aren't so quick to get (#4143) @Pyritie
+- Added recipes to craft Bows and Arrows pre-copper @Pyritie
 - Reduced the assembler recipe duration for rails @Pyritie
+- Groundcover like loose rocks, snow, etc is now destroyed when placing rails (#4182) @ashleney
 - Increased spawn rates of illages a little, to account for the fewer amount of biomes they can spawn in with the new worldgen @Pyritie
 - Disabled instant snow melting on servers by default, to try and track down a bug related to chunk resetting @ashleney
 - Rewrote the ComputerCraft quest chapter (#3893) @HowzitToyah @ashleney
 - Added recipes for turning various wood items directly into their treated wood versions (#4134) @SakuraKitsurugi
 - Added in-world interactions between lava and spring water, salt water, muddy water, and semiheavy ammoniacal water @Pyritie
 - Tongs can now also be repaired with repair kits if one for their material exists @Pyritie
+- Tamed foxes can now be picked up @SakuraKitsurugi
+- Increased the width of the Keratophyre carvers at the bottom of the overworld
 ### Bug fixes
+- Fixed cinder cones (the small volcanoes) missing basalt (#4140) @Mqrius
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
 - Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
 - Fixed not being able to use some fences and fence gates with the pastoral rancher (#4077) @Pyritie
@@ -61,6 +66,11 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Fixed GT solar panels and solar boilers not generating power while the player is in the overworld (#2665) @ashleney
 - Fixed a crash when putting a fluid drilling rig in Spatial Storage (#3855) @ashleney
 - Fixed hydroponics facility, growth chamber, and pisciculture fishery not working correctly with parallel hatches (#3563) @ashleney
+- Fixed lunch boxes voiding inventory when upgrading them (#4196) @SakuraKitsurugi
+- Fixed warped large nest box duping when broken (#4195) @SakuraKitsurugi
+- Fixed many recipes not showing up in the field guide (#4190) @jmecn
+- Fixed item size of paving cart (#4189) @jmecn
+- Fixed rotten voiding cover forgetting its settings after world reload (#4181) @ashleney
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 

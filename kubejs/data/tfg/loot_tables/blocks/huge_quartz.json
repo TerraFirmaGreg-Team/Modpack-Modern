@@ -8,17 +8,17 @@
                 {
                     "type": "minecraft:item",
                     "name": "gtceu:quartzite_gem",
-                    "weight": 85
+                    "weight": 95
                 },
                 {
                     "type": "minecraft:item",
                     "name": "gtceu:flawless_quartzite_gem",
-                    "weight": 10
+                    "weight": 4
                 },
                 {
                     "type": "minecraft:item",
                     "name": "gtceu:exquisite_quartzite_gem",
-                    "weight": 5
+                    "weight": 1
                 }
             ],
             "conditions": [
