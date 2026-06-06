@@ -101,4 +101,13 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.speedFactor(0.7)
 		.tagBoth('tfg:plants/beneath')
 		.tagBlock('minecraft:replaceable')
+
+	event.create('tfg:groundcover/ginkgo_twig', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:wood/twig/ginkgo')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'wan_ancient_beasts:block/ginkgo_log')
+		.texture('all', 'wan_ancient_beasts:block/ginkgo_log')
+		.texture('top', 'wan_ancient_beasts:block/ginkgo_log_top')
 }
