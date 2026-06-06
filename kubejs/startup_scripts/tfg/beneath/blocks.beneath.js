@@ -68,7 +68,7 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.soundType('crop')
 		.tagBoth('tfg:plants/beneath')
 		.tagBlock('minecraft:replaceable')
-		.lightLevel(0.85)
+		.lightLevel(0.65)
 
 	event.create('betterend:murkweed', 'tfg:decorative_plant')
 		.soundType('crop')
