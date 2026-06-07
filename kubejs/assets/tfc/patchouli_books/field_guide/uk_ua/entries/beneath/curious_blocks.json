@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "Мігматитова та піроксенітова цегла виготовляється як звичайна цегла, і це включає необхідність створення цегляного виробу."
 		}
 	],

@@ -1,5 +1,5 @@
 {
-	"name": "Ефекти напоїв",
+	"name": "Напої",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
@@ -7,113 +7,113 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "У світі TerraFirmaCraft немає зілля та магії, але є безліч інших напоїв, які можуть забезпечити подібні ефекти!$(br2)Цей запис слугує списком усіх різних ефектів, і як бонус, всі вони також допомагають підтримувати водний баланс."
+			"text": "Зілля та магія не існують у світі TerraFirmaCraft, але є багато інших способів отримати подібні ефекти!$(br2)Цей запис слугує списком напоїв та їхніх ефектів при споживанні."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Місткості для напоїв",
+			"title": "Індекс",
 			"anchor": "index",
-			"text": "Ви можете пити з $(l:getting_started/pottery#jug)глечика$(), $(l:waterflasks/recipes)фляги$() або $(l:mechanics/glassworking_applications#glass_bottle)скляної пляшки$(). Глечиків вистачає лише на 1 ковток і вони легко розбиваються. Скляні пляшки вміщують лише кілька ковтків і також мають шанс розбитися. Фляги можуть вміщувати ще більше ковтків і натомість повільніше використовують міцність, за винятком $(item)червоної сталевої фляги$(), яка вміщує 20 ковтків і ніколи не розбивається."
+			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)Контейнери$()$(li)$(bold)$(l:mechanics/drinks#alcohol)Алкоголь$()$(li2)$(l:mechanics/drinks#aged_alcohol)Витриманий алкоголь$()$(li2)$(l:mechanics/drinks#vintage_alcohol)Вінтажний алкоголь$()$(li2)$(l:mechanics/drinks#wine)Вино$()$(li)$(bold)$(l:mechanics/drinks#spring_water)Джерельна вода$()$(li)$(bold)$(l:mechanics/drinks#sea_water)Морська вода$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)Мутна вода$()$(li)$(bold)$(l:mechanics/drinks#juice)Фруктовий сік$()$(li)$(bold)$(l:mechanics/drinks#yogurt)Йогурт$()$(li)$(bold)$(l:mechanics/drinks#smoothie)Фруктовий смузі$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)Льодяна кашка$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Витриманий алкоголь",
-			"text": "Витримані напої $(thing)$() виготовляються шляхом витримування звичайного напою, який сам по собі виготовляється шляхом залишення різних фруктів, борошна чи інших інгредієнтів у діжці з водою. Як бонус, вони впливають на твою мову в чаті!",
+			"title": "Контейнери для напоїв",
+			"text": "Ти можеш пити з $(l:getting_started/pottery#jug)uлека$(), $(l:waterflasks/recipes)фaляги$() або $(l:mechanics/glassworking_applications#glass_bottle)cкляної пляшки$(). Глеки вміщують лише одну порцію та легко ламаються. Скляні пляшки вміщують кілька порцій і також мають шанс зламатися. Фляги можуть вміщувати ще більше й поступово витрачають міцність, окрім $(item)aляги з червоної сталі$(), яка вміщує 20 порцій і ніколи не ламається.\n",
 			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
 			"anchor": "containers"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Alcohol",
-			"text": "$(li)Витримане пиво: Поглинання II (5:20)$(li)Витриманий сидр: Спритність (5:20)$(li)Витриманий ром: Спритність II (2:40)$(li)Витримане саке: Стійкість (5:20)$(li)Витримана горілка: Стійкість II (2:40)$(li)Витриманий кукурудзяний віскі: Квапливість (5:20)$(li)Витриманий житній віскі: Квапливість (5:20)$(li)Витриманий віскі: Квапливість II (2:40)$(li)Витримана медовуха: Регенерація (5:20)",
+			"title": "Алкоголь",
+			"text": "$(thing)Базовий алкоголь$() не надають гравцеві жодних бонусів. Їх можна отримати, залишивши різні фрукти, борошно чи інші інгредієнти в $(l:mechanics/barrels)діжці$() з водою. Як бонус, після вживання будь-який алкоголь впливатиме на твою мову в чаті!",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Вінтажний алкоголь",
-			"text": "$(thing)Вінтажний алкоголь$() виготовляються шляхом подальшої витримки витриманого алкоголю в герметичних діжках. Ці алкогольні напої забезпечують сильніший ефект і довшу тривалість дії.",
+			"title": "Витриманий алкоголь",
+			"text": "$(thing)Витримаийі алкоголь$() готуються шляхом витримування звичайного алкоголю протягом 3 місяців у запечатаній діжці. Витриманий алкоголь надає ефекти при споживанні.\n",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Вінтажне пиво: Поглинання III (8:00)$(li)Вінтажний сидр: Спритність II (8:00)$(li)Вінтажний ром: Спритність III (4:00)$(li)Вінтажне саке: Стійкість II (8:00)$(li)Вінтажна горілка: Стійкість III (4:00)$(li)Вінтажний кукурудзяний віскі: Квапливість II (8:00)$(li)Вінтажний житній віскі: Квапливість II (8:00)$(li)Вінтажний віскі: Квапливість III (4:00)$(li)Вінтажний мед: Регенерація II (8:00)"
+			"text": "$(li)Витримане пиво: Поглинання II (5:20)\n$(li)Витриманий сидр: Швидкість (5:20)\n$(li)Витриманий ром: Швидкість II (2:40)\n$(li)Витримане саке: Стійкість (5:20)\n$(li)Витримана горілка: Стійкість II (2:40)\n$(li)Витриманий кукурудзяний віскі: Квапливість (5:20)\n$(li)Витриманий житній віскі: Квапливість (5:20)\n$(li)Витриманий віскі: Квапливість II (2:40)\n$(li)Витриманий медовий напій: Регенерація (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Вина",
-			"text": "$(thing)Вина$() – це ще один вид алкоголю, який виготовляється інакше, ніж інші. Це складний, але корисний процес, який неможливо автоматизувати в машині. Перегляньте запис про $(l:firmalife/wine) виноробство$(), щоб дізнатися, як його виготовити.$(br2)Усі вина також дають $(item)силу (5:20)$() на додаток до іншого ефекту!",
+			"title": "Вінтажний алкоголь",
+			"text": "$(thing)Вінтажний алкоголь$() виготовляється шляхом додаткового витримування вже витриманого алкоголю в запечатаній діжці ще протягом 3 місяців. Цей алкоголь надає сильніший ефект та має більшу тривалість дії.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
 			"anchor": "vintage_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Червоне вино: Квапливість (5:20)$(li)Біле вино: Стійкість висушення (5:20)$(li)Рожеве вино: Швидкість плавання (5:20)$(li)Ігристе вино: Стрибучість II (5:20)$(li)Десертне вино: Супротив відкиданню (5:20)"
+			"text": "$(li)Вінтажне пиво: Поглинання III (8:00)\n$(li)Вінтажний сидр: Швидкість II (8:00)\n$(li)Вінтажний ром: Швидкість III (4:00)\n$(li)Вінтажне саке: Стійкість II (8:00)\n$(li)Вінтажна горілка: Стійкість III (4:00)\n$(li)Вінтажний кукурудзяний віскі: Квапливість II (8:00)\n$(li)Вінтажний житній віскі: Квапливість II (8:00)\n$(li)Вінтажний віскі: Квапливість III (4:00)\n$(li)Вінтажний медовий напій: Регенерація II (8:00)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Чай",
-			"text": "$(thing)Чай$() можна заварювати з використанням сушених версій певних рослин.$(br2)Він забезпечує короткі, але корисні підсилення та підвищує температуру тіла на 4°C. Ідеально підходить для зими!",
+			"title": "Вина",
+			"text": "$(thing)Вино$() — це ще один вид алкоголю, який виготовляється інакше, ніж інші. Це складний, але корисний процес, який неможливо автоматизувати за допомогою машин. Переглянь запис $(l:firmalife/wine)Виробництво вина$(), щоб дізнатися, як його створити.$(br2)Усі вина також дають ефект $(item)Сила (5:20)$() на додачу до іншого ефекту!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)М'ятний чай: Регенерація II (0:30)$(li)Ромашковий чай: Стійкість II (0:30)$(li)Чай з шипшини: Поглинання(0:30)$(li)Кропивний чай: Повільне падіння (0:30)"
+			"text": "$(li)Червоне вино: Швидкість дії (5:20)$(li)Біле вино: Опір зів’яненню (5:20)$(li)Рожеве вино: Швидкість плавання (5:20)$(li)Ігристе вино: Стрибок II (5:20)$(li)Десертне вино: Опір відкиданню (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ласощі",
-			"text": "Ця категорія містить більше різноманітних напоїв із чудовим смаком та спеціальними ефектами. Смачного!",
+			"title": "Молочні",
+			"text": "$(thing)Молоко$() можна отримати від більшості самок худоби, просто клацнувши по них ПКМ з дерев’яним або металевим відром, коли рівень знайомства буде достатньо високим. (Якщо доїння не працює, переконайся, що відра не складені в стопку!)$(br)Хоча воно не надає жодних бонусів, молоко забезпечує молочне харчування після їжі та згодом може бути перетворене на сир.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
-			"text": "$(li)Какао: Квапливість (0:30), зігріває на 4°C$(li)Кава: Швидкість (0:30), зігріває на 4°C$(li)Лимонад: Квапливість (0:30), охолоджує на 2°C$(li)Наливка: Квапливість (4:00), охолоджує на 2°C$(li)Квас: Квапливість (2:00), охолоджує на 2°C$(li)Компот: Стрибучість II (0:30)",
+			"title": "Джерельна вода",
+			"text": "Вживання $(thing)джерельної води$() підіймає температуру тіла на 4°C та накладає невеликий ефект регенерації під час перебування в ній, а також зігріває тебе.\n",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Молоко",
-			"text": "$(thing)Молоко$() можна отримати від більшості самок свійських тварин, просто клацнувши по них ПКМ з дерев’яним або металевим відром, коли рівень знайомства достатньо високий. (Якщо доїння не працює, переконайтеся, що відра не складені в стопку!)$(br)Хоча воно не дає жодних бонусів, молоко забезпечує молочне харчування, якщо його випити після їжі, а пізніше з нього можна зробити сир.",
+			"title": "Морська вода",
+			"text": "Вживання $(thing)морської води$() не зволожує тебе, а навпаки робить ще більш спраглим. Висока температура тіла також може посилювати спрагу. Загубився в морі? Поглянь угору під час дощу — це простий спосіб втамувати спрагу!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Джерельна вода",
-			"text": "Пиття $(thing)джерельної води$() зігріває вас на 4°C та застосовує невеликий ефект регенерації під час знаходження в ній, а також зігріває вас при стояні у ній.",
+			"title": "Брудна вода",
+			"text": "Вживання $(thing)брудноїводи$() не рекомендується. Це спричинить нудоту та дасть тобі паразитів.",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Морська вода",
-			"text": "Вживання $(thing)морської води$() не зволожує, а навпаки робить вас ще більш спраглими. Висока температура тіла також може посилювати спрагу. Загубилися в морі? Погляньте вгору під час дощу — це простий спосіб напитися!",
+			"title": "Фруктовий сік",
+			"text": "$(thing)Фруктовий сік$() — чудовий спосіб перетворити свої фрукти на більш довговічний харчовий продукт. Фруктовий сік надає $(l:getting_started/food_and_water#quenching_transient_effectеЕфект втамування спраги$(), який допомагає боротися зі спрагою.$(br2)Фруктовий сік з часом псується.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Рідкий крижаний щербет",
-			"text": "Вживання $(thing)крижаного щербету$() охолоджує вас на 4 °C — ідеально для літа! Також корисно під час подорожей у безодні.",
+			"title": "Йогурт",
+			"text": "$(thing)Йогурт$() забезпечує молочне харчування подібно до молока. Його також можна змішати з фруктами, щоб отримати $(item)Фруктовий йогурт$().$(br2)Йогурт з часом псується.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
 			"item": "tfg:food/yogurt"
 		},
 		{
-			"title": "Fruit Smoothies",
-			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:getting_started/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:getting_started/food_and_water#fruit)Fruit$() and $(l:getting_started/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
+			"title": "Фруктовий смузі",
+			"text": "$(thing)Смузі$() — це потужний напій. Вони забезпечують як $(l:getting_started/food_and_water#quenching_transient_effect)ефект втамування спраги$(), так і $(l:getting_started/food_and_water#cooling_transient_effect)охолоджувальний ефект$(). Вони також є чудовим джерелом $(l:getting_started/food_and_water#fruit)фруктів$() та $(l:getting_started/food_and_water#dairy)молочних продуктів$().$(br2)З часом смузі псуються.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"
 		},
 		{
-			"title": "Liquid Ice Slush",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
+			"title": "Рідкий крижаний шербет",
+			"text": "Вживання $(thing)крижаного шербету$() охолоджує вас на 4 °C — ідеально для літа! Також корисно під час подорожей у безодні.",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"

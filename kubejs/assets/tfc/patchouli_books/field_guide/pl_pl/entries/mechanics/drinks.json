@@ -24,7 +24,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Alcohol",
+			"title": "Alkohol",
 			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:mechanics/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "alcohol"
@@ -70,7 +70,7 @@
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
+			"title": "Woda źródlana",
 			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
@@ -105,14 +105,14 @@
 			"item": "tfg:food/yogurt"
 		},
 		{
-			"title": "Fruit Smoothies",
+			"title": "Owocowe smoothie",
 			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:getting_started/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:getting_started/food_and_water#fruit)Fruit$() and $(l:getting_started/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"
 		},
 		{
-			"title": "Liquid Ice Slush",
+			"title": "Płynny lód",
 			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",

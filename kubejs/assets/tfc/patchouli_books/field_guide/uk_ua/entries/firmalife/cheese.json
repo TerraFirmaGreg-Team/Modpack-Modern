@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Сир",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Приготування $(thing)сиру$() у Firmalife є дещо складнішим, ніж у ванільній TFC. З'явилося два нових види молока: $(thing)якове молоко$() та $(thing)козяче молоко$(). Їх можна отримати, видоївши $(l:mechanics/animal_husbandry#yak)яка$() та $(l:mechanics/animal_husbandry#goat)козу$() відповідно. Доїння $(l:mechanics/animal_husbandry#cow)корови$() все ще дає звичайний вид молока."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Як зазвичай, молоко спочатку має $(thing)згорнутися$(). Щоб згорнути молоко, тобі знадобиться $(thing)сичуг$(). Його отримують зі шлунка $(thing)жвачних$() тварин. До них належать $(l:mechanics/animal_husbandry#yak)яки$(), $(l:mechanics/animal_husbandry#cow)корови$(), $(l:mechanics/animal_husbandry#sheep)вівці$(), $(l:mechanics/animal_husbandry#goat)кози$() та $(l:mechanics/animal_husbandry#musk_ox)мускусний бик$(). Щоб згорнути молоко, залиш його у закритій $(l:mechanics/barrels)діжці$() із сичугом на 4 години."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "cheesecloth",
+      "recipe": "firmalife:crafting/cheesecloth",
+      "text": "Кисляк потрібно перетворити на $(thing)сирну масу$(), закривши його в діжці разом із $(thing)марлею$(). Марля є одноразовою."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/cheddar_wheel",
+      "text": "За бажання ти вже можеш приготувати $(thing)сухий сир$(). Ти можеш зробити $(thing)Раджья меток$() із $(thing)якової сирної маси$(), $(thing)Шевр$() із $(thing)козячої сирної маси$() та $(thing)Чеддер$() зі $(thing)звичайної сирної маси$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/chevre_wheel",
+      "recipe2": "tfg:crafting/rajya_metok_wheel"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Інший варіант — приготувати $(thing)вологі сири$(). Вони робляться шляхом закриття сирної маси в діжці із $(thing)солоною водою$(). Ти можеш зробити $(thing)Шошу$() із $(thing)якової сирної маси$(), $(thing)Фету$() із $(thing)козячої сирної маси$() та $(thing)Гауду$() зі $(thing)звичайної сирної маси$()."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "aging",
+      "text": "Сирні головки — це блоки, які слід розміщувати, щоб вони довше зберігалися. Щоб покращити їхню якість та термін придатності, сирні голови слід $(thing)витримувати$() у $(l:firmalife/cellar)льоху$(). Щоб отримати їстівний сир із сирної голови, його потрібно відрізати від неї, натиснувши $(item)$(k:key.use)$() із $(thing)ножем$() в руці. Якщо блок просто зламати, весь прогрес витримування буде втрачено!"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Стадії дозрівання голови Гауди: $(thing)свіжий$(), $(thing)витриманий$() та $(thing)вінтажний$().",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

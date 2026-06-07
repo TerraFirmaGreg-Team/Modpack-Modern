@@ -15,7 +15,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "Podstawy",
             "anchor": "basics",
             "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
         },

@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)Les houes fonctionnent comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$().  Elle peuvent auss être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
 		},
 		{
