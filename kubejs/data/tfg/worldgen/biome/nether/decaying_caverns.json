@@ -41,15 +41,13 @@
 			"tfg:nether/terrain/mud_delta"
 		],
 		[],
-		[
-
-		],
-		"#tfg:nether_veins",
+		[],
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_disc"
 		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/big_mushrooms",

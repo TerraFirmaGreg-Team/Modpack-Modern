@@ -46,12 +46,12 @@
 			"tfg:nether/spikes/mega_calcite"
 		],
 		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_pool"
 		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/terrain/oil_tar_disk_selector",
