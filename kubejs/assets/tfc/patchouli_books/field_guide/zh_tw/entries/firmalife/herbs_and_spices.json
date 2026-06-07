@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Herbs and Spices",
+	"name": "藥草與香料",
 	"category": "tfc:firmalife",
 	"icon": "firmalife:spice/basil_leaves",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In Firmalife, there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+			"text": "群巒生活模組有許多小型植物可以採集與種植，其中用來烹飪的稱為香草。可以在收穫這些植物後在$(thing)溫室$()中栽培，他們會消耗20點的氮、磷、鉀肥。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -38,8 +38,8 @@
 					}
 				}
 			],
-			"name": "Basil",
-			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"name": "羅勒",
+			"text": "$(thing)野生羅勒$()生長在温度12-25°C、降雨量300-500mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -72,8 +72,8 @@
 					}
 				}
 			],
-			"name": "Bay Laurel",
-			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"name": "月桂",
+			"text": "$(thing)野生月桂$()生長在温度8-14°C、降雨量25-225mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -106,8 +106,8 @@
 					}
 				}
 			],
-			"name": "Cardamom",
-			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"name": "豆蔻",
+			"text": "$(thing)野生豆蔻$()生长在温度18-30°C、降雨量350-500mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -140,8 +140,8 @@
 					}
 				}
 			],
-			"name": "Cilantro",
-			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"name": "香菜",
+			"text": "$(thing)野生香菜$()生長在温度5-15°C、降雨量0-150mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -174,8 +174,8 @@
 					}
 				}
 			],
-			"name": "Cumin",
-			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"name": "孜然",
+			"text": "$(thing)野生孜然$()生長在温度6-20°C、降雨量50-250mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -208,8 +208,8 @@
 					}
 				}
 			],
-			"name": "Oregano",
-			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"name": "奧勒岡",
+			"text": "$(thing)野生奧勒岡$()生長在温度5-13°C、降雨量50-150mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -242,8 +242,8 @@
 					}
 				}
 			],
-			"name": "Pimento",
-			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"name": "多香果",
+			"text": "$(thing)野生多香果$()生長在温度15-30°C、降雨量200-450mm的區域。",
 			"enable_visualize": false
 		},
 		{
@@ -276,14 +276,14 @@
 					}
 				}
 			],
-			"name": "Vanilla",
-			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"name": "香草",
+			"text": "$(thing)野生香草$()生長在温度18-30°C、降雨量200-500mm的區域。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "firmalife:crafting/seed_ball",
-			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+			"text": "$(item)種子球$()用來種植不同類型的植物。在清理基地準備建造時很有用。種子球的配方需要$(item)堆肥$()和4份$(thing)種子$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -301,12 +301,12 @@
 				}
 			},
 			"name": "",
-			"text": "A butterfly grass plant.",
+			"text": "蝴蝶草。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+			"text": "蝴蝶草會隨時間成熟。成熟時有機會蔓延到周圍的方塊，或變為新植物。從其他草塊蔓延開的蝴蝶草將不再蔓延。 $(br)蝴蝶草變為其他植物後，可以用$(item)剪刀$()來收集它們。"
 		}
 	],
 	"read_by_default": true,

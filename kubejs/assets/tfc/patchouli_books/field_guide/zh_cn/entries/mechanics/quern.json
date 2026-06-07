@@ -59,7 +59,7 @@
     {
       "type": "tfc:quern_recipe",
       "title": "粉末",
-      "recipe": "tfg:quern/sulfur_powder",
+      "recipe": "tfg:quern/sulfur",
       "text": "手推磨可用于将矿粉（如 $(thing)硫磺$()）制成各种 $(thing)粉末$()。$(thing)宝石$() 也可被研磨成粉末。"
     },
     {

@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "Мигматитовые и пироксенитовые кирпичи изготавливаются так же, как обычные кирпичи, включая необходимость создания самого кирпича как предмета."
 		}
 	],

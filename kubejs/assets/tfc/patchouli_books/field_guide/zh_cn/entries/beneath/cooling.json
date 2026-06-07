@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "幽冥之地很热！温度从最上层的 15°C 开始，随着下降越来越热。$(br2)$(item)粗麻布$()和$(item)丝绸$()衣服有助于降温，但还有以下方式可以让你凉快下来！"
+			"text": "幽冥之地很热！温度从最上层的 20°C 开始，随着下降越来越热。$(br2)$(item)粗麻布$()、$(item)亚麻布$()和$(item)丝绸$()衣物有助于降温，但这里还有一些其他保持凉爽的方法！"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -17,19 +17,19 @@
 			"type": "patchouli:spotlight",
 			"title": "冰",
 			"item": "minecraft:packed_ice",
-			"text": "带上一些 $(thing)冰$()！站在附近可以降低周围温度。冰可以通过 $(item)锯子$() 从地表采集，$(thing)浮冰$()和$(thing)蓝冰$()不会融化。"
+			"text": "带上一些$(thing)冰$()！站在附近可以降低环境温度。冰可以用$(item)锯子$()从地表采集，得到的刨冰可以合成$(item)浮冰$()。$(thing)浮冰$()和$(thing)蓝冰$()不会融化。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
-			"title": "Liquid Ice Slush",
+			"title": "液态冰沙",
 			"text": "啊——真是清爽！能让你降温4°C。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "蓝钢装备",
 			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
-			"text": "想要更持久的方案吗？$(thing)蓝钢潜水套装$()可将体温稳定在28°C，还能让你在岩浆里游泳！$(br2)$(item)耐火皮革$()来自本地的$(thing)红麋鹿$()，或从堡垒遗迹战利品箱内获取。"
+			"text": "想要更持久的方案？$(thing)蓝钢潜水套装$()能大幅降低你的体温，还能让你在岩浆中游泳！$(br2)$(item)耐火皮革$()可以从当地的$(thing)红麋鹿$()身上获得，或从堡垒遗迹的战利品中获取。"
 		},
 		{
 			"type": "patchouli:crafting",

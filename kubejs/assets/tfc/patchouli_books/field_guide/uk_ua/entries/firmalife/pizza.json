@@ -1,0 +1,30 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Піца",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/cooked_pizza.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Щоб приготувати $(thing)піцу$(), змішай тісто, сіль, листя базиліку та 100 мВ олії в $(l:firmalife/mixing_bowl)мисці для змішування$(). Олією може бути оливкова або соєва олія (продукт, отриманий шляхом закриття соєвої пасти в діжці з водою)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "shredded_cheese",
+      "recipe": "firmalife:crafting/shredded_cheese",
+      "text": "Для початку тобі знадобиться трохи тертого сиру."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "tomato_sauce",
+      "text": "Щоб приготувати $(thing)томатний соус$(), відвари томат, сіль, часник та воду разом у казані. Або ж ти можеш використати $(l:firmalife/oven_appliances#vat)чан$() та закип'ятити створену версію цих інгредієнтів, також відому як $(thing)суміш для томатного соусу$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/raw_pizza_2",
+      "text": "Піца готується з 1–3 овочів, приготовленого м'яса або фруктів, однієї порції тертого сиру та одного томатного соусу."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 26
+}

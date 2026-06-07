@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Blackstone Beans",
+			"title": "Czernitowe fasolki",
 			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 80 %$(br)$(bold)Nutrient$(): Potassium$(br2)Blackstone Beans can be eaten for $(thing)Vegetable$() and $(thing)Protein$() nutrition. However, they must be cooked first!"
 		},
 		{

@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Резервуары для напитков",
+            "title": "Каталог",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основы$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Жажда$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Экран Рациона$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Питательные вещества$()$(li2)$(l:getting_started/food_and_water#fruit)Фрукты$()$(li2)$(l:getting_started/food_and_water#vegetables)Овощи$()$(li2)$(l:getting_started/food_and_water#protein)Белки$()$(li2)$(l:getting_started/food_and_water#grain)Зерновые$()$(li2)$(l:getting_started/food_and_water#dairy)Молочные$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Загрязнители$()$(li2)$(l:getting_started/food_and_water#toxins)Токсины$()$(li2)$(l:getting_started/food_and_water#parasites)Паразиты$()$(li2)$(l:getting_started/food_and_water#microplastics)Микропластик$()"
         },
@@ -21,7 +21,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Некоторые продукты питания очень питательны, поэтому они дольше не дадут вам голодать, в то время как некоторые продукты имеют лишь кратковременное воздействие.$(br2)Шкала голода уменьшается во время обычной игры. Она уменьшается быстрее, если вы спринтуете, плаваете или $(l:getting_started/size_and_weight#overburdening)Перегружены$(). Информацию о $(thing)Насыщении$(), $(thing)Воде$(), и а также $(thing)Нутриентах$(), доступных из еды, можно получить, наведя курсор на нее в инвентаре. С помощью $(item)$(k:key.sneak)$() открывается полный набор подсказок."
+            "text": "Некоторые продукты питания очень питательны, поэтому они дольше не дадут вам голодать, в то время как некоторые продукты имеют лишь кратковременное воздействие.$(br2)Шкала голода уменьшается во время обычной игры. Она уменьшается быстрее, если вы бежите, плаваете или $(l:getting_started/size_and_weight#overburdening)Перегружены$(). Информацию о $(thing)Насыщении$(), $(thing)Воде$(), и а также $(thing)Питательных веществах$(), доступных из еды, можно получить, наведя курсор на нее в инвентаре. С помощью $(item)$(k:key.sneak)$() открывается полный набор подсказок."
         },
         {
             "type": "patchouli:text",

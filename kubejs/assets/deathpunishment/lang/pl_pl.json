@@ -14,6 +14,7 @@
   "config.deathpunishment.penalties.thirst_duration": "Czas trwania pragnienia (0-600 s)",
   "config.deathpunishment.penalties.exhausted_duration": "Czas trwania wykończenia (0-600 s)",
   "config.deathpunishment.penalties.blindness_duration": "Czas trwania oślepienia (0-600 s)",
+  "config.deathpunishment.penalties.confusion_duration": "Czas trwania mdłości (0-600 s)",
   "config.deathpunishment.penalties.hunger_duration": "Czas trwania głodu (0-600 s)",
   "config.deathpunishment.penalties.movement_duration": "Czas trwania spowolnienia (0-600 s)",
   "config.deathpunishment.penalties.darkness_duration": "Czas trwania ciemności (0-600 s)",

@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Ягідні кущі",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/pineapple_bush",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife додає деякі ягідні кущі. Для отримання інформації про кущі дикого винограду див. $(l:firmalife/wine)виноробство$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/nightshade_berry",
+      "link_recipes": false,
+      "text": "Перша — це паслін. Паслін — це отруйна ягода. Якщо покласти її в суп, вийде отруйний $(thing)смердючий суп$(). Вона зустрічається в лісах у регіонах із рівнем опадів від 200 до 400 мм та температурою 7–24 °C."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/pineapple",
+      "link_recipes": false,
+      "text": "Ананасові кущі зустрічаються в лісах у регіонах із рівнем опадів від 250 до 500 мм та температурою 20–32 °C. Ананаси схожі на будь-які інші фрукти, за винятком того, що з них можна зробити $(thing)ананасову шкіру$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pineapple_fiber",
+      "text": "Ананаси, які пройшли $(l:firmalife/drying)сушіння$(), можна переробити на ананасове волокно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
+      "text": "Ананасова нитка виготовляється шляхом створення на $(thing)веретені$() з цим волокном."
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "firmalife:loom/pineapple_leather",
+      "text": "Зрештою, ананасову шкіру можна зіткати на $(l:tfc:mechanics/weaving)ткацькому верстаті$(). Це рослинний замінник звичайної шкіри, який можна використовувати для обтісування, та для створення інших цілей!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 21
+}
