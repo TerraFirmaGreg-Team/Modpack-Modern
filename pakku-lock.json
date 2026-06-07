@@ -14873,76 +14873,6 @@
             ]
         },
         {
-            "pakku_id": "EgqS6T2VdK7Hazcf",
-            "pakku_links": [
-                "64uacGcEw697jVGs"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "tfc-improved-badlands",
-                "modrinth": "tfc-improved-badlands"
-            },
-            "name": {
-                "curseforge": "TFC Improved Badlands",
-                "modrinth": "TFC Improved Badlands"
-            },
-            "id": {
-                "curseforge": "969207",
-                "modrinth": "kzX1pnV3"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TFCImprovedBadlands-1.20.1-1.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5126/426/TFCImprovedBadlands-1.20.1-1.0.2.jar",
-                    "id": "5126426",
-                    "parent_id": "969207",
-                    "hashes": {
-                        "sha1": "021052fcfdd3b51ec5c0b3e46974ecdfd641a0c8",
-                        "md5": "83ac19f6d7ef4ee1d620033845068b0d"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 1750888,
-                    "date_published": "2024-02-21T21:42:51.753Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TFCImprovedBadlands-1.20.1-1.0.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kzX1pnV3/versions/t1JS5Yoc/TFCImprovedBadlands-1.20.1-1.0.2.jar",
-                    "id": "t1JS5Yoc",
-                    "parent_id": "kzX1pnV3",
-                    "hashes": {
-                        "sha512": "d92d7560bb93c5bd69fbfbf636cbe22fd966297cd4c5f900235ae8ff1924a1b1fff916f8e4a40c22c0785f4ef56248a9d5a87e10280e5ab2e0531e82a4205da3",
-                        "sha1": "021052fcfdd3b51ec5c0b3e46974ecdfd641a0c8"
-                    },
-                    "required_dependencies": [
-                        "JaCEZUhg"
-                    ],
-                    "size": 1750888,
-                    "date_published": "2024-08-28T13:19:49.057361Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "rOUQenxxuY5sh7Mp",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -15920,7 +15850,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.9.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15928,22 +15858,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/WecMe2gL/TerraFirmaGreg-Core-Modern-0.9.9.jar",
-                    "id": "WecMe2gL",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/UYSytqv6/TerraFirmaGreg-Core-Modern-0.9.10.jar",
+                    "id": "UYSytqv6",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "851b2173d74eaca12bb98cff81c1dff1f039df1fc764da0056daf7e6670fe3b07c68b50ffd3548cf0fe80f1fa1a0d46161b26acc58d7da189e3977e2c9f5cc53",
-                        "sha1": "25c8612d6f798557473eb202fad7b395f1a2c04a"
+                        "sha512": "d8a4d9244a615f0deb083dd768c20e032fc2230bcb74b305cc3da72804bfc35bb882b9b04c87dd8a174c84ca7d05d97b0fd6dde682f56a90177e77196a7f5d96",
+                        "sha1": "fa7f122de0107e5eb74993081b14f9cf7b01b284"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 13062428,
-                    "date_published": "2026-05-17T12:21:37.676221Z"
+                    "size": 13445732,
+                    "date_published": "2026-06-07T18:19:32.998252Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.9.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15951,18 +15881,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8103/442/TerraFirmaGreg-Core-Modern-0.9.9.jar",
-                    "id": "8103442",
+                    "url": "https://edge.forgecdn.net/files/8212/512/TerraFirmaGreg-Core-Modern-0.9.10.jar",
+                    "id": "8212512",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "25c8612d6f798557473eb202fad7b395f1a2c04a",
-                        "md5": "a3c9cc4bb27f2a5eda1095cec422e2ce"
+                        "sha1": "fa7f122de0107e5eb74993081b14f9cf7b01b284",
+                        "md5": "e3616cd1e3be9408d6f38ec29a84f798"
                     },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 13062428,
-                    "date_published": "2026-05-17T12:21:35.520Z"
+                    "required_dependencies": [],
+                    "size": 13445732,
+                    "date_published": "2026-06-07T18:19:28.173Z"
                 }
             ]
         },
