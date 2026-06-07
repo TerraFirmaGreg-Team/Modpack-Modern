@@ -1,139 +1,139 @@
 {
 	"processors": [
-        {
-        "processor_type": "lithostitched:condition",
-        "random_mode": {
-            "mode": "per_block",
-            "name": "bastion:migmatite"
-        },
-        "if_true": [
-            {
-            "type": "lithostitched:matching_blocks",
-            "blocks": "minecraft:deepslate_bricks",
-            "match_type": "input"
-            }
-        ],
-        "then": {
-                "processor_type": "lithostitched:set_block",
-                "state_provider": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                    {
-                        "weight": 7,
-                        "data": {
-                        "Name": "minecraft:deepslate_bricks"
-                        }
-                    },
-                    {
-                        "weight": 2,
-                        "data": {
-                        "Name": "minecraft:cracked_deepslate_bricks"
-                        }
-                    },
-                    {
-                        "weight": 1,
-                        "data": {
-                        "Name": "minecraft:cave_air"
-                        }
-                    }
-                    ]
-                },
-                "preserve_state": true,
-                "random_mode": "per_block",
-                "block_entity_modifier": {
-                    "type": "minecraft:passthrough"
-            }
-        }
-        },
-        {
-        "processor_type": "lithostitched:condition",
-        "random_mode": {
-            "mode": "per_block",
-            "name": "bastion:pyroxenite"
-        },
-        "if_true": [
-            {
-            "type": "lithostitched:matching_blocks",
-            "blocks": "minecraft:polished_blackstone_bricks",
-            "match_type": "input"
-            }
-        ],
-        "then": {
-                "processor_type": "lithostitched:set_block",
-                "state_provider": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                    {
-                        "weight": 5,
-                        "data": {
-                        "Name": "minecraft:polished_blackstone_bricks"
-                        }
-                    },
-                    {
-                        "weight": 3,
-                        "data": {
-                        "Name": "minecraft:cracked_polished_blackstone_bricks"
-                        }
-                    },
-                    {
-                        "weight": 2,
-                        "data": {
-                        "Name": "minecraft:cave_air"
-                        }
-                    }
-                    ]
-                },
-                "preserve_state": true,
-                "random_mode": "per_block",
-                "block_entity_modifier": {
-                    "type": "minecraft:passthrough"
-            }
-        }
-        },
-            {
-            "processor_type": "lithostitched:condition",
-            "random_mode": {
-                "mode": "per_block",
-                "name": "bastion:pyroxenite_walls"
-            },
-            "if_true": [
-                {
-                "type": "lithostitched:matching_blocks",
-                "blocks": "minecraft:polished_blackstone_brick_wall",
-                "match_type": "input"
-                }
-            ],
-            "then": {
-                    "processor_type": "lithostitched:set_block",
-                    "state_provider": {
-                        "type": "minecraft:weighted_state_provider",
-                        "entries": [
-                        {
-                            "weight": 12,
-                            "data": {
-                            "Name": "minecraft:polished_blackstone_brick_wall"
-                            }
-                        },
-                        {
-                            "weight": 2,
-                            "data": {
-                            "Name": "tfg:rock/cracked_bricks_blackstone_wall"
-                            }
-                        },
-                        {
-                            "weight": 1,
-                            "data": {
-                            "Name": "minecraft:cave_air"
-                            }
-                        }
-                        ]
-                    },
-                    "preserve_state": true,
-                    "random_mode": "per_block",
-                    "block_entity_modifier": {
-                        "type": "minecraft:passthrough"
-                }
-            }
-        }
-    ]
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "bastion:migmatite"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:deepslate_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 7,
+							"data": {
+								"Name": "minecraft:deepslate_bricks"
+							}
+						},
+						{
+							"weight": 2,
+							"data": {
+								"Name": "minecraft:cracked_deepslate_bricks"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "bastion:pyroxenite"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:polished_blackstone_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 5,
+							"data": {
+								"Name": "minecraft:polished_blackstone_bricks"
+							}
+						},
+						{
+							"weight": 3,
+							"data": {
+								"Name": "minecraft:cracked_polished_blackstone_bricks"
+							}
+						},
+						{
+							"weight": 2,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "bastion:pyroxenite_walls"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:polished_blackstone_brick_wall",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 12,
+							"data": {
+								"Name": "minecraft:polished_blackstone_brick_wall"
+							}
+						},
+						{
+							"weight": 2,
+							"data": {
+								"Name": "tfg:rock/cracked_bricks_blackstone_wall"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		}
+	]
 }

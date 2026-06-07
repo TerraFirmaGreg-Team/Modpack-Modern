@@ -1,99 +1,99 @@
 {
 	"processors": [
-        {
-        "processor_type": "lithostitched:condition",
-        "random_mode": {
-            "mode": "per_block",
-            "name": "bastion:raw_pyroxenite"
-        },
-        "if_true": [
-            {
-            "type": "lithostitched:matching_blocks",
-            "blocks": "minecraft:polished_blackstone_bricks",
-            "match_type": "input"
-            }
-        ],
-        "then": {
-                "processor_type": "lithostitched:set_block",
-                "state_provider": {
-                    "type": "minecraft:noise_provider",
-                    "seed": 52,
-                    "noise": {
-                            "firstOctave": -4,
-                            "amplitudes": [1, 0]
-                            },
-                    "scale": 6,
-                    "states": [
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:blackstone" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" },
-                        { "Name": "minecraft:polished_blackstone_bricks" }
-                    ]
-                },
-                "preserve_state": true,
-                "random_mode": "per_block",
-                "block_entity_modifier": {
-                    "type": "minecraft:passthrough"
-            }
-        }
-        },
-        {
-        "processor_type": "lithostitched:condition",
-        "random_mode": {
-            "mode": "per_block",
-            "name": "bastion:gilded"
-        },
-        "if_true": [
-            {
-            "type": "lithostitched:matching_blocks",
-            "blocks": "minecraft:blackstone",
-            "match_type": "input"
-            }
-        ],
-        "then": {
-                "processor_type": "lithostitched:set_block",
-                "state_provider": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                    {
-                        "weight": 6,
-                        "data": {
-                        "Name": "minecraft:blackstone"
-                        }
-                    },
-                    {
-                        "weight": 1,
-                        "data": {
-                        "Name": "minecraft:gilded_blackstone"
-                        }
-                    }
-                    ]
-                },
-                "preserve_state": true,
-                "random_mode": "per_block",
-                "block_entity_modifier": {
-                    "type": "minecraft:passthrough"
-            }
-        }
-        }
-    ]
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "bastion:raw_pyroxenite"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:polished_blackstone_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:noise_provider",
+					"seed": 52,
+					"noise": {
+						"firstOctave": -4,
+						"amplitudes": [ 1, 0 ]
+					},
+					"scale": 6,
+					"states": [
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:blackstone" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" },
+						{ "Name": "minecraft:polished_blackstone_bricks" }
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "bastion:gilded"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:blackstone",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 6,
+							"data": {
+								"Name": "tfg:rock/hardened_blackstone"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:gilded_blackstone"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		}
+	]
 }

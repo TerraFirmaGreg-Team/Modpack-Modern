@@ -243,6 +243,7 @@ function registerTFGBeneathBiomeTags(event) {
 
 	event.add('minecraft:has_structure/nether_fossil', '#tfg:nether_biomes')
 	event.add('minecraft:has_structure/bastion_remnant', '#tfg:nether_biomes')
+	event.add('tfg:has_structure/tower', '#tfg:nether_biomes')
 
 }
 
