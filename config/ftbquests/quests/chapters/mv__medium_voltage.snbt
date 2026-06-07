@@ -1836,7 +1836,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["738E8E10951E17C6"]
+			dependencies: [
+				"738E8E10951E17C6"
+				"7343272F65129211"
+			]
 			description: [
 				"{quests.medium_voltage.gem_lens.desc.1}"
 				"{@pagebreak}"
@@ -1943,11 +1946,9 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["71F82DEEBDBBD4AC"]
 			description: ["{quests.medium_voltage.gem_slurry.desc}"]
 			icon: "gtceu:exquisite_ruby_gem"
 			id: "7343272F65129211"
-			shape: "heart"
 			subtitle: "{quests.medium_voltage.gem_slurry.subtitle}"
 			tasks: [
 				{

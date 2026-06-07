@@ -2,7 +2,7 @@
 	autofocus_id: "604E10FF2A87C62F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "a"
+	filename: "beneath"
 	group: "36FC51ACEF38D994"
 	icon: "gtceu:the_nether_marker"
 	id: "5E48B4F2FBE725D2"
@@ -21,14 +21,14 @@
 			}
 			id: "6C3E8E1974A07479"
 			linked_quest: "061116CF508D54F6"
-			x: 1.0d
-			y: 1.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			id: "50806ED6BC26A04A"
 			linked_quest: "2DB82986FE176CD7"
-			x: 1.0d
-			y: 3.0d
+			x: 2.5d
+			y: 5.0d
 		}
 	]
 	quests: [
@@ -58,6 +58,7 @@
 			description: ["{quests.tfg_tips.how_to_go_beneath.desc}"]
 			icon: "minecraft:bedrock"
 			id: "43230CD4044D25D8"
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "{quests.tfg_tips.how_to_go_beneath.subtitle}"
 			tasks: [
@@ -90,6 +91,7 @@
 			guide_page: "tfc:field_guide tfc:beneath/biomes"
 			icon: "minecraft:dripstone_block"
 			id: "604E10FF2A87C62F"
+			shape: "hexagon"
 			size: 1.5d
 			subtitle: "{quests.tfg_tips.reach_the_beneath.subtitle}"
 			tasks: [{
@@ -101,7 +103,7 @@
 			}]
 			title: "{quests.tfg_tips.reach_the_beneath.title}"
 			x: -1.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["604E10FF2A87C62F"]
@@ -125,7 +127,7 @@
 			}]
 			title: "{quests.tfg_tips.piglin_bartering.title}"
 			x: 1.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6855CD347701FF28"]
@@ -140,7 +142,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneath_prep.title}"
-			x: -3.5d
+			x: -5.0d
 			y: -6.0d
 		}
 		{
@@ -155,7 +157,7 @@
 				item: "tfg:piglin_disguise"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.0d
 			y: -4.0d
 		}
 		{
@@ -177,7 +179,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.juicer.title}"
-			x: -5.0d
+			x: -6.5d
 			y: -4.5d
 		}
 		{
@@ -186,6 +188,7 @@
 			guide_page: "tfc:field_guide tfc:beneath/cooling"
 			icon: "minecraft:packed_ice"
 			id: "5A69DE70D3DAD1D6"
+			shape: "circle"
 			subtitle: "{quests.tfg_tips.beneath_temp_management.subtitle}"
 			tasks: [
 				{
@@ -224,7 +227,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.beneath_temp_management.title}"
-			x: -5.0d
+			x: -6.5d
 			y: -7.5d
 		}
 		{
@@ -247,11 +250,15 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneath_clothes.title}"
-			x: -3.5d
+			x: -5.0d
 			y: -8.0d
 		}
 		{
-			dependencies: ["604E10FF2A87C62F"]
+			dependencies: [
+				"43230CD4044D25D8"
+				"604E10FF2A87C62F"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.fuck_go_back.desc}"]
 			icon: "minecraft:ladder"
 			id: "6FDF4631618088C6"
@@ -263,8 +270,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.fuck_go_back.title}"
-			x: -3.0d
-			y: -1.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -323,7 +330,7 @@
 			]
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
 			x: -3.0d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["43230CD4044D25D8"]
@@ -332,6 +339,7 @@
 			guide_page: "tfc:field_guide tfc:mechanics/powderkegs"
 			icon: "tfc:powderkeg"
 			id: "11CF74D8CF7953F4"
+			optional: true
 			tasks: [{
 				id: "33780B99A64A19FE"
 				item: {
@@ -377,6 +385,7 @@
 				}
 			}
 			id: "68B3C679A4F10C45"
+			optional: true
 			tasks: [{
 				id: "1141568D042EB30B"
 				item: {
@@ -398,6 +407,7 @@
 			dependency_requirement: "one_started"
 			description: ["{quests.tfg_tips.keratophyre.desc}"]
 			id: "2D0052B4D98FD916"
+			optional: true
 			tasks: [{
 				icon: "beneath:crackrack"
 				id: "5A15BB3D83081B9E"
@@ -415,6 +425,7 @@
 			dependencies: ["3A7EAA08E124010D"]
 			description: ["{quests.tfg_tips.bottom_beneath.desc}"]
 			id: "5D0B0B9E61C3DE75"
+			shape: "hexagon"
 			size: 1.5d
 			subtitle: "{quests.tfg_tips.bottom_beneath.subtitle}"
 			tasks: [{
@@ -424,13 +435,14 @@
 			}]
 			title: "{quests.tfg_tips.bottom_beneath.title}"
 			x: -1.0d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["604E10FF2A87C62F"]
 			description: ["{quests.tfg_tips.middle_beneath.desc}"]
 			icon: "minecraft:deepslate"
 			id: "3A7EAA08E124010D"
+			shape: "hexagon"
 			size: 1.5d
 			subtitle: "{quests.tfg_tips.middle_beneath.subtitle}"
 			tasks: [{
@@ -439,7 +451,7 @@
 			}]
 			title: "{quests.tfg_tips.middle_beneath.title}"
 			x: -1.0d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6694C656C4D4792B"]
@@ -461,7 +473,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.rope_ladders.title}"
-			x: -5.5d
+			x: -7.0d
 			y: -6.0d
 		}
 		{
@@ -477,7 +489,254 @@
 			}]
 			title: "{quests.tfg_tips.red_elk.title}"
 			x: -3.0d
-			y: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6694C656C4D4792B"]
+			description: ["{quests.tfg_tips.gliders_and_grapples.desc}"]
+			id: "2AD5A3819F788EA6"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.gliders_and_grapples.subtitle}"
+			tasks: [{
+				id: "303D15E5B5A10CD5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(hangglider:hang_glider)item(grapplemod:grapplinghook))"
+					}
+				}
+				title: "{quests.tfg_tips.gliders_and_grapples.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.gliders_and_grapples.title}"
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["604E10FF2A87C62F"]
+			description: ["{quests.tfg_tips.hellforge.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/hellforge"
+			icon: "beneath:hellbricks"
+			id: "4F3140BA29F0648D"
+			optional: true
+			subtitle: "{quests.tfg_tips.hellforge.subtitle}"
+			tasks: [
+				{
+					count: 21L
+					id: "47A2A71FEE6FD6DA"
+					item: "beneath:hellbricks"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "53877F79F5DD6B7E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/aqueducts)"
+						}
+					}
+					title: "Any #tfc:rock/aqueducts"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.hellforge.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A7EAA08E124010D"]
+			description: ["{quests.tfg_tips.beneath_tower.desc}"]
+			id: "170FCF661E93FDFB"
+			subtitle: "{quests.tfg_tips.beneath_tower.subtitle}"
+			tasks: [{
+				icon: "minecraft:deepslate_bricks"
+				id: "702C0E3181FD9E98"
+				structure: "tfg:beneath/tower"
+				title: "{quests.tfg_tips.beneath_tower.task}"
+				type: "structure"
+			}]
+			title: "{quests.tfg_tips.beneath_tower.title}"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5D0B0B9E61C3DE75"]
+			description: ["{quests.tfg_tips.bastions.desc}"]
+			id: "6DA80B3812DD7BE1"
+			subtitle: "{quests.tfg_tips.bastions.subtitle}"
+			tasks: [{
+				icon: "minecraft:polished_blackstone_bricks"
+				id: "37262E169EEE9BF1"
+				structure: "minecraft:bastion_remnant"
+				title: "{quests.tfg_tips.bastions.task}"
+				type: "structure"
+			}]
+			title: "{quests.tfg_tips.bastions.title}"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["604E10FF2A87C62F"]
+			description: [
+				"{quests.tfg_tips.top_slimes.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.top_slimes.desc.2}"
+			]
+			icon: "tfg:slime/slime_ball/plant"
+			id: "5C8E47A086DF5EC0"
+			subtitle: "{quests.tfg_tips.top_slimes.subtitle}"
+			tasks: [
+				{
+					biome: "tfg:nether/salt_caves"
+					disable_toast: true
+					icon: "tfg:halite"
+					id: "2BF170444922B465"
+					optional_task: true
+					title: "{quests.tfg_tips.top_slimes.task.1}"
+					type: "biome"
+				}
+				{
+					biome: "tfg:nether/muggy_bog"
+					disable_toast: true
+					icon: "tfg:hardened_clay"
+					id: "523005C4670A439D"
+					optional_task: true
+					title: "{quests.tfg_tips.top_slimes.task.2}"
+					type: "biome"
+				}
+				{
+					icon: "tfg:spawn_egg/slime"
+					id: "6FC962ECC223F799"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.top_slimes.task.3}"
+					to_observe: "tfg:slime"
+					type: "observation"
+				}
+				{
+					id: "78C8CDC154866808"
+					item: "tfg:slime/slime_ball/plant"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.top_slimes.title}"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3A7EAA08E124010D"
+				"5C8E47A086DF5EC0"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.middle_slimes.desc}"]
+			icon: "tfg:slime/slime_ball/glowberry"
+			id: "743E9861F32E84A5"
+			subtitle: "{quests.tfg_tips.middle_slimes.subtitle}"
+			tasks: [
+				{
+					biome: "tfg:nether/lush_hollow"
+					disable_toast: true
+					icon: "minecraft:moss_block"
+					id: "2E9F5A0EB4118661"
+					optional_task: true
+					title: "{quests.tfg_tips.middle_slimes.task.1}"
+					type: "biome"
+				}
+				{
+					biome: "tfg:nether/geothermal_springs"
+					disable_toast: true
+					icon: "minecraft:calcite"
+					id: "212039DCF5896DEF"
+					optional_task: true
+					title: "{quests.tfg_tips.middle_slimes.task.2}"
+					type: "biome"
+				}
+				{
+					biome: "tfg:nether/thorny_brambles"
+					disable_toast: true
+					icon: "wan_ancient_beasts:olden_moss_block"
+					id: "0B964D9767632BD7"
+					optional_task: true
+					title: "{quests.tfg_tips.middle_slimes.task.3}"
+					type: "biome"
+				}
+				{
+					disable_toast: true
+					icon: "tfg:spawn_egg/slime"
+					id: "68EB0510ADE6DA59"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.middle_slimes.task.4}"
+					to_observe: "tfg:slime"
+					type: "observation"
+				}
+				{
+					id: "19E226F88A0F9391"
+					item: "tfg:slime/slime_ball/glowberry"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.middle_slimes.title}"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5D0B0B9E61C3DE75"
+				"743E9861F32E84A5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{quests.tfg_tips.bottom_slimes.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.bottom_slimes.desc.2}"
+			]
+			icon: "tfg:slime/slime_ball/latex"
+			id: "4E98FB76D9AF0205"
+			subtitle: "{quests.tfg_tips.bottom_slimes.subtitle}"
+			tasks: [
+				{
+					disable_toast: true
+					icon: "tfg:spawn_egg/slime"
+					id: "2336B8B00B823EFF"
+					observe_type: 5
+					timer: 0L
+					title: "{quests.tfg_tips.bottom_slimes.task}"
+					to_observe: "tfg:slime"
+					type: "observation"
+				}
+				{
+					id: "230B0F0E83D54EAF"
+					item: "tfg:slime/slime_ball/latex"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.bottom_slimes.title}"
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["604E10FF2A87C62F"]
+			description: ["{quests.tfg_tips.unposter.desc}"]
+			guide_page: "tfc:field_guide tfc:beneath/unposter"
+			id: "43CC656CB7D0F813"
+			optional: true
+			subtitle: "{quests.tfg_tips.unposter.subtitle}"
+			tasks: [{
+				id: "635F30362EB13A92"
+				item: "beneath:unposter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["{quests.beneath.subtitle}"]
