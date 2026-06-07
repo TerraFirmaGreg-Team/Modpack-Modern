@@ -40,7 +40,6 @@
 		[
 			"tfg:nether/terrain/rarer_delta"
 		],
-		[],
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -67,6 +66,7 @@
 		[
 			"tfc:erosion"
 		],
+		[],
 		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,

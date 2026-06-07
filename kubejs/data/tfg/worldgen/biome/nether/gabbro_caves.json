@@ -36,7 +36,6 @@
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava"
@@ -58,6 +57,7 @@
 		[
 			"tfc:erosion"
 		],
+		[],
 		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,

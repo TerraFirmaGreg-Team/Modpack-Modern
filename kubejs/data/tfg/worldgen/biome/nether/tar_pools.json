@@ -36,16 +36,15 @@
 		"grass_color": 6466617
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfg:nether/terrain/oil_lake_selector",
 			"tfg:nether/terrain/small_oil_lake_selector"
 		],
-		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -80,6 +79,7 @@
 			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
 		],
+		[],
 		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
