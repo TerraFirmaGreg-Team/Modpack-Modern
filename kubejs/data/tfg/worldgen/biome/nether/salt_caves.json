@@ -50,7 +50,6 @@
 		[
 			"tfg:nether/terrain/spring_lava"
 		],
-		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/terrain/garnet_sands_disk",
@@ -81,7 +80,8 @@
 			"tfg:nether/entity/horseshoe_crab",
 			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
-		]
+		],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
