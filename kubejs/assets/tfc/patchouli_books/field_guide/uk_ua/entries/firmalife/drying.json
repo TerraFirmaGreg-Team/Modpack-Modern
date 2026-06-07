@@ -1,0 +1,42 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Сушка",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:drying_mat",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)Килимок для сушіння$() використовується для сушіння предметів. Він виготовляється з $(thing)фруктового листя$(), яке можна здобути, ламаючи листя $(thing)фруктових дерев$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/drying_mat",
+      "text": "Рецепт сушильної циновки."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Щоб скористатися килимком для сушіння, розташуй його під сонцем та поклади на нього предмет за допомогою $(item)$(k:key.use)$(). Через пів дня він висушиться. Якщо піде дощ, то процес сушіння почнеться спочатку."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/solar_drier",
+      "text": "Сонячна сушарка працює так само, як і килимок для сушіння, але у 12 разів швидше."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Килимок для сушіння можна автоматизувати. Штовхання поршня в бік сушильного мату виб'є предмет із нього. Якщо ж скинути предмет зверху на килимок для сушіння, він автоматично розміститься на ньому."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/drying_fruit",
+      "text": "Сушіння фруктів — це найпоширеніший спосіб використання килимка для сушіння. Сухофрукти використовуються в деяких рецептах і зберігаються значно довше."
+    },
+    {
+      "type": "tfc:drying_recipe",
+      "recipe": "firmalife:drying/tofu",
+      "text": "Тофу виготовляється за допомогою килимка для сушіння."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 12
+}

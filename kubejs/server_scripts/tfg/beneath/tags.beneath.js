@@ -69,9 +69,6 @@ function registerTFGBeneathItemTags(event) {
 	event.add('beneath:unpostable', '#tfc:compost_browns_low')
 	event.add('beneath:unpostable', '#tfc:compost_browns')
 	event.add('beneath:unpostable', '#tfc:compost_browns_high')
-
-	event.add('tfg:magma_food', 'tfg:rock/glauberite')
-	event.add('tfg:magma_food', 'gtceu:rich_raw_sulfur')
 }
 
 
@@ -168,6 +165,7 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:nether_carver_replaceables', "beneath:soul_clay");
 	event.add('minecraft:nether_carver_replaceables', "tfc:peat");
 	event.add('minecraft:nether_carver_replaceables', "tfg:hardened_clay");
+	event.add('minecraft:nether_carver_replaceables', "minecraft:magma_block");
 
 	const moss_blocks = [
 		'minecraft:moss_block',
@@ -245,6 +243,7 @@ function registerTFGBeneathBiomeTags(event) {
 
 	event.add('minecraft:has_structure/nether_fossil', '#tfg:nether_biomes')
 	event.add('minecraft:has_structure/bastion_remnant', '#tfg:nether_biomes')
+	event.add('tfg:has_structure/tower', '#tfg:nether_biomes')
 
 }
 

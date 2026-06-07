@@ -163,8 +163,8 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0)
-		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
+		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.05, 0.05))
 	})
 
 	event.register('tfg:orbit_climate', builder => {
@@ -177,7 +177,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -193,7 +193,7 @@ TFCEvents.registerClimateModel(event => {
 		builder.setAverageTemperatureCalculation((level, pos) => -5)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
 
@@ -221,7 +221,7 @@ TFCEvents.registerClimateModel(event => {
 			return calcAverage(pos.x, global.MARS_PLANET_SIZE, -25, 13)
 		})
 
-		builder.setWaterFog((level, pos, calendarTicks) => 0.02);
+		builder.setWaterFog((level, pos, calendarTicks) => 1);
 
 		const controller = global.getMarsClimateController();
 		builder.setAirFog(controller.createFogCallback(builder));
@@ -249,7 +249,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 
 		builder.setAirFog((level, pos, calendarTicks) => 0)
-		builder.setWaterFog((level, pos, calendarTicks) => 0.6)
+		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		// Make up something for the wind. Apparently Venus irl is not very windy on the surface
 		builder.setWindVector((level, block, calendarTicks) => {
 			const strength = Math.max(0, Math.sin(calendarTicks / 10000)) * 0.2;

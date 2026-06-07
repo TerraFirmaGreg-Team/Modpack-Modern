@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
 		}
 	],

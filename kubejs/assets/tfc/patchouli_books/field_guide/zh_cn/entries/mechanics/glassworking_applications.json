@@ -405,7 +405,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "lamp_glass",
-      "recipe": "tfc:glassworking/lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
       "text": "$(thing)灯罩$()是$(l:mechanics/lamps)灯$()的必要部件。"
     },
     {

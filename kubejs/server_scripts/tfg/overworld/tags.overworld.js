@@ -554,6 +554,7 @@ function registerTFGOverworldEntityTypeTags(event) {
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
+	event.add('tfg:slimes', 'tfg:slime')
 
 	// Takes no damage from the new 1.21 cacti
 	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')

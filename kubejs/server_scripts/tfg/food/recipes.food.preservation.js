@@ -15,15 +15,16 @@ function registerTFGPreservationFoodRecipes(event) {
 			global.generateAllJamRecipes(event, fruit.id, fruit.name, `tfg:jar/${fruit.name}`, `tfg:jar/${fruit.name}_unsealed`, `tfg:block/food/jam/${fruit.name}`);
 		};
 
-		if (fruit.genFreezeDried) {
+		global.processorRecipeText(event, `processor/${fruit.name}/freeze_drying`, 100, GTValues.VA[GTValues.MV], 'tfg.food_recipe.freeze_drying', {
+			circuit: 7,
+			itemInputs: [`2x ${fruit.id}`, 'tfg:foil_pack', 'tfg:dry_ice'],
+			itemOutputs: ['tfg:food/freeze_dried_fruit'],
+			itemOutputProvider: TFC.isp.of('tfg:food/freeze_dried_fruit').mergeTag({"dynamic_color": fruit.color.toString()}).meal(
+				(food) => food.hunger(4).decayModifier(fruit.decay).water(0).microplastics(0.5),
+				[(portion) => portion.nutrientModifier(0.9).saturationModifier(0.8).waterModifier(0)]
+			).removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
+		});
 
-			global.processorRecipeText(event, `processor/${fruit.name}/freeze_drying`, 100, 120, "tfg.food_recipe.freeze_drying", {
-				circuit: 7,
-				itemInputs: [fruit.id, 'tfg:foil_pack', 'tfg:dry_ice'],
-				itemOutputs: [`tfg:food/freeze_dried/${fruit.name}`],
-				itemOutputProvider: TFC.isp.of(`tfg:food/freeze_dried/${fruit.name}`).copyOldestFood().removeTrait('firmalife:dried').addTrait('tfg:freeze_dried')
-			});
-		};
 	});
 
 	global.TFC_JAMS.forEach(name => {

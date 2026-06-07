@@ -37,5 +37,11 @@ function registerTFGFoodMaterials(event) {
 	event.create('tfg:brown_gravy')
 		.liquid(new GTFluidBuilder().customStill().state(GTFluidState.LIQUID).temperature(360));
 
+	event.create('tfg:cultured_milk')
+		.liquid(new GTFluidBuilder().customStill().state(GTFluidState.LIQUID).temperature(300));
+
+	event.create('tfg:peanut_oil')
+		.liquid(new GTFluidBuilder().customStill().state(GTFluidState.LIQUID).temperature(300));
+
 	//#endregion
 };

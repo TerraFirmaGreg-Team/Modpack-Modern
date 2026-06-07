@@ -1,0 +1,38 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Burrito i taco",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:textures/item/food/burrito.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The journey of making a $(thing)Tortilla$() is a long process, but rewarding. Start with $(thing)Maize Grain$(). Boil it in a pot of $(thing)Limewater$(), and seal it in a barrel of water to make $(thing)Nixtamal$(). Then crush it in a $(thing)Quern$() to make $(thing)Masa Flour$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Crafting the Masa Flour with a bucket of water makes $(thing)Masa$(), the dough of a tortilla. This can be heated to make a $(thing)Corn Tortilla$(). Baking a Tortilla in an oven makes a $(thing)Taco Shell$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tortilla_chips",
+      "recipe2": "firmalife:crafting/nachos"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/salsa",
+      "text": "A tomato, cilantro, salt, and a knife will yield you $(thing)Salsa$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/burrito",
+      "text": "The $(thing)Burrito$() is made from cooked meat, $(l:firmalife/pizza#shredded_cheese)Shredded Cheese$(), $(l:firmalife/pizza#tomato_sauce)Tomato Sauce$(), a vegetable, and Salsa."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/taco",
+      "text": "The $(thing)Taco$() is made from the same ingredients, except with a $(thing)Taco Shell$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 28
+}

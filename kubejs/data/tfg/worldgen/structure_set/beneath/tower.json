@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:beneath/tower",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"salt": 264226226,
+		"spacing": 25,
+		"separation": 10,
+		"exclusion_zone": {
+			"other_set": "minecraft:nether_complexes",
+			"chunk_count": 3
+		}
+	}
+}

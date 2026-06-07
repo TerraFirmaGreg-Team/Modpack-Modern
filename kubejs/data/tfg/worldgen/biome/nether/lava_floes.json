@@ -77,12 +77,19 @@
 		}
 	},
 	"spawners": {
-		"ambient": [],
+		"ambient": [
+			{
+				"type": "tfg:slime",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 70
+			}
+		],
 		"axolotls": [],
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
+				"maxCount": 6,
 				"minCount": 4,
 				"weight": 100
 			}

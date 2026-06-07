@@ -34,6 +34,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
@@ -47,6 +48,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 0.5, 0.3)
 			.velocity(0, 0, 0)

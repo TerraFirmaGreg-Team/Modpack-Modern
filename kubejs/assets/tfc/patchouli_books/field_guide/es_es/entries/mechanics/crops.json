@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "Una vez el cabezal de la azada esté tallado, puede craftearse en una Azada.$(br2)Las Azadas funcionan como en Vanilla, haciendo clic derecho en bloques de tierra para convertirlos en $(thing)Tierra de Cultivo$(). También se pueden usar para convertir $(thing)Tierra Enraizada$() en $(thing)Tierra$()."
 		},
 		{

@@ -165,24 +165,14 @@ function registerSpeciesRecipes(event) {
 		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 
-	event.shaped('minecraft:arrow', [
-		' A ',
-		' B ',
-		' C '
-	], {
-		A: 'species:werefang',
-		B: '#forge:rods/wooden',
-		C: 'tfg:fletching'
-	}).id('tfg:shaped/arrow_werefang')
-
 	event.recipes.gtceu.macerator('tfg:werefang')
 		.itemInputs("species:werefang")
-		.itemOutputs("3x minecraft:bone_meal")
+		.itemOutputs("minecraft:bone_meal")
 		.duration(50)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 
-	event.recipes.tfc.quern("3x minecraft:bone_meal", "species:werefang")
+	event.recipes.tfc.quern("minecraft:bone_meal", "species:werefang")
 		.id("tfg:quern/werefang")
 
 	event.recipes.gtceu.macerator('tfg:bone_spike')

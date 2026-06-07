@@ -12,6 +12,6 @@ function registerBeneathItemModifications(event) {
 function registerBeneathBlockModifications(event) {
 
 	event.modify('beneath:gleamflower', block => {
-		block.lightEmission = 15
+		block.lightEmission = 8
 	})
 }

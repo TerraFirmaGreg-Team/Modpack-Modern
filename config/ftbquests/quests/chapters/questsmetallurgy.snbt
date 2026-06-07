@@ -65,8 +65,8 @@
 			id: "70D405A6CF1B048B"
 			linked_quest: "7178843BCD50A012"
 			shape: "heart"
-			x: 0.5d
-			y: -33.5d
+			x: 0.0d
+			y: -34.0d
 		}
 		{
 			id: "78422ADEE9AF06B8"
@@ -79,8 +79,8 @@
 			id: "572FD8B81A8B7255"
 			linked_quest: "7EE13BE102F323F3"
 			shape: "heart"
-			x: -0.5d
-			y: -34.5d
+			x: -1.0d
+			y: -35.0d
 		}
 		{
 			id: "4DCF561EF2E78E72"
@@ -102,6 +102,19 @@
 			shape: "heart"
 			x: 28.5d
 			y: -32.0d
+		}
+		{
+			id: "222003C6AD2BF8C8"
+			linked_quest: "6702D52922D85C0D"
+			x: -0.5d
+			y: -31.0d
+		}
+		{
+			id: "54DB3BC997AE05F2"
+			linked_quest: "36B64597F76625ED"
+			shape: "heart"
+			x: -2.0d
+			y: -31.0d
 		}
 	]
 	quests: [
@@ -800,6 +813,8 @@
 			description: ["{quests.metal_age.bronze_goodies.desc}"]
 			icon: "greate:andesite_alloy_cogwheel"
 			id: "26F07C926959FACF"
+			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.metal_age.bronze_goodies.subtitle}"
 			tasks: [{
 				id: "3AD41F7E9EE1076B"
@@ -908,6 +923,7 @@
 			icon: "greate:steel_mechanical_pump"
 			id: "0C9B7745D812555A"
 			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
 			tasks: [{
 				id: "3EB7C3AE88950E4B"
@@ -1339,8 +1355,8 @@
 				}
 			]
 			title: "{quests.metal_age.copper_diving.title}"
-			x: -0.5d
-			y: -33.5d
+			x: -1.0d
+			y: -34.0d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -1658,8 +1674,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.rowboat_materials.title}"
-			x: 0.5d
-			y: -34.5d
+			x: 0.0d
+			y: -35.0d
 		}
 		{
 			dependencies: ["174DA15847665CF8"]

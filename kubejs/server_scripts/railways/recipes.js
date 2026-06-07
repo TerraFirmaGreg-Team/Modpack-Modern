@@ -516,7 +516,7 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.gtceu.assembler('railways/monorail/wrought_iron')
 		.itemInputs('create:metal_girder', '2x #forge:plates/wrought_iron')
 		.itemOutputs('32x railways:track_monorail')
-		.duration(250)
+		.duration(200)
 		.EUt(32)
 
 	event.recipes.createSequencedAssembly([
@@ -531,7 +531,7 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.gtceu.assembler('railways/monorail/steel')
 		.itemInputs('create:metal_girder', '2x #forge:plates/steel')
 		.itemOutputs('64x railways:track_monorail')
-		.duration(250)
+		.duration(200)
 		.EUt(32)
 
 	const OTHER_TRACKS = [
@@ -561,7 +561,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(x.slab, `2x #tfg:track_rods`)
 			.inputFluids(Fluid.of(`gtceu:concrete`, 144))
 			.itemOutputs(`32x railways:track_${x.rail}_narrow`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(1)
 
@@ -578,7 +578,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(`3x ${x.slab}`, `2x #tfg:track_rods`)
 			.inputFluids(Fluid.of(`gtceu:concrete`, 144))
 			.itemOutputs(`32x railways:track_${x.rail}`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(2)
 
@@ -595,7 +595,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(`5x ${x.slab}`, `2x #tfg:track_rods`)
 			.inputFluids(Fluid.of(`gtceu:concrete`, 144))
 			.itemOutputs(`32x railways:track_${x.rail}_wide`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(3)
 	})
@@ -613,7 +613,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemInputs('3x #tfg:rock_slabs', '2x #tfg:track_rods')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
 		.itemOutputs('32x create:track')
-		.duration(800)
+		.duration(200)
 		.EUt(16)
 		.circuit(2)
 
@@ -630,7 +630,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemInputs('#tfg:rock_slabs', '2x #tfg:track_rods')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
 		.itemOutputs('32x railways:track_create_andesite_narrow')
-		.duration(800)
+		.duration(200)
 		.EUt(16)
 		.circuit(1)
 
@@ -648,7 +648,7 @@ const registerRailWaysRecipes = (event) => {
 		.itemInputs('5x #tfg:rock_slabs', '2x #tfg:track_rods')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
 		.itemOutputs('32x railways:track_create_andesite_wide')
-		.duration(800)
+		.duration(200)
 		.EUt(16)
 		.circuit(3)
 
@@ -674,7 +674,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(`3x tfc:wood/planks/${woodType}_slab`, '2x #tfg:track_rods')
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`32x railways:track_tfc_${woodType}`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(2)
 
@@ -691,7 +691,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(`tfc:wood/planks/${woodType}_slab`, '2x #tfg:track_rods')
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`32x railways:track_tfc_${woodType}_narrow`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(1)
 
@@ -709,7 +709,7 @@ const registerRailWaysRecipes = (event) => {
 			.itemInputs(`5x tfc:wood/planks/${woodType}_slab`, '2x #tfg:track_rods')
 			.inputFluids(Fluid.of('gtceu:concrete', 144))
 			.itemOutputs(`32x railways:track_tfc_${woodType}_wide`)
-			.duration(800)
+			.duration(200)
 			.EUt(16)
 			.circuit(3)
 	});

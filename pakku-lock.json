@@ -12402,6 +12402,42 @@
             ]
         },
         {
+            "pakku_id": "DscVrVV5OjYD2AqF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "phoenixs-chromatic-colors"
+            },
+            "name": {
+                "curseforge": "Phoenix's Chromatic Codes"
+            },
+            "id": {
+                "curseforge": "1483210"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "chromatic_codes-12.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7985/373/chromatic_codes-12.0.jar",
+                    "id": "7985373",
+                    "parent_id": "1483210",
+                    "hashes": {
+                        "sha1": "4f80b7c8445654b4b86bd45af2964d4228aec96d",
+                        "md5": "898b82f1df761d3c08ebaf7df9d1dc81"
+                    },
+                    "required_dependencies": [],
+                    "size": 273125,
+                    "date_published": "2026-04-26T00:26:01.343Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NAnmkz6EFQkpeHYH",
             "pakku_links": [
                 "3Hn4sTVbBvKyQJJS"
@@ -14706,74 +14742,6 @@
                     ],
                     "size": 201539,
                     "date_published": "2024-01-20T04:50:44.980Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "DER7HmNR9pm9t8hu",
-            "pakku_links": [
-                "64uacGcEw697jVGs",
-                "AqNG8HNM9pfy1ges"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "tfc-gourmet",
-                "modrinth": "tfc_gourmet"
-            },
-            "name": {
-                "curseforge": "TFC Gourmet",
-                "modrinth": "TFC Gourmet"
-            },
-            "id": {
-                "curseforge": "1363944",
-                "modrinth": "ERme2o65"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "tfc_gourmet-1.5.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ERme2o65/versions/QXFJ9UPF/tfc_gourmet-1.5.2.jar",
-                    "id": "QXFJ9UPF",
-                    "parent_id": "ERme2o65",
-                    "hashes": {
-                        "sha512": "7c310634cd2ddaca2c668254430aeaa8ee83c0179ddf3dfc7c9e595d8b362a80665c2a8b5ee49a7c7ed75ebe6f11c1117cf9e738130ee543fd4ebf4120ac238a",
-                        "sha1": "9702c10e50183ac9c0827bc899d0a50cba211f9e"
-                    },
-                    "required_dependencies": [],
-                    "size": 423609,
-                    "date_published": "2026-02-23T01:04:15.376269Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "tfc_gourmet-1.5.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7665/969/tfc_gourmet-1.5.2.jar",
-                    "id": "7665969",
-                    "parent_id": "1363944",
-                    "hashes": {
-                        "sha1": "9702c10e50183ac9c0827bc899d0a50cba211f9e",
-                        "md5": "43b99a54522d40d0f8ec95edf31834f1"
-                    },
-                    "required_dependencies": [
-                        "302973",
-                        "453394"
-                    ],
-                    "size": 423609,
-                    "date_published": "2026-02-23T01:00:53.523Z"
                 }
             ]
         },

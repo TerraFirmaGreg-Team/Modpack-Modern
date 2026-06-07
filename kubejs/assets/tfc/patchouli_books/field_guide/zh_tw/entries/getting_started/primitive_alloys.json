@@ -1,68 +1,68 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Primitive Alloys",
+	"name": "原始合金",
 	"category": "tfc:getting_started",
 	"icon": "tfc:ceramic/ingot_mold{tank:{\"Amount\":100,\"FluidName\":\"tfc:metal/bronze\"}}",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+			"text": "$(thing)合金$()是由兩種以上的金屬混合而成的強化金屬。遊戲初期銅很實用，但要發展到下一階段文明，就必須想方設法做出 $(thing)青銅$()。熔化不同 $(thing)金属$() 使其混合，所有成分處於特定比例就可做出相應的合金。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:getting_started/finding_ores#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+			"text": "$(thing)小缸$()是遊戲初期唯一可以製作合金的手段。製作合金的步驟與$(l:getting_started/finding_ores#casting)鑄造$()相似，區別在於小缸內放置多種不同金屬而非單獨放入銅。小缸內的金屬處於特定比例內，熔化所得的金屬就會轉化為合金。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "例如要合成 1000 mB 的$(thing)青銅$()（右側所示），需要加入 700~800 mB 的$(thing)銅$()以及 200~300 mB 的$(thing)錫$()。$(br2)接下來幾頁展示了三種不同的銅合金。每種銅合金都可以做成工具、$(l:mechanics/armor)盔甲$()和其他金屬物品，但耐久度、效率和傷害有些許差異。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
-			"title": "Bronze",
+			"title": "青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)條件：$()$(br)$(li)70 - 80 %：$(thing)銅$()$(li)20 - 30 %：$(thing)錫$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
-			"title": "Bismuth Bronze",
+			"title": "鉍青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)條件：$()$(br)$(li)20 - 30 %：$(thing)鋅$()$(li)50 - 65 %：$(thing)銅$()$(li)10 - 20 %：$(thing)鉍$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
-			"title": "Black Bronze",
+			"title": "黑青銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)條件：$()$(br)$(li)50 - 70 %：$(thing)銅$()$(li)10 - 25 %：$(thing)銀$()$(li)10 - 25 %：$(thing)金$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
-			"title": "Utility Alloys"
+			"text": "還有些不適合製作為工具的合金，像是 $(thing)黃銅$() 、 $(thing)玫瑰金$()和$(thing)純銀$()。$(br2)$(thing)黃銅$()主要用來製作各種小零件，如$(l:mechanics/mechanical_power)機械動力$()。$(br2)$(thing)玫瑰金$()和$(thing)純銀$()則是熔煉$(l:mechanics/steel#red_steel)紅鋼$()和$(l:mechanics/steel#blue_steel)藍鋼$()時的必要原料。",
+			"title": "功能合金"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"anchor": "brass",
 			"item": "create:brass_ingot",
-			"title": "Brass",
+			"title": "黃銅",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)條件：$()$(br)$(li)70 - 80 %：$(thing)銅$()$(li)20 - 30 %：$(thing)鋅$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "熔融玫瑰金",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)條件：$()$(br)$(li)70 - 80 %：$(thing)銅$()$(li)20 - 30 %：$(thing)金$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
 			"title": "紋銀",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)條件:$()$(br)$(li)20 - 40 % : $(thing)銅$()$(li)60 - 80 % : $(thing)銀$()$(br2)"
 		}
 	],
 	"read_by_default": true,
