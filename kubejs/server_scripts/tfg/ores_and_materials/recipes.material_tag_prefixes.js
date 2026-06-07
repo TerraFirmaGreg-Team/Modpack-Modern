@@ -88,7 +88,7 @@ function processIngotDouble(event, material) {
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 	addMaterialRecycling(event, doubleIngotItem, material, "double_ingot", TFGTagPrefix.ingotDouble);
-	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 0);
+	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 1);
 
 	event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 		.itemInputs(ingotItem.withCount(2))
