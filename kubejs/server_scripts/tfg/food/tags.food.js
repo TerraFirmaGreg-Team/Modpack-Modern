@@ -224,12 +224,9 @@ function registerTFGFoodItemTags(event) {
 	const citrus_fruits = [
 		'tfc:food/orange',
 		'tfc:jar/orange_unsealed',
-		'tfg:food/freeze_dried/orange',
 		'tfc:food/lemon',
 		'tfc:jar/lemon_unsealed',
-		'tfg:food/freeze_dried/lemon',
-		'minecraft:glow_berries',
-		'tfg:food/freeze_dried/glow_berries'
+		'minecraft:glow_berries'
 	];
 	citrus_fruits.forEach(item => {
 		event.add('tfg:foods/citrus_fruits', item);
