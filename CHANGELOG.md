@@ -2,14 +2,13 @@
 
 ## Unreleased
 ### Breaking changes
+- We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 - Wireless Extended Pattern Access Terminal now uses an IV Battery instead of an HV one @TomPlop
 - The Sodium Aluminium dust part of the BTX Recyling loop is now an EV recipe, with duration reduced accordingly @TomPlop
 - TFC Gourmet has been removed. @Redeix
 - Freeze dried fruit have all been condensed into 1 item. @Redeix
 - Cyrodessicated food now needs MV. @Redeix
-### Major changes
-We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
-#### Beneath
+### Beneath
 The Beneath has been totally remade! It's now significantly taller (208 blocks tall instead of 128), has almost twice as many biomes, its own new set of crops, fruit trees, and wood sets, new structures, and new challenges. It's been split into three layers instead of just two, with the different layers providing challenges for different stages of the game, from wrought iron age to LV/MV. Also, it's *actually* hot now - make sure you're prepared!
 
 Because of the height change, you'll need to delete your generated chunks so you aren't sent above the bedrock roof. To do this, first make a backup of your save, Next, make sure you've left the Beneath and taken anything with you that you want to keep, then save and quit your game. After, simply go to your minecraft instance folder, then inside `saves`, then inside the folder named after your save. Delete the folder called `DIM-1`. Then launch your game as normal. The process is the same for servers.
@@ -21,19 +20,19 @@ Because of the height change, you'll need to delete your generated chunks so you
 - The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once @Pyritie
 - Added new tameable/ranchable slimes, for an alternative way to obtain certain resources @SakuraKitsurugi
 - Added a new quest chapter for the Beneath @Pyritie
-#### Food rework
+### Food rework
 A substantial rework of food and nutrition has been started. You will begin to notice a lot of new nutrition types have been added. There are now two new categories of nutrients: "Contaminants" and "Transient Effects". Contaminants build up when eating certain foods and can be cured by consuming new capsule medication. Transient effects apply 1 time buffs/debuffs when consuming food. Both of these new nutrient types can merged into dynamic meal items.
 
 In addition to that, now each nutrient type has a special buff on the player when a certain threshold is crossed, such as >85% fruit nutrition granting a passive 30% mining speed buff. You can learn more about all of the nutrition changes by checking out the improved nutrition screen or by reading the [Food and Water](https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/getting_started/food_and_water.html) section of the field guide.
 
 On top of the nutrition rework, we are also making a large balance pass on our food items. It is not possible to list every change here. But the major change is that the TFC Gourmet mod is being removed and replaced with our own built-in food items. This is due to buggy interactions and lack of support from the developer. Most new food items will come in a future update. This update will only include Fruit Juice, Smoothies, and Yogurts.
-#### Fluid Logistics
+### Fluid Logistics
 - Replaced Create: Factory Logistics with Create Fluid Logistics, a different fluid addon for Create's logistics system that's less buggy (#3906) @Bumperdo09
 - Jar packagers in your world should be automatically replaced with the new Fluid packagers, and Fluid Gauges should be automatically replaced with normal factory gauges, which can now handle fluids themselves). **If you use a lot of these, please triple check you've made a backup before updating!**
 - Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
 - Added an assembler recipe for the normal packager 
-### Changes
+### Other Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
 - Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
@@ -87,6 +86,7 @@ On top of the nutrition rework, we are also making a large balance pass on our f
 - Fixed rotten voiding cover forgetting its settings after world reload (#4181) @ashleney
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
+- Added Brass Chute and Dashboard (Create Connected)
 ### Shaders
 - Tweaked some profile settings @Zaraney
 - Fixed the Beneath being entirely red-tinted -- if yours is still all red, go to the shader settings > Atmosphere > The Nether Dimension > Color Mode, and change it to "Biome Based", _not_ "Biome Based (Modified)". @Zaraney
