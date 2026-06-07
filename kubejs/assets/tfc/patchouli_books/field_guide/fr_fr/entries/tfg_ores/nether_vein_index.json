@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Or natif, Pyrite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Pentlandite, Garnierite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Phosphate tricalcique...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Pyrolusite, Grossulaire...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Quartz, Barite, Zéolithe$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Réalgar, Stibnite, Cinnabar$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Cinnabar, Ruby$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Sphalerite, Galène, Sulfur$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Spodumène, Lithium, Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Sulfur, Pyrite, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Tetrahedrite, Stibnite...$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Or natif, Pyrite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Pentlandite, Garnierite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Phosphate tricalcique...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Pyrolusite, Grossulaire...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Quartz du Nether, Quartz...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Réalgar, Stibnite, Cinnabar$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Redstone, Cinnabar...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Sphalerite, Galène, Sulfur$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Spodumène, Lithium, Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Sulfur, Pyrite, Stibnite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Tetrahedrite, Stibnite...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -460,7 +460,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 45%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeHO₂",
+      "text": "$(thing)Pourcentage$(): 38%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -480,7 +480,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 36%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeHO₂",
+      "text": "$(thing)Pourcentage$(): 30%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -500,7 +500,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 18%$(br)$(thing)Fond en$() : Cuivre$(br)$(thing)Formule$(): Cu₂CH₂O₅",
+      "text": "$(thing)Pourcentage$(): 30%$(br)$(thing)Fond en$() : Cuivre$(br)$(thing)Formule$(): Cu₂CH₂O₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -527,7 +527,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 69%$(br)$(thing)Utilisé pour$() : $(thing)Used for$(): $(l:mechanics/fire_clay)Argile réfractaire$(), Carbure de silicium, Graphène$(br)$(thing)Formule$(): C",
+      "text": "$(thing)Pourcentage$(): 72%$(br)$(thing)Utilisé pour$() : $(thing)Used for$(): $(l:mechanics/fire_clay)Argile réfractaire$(), Carbure de silicium, Graphène$(br)$(thing)Formule$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -547,7 +547,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 17%$(br)$(thing)Utilisé pour$() : Carburant, Distillation$(br)$(thing)Formule$(): C",
+      "text": "$(thing)Pourcentage$(): 18%$(br)$(thing)Utilisé pour$() : Carburant, Distillation$(br)$(thing)Formule$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -567,33 +567,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 8%$(br)$(thing)Utilisé pour$() : Grind, AE2$(br)$(thing)Formule$(): C",
+      "text": "$(thing)Pourcentage$(): 9%$(br)$(thing)Utilisé pour$() : Grind, AE2$(br)$(thing)Formule$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Anthracite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/anthracite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 4%$(br)$(thing)Utilisé pour$() : Carburant$(br)$(thing)Formule$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -832,7 +807,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 66%$(br)$(thing)Fond en$() : Or$(br)$(thing)Formule$(): Au",
+      "text": "$(thing)Pourcentage$(): 44%$(br)$(thing)Fond en$() : Or$(br)$(thing)Formule$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -852,7 +827,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 25%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): Fe₃O₄",
+      "text": "$(thing)Pourcentage$(): 33%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -872,7 +847,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 8%$(br)$(thing)Source de$() : Or, Argent, Redstone$(br)$(thing)Formule$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "text": "$(thing)Pourcentage$(): 22%$(br)$(thing)Source de$() : Or, Argent, Redstone$(br)$(thing)Formule$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
       "type": "patchouli:multiblock"
     },
     {
@@ -1146,9 +1121,29 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/20 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 80 — 140$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 15$(br)$(thing)Biomes$(): $(t:Brousse Epineuse)Thorny Brambles$(/t)$(br2)$(thing)Types de pierre$(): Diorite, Gabbro, Gneiss, Granite, Migmatite, Schiste, Travertin, Tuf",
-      "title": "Quartz, Barite, Zéolithe",
+      "title": "Quartz du Nether, Quartz...",
       "type": "patchouli:text",
       "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Quartz du Nether",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 44%$(br)$(thing)Utilisé pour$() : Applied Energistics 2$(br)$(thing)Formule$(): SiO₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1167,7 +1162,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 66%$(br)$(thing)Utilisé pour$() : Composants BV$(br)$(thing)Formule$(): SiO₂",
+      "text": "$(thing)Pourcentage$(): 27%$(br)$(thing)Utilisé pour$() : Composants BV$(br)$(thing)Formule$(): SiO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1187,7 +1182,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 25%$(br)$(thing)Source de$() : Baryum$(br)$(thing)Formule$(): BaSO₂",
+      "text": "$(thing)Pourcentage$(): 16%$(br)$(thing)Source de$() : Baryum$(br)$(thing)Formule$(): BaSO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1207,8 +1202,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 8%$(br)$(thing)Source de$() : Aluminium, Oxygène$(br)$(thing)Formule$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "text": "$(thing)Pourcentage$(): 11%$(br)$(thing)Source de$() : Aluminium, Oxygène$(br)$(thing)Formule$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1280,7 +1280,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 20%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 12$(br)$(thing)Biomes$(): $(t:Deltas de Basalte)Basalt Deltas$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
-      "title": "Redstone, Cinnabar, Ruby",
+      "title": "Redstone, Cinnabar...",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
     },
@@ -1301,7 +1301,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 66%$(br)$(thing)Fond en$() : Redstone$(br)$(thing)Formule$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)Pourcentage$(): 50%$(br)$(thing)Fond en$() : Redstone$(br)$(thing)Formule$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1326,6 +1326,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "Quartz du Nether",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 16%$(br)$(thing)Utilisé pour$() : Applied Energistics 2$(br)$(thing)Formule$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "Ruby",
       "multiblock": {
         "mapping": {
@@ -1343,6 +1363,11 @@
       "enable_visualize": false,
       "text": "$(thing)Pourcentage$(): 8%$(br)$(thing)Source de$() : Chrome, Aluminium$(br)$(thing)Formule$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",

@@ -14,13 +14,105 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石, 无烟煤$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 红宝石$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)下界石英, 石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 下界石英, 红宝石$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
       "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)褐煤$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)赤铁矿, 针铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)软锰矿, 钙铝榴石, 钽铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)针铁矿, 褐铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)锂辉石, 锂, 钾石盐$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)锡石, 锡$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)镍黄铁矿, 硅镁镍矿, 辉钴矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)闪锌矿, 方铅矿, 硫$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)雄黄, 辉锑矿, 朱砂$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)黄铜矿, 黄铁矿, 斑铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)黝铜矿, 辉锑矿, 原生银$()$()",
       "type": "patchouli:text"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/20 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 80 — 140$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)生物群系$(): $(t:荆棘林地)Thorny Brambles$(/t)$(br2)$(thing)岩石类型$(): 凝灰岩, 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉长岩, 闪长岩",
+      "title": "下界石英, 石英, 重晶石, 沸石",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "下界石英",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 44%$(br)$(thing)用于$(): 应用能源2$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "石英",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 27%$(br)$(thing)用于$(): LV组件$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "重晶石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 钡$(br)$(thing)化学式$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "沸石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 11%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:empty",
@@ -51,7 +143,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 66%$(br)$(thing)熔化$(): 金$(br)$(thing)化学式$(): Au",
+      "text": "$(thing)百分比$(): 44%$(br)$(thing)熔化$(): 金$(br)$(thing)化学式$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -71,7 +163,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₃O₄",
+      "text": "$(thing)百分比$(): 33%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -91,7 +183,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 8%$(br)$(thing)来源$(): 金, 银, 红石$(br)$(thing)化学式$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "text": "$(thing)百分比$(): 22%$(br)$(thing)来源$(): 金, 银, 红石$(br)$(thing)化学式$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
       "type": "patchouli:multiblock"
     },
     {
@@ -520,75 +612,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/20 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 80 — 140$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)生物群系$(): $(t:荆棘林地)Thorny Brambles$(/t)$(br2)$(thing)岩石类型$(): 凝灰岩, 混合岩, 片岩, 片麻岩, 石灰华, 花岗岩, 辉长岩, 闪长岩",
-      "title": "石英, 重晶石, 沸石",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "石英",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 66%$(br)$(thing)用于$(): LV组件$(br)$(thing)化学式$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "重晶石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 25%$(br)$(thing)来源$(): 钡$(br)$(thing)化学式$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "沸石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 8%$(br)$(thing)来源$(): 铝, 氧$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/5 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)生物群系$(): $(t:熔岩浮岛)Lava Floes$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
-      "title": "石墨, 烟煤, 钻石, 无烟煤",
+      "title": "石墨, 烟煤, 钻石",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
     },
@@ -609,7 +634,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 69%$(br)$(thing)用于$(): $(l:mechanics/fire_clay)耐火粘土$(), 碳化硅, 石墨烯$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 72%$(br)$(thing)用于$(): $(l:mechanics/fire_clay)耐火粘土$(), 碳化硅, 石墨烯$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -629,7 +654,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 17%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 18%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -649,33 +674,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 8%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 9%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "无烟煤",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/anthracite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 4%$(br)$(thing)用于$(): 燃料$(br)$(thing)化学式$(): C",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -881,7 +881,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)生物群系$(): $(t:玄武岩三角洲)Basalt Deltas$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
-      "title": "红石, 朱砂, 红宝石",
+      "title": "红石, 朱砂, 下界石英, 红宝石",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
     },
@@ -902,7 +902,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 66%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)百分比$(): 50%$(br)$(thing)熔化$(): 红石$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -927,6 +927,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "下界石英",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 16%$(br)$(thing)用于$(): 应用能源2$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "红宝石",
       "multiblock": {
         "mapping": {
@@ -944,6 +964,11 @@
       "enable_visualize": false,
       "text": "$(thing)百分比$(): 8%$(br)$(thing)来源$(): 铬, 铝$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1115,7 +1140,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 45%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeHO₂",
+      "text": "$(thing)百分比$(): 38%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1135,7 +1160,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 36%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeHO₂",
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)熔化$(): 铸铁$(br)$(thing)化学式$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1155,7 +1180,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 18%$(br)$(thing)熔化$(): 铜$(br)$(thing)化学式$(): Cu₂CH₂O₅",
+      "text": "$(thing)百分比$(): 30%$(br)$(thing)熔化$(): 铜$(br)$(thing)化学式$(): Cu₂CH₂O₅",
       "type": "patchouli:multiblock"
     },
     {

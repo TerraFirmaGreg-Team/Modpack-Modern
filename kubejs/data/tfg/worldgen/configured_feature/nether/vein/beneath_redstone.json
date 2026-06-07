@@ -27,7 +27,7 @@
         "with": [
           {
             "block": "gtceu:pyroxenite_redstone_ore",
-            "weight": 80
+            "weight": 60
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -36,6 +36,10 @@
           {
             "block": "gtceu:pyroxenite_cinnabar_ore",
             "weight": 30
+          },
+          {
+            "block": "gtceu:pyroxenite_nether_quartz_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:pyroxenite_ruby_ore",
@@ -50,7 +54,7 @@
         "with": [
           {
             "block": "gtceu:deepslate_redstone_ore",
-            "weight": 80
+            "weight": 60
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -59,6 +63,10 @@
           {
             "block": "gtceu:deepslate_cinnabar_ore",
             "weight": 30
+          },
+          {
+            "block": "gtceu:deepslate_nether_quartz_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:deepslate_ruby_ore",
@@ -74,7 +82,7 @@
         "with": [
           {
             "block": "gtceu:basalt_redstone_ore",
-            "weight": 80
+            "weight": 60
           },
           {
             "block": "gtceu:raw_redstone_block",
@@ -83,6 +91,10 @@
           {
             "block": "gtceu:basalt_cinnabar_ore",
             "weight": 30
+          },
+          {
+            "block": "gtceu:basalt_nether_quartz_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:basalt_ruby_ore",
@@ -99,11 +111,15 @@
       "blocks": [
         {
           "block": "gtceu:redstone_indicator",
-          "weight": 80
+          "weight": 60
         },
         {
           "block": "gtceu:cinnabar_bud_indicator",
           "weight": 30
+        },
+        {
+          "block": "gtceu:nether_quartz_bud_indicator",
+          "weight": 20
         },
         {
           "block": "gtceu:ruby_bud_indicator",

@@ -25,12 +25,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:schist_quartzite_ore",
+            "block": "gtceu:schist_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:schist_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:schist_barite_ore",
@@ -38,7 +42,7 @@
           },
           {
             "block": "gtceu:schist_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -48,12 +52,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:gneiss_quartzite_ore",
+            "block": "gtceu:gneiss_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:gneiss_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:gneiss_barite_ore",
@@ -61,7 +69,7 @@
           },
           {
             "block": "gtceu:gneiss_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -71,12 +79,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:tuff_quartzite_ore",
+            "block": "gtceu:tuff_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:tuff_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:tuff_barite_ore",
@@ -84,7 +96,7 @@
           },
           {
             "block": "gtceu:tuff_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -94,12 +106,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:deepslate_quartzite_ore",
+            "block": "gtceu:deepslate_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:deepslate_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:deepslate_barite_ore",
@@ -107,7 +123,7 @@
           },
           {
             "block": "gtceu:deepslate_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -117,12 +133,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:dripstone_quartzite_ore",
+            "block": "gtceu:dripstone_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:dripstone_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:dripstone_barite_ore",
@@ -130,7 +150,7 @@
           },
           {
             "block": "gtceu:dripstone_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -140,12 +160,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:diorite_quartzite_ore",
+            "block": "gtceu:diorite_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:diorite_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_barite_ore",
@@ -153,7 +177,7 @@
           },
           {
             "block": "gtceu:diorite_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -163,12 +187,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:gabbro_quartzite_ore",
+            "block": "gtceu:gabbro_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:gabbro_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_barite_ore",
@@ -176,7 +204,7 @@
           },
           {
             "block": "gtceu:gabbro_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       },
@@ -186,12 +214,16 @@
         ],
         "with": [
           {
-            "block": "gtceu:granite_quartzite_ore",
+            "block": "gtceu:granite_nether_quartz_ore",
             "weight": 32
           },
           {
-            "block": "gtceu:raw_quartzite_block",
+            "block": "gtceu:raw_nether_quartz_block",
             "weight": 1
+          },
+          {
+            "block": "gtceu:granite_quartzite_ore",
+            "weight": 20
           },
           {
             "block": "gtceu:granite_barite_ore",
@@ -199,7 +231,7 @@
           },
           {
             "block": "gtceu:granite_zeolite_ore",
-            "weight": 4
+            "weight": 8
           }
         ]
       }
@@ -211,8 +243,12 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:quartzite_bud_indicator",
+          "block": "gtceu:nether_quartz_bud_indicator",
           "weight": 32
+        },
+        {
+          "block": "gtceu:quartzite_bud_indicator",
+          "weight": 20
         },
         {
           "block": "gtceu:barite_indicator",
@@ -220,7 +256,7 @@
         },
         {
           "block": "gtceu:zeolite_indicator",
-          "weight": 4
+          "weight": 8
         }
       ]
     }
