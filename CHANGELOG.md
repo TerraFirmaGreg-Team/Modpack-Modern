@@ -5,10 +5,14 @@
 - We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 - Wireless Extended Pattern Access Terminal now uses an IV Battery instead of an HV one @TomPlop
 - The Sodium Aluminium dust part of the BTX Recyling loop is now an EV recipe, with duration reduced accordingly @TomPlop
+#### Food
 - TFC Gourmet has been removed. @Redeix
 - Freeze dried fruit have all been condensed into 1 item. @Redeix
 - Cyrodessicated food now needs MV. @Redeix
-- The Chromium processing has been changed, have a look at changelog and quests @TomPlop
+#### Ores
+The processing for Chromium has been changed. Due to the addition of slurries, ruby became better than chromite ore to obtain chromium, which has been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore, but have to do a processing line to obtain chromium from ruby. Aluminium has also been removed from ruby. In exchange, you can now obtain chromium through Garnet Sand, Uvarovite, Ruby, and Chromite.
+There are different processes to obtain the final Chromium, and you will have to decide which one you prefer. It's also a new way to obtain Alumina.
+Naquadah has been removed from the Beneath. It has temporarily been moved to the Ostrum Linear Accelerator until it eventually finds a home on a future planet.
 ### Beneath
 The Beneath has been totally remade! It's now significantly taller (208 blocks tall instead of 128), has almost twice as many biomes, its own new set of crops, fruit trees, and wood sets, new structures, and new challenges. It's been split into three layers instead of just two, with the different layers providing challenges for different stages of the game, from wrought iron age to LV/MV. Also, it's *actually* hot now - make sure you're prepared!
 
