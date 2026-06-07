@@ -34,8 +34,8 @@ On top of the nutrition rework, we are also making a large balance pass on our f
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
 - Added an assembler recipe for the normal packager
 ### Chromium Changes
-The processing for Chromium has been changed. Due to the addition of slurries, ruby became better that chromite ore to obtain chromium which have been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore but have to do a processing line to obtain chromium from rubby. Aluminium has also been removed from ruby. In exchange you can now obtain chromium through Garnet Sand, Uvarovite, Ruby and Chromite.
-There is different processes to obtain the final Chromium and you will have to decide which one you prefer. It's also a new way to obtain Alumina if you want.
+The processing for Chromium has been changed. Due to the addition of slurries, ruby became better than chromite ore to obtain chromium, which has been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore, but have to do a processing line to obtain chromium from ruby. Aluminium has also been removed from ruby. In exchange ,you can now obtain chromium through Garnet Sand, Uvarovite, Ruby and Chromite.
+There are different processes to obtain the final Chromium, and you will have to decide which one you prefer. It's also a new way to obtain Alumina.
 ### Other Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
