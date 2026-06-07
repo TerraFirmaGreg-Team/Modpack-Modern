@@ -950,16 +950,8 @@
 												"Name": "tfg:rock/gravel_deepslate"
 											}
 										}
-									},
-									{
-										"type": "kubejs_tfc:rock",
-										"rock_block": "sand",
-										"fallback_state": {
-											"Name": "tfc:sand/black"
-										}
 									}
 								]
-
 							}
 						},
 						{
@@ -967,7 +959,24 @@
 							"if_true": {
 								"type": "minecraft:stone_depth",
 								"add_surface_depth": false,
-								"offset": 1,
+								"offset": 3,
+								"secondary_depth_range": 0,
+								"surface_type": "floor"
+							},
+							"then_run": {
+								"type": "kubejs_tfc:rock",
+								"rock_block": "sand",
+								"fallback_state": {
+									"Name": "tfc:sand/black"
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"add_surface_depth": false,
+								"offset": 4,
 								"secondary_depth_range": 0,
 								"surface_type": "floor"
 							},
