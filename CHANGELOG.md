@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+### Changes
+### Bug fixes
+
+## [0.12.9] - 07-06-2026
 ### Breaking changes
 - We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 - Wireless Extended Pattern Access Terminal now uses an IV Battery instead of an HV one @TomPlop
