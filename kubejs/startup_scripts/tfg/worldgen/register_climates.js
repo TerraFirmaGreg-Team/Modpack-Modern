@@ -162,7 +162,7 @@ TFCEvents.registerClimateModel(event => {
 			return lerp(-200, 500, pos.y / global.NETHER_HEIGHT);
 		})
 
-		builder.setAirFog((level, pos, calendarTicks) => 1)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0.05, 0.05))
 	})
@@ -176,7 +176,7 @@ TFCEvents.registerClimateModel(event => {
 		})
 		builder.setAverageTemperatureCalculation((level, pos) => -270)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
-		builder.setAirFog((level, pos, calendarTicks) => 1)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
@@ -192,7 +192,7 @@ TFCEvents.registerClimateModel(event => {
 
 		builder.setAverageTemperatureCalculation((level, pos) => -5)
 		builder.setAverageRainfallCalculation((level, pos) => 0)
-		builder.setAirFog((level, pos, calendarTicks) => 1)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		builder.setWindVector((level, block, calendarTicks) => builder.vector(0, 0))
 	})
@@ -248,7 +248,7 @@ TFCEvents.registerClimateModel(event => {
 			return calcAverage(pos.x, global.VENUS_PLANET_SIZE / 4, 250, 350);
 		})
 
-		builder.setAirFog((level, pos, calendarTicks) => 1)
+		builder.setAirFog((level, pos, calendarTicks) => 0)
 		builder.setWaterFog((level, pos, calendarTicks) => 1)
 		// Make up something for the wind. Apparently Venus irl is not very windy on the surface
 		builder.setWindVector((level, block, calendarTicks) => {
