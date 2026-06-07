@@ -8,6 +8,7 @@
 - TFC Gourmet has been removed. @Redeix
 - Freeze dried fruit have all been condensed into 1 item. @Redeix
 - Cyrodessicated food now needs MV. @Redeix
+- The Chromium processing has been changed, have a look at changelog and quests @TomPlop
 ### Beneath
 The Beneath has been totally remade! It's now significantly taller (208 blocks tall instead of 128), has almost twice as many biomes, its own new set of crops, fruit trees, and wood sets, new structures, and new challenges. It's been split into three layers instead of just two, with the different layers providing challenges for different stages of the game, from wrought iron age to LV/MV. Also, it's *actually* hot now - make sure you're prepared!
 
@@ -31,7 +32,10 @@ On top of the nutrition rework, we are also making a large balance pass on our f
 - Jar packagers in your world should be automatically replaced with the new Fluid packagers, and Fluid Gauges should be automatically replaced with normal factory gauges, which can now handle fluids themselves). **If you use a lot of these, please triple check you've made a backup before updating!**
 - Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
-- Added an assembler recipe for the normal packager 
+- Added an assembler recipe for the normal packager
+### Chromium Changes
+The processing for Chromium has been changed. Due to the addition of slurries, ruby became better that chromite ore to obtain chromium which have been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore but have to do a processing line to obtain chromium from rubby. Aluminium has also been removed from ruby. In exchange you can now obtain chromium through Garnet Sand, Uvarovite, Ruby and Chromite.
+There is different processes to obtain the final Chromium and you will have to decide which one you prefer. It's also a new way to obtain Alumina if you want.
 ### Other Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
