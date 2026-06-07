@@ -86,11 +86,9 @@ function registerTFGMealBagRecipes(event) {
 		'tfg:food/meal_bag'
 	]).id('tfg:shapeless/emptying/meal_bag')
 
-	global.FOOD_FRUIT.forEach(fruit => {
-		event.shapeless('1x tfg:used_foil_pack', [
-			`tfg:food/freeze_dried/${fruit.name}`
-		]).id(`tfg:shapeless/emptying/freeze_dried/${fruit.name}`)
-	})
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/freeze_dried_fruit'
+	]).id('tfg:shapeless/emptying/freeze_dried_fruit');
 
 	TFGHelpers.registerMaterialInfo('tfg:clean_foil_pack', [GTMaterials.Aluminium, 0.25, GTMaterials.Polyethylene, 0.25])
 
