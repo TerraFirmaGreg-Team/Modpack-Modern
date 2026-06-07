@@ -4,6 +4,7 @@
         "processor_type": "lithostitched:reference",
             "processor_lists": [
                 "tfg:beneath/tower_stairs",
+                "tfg:beneath/tower_streaks",
                 "tfg:beneath/tower_bricks"
             ]
         }

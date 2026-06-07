@@ -49,7 +49,7 @@
         "processor_type": "lithostitched:condition",
         "random_mode": {
             "mode": "per_block",
-            "name": "bastion:stair_slab"
+            "name": "bastion:pyroxenite"
         },
         "if_true": [
             {
@@ -89,6 +89,51 @@
                     "type": "minecraft:passthrough"
             }
         }
+        },
+            {
+            "processor_type": "lithostitched:condition",
+            "random_mode": {
+                "mode": "per_block",
+                "name": "bastion:pyroxenite_walls"
+            },
+            "if_true": [
+                {
+                "type": "lithostitched:matching_blocks",
+                "blocks": "minecraft:polished_blackstone_brick_wall",
+                "match_type": "input"
+                }
+            ],
+            "then": {
+                    "processor_type": "lithostitched:set_block",
+                    "state_provider": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                        {
+                            "weight": 12,
+                            "data": {
+                            "Name": "minecraft:polished_blackstone_brick_wall"
+                            }
+                        },
+                        {
+                            "weight": 2,
+                            "data": {
+                            "Name": "tfg:rock/cracked_bricks_blackstone_wall"
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                            "Name": "minecraft:cave_air"
+                            }
+                        }
+                        ]
+                    },
+                    "preserve_state": true,
+                    "random_mode": "per_block",
+                    "block_entity_modifier": {
+                        "type": "minecraft:passthrough"
+                }
+            }
         }
     ]
 }
