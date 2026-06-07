@@ -9,7 +9,7 @@
 			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.lower_nether.loop",
-		"fog_color": 6840176,
+		"fog_color": 5718583,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -30,7 +30,7 @@
 			},
 			"probability": 0.15
 		},
-		"sky_color": 7254527,
+		"sky_color": 5718583,
 		"water_color": 4159204,
 		"water_fog_color": 329011
 	},
