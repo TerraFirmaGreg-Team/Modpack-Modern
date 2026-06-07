@@ -4,6 +4,9 @@
 ### Breaking changes
 - Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
 - Sodium Aluminium dust part of the BTX Recyling loop is now a EV recipe, duration was reduced accordingly @TomPlop
+- TFC Gourmet has been removed. @Redeix
+- Freeze dried fruit have all been condensed into 1 item. @Redeix
+- Cyrodessicated food now needs MV. @Redeix
 ### Major changes
 We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
 #### Beneath
@@ -20,7 +23,11 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Fixed the TFG shaders making the entire Beneath red tinted
 - Added a new quest chapter for the Beneath
 #### Food rework
-- TODO
+A substantial rework of food and nutrition has been started. You will begin to notice a lot of new nutrition types have been added. There are now two new categories of nutrients "Contaminants" and "Transient Effects". Contaminants build up when eating certain foods and can be cured by consuming new capsule medication. Trensient effects apply 1 time buffs/debuffs when consuming food. Both of these news nutrient types can merged into dynamic meal items.
+
+In addition to that, now each nutrient type has a special effect on the player when a certain threshold is crossed. You can learn more about all of the nutrition changes by checking out the improved nutrition screen or by reading the `Food and Water` section of the field guide.
+
+On top of the nutrition rework we are also taking a large balance pass at our food items. It is not possible to list every change here. But the major change is that the TFC Gormet mod is being removed and replaced with our own built in food items. This is due to buggy interactions and lack of support from the developer. Most new food items will come in a future update. This update will only include Fruit Juice, Smoothies, and Yogurts.
 #### Fluid Logistics
 - Replaced Create: Factory Logistics with Create Fluid Logistics, a different fluid addon for Create's logistics system that's less buggy (#3906) @Bumperdo09
 - Jar packagers in your world should be automatically replaced with the new Fluid packagers, and Fluid Gauges should be automatically replaced with normal factory gauges, which can now handle fluids themselves). **If you use a lot of these, please triple check you've made a backup before updating!**
@@ -46,6 +53,13 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Tongs can now also be repaired with repair kits if one for their material exists @Pyritie
 - Tamed foxes can now be picked up @SakuraKitsurugi
 - Increased the width of the Keratophyre carvers at the bottom of the overworld
+- Updated inventory tab icons. @Redeix
+- Updated field guide icon and book GUI. @Redeix
+- Adds 2 new debug commands: @Redeix
+    - `/TFCDataDump`: Dumps players climate and nutrition info into chat.
+    - `/ModifyNutrients`: Command for manually changing your nutrition data.
+- Adds 7 new mob effects: Freezing, Blazing, Quenched, Final Moments, Cure Parasites, Cure Toxins, Cure Microplastics @Redeix
+- Now grays out players on the nutrition screen when they are offline. @Redeix
 ### Bug fixes
 - Fixed cinder cones (the small volcanoes) missing basalt (#4140) @Mqrius
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
