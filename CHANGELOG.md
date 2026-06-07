@@ -19,6 +19,7 @@ Because of the height change, you'll need to delete your generated chunks so you
 - The blue steel diving set no longer makes you completely immune to hot temperatures, but it does still provide a lot of cooling and make you immune to fire damage @Pyritie
 - All aqueducts can now hold lava and different kinds of water @Pyritie
 - The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once @Pyritie
+- Added new tameable/ranchable slimes, for an alternative way to obtain certain resources @SakuraKitsurugi
 - Added a new quest chapter for the Beneath @Pyritie
 #### Food rework
 A substantial rework of food and nutrition has been started. You will begin to notice a lot of new nutrition types have been added. There are now two new categories of nutrients: "Contaminants" and "Transient Effects". Contaminants build up when eating certain foods and can be cured by consuming new capsule medication. Transient effects apply 1 time buffs/debuffs when consuming food. Both of these new nutrient types can merged into dynamic meal items.
