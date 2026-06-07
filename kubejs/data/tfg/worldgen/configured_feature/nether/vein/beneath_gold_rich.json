@@ -59,6 +59,30 @@
             "weight": 10
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_gold_ore",
+            "weight": 80
+          },
+          {
+            "block": "minecraft:raw_gold_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:basalt_magnetite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:basalt_electrotine_ore",
+            "weight": 10
+          }
+        ]
       }
     ],
     "indicator": {

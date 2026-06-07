@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 红宝石$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)原生金, 磁铁矿, 蓝石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)原生金, 黄铁矿, 黄铜矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)原生铜, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩盐, 钾石盐, 天然碱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方铅矿, 原生银, 铅$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)无烟煤, 石墨$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明矾石, 沸石, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)烟煤, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)石英, 重晶石, 沸石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)石墨, 烟煤, 钻石, 无烟煤$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫, 黄铁矿, 辉锑矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁铁矿, 钒磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)磷酸三钙, 磷灰石, 黄铁矿$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)红石, 朱砂, 红宝石$()$()",
       "type": "patchouli:text"
     },
     {
@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 23$(br)$(thing)生物群系$(): $(t:灰烬森林)Ash Forest$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 辉石岩",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 23$(br)$(thing)生物群系$(): $(t:灰烬森林)Ash Forest$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
       "title": "原生金, 磁铁矿, 蓝石",
       "type": "patchouli:text",
       "anchor": "beneath_gold_rich"
@@ -587,8 +587,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/5 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)生物群系$(): $(t:熔岩浮岛)Lava Floes$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 辉石岩",
-      "title": "石墨, 烟煤, 钻石",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/5 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)生物群系$(): $(t:熔岩浮岛)Lava Floes$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
+      "title": "石墨, 烟煤, 钻石, 无烟煤",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
     },
@@ -609,7 +609,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 72%$(br)$(thing)用于$(): $(l:mechanics/fire_clay)耐火粘土$(), 碳化硅, 石墨烯$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 69%$(br)$(thing)用于$(): $(l:mechanics/fire_clay)耐火粘土$(), 碳化硅, 石墨烯$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -629,7 +629,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 18%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 17%$(br)$(thing)用于$(): 燃料, 蒸馏$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
@@ -649,12 +649,37 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 9%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
+      "text": "$(thing)百分比$(): 8%$(br)$(thing)用于$(): 研磨机, AE2$(br)$(thing)化学式$(): C",
       "type": "patchouli:multiblock"
     },
     {
+      "Type": "patchouli:multiblock",
+      "name": "无烟煤",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/anthracite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 4%$(br)$(thing)用于$(): 燃料$(br)$(thing)化学式$(): C",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 35%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 29$(br)$(thing)生物群系$(): $(t:熔岩浮岛)Lava Floes$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 辉石岩",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 35%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 29$(br)$(thing)生物群系$(): $(t:熔岩浮岛)Lava Floes$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
       "title": "硫, 黄铁矿, 辉锑矿",
       "type": "patchouli:text",
       "anchor": "beneath_sulfur"
@@ -855,7 +880,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)生物群系$(): $(t:玄武岩三角洲)Basalt Deltas$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 辉石岩",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 20%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:高而狭窄)管状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)高度$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)生物群系$(): $(t:玄武岩三角洲)Basalt Deltas$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
       "title": "红石, 朱砂, 红宝石",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
@@ -1135,7 +1160,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 25$(br)$(thing)生物群系$(): $(t:灰烬森林)Ash Forest$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 辉石岩",
+      "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/10 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 25$(br)$(thing)生物群系$(): $(t:灰烬森林)Ash Forest$(/t)$(br2)$(thing)岩石类型$(): 混合岩, 玄武岩, 辉石岩",
       "title": "锂辉石, 锂, 钾石盐",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"

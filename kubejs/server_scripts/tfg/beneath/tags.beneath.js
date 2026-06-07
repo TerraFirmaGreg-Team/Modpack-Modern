@@ -249,11 +249,11 @@ function registerTFGBeneathBiomeTags(event) {
 
 function registerTFGBeneathPlacedFeatures(event) {
 
+	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column');
 	event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/lava_lake");
 	event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
 	event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
 	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/amethyst");
-	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/cave_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/large_cave_spike')
 	event.add('tfg:nether_lakes_and_geodes', 'beneath:vein/crackrack_pipe')

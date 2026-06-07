@@ -65,6 +65,30 @@
             "weight": 10
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_redstone_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:raw_redstone_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:basalt_cinnabar_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:basalt_ruby_ore",
+            "weight": 10
+          }
+        ]
       }
     ],
     "indicator": {

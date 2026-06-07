@@ -40,6 +40,10 @@
           {
             "block": "gtceu:pyroxenite_diamond_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:pyroxenite_anthracite_ore",
+            "weight": 1
           }
         ]
       },
@@ -63,6 +67,38 @@
           {
             "block": "gtceu:deepslate_diamond_ore",
             "weight": 2
+          },
+          {
+            "block": "gtceu:deepslate_anthracite_ore",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_graphite_ore",
+            "weight": 16
+          },
+          {
+            "block": "gtceu:raw_graphite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:basalt_coal_ore",
+            "weight": 4
+          },
+          {
+            "block": "gtceu:basalt_diamond_ore",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:basalt_anthracite_ore",
+            "weight": 1
           }
         ]
       }
@@ -84,6 +120,10 @@
         {
           "block": "gtceu:diamond_bud_indicator",
           "weight": 2
+        },
+        {
+          "block": "gtceu:anthracite_indicator",
+          "weight": 1
         }
       ]
     }
