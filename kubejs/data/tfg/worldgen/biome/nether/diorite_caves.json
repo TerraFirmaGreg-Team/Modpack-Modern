@@ -36,13 +36,11 @@
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava"
 		],
-		[],
+		"#tfg:nether_crops",
 		[
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/bone_patch",
@@ -58,7 +56,9 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

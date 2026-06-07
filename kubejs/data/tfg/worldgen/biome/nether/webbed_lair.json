@@ -39,8 +39,6 @@
 		"#tfg:nether_lakes_and_geodes",
 		[],
 		[],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava"
@@ -73,7 +71,9 @@
 			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

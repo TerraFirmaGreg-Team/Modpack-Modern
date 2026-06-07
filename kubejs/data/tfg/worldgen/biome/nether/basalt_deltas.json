@@ -42,8 +42,6 @@
 			"minecraft:small_basalt_columns",
 			"minecraft:large_basalt_columns"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -67,7 +65,9 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

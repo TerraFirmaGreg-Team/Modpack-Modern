@@ -41,10 +41,6 @@
 			"tfg:nether/terrain/mud_delta"
 		],
 		[],
-		[
-
-		],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -80,7 +76,9 @@
 			"tfg:nether/entity/isopod",
 			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

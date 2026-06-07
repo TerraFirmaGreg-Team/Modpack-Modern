@@ -14,12 +14,12 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Native Copper, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Native Gold, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Native Gold, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алунит, Цеолит, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Битумный уголь, Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галит, Сильвин, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Гётит, Лимонит, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графит, Битумный уголь, Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Касситерит, Олово$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Кварц, Барит, Цеолит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Лигнит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Native Copper, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Native Gold, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Native Gold, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алунит, Цеолит, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Битумный уголь, Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галит, Сильвин, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Гётит, Лимонит, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графит, Битумный уголь, Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Касситерит, Олово$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Лигнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Литий, Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Халькопирит, Пирит, Борнит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Незер-кварц, Кварц, Барит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Литий, Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Халькопирит, Пирит, Борнит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 23$(br)$(thing)Биомы$(): $(t:Пепельный лес)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Мигматит, Пироксенит",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 23$(br)$(thing)Биомы$(): $(t:Пепельный лес)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Базальт, Мигматит, Пироксенит",
       "title": "Native Gold, Магнетит...",
       "type": "patchouli:text",
       "anchor": "beneath_gold_rich"
@@ -103,7 +103,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 66%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
+      "text": "$(thing)Процент нагрузки$(): 44%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -123,7 +123,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
+      "text": "$(thing)Процент нагрузки$(): 33%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -143,7 +143,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 8%$(br)$(thing)Source of$(): Gold, Silver, Redstone$(br)$(thing)Formula$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "text": "$(thing)Процент нагрузки$(): 22%$(br)$(thing)Source of$(): Gold, Silver, Redstone$(br)$(thing)Formula$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
       "type": "patchouli:multiblock"
     },
     {
@@ -594,7 +594,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 45%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
+      "text": "$(thing)Процент нагрузки$(): 38%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -614,7 +614,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 36%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -634,12 +634,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 18%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅",
+      "text": "$(thing)Процент нагрузки$(): 30%$(br)$(thing)Melts into$(): Copper$(br)$(thing)Formula$(): Cu₂CH₂O₅",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/5 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 4$(br)$(thing)Биомы$(): $(t:Магмовые пустоши)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Мигматит, Пироксенит",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/5 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 4$(br)$(thing)Биомы$(): $(t:Магмовые пустоши)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Базальт, Мигматит, Пироксенит",
       "title": "Графит, Битумный уголь, Алмаз",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
@@ -758,73 +758,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/20 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 15$(br)$(thing)Биомы$(): $(t:Терновая роща)Thorny Brambles$(/t)$(br2)$(thing)Stone Types$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Мигматит, Травертин, Туф",
-      "title": "Кварц, Барит, Цеолит",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кварц",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 66%$(br)$(thing)Used for$(): LV components$(br)$(thing)Formula$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Барит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 25%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Цеолит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 8%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 30%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Биомы$(): $(t:Паучье логово)Webbed Lair$(/t)$(br2)$(thing)Stone Types$(): Аспидный сланец, Гнейс, Диорит, Мигматит, Мрамор, Травертин, Туф, Филлит, Шиферный сланец",
       "title": "Лигнит",
       "type": "patchouli:text",
@@ -916,6 +849,98 @@
       "enable_visualize": false,
       "text": "$(thing)Процент нагрузки$(): 8%$(br)$(thing)Melts into$(): Gold$(br)$(thing)Formula$(): Au",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/20 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 80 — 140$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 15$(br)$(thing)Биомы$(): $(t:Терновая роща)Thorny Brambles$(/t)$(br2)$(thing)Stone Types$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Мигматит, Травертин, Туф",
+      "title": "Незер-кварц, Кварц, Барит...",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Незер-кварц",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 44%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кварц",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 27%$(br)$(thing)Used for$(): LV components$(br)$(thing)Formula$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Барит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 16%$(br)$(thing)Source of$(): Barium$(br)$(thing)Formula$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Цеолит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 11%$(br)$(thing)Source of$(): Aluminium, Oxygen$(br)$(thing)Formula$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1120,7 +1145,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 12$(br)$(thing)Биомы$(): $(t:Базальтовые дельты)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Мигматит, Пироксенит",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Tall and narrow)Pipe Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)Высота$(): 60$(br)$(thing)Радиус$(): 12$(br)$(thing)Биомы$(): $(t:Базальтовые дельты)Basalt Deltas$(/t)$(br2)$(thing)Stone Types$(): Базальт, Мигматит, Пироксенит",
       "title": "Редстоуновая пыль, Киноварь...",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
@@ -1142,7 +1167,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 66%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)Процент нагрузки$(): 50%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)Formula$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1167,6 +1192,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "Незер-кварц",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 16%$(br)$(thing)Used for$(): Applied Energistics 2$(br)$(thing)Formula$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "Рубин",
       "multiblock": {
         "mapping": {
@@ -1186,8 +1231,13 @@
       "type": "patchouli:multiblock"
     },
     {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Биомы$(): $(t:Магмовые пустоши)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Мигматит, Пироксенит",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 35%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 29$(br)$(thing)Биомы$(): $(t:Магмовые пустоши)Lava Floes$(/t)$(br2)$(thing)Stone Types$(): Базальт, Мигматит, Пироксенит",
       "title": "Сера, Пирит, Стибнит",
       "type": "patchouli:text",
       "anchor": "beneath_sulfur"
@@ -1254,7 +1304,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Биомы$(): $(t:Пепельный лес)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Мигматит, Пироксенит",
+      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 22%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 25$(br)$(thing)Биомы$(): $(t:Пепельный лес)Ash Forest$(/t)$(br2)$(thing)Stone Types$(): Базальт, Мигматит, Пироксенит",
       "title": "Сподумен, Литий, Сильвин",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"

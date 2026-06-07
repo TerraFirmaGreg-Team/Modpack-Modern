@@ -36,19 +36,16 @@
 		"grass_color": 6466617
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[
-			"tfg:nether/terrain/huge_quartz"
-		],
-		[
+			"tfg:nether/terrain/huge_quartz",
 			"tfg:nether/terrain/spring_water_large_lake",
 			"tfg:nether/terrain/spring_water_lake_common"
 		],
-		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -81,7 +78,9 @@
 			"tfg:nether/entity/isopod",
 			"tfg:nether/entity/zombie_horse",
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

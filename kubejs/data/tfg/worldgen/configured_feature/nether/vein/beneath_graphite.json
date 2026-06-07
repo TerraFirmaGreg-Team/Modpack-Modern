@@ -65,6 +65,30 @@
             "weight": 2
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt",
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_graphite_ore",
+            "weight": 16
+          },
+          {
+            "block": "gtceu:raw_graphite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:basalt_coal_ore",
+            "weight": 4
+          },
+          {
+            "block": "gtceu:basalt_diamond_ore",
+            "weight": 2
+          }
+        ]
       }
     ],
     "indicator": {

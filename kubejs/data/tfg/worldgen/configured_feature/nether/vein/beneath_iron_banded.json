@@ -32,7 +32,7 @@
           },
           {
             "block": "gtceu:phyllite_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -55,7 +55,7 @@
           },
           {
             "block": "gtceu:schist_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -78,7 +78,7 @@
           },
           {
             "block": "gtceu:gneiss_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -101,7 +101,7 @@
           },
           {
             "block": "gtceu:marble_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -124,7 +124,7 @@
           },
           {
             "block": "gtceu:slate_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -147,7 +147,7 @@
           },
           {
             "block": "gtceu:deepslate_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -170,7 +170,7 @@
           },
           {
             "block": "gtceu:dripstone_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -193,7 +193,7 @@
           },
           {
             "block": "gtceu:tuff_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       },
@@ -216,7 +216,7 @@
           },
           {
             "block": "gtceu:diorite_malachite_ore",
-            "weight": 6
+            "weight": 12
           }
         ]
       }
@@ -237,7 +237,7 @@
         },
         {
           "block": "tfc:ore/small_malachite",
-          "weight": 6
+          "weight": 12
         }
       ]
     }

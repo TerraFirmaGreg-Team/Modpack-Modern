@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, グラファイト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)グラファイト, 歴青炭, ダイヤモンド$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, リチウム, カリ岩塩$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, グラファイト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)グラファイト, 歴青炭, ダイヤモンド$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)ネザークォーツ, クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, リチウム, カリ岩塩$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, ネザークォーツ, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()",
       "type": "patchouli:text"
     },
     {
@@ -81,74 +81,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/20 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)バイオーム$(): $(t:Thorny Grove)Thorny Brambles$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
-      "title": "クォーツ, 重晶石, ゼオライト",
-      "type": "patchouli:text",
-      "anchor": "beneath_quartz"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "クォーツ",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/quartzite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 66%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "重晶石",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/barite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)採取可能$(): バリウム$(br)$(thing)化学式$(): BaSO₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "ゼオライト",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/zeolite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 8%$(br)$(thing)採取可能$(): アルミニウム、酸素$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/5 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/5 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "グラファイト, 歴青炭, ダイヤモンド",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
@@ -215,7 +148,99 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/20 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)バイオーム$(): $(t:Thorny Grove)Thorny Brambles$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
+      "title": "ネザークォーツ, クォーツ, 重晶石, ゼオライト",
+      "type": "patchouli:text",
+      "anchor": "beneath_quartz"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "ネザークォーツ",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 44%$(br)$(thing)用途$(): Applied Energistics 2$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "クォーツ",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/quartzite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 27%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "重晶石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/barite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 16%$(br)$(thing)採取可能$(): バリウム$(br)$(thing)化学式$(): BaSO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "ゼオライト",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/zeolite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 11%$(br)$(thing)採取可能$(): アルミニウム、酸素$(br)$(thing)化学式$(): NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "リシア輝石, リチウム, カリ岩塩",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
@@ -349,8 +374,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)バイオーム$(): $(t:Basalt Deltas)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 輝岩",
-      "title": "レッドストーン, 辰砂, ルビー",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)バイオーム$(): $(t:Basalt Deltas)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "title": "レッドストーン, 辰砂, ネザークォーツ, ルビー",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
     },
@@ -371,7 +396,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 66%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -396,6 +421,26 @@
     },
     {
       "Type": "patchouli:multiblock",
+      "name": "ネザークォーツ",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nether_quartz"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 16%$(br)$(thing)用途$(): Applied Energistics 2$(br)$(thing)化学式$(): SiO₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
       "name": "ルビー",
       "multiblock": {
         "mapping": {
@@ -413,6 +458,11 @@
       "enable_visualize": false,
       "text": "$(thing)パーセント$(): 8%$(br)$(thing)採取可能$(): クロム、アルミニウム$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -803,7 +853,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 35%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 29$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 35%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 29$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "硫黄, 黄鉄鉱, 輝安鉱",
       "type": "patchouli:text",
       "anchor": "beneath_sulfur"
@@ -937,7 +987,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 23$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 23$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "自然金, 磁鉄鉱, エレクトロチン",
       "type": "patchouli:text",
       "anchor": "beneath_gold_rich"
@@ -959,7 +1009,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 66%$(br)$(thing)融解$(): 金$(br)$(thing)化学式$(): Au",
+      "text": "$(thing)パーセント$(): 44%$(br)$(thing)融解$(): 金$(br)$(thing)化学式$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -979,7 +1029,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): Fe₃O₄",
+      "text": "$(thing)パーセント$(): 33%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): Fe₃O₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -999,7 +1049,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 8%$(br)$(thing)採取可能$(): 金、銀、レッドストーン$(br)$(thing)化学式$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
+      "text": "$(thing)パーセント$(): 22%$(br)$(thing)採取可能$(): 金、銀、レッドストーン$(br)$(thing)化学式$(): (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)",
       "type": "patchouli:multiblock"
     },
     {
@@ -1291,7 +1341,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 45%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeHO₂",
+      "text": "$(thing)パーセント$(): 38%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1311,7 +1361,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 36%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeHO₂",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeHO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1331,7 +1381,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 18%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₂CH₂O₅",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₂CH₂O₅",
       "type": "patchouli:multiblock"
     },
     {

@@ -38,8 +38,6 @@
 		"#tfg:nether_lakes_and_geodes",
 		[],
 		[],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
@@ -66,7 +64,9 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfc:erosion"
-		]
+		],
+		[],
+		"#tfg:nether_veins"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
