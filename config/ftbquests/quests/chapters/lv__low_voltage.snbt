@@ -94,6 +94,12 @@
 			x: 7.0d
 			y: -5.5d
 		}
+		{
+			id: "66CE037FEBE1ABE0"
+			linked_quest: "361AC06D62D9BCCF"
+			x: 1.5d
+			y: 13.0d
+		}
 	]
 	quests: [
 		{
@@ -1062,7 +1068,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["701BCADAE5CF6CA5"]
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"361AC06D62D9BCCF"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.gallium_arsenide.desc}"]
 			id: "4073577B7EF9B593"

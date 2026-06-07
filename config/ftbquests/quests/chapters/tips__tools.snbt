@@ -608,7 +608,11 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: [
+				"02FDECC931B5E8EF"
+				"3C173357029AB649"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crates.desc}"]
 			icon: "gtceu:bronze_crate"
 			id: "6702D52922D85C0D"
@@ -2986,7 +2990,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 64224000L
+						creationDate: 104224000L
 						traits: [ ]
 					}
 				}
