@@ -7,30 +7,26 @@
 		},
 		"features": [
 			{
-				"chance": 0.6,
-				"feature": {
-					"feature": "tfg:nether/terrain/clay_pool",
-					"placement": []
-				}
-			},
-			{
 				"chance": 0.4,
 				"feature": {
 					"feature": "tfg:nether/terrain/clay_patch_kaolin",
 					"placement": [
 						{
-							"type": "minecraft:height_range",
-							"height": {
-								"type": "minecraft:uniform",
-								"max_inclusive": {
-									"absolute": 140
-								},
-								"min_inclusive": {
-									"above_bottom": 48
-								}
+							"type": "lithostitched:condition",
+							"condition": {
+								"type": "lithostitched:height_filter",
+								"range_type": "absolute",
+								"permitted_range": [ 48, 140 ]
 							}
 						}
 					]
+				}
+			},
+			{
+				"chance": 0.6,
+				"feature": {
+					"feature": "tfg:nether/terrain/clay_pool",
+					"placement": []
 				}
 			}
 		]

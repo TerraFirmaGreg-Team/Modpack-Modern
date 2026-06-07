@@ -43,7 +43,9 @@
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
-		[],
+		[
+			"tfg:nether/terrain/lush_caves_clay"
+		],
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/tree/ginkgo",
@@ -55,7 +57,6 @@
 			"tfg:nether/tree/beech_fallen_leaves",
 			"tfg:nether/tree/beech_twig",
 			"tfg:nether/terrain/lush_caves_ceiling",
-			"tfg:nether/terrain/lush_caves_clay",
 			"tfg:nether/terrain/lush_caves_vegetation",
 			"minecraft:spore_blossom",
 			"beneath:gleamflower_patch",
