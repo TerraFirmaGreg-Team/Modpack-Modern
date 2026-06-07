@@ -90,7 +90,14 @@ function registerTFGRepairRecipes(event) {
 		{ item: "tfcambiental:burlap_cowl", material: "tfc:burlap_cloth" },
 		{ item: "tfcambiental:burlap_shirt", material: "tfc:burlap_cloth" },
 		{ item: "tfcambiental:burlap_pants", material: "tfc:burlap_cloth" },
-		{ item: "tfcambiental:burlap_shoes", material: "tfc:burlap_cloth" }
+		{ item: "tfcambiental:burlap_shoes", material: "tfc:burlap_cloth" },
+
+		{ item: "hangglider:reinforced_hang_glider", material: "sns:reinforced_fabric" }
+	]
+
+	const SPECIAL_TAG_REPAIRS = [
+		{ item: "hangglider:hang_glider", tag: "forge:cloth" },
+		{ item: "hangglider:reinforced_hang_glider", tag: "tfg:lightweight_cloth" }
 	]
 
 	repairColoredSteel('gtceu', 'red_steel');
@@ -224,6 +231,21 @@ function registerTFGRepairRecipes(event) {
 			},
 			repairPercentage: 0.25
 		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}`)
+	})
+	
+	SPECIAL_TAG_REPAIRS.forEach(repair => {
+		event.custom({
+			type: 'tfg:item_repair',
+			pattern: [
+				"RH",
+			],
+			key: {
+				R: { tag: repair.tag },
+				H: { item: repair.item },
+				// T: { tag: "forge:tools/hammers" }
+			},
+			repairPercentage: 0.25
+		}).id(`tfg:item_repair/${global.linuxUnfucker(repair.item)}_tag`)
 	})
 
 	// Simpler Leather Gear
