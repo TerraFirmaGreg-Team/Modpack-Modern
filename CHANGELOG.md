@@ -19,7 +19,6 @@ Because of the height change, you'll need to delete your generated chunks so you
 - The blue steel diving set no longer makes you completely immune to hot temperatures, but it does still provide a lot of cooling and make you immune to fire damage @Pyritie
 - All aqueducts can now hold lava and different kinds of water @Pyritie
 - The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once @Pyritie
-- Fixed the TFG shaders making the entire Beneath red tinted @Zaraney
 - Added a new quest chapter for the Beneath @Pyritie
 #### Food rework
 A substantial rework of food and nutrition has been started. You will begin to notice a lot of new nutrition types have been added. There are now two new categories of nutrients: "Contaminants" and "Transient Effects". Contaminants build up when eating certain foods and can be cured by consuming new capsule medication. Transient effects apply 1 time buffs/debuffs when consuming food. Both of these new nutrient types can merged into dynamic meal items.
@@ -59,6 +58,7 @@ On top of the nutrition rework, we are also making a large balance pass on our f
     - `/ModifyNutrients`: Command for manually changing your nutrition data.
 - Adds 7 new mob effects: Freezing, Blazing, Quenched, Final Moments, Cure Parasites, Cure Toxins, Cure Microplastics @Redeix
 - Offline players are now grayed out on the nutrition screen. @Redeix
+- Hang gliders can now be repaired @Pyritie
 ### Bug fixes
 - Fixed cinder cones (the small volcanoes) missing basalt (#4140) @Mqrius
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
@@ -88,7 +88,7 @@ On top of the nutrition rework, we are also making a large balance pass on our f
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
 ### Shaders
 - Tweaked some profile settings @Zaraney
-- Fixed the Beneath being entirely red-tinted @Zaraney
+- Fixed the Beneath being entirely red-tinted -- if yours is still all red, go to the shader settings > Atmosphere > The Nether Dimension > Color Mode, and change it to "Biome Based", _not_ "Biome Based (Modified)". @Zaraney
 - Added some new plants to the PBR resource pack @Zaraney
 - Fixed stars in dimensions without atmospheres (again) @Zaraney
 - More block properties added @Zaraney
