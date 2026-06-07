@@ -77,4 +77,24 @@ const registerCreateConnectedRecipes = (event) => {
 		D: '#forge:small_gears/red_alloy',
 		E: '#forge:shafts'
 	}).id('create_connected:crafting/kinetics/kinetic_bridge')
+
+	// Brass chute
+
+	event.shaped('create_connected:brass_chute', [
+		'A',
+		'B'
+	], {
+		A: '#forge:plates/brass',
+		B: 'create:chute'
+	}).id('create_connected:crafting/kinetics/brass_chute')
+
+	TFGHelpers.registerMaterialInfo('create_connected:brass_chute', [GTMaterials.WroughtIron, 3, GTMaterials.Brass, 1]);
+
+	event.shaped('create:smart_chute', [
+		'A',
+		'B'
+	], {
+		A: 'create_connected:brass_chute',
+		B: 'create:electron_tube'
+	}).id('tfg:shaped/smart_chute_from_brass_chute')
 }
