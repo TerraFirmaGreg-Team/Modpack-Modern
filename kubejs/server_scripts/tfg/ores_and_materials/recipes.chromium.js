@@ -14,7 +14,7 @@ function registerTFGChromiumProcessing(event) {
 
         event.recipes.gtceu.chemical_reactor('tfg:dirty_ruby_slurry_into_chromium')
                 .itemInputs(Item.of('gtceu:sodium_hydroxide_dust', 4))
-                .inputFluids(Fluid.of('tfg:dirty_ruby_slurry', 3000))
+                .inputFluids(Fluid.of('tfg:dirty_ruby_slurry', 4000))
                 .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('tfg:sodium_aluminium_dust', 2))
                 .outputFluids(Fluid.of('minecraft:water', 2000))
                 .duration(12 * 20)
@@ -22,7 +22,7 @@ function registerTFGChromiumProcessing(event) {
 
         event.recipes.gtceu.chemical_reactor('tfg:filtered_ruby_slurry_into_chromium')
                 .itemInputs(Item.of('gtceu:sodium_hydroxide_dust', 4))
-                .inputFluids(Fluid.of('tfg:filtered_ruby_slurry', 1500))
+                .inputFluids(Fluid.of('tfg:filtered_ruby_slurry', 2500))
                 .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('tfg:sodium_aluminium_dust', 2))
                 .outputFluids(Fluid.of('minecraft:water', 2000))
                 .duration(12 * 20)
@@ -30,7 +30,7 @@ function registerTFGChromiumProcessing(event) {
 
         event.recipes.gtceu.chemical_reactor('tfg:clean_ruby_slurry_into_chromium')
                 .itemInputs(Item.of('gtceu:sodium_hydroxide_dust', 4))
-                .inputFluids(Fluid.of('tfg:clean_ruby_slurry', 500))
+                .inputFluids(Fluid.of('tfg:clean_ruby_slurry', 1000))
                 .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('tfg:sodium_aluminium_dust', 2))
                 .outputFluids(Fluid.of('minecraft:water', 2000))
                 .duration(12 * 20)
@@ -72,7 +72,7 @@ function registerTFGChromiumProcessing(event) {
                 .itemInputs(Item.of('gtceu:garnet_sand_dust', 1))
                 .itemOutputsRanged('gtceu:spessartine_dust', 0, 2)
                 .itemOutputsRanged('gtceu:almandine_dust', 0, 2)
-                .itemOutputsRanged('tfg:mixed_garnet_dust', 0, 12)
+                .itemOutputsRanged('tfg:mixed_garnet_dust', 0, 3)
                 .duration(12 * 20)
                 .EUt(GTValues.VA[GTValues.MV])
 
