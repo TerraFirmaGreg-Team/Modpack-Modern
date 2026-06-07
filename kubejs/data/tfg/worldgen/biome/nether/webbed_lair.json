@@ -140,10 +140,10 @@
 				"weight": 15
 			},
 			{
-				"type": "endermanoverhaul:dark_oak_enderman",
+				"type": "endermanoverhaul:swamp_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "minecraft:phantom",

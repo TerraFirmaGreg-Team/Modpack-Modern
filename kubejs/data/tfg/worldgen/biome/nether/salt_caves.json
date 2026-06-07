@@ -118,7 +118,7 @@
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 70
+				"weight": 100
 			}
 		
 		],
@@ -202,12 +202,6 @@
 			},
 			{
 				"type": "endermanoverhaul:swamp_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 5
-			},
-			{
-				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 5
