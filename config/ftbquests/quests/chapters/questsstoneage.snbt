@@ -73,7 +73,7 @@
 			linked_quest: "301960AD8CEC2FA6"
 			shape: "heart"
 			x: 2.0d
-			y: 7.0d
+			y: 8.0d
 		}
 	]
 	quests: [
@@ -569,8 +569,8 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.iron_flask.title}"
-			x: 1.0d
-			y: 5.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -1702,8 +1702,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.hydration.title}"
-			x: 5.5d
-			y: 4.5d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["427814F6E9386772"]
