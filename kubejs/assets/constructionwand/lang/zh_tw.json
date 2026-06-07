@@ -1,6 +1,6 @@
 {
 	"constructionwand.description.core": "§5§n安裝§0§r\n將核心與建築杖一同放到合成網格中進行安裝。欲切換核心時按住 %s 並用建築杖滑鼠左鍵點擊空地，或透過選項畫面操作。",
-	"constructionwand.description.core_angel": "天使核心會在指向方塊的面對側放置方塊。最大放置距離取決於建築杖等級。滑鼠右鍵點擊空地可懸空放置方塊，操作時副手須持有目標方塊。",
+	"constructionwand.description.core_angel": "天使核心會在你正對面的方塊（或方塊列）的另一側放置方塊。最大距離取決於魔杖等級。右鍵點擊空氣半空中放置方塊。需要將欲放置的方塊放置在副手槽以執行此操作。",
 	"constructionwand.description.core_destruction": "破壞核心會對指向方塊的面對側進行破壞(沒有掉落物)。最大破壞方塊數量取決於建築杖等級。被破壞的方塊會消失在虛空中，如果失誤了，可以使用撤銷功能。",
 	"constructionwand.description.durability.limited": "%d個方塊",
 	"constructionwand.description.durability.unlimited": "永遠",
