@@ -40,21 +40,21 @@ function registerTFGRotorMaterials(event) {
 	// Material for Inconel Line at HV
 
 	event.create('tfg:inert_furnace_atmosphere')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(300))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(3730))
 		.components('2x nitrogen', '1x argon', '1x hydrogen')
 		.color(0xB8B6AD)
 		.secondaryColor(0x9A8C62)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:metal_desorption_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(300))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(1200))
 		.components('2x hydrogen', '1x oxygen', '1x carbon_monoxide')
 		.color(0x7A7262)
 		.secondaryColor(0x5E4B32)
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
 	event.create('tfg:reducing_process_gas')
-		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(400))
+		.gas(new GTFluidBuilder().state(GTFluidState.GAS).temperature(1800))
 		.components('3x hydrogen', '1x nitrogen', '1x carbon_monoxide')
 		.color(0x9AA0A6)
 		.secondaryColor(0x6B7075)
