@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "Как только мокрый голова приклеивается, она может быть сделана в мотыгу.$(br2)Моты функционируют как в Vanilla, нажав правой кнопкой мыши на блоках земли, чтобы превратить их в $(thing)Farmland$(). Они также могут быть использованы для преобразования $(thing)Rooted Dirt$() в $(thing)Dirt$()."
 		},
 		{

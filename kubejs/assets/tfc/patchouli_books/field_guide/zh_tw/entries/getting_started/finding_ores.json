@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Ores, Metal, and Casting",
+  "name": "礦石、金屬與鑄造",
   "category": "tfc:getting_started",
   "icon": "tfc:ore/normal_native_copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In addition to sticks, twigs, and stones on the ground, in your travels you may encounter small pieces of ores scattered around the ground. These are important, as they are one of the only sources of ore and metal before obtaining a pickaxe."
+      "text": "除了地上的那些木棍、樹枝與石子，你可能還遇到散落在地表的小礦粒。盡可能的多收集點吧，在取得鎬前，這是取得礦石與金屬為數不多的不多的方法之一。"
     },
     {
       "type": "patchouli:multiblock",
@@ -45,23 +45,23 @@
         }
       },
       "name": "",
-      "text": "All small ore pieces",
+      "text": "所有礦粒",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "These small ore pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere nearby, probably underground and close to the surface. Be sure to note where you find small ores, as the location of ore veins will be useful later during $(l:mechanics/prospecting)Prospecting$().$(br2)The twelve types of small ores, and the metal they can be melted into are listed on the next page."
+      "text": "礦粒不僅提供了初期生存致關重要的金屬材料，同時也提示你附近的淺層岩石內可能存在大型礦脈。善用 waypoint 標記發現礦粒的位置，這些情報在有了$(l:mechanics/prospecting)勘礦鎬$() 後會很有幫助的。$(br2)下一頁會介紹這個世界中的十二種礦粒與它們對應的金屬。"
     },
     {
       "type": "patchouli:text",
-      "text": "$(li)Native Copper ($(thing)Copper$())$(li)Native Gold ($(thing)Gold$())$(li)Hematite ($(thing)Cast Iron$())$(li)Native Silver ($(thing)Silver$())$(li)Cassiterite ($(thing)Tin$())$(li)Bismuthinite ($(thing)Bismuth$())$(li)Garnierite ($(thing)Nickel$())$(li)Malachite ($(thing)Copper$())$(li)Magnetite ($(thing)Cast Iron$())$(li)Limonite ($(thing)Cast Iron$())$(li)Sphalerite ($(thing)Zinc$())$(li)Tetrahedrite ($(thing)Copper$())",
-      "title": "Small Ores"
+      "text": "$(li)原生銅粒（$(thing)銅$()）$(li)原生金粒（$(thing)金$()）$(li)赤鐵礦粒（$(thing)鑄鐵$()）$(li)原生銀粒（$(thing)銀$()）$(li)錫石粒（$(thing)錫$()）$(li)輝鉍礦粒（$(thing)鉍$()）$(li)綠鎳礦粒（$(thing)鎳$()）$(li)孔雀石粒（$(thing)銅$()）$(li)磁鐵礦粒（$(thing)鑄鐵$()）$(li)褐鐵礦粒（$(thing)鑄鐵$()）$(li)閃鋅礦粒（$(thing)鋅$()）$(li)黝銅礦粒（$(thing)銅$()）",
+      "title": "小礦石"
     },
     {
       "type": "patchouli:text",
       "anchor": "casting",
-      "text": "In TerraFirmaCraft, ores each contain a certain number of $(thing)units$(), or $(thing)mB (millibuckets)$() of actual metal which can be extracted. Small ores like this found on the surface are the lowest quality, and only provide $(thing)16 mB$() of metal. In order to extract this metal, it needs to be $(thing)melted$(), and made into tools using a process called $(thing)casting$().",
-      "title": "Casting"
+      "text": "群巒傳說每種礦石包含的實際金屬$(thing)單位$()（$(thing)mB「毫桶」 $()）並不相同。像在地表發現的礦粒品質最低，只提供 $(thing)16 mB$() 的金屬。為了提取這種金屬需要將其 $(thing)熔化$()，並使用$(thing)鑄造工藝$()製成工具。",
+      "title": "鑄造"
     },
     {
       "type": "patchouli:text",

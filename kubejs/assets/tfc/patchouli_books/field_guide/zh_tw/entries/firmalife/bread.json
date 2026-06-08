@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Bread",
+  "category": "tfc:firmalife",
+  "icon": "tfc:textures/item/food/barley_bread.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To make $(thing)Bread$(), one first must get $(thing)Yeast$(). To get your first yeast, seal $(l:firmalife/drying)Dried Fruit$() in a Barrel of $(thing)Water$(). After three days, $(thing)Yeast Starter$() will form.$(br)From now on, your yeast can be fed by sealing Yeast Starter in a Barrel with $(thing)Flour$(). This causes it to multiply. 1 flour per 100mB of Yeast produces 600mB of Yeast. That's a good deal!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shapeless/barley_dough",
+      "text": "Yeast Starter, Sweetener, and Flour can be combined to make $(thing)Dough$(). Dough can be cooked like normal to produce $(thing)Bread!$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:crafting/barley_slice",
+      "title": "Sliced Bread",
+      "text": "Once baked, you can use a $(thing)knife$() to cut bread into $(thing)slices$(). These can then either be used for $(l:tfc:mechanics/sandwiches)sandwich making$(), or cooked into $(thing)toast$() which can be spread with $(thing)butter$() or preserves."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/toast_with_butter",
+      "recipe2": "firmalife:crafting/toast_with_jam",
+      "title": "吐司"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 16
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Оздоблення обладунків",
+    "category": "tfc:mechanics",
+    "icon": "minecraft:rib_armor_trim_smithing_template",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Оздоблення обладунків створюється за допомогою $(thing)матеріалу для оздоблення$() та $(l:mechanics/sewing_table)ковальського шаблону$(). У TFC усі дорогоцінні камені, а також стерлінгове срібло, золото, рожеве золото та бісмут можна використовувати як матеріали для оздоблення. Оздоблення обладунків є суто косметичним."
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "minecraft:shapeless/smithing_table",
+            "text": "Ковальський стіл можна використовувати для нанесення оздоблення на обладунки TFC."
+        }
+    ],
+    "read_by_default": true
+}

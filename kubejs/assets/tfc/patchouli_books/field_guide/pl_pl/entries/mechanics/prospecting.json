@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Prospector View",
+      "title": "Widok kilofa geologicznego",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
@@ -60,7 +60,7 @@
       "type": "patchouli:spotlight",
       "anchor": "prospector",
       "item": "gtceu:prospector.lv",
-      "title": "Cyfrowy poszukiwacz rud",
+      "title": "Cyfrowy wykrywacz rud",
       "link_recipes": false,
       "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
     },

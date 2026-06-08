@@ -16,6 +16,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 
 	tarExtract('oil_tar', 'tfg:oil_tar', 'gtceu:oil', 10)
 	tarExtract('raw_oil_tar', 'tfg:raw_oil_tar', 'gtceu:oil_medium', 10)
+	tarExtract('light_oil_tar', 'tfg:light_oil_tar', 'gtceu:oil_light', 10)
 	tarExtract('heavy_oil_tar', 'tfg:heavy_oil_tar', 'gtceu:oil_heavy', 10)
 
 	const tarSolidify = (id, fluidId, outputBlock) => {
@@ -28,6 +29,7 @@ function registerTFGAsphaltRoadRecipes(event) {
 
 	tarSolidify('oil', 'gtceu:oil', 'tfg:oil_tar')
 	tarSolidify('raw_oil', 'gtceu:oil_medium', 'tfg:raw_oil_tar')
+	tarSolidify('light_oil', 'gtceu:oil_light', 'tfg:light_oil_tar')
 	tarSolidify('heavy_oil', 'gtceu:oil_heavy', 'tfg:heavy_oil_tar')
 
 	event.recipes.gtceu.macerator('tfg:asphalt/gilsonite_dust')

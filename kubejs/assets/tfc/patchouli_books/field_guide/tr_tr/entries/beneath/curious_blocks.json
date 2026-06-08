@@ -6,13 +6,13 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
-			"text": "The Pyroxenite Aqueduct allows lava to be conducted at any distance."
+			"recipe": "tfg:shaped/blackstone_aqueduct",
+			"text": "Aqueducts can also move lava and other fluids around, which may be useful when building the $(l:beneath/hellforge)Hellforge$()."
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
-			"text": "Hellbricks are a building block that are also used for the Hellforge."
+			"recipe": "tfg:shapeless/hellbricks",
+			"text": "Hellbricks are a building block that is also used for the $(l:beneath/hellforge)Hellforge$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
 		}
 	],

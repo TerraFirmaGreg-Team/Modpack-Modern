@@ -6,13 +6,13 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
-			"text": "辉石岩引水桥可用于远距离输送岩浆。"
+			"recipe": "tfg:shaped/blackstone_aqueduct",
+			"text": "引水桥可用于远距离输送岩浆，在建造$(l:beneath/hellforge)地狱熔炉$()时可能会很有用。\n"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
-			"text": "地狱砖是一种建筑方块，也用于地狱熔炉建造。"
+			"recipe": "tfg:shapeless/hellbricks",
+			"text": "地狱砖是一种建筑方块，也用于建造$(l:beneath/hellforge)地狱熔炉$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "混合岩和辉石岩砖块如普通砖块一样制作，也需要先制作石砖物品。"
 		}
 	],

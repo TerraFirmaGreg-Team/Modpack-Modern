@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "tfg:block/steam_emitter"
+			},
+			{
+				"model": "tfg:block/steam_emitter_small"
+			}
+		]
+	}
+}

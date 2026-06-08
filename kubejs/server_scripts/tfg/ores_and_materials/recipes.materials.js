@@ -204,11 +204,12 @@ function addMaterialCasting(event, outputItem, ceramicMold, isFireMold, gtMold, 
  * TFC Anvil tier. Should be 4 for everything except double ingots, which should be 5
  * @param {number} nonTfcTier
  * GregTech voltage tier. What recipe tier should non-tfc materials use? 0 for ulv, 1 for lv, etc
- * @param {String} recipeIdSuffix 
+ * @param {String} recipeIdSuffix
+ * @param {number} circuit
  */
-function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix) {
+function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material, tierThreshold, nonTfcTier, recipeIdSuffix, circuit) {
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
-	const id = linuxUnfucker(`${material.getName()}_${recipeIdSuffix}`);
+	const id = global.linuxUnfucker(`${material.getName()}_${recipeIdSuffix}`);
 	let compactingTier = nonTfcTier;
 
 	if (tfcProperty !== null) {
@@ -223,7 +224,7 @@ function addMaterialWelding(event, outputItem, inputItem1, inputItem2, material,
 	event.recipes.greate.compacting(outputItem, [inputItem1, inputItem2, 'tfc:powder/flux'])
 		.heated()
 		.recipeTier(compactingTier)
-		.circuitNumber(0)
+		.circuitNumber(circuit)
 		.id(`tfg:compacting/${id}`);
 
 	event.recipes.gtceu.forming_press(`tfg:${id}`)
@@ -366,7 +367,10 @@ function registerTFGMaterialRecipes(event) {
 		}
 
 		const oreProperty = material.getProperty(PropertyKey.ORE);
-		if (oreProperty !== null && material !== GTMaterials.Coal && material != GTMaterials.get('lignite')) {
+		if (oreProperty !== null 
+			&& material !== GTMaterials.Coal 
+			&& material !== GTMaterials.get('lignite')
+			&& material !== GTMaterials.get('anthracite')) {
 			processSmallOre(event, material)
 			processPoorRawOre(event, material)
 			processNormalRawOre(event, material)

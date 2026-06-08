@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "将锄头与木棍合成一把锄。$(br2)锄的功能与原版相同，右键点击泥土方块即可将其转化为$(thing)耕地$()。它还可以用于将$(thing)缠根泥土$()转化为$(thing)土$()。"
 		},
 		{

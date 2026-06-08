@@ -26,6 +26,26 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add('minecraft:wart_blocks', 'minecraft:mushroom_stem')
 	event.add('tfc:compost_greens', 'minecraft:nether_wart_block')
 	event.add('tfc:compost_greens', 'minecraft:warped_wart_block')
+
+	event.add("tfg:softwood", `#tfg:araucaria_logs`);
+	event.add("tfg:stripped_softwood", `tfg:wood/stripped_log/araucaria`);
+	event.add("tfg:stripped_softwood", `tfg:wood/stripped_wood/araucaria`);
+	event.add("tfg:softwood_supports", `tfg:wood/support/araucaria`);
+
+	event.add("tfg:hardwood", `#tfg:mahoe_logs`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/mahoe`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/mahoe`);
+	event.add("tfg:hardwood_supports", `tfg:wood/support/mahoe`);
+
+	event.add("tfg:hardwood", `#tfg:beech_logs`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/beech`);
+	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/beech`);
+	event.add("tfg:hardwood_supports", `tfg:wood/support/beech`);
+
+	event.add("tfg:softwood", `#wan_ancient_beasts:ginkgo_logs`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_log`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_wood`);
+	event.add("tfg:softwood_supports", `tfg:wood/support/ginkgo`);
 }
 
 function registerTFGGeneralWorldgenBlockTags(event) {

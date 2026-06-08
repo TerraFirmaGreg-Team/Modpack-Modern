@@ -45,12 +45,12 @@
         }
       },
       "name": "",
-      "text": "All small ore pieces",
+      "text": "Wszystkie małe kawałki rudy",
       "enable_visualize": false
     },
     {
       "type": "patchouli:text",
-      "text": "These small ore pieces can serve two purposes: they can provide a source of metal, and more importantly, they indicate the presence of a larger vein of ore somewhere nearby, probably underground and close to the surface. Be sure to note where you find small ores, as the location of ore veins will be useful later during $(l:mechanics/prospecting)Prospecting$().$(br2)The twelve types of small ores, and the metal they can be melted into are listed on the next page."
+      "text": "Te małe kawałki rud mają dwa użycia: mogą być źródłem metalu, ale co ważniejsze ich obecność wskazuje na obecność dużego złoża danej rudy w pobliżu, prawdopodobnie pod ziemią albo blisko powierzchni. Zapamiętaj, aby notować gdzie znalazłeś małe kawałki rud, ponieważ lokacje złóż przydadzą ci sie pózniej w rozgrywce\n$(l:mechanics/prospecting)Prospecting$().$(br2)Dwanaście typów małych rud, oraz metali na które mogą być one przetopione znajdziesz na kolejnej stronie."
     },
     {
       "type": "patchouli:text",

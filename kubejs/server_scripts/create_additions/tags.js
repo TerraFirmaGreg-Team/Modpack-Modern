@@ -2,21 +2,10 @@
 "use strict";
 
 const registerCreateAdditionsItemTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.CREATE_ADDITIONS_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-
-        event.add('c:hidden_from_recipe_viewers', item)
-    })
-}
-
-const registerCreateAdditionsBlockTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.CREATE_ADDITIONS_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
+    event.add('c:hidden_from_recipe_viewers', "createaddition:creative_energy")
+    event.add('c:hidden_from_recipe_viewers', "createaddition:copper_spool")
+    event.add('c:hidden_from_recipe_viewers', "createaddition:festive_spool")
+    event.add('c:hidden_from_recipe_viewers', "createaddition:small_light_connector")
 }
 
 const registerCreateAdditionsFluidTags = (event) => {

@@ -30,7 +30,7 @@
       {
         "type": "patchouli:crafting",
         "recipe": "minecraft:writable_book",
-        "recipe2": "minecraft:book"
+        "recipe2": "minecraft:book_from_glue"
       },
       {
         "type": "patchouli:crafting",
@@ -84,7 +84,7 @@
       },
       {
         "type": "patchouli:text",
-        "text": "まず初めに、以下の堅木を見つける必要があります：$(br2)アカシア$(br)トネリコ$(br)ポプラ$(br)シラカバ$(br)ブラックウッド$(br)トチノキ$(br)ヒッコリー$(br)カエデ$(br)オーク$(br)ローズウッド$(br)スズカケノキ"
+        "text": "まず初めに、以下の堅木を見つける必要があります：$(br2)アカシア$(br)トネリコ$(br)ヤマナラシ$(br)シラカバ$(br)ブラックウッド$(br)トチノキ$(br)ヒッコリー$(br)カエデ$(br)オーク$(br)ローズウッド$(br)スズカケノキ"
       },
       {
         "type": "patchouli:spotlight",

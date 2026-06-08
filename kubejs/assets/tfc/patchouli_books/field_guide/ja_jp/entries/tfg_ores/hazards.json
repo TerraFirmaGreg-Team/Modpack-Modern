@@ -14,8 +14,8 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "全てのエフェクト",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)$(l:tfg_ores/hazards#Carcinogens)発がん性$()$(li)$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)$(l:tfg_ores/hazards#Irritants)炎症$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
+			"title": "全ての病気",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)ヒ素中毒$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)アスベスト症$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)ベリリウム症$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一酸化炭素中毒$()$(li)$(l:tfg_ores/hazards#Carcinogens)癌$()$(li)$(l:tfg_ores/hazards#Chemical_burns)化学熱傷$()$(li)$(l:tfg_ores/hazards#Irritants)発疹$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)メタノール中毒$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)化学性悪心$()$(li)$(l:tfg_ores/hazards#Poisons)有毒性物質$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()$(li)$(l:tfg_ores/hazards#Silicosis)珪肺$()$()$(br2)次のページで、これらの症状への対処方法が解説されます。"
 		},
 		{
 			"type": "patchouli:text",
@@ -107,9 +107,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenicosis",
+			"title": "ヒ素中毒",
 			"item": "gtceu:arsenic_dust",
-			"anchor": "Arsenicosis",
+			"anchor": "ヒ素中毒",
 			"text": "$(thing)ヒ素中毒$()は、粉塵や蒸気、または$(thing)鶏冠石$()に含まれる$(thing)ヒ素$()を吸い込むことで発症する病気です。徐々に$(item)空腹感$()が増加し、やがて$(item)吐き気$()を引き起こし、最終的には$(item)死$()に至ります。$(br2)この状態は、$(l:tfg_ores/hazards#mask)フェイスマスク$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{
@@ -123,7 +123,7 @@
 			"type": "patchouli:spotlight",
 			"title": "ベリリウム症",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "ベリリウム症",
+			"anchor": "ベリリウム肺",
 			"text": "$(thing)ベリリウム症$()は、$(thing)ベリリウムの粉$()や$(thing)液化ベリリウム$()が皮膚に触れることで発症する病気です。初めは大きな影響がないように見えますが、長くさらされるほど急速に$(item)死$()の危険性が高まります。$(br2)$(l:tfg_ores/hazards#gloves)ゴム手袋$()や$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで防ぐことができます。"
 		},
 		{
@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "癌",
+			"title": "Carcinogens",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "癌",
+			"anchor": "Carcinogens",
 			"text": "$(thing)発がん性物質$()は$(item)癌$()の原因となる有害物質で、$(thing)クロムの粉$()や$(thing)ベンゼン系$()などが含まれます。この病気は$(item)自然に治ることはありません$()が、深刻な状態になる前に段階的に影響が現れます。はじめは$(item)弱体化$()が発症し、次に$(item)空腹$()、さらに$(item)鈍足$()、最終的には$(item)採掘速度低下$()へと悪化していきます。曝露が蓄積すると、やがて$(item)死$()に至ります。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "癌",
 			"item": "gtceu:chromium_dust",
-			"anchor": "癌",
+			"anchor": "Carcinogens",
 			"text": "$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は$(thing)クロムの粉$()の接触による発症を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、その両方に対応できます。$(br2)もし深刻な曝露を受けた場合は、症状を$(thing)防ぐ$()ために$(l:tfg_ores/hazards#medicine)医薬品$()を使用するのが望ましいです。"
 		},
 		{
@@ -156,10 +156,10 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "炎症",
+			"title": "Irritants",
 			"item": "gtceu:chromite_dust",
-			"anchor": "炎症",
-			"text": "$(thing)炎症$()は、$(thing)ギ酸アンモニウム$()を吸い込んだり、$(thing)クロム鉄鉱の粉$()に触れたりすることで発生します。短時間なら$(item)弱体化$()程度で済みますが、放置するとやがてランダムにダメージを受けるようになります。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は皮膚接触を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備すれば両方に対応できます。"
+			"anchor": "Irritants",
+			"text": "$(thing)発疹$()は、$(thing)ギ酸アンモニウム$()を吸い込んだり、$(thing)クロム鉄鉱の粉$()に触れたりすることで発生します。短時間なら$(item)弱体化$()程度で済みますが、放置するとやがてランダムにダメージを受けるようになります。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は皮膚接触を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備すれば両方に対応できます。"
 		},
 		{
 			"type": "patchouli:spotlight",

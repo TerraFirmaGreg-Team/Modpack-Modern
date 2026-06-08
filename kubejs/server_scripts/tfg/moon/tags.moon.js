@@ -80,7 +80,6 @@ function registerTFGMoonEntityTypeTags(event) {
 	})
 
 	event.add('tfc:deals_piercing_damage', 'minecraft:stray')
-	event.add('tfc:deals_slashing_damage', 'minecraft:enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:windswept_hills_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')

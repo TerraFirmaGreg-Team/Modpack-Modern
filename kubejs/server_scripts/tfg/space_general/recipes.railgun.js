@@ -94,7 +94,7 @@ function registerTFGRailgunRecipes(event) {
 		C: '#gtceu:circuits/ev',
 		S: 'gtceu:hv_sensor',
 		E: 'gtceu:hv_emitter',
-		H: 'gtceu:ev_machine_hull',
+		H: 'gtceu:hv_machine_hull',
 		N: '#forge:plates/hsla_steel'
 	}).addMaterialInfo().id('tfg:shaped/interplanetary_item_launcher')
 

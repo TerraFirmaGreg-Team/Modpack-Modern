@@ -1,0 +1,99 @@
+{
+  "name": "アスファルト道路",
+  "category": "tfc:roadsandroofs",
+  "icon": "tfg:asphalt_road",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "アスファルトは、GregTechによる石油技術によって作ることができる優秀な道路材です。$(br)$(l:roadsandroofs/making_a_road)路盤$()を準備した後、その上に$(thing)アスファルト混合物$()を注ぎます。最初は$(thing)熱いアスファルト$()ですが、冷えて固まることで耐久性のある$(thing)アスファルトの道路$()になります。$(br)正しく舗設されたアスファルト道路の上では移動速度が40%上昇します。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "アスファルト",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/overview.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "コンクリートの道の施工とは異なり、アスファルト道路の舗設には収縮目地を必要とせず、ひび割れたり、硬化前に上を歩くことで足跡が付いたりなどもしません。$(br2)$(thing)ただし、熱いアスファルト$()を扱う際は注意してください――触れると火傷しますよ。安全のために耐火装備の着用を推奨します。なお、アスファルト道路を破壊すると、ブロックとしてではなく$(thing)アスファルトの瓦礫$() としてドロップします。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "tar_chunk",
+      "item": "tfg:tar_chunk",
+      "title": "タールの塊",
+      "text": "アスファルトの原材料は石油です。$(thing)原油$()、$(thing)原料油$()、$(thing)重油$() などを$(thing)液体成型機$()で固化して$(thing)タール$()ブロックを作り、その後 $(thing)抽出機$()で$(thing)タールの塊$()に加工しましょう。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "asphalt_mix",
+      "item": "tfg:asphalt_mix_bucket",
+      "title": "アスファルト混合物",
+      "text": "$(thing)ミキサー$()でタールの塊と$(thing)石の粉$()を混ぜることで、$(thing)アスファルト結合材$()を作成できます。なお、$(thing)ギルソナイトの粉$()を加えると、結合材の生産量が増加します。$(br)その後、結合材を砂、石の粉、そして$(thing)粉砕された路盤材$()と混ぜ合わせることで、液体状の$(thing)アスファルト混合物$()を作成できます。$(br)ドラムやタンクに保管しておくと、運搬や舗設などの管理がしやすいです。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "アスファルトの舗設",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "敷き詰めた$(thing)路盤$()に、$(thing)アスファルト混合物$()入りのバケツでアスファルトを流し込むことで、アスファルト道路を舗設できます。混合物は隣接する路盤へ広がり、最大20個までの隣接した路盤ブロックを$(thing)熱いアスファルト$()へ変化させます。しばらくすると、熱いアスファルトは冷えると$(thing)アスファルト道路$()になります。$(br2)ちなみに、$(thing)アスファルト混合物$()を持った状態で、$(thing)路盤$()をスニーク右クリックすると、小範囲だけを舗設でき、消費する液体量も少なくなります。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_hot",
+      "title": "熱いアスファルト",
+      "text": "$(thing)熱いアスファルト$()は本当に熱いので、触れると火傷してダメージを受けます。作業する際は、耐火装備を着用してください。$(br2)冷えて$(thing)アスファルト道路$()になれば、まあ大丈夫です。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_road_stairs,tfg:asphalt_road_slab",
+      "text": "$(thing)アスファルト道路$()は、$(thing)マトック$()または石切台を使用して、$(thing)アスファルト道路のハーフブロック$()および$(thing)アスファルト道路の階段$()にすることができます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "road_marking_stencils",
+      "item": {
+        "tag": "tfg:road_marking_stencils"
+      },
+      "title": "路面標示ステンシル",
+      "text": "アスファルト道路でもっとも特徴的なカスタマイズ要素は、路面標示です。完成した道路に色や模様を吹き付けることで、車線や交差点、警告表示などを描けます。$(br2)ステンシルは多様な種類があり、$(thing)工作台$()で作成できます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:white_dye_spray_can,gtceu:yellow_dye_spray_can",
+      "text": "片手に$(thing)スプレー缶$()を持ち、もう片方の手は素手か$(thing)路面標示ステンシル$()を持った状態で、アスファルト道路またはハーフブロックに使用すると路面標示を塗装できます。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "色は使用するスプレー缶の中身によって決まり、向きはプレイヤーの向いている方向によって決まります。$(br)既存の標示に再度スプレーすると上書きされ、スプレー缶の耐久値を消費します。ただし、同じ色・向き・模様の場合は消費されません。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfg:textures/gui/field_guide/asphalt_roads/marking.png"
+      ],
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "gtceu:solvent_spray_can",
+      "title": "路面標示の消去",
+      "text": "路面標示を消したい場合は、アスファルト道路に$(thing)溶媒のスプレー缶$()を使用すると、その場所の標示を消去できます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfg:asphalt_rubble",
+      "title": "破壊と再生",
+      "text": "アスファルト道路、その階段とハーフブロック、もしくは熱いアスファルトを破壊すると、$(thing)アスファルトの瓦礫$()としてドロップします。瓦礫を$(thing)抽出機$()で処理すると、少量のアスファルト混合物を回収できます。"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 22
+}

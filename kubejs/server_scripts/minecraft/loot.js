@@ -16,7 +16,6 @@ function registerMinecraftLoots(event) {
 	event.addEntityLootModifier('minecraft:ghast').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:glow_squid').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:guardian').removeLoot(ItemFilter.ALWAYS_TRUE)
-	event.addEntityLootModifier('minecraft:hoglin').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:horse').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:iron_golem').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:llama').removeLoot(ItemFilter.ALWAYS_TRUE)
@@ -44,6 +43,7 @@ function registerMinecraftLoots(event) {
 	event.addEntityLootModifier('minecraft:warden').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:witch').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:wither').removeLoot(ItemFilter.ALWAYS_TRUE)
+	event.addEntityLootModifier('minecraft:zoglin').removeLoot(ItemFilter.ALWAYS_TRUE)
 	event.addEntityLootModifier('minecraft:zombie_villager').removeLoot(ItemFilter.ALWAYS_TRUE)
 
 	event.addEntityLootModifier('diggerhelmet:candleslime').removeLoot(ItemFilter.ALWAYS_TRUE)

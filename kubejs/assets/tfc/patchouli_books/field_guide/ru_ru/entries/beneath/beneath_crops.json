@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Содержание",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:tfc:beneath/beneath_crops#beans)Фасоль$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Призрачный перец$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маниок$()$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахис$()$(li)$(l:tfc:beneath/beneath_crops#beans)Чернитная фасоль$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Призрачный перец$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикие призрачные перцы$() растут в (PLACEHOLDER)",
+			"text": "$(thing)Дикие призрачные перцы$() растут между 203 и 80 высотой.",
 			"enable_visualize": false
 		},
 		{
@@ -248,14 +248,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий арахис$() растёт в (PLACEHOLDER!)",
+			"text": "$(thing)Дикий арахис$() растёт между 203 и 80 высотой.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Фасоль",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Фасоль можно есть для получения $(thing)овощной$() и $(thing)белковой$() питательности. Однако перед употреблением её необходимо приготовить!"
+			"title": "Чернитная фасоль",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Увлажнение$(): 20 - 80 %$(br)$(bold)Питательное вещество$(): Калий$(br2)Чернитную фасоль можно есть для получения $(thing)овощного$() и $(thing)белкового$() рациона. Однако перед употреблением её необходимо приготовить!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикая Фасоль$() растёт в PLACEHOLDER.",
+			"text": "$(thing)Дикая Чернитная фасоль$() растёт между 158 и 32 высотой.",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий Призрачный перец$() растет в PLACEHOLDER.",
+			"text": "$(thing)Дикий Призрачный перец$() растет между 158 и 32 высотой.",
 			"enable_visualize": false
 		}
 	],

@@ -1,5 +1,9 @@
 {
+  "block.comforts.hammock.missing_rope": "ハンモックを吊るすにはロープと釘が必要です",
+  "block.comforts.hammock.no_rope": "ロープと釘にハンモックを掛ける必要があります",
   "block.comforts.hammock.no_sleep": "夜もしくは雷雨のときのみ寝ることができます",
+  "block.comforts.hammock.no_sleep.2": "日中、夜間、または雷雨時にのみ眠ることができます",
+  "block.comforts.hammock.no_space": "ハンモックを設置できるスペースがありません",
   "block.comforts.hammock.occupied": "このハンモックは既に使われています",
   "block.comforts.hammock.too_far_away": "ハンモックから離れ過ぎているため眠れません",
   "block.comforts.hammock_black": "黒色のハンモック",
@@ -18,6 +22,7 @@
   "block.comforts.hammock_red": "赤色のハンモック",
   "block.comforts.hammock_white": "白色のハンモック",
   "block.comforts.hammock_yellow": "黄色のハンモック",
+  "block.comforts.no_sleep": "これは装飾用で、眠ることはできません",
   "block.comforts.rope_and_nail": "ロープと釘",
   "block.comforts.sleeping_bag.broke": "寝袋が壊れました",
   "block.comforts.sleeping_bag.occupied": "この寝袋は既に使われています",
@@ -39,6 +44,8 @@
   "block.comforts.sleeping_bag_white": "白色の寝袋",
   "block.comforts.sleeping_bag_yellow": "黄色の寝袋",
   "capability.comforts.not_sleepy": "まだ眠気を感じていないので眠れません",
+  "gui.comforts.config.autoUse.description": "有効な場合、寝袋を設置した際に自動で使用します。",
+  "gui.comforts.config.autoUse.name": "自動的に寝袋を使用",
   "itemGroup.comforts": "Comforts",
   "itemGroup.comforts.general": "Comforts"
 }

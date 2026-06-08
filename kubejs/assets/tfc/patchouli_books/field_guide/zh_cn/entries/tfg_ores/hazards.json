@@ -199,7 +199,7 @@
 			"type": "patchouli:spotlight",
 			"title": "矽肺病",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "矽肺病",
+			"anchor": "硅肺病",
 			"text": "$(thing)矽肺病$()是一种因吸入$(thing)二氧化硅粉尘$()而引起的疾病。接触会导致$(item)生命值$()和$(item)潜水时的空气供应$()$(item)减少$()。$(br2)$(l:tfg_ores/hazards#mask)面罩$()和$(l:tfg_ores/hazards#hazmat)防化服$()可以防止吸入二氧化硅。"
 		}
 	]

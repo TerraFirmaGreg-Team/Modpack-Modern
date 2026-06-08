@@ -1,11 +1,6 @@
 // priority: -100
 "use strict";
 
-global.DOMUM_ORNAMENTUM_DISABLED_ITEMS = /** @type {const} */ ([
-    "domum_ornamentum:blockbarreldeco_standing",
-    "domum_ornamentum:blockbarreldeco_onside"
-]);
-
 global.DOMUM_ORNAMENTUM_FLOATING_CARPETS = /** @type {const} */ ([
     "domum_ornamentum:white_floating_carpet",
     "domum_ornamentum:orange_floating_carpet",

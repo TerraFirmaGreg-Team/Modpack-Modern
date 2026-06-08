@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"default": {
+			"feature": "tfg:nether/terrain/oil_lake",
+			"placement": []
+		},
+		"features": [
+			{
+				"chance": 0.3,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_lake_light",
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.15,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_lake_heavy",
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.15,
+				"feature": {
+					"feature": "tfg:nether/terrain/oil_lake_raw",
+					"placement": []
+				}
+			}
+		]
+	}
+}

@@ -235,4 +235,6 @@ function registerTFGBakeliteRecipes(event) {
 		A: '#forge:plates/steel',
 		B: '#forge:storage_blocks/bakelite'
 	}).id('tfg:shaped/lv_hermetic_casing_bakelite')
+
+	TFGHelpers.registerMaterialInfo('gtceu:lv_hermetic_casing', [GTMaterials.Steel, 8])
 }

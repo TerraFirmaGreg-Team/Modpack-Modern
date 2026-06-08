@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "moon"
 	group: "36FC51ACEF38D994"
-	icon: "ad_astra:moon_globe"
+	icon: "tfg:marker/moon"
 	id: "5AB29618BD995CF0"
 	images: [
 		{
@@ -104,7 +104,7 @@
 			y: -8.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [
 		{
 			id: "7372A22303CF751A"

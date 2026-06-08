@@ -91,7 +91,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 14%$(br)$(thing)Source of$(): Niobium$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
+      "text": "$(thing)パーセント$(): 14%$(br)$(thing)採取可能$(): ニオブ$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
       "type": "patchouli:multiblock"
     },
     {
@@ -143,7 +143,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 35%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)化学式$(): LiAlSi₂O₆",
+      "text": "$(thing)パーセント$(): 35%$(br)$(thing)採取可能$(): リチウム、アルミニウム$(br)$(thing)化学式$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -163,7 +163,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)化学式$(): NaCl",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -183,7 +183,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 20%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -235,7 +235,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 41%$(br)$(thing)Used for$(): LV components$(br)$(thing)化学式$(): SiO₂",
+      "text": "$(thing)パーセント$(): 41%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -531,7 +531,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 29%$(br)$(thing)Source of$(): Phosphorous, Rare Earth$(br)$(thing)化学式$(): ?(PO₄)",
+      "text": "$(thing)パーセント$(): 29%$(br)$(thing)採取可能$(): リン、レアアース$(br)$(thing)化学式$(): ?(PO₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -551,7 +551,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)Source of$(): Neodymium$(br)$(thing)化学式$(): Nd",
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): ネオジム$(br)$(thing)化学式$(): Nd",
       "type": "patchouli:multiblock"
     },
     {
@@ -735,7 +735,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 15%$(br)$(thing)Source of$(): Arsenic$(br)$(thing)化学式$(): As₄S₄$(br)$(thing)危険性$(): $(c)$(t:フェイスマスクが必要)ヒ素中毒 (吸引)$(/t)$()",
+      "text": "$(thing)パーセント$(): 15%$(br)$(thing)採取可能$(): ヒ素$(br)$(thing)化学式$(): As₄S₄$(br)$(thing)危険性$(): $(c)$(t:フェイスマスクが必要)ヒ素中毒 (吸引)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -762,7 +762,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 45%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 45%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -782,7 +782,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 35%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)化学式$(): CrAl₂O₃",
+      "text": "$(thing)パーセント$(): 35%$(br)$(thing)採取可能$(): クロム、アルミニウム$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -869,7 +869,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 19%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)化学式$(): Sb₂S₃",
+      "text": "$(thing)パーセント$(): 19%$(br)$(thing)融解$(): アンチモニー$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -889,7 +889,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 4%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 4%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -961,7 +961,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 19%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)化学式$(): Sb₂S₃",
+      "text": "$(thing)パーセント$(): 19%$(br)$(thing)融解$(): アンチモニー$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1073,7 +1073,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 15%$(br)$(thing)Smelts into$(): Platinum$(br)$(thing)化学式$(): Pt",
+      "text": "$(thing)パーセント$(): 15%$(br)$(thing)融解$(): 白金$(br)$(thing)化学式$(): Pt",
       "type": "patchouli:multiblock"
     },
     {
@@ -1145,7 +1145,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 20%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1249,7 +1249,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 41%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危険性$(): $(c)$(t:完全な防護が必要)放射性物質 (すべての接触)$(/t)$()",
+      "text": "$(thing)パーセント$(): 41%$(br)$(thing)採取可能$(): ウラン、トリウム、鉛$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危険性$(): $(c)$(t:完全な防護が必要)放射性物質 (すべての接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1316,7 +1316,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 52%$(br)$(thing)Source of$(): Uranium, Thorium, Lead$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危険性$(): $(c)$(t:完全な防護が必要)放射性物質 (すべての接触)$(/t)$()",
+      "text": "$(thing)パーセント$(): 52%$(br)$(thing)採取可能$(): ウラン、トリウム、鉛$(br)$(thing)化学式$(): (UO₂)₃ThPb$(br)$(thing)危険性$(): $(c)$(t:完全な防護が必要)放射性物質 (すべての接触)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -1383,7 +1383,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 42%$(br)$(thing)Source of$(): Manganese$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)パーセント$(): 42%$(br)$(thing)採取可能$(): マンガン$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1443,7 +1443,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)Source of$(): Manganese, Aluminium$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): マンガン、アルミニウム$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1475,7 +1475,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 42%$(br)$(thing)Source of$(): Tungsten$(br)$(thing)化学式$(): Ca(WO₃)O",
+      "text": "$(thing)パーセント$(): 42%$(br)$(thing)採取可能$(): タングステン$(br)$(thing)化学式$(): Ca(WO₃)O",
       "type": "patchouli:multiblock"
     },
     {
@@ -1811,7 +1811,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 23%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 23%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -2087,7 +2087,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 26%$(br)$(thing)Source of$(): Aluminium, Magnesium$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 26%$(br)$(thing)採取可能$(): アルミニウム、マグネシウム$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -2214,7 +2214,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)化学式$(): KNO₃",
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): カリウム、窒素$(br)$(thing)化学式$(): KNO₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2281,7 +2281,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 17%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 17%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -2301,7 +2301,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 11%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 11%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -2368,7 +2368,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)Source of$(): Aluminium, Sodium$(br)$(thing)化学式$(): Al₃Si₃Na₄Cl",
+      "text": "$(thing)パーセント$(): 25%$(br)$(thing)採取可能$(): アルミニウム、ナトリウム$(br)$(thing)化学式$(): Al₃Si₃Na₄Cl",
       "type": "patchouli:multiblock"
     },
     {

@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sticky Business",
+			"title": "Lepka robota",
 			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
 			"text": "$(thing)Sticky Resin$() has a number of uses, thanks to it being well... sticky. It can be used to create multiple items such as $(item)Tape$() which will let you move crates around without dropping what's inside, but more importantly, it can be used to create $(item)Resin Circuit Boards$() and $(item)Resistors$(), which will be some of your first electrical components."
 		},
