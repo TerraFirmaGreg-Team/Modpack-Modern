@@ -13458,7 +13458,7 @@
             ]
         },
         {
-            "pakku_id": "oV7dQfkCw0J0STdN",
+            "pakku_id": "IczdjNSWfxo0u4aT",
             "pakku_links": [
                 "x1EwQZ6H2kVKR3U3"
             ],
@@ -13477,6 +13477,29 @@
                 "modrinth": "30nNcI5E"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "showcaser-forge-1.7.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8151/11/showcaser-forge-1.7.4.jar",
+                    "id": "8151011",
+                    "parent_id": "1491840",
+                    "hashes": {
+                        "sha1": "018979f9764ea8210e66b20b235f0e53bcda846e",
+                        "md5": "ba2d8baf978899232e8a782bdd5b028c"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 954927,
+                    "date_published": "2026-05-26T20:43:08.190Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "showcaser-forge-1.7.4.jar",
@@ -13497,29 +13520,6 @@
                     "required_dependencies": [],
                     "size": 954927,
                     "date_published": "2026-05-26T20:37:45.677055Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "showcaser-fabric-1.7.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8151/28/showcaser-fabric-1.7.4.jar",
-                    "id": "8151028",
-                    "parent_id": "1491840",
-                    "hashes": {
-                        "sha1": "c3477e03b69e409f68a305bd62b9e02706f2c94e",
-                        "md5": "1eb16581c793cc740ad2eba1385a868e"
-                    },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 319920,
-                    "date_published": "2026-05-26T20:46:49.947Z"
                 }
             ]
         },
