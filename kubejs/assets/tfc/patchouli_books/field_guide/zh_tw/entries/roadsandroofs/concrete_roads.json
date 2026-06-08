@@ -1,11 +1,11 @@
 {
-  "name": "Concrete Roads",
+  "name": "混凝土道路",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Concrete roads offer a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+      "text": "正確施作的混凝土路可提供30%移动速度加成。 施工時應確保混泥土凝固前不被踩踏或開裂，否則將失去速度增益。"
     },
     {
       "type": "patchouli:image",
