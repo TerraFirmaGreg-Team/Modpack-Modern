@@ -32,11 +32,28 @@ function registerTFGRockLoots(event) {
 		}
 
 		if (rock.gravel != null) {
-			event.addBlockLootModifier(rock.gravel.block)
-				.addAlternativesLoot([
-					LootEntry.of('minecraft:flint').when(c => c.randomChance(0.1)),
-					LootEntry.of(rock.gravel.block)
-				])
+			// Add normal gravel loot to non-tfc gravel blocks
+			if (!rock.gravel.startsWith('tfc:')) {
+				event.addBlockLootModifier(rock.gravel)
+					.removeLoot(ItemFilter.ALWAYS_TRUE)
+					.addWeightedLoot([
+						Item.of('minecraft:flint').withChance(10),
+						Item.of(rock.gravel).withChance(90)
+					])
+			}
+
+			// Add gravel -> sand crushing
+			if (rock.gravelTag != null && rock.gravelTag.startsWith('tfc:')) {
+				let match = /^tfc:(.+)_gravel$/gm.exec(rock.gravelTag);
+				if (match) {
+					event.addBlockLootModifier(rock.gravel)
+						.matchMainHand('#forge:tools/hammers')
+						.removeLoot(ItemFilter.ALWAYS_TRUE)
+						.addLoot(`tfc:sand/${match[1]}`)
+				}
+
+			}
+			// the non-tfc sands are handled via global.HAMMERING
 		}
 
 		if (rock.cobble != null && rock.gravel != null) {
@@ -53,17 +70,6 @@ function registerTFGRockLoots(event) {
 			}
 		}
 	}
-
-	// Sand
-	global.SAND_COLORS.forEach(sandColor => {
-		let tag_array = Ingredient.of(`#tfc:${sandColor}_gravel`).itemIds.toArray().map(String);
-		tag_array.forEach(item => {
-			event.addBlockLootModifier(item)
-				.matchMainHand('#forge:tools/hammers')
-				.removeLoot(ItemFilter.ALWAYS_TRUE)
-				.addLoot(`tfc:sand/${sandColor}`)
-		})
-	})
 
 	global.HAMMERING.forEach(x => {
 		if (x.raw.startsWith('#')) {
@@ -95,8 +101,8 @@ function registerTFGRockLoots(event) {
 	event.addBlockLootModifier('tfg:halite')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
 		.addWeightedLoot([
-			Item.of('gtceu:rich_raw_salt').withChance(0.2),
-			Item.of('gtceu:raw_salt').withChance(0.6),
-			Item.of('gtceu:poor_raw_salt').withChance(0.2)
+			Item.of('gtceu:rich_raw_salt').withChance(20),
+			Item.of('gtceu:raw_salt').withChance(60),
+			Item.of('gtceu:poor_raw_salt').withChance(30)
 		])
 }

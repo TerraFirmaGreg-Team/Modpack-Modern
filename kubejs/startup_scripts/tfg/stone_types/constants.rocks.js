@@ -215,11 +215,13 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 
 	"gabbro": generateTFC('gabbro', {
 		material: 'tfg:igneous_mafic',
-		tfcTag: 'tfc:igneous_intrusive_items'
+		tfcTag: 'tfc:igneous_intrusive_items',
+		gravelTag: 'tfc:black_gravel'
 	}),
 	"diorite": generateTFC('diorite', {
 		material: 'tfg:igneous_intermediate',
 		tfcTag: 'tfc:igneous_intrusive_items',
+		gravelTag: 'tfc:white_gravel',
 		pillar: 'create:diorite_pillar',
 		pillar2: 'create:layered_diorite',
 		stonecutterTag: 'create:stone_types/diorite',
@@ -232,17 +234,20 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"granite": generateTFC('granite', {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_intrusive_items'
+		tfcTag: 'tfc:igneous_intrusive_items',
+		gravelTag: 'tfc:pink_gravel'
 	}),
 	"basalt": generateTFC('basalt', {
 		material: 'tfg:igneous_mafic',
 		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:black_gravel',
 		pillar: 'minecraft:polished_basalt',
-		pillar2: 'minecraft:smooth_basalt',
+		pillar2: 'minecraft:smooth_basalt'
 	}),
 	"andesite": generateTFC('andesite', {
 		material: 'tfg:igneous_intermediate',
 		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:black_gravel',
 		pillar: 'create:andesite_pillar',
 		pillar2: 'create:layered_andesite',
 		stonecutterTag: 'create:stone_types/andesite',
@@ -255,27 +260,33 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"dacite": generateTFC('dacite', {
 		material: 'tfg:igneous_intermediate',
-		tfcTag: 'tfc:igneous_extrusive_items'
+		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:black_gravel'
 	}),
 	"rhyolite": generateTFC('rhyolite', {
 		material: 'tfg:igneous_felsic',
-		tfcTag: 'tfc:igneous_extrusive_items'
+		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:red_gravel'
 	}),
 	"shale": generateTFC('shale', {
 		material: 'tfg:sedimentary_clastic',
-		tfcTag: 'tfc:sedimentary_items'
+		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:black_gravel'
 	}),
 	"claystone": generateTFC('claystone', {
 		material: 'tfg:sedimentary_clastic',
-		tfcTag: 'tfc:sedimentary_items'
+		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:brown_gravel'
 	}),
 	"conglomerate": generateTFC('conglomerate', {
 		material: 'tfg:sedimentary_clastic',
-		tfcTag: 'tfc:sedimentary_items'
+		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:green_gravel'
 	}),
 	"limestone": generateTFC('limestone', {
 		material: 'tfg:sedimentary_carbonate',
 		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:yellow_gravel',
 		pillar: 'create:limestone_pillar',
 		pillar2: 'create:layered_limestone',
 		stonecutterTag: 'create:stone_types/limestone',
@@ -289,15 +300,18 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"dolomite": generateTFC('dolomite', {
 		material: 'tfg:sedimentary_carbonate',
-		tfcTag: 'tfc:sedimentary_items'
+		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:black_gravel'
 	}),
 	"chalk": generateTFC('chalk', {
 		material: 'tfg:sedimentary_carbonate',
-		tfcTag: 'tfc:sedimentary_items'
+		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:white_gravel'
 	}),
 	"chert": generateTFC('chert', {
 		material: 'tfg:sedimentary_organic',
 		tfcTag: 'tfc:sedimentary_items',
+		gravelTag: 'tfc:red_gravel',
 		pillar: 'create:granite_pillar',
 		pillar2: 'create:layered_granite',
 		stonecutterTag: 'create:stone_types/granite',
@@ -310,23 +324,28 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"slate": generateTFC('slate', {
 		material: 'tfg:metamorphic',
-		tfcTag: 'tfc:metamorphic_items'
+		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:yellow_gravel'
 	}),
 	"phyllite": generateTFC('phyllite', {
 		material: 'tfg:metamorphic',
-		tfcTag: 'tfc:metamorphic_items'
+		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:black_gravel'
 	}),
 	"schist": generateTFC('schist', {
 		material: 'tfg:metamorphic',
-		tfcTag: 'tfc:metamorphic_items'
+		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:green_gravel'
 	}),
 	"gneiss": generateTFC('gneiss', {
 		material: 'tfg:metamorphic',
-		tfcTag: 'tfc:metamorphic_items'
+		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:green_gravel'
 	}),
 	"marble": generateTFC('marble', {
 		material: 'tfg:metamorphic',
 		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:white_gravel',
 		stonecutting: [
 			{ block: 'gtceu:polished_marble' },
 			{ block: 'gtceu:chiseled_marble' },
@@ -340,7 +359,8 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	}),
 	"quartzite": generateTFC('quartzite', {
 		material: 'tfg:metamorphic',
-		tfcTag: 'tfc:metamorphic_items'
+		tfcTag: 'tfc:metamorphic_items',
+		gravelTag: 'tfc:white_gravel'
 	}),
 
 	/////////////////////////////////////////////////////////////////////////////////////////////
@@ -489,6 +509,7 @@ global.BIG_ROCK_TABLE = /** @type {{String, RockType}} */ ({
 	"tuff": generateMissing('tuff', {
 		material: 'tfg:igneous_felsic',
 		tfcTag: 'tfc:igneous_extrusive_items',
+		gravelTag: 'tfc:green_gravel',
 		stonecutterTag: 'create:stone_types/tuff',
 		sound: 'tuff',
 		mapColor: 'terracotta_gray',
