@@ -10,6 +10,8 @@
 - Fixed not being able to craft logs into wood @Pyritie
 - Fixed new twigs not able to be directly converted into sticks @Pyritie
 - Fixed new saplings not being instantly mined @Pyritie
+- Fixed missing sandstone crafting recipes @Pyritie
+- Fixed small ores querning into powders and not small dusts (#4215) @Pyritie
 
 ## [0.12.9] - 07-06-2026
 ### Breaking changes
