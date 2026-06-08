@@ -96,6 +96,14 @@ function registerTFGChromiumProcessing(event) {
                 .duration(14 * 20)
                 .EUt(GTValues.VA[GTValues.LV])
 
+        event.recipes.gtceu.chemical_reactor('tfg:chromium_3_oxide_dust_from_sodium_dichromate_dust')
+                .itemInputs(Item.of('tfg:sodium_dichromate_dust', 1))
+                .inputFluids(Fluid.of('gtceu:hydrogen', 4000))
+                .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 1), Item.of('gtceu:sodium_hydroxide_dust', 2))
+                .outputFluids(Fluid.of('minecraft:water', 1000))
+                .duration(12 * 20)
+                .EUt(GTValues.VA[GTValues.LV])
+
         event.recipes.gtceu.chemical_reactor('tfg:chromium_3_oxide_dust_from_sodium_chromate')
                 .itemInputs(Item.of('tfg:sodium_chromate_dust', 2))
                 .inputFluids(Fluid.of('gtceu:hydrogen', 4000))
