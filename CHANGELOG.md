@@ -7,6 +7,9 @@
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie
 - Fixed TFC metal items melting into the wrong liquid metal @Pyritie
+- Fixed not being able to craft logs into wood @Pyritie
+- Fixed new twigs not able to be directly converted into sticks @Pyritie
+- Fixed new saplings not being instantly mined @Pyritie
 
 ## [0.12.9] - 07-06-2026
 ### Breaking changes

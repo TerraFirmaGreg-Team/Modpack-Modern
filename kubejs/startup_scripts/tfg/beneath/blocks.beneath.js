@@ -105,7 +105,7 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 	event.create('tfg:groundcover/ginkgo_twig', 'tfc:ground_cover')
 		.box(3, 0, 3, 13, 3, 13)
 		.groundCoverModelShape('twig')
-		.withPreexistingItem('tfg:wood/twig/ginkgo')
+		.withPreexistingItem('tfg:twigs/ginkgo')
 		.tagBlock('tfc:can_be_snow_piled')
 		.texture('particle', 'wan_ancient_beasts:block/ginkgo_log')
 		.texture('all', 'wan_ancient_beasts:block/ginkgo_log')
