@@ -12,6 +12,8 @@
 - Fixed new saplings not being instantly mined @Pyritie
 - Fixed missing sandstone crafting recipes @Pyritie
 - Fixed small ores querning into powders and not small dusts (#4215) @Pyritie
+### Mods
+- Add Create Stock Bridge, which lets your create logistics network talk to your AE2 network (it caused a crash with the previous fluid logistics mod)
 
 ## [0.12.9] - 07-06-2026
 ### Breaking changes
