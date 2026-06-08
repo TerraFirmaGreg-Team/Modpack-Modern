@@ -220,6 +220,8 @@ function registerTFGBeneathBlockTags(event) {
 
 	event.remove("tfc:can_trigger_collapse", "minecraft:basalt");
 	event.remove("tfc:can_start_collapse", "minecraft:basalt");
+	event.remove("tfc:can_trigger_collapse", "minecraft:glowstone");
+	event.remove("tfc:can_start_collapse", "minecraft:glowstone");
 }
 
 function registerTFGBeneathBiomeTags(event) {
