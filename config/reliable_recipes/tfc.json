@@ -2,8 +2,8 @@
 	{
 		"action": "remove_recipe",
 		"pattern": [
-			"/tfc:heating/metal/*/",
-			"/tfc:heating/ore/*/"
+			"/tfc:heating/metal/.*/",
+			"/tfc:heating/ore/.*/"
 		]
 	},
 	{

@@ -2,7 +2,11 @@
 
 ## Unreleased
 ### Changes
+- Reduced HP of cliff hanger and leaf hangers @Pyritie
 ### Bug fixes
+- Fixed missing recipes for sodium dichromate @TomPlop
+- Fixed incorrect loot tables for different gravels @Pyritie
+- Fixed TFC metal items melting into the wrong liquid metal @Pyritie
 
 ## [0.12.9] - 07-06-2026
 ### Breaking changes
