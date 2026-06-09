@@ -376,9 +376,6 @@ function registerTFCItemTags(event) {
 		event.add("c:hidden_from_recipe_viewers", item);
 	});
 
-	// Удаление тегов у руд
-	event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/");
-
 	//Stone javelins
 	event.add("tfc:stone_javelins", "tfc:stone/javelin/igneous_extrusive");
 	event.add("tfc:stone_javelins", "tfc:stone/javelin/igneous_intrusive");

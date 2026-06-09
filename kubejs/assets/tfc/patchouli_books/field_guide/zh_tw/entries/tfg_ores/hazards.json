@@ -24,7 +24,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rocks!",
+			"title": "石頭！",
 			"item": {
 				"tag": "tfc:rock_knapping"
 			},
@@ -33,14 +33,14 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Containers",
+			"title": "容器",
 			"anchor": "containers",
 			"text": "接著將手套浸泡在$(thing)醋$()裡, 醋是水果與酒精的混合物.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Face Mask",
+			"title": "口罩",
 			"recipe": "gtceu:shaped/face_mask",
 			"text": "隨後將浸泡後的皮革手套在$(thing)大鍋$()內與$(thing)硫化乳膠$()一起加熱，在一步之遙就能製成橡膠手套。",
 			"anchor": "mask"
@@ -48,7 +48,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"title": "Rubber gloves",
+			"title": "橡膠手套",
 			"link_recipes": true,
 			"anchor": "gloves",
 			"text": "最後將浸泡乳膠手套放入$(l:firmalife/oven)烤爐$()內加熱即可完成。"
@@ -75,132 +75,132 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The Hazmat Suit",
+			"title": "防護服",
 			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
-			"text": "A completed $(thing)Hazmat suit $()provides $(item)immunity $()from $(item)every$() hazard, even $(item)radiation$(). It is made in an $(thing)LV Assembler$() from $(thing)Polyethylene$() and $(thing)Polyvinyl Chloride$().$(br2)Fun fact! You can also look up $(thing)#ppe_armor$() in JEI for more equipment that provides protection from hazardous materials.",
+			"text": "全套的$(thing)防護服$()可以$(item)免疫$()$(item)所有$()危害，甚至$(item)辐射$()。透過 $(thing)LV組裝機$() 使用 $(thing)聚乙烯$() 和 $(thing)聚氯乙烯$() 製作。$(br2)可以在JEI中查找 $(thing)#ppe_armor$()，獲取更多防護危險物質的裝備。",
 			"anchor": "hazmat"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Medicine",
+			"title": "藥物",
 			"item": {
 				"tag": "tfg:medicine"
 			},
 			"anchor": "medicine",
-			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+			"text": "遭受危險物質的危害時，透過一些$(thing)藥物$()可以幫助恢復。$(br2)基礎 $(thing)藥片$() 是最原始且容易製作，但大多都有$(item)副作用$()。 $(thing)藥丸$() 和 $(thing)藥膏$() 效果更好，副作用更少，但製作它們需要 $(thing)LV設備$() 和更高級的材料。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "The RadAwayᵗᵐ pill",
+			"title": "消輻寧™藥片",
 			"item": "tfg:rad_away_pill",
 			"anchor": "rad_away",
-			"text": "This is $(item)The Ultimate$() cure for $(item)ALL$() the hazards and the $(item)ONLY$() effective cure to $(item)Radiation$(). However, it is also the most $(thing)Expensive$() and $(thing)Difficult$() to make, requiring $(thing)HV tier$() equipment and advanced materials."
+			"text": "$(item)所有$() 危害的 $(item)終極$() 藥物，也是對抗 $(item)輻射$() 的 $(item)唯一$() 解藥。然而也是製作起来最 $(thing)昂貴$() 且 $(thing)困難$()的藥物，需要 $(thing)HV設備$() 和高級材料。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Failure...",
+			"title": "失敗……",
 			"item": {
 				"tag": "minecraft:beds"
 			},
 			"anchor": "respawn",
-			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+			"text": "若所有防護措施均無效，随身攜帶床用來重生是个明智之舉。$(br2)無法獲得 $(thing)羊毛$() 或 $(thing)線$() 也可以制作$(l:getting_started/a_place_to_sleep)茅草床$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Arsenicosis",
+			"title": "砷中毒",
 			"item": "gtceu:arsenic_dust",
 			"anchor": "Arsenicosis",
-			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+			"text": "$(thing)砷中毒$()是因吸入 $(thing)砷$() 或 $(thing)雄黄$() 產生的粉、蒸氣而引起的疾病。它會逐漸造成 $(item)飢餓$()、 $(item)恶心$() ，最终 $(item)死亡$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以防護$(thing)砷中毒$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Asbestosis",
+			"title": "石棉肺",
 			"item": "gtceu:asbestos_dust",
 			"anchor": "Asbestosis",
-			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+			"text": "$(thing)石棉肺$()是由吸入$(thing)石棉粉$()引起的疾病。長時間攜帶會導致 $(item)飢餓$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()對$(thing)石棉肺$()提供防護。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Berylliosis",
+			"title": "鈹中毒",
 			"item": "gtceu:beryllium_dust",
 			"anchor": "Berylliosis",
-			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+			"text": "$(thing)鈹中毒$()是由皮膚接觸 $(thing)鈹粉$() 或 $(thing)液態鈹$() 引起的疾病。起初看似影響不大。隨著接觸時間越長，它 $(item)致死$() 的速度就越快。$(br2)$(l:tfg_ores/hazards#gloves)手套$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以對 $(thing)鈹中毒$() 提供防護。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carbon Monoxide poisoning",
+			"title": "一氧化碳中毒",
 			"item": "gtceu:carbon_monoxide_bucket",
 			"anchor": "Carbon_Monoxide_poisoning",
-			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+			"text": "$(thing)一氧化碳中毒$()是由吸入 $(thing)一氧化碳$() 氣體引起的疾病。長時間吸入會導致 $(item)噁心$() 並快速 $(item)致死$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以對 $(thing)一氧化碳$() 提供防護。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "致癌物",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
-			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
+			"anchor": "致癌物",
+			"text": "$(thing)致癌物$()是導致 $(item)癌症$() 的物質。包括 $(thing)鉻粉$()以及部分有機化合物，例如$(thing)苯及其產物$()。$(thing)致癌物$()$(item) 不會主動消失$()，但在實際造成危害前會出現大量警告。一開始會 $(item)虛弱$() ，接著是 $(item)飢餓$() ，再來是 $(item)緩慢$() ，最後后是$(item)挖掘疲勞$() 。當累積足夠的曝露量時，才會導致 $(item)死亡$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "致癌物",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
-			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
+			"anchor": "致癌物",
+			"text": "$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入有害物質，而$(l:tfg_ores/hazards#gloves)手套$()可以防止接觸$(thing)鉻粉$()。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。$(br2)在嚴重暴露的情况下，建議服用一些$(l:tfg_ores/hazards#medicine)藥物$()以 $(thing)預防$() 任何可能的危害。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Chemical burns",
+			"title": "化學灼傷",
 			"item": "gtceu:fluorine_bucket",
 			"anchor": "Chemical_burns",
-			"text": "$(thing)Chemical burns$() are caused by inhalation or skin contact with certain $(thing)Gases$(), $(thing)Acids$(), $(thing)Bases$() or $(thing)Dusts$(). Exposure causes $(item)Weakness$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from everything."
+			"text": "$(thing)化学灼傷$()是由吸入或接觸某些$(thing)氣體$()、$(thing)酸$()、$(thing)鹼$()或$(thing)粉塵$()所引起。接觸會導致 $(item)虛弱$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以防護一切。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "刺激",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
-			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
+			"anchor": "刺激",
+			"text": "$(thing)刺激物$()是由吸入$(thing)甲酸胺$()或接觸$(thing)鉻鐵礦粉$()所引起。短暫接觸導致 $(item)虛弱$()，但長時間忽略，則會引發 $(item)隨機造成危害$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，而$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以同时防護兩者。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Methanol poisoning",
+			"title": "甲醇中毒",
 			"item": "gtceu:methanol_bucket",
 			"anchor": "Methanol_poisoning",
-			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
+			"text": "$(thing)甲醇中毒$()是由吸入$(thing)甲醇$()所引起。它會造成嚴重 $(item)失明$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以防止吸入。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Nauseating chemicals",
+			"title": "引發噁心的化學品",
 			"item": "gtceu:butyraldehyde_bucket",
 			"anchor": "Nauseating_chemicals",
-			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+			"text": "$(thing)引發噁心的化學物$()，是由吸入 $(thing)丁醛$() 所引起，將會 $(item)反胃$()。$(br2)$(l:tfg_ores/hazards#mask)口罩$()和$(l:tfg_ores/hazards#hazmat)防護服$()可以防止吸入。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Poisonous materials",
+			"title": "有毒物質",
 			"item": "gtceu:lead_dust",
 			"anchor": "Poisons",
-			"text": "There are two types of $(thing)Poisonous materials$(). Weak include $(thing)Lead Dust$(), while the stronger poisons include $(thing)Nitrogen Dioxide$(). $(thing)Weak poisons$() cause a $(item)Progressively Worsening Poison$() effect, while $(thing)Regular poisons$() cause $(item)Weakness$() and a $(item)Stronger Poison$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from any contact."
+			"text": "$(thing)有毒物質$()有兩種。弱毒包括$(thing)鉛粉$()，而強毒包括$(thing)二氧化氮$()。$(thing)弱毒$()引起 $(item)逐漸惡化$()的中毒效果，而$(thing)強毒$()會引起$(item)虛弱$()和$(item)更強的中毒$()效果。$(br2)$(l:tfg_ores/hazards#mask)口罩$()可以防止吸入，$(l:tfg_ores/hazards#gloves)手套$()可以防止直接接觸。$(br2)$(l:tfg_ores/hazards#hazmat)防護服$()可以防止任何危害。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Radioactive materials",
+			"title": "放射性物質",
 			"item": "gtceu:uranium_ingot",
 			"anchor": "Radioactive_materials",
-			"text": "Most $(thing)Radioactive substances $()like $(thing)Uranium 238$() you will only meet at $(thing)EV tier$() or above. They will $(item)Permanently Irradiate$() you. Small exposure causes $(item)glowing$(), but prolonged contact triggers a quick $(item)Death$().$(br2)We know it looks tasty and has a billion calories, but $(#ff0000)PLEASE DO NOT EAT URANIUM!$()"
+			"text": "$(thing)放射性物質$()，如$(thing)鈾-238$()，只會在$(thing)EV級$()或更高等級遇到。它們會造成$(item)永久性$()輻射。少量接觸會導致 $(item)發光$()，長時間接觸會迅速$(item)致死$()。$(br2)我們知道它看起來相當美味且含有十億卡路里，但$(#ff0000)請不要食用鈾！$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Radioactive materials",
+			"title": "放射性物質",
 			"item": "gtceu:plutonium_ingot",
-			"text": "Only the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br2)In the case you do get irradiated, only the $(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ pill$() can cure you."
+			"text": "只有$(l:tfg_ores/hazards#hazmat)防護服$()以及部份高級盔甲能提供全面的輻射防護。$(br2)遭受輻射，只有$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()可以治療你。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Silicosis",
+			"title": "矽肺",
 			"item": "gtceu:silicon_dioxide_dust",
 			"anchor": "Silicosis",
-			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
+			"text": "$(thing)矽肺$()是由吸入$(thing)二氧化矽粉$()所引起。接觸會導致 $(item)生命值$() 和 $(thing)下潛時$() 的 $(item)空氣值$() $(item) 减少$()。$(br2) $(l:tfg_ores/hazards#mask)口罩$() 和 $(l:tfg_ores/hazards#hazmat)防護服$() 可以防止吸入二氧化矽。"
 		}
 	]
 }

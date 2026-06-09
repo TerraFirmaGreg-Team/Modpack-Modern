@@ -33,6 +33,7 @@ function registerTFGNewWoodBlocks(event) {
 				leaves.models((modelType, generator) => {
 					if (modelType.layers != 8) {
 						generator.parent(`tfc:block/groundcover/fallen_leaves_height${modelType.height}`)
+						generator.texture("particle", `tfg:block/wood/leaves/${wood.name}`);
 						generator.texture("all", `tfg:block/wood/leaves/${wood.name}`);
 					} else {
 						generator.parent(`tfg:block/wood/leaves/${wood.name}`);
@@ -50,6 +51,7 @@ function registerTFGNewWoodBlocks(event) {
 			.defaultCutout()
 			.noCollision()
 			.mapColor(`${wood.leafColor}`)
+			.hardness(0)
 	}
 
 	function TFGWoodSupportRegistry(event, wood, stripped_log) {

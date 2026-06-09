@@ -81,9 +81,9 @@ function registerTFGPrimitiveMaterials(event) {
 
 	event.create('anthracite')
 		.components('1x carbon')
-		.color(0x45483C)
+		.color(0x292626)
 		.secondaryColor(0x471A16)
-		.iconSet(GTMaterialIconSet.LIGNITE)
+		.iconSet('anthracite')
 		.ore()
 		.flags(
 			GTMaterialFlags.FLAMMABLE,

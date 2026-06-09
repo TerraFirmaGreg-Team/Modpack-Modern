@@ -36,26 +36,29 @@
 		"grass_color": 6466617
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfg:nether/terrain/oil_lake_selector",
 			"tfg:nether/terrain/small_oil_lake_selector"
 		],
-		"#tfg:nether_lakes_and_geodes",
 		[
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_pool"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/terrain/oil_tar_disk_selector",
 			"tfg:nether/terrain/oilsands_disk",
+			"tfg:nether/terrain/garnet_sands_disk",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -77,8 +80,7 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
+			"tfg:nether/entity/zombie_horse"
 		]
 	],
 	"has_precipitation": false,
@@ -101,17 +103,16 @@
 		"ambient": [
 			{
 				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 50
+				"weight": 100
 			}
-		
 		],
 		"axolotls": [
 			{
@@ -193,7 +194,7 @@
 			},
 			{
 				"type": "species:spectre",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},

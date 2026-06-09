@@ -301,23 +301,21 @@
 			subtitle: "{quests.tfg_tips.256m_portable_cells.subtitle}"
 			tasks: [
 				{
-					id: "7742886F257F6BC3"
+					id: "539B7A561E7CF91F"
 					item: {
 						Count: 1
-						id: "megacells:portable_item_cell_256m"
+						id: "megacells:portable_fluid_cell_64m"
 						tag: { }
 					}
-					match_nbt: false
 					type: "item"
 				}
 				{
-					id: "4D3CBCB9C6579DBB"
+					id: "347F7D5B06B00AAC"
 					item: {
 						Count: 1
-						id: "megacells:portable_fluid_cell_256m"
+						id: "megacells:portable_item_cell_64m"
 						tag: { }
 					}
-					match_nbt: false
 					type: "item"
 				}
 			]
@@ -608,7 +606,11 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: [
+				"02FDECC931B5E8EF"
+				"3C173357029AB649"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.crates.desc}"]
 			icon: "gtceu:bronze_crate"
 			id: "6702D52922D85C0D"
@@ -2960,7 +2962,11 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["205E3ACA10A16C23"]
+			dependencies: [
+				"205E3ACA10A16C23"
+				"560B17BFBE8D477D"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.tools_tips.swim_gear.desc}"]
 			id: "615361AD621B588E"
 			subtitle: "{quests.tfg_tips.tools_tips.swim_gear.subtitle}"
@@ -2986,7 +2992,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 64224000L
+						creationDate: 104224000L
 						traits: [ ]
 					}
 				}

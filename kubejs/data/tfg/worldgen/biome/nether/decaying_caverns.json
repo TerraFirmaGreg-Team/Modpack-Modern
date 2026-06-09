@@ -41,15 +41,15 @@
 			"tfg:nether/terrain/mud_delta"
 		],
 		[],
-		[
-
-		],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_disc"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/big_mushrooms",
@@ -78,8 +78,7 @@
 			"tfg:nether/entity/crocodile",
 			"tfg:nether/entity/temperate_frog",
 			"tfg:nether/entity/isopod",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
+			"tfg:nether/entity/zombie_horse"
 		]
 	],
 	"has_precipitation": false,
@@ -110,17 +109,16 @@
 		"ambient": [
 			{
 				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 70
+				"weight": 100
 			}
-		
 		],
 		"axolotls": [
 			{
@@ -222,7 +220,7 @@
 				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 70
 			},
 			{
 				"type": "species:wicked",

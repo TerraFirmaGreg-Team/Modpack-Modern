@@ -1,32 +1,74 @@
 # Changelog
 
 ## Unreleased
-### Major changes
-We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
-#### Beneath
+### Changes
+- Reduced the speed of vibration tables @Pyritie
+### Bug fixes
+- Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
+
+## [0.12.10] - 09-06-2026
+### Changes
+- Reduced HP of cliff hanger and leaf hangers @Pyritie
+- Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
+- Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
+- Increased the amount of clay in the decaying caverns and muggy bog biomes @Pyritie
+- Create Connected's Kinectic Bridge no longer allows you to bypass Greate's tier limits @ashleney
+- Reduced temperature of Inert Furnace Gas, so now you can use stainless steel pipes and drums to move it @TomPlop
+- Changed recipe of the kinetic bridge @Pyritie
+### Bug fixes
+- Fixed missing recipes for sodium dichromate @TomPlop
+- Fixed incorrect loot tables for different gravels @Pyritie
+- Fixed TFC metal items melting into the wrong liquid metal @Pyritie
+- Fixed not being able to craft logs into wood @Pyritie
+- Fixed new twigs not able to be directly converted into sticks @Pyritie
+- Fixed new saplings not being instantly mined @Pyritie
+- Fixed missing sandstone crafting recipes @Pyritie
+- Fixed small ores querning into powders and not small dusts (#4215) @Pyritie
+- Fixed lava slimes not being fireproof @Pyritie
+- Fixed basins not being craftable in the bronze age @Pyritie
+- Fixed an assembler recipe conflict between basins and heavy weighted pressure plates (#4214) @Pyritie
+- Fixed missing stripped log tag from new woods @Pyritie
+### Mods
+- Add Create Stock Bridge, which lets your create logistics network talk to your AE2 network (it caused a crash with the previous fluid logistics mod)
+
+## [0.12.9] - 07-06-2026
+### Breaking changes
+- We've changed the way that items and recipes are hidden and removed. This has dramatically improved startup and world load times, but may have had a few side effects with items or recipes not existing any more. Please let us know if you find anything that no longer exists but should! (#4056) @Pyritie
+- Wireless Extended Pattern Access Terminal now uses an IV Battery instead of an HV one @TomPlop
+- The Sodium Aluminium dust part of the BTX Recyling loop is now an EV recipe, with duration reduced accordingly @TomPlop
+#### Food
+- TFC Gourmet has been removed. @Redeix
+- Freeze dried fruit have all been condensed into 1 item. @Redeix
+- Cyrodessicated food now needs MV. @Redeix
+#### Chromium & Naquadah
+The processing for Chromium has been changed. Due to the addition of slurries, ruby became better than chromite ore to obtain chromium, which has been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore, but have to do a processing line to obtain chromium from ruby. Aluminium has also been removed from ruby. In exchange, you can now obtain chromium through Garnet Sand, Uvarovite, Ruby, and Chromite.
+There are different processes to obtain the final Chromium, and you will have to decide which one you prefer. It's also a new way to obtain Alumina.
+Naquadah has been removed from the Beneath. It has temporarily been moved to the Ostrum Linear Accelerator until it eventually finds a home on a future planet.
+### Beneath
 The Beneath has been totally remade! It's now significantly taller (208 blocks tall instead of 128), has almost twice as many biomes, its own new set of crops, fruit trees, and wood sets, new structures, and new challenges. It's been split into three layers instead of just two, with the different layers providing challenges for different stages of the game, from wrought iron age to LV/MV. Also, it's *actually* hot now - make sure you're prepared!
 
 Because of the height change, you'll need to delete your generated chunks so you aren't sent above the bedrock roof. To do this, first make a backup of your save, Next, make sure you've left the Beneath and taken anything with you that you want to keep, then save and quit your game. After, simply go to your minecraft instance folder, then inside `saves`, then inside the folder named after your save. Delete the folder called `DIM-1`. Then launch your game as normal. The process is the same for servers.
-##### Other changes
 - Starting in the Beneath is now an option when creating a new world. For an extra challenge, it should be possible to get to HV without leaving! We'll work on improving this experience and providing some unique Beneath-only ways of getting resources in future updates.
 - Beneath ores and fluid veins have been reworked @TomPlop
-- Changed piglin bartering table so there's less junk
-- The blue steel diving set no longer makes you completely immune to hot temperatures, but it does still provide a lot of cooling and make you immune to fire damage
-- All aqueducts can now hold lava and different kinds of water
-- The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once
-- Fixed the TFG shaders making the entire Beneath red tinted
-- Added a new quest chapter for the Beneath
-#### Food rework
-- TODO
-#### Fluid Logistics
+- Changed piglin bartering table so there's less junk @Pyritie
+- The blue steel diving set no longer makes you completely immune to hot temperatures, but it does still provide a lot of cooling and make you immune to fire damage @Pyritie
+- All aqueducts can now hold lava and different kinds of water @Pyritie
+- The Hellforge now works with any kind of aqueduct, only needs charcoal piles to build instead of Anthracite, and can heat 9 crucibles at once @Pyritie
+- Added new tameable/ranchable slimes, for an alternative way to obtain certain resources @SakuraKitsurugi
+- Added a new quest chapter for the Beneath @Pyritie
+### Food rework
+A substantial rework of food and nutrition has been started. You will begin to notice a lot of new nutrition types have been added. There are now two new categories of nutrients: "Contaminants" and "Transient Effects". Contaminants build up when eating certain foods and can be cured by consuming new capsule medication. Transient effects apply 1 time buffs/debuffs when consuming food. Both of these new nutrient types can merged into dynamic meal items.
+
+In addition to that, now each nutrient type has a special buff on the player when a certain threshold is crossed, such as >85% fruit nutrition granting a passive 30% mining speed buff. You can learn more about all of the nutrition changes by checking out the improved nutrition screen or by reading the [Food and Water](https://terrafirmagreg-team.github.io/Field-Guide-Modern/en_us/getting_started/food_and_water.html) section of the field guide.
+
+On top of the nutrition rework, we are also making a large balance pass on our food items. It is not possible to list every change here. But the major change is that the TFC Gourmet mod is being removed and replaced with our own built-in food items. This is due to buggy interactions and lack of support from the developer. Most new food items will come in a future update. This update will only include Fruit Juice, Smoothies, and Yogurts.
+### Fluid Logistics
 - Replaced Create: Factory Logistics with Create Fluid Logistics, a different fluid addon for Create's logistics system that's less buggy (#3906) @Bumperdo09
 - Jar packagers in your world should be automatically replaced with the new Fluid packagers, and Fluid Gauges should be automatically replaced with normal factory gauges, which can now handle fluids themselves). **If you use a lot of these, please triple check you've made a backup before updating!**
 - Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
-- Added an assembler recipe for the normal packager 
-### Breaking changes
-- Wireless Extended Pattern Access Terminal now uses a IV Battery rather that a HV one @TomPlop
-### Changes
+- Added an assembler recipe for the normal packager
+### Other Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
 - Added bluemap compatibility for asphalt roads, and fixed the patchouli pages for concrete roads (#4054) @jmecn
@@ -34,14 +76,27 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Mechanical arms can now interact with Vats @ashleney
 - Added linen clothes, with the same stats as burlap @Pyritie
 - Rebalanced most of the TFC Textile clothing, so the stronger effecting ones aren't so quick to get (#4143) @Pyritie
+- Added recipes to craft Bows and Arrows pre-copper @Pyritie
 - Reduced the assembler recipe duration for rails @Pyritie
+- Groundcover like loose rocks, snow, etc is now destroyed when placing rails (#4182) @ashleney
 - Increased spawn rates of illages a little, to account for the fewer amount of biomes they can spawn in with the new worldgen @Pyritie
 - Disabled instant snow melting on servers by default, to try and track down a bug related to chunk resetting @ashleney
 - Rewrote the ComputerCraft quest chapter (#3893) @HowzitToyah @ashleney
 - Added recipes for turning various wood items directly into their treated wood versions (#4134) @SakuraKitsurugi
 - Added in-world interactions between lava and spring water, salt water, muddy water, and semiheavy ammoniacal water @Pyritie
 - Tongs can now also be repaired with repair kits if one for their material exists @Pyritie
+- Tamed foxes can now be picked up @SakuraKitsurugi
+- Increased the width of the Keratophyre carvers at the bottom of the overworld
+- Updated inventory tab icons. @Redeix
+- Updated field guide icon and book GUI. @Redeix
+- Adds 2 new debug commands: @Redeix
+    - `/TFCDataDump`: Dumps players climate and nutrition info into chat.
+    - `/ModifyNutrients`: Command for manually changing your nutrition data.
+- Adds 7 new mob effects: Freezing, Blazing, Quenched, Final Moments, Cure Parasites, Cure Toxins, Cure Microplastics @Redeix
+- Offline players are now grayed out on the nutrition screen. @Redeix
+- Hang gliders can now be repaired @Pyritie
 ### Bug fixes
+- Fixed cinder cones (the small volcanoes) missing basalt (#4140) @Mqrius
 - Fixed missing stonecutter recipes for create copper and brass bars (#4106) @Pyritie
 - Fixed encased fan ore washing not working with a full stack of inputs again @Pyritie
 - Fixed not being able to use some fences and fence gates with the pastoral rancher (#4077) @Pyritie
@@ -60,8 +115,21 @@ Because of the height change, you'll need to delete your generated chunks so you
 - Fixed GT solar panels and solar boilers not generating power while the player is in the overworld (#2665) @ashleney
 - Fixed a crash when putting a fluid drilling rig in Spatial Storage (#3855) @ashleney
 - Fixed hydroponics facility, growth chamber, and pisciculture fishery not working correctly with parallel hatches (#3563) @ashleney
+- Fixed lunch boxes voiding inventory when upgrading them (#4196) @SakuraKitsurugi
+- Fixed warped large nest box duping when broken (#4195) @SakuraKitsurugi
+- Fixed many recipes not showing up in the field guide (#4190) @jmecn
+- Fixed item size of paving cart (#4189) @jmecn
+- Fixed rotten voiding cover forgetting its settings after world reload (#4181) @ashleney
 ### Mod updates
 - Added optional compatibility for [Immersive Vehicles](https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator) with the [MTS Official Content Pack](https://www.curseforge.com/minecraft/mc-mods/transport-simulator-official-vehicle-set) and [MTS Official Automobile Pack](https://www.curseforge.com/minecraft/mc-mods/mts-iv-official-automobile-pack) (#4031) @ImmortalEthereal
+- Added Brass Chute and Dashboard (Create Connected)
+### Shaders
+- Tweaked some profile settings @Zaraney
+- Fixed the Beneath being entirely red-tinted -- if yours is still all red, go to the shader settings > Atmosphere > The Nether Dimension > Color Mode, and change it to "Biome Based", _not_ "Biome Based (Modified)". @Zaraney
+- Added some new plants to the PBR resource pack @Zaraney
+- Fixed stars in dimensions without atmospheres (again) @Zaraney
+- More block properties added @Zaraney
+- Minor text corrections
 
 ## [0.12.8] - 17-05-2026
 ### Breaking changes

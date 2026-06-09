@@ -45,14 +45,17 @@
 			"tfg:nether/spikes/calcite",
 			"tfg:nether/spikes/mega_calcite"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
+			"tfg:nether/terrain/garnet_sands_disk",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -78,8 +81,7 @@
 			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/jellyfish",
 			"tfg:nether/entity/horseshoe_crab",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
+			"tfg:nether/entity/zombie_horse"
 		]
 	],
 	"has_precipitation": false,
@@ -110,17 +112,16 @@
 		"ambient": [
 			{
 				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 70
+				"weight": 100
 			}
-		
 		],
 		"axolotls": [
 			{
@@ -207,12 +208,6 @@
 				"weight": 5
 			},
 			{
-				"type": "endermanoverhaul:dark_oak_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 5
-			},
-			{
 				"type": "endermanoverhaul:mushroom_fields_enderman",
 				"maxCount": 1,
 				"minCount": 1,
@@ -228,7 +223,7 @@
 				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 70
 			},
 			{
 				"type": "species:wicked",

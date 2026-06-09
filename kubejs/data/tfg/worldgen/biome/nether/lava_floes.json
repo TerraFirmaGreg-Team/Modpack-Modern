@@ -9,7 +9,7 @@
 			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.lower_nether.loop",
-		"fog_color": 5450003,
+		"fog_color": 5718583,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -30,7 +30,7 @@
 			},
 			"probability": 0.15
 		},
-		"sky_color": 5450003,
+		"sky_color": 5718583,
 		"water_color": 4159204,
 		"water_fog_color": 329011
 	},
@@ -40,14 +40,16 @@
 		[
 			"tfg:nether/terrain/rarer_delta"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
 			"minecraft:spring_delta",
 			"minecraft:spring_closed_double"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"beneath:blackstone_pebble_patch",
@@ -65,9 +67,7 @@
 			"tfg:nether/surface/guano_patch"
 		],
 		"#tfg:nether_global_decoration",
-		[
-			"tfc:erosion"
-		]
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -82,7 +82,7 @@
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 70
+				"weight": 100
 			}
 		],
 		"axolotls": [],

@@ -220,6 +220,8 @@ function registerTFGBeneathBlockTags(event) {
 
 	event.remove("tfc:can_trigger_collapse", "minecraft:basalt");
 	event.remove("tfc:can_start_collapse", "minecraft:basalt");
+	event.remove("tfc:can_trigger_collapse", "minecraft:glowstone");
+	event.remove("tfc:can_start_collapse", "minecraft:glowstone");
 }
 
 function registerTFGBeneathBiomeTags(event) {
@@ -243,6 +245,7 @@ function registerTFGBeneathBiomeTags(event) {
 
 	event.add('minecraft:has_structure/nether_fossil', '#tfg:nether_biomes')
 	event.add('minecraft:has_structure/bastion_remnant', '#tfg:nether_biomes')
+	event.add('tfg:has_structure/tower', '#tfg:nether_biomes')
 
 }
 
@@ -252,9 +255,9 @@ function registerTFGBeneathPlacedFeatures(event) {
 	event.add('tfg:nether_lakes_and_geodes', "tfg:nether/terrain/spring_water_lake");
 	event.add('tfg:nether_lakes_and_geodes', "minecraft:basalt_pillar");
 	event.add('tfg:nether_lakes_and_geodes', "tfg:earth/geode/amethyst");
-	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/cave_column')
 	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/large_cave_spike')
+	event.add('tfg:nether_lakes_and_geodes', 'tfg:nether/terrain/huge_column');
 	event.add('tfg:nether_lakes_and_geodes', 'beneath:vein/crackrack_pipe')
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')

@@ -1345,6 +1345,20 @@
 			x: -2.5d
 			y: -0.5d
 		}
+		{
+			dependencies: ["05A072877CA01773"]
+			description: ["{quests.ore_proc.chromium.desc}"]
+			id: "3AF4B19564593C89"
+			subtitle: "{quests.ore_proc.chromium.subtitle}"
+			tasks: [{
+				id: "240240E069A0954E"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			title: "{quests.ore_proc.chromium.title}"
+			x: -3.0d
+			y: -4.5d
+		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]
 	title: "{quests.ore_proc}"

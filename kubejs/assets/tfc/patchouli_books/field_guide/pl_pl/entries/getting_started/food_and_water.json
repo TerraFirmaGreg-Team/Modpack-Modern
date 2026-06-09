@@ -1,5 +1,5 @@
 {
-    "name": "Food and Water",
+    "name": "Jedzenie i woda",
     "category": "tfc:getting_started",
     "icon": "tfc:textures/item/food/orange.png",
     "pages": [
@@ -15,7 +15,7 @@
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "Podstawy",
             "anchor": "basics",
             "text": "In TerraFirmaCraft, not only must you manage your hunger, but you must manage your thirst. Hunger works similar to vanilla. Most pieces of food restore about a fifth of your hunger bar. Some pieces of food may restore a bit less, such as $(thing)Cattail Roots$(). Eating food also restores $(thing)Saturation$(), which can be thought of as how full you are. Depleting food or water results in sluggish movement and taking damage. Dying does not reset your nutrients or contaminants."
         },
@@ -156,7 +156,7 @@
             "type": "patchouli:text",
             "anchor": "transient_effects",
             "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
-            "title": "Transient Effects"
+            "title": "Efekty tymczasowe"
         },
         {
             "type": "patchouli:text",

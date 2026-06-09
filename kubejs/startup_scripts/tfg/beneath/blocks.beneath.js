@@ -68,7 +68,7 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.soundType('crop')
 		.tagBoth('tfg:plants/beneath')
 		.tagBlock('minecraft:replaceable')
-		.lightLevel(0.85)
+		.lightLevel(0.65)
 
 	event.create('betterend:murkweed', 'tfg:decorative_plant')
 		.soundType('crop')
@@ -101,4 +101,13 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.speedFactor(0.7)
 		.tagBoth('tfg:plants/beneath')
 		.tagBlock('minecraft:replaceable')
+
+	event.create('tfg:groundcover/ginkgo_twig', 'tfc:ground_cover')
+		.box(3, 0, 3, 13, 3, 13)
+		.groundCoverModelShape('twig')
+		.withPreexistingItem('tfg:twigs/ginkgo')
+		.tagBlock('tfc:can_be_snow_piled')
+		.texture('particle', 'wan_ancient_beasts:block/ginkgo_log')
+		.texture('all', 'wan_ancient_beasts:block/ginkgo_log')
+		.texture('top', 'wan_ancient_beasts:block/ginkgo_log_top')
 }

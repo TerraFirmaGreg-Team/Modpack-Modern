@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Місткості для напоїв",
+            "title": "Індекс",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Основи$()  \n$(li)$(bold)$(l:getting_started/food_and_water#thirst)Спрага$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)Екран харчування$()  \n$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Поживні речовини$()  \n$(li2)$(l:getting_started/food_and_water#fruit)Фрукти$()  \n$(li2)$(l:getting_started/food_and_water#vegetables)Овочі$()  \n$(li2)$(l:getting_started/food_and_water#protein)Білки$()  \n$(li2)$(l:getting_started/food_and_water#grain)Зернові$()  \n$(li2)$(l:getting_started/food_and_water#dairy)Молочні продукти$()  \n$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Шкідливі речовини$()  \n$(li2)$(l:getting_started/food_and_water#toxins)Токсини$()  \n$(li2)$(l:getting_started/food_and_water#parasites)Паразити$()  \n$(li2)$(l:getting_started/food_and_water#microplastics)Мікропластик$()"
         },
@@ -67,7 +67,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "Ти також можеш пити з інших місткостей, як-от $(l:waterflasks)фляги$() або $(l:mechanics/glassworking)скляних пляшок$()."
+            "text": "Ти також можеш пити з інших контейнерів, таких як $(l:waterflasks)фляги$() або $(l:mechanics/glassworking)скляні пляшки$(). Докладніше про контейнери для напоїв та їхні ефекти читай $(l:mechanics/drinks#containers)Тут$()."
         },
         {
             "type": "patchouli:text",

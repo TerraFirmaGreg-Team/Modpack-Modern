@@ -23,7 +23,7 @@
         }
       },
       "name": "野生小麥",
-      "text": "野生作物範例$(l:mechanics/crops#wheat)小麥$().",
+      "text": "野生作物範例$(l:mechanics/crops#wheat)小麥$()。",
       "enable_visualize": false
     },
     {
@@ -637,7 +637,7 @@
           "text": "175 - 475"
         },
         {
-          "text": "Cucumber"
+          "text": "黄瓜"
         },
         {
           "text": " 15 - 40"
@@ -646,7 +646,7 @@
           "text": "350 - 500"
         },
         {
-          "text": "Radish"
+          "text": "菜頭"
         },
         {
           "text": " -16 - 4"
@@ -655,7 +655,7 @@
           "text": "75 - 325"
         },
         {
-          "text": "Lentil"
+          "text": "扁豆"
         },
         {
           "text": " -18 - 2"

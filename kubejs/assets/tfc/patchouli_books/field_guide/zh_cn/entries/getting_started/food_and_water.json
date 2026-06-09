@@ -67,7 +67,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "你也可以使用其他容器喝水，例如$(l:waterflasks)水壶$()或$(l:mechanics/glassworking)玻璃瓶$()。"
+            "text": "你也可以使用其他容器喝水，例如$(l:waterflasks)水壶$()或$(l:mechanics/glassworking)玻璃瓶$()。更多关于饮水容器及饮品效果的信息，请$(l:mechanics/drinks#containers)点击此处$()"
         },
         {
             "type": "patchouli:text",

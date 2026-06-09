@@ -542,6 +542,21 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:burlap_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:leather",
 					"functions": [
 						{
