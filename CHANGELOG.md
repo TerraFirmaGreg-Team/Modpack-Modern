@@ -2,7 +2,9 @@
 
 ## Unreleased
 ### Changes
+- Reduced the speed of vibration tables @Pyritie
 ### Bug fixes
+- Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 
 ## [0.12.10] - 09-06-2026
 ### Changes
