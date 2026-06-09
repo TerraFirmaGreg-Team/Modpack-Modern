@@ -2,6 +2,10 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.12.10] - 09-06-2026
+### Changes
 - Reduced HP of cliff hanger and leaf hangers @Pyritie
 - Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
 - Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie

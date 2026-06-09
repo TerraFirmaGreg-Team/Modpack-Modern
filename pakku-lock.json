@@ -15920,7 +15920,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.10.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15928,22 +15928,22 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/UYSytqv6/TerraFirmaGreg-Core-Modern-0.9.10.jar",
-                    "id": "UYSytqv6",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/ZK9qWe2n/TerraFirmaGreg-Core-Modern-0.9.11.jar",
+                    "id": "ZK9qWe2n",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "d8a4d9244a615f0deb083dd768c20e032fc2230bcb74b305cc3da72804bfc35bb882b9b04c87dd8a174c84ca7d05d97b0fd6dde682f56a90177e77196a7f5d96",
-                        "sha1": "fa7f122de0107e5eb74993081b14f9cf7b01b284"
+                        "sha512": "1a19f4bd4a87bd74d14d5afd7bef5f2876c7f62060839eed8c2376ee96b4c783269a63f2bd12627c736ea23110b4e9ed063591aa17fcb8aea0dc67f254cdb935",
+                        "sha1": "a915f52e80d4907c07965fdc9dbfcb41ad605eae"
                     },
                     "required_dependencies": [
                         "1o7aFiY6"
                     ],
-                    "size": 13445732,
-                    "date_published": "2026-06-07T18:19:32.998252Z"
+                    "size": 13447607,
+                    "date_published": "2026-06-09T12:25:17.650176Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.10.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.9.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -15951,16 +15951,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8212/512/TerraFirmaGreg-Core-Modern-0.9.10.jar",
-                    "id": "8212512",
+                    "url": "https://edge.forgecdn.net/files/8221/321/TerraFirmaGreg-Core-Modern-0.9.11.jar",
+                    "id": "8221321",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "fa7f122de0107e5eb74993081b14f9cf7b01b284",
-                        "md5": "e3616cd1e3be9408d6f38ec29a84f798"
+                        "sha1": "a915f52e80d4907c07965fdc9dbfcb41ad605eae",
+                        "md5": "17e331b5be2e1956a1ad69aad8998a10"
                     },
-                    "required_dependencies": [],
-                    "size": 13445732,
-                    "date_published": "2026-06-07T18:19:28.173Z"
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 13447607,
+                    "date_published": "2026-06-09T12:25:14.657Z"
                 }
             ]
         },
