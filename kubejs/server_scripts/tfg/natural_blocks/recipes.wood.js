@@ -665,8 +665,36 @@ function registerTFGWoodenRecipes(event) {
 			.id(`tfg:shapeless/${wood}_lumber_from_mosaic_slab`);
 
 		generateCutterRecipe(event, `${mosaic_slab}`, `2x ${lumber}`, 50, 7, `${wood}_lumber_from_mosaic_slab`);
-
 	};
+
+	// #endregion
+
+	// #region TFG Logs to Wood
+
+	/**
+	 * @param {*} event
+	 * @param {string} name - Name of the wood
+	 * @param {string} log
+	 * @param {string} stripped_log
+	 * @param {string} wood
+	 * @param {string} stripped_wood
+	 */
+	function TFGLogToWoodBuilder(event, name, log, stripped_log, wood, stripped_wood) {
+
+		event.shaped(Item.of(wood).withCount(3), [
+			'AA',
+			'AA'
+		], {
+			A: log
+		}).id(`tfg:shaped/${name}_log_to_wood`);
+
+		event.shaped(Item.of(stripped_wood).withCount(3), [
+			'AA',
+			'AA'
+		], {
+			A: stripped_log
+		}).id(`tfg:shaped/${name}_stripped_log_to_wood`);
+	}
 
 	// #endregion
 
@@ -773,6 +801,10 @@ function registerTFGWoodenRecipes(event) {
 			`tfg:wood/workbench/${wood.name}`,
 			`tfg:wood/rope_ladder/${wood.name}`
 		)
+
+		TFGLogToWoodBuilder(event, wood.name, 
+			`tfg:wood/log/${wood.name}`, `tfg:wood/stripped_log/${wood.name}`,
+			`tfg:wood/wood/${wood.name}`, `tfg:wood/stripped_wood/${wood.name}`)
 	})
 
 	// #endregion
@@ -825,6 +857,10 @@ function registerTFGWoodenRecipes(event) {
 			`tfg:wood/workbench/${wood.name}`,
 			`tfg:wood/rope_ladder/${wood.name}`
 		)
+
+		TFGLogToWoodBuilder(event, wood.name, 
+			`wan_ancient_beasts:${wood.name}_log`, `wan_ancient_beasts:stripped_${wood.name}_log`,
+			`wan_ancient_beasts:${wood.name}_wood`, `wan_ancient_beasts:stripped_${wood.name}_wood`)
 	})
 
 	// #endregion

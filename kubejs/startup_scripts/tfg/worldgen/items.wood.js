@@ -33,7 +33,7 @@ function registerTFGWoodItems(event) {
 	event.create('tfg:twigs/alphacene')
 		.tag('tfc:twigs')
 		.texture('tfg:item/wood/twig/alphacene')
-	event.create('tfg:wood/twig/ginkgo')
+	event.create('tfg:twigs/ginkgo')
 		.tag('tfc:twigs')
 		.texture('tfg:item/wood/twig/ginkgo')
 

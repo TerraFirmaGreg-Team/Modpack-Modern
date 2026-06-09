@@ -1,13 +1,6 @@
 [
 	{
 		"action": "remove_recipe",
-		"pattern": [
-			"/tfc:heating/metal/*/",
-			"/tfc:heating/ore/*/"
-		]
-	},
-	{
-		"action": "remove_recipe",
 		"id": [
 			"tfc:quern/charcoal",
 			"tfc:quern/graphite",

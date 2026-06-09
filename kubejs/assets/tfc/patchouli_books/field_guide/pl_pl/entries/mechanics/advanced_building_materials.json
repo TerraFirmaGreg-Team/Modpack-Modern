@@ -39,7 +39,7 @@
             "type": "patchouli:text",
             "anchor": "bricks_and_mortar",
             "text": "$(thing)Stone Bricks$() can be made using a $(l:mechanics/chisel)Chisel$() with some individual loose rocks. It then requires $(thing)Mortar$() in order to form a strong building block.$(br2)Mortar can be made by adding $(thing)Sand$() to a barrel of $(l:mechanics/barrels#limewater)Limewater$().",
-            "title": "Bricks and Mortar"
+            "title": "Cegły i zaprawa"
         },
         {
             "type": "patchouli:crafting",
