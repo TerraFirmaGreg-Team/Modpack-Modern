@@ -5,6 +5,7 @@
 - Reduced HP of cliff hanger and leaf hangers @Pyritie
 - Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
 - Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
+- Increased the amount of clay in the decaying caverns and muggy bog biomes @Pyritie
 ### Bug fixes
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie
