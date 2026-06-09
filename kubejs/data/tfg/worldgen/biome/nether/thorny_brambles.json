@@ -47,6 +47,10 @@
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_pool"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/glow_mushroom",
@@ -85,11 +89,8 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/zombie_horse",
-			"tfg:nether/terrain/thorn_vegetation_patch",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/terrain/thorn_vegetation_patch"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

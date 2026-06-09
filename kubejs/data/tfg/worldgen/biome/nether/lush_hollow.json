@@ -44,6 +44,10 @@
 		[
 			"tfg:nether/terrain/lush_caves_clay"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/tree/ginkgo",
@@ -69,11 +73,8 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/cold_frog",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/entity/zombie_horse"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

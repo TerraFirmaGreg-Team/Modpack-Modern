@@ -40,6 +40,10 @@
 		[
 			"tfg:nether/terrain/spring_lava"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"beneath:blackstone_pebble_patch",
@@ -54,11 +58,7 @@
 			"tfg:nether/surface/stick_patch"
 		],
 		"#tfg:nether_global_decoration",
-		[
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+		[]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
