@@ -455,5 +455,28 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
 
+  // Allow alternate rubbers for hazmat pieces
+
+  const ALTERNATE_RUBBERS = [
+		'silicone_rubber',
+		'styrene_butadiene_rubber',
+	]
+  ALTERNATE_RUBBERS.forEach(material => {	
+    event.recipes.gtceu.assembler(`gtceu:hazmat_chestpiece_${material}`)
+      .itemInputs(`2x #forge:plates/${material}`, '7x gtceu:polyvinyl_chloride_plate', '3x #forge:plates/lead')
+      .itemOutputs('gtceu:hazmat_chestpiece')
+      .duration(10*20)
+      .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.assembler(`gtceu:hazmat_leggings_${material}`)
+      .itemInputs(`2x #forge:plates/${material}`, '5x gtceu:polyvinyl_chloride_plate', '2x #forge:rods/iron', '4x #forge:rings/steel')
+      .itemOutputs('gtceu:hazmat_leggings')
+      .duration(10*20)
+      .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.assembler(`gtceu:hazmat_boots_${material}`)
+      .itemInputs(`4x #forge:plates/${material}`, '2x #forge:foils/polyethylene', '2x gtceu:polyvinyl_chloride_plate')
+      .itemOutputs('gtceu:hazmat_boots')
+      .duration(10*20)
+      .EUt(GTValues.VA[GTValues.LV])
+	})
 
 }
