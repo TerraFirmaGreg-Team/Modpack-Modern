@@ -1745,7 +1745,6 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
-		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:create/item_hatch_deco')
 		.itemInputs('3x #forge:plates/wrought_iron', '#createdeco:metal_trapdoors')
@@ -1753,6 +1752,8 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('create:item_hatch', [GTMaterials.WroughtIron, 3])
 
 	event.shaped('create:package_frogport', [
 		' A ',
