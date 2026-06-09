@@ -6,6 +6,7 @@
 - Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
 - Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
 - Increased the amount of clay in the decaying caverns and muggy bog biomes @Pyritie
+- Create Connected's Kinectic Bridge no longer allows you to bypass Greate's tier limits @ashleney
 ### Bug fixes
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie

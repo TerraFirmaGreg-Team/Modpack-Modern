@@ -22,7 +22,7 @@
                     "X": "tfc:powderkeg[sealed=true]"
                 }
             },
-            "name": "The Powderkeg",
+            "name": "Beczka prochu strzelniczego",
             "text": "Similar to the $(l:mechanics/barrels)Barrel$(), the powderkeg is a device which can be sealed and unsealed with $(item)$(k:key.use)$(). Only sealed powderkegs may be ignited.",
             "enable_visualize": false
         },
