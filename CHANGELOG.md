@@ -7,7 +7,8 @@
 - Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
 - Increased the amount of clay in the decaying caverns and muggy bog biomes @Pyritie
 - Create Connected's Kinectic Bridge no longer allows you to bypass Greate's tier limits @ashleney
-- Inert Furnace Gas temperature. Now allows it to be move through stainless steel @TomPlop
+- Reduced temperature of Inert Furnace Gas, so now you can use stainless steel pipes and drums to move it @TomPlop
+- Changed recipe of the kinetic bridge @Pyritie
 ### Bug fixes
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie

@@ -67,16 +67,25 @@ const registerCreateConnectedRecipes = (event) => {
 	event.replaceInput({ id: 'create_connected:crafting/kinetics/redstone_link_wildcard' }, 'create:transmitter', 'minecraft:redstone_torch')
 
 	event.shaped('create_connected:kinetic_bridge', [
-		'BCB',
+		'BCF',
 		'AEA',
 		'DCD'
 	], {
 		A: 'create:brass_casing',
-		B: '#forge:plates/magnetic_iron',
+		B: '#forge:tools/hammers',
 		C: '#forge:rods/magnetic_iron',
 		D: '#forge:small_gears/red_alloy',
-		E: '#forge:shafts'
+		E: '#forge:shafts',
+		F: '#forge:tools/wrenches'
 	}).id('create_connected:crafting/kinetics/kinetic_bridge')
+
+	event.recipes.gtceu.assembler('tfg:create_connected/kinetic_bridge')
+		.itemInputs('2x create:brass_casing', '2x #forge:rods/magnetic_iron', '2x #forge:small_gears/red_alloy', '#forge:shafts')
+		.itemOutputs('create_connected:kinetic_bridge')
+		.duration(200)
+		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('create_connected:kinetic_bridge', [GTMaterials.Brass, 2, GTMaterials.Wood, 2, GTMaterials.RedAlloy, 2, GTMaterials.IronMagnetic, 1])
 
 	// Brass chute
 
