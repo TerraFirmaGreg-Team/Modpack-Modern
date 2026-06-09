@@ -77,8 +77,12 @@
         },
         {
             "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
             "images": [
-                "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
+                "tfg:textures/gui/field_guide/screens/nutrition_screen.png"
             ],
             "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
             "border": false

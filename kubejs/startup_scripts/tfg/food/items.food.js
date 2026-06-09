@@ -59,20 +59,23 @@ function registerTFGFoodItems(event) {
 	 */
 	global.FOOD_FRUIT.forEach(fruit => {
 
+		const GEN_JAM_MODELS = false;
 		// Jams
 		if (fruit.genJam && fruit.color) {
 
-			let sealedModelFilePath = `kubejs/assets/tfg/models/block/food/jam/${fruit.name}.json`;
-			let sealedModelData = { parent: 'tfc:block/jar', textures: { '1': `tfg:block/food/jam/${fruit.name}` } };
-			let sealedExisting = JsonIO.read(sealedModelFilePath);
-			if (JSON.stringify(sealedExisting) !== JSON.stringify(sealedModelData)) {
-				JsonIO.write(sealedModelFilePath, sealedModelData);
-			};
-			let unsealedModelFilePath = `kubejs/assets/tfg/models/block/food/jam/${fruit.name}_unsealed.json`;
-			let unsealedModelData = { parent: 'tfc:block/jar', textures: { '1': `tfg:block/food/jam/${fruit.name}`, '2': 'tfc:block/jar_no_lid' } };
-			let unsealedExisting = JsonIO.read(unsealedModelFilePath);
-			if (JSON.stringify(unsealedExisting) !== JSON.stringify(unsealedModelData)) {
-				JsonIO.write(unsealedModelFilePath, unsealedModelData);
+			if (GEN_JAM_MODELS) {
+				let sealedModelFilePath = `kubejs/assets/tfg/models/block/food/jam/${fruit.name}.json`;
+				let sealedModelData = { parent: 'tfc:block/jar', textures: { '1': `tfg:block/food/jam/${fruit.name}` } };
+				let sealedExisting = JsonIO.read(sealedModelFilePath);
+				if (JSON.stringify(sealedExisting) !== JSON.stringify(sealedModelData)) {
+					JsonIO.write(sealedModelFilePath, sealedModelData);
+				};
+				let unsealedModelFilePath = `kubejs/assets/tfg/models/block/food/jam/${fruit.name}_unsealed.json`;
+				let unsealedModelData = { parent: 'tfc:block/jar', textures: { '1': `tfg:block/food/jam/${fruit.name}`, '2': 'tfc:block/jar_no_lid' } };
+				let unsealedExisting = JsonIO.read(unsealedModelFilePath);
+				if (JSON.stringify(unsealedExisting) !== JSON.stringify(unsealedModelData)) {
+					JsonIO.write(unsealedModelFilePath, unsealedModelData);
+				};
 			};
 
 			event.create(`tfg:jar/${fruit.name}`, 'tfc:jar')

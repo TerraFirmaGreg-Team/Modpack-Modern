@@ -1,0 +1,113 @@
+{
+    "name": "Earth Climatology",
+    "category": "tfc:the_world",
+    "icon": "tfg:textures/gui/field_guide/icons/climatology.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(), the climate and the time are both very important factors in the way you experience the world. $(l:the_world/climate#seasons)Seasons$() will pass on a cycle affecting local weather and crop growth. As well as your own ambient temperature. Be careful to understand the climate and the geography of your area before deciding to settle down."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/climate#calendar)Calendar$()$(li2)$(l:the_world/climate#seasons)Seasons$()$(li)$(bold)$(l:the_world/climate#climate)Climate$()$(li2)$(l:the_world/climate#temperature)Temperature$()$(li2)$(l:the_world/climate#rainfall)Rainfall$()"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Calendar",
+            "anchor": "calendar",
+            "text": "The $(thing)Calendar$() can be viewed at any time by pressing $(item)$(k:key.inventory)$(), and clicking on the calendar tab. It is important to note that the effects of seasons will be inverted when crossing equator lines."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/calendar_screen.png"
+            ],
+            "text": "The Calendar Screen showing the $(thing)Season$(), the $(thing)Day$(), and the $(thing)Date$().",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "seasons",
+            "title": "Seasons",
+            "text": "There are four seasons in TerraFirmaCraft, and the weather and climate will change along with them! Each season is divided up into $(thing)Early$(), $(thing)Mid$() and $(thing)Late$() months. The four seasons are:$(br)$(li)$(bold)Spring$(): March - May$(li)$(bold)Summer$(): June - August$(li)$(bold)Autumn$(): September - November$(li)$(bold)Winter$(): December - February"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The current season can influence the temperature of the area, the precipitation (if it will rain or snow), and the environment itself such as leaves changing and more. Pay attention to the calendar tab, it will be useful!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "climate",
+            "text": "Another tab on the main inventory screen is the $(thing)Climate$() screen. This one shows information about the current location$(li)The first line shows the overall $(l:https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification)Climate$().$(li)The second line shows the $(l:the_world/climate#temperature)Average Annual Temperature$().$(li)The third line shows the $(l:the_world/climate#rainfall)Average Annual Rainfall$().$(li)And the last line shows the $(l:the_world/climate#temperature)Current Local Temperature$().",
+            "title": "Climate"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/screens/climate_screen.png"
+            ],
+            "text": "The Climate Screen",
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Temperature",
+            "anchor": "temperature",
+            "text": "Current Temperature in TerraFirmaCraft is influenced by a number of factors:$(br)$(li)Firstly, the region--Especially the latitude--Will play the largest role and is recorded as the $(thing)Average Temperature$().$(li)Secondly, the current season will influence the temperature.$(li)Thirdly, the temperature can be different day to day as well as varying from hour to hour.$(li)Lastly, temperature varys in elevation changes."
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/temperature_map.png"
+            ],
+            "text": "A 65.5km² map displaying how temperature cycles when traveling North/South.$(br)$(#001cfc)◼$(#00b9fc)◼$(#62fc92)◼$(#e1fc12)◼$(#fc7800)◼$(#cf0000)◼$() -20°C → 30°C",
+            "border": true
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rainfall",
+            "text": "Rainfall is another climate value that can vary depending on where you are in the world and determines flora growth.$(br2)Rainfall is one of the main contributors to $(l:mechanics/hydration)Hydration$(), which is an exact measure of how wet the soil is in a given location, and is used by $(l:mechanics/crops)Crops$(), $(l:the_world/wild_fruits#fruit_trees)Fruit Trees$(), and $(l:the_world/wild_fruits#tall_bushes)Berry Bushes$() to determine if they can grow.",
+            "title": "Annual Rainfall"
+        },
+        {
+            "type": "patchouli:image",
+            "width": 1024,
+            "texture_width": 1024,
+            "height": 1024,
+            "texture_height": 1024,
+            "images": [
+                "tfg:textures/gui/field_guide/maps/rainfall_map.png"
+            ],
+            "text": "A 65.5km² map displaying how rainfall cycles when traveling East/West.$(br)$(#800302)◼$(#fc5600)◼$(#fcbe4e)◼$(#a6be4e)◼$(#1268ac)◼$(#76b6f6)◼$() 0mm → 500mm",
+            "border": true
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/geology",
+                "tfc:the_world/wild_fruits",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/flora"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 1
+}

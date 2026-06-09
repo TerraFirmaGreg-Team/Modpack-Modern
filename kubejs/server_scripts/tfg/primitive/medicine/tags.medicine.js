@@ -389,4 +389,38 @@ function registerTFGMedicineItemTags(event) {
 
 	//#endregion
 
+	
+	/**
+	 * Array of all medicinal ingredients.
+	 * @type {Item[]}
+	 */
+	const all_ingredients = [].concat(
+		antipoison_ingredients,
+		poison_ingredients,
+		regeneration_ingredients,
+		speed_ingredients,
+		slowness_ingredients,
+		weakness_ingredients,
+		haste_ingredients,
+		water_breathing_ingredients,
+		night_vision_ingredients,
+		invisibility_ingredients,
+		absorption_ingredients,
+		fire_resistance_ingredients,
+		resistance_ingredients,
+		instant_health_ingredients,
+		strength_ingredients,
+		jump_boost_ingredients,
+		slow_fall_ingredients,
+		luck_ingredients,
+		antiparasitic_ingredients,
+		detox_ingredients,
+		filtering_ingredients
+	);
+	all_ingredients.forEach(items => { event.add('tfg:medicinal_ingredients', items) });
+
+	// If you are adding a new plant as a medicinal ingredient and it does not have 'plant' int the name please add it to `plant_filter`.
+	const plant_filter = /plant|gleamflower|lacugrove|twisted_vine|moonflower/;
+	const all_plant_ingredients = all_ingredients.filter(ingredient => plant_filter.test(ingredient));
+	all_plant_ingredients.forEach(items => { event.add('tfg:medicinal_ingredients/plants', items) });
 };

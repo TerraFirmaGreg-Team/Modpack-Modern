@@ -1,0 +1,714 @@
+{
+    "name": "Flora",
+    "category": "tfc:the_world",
+    "icon": "tfc:plant/goldenrod",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:the_world/flora#standard_plants)Standard Plant Types$()$(li)$(bold)$(l:the_world/flora#aquatic_plants)Aquatic Plant Types$()$(li)$(bold)$(l:the_world/flora#medicinal_plants)Medicinal Plants$()$(li)$(bold)$(l:the_world/flora#spices)Spices$()$(li2)$(l:the_world/flora#basil)Basil$()$(li2)$(l:the_world/flora#bay)Bay Laural$()$(li2)$(l:the_world/flora#cardamom)Cardamom$()$(li2)$(l:the_world/flora#cilantro)Cilantro$()$(li2)$(l:the_world/flora#cumin)Cumin$()$(li2)$(l:the_world/flora#oregano)Oregano$()$(li2)$(l:the_world/flora#pimento)Pimento$()$(li2)$(l:the_world/flora#vanilla)Vanilla$()$(li)$(bold)$(l:the_world/flora#seed_ball)Seed Ball$()"
+        },
+        {
+            "anchor": "intro",
+			"type": "patchouli:spotlight",
+            "title": "Intro to Earth Flora",
+            "item": {
+                "tag": "tfc:plants"
+            },
+            "text": "Earth is an incredibly diverse planet when it comes to flora. Unlike in vanilla $(thing)Minecraft$()--Plants in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() spawn based on local $(l:the_world/climate#climate)Climate Conditions$()."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Plants may be difficult to find during some $(l:the_world/climate#seasons)Seasons$() as they go through cycles of flowering and laying dormant, or changing color as the local temperature changes.$(br2)Colorful flowers can typically be crushed in a $(l:mechanics/quern)Quern$() for $(l:mechanics/dye)Dye$(). While some plants can be used for making $(l:the_world/flora#medicinal_plants)medicine$() or $(l:the_world/flora#spices)meals$()."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/anthurium"
+                }
+            },
+            "name": "Standard",
+            "anchor": "standard_plants",
+            "text": "Standard plants are like small flowers. They grow on grass, dirt, and farmland.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sagebrush"
+                }
+            },
+            "name": "Dry",
+            "text": "Dry plants are like standard plants, but they can grow on sand. These generally only spawn in areas with low rainfall.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "cacti",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/barrel_cactus[part=upper]",
+                    "Y": "tfc:plant/barrel_cactus[part=lower]"
+                }
+            },
+            "name": "Cacti",
+            "text": "Cacti can grow two blocks high, and they will damage you!",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/moss[down=true]"
+                }
+            },
+            "name": "Creeping",
+            "text": "Creeping plants take the shape of the surrounding block faces. They mostly spawn in blobs on the ground",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "XY"
+                    ],
+                    [
+                        "0 "
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:wood/wood/birch",
+                    "Y": "tfc:plant/licorice_fern[facing=south]"
+                }
+            },
+            "name": "Epiphyte",
+            "text": "Epiphytes only live on the sides of logs.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/bluegrass"
+                }
+            },
+            "name": "Short Grass",
+            "text": "Short grass blocks grow taller with age. They also are able to grow on peat and mud.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/king_fern[part=upper]",
+                    "Y": "tfc:plant/king_fern[part=lower]"
+                }
+            },
+            "name": "Tall Grass",
+            "text": "Tall grass blocks are just tall enough to block your field of view.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/ivy[up=true,north=true]"
+                }
+            },
+            "name": "Vines",
+            "text": "Vine blocks spread around the world on their own, if it's warm enough.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/liana_plant",
+                    "Y": "tfc:plant/liana"
+                }
+            },
+            "name": "Weeping Vines",
+            "text": "Weeping vines grow downward from an anchoring block.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/arundo",
+                    "Y": "tfc:plant/arundo_plant"
+                }
+            },
+            "name": "Twisting Vines",
+            "text": "Twisting vines twist upward from the Earth. They can come in a solid variant.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "aquatic_plants",
+            "text": "Aquatic plants are restricted to either spawn in fresh or salty water. Otherwise, they grow and act much like the plants you see on the surface. Some water plants can be cooked for food.",
+            "title": "Aquatic Plants"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/sago[fluid=water]"
+                }
+            },
+            "name": "Standard Water",
+            "text": "Standard water plants can be broken with a $(thing)$()Knife$() to get $(thing)Seaweed$().",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/manatee_grass[fluid=salt_water]"
+                }
+            },
+            "name": "Water Grass",
+            "text": "Water grasses are grasses that grow under the water.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/cattail[part=upper]",
+                    "Y": "tfc:plant/cattail[part=lower,fluid=water]"
+                }
+            },
+            "name": "Tall Water Plant",
+            "text": "Tall water plants can grow with just the bottom block in water. $(thing)Water Taro$() and $()Cattail$() can be broken with a $(thing)Knife$() for $(thing)Roots$().",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/duckweed",
+                    "Y": "minecraft:water"
+                }
+            },
+            "name": "Floating",
+            "text": "Floating plants sit on top of the water. Boats will break them on contact.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/winged_kelp[fluid=salt_water]",
+                    "Y": "tfc:plant/winged_kelp_plant[fluid=salt_water]"
+                }
+            },
+            "name": "Kelp",
+            "text": "Kelp are twisting vines that grow underwater.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "Y"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:plant/giant_kelp_flower[facing=up,fluid=salt_water]",
+                    "Y": "tfc:plant/giant_kelp_plant[down=true,up=true,fluid=salt_water]"
+                }
+            },
+            "name": "Tree Kelp",
+            "text": "Tree kelp grow into intricate trees underwater. The flowers can be harvested with a $(thing)Knife$().",
+            "enable_visualize": false
+        },
+        {
+            "anchor": "medicinal_plants",
+			"type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:medicinal_ingredients/plants"
+            },
+            "title": "Medicinal Plants",
+            "text": "Many plants in $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() hold medicinal value and can be used for creating phytotherapeutic medicine. You can combine these ingredients in a mixing bowl with wax, binders, and spring water to make pills. Or more advanced medications."
+        },
+        {
+            "title": "Spices",
+			"type": "patchouli:spotlight",
+            "item": {
+                "tag": "tfg:foods/spice_plants"
+            },
+            "anchor": "spices",
+			"text": "With $(thing)Firmalife$(), there are a number of small plants you can collect and grow on your own, which have cooking properties. They can all be found in the wild, and once harvested, may be cultivated in a $(l:firmalife/greenhouse)Greenhouse$(), in which they consume 20 points of N, P, and K."
+		},
+        {
+            "type": "tfc:table",
+            "strings": [
+                {
+                    "text": "Spice",
+                    "bold": true
+                },
+                {
+                    "text": "Temperature (°C)",
+                    "bold": true
+                },
+                {
+                    "text": "Rainfall (mm)",
+                    "bold": true
+                },
+                {
+                    "text": "Basil"
+                },
+                {
+                    "text": "12 - 25"
+                },
+                {
+                    "text": "300 - 500"
+                },
+                {
+                    "text": "Bay Laurel"
+                },
+                {
+                    "text": "8 - 14"
+                },
+                {
+                    "text": "25 - 225"
+                },
+                {
+                    "text": "Cardamom"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "350 - 500"
+                },
+                {
+                    "text": "Cilantro"
+                },
+                {
+                    "text": "5 - 15"
+                },
+                {
+                    "text": "0 - 150"
+                },
+                {
+                    "text": "Cumin"
+                },
+                {
+                    "text": "6 - 20"
+                },
+                {
+                    "text": "50 - 250"
+                },
+                {
+                    "text": "Oregano"
+                },
+                {
+                    "text": "5 - 13"
+                },
+                {
+                    "text": "50 - 150"
+                },
+                {
+                    "text": "Pimento"
+                },
+                {
+                    "text": "15 - 30"
+                },
+                {
+                    "text": "200 - 450"
+                },
+                {
+                    "text": "Vanilla"
+                },
+                {
+                    "text": "18 - 30"
+                },
+                {
+                    "text": "200 - 500"
+                }
+            ],
+            "text": "",
+            "title": "Wild Spice Ranges",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 80,
+            "column_width": 70,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/basil[stage=1]"
+                }
+            },
+			"name": "Basil",
+            "anchor": "basil",
+			"text": "$(thing)Wild Basil$() grows between 12 and 25C, and 300 to 500mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/bay_laurel[stage=1]"
+                }
+            },
+			"name": "Bay Laurel",
+            "anchor": "bay",
+			"text": "$(thing)Wild Bay Laurel$() grows between 8 and 14C, and 25 to 225mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cardamom[stage=1]"
+                }
+            },
+			"name": "Cardamom",
+            "anchor": "cardamom",
+			"text": "$(thing)Wild Cardamom$() grows between 18 and 30C, and 350 to 500mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cilantro[stage=1]"
+                }
+            },
+			"name": "Cilantro",
+            "anchor": "cilantro",
+			"text": "$(thing)Wild Cilantro$() grows between 5 and 15C, and 0 to 150mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/cumin[stage=1]"
+                }
+            },
+			"name": "Cumin",
+            "anchor": "cumin",
+			"text": "$(thing)Wild Cumin$() grows between 6 and 20C, and 50 to 250mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/oregano[stage=1]"
+                }
+            },
+			"name": "Oregano",
+            "anchor": "oregano",
+			"text": "$(thing)Wild Oregano$() grows between 5 and 13C, and 50 to 150mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/pimento[stage=1]"
+                }
+            },
+			"name": "Pimento",
+            "anchor": "pimento",
+			"text": "$(thing)Wild Pimento$() grows between 15 and 30C, and 200 to 450mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "firmalife:plant/vanilla[stage=1]"
+                }
+            },
+			"name": "Vanilla",
+            "anchor": "vanilla",
+			"text": "$(thing)Wild Vanilla$() grows between 18 and 30C, and 200 to 500mm of rainfall.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:crafting",
+            "anchor": "seed_ball",
+			"recipe": "firmalife:crafting/seed_ball",
+			"text": "$(item)Seed Balls$() can be used to plant different types of Grass. This can be useful after clearing your base for building. The recipe for the seed ball requires $(item)Compost$() and 4 $(thing)Seeds$()."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "firmalife:plant/butterfly_grass"
+				}
+			},
+			"name": "Butterfly Grass",
+            "anchor": "butterfly_grass",
+			"text": "A butterfly grass plant.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Butterfly grass will mature over time. When one reaches maturity, it has a chance to spread to surrounding blocks, or turn into something new. Butterfly grass blocks that have been spread by another grass block do not spread anymore.$(br)After Butterfly grass turns into another grass, you can pick them up with $(item)Shears$()."
+		},
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:the_world/geology",
+                "tfc:the_world/wild_fruits",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/flora"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+		"tag:tfg:medicinal_ingredients/plants": 21,
+		"firmalife:plant/basil": 24,
+		"firmalife:spice/basil_leaves": 24,
+		"firmalife:plant/bay_laurel": 25,
+		"tfg:spice/bay_leaf": 25,
+		"firmalife:plant/cardamom": 26,
+		"tfg:spice/cardamom_pods": 26,
+		"firmalife:plant/cilantro": 27,
+		"tfg:spice/cilantro_leaves": 27,
+		"firmalife:plant/cumin": 28,
+		"tfg:spice/cumin_seeds": 28,
+		"firmalife:plant/oregano": 29,
+		"tfg:spice/oregano_leaves": 29,
+		"firmalife:plant/pimento": 30,
+		"tfg:spice/allspice": 30,
+		"firmalife:plant/vanilla": 31,
+		"firmalife:spice/vanilla": 31,
+		"firmalife:seed_ball": 32
+	}
+}
