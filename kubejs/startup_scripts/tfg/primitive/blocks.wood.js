@@ -51,6 +51,7 @@ function registerTFGNewWoodBlocks(event) {
 			.defaultCutout()
 			.noCollision()
 			.mapColor(`${wood.leafColor}`)
+			.hardness(0)
 	}
 
 	function TFGWoodSupportRegistry(event, wood, stripped_log) {

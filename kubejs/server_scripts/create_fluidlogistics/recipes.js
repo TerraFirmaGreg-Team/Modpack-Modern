@@ -87,4 +87,39 @@ function registerCreateFluidLogisticsRecipes(event) {
 		D: 'gtceu:brass_rod'
 	}).id("fluidlogistics:mechanical_crafting/hand_pointer")
 	
+	event.shaped('fluidlogistics:fluid_hatch', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: '#forge:tools/hammers',
+		B: '#tfc:trapdoors',
+		C: 'create:item_drain',
+	}).id('tfg:fluidlogistics/shaped/fluid_hatch_tfc')
+
+	event.shaped('fluidlogistics:fluid_hatch', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: '#forge:tools/hammers',
+		B: '#createdeco:metal_trapdoors',
+		C: 'create:item_drain',
+	}).id('tfg:fluidlogistics/shaped/fluid_hatch_deco')
+
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_tfc')
+		.itemInputs('create:item_drain', '#tfc:trapdoors')
+		.circuit(19)
+		.itemOutputs('fluidlogistics:fluid_hatch')
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/fluid_hatch_deco')
+		.itemInputs('create:item_drain', '#createdeco:metal_trapdoors')
+		.circuit(19)
+		.itemOutputs('fluidlogistics:fluid_hatch')
+		.duration(200)
+		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Copper, 1, GTMaterials.Wood, 1])
 }

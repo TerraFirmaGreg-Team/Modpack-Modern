@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
 	registerCreateHorsePowerBlockRecipes(event)
 	registerCreateHypertubeRecipes(event)
 	registerCreateSoundOfSteamRecipes(event)
-	//registerCreateStockBridgeRecipes(event)
+	registerCreateStockBridgeRecipes(event)
 	registerDeaFissionRecipes(event)
 	registerDiggerHelmetRecipes(event)
 	registerDomumOrnamentumRecipes(event)

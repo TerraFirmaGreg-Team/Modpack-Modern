@@ -123,8 +123,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 14, 13)
 
 	//#region Fluorapatite
-	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
-	fluorapatite_colors.forEach(color => {
+	global.FLUORAPATITE_COLORS.forEach(color => {
 		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
 
 		//Sand

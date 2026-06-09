@@ -3,7 +3,11 @@
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 1
+			"count": 3
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
 		},
 		{
 			"type": "minecraft:in_square"
@@ -27,7 +31,7 @@
 				"blocks": "minecraft:air"
 			},
 			"direction_of_search": "down",
-			"max_steps": 6,
+			"max_steps": 12,
 			"target_condition": {
 				"type": "minecraft:solid"
 			}
