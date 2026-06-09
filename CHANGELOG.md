@@ -18,6 +18,7 @@
 - Fixed lava slimes not being fireproof @Pyritie
 - Fixed basins not being craftable in the bronze age @Pyritie
 - Fixed an assembler recipe conflict between basins and heavy weighted pressure plates (#4214) @Pyritie
+- Fixed missing stripped log tag from new woods @Pyritie
 ### Mods
 - Add Create Stock Bridge, which lets your create logistics network talk to your AE2 network (it caused a crash with the previous fluid logistics mod)
 
