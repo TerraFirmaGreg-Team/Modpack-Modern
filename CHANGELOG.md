@@ -3,6 +3,8 @@
 ## Unreleased
 ### Changes
 - Reduced HP of cliff hanger and leaf hangers @Pyritie
+- Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
+- Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
 ### Bug fixes
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie
@@ -12,6 +14,9 @@
 - Fixed new saplings not being instantly mined @Pyritie
 - Fixed missing sandstone crafting recipes @Pyritie
 - Fixed small ores querning into powders and not small dusts (#4215) @Pyritie
+- Fixed lava slimes not being fireproof @Pyritie
+- Fixed basins not being craftable in the bronze age @Pyritie
+- Fixed an assembler recipe conflict between basins and heavy weighted pressure plates (#4214) @Pyritie
 ### Mods
 - Add Create Stock Bridge, which lets your create logistics network talk to your AE2 network (it caused a crash with the previous fluid logistics mod)
 
