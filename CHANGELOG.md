@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 - Reduced HP of cliff hanger and leaf hangers @Pyritie
+- Create Connected Kinectic Bridge doesn't allow stacking SU anymore @ashleney
 ### Bug fixes
 - Fixed missing recipes for sodium dichromate @TomPlop
 - Fixed incorrect loot tables for different gravels @Pyritie
