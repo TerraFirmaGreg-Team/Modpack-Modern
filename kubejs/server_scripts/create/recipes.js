@@ -141,12 +141,12 @@ const registerCreateRecipes = (event) => {
 		'ABA',
 		' A '
 	], {
-		A: ['#forge:plates/iron', '#forge:plates/wrought_iron'],
+		A: ['#forge:ingots/iron', '#forge:ingots/wrought_iron'],
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/basin')
 
 	event.recipes.gtceu.assembler('tfg:create/basin')
-		.itemInputs('5x #forge:plates/iron')
+		.itemInputs('5x #forge:ingots/iron')
 		.circuit(3)
 		.itemOutputs('create:basin')
 		.duration(200)
