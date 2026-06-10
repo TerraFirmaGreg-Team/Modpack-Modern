@@ -62,16 +62,16 @@
       "item": "gtceu:prospector.lv",
       "title": "數位礦石探測",
       "link_recipes": false,
-      "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+      "text": "科技时代已然來臨！随之而來的是探尋礦脈的全新方式！$(br)$(item)探礦儀$()是$(thing)格雷科技$()提供的礦脈與流體礦藏的探勘方案。其探測範圍與功能由$(#ff1100)電壓等級$()決定。"
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "探礦儀",
       "images": [
         "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
-      "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."
+      "text": "這是使用$(#e373ff)LuV 探礦儀$()時會看到的一個例子。"
     }
   ],
   "read_by_default": true,

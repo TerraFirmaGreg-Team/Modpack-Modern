@@ -1,12 +1,12 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Anvils",
+  "name": "砧",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/anvil/copper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:mechanics/anvils#working)Working$() is done to form one piece of metal into another, and $(l:getting_started/primitive_anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
+      "text": "砧是金屬加工不可或缺的工具。砧的主要作用是焊接與或鍛造。$(br2)$(l:mechanics/anvils#working)鍛造$()是將金屬錠打造成實用地形狀。而$(l:mechanics/anvils#welding)焊接$()是將兩塊金屬熔合再一起的工藝。"
     },
     {
       "type": "patchouli:multiblock",
@@ -24,62 +24,62 @@
         }
       },
       "name": "",
-      "text": "All types of metal anvils.",
+      "text": "所有類型的金屬砧。",
       "enable_visualize": false
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Anvils can be crafted with $(thing)double ingots$() of their respective metal. For your first anvil, you must first $(l:getting_started/primitive_anvils#welding)weld$() double ingots on a $(l:getting_started/primitive_anvils)stone anvil$()."
+      "text": "砧是由對應的金屬$(thing)雙錠$()製作。要取得第一個砧，你必須先在$(l:getting_started/primitive_anvils)石砧$()上$(l:mechanics/anvils#welding)焊接$()出雙錠。"
     },
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Anvils each have a $(thing)tier$(), which defines what types of material they can work and weld. An anvil can work metals of its current tier, and it can weld metals that are one tier higher.$(br)$(li)$(bold)Tier 0$(): Stone Anvils$(li)$(bold)Tier I$(): Copper$(li)$(bold)Tier II$(): Bismuth Bronze, Black Bronze, Bronze$(li)$(bold)Tier III$(): Wrought Iron$(li)$(bold)Tier IV$(): Steel$(li)$(bold)Tier V$(): Black Steel$(li)$(bold)Tier VI$(): Red Steel, Blue Steel"
+      "text": "砧有$(thing)等級$()之分。等級決定了砧可以加工的金屬與材料。只有等級相同或比砧低的材料才能在砧上鍛造，砧能焊接金属最大等級為砧的等級 +1。$(br)$(li)$(bold)第0級$()：石砧$(li)$(bold)第1級$()：銅$(li)$(bold)第2級$()：鉍青銅、黑青銅铜、青銅$(li)$(bold)第3級$()：鍛鐵$(li)$(bold)第4級$()：鋼$(li)$(bold)第5級$()：黑鋼$(li)$(bold)第6級$()：紅鋼、藍鋼"
     },
     {
       "type": "patchouli:text",
       "anchor": "working",
-      "text": "In order to work an item on the anvil, you will need to use the anvil, to open up the anvil interface, seen to the right. On the left, there are two input slots for items - for working, the target item must be in the right hand slot. You will also need a hammer while working, either in the hammer slot on the right of the anvil $(bold)or$() in your main hand. The hammer will gradually take damage as you work the item.",
-      "title": "Working"
+      "text": "要加工物品就需要砧，與砧互動來打開介面。如右所示，左側有兩個物品輸入槽是給欲加工的物品，鍛造材料必須放在右邊插槽——左邊插槽只在焊接時使用。鍛造時必須手持$(bold)或$()在右側空格放置鍛造錘。每次加工都會些微的磨損鍛造錘。",
+      "title": "鍛造"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/anvil_empty.png"
       ],
-      "text": "The anvil interface.",
+      "text": "砧介面。",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan - the scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
+      "text": "接著要選擇製作$(thing)方案$() $(item)$(k:key.attack)$()卷軸按鈕選個要製作的物品。返回砧介面，因為已經選擇了方案，因此卷軸顯示為要製作的方案以及$(thing)規則$()與$(thing)目標$()。"
     },
     {
       "type": "patchouli:image",
       "images": [
         "tfc:textures/gui/book/gui/anvil_in_use.png"
       ],
-      "text": "After selecting to create a pickaxe.",
+      "text": "選擇製作一個鎬頭。",
       "border": false
     },
     {
       "type": "patchouli:text",
-      "text": "In the middle of the anvil screen, there is a bar with two colored indicators. The $(2)green$() pointer, is your current working progress. The $(4)red$() pointer, is the target. Your goal is to line up the current progress, with the target.$(br2)In order to do this, you can use the $(2)green$() and $(4)red$() action buttons, which move your current progress a certain amount, depending on the action taken.",
-      "title": "Targets"
+      "text": "砧介面中間有條帶有雙色指針的進度條。$(2)綠色$()是當前工作進度，\n$(4)紅色$()是目標進度。你的目標是讓當前進度與目標進度對齊。$(br2)為了這個目標，你得使用$(2)綠色$()與$(4)紅色$()的動作按鈕來移動你的當前進度，移動量按照動作決定。",
+      "title": "鍛造目標"
     },
     {
       "type": "patchouli:text",
-      "text": "$(2)Green$() actions will always move your target $(bold)right$(), and $(4)Red$() actions will always move your progress $(bold)left$(). Note that if you move your target off of the progress bar, you will have overworked your item - you will lose the ingot. However, while working, you must also match the $(thing)rules$()..."
+      "text": "$(2)綠色$()動作會讓進度$(bold)向右$()移動，$(4)紅色$()動作會讓進度$(bold)向左$()移動。注意，如果將進度移出進度條，則表示物品加工過度，您將失去錠。此外，在加工過程中，您還必須遵守$(thing)規則$()……"
     },
     {
       "type": "patchouli:text",
-      "text": "The $(thing)rules$(), are the two or three icons shown on the top of the anvil interface. They represent specific actions that must be taken, at specific times, in order for your working to be a success. For example, a rule could be $(2)Bend Second Last$(), meaning the second to last action you take $(bold)must$() be a $(2)Bend$() action.",
-      "title": "Working Rules"
+      "text": "$(thing)規則$()是指砧介面上方顯示的二或三個圖示。它們代表為了使工作成功，必須採取的特定順序與行動。比方說，有條規則是$(2)彎曲倒數第二$()意思是說倒數第二個行動$(bold)必須$()是$(2)彎曲$()。",
+      "title": "鍛造規則"
     },
     {
       "type": "patchouli:text",
-      "text": "Your last three actions are shown right underneath the rules. When a rule is satisfied, its outline will change to green. Success occurs when all rules are satisfied.$(br2)Finally, you have to be mindful of your item's $(l:mechanics/heating)temperature$(). Metals can only be worked when they are above a certain temperature where the tooltip shows \"Can Work\". You may take an item out and re-heat it during the working process."
+      "text": "最近的三個動作會顯示在規則下方。當滿足規則時輪廓線將變為綠色。當所有規則都被滿足時，即為成功。$(br2)最後，也要注意物品的$(l:mechanics/heating)溫度$()金屬只有在溫度高於特定值時才能加工，此時工具提示會顯示「可加工」。鍛造過程中可以取出物品並重新加熱。"
     },
     {
       "type": "patchouli:text",
