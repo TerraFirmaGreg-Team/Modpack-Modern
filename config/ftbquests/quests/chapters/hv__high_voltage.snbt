@@ -1906,10 +1906,13 @@
 			dependencies: [
 				"390E59F05132FCB8"
 				"124B32A0583A636A"
+				"528CE69DA4358B2E"
 			]
 			description: ["{quests.high_voltage.alumina_board.desc}"]
+			hide_dependency_lines: true
 			id: "707596E5E9F01B8A"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.high_voltage.alumina_board.subtitle}"
 			tasks: [{
 				id: "32FDC591ACE9B2CF"
