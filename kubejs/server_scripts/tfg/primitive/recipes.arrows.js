@@ -18,6 +18,9 @@ function registerTFGArrowRecipes(event) {
 		B: '#forge:string'
 	}).id('tfg:shaped/bow')
 
+	event.shapeless('4x minecraft:stick', ['tfc:tree_roots', '#forge:tools/knives'])
+		.id('tfg:shapeless/roots_to_stick')
+
 	// Arrow Parts
 	event.recipes.tfc.knapping(
 		'4x tfg:flint_arrow_head',
@@ -51,14 +54,18 @@ function registerTFGArrowRecipes(event) {
 		.circuit(4)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.shapeless('minecraft:arrow', ['tfg:flint_arrow_head', '#forge:rods/wooden', 'tfg:fletching'])
+	event.shapeless('minecraft:arrow', ['tfg:flint_arrow_head', '#forge:rods/wooden', ['tfg:fletching', 'tfg:hardwood_strip']])
 		.id('tfg:shaped/arrow')
 
-	event.shapeless('minecraft:arrow', ['primitive_creatures:tt_5', '#forge:rods/wooden', 'tfg:fletching'])
+	event.shapeless('minecraft:arrow', ['primitive_creatures:tt_5', '#forge:rods/wooden', ['tfg:fletching', 'tfg:hardwood_strip']])
 		.id('tfg:shaped/arrow_shard')
 
-	event.shapeless('minecraft:arrow', ['species:werefang', '#forge:rods/wooden', 'tfg:fletching'])
+	event.shapeless('minecraft:arrow', ['species:werefang', '#forge:rods/wooden', ['tfg:fletching', 'tfg:hardwood_strip']])
 		.id('tfg:shaped/arrow_werefang')
+
+	event.recipes.tfc.no_remainder_shapeless_crafting(
+		event.shapeless('minecraft:arrow', ['tfc:bone_needle', '#forge:rods/wooden', ['tfg:fletching', 'tfg:hardwood_strip']]))
+			.id('tfg:shaped/arrow_bone_needle')
 
 	// Wraptor feathers
 	event.recipes.tfc.damage_inputs_shapeless_crafting(

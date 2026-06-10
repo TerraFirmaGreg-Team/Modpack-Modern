@@ -2,9 +2,11 @@
 
 ## Unreleased
 ### Changes
-- Reduced the speed of vibration tables @Pyritie
+- Reduced the processing speed of vibration tables @Pyritie
+- If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
+- Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
 
 ## [0.12.10] - 09-06-2026
 ### Changes
