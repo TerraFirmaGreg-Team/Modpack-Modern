@@ -7,6 +7,7 @@
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
+- Fixed being able to stonecut raw tuff into tuff bricks and other deco blocks, instead of having to make the bricks first (#4228) @Pyritie
 
 ## [0.12.10] - 09-06-2026
 ### Changes
