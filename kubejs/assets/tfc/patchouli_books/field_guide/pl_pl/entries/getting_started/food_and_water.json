@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "Pojemniki na napoje",
+            "title": "Indeks",
             "anchor": "index",
             "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
         },
@@ -73,7 +73,7 @@
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
             "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
-            "title": "Nutrition Screen"
+            "title": "Ekran odżywiania"
         },
         {
             "type": "patchouli:image",

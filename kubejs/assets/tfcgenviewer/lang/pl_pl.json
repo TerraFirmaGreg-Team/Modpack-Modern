@@ -61,6 +61,7 @@
   "tfcgenviewer.rock_editor.tab.rock_settings": "Ustawienia skał",
   "tfcgenviewer.rock_editor.tab.layer_types": "Typy warstw",
   "tfcgenviewer.rock_editor.tab.layer_definitions": "Definicje warstw",
+  "tfcgenviewer.rock_editor.error.empty_rock_name": "Nazwa skały nie może być pusta",
   "tfcgenviewer.rock_editor.error.invalid_id": "'%s' nie jest prawidłowym id rejestru",
   "tfcgenviewer.rock_editor.error.layer_already_exists": "Warstwa '%s' już istnieje",
   "tfcgenviewer.rock_editor.error.editor_is_occupied": "Edytor jest zajęty",

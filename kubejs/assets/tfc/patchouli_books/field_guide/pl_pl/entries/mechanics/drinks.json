@@ -1,5 +1,5 @@
 {
-	"name": "Efekty napojów",
+	"name": "Napoje",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
@@ -11,13 +11,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Pojemniki na napoje",
+			"title": "Indeks",
 			"anchor": "index",
 			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)Containers$()$(li)$(bold)$(l:mechanics/drinks#alcohol)Alcohol$()$(li2)$(l:mechanics/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:mechanics/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:mechanics/drinks#wine)Wine$()$(li)$(bold)$(l:mechanics/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:mechanics/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:mechanics/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:mechanics/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:mechanics/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)Ice Slush$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Dojrzały alkohol",
+			"title": "Pojemniki na napoje",
 			"text": "You can drink things out of a $(l:getting_started/pottery#jug)Jug$(), $(l:waterflasks/recipes)Flask$(), or $(l:mechanics/glassworking_applications#glass_bottle)Glass Bottle$(). Jugs only hold enough for 1 drink and break easily. Glass bottles only hold a few drinks, and also have a chance of breaking. Flasks can hold even more and slowly use durability instead, except the $(item)Red Steel Flask$() which holds 20 drinks and never breaks.",
 			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
 			"anchor": "containers"
@@ -31,7 +31,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Klasyczny alkohol",
+			"title": "Dojrzały alkohol",
 			"text": "$(thing)Aged Alcohols$() are prepared by ageing normal alcohol for 3 months in a sealed barrel. Aged alcohol provides effects when consumed.",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "aged_alcohol"
@@ -42,7 +42,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Wino",
+			"title": "Klasyczny alkohol",
 			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
 			"anchor": "vintage_alcohol"
@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Herbaty",
+			"title": "Wino",
 			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
@@ -64,7 +64,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Smakołyki",
+			"title": "Mleko",
 			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If the milking isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs, it provides dairy nutrition if drank after eating, and can later be made into cheese.",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
@@ -77,28 +77,28 @@
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Mleko",
+			"title": "Woda morska",
 			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "Woda źródlana",
+			"title": "Mętna woda",
 			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "Woda morska",
+			"title": "Sok owocowy",
 			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$(). Which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "Płynny lód",
+			"title": "Jogurt",
 			"text": "$(thing)Yogurt$() provides dairy nutrition similarly to milk. It can also be mixed with fruit to make $(item)Fruit Yogurt$().$(br2)Yogurt will expire over time.$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
