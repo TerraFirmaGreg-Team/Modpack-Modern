@@ -1,4 +1,6 @@
 {
+  "block.gtmutils.enlarged_stocking_bus.desc.1": "Bardzo długa lista zakupów",
+  "block.gtmutils.enlarged_stocking_hatch.desc.1": "Bardzo długa lista zakupów",
   "block.gtmutils.expanded_me_pattern_buffer": "Rozszerzony bufor wzorców ME",
   "block.gtmutils.me_enlarged_stocking_input_bus": "Magistrala wejściowa ME z powiększonym buforem",
   "block.gtmutils.me_enlarged_stocking_input_hatch": "Zawór wejściowy ME z powiększonym buforem",
@@ -24,6 +26,7 @@
   "config.gtmutils.option.pterbEnabled": "pterbEnabled",
   "config.gtmutils.option.sterileHatchEnabled": "sterileHatchEnabled",
   "config.gtmutils.option.tagStockingEnabled": "tagStockingEnabled",
+  "config.jade.plugin_gtmutils.enlarged_me_stocking_bus_info": "Informacje o powiększonej magistrali ME",
   "gtceu.placeholder_info.watfrequency.1": "Użycie:",
   "gtmutils.gui.pterb.wireless_configurator.title": "Częstotliwość",
   "gtmutils.pterb.current_frequency": "Aktualna częstotliwość: %s",
