@@ -74,7 +74,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(200)
         .circuit(3)
 
-    event.recipes.kubejs.shapeless(
+    event.shapeless(
         'minecraft:player_head',
         ['minecraft:player_head', 'minecraft:name_tag']
     ).modifyResult((grid, result) => {
