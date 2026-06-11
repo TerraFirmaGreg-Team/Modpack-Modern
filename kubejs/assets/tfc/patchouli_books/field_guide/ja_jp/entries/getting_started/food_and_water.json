@@ -7,15 +7,15 @@
             "type": "patchouli:text",
             "title": "目次",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)基本システム$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)喉の渇き$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)栄養画面$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)栄養素$()$(li2)$(l:getting_started/food_and_water#fruit)果物$()$(li2)$(l:getting_started/food_and_water#vegetables)野菜$()$(li2)$(l:getting_started/food_and_water#protein)タンパク質$()$(li2)$(l:getting_started/food_and_water#grain)穀物$()$(li2)$(l:getting_started/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)汚染物質$()$(li2)$(l:getting_started/food_and_water#toxins)毒素$()$(li2)$(l:getting_started/food_and_water#parasites)寄生虫$()$(li2)$(l:getting_started/food_and_water#microplastics)マイクロプラスチック$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)一時効果$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)冷却$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)温もり$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)活力$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)健康$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)回復促進$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)放射能汚染$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)吐き気$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)干からびる$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)致死$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)満足$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)糖分過多$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)スパイシー$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "基本システム",
             "anchor": "basics",
             "text": "TerraFirmaCraftでは、満腹度だけでなく喉の渇きも管理しなければなりません。空腹システムはバニラと似ており、多くの食べ物は空腹ゲージの約5分の1を回復します。ただし、$(thing)ガマの根$()のように回復量が少ない食べ物もあります。食べ物を食べると$(thing)腹持ち$()も回復します。これは隠し満腹度を表す値です。食料や水分が不足すると、移動速度が低下し、さらにダメージを受けるようになります。死亡しても栄養状態や汚染度はリセットされません。"
         },
@@ -72,31 +72,31 @@
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
-            "title": "Nutrition Screen"
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()では、栄養画面に健康状態に関するさまざまな情報が表示されます。$(li)$(l:getting_started/food_and_water#nutrients)栄養状態$()を表示するメイングラフ$()$(li)$(l:getting_started/food_and_water#contaminants)汚染状態$()を表示するサイドグラフ$()$(li)健康状態の各種ステータスを表示する表$()$(li)チームメンバーの栄養状態を確認できるスイッチ$()$(br)$(item)画面上の要素にカーソルを合わせながら$(k:key.sneak)$()を押し続けると、より詳しい情報を確認できます。$()",
+            "title": "栄養画面"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
+            "text": "栄養画面には、栄養状態を示すグラフが表示されます。",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
             "text": "栄養素には5種類あり、様々な食べ物から摂取できます。$(l)$(a)果物$()$()、$(l)$(2)野菜$()$()、$(l)$(c)タンパク質$()$()、$(l)$(6)穀物$()$()、そして$(l)$(5)乳製品$()$()。食べ物を食べると、その食べ物に含まれる栄養素を得られます。$(l:mechanics/pot#soup)スープ$()のような料理は、複数の栄養素を一度に摂取できる食事です。多くの料理は材料の栄養素をそのまま引き継ぎます。また、食べ飽きのようなシステムがあり、少し前に食べた食事をもう一度食べても栄養素として摂取することができないため、このような料理で栄養素を摂取することが重要になります。",
-            "title": "Nutrients"
+            "title": "栄養素"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "栄養素の合計値によって、あなたの最大体力が決まります。栄養状態が最高なら$(l)$(c)ハート30個分$()$()まで増加し、最低では$(l)$(c)ハート3個分$()$()まで減少します。$(br)また、栄養素の平均値は以下の効果にも影響します。$()$(li)$(bold)平均値が55%以上 ↴$()$()$(italic)$(li2)自然回復速度が50%上昇します。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)病気$()の進行速度が25%低下します。$()$()$(italic)$(li2)病気の自然治癒速度が50%上昇します。$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)平均値が85%以上 ↴$()$()$(italic)$(li2)自然回復速度が100%上昇します。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)病気$()の進行速度が50%低下します。$()$()$(italic)$(li2)病気の自然治癒速度が100%上昇します。$()$()"
         },
         {
             "title": "果物",
@@ -235,7 +235,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfc:getting_started/size_and_weight",

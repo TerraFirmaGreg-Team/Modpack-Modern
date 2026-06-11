@@ -135,16 +135,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Carcinogens",
+			"title": "癌",
 			"item": "gtceu:benzene_bucket",
-			"anchor": "Carcinogens",
+			"anchor": "癌",
 			"text": "$(thing)発がん性物質$()は$(item)癌$()の原因となる有害物質で、$(thing)クロムの粉$()や$(thing)ベンゼン系$()などが含まれます。この病気は$(item)自然に治ることはありません$()が、深刻な状態になる前に段階的に影響が現れます。はじめは$(item)弱体化$()が発症し、次に$(item)空腹$()、さらに$(item)鈍足$()、最終的には$(item)採掘速度低下$()へと悪化していきます。曝露が蓄積すると、やがて$(item)死$()に至ります。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "癌",
 			"item": "gtceu:chromium_dust",
-			"anchor": "Carcinogens",
+			"anchor": "癌",
 			"text": "$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は$(thing)クロムの粉$()の接触による発症を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備することで、その両方に対応できます。$(br2)もし深刻な曝露を受けた場合は、症状を$(thing)防ぐ$()ために$(l:tfg_ores/hazards#medicine)医薬品$()を使用するのが望ましいです。"
 		},
 		{
@@ -156,9 +156,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Irritants",
+			"title": "発疹",
 			"item": "gtceu:chromite_dust",
-			"anchor": "Irritants",
+			"anchor": "発疹",
 			"text": "$(thing)発疹$()は、$(thing)ギ酸アンモニウム$()を吸い込んだり、$(thing)クロム鉄鉱の粉$()に触れたりすることで発生します。短時間なら$(item)弱体化$()程度で済みますが、放置するとやがてランダムにダメージを受けるようになります。$(br2)$(l:tfg_ores/hazards#mask)フェイスマスク$()は吸入による発症を防ぎ、$(l:tfg_ores/hazards#gloves)ゴム手袋$()は皮膚接触を防ぎます。$(br2)$(l:tfg_ores/hazards#hazmat)危険物用スーツ$()を装備すれば両方に対応できます。"
 		},
 		{
