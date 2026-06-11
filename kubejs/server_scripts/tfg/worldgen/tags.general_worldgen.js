@@ -41,11 +41,6 @@ function registerTFGGeneralWorldgenItemTags(event) {
 	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_log/beech`);
 	event.add("tfg:stripped_hardwood", `tfg:wood/stripped_wood/beech`);
 	event.add("tfg:hardwood_supports", `tfg:wood/support/beech`);
-
-	event.add("tfg:softwood", `#wan_ancient_beasts:ginkgo_logs`);
-	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_log`);
-	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_wood`);
-	event.add("tfg:softwood_supports", `tfg:wood/support/ginkgo`);
 }
 
 function registerTFGGeneralWorldgenBlockTags(event) {

@@ -42,6 +42,15 @@ const registerWABItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:snatcher_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:raider_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:charger_egg')
+
+	// Wood
+	event.add("tfg:softwood", `#wan_ancient_beasts:ginkgo_logs`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_log`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_wood`);
+	event.add("tfg:softwood_supports", `tfg:wood/support/ginkgo`);
+
+	event.add("forge:stripped_logs", "wan_ancient_beasts:stripped_ginkgo_log");
+	event.add("forge:stripped_logs", "wan_ancient_beasts:stripped_ginkgo_wood");
 }
 
 const registerWABEntityTypeTags = (event) => {

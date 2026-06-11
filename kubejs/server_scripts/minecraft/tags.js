@@ -51,6 +51,15 @@ const registerMinecraftItemTags = (event) => {
 }
 
 const registerMinecraftBlockTags = (event) => {
+	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
+	event.removeAllTagsFrom("minecraft:lantern");
+	event.removeAllTagsFrom("minecraft:raw_iron_block");
+	event.removeAllTagsFrom("minecraft:grass_block");
+	event.removeAllTagsFrom("minecraft:infested_deepslate");
+	event.removeAllTagsFrom("minecraft:furnace");
+
 	// Stops saws from being able to pick up ice
 	event.remove('minecraft:ice', 'minecraft:ice')
 	event.remove('minecraft:ice', 'tfc:sea_ice')

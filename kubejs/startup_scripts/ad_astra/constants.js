@@ -3,6 +3,9 @@
 
 global.AD_ASTRA_DISABLED_ITEMS = 
 [
+	// Even with reliable remover, this item still shows up in tags?
+	'ad_astra:steel_plate',
+
 	// Disabled until IV planets
 
 	'ad_astra:tier_3_rocket',

@@ -370,15 +370,20 @@ function registerTFGSupportData(event) {
 	event.support("tfg:rebar_support_horizontal", 4, 4, 8, "rebar_support");
 	event.support("tfg:steel_support_horizontal", 6, 6, 16, "steel_support");
 
-	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone'];
-	const stone_types = global.TFC_STONE_TYPES.concat(other_stone);
-
-	stone_types.forEach((stone) => {
-		event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`);
-	});
+	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+		if (rock.support) {
+			event.support(`${rock.support}_horizontal`, 2, 2, 4, `${rockId}_support`);
+		}
+	}
 
 	global.AD_ASTRA_WOOD.forEach((wood) => {
 		event.support(`tfg:${wood.name}_support_horizontal`, 2, 2, 4, `${wood.name}_support`);
+	});
+	global.WAB_WOOD.forEach((wood) => {
+		event.support(`tfg:wood/support/${wood.name}_horizontal`, 2, 2, 4, `${wood.name}_support`);
+	});
+	global.TFG_NEW_WOOD_TYPES.forEach((wood) => {
+		event.support(`tfg:wood/support/${wood.name}_horizontal`, 2, 2, 4, `${wood.name}_support`);
 	});
 }
 

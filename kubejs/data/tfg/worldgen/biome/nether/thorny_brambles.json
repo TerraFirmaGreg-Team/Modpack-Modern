@@ -47,6 +47,10 @@
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_pool"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/glow_mushroom",
@@ -58,7 +62,6 @@
 			"tfg:nether/tree/beech_shrub",
 			"tfg:nether/tree/beech_fallen_leaves",
 			"tfg:nether/tree/beech_twig",
-			"tfg:nether/terrain/garnet_sands_disk",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -85,11 +88,8 @@
 		"#tfg:nether_global_decoration",
 		[
 			"tfg:nether/entity/zombie_horse",
-			"tfg:nether/terrain/thorn_vegetation_patch",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/terrain/thorn_vegetation_patch"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -111,17 +111,16 @@
 		"ambient": [
 			{
 				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "tfg:slime",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 70
+				"weight": 100
 			}
-		
 		],
 		"axolotls": [],
 		"creature": [
@@ -208,7 +207,7 @@
 			},
 			{
 				"type": "species:spectre",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			},

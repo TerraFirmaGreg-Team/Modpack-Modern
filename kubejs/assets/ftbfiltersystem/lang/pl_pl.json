@@ -35,5 +35,6 @@
   "ftbfiltersystem.message.matched": "Filtr pasuje: %s",
   "ftbfiltersystem.message.not_matched": "Filtr nie pasuje: %s",
   "ftbfiltersystem.message.parse_failed": "Nie udało się przetworzyć filtra: %s",
-  "item.ftbfiltersystem.smart_filter": "Inteligentny filtr"
+  "item.ftbfiltersystem.smart_filter": "Inteligentny filtr",
+  "item.ftbfiltersystem.smart_filter.tooltip.1": "PPM: konfiguruj filtr"
 }

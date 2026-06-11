@@ -39,4 +39,6 @@ function removeGreateRecipes(event) {
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 	event.remove({ mod: 'greate', type: 'gtceu:assembler' });
+
+	event.remove({ id: "gtceu:shaped/andesite_alloy_shaft" });
 }

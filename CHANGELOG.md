@@ -2,10 +2,38 @@
 
 ## Unreleased
 ### Changes
-
-- Made player heads craftable. Check out [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) (client-side mod) to turn them into into adorable dolls. @ashleney
-
+- Reduced the processing speed of vibration tables @Pyritie
+- If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
+- Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 ### Bug fixes
+- Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
+- Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
+- Fixed being able to stonecut raw tuff into tuff bricks and other deco blocks, instead of having to make the bricks first (#4228) @Pyritie
+
+## [0.12.10] - 09-06-2026
+### Changes
+- Reduced HP of cliff hanger and leaf hangers @Pyritie
+- Reduced spawn rate of bats in the beneath and increased spawn of friendly slimes @Pyritie
+- Reduced spawn rate of Spectres in the upper and middle layers of the beneath @Pyritie
+- Increased the amount of clay in the decaying caverns and muggy bog biomes @Pyritie
+- Create Connected's Kinectic Bridge no longer allows you to bypass Greate's tier limits @ashleney
+- Reduced temperature of Inert Furnace Gas, so now you can use stainless steel pipes and drums to move it @TomPlop
+- Changed recipe of the kinetic bridge @Pyritie
+### Bug fixes
+- Fixed missing recipes for sodium dichromate @TomPlop
+- Fixed incorrect loot tables for different gravels @Pyritie
+- Fixed TFC metal items melting into the wrong liquid metal @Pyritie
+- Fixed not being able to craft logs into wood @Pyritie
+- Fixed new twigs not able to be directly converted into sticks @Pyritie
+- Fixed new saplings not being instantly mined @Pyritie
+- Fixed missing sandstone crafting recipes @Pyritie
+- Fixed small ores querning into powders and not small dusts (#4215) @Pyritie
+- Fixed lava slimes not being fireproof @Pyritie
+- Fixed basins not being craftable in the bronze age @Pyritie
+- Fixed an assembler recipe conflict between basins and heavy weighted pressure plates (#4214) @Pyritie
+- Fixed missing stripped log tag from new woods @Pyritie
+### Mods
+- Add Create Stock Bridge, which lets your create logistics network talk to your AE2 network (it caused a crash with the previous fluid logistics mod)
 
 ## [0.12.9] - 07-06-2026
 ### Breaking changes
@@ -16,7 +44,7 @@
 - TFC Gourmet has been removed. @Redeix
 - Freeze dried fruit have all been condensed into 1 item. @Redeix
 - Cyrodessicated food now needs MV. @Redeix
-#### Ores
+#### Chromium & Naquadah
 The processing for Chromium has been changed. Due to the addition of slurries, ruby became better than chromite ore to obtain chromium, which has been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore, but have to do a processing line to obtain chromium from ruby. Aluminium has also been removed from ruby. In exchange, you can now obtain chromium through Garnet Sand, Uvarovite, Ruby, and Chromite.
 There are different processes to obtain the final Chromium, and you will have to decide which one you prefer. It's also a new way to obtain Alumina.
 Naquadah has been removed from the Beneath. It has temporarily been moved to the Ostrum Linear Accelerator until it eventually finds a home on a future planet.
@@ -44,9 +72,6 @@ On top of the nutrition rework, we are also making a large balance pass on our f
 - Adds a new block called the Multi-Fluid Tank which can hold up to 8 different fluids at a time, but only 8 buckets total per block. Includes an access port block for automation
 - Adds a new tool called the Hand Pointer which lets you configure various create logistics components after they've been placed
 - Added an assembler recipe for the normal packager
-### Chromium Changes
-The processing for Chromium has been changed. Due to the addition of slurries, ruby became better than chromite ore to obtain chromium, which has been an unexpected change. To fix this issue, you can't centrifuge ruby slurry anymore, but have to do a processing line to obtain chromium from ruby. Aluminium has also been removed from ruby. In exchange ,you can now obtain chromium through Garnet Sand, Uvarovite, Ruby and Chromite.
-There are different processes to obtain the final Chromium, and you will have to decide which one you prefer. It's also a new way to obtain Alumina.
 ### Other Changes
 - Blue and Red Steel hiking boots now have ambiental stats. Tweaked the speed and durability stats of both to make them more distinct. Step Up can be disabled with a toggle. (#3998, #4088) @SakuraKitsurugi
 - Removed the speed FoV effect from GregTech concrete blocks, and reduced their speed to 1.2x to better balance them against other road blocks and various speed boosting effects @SakuraKitsurugi (#4053)
