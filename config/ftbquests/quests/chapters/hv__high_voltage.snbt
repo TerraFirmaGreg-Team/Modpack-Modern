@@ -1972,7 +1972,11 @@
 		}
 		{
 			dependencies: ["396E85A39FF414CF"]
-			description: ["{quests.high_voltage.wireless_charger.desc}"]
+			description: [
+				"{quests.high_voltage.wireless_charger.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.wireless_charger.desc.2}"
+			]
 			id: "380C4E4E1D97C9D0"
 			optional: true
 			shape: "heart"
