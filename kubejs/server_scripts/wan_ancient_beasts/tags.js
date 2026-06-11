@@ -1,12 +1,6 @@
 "use strict";
 
 const registerWABBlockTags = (event) => {
-	global.WAB_DISABLED_BLOCKS.forEach(block => {
-		event.removeAllTagsFrom(block)
-	})
-	global.WAB_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
 
 	// don't put sand layers on these, otherwise they'll fall through
 	event.add('minecraft:snow_layer_cannot_survive_on', 'wan_ancient_beasts:quick_sand')
@@ -16,10 +10,6 @@ const registerWABBlockTags = (event) => {
 }
 
 const registerWABItemTags = (event) => {
-	global.WAB_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
 
 	event.removeAll('wan_ancient_beasts:paleontologist_common')
 	event.removeAll('wan_ancient_beasts:paleontologist_rare')
@@ -52,6 +42,15 @@ const registerWABItemTags = (event) => {
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:snatcher_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:raider_egg')
 	event.add('tfg:martian_eggs', 'wan_ancient_beasts:charger_egg')
+
+	// Wood
+	event.add("tfg:softwood", `#wan_ancient_beasts:ginkgo_logs`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_log`);
+	event.add("tfg:stripped_softwood", `wan_ancient_beasts:stripped_ginkgo_wood`);
+	event.add("tfg:softwood_supports", `tfg:wood/support/ginkgo`);
+
+	event.add("forge:stripped_logs", "wan_ancient_beasts:stripped_ginkgo_log");
+	event.add("forge:stripped_logs", "wan_ancient_beasts:stripped_ginkgo_wood");
 }
 
 const registerWABEntityTypeTags = (event) => {

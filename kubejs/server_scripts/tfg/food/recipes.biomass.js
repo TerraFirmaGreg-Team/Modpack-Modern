@@ -166,11 +166,6 @@ function registerTFGBiomassRecipes(event) {
 		.circuit(3)
 
 	// Misc
-	event.recipes.gtceu.macerator('macerate_cocoa')
-		.itemInputs('firmalife:food/roasted_cocoa_beans')
-		.itemOutputs('gtceu:cocoa_dust')
-		.duration(100)
-		.EUt(2)
 
 	event.recipes.gtceu.macerator('macerate_meat_to_dust')
 		.itemInputs('#tfc:foods/meats')

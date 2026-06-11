@@ -16,11 +16,11 @@
       "type": "patchouli:text",
       "anchor": "lavacado",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 20 - 100 %$(br2)Lavacado trees grow in the months of December through April, start flowering in May and June, and bear fruit in July.",
-      "title": "Lavacado"
+      "title": "ラヴァボカド"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example lavacado tree.",
+      "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
       "multiblocks": [
         {
           "pattern": [
@@ -81,11 +81,11 @@
       "type": "patchouli:text",
       "anchor": "magmango",
       "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 8 - 80 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 100 %$(br2)Magmango trees grow in the months of October through February, start flowering in March and April, and bear fruit in May.",
-      "title": "Magmango"
+      "title": "マグマンゴー"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example magmango tree.",
+      "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
       "multiblocks": [
         {
           "pattern": [
@@ -185,7 +185,7 @@
           "text": "Dec"
         },
         {
-          "text": "Lavacado"
+          "text": "ラヴァボカド"
         },
         {
           "fill": "0x6ab553"
@@ -224,7 +224,7 @@
           "fill": "0x6ab553"
         },
         {
-          "text": "Magmango"
+          "text": "マグマンゴー"
         },
         {
           "fill": "0x6ab553"

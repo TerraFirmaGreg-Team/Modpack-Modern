@@ -1,0 +1,8 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"parent": "tfg:block/cross_emissive",
+	"textures": {
+		"cross": "beneath:block/plant/gleamflower",
+		"cross_emissive": "beneath:block/plant/gleamflower_e"
+	}
+}

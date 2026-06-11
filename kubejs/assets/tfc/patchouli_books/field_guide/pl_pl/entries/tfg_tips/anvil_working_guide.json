@@ -16,7 +16,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
-            "text": "The UI for the Anvil with TFC Anvil Helper Enabled"
+            "text": "Interfejs kowadła z włączonym TFC Anvil Helper"
         },
         {
             "type": "patchouli:image",
@@ -68,7 +68,7 @@
         {
             "type": "patchouli:text",
             "anchor": "how_to_perfectly_forge",
-            "title": "How to Perfectly Forge",
+            "title": "Jak doskonale kuć",
             "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to it's durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
         },
         {
@@ -98,7 +98,7 @@
             "images": [
                 "tfg:textures/gui/field_guide/anvil_working_guide/steps.png"
             ],
-            "text": "The steps required for a Pickaxe"
+            "text": "Kroki wymagane do kilofa"
         },
         {
             "type": "patchouli:text",

@@ -1,0 +1,15 @@
+{
+	"name": "tfg:beneath/tower_floors",
+	"fallback": "tfg:beneath/tower_floors",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:beneath/tower_basic",
+				"processors": "tfg:beneath/tower_bastion",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

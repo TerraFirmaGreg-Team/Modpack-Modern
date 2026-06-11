@@ -1,15 +1,15 @@
 {
-  "name": "Concrete Roads",
+  "name": "混凝土道路",
   "category": "tfc:roadsandroofs",
   "icon": "rnr:concrete_road_panel",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Concrete roads are the fastest variety of road that can be constructed, offering a 30% movement speed bonus when properly constructed. However, road builders must be diligent when constructing concrete roads to prevent them from cracking or being trodden on while wet, as this will remove the speed bonus."
+      "text": "正確施作的混凝土路可提供30%移动速度加成。 施工時應確保混泥土凝固前不被踩踏或開裂，否則將失去速度增益。"
     },
     {
       "type": "patchouli:image",
-      "title": "Concrete Road",
+      "title": "混凝土道路",
       "images": [
         "rnr:textures/gui/book/concrete_road.png"
       ],
@@ -19,23 +19,23 @@
       "type": "patchouli:spotlight",
       "anchor": "liquid_concrete",
       "item": "gtceu:concrete_bucket",
-      "title": "Concrete Crafting",
-      "text": "The first step in making a concrete road is mixing the liquid concrete. Use a $(thing)Mixer$() to combine water with any two stone dusts, one of either calcite or marble dust, and gypsum dust, or any three stone dusts with clay dust to make $(thing)Liquid Concrete$()."
+      "title": "製作混凝土",
+      "text": "建造混凝土道路的第一步混合濕混凝土。用$(thing)攪拌機$()將水與任兩種石粉方解/大理石粉以及石膏粉混合；或用三種石粉加黏土粉，來製作$(thing)液態混凝土$()。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "wet_concrete",
       "item": "rnr:bucket/concrete",
-      "title": "Concrete Crafting",
-      "text": "Then add the liquid concrete in a $(thing)Mixer$() set to $(thing)Programmed Circuit #7$() with more water to dilute it into $(thing)Wet Concrete Mix$()."
+      "title": "製作混凝土",
+      "text": "把$(thing)攪拌機$()設為$(thing)程式電路 #7$()，加入更多水稀釋液態混凝土，得到$(thing)濕混凝土混合物$()。"
     },
     {
       "type": "patchouli:text",
-      "text": "Once $(thing)Wet Concrete$() has been mixed, it can be picked up in a bucket and placed on a $(thing)Base Course Block$() where it will spread to adjacent blocks. The concrete will harden after one day, and until it hardens care must be taken that no creatures walk through the wet concrete as this will create an uneven surface that provides no speed bonus. Footprints can be smoothed out with a $(thing)Mattock$()."
+      "text": "取得已混合的$(thing)濕混凝土$()就可以用桶舀取並倒在$(thing)基層方塊$()上，它會自動向相鄰方塊蔓延。混凝土需要一天時間硬化，此期间要防止生物踩踏尚未凝固的混凝土，否則會形成不平整的表面導致速度加成失效。$(thing)鶴嘴鋤$()可以抹平腳印。"
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring a Concrete Road",
+      "title": "澆築混凝土路",
       "images": [
         "rnr:textures/gui/book/wet_concrete.png"
       ],
@@ -43,11 +43,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Shrinkage cracking is also a concern as concrete sets. If concrete is poured in areas more than four blocks wide, blocks that are farther than two blocks from the nearest $(thing)Edge$(), $(thing)Control Joint$(), or $(thing)Textured Finish$() will crack when set. This can be prevented by pouring concrete in smaller areas, using a $(thing)Mattock$() to add $(thing)Control Joints$(), or by applying a $(thing)Textured Finish$()."
+      "text": "混凝土乾燥過程還會發生收縮開裂問題。當澆築區域任意方向寬度超過4格時，距离混凝土$(thing)邊緣$()、$(thing)控制縫$()或$(thing)紋理飾面$()超出2格的方塊會產生裂縫。通過分區澆築、每隔5格用$(thing)鶴嘴鋤$()添加$(thing)控制縫$()或$(thing)紋理飾面$()預防開裂。"
     },
     {
       "type": "patchouli:image",
-      "title": "Control Joints",
+      "title": "控制縫",
       "images": [
         "rnr:textures/gui/book/control_joints.png"
       ],
@@ -55,11 +55,11 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(thing)Textured Finishes$() are created by pressing $(thing)Bricks$(), $(thing)Flagstones$(), or $(thing)Smooth Stone Blocks$() into drying concrete to create an architectural finish. These blocks also act as $(thing)Control Joints$() for preventing cracking. Once concrete has finished drying, a $(thing)Chisel$() can be used to form slabs and stairs."
+      "text": "$(thing)紋理飾面$()藉由將$(thing)磚頭$()、$(thing)鋪路磚$()或$(thing)平滑石方塊$()壓進凝固中的混凝土形成裝飾表面，這些方塊兼具防開裂的$(thing)控制縫$()功能。混凝土完全乾燥後可用$(thing)鑿子$()製作半磚與階梯。"
     },
     {
       "type": "patchouli:image",
-      "title": "Faux Sett Road",
+      "title": "仿石磚路",
       "images": [
         "rnr:textures/gui/book/faux_sett.png"
       ],

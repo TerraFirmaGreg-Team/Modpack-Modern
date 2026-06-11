@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "浆果丛",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:plant/pineapple_bush",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Firmalife 模组新增了一些浆果丛。关于野生葡萄藤的信息，请参阅$(l:firmalife/wine)酿酒$()指南。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/nightshade_berry",
+      "link_recipes": false,
+      "text": "首先是龙葵。龙葵是一种有毒浆果。放入汤中可制成带毒性的$(thing)恶臭毒汤$()。它生成于年降雨量200-400毫米、气温7-24℃的森林地带。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "firmalife:food/pineapple",
+      "link_recipes": false,
+      "text": "菠萝灌木丛能在降雨量介于250-500mm之间与温度介于20-32摄氏度区间内的森林中找到。菠萝特性基本与其他水果一致，除了它们能被制作成 $(thing)菠萝布$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/pineapple_fiber",
+      "text": "$(l:firmalife/drying)晒干$()的菠萝能被制成菠萝纤维。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:kjs/damage/shapeless/pineapple_yarn",
+      "text": "菠萝线是通过使用$(thing)纺锤$()与菠萝纤维合成得到的。"
+    },
+    {
+      "type": "tfc:loom_recipe",
+      "recipe": "firmalife:loom/pineapple_leather",
+      "text": "最后，菠萝布能在$(l:tfc:mechanics/weaving)织机$()中被加工。它是普通皮革的植物替代品，可用于装饰、合成或其他用途！"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 21
+}

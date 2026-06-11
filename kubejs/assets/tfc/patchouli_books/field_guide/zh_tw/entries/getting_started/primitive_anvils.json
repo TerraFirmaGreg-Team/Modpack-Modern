@@ -1,26 +1,26 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Primitive Anvils",
+  "name": "原始砧",
   "category": "tfc:getting_started",
   "icon": "tfc:rock/anvil/granite",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "An alternative to casting tools directly in the early game, and a requirement for higher tier metals, is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:mechanics/anvils#working)working$() and $(l:getting_started/primitive_anvils#welding)welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+      "text": "遊戲初期除了澆鑄工藝外，使用$(thing)砧$()鍛造也是另種選擇，同時更是加工高級金屬的必要條件。砧能完成兩種工藝：$(l:mechanics/anvils#working)鍛造$()和$(l:mechanics/anvils#welding)焊接$()。砧可將金属焊接成雙錠以製作成更高級的砧，這是處理該金属其他物品的必要步驟。"
     },
     {
       "type": "patchouli:text",
-      "text": "First, you need to acquire a block of $(thing)raw rock$(), that is $(thing)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(thing)igneous intrusive$() (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could $(l:getting_started/primitive_anvils#raw_rock)extract one$() from the surrounding rock."
+      "text": "首先，得找到$(thing)天然的$()$(thing)噴出岩$() （流紋岩、玄武岩、安山岩或英安岩）或$(thing)侵入岩$()（花崗岩、閃長岩或輝長岩）。可以選擇直接使用或者把它們從岩壁上$(l:getting_started/primitive_anvils#raw_rock)採下来$()。"
     },
     {
       "type": "patchouli:text",
       "anchor": "stone_anvils",
-      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
-      "title": "Rock Anvil"
+      "text": "還需要一把任意材料製作的$(thing)鍛造錘$()。手持$(thing)鍛造錘$()右鍵點擊岩石$(thing)上面$()即可變成砧。$(br2)砧有不同$(l:mechanics/anvils#tiers)等级$()。石砧是等級 0 - 也就是最低等級。只能用來$(l:mechanics/anvils#welding)焊接$() 1 級的金属錠。",
+      "title": "石砧"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Converting the center raw rock to an anvil.",
+      "text": "將中間的岩石塊製成石砧。",
       "multiblocks": [
         {
           "pattern": [
@@ -42,12 +42,12 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
-      "title": "Obtaining Raw Rock"
+      "text": "要得到天然的岩石，直接用鎬挖是行不通不行的。唯一的方法是挖掉其六面相鄰的方塊， $(thing)懸空$()的岩石就會掉落為物品了。",
+      "title": "取得天然岩石"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+      "text": "挖掉天然岩石的六個相鄰面——完成後，將作為物品掉落。",
       "multiblocks": [
         {
           "pattern": [
@@ -215,12 +215,12 @@
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
-      "title": "Welding"
+      "text": "焊接是將两个物品熔合成新物品的工藝。不論是$(l:getting_started/primitive_anvils)石砧$()或$(l:mechanics/anvils)金屬砧$()都一樣。$(br2)首先，必須將待焊接的兩個物品放置在砧上。潛伏時手持物品對砧右鍵或開啟砧的界面將其放入左側的兩個槽位。",
+      "title": "焊接"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "此外，砧內需存放$(l:mechanics/flux)助焊劑$()來輔助焊接。當兩物品均達到$(l:mechanics/heating)可焊接温度$()｢提示訊息將顯示“可焊接”」時，用任意 $(thing)鍛造錘$() 擊打砧或點擊砧界面中的焊接按鈕即可。此時將發出鍛打音效，物品也随之熔合為一體。"
     }
   ],
   "read_by_default": true,

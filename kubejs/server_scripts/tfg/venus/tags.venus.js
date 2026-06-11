@@ -138,7 +138,6 @@ function registerTFGVenusEntityTypeTags(event) {
 		"endermanoverhaul:savanna_enderman",
 		"endermanoverhaul:nether_wastes_enderman",
 		"ad_astra:sulfur_creeper",
-		'species:cliff_hanger',
 		'species:trooper',
 		'primitive_creatures:golem_2',
 		'arthropocolypse:scarab',
@@ -170,7 +169,6 @@ function registerTFGVenusEntityTypeTags(event) {
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:desert_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:savanna_enderman')
 	event.add('tfc:deals_slashing_damage', 'endermanoverhaul:nether_wastes_enderman')
-	event.add('tfc:deals_slashing_damage', 'species:cliff_hanger')
 	event.add('tfc:deals_crushing_damage', 'minecraft:magma_cube')
 	event.add('tfc:deals_crushing_damage', 'primitive_creatures:golem_2')
 	event.add('tfc:deals_piercing_damage', 'arthropocolypse:scarab')

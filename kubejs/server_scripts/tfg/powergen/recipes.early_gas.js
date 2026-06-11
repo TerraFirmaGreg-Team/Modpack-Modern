@@ -238,7 +238,7 @@ function registerTFGEarlyGasRecipes(event) {
 	function modifyRecipes(recipeIds, duration) {
 	recipeIds.forEach(id => {
 		global.modifyRecipe(event, id, {
-		newId: "tfg:" + linuxUnfucker(id),
+		newId: `tfg:${global.linuxUnfucker(id)}`,
 		duration: duration
 		})
 	})
@@ -309,8 +309,8 @@ function registerTFGEarlyGasRecipes(event) {
 		.itemInputs(Item.of('#forge:dusts/aluminium'))
 		.inputFluids(Fluid.of('tfc:lye', 1000))
 		.itemOutputs(Item.of('#forge:dusts/sodium_aluminium', 1))
-		.duration(20*26)
-		.EUt(GTValues.VA[GTValues.LV])
+		.duration(8)
+		.EUt(GTValues.VA[GTValues.EV])
 
 	event.recipes.gtceu.chemical_reactor('tfg:tpaoh')
 		.itemInputs(Item.of('2x #forge:dusts/sodium'))

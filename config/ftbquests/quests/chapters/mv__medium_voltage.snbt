@@ -19,6 +19,12 @@
 			x: -10.0d
 			y: 17.0d
 		}
+		{
+			id: "1F73EFB819A489A9"
+			linked_quest: "3AF4B19564593C89"
+			x: 3.0d
+			y: 9.0d
+		}
 	]
 	quests: [
 		{
@@ -519,6 +525,7 @@
 				"1646BF9194100E57"
 				"02D2A2FFAB2AB0F1"
 				"3B34F995B31D4C5B"
+				"3AF4B19564593C89"
 			]
 			description: ["{quests.medium_voltage.mv_kanthal_coil.desc}"]
 			hide_dependency_lines: false

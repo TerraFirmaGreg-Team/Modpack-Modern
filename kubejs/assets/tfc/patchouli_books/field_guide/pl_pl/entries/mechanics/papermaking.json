@@ -10,7 +10,7 @@
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/papyrus_strips",
-        "text": "Papyrus must first be cut into strips with a $(thing)Knife$()"
+        "text": "Papirus należy najpierw przeciąć na paski za pomocą $(thing)noża$()"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
@@ -30,7 +30,7 @@
       {
         "type": "patchouli:crafting",
         "recipe": "minecraft:writable_book",
-        "recipe2": "minecraft:book"
+        "recipe2": "minecraft:book_from_glue"
       },
       {
         "type": "patchouli:crafting",

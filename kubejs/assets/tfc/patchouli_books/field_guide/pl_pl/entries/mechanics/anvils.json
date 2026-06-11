@@ -35,7 +35,7 @@
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Każde kowadło posiada swoją  $(thing)rangę$(), która określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów odpowiadających rangą jego własnej oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Ranga 0$(): Kamienne kowadła$(li)$(bold)Ranga I$(): Miedź$(li)$(bold)Ranga II$(): Brąz bizmutowy, Brąz czarny, Brąz$(li)$(bold)Ranga III$(): Żelazo kuźnicze$(li)$(bold)Ranga IV$(): Stal$(li)$(bold)Ranga V$(): Stal czarna$(li)$(bold)Ranga VI$(): Stal czerwona, Stal niebieska"
+      "text": "Każde kowadło posiada swój $(thing)poziom$(), który określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów o takim samym poziomie oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Poziom 0$(): Kamienne kowadło$(li)$(bold)Poziom I$(): Miedź$(li)$(bold)Poziom II$(): Brąz bizmutowy, Czarny brąz, Brąz$(li)$(bold)Poziom III$(): Kute żelazo$(li)$(bold)Poziom IV$(): Stal$(li)$(bold)Poziom V$(): Czarna stal$(li)$(bold)Poziom VI$(): Czerwona stal, Niebieska stal"
     },
     {
       "type": "patchouli:text",
@@ -89,7 +89,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
-      "title": "Bezbłędnie wykute",
+      "title": "Idealnie wykute",
       "link_recipes": false,
       "text": "Wyróżniamy cztery jakości bonusu: $(li)Słabo wykute$(li)Dobrze wykute$(li)Profesjonalnie wykute$(li)Bezbłędnie wykute$(br2) Bonusy te zwiększają jakość wykonanego narzędzia, czyniąc je wytrzymalszym, szybszym i/lub zadającym więcej obrażeń podczas walki, zależnie od jego rodzaju."
     },

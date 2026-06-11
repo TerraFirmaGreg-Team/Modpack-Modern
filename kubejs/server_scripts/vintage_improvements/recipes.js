@@ -331,8 +331,11 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Vibrating
 
-		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)
-			&&material !== GTMaterials.Coal && material !== GTMaterials.get('lignite')) {
+		if (material.hasProperty(PropertyKey.ORE) 
+			&& material.hasProperty(PropertyKey.GEM)
+			&& material !== GTMaterials.Coal 
+			&& material !== GTMaterials.get('lignite')
+			&& material !== GTMaterials.get('anthracite')) {
 
 			let highYield = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT)
 
@@ -346,7 +349,7 @@ function registerVintageImprovementsRecipes(event) {
 					Item.of(ChemicalHelper.get(TagPrefix.gemChipped, material, 1)).withChance(highYield ? 0.30 : 0.35)
 				], 
 				ChemicalHelper.get(TagPrefix.crushedPurified, material, 1))
-					.processingTime(200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+					.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 					.id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
@@ -396,7 +399,7 @@ function registerVintageImprovementsRecipes(event) {
 			Item.of('minecraft:flint').withChance(0.33),
 			Item.of('minecraft:flint').withChance(0.25)
 		], '#tfc:rock/gravel')
-		.processingTime(100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.processingTime(250 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id(`tfg:vi/vibrating/gravel`)
 
 	// #endregion
@@ -570,5 +573,5 @@ function generateHammeringRecipeFromItem(event, input, output, blows, anvil) {
 	event.recipes.vintageimprovements.hammering(output, input)
 		.anvilBlock(`tfc:metal/anvil/${anvil}`)
 		.hammerBlows(Math.max(blows, 1))
-		.id(`tfg:vi/hammer/${linuxUnfucker(input)}_on_${anvil}_anvil`)
+		.id(`tfg:vi/hammer/${global.linuxUnfucker(input)}_on_${anvil}_anvil`)
 }

@@ -56,6 +56,7 @@ function registerTFGIconSets(event) {
 	event.create('tfc_chromite').parent('dull')
 		
 	event.create('nether_quartz').parent('quartz')
+    event.create('anthracite').parent('lignite')
 
 
     // Looks like VI vanadium

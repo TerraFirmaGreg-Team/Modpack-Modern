@@ -17,11 +17,17 @@
                 "#tfg:dead_crops",
                 "#minecraft:leaves",
                 "#forge:surface_rocks",
+                "#tfc:rock/raw",
+                "#forge:cobblestone",
+                "#tfc:rock/gravel",
                 "#tfg:bud_ore_indicators",
                 "#tfg:decorative_vases/generated",
                 "ad_astra:sky_stone",
                 "ad_astra:cheese_block",
-                "ad_astra:moon_cheese_ore"
+                "ad_astra:moon_cheese_ore",
+                "tfg:huge_quartz",
+                "tfg:halite",
+                "minecraft:basalt"
             ]
         }
     ],

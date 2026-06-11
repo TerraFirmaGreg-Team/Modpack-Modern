@@ -110,6 +110,16 @@ const registerSimplylightRecipes = (event) => {
 		C: '#forge:bolts/tin_alloy'
 	}).addMaterialInfo().id('tfg:simplylight/rod_lamp')
 
+	event.recipes.gtceu.shaped('12x minecraft:end_rod', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: 'minecraft:glowstone',
+		B: '#forge:rods/tin_alloy',
+		C: '#forge:bolts/tin_alloy'
+	}).addMaterialInfo().id('tfg:shaped/end_rod')
+
 	event.recipes.gtceu.shaped('2x simplylight:lightbulb', [
 		' A ',
 		'BBB',

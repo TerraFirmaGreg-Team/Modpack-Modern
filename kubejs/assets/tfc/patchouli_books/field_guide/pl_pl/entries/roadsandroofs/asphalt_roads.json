@@ -35,7 +35,7 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Pouring Asphalt",
+      "title": "Lanie asfaltu",
       "images": [
         "tfg:textures/gui/field_guide/asphalt_roads/pouring.png"
       ],
@@ -48,7 +48,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_road_hot",
-      "title": "Hot Asphalt",
+      "title": "Gorący asfalt",
       "text": "$(thing)Hot Asphalt$() is very hot; touching it will cause ongoing burn damage. Wear heat-protective gear when working with it.$(br2)Once it cools to $(thing)Asphalt Road$(), the surface is no longer hot."
     },
     {
@@ -62,7 +62,7 @@
       "item": {
         "tag": "tfg:road_marking_stencils"
       },
-      "title": "Road Marking Stencils",
+      "title": "Oznakowania drogowe",
       "text": "The most distinctive customization feature of asphalt roads is road marking: spray colours and patterns on the finished surface to plan lanes, intersections, and warning lines.$(br2)Various stencils can be crafted at an $(thing)Artisan Table$()."
     },
     {
@@ -90,7 +90,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfg:asphalt_rubble",
-      "title": "Breaking and Recycling",
+      "title": "Zrywanie i odzyskiwanie materiałów",
       "text": "Breaking asphalt roads, hot asphalt, slabs, or stairs drops $(thing)Asphalt Rubble$() instead of the intact block. Processing the rubble in an $(thing)Extractor$() recovers a small amount of asphalt mixture."
     }
   ],

@@ -1,24 +1,40 @@
 {
-	"name": "飲み物の効果",
+	"name": "飲み物",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "TerraFirmaCraftの世界にはポーションも魔法もありませんが、その代わりに似た効果を持つ飲み物が豊富に存在しています！$(br2)この項目では、それらの効果を一覧で確認できるようになっています。もちろん、水分補給にもなりますよ。"
+			"anchor": "intro",
+			"text": "TerraFirmaCraftの世界にはポーションも魔法もありませんが、その代わりに似た効果を持つ飲み物が豊富に存在しています！$(br2)この項目では、それらの効果を一覧で確認できるようになっています。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "目次",
+			"anchor": "index",
+			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)容器$()$(li)$(bold)$(l:mechanics/drinks#alcohol)酒類$()$(li2)$(l:mechanics/drinks#aged_alcohol)熟成酒類$()$(li2)$(l:mechanics/drinks#vintage_alcohol)年代物の酒類$()$(li2)$(l:mechanics/drinks#wine)ワイン$()$(li)$(bold)$(l:mechanics/drinks#spring_water)温泉水$()$(li)$(bold)$(l:mechanics/drinks#sea_water)海水$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)泥水$()$(li)$(bold)$(l:mechanics/drinks#juice)フルーツジュース$()$(li)$(bold)$(l:mechanics/drinks#yogurt)ヨーグルト$()$(li)$(bold)$(l:mechanics/drinks#smoothie)フルーツスムージー$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)アイススラッシュ$()"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "飲み物を入れる容器",
 			"text": "飲み物は、$(l:getting_started/pottery#jug)水差し$()、$(l:waterflasks/recipes)水筒$()、$(l:mechanics/glassworking_applications#glass_bottle)ガラス瓶$()から飲むことができます。水差しは1回分しか入らず壊れやすいです。ガラス瓶は数回分入るものの壊れることがあります。水筒はより多くの量が入りて、耐久値を消費することで長く使えます。なお、$(item)赤鋼製水筒$()は特に優秀で、20回分入り、なんと壊れることはありません。",
-			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask"
+			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
+			"anchor": "containers"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "酒の熟成",
-			"text": "$(thing)酒の熟成$()は、果物や粉などの材料を水と一緒に樽に入れて作った酒類を、さらにそのまま樽で熟成させることで作ることができます。飲むと能力が上昇するほか、酔っぱらってチャットでの話し方が変化するというユニークな効果もあります！",
-			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+			"title": "酒",
+			"text": "酒は、果物や穀物の粉などの材料を水と一緒に$(l:mechanics/barrels)樽$()に入れて置いておくことで製造することができます。熟成されていない$(thing)酒$()は、飲んでも能力を強化したりはしませんが、チャットでの会話は楽しくなることでしょう！\n",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+			"anchor": "alcohol"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "熟成した酒",
+			"text": "$(thing)熟成した酒$()は、酒を密閉した樽で3か月ほど寝かせることで作られます。熟成された酒は飲むことで固有のバフを得ることができます。",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
+			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:text",
@@ -28,7 +44,8 @@
 			"type": "patchouli:spotlight",
 			"title": "年代物の酒",
 			"text": "$(thing)年代物の酒$()（ヴィンテージの酒）は、熟成した酒類を密閉した樽でさらに寝かせることで作られます。効果と持続時間がさらに強化されます。",
-			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket"
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
+			"anchor": "vintage_alcohol"
 		},
 		{
 			"type": "patchouli:text",
@@ -38,7 +55,8 @@
 			"type": "patchouli:text",
 			"title": "ワイン",
 			"text": "$(thing)ワイン$()は、他のアルコールとは異なる特別な製法で作られます。工程は複雑ですが、その分しっかりした見返りがあります。また、この工程は機械で自動化することはできません。詳しい作り方は$(l:firmalife/wine)ワイン作り$()の項目をご覧ください。$(br2)また、すべてのワインは固有の効果に加えて$(item)攻撃力上昇（5:20）$()の効果も得られます！",
-			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine"
+			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
+			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
@@ -46,47 +64,69 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "お茶",
-			"text": "$(thing)お茶$()は、特定の植物を乾燥させて淹れることができます。$(br2)効果時間は短いものの便利な効果が得られ、さらに体温を4℃上げてくれるため、寒い冬にぴったりです！",
-			"item": "tfc_gourmet:tea_mint_bucket,tfc_gourmet:tea_chamomile_bucket,tfc_gourmet:tea_rosehip_bucket,tfc_gourmet:tea_nettle_bucket"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)ミントティー：再生II（0:30）$(li)カモミールティー：耐性II（0:30）$(li)ローズヒップティー：衝撃吸収（0:30）$(li)ネトルティー：低速落下（0:30）"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "嗜好品",
-			"text": "ここでは、さまざまな種類の飲み物をまとめています。どれも美味しく、特別な効果を持っています。ぜひお楽しみください！",
-			"item": "tfc_gourmet:cocoa_bucket,tfc_gourmet:coffee_bucket,tfc_gourmet:nalivka_bucket,tfc_gourmet:kvass_bucket,tfc_gourmet:compote_bucket,tfc_gourmet:lemonade_bucket"
-		},
-		{
-			"type": "patchouli:text",
-			"text": "$(li)ココア：採掘速度上昇（0:30）、体を4℃温める$(li)コーヒー：移動速度上昇（0:30）、体を4℃温める$(li)レモネード：採掘速度上昇（0:30）、体を2℃冷やす$(li)ナレフカ：採掘速度上昇（4:00）、体を2℃冷やす$(li)クワス：採掘速度上昇（2:00）、体を2℃冷やす$(li)コンポート：跳躍力上昇II（0:30）"
-		},
-		{
-			"type": "patchouli:spotlight",
 			"title": "ミルク",
 			"text": "$(thing)ミルク$()は、親密度が十分に高い搾乳できる雌の家畜に、木や金属のバケツで右クリックすることで入手できます。（うまく搾乳できない場合は、バケツをスタックしていないか確認してください！）$(br)特別な効果はありませんが、飲むことで乳製品の栄養を補給でき、さらにチーズへ加工することも可能です。",
-			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk,tfc_gourmet:ox_milk_bucket,tfc_gourmet:sheep_milk_bucket,tfc_gourmet:alpaca_milk_bucket"
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
+			"anchor": "milk"
 		},
 		{
 			"title": "温泉水",
 			"text": "$(thing)温泉水$()は飲むことで体温が4℃上がります。温泉に入っている間は少しずつ体力が回復していき、体が温まります。",
 			"item": "tfc:bucket/spring_water",
-			"type": "patchouli:spotlight"
+			"type": "patchouli:spotlight",
+			"anchor": "spring_water"
 		},
 		{
 			"title": "海水",
 			"text": "$(thing)海水$()は飲んでも水分補給にはならず、かえって喉が渇いてしまいます。また、体温が高いほど喉の渇きも強くなります。もし海で遭難した場合は、雨が降るのを祈りましょう。雨が降っているときに上を向くことで水分補給ができます。",
 			"type": "patchouli:spotlight",
-			"item": "tfc:bucket/salt_water"
+			"item": "tfc:bucket/salt_water",
+			"anchor": "sea_water"
 		},
 		{
-			"title": "氷泥",
+			"title": "泥水",
+			"text": "$(thing)泥水$()は飲まない方がいいです。飲むと吐き気を引き起こし、寄生虫に寄生されるリスクもあります。",
+			"type": "patchouli:spotlight",
+			"item": "tfg:muddy_water_bucket",
+			"anchor": "muddy_water"
+		},
+		{
+			"title": "フルーツジュース",
+			"text": "$(thing)フルーツジュース$()は、果物を長持ちさせる方法の一つです。フルーツジュースを飲むと、$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()の効果を得られ、喉が渇きにくくなります。$(br2)ただし、フルーツジュースは飲み物の中では珍しく、時間の経過とともに腐敗します。$()",
+			"type": "patchouli:spotlight",
+			"anchor": "juice",
+			"item": "tfg:food/juice"
+		},
+		{
+			"title": "ヨーグルト",
+			"text": "$(thing)ヨーグルト$()はミルク類と同様に乳製品の栄養を補給できます。また、果物と混ぜることで$(item)フルーツヨーグルト$()を作れます。$(br2)ヨーグルトも時間の経過とともに腐敗します。$()",
+			"type": "patchouli:spotlight",
+			"anchor": "yogurt",
+			"item": "tfg:food/yogurt"
+		},
+		{
+			"title": "フルーツスムージー",
+			"text": "$(thing)スムージー$()は非常に優秀な飲み物です。$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()の効果と$(l:getting_started/food_and_water#cooling_transient_effect)冷却$()の効果の両方を得られます。また、$(l:getting_started/food_and_water#fruit)果物$()と$(l:getting_started/food_and_water#dairy)乳製品$()の栄養を補給する手段としても優れています。$(br2)スムージーも時間の経過とともに腐敗します。$()",
+			"type": "patchouli:spotlight",
+			"anchor": "smoothie",
+			"item": "tfg:food/smoothie"
+		},
+		{
+			"title": "氷泥（アイススラッシュ）",
 			"text": "$(thing)氷泥$()（アイススラッシュ）は飲むと体温を4℃下げてくれるため、暑い夏にぴったりです！Beneathの探索時にも役立ちます。",
 			"type": "patchouli:spotlight",
-			"item": "gtceu:ice_bucket"
+			"item": "gtceu:ice_bucket",
+			"anchor": "ice_slush"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "さらに読む",
+			"anchor": "relations",
+			"entries": [
+                "tfc:getting_started/food_and_water",
+                "tfc:firmalife/wine",
+                "tfc:waterflasks/recipes"
+			]
 		}
 	]
 }

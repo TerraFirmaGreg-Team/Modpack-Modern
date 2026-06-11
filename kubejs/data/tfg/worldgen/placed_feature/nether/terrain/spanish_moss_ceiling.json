@@ -13,10 +13,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 128
+					"below_top": 6
 				},
 				"min_inclusive": {
-					"above_bottom": 42
+					"absolute": 120
 				}
 			}
 		},
@@ -27,9 +27,18 @@
 				"blocks": "minecraft:air"
 			},
 			"direction_of_search": "up",
-			"max_steps": 12,
+			"max_steps": 6,
 			"target_condition": {
-				"type": "minecraft:solid"
+				"type": "minecraft:any_of",
+				"predicates": [
+					{
+						"type": "minecraft:solid"
+					},
+					{
+						"type": "minecraft:matching_block_tag",
+						"tag": "minecraft:leaves"
+					}
+				]
 			}
 		},
 		{

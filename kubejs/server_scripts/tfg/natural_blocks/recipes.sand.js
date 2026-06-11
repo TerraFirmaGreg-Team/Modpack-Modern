@@ -140,6 +140,14 @@ function registerTFGSandRecipes(event) {
 			.id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_wall`)
 	})
 
+	global.FLUORAPATITE_COLORS.forEach(color => {
+		event.recipes.gtceu.compressor(`tfg:fluorapatite_sand_${color}_to_sandstone`)
+			.itemInputs(`4x tfg:sand/fluorapatite/${color}`)
+			.itemOutputs(`tfg:sandstone/raw/fluorapatite/${color}`)
+			.duration(400)
+			.EUt(2)
+	})
+
 	// Quartz sand
 	event.shaped('gtceu:quartz_sand_dust', [
 		'A',

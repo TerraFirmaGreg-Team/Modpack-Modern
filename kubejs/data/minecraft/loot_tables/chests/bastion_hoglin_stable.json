@@ -542,6 +542,21 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:burlap_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:leather",
 					"functions": [
 						{
@@ -677,21 +692,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:wrought_iron_screw",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
 					"name": "tfc:metal/ingot/pig_iron",
 					"functions": [
 						{
@@ -782,6 +782,21 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:slime_ball",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
 					"functions": [
 						{
@@ -857,36 +872,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:wood/log/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/lumber/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 16,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
 					"name": "beneath:cursed_hide",
 					"functions": [
 						{
@@ -918,12 +903,57 @@
 							"function": "minecraft:set_count",
 							"count": {
 								"min": 3,
-								"max": 6,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
 					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:peanut_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:cassava_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:beans_product",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -943,7 +973,17 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:food/cooked_venison",
-					"weight": 50
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",

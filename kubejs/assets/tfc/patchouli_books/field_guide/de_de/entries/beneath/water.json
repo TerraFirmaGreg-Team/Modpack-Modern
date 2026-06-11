@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "These mushrooms spawn all over the Beneath. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper areas of the Beneath."
+			"text": "These mushrooms spawn all over the Beneath. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper and middle areas of the Beneath."
 		}
 	],
 	"read_by_default": true

@@ -111,7 +111,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 12%$(br)$(thing)Source of$(): Niobium$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
+      "text": "$(thing)パーセント$(): 12%$(br)$(thing)採取可能$(): ニオブ$(br)$(thing)化学式$(): Ca₂Nb₂O₇",
       "type": "patchouli:multiblock"
     },
     {
@@ -138,7 +138,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 85%$(br)$(thing)Used for$(): LV components$(br)$(thing)化学式$(): SiO₂",
+      "text": "$(thing)パーセント$(): 85%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -190,7 +190,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 75%$(br)$(thing)Used for$(): LV components$(br)$(thing)化学式$(): SiO₂",
+      "text": "$(thing)パーセント$(): 75%$(br)$(thing)用途$(): LV部品$(br)$(thing)化学式$(): SiO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -287,7 +287,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/140 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 17%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 0$(br)$(thing)高さ$(): 150$(br)$(thing)半径$(): 18$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)火山$(/t)$(br2)$(thing)岩石の種類$(): 斑れい岩, 花崗岩, 閃緑岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/140 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 17%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 0$(br)$(thing)高さ$(): 150$(br)$(thing)半径$(): 18$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, 楯状活火山, 楯状休火山, 楯状死火山, 楯状古火山, 楯状海底火山, 楯状火山海岸, 楯状旧火山海岸, Ice Sheet Shield Volcano, 氷床下火山, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, 氷底火山)火山$(/t)$(br2)$(thing)岩石の種類$(): 斑れい岩, 花崗岩, 閃緑岩",
       "title": "グラファイト, 歴青炭, ダイヤモンド （火山）",
       "type": "patchouli:text",
       "anchor": "deep_graphite_volcanic"
@@ -555,7 +555,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Source of$(): Phosphorous, Rare Earth$(br)$(thing)化学式$(): ?(PO₄)",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): リン、レアアース$(br)$(thing)化学式$(): ?(PO₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -575,12 +575,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)Source of$(): Neodymium$(br)$(thing)化学式$(): Nd",
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): ネオジム$(br)$(thing)化学式$(): Nd",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/50 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, Extreme Doline Mountains, Ice Sheet Mountains, Oceanic Ice Sheet Mountains, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, Glaciated Mountains, Glaciated Oceanic Mountains, Glacially Carved Mountains, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/50 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, ドリーネ高山, 氷床山岳, 海岸性氷床山岳, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, 氷冠山岳, Glaciated Oceanic Mountains, 氷食山岳, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "ビスマス",
       "type": "patchouli:text",
       "anchor": "high_bismuth_mountain"
@@ -607,7 +607,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/70 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — -10$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:平原, 丘, 低地, 緩やかな丘, 高地, 荒野, 高原, Plateau Wide, 高原の湖, Rocky Plateau, Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Burren Plateau, Burren Plains, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau)平原、高原、丘$(/t)$(br2)$(thing)岩石の種類$(): デイサイト, 凝灰岩, 安山岩, 流紋岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 苦灰岩, 角岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/70 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — -10$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:平原, 丘, 低地, 緩やかな丘, 高地, 荒野, 高原, 広い台地, 高原の湖, 岩石台地, 塔状カルスト平原, 塔状カルスト峡谷, 塔状カルスト丘陵, 塔状カルスト高地, バーレン台地, バーレン平原, 石林丘陵, 石林高地, 石林台地, ドリーネ平原, ドリーネ丘陵, ドリーネ丘陵, ドリーネ高地, ドリーネ台地, セノーテ平原, セノーテ丘陵, セノーテ丘陵, セノーテ高地, セノーテ台地, ドリーネ高原)平原、高原、丘$(/t)$(br2)$(thing)岩石の種類$(): デイサイト, 凝灰岩, 安山岩, 流紋岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 苦灰岩, 角岩, 頁岩",
       "title": "ビスマス （地表）",
       "type": "patchouli:text",
       "anchor": "surface_bismuth"
@@ -634,7 +634,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/140 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 27%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 20$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 15$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, Extreme Doline Mountains, Ice Sheet Mountains, Oceanic Ice Sheet Mountains, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, Glaciated Mountains, Glaciated Oceanic Mountains, Glacially Carved Mountains, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): 斑れい岩, 花崗岩, 閃緑岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/140 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 27%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 20$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 15$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, ドリーネ高山, 氷床山岳, 海岸性氷床山岳, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, 氷冠山岳, Glaciated Oceanic Mountains, 氷食山岳, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): 斑れい岩, 花崗岩, 閃緑岩",
       "title": "ビスマス, 自然銀, 自然金, エレクトロチン",
       "type": "patchouli:text",
       "anchor": "deep_bismuth"
@@ -676,7 +676,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 27%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 27%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -900,7 +900,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 7%$(br)$(thing)Source of$(): Magnesium, Iron$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
+      "text": "$(thing)パーセント$(): 7%$(br)$(thing)採取可能$(): マグネシウム、鉄$(br)$(thing)化学式$(): Mg₂Fe(SiO₂)₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1076,7 +1076,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 75%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)化学式$(): LiAlSi₂O₆",
+      "text": "$(thing)パーセント$(): 75%$(br)$(thing)採取可能$(): リチウム、アルミニウム$(br)$(thing)化学式$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -1096,7 +1096,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 25%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 25%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1155,7 +1155,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 50%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1175,7 +1175,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)化学式$(): CrAl₂O₃",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): クロム、アルミニウム$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1222,7 +1222,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 57%$(br)$(thing)Melts into$(): Redstone$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+      "text": "$(thing)パーセント$(): 57%$(br)$(thing)融解$():レッドストーン$(br)$(thing)化学式$(): Si(FeS₂)₅(CrAl₂O₃)Hg₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1242,7 +1242,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 28%$(br)$(thing)Source of$(): Chromium, Aluminium$(br)$(thing)化学式$(): CrAl₂O₃",
+      "text": "$(thing)パーセント$(): 28%$(br)$(thing)採取可能$(): クロム、アルミニウム$(br)$(thing)化学式$(): CrAl₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1294,7 +1294,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/90 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, Extreme Doline Mountains, Ice Sheet Mountains, Oceanic Ice Sheet Mountains, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, Glaciated Mountains, Glaciated Oceanic Mountains, Glacially Carved Mountains, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/90 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, ドリーネ高山, 氷床山岳, 海岸性氷床山岳, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, 氷冠山岳, Glaciated Oceanic Mountains, 氷食山岳, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "四面銅鉱, 自然銅, 輝安鉱 （高地）",
       "type": "patchouli:text",
       "anchor": "high_tetrahedrite"
@@ -1356,7 +1356,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 20%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)化学式$(): Sb₂S₃",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)融解$(): アンチモニー$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -1410,7 +1410,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 60%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)化学式$(): NaCl",
+      "text": "$(thing)パーセント$(): 60%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1430,7 +1430,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 40%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 40%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1440,7 +1440,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/190 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 26%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:Guano Island, 海岸, 干潟, Sea Stacks, Terrace Upper, Terrace Lower, Setback Cliffs, Coastal Dunes, Rocky Shores, Embayments, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shore)海岸と島$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/190 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 26%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:グアノ島, 海岸, 干潟, 海食柱, 段丘上層, 段丘下層, Setback Cliffs, 海岸砂丘, 岩礁海岸, 入り江, 楯状火山海岸, 楯状旧火山海岸, 氷床海岸)海岸と島$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "岩塩, カリ岩塩, ホウ砂",
       "type": "patchouli:text",
       "anchor": "normal_salt"
@@ -1462,7 +1462,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 60%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)化学式$(): NaCl",
+      "text": "$(thing)パーセント$(): 60%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1482,7 +1482,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1549,7 +1549,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 22%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 22%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1601,7 +1601,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 26%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 26%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -1695,7 +1695,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 27%$(br)$(thing)Source of$(): Manganese, Aluminium$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 27%$(br)$(thing)採取可能$(): マンガン、アルミニウム$(br)$(thing)化学式$(): Al₂Mn₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1715,7 +1715,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 22%$(br)$(thing)Source of$(): Manganese$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)パーセント$(): 22%$(br)$(thing)採取可能$(): マンガン$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1787,7 +1787,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 38%$(br)$(thing)Source of$(): Manganese$(br)$(thing)化学式$(): MnO₂",
+      "text": "$(thing)パーセント$(): 38%$(br)$(thing)採取可能$(): マンガン$(br)$(thing)化学式$(): MnO₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1834,7 +1834,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 42%$(br)$(thing)Source of$(): Tungsten$(br)$(thing)化学式$(): Ca(WO₃)O",
+      "text": "$(thing)パーセント$(): 42%$(br)$(thing)採取可能$(): タングステン$(br)$(thing)化学式$(): Ca(WO₃)O",
       "type": "patchouli:multiblock"
     },
     {
@@ -2181,7 +2181,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 100%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)化学式$(): KNO₃",
+      "text": "$(thing)パーセント$(): 100%$(br)$(thing)採取可能$(): カリウム、窒素$(br)$(thing)化学式$(): KNO₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2208,7 +2208,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 48%$(br)$(thing)Source of$(): Potassium, Nitrogen$(br)$(thing)化学式$(): KNO₃",
+      "text": "$(thing)パーセント$(): 48%$(br)$(thing)採取可能$(): カリウム、窒素$(br)$(thing)化学式$(): KNO₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2305,7 +2305,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/30 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 90%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 100 — 170$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)火山$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/30 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 90%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 100 — 170$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, 楯状活火山, 楯状休火山, 楯状死火山, 楯状古火山, 楯状海底火山, 楯状火山海岸, 楯状旧火山海岸, Ice Sheet Shield Volcano, 氷床下火山, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, 氷底火山)火山$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "硫黄 （火山）",
       "type": "patchouli:text",
       "anchor": "high_sulfur"
@@ -2399,7 +2399,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/150 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 29%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 32$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, Active Shield Volcano, Dormant Shield Volcano, Extinct Shield Volcano, Ancient Shield Volcano, Sunken Shield Volcano, Shield Volcano Shore, Old Shield Volcano Shore, Ice Sheet Shield Volcano, Ice Sheet Tuyas, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, Tuyas)火山$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/150 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 29%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 32$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:峡谷, 火山山岳, 海岸性火山山岳, 楯状活火山, 楯状休火山, 楯状死火山, 楯状古火山, 楯状海底火山, 楯状火山海岸, 楯状旧火山海岸, Ice Sheet Shield Volcano, 氷床下火山, Ice Sheet Tuyas Edge, Glaciated Shield Volcano, 氷底火山)火山$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "硫黄, 輝安鉱, 斑銅鉱 （火山）",
       "type": "patchouli:text",
       "anchor": "normal_sulfide"
@@ -2461,7 +2461,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 18%$(br)$(thing)Smelts into$(): Antimony$(br)$(thing)化学式$(): Sb₂S₃",
+      "text": "$(thing)パーセント$(): 18%$(br)$(thing)融解$(): アンチモニー$(br)$(thing)化学式$(): Sb₂S₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2488,7 +2488,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 63%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 63%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -2867,7 +2867,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/90 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 45%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -20 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:平原, 丘, 低地, 緩やかな丘, 高地, 荒野, 高原, Plateau Wide, 高原の湖, Rocky Plateau, Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Burren Plateau, Burren Plains, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau)平原、高原、丘$(/t)$(br2)$(thing)岩石の種類$(): 白亜, 石灰岩, 礫岩, 粘土岩, 苦灰岩, 角岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/90 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 45%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -20 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 15$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 35$(br)$(thing)バイオーム$(): $(t:平原, 丘, 低地, 緩やかな丘, 高地, 荒野, 高原, 広い台地, 高原の湖, 岩石台地, 塔状カルスト平原, 塔状カルスト峡谷, 塔状カルスト丘陵, 塔状カルスト高地, バーレン台地, バーレン平原, 石林丘陵, 石林高地, 石林台地, ドリーネ平原, ドリーネ丘陵, ドリーネ丘陵, ドリーネ高地, ドリーネ台地, セノーテ平原, セノーテ丘陵, セノーテ丘陵, セノーテ高地, セノーテ台地, ドリーネ高原)平原、高原、丘$(/t)$(br2)$(thing)岩石の種類$(): 白亜, 石灰岩, 礫岩, 粘土岩, 苦灰岩, 角岩, 頁岩",
       "title": "褐炭 （地表）",
       "type": "patchouli:text",
       "anchor": "surface_coal"
@@ -3079,7 +3079,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/190 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -30 — 80$(br)$(thing)高さ$(): 35$(br)$(thing)半径$(): 16$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:Tower Karst Plains, Tower Karst Canyons, Tower Karst Hills, Tower Karst Highlands, Tower Karst Lake, Tower Karst Bay, Burren Plateau, Burren Badlands, Burren Badlands Tall, Burren Plains, Burren Roche Moutonee, Shilin Plains, Shilin Canyons, Shilin Hills, Shilin Highlands, Shilin Plateau, Doline Plains, Doline Hills, Doline Rolling Hills, Doline Highlands, Doline Plateau, Doline Canyons, Cenote Plains, Cenote Hills, Cenote Rolling Hills, Cenote Canyons, Cenote Highlands, Cenote Plateau, Extreme Doline Plateau, Extreme Doline Mountains)カルスト地形$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/190 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -30 — 80$(br)$(thing)高さ$(): 35$(br)$(thing)半径$(): 16$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:塔状カルスト平原, 塔状カルスト峡谷, 塔状カルスト丘陵, 塔状カルスト高地, 塔状カルスト湖, 塔状カルスト湾, バーレン台地, バーレン荒原, バーレン高地荒原, バーレン平原, バーレン羊背岩, 石林平原, 石林峡谷, 石林丘陵, 石林高地, 石林台地, ドリーネ平原, ドリーネ丘陵, ドリーネ丘陵, ドリーネ高地, ドリーネ台地, ドリーネ峡谷, セノーテ平原, セノーテ丘陵, セノーテ丘陵, セノーテ峡谷, セノーテ高地, セノーテ台地, ドリーネ高原, ドリーネ高山)カルスト地形$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "輝銅鉱, 石膏, コバルト, 硫黄",
       "type": "patchouli:text",
       "anchor": "normal_copper_gypsum"
@@ -3392,7 +3392,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 24%$(br)$(thing)Source of$(): Aluminium, Magnesium$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
+      "text": "$(thing)パーセント$(): 24%$(br)$(thing)採取可能$(): アルミニウム、マグネシウム$(br)$(thing)化学式$(): Al₂Mg₃Si₃O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -3422,7 +3422,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/60 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, Extreme Doline Mountains, Ice Sheet Mountains, Oceanic Ice Sheet Mountains, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, Glaciated Mountains, Glaciated Oceanic Mountains, Glacially Carved Mountains, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/60 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, ドリーネ高山, 氷床山岳, 海岸性氷床山岳, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, 氷冠山岳, Glaciated Oceanic Mountains, 氷食山岳, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "鉛, 自然銀 （地表）",
       "type": "patchouli:text",
       "anchor": "high_lead"
@@ -3464,7 +3464,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 40%$(br)$(thing)Melts into$(): Silver$(br)$(thing)化学式$(): Ag",
+      "text": "$(thing)パーセント$(): 40%$(br)$(thing)融解$(): 銀$(br)$(thing)化学式$(): Ag",
       "type": "patchouli:multiblock"
     },
     {
@@ -3474,7 +3474,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/50 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 30%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -50 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 35$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, Extreme Doline Mountains, Ice Sheet Mountains, Oceanic Ice Sheet Mountains, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, Glaciated Mountains, Glaciated Oceanic Mountains, Glacially Carved Mountains, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/50 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 30%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -50 — 0$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 35$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:山岳, 古代の山岳, 海岸性山岳, 火山山岳, 海岸性火山山岳, 山岳の湖, 古代の山岳の湖, 火山山岳の湖, 海洋性山岳の湖, 海洋性火山山岳の湖, ドリーネ高山, 氷床山岳, 海岸性氷床山岳, Ice Sheet Mountains Edge, Oceanic Ice Sheet Mountains Edge, 氷冠山岳, Glaciated Oceanic Mountains, 氷食山岳, Glacially Carved Oceanic Mountains)山岳$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "錫, 錫石 （高地）",
       "type": "patchouli:text",
       "anchor": "high_tin"
@@ -3526,7 +3526,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/130 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:Mud Flats, 塩類平原, Dune Sea, Grassy Dunes)乾燥$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, 凝灰岩, 千枚岩, 大理石, 片岩, 片麻岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 苦灰岩, 角岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/130 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 10 — 70$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)高さ$(): 10$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 70$(br)$(thing)バイオーム$(): $(t:干潟, 塩類平原, Dune Sea, 草原砂丘)乾燥$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, 凝灰岩, 千枚岩, 大理石, 片岩, 片麻岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 苦灰岩, 角岩, 頁岩",
       "title": "錫石, 石綿",
       "type": "patchouli:text",
       "anchor": "normal_asbestos_dry"
@@ -3746,7 +3746,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 100%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 100%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -3773,7 +3773,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 76%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 76%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     },
     {
@@ -3924,7 +3924,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 26%$(br)$(thing)Source of$(): Aluminium, Sodium$(br)$(thing)化学式$(): Al₃Si₃Na₄Cl",
+      "text": "$(thing)パーセント$(): 26%$(br)$(thing)採取可能$(): アルミニウム、ナトリウム$(br)$(thing)化学式$(): Al₃Si₃Na₄Cl",
       "type": "patchouli:multiblock"
     },
     {
@@ -4041,7 +4041,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/70 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)高さ$(): 12$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:丘, 緩やかな丘, 高地, Tower Karst Hills, Tower Karst Highlands, Shilin Hills, Shilin Highlands, Doline Hills, Doline Rolling Hills, Doline Highlands, Cenote Hills, Cenote Rolling Hills, Cenote Highlands)丘$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/70 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -30 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 20$(br)$(thing)高さ$(): 12$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 60$(br)$(thing)バイオーム$(): $(t:丘, 緩やかな丘, 高地, 塔状カルスト丘陵, 塔状カルスト高地, 石林丘陵, 石林高地, ドリーネ丘陵, ドリーネ丘陵, ドリーネ高地, セノーテ丘陵, セノーテ丘陵, セノーテ高地)丘$(/t)$(br2)$(thing)岩石の種類$(): Quartzite, デイサイト, 凝灰岩, 千枚岩, 大理石, 安山岩, 斑れい岩, 流紋岩, 片岩, 片麻岩, 玄武岩, 白亜, 石灰岩, 礫岩, 粘土岩, 粘板岩, 花崗岩, 苦灰岩, 角岩, 閃緑岩, 頁岩",
       "title": "黄銅鉱, ゼオライト, 鶏冠石 （地表）",
       "type": "patchouli:text",
       "anchor": "high_realgar"
@@ -4103,7 +4103,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 14%$(br)$(thing)Source of$(): Arsenic$(br)$(thing)化学式$(): As₄S₄$(br)$(thing)危険性$(): $(c)$(t:フェイスマスクが必要)ヒ素中毒 (吸引)$(/t)$()",
+      "text": "$(thing)パーセント$(): 14%$(br)$(thing)採取可能$(): ヒ素$(br)$(thing)化学式$(): As₄S₄$(br)$(thing)危険性$(): $(c)$(t:フェイスマスクが必要)ヒ素中毒 (吸引)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {

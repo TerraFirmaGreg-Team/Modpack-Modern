@@ -2,13 +2,7 @@
 
 const registerBeneathItemTags = (event) => {
 
-	global.BENEATH_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
-
 	event.add("forge:raw_materials/cursecoal", "beneath:cursecoal")
-	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 
 	event.add('forge:mushrooms', '#beneath:mushrooms')
 	
@@ -40,7 +34,6 @@ const registerBeneathItemTags = (event) => {
 	event.add('tfg:stripped_hardwood', 'beneath:wood/stripped_wood/warped')
 
 	event.add("tfg:rubber_plants", "beneath:gleamflower")
-	event.add("tfg:rubber_plants", "beneath:burpflower")
 	event.add("tfg:rubber_plants", "beneath:food/fools_funnel")
 
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {
@@ -51,17 +44,12 @@ const registerBeneathItemTags = (event) => {
 
 const registerBeneathBlockTags = (event) => {
 
-	global.BENEATH_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
-
-
-	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
-	
     event.add('tfc:can_landslide', 'beneath:soul_clay')
 
 	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
+
+	event.add('minecraft:mineable/pickaxe', 'beneath:ancient_altar');
 
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/crimson')
 	event.remove('minecraft:leaves', 'beneath:wood/leaves/warped')

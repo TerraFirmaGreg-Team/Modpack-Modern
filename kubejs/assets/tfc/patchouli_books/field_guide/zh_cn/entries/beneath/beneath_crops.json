@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "目录",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)木薯$()$(li)$(l:tfc:beneath/beneath_crops#peanut)花生$()$(li)$(l:tfc:beneath/beneath_crops#beans)芸豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)鬼椒$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)木薯$()$(li)$(l:tfc:beneath/beneath_crops#peanut)花生$()$(li)$(l:tfc:beneath/beneath_crops#beans)黑石豆$()$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)鬼椒$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生木薯$()生长于【占位符】。",
+			"text": "$(thing)野生木薯$()生长于Y=80至Y=203之间。",
 			"enable_visualize": false
 		},
 		{
@@ -248,14 +248,14 @@
 					}
 				}
 			],
-			"text": "$(thing)野生花生$()生长于【占位符】。",
+			"text": "$(thing)野生花生$()生长于Y=80至Y=203之间。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "芸豆",
-			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 钾$(br2)食用芸豆可提供$(thing)蔬菜$()和$(thing)蛋白质$()。注意，食用前一定要先煮熟！"
+			"title": "黑石豆",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$(): 10 - 80 °C$(br)$(bold)$(l:mechanics/hydration)湿度$(): 20 - 80 %$(br)$(bold)营养物质$(): 钾$(br2)食用黑石豆可提供$(thing)蔬菜$()和$(thing)蛋白质$()。注意，食用前一定要先煮熟！"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生大豆$()生长于【占位符】。",
+			"text": "$(thing)野生黑石豆$()生长于Y=32至Y=158之间。",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)野生鬼椒$()生长于【占位符】。",
+			"text": "$(thing)野生鬼椒$()生长于Y=32至Y=158之间。",
 			"enable_visualize": false
 		}
 	],

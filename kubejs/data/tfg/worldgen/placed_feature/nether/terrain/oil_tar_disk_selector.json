@@ -1,0 +1,42 @@
+{
+	"feature": "tfg:nether/terrain/oil_tar_disk_selector",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 10
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 180
+				},
+				"min_inclusive": {
+					"absolute": 50
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

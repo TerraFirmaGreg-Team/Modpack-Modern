@@ -3,15 +3,20 @@
 
 const registerCreateItemTags = (event) => {
 
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
-
 	// Face curio slot for goggles
 	event.remove("curios:head", "create:goggles")
 	event.add("curios:face", "create:goggles")
+	
+	event.add('c:hidden_from_recipe_viewers', 'create:creative_blaze_cake')
+	event.add('c:hidden_from_recipe_viewers', 'create:tree_fertilizer')
+	event.add('c:hidden_from_recipe_viewers', 'create:creative_crate')
+	event.add('c:hidden_from_recipe_viewers', 'create:creative_fluid_tank')
+	event.add('c:hidden_from_recipe_viewers', 'create:handheld_worldshaper')
+	event.add('c:hidden_from_recipe_viewers', 'create:creative_motor')
+	event.add('c:hidden_from_recipe_viewers', 'create:minecart_contraption')
+	event.add('c:hidden_from_recipe_viewers', 'create:furnace_minecart_contraption')
+	event.add('c:hidden_from_recipe_viewers', 'create:chest_minecart_contraption')
+	event.add('c:hidden_from_recipe_viewers', 'create:haunted_bell')
 
 	// This is greate's fault
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
@@ -102,6 +107,9 @@ const registerCreateItemTags = (event) => {
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
 	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
+	event.remove('create:stone_types/tuff', 'minecraft:tuff')
+	event.remove('create:stone_types/scoria', 'create:scoria')
+	event.remove('create:stone_types/scorchia', 'create:scorchia')
 
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_granite_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_diorite_slab')
@@ -123,11 +131,6 @@ const registerCreateItemTags = (event) => {
 }
 
 const registerCreateBlockTags = (event) => {
-
-	// Удаление тегов у отключенных предметов
-	global.CREATE_DISABLED_ITEMS.forEach(item => {
-		event.removeAllTagsFrom(item)
-	})
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
@@ -189,6 +192,8 @@ const registerCreateBlockTags = (event) => {
 	event.add('create:non_movable', 'tfg:mafic_hornfels')
 
 	event.add('tfc:no_icicle_generation', 'create:chain_conveyor')
+
+    event.add('tfg:track_replaceable', '#tfc:can_be_snow_piled')
 }
 
 

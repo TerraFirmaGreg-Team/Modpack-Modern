@@ -975,6 +975,10 @@ const registerMinecraftRecipes = (event) => {
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/carbon'])
 		.id('tfg:shapeless/gunpowder_carbon')
 
+	event.shapeless('10x minecraft:gunpowder',
+		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/graphite'])
+		.id('tfg:shapeless/gunpowder_graphite')
+
 	event.shapeless('2x minecraft:gunpowder',
 		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
 		.id('tfg:shapeless/gunpowder_tfc_style')

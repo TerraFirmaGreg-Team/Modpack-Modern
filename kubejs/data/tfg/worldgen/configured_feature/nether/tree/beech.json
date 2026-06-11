@@ -1,0 +1,89 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:wood/log/beech",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:cherry_foliage_placer",
+			"height": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 6,
+					"min_inclusive": 5
+				}
+			},
+			"wide_bottom_layer_hole_chance": 0.5,
+			"corner_hole_chance": 0.8,
+			"hanging_leaves_chance": 0.75,
+			"hanging_leaves_extension_chance": 0.3,
+			"offset": 2,
+			"radius": 4
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:wood/leaves/beech",
+				"Properties": {
+					"persistent": "false",
+					"waterlogged": "false"
+				}
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": false,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 2
+		},
+		"trunk_placer": {
+			"type": "minecraft:dark_oak_trunk_placer",
+			"base_height": 5,
+			"height_rand_a": 2,
+			"height_rand_b": 1
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:wood/log/beech",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		},
+		"root_placer": {
+			"type": "minecraft:mangrove_root_placer",
+			"trunk_offset_y": 1,
+			"mangrove_root_placement": {
+				"max_root_width": 1,
+				"max_root_length": 2,
+				"random_skew_chance": 0.3,
+				"can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
+				"muddy_roots_in": [
+					"wan_ancient_beasts:olden_moss_block"
+				],
+				"muddy_roots_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "tfg:wood/wood/beech"
+					}
+				}
+			},
+			"root_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "tfg:wood/wood/beech"
+				}
+			}
+		}
+	}
+}

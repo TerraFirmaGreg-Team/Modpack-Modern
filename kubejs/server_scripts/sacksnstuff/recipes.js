@@ -1,11 +1,6 @@
 "use strict";
 
 const registerSNSRecipes = (event) => {
-	global.SNS_DISABLED_ITEMS.forEach(item => {
-		event.remove({ input: item })
-		event.remove({ output: item })
-	})
-	
 	event.remove({ mod: 'sns', type: 'tfc:heating' })
 	event.remove({ output: 'sns:buckle'})
 	

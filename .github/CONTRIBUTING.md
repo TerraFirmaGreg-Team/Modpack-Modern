@@ -33,6 +33,8 @@
 
 ---
 
+## Video Guide: https://www.youtube.com/watch?v=vLL7jTtuOuw
+
 ## English Version
 
 ### 1. Required and Recommended Software

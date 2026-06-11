@@ -12,6 +12,9 @@
   "config.deathpunishment.penalties.effect_amplifier": "Wzmacnianie efektu (0-5)",
   "config.deathpunishment.penalties.corpse_cooldown": "Czas odnowienia zwłok (0-60 min)",
   "config.deathpunishment.penalties.thirst_duration": "Czas trwania pragnienia (0-600 s)",
+  "config.deathpunishment.penalties.exhausted_duration": "Czas trwania wykończenia (0-600 s)",
+  "config.deathpunishment.penalties.blindness_duration": "Czas trwania oślepienia (0-600 s)",
+  "config.deathpunishment.penalties.confusion_duration": "Czas trwania mdłości (0-600 s)",
   "config.deathpunishment.penalties.hunger_duration": "Czas trwania głodu (0-600 s)",
   "config.deathpunishment.penalties.movement_duration": "Czas trwania spowolnienia (0-600 s)",
   "config.deathpunishment.penalties.darkness_duration": "Czas trwania ciemności (0-600 s)",
@@ -23,5 +26,9 @@
   "enum.deathpunishment.thirst_mode.KEEP": "Zachowaj po śmierci",
   "enum.deathpunishment.health_mode.TFC": "Domyślne TFC",
   "enum.deathpunishment.health_mode.MANUAL": "Konfiguracja ręczna",
-  "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci"
+  "enum.deathpunishment.health_mode.KEEP": "Zachowaj po śmierci",
+  "tooltip.deathpunishment.health": "Początkowe zdrowie po odrodzeniu (aktywne w trybie ręcznym)",
+  "tooltip.deathpunishment.movement_duration": "Czas trwania efektu spowolnienia (sekundy)",
+  "tooltip.deathpunishment.darkness_duration": "Czas trwania efektu ciemności (sekundy)",
+  "message.deathpunishment.reload_config": "Przeładuj konfigurację, by zastosować zmiany"
 }

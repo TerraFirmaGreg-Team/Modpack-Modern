@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 80%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)化学式$(): NaCl",
+      "text": "$(thing)パーセント$(): 80%$(br)$(thing)採取可能$(): ナトリウム、塩素$(br)$(thing)化学式$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 10%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)化学式$(): KCl",
+      "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): カリウム、塩素、肥料$(br)$(thing)化学式$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -101,7 +101,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)化学式$(): LiAlSi₂O₆",
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)採取可能$(): リチウム、アルミニウム$(br)$(thing)化学式$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 5%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)化学式$(): ZnS",
+      "text": "$(thing)パーセント$(): 5%$(br)$(thing)融解$(): 亜鉛$(br)$(thing)化学式$(): ZnS",
       "type": "patchouli:multiblock"
     }
   ],

@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "Silica Glass Batch",
+      "title": "Szilícium-dioxidos öveg adag",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "Glass batches can then be crafted using one of the aforementioned colors of sand, plus $(l:mechanics/glassworking#lime)Lime$() and a type of $(l:mechanics/glassworking#potash)Potash$()."
     },

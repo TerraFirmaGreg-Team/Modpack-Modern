@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/carpet",
+	"textures": {
+		"wool": "tfg:block/pale_moss_block"
+	}
+}

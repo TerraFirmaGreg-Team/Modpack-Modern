@@ -101,6 +101,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_black_steel').copyHeat(), 'tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 4)
+		.id("tfg:welding/high_carbon_black_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_black_steel',
 		['tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron', 'tfc:powder/flux'])
@@ -116,6 +117,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_blue_steel').copyHeat(), 'tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 5)
+		.id("tfg:welding/high_carbon_blue_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_blue_steel',
 		['tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])
@@ -131,6 +133,7 @@ function registerTFCMetalsRecipes(event) {
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
 	event.recipes.tfc.welding(TFC.isp.of('tfc:metal/ingot/high_carbon_red_steel').copyHeat(), 'tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 5)
+		.id("tfg:welding/high_carbon_red_steel_ingot")
 
 	event.recipes.greate.compacting('tfc:metal/ingot/high_carbon_red_steel',
 		['tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel', 'tfc:powder/flux'])

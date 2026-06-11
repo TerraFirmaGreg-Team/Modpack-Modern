@@ -102,3 +102,30 @@ powderTypes.forEach(type => {
 		server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
 	})
 })
+
+// Capsules
+
+ItemEvents.foodEaten(event => {
+	const { item, server, player, player: { x, y, z } } = event
+	if (item.id !== `tfg:parasiticide_capsule`) return
+	player.addItemCooldown(item, 1200)
+	server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
+});
+
+ItemEvents.foodEaten(event => {
+	const { item, server, player, player: { x, y, z } } = event
+	if (item.id !== `tfg:detox_capsule`) return
+	player.addItemCooldown(item, 1200)
+	event.player.removeEffect('minecraft:poison')
+	event.player.removeEffect('minecraft:wither')
+	server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
+});
+
+ItemEvents.foodEaten(event => {
+	const { item, server, player, player: { x, y, z } } = event
+	if (item.id !== `tfg:nanofiltration_capsule`) return
+	player.addItemCooldown(item, 1200)
+	event.player.removeEffect('minecraft:poison')
+	event.player.removeEffect('minecraft:wither')
+	server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
+});

@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "$(br2)クワを作成したら、バニラと同様に土ブロックを右クリックして耕すことで$(thing)耕地$()にできます。また、クワは$(thing)根付いた土$()を通常の$(thing)土$()に戻す用途にも使えます。"
 		},
 		{

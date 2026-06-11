@@ -33,4 +33,13 @@ function registerMacawsForTFCRecipes(event) {
 		A: '#forge:rods/wooden',
 		B: '#minecraft:leaves'
 	}).id(`tfg:shaped/mcw_tfc/hedge_fence_from_leaves`);
+
+	event.shaped('mcw_tfc_aio:pliers', [
+		' A ',
+		'B A',
+		' B '
+	], {
+		A: '#mcw_tfc_aio:metal_rods',
+		B: '#forge:rods/wooden'
+	}).id('mcw_tfc_aio:bridges/pliers')
 };

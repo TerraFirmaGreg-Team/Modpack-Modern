@@ -1,0 +1,23 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "#layer0",
+    "layer1": "#layer1"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 1],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#layer0" }
+      }
+    },
+    {
+      "from": [0, 0, 1.5],
+      "to": [16, 16, 2.5],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#layer1", "tintindex": 1 }
+      }
+    }
+  ]
+}

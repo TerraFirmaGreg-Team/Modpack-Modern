@@ -1,0 +1,76 @@
+{
+	"name": "状態異常辞典",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:splash_potion",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "この章では、$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()での独自の状態効果について説明します。$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)冷却$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)温もり$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)潤い$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)駆虫$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)デトックス$()$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)マイクロプラスチック排出$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)凍結$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)灼熱$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)急性被爆$()$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)余命僅か$()"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cooling",
+			"text": "$(bold)$(9)冷却$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)冷却$()され、最低でも$(n)5°C$()まで体温が下がります。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "warming",
+			"text": "$(bold)$(9)温もり$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)温められ$()、体温が最大$(n)25°C$()まで上昇します。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quenched",
+			"text": "$(bold)$(9)潤い$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#thirst)水分$()ゲージの自然減少を防ぎます。ただし、渇き状態によるゲージの減少までは防げません。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_parasites",
+			"text": "$(bold)$(9)寄生虫治療$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#parasites)寄生虫汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_toxins",
+			"text": "$(bold)$(9)デトックス$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#toxins)毒素汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_microplastics",
+			"text": "$(bold)$(9)マイクロプラスチック排出$()$(li)この効果が有効な間、$(l:getting_started/food_and_water#microplastics)マイクロプラスチック汚染$()が徐々に除去されます。基本レベルでは約10秒ごとに1%ずつ減少します。$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freezing",
+			"text": "$(bold)$(c)凍結$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)冷却$()され、危険水準を下回る$(n)-20°C$()まで体温が下がります。この状態を生き延びるには、防護装備の着用を推奨します。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blazing",
+			"text": "$(bold)$(c)灼熱$()$(li)この効果が有効な間、プレイヤーは継続的に$(l:beneath/cooling)加熱$()され、危険水準を超えた$(n)60°C$()まで体温が上昇します。この状態を生き延びるには、防護装備の着用を推奨します。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "instant_radiation",
+			"text": "$(bold)$(c)急性被曝$()$(li)この効果は、プレイヤーに$(l:tfg_ores/hazards#Radioactive_materials)放射線ダメージ$()を素早く与えます。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "final_moments",
+			"text": "$(bold)$(c)余命僅か$()$(li)この効果は、残された最後の数分を数えるタイマーを開始します。時間切れになると死亡します。"
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "さらに読む",
+			"anchor": "relations",
+			"entries": [
+                "tfc:getting_started/food_and_water",
+                "tfc:beneath/cooling",
+                "tfc:tfg_ores/hazards"
+			]
+		}
+	]
+}

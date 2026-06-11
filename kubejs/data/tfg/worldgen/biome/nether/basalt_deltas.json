@@ -9,7 +9,7 @@
 			"tick_chance": 0.0015
 		},
 		"ambient_sound": "tfg:ambient.lower_nether.loop",
-		"fog_color": 6840176,
+		"fog_color": 5718583,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -28,84 +28,74 @@
 			"options": {
 				"type": "minecraft:white_ash"
 			},
-			"probability": 0.118093334
+			"probability": 0.15
 		},
-		"sky_color": 7254527,
+		"sky_color": 5718583,
 		"water_color": 4159204,
 		"water_fog_color": 329011
 	},
 	"features": [
+		"#tfg:nether_lakes_and_geodes",
 		[],
 		[
-			"tfg:nether/terrain/lava_lake"
-		],
-		[
-			"minecraft:basalt_pillar",
-			"tfg:earth/geode/amethyst"
-		],
-		[],
-		[
-			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:delta",
 			"minecraft:small_basalt_columns",
 			"minecraft:large_basalt_columns"
 		],
-		[],
-		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
 			"tfg:nether/terrain/spring_lava",
-			"tfg:nether/terrain/mossy_cobble"
+			"minecraft:spring_delta",
+			"minecraft:spring_closed_double"
 		],
 		[
-			"minecraft:spring_delta",
-			"minecraft:spring_closed_double",
-			"beneath:blackstone_boulders",
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
+		"#tfg:nether_crops",
+		[
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/loose_basalt",
-			"beneath:burpflower_patch",
+			"tfg:nether/surface/smoker_source_patch",
+			"tfg:nether/surface/lava_source_patch",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
 			"beneath:sulfur_patch",
 			"tfg:nether/surface/pumice_patch",
 			"tfg:nether/surface/beneath_mushrooms",
-			"tfg:nether/surface/guano_patch",
-			"tfg:nether/surface/stick_patch",
-			"tfg:glow_lichen"
+			"tfg:nether/surface/guano_patch"
 		],
-		[
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/basalt_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/hardening"
-		]
+		"#tfg:nether_global_decoration",
+		[]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"species:spectre": {
+			"energy_budget": 0.1,
+			"charge": 0.7
+		}
+	},
 	"spawners": {
 		"ambient": [
 			{
-				"type": "minecraft:bat",
-				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
+				"type": "tfg:slime",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
 			}
 		],
 		"axolotls": [],
 		"creature": [
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
+				"maxCount": 6,
 				"minCount": 4,
 				"weight": 100
 			}
 		],
 		"misc": [],
 		"monster": [
-			{
-				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 50
-			},
 			{
 				"type": "minecraft:magma_cube",
 				"maxCount": 3,
@@ -114,21 +104,21 @@
 			},
 			{
 				"type": "primitive_creatures:golem_2",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:skeleton",
-				"maxCount": 4,
+				"type": "minecraft:phantom",
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
 			},
 			{
 				"type": "minecraft:wither_skeleton",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
@@ -143,10 +133,34 @@
 				"weight": 50
 			},
 			{
-				"type": "minecraft:phantom",
+				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
+			},
+			{
+				"type": "species:cliff_hanger",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:spectre",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:ghoul",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "species:wicked",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

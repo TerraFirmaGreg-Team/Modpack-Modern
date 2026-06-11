@@ -1,5 +1,5 @@
 {
-	"name": "Hazardous Materials",
+	"name": "Matières Dangereuses",
 	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
@@ -8,34 +8,34 @@
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Hazardous Materials",
+			"title": "Matières Dangereuses",
 			"item": "gtceu:cobaltite_dust",
-			"text": "Some $(thing)ores$(), $(thing)dusts$() and $(thing)chemicals$() are hazardous and can cause $(item)negative effects$() or even $(item)kill$() you if they are carried in your inventory. When carried, they are displayed on screen with a $(item)Status Effect$().$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and the $(thing)hazardous material suit$() can be used to counter these effects."
+			"text": "Plusieurs $(thing)minerais$(), $(thing)poudres$() et $(thing)substances chimiques$() sont dangereux et peuvent infliger des $(item)effets négatifs$() ou même $(item)vous tuer$() quand elles sont dans votre inventaire. Si elles y sont présentes, elles seront marquées à l'écran par des $(item)Effets De Statut$().$(br2)Certains équipements tel que les $(thing)masques$(), les $(thing)gants$(), et la $(thing)combinaison pour matières dangereuses$() peuvent être utilisés pour éviter ces effets."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "All of the effects",
-			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+			"title": "Tous les effets",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicose$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Amiantose$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Bérylliose$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Intoxication au Monoxyde de Carbone$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogènes$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Brûlures Chimiques$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Intoxication au Méthanol$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Produits Chimiques Nauséabonds$()$(li)$(l:tfg_ores/hazards#Poisons)Matières toxiques$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Matières radioactives$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicose$()$()$(br2)La page suivante dictera comment traiter ces effets."
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Prevention and Cures",
-			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+			"title": "Prévention et Traitements",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Des Roches ?$()$()$(li)$(l:tfg_ores/hazards#containers)Les Contenants$()$(li)$(l:tfg_ores/hazards#mask)Le Masque$()$(li)$(l:tfg_ores/hazards#gloves)Les Gants en Caoutchouc$()$(li)$(l:tfg_ores/hazards#hazmat)La Combinaison pour les Matières Dangereuses$()$(li)$(l:tfg_ores/hazards#medicine)Pilules, Comprimés et Salves$()$(li)$(l:tfg_ores/hazards#rad_away)Les Pilules RadAwayᵗᵐ$()$(li)$(l:tfg_ores/hazards#respawn)L'Impensable...$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Rocks!",
+			"title": "Des Roches !",
 			"item": {
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "$(thing)The easiest way$() to $(thing)prevent$() hazardous effects is to $(item)not pick up the dangerous items at all$().$(br2)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones later."
+			"text": "$(thing)La technique la plus facile$() de $(thing)prévenir$() des effets négatifs est de $(item)ne pas ramasser des items dangereux du tout$().$(br2)Remplir votre inventaire de $(thing)Roches$(), par exemple vous laissera choisir quels items vous souhaitez ramasser, ce qui vous permettra de vous soucier de ceux qui sont dangereux plus tard."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "Containers",
 			"anchor": "containers",
-			"text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of its contents to and from containers.",
+			"text": "Les matières dangereuses n'infligent des dégâts que lorsqu'elles sont dans votre $(thing)inventaire$(), mais cela ne s'applique pas à d'autres contenants !$(br)Les matières dangereuses n'infligeront pas de dégâts quand elles sont dans un autre contenant tel qu'un $(l:tfg_tips/inventory_management)Sac à Dos$() ou un $(l:getting_started/pottery#vessel)Récipient$(). Un $(thing)clic droit$() avec un récipient en main permettra de transférer directement ses contenus à un contenant ou d'en ramasser de celui-ci.",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
@@ -114,16 +114,16 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Asbestose",
+			"title": "Asbestosis",
 			"item": "gtceu:asbestos_dust",
-			"anchor": "Asbestose",
+			"anchor": "Asbestosis",
 			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Bérylliose",
+			"title": "Berylliosis",
 			"item": "gtceu:beryllium_dust",
-			"anchor": "Bérylliose",
+			"anchor": "Berylliosis",
 			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
 		},
 		{
@@ -197,9 +197,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Silicose",
+			"title": "Silicosis",
 			"item": "gtceu:silicon_dioxide_dust",
-			"anchor": "Silicose",
+			"anchor": "Silicosis",
 			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
 		}
 	]

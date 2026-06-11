@@ -5,7 +5,7 @@ const registerCreateRecipes = (event) => {
 
 	// Удаление рецептов мода create 
 	event.remove({
-		not: [
+		not: [			
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
@@ -48,8 +48,7 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/stock_link_clear'},
 			{ id: 'create:crafting/logistics/stock_ticker_clear'},
 			{ id: 'create:crafting/logistics/factory_gauge_clear'},
-			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
-			//{ type: 'minecraft:stonecutting' }
+			{ output: '#create:table_cloths'} // Gotta do this to not purge the table cloth reset recipes
 		], mod: 'create'
 	})
 	// Make Bound Cardboard craftable with all string
@@ -62,16 +61,6 @@ const registerCreateRecipes = (event) => {
 			{ id: `create:crafting/logistics/${dye}_table_cloth_from_other_table_cloth` }
 		])
 	})
-
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:andesite_alloy' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:rose_quartz' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'create:polished_rose_quartz' })
-	event.remove({ type: 'minecraft:stonecutting', input: 'minecraft:iron_ingot' })
-	event.remove({ type: "minecraft:stonecutting", output: "create:copycat_step" })
-    event.remove({ type: "minecraft:stonecutting", output: "create:copycat_panel" })
-	event.remove({ type: 'create:spout_filling', id: 'create:potions' })
-	event.remove({ type: 'create:spout_filling', id: 'create:fill_minecraft_glass_bottle_with_gtceu_potion' })
-	event.remove({ type: 'create:draining', id: 'create:potions' })
 
 	// Train Signal
 	event.shapeless('4x create:track_signal', [
@@ -100,7 +89,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:storage_blocks/wrought_iron',
 		C: '#tfc:rock/smooth',
 		D: 'minecraft:dispenser',
-		E: 'firmaciv:cannon'
+		E: ['firmaciv:cannon', 'alekiships:cannon']
 	}).addMaterialInfo().id('tfg:create/shaped/schematicannon')
 
 	// Стол для схематик
@@ -152,12 +141,12 @@ const registerCreateRecipes = (event) => {
 		'ABA',
 		' A '
 	], {
-		A: ['#forge:plates/iron', '#forge:plates/wrought_iron'],
+		A: ['#forge:ingots/iron', '#forge:ingots/wrought_iron'],
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/basin')
 
 	event.recipes.gtceu.assembler('tfg:create/basin')
-		.itemInputs('5x #forge:plates/iron')
+		.itemInputs('5x #forge:ingots/iron')
 		.circuit(3)
 		.itemOutputs('create:basin')
 		.duration(200)
@@ -1712,14 +1701,23 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.shaped('create:packager', [
 		' A ',
 		'BCD',
-		' E '
+		'FEG'
 	], {
 		A: '#forge:small_gears/red_alloy',
 		B: '#forge:springs/wrought_iron',
 		C: 'create:andesite_casing',
 		D: 'create:bound_cardboard_block',
-		E: 'create:electron_tube'
+		E: 'create:electron_tube',
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wrenches'
 	}).addMaterialInfo().id('tfg:create/shaped/packager')
+
+	event.recipes.gtceu.assembler('create:packager')
+		.itemInputs('#forge:small_gears/red_alloy', '#forge:springs/wrought_iron', 'create:andesite_casing', 'create:bound_cardboard_block', 'create:electron_tube')
+		.itemOutputs('create:packager')
+		.circuit(20)
+		.duration(100)
+		.EUt(20)
 
 	event.shaped('create:item_hatch', [
 		'A',
@@ -1747,7 +1745,6 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
-		.addMaterialInfo(true)
 
 	event.recipes.gtceu.assembler('tfg:create/item_hatch_deco')
 		.itemInputs('3x #forge:plates/wrought_iron', '#createdeco:metal_trapdoors')
@@ -1755,6 +1752,8 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:item_hatch')
 		.duration(200)
 		.EUt(20)
+
+	TFGHelpers.registerMaterialInfo('create:item_hatch', [GTMaterials.WroughtIron, 3])
 
 	event.shaped('create:package_frogport', [
 		' A ',
@@ -2200,9 +2199,8 @@ const registerCreateRecipes = (event) => {
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(16)
-		.addMaterialInfo(true)
 		
-	TFGHelpers.registerMaterialInfo('create:gantry_carriage', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
+	TFGHelpers.registerMaterialInfo('create:weighted_ejector', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 3]);
 
 	event.shaped('create:turntable', [
 		'DA ',
@@ -2238,7 +2236,6 @@ const registerCreateRecipes = (event) => {
 		.circuit(5)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
-		.addMaterialInfo(true)
 
 	TFGHelpers.registerMaterialInfo('create:gearshift', [GTMaterials.Wood, 1, GTMaterials.WroughtIron, 1, GTMaterials.Redstone, 1]);
 
@@ -2343,6 +2340,9 @@ const registerCreateRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.stonecutting('4x create:rose_quartz_tiles', '#forge:storage_blocks/rose_quartz')
+	event.stonecutting('create:rose_quartz_tiles', 'create:small_rose_quartz_tiles')
+
 	event.recipes.gtceu.laser_engraver('tfg:small_rose_quartz_tiles')
 		.itemInputs('#forge:storage_blocks/rose_quartz')
 		.itemOutputs('4x create:small_rose_quartz_tiles')
@@ -2351,9 +2351,28 @@ const registerCreateRecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
+	event.stonecutting('4x create:small_rose_quartz_tiles', '#forge:storage_blocks/rose_quartz')
+	event.stonecutting('create:small_rose_quartz_tiles', 'create:rose_quartz_tiles')
+
 	//Bars
 
-	event.stonecutting('4x create:andesite_bars', '#forge:ingots/tin_alloy')
+	const create_metals = [
+		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
+		{ metal: 'brass', material: 'brass', tier: 2 },
+		{ metal: 'copper', material: 'copper', tier: 1 },
+	];
+
+	create_metals.forEach(bar => {
+		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
+
+		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, [GTMaterials.get(bar.material), 0.25])
+
+		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
+
+		event.stonecutting(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`);
+	})
 
 	//Copycats
 	
@@ -2374,22 +2393,6 @@ const registerCreateRecipes = (event) => {
     	.EUt(GTValues.VA[GTValues.LV])
     	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 
-	const create_metals = [
-		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
-		{ metal: 'brass', material: 'brass', tier: 2 },
-		{ metal: 'copper', material: 'copper', tier: 1 },
-	];
-
-	create_metals.forEach(bar => {
-		event.recipes.tfc.anvil(`4x create:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars`)
-
-		TFGHelpers.registerMaterialInfo(`create:${bar.metal}_bars`, [GTMaterials.get(bar.material), 0.25])
-
-		event.recipes.tfc.anvil(`8x create:${bar.metal}_bars`, `#forge:double_ingots/${bar.material}`, ['upset_last', 'punch_second_last', 'punch_third_last'])
-			.tier(bar.tier).id(`tfg:anvil/create_${bar.metal}_bars_double`)
-	})
-
 	// Doors
 
 	event.shapeless('2x create:andesite_door', ['createdeco:andesite_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
@@ -2407,19 +2410,6 @@ const registerCreateRecipes = (event) => {
 	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/wrought_iron', '#minecraft:wooden_trapdoors'])
 		.id('tfg:shapeless/create_train_trapdoor')
 
-	// Fantasy stone blocks
-
-	event.recipes.gtceu.macerator('tfg:asurine')
-		.itemInputs('create:asurine')
-		.itemOutputs('#forge:dusts/asurine')
-		.duration(50)
-		.EUt(2)
-
-	event.recipes.gtceu.macerator('tfg:ochrum')
-		.itemInputs('create:ochrum')
-		.itemOutputs('#forge:dusts/ochrum')
-		.duration(50)
-		.EUt(2)
 
 	event.shapeless('create:sand_paper', ['minecraft:paper', 'tfc:glue', '#forge:sand'])
 		.id('tfg:shapeless/sand_paper')
