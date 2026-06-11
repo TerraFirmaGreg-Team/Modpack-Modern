@@ -2341,6 +2341,8 @@
 			]
 			icon: "gtceu:rhenium_dust"
 			id: "38184C7BA01A9B5B"
+			title: "{quests.extreme_voltage.btx_loop.title}"
+			subtitle: "{quests.extreme_voltage.btx_loop.subtitle}"
 			optional: true
 			shape: "circle"
 			tasks: [{
