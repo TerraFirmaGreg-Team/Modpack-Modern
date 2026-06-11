@@ -67,7 +67,7 @@ function registerTFGMiscellaneousRecipes(event) {
         ]
     ).id('tfg:sewing/player_head');
 
-	event.recipes.gtceu.assembler('minecraft:player_head')
+	event.recipes.gtceu.assembler('tfg:player_head')
 		.itemInputs('2x #tfc:sewing_light_cloth', '1x #tfc:sewing_dark_cloth', '2x #forge:string')
 		.itemOutputs('minecraft:player_head')
 		.EUt(GTValues.VA[GTValues.ULV])

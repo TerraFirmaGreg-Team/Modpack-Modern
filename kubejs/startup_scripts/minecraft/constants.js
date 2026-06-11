@@ -25,7 +25,6 @@ global.MINECRAFT_HIDED_ITEMS = [
 	"minecraft:grass_block", 
     "minecraft:furnace",
     // mob heads
-    "minecraft:player_head",
 	"minecraft:piglin_head", 
 	"minecraft:zombie_head", 
 	"minecraft:dragon_head", 
