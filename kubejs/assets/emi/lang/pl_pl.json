@@ -66,6 +66,7 @@
   "config.emi.ui.recipe_screenshot_button": "Zrzut ekranu przepisu",
   "config.emi.ui.recipe_screenshot_scale": "Skala zrzutu ekranu przepisu",
   "config.emi.ui.recipe_tree_button": "Przycisk drzewa przepisów",
+  "config.emi.ui.recipe_tree_button_visibility": "Widoczność przycisku drzewa przepisów",
   "config.emi.ui.right_sidebar_align": "Wyrównanie",
   "config.emi.ui.right_sidebar_header": "Nagłówek",
   "config.emi.ui.right_sidebar_margins": "Marginesy",
@@ -367,6 +368,7 @@
   "tooltip.emi.set_default": "Ustaw jako domyślny przepis",
   "tooltip.emi.synfav.batches_remaining": "Pozostało %s operacji",
   "tooltip.emi.synfav.obtained": "Otrzymano %s/%s",
+  "tooltip.emi.synfav.partially_craftable": "Możesz stworzyć §dczęść§r przedmiotów",
   "tooltip.emi.synfav.remaining": "Pozostało %s",
   "tooltip.emi.unset_default": "Usuń domyślny przepis",
   "tooltip.emi.view_tree": "Zobacz drzewo przepisów"
