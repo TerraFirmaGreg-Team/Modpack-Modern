@@ -2,6 +2,9 @@
 
 ## Unreleased
 ### Changes
+
+- Made player heads craftable. Check out [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) (client-side mod) to turn them into into adorable dolls. @ashleney
+
 ### Bug fixes
 
 ## [0.12.9] - 07-06-2026
