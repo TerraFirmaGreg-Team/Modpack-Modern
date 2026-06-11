@@ -41,6 +41,49 @@ function registerTFGMiscellaneousRecipes(event) {
 		1, -1, 0, 0, 0, 0, -1, 1
 	]
 	).id('tfg:sewing/piglin_disguise')
+    
+	event.recipes.gtceu.assembler('tfg:piglin_disguise')
+		.itemInputs('2x #tfc:sewing_light_cloth', '2x #tfc:sewing_dark_cloth', '3x #forge:string')
+		.itemOutputs('tfg:piglin_disguise')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+        .circuit(2)
+
+    // Player Head
+    event.recipes.tfc.sewing(
+        '1x minecraft:player_head',
+        [
+            0,0,0,0,0,0,0,0,0,
+            0,0,0,1,0,1,0,0,0,
+            0,0,0,1,0,1,0,0,0,
+            0,0,1,1,0,1,1,0,0,
+            0,0,0,0,0,0,0,0,0
+        ],
+        [
+            1, 1, 1,-1,-1, 1, 1, 1,
+            1,-1, 1, 0, 0, 1,-1, 1,
+            1, 1, 1, 0, 0, 1, 1, 1,
+           -1,-1, 0, 0, 0, 0,-1,-1
+        ]
+    ).id('tfg:sewing/player_head');
+
+	event.recipes.gtceu.assembler('minecraft:player_head')
+		.itemInputs('2x #tfc:sewing_light_cloth', '1x #tfc:sewing_dark_cloth', '2x #forge:string')
+		.itemOutputs('minecraft:player_head')
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
+        .circuit(3)
+
+    event.recipes.kubejs.shapeless(
+        'minecraft:player_head',
+        ['minecraft:player_head', 'minecraft:name_tag']
+    ).modifyResult((grid, result) => {
+        let tag = grid.find(Ingredient.of('minecraft:name_tag'));
+        if (tag && tag.hasCustomHoverName()) {
+            result.setNbt({ SkullOwner: tag.hoverName.string });
+        }
+        return result;
+    }).keepIngredient('minecraft:name_tag').id('tfg:player_head_renaming');
 
 	//Trowel
 	event.shaped('tfg:trowel', [
