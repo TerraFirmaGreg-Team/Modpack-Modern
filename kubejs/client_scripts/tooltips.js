@@ -508,6 +508,9 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:piglin_disguise'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.piglin_disguise'));
 	});
+	event.addAdvanced(['minecraft:player_head'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.player_head'));
+	});
 
 	// AE2
 	event.addAdvanced(['tfg:wireless_card'], (item, advanced, text) => {
