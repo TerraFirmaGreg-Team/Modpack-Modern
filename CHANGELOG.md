@@ -4,10 +4,14 @@
 ### Changes
 - Reduced the processing speed of vibration tables @Pyritie
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
+- Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
+- Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
 - Fixed being able to stonecut raw tuff into tuff bricks and other deco blocks, instead of having to make the bricks first (#4228) @Pyritie
+- Refrigerator now has an active state to swtich texture @TomPlop
+- The Pastoral Rancher accepts grasses once again @TomPlop
 
 ## [0.12.10] - 09-06-2026
 ### Changes
