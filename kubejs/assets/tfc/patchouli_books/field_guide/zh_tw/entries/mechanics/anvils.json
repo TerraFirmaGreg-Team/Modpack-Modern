@@ -83,25 +83,25 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Working can be tedious, and take many steps to get correct. However, there is a reward for being efficient. Some items, such as tool heads, when they are worked in a low or minimal amount of steps, receive a Forging Bonus based on how efficiently they were forged. This bonus will then apply to tools that the item is used in, for example, a pickaxe head used to make a pickaxe.",
-      "title": "Forging Bonuses"
+      "text": "鍛造可能很枯燥乏味，需要很多步驟才能正確完成。然而，高效工作是有回報的。某些物品，例如工具頭，如果鍛造步驟較少或極少，則會根據鍛造效率獲得鍛造加成。該加成隨後將套用在使用該物品的工具，例如，用於製作鎬的鎬頭。",
+      "title": "鍛造評價"
     },
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
-      "title": "Perfectly Forged",
+      "title": "完美鍛造",
       "link_recipes": false,
-      "text": "There are four tiers of forging bonus:$(li)Poorly Forged$(li)Well Forged$(li)Expertly Forged$(li)Perfectly Forged$(br2)These bonuses increase the power of your tool - making it break less often, mine faster, and/or do more damage in combat, depending on the tool."
+      "text": "鍛造評價分為四級：$(li)粗糙$(li)合格$(li)精良$(li)完美$(br2)這些加成可以提升工具的威力，使其更不容易損壞、挖掘速度更快，和/或在戰鬥中造成更多傷害，具體取決於工具的類型。"
     },
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)Stone Anvil$() or a metal anvil.$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "焊接是將两个物品熔合成新物品的工藝。不論是$(l:getting_started/primitive_anvils)石砧$()或金屬砧都一樣。$(br2)首先，必須將待焊接的兩個物品放置在砧上。潛伏時手持物品對砧右鍵或開啟砧的界面將其放入左側的兩個槽位。",
       "title": "焊接"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)Flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)Hammer$() on the anvil. You will hear a hammering sound and the items will be welded together. They can then be extracted by using $(item)$(k:key.use)$() on the anvil with an empty hand."
+      "text": "此外，砧內需存放$(l:mechanics/flux)助焊劑$()來輔助焊接。當兩物品均達到$(l:mechanics/heating)可焊接温度$()｢提示訊息將顯示“可焊接”」時，用任意 $(thing)鍛造錘$() 擊打砧或點擊砧界面中的焊接按鈕即可。此時將發出鍛打音效，物品也随之熔合為一體。完成後潛伏時空手對砧$(item)$(k:key.use)$()可以拿起成品。"
     }
   ],
   "read_by_default": true,

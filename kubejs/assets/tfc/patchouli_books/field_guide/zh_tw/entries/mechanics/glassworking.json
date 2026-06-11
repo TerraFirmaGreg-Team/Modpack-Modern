@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Glassworking",
+  "name": "玻璃工藝",
   "category": "tfc:mechanics",
   "icon": "tfc:silica_glass_bottle",
   "pages": [
@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "title": "Silica Glass Batch",
+      "title": "二氧化矽玻璃原料",
       "recipe": "tfc:crafting/silica_glass_batch",
       "text": "利用相應顏色的沙子製作玻璃原料，再加入 $(l:mechanics/glassworking#lime)石灰粉$() 以及任意 $(l:mechanics/glassworking#potash)鉀鹽粉末$()。"
     },
@@ -59,11 +59,11 @@
       "type": "patchouli:crafting",
       "anchor": "saw",
       "recipe": "tfc:crafting/gem_saw",
-      "text": "$(thing)寶石鋸$()用來$(thing)切割$()玻璃。寶石鋸也被用來取下$(thing)玻璃方塊$()與$(thing)玻璃窗$()而不破壞它們。"
+      "text": "$(thing)寶石鋸$()用來$(thing)切割$()玻璃。寶石鋸也被用來取下$(thing)玻璃方塊$()與$(thing)玻璃片$()而不破壞它們。"
     },
     {
       "type": "patchouli:text",
-      "text": "First, glass on the blowpipe must be heated to $(4)$(bold)Faint Red$(). Then, hold the blowpipe in your $(thing)offhand$() and hold $(item)$(k:key.use)$() to perform each step$().$(br)Use $(item)$(k:key.swapOffhand)$() to pick up a hot blowpipe into your offhand.$(br2)$(bold)Blow$()$(br)Use the $(thing)Blowpipe$() while facing straight ahead.$(br2)$(bold)Stretch$()$(br)Use the $(thing)Blowpipe$() while facing straight down.",
+      "text": "首先，將帶有玻璃的吹管加熱到$(4)$(bold)淡紅$()，接著，$(thing)副手$()持拿吹管按住$(item)$(k:key.use)$()來執行每個步驟$()。$(br)按$(item)$(k:key.swapOffhand)$()將熱吹管換到副手。$(br2)$(bold)吹氣$()$(br)面向正前方時使用$(thing)吹管$()。$(br2)$(bold)拉伸$()$(br)面向下方時使用$(thing)吹管$()。",
       "title": "如何製作玻璃"
     },
     {

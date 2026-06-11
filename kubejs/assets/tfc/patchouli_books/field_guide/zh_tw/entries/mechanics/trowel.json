@@ -1,18 +1,18 @@
 {
-	"name": "Trowel",
+	"name": "鏝刀",
 	"icon": "tfg:trowel",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:crafting",
-			"title": "Trowel",
+			"title": "鏝刀",
 			"recipe": "tfg:shaped/trowel",
-			"text": "A $(item)Trowel$() allows a builder to place random blocks from their hotbar when right-clicking a surface.$(br2)Trowels also have built-in functionality with the $(item)Roads and Roofs$() mod--Meaning that they can place filler items like bricks or flagstones randomly as well."
+			"text": "$(item)鏝刀$()允許建造者點擊右鍵時從快捷欄隨機放置方塊。$(br2)鏝刀也內置了$(item)道路與屋頂$()模組的功能支持，也就是說它也可以隨機放置磚頭或鋪路磚等填充物。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Inspired by the trowel tool from $(item)Quark$()--A mod by Vazkii"
+			"text": "鏝刀的靈感來源來自Vazkii打造的$(item)Quark$()模組"
 		}
 	]
 }

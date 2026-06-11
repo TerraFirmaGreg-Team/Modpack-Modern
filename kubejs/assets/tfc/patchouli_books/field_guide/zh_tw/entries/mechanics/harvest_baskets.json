@@ -1,26 +1,26 @@
 {
-	"name": "Harvest Baskets",
+	"name": "採收籃",
 	"icon": "tfg:harvest_basket",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
-			"title": "Harvest Baskets",
+			"title": "採收籃",
 			"item": {
 				"tag": "tfg:harvester"
 			},
-			"text": "Made for those with a short stature--$(thing)Harvest Baskets$() are just the tool needed for plucking trees and bushes of fruit.$(br)To use a harvest basket; right click on a fruit tree or fruit bush and all blocks within a $(thing)7-block radius$() will be picked."
+			"text": "$(thing)採收籃$()正是採摘果樹和果叢所需的工具。$(br)採收籃的使用方法：右鍵點擊果樹或果叢，即可採收$(thing)半徑 7 格範圍內$()的所有方塊。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "A regular harvest basket has a durability of $(thing)128$(), while the aluminium harvest basket does not take any damage on use. Harvest baskets can also be used by things like the $(thing)Create Deployer$() to automate harvesting. The baskets will use durability in the process."
+			"text": "普通採收籃的耐久度為 $(thing)128$()，而鋁製採收籃不會在使用過程受損。採收籃也可以被 $(thing)機械手$()等設備用來自動化採收。"
 		},
 		{
 			"type": "patchouli:crafting",
-			"title": "Harvest Basket",
+			"title": "採收籃",
 			"recipe": "tfg:shaped/harvest_basket_from_papyrus",
-			"text": "A basic $(item)Harvest Basket$() can be made of soaked papyrus or hardwood."
+			"text": "$(item)採收籃$()可用浸泡後的紙莎紙或硬木製作。"
 		}
 	]
 }
