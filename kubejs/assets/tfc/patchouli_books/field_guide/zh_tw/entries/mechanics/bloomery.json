@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Bloomery$() is a device used to smelt $(thing)Iron Ore$() into $(thing)Iron Blooms$() which can be worked into $(thing)Wrought Iron$(). Some common iron ores are $(l:tfg_ores/earth_vein_index#normal_hematite)Hematite$(), $(l:tfg_ores/earth_vein_index#normal_limonite)Limonite$(), and $(l:tfg_ores/earth_vein_index#normal_magnetite)Magnetite$(). These ores melt into $(thing)Cast Iron$() rather than $(thing)Wrought Iron$(). All iron-bearing items melt into Cast Iron. To turn them into usable iron, the bloomery is needed. Any iron item can be used in the bloomery, including iron tools and cast iron ingots!"
+			"text": "$(thing)鍛鐵爐$()是將$(thing)鐵礦$()燒煉成$(thing)生鐵方胚$()的装置，生鐵方胚可進一步加工成$(thing)鍛鐵$()。常見的鐵礦包括$(l:tfg_ores/earth_vein_index#normal_hematite)赤鐵礦$()、$(l:tfg_ores/earth_vein_index#normal_limonite)褐鐵礦$()和$(l:tfg_ores/earth_vein_index#normal_magnetite)磁鐵礦$()。直接熔化這些礦石只會得到$(thing)鑄鐵$()，而非$(thing)鍛鐵$()。實際上，所有含鐵物品熔化後都只會變成鑄鐵。要轉換成有用的鍛鐵就需要鍛鐵爐。任何含鐵物品都可用於鍛鐵爐，包含鐵製工具和鑄鐵錠！"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,24 +17,24 @@
 			"type": "patchouli:multiblock",
 			"multiblock_id": "tfc:bloomery",
 			"name": "鍛鐵爐",
-			"text": "A minimum size bloomery. The bloomery block will open and close with $(item)$(k:key.use)$().",
+			"text": "最小尺寸的鍛鐵爐。鍛鐵爐方塊可用$(item)$(k:key.use)$()進行開關。",
 			"enable_visualize": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form.$(br2)You can only use $(item)Charcoal$() as fuel for your bloomery."
+			"text": "鍛鐵爐最多容納48個$(thing)輸入項$()每層煙囪可以放16個物品。最多可額外堆疊兩層煙囪。$(br2)往鍛鐵爐添加物品，爬到頂部並將物品扔進去。應該會形成一層層灰色礦石。$(br2)只能用$(item)木炭$()作為鍛鐵爐的燃料。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/tutorial/bloomery_hole.png"
 			],
-			"text": "The bloomery consumes $(thing)1 Charcoal$() and $(thing)144 mB of Cast Iron$() to produce one $(thing)Bloom$().",
+			"text": "鍛鐵爐每消耗$(thing)一個木炭$()以及$(thing)144mb的鑄鐵$()來生產一塊$(thing)生鐵方胚$()。",
 			"border": true
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If you don't want to do the math, we recommend $(item)25 metal ore dusts$() and $(item)22 fuel items$().$(br2)After filling the bloomery with a combination of $(thing)Fuel$() and $(thing)Ore$(), light the bloomery doors, and wait 15 hours for the bloomery to smelt. When the bloomery shuts off, it leaves behind a $(thing)Bloom$() block. This contains $(thing)Raw Iron Blooms$() which can be obtained by mining the $(thing)Bloom$() repeatedly with a pickaxe."
+			"text": "如果不想自己計算，我們建議$(item) 25 個金屬礦粉$()和$(item)22 個燃料$()。$(br2)將$(thing)燃料$()和$(thing)礦石()的混合物裝入鍛鐵爐後，點燃鍛鐵爐門，等待 15 小時讓鍛鐵爐完成冶煉。當鍛鐵爐熄滅後會留下 $(thing)方胚$()。透過鎬反覆挖掘 $(thing)方胚$()來獲得$(thing)生鐵方胚$()。"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -51,24 +51,24 @@
 					"X": "tfc:bloom[layers=8]"
 				}
 			},
-			"name": "The Bloom Block",
-			"text": "A large $(thing)Bloom$().",
+			"name": "方胚",
+			"text": "大塊$(thing)方胚$()。",
 			"enable_visualize": false
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/refined_iron_bloom",
-			"text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Refined Iron Bloom$()."
+			"text": "$(thing)生鐵方胚$()必須在$(l:mechanics/anvils)砧$()鍛打成$(thing)精鐵方胚$()。"
 		},
 		{
 			"type": "tfc:anvil_recipe",
 			"recipe": "tfc:anvil/wrought_iron_from_bloom",
-			"text": "The $(thing)Refined Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Wrought Iron Ingots$()."
+			"text": "$(thing)精鐵方胚$()必須在$(l:mechanics/anvils)砧$()鍛打成$(thing)鍛鐵錠$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)If the bloomery finds itself with more items contained than it can handle based on its chimney, it will try to spit them out the front.$()$(li)To retrieve your items from a bloomery that is not lit, do not break the molten block tower. Break the bloomery block.$()$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$()",
-			"title": "Smith's Notes"
+			"text": "$(li)若投入的物品超出鍛鐵爐可處理的容量則會將多餘的物品從前方吐出。$()$(li)要從尚未點燃的鍛鐵爐內取出物品，請直接破壞鍛鐵爐門$()$(li)方胚只會熔為鑄鐵而非鍛鐵，它們必須被鍛打！$()",
+			"title": "鐵匠筆記"
 		}
 	],
 	"read_by_default": true,
