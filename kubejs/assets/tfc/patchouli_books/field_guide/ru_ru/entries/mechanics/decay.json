@@ -15,7 +15,7 @@
             "type": "patchouli:text",
             "anchor": "small_vessels",
             "text": "One of the easiest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() status, which extends their remaining lifetime by 2x.$(br2)$(thing)Small Vessels$() are a item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() status to their contents.",
-            "title": "Vessels"
+            "title": "Сосуды"
         },
         {
             "type": "patchouli:multiblock",
@@ -34,13 +34,13 @@
                 }
             },
             "name": "",
-            "text": "A Sealed Large Vessel.",
+            "text": "Запечатанный большой сосуд.",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)It is also important to use the correct device for cooking. Certain devices that heat very hot, such as a $(l:mechanics/charcoal_forge)Charcoal Forge$() or a $(l:mechanics/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!",
-            "title": "Cooking"
+            "title": "Готовка"
         },
         {
             "type": "tfc:heat_recipe",
@@ -51,7 +51,7 @@
             "type": "patchouli:text",
             "anchor": "salting",
             "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterwards, cooking or otherwise preserving the meat does not take away the salted property.",
-            "title": "Salting"
+            "title": "Засаливание"
         },
         {
             "type": "tfc:quern_recipe",
@@ -73,7 +73,7 @@
                     "X": "tfc:groundcover/salt_lick"
                 }
             },
-            "name": "Salt Licks",
+            "name": "Самосадочная соль",
             "text": "Salt can be found naturally in forests. It can be placed and picked back up.",
             "enable_visualize": false
         },

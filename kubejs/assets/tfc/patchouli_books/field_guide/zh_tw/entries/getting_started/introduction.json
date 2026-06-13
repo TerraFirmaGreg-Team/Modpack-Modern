@@ -100,7 +100,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)鍛造錘$()可以当作武器使用（造成$(l:mechanics/damage_types)打擊傷害$()），但它最主要的用途还是在$(l:getting_started/primitive_anvils)冶金业$()中。"
+			"text": "$(thing)鍛造錘$()可以作為武器使用造成$(l:mechanics/damage_types)打擊傷害$()，但它的本業還是$(l:getting_started/primitive_anvils)鍛造工藝$()。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
