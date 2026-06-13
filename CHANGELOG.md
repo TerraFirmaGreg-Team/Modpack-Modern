@@ -6,12 +6,28 @@
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
+- Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
+- Improved the FPS performance of Struts @SakuraKitsurugi
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
 - Fixed being able to stonecut raw tuff into tuff bricks and other deco blocks, instead of having to make the bricks first (#4228) @Pyritie
-- Refrigerator now has an active state to swtich texture @TomPlop
-- The Pastoral Rancher accepts grasses once again @TomPlop
+- Fixed the Refrigerator not having a different texture when active @TomPlop
+- Fixed the Pastoral Rancher not allowing grass blocks as valid @TomPlop
+- Fixed clay dirt turning into normal grass instead of clay grass (#4237) @Pyritie
+- Fixed FoV not changing when sprinting with high grain nutrition (#4224) @Redeix
+- Fixed a crash when cooking soup in a pot with ingredients that had one of the new nutrients (such as Toxins on Long Pig) @Redeix
+- Fixed new barrels not keeping their contents when sealed and broken (#4232) @Pyritie
+- Fixed another kinetic bridge exploit @ashleney
+- Fixed a crash when crafting an electric lunchbox (#4246) @SakuraKitsurugi
+- Fixed wool and wool carpets counting as a blaze burner fuel source (#4239) @mafien0
+### Mods
+#### TerraFirmaCraft 3.2.23
+- Fixed barrel items not storing the date they were sealed
+- Added Jade tooltips for things that are safely breakable with a Gem Saw
+- Fixed being able to light waterlogged candles
+- Fixed spring water not counting as water for some effects
+- Fixed ash not accumulating in firepits
 
 ## [0.12.10] - 09-06-2026
 ### Changes
