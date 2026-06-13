@@ -19,6 +19,7 @@ function registerTFGWorldGenBeneathDecoBlocks(event) {
 		.textureAll('tfg:block/huge_quartz')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('tfc:mineable_with_gem_saw')
 		.defaultTranslucent()
 			
 	event.create('tfg:steam_emitter', 'tfg:particle_emitter_decoration')
