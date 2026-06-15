@@ -141,6 +141,11 @@ function registerTFGFlagsMaterialModification(event) {
 	//GTMaterials.EnrichedNaquadahTriniumEuropiumDuranide.addFlags();
 	GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GENERATE_FINE_WIRE);
 
+	// Molybdenum Line
+
+	GTMaterials.Molybdenite.addFlags(DISABLE_DECOMPOSITION, NO_ORE_SMELTING);
+	GTMaterials.Powellite.addFlags(DISABLE_DECOMPOSITION);
+	GTMaterials.Wulfenite.addFlags(DISABLE_DECOMPOSITION);
 
 	// Other flags
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);

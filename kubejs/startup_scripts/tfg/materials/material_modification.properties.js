@@ -62,4 +62,5 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID)
 	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE)
+	GTMaterials.Molybdenite.getProperty(PropertyKey.ORE).setDirectSmeltResult(GTMaterials.NULL);
 }
