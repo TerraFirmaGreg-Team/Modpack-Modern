@@ -51,6 +51,12 @@ const registerCreateRecipes = (event) => {
 			{ output: '#create:table_cloths'} // Gotta do this to not purge the table cloth reset recipes
 		], mod: 'create'
 	})
+	
+	// Restore recipe for copying configured filters, schedules, and clipboards
+	event.custom({
+		type: 'create:item_copying'
+	}).id('kubejs:create_item_copying_restore')
+	
 	// Make Bound Cardboard craftable with all string
 	event.replaceInput({id: 'create:crafting/materials/bound_cardboard_block' }, 'minecraft:string', '#forge:string')
 	
