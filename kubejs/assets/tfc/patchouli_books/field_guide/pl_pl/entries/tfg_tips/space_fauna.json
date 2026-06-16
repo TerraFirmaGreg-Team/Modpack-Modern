@@ -203,7 +203,7 @@
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:raider",
 			"scale": 0.5,
-			"name": "Raider",
+			"name": "Łupieżca",
 			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
 		},
 		{
