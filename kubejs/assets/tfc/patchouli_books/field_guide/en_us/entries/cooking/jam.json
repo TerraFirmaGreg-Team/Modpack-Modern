@@ -1,0 +1,65 @@
+{
+    "name": "Jam Making",
+    "category": "tfc:cooking",
+    "icon": "tfc:jar/cloudberry",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/jam#jarring_station)Jarring Station$()$(li)$(bold)$(l:cooking/jam#shelves)Jar Shelves$()$(li)$(bold)$(l:cooking/jam#jarbnets)Jarbnets$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfg:foods/all_jams",
+            "anchor": "jam",
+            "title": "Jarring Jam",
+            "text": "$(thing)Jars$() are used to preserve fruit for longer periods of time by making Jam. Jars start as $(thing)Empty Jars$(), obtained through $(thing)Glassworking$(). Then, a $(thing)Jar Lid$() is added to create an $(thing)Empty Jar With Lid$().$(br)In a pot, boil $(thing)Sugar$() with 2-4 pieces of $(thing)Fruit$(). When the recipe is done, $(item)$(k:key.use)$() with the empty jar with lid to create a $(thing)Sealed Jar of Jam$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "firmalife:vat,firmalife:jarring_station",
+            "anchor": "jarring_station",
+            "title": "Automating Jam",
+            "text": "Jam can also be mass produced in a $(l:tfc:cooking/cooking_methods#vat)Vat$() using a $(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$(). Funnel ingredients into the vat, use redstone to close it and then extract the outputs from the jarring station."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Unsealing",
+            "recipe": "tfc:crafting/unseal_plum_jar",
+            "text": "Unseal a jar first in a crafting table in order to use it in recipes. The lid is not able to be retrieved. An unsealed jar only lasts for a few days!"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:jar_shelves,tag:beneath:jar_shelves",
+            "anchor": "shelves",
+            "title": "Jar Shelves",
+            "text": "$(thing)Jar Shelves$() can be attached to solid walls. They can be placed directly or by clicking on an existing block of placed jars. The top of the jar shelf counts as a solid surface for placing items, more jars, or other blocks.$(br)Jars can be placed on any solid surfaces with $(item)$(k:key.use)$(). A block can contain four jars of any kind."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:firmalife:jarbnets",
+            "anchor": "jarbnet",
+            "title": "Jarbnets",
+            "text": "The jarbnet is a cosmetic storage block for $(item)Jars$(), $(item)Candles$(), and $(item)Jugs$(). It can be opened and closed by clicking with an empty hand and $(item)$(k:key.sneak)$() pressed. If candles are inside, it can be lit to produce a small amount of light."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+                "tfc:cooking/cooking_methods",
+                "tfc:cooking/decay",
+                "tfc:cooking/sandwiches"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 8,
+    "extra_recipe_mappings": {
+        "tag:tfg:foods/all_jams": 1,
+        "tag:tfc:jar_shelves": 5,
+        "tag:beneath:jar_shelves": 5,
+        "tag:firmalife:jarbnets": 6
+    }
+}

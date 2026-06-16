@@ -353,6 +353,20 @@ function registerTFGFoodItemTags(event) {
 	AUTO_EAT_BLACKLIST.forEach(food => {
 		event.add('tfg:auto_eat_blacklist', food)
 	})
+
+	/**
+	 * List of items that the player can drink from.
+	 * @type {Item[]}
+	 */
+	const drinkingVessels = [
+		'#tfc:glass_bottles',
+		'tfc:ceramic/jug',
+		'#waterflasks:flasks',
+		'firmalife:wine_glass'
+	];
+	drinkingVessels.forEach(item => {
+		event.add('tfg:drinking_vessels', item)
+	});
 }
 
 function registerTFGFoodBlockTags(event) {

@@ -1,0 +1,527 @@
+{
+    "name": "Cooking Methods",
+    "category": "tfc:cooking",
+    "icon": "tfc:grill",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:tfc:cooking/cooking_methods#firepit)Firepit$()$(li2)$(l:tfc:cooking/cooking_methods#grill)Grill$()$(li2)$(l:tfc:cooking/cooking_methods#pot)Pot$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#oven)Ovens$()$(li2)$(l:tfc:cooking/cooking_methods#vat)Vat$()$(li2)$(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#electric_oven)Electric Oven$()$(li)$(bold)$(l:tfc:cooking/cooking_methods#food_processor)Food Processor$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "intro",
+            "title": "Introduction",
+            "text": "Food is one of the most important elements to the mechanics of $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$(). You will need to cook food to make it safe to eat and to boost its $(l:tfc:cooking/food_and_water#nutrients)Nutritional Properties$().$(br2)Some methods of cooking even offer benefits such as reduced decay times."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "firepit",
+            "title": "Firepit",
+            "text": "A $(item)Firepit$() is likely the first cooking method you will have access to. It is capable of cooking only one item at a time and uses logs as fuel."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:firepit[lit=true]"
+                }
+            },
+            "name": "A Firepit",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "grill",
+            "title": "Grill",
+            "text": "A $(thing)Grill$() is an item that can be added to a $(item)Firepit$() or $(item)Oven$() to cook foods more efficiently. The grill is able to cook five items at once, and also gives these items the $(thing)Wood Grilled$() trait when cooking food, which provides a minor buff to the item's $(l:mechanics/decay)expiration date$(). In order to create a firepit with grill, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Wrought Iron Grill$() on the firepit."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:grill[lit=true]"
+                }
+            },
+            "name": "A Firepit with Grill",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Cooking Pot",
+            "anchor": "pot",
+            "text": "A $(thing)Pot$() is an item that can be added to the $(item)Firepit$() or $(item)Oven$() to cook new types of food and also produce some other useful items.$(br2)In order to create a firepit with a pot, first create a $(l:getting_started/firepit)Firepit$(), then use a $(thing)Ceramic Pot$() on the firepit."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:pot[lit=true]"
+                }
+            },
+            "name": "A Firepit with a Pot",
+            "text": "",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The pot contains five item slots and holds up to $(thing)1000 mB$() of any fluid.$(br2)In order to cook something in the pot, first the fluid must be added by using any type of fluid container, such as a bucket, on the pot. Then add items and light the pot. It will begin boiling for a while until the recipe is completed."
+        },
+        {
+            "type": "patchouli:image",
+            "images": [
+                "tfc:textures/gui/book/gui/pot.png"
+            ],
+            "text": "The pot interface, actively boiling and making a type of soup.",
+            "border": false
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "soup",
+            "item": "tfc:food/fruit_soup",
+            "title": "Soup Recipes",
+            "link_recipes": false,
+            "text": "Soup is made from 3-5 $(thing)fruits$(), $(thing)vegetables$(), or $(thing)meats$() in a pot of $(thing)water$(). When the recipe is done, the water in the pot will turn red. $(item)$(k:key.use)$() with a $(l:mechanics/bowls)bowl$() to retrieve it. Soup combines multiple nutrients into a single meal."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:bucket/red_dye",
+            "title": "Simple Recipes",
+            "link_recipes": false,
+            "text": "Other pot recipes transform the items and fluid in the pot into something else. For example, boiling five $(thing)ash$() in $(thing)water$() makes $(thing)lye$()."
+        },
+        {
+            "title": "Ovens",
+            "anchor": "oven",
+            "type": "patchouli:text",
+            "text": "$(thing)Ovens$() are a great way of cooking lots of food in a way that improves their shelf life. Oven-baked food decays at 90% of the rate of regular food. Ovens are a multiblock structure consisting of a $(thing)Bottom Oven$(), $(thing)Top Oven$(), and $(thing)Chimneys$(). These blocks start off as clay, and must be $(thing)Cured$() by raising their temperature to a certain amount for long enough."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ovens are insulated with $(thing)$(t:#firmalife:oven_insulation)Bricks$(), other oven blocks, or anything that can insulate a Forge. This means you can use stone blocks if you want!$(br2)$(item)Tongs$() or $(item)Mittens$() are a safe way to remove hot items from an Oven. Just $(item)$(k:key.use)$() on it while holding it to retrieve items. Otherwise, you may get burned!$(br2)$(item)Oven Appliances$() extend oven functionality."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Oven Building",
+            "anchor": "oven_building",
+            "text": "The $(thing)Oven$() first consists of the Top Oven placed on top of the Bottom Oven. All sides of each oven part, besides the front face, should then be covered with $(thing)$(t:#firmalife:oven_insulation)Oven Insulation$() blocks. Placing a stack of chimneys directly behind the oven causes the smoke from the oven to travel up and out of it. If you don't do this, smoke will quickly fill up your house!"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bottom_oven",
+            "text": "The Bottom Oven is used to hold fuel, which may only be logs. Press $(item)$(k:key.use)$() to add them. The bottom oven is also the part of the oven which may be lit with a $(thing)Firestarter$() or other tool. It will transfer generated heat to the top oven or appliances.$(br2)The bottom oven must be insulated to maintain heat."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "top_oven",
+            "text": "The Top Oven contains the items that are being cooked. It will draw heat from the Bottom Oven and slowly release it over time. Press $(item)$(k:key.use)$() with an item to insert. Remember to use $(thing)Tongs$() or $(thing)Mittens$() to remove the items after.$(br2)The top oven needs insulation to reach higher temperatures. But it is not always recommended since some items like bread can burn to ash if left at high heat."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Pots and Grills can be placed on top of a $(thing)Bottom Oven$(). These devices will get heat automatically from the bottom oven. The pot is only able to be used for making soup. It cannot execute regular pot recipes."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Oven Curing",
+            "anchor": "oven_curing",
+            "text": "Curing Oven blocks is easy, but requires patience. Simply start running your Bottom Oven as you would normally, and then wait. If an oven block is above $(t:Dark Red **)$(4)600$()°C for about 80 seconds, it will cure itself and any oven blocks around it. The curing effect will pass all the way up chimneys nearby."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Uncured Oven",
+            "text": "Ovens should first be assembed $(n)uncured$(). You can customize the appliances and size.",
+            "enable_visualize": true,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E1 ",
+                        "C1 ",
+                        "E1 ",
+                        "E1 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:oven_bottom[facing=south]",
+                    "T": "firmalife:oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Cured Oven",
+            "text": "Example oven structure after curing.",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "   ",
+                        "C  ",
+                        "   ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "EE ",
+                        "EV ",
+                        "ET ",
+                        "C0 ",
+                        "ET ",
+                        "EG ",
+                        "EE "
+                    ],
+                    [
+                        "EE ",
+                        "E1 ",
+                        "E2 ",
+                        "C3 ",
+                        "E4 ",
+                        "E5 ",
+                        "EE "
+                    ]
+                ],
+                "mapping": {
+                    "0": "firmalife:stovetop_pot",
+                    "1": "firmalife:cured_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:cured_oven_bottom[facing=south,logs=3,lit=true]",
+                    "3": "firmalife:cured_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:cured_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:cured_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "G": "firmalife:stovetop_grill",
+                    "E": "#forge:stone_bricks",
+                    "C": "firmalife:cured_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "firmalife:crafting/oven_insulation",
+            "text": "Crafting oven insulation for your Bottom Oven allows you to remove the need for insulating it on the sides and back. It does not remove the need for the chimney or to insulate top ovens. Use $(item)$(k:key.use)$() to apply it."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Aesthetics",
+            "anchor": "countertop",
+            "item": "firmalife:brick_countertop,firmalife:rustic_countertop,firmalife:tile_countertop,firmalife:stone_countertop,firmalife:rustic_finish,firmalife:tile_finish,firmalife:stone_finish",
+            "text": "$(thing)Countertops$() and $(thing)Finishes$() are aesthetic blocks that count as oven parts. Finishes are applied with $(item)$(k:key.use)$(). Only $(n)brick$() oven blocks may take on finishes. Stone finish can't be applied to brick. Use $(item)Sealed bricks$() to match the look."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Oven Hopper",
+            "anchor": "oven_hopper",
+            "item": "firmalife:oven_hopper",
+            "text": "The $(thing)Oven Hopper$() will input logs into any Bottom Oven that it is facing. It holds 16 logs (4 stacks of 4, like a log pile), and its inventory is fed by dropping items in the top. However, it is pretty useless in $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() since item pipes can do the same thing."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Ashtray",
+            "anchor": "ashtray",
+            "item": "firmalife:ashtray",
+            "text": "The $(thing)Ashtray$() collects $(thing)Wood Ash$() when placed below a $(thing)Bottom Oven Block$(). There is a 0.5 chance it gains ash when fuel is consumed. Ash is extracted with $(item)$(k:key.use)$() or hoppers, and inserted via $(item)$(k:key.attack)$() it."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Insulated Oven",
+            "text": "Example of an insulated oven with appliances and a finish.$(br)Note: $(7)Vats, pots and grills count as insulating blocks.$()",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        "   ",
+                        "H  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "JV ",
+                        "FT ",
+                        "H3 ",
+                        "FT ",
+                        " G "
+                    ],
+                    [
+                        " 1 ",
+                        " 2 ",
+                        "H0 ",
+                        " 4 ",
+                        " 5 "
+                    ],
+                    [
+                        " A ",
+                        " B ",
+                        " C ",
+                        " D ",
+                        " E "
+                    ]
+                ],
+                "mapping": {
+                    "3": "firmalife:stovetop_pot",
+                    "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                    "2": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=3,lit=true]",
+                    "0": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=2,lit=true]",
+                    "4": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=1,lit=true]",
+                    "5": "firmalife:insulated_rustic_oven_bottom[facing=south,lit=false]",
+                    "T": "firmalife:cured_rustic_oven_top[facing=south]",
+                    "V": "firmalife:vat",
+                    "J": "firmalife:jarring_station[facing=south]",
+                    "A": "firmalife:ashtray[stage=5]",
+                    "B": "firmalife:ashtray[stage=4]",
+                    "C": "firmalife:ashtray[stage=3]",
+                    "D": "firmalife:ashtray[stage=2]",
+                    "E": "firmalife:ashtray[stage=1]",
+                    "G": "firmalife:stovetop_grill",
+                    "F": "firmalife:rustic_countertop",
+                    "H": "firmalife:cured_rustic_oven_chimney"
+                }
+            }
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Vat",
+            "anchor": "vat",
+            "item": "firmalife:vat",
+            "text": "The $(thing)Vat$() produces boiling recipes in bulk. It has one slot for items, and 10,000mB of fluid space, similar to a barrel.$(br2)Vats can only hold one fluid type at a time. So, if you make a recipe that outputs fluids while still having leftover fluid inputs it will void those inputs!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To use a vat, $(item)$(k:key.use)$() it with fluids and items to add them to the inventory. With an empty hand and $(item)$(k:key.sneak)$() held, click to seal and unseal the vat. A vat will not boil until it is sealed.$(br)Vats should be placed above a $(thing)Bottom Oven$(). If the vat would overflow on completion of the recipe, it will not boil! Vats can be automatically opened and closed with $(thing)Redstone$()."
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "Example of an oven with a $(l:tfc:cooking/cooking_methods#vat)Vat$() and $(l:tfc:cooking/cooking_methods#jarring_station)Jarring Station$().",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=true]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "H ",
+                            "  "
+                        ],
+                        [
+                            "HV",
+                            " J"
+                        ],
+                        [
+                            "H1",
+                            "  "
+                        ],
+                        [
+                            "  ",
+                            " 0"
+                        ]
+                    ],
+                    "mapping": {
+                        "1": "firmalife:insulated_rustic_oven_bottom[facing=south,logs=4,lit=true]",
+                        "V": "firmalife:vat[sealed=false]",
+                        "J": "firmalife:jarring_station[facing=west]",
+                        "H": "firmalife:cured_rustic_oven_chimney"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Jarring Station",
+            "anchor": "jarring_station",
+            "item": "firmalife:jarring_station",
+            "text": "The $(thing)Jarring Station$() is used to automatically fill $(item)$(t:Empty Jar with Lid)Jars$() with the $(l:tfc:cooking/cooking_methods#vat)Vat$(). The jarring station has a spout on one side that should point to the vat.$(br)When it detects fruity fluid, it will automatically fill the jars with $(thing)Jam$() and seal them, requiring 500 mB of fruity fluid per jar."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Electric Oven",
+            "anchor": "electric_oven",
+            "text": "The $(item)Electric Oven$() is a machine added by $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() to automatically cook food items using $(thing)EU$().",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_oven"
+                }
+            }
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Food Processor",
+            "anchor": "food_processor",
+            "text": "The $(item)Food Processor$() is another machine added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() to automatically create meals or process food ingredients using $(thing)EU$().",
+            "enable_visualize": false,
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfg:lv_food_processor"
+                }
+            }
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+                "tfc:cooking/decay",
+                "tfc:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 4,
+    "extra_recipe_mappings": {
+        "tfc:wrought_iron_grill": 4,
+        "tfc:pot": 6,
+        "tfc:ceramic/unfired_pot": 6,
+        "tfc:ceramic/pot": 6,
+        "firmalife:oven_insulation": 21,
+        "firmalife:rustic_finish": 22,
+        "firmalife:tile_finish": 22,
+        "firmalife:stone_finish": 22,
+        "firmalife:oven_hopper": 23,
+        "firmalife:ashtray": 24,
+        "firmalife:vat": 26,
+        "firmalife:jarring_station": 29,
+        "tfg:lv_food_oven": 30,
+        "tfg:mv_food_oven": 30,
+        "tfg:hv_food_oven": 30,
+        "tfg:ev_food_oven": 30,
+        "tfg:iv_food_oven": 30,
+        "tfg:luv_food_oven": 30,
+        "tfg:zpm_food_oven": 30,
+        "tfg:uv_food_oven": 30,
+        "tfg:lv_food_processor": 31,
+        "tfg:mv_food_processor": 31,
+        "tfg:hv_food_processor": 31,
+        "tfg:ev_food_processor": 31,
+        "tfg:iv_food_processor": 31,
+        "tfg:luv_food_processor": 31,
+        "tfg:zpm_food_processor": 31,
+        "tfg:uv_food_processor": 31
+    }
+}

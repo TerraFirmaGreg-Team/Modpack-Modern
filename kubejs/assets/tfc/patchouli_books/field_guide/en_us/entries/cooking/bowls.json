@@ -1,0 +1,36 @@
+{
+    "name": "Bowls",
+    "category": "tfc:cooking",
+    "icon": "tfc:ceramic/bowl",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(thing)Bowls$() are a versatile tool which can be used to make $(l:mechanics/salad)Salads$(), to make $(l:mechanics/pot)Soups$(), to $(l:mechanics/decay#salting)Salt$() meat, or to apply $(thing)Powder$() to $(l:mechanics/glassworking_applications#coloring)Glass$() in order to change the resulting glass's color.$(br2)Bowls can be made both from $(thing)Ceramic$()―By knapping a bowl out of clay, and then firing them―Or out of wood."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To make a $(item)Salad$() open the interface by holding a bowl and $(item)$(k:key.sneak) + $(k:key.use)$() in the air.$(br2)Bowls can also be placed on the ground like blocks. When placed, they can be filled with any type of $(thing)Powder$() - the results of grinding ores, minerals, or gems in the $(l:mechanics/quern)Quern$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:powders",
+            "anchor": "powder_bowl",
+            "title": "Powders",
+            "link_recipes": false,
+            "text": "The Powder Bowl can hold up to 16 of a given powder. To insert items, $(item)$(k:key.use)$() while holding the powder. To extract items, $(item)$(k:key.use)$() with an empty hand.$(br2)$(item)$(k:key.sneak)$() allows extracting the entire contents of the bowl."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:powder/salt",
+            "link_recipes": false,
+            "text": "If there is salt in the bowl, clicking with unsalted raw meat will salt the meat. This is the same as crafting the meat with the salt in your inventory."
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 7,
+    "extra_recipe_mappings": {
+        "tfc:ceramic/unfired_bowl": 1,
+        "tfc:ceramic/bowl": 1,
+        "minecraft:bowl": 1
+    }
+}

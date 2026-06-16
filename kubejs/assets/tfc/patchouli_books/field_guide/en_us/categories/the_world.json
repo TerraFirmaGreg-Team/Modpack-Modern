@@ -1,1 +1,6 @@
-{"name":"Earth","description":"All about the geology and ecology of your home planet--Earth.","icon":"tfg:marker/earth","sortnum":0}
+{
+    "name": "Earth",
+    "description": "All about the geology and ecology of your home planet--Earth.$(br2)$(l:https://wiki.terrafirmagreg.team/field-guide-modern/en_us/the_world.html)Online Version$()",
+    "icon": "tfg:marker/earth",
+    "sortnum": 0
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Cheese Making",
+  "category": "tfc:cooking",
+  "icon": "firmalife:textures/item/food/gouda.png",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To make cheese, milk must be $(thing)curdled$() first. To curdle milk, you need $(thing)Rennet$(). Rennet comes from the stomach of $(thing)Ruminant$() animals. This includes $(l:the_world/wild_animals#yak)Yaks$(), $(l:the_world/wild_animals#cow)Cows$(), $(l:the_world/wild_animals#sheep)Sheep$(), $(l:the_world/wild_animals#goat)Goats$(), and $(l:the_world/wild_animals#musk_ox)Musk Oxen$(). To curdle milk, seal it in a $(item)Barrel$() with Rennet for 4 hours."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "curd",
+      "title": "Cheese Curds",
+      "item": {
+        "tag": "tfg:foods/cheese_curds"
+      },
+      "text": "Curdled milk can then be converted to $(thing)Curds$() by sealing it in a barrel with $(thing)Cheesecloth$(). $(l)Cheesecloth is not reusable$().$(br)Cheese curds can be mixed with a few ingredients and fried to make $(item)Beer Battered Cheese Curds$() or aged into wet and dry cheeses."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "cheese_wheel",
+      "title": "Cheese Wheels",
+      "item": {
+        "tag": "firmalife:cheese_wheels"
+      },
+      "text": "Cheese wheels are blocks made from $(item)Cheese Curds$(). To improve their quality and shelf life, cheese wheels should be $(thing)Aged$() in a $(l:tfc:cooking/decay#cellar)Cellar$(). In order to obtain edible cheese from a cheese wheel, it should be sliced off the wheel by clicking $(item)$(k:key.use)$() with a $(thing)Knife$(). If the block is broken, the aging is lost!$(br)$(thing)Dry Cheeses$() are made from curds and salt, while $(thing)Wet Cheeses$() are aged in sea water."
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=fresh]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=aged]"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "firmalife:gouda_wheel[age=vintage]"
+          }
+        }
+      ]
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+            "tfc:cooking/food_and_water",
+            "tfc:the_world/wild_animals"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 5,
+    "extra_recipe_mappings": {
+      "firmalife:rennet": 0,
+      "tag:tfg:foods/cheese_curds": 1,
+      "firmalife:cheesecloth": 1,
+      "tag:firmalife:cheese_wheels": 2
+    }
+}

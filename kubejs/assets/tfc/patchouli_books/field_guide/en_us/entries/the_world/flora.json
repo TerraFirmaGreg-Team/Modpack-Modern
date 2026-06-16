@@ -1,5 +1,5 @@
 {
-    "name": "Flora",
+    "name": "Earth Flora",
     "category": "tfc:the_world",
     "icon": "tfc:plant/goldenrod",
     "pages": [
@@ -682,10 +682,10 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
-                "tfc:the_world/geology",
                 "tfc:the_world/wild_fruits",
+                "tfc:the_world/wild_animals",
                 "tfc:the_world/wild_crops",
-                "tfc:the_world/flora"
+                "tfc:the_world/earth_tree_index"
             ]
         }
     ],

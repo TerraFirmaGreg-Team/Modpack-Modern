@@ -1,17 +1,17 @@
 {
-    "name": "Food and Water",
-    "category": "tfc:getting_started",
+    "name": "Nutrition & Thirst",
+    "category": "tfc:cooking",
     "icon": "tfc:textures/item/food/orange.png",
     "pages": [
         {
             "type": "patchouli:text",
             "title": "Index",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#basics)Basics$()$(li)$(bold)$(l:cooking/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:cooking/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:cooking/food_and_water#nutrients)Nutrients$()$(li2)$(l:cooking/food_and_water#fruit)Fruit$()$(li2)$(l:cooking/food_and_water#vegetables)Vegetables$()$(li2)$(l:cooking/food_and_water#protein)Protein$()$(li2)$(l:cooking/food_and_water#grain)Grain$()$(li2)$(l:cooking/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:cooking/food_and_water#contaminants)Contaminants$()$(li2)$(l:cooking/food_and_water#toxins)Toxins$()$(li2)$(l:cooking/food_and_water#parasites)Parasites$()$(li2)$(l:cooking/food_and_water#microplastics)Microplastics$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:cooking/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:cooking/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:cooking/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:cooking/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:cooking/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:cooking/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:cooking/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:cooking/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:cooking/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:cooking/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:cooking/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:cooking/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:cooking/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:cooking/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:cooking/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:cooking/food_and_water#spicy_transient_effect)Spicy$()"
         },
         {
             "type": "patchouli:text",
@@ -25,7 +25,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:mechanics/decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
+            "text": "All foods have a tooltip with this information. The tooltip includes the $(l:tfc:cooking/decay#decay)Decay Date$() of the food, which may be extended with preservation. When viewing this information, it's important to realize that not all foods have nutritional value. For example, $(l:mechanics/bread)Dough$() is a food, but it has no Nutrition, Saturation, or Water value. Eating it would not do much good."
         },
         {
             "type": "patchouli:text",
@@ -61,18 +61,21 @@
             "enable_visualize": false
         },
         {
-            "type": "tfc:knapping_recipe",
-            "recipe": "tfc:clay_knapping/jug",
-            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is a way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water."
+            "type": "patchouli:spotlight",
+            "title": "Drinking Vessels",
+            "item": {
+                "tag": "tfg:drinking_vessels"
+            },
+            "text": "$(l:getting_started/pottery)Knapping$() and firing a $(l:getting_started/pottery#jug)jug$() is an early way to carry water with you. Fill it like a bucket with $(item)$(k:key.use)$(). Holding $(item)$(k:key.use)$() drinks the water.$(br2)You can also drink out of other $(l:tfc:cooking/drinking_containers)Containers$() such as $(item)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$()."
         },
         {
             "type": "patchouli:text",
-            "text": "You can also drink out of other containers such as $(l:waterflasks)Flasks$() or $(l:mechanics/glassworking)Glass Bottles$(). Read more about drinking containers and drink effects $(l:mechanics/drinks#containers)Here$()"
+            "text": "$(br)Some fluids like $(thing)Milk$() even give $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() when consumed.$(br2)The amount of thirst gained by drinking fluids is not standard. However, water and milk both give 10 points of water. Which is 1 $(9)💧$()-haunch."
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
+            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:cooking/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:cooking/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
             "title": "Nutrition Screen"
         },
         {
@@ -242,19 +245,14 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
-                "tfc:getting_started/size_and_weight",
-                "tfc:mechanics/animal_husbandry",
-                "tfc:mechanics/crops",
+                "tfc:cooking/decay",
+                "tfc:the_world/wild_crops",
                 "tfc:the_world/wild_fruits",
-                "tfc:mechanics/drinks",
-                "tfc:mechanics/decay",
-                "tfc:firmalife/differences_from_tfc",
-                "tfc:beneath/beneath_crops",
-                "tfc:beneath/beneath_wild_fruits",
-                "tfc:tfg_ores/hazards"
+                "tfc:cooking/drinking_containers"
             ]
         }
     ],
     "read_by_default": true,
-    "sortnum": 10
+    "priority": true,
+    "sortnum": 0
 }

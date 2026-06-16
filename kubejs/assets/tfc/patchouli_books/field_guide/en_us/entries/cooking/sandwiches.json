@@ -1,0 +1,49 @@
+{
+    "name": "Sandwich Making",
+    "category": "tfc:cooking",
+    "icon": "tfc:textures/item/food/barley_bread_sandwich.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "sandwich",
+            "text": "$(thing)Sandwiches$() are a meal allowing the combination of two $(thing)$(n)$(t:Bread, Flat Bread, or Bread Slice)Bread$() items and three $(n)$(thing)$(t:tfc:#usable_in_sandwich)Sandwich Ingredients$().$(br2)Sandwich ingredients may not be rotten, but once the sandwich is created, it is considered fresh, and decays like it is new."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_sandwich",
+            "title": "Sandwich",
+            "link_recipes": false,
+            "text": "Sandwiches are dynamic meal items. The ingrediants used will determine the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.8§r§l∑§r§7Ingredients §r+ §70.5§r§l∑§r§7Bread§r)To calculate the nutritional value; take the sum of each ingredients nutrition and multiply by 0.8 except the bread which is multiplied by 0.5$()"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tfc:food/barley_bread_jam_sandwich",
+            "anchor": "jam_sandwich",
+            "title": "Jam Sandwich",
+            "link_recipes": false,
+            "text": "Jam Sandwiches are also dynamic meal items that use the same calculation as regular sandwiches.$(br)Crafting a jam sandwich will leave an empty jar behind."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+                "tfc:cooking/salad",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 10,
+    "extra_recipe_mappings": {
+        "tfc:food/barley_bread_sandwich": 0,
+        "tfc:food/maize_bread_sandwich": 0,
+        "tfc:food/oat_bread_sandwich": 0,
+        "tfc:food/rice_bread_sandwich": 0,
+        "tfc:food/rye_bread_sandwich": 0,
+        "tfc:food/wheat_bread_sandwich": 0
+    }
+}

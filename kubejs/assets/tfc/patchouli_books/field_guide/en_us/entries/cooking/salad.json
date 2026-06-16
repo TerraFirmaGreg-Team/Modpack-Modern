@@ -1,0 +1,40 @@
+{
+    "name": "Salad Making",
+    "category": "tfc:cooking",
+    "icon": "tfc:textures/item/food/protein_salad.png",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "salad",
+            "text": "$(thing)Salads$() are a meal prepared in a $(thing)Bowl$() from up to five $(thing)$(n)$(t:#tfc:usable_in_salad)Ingredients$().$(br2)Salads are one of the simplest meals to make, and just require a $(l:cooking/bowls)Bowl$(). First, hold the $(thing)Bowl$() and press $(item)$(k:key.use)$() while holding $(item)$(k:key.sneak)$(). This will open the salad screen.$(br)Place ingredients in the top slots and then remove the salad from the bottom slot when you are done."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:tfc:salads",
+            "title": "Salads",
+            "link_recipes": false,
+            "text": "Salads are dynamic meal items. The ingrediants used will determine what type of salad is made and the $(l:tfc:cooking/food_and_water#nutrients)Nutrients$() it contains.$(br2)$(t:§70.75§r§l∑§r§7Ingredients§r)To calculate the nutritional value; take the sum of every ingredients nutrition and multiply by 0.75"
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+                "tfc:cooking/sandwiches",
+                "tfc:the_world/wild_crops",
+                "tfc:the_world/wild_fruits",
+                "tfc:the_world/wild_animals"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 9,
+    "extra_recipe_mappings": {
+        "tfc:food/fruit_salad": 0,
+        "tfc:food/dairy_salad": 0,
+        "tfc:food/vegetables_salad": 0,
+        "tfc:food/protein_salad": 0,
+        "tfc:food/grain_salad": 0
+    }
+}

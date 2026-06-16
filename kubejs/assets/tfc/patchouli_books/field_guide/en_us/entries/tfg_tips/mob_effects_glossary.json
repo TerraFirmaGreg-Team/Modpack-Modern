@@ -25,22 +25,22 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "quenched",
-			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:getting_started/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
+			"text": "$(bold)$(9)Quenched$()$(li)While active this effect prevents the natural decay of $(l:cooking/food_and_water#thirst)Thirst$(). However, it does not prevent the Thirsty effect from decreasing your meter.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_parasites",
-			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Cure Parasites$()$(li)While active this effect gradually removes $(l:cooking/food_and_water#parasites)Parasite Contamination$() at a rate of about 1% every 10s at base level.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_toxins",
-			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Detoxify$()$(li)While active this effect gradually removes $(l:cooking/food_and_water#toxins)Toxin Contamination$() at a rate of about 1% every 10s at base level.$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cure_microplastics",
-			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:getting_started/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
+			"text": "$(bold)$(9)Filter Microplastics$()$(li)While active this effect gradually removes $(l:cooking/food_and_water#microplastics)Microplastic Contamination$() at a rate of about 1% every 10s at base level.$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -67,7 +67,7 @@
             "title": "Further Reading",
             "anchor": "relations",
             "entries": [
-                "tfc:getting_started/food_and_water",
+                "tfc:cooking/food_and_water",
 				"tfc:beneath/cooling",
                 "tfc:tfg_ores/hazards"
             ]

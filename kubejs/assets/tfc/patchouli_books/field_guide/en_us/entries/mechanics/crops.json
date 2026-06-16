@@ -6,14 +6,6 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Crops are a source of food and some other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$(). Seeds are also useful as $(l:mechanics/fishing)bait$()."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
-		},
-		{
-			"type": "patchouli:text",
 			"title": "Contents",
 			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
 		},
@@ -4153,61 +4145,5 @@
 			"enable_visualize": false
 		}
 	],
-	"read_by_default": true,
-	"extra_recipe_mappings": {
-		"tfc:seeds/barley": 8,
-		"tfc:food/barley": 8,
-		"tfc:seeds/oat": 10,
-		"tfc:food/oat": 10,
-		"tfc:seeds/rye": 12,
-		"tfc:food/rye": 12,
-		"tfc:seeds/maize": 14,
-		"tfc:food/maize": 14,
-		"tfc:seeds/wheat": 16,
-		"tfc:food/wheat": 16,
-		"tfc:seeds/rice": 18,
-		"tfc:food/rice": 18,
-		"tfc:seeds/beet": 20,
-		"tfc:food/beet": 20,
-		"tfc:seeds/cabbage": 22,
-		"tfc:food/cabbage": 22,
-		"tfc:seeds/carrot": 24,
-		"tfc:food/carrot": 24,
-		"tfc:seeds/garlic": 26,
-		"tfc:food/garlic": 26,
-		"tfc:seeds/green_bean": 28,
-		"tfc:food/green_bean": 28,
-		"tfc:seeds/potato": 30,
-		"tfc:food/potato": 30,
-		"tfc:seeds/pumpkin": 32,
-		"tfc:seeds/melon": 34,
-		"tfc:seeds/red_bell_pepper": 36,
-		"tfc:seeds/yellow_bell_pepper": 38,
-		"tfc:seeds/onion": 40,
-		"tfc:food/onion": 40,
-		"tfc:seeds/soybean": 42,
-		"tfc:food/soybean": 42,
-		"tfc:seeds/squash": 44,
-		"tfc:food/squash": 44,
-		"tfc:seeds/sugarcane": 46,
-		"tfc:food/sugarcane": 46,
-		"tfc:seeds/tomato": 48,
-		"tfc:food/tomato": 48,
-		"tfc:seeds/jute": 50,
-		"tfc:jute": 50,
-		"tfc:seeds/papyrus": 52,
-		"tfc:papyrus": 52,
-		"tfg:sunflower_seeds": 54,
-		"tfg:sunflower_product": 54,
-		"tfg:rapeseed_seeds": 56,
-		"tfg:rapeseed_product": 56,
-		"tfg:flax_seeds": 58,
-		"tfg:flax_product": 58,
-		"tfg:cucumber_seeds": 60,
-		"tfg:cucumber_product": 60,
-		"tfg:radish_seeds": 62,
-		"tfg:radish_product": 62,
-		"tfg:lentil_seeds": 64,
-		"tfg:lentil_product": 64
-	}
+	"read_by_default": true
 }

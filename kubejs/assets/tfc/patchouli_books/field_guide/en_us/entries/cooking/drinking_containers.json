@@ -1,0 +1,170 @@
+{
+    "name": "Drinking Containers",
+    "category": "tfc:cooking",
+    "icon": "tfc:ceramic/jug",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Introduction",
+            "anchor": "intro",
+            "text": "If you are tired of drinking directly out of streams and ponds like a wild horse then consider making a $(item)Drinking Vessel!$()$(br2)Everytime you drink from a vessel you will consume 100mb of fluid and damage the vessel 1 durability (If applicable) or has a chance of breaking (If applicable. Can be changed in TFC server config)."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Drinking from a container will also work for passing on drink effects from $(item)Alcohol$() or other fluids. As well as $(l:tfc:cooking/food_and_water#nutrients)Nutrient$() values.$(br2)$(o)$(7)Some drinking containers can even be played as a musical instrument when empty.$()"
+        },
+        {
+            "type": "tfc:table",
+            "anchor": "table",
+            "strings": [
+                {
+                    "text": "Vessel",
+                    "bold": true
+                },
+                {
+                    "text": "Capacity (mb)",
+                    "bold": true
+                },
+                {
+                    "text": "Health/ Break%",
+                    "bold": true
+                },
+                {
+                    "text": "Ceramic Jug"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Wine Glass"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Leather Flask"
+                },
+                {
+                    "text": "500"
+                },
+                {
+                    "text": "100"
+                },
+                {
+                    "text": "Iron Flask"
+                },
+                {
+                    "text": "2000"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "Red Steel Flask"
+                },
+                {
+                    "text": "2000"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Silica Glass Bottle"
+                },
+                {
+                    "text": "500"
+                },
+                {
+                    "text": "0.5%"
+                },
+                {
+                    "text": "Hematitic Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "2%"
+                },
+                {
+                    "text": "Olivine Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "1%"
+                },
+                {
+                    "text": "Volcanic Glass Bottle"
+                },
+                {
+                    "text": "400"
+                },
+                {
+                    "text": "4%"
+                },
+                {
+                    "text": "Borosilicate Flask"
+                },
+                {
+                    "text": "144"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Borosilicate Beaker"
+                },
+                {
+                    "text": "1296"
+                },
+                {
+                    "text": "∞"
+                },
+                {
+                    "text": "Borosilicate Vial"
+                },
+                {
+                    "text": "16"
+                },
+                {
+                    "text": "∞"
+                }
+            ],
+            "text": "",
+            "title": "Drinking Containers",
+            "legend": [],
+            "columns": 2,
+            "first_column_width": 90,
+            "column_width": 72,
+            "row_height": 10,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "sortnum": 3,
+    "extra_recipe_mappings": {
+        "tag:tfg:drinking_vessels": 1
+    }
+}

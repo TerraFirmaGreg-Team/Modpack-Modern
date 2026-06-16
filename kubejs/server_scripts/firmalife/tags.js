@@ -48,12 +48,8 @@ const registerFirmaLifeBlockTags = (event) => {
 		event.add('firmalife:always_valid_greenhouse_wall', `firmalife:${  tier  }_greenhouse_trapdoor`)
 	})
 
-    //Allows any block with the word "brick" in its id to be used as oven insulation.
-    //Add blacklisted words to the const with | between.
-    const brick_blacklist = ('drying|additionalplacements');
-    event.add('firmalife:oven_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
-
     event.add('firmalife:oven_insulation', 'firmalife:stovetop_pot');
+    event.add('firmalife:oven_insulation', 'firmalife:stovetop_grill');
     event.add('firmalife:oven_insulation', 'firmalife:vat');
 
     // tfg and a few missed(?) tfc flowers for bee restoration

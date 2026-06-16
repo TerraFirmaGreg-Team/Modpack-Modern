@@ -11,7 +11,7 @@
         {
             "type": "patchouli:text",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#igneous_grades)Igneous Rock Grades$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
+            "text": "$(li)$(bold)$(l:the_world/geology#rocks)Rock Layers$()$(li)$(bold)$(l:the_world/geology#metamorphism)Metamorphism$()$(li)$(bold)$(l:the_world/geology#ocean_floors)Ocean Floors$()$(li)$(bold)$(l:the_world/geology#uplift_regions)Uplift Regions$()$(li)$(bold)$(l:the_world/geology#rock_devisions)Rock Devisions$()$(li2)$(l:the_world/geology#sedimentary)Sedimentary$()$(li2)$(l:the_world/geology#metamorphic)Metamorphic$()$(li2)$(l:the_world/geology#igneous_extrusive)Igneous Extrusive$()$(li2)$(l:the_world/geology#igneous_intrusive)Igneous Intrusive$()$(li)$(bold)$(l:the_world/geology#rock_classifiers)Rock Classifiers$()$(li2)$(l:the_world/geology#sedimentary_carbonate)Sedimentary-Carbonate$()$(li2)$(l:the_world/geology#sedimentary_clastic)Sedimentary-Clastic$()$(li2)$(l:the_world/geology#sedimentary_organic)Sedimentary-Organic$()$(li2)$(l:the_world/geology#igneous_felsic)Igneous-Felsic$()$(li2)$(l:the_world/geology#igneous_intermediate)Igneous-Intermediate$()$(li2)$(l:the_world/geology#igneous_mafic)Igneous-Mafic$()$(li2)$(l:the_world/geology#igneous_ultramafic)Igneous-ultramafic$()"
         },
         {
             "type": "patchouli:image",
@@ -163,7 +163,7 @@
             "item": {
                 "tag": "tfg:stone_composition/raw/igneous_intermediate"
             },
-            "anchor": "sedimentary_organic",
+            "anchor": "igneous_intermediate",
             "text": "$(l:https://en.wikipedia.org/wiki/Intermediate_composition)Igneous-Intermediate$() rocks contain 51.5 - 63.0 wt% SiO₂. Putting them in-between $(l:the_world/geology#igneous_felsic)Felsic$() and $(l:the_world/geology#igneous_mafic)Mafic$() compositions."
         },
         {

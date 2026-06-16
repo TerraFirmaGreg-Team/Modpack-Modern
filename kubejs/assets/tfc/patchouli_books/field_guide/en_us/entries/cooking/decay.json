@@ -1,0 +1,503 @@
+{
+    "name": "Decay & Preservation",
+    "category": "tfc:cooking",
+    "icon": "tfclunchbox:lunchbox",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/decay#decay)Introduction$()$(li2)$(l:cooking/decay#calculation)Calculating Decay$()$(li2)$(l:cooking/decay#table)Modifier Table$()$(li)$(bold)$(l:cooking/decay#vessels)Vessels$()$(li)$(bold)$(l:cooking/decay#cooking)Cooking$()$(li)$(bold)$(l:cooking/decay#smoking)Smoking$()$(li)$(bold)$(l:cooking/decay#salting)Salting$()$(li)$(bold)$(l:cooking/decay#vinegar)Pickling$()$(li)$(bold)$(l:cooking/decay#drying)Drying$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(bold)$(l:cooking/decay#oven_baked)Oven Baking$()$(li)$(bold)$(l:cooking/decay#cellar)Cellars$()$(li2)$(l:cooking/decay#shelf)Cellar Storage$()$(li)$(bold)$(l:cooking/decay#lunch_box)Lunch Boxes$()$(li)$(bold)$(l:cooking/decay#refrigerator)Refrigerators$()$(li)$(bold)$(l:cooking/decay#freeze_dry)Freeze Drying$()$(li)$(bold)$(l:cooking/decay#pest)Pest Control$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decay",
+            "title": "Decay",
+            "text": "In TerraFirmaCraft, no food will last forever! Food will $(thing)expire$() over time, turning rotten. Rotten food will not restore any hunger, has the potential to give you debuff effects such as $(thing)Hunger$() or $(thing)Poison$(), and cannot be used in meals!$(br2)Fortunately, there are a number of ways to make your food last longer by $(thing)Preserving$() it."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "When you hover over a piece of food, you will see a tooltip which shows how long the food has until it will rot. It might look something like:$(br2)$(bold)$(2)Expires on: 5:30 July 5, 1000 (in 5 day(s))$()$(br2)By using various preservation mechanics, that date can be extended, giving you more time before your food roots. Most preservation traits even stack."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "calculation",
+            "title": "Calculating Decay",
+            "text": "When a food item is created in a world it is marked with a creation date time stamp internally. $(thing)TFC$() calculates the spoil rate by referencing that time stamp and the food's inherent decay modifier. Any preservation traits are added on top to shift the creation date back; allowing the item to last longer.$(br)Decay modifiers are a value from 0 to ∞. When 0 the food lasts forever, when ∞ the food spoils instantly. Therefore, the lower the modifier the better."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "To calculate the new spoil time when applying preservation traits you can use the formula: $(2)$(o)New Spoil Days = Spoil Days / Preservation Modifier$() rounded up. Stacking preservation traits is calculated multiplicatively like so: $(2)$(o)NSD = SD / (PM1 * PM2 * ...)$() which means that stacking traits exponentially increases decay time. A table of base preservation modifiers is available on the next page and each trait will be referenced in their own sections."
+        },
+        {
+            "type": "tfc:table",
+            "anchor": "table",
+            "strings": [
+                {
+                    "text": "Trait",
+                    "bold": true
+                },
+                {
+                    "text": "Modifier",
+                    "bold": true
+                },
+                {
+                    "text": "Oven Baked"
+                },
+                {
+                    "text": "0.900"
+                },
+                {
+                    "text": "Wood Grilled"
+                },
+                {
+                    "text": "0.800"
+                },
+                {
+                    "text": "Smoked"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Salted"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Pickled"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Preserved"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Wild"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Dried"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Cooled"
+                },
+                {
+                    "text": "0.500"
+                },
+                {
+                    "text": "Shelved"
+                },
+                {
+                    "text": "0.400 - 0.350 - 0.250"
+                },
+                {
+                    "text": "Hung"
+                },
+                {
+                    "text": "0.350 - 0.300 - 0.250"
+                },
+                {
+                    "text": "Refrigerating"
+                },
+                {
+                    "text": "0.125"
+                },
+                {
+                    "text": "Preserved in Vinegar"
+                },
+                {
+                    "text": "0.100"
+                },
+                {
+                    "text": "Cryodessicated"
+                },
+                {
+                    "text": "0.020"
+                }
+            ],
+            "text": "",
+            "title": "Preservation Traits: Worst to Best",
+            "legend": [],
+            "columns": 1,
+            "first_column_width": 118,
+            "column_width": 118,
+            "row_height": 9,
+            "left_buffer": 2,
+            "top_buffer": 12,
+            "draw_background": false
+        },
+        {
+            "type": "patchouli:empty",
+            "draw_filler": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vessels",
+            "text": "One of the earliest ways to preserve food is to use a $(thing)Vessel$(). $(thing)Large Vessels$() are a block which can store up to nine items, and when $(thing)sealed$() the items inside will gain the $(5)$(bold)Preserved$() trait with a modifier of 0.5.$(br2)$(thing)Small Vessels$() are a item which can store up to four other items, and will also apply the $(5)$(bold)Preserved$() trait to their contents.",
+            "title": "Vessels"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "anchor": "large_vessels",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:ceramic/large_vessel[sealed=true]"
+                }
+            },
+            "name": "",
+            "text": "A Sealed Large Vessel.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cooking",
+            "text": "One other way to easily preserve certain types of food is to cook them. $(thing)Meats$() will all expire slower when they are cooked than when they are raw.$(br2)Certain devices that heat very hot, such as a $(l:mechanics/charcoal_forge)Charcoal Forge$() or a $(l:mechanics/crucible)Crucible$() are $(bold)bad$() for cooking food, which will make them expire faster!$(br)They give the $(c)$(bold)Burnt to a Crisp!$() trait with a modifier of 2.5",
+            "title": "Cooking"
+        },
+        {
+            "type": "tfc:heat_recipe",
+            "recipe": "tfc:heating/mutton",
+            "text": "Instead, a $(l:cooking/cooking_methods#firepit)Firepit$() or a $(l:cooking/cooking_methods#grill)Grill$() can even provide a buff for using it! For example, cooking mutton (pictured above) in a $(thing)Firepit$() will increase its lifetime by about +42%, and cooking in a $(thing)Grill$() will give the $(5)$(bold)Wood Grill$() trait with a modifier of 0.8"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smoking",
+            "title": "Smoking",
+            "text": "Smoking is used to preserve $(thing)Meat$() and $(l:tfc:cooking/cheese)Cheese$() with a modifier of 0.7. To smoke meat, it must have first been $(thing)Brined$() by sealing it in a $(thing)Barrel$() with $(thing)Brine$(). Cheese does not have this requirement.$(br)To start smoking, add an item to wool yarn that is within four blocks above a firepit.The string should begin to generate some smoke if it is working.$(br)Note: The firepit may only be burned with $(thing)Logs$()!"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AXA"
+                    ],
+                    [
+                        "AYA"
+                    ],
+                    [
+                        " 0 "
+                    ]
+                ],
+                "mapping": {
+                    "A": "tfc:mud_bricks/sandy_loam",
+                    "X": "firmalife:wool_string[axis=z]",
+                    "Y": "tfc:firepit[lit=true]"
+                }
+            },
+            "text": "Wool yarn is used to hang items for $(thing)Smoking$(). Supporting blocks are required on each side. $(item)$(k:key.use)$() on the yarn with an item to store up to 8 items for smoking.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salting",
+            "text": "$(thing)Salting$() is a way to make meat last longer. To salt meat, it must be crafted with $(thing)Salt$() in a crafting grid. Only raw meat can be salted. Afterwards, cooking or otherwise preserving the meat does not take away the salted property.$(7)$(bold)Salted$() food gain a modifier of 0.5",
+            "title": "Salting"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "X"
+                    ],
+                    [
+                        "0"
+                    ]
+                ],
+                "mapping": {
+                    "X": "tfc:groundcover/salt_lick"
+                }
+            },
+            "name": "Salt Licks",
+            "text": "Salt can be found naturally in forests in the form of salt licks or ground from salt ores like halite.",
+            "enable_visualize": false
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vinegar",
+            "title": "Vinegar Preservation",
+            "text": "$(thing)Vinegar Preservation$() is a way of making fruits, veggies, and meat last longer. To preserve food in vinegar it must first be $(thing)Pickled$() in $(thing)Brine$(). Once food is pickled, it can be sealed in a Barrel of Vinegar. If there is 125mB of Vinegar per pickled food item, the food will last longer. $(7)$(bold)Pickled$() food gain a modifier of 0.5 while $(7)$(bold)Submerged in Vinegar$() food gain a modifier of 0.1"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drying",
+            "title": "Drying",
+            "text": "The $(thing)Drying Mat$() is used to dry items. It is made with $(thing)Fruit Leaves$(), which are obtained from breaking the leaves of $(thing)Fruit Trees$(). To use the drying mat, place it out in the sun and add an item to it with $(item)$(k:key.use)$(). If it rains, the drying process must start over. Some food items―Like fruits―Will gain the $(7)$(bold)Dried$() trait which gives a modifier of 0.8"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The solar drier functions the same as the drying mat, but 12x as fast. Both can be automated by pushing a piston head against its side. Dropping an item onto a drying mat will place it on the mat."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oven_baked",
+            "title": "Oven Baked",
+            "text": "Baking food items in a $(l:tfc:cooking/cooking_methods#top_oven)Top Oven$() is the second best way to preserve your food items through cooking as it gives the $(7)$(bold)Oven Baked$() trait with a modifier of 0.9"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cellar",
+            "title": "Cellar",
+            "text": "The $(thing)Cellar$() is a multiblock device controlled by a $(item)Climate Station$(). The Cellar multiblock must be fully enclosed by $(thing)$(t:#firmalife:cellar_insulation)Sealed Bricks$() on all sides. The Climate Station must be placed on the first level of the cellar, touching a wall. Activate the climate station by $(item)$(k:key.use)$() it. If you update the structure in any way you will need to reactive the climate station.$(br)The maximum internal volume of a cellar is 31x31x31 blocks."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The cellar is used for food preservation and $(l:tfc:cooking/cheese#cheese_wheel)Aging Cheese$() by using $(l:tfc:cooking/decay#shelf)Food Shelves$() and $(l:tfc:cooking/decay#shelf)Hangers$() to hold food items or by placing cheese on the ground or $(thing)Barrel Racks$().$(br)The cellar performs better in $(l:tfc:the_world/climate#temperature)Colder Environments$().$(li)$(2)Temp >= 0°C:$() Shelves 0.4, Hangers 0.35$(li)$(2)Temp < 0°C:$() Shelves 0.35, Hangers 0.3$(li)$(2)Temp < -12°C:$() Shelves Food 0.25, Hangers0.25"
+        },
+        {
+            "type": "tfc:multimultiblock",
+            "text": "An example cellar structure.",
+            "multiblocks": [
+                {
+                    "pattern": [
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "A       A",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "AHHHHHHHA",
+                            "A       A",
+                            "A       A",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "A   0   T",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AEEEEEEEA",
+                            "A       A",
+                            "A       A",
+                            "AC      B",
+                            "A       A",
+                            "A       A",
+                            "AWWWWWWWA",
+                            "AAAAAAAAA"
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                },
+                {
+                    "pattern": [
+                        [
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     ",
+                            "AAAA     "
+                        ],
+                        [
+                            "AAAAA    ",
+                            "A        ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "AHHHHHHH ",
+                            "A        ",
+                            "A        ",
+                            "AAAAA    "
+                        ],
+                        [
+                            "AAAAAA   ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAA   "
+                        ],
+                        [
+                            "AAAAAAA  ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "A   0    ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAA  "
+                        ],
+                        [
+                            "AAAAAAAA ",
+                            "AEEEEEEE ",
+                            "A        ",
+                            "A        ",
+                            "AC       ",
+                            "A        ",
+                            "A        ",
+                            "AWWWWWWW ",
+                            "AAAAAAAA "
+                        ],
+                        [
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA",
+                            "AAAAAAAAA"
+                        ]
+                    ],
+                    "mapping": {
+                        "A": "firmalife:sealed_bricks",
+                        "C": "firmalife:climate_station[stasis=true]",
+                        "E": "firmalife:wood/food_shelf/pine[facing=east]",
+                        "W": "firmalife:wood/food_shelf/pine[facing=west]",
+                        "B": "firmalife:sealed_door[facing=north,half=lower,hinge=right]",
+                        "T": "firmalife:sealed_door[facing=north,half=upper,hinge=right]",
+                        "H": "firmalife:wood/hanger/pine"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "shelf",
+            "title": "Cellar Storage",
+            "item": "tag:firmalife:food_shelves,tag:firmalife:hangers",
+            "text": "$(item)Food shelves$() and $(item)Hangers$() can contain a full stack of one food item. Adding and removing the item can be done with $(item)$(k:key.use)$() or $(item)$(k:key.sneak)$(k:key.use)$() for full stacks. Items in valid food shelves and hangers receive a decay modifier that is better than vessels and increases with declining $(thing)Average Temperature$()."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "lunch_box",
+            "title": "Lunch Boxes",
+            "item": "tfclunchbox:lunchbox,tfclunchbox:cooling_lunchbox,tfclunchbox:electric_lunchbox",
+            "text": "Lunch boxes provide a convient method to transport and consume food items. The basic lunchbox provides the $(5)$(bold)Preserved$() trait while the $(item)Cooling$() and $(item)Electric Lunchboxes$() give the $(9)$(bold)Cooled$() trait with a modifier of 0.3$(br2)Cooling lunchboxes consume $(item)Ice$() to preserve food, while the electric lunchbox consumes $(2)EU$() energy."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "refrigerator",
+            "title": "Refrigerators",
+            "item": "tfg:mv_food_refrigerator,tfg:hv_food_refrigerator,tfg:ev_food_refrigerator,tfg:iv_food_refrigerator",
+            "text": "Refrigerators are added by $(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() and consume $(2)EU$() to provide the $(3)$(bold)Refrigerating$() trait with a modifier of 0.125$(br)Increasing tiers of the fridge does not effect the preservation buff―Only the storage space available. Fridges can also combine food stacks by merging expiration dates."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "anchor": "freeze_dry",
+            "title": "Freeze Drying",
+            "item": "tfg:food/meal_bag,tfg:food/freeze_dried_fruit,tfg:food/calorie_paste",
+            "text": "$(bold)$(#ff0fb7)TF$()$()$(bold)$(#595959)G$()$() adds the ability to freeze dry select food items in $(item)Food Processors$() to greatly increase shelf life. Freeze drying gives the $(7)$(bold)Cryodesiccated$() trait with a modifier of 0.02"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pest",
+            "title": "Pests",
+            "text": "Food that is left sitting in chests can attract $(thing)Rats$(). So remember to store food properly in vessels, cellars or fridges. Rats are able to open containers and eat the food out of them. You will be alerted to a rat's presence by the message $(thing)'This container has a foul smell'$(). It is important to note that unsealing and resealing a large vessel before you leave the screen will never attract pests."
+        },
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+                "tfc:cooking/cooking_methods"
+            ]
+        }
+    ],
+    "read_by_default": true,
+    "priority": true,
+    "sortnum": 1,
+    "extra_recipe_mappings": {
+        "tfc:powder/salt": 14,
+        "firmalife:drying_mat": 17,
+        "firmalife:solar_drier": 18,
+        "tag:firmalife:food_shelves": 23,
+        "tag:firmalife:hangers": 23,
+        "tfclunchbox:lunchbox": 24,
+        "tfclunchbox:cooling_lunchbox": 24,
+        "tfclunchbox:electric_lunchbox": 24,
+        "tfg:mv_food_refrigerator": 25,
+        "tfg:hv_food_refrigerator": 25,
+        "tfg:ev_food_refrigerator": 25,
+        "tfg:iv_food_refrigerator": 25,
+        "tfg:food/meal_bag": 26,
+        "tfg:food/freeze_dried_fruit": 26,
+        "tfg:food/calorie_paste": 26,
+        "tfg:dry_ice": 26,
+        "tfg:foil_pack": 26
+    }
+}

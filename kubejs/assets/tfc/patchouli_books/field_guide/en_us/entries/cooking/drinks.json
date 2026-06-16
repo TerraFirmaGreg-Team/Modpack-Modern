@@ -1,0 +1,155 @@
+{
+	"name": "Drinks",
+	"icon": "tfg:textures/item/food/yogurt.png",
+	"category": "tfc:cooking",
+	"pages": [
+        {
+            "type": "patchouli:text",
+            "title": "Index",
+            "anchor": "index",
+            "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li2)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:cooking/drinks#wine)Wine$()$(li)$(bold)$(l:cooking/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:cooking/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:cooking/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:cooking/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:cooking/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:cooking/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:cooking/drinks#ice_slush)Ice Slush$()"
+        },
+		{
+			"type": "patchouli:spotlight",
+			"title": "Alcohol",
+			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:mechanics/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
+			"item": "tfc:bucket/beer,tfc:bucket/cider,tfc:bucket/rum,tfc:bucket/sake,tfc:bucket/vodka,tfc:bucket/whiskey,tfc:bucket/corn_whiskey,tfc:bucket/rye_whiskey,firmalife:bucket/mead",
+			"anchor": "alcohol"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aged Alcohol",
+			"text": "$(thing)Aged Alcohols$() are prepared by ageing normal alcohol for 3 months in a sealed barrel. Aged alcohol provide effects when consumed.",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey,tfcagedalcohol:bucket/aged_mead",
+			"anchor": "aged_alcohol"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Vintage Alcohol",
+			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket,tfg:vintage_mead_bucket",
+			"anchor": "vintage_alcohol"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Wine",
+			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
+			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
+			"anchor": "wine"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(n)$(2)$(t:Haste 5:20)Red Wine$(li)$(t:Wither Resistance 5:20)White Wine$(li)$(t:Swim Speed 5:20)Rose Wine$(li)$(t:Jump Boost II 5:20)Sparkling Wine$(li)$(t:Knockback Resistance 5:20)Dessert Wine$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Milks",
+			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If it isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs―And won't remove effects―It provides $(l:tfc:cooking/food_and_water#dairy)Dairy$() nutrition if drunk after eating.",
+			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
+			"anchor": "milk"
+		},
+		{
+			"title": "Spring Water",
+			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
+			"item": "tfc:bucket/spring_water",
+			"type": "patchouli:spotlight",
+			"anchor": "spring_water"
+		},
+		{
+			"title": "Sea Water",
+			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
+			"type": "patchouli:spotlight",
+			"item": "tfc:bucket/salt_water",
+			"anchor": "sea_water"
+		},
+		{
+			"title": "Muddy Water",
+			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
+			"type": "patchouli:spotlight",
+			"item": "tfg:muddy_water_bucket",
+			"anchor": "muddy_water"
+		},
+		{
+			"title": "Fruit Juice",
+			"text": "$(thing)Fruit Juice$() is a great way to condense your fruits into a longer lasting food item. Fruit juice provides the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$(). Which helps stave off thirst.$(br2)Fruit Juice will expire over time.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "juice",
+			"item": "tfg:food/juice"
+		},
+		{
+			"title": "Yogurt",
+			"text": "$(thing)Yogurt$() provides dairy nutrition similarly to milk. It can also be mixed with fruit to make $(item)Fruit Yogurt$().$(br2)Yogurt will expire over time.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "yogurt",
+			"item": "tfg:food/yogurt,tfg:food/fruit_yogurt"
+		},
+		{
+			"title": "Fruit Smoothies",
+			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:cooking/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:cooking/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:cooking/food_and_water#fruit)Fruit$() and $(l:cooking/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
+			"type": "patchouli:spotlight",
+			"anchor": "smoothie",
+			"item": "tfg:food/smoothie"
+		},
+		{
+			"title": "Liquid Ice Slush",
+			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
+			"type": "patchouli:spotlight",
+			"item": "gtceu:ice_bucket",
+			"anchor": "ice_slush"
+		},
+        {
+            "type": "patchouli:relations",
+            "title": "Further Reading",
+            "anchor": "relations",
+            "entries": [
+                "tfc:cooking/food_and_water",
+				"tfc:cooking/drinking_containers"
+            ]
+        }
+	],
+    "read_by_default": true,
+    "sortnum": 2,
+    "extra_recipe_mappings": {
+		"tfc:bucket/beer": 1,
+		"tfc:bucket/cider": 1,
+		"tfc:bucket/rum": 1,
+		"tfc:bucket/sake": 1,
+		"tfc:bucket/vodka": 1,
+		"tfc:bucket/whiskey": 1,
+		"tfc:bucket/corn_whiskey": 1,
+		"tfc:bucket/rye_whiskey": 1,
+		"firmalife:bucket/mead": 1,
+        "tfcagedalcohol:bucket/aged_beer": 2,
+		"tfcagedalcohol:bucket/aged_cider": 2,
+		"tfcagedalcohol:bucket/aged_rum": 2,
+		"tfcagedalcohol:bucket/aged_sake": 2,
+		"tfcagedalcohol:bucket/aged_vodka": 2,
+		"tfcagedalcohol:bucket/aged_whiskey": 2,
+		"tfcagedalcohol:bucket/aged_corn_whiskey": 2,
+		"tfcagedalcohol:bucket/aged_rye_whiskey": 2,
+		"tfcagedalcohol:bucket/aged_mead": 2,
+		"tfg:vintage_beer_bucket": 3,
+		"tfg:vintage_cider_bucket": 3,
+		"tfg:vintage_rum_bucket": 3,
+		"tfg:vintage_sake_bucket": 3,
+		"tfg:vintage_vodka_bucket": 3,
+		"tfg:vintage_whiskey_bucket": 3,
+		"tfg:vintage_corn_whiskey_bucket": 3,
+		"tfg:vintage_rye_whiskey_bucket": 3,
+		"tfg:vintage_mead_bucket": 3,
+		"firmalife:bucket/red_wine": 4,
+		"firmalife:bucket/white_wine": 4,
+		"firmalife:bucket/rose_wine": 4,
+		"firmalife:bucket/sparkling_wine": 4,
+		"firmalife:bucket/dessert_wine": 4,
+		"minecraft:milk_bucket": 6,
+		"firmalife:bucket/yak_milk": 6,
+		"firmalife:bucket/goat_milk": 6,
+		"tfg:food/juice": 10,
+		"tfg:food/yogurt": 11,
+		"tfg:food/fruit_yogurt": 11,
+		"tfg:food/smoothie": 12,
+		"gtceu:ice_bucket": 13
+    }
+}
+

@@ -1,0 +1,95 @@
+{
+  "name": "Alcohol Production",
+  "category": "tfc:cooking",
+  "icon": "firmalife:textures/item/hematitic_wine_bottle.png",
+  "pages": [
+    {
+        "type": "patchouli:text",
+        "title": "Index",
+        "anchor": "index",
+        "text": "$(li)$(bold)$(l:cooking/drinks#alcohol)Alcohol$()$(li)$(bold)$(l:cooking/drinks#aged_alcohol)Aged Alcohol$()$(li)$(bold)$(l:cooking/drinks#vintage_alcohol)Vintage Alcohol$()$(li)$(bold)$(l:cooking/alcohol#wine_making)Wine Making$()$(li2)$(l:cooking/alcohol#wine_propeties)Wine Properties$()$(li)$(bold)$(l:cooking/alcohol#keg)Keg$()$(li)$(bold)$(l:cooking/alcohol#wine_shelf)Wine Shelf$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Wine Making",
+      "anchor": "wine_making",
+      "text": "$(thing)Wine-making$() is the science of turning $(thing)grapes$() into alcohol. You must first find $(l:tfc:the_world/wild_fruits#red_grapes)Red Grapes$() or $(l:tfc:the_world/wild_fruits#white_grapes)White Grapes$() in the wild and cultivate their seeds on $(thing)Trellises$() to obtain $(item)Grapes$(). Wine effects can be viewed $(l:tfc:cooking/drinks#wine)Here$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "anchor": "grape_smashing",
+      "title": "Grape Smashing",
+      "item": {
+        "tag": "firmalife:stomping_barrels"
+      },
+      "text": "Grapes must then be smashed in a $(thing)Stomping Barrel$(), $(thing)Quern$(), or $(l:tfc:cooking/cooking_methods#food_processor)Food Processor$() to obtain smashed grapes. To use a stomping barrel, $(item)$(k:key.use)$() with fresh grapes. Then, jump up and down on the barrel 16 times. $(item)$(k:key.use)$() with an empty hand to retrieve the items.$(br2)Then, seal the smashed grapes in a barrel for 5 days to $(thing)ferment$() them."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "barrel_press",
+      "title": "Barrel press",
+      "recipe": "firmalife:crafting/wood/acacia_barrel_press",
+      "text": "The barrel press is the last step in grape processing."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The leftmost slot can contain up to 16 grapes. Four grape items are needed for a bottle of wine. The four central slots are for mixing the grapes with other ingredients, but this is optional. Using only red or white grapes yields red or white wine. Adding at least one red grape to white wine makes Rose. Adding sugar to white wine makes dessert wine. Adding tirage mixture (yeast and sweetener in a barrel) makes sparkling wine."
+    },
+    {
+      "type": "tfc:glassworking_recipe",
+      "recipe": "firmalife:glassworking/olivine_wine_bottle",
+      "text": "Wine must be bottled in a proper wine bottle, made of non-silica glass."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "bottle_label",
+      "title": "Bottle Label",
+      "recipe": "firmalife:crafting/bottle_label",
+      "text": "$(thing)Bottle labels$() can be renamed in a scribing station, and will add their name to the wine's tooltip."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Wine must be provided with a $(thing)Cork$(), made by soaking $(thing)Treated Lumber$() in $(thing)Limewater$() for a day. When all is complete, use the bottle slot to fill the wine, or by pressing $(item)$(k:key.use)$() with a bottle in hand."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wine_propeties",
+      "title": "Drinking Wine",
+      "text": "The discerning sommelier will be able to detect subtleties in the wine that is produced under different conditions. Indeed, this is possible in the world of Firmalife as well. It starts in the fields in which those grapes were grown -- a row of grapes is deeply affected by the ambient environment and soil."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Grapes can have three terrain related traits -- 'Gravel Grown', 'Slope Grown', and 'Dirt Grown', based on the environment nearby. Wine also records the Koppen Climate Classification of the area in which it is bottled. Grapes grown near bees have the 'Bee Pollinated' trait."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Wine begins aging as soon as it is bottled, and stops aging when the cork is removed. The cork can be removed by $(item)$(k:key.use)$() on the bottle item with a knife item. Otherwise, wine bottles work a little like buckets, and can be emptied into barrels or other devices."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Keg",
+      "anchor": "keg",
+      "recipe": "firmalife:crafting/wood/pine_keg",
+      "text": "The $(thing)Keg$() is a 2x2x2 barrel block that can contain loads of items or fluids. Perfect for your vinery!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Wine Shelf",
+      "anchor": "wine_shelf",
+      "recipe": "firmalife:crafting/wood/hickory_wine_shelf",
+      "text": "The $(thing)Wine Shelf$() is the perfect accessory for your vinery, allowing you to display and store your wine bottles in style."
+    },
+    {
+        "type": "patchouli:relations",
+        "title": "Further Reading",
+        "anchor": "relations",
+        "entries": [
+            "tfc:cooking/food_and_water",
+            "tfc:the_world/wild_crops",
+            "tfc:the_world/wild_fruits"
+        ]
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6
+}
