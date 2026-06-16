@@ -12,31 +12,31 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfg_tips/faqs#boats)どうしてボートが沈んだの？$()\n$(li)$(l:tfg_tips/faqs#dried_fruit)イーストスターターはどうやって作るの？$()\n$(li)$(l:tfg_tips/faqs#dried_fruit)人工繊維はどうやって作るの？$()\n$(li)$(l:tfg_tips/faqs#resin)ゴムはどうやって作るの？$()\n$(li)$(l:tfg_tips/faqs#chunks)チャンクロードはどうすればいいの？$()"
+			"text": "$(li)$(l:tfg_tips/faqs#boats)どうしてボートが沈んだの？$()$(li)$(l:tfg_tips/faqs#dried_fruit)イーストスターターはどうやって作るの？$()$(li)$(l:tfg_tips/faqs#dried_fruit)人工繊維はどうやって作るの？$()$(li)$(l:tfg_tips/faqs#resin)ゴムはどうやって作るの？$()$(li)$(l:tfg_tips/faqs#chunks)チャンクロードはどうすればいいの？$()"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "boats",
-			"text": "$(italic)どうしてボートが沈んだの？$()$(br2)\n\nボートは陸上で組み立ててから、押すか$(item)リード$()を使って入水させてください。\n\nもしすでに沈んでしまったなら……残念ですが、新しいものを作りましょう。"
+			"text": "$(italic)どうしてボートが沈んだの？$()$(br2)ボートは陸上で組み立ててから、押すか$(item)リード$()を使って入水させてください。もしすでに沈んでしまったなら……残念ですが、新しいものを作りましょう。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "dried_fruit",
-			"text": "$(italic)イーストスターターや人工繊維はどうやって作るの？$()$(br2)\n\nまず、$(item)乾燥マット$()を使って果物を乾燥させてください。\n\nその後は、$(l:firmalife/bread)\nパン作り$()または$(l:firmalife/berry_bushes)人工皮革$()の手順に従って進めれば作れます。"
+			"text": "$(italic)イーストスターターや人工繊維はどうやって作るの？$()$(br2)まず、$(item)乾燥マット$()を使って果物を乾燥させてください。その後は、$(l:firmalife/bread)パン作り$()または$(l:firmalife/berry_bushes)人工皮革$()の手順に従って進めれば作れます。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "chunks",
-			"text": "$(italic)チャンクロードはどうすればいいの？$()$(br2)\n\n$(item)$(k:key.ftbchunks.claim_manager)$()かインベントリから「FTB Chunks」の「Claim Manager」を開き、対象のチャンクをShift＋左クリックしてください。解除したい場合はShift＋右クリックです。$(br2)\n\nチャンクロード数の上限を増やしたい場合は、$(item)/ftbchunks admin extra_force_load_chunks @p set X$()を使用してください。Xには新しい上限値を入力します。"
+			"text": "$(italic)チャンクロードはどうすればいいの？$()$(br2)$(item)$(k:key.ftbchunks.claim_manager)$()かインベントリから「FTB Chunks」の「Claim Manager」を開き、対象のチャンクをShift＋左クリックしてください。解除したい場合はShift＋右クリックです。$(br2)チャンクロード数の上限を増やしたい場合は、$(item)/ftbchunks admin extra_force_load_chunks @p set X$()を使用してください。Xには新しい上限値を入力します。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "resin",
-			"text": "$(italic)ゴムはどうやって作るの？$()$(br2)\n\nもう粘性樹脂を探す必要はありません！\n\nまずは$(thing)ラテックス$()を生産する樹木を育て、樹液の回収のために$(thing)ツリータップ$()も用意しておきましょう。\n\n各木の幹にツリータップを設置するとラテックスが採取できます。なお、1本の木に複数の樹液採取器を付けても全体の生産量は増えず、出てくるラテックスが分散されるだけです。\n\n採取されたラテックスは$(l:mechanics/barrels)樽$()で回収できます。"
+			"text": "$(italic)ゴムはどうやって作るの？$()$(br2)もう粘性樹脂を探す必要はありません！まずは$(thing)ラテックス$()を生産する樹木を育て、樹液の回収のために$(thing)ツリータップ$()も用意しておきましょう。各木の幹にツリータップを設置するとラテックスが採取できます。なお、1本の木に複数の樹液採取器を付けても全体の生産量は増えず、出てくるラテックスが分散されるだけです。採取されたラテックスは$(l:mechanics/barrels)樽$()で回収できます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "ラテックスの加工は、$(l:firmalife/oven_appliances#vat)釜$()を使うのが最も手早い方法です。\n\n釜にラテックスと$(item)硫黄$()の粉末を入れます（GregTechの粉は石臼で粉末にできます）。その後、火にかけ、$(item)$(k:sneak)$() + $(item)$(k:use)$()で釜の$(bold)蓋を閉じてください$()。\n\nすると$(thing)加硫処理ラテックス$()が得られます。これを$(thing)真空チャンバー$()で加圧処理すれば、待望のゴムが完成します！$(br2)\n\nさらに時代が進むと、$(thing)電動の遠心分離機$()を使って、ラテックスを生産する木の原木から直接$(thing)粗ゴムパルプ$()を取り出せるようになります。"
+			"text": "ラテックスの加工は、$(l:firmalife/oven_appliances#vat)釜$()を使うのが最も手早い方法です。釜にラテックスと$(item)硫黄$()の粉末を入れます（GregTechの粉は石臼で粉末にできます）。その後、火にかけ、$(item)$(k:sneak)$() + $(item)$(k:use)$()で釜の$(bold)蓋を閉じてください$()。すると$(thing)加硫処理ラテックス$()が得られます。これを$(thing)真空チャンバー$()で加圧処理すれば、待望のゴムが完成します！$(br2)さらに時代が進むと、$(thing)電動の遠心分離機$()を使って、ラテックスを生産する木の原木から直接$(thing)粗ゴムパルプ$()を取り出せるようになります。"
 		}
 	]
 }

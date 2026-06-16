@@ -5,17 +5,17 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "title": "飲み物を入れる容器",
+            "title": "目次",
             "anchor": "index",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)Basics$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)Thirst$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)The Nutrition Screen$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)Nutrients$()$(li2)$(l:getting_started/food_and_water#fruit)Fruit$()$(li2)$(l:getting_started/food_and_water#vegetables)Vegetables$()$(li2)$(l:getting_started/food_and_water#protein)Protein$()$(li2)$(l:getting_started/food_and_water#grain)Grain$()$(li2)$(l:getting_started/food_and_water#dairy)Dairy$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)Contaminants$()$(li2)$(l:getting_started/food_and_water#toxins)Toxins$()$(li2)$(l:getting_started/food_and_water#parasites)Parasites$()$(li2)$(l:getting_started/food_and_water#microplastics)Microplastics$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#basics)基本システム$()$(li)$(bold)$(l:getting_started/food_and_water#thirst)喉の渇き$()$(li)$(bold)$(l:getting_started/food_and_water#nutrition_screen)栄養画面$()$(li)$(bold)$(l:getting_started/food_and_water#nutrients)栄養素$()$(li2)$(l:getting_started/food_and_water#fruit)果物$()$(li2)$(l:getting_started/food_and_water#vegetables)野菜$()$(li2)$(l:getting_started/food_and_water#protein)タンパク質$()$(li2)$(l:getting_started/food_and_water#grain)穀物$()$(li2)$(l:getting_started/food_and_water#dairy)乳製品$()$(li)$(bold)$(l:getting_started/food_and_water#contaminants)汚染物質$()$(li2)$(l:getting_started/food_and_water#toxins)毒素$()$(li2)$(l:getting_started/food_and_water#parasites)寄生虫$()$(li2)$(l:getting_started/food_and_water#microplastics)マイクロプラスチック$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)Transient Effects$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)Cooling$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)Warming$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)Quenching$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)Bolstering$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)Hearty$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)Rejuvenating$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)Freezing$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)Blazing$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)Radiating$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)Nauseating$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)Parching$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)Deadly$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)Fulfilling$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)Sugary$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)Spicy$()"
+            "text": "$(li)$(bold)$(l:getting_started/food_and_water#transient_effects)効能$()$(li2)$(l:getting_started/food_and_water#cooling_transient_effect)冷却$()$(li2)$(l:getting_started/food_and_water#warming_transient_effect)温もり$()$(li2)$(l:getting_started/food_and_water#quenching_transient_effect)潤い$()$(li2)$(l:getting_started/food_and_water#bolstering_transient_effect)活力$()$(li2)$(l:getting_started/food_and_water#hearty_transient_effect)健康$()$(li2)$(l:getting_started/food_and_water#rejuvenating_transient_effect)回復促進$()$(li2)$(l:getting_started/food_and_water#freezing_transient_effect)凍結$()$(li2)$(l:getting_started/food_and_water#blazing_transient_effect)灼熱$()$(li2)$(l:getting_started/food_and_water#radiating_transient_effect)放射能汚染$()$(li2)$(l:getting_started/food_and_water#nauseating_transient_effect)吐き気$()$(li2)$(l:getting_started/food_and_water#parching_transient_effect)脱水$()$(li2)$(l:getting_started/food_and_water#deadly_transient_effect)致死$()$(li2)$(l:getting_started/food_and_water#fulfilling_transient_effect)満足$()$(li2)$(l:getting_started/food_and_water#sugary_transient_effect)糖分過多$()$(li2)$(l:getting_started/food_and_water#spicy_transient_effect)スパイシー$()"
         },
         {
             "type": "patchouli:text",
-            "title": "Basics",
+            "title": "基本システム",
             "anchor": "basics",
             "text": "TerraFirmaCraftでは、満腹度だけでなく喉の渇きも管理しなければなりません。空腹システムはバニラと似ており、多くの食べ物は空腹ゲージの約5分の1を回復します。ただし、$(thing)ガマの根$()のように回復量が少ない食べ物もあります。食べ物を食べると$(thing)腹持ち$()も回復します。これは隠し満腹度を表す値です。食料や水分が不足すると、移動速度が低下し、さらにダメージを受けるようになります。死亡しても栄養状態や汚染度はリセットされません。"
         },
@@ -35,7 +35,7 @@
             "type": "patchouli:text",
             "anchor": "thirst",
             "text": "喉の渇きは、体内の水分量を表す値です。減少する速度は空腹度とほぼ同じですが、高温環境にいる場合や空腹度の消費が激しい行動をしている場合は、より速く減少します。幸いにも、$(thing)淡水$()を飲むことで喉の渇きを回復できます。水源に向かって$(item)$(k:key.use)$()を押すことで水を飲めます。なお、海水を飲むと喉の渇きが回復するどころか減少し、さらに$(thing)渇き$()の効果を受けることがあります。この効果は喉の渇きの減少をさらに加速させます。",
-            "title": "喉の渇き"
+            "title": "渇き"
         },
         {
             "type": "patchouli:multiblock",
@@ -67,96 +67,96 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(l:waterflasks)水筒$()や$(l:mechanics/glassworking)ガラス瓶$()などでも飲み水を持ち運ぶことができ、それぞれ性能が異なります。"
+            "text": "$(l:waterflasks)水筒$()や$(l:mechanics/glassworking)ガラス瓶$()などでも飲み水を持ち運ぶことができ、それぞれ性能が異なります。$(l:mechanics/drinks#containers)Here$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrition_screen",
-            "text": "In $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() the nutrition screen displays vast information about your health. $(li)There is a main graph displaying your $(l:getting_started/food_and_water#nutrients)Nutrients$()$()$(li)A side graph showing your $(l:getting_started/food_and_water#contaminants)Contaminants$()$()$(li)A table displaying your health stats.$()$(li)And a toggleable view for checking on your teams nutrition.$()$(br)$(item)Hold-$(k:key.sneak)$() over an element on the screen to view more information.$()",
-            "title": "Nutrition Screen"
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()では、栄養画面に健康状態に関するさまざまな情報が表示されます。$(li)$(l:getting_started/food_and_water#nutrients)栄養状態$()を表示するメイングラフ$()$(li)$(l:getting_started/food_and_water#contaminants)汚染状態$()を表示するサイドグラフ$()$(li)健康状態の各種ステータスを表示する表$()$(li)チームメンバーの栄養状態を確認できるスイッチ$()$(br)$(item)画面上の要素にカーソルを合わせながら$(k:key.sneak)$()を押し続けると、より詳しい情報を確認できます。$()",
+            "title": "栄養画面"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfg:textures/gui/field_guide/nutrition/tfg_nutrition_screen.png"
             ],
-            "text": "The nutrition screen, with graphs showing the levels of each nutrient.",
+            "text": "栄養画面には、栄養状態を示すグラフが表示されます。",
             "border": false
         },
         {
             "type": "patchouli:text",
             "anchor": "nutrients",
             "text": "栄養素には5種類あり、様々な食べ物から摂取できます。$(l)$(a)果物$()$()、$(l)$(2)野菜$()$()、$(l)$(c)タンパク質$()$()、$(l)$(6)穀物$()$()、そして$(l)$(5)乳製品$()$()。食べ物を食べると、その食べ物に含まれる栄養素を得られます。$(l:mechanics/pot#soup)スープ$()のような料理は、複数の栄養素を一度に摂取できる食事です。多くの料理は材料の栄養素をそのまま引き継ぎます。また、食べ飽きのようなシステムがあり、少し前に食べた食事をもう一度食べても栄養素として摂取することができないため、このような料理で栄養素を摂取することが重要になります。",
-            "title": "Nutrients"
+            "title": "栄養素"
         },
         {
             "type": "patchouli:text",
             "anchor": "average_nutrients",
-            "text": "The total value of your nutrients determines your maximum HP. At max value you can achieve $(l)$(c)30 hearts$()$(). While the lowest is $(l)$(c)3 hearts$()$().$(br)Your average nutrients also effect the following:$()$(li)$(bold)Average >55% ↴$()$()$(italic)$(li2)Increase passive health regen by 50%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 25%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 50%.$()$()"
+            "text": "栄養素の合計値によって、あなたの最大体力が決まります。栄養状態が最高なら$(l)$(c)ハート30個分$()$()まで増加し、最低では$(l)$(c)ハート3個分$()$()まで減少します。$(br)また、栄養素の平均値は以下の効果にも影響します。$()$(li)$(bold)平均値が55%以上 ↴$()$()$(italic)$(li2)自然回復速度が50%上昇します。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)病気$()の進行速度が25%低下します。$()$()$(italic)$(li2)病気の自然治癒速度が50%上昇します。$()$()"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(bold)Average >85% ↴$()$()$(italic)$(li2)Increase passive health regen by 100%.$()$()$(italic)$(li2)Decreases $(l:tfg_ores/hazards#medicine)Medical Condition$() progression rate by 50%.$()$()$(italic)$(li2)Increase medical condition passive healing rate by 100%.$()$()"
+            "text": "$(li)$(bold)平均値が85%以上 ↴$()$()$(italic)$(li2)自然回復速度が100%上昇します。$()$()$(italic)$(li2)$(l:tfg_ores/hazards#medicine)病気$()の進行速度が50%低下します。$()$()$(italic)$(li2)病気の自然治癒速度が100%上昇します。$()$()"
         },
         {
             "title": "果物",
             "type": "patchouli:text",
             "anchor": "fruit",
-            "text": "$(l)$(a)果物$()$()の栄養素は、主にベリーの茂みや果樹などの$(l:the_world/wild_fruits)果実植物$()から得られます。例外として、$(l:mechanics/crops#pumpkin)カボチャ$()と$(l:mechanics/crops#pumpkin)スイカ$()は畑で育てられますが、果物の栄養素を含んでいます。$(br2)果物の栄養素を摂取すると、次の効果を得られます。$()$(li)$(bold)55％以上 → $()$()$(italic)喉が渇く速度が25％遅くなる。$()$(li)$(bold)85％以上 → $()$()$(italic)採掘速度が30％上昇する。$()"
+            "text": "$(l)$(a)果物$()$()の栄養素は、主にベリーの茂みや果樹などの$(l:the_world/wild_fruits)果実植物$()から得られます。例外として、$(l:mechanics/crops#pumpkin)カボチャ$()と$(l:mechanics/crops#pumpkin)スイカ$()は畑で育てられますが、果物の栄養素を含んでいます。$(br2)果物の栄養素を上げると、次の効果を得られます。$()$(li)$(bold)55％以上 → $()$()$(italic)喉が渇く速度が25％遅くなる。$()$(li)$(bold)85％以上 → $()$()$(italic)採掘速度が30％上昇する。$()"
         },
         {
             "title": "野菜",
             "type": "patchouli:text",
             "anchor": "vegetables",
-            "text": "$(l)$(2)Vegetables$()$() are found in nearly every $(l:mechanics/crops)Crop$().$(br2)Increasing your vegetable value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Removes under-water mining penalty.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives the respiration effect.$()"
+            "text": "$(l)$(2)野菜$()$()の栄養素は、ほぼすべての$(l:mechanics/crops)作物$()に含まれています。$(br2)野菜の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)水中での採掘速度低下ペナルティを無効化。$()$(li)$(bold)85%以上 → $()$()$(italic)水中呼吸効果を得る。$()"
         },
         {
             "title": "タンパク質",
             "type": "patchouli:text",
             "anchor": "protein",
-            "text": "$(l)$(c)Protein$()$() can be sourced from the meat of $(l:the_world/wild_animals)Animals$(). It can also be obtained from some crops like $(thing)legumes$().$(br2)Increasing your protein value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Decrease exhaustion multiplier by 25%.$()$(li)$(bold)Value >85% → $()$()$(italic)Allows you to carry an additional huge & heavy item without being $(l:getting_started/size_and_weight#overburdening)Overburdened$() (like a sealed barrel).$()"
+            "text": "$(l)$(c)タンパク質$()$()は、$(l:the_world/wild_animals)動物$()の肉から摂取できます。また、$(thing)豆類$()などの一部の作物にも含まれています。$(br2)タンパク質の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)空腹速度が25%減少。$()$(li)$(bold)85%以上 → $()$()$(italic)$ (l:getting_started/size_and_weight#overburdening)過労$()状態になることなく、とても重い・巨大なアイテム（密封した樽など）を1つ多く運べるようになる。$()"
         },
         {
             "title": "穀物",
             "type": "patchouli:text",
             "anchor": "grain",
-            "text": "$(l)$(6)Grain$()$() is found in cereal crops, such as $(l:mechanics/crops#barley)Barley$(). The processing of grain is on the $(l:firmalife/bread)Bread$() page. Some root crops also count as grains.$(br2)Increasing your grain value gives the following effects:$()$(li)$(bold)Value >55% → $()$()$(italic)Gives a 5% speed buff.$()$(li)$(bold)Value >85% → $()$()$(italic)Gives a 15% speed buff.$()"
+            "text": "$(l)$(6)穀物$()$()は、$(l:mechanics/crops#barley)大麦$()のような麦などの穀物から得られます。穀物の加工については$(l:firmalife/bread)パン$()のページを参照してください。また、一部の根菜類も穀物として扱われます。$(br2)穀物の栄養値を上げると、次の効果が得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)移動速度が5%上昇する。$()$(li)$(bold)85%以上 → $()$()$(italic)移動速度が15%上昇する。$()"
         },
         {
             "title": "乳製品",
             "type": "patchouli:text",
             "anchor": "dairy",
-            "text": "$(l)$(5)乳製品$()$()の栄養素は$(thing)ミルク$()から得られます。ミルクは$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()から採取できます。ミルクの加工や飲用については、$(l:firmalife/cheese)乳製品$()のページで詳しく説明されています。$(br2)乳製品の栄養値を摂取すると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)$(thing)落下耐性 I$()の効果を得る。$()$(li)$(bold)85%以上 → $()$()$(italic)$(thing)落下耐性 IV$()の効果を得る。$()"
+            "text": "$(l)$(5)乳製品$()$()の栄養素は$(thing)ミルク$()から得られます。ミルクは$(l:mechanics/animal_husbandry#dairy_animals)乳用動物$()から採取できます。ミルクの加工や飲用については、$(l:firmalife/cheese)乳製品$()のページで詳しく説明されています。$(br2)乳製品の栄養値を上げると、次の効果を得られます。$()$(li)$(bold)55%以上 → $()$()$(italic)$(thing)落下耐性 I$()の効果を得る。$()$(li)$(bold)85%以上 → $()$()$(italic)$(thing)落下耐性 IV$()の効果を得る。$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "contaminants",
-            "text": "In addition to nutrients $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds contaminants. There are three contaminants, all obtainable from food: $(l)$(d)Toxins$()$(), $(l)$(4)Parasites$()$(), and $(l)$(3)Microplastics$()$(). Contaminants can be passed into meal items and build up within the player.",
+            "text": "栄養素に加えて、$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()では汚染物質の要素も追加されています。食べ物に含まれる汚染物質は、$(l)$(d)毒素$()$()、$(l)$(4)寄生虫$()$()、そして$(l)$(3)マイクロプラスチック$()$()の3種類です。これらの汚染物質は調理をしても残り続け、プレイヤーの体内に徐々に蓄積していきます。",
             "title": "汚染状態"
         },
         {
             "title": "毒素",
             "type": "patchouli:text",
             "anchor": "toxins",
-            "text": "$(l)$(d)Toxins$()$() come from specifically dangerous crops and meats. Toxins decrease naturally at a rate of 3%/day. Consume $(item)Detox Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_toxins)Cure Toxins$().$(br2)Increasing your toxins value gives the following effects:$()$(li)$(bold)Value >0% → $()$()$(italic)On any new increase: 25% chance to get a random hazardous effect for 10sec.$()$(li)$(bold)Value >99% → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)Death.$()"
+            "text": "$(l)$(d)毒素$()$()は、特に有毒な作物や肉に含まれています。毒素は1日ごとに3%ずつ自然に減少します。$(item)デトックスカプセル$()を使用すると、$(l:tfg_tips/mob_effects_glossary#cure_toxins)毒素を除去$()できます。$(br2)毒素が蓄積すると、次のようなことが起こります。$()$(li)$(bold)0%以上 → $()$()$(italic)新たに毒素が蓄積するたびに、25%の確率でランダムな病気に10秒間罹る。$()$(li)$(bold)99%以上 → $()$()$(italic)$(l:tfg_tips/mob_effects_glossary#final_moments)死亡$()。$()"
         },
         {
             "title": "寄生",
             "type": "patchouli:text",
             "anchor": "parasites",
-            "text": "$(l)$(4)Parasites$()$() come from eating certain raw meats or drinking muddy water. Consume $(item)Parasiticide Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_parasites)Cure Parasites$().$(br2)Increasing your parasites value gives the following effects:$()$(li)$(bold)Value >10% → $()$()$(italic)20% chance to increase by 10% each day to a max of 60%.$()$(li)$(bold)Value >33% → $()$()$(italic)Increases passive exhaustion by 25%.$()$(li)$(bold)Value >66% → $()$()$(italic)Increases passive exhaustion by 50%.$()"
+            "text": "$(l)$(4)寄生虫$()$()は、一部の生肉を食べたり泥水を飲んだりすることで感染します。$(item)駆虫薬のカプセル$()を使用すると、$(l:tfg_tips/mob_effects_glossary#cure_parasites)寄生虫を除去$()できます。$(br2)寄生虫が蓄積すると、次の効果が発生します。$()$(li)$(bold)10%以上 → $()$()$(italic)毎日20%の確率で寄生虫の蓄積が10%増加し、最大60%まで上昇する。$()$(li)$(bold)33%以上 → $()$()$(italic)空腹速度が25%速くなる。$()$(li)$(bold)66%以上 → $()$()$(italic)空腹速度が50%速くなる。$()"
         },
         {
             "title": "マイクロプラスチック",
             "type": "patchouli:text",
             "anchor": "microplastics",
-            "text": "$(l)$(3)Microplastics$()$() come from consuming food packaged in plastic. Microplastics decrease naturally at a rate of 1%/day. Consume $(item)Nanofiltration Capsules$() to actively $(l:tfg_tips/mob_effects_glossary#cure_microplastics)Cure Microplastics$().$(br)Increasing your microplastics value gives the following effects:$()$(li)$(bold)Value >33% → $()$()$(italic)Increase high-temp thirst decay multiplier by 25%$()$(li)$(bold)Value >66% ↴$()$()$(italic)$(li2)Increase high-temp thirst decay multiplier by 50%.$()$()$(italic)$(li2)On any new increase: 5% chance to get $(l:tfg_ores/hazards#Carcinogens)Cancer$().$()$()"
+            "text": "$(l)$(3)マイクロプラスチック$()$()は、プラスチック包装された食品を摂取することで蓄積します。マイクロプラスチックは1日あたり1%の割合で自然に減少します。$(item)ナノろ過カプセル$()を使用すると、$(l:tfg_tips/mob_effects_glossary#cure_microplastics)マイクロプラスチックを除去$()できます。$(br)マイクロプラスチックが蓄積すると、次の効果が発生します。$()$(li)$(bold)33%以上 → $()$()$(italic)高温環境での喉が渇く速さが25%上昇する。$()$(li)$(bold)66%以上 ↴$()$()$(italic)$(li2)高温環境での喉が渇く速さが50%上昇する。$()$()$(italic)$(li2)新たにマイクロプラスチックが蓄積するたびに、5%の確率で$(l:tfg_ores/hazards#Carcinogens)癌$()を発症します。$()$()"
         },
         {
             "type": "patchouli:text",
             "anchor": "transient_effects",
-            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$() also adds $(item)Transient Effects$(). Transient effects exist for the purpose of transferring buffs/ debuffs from ingredients into meal items. Transient effects can be combined and consumed. However, they do not accumulate within the player―They are immediately consumed.$(br)The strength of the effect depends on the value of the nutrient. However, the way the strength is determined is not uniform for every type.$()",
-            "title": "Transient Effects"
+            "text": "$(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$()では、さらに食材に$(item)効能$()も追加されています。食材が持つ効能は料理へ引き継がれます。つまり、効能を料理によって組み合わせることで、まとめて摂取することもできます。効能は、栄養素や汚染物質とは異なりプレイヤーの体内には蓄積されず、摂取した時点で即座に効果がでます。$(br)効果の強さは対応する栄養値によって決まりますが、その計算方法は効果ごとに異なります。$()",
+            "title": "効能"
         },
         {
             "type": "patchouli:text",
@@ -235,7 +235,7 @@
         },
         {
             "type": "patchouli:relations",
-            "title": "Further Reading",
+            "title": "さらに読む",
             "anchor": "relations",
             "entries": [
                 "tfc:getting_started/size_and_weight",

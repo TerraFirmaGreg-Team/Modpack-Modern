@@ -1,35 +1,35 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Support Beams & Collapses",
+  "name": "支撐梁與坍塌",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In TerraFirmaCraft, raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), $(thing)Smooth$() and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.",
-      "title": "Support Beams"
+      "text": "群巒傳說的天然岩石並不穩定，可能會發生$(thing)坍塌$()。不加防範$(thing)天然岩石$()、$(thing)礦石$()、$(thing)平滑岩石$()和$(thing)石錐$()等方塊將如雨點般落在你的頭上。$(br2)$(thing)支撐梁$()被用來防範坍塌的發生。",
+      "title": "支撐梁"
     },
     {
       "type": "patchouli:text",
-      "text": "Collapses can occur whenever a player $(thing)mines any Raw Rock$() that is near to $(thing)Unsupported Raw Rock$(). Once a collapse has started, however, even previously $(thing)Supported$() rock can start to collapse.$(br2)The rock on the roof of caves is $(thing)Naturally Supported$(). Any raw rock with a non-collapsible solid block beneath it, is also $(thing)Supported$(). Alternatively, $(thing)Support Beams$() can support a wide area at once."
+      "text": "當玩家$(thing)開採天然岩石$()附近若存在$(thing)未受支撐的天然岩石$()將可能發生坍塌。一旦坍塌開始，先前$(thing)受到支撐的$()岩石也會開始坍塌。$(br2)洞穴頂部的岩石是已$(thing)天然承重$()狀態。若天然岩石下方存在無法發生坍塌的方塊，也屬於$(thing)被支撐$()的狀態。此外，$(thing)支撐梁$()可以一次可以撐起一大片區域。"
     },
     {
       "type": "patchouli:text",
-      "text": "When graded $(l:the_world/ores_and_minerals)Ore$() (ore that can be poor, normal, or rich) collapses, it degrades in quality. Rich ore will become normal, normal will become poor, and poor will turn to cobblestone. Mineral ores will turn into cobblestone right away."
+      "text": "$(l:the_world/ores_and_minerals)礦石$()(有貧瘠、普通或富集)坍塌時，品質會下降。富集變成普通、普通變為貧瘠以及貧瘠變為卵石。礦物則會直接變為卵石。"
     },
     {
       "type": "patchouli:text",
-      "text": "Dirt, grass, clay, gravel, cobblestone, and sand are also affected by gravity. However, unlike vanilla gravity blocks, these blocks fall down slopes, and cannot be stacked more than one high without supporting blocks around. $(l:mechanics/sluices)Ore Deposits$() also landslide, but do not degrade in quality."
+      "text": "泥土、草塊、黏土、礫石、鵝卵石和沙子也會受到重力影響。但是，與原始重力方塊不同，這些方塊會沿著斜坡滑落，若沒有周圍方塊支撐，它們無法堆疊超過一層。$(l:mechanics/sluices)礦石沉積物$()也會發生滑落，但不會失去品質。"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_support",
-      "title": "Support Beams",
-      "text": "To get started, $(thing)Support Beams$() can be crafted with a $(thing)Saw$() and any type of $(thing)Logs$().$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright."
+      "title": "支撐梁",
+      "text": "$(thing)支撐梁$()可用$(thing)鋸$()與任意類型的$(thing)原木$()製作。$(br2)將$(thing)支撐梁$()放在方塊頂部會形成一個最高三格高的柱子。這些柱子下方必須有實心方塊支撐才能保持直立。"
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "$(thing)Horizontal$() beams can be placed between to connect two $(thing)Vertical$() beams that are within five blocks, as in the above diagram.",
+      "text": "$(thing)水平梁$()可以放在相距5格內的$(thing)垂直梁$()並連接它們。",
       "multiblocks": [
         {
           "pattern": [
@@ -225,16 +225,16 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Only $(thing)Horizontal Support Beams$() cause nearby blocks to be $(thing)Supported$(). Any block within a $(bold)9 x 5 x 9$() area centered on a horizontal support beam is considered $(thing)Supported$().$(br2)In addition to being supported by support beams, rock can be supported simply by the virtue of having a solid block below it, such as more rock. However, it is important to note that $(thing)Non Solid Blocks$() such as $(thing)Stairs$() and $(thing)Slabs$(), along with $(thing)Smooth Stone$(), do $(bold)not$() count as supporting."
+      "text": "只有$(thing)水平支撐梁$()才能對附近的方塊起到$(thing)支撐$()效果。以水平支撐梁為中心$(bold)9 x 5 x 9$()的區域都是為$(thing)受支撐$()。$(br2)除了支撐梁外，岩石還可以依靠其下方堅實的實心方塊像是更多的岩石來支撐。需要注意的是，$(thing)非實心方塊$()像是$(thing)階梯$()和$(thing)石板$()以及$(thing)光滑石材$()$(bold)不屬於$()支撐物。"
     },
     {
       "type": "patchouli:text",
-      "text": "In addition to $(thing)Wooden Support Beams$() $(bold)TFG$() also adds higher tiers of support beams. Including $(thing)Stone Support Beams$(), $(thing)Concrete Support Beams$(), and $(thing)Steel Support Beams$(). With the highest tier of supports holding an area of $(bold)33 x 13 x 33$() blocks centered on the horizontal support beam!"
+      "text": "除了$(thing)木製支撐梁$()，$(bold)群巒格雷$()還添加了更高階的支撐梁類型，包含$(thing)石製支撐梁$()、$(thing)混凝土支撐梁$()與$(thing)鋼製支撐梁$()。最高階的支撐梁可支撐的範圍高達$(bold)33 x 13 x 33$()的區域！"
     },
     {
       "type": "patchouli:text",
-      "text": "Finally, it is important to know that $(l:mechanics/chisel)Chiseling$() has the potential to cause collapses, just as easily as mining does, when it is done on any $(thing)Raw Rock$() that has potential to cause a nearby collapse.$(br2)$(br2)Remember kids: practice safe mining!",
-      "title": "Chiseling"
+      "text": "最後請特別注意：$(l:mechanics/chisel)鑿刻$()岩石和挖掘岩石一樣可能導致坍塌，尤其是對任何可能引發坍塌的$(thing)天然岩石$()進行鑿刻時。$(br2)$(br2)孩子們請銘記：遵守安全開採準則！",
+      "title": "鑿刻"
     }
   ],
   "read_by_default": true,

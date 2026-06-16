@@ -1,22 +1,22 @@
 {
-    "name": "Building Materials",
+    "name": "建材",
     "category": "tfc:getting_started",
     "icon": "tfc:wattle/unstained",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "In the early stages of the game, building can be a challenge as many sturdy building blocks require metal tools to obtain. However, there are a few building blocks that can be obtained with just stone tools.$(br2)More $(l:mechanics/advanced_building_materials)building blocks$() are obtainable with metal tools."
+            "text": "ゲーム序盤では、安定した建材になるブロックを確保するために金属製ツールが必要になってしまうため、建築は少し大変です。しかし、石器時代で入手できる建材もいくつかあります。$(br2)さらに多種多様な$(l:mechanics/advanced_building_materials)建材$()は、金属製ツールを入手すると利用できるようになります。"
         },
         {
             "type": "patchouli:text",
-            "text": "$(br)  1. $(l:getting_started/building_materials#thatch)Thatch$()$(br)  2. $(l:getting_started/building_materials#mud_bricks)Mud Bricks$()$(br)  3. $(l:getting_started/building_materials#wattle_and_daub)Wattle and Daub$()$(br)  4. $(l:getting_started/building_materials#clay_and_peat)Clay Blocks and Peat$()$(br)",
-            "title": "内容物"
+            "text": "$(br) 1. $(l:getting_started/building_materials#thatch)茅葺き$()$(br) 2.$(l:getting_started/building_materials#mud_bricks)泥レンガ$()$(br) 3.$(l:getting_started/building_materials#wattle_and_daub)編み枝と壁材$()$(br) 4.$(l:getting_started/building_materials#clay_and_peat)粘土ブロックと泥炭$()$(br)",
+            "title": "目次"
         },
         {
             "type": "patchouli:text",
             "anchor": "thatch",
-            "text": "With just a $(l:getting_started/introduction#knife)Stone Knife$(), you are able to obtain $(thing)Straw$() by breaking plant like blocks. This can be used to craft a very simple building material: $(thing)Thatch$(). Thatch is a lightweight block that isn't affected by gravity, however players and other entities can pass right through it! It can also be crafted back into $(thing)Straw$() if needed.",
-            "title": "藁ブロック"
+            "text": "$(l:getting_started/introduction#knife)石のナイフ$()さえあれば、草を刈って$(thing)藁$()を入手できます。藁は、簡素な建材である$(thing)藁ブロック$()のクラフトに使用できます。藁ブロックは軽量なブロックで、重力の影響を受けません。しかし、プレイヤーや他のエンティティはそのまま通り抜けることができます！ また、必要に応じて再び$(thing)藁$()へ戻すことも可能です。",
+            "title": "茅葺き"
         },
         {
             "type": "patchouli:crafting",
@@ -28,11 +28,11 @@
             "anchor": "mud_bricks",
             "recipe": "tfc:crafting/soil/loam_drying_bricks",
             "title": "泥レンガ",
-            "text": "$(thing)Mud$() can be found on the ground, underneath rivers and lakes, or in patches in low elevation swampy environments. With a little bit of $(thing)Straw$(), it can be crafted into $()Wet Mud Bricks$()."
+            "text": "$(thing)泥$()は地表や川・湖の底、あるいは標高の低い湿地帯にまとまって見つかります。少量の$(thing)藁$()を加えることで、$()濡れた泥レンガ$()に加工できます。"
         },
         {
             "type": "tfc:multimultiblock",
-            "text": "These can be placed on the ground in a dry location, and after a day they will harden into $(thing)Mud Bricks$().",
+            "text": "これらを湿っていない地面に設置すると、1日で硬化して$(thing)泥レンガ$()になります。",
             "multiblocks": [
                 {
                     "pattern": [
@@ -74,7 +74,7 @@
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/soil/loam_mud_bricks",
             "title": " ",
-            "text": "These dried mud bricks can then be crafted into $(thing)Mud Brick Blocks$(). They can also be made into $(thing)Stairs$(), $(thing)Slabs$(), or $(thing)Walls$(), if so desired."
+            "text": "乾燥した泥レンガは、$(thing)泥レンガブロック$()に加工できます。また、必要に応じて$(thing)階段$()、$(thing)ハーフブロック$()、$(thing)塀$()にすることも可能です。"
         },
         {
             "type": "patchouli:multiblock",
@@ -92,19 +92,19 @@
                 }
             },
             "name": "",
-            "text": "All different varieties of mud bricks.",
+            "text": "全種類の泥レンガ",
             "enable_visualize": false
         },
         {
             "type": "patchouli:text",
             "anchor": "wattle_and_daub",
-            "text": "$(thing)Wattle$() and $(thing)Daub$() is a versatile building and decoration block.$(br2)$(thing)Wattle$() can be crafted and placed, however it is breakable and allows players and mobs to walk through it. It can be augmented with $(thing)Daub$(), to make it solid.",
+            "text": "$(thing)編み枝と壁材$()は、建築にも装飾にも使える便利なブロックです。$(br2)$(thing)編み枝$()はクラフトして設置できますが、壊れやすく、プレイヤーやモブが通り抜けられます。そこに$(thing)壁材$()を塗ることで、しっかりとした固体ブロックにできます。",
             "title": "編み枝と壁材"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfc:crafting/wattle",
-            "text": "In order to make $(thing)Wattle$() solid, it first must be woven, which requires adding sticks to the structure."
+            "text": "$(thing)編み枝$()をしっかりした壁にするには、まず棒を組み込んで編み上げる必要があります。"
         },
         {
             "type": "patchouli:crafting",
@@ -117,19 +117,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_weave.png"
             ],
-            "text": "Four sticks are required to $(thing)weave$() wattle.",
+            "text": "$(thing)編み枝$()には4本まで棒を追加できます。",
             "border": true
         },
         {
             "type": "patchouli:text",
-            "text": "At any time, sticks can be added on each diagonal, as well as the top and bottom. Hold a single $(thing)Stick$() in your hand and $(item)$(k:key.use)$() it to add a stick. Change what part of the wattle you're adding the stick to by selecting a different side of the face."
+            "text": "棒はいつでも各対角線部分に加えられるほか、上端と下端にも追加できます。$(thing)棒$()を手に持ち、$(item)$(k:key.use)$()で棒を追加できます。編み枝のどの部分に棒を追加するかは、設置面の異なる箇所を選択することで変更できます。"
         },
         {
             "type": "patchouli:image",
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_stick.png"
             ],
-            "text": "Adding sticks to wattle.",
+            "text": "編み枝に棒を加える。",
             "border": true
         },
         {
@@ -137,7 +137,7 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_add_daub.png"
             ],
-            "text": "Using $(thing)Daub on $(thing)Woven Wattle$() creates a solid block.",
+            "text": "$(thing)編み枝に$(thing)壁材$()を使用するとブロックが安定します。",
             "border": true
         },
         {
@@ -145,19 +145,19 @@
             "images": [
                 "tfc:textures/gui/book/tutorial/wattle_stained.png"
             ],
-            "text": "It can then be $(thing)stained$() by using $(l:mechanics/dye)Dye$() on it.",
+            "text": "$(l:mechanics/dye)染料$()を使用することで$(thing)着色$()することができます。",
             "border": true
         },
         {
             "type": "patchouli:text",
             "anchor": "clay_and_peat",
-            "text": "Clay obtained from the ground can be crafted into clay blocks. When placed and dug again, they'll turn back into clay. While unattractive, they are easy to obtain.$(br2)Peat spawns in the world in patches along water bodies and is mineable with stone tools. Some plants will grow on it.$(br2)However, peat is quite flammable.",
-            "title": "Clay Blocks and Peat"
+            "text": "地面から採取した粘土は、粘土ブロックに加工できます。設置した後に再び掘ると、粘土へ戻ります。見た目はあまり良くありませんが、簡単に入手できます。$(br2)泥炭は水辺の周囲にまとまって生成され、石製ツールで採掘できます。また、一部の植物は泥炭の上でも成長します。$(br2)ただし、泥炭は非常に燃えやすいので注意が必要です。",
+            "title": "粘土ブロックと泥炭"
         },
         {
             "type": "patchouli:crafting",
             "recipe": "tfg:shaped/clay_balls_to_block",
-            "title": "Clay Blocks"
+            "title": "粘土ブロック"
         }
     ],
     "read_by_default": true,

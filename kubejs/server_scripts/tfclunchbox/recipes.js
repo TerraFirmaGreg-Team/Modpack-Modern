@@ -16,7 +16,7 @@ function registerTFCLunchBoxRecipes(event) {
     .modifyResult((grid, result) => {
 			let orig = grid.find(Item.of('tfclunchbox:lunchbox'))
 
-			if (orig.nbt == null) {
+			if (orig.nbt == null || orig.nbt.Items == null || orig.nbt.Items.Items == null) {
 				return result;
 			} else {
                 delete orig.nbt.display;
@@ -43,7 +43,7 @@ function registerTFCLunchBoxRecipes(event) {
     .modifyResult((grid, result) => {
 			let orig = grid.find(Item.of('tfclunchbox:cooling_lunchbox'))
 
-			if (orig.nbt == null) {
+			if (orig.nbt == null || orig.nbt.Items == null || orig.nbt.Items.Items == null) {
 				return result;
 			} else {
                 delete orig.nbt.display;

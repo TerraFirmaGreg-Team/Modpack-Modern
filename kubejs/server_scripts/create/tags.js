@@ -107,6 +107,9 @@ const registerCreateItemTags = (event) => {
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
 	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
+	event.remove('create:stone_types/tuff', 'minecraft:tuff')
+	event.remove('create:stone_types/scoria', 'create:scoria')
+	event.remove('create:stone_types/scorchia', 'create:scorchia')
 
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_granite_slab')
 	event.add('forge:smooth_stone_slab', 'create:polished_cut_diorite_slab')

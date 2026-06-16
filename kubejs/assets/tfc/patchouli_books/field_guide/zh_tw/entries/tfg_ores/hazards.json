@@ -10,17 +10,17 @@
 			"type": "patchouli:spotlight",
 			"title": "有害物質",
 			"item": "gtceu:cobaltite_dust",
-			"text": "某些礦石和粉塵是有害的，如果將它們攜帶在物品欄，會導致負面效果甚至死亡。$(br2)某些設備如 $(thing)面罩$()、$(thing)手套$() 和 $(thing)有害物質防護服$() 可以用來抵消這些影響。"
+			"text": "某些$(thing)礦石$()、$(thing)粉末$()和$(thing)化學品$()具有危害，將它們帶在身上會導致$(item)負面效果$()甚至$(item)死亡$()。攜帶時會在螢幕上顯示$(item)狀態效果$()。$(br2)某些設備如$(thing)口罩$()、$(thing)手套$() 和 $(thing)防護服$()可以抵消這些影響。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "面罩",
-			"text": "$(thing)面罩$()提供保護以抵消任何 $(item)吸入$() 危害，例如砷中毒。"
+			"title": "所有效果",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)砷中毒$()$()\n$(li)$(l:tfg_ores/hazards#Asbestosis)石棉肺$()$()\n$(li)$(l:tfg_ores/hazards#Berylliosis)鈹中毒$()\n$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)一氧化碳中毒$()\n$(li)$(l:tfg_ores/hazards#Carcinogens)致癌物$()\n$(li)$(l:tfg_ores/hazards#Chemical_burns)化学灼傷$()\n$(li)$(l:tfg_ores/hazards#Irritants)刺激物$()\n$(li)$(l:tfg_ores/hazards#Methanol_poisoning)甲醇中毒$()\n$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)致噁化學品$()\n$(li)$(l:tfg_ores/hazards#Poisons)有毒物質$()\n$(li)$(l:tfg_ores/hazards#Radioactive_materials)放射性物質$()\n$(li)$(l:tfg_ores/hazards#Silicosis)矽肺病$()$()\n$(br2)下一頁將提供應對這些危害的方法。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "橡膠手套",
-			"text": "橡膠手套可以由 $(l:mechanics/leather_making)皮革$() 和 $(l:arborfirmacraft/making_rubber)乳膠$() 製成，或由橡膠板製成。它們提供保護以抵消任何 $(item)皮膚接觸$() 危害，例如鈹病。"
+			"title": "預防與治療",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)石頭？$()$()\n$(li)$(l:tfg_ores/hazards#containers)容器$()\n$(li)$(l:tfg_ores/hazards#mask)口罩$()\n$(li)$(l:tfg_ores/hazards#gloves)橡膠手套$()\n$(li)$(l:tfg_ores/hazards#hazmat)防護服$()\n$(li)$(l:tfg_ores/hazards#medicine)藥片、藥丸與藥膏$()\n$(li)$(l:tfg_ores/hazards#rad_away)消輻寧™藥片$()\n$(li)$(l:tfg_ores/hazards#respawn)不願設想的方法……$()"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -29,20 +29,20 @@
 				"tag": "tfc:rock_knapping"
 			},
 			"anchor": "rocks",
-			"text": "首先，將皮革敲製成手套。"
+			"text": "$(thing)最簡單的$()$(thing)預防方式$()就是$(item)不要拾取危險物品$()。$(br2)當物品欄裝滿了$(thing)石頭$()，就可以自由選擇要拾取的物品，從而可以稍後再處理危險物品。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"title": "容器",
 			"anchor": "containers",
-			"text": "接著將手套浸泡在$(thing)醋$()裡, 醋是水果與酒精的混合物.",
+			"text": "危險物品只會在$(thing)物品欄$()造成傷害，但其他容器則不會。$(br)危險物品放在其他容器不會造成損害，例如$(l:tfg_tips/inventory_management)背包$()或 $(l:getting_started/pottery#vessel)大缸$()。手持大缸$(thing)右鍵$()就能進行物品轉移。",
 			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": "口罩",
 			"recipe": "gtceu:shaped/face_mask",
-			"text": "隨後將浸泡後的皮革手套在$(thing)大鍋$()內與$(thing)硫化乳膠$()一起加熱，在一步之遙就能製成橡膠手套。",
+			"text": "$(thing)口罩$()能防護所有$(item)吸入$()危害，例如砷中毒。",
 			"anchor": "mask"
 		},
 		{
@@ -51,27 +51,27 @@
 			"title": "橡膠手套",
 			"link_recipes": true,
 			"anchor": "gloves",
-			"text": "最後將浸泡乳膠手套放入$(l:firmalife/oven)烤爐$()內加熱即可完成。"
+			"text": "$(thing)橡膠手套$()由$(l:mechanics/leather_making)皮革$()與$(l:arborfirmacraft/making_rubber)乳膠$()製成，或直接使用$(thing)橡膠片$()製作成。能防護所有$(item)皮膚接觸$()危害，例如$(thing)鈹粉$()。"
 		},
 		{
 			"type": "tfc:knapping_recipe",
 			"recipe": "tfchotornot:leather_knapping/mittens",
-			"text": "防止有害物質危害最簡單的方法就是不要拾取它們到物品欄。$(br)例如，將物品欄填滿$(thing)岩石$()，這樣你就可以選擇性地拾取物品，並在稍後一次性處理所有有害物質。"
+			"text": "首先，把皮革剝製成連指手套。"
 		},
 		{
 			"type": "tfc:sealed_barrel_recipe",
 			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
-			"text": "有害物質只會在$(thing)物品欄$()造成傷害，但這不適用於其他容器！$(br)有害物質在其他容器中不會造成傷害，例如$(l:tfg_tips/inventory_management)背包$()或$(l:getting_started/pottery#vessel)大缸$()。手持時$(thing)滑鼠右鍵點擊$()可以直接轉移其內容物。"
+			"text": "將$(thing)連指手套$()浸泡到$(thing)醋$()內。醋由水果和酒混合而成。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "站在$(thing)溫泉$()內會提供緩慢的$(thing)再生$()效果，雖然不能喝它。"
+			"text": "經處理的$(thing)皮革手套$()與$(thing)硫化乳膠$()放入$(thing)鍋$()內加熱，距離橡膠手套僅一步之遙。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_gloves",
-			"text": "如果其他方法都失敗了，攜帶一張床來重生是一個好主意。$(br2)如果沒有$(thing)羊毛$()或$(thing)線$()，也可以製作$(l:getting_started/a_place_to_sleep)茅草床$()。"
+			"text": "最后，將浸膠手套放入$(l:firmalife/oven)烤爐$()加熱定型。"
 		},
 		{
 			"type": "patchouli:spotlight",

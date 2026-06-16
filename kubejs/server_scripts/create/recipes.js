@@ -5,7 +5,7 @@ const registerCreateRecipes = (event) => {
 
 	// Удаление рецептов мода create 
 	event.remove({
-		not: [			
+		not: [
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
@@ -48,9 +48,11 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/stock_link_clear'},
 			{ id: 'create:crafting/logistics/stock_ticker_clear'},
 			{ id: 'create:crafting/logistics/factory_gauge_clear'},
+			{ type: 'create:item_copying' },
 			{ output: '#create:table_cloths'} // Gotta do this to not purge the table cloth reset recipes
 		], mod: 'create'
 	})
+
 	// Make Bound Cardboard craftable with all string
 	event.replaceInput({id: 'create:crafting/materials/bound_cardboard_block' }, 'minecraft:string', '#forge:string')
 	

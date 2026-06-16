@@ -610,6 +610,25 @@ function registerTFCBlockTags(event) {
 	event.add('tfg:dead_crops', "tfc:dead_crop/melon");
 	event.add('tfg:dead_crops', "tfc:dead_crop/red_bell_pepper");
 	event.add('tfg:dead_crops', "tfc:dead_crop/yellow_bell_pepper");
+
+	// Glass
+	event.add('tfc:mineable_with_gem_saw', 'ae2:quartz_glass');
+	event.add('tfc:mineable_with_gem_saw', 'ae2:quartz_vibrant_glass');
+	event.add('tfc:mineable_with_gem_saw', 'gtceu:tempered_glass');
+	event.add('tfc:mineable_with_gem_saw', 'gtceu:laminated_glass');
+	event.add('tfc:mineable_with_gem_saw', 'gtceu:fusion_glass');
+	event.add('tfc:mineable_with_gem_saw', 'gtceu:cleanroom_glass');
+	event.add('tfc:mineable_with_gem_saw', 'tfg:casings/machine_casing_bioculture_glass');
+	event.add('tfc:mineable_with_gem_saw', 'expatternprovider:assembler_matrix_glass');
+	event.add('tfc:mineable_with_gem_saw', 'create:framed_glass_door');
+	event.add('tfc:mineable_with_gem_saw', 'create:framed_glass_trapdoor');
+	event.add('tfc:mineable_with_gem_saw', '#minecraft:impermeable'); // idk what this tag does but every window block has it
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:andesite_window_pane');
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:copper_window_pane');
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:iron_window_pane');
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:industrial_iron_window_pane');
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:brass_window_pane');
+	event.add('tfc:mineable_with_gem_saw', 'createdeco:zinc_window_pane');
 }
 
 /** @param {TagEvent.Fluid} event */

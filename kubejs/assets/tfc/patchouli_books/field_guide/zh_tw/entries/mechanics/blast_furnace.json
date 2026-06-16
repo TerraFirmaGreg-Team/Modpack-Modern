@@ -11,7 +11,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/blast_furnace",
-      "text": "Crafting a blast furnace itself requires a $(thing)Crucible$(), along with some of the $(thing)Double Wrought Iron Plates$() you will need."
+      "text": "製作高爐需要$(thing)坩鍋$()以及一些$(thing)雙層鍛鐵板$()。"
     },
     {
       "type": "patchouli:text",
@@ -20,8 +20,8 @@
     {
       "type": "patchouli:multiblock",
       "multiblock_id": "tfc:blast_furnace",
-      "name": "A Blast Furnace",
-      "text": "A blast furnace with a minimum height chimney.",
+      "name": "高爐",
+      "text": "最低煙囪高度的高爐。",
       "enable_visualize": true
     },
     {
