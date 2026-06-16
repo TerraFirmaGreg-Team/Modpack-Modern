@@ -778,10 +778,10 @@ function registerTFGArtisanTableRecipes(event) {
 		"result": {"item": "tfg:asphalt_road_stencil_line_slash_r"},
 		"pattern": [
 			"XX  XX",
-			"XX  XX",
-			"XX  X ",
-			"XX    ",
 			"XX   X",
+			"XX    ",
+			"XX  X ",
+			"XX  XX",
 			"XX  XX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
