@@ -1,4 +1,4 @@
-﻿// priority: 0
+﻿﻿// priority: 0
 "use strict";
 
 function registerTFGArtisanTableRecipes(event) {
@@ -706,12 +706,12 @@ function registerTFGArtisanTableRecipes(event) {
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_slash_r"},
 		"pattern": [
-			"XXXXXX",
-			"XXXXXX",
-			"XXXXX ",
-			"XXXX  ",
+			"XX  XX",
 			"XXX  X",
-			"XX  XX"
+			"XXXX  ",
+			"XXXXX ",
+			"XXXXXX",
+			"XXXXXX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
