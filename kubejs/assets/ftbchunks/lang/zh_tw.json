@@ -38,7 +38,7 @@
   "ftbchunks.claim_dimension_blacklist": "維度黑名單",
   "ftbchunks.claim_dimension_blacklist.tooltip": "禁止領地的維度ID黑名單。\n例如：若要禁用終界區塊佔用功能，請將「minecraft:the_end」加入清單\n允許使用通配符，例如「othermod:*」將匹配所有由「othermod」新增的維度",
   "ftbchunks.claim_dimension_whitelist": "維度白名單",
-  "ftbchunks.claim_dimension_whitelist.tooltip": "允許占用區塊的維度ID白名單。\n當清單不為空時維度*必須*在清單內（且不得出現在「維度黑名單」）。\n語法與「維度黑名單」相同",
+  "ftbchunks.claim_dimension_whitelist.tooltip": "維度 ID 白名單，允許認領區塊。若維度非空，則維度*必須*在清單內(且不能在「維度黑名單。\n語法與「維度黑名單」相同",
   "ftbchunks.claim_result": "修改區塊數量：%d / %d",
   "ftbchunks.claim_result.already_claimed": "區塊已被佔用",
   "ftbchunks.claim_result.already_loaded": "區塊已被讀取",
