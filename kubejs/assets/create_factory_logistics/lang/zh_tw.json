@@ -1,5 +1,30 @@
 {
+  "block.create_factory_logistics.factory_fluid_gauge": "工廠流體儀表",
+  "block.create_factory_logistics.jar_packager": "裝罐機",
+  "block.create_factory_logistics.network_link": "網路連結站",
+  "entity.create_factory_logistics.jar": "空罐",
+  "item.create_factory_logistics.fluid_mechanism": "流體構件",
+  "item.create_factory_logistics.incomplete_fluid_mechanism": "未完成的流體構件",
+  "item.create_factory_logistics.jar": "銅罐",
+  "itemGroup.create_factory_logistics.create_factory_logistics_tab": "機械動力：流體物流",
+  "create_factory_logistics.gui.redstone_requester.fluid_slot_mode": "按住 Alt 添加容器內的流體",
+  "itemGroup.create_factory_logistics.base": "機械動力流體物流",
+  "create_factory_logistics.gui.ingredient_type_qualified_item": "內容類型：",
   "create_factory_logistics.gui.ingredient_type.fluid": "流體",
-  "create_factory_abstractions.gui.ingredient_type.item": "物品"
+  "create_factory_abstractions.gui.ingredient_type.item": "物品",
+  "create_factory_logistics.gui.network_link.mode": "庫存來源",
+  "create_factory_logistics.gui.network_link.mode.stored": "有庫存",
+  "create_factory_logistics.gui.network_link.mode.promised": "已承諾",
+  "create_factory_logistics.gui.network_link.mode.all": "有庫存且已承諾",
+  "create_factory_logistics.ponder.mixer_upkeep.header": "攪拌機維護與網路連接",
+  "create_factory_logistics.ponder.mixer_upkeep.text_1": "網路鏈路可以連接到庫存讀取設備，例如閾值開關",
+  "create_factory_logistics.ponder.mixer_upkeep.text_2": "因此烈焰使者燃燒室能在必要時才投餵",
+  "create_factory_logistics.ponder.mixer_upkeep.text_3": "當訂單到達時，網路連接站將讀取新的狀態並做出反應",
+  "create_factory_logistics.gui.factory_fluid_panel.place_fluid_to_monitor": "放置要監控的流體",
+  "entity.create_factory_logistics.composite_package": "複合包裹",
+  "create.item_attributes.is_fluid": "是 %1$s",
+  "create.item_attributes.is_fluid.inverted": "非 %1$s",
+  "create.item_attributes.is_fluid_no_nbt": "是 %1$s (非 NBT)",
+  "create.item_attributes.is_fluid_no_nbt.inverted": "非 %1$s (非 NBT)"
 }
 
