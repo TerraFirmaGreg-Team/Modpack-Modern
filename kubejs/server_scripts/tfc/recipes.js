@@ -325,12 +325,12 @@ const registerTFCRecipes = (event) => {
 
 	event.recipes.gtceu.macerator('tfg:candle')
 		.itemInputs("#minecraft:candles")
-		.itemOutputs("#forge:dusts/wax")
+		.itemOutputs("gtceu:small_wax_dust")
 		.duration(50)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING);
 	
-	event.recipes.tfc.quern("gtceu:wax_dust", "#minecraft:candles")
+	event.recipes.tfc.quern("gtceu:small_wax_dust", "#minecraft:candles")
 		.id("tfg:quern/candles")
 	event.recipes.tfc.quern("gtceu:tiny_wax_dust", "gtceu:wax_nugget")
 		.id("tfg:quern/wax_nugget")

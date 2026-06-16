@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Flask Recipes",
+  "name": "Przepisy na bukłak",
   "category": "tfc:waterflasks",
   "icon": "waterflasks:leather_flask",
   "pages": [
@@ -17,13 +17,13 @@
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_leather",
       "recipe2": "tfg:shaped/repair_iron_bladder",
-      "title": "Repair Recipes"
+      "title": "Przepisy naprawcze"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "waterflasks:crafting/repair_broken_leather",
       "recipe2": "tfg:shaped/repair_broken_iron",
-      "title": "Renew Recipes",
+      "title": "Przepisy odbudowujące",
       "text": "Flasks can also be repaired when completely broken."
     },
     {
