@@ -7,6 +7,7 @@
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
 - Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
+- Increased the HP of cliff hangers and leaf hangers, but now they let go of the player when attacked @Pyritie
 - Improved the FPS performance of Struts @SakuraKitsurugi
 - Restored the recipe for copying configured Create filters (#4265) @Robak132
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice

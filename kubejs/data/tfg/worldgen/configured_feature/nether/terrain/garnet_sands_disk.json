@@ -1,117 +1,25 @@
 {
 	"type": "tfc:soil_disc",
 	"config": {
-		"height": 4,
-		"min_radius": 3,
-		"max_radius": 5,
-		"integrity": 0.8,
+		"height": 3,
+		"min_radius": 2,
+		"max_radius": 4,
+		"integrity": 0.75,
 		"states": [
 			{
-				"replace": "tfc:sand/white",
-				"with": "gtceu:white_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/white",
-				"with": "gtceu:white_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/diorite",
-				"with": "gtceu:white_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/marble",
-				"with": "gtceu:white_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/yellow",
-				"with": "gtceu:yellow_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/yellow",
-				"with": "gtceu:yellow_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/slate",
-				"with": "gtceu:yellow_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/red",
-				"with": "gtceu:red_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/red",
-				"with": "gtceu:red_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/brown",
-				"with": "gtceu:brown_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/brown",
-				"with": "gtceu:brown_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfg:rock/gravel_dripstone",
-				"with": "gtceu:brown_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/black",
+				"replace": "minecraft:blackstone",
 				"with": "gtceu:black_sand_garnet_sand_ore"
 			},
 			{
-				"replace": "tfc:raw_sandstone/black",
+				"replace": "minecraft:deepslate",
 				"with": "gtceu:black_sand_garnet_sand_ore"
 			},
 			{
-				"replace": "tfc:rock/gravel/basalt",
+				"replace": "tfc:rock/raw/basalt",
 				"with": "gtceu:black_sand_garnet_sand_ore"
 			},
 			{
-				"replace": "tfc:rock/gravel/phyllite",
-				"with": "gtceu:black_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/gabbro",
-				"with": "gtceu:black_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfg:rock/gravel_deepslate",
-				"with": "gtceu:black_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfg:rock/gravel_blackstone",
-				"with": "gtceu:black_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/green",
-				"with": "gtceu:green_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/green",
-				"with": "gtceu:green_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfg:tuff_gravel",
-				"with": "gtceu:green_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/gneiss",
-				"with": "gtceu:green_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/schist",
-				"with": "gtceu:green_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:sand/pink",
-				"with": "gtceu:pink_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:raw_sandstone/pink",
-				"with": "gtceu:pink_sand_garnet_sand_ore"
-			},
-			{
-				"replace": "tfc:rock/gravel/granite",
+				"replace": "beneath:crackrack",
 				"with": "gtceu:pink_sand_garnet_sand_ore"
 			}
 		]
