@@ -1,4 +1,7 @@
 {
+  "block.merequester.requester": "Zlecacz ME",
+  "item.merequester.requester_terminal": "Terminal zlecacza ME",
+  "itemGroup.merequester.tab": "Zlecacz ME",
   "tooltip.merequester.batch": "Wielkość partii",
   "tooltip.merequester.enter_to_submit": "Wciśnij %s, żeby zaakceptować",
   "tooltip.merequester.export": "Eksportowanie",
