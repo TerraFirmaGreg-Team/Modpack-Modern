@@ -4,12 +4,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:migmatite"
+				"name": "hole:purpur"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:deepslate_bricks",
+					"blocks": "minecraft:purpur_block",
 					"match_type": "input"
 				}
 			],
@@ -19,15 +19,9 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 7,
+							"weight": 9,
 							"data": {
-								"Name": "minecraft:deepslate_bricks"
-							}
-						},
-						{
-							"weight": 2,
-							"data": {
-								"Name": "minecraft:cracked_deepslate_bricks"
+								"Name": "minecraft:purpur_block"
 							}
 						},
 						{
@@ -49,12 +43,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:pyroxenite"
+				"name": "hole:purpur_slab"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:polished_blackstone_bricks",
+					"blocks": "minecraft:purpur_slab",
 					"match_type": "input"
 				}
 			],
@@ -64,15 +58,48 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 5,
+							"weight": 9,
 							"data": {
-								"Name": "minecraft:polished_blackstone_bricks"
+								"Name": "minecraft:purpur_slab"
 							}
 						},
 						{
-							"weight": 3,
+							"weight": 1,
 							"data": {
-								"Name": "minecraft:cracked_polished_blackstone_bricks"
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:prismarine"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:prismarine_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 8,
+							"data": {
+								"Name": "minecraft:prismarine_bricks"
 							}
 						},
 						{
@@ -99,7 +126,7 @@
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:polished_blackstone_brick_wall",
+					"blocks": "minecraft:prismarine_wall",
 					"match_type": "input"
 				}
 			],
@@ -109,15 +136,9 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 12,
+							"weight": 14,
 							"data": {
-								"Name": "minecraft:polished_blackstone_brick_wall"
-							}
-						},
-						{
-							"weight": 2,
-							"data": {
-								"Name": "tfg:rock/cracked_bricks_blackstone_wall"
+								"Name": "minecraft:prismarine_wall"
 							}
 						},
 						{
