@@ -60,8 +60,8 @@ function registerTFGBeneathMaterials(event) {
 
 	event.create('irarsite')
         .components('4x iridium', '1x ruthenium', '1x rhodium', '1x platinum', '7x arsenic', '7x sulfur')
-        .color(0xC4C4D4)
-        .secondaryColor(0xA8A8B8)
+        .color(0x9F9FD2)
+        .secondaryColor(0x5555CC)
         .iconSet(GTMaterialIconSet.SHINY)
         .ore()
         .addOreByproducts('sulfur', 'nickel', 'copper', 'arsenic')
@@ -70,8 +70,8 @@ function registerTFGBeneathMaterials(event) {
 
 	event.create('ruarsite')
         .components('1x ruthenium', '1x arsenic', '1x sulfur')
-        .color(0xB8B8C8)
-        .secondaryColor(0x9C9CAC)
+        .color(0x51C2E4)
+        .secondaryColor(0xA8D0F0)
         .iconSet(GTMaterialIconSet.ROUGH)
         .ore()
         .addOreByproducts('sulfur', 'nickel', 'copper', 'arsenic')
@@ -80,8 +80,8 @@ function registerTFGBeneathMaterials(event) {
 
 	event.create('ferhodsite')
         .components('2x iron', '2x rhodium', '1x iridium', '3x nickel', '1x copper', '9x sulfur')
-        .color(0x9C8C7C)
-        .secondaryColor(0x847468)
+        .color(0x9C7C97)
+        .secondaryColor(0xB98DBD)
         .iconSet(GTMaterialIconSet.METALLIC)
         .ore()
         .addOreByproducts('sulfur', 'nickel', 'copper', 'iron')
