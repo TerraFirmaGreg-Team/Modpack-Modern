@@ -1,4 +1,26 @@
 {
+  "itemGroup.ae2netanalyser": "AE2 網路分析儀",
+  "item.ae2netanalyser.network_analyser": "ME 網路分析儀",
+  "gui.ae2netanalyser.network_analyser.mode": "模式",
   "gui.ae2netanalyser.network_analyser.node_size": "尺寸",
-  "gui.ae2netanalyser.network_analyser.mode.FULL": "庫存已滿"
+  "gui.ae2netanalyser.network_analyser.reset": "重設顏色",
+  "gui.ae2netanalyser.network_analyser.mode.FULL": "全部",
+  "gui.ae2netanalyser.network_analyser.mode.NODES": "節點",
+  "gui.ae2netanalyser.network_analyser.mode.CHANNELS": "鏈結",
+  "gui.ae2netanalyser.network_analyser.mode.NONUM": "不顯示數字",
+  "gui.ae2netanalyser.network_analyser.mode.P2P": "P2P",
+  "gui.ae2netanalyser.network_analyser.LINK.NORMAL": "普通鏈結",
+  "gui.ae2netanalyser.network_analyser.LINK.DENSE": "緻密鏈結",
+  "gui.ae2netanalyser.network_analyser.LINK.COMPRESSED": "P2P 鏈結",
+  "gui.ae2netanalyser.network_analyser.NODE.NORMAL": "普通節點",
+  "gui.ae2netanalyser.network_analyser.NODE.DENSE": "緻密節點",
+  "gui.ae2netanalyser.network_analyser.NODE.MISSING": "離線節點",
+  "gui.ae2netanalyser.network_analyser.channel.INFINITE": "頻道模式：無限頻道",
+  "gui.ae2netanalyser.network_analyser.channel.DEFAULT": "頻道模式：預設",
+  "gui.ae2netanalyser.network_analyser.channel.X2": "頻道模式：x2 頻道",
+  "gui.ae2netanalyser.network_analyser.channel.X3": "頻道模式：x3 頻道",
+  "gui.ae2netanalyser.network_analyser.channel.X4": "頻道模式：x4 頻道",
+  "gui.ae2netanalyser.network_analyser.state.normal_nodes": "普通節點：%s",
+  "gui.ae2netanalyser.network_analyser.state.dense_nodes": "緻密節點：%s",
+  "gui.ae2netanalyser.network_analyser.state.missing_nodes": "離線節點：%s"
 }

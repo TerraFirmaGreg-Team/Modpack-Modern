@@ -45,7 +45,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:birt",
 			"scale": 0.9,
-			"name": "Birt",
+			"name": "Ptok",
 			"text": "$(thing)Birts$() are a type of bird? They lay eggs in their nests, are passive unless attacked, and can be eaten. Their eggs can be thrown to stun targets."
 		},
 		{
@@ -96,7 +96,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Glacian Sheep",
+			"title": "Lodowcowa owca",
 			"text": "Preferring extremely cold environments below -108°C, $(thing)Glacian Sheep$() are domesticatable animals. They can be shorn for $(item)Glacian Wool$(), an amazing insulator. They eat any Mars crop.",
 			"anchor": "glacian_sheep"
 		},
@@ -109,7 +109,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Snatcher",
+			"title": "Złodziej",
 			"text": "$(thing)Snatchers$() are passive animals that like to steal your stuff! Attack them to retrieve your items, or feed them $(item)Raw Fish$() to tame them.$(br2)Once tamed, you can carry them on your back and equip them with a wooden chest. Press $(k:key.wan_ancient_beasts.special_ability)$() to throw them, and they will steal the contents of a nearby chest and bring it to you."
 		},
 		{
@@ -117,7 +117,7 @@
 			"entity": "wan_ancient_beasts:snatcher",
 			"scale": 0.35,
 			"name": " ",
-			"text": "A snatcher."
+			"text": "Złodziej."
 		},
 		{
 			"type": "patchouli:text",
@@ -188,7 +188,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:goober",
 			"scale": 0.6,
-			"name": "Goober",
+			"name": "Głupol",
 			"text": "$(thing)Goobers$() are lazy wild animals found above -109°C. They are passive and can be eaten."
 		},
 		{
@@ -196,14 +196,14 @@
 			"entity": "wan_ancient_beasts:walker",
 			"scale": 0.6,
 			"offset": 2.2,
-			"name": "Walker",
+			"name": "Piechur",
 			"text": "The gigantic $(thing)Walkers$() inhabit areas above -97°C. They are passive and can be eaten."
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "wan_ancient_beasts:raider",
 			"scale": 0.5,
-			"name": "Raider",
+			"name": "Łupieżca",
 			"text": "$(thing)Raiders$() are hostile animals found above -109°C. They have a natural rivalry with $(thing)Chargers$(). You can make them neutral by feeding them $(item)Raw Meat$()."
 		},
 		{

@@ -1,51 +1,51 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Crops",
+	"name": "農作物",
 	"category": "tfc:mechanics",
 	"icon": "tfc:textures/item/food/wheat.png",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Crops are a source of food and some other materials. While each crop is slightly different, crops all have some similar principles. In order to start growing crops, you will need some $(thing)Seeds$(), which can be obtained by searching for $(l:the_world/wild_crops)Wild Crops$() and breaking them.$(br2)Once you have obtained seeds, you will also need a $(thing)Hoe$(). Seeds are also useful as $(l:mechanics/fishing)bait$()."
+			"text": "農作物是食物與一些材料的來源。雖然每種農作物略有不同，但它們都遵循一些相似的原則。要開始種植作物，你需要一些$(thing)種子$()，透過搜尋$(l:the_world/wild_crops)野生作$()並破壞它們來取得。$(br2)取得種子後還需要一把$(thing)鋤頭$()。種子也可以用作$(l:mechanics/fishing)魚餌$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to finding wild crops, seeds can also be produced from existing crops. When a fully mature crop dies - either by weather, or leaving it to rot - it will go to seed, dropping more seeds that can be used to grow even more crops next season."
+			"text": "除了尋找野生作物外，還可以從現有的​​作物中獲得種子。當完全成熟的作物因天氣原因死亡或任其枯萎後就會結籽，留下更多種子，這些種子可以用來在下個季節種植更多作物。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Contents",
-			"text": "$(li)$(l:tfc:mechanics/crops#barley)Barley$()$(li)$(l:tfc:mechanics/crops#beet)Beet$()$(li)$(l:tfc:mechanics/crops#cabbage)Cabbage$()$(li)$(l:tfc:mechanics/crops#canola)Canola$()$(li)$(l:tfc:mechanics/crops#carrot)Carrot$()$(li)$(l:tfc:mechanics/crops#cucumber)Cucumber$()$(li)$(l:tfc:mechanics/crops#flax)Flax$()$(li)$(l:tfc:mechanics/crops#garlic)Garlic$()$(li)$(l:tfc:mechanics/crops#green_bean)Green Bean$()$(li)$(l:tfc:mechanics/crops#jute)Jute$()$(li)$(l:tfc:mechanics/crops#lentil)Lentil$()$(li)$(l:tfc:mechanics/crops#maize)Maize$()$(li)$(l:tfc:mechanics/crops#melon)Melon$()"
+			"title": "目錄",
+			"text": "$(li)$(l:tfc:mechanics/crops#barley)大麥$()\n$(li)$(l:tfc:mechanics/crops#beet)甜菜$()\n$(li)$(l:tfc:mechanics/crops#cabbage)高麗菜$()\n$(li)$(l:tfc:mechanics/crops#canola)油菜$()\n$(li)$(l:tfc:mechanics/crops#carrot)胡蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#cucumber)黄瓜$()\n$(li)$(l:tfc:mechanics/crops#flax)亞麻$()\n$(li)$(l:tfc:mechanics/crops#garlic)大蒜$()\n$(li)$(l:tfc:mechanics/crops#green_bean)四季豆$()\n$(li)$(l:tfc:mechanics/crops#jute)黄麻$()\n$(li)$(l:tfc:mechanics/crops#lentil)扁豆$()\n$(li)$(l:tfc:mechanics/crops#maize)玉米$()\n$(li)$(l:tfc:mechanics/crops#melon)西瓜$()"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfc:mechanics/crops#oat)Oat$()$(li)$(l:tfc:mechanics/crops#onion)Onion$()$(li)$(l:tfc:mechanics/crops#papyrus)Papyrus$()$(li)$(l:tfc:mechanics/crops#potato)Potato$()$(li)$(l:tfc:mechanics/crops#pumpkin)Pumpkin$()$(li)$(l:tfc:mechanics/crops#radish)Radish$()$(li)$(l:tfc:mechanics/crops#red_bell_pepper)Red Bell Pepper$()$(li)$(l:tfc:mechanics/crops#rice)Rice$()$(li)$(l:tfc:mechanics/crops#rye)Rye$()$(li)$(l:tfc:mechanics/crops#soybean)Soybean$()$(li)$(l:tfc:mechanics/crops#squash)Squash$()$(li)$(l:tfc:mechanics/crops#sugarcane)Sugarcane$()$(li)$(l:tfc:mechanics/crops#sunflower)Sunflower$()$(li)$(l:tfc:mechanics/crops#tomatoes)Tomato$()$(li)$(l:tfc:mechanics/crops#wheat)Wheat$()$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)Yellow Bell Pepper$()"
+			"text": "$(li)$(l:tfc:mechanics/crops#oat)燕麥$()\n$(li)$(l:tfc:mechanics/crops#onion)洋蔥$()\n$(li)$(l:tfc:mechanics/crops#papyrus)紙莎草$()\n$(li)$(l:tfc:mechanics/crops#potato)馬鈴薯$()\n$(li)$(l:tfc:mechanics/crops#pumpkin)南瓜$()\n$(li)$(l:tfc:mechanics/crops#radish)蘿蔔$()\n$(li)$(l:tfc:mechanics/crops#red_bell_pepper)紅甜椒$()\n$(li)$(l:tfc:mechanics/crops#rice)大米$()\n$(li)$(l:tfc:mechanics/crops#rye)黑麥$()\n$(li)$(l:tfc:mechanics/crops#soybean)大豆$()\n$(li)$(l:tfc:mechanics/crops#squash)櫛瓜$()\n$(li)$(l:tfc:mechanics/crops#sugarcane)甘蔗$()\n$(li)$(l:tfc:mechanics/crops#sunflower)向日葵$()\n$(li)$(l:tfc:mechanics/crops#tomatoes)番茄$()\n$(li)$(l:tfc:mechanics/crops#wheat)小麥$()\n$(li)$(l:tfc:mechanics/crops#yellow_bell_pepper)黄甜椒$()"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hoe_head_1"
 			],
-			"text": "To get started, a $(thing)Stone Hoe$() can be $(thing)knapped$() as seen above."
+			"text": "首先，如上圖$(thing)打製石器$()製作$(thing)石鋤$()。"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "Once the hoe head is knapped, it can be crafted into a Hoe.$(br2)Hoes function as in Vanilla, by right clicking dirt blocks to turn them into $(thing)Farmland$(). They can also be used to convert $(thing)Rooted Dirt$() into $(thing)Dirt$()."
+			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵點擊泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "All crops need to be planted on farmland in order to grow. Some crops have additional requirements such as being waterlogged or requiring a stick to grow on.$(br2)Crops do not need $(thing)nutrients$() to grow, but they certainly help. There are three nutrients: $(b)Nitrogen$(), $(6)Phosphorous$(), and $(d)Potassium$(). Each crop has a favorite nutrient.",
-			"title": "Growing Crops"
+			"text": "所有作物都需要種植在耕地上才能生長。有些作物還有其他特殊要求，例如需要種在水裡或需要支架才能生長。$(br2)作物生長不一定需要$(thing)養分$()，但養分有助於作物生長。養分主要有三種：$(b)氮$()、$(6)磷$()和$(d)鉀$()。每種作物都有其偏好的養分。",
+			"title": "種植作物"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Consuming its favorite nutrient causes a crop to grow faster, and improves the yield of the crop at harvest time. That means that crops that consumed more nutrients drop more food when broken! Consuming a nutrient also has the effect of replenishing the other nutrients around it a small amount.$(br2)The next several pages list all the crops present in TFC"
+			"text": "作物吸收偏好的養分後會加快生長速度，採收時產量也會提高。這意味著，作物消耗越多養分採收時會掉落更多食物！攝取某種養分也有助於補充少量其他養分。$(br2)接下來的幾頁列出了群巒傳說存在的所有作物"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "barley",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 75 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Barley is a single block crop. Barley seeds can be planted on farmland and will produce $(thing)Barley$() and $(thing)Barley Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-8 - 26 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：18 - 75 %$(br)$(bold)養分$()：氮$(br2)大麥是種一格高的作物。產出$(thing)大麥$()和$(thing)大麥種子$()。",
 			"title": "大麥"
 		},
 		{
@@ -193,7 +193,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "oat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 35 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Oat is a single block crop. Oat seeds can be planted on farmland and will produce $(thing)Oat$() and $(thing)Oat Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：35 - 100 %$(br)$(bold)養分$()：磷$(br2)燕麥是種一格高的作物。產出$(thing)燕麥$()和$(thing)燕麥種子$()。",
 			"title": "燕麥"
 		},
 		{
@@ -341,7 +341,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rye",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 85 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rye is a single block crop. Rye seeds can be planted on farmland and will produce $(thing)Rye$() and $(thing)Rye Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-11 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 85 %$(br)$(bold)養分$()：磷$(br2)黑麥是種一格高的作物。產出$(thing)黑麥$()和$(thing)黑麥種子$()。",
 			"title": "黑麥"
 		},
 		{
@@ -489,7 +489,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "maize",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 75 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Maize is a two block tall crop. Maize seeds can be planted on farmland, will grow two blocks tall, and will produce $(thing)Maize$() and $(thing)Maize Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：13 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：75 - 100 %$(br)$(bold)養分$()：磷$(br2)玉米是種兩格高的作物。產出$(thing)玉米$()和$(thing)玉米種子$()。",
 			"title": "玉米"
 		},
 		{
@@ -627,7 +627,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "wheat",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Wheat is a single block crop. Wheat seeds can be planted on farmland and will produce $(thing)Wheat$() and $(thing)Wheat Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-4 - 35 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：磷$(br2)小麥是種一格高的作物。產出$(thing)小麥$()和$(thing)小麥種子$()。",
 			"title": "小麥"
 		},
 		{
@@ -775,12 +775,12 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "rice",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Rice is a single block crop. Rice must be grown underwater - it must be planted on farmland, in freshwater that is a single block deep. It will produce $(thing)Rice$() and $(thing)Rice Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：15 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：磷$(br2)水稻是種一格高的作物。水稻必須種在浸泡一格淡水的耕地。產出$(thing)水稻$()和$(thing)水稻種子$()。",
 			"title": "水稻"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Note: in order to grow, the rice block must be $(thing)Waterlogged$().",
+			"text": "注意：種植水稻種子的方塊必須在$(thing)水中$()。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -923,7 +923,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "beet",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 18 - 85 %$(br)$(bold)Nutrient$(): Potassium$(br2)Beets are a a single block crop. Beet seeds can be planted on farmland and will produce $(thing)Beet$() and $(thing)Beet Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-5 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：18 - 85 %$(br)$(bold)養分$()：鉀$(br2)甜菜是種一格高的作物。產出$(thing)甜菜$()和$(thing)甜菜種子$()。",
 			"title": "甜菜"
 		},
 		{
@@ -1037,7 +1037,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "cabbage",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cabbage is a single block crop. Cabbage seeds can be planted on farmland and will produce $(thing)Cabbage$() and $(thing)Cabbage Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：-10 - 27 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：15 - 65 %$(br)$(bold)養分$()：氮$(br2)高麗菜是種一格高的作物。產出$(thing)高麗菜$()和$(thing)高麗菜種子$()。",
 			"title": "高麗菜"
 		},
 		{
@@ -1151,7 +1151,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "carrot",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 25 - 100 %$(br)$(bold)Nutrient$(): Potassium$(br2)Carrot is a single block crop. Carrot seeds can be planted on farmland and will produce $(thing)Carrot$() and $(thing)Carrot Seeds$() as a product.",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：3 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 100 %$(br)$(bold)養分$()：鉀$(br2)胡蘿蔔是種一格高的作物。產出$(thing)胡蘿蔔$()和$(thing)胡蘿蔔種子$()。",
 			"title": "胡蘿蔔"
 		},
 		{
@@ -2262,7 +2262,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "onion",
-			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 90 %$(br)$(bold)營養物質$()：氮$(br2)洋蔥是種一格高的農作物。種植洋蔥會產出$(thing)洋蔥$()和$(thing)洋蔥種子$()。",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：0 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：25 - 90 %$(br)$(bold)養分$()：氮$(br2)洋蔥是種一格高的農作物。種植洋蔥會產出$(thing)洋蔥$()和$(thing)洋蔥種子$()。",
 			"title": "洋蔥"
 		},
 		{
@@ -2393,7 +2393,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "soybean",
-			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：40 - 100 %$(br)$(bold)營養物質$()：氮$(br2)大豆是種一格高的農作物。種植大豆會產出$(thing)大豆$()和$(thing)大豆種子$()。",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：8 - 30 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：40 - 100 %$(br)$(bold)養分$()：氮$(br2)大豆是種一格高的農作物。種植大豆會產出$(thing)大豆$()和$(thing)大豆種子$()。",
 			"title": "大豆"
 		},
 		{
@@ -2524,7 +2524,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "squash",
-			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：23 - 95 %$(br)$(bold)營養物質$()：鉀$(br2)櫛瓜是種一格高的農作物。種植櫛瓜會產出$(thing)櫛瓜$()和$(thing)櫛瓜種子$()。",
+			"text": "$(bold)$(l:the_world/climate#temperature)温度$()：5 - 33 °C$(br)$(bold)$(l:mechanics/hydration)濕度$()：23 - 95 %$(br)$(bold)養分$()：鉀$(br2)櫛瓜是種一格高的農作物。種植櫛瓜會產出$(thing)櫛瓜$()和$(thing)櫛瓜種子$()。",
 			"title": "櫛瓜"
 		},
 		{
@@ -3621,13 +3621,13 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Canola$(), also known as $(thing)Rapeseed$(), grows between -7 and 25C, and 50 to 350mm of rainfall.",
+			"text": "$(thing)野生油菜$()也稱為$(thing)油菜籽$()，生長在 -7°C 到 25°C的溫度區間與 50 到 350毫米的降雨環境。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "flax",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -8 - 25 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Flax is a two block tall crop. Flax seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Flax Stems$() which can be processed into $(thing)Linen$() or $(thing)Burlap$().$(br)Flax also counts as a Flower for the purposes of $(l:firmalife/beekeeping)Beekeeping$().",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$()：-8°C - 25°C$(br)$(bold)$(l:mechanics/hydration)濕度$()：15 - 65 %$(br)$(bold)養分$()：氮$(br2)亞麻是種兩格高的農作物。亞麻種子可種在耕地，能生長到兩格高，產出用於加工的$(item)亞麻莖桿$()，可用於製作$(thing)亞麻布$()或$(thing)粗麻布$()。$(br)$(l:firmalife/beekeeping)養蜂$()系统，視亞麻為有效花源。",
 			"title": "亞麻"
 		},
 		{
@@ -3781,12 +3781,12 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Flax$() grows between -5 and 23C, and 175 to 475mm of rainfall."
+			"text": "$(thing)野生亞麻$()生長在 -5°C 到 23°C 的溫度區間與 175 至 475毫米 的降雨環境。"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "cucumber",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 70 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Cucumbers are a two block tall crop. Cucumber seeds can be planted on farmland, will grow two blocks tall, and will produce $(item)Cucumbers$() which give $(thing)Vegetable$() nutrition.$(br)$(bold)Cucumbers need a stick to fully mature.$()",
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 70 - 100 %$(br)$(bold)養分$(): 氮$(br2)黃瓜是種兩格高的農作物。黄瓜種子可種在耕地，能生長到兩格高，產出作為$(thing)蔬菜$()$(item)的黄瓜$()。$(br)$(bold)種植黃瓜需要插根木棍才能完全成熟。$()",
 			"title": "黄瓜"
 		},
 		{
@@ -3919,14 +3919,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Cucumber$() grows between 15 and 40C, and 350 to 500mm of rainfall.",
+			"text": "$(thing)野生黄瓜$()生長在 15°C 至 40°C的溫度區間與 0 到 150 毫米的降雨環境。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "radish",
 			"title": "菜頭",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 15 - 65 %$(br)$(bold)Nutrient$(): Potassium$(br2)Radishes can be eaten for $(thing)Vegetable$() nutrition. If you need a plant that can survive in colder temperatures, radishes are a good choice."
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 15 - 65 %$(br)$(bold)養分$(): 鉀$(br2)蘿蔔作為$(thing)蔬菜$()食用。若要在寒冷的地方生存，蘿蔔是個不錯的選擇。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4034,14 +4034,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Radishes$() grow between -16 and 4C, and 75 to 325mm of rainfall.",
+			"text": "$(thing)野生蘿蔔$()生長在 -16°C 至 4°C的溫度區間與 75 到 325 毫米的降雨環境。",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "lentil",
 			"title": "扁豆",
-			"text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 50 - 100 %$(br)$(bold)Nutrient$(): Phosphorus$(br2)Lentils can be eaten for $(thing)Vegetable$() nutrition, although it is recommended to cook them first. Lentils are another good choice for farming in colder climates."
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 18 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 50 - 100 %$(br)$(bold)養分$(): 磷$(br2)扁豆作為$(thing)蔬菜$()食用，建議先煮熟。在寒冷氣候地區，扁豆是另一種不錯的作物。"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -4149,7 +4149,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Wild Lentils$() grow between -18 and 2C, and 250 to 425mm of rainfall.",
+			"text": "$(thing)野生扁豆$()生長在 -18°C 至 2°C的溫度區間與 250 到 425 毫米的降雨環境。",
 			"enable_visualize": false
 		}
 	],

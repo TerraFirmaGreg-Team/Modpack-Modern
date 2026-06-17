@@ -100,8 +100,8 @@ function registerTFGRockRecipes(event) {
 						.id(`tfg:stonecutting/${global.linuxUnfucker(blockEntry.block)}_to_${global.linuxUnfucker(blockEntry.wall)}`)
 				}
 			}
-			if (blockEntry.slab != null) {
-				event.recipes.tfc.chisel(blockEntry.wall, blockEntry.slab, 'smooth');
+			if (blockEntry.stair != null) {
+				event.recipes.tfc.chisel(blockEntry.wall, blockEntry.stair, 'smooth');
 			}
 		}
 	}

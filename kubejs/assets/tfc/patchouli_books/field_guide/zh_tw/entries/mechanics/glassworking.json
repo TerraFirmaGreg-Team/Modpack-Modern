@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Glassworking is the process of turning sand into glass. To start, you must create a $(thing)Glass Batch$(), of which there are four types:$(br)$(br) 1. $(thing)Silica$(), from white sand.$(br) 2. $(thing)Hematitic$(), from yellow, red, or pink sand.$(br) 3. $(thing)Olivine$(), from green or brown sand.$(br) 4. $(thing)Volcanic$(), from black sand."
+      "text": "玻璃工藝是將沙子變成玻璃的藝術。首先，决定製作哪種$(thing)玻璃原料$()：$(br)$(br) 1、$(thing)二氧化硅玻璃$()：由白沙製作。$(br) 2、$(thing)赤鐵礦玻璃$()：由黄沙、紅沙或粉紅沙製作。$(br) 3、$(thing)橄欖岩玻璃$()：由綠沙或棕沙製作。$(br) 4、$(thing)火山岩玻璃$()：由黑沙製作。"
     },
     {
       "type": "patchouli:crafting",
@@ -68,7 +68,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "$(bold)Flatten$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#paddle)Paddle$() in your main hand.$(br2)$(bold)Pinch$()$(br)Use the $(thing)Blowpipe$() while holding $(l:mechanics/glassworking#jacks)Jacks$() in your main hand.$(br2)$(bold)Saw$()$(br)Use the $(thing)Blowpipe$() while holding a $(l:mechanics/glassworking#saw)Gem Saw$() in your main hand.$(br2)$(bold)Roll$()$(br)Use the $(thing)Blowpipe$() with a $(l:mechanics/weaving#wool_cloth)Wool Cloth$() in your main hand."
+      "text": "$(bold)平整$()$(br)副手持拿$(l:mechanics/glassworking#paddle)整形板$()時使用$(thing)吹管$()。$(br2)$(bold)擠壓$()$(br)副手持拿$(l:mechanics/glassworking#jacks)整形鉗$()時使用$(thing)吹管$()。$(br2)$(bold)鋸割$()$(br)副手持拿$(l:mechanics/glassworking#saw)寶石鋸$()時使用$(thing)吹管$()。$(br2)$(bold)翻轉$()$(br)副手持拿$(l:mechanics/weaving#wool_cloth)羊毛布$()時使用$(thing)吹管$()。"
     }
   ],
   "read_by_default": true,

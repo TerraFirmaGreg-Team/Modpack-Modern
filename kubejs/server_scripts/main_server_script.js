@@ -64,6 +64,7 @@ ServerEvents.tags('block', event => {
 	registerCreateDecoBlockTags(event)
 	registerDomumOrnamentumBlockTags(event)
 	registerEndermanOverhaulBlockTags(event)
+	registerEveryCompatBlockTags(event)
 	registerFirmaLifeBlockTags(event)
 	registerGTCEUBlockTags(event)
 	registerMinecraftBlockTags(event)

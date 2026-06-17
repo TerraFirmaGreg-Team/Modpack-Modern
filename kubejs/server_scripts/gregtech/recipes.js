@@ -455,5 +455,16 @@ const registerGTCEURecipes = (event) => {
 
 	event.replaceInput({ id: 'gtceu:shaped/cracking_unit' }, '#gtceu:circuits/hv', '#gtceu:circuits/ev')
 
+  // Allow alternate rubbers for hazmat pieces
+
+  const HAZMAT_PIECES_TO_REPLACE = [
+    "chestpiece",
+    "leggings",
+    "boots"
+  ]
+  HAZMAT_PIECES_TO_REPLACE.forEach(piece => {
+    event.replaceInput({ id: `gtceu:assembler/hazmat_${piece}` },
+      '#forge:plates/rubber', '#tfg:rubber_plates');
+  })
 
 }

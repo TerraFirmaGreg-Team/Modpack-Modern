@@ -84,22 +84,22 @@
 			"anchor": "sea_water"
 		},
 		{
-			"title": "溫泉",
+			"title": "泥水",
 			"text": "不建議飲用$(thing)泥水$()。不僅會感到噁心還會感染寄生蟲。",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "海水",
-			"text": "飲用$(thing)海水$()無法補充水分，反而會更加口渴。高體溫也會加劇口渴感。在海上迷航？下雨時抬頭仰望天空，就能輕鬆補充水分！",
+			"title": "果汁",
+			"text": "$(thing)果汁$()是將水果濃縮成保質期更長的好方法。果汁提供$(l:getting_started/food_and_water#quenching_transient_effect)解渴效果$()。有助於解渴。$(br2)果汁會隨著時間推移而過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "冰沙",
-			"text": "飲用$(thing)冰沙$()可降溫4°C，夏日消暑首選！穿越地下世界時同樣實用。",
+			"title": "優格",
+			"text": "$(thing)優格$()提供與牛奶一樣提供乳製品營養。可以與水果混合製作成$(item)水果優格$()。$(br2)優格會隨著時間推移而過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
 			"item": "tfg:food/yogurt"
@@ -113,7 +113,7 @@
 		},
 		{
 			"title": "液態冰沙",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
+			"text": "飲用$(thing)冰沙$()可降低4°C體溫，非常適合夏天！穿越幽冥之地時也很方便。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"
