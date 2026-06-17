@@ -23,7 +23,7 @@ function createGlassBlock(event, name, opaque) {
         .viewBlocking(false)
         .requiresTool(true)
         .tagBoth('forge:glass')
-        .tagBlock('tfc:mineable_with_gem_saw')
+        .tagBlock('tfc:mineable_with_glass_saw')
         .tagBlock('minecraft:impermeable')
         .tagItem('tfg:whitelisted/facades')
 }
