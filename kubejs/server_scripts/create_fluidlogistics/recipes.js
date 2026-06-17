@@ -122,4 +122,40 @@ function registerCreateFluidLogisticsRecipes(event) {
 		.EUt(20)
 
 	TFGHelpers.registerMaterialInfo('fluidlogistics:fluid_hatch', [GTMaterials.Copper, 1, GTMaterials.Wood, 1])
+
+	event.shapeless('fluidlogistics:faucet', ['#create:valve_handles', 'gtceu:copper_small_fluid_pipe'])
+		.id('tfg:shapeless/fluidlogistics/faucet')
+
+	event.shapeless('fluidlogistics:smart_faucet', ['fluidlogistics:faucet', 'create:electron_tube', '#forge:plates/brass'])
+		.id('tfg:shapeless/fluidlogistics/smart_faucet')
+
+
+	event.shaped('fluidlogistics:mechanical_fluid_gun', [
+		'A ',
+		'C ',
+		'DF'
+	], {
+		A: 'create:spout',
+		C: 'create:precision_mechanism',
+		D: 'create:copper_casing',
+		F: '#forge:tools/wrenches'
+	}).id('tfg:shaped/fluidlogistics/mechanical_fluid_gun')
+
+	event.recipes.gtceu.assembler('tfg:fluidlogistics/mechanical_fluid_gun')
+		.itemInputs('create:spout', 'create:precision_mechanism', 'create:copper_casing')
+		.itemOutputs('fluidlogistics:mechanical_fluid_gun')
+		.duration(200)
+		.EUt(20)
+		.addMaterialInfo(true)
+
+	event.shaped('fluidlogistics:smart_hopper', [
+		' A ',
+		' B ',
+		'DCD'
+	], {
+		A: 'create:electron_tube',
+		B: '#gtceu:electric_pumps',
+		C: 'minecraft:hopper',
+		D: '#forge:plates/copper'
+	}).id('tfg:shaped/smart_hopper')
 }
