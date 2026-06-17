@@ -19,15 +19,9 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 7,
+							"weight": 9,
 							"data": {
 								"Name": "minecraft:deepslate_bricks"
-							}
-						},
-						{
-							"weight": 2,
-							"data": {
-								"Name": "minecraft:cracked_deepslate_bricks"
 							}
 						},
 						{
@@ -64,15 +58,9 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 5,
+							"weight": 8,
 							"data": {
 								"Name": "minecraft:polished_blackstone_bricks"
-							}
-						},
-						{
-							"weight": 3,
-							"data": {
-								"Name": "minecraft:cracked_polished_blackstone_bricks"
 							}
 						},
 						{
@@ -109,15 +97,9 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 12,
+							"weight": 14,
 							"data": {
 								"Name": "minecraft:polished_blackstone_brick_wall"
-							}
-						},
-						{
-							"weight": 2,
-							"data": {
-								"Name": "tfg:rock/cracked_bricks_blackstone_wall"
 							}
 						},
 						{
