@@ -1,0 +1,13 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:red_wool": "minecraft:purpur_block",
+				"minecraft:orange_wool": "minecraft:purpur_slab",
+				"minecraft:yellow_wool": "minecraft:prismarine_bricks",
+				"minecraft:lime_wool": "minecraft:prismarine_wall"
+			}
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"processors": [
+	{
+	"processor_type": "lithostitched:condition",
+	"random_mode": {
+		"mode": "per_block",
+		"name": "bastion:purpur_blackstone"
+	},
+	"if_true": [
+		{
+			"type": "lithostitched:matching_blocks",
+			"blocks": "minecraft:prismarine_bricks",
+			"match_type": "input"
+		}
+		],
+	"then": {
+		"processor_type": "lithostitched:set_block",
+		"state_provider": {
+			"type": "minecraft:noise_provider",
+			"seed": 52,
+			"noise": {
+				"firstOctave": -5,
+				"amplitudes": [ 10, 0, 0, 0, 1, 1 ]
+			},
+			"scale": 6,
+			"states": [
+				{ "Name": "tfg:rock/hardened_blackstone" },
+				{ "Name": "minecraft:gilded_blackstone" },
+				{ "Name": "minecraft:gilded_blackstone" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:gilded_blackstone" },
+				{ "Name": "minecraft:gilded_blackstone" },
+				{ "Name": "minecraft:magma_block" },
+				{ "Name": "minecraft:polished_blackstone_bricks" }
+			]
+		},
+		"preserve_state": true,
+		"random_mode": "per_block",
+		"block_entity_modifier": {
+			"type": "minecraft:passthrough"
+		}
+	}
+	}
+	]
+}

@@ -1,0 +1,379 @@
+{
+	"processors": [
+		{
+	"processor_type": "lithostitched:condition",
+	"random_mode": {
+		"mode": "per_block",
+		"name": "big_hole:detail"
+	},
+	"if_true": [
+		{
+			"type": "lithostitched:matching_blocks",
+			"blocks": "minecraft:red_wool",
+			"match_type": "input"
+		}
+		],
+	"then": {
+		"processor_type": "lithostitched:set_block",
+		"state_provider": {
+			"type": "minecraft:noise_provider",
+			"seed": 52,
+			"noise": {
+				"firstOctave": -9,
+				"amplitudes": [ 3 ]
+			},
+			"scale": 6,
+			"states": [
+				{ "Name": "minecraft:red_wool" },
+				{ "Name": "minecraft:red_wool" },
+				{ "Name": "minecraft:red_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:red_wool" },
+				{ "Name": "minecraft:red_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:red_wool" }
+			]
+		},
+		"preserve_state": true,
+		"random_mode": "per_block",
+		"block_entity_modifier": {
+			"type": "minecraft:passthrough"
+		}
+	}
+	},
+	{
+	"processor_type": "lithostitched:condition",
+	"random_mode": {
+		"mode": "per_block",
+		"name": "big_hole:detail_slab"
+	},
+	"if_true": [
+		{
+			"type": "lithostitched:matching_blocks",
+			"blocks": "minecraft:orange_wool",
+			"match_type": "input"
+		}
+		],
+	"then": {
+		"processor_type": "lithostitched:set_block",
+		"state_provider": {
+			"type": "minecraft:noise_provider",
+			"seed": 52,
+			"noise": {
+				"firstOctave": -9,
+				"amplitudes": [ 3 ]
+			},
+			"scale": 6,
+			"states": [
+				{ "Name": "minecraft:orange_wool" },
+				{ "Name": "minecraft:orange_wool" },
+				{ "Name": "minecraft:orange_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:orange_wool" },
+				{ "Name": "minecraft:orange_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:orange_wool" }
+			]
+		},
+		"preserve_state": true,
+		"random_mode": "per_block",
+		"block_entity_modifier": {
+			"type": "minecraft:passthrough"
+		}
+	}
+	},
+	{
+	"processor_type": "lithostitched:condition",
+	"random_mode": {
+		"mode": "per_block",
+		"name": "big_hole:building"
+	},
+	"if_true": [
+		{
+			"type": "lithostitched:matching_blocks",
+			"blocks": "minecraft:yellow_wool",
+			"match_type": "input"
+		}
+		],
+	"then": {
+		"processor_type": "lithostitched:set_block",
+		"state_provider": {
+			"type": "minecraft:noise_provider",
+			"seed": 52,
+			"noise": {
+				"firstOctave": -9,
+				"amplitudes": [ 3 ]
+			},
+			"scale": 6,
+			"states": [
+				{ "Name": "minecraft:yellow_wool" },
+				{ "Name": "minecraft:yellow_wool" },
+				{ "Name": "minecraft:yellow_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:yellow_wool" },
+				{ "Name": "minecraft:yellow_wool" },
+				{ "Name": "minecraft:cave_air" },
+				{ "Name": "minecraft:yellow_wool" }
+			]
+		},
+		"preserve_state": true,
+		"random_mode": "per_block",
+		"block_entity_modifier": {
+			"type": "minecraft:passthrough"
+		}
+	}
+	},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:detail_wall"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:lime_wool",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 14,
+							"data": {
+								"Name": "minecraft:lime_wool"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:detail"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:red_wool",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 9,
+							"data": {
+								"Name": "minecraft:red_wool"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:detail_slab"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:orange_wool",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 9,
+							"data": {
+								"Name": "minecraft:orange_wool"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:building"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:yellow_wool",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 8,
+							"data": {
+								"Name": "minecraft:yellow_wool"
+							}
+						},
+						{
+							"weight": 2,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:detail_wall"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:lime_wool",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 14,
+							"data": {
+								"Name": "minecraft:lime_wool"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		}
+	]
+}

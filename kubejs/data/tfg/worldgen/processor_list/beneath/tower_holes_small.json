@@ -4,12 +4,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "hole:purpur"
+				"name": "hole:detail"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:purpur_block",
+					"blocks": "minecraft:red_wool",
 					"match_type": "input"
 				}
 			],
@@ -21,7 +21,7 @@
 						{
 							"weight": 9,
 							"data": {
-								"Name": "minecraft:purpur_block"
+								"Name": "minecraft:red_wool"
 							}
 						},
 						{
@@ -43,12 +43,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "hole:purpur_slab"
+				"name": "hole:detail_slab"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:purpur_slab",
+					"blocks": "minecraft:orange_wool",
 					"match_type": "input"
 				}
 			],
@@ -60,7 +60,7 @@
 						{
 							"weight": 9,
 							"data": {
-								"Name": "minecraft:purpur_slab"
+								"Name": "minecraft:orange_wool"
 							}
 						},
 						{
@@ -82,12 +82,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "hole:prismarine"
+				"name": "hole:building"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:prismarine_bricks",
+					"blocks": "minecraft:yellow_wool",
 					"match_type": "input"
 				}
 			],
@@ -99,7 +99,7 @@
 						{
 							"weight": 8,
 							"data": {
-								"Name": "minecraft:prismarine_bricks"
+								"Name": "minecraft:yellow_wool"
 							}
 						},
 						{
@@ -121,12 +121,12 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:prismarine_wall"
+				"name": "hole:detail_wall"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:prismarine_wall",
+					"blocks": "minecraft:lime_wool",
 					"match_type": "input"
 				}
 			],
@@ -138,7 +138,7 @@
 						{
 							"weight": 14,
 							"data": {
-								"Name": "minecraft:prismarine_wall"
+								"Name": "minecraft:lime_wool"
 							}
 						},
 						{

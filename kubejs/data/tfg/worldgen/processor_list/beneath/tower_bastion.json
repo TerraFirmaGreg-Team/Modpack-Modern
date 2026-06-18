@@ -3,9 +3,42 @@
 		{
 			"processor_type": "lithostitched:reference",
 			"processor_lists": [
-				"tfg:beneath/tower_holes_small",
-				"tfg:beneath/tower_holes_stairs",
-				"tfg:beneath/tower_palette_bastion"
+				"tfg:beneath/tower_converter_low",
+				"tfg:beneath/tower_holes_stairs"
+			]
+		},
+		{
+			"processor_type": "lithostitched:apply_random",
+			"mode": "per_block",
+			"processor_lists": [
+				{
+				"weight": 9,
+				"data": "tfg:beneath/tower_holes_small"
+				},
+				{
+				"weight": 1,
+				"data": "tfg:beneath/tower_holes_big"
+				}
+			]
+		},
+		{
+			"processor_type": "lithostitched:reference",
+			"processor_lists": [
+				"tfg:beneath/tower_deconverter_low"
+			]
+		},
+		{
+			"processor_type": "lithostitched:apply_random",
+			"mode": "per_block",
+			"processor_lists": [
+				{
+				"weight": 3,
+				"data": "tfg:beneath/tower_palette_gilded"
+				},
+				{
+				"weight": 7,
+				"data": "tfg:beneath/tower_palette_magma"
+				}
 			]
 		}
 	]
