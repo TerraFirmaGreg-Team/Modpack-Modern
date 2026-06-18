@@ -135,7 +135,7 @@
 			}
 		},
 
-				{
+		{
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
@@ -176,7 +176,7 @@
 		},
 
 
-			{
+		{
 			"processor_type": "lithostitched:block_swap",
 			"blocks": {
 				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"

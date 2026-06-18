@@ -4,7 +4,7 @@
 	"processor_type": "lithostitched:condition",
 	"random_mode": {
 		"mode": "per_block",
-		"name": "bastion:purpur_blackstone"
+		"name": "palette:gilded"
 	},
 	"if_true": [
 		{
