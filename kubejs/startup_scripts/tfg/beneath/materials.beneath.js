@@ -18,9 +18,9 @@ function registerTFGBeneathMaterials(event) {
 
 	event.create('phlogopite')
 		.components('1x potassium', '3x magnesium', '1x aluminium', '3x silicon', '10x oxygen', '2x fluorine')
-		.color(0x8B6914)
-		.secondaryColor(0xA0782A)
-		.iconSet(GTMaterialIconSet.getByName('sheet'))
+		.color(0xD8A260)
+		.secondaryColor(0x5A3712)
+		.iconSet(GTMaterialIconSet.getByName('sheet_metallic'))
 		.ore()
 		.addOreByproducts('magnesium', 'potassium', 'aluminium', 'aluminium')
 		.washedIn(GTMaterials.HydrochloricAcid)
