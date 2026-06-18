@@ -4,7 +4,7 @@
 	"processor_type": "lithostitched:condition",
 	"random_mode": {
 		"mode": "per_block",
-		"name": "bastion:raw_blackstone"
+		"name": "bastion:purpur_blackstone"
 	},
 	"if_true": [
 		{
@@ -149,7 +149,7 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:slabs"
+				"name": "bastion:blackstone_slab"
 			},
 			"if_true": [
 				{
@@ -285,7 +285,7 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:walls"
+				"name": "bastion:wall"
 			},
 			"if_true": [
 				{

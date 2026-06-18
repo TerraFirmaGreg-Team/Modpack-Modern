@@ -121,7 +121,7 @@
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:pyroxenite_walls"
+				"name": "bastion:prismarine_wall"
 			},
 			"if_true": [
 				{
