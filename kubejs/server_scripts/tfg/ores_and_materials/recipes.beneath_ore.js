@@ -2,16 +2,6 @@
 
 function registerTFGBeneathOreProcRecipes(event) {
 
-	/*
-	event.recipes.gtceu.chemical_reactor('tfg:')
-		.itemInputs(Item.of(, 1))
-		.inputFluids(Fluid.of(, 1))
-		.outputFluids(Fluid.of(, 1))
-		.itemOutputs(Item.of(, 1))
-		.duration(37 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
-	*/
-
 	// Phlogopite
 
 	event.recipes.gtceu.chemical_bath('tfg:hydrofluoric_acid_from_phlogopite_dust')
@@ -91,19 +81,7 @@ function registerTFGBeneathOreProcRecipes(event) {
 		.duration(12 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-	/*
-	event.recipes.gtceu.ore_processing_gas('tfg:test')
-		.itemInputs(Item.of('gtceu:crushed_molybdenite_ore', 1))
-		.perTick(true)
-		.inputFluids(Fluid.of('gtceu:natural_gas', 1))
-		.perTick(false)
-		.chancedOutput(Item.of('gtceu:molybdenum_dust', 1), 3333, 0)
-		.chancedOutput(Item.of('gtceu:sulfur_dust', 1), 3333, 0)
-		.chancedOutput(Item.of('gtceu:quartzite_dust', 1), 1400, 0)
-		.chancedOutput(Item.of('gtceu:molybdenite_dust', 1), 10000, 0)
-		.duration(16 * 20)
-		.EUt(GTValues.VA[GTValues.MV])
-	*/
+	// Ore processing recipes in the Ore Processing Multiblock
 
 	function processOreGas(material) {
 		if (!material.hasProperty(PropertyKey.ORE)) return;
@@ -255,9 +233,8 @@ function registerTFGBeneathOreProcRecipes(event) {
 			recipe.chancedOutput(byproduct2, 4025, 0);
 	}
 
-	GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 		if (material === null || material.isNull()) return;
-		if (!material.hasProperty(PropertyKey.ORE)) return;
 		if (material.hasProperty(PropertyKey.GEM)) return;
 
 		processOreGas(material);
