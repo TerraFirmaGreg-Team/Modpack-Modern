@@ -2,6 +2,11 @@
 
 ## Unreleased
 ### Changes
+#### Ores
+- Added more ores to the Beneath, including four brand new ones! @TomPlop
+- Added a new multiblock that exclusively works at the bottom of the Beneath - the Geologic Vulcanizer. Right now, it can process all your ores in one single recipe *and* return a bit of extra than you'd normally get doing all the steps separately! However, it's significantly more complicated to run... check the quest in LV for more details. @TomPlop
+- Added new textures for raw ore items and blocks! @Atraxia @Redeix
+#### Other changes
 - Reduced the processing speed of vibration tables @Pyritie
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
@@ -27,6 +32,7 @@
 - Fixed the recipe for the Line R and Slash R road stencils (#4274, #4275) @hollow-earth
 - Fixed a wax dupe with candles (#4264) @hollow-earth
 - Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
+- Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed
@@ -34,6 +40,8 @@
 - Fixed being able to light waterlogged candles
 - Fixed spring water not counting as water for some effects
 - Fixed ash not accumulating in firepits
+#### Particular 1.5.5
+- Added splashing effects in other kinds of water, and fireflies in TFC biomes
 
 ## [0.12.10] - 09-06-2026
 ### Changes
