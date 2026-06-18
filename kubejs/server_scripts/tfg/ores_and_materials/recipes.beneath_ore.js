@@ -71,6 +71,26 @@ function registerTFGBeneathOreProcRecipes(event) {
 		.duration(16 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
+	// Custom Centrifuge for new PSG Ores
+
+	event.recipes.gtceu.centrifuge('tfg:ferhodsite_dust')
+		.itemInputs(Item.of('gtceu:ferhodsite_dust', 6))
+		.itemOutputs(Item.of('gtceu:iron_dust', 2), Item.of('gtceu:nickel_dust', 3), Item.of('gtceu:copper_dust', 1))
+		.duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.centrifuge('tfg:ruarsite_dust')
+		.itemInputs(Item.of('gtceu:ruarsite_dust', 2))
+		.itemOutputs(Item.of('gtceu:arsenic_dust', 1), Item.of('gtceu:sulfur_dust', 1))
+		.duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.centrifuge('tfg:irarsite_dust')
+		.itemInputs(Item.of('gtceu:irarsite_dust', 2))
+		.itemOutputs(Item.of('gtceu:arsenic_dust', 1), Item.of('gtceu:sulfur_dust', 1))
+		.duration(12 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
 	/*
 	event.recipes.gtceu.ore_processing_gas('tfg:test')
 		.itemInputs(Item.of('gtceu:crushed_molybdenite_ore', 1))
