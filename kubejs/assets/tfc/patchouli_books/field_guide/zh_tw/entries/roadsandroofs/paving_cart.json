@@ -1,51 +1,51 @@
 {
-  "name": "Paving Cart",
+  "name": "鋪路車",
   "category": "tfc:roadsandroofs",
   "icon": "tfg:rnr_plow",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The $(thing)Paving Cart$() is a specialized cart used for laying down road surfaces quickly and efficiently. It can be filled with road materials and $(thing)Crushed Base Course$() to create roads. The cart can also fill in any existing base course blocks"
+      "text": "$(thing)鋪路車$()專門用來高效鋪設路面的推車。填入路面材料與$(thing)碎石基層$()來修築道路。推車也能為已有基層的方塊完成填料"
     },
     {
       "type": "patchouli:image",
-      "title": "Paving Cart",
+      "title": "鋪路車",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart.png"
       ],
       "border": true
     },
     {
       "type": "patchouli:image",
-      "title": "Width Adjustment Slider",
+      "title": "寬度調整滑塊",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_width.png"
       ],
       "border": true,
-      "text": "The cart allows you to adjust the width of the path in the GUI"
+      "text": "允許調整鋪設的路徑寬度"
     },
     {
       "type": "patchouli:image",
-      "title": "Variable Width Path",
+      "title": "可變的路寬",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_width.png"
       ],
       "border": true
     },
     {
       "type": "patchouli:image",
-      "title": "Randomizer Button",
+      "title": "隨機模式",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_gui_random.png"
       ],
       "border": true,
-      "text": "The cart has a mode that will lay down materials in a random pattern."
+      "text": "推車有隨機舖設材料的模式。"
     },
     {
       "type": "patchouli:image",
-      "title": "Random Material Path",
+      "title": "隨機材料路徑",
       "images": [
-      "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
+        "tfg:textures/gui/field_guide/paving_cart/tfg_paving_cart_path_random.png"
       ],
       "border": true
     }
@@ -54,5 +54,5 @@
   "extra_recipe_mappings": {
     "tfg:rnr_plow": 0
   },
-  "sortnum": 20
+  "sortnum": 23
 }

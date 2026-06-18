@@ -12,15 +12,15 @@
       "type": "patchouli:multiblock",
       "multiblock": {
         "pattern": [
-      [
-      "X"
-      ],
-      [
-      "0"
-      ]
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
         ],
         "mapping": {
-      "X": "#tfc:anvils"
+          "X": "#tfc:anvils"
         }
       },
       "name": "",
@@ -30,12 +30,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą dwie sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
+      "text": "Kowadła mogą zostać wykonane z $(thing)podwójnych sztabek$() z odpowiadającego im materiału. By zbudować swoje pierwsze metalowe kowadło, należy $(l:getting_started/primitive_anvils#welding)zespawać$() ze sobą podwójne sztabki na $(l:getting_started/primitive_anvils)kamiennym kowadle$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Każde kowadło posiada swoją  $(thing)rangę$(), która określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów odpowiadających rangą jego własnej oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Ranga 0$(): Kamienne kowadła$(li)$(bold)Ranga I$(): Miedź$(li)$(bold)Ranga II$(): Brąz bizmutowy, Brąz czarny, Brąz$(li)$(bold)Ranga III$(): Żelazo kuźnicze$(li)$(bold)Ranga IV$(): Stal$(li)$(bold)Ranga V$(): Stal czarna$(li)$(bold)Ranga VI$(): Stal czerwona, Stal niebieska"
+      "text": "Każde kowadło posiada swój $(thing)poziom$(), który określa, jakie materiały mogą być na nim wykuwane i spawane. Kowadła umożliwiają kucie materiałów o takim samym poziomie oraz spawanie materiałów o jedną rangę wyższych.$(br)$(li)$(bold)Poziom 0$(): Kamienne kowadło$(li)$(bold)Poziom I$(): Miedź$(li)$(bold)Poziom II$(): Brąz bizmutowy, Czarny brąz, Brąz$(li)$(bold)Poziom III$(): Kute żelazo$(li)$(bold)Poziom IV$(): Stal$(li)$(bold)Poziom V$(): Czarna stal$(li)$(bold)Poziom VI$(): Czerwona stal, Niebieska stal"
     },
     {
       "type": "patchouli:text",
@@ -89,13 +89,13 @@
     {
       "type": "patchouli:spotlight",
       "item": "tfc:metal/pickaxe/wrought_iron{\"tfc:forging_bonus\":4}",
-      "title": "Bezbłędnie wykute",
+      "title": "Idealnie wykute",
       "link_recipes": false,
       "text": "Wyróżniamy cztery jakości bonusu: $(li)Słabo wykute$(li)Dobrze wykute$(li)Profesjonalnie wykute$(li)Bezbłędnie wykute$(br2) Bonusy te zwiększają jakość wykonanego narzędzia, czyniąc je wytrzymalszym, szybszym i/lub zadającym więcej obrażeń podczas walki, zależnie od jego rodzaju."
     },
     {
       "type": "patchouli:text",
-      "anchor": "zespajanie",
+      "anchor": "welding",
       "text": "Spawanie jest procesem, podczas którego dwa elementy zostają połączone w jeden, nowy przedmiot. Spawanie działa tak samo niezależnie od rodzaju kowadła.$(br2)Po pierwsze, należy umieścić dwa przeznaczone do spawania przedmioty w kowadle. Można uczynić to poprzez kliknięcie nimi na kowadło, bądź wprowadzenie ich w interfejsie kowadła w dwa skrajne lewe sloty.",
       "title": "Spawanie"
     },

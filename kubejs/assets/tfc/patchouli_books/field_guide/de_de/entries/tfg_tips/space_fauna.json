@@ -17,7 +17,7 @@
 			"item": "tfg:marker/moon",
 			"title": "Moon Animals",
 			"text": "$(item)The Moon$() may be pretty barren, but it still has a few animals that call it home.$(br2)It's considered a $(thing)Cold$() world despite the pretty extreme temperature swings.",
-			"anchor": "mond"
+			"anchor": "moon"
 		},
 		{
 			"type": "patchouli:entity",
@@ -62,7 +62,7 @@
 		{
 			"type": "patchouli:image",
 			"images": [
-			"tfg:textures/gui/field_guide/sandworm.png"
+				"tfg:textures/gui/field_guide/sandworm.png"
 			],
 			"border": true,
 			"title": "The Sandworm",
@@ -72,7 +72,7 @@
 			"type": "patchouli:text",
 			"title": "Sniffers",
 			"text": "$(thing)Sniffers$() are domesticatable animals found between -30 and -102°C. They require a Large Nest to lay their eggs and can be shorn for $(item)Sniffer Tufts$(). Their eggs can be cooked or extracted for Cream. They eat any Mars crop.",
-			"anchor": "schnüffler"
+			"anchor": "sniffer"
 		},
 		{
 			"type": "patchouli:entity",

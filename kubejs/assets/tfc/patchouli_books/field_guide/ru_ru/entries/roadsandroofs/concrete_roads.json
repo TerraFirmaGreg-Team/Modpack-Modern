@@ -5,13 +5,13 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Бетонные дороги — это самый быстрый тип дорог, который можно построить, обеспечивающий 30% бонус к скорости передвижения при правильном строительстве. Однако дорожные строители должны быть внимательны при возведении бетонных дорог, чтобы предотвратить их растрескивание или повреждение от ходьбы во влажную погоду, так как это снимет бонус к скорости."
+      "text": "Бетонные дороги обеспечивают 30% бонус к скорости передвижения при правильном строительстве. Однако дорожные строители должны быть внимательны при возведении бетонных дорог, чтобы предотвратить их растрескивание или повреждение от ходьбы во влажную погоду, так как это снимет бонус к скорости."
     },
     {
       "type": "patchouli:image",
       "title": "Бетонная дорога",
       "images": [
-      "rnr:textures/gui/book/concrete_road.png"
+        "rnr:textures/gui/book/concrete_road.png"
       ],
       "border": true
     },
@@ -37,7 +37,7 @@
       "type": "patchouli:image",
       "title": "Заливка бетонной дороги",
       "images": [
-      "rnr:textures/gui/book/wet_concrete.png"
+        "rnr:textures/gui/book/wet_concrete.png"
       ],
       "border": true
     },
@@ -47,9 +47,9 @@
     },
     {
       "type": "patchouli:image",
-      "title": "Control Joints",
+      "title": "Контрольные соединения",
       "images": [
-      "rnr:textures/gui/book/control_joints.png"
+        "rnr:textures/gui/book/control_joints.png"
       ],
       "border": true
     },
@@ -61,7 +61,7 @@
       "type": "patchouli:image",
       "title": "Фокс Сетт Роуд",
       "images": [
-      "rnr:textures/gui/book/faux_sett.png"
+        "rnr:textures/gui/book/faux_sett.png"
       ],
       "border": true
     }

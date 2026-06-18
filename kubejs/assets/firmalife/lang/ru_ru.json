@@ -685,7 +685,7 @@
 	"firmalife.enum.winetype.sparkling": "игристое",
 	"firmalife.enum.winetype.white": "белое",
 	"firmalife.greenhouse.air_needed": "Над лотком должно быть открытое небо и блоки не должны мешать",
-	"firmalife.greenhouse.climate_invalid": "Этот блок не находится в теплицы. Либо попробуй нажать ПКМ по климатической станции",
+	"firmalife.greenhouse.climate_invalid": "Блок размещён вне теплицы или в недействительной теплице. Попробуй нажать ПКМ по климатической станции.",
 	"firmalife.greenhouse.dehydrated": "Земля в лотках слишком сухая, необходимо использовать Лейку",
 	"firmalife.greenhouse.expects": "Ожидает теплицу: %s",
 	"firmalife.greenhouse.found": "Обнаружена теплица (%s) размером %s блока(блоков)",

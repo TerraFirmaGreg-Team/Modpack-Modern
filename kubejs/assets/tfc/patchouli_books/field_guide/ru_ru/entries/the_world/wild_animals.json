@@ -78,7 +78,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "Волк появляется при любой $(l:the_world/climate#temperature)температуре$() ниже 22°C и $(l:the_world/climate#rainfall)количестве осадков$() от 150 до 420 мм. Волки охотятся стаями. Если достаточно много раз покормить волка, его можно приручить, превратив в $(l:mechanics/pets)собаку$()."
+			"text": "Волк появляется при любой $(l:the_world/climate#temperature)температуре$() ниже 22°C и $(l:the_world/climate#rainfall)количестве осадков$() от 70 до 480 мм. Волки охотятся стаями. Если достаточно много раз покормить волка, его можно приручить, превратив в $(l:mechanics/pets)собаку$()."
 		},
 		{
 			"type": "patchouli:entity",

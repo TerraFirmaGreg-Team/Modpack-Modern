@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Рецепти фляг",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:leather_flask",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Існує три віхи фляг для води.$(br)Шкіряний бурдюк вміщує 5 ковтків і розрахована на 100 використань.$(br)Залізна фляга вміщує 20 ковтків і розрахована на 400 використань.$(br)Фляга із червоної сталі вміщує 20 ковтків і є вічною.$(br)Як шкіряну, так і залізну флягу можна ремонтувати."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/leather_flask",
+      "recipe2": "tfg:shaped/iron_flask"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_leather",
+      "recipe2": "tfg:shaped/repair_iron_bladder",
+      "title": "Рецепти ремонту"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_broken_leather",
+      "recipe2": "tfg:shaped/repair_broken_iron",
+      "title": "Рецепти відновлення",
+      "text": "Фляги також можна відремонтувати, навіть якщо вони повністю зламані."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/red_steel_flask_bladder"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "waterflasks:leather_flask": 1,
+    "waterflasks:iron_flask": 1,
+    "waterflasks:red_steel_flask": 4
+  }
+}

@@ -26,10 +26,10 @@
         },
         "pattern": [
           [
-          "CCCC",
-          "CCC0",
-          "CCCC",
-          "CCCC"
+            "CCCC",
+            "CCC0",
+            "CCCC",
+            "CCCC"
           ]
         ]
       },
@@ -50,14 +50,14 @@
         },
         "pattern": [
           [
-          " C ",
-          "C C",
-          " C "
+            " C ",
+            "C C",
+            " C "
           ],
           [
-          "   ",
-          " 0 ",
-          "   "
+            "   ",
+            " 0 ",
+            "   "
           ]
         ]
       },
@@ -405,7 +405,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "anchor": "lamp_glass",
-      "recipe": "tfc:glassworking/lamp_glass",
+      "recipe": "tfg:glassworking/lamp_glass",
       "text": "$(thing)Стекло для ламп$() является необходимым компонентом для создания $(l:mechanics/lamps)Ламп$()."
     },
     {

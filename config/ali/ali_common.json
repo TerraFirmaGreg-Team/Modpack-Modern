@@ -1,15 +1,43 @@
 {
-    "configVersion": 1,
-    "blockCategories": [],
+    "configVersion": 2,
+    "blockCategories": [
+        {
+            "key": "ali:block_loot",
+            "type": "BLOCK",
+            "icon": "gtceu:copper_pickaxe",
+            "hide": false,
+            "blocks": [
+                "#forge:ores",
+                "#forge:raw_ore_blocks",
+                "#tfc:clay_grass",
+                "#tfc:clay",
+                "#tfc:kaolin_clay",
+                "#tfc:crops",
+                "#tfc:wild_crops",
+                "#tfg:dead_crops",
+                "#minecraft:leaves",
+                "#forge:surface_rocks",
+                "#tfc:rock/raw",
+                "#forge:cobblestone",
+                "#tfc:rock/gravel",
+                "#tfg:bud_ore_indicators",
+                "#tfg:decorative_vases/generated",
+                "ad_astra:sky_stone",
+                "ad_astra:cheese_block",
+                "ad_astra:moon_cheese_ore",
+                "tfg:huge_quartz",
+                "tfg:halite",
+                "minecraft:basalt"
+            ]
+        }
+    ],
     "entityCategories": [
         {
             "key": "ali:entity_loot",
             "type": "ENTITY",
             "icon": "minecraft:skeleton_skull",
             "hide": false,
-            "classes": [
-                "net.minecraft.world.entity.Entity"
-            ]
+            "entityTypes": []
         }
     ],
     "gameplayCategories": [

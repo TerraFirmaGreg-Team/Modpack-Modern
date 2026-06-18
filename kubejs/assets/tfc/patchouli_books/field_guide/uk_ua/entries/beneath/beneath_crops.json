@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Зміст",
-			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарні перці$()"
+			"text": "$(li)$(l:tfc:beneath/beneath_crops#cassava)Маніок$()\n$(li)$(l:tfc:beneath/beneath_crops#peanut)Арахіс$()\n$(li)$(l:tfc:beneath/beneath_crops#beans)Чорнокам’яна квасоля$()\n$(li)$(l:tfc:beneath/beneath_crops#ghost_pepper)Примарний перець$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -133,7 +133,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий маніок$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дикий маніок$() росте між Y=203 та Y=80.",
 			"enable_visualize": false
 		},
 		{
@@ -248,14 +248,14 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикий арахіс$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дикий арахіс$() росте між Y=203 and Y=80.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "beans",
-			"title": "Квасоля",
-			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nКвасолю можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення. Однак її спершу потрібно приготувати!"
+			"title": "Чорнокам’яна квасоля",
+			"text": "$(bold)$(l:the_world/climate#temperature)Температура$(): 10 - 80 °C$(br)\n$(bold)$(l:mechanics/hydration)Зволоження$(): 20 - 80 %$(br)\n$(bold)Поживні речовини$(): Калій$(br2)\nЧорнокам’яну квасолю можна їсти для отримання $(thing)овочевого$() та $(thing)білкового$() насичення. Однак її спершу потрібно приготувати!"
 		},
 		{
 			"type": "tfc:multimultiblock",
@@ -363,7 +363,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дика квасоля$() росте в PLACEHOLDER.",
+			"text": "$(thing)Дика чорнокам’яна квасоля$() росте між Y=158 and Y=32.",
 			"enable_visualize": false
 		},
 		{
@@ -478,7 +478,7 @@
 					}
 				}
 			],
-			"text": "$(thing)Дикі примарні перці$() ростуть у PLACEHOLDER.",
+			"text": "$(thing)Дикі примарні перці$() ростуть між Y=158 and Y=32.",
 			"enable_visualize": false
 		}
 	],

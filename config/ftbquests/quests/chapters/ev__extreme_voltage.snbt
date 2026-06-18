@@ -2343,10 +2343,12 @@
 			id: "38184C7BA01A9B5B"
 			optional: true
 			shape: "circle"
+			subtitle: "{quests.extreme_voltage.btx_loop.subtitle}"
 			tasks: [{
 				id: "2515CD0C40ED29E6"
 				type: "checkmark"
 			}]
+			title: "{quests.extreme_voltage.btx_loop.title}"
 			x: -5.5d
 			y: -7.0d
 		}

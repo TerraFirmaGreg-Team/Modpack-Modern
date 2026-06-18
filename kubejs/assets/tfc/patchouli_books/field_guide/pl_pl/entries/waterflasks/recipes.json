@@ -1,0 +1,41 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Przepisy na bukłak",
+  "category": "tfc:waterflasks",
+  "icon": "waterflasks:leather_flask",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are three tiers of water flasks.$(br)The leather flask holds 5 drinks and lasts for 100 uses.$(br)The iron flask holds 20 drinks, and lasts for 400 uses.$(br)The red steel flask holds 20 drinks, and lasts for ever.$(br)Both leather and iron flasks may be repaired."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/leather_flask",
+      "recipe2": "tfg:shaped/iron_flask"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_leather",
+      "recipe2": "tfg:shaped/repair_iron_bladder",
+      "title": "Przepisy naprawcze"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "waterflasks:crafting/repair_broken_leather",
+      "recipe2": "tfg:shaped/repair_broken_iron",
+      "title": "Przepisy odbudowujące",
+      "text": "Flasks can also be repaired when completely broken."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/red_steel_flask_bladder"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1,
+  "extra_recipe_mappings": {
+    "waterflasks:leather_flask": 1,
+    "waterflasks:iron_flask": 1,
+    "waterflasks:red_steel_flask": 4
+  }
+}

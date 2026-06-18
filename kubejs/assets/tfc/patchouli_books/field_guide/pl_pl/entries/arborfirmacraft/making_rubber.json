@@ -16,19 +16,19 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Sticky Business",
+			"title": "Lepka robota",
 			"item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
 			"text": "$(thing)Sticky Resin$() has a number of uses, thanks to it being well... sticky. It can be used to create multiple items such as $(item)Tape$() which will let you move crates around without dropping what's inside, but more importantly, it can be used to create $(item)Resin Circuit Boards$() and $(item)Resistors$(), which will be some of your first electrical components."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber...",
+			"title": "Jestem gumą...",
 			"text": "The other main use of $(thing)Latex$() is to make rubber. To make the latex stronger and harder for industrial uses, it needs to be heated (either in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()) with added $(thing)Sulfur Powder$() to produce $(thing)Vulcanized Latex$(). In fact, this whole process is called vulcanization!"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Extraction",
+			"title": "Wydobycie",
 			"item": "gtceu:raw_rubber_dust",
 			"text": "Using a $(thing)Extractor$() or $(thing)Vacuum Chamber$(), the $(thing)Vulcanized Latex$() can be dried into $(item)Raw Rubber Pulp$(). This pulp needs to be further treated with $(thing)Sulfur Dust$() in an $(thing)Alloy Smelter$() to create $(thing)Rubber Ingots$()."
 		},

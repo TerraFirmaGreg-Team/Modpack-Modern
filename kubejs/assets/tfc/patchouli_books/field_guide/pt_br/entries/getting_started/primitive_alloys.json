@@ -6,40 +6,40 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "$(thing)Alloys$() are a method of mixing two or more metals together, to create a new, stronger metal. During the early game, while copper is a useful metal for creating tools, the next tier of metal is one of three types of $(thing)Bronze$(). An alloy is made up of component $(thing)metals$() which must each satisfy a specific percentage of the overall whole."
+			"text": "$(thing)Ligas$() são um método de mistura de dois ou mais metais juntos, para criar um novo e mais forte. Durante o começo do jogo, enquanto o cobre é um metal útil para criar ferramentas, o próximo nível de metal é um dos três tipos de $(thing)Bronze$(). Uma liga é composta por $(thing)metais$() constituintes, cada um dos quais deve atingir uma porcentagem específica do todo."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "One method through which alloys can be made during the early game is through the usage of a $(thing)Small Vessel$(). The process is very similar to $(l:getting_started/finding_ores#casting)Casting$(). However, instead of using just a single metal, place enough ore pieces inside the vessel in the correct ratio to form a known alloy mix."
+			"text": "Um método através do qual ligas podem ser feitas durante o começo do jogo é o uso de um $(thing)Vaso Pequeno$(). O processo é muito semelhante a $(l:getting_started/finding_ores#casting)Fundição$(). No entanto, em vez de usar apenas um único metal, coloque peças de minério suficientes dentro do vaso na proporção correta para formar uma mistura de liga conhecida."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "For example, to create 1000 mB of $(thing)Bronze$() (shown to the right), you would need between 700 and 800 mB of $(thing)Copper$(), and between 200 and 300 mB of $(thing)Tin$().$(br2)The next three pages show the recipes of the three bronzes. Each type of bronze can be used to make tools, $(l:mechanics/armor)Armor$(), and other metal items. They are slightly different so resulting tools will have different durability, efficiency, and attack damage."
+			"text": "Por exemplo, para criar 1000 mB de $(thing)Bronze$() (mostrado à direita), você precisaria entre 700 e 800 mB de $(thing)Cobre$() e entre 200 e 300 mB de $(thing)Estanho$().$(br2)As próximas três páginas mostram as receitas dos três bronzes. Cada tipo de bronze pode ser usado para fazer ferramentas, $(l:mechanics/armor)Armadura$() e outros itens de metal. Eles são um pouco diferentes, portanto as ferramentas resultantes terão diferentes durabilidade, eficiência e danos de ataque."
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bronze_ingot",
 			"title": "Bronze",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Tin$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Estanho$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:bismuth_bronze_ingot",
 			"title": "Bronze de Bismuto",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 30 % : $(thing)Zinc$()$(li)50 - 65 % : $(thing)Copper$()$(li)10 - 20 % : $(thing)Bismuth$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 30 % : $(thing)Zinco$()$(li)50 - 65 % : $(thing)Cobre$()$(li)10 - 20 % : $(thing)Bismuto$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:black_bronze_ingot",
 			"title": "Bronze Negro",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)50 - 70 % : $(thing)Copper$()$(li)10 - 25 % : $(thing)Silver$()$(li)10 - 25 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)50 - 70 % : $(thing)Cobre$()$(li)10 - 25 % : $(thing)Prata$()$(li)10 - 25 % : $(thing)Ouro$()$(br2)"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Other alloys are not suitable for creating tools. These are $(thing)Brass$(), $(thing)Rose Gold$(), and $(thing)Sterling Silver$().$(br2)$(thing)Brass$() is a useful alloy for all sorts of contraptions, including $(l:mechanics/mechanical_power)Mechanical Power$().$(br2)$(thing)Rose Gold$() and $(thing)Sterling Silver$() are used for crafting $(l:mechanics/steel#red_steel)Red Steel$() and $(l:mechanics/steel#blue_steel)Blue Steel$().",
+			"text": "Outras ligas não são adequadas para a criação de ferramentas. Estas são $(thing)Latão$(), $(thing)Ouro Rosé$() e $(thing)Prata Esterlina$().$(br2)$(thing)Latão$() é uma liga útil para todos os tipos de engenhocas, incluindo $(l:mechanics/mechanical_power)Energia Mecânica$().$(br2)$(thing)Ouro Rosé$() e $(thing)Prata Esterlina$() são usados para fabricar $(l:mechanics/steel#red_steel)Aço Rubro$() e $(l:mechanics/steel#blue_steel)Aço Azul$().",
 			"title": "Ligas de Utilidade"
 		},
 		{
@@ -48,21 +48,21 @@
 			"item": "create:brass_ingot",
 			"title": "Latão",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)70 - 80 % : $(thing)Copper$()$(li)20 - 30 % : $(thing)Zinc$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)70 - 80 % : $(thing)Cobre$()$(li)20 - 30 % : $(thing)Zinco$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rose_gold_ingot",
 			"title": "Ouro Rosa",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)15 - 30 % : $(thing)Copper$()$(li)70 - 85 % : $(thing)Gold$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)15 - 30 % : $(thing)Cobre$()$(li)70 - 85 % : $(thing)Ouro$()$(br2)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:sterling_silver_ingot",
-			"title": "Prata de Lei",
+			"title": "Prata Esterlina",
 			"link_recipes": false,
-			"text": "$(br)$(bold)Requirements:$()$(br)$(li)20 - 40 % : $(thing)Copper$()$(li)60 - 80 % : $(thing)Silver$()$(br2)"
+			"text": "$(br)$(bold)Requisitos:$()$(br)$(li)20 - 40 % : $(thing)Cobre$()$(li)60 - 80 % : $(thing)Prata$()$(br2)"
 		}
 	],
 	"read_by_default": true,

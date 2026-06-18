@@ -111,7 +111,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xe6fafb)
 		.secondaryColor(0xb5fdff)
-		.iconSet(GTMaterialIconSet.getByName('thick_fluid'))
+		//.iconSet(GTMaterialIconSet.getByName('thick_fluid'))
 
 	event.create('martian_sludge')
 		.liquid(new GTFluidBuilder())
@@ -119,7 +119,7 @@ const registerTFGNuclearMaterials = (event) => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 		.color(0xd86f27)
 		.secondaryColor(0xecd7c9)
-		.iconSet(GTMaterialIconSet.getByName('bullshit'))
+		//.iconSet(GTMaterialIconSet.getByName('bullshit'))
 
 	event.create('dioxygen_difluoride')
 		.liquid(new GTFluidBuilder().temperature(110).attribute(GTFluidAttributes.ACID))

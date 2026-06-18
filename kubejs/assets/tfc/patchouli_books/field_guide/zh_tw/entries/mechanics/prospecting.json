@@ -1,77 +1,77 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Prospecting",
+  "name": "探礦",
   "category": "tfc:mechanics",
   "icon": "tfc:metal/propick/wrought_iron",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)small metal nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/earth_ore_index)ores and minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+      "text": "你還記得在哪撿到那些$(l:getting_started/finding_ores)小礦粒$()，對吧？尋找礦石需要花費大量精力來勘探與開採。現在，你應該閱讀$(l:tfg_ores/earth_ore_index)地球礦物索引$()章節。你得知道要尋找特定礦石需要找到它生成的岩脈類型——不論在你腳下或是橫跨世界。"
     },
     {
       "type": "patchouli:text",
-      "text": "When picking up small nuggets becomes unsatisfying, it is time to start prospecting to find ore veins:$(br)$(li)Small nuggets, surface buds, and surface rocks occur when an ore vein is located below. If you find the center of a group of nuggets, it's likely that the vein is beneath you.$(li)Exposed ore can occur in cliffs and water bodies, which may be seen from farther away."
+      "text": "當單靠小礦粒已不能滿足發展需求時，是時候開始考慮勘礦了。$(br)$(li)小礦粒、表面芽、地表岩石只會在下方有礦脈時才會出現。當地表散佈著一片礦粒時這表示有礦脈就在你的腳下。$(li)有時礦石也會裸露在斷斷崖或水底，這類礦脈遠遠地就可以看到。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "propick",
       "item": "tfc:metal/propick/copper",
-      "title": "Prospector's Pick",
+      "title": "探礦鎬",
       "link_recipes": false,
-      "text": "If you're looking for ore veins, and you can't find the vein by guessing, it's time to pull out the $(item)prospector's pick$(). If you are familiar with base prospector's picks in $(thing)TFC$() you may be suprised to learn that they function very differently in $(thing)TerraFirmaGreg$()"
+      "text": "當試著尋找礦脈且靠推測無法找到礦脈時，是時候拿出$(item)探礦鎬$()了。若你熟悉$(thing)群巒傳說$()裡的基礎探礦鎬，你可能會驚訝地發現探礦鎬在$(thing)群巒格雷$()的功能截然不同"
     },
     {
       "type": "patchouli:text",
-      "text": "Right-clicking a prospector's pick in $(thing)TFG$() will cast a search ray in your views direction. The rays width and depth is dependent on the tier of the pick noted in its tooltips. Depending on the tier of the prospector's pick can also give you a count of the ore quantities and even display an $(thing)X-Ray$() indicator of the ore vein."
+      "text": "$(thing)群巒格雷$()右鍵探礦鎬時，會沿著視線方向投射一道探測波。波的寬度與深度取決於鎬的等級。不同等級的探礦鎬還能提供礦石統計數據，甚至顯示礦脈的$(thing)震波斷層顯像$()。"
     },
     {
       "type": "patchouli:text",
-      "text": "The prospector's pick can display the following information on use:$(br)$(li)In chat the pick can display the $(thing)total quantity$() of the ore vein, the $(thing)contents$() of the ore vein, and the $(thing)quantity per ore-type$() of the ore vein.$(li)$(thing)colored steel$() prospector's picks can also display either a large X-Ray particle in the $(thing)center$() of an ore vein, or $(thing)paricle's per ore block$()"
+      "text": "探礦鎬會在聊天框顯示訊息：$(br)$(li)礦脈的$(thing)總礦量$()、$(thing)礦石種類$()以及各礦石的$(thing)個別數量$()$(li)$(thing)有色鋼$()探礦鎬還會在$(thing)礦脈中心$()顯示大型斷層顯像粒子，或生成每個礦石的$(thing)定位粒子$()"
     },
     {
       "type": "patchouli:image",
-      "title": "Prospector View",
+      "title": "探礦視角",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_prospectors_pick_xray.png"
       ],
       "border": true,
-      "text": "Using a prospector's pick looks like this. The large $(bold)\"!\"$() mark particle is from per-vein style x-ray. And the smaller ones are from per-block style x-ray."
+      "text": "探礦鎬效果如圖所示。大$(bold)\"!\"$()標識粒子為全礦脈顯像，小粒子則為各礦石顯像。"
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
+      "text": "製作探礦鎬可以用黏土按上圖$(l:getting_started/pottery)捏製$()成未燒製的探礦鎬頭模具。"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(item)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
+      "text": "黏土$(l:getting_started/pottery)捏製()後需要$(l:mechanics/heating)燒製$()才能做成$(item)探礦鎬模具$()。$(br2)將液態金屬倒入燒製好的模具就能$(l:getting_started/finding_ores#casting)鑄造$()出探礦鎬。"
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "A prospector's pick head can also be $(l:mechanics/anvils#working)smithed$() out of an $(item)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The prospector's pick is then created by crafting the tool head with a stick."
+      "text": "探礦鎬頭也能用$(l:mechanics/anvils)砧$()使用製造工具的金屬$(item)錠$()$(l:mechanics/anvils#working)鍛造$()而成。$(br2)最後用木棍與工具頭合成就能做出探礦鎬。"
     },
     {
       "type": "patchouli:text",
-      "text": "The majority of the stats and charecteristics of the prospector's picks can be adjustable in your server config file."
+      "text": "探礦鎬大部分數據和特性都可以在伺服器配置文件中進行調整。"
     },
     {
       "type": "patchouli:spotlight",
       "anchor": "prospector",
       "item": "gtceu:prospector.lv",
-      "title": "Digital Ore Prospector's",
+      "title": "數位礦石探測",
       "link_recipes": false,
-      "text": "Technology is now! And with it comes new ways to find your ore veins!$(br)$(item)Ore Prospector's$() are $(thing)GregTech's$() solution to finding ore veins and fluid deposits in your world. The size and capabilities of the ore prospectors are determined by the $(#ff1100)voltage tier$()."
+      "text": "科技时代已然來臨！随之而來的是探尋礦脈的全新方式！$(br)$(item)探礦儀$()是$(thing)格雷科技$()提供的礦脈與流體礦藏的探勘方案。其探測範圍與功能由$(#ff1100)電壓等級$()決定。"
     },
     {
       "type": "patchouli:image",
-      "title": "Ore Prospector",
+      "title": "探礦儀",
       "images": [
-      "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
+        "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
-      "text": "An example of what you may see using the $(#e373ff)LuV ore prospector$()."
+      "text": "這是使用$(#e373ff)LuV 探礦儀$()時會看到的一個例子。"
     }
   ],
   "read_by_default": true,

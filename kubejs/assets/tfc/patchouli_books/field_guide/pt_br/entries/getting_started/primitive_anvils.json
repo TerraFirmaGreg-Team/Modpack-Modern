@@ -15,7 +15,7 @@
     {
       "type": "patchouli:text",
       "anchor": "stone_anvils",
-      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
+      "text": "Você também precisará de qualquer material de $(thing)martelo$(). A fim de fazer a bigorna, simplesmente clique direito na face $(thing)superior$() exposta de um desses blocos de pedra bruta com seu $(thing)martelo$() e voilà! Uma bigorna será formada.$(br2)Bigornas têm $(l:mechanics/anvils#tiers)níveis$() e a bigorna de rocha é  nível 0 - o nível mais baixo. Só é capaz de $(l:getting_started/primitive_anvils#welding)soldar$() lingotes de nível 1.",
       "title": "Bigorna de Pedra"
     },
     {
@@ -23,18 +23,18 @@
       "text": "Convertendo a pedra bruta central numa bigorna.",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        " 0 "
-    ],
-    [
-        "RRR"
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              " 0 "
+            ],
+            [
+              "RRR"
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         "tfc:rock_anvil"
       ]
@@ -42,7 +42,7 @@
     {
       "type": "patchouli:text",
       "anchor": "raw_rock",
-      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
+      "text": "Para obter um bloco de rocha bruta sem quebrá-lo em rochas menores, ele precisa ser $(thing)extraído$(). Você deve minerar os blocos dos seis lados de um bloco de pedra bruta - assim que esteja cercada por ar em todos os lados - ela vai cair como um item que pode ser pego.",
       "title": "Obtendo Pedra Bruta"
     },
     {
@@ -50,177 +50,177 @@
       "text": "Minerando todos os seis lados de uma peça de pedra bruta - uma vez completa, o bloco central saltará como um item.",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         }
       ]
     },
     {
       "type": "patchouli:text",
       "anchor": "welding",
-      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "text": "Soldar é um processo através do qual dois itens são fundidos juntos para criar um novo item. Funciona da mesma maneira em uma $(l:getting_started/primitive_anvils)bigorna de pedra$() ou em uma $(l:mechanics/anvils)bigorna de metal$().$(br2)Primeiro, você deve colocar os dois itens que você quer soldar na bigorna. Você pode fazer isso usando os itens na bigorna, ou abrindo a interface da bigorna e inserindo-as nos dois slots mais à esquerda.",
       "title": "Soldagem"
     },
     {
       "type": "patchouli:text",
-      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+      "text": "Você também precisa ter pelo menos um $(l:mechanics/flux)fluxo$() na bigorna para ajudar no processo de soldagem. Então, enquanto ambos os itens estão $(l:mechanics/heating)quentes o suficiente$() para soldar - o textodica vai dizer \"Pode Soldar\" - você deve usar qualquer $(thing)martelo$() na bigorna ou pressionar o botão de solda na interface dela. Você ouvirá um som de martelo e os itens serão soldados juntos."
     }
   ],
   "read_by_default": true,

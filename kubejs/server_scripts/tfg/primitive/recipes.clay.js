@@ -133,6 +133,13 @@ function registerTFGClayRecipes(event) {
 		.duration(100)
 		.EUt(16)
 
+	event.recipes.gtceu.alloy_smelter('tfg:kaolinite_from_blocks')
+		.itemInputs('#tfc:kaolin_blocks')
+		.notConsumable('gtceu:ball_casting_mold')
+		.chancedOutput('tfc:powder/kaolinite', 8000, 0)
+		.duration(400)
+		.EUt(16)
+
 	// Fire Clay
 	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_clay')
 		.itemInputs('#forge:dusts/graphite', '4x tfc:kaolin_clay')
@@ -214,7 +221,29 @@ function registerTFGClayRecipes(event) {
 		.adjacentFluids(["tfc:salt_water", "tfc:spring_water"])
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.LV])
-	
+
+	// Forge hammer clay
+	event.remove({ id: "gtceu:extractor/clay_extraction" })
+
+	event.recipes.gtceu.forge_hammer("clay_unpack")
+		.itemInputs('minecraft:clay')
+		.itemOutputs('4x minecraft:clay_ball')
+		.duration(200)
+		.EUt(6)
+
+	//Hardened Clay
+	event.recipes.firmalife.drying(
+		"tfg:hardened_clay",
+		"minecraft:clay"
+)
+
+	event.recipes.gtceu.extractor(`tfg:gtceu/extractor/hardened_clay`)
+		.itemInputs('minecraft:clay')
+		.outputFluids(Fluid.of('minecraft:water', 250))
+		.itemOutputs('tfg:hardened_clay')
+		.duration(200)
+		.EUt(6)
+
 	// heating
 	event.recipes.tfc.heating('tfg:unfired_rod_mold', 1399)
         .resultItem('tfg:rod_mold')

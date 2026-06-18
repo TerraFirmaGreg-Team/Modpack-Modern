@@ -70,6 +70,14 @@
 			x: -6.0d
 			y: -0.5d
 		}
+		{
+			height: 2.0d
+			image: "ftblibrary:icons/star"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -6.5d
+		}
 	]
 	order_index: 0
 	quest_links: [
@@ -1344,6 +1352,40 @@
 			title: "{quests.ore_proc.gem_slurry.title}"
 			x: -2.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["05A072877CA01773"]
+			description: ["{quests.ore_proc.chromium.desc}"]
+			id: "3AF4B19564593C89"
+			subtitle: "{quests.ore_proc.chromium.subtitle}"
+			tasks: [{
+				id: "240240E069A0954E"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			title: "{quests.ore_proc.chromium.title}"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
+			]
+			id: "2D40F76DFA41D747"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
+			tasks: [{
+				id: "2F96CCD4D97A7651"
+				item: "tfg:ore_processing_beneath"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.5d
 		}
 	]
 	subtitle: ["{quests.ore_proc.subtitle}"]

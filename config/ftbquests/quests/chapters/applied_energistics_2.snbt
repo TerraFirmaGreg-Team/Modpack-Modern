@@ -1346,6 +1346,19 @@
 			x: -0.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["25007C5E43D28DB2"]
+			description: ["{quests.ae2.stock_bridge.desc}"]
+			id: "349620A86711E263"
+			tasks: [{
+				id: "2117A53364A22BA6"
+				item: "createstockbridge:ae_bridge"
+				type: "item"
+			}]
+			title: "{quests.ae2.stock_bridge.title}"
+			x: 5.0d
+			y: -8.0d
+		}
 	]
 	subtitle: ["{quests.ae2.subtitle}"]
 	title: "{quests.ae2}"

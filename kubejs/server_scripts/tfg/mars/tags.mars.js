@@ -10,13 +10,6 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfg:martian_eggs', 'tfg:wraptor_egg')
 	event.add('forge:eggs', '#tfg:martian_eggs')
 	event.add('firmalife:foods/raw_eggs', '#tfg:martian_eggs')
-
-	event.add('tfg:martian_herbivore_foods', 'betterend:amber_root_product')
-	event.add('tfg:martian_herbivore_foods', 'betterend:blossom_berry_product')
-	event.add('tfg:martian_herbivore_foods', 'betterend:chorus_mushroom_product')
-	event.add('tfg:martian_herbivore_foods', 'betterend:shadow_berry_product')
-	event.add('tfg:martian_herbivore_foods', 'betterend:bolux_mushroom_product')
-	event.add('tfg:martian_herbivore_foods', 'betterend:cave_pumpkin_chunks')
 	
 	event.add('tfg:martian_piscivore_foods', '#firmalife:foods/raw_fish')
 
@@ -34,54 +27,6 @@ function registerTFGMarsItemTags(event) {
 	event.add('tfc:makes_tannin', '#ad_astra:glacian_logs')
 	event.add('tfc:makes_tannin', '#tfc:crimson_logs')
 	event.add('tfc:makes_tannin', '#tfc:warped_logs')
-
-	// Crops
-	event.add('forge:seeds', 'betterend:amber_root_seeds')
-	event.add('forge:seeds', 'betterend:blossom_berry_seeds')
-	event.add('forge:seeds', 'betterend:bolux_mushroom_seeds')
-	event.add('forge:seeds', 'betterend:chorus_mushroom_seeds')
-	event.add('forge:seeds', 'betterend:cave_pumpkin_plant_seeds')
-	event.add('forge:seeds', 'betterend:shadow_berry_seeds')
-	event.add('tfc:seeds', 'betterend:amber_root_seeds')
-	event.add('tfc:seeds', 'betterend:blossom_berry_seeds')
-	event.add('tfc:seeds', 'betterend:bolux_mushroom_seeds')
-	event.add('tfc:seeds', 'betterend:chorus_mushroom_seeds')
-	event.add('tfc:seeds', 'betterend:cave_pumpkin_plant_seeds')
-	event.add('tfc:seeds', 'betterend:shadow_berry_seeds')
-
-	event.add('tfc:foods', 'betterend:amber_root_product')
-	event.add('tfc:foods/grains', 'betterend:amber_root_product')
-
-	event.add('tfc:foods', 'betterend:blossom_berry_product')
-	event.add('tfc:foods/fruits', 'betterend:blossom_berry_product')
-
-	event.add('tfc:foods', 'betterend:bolux_mushroom_product')
-	event.add('tfc:foods/vegetables', 'betterend:bolux_mushroom_product')
-	event.add('forge:mushrooms', 'betterend:bolux_mushroom_product')
-	event.add('tfc:foods', 'betterend:bolux_mushroom_cooked')
-	event.add('tfc:foods/vegetables', 'betterend:bolux_mushroom_cooked')
-	event.add('forge:mushrooms', 'betterend:bolux_mushroom_cooked')
-
-	event.add('tfc:foods', 'betterend:cave_pumpkin')
-	event.add('tfc:foods', 'betterend:cave_pumpkin_chunks')
-	event.add('tfc:foods/fruits', 'betterend:cave_pumpkin_chunks')
-	event.add('tfc:foods', 'betterend:cave_pumpkin_pie_dough')
-	event.add('tfc:foods', 'betterend:cave_pumpkin_pie_raw')
-	event.add('tfc:foods', 'betterend:cave_pumpkin_pie')
-	event.add('firmalife:foods/washable', 'betterend:cave_pumpkin_pie_raw')
-	event.add('firmalife:foods/washable', 'betterend:cave_pumpkin_pie')
-
-	event.add('tfc:foods', 'betterend:chorus_mushroom_product')
-	event.add('tfc:foods/vegetables', 'betterend:chorus_mushroom_product')
-	event.add('forge:mushrooms', 'betterend:chorus_mushroom_product')
-	event.add('tfc:foods', 'betterend:chorus_mushroom_cooked')
-	event.add('tfc:foods/vegetables', 'betterend:chorus_mushroom_cooked')
-	event.add('forge:mushrooms', 'betterend:chorus_mushroom_cooked')
-
-	event.add('tfc:foods', 'betterend:shadow_berry_product')
-	event.add('tfc:foods/fruits', 'betterend:shadow_berry_product')
-	event.add('tfc:foods', 'betterend:shadow_berry_cooked')
-	event.add('tfc:foods/fruits', 'betterend:shadow_berry_cooked')
 
 	event.add('forge:mushrooms', 'betterend:flammalix')
 	event.add('forge:mushrooms', 'betterend:small_amaranita_mushroom')
@@ -199,6 +144,10 @@ function registerTFGMarsBlockTags(event) {
 	event.add('tfg:mars_soil', 'tfg:grass/rusticus_kaolin_mycelium')
 	event.add('tfg:mars_soil', 'tfg:grass/sangnum_kaolin_mycelium')
 
+	event.add('tfc:kaolin_clay', 'tfg:grass/amber_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/rusticus_kaolin_mycelium')
+	event.add('tfc:kaolin_clay', 'tfg:grass/sangnum_kaolin_mycelium')
+
 	event.add('ad_astra:mars_stone_replaceables', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_soil')
 	event.add('minecraft:animals_spawnable_on', '#tfg:mars_plants')
@@ -249,7 +198,6 @@ function registerTFGMarsBlockTags(event) {
 	event.remove('minecraft:flowers', 'minecraft:pitcher_plant')
 	event.remove('minecraft:flowers', 'minecraft:torchflower')
 
-	event.add('tfg:decorative_plant_attachable', '#minecraft:logs')
 	event.add('tfg:decorative_plant_attachable', 'minecraft:mushroom_stem')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_mushroom_block')
 	event.add('tfg:decorative_plant_attachable', 'species:alphacene_moss_block')

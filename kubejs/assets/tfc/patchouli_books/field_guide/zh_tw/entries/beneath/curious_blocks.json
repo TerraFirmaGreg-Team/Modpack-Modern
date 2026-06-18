@@ -6,13 +6,13 @@
 		{
 			"type": "patchouli:crafting",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "beneath:crafting/blackstone_aqueduct",
-			"text": "輝石岩引水道可以輸送熔岩至任何距離。"
+			"recipe": "tfg:shaped/blackstone_aqueduct",
+			"text": "引水橋用於遠距離輸送岩漿，在建造$(l:beneath/hellforge)地輿熔爐$()時會很有用。\n"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks_from_soot",
-			"text": "地獄磚是一種建築磚塊，也可用於地獄熔爐。"
+			"recipe": "tfg:shapeless/hellbricks",
+			"text": "地獄磚是一種建築磚塊，也可用於$(l:beneath/hellforge)地獄熔爐$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "beneath:crafting/blackstone_brick",
+			"recipe": "tfg:shaped/blackstone_brick_to_bricks",
 			"text": "片麻岩和輝石岩磚的製作方式與普通磚塊相同，包含需要先製作磚塊本身。"
 		}
 	],

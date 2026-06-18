@@ -88,7 +88,7 @@ function processIngotDouble(event, material) {
 	const doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 	addMaterialRecycling(event, doubleIngotItem, material, "double_ingot", TFGTagPrefix.ingotDouble);
-	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1);
+	addMaterialWelding(event, doubleIngotItem, ingotItem, ingotItem, material, 5, 1, TFGTagPrefix.ingotDouble, 1);
 
 	event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot_electric_only`)
 		.itemInputs(ingotItem.withCount(2))
@@ -214,7 +214,7 @@ function processPlateDouble(event, material) {
 	if (material === GTMaterials.Aluminium)
 		tier = 1;
 
-	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier);
+	addMaterialWelding(event, doublePlateItem, plateItem, plateItem, material, 4, tier, TagPrefix.plateDouble, 0);
 }
 
 /**
@@ -275,7 +275,7 @@ function processRod(event, material) {
 		addTFCMelting(event, longRodItem, material, 144, 'long_rod');
 	}
 
-	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1);
+	addMaterialWelding(event, longRodItem, shortRodItem, shortRodItem, material, 4, 1, TagPrefix.rodLong, 0);
 }
 
 
@@ -361,7 +361,7 @@ function processLamp(event, material) {
 	const materialName = material.getName();
 
 	// Unfinished lamp
-	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 1]);
+	TFGHelpers.registerMaterialInfo(finishedLampItem, [material, 1, GTMaterials.Glass, 0.25]);
 	addTFCMelting(event, finishedLampItem, material, 144, 'lamp');
 
 	addMaterialRecycling(event, unfinishedLampItem, material, 'unfinished_lamp', TFGTagPrefix.lampUnfinished);
@@ -376,7 +376,7 @@ function processLamp(event, material) {
 
 	event.recipes.gtceu.fluid_solidifier(`tfg:${materialName}_lamp_from_liquid`)
 		.itemInputs(unfinishedLampItem)
-		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 144))
+		.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 36))
 		.itemOutputs(finishedLampItem)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
@@ -567,6 +567,6 @@ function processLargeGear(event, material) {
 		addTFCMelting(event, gearItem, material, 144 * 4, 'gear');
 		
 		let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1);
+		addMaterialWelding(event, gearItem, doublePlateItem, doublePlateItem, material, 4, 1, TagPrefix.gear, 1);
 	}
 }

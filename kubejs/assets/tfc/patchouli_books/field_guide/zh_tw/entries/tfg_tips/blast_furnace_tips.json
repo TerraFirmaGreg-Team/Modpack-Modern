@@ -32,7 +32,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "使用$(item)泵$()從高爐中抽出液體。將液體泵入$(l:tfc:tfcchannelcasting/channel_casting)鑄模台$()，再用漏斗或滑道取出錠：輕鬆實現自動化！$(br2)也可以使用$(item)機械手$()自動操作風箱！但請小心，頻繁操作風箱會消耗更多燃料並使$(thing)鼓風口$()更快損壞。$(br2)你可以用$(thing)鍛造錘$()或$(thing)長柄錘(Helve Hammer)$()處理$(item)生鐵$()與$(item)高碳鋼$()。"
+			"text": "你可以使用機械動力$(item)動力泵$()從高爐泵出液體。將液體泵入$(l:tfc:tfcchannelcasting/channel_casting)鑄模台$()，再用漏斗或滑槽取出錠：輕鬆實現自動化！$(br2)也能用$(item)機械手$()將風箱自動化！但要注意頻繁操作風箱會消耗更多燃料並使$(thing)鼓風口$()更快損壞。$(br2)你可以用$(thing)鍛造錘$()或$(thing)動力鍛造錘$()$(item)生鐵$()與$(item)高碳鋼$()。"
 		},
 		{
 			"type": "patchouli:text",

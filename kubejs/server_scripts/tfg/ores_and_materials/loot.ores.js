@@ -8,7 +8,6 @@ const registerTFGOreLoots = (event) => {
 
 	forEachMaterial(material => {
 		if (material.hasProperty(PropertyKey.ORE)) {
-
 			// Indicator buds
 			if (material.hasProperty(PropertyKey.GEM)) {
 				let bud = ChemicalHelper.get(TFGTagPrefix.budIndicator, material, 1).getItem().id;
@@ -22,8 +21,8 @@ const registerTFGOreLoots = (event) => {
 					.addLoot(ChemicalHelper.get(TagPrefix.gemChipped, material, 1));
 			}
 
-			// Special case for coal and lignite
-			if (material === GTMaterials.Coal || material === GTMaterials.get('lignite')) {
+			// Special case for coals
+			if (material === GTMaterials.Coal || material === GTMaterials.get('lignite') || material === GTMaterials.get('anthracite')) {
 				let rawOreBlock = ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem().id;
 				let rawOre = ChemicalHelper.get(TagPrefix.gem, material, 1)
 				event.addBlockLootModifier(rawOreBlock)
@@ -41,7 +40,8 @@ const registerTFGOreLoots = (event) => {
 					event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 						.removeLoot(Ingredient.all)
 						.addLoot(rawOre)
-						.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
+						.addLoot(LootEntry.of(stoneTypeDust)
+							.when(c => c.randomChance(0.2)))
 						.addLoot(LootEntry.of(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Coal, 1))
 							.when(c => c.randomChance(0.05)));
 				})
@@ -58,9 +58,9 @@ const registerTFGOreLoots = (event) => {
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addWeightedLoot([4, 6], [
-					richRawOre.withChance(0.2),
-					normalRawOre.withChance(0.6),
-					poorRawOre.withChance(0.2)
+					richRawOre.withChance(20),
+					normalRawOre.withChance(60),
+					poorRawOre.withChance(20)
 				])
 				.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.2)));
 
@@ -75,9 +75,9 @@ const registerTFGOreLoots = (event) => {
 				event.addBlockLootModifier(`${namespace}:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
 					.addWeightedLoot([
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
+						richRawOre.withChance(20),
+						normalRawOre.withChance(60),
+						poorRawOre.withChance(20)
 					])
 					.addLoot(LootEntry.of(stoneTypeDust).when(c => c.randomChance(0.2)))
 					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));
@@ -88,9 +88,9 @@ const registerTFGOreLoots = (event) => {
 				event.addBlockLootModifier(`gtceu:${sandType}_sand_${material.getName()}_ore`)
 					.removeLoot(Ingredient.all)
 					.addWeightedLoot([
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
+						richRawOre.withChance(20),
+						normalRawOre.withChance(60),
+						poorRawOre.withChance(20)
 					])
 					.addLoot(LootEntry.of(`tfc:sand/${sandType}`).when(c => c.randomChance(0.2)))
 					.addLoot(LootEntry.of(tinyDustOre).when(c => c.randomChance(0.05)));

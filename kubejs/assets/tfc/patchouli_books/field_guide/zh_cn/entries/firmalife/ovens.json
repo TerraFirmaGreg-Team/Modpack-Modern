@@ -1,0 +1,138 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "烤炉",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:cured_oven_top",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(thing)烤炉$()是一种能大量烹饪食物并延长其保质期的绝佳方式。烤炉烘烤的食物腐败速度仅为普通食物的90%。烤炉是一种多方块结构，由$(thing)烤炉底$()、$(thing)烤炉顶$()以及可选的$(thing)烤炉烟囱$()组成。这些方块最初是黏土状态，必须通过将其温度提升到一定程度并保持足够长的时间来$(thing)硬化$()。$(br) $(l:firmalife/oven_appliances)烤炉配件$()可以扩展烤炉的功能。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_top",
+      "text": "烤炉顶的合成配方。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_bottom",
+      "text": "烤炉底的合成配方。"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "firmalife:clay_knapping/oven_chimney",
+      "text": "烤炉烟囱的合成配方。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bricks",
+      "text": "烤炉可以用$(thing)砖块$()、其他烤炉方块或任何能为木炭炉保温的方块进行包裹。这意味着你也可以使用石块，如果你愿意的话！"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfchotornot:crafting/tongs/wood",
+      "text": "$(thing)木钳子$()是一种从烤炉中取出炙热物品的安全方式。手持木钳子对烤炉$(item)$(k:key.use)$()即可取出物品。否则你会被烫伤！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤炉首先由烤炉底和上方的烤炉顶构成。然后，每个烤炉方块除正面外的所有侧面都应覆盖上隔热方块，如前文所述。你可以选择使用$(thing)烤炉烟囱$()作为隔热材料。在烤炉正后方堆叠烟囱，可以让炉内的烟雾向上排出。如果不这样做，烟雾会很快充满你的屋子，非常烦人！"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "烤炉的一个示例，包括未硬化的和硬化的。",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:cured_oven_top[facing=north]",
+            "T": "firmalife:cured_oven_top[facing=north]",
+            "B": "firmalife:cured_oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:cured_oven_chimney"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "     ",
+              "  C  "
+            ],
+            [
+              "WT0TW",
+              "WWCWW"
+            ],
+            [
+              "WBBBW",
+              "WWCWW"
+            ]
+          ],
+          "mapping": {
+            "0": "firmalife:oven_top[facing=north]",
+            "T": "firmalife:oven_top[facing=north]",
+            "B": "firmalife:oven_bottom[facing=north]",
+            "W": "minecraft:bricks",
+            "C": "firmalife:oven_chimney"
+          }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤炉底用来放置燃料，且只能使用原木。按下$(item)$(k:key.use)$()可以添加或取出原木。烤炉底也是烤炉的一部分，可以用$(thing)起火器$()或其他工具点燃。它把热量传递到上方的烤炉顶。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤炉顶用来容纳被烹饪的食物。它会从烤炉底汲取热量，并随时间缓慢释放。这意味着即使你的燃料耗尽，烤炉顶也能继续工作一小段时间。向其中添加物品只需按下$(item)$(k:key.use)$()。记住，之后要用$(thing)木钳子$()取出物品。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "硬化烤炉方块很简单，但需要耐心。只需正常地点燃你的烤炉底，然后等待就可以了。如果一个烤炉方块在超过600度的温度下保持约80秒，它就会硬化自身及其周围的任何烤炉方块。硬化效果会一直向上传导到烟囱。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oven_insulation",
+      "text": "为你的烤炉底合成烤炉隔热层，可以让你无需再在其侧面和背面进行隔热。但这并不免除对烟囱的需求。按$(item)$(k:key.use)$()来应用它。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/brick_countertop",
+      "text": "台面是装饰性方块，可以算作烤炉隔热层，且外观与烤炉方块相匹配。它们是你厨房装饰的绝佳选择。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "烤炉还有$(thing)装饰面$()，可用于改变其外观。这些饰面应用于烤炉的基本砖块（或砖块本身），并且是装饰性的。不同的饰面可以混合搭配。按$(item)$(k:key.use)$()就可以应用它们。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/rustic_finish",
+      "recipe2": "firmalife:crafting/stone_finish"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/tile_finish"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 14
+}

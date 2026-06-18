@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfc:crafting/stone/hoe_sedimentary",
+			"recipe": "gtceu:shaped/hoe_stone",
 			"text": "Une fois la tête de houe taillée, elle peut être transformée en Houe.$(br2)Les houes fonctionnent comme en Vanilla, en faisant un clic droit sur un bloc de terre pour le transformer en $(thing)Terre labourée$().  Elle peuvent auss être utilisée pour convertir de la $(thing)Terre racineuse$() en $(thing)Terre$()."
 		},
 		{
@@ -3307,7 +3307,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"anchor": "tournesol",
+			"anchor": "sunflower",
 			"text": "$(bold)$(l:the_world/climate#temperature)Température$() : 5 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydratation$() : 20 - 80 %$(br)$(bold)Nutrmient$(): Azote$(br2)Le tournesol est une culture de deux blocs de haut. Des graines de tournesol peuvent être plantées dans de la terre labourée, grandissent jusqu'à deux blocs de haut et produisent des $(thing)Têtes de tournesol$() qui peuvent être transformées en $(thing)Huile de graines$(). Celle-ci peut être utilisé en tant que carburant pour les Lampes ou pour le $(thing)Biodiesel$() plus tard. Un Tournesol joue aussi le rôle de Fleur pour l'$(l:firmalife/beekeeping)Apiculture$().",
 			"title": "Tournesol"
 		},

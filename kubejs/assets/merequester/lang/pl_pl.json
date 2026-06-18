@@ -1,8 +1,17 @@
 {
+  "block.merequester.requester": "Zlecacz ME",
+  "item.merequester.requester_terminal": "Terminal zlecacza ME",
+  "itemGroup.merequester.tab": "Zlecacz ME",
   "tooltip.merequester.batch": "Wielkość partii",
-  "tooltip.merequester.export": "Eksportowanie ",
+  "tooltip.merequester.enter_to_submit": "Wciśnij %s, żeby zaakceptować",
+  "tooltip.merequester.export": "Eksportowanie",
   "tooltip.merequester.idle": "Bezczynny",
   "tooltip.merequester.link": "Wytwarzanie",
+  "tooltip.merequester.locked": "Zablokowane! Żądanie jest w toku.",
+  "tooltip.merequester.missing": "Brakujące składniki",
+  "tooltip.merequester.shift_for_more": "%s, żeby zobaczyć więcej",
+  "tooltip.merequester.status": "Stan żądania",
   "tooltip.merequester.submit": "Zatwierdź zmiany",
+  "tooltip.merequester.toggle": "Przełącz żądanie",
   "tooltip.merequester.whole_number": "Musi być liczbą całkowitą!"
 }

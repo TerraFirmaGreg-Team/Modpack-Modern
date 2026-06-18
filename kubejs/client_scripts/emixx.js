@@ -143,7 +143,6 @@ const registerSingleGroups = (event) => {
         '#tfcastikorcarts:animal_cart',
 
         // Blocks (Forge)
-        '#forge:fence_gates',
         '#forge:chests',
         '#forge:frames',
         '#forge:surface_rocks',
@@ -165,10 +164,8 @@ const registerSingleGroups = (event) => {
         '#tfc:sluices',
         '#tfc:barrels',
         '#tfc:lecterns',
-        '#tfc:scribing_tables',
         '#tfc:sewing_tables',
         '#tfc:jar_shelves',
-        '#tfc:support_beams',
         '#tfc:minecarts',
         '#tfc:anvils',
         '#tfc:ore_deposits',
@@ -230,7 +227,6 @@ const registerSingleGroups = (event) => {
 
         // Steam n Rails
         '#railways:conductor_caps',
-		'#tfg:incomplete_tracks',
 		'#tfg:locometal_blocks',
         '#tfg:smokestacks',
         '#tfg:train_connectors',
@@ -304,6 +300,14 @@ const registerMultiGroups = (event) => {
             '#forge:normal_restrictive_pipes',
             '#forge:large_restrictive_pipes',
             '#forge:huge_restrictive_pipes'
+        ]},
+        { group_name: 'support_beams', tags: [
+            "#tfc:support_beams",
+            "#beneath:support_beams"
+        ]},
+        { group_name: 'scribing_tables', tags: [
+            '#tfc:scribing_tables',
+            "#beneath:scribing_tables"
         ]}
     ]
 

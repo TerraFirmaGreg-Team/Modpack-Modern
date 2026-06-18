@@ -1,5 +1,5 @@
 {
-	"name": "Mars Mushroom Index",
+	"name": "Indeks marsjańskich grzybów",
 	"category": "tfc:tfg_tips",
 	"icon": "tfg:saplings/aeronos",
 	"read_by_default": true,
@@ -16,7 +16,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Alphacene",
+			"title": "Alfacen",
 			"item": "species:alphacene_mushroom_block",
 			"text": "$(bold)Alphacene Mushroom$()$(br)$(thing)Temperature$(): -85°C and above$(br)Appears both to the East and West."
 		},
@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Warped",
+			"title": "Spaczone",
 			"item": "beneath:wood/log/warped",
 			"text": "$(bold)Warped Mushroom$()$(br)$(thing)Temperature$(): -109 — -13°C$(br)Appears more often to the West."
 		}

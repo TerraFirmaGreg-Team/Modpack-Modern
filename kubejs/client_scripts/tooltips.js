@@ -173,6 +173,33 @@ const registerTooltips = (event) => {
 		text.add(3, Text.translate('tfg.tooltip.machine.heat_battery_3'));
 	})
 
+	event.addAdvanced(['tfg:asphalt_rubble'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_rubble.obtain'))
+		text.add(2, Text.translate('tfg.tooltip.asphalt_rubble.usage'))
+	})
+
+	event.addAdvanced(['tfg:asphalt_road', 'tfg:asphalt_road_slab'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_road.marking'))
+		text.add(2, Text.translate('tfg.tooltip.asphalt_road.solvent'))
+	})
+	event.addAdvanced(['tfg:asphalt_road_hot'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.asphalt_road_hot.hazard'))
+	})
+
+	let roadMaskIds = [
+        "arrow", "corner", "cross", "t", "fill", "double_line",
+		"line", "line_slash_l", "line_slash_r", "line_slash_rl",
+		"slash_l", "slash_r", "slash_rl",
+        "num_0", "num_1", "num_2", "num_3", "num_4",
+        "num_5", "num_6", "num_7", "num_8", "num_9",
+        "number"
+    ];
+	roadMaskIds.forEach(mask => {
+		event.addAdvanced([`tfg:asphalt_road_stencil_${mask}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.asphalt_road_stencil.usage'))
+		})
+	})
+
 	//#endregion
 	
 	event.addAdvanced(['tfg:grow_light'], (item, advanced, text) => {
@@ -226,7 +253,6 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings', 'minecraft:netherite_boots'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.netherite_diving_suit_warmth'));
 		text.add(2, Text.translate('tfg.tooltip.armor.netherite_diving_suit_insulation'));
-		text.add(3, Text.translate('tfg.tooltip.armor.netherite_diving_suit_set'));
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:advanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.armor.nanomuscle_warmth'));
@@ -250,6 +276,14 @@ const registerTooltips = (event) => {
 		text.add(2, Text.translate('tfg.tooltip.armor.space_suit_insulation'));
 		text.add(3, Text.translate('tfg.tooltip.armor.space_suit_set'));
 	})
+	event.addAdvanced(['sns:blue_steel_toe_hiking_boots'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.armor.blue_steel_toe_hiking_boots_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.blue_steel_toe_hiking_boots_insulation'));
+	})
+	event.addAdvanced(['sns:red_steel_toe_hiking_boots'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.armor.red_steel_toe_hiking_boots_warmth'));
+		text.add(2, Text.translate('tfg.tooltip.armor.red_steel_toe_hiking_boots_insulation'));
+	})
 
 	// Supports
 	global.TFC_WOOD_TYPES.forEach(wood => {
@@ -262,8 +296,23 @@ const registerTooltips = (event) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
+	global.BENEATH_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`beneath:wood/support/${wood}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
 	global.AD_ASTRA_WOOD.forEach(wood => {
 		event.addAdvanced([`tfg:${wood.name}_support`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
+	global.WAB_WOOD.forEach(wood => {
+		event.addAdvanced([`tfg:wood/support/${wood.name}`], (item, advanced, text) => {
+			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+		})
+	})
+	global.TFG_NEW_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`tfg:wood/support/${wood.name}`], (item, advanced, text) => {
 			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 		})
 	})
@@ -273,14 +322,13 @@ const registerTooltips = (event) => {
 	event.addAdvanced(['tfg:reinforced_light_concrete_support', 'tfg:reinforced_dark_concrete_support', 'tfg:steel_support'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.support.tier3'))
 	})
-	const other_stone = ['migmatite', 'pyroxenite', 'travertine', 'keratophyre', 'anorthosite', 'norite', 'argillite', 'trachyte', 'komatiite', 'phonolite', 'permafrost', 'red_granite', 'stone']
-	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
-
-	stone_types.forEach(stone => {
-		event.addAdvanced([`tfg:${stone}_support`], (item, advanced, text) => {
-			text.add(1, Text.translate('tfg.tooltip.support.tier1'))
-		})
-	})
+	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
+		if (rock.support) {
+			event.addAdvanced([rock.support], (item, advanced, text) => {
+				text.add(1, Text.translate('tfg.tooltip.support.tier1'))
+			})
+		}
+	}
 
 	// Solar Panel
 	event.addAdvanced(['ad_astra:solar_panel'], (item, advanced, text) => {
@@ -442,16 +490,9 @@ const registerTooltips = (event) => {
 
 	//#endregion
 
-	event.addAdvanced(['tfg:food/slice_of_cheese'], (item, advanced, text) => {
-		if (!event.isShift()) {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info_listener"))
-		} else {
-			text.add(1, Text.translate("tfg.tooltip.fake_nutrition_info"));
-			text.add(2, Text.translate("tfg.tooltip.cheese_slice_microplastics"))
-		};
+	event.addAdvanced(['#tfg:rope_ladders'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.rope_ladders'));
 	});
-
-	//#endregion
 
 	// Wearables
 	event.addAdvanced(['tfg:snorkel'], (item, advanced, text) => {
@@ -466,6 +507,9 @@ const registerTooltips = (event) => {
 	});
 	event.addAdvanced(['tfg:piglin_disguise'], (item, advanced, text) => {
 		text.add(1, Text.translate('tfg.tooltip.piglin_disguise'));
+	});
+	event.addAdvanced(['minecraft:player_head'], (item, advanced, text) => {
+		text.add(1, Text.translate('tfg.tooltip.player_head'));
 	});
 
 	// AE2
@@ -493,6 +537,6 @@ const registerTooltips = (event) => {
 				text.remove(keyToRemove);
 				text.add(indexOf, Text.translate("tfg.tooltip.tool_behaviour.silk_ice"));
 			}
-		} catch (e) {}
+		} catch (e) {/** */}
 	})
 }

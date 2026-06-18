@@ -16,7 +16,7 @@
 			"type": "patchouli:text",
 			"anchor": "predators",
 			"text": "$(thing)Predators$() are animals that can attack the player. They are either $(thing)Nocturnal$(), only hunting at night, or $(thing)Diurnal$(), only hunting during the day. Predators can be neutral or hostile, depending on if they have killed a target recently. Predators have a home territory that they will defend - if you run far enough away, the predator will stop chasing and return home.",
-			"title": "Predators"
+			"title": "Drapieżniki"
 		},
 		{
 			"type": "patchouli:entity",
@@ -29,7 +29,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:grizzly_bear",
 			"scale": 0.55,
-			"name": "Niedźwiedź szary",
+			"name": "Niedźwiedź grizzly",
 			"text": "The grizzly bear spawns in forests of moderate climates, with a $(l:the_world/climate#temperature)temperature$() range of -15 to 15°C and at least 200mm of $(l:the_world/climate#rainfall)rainfall$()."
 		},
 		{
@@ -78,7 +78,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:wolf",
 			"scale": 0.7,
-			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 150 and 420mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
+			"text": "The wolf spawns at any $(l:the_world/climate#temperature)temperature$() below 22°C, and $(l:the_world/climate#rainfall)rainfall$() between 70 and 480mm. They hunt in packs. Feeding a wolf enough times will tame it into a $(l:mechanics/pets)Dog$()."
 		},
 		{
 			"type": "patchouli:entity",
@@ -109,7 +109,7 @@
 			"type": "patchouli:text",
 			"anchor": "ramming_prey",
 			"text": "$(thing)Ramming$() animals occasionally attempt to charge nearby creatures, including the player. Their attacks are powerful, but can be dodged. They will ram more frequently if attacked.",
-			"title": "Ramming"
+			"title": "Taranowanie"
 		},
 		{
 			"type": "patchouli:entity",
@@ -146,13 +146,13 @@
 			"type": "patchouli:text",
 			"anchor": "prey",
 			"text": "$(thing)Prey$() animals fear players and predators. They are adept at fleeing from danger, but generally cannot fight back. Some prey animals enjoy snacking on crops.",
-			"title": "Prey"
+			"title": "Zwierzyna"
 		},
 		{
 			"type": "patchouli:entity",
 			"entity": "tfc:rabbit",
 			"scale": 0.7,
-			"name": "Króli",
+			"name": "Królik",
 			"text": "The rabbit is known to chew on carrots and cabbage. They are ubiquitous in the world, changing their coat based on climate. They only need 15mm of $(l:the_world/climate#rainfall)rainfall$() to spawn."
 		},
 		{
@@ -333,7 +333,7 @@
 			"type": "patchouli:entity",
 			"entity": "tfc:crayfish",
 			"scale": 0.7,
-			"name": "Langusta",
+			"name": "Rak",
 			"text": "Crayfish are like lobster, but spawn in rivers and lakes. They need a $(l:the_world/climate#temperature)temperature$() of at least 5°C and a $(l:the_world/climate#rainfall)rainfall$() of at least 125mm."
 		},
 		{

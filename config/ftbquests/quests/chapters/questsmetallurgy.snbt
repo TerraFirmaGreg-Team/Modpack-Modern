@@ -14,7 +14,7 @@
 		id: "gtceu:wrought_iron_ingot"
 	}
 	id: "5F560FF28458A555"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "763EE3CC2D320738"
@@ -23,12 +23,6 @@
 			size: 4.0d
 			x: 2.0d
 			y: -26.0d
-		}
-		{
-			id: "118AABC6BC02A7AB"
-			linked_quest: "7B2068B200631D5C"
-			x: 5.0d
-			y: -34.0d
 		}
 		{
 			icon: {
@@ -71,15 +65,56 @@
 			id: "70D405A6CF1B048B"
 			linked_quest: "7178843BCD50A012"
 			shape: "heart"
-			x: 0.5d
-			y: -34.5d
+			x: 0.0d
+			y: -34.0d
 		}
 		{
-			id: "588868A203BF7599"
-			linked_quest: "4CD3F04793CE47A2"
-			shape: "diamond"
+			id: "78422ADEE9AF06B8"
+			linked_quest: "7A200766AAC1EE19"
+			shape: "heart"
+			x: 8.5d
+			y: -35.0d
+		}
+		{
+			id: "572FD8B81A8B7255"
+			linked_quest: "7EE13BE102F323F3"
+			shape: "heart"
+			x: -1.0d
+			y: -35.0d
+		}
+		{
+			id: "4DCF561EF2E78E72"
+			linked_quest: "598CA763D195C84E"
+			shape: "heart"
+			x: 9.5d
+			y: -35.0d
+		}
+		{
+			id: "6D6C9C52263D16F7"
+			linked_quest: "598BD589D3C3057A"
+			shape: "heart"
+			x: 8.5d
+			y: -36.0d
+		}
+		{
+			id: "63ADBF30F2DA2975"
+			linked_quest: "5D7E9840A5A7AD7E"
+			shape: "heart"
+			x: 28.5d
+			y: -32.0d
+		}
+		{
+			id: "222003C6AD2BF8C8"
+			linked_quest: "6702D52922D85C0D"
+			x: -0.5d
+			y: -31.0d
+		}
+		{
+			id: "54DB3BC997AE05F2"
+			linked_quest: "36B64597F76625ED"
+			shape: "heart"
 			x: -2.0d
-			y: -34.5d
+			y: -31.0d
 		}
 	]
 	quests: [
@@ -222,10 +257,7 @@
 			y: -29.5d
 		}
 		{
-			dependencies: [
-				"3C173357029AB649"
-				"7B2068B200631D5C"
-			]
+			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.bloomery.desc}"]
 			guide_page: "tfc:field_guide tfc:mechanics/bloomery"
 			id: "0A92F5C4BB6AF972"
@@ -281,6 +313,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tasktype.item.any} #tfc:tuyeres"
 					type: "item"
 				}
@@ -452,26 +485,86 @@
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.mining.desc}"]
 			guide_page: "tfc:field_guide tfc:tfg_ores/ore_basics"
-			id: "234B68E86F72C29E"
-			subtitle: "{quests.metal_age.mining.subtitle}"
-			tasks: [{
-				id: "42657F198063D88B"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				title: "Any #forge:tools/mining_hammers"
-				type: "item"
-			}]
+				id: "gtceu:bronze_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 3179
+						ToolSpeed: 5.2f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "234B68E86F72C29E"
+			subtitle: "{quests.metal_age.mining.subtitle}"
+			tasks: [
+				{
+					id: "42657F198063D88B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+						}
+					}
+					title: "Any #forge:tools/mining_hammers"
+					type: "item"
+				}
+				{
+					id: "12AEBC829B021ACE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:rope_ladders)"
+						}
+					}
+					optional_task: true
+					title: "Any #tfg:rope_ladders"
+					type: "item"
+				}
+				{
+					id: "4F7AFA82DEF18BBC"
+					item: {
+						Count: 1
+						id: "diggerhelmet:digger_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.metal_age.mining.title}"
 			x: -0.5d
 			y: -32.0d
 		}
 		{
-			dependencies: ["5A936E9BCF30AA3D"]
+			dependencies: [
+				"5A936E9BCF30AA3D"
+				"3A7EAA08E124010D"
+			]
 			dependency_requirement: "one_started"
 			description: ["{quests.metal_age.beneath_kaolin.desc}"]
 			id: "061116CF508D54F6"
@@ -479,13 +572,6 @@
 			shape: "diamond"
 			subtitle: "{quests.metal_age.beneath_kaolin.subtitle}"
 			tasks: [
-				{
-					dimension: "minecraft:the_nether"
-					icon: "minecraft:deepslate"
-					id: "42372A0532A8AEDC"
-					title: "{quests.metal_age.beneath_kaolin.task}"
-					type: "dimension"
-				}
 				{
 					entity: "primitive_creatures:tfc"
 					icon: "primitive_creatures:tfc_spawn_egg"
@@ -727,6 +813,8 @@
 			description: ["{quests.metal_age.bronze_goodies.desc}"]
 			icon: "greate:andesite_alloy_cogwheel"
 			id: "26F07C926959FACF"
+			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.metal_age.bronze_goodies.subtitle}"
 			tasks: [{
 				id: "3AD41F7E9EE1076B"
@@ -770,29 +858,22 @@
 			y: -32.0d
 		}
 		{
-			dependencies: ["5A936E9BCF30AA3D"]
+			dependencies: [
+				"5A936E9BCF30AA3D"
+				"5D0B0B9E61C3DE75"
+			]
 			description: ["{quests.metal_age.beneath_graphite.desc}"]
 			id: "2DB82986FE176CD7"
 			optional: true
 			shape: "diamond"
 			subtitle: "{quests.metal_age.beneath_graphite.subtitle}"
-			tasks: [
-				{
-					dimension: "minecraft:the_nether"
-					icon: "minecraft:deepslate"
-					id: "77162ADDC8732968"
-					title: "{quests.metal_age.beneath_graphite.task}"
-					type: "dimension"
-				}
-				{
-					entity: "primitive_creatures:golem_2"
-					icon: "primitive_creatures:golem_2_spawn_egg"
-					id: "0981F64F296CDDC5"
-					optional_task: true
-					type: "kill"
-					value: 1L
-				}
-			]
+			tasks: [{
+				entity: "primitive_creatures:golem_2"
+				icon: "primitive_creatures:golem_2_spawn_egg"
+				id: "0981F64F296CDDC5"
+				type: "kill"
+				value: 1L
+			}]
 			title: "{quests.metal_age.beneath_graphite.title}"
 			x: 12.0d
 			y: -33.5d
@@ -842,6 +923,7 @@
 			icon: "greate:steel_mechanical_pump"
 			id: "0C9B7745D812555A"
 			shape: "circle"
+			size: 1.5d
 			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
 			tasks: [{
 				id: "3EB7C3AE88950E4B"
@@ -1273,8 +1355,8 @@
 				}
 			]
 			title: "{quests.metal_age.copper_diving.title}"
-			x: -0.5d
-			y: -33.5d
+			x: -1.0d
+			y: -34.0d
 		}
 		{
 			dependencies: ["72B3EA6588E18CCC"]
@@ -1352,15 +1434,386 @@
 			dependencies: ["48A8E3210B2BAE1C"]
 			description: ["{quests.metal_age.crafting_station.desc}"]
 			id: "5B860F2BECC8BC93"
+			optional: true
+			shape: "heart"
 			subtitle: "{quests.metal_age.crafting_station.subtitle}"
 			tasks: [{
-				id: "3F33BC982FF71EA7"
-				item: "craftingstation:crafting_station"
+				id: "313114CA1558DD32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:crafting_stations)"
+					}
+				}
+				title: "Any #tfg:crafting_stations"
 				type: "item"
 			}]
 			title: "{quests.metal_age.crafting_station.title}"
 			x: 4.0d
 			y: -29.5d
+		}
+		{
+			dependencies: ["48A8E3210B2BAE1C"]
+			description: ["{quests.tfg_tips.treetap.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/tree_tapping"
+			id: "0CBA3C295E99D8EA"
+			subtitle: "{quests.tfg_tips.treetap.subtitle}"
+			tasks: [{
+				id: "1ECEBAAF51B53A60"
+				item: "afc:tree_tap"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.treetap.title}"
+			x: -1.5d
+			y: -26.0d
+		}
+		{
+			dependencies: ["0CBA3C295E99D8EA"]
+			description: ["{quests.tfg_tips.find_syrup_tree.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/making_syrups"
+			id: "199BCE58045C287B"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.find_syrup_tree.subtitle}"
+			tasks: [{
+				icon: "tfc:wood/log/maple"
+				id: "04ABF554A826FE47"
+				observe_type: 1
+				timer: 0L
+				title: "{quests.tasktype.lookat} #tfg:syrup_logs"
+				to_observe: "#tfg:syrup_logs"
+				type: "observation"
+			}]
+			title: "{quests.tfg_tips.find_syrup_tree.title}"
+			x: -3.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["0CBA3C295E99D8EA"]
+			description: ["{quests.tfg_tips.find_rosin_tree.desc}"]
+			id: "25E6F7B0D24450ED"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.find_rosin_tree.subtitle}"
+			tasks: [{
+				icon: "tfc:wood/log/white_cedar"
+				id: "311F3B56B6F5B7FE"
+				observe_type: 1
+				timer: 0L
+				title: "{quests.tasktype.lookat} #tfg:rosin_logs"
+				to_observe: "#tfg:rosin_logs"
+				type: "observation"
+			}]
+			title: "{quests.tfg_tips.find_rosin_tree.title}"
+			x: -3.0d
+			y: -27.5d
+		}
+		{
+			dependencies: ["0CBA3C295E99D8EA"]
+			description: ["{quests.tfg_tips.find_latex_tree.desc}"]
+			guide_page: "tfc:field_guide tfc:arborfirmacraft/making_rubber"
+			id: "6E7C02FA5ADAAC23"
+			subtitle: "{quests.tfg_tips.find_latex_tree.subtitle}"
+			tasks: [{
+				id: "707E07E621334EF4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:latex_logs)"
+					}
+				}
+				title: "Any #tfg:latex_logs"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.find_latex_tree.title}"
+			x: -3.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["25E6F7B0D24450ED"]
+			description: ["{quests.tfg_tips.create_conifer_rosin.desc}"]
+			id: "2936976FC773ABE4"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.create_conifer_rosin.subtitle}"
+			tasks: [{
+				id: "796AC0F7746DCA34"
+				item: "tfg:conifer_rosin"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_conifer_rosin.title}"
+			x: -4.5d
+			y: -29.0d
+		}
+		{
+			dependencies: ["199BCE58045C287B"]
+			description: ["{quests.tfg_tips.create_tree_sugar.desc}"]
+			id: "4B1107DBEE8D3001"
+			optional: true
+			shape: "heart"
+			size: 1.0d
+			subtitle: "{quests.tfg_tips.create_tree_sugar.subtitle}"
+			tasks: [{
+				id: "48C600E6FF5B7C6E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(afc:maple_sugar)item(afc:birch_sugar))"
+					}
+				}
+				title: "{quests.tfg_tips.create_tree_sugar.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_tree_sugar.title}"
+			x: -4.5d
+			y: -24.5d
+		}
+		{
+			dependencies: [
+				"6E7C02FA5ADAAC23"
+				"25E6F7B0D24450ED"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.create_sticky_resin.desc}"]
+			id: "031F9DC9BD21FA16"
+			size: 1.0d
+			subtitle: "{quests.tfg_tips.create_sticky_resin.subtitle}"
+			tasks: [{
+				id: "5247370AEB8E24A2"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_sticky_resin.title}"
+			x: -4.5d
+			y: -27.5d
+		}
+		{
+			dependencies: [
+				"5F3063C539C9CBBF"
+				"6E7C02FA5ADAAC23"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
+			id: "34055D52D947FD7A"
+			size: 1.0d
+			subtitle: "{quests.tfg_tips.create_rubber_ingot.subtitle}"
+			tasks: [{
+				id: "097544AEABF80A81"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.create_rubber_ingot.title}"
+			x: -4.5d
+			y: -26.0d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: ["{quests.tfg_tips.rowboat_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/rowboat"
+			icon: "firmaciv:rowboat_icon_only"
+			id: "07400BEB7BC0C58D"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.rowboat_materials.subtitle}"
+			tasks: [
+				{
+					count: 24L
+					disable_toast: true
+					id: "07B8B90BB1E8F79D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(firmaciv:hard_wood)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #firmaciv:hard_wood"
+					type: "item"
+				}
+				{
+					count: 6L
+					disable_toast: true
+					id: "59DC2D8D53804A3D"
+					item: { Count: 6, id: "firmaciv:watercraft_frame_angled" }
+					type: "item"
+				}
+				{
+					count: 24L
+					disable_toast: true
+					id: "5795F49897E12B2F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmaciv:copper_bolt"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					disable_toast: true
+					id: "206B95ED15DCE939"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "alekiships:oarlock"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.rowboat_materials.title}"
+			x: 0.0d
+			y: -35.0d
+		}
+		{
+			dependencies: ["174DA15847665CF8"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.tfg_tips.sloop_under_construction_materials.desc}"]
+			guide_page: "tfc:field_guide tfc:firmaciv/sloop"
+			icon: "firmaciv:sloop_icon_only"
+			id: "1AF194B74265872C"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.sloop_under_construction_materials.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					disable_toast: true
+					id: "40E4043CB7B263F0"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "alekiships:cleat"
+					}
+					type: "item"
+				}
+				{
+					count: 18L
+					disable_toast: true
+					id: "5B80FC8C43BC6F68"
+					item: { Count: 18, id: "firmaciv:watercraft_frame_angled" }
+					type: "item"
+				}
+				{
+					count: 6L
+					disable_toast: true
+					id: "29BE96CDDF3C8B44"
+					item: { Count: 6, id: "firmaciv:watercraft_frame_flat" }
+					type: "item"
+				}
+				{
+					count: 116L
+					disable_toast: true
+					id: "062F37DF890C10F7"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(firmaciv:hard_wood)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #firmaciv:hard_wood"
+					type: "item"
+				}
+				{
+					count: 96L
+					disable_toast: true
+					id: "6E29ED1400EF019F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmaciv:copper_bolt"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					disable_toast: true
+					id: "27D6B7DBAB9E0711"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(afc:wood/lumber/ironwood)item(tfc:wood/lumber/acacia)item(tfc:wood/lumber/ash)item(tfc:wood/lumber/aspen)item(tfc:wood/lumber/birch)item(tfc:wood/lumber/blackwood)item(tfc:wood/lumber/chestnut)item(tfc:wood/lumber/hickory)item(tfc:wood/lumber/maple)item(tfc:wood/lumber/oak)item(tfc:wood/lumber/rosewood)item(tfc:wood/lumber/sycamore)item(afc:wood/lumber/baobab)item(afc:wood/lumber/eucalyptus)item(afc:wood/lumber/mahogany)item(afc:wood/lumber/hevea)item(afc:wood/lumber/teak)item(afc:wood/lumber/ipe)item(beneath:wood/lumber/warped))"
+						}
+					}
+					title: "{quests.tfg_tips.sloop_under_construction_materials.task}"
+					type: "item"
+				}
+				{
+					count: 34L
+					disable_toast: true
+					id: "3C49002EA84E756E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_hardwood)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfg:stripped_hardwood"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "7F08ECD9BBF161F6"
+					item: "firmaciv:medium_triangular_sail"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0FAA8D07FA0988EE"
+					item: "firmaciv:small_triangular_sail"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "52DBA2B7C7FDD175"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "alekiships:anchor"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					disable_toast: true
+					id: "3173F38453E1DD33"
+					item: { Count: 8, id: "firmaciv:rope_coil" }
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.sloop_under_construction_materials.title}"
+			x: 9.5d
+			y: -36.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

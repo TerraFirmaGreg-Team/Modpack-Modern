@@ -1,0 +1,76 @@
+{
+	"name": "Глосарій ефектів істот/гравця",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:splash_potion",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "index",
+			"text": "Цей розділ присвячений опису власних ефектів мобів у $(bold)$(#ff0fb7)TerraFirma$()$()$(bold)$(#595959)Greg$()$().  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cooling)Охолодження$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#warming)Нагрівання$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#quenched)Втамування спраги$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_parasites)Лікування паразитів$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_toxins)Детоксикація$()  \n$(li)$(bold)$(9)$(l:tfg_tips/mob_effects_glossary#cure_microplastics)Фільтрація мікропластику$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#freezing)Замороження$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#blazing)Палаючий$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#instant_radiation)Миттєве випромінювання$()  \n$(li)$(bold)$(c)$(l:tfg_tips/mob_effects_glossary#final_moments)Останні миті$()"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cooling",
+			"text": "$(bold)$(9)Охолодження$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)охолоджує$() тебе до мінімальної температури $(n)5°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "warming",
+			"text": "$(bold)$(9)Зігрівання$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)зігріває$() тебе до максимальної температури $(n)25°C$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quenched",
+			"text": "$(bold)$(9)Втамування спраги$()$(li)Поки активний, цей ефект запобігає природному зниженню $(l:getting_started/food_and_water#thirst)спраги$(). Однак він не запобігає зменшенню показника від ефекту «Спраглий».$()\n"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_parasites",
+			"text": "$(bold)$(9)Знищення паразитів$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#parasites)паразитів$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_toxins",
+			"text": "$(bold)$(9)Детоксикація$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#toxins)токсини$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cure_microplastics",
+			"text": "$(bold)$(9)Фільтрація мікропластику$()$(li)Поки цей ефект активний, він поступово виводить $(l:getting_started/food_and_water#microplastics)мікропластик$() зі швидкістю приблизно 1% кожні 10 секунд на базовому рівні.$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freezing",
+			"text": "$(bold)$(c)Заморожування$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)охолоджує$() тебе до небезпечно низької температури $(n)-20°C$(). Щоб вижити в таких умовах, рекомендується використовувати захисне спорядження."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blazing",
+			"text": "$(bold)$(c)Палкість$()$(li)Поки цей ефект активний, він безперервно $(l:beneath/cooling)зігріває$() тебе до небезпечно високої температури $(n)60°C$(). Щоб вижити в таких умовах, рекомендується використовувати захисне спорядження."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "instant_radiation",
+			"text": "$(bold)$(c)Миттєве випромінювання$()$(li)Цей ефект швидко завдає тобі шкоди через $(l:tfg_ores/hazards#Radioactive_materials)радіаційне ураження$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "final_moments",
+			"text": "$(bold)$(c)Останні хвилини$()$(li)Цей ефект запускає таймер, який відлічує твої останні хвилини життя. Коли час закінчиться, ти помреш."
+		},
+		{
+			"type": "patchouli:relations",
+			"title": "Додаткове читання",
+			"anchor": "relations",
+			"entries": [
+                "tfc:getting_started/food_and_water",
+                "tfc:beneath/cooling",
+                "tfc:tfg_ores/hazards"
+			]
+		}
+	]
+}

@@ -848,7 +848,7 @@ function registerImmersiveAircraftRecipes(event) {
 	], {
 		A: '#forge:rotors',
 		B: '#create:seats',
-		C: 'gtceu:long_wood_rod',
+		C: '#forge:rods/long/steel',
 		D: 'tfg:scaffolding_frame',
 		E: 'immersive_aircraft:engine'
 	}).id('tfg:immersive_aircraft/shaped/quadrocopter');

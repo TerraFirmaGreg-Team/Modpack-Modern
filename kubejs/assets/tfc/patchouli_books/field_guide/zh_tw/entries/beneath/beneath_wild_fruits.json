@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:text",
-      "title": "Contents",
+      "title": "目錄",
       "text": "$(li)$(l:tfc:beneath/beneath_wild_fruits#lavacado)Lavacado$()$(li)$(l:tfc:beneath/beneath_wild_fruits#magmango)Magmango$()"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example lavacado tree.",
+      "text": "Wild Lavacado trees can be found between Y=198 and Y=60.",
       "multiblocks": [
         {
           "pattern": [
@@ -85,7 +85,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "An example magmango tree.",
+      "text": "Wild Magmango trees can be found between Y=198 and Y=60.",
       "multiblocks": [
         {
           "pattern": [

@@ -16,7 +16,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/handstone",
-      "text": "The quern needs a $(thing)Handstone$() to operate."
+      "text": "Żarna potrzebują $(thing)rozcieracza$(), żeby działać."
     },
     {
       "type": "patchouli:image",
@@ -54,19 +54,19 @@
       "type": "tfc:quern_recipe",
       "title": "Pokruszona ruda",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
+      "text": "$(l:tfg_ores/ore_basics#processing)Rudy$() mogą zostać pokruszone, żeby otrzymać więcej metalu."
     },
     {
       "type": "tfc:quern_recipe",
       "title": "Proszki",
-      "recipe": "tfg:quern/sulfur_powder",
+      "recipe": "tfg:quern/sulfur",
       "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
     },
     {
       "type": "tfc:quern_recipe",
       "title": "Barwniki",
       "recipe": "tfc:quern/red_dye",
-      "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
+      "text": "$(l:mechanics/dye)Barwniki$() można uzyskiwać z różnych kwiatów."
     },
     {
       "type": "patchouli:spotlight",

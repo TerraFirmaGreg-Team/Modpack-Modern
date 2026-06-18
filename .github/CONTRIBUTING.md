@@ -33,6 +33,8 @@
 
 ---
 
+## Video Guide: https://www.youtube.com/watch?v=vLL7jTtuOuw
+
 ## English Version
 
 ### 1. Required and Recommended Software
@@ -332,15 +334,9 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
   npm run lint:fix
   ```
 
-  **Code formatting (Prettier):**
+  **Code formatting:**
 
-  ```bash
-  # Format all files
-  npm run format --prefix kubejs
-
-  # Check formatting without changes
-  npm run format:check --prefix kubejs
-  ```
+> Note: Do not run prettier or lint over an entire file. Or it will become difficult to review and will likely be rejected. Only run prettier over your own changes by using Format Selection instead of Format Document. Unless approved by a team member.
 
   **TypeScript checking:**
 
@@ -655,15 +651,9 @@ There are two approaches to creating a Pull Request: via terminal and via Visual
   npm run lint:fix
   ```
 
-  **Форматирование кода (Prettier):**
+**Форматирование кода:**
 
-  ```bash
-  # Форматировать все файлы
-  npm run format --prefix kubejs
-
-  # Проверка форматирования без изменений
-  npm run format:check --prefix kubejs
-  ```
+> Примечание: не запускайте Prettier или линтер для всего файла целиком. В противном случае такой код будет сложно проверить, и его, скорее всего, отклонят. Применяйте Prettier только к внесенным вами изменениям, используя функцию «Форматировать выделенное» (Format Selection) вместо «Форматировать документ» (Format Document). Если не одобрено членом команды.
 
   **Проверка типов TypeScript:**
 

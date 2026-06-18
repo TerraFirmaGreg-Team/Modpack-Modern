@@ -1,0 +1,58 @@
+[
+	{
+		"action": "remove",
+		"items": [
+			"create:zinc_ore",
+			"create:deepslate_zinc_ore", 
+			"create:raw_zinc", 
+			"create:raw_zinc_block", 
+			
+			"create:iron_sheet", 
+
+			"create:wheat_flour",
+			"create:wheat_flour",
+
+			"create:andesite_alloy_block",  
+			"create:experience_block",
+
+			"create:cardboard_chestplate",
+			"create:cardboard_helmet",
+			"create:cardboard_leggings",
+			"create:cardboard_boots",
+			"create:cardboard_sword",
+			"create:pulp",
+
+			"create:honey_bucket", 
+			"create:chocolate_bucket",
+			"create:crushed_raw_quicksilver", 
+			"create:crushed_raw_aluminum", 
+			"create:crushed_raw_uranium", 
+			"create:crushed_raw_nickel", 
+			"create:blaze_cake", 
+			"create:blaze_cake_base", 
+			"create:sturdy_sheet", 
+			"create:polished_rose_quartz", 
+			"create:cinder_flour", 
+			"create:dough", 
+			"create:bar_of_chocolate", 
+			"create:sweet_roll", 
+			"create:chocolate_glazed_berries", 
+			"create:builders_tea", 
+			"create:andesite_alloy", 
+			"create:chromatic_compound", 
+			"create:shadow_steel", 
+			"create:refined_radiance", 
+			"create:crushed_raw_platinum", 
+			"create:crushed_raw_osmium", 
+			"create:crushed_raw_iron", 
+			"create:experience_nugget",
+			"create:unprocessed_obsidian_sheet",
+			"create:red_sand_paper",
+			"create:empty_blaze_burner",
+			"create:mechanical_pump",
+			"create:peculiar_bell",
+			"create:haunted_bell",
+			"create:adjustable_chain_gearshift"
+		]
+	}
+]

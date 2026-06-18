@@ -29,6 +29,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 	registerTFGMaterialHiddenPipesTags(event)
+	registerTFGSlimeItemTags(event)
 	
 	// Curios slots for wearables
 	event.add("curios:face", "tfg:snorkel")
@@ -164,12 +165,13 @@ const registerTFGItemTags = (event) => {
 		event.add("c:hidden_from_recipe_viewers", glassLens);
 	});
 	
-	//tag unfinished tracks for emi++ grouping
+	event.add('tfg:track_rods', '#forge:rods/long/wrought_iron')
+	event.add('tfg:track_rods', '#forge:rods/steel')
 	
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_tfc_${wood}_wide`)	
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_tfc_${wood}_wide`)	
 	})
 	
 	const OTHER_TRACKS = [
@@ -180,12 +182,12 @@ const registerTFGItemTags = (event) => {
 	]
 	
 	OTHER_TRACKS.forEach(rail => {
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_narrow`)
-		event.add('tfg:incomplete_tracks', `railways:track_incomplete_${rail}_wide`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_narrow`)
+		event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_${rail}_wide`)
 	})
 	
-	event.add('tfg:incomplete_tracks', `railways:track_incomplete_monorail`)
+	event.add('c:hidden_from_recipe_viewers', `railways:track_incomplete_monorail`)
 	
 	// tag locometal blocks (minus (trap)doors) for emi++ grouping
 
@@ -249,7 +251,28 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:train_connectors', 'railways:big_buffer')
 	event.add('tfg:train_connectors', 'railways:wooden_headstock')
 	event.add('tfg:train_connectors', 'railways:copycat_headstock')
-	
+
+	//wet concrete
+	event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_control_joint')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_panel')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_sett')
+    event.add('tfg:wet_concrete_roads', 'rnr:wet_concrete_road_flagstones')
+
+	const ASPHALT_TARS = [
+		'tfg:oil_tar',
+		'tfg:raw_oil_tar',
+		'tfg:light_oil_tar',
+		'tfg:heavy_oil_tar',
+	]
+
+	ASPHALT_TARS.forEach(id => {
+		event.add('tfg:asphalt_tars', id)
+	})
+
+	event.add('tfc:usable_on_tool_rack', '#tfg:asphalt_road_stencils')
+
+	event.add('minecraft:brick', 'tfg:stone_brick')
 }
 
 //#region Blocks
@@ -265,6 +288,7 @@ const registerTFGBlockTags = (event) => {
 	registerTFGMarsBlockTags(event)
 	registerTFGVenusBlockTags(event)
 	registerTFGAquaponicsBlockTags(event)
+	registerTFGMaterialBlockTags(event)
 
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_large')
 	event.add('gtceu:mineable/pickaxe_or_wrench', 'tfg:superconductor_coil_small')
@@ -275,12 +299,18 @@ const registerTFGBlockTags = (event) => {
 
 	forEachTFGRopeLadderVariant(ropeLadder => {
 		event.add('tfg:rope_ladders', ropeLadder)
-		event.add('minecraft:mineable/axe', ropeLadder)
+		event.add('create:copycat_deny', ropeLadder)
+		event.add('minecraft:fall_damage_resetting', ropeLadder)
+		event.add('minecraft:climbable', ropeLadder)
 	})
 
 	event.add('minecraft:mineable/pickaxe', 'tfg:mars_ice')
 	event.add('minecraft:ice', 'tfg:mars_ice')
 	event.add('minecraft:mineable/pickaxe', 'tfg:dry_ice')
+
+	event.add('tfg:functional_asphalt_roads', 'tfg:asphalt_road')
+	event.add('tfg:functional_asphalt_road_stairs', 'tfg:asphalt_road_stairs')
+	event.add('tfg:functional_asphalt_road_slabs', 'tfg:asphalt_road_slab')
 }
 //#endregion
 
@@ -340,24 +370,37 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
-	event.add('tfc:drinkables', 'tfg:vintage_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_beer')
-	event.add('tfg:alcohols', 'tfg:vintage_beer')
-	event.add('tfc:drinkables', 'tfg:vintage_cider')
-	event.add('tfg:alcohols', 'tfg:vintage_cider')
-	event.add('tfc:drinkables', 'tfg:vintage_rum')
-	event.add('tfg:alcohols', 'tfg:vintage_rum')
-	event.add('tfc:drinkables', 'tfg:vintage_sake')
-	event.add('tfg:alcohols', 'tfg:vintage_sake')
-	event.add('tfc:drinkables', 'tfg:vintage_corn_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_rye_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_mead')
-	event.add('tfg:alcohols', 'tfg:vintage_mead')
-	event.add('tfc:drinkables', 'tfg:vintage_vodka')
-	event.add('tfg:alcohols', 'tfg:vintage_vodka')
+	global.ALCOHOLS.forEach(alcohol => {
+
+		if (alcohol.id) {
+			event.add('tfg:alcohols', alcohol.id);
+			event.add('tfg:base_alcohols', alcohol.id);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.id);
+			if (alcohol.genBase) {
+				event.add('tfc:drinkables', alcohol.id);
+			}
+		}
+
+		if (alcohol.agedId) { 
+			event.add('tfg:alcohols', alcohol.agedId);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.agedId);
+			event.add('tfg:proofed_alcohols', alcohol.agedId);
+			if (alcohol.genAged) {
+				event.add('tfc:drinkables', alcohol.agedId);
+				event.add('tfcagedalcohol:aged_alcohols', alcohol.agedId);
+			}
+		}
+
+		if (alcohol.vintageId) {
+			event.add('tfg:alcohols', alcohol.vintageId);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.vintageId);
+			event.add('tfg:proofed_alcohols', alcohol.vintageId);
+			 if (alcohol.genVintage) {
+				event.add('tfc:drinkables', alcohol.vintageId);
+				event.add('tfg:vintage_alcohols', alcohol.vintageId);
+			 }
+		}
+	});
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
@@ -395,6 +438,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
 	event.add('forge:tin',               'gtceu:tin')
 	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
+
+	// Fluid tag to run the Ore Proc Multiblock
+
+	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
 }
 //#endregion
 
@@ -405,6 +452,7 @@ const registerTFGBiomeTags = (event) => {
 	registerTFGMoonBiomeTags(event)
 	registerTFGMarsBiomeTags(event)
 	registerTFGVenusBiomeTags(event)
+	registerTFGSlimeBiomeTags(event)
 }
 
 function registerTFGConfiguredFeatures(event) {
@@ -425,10 +473,12 @@ const registerTFGPlacedFeatures = (event) => {
 const registerTFGEntityTypeTags = (event) => {
 
 	registerTFGOverworldEntityTypeTags(event)
+	registerTFGBeneathEntityTypeTags(event)
 	registerTFGMoonEntityTypeTags(event)
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)
 	registerTFGEuropaEntityTypeTags(event)
+	registerTFGPrimitiveEntityTags(event)
 
 	event.add('tfg:ignores_gravity', 'firmalife:bee')
 	event.add('ad_astra:can_survive_in_space', 'railways:conductor')

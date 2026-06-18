@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 5,
+		"xz_spread": 5,
+		"y_spread": 1,
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:simple_state_provider",
+						"state": {
+							"Name": "tfg:fly_agaric"
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "tfc:replaceable"
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "would_survive",
+						"state": {
+							"Name": "tfg:fly_agaric"
+						}
+					}
+				},
+				{
+					"type": "block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,121 @@
+"use strict";
+
+
+/**
+ * This file is for recipes related to meal bags and calorie paste. 
+ * And recipes for associated materials such as foil packs, dry ice, etc.
+ */
+function registerTFGMealBagRecipes(event) {
+
+	//#region Materials
+
+	event.recipes.gtceu.forming_press('tfg:forming_press/foil_pack')
+		.itemInputs(ChemicalHelper.get(TagPrefix.foil, GTMaterials.Aluminium, 1), ChemicalHelper.get(TagPrefix.foil, GTMaterials.Polyethylene, 1))
+		.itemOutputs('1x tfg:foil_pack')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.gas_pressurizer('tfg:fluid_solidifier/dry_ice')
+		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.notConsumable('gtceu:block_casting_mold')
+		.itemOutputs('2x tfg:dry_ice')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/liq_co2')
+		.inputFluids(Fluid.of('gtceu:carbon_dioxide', 1000))
+		.outputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.vacuum_freezer('tfg:vacuum_freezer/dry_ice')
+		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 1000))
+		.notConsumable('gtceu:block_casting_mold')
+		.itemOutputs('10x tfg:dry_ice')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_liq_co2')
+		.itemInputs('1x tfg:dry_ice')
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_heater('tfg:fluid_heater/decompress_dry_ice')
+		.inputFluids(Fluid.of('gtceu:liquid_carbon_dioxide', 100))
+		.outputFluids(Fluid.of('gtceu:carbon_dioxide', 100))
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.mixer('tfg:clean_foil_pack')
+		.itemInputs('1x tfg:used_foil_pack')
+		.inputFluids("#tfg:clean_water 100")
+		.itemOutputs('1x tfg:clean_foil_pack')
+		.duration(200)
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_bath('tfg:ore_washer/distilled/clean_foil_pack')
+		.itemInputs('1x tfg:used_foil_pack')
+		.inputFluids(Fluid.of('gtceu:distilled_water', 10))
+		.itemOutputs('1x tfg:clean_foil_pack')
+		.duration(50)
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.custom({
+		type: "ae2:transform",
+		circumstance: {
+			type: "fluid",
+			tag: "tfc:water"
+		},
+		ingredients: [
+			{ item: 'tfg:used_foil_pack' }],
+		result: { item: 'tfg:clean_foil_pack' }
+	}).id('tfg:ae_transform/clean_foil_pack')
+
+	event.recipes.greate.splashing(['tfg:clean_foil_pack'], ['tfg:used_foil_pack', Fluid.of('minecraft:water', 100)])
+		.recipeTier(0)
+		.id('tfg:splashing/clean_foil_pack')
+
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/calorie_paste'
+	]).id('tfg:shapeless/emptying/calorie_paste')
+
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/meal_bag'
+	]).id('tfg:shapeless/emptying/meal_bag')
+
+	event.shapeless('1x tfg:used_foil_pack', [
+		'tfg:food/freeze_dried_fruit'
+	]).id('tfg:shapeless/emptying/freeze_dried_fruit');
+
+	TFGHelpers.registerMaterialInfo('tfg:clean_foil_pack', [GTMaterials.Aluminium, 0.25, GTMaterials.Polyethylene, 0.25])
+
+	//#endregion
+	//#region Food Recipes
+
+	// Calorie Paste
+	global.processorRecipeText(event, 'calorie_paste', 100, GTValues.VA[GTValues.MV], "tfg.food_recipe.freeze_drying", {
+		circuit: 8,
+		itemInputs: ['firmalife:food/soybean_paste', 'tfg:foil_pack', '2x gtceu:small_meat_dust', 'tfg:dry_ice'],
+		itemOutputs: ['tfg:food/calorie_paste'],
+		fluidInputs: [Fluid.of('gtceu:fermented_biomass', 40)],
+		itemOutputProvider: TFC.isp.of('tfg:food/calorie_paste').copyOldestFood().addTrait('tfg:freeze_dried')
+	});
+
+	// Meal Bags
+	for (let i = 1; i <= 4; i++) {
+		global.processorRecipeText(event, `meal_bag/${i}`, 100, GTValues.VA[GTValues.MV], "tfg.food_recipe.freeze_drying", {
+			circuit: 9 + i,
+			itemInputs: [`${i}x #tfg:foods/usable_in_meal_bag`, `2x tfg:foil_pack`, `tfg:dry_ice`],
+			itemOutputs: ['2x tfg:food/meal_bag'],
+			itemOutputProvider: TFC.isp.of('2x tfg:food/meal_bag').meal(
+				(food => food.hunger(4).saturation(1.1).microplastics(0.25).decayModifier(4.5)), [
+				(portion) => portion.nutrientModifier(0.8).saturationModifier(0.8).waterModifier(0)
+			]).addTrait('tfg:freeze_dried')
+		});
+	};
+
+	//#endregion
+}

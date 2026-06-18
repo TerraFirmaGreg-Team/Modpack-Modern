@@ -37,7 +37,7 @@
 				}
 			},
 			"name": "Exemplo ",
-			"text": "A smattering of common sticks and stones.",
+			"text": "Um punhado de gravetos e rochas comuns.",
 			"enable_visualize": false
 		},
 		{
@@ -70,14 +70,14 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/knife_stone",
-			"text": "All stone tool heads can be crafted with a stick or twig to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking plants."
+			"text": "Todas as cabeças de ferramentas de pedra podem ser craftadas com um graveto ou galho para montá-las.$(br2)A faca de pedra pode ser usada para colher $(thing)Palha$() quebrando plantas."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. However, saplings and sticks will only be obtained if leaves were broken individually."
+			"text": "$(thing)Machados$() podem ser usados para derrubar árvores inteiras, incluindo folhas. No entanto, as mudas e os gravetos só serão obtidos se as folhas forem quebradas individualmente."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",

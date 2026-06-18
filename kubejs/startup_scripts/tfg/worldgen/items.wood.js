@@ -33,9 +33,12 @@ function registerTFGWoodItems(event) {
 	event.create('tfg:twigs/alphacene')
 		.tag('tfc:twigs')
 		.texture('tfg:item/wood/twig/alphacene')
+	event.create('tfg:twigs/ginkgo')
+		.tag('tfc:twigs')
+		.texture('tfg:item/wood/twig/ginkgo')
 
 	// Bamboo lumber
 	event.create('tfg:wood/lumber/bamboo')
-	.tag('tfc:lumber')
-	.texture('tfg:item/wood/lumber/bamboo')
+		.tag('tfc:lumber')
+		.texture('tfg:item/wood/lumber/bamboo')
 }

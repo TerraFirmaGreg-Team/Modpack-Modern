@@ -3,9 +3,9 @@
 	default_quest_shape: ""
 	filename: "mars"
 	group: "36FC51ACEF38D994"
-	icon: "ad_astra:mars_globe"
+	icon: "tfg:marker/mars"
 	id: "671B872DCEFCA5DD"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -175,13 +175,31 @@
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.soarer.desc}"]
 			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 21"
-			icon: "wan_ancient_beasts:soarer_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 80798000L
+						traits: [ ]
+					}
+				}
+				id: "wan_ancient_beasts:soarer_egg"
+			}
 			id: "2F711C064635EF2D"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.space_survival.soarer.subtitle}"
 			tasks: [{
-				icon: "wan_ancient_beasts:soarer_egg"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 80798000L
+							traits: [ ]
+						}
+					}
+					id: "wan_ancient_beasts:soarer_egg"
+				}
 				id: "30A4901728CBF789"
 				observe_type: 5
 				timer: 0L
@@ -411,6 +429,10 @@
 						ingredients: [ ]
 						traits: [ ]
 					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
 				}
 				id: "tfg:food/cooked_dino_nugget"
 			}
@@ -485,7 +507,16 @@
 			shape: "heart"
 			subtitle: "{quests.space_survival.surfer.subtitle}"
 			tasks: [{
-				icon: "wan_ancient_beasts:surfer_egg"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 80798000L
+							traits: [ ]
+						}
+					}
+					id: "wan_ancient_beasts:surfer_egg"
+				}
 				id: "7D1D6851ABB1B5E7"
 				observe_type: 5
 				timer: 0L
@@ -582,14 +613,32 @@
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.charger.desc}"]
 			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 19"
-			icon: "wan_ancient_beasts:charger_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 80798000L
+						traits: [ ]
+					}
+				}
+				id: "wan_ancient_beasts:charger_egg"
+			}
 			id: "148C2DA8FB1D6DB1"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.space_survival.charger.subtitle}"
 			tasks: [
 				{
-					icon: "wan_ancient_beasts:charger_egg"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: 80798000L
+								traits: [ ]
+							}
+						}
+						id: "wan_ancient_beasts:charger_egg"
+					}
 					id: "78EBECCA1C40A3BD"
 					observe_type: 5
 					timer: 0L
@@ -619,13 +668,31 @@
 			dependencies: ["5AC5AAB9B3758E30"]
 			description: ["{quests.space_survival.snatcher.desc}"]
 			guide_page: "tfc:field_guide tfc:tfg_tips/space_fauna 17"
-			icon: "wan_ancient_beasts:snatcher_egg"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 80798000L
+						traits: [ ]
+					}
+				}
+				id: "wan_ancient_beasts:snatcher_egg"
+			}
 			id: "02A7FD58F462320F"
 			optional: true
 			shape: "heart"
 			subtitle: "{quests.space_survival.snatcher.subtitle}"
 			tasks: [{
-				icon: "wan_ancient_beasts:snatcher_egg"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 80798000L
+							traits: [ ]
+						}
+					}
+					id: "wan_ancient_beasts:snatcher_egg"
+				}
 				id: "4AC531B94CBA93CE"
 				observe_type: 5
 				timer: 0L

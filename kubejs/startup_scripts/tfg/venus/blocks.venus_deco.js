@@ -34,6 +34,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 1, 0.3)
 			.velocity(0, 0.05, 0)
@@ -47,10 +48,23 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 10, 13)
 		.resistance(6)
 		.hardness(1.5)
+		.tagBlock('tfcambiental:warm_stuff')
 		.particles(a => a
 			.range(0.3, 0.5, 0.3)
 			.velocity(0, 0, 0)
-			.particle('lava')
+			.particle('minecraft:lava')
+			.count(1)
+			.forced(false));
+			
+	event.create('betterend:sulphur_crystal', 'tfg:particle_emitter_decoration')
+		.soundType('deepslate')
+		.mapColor('gold')
+		.box(3, 0, 3, 13, 6, 13)
+		.effect('minecraft:nausea')
+		.particles(a => a
+			.range(1.0, 0.2, 1.0)
+			.velocity(0, 0.07, 0)
+			.particle('tfg:noxious_gas')
 			.count(1)
 			.forced(false));
 
@@ -109,8 +123,7 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.box(3, 0, 3, 13, 14, 13)
 
 	//#region Fluorapatite
-	const fluorapatite_colors = ['blue', 'green', 'brown', 'orange', 'white', 'yellow'];
-	fluorapatite_colors.forEach(color => {
+	global.FLUORAPATITE_COLORS.forEach(color => {
 		const mapColor = color === 'white' ? 'quartz' : `color_${color}`;
 
 		//Sand
@@ -227,11 +240,6 @@ function registerTFGWorldGenVenusDecoBlocks(event) {
 		.mapColor('wood')
 		.requiresTool(true)
 		.tagBlock('minecraft:mineable/pickaxe')
-
-	event.create('betterend:sulphur_crystal', 'tfg:decorative_plant')
-		.soundType('deepslate')
-		.mapColor('gold')
-		.box(3, 0, 3, 13, 6, 13)
 
 
 	event.create(`betterend:flavolite`, 'tfc:raw_rock')

@@ -5,13 +5,13 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "混凝土路是可建造的速度最快的道路类型，正确建造时可提供30%移动速度加成。但施工时需确保混凝土在凝固前不被踩踏或开裂，否则将失去速度增益。"
+      "text": "混凝土路正确建造时可提供30%移动速度加成。但施工时需确保混凝土在凝固前不被踩踏或开裂，否则将失去速度增益。"
     },
     {
       "type": "patchouli:image",
       "title": "混凝土路",
       "images": [
-      "rnr:textures/gui/book/concrete_road.png"
+        "rnr:textures/gui/book/concrete_road.png"
       ],
       "border": true
     },
@@ -37,7 +37,7 @@
       "type": "patchouli:image",
       "title": "浇筑混凝土路",
       "images": [
-      "rnr:textures/gui/book/wet_concrete.png"
+        "rnr:textures/gui/book/wet_concrete.png"
       ],
       "border": true
     },
@@ -49,7 +49,7 @@
       "type": "patchouli:image",
       "title": "控制缝",
       "images": [
-      "rnr:textures/gui/book/control_joints.png"
+        "rnr:textures/gui/book/control_joints.png"
       ],
       "border": true
     },
@@ -61,7 +61,7 @@
       "type": "patchouli:image",
       "title": "仿石砖路",
       "images": [
-      "rnr:textures/gui/book/faux_sett.png"
+        "rnr:textures/gui/book/faux_sett.png"
       ],
       "border": true
     }

@@ -23,18 +23,18 @@
       "text": "Converting the center raw rock to an anvil.",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        " 0 "
-    ],
-    [
-        "RRR"
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              " 0 "
+            ],
+            [
+              "RRR"
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         "tfc:rock_anvil"
       ]
@@ -50,171 +50,171 @@
       "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
       "multiblocks": [
         {
-    "pattern": [
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        " R ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              " R ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        "RRR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              "RRR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        " R "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              " R "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " RR",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " RR",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "tfc:rock/raw/gabbro",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "tfc:rock/raw/gabbro",
+            "R": "tfc:rock/raw/gabbro"
+          }
         },
         {
-    "pattern": [
-    [
-        "   ",
-        "   ",
-        "   "
-    ],
-    [
-        "   ",
-        " R ",
-        "   "
-    ],
-    [
-        "   ",
-        " 0 ",
-        "   "
-    ]
-    ],
-    "mapping": {
-    "0": "AIR",
-    "R": "tfc:rock/raw/gabbro"
-    }
+          "pattern": [
+            [
+              "   ",
+              "   ",
+              "   "
+            ],
+            [
+              "   ",
+              " R ",
+              "   "
+            ],
+            [
+              "   ",
+              " 0 ",
+              "   "
+            ]
+          ],
+          "mapping": {
+            "0": "AIR",
+            "R": "tfc:rock/raw/gabbro"
+          }
         }
       ]
     },
     {
       "type": "patchouli:text",
-      "anchor": "zespajanie",
+      "anchor": "welding",
       "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
       "title": "Spawanie"
     },

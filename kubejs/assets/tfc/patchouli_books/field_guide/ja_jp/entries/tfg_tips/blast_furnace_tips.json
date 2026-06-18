@@ -1,42 +1,42 @@
 {
-	"name": "Blast Furnace Tips",
+	"name": "高炉について",
 	"icon": "tfc:blast_furnace",
 	"category": "tfc:tfg_tips",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"title": "TerraFirmaCraft Blast Furnace Tips",
-			"text": "So, you finally found that $(item)Kaolinite$() and are probably feeling pretty excited about making a 5-level $(thing)Blast Furnace$(). Here are some tips before you go wild!"
+			"title": "TerraFirmaCraft高炉について",
+			"text": "$(item)カオリン粘土$()を発見し、ついに完全体の$(thing)高炉$()が作れるようになりましたね！とはいえ、ひとまず落ち着いてください。作り始める前に、いくつか覚えておきたいポイントがありますので。"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfc:ceramic/unfired_fire_brick",
-			"text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can craft it for significantly cheaper. This allows you to save $(item)Kaolinite$() and $(item)Graphite$() for $(thing)Casting Tables$()."
+			"text": "集めたカオリン粘土を全て耐火粘土に変えるのはまだ早いかもしれません。なぜなら、蒸気時代に入ると、耐火粘土をはるかに安いコストで作れるようになるからです。そのため、$(item)カオリナイト$()と$(item)黒鉛$()を$(thing)鋳型台$()用に温存しておくのもいいでしょう。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Preheating Metal",
+			"title": "鉄の予熱",
 			"item": "tfc:firepit",
-			"text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(thing)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
+			"text": "鉄を鋼鉄にするには、高炉の中で鉄を$(thing)眩しい白色$()の温度まで加熱する必要があります。高炉を点火してからしばらくは、高炉自体が温まるために時間がかかります。しかしその後は、燃料が供給されていれば、高炉は高温が維持されるため、冷えた鉄を投入してしまうと、高炉内で鉄が温まるまでの時間が無駄になってしまいます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+			"text": "鉄を$(l:tfc:mechanics/charcoal_forge)炉$()やるつぼで余熱し、熱い状態で高炉に投入すれば、鉄が$(thing)眩しい白色$()の温度に到達するまでの時間を短縮できます。特に小規模な高炉だと、一度に高炉内で加熱できる鉄の量が少ないため、鉄を余熱しておくことの恩恵が大きいです。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Automation",
+			"title": "高炉の自動化",
 			"item": "greate:steel_mechanical_pump",
-			"text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production."
+			"text": "$(thing)蒸気時代$()や$(thing)LV時代$()では、$(item)鋼鉄$()が大量に必要になります。本当に大量です。本当に。$(thing)工業用電気炉$()（EBF）を使えるようになるのはまだずっと先のことなので、今のうちから鋼鉄を効率的に生産できるようにしておくのが重要です。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can pump liquid directly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can automate the bellows with a $(item)Deployer$() too! Just be careful, as using the bellows excessively consumes more fuel and breaks your $(thing)tuyere$() faster.$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$() or $(thing)Helve Hammer$()."
+			"text": "Greateの$(item)メカニカルポンプ$()を使えば、高炉から溶けた金属を直接汲み出すことができます。ポンプで$(l:tfc:tfcchannelcasting/channel_casting)鋳型台$()へ流し込み、ホッパーやシュートでインゴットを回収すれば、自動化も簡単です！$(br2)また、$(item)デプロイヤー$()を使えばふいごの操作も自動化できます。ただし、ふいごを吹かしすぎると燃料消費が増え、$(thing)羽口$()の耐久も早く減ってしまうので注意してください。$(br2)生成された$(item)銑鉄$()や$(item)高炭素鋼$()は、$(thing)鍛造機$()または$(thing)動力鍛造ハンマー$()で自動処理できます。"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can automatically replace broken tuyeres with a hopper or item pipe facing into the blast furnace."
+			"text": "高炉に対してホッパーまたはアイテムパイプで羽口を搬入することで、羽口が壊れた時にを自動的に供給するようにできます。"
 		}
 	]
 }

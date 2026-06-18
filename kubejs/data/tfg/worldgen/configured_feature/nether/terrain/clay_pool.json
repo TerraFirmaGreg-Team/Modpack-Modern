@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:waterlogged_vegetation_patch",
 	"config": {
-		"depth": 2,
+		"depth": 1,
 		"extra_bottom_block_chance": 0.8,
 		"extra_edge_column_chance": 0.7,
 		"ground_state": {
@@ -10,7 +10,7 @@
 				"Name": "minecraft:clay"
 			}
 		},
-		"replaceable": "#minecraft:lush_ground_replaceable",
+		"replaceable": "#minecraft:nether_carver_replaceables",
 		"surface": "floor",
 		"vegetation_chance": 0.6,
 		"vegetation_feature": {
@@ -21,8 +21,8 @@
 		"xz_radius": {
 			"type": "minecraft:uniform",
 			"value": {
-				"max_inclusive": 4,
-				"min_inclusive": 2
+				"max_inclusive": 6,
+				"min_inclusive": 4
 			}
 		}
 	}

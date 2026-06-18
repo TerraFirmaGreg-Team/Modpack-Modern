@@ -87,6 +87,19 @@
 			x: 0.0d
 			y: -6.0d
 		}
+		{
+			id: "00F47E7BD0D377EF"
+			linked_quest: "66E34DAA25149FC0"
+			shape: "heart"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			id: "66CE037FEBE1ABE0"
+			linked_quest: "361AC06D62D9BCCF"
+			x: 1.5d
+			y: 13.0d
+		}
 	]
 	quests: [
 		{
@@ -1055,7 +1068,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["701BCADAE5CF6CA5"]
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"361AC06D62D9BCCF"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.gallium_arsenide.desc}"]
 			id: "4073577B7EF9B593"
@@ -1696,8 +1712,9 @@
 			dependencies: [
 				"0404FBCC34011053"
 				"7FA1525D681C4B4A"
-				"3DC0755814508BD7"
+				"66E34DAA25149FC0"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_gas_turbine.desc}"]
 			id: "1AD51E2B66EA7F67"
 			optional: true
@@ -1933,7 +1950,6 @@
 		{
 			dependencies: [
 				"671F90ADCDF476A8"
-				"6FFD4990FF07078A"
 				"698DCAB4F014EB3B"
 			]
 			dependency_requirement: "one_completed"
@@ -2073,27 +2089,6 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["66E34DAA25149FC0"]
-			icon: "gtceu:natural_gas_bucket"
-			id: "3DC0755814508BD7"
-			shape: "heart"
-			tasks: [
-				{
-					id: "5458466C6BA34B64"
-					item: "gtceu:natural_gas_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1F02511A45AA5C9B"
-					item: "tfg:gas_well"
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["0DBC148D92A9F69F"]
 			description: ["{quests.low_voltage.rancher.desc}"]
 			icon: "minecraft:milk_bucket"
@@ -2110,6 +2105,50 @@
 			title: "{quests.low_voltage.rancher.title}"
 			x: -2.0d
 			y: 19.5d
+		}
+		{
+			dependencies: ["37307A46E70011D3"]
+			description: ["{quests.tfg_tips.capsules.desc}"]
+			guide_page: "tfc:field_guide tfc:getting_started/food_and_water"
+			id: "69DA11F2EC7FAECC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.capsules.subtitle}"
+			tasks: [{
+				id: "265BDCE55CEDC38F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(tfg:medicine/capsules)"
+					}
+				}
+				title: "{quests.tfg_tips.capsules.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.capsules.title}"
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
+			]
+			id: "4F6C86CA85019228"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
+			tasks: [{
+				id: "425A1E5EC9C1F722"
+				item: "tfg:ore_processing_beneath"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]
