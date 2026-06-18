@@ -40,6 +40,12 @@
 				"data": "tfg:beneath/tower_palette_magma"
 				}
 			]
+		},
+		{
+			"processor_type": "lithostitched:reference",
+			"processor_lists": [
+				"tfg:beneath/tower_palette_bastion"
+			]
 		}
 	]
 }
