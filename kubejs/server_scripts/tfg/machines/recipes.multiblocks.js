@@ -351,5 +351,21 @@ function registerTFGMultiblockRecipes(event) {
 		D: Item.of('tfcgroomer:red_steel_grooming_station'),
 		E: Item.of('tfcgroomer:blue_steel_grooming_station')
 	}).addMaterialInfo().id('tfg:shaped/pastoral_engine')
+
+	// Geologic Vulcanizer
+
+	event.recipes.gtceu.shaped('tfg:ore_processing_beneath', [
+		'ABC',
+		'DED',
+		'FGF'
+	], {
+		A: Item.of('gtceu:lv_ore_washer'),
+		B: Item.of('gtceu:lv_thermal_centrifuge'),
+		C: Item.of('gtceu:lv_macerator'),
+		D: '#gtceu:circuits/lv',
+		E: Item.of('gtceu:industrial_steam_casing'),
+		F: Item.of('gtceu:bronze_normal_fluid_pipe'),
+		G: Item.of('gtceu:tin_single_cable')
+	}).addMaterialInfo().id('tfg:shaped/ore_processing_beneath')
 	
 }

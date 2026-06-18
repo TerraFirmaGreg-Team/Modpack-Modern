@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfc:item/ore/sulfur",
+        "layer1": "tfc:item/ore/sulfur",
+        "layer2": "tfc:item/ore/sulfur"
+    }
+}
