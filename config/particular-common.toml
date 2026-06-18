@@ -11,7 +11,7 @@
 		#Enable waterfall spray particles
 		waterfallSpray = true
 		#Enable firefly particles
-		fireflies = false
+		fireflies = true
 		#Enable falling leaves particles
 		fallingLeaves = false
 		#Enable cave dust particles
@@ -32,6 +32,8 @@
 		cakeEatingParticles = true
 		#Enable emissive lava drips
 		emissiveLavaDrips = true
+		#Enable lava splash particles when entities hit lava
+		lavaSplash = true
 
 	#Advanced Particle Settings
 	[general.advancedSettings]
@@ -45,12 +47,20 @@
 			endTime = 23000
 			#Minimum temperature for fireflies to spawn
 			#Range: 0.0 ~ 2.0
-			minTemp = 0.5
+			minTemp = 0.0
 			#Maximum temperature for fireflies to spawn
 			#Range: 0.0 ~ 2.0
-			maxTemp = 0.9900000095367432
+			maxTemp = 2.0
 			#Whether fireflies can spawn in rain
-			canSpawnInRain = false
+			canSpawnInRain = true
+			#Biomes where fireflies always spawn (bypasses temperature check). Example: "minecraft:swamp"
+			biomes = ["tfc:lowlands", "tfc:salt_marsh", "tfg:earth/lowlands", "tfg:earth/salt_marsh"]
+			#Extra blocks that spawn fireflies. Example: "tfc:plant/cattail"
+			spawnBlocks = ["tfc:plant/arrowhead", "tfc:plant/bur_reed", "tfc:plant/cattail", "tfc:plant/marigold", "tfc:plant/phragmite", "tfc:plant/pickerelweed", "tfc:plant/water_taro", "tfc:plant/water_lily", "tfc:plant/water_canna", "tfc:plant/lotus"]
+			#Per-biome firefly RGB hex tints. Format: "biomeId|RRGGBB". Example: "minecraft:swamp|FFD27F". Takes priority over fireflyColorPool.
+			biomeColors = []
+			#Random RGB hex colors picked per firefly when no biomeColors entry matches. Empty = use built-in yellow/blue/red mix. Format: "RRGGBB".
+			colorPool = []
 
 			[general.advancedSettings.fireflySettings.frequencyModifiers]
 				#Daily random factors for firefly spawning
@@ -67,6 +77,9 @@
 				#Frequency modifier for tall flowers
 				#Range: 0.0 ~ 1.0
 				tallFlowers = 0.5
+				#Frequency modifier for blocks listed in fireflySpawnBlocks
+				#Range: 0.0 ~ 1.0
+				customBlocks = 0.16666666666666666
 
 		[general.advancedSettings.fallingLeavesSettings]
 			#Chance of spawning falling leaves (higher = less frequent)
@@ -100,4 +113,34 @@
 			accelChangeChance = 180
 			#Biomes where cave dust won't spawn
 			excludeBiomes = ["minecraft:lush_caves", "minecraft:dripstone_caves", "minecraft:deep_dark"]
+
+		[general.advancedSettings.waterSplashSettings]
+			#Minimum fall distance (in blocks) required to trigger water splash particles
+			#Range: 0.0 ~ 100.0
+			minFallDistance = 0.0
+			#Whether small splashes should emit water droplet particles
+			smallDroplets = false
+			#Opacity of water and lava splash particles
+			#Range: 0.0 ~ 1.0
+			splashOpacity = 0.75
+			#Whether soft water entries should emit bubbles and tiny falling-water droplets instead of a full splash
+			softEntryParticles = true
+			#Use 1-voxel cuboid particles for waterfall spray
+			cuboidWaterfallSpray = false
+			#Use 1-voxel cuboid particles for splash droplets
+			cuboidSplashDroplets = true
+			#Tint cuboid waterfall spray using the local biome water color
+			waterCuboidBiomeTint = true
+			#Fallback color of cuboid waterfall spray when biome tinting is disabled (RGB hex)
+			#Range: 0 ~ 16777215
+			waterCuboidColor = 16777215
+			#Color of cuboid lava droplets (RGB hex)
+			#Range: 0 ~ 16777215
+			lavaCuboidColor = 16738335
+
+		[general.advancedSettings.customFluidsSettings]
+			#Fluid IDs treated like vanilla water for splash, rain ripples, and waterfall spray. Example: "tfc:river_water"
+			waterLikeFluids = ["tfc:river_water", "tfc:flowing_salt_water", "tfc:salt_water", "tfc:flowing_spring_water", "tfc:spring_water", "tfg:semiheavy_ammoniacal_water", "tfg:muddy_water", "tfg:geyser_slurry"]
+			#Flowing,source fluid pairs that produce cascade waterfalls. Example: "mymod:flowing_water,mymod:water". TFC fluids do not produce cascades because they have no flowing variant.
+			cascadeFluidPairs = ["minecraft:flowing_water,tfc:river_water", "tfc:flowing_salt_water,tfc:salt_water", "tfc:flowing_spring_water,tfc:spring_water", "tfg:flowing_muddy_water,tfg:muddy_water", "tfg:flowing_semiheavy_ammoniacal_water,tfg:semiheavy_ammoniacal_water", "tfg:flowing_geyser_slurry,tfg:geyser_slurry"]
 

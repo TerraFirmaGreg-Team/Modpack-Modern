@@ -7,7 +7,10 @@
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
 - Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
+- Increased the HP of cliff hangers and leaf hangers, but now they let go of the player when attacked @Pyritie
 - Improved the FPS performance of Struts @SakuraKitsurugi
+- Restored the recipe for copying configured Create filters (#4265) @Robak132
+- You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
@@ -21,6 +24,9 @@
 - Fixed another kinetic bridge exploit @ashleney
 - Fixed a crash when crafting an electric lunchbox (#4246) @SakuraKitsurugi
 - Fixed wool and wool carpets counting as a blaze burner fuel source (#4239) @mafien0
+- Fixed the recipe for the Line R and Slash R road stencils (#4274, #4275) @hollow-earth
+- Fixed a wax dupe with candles (#4264) @hollow-earth
+- Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed
