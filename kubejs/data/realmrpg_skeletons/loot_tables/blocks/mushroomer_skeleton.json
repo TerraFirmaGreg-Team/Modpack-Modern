@@ -16,12 +16,12 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:brown_mushroom",
+					"name": "tfg:food/fly_agaric",
 					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:red_mushroom",
+					"name": "beneath:food/portobello",
 					"weight": 50
 				},
 				{

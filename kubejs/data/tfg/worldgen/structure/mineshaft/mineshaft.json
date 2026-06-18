@@ -3,7 +3,7 @@
 	"start_pool": "tfg:mineshaft/mineshaft_start_pool",
 	"size": 15,
 	"max_distance_from_center": 116,
-	"biomes": "#tfg:has_structure/illages",
+	"biomes": "#tfg:has_structure/illager_camp",
 	"step": "surface_structures",
 	"terrain_adaptation": "none",
 	"start_height": {
@@ -12,14 +12,5 @@
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"use_expansion_hack": false,
 	"adapt_noise": true,
-	"spawn_overrides": {
-		"creature": {
-			"bounding_box": "full",
-			"spawns": []
-		},
-		"monster": {
-			"bounding_box": "full",
-			"spawns": []
-		}
-	}
+	"spawn_overrides": {}
 }
