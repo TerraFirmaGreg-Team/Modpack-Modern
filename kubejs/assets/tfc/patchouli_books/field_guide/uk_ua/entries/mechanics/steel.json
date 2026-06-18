@@ -37,7 +37,7 @@
         {
             "type": "patchouli:text",
             "anchor": "blue_steel",
-            "text": "$(thing)Синя сталь$() — це один із двох металів найвищого рівня, нарівні зі $(l:mechanics/steel#red_steel)червоною сталлю$(). Подібно до $(l:mechanics/steel#black_steel)чорної сталі$(), першим кроком є створення сплаву $(thing)сирої синьої сталі$() у $(l:mechanics/crucible)тиглі$().",
+            "text": "$(thing)Синя сталь$() — це один із двох металів найвищої віхи , нарівні зі $(l:mechanics/steel#red_steel)червоною сталлю$(). Подібно до $(l:mechanics/steel#black_steel)чорної сталі$(), першим кроком є створення сплаву $(thing)сирої синьої сталі$() у $(l:mechanics/crucible)тиглі$().",
             "title": "Синя сталь"
         },
         {
@@ -59,7 +59,7 @@
         {
             "type": "patchouli:text",
             "anchor": "red_steel",
-            "text": "$(thing)Червона сталь$() — це один із двох металів найвищого рівня, нарівні зі $(l:mechanics/steel#blue_steel)синьою сталлю$(). Подібно до $(l:mechanics/steel#black_steel)чорної сталі$(), першим кроком є створення сплаву $(thing)сирої червоної сталі$() у $(l:mechanics/crucible)тиглі$().",
+            "text": "$(thing)Червона сталь$() — це один із двох металів найвищої віхи, нарівні зі $(l:mechanics/steel#blue_steel)синьою сталлю$(). Подібно до $(l:mechanics/steel#black_steel)чорної сталі$(), першим кроком є створення сплаву $(thing)сирої червоної сталі$() у $(l:mechanics/crucible)тиглі$().",
             "title": "Червона сталь"
         },
         {

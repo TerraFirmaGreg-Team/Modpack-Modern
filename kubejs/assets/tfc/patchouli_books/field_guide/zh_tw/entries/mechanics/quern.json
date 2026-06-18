@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(thing)手推磨$()是用來研磨物品的裝置。可以粉碎粗礦以用於$(l:tfg_ores/ore_basics#processing)加工$()，還能製作粉末、$(l:mechanics/dye)染料$() 以及其他物品。它由$(thing)底座$()和$(thing)磨盤$()組合而成。"
+      "text": "$(thing)手推磨$()是用來研磨物品的裝置。可以粉碎原礦以用於$(l:tfg_ores/ore_basics#processing)加工$()，還能製作粉末、$(l:mechanics/dye)染料$() 以及其他物品。它由$(thing)底座$()和$(thing)磨盤$()組合而成。"
     },
     {
       "type": "patchouli:crafting",

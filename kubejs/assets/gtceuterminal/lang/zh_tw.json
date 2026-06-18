@@ -1,0 +1,16 @@
+{
+  "itemGroup.gtceuterminal": "格雷科技終端",
+  "item.gtceuterminal.multi_structure_manager": "多方塊結構管理器",
+  "item.gtceuterminal.schematic_interface": "結構藍圖接口",
+  "item.gtceuterminal.dismantler": "結構拆卸器",
+  "item.gtceuterminal.terminal.success": "多方塊結構建造成功",
+  "item.gtceuterminal.terminal.failed": "多方塊結構建造失敗",
+  "item.gtceuterminal.terminal.cooldown": "終端冷卻中",
+  "item.gtceuterminal.terminal.not_controller": "不是多方塊控制器",
+  "item.gtceuterminal.terminal.already_formed": "多方塊結構已成型",
+  "item.gtceuterminal.multi_structure_manager.tooltip": "管理與升級附近的多方塊結構",
+  "item.gtceuterminal.schematic_interface.tooltip": "複製貼上多方塊結構藍圖",
+  "item.gtceuterminal.dismantler.tooltip": "拆卸多方塊結構並退還組件",
+  "item.gtceuterminal.energy_analyzer": "能量分析儀",
+  "item.gtceuterminal.power_logger.desc": "監控機器耗能"
+}
