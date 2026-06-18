@@ -1,3 +1,8 @@
 {
-    "parent": "tfc:item/ore/cinnabar"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfc:item/ore/cinnabar",
+        "layer1": "tfc:item/ore/cinnabar",
+        "layer2": "tfc:item/ore/cinnabar"
+    }
 }
