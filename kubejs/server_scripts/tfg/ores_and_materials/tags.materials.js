@@ -16,6 +16,11 @@ function registerTFGMaterialItemTags(event) {
 	event.add('tfg:aluminium_oxide', '#forge:dusts/bauxite')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/sapphire')
 	event.add('tfg:aluminium_oxide', '#forge:dusts/green_sapphire')
+
+	event.remove('forge:raw_materials/cursecoal', 'beneath:cursecoal')
+	event.add('forge:raw_materials/anthracite', 'beneath:cursecoal')
+	event.add('forge:raw_materials/lignite', 'tfc:ore/lignite')
+	event.add('forge:raw_materials/coal', 'tfc:ore/bituminous_coal')
 }
 
 function registerTFGMaterialBlockTags(event) {

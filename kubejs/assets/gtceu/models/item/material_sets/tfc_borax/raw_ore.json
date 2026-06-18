@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "tfc:item/ore/borax",
+        "layer1": "tfc:item/ore/borax",
+        "layer2": "tfc:item/ore/borax"
+    }
+}
