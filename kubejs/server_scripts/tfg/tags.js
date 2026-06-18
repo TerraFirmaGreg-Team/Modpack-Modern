@@ -438,6 +438,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
 	event.add('forge:tin',               'gtceu:tin')
 	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
+
+	// Fluid tag to run the Ore Proc Multiblock
+
+	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
 }
 //#endregion
 
