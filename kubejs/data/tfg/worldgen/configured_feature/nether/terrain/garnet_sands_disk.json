@@ -19,6 +19,14 @@
 				"with": "gtceu:black_sand_garnet_sand_ore"
 			},
 			{
+				"replace": "tfg:dirt/mollisol",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
+				"replace": "tfg:coarse_dirt/mollisol",
+				"with": "gtceu:black_sand_garnet_sand_ore"
+			},
+			{
 				"replace": "beneath:crackrack",
 				"with": "gtceu:pink_sand_garnet_sand_ore"
 			}
