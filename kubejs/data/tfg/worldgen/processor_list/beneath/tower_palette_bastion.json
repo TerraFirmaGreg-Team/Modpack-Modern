@@ -1,6 +1,5 @@
 {
 	"processors": [
-
 	{
 	"processor_type": "lithostitched:condition",
 	"random_mode": {
@@ -106,7 +105,6 @@
 				"minecraft:bamboo_mosaic_slab": "minecraft:polished_blackstone_brick_slab"
 			}
 		},
-
 		{
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
