@@ -158,7 +158,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:cruncher",
 			"scale": 0.7,
-			"name": "Cruncher",
+			"name": "Chrupacz",
 			"text": "$(thing)Crunchers$() are territorial $(item)miniboss$() predators. Feed them meat to stop their regeneration. They can also be eaten."
 		},
 		{
