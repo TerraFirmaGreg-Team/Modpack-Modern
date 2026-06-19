@@ -6,7 +6,7 @@
 			"weight": 100,
 			"element": {
 				"location": "tfg:beneath/tower_start",
-				"processors": "tfg:beneath/tower_bastion",
+				"processors": "tfg:beneath/tower_low",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}

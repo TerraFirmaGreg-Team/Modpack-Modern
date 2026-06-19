@@ -12,11 +12,11 @@
 			"mode": "per_block",
 			"processor_lists": [
 				{
-				"weight": 3,
+				"weight": 7,
 				"data": "tfg:beneath/tower_palette_gilded"
 				},
 				{
-				"weight": 7,
+				"weight": 3,
 				"data": "tfg:beneath/tower_palette_magma"
 				}
 			]
