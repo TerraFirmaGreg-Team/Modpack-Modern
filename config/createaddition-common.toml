@@ -86,7 +86,7 @@
 	accumulator_max_output = 8388608
 	#Accumulator internal capacity per block in FE.
 	#Range: > 0
-	accumulator_capacity = 2000000
+	accumulator_capacity = 8000000
 	#Accumulator max multiblock height.
 	#Range: 1 ~ 8
 	accumulator_max_height = 5
