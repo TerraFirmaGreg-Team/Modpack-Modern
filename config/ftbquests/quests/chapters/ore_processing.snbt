@@ -213,6 +213,12 @@
 			x: 11.5d
 			y: -0.5d
 		}
+		{
+			id: "301568098B19286E"
+			linked_quest: "7343272F65129211"
+			x: 0.0d
+			y: -4.5d
+		}
 	]
 	quests: [
 		{
@@ -1368,15 +1374,13 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["701BCADAE5CF6CA5"]
+			dependencies: ["0F0525A70047EEB2"]
 			description: [
 				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.geologic_vulcanizer.desc.2}"
 			]
 			id: "2D40F76DFA41D747"
-			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.geologic_vulcanizer.subtitle}"
 			tasks: [{

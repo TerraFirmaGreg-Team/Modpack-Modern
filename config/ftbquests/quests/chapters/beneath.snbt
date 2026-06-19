@@ -30,6 +30,13 @@
 			x: 2.5d
 			y: 5.0d
 		}
+		{
+			id: "6434553A47118275"
+			linked_quest: "4F6C86CA85019228"
+			shape: "heart"
+			x: -1.0d
+			y: 7.0d
+		}
 	]
 	quests: [
 		{
@@ -635,6 +642,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.middle_slimes.desc}"]
+			disable_toast: true
 			icon: "tfg:slime/slime_ball/glowberry"
 			id: "743E9861F32E84A5"
 			subtitle: "{quests.tfg_tips.middle_slimes.subtitle}"

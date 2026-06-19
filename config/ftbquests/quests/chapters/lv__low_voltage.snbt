@@ -2131,7 +2131,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["701BCADAE5CF6CA5"]
+			dependencies: [
+				"701BCADAE5CF6CA5"
+				"5D0B0B9E61C3DE75"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.low_voltage.geologic_vulcanizer.desc.1}"
 				"{@pagebreak}"
