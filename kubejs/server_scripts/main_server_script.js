@@ -36,6 +36,7 @@ ServerEvents.tags('item', event => {
 	registerHotOrNotItemTags(event)
 	registerPrimitiveCreaturesItemTags(event)
 	registerRailWaysItemTags(event)
+	registerRealmRpgItemTags(event)
 	registerRnrItemTags(event)
 	registerSoulboundItemTags(event)
 	registerSNSItemTags(event)
@@ -69,6 +70,7 @@ ServerEvents.tags('block', event => {
 	registerGTCEUBlockTags(event)
 	registerMinecraftBlockTags(event)
 	registerRailWaysBlockTags(event)
+	registerRealmRpgBlockTags(event)
 	registerRnrBlockTags(event)
 	registerSpeciesBlockTags(event)
 	registerTACZBlockTags(event)
@@ -115,6 +117,7 @@ ServerEvents.tags('worldgen/biome', event => {
 	registerAdAstraBiomeTags(event)
 	registerCreatePickyWheelsBiomeTags(event)
 	registerTFGBiomeTags(event)
+	registerRealmRpgBiomeTags(event)
 	registerWansAncientBeastsBiomeTags(event)
 })
 

@@ -1,0 +1,42 @@
+{
+	"name": "tfg:mineshaft/strip/strip_hallway",
+	"fallback": "tfg:mineshaft/strip/strip_hallway",
+	"elements": [
+		{
+			"weight": 60,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/strip_hallway",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_1",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"location": "tfg:mineshaft/hallway/end_3",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
