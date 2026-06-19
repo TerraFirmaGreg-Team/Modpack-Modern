@@ -96,7 +96,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/5 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 25%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Cavernes Délabrés)Decaying Caverns$(/t)$(br2)$(thing)Types de pierre$(): Ardoise, Diorite, Gneiss, Marbre, Migmatite, Phyllite, Schiste, Travertin, Tuf",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 25%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 27$(br)$(thing)Biomes$(): $(t:Cavernes Délabrés)Decaying Caverns$(/t)$(br2)$(thing)Types de pierre$(): Ardoise, Diorite, Gneiss, Marbre, Migmatite, Phyllite, Schiste, Travertin, Tuf",
       "title": "Anthracite, Graphite",
       "type": "patchouli:text",
       "anchor": "beneath_coal_anthracite"
@@ -148,7 +148,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 24%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 15$(br)$(thing)Biomes$(): $(t:Deltas de Basalte)Basalt Deltas$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 24%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 15$(br)$(thing)Biomes$(): $(t:Forêt de Cendres)Ash Forest$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
       "title": "Bismuth, Sulfur, Saltpeter",
       "type": "patchouli:text",
       "anchor": "beneath_bismuth"
@@ -572,7 +572,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/5 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Haute et étroite)Veine tuyau$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)Hauteur$(): 60$(br)$(thing)Rayon$(): 4$(br)$(thing)Biomes$(): $(t:Banquise de Lave)Lava Floes$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Large et plate)Veine disque$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 50$(br)$(thing)Hauteur$(): 10$(br)$(thing)Biomes$(): $(t:Deltas de Basalte)Basalt Deltas$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
       "title": "Graphite, Bituminous Coal...",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
@@ -758,7 +758,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/5 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 21%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Large et plate)Veine disque$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 60$(br)$(thing)Hauteur$(): 10$(br)$(thing)Biomes$(): $(t:Banquise de Lave)Lava Floes$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/30 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 18%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Large et plate)Veine disque$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 50$(br)$(thing)Hauteur$(): 10$(br)$(thing)Biomes$(): $(t:Banquise de Lave)Lava Floes$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
       "title": "Irarsite, Ruarsite...",
       "type": "patchouli:text",
       "anchor": "beneath_psg"
@@ -1120,7 +1120,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 26%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 26$(br)$(thing)Biomes$(): $(t:Deltas de Basalte)Basalt Deltas$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 20%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Large et plate)Veine disque$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 45$(br)$(thing)Hauteur$(): 10$(br)$(thing)Biomes$(): $(t:Deltas de Basalte)Basalt Deltas$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
       "title": "Phlogopite, Sulfur, Apatite",
       "type": "patchouli:text",
       "anchor": "beneath_phlogopite"
@@ -1639,7 +1639,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Forêt de Cendres)Ash Forest$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/10 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 22%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:Les valeurs de Y entre lesquelles la veine peut se générer.)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 25$(br)$(thing)Biomes$(): $(t:Banquise de Lave)Lava Floes$(/t)$(br2)$(thing)Types de pierre$(): Basalte, Migmatite, Pyroxénite",
       "title": "Spodumène, Lithium, Sylvite",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
