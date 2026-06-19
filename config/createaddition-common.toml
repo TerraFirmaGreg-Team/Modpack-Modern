@@ -98,10 +98,10 @@
 [portable_energy_interface]
 	#PEI max input in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_input = 5000
+	pei_max_input = 8388608
 	#PEI max output in FE/t (Energy transfer).
 	#Range: > 0
-	pei_max_output = 5000
+	pei_max_output = 8388608
 
 #Tesla Coil
 [tesla_coil]
