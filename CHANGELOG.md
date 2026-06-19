@@ -6,8 +6,9 @@
 - Added more ores to the Beneath, including four brand new ones! @TomPlop
 - Added a new multiblock that exclusively works at the bottom of the Beneath - the Geologic Vulcanizer. Right now, it can process all your ores in one single recipe *and* return a bit of extra than you'd normally get doing all the steps separately! However, it's significantly more complicated to run... check the quest in LV for more details. @TomPlop
 - Added new textures for raw ore items and blocks! @Atraxia @Redeix
-#### Other changes
 - Reduced the processing speed of vibration tables @Pyritie
+#### Other changes
+- Added mineshaft structures to the overworld! @BlueBoat29
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
@@ -16,6 +17,7 @@
 - Improved the FPS performance of Struts @SakuraKitsurugi
 - Restored the recipe for copying configured Create filters (#4265) @Robak132
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
+- Mahoe and Araucaria now count as tannin logs @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
