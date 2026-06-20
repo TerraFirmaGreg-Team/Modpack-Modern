@@ -2842,69 +2842,6 @@
             ]
         },
         {
-            "pakku_id": "fYzrRo2M24y3MX3e",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "coastal-waves",
-                "modrinth": "coastal-waves"
-            },
-            "name": {
-                "curseforge": "Coastal Waves",
-                "modrinth": "Coastal Waves"
-            },
-            "id": {
-                "curseforge": "1155936",
-                "modrinth": "2ygdYUcf"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Waves-1.20.1-1.6.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7208/600/Waves-1.20.1-1.6.1.jar",
-                    "id": "7208600",
-                    "parent_id": "1155936",
-                    "hashes": {
-                        "sha1": "9704c7049b49ba6f5969ba2a1442490385764d03",
-                        "md5": "9012ca8827fef15f7fa78179ce2fbf86"
-                    },
-                    "required_dependencies": [],
-                    "size": 1337928,
-                    "date_published": "2025-11-10T23:43:44.807Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Waves-1.20.1-1.6a.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2ygdYUcf/versions/W02aROo3/Waves-1.20.1-1.6a.jar",
-                    "id": "W02aROo3",
-                    "parent_id": "2ygdYUcf",
-                    "hashes": {
-                        "sha512": "2aabdc5e6269bcc8d4d3f45525d77a24e3a79aa48582a0de92754f672147002d1df1c410e4aed89d1244771c47671d1c46317625bde9df1c150b5f59937c47e9",
-                        "sha1": "cd2242b9102cebbdb117591be1b7c0b3465e3122"
-                    },
-                    "required_dependencies": [],
-                    "size": 1337728,
-                    "date_published": "2025-09-29T19:03:24.210194Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "qbSjw1FZx0wmGMza",
             "pakku_links": [
                 "y0UC3kpLVhVgLz9b"

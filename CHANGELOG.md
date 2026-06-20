@@ -47,6 +47,8 @@
 - Fixed ash not accumulating in firepits
 #### Particular 1.5.5
 - Added splashing effects in other kinds of water, and fireflies in TFC biomes
+#### Waves
+- Temporarily removing this mod to investigate a potential chunk corruption bug. Feel free to re-add it if you want
 
 ## [0.12.10] - 09-06-2026
 ### Changes
