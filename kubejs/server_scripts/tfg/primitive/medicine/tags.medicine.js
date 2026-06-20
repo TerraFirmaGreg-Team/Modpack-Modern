@@ -109,7 +109,8 @@ function registerTFGMedicineItemTags(event) {
 		'tfc:plant/pulsatilla',
 		'firmalife:food/nightshade_berry',
 		'tfg:food/fly_agaric',
-		'tfg:plant/wither_rose'
+		'tfg:plant/wither_rose',
+		'minecraft:spider_eye'
 	];
 	poison_ingredients.forEach(items => { event.add('tfg:poison_ingredients', items) });
 
