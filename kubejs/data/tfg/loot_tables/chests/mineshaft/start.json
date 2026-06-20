@@ -109,6 +109,7 @@
 				{
 					"type": "minecraft:tag",
 					"name": "tfg:medicine/powders",
+					"expand": true,
 					"weight": 100,
 					"functions": [
 						{

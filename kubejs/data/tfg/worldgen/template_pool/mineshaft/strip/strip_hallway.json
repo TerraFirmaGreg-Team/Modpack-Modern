@@ -12,9 +12,45 @@
 			}
 		},
 		{
-			"weight": 15,
+			"weight": 3,
 			"element": {
 				"location": "tfg:mineshaft/strip_mine/strip_hallway_loot",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/strip_hallway_loot2",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/strip_hallway_loot3",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/strip_hallway_loot4",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:mineshaft/strip_mine/strip_hallway_loot5",
 				"processors": "tfg:mineshaft/support_fixer",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

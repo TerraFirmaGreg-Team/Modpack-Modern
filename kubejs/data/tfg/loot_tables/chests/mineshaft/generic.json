@@ -129,6 +129,7 @@
 				{
 					"type": "minecraft:tag",
 					"name": "tfg:medicine/powders",
+					"expand": true,
 					"weight": 100,
 					"functions": [
 						{
@@ -155,12 +156,23 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:olivine_glass_bottle",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:400,FluidName:\"tfg:muddy_water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "tfc:ceramic/jug",
 					"weight": 100,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
+							"tag": "{fluid:{Amount:100,FluidName:\"tfg:muddy_water\"}}"
 						}
 					]
 				},
