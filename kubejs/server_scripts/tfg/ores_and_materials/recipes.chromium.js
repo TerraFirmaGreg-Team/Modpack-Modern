@@ -51,7 +51,7 @@ function registerTFGChromiumProcessing(event) {
                 .outputFluids(Fluid.of('gtceu:carbon_monoxide', 3000))
                 .duration(36 * 20)
                 .EUt(GTValues.VA[GTValues.MV])
-                .blastFurnaceTemp(2050)
+                .blastFurnaceTemp(1250)
 
         event.recipes.gtceu.large_chemical_reactor('tfg:chromium_dust_from_hydrogen')
                 .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 5))
@@ -92,7 +92,7 @@ function registerTFGChromiumProcessing(event) {
                 .itemOutputs(Item.of('tfg:sodium_chromate_dust', 14), Item.of('tfg:wollastonite_dust', 15))
                 .duration(32 * 20)
                 .EUt(GTValues.VA[GTValues.MV])
-                .blastFurnaceTemp(1850)
+                .blastFurnaceTemp(1250)
 
         event.recipes.gtceu.chemical_reactor('tfg:sodium_dichromate_dust')
                 .itemInputs(Item.of('tfg:sodium_chromate_dust', 14))
