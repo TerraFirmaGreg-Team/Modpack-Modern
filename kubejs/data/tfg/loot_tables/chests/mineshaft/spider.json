@@ -1,0 +1,486 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfg:silk_fibers",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:dead_torch",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 25,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 25,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ladder",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 30,
+								"min": 15
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16,
+								"min": 8
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:rib_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:host_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:ward_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tide_armor_trim_smithing_template",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:antipoison_pill",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "tfg:medicine/powders",
+					"expand": true,
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:olivine_glass_bottle",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:400,FluidName:\"minecraft:water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:silica_glass_bottle",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:400,FluidName:\"tfg:muddy_water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/jug",
+					"weight": 100,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:100,FluidName:\"tfg:muddy_water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:matches",
+					"weight": 70,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:matchbox",
+					"weight": 70,
+					"functions": [
+						{
+							"tag": "{usesLeft:16}",
+							"function": "minecraft:set_nbt"
+						}
+					]
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "tfc:candles",
+					"expand": true,
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gunpowder",
+					"weight": 80,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8,
+								"min": 4
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:schist_support",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:rock/bricks/schist",
+					"weight": 90,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:chert_support",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:rock/bricks/chert",
+					"weight": 90,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:dacite_support",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:rock/bricks/dacite",
+					"weight": 90,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:dolomite_support",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:rock/bricks/dolomite",
+					"weight": 90,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:chalk_support",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 20,
+								"min": 12
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:rock/bricks/chalk",
+					"weight": 90,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 15,
+								"min": 6
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:tag",
+					"name": "chalk:chalks",
+					"expand": true,
+					"weight": 70
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:powderbarrel",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:dynamite",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:fire_charge",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:copper_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.3,
+								"max": 0.5
+							}
+						}
+					],
+					"weight": 90
+				}
+			],
+			"rolls": {
+				"type": "minecraft:uniform",
+				"max": 7,
+				"min": 5
+			}
+		}
+	]
+}

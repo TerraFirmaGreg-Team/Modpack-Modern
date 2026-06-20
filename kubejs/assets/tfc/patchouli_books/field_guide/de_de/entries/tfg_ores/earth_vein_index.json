@@ -39,7 +39,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenit, Molybdänit...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Zinkblende (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Zinkblende, Smaragd$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Zinn, Kassiterit (High)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenit, Molybdänit, Ölsand$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Zinkblende (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Zinkblende, Smaragd$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Zinn, Kassiterit (High)$()$()",
       "type": "patchouli:text"
     },
     {
@@ -4045,29 +4045,9 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/210 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 22%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 38$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 15$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Diorit, Gabbro, Granit",
-      "title": "Wulfenit, Molybdänit...",
+      "title": "Wulfenit, Molybdänit, Ölsand",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdänit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 57%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -4086,27 +4066,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 28%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdenum",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): Mo",
+      "text": "$(thing)Prozentzahl$(): 40%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -4126,13 +4086,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Prozentzahl$(): 34%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Molybdänit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 24%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

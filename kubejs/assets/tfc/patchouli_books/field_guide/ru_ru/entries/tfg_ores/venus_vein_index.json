@@ -8,7 +8,7 @@
   "pages": [
     {
       "Type": "patchouli:text",
-      "text": "This is the $(thing)Vein Index$() for $(item)Венера$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns in, and more.",
+      "text": "Это $(thing)Индекс жил$() для $(item)Венера$(). Каждая жила вмещает информацию про её редкость, плотность, глубину, размер и горных пород в которых её можно встретить.",
       "title": "Каталог жил Венеры",
       "type": "patchouli:text"
     },
@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/30 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Wide and flat)Disc Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)Высота$(): 6$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Ignimbrite, Lamproite, Андезит, Базальт, Дацит, Риолит, Травертин, Трахит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/30 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Широкая и плоская жила)Жила Пластинкой$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)Высота$(): 6$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Андезит, Базальт, Дацит, Игнимбрит, Лампроит, Риолит, Травертин, Трахит",
       "title": "Галит, Сильвин, Лепидолит...",
       "type": "patchouli:text",
       "anchor": "venus_manual_salt"
@@ -41,7 +41,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 80%$(br)$(thing)Source of$(): Sodium, Chlorine$(br)$(thing)Formula$(): NaCl",
+      "text": "$(thing)Процент нагрузки$(): 80%$(br)$(thing)Источник для$(): Натрий, Хлор$(br)$(thing)Формула$(): NaCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -61,7 +61,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Source of$(): Potassium, Chlorine, Fertilizer$(br)$(thing)Formula$(): KCl",
+      "text": "$(thing)Процент нагрузки$(): 10%$(br)$(thing)Источник для$(): Калий, Хлор, Удобрение$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -81,7 +81,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine$(br)$(thing)Formula$(): KLi₃Al₄F₂O₁₀",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Источник для$(): Азот, Литий, Алюминий, Фтор$(br)$(thing)Формула$(): KLi₃Al₄F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -101,7 +101,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Source of$(): Lithium, Aluminium$(br)$(thing)Formula$(): LiAlSi₂O₆",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Источник для$(): Литий, Алюминий$(br)$(thing)Формула$(): LiAlSi₂O₆",
       "type": "patchouli:multiblock"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t: Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/30 Чанки$(br)$(thing)$(t: Процент блоков в жиле которые являются рудой, а не камнем.Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 20$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Stone Types$(): Ignimbrite, Lamproite, Андезит, Базальт, Дацит, Риолит, Травертин, Трахит",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/30 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 20%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 40 — 65$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 20$(br)$(thing)$(t:Если расстояние между поверхностью и жилой больше этого числа, руда не генерирует поверхностные индикаторы.) Максимальная глубина индикатора(/t)$(): 30$(br)$(thing)Биомы$(): когда угодно$(br2)$(thing)Виды камня$(): Андезит, Базальт, Дацит, Игнимбрит, Лампроит, Риолит, Травертин, Трахит",
       "title": "Сера, Пирит, Сфалерит",
       "type": "patchouli:text",
       "anchor": "venus_manual_sulfur"
@@ -133,7 +133,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 80%$(br)$(thing)Source of$(): Sulfur$(br)$(thing)Formula$(): S",
+      "text": "$(thing)Процент нагрузки$(): 80%$(br)$(thing)Источник для$(): Сера$(br)$(thing)Формула$(): S",
       "type": "patchouli:multiblock"
     },
     {
@@ -153,7 +153,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): FeS₂",
+      "text": "$(thing)Процент нагрузки$(): 15%$(br)$(thing)Плавится в$(): Серый чугун$(br)$(thing)Формула$(): FeS₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -173,7 +173,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
+      "text": "$(thing)Процент нагрузки$(): 5%$(br)$(thing)Плавится в$(): Цинк$(br)$(thing)Формула$(): ZnS",
       "type": "patchouli:multiblock"
     }
   ],

@@ -2,12 +2,24 @@
 
 ## Unreleased
 ### Changes
+#### Ores
+- Added more ores to the Beneath, including four brand new ones! @TomPlop
+- Added a new multiblock that exclusively works at the bottom of the Beneath - the Geologic Vulcanizer. Right now, it can process all your ores in one single recipe *and* return a bit of extra than you'd normally get doing all the steps separately! However, it's significantly more complicated to run... check the quest in LV for more details. @TomPlop
+- Added new textures for raw ore items and blocks! @Atraxia @Redeix
 - Reduced the processing speed of vibration tables @Pyritie
+#### Other changes
+- Added mineshaft structures to the overworld! @BlueBoat29
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
 - Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
+- Increased the HP of cliff hangers and leaf hangers, but now they let go of the player when attacked @Pyritie
 - Improved the FPS performance of Struts @SakuraKitsurugi
+- Restored the recipe for copying configured Create filters (#4265) @Robak132
+- You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
+- Mahoe and Araucaria now count as tannin logs @Pyritie
+- Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
+- Added wild roses and feather groundcover to the overworld @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
@@ -21,6 +33,11 @@
 - Fixed another kinetic bridge exploit @ashleney
 - Fixed a crash when crafting an electric lunchbox (#4246) @SakuraKitsurugi
 - Fixed wool and wool carpets counting as a blaze burner fuel source (#4239) @mafien0
+- Fixed the recipe for the Line R and Slash R road stencils (#4274, #4275) @hollow-earth
+- Fixed a wax dupe with candles (#4264) @hollow-earth
+- Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
+- Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
+- Fixed new logs not being burnable @jmecn
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed
@@ -28,6 +45,10 @@
 - Fixed being able to light waterlogged candles
 - Fixed spring water not counting as water for some effects
 - Fixed ash not accumulating in firepits
+#### Particular 1.5.5
+- Added splashing effects in other kinds of water, and fireflies in TFC biomes
+#### Waves
+- Temporarily removing this mod to investigate a potential chunk corruption bug. Feel free to re-add it if you want
 
 ## [0.12.10] - 09-06-2026
 ### Changes

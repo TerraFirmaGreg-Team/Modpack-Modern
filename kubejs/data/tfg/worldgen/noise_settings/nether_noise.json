@@ -1311,7 +1311,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "tfc:rock/hardened/basalt"
+												"Name": "tfc:rock/cobble/basalt"
 											}
 										}
 									},

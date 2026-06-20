@@ -37,8 +37,8 @@ function registerTFGPrimitiveMaterials(event) {
 		.components('1x copper', '1x iron', '4x rhenium', '4x molybdenum', '8x sulfur')
 		.color(0x8bb054)
 		.secondaryColor(0x3d8021)
-		.iconSet(GTMaterialIconSet.getByName('tfc_emerald'))
-		.addOreByproducts('sulfur', 'rhenium', 'molybdenum')
+		.iconSet(GTMaterialIconSet.getByName('monoclinic_gem_horizontal'))
+		.addOreByproducts('sulfur', 'rhenium', 'molybdenite')
 
 	// Metals/minerals
 	event.create('aluminium_silicate')

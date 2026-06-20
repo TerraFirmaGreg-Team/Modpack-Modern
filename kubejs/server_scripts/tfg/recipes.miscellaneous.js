@@ -232,4 +232,53 @@ function registerTFGMiscellaneousRecipes(event) {
 	})
 
 	//#endregion
+		
+	// Silk thread
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('minecraft:string', [			
+			'4x tfg:silk_fibers',
+			'#tfg:tools/spindles'
+		]).id('tfg:shapeless/silk_fibers_to_thread'))
+
+	event.recipes.gtceu.wiremill('tfg:silk_fiber_thread')
+		.itemInputs('4x tfg:silk_fibers')
+		.itemOutputs('minecraft:string')
+		.duration(80)
+		.EUt(4)
+
+	// Prismatic Spray Can
+
+	event.recipes.gtceu.assembler('tfg:chemical_prismatic_die')
+		.itemInputs(
+			Item.of('gtceu:chemical_red_dye',16),
+			Item.of('gtceu:chemical_yellow_dye',16),
+			Item.of('gtceu:chemical_green_dye',16),
+			Item.of('gtceu:chemical_blue_dye',16),
+			Item.of('gtceu:chemical_brown_dye', 16),
+			Item.of('gtceu:chemical_white_dye', 16),
+			Item.of('gtceu:chemical_black_dye', 16),
+			Item.of('glow_ink_sac',16)
+			)
+		.itemOutputs('tfg:chemical_prismatic_dye')
+		.duration(20*15)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.extractor('tfg:chemical_prismatic_fluid')
+		.itemInputs(Item.of('tfg:chemical_prismatic_dye', 1))
+		.outputFluids(Fluid.of('tfg:prismatic_paint', 1000))
+		.duration(20*30)
+		.EUt(GTValues.VA[GTValues.MV])
+
+	event.recipes.gtceu.assembler('tfg:chemical_prismatic_spraycan')
+    .itemInputs(
+        Item.of('gtceu:empty_spray_can', 1),
+        Item.of('gtceu:solvent_spray_can', 1),
+        Item.of('gtceu:double_vanadium_steel_plate', 1)
+    )
+    .itemOutputs(
+        Item.of('tfg:chameleon_spray_can', 1, '{Fluid:{Amount:0,FluidName:"tfg:prismatic_paint"},color:-1}')
+    )
+    .duration(20 * 30)
+    .EUt(GTValues.VA[GTValues.MV])
+	
 }

@@ -56,6 +56,8 @@ const registerTFGRecipes = (event) => {
 	registerTFGHVMaterialRecipes(event)
 	registerTFGMoSiBRecipes(event)
 
+	registerTFGBeneathOreProcRecipes(event)
+
 	registerTFGCasingRecipes(event)
 	registerTFGCircuitRecipes(event)
 	registerTFGEnderPearlRecipes(event)

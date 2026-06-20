@@ -582,7 +582,7 @@ const registerFirmaLifeRecipes = (event) => {
 			.ingredients([
 				TFC.ingredient.notRotten(`tfc:food/${grain.name}_flour`),
 				`#tfc:sweetener`],
-				Fluid.of('firmalife:yeast_starter', 200))
+				Fluid.of('firmalife:yeast_starter', 100))
 			.outputItem(`4x firmalife:food/${grain.name}_dough`)
 			.id(`tfg:mixing_bowl/${grain.name}_dough`)
 

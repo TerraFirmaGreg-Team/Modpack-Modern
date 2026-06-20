@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "realmrpg_skeletons:templates/full_skeleton",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "beneath:food/portobello",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:empty",
+					"weight": 50
+				}
+			]
+		}
+	]
+}

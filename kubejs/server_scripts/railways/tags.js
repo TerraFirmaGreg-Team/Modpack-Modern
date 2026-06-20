@@ -11,6 +11,8 @@ const registerRailWaysItemTags = (event) => {
 		event.remove('c:hidden_from_recipe_viewers', `railways:${dye}_conductor_cap`)
 	})
 
+	event.remove('c:hidden_from_recipe_viewers', `railways:track_incomplete_phantom`)
+
 	event.remove('railways:palettes/cycle_groups/netherite/hazard_stripes_black', 'railways:hazard_stripes_diagonal_on_black')
 	event.remove('railways:palettes/cycle_groups/netherite/hazard_stripes_black', 'railways:hazard_stripes_chevron_on_black')
 	event.remove('railways:palettes/cycle_groups/netherite/hazard_stripes_white', 'railways:hazard_stripes_diagonal_on_white')

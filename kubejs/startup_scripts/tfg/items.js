@@ -83,4 +83,10 @@ const registerTFGItems = (event) => {
 	event.create('tfg:worked_optical_borosilicate_blank')
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
+
+	// Prismatic Related Stuff (Spray Can)
+
+	event.create('tfg:chemical_prismatic_dye')
+		.texture('tfg:item/chemical_prismatic_dye')
+		.tag('forge:dyes/prismatic')
 }

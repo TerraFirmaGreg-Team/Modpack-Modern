@@ -93,4 +93,5 @@ const registerFirmaLifeFluidTags = (event) => {
     event.add('firmalife:oils', 'gtceu:seed_oil')
     event.add('firmalife:oils', 'gtceu:fish_oil')
     event.add('firmalife:oils', 'tfg:triglyceride_oil')
+    event.add('firmalife:oils', 'tfg:peanut_oil')
 }

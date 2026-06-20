@@ -38,7 +38,10 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
 	GTMaterials.Thorium.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.ANY, $TFGT_MEDICAL_CONDITIONS.RADIOACTIVE, 1, true));
-
+	
+	GTMaterials.get('irarsite').setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
+	GTMaterials.get('ruarsite').setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
+	
 	// This contains hazardous elements so GT tags it as hazardous automatically
 	GTMaterials.get('ostrum').getProperties().removeProperty(PropertyKey.HAZARD);
 	GTMaterials.get('ostrum_iodide').getProperties().removeProperty(PropertyKey.HAZARD);
@@ -62,4 +65,5 @@ function registerTFGPropertyMaterialModification(event) {
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.INGOT)
 	GTMaterials.Thorium.getProperties().removeProperty(PropertyKey.FLUID)
 	GTMaterials.Plutonium239.getProperties().removeProperty(PropertyKey.ORE)
+	GTMaterials.Molybdenite.getProperty(PropertyKey.ORE).setDirectSmeltResult(GTMaterials.NULL);
 }

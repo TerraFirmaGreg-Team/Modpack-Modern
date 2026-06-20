@@ -130,12 +130,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
-	
-	event.add('tfcambiental:cold_stuff', 'minecraft:packed_ice')
-	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-
 	// Tag for new lenses
 
 	event.add('forge:lenses/orange', 'gtceu:spessartine_lens')
@@ -438,6 +432,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
 	event.add('forge:tin',               'gtceu:tin')
 	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
+
+	// Fluid tag to run the Ore Proc Multiblock
+
+	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
 }
 //#endregion
 

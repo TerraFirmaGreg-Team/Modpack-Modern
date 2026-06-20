@@ -2988,6 +2988,7 @@
 		}
 		{
 			description: ["{quests.tfg_tips.terrafirmacraft.desc}"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {

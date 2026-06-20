@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Lítio, Esfalerita, Pirita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Lítio, Ilmenita, Alumínio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Pedra-sabão, Talco...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pirolusita, Cobaltita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartzito, Quartzo Certus...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Rubi, Cinábrio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Safira Verde, Bauxita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salitre, Pedra-sabão...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Scheelita, Tungstato, Lítio$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Tetraedrita, Cobre Nativo...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topázio Azul, Topázio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenita, Molibdenita...$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Lítio, Esfalerita, Pirita$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Lítio, Ilmenita, Alumínio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Pedra-sabão, Talco...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)Pirolusita, Cobaltita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartzito, Quartzo Certus...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Rubi, Cinábrio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)Safira Verde, Bauxita...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salitre, Pedra-sabão...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Scheelita, Tungstato, Lítio$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Tetraedrita, Cobre Nativo...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)Topázio Azul, Topázio...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenita, Powelita...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2427,7 +2427,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/245 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Basalto, Dacito, Gabro, Norito",
-      "title": "Wulfenita, Molibdenita...",
+      "title": "Wulfenita, Powelita...",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
     },
@@ -2453,26 +2453,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Molibdenita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Powelita",
       "multiblock": {
         "mapping": {
@@ -2488,7 +2468,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 16%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Porcentagem$(): 33%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Molibdenita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 16%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {

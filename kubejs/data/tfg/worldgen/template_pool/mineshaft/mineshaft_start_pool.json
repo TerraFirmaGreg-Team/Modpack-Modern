@@ -1,0 +1,19 @@
+{
+	"name": "tfg:mineshaft/mineshaft_start_pool",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 50,
+			"element": {
+				"element_type": "lithostitched:delegating",
+				"delegate": {
+					"location": "tfg:mineshaft/surface/small_hut",
+					"processors": "tfg:mineshaft/surface_fixer",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				},
+				"override_terrain_adaption": "bury"
+			}
+		}
+	]
+}

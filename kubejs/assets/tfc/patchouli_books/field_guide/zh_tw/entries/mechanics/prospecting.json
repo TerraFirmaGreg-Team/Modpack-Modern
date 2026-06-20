@@ -71,7 +71,7 @@
         "tfg:textures/gui/field_guide/prospecting/tfg_luv_ore_prospector.png"
       ],
       "border": true,
-      "text": "這是使用$(#e373ff)LuV 探礦儀$()時會看到的一個例子。"
+      "text": "這是使用$(#e373ff)LuV 探礦儀$()時會看到的例子。"
     }
   ],
   "read_by_default": true,

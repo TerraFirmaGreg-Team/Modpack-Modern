@@ -985,6 +985,12 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
 
+	event.recipes.gtceu.macerator('tfg:skeleton_skull')
+		.itemInputs('minecraft:skeleton_skull')
+		.itemOutputs('8x minecraft:bone_meal')
+		.EUt(2)
+		.duration(50)
+
 	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:ink_sac', '#forge:dyes/black')
 
 	// #endregion
