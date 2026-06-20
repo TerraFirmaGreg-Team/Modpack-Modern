@@ -81,6 +81,32 @@ function registerTFGBeneathOreProcRecipes(event) {
 		.duration(12 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
+	// Custom PSG for new Ores - PLACE HOLDER
+
+	event.recipes.gtceu.chemical_reactor('tfg:platinum_group_sludge_dust_from_ferhodsite')
+		.itemInputs(Item.of('gtceu:purified_ferhodsite_ore', 1))
+		.inputFluids(Fluid.of('gtceu:nitric_acid', 100))
+		.itemOutputs(Item.of('gtceu:platinum_group_sludge_dust', 4))
+		.outputFluids(Fluid.of('gtceu:sulfuric_nickel_solution', 1000))
+		.duration(2.5 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:platinum_group_sludge_dust_from_ruarsite')
+		.itemInputs(Item.of('gtceu:purified_ruarsite_ore', 1))
+		.inputFluids(Fluid.of('gtceu:nitric_acid', 100))
+		.itemOutputs(Item.of('gtceu:platinum_group_sludge_dust', 4))
+		.outputFluids(Fluid.of('gtceu:sulfuric_copper_solution', 1000))
+		.duration(2.5 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.chemical_reactor('tfg:platinum_group_sludge_dust_from_irarsite')
+		.itemInputs(Item.of('gtceu:purified_irarsite_ore', 1))
+		.inputFluids(Fluid.of('gtceu:nitric_acid', 100))
+		.itemOutputs(Item.of('gtceu:platinum_group_sludge_dust', 4))
+		.outputFluids(Fluid.of('gtceu:sulfuric_copper_solution', 1000))
+		.duration(2.5 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
 	// Ore processing recipes in the Ore Processing Multiblock
 
 	function processOreGas(material) {
