@@ -36,6 +36,7 @@
 - Fixed a wax dupe with candles (#4264) @hollow-earth
 - Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
 - Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
+- Fixed new logs not being burnable @jmecn
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed
