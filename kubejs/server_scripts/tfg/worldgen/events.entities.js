@@ -11,8 +11,8 @@ const NEW_MOB_MAX_HP = {
 	"species:leaf_hanger": 20,
 	"species:cliff_hanger": 20,
 	"species:spectre": 16,
-	"species:ghoul": 60,
-	"species:bewereager": 40,
+	"species:ghoul": 40,
+	"species:bewereager": 50,
 	"species:mammutilation": 50,
 
 	// moon mobs

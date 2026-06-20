@@ -1,32 +1,38 @@
 {
-	"feature": "tfg:earth/fluid_vein/gas_vent",
+	"feature": "tfg:nether/fluid_vein/gas_vent",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 1
+			"type": "minecraft:count",
+			"count": 3
 		},
 		{
 			"type": "minecraft:in_square"
 		},
 		{
-			"type": "minecraft:heightmap",
-			"heightmap": "MOTION_BLOCKING_NO_LEAVES"
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 80
+				},
+				"min_inclusive": {
+					"above_bottom": 35
+				}
+			}
 		},
 		{
-			"type": "minecraft:block_predicate_filter",
-			"predicate": {
-				"type": "minecraft:not",
-				"predicate": {
-					"type": "minecraft:matching_blocks",
-					"offset": [ 0, -1, 0 ],
-					"blocks": [
-						"tfc:fluid/salt_water",
-						"tfc:sea_ice",
-						"minecraft:ice",
-						"minecraft:packed_ice",
-						"minecraft:blue_ice"
-					]
-				}
+			"type": "minecraft:biome"
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": "minecraft:air"
+			},
+			"direction_of_search": "down",
+			"max_steps": 12,
+			"target_condition": {
+				"type": "minecraft:solid"
 			}
 		},
 		{
@@ -35,6 +41,14 @@
 				"tfg:beneath_gas_weak",
 				"tfg:beneath_gas_strong"
 			]
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 1
+		},
+		{
+			"type": "minecraft:biome"
 		}
 	]
 }

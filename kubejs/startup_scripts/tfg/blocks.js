@@ -12,6 +12,7 @@ const registerTFGBlocks = (event) => {
 	registerTFGNewWoodBlocks(event)
 
 	registerTFGMarsTrees(event)
+	registerTFGWorldGenEarthDecoBlocks(event)
 	registerTFGWorldGenBeneathDecoBlocks(event)
 	registerTFGWorldGenMoonDecoBlocks(event)
 	registerTFGWorldGenMarsDecoBlocks(event)

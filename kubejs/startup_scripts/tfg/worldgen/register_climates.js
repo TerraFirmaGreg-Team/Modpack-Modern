@@ -151,11 +151,11 @@ TFCEvents.registerClimateModel(event => {
 
 	event.register('tfg:nether_climate', builder => {
 		builder.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 18.0, 20, 100);
 		})
 
 		builder.setAverageTemperatureCalculation((level, pos) => {
-			return clamp(80.0 * Math.pow(0.983, pos.y) + 20.0, 20, 100);
+			return clamp(80.0 * Math.pow(0.983, pos.y) + 18.0, 20, 100);
 		})
 
 		builder.setAverageRainfallCalculation((level, pos) => {

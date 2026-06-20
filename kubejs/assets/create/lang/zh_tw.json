@@ -3030,7 +3030,7 @@
 	"create.track_signal.cannot_change_mode": "無法切換訊號模式",
 	"create.track_signal.mode_change.cross_signal": "-> 若區間可穿越則允許通行",
 	"create.track_signal.mode_change.entry_signal": "-> 若區間未被占用則允許通行",
-	"create.track_signal.mode_controlled_by_computer": "信號模式由電腦控制",
+	"create.track_signal.mode_controlled_by_computer": "訊號模式由電腦控制",
 	"create.track_target.clear": "軌道選擇已清除",
 	"create.track_target.invalid": "無法在此定位該軌道",
 	"create.track_target.missing": "先對目標火車軌道點擊右鍵",

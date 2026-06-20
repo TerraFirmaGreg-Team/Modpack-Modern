@@ -67,7 +67,9 @@
 			"tfg:nether/surface/guano_patch"
 		],
 		"#tfg:nether_global_decoration",
-		[]
+		[
+			"tfg:nether/fluid_vein/gas_vent"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -99,38 +101,32 @@
 			{
 				"type": "minecraft:hoglin",
 				"maxCount": 4,
-				"minCount": 2,
+				"minCount": 3,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:magma_cube",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 2,
+				"minCount": 1,
 				"weight": 50
 			},
 			{
 				"type": "primitive_creatures:golem_2",
-				"maxCount": 3,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "minecraft:phantom",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 20
+				"weight": 30
 			},
 			{
 				"type": "minecraft:wither_skeleton",
 				"maxCount": 2,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
-			},
-			{
-				"type": "minecraft:enderman",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
 			},
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
@@ -142,25 +138,25 @@
 				"type": "species:cliff_hanger",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 10
 			},
 			{
 				"type": "species:ghoul",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 30
 			},
 			{
 				"type": "species:wicked",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "species:bewereager",
