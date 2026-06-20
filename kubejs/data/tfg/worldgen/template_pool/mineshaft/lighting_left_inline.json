@@ -12,7 +12,7 @@
 			}
 		},
 		{
-			"weight": 3,
+			"weight": 2,
 			"element": {
 				"location": "tfg:mineshaft/lighting/lamp_l",
 				"processors": "tfg:mineshaft/support_fixer",
