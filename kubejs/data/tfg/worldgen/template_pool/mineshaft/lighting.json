@@ -3,7 +3,7 @@
 	"fallback": "tfg:mineshaft/fallback/lighting_fallback",
 	"elements": [
 		{
-			"weight": 4,
+			"weight": 10,
 			"element": {
 				"location": "tfg:mineshaft/lighting/torches",
 				"processors": "tfg:mineshaft/support_fixer",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"weight": 5,
+			"weight": 10,
 			"element": {
 				"location": "minecraft:empty",
 				"processors": "tfg:mineshaft/support_fixer",
