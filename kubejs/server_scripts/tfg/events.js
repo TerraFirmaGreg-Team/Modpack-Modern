@@ -85,3 +85,14 @@ miners.forEach(miner => {
 		}
 	})
 })
+
+// Spawn spiders when an egg sack breaks
+BlockEvents.broken("tfg:spider_sac", event => {
+	const { block, level } = event
+
+	for (let i = 0; i < 3; i++) {
+		let spider = level.createEntity("endermanoverhaul:scarab");
+		spider.setPosition(block.x + 0.4 + (i / 5), block.y + 0.4 + (i / 5), block.z + 0.4 + (i / 5))
+		spider.spawn();
+	}
+})
