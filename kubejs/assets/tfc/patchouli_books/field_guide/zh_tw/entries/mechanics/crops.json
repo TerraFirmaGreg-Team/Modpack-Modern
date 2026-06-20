@@ -31,7 +31,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "gtceu:shaped/hoe_stone",
-			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵點擊泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。"
+			"text": "鋤頭打製成型後，即可製成鋤頭。$(br2)鋤頭的功能與原版相同，右鍵泥土即可將其變成$(thing)耕地$()。也可以將$(thing)纏根土$()變成$(thing)泥土$()。"
 		},
 		{
 			"type": "patchouli:text",
@@ -3926,7 +3926,7 @@
 			"type": "patchouli:text",
 			"anchor": "radish",
 			"title": "菜頭",
-			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 15 - 65 %$(br)$(bold)養分$(): 鉀$(br2)蘿蔔作為$(thing)蔬菜$()食用。若要在寒冷的地方生存，蘿蔔是個不錯的選擇。"
+			"text": "$(bold)$(l:the_world/climate#temperature)溫度$(): -20 - 20 °C$(br)$(bold)$(l:mechanics/hydration)濕度$(): 15 - 65 %$(br)$(bold)養分$(): 鉀$(br2)蘿蔔作為$(thing)蔬菜$()食用。若要在寒冷的地方生存，蘿蔔是不錯的選擇。"
 		},
 		{
 			"type": "tfc:multimultiblock",

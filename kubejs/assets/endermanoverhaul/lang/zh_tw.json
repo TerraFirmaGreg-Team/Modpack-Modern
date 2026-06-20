@@ -109,7 +109,7 @@
 	"subtitles.endermanoverhaul.entity.tall_enderman.death": "高大終界使者死亡",
 	"subtitles.endermanoverhaul.entity.tall_enderman.stare": "高大終界使者尖叫",
 	"tag.item.endermanoverhaul.ender_pearls": "終界珍珠",
-	"tooltip.endermanoverhaul.ancient_pearl": "召喚一個友好的終界使者為你戰鬥",
+	"tooltip.endermanoverhaul.ancient_pearl": "召喚友好的終界使者為你戰鬥",
 	"tooltip.endermanoverhaul.ancient_pet": "寵物生命值: %.1f",
 	"tooltip.endermanoverhaul.bound_to": "綁定到: %s",
 	"tooltip.endermanoverhaul.bubble_pearl": "精準的終界珍珠，不受重力影響",
@@ -120,8 +120,8 @@
 	"tooltip.endermanoverhaul.hood": "允許玩家觀看終界使者而不激怒它們",
 	"tooltip.endermanoverhaul.icy_pearl": "擊中時凍結附近的目標",
 	"tooltip.endermanoverhaul.not_bound": "未綁定",
-	"tooltip.endermanoverhaul.soul_pearl_1": "按住Shift+滑鼠右鍵點擊以綁定實體",
-	"tooltip.endermanoverhaul.soul_pearl_2": "將綁定的實體傳送到目標位置",
+	"tooltip.endermanoverhaul.soul_pearl_1": "Shift+右鍵生物進行綁定",
+	"tooltip.endermanoverhaul.soul_pearl_2": "將綁定的生物傳送到目標位置",
 	"tooltip.endermanoverhaul.summoner_pearl": "擊中時傳送到附近的目標",
 	"tooltip.endermanoverhaul.warped_pearl": "傳送時套用抗性 II"
 }

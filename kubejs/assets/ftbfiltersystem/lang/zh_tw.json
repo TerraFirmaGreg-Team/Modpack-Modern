@@ -24,7 +24,7 @@
   "filter.ftbfiltersystem.not.name": "相反",
   "filter.ftbfiltersystem.not.tooltip": "複合篩選：在子篩選沒有匹配時生效。最多添加一個子篩選。",
   "filter.ftbfiltersystem.only_one.name": "唯一",
-  "filter.ftbfiltersystem.only_one.tooltip": "複合篩選：僅在精確符合其中一個子過濾時生效。",
+  "filter.ftbfiltersystem.only_one.tooltip": "複合篩選：僅在精確符合任意子過濾時生效。",
   "filter.ftbfiltersystem.or.name": "任意",
   "filter.ftbfiltersystem.or.tooltip": "複合篩選：當任何子篩選符合條件時視為匹配成功。",
   "filter.ftbfiltersystem.root.name": "所有(根節點)",
@@ -57,6 +57,6 @@
   "ftbfiltersystem.message.not_matched": "篩選不匹配: %s",
   "ftbfiltersystem.message.parse_failed": "篩選解析失敗: %s",
   "item.ftbfiltersystem.smart_filter": "智能篩選器",
-  "item.ftbfiltersystem.smart_filter.tooltip.1": "滑鼠右鍵點擊：設定篩選器",
-  "item.ftbfiltersystem.smart_filter.tooltip.2": "潛行時滑鼠右鍵點擊：使用副手的物品測試篩選"
+  "item.ftbfiltersystem.smart_filter.tooltip.1": "右鍵：設定篩選器",
+  "item.ftbfiltersystem.smart_filter.tooltip.2": "潛行時右鍵：使用副手的物品測試篩選"
 }

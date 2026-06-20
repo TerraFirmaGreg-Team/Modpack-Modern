@@ -81,7 +81,7 @@
       "images": [
         "tfc:textures/gui/book/gui/casting.png"
       ],
-      "text": "手持小缸按下$(item)$(k:key.use)$()開啟$(thing)鑄造$()界面。",
+      "text": "手持小缸按下$(item)$(k:key.use)$()開啟$(thing)鑄造$()介面。",
       "border": false
     },
     {
