@@ -65,7 +65,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "牛奶",
-			"text": "$(thing)牛奶$()透過在大多數雌性牲畜右鍵點擊木桶或水桶來取得，前提是親密度要足夠高。(如果擠乳作業不正常，請確保奶桶沒有堆疊在一起。)$(br)雖然它不提供任何增益效果，但飯後飲用可以提供乳製品營養，還可以製成乳酪。",
+			"text": "$(thing)牛奶$()是手持木桶或水桶時右鍵雌性牲畜取得，前提是親密度要夠高。(如果擠乳作業不正常，請確保奶桶沒有堆疊在一起。)$(br)雖然它不提供任何增益效果，但飯後飲用可以提供乳製品營養，還可以製成乳酪。",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},

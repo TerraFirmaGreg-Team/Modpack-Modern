@@ -8,7 +8,7 @@
         {
             "type": "patchouli:text",
             "title": "Working with Anvils",
-            "text": "用$(l:mechanics/anvils)砧$()$(l:mechanics/anvils#working)鍛造$()是$(thing)群巒格雷$()的關鍵流程，在邁向$(thing)蒸汽與機械時代$()前，大多數工作都需要使用砧。$(br)本指南分為兩個部分：$(l:tfg_tips/anvil_working_guide#ui_explained)介紹界面$()與$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)如何完美鍛造$()。$(br2)模組包有一個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() 的自訂$(thing)資源包$()，需要啟用才能理解本指南。$()"
+            "text": "用$(l:mechanics/anvils)砧$()$(l:mechanics/anvils#working)鍛造$()是$(thing)群巒格雷$()的關鍵流程，在邁向$(thing)蒸汽與機械時代$()前，大多數工作都需要使用砧。$(br)本指南分為兩個部分：$(l:tfg_tips/anvil_working_guide#ui_explained)介紹介面$()與$(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)如何完美鍛造$()。$(br2)模組包有個名為$(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() 的自訂$(thing)資源包$()，需要啟用才能理解本指南。$()"
         },
         {
             "type": "patchouli:image",
@@ -16,7 +16,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"
             ],
             "border": false,
-            "text": "啟用TFC Anvil Helper後的砧界面"
+            "text": "啟用TFC Anvil Helper後的砧介面"
         },
         {
             "type": "patchouli:image",
@@ -25,8 +25,8 @@
             ],
             "border": false,
             "anchor": "ui_explained",
-            "tile": "界面與你",
-            "text": "啟用TFC Anvil Helper資源包後砧的界面以顏色標記。"
+            "tile": "介面與你",
+            "text": "啟用TFC Anvil Helper資源包後砧的介面以顏色標記。"
         },
         {
             "type": "patchouli:text",
@@ -63,7 +63,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(#00a7ff)5.這邊的插槽放置鎚子以及助焊劑$()$(br)$(#00e622)6.物品當前的工作量$()執行不同步驟會增/減物品的工作量.$(br)$(#e6dc00)7.這個物件的工作值$()$(#00ff26)工作值$()必須與目標工作值完全對齊，且$(#ff00c6)必要步驟$()必須被滿足，物品才能被視為完成.$(br)$(#ff6b00)8.工作條$()用來查看工作值與目標工作值是否一致。"
+            "text": "$(#00a7ff)5.這邊的欄位放置鎚子以及助焊劑$()$(br)$(#00e622)6.物品當前的工作量$()執行不同步驟會增/減物品的工作量.$(br)$(#e6dc00)7.這個物件的工作值$()$(#00ff26)工作值$()必須與目標工作值完全對齊，且$(#ff00c6)必要步驟$()必須被滿足，物品才能被視為完成.$(br)$(#ff6b00)8.工作條$()用來查看工作值與目標工作值是否一致。"
         },
         {
             "type": "patchouli:text",
@@ -77,7 +77,7 @@
                 "tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"
             ],
             "border": false,
-            "text": "一個完美鍛造的鍛鐵鎬頭"
+            "text": "完美鍛造的鍛鐵鎬頭"
         },
         {
             "type": "patchouli:spotlight",

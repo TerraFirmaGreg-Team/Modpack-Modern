@@ -1,6 +1,6 @@
 {
   "ftbteams.accept": "接受 ✔",
-  "ftbteams.already_in_party": "你已經在一個團隊中了！",
+  "ftbteams.already_in_party": "你已有個團隊！",
   "ftbteams.api_override": "在此整合包中，你只能透過物品欄中的「我的團隊」按鈕建立團隊！",
   "ftbteams.cant_edit": "你無法編輯 %s！",
   "ftbteams.cant_kick_owner": "無法踢出隊長！",
@@ -61,7 +61,7 @@
   "ftbteams.not_officer": "%s 不是 %s 的管理者！",
   "ftbteams.owner_cant_leave": "你必須在離開前轉移團隊的擁有權！",
   "ftbteams.party_api_only": "在此整合包中，你無法直接建立團隊！",
-  "ftbteams.player_already_in_party": "玩家「%s」已經在一個團隊中！",
+  "ftbteams.player_already_in_party": "玩家「%s」已經有個團隊！",
   "ftbteams.privacy_mode.allies": "盟友",
   "ftbteams.privacy_mode.private": "私人",
   "ftbteams.privacy_mode.public": "公開",

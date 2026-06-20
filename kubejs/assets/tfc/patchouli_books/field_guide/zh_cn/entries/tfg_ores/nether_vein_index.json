@@ -118,7 +118,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 60%$(br)$(thing)Source of$(): Aluminium, Fluorine$(br)$(thing)化学式$(): KMg₃AlSi₃O₁₀F₂",
+      "text": "$(thing)百分比$(): 60%$(br)$(thing)来源$(): 铝, 氟$(br)$(thing)化学式$(): KMg₃AlSi₃O₁₀F₂",
       "type": "patchouli:multiblock"
     },
     {

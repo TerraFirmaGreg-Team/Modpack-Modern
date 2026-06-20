@@ -19,6 +19,7 @@
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
 - Mahoe and Araucaria now count as tannin logs @Pyritie
 - Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
+- Added wild roses and feather groundcover to the overworld @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
@@ -36,6 +37,7 @@
 - Fixed a wax dupe with candles (#4264) @hollow-earth
 - Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
 - Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
+- Fixed new logs not being burnable @jmecn
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed

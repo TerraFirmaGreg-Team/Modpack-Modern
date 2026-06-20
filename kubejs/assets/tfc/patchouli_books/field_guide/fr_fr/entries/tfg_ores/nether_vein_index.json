@@ -1142,7 +1142,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 60%$(br)$(thing)Source of$(): Aluminium, Fluorine$(br)$(thing)Formule$(): KMg₃AlSi₃O₁₀F₂",
+      "text": "$(thing)Pourcentage$(): 60%$(br)$(thing)Source de$() : Aluminium, Fluor$(br)$(thing)Formule$(): KMg₃AlSi₃O₁₀F₂",
       "type": "patchouli:multiblock"
     },
     {

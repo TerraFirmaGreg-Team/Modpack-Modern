@@ -93,7 +93,7 @@ function modifyTFGIconSets(event) {
     
     GTMaterials.Bismuth.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_bismuth'))
     GTMaterials.Cassiterite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
-    GTMaterials.Tin.setMaterialIconSet(GTMaterialIconSet.getByName('cubic_metallic'))
+    GTMaterials.Tin.setMaterialIconSet(GTMaterialIconSet.getByName('cubic_bright'))
     GTMaterials.Garnierite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Nickel.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
     GTMaterials.Hematite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
