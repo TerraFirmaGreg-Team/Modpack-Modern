@@ -51,7 +51,7 @@ function registerTFGChromiumProcessing(event) {
                 .outputFluids(Fluid.of('gtceu:carbon_monoxide', 3000))
                 .duration(36 * 20)
                 .EUt(GTValues.VA[GTValues.MV])
-                .blastFurnaceTemp(1250)
+                .blastFurnaceTemp(2050)
 
         event.recipes.gtceu.large_chemical_reactor('tfg:chromium_dust_from_hydrogen')
                 .itemInputs(Item.of('tfg:chromium_3_oxide_dust', 5))
