@@ -3525,7 +3525,7 @@
 	"tfg.emi.ore_veins.y_ranges": "Y Level: %d to %d",
 	"tfg.emi.ore_veins.projected": "Below Surface: %d to %d",
 	"tfg.emi.ore_veins.projected.emi.0": "Vein depth is relative",
-	"tfg.emi.ore_veins.projected.emi.1": "to the surface.",
+	"tfg.emi.ore_veins.projected.emi.1": "to the surface's Y level.",
 	"tfg.emi.ore_veins.near_lava": "Requires nearby Lava",
 	"tfg.emi.ore_veins.indicator_depth": "Indicator depth: ",
 	"tfg.emi.ore_veins.size": "Size: %d",

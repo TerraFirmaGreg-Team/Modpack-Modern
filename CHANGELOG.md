@@ -19,6 +19,7 @@
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
 - Mahoe and Araucaria now count as tannin logs @Pyritie
 - Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
+- Added wild roses and feather groundcover to the overworld @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
