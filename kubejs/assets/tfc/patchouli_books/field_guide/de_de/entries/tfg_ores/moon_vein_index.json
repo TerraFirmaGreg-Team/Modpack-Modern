@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Lapis, Ilmenit, Armalcolite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Lasurit, Sodalith, Lapis...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Magnetit, Spessartin, Chromit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartz, Certus Quartz...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Red Garnet, Yellow Garnet...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Rubin, Zinnober...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salpeter, Thorianit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Saphir, Zeolith, Kassiterit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Schwarzerz, Natives Kupfer...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Smaragd, Natives Silber, Lead...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Thorianit, Speckstein...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenit, Molybdänit, Ölsand...$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Lapis, Ilmenit, Armalcolite$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)Lasurit, Sodalith, Lapis...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_magnetite)Magnetit, Spessartin, Chromit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_quartz)Quartz, Certus Quartz...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)Red Garnet, Yellow Garnet...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)Redstone, Rubin, Zinnober...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_saltpeter)Salpeter, Thorianit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)Saphir, Zeolith, Kassiterit...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)Schwarzerz, Natives Kupfer...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Smaragd, Natives Silber, Lead...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_scheelite)Sphalerit, Blei, Blei$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_lubricant)Thorianit, Speckstein...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Wulfenit, Ölsand, Molybdänit...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -2427,7 +2427,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/245 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 35%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:The Y levels that the vein can generate between.)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 35$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 50$(br)$(thing)Biomes$(): Alle$(br2)$(thing)Stone Types$(): Basalt, Dacit, Gabbro, Norit",
-      "title": "Wulfenit, Molybdänit, Ölsand...",
+      "title": "Wulfenit, Ölsand, Molybdänit...",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
     },
@@ -2453,26 +2453,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Molybdänit",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Ölsand",
       "multiblock": {
         "mapping": {
@@ -2488,7 +2468,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Prozentzahl$(): 33%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Molybdänit",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Prozentzahl$(): 16%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {

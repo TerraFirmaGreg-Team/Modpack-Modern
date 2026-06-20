@@ -14,7 +14,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Берилій, Смарагд, Торій...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит, Ільменіт, Армалколіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Борніт, Шелдоніт, Платина...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Бура, Кальцит, Алуніт, Гіпс...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт, Молібденіт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт, Діамант, Олівін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Деш, Ільменіт, Алюміній...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Деш, Сфалерит, Пірит$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)Альмандин, Піроп, Сапфір...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_apatite)Апатит, Ортофосфат кальцію...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_monazite)Бастнезит, Монацит, Неодим...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)Берилій, Смарагд, Торій...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)Боксит, Ільменіт, Армалколіт$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sheldonite)Борніт, Шелдоніт, Платина...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gypsum)Бура, Кальцит, Алуніт, Гіпс...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)Вульфеніт, Повеліт...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_silver)Галеніт, Самородне срібло...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnierite)Гранетит, Нікель, Кобальтит...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_graphite)Графіт, Діамант, Олівін$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)Гроссуляр, Спесартин...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_desh)Деш, Ільменіт, Алюміній...$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sphalerite)Деш, Сфалерит, Пірит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -694,7 +694,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:Ймовірність появи жили на чанк. Менші нижні числа означають більшу поширеність.)Рідкість$(/t)$(): 1/245 чинки$(br)$(thing)$(t:Відсоток блоків у жилі, які є рудами замість каменю. Більший відсоток означає більше руди.)Щільність$(/t)$(): 35%$(br)$(thing)$(t:Форма жили.)Тип$(/t)$(): $(t:Переважно округлої форми) Скупчення жили$(/t)$(br)$(thing)$(t:Рівні Y, між якими може генеруватися жила.)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:Середній діаметр жили.)Розмір$(/t)$(): 35$(br)$(thing)$(t:Якщо відстань між поверхнею та жильною рудою більша за це число, поверхневі індикатори не генеруються.)Максимальна глибина індикатора$(/t)$(): 50$(br)$(thing)Біоми$(): Будь-який$(br2)$(thing)Типи каменю$(): Базальт, Габро, Дацит, Норит",
-      "title": "Вульфеніт, Молібденіт...",
+      "title": "Вульфеніт, Повеліт...",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
     },
@@ -720,26 +720,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Молібденіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Повеліт",
       "multiblock": {
         "mapping": {
@@ -755,7 +735,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄",
+      "text": "$(thing)Відсоток$(): 33%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Молібденіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 16%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {

@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)モリブデン鉛鉱, 輝水鉛鉱, モリブデン, パウエル石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)リシア輝石, カリ岩塩$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)リン酸三カルシウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)レッドストーン, ルビー, 辰砂 （大型）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)レッドストーン, ルビー, 辰砂 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)四面銅鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)孔雀石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)岩塩, カリ岩塩 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)岩塩, カリ岩塩, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)方鉛鉱, 自然銀$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)方鉛鉱, 自然銀, 鉛 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)歴青炭 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)灰礬柘榴石, 満礬柘榴石, 軟マンガン鉱, タンタル石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)モリブデン鉛鉱, 輝水鉛鉱, パウエル石$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)リシア輝石, カリ岩塩$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)リン酸三カルシウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)レッドストーン, ルビー, 辰砂 （大型）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)レッドストーン, ルビー, 辰砂 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)四面銅鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)四面銅鉱, 自然銅, 輝安鉱 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)孔雀石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)岩塩, カリ岩塩 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)岩塩, カリ岩塩, ホウ砂$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)方鉛鉱, 自然銀$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)方鉛鉱, 自然銀, 鉛 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)歴青炭 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)灰礬柘榴石, 満礬柘榴石, 軟マンガン鉱, タンタル石$()$()",
       "type": "patchouli:text"
     },
     {
@@ -963,29 +963,9 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/210 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 38$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 15$(br)$(thing)バイオーム$(): : いつでも$(br2)$(thing)岩石の種類$(): 斑れい岩, 花崗岩, 閃緑岩",
-      "title": "モリブデン鉛鉱, 輝水鉛鉱, モリブデン, パウエル石",
+      "title": "モリブデン鉛鉱, 輝水鉛鉱, パウエル石",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "輝水鉛鉱",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 57%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): MoS₂",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -1004,27 +984,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 28%$(br)$(thing)採取可能$(): 鉛、モリブデン$(br)$(thing)化学式$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "モリブデン",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 7%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): Mo",
+      "text": "$(thing)パーセント$(): 40%$(br)$(thing)採取可能$(): 鉛、モリブデン$(br)$(thing)化学式$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -1044,13 +1004,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 7%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): CaMoO₄",
+      "text": "$(thing)パーセント$(): 34%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "輝水鉛鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 24%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

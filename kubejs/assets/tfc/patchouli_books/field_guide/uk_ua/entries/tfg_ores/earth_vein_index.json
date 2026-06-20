@@ -745,26 +745,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Молібденіт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 57%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Вульфеніт",
       "multiblock": {
         "mapping": {
@@ -780,27 +760,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 28%$(br)$(thing)Джерело$(): Свинцю, Молібдену$(br)$(thing)Формула$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Молібден",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): Mo",
+      "text": "$(thing)Відсоток$(): 40%$(br)$(thing)Джерело$(): Свинцю, Молібдену$(br)$(thing)Формула$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -820,13 +780,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Відсоток$(): 7%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄",
+      "text": "$(thing)Відсоток$(): 34%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Молібденіт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Відсоток$(): 24%$(br)$(thing)Джерело$(): Молібдену$(br)$(thing)Формула$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

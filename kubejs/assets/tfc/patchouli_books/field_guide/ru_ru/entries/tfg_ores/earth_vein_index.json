@@ -666,26 +666,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Молибденит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 57%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Вульфенит",
       "multiblock": {
         "mapping": {
@@ -701,27 +681,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 28%$(br)$(thing)Источник для$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Молибден",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): Mo",
+      "text": "$(thing)Процент нагрузки$(): 40%$(br)$(thing)Источник для$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -741,13 +701,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 7%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): CaMoO₄",
+      "text": "$(thing)Процент нагрузки$(): 34%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Молибденит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 24%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",

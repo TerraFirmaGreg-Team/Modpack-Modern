@@ -19,23 +19,19 @@
         "with": [
           {
             "block": "gtceu:granite_wulfenite_ore",
-            "weight": 8
+            "weight": 20
           },
           {
-            "block": "gtceu:granite_molybdenite_ore",
-            "weight": 16
-          },
-          {
-            "block": "gtceu:raw_molybdenite_block",
+            "block": "gtceu:raw_wulfenite_block",
             "weight": 1
           },
           {
-            "block": "gtceu:granite_molybdenum_ore",
-            "weight": 2
+            "block": "gtceu:granite_molybdenite_ore",
+            "weight": 12
           },
           {
             "block": "gtceu:granite_powellite_ore",
-            "weight": 2
+            "weight": 17
           }
         ]
       },
@@ -46,23 +42,19 @@
         "with": [
           {
             "block": "gtceu:diorite_wulfenite_ore",
-            "weight": 8
+            "weight": 20
           },
           {
-            "block": "gtceu:diorite_molybdenite_ore",
-            "weight": 16
-          },
-          {
-            "block": "gtceu:raw_molybdenite_block",
+            "block": "gtceu:raw_wulfenite_block",
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_molybdenum_ore",
-            "weight": 2
+            "block": "gtceu:diorite_molybdenite_ore",
+            "weight": 12
           },
           {
             "block": "gtceu:diorite_powellite_ore",
-            "weight": 2
+            "weight": 17
           }
         ]
       },
@@ -73,23 +65,19 @@
         "with": [
           {
             "block": "gtceu:gabbro_wulfenite_ore",
-            "weight": 8
+            "weight": 20
           },
           {
-            "block": "gtceu:gabbro_molybdenite_ore",
-            "weight": 16
-          },
-          {
-            "block": "gtceu:raw_molybdenite_block",
+            "block": "gtceu:raw_wulfenite_block",
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_molybdenum_ore",
-            "weight": 2
+            "block": "gtceu:gabbro_molybdenite_ore",
+            "weight": 12
           },
           {
             "block": "gtceu:gabbro_powellite_ore",
-            "weight": 2
+            "weight": 17
           }
         ]
       }
@@ -102,19 +90,15 @@
       "blocks": [
         {
           "block": "gtceu:wulfenite_indicator",
-          "weight": 8
+          "weight": 20
         },
         {
           "block": "gtceu:molybdenite_indicator",
-          "weight": 16
-        },
-        {
-          "block": "gtceu:molybdenum_indicator",
-          "weight": 2
+          "weight": 12
         },
         {
           "block": "gtceu:powellite_indicator",
-          "weight": 2
+          "weight": 17
         }
       ]
     }

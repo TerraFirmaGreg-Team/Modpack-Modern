@@ -4182,26 +4182,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Molybdénite",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 57%$(br)$(thing)Source de$() : Molybdène$(br)$(thing)Formule$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Wulfénite",
       "multiblock": {
         "mapping": {
@@ -4217,27 +4197,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 28%$(br)$(thing)Source de$() : Plomb, Molybdène$(br)$(thing)Formule$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molybdenum",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 7%$(br)$(thing)Source de$() : Molybdène$(br)$(thing)Formule$(): Mo",
+      "text": "$(thing)Pourcentage$(): 40%$(br)$(thing)Source de$() : Plomb, Molybdène$(br)$(thing)Formule$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -4257,13 +4217,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 7%$(br)$(thing)Source de$() : Molybdène$(br)$(thing)Formule$(): CaMoO₄",
+      "text": "$(thing)Pourcentage$(): 34%$(br)$(thing)Source de$() : Molybdène$(br)$(thing)Formule$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Molybdénite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 24%$(br)$(thing)Source de$() : Molybdène$(br)$(thing)Formule$(): MoS₂",
+      "type": "patchouli:multiblock"
     }
   ],
   "sortnum": 1

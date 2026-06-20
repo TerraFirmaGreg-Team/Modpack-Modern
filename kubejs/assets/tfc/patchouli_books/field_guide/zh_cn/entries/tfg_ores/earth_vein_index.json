@@ -29,7 +29,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐煤 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐煤, 烟煤$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)辉钴矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)辉铜矿, 石膏, 钴, 硫$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)针铁矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)针铁矿, 褐铁矿, 赤铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)钙铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿, 钼, 钼钙矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)铅, 原生银 （地表）$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐煤 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐煤, 烟煤$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤铁矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤铁矿, 褐铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)辉钴矿 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)辉铜矿, 石膏, 钴, 硫$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)针铁矿, 褐铁矿, 赤铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)针铁矿, 褐铁矿, 赤铁矿, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)钙铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)钼铅矿, 辉钼矿, 钼钙矿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)铅, 原生银 （地表）$()$()",
       "type": "patchouli:text"
     },
     {
@@ -3066,29 +3066,9 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/210 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 22%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): -50 — 20$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 38$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 15$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 花岗岩, 辉长岩, 闪长岩",
-      "title": "钼铅矿, 辉钼矿, 钼, 钼钙矿",
+      "title": "钼铅矿, 辉钼矿, 钼钙矿",
       "type": "patchouli:text",
       "anchor": "deep_molybdenum"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "辉钼矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 57%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): MoS₂",
-      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
@@ -3107,27 +3087,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 28%$(br)$(thing)来源$(): 铅, 钼$(br)$(thing)化学式$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "钼",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 7%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): Mo",
+      "text": "$(thing)百分比$(): 40%$(br)$(thing)来源$(): 铅, 钼$(br)$(thing)化学式$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -3147,13 +3107,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 7%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): CaMoO₄",
+      "text": "$(thing)百分比$(): 34%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "辉钼矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 24%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): MoS₂",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
