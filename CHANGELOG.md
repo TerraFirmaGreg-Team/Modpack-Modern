@@ -11,6 +11,7 @@
 - Improved the FPS performance of Struts @SakuraKitsurugi
 - Restored the recipe for copying configured Create filters (#4265) @Robak132
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
+- Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
