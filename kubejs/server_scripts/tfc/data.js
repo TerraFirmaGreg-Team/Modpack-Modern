@@ -78,6 +78,8 @@ const registerTFCLampFuels = (event) => {
 	event.lampFuel('gtceu:oil_medium', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:oil_heavy', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:seed_oil', '#tfc:lamps', 7000)
+	event.lampFuel('gtceu:fish_oil', '#tfc:lamps', 7000)
+	event.lampFuel('tfg:peanut_oil', '#tfc:lamps', 7000)
 	event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
 
