@@ -4906,6 +4906,67 @@
             ]
         },
         {
+            "pakku_id": "7Fv51ZaqraAyZ6A0",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "cucumber",
+                "modrinth": "cucumber"
+            },
+            "name": {
+                "curseforge": "Cucumber Library",
+                "modrinth": "Cucumber Library"
+            },
+            "id": {
+                "curseforge": "272335",
+                "modrinth": "Rw1NrDzF"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Cucumber-1.20.1-7.0.16.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7180/783/Cucumber-1.20.1-7.0.16.jar",
+                    "id": "7180783",
+                    "parent_id": "272335",
+                    "hashes": {
+                        "sha1": "88a9ec30e4acb5c80a3ae060ad70b79e945293c6",
+                        "md5": "d7d34a7584041977e493198a666c2db4"
+                    },
+                    "required_dependencies": [],
+                    "size": 271462,
+                    "date_published": "2025-11-03T02:24:05.553Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Cucumber-1.20.1-7.0.16.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Rw1NrDzF/versions/xnLznSfT/Cucumber-1.20.1-7.0.16.jar",
+                    "id": "xnLznSfT",
+                    "parent_id": "Rw1NrDzF",
+                    "hashes": {
+                        "sha512": "4b68f300df40e2243a76b80c6a8dff2ed6af01a33e058f1f0e79690ffebea35b020d323fe478c4e41516330c7650cb9b1b713d132ed0de63f96e4787da43a7f5",
+                        "sha1": "88a9ec30e4acb5c80a3ae060ad70b79e945293c6"
+                    },
+                    "required_dependencies": [],
+                    "size": 271462,
+                    "date_published": "2025-11-03T02:24:06.959179Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "0DMPJ1AWW6qfYubI",
             "type": "MOD",
             "side": "BOTH",
