@@ -19,7 +19,7 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 9,
+							"weight": 15,
 							"data": {
 								"Name": "minecraft:purpur_block"
 							}
@@ -58,7 +58,7 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 9,
+							"weight": 15,
 							"data": {
 								"Name": "minecraft:purpur_slab"
 							}
@@ -103,7 +103,7 @@
 							}
 						},
 						{
-							"weight": 2,
+							"weight": 1,
 							"data": {
 								"Name": "minecraft:cave_air"
 							}
@@ -175,7 +175,7 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 9,
+							"weight": 18,
 							"data": {
 								"Name": "ae2:quartz_bricks"
 							}
@@ -214,7 +214,7 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 9,
+							"weight": 18,
 							"data": {
 								"Name": "minecraft:bricks"
 							}
