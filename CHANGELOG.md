@@ -35,7 +35,8 @@ Due to some issues with servers, we've changed the default world generation for 
 #### Other changes
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
-- Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
+- Added a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
+- Added a Chameleon Spray Can, a spray can that can do all colors in one item, as well as some extra text effects on signs @Phoenixvine32908 @TomPlop
 - Reduced the aggro range of Spectres from 35 blocks to 16 @Pyritie
 - Increased the HP of cliff hangers and leaf hangers, but now they let go of the player when attacked @Pyritie
 - Improved the FPS performance of Struts @SakuraKitsurugi
@@ -74,7 +75,9 @@ Due to some issues with servers, we've changed the default world generation for 
 #### Particular 1.5.5
 - Added splashing effects in other kinds of water, and fireflies in TFC biomes
 #### TFC Ambiental
-- We've forked this mod into TFG-Core, so we can better optimize it and extend it
+We've forked this mod into TFG-Core, so we can better optimize it and extend it @ashleney
+- Removed the part where ambiental just added 3C to your temperature at all times
+- You no longer get temperature bonuses from a good diet (we want to transfer this to our new food system instead)
 #### Waves
 - Temporarily removing this mod to investigate a potential chunk corruption bug. Feel free to re-add it if you want
 

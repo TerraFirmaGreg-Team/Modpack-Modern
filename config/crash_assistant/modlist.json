@@ -317,6 +317,14 @@
     "curseForgeHash": 3415124440,
     "modrinthHash": "117f78ad17ef779220b4bc028b130824034ec045"
   },
+  "cc_utf8_compat-1.0.1-beta.1.jar": {
+    "jarName": "cc_utf8_compat-1.0.1-beta.1.jar",
+    "modId": "cc_utf8_compat",
+    "name": "CC UTF-8 Compat",
+    "version": "1.0.1-beta.1",
+    "curseForgeHash": 2061317211,
+    "modrinthHash": "983f71217eab5bccd47a3b9df6bf71825528f977"
+  },
   "chalk-1.20.1-1.6.7.jar": {
     "jarName": "chalk-1.20.1-1.6.7.jar",
     "modId": "chalk",
@@ -341,13 +349,13 @@
     "curseForgeHash": 2374033839,
     "modrinthHash": "d3eb588c64691c9da83460e3b2e783401d337a34"
   },
-  "chromatic_codes-0.13.0.jar": {
-    "jarName": "chromatic_codes-0.13.0.jar",
+  "chromatic_codes-0.14.0.jar": {
+    "jarName": "chromatic_codes-0.14.0.jar",
     "modId": "phoenix_chromatic_codes",
     "name": "PhoenixChromaticCodes",
     "version": "1.10",
-    "curseForgeHash": 1881633450,
-    "modrinthHash": "c002b44977e4361e5055ba0574ded2b1636a59aa"
+    "curseForgeHash": 1605474647,
+    "modrinthHash": "7bbfa839893842f407af58d811d9790413418477"
   },
   "Chunky-1.3.146.jar": {
     "jarName": "Chunky-1.3.146.jar",
@@ -501,13 +509,13 @@
     "curseForgeHash": 2156032012,
     "modrinthHash": "b13d912b9247a38d66d11598c121442585a1c1e9"
   },
-  "create_connected-1.2.2-mc1.20.1-all.jar": {
-    "jarName": "create_connected-1.2.2-mc1.20.1-all.jar",
+  "create_connected-1.2.3-mc1.20.1-all.jar": {
+    "jarName": "create_connected-1.2.3-mc1.20.1-all.jar",
     "modId": "create_connected",
     "name": "Create: Connected",
-    "version": "1.2.2-mc1.20.1",
-    "curseForgeHash": 489617700,
-    "modrinthHash": "d945957c69b4fe368d6284c6f3e43aaa714b36fe"
+    "version": "1.2.3-mc1.20.1",
+    "curseForgeHash": 2114853986,
+    "modrinthHash": "98b4a41c452476496713df16ce4d52fc9f476508"
   },
   "create_hypertube-0.4.0-FORGE.jar": {
     "jarName": "create_hypertube-0.4.0-FORGE.jar",
@@ -580,6 +588,14 @@
     "version": "2.12.38",
     "curseForgeHash": 1408451101,
     "modrinthHash": "1004b6ae4e494039e28b14f2ba3ebe6b182487a8"
+  },
+  "Cucumber-1.20.1-7.0.16.jar": {
+    "jarName": "Cucumber-1.20.1-7.0.16.jar",
+    "modId": "cucumber",
+    "name": "Cucumber Library",
+    "version": "7.0.16",
+    "curseForgeHash": 1548502984,
+    "modrinthHash": "88a9ec30e4acb5c80a3ae060ad70b79e945293c6"
   },
   "curios-forge-5.14.1+1.20.1.jar": {
     "jarName": "curios-forge-5.14.1+1.20.1.jar",
@@ -709,13 +725,13 @@
     "curseForgeHash": 4287994114,
     "modrinthHash": "3142a5c96baba66f411c65b807163f55845661fd"
   },
-  "entityculling-forge-1.10.4-mc1.20.1.jar": {
-    "jarName": "entityculling-forge-1.10.4-mc1.20.1.jar",
+  "entityculling-forge-1.10.5-mc1.20.1.jar": {
+    "jarName": "entityculling-forge-1.10.5-mc1.20.1.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.10.4",
-    "curseForgeHash": 949433711,
-    "modrinthHash": "18dc9205922f820c265b96076bd417837715d73e"
+    "version": "1.10.5",
+    "curseForgeHash": 4018169999,
+    "modrinthHash": "b818f6d792b79f4ec116c89704e70292bd6f72b5"
   },
   "etched-3.0.4.jar": {
     "jarName": "etched-3.0.4.jar",
@@ -749,13 +765,13 @@
     "curseForgeHash": 2593448823,
     "modrinthHash": "39bd780eec2f22b3f9c9324b5e1c1b0c206e64a6"
   },
-  "ExtendedAE-1.20-1.4.16-forge.jar": {
-    "jarName": "ExtendedAE-1.20-1.4.16-forge.jar",
+  "ExtendedAE-1.20-1.4.17-forge.jar": {
+    "jarName": "ExtendedAE-1.20-1.4.17-forge.jar",
     "modId": "expatternprovider",
     "name": "ExtendedAE",
-    "version": "1.20-1.4.16-forge",
-    "curseForgeHash": 337792269,
-    "modrinthHash": "9da30d21cea138a7159f763b4af975f0937bac04"
+    "version": "1.20-1.4.17-forge",
+    "curseForgeHash": 2179356941,
+    "modrinthHash": "04af3779765d8393cb727276b15f713d08916d0b"
   },
   "ExtremeSoundMuffler-3.51-forge-1.20.1.jar": {
     "jarName": "ExtremeSoundMuffler-3.51-forge-1.20.1.jar",
@@ -1753,13 +1769,13 @@
     "curseForgeHash": 2200793179,
     "modrinthHash": "30e162b774ae76c7032cd5eb3e25de26c2a101f2"
   },
-  "TerraFirmaGreg-Core-Modern-0.9.11.jar": {
-    "jarName": "TerraFirmaGreg-Core-Modern-0.9.11.jar",
+  "TerraFirmaGreg-Core-Modern-0.9.12.jar": {
+    "jarName": "TerraFirmaGreg-Core-Modern-0.9.12.jar",
     "modId": "tfg",
     "name": "TerraFirmaGreg-Core",
-    "version": "0.9.11",
-    "curseForgeHash": 4061508042,
-    "modrinthHash": "a915f52e80d4907c07965fdc9dbfcb41ad605eae"
+    "version": "0.9.12",
+    "curseForgeHash": 3532798208,
+    "modrinthHash": "e590820c9e372ca0b5e0e7d4a48627fd44c60a21"
   },
   "TFC_punishment_for_death-1.20.1-1.0.0.16.jar": {
     "jarName": "TFC_punishment_for_death-1.20.1-1.0.0.16.jar",
@@ -1800,14 +1816,6 @@
     "version": "2.3",
     "curseForgeHash": 1683797447,
     "modrinthHash": "e37031fe92336c8fe3b06c7b232da857f360d938"
-  },
-  "tfcambiental-1.20.1-3.5.0.jar": {
-    "jarName": "tfcambiental-1.20.1-3.5.0.jar",
-    "modId": "tfcambiental",
-    "name": "TFC Ambiental",
-    "version": "1.20.1-3.5.0",
-    "curseForgeHash": 1763513816,
-    "modrinthHash": "25634c21bb8ceff0ec53d24f38dde9c4a239c789"
   },
   "TFCAstikorCarts-1.20.1-1.1.8.3.jar": {
     "jarName": "TFCAstikorCarts-1.20.1-1.1.8.3.jar",
@@ -1985,13 +1993,13 @@
     "curseForgeHash": 3830696800,
     "modrinthHash": "5249514e020ec1cd3966c6f34b0c80390c2be310"
   },
-  "voicechat-forge-1.20.1-2.6.19.jar": {
-    "jarName": "voicechat-forge-1.20.1-2.6.19.jar",
+  "voicechat-forge-1.20.1-2.6.20.jar": {
+    "jarName": "voicechat-forge-1.20.1-2.6.20.jar",
     "modId": "voicechat",
     "name": "Simple Voice Chat",
-    "version": "1.20.1-2.6.19",
-    "curseForgeHash": 2723239018,
-    "modrinthHash": "52afb6b4a8fc8767a0de7af58df272adc3565b26"
+    "version": "1.20.1-2.6.20",
+    "curseForgeHash": 907724197,
+    "modrinthHash": "5f1f5fd8f4b12165fc5cd76c2403b327d184c573"
   },
   "wab-1.20.1-1.4.2.jar": {
     "jarName": "wab-1.20.1-1.4.2.jar",
@@ -2016,14 +2024,6 @@
     "version": "3.0.10",
     "curseForgeHash": 3195298370,
     "modrinthHash": "d9e9fc125bd401601693de6d694bea43c3bf956e"
-  },
-  "Waves-1.20.1-1.6.1.jar": {
-    "jarName": "Waves-1.20.1-1.6.1.jar",
-    "modId": "waves",
-    "name": "Waves",
-    "version": "1.6.1",
-    "curseForgeHash": 1245342365,
-    "modrinthHash": "9704c7049b49ba6f5969ba2a1442490385764d03"
   },
   "xaerominimap-forge-1.20.1-26.1.0.jar": {
     "jarName": "xaerominimap-forge-1.20.1-26.1.0.jar",
