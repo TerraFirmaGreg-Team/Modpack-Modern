@@ -22,9 +22,9 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Osika, topola",
+			"title": "Topola (osika)",
 			"item": "tag:tfc:aspen_logs",
-			"text": "$(bold)Quaking Aspen$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): -15.7 — -1.1°C$(br2)$(bold)Poplar$()$(br)$(thing)Rainfall$(): 170 — 310mm$(br)$(thing)Temperature$(): -15.7 — -6.6°C"
+			"text": "$(bold)Topola osika$()$(br)$(thing)Opady$(): 350 — 500mm$(br)$(thing)Temperatura$(): -15.7 — -1.1°C$(br2)$(bold)Topola$()$(br)$(thing)Opady$(): 170 — 310mm$(br)$(thing)Temperatura$(): -15.7 — -6.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
