@@ -1,17 +1,17 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "name": "Support Beams & Collapses",
+  "name": "Atraminės sijos ir griūvimai",
   "category": "tfc:mechanics",
   "icon": "tfc:wood/support/oak",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "In TerraFirmaCraft, raw rock is unstable and susceptible to $(thing)Collapsing$(). Many rock blocks, including $(thing)Raw Rock$(), $(thing)Ores$(), $(thing)Smooth$() and $(thing)Spikes$() can all rain down on your head under the right circumstances.$(br2)$(thing)Support Beams$() can be used to prevent collapses from occurring.",
-      "title": "Support Beams"
+      "text": "Per „TerraFirmaCraft“ neapdorota uoliena yra nestabili ir yra linkusi link $(thing)griūvimo$(). Daugelis uolienų blokų, įskaitant $(thing)neapdorotos uolos$(), $(thing)rūdos$(), $(thing)išlyginti$() ir $(thing)spygliai$(), tinkamomis aplinkybėmis gali kristi ant Jūsų galvos. $(br2)$(thing)Atraminės sijos $() gali būti naudojamos siekiant išvengti griūties.",
+      "title": "Atraminės sijos"
     },
     {
       "type": "patchouli:text",
-      "text": "Collapses can occur whenever a player $(thing)mines any Raw Rock$() that is near to $(thing)Unsupported Raw Rock$(). Once a collapse has started, however, even previously $(thing)Supported$() rock can start to collapse.$(br2)The rock on the roof of caves is $(thing)Naturally Supported$(). Any raw rock with a non-collapsible solid block beneath it, is also $(thing)Supported$(). Alternatively, $(thing)Support Beams$() can support a wide area at once."
+      "text": "Griūtys gali įvykti, kai žaidėjas $(thing) iškasa bet kokią neapdorotą uolieną$(), esančią šalia $(thing)neatremiamos neapdorotos uolienos$(). Tačiau,  kai griūtis prasideda, net ir anksčiau $(thing)atremiama$() uoliena gali pradėti griūti.$(br2)Uolų stogo uoliena yra $(thing)natūraliai paremta$(). Bet kokia neapdorota uoliena su nesugriūvančiu kietu bloku po ja taip pat yra $(thing)atremiama$(). Alternatyviai$(thing)atraminės sijos$() gali vienu metu paremti plačią plotą."
     },
     {
       "type": "patchouli:text",
@@ -24,7 +24,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/wood/oak_support",
-      "title": "Support Beams",
+      "title": "Atraminės sijos",
       "text": "To get started, $(thing)Support Beams$() can be crafted with a $(thing)Saw$() and any type of $(thing)Logs$().$(br2)Placing a $(thing)Support Beam$() on top of a block places a column up to three tall. These must have a solid block beneath them to stay upright."
     },
     {

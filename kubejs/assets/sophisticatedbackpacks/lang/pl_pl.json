@@ -14,6 +14,8 @@
 	"commands.sophisticatedbackpacks.template.backpackempty": "Plecak jest pusty",
 	"commands.sophisticatedbackpacks.template.create.alreadyexists": "Szablon '%s' już istnieje",
 	"commands.sophisticatedbackpacks.template.create.nobackpack": "Nie znaleziono plecaka w głównej ręce",
+	"commands.sophisticatedbackpacks.template.create.success": "Szablon '%s' został utworzony pomyślnie",
+	"commands.sophisticatedbackpacks.template.delete.success": "Szablon '%s' został usunięty pomyślnie",
 	"commands.sophisticatedbackpacks.template.export.failure.invalid_characters": "Nazwa szablonu zawiera nieprawidłowe znaki: %s",
 	"commands.sophisticatedbackpacks.template.export.failure.notemplate": "Szablon '%s' nie istnieje",
 	"commands.sophisticatedbackpacks.template.export.success": "Wyeksportowano szablon do %s",
