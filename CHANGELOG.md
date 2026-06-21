@@ -4,6 +4,16 @@
 - We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.13) with all of the major changes between 0.12 and 0.13.
 - If you're upgrading a world from 0.12 to 0.13, make sure you read our upgrade guide [here](https://wiki.terrafirmagreg.team/modern/en_us/upgrade-guides/from-0.12-to-0.13). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
 - If you've been testing the new Beneath in our recent alphas, we recommend you wipe it again.
+### New website
+This isn't really part of the modpack, but we have an [updated website](https://terrafirmagreg.team)! @jmecn
+
+You can now use it to:
+- [Browse all items and recipes](https://wiki.terrafirmagreg.team/modern/recipe-book)
+- [Read through quests](https://wiki.terrafirmagreg.team/modern/quest-book)
+- [~~Not~~ read the field guide](https://wiki.terrafirmagreg.team/modern/field-guide/)
+- [Find more detailed guides and contribute to a wiki](https://wiki.terrafirmagreg.team/)
+
+We'd like to keep as much information ingame as possible, but the wiki is a good home for more detailed guides and technical information that's outside the scope of the quests and field guide. Come [talk to us](https://discord.com/invite/AEaCzCTUwQ) if you'd like to contribute!
 ### Breaking Changes
 #### ComputerCraft
 We've added a mod to enable UTF-8 support for ComputerCraft. @Kondrashka177
