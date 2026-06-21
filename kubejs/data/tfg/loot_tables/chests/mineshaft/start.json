@@ -120,7 +120,7 @@
 					"type": "minecraft:tag",
 					"name": "tfc:fired_vessels",
 					"expand": true,
-					"weight": 50
+					"weight": 3
 				},
 				{
 					"type": "minecraft:item",
@@ -136,7 +136,7 @@
 					"type": "minecraft:tag",
 					"name": "tfg:medicine/powders",
 					"expand": true,
-					"weight": 100,
+					"weight": 25,
 					"functions": [
 						{
 							"add": false,
@@ -225,9 +225,8 @@
 					]
 				},
 				{
-					"type": "minecraft:tag",
-					"name": "tfc:candles",
-					"expand": true,
+					"type": "minecraft:item",
+					"name": "tfc:candle",
 					"weight": 100,
 					"functions": [
 						{
@@ -421,7 +420,7 @@
 					"type": "minecraft:tag",
 					"name": "chalk:chalks",
 					"expand": true,
-					"weight": 70
+					"weight": 4
 				}
 			],
 			"rolls": {

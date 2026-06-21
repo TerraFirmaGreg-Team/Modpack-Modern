@@ -1,11 +1,11 @@
 {
-	"name": "tfg:beneath/tower_start_pool",
+	"name": "tfg:beneath/tower_start_pool_upper",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:beneath/tower_3",
+				"location": "tfg:beneath/tower_4",
 				"processors": "tfg:beneath/tower_transition",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"

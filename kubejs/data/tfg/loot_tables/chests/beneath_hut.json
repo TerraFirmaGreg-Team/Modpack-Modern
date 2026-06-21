@@ -41,7 +41,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:string",
+					"name": "primitive_creatures:grh",
 					"weight": 80,
 					"functions": [
 						{
@@ -50,22 +50,6 @@
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfg:silk_fibers",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -106,24 +90,23 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:jute_net",
-					"weight": 100
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfc:dirty_jute_net",
-					"weight": 100
+					"weight": 50
 				},
 				{
 					"type": "minecraft:tag",
 					"name": "chalk:chalks",
 					"expand": true,
-					"weight": 50
+					"weight": 3
 				},
 				{
-					"type": "minecraft:tag",
-					"name": "tfc:candles",
-					"expand": true,
-					"weight": 100,
+					"type": "minecraft:item",
+					"name": "tfc:candle/white",
+					"weight": 70,
 					"functions": [
 						{
 							"add": false,
@@ -155,24 +138,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:poison_pill",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:tag",
-					"name": "tfc:candles",
-					"expand": true,
-					"weight": 100,
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
@@ -188,7 +154,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:combat_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -204,7 +170,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:recovery_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -220,7 +186,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:acrobat_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -236,7 +202,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:mining_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -252,7 +218,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bowl",
-					"weight": 50,
+					"weight": 40,
 					"functions": [
 						{
 							"add": false,
@@ -358,16 +324,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "chalk:white_chalk",
-					"weight": 70
-				},
-				{
-					"type": "minecraft:item",
-					"name": "chalk:purple_chalk",
-					"weight": 70
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:raiser_armor_trim_smithing_template",
 					"weight": 8
 				},
@@ -385,7 +341,7 @@
 			"rolls": {
 				"type": "minecraft:uniform",
 				"max": 7,
-				"min": 5
+				"min": 6
 			}
 		}
 	]

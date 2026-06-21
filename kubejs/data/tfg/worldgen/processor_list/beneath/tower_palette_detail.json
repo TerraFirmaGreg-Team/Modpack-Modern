@@ -1,10 +1,24 @@
 {
 	"processors": [
 		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:bamboo_mosaic": "minecraft:polished_blackstone_bricks",
+				"minecraft:bamboo_mosaic_slab": "minecraft:polished_blackstone_brick_slab"
+			}
+		},
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:purpur_pillar": "minecraft:polished_deepslate"
+			}
+		},
+
+		{
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:migmatite"
+				"name": "bastion:deepslate_crack"
 			},
 			"if_true": [
 				{
@@ -19,7 +33,7 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 7,
+							"weight": 8,
 							"data": {
 								"Name": "minecraft:deepslate_bricks"
 							}
@@ -29,12 +43,6 @@
 							"data": {
 								"Name": "minecraft:cracked_deepslate_bricks"
 							}
-						},
-						{
-							"weight": 1,
-							"data": {
-								"Name": "minecraft:cave_air"
-							}
 						}
 					]
 				},
@@ -45,16 +53,17 @@
 				}
 			}
 		},
+
 		{
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:pyroxenite"
+				"name": "bastion:deepslate_slab_crack"
 			},
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:polished_blackstone_bricks",
+					"blocks": "minecraft:deepslate_brick_slab",
 					"match_type": "input"
 				}
 			],
@@ -64,21 +73,15 @@
 					"type": "minecraft:weighted_state_provider",
 					"entries": [
 						{
-							"weight": 5,
+							"weight": 8,
 							"data": {
-								"Name": "minecraft:polished_blackstone_bricks"
-							}
-						},
-						{
-							"weight": 3,
-							"data": {
-								"Name": "minecraft:cracked_polished_blackstone_bricks"
+								"Name": "minecraft:deepslate_brick_slab"
 							}
 						},
 						{
 							"weight": 2,
 							"data": {
-								"Name": "minecraft:cave_air"
+								"Name": "tfg:rock/cracked_bricks_deepslate_slab"
 							}
 						}
 					]
@@ -90,11 +93,20 @@
 				}
 			}
 		},
+
+
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"
+			}
+		},
+
 		{
 			"processor_type": "lithostitched:condition",
 			"random_mode": {
 				"mode": "per_block",
-				"name": "bastion:pyroxenite_walls"
+				"name": "bastion:wall"
 			},
 			"if_true": [
 				{

@@ -209,6 +209,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:gold_dust",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "gtceu:black_bronze_ingot",
 					"functions": [
 						{
