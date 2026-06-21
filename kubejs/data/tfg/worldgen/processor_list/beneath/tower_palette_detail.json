@@ -63,7 +63,7 @@
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:deepslate_slab",
+					"blocks": "minecraft:deepslate_brick_slab",
 					"match_type": "input"
 				}
 			],
@@ -111,7 +111,7 @@
 			"if_true": [
 				{
 					"type": "lithostitched:matching_blocks",
-					"blocks": "minecraft:prismarine_wall",
+					"blocks": "minecraft:polished_blackstone_brick_wall",
 					"match_type": "input"
 				}
 			],

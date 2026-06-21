@@ -6,7 +6,7 @@
 			"weight": 100,
 			"element": {
 				"location": "tfg:beneath/tower_2",
-				"processors": "tfg:beneath/tower_low",
+				"processors": "tfg:beneath/tower_transition",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
@@ -15,7 +15,7 @@
 			"weight": 100,
 			"element": {
 				"location": "tfg:beneath/tower_3",
-				"processors": "tfg:beneath/tower_low",
+				"processors": "tfg:beneath/tower_transition",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
