@@ -1,0 +1,13 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:reference",
+			"processor_lists": [
+				"tfg:beneath/tower_holes_stairs",
+				"tfg:beneath/tower_holes_small",
+				"tfg:beneath/tower_palette_magma",
+				"tfg:beneath/tower_palette_bastion"
+			]
+		}
+	]
+}

@@ -41,7 +41,8 @@
 		[],
 		"#tfg:nether_underground_decoration",
 		[
-			"tfg:nether/terrain/spring_lava"
+			"tfg:nether/terrain/spring_lava",
+			"tfg:nether/structure/spider_house"
 		],
 		[
 			"tfc:erosion"
