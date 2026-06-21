@@ -1,0 +1,24 @@
+{
+	"name": "tfg:beneath/mob_piglin_hard",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 40,
+			"element": {
+				"location": "tfg:piglin_generic/mobs/piglin",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 60,
+			"element": {
+				"location": "tfg:piglin_generic/mobs/piglin_brute",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
