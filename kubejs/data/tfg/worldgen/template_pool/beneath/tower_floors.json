@@ -5,8 +5,26 @@
 		{
 			"weight": 100,
 			"element": {
-				"location": "tfg:beneath/tower_basic",
-				"processors": "tfg:beneath/tower_bastion",
+				"location": "tfg:beneath/tower_2",
+				"processors": "tfg:beneath/tower_transition",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:beneath/tower_3",
+				"processors": "tfg:beneath/tower_transition",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:beneath/tower_4",
+				"processors": "tfg:beneath/tower_high",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
