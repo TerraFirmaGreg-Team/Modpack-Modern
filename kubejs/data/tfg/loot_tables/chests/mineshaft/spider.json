@@ -102,6 +102,37 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:mortar",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16,
+								"min": 8
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:straw_basket",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:leather_sack",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:ore_sack",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:rib_armor_trim_smithing_template",
 					"weight": 10
 				},

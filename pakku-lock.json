@@ -2280,6 +2280,42 @@
             ]
         },
         {
+            "pakku_id": "sQg1LA2Qq7iu8c8f",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cc-utf-8-compat"
+            },
+            "name": {
+                "curseforge": "CC UTF-8 Compat"
+            },
+            "id": {
+                "curseforge": "1581366"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cc_utf8_compat-1.0.1-beta.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8283/462/cc_utf8_compat-1.0.1-beta.1.jar",
+                    "id": "8283462",
+                    "parent_id": "1581366",
+                    "hashes": {
+                        "sha1": "983f71217eab5bccd47a3b9df6bf71825528f977",
+                        "md5": "a0db91af41c3a05b79478b7b7dce21bf"
+                    },
+                    "required_dependencies": [],
+                    "size": 92508,
+                    "date_published": "2026-06-20T00:42:38.827Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "SA19Vecc1QTF7Kih",
             "type": "MOD",
             "side": "BOTH",
@@ -6798,6 +6834,7 @@
                 "modrinth": "5IIKsxiL",
                 "curseforge": "363363"
             },
+            "export": false,
             "files": [
                 {
                     "type": "curseforge",

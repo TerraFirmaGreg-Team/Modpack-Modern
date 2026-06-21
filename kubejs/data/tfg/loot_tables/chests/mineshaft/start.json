@@ -101,10 +101,36 @@
 					]
 				},
 				{
+					"type": "minecraft:item",
+					"name": "tfc:mortar",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16,
+								"min": 8
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
 					"type": "minecraft:tag",
 					"name": "tfc:fired_vessels",
 					"expand": true,
-					"weight": 70
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:straw_basket",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "sns:leather_sack",
+					"weight": 10
 				},
 				{
 					"type": "minecraft:tag",
