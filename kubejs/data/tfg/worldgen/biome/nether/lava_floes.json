@@ -46,6 +46,10 @@
 			"minecraft:spring_delta",
 			"minecraft:spring_closed_double"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"beneath:blackstone_pebble_patch",
@@ -64,10 +68,8 @@
 		],
 		"#tfg:nether_global_decoration",
 		[
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/fluid_vein/gas_vent"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
@@ -104,63 +106,51 @@
 			},
 			{
 				"type": "minecraft:magma_cube",
-				"maxCount": 3,
-				"minCount": 2,
+				"maxCount": 4,
+				"minCount": 4,
 				"weight": 100
 			},
 			{
 				"type": "primitive_creatures:golem_2",
 				"maxCount": 3,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:phantom",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
 			},
 			{
 				"type": "minecraft:wither_skeleton",
 				"maxCount": 2,
-				"minCount": 1,
+				"minCount": 2,
 				"weight": 100
-			},
-			{
-				"type": "minecraft:enderman",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
 			},
 			{
 				"type": "endermanoverhaul:dark_oak_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:nether_wastes_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "species:cliff_hanger",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "species:spectre",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 10
 			},
 			{
 				"type": "species:ghoul",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 30
 			},
 			{
 				"type": "species:wicked",

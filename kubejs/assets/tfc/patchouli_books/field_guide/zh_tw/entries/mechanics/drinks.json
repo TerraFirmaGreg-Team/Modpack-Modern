@@ -1,5 +1,5 @@
 {
-	"name": "Drinks",
+	"name": "飲料",
 	"icon": "firmalife:olivine_wine_bottle",
 	"category": "tfc:mechanics",
 	"read_by_default": true,
@@ -7,120 +7,120 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "intro",
-			"text": "Potions and magic don't exist in the world of TerraFirmaCraft, but there's plenty of other ways to get similar effects!$(br2)This entry serves as a list of drinks and their effects when consumed."
+			"text": "群巒傳說的世界裡不存在藥水與魔法，但有許多飲料提供相似的效果。$(br2)本條目列出了飲料與飲用後的效果。"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Index",
+			"title": "目錄",
 			"anchor": "index",
-			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)Containers$()$(li)$(bold)$(l:mechanics/drinks#alcohol)Alcohol$()$(li2)$(l:mechanics/drinks#aged_alcohol)Aged Alcohol$()$(li2)$(l:mechanics/drinks#vintage_alcohol)Vintage Alcohol$()$(li2)$(l:mechanics/drinks#wine)Wine$()$(li)$(bold)$(l:mechanics/drinks#spring_water)Spring Water$()$(li)$(bold)$(l:mechanics/drinks#sea_water)Sea Water$()$(li)$(bold)$(l:mechanics/drinks#muddy_water)Muddy Water$()$(li)$(bold)$(l:mechanics/drinks#juice)Fruit Juice$()$(li)$(bold)$(l:mechanics/drinks#yogurt)Yogurt$()$(li)$(bold)$(l:mechanics/drinks#smoothie)Fruit Smoothie$()$(li)$(bold)$(l:mechanics/drinks#ice_slush)Ice Slush$()"
+			"text": "$(li)$(bold)$(l:mechanics/drinks#containers)容器$()\n$(li)$(bold)$(l:mechanics/drinks#alcohol)酒精$()\n$(li2)$(l:mechanics/drinks#aged_alcohol)熟成酒$()\n$(li2)$(l:mechanics/drinks#vintage_alcohol)陳釀酒$()\n$(li2)$(l:mechanics/drinks#wine)葡萄酒$()\n$(li)$(bold)$(l:mechanics/drinks#spring_water)溫泉$()\n$(li)$(bold)$(l:mechanics/drinks#sea_water)海水$()\n$(li)$(bold)$(l:mechanics/drinks#muddy_water)泥水$()\n$(li)$(bold)$(l:mechanics/drinks#juice)果汁$()\n$(li)$(bold)$(l:mechanics/drinks#yogurt)優格$()\n$(li)$(bold)$(l:mechanics/drinks#smoothie)果昔$()\n$(li)$(bold)$(l:mechanics/drinks#ice_slush)冰沙$()"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Drink containers",
-			"text": "You can drink things out of a $(l:getting_started/pottery#jug)Jug$(), $(l:waterflasks/recipes)Flask$(), or $(l:mechanics/glassworking_applications#glass_bottle)Glass Bottle$(). Jugs only hold enough for 1 drink and break easily. Glass bottles only hold a few drinks, and also have a chance of breaking. Flasks can hold even more and slowly use durability instead, except the $(item)Red Steel Flask$() which holds 20 drinks and never breaks.",
+			"title": "飲料容器",
+			"text": "你可以用$(l:getting_started/pottery#jug)陶罐$()、$(l:waterflasks/recipes)水壺$()或$(l:mechanics/glassworking_applications#glass_bottle)玻璃瓶$()喝點什麼。陶罐只能喝1次而且容易壞。玻璃瓶可以喝個幾次也有機率壞掉。水壺可以提供更多的飲用次數不易損壞並消耗耐久度，除此之外$(item)紅鋼水壺$()提供20次飲用次數且永不損壞。",
 			"item": "tfc:ceramic/jug,tfc:silica_glass_bottle,tfc:olivine_glass_bottle,tfc:hematitic_glass_bottle,tfc:volcanic_glass_bottle,waterflasks:leather_flask,waterflasks:iron_flask,waterflasks:red_steel_flask",
 			"anchor": "containers"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Alcohol",
-			"text": "$(thing)Base Alcohols$() provide no buff to the player. They can be produced by leaving various fruits, flours, or other ingredients in a $(l:mechanics/barrels)Barrel$() with water. As a bonus, when drunk any alcohol will effect your speech in chat!",
+			"title": "酒精",
+			"text": "$(thing)酒$()不提供任何增益。由各種水果、麵粉與其他原料一同放入裝滿水的$(l:mechanics/barrels)大木桶$()。額外效果：當你酒醉時會影響聊天時的發言！",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "alcohol"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aged Alcohol",
-			"text": "$(thing)Aged Alcohols$() are prepared by ageing normal alcohol for 3 months in a sealed barrel. Aged alcohol provides effects when consumed.",
+			"title": "熟成酒",
+			"text": "$(thing)熟成酒$()是將酒在密封木桶內熟成3個月發酵而成。飲用熟成酒會提供效果。",
 			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey",
 			"anchor": "aged_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Aged Beer: Absorption II (5:20)$(li)Aged Cider: Speed (5:20)$(li)Aged Rum: Speed II (2:40)$(li)Aged Sake: Resistance (5:20)$(li)Aged Vodka: Resistance II (2:40)$(li)Aged Corn Whiskey: Haste (5:20)$(li)Aged Rye Whiskey: Haste (5:20)$(li)Aged Whiskey: Haste II (2:40)$(li)Aged Mead: Regeneration (5:20)"
+			"text": "$(li)熟成啤酒：傷害吸收 II (5:20)$(li)熟成蘋果酒：速度提升 (5:20)$(li)熟成萊姆酒姆：速度提升 II (2:40)$(li)熟成清酒：傷害抗性 (5:20)$(li)熟成伏特加：傷害抗性 II (2:40)$(li)熟成玉米威士忌：急迫 (5:20)$(li)熟成黑麥威士忌：急迫 (5:20)$(li)熟成威士忌：急迫 II (2:40)$(li)熟成蜂蜜酒：生命恢復 (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Vintage Alcohol",
-			"text": "$(thing)Vintage Alcohols$() are prepared by further ageing aged alcohol in sealed barrels for another 3 months. These alcohols provide a stronger effect and a longer duration.",
+			"title": "陳釀酒",
+			"text": "$(thing)陳釀酒$()是將熟成酒在密封木桶進一步陳化3個月釀造而成。飲用陳釀酒會提供更強的效果與更長的持續時間。",
 			"item": "tfg:vintage_beer_bucket,tfg:vintage_cider_bucket,tfg:vintage_rum_bucket,tfg:vintage_sake_bucket,tfg:vintage_vodka_bucket,tfg:vintage_whiskey_bucket,tfg:vintage_corn_whiskey_bucket,tfg:vintage_rye_whiskey_bucket",
 			"anchor": "vintage_alcohol"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Vintage Beer: Absorption III (8:00)$(li)Vintage Cider: Speed II (8:00)$(li)Vintage Rum: Speed III (4:00)$(li)Vintage Sake: Resistance II (8:00)$(li)Vintage Vodka: Resistance III (4:00)$(li)Vintage Corn Whiskey: Haste II (8:00)$(li)Vintage Rye Whiskey: Haste II (8:00)$(li)Vintage Whiskey: Haste III (4:00)$(li)Vintage Mead: Regeneration II (8:00)"
+			"text": "$(li)陳釀啤酒：傷害吸收 III (8:00)$(li)陳釀蘋果酒：速度提升 II (8:00)$(li)陳釀朗姆酒：速度提升 III (4:00)$(li)陳釀清酒：傷害抗性 II (8:00)$(li)陳釀伏特加：傷害抗性 III (4:00)$(li)陳釀玉米威士忌：急迫 II (8:00)$(li)陳釀黑麥威士忌：急迫 II (8:00)$(li)陳釀威士忌：急迫 III (4:00)$(li)陳釀蜂蜜酒：生命恢復 II (8:00)"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "Wine",
-			"text": "$(thing)Wine$() is another kind of alcohol that's made in a different way than the others. It's a complex but rewarding process that can't be automated in a machine. Check the $(l:firmalife/wine)Winemaking$() entry to learn how to craft it.$(br2)All wines also give $(item)Strength (5:20)$() in addition to another effect!",
+			"title": "葡萄酒",
+			"text": "$(thing)葡萄酒$()是另一種酒類，它的釀造方法與其他酒類不同。這是複雜但有意義的過程，無法用機器自動完成。請參閱 $(l:firmalife/wine)釀造葡萄酒$() 條目，了解如何釀造葡萄酒。$(br2)所有葡萄酒還會額外提供 $(item)力量 (5:20)$()！",
 			"item": "firmalife:bucket/red_wine,firmalife:bucket/white_wine,firmalife:bucket/rose_wine,firmalife:bucket/sparkling_wine,firmalife:bucket/dessert_wine",
 			"anchor": "wine"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)Red Wine: Haste (5:20)$(li)White Wine: Wither Resistance (5:20)$(li)Rose Wine: Swim Speed (5:20)$(li)Sparkling Wine: Jump Boost II (5:20)$(li)Dessert Wine: Knockback Resistance (5:20)"
+			"text": "$(li)紅葡萄酒：急迫 (5:20)$(li)白葡萄酒：凋零抗性 (5:20)$(li)桃紅葡萄酒：游泳加速 (5:20)$(li)氣泡酒：跳躍提升 II (5:20)$(li)甜點酒：擊退抗性 (5:20)"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Milks",
-			"text": "$(thing)Milk$() can be aquired from most female livestock by simply right clicking them with a wood or metal bucket once familiarity is at a high enough level. (If the milking isn't working, make sure the buckets aren't stacked!)$(br)While it doesn't provide any buffs, it provides dairy nutrition if drank after eating, and can later be made into cheese.",
+			"title": "牛奶",
+			"text": "$(thing)牛奶$()是手持木桶或水桶時右鍵雌性牲畜取得，前提是親密度要夠高。(如果擠乳作業不正常，請確保奶桶沒有堆疊在一起。)$(br)雖然它不提供任何增益效果，但飯後飲用可以提供乳製品營養，還可以製成乳酪。",
 			"item": "minecraft:milk_bucket,firmalife:bucket/yak_milk,firmalife:bucket/goat_milk",
 			"anchor": "milk"
 		},
 		{
-			"title": "Spring Water",
-			"text": "Drinking $(thing)Spring Water$() warms you up by 4°C and applies a small regeneration effect while standing in it, as well as warming you.",
+			"title": "溫泉",
+			"text": "飲用$(thing)溫泉$()可以暖和4°C，泡在溫泉內會提供些微的生命恢復並讓你感到温暖。",
 			"item": "tfc:bucket/spring_water",
 			"type": "patchouli:spotlight",
 			"anchor": "spring_water"
 		},
 		{
-			"title": "Sea Water",
-			"text": "Drinking $(thing)Sea Water$() does not hydrate you and will make you more thirsty instead. A hot body temperature can also make you more thirsty. Lost at sea? Look upwards when it's raining for some easy hydration!",
+			"title": "海水",
+			"text": "喝$(thing)海水$()不能補充水分，反而會讓你更渴。體溫過高也更容易感到口渴。在海上迷路了？下雨時抬頭看看就能輕鬆補水！",
 			"type": "patchouli:spotlight",
 			"item": "tfc:bucket/salt_water",
 			"anchor": "sea_water"
 		},
 		{
-			"title": "溫泉",
-			"text": "Drinking $(thing)Muddy Water$() is not recommended. Doing so will make you nauseous and give you parasites.",
+			"title": "泥水",
+			"text": "不建議飲用$(thing)泥水$()。不僅會感到噁心還會感染寄生蟲。",
 			"type": "patchouli:spotlight",
 			"item": "tfg:muddy_water_bucket",
 			"anchor": "muddy_water"
 		},
 		{
-			"title": "海水",
-			"text": "飲用$(thing)海水$()無法補充水分，反而會更加口渴。高體溫也會加劇口渴感。在海上迷航？下雨時抬頭仰望天空，就能輕鬆補充水分！",
+			"title": "果汁",
+			"text": "$(thing)果汁$()是將水果濃縮成保質期更長的好方法。果汁提供$(l:getting_started/food_and_water#quenching_transient_effect)解渴效果$()。有助於解渴。$(br2)果汁會隨著時間推移而過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "juice",
 			"item": "tfg:food/juice"
 		},
 		{
-			"title": "冰沙",
-			"text": "飲用$(thing)冰沙$()可降溫4°C，夏日消暑首選！穿越地下世界時同樣實用。",
+			"title": "優格",
+			"text": "$(thing)優格$()提供與牛奶一樣提供乳製品營養。可以與水果混合製作成$(item)水果優格$()。$(br2)優格會隨著時間推移而過期。$()",
 			"type": "patchouli:spotlight",
 			"anchor": "yogurt",
 			"item": "tfg:food/yogurt"
 		},
 		{
-			"title": "Fruit Smoothies",
-			"text": "$(thing)Smoothies$() are a powerful drink. They provide both the $(l:getting_started/food_and_water#quenching_transient_effect)Quenching Effect$() and the $(l:getting_started/food_and_water#cooling_transient_effect)Cooling Effect$(). They are also a great source for $(l:getting_started/food_and_water#fruit)Fruit$() and $(l:getting_started/food_and_water#dairy)Dairy$() nutrition.$(br2)Smoothies will expire over time.$()",
+			"title": "果昔",
+			"text": "$(thing)果昔$()是種強勁的飲料。他們提供$(l:getting_started/food_and_water#quenching_transient_effect)解渴$()與$(l:getting_started/food_and_water#cooling_transient_effect)降溫$()的效果。同時也是很好的$(l:getting_started/food_and_water#fruit)水果$()與$(l:getting_started/food_and_water#dairy)乳製品$()營養來源。$(br2)果昔會隨著時間腐敗。$()\n",
 			"type": "patchouli:spotlight",
 			"anchor": "smoothie",
 			"item": "tfg:food/smoothie"
 		},
 		{
-			"title": "Liquid Ice Slush",
-			"text": "Drinking $(thing)Ice Slush$() cools you down by 4°C, perfect for summer! Also handy for traversing the beneath.",
+			"title": "液態冰沙",
+			"text": "飲用$(thing)冰沙$()可降低4°C體溫，非常適合夏天！穿越幽冥之地時也很方便。",
 			"type": "patchouli:spotlight",
 			"item": "gtceu:ice_bucket",
 			"anchor": "ice_slush"
 		},
 		{
 			"type": "patchouli:relations",
-			"title": "Further Reading",
+			"title": "延伸閱讀",
 			"anchor": "relations",
 			"entries": [
                 "tfc:getting_started/food_and_water",

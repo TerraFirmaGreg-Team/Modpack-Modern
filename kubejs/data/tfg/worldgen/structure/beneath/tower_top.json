@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:jigsaw",
+	"start_pool": "tfg:beneath/tower_start_pool_top",
+	"size": 7,
+	"max_distance_from_center": 128,
+	"biomes": "#tfg:has_structure/tower",
+	"step": "surface_structures",
+	"terrain_adaptation": "none",
+	"start_height": {
+		"absolute": 156
+	},
+	"use_expansion_hack": false,
+	"spawn_overrides": {}
+}

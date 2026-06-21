@@ -1,0 +1,15 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"minecraft:chiseled_quartz_block": "tfg:rock/polished_glauberite",
+				"minecraft:cut_red_sandstone": "tfg:rock/polished_glauberite",
+				"tfg:smooth_sandstone/red": "tfg:rock/bricks_glauberite",
+				"minecraft:smooth_quartz": "tfg:rock/bricks_glauberite",
+				"gtceu:certus_quartz_block": "tfg:rock/chiseled_glauberite",
+				"createdeco:corner_red_bricks": "tfg:rocck/chiseled_glauberite"
+			}
+		}
+	]
+}

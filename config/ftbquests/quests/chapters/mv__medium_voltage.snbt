@@ -2090,6 +2090,25 @@
 			x: 3.0d
 			y: 11.5d
 		}
+		{
+			dependencies: ["682C26579EDDCA76"]
+			description: [
+				"{quests.medium_voltage.chameleon_spray.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.chameleon_spray.desc.2}"
+			]
+			id: "382646E2476ED41C"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.chameleon_spray.subtitle}"
+			tasks: [{
+				id: "4033CBC14C946625"
+				item: "tfg:chameleon_spray_can"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]
 	title: "{quests.medium_voltage}"

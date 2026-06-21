@@ -1,0 +1,76 @@
+{
+	"name": "tfg:beneath/mob_piglin_medium",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:piglin_generic/mobs/piglin",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 70,
+			"element": {
+				"location": "tfg:piglin_generic/mobs/piglin_brute",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 35,
+			"element": {
+				"location": "tfg:beneath/tower_loot_top",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 25,
+			"element": {
+				"location": "tfg:beneath/tower_loot_bottom",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_1",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_2",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 10,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 20,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:empty_pool_element"
+			}
+		}
+	]
+}

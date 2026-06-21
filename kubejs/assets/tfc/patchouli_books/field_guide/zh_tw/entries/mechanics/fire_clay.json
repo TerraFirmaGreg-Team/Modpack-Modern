@@ -6,17 +6,17 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "耐火黏土能做的東西不多，但每个都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些高級設備只能用耐火黏土建造！"
+      "text": "耐火黏土能做的東西不多，但每个都是科技進步上不可或缺的要素！耐火黏土比普通黏土能承受更高的高温，因此某些進階設備只能用耐火黏土建造！"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/fire_clay",
-      "text": "耐火黏土是由$(l:the_world/ores_and_minerals#graphite)石墨粉$()和$(l:the_world/ores_and_minerals#kaolinite)高嶺石粉$()合成得到的，前者需用 $(l:mechanics/quern)手推磨$() 研磨"
+      "text": "耐火黏土由$(l:the_world/ores_and_minerals#graphite)石墨粉$()用 $(l:mechanics/quern)手推磨$()研磨和$(l:the_world/ores_and_minerals#kaolinite)高嶺土粉$()合成取得"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/kaolin_clay",
-      "text": "高嶺石粉是由加熱$(l:the_world/ores_and_minerals#kaolinite)高嶺土$()得到的。然而這種工藝並不成熟，其生產率只有20%左右！"
+      "text": "高嶺土粉是加熱$(l:the_world/ores_and_minerals#kaolinite)高嶺土$()得到的。然而這種工藝並不成熟，其生產率只有20%左右！"
     },
     {
       "type": "tfc:knapping_recipe",

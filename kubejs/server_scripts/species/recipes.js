@@ -118,6 +118,7 @@ function registerSpeciesRecipes(event) {
 		.itemOutputs('species:wicked_mask')
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
+        .circuit(1)
 
 	event.recipes.firmalife.mixing_bowl()
 		.outputItem('2x species:wicked_treat')

@@ -19,7 +19,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)红石, 红宝石, 朱砂, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)红石榴石, 黄石榴石, 紫水晶, 猫眼石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)绿色蓝宝石, 铝土矿, 磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)蓝晶石, 云母, 铝土矿, 铝, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)蓝黄玉, 黄玉, 辉铜矿, 斑铜矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)软锰矿, 辉钴矿, 钴, 钽铁矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)钼铅矿, 辉钼矿, 钼钙矿, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)铍, 绿宝石, 方钍石, 橄榄石, 钾石盐$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)铝土矿, 钛铁矿, 阿姆阿尔柯尔矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)黄铜矿, 沸石, 锡石, 锡$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)黝铜矿, 原生铜, 辉锑矿, 辉铜矿$()$()",
+      "text": "$(li)$(l:tfg_ores/moon_vein_index#moon_redstone)红石, 红宝石, 朱砂, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_garnet)红石榴石, 黄石榴石, 紫水晶, 猫眼石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_gold)绿色蓝宝石, 铝土矿, 磁铁矿, 原生金$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_mica)蓝晶石, 云母, 铝土矿, 铝, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_topaz)蓝黄玉, 黄玉, 辉铜矿, 斑铜矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_pyrolusite)软锰矿, 辉钴矿, 钴, 钽铁矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_manganese)钙铝榴石, 锰铝榴石, 软锰矿, 钽铁矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_molybdenum)钼铅矿, 钼钙矿, 辉钼矿, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_sapphire)铁铝榴石, 镁铝榴石, 蓝宝石, 绿色蓝宝石, 橄榄石$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_beryllium)铍, 绿宝石, 方钍石, 橄榄石, 钾石盐$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_bauxite)铝土矿, 钛铁矿, 阿姆阿尔柯尔矿$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_cassiterite)黄铜矿, 沸石, 锡石, 锡$()$()$(li)$(l:tfg_ores/moon_vein_index#moon_tetrahedrite)黝铜矿, 原生铜, 辉锑矿, 辉铜矿$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1962,7 +1962,7 @@
     {
       "Type": "patchouli:text",
       "text": "$(thing)$(t:每个区块生成矿脉的几率。下面的数字越小就越常见。)稀有度$(/t)$(): 1/245 区块$(br)$(thing)$(t:矿脉中矿石方块所占的百分比。百分比越高，矿石越多。)密度$(/t)$(): 35%$(br)$(thing)$(t:矿脉的形状。)类型$(/t)$(): $(t:大致呈圆形)团簇状矿脉$(/t)$(br)$(thing)$(t:矿脉可能生成的 Y 轴范围。)Y$(/t)$(): 0 — 50$(br)$(thing)$(t:矿脉的平均直径)尺寸$(/t)$(): 35$(br)$(thing)$(t:如果地表与矿脉之间的距离大于此数值，则地表不会生成矿脉指示物。)指示物最大深度$(/t)$(): 50$(br)$(thing)生物群系$(): 任意$(br2)$(thing)岩石类型$(): 玄武岩, 苏长岩, 英安岩, 辉长岩",
-      "title": "钼铅矿, 辉钼矿, 钼钙矿, 橄榄石",
+      "title": "钼铅矿, 钼钙矿, 辉钼矿, 橄榄石",
       "type": "patchouli:text",
       "anchor": "moon_molybdenum"
     },
@@ -1988,26 +1988,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "辉钼矿",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)百分比$(): 33%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "钼钙矿",
       "multiblock": {
         "mapping": {
@@ -2023,7 +2003,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): CaMoO₄",
+      "text": "$(thing)百分比$(): 33%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "辉钼矿",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)百分比$(): 16%$(br)$(thing)来源$(): 钼$(br)$(thing)化学式$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {

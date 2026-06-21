@@ -49,9 +49,12 @@
 		[
 			"tfg:nether/terrain/spring_lava"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
-			"tfg:nether/terrain/garnet_sands_disk",
 			"tfg:nether/surface/bone_patch",
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
@@ -67,6 +70,7 @@
 			"tfg:nether/surface/barnacles_patch",
 			"tfg:nether/surface/beach_groundcover_patch",
 			"beneath:gleamflower_patch",
+			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
 			"tfg:nether/surface/sand",
 			"tfg:nether/surface/moss_patch_small"
@@ -77,11 +81,8 @@
 			"tfg:nether/entity/warm_frog",
 			"tfg:nether/entity/jellyfish",
 			"tfg:nether/entity/horseshoe_crab",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/entity/zombie_horse"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

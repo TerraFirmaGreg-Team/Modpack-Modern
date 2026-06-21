@@ -51,6 +51,10 @@
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_pool"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/bone_patch",
@@ -76,11 +80,8 @@
 			"tfg:nether/entity/jellyfish",
 			"tfg:nether/entity/horseshoe_crab",
 			"tfg:nether/entity/isopod",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/entity/zombie_horse"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

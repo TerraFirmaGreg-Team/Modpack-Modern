@@ -1,0 +1,49 @@
+colors:
+  # Whether named bracket codes are case-sensitive.
+  # true  -> &[Phoenix] and &[phoenix] are two completely different codes.
+  # false -> &[Phoenix] and &[phoenix] both resolve to whichever was registered first (lowercased).
+  # Requires a game restart to take effect.
+  # Default: true
+  namedCodesCaseSensitive: true
+
+  # Add custom single-character color codes here.
+  # Format: 'char:hex' (e.g., 'z:BF00FF')
+  # Do NOT use vanilla codes (0-9, a-f, k-o, r) as keys — see comment above.
+  customColors:
+    - z:BF00FF
+
+  # Add custom single-character gradient/effect codes here.
+  # Format: 'char:colorSpeed:moveSpeed:movementId:hex1,hex2...'
+  # Example: 'w:1.0:0.5:wave:rainbow'
+  # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none
+  # Discord is the effect you see on servers with boosts, that smooth gradient. This one needs exactly two hex codes to work properly.
+  # Do NOT use vanilla codes (0-9, a-f, k-o, r) as keys — see comment above.
+  customGradients:
+    - w:1.0:1.0:wave:rainbow
+    - s:0.0:2.5:shake:FFFFFF
+    - p:1.0:2.0:pulse:FF0000,990000
+    - *:1.5:0.0:static_rainbow:rainbow
+    - g:1.0:3.0:glitch:00FF00,005500
+    - y:2.5:0.0:none:FF0000,FFFF00,00FF00
+    - ^:1.0:0.0:discord:FC8EAC,8F00FF
+    - u:0.0:2.0:breath:FF00FF
+    - %:0.0:2.0:stretch:FF00FF
+    - ~:1.0:1.0:wave:FF0000,8B0000
+
+  # Named color codes using bracket syntax: '[name]:hex'
+  # Use as &[name] or §[name] in text.
+  # Example: '[phoenix]:BF00FF'  ->  use as &[phoenix] in chat
+  # Named codes are completely separate from single-char codes — no overlap ever.
+  namedColors:
+    - [phoenix]:BF00FF
+
+  # Named gradient/effect codes using bracket syntax.
+  # Format: '[name]:colorSpeed:moveSpeed:movementId:hex1,hex2...'
+  # Use as &[name] or §[name] in text.
+  # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none
+  # Example: '[rainbow]:1.0:1.0:wave:rainbow'  ->  use as &[rainbow] in chat
+  # Named codes are completely separate from single-char codes — no overlap ever.
+  namedGradients:
+    - [rainbow]:1.0:1.0:wave:rainbow
+    - [matrix]:1.0:3.0:glitch:00FF00,005500
+

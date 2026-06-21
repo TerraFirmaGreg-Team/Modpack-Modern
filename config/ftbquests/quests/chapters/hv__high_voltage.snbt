@@ -1970,6 +1970,33 @@
 			x: -2.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["396E85A39FF414CF"]
+			description: [
+				"{quests.high_voltage.wireless_charger.desc.1}"
+				"{@pagebreak}"
+				"{quests.high_voltage.wireless_charger.desc.2}"
+			]
+			id: "380C4E4E1D97C9D0"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.high_voltage.wireless_charger.subtitle}"
+			tasks: [{
+				id: "4012D54C42920F50"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:hv_wireless_charger)item(tfg:ev_wireless_charger)item(tfg:iv_wireless_charger)item(tfg:luv_wireless_charger)item(tfg:zpm_wireless_charger)item(tfg:uv_wireless_charger)item(tfg:uhv_wireless_charger))"
+					}
+				}
+				title: "{quests.high_voltage.wireless_charger.task}"
+				type: "item"
+			}]
+			title: "{quests.high_voltage.wireless_charger.title}"
+			x: 12.0d
+			y: -6.0d
+		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
 	title: "{quests.high_voltage}"

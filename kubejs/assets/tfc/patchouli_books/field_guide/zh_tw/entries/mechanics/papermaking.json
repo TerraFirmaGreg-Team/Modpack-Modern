@@ -1,26 +1,26 @@
 {
-    "name": "Papermaking",
+    "name": "造紙術",
     "category": "tfc:mechanics",
     "icon": "tfc:unrefined_paper",
     "pages": [
       {
         "type": "patchouli:text",
-        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking#paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
+        "text": "$(thing)紙張$()由加工過的$(l:mechanics/crops#papyrus)紙莎草$()莖部製作、由$(l:mechanics/papermaking#parchment)動物生皮$()製成，或經由$(l:mechanics/papermaking#paperfromwood)特定木材的繁瑣加工程序$()取得。紙張用於製作$(thing)書本$()與$(thing)地圖$()等書寫材料。"
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/papyrus_strips",
-        "text": "Papyrus must first be cut into strips with a $(thing)Knife$()"
+        "text": "紙莎草必須先用$(thing)小刀$()切成條狀。"
       },
       {
         "type": "tfc:sealed_barrel_recipe",
         "recipe": "tfc:barrel/soaked_papyrus_strip",
-        "text": "Then, papyrus strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$()."
+        "text": "接著將紙莎草條浸泡在裝滿$(thing)水$()的$(l:mechanics/barrels)大桶$()裡。"
       },
       {
         "type": "tfc:loom_recipe",
         "recipe": "tfc:loom/unrefined_paper",
-        "text": "Then, soaked papyrus strips are woven together in a loom to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:mechanics/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
+        "text": "接著將浸泡後的紙莎草條用織布機編織製作$(thing)粗紙$()。最後放置在原木上進行$(l:mechanics/leather_making#scraping)刮除$()來製作$(thing)紙張$()。"
       },
       {
         "type": "patchouli:crafting",
@@ -39,13 +39,13 @@
       },
       {
         "type": "patchouli:text",
-        "text": "Flip to the next page for information on papermaking via the parchment process."
+        "text": "下一頁講述有關羊皮紙的造紙程序。\n"
       },
       {
         "type": "patchouli:text",
         "anchor": "parchment",
-        "text": "$(thing)Parchment Paper$() starts with a scraped hide. Review the $(l:mechanics/leather_making)leather making chapter$() to learn how to make it. Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), or from $(l:mechanics/sluices)Sluicing$() or $(l:mechanics/panning)Panning$() ore deposits with Andesite, Rhyolite, or Dacite in them.",
-        "title": "Parchment"
+        "text": "$(thing)羊皮紙$()由$(l:mechanics/leather_making)刮製獸皮$()製作。過程需要幾種不同物品。首先是$(thing)浮石$()。浮石能在$(l:the_world/geology)火山$()附近的地面拾取或用$(l:mechanics/sluices)洗礦槽$()與$(l:mechanics/panning)淘金盤$()淘洗含有安山岩、流紋岩或英安岩的沉積礦物取得。",
+        "title": "羊皮紙"
       },
       {
         "type": "patchouli:multiblock",
@@ -62,33 +62,33 @@
             "X": "tfc:groundcover/pumice"
           }
         },
-        "name": "Pumice",
-        "text": "A Pumice rock placed on the ground.",
+        "name": "浮石",
+        "text": "地上的浮石",
         "enable_visualize": false
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/large_treated_hide",
-        "text": "Crafting pumice, a hammer, and scraped hide gives sections of $(thing)Treated Hide$()."
+        "text": "將浮石、鍛造錘與刮製獸皮合成，就能得到$(thing)預製獸皮$()。\n"
       },
       {
         "type": "patchouli:crafting",
         "recipe": "tfc:crafting/parchment",
-        "text": "Treated hide, $(l:mechanics/glassworking#lime)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+        "text": "將預製獸皮、$(l:mechanics/glassworking#lime)石灰粉$()、麵粉與新鮮雞蛋混合，便能完成處理程序並產出可用的紙張。"
       },
       {
         "type": "patchouli:text",
         "anchor": "paperfromwood",
-        "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper",
-        "title": "Paper from Wood"
+        "text": "$(thing)木材造紙$()是古老工藝，將堅硬的木頭碎成木漿，再經由壓製、烘乾與刮除來製作紙張。$(br2)注意：較軟的木頭不適合用來造紙。\n",
+        "title": "木頭造紙"
       },
       {
         "type": "patchouli:text",
-        "text": "First you need to find Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+        "text": "首先要找到硬木：$(br2)金合歡$(br)梣木$(br)山楊木$(br)樺木$(br)黑檀木$(br)栗木$(br)山核桃木$(br)楓木$(br)橡木$(br)紅木$(br)懸鈴木\n"
       },
       {
         "type": "patchouli:spotlight",
-        "title": "Stripped Hardwood",
+        "title": "剝皮硬木",
         "item": {
           "tag": "tfg:stripped_hardwood"
         },

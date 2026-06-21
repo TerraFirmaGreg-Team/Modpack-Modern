@@ -1,0 +1,11 @@
+{
+	"processors": [
+		{
+			"processor_type": "lithostitched:reference",
+			"processor_lists": [
+				"tfg:beneath/tower_low",
+				"tfg:beneath/tower_high"
+			]
+		}
+	]
+}

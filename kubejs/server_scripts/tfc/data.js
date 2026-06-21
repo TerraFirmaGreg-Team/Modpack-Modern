@@ -51,6 +51,23 @@ const registerTFCFuels = (event) => {
 	event.fuel('gtceu:coal_dust', 1415, 600, 0.85)
 	event.fuel('gtceu:small_coal_dust', 1415, 600 / 4, 0.85)
 	event.fuel('gtceu:tiny_coal_dust', 1415, 600 / 9, 0.85)
+
+	event.fuel('tfg:wood/wood/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/log/beech', 720, 3000, 0.95)
+	event.fuel('tfg:wood/stripped_wood/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/beech', 720, 3000, 0.95)
+    event.fuel('tfg:wood/wood/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/log/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_wood/araucaria', 627, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/araucaria', 627, 3000, 0.95)
+	event.fuel('tfg:wood/wood/mahoe', 651, 3000, 0.95)
+    event.fuel('tfg:wood/log/mahoe', 651, 3000, 0.95)
+	event.fuel('tfg:wood/stripped_wood/mahoe', 651, 3000, 0.95)
+    event.fuel('tfg:wood/stripped_log/mahoe', 651, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:ginkgo_wood', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:ginkgo_log', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:stripped_ginkgo_wood', 690, 3000, 0.95)
+    event.fuel('wan_ancient_beasts:stripped_ginkgo_log', 690, 3000, 0.95)
 }
 
 
@@ -61,6 +78,8 @@ const registerTFCLampFuels = (event) => {
 	event.lampFuel('gtceu:oil_medium', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:oil_heavy', '#tfc:lamps', 1000)
 	event.lampFuel('gtceu:seed_oil', '#tfc:lamps', 7000)
+	event.lampFuel('gtceu:fish_oil', '#tfc:lamps', 7000)
+	event.lampFuel('tfg:peanut_oil', '#tfc:lamps', 7000)
 	event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
 

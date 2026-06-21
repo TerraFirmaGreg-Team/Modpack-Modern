@@ -14,22 +14,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, グラファイト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)グラファイト, 歴青炭, ダイヤモンド$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)ネザークォーツ, クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, リチウム, カリ岩塩$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, ネザークォーツ, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Anthracite, グラファイト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Irarsite, Ruarsite...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Phlogopite, 硫黄, アパタイト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)グラファイト, 歴青炭, ダイヤモンド$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)ネザークォーツ, クォーツ, 重晶石, ゼオライト$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)ビスマス, 硫黄, 硝酸カリウム$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)モリブデン鉛鉱, 輝水鉛鉱, パウエル石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)リシア輝石, リチウム, カリ岩塩$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)リン酸三カルシウム, アパタイト, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)レッドストーン, 辰砂, ネザークォーツ, ルビー$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)四面銅鉱, 輝安鉱, 自然銀$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)岩塩, カリ岩塩, トロナ$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)方鉛鉱, 自然銀, 鉛$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)明礬石, ゼオライト, 重晶石$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)自然金, 磁鉄鉱, エレクトロチン$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)自然金, 黄鉄鉱, 黄銅鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)自然銅, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)褐炭$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)赤鉄鉱, 針鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)軟マンガン鉱, 灰礬柘榴石, タンタル石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)針鉄鉱, 褐鉄鉱, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)錫石, 錫$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)閃亜鉛鉱, 方鉛鉱, 硫黄$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)鶏冠石, 輝安鉱, 辰砂$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)黄銅鉱, 黄鉄鉱, 斑銅鉱$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)歴青炭, 黄鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)硫鉄ニッケル鉱, 珪ニッケル鉱, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)硫黄, 黄鉄鉱, 輝安鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)自然金, 磁鉄鉱, エレクトロチン$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)自然金, 黄鉄鉱, 輝銅鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)自然銅, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)褐炭$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)赤鉄鉱, 針鉄鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)軟マンガン鉱, 灰礬柘榴石, タンタル石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)輝銅鉱, 黄鉄鉱, 斑銅鉱$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)針鉄鉱, 褐鉄鉱, 孔雀石$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)錫石, 錫$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)閃亜鉛鉱, 方鉛鉱, 硫黄$()$()",
       "type": "patchouli:text"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)鶏冠石, 輝安鉱, 辰砂$()$()",
+      "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/5 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:Decaying Caverns)Decaying Caverns$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 千枚岩, 大理石, 混成岩, 片岩, 片麻岩, 粘板岩, 鍾乳石, 閃緑岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:Decaying Caverns)Decaying Caverns$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 千枚岩, 大理石, 混成岩, 片岩, 片麻岩, 粘板岩, 鍾乳石, 閃緑岩",
       "title": "Anthracite, グラファイト",
       "type": "patchouli:text",
       "anchor": "beneath_coal_anthracite"
@@ -81,7 +81,141 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/5 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 4$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/30 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 18%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 50$(br)$(thing)高さ$(): 10$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "title": "Irarsite, Ruarsite...",
+      "type": "patchouli:text",
+      "anchor": "beneath_psg"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Irarsite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/irarsite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 37%$(br)$(thing)Source of$(): Iridium, Arsenic, Sulfur$(br)$(thing)化学式$(): Ir₄Ru₁Rh₁Pt₁As₇S₇",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ruarsite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ruarsite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 35%$(br)$(thing)Source of$(): Ruthenium, Arsenic, Sulfur$(br)$(thing)化学式$(): RuAsS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Ferhodsite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/ferhodsite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 27%$(br)$(thing)Source of$(): Rhodium, Iron, Nickel$(br)$(thing)化学式$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 45$(br)$(thing)高さ$(): 10$(br)$(thing)バイオーム$(): $(t:玄武岩の三角州)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "title": "Phlogopite, 硫黄, アパタイト",
+      "type": "patchouli:text",
+      "anchor": "beneath_phlogopite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Phlogopite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/phlogopite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 60%$(br)$(thing)採取可能$(): アルミニウム、フッ素$(br)$(thing)化学式$(): KMg₃AlSi₃O₁₀F₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硫黄",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 28%$(br)$(thing)採取可能$(): 硫黄$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "アパタイト",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/apatite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 12%$(br)$(thing)採取可能$(): カルシウム、リン、Forestryに対するPTSD$(br)$(thing)化学式$(): Ca₅(PO₄)₃Cl",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に幅広く平たい形状です)円盤状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 50$(br)$(thing)高さ$(): 10$(br)$(thing)バイオーム$(): $(t:玄武岩の三角州)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "グラファイト, 歴青炭, ダイヤモンド",
       "type": "patchouli:text",
       "anchor": "beneath_graphite"
@@ -240,7 +374,141 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 24%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 15$(br)$(thing)バイオーム$(): $(t:灰の森)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "title": "ビスマス, 硫黄, 硝酸カリウム",
+      "type": "patchouli:text",
+      "anchor": "beneath_bismuth"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "ビスマス",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bismuth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 37%$(br)$(thing)融解$(): ビスマス$(br)$(thing)化学式$(): Bi",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硫黄",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/sulfur"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 33%$(br)$(thing)採取可能$(): 硫黄$(br)$(thing)化学式$(): S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "硝酸カリウム",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/saltpeter"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 28%$(br)$(thing)採取可能$(): カリウム、窒素$(br)$(thing)化学式$(): KNO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:Decaying Caverns)Decaying Caverns$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 千枚岩, 大理石, 混成岩, 片岩, 片麻岩, 粘板岩, 鍾乳石, 閃緑岩",
+      "title": "モリブデン鉛鉱, 輝水鉛鉱, パウエル石",
+      "type": "patchouli:text",
+      "anchor": "beneath_molydbenum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "モリブデン鉛鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 43%$(br)$(thing)採取可能$(): 鉛、モリブデン$(br)$(thing)化学式$(): PbMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "パウエル石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/powellite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 34%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "輝水鉛鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 21%$(br)$(thing)採取可能$(): モリブデン$(br)$(thing)化学式$(): MoS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 22%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Lava Floes)Lava Floes$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "リシア輝石, リチウム, カリ岩塩",
       "type": "patchouli:text",
       "anchor": "beneath_lithium"
@@ -374,7 +642,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)バイオーム$(): $(t:Basalt Deltas)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に縦に長く、細い形で生成されます)パイプ状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)高さ$(): 60$(br)$(thing)半径$(): 12$(br)$(thing)バイオーム$(): $(t:玄武岩の三角州)Basalt Deltas$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "レッドストーン, 辰砂, ネザークォーツ, ルビー",
       "type": "patchouli:text",
       "anchor": "beneath_redstone"
@@ -466,7 +734,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Lush Hollow)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:繁茂した空洞)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
       "title": "四面銅鉱, 輝安鉱, 自然銀",
       "type": "patchouli:text",
       "anchor": "beneath_copper_tetrahedrite"
@@ -987,7 +1255,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 23$(br)$(thing)バイオーム$(): $(t:Ash Forest)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 20%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 0 — 80$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 23$(br)$(thing)バイオーム$(): $(t:灰の森)Ash Forest$(/t)$(br2)$(thing)岩石の種類$(): 混成岩, 玄武岩, 輝岩",
       "title": "自然金, 磁鉄鉱, エレクトロチン",
       "type": "patchouli:text",
       "anchor": "beneath_gold_rich"
@@ -1054,8 +1322,8 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:Lush Hollow)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
-      "title": "自然金, 黄鉄鉱, 黄銅鉱",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 25%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 25$(br)$(thing)バイオーム$(): $(t:繁茂した空洞)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
+      "title": "自然金, 黄鉄鉱, 輝銅鉱",
       "type": "patchouli:text",
       "anchor": "beneath_gold"
     },
@@ -1101,10 +1369,10 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "黄銅鉱",
+      "name": "輝銅鉱",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/chalcopyrite"
+          "0": "#forge:ores/chalcocite"
         },
         "pattern": [
           [
@@ -1116,12 +1384,12 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 18%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): CuFeS₂",
+      "text": "$(thing)パーセント$(): 18%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₂S",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 30%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:Lush Hollow)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 30%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:繁茂した空洞)Lush Hollow$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
       "title": "自然銅, 孔雀石",
       "type": "patchouli:text",
       "anchor": "beneath_copper_native"
@@ -1315,6 +1583,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)パーセント$(): 15%$(br)$(thing)採取可能$(): マンガン、タンタル$(br)$(thing)化学式$(): MnTa₂O₆",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:熱水泉)Geothermal Springs$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
+      "title": "輝銅鉱, 黄鉄鉱, 斑銅鉱",
+      "type": "patchouli:text",
+      "anchor": "beneath_copper_sulfide"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "輝銅鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chalcocite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₂S",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "黄鉄鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/pyrite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 33%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeS₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "斑銅鉱",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/bornite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 16%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₅FeS₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -1568,73 +1903,6 @@
       },
       "enable_visualize": false,
       "text": "$(thing)パーセント$(): 10%$(br)$(thing)採取可能$(): 水銀$(br)$(thing)化学式$(): HgS",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
-      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/10 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 28%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:この鉱脈が生成される高さ（Y座標）の範囲を示します。)Y$(/t)$(): 80 — 140$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 27$(br)$(thing)バイオーム$(): $(t:熱水泉)Geothermal Springs$(/t)$(br2)$(thing)岩石の種類$(): 凝灰岩, 斑れい岩, 混成岩, 片岩, 片麻岩, 花崗岩, 鍾乳石, 閃緑岩",
-      "title": "黄銅鉱, 黄鉄鉱, 斑銅鉱",
-      "type": "patchouli:text",
-      "anchor": "beneath_copper_sulfide"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "黄銅鉱",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chalcopyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): CuFeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "黄鉄鉱",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/pyrite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 33%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): FeS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "斑銅鉱",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bornite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 16%$(br)$(thing)融解$(): 銅$(br)$(thing)化学式$(): Cu₅FeS₄",
       "type": "patchouli:multiblock"
     }
   ],

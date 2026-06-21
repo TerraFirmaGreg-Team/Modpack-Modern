@@ -62,6 +62,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfide')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tarkianite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/sand_basaltic')
+	event.add('tfc:in_biome/veins', 'tfg:earth/vein/sand_garnet')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/sand_granitic')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/sand_tin')
 	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuth')
@@ -154,6 +155,7 @@ const registerTFGOreVeinFeatures = (event) => {
 	// #region nether ores
 
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_aluminium')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_bismuth')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_coal_anthracite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_coal_bituminous')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_coal_lignite')
@@ -169,8 +171,11 @@ const registerTFGOreVeinFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_lead_silver')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_lithium')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_manganese')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_molydbenum')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_nickel')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_phlogopite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_phosphate')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_psg')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_quartz')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_realgar')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/beneath_redstone')

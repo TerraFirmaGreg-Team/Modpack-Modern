@@ -46,6 +46,10 @@
 			"tfg:nether/terrain/spring_lava",
 			"tfg:nether/terrain/clay_disc"
 		],
+		[
+			"tfc:erosion"
+		],
+		"#tfg:nether_veins",
 		"#tfg:nether_crops",
 		[
 			"tfg:nether/surface/big_mushrooms",
@@ -74,11 +78,8 @@
 			"tfg:nether/entity/crocodile",
 			"tfg:nether/entity/temperate_frog",
 			"tfg:nether/entity/isopod",
-			"tfg:nether/entity/zombie_horse",
-			"tfc:erosion"
-		],
-		[],
-		"#tfg:nether_veins"
+			"tfg:nether/entity/zombie_horse"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

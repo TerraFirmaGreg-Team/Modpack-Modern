@@ -14,32 +14,32 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandina, Piropo, Safira...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatita, Fosfato Tricálcico... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Areia de Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Areia Mineral Basáltica...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Areia Mineral Granítica...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnasita, Monazita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Bauxita, Ilmenita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonita, Magnesita, Olivina...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismuto$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismuto (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismuto, Prata Nativa...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Calcocita, Gesso, Cobalto...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Calcopirita, Goethita, Pirita...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Calcopirita, Pirita...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)Almandina, Piropo, Safira...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_apatite)Apatita, Fosfato Tricálcico... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Areia de Cassiterita$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Areia de Glauconita...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)Areia Mineral Basáltica...$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Areia Mineral Granítica...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_monazite)Bastnasita, Monazita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bauxite)Bauxita, Ilmenita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite_olivine)Bentonita, Magnesita, Olivina...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_bismuth_mountain)Bismuto$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_bismuth)Bismuto (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_bismuth)Bismuto, Prata Nativa...$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)Calcocita, Gesso, Cobalto...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)Calcopirita, Goethita, Pirita...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Calcopirita, Zeólita, Realgar (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Calcopirita, Zeólita...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Carvão Betuminoso (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Cassiterita, Amianto$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Cassiterita, Amianto...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterita, Estanho (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Chumbo, Prata Nativa (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Cianita, Mica, Polucita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Cobaltita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Cobre Nativo (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Enxofre (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Enxofre (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Enxofre, Bornita, Calcocita (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Enxofre, Estibnita, Bornita (Volcanic)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper)Calcopirita, Pirita...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)Calcopirita, Zeólita, Realgar (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)Calcopirita, Zeólita...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_coal)Carvão Betuminoso (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)Cassiterita, Amianto$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)Cassiterita, Amianto...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)Cassiterita, Estanho (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Chumbo, Prata Nativa (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)Cianita, Mica, Polucita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)Cobaltita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)Cobre Nativo (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Enxofre (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Enxofre (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Enxofre, Bornita, Calcocita (Deep)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Enxofre, Pirita, Esfalerita (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita, Galena$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumênio, Sal-gema$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Estanho, Cassiterita (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Fosfato Tricálcico (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Galena, Prata Nativa$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Galena, Prata Nativa, Chumbo (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita, Níquel, Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierita, Níquel, Cobaltita...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gesso (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethita, Limonita, Hematita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethita, Limonita, Hematita...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Enxofre, Estibnita, Bornita (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Enxofre, Pirita, Esfalerita (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Esfalerita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Esfalerita, Galena$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Espodumênio, Sal-gema$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Estanho, Cassiterita (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Fosfato Tricálcico (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_galena)Galena, Prata Nativa$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_galena)Galena, Prata Nativa, Chumbo (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)Garnierita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)Garnierita, Níquel, Cobaltita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)Garnierita, Níquel, Cobaltita...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)Gesso (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)Goethita, Limonita, Hematita$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Grafite, Carvão Betuminoso... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Grafite, Carvão Betuminoso... (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossulária, Espessartina...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossulária, Pirolusita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematita, Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurita, Sodalita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Lignito (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Lignito, Carvão Betuminoso$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_iron)Goethita, Limonita, Hematita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite)Grafite, Carvão Betuminoso... (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_graphite_volcanic)Grafite, Carvão Betuminoso... (Volcanic)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tantalite)Grossulária, Espessartina...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)Grossulária, Pirolusita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)Hematita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)Hematita, Limonita$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)Lazurita, Sodalita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)Lignito (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)Lignito, Carvão Betuminoso$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)Limonita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)Magnetita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetita...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malaquita (Surface)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Cianita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Ouro Nativo (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro Nativo, Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzito, Barita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzito, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Rubi, Cinábrio (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Rubi, Cinábrio (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sal, Sal-gema (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sal, Sal-gema, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Salitre (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Salitre, Diatomita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelita, Tungstato, Lítio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Bórax, Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Surface)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Cianita$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Ouro Nativo (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Ouro Nativo, Magnetita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartzito, Barita$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartzito, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Rubi, Cinábrio (Deep)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Rubi, Cinábrio (Large)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sylvite_salt)Sal, Sal-gema (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_salt)Sal, Sal-gema, Bórax$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Salitre (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Salitre, Diatomita...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelita, Tungstato, Lítio$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Bórax, Trona$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetraedrita, Cobre Nativo... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio Azul, Topázio...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Tório, Uraninita, Esmeralda...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita, Molibdenita...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetraedrita (Surface)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetraedrita, Cobre Nativo... (High)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topázio Azul, Topázio...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Tório, Uraninita, Esmeralda...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfenita, Molibdenita...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -235,6 +235,73 @@
     },
     {
       "Type": "patchouli:text",
+      "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/270 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 24%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -5 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): $(t:Lamaçais, Salinas, Mar de Dunas, Dunas Gramadas)Dry$(/t)$(br2)$(thing)Stone Types$(): Areia Amarela, Areia Branca, Areia Marrom, Areia Preta, Areia Rosa, Areia Verde, Areia Vermelha",
+      "title": "Areia de Glauconita...",
+      "type": "patchouli:text",
+      "anchor": "sand_garnet"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areia de Granada",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnet_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Areia de Glauconita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Terra de Fuller",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
       "text": "$(thing)$(t:The chance of a vein generating per chunk. Smaller bottom numbers are more common.)Rarity$(/t)$(): 1/190 chunks$(br)$(thing)$(t:The percentage of blocks in a vein that are ores instead of stone. A bigger percentage means more ores.)Density$(/t)$(): 24%$(br)$(thing)$(t:The shape of the vein.)Type$(/t)$(): $(t:Mostly round shaped)Cluster Vein$(/t)$(br)$(thing)$(t:How far deep the vein is relative to the surface's Y level.)Surface Depth$(/t)$(): -5 — 1$(br)$(thing)$(t:The average diameter of the vein)Size$(/t)$(): 34$(br)$(thing)$(t:If the distance between the surface and the ore vein is larger than this number, the ore vein will not generate surface indicators.)Indicator Max Depth$(/t)$(): 20$(br)$(thing)Biomes$(): Qualquer$(br2)$(thing)Stone Types$(): Areia Preta, Areia Rosa, Areia Verde",
       "title": "Areia Mineral Basáltica...",
       "type": "patchouli:text",
@@ -257,7 +324,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 57%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
+      "text": "$(thing)Porcentagem$(): 50%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -277,7 +344,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 35%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
+      "text": "$(thing)Porcentagem$(): 31%$(br)$(thing)Source of$(): Magnesium, Aluminium$(br)$(thing)Formula$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -297,7 +364,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Porcentagem$(): 18%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
@@ -324,7 +391,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 61%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
+      "text": "$(thing)Porcentagem$(): 53%$(br)$(thing)Melts into$(): Cast Iron$(br)$(thing)Formula$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
       "type": "patchouli:multiblock"
     },
     {
@@ -344,7 +411,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 30%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
+      "text": "$(thing)Porcentagem$(): 26%$(br)$(thing)Source of$(): Magnesium$(br)$(thing)Formula$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
@@ -364,7 +431,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Porcentagem$(): 20%$(br)$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
@@ -4182,26 +4249,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Molibdenita",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 57%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Wulfenita",
       "multiblock": {
         "mapping": {
@@ -4217,27 +4264,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 28%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Molibdênio",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/molybdenum"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): Mo",
+      "text": "$(thing)Porcentagem$(): 40%$(br)$(thing)Source of$(): Lead, Molybdenum$(br)$(thing)Formula$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -4257,13 +4284,28 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Porcentagem$(): 7%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
+      "text": "$(thing)Porcentagem$(): 34%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:multiblock",
+      "name": "Molibdenita",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Porcentagem$(): 24%$(br)$(thing)Source of$(): Molybdenum$(br)$(thing)Formula$(): MoS₂",
+      "type": "patchouli:multiblock"
     }
   ],
   "sortnum": 1

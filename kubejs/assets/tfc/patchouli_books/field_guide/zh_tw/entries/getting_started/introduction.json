@@ -42,14 +42,14 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "除了收集地上木棍和小樹枝外，也能空手破壞樹葉來取得木棍。收集一些石头和木棍後就可以開始嘗試 $(thing)打製石器$() 。打製石器是將兩塊石子互相敲擊將其中一塊鑿成特定形狀的過程。首先雙手應至少各持有一塊石子，接著對空氣按下右鍵就能開啟 $(thing)打製界面$() 。"
+			"text": "除了收集地上木棍和小樹枝外，也能空手破壞樹葉來取得木棍。收集一些石头和木棍後就可以開始嘗試 $(thing)打製石器$() 。打製石器是將兩塊石子互相敲擊將其中一塊鑿成特定形狀的過程。首先雙手應至少各持有一塊石子，接著對空氣按下右鍵就能開啟 $(thing)打製介面$() 。"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "打制界面。",
+			"text": "打製介面。",
 			"border": false
 		},
 		{
@@ -100,7 +100,7 @@
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)鍛造錘$()可以当作武器使用（造成$(l:mechanics/damage_types)打擊傷害$()），但它最主要的用途还是在$(l:getting_started/primitive_anvils)冶金业$()中。"
+			"text": "$(thing)鍛造錘$()可以作為武器使用造成$(l:mechanics/damage_types)打擊傷害$()，但它的本業還是$(l:getting_started/primitive_anvils)鍛造工藝$()。"
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",

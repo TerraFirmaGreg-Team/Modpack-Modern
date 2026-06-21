@@ -1,0 +1,15 @@
+{
+	"name": "tfg:mineshaft/surface/small_shaft",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 100,
+			"element": {
+				"location": "tfg:mineshaft/surface/small_bottom",
+				"processors": "tfg:mineshaft/support_fixer",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}

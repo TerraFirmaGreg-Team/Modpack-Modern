@@ -1,0 +1,206 @@
+{
+	"name": "Pavojingos medžiagos",
+	"icon": "createdeco:decal_skull",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"title": "Pavojingos medžiagos",
+			"item": "gtceu:cobaltite_dust",
+			"text": "Kai kurios $(thing)rudos$(), $(thing)dulkes$() ir $(thing)chemines medžiagos$() yra pavojingos ir jei jas nešiojate savo inventoriuje, gali sukelti $(item)neigiamus poveikius$() ar netgi $(item)nužudyti$() Jus. Kai juos nešiojate, ekrane rodoma $(item)poveikio būsena$().$(br2)Tam tikra įranga, pavyzdžiui, $(thing)kaukės$(), $(thing)pirštinės$() ir $(thing)apsauginis kostiumas nuo pavojingų medžiagų$() gali būti naudojami šiems poveikiams neutralizuoti."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Visi poveikiai",
+			"text": "$(li)$(l:tfg_ores/hazards#Arsenicosis)Arsenicosis$()$()$(li)$(l:tfg_ores/hazards#Asbestosis)Asbestosis$()$()$(li)$(l:tfg_ores/hazards#Berylliosis)Berylliosis$()$(li)$(l:tfg_ores/hazards#Carbon_Monoxide_poisoning)Carbon Monoxide poisoning$()$(li)$(l:tfg_ores/hazards#Carcinogens)Carcinogens$()$(li)$(l:tfg_ores/hazards#Chemical_burns)Chemical burns$()$(li)$(l:tfg_ores/hazards#Irritants)Irritants$()$(li)$(l:tfg_ores/hazards#Methanol_poisoning)Methanol poisoning$()$(li)$(l:tfg_ores/hazards#Nauseating_chemicals)Nauseating chemicals$()$(li)$(l:tfg_ores/hazards#Poisons)Poisonous materials$()$(li)$(l:tfg_ores/hazards#Radioactive_materials)Radioactive materials$()$(li)$(l:tfg_ores/hazards#Silicosis)Silicosis$()$()$(br2)The next page will provide information on how to deal with these effects."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Prevencija ir gydymai",
+			"text": "$(li)$(l:tfg_ores/hazards#rocks)Rocks?$()$()$(li)$(l:tfg_ores/hazards#containers)Containers$()$(li)$(l:tfg_ores/hazards#mask)The Face Mask$()$(li)$(l:tfg_ores/hazards#gloves)The Rubber Gloves$()$(li)$(l:tfg_ores/hazards#hazmat)The Hazmat Suit$()$(li)$(l:tfg_ores/hazards#medicine)Pills, Tablets and Salvos$()$(li)$(l:tfg_ores/hazards#rad_away)The RadAwayᵗᵐ pill$()$(li)$(l:tfg_ores/hazards#respawn)The Unthinkable...$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Akmenys!",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"anchor": "rocks",
+			"text": "$(thing)Lengviausias būdas$() $(thing)išvengti$() pavojingų poveikių yra $(item)iš viso neimti pavojingų daiktų$().$(br2)Pavyzdžiui, užpildydami savo inventorių $(thing)akmenimis$(), Jūs galėsite pasirinkti, kuriuos daiktus norite paimti, o su pavojingaisiais susitvarkyti vėliau."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Konteineriai",
+			"anchor": "containers",
+			"text": "Pavojingos medžiagos daro žalą tik tada, kai jos yra Jūsų $(thing)inventoriuje$(), tačiau tai netaikoma kitiems konteineriams!$(br)Pavojingos medžiagos nepadarys žalos, kol jos bus kitame konteinerį, pavyzdžiui, $(l:tfg_tips/inventory_management)kuprinėje$() arba $(l:getting_started/pottery#vessel)indelyje$(). $(thing)Dešiniuoju pelės mygtuku spustelėjus$() laikant indelį, jo turinį bus galima tiesiogiai perkelti į kitus indus ir iš konteinerių.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Veido kaukė",
+			"recipe": "gtceu:shaped/face_mask",
+			"text": "$(thing)Veido kaukė$() suteikia apsaugą nuo bet kokių $(item)Įkvėpimo$() pavojų, pavyzdžiui: arsenikozės.",
+			"anchor": "mask"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"title": "guminės pirštinės",
+			"link_recipes": true,
+			"anchor": "gloves",
+			"text": "The $(thing)Rubber gloves$() can either be made from $(l:mechanics/leather_making)Leather$() and $(l:arborfirmacraft/making_rubber)Latex$(), or out of $(thing)Rubber Sheets$(). They provide protection from any $(item)Skin Contact$() hazards, such as $(thing)Beryllium Dust$()."
+		},
+		{
+			"type": "tfc:knapping_recipe",
+			"recipe": "tfchotornot:leather_knapping/mittens",
+			"text": "First, knap the leather into mittens."
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:sealed_barrel/prepared_leather_gloves",
+			"text": "$(thing)Mittens$() are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:latex_soaked_gloves",
+			"text": "Prepared $(thing)leather gloves$() are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:rubber_gloves",
+			"text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/ovens)Oven$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Apsauginis kostiumas",
+			"item": "gtceu:hazmat_headpiece,gtceu:hazmat_chestpiece,gtceu:hazmat_leggings,gtceu:hazmat_boots",
+			"text": "Užbaigtas$(thing)apsauginis kostiumas $()užtikrina $(item)apsaugą $()nuo $(item)visų$() pavojų, net ir $(item)radiacijos$(). Jis pagamintas $(thing)ŽĮ („LV“) surinkėjo$() iš $(thing)polietileno$() ir $(thing)polivinilchlorido$().$(br2)Įdomus faktas! Jūs taip pat galite paieškoti $(thing)#ppe_armor$() „JEI“ duomenų bazėje, kad rastumėte daugiau įrangos, kurie suteikia apsauga nuo pavojingų medžiagų.",
+			"anchor": "hazmat"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Medicina",
+			"item": {
+				"tag": "tfg:medicine"
+			},
+			"anchor": "medicine",
+			"text": "In case you do get heavily exposed to a hazard, there are some $(thing)Medicines$() that can help you recover.$(br2)Basic $(thing)Pills$() are the most primitive and easy to make, but most come with $(item)Negative Side Effects$(). $(thing)Tablets$() and $(thing)Salvos$() are more effective and have less side effects, but they require $(thing)LV equipment$() and more advanced resources to make."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "„RadAwayᵗᵐ“ tabletė",
+			"item": "tfg:rad_away_pill",
+			"anchor": "rad_away",
+			"text": "Tai yra $(item)galutinis$() vaistas, skirtas $(item)VISIEMS$() pavojams ir $(item)TIK$() veiksmingas vaistas nuo $(item)Spinduliuotės$(). Tačiau tai taip pat yra $(thing)brangiausias$() ir $(thing)sunkiausiai$() pagaminamas daiktas, kuriam reikia $(thing)AĮ(„HV“) įtampos pakopos įrangos ir pažangių medžiagų.\n"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Failure...",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"anchor": "respawn",
+			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Arsenikozė",
+			"item": "gtceu:arsenic_dust",
+			"anchor": "Arsenikozė",
+			"text": "$(thing)Arsenicosis$() is an illness caused by inhaling $(thing)Arsenic$() from its dust, vapor or $(thing)Realgar$(). It slowly increases $(item)hunger$(), followed by $(item)nausea$(), and eventually $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Arsenicosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Asbestozė",
+			"item": "gtceu:asbestos_dust",
+			"anchor": "Asbestosis",
+			"text": "$(thing)Asbestosis$() is an illness caused by inhaling $(thing)Asbestos$() dust. If carried for long enough, it causes $(item)hunger$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Asbestosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Beryliozė",
+			"item": "gtceu:beryllium_dust",
+			"anchor": "Berylliosis",
+			"text": "$(thing)Berylliosis$() is an illness caused by skin contact with $(thing)Beryllium dust$() or $(thing)Liquid Beryllium$(). At first it might seem that it doesn't do much. However, the longer the exposure, the faster it $(item)kills$() you.$(br2)$(l:tfg_ores/hazards#gloves)Gloves$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Berylliosis$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Anglies monoksido apsinuodijimas",
+			"item": "gtceu:carbon_monoxide_bucket",
+			"anchor": "Carbon_Monoxide_poisoning",
+			"text": "$(thing)Carbon Monoxide poisoning$() is an illness caused by inhaling $(thing)Carbon Monoxide$() gas. Prolonged exposure causes $(item)nausea$() and quick $(item)death$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from $(thing)Carbon Monoxide$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Kancerogenai",
+			"item": "gtceu:benzene_bucket",
+			"anchor": "Kancerogenai",
+			"text": "$(thing)Carcinogens$() are substances that cause $(item)Cancer$(). They include $(thing)Chromium Dust$() aswell as some organic compounds, such as $(thing)Benzene and its products$(). $(thing)Carcinogens$() $(item)don't go away on their own$(), but they give plenty of warnings before doing any real harm. It starts off with $(item)Weakness$(), followed by $(item)Hunger$(), then $(item)Slowness$() and later on $(item)Mining Fatique$(). Only when substantial enough exposure is accumulated it causes $(item)Death$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Kancerogenai",
+			"item": "gtceu:chromium_dust",
+			"anchor": "Kancerogenai",
+			"text": "The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation of harmful chemicals, while the $(l:tfg_ores/hazards#gloves)Gloves$() protect from contact with $(thing)Chromium Dust$().$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both.$(br2)In case of severe exposure, it is advised to take some $(l:tfg_ores/hazards#medicine)Medicines$() to $(thing)Prevent$() any possible damage."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Cheminiai nudegimai",
+			"item": "gtceu:fluorine_bucket",
+			"anchor": "Chemical_burns",
+			"text": "$(thing)Cheminiai nudegimai$() atsiranda įkvėpus arba patekus ant odos tam tikrų $(thing)dujų$(), $(thing)rūgštų$(), $(thing)pagrindais$() arba $(thing)dulkių$(). Poveikis sukelia $(item)silpnumą$().$(br2) Veido kaukė $(l:tfg_ores/hazards#mask)apsaugo nuo įkvėpimo, o $(l:tfg_ores/hazards#gloves)pirštinės$()apsaugo nuo tiesioginio kontakto su oda.$(br2) Apsauginis kostiumas $() apsaugo nuo visko."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Irritants",
+			"item": "gtceu:chromite_dust",
+			"anchor": "Irritants",
+			"text": "$(thing)Irritation$() is caused by inhalation of $(thing)Ammonium Formate$() or skin contact with $(thing)Chromite Dust$(). Short contact only causes $(item)Weakness$(), but if ignored for longer it starts $(item)Damaging Randomly$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from both."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Metanolio apsinuodijimas",
+			"item": "gtceu:methanol_bucket",
+			"anchor": "Methanol_poisoning",
+			"text": "$(thing)Methanol poisoning$() is caused by inhalation of $(thing)Methanol$(). It causes a strong $(item)Blindness$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Pykinimo medžiagos",
+			"item": "gtceu:butyraldehyde_bucket",
+			"anchor": "Nauseating_chemicals",
+			"text": "$(thing)Nauseating chemicals$(), such as $(thing)Butyraldehyde$(), are substances that cause $(item)Nausea$() when inhaled.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protect from inhalation."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Nuodingos medžiagos",
+			"item": "gtceu:lead_dust",
+			"anchor": "Poisons",
+			"text": "There are two types of $(thing)Poisonous materials$(). Weak include $(thing)Lead Dust$(), while the stronger poisons include $(thing)Nitrogen Dioxide$(). $(thing)Weak poisons$() cause a $(item)Progressively Worsening Poison$() effect, while $(thing)Regular poisons$() cause $(item)Weakness$() and a $(item)Stronger Poison$() effect.$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() protects from inhalation, while the $(l:tfg_ores/hazards#gloves)Gloves$() protects from direct skin contact.$(br2)The $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() protects from any contact."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioaktyviosios medžiagos",
+			"item": "gtceu:uranium_ingot",
+			"anchor": "Radioactive_materials",
+			"text": "Dauguma $(thing)radioaktyviųjų medžiagų $()kaip $(thing)uranas 238$(), su kuriomis Jūs susidursite tik pasiekus $(thing)EĮ („EV“) lygį$() arba aukštesnį. Jos $(item)nuolat Jus apšvitins$(). Nedidelis poveikis sukelia $(item)švytėjimą$(), bet ilgalaikis kontaktas sukelia greitą $(item)mirtį$().$(br2)Žinome, kad jis atrodo skanus ir turi milijardą kalorijų, bet $(#ff0000)PRAŠOME NEVALGYTI URANO!$()"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Radioaktyviosios medžiagos",
+			"item": "gtceu:plutonium_ingot",
+			"text": "Only the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$(), as well as some advanced armors provide full protection from radiation.$(br2)In the case you do get irradiated, only the $(l:tfg_ores/hazards#rad_away)RadAwayᵗᵐ pill$() can cure you."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Silikozė",
+			"item": "gtceu:silicon_dioxide_dust",
+			"anchor": "Silicosis",
+			"text": "$(thing)Silicosis$() is an illness caused by inhaling $(thing)Silicon Dioxide Dust$(). Exposure causes a $(item)Reduction$() in both $(item)Health$() and the $(item)Air Supply$() you have while diving $(thing)Under Water$().$(br2)The $(l:tfg_ores/hazards#mask)Face Mask$() and the $(l:tfg_ores/hazards#hazmat)Hazmat Suit$() provide protection from inhalation of silicon dioxide."
+		}
+	]
+}

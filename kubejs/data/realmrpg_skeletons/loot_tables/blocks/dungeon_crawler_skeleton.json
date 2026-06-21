@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "realmrpg_skeletons:templates/stick_skeleton",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

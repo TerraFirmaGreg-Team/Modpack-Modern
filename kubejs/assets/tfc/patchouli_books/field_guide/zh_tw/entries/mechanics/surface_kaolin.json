@@ -7,11 +7,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kaolinite",
-			"text": "Kaolin Clay is required to make $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Rolling Hills and Highlands (and in their $(t:Surface rock of Limestone, Dolomite, Chalk, or Marble)Karst$() $(t:Burren, Cenote, Doline, Shilin, or Tower Karst)variants$()), Old Mountains, and Shield Volcanoes at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+			"text": "製作$(l:mechanics/fire_clay)耐火黏土$()需要高嶺土。高嶺土生成於Y=75-110之間的高原、丘陵與高地(包含$(t:表層岩石為石灰岩、白雲岩、白堊岩或大理岩)的喀斯特地形$()、$(t:布倫、天坑、灰岩坑、石林或塔伏喀斯特)變種$()）、古老山脈和盾伏火山，要求$(l:the_world/climate#temperature)温度$()不低於18°C，$(l:the_world/climate#rainfall)降雨量$()不低於300mm。$(thing)火球花/血百合$()會生在在高嶺土上，甚至可能在其下方35格。"
 		},
 		{
 			"type": "tfc:multimultiblock",
-			"text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+			"text": "一般來說，往$(thing)東南方$()移動可以找到更温暖濕潤的區域。",
 			"multiblocks": [
 				{
 					"pattern": [
@@ -87,7 +87,7 @@
 			"type": "patchouli:spotlight",
 			"item": "tfc:powder/kaolinite",
 			"anchor": "powder",
-			"text": "Only $(thing)20%$() of Kaolin Clay will turn into $(thing)Kaolinite Powder$(), so it's recommended to bake it on-site using $(l:getting_started/pit_kiln)Pit Kilns$() to save inventory space.$(br2)Bring home around 20 $(thing)Blocks$() of Kaolin Clay as well, for $(l:mechanics/glassworking_applications)Glassworking$() later."
+			"text": "只有$(thing)20%$()的高嶺黏土能轉換為$(thing)高嶺粉$()，建議使用$(l:getting_started/pit_kiln)窯抗$()就地燒製以節省物品欄。$(br2)同時帶回約$(thing)20個$()高嶺黏土供後續$(l:mechanics/glassworking_applications)玻璃工藝$()使用。"
 		}
     ]
 }

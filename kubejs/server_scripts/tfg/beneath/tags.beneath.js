@@ -205,6 +205,7 @@ function registerTFGBeneathBlockTags(event) {
 	event.add('minecraft:mineable/hoe', 'minecraft:cobweb');
 	event.add('minecraft:mineable/shovel', 'minecraft:cobweb');
 	event.add('minecraft:mineable/axe', 'minecraft:cobweb');
+	event.remove('minecraft:mineable/sword', 'minecraft:cobweb');
 
 	event.add("beneath:nether_bush_plantable_on", "#tfc:clay_grass");
 	event.add("minecraft:small_dripleaf_placeable", "#tfc:clay_grass");

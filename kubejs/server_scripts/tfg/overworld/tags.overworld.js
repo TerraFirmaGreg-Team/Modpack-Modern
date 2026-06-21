@@ -252,7 +252,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfc:highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:hills')
 	event.add('tfg:has_structure/illager_camp', 'tfc:inverted_badlands')
-	event.add('tfg:has_structure/illager_camp', 'tfc:low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfc:lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:oceanic_mountains')
@@ -296,7 +295,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/hills')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mud_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/oceanic_mountains')
@@ -557,7 +555,6 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:slimes', 'tfg:slime')
 
 	// Takes no damage from the new 1.21 cacti
-	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
 	event.add('tfg:ignores_cacti', 'waves:waves')
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 	event.add('tfg:ignores_cacti', 'tfc:horse')
