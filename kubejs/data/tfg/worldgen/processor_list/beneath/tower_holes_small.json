@@ -155,6 +155,84 @@
 					"type": "minecraft:passthrough"
 				}
 			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:building_mid"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "ae2:quartz_bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 9,
+							"data": {
+								"Name": "ae2:quartz_bricks"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
+		},
+		{
+			"processor_type": "lithostitched:condition",
+			"random_mode": {
+				"mode": "per_block",
+				"name": "hole:building_high"
+			},
+			"if_true": [
+				{
+					"type": "lithostitched:matching_blocks",
+					"blocks": "minecraft:bricks",
+					"match_type": "input"
+				}
+			],
+			"then": {
+				"processor_type": "lithostitched:set_block",
+				"state_provider": {
+					"type": "minecraft:weighted_state_provider",
+					"entries": [
+						{
+							"weight": 9,
+							"data": {
+								"Name": "minecraft:bricks"
+							}
+						},
+						{
+							"weight": 1,
+							"data": {
+								"Name": "minecraft:cave_air"
+							}
+						}
+					]
+				},
+				"preserve_state": true,
+				"random_mode": "per_block",
+				"block_entity_modifier": {
+					"type": "minecraft:passthrough"
+				}
+			}
 		}
 	]
 }
