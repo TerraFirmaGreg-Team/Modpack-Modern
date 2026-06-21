@@ -90,12 +90,12 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:jute_net",
-					"weight": 100
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfc:dirty_jute_net",
-					"weight": 100
+					"weight": 50
 				},
 				{
 					"type": "minecraft:tag",
@@ -106,7 +106,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:candle/white",
-					"weight": 100,
+					"weight": 70,
 					"functions": [
 						{
 							"add": false,
@@ -138,7 +138,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:poison_pill",
-					"weight": 100,
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
@@ -154,7 +154,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:combat_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -170,7 +170,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:recovery_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -186,7 +186,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:acrobat_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -202,7 +202,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:mining_powder",
-					"weight": 100,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -218,7 +218,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bowl",
-					"weight": 50,
+					"weight": 40,
 					"functions": [
 						{
 							"add": false,
@@ -341,7 +341,7 @@
 			"rolls": {
 				"type": "minecraft:uniform",
 				"max": 7,
-				"min": 5
+				"min": 6
 			}
 		}
 	]
