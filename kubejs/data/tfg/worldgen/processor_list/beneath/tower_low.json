@@ -4,26 +4,8 @@
 			"processor_type": "lithostitched:reference",
 			"processor_lists": [
 				"tfg:beneath/tower_holes_stairs",
-				"tfg:beneath/tower_holes_small"
-			]
-		},
-		{
-			"processor_type": "lithostitched:apply_random",
-			"mode": "per_block",
-			"processor_lists": [
-				{
-				"weight": 7,
-				"data": "tfg:beneath/tower_palette_gilded"
-				},
-				{
-				"weight": 3,
-				"data": "tfg:beneath/tower_palette_magma"
-				}
-			]
-		},
-		{
-			"processor_type": "lithostitched:reference",
-			"processor_lists": [
+				"tfg:beneath/tower_holes_small",
+				"tfg:beneath/tower_palette_magma",
 				"tfg:beneath/tower_palette_bastion"
 			]
 		}
