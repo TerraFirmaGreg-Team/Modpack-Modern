@@ -52,21 +52,21 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Crushed Ore",
+      "title": "susmulkinta rūda",
       "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
+      "text": "$(l:tfg_ores/ore_basics#processing)Rūdas$() galima susmulkinti, kad būtų gauta daugiau metalo.\n"
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Powders",
+      "title": "Milteliai",
       "recipe": "tfg:quern/sulfur",
       "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
     },
     {
       "type": "tfc:quern_recipe",
-      "title": "Dyes",
+      "title": "Dažai",
       "recipe": "tfc:quern/red_dye",
-      "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
+      "text": "Dažus galima gauti iš įvairių gėlių"
     },
     {
       "type": "patchouli:spotlight",

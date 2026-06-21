@@ -144,7 +144,7 @@
 			"entity": "wan_ancient_beasts:soarer",
 			"scale": 0.4,
 			"offset": 1,
-			"name": "Szybowacz",
+			"name": "Lotnik",
 			"text": "$(thing)Soarers$() are passive animals found above -106°C. You can tame them with $(item)Raw Fish$() to use them as a flying mount. They can also be eaten."
 		},
 		{
