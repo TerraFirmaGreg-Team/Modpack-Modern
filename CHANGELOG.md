@@ -1,8 +1,16 @@
 # Changelog
 
 ## Unreleased
+- We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.13) with all of the major changes between 0.12 and 0.13.
+- If you're upgrading a world from 0.12 to 0.13, make sure you read our upgrade guide [here](https://wiki.terrafirmagreg.team/modern/en_us/upgrade-guides/from-0.12-to-0.13). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+- If you've been testing the new Beneath in our recent alphas, we recommend you wipe it again.
 ### Breaking Changes
-We've added a mod to enable UTF8 support for ComputerCraft. This may break your existing scripts 
+#### ComputerCraft
+We've added a mod to enable UTF-8 support for ComputerCraft. @Kondrashka177
+
+Existing ComputerCraft programs should continue to work without migration. Programs which already contain valid UTF-8 text should display correctly after installing the mod. Programs which were previously saved with corrupted/mojibake text will need that text corrected manually; simply opening and saving the file again will not automatically recover the original characters.
+#### Overworld worldgen
+Due to some issues with servers, we've changed the default world generation for worlds from pre-0.12 to the **new worldgen**. If you still want to keep the old worldgen, change the `worldgenOverrides` setting in `defaultconfigs/tfg-server.toml` to `0`.
 ### Changes
 #### Ores
 - Added more ores to the Beneath, including four brand new ones! @TomPlop
@@ -12,6 +20,8 @@ We've added a mod to enable UTF8 support for ComputerCraft. This may break your 
 - Uvarovite now only requires cupronickel coils instead of kanthal @Pyritie
 #### New structures
 - Added mineshaft structures to the overworld! These are *guaranteed* to contain ore veins and are a great way to explore more of the overworld's caves. @BlueBoat29
+- Overhauled the new tower structures in the Beneath @Filiipa
+- Added a new abandoned house structure to the top layer spider biomes @Filiipa
 #### Other changes
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
@@ -22,7 +32,7 @@ We've added a mod to enable UTF8 support for ComputerCraft. This may break your 
 - Restored the recipe for copying configured Create filters (#4265) @Robak132
 - You can now use any rubber plates to make the hazmat armor pieces (#4219) @lickorice
 - Mahoe and Araucaria now count as tannin logs @Pyritie
-- Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
+- Copper Bonded Al2O3 PCB now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
 - Added wild roses and feather groundcover to the overworld @Pyritie
 - You can now also use nether quartz to make silicon carbide @Pyritie
 ### Bug fixes
@@ -318,8 +328,8 @@ Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are cli
 - Some quest fixes @Pyritie
 
 ## [0.12.5] - 18-04-2026
-- We've [written up a page](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-0.12-Major-Release-Changelog) with all of the major changes between 0.11 and 0.12.
-- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+- We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.12) with all of the major changes between 0.11 and 0.12.
+- Reminder that if you're upgrading a world from 0.11 to 0.12, to make sure you read our upgrade guide [here](https://wiki.terrafirmagreg.team/modern/en_us/upgrade-guides/from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
 ### Changes
 - The Cracker is now post-cleanroom @TomPlop
 ### Bug fixes
@@ -330,7 +340,7 @@ Removed Shoulder Surfing Reloaded and Third Person Shooting: Zero. These are cli
 - Fixed Molybdenum Silicon Boron in the OLA being uncraftble @TomPlop
 
 ## [0.12.4] - 18-04-2026
-WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
+WARNING! If you're upgrading your world from 0.11 to 0.12, please read the upgrade guide [here](https://wiki.terrafirmagreg.team/modern/en_us/upgrade-guides/from-0.11-to-0.12). It contains instructions on how to convert existing worlds to use the new worldgen, along with other important information.
 ### Breaking Changes
 - Generic "Coal" no longer exists. It's been replaced with TFC's Lignite and Bituminous Coal. Existing raw coal ore should automatically turn into bituminous coal, other items should have shapeless crafting recipes into bituminous coal, and coal ore blocks in your world should also be bituminous coal. You can use lignite and bituminous coal in all of the same ways you used to use raw coal ore as well as the vanilla coal items. This also means coal ore processing has been removed. (#3808) @Pyritie
 ### Changes
