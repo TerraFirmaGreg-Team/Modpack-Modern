@@ -555,7 +555,6 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfg:slimes', 'tfg:slime')
 
 	// Takes no damage from the new 1.21 cacti
-	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
 	event.add('tfg:ignores_cacti', 'waves:waves')
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 	event.add('tfg:ignores_cacti', 'tfc:horse')

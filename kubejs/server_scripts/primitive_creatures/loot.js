@@ -116,7 +116,7 @@ function registerPrimitiveCreaturesLoots(event) {
 			LootEntry.of('minecraft:bamboo').when(c => c.randomChance(0.5)),
 			LootEntry.of('primitive_creatures:totem_0').when(c => c.randomChance(0.05)),
 			LootEntry.of('primitive_creatures:totem_3').when(c => c.randomChance(0.05)),
-			LootEntry.of('sns:quiver')) // battered wool
+			LootEntry.of('sns:quiver'))
 	event.addEntityLootModifier('primitive_creatures:iloger_5')
 		.randomChance(CLOTHING_DROP_RATE)
 		.addWeightedLoot([
