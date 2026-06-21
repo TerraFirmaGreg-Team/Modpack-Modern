@@ -1,14 +1,18 @@
 # Changelog
 
 ## Unreleased
+### Breaking Changes
+We've added a mod to enable UTF8 support for ComputerCraft. This may break your existing scripts 
 ### Changes
 #### Ores
 - Added more ores to the Beneath, including four brand new ones! @TomPlop
 - Added a new multiblock that exclusively works at the bottom of the Beneath - the Geologic Vulcanizer. Right now, it can process all your ores in one single recipe *and* return a bit of extra than you'd normally get doing all the steps separately! However, it's significantly more complicated to run... check the quest in LV for more details. @TomPlop
 - Added new textures for raw ore items and blocks! @Atraxia @Redeix
-- Reduced the processing speed of vibration tables @Pyritie
+- Increased the processing duration of vibration tables @Pyritie
+- Uvarovite now only requires cupronickel coils instead of kanthal @Pyritie
+#### New structures
+- Added mineshaft structures to the overworld! These are *guaranteed* to contain ore veins and are a great way to explore more of the overworld's caves. @BlueBoat29
 #### Other changes
-- Added mineshaft structures to the overworld! @BlueBoat29
 - If you can't find feathers, you can now also use hardwood strips as arrow fletching. You can now also use bone needles as the pointy end of an arrow @Pyritie
 - Made player heads craftable. Check out the client-side mod [lsc's Player Dolls](https://www.curseforge.com/minecraft/texture-packs/lscs-player-dolls) to turn them into into adorable dolls. @ashleney
 - Add a Wireless Charger to charge items in your inventory @TomPlop @AtraxiA
@@ -20,24 +24,26 @@
 - Mahoe and Araucaria now count as tannin logs @Pyritie
 - Copper Bonded Al2o3 Pcb now requires a HV Arc Furnace to fit with the changes on the Chromium Line @TomPlop
 - Added wild roses and feather groundcover to the overworld @Pyritie
+- You can now also use nether quartz to make silicon carbide @Pyritie
 ### Bug fixes
 - Naturally grown wood blocks of araucaria, beech, and mahoe now correctly drop log blocks to match TFC behaviour @Pyritie
 - Fixed horizontal supports of the new wood types and stone types not actually supporting (#4229) @Pyritie
+- Fixed new logs not being burnable @jmecn
+- Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
+- Fixed new barrels not keeping their contents when sealed and broken (#4232) @Pyritie
 - Fixed being able to stonecut raw tuff into tuff bricks and other deco blocks, instead of having to make the bricks first (#4228) @Pyritie
 - Fixed the Refrigerator not having a different texture when active @TomPlop
 - Fixed the Pastoral Rancher not allowing grass blocks as valid @TomPlop
 - Fixed clay dirt turning into normal grass instead of clay grass (#4237) @Pyritie
 - Fixed FoV not changing when sprinting with high grain nutrition (#4224) @Redeix
 - Fixed a crash when cooking soup in a pot with ingredients that had one of the new nutrients (such as Toxins on Long Pig) @Redeix
-- Fixed new barrels not keeping their contents when sealed and broken (#4232) @Pyritie
 - Fixed another kinetic bridge exploit @ashleney
 - Fixed a crash when crafting an electric lunchbox (#4246) @SakuraKitsurugi
 - Fixed wool and wool carpets counting as a blaze burner fuel source (#4239) @mafien0
 - Fixed the recipe for the Line R and Slash R road stencils (#4274, #4275) @hollow-earth
 - Fixed a wax dupe with candles (#4264) @hollow-earth
 - Fixed being able to dupe stone walls via the chisel recipe (#4257) @hollow-earth
-- Added missing tags to the new wood chests and added them to the Carry On configs (#4278) @hollow-earth
-- Fixed new logs not being burnable @jmecn
+- Fixed tumblweeds littering the deserts (#4317) @Pyritie
 ### Mods
 #### TerraFirmaCraft 3.2.23
 - Fixed barrel items not storing the date they were sealed
@@ -47,6 +53,8 @@
 - Fixed ash not accumulating in firepits
 #### Particular 1.5.5
 - Added splashing effects in other kinds of water, and fireflies in TFC biomes
+#### TFC Ambiental
+- We've forked this mod into TFG-Core, so we can better optimize it and extend it
 #### Waves
 - Temporarily removing this mod to investigate a potential chunk corruption bug. Feel free to re-add it if you want
 
