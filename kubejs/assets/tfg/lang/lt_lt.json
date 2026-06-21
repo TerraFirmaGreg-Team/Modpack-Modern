@@ -49,8 +49,11 @@
 	"ali/loot_table/sluicing/deposits/native_gold_gneiss": "Gneiso gimtasis aukso telkinys",
 	"ali/loot_table/sluicing/deposits/native_gold_marble": "Marmuro gimtasis aukso telkinys",
 	"material.tfg.arsenic_bronze": "Arseninė bronza",
+	"trim_material.tfc.sterling_silver_tfc": "Sterlingo sidabras",
 	"trim_material.tfc.rose_gold_tfc": "Rožinis auksas",
 	"quests.chemical_elements.arsenic.desc": "Arsenas yra naudojamas &bVĮ („MV“)&r+ įrenginiuose silicio rutuliams ir diodams gaminti.\n\nJį galima gauti per &7ŽĮ („LV“)&r iš kobaltito ir realgaro.",
 	"quests.chemical_elements.darmstadtium.desc": "Darmštadis yra pagrindinė &3UV&r medžiaga.\n\nJis yra gaunamas per &dJĮ („LuV“)&r lydant arseną ir rutenį.",
+	"quests.ore_proc.crushed_ore.title": "susmulkinta rūda",
+	"quests.stone_age.rock_anvil.title": "Uolos priekalas",
 	"quests.tfg_tips.hazard_materials.title": "Pavojingos medžiagos"
 }
