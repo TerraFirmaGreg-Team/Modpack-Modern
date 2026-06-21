@@ -47,7 +47,7 @@ function registerTFGMVMaterialRecipes(event) {
 		.duration(20 * 100)
 		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem')
+	event.recipes.gtceu.electric_blast_furnace('tfg:exquisite_rough_sic_gem_nq')
 		.itemInputs(Item.of('gtceu:exquisite_nether_quartz_gem', 9), Item.of('gtceu:graphite_dust', 27))
 		.itemOutputs(Item.of('tfg:hot_rough_silicon_carbide_ingot', 9))
 		.outputFluids(Fluid.of('gtceu:carbon_monoxide', 18000))
