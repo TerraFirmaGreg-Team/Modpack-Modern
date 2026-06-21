@@ -41,7 +41,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:string",
+					"name": "primitive_creatures:grh",
 					"weight": 80,
 					"functions": [
 						{
@@ -50,22 +50,6 @@
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfg:silk_fibers",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -117,12 +101,11 @@
 					"type": "minecraft:tag",
 					"name": "chalk:chalks",
 					"expand": true,
-					"weight": 50
+					"weight": 3
 				},
 				{
-					"type": "minecraft:tag",
-					"name": "tfc:candles",
-					"expand": true,
+					"type": "minecraft:item",
+					"name": "tfc:candle/white",
 					"weight": 100,
 					"functions": [
 						{
@@ -155,23 +138,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:poison_pill",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:tag",
-					"name": "tfc:candles",
-					"expand": true,
 					"weight": 100,
 					"functions": [
 						{
@@ -355,16 +321,6 @@
 					"type": "minecraft:item",
 					"name": "tfc:silk_cloth",
 					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "chalk:white_chalk",
-					"weight": 70
-				},
-				{
-					"type": "minecraft:item",
-					"name": "chalk:purple_chalk",
-					"weight": 70
 				},
 				{
 					"type": "minecraft:item",
