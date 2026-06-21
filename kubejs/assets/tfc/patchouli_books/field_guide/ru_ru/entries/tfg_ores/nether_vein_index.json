@@ -14,18 +14,18 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алунит, Цеолит, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Битумный уголь, Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Висмут, Сера, Селитра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галит, Сильвин, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Гётит, Лимонит, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графит, Битумный уголь, Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ирарсит, Ruarsite, Ferhodsite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Касситерит, Олово$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Лигнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Незер-кварц, Кварц, Барит...$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_aluminium)Алунит, Цеолит, Барит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_anthracite)Антрацит, Графит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_bituminous)Битумный уголь, Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_bismuth)Висмут, Сера, Селитра$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_molydbenum)Вульфенит, Молибденит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lead_silver)Галена, Самородное серебро...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_salt)Галит, Сильвин, Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_hematite)Гематит, Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_banded)Гётит, Лимонит, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_graphite)Графит, Битумный уголь, Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_psg)Ирарсит, Ruarsite, Ferhodsite$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_tin)Касситерит, Олово$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_coal_lignite)Лигнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_iron_magnetite)Магнетит, Ванадий магнетит...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородная медь, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородное золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородное золото, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Литий, Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопит , Сера, Апатит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Халькозин, Пирит, Борнит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_quartz)Незер-кварц, Кварц, Барит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_nickel)Пентландит, Гарниерит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_manganese)Пиролюзит, Гроссуляр...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_realgar)Реальгар, Стибнит, Киноварь$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_redstone)Редстоуновая пыль, Киноварь...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_native)Самородная медь, Малахит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold_rich)Самородное золото, Магнетит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_gold)Самородное золото, Пирит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_sulfur)Сера, Пирит, Стибнит$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_lithium)Сподумен, Литий, Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_zinc)Сфалерит, Галена, Сера$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_tetrahedrite)Тетраэдрит, Стибнит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phosphate)Трикальцийфосфат, Апатит...$()$()$(li)$(l:tfg_ores/nether_vein_index#beneath_phlogopite)Флогопит , Сера, Апатит$()$()",
       "type": "patchouli:text"
     },
     {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
+      "Type": "patchouli:text",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#beneath_copper_sulfide)Халькозин, Пирит, Борнит$()$()",
+      "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
@@ -263,6 +263,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент нагрузки$(): 28%$(br)$(thing)Источник для$(): Калий, Азот$(br)$(thing)Формула$(): KNO₃",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:Шанс появления жилы на чанк. Чем меньше значение, тем больше вероятность.)Редкость$(/t)$(): 1/10 чанки$(br)$(thing)$(t:Процент блоков в жиле, которые являются рудой, а не камнем. Больший шанс означает больше руд.)Плотность$(/t)$(): 25%$(br)$(thing)$(t:Форма жилы.)Тип$(/t)$(): $(t:Зачастую круглой формы)Кластерная жила$(/t)$(br)$(thing)$(t:Промежуток по Y, в котором может генерироваться жила.)Y$(/t)$(): 140 — 190$(br)$(thing)$(t:Средний диаметр жилы)Размер$(/t)$(): 27$(br)$(thing)Биомы$(): $(t:Гниющие пещеры)Гниющие пещеры$(/t)$(br2)$(thing)Виды камня$(): Аспидный сланец, Гнейс, Диорит, Мигматит, Мрамор, Травертин, Туф, Филлит, Шиферный сланец",
+      "title": "Вульфенит, Молибденит...",
+      "type": "patchouli:text",
+      "anchor": "beneath_molydbenum"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Вульфенит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/wulfenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 43%$(br)$(thing)Источник для$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Повеллит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/powellite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 34%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): CaMoO₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Молибденит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/molybdenite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент нагрузки$(): 21%$(br)$(thing)Источник для$(): Молибден$(br)$(thing)Формула$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {

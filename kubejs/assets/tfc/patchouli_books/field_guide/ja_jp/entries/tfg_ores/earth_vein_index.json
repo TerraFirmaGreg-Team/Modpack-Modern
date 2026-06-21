@@ -24,22 +24,22 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)灰礬柘榴石, 軟マンガン鉱, タンタル石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチウム$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 （深層）$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_manganese)灰礬柘榴石, 軟マンガン鉱, タンタル石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)灰重石, タングステン酸塩, リチウム$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_basaltic)玄武岩質含鉱砂, 砂状海緑石, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_nickel)珪ニッケル鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_garnierite)珪ニッケル鉱, ニッケル, 輝コバルト鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_nickel)珪ニッケル鉱, ニッケル, 輝コバルト鉱, 硫鉄ニッケル鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#high_gypsum)石膏 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)砂状海緑石, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)硝酸カリウム （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)硝酸カリウム, 珪藻土, エレクトロチン, 明礬石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)硫黄 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)硫黄 （火山）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)硫黄, 斑銅鉱, 輝銅鉱 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)硫黄, 輝安鉱, 斑銅鉱 （火山）$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭, 歴青炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)硫黄, 黄鉄鉱, 閃亜鉛鉱 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_magnetite)磁鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)磁鉄鉱, バナジウム磁鉄鉱, 自然金$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)自然金 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)自然金, 磁鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_native_copper)自然銅 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)花崗岩質含鉱砂, フラー土, ガーネットサンド$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_kyanite)藍晶石, 雲母, ポルサイト$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_coal)褐炭 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_coal)褐炭, 歴青炭$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_limonite)褐鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_hematite)赤鉄鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_iron)赤鉄鉱, 褐鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_cobaltite)輝コバルト鉱 （地表）$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)針鉄鉱, 褐鉄鉱, 赤鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)針鉄鉱, 褐鉄鉱, 赤鉄鉱, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)鉄礬柘榴石, 苦礬柘榴石, サファイア...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)鉛, 自然銀 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)錫, 錫石 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)錫石, 石綿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)錫石, 石綿, 珪藻土$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)錫石, 錫 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)錫砂$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)閃亜鉛鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)閃亜鉛鉱, 方鉛鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)雲母 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)雲母, 藍晶石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)青金石, 方ソーダ石, ラピスラズリ, 方解石$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#normal_copper_gypsum)輝銅鉱, 石膏, コバルト, 硫黄$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_banded_iron)針鉄鉱, 褐鉄鉱, 赤鉄鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_iron)針鉄鉱, 褐鉄鉱, 赤鉄鉱, 孔雀石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sapphire)鉄礬柘榴石, 苦礬柘榴石, サファイア...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)鉛, 自然銀 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)錫, 錫石 （高地）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_asbestos_dry)錫石, 石綿$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_asbestos)錫石, 石綿, 珪藻土$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_tin)錫石, 錫 （深層）$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)錫砂$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)閃亜鉛鉱 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)閃亜鉛鉱, 方鉛鉱$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)雲母 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)雲母, 藍晶石$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)黄銅鉱, ゼオライト, 錫石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)黄銅鉱, ゼオライト, 鶏冠石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)黄銅鉱, 針鉄鉱, 黄鉄鉱, 自然銅$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)黄銅鉱, 黄鉄鉱, 自然銅$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_lazurite_calcite)青金石, 方ソーダ石, ラピスラズリ, 方解石$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_tin)黄銅鉱, ゼオライト, 錫石$()$()$(li)$(l:tfg_ores/earth_vein_index#high_realgar)黄銅鉱, ゼオライト, 鶏冠石 （地表）$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_iron)黄銅鉱, 針鉄鉱, 黄鉄鉱, 自然銅$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_copper)黄銅鉱, 黄鉄鉱, 自然銅$()$()",
       "type": "patchouli:text"
     },
     {
@@ -1876,7 +1876,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 57%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
+      "text": "$(thing)パーセント$(): 50%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -1896,7 +1896,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 35%$(br)$(thing)採取可能$(): マグネシウム、アルミニウム$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
+      "text": "$(thing)パーセント$(): 31%$(br)$(thing)採取可能$(): マグネシウム、アルミニウム$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -1916,7 +1916,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 7%$(br)$(thing)採取可能$(): 鉄礬柘榴石、灰鉄柘榴石、灰礬柘榴石、苦礬柘榴石、満礬柘榴石、灰クロム柘榴石",
+      "text": "$(thing)パーセント$(): 18%$(br)$(thing)採取可能$(): 鉄礬柘榴石、灰鉄柘榴石、灰礬柘榴石、苦礬柘榴石、満礬柘榴石、灰クロム柘榴石",
       "type": "patchouli:multiblock"
     },
     {
@@ -2130,6 +2130,73 @@
       },
       "enable_visualize": false,
       "text": "$(thing)パーセント$(): 100%$(br)$(thing)用途$(): 雪花石膏、コンクリート$(br)$(thing)化学式$(): CaS(H₂O)₂O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:何チャンクごとに鉱脈が生成されるかを示します。数値が小さいほど見つかりやすくなります。)レア度$(/t)$(): 1/270 チャンク$(br)$(thing)$(t:鉱脈の中に含まれている鉱石の密度を割合で示しています。数値が高いほど鉱石量が多くなります。)密度$(/t)$(): 24%$(br)$(thing)$(t:鉱脈の形状です)タイプ$(/t)$(): $(t:主に丸い形状をしています)塊状鉱脈$(/t)$(br)$(thing)$(t:地表の高さを基準に、その鉱脈がどれくらいの深さにあるかを表します。)地表深度$(/t)$(): -5 — 1$(br)$(thing)$(t:鉱脈の平均的な直径のサイズを示します。)サイズ$(/t)$(): 34$(br)$(thing)$(t:地表から鉱脈までの距離がこの値を超えると、地表に指標となる鉱石が現れなくなります。)表出の最大深度$(/t)$(): 20$(br)$(thing)バイオーム$(): $(t:干潟, 塩類平原, Dune Sea, 草原砂丘)乾燥$(/t)$(br2)$(thing)岩石の種類$(): 桃色の砂, 白い砂, 緑の砂, 茶色い砂, 赤い砂, 黄色い砂, 黒い砂",
+      "title": "砂状海緑石, フラー土, ガーネットサンド",
+      "type": "patchouli:text",
+      "anchor": "sand_garnet"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "ガーネットサンド",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/garnet_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 40%$(br)$(thing)採取可能$(): 鉄礬柘榴石、灰鉄柘榴石、灰礬柘榴石、苦礬柘榴石、満礬柘榴石、灰クロム柘榴石",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "砂状海緑石",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): マグネシウム、アルミニウム$(br)$(thing)化学式$(): KMg₂Al₄H₂O₁₂",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "フラー土",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): マグネシウム$(br)$(thing)化学式$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
@@ -2730,7 +2797,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 61%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
+      "text": "$(thing)パーセント$(): 53%$(br)$(thing)融解$(): 鋳鉄$(br)$(thing)化学式$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
       "type": "patchouli:multiblock"
     },
     {
@@ -2750,7 +2817,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 30%$(br)$(thing)採取可能$(): マグネシウム$(br)$(thing)化学式$(): MgSi₄H(H₂O)₄O₁₁",
+      "text": "$(thing)パーセント$(): 26%$(br)$(thing)採取可能$(): マグネシウム$(br)$(thing)化学式$(): MgSi₄H(H₂O)₄O₁₁",
       "type": "patchouli:multiblock"
     },
     {
@@ -2770,7 +2837,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)パーセント$(): 7%$(br)$(thing)採取可能$(): 鉄礬柘榴石、灰鉄柘榴石、灰礬柘榴石、苦礬柘榴石、満礬柘榴石、灰クロム柘榴石",
+      "text": "$(thing)パーセント$(): 20%$(br)$(thing)採取可能$(): 鉄礬柘榴石、灰鉄柘榴石、灰礬柘榴石、苦礬柘榴石、満礬柘榴石、灰クロム柘榴石",
       "type": "patchouli:multiblock"
     },
     {

@@ -27,7 +27,7 @@
           },
           {
             "block": "gtceu:brown_sand_garnet_sand_ore",
-            "weight": 1
+            "weight": 3
           }
         ]
       },
@@ -46,7 +46,7 @@
           },
           {
             "block": "gtceu:red_sand_garnet_sand_ore",
-            "weight": 1
+            "weight": 3
           }
         ]
       },
@@ -65,7 +65,7 @@
           },
           {
             "block": "gtceu:white_sand_garnet_sand_ore",
-            "weight": 1
+            "weight": 3
           }
         ]
       },
@@ -84,7 +84,7 @@
           },
           {
             "block": "gtceu:yellow_sand_garnet_sand_ore",
-            "weight": 1
+            "weight": 3
           }
         ]
       }
@@ -105,7 +105,7 @@
         },
         {
           "block": "gtceu:garnet_sand_indicator",
-          "weight": 1
+          "weight": 3
         }
       ]
     }

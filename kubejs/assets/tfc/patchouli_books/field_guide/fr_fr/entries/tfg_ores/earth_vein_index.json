@@ -29,17 +29,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Or natif (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Or natif, Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Phosphate tricalcique (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Plomb, Argent natif (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartz, Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartz, Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby, Cinnabar (Grande)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby, Cinnabar (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Sable de cassitérite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Sable minéral granitique...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_magnetite)Magnetite...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_malachite)Malachite (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_mica)Mica (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_mica)Mica, Kyanite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_gold)Or natif (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_gold)Or natif, Magnetite$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tricalcium_phosphate)Phosphate tricalcique (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_lead)Plomb, Argent natif (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz)Quartz, Barite$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_quartz_borax)Quartz, Borax$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_big_redstone)Redstone, Ruby, Cinnabar (Grande)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_redstone)Redstone, Ruby, Cinnabar (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_tin)Sable de cassitérite$()$()$(li)$(l:tfg_ores/earth_vein_index#sand_garnet)Sable de glauconite...$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate, Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite, Galène$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumène, Sylvite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanique)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite, Chalcocite (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sulfur, Pyrite, Sphalerite (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite, Bornite (Volcanique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Cuivre natif... (Haute)$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#sand_granitic)Sable minéral granitique...$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_salpeter)Saltpeter (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_saltpeter)Saltpeter, Diatomite...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_scheelite)Scheelite, Tungstate, Lithium$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_sphalerite)Sphalerite (Surfacique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sphalerite)Sphalerite, Galène$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_spodumene)Spodumène, Sylvite$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sulfur)Sulfur (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#high_sulfur)Sulfur (Volcanique)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_copper_sulfide)Sulfur, Bornite, Chalcocite (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_sphalerite)Sulfur, Pyrite, Sphalerite (Profonde)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_sulfide)Sulfur, Stibnite, Bornite (Volcanique)$()$()$(li)$(l:tfg_ores/earth_vein_index#normal_tarkianite)Tarkianite, Borax, Trona$()$()$(li)$(l:tfg_ores/earth_vein_index#surface_tetrahedrite)Tetrahedrite (Surfacique)$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin, Cassiterite (Haute)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaze bleue, Topaz...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfénite, Molybdénite...$()$()",
+      "text": "$(li)$(l:tfg_ores/earth_vein_index#high_tetrahedrite)Tetrahedrite, Cuivre natif... (Haute)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_thorianite)Thorianite, Uraninite...$()$()$(li)$(l:tfg_ores/earth_vein_index#high_tin)Tin, Cassiterite (Haute)$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_topaz)Topaze bleue, Topaz...$()$()$(li)$(l:tfg_ores/earth_vein_index#deep_molybdenum)Wulfénite, Molybdénite...$()$()",
       "type": "patchouli:text"
     },
     {
@@ -230,7 +230,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 57%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
+      "text": "$(thing)Pourcentage$(): 50%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
       "type": "patchouli:multiblock"
     },
     {
@@ -250,7 +250,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 35%$(br)$(thing)Source de$() : Magnésiuù$(br)$(thing)Formule$(): KMg₂Al₄H₂O₁₂",
+      "text": "$(thing)Pourcentage$(): 31%$(br)$(thing)Source de$() : Magnésiuù$(br)$(thing)Formule$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -270,7 +270,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 7%$(br)$(thing)Source de$() : Almandine, Andradite, Grossulaire, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Pourcentage$(): 18%$(br)$(thing)Source de$() : Almandine, Andradite, Grossulaire, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
@@ -3139,17 +3139,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/190 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 24%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:A quelle profondeur se situe cette veine par rapport à la surface.)Profondeur sous la surface$(/t)$(): -5 — 1$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 34$(br)$(thing)$(t:Si la distance entre la surface et la veine et minerai est plus grande que cette valeur, la veine de minerai ne génèrera d'indicateurs surfaciques.)Profondeur max d'indicatifs$(/t)$(): 20$(br)$(thing)Biomes$(): Sans ordre$(br2)$(thing)Types de pierre$(): Sable blanc, Sable brun, Sable jaune, Sable rouge",
-      "title": "Sable minéral granitique...",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/270 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 24%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:A quelle profondeur se situe cette veine par rapport à la surface.)Profondeur sous la surface$(/t)$(): -5 — 1$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 34$(br)$(thing)$(t:Si la distance entre la surface et la veine et minerai est plus grande que cette valeur, la veine de minerai ne génèrera d'indicateurs surfaciques.)Profondeur max d'indicatifs$(/t)$(): 20$(br)$(thing)Biomes$(): $(t:Marais Salants, Vasières, Mer de Dunes, Dunes Herbeuses)Sec$(/t)$(br2)$(thing)Types de pierre$(): Sable blanc, Sable brun, Sable jaune, Sable noir, Sable rose, Sable rouge, Sable vert",
+      "title": "Sable de glauconite...",
       "type": "patchouli:text",
-      "anchor": "sand_granitic"
+      "anchor": "sand_garnet"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Sable minéral granitique",
+      "name": "Sable de grenat",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/granitic_mineral_sand"
+          "0": "#forge:ores/garnet_sand"
         },
         "pattern": [
           [
@@ -3161,7 +3161,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 61%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
+      "text": "$(thing)Pourcentage$(): 40%$(br)$(thing)Source de$() : Almandine, Andradite, Grossulaire, Pyrope, Spessartine, Uvarovite",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sable de glauconite",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/glauconite_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 30%$(br)$(thing)Source de$() : Magnésiuù$(br)$(thing)Formule$(): KMg₂Al₄H₂O₁₂",
       "type": "patchouli:multiblock"
     },
     {
@@ -3185,6 +3205,53 @@
       "type": "patchouli:multiblock"
     },
     {
+      "Type": "patchouli:text",
+      "text": "$(thing)$(t:La chance qu'une veine se génère par chunk. Les valeurs plancher basses sont plus communes.)Rareté$(/t)$(): 1/190 chunks$(br)$(thing)$(t:Le pourcentage de blocs dans une veine qui sont des minerais et pas de la pierre. Un plus gros pourcentage indique plus de minerais.)Densité$(/t)$(): 24%$(br)$(thing)$(t:La forme d'une veine.)Type$(/t)$(): $(t:Essentiellement ronde)Veine en grappe$(/t)$(br)$(thing)$(t:A quelle profondeur se situe cette veine par rapport à la surface.)Profondeur sous la surface$(/t)$(): -5 — 1$(br)$(thing)$(t:Le diamètre moyen de la veine)Taille$(/t)$(): 34$(br)$(thing)$(t:Si la distance entre la surface et la veine et minerai est plus grande que cette valeur, la veine de minerai ne génèrera d'indicateurs surfaciques.)Profondeur max d'indicatifs$(/t)$(): 20$(br)$(thing)Biomes$(): Sans ordre$(br2)$(thing)Types de pierre$(): Sable blanc, Sable brun, Sable jaune, Sable rouge",
+      "title": "Sable minéral granitique...",
+      "type": "patchouli:text",
+      "anchor": "sand_granitic"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sable minéral granitique",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/granitic_mineral_sand"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 53%$(br)$(thing)Fond en$() : Fonte$(br)$(thing)Formule$(): (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Terre à foulon",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/fullers_earth"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Pourcentage$(): 26%$(br)$(thing)Source de$() : Magnésium$(br)$(thing)Formule$(): MgSi₄H(H₂O)₄O₁₁",
+      "type": "patchouli:multiblock"
+    },
+    {
       "Type": "patchouli:multiblock",
       "name": "Sable de grenat",
       "multiblock": {
@@ -3201,7 +3268,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Pourcentage$(): 7%$(br)$(thing)Source de$() : Almandine, Andradite, Grossulaire, Pyrope, Spessartine, Uvarovite",
+      "text": "$(thing)Pourcentage$(): 20%$(br)$(thing)Source de$() : Almandine, Andradite, Grossulaire, Pyrope, Spessartine, Uvarovite",
       "type": "patchouli:multiblock"
     },
     {
