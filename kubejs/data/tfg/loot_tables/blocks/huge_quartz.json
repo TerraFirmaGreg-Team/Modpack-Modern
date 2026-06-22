@@ -7,17 +7,17 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "gtceu:quartzite_gem",
+                    "name": "minecraft:quartz",
                     "weight": 95
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "gtceu:flawless_quartzite_gem",
+                    "name": "gtceu:flawless_nether_quartz_gem",
                     "weight": 4
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "gtceu:exquisite_quartzite_gem",
+                    "name": "gtceu:exquisite_nether_quartz_gem",
                     "weight": 1
                 }
             ],

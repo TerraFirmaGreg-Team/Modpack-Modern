@@ -324,6 +324,8 @@ const registerTooltips = (event) => {
 	})
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 		if (rock.support) {
+			if (rockId === "light_concrete" || rockId === "dark_concrete")
+				continue;
 			event.addAdvanced([rock.support], (item, advanced, text) => {
 				text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 			})

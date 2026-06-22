@@ -1,0 +1,71 @@
+{
+	"type": "realmrpg_skeletons:monument_skeletons",
+	"config": {
+		"tries": 10,
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:weighted_state_provider",
+						"entries": [
+							{
+								"data": {
+									"Name": "realmrpg_skeletons:swimmer_skeleton",
+									"Properties": {
+										"waterlogged": "true"
+									}
+								},
+								"weight": 1
+							},
+							{
+								"data": {
+									"Name": "realmrpg_skeletons:neutralized_skeleton",
+									"Properties": {
+										"waterlogged": "true"
+									}
+								},
+								"weight": 1
+							}
+						]
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:all_of",
+						"predicates": [
+							{
+								"type": "minecraft:matching_fluids",
+								"fluids": "minecraft:water"
+							},
+							{
+								"type": "minecraft:matching_blocks",
+								"blocks": "#realmrpg_skeletons:monument_skeletons_can_generate_on",
+								"offset": [
+									0,
+									-1,
+									0
+								]
+							},
+							{
+								"type": "minecraft:not",
+								"predicate": {
+									"type": "minecraft:matching_blocks",
+									"blocks": "#realmrpg_skeletons:skeletons_cannot_generate_on",
+									"offset": [
+										0,
+										-1,
+										0
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

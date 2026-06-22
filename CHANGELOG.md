@@ -2,7 +2,16 @@
 
 ## Unreleased
 ### Changes
+- Accumulators (the multiblock battery for trains) and energy interfaces can now charge and discharge way faster, and hold more power @Pyritie
+- Added peanut oil recipes, with all the same uses as seed oil @Redeix @Pyritie
+- Containers can no longer be used with the Interplanetary Wireless Card, and transferring items is now 8x more expensive. Set up railguns! @ashleney
 ### Bug fixes
+- Fixed some floating chests in the new mineshafts, and made them avoid spawning near rivers @Pyritie
+- Fixed some beneath tower chests being empty @Pyritie
+- Fixed light/dark concrete supports only being as good as wood/stone ones, and having double tooltips @Pyritie
+- Removed "dristone skeletons" from appearing on the surface of the overworld, as well as some other tweaks to other skeletons @Pyritie
+- Fixed biochaff macerating into vanilla dirt (#4332) @Pyritie
+- Fixed Pastoral Rancher not forming with tfc stone bricks (#4336) @Pyritie
 
 ## [0.13.0] - 21-06-2026
 - We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.13) with all of the major changes between 0.12 and 0.13.

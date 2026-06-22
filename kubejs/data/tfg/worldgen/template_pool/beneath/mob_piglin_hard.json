@@ -30,7 +30,7 @@
 			}
 		},
 		{
-			"weight": 5,
+			"weight": 2,
 			"element": {
 				"location": "tfg:beneath/tower_vessel_1",
 				"processors": "minecraft:empty",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"weight": 5,
+			"weight": 2,
 			"element": {
 				"location": "tfg:beneath/tower_vessel_2",
 				"processors": "minecraft:empty",
@@ -48,9 +48,36 @@
 			}
 		},
 		{
-			"weight": 5,
+			"weight": 2,
 			"element": {
 				"location": "tfg:beneath/tower_vessel_3",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_4",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_5",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "tfg:beneath/tower_vessel_6",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
