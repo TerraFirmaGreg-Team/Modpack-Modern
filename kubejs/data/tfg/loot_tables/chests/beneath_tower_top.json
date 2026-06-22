@@ -234,8 +234,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -402,66 +402,22 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:combat_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:recovery_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:acrobat_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:mining_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
@@ -508,6 +464,22 @@
 						{
 							"function": "minecraft:set_nbt",
 							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/ingot_mold",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
 						}
 					]
 				},

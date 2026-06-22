@@ -208,6 +208,17 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfc:hematitic_glass_bottle",
+					"weight": 60,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{fluid:{Amount:400,FluidName:\"gtceu:seed_oil\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "tfc:ceramic/jug",
 					"weight": 100,
 					"functions": [

@@ -2,7 +2,8 @@
 	"type": "minecraft:chest",
 	"pools": [
 		{
-			"bonus_rolls": 0,
+			"name": "loot_pool",
+			"rolls": 1,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -19,14 +20,284 @@
 						{
 							"function": "minecraft:set_enchantments",
 							"enchantments": {
-								"minecraft:quick_charge": 2,
-								"minecraft:piercing": 1
+								"minecraft:quick_charge": 1
 							},
 							"add": false
 						}
 					],
 					"weight": 100
 				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chestplate/black_bronze",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/helmet/black_bronze",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/greaves/black_bronze",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/boots/black_bronze",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/shield/black_bronze",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_shovel",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_hammer",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_axe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3, \"GT.Behaviours\":{\"DisableShields\":1, \"TreeFelling\":1}}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/mace/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/javelin/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 3}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/rose_gold",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.5,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/gold",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.5,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
+						}
+					],
+					"weight": 100
+				}
+			]
+		},
+		{
+			"bonus_rolls": 0,
+			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
@@ -56,22 +327,6 @@
 						}
 					],
 					"weight": 100
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:string",
-					"weight": 50,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					]
 				},
 				{
 					"type": "minecraft:item",
@@ -309,8 +564,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -325,8 +580,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -341,8 +596,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+								"max": 2,
+								"min": 1
 							},
 							"function": "minecraft:set_count"
 						}
@@ -352,22 +607,6 @@
 					"type": "minecraft:item",
 					"name": "tfg:mining_powder",
 					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:bowl",
-					"weight": 50,
 					"functions": [
 						{
 							"add": false,
@@ -401,44 +640,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfchotornot:tongs/rose_gold",
-					"functions": [
-						{
-							"function": "minecraft:set_damage",
-							"damage": {
-								"type": "minecraft:uniform",
-								"min": 0.5,
-								"max": 0.9
-							}
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
-						}
-					],
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfchotornot:tongs/gold",
-					"functions": [
-						{
-							"function": "minecraft:set_damage",
-							"damage": {
-								"type": "minecraft:uniform",
-								"min": 0.5,
-								"max": 0.9
-							}
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
-						}
-					],
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
 					"name": "tfc:volcanic_glass_bottle",
 					"weight": 80,
 					"functions": [
@@ -456,22 +657,6 @@
 						{
 							"function": "minecraft:set_nbt",
 							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:ceramic/ingot_mold",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
 						}
 					]
 				},
@@ -579,8 +764,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
+								"max": 10,
+								"min": 6
 							},
 							"function": "minecraft:set_count"
 						}
@@ -590,21 +775,6 @@
 					"type": "minecraft:item",
 					"name": "ae2:ender_dust",
 					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:silk_cloth",
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:burlap_cloth",
-					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "chalk:yellow_chalk",
-					"weight": 70
 				},
 				{
 					"type": "minecraft:item",
