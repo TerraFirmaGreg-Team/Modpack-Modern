@@ -1614,7 +1614,25 @@
 					type: "item"
 				}
 				{
-					id: "674CEEB9EAFE84A0"
+					id: "63D0D52966213B49"
+					item: "tfg:peanut_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C6DF0905D0D35A2"
+					item: "firmalife:bucket/soybean_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31B846079D376069"
+					item: "tfc:bucket/olive_oil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DD43C796578251A"
 					type: "checkmark"
 				}
 			]

@@ -32,7 +32,6 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_crimson_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_snow_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_surface_skeletons', '#tfg:mars_biomes');
-	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:mars_biomes');
 
 	event.add('realmrpg_skeletons:has_burnt_skeletons', '#tfg:venus_biomes');
 
