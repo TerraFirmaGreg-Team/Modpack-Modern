@@ -682,21 +682,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "ae2:ender_dust",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 80
-				},
-				{
-					"type": "minecraft:item",
 					"name": "tfc:food/cooked_venison",
 					"weight": 50,
 					"functions": [

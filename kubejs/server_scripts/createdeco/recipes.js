@@ -327,37 +327,47 @@ const registerCreatedecoRecipes = (event) => {
 	event.recipes.gtceu.forming_press('createdeco:gold_coin')
 		.itemInputs('#forge:nuggets/gold')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:gold_coin')
+		.itemOutputs('createdeco:gold_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:gold_coin', [GTMaterials.Gold, 1/9])
 
 	event.recipes.gtceu.forming_press('createdeco:netherite_coin')
 		.itemInputs('#forge:nuggets/blue_steel')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:netherite_coin')
+		.itemOutputs('createdeco:netherite_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:netherite_coin', [GTMaterials.BlueSteel, 1/9])
 
 	event.recipes.gtceu.forming_press('createdeco:brass_coin')
 		.itemInputs('#forge:nuggets/brass')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:brass_coin')
+		.itemOutputs('createdeco:brass_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:brass_coin', [GTMaterials.Brass, 1/9])
 
 	event.recipes.gtceu.forming_press('createdeco:iron_coin')
 		.itemInputs('#forge:nuggets/wrought_iron')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:iron_coin')
+		.itemOutputs('createdeco:iron_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:iron_coin', [GTMaterials.WroughtIron, 1/9])
 
 	event.recipes.gtceu.forming_press('createdeco:copper_coin')
 		.itemInputs('#forge:nuggets/copper')
 		.notConsumable('gtceu:cylinder_casting_mold')
-		.itemOutputs('4x createdeco:copper_coin')
+		.itemOutputs('createdeco:copper_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:copper_coin', [GTMaterials.Copper, 1/9])
 
 	event.recipes.gtceu.forming_press('createdeco:industrial_iron_coin')
 		.itemInputs('#forge:nuggets/steel')
@@ -366,12 +376,16 @@ const registerCreatedecoRecipes = (event) => {
 		.duration(50)
 		.EUt(16)
 
+	TFGHelpers.registerMaterialInfo('createdeco:industrial_iron_coin', [GTMaterials.Steel, 1/9])
+
 	event.recipes.gtceu.forming_press('createdeco:zinc_coin')
 		.itemInputs('#forge:nuggets/zinc')
 		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('createdeco:zinc_coin')
 		.duration(50)
 		.EUt(16)
+
+	TFGHelpers.registerMaterialInfo('createdeco:zinc_coin', [GTMaterials.Zinc, 1/9])
 
 	// #region
 
