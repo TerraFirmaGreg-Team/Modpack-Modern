@@ -319,12 +319,12 @@ function registerTFGOverworldBiomeTags(event) {
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
 
-	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_river')
+	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfc:is_river')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_lake')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_river')
 
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/embayments')
