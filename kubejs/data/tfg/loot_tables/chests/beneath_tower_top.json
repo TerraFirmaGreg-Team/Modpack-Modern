@@ -15,14 +15,6 @@
 								"min": 0.75,
 								"max": 1
 							}
-						},
-						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:quick_charge": 2,
-								"minecraft:piercing": 1
-							},
-							"add": false
 						}
 					],
 					"weight": 100
