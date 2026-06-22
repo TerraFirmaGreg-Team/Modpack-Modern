@@ -518,6 +518,17 @@ const registerRailWaysRecipes = (event) => {
 		.itemOutputs('32x railways:track_monorail')
 		.duration(200)
 		.EUt(32)
+	
+	event.shaped(`24x railways:track_monorail`, [
+		'B B',
+		'PHP',
+		'BGB'
+	], {
+		P: '#forge:plates/wrought_iron',
+		H: '#forge:tools/hammers',
+		G: 'create:metal_girder',
+		B: '#forge:bolts/wrought_iron'
+	}).id(`tfg:railways/shaped/track_monorail`)
 
 	event.recipes.createSequencedAssembly([
 		'64x railways:track_monorail',
@@ -565,6 +576,17 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(16)
 			.circuit(1)
 
+		event.shaped(`16x railways:track_${x.rail}_narrow`, [
+			'R R',
+			'MHM',
+			'S S'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: x.slab
+		}).id(`tfg:railways/shaped/track_${x.rail}_narrow`)
+
 		event.recipes.createSequencedAssembly([
 			`32x railways:track_${x.rail}`,
 		], x.slab, [
@@ -582,6 +604,17 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(16)
 			.circuit(2)
 
+		event.shaped(`16x railways:track_${x.rail}`, [
+			'R R',
+			'MHM',
+			'SSS'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: x.slab
+		}).id(`tfg:railways/shaped/track_${x.rail}`)
+
 		event.recipes.createSequencedAssembly([
 			`32x railways:track_${x.rail}_wide`,
 		], x.slab, [
@@ -598,6 +631,18 @@ const registerRailWaysRecipes = (event) => {
 			.duration(200)
 			.EUt(16)
 			.circuit(3)
+
+		event.shaped(`16x railways:track_${x.rail}_wide`, [
+			'R R',
+			'MHM',
+			'SBS'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: x.slab,
+			B: x.block
+		}).id(`tfg:railways/shaped/track_${x.rail}_wide`)
 	})
 
 	event.recipes.createSequencedAssembly([
@@ -617,6 +662,17 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(16)
 		.circuit(2)
 
+	event.shaped('16x create:track', [
+		'R R',
+		'MHM',
+		'SSS'
+	], {
+		R: '#tfg:track_rods',
+		H: '#forge:tools/hammers',
+		M: '#tfc:mortar',
+		S: '#tfg:rock_slabs'
+	}).id(`tfg:railways/shaped/track_create_andesite`)
+
 	// Create Stone Tracks (Narrow)
 	event.recipes.createSequencedAssembly([
 		'32x railways:track_create_andesite_narrow',
@@ -633,6 +689,17 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(16)
 		.circuit(1)
+	
+	event.shaped('16x railways:track_create_andesite_narrow', [
+		'R R',
+		'MHM',
+		'S S'
+	], {
+		R: '#tfg:track_rods',
+		H: '#forge:tools/hammers',
+		M: '#tfc:mortar',
+		S: '#tfg:rock_slabs'
+	}).id(`tfg:railways/shaped/track_create_andesite_narrow`)
 
 	// Create Stone Tracks (Wide)
 	event.recipes.createSequencedAssembly([
@@ -651,6 +718,18 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(16)
 		.circuit(3)
+	
+	event.shaped('16x railways:track_create_andesite_wide', [
+		'R R',
+		'MHM',
+		'SBS'
+	], {
+		R: '#tfg:track_rods',
+		H: '#forge:tools/hammers',
+		M: '#tfc:mortar',
+		S: '#tfg:rock_slabs',
+		B: '#forge:stone'
+	}).id(`tfg:railways/shaped/track_create_andesite_wide`)
 
 	event.recipes.gtceu.assembler('tfg:railways/phantom_tracks')
 		.itemInputs('32x #create:tracks', '#forge:small_dusts/ender_pearl')
@@ -678,6 +757,17 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(16)
 			.circuit(2)
 
+		event.shaped(`16x railways:track_tfc_${woodType}`, [
+			'R R',
+			'MHM',
+			'SSS'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: `tfc:wood/planks/${woodType}_slab`
+		}).id(`tfg:railways/shaped/track_create_${woodType}`)
+
 		// Narrow
 		event.recipes.createSequencedAssembly([
 			`32x railways:track_tfc_${woodType}_narrow`,
@@ -694,6 +784,17 @@ const registerRailWaysRecipes = (event) => {
 			.duration(200)
 			.EUt(16)
 			.circuit(1)
+
+		event.shaped(`16x railways:track_tfc_${woodType}_narrow`, [
+			'R R',
+			'MHM',
+			'S S'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: `tfc:wood/planks/${woodType}_slab`
+		}).id(`tfg:railways/shaped/track_create_${woodType}_narrow`)
 
 		// Wide
 		event.recipes.createSequencedAssembly([
@@ -712,6 +813,18 @@ const registerRailWaysRecipes = (event) => {
 			.duration(200)
 			.EUt(16)
 			.circuit(3)
+
+		event.shaped(`16x railways:track_tfc_${woodType}_wide`, [
+			'R R',
+			'MHM',
+			'SBS'
+		], {
+			R: '#tfg:track_rods',
+			H: '#forge:tools/hammers',
+			M: '#tfc:mortar',
+			S: `tfc:wood/planks/${woodType}_slab`,
+			B: `tfc:wood/planks/${woodType}`
+		}).id(`tfg:railways/shaped/track_create_${woodType}_wide`)
 	});
 
 	event.shapeless('8x railways:track_phantom', ['#forge:tiny_dusts/ender_pearl', '8x #create:tracks'])
