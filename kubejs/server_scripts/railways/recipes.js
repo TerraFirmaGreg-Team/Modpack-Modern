@@ -520,7 +520,6 @@ const registerRailWaysRecipes = (event) => {
 		.EUt(32)
 	
 	event.shaped(`24x railways:track_monorail`, [
-		'B B',
 		'PHP',
 		'BGB'
 	], {
