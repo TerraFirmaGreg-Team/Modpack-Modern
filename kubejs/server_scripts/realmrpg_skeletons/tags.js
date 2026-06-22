@@ -8,7 +8,6 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_overworld_surface_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_lava_overworld_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_jumped_skeletons', '#tfg:overworld_biomes');
-	event.add('realmrpg_skeletons:has_dripstone_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_desert_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_deep_cave_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:overworld_biomes');
