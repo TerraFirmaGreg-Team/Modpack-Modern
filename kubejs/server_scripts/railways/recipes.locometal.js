@@ -131,10 +131,15 @@ const registerRailwaysLocometalRecipes = (event) => {
 
 	// Base Locometal Regular & Undying Recipes
 	LOCOMETAL_BASE.forEach(locometal => {
-		event.stonecutting(`8x railways:${locometal.id}`, '#forge:storage_blocks/iron');
-		event.stonecutting(`16x railways:${locometal.id}`, '#forge:storage_blocks/wrought_iron');
-		event.stonecutting(`32x railways:${locometal.id}`, '#forge:storage_blocks/steel');
+		event.stonecutting(`8x railways:${locometal.id}`, '#forge:storage_blocks/iron')
+			.id(`tfg:stonecutting/locometal_${locometal.id}_iron`);
+		event.stonecutting(`16x railways:${locometal.id}`, '#forge:storage_blocks/wrought_iron')
+			.id(`tfg:stonecutting/locometal_${locometal.id}_wrought_iron`);
+		event.stonecutting(`32x railways:${locometal.id}`, '#forge:storage_blocks/steel')
+			.id(`tfg:stonecutting/locometal_${locometal.id}_steel`);
+
 		event.stonecutting(`railways:${locometal.id}`, `#railways:palettes/cycle_groups/netherite/base`);
+
 		event.recipes.gtceu.chemical_bath(`tfg:undying/locometal/${locometal.id}`)
 			.itemInputs(`${locometal.dye_group}`)
 			.inputFluids(Fluid.of(`gtceu:chlorine`, 18))
@@ -145,29 +150,47 @@ const registerRailwaysLocometalRecipes = (event) => {
 	})
 
 	// Base Functional Decorative Block Recipes
-	event.stonecutting(`16x railways:locometal_end_ladder`, '#forge:storage_blocks/iron');
-	event.stonecutting(`32x railways:locometal_end_ladder`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`64x railways:locometal_end_ladder`, '#forge:storage_blocks/steel');
+	event.stonecutting(`16x railways:locometal_end_ladder`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/locometal_end_ladder_iron');
+	event.stonecutting(`32x railways:locometal_end_ladder`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/locometal_end_ladder_wrought_iron');
+	event.stonecutting(`64x railways:locometal_end_ladder`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/locometal_end_ladder_steel');
 
-	event.stonecutting(`16x railways:locometal_rung_ladder`, '#forge:storage_blocks/iron');
-	event.stonecutting(`32x railways:locometal_rung_ladder`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`64x railways:locometal_rung_ladder`, '#forge:storage_blocks/steel');
+	event.stonecutting(`16x railways:locometal_rung_ladder`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/locometal_rung_ladder_iron');
+	event.stonecutting(`32x railways:locometal_rung_ladder`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/locometal_rung_ladder_wrought_iron');
+	event.stonecutting(`64x railways:locometal_rung_ladder`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/locometal_rung_ladder_steel');
 
-	event.stonecutting(`4x railways:locometal_trapdoor`, '#forge:storage_blocks/iron');
-	event.stonecutting(`8x railways:locometal_trapdoor`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`16x railways:locometal_trapdoor`, '#forge:storage_blocks/steel');
+	event.stonecutting(`4x railways:locometal_trapdoor`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/locometal_trapdoor_iron');
+	event.stonecutting(`8x railways:locometal_trapdoor`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/locometal_trapdoor_wrought_iron');
+	event.stonecutting(`16x railways:locometal_trapdoor`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/locometal_trapdoor_steel');
 
-	event.stonecutting(`2x railways:hinged_locometal_door`, '#forge:storage_blocks/iron');
-	event.stonecutting(`4x railways:hinged_locometal_door`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`8x railways:hinged_locometal_door`, '#forge:storage_blocks/steel');
+	event.stonecutting(`2x railways:hinged_locometal_door`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/hinged_locometal_door_iron');
+	event.stonecutting(`4x railways:hinged_locometal_door`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/hinged_locometal_door_wrought_iron');
+	event.stonecutting(`8x railways:hinged_locometal_door`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/hinged_locometal_door_steel');
 
-	event.stonecutting(`2x railways:sliding_locometal_door`, '#forge:storage_blocks/iron');
-	event.stonecutting(`4x railways:sliding_locometal_door`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`8x railways:sliding_locometal_door`, '#forge:storage_blocks/steel');
+	event.stonecutting(`2x railways:sliding_locometal_door`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/sliding_locometal_door_iron');
+	event.stonecutting(`4x railways:sliding_locometal_door`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/sliding_locometal_door_wrought_iron');
+	event.stonecutting(`8x railways:sliding_locometal_door`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/sliding_locometal_door_steel');
 
-	event.stonecutting(`2x railways:folding_locometal_door`, '#forge:storage_blocks/iron');
-	event.stonecutting(`4x railways:folding_locometal_door`, '#forge:storage_blocks/wrought_iron');
-	event.stonecutting(`8x railways:folding_locometal_door`, '#forge:storage_blocks/steel');
+	event.stonecutting(`2x railways:folding_locometal_door`, '#forge:storage_blocks/iron')
+		.id('tfg:stonecutting/folding_locometal_door_iron');
+	event.stonecutting(`4x railways:folding_locometal_door`, '#forge:storage_blocks/wrought_iron')
+		.id('tfg:stonecutting/folding_locometal_door_wrought_iron');
+	event.stonecutting(`8x railways:folding_locometal_door`, '#forge:storage_blocks/steel')
+		.id('tfg:stonecutting/folding_locometal_door_steel');
 
 	// Base RNR Flywheel Recipes
 	event.shapeless('railways:locometal_flywheel', [
