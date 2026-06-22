@@ -4,9 +4,9 @@
 ### Changes
 - Accumulators (the multiblock battery for trains) and energy interfaces can now charge and discharge way faster, and hold more power @Pyritie
 - Added peanut oil recipes, with all the same uses as seed oil @Redeix @Pyritie
-- Containers can no longer be used with the Interplanetary Wireless Card, and transferring items is now 8x more expensive. Set up railguns! @ashleney
+- Containers can no longer be used with the Interplanetary Wireless Card, and transferring items is now 8x more expensive (blocks are the same energy cost as before). Set up railguns! @ashleney
 ### Bug fixes
-- Fixed some floating chests in the new mineshafts, and made them avoid spawning near rivers @Pyritie
+- Fixed some floating chests in the new mineshafts, made mineshafts avoid spawning near rivers, and fixed one of the segments not blocking water correctly @Pyritie @BlueBoat29
 - Fixed some beneath tower chests being empty @Pyritie
 - Fixed light/dark concrete supports only being as good as wood/stone ones, and having double tooltips @Pyritie
 - Removed "dristone skeletons" from appearing on the surface of the overworld, as well as some other tweaks to other skeletons @Pyritie
