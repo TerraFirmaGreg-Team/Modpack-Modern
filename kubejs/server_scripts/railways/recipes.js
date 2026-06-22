@@ -523,10 +523,10 @@ const registerRailWaysRecipes = (event) => {
 		'PHP',
 		'BGB'
 	], {
-		P: '#forge:plates/wrought_iron',
-		H: '#forge:tools/hammers',
+		B: '#forge:bolts/wrought_iron',
 		G: 'create:metal_girder',
-		B: '#forge:bolts/wrought_iron'
+		H: '#forge:tools/hammers',
+		P: '#forge:plates/wrought_iron'
 	}).id(`tfg:railways/shaped/track_monorail`)
 
 	event.recipes.createSequencedAssembly([
@@ -578,11 +578,11 @@ const registerRailWaysRecipes = (event) => {
 		event.shaped(`16x railways:track_${x.rail}_narrow`, [
 			'R R',
 			'MHM',
-			'S S'
+			' S '
 		], {
-			R: '#tfg:track_rods',
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
+			R: '#tfg:track_rods',
 			S: x.slab
 		}).id(`tfg:railways/shaped/track_${x.rail}_narrow`)
 
@@ -608,9 +608,9 @@ const registerRailWaysRecipes = (event) => {
 			'MHM',
 			'SSS'
 		], {
-			R: '#tfg:track_rods',
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
+			R: '#tfg:track_rods',
 			S: x.slab
 		}).id(`tfg:railways/shaped/track_${x.rail}`)
 
@@ -634,13 +634,13 @@ const registerRailWaysRecipes = (event) => {
 		event.shaped(`16x railways:track_${x.rail}_wide`, [
 			'R R',
 			'MHM',
-			'SBS'
+			'BSB'
 		], {
-			R: '#tfg:track_rods',
+			B: x.block,
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
-			S: x.slab,
-			B: x.block
+			R: '#tfg:track_rods',
+			S: x.slab
 		}).id(`tfg:railways/shaped/track_${x.rail}_wide`)
 	})
 
@@ -666,9 +666,9 @@ const registerRailWaysRecipes = (event) => {
 		'MHM',
 		'SSS'
 	], {
-		R: '#tfg:track_rods',
 		H: '#forge:tools/hammers',
 		M: '#tfc:mortar',
+		R: '#tfg:track_rods',
 		S: '#tfg:rock_slabs'
 	}).id(`tfg:railways/shaped/track_create_andesite`)
 
@@ -692,11 +692,11 @@ const registerRailWaysRecipes = (event) => {
 	event.shaped('16x railways:track_create_andesite_narrow', [
 		'R R',
 		'MHM',
-		'S S'
+		' S '
 	], {
-		R: '#tfg:track_rods',
 		H: '#forge:tools/hammers',
 		M: '#tfc:mortar',
+		R: '#tfg:track_rods',
 		S: '#tfg:rock_slabs'
 	}).id(`tfg:railways/shaped/track_create_andesite_narrow`)
 
@@ -721,13 +721,13 @@ const registerRailWaysRecipes = (event) => {
 	event.shaped('16x railways:track_create_andesite_wide', [
 		'R R',
 		'MHM',
-		'SBS'
+		'BSB'
 	], {
-		R: '#tfg:track_rods',
+		B: '#forge:stone',
 		H: '#forge:tools/hammers',
 		M: '#tfc:mortar',
-		S: '#tfg:rock_slabs',
-		B: '#forge:stone'
+		R: '#tfg:track_rods',
+		S: '#tfg:rock_slabs'
 	}).id(`tfg:railways/shaped/track_create_andesite_wide`)
 
 	event.recipes.gtceu.assembler('tfg:railways/phantom_tracks')
@@ -761,9 +761,9 @@ const registerRailWaysRecipes = (event) => {
 			'MHM',
 			'SSS'
 		], {
-			R: '#tfg:track_rods',
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
+			R: '#tfg:track_rods',
 			S: `tfc:wood/planks/${woodType}_slab`
 		}).id(`tfg:railways/shaped/track_create_${woodType}`)
 
@@ -787,11 +787,11 @@ const registerRailWaysRecipes = (event) => {
 		event.shaped(`16x railways:track_tfc_${woodType}_narrow`, [
 			'R R',
 			'MHM',
-			'S S'
+			' S '
 		], {
-			R: '#tfg:track_rods',
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
+			R: '#tfg:track_rods',
 			S: `tfc:wood/planks/${woodType}_slab`
 		}).id(`tfg:railways/shaped/track_create_${woodType}_narrow`)
 
@@ -816,13 +816,13 @@ const registerRailWaysRecipes = (event) => {
 		event.shaped(`16x railways:track_tfc_${woodType}_wide`, [
 			'R R',
 			'MHM',
-			'SBS'
+			'BSB'
 		], {
-			R: '#tfg:track_rods',
+			B: `tfc:wood/planks/${woodType}`,
 			H: '#forge:tools/hammers',
 			M: '#tfc:mortar',
-			S: `tfc:wood/planks/${woodType}_slab`,
-			B: `tfc:wood/planks/${woodType}`
+			R: '#tfg:track_rods',
+			S: `tfc:wood/planks/${woodType}_slab`
 		}).id(`tfg:railways/shaped/track_create_${woodType}_wide`)
 	});
 
