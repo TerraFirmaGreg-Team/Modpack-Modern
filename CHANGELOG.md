@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changes
 - Accumulators (the multiblock battery for trains) and energy interfaces can now charge and discharge way faster, and hold more power @Pyritie
+- Added peanut oil recipes, with all the same uses as seed oil @Redeix @Pyritie
 ### Bug fixes
 
 ## [0.13.0] - 21-06-2026

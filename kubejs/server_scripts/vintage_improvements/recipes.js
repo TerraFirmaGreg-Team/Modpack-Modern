@@ -489,13 +489,17 @@ function registerVintageImprovementsRecipes(event) {
 
 
 	// Seed oils
-	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 350), 'tfg:sunflower_product')
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 500), 'tfg:sunflower_product')
 		.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/sunflower')
 	
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 600), 'tfg:rapeseed_product')
 		.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
 		.id('tfg:vi/vacuumizing/rapeseed')
+
+	event.recipes.vintageimprovements.vacuumizing(Fluid.of('tfg:peanut_oil', 500), 'tfg:peanut_product')
+		.processingTime(500 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
+		.id('tfg:vi/vacuumizing/peanut')
 
 	event.recipes.vintageimprovements.vacuumizing(Fluid.of('gtceu:seed_oil', 16), '#forge:seeds')
 		.processingTime(50 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER)
