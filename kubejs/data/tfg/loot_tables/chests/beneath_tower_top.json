@@ -15,14 +15,6 @@
 								"min": 0.75,
 								"max": 1
 							}
-						},
-						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:quick_charge": 2,
-								"minecraft:piercing": 1
-							},
-							"add": false
 						}
 					],
 					"weight": 100
@@ -242,8 +234,8 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 10,
-								"min": 6
+								"max": 5,
+								"min": 2
 							},
 							"function": "minecraft:set_count"
 						}
@@ -314,7 +306,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/gold",
+					"name": "tfc:powder/native_gold",
 					"weight": 100,
 					"functions": [
 						{
@@ -410,66 +402,22 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfg:combat_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:recovery_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:acrobat_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfg:mining_powder",
-					"weight": 100,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					]
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
@@ -516,6 +464,22 @@
 						{
 							"function": "minecraft:set_nbt",
 							"tag": "{fluid:{Amount:100,FluidName:\"minecraft:water\"}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:ceramic/ingot_mold",
+					"weight": 100,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 4,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
 						}
 					]
 				},
@@ -687,21 +651,6 @@
 						}
 					],
 					"weight": 50
-				},
-				{
-					"type": "minecraft:item",
-					"name": "ae2:ender_dust",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 80
 				},
 				{
 					"type": "minecraft:item",

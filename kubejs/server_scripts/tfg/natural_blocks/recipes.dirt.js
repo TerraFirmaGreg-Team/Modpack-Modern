@@ -4,7 +4,8 @@
 function registerTFGDirtRecipes(event) {
 
 	// Dirt creation
-	event.recipes.gtceu.macerator('tfg:dirt_from_bio_chaff')
+	event.remove({ id: 'gtceu:macerator/dirt_from_bio_chaff' })
+	event.recipes.gtceu.macerator('tfg:loam_dirt_from_bio_chaff')
 		.itemInputs('gtceu:bio_chaff')
 		.itemOutputs('tfc:dirt/loam')
 		.duration(300)

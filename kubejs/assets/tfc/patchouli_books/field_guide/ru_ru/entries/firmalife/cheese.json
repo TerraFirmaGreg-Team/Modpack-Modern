@@ -39,7 +39,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "The aging stages of a wheel of Gouda: $(thing)Fresh$(), $(thing)Aged$(), and $(thing)Vintage$().",
+      "text": "Стадии старения колеса Гауды: $(thing)Fresh$(), $(thing)Aged$() и $(thing)Vintage$().",
       "multiblocks": [
         {
           "pattern": [

@@ -463,7 +463,7 @@ function registerTFCItemTags(event) {
     event.add('forge:dyes/green', 'tfc:powder/malachite')
     event.add('forge:dyes/brown', 'tfc:powder/garnierite')
     event.add('forge:dyes/yellow', 'tfc:powder/limonite')
-    event.add('forge:dyes/yellow', 'tfc:powder/gold')
+    event.add('forge:dyes/yellow', 'tfc:powder/native_gold')
 
 	//Hanging Signs Soft & Hard Wood
 	global.TFC_EQUIPMENT_METALS.forEach(metal => {

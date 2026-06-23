@@ -2431,18 +2431,25 @@
 			optional: true
 			size: 1.25d
 			subtitle: "{quests.tfg_tips.tools_tips.seed_oil.subtitle}"
-			tasks: [{
-				id: "795A37FA87569C51"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item(gtceu:seed_oil_bucket)"
+			tasks: [
+				{
+					id: "795A37FA87569C51"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item(gtceu:seed_oil_bucket)"
+						}
 					}
+					title: "{quests.tfg_tips.tools_tips.seed_oil.task}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.tools_tips.seed_oil.task}"
-				type: "item"
-			}]
+				{
+					id: "62C27C8AC16CBE20"
+					item: "tfg:peanut_oil_bucket"
+					type: "item"
+				}
+			]
 			title: "{quests.tfg_tips.tools_tips.seed_oil.title}"
 			x: -8.72d
 			y: 15.8d

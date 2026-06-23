@@ -324,6 +324,8 @@ const registerTooltips = (event) => {
 	})
 	for (let [rockId, rock] of Object.entries(global.BIG_ROCK_TABLE)) {
 		if (rock.support) {
+			if (rockId === "light_concrete" || rockId === "dark_concrete")
+				continue;
 			event.addAdvanced([rock.support], (item, advanced, text) => {
 				text.add(1, Text.translate('tfg.tooltip.support.tier1'))
 			})
@@ -517,6 +519,7 @@ const registerTooltips = (event) => {
 		text.add(1, Text.translate('tfg.tooltip.wireless_card_1'));
 		text.add(2, Text.translate('tfg.tooltip.wireless_card_2'));
 		text.add(3, Text.translate('tfg.tooltip.wireless_card_3'));
+		text.add(4, Text.translate('tfg.tooltip.wireless_card_4'));
 	})
 
 	// Deprecated Items

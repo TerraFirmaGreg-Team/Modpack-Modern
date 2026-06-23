@@ -5,16 +5,16 @@
  * 
  * @param {TagEvent.Item} event 
  */
-const registerMinecraftItemTags = (event) => {
-	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
-		event.add('c:hidden_from_recipe_viewers', item)
-	})
-	
+const registerMinecraftItemTags = (event) => {	
 	event.removeAllTagsFrom("minecraft:lantern");
 	event.removeAllTagsFrom("minecraft:raw_iron_block");
 	event.removeAllTagsFrom("minecraft:grass_block");
 	event.removeAllTagsFrom("minecraft:infested_deepslate");
 	event.removeAllTagsFrom("minecraft:furnace");
+
+	global.MINECRAFT_HIDED_ITEMS.forEach(item => {
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
 
 	// Hide potions
 	event.add('c:hidden_from_recipe_viewers', /minecraft.*potion.*/)

@@ -8,10 +8,10 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_overworld_surface_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_lava_overworld_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_jumped_skeletons', '#tfg:overworld_biomes');
-	event.add('realmrpg_skeletons:has_dripstone_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_desert_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_deep_cave_skeletons', '#tfg:overworld_biomes');
 	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:overworld_biomes');
+	event.add('realmrpg_skeletons:has_monument_skeletons', '#tfg:overworld_biomes'); // guardian one removed
 
 	event.add('realmrpg_skeletons:has_nether_skeletons', '#tfg:nether_biomes');
 	event.add('realmrpg_skeletons:has_mushroom_skeletons', '#tfg:nether_biomes');
@@ -25,17 +25,13 @@ function registerRealmRpgBiomeTags(event) {
 	event.add('realmrpg_skeletons:has_lush_cave_skeletons', 'tfg:nether/lush_hollow');
 
 	event.add('realmrpg_skeletons:has_end_skeletons', '#tfg:moon_biomes');
+	event.add('realmrpg_skeletons:has_end_center_skeletons', 'tfg:moon/lunar_chorus_sparse');
 	event.add('realmrpg_skeletons:has_end_center_skeletons', 'tfg:moon/lunar_chorus_dense');
 
 	event.add('realmrpg_skeletons:has_warped_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_crimson_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_snow_skeletons', '#tfg:mars_biomes');
 	event.add('realmrpg_skeletons:has_surface_skeletons', '#tfg:mars_biomes');
-	event.add('realmrpg_skeletons:has_monument_skeletons', '#tfg:mars_biomes');
-	event.add('realmrpg_skeletons:has_cave_skeletons', '#tfg:mars_biomes');
-	event.add('realmrpg_skeletons:has_desert_skeletons', 'tfg:mars/martian_dunes');
-	event.add('realmrpg_skeletons:has_desert_skeletons', 'tfg:mars/martian_deep_desert');
-	event.add('realmrpg_skeletons:has_desert_skeletons', 'tfg:mars/martian_river');
 
 	event.add('realmrpg_skeletons:has_burnt_skeletons', '#tfg:venus_biomes');
 
@@ -52,12 +48,12 @@ function registerRealmRpgBiomeTags(event) {
 function registerRealmRpgBlockTags(event) {
 
 	event.add('realmrpg_skeletons:surface_skeletons_can_generate_on', '#tfc:grass')
-	event.add('realmrpg_skeletons:monument_skeletons_can_generate_on', '#ad_astra:mars_stone_replaceables')
-	event.add('realmrpg_skeletons:dripstone_skeletons_can_generate_on', '#minecraft:overworld_carver_replaceables')
+	event.add('realmrpg_skeletons:monument_skeletons_can_generate_on', '#tfc:mud')
+	event.add('realmrpg_skeletons:monument_skeletons_can_generate_on', '#forge:gravel')
 	event.add('realmrpg_skeletons:dripstone_skeletons_can_generate_on', '#minecraft:nether_carver_replaceables')
-
-	event.add('realmrpg_skeletons:warped_skeletons_can_generate_on', 'tfg:warped_wart_block')
-	event.add('realmrpg_skeletons:crimson_skeletons_can_generate_on', 'tfg:crimson_wart_block')
+	
+	event.add('realmrpg_skeletons:crimson_skeletons_can_generate_on', '#tfg:mars_soil')
+	event.add('realmrpg_skeletons:warped_skeletons_can_generate_on', '#tfg:mars_soil')
 
 	global.TFC_MAGMA_BLOCKS.forEach(magma => {
 		event.add('realmrpg_skeletons:lava_skeletons_can_generate_on', magma)
