@@ -14,6 +14,7 @@
 - Fixed Pastoral Rancher not forming with tfc stone bricks (#4336) @Pyritie
 - Fixed a bunch of log spam (#4330) @Pyritie
 - Fixed beneath towers not being aligned to the lava level properly @Pyritie
+- Fixed breaking parts of a hellforge returning anthracite instead of charcoal (#4345) @Pyritie
 
 ## [0.13.0] - 21-06-2026
 - We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.13) with all of the major changes between 0.12 and 0.13.
