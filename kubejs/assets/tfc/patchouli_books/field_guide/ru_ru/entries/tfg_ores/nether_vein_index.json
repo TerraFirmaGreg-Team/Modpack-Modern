@@ -696,7 +696,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Source of$(): Ruthenium, Arsenic, Sulfur$(br)$(thing)Формула$(): RuAsS",
+      "text": "$(thing)Процент нагрузки$(): 35%$(br)$(thing)Источник дляf$(): Рутения, мышьяка, серы$(br)$(thing)Формула$(): RuAsS",
       "type": "patchouli:multiblock"
     },
     {
@@ -716,7 +716,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент нагрузки$(): 27%$(br)$(thing)Source of$(): Rhodium, Iron, Nickel$(br)$(thing)Формула$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉",
+      "text": "$(thing)Процент нагрузки$(): 27%$(br)$(thing)Источник дляf$(): Родия, железа, никеля$(br)$(thing)Формула$(): Fe₂Rh₂Ir₁Ni₃Cu₁S₉",
       "type": "patchouli:multiblock"
     },
     {
