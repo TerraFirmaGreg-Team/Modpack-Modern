@@ -5,6 +5,7 @@
 - Accumulators (the multiblock battery for trains) and energy interfaces can now charge and discharge way faster, and hold more power @Pyritie
 - Added peanut oil recipes, with all the same uses as seed oil @Redeix @Pyritie
 - Containers can no longer be used with the Interplanetary Wireless Card, and transferring items is now 8x more expensive (blocks are the same energy cost as before). Set up railguns! @ashleney
+- Added shaped crafting recipes for train tracks (#4335) @strangelyng
 ### Bug fixes
 - Fixed some floating chests in the new mineshafts, made mineshafts avoid spawning near rivers, and fixed one of the segments not blocking water correctly @Pyritie @BlueBoat29
 - Fixed some beneath tower chests being empty @Pyritie
@@ -15,6 +16,9 @@
 - Fixed a bunch of log spam (#4330) @Pyritie
 - Fixed beneath towers not being aligned to the lava level properly @Pyritie
 - Fixed breaking parts of a hellforge returning anthracite instead of charcoal (#4345) @Pyritie
+- Fixed held models of shields (#4344) @strangelyng
+- Fixed more issues with two-tall crops (#4183) 
+- Fixed sniffers and wraptors not laying eggs (#4311) @jmecn
 
 ## [0.13.0] - 21-06-2026
 - We've [written up a page](https://wiki.terrafirmagreg.team/modern/en_us/major-changelogs/0.13) with all of the major changes between 0.12 and 0.13.
