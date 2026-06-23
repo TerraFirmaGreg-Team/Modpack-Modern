@@ -2,9 +2,13 @@
 
 ## Unreleased
 ### Changes
+### Bug fixes
+
+## [0.13.1] - 23-06-2026
+### Changes
 - Accumulators (the multiblock battery for trains) and energy interfaces can now charge and discharge way faster, and hold more power @Pyritie
 - Added peanut oil recipes, with all the same uses as seed oil @Redeix @Pyritie
-- Containers can no longer be used with the Interplanetary Wireless Card, and transferring items is now 8x more expensive (blocks are the same energy cost as before). Set up railguns! @ashleney
+- Transferring items and containers is now 8x more expensive with the Interplanetary Wireless Card (blocks are the same energy cost as before). Set up railguns! @ashleney
 - Added shaped crafting recipes for train tracks (#4335) @strangelyng
 - Renamed Nether Quartz to Smoky Quartz @Pyritie
 - Mammutilations and slimes can now be used on the animal crank @Pyritie
