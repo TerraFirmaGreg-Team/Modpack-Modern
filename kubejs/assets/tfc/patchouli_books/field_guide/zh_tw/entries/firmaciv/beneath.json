@@ -1,5 +1,5 @@
 {
-    "name": "Martian Boats",
+    "name": "火星船",
     "category": "tfc:firmaciv",
     "icon": "beneath:wood/sapling/crimson",
     "flag": "mod:beneath",
@@ -8,30 +8,30 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Way off on the far reaches of Mars, you can find both Crimson and Warped wood to create some rather flashy $(l:firmaciv/watercraft)Boats$()."
+            "text": "在遙遠的火星上，找到緋紅木與詭異木來製作外觀相當酷炫的 $(l:firmaciv/watercraft)船$()。"
         },
         {
             "type": "patchouli:empty"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Softwoods",
-            "text": "Softwoods have sufficiently soft enough pulp and bark that they're perfect for creating $(l:firmaciv/canoe)Dugout Canoes$()",
+            "title": "軟木",
+            "text": "$(thing)軟木$() 的質地與樹皮相當軟韌，非常適合用來製作 $(l:firmaciv/canoe)獨木舟$()。",
             "item": "beneath:wood/stripped_log/crimson"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Crimson$()"
+            "text": "$(li)緋紅木$()"
         },
         {
             "type": "patchouli:spotlight",
-            "title": "Hardwoods",
-            "text": "Known for their exceptional sturdiness, Hardwood trees are ideal for creating larger and sophisticated Watercrafts such as $(l:firmaciv/rowboat)Rowboats$() and $(l:firmaciv/sloop)Sloops$()",
+            "title": "硬木",
+            "text": "$(thing)硬木$() 以極堅固的結構著稱，非常適合用來建造 $(l:firmaciv/rowboat) 槳帆船$() 與 $(l:firmaciv/sloop)單桅縱帆船$() 等體積更大且更複雜的船隻。",
             "item": "beneath:wood/planks/warped"
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)Warped$()"
+            "text": "$(li)詭異木$()"
         }
     ]
 }
