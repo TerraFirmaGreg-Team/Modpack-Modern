@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout repository"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: "Crowdin"
         uses: crowdin/github-action@v2
@@ -57,7 +57,7 @@ jobs:
     needs: [sync-patchouli]
     steps:
       - name: "Checkout repository"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: "Crowdin"
         uses: crowdin/github-action@v2
@@ -83,7 +83,7 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
       - name: "Checkout translations branch"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ env.LOCALIZATION_BRANCH }}
           fetch-depth: 0
@@ -108,7 +108,7 @@ jobs:
     if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr)
     steps:
       - name: "Checkout repository"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: "Create Pull Request"
         uses: devops-infra/action-pull-request@v1

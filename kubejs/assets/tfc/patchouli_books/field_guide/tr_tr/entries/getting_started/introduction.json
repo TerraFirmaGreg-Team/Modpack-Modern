@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Introduction",
+	"name": "Giriş",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "In TerraFirmaCraft, the first things you can obtain are sticks, twigs, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
+			"text": "Terrafirmacraftta yapmanız gereken ilk şey çubuk,dal ve taş toplamaktır.Neredeyse her yerde bulunabilirler.$(item)$(k:key.use)$()  ile veya kırarak bunları toplayabilirsiniz."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -36,25 +36,25 @@
 					"5": "tfc:wood/twig/ash"
 				}
 			},
-			"name": "Example",
-			"text": "A smattering of common sticks and stones.",
+			"name": "Örnek",
+			"text": "Bazı yaygın çubuk ve taşlar.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
+			"text": "Yerdeki dallar ve çubukların haricinde ağaçların yapraklarını kırarak da çubuk elde edebilirsiniz.Bir miktar çubuk ve taş topladıktan sonra $(thing)Knapping$() yapmaya hazırsınız.Yontma,iki taşın birbirine vurulup belirli bir şekile getirilmesine denir.Yontma yapmak için en az iki tane taşı elinizde tutun ve havaya sağ tıklayın.bundan sonra  $(thing)Knapping Interface$() açılacaktır."
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "The Knapping Interface.",
+			"text": "Yontma menüsü",
 			"border": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
+			"text": "Bir eşya yapmak için yontma menüsünden istediğiniz eşyanın şekli olana kadar üstüne tıklayıp kareleri silmeniz gerekir.Örnek olarak bıçak yapmak için bir taşı sağdaki gibi yontun..$(br2) diğer eşya yapımları gibi şeklin konumu önemli değil ve bazı tariflerin geçerli olan birkaç farklı şekli var.Daha fazla detay için aradığınız eşyanın yapımına Jei̇ dan bakabilirsiniz."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",

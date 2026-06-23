@@ -1,34 +1,34 @@
 {
-	"name": "Earth Tree Index",
+	"name": "地球樹木指南",
 	"category": "tfc:arborfirmacraft",
 	"icon": "afc:wood/sapling/flame_of_the_forest",
 	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This is a list of every tree in the world, and what climates they grow in.$(br2)Looking for particular wood type to decorate your base? This should help you find it. The list is sorted alphabetically by wood type.$(br2)Also check out the $(l:tfc:tfg_tips/mars_tree_index)Mars Mushroom Index$()."
+			"text": "本列表收錄了世界上所有的樹木及其生長氣候。$(br2)想尋找特定木材來裝飾基地嗎？本指南將有所幫助。列表已依木材名稱字母順序排列。$(br2)亦可查閱 $(l:tfc:tfg_tips/mars_tree_index)火星蕈菇指南$()。"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Acacia, Gum Arabic",
+			"title": "相思木與阿拉伯膠木",
 			"item": "tag:tfc:acacia_logs",
-			"text": "$(bold)Umbrella Thorn Acacia$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 13.4 — 40°C$(br2)$(bold)Acacia Koa$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): 15.3 — 24.4°C$(br2)$(bold)Gum Arabic$()$(br)$(thing)Rainfall$(): 90 — 275mm$(br)$(thing)Temperature$(): 11.6 — 40°C"
+			"text": "$(bold)傘刺相思木$()$(br)$(thing)降雨量$(): 90 — 275mm$(br)$(thing)溫度$(): 13.4 — 40°C$(br2)$(bold)夏威夷相思木$()$(br)$(thing)降雨量$(): 350 — 500mm$(br)$(thing)溫度$(): 15.3 — 24.4°C$(br2)$(bold)阿拉伯膠樹$()$(br)$(thing)降雨量$(): 90 — 275mm$(br)$(thing)溫度$(): 11.6 — 40°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Ash",
+			"title": "梣木",
 			"item": "tag:tfc:ash_logs",
-			"text": "$(bold)White Ash$()$(br)$(thing)Rainfall$(): 60 — 240mm$(br)$(thing)Temperature$(): -13.9 — 0.7°C"
+			"text": "$(bold)白梣木$()$(br)$(thing)降雨量$(): 60 — 240mm$(br)$(thing)溫度$(): -13.9 — 0.7°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Aspen, Poplar",
+			"title": "山楊木與白楊木",
 			"item": "tag:tfc:aspen_logs",
 			"text": "$(bold)Quaking Aspen$()$(br)$(thing)Rainfall$(): 350 — 500mm$(br)$(thing)Temperature$(): -15.7 — -1.1°C$(br2)$(bold)Poplar$()$(br)$(thing)Rainfall$(): 170 — 310mm$(br)$(thing)Temperature$(): -15.7 — -6.6°C"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Baobab",
+			"title": "猴麵包木",
 			"item": "tag:afc:baobab_logs",
 			"text": "$(bold)Baobab$()$(br)$(thing)Rainfall$(): 30 — 190mm$(br)$(thing)Temperature$(): 15.3 — 26.2°C"
 		},
