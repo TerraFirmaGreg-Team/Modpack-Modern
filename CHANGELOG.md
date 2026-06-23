@@ -11,7 +11,7 @@
 - Transferring items and containers is now 8x more expensive with the Interplanetary Wireless Card (blocks are the same energy cost as before). Set up railguns! @ashleney
 - Added shaped crafting recipes for train tracks (#4335) @strangelyng
 - Renamed Nether Quartz to Smoky Quartz @Pyritie
-- Mammutilations and slimes can now be used on the animal crank @Pyritie
+- Mammutilations and friendly slimes can now be used on the animal crank @Pyritie
 ### Bug fixes
 - Fixed some floating chests in the new mineshafts, made mineshafts avoid spawning near rivers, and fixed one of the segments not blocking water correctly @Pyritie @BlueBoat29
 - Fixed some beneath tower chests being empty @Pyritie
