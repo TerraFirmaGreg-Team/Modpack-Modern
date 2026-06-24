@@ -39,7 +39,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Стадии старения колеса Гауды: $(thing)Fresh$(), $(thing)Aged$() и $(thing)Vintage$().",
+      "text": "Стадии старения колеса Гауды: $(thing)Свежое$(), $(thing)Выдержанное$() и $(thing)Сверхвыдержанное$().",
       "multiblocks": [
         {
           "pattern": [
