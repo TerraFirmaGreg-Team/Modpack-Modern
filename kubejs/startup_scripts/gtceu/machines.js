@@ -3,8 +3,8 @@
 const registerGTCEuMachines = (event) => {
 
 	const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
-	const $OxygenDistributorMultiblock = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.multiblock.electric.OxygenDistributorMultiblock");
-	const $OxygenDistributorSingleblock = Java.loadClass("su.terrafirmagreg.core.common.data.tfgt.machine.electric.OxygenDistributorSingleblock");
+	const $OxygenDistributorMultiblock = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.multiblock.electric.OxygenDistributorMultiblock");
+	const $OxygenDistributorSingleblock = Java.loadClass("su.terrafirmagreg.core.common.tfgt.machine.electric.OxygenDistributorSingleblock");
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 
 
